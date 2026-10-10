@@ -337,7 +337,7 @@
 	"block.tfg.rock.mossy_cobble_glacio_stairs": "Ступеньки из замшелого фонолитового булыжника",
 	"block.tfg.rock.mossy_cobble_glacio_slab": "Плита из замшелого фонолитового булыжника",
 	"block.tfg.rock.mossy_cobble_glacio_wall": "Ограда из замшелого фонолитового булыжника",
-	"block.tfg.rock.polished_glacio_wall": "Ограда из полированого фонолита",
+	"block.tfg.rock.polished_glacio_wall": "Ограда из полированного фонолита",
 	"block.tfg.rock.mossy_bricks_glacio": "Замшелые фонолитовые кирпичи",
 	"block.tfg.rock.mossy_bricks_glacio_stairs": "Ступеньки из замшелых фонолитовых кирпичей",
 	"block.tfg.rock.mossy_bricks_glacio_slab": "Плита из замшелых фонолитовых кирпичей",
@@ -352,7 +352,7 @@
 	"block.tfg.phonolite_support": "Опора из кератофира",
 	"block.tfg.phonolite_support_horizontal": "Опора из кератофира",
 	"block.tfg.rock.aqueduct_glacio_stone": "Фонолитовый акведук",
-	"block.tfg.rock.hardened_permafrost": "Укреплёная многолетняя мерзлота",
+	"block.tfg.rock.hardened_permafrost": "Укреплённая многолетняя мерзлота",
 	"block.tfg.rock.permafrost_stairs": "Ступеньки из многолетней мерзлоты",
 	"block.tfg.rock.permafrost_slab": "Плита из многолетней мерзлоты",
 	"block.tfg.rock.permafrost_wall": "Ограда из многолетней мерзлоты",
@@ -489,7 +489,7 @@
 	"block.tfg.rock.cracked_bricks_stone_wall": "Ограда из потрескавшихся кирпичей восстановленного камня",
 	"block.tfg.rock.aqueduct_stone": "Акведук из восстановленного камня",
 	"block.tfg.rock.smooth_red_sandstone_wall": "Ограда из гладкого гематитового песчаника",
-	"block.tfg.rock.cut_red_sandstone_stairs": "Ступеньки Hиз резного гематитового песчаника",
+	"block.tfg.rock.cut_red_sandstone_stairs": "Ступеньки из резного гематитового песчаника",
 	"block.tfg.rock.cut_red_sandstone_wall": "Ограда из резного гематитового песчаника",
 	"block.tfg.rock.bricks_venus_sandstone_wall": "Ограда из трахитового песчаника",
 	"block.tfg.rock.cracked_bricks_venus_sandstone_stairs": "Ступеньки из потрескавшегося трахитового песчаника",
@@ -1573,5 +1573,6 @@
 	"block.tfg.stainless_steel_anvil": "Наковальня (Нержавеющая сталь)",
 	"block.tfg.tungsten_anvil": "Наковальня (Вольфрам)",
 	"block.tfg.blackstone_anvil": "Наковальня (Пироксенит)",
-	"block.tfg.crackrack_anvil": "Наковальня (Кератофир)"
+	"block.tfg.crackrack_anvil": "Наковальня (Кератофир)",
+	"block.tfg.gas_burner": "Газовая горелка"
 }

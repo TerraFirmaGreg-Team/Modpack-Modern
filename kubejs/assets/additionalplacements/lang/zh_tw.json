@@ -5,6 +5,7 @@
 	"commands.ap_stairs_state_debug.wrong_block": "%s 不是有效方塊，必須是具有附加狀態的階梯。",
 	"key.additionalplacements.placement_toggle": "切換放置邏輯",
 	"key.categories.additionalplacements": "額外放置",
+	"msg.additionalplacements.configurationerrors": "連線到伺服器時偵測到 Additional Placements 設定錯誤",
 	"msg.additionalplacements.disconnected": "額外放置設定發生衝突",
 	"msg.additionalplacements.errors.client": "用戶端拒絕：",
 	"msg.additionalplacements.errors.server": "伺服器端拒絕：",

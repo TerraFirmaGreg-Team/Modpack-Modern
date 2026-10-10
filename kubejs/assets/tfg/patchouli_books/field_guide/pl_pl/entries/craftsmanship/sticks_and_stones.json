@@ -92,14 +92,14 @@
 			"recipes": [
 				"tfg:rock_knapping/stone_axe_head"
 			],
-			"text": "$(thing)Axes$() can be used to cut down entire trees, logs and leaves included. Axes are required for obtaining $(l:the_world/wild_fruits#fruit_trees)Fruit Tree Saplings$()."
+			"text": "$(thing)Siekier$() można używać do ścinania całych drzew, łącznie z kłodami i liśćmi. Siekiery są wymagane do pozyskania $(l:the_world/wild_fruits#fruit_trees)sadzonek drzew owocowych$()."
 		},
 		{
 			"type": "tfg:rock_knapping_recipe",
 			"recipes": [
 				"tfg:rock_knapping/stone_shovel_head"
 			],
-			"text": "$(thing)Łopat$() można używać do kopania bloków gleby. Mogą być również użyte do tworzenia $(thing)Ścieżek$() przez $(item)użycie$() ich na $(thing)Ziemi$() lub $(thing)Trawie$()."
+			"text": "$(thing)Łopat$() można używać do kopania bloków gleby. Mogą być również użyte do tworzenia $(thing)ścieżek$() przez $(item)użycie$() ich na $(thing)ziemi$() lub $(thing)trawie$()."
 		},
 		{
 			"type": "tfg:rock_knapping_recipe",
@@ -108,7 +108,7 @@
 				"tfg:rock_knapping/stone_hoe_head_1",
 				"tfg:rock_knapping/stone_hoe_head_2"
 			],
-			"text": "$(thing)Hoes$() are useful tools for $(l:agriculture/growing_crops)Farming$(), but they can also be used to cut down leaves and other plant matter like knives."
+			"text": "$(thing)Motyki$() są przydatne przy $(l:agriculture/growing_crops)rolnictwie$(), ale można je również wykorzystać do ścinania liści i innych roślin, tak jak noże."
 		},
 		{
 			"type": "tfg:rock_knapping_recipe",
@@ -125,7 +125,7 @@
 				"tfc:rock_knapping/javelin_head_igneous_extrusive",
 				"tfc:rock_knapping/javelin_head_igneous_intrusive"
 			],
-			"text": "Finally, a $(thing)Javelin$() can be used as a primitive weapon, capable of being thrown at targets, or used as a $(l:game_mechanics/damage_types)Piercing$() weapon."
+			"text": "Wreszcie, $(thing)oszczep$() może być użyta jako prymitywna broń miotana lub można jej użyć jako broni $(l:game_mechanics/damage_types)kłutej$()."
 		},
 		{
 			"type": "patchouli:relations",

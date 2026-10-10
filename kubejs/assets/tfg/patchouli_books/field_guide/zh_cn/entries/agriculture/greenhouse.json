@@ -1,35 +1,35 @@
 {
-    "name": "Greenhouse",
+    "name": "温室",
     "category": "tfg:agriculture",
     "icon": "firmalife:large_planter",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:agriculture/greenhouse#types)Greenhouse Types$()$(li)$(bold)$(l:agriculture/greenhouse#planters)Planters$()$(li2)$(l:agriculture/greenhouse#large_planter)Large Planter$()$(li2)$(l:agriculture/greenhouse#quad_planter)Quad Planter$()$(li2)$(l:agriculture/greenhouse#bonsai_planter)Bonsai Planter$()$(li2)$(l:agriculture/greenhouse#hanging_planter)Hanging Planter$()$(li2)$(l:agriculture/greenhouse#trellis_planter)Trellis Planter$()$(li2)$(l:agriculture/greenhouse#hydroponic_planter)Hydroponic Planter$()$(li)$(bold)$(l:agriculture/greenhouse#irrigation)Irrigation$()$(li)$(bold)$(l:agriculture/greenhouse#auto_harvesting)Auto-Harvesting$()"
+            "text": "$(li)$(bold)$(l:agriculture/greenhouse#types)温室类型$()$(li)$(bold)$(l:agriculture/greenhouse#planters)种植盆$()$(li2)$(l:agriculture/greenhouse#large_planter)大型种植盆$()$(li2)$(l:agriculture/greenhouse#quad_planter)四槽种植盆$()$(li2)$(l:agriculture/greenhouse#bonsai_planter)盆栽种植盆$()$(li2)$(l:agriculture/greenhouse#hanging_planter)悬挂种植盆$()$(li2)$(l:agriculture/greenhouse#trellis_planter)格子种植架$()$(li2)$(l:agriculture/greenhouse#hydroponic_planter)水培种植盆$()$(li)$(bold)$(l:agriculture/greenhouse#irrigation)灌溉$()$(li)$(bold)$(l:agriculture/greenhouse#auto_harvesting)自动收获$()$(li)$(bold)$(l:agriculture/greenhouse#electric)电力温室$()$(li)$(bold)$(l:agriculture/greenhouse#hydroponics)水培设施$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Greenhouse",
-            "text": "The $(thing)Greenhouse$() is a multiblock device controlled by a $(item)Climate Station$(). It allows growing crops year round. The Greenhouse has an array of types and blocks to choose from. However, building a greenhouse is quite simple. Like the $(l:cooking/decay#cellar)Cellar$(), it should be an enclosed area of blocks belonging to the same $(thing)Greenhouse Type$(). The floor of the greenhouse may be any non-air block."
+            "title": "温室",
+            "text": "$(thing)温室$()是由 $(item)气象站$() 控制的多方块设备，让你可以全年种植作物。温室有多种类型和方块可供选择，不过建造温室其实很简单。和 $(l:cooking/decay#cellar)地窖$() 一样，它应当是一个封闭空间，由属于同一种 $(thing)温室类型$() 的方块围成。温室的地板可以是任意非空气方块。"
         },
         {
             "type": "patchouli:text",
-            "text": "The walls of greenhouses must be solid faces. Panel walls should be placed so that the face that is on the exterior of the block (ex. the face you can place a torch on) faces into the greenhouse. Trapdoors, doors, and roofs are always valid and require no special placement.$(br2)The maximum internal volume of a greenhouse is 31x31x31 blocks."
+            "text": "温室的墙体必须是完整方块面。放置板墙时，要让方块外侧的那个面（例如可以插火把的面）朝向温室内部。活板门、门和屋顶总是有效，无需特殊放置。$(br2)温室的最大内部体积为 31x31x31 方块。"
         },
         {
             "type": "patchouli:text",
-            "text": "$(thing)Greenhouse Types$() are families of greenhouse blocks that can be used interchangeably in a greenhouse. Additionally, $(tfg) adds more greenhouse wall styles that can be swapped around with the basic greenhouse walls of the same tier.$(br)Validate a greenhouse by placing a climate station against a wall and $(item)$(k:key.use)$() it. Or, place it anywhere and $(item)$(k:key.use)$() it with a greenhouse block of the same type as the structure."
+            "text": "$(thing)温室类型$()是可以在同一座温室里互换使用的温室方块家族。此外，$(tfg) 还添加了更多温室墙体样式，可与同等级的基础温室墙互换。$(br)验证温室的方法：把气象站贴着墙放置并 $(item)$(k:key.use)$() 它；或者把它放在任意位置，然后手持与建筑同类型的温室方块对它 $(item)$(k:key.use)$()。"
         },
         {
             "type": "patchouli:text",
             "anchor": "types",
-            "text": "These are the $(thing)Greenhouse Types$() available, with aged varients availble through crafting:$(br)$(li)Treated Wood: Weathered $()$(li)Copper: Exposed, Weathered, Oxidized$()$(li)Iron: Rusted$() $(li)Stainless Steel: N/A$()$(br)$(bold)Note$(): Aged varients have no effect outside of appearance.",
+            "text": "以下是可用的 $(thing)温室类型$()，通过合成还能获得陈化变体：$(br)$(li)防腐木：风化 $()$(li)铜：斑驳、风化、氧化$()$(li)铁：锈蚀$() $(li)不锈钢：无$()$(br)$(bold)注意$()：陈化变体只影响外观。",
             "title": "温室类型"
         },
         {
             "type": "patchouli:text",
-            "text": "There are four types of regular $(thing)Greenhouse Blocks$(): Walls, Doors, Roofs, and Roof Tops. Roofs and Roof Tops are stairs and slabs, respectively. There are also thinner versions of these blocks, known as panel walls, trapdoors, and panel roofs. These can be combined however you choose to form the structure of the greenhouse."
+            "text": "常规的 $(thing)温室方块$() 有四种：墙、门、屋顶和屋顶顶层。屋顶和屋顶顶层分别是楼梯和台阶。此外还有更薄的版本，叫做板墙、活板门和板屋顶。你可以任意组合这些方块来搭建温室的结构。"
         },
         {
             "type": "tfg:multimultiblock",
@@ -45,75 +45,91 @@
             "type": "patchouli:text",
             "anchor": "planters",
             "title": "种植盆",
-            "text": "$(thing)Planters$() are used to grow crops inside a Greenhouse. Crops in planters consume $(l:agriculture/growing_crops#intro)Nutrients$() similarly to crops. Planters should be placed inside a valid Greenhouse and activated with a $(item)Climate Station$(). Planters need at least some natural sunlight to work."
+            "text": "$(thing)种植盆$()用于在温室里种植作物。种植盆里的作物和普通作物一样会消耗 $(l:agriculture/growing_crops#intro)营养$()。种植盆应放置在有效的温室内，并用 $(item)气象站$() 激活。种植盆需要一定的自然阳光才能工作。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "large_planter",
             "item": "firmalife:large_planter",
-            "text": "$(thing)Large Planters$() are the simplest kind of planter. They grow a single crop from seed, and are harvested with $(item)$(k:key.use)$() when mature.$(br)Large Planters typically grow $(thing)Large Crops$() and $(thing)Grains$(). However, to grow Grains, you need a $(thing)Copper$() or better Greenhouse."
+            "text": "$(thing)大型种植盆$()是最简单的种植盆。它用种子种下单一作物，成熟后用 $(item)$(k:key.use)$() 收获。$(br)大型种植盆通常种植 $(thing)大型作物$() 和 $(thing)谷物$()。不过要种谷物，你需要 $(thing)铜$() 级或更好的温室。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "quad_planter",
             "item": "firmalife:quad_planter",
-            "text": "$(thing)Quad Planters$() grow four individual crops at once that all draw from the same nutrient pool, and can be harvested individually with $(item)$(k:key.use)$() when mature.$(br)Quad Planters typically grow smaller vegetables such as $(thing)Onions$() and $(thing)Beets$(). These crops can be grown in any greenhouse type."
+            "text": "$(thing)四槽种植盆$()可以同时种下四种独立作物，它们共用同一个营养池，成熟后可以用 $(item)$(k:key.use)$() 分别单独收获。$(br)四槽种植盆通常种植较小的蔬菜，例如 $(thing)洋葱$() 和 $(thing)甜菜$()。这些作物在任何类型的温室里都能种。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "bonsai_planter",
             "item": "firmalife:bonsai_planter",
-            "text": "$(thing)Bonsai Planters$() grow small fruit trees from their saplings.$(br)Bonsai Planters grow $(item)Fruit Tree Types$(), except $(thing)Bananas$(), and $(thing)Palm Fruit Trees$(), which need a $(thing)Hanging Planter$(). They need an $(thing)Iron$() or better greenhouse to grow."
+            "text": "$(thing)盆栽种植盆$()用树苗种出小型果树。$(br)盆栽种植盆可以种植各种 $(item)果树类型$()，但 $(thing)香蕉$() 和 $(thing)棕榈果树$() 除外——它们需要 $(thing)悬挂种植盆$()。盆栽种植盆需要 $(thing)铁$() 级或更好的温室才能种。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "hanging_planter",
             "item": "firmalife:hanging_planter",
-            "text": "$(thing)Hanging Planters$() grow crops upside down.$(br)Hanging Planters grow $(thing)Squash$(), $(thing)Pumpkin$(), $(thing)Melons$(), $(thing)Bananas$(), and $(thing)Palm Fruit Trees$(). Palm Fruit Trees require a $(thing)Copper+$() greenhouse, Squash can be in any tier, and the rest need $(thing)Iron+$(). Hanging planters need to anchor to a solid block above them."
+            "text": "$(thing)悬挂种植盆$()倒挂着种作物。$(br)悬挂种植盆可以种植 $(thing)西葫芦$()、$(thing)南瓜$()、$(thing)西瓜$()、$(thing)香蕉$() 和 $(thing)棕榈果树$()。棕榈果树需要 $(thing)铜及以上$()的温室，西葫芦任何等级都可以，其余需要 $(thing)铁及以上$()。悬挂种植盆需要固定在上方的实心方块上。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "trellis_planter",
             "item": "firmalife:trellis_planter",
-            "text": "$(thing)Trellis Planters$() grow berry bushes.$(br)Trellis Planters have the unique property of $(thing)propagating$() berry bushes. If a trellis planter is placed on top of another with a mature berry bush, it has a chance to grow upwards into the next one. Trellis planters usually require an $(thing)Iron$() or better greenhouse to work."
+            "text": "$(thing)格子种植架$()用于种植浆果丛。$(br)格子种植架有一项独特性质：$(thing)蔓延$()。如果把一个格子种植架放在另一个长着成熟浆果丛的格子种植架上方，浆果丛就有机会向上蔓延到上一层。格子种植架通常需要 $(thing)铁$() 级或更好的温室才能工作。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "hydroponic_planter",
             "item": "firmalife:hydroponic_planter",
-            "text": "$(thing)Hydroponic Planters$() grow submerged crops like $(thing)Rice$() and $(thing)Cranberry Bushes$(). They work the same as a quad planter, except that they do not need to be watered.$(br)Hydroponic Planters must instead, have a $(item)Fluid Pipe$() below them supplying water. Without the pipe they will not grow."
+            "text": "$(thing)水培种植盆$()用于种植 $(thing)水稻$() 和 $(thing)蔓越莓灌木$() 这类浸水作物。它们的工作方式与四槽种植盆相同，只是不需要浇水。$(br)水培种植盆必须在下方有 $(item)流体管道$() 供水，否则无法生长。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "irrigation",
             "title": "灌溉",
             "item": "firmalife:watering_can,firmalife:sprinkler",
-            "text": "Planters must be $(thing)Watered$() to grow. This is done with a $(thing)Watering Can$() or automatically with $(thing)Sprinklers$(). Press $(item)$(k:key.use)$() with a watering can to water nearby planters. Refill your can by pressing $(item)$(k:key.use)$() on a water source."
+            "text": "种植盆必须 $(thing)浇水$() 才能生长。可以用 $(thing)喷壶$() 手动浇水，也可以用 $(thing)洒水器$() 自动浇水。手持喷壶按 $(item)$(k:key.use)$() 即可浇灌附近的种植盆。对着水源按 $(item)$(k:key.use)$() 可以给喷壶补水。"
         },
         {
             "type": "patchouli:text",
-            "text": "The $(thing)Sprinkler$() is a device that sprinkles water in a 5x6x5 area centered on the block below or above the sprinkler block. You know it is working when it drips out water particles. Sprinklers must be connected to a system of pipes that feed it water in order to work."
+            "text": "$(thing)洒水器$()是一种在 5x6x5 范围内洒水的设备，以洒水器方块下方或上方的方块为中心。当它滴出水粒子时，就说明它在正常工作。洒水器必须连接到供水的管道系统才能工作。"
         },
         {
             "title": "管道系统",
             "item": "gtceu:copper_tiny_fluid_pipe",
             "type": "patchouli:spotlight",
-            "text": "Feeding sprinklers with water can be done by connecting $(thing)Fluid Pipes$() to them and pumping in water with a $(thing)Mechanical Pump$().$(br)You can $(item)$(k:key.use)$() a pipe with a $(t:Such as a Copper Frame)GregTech Frame$() or a Greenhouse Port to pass them through a wall. $(item)$(k:key.use)$() fluid pipes with a wrench to change their direction, and $(item)$(k:key.sneak)-$(k:key.use)$() them with an $(thing)empty offhand$() to make them one-way."
+            "text": "把 $(thing)流体管道$() 接到洒水器上，并用 $(thing)动力泵$() 把水打进去，就能给洒水器供水。$(br)你可以 $(item)$(k:key.use)$() 一段管道，同时手持 $(t:例如铜框架)格雷框架$() 或温室端口，让管道穿过墙壁。用扳手 $(item)$(k:key.use)$() 流体管道可以改变其方向；$(item)$(k:key.sneak) + $(k:key.use)$() 时保持 $(thing)空副手$() 即可让它变成单向。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "auto_harvesting",
-            "title": "Auto-Harvesting",
+            "title": "自动收获",
             "item": "firmalife:sweeper,firmalife:picker",
-            "text": "$(li)$(thing)Sweepers$() are used to harvest planters other than Quad and Hydroponic planters. They can be powered by redstone.$(li)$(thing)Pickers$() can be powered via redstone signal from above. They extend down to pick the crops from Quad and Hydroponic planters.$(li)Additionally, $(item)Harvest Baskets$() can be used to harvest most planter types."
+            "text": "$(li)$(thing)清扫器$()用于收获四槽和水培种植盆以外的种植盆。它们可以由红石供能。$(li)$(thing)采摘器$()可以通过来自上方的红石信号供能。它们会向下伸展，从四槽和水培种植盆中摘取作物。"
         },
         {
             "type": "patchouli:text",
-            "text": "To collect the loose items that the $(thing)Sweepers$() and $(thing)Pickers$() drop, you can use a $(item)Hopper Minecart$(), a $(thing)Contraption$() with $(item)Funnels$(), or a $(thing)GregTech$() $(item)Item Collector$()."
+            "text": "$(li)此外，$(item)收获篮$()还可以用来收获大多数类型的种植盆。$(li)要收集 $(thing)清扫器$() 和 $(thing)采摘器$() 掉落的散落物品，可以使用 $(item)漏斗矿车$()、一种 $(thing)机械动力装置$()（带 $(item)漏斗$()），或 格雷的 $(item)物品收集器$()。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "electric",
+            "item": "tfg:electric_greenhouse",
+            "text": "如果你更喜欢造格雷机器而不是机械动力装置，多方块结构 $(item)电力温室$() 可以成为你的 $(thing)原木$() 和其他植物的来源。它还有一项独特之处：能种植更多群峦传说的装饰性植物！$(br2)你可以在 $(7)LV$() 末期造一台。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)注意：$()这个多方块结构的墙体可以自定义，使用任意有效的铁级温室方块。$(br2)查看 $(emi)多方块预览，即可了解所有可用的方块。$(br2)电力温室还能通过多种方式强化，包括 $(l:agriculture/fertilizers)肥料$()，以及在更后面的 $(6)HV$() 阶段加装 $(thing)鱼菜共生回路$()。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "hydroponics",
+            "item": "tfg:hydroponics_facility",
+            "text": "$(item)水培设施$()是电力温室的 $(9)IV$() 升级版，可以在任何维度种植任何作物，还支持 $(item)并行控制仓$()。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_crops",
@@ -136,7 +152,9 @@
         "firmalife:hydroponic_planter": 14,
         "firmalife:sprinkler": 15,
         "firmalife:watering_can": 15,
-        "firmalife:sweeper": 18,
-        "firmalife:picker": 18
+        "firmalife:sweeper": 17,
+        "firmalife:picker": 17,
+        "tfg:electric_greenhouse": 19,
+        "tfg:hydroponics_facility": 21
     }
 }

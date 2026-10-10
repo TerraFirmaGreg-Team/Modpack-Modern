@@ -284,6 +284,8 @@ function registerTFGMarsEntityTypeTags(event) {
 	ENTITIES.forEach(entity => {
 		event.add('ad_astra:can_survive_extreme_cold', entity)
 		event.add('ad_astra:lives_without_oxygen', entity)
+		event.add('minecraft:freeze_immune_entity_types', entity)
+		event.add('minecraft:powder_snow_walkable_mobs', entity)
 	})
 
 	event.add('tfc:deals_piercing_damage', 'tfg:wraptor')

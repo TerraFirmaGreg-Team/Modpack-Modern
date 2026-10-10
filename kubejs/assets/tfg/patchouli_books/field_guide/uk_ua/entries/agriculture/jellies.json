@@ -10,11 +10,11 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:agriculture/jellies#produce)Виробництво$()\n$(li)$(bold)$(l:agriculture/jellies#feeding)Годування$()\n$(li)$(bold)Джеллі з Землі$()\n$(li2)$(l:agriculture/jellies#herbal)Трав’яний$()\n$(li2)$(l:agriculture/jellies#phosphorum)Фосфорумовий$()\n$(li2)$(l:agriculture/jellies#rock)Кам’яний$()\n$(li)$(bold)Джеллі з Безодні$()\n$(li2)$(l:beneath/beneath_fauna#ice_jellie)Крижаний$()\n$(li2)$(l:beneath/beneath_fauna#plant_jellie)Рослинний$()\n$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)Світлоягідний$()\n$(li2)$(l:beneath/beneath_fauna#spring_jellie)Джерельний$()\n$(li2)$(l:beneath/beneath_fauna#lava_jellie)Лавовий$()\n$(li2)$(l:beneath/beneath_fauna#biotite_jellie)Біотитовий$()\n$(li2)$(l:beneath/beneath_fauna#latex_jellie)Латексний$()\n$(br2)$(o)(Продовження на наступній сторінці...)$()"
+			"text": "$(li)$(bold)$(l:agriculture/jellies#produce)Виробництво$()$(li)$(bold)$(l:agriculture/jellies#feeding)Годування$()$(li)$(bold)Джеллі з Землі$()$(li2)$(l:agriculture/jellies#herbal)Трав’яний$()$(li2)$(l:agriculture/jellies#phosphorum)Фосфорумовий$()$(li2)$(l:agriculture/jellies#rock)Кам’яний$()$(li)$(bold)Джеллі з Безодні$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)Крижаний$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)Рослинний$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)Світлоягідний$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)Джерельний$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)Лавовий$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)Біотитовий$()$(li2)$(l:beneath/beneath_fauna#latex_jellie)Латексний$()$(br2)$(o)(Продовження на наступній сторінці...)$()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)Джеллі з Місяця$()\n$(li2)$(l:the_moon/moon_fauna#certus_jellie)Істиннокаварцовий$()\n$(li)$(bold)Джеллі з Марса$()\n$(li2)$(l:mars/mars_fauna#pentetic_jellie)Пентетичний$()\n$(li)$(bold)$(l:agriculture/jellies#spoiler)???$()"
+			"text": "$(li)$(bold)Місячні види$()$(li2)$(l:the_moon/moon_fauna#certus_jellie)Істинний$()$(li)$(bold)Марсіанські види$()$(li2)$(l:mars/mars_fauna#pentetic_jellie)Пентетичний$()$(li)$(bold)$(l:agriculture/jellies#spoiler)???$()"
 		},
 		{
 			"type": "patchouli:image",

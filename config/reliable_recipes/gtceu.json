@@ -463,7 +463,11 @@
 			"gtceu:extractor/fish_oil_from_pufferfish",
 			"gtceu:alloy_blast_smelter/boron_carbide",
 			"gtceu:alloy_blast_smelter/boron_carbide_gas",
-			"gtceu:vacuum_freezer/boron_carbide"
+			"gtceu:vacuum_freezer/boron_carbide",
+			"gtceu:electric_blast_furnace/blast_inconel_718",
+			"gtceu:electric_blast_furnace/blast_inconel_718_gas",
+			"gtceu:electric_blast_furnace/blast_mo_si_b",
+			"gtceu:electric_blast_furnace/blast_mo_si_b_gas"
 		]
 	},
 	{

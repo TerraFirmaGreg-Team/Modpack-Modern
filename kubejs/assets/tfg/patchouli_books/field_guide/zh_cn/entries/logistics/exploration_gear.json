@@ -1,117 +1,117 @@
 {
-    "name": "Exploration Gear",
+    "name": "探索装备",
     "category": "tfg:logistics",
     "icon": "sns:hiking_boots",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:logistics/exploration_gear#hiking_boots)Hiking Boots$()$(li2)$(l:logistics/exploration_gear#safety_boots)Safety Boots$()$(li)$(bold)$(l:logistics/exploration_gear#canes)Canes$()$(li)$(bold)$(l:logistics/exploration_gear#snowshoes)Snowshoes$()$(li)$(bold)$(l:logistics/exploration_gear#snorkel)Snorkel$()$(li)$(bold)$(l:logistics/exploration_gear#flippers)Flippers$()$(li)$(bold)$(l:logistics/exploration_gear#diving_suit)Diving Suit$()$(li2)$(l:logistics/exploration_gear#lava_diving_suit)Lava Diving Suit$()$(li)$(bold)$(l:logistics/exploration_gear#digger_helmet)Digger Helmet$()$(li)$(bold)$(l:logistics/exploration_gear#grappling_hook)Grappling Hook$()$(li2)$(l:logistics/exploration_gear#harpoon)Harpoon$()$(li)$(bold)$(l:logistics/exploration_gear#hang_glider)Hang Glider$()$(li)$(bold)$(l:logistics/exploration_gear#jetpacks)Jetpacks$()",
-            "title": "Index",
+            "text": "$(li)$(bold)$(l:logistics/exploration_gear#hiking_boots)登山靴$()$(li2)$(l:logistics/exploration_gear#safety_boots)安全靴$()$(li)$(bold)$(l:logistics/exploration_gear#canes)手杖$()$(li)$(bold)$(l:logistics/exploration_gear#snowshoes)雪鞋$()$(li)$(bold)$(l:logistics/exploration_gear#snorkel)通气管$()$(li)$(bold)$(l:logistics/exploration_gear#flippers)脚蹼$()$(li)$(bold)$(l:logistics/exploration_gear#diving_suit)潜水服$()$(li2)$(l:logistics/exploration_gear#lava_diving_suit)熔岩潜水服$()$(li)$(bold)$(l:logistics/exploration_gear#digger_helmet)矿工头盔$()$(li)$(bold)$(l:logistics/exploration_gear#grappling_hook)抓钩$()$(li2)$(l:logistics/exploration_gear#harpoon)吊索$()$(li)$(bold)$(l:logistics/exploration_gear#hang_glider)悬挂式滑翔机$()$(li)$(bold)$(l:logistics/exploration_gear#jetpacks)喷气背包$()",
+            "title": "目录",
             "anchor": "index"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Hiking Boots",
+            "title": "登山靴",
             "anchor": "hiking_boots",
             "item": "sns:hiking_boots",
-            "text": "Every explorer needs a good pair of boots.$(br)$(thing)Hiking Boots$() allow you to:$(li)Quickly walk through shrubbery.$(li)Obtain a minor speed boost.$(li)Obtain a minor increase in safe fall height.$(li)Auto-walk up blocks, enabled with $(item)$(k:sns.key.stepUpToggle)$()"
+            "text": "每位探索者都需要一双好靴子。$(br)$(thing)登山靴$()能让你：$(li)快速穿过灌木丛。$(li)获得少量速度加成。$(li)安全坠落高度小幅提升。$(li)自动迈上方块，通过$(item)$(k:sns.key.stepUpToggle)$()开启"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "safety_boots",
-            "title": "Safety Boots",
+            "title": "安全靴",
             "item": "sns:steel_toe_hiking_boots,sns:black_steel_toe_hiking_boots,sns:red_steel_toe_hiking_boots,sns:blue_steel_toe_hiking_boots",
-            "text": "Various steels can be integrated into your hiking boots to give them an increase in protection. $(thing)Blue and Red Steel$() hiking boots provide additional environmental protection from extreme temperatures."
+            "text": "各种钢材都可以融入登山靴，使其防护能力得到提升。$(thing)蓝钢和红钢$()登山靴还能提供额外的环境防护，抵御极端温度。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "canes",
-            "title": "Canes",
+            "title": "手杖",
             "item": "tfccanes:walking_cane,tfccanes:refined_walking_cane",
-            "text": "$(thing)Walking Canes$() provide a similar effect to hiking boots but must be held in the hand. Their step height effect can even stack with hiking boots, allowing you to auto-step up even 2-block tall walls."
+            "text": "$(thing)行走手杖$()的效果与登山靴类似，但必须握在手中。它提升迈步高度的效果甚至能与登山靴叠加，让你能自动登上 2 格高的墙。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "snowshoes",
-            "title": "Snowshoes",
+            "title": "雪鞋",
             "item": "tfg:snowshoes",
-            "text": "When worn on the feet, $(thing)Snowshoes$() remove the slowdown penalty when walking on snow and allow you to travel on powdered snow."
+            "text": "$(thing)雪鞋$()穿在脚上时，可以消除在雪上行走时的减速惩罚，还能让你在细雪上通行。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "snorkel",
-            "title": "Snorkel",
+            "title": "通气管",
             "item": "tfg:snorkel",
-            "text": "When worn on the face, a $(thing)Snorkel$() allows you to breathe for an extra $(item)15 seconds$() underwater."
+            "text": "$(thing)通气管$()戴在脸上时，能让你在水下多呼吸$(item)15 秒$()。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "flippers",
-            "title": "Flippers",
+            "title": "脚蹼",
             "item": "tfg:flippers",
-            "text": "When worn on the feet, $(thing)Flippers$() improves your agility and speed when swimming underwater."
+            "text": "$(thing)脚蹼$()穿在脚上时，能提升你水下游泳的灵活性和速度。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "diving_suit",
-            "title": "Diving Suit",
+            "title": "潜水服",
             "item": "create:copper_diving_helmet,create:copper_diving_boots,create:copper_backtank",
-            "text": "The $(item)Copper Diving Helmet and Backtank$() allow the wearer to stay underwater indefinitely until the backtank runs out of air. You can refill the tank by supplying it with $(thing)mechanical power$(). Wearing $(item)Copper Diving Boots$() allows you to move better on the ocean floor and prevents $(thing)mechanical belts$() and $(thing)lighter-than-air gases$() from effecting you."
+            "text": "$(item)铜潜水头盔和背罐$()能让穿戴者在水下无限期停留，直到背罐里的空气耗尽。你可以通过向背罐提供$(thing)动力$()来补充空气。穿上$(item)铜潜水靴$()能让你在海底行动更自如，还能使你免受$(thing)传送带$()和$(thing)比空气轻的气体$()的影响。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "lava_diving_suit",
-            "title": "Lava Diving Suit",
+            "title": "熔岩潜水服",
             "item": "create:netherite_diving_helmet,create:netherite_diving_boots,create:netherite_backtank,minecraft:netherite_leggings",
-            "text": "The $(thing)Blue Steel Diving Suit$() works similarly to the $(l:logistics/exploration_gear#diving_suit)Diving Suit$() but instead of allowing you to breath underwater, it allows you to breath under lava. To work, the whole set must be worn to protect you from the intense heat."
+            "text": "$(thing)蓝钢潜水服$()的原理与$(l:logistics/exploration_gear#diving_suit)潜水服$()类似，但不是让你在水下呼吸，而是让你能在熔岩下呼吸。必须穿戴整套装备来抵御高温，才能发挥作用。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "digger_helmet",
-            "title": "Digger Helmets",
+            "title": "矿工头盔",
             "item": "diggerhelmet:digger_helmet,diggerhelmet:copper_digger_helmet,diggerhelmet:bismuth_bronze_digger_helmet,diggerhelmet:black_bronze_digger_helmet,diggerhelmet:bronze_digger_helmet,diggerhelmet:wrought_iron_digger_helmet,diggerhelmet:steel_digger_helmet,diggerhelmet:black_steel_digger_helmet,diggerhelmet:red_steel_digger_helmet,diggerhelmet:blue_steel_digger_helmet,diggerhelmet:wool_lining,diggerhelmet:silk_lining,diggerhelmet:mining_speed_modifier,diggerhelmet:auto_drink_modifier",
-            "text": "$(thing)Digger Helmets$() provide a permanent ambient lightsource around the player thanks to the candle on your head. They also come with some helpful modifier upgrades such as the $(item)Mining Speed Modifier$(), $(item)Auto Drink Modifier$(), or the $(thing)Temperature Insulation Linings$().$(br)Can be worn in your $(l:craftsmanship/clothing#curios)Curios slots$(), but then do not provide armor."
+            "text": "$(thing)矿工头盔$()凭借头顶的蜡烛，为玩家周围提供永久的环境光源。它还有几种实用的升级模块，例如$(item)采矿加速模块$()、$(item)自动饮水模块$()，以及$(thing)隔热衬里$()。$(br)可以戴在$(l:craftsmanship/clothing#curios)Curios 饰品栏$()里，但此时不提供护甲。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "grappling_hook",
-            "title": "Grappling Hook",
+            "title": "抓钩",
             "item": "grapplemod:grapplinghook",
-            "text": "The $(thing)Grappling Hook$() fires off a line of rope with $(item)$(k:key.attack)$() and anchors against blocks to let you swing around and traverse vertically very quickly.$(br2)You can craft the grappling hook with various items to upgrade it - check out the section in the $(thing)Tips - Tools$() quest chapter for more details."
+            "text": "$(thing)抓钩$()可以用$(item)$(k:key.attack)$()射出绳索，钩住方块后你便能荡来荡去、极速垂直移动。$(br2)你可以用各种物品与抓钩合成来升级它——详情请查看$(thing)提示 - 工具$()任务章节中的相关内容。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "harpoon",
-            "title": "Harpoon",
+            "title": "吊索",
             "item": "species:harpoon",
-            "text": "The $(thing)Harpoon$() is very similar to the $(l:logistics/exploration_gear#grappling_hook)Grappling Hook$() but is much more restrictive, having no upgrades and being able to only be launched straight upwards with $(item)$(k:key.use)$().$(br2)However, It does allow you to directly ascend up the rope with $(item)$(k:key.jump)$(), and can be combined with $(l:logistics/exploration_gear#coil)Coils$() to make $(item)Ziplines$()!"
+            "text": "$(thing)吊索$()与$(l:logistics/exploration_gear#grappling_hook)抓钩$()非常相似，但限制要多得多：无法升级，且只能用$(item)$(k:key.use)$()垂直向上发射。$(br2)不过，它支持你按$(item)$(k:key.jump)$()沿绳索直接向上攀爬，还能与$(l:logistics/exploration_gear#coil)绳圈$()组合，搭出$(item)滑索$()！"
         },
         {
             "type": "patchouli:spotlight",
             "item": "species:coil",
             "anchor": "coil",
-            "text": "If you right-click two Fences with a $(item)Coil$(), you'll create a $(item)Zipline$()! Build one above you, then shoot your $(l:logistics/exploration_gear#harpoon)Harpoon$() into the fence to start schmooving."
+            "text": "手持$(item)绳圈$()右击两根栅栏，就能架起一条$(item)滑索$()！在自己上方架一条，然后把$(l:logistics/exploration_gear#harpoon)吊索$()射向栅栏，就可以潇洒地滑行起来了。"
         },
         {
             "type": "patchouli:text",
-            "text": "Right-click the Coil with an empty hand to change the slack of the line. Each Coil is $(thing)one-way$(), indicated by the \"arrows\" on the line itself, so if you want a two-way line you'll need two coils.$(br2)You can also place Coils on other blocks for decoration, but they must be on fences to work as a zipline."
+            "text": "空手右击绳圈可以调整绳线的松紧。每条绳圈都是$(thing)单向$()的，绳线上有“箭头”指示方向，所以想要双向滑索就需要两个绳圈。$(br2)绳圈也可以放在其他方块上作装饰，但只有装在栅栏上才能充当滑索。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "hang_glider",
             "item": "hangglider:hang_glider,hangglider:reinforced_hang_glider",
-            "text": "The $(item)Hang Glider$() lets you travel horizontally long distances, which makes it great for crossing wide open areas."
+            "text": "$(item)悬挂式滑翔机$()能让你长距离水平飞行，非常适合跨越开阔地带。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "jetpacks",
             "item": "gtceu:liquid_fuel_jetpack,gtceu:electric_jetpack,gtceu:advanced_electric_jetpack",
-            "title": "Jetpacks",
-            "text": "$(item)Jetpacks$() are great for vertical movement, and have several upgrades, with each one being faster and better at hovering than the last.$(br2)Electric jetpacks can be remotely charged with $(item)Sneak-$(k:key.use)$() on a Battery, or with a $(item)Wireless Charger$()."
+            "title": "喷气背包",
+            "text": "$(item)喷气背包$()非常适合垂直移动，有多种升级型号，每一级都比上一级更快、悬停性能更好。$(br2)电力喷气背包可以远程充电：对电池$(item)潜行+$(k:key.use)$()，或使用$(item)无线充电器$()。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/weaving",
@@ -155,6 +155,11 @@
         "diggerhelmet:mining_speed_modifier": 9,
         "diggerhelmet:auto_drink_modifier": 9,
         "grapplemod:grapplinghook": 10,
-        "species:harpoon": 11
+        "species:harpoon": 11,
+        "hangglider:hang_glider": 14,
+        "hangglider:reinforced_hang_glider": 14,
+        "gtceu:liquid_fuel_jetpack": 15,
+        "gtceu:electric_jetpack": 15,
+        "gtceu:advanced_electric_jetpack": 15
     }
 }

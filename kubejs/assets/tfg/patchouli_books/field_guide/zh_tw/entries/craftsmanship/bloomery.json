@@ -1,16 +1,16 @@
 {
-    "name": "Bloomery",
+    "name": "鍛鐵爐",
     "category": "tfg:craftsmanship",
     "icon": "tfc:bloomery",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "The $(thing)Bloomery$() is a device used to smelt $(thing)Iron Ore$() into $(thing)Iron Blooms$() which can be worked into $(thing)Wrought Iron$(). Some common iron ores are $(item)Hematite$(), $(item)Limonite$(), and $(item)Magnetite$(). These ores melt into $(thing)Cast Iron$() rather than $(thing)Wrought Iron$(). All iron-bearing items melt into Cast Iron. To turn them into usable iron, the bloomery is needed. Any iron item can be used in the bloomery, including iron tools and cast iron ingots!"
+            "text": "$(thing)鍛鐵爐$()是用來將$(thing)鐵礦石$()熔煉成$(thing)方坯$()的裝置，方坯可以再鍛造成$(thing)鍛鐵$()。常見的鐵礦石有$(item)赤鐵礦$()、$(item)褐鐵礦$()和$(item)磁鐵礦$()。這些礦石會熔化成$(thing)鑄鐵$()而非$(thing)鍛鐵$()。所有含鐵的物品都會熔化成鑄鐵。要將它們轉化為可用的鐵，就需要鍛鐵爐。任何鐵製物品都可以放入鍛鐵爐，包括鐵製工具和鑄鐵錠！"
         },
         {
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/bloomery",
-            "text": "The bloomery is made from 8 $(thing)Bronze Double Plates$(), which is a total of 32 bronze ingots.$(br)The bloomery will also need $(t:#tfc:bloomery_insulation)$(6)22 stone blocks$() such as stone bricks."
+            "text": "鍛鐵爐由 8 個$(thing)雙重青銅板$()製成，總共需要 32 個青銅錠。$(br)鍛鐵爐還需要$(t:#tfc:bloomery_insulation)$(6)22 個石頭方塊$()，例如石磚。"
         },
         {
             "type": "patchouli:multiblock",
@@ -47,56 +47,56 @@
                     "A": "tfc:rock/smooth/dacite"
                 }
             },
-            "name": "Bloomery Structure",
-            "text": "A full size bloomery. The bloomery block will open and close with $(item)$(k:key.use)$().",
+            "name": "鍛鐵爐結構",
+            "text": "全尺寸的鍛鐵爐。按下$(item)$(k:key.use)$()可以開關鍛鐵爐方塊。",
             "enable_visualize": true
         },
         {
             "type": "patchouli:text",
-            "text": "The bloomery can contain up to a maximum of 48 $(thing)Inputs$(), with 16 items per layer of the chimney; 8 charcoal and 8 iron containing items.$(br2)To add items to the bloomery, climb up to the top and throw items inside with $(item)$(k:key.drop)$(). A tower of grey ore should form.$(br2)You can only use $(item)Charcoal$() as fuel for your bloomery."
+            "text": "鍛鐵爐最多可以容納 48 個$(thing)材料$()，煙囪每層 16 個物品：8 個木炭和 8 個含鐵物品。$(br2)要將物品放入鍛鐵爐，爬到頂端並按下$(item)$(k:key.drop)$()把物品丟進去。應該會形成一座灰色礦石塔。$(br2)鍛鐵爐只能使用$(item)木炭$()作為燃料。"
         },
         {
             "type": "patchouli:image",
             "images": [
                 "tfc:textures/gui/book/tutorial/bloomery_hole.png"
             ],
-            "text": "鍛鐵爐每消耗$(thing)一個木炭$()以及$(thing)144mb的鑄鐵$()來生產一塊$(thing)生鐵方胚$()。",
+            "text": "鍛鐵爐每消耗$(thing)一個木炭$()以及$(thing)144mb的鑄鐵$()來生產一塊$(thing)生鐵方坯$()。",
             "border": true
         },
         {
             "type": "patchouli:text",
-            "text": "Most iron dust contains 129mB of iron, so unless you are using pure cast iron ingots, we recommend $(item)25 metal ore dusts$() and $(item)22 charcoal$() for a full bloomery. This will incur a loss of 57mB of iron.$(br)After filling the bloomery with a combination of $(thing)Fuel$() and $(thing)Ore$(), light the bloomery doors, and wait $(t:12.5 min)$(6)15 in-game hours$() for the bloomery to smelt. When the bloomery shuts off, it leaves behind a $(thing)Bloom$() block. This contains hot $(thing)Raw Iron Blooms$() which can be obtained by mining the $(thing)Bloom$() repeatedly with a pickaxe."
+            "text": "大多數鐵粉含有 129mB 的鐵，所以除非你使用純鑄鐵錠，否則我們建議一座全滿的鍛鐵爐放入$(item)25 個金屬礦粉$()和$(item)22 個木炭$()。這會損失 57mB 的鐵。$(br)在鍛鐵爐中放滿$(thing)燃料$()和$(thing)礦石$()後，點燃鍛鐵爐的爐門，等待$(t:12.5 分鐘)$(6)遊戲中 15 小時$()讓鍛鐵爐熔煉。鍛鐵爐熄滅後，會留下一個$(thing)方坯$()方塊。裡面含有高溫的$(thing)粗方坯$()，用鎬反覆挖掘$(thing)方坯$()方塊即可取得。"
         },
         {
             "type": "tfg:table",
             "anchor": "ratio_table",
             "strings": [
                 {
-                    "text": "Iron Type",
+                    "text": "鐵的種類",
                     "bold": true
                 },
                 {
-                    "text": "Iron",
+                    "text": "鐵",
                     "bold": true
                 },
                 {
-                    "text": "Fuel",
+                    "text": "燃料",
                     "bold": true
                 },
                 {
-                    "text": "Slots",
+                    "text": "欄位",
                     "bold": true
                 },
                 {
-                    "text": "Blooms",
+                    "text": "方坯",
                     "bold": true
                 },
                 {
-                    "text": "Waste",
+                    "text": "損耗",
                     "bold": true
                 },
                 {
-                    "text": "Cast Iron Ingots"
+                    "text": "鑄鐵錠"
                 },
                 {
                     "text": "24"
@@ -114,7 +114,7 @@
                     "text": "0mB"
                 },
                 {
-                    "text": "129mB Ore Dust"
+                    "text": "129mB 礦粉"
                 },
                 {
                     "text": "25"
@@ -132,7 +132,7 @@
                     "text": "57mB"
                 },
                 {
-                    "text": "129mB Ore Dust"
+                    "text": "129mB 礦粉"
                 },
                 {
                     "text": "19"
@@ -150,8 +150,8 @@
                     "text": "3mB"
                 }
             ],
-            "text": "Remember that a little iron waste is not worth your time worrying about!",
-            "title": "Bloomery Ratios",
+            "text": "記住，一點點鐵的損耗不值得你花時間煩惱！",
+            "title": "鍛鐵爐比例",
             "legend": [],
             "columns": 5,
             "first_column_width": 70,
@@ -180,27 +180,27 @@
                     "X": "tfc:bloom[layers=8]"
                 }
             },
-            "name": "方胚",
-            "text": "大塊$(thing)方胚$()。",
+            "name": "方坯",
+            "text": "大塊$(thing)方坯$()。",
             "enable_visualize": false
         },
         {
             "type": "tfg:anvil_recipe",
             "recipe": "tfc:anvil/refined_iron_bloom",
-            "text": "The $(thing)Raw Iron Bloom$() must be worked in a $(l:craftsmanship/anvils)Anvil$() to make $(thing)Refined Iron Bloom$(). And then that must be worked again into $(thing)Wrought Iron Ingots$().$(br)It is recommended to use $(l:craftsmanship/anvils#helve_hammer)Helve Hammers$() to automate the refining steps."
+            "text": "$(thing)粗方坯$()必須在$(l:craftsmanship/anvils)鐵砧$()上鍛造成$(thing)精煉方坯$()，然後再次鍛造成$(thing)鍛鐵錠$()。$(br)建議使用$(l:craftsmanship/anvils#helve_hammer)杵錘$()來自動化精煉步驟。"
         },
         {
             "type": "patchouli:text",
             "anchor": "tips",
-            "text": "$(li)If the bloomery finds contains more items than it can handle it will try to spit them out the front.$(li)To retrieve your items from a bloomery that is not lit, break the bloomery block.$(li)Blooms will only melt into cast iron, not wrought iron. They must be worked!",
-            "title": "Bloomery Tips"
+            "text": "$(li)如果鍛鐵爐中的物品超過它能處理的數量，它會試著從前方吐出多餘的物品。$(li)要從未點燃的鍛鐵爐中取回物品，請破壞鍛鐵爐方塊。$(li)方坯只會熔化成鑄鐵，而不是鍛鐵。它們必須經過鍛造！",
+            "title": "鍛鐵爐技巧"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "steam_bloomery",
-            "title": "Steam Bloomery",
+            "title": "蒸汽鍛鐵爐",
             "item": "tfg:steam_bloomery",
-            "text": "Available with the creation of $(item)Black Steel$() is the $(thing)Steam Bloomery$(). This structure is capable of producing blooms automatically, on top of being faster and more efficent than the traditional bloomery by using high-pressure steam."
+            "text": "製作出$(item)黑鋼$()後即可使用$(thing)蒸汽鍛鐵爐$()。這座結構能自動生產方坯，而且由於使用高壓蒸汽，比傳統鍛鐵爐更快、更有效率。"
         },
         {
             "type": "patchouli:multiblock",
@@ -241,13 +241,13 @@
                     "O": "gtceu:steam_output_bus[facing=north]"
                 }
             },
-            "name": "Structure",
-            "text": "A steam bloomery requires item input and item output buses, a steam input hatch, and three Bronze Firebox Casings.",
+            "name": "結構",
+            "text": "蒸汽鍛鐵爐需要物品輸入匯流排和物品輸出匯流排、一個蒸汽輸入倉，以及三個青銅火箱外殼。",
             "enable_visualize": true
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸閱讀",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pottery",

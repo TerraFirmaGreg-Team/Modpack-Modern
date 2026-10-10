@@ -12,7 +12,7 @@
             "type": "patchouli:text",
             "anchor": "intro",
             "title": "Введение",
-            "text": "$(thing)Livestock$() are animals that can be tamed and bred together by the player. Livestock can be either $(thing)male$() or $(thing)female$(). For some animals, it is possible to tell their sex visually. For example, male pigs have tusks."
+            "text": "$(thing)Скот$() это животные, которых игрок может приручить и спаривать между собой. Скотина может быть $(thing)самцом$() либо $(thing)самкой$(). Пол некоторых животных может быть определён визуально. У хряков, например, есть бивни."
         },
         {
             "type": "patchouli:text",
@@ -119,14 +119,14 @@
             "type": "patchouli:text",
             "title": "Прирученность",
             "anchor": "familiarity",
-            "text": "Livestock can be fed to raise $(thing)familiarity$(). Each animal has foods that it prefers to eat. To feed an animal, $(item)$(k:key.sneak)$() and $(item)$(k:key.use)$() with food in your hand.$(br)Familiarity is required for most livestock interactions. Familiarity will be passed down to offspring from the mother's side―at a reduced level."
+            "text": "Скот можно кормить для повышения $(thing)привязанности$(). У каждого животного есть любимая еда. Покормить животное можно с помощью $(item)$(k:key.sneak)$() и $(item)$(k:key.use)$() держа еду в руках. $(br) Привязанность требуется для большинства взаимодействий со скотом. Привязанность передаётся детям от матери, но в количестве меньшем, чем было у неё."
         },
         {
             "type": "patchouli:image",
             "images": [
                 "tfc:textures/gui/book/tutorial/unfamiliarized_pig.png"
             ],
-            "text": "Livestock have a $(thing)Familiarity Indicator$() that shows how familiar they are with you. Hold $(item)$(k:key.sneak)$() and look at the animal to reveal it.",
+            "text": "У скота есть $(thing)Индикатор привязанности$(), показывающий привязанность животного к тебе. Удерживай $(item)$(k:key.sneak)$() глядя на животное, чтобы он показался.",
             "border": true
         },
         {
@@ -149,13 +149,13 @@
             "type": "patchouli:text",
             "title": "Млекопитающие",
             "anchor": "mammals",
-            "text": "$(thing)Mammals$() are livestock that experience $(thing)Pregnancy$(). Adult mammals that are above 30% familiarity and have been fed that day will mate, given that they are of opposite genders and near each other. The female animal will become $(thing)pregnant$(), which causes it to have children a set number of days after fertilization.$(br)An example is $(l:the_world/wild_animals#pig)Pigs$()."
+            "text": "$(thing)Млекопитающие$() это скот, который может $(thing)Забеременеть$(). Взрослые млекопитающие с привязанностью больше 30% покормленные в один день начнут спариваться, если они противоположного пола и рядом друг с другом. Самка станет $(thing)Беременной$(), что приведёт к появлению у неё детей через определённое количество дней после оплодотворения. $(br)Примером могут послужить $(l:the_world/wild_animals#pig)Свиньи$()."
         },
         {
             "type": "patchouli:text",
             "title": "Шерстистые млекопитающие",
             "anchor": "wooly_animals",
-            "text": "$(thing)Wooly Animals$() are $(l:agriculture/animal_husbandry#mammals)Mammals$() that can be $(thing)Sheared$() if they are adults and familiar enough to you. Some examples are $(l:the_world/wild_animals#sheep)Sheep$(), $(l:the_world/wild_animals#alpaca)Alpacas$(), and $(l:the_world/wild_animals#musk_ox)Musk Oxen$()."
+            "text": "$(thing)Шерстистые животные$() это $(l:agriculture/animal_husbandry#mammals)Млекопитающие$(), которых можно $(thing)Подстричь$() если они взрослые и достаточно привязаны к тебе. Примером могут послужить $(l:the_world/wild_animals#sheep)Овцы$(), $(l:the_world/wild_animals#alpaca)Альпаки$(), и $(l:the_world/wild_animals#musk_ox)Овцебыки$()."
         },
         {
             "type": "patchouli:text",
@@ -196,7 +196,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Дальнейшее чтение",
+            "title": "Дополнительно",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/growing_crops",

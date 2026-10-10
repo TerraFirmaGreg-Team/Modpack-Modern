@@ -1,0 +1,18 @@
+{
+	"key.showcaser.category": "Showcaser",
+	"key.showcaser.share_item_in_chat": "分享資源",
+	"showcaser.chat.banned": "伺服器已限制你分享資源",
+	"showcaser.chat.share_message": "%s 分享了 %s",
+	"showcaser.chat.share_message.patchouli_book": "%s 分享了書籍 %s",
+	"showcaser.chat.share_message.patchouli_book_entry": "%s 分享了書籍條目 %s",
+	"showcaser.chat.share_message.quest": "%s 分享了任務 %s",
+	"showcaser.chat.share_message.quest.not_visible": "你看不到這個任務，無法開啟",
+	"showcaser.chat.share_message.recipe": "%s 分享了配方 %s",
+	"showcaser.chat.share_message.tooltip.unverified": "未經伺服器驗證",
+	"showcaser.chat.share_message.tooltip.verified": "已經伺服器驗證",
+	"showcaser.commands.reload": "已重新載入 Showcaser 儲存資料與設定",
+	"showcaser.commands.sharing.ban.player_already_banned": "玩家 %s 已經被禁止",
+	"showcaser.commands.sharing.ban.success": "已禁止玩家 %s 分享內容",
+	"showcaser.commands.sharing.unban.player_not_banned": "玩家 %s 沒有被禁止",
+	"showcaser.commands.sharing.unban.success": "玩家 %s 可以再次分享內容"
+}

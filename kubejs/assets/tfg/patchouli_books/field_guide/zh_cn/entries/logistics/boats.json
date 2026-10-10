@@ -1,22 +1,22 @@
 {
-    "name": "Boats",
+    "name": "船只",
     "category": "tfg:logistics",
     "icon": "firmaciv:textures/item/rowboat_icon_only.png",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:logistics/boats#intro)Sailing Information$()$(li2)$(l:logistics/boats#customization)Customization$()$(li2)$(l:logistics/boats#boat_items)Boats as Items$()$(li2)$(l:logistics/boats#animals)Transporting Animals$()$(li2)$(l:logistics/boats#paddles)Paddles as Oars$()$(li2)$(l:logistics/boats#cleats)Cleats & Leads$()$(li2)$(l:logistics/boats#anchors)Anchors & Windlasses$()$(li2)$(l:logistics/boats#sails)Sails$()$(li2)$(l:logistics/boats#sailing)Sailing$()$(li2)$(l:logistics/boats#painting)Painting & Dyeing$()$(li2)$(l:logistics/boats#damage)Damage & Repair$()",
-            "title": "Index",
+            "text": "$(li)$(bold)$(l:logistics/boats#intro)航行信息$()$(li2)$(l:logistics/boats#customization)自定义改装$()$(li2)$(l:logistics/boats#boat_items)能放进物品栏的船$()$(li2)$(l:logistics/boats#animals)运输动物$()$(li2)$(l:logistics/boats#paddles)手桨兼作船桨$()$(li2)$(l:logistics/boats#cleats)缆桩与引绳$()$(li2)$(l:logistics/boats#anchors)锚与绞车$()$(li2)$(l:logistics/boats#sails)船帆$()$(li2)$(l:logistics/boats#sailing)航行$()$(li2)$(l:logistics/boats#painting)上漆与染色$()$(li2)$(l:logistics/boats#damage)损坏与修复$()",
+            "title": "目录",
             "anchor": "index"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:logistics/boats#watercraft)Watercraft$()$(li2)$(l:logistics/boats#kayak)Kayak$()$(li2)$(l:logistics/boats#canoe)Dugout Canoe$()$(li2)$(l:logistics/boats#rowboat)Rowboat$()$(li2)$(l:logistics/boats#sloop)Sloop$()"
+            "text": "$(li)$(bold)$(l:logistics/boats#watercraft)水上载具$()$(li2)$(l:logistics/boats#kayak)皮划艇$()$(li2)$(l:logistics/boats#canoe)独木舟$()$(li2)$(l:logistics/boats#rowboat)划艇$()$(li2)$(l:logistics/boats#sloop)单桅纵帆船$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introduction",
+            "title": "简介",
             "text": "建造并使用一艘船将比你曾经习惯的稍微复杂一些，但是如果要向大海进发，没有什么比先建造一艘完美的船更重要的了。仔细阅读本手册，学习雕刻、手工制作、建造、划船、划水、驾驶和自定义的所有操作方法。"
         },
         {
@@ -29,7 +29,7 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Customization",
+            "title": "自定义改装",
             "anchor": "customization",
             "text": "你可以为船只添加自己的方块！像你放置一个方块那样，当你手中拿着一个箱子时，按住$(item)$(k:key.use)$()就可以将它安装到船只上。按$(item)$(k:key.use)$() 键以与它们交互。如果你不能在某个地方放置一个方块，那可能是因为那个地方是驾驶位！你怎么驾驶一辆没有驾驶位的船？你能像平常一样撸掉你想拆的方块，就能把它从船上拆下来了。"
         },
@@ -44,7 +44,7 @@
             "type": "patchouli:text",
             "title": "能放进物品栏的船",
             "anchor": "boat_items",
-            "text": "They don't exist! Except the kayak, if you break a boat, it will only drop some of its ingredients! This means you'll need a kayak if you want to carry a boat over land, and it also means you might want to build a dock for your larger vessels."
+            "text": "不存在的！除了皮划艇之外，把船打破只会掉落部分制作材料！这意味着，如果你想带着船走陆路，就需要一艘皮划艇；这也意味着，你可能需要为较大的船修建一座码头。"
         },
         {
             "type": "patchouli:image",
@@ -54,7 +54,7 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Transporting Animals",
+            "title": "运输动物",
             "anchor": "animals",
             "text": "和往常一样，你可以用船来移动动物！不过，要注意，像马这样的大型动物只适合乘坐足够大的船。如果船上做了一只动物，而且挡住了你的路，你可以通过shift+ $(item)$(k:key.use)$()以让它从载具上下来。动物在船上呆2天后会坐立不安，呆3天后会自己下船。"
         },
@@ -68,7 +68,7 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Paddles & Oars",
+            "title": "手桨与船桨",
             "anchor": "paddles",
             "text": "如果你感觉到你的船太慢了，请检查一下你握着的是不是正确的桨；如果你的船是需要桨架上的固定桨的，请检查桨架上的桨是否正确安装。在一些船上，多名玩家一起划船会让船的速度更快哦！"
         },
@@ -80,7 +80,7 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Cleats & Leads",
+            "title": "缆桩与引绳",
             "anchor": "cleats",
             "text": "大多数船都至少配备一个用来绑栓神的固定桩。你可以用一根引绳来绑住它，并且牵着船移动。你也可以把船拉上海岸线，或是把它拉上一个半砖。"
         },
@@ -93,9 +93,9 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Anchors & Windlasses",
+            "title": "锚与绞车",
             "anchor": "anchors",
-            "text": "Large boats have anchors, which can be used to completely stop the boat, provided the anchor is seated in the seafloor and no sails are deployed. The boat will still turn in the wind while it's at anchor. Look for the anchor icon located at the windlass (anchor winch) and press $(item)$(k:key.use)$() to lower and raise the anchor."
+            "text": "大型船配有锚，可以把船完全停住，前提是锚已经落进海底，且所有船帆都已收起。抛锚停泊期间，船仍会随风转动。找到绞车（起锚绞盘）处的锚形图标，按$(item)$(k:key.use)$()即可下锚或起锚。"
         },
         {
             "type": "patchouli:image",
@@ -103,13 +103,13 @@
             "images": [
                 "firmaciv:textures/gui/book/anchor.png"
             ],
-            "text": "The anchor and windlass on a sloop."
+            "text": "单桅纵帆船上的锚与绞车。"
         },
         {
             "type": "patchouli:text",
-            "title": "Sails",
+            "title": "船帆",
             "anchor": "sails",
-            "text": "Sailing vessels, of course, have sails. You'll need to deploy them in order to properly control your boat. Look for the triangular sail icon and press $(item)$(k:key.use)$() to deploy each sail. Since most boats have multiple sails, you can use different combinations of sail deployment to control your speed."
+            "text": "帆船自然配有船帆。你需要把帆展开，才能妥善操控船只。找到三角形的船帆图标，按$(item)$(k:key.use)$()即可展开每一面帆。由于大多数船都有多面帆，你可以通过不同的展开组合来控制船速。"
         },
         {
             "type": "patchouli:image",
@@ -117,13 +117,13 @@
             "images": [
                 "firmaciv:textures/gui/book/sails.png"
             ],
-            "text": "Both the jibsail (left) and mainsail (right) have been deployed on this sloop."
+            "text": "这艘单桅纵帆船的前帆（左）和主帆（右）均已展开。"
         },
         {
             "type": "patchouli:text",
-            "title": "Sailing",
+            "title": "航行",
             "anchor": "sailing",
-            "text": "Unlike ships that you may be used to, sailing is a skill with Firma: Civilization. When you're piloting a sailing vessel, a new UI element will appear showing the wind speed and direction, as well as the boat's speed. The color of the wind arrow will indicate the difficulty of sailing in that direction. Use your forward and backward movement keys to set the angle of the sails, and experiment to find the best one for the wind angle."
+            "text": "和你印象中的那些船不同，在 Firma: Civilization 里航行是一门技术。当你驾驶帆船时，屏幕上会出现一个新的 UI 元素，显示风速、风向以及船速。风箭头的颜色表示朝该方向航行的难易程度。使用前进和后退移动键来调整船帆角度，多加尝试，找出最适合当前风向的角度。"
         },
         {
             "type": "patchouli:image",
@@ -131,13 +131,13 @@
             "images": [
                 "firmaciv:textures/gui/book/sailing.png"
             ],
-            "text": "The sailing UI will help you control your vessel."
+            "text": "航行 UI 会帮助你操控船只。"
         },
         {
             "type": "patchouli:text",
-            "title": "Painting & Dyeing",
+            "title": "上漆与染色",
             "anchor": "painting",
-            "text": "Any boat constructed using Shipwright's Scaffolding can be painted, and any sail can be individually dyed. Simply hold a dye item in your hand and press $(item)$(k:key.use)$() when you see the paint brush icon to either paint a hull or dye a sail. Larger boats have unique patterns for each paint color."
+            "text": "任何用造船工脚手架建造的船都可以上漆，每面船帆也都能单独染色。只需手持染料，看到画笔图标时按$(item)$(k:key.use)$()，即可给船体上漆或给船帆染色。较大的船每种漆色都有独特的图案。"
         },
         {
             "type": "patchouli:image",
@@ -145,29 +145,29 @@
             "images": [
                 "firmaciv:textures/gui/book/painting.png"
             ],
-            "text": "A sloop has been painted yellow and its sails have been dyed."
+            "text": "一艘被漆成黄色的单桅纵帆船，船帆也已染色。"
         },
         {
             "type": "patchouli:text",
-            "title": "Damage & Repair",
+            "title": "损坏与修复",
             "anchor": "damage",
-            "text": "A damaged boat will start to show cracks. For any boat built using Shipwright's Scaffolding, use the appropriate type of plank blocks to repair it. For canoes, use lumber. At 90% damage, a boat will appear to take on water, and at 100% damage, it will sink! This does not apply to Kayaks."
+            "text": "受损的船会开始出现裂纹。对于任何用造船工脚手架建造的船，使用相应种类的木板方块即可修复；独木舟则使用木材修复。损伤达到 90% 时，船会开始进水；达到 100% 时，它就会沉没！皮划艇不受此影响。"
         },
         {
             "type": "patchouli:text",
             "anchor": "watercraft",
-            "text": "There are a variety of watercraft available to you throughout progression. The type of boat you may pick comes down to your needs and what materials are available to you.$(li)$(bold)$(l:logistics/boats#kayak)Kayak$(): Portable and fast. Best for solo use.$(li)$(bold)$(l:logistics/boats#canoe)Dugout Canoe$(): Cheap, made of softwood, and can carry two.$(li)$(bold)$(l:logistics/boats#rowboat)Rowboat$(): Medium sized, capabale of good hauls.$(li)$(bold)$(l:logistics/boats#sloop)Sloop$(): Large sea-fairing vessel. Most advanced watercraft.",
-            "title": "Watercraft"
+            "text": "随着进度的推进，你会接触到各种各样的水上载具。选哪种船，取决于你的需求和手头可用的材料。$(li)$(bold)$(l:logistics/boats#kayak)皮划艇$()：便携而迅捷，最适合单人使用。$(li)$(bold)$(l:logistics/boats#canoe)独木舟$()：便宜，由软木制成，可载两人。$(li)$(bold)$(l:logistics/boats#rowboat)划艇$()：中等大小，运载量可观。$(li)$(bold)$(l:logistics/boats#sloop)单桅纵帆船$()：大型远洋船只，最先进的水上载具。",
+            "title": "水上载具"
         },
         {
             "type": "patchouli:text",
             "anchor": "kayak",
-            "text": "Your best overland solo-adventure friend. Of course, being the only boat that can be carried as an item helps. It's the fastest boat for a solo player, and very maneuverable!$(br)To row a kayak, hold a $(item)Kayak Paddle$() in your main, or off-hand. To carry the kayak, just break it.",
-            "title": "Kayak"
+            "text": "单人陆上探险的最佳伙伴。当然，它是唯一能以物品形式随身携带的船，这一点功不可没。它是单人玩家能划的最快的船，而且非常灵活！$(br)划皮划艇时，把$(item)皮划艇桨$()拿在主手或副手即可。要携带皮划艇，直接打破它就行。",
+            "title": "皮划艇"
         },
         {
             "type": "patchouli:image",
-            "title": "Kayak",
+            "title": "皮划艇",
             "images": [
                 "firmaciv:textures/gui/book/kayak_isometric.png"
             ],
@@ -176,8 +176,8 @@
         {
             "type": "patchouli:text",
             "anchor": "canoe",
-            "title": "Canoe",
-            "text": "The Dugout Canoe will likely be the first step on your aquatic journey! If you're in the copper age, you can build a canoe with the help of a saw.$(br)Canoes require a $(item)Canoe Paddle$() and three $(n)Softwood$() logs. Search \"$(6)#softwood$()\" in $(emi) to view all useable logs. As a tip, all coniferous trees are softwood."
+            "title": "独木舟",
+            "text": "独木舟很可能是你水上之旅的第一步！如果你已经进入铜器时代，就可以借助锯子建造独木舟了。$(br)独木舟需要一支$(item)独木舟桨$()和三根$(n)软木$()原木。搜索“$(6)#softwood$()”即可在 $(emi) 中查看所有可用的原木。小提示：所有针叶树都是软木。"
         },
         {
             "type": "patchouli:image",
@@ -206,7 +206,7 @@
                 }
             },
             "name": "一根原木",
-            "text": "To build a $(thing)Dugout Canoe$(), start by placing three stripped-logs horizontally.",
+            "text": "要建造$(thing)独木舟$()，首先水平放置三根去皮原木。",
             "enable_visualize": false
         },
         {
@@ -225,8 +225,8 @@
                     "B": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=5,facing=east,end=true]"
                 }
             },
-            "name": "Halved Logs",
-            "text": "Then, remove the upper half by holding $(item)$(k:key.use)$() with a saw in hand.",
+            "name": "对半切开的原木",
+            "text": "然后，手持锯子按住$(item)$(k:key.use)$()，去掉上半部分。",
             "enable_visualize": false
         },
         {
@@ -245,14 +245,14 @@
                     "B": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=east,end=true]"
                 }
             },
-            "name": "A Carved Log",
-            "text": "Next, hollow out the top by holding $(item)$(k:key.use)$() with an axe in hand. Finally, light the canoe on fire with a $(item)Firestarter$() to finish the process.",
+            "name": "凿刻过的原木",
+            "text": "接着，手持斧头按住$(item)$(k:key.use)$()，把顶部凿空。最后，用$(item)起火器$()点燃独木舟，完成制作。",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
             "anchor": "rowboat",
-            "title": "Rowboat",
+            "title": "划艇",
             "text": "那么，你已经进入青铜时代，想要升级一下？划艇正是为你准备的。它有三个座位，可以容纳三名玩家，或最多两只动物，包括马！与以往一样，你也可以用你选择的容器替换座位（驾驶员座位除外）。你还可以在船尾放置两个额外的容器。"
         },
         {
@@ -269,7 +269,7 @@
             "type": "patchouli:crafting",
             "title": "脚手架",
             "recipe": "firmaciv:crafting/watercraft_frame_angled",
-            "text": "To build a rowboat, you'll need to start with Shipwright's Scaffolding. You'll place them facing inward in a 2 by 3 area.$(br)Scaffolding are then filled in with $(n)hardwood$() planks. Search \"$(6)#hardwood$()\" in $(emi) to view all useable log types."
+            "text": "要建造划艇，你需要从造船工脚手架开始。将它们在 2x3 的区域内朝内摆放。$(br)然后用$(n)硬木$()木板填满脚手架。搜索“$(6)#hardwood$()”即可在 $(emi) 中查看所有可用的原木种类。"
         },
         {
             "type": "patchouli:multiblock",
@@ -323,8 +323,8 @@
                     "6": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_right,frame_processed=3]"
                 }
             },
-            "name": "Filled Scaffolding",
-            "text": "Four $(6)$(t:#tfg:hardwood)hardwood$() plank blocks have been added to each scaffold.",
+            "name": "已填充的脚手架",
+            "text": "每个脚手架中都加入了四块$(6)$(t:#tfg:hardwood)硬木$()木板方块。",
             "enable_visualize": false
         },
         {
@@ -351,8 +351,8 @@
                     "6": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_right,frame_processed=7]"
                 }
             },
-            "name": "Bolted Scaffolding",
-            "text": "Using a hammer in your offhand, add four $(item)Copper Bolts$() to each scaffold.",
+            "name": "已装螺栓的脚手架",
+            "text": "副手持锤，为每个脚手架加上四枚$(item)铜螺栓$()。",
             "enable_visualize": false
         },
         {
@@ -381,15 +381,15 @@
                     "R": "alekiships:oarlock[facing=south]"
                 }
             },
-            "name": "Finished Rowboat",
-            "text": "Finally, add the $(item)Oarlocks$() to the center of the boat, and then add $(item)Oars$() to each oarlock.",
+            "name": "完工的划艇",
+            "text": "最后，将$(item)桨座$()装到船的中央，再为每个桨座装上$(item)船桨$()。",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
             "anchor": "sloop",
-            "title": "Sloop",
-            "text": "Iron Age already? Well, I guess it's high time you built yourself a proper ship. The sloop is 4 blocks wide and over 8 blocks long, an impressive upgrade from the rowboat! It holds up to 13 containers and up to 7 passengers, and, depending on the wind, can sail extremely fast. It can also carry up to 6 $(l:logistics/boats#cannons)Cannons$()!"
+            "title": "单桅纵帆船",
+            "text": "已经到铁器时代了？好吧，我想你是时候给自己造一艘像样的船了。单桅纵帆船宽 4 格、长 8 格有余，相比划艇是一次相当可观的升级！它能容纳多达 13 个容器和最多 7 名乘客，而且视风向不同，能以极快的速度航行。它还能搭载多达 6 门$(l:logistics/boats#cannons)火炮$()！"
         },
         {
             "type": "patchouli:image",
@@ -399,13 +399,13 @@
         },
         {
             "type": "patchouli:text",
-            "text": "The sloop is expensive, however, requiring a wealth of wrought iron, copper, wool, and other materials. But materials aren't the only cost! You'll have to learn how to sail, as well, and it can take some practice! You'll also likely want to build docks and other infrastructure if you plan on bringing your ship in close to shore.$(br)$(bold)TIP$(): It is recommended to build your sloop above water and then drop it into the water when finished. Builidng it in water may result in it sinking!"
+            "text": "不过，单桅纵帆船造价不菲，需要大量锻铁、铜、羊毛和其他材料。而且材料还不是唯一的成本！你还得学会如何航行，这可能需要一些练习！如果你打算把船开到近岸，很可能还需要修建码头和其他配套设施。$(br)$(bold)提示$()：建议在水面之上建造你的单桅纵帆船，完工后再放入水中。在水里建造可能会导致它沉没！"
         },
         {
             "type": "patchouli:crafting",
-            "title": "Scaffolding",
+            "title": "脚手架",
             "recipe": "firmaciv:crafting/watercraft_frame_flat",
-            "text": "Much like a rowboat, you'll start with Shipwright's Scaffolding.$(br)Scaffolding are then filled in with $(n)hardwood$() planks. Search \"$(6)#hardwood$()\" in $(emi) to view all useable log types."
+            "text": "和划艇一样，你需要从造船工脚手架开始。$(br)然后用$(n)硬木$()木板填满脚手架。搜索“$(6)#hardwood$()”即可在 $(emi) 中查看所有可用的原木种类。"
         },
         {
             "type": "patchouli:multiblock",
@@ -485,8 +485,8 @@
                     "a": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=3]"
                 }
             },
-            "name": "Sloop Scaffolding",
-            "text": "Four $(6)$(t:#tfg:hardwood)hardwood$() plank blocks have been added to each scaffold.",
+            "name": "单桅纵帆船脚手架",
+            "text": "每个脚手架中都加入了四块$(6)$(t:#tfg:hardwood)硬木$()木板方块。",
             "enable_visualize": true
         },
         {
@@ -526,8 +526,8 @@
                     "a": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=7]"
                 }
             },
-            "name": "Sloop Scaffolding",
-            "text": "Using a hammer in your offhand, add four $(item)Copper Bolts$() to each scaffold.",
+            "name": "单桅纵帆船脚手架",
+            "text": "副手持锤，为每个脚手架加上四枚$(item)铜螺栓$()。",
             "enable_visualize": true
         },
         {
@@ -569,20 +569,20 @@
                     "R": "alekiships:cleat[facing=south]"
                 }
             },
-            "name": "Sloop Scaffolding",
-            "text": "Finally, add the $(item)Cleats$() to the hull.",
+            "name": "单桅纵帆船脚手架",
+            "text": "最后，将$(item)缆桩$()装到船体上。",
             "enable_visualize": true
         },
         {
             "type": "patchouli:text",
-            "text": "Building the hull is only the first step. Next, look for the blue hammer icon and $(item)$(k:key.use)$() to add the items that show next to your crosshair.$(br2)For a full list of materials, you will need:$(li)6 Scaffold Slabs$(li)18 Scaffold Stairs$(li)116 Hardwood Plank Blocks$(li)96 Copper Bolts$(li)4 Cleats$(li)34 Hardwood Stripped Logs$(li)1 Medium Sail$(li)1 Small Sail$(li)16 Lumber$(li)1 Anchor$(li)8 Rope."
+            "text": "建造船体只是第一步。接下来，找到蓝色的锤子图标并按$(item)$(k:key.use)$()，把准星旁显示的物品加到船上。$(br)完整材料清单如下：$(li)脚手架台阶 x6$(li)脚手架楼梯 x18$(li)硬木木板方块 x116$(li)铜螺栓 x96$(li)缆桩 x4$(li)硬木去皮原木 x34$(li)中型风帆 x1$(li)小型风帆 x1$(li)木材 x16$(li)船锚 x1$(li)绳子 x8"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "cannons",
-            "title": "Cannons",
+            "title": "火炮",
             "item": "firmaciv:cannon,alekiships:cannonball",
-            "text": "Cannons! Who doesn't want cannons? These powerful weapons of naval warfare can be placed on sloops, as well as on land, and are the best way to destroy your enemy's vessels, dealing far more damage to ships than any alternative."
+            "text": "火炮！谁不想要火炮呢？这些强大的海战武器既可以安放在单桅纵帆船上，也可以安置在陆地上，是摧毁敌舰的最佳选择，对船只造成的伤害远超任何其他武器。"
         },
         {
             "type": "patchouli:image",
@@ -592,11 +592,11 @@
         },
         {
             "type": "text",
-            "text": "You'll also need cannonballs, smithed from Wrought Iron Double Ingots, as well as Gunpowder, Unrefined Paper and a Flint and Steel in order to fire a cannon. A UI element will indicate the status of the cannon. You can angle a cannon up by pressing $(item)$(k:key.use)$() and down by crouching and pressing $(item)$(k:key.use)$()."
+            "text": "要开炮，你还需要由锻铁双锭锻造而成的炮弹，以及火药、粗制纸和打火石。界面上会有一个 UI 元素显示火炮的状态。按$(item)$(k:key.use)$()可以抬高炮管，潜行时按$(item)$(k:key.use)$()则可以压低炮管。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/metallurgy",
@@ -617,12 +617,12 @@
         "firmaciv:canoe_paddle": 26,
         "alekiships:oarlock": 34,
         "alekiships:oar": 34,
-        "alekiships:cleat": 42,
-        "alekiships:anchor": 42,
-        "firmaciv:small_triangular_sail": 42,
-        "firmaciv:medium_triangular_sail": 42,
-        "firmaciv:cannon": 51,
-        "firmaciv:cannon_barrel": 51,
-        "alekiships:cannonball": 51
+        "alekiships:cleat": 40,
+        "alekiships:anchor": 40,
+        "firmaciv:small_triangular_sail": 40,
+        "firmaciv:medium_triangular_sail": 40,
+        "firmaciv:cannon": 50,
+        "firmaciv:cannon_barrel": 50,
+        "alekiships:cannonball": 50
     }
 }

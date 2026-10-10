@@ -34,7 +34,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "For $(thing)Colored Steel$(), $(thing)Blue Steel$() is better at resisting $(thing)Crushing$() damage, whereas $(thing)Red Steel$() is better at resisting $(thing)Piercing$() damage."
+            "text": "W przypadku $(thing)kolorowej stali$() $(thing)niebieska stal$() lepiej chroni przed obrażeniami $(thing)obuchowymi$(), natomiast $(thing)czerwona stal$() lepiej chroni przed obrażeniami $(thing)kłutymi$()."
         },
         {
             "type": "patchouli:relations",

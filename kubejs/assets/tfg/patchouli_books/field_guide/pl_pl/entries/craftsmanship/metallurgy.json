@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:craftsmanship/metallurgy#intro)Surface Metal$()$(li)$(bold)$(l:craftsmanship/metallurgy#extraction)Extracting Metal$()$(li2)$(l:craftsmanship/metallurgy#casting)Casting$()$(li)$(bold)$(l:craftsmanship/metallurgy#alloying)Alloying$()$(li2)$(l:craftsmanship/metallurgy#utility_alloys)Utility Alloys$()$(li)$(bold)$(l:craftsmanship/metallurgy#propick)Prospector's Pick$()$(li2)$(l:craftsmanship/metallurgy#prospector)Digital Prospecting$()"
+            "text": "$(li)$(bold)$(l:craftsmanship/metallurgy#intro)Rozrzucony metal$()$(li)$(bold)$(l:craftsmanship/metallurgy#extraction)Wydobycie metalu$()$(li2)$(l:craftsmanship/metallurgy#casting)Odlewanie$()$(li)$(bold)$(l:craftsmanship/metallurgy#alloying)Tworzenie stopów$()$(li2)$(l:craftsmanship/metallurgy#utility_alloys)Stopy użytkowe$()$(li)$(bold)$(l:craftsmanship/metallurgy#propick)Kilof geologiczny$()$(li2)$(l:craftsmanship/metallurgy#prospector)Cyfrowy wykrywacz rud$()"
         },
         {
             "type": "patchouli:text",

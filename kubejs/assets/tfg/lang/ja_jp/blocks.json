@@ -692,6 +692,8 @@
 	"block.tfg.uv_wireless_charger": "§9究極型無線充電機",
 	"block.tfg.uhv_wireless_charger": "§9超越型無線充電機",
 	"block.tfg.fluid.semiheavy_ammoniacal_water": "アンモニア交じりの半重水",
+	"block.tfg.fluid.sulfur_fumes": "高密度硫化噴流",
+	"block.tfg.fluid.geyser_slurry": "超高温泥漿",
 	"block.tfg.fluid.muddy_water": "泥水",
 	"block.tfg.grass.mars_dirt": "火星の土",
 	"block.tfg.grass.mars_clay_dirt": "火星の粘土",
@@ -998,6 +1000,7 @@
 	"block.tfg.uv_smr_fluid_import_hatch": "SMT搬入ハッチ",
 	"block.tfg.ore_processing_beneath": "地熱鉱石処理装置",
 	"block.tfg.me_assembler": "ME共振製造機",
+	"block.tfg.budding_charge": "ME共振チャージ装置",
 	"block.tfg.me_assembler_redstone_port": "MEレッドストーンポート",
 	"block.tfg.bioreactor": "バイオ反応炉",
 	"block.tfg.growth_chamber": "成長制御チャンバー",
@@ -1561,5 +1564,6 @@
 	"block.tfg.stainless_steel_anvil": "ステンレス鋼の金床",
 	"block.tfg.tungsten_anvil": "タングステンの金床",
 	"block.tfg.blackstone_anvil": "輝岩の金床",
-	"block.tfg.crackrack_anvil": "角斑岩の金床"
+	"block.tfg.crackrack_anvil": "角斑岩の金床",
+	"block.tfg.gas_burner": "ガスバーナー"
 }

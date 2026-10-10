@@ -35,7 +35,7 @@
             "anchor": "snowshoes",
             "title": "Rakiety śnieżne",
             "item": "tfg:snowshoes",
-            "text": "When worn on the feet, $(thing)Snowshoes$() remove the slowdown penalty when walking on snow and allow you to travel on powdered snow."
+            "text": "Noszone na stopach $(thing)rakiety śnieżne$() zapobiegają spowolnieniu podczas chodzenia po śniegu i pozwalają poruszać się po sypkim śniegu."
         },
         {
             "type": "patchouli:spotlight",
@@ -49,7 +49,7 @@
             "anchor": "flippers",
             "title": "Płetwy",
             "item": "tfg:flippers",
-            "text": "When worn on the feet, $(thing)Flippers$() improves your agility and speed when swimming underwater."
+            "text": "Noszone na stopach $(thing)płetwy$() zwiększają zwrotność i szybkość pływania pod wodą."
         },
         {
             "type": "patchouli:spotlight",
@@ -155,6 +155,11 @@
         "diggerhelmet:mining_speed_modifier": 9,
         "diggerhelmet:auto_drink_modifier": 9,
         "grapplemod:grapplinghook": 10,
-        "species:harpoon": 11
+        "species:harpoon": 11,
+        "hangglider:hang_glider": 14,
+        "hangglider:reinforced_hang_glider": 14,
+        "gtceu:liquid_fuel_jetpack": 15,
+        "gtceu:electric_jetpack": 15,
+        "gtceu:advanced_electric_jetpack": 15
     }
 }

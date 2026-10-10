@@ -56,7 +56,7 @@
             "type": "patchouli:spotlight",
             "item": "constructionwand:core_destruction,constructionwand:core_angel",
             "title": "Ulepszenia różdżek",
-            "text": "There are also some wand upgrades to provide even more functionality.$(br2)Wands have durability but can be repaired with $(item)Repair Kits$()."
+            "text": "Są też ulepszenia różdżek, które dają jeszcze więcej funkcji.$(br2)Różdżki mają wytrzymałość, ale można je naprawiać $(item)zestawami naprawczymi$()."
         },
         {
             "type": "patchouli:spotlight",
@@ -76,7 +76,7 @@
             "item": "buildinggadgets2:gadget_building,buildinggadgets2:gadget_exchanging,buildinggadgets2:gadget_copy_paste,buildinggadgets2:gadget_cut_paste,buildinggadgets2:gadget_destruction",
             "anchor": "gadgets",
             "title": "Gadżety do budowania",
-            "text": "Unlocked in $(5)EV$(), $(thing)Building Gadgets$() are powerful tools that let you cut, copy, paste, and otherwise do large operations for building."
+            "text": "Odblokowywane na poziomie $(5)EN$(), $(thing)gadżety do budowania$() to potężne narzędzia, które pozwalają wycinać, kopiować i wklejać budowle oraz wykonywać duże prace budowlane."
         },
         {
             "type": "patchouli:crafting",

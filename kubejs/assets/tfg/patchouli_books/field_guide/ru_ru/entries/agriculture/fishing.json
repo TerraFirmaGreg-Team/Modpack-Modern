@@ -11,7 +11,7 @@
         {
             "type": "tfg:anvil_recipe",
             "recipe": "tfc:anvil/bismuth_bronze_fish_hook",
-            "text": "Сначала вам необходимо выковать рыболовный крюк в $(l:craftsmanship/anvils)Наковальне$()."
+            "text": "First, you have to forge a fishing hook in an $(l:craftsmanship/anvils)Anvil$()."
         },
         {
             "type": "patchouli:crafting",

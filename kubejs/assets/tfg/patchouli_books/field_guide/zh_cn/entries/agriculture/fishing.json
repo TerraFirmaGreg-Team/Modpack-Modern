@@ -1,5 +1,5 @@
 {
-    "name": "Fishing",
+    "name": "钓鱼",
     "category": "tfg:agriculture",
     "icon": "tfc:metal/fishing_rod/copper",
     "pages": [
@@ -11,7 +11,7 @@
         {
             "type": "tfg:anvil_recipe",
             "recipe": "tfc:anvil/bismuth_bronze_fish_hook",
-            "text": "First, you have to forge a fishing hook in an $(l:craftsmanship/anvils)Anvil$()."
+            "text": "首先，你需要在 $(l:craftsmanship/anvils)砧$() 上锻打一个鱼钩。"
         },
         {
             "type": "patchouli:crafting",
@@ -21,11 +21,11 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Fishing rods are not useful without bait. $(t:#tfc:small_fishing_bait)$(6)Bait$() can be added to rods in a crafting table. To catch normal fish, you need $(thing)Seeds$() or $(thing)Shellfish$(). To catch $(t:#tfc:large_fishing_bait)$(6)larger fish$(), such as $(thing)Dolphins$() and $(thing)Orcas$(), you need $(item)cod$(), $(item)salmon$(), $(item)tropical fish$(), or $(item)bluegills$()."
+            "text": "没有鱼饵，钓鱼竿就没有用处。可以在工作台中把 $(t:#tfc:small_fishing_bait)$(6)鱼饵$() 装到钓鱼竿上。要钓普通的鱼，你需要 $(thing)种子$() 或 $(thing)贝类$()。要钓 $(t:#tfc:large_fishing_bait)$(6)更大的鱼$()，例如 $(thing)海豚$() 和 $(thing)逆戟鲸$()，你需要 $(item)鳕鱼$()、$(item)三文鱼$()、$(item)热带鱼$() 或 $(item)蓝鳃鱼$()。"
         },
         {
             "type": "patchouli:text",
-            "text": "To release the bobber, $(item)$(k:key.use)$(). Wait for a fish to spot the hook and bite it. Then $(item)$(k:key.use)$() to pull it in. As you do that, the meter on your hotbar will fill up. Pull too quickly, and the fish will get away with the bait. Each time you fish, the fish has a chance of eating the bait. To catch the fish, pull it up on land and kill it with a tool or catch it with a $(l:agriculture/fishing#fishing_net)Fishing Net$(). You can hold the fishing rod in your offhand to make this easier."
+            "text": "按 $(item)$(k:key.use)$() 抛出鱼漂。等鱼发现鱼钩并咬钩后，再按 $(item)$(k:key.use)$() 把它拉上来。操作时，快捷栏上的计量条会逐渐充满。拉得太快，鱼就会连着鱼饵一起逃走。每次钓鱼，鱼都有几率吃掉鱼饵。要抓到鱼，把它拉上岸用工具杀死，或者用 $(l:agriculture/fishing#fishing_net)渔网$() 捕捉。你可以把钓鱼竿放在副手上，让操作更轻松。"
         },
         {
             "type": "patchouli:image",
@@ -38,21 +38,21 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "fishing_net",
-            "title": "Fishing Nets",
+            "title": "渔网",
             "item": {
                 "tag": "forge:tools/fishing_nets"
             },
-            "text": "Tired of hunting down fish with spears? Or losing a floppy catch while fishing? Craft a $(thing)Fishing Net$() to scoop up your dinner.$(br)To use a fishing net; $(item)$(k:key.use)$() on a fish entity to capture the fish into your inventory. Different tier fishing nets all act the same, but have different durability."
+            "text": "厌倦了拿着矛追着鱼跑？或者钓鱼时让上钩的猎物挣脱跑掉？做一个 $(thing)渔网$() 把晚餐捞上来吧。$(br)渔网的用法：对鱼类实体 $(item)$(k:key.use)$()，即可把鱼捕获进物品栏。不同等级的渔网功能完全相同，只是耐久度不同。"
         },
         {
             "type": "patchouli:crafting",
-            "title": "Wood Fishing Net",
+            "title": "木质渔网",
             "recipe": "tfc:kjs/damage/shaped/fishing_net/wood",
             "text": "一款基础的 $(item)木制渔网$()。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/cooking_methods",

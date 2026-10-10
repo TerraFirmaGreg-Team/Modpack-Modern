@@ -17,7 +17,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Three things are required to tap a tree: the tree itself, a tree tap, which must forged from a Copper Ingot and placed in the middle of a trunk at least three blocks tall, and a barrel, which must be placed directly below the tap facing upward. If the conditions are right, your barrel will immediately begin to fill with sap.$(br2)$(o)$(3)At least three naturally grown logs are required for tapping."
+            "text": "採集樹液需要三樣東西：樹木本身；樹液採集器，必須用銅錠鍛造，並安裝在至少三格高的樹幹中段；以及木桶，必須開口朝上放置在採集器正下方。如果條件正確，你的木桶會立即開始裝入樹液。$(br2)$(o)$(3)採集樹液至少需要三格自然生長的原木。"
         },
         {
             "type": "patchouli:image",
@@ -33,8 +33,8 @@
             "texture_width": 1024,
             "height": 1024,
             "texture_height": 1024,
-            "text": "Tapping can be optimized by letting the sap flow directly into an open face of a fluid pipe.",
-            "title": "Let it flow!",
+            "text": "讓樹液直接流入流體管道的開放面，可以讓採集更有效率。",
+            "title": "讓它流吧！",
             "images": [
             	"tfg:textures/gui/field_guide/tree_tapping/tfg_tapping.png"
             ],
@@ -42,7 +42,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸閱讀",
             "anchor": "relations",
             "entries": [
             	"tfg:the_world/earth_tree_index",

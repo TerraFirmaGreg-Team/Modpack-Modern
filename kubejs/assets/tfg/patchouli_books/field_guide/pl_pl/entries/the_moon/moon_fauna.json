@@ -39,7 +39,7 @@
 			"scale": 0.6,
 			"name": "Certusowy żelek",
 			"anchor": "certus_jellie",
-			"text": "$(thing)Certus$() $(l:agriculture/jellies)Jellies$() spawn in Moon's $(item)Asurine$() biomes. They produce $(thing)Large Certus Quartz Buds$()."
+			"text": "$(thing)Certusowe$() $(l:agriculture/jellies)żelki$() pojawiają się na $(item)azurynowych$() biomach Księżyca. Wytwarzają $(thing)duże zarodki certusowego kwarcu$()."
 		},
 		{
 			"type": "patchouli:entity",
@@ -47,7 +47,7 @@
 			"scale": 0.8,
 			"name": "Skałoczep",
 			"anchor": "limpet",
-			"text": "$(thing)Limpets$() are a type of snail with ore on their shell. You can obtain the ore with any mining tool. They are passive and can be eaten."
+			"text": "$(thing)Skałoczepy$() to ślimaki, których muszle pokrywa ruda. Można ją wydobyć dowolnym narzędziem górniczym. Skałoczepy nie są agresywne i nadają się do zjedzenia."
 		},
 		{
 			"type": "patchouli:entity",
@@ -69,7 +69,7 @@
 			"type": "patchouli:entity",
 			"entity": "endermanoverhaul:end_islands_enderman",
 			"scale": 1,
-			"text": "Najbardziej niebezpieczne $(thing)endermany$() można znaleźć w $(item)refrenusowych$() biomach."
+			"text": "Najbardziej niebezpieczne $(thing)endermany$() można znaleźć w $(l:the_moon/moon_biomes#forest)refrenusowych$() biomach."
 		},
 		{
 			"type": "patchouli:entity",
@@ -89,7 +89,8 @@
 				"tfg:agriculture/animal_husbandry",
 				"tfg:agriculture/jellies",
 				"tfg:beneath/beneath_fauna",
-				"tfg:mars/mars_fauna"
+				"tfg:mars/mars_fauna",
+				"tfg:the_moon/moon_biomes"
 			]
 		}
 	],

@@ -5,15 +5,15 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "A pit kiln is an early game method of $(l:game_mechanics/heating)heating$() items up. It can be used to $(thing)fire$() clay into ceramic, for example. The pit kiln, over the time period of about eight hours (in-game), will heat its contents up to 1400 °C, or $(bold)$(e)$(t:Yellow White)Yellow White$()."
+            "text": "坑窯是遊戲初期$(l:game_mechanics/heating)加熱$()物品的方法。例如，它可以用來將黏土$(thing)燒製$()成陶瓷。坑窯在大約八小時(遊戲時間)內，會將內容物加熱到 1400 °C，也就是$(bold)$(e)$(t:黃白)黃白$()。"
         },
         {
             "type": "patchouli:text",
-            "text": "To build a pit kiln, you will need:$(br)$(li)A hole in some dirt, sand, or stone$(li)Up to four items to be fired$(li)Eight pieces of $(thing)Straw$()$(li)Eight $(thing)Logs$()$(li)An item capable of lighting fires, like a $(l:craftsmanship/firepit#firestarter)Firestarter$(), or a $(thing)Torch$().$(br2)$(bold)Tip:$() Torches can start fires simply by tossing the torch on the pit kiln and waiting a few seconds."
+            "text": "要建造坑窯，你需要：$(br)$(li)泥土、沙子或石頭中的一個坑洞$(li)最多四個要燒製的物品$(li)八個$(thing)乾草$()$(li)八根$(thing)原木$()$(li)一個能生火的物品，例如$(l:craftsmanship/firepit#firestarter)生火器$()或$(thing)火把$()。$(br2)$(bold)提示：$()只要把火把丟到坑窯上並等待幾秒鐘，火把就能點火。"
         },
         {
             "type": "patchouli:text",
-            "text": "In order to create a pit kiln:$(br2)$(bold)1.$() Place up to four items down in a 1x1 hole with $(item)$(k:tfc.key.place_block)$().$(br)$(bold)2.$() Use eight $(thing)Straw$() on the pit kiln, until the items are covered.$(br)$(bold)3.$() Use eight $(thing)Logs$() on the pit kiln, until full.$(br)$(bold)4.$() Light the top of the pit kiln on fire!$(br2)The pit kiln will then burn for eight hours, slowly $(l:game_mechanics/heating)heating$() the items inside up."
+            "text": "建造坑窯的步驟：$(br2)$(bold)1.$() 按下$(item)$(k:tfc.key.place_block)$()，在 1x1 的坑洞中放入最多四個物品。$(br)$(bold)2.$() 對坑窯使用八個$(thing)乾草$()，直到物品被蓋住。$(br)$(bold)3.$() 對坑窯使用八根$(thing)原木$()，直到填滿。$(br)$(bold)4.$() 點燃坑窯的頂部！$(br2)坑窯接著會燃燒八小時，慢慢$(l:game_mechanics/heating)加熱$()裡面的物品。"
         },
         {
             "type": "patchouli:image",
@@ -24,12 +24,12 @@
                 "tfc:textures/gui/book/tutorial/pit_kiln_4.png",
                 "tfc:textures/gui/book/tutorial/pit_kiln_5.png"
             ],
-            "text": "$(bold)Tutorial Slideshow:$() Creating a pit kiln.",
+            "text": "$(bold)教學幻燈片：$()建造坑窯。",
             "border": true
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸閱讀",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pottery",

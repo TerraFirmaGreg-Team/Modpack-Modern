@@ -45,7 +45,7 @@
 		{
 			"type": "patchouli:multiblock",
 			"enable_visualize": false,
-			"text": "This setup will automatically extract everything from the chest into packages, which can then be sent elsewhere.",
+			"text": "Ten system automatycznie pobiera całą zawartość skrzyni i pakuje ją w paczki, które można następnie wysłać w inne miejsce.",
 			"name": "Pakowanie przedmiotów",
 			"multiblock": {
 				"pattern": [
@@ -72,7 +72,7 @@
 		{
 			"type": "patchouli:multiblock",
 			"enable_visualize": false,
-			"text": "Any packages inserted into this packager will automatically be unpackaged and inserted into the $(l:logistics/storage#crates)Crate$().",
+			"text": "Każda paczka umieszczona w tym pakowaczu zostanie automatycznie rozpakowana, a jej zawartość trafi do $(l:logistics/storage#crates)skrzyni$().",
 			"name": "Rozpakowywanie przedmiotów",
 			"multiblock": {
 				"pattern": [
@@ -334,7 +334,7 @@
 		{
 			"type": "tfg:multimultiblock",
 			"enable_visualize": false,
-			"text": "Place a mob on the seat, then $(item)$(k:key.use)$() them to request items which will be deposited in the $(l:logistics/storage#crates)Steel Crate$().",
+			"text": "Umieść stworzenie na siedzeniu, a następnie kliknij je $(item)$(k:key.use)$(), aby zamówić przedmioty, które trafią do $(l:logistics/storage#crates)stalowej skrzyni$().",
 			"name": "Minimalny system",
 			"multiblocks": [
 				{

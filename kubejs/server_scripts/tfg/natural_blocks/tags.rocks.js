@@ -1,6 +1,6 @@
 // priority: 0
 
-	
+
 /**
  * Map stone material items tags to raw stone material tags.
  * @type {{ 'tfc:igneous_intrusive_items': string; 'tfc:igneous_extrusive_items': string; 'tfc:metamorphic_items': string; 'tfc:sedimentary_items': string; }}
@@ -341,16 +341,15 @@ function registerTFGStoneBlockTags(event) {
 
 			SHAPES.forEach(shape => {
 				if (rock.raw[shape] != null) {
-					event.add(`tfg:rock_${shape}s`, rock.raw[shape]);
-					
 					if (rock.collapsible && rock.cobble != null) {
+						event.add(`tfg:rock_${shape}s`, rock.raw[shape]);
 						event.add('tfc:can_collapse', rock.raw[shape])
 						event.add('tfc:can_trigger_collapse', rock.raw[shape])
 						event.add('tfc:can_start_collapse', rock.raw[shape])
 					}
 				}
 			})
-			
+
 			if (rawStoneMap[rock.tfcTag]) {
 				event.add(rawStoneMap[rock.tfcTag], rock.raw.block);
 			}
@@ -364,8 +363,10 @@ function registerTFGStoneBlockTags(event) {
 			event.add('tfc:forge_insulation', rock.hardened)
 			event.add('tfc:can_carve', rock.hardened)
 			// hardened stone always collapses, but never starts them
-			event.add('tfc:can_collapse', rock.hardened)
-			event.add('tfc:can_trigger_collapse', rock.hardened)
+			if (rock.collapsible) {
+				event.add('tfc:can_collapse', rock.hardened)
+				event.add('tfc:can_trigger_collapse', rock.hardened)
+			}
 		}
 
 		if (rock.cobble != null) {
@@ -379,7 +380,7 @@ function registerTFGStoneBlockTags(event) {
 				event.add('tfc:toughness_2', rock.cobble.mossy.block)
 			}
 		}
-		
+
 		if (rock.gravel != null) {
 			event.add('tfc:can_landslide', rock.gravel)
 		}
@@ -397,9 +398,8 @@ function registerTFGStoneBlockTags(event) {
 
 			SHAPES.forEach(shape => {
 				if (rock.polished[shape] != null) {
-					event.add(`tfg:rock_${shape}s`, rock.polished[shape]);
-
 					if (rock.collapsible && rock.cobble != null) {
+						event.add(`tfg:rock_${shape}s`, rock.polished[shape]);
 						event.add('tfc:can_collapse', rock.polished[shape])
 						event.add('tfc:can_trigger_collapse', rock.polished[shape])
 						event.add('tfc:can_start_collapse', rock.polished[shape])
@@ -412,23 +412,27 @@ function registerTFGStoneBlockTags(event) {
 			event.add('tfc:bloomery_insulation', rock.chiseled.block);
 			event.add('tfc:forge_insulation', rock.chiseled.block);
 			event.add('firmalife:oven_insulation', rock.chiseled.block);
+			event.add('minecraft:stone_bricks', rock.chiseled.block);
 		}
 
 		if (rock.bricks != null) {
 			event.add('tfc:bloomery_insulation', rock.bricks.block);
 			event.add('tfc:forge_insulation', rock.bricks.block);
 			event.add('firmalife:oven_insulation', rock.bricks.block);
+			event.add('minecraft:stone_bricks', rock.bricks.block);
 
 			if (rock.bricks.mossy != null) {
 				event.add('tfc:bloomery_insulation', rock.bricks.mossy.block);
 				event.add('tfc:forge_insulation', rock.bricks.mossy.block);
 				event.add('firmalife:oven_insulation', rock.bricks.mossy.block);
+				event.add('minecraft:stone_bricks', rock.bricks.mossy.block);
 			}
 
 			if (rock.bricks.cracked != null) {
 				event.add('tfc:bloomery_insulation', rock.bricks.cracked.block);
 				event.add('tfc:forge_insulation', rock.bricks.cracked.block);
 				event.add('firmalife:oven_insulation', rock.bricks.cracked.block);
+				event.add('minecraft:stone_bricks', rock.bricks.cracked.block);
 			}
 		}
 

@@ -308,7 +308,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(thing)Warunki$() to dwie lub trzy ikony wyświetlone na górze interfejsu. Określają one konkretne operacje, które muszą zostać podjęte we wskazanym momencie i kolejności, by wybrany przedmiot mógł zostać wytworzony. Przykładowym warunkiem jest \"$(2)Wygnij jako przedostatni$()\", co oznacza, że przedostatnią operacją, jaką podejmie gracz, $(bold)musi$() być operacja $(2)gięcia$().",
+            "text": "$(thing)Warunki$() to dwie lub trzy ikony wyświetlone na górze interfejsu. Określają one konkretne operacje, które muszą zostać podjęte we wskazanym momencie i kolejności, aby wybrany przedmiot mógł zostać wytworzony. Przykładowym warunkiem jest \"$(2)Wygnij jako przedostatni$()\", co oznacza, że przedostatnią operacją, jaką podejmie gracz, $(bold)musi$() być operacja $(2)gięcia$().",
             "title": "Zasady kucia"
         },
         {
@@ -362,7 +362,7 @@
         },
         {
             "type": "patchouli:multiblock",
-            "text": "It is recommened to make two helve hammers and chain them together to automatically process $(l:craftsmanship/bloomery)Blooms$() and $(l:craftsmanship/blast_furnace)Steel$().",
+            "text": "Zaleca się zbudować dwa młoty spadowe i połączyć je ze sobą, aby automatycznie przetwarzać $(l:craftsmanship/bloomery)surówki$() oraz $(l:craftsmanship/blast_furnace)stal$().",
             "enable_visualize": true,
             "multiblock": {
                 "pattern": [
@@ -567,7 +567,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Congratulations on reaching the end! If you want to follow along in a creative world, the seed used during its writing is $(bold)-7291708953208913102$()."
+            "text": "Gratulacje, dotarłeś do końca! Jeśli chcesz powtórzyć przykłady w świecie kreatywnym, ziarno użyte podczas pisania tego przewodnika to $(bold)-7291708953208913102$()."
         },
         {
             "type": "patchouli:relations",
@@ -588,5 +588,7 @@
     ],
     "read_by_default": true,
     "sortnum": 8,
-    "extra_recipe_mappings": {}
+    "extra_recipe_mappings": {
+        "vintageimprovements:helve_hammer": 24
+    }
 }

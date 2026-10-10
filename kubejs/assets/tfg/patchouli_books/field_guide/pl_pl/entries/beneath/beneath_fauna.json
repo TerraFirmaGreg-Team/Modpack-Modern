@@ -70,7 +70,7 @@
 			"scale": 0.6,
 			"name": "Żelek roślinny",
 			"anchor": "plant_jellie",
-			"text": "$(thing)Plant$() $(l:agriculture/jellies)Jellies$() are found in the $(thing)Muggy Bog$() and $(thing)Thorny Grove$() biomes. Their slime balls can be used as $(thing)Green$() compost."
+			"text": "$(thing)Roślinne$() $(l:agriculture/jellies)żelki$() występują w biomach $(thing)duszne bagno$() i $(thing)cierniowy gaj$(). Ich kule szlamu można używać jako $(thing)zielony$() kompost."
 		},
 		{
 			"type": "patchouli:entity",
@@ -94,7 +94,7 @@
 			"scale": 0.6,
 			"name": "Biotytowy żelek",
 			"anchor": "biotite_jellie",
-			"text": "$(thing)Biotite$() $(l:agriculture/jellies)Jellies$() are found in the bottom layer. Their slime balls are a renewable source of $(item)Potassium$(), $(item)Magnesium$(), and $(item)Fluorine$()."
+			"text": "$(thing)Biotytowe$() $(l:agriculture/jellies)żelki$() występują w dolnej warstwie. Ich kule szlamu są odnawialnym źródłem $(item)potasu$(), $(item)magnezu$() i $(item)fluoru$()."
 		},
 		{
 			"type": "patchouli:entity",
@@ -102,7 +102,7 @@
 			"scale": 0.6,
 			"name": "Żelek lawowy",
 			"anchor": "lava_jellie",
-			"text": "$(thing)Lava$() $(l:agriculture/jellies)Jellies$() are found in the bottom layer. They heat up nearby players, which may be useful if you live somewhere cold."
+			"text": "$(thing)Lawowe$() $(l:agriculture/jellies)żelki$() występują w dolnej warstwie. Ogrzewają pobliskich graczy, co może się przydać, jeśli mieszkasz w chłodnym miejscu."
 		},
 		{
 			"type": "patchouli:entity",
@@ -110,7 +110,7 @@
 			"scale": 0.6,
 			"name": "Żelek lateksowy",
 			"anchor": "latex_jellie",
-			"text": "$(thing)Latex$() $(l:agriculture/jellies)Jellies$() can only be bred from a $(thing)Plant Jellie$() and $(thing)Lava Jellie$(). Their slime balls are a source of $(item)Latex$()."
+			"text": "$(thing)Lateksowe$() $(l:agriculture/jellies)żelki$() można uzyskać wyłącznie przez skrzyżowanie $(thing)roślinnego żelka$() i $(thing)lawowego żelka$(). Ich kule szlamu są źródłem $(item)lateksu$()."
 		},
 		{
 			"type": "patchouli:entity",
@@ -118,7 +118,7 @@
 			"scale": 0.9,
 			"name": "Piglin",
 			"anchor": "piglin",
-			"text": "You can find Piglins in almost every biome throughout the Beneath. They can be $(l:beneath/beneath_mechanics#piglins)traded with$() like in vanilla."
+			"text": "Pigliny można spotkać w niemal każdym biomie Głębin. Można z nimi $(l:beneath/beneath_mechanics#piglins)handlować$() tak jak w podstawowej grze."
 		},
 		{
 			"type": "patchouli:entity",
@@ -158,7 +158,7 @@
 			"scale": 0.7,
 			"name": "Klifiak",
 			"anchor": "cliff_hanger",
-			"text": "$(thing)Cliff Hangers$() can be found on various ceilings, hooking players who walk below them. Hit them with a ranged attack to make them let go!"
+			"text": "$(thing)Klifiaki$() można znaleźć na różnych sufitach, gdzie zahaczają graczy idących pod nimi. Traf je atakiem z dystansu, aby cię puściły!"
 		},
 		{
 			"type": "patchouli:entity",
@@ -166,7 +166,7 @@
 			"scale": 0.7,
 			"name": "Liściak",
 			"anchor": "leaf_hanger",
-			"text": "$(thing)Leaf Hangers$() can be found in pools of Salt Water, hooking players who walk into their trap. Hit them to make them let go of you!"
+			"text": "$(thing)Liściaki$() żyją w zbiornikach słonej wody i chwytają graczy, którzy wpadną w ich pułapkę. Uderz je, aby się uwolnić!"
 		},
 		{
 			"type": "patchouli:entity",
@@ -174,7 +174,7 @@
 			"scale": 1,
 			"name": "Endermany",
 			"anchor": "endermen",
-			"text": "Various species of $(thing)Endermen$() appear all over. The $(item)mushroom$() one is completely passive, while the others are all neutral."
+			"text": "Wszędzie pojawiają się różne gatunki $(thing)endermanów$(). Ten $(item)grzybowy$() jest całkowicie pasywny, pozostałe są neutralne."
 		},
 		{
 			"type": "patchouli:entity",
@@ -198,7 +198,7 @@
 			"scale": 0.7,
 			"name": "Ghul",
 			"anchor": "ghoul",
-			"text": "$(thing)Ghouls$() are blind monsters that use echolocation to find prey. They are neutral unless you're within their 'scan' radius!"
+			"text": "$(thing)Ghule$() to ślepe potwory, które wykorzystują echolokację do wykrywania ofiar. Pozostają neutralne, dopóki nie znajdziesz się w zasięgu ich „skanowania”!"
 		},
 		{
 			"type": "patchouli:entity",

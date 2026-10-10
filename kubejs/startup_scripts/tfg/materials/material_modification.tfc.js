@@ -80,7 +80,7 @@ function registerTFCMaterialModification(event) {
 	// Anvils
 	GTMaterials.VanadiumSteel.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1232, 1453, 2073, 7));
 	GTMaterials.Ultimet.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1232, 1453, 1980, 8));
-	GTMaterials.get('tfg:boron_carbide').setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1232, 1453, 3041, 8));
+	GTMaterials.get('tfg:boron_carbide').setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1232, 1453, 2073, 8));
 	GTMaterials.TungstenCarbide.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1232, 1453, 3058, 9));
 	GTMaterials.get('ostrum_iodide').setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1232, 1453, 3700, 9));
 }

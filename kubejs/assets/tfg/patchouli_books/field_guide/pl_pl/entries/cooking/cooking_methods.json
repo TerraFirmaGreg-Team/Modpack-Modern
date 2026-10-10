@@ -19,7 +19,7 @@
             "type": "patchouli:text",
             "anchor": "firepit",
             "title": "Ognisko",
-            "text": "A $(item)Firepit$() is likely the first cooking method you will have access to. It is capable of cooking only one item at a time and uses logs as fuel."
+            "text": "$(item)Ognisko$() to zapewne pierwszy sposób gotowania, jaki odblokujesz. Ugotuje tylko jeden przedmiot naraz i jako paliwo zużywa kłody."
         },
         {
             "type": "patchouli:multiblock",
@@ -465,7 +465,7 @@
             "type": "patchouli:multiblock",
             "name": "Robot kuchenny",
             "anchor": "food_processor",
-            "text": "The $(item)Food Processor$() is another machine added by $(tfg_short) to automatically create meals or process food ingredients using $(thing)EU$().",
+            "text": "$(item)Robot kuchenny$() to kolejna maszyna dodana przez $(tfg_short), która automatycznie przygotowuje posiłki lub przetwarza składniki spożywcze, wykorzystując $(thing)EU$().",
             "enable_visualize": false,
             "multiblock": {
                 "pattern": [

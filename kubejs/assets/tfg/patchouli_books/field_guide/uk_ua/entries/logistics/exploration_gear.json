@@ -14,7 +14,7 @@
             "title": "Похідні чоботи",
             "anchor": "hiking_boots",
             "item": "sns:hiking_boots",
-            "text": "Кожному досліднику потрібна гарна пара чоботів.$(br)$(thing)Похідні чоботи$() дають змогу:$(li)Швидко проходити крізь чагарники.$(li)Отримати невеликий бонус до швидкості.$(li)Отримати невелике збільшення безпечної висоти падіння.$(li)Автоматично підійматися на блоки; функція вмикається клавішею $(item)$(k:sns.key.stepUpToggle)()"
+            "text": "Кожному досліднику потрібна гарна пара чоботів.$(br)$(thing)Похідні чоботи$() дають змогу:$(li)Швидко проходити крізь чагарники.$(li)Отримати невеликий бонус до швидкості.$(li)Отримати невелике збільшення безпечної висоти падіння.$(li)Автоматично підійматися на блоки; функція вмикається клавішею $(item)$(k:sns.key.stepUpToggle)$()"
         },
         {
             "type": "patchouli:spotlight",
@@ -155,6 +155,11 @@
         "diggerhelmet:mining_speed_modifier": 9,
         "diggerhelmet:auto_drink_modifier": 9,
         "grapplemod:grapplinghook": 10,
-        "species:harpoon": 11
+        "species:harpoon": 11,
+        "hangglider:hang_glider": 14,
+        "hangglider:reinforced_hang_glider": 14,
+        "gtceu:liquid_fuel_jetpack": 15,
+        "gtceu:electric_jetpack": 15,
+        "gtceu:advanced_electric_jetpack": 15
     }
 }

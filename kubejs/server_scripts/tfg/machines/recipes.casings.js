@@ -261,4 +261,23 @@ function registerTFGCasingRecipes(event) {
 		.duration(2.5 * 20)
 		.EUt(GTValues.VA[GTValues.LV])
 		.addMaterialInfo(true, true)
+
+	event.shaped('2x tfg:casings/machine_casing_pressure_dark', [
+		'ACA',
+		'ABA',
+		'ADA'
+	], {
+		A: '#forge:plates/black_steel',
+		B: '#forge:frames/aluminium',
+		C: '#forge:tools/hammers',
+		D: '#forge:tools/wrenches'
+	});
+
+	event.recipes.gtceu.assembler('machine_casing_pressure_dark')
+		.itemInputs('6x #forge:plates/black_steel', '#forge:frames/aluminium')
+		.itemOutputs('2x tfg:casings/machine_casing_pressure_dark')
+		.circuit(6)
+		.duration(2.5 * 20)
+		.EUt(16)
+		.addMaterialInfo(true)
 }

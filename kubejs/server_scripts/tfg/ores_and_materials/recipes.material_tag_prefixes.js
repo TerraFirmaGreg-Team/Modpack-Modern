@@ -620,7 +620,7 @@ function processDrill(event, material) {
 	if (EXCLUDED_MATERIALS.includes(materialName))
 		return;
 
-	addMaterialRecycling(event, drillItem, material, 'drillHead', TagPrefix.toolHeadDrill);
+	addMaterialRecycling(event, drillItem, material, 'drill_head', TagPrefix.toolHeadDrill);
 
 	const blockItem = ChemicalHelper.get(TagPrefix.block, material, 1);
 	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)

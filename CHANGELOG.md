@@ -1,21 +1,40 @@
 # Changelog
 
 ## Unreleased
+### Changes
+### Bug fixes
+
+## [0.13.12] - 06-10-2026
+This is a hotfix release, check the [0.13.11 changelog](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.11) for the full list of changes!
+### Changes
+- The inventory tabs now have new tooltips showing you some information at a glance, and they're also visible in creative now @Redeix
+### Bug fixes
+- Fixed crash on dedicated server startup
+- Fixed recipe errors on linux
+
+## [0.13.11] - 05-10-2026
 ### Breaking Changes
 #### Oxygen Rework
 - Completely reworked Ad Astra's oxygenation mechanics and replaced them with our own native system. (#4931) @Mqrius
 - Added the Oxygen Distributor multiblock to replace Ad Astra's Air Distributor. This one oxygenates an entire enclosed room instead of just a small area around it. @Mqrius
 - Added the Higgs Emitter multiblock to replace Ad Astra's Gravity Normalizer with a significantly larger area of effect. @ashleney
 - Added the Heat Pump multiblock, when built into an outer wall it will regulate the temperature of a large room. @ashleney
+- *Note: These multiblock shapes are temporary and may change in the future* 
 #### Gas Burner
 - Blaze burners no longer accept liquid fuels. You can use the new **Gas Burner** which also heats up TFC devices too, such as a Vat or Crucible. (#5062) @Redeix
 - Note that Blaze burners' ability to heat things will soon be removed, but they will be kept around as train drivers and stock keepers.
+#### AE2
+- The ME Resonnance Charger can't be rotated any more, so you can't stack them to charge your Budding Certus. The multiblock structure has also changed a little @TomPlop
+- The circuit numbers for Annihilation and Formation Cores and Printed Circuits were changed in the ME Assembler, to allow for easier passive crafting @TomPlop
 #### Recipes
 - Laser hatches now need a glass lens instead of a diamond lens @ashleney
 - GregTech covers are now crafting table recipes instead of assembler recipes (#4997) @ashleney
 - Changed mechanical press double ingot/double plate recipes to use circuit 0 (#4991) @Pyritie
 - Changed recipes of almost all More Red items and blocks, making them available a lot earlier @Pyritie
 - Chorus-Infused Ceramic Insulation now uses chorus flowers instead of popped chorus fruit @Pyritie
+- Pyrolyze oven now makes as much creosote from bituminous coal as the coke oven does (#5077) @jacobtho314
+- Garnet Sand Line from Crushed Ores had some Circuits changed to allow the line to be run at MV with different recipes for LCR and CR @TomPlop
+- Butyralhyde can now be crafted at MV so you can start the Garnet Sand Line with Ethylhexenal to make Lean Organic Stabilizer @TomPlop
 ### Changes
 #### Field Guide
 The field guide has been completely rewritten! (#5023) @Redeix
@@ -41,7 +60,6 @@ The book is no longer split between entries for random addons, or clustered in s
 - Buzzsaw blades are now made in an extruder instead of a lathe (#5015) @Pyritie
 - Added two new stone anvils for pyroxenite and keratophyre (#5015) @Pyritie
 #### Other Changes
-- Added a new beneath structure, the piglin outpost (#5029) @Filiipa
 - Added more mob icons to xaeros minimap (#4941) @Nezumi-Remis
 - Made it easier to find peat by giving it a unique grass texture (#4964) @applenper
 - Added more asphalt road markings, especially for diagonal lines (#4961) @Sacarbeus123
@@ -68,6 +86,11 @@ The book is no longer split between entries for random addons, or clustered in s
 - The temperature bar (which replaces the XP bar) now also indicates the average temperature and player temperature @SakuraKitsurugi @Zippity
 - Player temperature now carries over after death, clamped to 5C~25C @ashleney
 - The Interplanetary Railgun now transports items instantly between planets @ashleney
+- Boron carbide now only needs kanthal coils to smelt instead of nichrome (#5075) @Pyritie
+- Added a recipe for framed torches, for builds where you want both torches and infinite light (#5070) @jacobtho314
+- Made astikor cart wheels cheaper @Pyritie
+- The Pastoral Rancher no longer requires fences, so you can make the pen as big as you like, but will still only process animals within the area of the metal casings @Pyritie
+- Overworld Jellies no longer spawn constantly, instead only spawning much more rarely and only as part of worldgen @Pyritie
 ### Bug fixes
 - Fixed some worldgen crashes (#4905, #4900) @Pyritie
 - Fix to repair scrambled pack order at level data which was affecting a few random world-related things such as not being able to collect glass with a gem saw (#4152) @ariedotme
@@ -87,7 +110,8 @@ The book is no longer split between entries for random addons, or clustered in s
 - Fixed piglin towers having structure voids at the bottom (#5029) @Filiipa
 - Fixed not being able to use fig and rubber fig interchangeably in some ArborFirmaCraft recipes (#5068) @bigtho80
 - Fixed trowels wiping the NBT of placed Toolboxes (#5061) @Redeix
-- Fixed the Vintage Improvements Centrifuge not properly displaying the names of gregtech materials @ashleney
+- Fixed the railgun being able to launch without any energy @jacobtho314
+- Mars mobs are now immune to powder snow @Pyritie
 ### Mods
 #### TerraFirmaCraft
 - Has been forked! This shouldn't affect you at all, but it ensures long-term stability for the future development of the modpack. Please read [here](https://www.reddit.com/r/TerraFirmaGreg/comments/1wbv1o3/the_future_of_terrafirmacraft_in_tfg/) for more information.
@@ -115,7 +139,7 @@ The book is no longer split between entries for random addons, or clustered in s
 - Fixed metrics incorrectly tracking incomplete multiblocks
 #### Create: Fluid Logistics
 - Separated fluid gauges out from factory gauges. Existing gauges will automatically convert
-- Added Fluid Inventory Access Port
+- Added Fluid Inventory Access Port, Flow Meter, Redstone Fluid Valve, Server Performance Reader
 - Removed waterproof cardboard
 - More bugfixes
 #### Greate

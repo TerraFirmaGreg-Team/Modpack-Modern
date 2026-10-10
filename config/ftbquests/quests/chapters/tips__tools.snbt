@@ -510,7 +510,14 @@
 					}
 				}
 				id: "sns:leather_sack"
-				tag: { }
+				tag: {
+					contents: {
+						Items: [ ]
+					}
+					void_slots: {
+						voidSlots: [I; ]
+					}
+				}
 			}
 			id: "7FA5B6354A49C396"
 			shape: "octagon"

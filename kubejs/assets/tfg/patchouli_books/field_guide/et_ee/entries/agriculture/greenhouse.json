@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:agriculture/greenhouse#types)Greenhouse Types$()$(li)$(bold)$(l:agriculture/greenhouse#planters)Planters$()$(li2)$(l:agriculture/greenhouse#large_planter)Large Planter$()$(li2)$(l:agriculture/greenhouse#quad_planter)Quad Planter$()$(li2)$(l:agriculture/greenhouse#bonsai_planter)Bonsai Planter$()$(li2)$(l:agriculture/greenhouse#hanging_planter)Hanging Planter$()$(li2)$(l:agriculture/greenhouse#trellis_planter)Trellis Planter$()$(li2)$(l:agriculture/greenhouse#hydroponic_planter)Hydroponic Planter$()$(li)$(bold)$(l:agriculture/greenhouse#irrigation)Irrigation$()$(li)$(bold)$(l:agriculture/greenhouse#auto_harvesting)Auto-Harvesting$()"
+            "text": "$(li)$(bold)$(l:agriculture/greenhouse#types)Greenhouse Types$()$(li)$(bold)$(l:agriculture/greenhouse#planters)Planters$()$(li2)$(l:agriculture/greenhouse#large_planter)Large Planter$()$(li2)$(l:agriculture/greenhouse#quad_planter)Quad Planter$()$(li2)$(l:agriculture/greenhouse#bonsai_planter)Bonsai Planter$()$(li2)$(l:agriculture/greenhouse#hanging_planter)Hanging Planter$()$(li2)$(l:agriculture/greenhouse#trellis_planter)Trellis Planter$()$(li2)$(l:agriculture/greenhouse#hydroponic_planter)Hydroponic Planter$()$(li)$(bold)$(l:agriculture/greenhouse#irrigation)Irrigation$()$(li)$(bold)$(l:agriculture/greenhouse#auto_harvesting)Auto-Harvesting$()$(li)$(bold)$(l:agriculture/greenhouse#electric)Electric Greenhouse$()$(li)$(bold)$(l:agriculture/greenhouse#hydroponics)Hydroponics Facility$()"
         },
         {
             "type": "patchouli:text",
@@ -51,31 +51,31 @@
             "type": "patchouli:spotlight",
             "anchor": "large_planter",
             "item": "firmalife:large_planter",
-            "text": "$(thing)Large Planters$() are the simplest kind of planter. They grow a single crop from seed, and are harvested with $(item)$(k:key.use)$() when mature.$(br)Large Planters typically grow $(thing)Large Crops$() and $(thing)Grains$(). However, to grow Grains, you need a $(thing)Copper$() or better Greenhouse."
+            "text": "$(thing)Large Planters$() are the simplest kind of planter. They grow a single crop from seed, and are harvested with $(item)$(k:key.use)$() when mature.$(br)Large Planters typically grow $(thing)Large Crops$() and $(thing)Grains$()."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "quad_planter",
             "item": "firmalife:quad_planter",
-            "text": "$(thing)Quad Planters$() grow four individual crops at once that all draw from the same nutrient pool, and can be harvested individually with $(item)$(k:key.use)$() when mature.$(br)Quad Planters typically grow smaller vegetables such as $(thing)Onions$() and $(thing)Beets$(). These crops can be grown in any greenhouse type."
+            "text": "$(thing)Quad Planters$() grow four individual crops at once that all draw from the same nutrient pool, and can be harvested individually with $(item)$(k:key.use)$() when mature.$(br)Quad Planters typically grow smaller vegetables such as $(thing)Onions$() and $(thing)Beets$()."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "bonsai_planter",
             "item": "firmalife:bonsai_planter",
-            "text": "$(thing)Bonsai Planters$() grow small fruit trees from their saplings.$(br)Bonsai Planters grow $(item)Fruit Tree Types$(), except $(thing)Bananas$(), and $(thing)Palm Fruit Trees$(), which need a $(thing)Hanging Planter$(). They need an $(thing)Iron$() or better greenhouse to grow."
+            "text": "$(thing)Bonsai Planters$() grow small fruit trees from their saplings.$(br)Bonsai Planters grow $(item)Fruit Tree Types$(), except $(thing)Bananas$(), and $(thing)Palm Fruit Trees$(), which need a $(thing)Hanging Planter$()."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "hanging_planter",
             "item": "firmalife:hanging_planter",
-            "text": "$(thing)Hanging Planters$() grow crops upside down.$(br)Hanging Planters grow $(thing)Squash$(), $(thing)Pumpkin$(), $(thing)Melons$(), $(thing)Bananas$(), and $(thing)Palm Fruit Trees$(). Palm Fruit Trees require a $(thing)Copper+$() greenhouse, Squash can be in any tier, and the rest need $(thing)Iron+$(). Hanging planters need to anchor to a solid block above them."
+            "text": "$(thing)Hanging Planters$() grow crops upside down.$(br)Hanging Planters grow $(thing)Squash$(), $(thing)Pumpkin$(), $(thing)Melons$(), $(thing)Bananas$(), and $(thing)Palm Fruit Trees$(). Hanging planters need to anchor to a solid block above them."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "trellis_planter",
             "item": "firmalife:trellis_planter",
-            "text": "$(thing)Trellis Planters$() grow berry bushes.$(br)Trellis Planters have the unique property of $(thing)propagating$() berry bushes. If a trellis planter is placed on top of another with a mature berry bush, it has a chance to grow upwards into the next one. Trellis planters usually require an $(thing)Iron$() or better greenhouse to work."
+            "text": "$(thing)Trellis Planters$() grow berry bushes.$(br)Trellis Planters have the unique property of $(thing)propagating$() berry bushes. If a trellis planter is placed on top of another with a mature berry bush, it has a chance to grow upwards into the next one."
         },
         {
             "type": "patchouli:spotlight",
@@ -98,18 +98,34 @@
             "title": "Piping",
             "item": "gtceu:copper_tiny_fluid_pipe",
             "type": "patchouli:spotlight",
-            "text": "Feeding sprinklers with water can be done by connecting $(thing)Fluid Pipes$() to them and pumping in water with a $(thing)Mechanical Pump$().$(br)You can $(item)$(k:key.use)$() a pipe with a $(t:Such as a Copper Frame)GregTech Frame$() or a Greenhouse Port to pass them through a wall. $(item)$(k:key.use)$() fluid pipes with a wrench to change their direction, and $(item)$(k:key.sneak)-$(k:key.use)$() them with an $(thing)empty offhand$() to make them one-way."
+            "text": "Feeding sprinklers with water can be done by connecting $(thing)Fluid Pipes$() to them and pumping in water with a $(thing)Mechanical Pump$().$(br)You can $(item)$(k:key.use)$() a pipe with a $(t:Such as a Copper Frame)GregTech Frame$() or a Greenhouse Port to pass them through a wall. $(item)$(k:key.use)$() fluid pipes with a wrench to change their direction, and $(item)$(k:key.sneak) + $(k:key.use)$() them with an $(thing)empty offhand$() to make them one-way."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "auto_harvesting",
             "title": "Auto-Harvesting",
             "item": "firmalife:sweeper,firmalife:picker",
-            "text": "$(li)$(thing)Sweepers$() are used to harvest planters other than Quad and Hydroponic planters. They can be powered by redstone.$(li)$(thing)Pickers$() can be powered via redstone signal from above. They extend down to pick the crops from Quad and Hydroponic planters.$(li)Additionally, $(item)Harvest Baskets$() can be used to harvest most planter types."
+            "text": "$(li)$(thing)Sweepers$() are used to harvest planters other than Quad and Hydroponic planters. They can be powered by redstone.$(li)$(thing)Pickers$() can be powered via redstone signal from above. They extend down to pick the crops from Quad and Hydroponic planters."
         },
         {
             "type": "patchouli:text",
-            "text": "To collect the loose items that the $(thing)Sweepers$() and $(thing)Pickers$() drop, you can use a $(item)Hopper Minecart$(), a $(thing)Contraption$() with $(item)Funnels$(), or a $(thing)GregTech$() $(item)Item Collector$()."
+            "text": "$(li)Additionally, $(item)Harvest Baskets$() can be used to harvest most planter types.$(li)To collect the loose items that the $(thing)Sweepers$() and $(thing)Pickers$() drop, you can use a $(item)Hopper Minecart$(), a $(thing)Contraption$() with $(item)Funnels$(), or a GregTech $(item)Item Collector$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "electric",
+            "item": "tfg:electric_greenhouse",
+            "text": "The multiblock $(item)Electric Greenhouse$() can be your source of $(thing)Logs$() and other plants if you prefer making GregTech machines over Create contraptions. It also has the unique property of being able to grow more of TFC's decorative plants!$(br2)You can make one at the end of $(7)LV$()."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)Note:$() This multiblock can have its walls customized to use any valid iron-tier greenhouse block.$(br2)Check the $(emi) multiblock preview for a list of all the different blocks you can use.$(br2)The Electric Greenhouse can also be improved in a few ways, including $(l:agriculture/fertilizers)fertilizer$() or later in $(6)HV$() with the $(thing)Aquaponics Loop$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "hydroponics",
+            "item": "tfg:hydroponics_facility",
+            "text": "The $(item)Hydroponics Facility$() is an $(9)IV$() upgrade to the Electric Greenhouse that can grow anything in any dimension and also supports $(item)Parallel Hatches$()."
         },
         {
             "type": "patchouli:relations",
@@ -136,7 +152,9 @@
         "firmalife:hydroponic_planter": 14,
         "firmalife:sprinkler": 15,
         "firmalife:watering_can": 15,
-        "firmalife:sweeper": 18,
-        "firmalife:picker": 18
+        "firmalife:sweeper": 17,
+        "firmalife:picker": 17,
+        "tfg:electric_greenhouse": 19,
+        "tfg:hydroponics_facility": 21
     }
 }

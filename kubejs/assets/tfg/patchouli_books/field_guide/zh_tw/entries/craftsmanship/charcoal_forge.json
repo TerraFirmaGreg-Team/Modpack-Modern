@@ -1,12 +1,12 @@
 {
-    "name": "Forge & Bellows",
+    "name": "木炭爐與風箱",
     "category": "tfg:craftsmanship",
     "icon": "tfc:textures/block/molten_lit.png",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "charcoal_forge",
-            "text": "The $(thing)Charcoal Forge$() is a device used to $(l:game_mechanics/heating)heat$() and melt items like metals, pottery, and bricks.$(br)Forges are necessary to make a $(l:craftsmanship/crucible)Crucible$() work.$(br)It is constructed with 5 $(thing)stone$() blocks―like cobblestone, raw stone, or bricks―surrounding a $(l:craftsmanship/charcoal_pit#charcoal_pile)Charcoal Pile$() of 7 or 8 layers which is then lit."
+            "text": "$(thing)木炭爐$()是用來$(l:game_mechanics/heating)加熱$()和熔化金屬、陶器和磚塊等物品的裝置。$(br)要讓$(l:craftsmanship/crucible)坩堝$()運作，就必須有木炭爐。$(br)它的建造方式是用 5 個$(thing)石頭$()方塊――例如鵝卵石、原石或磚塊――圍住一個 7 或 8 層的$(l:craftsmanship/charcoal_pit#charcoal_pile)木炭堆$()，然後點燃。"
         },
         {
             "type": "patchouli:multiblock",
@@ -31,12 +31,12 @@
                 }
             },
             "name": "木炭爐",
-            "text": "A complete forge structure, ready to be lit.",
+            "text": "完整的木炭爐結構，隨時可以點燃。",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
-            "text": "A Forge needs a chimney in order to work. The block directly above the Forge must be air, or a $(l:craftsmanship/crucible)Crucible$(). In addition, either the block directly above, or one of eight nearby blocks $(italic)must be able to see the sky!$()$(br2)A $(l:craftsmanship/charcoal_forge#bellows)Bellows$() can be placed one-block-up and adjacent-to the Forge, in order to increase the maximum temperature it can reach. But isn't strictly required."
+            "text": "木炭爐需要煙囪才能運作。木炭爐正上方的方塊必須是空氣或$(l:craftsmanship/crucible)坩堝$()。此外，正上方的方塊或周圍八個方塊之一$(italic)必須能看到天空！$()$(br2)可以在木炭爐旁邊高一格的位置放置$(l:craftsmanship/charcoal_forge#bellows)風箱$()，以提高它能達到的最高溫度。但這並非必要。"
         },
         {
             "type": "patchouli:multiblock",
@@ -66,8 +66,8 @@
                     "B": "tfc:bellows[facing=west]"
                 }
             },
-            "name": "Chimney Diagram",
-            "text": "Any one of the blue stained-glass must have direct sky access and access to the forge to count as a valid chimney.",
+            "name": "煙囪示意圖",
+            "text": "任何一塊藍色染色玻璃的位置必須能直接看到天空並連通木炭爐，才算是有效的煙囪。",
             "enable_visualize": false
         },
         {
@@ -75,42 +75,42 @@
             "images": [
                 "tfc:textures/gui/book/gui/charcoal_forge.png"
             ],
-            "title": "The Forge's Interface.",
-            "text": "$(bold)TIP:$() You can directly throw fuel like charcoal on top of the forge with $(item)$(k:key.drop)$() to re-fuel it.",
+            "title": "木炭爐的介面。",
+            "text": "$(bold)提示：$()你可以按下$(item)$(k:key.drop)$()直接將木炭等燃料丟到木炭爐上方來補充燃料。",
             "border": false
         },
         {
             "type": "patchouli:text",
-            "text": "The five slots at the bottom of the forge are used for fuel. While the forge is running, it periodically consumes $(t:#tfc:forge_fuels)$(6)fuel$(), which can be $(thing)Charcoal, Coal, Coke, or Peat Briquettes$(). The top five slots will heat items, up to the temperature shown in the indicator on the left. The right side slots are for containers that can contain liquid metal, like $(l:craftsmanship/pottery#vessel)Vessels$() and $(l:craftsmanship/pottery#mold)Molds$(). Items that melt in the forge will fill those containers. Otherwise, the molten fluid will be $(bold)voided$()."
+            "text": "木炭爐底部的五個欄位用來放燃料。木炭爐運作時會定期消耗$(t:#tfc:forge_fuels)$(6)燃料$()，可以是$(thing)木炭、煤炭、焦炭或泥炭磚$()。上方五個欄位會加熱物品，最高可達左側指示器所顯示的溫度。右側的欄位用來放可以裝液態金屬的容器，例如$(l:craftsmanship/pottery#vessel)小缸$()和$(l:craftsmanship/pottery#mold)模具$()。在木炭爐中熔化的物品會填入這些容器中。否則，熔化的流體會被$(bold)清除$()。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tfc:bellows",
-            "title": "Bellows",
+            "title": "風箱",
             "anchor": "bellows",
-            "text": "$(thing)Bellows$() can be used to increase the temperature of a device by improving the supply of oxygen. However, by burning at a hotter temperature they will also consume fuel faster. The bellows can provide air to a block directly in front of it and one block below that. This allows it to provide air to a $(l:craftsmanship/blast_furnace)Blast Furnace$(), or a $(l:craftsmanship/charcoal_forge#charcoal_forge)Charcoal Forge$() for example."
+            "text": "$(thing)風箱$()可以藉由改善氧氣供應來提高裝置的溫度。不過，由於燃燒溫度更高，燃料也會消耗得更快。風箱可以為正前方的方塊以及其下方一格的方塊供氣。例如，這讓它可以為$(l:craftsmanship/blast_furnace)高爐$()或$(l:craftsmanship/charcoal_forge#charcoal_forge)木炭爐$()供氣。"
         },
         {
             "type": "patchouli:text",
-            "text": "To use the bellows, simply place it facing the targeted heating device, and $(item)$(k:key.use)$() it. The bellows will pump air into the device, raising the maximum temperature for a short time. Bellows may be automated by supplying <16RPM of $(thing)mechanical rotation$() to the back using a $(item)Shaft$() for example. This will disable manual usage. Consider using a $(item)Clutch$() to enable/disable mechanical power."
+            "text": "使用風箱時，只要將它朝向目標加熱裝置放置，然後按下$(item)$(k:key.use)$()即可。風箱會將空氣送入裝置，在短時間內提高最高溫度。可以用$(item)傳動桿$()等從背面提供 <16RPM 的$(thing)機械轉動$()來自動化風箱。這會停用手動操作。可以考慮使用$(item)離合器$()來啟用/停用機械動力。"
         },
         {
             "type": "patchouli:text",
-            "text": "A puff from a bellows will supply air to a device for 200 ticks. However, most devices allow you to buffer up to 600 ticks of oxygenation at a time.$(br2)Devices will have their fuel consumption doubled no matter the duration of air left, so there is no additional penalty for using the bellows too much."
+            "text": "風箱鼓一次風會為裝置供氣 200 刻。不過，大多數裝置一次最多可以累積 600 刻的供氧量。$(br2)無論剩餘的供氣時間有多長，裝置的燃料消耗都會加倍，所以過度使用風箱並不會有額外的懲罰。"
         },
         {
             "type": "patchouli:text",
             "anchor": "automation",
-            "title": "Automation Tips",
-            "text": "$(li)A forge will automatically collect any fuel that is dropped near the sides. (Press $(item)$(k:key.drop)$(), or use a $(item)Dropper$(), $(item)Dispenser$(), or $(item)Funnel$().)$(li)A $(item)Mechanical Arm$() can also keep a forge fueled.$(li)A $(item)Depot$() counts as forge insulation, if you want to automate a $(item)Basin$()."
+            "title": "自動化技巧",
+            "text": "$(li)木炭爐會自動收集丟在其側面附近的任何燃料。(按下$(item)$(k:key.drop)$()，或使用$(item)投擲器$()、$(item)發射器$()或$(item)漏斗口$()。)$(li)$(item)機械手臂$()也能為木炭爐持續補充燃料。$(li)如果你想自動化$(item)工作盆$()，$(item)置物台$()也算是木炭爐的隔熱方塊。"
         },
         {
             "type": "patchouli:text",
-            "text": "Looking for something a little more impressive, or want to bring your forge indoors? Check out the $(l:beneath/beneath_mechanics#hellforge)Hellforge$()!"
+            "text": "想找更厲害的東西，或是想把木炭爐搬到室內嗎？來看看$(l:beneath/beneath_mechanics#hellforge)地獄熔爐$()吧！"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸閱讀",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/leather_making",

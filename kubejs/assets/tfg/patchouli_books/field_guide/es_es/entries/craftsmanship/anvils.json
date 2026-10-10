@@ -588,5 +588,7 @@
     ],
     "read_by_default": true,
     "sortnum": 8,
-    "extra_recipe_mappings": {}
+    "extra_recipe_mappings": {
+        "vintageimprovements:helve_hammer": 24
+    }
 }

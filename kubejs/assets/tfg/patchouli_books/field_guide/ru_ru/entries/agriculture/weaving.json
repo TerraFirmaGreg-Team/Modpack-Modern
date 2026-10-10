@@ -5,24 +5,24 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(thing)Weaving$() is the process of combining different kinds of string into $(thing)Cloth$(). While the last step of weaving is done in a $(thing)Loom$(), some cloths such as $(thing)Wool$(), obtained from $(l:agriculture/animal_husbandry#wooly_animals)Wooly Animals$(), requires a $(thing)Spindle$() to obtain $(thing)Wool Yarn$() in order to be woven."
+            "text": "$(thing)Ткачество$() это процесс объединения различных видов нити в $(thing)Ткань$(). Изготовление непосредственно самой ткани просходит на $(thing)Ткацком станке$(), но некоторые материалы, такие как $(thing)Шерсть$(), получаемая из $(l:agriculture/animal_husbandry#wooly_animals)Шерстных животных$(), требуют использования $(thing)Веретена$() для получения $(thing)Шерстяной нити$(), из которой можно ткать."
         },
         {
             "type": "tfg:knapping_recipe",
             "recipe": "tfc:clay_knapping/spindle_head",
             "anchor": "spindle",
-            "text": "The $(thing)Unfired Spindle Head$() is knapped from clay. It can then be $(l:game_mechanics/heating)fired$() to make a $(thing)Spindle Head$(). To complete the spindle, craft it with a $(thing)Stick$(). Spindles can also be made from $(l:craftsmanship/metallurgy)Metal$()."
+            "text": "$(thing)Необожжённая головка веретена$() лепится из глины. Её можно $(l:game_mechanics/heating)обжечь$(), чтобы изготовить $(thing)Головку веретена$(). Чтобы доделать веретено, совмести её с $(thing)Палкой$(). Веретено также можно сделать из $(l:craftsmanship/metallurgy)Металла$()."
         },
         {
             "type": "patchouli:crafting",
             "anchor": "spinning",
-            "title": "Spinning",
+            "title": "Прядение",
             "recipe": "tfc:kjs/damage/shapeless/wool_yarn",
             "text": "Соединение $(thing)шерсти$() с веретеном даёт $(thing)шерстяную нить$()."
         },
         {
             "type": "patchouli:crafting",
-            "title": "The Loom",
+            "title": "Ткацкий Станок",
             "anchor": "loom",
             "recipe": "tfc:crafting/wood/acacia_loom",
             "text": "Ткацкий станок создаётся всего лишь из $(thing)досок$() и $(thing)палки$()."
@@ -30,7 +30,7 @@
         {
             "type": "tfg:loom_recipe",
             "anchor": "wool_cloth",
-            "title": "Cloth",
+            "title": "Ткань",
             "recipe": "tfc:loom/wool_cloth",
             "text": "Рецепт изготовления $(thing)шерстяной ткани$() требует 16 единиц $(thing)шерстяной нити$(). Добавление материала в ткацкий станок выполняется нажатием $(item)$(k:key.use)$(). Затем удерживайте $(item)$(k:key.use)$(), чтобы запустить работу станка. Когда процесс завершится, нажмите $(item)$(k:key.use)$(), чтобы забрать готовый предмет."
         },
@@ -47,7 +47,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Дополнительно",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/growing_crops",

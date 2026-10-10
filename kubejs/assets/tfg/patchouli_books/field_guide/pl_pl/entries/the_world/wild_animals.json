@@ -296,7 +296,7 @@
             "scale": 0.55,
             "name": "Tygrys",
             "anchor": "tiger",
-            "text": "The tiger spawns in forests with an average $(l:the_world/climate#temperature)temperature$() of at least 13°C, and $(l:the_world/climate#rainfall)rainfall$() above 100mm."
+            "text": "Tygrys pojawia się w lasach ze średnią $(l:the_world/climate#temperature)temperaturą$() co najmniej 13°C oraz $(l:the_world/climate#rainfall)opadami$() powyżej 100 mm."
         },
         {
             "type": "patchouli:entity",
@@ -304,7 +304,7 @@
             "scale": 0.6,
             "name": "Tygrys szablozębny",
             "anchor": "sabertooth",
-            "text": "The sabertooth spawns at any $(l:the_world/climate#temperature)temperature$() above 0°C, and any $(l:the_world/climate#rainfall)rainfall$() above 250mm."
+            "text": "Tygrys szablozębny pojawia się w lasach przy dowolnej $(l:the_world/climate#temperature)temperaturze$() powyżej 0°C oraz $(l:the_world/climate#rainfall)opadach$() powyżej 250 mm."
         },
         {
             "type": "patchouli:entity",
@@ -354,7 +354,7 @@
             "anchor": "boar",
             "scale": 0.7,
             "name": "Dzik",
-            "text": "The boar spawns at $(l:the_world/climate#temperature)temperature$() below 25°C and above -5°C, and $(l:the_world/climate#rainfall)rainfall$() between 130 and 400mm."
+            "text": "Dzik pojawia się tam, gdzie $(l:the_world/climate#temperature)temperatura$() jest wyższa niż -5°C i niższa niż 25°C, a $(l:the_world/climate#rainfall)ilość opadów$() wynosi od 130 do 400 mm."
         },
         {
             "type": "patchouli:entity",
@@ -459,7 +459,7 @@
             "scale": 0.6,
             "name": "Paw",
             "anchor": "peafowl",
-            "text": "The peafowl spawns in forests at any $(l:the_world/climate#temperature)temperature$() above 14°C, and $(l:the_world/climate#rainfall)rainfall$() between 190 and 500mm."
+            "text": "Paw pojawia się w lasach przy dowolnej $(l:the_world/climate#temperature)temperaturze$() powyżej 14°C oraz $(l:the_world/climate#rainfall)opadach$() między 190 a 500 mm."
         },
         {
             "type": "patchouli:entity",
@@ -515,7 +515,7 @@
         {
             "type": "patchouli:text",
             "anchor": "fish",
-            "text": "$(thing)Fish$() are small creatures that swim in water. Most of them can be $(l:agriculture/fishing)fished$(). Some prefer oceans, rivers, or lakes.",
+            "text": "$(thing)Ryby$() to niewielkie stworzenia pływające w wodzie. Większość z nich można $(l:agriculture/fishing)łowić$(). W zależności od gatunku preferują oceany, rzeki lub jeziora.",
             "title": "Ryba"
         },
         {
