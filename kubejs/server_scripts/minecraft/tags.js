@@ -48,6 +48,8 @@ const registerMinecraftItemTags = (event) => {
 	event.add("tfg:rubber_plants", "minecraft:spore_blossom")
 
 	event.add('tfg:stonecutting/crackrack', 'minecraft:nether_brick_fence')
+
+	event.remove('forge:stone', 'minecraft:polished_deepslate')
 }
 
 const registerMinecraftBlockTags = (event) => {
@@ -86,4 +88,6 @@ const registerMinecraftBlockTags = (event) => {
 	event.add('minecraft:enderman_holdable', 'beneath:wood/leaves/warped')
 	event.add('minecraft:enderman_holdable', 'tfg:glacian_leaves')
 	event.add('minecraft:enderman_holdable', '#tfg:solid_leaves')
+
+	event.remove('forge:stone', 'minecraft:polished_deepslate')
 }
