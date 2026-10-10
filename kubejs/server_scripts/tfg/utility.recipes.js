@@ -80,6 +80,12 @@
         newId: "tfg:some_recipe",
         circuit: 5
     })
+
+    // Remove item inputs and always use a tag
+    global.modifyRecipe(event, "gtceu:forming_press/press_hsss_turbine_rotor", {
+        newId: "tfg:press_ssss_turbine_blade",
+        removeItemInputs: ["forge:screws/hsss"]
+    })
     */
 
 global.modifyRecipe = function(event, recipeId, options) {
@@ -149,6 +155,16 @@ global.modifyRecipe = function(event, recipeId, options) {
                     }
                 }
             }
+        }
+
+        // Remove item inputs (tag or item id)
+        if (options.removeItemInputs && recipeJson.inputs && recipeJson.inputs.item) {
+            recipeJson.inputs.item = recipeJson.inputs.item.filter(function(entry) {
+                var ingR = entry.content.ingredient
+                if (!ingR) return true // circuits, etc.
+                var keyR = ingR.tag || ingR.item
+                return options.removeItemInputs.indexOf(keyR) === -1
+            })
         }
 
         // Modify amount of item input

@@ -682,6 +682,13 @@ const registerGTCEURecipes = (event) => {
 		.duration(10*20)
 		.EUt(GTValues.VA[GTValues.MV])
 
+	event.remove({ id: 'gtceu:assembler/assemble_vanadium_turbine_blade' })
+	event.recipes.gtceu.assembler('tfg:assemble_vanadium_turbine_blade')
+		.itemInputs('8x #forge:turbine_blades/vanadium', '#forge:rods/long/magnalium')
+		.itemOutputs(Item.of('gtceu:turbine_rotor', '{GT.PartStats:{Material:"gtceu:vanadium"}}'))
+		.duration(10*20)
+		.EUt(GTValues.VA[GTValues.MV])
+
 	// Change Red Alloy in the ABS to match
 
 	global.modifyRecipe(event, "gtceu:alloy_blast_smelter/red_alloy", {
@@ -890,4 +897,21 @@ const registerGTCEURecipes = (event) => {
 			'stretch',
 			'blow'
 		]).id('tfg:glassworking/glass_vial')
+
+	// Remove screws from the Turbine Rotors
+/*
+	event.remove({ type: 'gtceu:forming_press', id: /press_.+_turbine_rotor$/ });
+
+	forEachMaterial(material => {
+		if (!material.shouldGenerateRecipesFor(TagPrefix.turbineBlade)) return;
+		if (!material.hasProperty(PropertyKey.INGOT)) return;
+
+		const name = material.getName();
+		event.recipes.gtceu.forming_press(`tfg:press_${name}_turbine_blade`)
+			.itemInputs(`5x #forge:double_plates/${name}`)
+			.itemOutputs(ChemicalHelper.get(TagPrefix.turbineBlade, material, 1))
+			.duration(20*20)
+			.EUt(GTValues.VA[GTValues.MV]);
+	});
+	*/
 }
