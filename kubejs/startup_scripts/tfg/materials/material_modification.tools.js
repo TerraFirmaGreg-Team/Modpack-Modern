@@ -320,6 +320,7 @@ function registerTFGToolMaterialModification(event) {
 	// Remove all the Turbine Rotors we don't want anymore
 	const noRotorMaterials = [
 		GTMaterials.Bronze,
+		GTMaterials.SterlingSilver,
 		GTMaterials.BlackBronze,
 		GTMaterials.CobaltBrass,
 		GTMaterials.Manganese,
@@ -357,7 +358,6 @@ function registerTFGToolMaterialModification(event) {
 	// Balance Turbine Rotors Stats
 
 	const BalanceRotorMaterials = [
-		GTMaterials.SterlingSilver,
 		GTMaterials.Ultimet,
 		GTMaterials.HSSS,
 		GTMaterials.Osmiridium,
@@ -370,7 +370,6 @@ function registerTFGToolMaterialModification(event) {
 		}
 	};
 
-	GTMaterials.SterlingSilver.setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(100, 180, 1, 147));
 	GTMaterials.Ultimet.setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(140, 140, 4, 786));
 	GTMaterials.HSSS.setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(280, 200, 7, 1986));
 	GTMaterials.Osmiridium.setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(320, 200, 12, 2364));
@@ -379,12 +378,13 @@ function registerTFGToolMaterialModification(event) {
 
 	// New Materials - Require MaterialFlags (Plates, Bolt/Screwdriver)
 
+	TFGHelpers.getMaterial('rene_41').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(100, 100, 2, 892));
 	TFGHelpers.getMaterial('silicon_carbide_silicon_carbide').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(200, 50, 2, 238));
 	GTMaterials.get('rocket_alloy_t1').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(170, 105, 3, 1215));
 	TFGHelpers.getMaterial('inconel_718').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(220, 180, 4, 1536));
 	TFGHelpers.getMaterial('tungsten_bismuth_oxide_composite').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(270, 80, 7, 465));
 	GTMaterials.get('rocket_alloy_t2').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(210, 150, 5, 2484));
-	TFGHelpers.getMaterial('mo_si_b').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(270, 180, 6, 1610));
+	TFGHelpers.getMaterial('mo_si_b').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(270, 180, 6, 2114));
 	//GTMaterials.getMaterial('rocket_alloy_t3').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(300, 160, 8, 3840));
 	//TFGHelpers.getMaterial('ysz').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(270, 220, 10, 5310));
 
