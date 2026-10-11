@@ -38,18 +38,20 @@
 	},
 	"features": [
 		[
-			"tfc:erosion"
-		],
-		[],
-		[
 			"tfc:random_empty_hot_spring",
 			"tfg:venus/terrain/stromatolite_disk"
+		],
+		[
+			"tfg:venus_forest"
+		],
+		[
+			"tfc:erosion"
 		],
 		[],
 		[],
 		[],
 		"#tfg:venus_veins",
-		"#tfg:venus_underground_decoration",
+		[],
 		[
 			"tfg:venus/surface/stromatolite_cluster_patch",
 			"tfg:venus/terrain/thermal_vent_rare"
@@ -209,12 +211,6 @@
 			},
 			{
 				"type": "aliencraft_kepler:xenoscorpion_surface",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 30
-			},
-			{
-				"type": "aliencraft_kepler:tree_mite",
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 30

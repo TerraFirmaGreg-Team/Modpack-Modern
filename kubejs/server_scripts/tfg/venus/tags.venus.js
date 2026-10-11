@@ -89,17 +89,23 @@ function registerTFGVenusBlockTags(event) {
 	event.add('ad_astra:venus_stone_replaceables', 'create:scorchia')
 	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/hardened_scorchia')
 	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/gravel_scorchia')
+	event.add('ad_astra:venus_stone_replaceables', 'create:ochrum')
+	event.add('ad_astra:venus_stone_replaceables', 'create:crimsite')
 	event.add('ad_astra:venus_stone_replaceables', 'ad_astra:conglomerate')
 	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/halite')
 	event.add('ad_astra:venus_stone_replaceables', 'minecraft:tuff')
 	event.add('ad_astra:venus_stone_replaceables', 'tfg:tuff_gravel')
 	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/hardened_tuff')
+	event.add('ad_astra:venus_stone_replaceables', 'minecraft:calcite')
 	event.add('ad_astra:venus_stone_replaceables', 'minecraft:basalt')
 	event.add('ad_astra:venus_stone_replaceables', 'minecraft:smooth_basalt')
 	event.add('ad_astra:venus_stone_replaceables', 'betterend:brimstone')
 	event.add('ad_astra:venus_stone_replaceables', 'betterend:sulphuric_rock')
 	event.add('ad_astra:venus_stone_replaceables', 'betterend:lacugrove_bark')
 	event.add('ad_astra:venus_stone_replaceables', 'betterend:lucernia_bark')
+	event.add('ad_astra:venus_stone_replaceables', 'vintageimprovements:sulfur_block')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/glauberite')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/aragonite')
 
 	event.add('tfc:can_carve', '#ad_astra:venus_stone_replaceables')
 	event.add('minecraft:animals_spawnable_on', '#ad_astra:venus_stone_replaceables')
@@ -226,7 +232,6 @@ function registerTFGVenusEntityTypeTags(event) {
 function registerTFGVenusPlacedFeatures(event) {
 
 	// Underground decoration
-	event.add("tfg:venus_underground_decoration", "tfg:glow_lichen")
 	event.add('tfg:venus_underground_decoration', 'tfg:venus/underground/loose_rocks')
 	event.add('tfg:venus_underground_decoration', 'tfc:cave_spike')
 	event.add('tfg:venus_underground_decoration', 'tfc:cave_column')

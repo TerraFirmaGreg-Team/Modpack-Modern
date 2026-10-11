@@ -38,12 +38,14 @@
 	},
 	"features": [
 		[
-			"tfc:erosion"
-		],
-		[],
-		[
 			"tfg:venus/terrain/lava_spring_rare",
 			"tfc:random_empty_hot_spring"
+		],
+		[
+			"tfg:venus_forest"
+		],
+		[
+			"tfc:erosion"
 		],
 		[
 			"tfg:venus/terrain/adakite_column"
@@ -51,15 +53,13 @@
 		[],
 		[],
 		"#tfg:venus_veins",
-		"#tfg:venus_underground_decoration",
+		[],
 		[
 			"tfc:raw_boulder",
 			"tfc:cobble_boulder",
 			"tfc:raw_boulder_small_patch",
 			"tfc:cobble_boulder_small_patch",
-			"tfg:venus/surface/adakite_spikes",
-			"tfg:venus/surface/ochrum_spikes",
-			"tfg:venus/surface/crimsite_spikes"
+			"tfg:venus/surface/adakite_spikes"
 		],
 		[
 			"tfg:venus/surface/smoker_source_patch",
@@ -239,12 +239,6 @@
 			{
 				"type": "aliencraft_kepler:xenoscorpion_surface",
 				"maxCount": 2,
-				"minCount": 1,
-				"weight": 100
-			},
-			{
-				"type": "aliencraft_kepler:tree_mite",
-				"maxCount": 1,
 				"minCount": 1,
 				"weight": 100
 			},

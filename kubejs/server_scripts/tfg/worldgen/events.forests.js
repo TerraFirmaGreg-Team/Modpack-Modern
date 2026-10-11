@@ -157,6 +157,36 @@ TFCEvents.worldgenData(event => {
 		null, null, null, null, null, null,
 		placement => {}
 	)
+
+
+	event.forest('tfg:venus_forest', '#tfg:venus_forest_entries', [
+		// https://notenoughmail.github.io/kubejs_tfc/1.20.1/worldgen/#forest-types-map-entry
+		// type, treeCount, groundcoverCount, perChunkChance, bushCount, hasSpoilerOldGrowth, allowsOldGrowth, leafPileCount
+
+		event.forestTypesMapEntry('none',       [0, 0],	0,	0,		0, false, false, 0),
+		event.forestTypesMapEntry('sparse',     [0, 1],	5,	0.1,	1, false, false, 0),
+		event.forestTypesMapEntry('edge',       [0, 1],	10,	0.2,	2, false, false, 0),
+		event.forestTypesMapEntry('normal',     [1, 1],	15,	0.5,	3, false, true,  0),
+		event.forestTypesMapEntry('old_growth', [1, 2],	20,	0.8,	4, false, true,  0)
+	], false, placement => {})
+
+	event.forestEntry('tfg:venus/rock_spike',
+		climate => {},
+		null,
+		null,
+		null,
+		null,
+		[
+			//"tfg:fake_sapling/glacian",
+			//"tfg:glacian_leaves_fallen",
+			'tfg:groundcover/glacian_stick' // TODO
+		],
+		'tfg:venus/terrain/surface_rock_spike_small',
+		'tfg:venus/terrain/surface_rock_spike_small',
+		'tfg:venus/terrain/surface_rock_spike_large',
+		null, 4, 20, null, null, null,
+		placement => {}
+	)
 })
 
 function registerTFGForestConfiguredFeatures(event) {
@@ -166,4 +196,6 @@ function registerTFGForestConfiguredFeatures(event) {
 	event.add('tfg:mars_forest_entries', 'tfg:mars/strophar_forest_entry')
 	event.add('tfg:mars_forest_entries', 'tfg:mars/alphacene_forest_entry')
 	event.add('tfg:mars_forest_entries', 'tfg:mars/glacian_forest_entry')
+
+	event.add('tfg:venus_forest_entries', 'tfg:venus/rock_spike')
 }

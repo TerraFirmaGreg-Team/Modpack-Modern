@@ -42,6 +42,9 @@
 			"tfg:venus/terrain/sulfur_fumes_spring"
 		],
 		[
+			 
+		],
+		[
 			"tfc:erosion"
 		],
 		[],
@@ -49,7 +52,7 @@
 		[],
 		[],
 		"#tfg:venus_veins",
-		"#tfg:venus_underground_decoration",
+		[],
 		[
 			"tfg:venus/terrain/sulfur_blob",
 			"tfg:venus/vein_manual/sulfur",
@@ -182,12 +185,6 @@
 			},
 			{
 				"type": "aliencraft_kepler:xenoscorpion_surface",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 30
-			},
-			{
-				"type": "aliencraft_kepler:tree_mite",
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 30

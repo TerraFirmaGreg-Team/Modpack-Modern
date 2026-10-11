@@ -364,7 +364,7 @@
 							},
 							{
 								"type": "tfg:badlands",
-								"raw_rock_weight": 20,
+								"raw_rock_weight": 16,
 								"palette": [
 									{ "Name": "create:ochrum" },
 									{ "Name": "create:ochrum" },
@@ -376,7 +376,11 @@
 									{ "Name": "betterend:flavolite" },
 									{ "Name": "minecraft:tuff" },
 									{ "Name": "tfc:rock/raw/basalt" },
-									{ "Name": "ad_astra:venus_stone" }
+									{ "Name": "ad_astra:venus_stone" },
+									{ "Name": "tfg:rock/glauberite" },
+									{ "Name": "tfg:rock/glauberite" },
+									{ "Name": "tfg:rock/aragonite" },
+									{ "Name": "tfg:rock/aragonite" }
 								],
 								"fallback": {
 									"Name": "ad_astra:venus_stone"
@@ -1737,13 +1741,13 @@
 								"palette": [
 									{ "Name": "create:scoria" },
 									{ "Name": "create:ochrum" },
-									{ "Name": "betterend:sulphuric_rock" },
-									{ "Name": "betterend:sandy_jadestone" },
-									{ "Name": "tfg:sandstone/raw/fluorapatite/brown" },
-									{ "Name": "tfg:sandstone/raw/fluorapatite/orange" },
-									{ "Name": "tfg:sandstone/raw/fluorapatite/yellow" },
-									{ "Name": "tfg:sandstone/raw/fluorapatite/yellow" },
-									{ "Name": "tfg:sandstone/raw/fluorapatite/yellow" },
+									{ "Name": "tfg:rock/glauberite" },
+									{ "Name": "tfg:rock/glauberite" },
+									{ "Name": "tfg:rock/glauberite" },
+									{ "Name": "tfg:rock/aragonite" },
+									{ "Name": "tfg:rock/aragonite" },
+									{ "Name": "betterend:brimstone" },
+									{ "Name": "betterend:brimstone" },
 									{ "Name": "vintageimprovements:sulfur_block" },
 									{ "Name": "tfc:raw_sandstone/black" }
 								],

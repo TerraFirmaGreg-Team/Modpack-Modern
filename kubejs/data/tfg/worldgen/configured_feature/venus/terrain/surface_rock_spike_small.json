@@ -1,0 +1,31 @@
+{
+	"type": "tfg:surface_spike",
+	"config": {
+		"max_column_radius_to_cave_height_ratio": 0.1,
+		"replaceable_blocks": "#ad_astra:venus_stone_replaceables",
+		"min_bluntness_for_wind": 0,
+		"min_radius_for_wind": 0,
+		"height_scale": {
+			"type": "minecraft:uniform",
+			"value": {
+				"min_inclusive": 1,
+				"max_exclusive": 2
+			}
+		},
+		"column_radius": {
+			"type": "minecraft:uniform",
+			"value": {
+				"min_inclusive": 6,
+				"max_inclusive": 8
+			}
+		},
+		"wind_speed": {
+			"type": "minecraft:uniform",
+			"value": {
+				"min_inclusive": 0.1,
+				"max_exclusive": 1.5
+			}
+		},
+		"bluntness": 0
+	}
+}

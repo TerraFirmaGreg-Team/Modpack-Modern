@@ -38,7 +38,10 @@
 	},
 	"features": [
 		[
-			"tfg:venus/terrain/sulfur_fumes_spring" 
+			"tfg:venus/terrain/sulfur_fumes_spring"
+		],
+		[
+			"tfg:venus_forest"
 		],
 		[
 			"tfc:erosion"
@@ -46,9 +49,8 @@
 		[],
 		[],
 		[],
-		[],
 		"#tfg:venus_veins",
-		"#tfg:venus_underground_decoration",
+		[],
 		[
 			"tfg:venus/terrain/sulfur_blob_rare",
 			"tfc:raw_boulder",
@@ -207,12 +209,6 @@
 			},
 			{
 				"type": "aliencraft_kepler:xenoscorpion_surface",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 30
-			},
-			{
-				"type": "aliencraft_kepler:tree_mite",
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 30

@@ -126,22 +126,22 @@ const NEEDS_FIREPROOFING = [
 	'arthropocolypse:millipede_tail'
 ];
 
-const VENUS_DAMAGE_BUFFING = {
-	"primitive_creatures:golem_2": 10,
-	"endermanoverhaul:savanna_enderman": 10,
-	"endermanoverhaul:desert_enderman": 10,
-	'arthropocolypse:scarab': 4,
-	'arthropocolypse:ice_crawler': 12,
-	'arthropocolypse:behemoth_desert_spider': 30,
-	'arthropocolypse:behemoth_desert_scorpion': 20,
-	'arthropocolypse:worker_ant': 10,
-	'arthropocolypse:soldier_ant': 15,
-	'arthropocolypse:stag_beetle': 8,
-	'arthropocolypse:wharf_roach': 8,
-	'arthropocolypse:platerodrilus': 14,
-	'arthropocolypse:mealworm_beetle': 8,
-	'arthropocolypse:millipede_head': 20
-};
+const VENUS_DAMAGE_BUFFING = [
+	"primitive_creatures:golem_2",
+	"endermanoverhaul:savanna_enderman",
+	"endermanoverhaul:desert_enderman",
+	'arthropocolypse:scarab',
+	'arthropocolypse:ice_crawler',
+	'arthropocolypse:behemoth_desert_spider',
+	'arthropocolypse:behemoth_desert_scorpion',
+	'arthropocolypse:worker_ant',
+	'arthropocolypse:soldier_ant',
+	'arthropocolypse:stag_beetle',
+	'arthropocolypse:wharf_roach',
+	'arthropocolypse:platerodrilus',
+	'arthropocolypse:mealworm_beetle',
+	'arthropocolypse:millipede_head'
+];
 
 
 // Easier to just keep all entities in here for balancing instead of spreading them around
@@ -233,10 +233,7 @@ EntityEvents.spawned((event) => {
 		entity.modifyAttribute("minecraft:generic.armor_toughness", "tfg_toughness_buff_id", missingToughness, "addition");
 	}
 
-	let newAttack = VENUS_DAMAGE_BUFFING[type] ?? 0
-	if (dimension === "ad_astra:venus" && newAttack !== 0) {
-		let baseAttack = entity.attack_damage;
-		let missingAttack = newAttack - baseAttack;
-		entity.modifyAttribute("minecraft:generic.attack_damage", "tfg_attack_buff_id", missingAttack, "addition");
+	if (dimension === "ad_astra:venus" && VENUS_DAMAGE_BUFFING.includes(type)) {
+		entity.potionEffects.add("minecraft:strength", -1, 1, true, false);
 	}
 })

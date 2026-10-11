@@ -44,6 +44,9 @@
 			"tfg:venus/terrain/basalt_pillar"
 		],
 		[
+			"tfg:venus_forest"
+		],
+		[
 			"tfc:erosion"
 		],
 		[],
@@ -54,7 +57,7 @@
 		],
 		[],
 		"#tfg:venus_veins",
-		"#tfg:venus_underground_decoration",
+		[],
 		[
 			"tfc:raw_boulder",
 			"tfc:cobble_boulder",

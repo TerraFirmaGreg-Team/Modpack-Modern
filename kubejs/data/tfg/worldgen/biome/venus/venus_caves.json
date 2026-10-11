@@ -38,23 +38,20 @@
 	},
 	"features": [
 		[
+			"tfg:venus/terrain/underground_rock_spike"
+		],
+		[
 			"tfc:erosion"
 		],
 		[],
-		[
-			"tfc:random_empty_hot_spring"
-		],
 		[],
 		[],
 		[],
 		"#tfg:venus_veins",
 		"#tfg:venus_underground_decoration",
-		[
-			"tfc:raw_boulder_small_patch",
-			"tfc:cobble_boulder_small_patch"
-		],
 		[],
-		"#tfg:venus_top_layer_modification"
+		[],
+		[]
 	],
 	"has_precipitation": true,
 	"spawn_costs": {
@@ -175,7 +172,7 @@
 			},
 			{
 				"type": "aliencraft_kepler:tree_mite",
-				"maxCount": 1,
+				"maxCount": 2,
 				"minCount": 1,
 				"weight": 100
 			}

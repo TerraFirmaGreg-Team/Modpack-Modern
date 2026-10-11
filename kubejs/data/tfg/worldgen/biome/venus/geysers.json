@@ -38,18 +38,20 @@
 	},
 	"features": [
 		[
-			"tfc:erosion"
-		],
-		[],
-		[
 			"tfg:venus/terrain/hot_spring_delta",
 			"tfc:random_empty_hot_spring"
+		],
+		[
+			"tfg:venus_forest"
+		],
+		[
+			"tfc:erosion"
 		],
 		[],
 		[],
 		[],
 		"#tfg:venus_veins",
-		"#tfg:venus_underground_decoration",
+		[],
 		[
 			"tfc:raw_boulder_small_patch",
 			"tfc:cobble_boulder_small_patch",
@@ -226,12 +228,6 @@
 			},
 			{
 				"type": "aliencraft_kepler:xenoscorpion_surface",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 60
-			},
-			{
-				"type": "aliencraft_kepler:tree_mite",
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 60

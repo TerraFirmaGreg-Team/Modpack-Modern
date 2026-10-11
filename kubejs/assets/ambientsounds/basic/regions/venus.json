@@ -60,6 +60,7 @@
         {
             "name": "storm-away",
             "category": "weather",
+            "volume": 0.7,
             "files": [
                 "ambientsounds:weather.storm-away"
             ]
@@ -67,10 +68,10 @@
         {
             "name": "basalt-deltas",
             "files": [
-                "minecraft:ambient/nether/basalt_deltas/ambience",
-                "minecraft:ambient/nether/nether_wastes/ambience",
-                "minecraft:ambient/nether/soulsand_valley/ambience",
-                "minecraft:ambient/nether/crimson_forest/ambience"
+                "minecraft:ambient.basalt_deltas.loop",
+                "minecraft:ambient.nether_wastes.loop",
+                "minecraft:ambient.soul_sand_valley.loop",
+                "minecraft:ambient.crimson_forest.loop"
             ],
             "category": "suspense",
             "volume": 1.0
