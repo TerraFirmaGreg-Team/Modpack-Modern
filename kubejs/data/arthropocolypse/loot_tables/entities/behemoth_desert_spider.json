@@ -57,12 +57,6 @@
 			"conditions": [
 				{
 					"condition": "minecraft:killed_by_player"
-				},
-				{
-					"condition": "minecraft:match_tool",
-					"predicate": {
-						"tag": "forge:tools/butchery_knives"
-					}
 				}
 			],
 			"bonus_rolls": 0.0,
@@ -78,6 +72,14 @@
 								"min": 6.0
 							},
 							"function": "minecraft:set_count"
+						}
+					],
+					"conditions": [
+						{
+							"condition": "minecraft:match_tool",
+							"predicate": {
+								"tag": "forge:tools/butchery_knives"
+							}
 						}
 					],
 					"name": "arthropocolypse:ice_crawler_meat"
