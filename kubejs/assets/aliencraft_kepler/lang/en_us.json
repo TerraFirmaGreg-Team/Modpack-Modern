@@ -7,6 +7,7 @@
 	"item.aliencraft_kepler.carnivorous_plant": "Carnivorous Plant",
 
 	"item.aliencraft_kepler.alien_goo_gun": "Jelly Launcher",
+	"item.aliencraft_kepler.alien_bioenergy_cell": "Jelly Canister",
 
 	"block.aliencraft_kepler.artifact_001": "Unknown Artifact",
 	"block.aliencraft_kepler.artifact_001_activated": "Activated Unknown Artifact",
@@ -47,6 +48,7 @@
 
 	"entity.aliencraft_kepler.ancient_beetle": "Titan Horned Beetle",
 	"item.aliencraft_kepler.ancient_beetle_spawn_egg": "Titan Horned Beetle Egg",
-	"key.aliencraft_kepler.ancient_beetle_control": "Fly Mount Upwards",
-	"key.aliencraft_kepler.ancient_beetle_go_down": "Fly Mount Downwards"
+	"key.aliencraft_kepler.ancient_beetle_control": "Fly Horned Beetle Upwards",
+	"key.aliencraft_kepler.ancient_beetle_go_down": "Fly Horned Beetle Downwards",
+	"key.aliencraft_kepler.mount_special_ability_keybind": "Horned Beetle Charge Attack"
 }

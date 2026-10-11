@@ -1,0 +1,33 @@
+{
+    "name": "storm.away",
+    "storming": true,
+    "bad-regions": [
+        "cold",
+        "venus"
+    ],
+    "regions": [
+        "cave",
+        "sky"
+    ],
+    "relative-height": {
+        "min": -30,
+        "fade": 20
+    },
+    "sounds": [
+        {
+            "name": "storm-away",
+            "category": "weather",
+            "files": [
+                "ambientsounds:weather.storm-away"
+            ]
+        },
+        {
+            "name": "howling-wind",
+            "category": "weather",
+            "files": [
+                "ambientsounds:wind.howling-wind"
+            ],
+            "volume": 0.2
+        }
+    ]
+}

@@ -876,28 +876,7 @@
 		]
 	},
 	"ambient.venus_surface.loop": {
-		"sounds": [
-			{
-				"name": "minecraft:ambient/nether/basalt_deltas/ambience",
-				"stream": true,
-				"volume": 0.77
-			},
-			{
-				"name": "minecraft:ambient/nether/nether_wastes/ambience",
-				"stream": true,
-				"volume": 0.77
-			},
-			{
-				"name": "minecraft:ambient/nether/soul_sand_valley/ambience",
-				"stream": true,
-				"volume": 0.77
-			},
-			{
-				"name": "minecraft:ambient/nether/crimson_forest/ambience",
-				"stream": true,
-				"volume": 0.77
-			}
-		]
+		"sounds": []
 	},
 	"ambient.venus_surface.additions": {
 		"sounds": [
@@ -1106,7 +1085,12 @@
 	"music.mercury": {
 		"sounds": [
 			{
-				"name": "minecraft:records/13",
+				"name": "ambientsounds:animals/warden",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "ambientsounds:cave/underworld",
 				"stream": true,
 				"volume": 0.4
 			}
@@ -1126,6 +1110,20 @@
 			},
 			{
 				"name": "minecraft:music/game/water/shuniji",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.flesh_planet": {
+		"sounds": [
+			{
+				"name": "minecraft:records/13",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "ambientsounds:cave/deep-dark",
 				"stream": true,
 				"volume": 0.4
 			}
