@@ -897,21 +897,4 @@ const registerGTCEURecipes = (event) => {
 			'stretch',
 			'blow'
 		]).id('tfg:glassworking/glass_vial')
-
-	// Remove screws from the Turbine Rotors
-/*
-	event.remove({ type: 'gtceu:forming_press', id: /press_.+_turbine_rotor$/ });
-
-	forEachMaterial(material => {
-		if (!material.shouldGenerateRecipesFor(TagPrefix.turbineBlade)) return;
-		if (!material.hasProperty(PropertyKey.INGOT)) return;
-
-		const name = material.getName();
-		event.recipes.gtceu.forming_press(`tfg:press_${name}_turbine_blade`)
-			.itemInputs(`5x #forge:double_plates/${name}`)
-			.itemOutputs(ChemicalHelper.get(TagPrefix.turbineBlade, material, 1))
-			.duration(20*20)
-			.EUt(GTValues.VA[GTValues.MV]);
-	});
-	*/
 }
