@@ -405,6 +405,19 @@ function registerTFGMultiblockRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 		.addMaterialInfo(true)
 
+	// Exhaust Vent
+
+	event.recipes.gtceu.shaped('tfg:rotor_vent', [
+		'CD ',
+		'BA ',
+		'   '
+	], {
+		A: Item.of('gtceu:black_steel_rotor'),
+		B: '#tfg:metal_bars',
+		C: 'gtceu:mv_machine_hull',
+		D: Item.of('gtceu:mv_electric_motor')
+	}).addMaterialInfo().id('tfg:shaped/rotor_vent')
+
 	// Heat Pump
 	event.recipes.gtceu.assembler('tfg:assembler/heat_pump')
 		.itemInputs(
