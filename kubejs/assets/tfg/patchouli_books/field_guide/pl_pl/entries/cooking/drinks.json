@@ -26,7 +26,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"title": "Klasyczny alkohol",
-			"text": "$(thing)Vintage Alcohols$() are prepared by further ageing alcohol in sealed barrels for another 3 months. These alcohols provide a stronger effect and a longer duration.",
+			"text": "$(thing)Klasyczne alkohole$() powstają w wyniku dalszego leżakowania alkoholu w zamkniętych beczkach przez kolejne 3 miesiące. Alkohole te zapewniają silniejsze efekty o dłuższym czasie trwania.",
 			"item": "tfg:vintage_beer_bucket,tfg:vintage_cider_bucket,tfg:vintage_rum_bucket,tfg:vintage_sake_bucket,tfg:vintage_vodka_bucket,tfg:vintage_whiskey_bucket,tfg:vintage_corn_whiskey_bucket,tfg:vintage_rye_whiskey_bucket,tfg:vintage_mead_bucket",
 			"anchor": "vintage_alcohol"
 		},
@@ -203,7 +203,7 @@
 			"item": "tfg:food/smoothie"
 		},
 		{
-			"title": "Płynny lód",
+			"title": "Pokruszony lód",
 			"text": "Wypicie $(thing)pokruszonego lodu$() obniża twoją temperaturę o 4°C. Idealne na lato oraz do eksplorowania $(l:beneath/beneath)Głębin$().",
 			"type": "patchouli:spotlight",
 			"item": "gtceu:ice_bucket",

@@ -149,6 +149,7 @@
 	"emi.dev.severity.warning": "Ostrzeżenie",
 	"emi.dev.suggest_id": "Użyj syntetycznego ID §7[namespace]§b:/§7[path]§r jak\n§7%s§b:/§7%s§r",
 	"emi.dev.synthetic_id": "Użyj syntetycznego ID §7[namespace]§b:/§7[path]§r",
+	"emi.dev.synthetic_nag_explanation": "Nie znaleziono identyfikatora przepisu w menedżerze przepisów, ale nie jest on syntetyczny\n§7%s§r\nJeśli przepis nie odpowiada przepisowi JSON definiowanemu przez dane, powinien używać syntetycznego ID",
 	"emi.disabled": "EMI wyłączone! Przełącz używając",
 	"emi.edit_mode.hide_all": "Naciśnij %s, aby ukryć stosy po ID",
 	"emi.edit_mode.hide_one": "Naciśnij %s, aby ukryć stos",

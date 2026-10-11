@@ -358,6 +358,7 @@
 	"gui.ae2.PatternEncoding": "Kodowanie wzorca",
 	"gui.ae2.PatternEncoding.primary_processing_result_hint": "Można zażądać za pomocą automatycznego systemu rzemieślniczego.",
 	"gui.ae2.PatternEncoding.primary_processing_result_tooltip": "Podstawowy wynik przetwarzania",
+	"gui.ae2.PatternEncoding.secondary_processing_result_hint": "Nie można go bezpośrednio zażądać przez automatyczny system rzemieślniczy, ale w wieloetapowych przepisach będzie używany przed przedmiotami z magazynu.",
 	"gui.ae2.PatternEncoding.secondary_processing_result_tooltip": "Drugorzędny wynik przetwarzania",
 	"gui.ae2.PatternProvider": "Dostawca wzorców ME",
 	"gui.ae2.Patterns": "Wzorce",

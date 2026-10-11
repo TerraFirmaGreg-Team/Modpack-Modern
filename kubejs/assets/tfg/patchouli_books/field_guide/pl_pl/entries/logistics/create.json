@@ -296,7 +296,7 @@
 		{
 			"type": "patchouli:multiblock",
 			"enable_visualize": false,
-			"text": "The $(l:logistics/create#packager)Packager$() will only create a package when the Stock Link receives a signal from $(l:logistics/create#stock_ticker)elsewhere$() on the network.",
+			"text": "$(l:logistics/create#packager)Pakowacz$() utworzy paczkę tylko wtedy, gdy łącznik magazynowy otrzyma sygnał z $(l:logistics/create#stock_ticker)innego miejsca$() w sieci.",
 			"name": "Przykład",
 			"multiblock": {
 				"pattern": [

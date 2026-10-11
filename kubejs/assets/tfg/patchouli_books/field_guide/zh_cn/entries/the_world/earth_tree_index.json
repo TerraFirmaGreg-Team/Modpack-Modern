@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:the_world/earth_tree_index#acacia)金合欢，阿拉伯胶树$()$(li)$(bold)$(l:the_world/earth_tree_index#ash)白蜡树$()$(li)$(bold)$(l:the_world/earth_tree_index#aspen)山杨，杨树$()$(li)$(bold)$(l:the_world/earth_tree_index#baobob)猴面包树$()$(li)$(bold)$(l:the_world/earth_tree_index#birch)白桦树$()$(li)$(bold)$(l:the_world/earth_tree_index#blackwood)黑檀树$()$(li)$(bold)$(l:the_world/earth_tree_index#cedar)白雪松树$()$(li)$(bold)$(l:the_world/earth_tree_index#chestnut)栗树$()$(li)$(bold)$(l:the_world/earth_tree_index#cypress)柏树，红雪松$()$(li)$(bold)$(l:the_world/earth_tree_index#eucalyptus)桉树$()$(li)$(bold)$(l:the_world/earth_tree_index#fig)无花果树，橡胶无花果树$()$(li)$(bold)$(l:the_world/earth_tree_index#fir)冷杉$()$(li)$(bold)$(l:the_world/earth_tree_index#hevea)三叶胶树$()$(li)$(bold)$(l:the_world/earth_tree_index#hickory)山核桃树$()"
+            "text": "$(li)$(bold)$(l:the_world/earth_tree_index#acacia)金合欢，阿拉伯胶树$()$(li)$(bold)$(l:the_world/earth_tree_index#ash)黑梣树$()$(li)$(bold)$(l:the_world/earth_tree_index#aspen)山杨，杨树$()$(li)$(bold)$(l:the_world/earth_tree_index#baobob)猴面包树$()$(li)$(bold)$(l:the_world/earth_tree_index#birch)白桦树$()$(li)$(bold)$(l:the_world/earth_tree_index#blackwood)黑檀树$()$(li)$(bold)$(l:the_world/earth_tree_index#cedar)白雪松树$()$(li)$(bold)$(l:the_world/earth_tree_index#chestnut)栗树$()$(li)$(bold)$(l:the_world/earth_tree_index#cypress)柏树，红雪松$()$(li)$(bold)$(l:the_world/earth_tree_index#eucalyptus)桉树$()$(li)$(bold)$(l:the_world/earth_tree_index#fig)无花果树，橡胶无花果树$()$(li)$(bold)$(l:the_world/earth_tree_index#fir)冷杉$()$(li)$(bold)$(l:the_world/earth_tree_index#hevea)三叶胶树$()$(li)$(bold)$(l:the_world/earth_tree_index#hickory)山核桃树$()"
         },
         {
             "type": "patchouli:text",
@@ -17,21 +17,21 @@
             "title": "金合欢，阿拉伯胶树",
             "anchor": "acacia",
             "item": "tag:tfc:acacia_logs",
-            "text": "$(bold)伞刺金合欢$()$(br)$(thing)降雨量$()：90 — 275mm$(br)$(thing)温度$()：13.4 — 40°C$(br)$(thing)生长天数$()：10$(br2)$(bold)夏威夷金合欢$()$(br)$(thing)降雨量$()：350 — 500mm$(br)$(thing)温度$()：15.3 — 24.4°C$(br)$(thing)生长天数$()：15$(br2)$(bold)阿拉伯胶树$()$(br)$(thing)降雨量$()：90 — 275mm$(br)$(thing)温度$()：11.6 — 40°C$(br)$(thing)生长天数$()：7"
+            "text": "$(bold)伞盖金合欢$()$(br)$(thing)降雨量$()：90 — 275mm$(br)$(thing)温度$()：13.4 — 40°C$(br)$(thing)生长天数$()：10$(br2)$(bold)夏威夷金合欢$()$(br)$(thing)降雨量$()：350 — 500mm$(br)$(thing)温度$()：15.3 — 24.4°C$(br)$(thing)生长天数$()：15$(br2)$(bold)阿拉伯胶树$()$(br)$(thing)降雨量$()：90 — 275mm$(br)$(thing)温度$()：11.6 — 40°C$(br)$(thing)生长天数$()：7"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "白蜡树",
+            "title": "黑梣",
             "anchor": "ash",
             "item": "tag:tfc:ash_logs",
-            "text": "$(bold)美国白蜡树$()$(br)$(thing)降雨量$()：60 — 240mm$(br)$(thing)温度$()：-13.9 — 0.7°C$(br)$(thing)生长天数$()：6"
+            "text": "$(bold)白蜡树$()$(br)$(thing)降雨量$()：60 — 240mm$(br)$(thing)温度$()：-13.9 — 0.7°C$(br)$(thing)生长天数$()：6"
         },
         {
             "type": "patchouli:spotlight",
             "title": "山杨，杨树",
             "anchor": "aspen",
             "item": "tag:tfc:aspen_logs",
-            "text": "$(bold)颤杨$()$(br)$(thing)降雨量$()：350 — 500mm$(br)$(thing)温度$()：-15.7 — -1.1°C$(br)$(thing)生长天数$()：7$(br2)$(bold)杨树$()$(br)$(thing)降雨量$()：170 — 310mm$(br)$(thing)温度$()：-15.7 — -6.6°C$(br)$(thing)生长天数$()：7"
+            "text": "$(bold)山杨$()$(br)$(thing)降雨量$()：350 — 500mm$(br)$(thing)温度$()：-15.7 — -1.1°C$(br)$(thing)生长天数$()：7$(br2)$(bold)杨树$()$(br)$(thing)降雨量$()：170 — 310mm$(br)$(thing)温度$()：-15.7 — -6.6°C$(br)$(thing)生长天数$()：7"
         },
         {
             "type": "patchouli:spotlight",

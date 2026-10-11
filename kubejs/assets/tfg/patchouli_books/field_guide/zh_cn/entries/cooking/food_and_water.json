@@ -133,7 +133,7 @@
             "title": "乳制品",
             "type": "patchouli:text",
             "anchor": "dairy",
-            "text": "$(l)$(5)乳制品$()$()来自$(thing)牛奶$()，而牛奶产自$(l:agriculture/animal_husbandry#dairy_animals)乳用牲畜$()。牛奶的加工与饮用在$(l:cooking/cheese)乳制品$()页面有介绍。$(br2)提高乳制品值会带来以下效果：$()$(li)$(bold)数值 >55% → $()$()$(italic)获得$(thing)摔落缓冲 I$()效果。$()$(li)$(bold)数值 >85% → $()$()$(italic)获得$(thing)摔落缓冲 IV$()效果。$()"
+            "text": "$(l)$(5)乳制品$()$()来自$(thing)奶类$()，而奶产自$(l:agriculture/animal_husbandry#dairy_animals)乳用牲畜$()。奶的加工与饮用在$(l:cooking/cheese)乳制品$()页面有介绍。$(br2)提高乳制品值会带来以下效果：$()$(li)$(bold)数值 >55% → $()$()$(italic)获得$(thing)摔落缓冲 I$()效果。$()$(li)$(bold)数值 >85% → $()$()$(italic)获得$(thing)摔落缓冲 IV$()效果。$()"
         },
         {
             "type": "patchouli:text",
@@ -151,7 +151,7 @@
             "title": "寄生虫",
             "type": "patchouli:text",
             "anchor": "parasites",
-            "text": "$(l)$(4)寄生虫$()来自食用某些生肉或饮用浑水。服用$(item)杀虫胶囊$()即可主动$(l:game_mechanics/mob_effects#cure_parasites)驱虫$()。$(br2)提高寄生虫值会带来以下效果：$()$(li)$(bold)数值 >10% → $()$()$(italic)每天有20%的概率增加10%，最高到60%。$()$(li)$(bold)数值 >33% → $()$()$(italic)被动损耗增加25%。$()$(li)$(bold)数值 >66% → $()$()$(italic)被动损耗增加50%。$()"
+            "text": "$(l)$(4)寄生虫$()来自食用某些生肉或饮用泥水。服用$(item)杀虫胶囊$()即可主动$(l:game_mechanics/mob_effects#cure_parasites)驱虫$()。$(br2)提高寄生虫值会带来以下效果：$()$(li)$(bold)数值 >10% → $()$()$(italic)每天有20%的概率增加10%，最高到60%。$()$(li)$(bold)数值 >33% → $()$()$(italic)被动损耗增加25%。$()$(li)$(bold)数值 >66% → $()$()$(italic)被动损耗增加50%。$()"
         },
         {
             "title": "微塑料",
