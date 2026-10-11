@@ -139,6 +139,12 @@
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 100
+			},
+			{
+				"type": "beneath:red_elk",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 50
 			}
 		],
 		"misc": [],
