@@ -2,6 +2,11 @@
   "type": "minecraft:entity",
 	"pools": [
 		{
+			"conditions": [
+				{
+					"condition": "minecraft:killed_by_player"
+				}
+			],
 			"bonus_rolls": 0,
 			"entries": [
 				{
@@ -18,6 +23,32 @@
 						}
 					],
 					"name": "arthropocolypse:beetle_fragment"
+				}
+			],
+			"rolls": 1
+		},
+		{
+			"conditions": [
+				{
+					"condition": "minecraft:killed_by_player"
+				}
+			],
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 3.0,
+								"min": 1.0
+							},
+							"function": "minecraft:set_count"
+						}
+					],
+					"name": "minecraft:slime"
 				}
 			],
 			"rolls": 1

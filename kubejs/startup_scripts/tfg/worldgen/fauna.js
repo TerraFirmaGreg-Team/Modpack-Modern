@@ -61,4 +61,7 @@ TFCEvents.registerFaunas(event => {
 	event.replace("opposing_force:trembler", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
 	event.replace("opposing_force:whizz", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
 	event.replace("opposing_force:ladybug", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
+	event.replace("aliencraft_kepler:ancient_beetle", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
+	event.replace("aliencraft_kepler:xenoscorpion_surface", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
+	event.replace("aliencraft_kepler:tree_mite", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
 })

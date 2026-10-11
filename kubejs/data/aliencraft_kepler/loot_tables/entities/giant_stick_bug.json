@@ -1,27 +1,5 @@
 {
-  "type": "minecraft:entity",
-	"pools": [
-		{
-			"bonus_rolls": 0.0,
-			"entries": [
-				{
-					"type": "minecraft:item",
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 10.0,
-								"min": 8.0
-							},
-							"function": "minecraft:set_count"
-						}
-					],
-					"name": "arthropocolypse:beetle_fragment"
-				}
-			],
-			"rolls": 1.0
-		}
-	],
-  "random_sequence": "aliencraft_kepler:entities/giant_stick_bug"
+	"type": "minecraft:entity",
+	"pools": [],
+	"random_sequence": "aliencraft_kepler:entities/giant_stick_bug"
 }

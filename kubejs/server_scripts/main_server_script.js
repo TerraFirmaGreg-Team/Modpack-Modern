@@ -95,6 +95,7 @@ ServerEvents.tags('block', event => {
 ServerEvents.tags('fluid', event => {
 	registerAFCFluidTags(event)
 	registerAdAstraFluidTags(event)
+	registerAliencraftFluidTags(event)
 	registerCreateFluidTags(event)
 	registerCreateAdditionsFluidTags(event)
 	registerCreateSteamPoweredFluidTags(event)

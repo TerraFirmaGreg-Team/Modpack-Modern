@@ -21,6 +21,64 @@
 				}
 			],
 			"rolls": 1.0
+		},
+		{
+			"conditions": [
+				{
+					"condition": "minecraft:killed_by_player"
+				}
+			],
+			"bonus_rolls": 0.0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 16.0,
+								"min": 12.0
+							},
+							"function": "minecraft:set_count"
+						}
+					],
+					"name": "arthropocolypse:ice_crawler_meat"
+				}
+			],
+			"rolls": 1.0
+		},
+		{
+			"conditions": [
+				{
+					"condition": "minecraft:killed_by_player"
+				},
+				{
+					"condition": "minecraft:match_tool",
+					"predicate": {
+						"tag": "forge:tools/butchery_knives"
+					}
+				}
+			],
+			"bonus_rolls": 0.0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 8.0,
+								"min": 6.0
+							},
+							"function": "minecraft:set_count"
+						}
+					],
+					"name": "arthropocolypse:ice_crawler_meat"
+				}
+			],
+			"rolls": 1.0
 		}
 	]
 }

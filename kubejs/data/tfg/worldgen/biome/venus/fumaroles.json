@@ -198,6 +198,24 @@
 				"maxCount": 4,
 				"minCount": 2,
 				"weight": 100
+			},
+			{
+				"type": "aliencraft_kepler:xenoscorpion_surface",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 30
+			},
+			{
+				"type": "aliencraft_kepler:tree_mite",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 30
+			},
+			{
+				"type": "aliencraft_kepler:ancient_beetle",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 30
 			}
 		],
 		"underground_water_creature": [],

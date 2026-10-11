@@ -62,9 +62,6 @@ const NEW_MOB_MAX_HP = {
 	'arthropocolypse:millipede_head': 200,
 	'arthropocolypse:millipede_body': 200,
 	'arthropocolypse:millipede_tail': 200,
-	'aliencraft_kepler:giant_stick_bug': 200,
-	'aliencraft_kepler:xenoscorpion_surface': 170,
-	'aliencraft_kepler:ancient_beetle': 120,
 
 	// europa mobs
 	"endermanoverhaul:ice_spikes_enderman": 90,
@@ -74,21 +71,34 @@ const NEW_MOB_MAX_HP = {
 
 const NEW_MOB_ARMOR = {
 	// mars
-	"endermanoverhaul:crimson_enderman": 2,
-	"endermanoverhaul:warped_enderman": 2,
-	"endermanoverhaul:badlands_enderman": 2,
-	"species:quake": 8,
+	"endermanoverhaul:crimson_enderman": 4,
+	"endermanoverhaul:warped_enderman": 4,
+	"endermanoverhaul:badlands_enderman": 4,
+	"species:quake": 10,
 
 	// venus
-	"minecraft:blaze": 6,
 	"endermanoverhaul:savanna_enderman": 4,
 	"endermanoverhaul:desert_enderman": 4,
 	"endermanoverhaul:nether_wastes_enderman": 2,
 	"ad_astra:sulfur_creeper": 4,
-	'aliencraft_kepler:giant_stick_bug': 10,
-	'aliencraft_kepler:xenoscorpion_surface': 6,
-	'aliencraft_kepler:ancient_beetle': 6,
+	'arthropocolypse:ice_crawler': 6,
+	'arthropocolypse:behemoth_desert_spider': 10,
+	'arthropocolypse:behemoth_desert_scorpion': 20,
+	'arthropocolypse:worker_ant': 6,
+	'arthropocolypse:soldier_ant': 10,
+	'arthropocolypse:stag_beetle': 8,
+	'arthropocolypse:wharf_roach': 6,
+	'arthropocolypse:platerodrilus': 6,
+	'arthropocolypse:mealworm_beetle': 8,
+	'arthropocolypse:millipede_head': 16,
+	'arthropocolypse:millipede_body': 16,
+	'arthropocolypse:millipede_tail': 16,
 };
+
+const NEW_MOB_ARMOR_TOUGHNESS = {
+	'arthropocolypse:behemoth_desert_spider': 4,
+	'arthropocolypse:behemoth_desert_scorpion': 8,
+}
 
 const NEEDS_FIREPROOFING = [
 	"minecraft:bat",
@@ -113,14 +123,10 @@ const NEEDS_FIREPROOFING = [
 	'arthropocolypse:mealworm',
 	'arthropocolypse:millipede_head',
 	'arthropocolypse:millipede_body',
-	'arthropocolypse:millipede_tail',
-	'aliencraft_kepler:giant_stick_bug',
-	'aliencraft_kepler:xenoscorpion_surface',
-	'aliencraft_kepler:ancient_beetle'
+	'arthropocolypse:millipede_tail'
 ];
 
 const VENUS_DAMAGE_BUFFING = {
-	"minecraft:blaze": 10,
 	"primitive_creatures:golem_2": 10,
 	"endermanoverhaul:savanna_enderman": 10,
 	"endermanoverhaul:desert_enderman": 10,
@@ -134,10 +140,7 @@ const VENUS_DAMAGE_BUFFING = {
 	'arthropocolypse:wharf_roach': 8,
 	'arthropocolypse:platerodrilus': 14,
 	'arthropocolypse:mealworm_beetle': 8,
-	'arthropocolypse:millipede_head': 20,
-	'aliencraft_kepler:giant_stick_bug': 15,
-	'aliencraft_kepler:xenoscorpion_surface': 20,
-	'aliencraft_kepler:ancient_beetle': 8,
+	'arthropocolypse:millipede_head': 20
 };
 
 
@@ -221,6 +224,13 @@ EntityEvents.spawned((event) => {
 		let baseArmor = entity.armor;
 		let missingArmor = newArmor - baseArmor;
 		entity.modifyAttribute("minecraft:generic.armor", "tfg_armor_buff_id", missingArmor, "addition");
+	}
+
+	let newToughness = NEW_MOB_ARMOR_TOUGHNESS[type] ?? 0;
+	if (newToughness !== 0) {
+		let baseToughness = entity.armor_toughness;
+		let missingToughness = newToughness - baseToughness;
+		entity.modifyAttribute("minecraft:generic.armor_toughness", "tfg_toughness_buff_id", missingToughness, "addition");
 	}
 
 	let newAttack = VENUS_DAMAGE_BUFFING[type] ?? 0

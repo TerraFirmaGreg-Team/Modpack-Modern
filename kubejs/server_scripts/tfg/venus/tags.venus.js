@@ -1,6 +1,9 @@
 "use strict";
 
 function registerTFGVenusItemTags(event) {
+
+	// TODO: foods for bugs with tfg:venusian_arthropod_foods
+	event.add('tfg:venusian_arthropod_foods', '#tfc:foods/fruits')
 }
 
 
@@ -165,7 +168,7 @@ function registerTFGVenusEntityTypeTags(event) {
 		'opposing_force:umber_spider',
 		'opposing_force:ladybug',
 		'opposing_force:whizz',
-		'aliencraft_kepler:giant_stick_bug',
+		'aliencraft_kepler:tree_mite',
 		'aliencraft_kepler:xenoscorpion_surface',
 		'aliencraft_kepler:ancient_beetle'
 	]
@@ -175,6 +178,23 @@ function registerTFGVenusEntityTypeTags(event) {
 		event.add('ad_astra:lives_without_oxygen', entity)
 		event.add('ad_astra:can_survive_in_acid_rain', entity)
 		event.add('gtceu:heat_immune', entity)
+	})
+
+	const venusPrey = [
+		'minecraft:strider',
+		'species:trooper',
+		'arthropocolypse:scarab',
+		'arthropocolypse:prairie_grasshopper',
+		'arthropocolypse:field_cricket',
+		'arthropocolypse:ice_crawler',
+		'arthropocolypse:worker_ant',
+		'arthropocolypse:stag_beetle_larva',
+		'arthropocolypse:wharf_roach',
+		'arthropocolypse:mealworm',
+	];
+
+	venusPrey.forEach(entity => {
+		event.add('tfg:venus_prey', entity);
 	})
 
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:desert_enderman')
@@ -200,12 +220,13 @@ function registerTFGVenusEntityTypeTags(event) {
 	event.add('tfc:deals_piercing_damage', 'opposing_force:umber_spider')
 	event.add('tfc:deals_crushing_damage', 'opposing_force:ladybug')
 	event.add('tfc:deals_piercing_damage', 'opposing_force:whizz')
-	event.add('tfc:deals_crushing_damage', 'aliencraft_kepler:giant_stick_bug')
+	event.add('tfc:deals_piercing_damage', 'aliencraft_kepler:tree_mite')
 	event.add('tfc:deals_slashing_damage', 'aliencraft_kepler:xenoscorpion_surface')
 	event.add('tfc:deals_piercing_damage', 'aliencraft_kepler:ancient_beetle')
 
 	event.add('tfg:ignores_gravity', 'aliencraft_kepler:xenoscorpion_surface')
 	event.add('tfg:ignores_gravity', 'aliencraft_kepler:ancient_beetle')
+	event.add('tfg:ignores_gravity', 'aliencraft_kepler:tree_mite')
 	event.add('tfg:ignores_gravity', 'opposing_force:whizz')
 	event.add('tfg:ignores_gravity', 'opposing_force:hanging_spider')
 	event.add('tfg:ignores_gravity', 'opposing_force:umber_spider')

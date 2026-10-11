@@ -2,6 +2,37 @@
 	"type": "minecraft:entity",
 	"pools": [
 		{
+			"conditions": [
+				{
+					"condition": "minecraft:killed_by_player"
+				}
+			],
+			"bonus_rolls": 0.0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 6.0,
+								"min": 4.0
+							},
+							"function": "minecraft:set_count"
+						}
+					],
+					"name": "arthropocolypse:beetle_fragment"
+				}
+			],
+			"rolls": 1.0
+		},
+		{
+			"conditions": [
+				{
+					"condition": "minecraft:killed_by_player"
+				}
+			],
 			"bonus_rolls": 0.0,
 			"entries": [
 				{
@@ -12,12 +43,44 @@
 							"count": {
 								"type": "minecraft:uniform",
 								"max": 10.0,
-								"min": 8.0
+								"min": 7.0
 							},
 							"function": "minecraft:set_count"
 						}
 					],
-					"name": "arthropocolypse:beetle_fragment"
+					"name": "arthropocolypse:ice_crawler_meat"
+				}
+			],
+			"rolls": 1.0
+		},
+		{
+			"conditions": [
+				{
+					"condition": "minecraft:killed_by_player"
+				},
+				{
+					"condition": "minecraft:match_tool",
+					"predicate": {
+						"tag": "forge:tools/butchery_knives"
+					}
+				}
+			],
+			"bonus_rolls": 0.0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 5.0,
+								"min": 3.0
+							},
+							"function": "minecraft:set_count"
+						}
+					],
+					"name": "arthropocolypse:ice_crawler_meat"
 				}
 			],
 			"rolls": 1.0

@@ -146,4 +146,34 @@ function registerVenusFauna(event) {
 			faunaData.solidGround(true)
 		},
 		"opposing_force:ladybug")
+
+	event.fauna(
+		climate => {
+			climate.minTemp(400)
+			climate.maxForest('normal')
+		},
+		faunaData => {
+			faunaData.solidGround(true)
+		},
+		"aliencraft_kepler:ancient_beetle")
+
+	event.fauna(
+		climate => {
+			climate.minTemp(400)
+			climate.maxForest('normal')
+		},
+		faunaData => {
+			faunaData.solidGround(true)
+		},
+		"aliencraft_kepler:xenoscorpion_surface")
+
+	event.fauna(
+		climate => {
+			climate.minTemp(400)
+			climate.minForest('normal')
+		},
+		faunaData => {
+			faunaData.solidGround(true)
+		},
+		"aliencraft_kepler:tree_mite")
 }

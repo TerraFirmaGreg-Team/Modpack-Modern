@@ -2,6 +2,11 @@
 	"type": "minecraft:entity",
 	"pools": [
 		{
+			"conditions": [
+				{
+					"condition": "minecraft:killed_by_player"
+				}
+			],
 			"bonus_rolls": 0.0,
 			"entries": [
 				{
@@ -23,38 +28,12 @@
 			"rolls": 1.0
 		},
 		{
-			"bonus_rolls": 0.0,
 			"conditions": [
 				{
 					"condition": "minecraft:killed_by_player"
 				}
 			],
-			"entries": [
-				{
-					"type": "minecraft:item",
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 1.0,
-								"min": -1.0
-							},
-							"function": "minecraft:set_count"
-						}
-					],
-					"name": "minecraft:spider_eye"
-				}
-			],
-			"rolls": 1.0
-		},
-		{
 			"bonus_rolls": 0.0,
-			"conditions": [
-				{
-					"condition": "minecraft:killed_by_player"
-				}
-			],
 			"entries": [
 				{
 					"type": "minecraft:item",
@@ -64,12 +43,70 @@
 							"count": {
 								"type": "minecraft:uniform",
 								"max": 3.0,
-								"min": 0.0
+								"min": 1.0
 							},
 							"function": "minecraft:set_count"
 						}
 					],
 					"name": "arthropocolypse:beetle_fragment"
+				}
+			],
+			"rolls": 1.0
+		},
+		{
+			"conditions": [
+				{
+					"condition": "minecraft:killed_by_player"
+				}
+			],
+			"bonus_rolls": 0.0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 5.0,
+								"min": 3.0
+							},
+							"function": "minecraft:set_count"
+						}
+					],
+					"name": "arthropocolypse:ice_crawler_meat"
+				}
+			],
+			"rolls": 1.0
+		},
+		{
+			"conditions": [
+				{
+					"condition": "minecraft:killed_by_player"
+				},
+				{
+					"condition": "minecraft:match_tool",
+					"predicate": {
+						"tag": "forge:tools/butchery_knives"
+					}
+				}
+			],
+			"bonus_rolls": 0.0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 3.0,
+								"min": 2.0
+							},
+							"function": "minecraft:set_count"
+						}
+					],
+					"name": "arthropocolypse:ice_crawler_meat"
 				}
 			],
 			"rolls": 1.0
