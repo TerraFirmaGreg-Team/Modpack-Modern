@@ -54,7 +54,7 @@
 			"scale": 0.7,
 			"name": "Koń zombie",
 			"anchor": "zombie_horse",
-			"text": "$(thing)Koni zombie$() nie można oswoić ani na nich jeździć, ale mogą one napędzać $(item)korbę zwierzęcą$()."
+			"text": "$(thing)Koni zombie$() nie można oswoić ani na nich jeździć, ale mogą one napędzać $(item)korbę konną$()."
 		},
 		{
 			"type": "patchouli:entity",

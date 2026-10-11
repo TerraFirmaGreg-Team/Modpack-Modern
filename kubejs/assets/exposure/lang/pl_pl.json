@@ -67,7 +67,7 @@
 	"error.exposure.exposure_retrieve.timeout.casual": "Ujęcia nie śpieszą się, aby być dostępne.",
 	"error.exposure.exposure_retrieve.timeout.technical": "Nie udało się pobrać ujęć na czas.",
 	"error.exposure.generic.casual": "Coś jest nie tak… Może logi powiedzą więcej?",
-	"error.exposure.generic.technical": "Wystąpił błąd. Szczegóły w logach.",
+	"error.exposure.generic.technical": "Wystąpił błąd. Zobacz szczegóły w dzienniku.",
 	"exposure.configuration.album": "Album",
 	"exposure.configuration.album_show_photos_count": "Pokaż liczbę zdjęć w albumie",
 	"exposure.configuration.attachments_show_info_toast": "Pokaż wskazówkę: części aparatu",

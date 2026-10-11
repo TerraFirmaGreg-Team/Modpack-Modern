@@ -12,7 +12,7 @@
 			"type": "patchouli:text",
 			"anchor": "index",
 			"title": "目录",
-			"text": "$(li)$(bold)$(l:mars/mars_fauna#sandworm)沙虫$()$(li)$(bold)可驯养$()$(li2)$(l:mars/mars_fauna#sniffer)夏胡鲁德$()$(li2)$(l:mars/mars_fauna#wraptor)诡恐鸟$()$(li2)$(l:mars/mars_fauna#glacian_sheep)霜原羊$()$(li2)$(l:mars/mars_fauna#snatcher)夺掠兽$()$(li2)$(l:mars/mars_fauna#charger)驰击兽$()$(li2)$(l:mars/mars_fauna#soarer)翱翔鸟$()$(li2)$(l:mars/mars_fauna#pentetic_jellie)五乙酸黏液灵$()$(br2)$(o)（接下页……）$()"
+			"text": "$(li)$(bold)$(l:mars/mars_fauna#sandworm)沙虫$()$(li)$(bold)可驯养$()$(li2)$(l:mars/mars_fauna#sniffer)嗅探兽$()$(li2)$(l:mars/mars_fauna#wraptor)诡恐鸟$()$(li2)$(l:mars/mars_fauna#glacian_sheep)霜原羊$()$(li2)$(l:mars/mars_fauna#snatcher)夺掠兽$()$(li2)$(l:mars/mars_fauna#charger)驰击兽$()$(li2)$(l:mars/mars_fauna#soarer)翱翔鸟$()$(li2)$(l:mars/mars_fauna#pentetic_jellie)五乙酸黏液灵$()$(br2)$(o)（接下页……）$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,11 +26,11 @@
 			"border": true,
 			"anchor": "sandworm",
 			"title": "沙虫",
-			"text": "$(thing)沙虫$()会被玩家脚步声惊醒。它们是沙漠中几乎没有其他生命的原因。$(br)"
+			"text": "玩家在地面移动会惊扰$(thing)沙虫$()。它们是沙漠中几乎没有其他生命的原因。$(br)"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "嗅探兽",
+			"title": "沙胡德",
 			"item": "sandworm_mod:sandworm_tooth,sandworm_mod:thumper",
 			"text": "$(thing)沙虫$()与其说是一个可供击杀的boss，不如说是一种环境威胁，所以想活命最好的办法就是逃跑！如果你能用$(thing)爆炸伤害$()成功命中它的头部足够多次，它就会放过你……暂时放过。"
 		},
@@ -94,7 +94,7 @@
 			"type": "patchouli:text",
 			"title": "驰击兽",
 			"anchor": "charger",
-			"text": "$(thing)破浪兽$()是半水生友好动物。你可以用$(item)生鱼$()驯服它们来在水下骑乘。它们也可以食用。"
+			"text": "$(thing)驰击兽$()是半被动型动物。你可以用$(item)任意火星作物$()驯服它们，将其用作战斗型陆地坐骑。$(br2)按下$(k:key.wan_ancient_beasts.special_ability)$()进行头槌攻击，或长按$(item)空格键$()发动冲刺攻击。$(br2)它们也可以装备$(item)可染色的盔甲$()。"
 		},
 		{
 			"type": "patchouli:entity",

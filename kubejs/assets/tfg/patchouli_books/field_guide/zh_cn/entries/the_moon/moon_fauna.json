@@ -14,7 +14,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)可驯养$()$(li2)$(l:the_moon/moon_fauna#moon_rabbit)月兔$()$(li2)$(l:the_moon/moon_fauna#birt)哔特$()$(li2)$(l:the_moon/moon_fauna#certus_jellie)赛特斯黏液灵$()$(li)$(bold)野生$()$(li2)$(l:the_moon/moon_fauna#limpet)帽贝$()$(li2)$(l:the_moon/moon_fauna#star_crawler)星际爬行者$()$(li2)$(l:the_moon/moon_fauna#endermen)末影人$()$(li2)$(l:the_moon/moon_fauna#shulker)潜影贝$()"
+			"text": "$(li)$(bold)可驯养$()$(li2)$(l:the_moon/moon_fauna#moon_rabbit)月兔$()$(li2)$(l:the_moon/moon_fauna#birt)哔特$()$(li2)$(l:the_moon/moon_fauna#certus_jellie)赛特斯黏液灵$()$(li)$(bold)野生$()$(li2)$(l:the_moon/moon_fauna#limpet)矿壳贝$()$(li2)$(l:the_moon/moon_fauna#star_crawler)星际爬行者$()$(li2)$(l:the_moon/moon_fauna#endermen)末影人$()$(li2)$(l:the_moon/moon_fauna#shulker)潜影贝$()"
 		},
 		{
 			"type": "patchouli:entity",
@@ -45,7 +45,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:limpet",
 			"scale": 0.8,
-			"name": "帽贝",
+			"name": "矿壳贝",
 			"anchor": "limpet",
 			"text": "$(thing)矿壳贝$()是一种壳上有矿石的蜗牛。你可以用任何采矿工具获得矿石。它们是友好的，可以食用。"
 		},
