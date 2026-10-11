@@ -40,7 +40,6 @@
 			"tfg:venus/terrain/lava_delta",
 			"tfg:venus/terrain/lava_lake",
 			"tfg:venus/terrain/lava_fissure",
-			"tfg:venus/terrain/lava_rivulet",
 			"tfg:venus/terrain/magma_rivulet",
 			"tfg:venus/terrain/basalt_pillar"
 		],
@@ -113,6 +112,10 @@
 		"arthropocolypse:millipede_head": {
 			"energy_budget": 0.05,
 			"charge": 0.9
+		},
+		"aliencraft_kepler:ancient_beetle": {
+			"energy_budget": 0.05,
+			"charge": 0.9
 		}
 	},
 	"creature_spawn_probability": 0.2,
@@ -120,12 +123,6 @@
 		"ambient": [],
 		"axolotls": [],
 		"creature": [
-			{
-				"type": "minecraft:strider",
-				"maxCount": 5,
-				"minCount": 3,
-				"weight": 100
-			},
 			{
 				"type": "arthropocolypse:ice_crawler",
 				"maxCount": 2,

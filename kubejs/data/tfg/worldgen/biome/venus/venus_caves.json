@@ -1,6 +1,8 @@
 {
 	"carvers": {
-		"air": []
+		"air": [
+			"tfg:venus_cave"
+		]
 	},
 	"downfall": 0,
 	"effects": {
@@ -91,6 +93,10 @@
 		"arthropocolypse:millipede_head": {
 			"energy_budget": 0.05,
 			"charge": 0.9
+		},
+		"aliencraft_kepler:ancient_beetle": {
+			"energy_budget": 0.05,
+			"charge": 0.9
 		}
 	},
 	"creature_spawn_probability": 0.2,
@@ -102,12 +108,6 @@
 				"type": "minecraft:strider",
 				"maxCount": 5,
 				"minCount": 3,
-				"weight": 100
-			},
-			{
-				"type": "ad_astra:mogler",
-				"maxCount": 4,
-				"minCount": 2,
 				"weight": 100
 			}
 		],
@@ -171,6 +171,12 @@
 				"type": "opposing_force:umber_spider",
 				"maxCount": 4,
 				"minCount": 3,
+				"weight": 100
+			},
+			{
+				"type": "aliencraft_kepler:tree_mite",
+				"maxCount": 1,
+				"minCount": 1,
 				"weight": 100
 			}
 		],

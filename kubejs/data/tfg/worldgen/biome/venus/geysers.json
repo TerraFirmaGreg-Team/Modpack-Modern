@@ -1,6 +1,8 @@
 {
 	"carvers": {
-		"air": []
+		"air": [
+			"tfg:venus_cave"
+		]
 	},
 	"downfall": 0,
 	"effects": {
@@ -94,6 +96,10 @@
 		"arthropocolypse:millipede_head": {
 			"energy_budget": 0.05,
 			"charge": 0.9
+		},
+		"aliencraft_kepler:ancient_beetle": {
+			"energy_budget": 0.05,
+			"charge": 0.9
 		}
 	},
 	"creature_spawn_probability": 0.2,
@@ -101,12 +107,6 @@
 		"ambient": [],
 		"axolotls": [],
 		"creature": [
-			{
-				"type": "minecraft:strider",
-				"maxCount": 4,
-				"minCount": 2,
-				"weight": 100
-			},
 			{
 				"type": "arthropocolypse:platerodrilus",
 				"maxCount": 4,

@@ -1,6 +1,8 @@
 {
 	"carvers": {
-		"air": []
+		"air": [
+			"tfg:venus_cave"
+		]
 	},
 	"downfall": 0,
 	"effects": {
@@ -89,6 +91,10 @@
 			"charge": 0.7
 		},
 		"arthropocolypse:millipede_head": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
+		"aliencraft_kepler:ancient_beetle": {
 			"energy_budget": 0.05,
 			"charge": 0.9
 		}
