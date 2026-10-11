@@ -82,37 +82,27 @@ function registerTFGVenusBlockTags(event) {
 	event.add('ad_astra:venus_stone_replaceables', 'tfg:sandstone/raw/fluorapatite/white')
 	event.add('ad_astra:venus_stone_replaceables', 'tfg:sand/fluorapatite/yellow')
 	event.add('ad_astra:venus_stone_replaceables', 'tfg:sandstone/raw/fluorapatite/yellow')
-	event.add('ad_astra:venus_stone_replaceables', 'tfc:sand/red')
-	event.add('ad_astra:venus_stone_replaceables', 'tfc:raw_sandstone/red')
 	event.add('ad_astra:venus_stone_replaceables', 'tfc:sand/black')
-	event.add('ad_astra:venus_stone_replaceables', 'tfc:raw_sandstone/black')
 	event.add('ad_astra:venus_stone_replaceables', 'create:scoria')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/hardened_scoria')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/gravel_scoria')
 	event.add('ad_astra:venus_stone_replaceables', 'create:scorchia')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/hardened_scorchia')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/gravel_scorchia')
 	event.add('ad_astra:venus_stone_replaceables', 'ad_astra:conglomerate')
 	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/halite')
 	event.add('ad_astra:venus_stone_replaceables', 'minecraft:tuff')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:tuff_gravel')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/hardened_tuff')
 	event.add('ad_astra:venus_stone_replaceables', 'minecraft:basalt')
 	event.add('ad_astra:venus_stone_replaceables', 'minecraft:smooth_basalt')
 	event.add('ad_astra:venus_stone_replaceables', 'betterend:brimstone')
-	event.add('ad_astra:venus_stone_replaceables', 'betterend:flavolite')
-	event.add('ad_astra:venus_stone_replaceables', 'betterend:sandy_jadestone')
 	event.add('ad_astra:venus_stone_replaceables', 'betterend:sulphuric_rock')
-	event.add('ad_astra:venus_stone_replaceables', 'betterend:flavolite')
 	event.add('ad_astra:venus_stone_replaceables', 'betterend:lacugrove_bark')
 	event.add('ad_astra:venus_stone_replaceables', 'betterend:lucernia_bark')
 
 	event.add('tfc:can_carve', '#ad_astra:venus_stone_replaceables')
 	event.add('minecraft:animals_spawnable_on', '#ad_astra:venus_stone_replaceables')
-
-	event.add("minecraft:strider_warm_blocks", "create:scorchia");
-	event.add("minecraft:strider_warm_blocks", "tfg:rock/hardened_scorchia");
-	event.add("minecraft:strider_warm_blocks", "minecraft:basalt");
-	event.add("minecraft:strider_warm_blocks", "minecraft:smooth_basalt");
-	event.add("minecraft:strider_warm_blocks", 'tfc:rock/raw/basalt');
-	event.add("minecraft:strider_warm_blocks", 'tfc:rock/magma/basalt');
-	event.add("minecraft:strider_warm_blocks", 'tfc:rock/hardened/basalt');
-	event.add("minecraft:strider_warm_blocks", 'beneath:crackrack');
-	event.add("minecraft:strider_warm_blocks", '#minecraft:infiniburn_nether');
 
 	event.add('tfc:can_landslide', 'tfg:sand/fluorapatite/blue')
 	event.add('tfc:can_landslide', 'tfg:sand/fluorapatite/green')

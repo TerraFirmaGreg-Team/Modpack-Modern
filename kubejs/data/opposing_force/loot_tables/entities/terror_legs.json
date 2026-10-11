@@ -1,3 +1,5 @@
 {
-  "pools": []
+	"type": "minecraft:entity",
+	"pools": [],
+	"random_sequence": "opposing_force:entities/terror_legs"
 }
