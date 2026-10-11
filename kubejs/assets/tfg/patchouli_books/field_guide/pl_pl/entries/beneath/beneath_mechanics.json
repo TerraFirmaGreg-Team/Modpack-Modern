@@ -44,7 +44,7 @@
 			"type": "patchouli:crafting",
 			"anchor": "other_cooling",
 			"recipe": "tfg:crafting/smoothie/magmango",
-			"text": "Other ways to stay cool include standing next to $(l:beneath/beneath_fauna#ice_jellie)Ice Jellies$() and eating cooling foods such as $(item)Ice Soup$() and $(item)Fruit Smoothies$()!"
+			"text": "Możesz się też ochłodzić, stojąc obok $(l:beneath/beneath_fauna#ice_jellie)lodowych żelków$() lub jedząc chłodzące potrawy, takie jak $(item)zupa lodowa$() i $(item)owocowe smoothie$()!"
 		},
 		{
 			"type": "patchouli:text",

@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:logistics/boats#intro)航行信息$()$(li2)$(l:logistics/boats#customization)自定义改装$()$(li2)$(l:logistics/boats#boat_items)能放进物品栏的船$()$(li2)$(l:logistics/boats#animals)运输动物$()$(li2)$(l:logistics/boats#paddles)手桨兼作船桨$()$(li2)$(l:logistics/boats#cleats)缆桩与引绳$()$(li2)$(l:logistics/boats#anchors)锚与绞车$()$(li2)$(l:logistics/boats#sails)船帆$()$(li2)$(l:logistics/boats#sailing)航行$()$(li2)$(l:logistics/boats#painting)上漆与染色$()$(li2)$(l:logistics/boats#damage)损坏与修复$()",
+            "text": "$(li)$(bold)$(l:logistics/boats#intro)航行信息$()$(li2)$(l:logistics/boats#customization)自定义改装$()$(li2)$(l:logistics/boats#boat_items)能放进物品栏的船$()$(li2)$(l:logistics/boats#animals)运输动物$()$(li2)$(l:logistics/boats#paddles)桨$()$(li2)$(l:logistics/boats#cleats)缆桩与引绳$()$(li2)$(l:logistics/boats#anchors)锚与绞车$()$(li2)$(l:logistics/boats#sails)船帆$()$(li2)$(l:logistics/boats#sailing)航行$()$(li2)$(l:logistics/boats#painting)上漆与染色$()$(li2)$(l:logistics/boats#damage)损坏与修复$()",
             "title": "目录",
             "anchor": "index"
         },
@@ -31,7 +31,7 @@
             "type": "patchouli:text",
             "title": "自定义改装",
             "anchor": "customization",
-            "text": "你可以为船只添加自己的方块！像你放置一个方块那样，当你手中拿着一个箱子时，按住$(item)$(k:key.use)$()就可以将它安装到船只上。按$(item)$(k:key.use)$() 键以与它们交互。如果你不能在某个地方放置一个方块，那可能是因为那个地方是驾驶位！你怎么驾驶一辆没有驾驶位的船？你能像平常一样撸掉你想拆的方块，就能把它从船上拆下来了。"
+            "text": "你可以往船上添加方块！就像在陆地上放置方块一样，手持箱子、砧或工作台按$(item)$(k:key.use)$()，就能把它装到船上。再按$(item)$(k:key.use)$()即可打开它们。如果某个位置放不上方块，那多半是因为那里是驾驶位！驾驶位被方块挡住的话，你就没法驾驶这艘船了！想拆掉这些方块，像平常一样破坏它们即可。"
         },
         {
             "type": "patchouli:image",
@@ -56,7 +56,7 @@
             "type": "patchouli:text",
             "title": "运输动物",
             "anchor": "animals",
-            "text": "和往常一样，你可以用船来移动动物！不过，要注意，像马这样的大型动物只适合乘坐足够大的船。如果船上做了一只动物，而且挡住了你的路，你可以通过shift+ $(item)$(k:key.use)$()以让它从载具上下来。动物在船上呆2天后会坐立不安，呆3天后会自己下船。"
+            "text": "和往常一样，你可以用船来移动动物！不过，要注意，像马这样的大型动物只适合乘坐足够大的船。如果船上坐了一只动物，而且挡住了你的路，你可以通过shift+ $(item)$(k:key.use)$()以让它从载具上下来。动物在船上呆2天后会坐立不安，呆3天后会自己下船。"
         },
         {
             "type": "patchouli:image",
@@ -68,7 +68,7 @@
         },
         {
             "type": "patchouli:text",
-            "title": "手桨与船桨",
+            "title": "桨",
             "anchor": "paddles",
             "text": "如果你感觉到你的船太慢了，请检查一下你握着的是不是正确的桨；如果你的船是需要桨架上的固定桨的，请检查桨架上的桨是否正确安装。在一些船上，多名玩家一起划船会让船的速度更快哦！"
         },
@@ -80,9 +80,9 @@
         },
         {
             "type": "patchouli:text",
-            "title": "缆桩与引绳",
+            "title": "缆桩与栓绳",
             "anchor": "cleats",
-            "text": "大多数船都至少配备一个用来绑栓神的固定桩。你可以用一根引绳来绑住它，并且牵着船移动。你也可以把船拉上海岸线，或是把它拉上一个半砖。"
+            "text": "大多数船至少都装有一个系缆桩。你可以把拴绳系在系缆桩上来牵拉船只，还能把小船拖上海岸，或拖上半砖台阶。拴绳还可以把船拴在栅栏上；用拴绳把两个系缆桩分别系在栅栏上，就能轻松停泊较大的船。你会发现你会大量用到拴绳，免得船漂走！"
         },
         {
             "type": "patchouli:image",
@@ -123,7 +123,7 @@
             "type": "patchouli:text",
             "title": "航行",
             "anchor": "sailing",
-            "text": "和你印象中的那些船不同，在 Firma: Civilization 里航行是一门技术。当你驾驶帆船时，屏幕上会出现一个新的 UI 元素，显示风速、风向以及船速。风箭头的颜色表示朝该方向航行的难易程度。使用前进和后退移动键来调整船帆角度，多加尝试，找出最适合当前风向的角度。"
+            "text": "和你印象中的那些船不同，在“群峦传说：航海文明”里航行是一门技术。当你驾驶帆船时，屏幕上会出现一个新的 UI 元素，显示风速、风向以及船速。风箭头的颜色表示朝该方向航行的难易程度。使用前进和后退移动键来调整船帆角度，多加尝试，找出最适合当前风向的角度。"
         },
         {
             "type": "patchouli:image",

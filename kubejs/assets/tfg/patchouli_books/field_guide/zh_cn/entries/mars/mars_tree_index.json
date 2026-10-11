@@ -12,7 +12,7 @@
 			"type": "patchouli:text",
 			"title": "目录",
 			"anchor": "index",
-			"text": "$(li)$(bold)大型蘑菇$()$(li2)$(l:mars/mars_tree_index#aeronos)空果菇$()$(li2)$(l:mars/mars_tree_index#alphacene)首新世菇$()$(li2)$(l:mars/mars_tree_index#crimson)绯红菇$()$(li2)$(l:mars/mars_tree_index#glacian)霜原菇$()$(li2)$(l:mars/mars_tree_index#strophar)孑节菇$()$(li2)$(l:mars/mars_tree_index#warped)诡异菇$()$(li)$(bold)$(l:mars/mars_tree_index#iodine)碘$()"
+			"text": "$(li)$(bold)大型蘑菇$()$(li2)$(l:mars/mars_tree_index#aeronos)空果菇$()$(li2)$(l:mars/mars_tree_index#alphacene)首新世菇$()$(li2)$(l:mars/mars_tree_index#crimson)绯红菌$()$(li2)$(l:mars/mars_tree_index#glacian)霜原菇$()$(li2)$(l:mars/mars_tree_index#strophar)孑节菇$()$(li2)$(l:mars/mars_tree_index#warped)诡异菌$()$(li)$(bold)$(l:mars/mars_tree_index#iodine)碘$()"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -30,10 +30,10 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "绯红菇",
+			"title": "绯红菌",
 			"anchor": "crimson",
 			"item": "tag:tfc:crimson_logs",
-			"text": "$(bold)绯红菇$()$(br)$(thing)温度$()：-109 — -13°C$(br)在东侧出现更频繁。$(br)$(thing)生长天数$()：6$(br2)$(bold)提示：$()想炫耀一下吗？你可以用绯红菌柄造一艘$(l:logistics/boats#canoe)独木舟$()。"
+			"text": "$(bold)绯红菌$()$(br)$(thing)温度$()：-109 — -13°C$(br)在东侧出现更频繁。$(br)$(thing)生长天数$()：6$(br2)$(bold)提示：$()想炫耀一下吗？你可以用绯红菌柄造一艘$(l:logistics/boats#canoe)独木舟$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -51,17 +51,17 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "诡异菇",
+			"title": "诡异菌",
 			"anchor": "warped",
 			"item": "tag:tfc:warped_logs",
-			"text": "$(bold)诡异菇$()$(br)$(thing)温度$()：-109 — -13°C$(br)在西侧出现更频繁。$(br)$(thing)生长天数$()：6$(br2)$(bold)提示：$()想炫耀一下吗？你可以用诡异菌柄造一艘$(l:logistics/boats#rowboat)划艇$()或$(l:logistics/boats#sloop)单桅纵帆船$()。"
+			"text": "$(bold)诡异菌$()$(br)$(thing)温度$()：-109 — -13°C$(br)在西侧出现更频繁。$(br)$(thing)生长天数$()：6$(br2)$(bold)提示：$()想炫耀一下吗？你可以用诡异菌柄造一艘$(l:logistics/boats#rowboat)划艇$()或$(l:logistics/boats#sloop)单桅纵帆船$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:forge:dusts/iodine",
 			"title": "碘",
 			"anchor": "iodine",
-			"text": "$(l:mars/mars_tree_index#crimson)绯红菇$()和$(l:mars/mars_tree_index#warped)诡异菇$()可以采集树液，分别得到$(4)绯红树脂$()和$(3)诡异树脂$()。$(br2)开始生产$(thing)碘$()时两种都需要，但它们很少生长在同一处，你可能得跑远一点。你也可以从相应的$(l:mars/mars_fauna#endermen)末影人$()那里获取菌类树苗。"
+			"text": "$(l:mars/mars_tree_index#crimson)绯红菌$()和$(l:mars/mars_tree_index#warped)诡异菌$()可以采集树液，分别得到$(4)绯红树脂$()和$(3)诡异树脂$()。$(br2)开始生产$(thing)碘$()时两种都需要，但它们很少生长在同一处，你可能得跑远一点。你也可以从相应的$(l:mars/mars_fauna#endermen)末影人$()那里获取菌类树苗。"
 		},
 		{
 			"type": "patchouli:text",

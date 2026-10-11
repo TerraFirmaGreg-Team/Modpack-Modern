@@ -58,7 +58,7 @@
 			"type": "patchouli:text",
 			"title": "Jedzenie i picie",
 			"anchor": "food",
-			"text": "Some $(l:cooking)food$() and $(l:cooking/drinks)drinks$() may have effects that influence the player's temperature. These are:$(li)$(l:game_mechanics/mob_effects#cooling)Cooling$()$(li)$(l:game_mechanics/mob_effects#warming)Warming$()$(li)$(l:game_mechanics/mob_effects#freezing)Freezing$()$(li)$(l:game_mechanics/mob_effects#blazing)Blazing$()$(br2)Drinking $(l:cooking/drinks#spring_water)Spring Water$() will warm you up, and $(l:cooking/drinks#ice_slush)Ice Slush$() will cool you down."
+			"text": "Niektóre $(l:cooking)potrawy$() i $(l:cooking/drinks)napoje$() mogą wywoływać efekty wpływające na temperaturę gracza. Są to:$(li)$(l:game_mechanics/mob_effects#cooling)Chłodzenie$()$(li)$(l:game_mechanics/mob_effects#warming)Ogrzewanie$()$(li)$(l:game_mechanics/mob_effects#freezing)Zamrożenie$()$(li)$(l:game_mechanics/mob_effects#blazing)Pieczenie$()$(br2)Wypicie $(l:cooking/drinks#spring_water)wody źródlanej$() ogrzeje cię, a $(l:cooking/drinks#ice_slush)pokruszonego lodu$() ochłodzi."
 		},
 		{
 			"type": "patchouli:text",

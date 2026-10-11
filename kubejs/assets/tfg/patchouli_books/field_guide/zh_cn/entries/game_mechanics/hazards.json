@@ -32,7 +32,7 @@
 			"type": "patchouli:crafting",
 			"title": "面罩",
 			"recipe": "gtceu:shaped/face_mask",
-			"text": "$(thing)口罩$()能抵御所有$(item)吸入性$()危害，例如砷中毒。",
+			"text": "$(thing)面罩$()能抵御所有$(item)吸入性$()危害，例如砷中毒。",
 			"anchor": "mask"
 		},
 		{
@@ -80,7 +80,7 @@
 			"title": "砷中毒",
 			"item": "gtceu:arsenic_dust",
 			"anchor": "arsenicosis",
-			"text": "$(thing)砷中毒$()是吸入砷粉尘、砷蒸气或$(thing)雄黄$()引发的疾病。它会慢慢加剧饥饿，随后引起反胃，最终导致$(bold)死亡$()。$(br2)$(l:game_mechanics/hazards#mask)面罩$()和$(l:game_mechanics/hazards#hazmat)防化服$()可以防护$(thing)砷中毒$()。"
+			"text": "$(thing)砷中毒$()是吸入$(thing)砷粉、砷蒸气$()或$(thing)雄黄$()引发的疾病。它会慢慢加剧饥饿，随后引起反胃，最终导致$(bold)死亡$()。$(br2)$(l:game_mechanics/hazards#mask)面罩$()和$(l:game_mechanics/hazards#hazmat)防化服$()可以防护$(thing)砷中毒$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -94,7 +94,7 @@
 			"title": "铍中毒",
 			"item": "gtceu:beryllium_dust",
 			"anchor": "berylliosis",
-			"text": "$(thing)铍中毒$()是皮肤接触$(thing)铍粉尘$()或$(thing)液态铍$()引发的疾病。起初似乎没什么大碍，但接触时间越长，它$(bold)杀死$()你的速度就越快。$(br)$(l:game_mechanics/hazards#gloves)手套$()和$(l:game_mechanics/hazards#hazmat)防化服$()可以防护$(thing)铍中毒$()。"
+			"text": "$(thing)铍中毒$()是皮肤接触$(thing)铍粉$()或$(thing)液态铍$()引发的疾病。起初似乎没什么大碍，但接触时间越长，它$(bold)杀死$()你的速度就越快。$(br)$(l:game_mechanics/hazards#gloves)手套$()和$(l:game_mechanics/hazards#hazmat)防化服$()可以防护$(thing)铍中毒$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -115,7 +115,7 @@
 			"title": "致癌物",
 			"item": "gtceu:chromium_dust",
 			"anchor": "carcinogens",
-			"text": "$(l:game_mechanics/hazards#mask)面罩$()可以防止吸入有害化学品，而$(l:game_mechanics/hazards#gloves)手套$()可以防止接触$(thing)铬粉尘$()。$(br)$(l:game_mechanics/hazards#hazmat)防化服$()对两者都能防护。$(br)如果暴露严重，建议服用一些$(l:game_mechanics/hazards#medicine)药品$()来$(thing)预防$()可能受到的伤害。"
+			"text": "$(l:game_mechanics/hazards#mask)面罩$()可以防止吸入有害化学品，而$(l:game_mechanics/hazards#gloves)手套$()可以防止接触$(thing)铬粉$()。$(br)$(l:game_mechanics/hazards#hazmat)防化服$()对两者都能防护。$(br)如果暴露严重，建议服用一些$(l:game_mechanics/hazards#medicine)药品$()来$(thing)预防$()可能受到的伤害。"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -129,7 +129,7 @@
 			"title": "刺激性物质",
 			"item": "gtceu:chromite_dust",
 			"anchor": "irritants",
-			"text": "$(thing)刺激$()由吸入$(thing)甲酸铵$()或皮肤接触$(thing)铬铁矿粉尘$()引起。短时间接触只会导致虚弱，但若长时间置之不理，就会开始$(item)随机造成伤害$()。$(br)$(l:game_mechanics/hazards#mask)面罩$()可以防止吸入，而$(l:game_mechanics/hazards#gloves)手套$()可以防止皮肤直接接触。$(br)$(l:game_mechanics/hazards#hazmat)防化服$()对两者都能防护。"
+			"text": "$(thing)刺激$()由吸入$(thing)甲酸铵$()或皮肤接触$(thing)铬铁矿粉$()引起。短时间接触只会导致虚弱，但若长时间置之不理，就会开始$(item)随机造成伤害$()。$(br)$(l:game_mechanics/hazards#mask)面罩$()可以防止吸入，而$(l:game_mechanics/hazards#gloves)手套$()可以防止皮肤直接接触。$(br)$(l:game_mechanics/hazards#hazmat)防化服$()对两者都能防护。"
 		},
 		{
 			"type": "patchouli:spotlight",

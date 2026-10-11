@@ -9,7 +9,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li2)$(l:the_world/wild_crops#melon)西瓜$()$(li2)$(l:the_world/wild_crops#oat)燕麦$()$(li2)$(l:the_world/wild_crops#onion)洋葱$()$(li2)$(l:the_world/wild_crops#papyrus)纸莎草$()$(li2)$(l:the_world/wild_crops#potato)马铃薯$()$(li2)$(l:the_world/wild_crops#pumpkin)南瓜$()$(li2)$(l:the_world/wild_crops#radish)萝卜$()$(li2)$(l:the_world/wild_crops#red_bell_pepper)红辣椒$()$(li2)$(l:the_world/wild_crops#rice)水稻$()$(li2)$(l:the_world/wild_crops#rye)黑麦$()$(li2)$(l:the_world/wild_crops#soybean)大豆$()$(li2)$(l:the_world/wild_crops#squash)西葫芦$()$(li2)$(l:the_world/wild_crops#sugarcane)甘蔗$()$(li2)$(l:the_world/wild_crops#sunflower)向日葵$()$(li2)$(l:the_world/wild_crops#tomatoes)西红柿$()$(li2)$(l:the_world/wild_crops#wheat)小麦$()$(li2)$(l:the_world/wild_crops#yellow_bell_pepper)黄辣椒$()"
+            "text": "$(li2)$(l:the_world/wild_crops#melon)西瓜$()$(li2)$(l:the_world/wild_crops#oat)燕麦$()$(li2)$(l:the_world/wild_crops#onion)洋葱$()$(li2)$(l:the_world/wild_crops#papyrus)纸莎草$()$(li2)$(l:the_world/wild_crops#potato)马铃薯$()$(li2)$(l:the_world/wild_crops#pumpkin)南瓜$()$(li2)$(l:the_world/wild_crops#radish)萝卜$()$(li2)$(l:the_world/wild_crops#red_bell_pepper)红辣椒$()$(li2)$(l:the_world/wild_crops#rice)水稻$()$(li2)$(l:the_world/wild_crops#rye)黑麦$()$(li2)$(l:the_world/wild_crops#soybean)大豆$()$(li2)$(l:the_world/wild_crops#squash)西葫芦$()$(li2)$(l:the_world/wild_crops#sugarcane)甘蔗$()$(li2)$(l:the_world/wild_crops#sunflower)向日葵$()$(li2)$(l:the_world/wild_crops#tomatoes)西红柿$()$(li2)$(l:the_world/wild_crops#wheat)小麦$()$(li2)$(l:the_world/wild_crops#yellow_bell_pepper)黄甜椒$()"
         },
         {
             "type": "patchouli:text",
@@ -275,7 +275,7 @@
                     "text": "190 - 400"
                 },
                 {
-                    "text": "黄辣椒"
+                    "text": "黄甜椒"
                 },
                 {
                     "text": " 16 - 30"

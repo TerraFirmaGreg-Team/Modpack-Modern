@@ -177,7 +177,7 @@
         {
             "type": "patchouli:text",
             "anchor": "warming_transient_effect",
-            "text": "$(#ff7700)🔆$()$(bold) Warming$()$(li)Gives the player the $(l:game_mechanics/mob_effects#warming)Warming$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#ff7700)🔆$()$(bold) Ogrzewanie$()$(li)Nakłada na gracza efekt $(l:game_mechanics/mob_effects#warming)ogrzewania$() na 1 minutę za każdy punkt wartości odżywczej, maksymalnie na 30 minut.$()"
         },
         {
             "type": "patchouli:text",
@@ -187,7 +187,7 @@
         {
             "type": "patchouli:text",
             "anchor": "bolstering_transient_effect",
-            "text": "$(#ffe417)♡$()$(bold) Bolstering$()$(li)Gives the player the $(n)Absorption$() effect for 8 minutes. With its amplifier scaled based on the amount of nutrient points with a max amplifier of 5.$()"
+            "text": "$(#ffe417)♡$()$(bold) Wzmocnienie$()$(li)Zapewnia graczowi efekt $(n)absorpcji$() na 8 minut. Jego poziom skaluje się z liczbą punktów wartości odżywczej, maksymalnie do poziomu 5.$()"
         },
         {
             "type": "patchouli:text",
@@ -207,7 +207,7 @@
         {
             "type": "patchouli:text",
             "anchor": "blazing_transient_effect",
-            "text": "$(#ff7700)🔥$()$(bold) Blazing$()$(li)Gives the player the $(l:game_mechanics/mob_effects#blazing)Blazing$() effect with 5 seconds of duration per 1 nutrient point. With a max duration of 30sec.$()"
+            "text": "$(#ff7700)🔥$()$(bold) Pieczenie$()$(li)Nakłada na gracza efekt $(l:game_mechanics/mob_effects#blazing)pieczenia$() na 5 sekund za każdy punkt wartości odżywczej, maksymalnie na 30 sekund.$()"
         },
         {
             "type": "patchouli:text",
