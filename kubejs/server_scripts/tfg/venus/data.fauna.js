@@ -3,7 +3,7 @@
 /** @param {Internal.TFCDataEventJS} event */
 function registerVenusFauna(event) {
 
-	event.fauna(
+	/*event.fauna(
 		climate => {
 			climate.minTemp(400)
 		},
@@ -11,6 +11,15 @@ function registerVenusFauna(event) {
 			faunaData.solidGround(true)
 		},
 		"minecraft:strider")
+
+	event.fauna(
+		climate => {
+			climate.minTemp(400)
+		},
+		faunaData => {
+			faunaData.solidGround(true)
+		},
+		"ad_astra:mogler")*/
 
 	event.fauna(
 		climate => {
@@ -98,14 +107,14 @@ function registerVenusFauna(event) {
 		},
 		"arthropocolypse:platerodrilus")
 
-	event.fauna(
+	/*event.fauna(
 		climate => {
 			climate.minTemp(400)
 		},
 		faunaData => {
 			faunaData.solidGround(true)
 		},
-		"arthropocolypse:millipede_head")
+		"arthropocolypse:millipede_head")*/
 
 	event.fauna(
 		climate => {

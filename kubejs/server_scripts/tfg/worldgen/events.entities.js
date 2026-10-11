@@ -42,6 +42,7 @@ const NEW_MOB_MAX_HP = {
 	"endermanoverhaul:savanna_enderman": 86,
 	"endermanoverhaul:desert_enderman": 90,
 	"ad_astra:sulfur_creeper": 60,
+	"ad_astra:mogler": 60,
 	"species:trooper": 30,
 	"minecraft:blaze": 80,
 	"minecraft:strider": 50,
