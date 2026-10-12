@@ -58,7 +58,14 @@
 			"tfg:venus/surface/geyser_source_patch",
 			"tfg:venus/terrain/thermal_vent_rare"
 		],
-		[],
+		[
+			"tfg:venus/surface/crawling_lily",
+			"tfg:venus/surface/large_cactus",
+			"tfg:venus/surface/thornflower",
+			"tfg:venus/surface/inklight",
+			"tfg:venus/surface/fused_pillar_rare",
+			"tfg:venus/surface/bloodthorn"
+		],
 		"#tfg:venus_top_layer_modification"
 	],
 	"has_precipitation": true,
@@ -149,13 +156,13 @@
 				"type": "arthropocolypse:worker_ant",
 				"maxCount": 3,
 				"minCount": 2,
-				"weight": 10
+				"weight": 20
 			},
 			{
 				"type": "opposing_force:ladybug",
 				"maxCount": 3,
 				"minCount": 2,
-				"weight": 20
+				"weight": 50
 			}
 		],
 		"misc": [],
@@ -242,7 +249,7 @@
 				"type": "aliencraft_kepler:tree_mite",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 20
+				"weight": 40
 			}
 		],
 		"underground_water_creature": [],

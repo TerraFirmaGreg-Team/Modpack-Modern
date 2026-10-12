@@ -61,7 +61,9 @@
 			"tfg:venus/terrain/thermal_vent",
 			"tfg:venus/surface/sulfur_patch",
 			"tfg:venus/surface/hydralux",
-			"tfg:venus/surface/loose_scoria"
+			"tfg:venus/surface/loose_scoria",
+			"tfg:venus/surface/fused_pillar",
+			"tfg:venus/surface/bloodthorn"
 		],
 		[],
 		"#tfg:venus_top_layer_modification"
@@ -173,9 +175,9 @@
 			},
 			{
 				"type": "opposing_force:trembler",
-				"maxCount": 4,
+				"maxCount": 3,
 				"minCount": 2,
-				"weight": 100
+				"weight": 70
 			},
 			{
 				"type": "opposing_force:whizz",

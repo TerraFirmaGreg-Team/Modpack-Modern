@@ -21,7 +21,7 @@
 
 	[mobs.skyvern]
 		#Do Skyverns spawn
-		skyvernSpawning = true
+		skyvernSpawning = false
 		#Compounding spawn chance for Skyverns, default is 2%
 		#Range: 0.0 ~ 1.0
 		skyvernSpawnChance = 0.02

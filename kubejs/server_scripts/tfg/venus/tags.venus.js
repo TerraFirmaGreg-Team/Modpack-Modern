@@ -176,6 +176,7 @@ function registerTFGVenusEntityTypeTags(event) {
 		event.add('ad_astra:lives_without_oxygen', entity)
 		event.add('ad_astra:can_survive_in_acid_rain', entity)
 		event.add('gtceu:heat_immune', entity)
+		event.add('tfg:ignores_cacti', entity)
 	})
 
 	const venusPrey = [
@@ -189,6 +190,7 @@ function registerTFGVenusEntityTypeTags(event) {
 		'arthropocolypse:stag_beetle_larva',
 		'arthropocolypse:wharf_roach',
 		'arthropocolypse:mealworm',
+		'opposing_force:whizz'
 	];
 
 	venusPrey.forEach(entity => {

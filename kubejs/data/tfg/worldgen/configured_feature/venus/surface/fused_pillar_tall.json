@@ -1,0 +1,26 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"feature": {
+			"feature": {
+				"type": "tfg:tall_decorative_plant",
+				"config": {
+					"block": "tfg:tall_fused_pillar",
+					"plantHeight": 2,
+					"minHeight": 2,
+					"maxHeight": 2,
+					"middle": 0
+				}
+			},
+			"placement": [
+				{
+					"type": "minecraft:heightmap",
+					"heightmap": "OCEAN_FLOOR_WG"
+				}
+			]
+		},
+		"tries": 12,
+		"xz_spread": 8,
+		"y_spread": 0
+	}
+}

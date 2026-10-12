@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"feature": {
+			"feature": "aliencraft_kepler:cactus_spawn",
+			"placement": [
+				{
+					"type": "minecraft:heightmap",
+					"heightmap": "OCEAN_FLOOR_WG"
+				}
+			]
+		},
+		"tries": 6,
+		"xz_spread": 16,
+		"y_spread": 1
+	}
+}

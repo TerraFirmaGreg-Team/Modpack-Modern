@@ -74,7 +74,9 @@
 			"tfg:venus/surface/loose_crackrack"
 		],
 		[
-			"tfg:venus/terrain/lava_fill"
+			"tfg:venus/terrain/lava_fill",
+			"tfg:venus/surface/inklight",
+			"tfg:venus/surface/bloodthorn"
 		],
 		"#tfg:venus_top_layer_modification"
 	],
@@ -217,7 +219,7 @@
 				"type": "aliencraft_kepler:tree_mite",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 20
+				"weight": 40
 			}
 		],
 		"underground_water_creature": [],

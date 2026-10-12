@@ -1,0 +1,11 @@
+{
+	"type": "tfc:weeping_vines",
+	"config": {
+		"body": "aliencraft_kepler:alien_vines",
+		"head": "aliencraft_kepler:vines_tip",
+		"tries": 40,
+		"min_height": 3,
+		"max_height": 16,
+		"radius": 10
+	}
+}

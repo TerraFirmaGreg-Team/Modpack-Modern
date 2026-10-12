@@ -55,7 +55,14 @@
 			"tfc:raw_boulder_small_patch",
 			"tfc:cobble_boulder_small_patch"
 		],
-		[],
+		[
+			"tfg:venus/surface/crawling_lily",
+			"tfg:venus/surface/large_cactus",
+			"tfg:venus/surface/thornflower",
+			"tfg:venus/surface/inklight",
+			"tfg:venus/surface/fused_pillar_rare",
+			"tfg:venus/surface/bloodthorn"
+		],
 		"#tfg:venus_top_layer_modification"
 	],
 	"has_precipitation": true,
@@ -195,9 +202,9 @@
 			},
 			{
 				"type": "opposing_force:trembler",
-				"maxCount": 4,
+				"maxCount": 3,
 				"minCount": 2,
-				"weight": 100
+				"weight": 70
 			},
 			{
 				"type": "opposing_force:whizz",
@@ -221,7 +228,7 @@
 				"type": "aliencraft_kepler:tree_mite",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 20
+				"weight": 40
 			}
 		],
 		"underground_water_creature": [],

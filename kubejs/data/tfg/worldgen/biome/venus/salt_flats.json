@@ -55,7 +55,12 @@
 			"tfg:venus/vein_manual/salt"
 		],
 		[
-			"tfg:venus/surface/salt_lick_patch"
+			"tfg:venus/surface/salt_lick_patch",
+			"tfg:venus/surface/crawling_lily",
+			"tfg:venus/surface/large_cactus",
+			"tfg:venus/surface/thornflower",
+			"tfg:venus/surface/inklight",
+			"tfg:venus/surface/bloodthorn"
 		],
 		[]
 	],
@@ -153,7 +158,7 @@
 				"type": "opposing_force:ladybug",
 				"maxCount": 3,
 				"minCount": 2,
-				"weight": 50
+				"weight": 100
 			}
 		],
 		"misc": [],
@@ -190,9 +195,9 @@
 			},
 			{
 				"type": "opposing_force:trembler",
-				"maxCount": 4,
+				"maxCount": 3,
 				"minCount": 2,
-				"weight": 100
+				"weight": 70
 			},
 			{
 				"type": "opposing_force:whizz",
@@ -216,7 +221,7 @@
 				"type": "aliencraft_kepler:tree_mite",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 20
+				"weight": 40
 			}
 		],
 		"underground_water_creature": [],

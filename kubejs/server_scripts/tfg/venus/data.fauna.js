@@ -161,7 +161,7 @@ function registerVenusFauna(event) {
 	event.fauna(
 		climate => {
 			climate.minTemp(400)
-			climate.maxForest('normal')
+			climate.minForest('normal')
 		},
 		faunaData => {
 			faunaData.solidGround(true)
