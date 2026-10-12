@@ -52,8 +52,10 @@ TFCEvents.registerFaunas(event => {
 	event.replace("arthropocolypse:worker_ant", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
 	event.replace("arthropocolypse:soldier_ant", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
 	event.replace("arthropocolypse:stag_beetle", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
+	event.replace("arthropocolypse:stag_beetle_larva", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
 	event.replace("arthropocolypse:wharf_roach", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
 	event.replace("arthropocolypse:platerodrilus", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
+	event.replace("arthropocolypse:mealworm", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
 	event.replace("arthropocolypse:mealworm_beetle", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
 	event.replace("arthropocolypse:millipede_head", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
 	event.replace("opposing_force:slug", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
@@ -62,5 +64,5 @@ TFCEvents.registerFaunas(event => {
 	event.replace("opposing_force:ladybug", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
 	event.replace("aliencraft_kepler:ancient_beetle", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
 	event.replace("aliencraft_kepler:xenoscorpion_surface", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
-	event.replace("aliencraft_kepler:tree_mite", $SpawnPlacements.Type.NO_RESTRICTIONS, "world_surface");
+	event.replace("aliencraft_kepler:tree_mite", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
 })

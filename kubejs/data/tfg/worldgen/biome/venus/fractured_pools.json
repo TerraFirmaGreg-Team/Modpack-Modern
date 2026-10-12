@@ -10,11 +10,11 @@
 			"sound": "tfg:ambient.venus_surface.additions",
 			"tick_chance": 0.0015
 		},
-		"fog_color": 9938052,
-		"sky_color": 10465603,
+		"fog_color": 8424559,
+		"sky_color": 8424559,
 		"water_color": 8241044,
 		"water_fog_color": 10866612,
-		
+
 		"mood_sound": {
 			"block_search_extent": 8,
 			"offset": 2.0,
@@ -133,9 +133,15 @@
 			},
 			{
 				"type": "arthropocolypse:mealworm_beetle",
-				"maxCount": 4,
-				"minCount": 2,
-				"weight": 30
+				"maxCount": 6,
+				"minCount": 3,
+				"weight": 60
+			},
+			{
+				"type": "arthropocolypse:mealworm",
+				"maxCount": 6,
+				"minCount": 3,
+				"weight": 40
 			},
 			{
 				"type": "arthropocolypse:stag_beetle",

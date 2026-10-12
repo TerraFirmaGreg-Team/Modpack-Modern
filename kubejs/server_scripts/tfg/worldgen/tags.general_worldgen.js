@@ -83,6 +83,14 @@ function registerTFGGeneralWorldgenBlockTags(event) {
     event.add("tfc:monster_spawns_on", "tfg:rock/glauberite");
     event.add("tfc:monster_spawns_on", "tfg:rock/aragonite");
 
+	event.add('forge:stone', 'tfg:halite')
+	event.add('forge:stone', 'tfg:gilsonite')
+	event.add('forge:stone', 'tfg:rock/glauberite')
+	event.add('forge:stone', 'tfg:rock/aragonite')
+	event.add('forge:stone', 'minecraft:calcite')
+	event.add('forge:stone', 'ad_astra:conglomerate')
+	event.add('forge:stone', 'ae2:sky_stone_block')
+
 	// Let GT indicators be covered by snow
 	forEachMaterial((material) => {
 		if (material.hasProperty(PropertyKey.ORE)) {

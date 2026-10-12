@@ -3,15 +3,11 @@
 	"placement": [
 		{
 			"type": "minecraft:count",
-			"chance": 3
-		},
-		{
-			"type": "minecraft:count",
 			"count": {
 				"type": "minecraft:uniform",
 				"value": {
-					"max_inclusive": 3,
-					"min_inclusive": 1
+					"max_inclusive": 4,
+					"min_inclusive": 2
 				}
 			}
 		},
@@ -24,6 +20,11 @@
 		},
 		{
 			"type": "minecraft:biome"
+		},
+		{
+			"type": "minecraft:random_offset",
+			"xz_spread": 0,
+			"y_spread": 8
 		},
 		{
 			"type": "tfc:climate",

@@ -1,11 +1,92 @@
 {
-	"type": "tfc:weeping_vines",
+	"type": "minecraft:random_patch",
 	"config": {
-		"body": "aliencraft_kepler:alien_vines",
-		"head": "aliencraft_kepler:vines_tip",
-		"tries": 40,
-		"min_height": 3,
-		"max_height": 16,
-		"radius": 10
+		"feature": {
+			"feature": {
+				"type": "minecraft:block_column",
+				"config": {
+					"allowed_placement": {
+						"type": "minecraft:matching_blocks",
+						"blocks": "minecraft:air"
+					},
+					"direction": "down",
+					"layers": [
+						{
+							"height": {
+								"type": "minecraft:weighted_list",
+								"distribution": [
+									{
+										"data": {
+											"type": "minecraft:uniform",
+											"value": {
+												"max_inclusive": 3,
+												"min_inclusive": 0
+											}
+										},
+										"weight": 5
+									},
+									{
+										"data": {
+											"type": "minecraft:uniform",
+											"value": {
+												"max_inclusive": 7,
+												"min_inclusive": 4
+											}
+										},
+										"weight": 2
+									}
+								]
+							},
+							"provider": {
+								"type": "minecraft:simple_state_provider",
+								"state": {
+									"Name": "aliencraft_kepler:alien_vines"
+								}
+							}
+						},
+						{
+							"height": 1,
+							"provider": {
+								"type": "minecraft:simple_state_provider",
+								"state": {
+									"Name": "aliencraft_kepler:vines_tip"
+								}
+							}
+						}
+					],
+					"prioritize_tip": true
+				}
+			},
+			"placement": [
+				{
+					"type": "minecraft:block_predicate_filter",
+					"predicate": {
+						"type": "minecraft:matching_blocks",
+						"blocks": "minecraft:air"
+					}
+				},
+				{
+					"type": "minecraft:environment_scan",
+					"allowed_search_condition": {
+						"type": "minecraft:matching_blocks",
+						"blocks": "minecraft:air"
+					},
+					"direction_of_search": "up",
+					"max_steps": 6,
+					"target_condition": {
+						"type": "minecraft:matching_block_tag",
+						"tag": "ad_astra:venus_stone_replaceables"
+					}
+				},
+				{
+					"type": "minecraft:random_offset",
+					"xz_spread": 0,
+					"y_spread": -1
+				}
+			]
+		},
+		"tries": 32,
+		"xz_spread": 8,
+		"y_spread": 3
 	}
 }

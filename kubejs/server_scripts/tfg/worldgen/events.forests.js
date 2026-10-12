@@ -166,8 +166,8 @@ TFCEvents.worldgenData(event => {
 		event.forestTypesMapEntry('none',       [0, 0],	0,	0,		0, false, false, 0),
 		event.forestTypesMapEntry('sparse',     [0, 1],	2,	0.1,	0, false, false, 0),
 		event.forestTypesMapEntry('edge',       [1, 1],	4,	0.3,	0, false, false, 0),
-		event.forestTypesMapEntry('normal',     [1, 2],	6,	0.8,	0, false, true,  0),
-		event.forestTypesMapEntry('old_growth', [2, 3],	8,	1.0,	0, false, true,  0)
+		event.forestTypesMapEntry('normal',     [1, 2],	6,	0.8,	0, true,  false, 0),
+		event.forestTypesMapEntry('old_growth', [2, 3],	8,	1.0,	0, true,  true,  0)
 	], false, placement => {})
 
 	event.forestEntry('tfg:venus/rock_spike',
@@ -179,7 +179,8 @@ TFCEvents.worldgenData(event => {
 		[
 			'aliencraft_kepler:small_desert_cactus',
 			'aliencraft_kepler:small_desert_cactus_fruitless',
-			'aliencraft_kepler:alien_cactus_flower'
+			'aliencraft_kepler:alien_cactus_flower',
+			'aliencraft_kepler:desertgrass_3'
 		],
 		'tfg:venus/terrain/surface_rock_spike_small',
 		'tfg:venus/terrain/surface_rock_spike_small',

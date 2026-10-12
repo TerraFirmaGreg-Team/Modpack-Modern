@@ -10,11 +10,11 @@
 			"sound": "tfg:ambient.venus_surface.additions",
 			"tick_chance": 0.0015
 		},
-		"sky_color": 10465603,
-		"fog_color": 9938052,
+		"sky_color": 9539443,
+		"fog_color": 9539443,
 		"water_color": 8241044,
 		"water_fog_color": 10866612,
-		
+
 		"mood_sound": {
 			"block_search_extent": 8,
 			"offset": 2,
@@ -141,10 +141,16 @@
 				"weight": 30
 			},
 			{
-				"type": "arthropocolypse:stag_beetle",
+				"type": "arthropocolypse:stag_beetle_larva",
 				"maxCount": 4,
-				"minCount": 2,
+				"minCount": 3,
 				"weight": 40
+			},
+			{
+				"type": "arthropocolypse:stag_beetle",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 60
 			},
 			{
 				"type": "arthropocolypse:soldier_ant",

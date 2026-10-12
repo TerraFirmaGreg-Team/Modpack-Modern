@@ -16,7 +16,7 @@ function registerVenusFauna(event) {
 	event.fauna(
 		climate => {
 			climate.minTemp(400)
-			climate.minForest('edge')
+			climate.maxForest('edge')
 		},
 		faunaData => {
 			faunaData.solidGround(true)
@@ -26,12 +26,20 @@ function registerVenusFauna(event) {
 	event.fauna(
 		climate => {
 			climate.minTemp(400)
-			climate.minForest('normal')
 		},
 		faunaData => {
 			faunaData.solidGround(true)
 		},
 		"arthropocolypse:mealworm_beetle")
+
+	event.fauna(
+		climate => {
+			climate.minTemp(400)
+		},
+		faunaData => {
+			faunaData.solidGround(true)
+		},
+		"arthropocolypse:mealworm")
 
 	event.fauna(
 		climate => {
@@ -70,6 +78,15 @@ function registerVenusFauna(event) {
 			faunaData.solidGround(true)
 		},
 		"arthropocolypse:stag_beetle")
+
+	event.fauna(
+		climate => {
+			climate.minTemp(400)
+		},
+		faunaData => {
+			faunaData.solidGround(true)
+		},
+		"arthropocolypse:stag_beetle_larva")
 
 	event.fauna(
 		climate => {
@@ -141,7 +158,7 @@ function registerVenusFauna(event) {
 	event.fauna(
 		climate => {
 			climate.minTemp(400)
-			climate.maxForest('normal')
+			climate.minForest('normal')
 		},
 		faunaData => {
 			faunaData.solidGround(true)
