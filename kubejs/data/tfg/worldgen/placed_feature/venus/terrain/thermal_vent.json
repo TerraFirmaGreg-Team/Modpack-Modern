@@ -25,11 +25,17 @@
 	"placement": [
 		{
 			"type": "minecraft:rarity_filter",
-			"chance": 2
+			"chance": 4
 		},
 		{
 			"type": "minecraft:count",
-			"count": 2
+			"count": {
+				"type": "minecraft:uniform",
+				"value": {
+					"max_inclusive": 6,
+					"min_inclusive": 2
+				}
+			}
 		},
 		{
 			"type": "minecraft:in_square"

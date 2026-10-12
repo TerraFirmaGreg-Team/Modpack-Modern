@@ -118,6 +118,8 @@ function registerTFGVenusBlockTags(event) {
 	event.add('tfc:can_landslide', 'tfg:sand/fluorapatite/yellow')
 
 	event.add('tfg:decorative_plant_attachable', 'betterend:sulphuric_rock')
+
+	event.add('tfg:heightmap_ignore', 'create:crimsite')
 }
 
 function registerTFGVenusBiomeTags(event) {

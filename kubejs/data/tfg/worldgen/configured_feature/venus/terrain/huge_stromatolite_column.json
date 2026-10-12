@@ -12,7 +12,7 @@
 		"density": 0.99,
 		"min_y": 60,
 		"max_y": 180,
-		"random_name": "adakite_column",
+		"random_name": "stromatolite_column",
 		"blocks": [
 			{
 				"replace": [
@@ -20,7 +20,11 @@
 				],
 				"with": [
 					{
-						"block": "betterend:lacugrove_bark",
+						"block": "tfg:tall_stromatolite",
+						"weight": 5
+					},
+					{
+						"block": "tfg:tall_stromatolite_cyanobacteria",
 						"weight": 1
 					}
 				]

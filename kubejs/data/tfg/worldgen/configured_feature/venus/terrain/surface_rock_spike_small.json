@@ -8,15 +8,15 @@
 		"height_scale": {
 			"type": "minecraft:uniform",
 			"value": {
-				"min_inclusive": 1,
-				"max_exclusive": 2
+				"min_inclusive": 6,
+				"max_exclusive": 8
 			}
 		},
 		"column_radius": {
 			"type": "minecraft:uniform",
 			"value": {
-				"min_inclusive": 6,
-				"max_inclusive": 8
+				"min_inclusive": 2,
+				"max_inclusive": 4
 			}
 		},
 		"wind_speed": {
@@ -26,6 +26,6 @@
 				"max_exclusive": 1.5
 			}
 		},
-		"bluntness": 0
+		"bluntness": 0.8
 	}
 }

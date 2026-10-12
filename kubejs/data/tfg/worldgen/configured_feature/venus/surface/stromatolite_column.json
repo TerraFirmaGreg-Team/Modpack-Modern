@@ -38,10 +38,21 @@
 								]
 							},
 							"provider": {
-								"type": "minecraft:simple_state_provider",
-								"state": {
-									"Name": "betterend:lacugrove_bark"
-								}
+								"type": "minecraft:weighted_state_provider",
+								"entries": [
+									{
+										"data": {
+											"Name": "tfg:tall_stromatolite"
+										},
+										"weight": 5
+									},
+									{
+										"data": {
+											"Name": "tfg:tall_stromatolite_cyanobacteria"
+										},
+										"weight": 1
+									}
+								]
 							}
 						}
 					],
@@ -51,7 +62,7 @@
 			"placement": [
 				{
 					"type": "minecraft:heightmap",
-					"heightmap": "OCEAN_FLOOR"
+					"heightmap": "OCEAN_FLOOR_WG"
 				}
 			]
 		},

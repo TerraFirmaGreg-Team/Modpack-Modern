@@ -55,15 +55,7 @@
                 "max": 1500
             },
             "transition": 100,
-            "volume": 0.05
-        },
-        {
-            "name": "storm-away",
-            "category": "weather",
-            "volume": 0.7,
-            "files": [
-                "ambientsounds:weather.storm-away"
-            ]
+            "volume": 0.25
         },
         {
             "name": "basalt-deltas",
@@ -74,6 +66,19 @@
                 "minecraft:ambient.crimson_forest.loop"
             ],
             "category": "suspense",
+            "transition": 100,
+            "volume": 1.0
+        },
+        {
+            "name": "plode",
+            "files": [
+                "tfg:ambient.venus_plode"
+            ],
+            "category": "weather",
+            "pause": {
+                "min": 200,
+                "max": 1000
+            },
             "volume": 1.0
         }
     ]

@@ -52,7 +52,7 @@
 			"placement": [
 				{
 					"type": "minecraft:heightmap",
-					"heightmap": "WORLD_SURFACE"
+					"heightmap": "OCEAN_FLOOR_WG"
 				},
 				{
 					"type": "minecraft:block_predicate_filter",

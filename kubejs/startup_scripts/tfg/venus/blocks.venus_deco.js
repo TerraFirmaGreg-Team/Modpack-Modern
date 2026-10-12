@@ -2,6 +2,8 @@
 
 function registerTFGWorldGenVenusDecoBlocks(event) {
 
+	// Particle emitters
+
 	event.create('tfg:geyser_source', 'tfg:particle_emitter_decoration')
 		.soundType('dripstone_block')
 		.mapColor('color_white')
@@ -68,7 +70,9 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 			.count(1)
 			.forced(false));
 
+
 	//Geyserite
+
 	event.create('tfg:rock/raw/geyserite', 'tfc:raw_rock')
 		.textureAll('tfg:block/planets/venus/geyserite')
 		.rockTypeTooltip(Text.translatable('tooltip.tfg.sedimentary'))
@@ -90,7 +94,9 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.requiresTool(true)
 		.tagBlock('minecraft:mineable/pickaxe')
 
+
 	//Stromatolite
+
 	event.create('tfg:rock/raw/stromatolite', 'tfc:raw_rock')
 		.textureAll('tfg:block/planets/venus/stromatolite_spike')
 		.model('tfg:block/rock/stromatolite_block')
@@ -121,6 +127,31 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.soundType('dripstone_block')
 		.mapColor('color_brown')
 		.box(3, 0, 3, 13, 14, 13)
+		
+
+	event.create('tfg:tall_stromatolite')
+		.soundType('basalt')
+		.mapColor('podzol')
+		.requiresTool(true)
+		.tagBlock('minecraft:mineable/pickaxe')
+
+	event.create('tfg:tall_stromatolite_cyanobacteria')
+		.soundType('basalt')
+		.mapColor('podzol')
+		.requiresTool(true)
+		.tagBlock('minecraft:mineable/pickaxe')
+
+	// Other deco blocks
+	
+	event.create('tfg:huge_salt')
+		.fullBlock(true)
+		.soundType('amethyst')
+		.mapColor('quartz')
+		.textureAll('tfg:block/huge_salt')
+		.requiresTool(true)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('tfc:mineable_with_glass_saw')
+		.defaultTranslucent()
 
 
 	// Some more stone blocks from better end, for variety's sake
@@ -152,14 +183,6 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.mapColor('terracotta_white')
 		.tagBlock('minecraft:replaceable')
 		.tagBlock('tfg:do_not_destroy_in_space')
-
-	event.create('betterend:lacugrove_bark')
-		.soundType('basalt')
-		.mapColor('podzol')
-		.requiresTool(true)
-		.tagBlock('minecraft:mineable/pickaxe')
-		.tagBoth('tfc:rock/raw')
-		.tagBoth('forge:stone')
 
 	event.create('betterend:lucernia_bark')
 		.soundType('netherrack')
@@ -233,6 +256,7 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 			.requiresTool(true)
 			.tagBlock('minecraft:mineable/pickaxe')
 	})
+
 
 	// Plants
 

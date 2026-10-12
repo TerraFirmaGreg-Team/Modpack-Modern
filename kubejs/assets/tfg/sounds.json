@@ -936,21 +936,6 @@
 				"weight": 40
 			},
 			{
-				"name": "minecraft:ambient/nether/basalt_deltas/plode1",
-				"volume": 0.5,
-				"weight": 10
-			},
-			{
-				"name": "minecraft:ambient/nether/basalt_deltas/plode2",
-				"volume": 0.5,
-				"weight": 10
-			},
-			{
-				"name": "minecraft:ambient/nether/basalt_deltas/plode3",
-				"volume": 0.5,
-				"weight": 10
-			},
-			{
 				"name": "minecraft:ambient/nether/basalt_deltas/twist1",
 				"volume": 0.66
 			},
@@ -1027,6 +1012,13 @@
 				"name": "minecraft:ambient/nether/nether_wastes/ground4",
 				"volume": 0.4
 			}
+		]
+	},
+	"ambient.venus_plode": {
+		"sounds": [
+			"minecraft:ambient/nether/basalt_deltas/plode1",
+			"minecraft:ambient/nether/basalt_deltas/plode2",
+			"minecraft:ambient/nether/basalt_deltas/plode3"
 		]
 	},
 	"ambient.venus_surface.mood": {

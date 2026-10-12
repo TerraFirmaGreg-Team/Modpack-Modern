@@ -422,7 +422,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		tfcTag: 'tfc:metamorphic_items',
 		gravelTag: 'tfc:black_gravel',
 		sound: 'deepslate',
-		mapColor: 'terracotta_grey',
+		mapColor: 'terracotta_gray',
 		collapsible: true,
 		dimensions: ['minecraft:overworld', 'minecraft:the_nether', 'ad_astra:venus'],
 		support: 'tfg:migmatite_support',

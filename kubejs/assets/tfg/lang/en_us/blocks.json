@@ -524,6 +524,8 @@
 	"block.tfg.rock.spike.stromatolite": "Stromatolite Spike",
 	"block.tfg.stromatolite_cluster_small": "Small Stromatolite Cluster",
 	"block.tfg.stromatolite_cluster_medium": "Large Stromatolite Cluster",
+	"block.tfg.tall_stromatolite": "Raw Stromatolite",
+	"block.tfg.tall_stromatolite_cyanobacteria": "Stromatolite Cyanobacteria Colony",
 
 	"block.tfg.rock.aragonite": "Aragonite",
 	"block.tfg.rock.bricks_aragonite": "Aragonite Bricks",
@@ -603,6 +605,7 @@
 	"block.tfg.hardened_clay": "Hardened Clay",
 	"block.tfg.halite": "Halite",
 	"block.tfg.huge_quartz": "Quartz Crystal",
+	"block.tfg.huge_salt": "Salt Crystal",
 	"block.tfg.oil_tar": "Oil Tar",
 	"block.tfg.oil_slick": "Oil Slick",
 	"block.tfg.raw_oil_tar": "Raw Oil Tar",

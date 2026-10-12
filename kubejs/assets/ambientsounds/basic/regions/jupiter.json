@@ -1,0 +1,23 @@
+{
+    "name": "jupiter",
+    "bad-regions": [
+        "rain"
+    ],
+    "biomes": [
+
+    ],
+    "bad_biomes": [
+
+    ],
+    "sounds": [
+        {
+            "name": "storm-away",
+            "category": "weather",
+            "volume": 0.7,
+            "files": [
+                "ambientsounds:weather.storm-away",
+                "ambientsounds:weather.storm-close"
+            ]
+        }
+    ]
+}
