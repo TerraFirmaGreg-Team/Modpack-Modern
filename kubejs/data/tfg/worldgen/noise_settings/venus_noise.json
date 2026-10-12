@@ -380,7 +380,8 @@
 									{ "Name": "tfg:rock/glauberite" },
 									{ "Name": "tfg:rock/glauberite" },
 									{ "Name": "tfg:rock/aragonite" },
-									{ "Name": "tfg:rock/aragonite" }
+									{ "Name": "tfg:rock/aragonite" },
+									{ "Name": "tfg:rock/hardened_red_granite" }
 								],
 								"fallback": {
 									"Name": "ad_astra:venus_stone"
@@ -1746,8 +1747,6 @@
 									{ "Name": "tfg:rock/glauberite" },
 									{ "Name": "tfg:rock/aragonite" },
 									{ "Name": "tfg:rock/aragonite" },
-									{ "Name": "betterend:brimstone" },
-									{ "Name": "betterend:brimstone" },
 									{ "Name": "vintageimprovements:sulfur_block" },
 									{ "Name": "tfc:raw_sandstone/black" }
 								],

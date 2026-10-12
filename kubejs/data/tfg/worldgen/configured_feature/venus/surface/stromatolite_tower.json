@@ -67,6 +67,11 @@
 							"tfg:rock/raw/stromatolite"
 						]
 					}
+				},
+				{
+					"type": "minecraft:random_offset",
+					"y_spread": 1,
+					"xz_spread": 0
 				}
 			]
 		},

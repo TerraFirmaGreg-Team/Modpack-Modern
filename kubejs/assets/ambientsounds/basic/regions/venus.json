@@ -60,7 +60,14 @@
         {
             "name": "basalt-deltas",
             "files": [
-                "minecraft:ambient.basalt_deltas.loop",
+                "minecraft:ambient.basalt_deltas.loop"
+            ],
+            "category": "suspense",
+            "volume": 0.8
+        },
+        {
+            "name": "other-nether",
+            "files": [
                 "minecraft:ambient.nether_wastes.loop",
                 "minecraft:ambient.soul_sand_valley.loop",
                 "minecraft:ambient.crimson_forest.loop"

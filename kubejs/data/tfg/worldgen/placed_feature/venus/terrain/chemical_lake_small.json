@@ -1,0 +1,39 @@
+{
+	"feature": {
+		"type": "minecraft:simple_random_selector",
+		"config": {
+			"features": [
+				{
+					"feature": "tfg:venus/terrain/small_chemical_lake_1",
+					"placement": []
+				},
+				{
+					"feature": "tfg:venus/terrain/small_chemical_lake_2",
+					"placement": []
+				},
+				{
+					"feature": "tfg:venus/terrain/small_chemical_lake_3",
+					"placement": []
+				},
+				{
+					"feature": "tfg:venus/terrain/small_chemical_lake_4",
+					"placement": []
+				},
+				{
+					"feature": "tfg:venus/terrain/small_chemical_lake_5",
+					"placement": []
+				}
+			]
+		}
+	},
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 5
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "OCEAN_FLOOR"
+		}
+	]
+}

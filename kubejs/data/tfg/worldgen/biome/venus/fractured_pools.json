@@ -38,7 +38,20 @@
 	},
 	"features": [
 		[
-			"tfc:random_empty_hot_spring"
+
+			"tfg:venus/terrain/lava_spring_rare",
+			"tfg:venus/terrain/sulfur_fumes_spring"
+		],
+		[
+			"tfg:venus/terrain/chemical_lake_encased",
+			"tfg:venus/terrain/chemical_lake_exposed"
+		],
+		[
+			"tfg:venus/surface/glauberite_formation",
+			"tfg:venus/surface/aragonite_formation"
+		],
+		[
+			"tfg:venus/terrain/chemical_lake_small"
 		],
 		[
 			"tfg:venus_forest"
@@ -46,9 +59,6 @@
 		[
 			"tfc:erosion"
 		],
-		[],
-		[],
-		[],
 		"#tfg:venus_veins",
 		[],
 		[
@@ -187,6 +197,18 @@
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 20
+			},
+			{
+				"type": "minecraft:magma_cube",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 10
+			},
+			{
+				"type": "minecraft:blaze",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 50
 			},
 			{
 				"type": "ad_astra:sulfur_creeper",

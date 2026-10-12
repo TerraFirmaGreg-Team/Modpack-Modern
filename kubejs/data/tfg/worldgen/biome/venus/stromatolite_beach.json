@@ -39,6 +39,9 @@
 	"features": [
 		[
 			"tfc:random_empty_hot_spring",
+			"tfg:venus/terrain/sulfur_fumes_spring",
+			"tfg:venus/surface/glauberite_formation",
+			"tfg:venus/surface/aragonite_formation",
 			"tfg:venus/terrain/stromatolite_disk"
 		],
 		[
@@ -64,7 +67,8 @@
 			"tfg:venus/surface/thornflower",
 			"tfg:venus/surface/inklight",
 			"tfg:venus/surface/fused_pillar_rare",
-			"tfg:venus/surface/bloodthorn"
+			"tfg:venus/surface/bloodthorn",
+			"tfg:venus/surface/slug_eggs"
 		],
 		"#tfg:venus_top_layer_modification"
 	],
@@ -111,7 +115,7 @@
 			"charge": 0.9
 		}
 	},
-	"creature_spawn_probability": 0.1,
+	"creature_spawn_probability": 0.2,
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],
@@ -190,6 +194,18 @@
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 10
+			},
+			{
+				"type": "minecraft:magma_cube",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 10
+			},
+			{
+				"type": "minecraft:blaze",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 50
 			},
 			{
 				"type": "ad_astra:sulfur_creeper",

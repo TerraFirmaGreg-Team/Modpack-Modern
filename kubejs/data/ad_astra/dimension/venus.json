@@ -136,6 +136,17 @@
 						"spike": "tfg:spike/tuff_spike",
 						"loose": "tfg:loose/tuff"
 					},
+					"geyserite": {
+						"raw": "tfg:rock/raw/geyserite",
+						"hardened": "tfg:rock/raw/geyserite",
+						"gravel": "tfg:rock/raw/geyserite",
+						"cobble": "tfg:rock/raw/geyserite",
+						"mossy": "tfg:rock/raw/geyserite",
+						"sand": "tfc:sand/white",
+						"sandstone": "tfc:raw_sandstone/white",
+						"spike": "tfg:rock/spike/geyserite",
+						"loose": "minecraft:air"
+					},
 					"granite": "tfc:granite",
 					"diorite": "tfc:diorite",
 					"gabbro": "tfc:gabbro",

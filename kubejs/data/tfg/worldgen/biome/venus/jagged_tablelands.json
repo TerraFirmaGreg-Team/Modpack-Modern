@@ -39,7 +39,9 @@
 	"features": [
 		[
 			"tfg:venus/terrain/lava_spring_rare",
-			"tfc:random_empty_hot_spring"
+			"tfc:random_empty_hot_spring",
+			"tfg:venus/surface/glauberite_formation",
+			"tfg:venus/surface/aragonite_formation"
 		],
 		[
 			"tfg:venus_forest"
@@ -116,7 +118,7 @@
 			"charge": 0.9
 		}
 	},
-	"creature_spawn_probability": 0.15,
+	"creature_spawn_probability": 0.2,
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],

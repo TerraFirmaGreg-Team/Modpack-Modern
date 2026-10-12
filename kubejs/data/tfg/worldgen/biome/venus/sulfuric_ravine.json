@@ -39,7 +39,9 @@
 	"features": [
 		[
 			"tfg:venus/terrain/sulfur_fumes_fill",
-			"tfg:venus/terrain/sulfur_fumes_spring"
+			"tfg:venus/terrain/sulfur_fumes_spring",
+			"tfg:venus/surface/glauberite_formation",
+			"tfg:venus/surface/aragonite_formation"
 		],
 		[
 			 
@@ -111,7 +113,7 @@
 			"charge": 0.9
 		}
 	},
-	"creature_spawn_probability": 0.1,
+	"creature_spawn_probability": 0.2,
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],
@@ -158,26 +160,20 @@
 			{
 				"type": "ad_astra:sulfur_creeper",
 				"maxCount": 4,
-				"minCount": 2,
+				"minCount": 3,
 				"weight": 100
+			},
+			{
+				"type": "minecraft:blaze",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 50
 			},
 			{
 				"type": "arthropocolypse:millipede_head",
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 100
-			},
-			{
-				"type": "opposing_force:slug",
-				"maxCount": 4,
-				"minCount": 2,
-				"weight": 100
-			},
-			{
-				"type": "opposing_force:trembler",
-				"maxCount": 3,
-				"minCount": 2,
-				"weight": 70
 			},
 			{
 				"type": "opposing_force:whizz",

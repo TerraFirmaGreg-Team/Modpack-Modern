@@ -78,7 +78,7 @@ function registerTFGGeneralWorldgenBlockTags(event) {
 	
     event.add("tfc:monster_spawns_on", "tfg:halite");
     event.add("tfc:monster_spawns_on", "tfg:hardened_clay");
-    event.add("tfc:monster_spawns_on", "tfg:geyserite");
+    event.add("tfc:monster_spawns_on", "tfg:rock/raw/geyserite");
     event.add("tfc:monster_spawns_on", "minecraft:calcite");
     event.add("tfc:monster_spawns_on", "tfg:rock/glauberite");
     event.add("tfc:monster_spawns_on", "tfg:rock/aragonite");

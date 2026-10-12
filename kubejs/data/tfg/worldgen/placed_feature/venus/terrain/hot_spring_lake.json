@@ -1,0 +1,27 @@
+{
+	"feature": "tfg:venus/terrain/hot_spring_lake",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 8
+		},
+		{
+			"type": "minecraft:random_offset",
+			"y_spread": 0,
+			"xz_spread": {
+				"type": "minecraft:uniform",
+				"value": {
+					"min_inclusive": -8,
+					"max_inclusive": 8
+				}
+			}
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "OCEAN_FLOOR"
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

@@ -156,12 +156,6 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 
 	// Some more stone blocks from better end, for variety's sake
 
-	event.create('betterend:brimstone')
-		.soundType('tuff')
-		.mapColor('color_yellow')
-		.requiresTool(true)
-		.tagBlock('minecraft:mineable/pickaxe')
-
 	event.create('betterend:hydrothermal_vent', 'tfg:particle_emitter_decoration')
 		.soundType('dripstone_block')
 		.mapColor('dirt')

@@ -23,10 +23,15 @@ let rainLayer = TFC.misc.newOpenSimplex2D(2846746456346)
 	.octaves(2)
 	.spread(0.05)
 	.scaled(-3, 3)
-let forestDensityNoise = TFC.misc.newOpenSimplex2D(98713856895664)
+let marsForestDensityNoise = TFC.misc.newOpenSimplex2D(98713856895664)
 	.octaves(4)
 	.spread(0.0025)
 	.scaled(-0.2, 1.2)
+	.clamped(0, 1)
+let venusForestDensityNoise = TFC.misc.newOpenSimplex2D(98713856895664)
+	.octaves(4)
+	.spread(0.0025)
+	.scaled(-0.5, 1.3)
 	.clamped(0, 1)
 let forestWeirdnessNoise = TFC.misc.newOpenSimplex2D(3210378120)
 	.octaves(4)
@@ -147,7 +152,7 @@ TFCEvents.createChunkDataProvider('mars', event => {
 			temp,
 			floatToForestType(forestLayerNoise.noise(x, z)),
 			forestWeirdnessNoise.noise(x, z), // forest weirdness
-			forestDensityNoise.noise(x, z) // forest density
+			marsForestDensityNoise.noise(x, z) // forest density
 		);
 	});
 
@@ -201,7 +206,7 @@ TFCEvents.createChunkDataProvider('venus', event => {
 			temp,
 			floatToForestType(forestLayerNoise.noise(x, z)),
 			forestWeirdnessNoise.noise(x, z), // forest weirdness
-			forestDensityNoise.noise(x, z) // forest density
+			venusForestDensityNoise.noise(x, z) // forest density
 		);
 	})
 
@@ -253,7 +258,7 @@ TFCEvents.createChunkDataProvider('glacio', event => {
 			temp,
 			floatToForestType(forestLayerNoise.noise(x, z)),
 			forestWeirdnessNoise.noise(x, z), // forest weirdness
-			forestDensityNoise.noise(x, z) // forest density
+			marsForestDensityNoise.noise(x, z) // forest density
 		);
 	});
 

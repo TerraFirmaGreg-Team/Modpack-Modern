@@ -99,7 +99,6 @@ function registerTFGVenusBlockTags(event) {
 	event.add('ad_astra:venus_stone_replaceables', 'minecraft:calcite')
 	event.add('ad_astra:venus_stone_replaceables', 'minecraft:basalt')
 	event.add('ad_astra:venus_stone_replaceables', 'minecraft:smooth_basalt')
-	event.add('ad_astra:venus_stone_replaceables', 'betterend:brimstone')
 	event.add('ad_astra:venus_stone_replaceables', 'betterend:sulphuric_rock')
 	event.add('ad_astra:venus_stone_replaceables', 'betterend:lacugrove_bark')
 	event.add('ad_astra:venus_stone_replaceables', 'betterend:lucernia_bark')

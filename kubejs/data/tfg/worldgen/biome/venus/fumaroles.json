@@ -38,7 +38,9 @@
 	},
 	"features": [
 		[
-			"tfg:venus/terrain/sulfur_fumes_spring"
+			"tfg:venus/terrain/sulfur_fumes_spring",
+			"tfg:venus/surface/glauberite_formation",
+			"tfg:venus/surface/aragonite_formation"
 		],
 		[
 			"tfg:venus_forest"
@@ -184,6 +186,18 @@
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 10
+			},
+			{
+				"type": "minecraft:magma_cube",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 10
+			},
+			{
+				"type": "minecraft:blaze",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 50
 			},
 			{
 				"type": "ad_astra:sulfur_creeper",
