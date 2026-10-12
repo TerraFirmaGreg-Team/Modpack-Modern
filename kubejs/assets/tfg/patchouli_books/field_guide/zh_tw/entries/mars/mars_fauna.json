@@ -16,7 +16,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)野生$()$(li2)$(l:mars/mars_fauna#eater)吞噬獸$()$(li2)$(l:mars/mars_fauna#cruncher)巨嘴獸$()$(li2)$(l:mars/mars_fauna#glider)滑翔鳥$()$(li2)$(l:mars/mars_fauna#crusher)碾壓獸$()$(li2)$(l:mars/mars_fauna#springling)簧頸獸$()$(li2)$(l:mars/mars_fauna#goober)呆呆獸$()$(li2)$(l:mars/mars_fauna#walker)巨步獸$()$(li2)$(l:mars/mars_fauna#raider)掠奪獸$()$(li2)$(l:mars/mars_fauna#toxlacanth)毒腔棘魚$()$(li2)$(l:mars/mars_fauna#stackatick)疊殼蟲$()$(li)$(bold)怪物$()$(li2)$(l:mars/mars_fauna#quake)震盪怪$()$(li2)$(l:mars/mars_fauna#endermen)終界使者$()$(li2)$(l:mars/mars_fauna#skeletal_raptor)骷髏迅猛龍$()"
+			"text": "$(li)$(bold)野生$()$(li2)$(l:mars/mars_fauna#eater)吞噬獸$()$(li2)$(l:mars/mars_fauna#cruncher)巨嘴獸$()$(li2)$(l:mars/mars_fauna#glider)滑翔鳥$()$(li2)$(l:mars/mars_fauna#crusher)碾壓獸$()$(li2)$(l:mars/mars_fauna#springling)簧頸獸$()$(li2)$(l:mars/mars_fauna#goober)呆呆獸$()$(li2)$(l:mars/mars_fauna#walker)巨步獸$()$(li2)$(l:mars/mars_fauna#raider)掠奪獸$()$(li2)$(l:mars/mars_fauna#toxlacanth)毒棘魚$()$(li2)$(l:mars/mars_fauna#stackatick)疊疊蝨$()$(li)$(bold)怪物$()$(li2)$(l:mars/mars_fauna#quake)震地者$()$(li2)$(l:mars/mars_fauna#endermen)終界使者$()$(li2)$(l:mars/mars_fauna#skeletal_raptor)骷髏迅猛龍$()"
 		},
 		{
 			"type": "patchouli:image",
@@ -209,25 +209,25 @@
 			"type": "patchouli:entity",
 			"entity": "wan_ancient_beasts:toxlacanth{NoAI:1b}",
 			"scale": 0.35,
-			"name": "毒腔棘魚",
+			"name": "毒棘魚",
 			"anchor": "toxlacanth",
-			"text": "$(thing)毒腔棘魚$()是水生的獵物動物。建議從遠處擊殺，並在食用前將肉煮熟。"
+			"text": "$(thing)毒棘魚$()是水生的獵物動物。建議從遠處擊殺，並在食用前將肉煮熟。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "species:stackatick{NoAI:1b}",
 			"scale": 0.4,
-			"name": "疊殼蟲",
+			"name": "疊疊蝨",
 			"anchor": "stackatick",
-			"text": "$(thing)疊殼蟲$()是少數能在火星沙漠中生存的動物之一，是被動的獵物動物。牠們也可以被吃掉。"
+			"text": "$(thing)疊疊蝨$()是少數能在火星沙漠中生存的動物之一，是被動的獵物動物。牠們也可以被吃掉。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "species:quake{NoAI:1b}",
 			"scale": 0.8,
-			"name": "震盪怪",
+			"name": "震地者",
 			"anchor": "quake",
-			"text": "$(thing)震盪怪$()能吸收大量傷害，然後一口氣爆發釋放出來。等牠們在充能時再攻擊！"
+			"text": "$(thing)震地者$()能吸收大量傷害，然後一口氣爆發釋放出來。等牠們在充能時再攻擊！"
 		},
 		{
 			"type": "patchouli:entity",

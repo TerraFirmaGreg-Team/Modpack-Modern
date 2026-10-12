@@ -21,7 +21,7 @@
             "title": "堆肥",
             "item": "tfc:compost",
             "link_recipes": false,
-            "text": "堆肥是$(l:agriculture/composting)堆肥桶$()的產物。$(br)$(li)$(b)氮：40$()$(li)$(6)磷：20$()$(li)$(d)鉀：40$()"
+            "text": "堆肥是$(l:agriculture/composting)堆肥箱$()的產物。$(br)$(li)$(b)氮：40$()$(li)$(6)磷：20$()$(li)$(d)鉀：40$()"
         },
         {
             "type": "patchouli:spotlight",

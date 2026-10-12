@@ -325,7 +325,7 @@
 	"config.ad_astra.ironTierMaxEnergyInOut": "Maksymalne I/O energii na poziomie żelaza",
 	"config.ad_astra.launchFromAnywhere": "Wystrzel skądkolwiek",
 	"config.ad_astra.machines": "Maszyny",
-	"config.ad_astra.maxDistributionBlocks": "Maksymalna liczba bloków dystrybucji",
+	"config.ad_astra.maxDistributionBlocks": "Maks. liczba bloków dystrybucji",
 	"config.ad_astra.ostrumTierEnergyCapacity": "Pojemność energetyczna na poziomie ostru",
 	"config.ad_astra.ostrumTierFluidCapacity": "Maksymalna pojemność cieczy na poziomie ostru",
 	"config.ad_astra.ostrumTierMaxEnergyInOut": "Maksymalne I/O energii na poziomie ostru",
@@ -508,7 +508,7 @@
 	"message.ad_astra.flag.not_owner": "Nie jesteś właścicielem tej flagi!",
 	"message.ad_astra.hold_to_dismount": "Przytrzymaj SHIFT przez %.1f sekund, aby wysiąść",
 	"message.ad_astra.invalid_launching_dimension": "Nie możesz startować z tego wymiaru!",
-	"message.ad_astra.lander.onboard": "Przytrzymaj %1$s aby zastosować Boostery",
+	"message.ad_astra.lander.onboard": "Przytrzymaj %1$s, aby włączyć boostery rakiety.",
 	"message.ad_astra.not_enough_fuel": "Za mało paliwa!",
 	"message.ad_astra.suit_flight_disabled": "Latanie skafandrem wyłączone",
 	"message.ad_astra.suit_flight_enabled": "Latanie skafandrem włączone",
@@ -696,7 +696,7 @@
 	"tooltip.ad_astra.reset_to_default": "Przywróć domyślne",
 	"tooltip.ad_astra.shift_description": "Przytrzymaj SHIFT, aby uzyskać więcej informacji",
 	"tooltip.ad_astra.side_config": "Konfiguracja boków",
-	"tooltip.ad_astra.space_station_land": "Ląduj na stacji kosmicznej w %s na koordynatach [%s, %s]",
+	"tooltip.ad_astra.space_station_land": "Wyląduj na stacji kosmicznej w %s o współrzędnych [%s, %s]",
 	"tooltip.ad_astra.space_station_owner": "Właściciel: %s",
 	"tooltip.ad_astra.ticks_per_iteration": "Zajmuje %s ticków na iterację"
 }

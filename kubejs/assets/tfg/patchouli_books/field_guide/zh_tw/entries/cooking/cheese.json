@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "要製作起司，必須先讓牛奶$(thing)凝結$()。凝結牛奶需要$(thing)凝乳酶$()。凝乳酶來自$(thing)反芻$()動物的胃，包括$(l:the_world/wild_animals#yak)犛牛$()、$(l:the_world/wild_animals#cow)牛$()、$(l:the_world/wild_animals#sheep)羊$()、$(l:the_world/wild_animals#goat)山羊$()和$(l:the_world/wild_animals#musk_ox)麝牛$()。將牛奶和凝乳酶一起密封在$(item)木桶$()中 4 小時即可凝結牛奶。"
+      "text": "要製作起司，必須先讓牛奶$(thing)凝結$()。凝結牛奶需要$(thing)凝乳酶$()。凝乳酶來自$(thing)反芻$()動物的胃，包括$(l:the_world/wild_animals#yak)犛牛$()、$(l:the_world/wild_animals#cow)牛$()、$(l:the_world/wild_animals#sheep)綿羊$()、$(l:the_world/wild_animals#goat)山羊$()和$(l:the_world/wild_animals#musk_ox)麝牛$()。將牛奶和凝乳酶一起密封在$(item)木桶$()中 4 小時即可凝結牛奶。"
     },
     {
       "type": "patchouli:spotlight",

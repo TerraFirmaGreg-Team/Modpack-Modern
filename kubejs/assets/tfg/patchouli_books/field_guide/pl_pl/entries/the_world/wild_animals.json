@@ -304,7 +304,7 @@
             "scale": 0.6,
             "name": "Tygrys szablozębny",
             "anchor": "sabertooth",
-            "text": "The sabertooth spawns at any $(l:the_world/climate#temperature)temperature$() above 0°C, and any $(l:the_world/climate#rainfall)rainfall$() above 250mm."
+            "text": "Tygrys szablozębny pojawia się w lasach przy dowolnej $(l:the_world/climate#temperature)temperaturze$() powyżej 0°C oraz $(l:the_world/climate#rainfall)opadach$() powyżej 250 mm."
         },
         {
             "type": "patchouli:entity",
@@ -345,7 +345,7 @@
         {
             "type": "patchouli:text",
             "anchor": "ramming_prey",
-            "text": "$(thing)Ramming$() animals occasionally attempt to charge nearby creatures, including the player. Their attacks are powerful, but can be dodged. They will ram more frequently if attacked.",
+            "text": "$(thing)Taranujące$() zwierzęta czasami próbują zaszarżować na pobliskie stworzenia, w tym gracza. Ich ataki są potężne, ale można ich uniknąć. Gdy zostaną zaatakowane, szarżują częściej.",
             "title": "Taranowanie"
         },
         {
@@ -354,7 +354,7 @@
             "anchor": "boar",
             "scale": 0.7,
             "name": "Dzik",
-            "text": "Dzik pojawia się tam, gdzie $(l:the_world/climate#temperature)temperatura$() jest wyższa niż -5°C i niższa niż 25°C, a $(l:the_world/climate#rainfall)ilość opadów$() wynosi od 130 do 400 mm."
+            "text": "Dzik pojawia się przy $(l:the_world/climate#temperature)temperaturze$() wyższej niż -5°C i niższej niż 25°C i $(l:the_world/climate#rainfall)opadach$() pomiędzy 130 a 400 mm."
         },
         {
             "type": "patchouli:entity",
@@ -383,8 +383,8 @@
         {
             "type": "patchouli:text",
             "anchor": "prey",
-            "text": "$(thing)Prey$() animals fear players and predators. They are adept at fleeing from danger, but generally cannot fight back. Some prey animals enjoy snacking on crops.",
-            "title": "Zwierzyna"
+            "text": "Zwierzęta $(thing)łowne$() boją się graczy i drapieżników. Zwykle uciekają przed niebezpieczeństwem, i nie są w stanie ci oddać. Niektóre zwierzęta będą zjadać twoje plony.",
+            "title": "Zwierzyna łowna"
         },
         {
             "type": "patchouli:entity",
@@ -415,14 +415,14 @@
             "scale": 0.6,
             "name": "Renifer",
             "anchor": "caribou",
-            "text": "The caribou spawns at any $(l:the_world/climate#temperature)temperature$() below -9°C, and $(l:the_world/climate#rainfall)rainfall$() between 110 and 500mm."
+            "text": "Renifer pojawia się przy dowolnej $(l:the_world/climate#temperature)temperaturze$() poniżej -9°C oraz $(l:the_world/climate#rainfall)opadach$() między 110 a 500 mm."
         },
         {
             "type": "patchouli:entity",
             "entity": "tfc:gazelle",
             "scale": 0.7,
             "anchor": "gazelle",
-            "text": "The gazelle spawns in open plains at any $(l:the_world/climate#temperature)temperature$() above 12°C, and $(l:the_world/climate#rainfall)rainfall$() between 90 and 380mm."
+            "text": "Gazela pojawia się na równinach przy dowolnej $(l:the_world/climate#temperature)temperaturze$() powyżej 12°C oraz $(l:the_world/climate#rainfall)opadach$() między 90 a 380 mm."
         },
         {
             "type": "patchouli:entity",
@@ -484,7 +484,7 @@
             "scale": 0.8,
             "name": "Mangusta",
             "anchor": "mongoose",
-            "text": "The mongoose spawns at any $(l:the_world/climate#temperature)temperature$() above 12°C, and $(l:the_world/climate#rainfall)rainfall$() between 160 and 500mm."
+            "text": "Mangusta pojawia się przy dowolnej $(l:the_world/climate#temperature)temperaturze$() powyżej 12°C oraz $(l:the_world/climate#rainfall)opadach$() między 160 a 500 mm."
         },
         {
             "type": "patchouli:text",
@@ -586,7 +586,7 @@
             "scale": 0.7,
             "name": "Homar",
             "anchor": "lobster",
-            "text": "Homary występują w oceanach o $(l:the_world/climate#temperature)temperaturze$() nieprzekraczającej 21°C."
+            "text": "Homary występują w oceanach o $(l:the_world/climate#temperature)temperaturze$() co najwyżej 21°C."
         },
         {
             "type": "patchouli:entity",
@@ -616,7 +616,7 @@
             "scale": 0.25,
             "name": "Orka",
             "anchor": "orca",
-            "text": "Orca whales live in deep oceans with $(l:the_world/climate#temperature)temperature$() of at most 19°C and $(l:the_world/climate#rainfall)rainfall$() of at least 100mm."
+            "text": "Orki żyją w głębokich oceanach, o $(l:the_world/climate#temperature)temperaturze$() co najwyżej 19°C i $(l:the_world/climate#rainfall)opadach$() co najmniej 100 mm."
         },
         {
             "type": "patchouli:entity",

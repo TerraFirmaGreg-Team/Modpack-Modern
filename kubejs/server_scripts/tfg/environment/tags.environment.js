@@ -17,16 +17,6 @@ const registerTFGEnvironmentBlockTags = (event) => {
         'createaddition:modular_accumulator',
 
         '#mcw_tfc_aio:attic_roofs', // Their collision box is kinda dumb
-
-        // Source blocks. Also flowing water because tags can't distinguish
-        'minecraft:water',
-        'minecraft:lava',
-        'tfc:fluid/river_water',
-        'tfc:fluid/salt_water',
-        'tfc:fluid/spring_water',
-        'tfg:fluid/semiheavy_ammoniacal_water',
-        'tfg:fluid/sulfur_fumes',
-        'tfg:fluid/geyser_slurry',
     ]);
 
     // --------- Passable to atmosphere flood fill ---------
@@ -60,7 +50,6 @@ const registerTFGEnvironmentBlockTags = (event) => {
         'minecraft:iron_bars',
         '#forge:frames',
         'create:sail_frame',
-        'framedblocks:framed_cube',
         'framedblocks:framed_bars',
         'framedblocks:framed_fence_gate',
         'framedblocks:framed_pane',
@@ -140,6 +129,13 @@ const registerTFGEnvironmentBlockTags = (event) => {
         'greate:naquadah_alloy_crushing_wheel_controller',
         'greate:darmstadtium_crushing_wheel_controller',
         'greate:neutronium_crushing_wheel_controller',
+    ]);
+
+    // --------- Passable to atmosphere AND heat flood fill ---------
+    event.add('tfg:atmosphere_heat_passable', [
+        'ad_astra:vent',
+        'gtceu:filter_casing',
+        'gtceu:sterilizing_filter_casing',
     ]);
 
     // --------- getCollisionShape gives wrong result, use getShape instead ---------

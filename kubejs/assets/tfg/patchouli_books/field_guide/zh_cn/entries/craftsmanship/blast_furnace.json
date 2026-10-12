@@ -1,23 +1,23 @@
 {
-    "name": "Blast Furnace",
+    "name": "高炉",
     "category": "tfg:craftsmanship",
     "icon": "tfc:blast_furnace",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "A $(thing)Blast Furnace$() is an advanced device which is used in the creation of $(thing)Steel$(). By mixing $(l:craftsmanship/metallurgy)Iron Ores$(), $(l:craftsmanship/charcoal_pit#coke_oven)Coke$() or $(thing)Anthracite$(), and $(item)Flux$() in a controlled, hot environment, you can create a stronger metal than cast or wrought iron.$(br2)To obtain a blast furnace, you will first need a $(l:craftsmanship/crucible)Crucible$() and a lot of $(l:craftsmanship/bloomery)Wrought Iron Plates$()."
+            "text": "$(thing)高炉$()是一种用于制造 $(thing)钢$()的高级设备。把 $(l:craftsmanship/metallurgy)铁矿石$()、$(l:craftsmanship/charcoal_pit#coke_oven)焦煤$()或 $(thing)无烟煤$()，以及 $(item)助焊剂$()放到可控的高温环境中混合，你就能得到比铸铁或锻铁更强的金属。$(br2)要搭建高炉，你首先需要一个 $(l:craftsmanship/crucible)坩埚$()和大量 $(l:craftsmanship/bloomery)锻铁薄板$()。"
         },
         {
             "type": "patchouli:text",
-            "text": "Crafting a blast furnace itself requires a $(thing)Crucible$(), along with some of the $(thing)Double Wrought Iron Plates$() you will need.$(br)You will then need to construct the blast furnace, along with its $(thing)Chimney$(). The chimney must be composed out of $(l:craftsmanship/pottery#fire_clay)Fire Bricks$(), as they are strong enough to withstand the intense heat."
+            "text": "合成高炉方块本身需要一个 $(thing)坩埚$()，以及一些你稍后要用到的 $(thing)锻铁双层薄板$()。$(br)接下来你需要搭建高炉本体和它的 $(thing)烟囱$()。烟囱必须用 $(l:craftsmanship/pottery#fire_clay)耐火砖$()砌成，因为只有它们才足够坚固，能承受剧烈的高热。"
         },
         {
             "type": "patchouli:text",
-            "text": "The fire brick blocks, must be surrounded by either $(item)$(italic)cast iron or wrought iron plates$(). The plates can be applied to each exposed face of the bricks by $(item)$(k:key.sneak)-$(k:key.use)$() with the plate in hand$(br2)$(item)Blast Furnace Insulation$() may be applied instead of physical plates for a more compact structure."
+            "text": "耐火砖方块必须被 $(item)$(italic)铸铁薄板或锻铁薄板$()包围。手持薄板对砖块的每个暴露面 $(item)$(k:key.sneak)-$(k:key.use)$()即可把薄板贴上去$(br2)也可以改用 $(item)高炉隔热层$()代替实体薄板，让结构更紧凑。"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Blast furnace structure from sizes 1-5 using $(item)Insulated Fire Bricks$()",
+            "text": "使用 $(item)隔热耐火砖$()的 1-5 号高炉结构",
             "multiblocks": [
                 {
                     "pattern": [
@@ -213,15 +213,15 @@
         },
         {
             "type": "patchouli:text",
-            "text": "The blast furnace's chimney can be up to $(italic)five layers$(). Each layer requiring $(thing)4 $(item)Fire Bricks and $(thing)12 $(item)Wrought/Cast Iron Plates$() to complete. Having more layers increases the total capacity of the blast furnace by 4 steel per-layer.$(br)In order to use the blast furnace, you must drop items in the top of the chimney. For steel production, you must add an equal number of items of $(l:craftsmanship/metallurgy)Iron Ores$() and $(item)Flux$()."
+            "text": "高炉的烟囱最多可以有 $(italic)五层$()。每层需要 $(thing)4 个 $(item)耐火砖和 $(thing)12 块 $(item)锻铁/铸铁薄板$()才能建成。每多一层，高炉的总容量就会增加 4 个钢锭。$(br)要使用高炉，你必须把物品从烟囱顶部丢进去。要炼钢，$(l:craftsmanship/metallurgy)铁矿石$()和 $(item)助焊剂$()的数量必须相等。"
         },
         {
             "type": "patchouli:text",
-            "text": "For every 144mB of iron added, 1 flux must pair with it. Any iron ores or items that are able to melt into $(thing)Cast Iron$() will do. You will also need to add $(l:craftsmanship/charcoal_pit#coke_oven)Coke$() or $(thing)Anthracite$(), which will be consumed as the blast furnace works.$(br2)As a basic guide, you will need $(t:144 x 4)$(6)576mB$() of iron and 4 flux per layer, and about 4-8 coke. Fuel usage does not increase with layers."
+            "text": "每加入 144mB 铁，就要搭配 1 个助焊剂。任何能熔成 $(thing)铸铁$()的铁矿石或物品都可以。你还需要加入 $(l:craftsmanship/charcoal_pit#coke_oven)焦煤$()或 $(thing)无烟煤$()，它们会在高炉工作时被消耗。$(br2)作为粗略参考，每层需要 $(t:144 x 4)$(6)576mB$()铁和 4 个助焊剂，以及大约 4-8 个焦煤。燃料消耗不会随层数增加。"
         },
         {
             "type": "patchouli:text",
-            "text": "$(item)$(k:key.use)$() the blast furnace to open the blast furnace interface, seen in the next image. In this interface, you will see meters for both ore and fuel contents of the blast furnace. The top right slot must have a $(thing)Tuyere$(), which is a metal pipe used to funnel air into the blast furnace, required to reach the hottest temperatures to smelt steel. A tuyere can be smithed on an $(l:craftsmanship/anvils)Anvil$()."
+            "text": "$(item)$(k:key.use)$()高炉即可打开高炉界面，见下一张图。在这个界面里，你可以看到高炉中矿石和燃料存量的计量条。右上角的槽位必须放一个 $(thing)鼓风口$()——它是一根用来把空气导入高炉的金属管，是达到熔炼钢铁所需最高温度的必备品。鼓风口可以在 $(l:craftsmanship/anvils)砧$()上锻造。"
         },
         {
             "type": "patchouli:image",
@@ -233,12 +233,12 @@
         },
         {
             "type": "patchouli:text",
-            "text": "You will also need a $(l:craftsmanship/charcoal_forge#bellows)Bellows$() in order for the Blast Furnace to reach a temperature which will melt iron (unless using anthracite as fuel). This can be placed on any of the four sides of the blast furnace.$(br)Using the bellows will degrade the durability of your Tuyere, so it is recommended to only activate it every minute or so."
+            "text": "你还需要一个 $(l:craftsmanship/charcoal_forge#bellows)风箱$()，高炉才能达到熔化铁的温度（除非用无烟煤作燃料）。它可以放在高炉四个侧面中的任意一面。$(br)使用风箱会损耗鼓风口的耐久，因此建议大约每隔一分钟才启动一次。"
         },
         {
             "type": "patchouli:multiblock",
             "enable_visualize": true,
-            "text": "A full size blast furnace with bellows and a mold table.",
+            "text": "带有风箱和铸模台的满尺寸高炉。",
             "multiblock": {
                 "pattern": [
                     [
@@ -287,43 +287,43 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Finally, to get started, light the blast furnace with a $(l:craftsmanship/firepit#firestarter)Fire Starter$() or a $(item)Flint and Steel$(). It will begin to heat the ores inside. Make sure that the blast furnace continues to have fuel, and use the bellows to add air to the blast furnace until its internal temperature has reached the melting point for steel. After the ores inside heat up, they will melt and convert into liquid $(item)Pig Iron$()."
+            "text": "最后，用 $(l:craftsmanship/firepit#firestarter)起火器$()或 $(item)打火石$()点燃高炉即可开工。它会开始加热内部的矿石。确保高炉持续有燃料，并使用风箱向高炉鼓入空气，直到内部温度达到钢的熔点。里面的矿石受热后会熔化，变成液态 $(item)生铁$()。"
         },
         {
             "type": "patchouli:text",
-            "text": "This liquid metal will drip into any metal fluid container placed immediately below the blast furnace, such as a $(item)Drum$(), $(l:craftsmanship/crucible)Crucible$() or $(l:craftsmanship/crucible#channel_casting)Mold Table$(). Once cooled, the pig iron ingots must be worked on an anvil or $(l:craftsmanship/anvils#helve_hammer)Helve Hammer$() into $(item)High Carbon Steel$() and then again into $(item)Steel$()."
+            "text": "这些液态金属会滴入放在高炉正下方的任何金属流体容器，例如 $(item)桶$()、$(l:craftsmanship/crucible)坩埚$()或 $(l:craftsmanship/crucible#channel_casting)铸模台$()。冷却之后，生铁锭必须在砧或 $(l:craftsmanship/anvils#helve_hammer)杠杆锤$()上锻打成 $(item)高碳钢$()，再进一步锻成 $(item)钢$()。"
         },
         {
             "type": "patchouli:text",
             "anchor": "tips",
             "title": "高炉使用技巧",
-            "text": "Before you use all your fire clay on 20 fire bricks, note that once you get into the steam age, you can craft it for significantly cheaper. A full-size blast furnace is not required to get started. In fact, a 4-layer tall blast furnace uses better ratios of materials, as it uses 16 flux and 16 iron per run."
+            "text": "在你把所有耐火黏土都拿去做 20 个耐火砖之前，请注意：进入蒸汽时代后，你可以用便宜得多的方式合成它。入门并不需要满尺寸的高炉。事实上，4 层高的高炉材料配比更划算，因为每轮只消耗 16 个助焊剂和 16 份铁。"
         },
         {
             "type": "patchouli:spotlight",
             "title": "预热金属",
             "anchor": "preheating",
             "item": "tfc:firepit",
-            "text": "To convert the iron to steel, the blast furnace must heat the iron inside to $(d)$(bold)Brilliant White$(). On the first operation, the metal warms up along with the blast furnace. However, subsequent operations will take a similar amount of time despite the furnace being at temp already, as it needs to heat the metal from cold."
+            "text": "要把铁变成钢，高炉必须把内部的铁加热到 $(d)$(bold)炽白$()。第一次运行时，金属会和高炉一起升温。但之后的每次运行耗时也差不多，即使炉子已经处于高温，因为它需要把冷的金属重新加热。"
         },
         {
             "type": "patchouli:text",
-            "text": "If the metal is hot when added into the blast furnace, it will take less time to reach brilliant white. Consider heating your metal in a $(l:craftsmanship/charcoal_forge)Charcoal Forge$() before putting it into an already-hot furnace to save time, especially with smaller blast furnaces that process less at a time."
+            "text": "如果金属放入高炉时已经是热的，达到炽白所需的时间就会更短。为了省时间，可以考虑先把金属放进 $(l:craftsmanship/charcoal_forge)木炭炉$()里加热，再放入已经烧热的高炉，尤其是那些每次处理量较小的高炉。"
         },
         {
             "type": "patchouli:spotlight",
             "title": "自动化生产",
             "item": "greate:steel_mechanical_pump",
-            "text": "You'll need lots of $(item)Steel$() for the $(thing)Steam$() and $(thing)LV$() ages. Lots of steel. The $(thing)Electric Blast Furnace$() is far off, so maybe think about optimizing your steel production.$(br2)You can automate the $(l:craftsmanship/charcoal_forge#bellows)Bellows$() by supplying mechanical power to their back. Just be careful, as using the bellows consumes more fuel and breaks your $(thing)tuyere$() faster."
+            "text": "$(item)钢$()在 $(thing)蒸汽$()时代和 $(thing)LV$()时代需求巨大。真的非常多。$(thing)电高炉$()还遥遥无期，所以或许该考虑优化一下你的钢铁生产。$(br2)给 $(l:craftsmanship/charcoal_forge#bellows)风箱$()背面提供机械动力就能让它自动工作。不过要小心，使用风箱会消耗更多燃料，还会更快磨坏你的 $(thing)鼓风口$()。"
         },
         {
             "type": "patchouli:text",
-            "text": "You can automatically replace broken tuyeres with a hopper or item pipe facing into the blast furnace.$(br2)You can pump liquid incredibly quickly out of the blast furnace using a Create $(item)Mechanical Pump$(). Pump into a $(l:craftsmanship/crucible#channel_casting)Mold Table$() and extract the ingots with a hopper or chute: Easy automation!$(br2)You can process the resulting $(item)Pig Iron$() and $(item)High Carbon Steel$() in a $(thing)Forge Hammer$() or $(l:craftsmanship/anvils#helve_hammer)Helve Hammer$()."
+            "text": "用漏斗或物品管道对准高炉，就能自动替换损坏的鼓风口。$(br2)用 Create 的 $(item)动力泵$()可以极快地把液体从高炉里抽出。把它泵入 $(l:craftsmanship/crucible#channel_casting)铸模台$()，再用漏斗或溜槽取出锭子：轻松实现自动化！$(br2)得到的 $(item)生铁$()和 $(item)高碳钢$()可以放进 $(thing)锻造锤$()或 $(l:craftsmanship/anvils#helve_hammer)杠杆锤$()中加工。"
         },
         {
             "type": "patchouli:multiblock",
             "enable_visualize": true,
-            "text": "For a very cheap and fast setup; place a drum below the blast furnace with it auto-outputting into a mold table below it.",
+            "text": "一个非常便宜快捷的方案：在高炉下方放一个桶，让它自动输出到下方的铸模台。",
             "multiblock": {
                 "pattern": [
                     [
@@ -373,7 +373,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pottery",

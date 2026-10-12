@@ -1,5 +1,5 @@
 {
-    "name": "Mining & Collapses",
+    "name": "采矿与塌方",
     "icon": "tfc:textures/item/metal/pickaxe/wrought_iron.png",
     "category": "tfg:game_mechanics",
     "priority": true,
@@ -9,26 +9,26 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:game_mechanics/mining#tools)Tools$()$(li)$(bold)$(l:game_mechanics/mining#collapses)Collapses$()$(li2)$(l:game_mechanics/mining#gravity)Gravity$()$(li)$(bold)$(l:game_mechanics/mining#supports)Support Beams$()$(li2)$(l:game_mechanics/mining#higher_tiers)Higher Tier Supports$()$(li)$(bold)$(l:game_mechanics/mining#explosives)Explosives$()$(li)$(bold)$(l:game_mechanics/mining#processing)Ore Processing$()"
+            "text": "$(li)$(bold)$(l:game_mechanics/mining#tools)工具$()$(li)$(bold)$(l:game_mechanics/mining#collapses)塌方$()$(li2)$(l:game_mechanics/mining#gravity)重力$()$(li)$(bold)$(l:game_mechanics/mining#supports)支撑梁$()$(li2)$(l:game_mechanics/mining#higher_tiers)更高级的支撑梁$()$(li)$(bold)$(l:game_mechanics/mining#explosives)炸药$()$(li)$(bold)$(l:game_mechanics/mining#processing)矿石处理$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introduction",
-            "text": "Once you have $(l:craftsmanship/metallurgy)located$() an ore vein you can begin excavating it for resources. However, there are some differences from base Mincraft to be aware of when mining. Such as $(l:game_mechanics/mining#collapses)Collapses$(), $(l:game_mechanics/mining#supports)Supports$(), $(l:game_mechanics/hazards)Hazardous Materials$(), and $(l:game_mechanics/mining#processing)Processing$()."
+            "title": "简介",
+            "text": "当你$(l:craftsmanship/metallurgy)找到$()矿脉后，就可以开始开采资源了。不过，采矿时有几处与原版 Minecraft 不同的地方需要留意，例如$(l:game_mechanics/mining#collapses)塌方$()、$(l:game_mechanics/mining#supports)支撑$()、$(l:game_mechanics/hazards)危险材料$()以及$(l:game_mechanics/mining#processing)处理$()。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "tools",
-            "title": "Tools",
+            "title": "工具",
             "item": "tag:tfc:pickaxes,tag:forge:tools/mining_hammers",
-            "text": "Before starting, you should prepare the right equipment for the job. You will need a $(thing)pickaxe$() or $(thing)mining hammer$() to mine ores. A mining hammer has an advantage of breaking a 3x3 area of blocks at once.$(br2)A regular $(thing)hammer$() can also break stone type blocks, but will not drop ores. It can still be useful for $(l:craftsmanship/anvils#raw_rock)extracting$() raw stone, however."
+            "text": "开始之前，你应该为工作准备好合适的装备。你需要一把$(thing)镐$()或$(thing)采矿锤$()来开采矿石。采矿锤的优势在于可以一次破碎 3x3 范围的方块。$(br2)普通$(thing)锤子$()也能破坏石头类方块，但不会掉落矿石。不过它仍然可以用来$(l:craftsmanship/anvils#raw_rock)开采$()原石。"
         },
         {
             "type": "patchouli:text",
             "anchor": "collapses",
-            "text": "In $(tfg), raw rock is unstable and susceptible to $(thing)Collapsing$(). Many rock blocks, including $(thing)Raw Rock$(), $(thing)Ores$(), and $(thing)Spikes$() can all rain down on your head under the right circumstances.$(br2)$(thing)Support Beams$() can be used to prevent collapses from occurring.$(br)When $(thing)Ore$() blocks collapse, they will degrade into cobblestone.",
-            "title": "Collapses"
+            "text": "在$(tfg)中，天然岩石并不稳定，容易发生$(thing)塌方$()。包括$(thing)天然岩石$()、$(thing)矿石$()和$(thing)石锥$()在内的许多岩石方块，在特定情况下都可能砸落到你的头上。$(br2)$(thing)支撑梁$()可以用来防止塌方发生。$(br)$(thing)矿石$()方块塌方后会退化为圆石。",
+            "title": "塌方"
         },
         {
             "type": "patchouli:text",
@@ -37,19 +37,19 @@
         {
             "type": "patchouli:text",
             "anchor": "gravity",
-            "title": "Gravity",
-            "text": "Dirt, grass, clay, gravel, cobblestone, and sand are also affected by gravity. However, unlike vanilla gravity blocks, these blocks fall down slopes, and cannot be stacked more than one high without supporting blocks around. $(l:craftsmanship/panning)Ore Deposits$() also landslide, but do not degrade in quality."
+            "title": "重力",
+            "text": "泥土、草方块、黏土、砂砾、圆石和沙子也受重力影响。但与原版的重力方块不同，这些方块会沿斜坡滚落，而且周围没有支撑方块时无法堆叠超过一层。$(l:craftsmanship/panning)矿石沉积物$()也会滑落，但品质不会退化。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tag:tfc:support_beams",
             "anchor": "supports",
-            "title": "Support Beams",
-            "text": "$(thing)Support Beams$() can be crafted from logs or stone.$(br2)Placing a $(thing)Support Beam$() on top of a block places a column up to three tall. These must have a solid block beneath them to stay upright.$(br)$(thing)Horizontal$() beams can be placed between to connect two $(thing)Vertical$() beams that are within five blocks, as in the above diagram."
+            "title": "支撑梁",
+            "text": "$(thing)支撑梁$()可以用原木或石头制作。$(br2)把$(thing)支撑梁$()放在方块顶上会立起一根最多三格高的柱子，其下方必须有固体方块才能保持直立。$(br)可以在间距五格以内的两根$(thing)竖直$()支撑梁之间放置$(thing)水平$()支撑梁将它们连接起来，如上图所示。"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "$(bold)TIP$(): You can use wooden vertical support beams with higher quality horizontal support beams like concrete.",
+            "text": "$(bold)提示$()：木质竖直支撑梁可以搭配混凝土等更高品质的水平支撑梁一起使用。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -245,11 +245,11 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Only $(thing)$(bold)Horizontal Support Beams$() cause nearby blocks to be $(thing)Supported$(). Any block within a $(bold)9 x 5 x 9$() area centered on a horizontal support beam is considered $(thing)Supported$().$(br2)In addition to being supported by support beams, rock can be supported simply by the virtue of having a solid block below it, such as more rock. However, it is important to note that $(thing)Non-Solid Blocks$() such as $(thing)Stairs$() and $(thing)Slabs$(), along with $(thing)Smooth Stone$(), do $(bold)not$() count as supporting."
+            "text": "只有$(thing)$(bold)水平支撑梁$()能让附近的方块$(thing)受到支撑$()。以水平支撑梁为中心的$(bold)9 x 5 x 9$()范围内的所有方块都被视为$(thing)受支撑$()。$(br2)除了靠支撑梁支撑外，岩石只要下方有固体方块（例如更多岩石）也算受到支撑。但要注意，$(thing)楼梯$()和$(thing)台阶$()等$(thing)非固体方块$()以及$(thing)平滑石头$()$(bold)不能$()算作支撑。"
         },
         {
             "type": "patchouli:image",
-            "title": "Support Area",
+            "title": "支撑范围",
             "anchor": "support_3d",
             "width": 1024,
             "texture_width": 1024,
@@ -258,12 +258,12 @@
             "images": [
                 "tfg:textures/gui/field_guide/supports/support_3d.png"
             ],
-            "text": "The protection area of the support is centered on the horizontal support beam. Vertical supports make no impact.",
+            "text": "支撑的保护范围以水平支撑梁为中心。竖直支撑对范围没有影响。",
             "border": false
         },
         {
             "type": "patchouli:image",
-            "title": "Block Range",
+            "title": "方块范围",
             "anchor": "block_range",
             "width": 1024,
             "texture_width": 1024,
@@ -272,12 +272,12 @@
             "images": [
                 "tfg:textures/gui/field_guide/supports/support_2d.png"
             ],
-            "text": "When mined, individual blocks have their own range check for triggering collapses, up to 7x7x7, shown by the red/yellow area centered on the stone.",
+            "text": "挖掘时，每个方块都有自己的塌方触发范围判定，最大可达 7x7x7，即以石头为中心的红/黄色区域所示。",
             "border": true
         },
         {
             "type": "patchouli:image",
-            "title": "Pass Condition",
+            "title": "通过条件",
             "anchor": "pass_condition",
             "width": 1024,
             "texture_width": 1024,
@@ -286,12 +286,12 @@
             "images": [
                 "tfg:textures/gui/field_guide/supports/support_2d_pass.png"
             ],
-            "text": "When mining the highlighted block, no collapse can occur because all free space (yellow area) is protected by the support (green area).",
+            "text": "挖掘高亮方块时不会发生塌方，因为所有空隙（黄色区域）都处于支撑（绿色区域）的保护之下。",
             "border": true
         },
         {
             "type": "patchouli:image",
-            "title": "Fail Condition",
+            "title": "失败条件",
             "anchor": "fail_condition",
             "width": 1024,
             "texture_width": 1024,
@@ -300,45 +300,45 @@
             "images": [
                 "tfg:textures/gui/field_guide/supports/support_2d_fail.png"
             ],
-            "text": "However, when there are unsupported blocks outside the support area, mining the highlighted block may cause a collapse even though it itself is supported.",
+            "text": "然而，当支撑范围之外还有未受支撑的方块时，即使高亮方块本身受支撑，挖掘它也可能引发塌方。",
             "border": true
         },
         {
             "type": "patchouli:text",
-            "text": "In addition to basic $(thing)Wooden and stone Support Beams$(), $(tfg_short) also adds higher tiers of support beams, including $(thing)Concrete Support Beams$(), $(thing)Steel Support Beams$(), and $(thing)Reinforced Concrete Support Beams$(). The highest tier of supports holds an area of $(bold)33 x 13 x 33$() blocks centered on the horizontal support beam!$(br)Support area can be viewed in the support beams tooltip.",
-            "title": "Higher Tiers",
+            "text": "除了基础的$(thing)木质和石质支撑梁$()之外，$(tfg_short)还加入了更高级的支撑梁，包括$(thing)混凝土支撑梁$()、$(thing)钢支撑梁$()和$(thing)钢筋混凝土支撑梁$()。最高级的支撑可以支撑以水平支撑梁为中心的$(bold)33 x 13 x 33$()方块范围！$(br)支撑范围可以在支撑梁的提示框中查看。",
+            "title": "更高级的支撑",
             "anchor": "higher_tiers"
         },
         {
             "type": "patchouli:text",
             "anchor": "support_tips",
-            "text": "Finally, it is important to know that $(l:craftsmanship/chisel)Chiseling$() has the potential to cause collapses, just as easily as mining does, when it is done on any $(thing)Raw Rock$() that has potential to cause a nearby collapse.$(br2)If you are still struggling with collapses, consider watching this $(l:https://youtu.be/1KgwEexxGNI)Guide$().",
-            "title": "Tips"
+            "text": "最后要记住，对任何可能引发附近塌方的$(thing)天然岩石$()进行$(l:craftsmanship/chisel)凿制$()时，与挖掘一样容易引发塌方。$(br2)如果你仍被塌方困扰，不妨看看这条$(l:https://youtu.be/1KgwEexxGNI)指南$()。",
+            "title": "提示"
         },
         {
             "type": "patchouli:spotlight",
             "title": "炸药",
             "anchor": "explosives",
             "item": "tfc:powderkeg,minecraft:tnt,gtceu:powderbarrel,gtceu:dynamite",
-            "text": "There are multiple forms of explosives in $(tfg_short) for various purposes.$(li)$(bold)TNT$(): Medium sized explosive.$(li)$(bold)Dynamite$(): Throwable, low-power explosive.$(li)$(bold)Powderbarrel$(): Large explosive.$(li)$(bold)Powderkeg$(): Extremely powerful explosive at full strength. Scales with the quantity of stored gunpowder."
+            "text": "$(tfg_short)中有多种炸药，用途各异。$(li)$(bold)TNT$()：中型爆炸物。$(li)$(bold)黄色炸药$()：可投掷的低威力爆炸物。$(li)$(bold)火药桶$()：大型爆炸物。$(li)$(bold)火药桶$()：满装时威力极强，威力随所存火药量而变化。"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Basic Ore Processing",
+            "title": "基础矿石处理",
             "anchor": "processing",
             "item": "tag:forge:crushed_ores",
-            "text": "You should always process your ores for better yields. You can start this process very early on.$(br)The first step is to use a $(l:craftsmanship/quern)Quern$() to crush raw ore. This step can be automated in the future with improved machines such as the $(thing)Millstone$(), $(thing)Crushing Wheel$(), $(thing)Macerator$(), and $(thing)Forge Hammer$()."
+            "text": "你应该始终对矿石进行加工以获得更高产量，而且很早就能开始这一流程。$(br)第一步是使用$(l:craftsmanship/quern)手推磨$()来粉碎原矿。这一步今后可以用更先进的机器来自动化，例如$(thing)石磨$()、$(thing)粉碎轮$()、$(thing)研磨机$()和$(thing)锻造锤$()。"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Purifying Dust",
+            "title": "净化粉尘",
             "anchor": "purifying",
             "item": "tag:forge:pure_dusts",
-            "text": "To make your crushed ores melt into even more mB, first place them in a crafting grid along with a $(thing)Hammer$() to produce $(thing)Impure Dust$(). To purify the dust, throw it in water or a barrel filled with water.$(br)This final dust can yield around $(bold)4x$() the quantity of metal when melted compared to raw ore."
+            "text": "要让粉碎后的矿石熔出更多 mB 的金属，先把它和$(thing)锤子$()一起放进合成格，做出$(thing)含杂粉$()。要净化粉尘，把它扔进水中或装满水的大桶里即可。$(br)这种最终粉尘熔化后的金属产量约为原矿的$(bold)4 倍$()。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",

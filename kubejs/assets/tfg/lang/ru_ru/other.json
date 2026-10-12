@@ -155,6 +155,7 @@
     "tfg.machine.budding_charger.max": "Достигнут изысканный цветущий истинный кварц",
     "tfg.machine.budding_charger.progress": "Прогресс зарядки: %s",
     "tfg.machine.budding_charger.tier_too_low": "Тебе нужно запустить более продвинутый рецепт, чтобы продолжить улучшение",
+    "tfg.machine.budding_charger.tier_too_high": "Тебе нужно запустить более низкий рецепт для улучшения",
     "tfg.recipe.budding_charge": "Зарядка за рецепт: %s",
     "tfg.recipe.budding_max_tier_label": "Максимум для тира:",
     "tfg.budding_tier.0": "Блок истинного кварца",

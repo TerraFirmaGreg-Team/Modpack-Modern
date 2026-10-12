@@ -19,7 +19,7 @@
             "type": "patchouli:text",
             "anchor": "firepit",
             "title": "Ognisko",
-            "text": "A $(item)Firepit$() is likely the first cooking method you will have access to. It is capable of cooking only one item at a time and uses logs as fuel."
+            "text": "$(item)Ognisko$() to zapewne pierwszy sposób gotowania, jaki odblokujesz. Ugotuje tylko jeden przedmiot naraz i jako paliwo zużywa kłody."
         },
         {
             "type": "patchouli:multiblock",
@@ -115,7 +115,7 @@
             "item": "tfc:bucket/red_dye",
             "title": "Proste przepisy",
             "link_recipes": false,
-            "text": "Other pot recipes transform the items and fluid in the pot into something else. For example, boiling five $(thing)ash$() in $(thing)water$() makes $(thing)lye$()."
+            "text": "Inne przepisy garnka przekształcają przedmioty i ciecz w garnku w coś innego. Na przykład gotowanie pięciu $(thing)kupek popiołu$() w $(thing)wodzie$() daje $(thing)ług$()."
         },
         {
             "title": "Piece",

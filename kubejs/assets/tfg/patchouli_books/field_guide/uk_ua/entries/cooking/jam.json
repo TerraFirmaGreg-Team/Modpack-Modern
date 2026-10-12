@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:cooking/jam#jarring_station)Станція консервації$()\n$(li)$(bold)$(l:cooking/jam#shelves)Полиці для банок$()\n$(li)$(bold)$(l:cooking/jam#jarbnets)Шафка$()"
+            "text": "$(li)$(bold)$(l:cooking/jam#jarring_station)Станція консервації$()$(li)$(bold)$(l:cooking/jam#shelves)Полиці для банок$()$(li)$(bold)$(l:cooking/jam#jarbnets)Шафка$()"
         },
         {
             "type": "patchouli:spotlight",

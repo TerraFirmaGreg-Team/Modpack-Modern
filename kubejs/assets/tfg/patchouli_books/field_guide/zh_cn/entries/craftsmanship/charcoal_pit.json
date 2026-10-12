@@ -1,5 +1,5 @@
 {
-    "name": "Making Charcoal",
+    "name": "烧制木炭",
     "category": "tfg:craftsmanship",
     "icon": "minecraft:charcoal",
     "pages": [
@@ -29,7 +29,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "The charcoal pit is formed by surrounding log piles with solid, non-flammable blocks. The amount of charcoal produced is proportional to the amount of logs contained inside the log piles. To start the burning process, light one of the log piles, and then cover it. If it worked, you should see $(thing)smoke$() particles rise up from the structure.$(br)You can make a charcoal pit any size and shape so long as its fully insulated.$(br)By default the charcoal pit will take $(t:15 minutes)18 in-game hours.$()"
+            "text": "木炭窑的做法是用坚固且不可燃的方块把原木堆围起来。产出的木炭数量与原木堆里的原木数量成正比。要开始烧制，先点燃其中一个原木堆，再把它盖起来。如果成功了，你应该能看到 $(thing)烟雾$()粒子从结构中升起。$(br)木炭窑可以是任意大小和形状，只要完全封严即可。$(br)默认情况下，木炭窑需要 $(t:15 分钟)18 个游戏小时。$()"
         },
         {
             "type": "patchouli:image",
@@ -44,7 +44,7 @@
                 "tfg:textures/gui/field_guide/charcoal_pit/charcoal_pit_3.png",
                 "tfg:textures/gui/field_guide/charcoal_pit/charcoal_pit_4.png"
             ],
-            "text": "$(bold)Tutorial Slideshow:$() Creating a 2x2x2 charcoal pit.",
+            "text": "$(bold)教程幻灯片：$()搭建一个 2x2x2 的木炭窑。",
             "border": true
         },
         {
@@ -205,13 +205,13 @@
         {
             "type": "patchouli:text",
             "anchor": "charcoal_pile",
-            "text": "After the charcoal pit burns out and stops smoking, you will be left with $(thing)Charcoal piles$(). The charcoal pile contains up to 8 layers of $(thing)Charcoal$(). Dig it with a shovel to obtain the charcoal items. Charcoal piles can be added to or placed with $(item)$(k:key.use)$().$(br2)$(bold)TIP:$() Do not cover your charcoal pit with a dense material like cobblestone, or it may fall and destroy your charcoal when completed."
+            "text": "木炭窑烧完并停止冒烟后，你会得到 $(thing)木炭堆$()。木炭堆最多包含 8 层 $(thing)木炭$()。用锹挖掘即可获得木炭物品。木炭堆可以用 $(item)$(k:key.use)$()来叠加或放置。$(br2)$(bold)提示：$()不要用圆石这类致密材料覆盖木炭窑，否则烧制完成时它可能会塌落，毁掉你的木炭。"
         },
         {
             "type": "patchouli:text",
             "anchor": "coke_oven",
-            "title": "Coke Oven",
-            "text": "The $(thing)Coke Oven$() is a multiblock that can automatically convert logs into charcoal and coal into $(item)Coke$() while producing $(thing)Creosote$(). This structure becomes available when you first produce $(l:craftsmanship/bloomery)Wrought Iron$() and it is recommended to make one as soon as possible. Coke ovens are a massive quality of life upgrade for charcoal production, and both coke and creosote will be necessary for progression."
+            "title": "焦炉",
+            "text": "$(thing)焦炉$()是一个多方块结构，可以自动把原木变成木炭、把煤炭变成 $(item)焦煤$()，同时产出 $(thing)杂酚油$()。当你第一次产出 $(l:craftsmanship/bloomery)锻铁$()时即可建造这个结构，建议尽快做一个。焦炉能大幅改善木炭生产的体验，而且焦煤和杂酚油都是推进进度所必需的。"
         },
         {
             "type": "patchouli:multiblock",
@@ -241,17 +241,17 @@
                     "C": "gtceu:coke_oven[facing=north]"
                 }
             },
-            "text": "An example coke oven with three hatches, suitable for item input, item output, and fluid output.",
+            "text": "一个带三个仓的焦炉示例，分别用于物品输入、物品输出和流体输出。",
             "enable_visualize": true
         },
         {
             "type": "patchouli:text",
-            "title": "Coke Oven Tips",
-            "text": "$(li)Coke ovens can have up to 4 hatches, replacing any coke oven brick.$(li)Coke ovens must be hollow in the center.$(li)The coke oven input hatch may get clogged with the output item. To avoid this, have an item pipe facing the input hatch with its flow direction set. You can use a hopper or chute to push into that pipe.$(li)Crates are able to hold logs, unlike chests.$(li)Save all your creosote!"
+            "title": "焦炉提示",
+            "text": "$(li)焦炉最多可以有 4 个仓，可以替换任意焦炉砖块。$(li)焦炉的中心必须留空。$(li)焦炉的物品输入仓可能会被输出物品堵住。要避免这种情况，用一个物品管道对准输入仓并设置好流向，然后用漏斗或溜槽向该管道输送物品。$(li)和箱子不同，板条箱可以装原木。$(li)把所有的杂酚油都存下来！"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pit_kiln",

@@ -51,31 +51,31 @@
             "type": "patchouli:spotlight",
             "anchor": "large_planter",
             "item": "firmalife:large_planter",
-            "text": "$(thing)Large Planters$() are the simplest kind of planter. They grow a single crop from seed, and are harvested with $(item)$(k:key.use)$() when mature.$(br)Large Planters typically grow $(thing)Large Crops$() and $(thing)Grains$(). However, to grow Grains, you need a $(thing)Copper$() or better Greenhouse."
+            "text": "$(thing)Large Planters$() are the simplest kind of planter. They grow a single crop from seed, and are harvested with $(item)$(k:key.use)$() when mature.$(br)Large Planters typically grow $(thing)Large Crops$() and $(thing)Grains$()."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "quad_planter",
             "item": "firmalife:quad_planter",
-            "text": "$(thing)Quad Planters$() grow four individual crops at once that all draw from the same nutrient pool, and can be harvested individually with $(item)$(k:key.use)$() when mature.$(br)Quad Planters typically grow smaller vegetables such as $(thing)Onions$() and $(thing)Beets$(). These crops can be grown in any greenhouse type."
+            "text": "$(thing)Quad Planters$() grow four individual crops at once that all draw from the same nutrient pool, and can be harvested individually with $(item)$(k:key.use)$() when mature.$(br)Quad Planters typically grow smaller vegetables such as $(thing)Onions$() and $(thing)Beets$()."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "bonsai_planter",
             "item": "firmalife:bonsai_planter",
-            "text": "$(thing)Bonsai Planters$() grow small fruit trees from their saplings.$(br)Bonsai Planters grow $(item)Fruit Tree Types$(), except $(thing)Bananas$(), and $(thing)Palm Fruit Trees$(), which need a $(thing)Hanging Planter$(). They need an $(thing)Iron$() or better greenhouse to grow."
+            "text": "$(thing)Bonsai Planters$() grow small fruit trees from their saplings.$(br)Bonsai Planters grow $(item)Fruit Tree Types$(), except $(thing)Bananas$(), and $(thing)Palm Fruit Trees$(), which need a $(thing)Hanging Planter$()."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "hanging_planter",
             "item": "firmalife:hanging_planter",
-            "text": "$(thing)Hanging Planters$() grow crops upside down.$(br)Hanging Planters grow $(thing)Squash$(), $(thing)Pumpkin$(), $(thing)Melons$(), $(thing)Bananas$(), and $(thing)Palm Fruit Trees$(). Palm Fruit Trees require a $(thing)Copper+$() greenhouse, Squash can be in any tier, and the rest need $(thing)Iron+$(). Hanging planters need to anchor to a solid block above them."
+            "text": "$(thing)Hanging Planters$() grow crops upside down.$(br)Hanging Planters grow $(thing)Squash$(), $(thing)Pumpkin$(), $(thing)Melons$(), $(thing)Bananas$(), and $(thing)Palm Fruit Trees$(). Hanging planters need to anchor to a solid block above them."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "trellis_planter",
             "item": "firmalife:trellis_planter",
-            "text": "$(thing)Trellis Planters$() grow berry bushes.$(br)Trellis Planters have the unique property of $(thing)propagating$() berry bushes. If a trellis planter is placed on top of another with a mature berry bush, it has a chance to grow upwards into the next one. Trellis planters usually require an $(thing)Iron$() or better greenhouse to work."
+            "text": "$(thing)Trellis Planters$() grow berry bushes.$(br)Trellis Planters have the unique property of $(thing)propagating$() berry bushes. If a trellis planter is placed on top of another with a mature berry bush, it has a chance to grow upwards into the next one."
         },
         {
             "type": "patchouli:spotlight",
@@ -95,7 +95,7 @@
             "text": "The $(thing)Sprinkler$() is a device that sprinkles water in a 5x6x5 area centered on the block below or above the sprinkler block. You know it is working when it drips out water particles. Sprinklers must be connected to a system of pipes that feed it water in order to work."
         },
         {
-            "title": "Rurociągi",
+            "title": "Rury",
             "item": "gtceu:copper_tiny_fluid_pipe",
             "type": "patchouli:spotlight",
             "text": "Feeding sprinklers with water can be done by connecting $(thing)Fluid Pipes$() to them and pumping in water with a $(thing)Mechanical Pump$().$(br)You can $(item)$(k:key.use)$() a pipe with a $(t:Such as a Copper Frame)GregTech Frame$() or a Greenhouse Port to pass them through a wall. $(item)$(k:key.use)$() fluid pipes with a wrench to change their direction, and $(item)$(k:key.sneak) + $(k:key.use)$() them with an $(thing)empty offhand$() to make them one-way."

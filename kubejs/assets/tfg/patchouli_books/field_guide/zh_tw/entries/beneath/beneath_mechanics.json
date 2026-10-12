@@ -10,7 +10,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:beneath/beneath_mechanics#temperature)溫度管理$()$(li2)$(l:beneath/beneath_mechanics#ice)冰$()$(li2)$(l:beneath/beneath_mechanics#clothes)衣物$()$(li2)$(l:beneath/beneath_mechanics#other_cooling)其他$()$(li)$(bold)$(l:beneath/beneath_mechanics#hellforge)地獄熔爐$()$(li)$(bold)$(l:beneath/beneath_mechanics#rope_ladder)垂直移動$()$(li2)$(l:beneath/beneath_mechanics#rope_ladder)繩梯$()$(li2)$(l:logistics/exploration_gear#hang_glider)滑翔翼$()$(li2)$(l:logistics/exploration_gear#grappling_hook)抓鉤$()$(li2)$(l:logistics/exploration_gear#harpoon)魚叉與繩捲$()$(li)$(bold)$(l:beneath/beneath_mechanics#piglins)豬布林$()$(li2)$(l:beneath/beneath_mechanics#disguise)偽裝$()$(li2)$(l:beneath/beneath_mechanics#towers)高塔$()$(li2)$(l:beneath/beneath_mechanics#outposts)前哨站$()$(li2)$(l:beneath/beneath_mechanics#bastions)堡壘$()"
+			"text": "$(li)$(bold)$(l:beneath/beneath_mechanics#temperature)溫度管理$()$(li2)$(l:beneath/beneath_mechanics#ice)冰$()$(li2)$(l:beneath/beneath_mechanics#clothes)衣物$()$(li2)$(l:beneath/beneath_mechanics#other_cooling)其他$()$(li)$(bold)$(l:beneath/beneath_mechanics#hellforge)地獄熔爐$()$(li)$(bold)$(l:beneath/beneath_mechanics#rope_ladder)垂直移動$()$(li2)$(l:beneath/beneath_mechanics#rope_ladder)繩梯$()$(li2)$(l:logistics/exploration_gear#hang_glider)懸掛式滑翔傘$()$(li2)$(l:logistics/exploration_gear#grappling_hook)抓鉤$()$(li2)$(l:logistics/exploration_gear#harpoon)魚叉與繩捲$()$(li)$(bold)$(l:beneath/beneath_mechanics#piglins)豬布林$()$(li2)$(l:beneath/beneath_mechanics#disguise)偽裝$()$(li2)$(l:beneath/beneath_mechanics#towers)高塔$()$(li2)$(l:beneath/beneath_mechanics#outposts)前哨站$()$(li2)$(l:beneath/beneath_mechanics#bastions)堡壘$()"
 		},
 		{
 			"type": "patchouli:text",

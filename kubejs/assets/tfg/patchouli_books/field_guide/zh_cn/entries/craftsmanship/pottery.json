@@ -1,17 +1,17 @@
 {
-    "name": "Clay & Pottery",
+    "name": "粘土与陶艺",
     "category": "tfg:craftsmanship",
     "icon": "minecraft:clay_ball",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:craftsmanship/pottery#clay)Clay$()$(li2)$(l:craftsmanship/pottery#vessel)Vessels$()$(li2)$(l:craftsmanship/pottery#jug)Jugs$()$(li2)$(l:craftsmanship/pottery#mold)Molds$()$(li)$(bold)$(l:craftsmanship/pottery#kaolin_clay)Kaolin Clay$()$(li2)$(l:craftsmanship/pottery#kaolinite_powder)Kaolinite Powder$()$(li)$(bold)$(l:craftsmanship/pottery#fire_clay)Fire Clay$()"
+            "text": "$(li)$(bold)$(l:craftsmanship/pottery#clay)粘土$()$(li2)$(l:craftsmanship/pottery#vessel)小缸$()$(li2)$(l:craftsmanship/pottery#jug)陶壶$()$(li2)$(l:craftsmanship/pottery#mold)模具$()$(li)$(bold)$(l:craftsmanship/pottery#kaolin_clay)高岭土$()$(li2)$(l:craftsmanship/pottery#kaolinite_powder)高岭石粉$()$(li)$(bold)$(l:craftsmanship/pottery#fire_clay)耐火黏土$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "clay",
-            "title": "Clay",
+            "title": "粘土",
             "text": "$(thing)粘土$()是一种特别有用的材料，你可以用它制作陶器。一开始你可能难以找到粘土，因为它们总是隐藏在草皮之下。但简而言之，有两种获取它们的手段。首先，粘土会在$(l:the_world/climate#rainfall)年降雨量$()大于 175mm 的区域中成片地大量生成，而且有几种特殊的$(thing)植物$()会生长在粘土之上。"
         },
         {
@@ -48,7 +48,7 @@
                 }
             },
             "name": "粘土指示植物",
-            "text": "Clay, with the plants that may indicate its presence.",
+            "text": "粘土，以及可能指示其存在的植物。",
             "enable_visualize": false
         },
         {
@@ -66,54 +66,54 @@
         {
             "type": "patchouli:text",
             "anchor": "vessel",
-            "text": "The small vessel is one such item. Like all pottery items, it must be $(l:https://en.wikipedia.org/wiki/Pottery)fired$() before it can be used. Firing is a process of $(l:game_mechanics/heating)heating$() the item up to a point where the clay will turn into a hard $(thing)Ceramic$() material, which requires heating to 1400 °C, or $(e)$(bold)$(t:Yellow White)Yellow White$().$(br2)In order to do this in the early game, you will need to use a $(l:craftsmanship/pit_kiln)Pit Kiln$().",
+            "text": "小缸就是这样的物品。和所有陶器一样，它必须先经过$(l:https://en.wikipedia.org/wiki/Pottery)烧制$()才能使用。烧制就是把物品$(l:game_mechanics/heating)加热$()到粘土变成坚硬的$(thing)陶瓷$()材料的过程，需要加热到 1400 °C，即$(e)$(bold)$(t:黄白)黄白$()。$(br2)在游戏前期，你需要使用$(l:craftsmanship/pit_kiln)坑窑$()来完成这一步。",
             "title": "小缸"
         },
         {
             "type": "tfg:knapping_recipe",
             "recipe": "tfc:clay_knapping/vessel",
-            "text": "Small Vessels can store items to save space in your inventory as well as $(l:cooking/decay#vessels)Preserving Food Items$(). Small vessels have a limit of 16 items per-slot and cannot fit items larger than $(l:game_mechanics/size_and_weight)\"small\"$()."
+            "text": "小缸可以存放物品来节省物品栏空间，还能$(l:cooking/decay#vessels)保存食物$()。小缸每个槽位最多容纳 16 个物品，且装不下大于$(l:game_mechanics/size_and_weight)“小型”$()的物品。"
         },
         {
             "type": "patchouli:text",
             "anchor": "jug",
-            "text": "Another useful pottery item is the $(thing)Jug$(). It can be used to pick up and $(thing)drink$() fluids, such as fresh water.$(br2)In order to use it, simply $(item)$(k:key.use)$() the jug on the fluid in the world. Then use the jug in order to drink from it. The jug is a $(l:cooking/drinking_containers)Drinking Container$() that can hold $(thing)100 mB$() of fluid at a time.",
+            "text": "另一种实用的陶器是$(thing)陶壶$()。它可以用来盛取和$(thing)饮用$()液体，例如淡水。$(br2)使用时，只需对着世界中的液体$(item)$(k:key.use)$()陶壶即可装取，再使用陶壶就能饮用。陶壶是一种$(l:cooking/drinking_containers)饮水容器$()，一次可装$(thing)100 mB$()液体。",
             "title": "陶壶"
         },
         {
             "type": "patchouli:text",
             "anchor": "mold",
-            "text": "Clay is also necessary for making $(thing)Molds$(). Molds can have molten metal poured into them, which will eventually solidify into the shape of a mold. The item and potentially the mold can then be retrieved by using $(item)$(k:key.use)$() on the mold or putting it in your crafting grid.$(br2)All molds have a limit of not being able to contain molten metal past the bronze-age, $(thing)except ingot molds$().",
+            "text": "制作$(thing)模具$()也需要用到粘土。熔融金属可以浇入模具，并最终凝固成模具的形状。之后对着模具$(item)$(k:key.use)$()或把它放进合成格，就能取出成品，模具也可能一并返还。$(br2)所有模具都无法盛放青铜时代之后的熔融金属，$(thing)锭模具除外$()。",
             "title": "模具"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Mold Types",
+            "title": "模具类型",
             "item": "tag:tfc:unfired_molds,tag:tfc:fired_molds",
-            "text": "There are many different types of molds. The most useful of which are the $(item)Ingot$() and $(item)Tool Head$() molds.$(br)Ingot molds require $(thing)144mb$() of molten metal to produce one ingot.$(br)Tool head molds replace traditional stone knapping for tools and usually require $(thing)144mB$() of fluid, however some tool types may require less or more."
+            "text": "模具有许多不同的类型，其中最有用的是$(item)锭$()模具和$(item)工具头$()模具。$(br)铸锭模具需要$(thing)144mb$()熔融金属才能产出一根锭。$(br)工具头模具取代了传统的石头塑形制具，通常需要$(thing)144mB$()流体，不过某些工具类型的需求量可能或多或少。"
         },
         {
             "type": "tfg:heat_recipe",
             "recipe": "tfc:heating/ingot_mold",
-            "text": "The mold then needs to be fired―like all clay items―to be usable, such as in a $(l:craftsmanship/pit_kiln)Pit Kiln$().$(br2)Once it is fired, molten metal can be poured in. Once the metal has cooled enough, it can be extracted."
+            "text": "和所有粘土制品一样，模具也需要经过烧制才能使用，例如放进$(l:craftsmanship/pit_kiln)坑窑$()。$(br2)烧制完成后即可浇入熔融金属。等金属冷却得足够了，就能取出成品。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tfc:ceramic/ingot_mold{tank:{\"Amount\":100,\"FluidName\":\"gtceu:copper\"}}",
-            "title": "Casting",
+            "title": "浇铸",
             "link_recipes": false,
-            "text": "You will very likely run into scenarios where you produce tiny amounts of excess melted metal. It is recommended to pour it into an ingot mold and save for the next time you need to cast that metal. Trying to produce perfect 144mB ratios of alloys is not feasible or worth the effort until you reach steam-age processing."
+            "text": "你很可能经常遇到只熔出一点点多余金属的情况。建议把它们浇进锭模具里存起来，留到下次浇铸这种金属时再用。在进入蒸汽时代的加工之前，想精确凑出 144mB 的合金比例既不现实，也不值得费那个劲。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "kaolin_clay",
-            "title": "Kaolin Clay",
+            "title": "高岭土",
             "item": "tfc:kaolin_clay",
-            "text": "Kaolin Clay is required to make $(l:craftsmanship/pottery#fire_clay)Fire Clay$(). It can be found spawning between Y=75-110 in Plateaus, Rolling Hills and Highlands (and in their $(t:Surface rock of Limestone, Dolomite, Chalk, or Marble)Karst$() $(t:Burren, Cenote, Doline, Shilin, or Tower Karst)variants$()), Old Mountains, and Shield Volcanoes at a $(l:the_world/climate#temperature)temperature$() of at least 18°C, with a $(l:the_world/climate#rainfall)rainfall$() of at least 300mm. The $(thing)Blood Lily$() flower grows on Kaolin clay, which can be up to 35 blocks below."
+            "text": "制作$(l:craftsmanship/pottery#fire_clay)耐火黏土$()需要用到高岭土。高岭土生成于 Y=75-110 之间的高原、山峦和高地（以及它们的$(t:地表岩石为石灰岩、白云岩、白垩或大理石)喀斯特$()$(t:巴伦、溶蚀井、落水洞、石林或塔状喀斯特)变种$()）、原始山脉和盾状火山中，要求$(l:the_world/climate#temperature)温度$()不低于 18°C、$(l:the_world/climate#rainfall)降雨量$()不低于 300mm。$(thing)火球花$()生长在高岭土上，而高岭土最多可能深藏于花下方 35 格处。"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "If you see the flower but there's no clay on the surface, dig deeper!",
+            "text": "如果你看到了花，地表却没有粘土，那就往下挖！",
             "multiblocks": [
                 {
                     "pattern": [
@@ -187,25 +187,25 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Unless you selected the $(item)Tropical$() climate when creating your world, the journey to obtaining Kaolin Clay may be long but is always a memorable part of TerraFirmaCraft. It is important to prepare for the trip, such as through $(l:logistics/exploration_gear)equipment$(), a $(l:logistics/boats)boat$(), $(l:logistics/personal_storage)extra storage$(), $(l:cooking/food_and_water)food and drink$(), and a $(item)Spade$() to dig it all up with.$(br2)Generally, go $(thing)South East$() to increase temperature and humidity to reach the ideal climates."
+            "text": "除非你在创建世界时选择了$(item)热带$()气候，否则获取高岭土的旅程可能会很漫长，但它始终是群峦传说中最令人难忘的部分之一。为旅途做好准备十分重要，例如准备好$(l:logistics/exploration_gear)装备$()、一艘$(l:logistics/boats)船$()、$(l:logistics/personal_storage)额外的储物空间$()、$(l:cooking/food_and_water)食物和饮水$()，以及一把用来把高岭土统统挖走的$(item)铁锹$()。$(br2)一般来说，往$(thing)东南$()方向走可以提升温度和湿度，从而到达理想的气候区。"
         },
         {
             "type": "patchouli:text",
-            "text": "If you're not a fan of long journeys, get seasick easily, or are very unlucky, $(tfg_short) has another option for obtaining Kaolin Clay: visiting $(l:beneath/beneath)The Beneath$()! It requires less traveling but is far more dangerous... with the potential for even greater riches!"
+            "text": "如果你不喜欢长途跋涉、容易晕船，或者单纯运气太差，$(tfg_short)还提供了另一种获取高岭土的方式：前往$(l:beneath/beneath)幽冥之地$()！那里路程更近，但危险得多……不过潜在的收获也更加丰厚！"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tfc:powder/kaolinite",
             "anchor": "kaolinite_powder",
-            "text": "Kaolinite powder is made by heating $(l:craftsmanship/pottery#kaolin_clay)Kaolin Clay$(). However, the process is not perfect, and only 20% of clay will form powder!$(br2)In order to mass produce kaolinite powder early on, it is recommended to fill small vessels with kaolin clay blocks and then place these vessels in a $(l:craftsmanship/pit_kiln)Pit Kiln$() to cook on-site. With this method you can cook up to 1,024 kaolin clay at a time per pit kiln."
+            "text": "高岭石粉由加热$(l:craftsmanship/pottery#kaolin_clay)高岭土$()制成。但这个过程并不完美，只有 20% 的粘土会转化为粉末！$(br2)前期想要大量生产高岭石粉，建议先把高岭土块装进小缸，再把小缸放进$(l:craftsmanship/pit_kiln)坑窑$()就地烧制。用这种方法，每个坑窑一次最多能烧制 1,024 个高岭土。"
         },
         {
             "type": "patchouli:text",
-            "text": "The amount of kaolinite powder you will need is enormous. If you have traveled very far to acquire kaolin clay and wish to make the most of your trip it is recommended to not return until you have at least 7 stacks (448 items) of $(n)Kaolinite Powder$(). This will ensure you have enough for a full-size $(l:craftsmanship/blast_furnace)Blast Furnace$(), $(l:craftsmanship/crucible)Crucibles$(), and molds. You should also bring back at least 20 blocks of kaolin clay for $(l:craftsmanship/glassworking)Glassworking$()."
+            "text": "你所需的高岭石粉数量非常庞大。如果你远行采集高岭土并想充分利用这趟旅程，建议至少攒够 7 组（448 个）$(n)高岭石粉$()再返程。这样才能确保你有足够的材料来建造一座完整尺寸的$(l:craftsmanship/blast_furnace)高炉$()、$(l:craftsmanship/crucible)坩埚$()和各种模具。你还应该带回至少 20 块高岭土，供$(l:craftsmanship/glassworking)玻璃加工$()使用。"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Fire Clay",
+            "title": "耐火黏土",
             "anchor": "fire_clay",
             "item": "tfc:fire_clay",
             "text": "耐火黏土能做成的东西不多，但每个都是科技进步上不可或缺的要素！耐火黏土比普通黏土能承受更高的高温，因此某些高级设备只能用耐火黏土建造！"
@@ -213,16 +213,16 @@
         {
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/fire_clay",
-            "text": "Fire clay is made from $(thing)Graphite$() crushed in a $(l:craftsmanship/quern)Quern$(), as well as $(l:craftsmanship/pottery#kaolinite_powder)Kaolinite Powder$().$(br2)Steam machines unlock more efficient ways to craft fire clay, so you may want to save some of your ingredients for later."
+            "text": "耐火黏土由$(thing)石墨$()（在$(l:craftsmanship/quern)手推磨$()中粉碎）和$(l:craftsmanship/pottery#kaolinite_powder)高岭石粉$()制成。$(br2)蒸汽机器会解锁更高效的耐火黏土制作方式，所以你也许想把一些原料留到以后再用。"
         },
         {
             "type": "tfg:knapping_recipe",
             "recipe": "tfc:fire_clay_knapping/fire_ingot_mold",
-            "text": "$(thing)Fire Ingot Molds$() are a stronger type of $(l:craftsmanship/pottery#mold)Ingot Mold$() that has just a 1 in 100 chance of breaking, compared to 1 in 10 for a regular ingot mold."
+            "text": "$(thing)耐火铸锭模具$()是一种更坚固的$(l:craftsmanship/pottery#mold)铸锭模具$()，损坏概率只有百分之一，而普通铸锭模具为十分之一。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",

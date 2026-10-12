@@ -18,7 +18,7 @@
             "type": "patchouli:text",
             "anchor": "stone_anvil",
             "title": "石砧",
-            "text": "首先，你需要取得一塊$(thing)火成原岩$()，也就是$(l:the_world/geology#igneous_extrusive)火成噴出岩$()(流紋岩、玄武岩、安山岩或英安岩)或$(l:the_world/geology#igneous_intrusive)火成侵入岩$()(花崗岩、閃長岩、輝長岩、輝石岩或角斑岩)。你可以在世界中找到裸露的方塊直接使用，也可以從周圍的岩石中$(l:craftsmanship/anvils#raw_rock)取出一塊$()。"
+            "text": "首先，你需要取得一塊$(thing)火成原岩$()，也就是$(l:the_world/geology#igneous_extrusive)噴出岩$()(流紋岩、玄武岩、安山岩或英安岩)或$(l:the_world/geology#igneous_intrusive)侵入岩$()(花崗岩、閃長岩、輝長岩、輝石岩或角斑岩)。你可以在世界中找到裸露的方塊直接使用，也可以從周圍的岩石中$(l:craftsmanship/anvils#raw_rock)取出一塊$()。"
         },
         {
             "type": "patchouli:text",
@@ -269,7 +269,7 @@
         {
             "type": "patchouli:text",
             "anchor": "tiers",
-            "text": "砧有$(thing)等級$()之分。等級決定了砧可以加工的金屬與材料。只有等級相同或比砧低的材料才能在砧上鍛造，砧能焊接金属最大等級為砧的等級 +1。$(br)$(li)$(bold)第0級$()：石砧$(li)$(bold)第1級$()：銅$(li)$(bold)第2級$()：鉍青銅、黑青銅铜、青銅$(li)$(bold)第3級$()：鍛鐵$(li)$(bold)第4級$()：鋼$(li)$(bold)第5級$()：黑鋼$(li)$(bold)第6級$()：紅鋼、藍鋼"
+            "text": "砧有$(thing)等級$()之分。等級決定了砧可以加工的金屬與材料。只有等級相同或比砧低的材料才能在砧上鍛造，砧能焊接金屬最大等級為砧的等級 +1。$(br)$(li)$(bold)第0級$()：石砧$(li)$(bold)第1級$()：銅$(li)$(bold)第2級$()：鉍青銅、黑青銅、青銅$(li)$(bold)第3級$()：鍛鐵$(li)$(bold)第4級$()：鋼$(li)$(bold)第5級$()：黑鋼$(li)$(bold)第6級$()：紅鋼、藍鋼"
         },
         {
             "type": "patchouli:text",
@@ -362,7 +362,7 @@
         },
         {
             "type": "patchouli:multiblock",
-            "text": "建議製作兩台杵錘並將它們串聯，以自動處理$(l:craftsmanship/bloomery)方胚$()和$(l:craftsmanship/blast_furnace)鋼$()。",
+            "text": "建議製作兩台杵錘並將它們串聯，以自動處理$(l:craftsmanship/bloomery)方坯$()和$(l:craftsmanship/blast_furnace)鋼$()。",
             "enable_visualize": true,
             "multiblock": {
                 "pattern": [
@@ -445,7 +445,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "(注意：X 是任意步驟的通配符)$(br)$(li)x_任意：步驟可以在後3個動作任意位置執行。$()$(li)x_最後：必須是最後一個步驟。$()$(li)x_不能最後： 不能是最後一個步驟。$()$(li)x_倒數第二：必須是倒數第二個步驟。$()$(li)x_倒數第三：必須是倒數第三個步驟$()"
+            "text": "(注意：X 是任意步驟的萬用字元)$(br)$(li)x_任意：步驟可以在後3個動作任意位置執行。$()$(li)x_最後：必須是最後一個步驟。$()$(li)x_不能最後： 不能是最後一個步驟。$()$(li)x_倒數第二：必須是倒數第二個步驟。$()$(li)x_倒數第三：必須是倒數第三個步驟$()"
         },
         {
             "type": "patchouli:image",
@@ -516,7 +516,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "物品的「必要工作量」為-6，因此要尋找的數值為$(bold)89$()。$(br)您可能會好奇：如何精確獲取目標工作量的數值？其實，透過砧介面的工作條已經顯示了這項資訊。雖然僅顯示20的倍數，但透過彩色刻度線可輕鬆判讀其他數值：$(li)淺灰色：代表5的倍數$()$(li)灰色：代表奇數$()$(li)深灰色：代表偶數$()"
+            "text": "物品的「必要工作量」為-6，因此要尋找的數值為$(bold)89$()。$(br)你可能會好奇：如何精確取得目標工作量的數值？其實，透過砧介面的工作條已經顯示了這項資訊。雖然僅顯示20的倍數，但透過彩色刻度線可輕鬆判讀其他數值：$(li)淺灰色：代表5的倍數$()$(li)灰色：代表奇數$()$(li)深灰色：代表偶數$()"
         },
         {
             "type": "patchouli:image",

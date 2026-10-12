@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)物品儲存$()$(li2)$(l:logistics/storage#chests)箱子$()$(li2)$(l:logistics/storage#crates)板條箱$()$(li2)$(l:logistics/storage#vaults)保險庫$()$(li2)$(l:logistics/storage#super_chests)超級箱$()$(li)$(bold)物品與流體儲存$()$(li2)$(l:logistics/storage#ae2)ME 儲存$()$(li2)$(l:logistics/storage#kegs)酒桶$()$(li)$(bold)流體儲存$()$(li2)$(l:logistics/storage#barrels)木桶$()$(li2)$(l:logistics/storage#drums)桶$()$(li2)$(l:logistics/storage#fluid_tanks)流體儲罐$()$(li2)$(l:logistics/storage#multiblock_tanks)多方塊儲罐$()$(li2)$(l:logistics/storage#super_tanks)超級缸$()",
+            "text": "$(li)$(bold)物品儲存$()$(li2)$(l:logistics/storage#chests)儲物箱$()$(li2)$(l:logistics/storage#crates)板條箱$()$(li2)$(l:logistics/storage#vaults)保險庫$()$(li2)$(l:logistics/storage#super_chests)超級箱$()$(li)$(bold)物品與流體儲存$()$(li2)$(l:logistics/storage#ae2)ME 儲存$()$(li2)$(l:logistics/storage#kegs)酒桶$()$(li)$(bold)流體儲存$()$(li2)$(l:logistics/storage#barrels)木桶$()$(li2)$(l:logistics/storage#drums)桶$()$(li2)$(l:logistics/storage#fluid_tanks)流體儲罐$()$(li2)$(l:logistics/storage#multiblock_tanks)多方塊儲罐$()$(li2)$(l:logistics/storage#super_tanks)超級缸$()",
             "title": "索引",
             "anchor": "index"
         },
@@ -17,15 +17,15 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "箱子",
+            "title": "儲物箱",
             "anchor": "chests",
             "item": "tag:forge:chests",
-            "text": "箱子可以存放 18 個物品，大箱子可以存放 36 個。箱子可以容納最大到$(l:game_mechanics/size_and_weight)大$()的物品。$(br)如果箱子裡有$(thing)食物$()，就會引來老鼠。所以最好把它們存放在$(item)小缸$()中。"
+            "text": "儲物箱可以存放 18 個物品，大型儲物箱可以存放 36 個。儲物箱可以容納最大到$(l:game_mechanics/size_and_weight)大$()的物品。$(br)如果儲物箱裡有$(thing)食物$()，就會引來老鼠。所以最好把它們存放在$(item)小缸$()中。"
         },
         {
             "type": "patchouli:multiblock",
             "enable_visualize": false,
-            "text": "$(bold)提示$()：箱子有各種木材的變體！",
+            "text": "$(bold)提示$()：儲物箱有各種木材的變體！",
             "multiblock": {
                 "pattern": [
                     [

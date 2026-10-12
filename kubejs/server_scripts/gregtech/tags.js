@@ -239,6 +239,9 @@ function registerGTCEUBlockTags(event) {
 
     event.add('gtceu:mineable/pickaxe_or_wrench', '#gtceu:lamps')
 
+    event.remove('forge:stone', 'gtceu:light_concrete')
+    event.remove('forge:stone', 'gtceu:dark_concrete')
+
     /**
      * @type {{Item[]}}
      */

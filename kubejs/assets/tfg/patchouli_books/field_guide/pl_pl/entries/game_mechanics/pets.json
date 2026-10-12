@@ -176,7 +176,7 @@
             "anchor": "treat",
             "title": "Smaczek",
             "item": "species:wicked_treat",
-            "text": "$(thing)Pet Treats$() can be made by mixing medicine with bone meal.$(br)Pet treats give $(bold)massive$() stat bonuses to your pets for a short duration."
+            "text": "$(thing)Smaczki$() są wytwarzane mieszając leki z mączką kostną.$(br)Smaczki na chwilę dają twoim zwierzętom $(bold)ogromne$() bonusy do statystyk.\n"
         },
         {
             "type": "patchouli:spotlight",

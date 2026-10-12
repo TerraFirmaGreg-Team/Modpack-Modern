@@ -11,7 +11,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:cooking/food_and_water#transient_effects)短暫效果$()$(li2)$(l:cooking/food_and_water#cooling_transient_effect)降溫$()$(li2)$(l:cooking/food_and_water#warming_transient_effect)保暖$()$(li2)$(l:cooking/food_and_water#quenching_transient_effect)解渴$()$(li2)$(l:cooking/food_and_water#bolstering_transient_effect)強健$()$(li2)$(l:cooking/food_and_water#hearty_transient_effect)豐盛$()$(li2)$(l:cooking/food_and_water#rejuvenating_transient_effect)回春$()$(li2)$(l:cooking/food_and_water#freezing_transient_effect)冰凍$()$(li2)$(l:cooking/food_and_water#blazing_transient_effect)炙熱$()$(li2)$(l:cooking/food_and_water#radiating_transient_effect)輻射$()$(li2)$(l:cooking/food_and_water#nauseating_transient_effect)噁心$()$(li2)$(l:cooking/food_and_water#parching_transient_effect)乾渴$()$(li2)$(l:cooking/food_and_water#deadly_transient_effect)致命$()$(li2)$(l:cooking/food_and_water#fulfilling_transient_effect)飽足$()$(li2)$(l:cooking/food_and_water#sugary_transient_effect)甜食$()$(li2)$(l:cooking/food_and_water#spicy_transient_effect)辛辣$()"
+            "text": "$(li)$(bold)$(l:cooking/food_and_water#transient_effects)短暫效果$()$(li2)$(l:cooking/food_and_water#cooling_transient_effect)降溫$()$(li2)$(l:cooking/food_and_water#warming_transient_effect)保暖$()$(li2)$(l:cooking/food_and_water#quenching_transient_effect)解渴$()$(li2)$(l:cooking/food_and_water#bolstering_transient_effect)強健$()$(li2)$(l:cooking/food_and_water#hearty_transient_effect)豐盛$()$(li2)$(l:cooking/food_and_water#rejuvenating_transient_effect)回春$()$(li2)$(l:cooking/food_and_water#freezing_transient_effect)凍結$()$(li2)$(l:cooking/food_and_water#blazing_transient_effect)灼熱$()$(li2)$(l:cooking/food_and_water#radiating_transient_effect)輻射$()$(li2)$(l:cooking/food_and_water#nauseating_transient_effect)噁心$()$(li2)$(l:cooking/food_and_water#parching_transient_effect)乾渴$()$(li2)$(l:cooking/food_and_water#deadly_transient_effect)致命$()$(li2)$(l:cooking/food_and_water#fulfilling_transient_effect)飽足$()$(li2)$(l:cooking/food_and_water#sugary_transient_effect)甜食$()$(li2)$(l:cooking/food_and_water#spicy_transient_effect)辛辣$()"
         },
         {
             "type": "patchouli:text",
@@ -133,7 +133,7 @@
             "title": "乳製品",
             "type": "patchouli:text",
             "anchor": "dairy",
-            "text": "$(l)$(5)乳製品$()$()來自$(thing)牛奶$()，而牛奶取自$(l:agriculture/animal_husbandry#dairy_animals)產乳動物$()。牛奶的加工與飲用在$(l:cooking/cheese)乳製品$()頁面中說明。$(br2)提高乳製品數值會帶來以下效果：$()$(li)$(bold)數值 >55% → $()$()$(italic)給予$(thing)輕盈 I$()效果。$()$(li)$(bold)數值 >85% → $()$()$(italic)給予$(thing)輕盈 IV$()效果。$()"
+            "text": "$(l)$(5)乳製品$()$()來自$(thing)牛奶$()，而牛奶取自$(l:agriculture/animal_husbandry#dairy_animals)產乳動物$()。牛奶的加工與飲用在$(l:cooking/cheese)乳製品$()頁面中說明。$(br2)提高乳製品數值會帶來以下效果：$()$(li)$(bold)數值 >55% → $()$()$(italic)給予$(thing)輕盈 I$()效果。$()$(li)$(bold)數值 >85% → $()$()$(italic)給予$(thing)輕盈 $(9)IV$()效果。$()"
         },
         {
             "type": "patchouli:text",

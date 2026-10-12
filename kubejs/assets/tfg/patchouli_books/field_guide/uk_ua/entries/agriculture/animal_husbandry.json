@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l/animal_husbandry#intro)Худоба$()$(li)$(bold)$(l/animal_husbandry#uses)Використання$()$(li2)$(l/animal_husbandry#uses_table)Таблиця використань$()$(li)$(bold)$(l/animal_husbandry#familiarity)Прирученість$()$(li)$(bold)$(l/animal_husbandry#mammals)Ссавці$()$(li2)$(l/animal_husbandry#wooly_animals)Вовнисті ссавці$()$(li2)$(l/animal_husbandry#dairy_animals)Молочні ссавці$()$(li2)$(l/animal_husbandry#equines)Коневі$()$(li2)$(l/animal_husbandry#camelides)Верблюдові$()$(li)$(bold)$(l/animal_husbandry#oviparous_animals)Яйцекладні тварини$()$(li)$(bold)$(l/animal_husbandry#feeding_trough)Годівниця$()"
+            "text": "$(li)$(bold)$(l:agriculture/animal_husbandry#intro)Худоба$()$(li)$(bold)$(l:agriculture/animal_husbandry#uses)Використання$()$(li2)$(l:agriculture/animal_husbandry#uses_table)Таблиця використань$()$(li)$(bold)$(l:agriculture/animal_husbandry#familiarity)Прирученість$()$(li)$(bold)$(l:agriculture/animal_husbandry#mammals)Ссавці$()$(li2)$(l:agriculture/animal_husbandry#wooly_animals)Вовнисті ссавці$()$(li2)$(l:agriculture/animal_husbandry#dairy_animals)Молочні ссавці$()$(li2)$(l:agriculture/animal_husbandry#equines)Коневі$()$(li2)$(l:agriculture/animal_husbandry#camelides)Верблюдові$()$(li)$(bold)$(l:agriculture/animal_husbandry#oviparous_animals)Яйцекладні тварини$()$(li)$(bold)$(l:agriculture/animal_husbandry#feeding_trough)Годівниця$()"
         },
         {
             "type": "patchouli:text",

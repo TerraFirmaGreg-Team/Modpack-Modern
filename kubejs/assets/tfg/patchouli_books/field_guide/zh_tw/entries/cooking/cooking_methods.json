@@ -7,7 +7,7 @@
             "type": "patchouli:text",
             "title": "索引",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:cooking/cooking_methods#firepit)篝火$()$(li2)$(l:cooking/cooking_methods#grill)烤架$()$(li2)$(l:cooking/cooking_methods#pot)陶鍋$()$(li)$(bold)$(l:cooking/cooking_methods#oven)烤箱$()$(li2)$(l:cooking/cooking_methods#vat)大鍋$()$(li2)$(l:cooking/cooking_methods#jarring_station)裝罐站$()$(li)$(bold)$(l:cooking/cooking_methods#electric_oven)電烤箱$()$(li)$(bold)$(l:cooking/cooking_methods#food_processor)食物調理機$()"
+            "text": "$(li)$(bold)$(l:cooking/cooking_methods#firepit)篝火$()$(li2)$(l:cooking/cooking_methods#grill)烤架$()$(li2)$(l:cooking/cooking_methods#pot)陶鍋$()$(li)$(bold)$(l:cooking/cooking_methods#oven)烤爐$()$(li2)$(l:cooking/cooking_methods#vat)大鍋$()$(li2)$(l:cooking/cooking_methods#jarring_station)裝罐站$()$(li)$(bold)$(l:cooking/cooking_methods#electric_oven)電烤爐$()$(li)$(bold)$(l:cooking/cooking_methods#food_processor)食物調理機$()"
         },
         {
             "type": "patchouli:text",
@@ -44,7 +44,7 @@
             "type": "patchouli:text",
             "anchor": "grill",
             "title": "烤架",
-            "text": "$(thing)烤架$()是可以加裝在$(item)篝火$()、$(item)烤箱$()或$(l:craftsmanship/gas_burner)燃氣燃燒器$()上的物品，能更有效率地烹煮食物。烤架一次可以烹煮五個物品，烹煮時還會讓食物獲得$(thing)木火燒烤$()特性，可以稍微延長物品的$(l:cooking/decay)保存期限$()。要製作附有烤架的篝火，首先要製作$(l:craftsmanship/firepit)篝火$()，然後對篝火使用$(thing)鍛鐵烤架$()。"
+            "text": "$(thing)烤架$()是可以加裝在$(item)篝火$()、$(item)烤爐$()或$(l:craftsmanship/gas_burner)燃氣燃燒器$()上的物品，能更有效率地烹煮食物。烤架一次可以烹煮五個物品，烹煮時還會讓食物獲得$(thing)木火燒烤$()特性，可以稍微延長物品的$(l:cooking/decay)保存期限$()。要製作附有烤架的篝火，首先要製作$(l:craftsmanship/firepit)篝火$()，然後對篝火使用$(thing)鍛鐵烤架$()。"
         },
         {
             "type": "patchouli:multiblock",
@@ -69,7 +69,7 @@
             "type": "patchouli:text",
             "title": "陶鍋",
             "anchor": "pot",
-            "text": "$(thing)陶鍋$()是可以加裝在$(item)篝火$()、$(item)烤箱$()或$(l:craftsmanship/gas_burner)燃氣燃燒器$()上的物品，可以烹煮新類型的食物，也能製作其他一些實用的物品。$(br2)要製作附有陶鍋的篝火，首先要製作$(l:craftsmanship/firepit)篝火$()，然後對篝火使用$(thing)陶瓷鍋$()。"
+            "text": "$(thing)陶鍋$()是可以加裝在$(item)篝火$()、$(item)烤爐$()或$(l:craftsmanship/gas_burner)燃氣燃燒器$()上的物品，可以烹煮新類型的食物，也能製作其他一些實用的物品。$(br2)要製作附有陶鍋的篝火，首先要製作$(l:craftsmanship/firepit)篝火$()，然後對篝火使用$(thing)陶瓷鍋$()。"
         },
         {
             "type": "patchouli:multiblock",
@@ -118,45 +118,45 @@
             "text": "其他陶鍋配方會把鍋中的物品和流體轉化成別的東西。例如，在$(thing)水$()中煮沸五個$(thing)草木灰$()可以製成$(thing)鹼液$()。"
         },
         {
-            "title": "烤箱",
+            "title": "烤爐",
             "anchor": "oven",
             "type": "patchouli:text",
-            "text": "$(thing)烤箱$()是一次烹煮大量食物並延長保存期限的好方法。烤箱烘烤的食物腐壞速度是一般食物的 90%。烤箱是由$(thing)下層烤箱$()、$(thing)上層烤箱$()和$(thing)煙囪$()組成的多方塊結構。這些方塊一開始是黏土，必須將溫度提升到一定程度並維持足夠長的時間，才能$(thing)固化$()。"
+            "text": "$(thing)烤爐$()是一次烹煮大量食物並延長保存期限的好方法。烤爐烘烤的食物腐壞速度是一般食物的 90%。烤爐是由$(thing)下層烤爐$()、$(thing)上層烤爐$()和$(thing)煙囪$()組成的多方塊結構。這些方塊一開始是黏土，必須將溫度提升到一定程度並維持足夠長的時間，才能$(thing)固化$()。"
         },
         {
             "type": "patchouli:text",
-            "text": "烤箱可以用$(thing)$(t:#firmalife:oven_insulation)磚塊$()、其他烤箱方塊，或任何可以為木炭爐隔熱的東西來隔熱。也就是說，你想要的話也可以使用石頭方塊！$(br2)$(l:game_mechanics/heating#tongs)火鉗$()或$(item)隔熱手套$()是從烤箱中取出熱物品的安全方式。只要拿著它們對烤箱按下$(item)$(k:key.use)$()即可取出物品。否則你可能會被燙傷！$(br2)$(item)烤箱配件$()可以擴充烤箱的功能。"
+            "text": "烤爐可以用$(thing)$(t:#firmalife:oven_insulation)磚塊$()、其他烤爐方塊，或任何可以為木炭爐隔熱的東西來隔熱。也就是說，你想要的話也可以使用石頭方塊！$(br2)$(l:game_mechanics/heating#tongs)火鉗$()或$(item)隔熱手套$()是從烤爐中取出熱物品的安全方式。只要拿著它們對烤爐按下$(item)$(k:key.use)$()即可取出物品。否則你可能會被燙傷！$(br2)$(item)烤爐配件$()可以擴充烤爐的功能。"
         },
         {
             "type": "patchouli:text",
-            "title": "建造烤箱",
+            "title": "建造烤爐",
             "anchor": "oven_building",
-            "text": "$(thing)烤箱$()首先由放在下層烤箱上方的上層烤箱組成。接著，每個烤箱部件除了正面以外的所有面，都應用$(thing)$(t:#firmalife:oven_insulation)烤箱隔熱$()方塊覆蓋。在烤箱正後方疊放三個煙囪，可以讓烤箱的煙往上排出，防止火災。如果不這麼做，煙會很快充滿你的房子，火也可能從烤箱蔓延出去！"
+            "text": "$(thing)烤爐$()首先由放在下層烤爐上方的上層烤爐組成。接著，每個烤爐部件除了正面以外的所有面，都應用$(thing)$(t:#firmalife:oven_insulation)烤爐隔熱$()方塊覆蓋。在烤爐正後方疊放三個煙囪，可以讓烤爐的煙往上排出，防止火災。如果不這麼做，煙會很快充滿你的房子，火也可能從烤爐蔓延出去！"
         },
         {
             "type": "patchouli:text",
             "anchor": "bottom_oven",
-            "text": "下層烤箱用來放置燃料，而燃料只能是原木。按下$(item)$(k:key.use)$()即可放入。下層烤箱也是可以用$(thing)生火器$()或其他工具點燃的部位。它會將產生的熱量傳給上層烤箱或配件。$(br2)下層烤箱必須隔熱才能保持熱度。"
+            "text": "下層烤爐用來放置燃料，而燃料只能是原木。按下$(item)$(k:key.use)$()即可放入。下層烤爐也是可以用$(thing)生火器$()或其他工具點燃的部位。它會將產生的熱量傳給上層烤爐或配件。$(br2)下層烤爐必須隔熱才能保持熱度。"
         },
         {
             "type": "patchouli:text",
             "anchor": "top_oven",
-            "text": "上層烤箱放置正在烹煮的物品。它會從下層烤箱吸收熱量，並隨時間緩慢釋放。手持物品按下$(item)$(k:key.use)$()即可放入。之後記得使用$(thing)火鉗$()或$(thing)隔熱手套$()取出物品。$(br2)上層烤箱需要隔熱才能達到更高的溫度。但這不一定是好主意，因為麵包等物品若長時間處於高溫下可能會燒成灰燼。"
+            "text": "上層烤爐放置正在烹煮的物品。它會從下層烤爐吸收熱量，並隨時間緩慢釋放。手持物品按下$(item)$(k:key.use)$()即可放入。之後記得使用$(thing)火鉗$()或$(thing)隔熱手套$()取出物品。$(br2)上層烤爐需要隔熱才能達到更高的溫度。但這不一定是好主意，因為麵包等物品若長時間處於高溫下可能會燒成灰燼。"
         },
         {
             "type": "patchouli:text",
-            "text": "陶鍋和烤架可以放在$(thing)下層烤箱$()上方。這些裝置會自動從下層烤箱取得熱量。此時陶鍋只能用來煮湯，無法執行一般的陶鍋配方。"
+            "text": "陶鍋和烤架可以放在$(thing)下層烤爐$()上方。這些裝置會自動從下層烤爐取得熱量。此時陶鍋只能用來煮湯，無法執行一般的陶鍋配方。"
         },
         {
             "type": "patchouli:text",
-            "title": "烤箱固化",
+            "title": "烤爐固化",
             "anchor": "oven_curing",
-            "text": "固化烤箱方塊很簡單，但需要耐心。只要像平常一樣運作下層烤箱，然後等待即可。如果烤箱方塊高於$(t:暗紅色 **)$(4)600$()°C 約 80 秒，它就會固化自己以及周圍的所有烤箱方塊。固化效果會一路傳遞到附近的煙囪頂端。"
+            "text": "固化烤爐方塊很簡單，但需要耐心。只要像平常一樣運作下層烤爐，然後等待即可。如果烤爐方塊高於$(t:暗紅 **)$(4)600$()°C 約 80 秒，它就會固化自己以及周圍的所有烤爐方塊。固化效果會一路傳遞到附近的煙囪頂端。"
         },
         {
             "type": "patchouli:multiblock",
-            "name": "未固化的烤箱",
-            "text": "烤箱應先以$(n)未固化$()的狀態組裝。你可以自訂配件和大小。",
+            "name": "未固化的烤爐",
+            "text": "烤爐應先以$(n)未固化$()的狀態組裝。你可以自訂配件和大小。",
             "enable_visualize": true,
             "multiblock": {
                 "pattern": [
@@ -210,7 +210,7 @@
         },
         {
             "type": "patchouli:multiblock",
-            "name": "固化的烤箱",
+            "name": "固化的烤爐",
             "text": "固化後的烤箱結構範例。",
             "enable_visualize": false,
             "multiblock": {
@@ -270,7 +270,7 @@
         {
             "type": "patchouli:crafting",
             "recipe": "firmalife:crafting/oven_insulation",
-            "text": "為下層烤箱合成烤箱隔熱層後，就不需要再為它的側面和背面隔熱。但仍然需要煙囪，上層烤箱也仍然需要隔熱。按下$(item)$(k:key.use)$()即可套用。"
+            "text": "為下層烤爐合成烤爐隔熱層後，就不需要再為它的側面和背面隔熱。但仍然需要煙囪，上層烤爐也仍然需要隔熱。按下$(item)$(k:key.use)$()即可套用。"
         },
         {
             "type": "patchouli:spotlight",
@@ -281,21 +281,21 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "烤箱漏斗",
+            "title": "烤爐漏斗",
             "anchor": "oven_hopper",
             "item": "firmalife:oven_hopper",
-            "text": "$(thing)烤箱漏斗$()會將原木送入它所面對的下層烤箱。它可以容納 16 根原木(像原木堆一樣是 4 組各 4 根)，從頂部丟入物品即可補充庫存。物品管道也能做到同樣的事，但無法作為隔熱。"
+            "text": "$(thing)烤爐漏斗$()會將原木送入它所面對的下層烤爐。它可以容納 16 根原木(像原木堆一樣是 4 組各 4 根)，從頂部丟入物品即可補充庫存。物品管道也能做到同樣的事，但無法作為隔熱。"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "灰盤",
+            "title": "爐灰收集器",
             "anchor": "ashtray",
             "item": "firmalife:ashtray",
-            "text": "$(thing)灰盤$()放在$(thing)下層烤箱方塊$()下方時會收集$(thing)草木灰$()。每次消耗燃料時有 0.5 的機率得到灰燼。按下$(item)$(k:key.use)$()或用漏斗可以取出灰燼，按下$(item)$(k:key.attack)$()可以放入。"
+            "text": "$(thing)爐灰收集器$()放在$(thing)下層烤爐方塊$()下方時會收集$(thing)草木灰$()。每次消耗燃料時有 0.5 的機率得到灰燼。按下$(item)$(k:key.use)$()或用漏斗可以取出灰燼，按下$(item)$(k:key.attack)$()可以放入。"
         },
         {
             "type": "patchouli:multiblock",
-            "name": "隔熱烤箱",
+            "name": "隔熱烤爐",
             "text": "附有配件和飾面的隔熱烤箱範例。$(br)注意：$(7)大鍋、陶鍋和烤架都算作隔熱方塊。$()",
             "enable_visualize": false,
             "multiblock": {
@@ -366,7 +366,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "使用大鍋時，手持流體和物品對它按下$(item)$(k:key.use)$()即可加入。空手並按住$(item)$(k:key.sneak)$()時點擊，可以密封或解封大鍋。大鍋在密封之前不會沸騰。$(br)大鍋應放在$(thing)下層烤箱$()上方。如果大鍋在配方完成時溢出，它就不會沸騰！$(br2)大鍋可以用$(thing)紅石$()自動開關，也能與$(item)管道$()或$(item)機械手臂$()互動。"
+            "text": "使用大鍋時，手持流體和物品對它按下$(item)$(k:key.use)$()即可加入。空手並按住$(item)$(k:key.sneak)$()時點擊，可以密封或解封大鍋。大鍋在密封之前不會沸騰。$(br)大鍋應放在$(thing)下層烤爐$()上方。如果大鍋在配方完成時溢出，它就不會沸騰！$(br2)大鍋可以用$(thing)紅石$()自動開關，也能與$(item)管道$()或$(item)機械手臂$()互動。"
         },
         {
             "type": "tfg:multimultiblock",
@@ -443,9 +443,9 @@
         },
         {
             "type": "patchouli:multiblock",
-            "name": "電烤箱",
+            "name": "電烤爐",
             "anchor": "electric_oven",
-            "text": "$(item)電烤箱$()是$(tfg)新增的機器，使用$(thing)EU$()自動烹煮食物。",
+            "text": "$(item)電烤爐$()是$(tfg)新增的機器，使用$(thing)EU$()自動烹煮食物。",
             "enable_visualize": false,
             "multiblock": {
                 "pattern": [

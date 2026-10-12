@@ -1,11 +1,11 @@
 {
-	"name": "Sticks & Stones",
+	"name": "木棍与石头",
 	"category": "tfg:craftsmanship",
 	"icon": "tfg:flint_arrow_head",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "In $(tfg), the first things you can obtain are sticks, twigs, flint, and loose rocks. They can be found in almost every climate, lying scattered on the ground. $(item)$(k:key.use)$() or break these to pick them up."
+			"text": "在$(tfg)中，你最先能获得的东西是木棍、树枝、燧石和石子。它们几乎遍布各种气候，散落在地面上。$(item)$(k:key.use)$()或破坏它们即可拾取。"
 		},
 		{
 			"type": "patchouli:multiblock",
@@ -50,19 +50,19 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "knapping",
-			"text": "In addition to gathering sticks and twigs on the ground, sticks can also be obtained by breaking leaves with your fist. Once you have a number of rocks and sticks, you are ready to start $(thing)Knapping$(). Knapping is a process where two rocks are hit together to form a particular shape. In order to knap, first hold at least two rocks in your hand, then right click in the air, which will open up the $(thing)Knapping Interface$()."
+			"text": "除了在地上收集木棍和树枝之外，用拳头打落树叶也能获得木棍。当你有了若干石子和木棍后，就可以开始$(thing)石子塑形$()了。石子塑形是把两块石头相互敲击、敲出特定形状的过程。要进行塑形，先手持至少两块石子，再对空右击，即可打开$(thing)塑形界面$()。"
 		},
 		{
 			"type": "patchouli:image",
 			"images": [
 				"tfc:textures/gui/book/gui/rock_knapping.png"
 			],
-			"text": "The Knapping Interface.",
+			"text": "塑形界面。",
 			"border": false
 		},
 		{
 			"type": "patchouli:text",
-			"text": "In order to knap a particular item, you want to remove squares until you form the desired pattern by $(item)$(k:key.attack)$() them. For example, create a knife blade by matching the recipe shown to the right.$(br2)Like crafting recipes, the location of the desired pattern doesn't matter for the output, and some recipes have multiple variants that are valid."
+			"text": "要塑形出特定物品，你需要用$(item)$(k:key.attack)$()点击移除方格，直到形成想要的图案。例如，按照右侧所示配方拼出图案即可做出刀刃。$(br2)和合成配方一样，图案所在的位置不影响产出，而且有些配方存在多种有效变体。"
 		},
 		{
 			"type": "tfg:rock_knapping_recipe",
@@ -78,21 +78,21 @@
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "flint",
-			"title": "Flint Knapping",
+			"title": "燧石塑形",
 			"item": "gtceu:flint_hoe_head,gtceu:flint_knife_head,gtceu:flint_shovel_head,gtceu:flint_axe_head,gtceu:flint_sword_head,tfg:flint_club_head,tfg:flint_arrow_head",
-			"text": "Flint can be used to craft many of the same items that can be knapped by stone, as well as unique items like arrow heads. Flint items are often far superior to stone items stat-wise. You can easily locate flint by checking the bottom of rivers and lakes for loose flint groundcover."
+			"text": "燧石可以用来制作大多数能用石头塑出的物品，还能制作箭头这类独有的物品。燧石制品的数值通常远胜石头制品。查看河底和湖底有没有散落的燧石，就能轻松找到燧石。"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "gtceu:shaped/knife_stone",
-			"text": "All stone tool heads can be crafted with a stick, twig, bone, or other rod to assemble them into a tool.$(br2)The stone knife can be used to harvest $(thing)Straw$() by breaking grasses."
+			"text": "所有石头工具头都可以与木棍、树枝、骨头或其他棒状物合成，组装成工具。$(br2)石刀可以用来打割草类，采集$(thing)干草$()。"
 		},
 		{
 			"type": "tfg:rock_knapping_recipe",
 			"recipes": [
 				"tfg:rock_knapping/stone_axe_head"
 			],
-			"text": "$(thing)Axes$() can be used to cut down entire trees, logs and leaves included. Axes are required for obtaining $(l:the_world/wild_fruits#fruit_trees)Fruit Tree Saplings$()."
+			"text": "$(thing)斧头$()可以砍倒整棵树，包括原木和树叶。要获得$(l:the_world/wild_fruits#fruit_trees)果树树苗$()就必须使用斧头。"
 		},
 		{
 			"type": "tfg:rock_knapping_recipe",
@@ -108,14 +108,14 @@
 				"tfg:rock_knapping/stone_hoe_head_1",
 				"tfg:rock_knapping/stone_hoe_head_2"
 			],
-			"text": "$(thing)Hoes$() are useful tools for $(l:agriculture/growing_crops)Farming$(), but they can also be used to cut down leaves and other plant matter like knives."
+			"text": "$(thing)锄头$()是$(l:agriculture/growing_crops)耕种$()的实用工具，但它也能像刀一样割除树叶和其他植物。"
 		},
 		{
 			"type": "tfg:rock_knapping_recipe",
 			"recipes": [
 				"tfg:rock_knapping/stone_hammer_head"
 			],
-			"text": "$(thing)Hammers$() can be used as $(l:game_mechanics/damage_types)Crushing$() weapons, but are more important tools used for $(l:craftsmanship/anvils)Forging$()."
+			"text": "$(thing)锤子$()可以用作$(l:game_mechanics/damage_types)打击$()武器，但它更重要的用途是$(l:craftsmanship/anvils)锻造$()。"
 		},
 		{
 			"type": "tfg:rock_knapping_recipe",
@@ -125,11 +125,11 @@
 				"tfc:rock_knapping/javelin_head_igneous_extrusive",
 				"tfc:rock_knapping/javelin_head_igneous_intrusive"
 			],
-			"text": "Finally, a $(thing)Javelin$() can be used as a primitive weapon, capable of being thrown at targets, or used as a $(l:game_mechanics/damage_types)Piercing$() weapon."
+			"text": "最后，$(thing)标枪$()是一种原始武器，可以掷向目标，也可以作为$(l:game_mechanics/damage_types)突刺$()武器使用。"
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "延伸阅读",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/wild_fruits",

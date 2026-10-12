@@ -64,6 +64,7 @@
 	"quests.steam_age.steel_greate.subtitle": "格雷机械太棒了所以他们做了格雷机械2",
 	"quests.steam_age.steel_greate.desc": "欢迎来到格雷机械的全新阶段！&6钢传动杆&r和&6钢齿轮&r能承受四倍于旧部件的应力。整个动力装置的总应力上限取决于最薄弱的环节，因此若想提升整体效能，就需要将原有装置全面升级。不过至少部分旧部件可以进行回收利用！",
 	"quests.steam_age.kinetic_bridge.subtitle": "桥接网络",
+	"quests.steam_age.kinetic_bridge.desc": "动力桥接器允许你连接不同等级的格雷机械网络，而不会导致整个系统停摆。\n\n只需将你的钢级网络连接在桥接器的一端，基础级网络连接在另一端，你原有的装置就能继续工作！\n\n注意，动力桥接器只能“降低”应力等级，例如从钢级降到基础级——你不能用它以基础级动力源来驱动钢级机器。",
 	"quests.steam_age.steel_encased_fan.title": "鼓风机",
 	"quests.steam_age.steel_encased_fan.subtitle": "消暑佳品",
 	"quests.steam_age.steel_encased_fan.desc": "&3鼓风机&r是你的首条全自动矿石处理产线的最后一步，从此无需再手动清洗不纯矿粉。\n\n格雷机械的鼓风机工作原理与基础机械动力略有不同。你无需在风扇前放置水源，而是需要将水泵入鼓风机方块本身。请务必将鼓风机上的数值设置为&31&r！\n\n接着，将你粉碎的矿石或矿粉放在鼓风机前的置物台或传送带上（直接放在地面上无效！），它们很快就会被清洗干净。此外，你还能获得一些&3额外的副产品&r！",

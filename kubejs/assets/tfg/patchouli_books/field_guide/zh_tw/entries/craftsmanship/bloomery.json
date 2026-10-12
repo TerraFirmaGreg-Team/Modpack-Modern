@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(thing)鍛鐵爐$()是用來將$(thing)鐵礦石$()熔煉成$(thing)方胚$()的裝置，方胚可以再鍛造成$(thing)鍛鐵$()。常見的鐵礦石有$(item)赤鐵礦$()、$(item)褐鐵礦$()和$(item)磁鐵礦$()。這些礦石會熔化成$(thing)鑄鐵$()而非$(thing)鍛鐵$()。所有含鐵的物品都會熔化成鑄鐵。要將它們轉化為可用的鐵，就需要鍛鐵爐。任何鐵製物品都可以放入鍛鐵爐，包括鐵製工具和鑄鐵錠！"
+            "text": "$(thing)鍛鐵爐$()是用來將$(thing)鐵礦石$()熔煉成$(thing)方坯$()的裝置，方坯可以再鍛造成$(thing)鍛鐵$()。常見的鐵礦石有$(item)赤鐵礦$()、$(item)褐鐵礦$()和$(item)磁鐵礦$()。這些礦石會熔化成$(thing)鑄鐵$()而非$(thing)鍛鐵$()。所有含鐵的物品都會熔化成鑄鐵。要將它們轉化為可用的鐵，就需要鍛鐵爐。任何鐵製物品都可以放入鍛鐵爐，包括鐵製工具和鑄鐵錠！"
         },
         {
             "type": "patchouli:crafting",
@@ -60,12 +60,12 @@
             "images": [
                 "tfc:textures/gui/book/tutorial/bloomery_hole.png"
             ],
-            "text": "鍛鐵爐每消耗$(thing)一個木炭$()以及$(thing)144mb的鑄鐵$()來生產一塊$(thing)生鐵方胚$()。",
+            "text": "鍛鐵爐每消耗$(thing)一個木炭$()以及$(thing)144mb的鑄鐵$()來生產一塊$(thing)生鐵方坯$()。",
             "border": true
         },
         {
             "type": "patchouli:text",
-            "text": "大多數鐵粉含有 129mB 的鐵，所以除非你使用純鑄鐵錠，否則我們建議一座全滿的鍛鐵爐放入$(item)25 個金屬礦粉$()和$(item)22 個木炭$()。這會損失 57mB 的鐵。$(br)在鍛鐵爐中放滿$(thing)燃料$()和$(thing)礦石$()後，點燃鍛鐵爐的爐門，等待$(t:12.5 分鐘)$(6)遊戲中 15 小時$()讓鍛鐵爐熔煉。鍛鐵爐熄滅後，會留下一個$(thing)方胚$()方塊。裡面含有高溫的$(thing)粗方胚$()，用鎬反覆挖掘$(thing)方胚$()方塊即可取得。"
+            "text": "大多數鐵粉含有 129mB 的鐵，所以除非你使用純鑄鐵錠，否則我們建議一座全滿的鍛鐵爐放入$(item)25 個金屬礦粉$()和$(item)22 個木炭$()。這會損失 57mB 的鐵。$(br)在鍛鐵爐中放滿$(thing)燃料$()和$(thing)礦石$()後，點燃鍛鐵爐的爐門，等待$(t:12.5 分鐘)$(6)遊戲中 15 小時$()讓鍛鐵爐熔煉。鍛鐵爐熄滅後，會留下一個$(thing)方坯$()方塊。裡面含有高溫的$(thing)粗方坯$()，用鎬反覆挖掘$(thing)方坯$()方塊即可取得。"
         },
         {
             "type": "tfg:table",
@@ -88,7 +88,7 @@
                     "bold": true
                 },
                 {
-                    "text": "方胚",
+                    "text": "方坯",
                     "bold": true
                 },
                 {
@@ -180,19 +180,19 @@
                     "X": "tfc:bloom[layers=8]"
                 }
             },
-            "name": "方胚",
-            "text": "大塊$(thing)方胚$()。",
+            "name": "方坯",
+            "text": "大塊$(thing)方坯$()。",
             "enable_visualize": false
         },
         {
             "type": "tfg:anvil_recipe",
             "recipe": "tfc:anvil/refined_iron_bloom",
-            "text": "$(thing)粗方胚$()必須在$(l:craftsmanship/anvils)鐵砧$()上鍛造成$(thing)精煉方胚$()，然後再次鍛造成$(thing)鍛鐵錠$()。$(br)建議使用$(l:craftsmanship/anvils#helve_hammer)杵錘$()來自動化精煉步驟。"
+            "text": "$(thing)粗方坯$()必須在$(l:craftsmanship/anvils)鐵砧$()上鍛造成$(thing)精煉方坯$()，然後再次鍛造成$(thing)鍛鐵錠$()。$(br)建議使用$(l:craftsmanship/anvils#helve_hammer)杵錘$()來自動化精煉步驟。"
         },
         {
             "type": "patchouli:text",
             "anchor": "tips",
-            "text": "$(li)如果鍛鐵爐中的物品超過它能處理的數量，它會試著從前方吐出多餘的物品。$(li)要從未點燃的鍛鐵爐中取回物品，請破壞鍛鐵爐方塊。$(li)方胚只會熔化成鑄鐵，而不是鍛鐵。它們必須經過鍛造！",
+            "text": "$(li)如果鍛鐵爐中的物品超過它能處理的數量，它會試著從前方吐出多餘的物品。$(li)要從未點燃的鍛鐵爐中取回物品，請破壞鍛鐵爐方塊。$(li)方坯只會熔化成鑄鐵，而不是鍛鐵。它們必須經過鍛造！",
             "title": "鍛鐵爐技巧"
         },
         {
@@ -200,7 +200,7 @@
             "anchor": "steam_bloomery",
             "title": "蒸汽鍛鐵爐",
             "item": "tfg:steam_bloomery",
-            "text": "製作出$(item)黑鋼$()後即可使用$(thing)蒸汽鍛鐵爐$()。這座結構能自動生產方胚，而且由於使用高壓蒸汽，比傳統鍛鐵爐更快、更有效率。"
+            "text": "製作出$(item)黑鋼$()後即可使用$(thing)蒸汽鍛鐵爐$()。這座結構能自動生產方坯，而且由於使用高壓蒸汽，比傳統鍛鐵爐更快、更有效率。"
         },
         {
             "type": "patchouli:multiblock",

@@ -1,22 +1,22 @@
 {
-	"name": "Player Temperature",
+	"name": "玩家体温",
 	"category": "tfg:game_mechanics",
 	"icon": "tfcambiental:straw_hat",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "$(thing)Player Temperature$() is the temperature that affects, $(bold)you$(), the player, and nothing else. It's different from, but influenced by, the $(l:the_world/climate#temperature)Current and Average Temperature$() of your climate, among $(l:game_mechanics/player_temperature#what_affects_it)other things$().$(br2)You need to keep an eye on it to avoid $(thing)heatstroke$() or $(thing)freezing$()!"
+			"text": "$(thing)玩家体温$()是只影响$(bold)你$()——也就是玩家——的温度，与其他任何东西无关。它不同于你所处气候的$(l:the_world/climate#temperature)当前与平均温度$()，但会受其影响，此外还有$(l:game_mechanics/player_temperature#what_affects_it)其他因素$()。$(br2)你需要时刻留意它，以免$(thing)中暑$()或$(thing)冻伤$()！"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Contents",
-			"text": "$(li)$(bold)$(l:game_mechanics/player_temperature#hud)How to see your temperature$()$(li)$(bold)$(l:game_mechanics/player_temperature#what_affects_it)What affects it?$()$(li2)$(l:game_mechanics/player_temperature#what_affects_it)Climate and Seasons$()$(li2)$(l:game_mechanics/player_temperature#wetness)Wetness$()$(li2)$(l:game_mechanics/player_temperature#wetness)Direct sunlight$()$(li2)$(l:game_mechanics/player_temperature#wetness)Sprinting$()$(li2)$(l:game_mechanics/player_temperature#blocks)Blocks$()$(li2)$(l:game_mechanics/player_temperature#food)Food Effects$()$(li2)$(l:game_mechanics/player_temperature#clothing)Clothing$()$(li)$(bold)$(l:game_mechanics/player_temperature#house_tester)Enclosed Spaces$()$(li)$(bold)$(l:game_mechanics/player_temperature#heat_pump)Heat Pump$()"
+			"title": "目录",
+			"text": "$(li)$(bold)$(l:game_mechanics/player_temperature#hud)如何查看你的体温$()$(li)$(bold)$(l:game_mechanics/player_temperature#what_affects_it)哪些因素会影响体温？$()$(li2)$(l:game_mechanics/player_temperature#what_affects_it)气候与季节$()$(li2)$(l:game_mechanics/player_temperature#wetness)湿润度$()$(li2)$(l:game_mechanics/player_temperature#wetness)直射阳光$()$(li2)$(l:game_mechanics/player_temperature#wetness)疾跑$()$(li2)$(l:game_mechanics/player_temperature#blocks)方块$()$(li2)$(l:game_mechanics/player_temperature#food)食物效果$()$(li2)$(l:game_mechanics/player_temperature#clothing)服装$()$(li)$(bold)$(l:game_mechanics/player_temperature#house_tester)封闭空间$()$(li)$(bold)$(l:game_mechanics/player_temperature#heat_pump)热泵$()"
 		},
 		{
 			"type": "patchouli:image",
 			"anchor": "hud",
-			"text": "The arrow in the middle indicates whether your player temperature is going up or down.",
-			"title": "The Hotbar HUD",
+			"text": "中间的箭头表示你的玩家体温正在上升还是下降。",
+			"title": "快捷栏 HUD",
 			"border": false,
 			"images": [
 				"tfg:textures/gui/field_guide/ambiental_hud.png"
@@ -24,64 +24,64 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "You can see your player temperature by holding $(item)$(k:key.sneak)$() and looking at the numbers above your $(thing)hotbar$() at the bottom of the screen.$(br2)The two numbers on the right indicate your $(thing)current player temperature$() and the $(thing)target temperature$(), or the number your temperature is \"trending towards\" if your situation doesn't change.$(br2)The two numbers on the left are the same for your $(l:game_mechanics/player_temperature#wetness)wetness$()."
+			"text": "按住$(item)$(k:key.sneak)$()，查看屏幕底部$(thing)快捷栏$()上方的数字，就能看到你的玩家体温。$(br2)右边两个数字分别是你的$(thing)当前体温$()和$(thing)目标体温$()，也就是在你的处境不变时，体温“正在趋向”的数值。$(br2)左边的两个数字则是$(l:game_mechanics/player_temperature#wetness)湿润度$()的对应数值。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The $(thing)right two temperature numbers$() are the ones to pay attention to! If your $(thing)player temperature$() goes $(6)above 30°C$() or $(3)below 0°C$(), you will begin taking damage.$(br2)When you are close to these temperatures, the arrow in the middle of the HUD will either be a bright orange or dark blue, and you will have an orange or blue tint to your screen."
+			"text": "$(thing)右边两个温度数字$()才是需要留意的！如果你的$(thing)玩家体温$()$(6)高于 30°C$()或$(3)低于 0°C$()，你就会开始受到伤害。$(br2)当你接近这些温度时，HUD 中间的箭头会变成亮橙色或深蓝色，你的屏幕也会蒙上一层橙色或蓝色色调。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The $(item)gradient bar$() on the very bottom, replacing your XP bar, shows your $(thing)player temperature$() (the $(bold)white mark$()), the $(l:the_world/climate)current climate temperature$() (the $(bold)$(2)green 🔽$()), and the $(l:the_world/climate)average climate temperature$() (the $(bold)$(c)red 🔼$()), all at once.$(br2)The bar is split into 10°C segments, with the very middle representing 0°C."
+			"text": "最底部取代经验条的$(item)渐变条$()会同时显示你的$(thing)玩家体温$()（$(bold)白色标记$()）、$(l:the_world/climate)当前气候温度$()（$(bold)$(2)绿色 🔽$()）和$(l:the_world/climate)平均气候温度$()（$(bold)$(c)红色 🔼$()）。$(br2)渐变条以 10°C 为一段划分，正中间代表 0°C。"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "What affects it?",
+			"title": "哪些因素会影响体温？",
 			"anchor": "what_affects_it",
-			"text": "There are many things that influence your temperature!$(br2)The most obvious one is what your climate is doing. You will be hotter in the $(l:the_world/climate#seasons)summer$() and colder in the $(l:the_world/climate#seasons)winter$(), living in the $(l:the_world/climate#climate)Arctic$() will make you colder than living in the $(l:the_world/climate#climate)Tropics$(), and so on."
+			"text": "影响你体温的因素有很多！$(br2)最明显的是气候的变化。$(l:the_world/climate#seasons)夏季$()你会更热，$(l:the_world/climate#seasons)冬季$()你会更冷；住在$(l:the_world/climate#climate)极地$()会比住在$(l:the_world/climate#climate)热带$()更冷，诸如此类。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "wetness",
-			"text": "$(thing)Wetness$() will make you slightly colder, while also making you change temperature a bit faster. Unsurprisingly, you get wet from the rain or swimming, and dry off by... not touching water. Jumping in the water is a great way to cool down!$(br2)Standing in $(thing)direct sunlight$() increases temperature by a small amount that scales off the current climate temperature. Actively sprinting will also increase it a little."
+			"text": "$(thing)湿润度$()会让你稍微变冷，同时也会让你的体温变化得更快一点。不难理解，你会在淋雨或游泳时弄湿自己，而弄干的方法就是……不碰水。跳进水里是降温的好办法！$(br2)站在$(thing)直射阳光$()下会让体温小幅上升，幅度取决于当前气候温度。疾跑也会让体温略微上升。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "blocks",
-			"text": "Various nearby blocks can affect your temperature much more strongly. For example, you can warm up with a $(l:craftsmanship/firepit)Firepit$(), $(l:craftsmanship/charcoal_forge)Charcoal Forge$(), or blocks like $(item)Magma$() or $(thing)Lava$(), while blocks such as $(item)Packed Ice$() will cool you down."
+			"text": "附近的各种方块对体温的影响要强得多。例如，你可以靠$(l:craftsmanship/firepit)篝火$()、$(l:craftsmanship/charcoal_forge)木炭炉$()，或者$(item)岩浆块$()、$(thing)熔岩$()之类的方块取暖，而$(item)浮冰$()之类的方块则会给你降温。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "More precisely, blocks will influence your temperature if they are up to $(thing)9$() blocks away horizontally, up to $(thing)3$() blocks below you, and up to $(thing)5$() blocks above you (19x9x19). Of those blocks, only the 5 blocks with the strongest effects will influence your temperature, but any $(l:game_mechanics/heating)heating$() devices will always count."
+			"text": "更准确地说，水平距离 $(thing)9$() 格以内、你下方 $(thing)3$() 格以内、你上方 $(thing)5$() 格以内（19x9x19）的方块都会影响你的体温。在这些方块中，只有效果最强的 5 个会影响你的体温，但任何$(l:game_mechanics/heating)加热$()设备都会始终计入。"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Food and Drink",
+			"title": "食物与饮品",
 			"anchor": "food",
-			"text": "Some $(l:cooking)food$() and $(l:cooking/drinks)drinks$() may have effects that influence the player's temperature. These are:$(li)$(l:game_mechanics/mob_effects#cooling)Cooling$()$(li)$(l:game_mechanics/mob_effects#warming)Warming$()$(li)$(l:game_mechanics/mob_effects#freezing)Freezing$()$(li)$(l:game_mechanics/mob_effects#blazing)Blazing$()$(br2)Drinking $(l:cooking/drinks#spring_water)Spring Water$() will warm you up, and $(l:cooking/drinks#ice_slush)Ice Slush$() will cool you down."
+			"text": "某些$(l:cooking)食物$()和$(l:cooking/drinks)饮品$()可能带有影响玩家体温的效果，包括：$(li)$(l:game_mechanics/mob_effects#cooling)降温$()$(li)$(l:game_mechanics/mob_effects#warming)升温$()$(li)$(l:game_mechanics/mob_effects#freezing)冰冻$()$(li)$(l:game_mechanics/mob_effects#blazing)炽热$()$(br2)喝$(l:cooking/drinks#spring_water)温泉水$()会让你变暖，喝$(l:cooking/drinks#ice_slush)冰沙$()则会给你降温。"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Clothing",
+			"title": "服装",
 			"anchor": "clothing",
-			"text": "Wearing $(l:craftsmanship/clothing)clothes$() is another important way to change your temperature. Clothes can either warm you up or cool you down (or neither), and may also have an $(thing)insulation$() effect that reduces the amount that other temperatures can influence you.$(br2)Some head clothes will also protect against $(l:game_mechanics/player_temperature#wetness)direct sunlight$()."
+			"text": "穿$(l:craftsmanship/clothing)衣服$()是调节体温的另一种重要方式。衣服可以给你保暖或降温（也可能两者皆无），还可能带有$(thing)隔热$()效果，减少其他温度对你的影响。$(br2)一些头部衣物还能抵御$(l:game_mechanics/player_temperature#wetness)直射阳光$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfcambiental:house_tester",
 			"anchor": "house_tester",
-			"title": "Enclosed Spaces",
-			"text": "Creating an enclosed space such as a house will provide an insulating effect. Blocks such as doors, trapdoors, and window panes count as \"sealed\". If you are unsure, the $(item)House Tester$() will tell you!$(br2)This effect will only heat a house up to a maximum of 5°C, and does not work in larger structures."
+			"title": "封闭空间",
+			"text": "建造房屋这类封闭空间会提供保温效果。门、活板门和玻璃板等方块都算作“密封”。如果拿不准，$(item)房屋测试仪$()会告诉你！$(br2)这种效果最多只能把房子加热到 5°C，而且在更大的建筑中不起作用。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:heat_pump",
 			"anchor": "heat_pump",
-			"text": "Once you're able to $(thing)harness electricity$(), you can craft the $(item)Heat Pump$(), a multiblock that will warm up or cool down much larger sized buildings."
+			"text": "一旦你能$(thing)驾驭电力$()，就可以合成$(item)热泵$()了——这是一个多方块结构，能为大得多的建筑供暖或制冷。"
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "延伸阅读",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/climate",

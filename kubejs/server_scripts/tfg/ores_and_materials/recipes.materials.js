@@ -245,6 +245,25 @@ function addMaterialWelding(event, outputItem, inputItem1, inputItem2, material,
 }
 
 /**
+ * Removes the screws from the GT forming press turbine blade recipe.
+ * GT's recipe ID says "turbine_rotor", but it outputs the blade.
+ *
+ * @param {Internal.RecipesEventJS} event 
+ * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
+ */
+function processTurbineBlade(event, material) {
+	const bladeItem = ChemicalHelper.get(TagPrefix.turbineBlade, material, 1);
+	if (bladeItem.isEmpty())
+		return;
+
+	const materialName = material.getName();
+	global.modifyRecipe(event, `gtceu:forming_press/press_${materialName}_turbine_rotor`, {
+		newId: `tfg:press_${materialName}_turbine_blade`,
+		removeItemInputs: [`forge:screws/${materialName}`]
+	});
+}
+
+/**
  * @param {Internal.RecipesEventJS} event 
  */
 function registerTFGMaterialRecipes(event) {
@@ -341,6 +360,7 @@ function registerTFGMaterialRecipes(event) {
 			processBuzzsawBlade(event, material)
 			processPlatedBlock(event, material)
 			processAnvil(event, material)
+			processTurbineBlade(event, material)
 		}
 
 		if (material.hasProperty(PropertyKey.GEM)) {

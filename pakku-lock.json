@@ -13203,7 +13203,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "reliable_recipes-3.3.1+1.20.1-forge.jar",
+                    "file_name": "reliable_recipes-3.4.1+1.20.1-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13211,20 +13211,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/Hl4ARA1z/versions/ZKsEZGtK/reliable_recipes-3.3.1+1.20.1-forge.jar",
-                    "id": "ZKsEZGtK",
+                    "url": "https://cdn.modrinth.com/data/Hl4ARA1z/versions/goizDiGl/reliable_recipes-3.4.1+1.20.1-forge.jar",
+                    "id": "goizDiGl",
                     "parent_id": "Hl4ARA1z",
                     "hashes": {
-                        "sha512": "14496b93c8ebdef0057f584bc876a6b3153a4a81fac2a70e5893288e366795ee7807b4e22b2024f9beb89394333964385ee586ab7c61704bc57a61eff8432718",
-                        "sha1": "1fb11afbffa22e4cb2a964c049b972f001ace2d6"
+                        "sha512": "5a48731f4f80be7caa7a1f99b3be0830923e77edd56f7f825d3338e978c43b16b9f2e59d45151c4ec59629747e26b0810ad2ab9fdced7482cbb643b95c61e3cd",
+                        "sha1": "f82d36eb24e4c9a6b4709a813ff51cf60b47d993"
                     },
                     "required_dependencies": [],
-                    "size": 184856,
-                    "date_published": "2026-10-04T00:21:48.812963Z"
+                    "size": 198344,
+                    "date_published": "2026-10-07T21:48:08.198135Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "reliable_recipes-3.3.1+1.20.1-forge.jar",
+                    "file_name": "reliable_recipes-3.4.1+1.20.1-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13232,16 +13232,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9053/136/reliable_recipes-3.3.1+1.20.1-forge.jar",
-                    "id": "9053136",
+                    "url": "https://edge.forgecdn.net/files/9093/623/reliable_recipes-3.4.1+1.20.1-forge.jar",
+                    "id": "9093623",
                     "parent_id": "1414959",
                     "hashes": {
-                        "sha1": "1fb11afbffa22e4cb2a964c049b972f001ace2d6",
-                        "md5": "a2f478b7aa2f995c024d23f3a54ea182"
+                        "sha1": "f82d36eb24e4c9a6b4709a813ff51cf60b47d993",
+                        "md5": "45cbd0983fe0f932b41e00621dc1ff95"
                     },
                     "required_dependencies": [],
-                    "size": 184856,
-                    "date_published": "2026-10-04T00:21:49.117Z"
+                    "size": 198344,
+                    "date_published": "2026-10-07T21:48:08.123Z"
                 }
             ]
         },
@@ -13267,7 +13267,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "reliable_remover-3.4.0+1.20.1-forge.jar",
+                    "file_name": "reliable_remover-3.5.1+1.20.1-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13275,22 +13275,22 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/pLxsKvNt/versions/uc3AcPW4/reliable_remover-3.4.0+1.20.1-forge.jar",
-                    "id": "uc3AcPW4",
+                    "url": "https://cdn.modrinth.com/data/pLxsKvNt/versions/ziDEYJKa/reliable_remover-3.5.1+1.20.1-forge.jar",
+                    "id": "ziDEYJKa",
                     "parent_id": "pLxsKvNt",
                     "hashes": {
-                        "sha512": "7a12379b07a5a2a55fdb4d393c47c1f8b407b82c50c93a8a075a724c96a3b10e2927a9078e3a8220a46ce659b2049507f6d3690436cc56dc11587e863ca583c9",
-                        "sha1": "06981591b524b79b8c7e8cb3ae329341ac856075"
+                        "sha512": "5d369b278574e9d174f756ed00b6b9cc596929e7f79022d07b53aff72cd57ed0d9c0fe3e96808215378352750916af45b298f18cf0492555569ac405b9130dc5",
+                        "sha1": "9d0608a0048f32816e5b74e3a5f87051742433cf"
                     },
                     "required_dependencies": [
                         "Hl4ARA1z"
                     ],
-                    "size": 170125,
-                    "date_published": "2026-10-03T21:40:10.765667Z"
+                    "size": 175966,
+                    "date_published": "2026-10-09T06:49:21.540530Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "reliable_remover-3.4.0+1.20.1-forge.jar",
+                    "file_name": "reliable_remover-3.5.1+1.20.1-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13298,18 +13298,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9052/0/reliable_remover-3.4.0+1.20.1-forge.jar",
-                    "id": "9052000",
+                    "url": "https://edge.forgecdn.net/files/9105/526/reliable_remover-3.5.1+1.20.1-forge.jar",
+                    "id": "9105526",
                     "parent_id": "1420447",
                     "hashes": {
-                        "sha1": "06981591b524b79b8c7e8cb3ae329341ac856075",
-                        "md5": "c07c75767a05cea5f605591f7a4fa8d0"
+                        "sha1": "9d0608a0048f32816e5b74e3a5f87051742433cf",
+                        "md5": "c2f87890170b567afb427ad8260f448e"
                     },
                     "required_dependencies": [
                         "1414959"
                     ],
-                    "size": 170125,
-                    "date_published": "2026-10-03T21:40:11.407Z"
+                    "size": 175966,
+                    "date_published": "2026-10-09T06:49:16.353Z"
                 }
             ]
         },

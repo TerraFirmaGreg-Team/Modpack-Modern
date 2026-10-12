@@ -484,7 +484,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cotton",
-			"text": "$(bold)$(l:the_world/climate#temperature)溫度$()：10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：40 - 100 %$(br)$(bold)養分$()：氮$(br2)棉花是兩格高的作物。棉花種子可以種在耕地上，會長到兩格高，並產出$(item)棉球$()，可加工成$(thing)棉線$()或$(thing)布料$()。",
+			"text": "$(bold)$(l:the_world/climate#temperature)溫度$()：10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：40 - 100 %$(br)$(bold)養分$()：氮$(br2)棉花是兩格高的作物。棉花種子可以種在耕地上，會長到兩格高，並產出$(item)棉花球$()，可加工成$(thing)棉線$()或$(thing)布料$()。",
 			"title": "棉花"
 		},
 		{

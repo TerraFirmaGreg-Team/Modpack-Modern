@@ -21,7 +21,7 @@
             "anchor": "torches",
             "title": "火把",
             "item": "tfc:torch,tfc:dead_torch",
-            "text": "在$(l:craftsmanship/firepit)篝火$()或其他加熱裝置中加熱木棍或木棍捆即可製作火把。$(br)火把可以持續 3 天，之後會變成$(thing)熄滅的火把$()，可以用火把點擊它或對它使用生火工具來重新點燃。也可以用木棍點擊火把來點燃木棍。丟進水裡的火把會變成$(thing)草木灰$()或$(thing)木棍$()。"
+            "text": "在$(l:craftsmanship/firepit)篝火$()或其他加熱裝置中加熱木棒或木棒捆即可製作火把。$(br)火把可以持續 3 天，之後會變成$(thing)熄滅的火把$()，可以用火把點擊它或對它使用生火工具來重新點燃。也可以用木棒點擊火把來點燃木棒。丟進水裡的火把會變成$(thing)草木灰$()或$(thing)木棒$()。"
         },
         {
             "type": "tfg:multimultiblock",
@@ -87,7 +87,7 @@
             "anchor": "jack_o_lanterns",
             "title": "南瓜燈",
             "item": "tag:tfg:carved_pumpkins,tag:tfg:carved_pumpkins/lit",
-            "text": "南瓜燈是點燃的$(thing)雕刻南瓜$()，可以持續 4.5 天，之後會變回雕刻南瓜。$(br)手持南瓜並進行$(l:craftsmanship/sticks_and_stones)塑形$()即可雕刻南瓜。"
+            "text": "南瓜燈是點燃的$(thing)雕刻過的南瓜$()，可以持續 4.5 天，之後會變回雕刻過的南瓜。$(br)手持南瓜並進行$(l:craftsmanship/sticks_and_stones)塑形$()即可雕刻南瓜。"
         },
         {
             "type": "patchouli:multiblock",
@@ -113,7 +113,7 @@
             "anchor": "lamps",
             "title": "油燈",
             "item": "tag:tfc:lamps",
-            "text": "油燈是燃燒液態燃料的長期光源。油燈被破壞時會保留其燃料。你可以用$(thing)管道$()自動為油燈補充燃料，或用$(l:cooking/drinking_containers)流體容器$()手動補充。$(br)在$(emi)中查看油燈即可確認可用的燃料。$(thing)熔岩$()可以永久燃燒，但必須放在$(item)藍鋼油燈$()中。$(thing)液態螢石$()也一樣能永久燃燒，而且任何油燈都能使用。"
+            "text": "油燈是燃燒液態燃料的長期光源。油燈被破壞時會保留其燃料。你可以用$(thing)管道$()自動為油燈補充燃料，或用$(l:cooking/drinking_containers)流體容器$()手動補充。$(br)在$(emi)中查看油燈即可確認可用的燃料。$(thing)熔岩$()可以永久燃燒，但必須放在$(item)藍鋼油燈$()中。$(thing)液態螢光石$()也一樣能永久燃燒，而且任何油燈都能使用。"
         },
         {
             "type": "patchouli:multiblock",
@@ -144,7 +144,7 @@
             "anchor": "permanent_light",
             "title": "永久光源",
             "item": "minecraft:glowstone",
-            "text": "當你製作出$(item)提取機$()和$(item)流體固化機$()時，就可以開始用$(thing)液態螢石$()和$(thing)螢石方塊$()生產各種裝飾性的永久光源。$(br)除了推進科技之外，還有一些有創意的照明方式，例如$(l:agriculture/aqueducts)熔岩引水橋$()。"
+            "text": "當你製作出$(item)提取機$()和$(item)流體固化機$()時，就可以開始用$(thing)液態螢光石$()和$(thing)螢光石方塊$()生產各種裝飾性的永久光源。$(br)除了推進科技之外，還有一些有創意的照明方式，例如$(l:agriculture/aqueducts)熔岩引水橋$()。"
         },
         {
             "type": "patchouli:relations",

@@ -84,7 +84,7 @@
 			"type": "patchouli:crafting",
 			"recipe": "tfg:shaped/pulse_timer",
 			"anchor": "pulse_timer",
-			"text": "A $(item)Pulse Timer$() can provide redstone pulses at arbitrary intervals, such as dropping items into a $(l:craftsmanship/blast_furnace)Blast Furnace$()."
+			"text": "$(item)Czasomierz pulsacyjny$() może wysyłać impulsy redstone w dowolnych odstępach czasu. Może ci się to przydać np. przy wrzucaniu przedmiotów do $(l:craftsmanship/blast_furnace)pieca hutniczego$()."
 		},
 		{
 			"type": "patchouli:crafting",
@@ -108,7 +108,7 @@
 			"type": "patchouli:crafting",
 			"recipe": "create:crafting/logistics/content_observer",
 			"anchor": "smart_observer",
-			"text": "The $(item)Smart Observer$() is a more advanced version of a regular $(item)Observer$(). It can be filtered and can also detect changes in fluid levels."
+			"text": "$(item)Inteligentny detektor$() to zaawansowana wersja zwykłego $(item)detektora$(). Można go filtrować, a także pozwala na wykrywanie zmian poziomu płynów."
 		},
 		{
 			"type": "patchouli:crafting",

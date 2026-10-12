@@ -32,56 +32,56 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The $(item)gradient bar$() on the very bottom, replacing your XP bar, shows your $(thing)player temperature$() (the $(bold)white mark$()), the $(l:the_world/climate)current climate temperature$() (the $(bold)$(2)green 🔽$()), and the $(l:the_world/climate)average climate temperature$() (the $(bold)$(c)red 🔼$()), all at once.$(br2)The bar is split into 10°C segments, with the very middle representing 0°C."
+			"text": "最下方取代經驗條的$(item)漸層條$()會同時顯示你的$(thing)體溫$()($(bold)白色標記$())、$(l:the_world/climate)目前的氣候溫度$()($(bold)$(2)綠色 🔽$())和$(l:the_world/climate)平均氣候溫度$()($(bold)$(c)紅色 🔼$())。$(br2)漸層條以每 10°C 為一格，正中央代表 0°C。"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "What affects it?",
+			"title": "哪些因素會影響體溫？",
 			"anchor": "what_affects_it",
-			"text": "There are many things that influence your temperature!$(br2)The most obvious one is what your climate is doing. You will be hotter in the $(l:the_world/climate#seasons)summer$() and colder in the $(l:the_world/climate#seasons)winter$(), living in the $(l:the_world/climate#climate)Arctic$() will make you colder than living in the $(l:the_world/climate#climate)Tropics$(), and so on."
+			"text": "影響體溫的因素有很多！$(br2)最明顯的是你所在地的氣候。$(l:the_world/climate#seasons)夏天$()會比較熱，$(l:the_world/climate#seasons)冬天$()會比較冷；住在$(l:the_world/climate#climate)極地$()會比住在$(l:the_world/climate#climate)熱帶$()更冷，以此類推。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "wetness",
-			"text": "$(thing)Wetness$() will make you slightly colder, while also making you change temperature a bit faster. Unsurprisingly, you get wet from the rain or swimming, and dry off by... not touching water. Jumping in the water is a great way to cool down!$(br2)Standing in $(thing)direct sunlight$() increases temperature by a small amount that scales off the current climate temperature. Actively sprinting will also increase it a little."
+			"text": "$(thing)濕度$()會讓你稍微變冷，同時讓體溫變化得快一些。不出所料，淋雨或游泳會讓你變濕，而要變乾就……別碰水。跳進水裡是降溫的好方法！$(br2)站在$(thing)陽光直射$()下會讓體溫小幅上升，幅度取決於目前的氣候溫度。持續衝刺也會讓體溫稍微上升。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "blocks",
-			"text": "Various nearby blocks can affect your temperature much more strongly. For example, you can warm up with a $(l:craftsmanship/firepit)Firepit$(), $(l:craftsmanship/charcoal_forge)Charcoal Forge$(), or blocks like $(item)Magma$() or $(thing)Lava$(), while blocks such as $(item)Packed Ice$() will cool you down."
+			"text": "附近的各種方塊對體溫的影響要大得多。例如，你可以用$(l:craftsmanship/firepit)篝火$()、$(l:craftsmanship/charcoal_forge)木炭爐$()，或$(item)岩漿塊$()、$(thing)熔岩$()等方塊取暖，而$(item)冰磚$()等方塊則能讓你降溫。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "More precisely, blocks will influence your temperature if they are up to $(thing)9$() blocks away horizontally, up to $(thing)3$() blocks below you, and up to $(thing)5$() blocks above you (19x9x19). Of those blocks, only the 5 blocks with the strongest effects will influence your temperature, but any $(l:game_mechanics/heating)heating$() devices will always count."
+			"text": "更精確地說，水平距離 $(thing)9$() 格以內、下方 $(thing)3$() 格以內和上方 $(thing)5$() 格以內(19x9x19)的方塊都會影響你的體溫。在這些方塊中，只有效果最強的 5 個方塊會影響你的體溫，但任何$(l:game_mechanics/heating)加熱$()裝置一定會計入。"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Food and Drink",
+			"title": "飲食",
 			"anchor": "food",
-			"text": "Some $(l:cooking)food$() and $(l:cooking/drinks)drinks$() may have effects that influence the player's temperature. These are:$(li)$(l:game_mechanics/mob_effects#cooling)Cooling$()$(li)$(l:game_mechanics/mob_effects#warming)Warming$()$(li)$(l:game_mechanics/mob_effects#freezing)Freezing$()$(li)$(l:game_mechanics/mob_effects#blazing)Blazing$()$(br2)Drinking $(l:cooking/drinks#spring_water)Spring Water$() will warm you up, and $(l:cooking/drinks#ice_slush)Ice Slush$() will cool you down."
+			"text": "有些$(l:cooking)食物$()和$(l:cooking/drinks)飲料$()帶有影響體溫的效果，包括：$(li)$(l:game_mechanics/mob_effects#cooling)降溫$()$(li)$(l:game_mechanics/mob_effects#warming)保暖$()$(li)$(l:game_mechanics/mob_effects#freezing)凍結$()$(li)$(l:game_mechanics/mob_effects#blazing)灼熱$()$(br2)喝$(l:cooking/drinks#spring_water)溫泉水$()能讓你暖和起來，而$(l:cooking/drinks#ice_slush)冰沙$()能讓你降溫。"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Clothing",
+			"title": "衣物",
 			"anchor": "clothing",
-			"text": "Wearing $(l:craftsmanship/clothing)clothes$() is another important way to change your temperature. Clothes can either warm you up or cool you down (or neither), and may also have an $(thing)insulation$() effect that reduces the amount that other temperatures can influence you.$(br2)Some head clothes will also protect against $(l:game_mechanics/player_temperature#wetness)direct sunlight$()."
+			"text": "穿上$(l:craftsmanship/clothing)衣物$()是改變體溫的另一個重要方法。衣物可以讓你保暖或降溫(或兩者皆無)，也可能帶有$(thing)隔熱$()效果，減少其他溫度對你的影響。$(br2)有些頭部衣物也能保護你免受$(l:game_mechanics/player_temperature#wetness)陽光直射$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfcambiental:house_tester",
 			"anchor": "house_tester",
-			"title": "Enclosed Spaces",
-			"text": "Creating an enclosed space such as a house will provide an insulating effect. Blocks such as doors, trapdoors, and window panes count as \"sealed\". If you are unsure, the $(item)House Tester$() will tell you!$(br2)This effect will only heat a house up to a maximum of 5°C, and does not work in larger structures."
+			"title": "封閉空間",
+			"text": "打造房屋之類的封閉空間能提供隔熱效果。門、地板門和玻璃片等方塊都算是「密封」的。如果不確定，$(item)房屋測試器$()會告訴你！$(br2)這個效果最多只能讓房屋升溫到 5°C，而且在較大的建築中無效。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:heat_pump",
 			"anchor": "heat_pump",
-			"text": "Once you're able to $(thing)harness electricity$(), you can craft the $(item)Heat Pump$(), a multiblock that will warm up or cool down much larger sized buildings."
+			"text": "當你能夠$(thing)利用電力$()後，就可以製作$(item)熱泵$()，這是一種多方塊結構，能為大得多的建築加熱或降溫。"
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "延伸閱讀",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/climate",

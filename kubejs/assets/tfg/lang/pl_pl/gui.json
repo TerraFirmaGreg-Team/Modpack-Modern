@@ -49,6 +49,8 @@
 	"tfg.gui.spawn_condition.tooltip.temperate": "§lTen start polecany jest dla początkujących§r\n\nPodziwiaj piękno pór roku. Umiarkowany klimat sprzyja różnorodnej florze i faunie, o ile mogą one przetrwać zimowe miesiące. Ten start ma trochę wszystkiego, co TerraFirmaCraft ma do zaoferowania.",
 	"tfg.gui.spawn_condition.tooltip.tropical": "Wieczny raj. Ciesz się bujnymi lasami tropikalnymi i idealnymi całorocznymi warunkami do uprawy. Początek w tropikach ułatwi też pozyskiwanie lateksu i gliny kaolinowej. Przetrwanie tutaj powinno być proste, choć nieco upalne.",
 	"tfg.gui.spawn_condition.tooltip.beneath": "Prawdziwy test twoich zdolności. Rozpoczniesz w piekielnych Głębinach. Normalna progresja jest tu możliwa, ale spodziewaj się, że będzie bardzo trudna i będzie wymagała niestandardowych metod do przeżycia i rozwoju.",
+	"tfg.gui.spawn_condition.tooltip.default": "§lProponowany start dla nowych graczy§r\n\nZnany i kochany klasyk. Twoja historia zacznie się gdziekolwiek między strefą subtropikalną a subpolarną. Niech gra wybierze ci ciekawe miejsce, które powinno być przyjazne do życia.",
+	"tfg.gui.spawn_condition.tooltip.tfcgenviewer": "Wybrałeś własne ustawienia spawnu za pomocą funkcji §aPodglądu świata§r.\n\nJeżeli chcesz wrócić do normalnych ustawień, wyłącz §6Nakładke spawnu§r.",
 	"tfg.gui.mountain_scaling.title": "Skala gór",
 	"tfg.gui.mountain_scaling.none": "§aBrak skalowania§r",
 	"tfg.gui.mountain_scaling.low": "§bNiska§r",
@@ -62,6 +64,6 @@
 	"gui.tfg.chromatic_select.format": "&%1$s %2$s: %1$s",
 	"gui.tfg.color_select.title": "Wybierz kolor",
 	"gui.tfg.color_select.chromatic_btn": "§bEfekty chromatyczne",
-	"tfg.gui.ore_processing_gas.optimal_ratio.1": "Najlepsza wydajność, gdy zawór",
-	"tfg.gui.ore_processing_gas.optimal_ratio.2": "jest wypełniony gazem w połowie"
+	"tfg.gui.ore_processing_gas.optimal_ratio.1": "Największy uzysk, gdy zawór",
+	"tfg.gui.ore_processing_gas.optimal_ratio.2": "jest do połowy wypełniony gazem"
 }

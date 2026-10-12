@@ -1,5 +1,5 @@
 {
-    "name": "Barrels",
+    "name": "大桶",
     "category": "tfg:craftsmanship",
     "icon": "tfc:wood/barrel/oak",
     "pages": [
@@ -27,7 +27,7 @@
         {
             "type": "patchouli:text",
             "text": "大桶的主要作用是用来混合某些液体和物品。用$(thing)大桶$()合成时，桶内的液体和物品的比例必须正确无误。某些配方还需要将大桶$(thing)密封$()一段时间才能执行。",
-            "title": "Crafting"
+            "title": "合成"
         },
         {
             "type": "patchouli:text",
@@ -37,37 +37,37 @@
             "type": "tfg:instant_barrel_recipe",
             "anchor": "limewater",
             "recipe": "tfc:barrel/limewater",
-            "text": "$(bold)Limewater$() is made by adding $(item)Flux$() to a barrel of $(thing)Water$(). A single $(item)Flux$() is required for every $(thing) 500 mB$() of $(thing)Water$(). $(thing)Limewater$() is a reagent used in $(l:agriculture/leather_making)Leather Making$(), and is used to make $(thing)Mortar$()."
+            "text": "$(bold)石灰水$()是把 $(item)助焊剂$()加进一桶 $(thing)水$() 里制成的。一个$(item)助焊剂$()对应每 $(thing)500 mB$() 的$(thing)水$()。$(thing)石灰水$()是$(l:agriculture/leather_making)制皮术$()中用到的一种试剂，也用于制作$(thing)砂浆$()。"
         },
         {
             "type": "tfg:sealed_barrel_recipe",
             "anchor": "tannin",
             "recipe": "tfc:barrel/tannin",
-            "text": "$(bold)Tannin$() is an acidic fluid, made by dissolving bark from certain $(t:#tfc:makes_tannin)$(6)Logs$() in a barrel of $(thing)Water$(). $(thing)Oak$(), $(thing)Birch$(), $(thing)Chestnut$(), $(thing)Douglas Fir$(), $(thing)Hickory$(), $(thing)Maple$(), and $()Sequoia$() are all able to be used to create $(thing)Tannin$().$(br)$(bold)TIP$(): Search $(emi) for $(6)#makes_tannin$() for a full list of useable logs."
+            "text": "$(bold)鞣酸$()是一种酸性流体，把某些 $(t:#tfc:makes_tannin)$(6)原木$()的树皮溶解在一桶$(thing)水$()里即可制得。$(thing)橡木$()、$(thing)桦木$()、$(thing)栗木$()、$(thing)花旗松$()、$(thing)山核桃木$()、$(thing)枫木$()和$()红杉木$()都可以用来制作$(thing)鞣酸$()。$(br)$(bold)提示$()：在 $(emi) 中搜索 $(6)#makes_tannin$() 可查看可用原木的完整列表。"
         },
         {
             "type": "patchouli:text",
             "anchor": "fluid_mixing",
-            "title": "Fluid Mixing",
-            "text": "Some barrel recipes operate by mixing two fluids at a certain ratio. This is done by taking a filled bucket of one of the ingredients, and putting it in the fluid addition slot of a barrel that has the required amount of the other fluid. This is done with $(thing)Vinegar$() and $(thing)Salt Water$() to make $(item)Brine$() in a 1:9 ratio."
+            "title": "流体混合",
+            "text": "有些大桶配方需要按一定比例混合两种流体。做法是：拿一桶装满其中一种原料的桶，放进已装有所需量另一种流体的大桶的流体添加槽中。比如将 $(thing)醋$()和 $(thing)海水$()按 1:9 的比例混合，就能制成 $(item)卤水$()。"
         },
         {
             "type": "patchouli:text",
-            "title": "Quenching",
+            "title": "淬火",
             "anchor": "quenching",
-            "text": "Barrels have the ability to cool $(l:game_mechanics/heating)hot$() items. Put a hot item in a barrel of $(thing)Water$(), $(thing)Cooking Oil$(), or $(thing)Ice Slush$(), and it will quickly bring its temperature down.$(br)You can even directly throw items into the barrel with $(item)$(k:key.drop)$()."
+            "text": "大桶可以冷却 $(l:game_mechanics/heating)高温$()物品。把滚烫的物品放进装有 $(thing)水$()、$(thing)食用油$()或 $(thing)冰沙$()的大桶里，它的温度会迅速降下来。$(br)你甚至可以用 $(item)$(k:key.drop)$()直接把物品丢进大桶。"
         },
         {
             "type": "patchouli:text",
-            "title": "Dyeing",
+            "title": "染色",
             "anchor": "dyeing",
-            "text": "Barrels have the ability to $(thing)Dye$() and $(thing)Bleach$() items. Most color-able things, like carpet, candles, and $(l:craftsmanship/building_materials#alabaster)Alabaster$() can be dyed by sealing them in a barrel of dye or bleached by sealing them in a barrel of lye."
+            "text": "大桶可以给物品 $(thing)染色$()和 $(thing)漂白$()。大多数可染色的东西，比如地毯、蜡烛和 $(l:craftsmanship/building_materials#alabaster)雪花石膏$()，都可以通过密封在装有染料的大桶里来染色，或密封在装有碱液的大桶里来漂白。"
         },
         {
             "type": "patchouli:text",
-            "title": "Preservation",
+            "title": "保鲜",
             "anchor": "preservation",
-            "text": "Barrels can preserve items in $(thing)Vinegar$(). Vinegar is made by sealing $(thing)Fruit$() in a barrel of $(thing)Alcohol$(). For information on how that process works, see the relevant $(l:cooking/decay#vinegar)page$()."
+            "text": "大桶可以用 $(thing)醋$()来保存物品。醋是通过把 $(thing)水果$()密封在一桶 $(thing)酒$()中制成的。想知道这个过程的原理，请参见相关的 $(l:cooking/decay#vinegar)页面$()。"
         },
         {
             "type": "patchouli:crafting",
@@ -111,12 +111,12 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Redstone",
-            "text": "Barrels can be automated with $(thing)Redstone$(). Applying a redstone signal to a barrel will seal it. Unsealed barrels can have fluids and items inserted and extracted from their open face. Sealed barrels can safely be moved around with $(thing)Pistons$() or $(thing)Contraptions$(). A $(l:logistics/redstone_devices#clock)Precision Clock$() can detect when a barrel recipe has finished and output a signal."
+            "title": "红石",
+            "text": "大桶可以用 $(thing)红石$()实现自动化。给大桶施加红石信号即可将其密封。未密封的大桶可以从开口面插入和抽出流体与物品。密封的大桶则可以安全地用 $(thing)活塞$()或 $(thing)动态结构$()搬来搬去。$(l:logistics/redstone_devices#clock)精密时钟$()能检测大桶配方何时完成并输出信号。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/sticks_and_stones",

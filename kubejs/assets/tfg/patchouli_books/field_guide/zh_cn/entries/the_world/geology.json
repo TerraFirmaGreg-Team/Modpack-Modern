@@ -1,17 +1,17 @@
 {
-    "name": "Earth Geology",
+    "name": "地球地质学",
     "category": "tfg:the_world",
     "icon": "tfc:rock/loose/gabbro",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "text": "The world of $(tfg) is divided into large continents - landmasses many kilometers wide and seperated by oceans. In these, you may find mountain ranges, rivers, and many other formations. Here you will learn about the geology of Earth and how rock layers are determined."
+            "text": "$(tfg)的世界划分为大型大陆——宽数公里、被海洋分隔的陆地。在大陆上，你会发现山脉、河流以及许多其他地貌。本章将向你介绍地球地质，以及岩层是如何确定的。"
         },
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:the_world/geology#rocks)Rock Layers$()$(li)$(bold)$(l:the_world/geology#metamorphism)Metamorphism$()$(li)$(bold)$(l:the_world/geology#ocean_floors)Ocean Floors$()$(li)$(bold)$(l:the_world/geology#uplift_regions)Uplift Regions$()$(li)$(bold)$(l:the_world/geology#rock_devisions)Rock Devisions$()$(li2)$(l:the_world/geology#sedimentary)Sedimentary$()$(li2)$(l:the_world/geology#metamorphic)Metamorphic$()$(li2)$(l:the_world/geology#igneous_extrusive)Igneous Extrusive$()$(li2)$(l:the_world/geology#igneous_intrusive)Igneous Intrusive$()$(li)$(bold)$(l:the_world/geology#rock_classifiers)Rock Classifiers$()$(li2)$(l:the_world/geology#sedimentary_carbonate)Sedimentary-Carbonate$()$(li2)$(l:the_world/geology#sedimentary_clastic)Sedimentary-Clastic$()$(li2)$(l:the_world/geology#sedimentary_organic)Sedimentary-Organic$()$(li2)$(l:the_world/geology#igneous_felsic)Igneous-Felsic$()$(li2)$(l:the_world/geology#igneous_intermediate)Igneous-Intermediate$()$(li2)$(l:the_world/geology#igneous_mafic)Igneous-Mafic$()$(li2)$(l:the_world/geology#igneous_ultramafic)Igneous-ultramafic$()"
+            "text": "$(li)$(bold)$(l:the_world/geology#rocks)岩层$()$(li)$(bold)$(l:the_world/geology#metamorphism)变质作用$()$(li)$(bold)$(l:the_world/geology#ocean_floors)大洋底$()$(li)$(bold)$(l:the_world/geology#uplift_regions)隆起现象$()$(li)$(bold)$(l:the_world/geology#rock_devisions)岩石大类$()$(li2)$(l:the_world/geology#sedimentary)沉积岩$()$(li2)$(l:the_world/geology#metamorphic)变质岩$()$(li2)$(l:the_world/geology#igneous_extrusive)喷出岩$()$(li2)$(l:the_world/geology#igneous_intrusive)侵入岩$()$(li)$(bold)$(l:the_world/geology#rock_classifiers)岩石类别$()$(li2)$(l:the_world/geology#sedimentary_carbonate)沉积岩-碳酸盐岩$()$(li2)$(l:the_world/geology#sedimentary_clastic)沉积岩-碎屑岩$()$(li2)$(l:the_world/geology#sedimentary_organic)沉积岩-有机质$()$(li2)$(l:the_world/geology#igneous_felsic)火成岩-长英质$()$(li2)$(l:the_world/geology#igneous_intermediate)火成岩-中性$()$(li2)$(l:the_world/geology#igneous_mafic)火成岩-镁铁质$()$(li2)$(l:the_world/geology#igneous_ultramafic)火成岩-超镁铁质$()"
         },
         {
             "type": "patchouli:image",
@@ -22,7 +22,7 @@
             "images": [
                 "tfg:textures/gui/field_guide/maps/terrain_map.png"
             ],
-            "text": "A 65.5km² map displaying average continental formations and mainstream rivers with their tributaries.",
+            "text": "一张65.5km²的地图，展示典型的大陆形态，以及干流河流及其支流。",
             "border": true
         },
         {
@@ -34,13 +34,13 @@
             "images": [
                 "tfg:textures/gui/field_guide/maps/biomes_map.png"
             ],
-            "text": "A 65.5km² map displaying average biome distribution based on local $(l:the_world/climate#climate)Climate$().",
+            "text": "一张65.5km²的地图，展示基于当地$(l:the_world/climate#climate)气候$()的平均生物群系分布。",
             "border": true
         },
         {
             "type": "patchouli:text",
             "anchor": "rocks",
-            "text": "The world is divided up into different types of $(thing)Rock$(). Rock regions can be over a kilometer across, and there will usually be two or three different rock layers under your feet at all times. As different ores are found in different rock types, locating specific rock types can be very important for finding resources such as $(thing)Ores$(), which will often only appear in certain rock types.",
+            "text": "世界的地下由不同类型的$(thing)岩石$()构成。岩石区域的跨度可达一公里以上，而且你的脚下通常随时都有两到三层不同的岩层。不同的矿石分布于不同的岩石类型中，因此找到特定的岩石类型对寻找$(thing)矿石$()等资源十分重要——矿石往往只会出现在特定的岩石类型中。",
             "title": "岩层"
         },
         {
@@ -59,7 +59,7 @@
             "type": "patchouli:text",
             "anchor": "metamorphism",
             "text": "$(li)$(thing)板岩$()形成于$(thing)页岩$()、$(thing)泥岩$()和$(thing)砾岩$()之下。$(li)$(thing)大理岩$()形成于$(thing)石灰岩$()、$(thing)白云岩$()和$(thing)白垩岩$()之下。$(li)$(thing)石英岩$()形成于$(thing)硅质岩$()之下。$(li)$(thing)千枚岩$()形成于$(thing)板岩$()之下。$(li)$(thing)片岩$()和$(thing)片麻岩$()形成于$(thing)千枚岩$()或其他侵入岩之下。",
-            "title": "Metamorphism"
+            "title": "变质作用"
         },
         {
             "type": "patchouli:text",
@@ -70,123 +70,123 @@
         {
             "type": "patchouli:text",
             "anchor": "uplift_regions",
-            "text": "Finally, in mountainous regions you might also see $(thing)uplift$(), where a metamorphic or igneous intrusive rock is found on the surface. Uplift rocks can be found above other continental sedimentary or higher-grade metamorphic rocks.$(br2)In addition, $(l:https://en.wikipedia.org/wiki/Dike_%28geology%29)Dikes$() - small vertical slices of igneous intrusive rock - may appear scattered around the world.",
+            "text": "最后，在山地区域你还可能看到$(thing)隆起$()，即变质岩或侵入岩直接出露于地表。隆起岩石位于其他大陆沉积岩或更高级变质岩的上方。$(br2)此外，$(l:https://en.wikipedia.org/wiki/Dike_%28geology%29)岩脉$()——由侵入岩形成的小型垂直岩片——也可能零星分布在世界各处。",
             "title": "隆起现象"
         },
         {
             "type": "patchouli:text",
             "anchor": "rock_devisions",
-            "title": "Rock Devisions",
-            "text": "Rocks in $(tfg_short) are typically classified among four devisions: $(l:the_world/geology#sedimentary)Sedimentary$(), $(l:the_world/geology#metamorphic)Metamorphic$(), $(l:the_world/geology#igneous_extrusive)Igneous Extrusive$(), and $(l:the_world/geology#igneous_intrusive)Igneous Intrusive$(). These categories determine where the rock can spawn, and also what ores may spawn in this rock."
+            "title": "岩石大类",
+            "text": "$(tfg_short)中的岩石通常分为四大类：$(l:the_world/geology#sedimentary)沉积岩$()、$(l:the_world/geology#metamorphic)变质岩$()、$(l:the_world/geology#igneous_extrusive)喷出岩$()和$(l:the_world/geology#igneous_intrusive)侵入岩$()。这些类别决定了岩石的生成位置，以及这种岩石中可能生成哪些矿石。"
         },
         {
-            "title": "Sedimentary",
+            "title": "沉积岩",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:raw_stone/sedimentary"
             },
             "anchor": "sedimentary",
-            "text": "$(l:https://en.wikipedia.org/wiki/Sedimentary_rock)Sedimentary$() rocks are formed by the accumulation or deposition of mineral or organic particles. They are typically found on the top layers of rock in continental areas."
+            "text": "$(l:https://en.wikipedia.org/wiki/Sedimentary_rock)沉积岩$()由矿物或有机颗粒堆积、沉积而成，通常出现在大陆地区的顶层岩层中。"
         },
         {
-            "title": "Metamorphic",
+            "title": "变质岩",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:raw_stone/metamorphic"
             },
             "anchor": "metamorphic",
-            "text": "$(l:https://en.wikipedia.org/wiki/Metamorphic_rock)Metamorphic$() rocks are created by a process called metamorphism. They can be found underneath corresponding sedimentary or igneous rock, or in uplift areas."
+            "text": "$(l:https://en.wikipedia.org/wiki/Metamorphic_rock)变质岩$()由一种叫做变质作用的过程形成，通常位于相应的沉积岩或火成岩之下，或出现在隆起区域中。"
         },
         {
-            "title": "Igneous Extrusive",
+            "title": "喷出岩",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:raw_stone/igneous_extrusive"
             },
             "anchor": "igneous_extrusive",
-            "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Extrusive)Igneous Extrusive$() rocks are formed from magma cooling on the Earth's surface. They can be found on the top layer of rock in continental areas, or on the floor of oceans."
+            "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Extrusive)喷出岩$()由岩浆在地表冷却形成，通常出现在大陆地区的顶层岩层或大洋底部。"
         },
         {
-            "title": "Igneous Intrusive",
+            "title": "侵入岩",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:raw_stone/igneous_intrusive"
             },
             "anchor": "igneous_intrusive",
-            "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Intrusive)Igneous Intrusive$() rocks are formed from magma which cooled under the Earth's crust. They can be found deep underground, or rarely in dikes or uplift areas."
+            "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Intrusive)侵入岩$()由岩浆在地壳之下冷却形成，通常位于地下深处，偶尔出现在岩脉或隆起区域中。"
         },
         {
             "type": "patchouli:text",
             "anchor": "rock_classifiers",
-            "text": "On top of $(l:the_world/geology#rock_devisions)Rock Devisions$(), rocks are further categorized by their chemical compositions.",
-            "title": "Rock Classifiers"
+            "text": "除了$(l:the_world/geology#rock_devisions)岩石大类$()之外，岩石还会按其化学成分进一步分类。",
+            "title": "岩石类别"
         },
         {
-            "title": "Sedimentary-Carbonate",
+            "title": "沉积岩-碳酸盐岩",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:stone_composition/raw/sedimentary_carbonate"
             },
             "anchor": "sedimentary_carbonate",
-            "text": "$(l:https://en.wikipedia.org/wiki/Carbonate_rock)Sedimentary-Carbonate$() rocks are composed primarily of carbonate minerals like calcite."
+            "text": "$(l:https://en.wikipedia.org/wiki/Carbonate_rock)沉积岩-碳酸盐岩$()主要由方解石等碳酸盐矿物组成。"
         },
         {
-            "title": "Sedimentary-Clastic",
+            "title": "沉积岩-碎屑岩",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:stone_composition/raw/sedimentary_clastic"
             },
             "anchor": "sedimentary_clastic",
-            "text": "$(l:https://en.wikipedia.org/wiki/Clastic_rock)Sedimentary-Clastic$() rocks are composed of fragmants (clasts) of pre-existing minerals or rocks."
+            "text": "$(l:https://en.wikipedia.org/wiki/Clastic_rock)沉积岩-碎屑岩$()由已有矿物或岩石的碎块（碎屑）组成。"
         },
         {
-            "title": "Sedimentary-Organic",
+            "title": "沉积岩-有机质",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:stone_composition/raw/sedimentary_organic"
             },
             "anchor": "sedimentary_organic",
-            "text": "$(l:https://en.wikipedia.org/wiki/Organic-rich_sedimentary_rocks)Sedimentary-Organic$() rocks are formed from the breakdown or fossilization of organic matter like shells or bacteria."
+            "text": "$(l:https://en.wikipedia.org/wiki/Organic-rich_sedimentary_rocks)沉积岩-有机质$()由贝壳或细菌等有机物分解或石化而形成。"
         },
         {
-            "title": "Igneous-Felsic",
+            "title": "火成岩-长英质",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:stone_composition/raw/igneous_felsic"
             },
             "anchor": "igneous_felsic",
-            "text": "$(l:https://en.wikipedia.org/wiki/Felsic)Igneous-Felsic$() rocks contain a rich presence of elements that form feldspar and quartz. Generally a rock must contain more than 75% of felsic minerals to be classified as $(thing)Felsic$()."
+            "text": "$(l:https://en.wikipedia.org/wiki/Felsic)火成岩-长英质$()岩石富含形成长石和石英的元素。一般来说，岩石中长英质矿物的含量必须超过75%才能被归类为$(thing)长英质$()。"
         },
         {
-            "title": "Igneous-Intermediate",
+            "title": "火成岩-中性",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:stone_composition/raw/igneous_intermediate"
             },
             "anchor": "igneous_intermediate",
-            "text": "$(l:https://en.wikipedia.org/wiki/Intermediate_composition)Igneous-Intermediate$() rocks contain 51.5 - 63.0 wt% SiO₂, putting them in between $(l:the_world/geology#igneous_felsic)Felsic$() and $(l:the_world/geology#igneous_mafic)Mafic$() compositions."
+            "text": "$(l:https://en.wikipedia.org/wiki/Intermediate_composition)火成岩-中性$()岩石含有51.5 - 63.0 wt%的SiO₂，成分介于$(l:the_world/geology#igneous_felsic)长英质$()和$(l:the_world/geology#igneous_mafic)镁铁质$()之间。"
         },
         {
-            "title": "Igneous-Mafic",
+            "title": "火成岩-镁铁质",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:stone_composition/raw/igneous_mafic"
             },
             "anchor": "igneous_mafic",
-            "text": "$(l:https://en.wikipedia.org/wiki/Mafic)Igneous-Mafic$() rocks contain a rich presence of magnesium and iron minerals."
+            "text": "$(l:https://en.wikipedia.org/wiki/Mafic)火成岩-镁铁质$()岩石富含镁矿物和铁矿物。"
         },
         {
-            "title": "Igneous-Ultramafic",
+            "title": "火成岩-超镁铁质",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:stone_composition/raw/igneous_ultramafic"
             },
             "anchor": "igneous_ultramafic",
-            "text": "$(l:https://en.wikipedia.org/wiki/Mafic)Igneous-Ultramafic$() rocks contain a very low concentration of silica."
+            "text": "$(l:https://en.wikipedia.org/wiki/Mafic)火成岩-超镁铁质$()岩石的二氧化硅含量极低。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/climate",

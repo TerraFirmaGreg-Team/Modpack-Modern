@@ -12,7 +12,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:craftsmanship/clothing#curios)關於飾品欄$()$(li)$(bold)早期衣物$()$(li2)$(l:craftsmanship/clothing#straw_hat)草帽$()$(li2)$(l:craftsmanship/clothing#primitive)原始衣物$()$(li2)$(l:craftsmanship/clothing#insulated_leather)皮革$()$(li)$(bold)進階衣物$()$(li2)$(l:craftsmanship/clothing#cloth)布料$()$(li2)$(l:craftsmanship/clothing#hides)動物毛皮$()$(li2)$(l:craftsmanship/clothing#fully_insulated)完全隔熱$()$(li)$(bold)$(l:craftsmanship/clothing#table)衣物數值表$()$(li)$(bold)其他衣物$()$(li2)$(l:logistics/exploration_gear#snowshoes)雪鞋$()$(li2)$(l:logistics/exploration_gear#snorkel)呼吸管$()和$(l:logistics/exploration_gear#flippers)蛙鞋$()$(li2)$(l:game_mechanics/hazards#mask)口罩$()$(li2)$(l:game_mechanics/hazards#gloves)橡膠手套$()$(li)$(bold)$(l:craftsmanship/clothing#armor_trim)衣物紋飾$()"
+			"text": "$(li)$(bold)$(l:craftsmanship/clothing#curios)關於飾品欄$()$(li)$(bold)早期衣物$()$(li2)$(l:craftsmanship/clothing#straw_hat)稻草帽$()$(li2)$(l:craftsmanship/clothing#primitive)原始衣物$()$(li2)$(l:craftsmanship/clothing#insulated_leather)皮革$()$(li)$(bold)進階衣物$()$(li2)$(l:craftsmanship/clothing#cloth)布料$()$(li2)$(l:craftsmanship/clothing#hides)動物毛皮$()$(li2)$(l:craftsmanship/clothing#fully_insulated)完全隔熱$()$(li)$(bold)$(l:craftsmanship/clothing#table)衣物數值表$()$(li)$(bold)其他衣物$()$(li2)$(l:logistics/exploration_gear#snowshoes)雪鞋$()$(li2)$(l:logistics/exploration_gear#snorkel)呼吸管$()和$(l:logistics/exploration_gear#flippers)蛙鞋$()$(li2)$(l:game_mechanics/hazards#mask)口罩$()$(li2)$(l:game_mechanics/hazards#gloves)橡膠手套$()$(li)$(bold)$(l:craftsmanship/clothing#armor_trim)衣物紋飾$()"
 		},
 		{
 			"type": "patchouli:image",
@@ -32,8 +32,8 @@
 			"type": "tfg:knapping_recipe",
 			"recipe": "sns:straw_knapping/straw_hat",
 			"anchor": "straw_hat",
-			"title": "草帽",
-			"text": "你能製作的第一件衣物是簡單的$(item)草帽$()，用$(l:craftsmanship/building_materials#thatch)乾草$()製成。它能保護你免受$(l:game_mechanics/player_temperature#wetness)陽光直射$()。"
+			"title": "稻草帽",
+			"text": "你能製作的第一件衣物是簡單的$(item)稻草帽$()，用$(l:craftsmanship/building_materials#thatch)乾草$()製成。它能保護你免受$(l:game_mechanics/player_temperature#wetness)陽光直射$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -144,7 +144,7 @@
 					"bold": true
 				},
 				{
-					"text": "草帽"
+					"text": "稻草帽"
 				},
 				{
 					"text": "低"
@@ -180,7 +180,7 @@
 					"text": "+10"
 				},
 				{
-					"text": "皮革圍裙"
+					"text": "皮圍裙"
 				},
 				{
 					"text": "中"
@@ -228,7 +228,7 @@
 					"text": "+5"
 				},
 				{
-					"text": "棉"
+					"text": "棉花"
 				},
 				{
 					"text": "中"
@@ -407,7 +407,7 @@
 					"text": "+10"
 				},
 				{
-					"text": "北美馴鹿"
+					"text": "馴鹿"
 				},
 				{
 					"text": "高"

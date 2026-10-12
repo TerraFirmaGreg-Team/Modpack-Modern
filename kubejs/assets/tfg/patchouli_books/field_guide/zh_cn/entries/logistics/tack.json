@@ -1,94 +1,94 @@
 {
-    "name": "Tack & Carts",
+    "name": "马具与马车",
     "category": "tfg:logistics",
     "icon": "sns:metal/horseshoe/steel",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:logistics/tack#saddle)Saddle$()$(li)$(bold)$(l:logistics/tack#armor)Horse Armor$()$(li)$(bold)$(l:logistics/tack#horseshoes)Horseshoes$()$(li)$(bold)$(l:logistics/tack#supply_cart)Supply Cart$()$(li)$(bold)$(l:logistics/tack#plow)Plow$()$(li)$(bold)$(l:logistics/tack#animal_cart)Animal Cart$()$(li)$(bold)$(l:logistics/tack#paving_cart)Paving Cart$()",
-            "title": "Index",
+            "text": "$(li)$(bold)$(l:logistics/tack#saddle)鞍$()$(li)$(bold)$(l:logistics/tack#armor)马铠$()$(li)$(bold)$(l:logistics/tack#horseshoes)马蹄铁$()$(li)$(bold)$(l:logistics/tack#supply_cart)马车$()$(li)$(bold)$(l:logistics/tack#plow)犁$()$(li)$(bold)$(l:logistics/tack#animal_cart)牲畜运输车$()$(li)$(bold)$(l:logistics/tack#paving_cart)铺路车$()",
+            "title": "目录",
             "anchor": "index"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "saddle",
-            "title": "Saddle",
+            "title": "鞍",
             "item": "minecraft:saddle",
-            "text": "A $(item)Saddle$() can be equipped on any adult $(l:agriculture/animal_husbandry#equines)Equine$() or $(l:agriculture/animal_husbandry#camelides)Camel$() when their maturity is at least above 15%. Saddles are crafted from $(l:agriculture/leather_making)Leather$() and allow you to ride suitable animals to direct their movements."
+            "text": "$(item)鞍$()可以装备在任何成年$(l:agriculture/animal_husbandry#equines)马科动物$()或$(l:agriculture/animal_husbandry#camelides)骆驼$()身上，要求其成熟度至少高于15%。鞍由$(l:agriculture/leather_making)皮革$()制成，让你能够骑乘合适的动物并操控它们的移动。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "armor",
-            "title": "Horse Armor",
+            "title": "马铠",
             "item": "minecraft:leather_horse_armor,tfc:metal/horse_armor/bismuth_bronze,tfc:metal/horse_armor/black_bronze,tfc:metal/horse_armor/bronze,tfc:metal/horse_armor/copper,tfc:metal/horse_armor/wrought_iron,tfc:metal/horse_armor/steel,tfc:metal/horse_armor/black_steel,tfc:metal/horse_armor/red_steel,tfc:metal/horse_armor/blue_steel",
-            "text": "$(item)Horse Armor$() can be equipped on any adult $(l:agriculture/animal_husbandry#equines)Horse$() when their maturity is at least above 15%. Horse armor can be made from $(l:agriculture/leather_making)Leather$() and $(l:craftsmanship/metallurgy)Metal$() and provide extra protection to your mount. Leather armor may also be dyed."
+            "text": "$(item)马铠$()可以装备在任何成年$(l:agriculture/animal_husbandry#equines)马$()身上，要求其成熟度至少高于15%。马铠可以用$(l:agriculture/leather_making)皮革$()和$(l:craftsmanship/metallurgy)金属$()制作，为你的坐骑提供额外保护。皮革马铠还可以染色。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "horseshoes",
-            "title": "Horseshoes",
+            "title": "马蹄铁",
             "item": "sns:metal/horseshoes/steel,sns:metal/horseshoes/black_steel,sns:metal/horseshoes/blue_steel,sns:metal/horseshoes/red_steel",
-            "text": "$(item)Horseshoes$() are smithed individually from types of steel and then combined into sets. When equiped on any $(l:agriculture/animal_husbandry#equines)Equine$() or $(l:agriculture/animal_husbandry#equines)Camilide Mammal$() they provide great benefits to their stats which can be viewed in the item description.$(br)$(bold)TIP:$() It's a good idea to tie up your mount properly when using a higher tier horseshoes."
+            "text": "$(item)马蹄铁$()用各类钢材逐个锻造，再组合成套。装备在$(l:agriculture/animal_husbandry#equines)马科动物$()或$(l:agriculture/animal_husbandry#equines)骆驼科哺乳动物$()身上时，它们会大幅提升动物的性能，具体可在物品描述中查看。$(br)$(bold)提示：$()使用更高等级的马蹄铁时，最好把你的坐骑妥善拴好。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "supply_cart",
             "title": "马车",
             "item": "tag:tfcastikorcarts:supply_cart",
-            "text": "$(item)Supply Carts$() can be attached to ridden animals with $(item)$(k:key.astikorcarts.desc)$() or pulled manually. Supply carts can hold a large amount of items in their storage, accessed with $(item)$(k:key.sneak)-$(k:key.use)$(). However, too many items, or a few very heavy items will cause your mount to slow down considerably."
+            "text": "$(item)马车$()可以用$(item)$(k:key.astikorcarts.desc)$()连接到骑乘中的动物上，也可以手动拖拽。马车能存储大量物品，按$(item)$(k:key.sneak)-$(k:key.use)$()即可打开。不过，物品装得太多，或者哪怕只有几件特别重的物品，都会让你的坐骑明显减速。"
         },
         {
             "type": "patchouli:entity",
             "entity": "tfcastikorcarts:supply_cart/oak",
             "scale": 0.4,
             "name": " ",
-            "text": "The supply cart will physically display the first few items in its inventory."
+            "text": "马车会把物品栏最前面的几件物品实体展示出来。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "plow",
             "title": "犁",
             "item": "tag:tfcastikorcarts:plow",
-            "text": "A $(item)Plow$() can be attached to ridden animals with $(item)$(k:key.astikorcarts.desc)$() or pulled manually. Plows can hold 3 tools, accessed with $(item)$(k:key.sneak)-$(k:key.use)$(). The plow will attempt to use these tools on blocks below them when engaged with $(item)$(k:key.use)$(). Meaning that they can use $(thing)Hoes and Scythes$() to till soil, use $(thing)Shovels and Spades$() to pave paths, and even use $(thing)Axes$() to strip logs."
+            "text": "$(item)犁$()可以用$(item)$(k:key.astikorcarts.desc)$()连接到骑乘中的动物上，也可以手动拖拽。犁可以装3件工具，按$(item)$(k:key.sneak)-$(k:key.use)$()即可存取。启动后（$(item)$(k:key.use)$()），犁会尝试对下方的方块使用这些工具。也就是说，它可以用$(thing)锄头和镰刀$()翻耕土壤，用$(thing)铲子和铁锹$()铺设小路，甚至能用$(thing)斧头$()给原木剥皮。"
         },
         {
             "type": "patchouli:entity",
             "entity": "tfcastikorcarts:plow/oak",
             "scale": 0.4,
             "name": " ",
-            "text": "The plow will display its tools. It will be engaged when its arms are lowered."
+            "text": "犁会显示它装载的工具。当它的支臂放下时便会开始工作。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "animal_cart",
             "title": "牲畜运输车",
             "item": "tag:tfcastikorcarts:animal_cart",
-            "text": "An $(item)Animal Cart$() can be attached to ridden animals with $(item)$(k:key.astikorcarts.desc)$() or pulled manually. Animal carts can hold up to $(thing)2 animals$(), which automatically enter the cart when run over with it."
+            "text": "$(item)牲畜运输车$()可以用$(item)$(k:key.astikorcarts.desc)$()连接到骑乘中的动物上，也可以手动拖拽。牲畜运输车最多可以装$(thing)2只动物$()，驾车从它们身上碾过时，它们会自动进入车里。"
         },
         {
             "type": "patchouli:entity",
             "entity": "tfcastikorcarts:animal_cart/oak",
             "scale": 0.4,
             "name": " ",
-            "text": "The animal cart can even hold other players."
+            "text": "牲畜运输车甚至可以搭载其他玩家。"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Paving Cart",
+            "title": "铺路车",
             "anchor": "paving_cart",
             "item": "tfg:rnr_plow",
-            "text": "The $(thing)Paving Cart$() is a specialized cart used for laying down road surfaces quickly and efficiently. Read more about them in the entry for $(l:logistics/roads#paving_cart)Roads$()."
+            "text": "$(thing)铺路车$()是一种专用车，可以快速高效地铺设路面。更多信息请参阅$(l:logistics/roads#paving_cart)道路$()条目。"
         },
         {
             "type": "patchouli:entity",
             "entity": "tfg:rnr_plow",
             "scale": 0.4,
-            "name": "Paving Cart",
-            "text": "The paving cart will be engaged when its blades are lowered."
+            "name": "铺路车",
+            "text": "铺路车的刀片放下时便会开始工作。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/metallurgy",

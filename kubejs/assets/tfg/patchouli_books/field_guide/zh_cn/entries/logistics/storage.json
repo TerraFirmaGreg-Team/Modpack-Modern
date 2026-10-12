@@ -1,31 +1,31 @@
 {
-    "name": "Storage",
+    "name": "存储",
     "category": "tfg:logistics",
     "icon": "tfc:wood/chest/douglas_fir",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)Item Storage$()$(li2)$(l:logistics/storage#chests)Chests$()$(li2)$(l:logistics/storage#crates)Crates$()$(li2)$(l:logistics/storage#vaults)Vaults$()$(li2)$(l:logistics/storage#super_chests)Super Chests$()$(li)$(bold)Item & Fluid Storage$()$(li2)$(l:logistics/storage#ae2)ME Storage$()$(li2)$(l:logistics/storage#kegs)Kegs$()$(li)$(bold)Fluid Storage$()$(li2)$(l:logistics/storage#barrels)Barrels$()$(li2)$(l:logistics/storage#drums)Drums$()$(li2)$(l:logistics/storage#fluid_tanks)Fluid Tanks$()$(li2)$(l:logistics/storage#multiblock_tanks)Multiblock Tanks$()$(li2)$(l:logistics/storage#super_tanks)Super Tanks$()",
-            "title": "Index",
+            "text": "$(li)$(bold)物品存储$()$(li2)$(l:logistics/storage#chests)箱子$()$(li2)$(l:logistics/storage#crates)板条箱$()$(li2)$(l:logistics/storage#vaults)物品保险库$()$(li2)$(l:logistics/storage#super_chests)超级箱$()$(li)$(bold)物品与流体存储$()$(li2)$(l:logistics/storage#ae2)ME 存储$()$(li2)$(l:logistics/storage#kegs)大酒桶$()$(li)$(bold)流体存储$()$(li2)$(l:logistics/storage#barrels)大桶$()$(li2)$(l:logistics/storage#drums)储液桶$()$(li2)$(l:logistics/storage#fluid_tanks)储液罐$()$(li2)$(l:logistics/storage#multiblock_tanks)多方块储罐$()$(li2)$(l:logistics/storage#super_tanks)超级储罐$()",
+            "title": "目录",
             "anchor": "index"
         },
         {
             "type": "patchouli:text",
-            "title": "Introduction",
+            "title": "简介",
             "anchor": "intro",
-            "text": "There are a vast amount of items, materials, and fluids that you will accumulate in $(tfg). It will be important to set up vast storage systems to organize everything. Some of the most important aspects of storage is its $(thing)capacity$() and $(thing)restrictions$(). For on-the-go inventory management you should read up on $(l:logistics/personal_storage)Personal Storage$()."
+            "text": "在 $(tfg) 中，你会积累海量的物品、材料和流体。搭建庞大的存储系统来整理这一切非常重要。存储最关键的要素是其$(thing)容量$()和$(thing)限制$()。关于随身物品管理，请阅读$(l:logistics/personal_storage)个人存储$()。"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Chests",
+            "title": "箱子",
             "anchor": "chests",
             "item": "tag:forge:chests",
-            "text": "Chest can store 18 items or 36 items for double chests. Chests can hold item sized up to $(l:game_mechanics/size_and_weight)Large$().$(br)If $(thing)Food Items$() are present in chests then it will attract rodents. So it is best to store them in $(item)Vessels$()."
+            "text": "箱子可以存放 18 组物品，大箱子为 36 组。箱子可以容纳最大为$(l:game_mechanics/size_and_weight)大型$()的物品。$(br)如果箱子里放有$(thing)食物类物品$()，就会招来啮齿动物。所以最好把食物存放在$(item)小缸$()里。"
         },
         {
             "type": "patchouli:multiblock",
             "enable_visualize": false,
-            "text": "$(bold)TIP$(): Chests come in all wood varients!",
+            "text": "$(bold)提示$()：箱子拥有全部木材变种！",
             "multiblock": {
                 "pattern": [
                     [
@@ -45,12 +45,12 @@
             "title": "板条箱",
             "anchor": "crates",
             "item": "tag:gtceu:crates",
-            "text": "For storage, GregTech has $(item)Crates$() which can hold all sizes of items, with advancing tiers having larger capacity, from 27 to 144 slots.$(br)Crates support logistics covers such as $(thing)Item Filters$(), and $(thing)Rotten Voiding Covers$().$(br)You can even wrap crates with $(item)Tape$() to keep their contents when broken, allowing you to transport large quantities of items."
+            "text": "在存储方面，GregTech 提供了$(item)板条箱$()，可以容纳所有尺寸的物品，等级越高容量越大，从 27 格到 144 格不等。$(br)板条箱支持$(thing)物品过滤器$()、$(thing)腐烂物销毁覆盖板$()等物流覆盖板。$(br)你甚至可以用$(item)胶带$()封装箱子，拆掉时保留其内容物，方便你大量运输物品。"
         },
         {
             "type": "patchouli:multiblock",
             "enable_visualize": false,
-            "text": "$(bold)TIP$(): Wooden crates are quite cheap and make for good log storage.",
+            "text": "$(bold)提示$()：木质板条箱相当便宜，很适合存放原木。",
             "multiblock": {
                 "pattern": [
                     [
@@ -67,14 +67,14 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Vaults",
+            "title": "物品保险库",
             "anchor": "vaults",
             "item": "create:item_vault,create_connected:item_silo",
-            "text": "Create $(item)Vaults$() are a great method for consolidating a large amount of items, or for adding storage to $(thing)moving contraptions$().$(br)Vaults can be built into large 3D structures to expand their storage by 20 slots per vault. You cannot add/remove items to vaults manually, you will need to use item logistics such as hoppers."
+            "text": "机械动力的$(item)物品保险库$()是整合大量物品的绝佳方式，也可以给$(thing)运动中的装置$()增加存储。$(br)多个保险库可以拼成大型 3D 结构，每个保险库扩展 20 格存储空间。你无法手动放入或取出保险库中的物品，需要使用漏斗之类的物品物流设备。"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "$(bold)TIP$(): $(item)Shipping Containers$() are a colorful alternative to vaults.",
+            "text": "$(bold)提示$()：$(item)集装箱$()是保险库的多彩替代品。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -148,15 +148,15 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Super Chests",
+            "title": "超级箱",
             "anchor": "super_chests",
             "item": "tag:gtceu:super_chests",
-            "text": "Super and Quantum chests are the best way to store and absurd quantity of one item type. The amount of items the chest can hold increases per tier, from 10,000 to 1,024,000,000. Super chests also have built in item voiding, locking, and auto-extraction options."
+            "text": "超级箱和量子箱是存放海量单一物品的最佳方式。箱子可容纳的物品数量随等级提升，从 10,000 到 1,024,000,000。超级箱还内置了物品销毁、锁定和自动抽取选项。"
         },
         {
             "type": "patchouli:multiblock",
             "enable_visualize": false,
-            "text": "$(bold)TIP$(): Super chests can be picked up with items inside.",
+            "text": "$(bold)提示$()：超级箱可以在装有物品的情况下直接搬走。",
             "multiblock": {
                 "pattern": [
                     [
@@ -173,15 +173,15 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "ME Storage",
+            "title": "ME 存储",
             "anchor": "ae2",
             "item": "ae2:drive",
-            "text": "Advanced Energistics $(item)Drives$() and $(item)Cells$() allow you to digitize your storage into a very capable and dense logistics and crafting network. Connect an $(item)ME Controller$() and $(thing)Terminal$() to view items inside."
+            "text": "AE2 的$(item)ME驱动器$()和$(item)存储元件$()能让你把存储数字化，构成能力强大且高度密集的物流与合成网络。接上$(item)ME控制器$()和$(thing)终端$()即可查看其中的物品。"
         },
         {
             "type": "patchouli:multiblock",
             "enable_visualize": false,
-            "text": "$(bold)TIP$(): Higher tier cells can fit more item types, and more \"bytes\".",
+            "text": "$(bold)提示$()：更高等级的存储元件能容纳更多物品种类，以及更多「字节」。",
             "multiblock": {
                 "pattern": [
                     [
@@ -198,15 +198,15 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Kegs",
+            "title": "大酒桶",
             "anchor": "kegs",
             "item": "tag:firmalife:big_barrels",
-            "text": "$(item)Kegs$() have the unique ability to store large amounts of items $(italics)and$() fluids.$(br)Kegs can hold any fluid a barrel can, up to 80,000 mB worth, and can hold up to 36 stacks of $(l:game_mechanics/size_and_weight)Large$() items.$(br2)Kegs cannot process recipes or age alcohol like barrels."
+            "text": "$(item)大酒桶$()拥有独一无二的存储能力，可以同时存放大量物品$(italics)和$()流体。$(br)大酒桶能装任何大桶能装的流体，最多 80,000 mB，还能容纳最多 36 组$(l:game_mechanics/size_and_weight)大型$()物品。$(br2)但大酒桶不能像大桶那样处理配方或陈酿美酒。"
         },
         {
             "type": "patchouli:multiblock",
             "enable_visualize": false,
-            "text": "$(bold)TIP$(): You can insert and extract automatically from any block of the keg.",
+            "text": "$(bold)提示$()：可以从大酒桶的任意一个方块自动输入和抽取。",
             "multiblock": {
                 "pattern": [
                     [
@@ -232,15 +232,15 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Barrels",
+            "title": "大桶",
             "anchor": "barrels",
             "item": "tag:tfc:barrels",
-            "text": "$(l:craftsmanship/barrels)Barrels$() aren't just useful for recipes. They are a very cheap way of holding plenty of fluid, up to 10,000 mB per barrel.$(br)When placed on their side, barrels can drip fluid from their tap into containers below, allowing them to auto-ouput at a steady rate.$(br)You can carry a filled barrel on your back to transport its contents."
+            "text": "$(l:craftsmanship/barrels)大桶$()不只对配方有用。它们是储存大量流体非常廉价的方式，每桶最多 10,000 mB。$(br)侧放时，大桶可以从龙头把流体滴进下方的容器，从而以稳定的速率自动输出。$(br)你还可以把装满的大桶背在背上运输其中的东西。"
         },
         {
             "type": "patchouli:multiblock",
             "enable_visualize": false,
-            "text": "$(bold)TIP$(): Barrels can collect rain water when left open exposed to the sky.",
+            "text": "$(bold)提示$()：大桶敞口朝天空放置时可以收集雨水。",
             "multiblock": {
                 "pattern": [
                     [
@@ -260,12 +260,12 @@
             "title": "桶",
             "anchor": "drums",
             "item": "tag:gtceu:drums",
-            "text": "$(item)Drums$() are great for storing and carrying fluids. These can hold a large amount of a single fluid type, and different tiers hold more, from 32,000 to 1,024,000 mB worth.$(br2)Drums will retain their fluid when broken, making them ideal for moving fluids around.$(br2)Drums can automatically push fluid out of their bottom face by $(item)$(k:key.use)$() them with a $(thing)Soft Mallet$() or $(thing)Screwdriver$()."
+            "text": "$(item)储液桶$()非常适合存储和携带流体。它们能存放大量单一类型的流体，等级越高容量越大，从 32,000 到 1,024,000 mB 不等。$(br2)储液桶被拆除时会保留其中的流体，是转移流体的理想选择。$(br2)用 $(item)$(k:key.use)$() 配合$(thing)软锤$()或$(thing)螺丝刀$()，即可让储液桶从底面自动排出流体。"
         },
         {
             "type": "patchouli:multiblock",
             "enable_visualize": false,
-            "text": "$(bold)TIP$(): Drums can have fluid logistic covers placed on their faces.",
+            "text": "$(bold)提示$()：储液桶的各个面都可以放置流体物流覆盖板。",
             "multiblock": {
                 "pattern": [
                     [
@@ -282,14 +282,14 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Fluid Tanks",
+            "title": "储液罐",
             "anchor": "fluid_tanks",
             "item": "create:fluid_tank,create_connected:fluid_vessel,fluidlogistics:multi_fluid_tank",
-            "text": "$(item)Fluid Tanks$() can be seen as the fluid version of $(l:logistics/storage#vaults)Vaults$(). Individual tanks hold 32,000 mB each, and can be formed into structures to expand their capacity.$(br2)$(item)Multi-Fluid Tanks$() can hold multiple fluid types at a time, but cannot be interacted with manually."
+            "text": "$(item)储液罐$()可以看作$(l:logistics/storage#vaults)物品保险库$()的流体版本。单个储液罐可容纳 32,000 mB，还可以拼成结构以扩展容量。$(br2)$(item)多流体储罐$()可以同时容纳多种流体，但无法手动与之交互。"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "$(bold)TIP$(): Tanks can be $(item)$(k:key.use)$() with a $(thing)Wrench$() to hide/show their window.",
+            "text": "$(bold)提示$()：对储液罐 $(item)$(k:key.use)$() 一把$(thing)扳手$()即可隐藏/显示它的观察窗。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -419,14 +419,14 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Multiblock Tanks",
+            "title": "多方块储罐",
             "anchor": "multiblock_tanks",
             "item": "gtceu:wooden_multiblock_tank,gtceu:bronze_multiblock_tank,gtceu:steel_multiblock_tank",
-            "text": "$(item)Multiblock Tanks$() are structures dedicated to storing large quantities of fluids. Each type can have up to two valves and increase in capacity by tier.$(li)$(bold)Wooden Tank$(): 1,000,000 mB Capacity$(li)$(bold)Bronze Tank$(): 4,000,000 mB Capacity$(li)$(bold)Steel Tank$(): 8,000,000 mB Capacity"
+            "text": "$(item)多方块储罐$()是专门用于存储大量流体的结构。每种类型最多可以有两个阀门，容量随等级提升。$(li)$(bold)木制储罐$()：容量 1,000,000 mB$(li)$(bold)青铜储罐$()：容量 4,000,000 mB$(li)$(bold)钢制储罐$()：容量 8,000,000 mB"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "$(bold)TIP$(): Multiblock tanks will auto-push fluids from valves on its bottom face.",
+            "text": "$(bold)提示$()：多方块储罐会从底面的阀门自动输出流体。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -537,15 +537,15 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Super Tanks",
+            "title": "超级缸",
             "anchor": "super_tanks",
             "item": "tag:gtceu:super_tanks",
-            "text": "Super and Quantum tanks work similarly to their $(l:logistics/storage#super_chests)Super Chest$() counterparts. They can store an absurd amount of one type of fluid―ranging from 1,000,000 to 1,024,000,000 mb―increasing by tier.$(br)Super Tanks have options for auto-output, voiding, and locking."
+            "text": "超级缸和量子缸的用法与$(l:logistics/storage#super_chests)超级箱$()类似。它们能存储单一种类的流体，数量极其惊人——从1,000,000到1,024,000,000 mb不等，随等级逐级提升。$(br)超级缸支持自动输出、销毁与锁定选项。"
         },
         {
             "type": "patchouli:multiblock",
             "enable_visualize": false,
-            "text": "$(bold)TIP$(): Super tanks can be picked up with fluid inside.",
+            "text": "$(bold)提示$()：超级缸里装着流体也能直接挖走。",
             "multiblock": {
                 "pattern": [
                     [
@@ -562,7 +562,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/barrels",

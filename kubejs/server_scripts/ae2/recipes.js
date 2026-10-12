@@ -790,7 +790,7 @@ const registerAE2Recipes = (event) => {
 			'#gtceu:circuits/mv')
 		.itemOutputs('4x ae2:blank_pattern')
 		.duration(20*10)
-		.EUt(GTValues.VA[GTValues.HV])
+		.EUt(GTValues.VHA[GTValues.MV])
 		.dimension('ad_astra:moon')
 		.circuit(1))
 
@@ -803,7 +803,7 @@ const registerAE2Recipes = (event) => {
 			'#gtceu:circuits/hv')
 		.itemOutputs('16x ae2:blank_pattern')
 		.duration(20*20)
-		.EUt(GTValues.VA[GTValues.IV])
+		.EUt(GTValues.VHA[GTValues.HV])
 		.dimension('ad_astra:moon')
 		.circuit(2))
 
@@ -816,7 +816,7 @@ const registerAE2Recipes = (event) => {
 			'#gtceu:circuits/ev')
 		.itemOutputs('64x ae2:blank_pattern')
 		.duration(20*40)
-		.EUt(GTValues.VA[GTValues.EV])
+		.EUt(GTValues.VHA[GTValues.EV])
 		.dimension('ad_astra:moon')
 		.circuit(3))
 

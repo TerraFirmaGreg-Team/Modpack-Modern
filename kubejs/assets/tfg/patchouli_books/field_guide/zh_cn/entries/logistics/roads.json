@@ -1,44 +1,44 @@
 {
-    "name": "Roads",
+    "name": "道路",
     "category": "tfg:logistics",
     "icon": "rnr:rock/sett_road/quartzite",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:logistics/roads#intro)Road Construction$()$(li)$(bold)$(l:logistics/roads#mattock)Mattocks$()$(li)$(bold)$(l:logistics/roads#base_course)Base Course$()$(li)$(bold)$(l:logistics/roads#pavers)Pavers$()$(li2)$(l:logistics/roads#hoggin)Hoggin Mix$()$(li2)$(l:logistics/roads#gravel_fill)Gravel Fill$()$(li2)$(l:logistics/roads#stone)Cobble, Sett, & Flagstones$()$(li2)$(l:logistics/roads#concrete)Concrete$()$(li2)$(l:logistics/roads#asphalt)Asphalt$()$(li)$(bold)$(l:logistics/roads#paving_cart)Paving Cart$()",
-            "title": "Index",
+            "text": "$(li)$(bold)$(l:logistics/roads#intro)道路修筑$()$(li)$(bold)$(l:logistics/roads#mattock)鹤嘴锄$()$(li)$(bold)$(l:logistics/roads#base_course)基层$()$(li)$(bold)$(l:logistics/roads#pavers)铺面材料$()$(li2)$(l:logistics/roads#hoggin)碎石混合料$()$(li2)$(l:logistics/roads#gravel_fill)砾石填料$()$(li2)$(l:logistics/roads#stone)圆石、仿石砖与铺路砖$()$(li2)$(l:logistics/roads#concrete)混凝土$()$(li2)$(l:logistics/roads#asphalt)沥青$()$(li)$(bold)$(l:logistics/roads#paving_cart)铺路车$()",
+            "title": "目录",
             "anchor": "index"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introduction",
-            "text": "Road construction is vital for increasing land-transport efficiency and consists of three basic steps:$(li)$(bold)1:$() Tamping the native soil with a $(l:logistics/roads#mattock)Mattock$().$(li)$(bold)2:$() Laying down $(l:logistics/roads#base_course)Crushed Base Course$().$(li)$(bold)3:$() Laying the surface $(l:logistics/roads#pavers)Paving Material$().$(br)Different varieties of road use different ingredients."
+            "title": "简介",
+            "text": "修筑道路对提升陆路运输效率至关重要，包含三个基本步骤：$(li)$(bold)1：$()用$(l:logistics/roads#mattock)鹤嘴锄$()夯实原状土壤。$(li)$(bold)2：$()铺设$(l:logistics/roads#base_course)碎石基层$()。$(li)$(bold)3：$()铺上路面$(l:logistics/roads#pavers)铺面材料$()。$(br)不同种类的道路使用不同的材料。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tag:rnr:mattocks",
-            "title": "Mattocks",
+            "title": "鹤嘴锄",
             "anchor": "mattock",
-            "text": "A mattock can be used on dirt-type blocks similarly to a $(l:craftsmanship/chisel)Chisel$(). When used in the default block mode, a mattock will tamp these blocks down with $(item)$(k:key.use)$(). If the mattock was used to tamp mud or muddy roots, the resulting tamped mud must be remediated by applying crushed base course."
+            "text": "鹤嘴锄可以像$(l:craftsmanship/chisel)凿子$()一样用在泥土类方块上。在默认的方块模式下，对这类方块按 $(item)$(k:key.use)$() 即可将其夯实。如果鹤嘴锄夯实的是泥土或泥根，得到的夯实泥土必须再铺上碎石基层予以修整。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "rnr:crushed_base_course",
-            "title": "Base Course",
+            "title": "基层",
             "anchor": "base_course",
-            "text": "After the local soil has been tamped down, the next step is to lay a base course for the road. Crushed base course can be crafted with either gravel or stone dust mixed with loose rocks, and can be applied to tamped blocks via $(item)$(k:key.use)$(). This base course of crushed rocks creates a sturdy base for the final walking surface to rest upon."
+            "text": "当地土壤夯实后，下一步就是为道路铺设基层。碎石基层可以用砾石或石粉与石子混合制成，对已夯实的方块按 $(item)$(k:key.use)$() 即可铺设。这层碎石基层会形成坚固的基础，供最终的步行路面承载其上。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tag:rnr:road_materials",
-            "title": "Pavers",
+            "title": "铺面材料",
             "anchor": "pavers",
-            "text": "The final step in creating a road is laying the road surface. Different items, including $(l:logistics/roads#stone)Bricks$(), $(l:logistics/roads#hoggin)Hoggin$(), and $(l:logistics/roads#stone)Loose Rocks$() can be applied via $(item)$(k:key.use)$() on top of a base course to form a walkable road. Different items result in different varieties of road, and different varieties of road allow for various boosts to walking speeds."
+            "text": "筑路的最后一步是铺设路面。不同的物品——包括$(l:logistics/roads#stone)砖$()、$(l:logistics/roads#hoggin)碎石$()和$(l:logistics/roads#stone)石子$()——都可以通过 $(item)$(k:key.use)$() 铺在基层上，形成可行走的道路。不同的物品会形成不同种类的道路，而不同种类的道路会提供不同的行走速度加成。"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Process of tamping, applying base course, and paving with bricks.",
+            "text": "夯实、铺设基层、再用砖铺面的筑路流程。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -98,12 +98,12 @@
             "type": "patchouli:spotlight",
             "anchor": "hoggin",
             "item": "rnr:hoggin_mix",
-            "title": "Hoggin Mix",
-            "text": "$(item)Hoggin$() is a compactible groundcover made from a mixture of clay, gravel, and sand. It can be applied on a base course to produce a simple path that offers a modest $(thing)$(bold)10% Boost$() to walking speed and allows $(item)Animal Cranks$() to run at 16RPM."
+            "title": "碎石混合料",
+            "text": "$(item)碎石$()是一种由黏土、砾石和沙混合而成的可压实铺地材料。把它铺在基层上就能形成简易小径，提供$(thing)$(bold)10% 加成$()的行走速度，并允许$(item)畜力曲柄$()以 16RPM 运转。"
         },
         {
             "type": "patchouli:multiblock",
-            "text": "Road construction via hoggin mix.",
+            "text": "用碎石混合料筑路。",
             "enable_visualize": false,
             "multiblock": {
                 "pattern": [
@@ -131,12 +131,12 @@
             "type": "patchouli:spotlight",
             "anchor": "gravel_fill",
             "item": "tag:rnr:gravel_road_items",
-            "title": "Gravel & Macadam",
-            "text": "A small amount of $(thing)Gravel Fill$() can be applied to a base course to produce a simple path that offers a modest $(thing)$(bold)10% Boost$() to walking speed. Additional gravel fill can be added and tamped to create a $(thing)Macadam Road$() that gives a $(thing)$(bold)20% Speed Boost$().$(br)All paving materials above hoggin will allow $(item)Animal Cranks$() to run at 32RPM."
+            "title": "砾石与马克当碎石路",
+            "text": "在基层上铺少量$(thing)砾石填料$()即可形成简易小径，提供$(thing)$(bold)10% 加成$()的行走速度。继续添加砾石填料并夯实，可以筑成$(thing)马克当碎石路$()，提供$(thing)$(bold)20% 速度加成$()。$(br)所有比碎石更高级的铺面材料都能让$(item)畜力曲柄$()以 32RPM 运转。"
         },
         {
             "type": "patchouli:multiblock",
-            "text": "Road construction via gravel fill.",
+            "text": "用砾石填料筑路。",
             "enable_visualize": false,
             "multiblock": {
                 "pattern": [
@@ -166,12 +166,12 @@
             "type": "patchouli:spotlight",
             "anchor": "stone",
             "item": "tag:rnr:flagstone_road_items,tag:rnr:cobble_road_items,tag:rnr:brick_road_items",
-            "title": "Stone Pavers",
-            "text": "A variety of different stone walking surfaces can be applied over a base course, and all provide a $(thing)$(bold)20% Speed Bonus$().$(li)$(thing)$(bold)Cobbled Roads$() are created by adding $(item)Loose Rocks$() over the base course.$(li)$(thing)$(bold)Sett Roads$() can be constructed from stone or ceramic $(item)Bricks$().$(li)$(thing)$(bold)Flagstone Roads$() can be constructed from stone or sandstone $(item)Flagstones$()."
+            "title": "石质铺面材料",
+            "text": "基层之上可以铺设多种不同的石质步行路面，全部提供$(thing)$(bold)20% 速度加成$()。$(li)$(thing)$(bold)圆石路$()：在基层上添加$(item)石子$()即可筑成。$(li)$(thing)$(bold)仿石砖路$()：用石头或陶制的$(item)砖$()筑成。$(li)$(thing)$(bold)铺路砖路$()：用石头或砂岩的$(item)铺路砖$()筑成。"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Road construction via various stone finishes.",
+            "text": "用各种石质饰面筑路。",
             "enable_visualize": false,
             "multiblocks": [
                 {
@@ -243,12 +243,12 @@
             "type": "patchouli:spotlight",
             "item": "tag:rnr:concrete_roads",
             "anchor": "concrete",
-            "title": "Concrete",
-            "text": "Concrete roads offer a $(thing)$(bold)30% Movement Speed Bonus$() when properly constructed. However, road builders must be diligent when constructing concrete roads to prevent them from $(4)cracking$() or being $(4)trodden$() on while wet, as this will remove the speed bonus."
+            "title": "混凝土",
+            "text": "混凝土路在正确施工时可提供$(thing)$(bold)30% 移动速度加成$()。但修筑混凝土路时必须勤加留意，防止其在未干时$(4)开裂$()或被$(4)踩踏$()，否则速度加成会失效。"
         },
         {
             "type": "patchouli:image",
-            "title": "Concrete Road",
+            "title": "混凝土路",
             "images": [
                 "rnr:textures/gui/book/concrete_road.png"
             ],
@@ -257,8 +257,8 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "wet_concrete",
-            "title": "Mixing Concrete",
-            "text": "$(thing)Concrete Roads$() are poured from $(item)Wet Concrete Mix$(). First, Combine water with stone dusts and a binder such as gypsum or clay to produce $(thing)Liquid Concrete$(). Then, dilute the liquid concrete with water to produce $(thing)Wet Concrete Mix$(). Ready for pouring.",
+            "title": "搅拌混凝土",
+            "text": "$(thing)混凝土路$()由$(item)湿混凝土混合物$()浇筑而成。首先，将水与石粉以及石膏或黏土等黏合剂混合，制成$(thing)液态混凝土$()。然后，用水稀释液态混凝土，制成$(thing)湿混凝土混合物$()。即可用于浇筑。",
             "item": "rnr:bucket/concrete"
         },
         {
@@ -267,7 +267,7 @@
         },
         {
             "type": "patchouli:image",
-            "title": "Pouring Concrete",
+            "title": "浇筑混凝土",
             "images": [
                 "rnr:textures/gui/book/wet_concrete.png"
             ],
@@ -275,7 +275,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Shrinkage cracking is also a concern as concrete sets. If concrete is poured in areas more than $(bold)4x4$() blocks wide, blocks that are farther than two blocks from the nearest $(thing)Edge$(), $(thing)Control Joint$(), or $(thing)Textured Finish$() will crack when set. This can be prevented by pouring concrete in smaller areas, using a $(thing)Mattock$() to add $(thing)Control Joints$(), or by applying a $(thing)Textured Finish$()."
+            "text": "混凝土凝固时还会出现收缩开裂的问题。如果混凝土浇筑的区域宽度超过 $(bold)4x4$() 方块，那么距离最近的$(thing)边缘$()、$(thing)控制缝$()或$(thing)纹理饰面$()超过两个方块的方块在凝固时就会开裂。可以通过小面积浇筑、用$(thing)鹤嘴锄$()添加$(thing)控制缝$()，或施加$(thing)纹理饰面$()来避免。"
         },
         {
             "type": "patchouli:image",
@@ -287,7 +287,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(thing)Textured Finishes$() are created by pressing $(thing)Bricks$(), $(thing)Flagstones$(), or $(thing)Smooth Stone Blocks$() into drying concrete to create an architectural finish. These blocks also act as $(thing)Control Joints$() for preventing cracking. Once concrete has finished drying, a $(l:craftsmanship/chisel)Chisel$() can be used to form slabs and stairs."
+            "text": "$(thing)纹理饰面$()是将$(thing)砖$()、$(thing)铺路砖$()或$(thing)平滑石块$()压入干燥中的混凝土而形成的建筑饰面。这些方块同时起到$(thing)控制缝$()的作用，可防止开裂。混凝土干燥完成后，可以用$(l:craftsmanship/chisel)凿子$()加工出台阶和楼梯。"
         },
         {
             "type": "patchouli:image",
@@ -299,7 +299,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Road construction via concrete pouring.",
+            "text": "通过浇筑混凝土筑路。",
             "enable_visualize": false,
             "multiblocks": [
                 {
@@ -372,12 +372,12 @@
         {
             "type": "patchouli:text",
             "anchor": "asphalt",
-            "title": "Asphalt",
-            "text": "Asphalt roads are an advanced road type relying on oil and $(tfg_short) production lines.$(br)After preparing the base course, you can pour $(thing)Asphalt Mixture$() over it. It will briefly become $(thing)Hot Asphalt$() before solidifying into a durable $(item)Asphalt Road$().$(br)A properly built asphalt road gives a $(thing)$(bold)40% Movement Speed Bonus$()."
+            "title": "沥青",
+            "text": "沥青路是一种依赖石油和 $(tfg_short) 生产线的高级道路类型。$(br)准备好基层后，你可以把$(thing)沥青混合料$()浇在上面。它会短暂地变成$(thing)热沥青路$()，随后凝固成耐用的$(item)沥青路$()。$(br)施工得当的沥青路可提供$(thing)$(bold)40% 移动速度加成$()。"
         },
         {
             "type": "patchouli:image",
-            "title": "Asphalt Road",
+            "title": "沥青路",
             "images": [
                 "tfg:textures/gui/field_guide/asphalt_roads/overview.png"
             ],
@@ -391,14 +391,14 @@
             "type": "patchouli:spotlight",
             "anchor": "tar_chunk",
             "item": "tfg:tar_chunk",
-            "title": "Tar Chunk",
+            "title": "焦油块料",
             "text": "沥青路的原料是石油。将$(thing)石油$()、$(thing)原油$()、$(thing)重油$()等流体在$(thing)流体固化器$()中固化成对应的$(thing)焦油$()，再用$(thing)提取机$()加工成$(thing)焦油块料$()。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "asphalt_mix",
             "item": "tfg:asphalt_mix_bucket",
-            "title": "Asphalt Mixture",
+            "title": "沥青混合料",
             "text": "在$(thing)搅拌机$()中用焦油块料与$(thing)石粉$()制成$(thing)沥青结合料$()。若加入$(thing)硬沥青粉$()，可提高结合料的产量。$(br)随后，把结合料与沙、石粉及$(thing)碎石基层$()一同拌成流体状的$(thing)沥青混合料$()。$(br)将其装入流体容器中，便于运输和浇筑。"
         },
         {
@@ -411,13 +411,13 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(item)$(k:key.use)$() a placed $(thing)Base Course Block$() with a bucket of $(thing)Asphalt Mixture$() to pour it. The mixture spreads to adjacent base course blocks, converting up to 20 adjacent base course blocks into $(thing)Hot Asphalt$(). After a short time, hot asphalt cools into $(thing)Asphalt Road$(). $(item)$(k:key.sneak)-$(k:key.use)$() on a $(thing)Base Course Block$() with the mixture to patch a small area, consuming less fluid."
+            "text": "$(item)$(k:key.use)$() 一个已放置的$(thing)基层方块$()（手持一桶$(thing)沥青混合料$()）即可进行浇筑。混合料会向相邻的基层方块蔓延，最多把 20 个相邻基层方块转化为$(thing)热沥青路$()。短暂时间后，热沥青路会冷却成$(thing)沥青路$()。手持混合料时，$(item)$(k:key.sneak)-$(k:key.use)$() 某个$(thing)基层方块$()即可修补小片区域，消耗的流体更少。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tfg:asphalt_road_hot",
             "title": "热沥青路",
-            "text": "$(thing)Hot Asphalt$() is very hot; touching it will cause ongoing burn damage. Wear heat-protective gear when working with it.$(br2)Once it cools into an $(thing)Asphalt Road$(), the surface is no longer hot."
+            "text": "$(thing)热沥青路$()非常烫；接触会造成持续的灼烧伤害。处理它时请穿上防热装备。$(br2)等它冷却成$(thing)沥青路$()后，表面就不再烫了。"
         },
         {
             "type": "patchouli:spotlight",
@@ -431,12 +431,12 @@
                 "tag": "tfg:road_marking_stencils"
             },
             "title": "道路标线板",
-            "text": "The most distinctive customization feature of asphalt roads is road marking: Spray colors and patterns on the finished surface to plan lanes, intersections, and warning lines.$(br2)Various stencils can be crafted at an $(thing)Artisan Table$()."
+            "text": "沥青路最具特色的定制功能就是路面标线：在完工的路面上喷涂颜色和图案，用以规划车道、路口和警示线。$(br2)各种道路标线板都可以在$(thing)工匠台$()上制作。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "gtceu:white_dye_spray_can,gtceu:yellow_dye_spray_can",
-            "text": "Hold a $(thing)Spray Can$() in one hand and optionally a $(thing)Road Marking Stencil$() in the other, then $(item)$(k:key.use)$() on an asphalt road to paint it. The color is determined by the spray can, and the orientation by the player's direction.$(br)Spraying again on an existing marking will replace it and consume spray can durability, unless the same exact layout is used."
+            "text": "一手拿着$(thing)喷漆罐$()，另一手可拿着$(thing)道路标线板$()，然后对沥青路按 $(item)$(k:key.use)$() 即可喷涂标线。颜色由喷漆罐决定，朝向由玩家的朝向决定。$(br)在已有标线上再次喷涂会将其替换并消耗喷漆罐耐久，除非喷涂的图案布局完全相同。"
         },
         {
             "type": "patchouli:image",
@@ -459,17 +459,17 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Paving Cart",
+            "title": "铺路车",
             "anchor": "paving_cart",
             "item": "tfg:rnr_plow",
-            "text": "The $(thing)Paving Cart$() is a specialized cart used for laying down road surfaces quickly and efficiently. It can be filled with $(6)$(t:#rnr:road_materials)Road Materials$() and $(thing)Crushed Base Course$() and then attached to a $(l:agriculture/animal_husbandry#equines)Horse$() with $(item)$(k:key.astikorcarts.desc)$() to create roads as you travel. The cart can also fill in any existing base course blocks."
+            "text": "$(thing)铺路车$()是一种专用推车，用于快速高效地铺设路面。它可以装满 $(6)$(t:#rnr:road_materials)道路材料$() 和$(thing)碎石基层$()，然后把它拴到$(l:agriculture/animal_husbandry#equines)马$()身上（$(item)$(k:key.astikorcarts.desc)$()），即可在行进间筑路。铺路车还能填补已有的基层方块。"
         },
         {
             "type": "patchouli:entity",
             "entity": "tfg:rnr_plow",
             "scale": 0.5,
-            "name": "Paving Cart",
-            "text": "The blades of the paving cart will lower with $(item)$(k:key.use)$() indicating that the cart will plow roads when moved."
+            "name": "铺路车",
+            "text": "对铺路车按 $(item)$(k:key.use)$() 后犁刀会放下，表示推车移动时将修筑道路。"
         },
         {
             "type": "patchouli:image",
@@ -478,7 +478,7 @@
                 "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_width.png"
             ],
             "border": true,
-            "text": "The cart allows you to adjust the width of the path in the GUI, opened with $(item)$(k:key.sneak)-$(k:key.use)$()."
+            "text": "用 $(item)$(k:key.sneak)-$(k:key.use)$() 打开界面，即可在 GUI 中调整路径的宽度。"
         },
         {
             "type": "patchouli:image",
@@ -495,7 +495,7 @@
                 "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_random.png"
             ],
             "border": true,
-            "text": "The cart has a mode that will lay down paving materials in a random pattern."
+            "text": "铺路车还有一种以随机图案铺设铺面材料的模式。"
         },
         {
             "type": "patchouli:image",
@@ -507,7 +507,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/building_materials",

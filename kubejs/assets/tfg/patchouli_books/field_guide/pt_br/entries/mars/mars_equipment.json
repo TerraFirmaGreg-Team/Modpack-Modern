@@ -18,7 +18,7 @@
 			"type": "patchouli:spotlight",
 			"item": "tfg:certus_mechanism",
 			"anchor": "ev_guns",
-			"text": "The $(item)Certus Mechanism$() is used to craft $(5)EV$()-tier guns. A lot of these weapons use ammo that requires Certus Quartz. The moon has huge veins of it, or you can set up an infinite supply via $(l:the_moon/regolith)Lunar Regolith$()."
+			"text": "The $(item)Certus Mechanism$() is used to craft $(5)EV$()-tier guns. A lot of these weapons use ammo that requires Certus Quartz. The moon has huge veins of it, or you can set up an infinite supply via $(l:the_moon/moon_biomes#harvester)Lunar Regolith$()."
 		},
 		{
 			"type": "patchouli:spotlight",

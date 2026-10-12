@@ -47,7 +47,7 @@
             "type": "tfg:sealed_barrel_recipe",
             "anchor": "preparing",
             "recipe": "tfc:barrel/medium_prepared_hide",
-            "text": "After scraping, $(thing)Scraped Hides$() must be sealed in a $(l:craftsmanship/barrels)Barrel$() of $(thing)Water$() for at least eight hours, for one final cleaning before tanning."
+            "text": "Po oskrobanium, $(thing)skóry$() należy zamknąć w $(l:craftsmanship/barrels)beczce$() z $(thing)wodą$() na co najmniej osiem godzin, aby po raz ostatni oczyścić je przed garbowaniem."
         },
         {
             "type": "tfg:sealed_barrel_recipe",

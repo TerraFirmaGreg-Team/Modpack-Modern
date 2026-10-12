@@ -1,19 +1,19 @@
 {
-    "name": "Mixing Bowl",
+    "name": "搅拌碗",
     "category": "tfg:cooking",
     "icon": "firmalife:mixing_bowl",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "The mixing bowl is a way of mixing items and fluids together in a friendly way. In order to operate a mixing bowl $(item)$(k:key.use)$() on one with a $(thing)Spoon$() to add it to the bowl. The spoon will remain in the bowl and not degrade in durability."
+            "text": "搅拌碗是一种能以省心的方式混合物品和流体的工具。要操作搅拌碗，需对它按$(item)$(k:key.use)$()，此时手里要拿着$(thing)勺子$()，勺子就会这样放进碗里。勺子会留在碗中，且耐久度不会损耗。"
         },
         {
             "type": "patchouli:text",
-            "text": "To use a mixing bowl add in your ingredients and $(item)$(k:key.use)$() it to begin mixing. Mixing bowls can take up to $(6)5 item inputs$() and $(3)1 fluid input$(). Recipes need $(n)exact quantities$() of items to be performed. If a recipe outputs a fluid any excess input fluids will be voided, so be careful!"
+            "text": "使用搅拌碗时，先放入配料，再按$(item)$(k:key.use)$()开始搅拌。搅拌碗最多可以接受$(6)5个物品输入$()和$(3)1个流体输入$()。配方需要$(n)数量精确$()的物品才能执行。如果配方会输出流体，多余的输入流体将被销毁，所以务必小心！"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/decay",

@@ -2,7 +2,7 @@
   "block.merequester.requester": "ME 請求器",
   "gui.merequester.no_requesters": "找不到 ME 請求器",
   "gui.merequester.requester_terminal": "ME 請求終端",
-  "item.merequester.requester_terminal": "ME 請求終端",
+  "item.merequester.requester_terminal": "ME 請求器終端",
   "itemGroup.merequester.tab": "ME 請求器",
   "tooltip.merequester.amount": "庫存量",
   "tooltip.merequester.batch": "批量大小",
@@ -16,10 +16,10 @@
   "tooltip.merequester.locked": "已鎖定！請求正在進行",
   "tooltip.merequester.missing": "缺少材料",
   "tooltip.merequester.missing_desc": "缺少製作所需的材料，有材料可用時會繼續製作",
-  "tooltip.merequester.requester_desc": "自動補充物品和流體庫存，並在需要時請求新的製作。必須連接到 ME 網絡，讓 ME 請求終端存取。破壞後會遺失設定。記憶卡能複製設定。",
-  "tooltip.merequester.shift_for_more": "%s 取得更多訊息",
+  "tooltip.merequester.requester_desc": "自動補充物品和流體庫存，並在需要時請求新的製作。必須連接到 ME 網路，讓 ME 請求器終端存取。破壞後會遺失設定。記憶卡能複製設定。",
+  "tooltip.merequester.shift_for_more": "%s 取得更多資訊",
   "tooltip.merequester.status": "請求狀態",
   "tooltip.merequester.submit": "送出修改",
   "tooltip.merequester.toggle": "開關請求",
-  "tooltip.merequester.whole_number": "必須是整數"
+  "tooltip.merequester.whole_number": "必須是整數！"
 }
