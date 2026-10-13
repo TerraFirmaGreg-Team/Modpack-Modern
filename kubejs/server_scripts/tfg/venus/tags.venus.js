@@ -233,6 +233,8 @@ function registerTFGVenusEntityTypeTags(event) {
 	event.add('tfg:ignores_gravity', 'opposing_force:hanging_spider')
 	event.add('tfg:ignores_gravity', 'opposing_force:umber_spider')
 	event.add('tfg:ignores_gravity', 'minecraft:blaze')
+	event.add('tfg:ignores_gravity', 'tfg:silk_moth')
+	event.add('tfg:ignores_gravity', 'tfg:dragonfly')
 }
 
 function registerTFGVenusPlacedFeatures(event) {
