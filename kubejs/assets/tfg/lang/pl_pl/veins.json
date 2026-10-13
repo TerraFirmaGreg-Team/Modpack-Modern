@@ -105,6 +105,7 @@
 	"tfg.ore_patchouli_info.cluster_vein": "$(t:przeważnie kulista)Żyła skupiskowa$(/t)",
 	"tfg.ore_patchouli_info.pipe_vein": "$(t:Wysoka i wąska)Żyła kominowa$(/t)",
 	"tfg.ore_patchouli_info.disc_vein": "$(t:Szeroka i płaska)Żyła dyskowa$(/t)",
+	"tfg.ore_patchouli_info.vein_index_format": "To $(thing)indeks żył$() dla $(item){0}$(). Każda żyła zawiera informacje o rzadkości, gęstości, typie żyły, wysokości występowania, rozmiarach, skałach, w których się pojawia, i nie tylko.",
 	"tfg.ore_patchouli_name.copper": "Miedź rodzima",
 	"tfg.ore_patchouli_name.gold": "Złoto rodzime",
 	"tfg.ore_patchouli_name.silver": "Srebro rodzime",

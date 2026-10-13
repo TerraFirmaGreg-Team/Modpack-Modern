@@ -56,6 +56,7 @@
 	"tfg.gui.mountain_scaling.low": "§bNiska§r",
 	"tfg.gui.mountain_scaling.medium": "§6Średnia§r",
 	"tfg.gui.mountain_scaling.high": "§4Wysoka§r",
+	"tfg.gui.mountain_scaling.tooltip.none": "Do gór nie jest stosowane dodatkowe skalowanie, więc zachowują mniej więcej te same wysokości co w bazowym TerraFirmaCraft. Większość wysokich gór sięga około Y=180, a niektóre góry kolizyjne osiągają Y=270.\nNajlepsza opcja, jeśli priorytetem jest wydajność.",
 	"tfg.gui.cover.rotten_void_days": "Minimalne dni przed zepsuciem się",
 	"gui.tfg.chromatic_select.title": "Wybierz efekt chromatyczny",
 	"gui.tfg.chromatic_select.header": "§b§lCHROMATIC_SPRAY_INTERFACE",
