@@ -71,7 +71,8 @@ function registerSpeciesLoots(event) {
 
 		
 	event.addEntityLootModifier('species:trooper')
-		.addWeightedLoot([2, 4], ['tfc:powder/sulfur'])
+		.addWeightedLoot([1, 2], ['gtceu:sulfur_dust'])
+		.addWeightedLoot([1, 2], ['minecraft:gunpowder'])
 
 	event.addEntityLootModifier('species:wraptor').removeLoot(ItemFilter.ALWAYS_TRUE)
 	event.addEntityLootModifier('species:deepfish').removeLoot(ItemFilter.ALWAYS_TRUE)

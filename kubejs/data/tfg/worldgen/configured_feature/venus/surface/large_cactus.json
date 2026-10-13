@@ -28,9 +28,9 @@
 								"blocks": "minecraft:air"
 							},
 							{
-								"type": "minecraft:has_sturdy_face",
+								"type": "minecraft:matching_block_tag",
 								"offset": [ 0, -1, 0 ],
-								"direction": "down"
+								"tag": "ad_astra:venus_stone_replaceables"
 							}
 						]
 					}

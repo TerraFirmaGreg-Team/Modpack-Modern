@@ -21,8 +21,8 @@ function registerAdAstraLoots(event) {
 		
 
 	event.addEntityLootModifier('ad_astra:sulfur_creeper')
-		.addWeightedLoot([6, 8], ['tfc:powder/sulfur'])
-		.addWeightedLoot([2, 4], ['minecraft:gunpowder'])
+		.addWeightedLoot([2, 3], ['gtceu:sulfur_dust'])
+		.addWeightedLoot([2, 3], ['minecraft:gunpowder'])
 
 
 	event.addLootTableModifier('ad_astra:chests/dungeon/moon/dungeon_chest').removeLoot(ItemFilter.ALWAYS_TRUE)

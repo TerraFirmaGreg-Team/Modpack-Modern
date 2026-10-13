@@ -192,6 +192,7 @@ function registerTFGVenusEntityTypeTags(event) {
 		event.add('ad_astra:can_survive_in_acid_rain', entity)
 		event.add('gtceu:heat_immune', entity)
 		event.add('tfg:ignores_cacti', entity)
+		event.add('tfg:ignores_gravity', entity)
 	})
 
 	const venusPrey = [
@@ -241,16 +242,6 @@ function registerTFGVenusEntityTypeTags(event) {
 	event.add('tfc:deals_piercing_damage', 'aliencraft_kepler:tree_mite')
 	event.add('tfc:deals_slashing_damage', 'aliencraft_kepler:xenoscorpion_surface')
 	event.add('tfc:deals_piercing_damage', 'aliencraft_kepler:ancient_beetle')
-
-	event.add('tfg:ignores_gravity', 'aliencraft_kepler:xenoscorpion_surface')
-	event.add('tfg:ignores_gravity', 'aliencraft_kepler:ancient_beetle')
-	event.add('tfg:ignores_gravity', 'aliencraft_kepler:tree_mite')
-	event.add('tfg:ignores_gravity', 'opposing_force:whizz')
-	event.add('tfg:ignores_gravity', 'opposing_force:hanging_spider')
-	event.add('tfg:ignores_gravity', 'opposing_force:umber_spider')
-	event.add('tfg:ignores_gravity', 'minecraft:blaze')
-	event.add('tfg:ignores_gravity', 'tfg:silk_moth')
-	event.add('tfg:ignores_gravity', 'tfg:dragonfly')
 }
 
 function registerTFGVenusPlacedFeatures(event) {

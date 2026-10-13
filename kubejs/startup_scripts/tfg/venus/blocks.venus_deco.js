@@ -40,7 +40,7 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.particles(a => a
 			.range(0.3, 1, 0.3)
 			.velocity(0, 0.05, 0)
-			.particle('minecraft:campfire_cosy_smoke')
+			.particle('tfc:smoke_2')
 			.count(1)
 			.forced(false));
 
@@ -188,7 +188,7 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.particles(a => a
 			.range(0.3, 1, 0.3)
 			.velocity(0, 0.1, 0)
-			.particle('minecraft:large_smoke')
+			.particle('tfg:large_smoke')
 			.count(2)
 			.forced(false));
 
