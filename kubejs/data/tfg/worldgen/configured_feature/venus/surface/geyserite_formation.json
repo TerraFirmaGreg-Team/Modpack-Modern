@@ -22,13 +22,22 @@
 								"type": "minecraft:uniform",
 								"value": {
 									"min_inclusive": 1,
-									"max_inclusive": 4
+									"max_inclusive": 3
 								}
 							},
 							"provider": {
 								"type": "minecraft:simple_state_provider",
 								"state": {
 									"Name": "tfg:rock/raw/geyserite"
+								}
+							}
+						},
+						{
+							"height": 1,
+							"provider": {
+								"type": "minecraft:simple_state_provider",
+								"state": {
+									"Name": "tfg:rock/spike/geyserite"
 								}
 							}
 						}
@@ -57,7 +66,10 @@
 							{
 								"type": "minecraft:matching_blocks",
 								"offset": [ 0, -1, 0 ],
-								"blocks": "tfg:rock/raw/geyserite"
+								"blocks": [
+									"tfg:rock/raw/geyserite",
+									"tfg:rock/spike/geyserite"
+								]
 							}
 						]
 					}

@@ -2,8 +2,14 @@
 	"feature": "tfg:venus/surface/geyser_source_patch",
 	"placement": [
 		{
-			"type": "minecraft:rarity_filter",
-			"chance": 2
+			"type": "minecraft:count",
+			"count": {
+				"type": "minecraft:uniform",
+				"value": {
+					"max_inclusive": 4,
+					"min_inclusive": 1
+				}
+			}
 		},
 		{
 			"type": "minecraft:in_square"
