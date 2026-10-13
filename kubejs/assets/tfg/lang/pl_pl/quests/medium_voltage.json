@@ -109,6 +109,7 @@
     "quests.medium_voltage.mv_circuit_assembler.subtitle": "Jupikajej",
     "quests.medium_voltage.mv_more_lv.title": "Więcej obwodów NN",
     "quests.medium_voltage.mv_more_lv.subtitle": "Odblokowałeś nowy poziom obwodów!",
+    "quests.medium_voltage.mv_more_lv.desc.2": "&l&3Lore:&r&o Progresja obwodów w GTCEu opiera się głównie na progresji z GT5u. Została przebalansowana, aby nie była aż tak uciążliwa. Ten poziom obwodów był &lszczególnie&r&o bolesny!",
     "quests.medium_voltage.mv_more_mv.title": "Więcej obwodów SN",
     "quests.medium_voltage.mv_more_mv.subtitle": "Więcej... Potrzebuje więcej!",
     "quests.medium_voltage.mv_more_mv.desc": "To obwód &bSN&r z linii obwodów scalonych. Nie rób ich dużo i używaj głównie do pierwszych obwodów WN, bo niedługo dostaniesz jeszcze lepszy obwód SN.",
@@ -117,7 +118,7 @@
     "quests.medium_voltage.mv_multi_smelter.title": "Ostateczny piec",
     "quests.medium_voltage.mv_multi_smelter.subtitle": "Prawdopodobnie najpotężniejszy piec, który widziałeś",
     "quests.medium_voltage.hv_machine_hull.title": "Kadłub maszyny WN",
-    "quests.medium_voltage.hv_machine_hull.subtitle": "To twój czwarty kadłub! Postęp",
+    "quests.medium_voltage.hv_machine_hull.subtitle": "To twój czwarty kadłub! Postęp!",
     "quests.medium_voltage.mv_stainless.title": "Stal nierdzewna",
     "quests.medium_voltage.mv_stainless.subtitle": "WN jest w zasięgu dłoni",
     "quests.medium_voltage.mv_energy_hatch.title": "Ulepsz swój EBF!",
@@ -180,5 +181,6 @@
     "quests.medium_voltage.diamond_tools.subtitle": "Wreszcie, możemy zrobić kilof i pójść do netheru!",
     "quests.medium_voltage.diamond_tools.task": "Dowolne narzędzie z diamentową końcówką",
     "quests.medium_voltage.large_steel_boiler.subtitle": "KRYTYCZNE PRZECIĄŻENIE",
+    "quests.medium_voltage.large_steel_boiler.desc.3": "&l&3Lore:&r&o &oW GTm duże kotły parowe są zwykle dość proste: spalają paliwo bez żadnej modularności. Oczywiście w TFG chcieliśmy odrobinę to uatrakcyjnić, aby zwiększyć złożoność i modularność.&r",
     "quests.medium_voltage.chameleon_spray.subtitle": "&[rainbow]Moc tęczy"
 }

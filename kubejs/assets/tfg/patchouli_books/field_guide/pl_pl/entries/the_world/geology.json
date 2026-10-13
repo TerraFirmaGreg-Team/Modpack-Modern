@@ -86,7 +86,7 @@
                 "tag": "tfg:raw_stone/sedimentary"
             },
             "anchor": "sedimentary",
-            "text": "$(l:https://en.wikipedia.org/wiki/Sedimentary_rock)Sedimentary$() rocks are formed by the accumulation or deposition of mineral or organic particles. They are typically found on the top layers of rock in continental areas."
+            "text": "Skały $(l:https://en.wikipedia.org/wiki/Sedimentary_rock)osadowe$() powstają przez gromadzenie lub osadzanie się cząstek mineralnych albo organicznych. Zazwyczaj występują w najwyższych warstwach skalnych na obszarach kontynentalnych."
         },
         {
             "title": "Skała metamorficzna",
@@ -113,7 +113,7 @@
                 "tag": "tfg:raw_stone/igneous_intrusive"
             },
             "anchor": "igneous_intrusive",
-            "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Intrusive)Igneous Intrusive$() rocks are formed from magma which cooled under the Earth's crust. They can be found deep underground, or rarely in dikes or uplift areas."
+            "text": "Skały $(l:https://en.wikipedia.org/wiki/Igneous_rock#Intrusive)magmowe głębinowe$() powstają z magmy, która ostygła pod skorupą ziemską. Można je znaleźć głęboko pod ziemią, a rzadziej w dajkach lub obszarach wypiętrzenia.\n"
         },
         {
             "type": "patchouli:text",

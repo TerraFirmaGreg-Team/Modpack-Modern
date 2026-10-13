@@ -294,7 +294,7 @@
                 }
             },
             "name": "Wysoka roślina wodna",
-            "text": "Tall water plants can grow with just the bottom block in water. $(thing)Water Taro$() and $()Cattail$() can be broken with a $(thing)Knife$() for $(thing)Roots$().",
+            "text": "Wysokie rośliny wodne mogą rosnąć, gdy tylko dolny blok jest w wodzie. $(thing)Taro wodne$() i $(thing)pałkę wodną$() można zniszczyć $(thing)nożem$(), aby uzyskać $(thing)korzenie$().",
             "enable_visualize": false
         },
         {
@@ -544,7 +544,7 @@
             },
             "name": "Kardamon",
             "anchor": "cardamom",
-            "text": "$(thing)Dziki kardamon$() rośnie w temp. od 18 do 30 C oraz przy opadach między 350 do 500mm.",
+            "text": "$(thing)Dziki kardamon$() rośnie w temp. od 18 do 30 C oraz przy opadach między 350 do 500 mm.",
             "enable_visualize": false
         },
         {
@@ -564,7 +564,7 @@
             },
             "name": "Kolendra",
             "anchor": "cilantro",
-            "text": "$(thing)Dzika Kolendra$() rośnie w temp. od 5 do 15 C oraz przy opadach między 0 do 150mm.",
+            "text": "$(thing)Dzika Kolendra$() rośnie w temp. od 5 do 15 C oraz przy opadach między 0 do 150 mm.",
             "enable_visualize": false
         },
         {
@@ -584,7 +584,7 @@
             },
             "name": "Kmin rzymski",
             "anchor": "cumin",
-            "text": "$(thing)Dziki kmin rzymski$() rośnie w temp. od 6 do 20 C oraz przy opadach między 50 do 250mm.",
+            "text": "$(thing)Dziki kmin rzymski$() rośnie w temp. od 6 do 20 C oraz przy opadach między 50 do 250 mm.",
             "enable_visualize": false
         },
         {
@@ -604,7 +604,7 @@
             },
             "name": "Oregano",
             "anchor": "oregano",
-            "text": "$(thing)Dzikie oregano$() rośnie w temp. od 5 do 13 C oraz przy opadach między 50 do 150mm.",
+            "text": "$(thing)Dzikie oregano$() rośnie w temp. od 5 do 13 C oraz przy opadach między 50 do 150 mm.",
             "enable_visualize": false
         },
         {
@@ -624,7 +624,7 @@
             },
             "name": "Ziele angielskie",
             "anchor": "pimento",
-            "text": "$(thing)Dzikie ziele angielskie$() rośnie w temp. od 15 do 30 C oraz przy opadach między 200 do 450mm.",
+            "text": "$(thing)Dzikie ziele angielskie$() rośnie w temp. od 15 do 30 C oraz przy opadach między 200 do 450 mm.",
             "enable_visualize": false
         },
         {

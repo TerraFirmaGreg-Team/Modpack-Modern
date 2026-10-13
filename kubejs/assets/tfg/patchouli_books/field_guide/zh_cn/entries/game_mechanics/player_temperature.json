@@ -58,7 +58,7 @@
 			"type": "patchouli:text",
 			"title": "食物与饮品",
 			"anchor": "food",
-			"text": "某些$(l:cooking)食物$()和$(l:cooking/drinks)饮品$()可能带有影响玩家体温的效果，包括：$(li)$(l:game_mechanics/mob_effects#cooling)降温$()$(li)$(l:game_mechanics/mob_effects#warming)升温$()$(li)$(l:game_mechanics/mob_effects#freezing)冰冻$()$(li)$(l:game_mechanics/mob_effects#blazing)炽热$()$(br2)喝$(l:cooking/drinks#spring_water)温泉水$()会让你变暖，喝$(l:cooking/drinks#ice_slush)冰沙$()则会给你降温。"
+			"text": "某些$(l:cooking)食物$()和$(l:cooking/drinks)饮品$()可能带有影响玩家体温的效果，包括：$(li)$(l:game_mechanics/mob_effects#cooling)降温$()$(li)$(l:game_mechanics/mob_effects#warming)保暖$()$(li)$(l:game_mechanics/mob_effects#freezing)冰冻$()$(li)$(l:game_mechanics/mob_effects#blazing)灼热$()$(br2)喝$(l:cooking/drinks#spring_water)温泉水$()会让你变暖，喝$(l:cooking/drinks#ice_slush)冰沙$()则会给你降温。"
 		},
 		{
 			"type": "patchouli:text",
