@@ -1,59 +1,29 @@
 {
-	"type": "minecraft:vegetation_patch",
+	"type": "minecraft:random_patch",
 	"config": {
-		"depth": {
-			"type": "minecraft:uniform",
-			"value": {
-				"max_inclusive": 2,
-				"min_inclusive": 1
-			}
-		},
-		"extra_bottom_block_chance": 0,
-		"extra_edge_column_chance": 0.4,
-		"ground_state": {
-			"type": "minecraft:simple_state_provider",
-			"state": {
-				"Name": "tfg:rock/raw/geyserite"
-			}
-		},
-		"replaceable": "#ad_astra:venus_stone_replaceables",
-		"surface": "floor",
-		"vegetation_chance": 0.4,
-		"vegetation_feature": {
+		"feature": {
 			"feature": {
 				"type": "minecraft:block_column",
 				"config": {
+					"direction": "up",
 					"allowed_placement": {
 						"type": "minecraft:matching_blocks",
-						"blocks": "minecraft:air"
+						"blocks": [
+							"minecraft:air",
+							"tfg:fluid/sulfur_fumes",
+							"tfg:fluid/geyser_slurry",
+							"minecraft:lava"
+						]
 					},
-					"direction": "up",
+					"prioritize_tip": false,
 					"layers": [
 						{
 							"height": {
-								"type": "minecraft:weighted_list",
-								"distribution": [
-									{
-										"data": {
-											"type": "minecraft:uniform",
-											"value": {
-												"max_inclusive": 2,
-												"min_inclusive": 0
-											}
-										},
-										"weight": 5
-									},
-									{
-										"data": {
-											"type": "minecraft:uniform",
-											"value": {
-												"max_inclusive": 3,
-												"min_inclusive": 1
-											}
-										},
-										"weight": 1
-									}
-								]
+								"type": "minecraft:uniform",
+								"value": {
+									"min_inclusive": 1,
+									"max_inclusive": 4
+								}
 							},
 							"provider": {
 								"type": "minecraft:simple_state_provider",
@@ -61,38 +31,41 @@
 									"Name": "tfg:rock/raw/geyserite"
 								}
 							}
-						},
-						{
-							"height": {
-								"type": "minecraft:uniform",
-								"value": {
-									"max_inclusive": 2,
-									"min_inclusive": 1
-								}
-							},
-							"provider": {
-								"type": "minecraft:simple_state_provider",
-								"state": {
-									"Name": "tfg:rock/spike/geyserite",
-									"Properties": {
-										"part": "base"
-									}
-								}
-							}
 						}
-					],
-					"prioritize_tip": true
+					]
 				}
 			},
-			"placement": []
+			"placement": [
+				{
+					"type": "minecraft:heightmap",
+					"heightmap": "OCEAN_FLOOR_WG"
+				},
+				{
+					"type": "minecraft:block_predicate_filter",
+					"predicate": {
+						"type": "minecraft:all_of",
+						"predicates": [
+							{
+								"type": "minecraft:matching_blocks",
+								"blocks": [
+									"minecraft:air",
+									"minecraft:lava",
+									"tfg:fluid/sulfur_fumes",
+									"tfg:fluid/geyser_slurry"
+								]
+							},
+							{
+								"type": "minecraft:matching_blocks",
+								"offset": [ 0, -1, 0 ],
+								"blocks": "tfg:rock/raw/geyserite"
+							}
+						]
+					}
+				}
+			]
 		},
-		"vertical_range": 5,
-		"xz_radius": {
-			"type": "minecraft:uniform",
-			"value": {
-				"max_inclusive": 3,
-				"min_inclusive": 2
-			}
-		}
+		"tries": 32,
+		"xz_spread": 3,
+		"y_spread": 0
 	}
 }

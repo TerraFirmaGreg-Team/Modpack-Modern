@@ -1,5 +1,23 @@
 {
-	"feature": "tfg:venus/surface/geyserite_formation",
+	"feature": {
+		"type": "tfc:multiple",
+		"config": {
+			"features": [
+				{
+					"feature": "tfg:venus/terrain/geyserite_disk",
+					"placement": []
+				},
+				{
+					"feature": "tfg:venus/surface/geyserite_formation",
+					"placement": []
+				},
+				{
+					"feature": "tfg:venus/surface/geyser_source_patch",
+					"placement": []
+				}
+			]
+		}
+	},
 	"placement": [
 		{
 			"type": "minecraft:rarity_filter",

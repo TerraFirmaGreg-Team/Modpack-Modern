@@ -154,7 +154,27 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.defaultTranslucent()
 
 
+
 	// Some more stone blocks from better end, for variety's sake
+
+	event.create('betterend:silk_moth_nest')
+		.fullBlock(true)
+		.soundType('lily_pad')
+		.mapColor('wool')
+		.requiresTool(true)
+		.tagBlock('minecraft:mineable/axe')
+	event.create('betterend:silk_moth_nest_holes')
+		.fullBlock(true)
+		.soundType('lily_pad')
+		.mapColor('wool')
+		.requiresTool(true)
+		.tagBlock('minecraft:mineable/axe')
+	event.create('betterend:silk_moth_nest_filled')
+		.fullBlock(true)
+		.soundType('lily_pad')
+		.mapColor('wool')
+		.requiresTool(true)
+		.tagBlock('minecraft:mineable/axe')
 
 	event.create('betterend:hydrothermal_vent', 'tfg:particle_emitter_decoration')
 		.soundType('dripstone_block')

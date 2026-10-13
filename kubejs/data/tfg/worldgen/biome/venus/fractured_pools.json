@@ -170,12 +170,6 @@
 				"maxCount": 3,
 				"minCount": 2,
 				"weight": 10
-			},
-			{
-				"type": "opposing_force:ladybug",
-				"maxCount": 3,
-				"minCount": 2,
-				"weight": 50
 			}
 		],
 		"misc": [],
@@ -239,6 +233,12 @@
 				"maxCount": 3,
 				"minCount": 2,
 				"weight": 70
+			},
+			{
+				"type": "opposing_force:ladybug",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 50
 			},
 			{
 				"type": "aliencraft_kepler:xenoscorpion_surface",

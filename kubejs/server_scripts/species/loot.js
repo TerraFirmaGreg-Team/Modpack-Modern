@@ -69,6 +69,9 @@ function registerSpeciesLoots(event) {
 		.addSequenceLoot(LootEntry.of('create:precision_mechanism').when(c => c.randomChance(0.5)))
 		.addSequenceLoot(LootEntry.of('species:kinetic_core').when(c => c.randomChance(0.2)))
 
+		
+	event.addEntityLootModifier('species:trooper')
+		.addWeightedLoot([2, 4], ['tfc:powder/sulfur'])
 
 	event.addEntityLootModifier('species:wraptor').removeLoot(ItemFilter.ALWAYS_TRUE)
 	event.addEntityLootModifier('species:deepfish').removeLoot(ItemFilter.ALWAYS_TRUE)

@@ -11,13 +11,13 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 2.0,
+								"max": 1.0,
 								"min": 0.0
 							},
 							"function": "minecraft:set_count"
 						}
 					],
-					"name": "minecraft:magma_cream"
+					"name": "opposing_force:fire_gel"
 				}
 			],
 			"rolls": 1.0

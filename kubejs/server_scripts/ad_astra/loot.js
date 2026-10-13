@@ -18,6 +18,11 @@ function registerAdAstraLoots(event) {
 	
 	event.addEntityLootModifier('ad_astra:martian_raptor')
 		.addWeightedLoot([2, 4], ['minecraft:bone'])
+		
+
+	event.addEntityLootModifier('ad_astra:sulfur_creeper')
+		.addWeightedLoot([6, 8], ['tfc:powder/sulfur'])
+		.addWeightedLoot([2, 4], ['minecraft:gunpowder'])
 
 
 	event.addLootTableModifier('ad_astra:chests/dungeon/moon/dungeon_chest').removeLoot(ItemFilter.ALWAYS_TRUE)

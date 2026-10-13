@@ -137,6 +137,7 @@ function registerTFGVenusEntityTypeTags(event) {
 		"endermanoverhaul:desert_enderman",
 		"endermanoverhaul:savanna_enderman",
 		"endermanoverhaul:nether_wastes_enderman",
+		"endermanoverhaul:scarab",
 		"ad_astra:sulfur_creeper",
 		'species:trooper',
 		'primitive_creatures:golem_2',

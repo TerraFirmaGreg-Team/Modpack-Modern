@@ -157,12 +157,6 @@
 				"maxCount": 3,
 				"minCount": 2,
 				"weight": 50
-			},
-			{
-				"type": "opposing_force:ladybug",
-				"maxCount": 3,
-				"minCount": 2,
-				"weight": 100
 			}
 		],
 		"misc": [],
@@ -223,6 +217,12 @@
 			},
 			{
 				"type": "opposing_force:whizz",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
+				"type": "opposing_force:ladybug",
 				"maxCount": 3,
 				"minCount": 2,
 				"weight": 100
