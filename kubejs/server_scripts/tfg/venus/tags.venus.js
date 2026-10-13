@@ -168,7 +168,9 @@ function registerTFGVenusEntityTypeTags(event) {
 		'opposing_force:whizz',
 		'aliencraft_kepler:tree_mite',
 		'aliencraft_kepler:xenoscorpion_surface',
-		'aliencraft_kepler:ancient_beetle'
+		'aliencraft_kepler:ancient_beetle',
+		'tfg:silk_moth',
+		'tfg:dragonfly'
 	]
 
 	ENTITIES.forEach(entity => {

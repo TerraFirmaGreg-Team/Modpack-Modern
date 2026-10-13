@@ -117,7 +117,20 @@
 	},
 	"creature_spawn_probability": 0.2,
 	"spawners": {
-		"ambient": [],
+		"ambient": [
+			{
+				"type": "tfg:silk_moth",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
+				"type": "tfg:dragonfly",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 100
+			}
+		],
 		"axolotls": [],
 		"creature": [
 			{

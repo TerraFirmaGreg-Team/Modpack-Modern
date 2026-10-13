@@ -1077,14 +1077,14 @@
 	"music.mercury": {
 		"sounds": [
 			{
-				"name": "ambientsounds:animals/warden",
+				"name": "ambientsounds:cave/underworld",
 				"stream": true,
 				"volume": 0.4
 			},
 			{
-				"name": "ambientsounds:cave/underworld",
+				"name": "minecraft:records/key",
 				"stream": true,
-				"volume": 0.4
+				"volume": 0.3
 			}
 		]
 	},
