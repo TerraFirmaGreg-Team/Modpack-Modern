@@ -124,10 +124,17 @@ const registerTFGPowerReworkMaterials = (event) => {
     	.color(0xb56f5a)
     	.secondaryColor(0xd9b0a3)
 
-	// Aciditic Waste
+	// Acidic Epoxy Waste
     event.create('tfg:aciditic_waste')
 		.liquid(new GTFluidBuilder().attribute(GTFluidAttributes.ACID))
 		.color(0x9df2b4)
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
+	// 2-EHN
+	event.create('tfg:ethylhexyl_nitrate')
+		.liquid(new GTFluidBuilder().temperature(293))
+		.components('8x carbon', '17x hydrogen', '1x nitrogen', '3x oxygen')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xe0d298)
+		.secondaryColor(0xd6c16f)
 }
