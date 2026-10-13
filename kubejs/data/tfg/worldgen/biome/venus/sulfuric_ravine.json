@@ -44,7 +44,7 @@
 			"tfg:venus/surface/aragonite_formation"
 		],
 		[
-			 
+
 		],
 		[
 			"tfc:erosion"
@@ -113,7 +113,7 @@
 			"charge": 0.9
 		}
 	},
-	"creature_spawn_probability": 0.2,
+	"creature_spawn_probability": 0.1,
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],

@@ -129,6 +129,9 @@ function registerTFGVenusBlockTags(event) {
 	event.add('tfg:silk_moth_blocks', 'betterend:silk_moth_nest_filled')
 
 	event.add('tfg:heightmap_ignore', 'create:crimsite')
+
+	event.add('minecraft:lava_pool_stone_cannot_replace', 'tfg:venus_hornfels')
+	event.add('minecraft:features_cannot_replace', 'tfg:venus_hornfels')
 }
 
 function registerTFGVenusBiomeTags(event) {
