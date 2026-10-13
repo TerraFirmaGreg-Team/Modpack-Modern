@@ -3,7 +3,13 @@
 function registerTFGVenusItemTags(event) {
 
 	// TODO: foods for bugs with tfg:venusian_arthropod_foods
-	event.add('tfg:venusian_arthropod_foods', '#tfc:foods/fruits')
+	event.add('tfg:venusian_arthropod_foods', 'arthropocolypse:stag_beetle_larva')
+	event.add('tfg:venusian_arthropod_foods', 'arthropocolypse:mealworm')
+	event.add('tfg:venusian_arthropod_foods', 'arthropocolypse:ice_crawler_meat')
+
+	event.add('tfg:sulfie_food', 'tfc:powder/sulfur')
+	event.add('tfg:sulfie_food', 'minecraft:gunpowder')
+	event.add('tfg:sulfie_food', '#forge:dusts/sulfur')
 }
 
 
@@ -118,6 +124,10 @@ function registerTFGVenusBlockTags(event) {
 
 	event.add('tfg:decorative_plant_attachable', 'betterend:sulphuric_rock')
 
+	event.add('tfg:silk_moth_blocks', 'betterend:silk_moth_nest')
+	event.add('tfg:silk_moth_blocks', 'betterend:silk_moth_nest_holes')
+	event.add('tfg:silk_moth_blocks', 'betterend:silk_moth_nest_filled')
+
 	event.add('tfg:heightmap_ignore', 'create:crimsite')
 }
 
@@ -192,7 +202,10 @@ function registerTFGVenusEntityTypeTags(event) {
 		'arthropocolypse:stag_beetle_larva',
 		'arthropocolypse:wharf_roach',
 		'arthropocolypse:mealworm',
-		'opposing_force:whizz'
+		'opposing_force:whizz',
+		'endermanoverhaul:scarab',
+		'tfg:silk_moth',
+		'tfg:dragonfly'
 	];
 
 	venusPrey.forEach(entity => {
