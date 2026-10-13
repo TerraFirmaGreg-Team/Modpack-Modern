@@ -11,7 +11,7 @@
         {
             "type": "patchouli:text",
             "anchor": "size",
-            "text": "体积决定了物品能放进哪些$(l:logistics/storage)存储$()方块。$(br)$(li)$(thing)微小$()的物品什么都装得下。$(li)$(thing)非常小$()的物品什么都装得下。$(li)$(thing)小$()体积物品是能放进$(l:craftsmanship/pottery)小缸$()$()的最大尺寸。$(li)$(thing)中等$()体积物品是能放进$(l:craftsmanship/pottery)大缸$()的最大尺寸。",
+            "text": "体积决定了物品能放进哪些$(l:logistics/storage)容器$()里。$(br)$(li)$(thing)极小$()的物品可以装在任何容器里。$(li)$(thing)非常小$()的物品可以装在任何容器里。$(li)$(thing)小$()体积物品是能放进$(l:craftsmanship/pottery)小缸$()$()的最大尺寸。$(li)$(thing)普通$()体积物品是能放进$(l:craftsmanship/pottery)大缸$()的最大尺寸。",
             "title": "体积 ⇲"
         },
         {

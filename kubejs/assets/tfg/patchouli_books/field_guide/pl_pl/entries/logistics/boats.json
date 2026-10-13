@@ -11,7 +11,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:logistics/boats#watercraft)Watercraft$()$(li2)$(l:logistics/boats#kayak)Kayak$()$(li2)$(l:logistics/boats#canoe)Dugout Canoe$()$(li2)$(l:logistics/boats#rowboat)Rowboat$()$(li2)$(l:logistics/boats#sloop)Sloop$()"
+            "text": "$(li)$(bold)$(l:logistics/boats#watercraft)Łodzie$()$(li2)$(l:logistics/boats#kayak)Kajak$()$(li2)$(l:logistics/boats#canoe)Kanoe$()$(li2)$(l:logistics/boats#rowboat)Łódź wiosłowa$()$(li2)$(l:logistics/boats#sloop)Slup$()"
         },
         {
             "type": "patchouli:text",
@@ -405,7 +405,7 @@
             "type": "patchouli:crafting",
             "title": "Rusztowanie",
             "recipe": "firmaciv:crafting/watercraft_frame_flat",
-            "text": "Much like a rowboat, you'll start with Shipwright's Scaffolding.$(br)Scaffolding are then filled in with $(n)hardwood$() planks. Search \"$(6)#hardwood$()\" in $(emi) to view all useable log types."
+            "text": "Podobnie jak przy łodzi wiosłowej, zacznij od rusztowań stoczniowych.$(br)Następnie wypełnij rusztowania deskami z $(n)twardego drewna$(). Wyszukaj „$(6)#hardwood$()” w $(emi), aby zobaczyć wszystkie pasujące rodzaje kłód."
         },
         {
             "type": "patchouli:multiblock",
@@ -582,7 +582,7 @@
             "anchor": "cannons",
             "title": "Armaty",
             "item": "firmaciv:cannon,alekiships:cannonball",
-            "text": "Cannons! Who doesn't want cannons? These powerful weapons of naval warfare can be placed on sloops, as well as on land, and are the best way to destroy your enemy's vessels, dealing far more damage to ships than any alternative."
+            "text": "Armaty! Kto nie chce armat? Te potężne bronie wojny morskiej można stawiać na slupach, a także na lądzie. To najlepszy sposób na niszczenie wrogich jednostek: zadają statkom znacznie więcej obrażeń niż jakakolwiek alternatywa."
         },
         {
             "type": "patchouli:image",
