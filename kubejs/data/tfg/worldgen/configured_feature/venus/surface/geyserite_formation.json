@@ -8,12 +8,7 @@
 					"direction": "up",
 					"allowed_placement": {
 						"type": "minecraft:matching_blocks",
-						"blocks": [
-							"minecraft:air",
-							"tfg:fluid/sulfur_fumes",
-							"tfg:fluid/geyser_slurry",
-							"minecraft:lava"
-						]
+						"blocks": "minecraft:air"
 					},
 					"prioritize_tip": false,
 					"layers": [
