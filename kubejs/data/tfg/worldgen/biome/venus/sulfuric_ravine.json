@@ -179,7 +179,7 @@
 				"type": "opposing_force:whizz",
 				"maxCount": 3,
 				"minCount": 2,
-				"weight": 100
+				"weight": 50
 			},
 			{
 				"type": "aliencraft_kepler:xenoscorpion_surface",
