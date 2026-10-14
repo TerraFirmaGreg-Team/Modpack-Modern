@@ -137,4 +137,5 @@ const registerTFGPowerReworkMaterials = (event) => {
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0xe0d298)
 		.secondaryColor(0xd6c16f)
+
 }
