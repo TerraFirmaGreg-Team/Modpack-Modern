@@ -150,4 +150,5 @@ function registerTFGPowerGenBalance(event) {
 		.duration(20 * 3)
 		.EUt(GTValues.VA[GTValues.HV])
         .circuit(24)
+
 }
