@@ -5,15 +5,15 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(thing)高炉$()是一种用于制造 $(thing)钢$()的高级设备。把 $(l:craftsmanship/metallurgy)铁矿石$()、$(l:craftsmanship/charcoal_pit#coke_oven)焦煤$()或 $(thing)无烟煤$()，以及 $(item)助焊剂$()放到可控的高温环境中混合，你就能得到比铸铁或锻铁更强的金属。$(br2)要搭建高炉，你首先需要一个 $(l:craftsmanship/crucible)坩埚$()和大量 $(l:craftsmanship/bloomery)锻铁薄板$()。"
+            "text": "$(thing)高炉$()是一种用来炼 $(thing)钢$()的高级设备。把 $(l:craftsmanship/metallurgy)铁矿石$()、$(l:craftsmanship/charcoal_pit#coke_oven)焦煤$()或 $(thing)无烟煤$()，以及 $(item)助焊剂$()放到可控的高温环境中混合，你就能得到比铸铁或锻铁更强的金属。$(br2)要搭建高炉，你首先需要一个 $(l:craftsmanship/crucible)坩埚$()和大量 $(l:craftsmanship/bloomery)锻铁板$()。"
         },
         {
             "type": "patchouli:text",
-            "text": "合成高炉方块本身需要一个 $(thing)坩埚$()，以及一些你稍后要用到的 $(thing)锻铁双层薄板$()。$(br)接下来你需要搭建高炉本体和它的 $(thing)烟囱$()。烟囱必须用 $(l:craftsmanship/pottery#fire_clay)耐火砖$()砌成，因为只有它们才足够坚固，能承受剧烈的高热。"
+            "text": "合成高炉方块本身需要一个 $(thing)坩埚$()，以及一些你稍后要用到的 $(thing)双层锻铁板$()。$(br)接下来你需要搭建高炉本体和它的 $(thing)烟囱$()。烟囱必须用 $(l:craftsmanship/pottery#fire_clay)耐火砖$()砌成，因为只有它们才足够坚固，能承受剧烈的高热。"
         },
         {
             "type": "patchouli:text",
-            "text": "耐火砖方块必须被 $(item)$(italic)铸铁薄板或锻铁薄板$()包围。手持薄板对砖块的每个暴露面 $(item)$(k:key.sneak)-$(k:key.use)$()即可把薄板贴上去$(br2)也可以改用 $(item)高炉隔热层$()代替实体薄板，让结构更紧凑。"
+            "text": "耐火砖方块必须被 $(item)$(italic)铸铁板或锻铁板$()包围。手持铁板对砖块的每个暴露面 $(item)$(k:key.sneak)-$(k:key.use)$()即可把铁板贴上去$(br2)也可以改用 $(item)高炉隔热板$()代替实体铁板，让结构更紧凑。"
         },
         {
             "type": "tfg:multimultiblock",
@@ -213,7 +213,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "高炉的烟囱最多可以有 $(italic)五层$()。每层需要 $(thing)4 个 $(item)耐火砖和 $(thing)12 块 $(item)锻铁/铸铁薄板$()才能建成。每多一层，高炉的总容量就会增加 4 个钢锭。$(br)要使用高炉，你必须把物品从烟囱顶部丢进去。要炼钢，$(l:craftsmanship/metallurgy)铁矿石$()和 $(item)助焊剂$()的数量必须相等。"
+            "text": "高炉的烟囱最多可以有 $(italic)五层$()。每层需要 $(thing)4 个 $(item)耐火砖和 $(thing)12 块 $(item)锻铁/铸铁板$()才能建成。每多一层，高炉的总容量就会增加 4 个钢锭。$(br)要使用高炉，你必须把物品从烟囱顶部丢进去。要炼钢，$(l:craftsmanship/metallurgy)铁矿石$()和 $(item)助焊剂$()的数量必须相等。"
         },
         {
             "type": "patchouli:text",
@@ -233,7 +233,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "你还需要一个 $(l:craftsmanship/charcoal_forge#bellows)风箱$()，高炉才能达到熔化铁的温度（除非用无烟煤作燃料）。它可以放在高炉四个侧面中的任意一面。$(br)使用风箱会损耗鼓风口的耐久，因此建议大约每隔一分钟才启动一次。"
+            "text": "你还需要一个 $(l:craftsmanship/charcoal_forge#bellows)风箱$()，高炉才能达到熔化铁的温度（除非用无烟煤作燃料）。它可以放在高炉四个侧面中的任意一面。$(br)使用风箱会损耗鼓风口的耐久，因此建议大约每隔一分钟才激活一次。"
         },
         {
             "type": "patchouli:multiblock",

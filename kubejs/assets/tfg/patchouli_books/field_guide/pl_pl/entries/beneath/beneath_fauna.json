@@ -150,7 +150,7 @@
 			"scale": 1,
 			"name": "Grafik grafitowy",
 			"anchor": "graphite_glayze",
-			"text": "$(thing)Grafiki grafitowe$() można spotkać w dolnych warstwach. Uważaj, żeby nie strąciły cię do lawy!"
+			"text": "$(thing)Grafiki grafitowe$() można spotkać w dolnych warstwach. Uważaj, aby nie strąciły cię do lawy!"
 		},
 		{
 			"type": "patchouli:entity",

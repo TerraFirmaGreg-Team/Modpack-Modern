@@ -96,7 +96,7 @@
             "recipe": "gtceu:shaped/small_dust_assembling_hardwood",
             "title": "Gromadzenie pulpy",
             "anchor": "piling_up_the_pulp",
-            "text": "While the quern gives you small piles of pulp, you'll want to combine them together in a $(thing)Workbench$(). More advanced methods of crushing the strips yield higher amounts of pulp."
+            "text": "Żarna dają małe kupki pulpy, które możesz połączyć na $(thing)stole rzemieślniczym$(). Bardziej zaawansowane metody kruszenia pasków dają większe ilości pulpy."
         },
         {
             "type": "patchouli:spotlight",
@@ -118,7 +118,7 @@
             "type": "tfg:drying_recipe",
             "recipe": "tfg:drying/unrefined_paper",
             "anchor": "drying_the_paper",
-            "text": "The final step is $(l:cooking/decay#drying)Drying$() the $(item)Soaked Unrefined Paper$() into $(item)Unrefined Paper$(), Which then can be Scraped into $(item)Paper$() as shown before."
+            "text": "Ostatnim krokiem jest $(l:cooking/decay#drying)wysuszenie$() $(item)nasączonego nieprzetworzonego papieru$() do $(item)nieprzetworzonego papieru$(), który następnie można oskrobać do $(item)papieru$(), jak pokazano wcześniej."
         },
         {
             "type": "patchouli:text",

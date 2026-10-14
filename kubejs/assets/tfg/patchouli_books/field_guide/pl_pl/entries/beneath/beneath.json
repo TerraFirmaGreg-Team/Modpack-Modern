@@ -52,7 +52,7 @@
 			"type": "patchouli:text",
 			"anchor": "biomes",
 			"title": "Biomy",
-			"text": "The Beneath has a full set of new biomes to explore!$(br2)The Beneath can be split into three vertical layers, each with their own set of biomes. Each one is more hot and dangerous as you descend!"
+			"text": "Głębiny pełno nowych biomów do odkrycia!$(br2)Głębiny można podzielić na trzy warstwy, z których każda ma własne biomy. Im głębiej schodzisz, tym jest goręcej i niebezpieczniej!"
 		},
 		{
 			"type": "patchouli:text",
@@ -184,7 +184,7 @@
 			"item": "minecraft:blackstone,minecraft:calcite,tfg:gilsonite,tfg:rock/aragonite,tfg:rock/glauberite,tfg:huge_quartz,beneath:crackrack,tfg:halite",
 			"title": "Więcej skał",
 			"anchor": "more_rocks",
-			"text": "Some other stones can be found in other locations.$(br2)Small lava pools are surrounded by $(item)Pyroxenite$(), while $(item)Calcite$() can be found in spring water pools.$(br2)$(item)Keratophyre$() can be found all over the Beneath in large, tall columns."
+			"text": "Inne skały można znaleźć w innych miejscach.$(br2)Małe jeziora lawy otacza $(item)piroksenit$(), a $(item)kalcyt$() występuje w zbiornikach wody źródlanej.$(br2)$(item)Keratofir$() można znaleźć w całych Głębinach w postaci wysokich, dużych kolumn."
 		},
 		{
 			"type": "patchouli:text",

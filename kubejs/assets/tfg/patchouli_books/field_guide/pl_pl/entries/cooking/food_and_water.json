@@ -139,7 +139,7 @@
             "type": "patchouli:text",
             "anchor": "contaminants",
             "text": "In addition to nutrients $(tfg) also adds contaminants. There are three contaminants, all obtainable from food: $(l)$(d)Toxins$()$(), $(l)$(4)Parasites$()$(), and $(l)$(3)Microplastics$()$(). Contaminants can be passed into meal items and build up within the player.",
-            "title": "Zanieczyszczenia"
+            "title": "Skażenie"
         },
         {
             "title": "Toksyny",
@@ -182,7 +182,7 @@
         {
             "type": "patchouli:text",
             "anchor": "quenching_transient_effect",
-            "text": "$(#00c792)🍹$()$(bold) Quenching$()$(li)Gives the player the $(l:game_mechanics/mob_effects#quenched)Quenched$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#00c792)🍹$()$(bold) Nawodnienie$()$(li)Nakłada na gracza efekt $(l:game_mechanics/mob_effects#quenched)nawodnienia$() na 1 minutę za każdy punkt wartości odżywczej, maksymalnie na 30 minut.$()"
         },
         {
             "type": "patchouli:text",
@@ -192,7 +192,7 @@
         {
             "type": "patchouli:text",
             "anchor": "hearty_transient_effect",
-            "text": "$(#ff171b)♡$()$(bold) Hearty$()$(li)Gives the player the $(n)Health Boost$() effect for 8 minutes. With its amplifier scaled based on the amount of nutrient points with a max amplifier of 5.$()"
+            "text": "$(#ff171b)♡$()$(bold) Obfity$()$(li)Nakłada na gracza efekt $(n)wzmocnienia zdrowia$() na 8 minut. Jego poziom skaluje się z liczbą punktów wartości odżywczej, maksymalnie do poziomu 5.$()"
         },
         {
             "type": "patchouli:text",
@@ -202,7 +202,7 @@
         {
             "type": "patchouli:text",
             "anchor": "freezing_transient_effect",
-            "text": "$(#12d7ff)⛇$()$(bold) Freezing$()$(li)Gives the player the $(l:game_mechanics/mob_effects#freezing)Freezing$() effect with 5 seconds of duration per 1 nutrient point. With a max duration of 30sec.$()"
+            "text": "$(#12d7ff)⛇$()$(bold) Mrożenie$()$(li)Nakłada na gracza efekt $(l:game_mechanics/mob_effects#freezing)zamrożenia$() na 5 sekund za każdy punkt wartości odżywczej, maksymalnie na 30 sekund.$()"
         },
         {
             "type": "patchouli:text",
