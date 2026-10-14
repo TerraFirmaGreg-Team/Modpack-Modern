@@ -216,42 +216,96 @@ function registerImmersiveVehiclesGunsRecipes(event) {
 		.EUt(GTValues.VA[GTValues.ULV])
 		.duration(100)
 
+	// AA gun
+	event.recipes.gtceu.assembler('mts:mtsofficialpack.aa_gun_base')
+		.itemInputs('2x #forge:storage_blocks/black_steel', '2x #forge:rods/long/black_steel', '8x #forge:rods/black_steel', '16x #forge:screws/steel')
+		.itemOutputs('mts:mtsofficialpack.aa_base')
+		.EUt(GTValues.VA[GTValues.LV])
+		.circuit(10)
+		.duration(400)
+		
+	event.recipes.gtceu.assembler('mts:mtsofficialpack.aa_spotlight')
+		.itemInputs('10x #forge:plates/steel', '3x #forge:small_gears/steel', '2x greate:steel_shaft', 
+					'greate:large_steel_cogwheel', '20x #forge:screws/steel', '8x #forge:fine_wires/red_alloy',
+					'2x #gtceu:lamps', 'tfc:lens')
+		.itemOutputs('mts:mtsofficialpack.spotlight')
+		.EUt(GTValues.VA[GTValues.LV])
+		.circuit(11)
+		.duration(800)
+	
+	event.recipes.gtceu.assembler('mts:mtsofficialpack.aa_mg')
+		.itemInputs('10x #forge:plates/steel', '3x #forge:small_gears/aluminium', '2x greate:aluminium_shaft', 
+					'greate:large_aluminium_cogwheel', '20x #forge:screws/steel', '8x #forge:fine_wires/red_alloy',
+					'6x #forge:small_fluid_pipes/steel', '8x #forge:tiny_fluid_pipes/steel')
+		.itemOutputs('mts:mtsofficialpack.aa_turret_762')
+		.EUt(GTValues.VA[GTValues.MV])
+		.circuit(12)
+		.duration(800)
+
+	// Plane mounted weapons
+	event.recipes.gtceu.assembler('mts:mtsofficialpack.single_bombrack')
+		.itemInputs('2x #forge:plates/steel', '3x #forge:rods/steel', '4x #forge:bolts/steel', '2x #forge:fine_wires/red_alloy')
+		.itemOutputs('mts:mtsofficialpack.basicbomb_hardpoint')
+		.EUt(GTValues.VA[GTValues.LV])
+		.circuit(10)
+		.duration(200)
+	
+	event.recipes.gtceu.assembler('mts:mtsofficialpack.triple_bombrack')
+		.itemInputs('8x #forge:plates/steel', '8x #forge:rods/steel', '24x #forge:bolts/steel', '6x #forge:fine_wires/red_alloy')
+		.itemOutputs('mts:mtsofficialpack.double_bombrack')
+		.EUt(GTValues.VA[GTValues.LV])
+		.circuit(11)
+		.duration(500)
+	
+	event.recipes.gtceu.assembler('mts:mtsofficialpack.bombletrack')
+		.itemInputs('8x #forge:plates/aluminium', '12x #forge:rods/aluminium', '36x #forge:bolts/aluminium', '12x #forge:fine_wires/red_alloy')
+		.itemOutputs('mts:mtsofficialpack.bomblet_bombrack')
+		.EUt(GTValues.VA[GTValues.MV])
+		.circuit(12)
+		.duration(400)
+	
+	event.recipes.gtceu.assembler('mts:mtsofficialpack.heavy_bombrack')
+		.itemInputs('6x #forge:plates/aluminium', '6x #forge:rods/aluminium', '12x #forge:bolts/aluminium', '6x #forge:fine_wires/red_alloy')
+		.itemOutputs('mts:mtsofficialpack.heavy_bombrack')
+		.EUt(GTValues.VA[GTValues.MV])
+		.circuit(13)
+		.duration(300)
+	
+	// Ammo related
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.762_ammo')
 		.itemInputs('2x #forge:plates/steel')
 		.itemInputs(Item.of('tacz:ammo', '{AmmoId:"create_armorer:slap"}').strongNBT().withCount(64))
 		.itemOutputs('mts:mtsofficialpack.bullet762')
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.duration(100)
 		
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.ammocrate_250')
 		.itemInputs('8x #tfc:lumber', '8x #forge:screws/steel')
 		.inputFluids(Fluid.of('tfc:light_gray_dye', 144))
 		.itemOutputs('mts:mtsofficialpack.ammocrate_bomb_250')
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.duration(100)
 		
 	//event.recipes.gtceu.assembler('mts:mtsofficialpack.ammocrate_500')
 	//	.itemInputs('12x #tfc:lumber', '16x #forge:screws/steel')
 	//	.inputFluids(Fluid.of('tfc:red_dye', 288))
 	//	.itemOutputs('mts:mtsofficialpack.ammocrate_bomb_500')
-	//	.EUt(GTValues.VA[GTValues.MV])
+	//	.EUt(GTValues.VA[GTValues.LV])
 	//	.duration(200)
 		
 	//event.recipes.gtceu.assembler('mts:mtsofficialpack.ammocrate_bomblet')
 	//	.itemInputs('12x #tfc:lumber', '16x #forge:screws/steel')
 	//	.inputFluids(Fluid.of('tfc:blue_dye', 144))
 	//	.itemOutputs('mts:mtsofficialpack.ammocrate_bomblet')
-	//	.EUt(GTValues.VA[GTValues.MV])
+	//	.EUt(GTValues.VA[GTValues.LV])
 	//	.duration(200)
 		
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.ammocrate_rocket')
 		.itemInputs('12x #tfc:lumber', '16x #forge:screws/steel')
 		.inputFluids(Fluid.of('tfc:green_dye', 144))
 		.itemOutputs('mts:mtsofficialpack.ammocrate_rocket')
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.duration(200)
-		
-	
 	
 	event.recipes.gtceu.assembler('mts:mtsofficialpack_basicbomb_LV')
 		.itemInputs('2x #minecraft:buttons', '4x #forge:normal_fluid_pipes/steel', '2x #forge:plates/steel', '3x minecraft:tnt')
