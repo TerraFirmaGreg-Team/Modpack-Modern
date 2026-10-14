@@ -764,7 +764,11 @@
 		}
 		{
 			dependencies: ["5BACED5AE350EAB1"]
-			description: ["{quests.high_voltage.cetane_diesel.desc}"]
+			description: [
+				"{quests.high_voltage.cetane_diesel.desc.1}"
+				"{@pagebreak}"
+				"{quests.high_voltage.cetane_diesel.desc.2}"
+			]
 			icon: "gtceu:cetane_boosted_diesel_bucket"
 			id: "04F6E968CEEC3D49"
 			optional: true

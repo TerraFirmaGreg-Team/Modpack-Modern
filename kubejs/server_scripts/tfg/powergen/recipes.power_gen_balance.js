@@ -118,4 +118,37 @@ function registerTFGPowerGenBalance(event) {
 		.EUt(GTValues.VA[GTValues.LuV])
         .circuit(24)
 
+	// 2-EHN
+	event.recipes.gtceu.chemical_reactor('tfg:ethylhexyl_nitrate')
+		.inputFluids(Fluid.of('tfg:ethylhexanol', 1000), Fluid.of('gtceu:nitric_acid', 1000))
+		.outputFluids(Fluid.of('tfg:ethylhexyl_nitrate', 1000), Fluid.of('minecraft:water', 1000))
+		.duration(20 * 12)
+		.EUt(GTValues.VA[GTValues.MV])
+	
+    event.recipes.gtceu.mixer('tfg:cetane_diesel_from_diesel_ehn')
+        .inputFluids(Fluid.of('gtceu:diesel', 1000), Fluid.of('tfg:ethylhexyl_nitrate', 10))
+        .outputFluids(Fluid.of('gtceu:cetane_boosted_diesel', 1000))
+        .duration(20 * 1)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.mixer('tfg:cetane_diesel_from_bio_diesel_ehn')
+        .inputFluids(Fluid.of('gtceu:bio_diesel', 1000), Fluid.of('tfg:ethylhexyl_nitrate', 20))
+        .outputFluids(Fluid.of('gtceu:cetane_boosted_diesel', 7500))
+        .duration(20 * 1)
+        .EUt(GTValues.VA[GTValues.HV])
+	
+	event.recipes.gtceu.large_chemical_reactor('tfg:cetane_diesel_from_diesel_shortcut_ehn')
+		.inputFluids(Fluid.of('gtceu:diesel', 10000), Fluid.of('tfg:ethylhexyl_nitrate', 100))
+		.outputFluids(Fluid.of('gtceu:cetane_boosted_diesel', 10000))
+		.duration(20 * 6)
+		.EUt(GTValues.VA[GTValues.HV])
+        .circuit(24)
+	
+	event.recipes.gtceu.large_chemical_reactor('tfg:cetane_diesel_from_bio_diesel_shortcut_ehn')
+		.inputFluids(Fluid.of('gtceu:bio_diesel', 10000), Fluid.of('tfg:ethylhexyl_nitrate', 200))
+		.outputFluids(Fluid.of('gtceu:cetane_boosted_diesel', 7500))
+		.duration(20 * 6)
+		.EUt(GTValues.VA[GTValues.HV])
+        .circuit(24)
+
 }

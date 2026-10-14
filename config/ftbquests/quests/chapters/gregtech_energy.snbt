@@ -1100,7 +1100,11 @@
 				"4D0ADC66D2CF09B1"
 				"0C718329245D9619"
 			]
-			description: ["{quests.high_voltage.cetane_diesel.desc}"]
+			description: [
+				"{quests.high_voltage.cetane_diesel.desc.1}"
+				"{@pagebreak}"
+				"{quests.high_voltage.cetane_diesel.desc.2}"
+			]
 			id: "376BFF92714C5012"
 			subtitle: "{quests.high_voltage.cetane_diesel.subtitle}"
 			tasks: [{
