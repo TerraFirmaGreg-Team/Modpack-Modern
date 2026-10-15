@@ -1,5 +1,5 @@
 {
-    "name": "锻砧",
+    "name": "砧",
     "category": "tfg:craftsmanship",
     "icon": "tfc:metal/anvil/bronze",
     "pages": [
@@ -12,17 +12,17 @@
             "type": "patchouli:text",
             "anchor": "intro",
             "title": "简介",
-            "text": "除了直接浇铸工具之外（这也是加工更高等级金属的必要条件），另一种方法是使用$(thing)砧$()。砧是一种可以进行两种不同工艺的方块：$(l:craftsmanship/anvils#working)锻造$()和$(l:craftsmanship/anvils#welding)焊接$()。砧可以把所需金属类型的双锭焊接成高一级的砧，而要用那种金属加工其他物品，就必须有这样的砧。"
+            "text": "除了直接浇铸工具之外（这也是加工更高等级金属的必要条件），另一种方法是使用$(thing)砧$()。砧是一种可以进行两种不同工艺的方块：$(l:craftsmanship/anvils#working)锻造$()和$(l:craftsmanship/anvils#welding)焊接$()。砧可以把更高一级的砧所需的金属焊接成双锭，而要用那种金属加工其他物品，就必须有对应等级的砧。"
         },
         {
             "type": "patchouli:text",
             "anchor": "stone_anvil",
             "title": "石砧",
-            "text": "首先，你需要获得一块$(thing)天然火成岩$()，也就是$(l:the_world/geology#igneous_extrusive)喷出岩$()（流纹岩、玄武岩、安山岩或英安岩）或$(l:the_world/geology#igneous_intrusive)深成岩$()（花岗岩、闪长岩、辉长岩、辉石岩或角斑岩）。你可以直接找到并利用世界上裸露的岩块，也可以从周围岩石中$(l:craftsmanship/anvils#raw_rock)开采一块$()。"
+            "text": "首先，你需要获得一块$(thing)天然火成岩$()，也就是$(l:the_world/geology#igneous_extrusive)喷出岩$()（流纹岩、玄武岩、安山岩或英安岩）或$(l:the_world/geology#igneous_intrusive)侵入岩$()（花岗岩、闪长岩、辉长岩、辉石岩或角斑岩）。你可以直接找到并利用裸露在地表的岩石，也可以把它们从岩壁中$(l:craftsmanship/anvils#raw_rock)开采出来$()。"
         },
         {
             "type": "patchouli:text",
-            "text": "你还需要任意一种$(thing)锤子$()。要制作砧，只需$(item)$(k:key.use)$()天然岩石方块裸露的$(thing)顶面$()，同时确保手里拿着$(thing)锤子$()，铛！一个砧就做成了。$(br2)砧分$(l:craftsmanship/anvils#tiers)等级$()，岩石砧是第零级——最低的一级。它只能$(l:craftsmanship/anvils#welding)焊接$()第I级的锭。"
+            "text": "你还需要一把任意材料制成的$(thing)锤子$()。要制把岩石变成砧，手里拿着$(thing)锤$()$(item)$(k:key.use)$()天然岩石方块裸露的$(thing)顶面$()即可。$(br2)砧有不同的$(l:craftsmanship/anvils#tiers)等级$()，岩石砧是第零级——最低的一级。它只能$(l:craftsmanship/anvils#welding)焊接$()第I级的锭。"
         },
         {
             "type": "tfg:multimultiblock",
@@ -48,7 +48,7 @@
         {
             "type": "patchouli:text",
             "anchor": "raw_rock",
-            "text": "要获得不碎成小石块的天然岩石方块，需要先把它$(thing)开采$()下来：你必须挖掉天然岩石方块六个面上的所有方块。当它六面都接触空气时，就会作为物品弹出，可以捡起来。",
+            "text": "要获得一个天然岩石方块，需要先把它$(thing)开采$()下来：你必须挖掉天然岩石方块六个面上的所有方块。当它六面都接触空气时，就会掉落其本体，可以捡起来。",
             "title": "获得天然岩石"
         },
         {
@@ -274,7 +274,7 @@
         {
             "type": "patchouli:text",
             "anchor": "working",
-            "text": "要在砧上锻造物品，你需要对砧按$(item)$(k:key.use)$()打开砧界面（见下一张图片）。左侧有两个物品输入槽——锻造时，目标物品必须放在右边的槽里。锻造时还需要一把锤子，可以放进砧右侧的锤子槽，$(bold)或者$()拿在主手上。锻造物品的过程中，锤子会逐渐损耗耐久。",
+            "text": "要在砧上锻造物品，你需要对砧按$(item)$(k:key.use)$()打开砧界面（见下一张图片）。左侧有两个物品输入槽，锻造素材必须放在右边那格。锻造时还需要一把锤子，可以放进砧右侧的锤子槽，$(bold)或者$()拿在主手上。锻造物品的过程中，锤子会逐渐损耗耐久。",
             "title": "锻造"
         },
         {
@@ -287,7 +287,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "接下来你需要选择$(thing)锻造方案$()，即决定要制作哪件物品。用$(item)$(k:key.attack)$()点击卷轴按钮，然后选择要制作的物品。砧界面会重新出现，此时你已经选好了方案。卷轴上会显示你正在制作的物品，$(thing)规则$()和$(thing)目标$()也会随之显示。"
+            "text": "开工前，你必须先选择锻造$(thing)目标$()。$(item)$(k:key.attack)$()点击卷轴图标打开目标一览，选择完后会自动返回砧界面，且卷轴图标会转变为你刚刚选择的物品，同时屏幕上方的三个空格会显示$(thing)当前目标$()所需的$(thing)锻造规则$()。"
         },
         {
             "type": "patchouli:image",
@@ -304,7 +304,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(2)绿色$()的动作总是使你的目标$(bold)向右$()移动，$(4)红色$()的动作总是使你的进度$(bold)向左$()移动。注意，如果目标被移出了进度条，说明物品锻打过头了，锭会作废。不过，锻造时你还必须满足$(thing)规则$()……"
+            "text": "使用$(2)绿色$()手法会将绿色指针向$(bold)右$()移动，而使用$(4)红色$()手法则会将绿色指针向$(bold)左$()移动。注意！如果你把绿色指针打出了屏幕，锻造素材就作废了！然而，单单将两个指针对齐是不够的。你还必须遵守额外的$(thing)锻造规则$()……"
         },
         {
             "type": "patchouli:text",
@@ -313,7 +313,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "你最近三次的操作就显示在规则的正下方。某条规则被满足时，它的边框会变成绿色。所有规则都满足即为成功。$(br2)最后，还要留意物品的$(l:game_mechanics/heating)温度$()。金属只有在高于特定温度时才能锻造，此时工具提示会显示「可锻造」。锻造过程中，你可以把物品取出来重新加热。"
+            "text": "锻造规则下方会显示你最后使用的三个锻造手法。被满足的锻造规则的轮廓会变为绿色。只有当所有锻造规则都被满足，且两个指针也对齐时才算锻造成功。$(br2)最后，别忘了留意锻造素材的$(l:game_mechanics/heating)温度$()。金属锭只有在温度足够高时（其工具提示会显示“可加工”）才可以用来锻造。锻造到一半的物品可以从砧上取出再加热，其锻造进度会保留。"
         },
         {
             "type": "patchouli:text",
@@ -330,7 +330,7 @@
             "item": "gtceu:wrought_iron_pickaxe{\"tfc:forging_bonus\":4}",
             "title": "完美",
             "link_recipes": false,
-            "text": "锻造评价分为四个等级：$(li)适度锻造$(li)合格$(li)精良$(li)完美！$(br2)这些加成会提升工具的威力——让它$(t:类似“耐久”附魔)$(6)更不容易损坏$()、$(t:类似“效率”附魔)$(6)挖掘更快$()，和/或$(t:类似“锋利”附魔)$(6)在战斗中造成更多伤害$()，具体取决于工具的类型。"
+            "text": "锻造评价分为四个等级：$(li)粗糙$(li)合格$(li)精良$(li)完美！$(br2)这些加成会提升工具的威力——让它$(t:类似“耐久”附魔)$(6)更不容易损坏$()、$(t:类似“效率”附魔)$(6)挖掘更快$()，和/或$(t:类似“锋利”附魔)$(6)在战斗中造成更多伤害$()，具体取决于工具的类型。"
         },
         {
             "type": "patchouli:spotlight",
@@ -362,7 +362,7 @@
         },
         {
             "type": "patchouli:multiblock",
-            "text": "建议制作两台杠杆锤并串在一起，用来自动处理$(l:craftsmanship/bloomery)方坯$()和$(l:craftsmanship/blast_furnace)钢$()。",
+            "text": "建议制作两台杠杆锤并串在一起，用来自动处理$(l:craftsmanship/bloomery)锻铁方坯$()和$(l:craftsmanship/blast_furnace)钢$()。",
             "enable_visualize": true,
             "multiblock": {
                 "pattern": [
@@ -412,7 +412,7 @@
             "type": "patchouli:text",
             "anchor": "anvil_helper",
             "title": "Anvil Helper 指南",
-            "text": "$(l:craftsmanship/anvils#working)锻造$()这种在$(l:craftsmanship/anvils#metal_anvil)砧$()上进行的工艺是$(tfg)中的关键流程，因为你迈向$(thing)蒸汽与机械时代$()的大部分工作都需要用到砧。$(br)本指南分为两部分：$(l:craftsmanship/anvils#ui_explained)了解界面$()和$(l:craftsmanship/anvils#how_to_perfectly_forge)如何完美锻造$()。$(br2)整合包带有一个自定义$(thing)资源包$()，名为$(l:https://www.curseforge.com/minecraft/texture-packs/tfc-anvil-helper-patched)TFC Anvil Helper$()，你需要启用它才能看懂本指南。$()"
+            "text": "在$(l:craftsmanship/anvils#metal_anvil)砧$()上进行$(l:craftsmanship/anvils#working)锻造$()是$(tfg)中的一个核心流程，在你迈向$(thing)蒸汽与机械时代$()的大部分工作都需要用到砧。$(br)本指南分为两部分：$(l:craftsmanship/anvils#ui_explained)理解界面$()和$(l:craftsmanship/anvils#how_to_perfectly_forge)如何完美锻造$()。$(br2)整合包带有一个自定义$(thing)资源包$()，名为$(l:https://www.curseforge.com/minecraft/texture-packs/tfc-anvil-helper-patched)TFC Anvil Helper$()，你需要启用它才能看懂本指南。$()"
         },
         {
             "type": "patchouli:image",
@@ -429,7 +429,7 @@
             ],
             "border": false,
             "anchor": "ui_explained",
-            "title": "界面与你",
+            "title": "界面详解",
             "text": "启用TFC Anvil Helper后的砧具界面（颜色标识版）。"
         },
         {

@@ -5,11 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(thing)Beehives$() are a place to house bees for $(thing)Beekeeping$(). Beekeeping is a direct source of both wax and honey. Beehives need $(item)Beehive Frames$() inside them for the bees to live. Removing frames from an active hive will cause the bees to attack you, unless wearing a full $(item)Beekeeper Suit$(), or with a lit $(thing)Firepit$() beneath the hive."
+            "text": "$(thing)Улей$() это место, в котором $(thing)Пчеловоды$() держат пчел. Пчеловодство является прямым источником воска и мёда. В улье должны быть $(item)Рамки для улья$(), чтобы пчёлы могли в нём жить. Если убрать рамки из активного улья, то тебя атакуют пчёлы, если только ты не носишь полный $(item)Костюм пасечника$(), или разжёг $(thing)Костёр$() под ульем."
         },
         {
             "type": "patchouli:text",
-            "text": "Beehives know about the area in a 5 block radius from them. If there are at least 10 $(t:#minecraft:flowers block tag)$(3)Flowers$() around the hive, there is a chance an empty frame will be populated with a $(thing)Queen$(). Having 4 empty frames in a hive greatly increases the chances of bees moving in. Beehives can share flowers. The benefit of flowers diminishes after 60 flowers."
+            "text": "Ульи видят область в радиусе 5 блоков от себя. Если рядом есть хотя бы 10 $(t:#minecraft:flowers block tag)$(3)Цветов$(), то с некоторым шансом пустая рамка может быть заселена $(thing)Маткой$(). С 4 пустыми рамками шанс заселения пчёл значительно повышается. Ульи могут делить цветы. Если рядом находится 60 цветов, то польза от каждого последующего цветка падает."
         },
         {
             "anchor": "preview",
@@ -326,14 +326,14 @@
         },
         {
             "type": "patchouli:text",
-            "text": "If a beehive has two frames with queens, and an empty frame, the two colonies have a chance of $(thing)Breeding$() and producing a new queen in the empty frame. This has the effect of passing on the $(thing)Abilities$() of each parent to the offspring. Abilities are different traits bees have that change how they affect the world around them. They are on a scale of 1-10, with 10 being the max.$(br)Bees can have up to $(thing)four$() abilities."
+            "text": "Если в улье есть две рамки с матками, а также пустая рамка, то две колонии могут $(thing)Скреститься$() и вывести новую матку на пустой рамке. Это передаёт $(thing)Особенности$() обоих родителей потомству. Особенности это различные черты, определяющие как пчёлы влияют на окружающий мир. Они измеряются по шкале от 1 до 10, где 10 это максимум.$(br)Пчёлы могут иметь вплоть до $(thing)четырёх$() особенностей."
         },
         {
-            "title": "Honey & Wax",
+            "title": "Мёд и воск",
             "anchor": "honey_and_wax",
             "type": "patchouli:spotlight",
             "item": "firmalife:jar/honey,firmalife:raw_honey,firmalife:beeswax",
-            "text": "Bees produce $(thing)Honey$(). Using $(item)$(k:key.use)$() with an Empty Jar on a hive that contains honey gives you a $(thing)Honey Jar$(). Opening a Honey Jar gives you $(thing)Raw Honey$(), a $(thing)Sugar$() substitute.$(br2)Pressing $(item)$(k:key.use)$() on a filled frame with a $(thing)Knife$() gives you $(thing)Beeswax$(), which has many uses. However, this kills the queen inside the frame!"
+            "text": "Пчёлы производят $(thing)Мед$(). Нажав $(item)$(k:key.use)$() с пустой банкой в руке по улью с мёдом ты получишь $(thing)Банку меда$(). Открыв банку меда ты получишь $(thing)Сырой мед$(), являющийся заменителем $(thing)Сахара$(). $(br2)Нажав $(item)$(k:key.use)$() по заполненной рамке с $(thing)Ножом$() в руке ты получишь $(thing)Воск$(), у которого есть масса применений. Учти, что это также убивает матку, находящуюся на рамке!"
         },
         {
             "type": "patchouli:text",
@@ -343,23 +343,23 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(thing)Fertility$(): Increases likelihood of breeding.$()$(li)$(thing)Crop Affinity$(): Likelihood of spreading a small amount of nutrients to crops.$()$()$(li)$(thing)Nature Restoration$(): Causes new flowers and lilypads to spawn around the hive.$()$()$(li)$(thing)Calmness$(): Decreases likelihood of bees attacking you$()."
+            "text": "$(li)$(thing)Плодовитость$(): повышает шанс скрещивания. $()$(li)$(thing)Опыление культур$(): даёт возможность передачи небольшого количества питательных веществ посевам.$()$()$(li)$(thing)Разрастание$(): приводит к появлению новых цветов и кувшинок рядом с ульем. $()$()$(li)$(thing)Спокойствие роя$(): уменьшает шанс того, что пчёлы атакуют тебя$()."
         },
         {
             "type": "patchouli:text",
             "anchor": "disease",
-            "title": "Disease",
-            "text": "Bees with a high Mutant ability have a chance of developing a $(thing)Genetic Disease$(). Diseased bees pass on their affliction to their offspring, and do not produce honey."
+            "title": "Болезни",
+            "text": "У пчёл с высокой склонностью к мутациям может развиться $(thing)Генетическое заболевание$().  Больные пчёлы передают свой недуг потомству и не производят мёд"
         },
         {
             "type": "patchouli:text",
             "title": "Советы пчеловоду",
             "anchor": "tips",
-            "text": "$(li)Bees can help fertilize $(l:agriculture/greenhouse#planters)Planters!$()$(li)Hydrated large planters count as flowers.$(li)Being wet prevents bee attacks.$(li)Some crops like sunflowers and flax count as flowers.$(li)The ranges for $(thing)Crop Affinity$(), $(thing)Nature Restoration$(), and flowers are the same.$(li)Make sure to keep the hive entrance unobstructed."
+            "text": "$(li)Пчелы могут помогать в удобрении $(l:agriculture/greenhouse#planters)Рассады!$()$(li)Орошённые большие лотки считаются цветами.$(li)Пчелы не атакуют тебя, если ты мокрый.$(li)Некоторые культуры, такие как подсолнухи и лён, считаются цветами.$(li)Радиус действия $(thing)Опыления культур$(), $(thing)Разрастания$() и цветов одинаковы.$(li)Не забудь убедиться, что вход в улей ничем не заблокирован."
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Дополнительно",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/greenhouse",
