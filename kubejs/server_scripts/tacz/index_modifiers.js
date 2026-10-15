@@ -106,6 +106,12 @@ const gunIndexLogic = (event) => {
 		json.type = "rifle";
 		return event.setJson(JSON.stringify(json));
 	}
+	
+	if (id === "create_armorer:sniper_semi_m1"){
+		const json = JSON.parse(event.getStdJson());
+		json.type = "rifle";
+		return event.setJson(JSON.stringify(json));
+	}
 }
 
 const attachmentDataLogic = (event) => {
@@ -132,7 +138,7 @@ const gunDataLogic = (event) => {
 		json.ammo = "create_armorer:rbapb";
 		
 		json.bullet.pierce = 2;
-		json.bullet.damage = 12;
+		json.bullet.damage = 10;
 		json.bullet.extra_damage.armor_ignore = 0.25;
 		json.bullet.extra_damage.head_shot_multiplier = 1.5;
 		json.bullet.extra_damage.damage_adjust = 
@@ -143,6 +149,21 @@ const gunDataLogic = (event) => {
 			{"distance": "infinite", "damage": 7}
 		]
 		
+	}
+	
+	if (id === "tacz:rhino357_data") {
+		json.ammo = "create_armorer:rbapb";
+		
+		json.bullet.pierce = 2;
+		json.bullet.damage = 12;
+		json.bullet.extra_damage.armor_ignore = 0.25;
+		json.bullet.extra_damage.head_shot_multiplier = 1.5;
+		json.bullet.extra_damage.damage_adjust = 
+		[
+			{"distance": 40, "damage": 12},
+			{"distance": 70, "damage": 9},
+			{"distance": "infinite", "damage": 6}
+		]
 	}
 	
 	if (id === "create_armorer:pistol_auto_stress_data"){
@@ -232,6 +253,20 @@ const gunDataLogic = (event) => {
         
 	
 	//Rifles
+	if (id === "create_armorer:sniper_semi_m1_data"){
+		json.ammo = "create_armorer:slap";
+		
+		json.bullet.extra_damage.armor_ignore = 0.30;
+		json.bullet.damage = 12;
+		json.bullet.extra_damage.head_shot_multiplier = 1.50;
+		json.bullet.extra_damage.damage_adjust = 
+		[
+			{"distance": 30, "damage": 12},
+			{"distance": 45, "damage": 10},
+			{"distance": "infinite", "damage": 8}
+		]
+	}
+	
 	if (id === "create_armorer:sniper_semi_clockwork_data"){
 		json.ammo = "create_armorer:slap";
 		json.ammo_amount = 10;

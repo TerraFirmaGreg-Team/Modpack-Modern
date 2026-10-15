@@ -11,6 +11,7 @@ global.TACZ_GUNS_INDEX = [
 	'tacz:cz75',
 	'tacz:p320',
 	'tacz:b93r',
+	'tacz:rhino357',
 	'tacz:timeless50',
 	
 	//Sniper
@@ -347,6 +348,7 @@ global.TACZ_ENABLED_GUNS = [
 	'ulv_guns:flintlock',
 	'create_armorer:pistol_revolver_torque',
 	'create_armorer:pistol_auto_stress',
+	'tacz:rhino357',
 	'applied_armorer:niklas_pistol_semi_right',
 	'applied_armorer:niklas_pistol_semi_pride',
 	'applied_armorer:niklas_pistol_double_win_win',
@@ -355,6 +357,7 @@ global.TACZ_ENABLED_GUNS = [
 	'tacz:springfield1873',
 	'tacz:m700',
 	'create_armorer:sniper_semi_clockwork',
+	'create_armorer:sniper_semi_m1',
 	'applied_armorer:moritz_sniper_semi_k30',
 	
 	//Rifle
