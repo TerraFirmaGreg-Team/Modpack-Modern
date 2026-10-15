@@ -5,13 +5,13 @@
 	"pages": [
         {
             "type": "patchouli:text",
-            "text": "工厂可没法在一片旷野上发展起来！本条目列出了一些工具，帮你把美丽的自然景观铺平，建起梦寐以求的仓库。$(br2)$(bold)提示：$()竖直台阶碍事？$(thing)Additional Placements$()的放置方式可以按 $(item)$(k:key.additionalplacements.placement_toggle)$()来切换。"
+            "text": "工厂可没法在一片旷野上生长起来！本条目列出了一些工具，帮你把美丽的自然景观铺平，建起梦寐以求的仓库。$(br2)$(bold)提示：$()竖直台阶碍事？$(thing)Additional Placements$()的放置方式可以按 $(item)$(k:key.additionalplacements.placement_toggle)$()来切换。"
         },
         {
             "type": "patchouli:text",
             "anchor": "index",
             "title": "目录",
-            "text": "$(li)$(bold)$(l:craftsmanship/building_tools#trowel)抹刀$()$(li)$(bold)$(l:craftsmanship/building_tools#stonecutter)切石机$()$(li)$(bold)$(l:craftsmanship/building_tools#copycats)仿制方块$()$(li)$(bold)$(l:craftsmanship/building_tools#framing_saw)框架锯$()$(li)$(bold)$(l:craftsmanship/building_tools#architects_cutter)建筑师切割机$()$(li)$(bold)$(l:craftsmanship/building_tools#wands)建筑手杖$()$(li)$(bold)$(l:craftsmanship/building_tools#schematicannon)蓝图加农炮$()$(li)$(bold)$(l:craftsmanship/building_tools#terminals)GregTech 终端$()$(li)$(bold)$(l:craftsmanship/building_tools#gadgets)建筑小工具$()"
+            "text": "$(li)$(bold)$(l:craftsmanship/building_tools#trowel)抹刀$()$(li)$(bold)$(l:craftsmanship/building_tools#stonecutter)切石机$()$(li)$(bold)$(l:craftsmanship/building_tools#copycats)伪装方块$()$(li)$(bold)$(l:craftsmanship/building_tools#framing_saw)框架锯$()$(li)$(bold)$(l:craftsmanship/building_tools#architects_cutter)建筑师切割机$()$(li)$(bold)$(l:craftsmanship/building_tools#wands)建筑手杖$()$(li)$(bold)$(l:craftsmanship/building_tools#schematicannon)蓝图加农炮$()$(li)$(bold)$(l:craftsmanship/building_tools#terminals)格雷科技终端$()$(li)$(bold)$(l:craftsmanship/building_tools#gadgets)建筑小工具$()"
         },
         {
             "type": "patchouli:spotlight",

@@ -203,7 +203,7 @@
 			"scale": 0.5,
 			"name": "Łupieżca",
 			"anchor": "raider",
-			"text": "$(thing)Raiders$() are hostile animals found above -109°C. They have a natural rivalry with $(thing)Chargers$(). You can make them neutral by feeding them $(item)Raw Meat$()."
+			"text": "$(thing)Łupieżcy$() to wrogie zwierzęta zamieszkujące obszary powyżej -109°C. Są naturalnymi rywalami $(thing)szarżerów$(). Możesz uczynić je neutralnymi, karmiąc je $(item)surowym mięsem$()."
 		},
 		{
 			"type": "patchouli:entity",

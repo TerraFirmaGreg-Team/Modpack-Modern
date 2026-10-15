@@ -86,7 +86,7 @@
 			"scale": 0.6,
 			"name": "Źródlany żelek",
 			"anchor": "spring_jellie",
-			"text": "$(thing)Spring$() $(l:agriculture/jellies)Jellies$() are found in the $(thing)Geothermal Springs$() biome. Their slime balls are a renewable source of $(item)Spring Water$()."
+			"text": "$(thing)Źródlane$() $(l:agriculture/jellies)żelki$() występują w biomie $(thing)źródeł geotermalnych$(). Ich kule szlamu są odnawialnym źródłem $(item)wody źródlanej$()."
 		},
 		{
 			"type": "patchouli:entity",

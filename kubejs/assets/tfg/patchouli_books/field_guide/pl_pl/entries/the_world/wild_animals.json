@@ -354,7 +354,7 @@
             "anchor": "boar",
             "scale": 0.7,
             "name": "Dzik",
-            "text": "Dzik pojawia się przy $(l:the_world/climate#temperature)temperaturze$() wyższej niż -5°C i niższej niż 25°C i $(l:the_world/climate#rainfall)opadach$() pomiędzy 130 a 400 mm."
+            "text": "Dzik pojawia się przy $(l:the_world/climate#temperature)temperaturze$() wyższej niż -5°C i niższej niż 25°C oraz $(l:the_world/climate#rainfall)opadach$() pomiędzy 130 a 400 mm."
         },
         {
             "type": "patchouli:entity",
@@ -407,7 +407,7 @@
             "entity": "tfc:deer",
             "anchor": "deer",
             "scale": 0.7,
-            "text": "The deer spawns in forests at any $(l:the_world/climate#temperature)temperature$() below 25°C and above -15°C, and $(l:the_world/climate#rainfall)rainfall$() between 130 and 400mm."
+            "text": "Jeleń pojawia się w lasach przy dowolnej $(l:the_world/climate#temperature)temperaturze$() poniżej 25°C i powyżej -15°C oraz $(l:the_world/climate#rainfall)opadach$() od 130 do 400 mm."
         },
         {
             "type": "patchouli:entity",
@@ -430,14 +430,14 @@
             "scale": 0.9,
             "name": "Bongo leśne",
             "anchor": "bongo",
-            "text": "The bongo spawns in forests at any $(l:the_world/climate#temperature)temperature$() above 15°C, and $(l:the_world/climate#rainfall)rainfall$() between 230 and 500mm."
+            "text": "Bongo pojawia się w lasach przy dowolnej $(l:the_world/climate#temperature)temperaturze$() powyżej 15°C oraz $(l:the_world/climate#rainfall)opadach$()  od 230 do 500 mm."
         },
         {
             "type": "patchouli:entity",
             "entity": "tfc:grouse",
             "scale": 0.7,
             "anchor": "grouse",
-            "text": "The grouse spawns at any $(l:the_world/climate#temperature)temperature$() below 13°C and above -12°C, and $(l:the_world/climate#rainfall)rainfall$() between 150 and 400mm."
+            "text": "Kuropatwapojawia się przy dowolnej $(l:the_world/climate#temperature)temperaturze$() poniżej 13°C i powyżej -12°C oraz $(l:the_world/climate#rainfall)opadach$() od 150 do 400 mm."
         },
         {
             "type": "patchouli:entity",
@@ -476,7 +476,7 @@
             "scale": 1.2,
             "name": "Skoczek pustynny",
             "anchor": "jerboa",
-            "text": "The jerboa spawns at any $(l:the_world/climate#temperature)temperature$() below 25°C and above -3°C, and $(l:the_world/climate#rainfall)rainfall$() below 160mm."
+            "text": "Skoczek pustynny pojawia się przy dowolnej $(l:the_world/climate#temperature)temperaturze$() poniżej 25°C i powyżej -3°C oraz $(l:the_world/climate#rainfall)opadach$()  poniżej 160 mm."
         },
         {
             "type": "patchouli:entity",
@@ -616,7 +616,7 @@
             "scale": 0.25,
             "name": "Orka",
             "anchor": "orca",
-            "text": "Orki żyją w głębokich oceanach, o $(l:the_world/climate#temperature)temperaturze$() co najwyżej 19°C i $(l:the_world/climate#rainfall)opadach$() co najmniej 100 mm."
+            "text": "Orki żyją w głębokich oceanach, o $(l:the_world/climate#temperature)temperaturze$() co najwyżej 19°C oraz $(l:the_world/climate#rainfall)opadach$() co najmniej 100 mm."
         },
         {
             "type": "patchouli:entity",
@@ -624,7 +624,7 @@
             "scale": 0.4,
             "name": "Delfin",
             "anchor": "dolphin",
-            "text": "Dolphins live in deep oceans with $(l:the_world/climate#temperature)temperature$() of at least 10°C and $(l:the_world/climate#rainfall)rainfall$() of at least 200mm."
+            "text": "Delfiny żyją w głębokich oceanach, o $(l:the_world/climate#temperature)temperaturze$() co najmniej 10°C oraz $(l:the_world/climate#rainfall)opadach$() co najmniej 200 mm."
         },
         {
             "type": "patchouli:entity",
@@ -632,7 +632,7 @@
             "scale": 0.25,
             "name": "Manat",
             "anchor": "manatee",
-            "text": "Manatees live in any warm lake, with $(l:the_world/climate#temperature)temperature$() of at least 20°C and $(l:the_world/climate#rainfall)rainfall$() of at most 300mm."
+            "text": "Manaty żyją w każdym ciepłym jeziorze, o$(l:the_world/climate#temperature)temperaturze$() co najmniej 20°C oraz $(l:the_world/climate#rainfall)opadach$() co najwyżej 300 mm."
         },
         {
             "type": "patchouli:entity",
