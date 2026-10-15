@@ -133,6 +133,8 @@
     "tfg.machine.oxygen_distributor.fill_suit": "Uzupełnij tlen w skafandrze",
     "tfg.machine.heat_pump.status.blocked": "Wydech zablokowany - właz wydechu powinien wychodzić na otwartą przestrzeń",
     "tfg.machine.rotor_vent.no_rotor": "Brakuje wirnika turbiny we włazie wydechowym",
+    "tfg.multiblock.pattern.heat_pump.front_vent": "Przedni wylot: musi wychodzić na uszczelnione pomieszczenie, aby je ogrzewać",
+    "tfg.multiblock.pattern.heat_pump.back_vent": "Uchwyt wirnika wydechu: wymaga wirnika turbiny i musi wychodzić na otwartą przestrzeń",
     "tfg.multiblock.pattern.rotor_vent": "Uchwyt wirnika wydechu: wymaga wirnika turbiny",
     "tfg.machine.higgs_emitter.radius": "Zasięg: %s",
     "tfg.machine.pastoral_engine.animals_total": "Zwierzęta w strefie: %s",
