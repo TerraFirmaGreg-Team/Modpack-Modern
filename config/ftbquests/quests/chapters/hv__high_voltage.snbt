@@ -1362,6 +1362,7 @@
 			dependencies: [
 				"00A2566109144D7F"
 				"578ECB10B30A77C7"
+				"7FA0ACB7F161F378"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.high_voltage.moon_harvester.desc}"]
@@ -1966,6 +1967,20 @@
 			title: "{quests.space_survival.railgun.title}"
 			x: 17.5d
 			y: -6.0d
+		}
+		{
+			dependencies: ["403B34B669894C26"]
+			description: ["{quests.high_voltage.oxygen_distributor.desc}"]
+			guide_page: "tfg:field_guide tfg:the_moon/the_moon 15"
+			id: "11514DCB02911D9E"
+			subtitle: "{quests.high_voltage.oxygen_distributor.subtitle}"
+			tasks: [{
+				id: "72892DD24F453DC4"
+				item: "tfg:oxygen_distributor"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 1.0d
 		}
 	]
 	subtitle: ["{quests.high_voltage.subtitle}"]
