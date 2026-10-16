@@ -77,17 +77,17 @@
 			"type": "patchouli:spotlight",
 			"item": "tfg:heat_pump",
 			"anchor": "heat_pump",
-			"text": "Once you get the $(thing)MV Circuit$(), you can craft the $(item)Heat Pump$(), a multiblock that will warm up or cool down much larger sized buildings.$(br2)You will also need to insert a Turbine Rotor in the $(item)Exhaust Vent$() so the Heat Pump can run.$(br2)$(italic)More about it next page."
+			"text": "Once you've reached $(thing)MV Circuits$(), you can craft the $(item)Heat Pump$(), a multiblock that will warm up or cool down much larger sized buildings.$(br2)You will also need to insert a Turbine Rotor in the $(item)Exhaust Vent$() so the Heat Pump can run.$(br2)$(o)(Continued on next page...)$()"
 		},
 		{
             "type": "patchouli:spotlight",
             "item": "gtceu:turbine_rotor{GT.PartStats:{Material:\"tfg:silicon_carbide_silicon_carbide\"}},gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:vanadium\"}},gtceu:turbine_rotor{GT.PartStats:{Material:\"tfg:rene_41\"}}",
             "title": "Turbine Rotor",
-            "text": "The $(item)Turbine Rotor$() inserted in your Exhaust Vent will never wear down so you can feel safe about that, durability is therefore useless in the Exhaust Vent. But the Turbine Power will influence the discount you get on the $(thing)EU/t requirement$()."
+            "text": "The $(item)Turbine Rotor$() inserted in your Exhaust Vent will never lose durability, therefore it's a stat you can ignore. On the other hand, the Turbine's $(thing)Power$() will influence the discount you get on the $(thing)EU/t requirement$()."
         },
 		{
 			"type": "patchouli:text",
-			"text": "At that point in the game, the easiest solution is a $(item)Vanadium Rotor$() but you could also target the $(item)René-41 Rotor$() or the $(item)SiC-SiC Rotor$().$(br2)It's good to know that the Heat Pump will still work even if your doors are opens but you will still need an enclosed room for it to work.$(br2)$(italic)If the Power is under 100%, you will gain no benefits but you won't get any negative effect either.$()"
+			"text": "At this point in the game, the easiest solution is a $(item)Vanadium Rotor$(), but you could also go for the $(item)René-41 Rotor$() or the $(item)SiC-SiC Rotor$().$(br2)$(bold)Tip:$() The Heat Pump will still work even if your doors are open, but otherwise needs an enclosed area of non-air blocks to work.$(br2)$(italic)If the Turbine's $(thing)Power$() is under 100%, you will gain no benefits or drawbacks.$()"
 		},
 		{
 		"type": "tfg:multimultiblock",
