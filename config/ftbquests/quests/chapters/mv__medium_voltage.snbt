@@ -2193,7 +2193,7 @@
 						id: "gtceu:turbine_rotor"
 						tag: {
 							GT.PartStats: {
-								Material: "tfg:silicon_carbide_silicon_carbide"
+								Material: "gtceu:vanadium"
 							}
 						}
 					}
