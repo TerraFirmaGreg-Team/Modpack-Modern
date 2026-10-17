@@ -53,7 +53,7 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Hartowanie",
+            "title": "Nawodnienie",
             "anchor": "quenching",
             "text": "Beczki mogą schładzać $(l:game_mechanics/heating)gorące$() przedmioty. Włóż gorący przedmiot do beczki z $(thing)wodą$(), $(thing)olejem roślinnym$() lub $(thing)płynnym lodem$(), a jego temperatura szybko spadnie.$(br)Przedmioty możesz też wrzucać bezpośrednio do beczki klawiszem $(item)$(k:key.drop)$()."
         },

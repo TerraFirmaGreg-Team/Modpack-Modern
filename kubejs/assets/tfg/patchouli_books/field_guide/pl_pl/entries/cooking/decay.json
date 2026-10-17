@@ -6,17 +6,17 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:cooking/decay#decay)Introduction$()$(li2)$(l:cooking/decay#calculation)Calculating Decay$()$(li2)$(l:cooking/decay#table)Modifier Table$()$(li)$(bold)$(l:cooking/decay#vessels)Vessels$()$(li)$(bold)$(l:cooking/decay#cooking)Cooking$()$(li)$(bold)$(l:cooking/decay#smoking)Smoking$()$(li)$(bold)$(l:cooking/decay#salting)Salting$()$(li)$(bold)$(l:cooking/decay#vinegar)Pickling$()$(li)$(bold)$(l:cooking/decay#drying)Drying$()"
+            "text": "$(li)$(bold)$(l:cooking/decay#decay)Wprowadzenie$()$(li2)$(l:cooking/decay#calculation)Obliczanie tempa psucia się$()$(li2)$(l:cooking/decay#table)Tabela modyfikatorów$()$(li)$(bold)$(l:cooking/decay#vessels)Naczynia$()$(li)$(bold)$(l:cooking/decay#cooking)Gotowanie$()$(li)$(bold)$(l:cooking/decay#smoking)Wędzenie$()$(li)$(bold)$(l:cooking/decay#salting)Solenie$()$(li)$(bold)$(l:cooking/decay#vinegar)Kiszenie$()$(li)$(bold)$(l:cooking/decay#drying)Suszenie$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:cooking/decay#oven_baked)Oven Baking$()$(li)$(bold)$(l:cooking/decay#cellar)Cellars$()$(li2)$(l:cooking/decay#shelf)Cellar Storage$()$(li)$(bold)$(l:cooking/decay#lunch_box)Lunch Boxes$()$(li)$(bold)$(l:cooking/decay#refrigerator)Refrigerators$()$(li)$(bold)$(l:cooking/decay#freeze_dry)Freeze Drying$()$(li)$(bold)$(l:cooking/decay#pest)Pest Control$()$(li)$(bold)$(l:cooking/decay#cutting)Cutting off decay$()"
+            "text": "$(li)$(bold)$(l:cooking/decay#oven_baked)Pieczenie w piecu$()$(li)$(bold)$(l:cooking/decay#cellar)Piwnice$()$(li2)$(l:cooking/decay#shelf)Przechowywanie w piwnicy$()$(li)$(bold)$(l:cooking/decay#lunch_box)Śniadaniówki$()$(li)$(bold)$(l:cooking/decay#refrigerator)Lodówki$()$(li)$(bold)$(l:cooking/decay#freeze_dry)Liofilizacja$()$(li)$(bold)$(l:cooking/decay#pest)Zwalczanie szkodników$()$(li)$(bold)$(l:cooking/decay#cutting)Odkrawanie zepsutych części$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "decay",
             "title": "Psucie",
-            "text": "In TerraFirmaCraft, no food will last forever! Food will $(thing)expire$() over time, turning rotten. Rotten food will not restore any hunger, has the potential to give you debuff effects such as $(thing)Hunger$() or $(thing)Poison$(), and cannot be used in meals!$(br2)Fortunately, there are a number of ways to make your food last longer by $(thing)Preserving$() it."
+            "text": "W TerraFirmaCraft żadna żywność nie zachowa świeżości na zawsze! Z czasem $(thing)psuje się$() i gnije. Zepsute jedzenie nie zaspokaja głodu, może wywołać negatywne efekty, takie jak $(thing)głód$() lub $(thing)zatrucie$(), i nie nadaje się do przygotowywania posiłków!$(br2)Na szczęście istnieje wiele sposobów na przedłużenie trwałości żywności poprzez jej $(thing)konserwowanie$()."
         },
         {
             "type": "patchouli:text",
@@ -242,13 +242,13 @@
             "type": "patchouli:text",
             "anchor": "vinegar",
             "title": "Konserwacja w occie",
-            "text": "$(thing)Vinegar Preservation$() is a way of making fruits, veggies, and meat last longer. To preserve food in vinegar it must first be $(thing)Pickled$() in $(thing)Brine$(). Once food is pickled, it can be sealed in a Barrel of Vinegar. If there is 125mB of Vinegar per pickled food item, the food will last longer. $(7)$(bold)Pickled$() food gain a modifier of 0.5 while $(7)$(bold)Submerged in Vinegar$() food gain a modifier of 0.1."
+            "text": "$(thing)Konserwowanie w occie$() przedłuża trwałość owoców, warzyw i mięsa. Aby zakonserwować żywność w occie, należy ją najpierw $(thing)ukisić$() w $(thing)solance$(). Następnie można ją zamknąć w beczce z octem. Każdą sztuka kiszonej żywności wymaga co najmniej 125 mW octu, by jej trwałość została dodatkowo wydłużona. Cecha $(7)$(bold)kiszone$() daje modyfikator 0,5, a cecha $(7)$(bold)zakonserwowane w occie$() - 0,1."
         },
         {
             "type": "patchouli:text",
             "anchor": "drying",
             "title": "Suszenie",
-            "text": "The $(thing)Drying Mat$() is used to dry items. It is made with $(thing)Fruit Leaves$(), which are obtained from breaking the leaves of $(thing)Fruit Trees$(). To use the drying mat, place it out in the sun and add an item to it with $(item)$(k:key.use)$(). If it rains, the drying process must start over. Some food items―Like fruits―Will gain the $(7)$(bold)Dried$() trait which gives a modifier of 0.8."
+            "text": "$(thing)Mata do suszenia$() służy do suszenia przedmiotów. Wytwarza się ją z $(thing)liści drzew owocowych$(), które można zdobyć, niszcząc liście $(thing)drzew owocowych$(). Aby użyć maty, umieść ją na słońcu i połóż na niej przedmiot za pomocą $(item)$(k:key.use)$(). Jeśli zacznie padać, proces suszenia trzeba będzie rozpocząć od nowa. Niektóre produkty spożywcze, np. owoce, zyskają po tym cechę $(7)$(bold)wysuszone$() z modyfikatorem 0,8."
         },
         {
             "type": "patchouli:text",
@@ -258,7 +258,7 @@
             "type": "patchouli:text",
             "anchor": "oven_baked",
             "title": "Pieczone w piecu",
-            "text": "Baking food items in a $(l:cooking/cooking_methods#top_oven)Top Oven$() is the second-best way to preserve your food items through cooking as it gives the $(7)$(bold)Oven Baked$() trait with a modifier of 0.9."
+            "text": "Pieczenie żywności w $(l:cooking/cooking_methods#top_oven)piecu$() to drugi pod względem skuteczności sposób przedłużania trwałości poprzez obróbkę cieplną. Nadaje cechę $(7)$(bold)pieczone w piecu$() z modyfikatorem 0,9."
         },
         {
             "type": "patchouli:text",
@@ -268,7 +268,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "The cellar is used for food preservation and $(l:cooking/cheese#cheese_wheel)Aging Cheese$() by using $(l:cooking/decay#shelf)Food Shelves$() and $(l:cooking/decay#shelf)Hangers$() to hold food items or by placing cheese on the ground or $(thing)Barrel Racks$().$(br2)The cellar performs better in $(l:the_world/climate#temperature)Colder Environments$().$(li)$(2)Temp >= 0°C:$() Shelves 0.4, Hangers 0.35$(li)$(2)Temp < 0°C:$() Shelves 0.35, Hangers 0.3$(li)$(2)Temp < -12°C:$() Shelves 0.25, Hangers 0.25"
+            "text": "Piwnica służy do przechowywania żywności i $(l:cooking/cheese#cheese_wheel)dojrzewania serów$(). Żywność umieszcza się na $(l:cooking/decay#shelf)półkach na żywność$() i $(l:cooking/decay#shelf)wieszakach$(), a sery można również kłaść na ziemi lub $(thing)półkach na beczkę$().$(br2)Piwnica działa skuteczniej w $(l:the_world/climate#temperature)chłodniejszym otoczeniu$().$(li)$(2)Temp. >= 0°C:$() półki 0,4, wieszaki 0,35$(li)$(2)Temp. < 0°C:$() półki 0,35, wieszaki 0,3$(li)$(2)Temp. < -12°C:$() półki 0,25, wieszaki 0,25"
         },
         {
             "type": "tfg:multimultiblock",
@@ -460,7 +460,7 @@
             "anchor": "freeze_dry",
             "title": "Liofilizacja",
             "item": "tfg:food/meal_bag,tfg:food/freeze_dried_fruit,tfg:food/calorie_paste",
-            "text": "$(tfg_short) adds the ability to freeze-dry select food items in $(item)Food Processors$() to greatly increase shelf life. Freeze drying gives the $(7)$(bold)Cryodessicated$() trait with a modifier of 0.02."
+            "text": "$(tfg_short) umożliwia liofilizowanie wybranych produktów spożywczych w $(item)robotach kuchennych$(), co znacznie wydłuża ich trwałość. Liofilizacja nadaje cechę $(7)$(bold)liofilizowane$() z modyfikatorem 0,02."
         },
         {
             "type": "patchouli:text",

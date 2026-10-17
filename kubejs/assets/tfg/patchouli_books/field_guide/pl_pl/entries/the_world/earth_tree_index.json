@@ -95,7 +95,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Jodła/Jedlica",
+            "title": "Jodła",
             "anchor": "fir",
             "item": "tag:tfc:douglas_fir_logs",
             "text": "$(bold)Douglas Fir$()$(br)$(thing)Rainfall$(): 305 — 500mm$(br)$(thing)Temperature$(): -10.3 — 6.1°C$(br)$(thing)Growth Days$(): 6$(br2)$(bold)Mountain Fir$()$(br)$(thing)Rainfall$(): 220 — 345mm$(br)$(thing)Temperature$(): -1.1 — 11.6°C$(br)$(thing)Growth Days$(): 10$(br2)$(bold)Balsam Fir$()$(br)$(thing)Rainfall$(): 210 — 500mm$(br)$(thing)Temperature$(): -13.9 — -1.1°C$(br)$(thing)Growth Days$(): 12"
@@ -147,7 +147,7 @@
             "title": "Namorzyny",
             "anchor": "mangrove",
             "item": "tag:tfc:mangrove_logs",
-            "text": "$(bold)Mangrove$()$(br)$(thing)Rainfall$(): 220mm+$(br)$(thing)Temperature$(): 18.0°C+$(br)$(thing)Growth Days$(): 7$(br)Note: only spawns in Salt Marsh biomes. Can also be found in $(l:beneath/beneath_tree_index#mangrove)the Beneath$()."
+            "text": "$(bold)Namorzyny$()$(br)$(thing)Opady$(): 220mm+$(br)$(thing)Temperatura$(): 18.0°C+$(br)$(thing)Czas wzrostu$(): 7 dni$(br)Uwaga: pojawiają się tylko na słonych bagnach. Można je również znaleźć w $(l:beneath/beneath_tree_index#mangrove)Głębinach$()."
         },
         {
             "type": "patchouli:spotlight",

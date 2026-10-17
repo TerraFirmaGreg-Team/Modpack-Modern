@@ -14,7 +14,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)Moon Species$()$(li2)$(l:the_moon/moon_fauna#certus_jellie)Certus$()$(li)$(bold)Mars Species$()$(li2)$(l:mars/mars_fauna#pentetic_jellie)Pentetic$()$(li)$(bold)$(l:agriculture/jellies#spoiler)???$()"
+			"text": "$(li)$(bold)Gatunki księżycowe$()$(li2)$(l:the_moon/moon_fauna#certus_jellie)Certusowy$()$(li)$(bold)Gatunki marsjańskie$()$(li2)$(l:mars/mars_fauna#pentetic_jellie)Pentetynowy$()$(li)$(bold)$(l:agriculture/jellies#spoiler)???$()"
 		},
 		{
 			"type": "patchouli:image",

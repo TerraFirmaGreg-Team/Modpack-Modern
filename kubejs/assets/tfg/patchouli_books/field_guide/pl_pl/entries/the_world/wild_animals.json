@@ -272,7 +272,7 @@
             "scale": 0.6,
             "name": "Puma",
             "anchor": "cougar",
-            "text": "The cougar prefers most moderate climates, with $(l:the_world/climate#temperature)temperature$() from -10 to 21°C and at least 150mm of $(l:the_world/climate#rainfall)rainfall$()."
+            "text": "Puma preferuje umiarkowany klimat z $(l:the_world/climate#temperature)temperaturą$() od -10 do 21°C oraz $(l:the_world/climate#rainfall)opadami$() co najmniej 150 mm."
         },
         {
             "type": "patchouli:entity",
@@ -280,7 +280,7 @@
             "scale": 0.6,
             "name": "Pantera",
             "anchor": "panther",
-            "text": "The panther prefers most moderate climates, with $(l:the_world/climate#temperature)temperature$() from -10 to 21°C and at least 150mm of $(l:the_world/climate#rainfall)rainfall$()."
+            "text": "Pantera preferuje umiarkowany klimat z $(l:the_world/climate#temperature)temperaturą$() od -10 do 21°C oraz $(l:the_world/climate#rainfall)opadami$() co najmniej 150 mm."
         },
         {
             "type": "patchouli:entity",
@@ -325,7 +325,7 @@
             "entity": "tfc:hyena",
             "anchor": "hyena",
             "scale": 0.7,
-            "text": "The hyena spawns at any $(l:the_world/climate#temperature)temperature$() warmer than 15°C, and $(l:the_world/climate#rainfall)rainfall$() between 80 and 380mm. They hunt in packs. They are not tamable."
+            "text": "Hiena pojawia się przy dowolnej $(l:the_world/climate#temperature)temperaturze$() powyżej 15°C oraz $(l:the_world/climate#rainfall)opadach$() między 80 a 380 mm. Hieny polują w grupach i nie da się ich oswoić."
         },
         {
             "type": "patchouli:entity",
@@ -378,7 +378,7 @@
             "anchor": "bison",
             "scale": 0.7,
             "name": "Bizon",
-            "text": "The bison spawns in open plains at $(l:the_world/climate#temperature)temperature$() below 15°C and above -10°C, and $(l:the_world/climate#rainfall)rainfall$() between 160 and 420mm."
+            "text": "Bizon pojawia się na równinach przy $(l:the_world/climate#temperature)temperaturze$() poniżej 15°C i powyżej -10°C oraz $(l:the_world/climate#rainfall)opadach$() między 160 a 420 mm."
         },
         {
             "type": "patchouli:text",
@@ -437,7 +437,7 @@
             "entity": "tfc:grouse",
             "scale": 0.7,
             "anchor": "grouse",
-            "text": "Kuropatwapojawia się przy dowolnej $(l:the_world/climate#temperature)temperaturze$() poniżej 13°C i powyżej -12°C oraz $(l:the_world/climate#rainfall)opadach$() od 150 do 400 mm."
+            "text": "Kuropatwa pojawia się przy dowolnej $(l:the_world/climate#temperature)temperaturze$() poniżej 13°C i powyżej -12°C oraz $(l:the_world/climate#rainfall)opadach$() od 150 do 400 mm."
         },
         {
             "type": "patchouli:entity",
@@ -451,7 +451,7 @@
             "entity": "tfc:turkey",
             "scale": 0.7,
             "anchor": "turkey",
-            "text": "The turkey spawns in forests at any $(l:the_world/climate#temperature)temperature$() below 17°C and above 0°C, and $(l:the_world/climate#rainfall)rainfall$() between 250 and 450mm."
+            "text": "Indyk pojawia się w lasach przy dowolnej $(l:the_world/climate#temperature)temperaturze$() poniżej 17°C i powyżej 0°C oraz $(l:the_world/climate#rainfall)opadach$() od 250 do 450 mm."
         },
         {
             "type": "patchouli:entity",
@@ -489,7 +489,7 @@
         {
             "type": "patchouli:text",
             "anchor": "aquatic",
-            "text": "$(thing)Aquatic Animals$() are a broad category which covers a number of different behaviors. They may be $(thing)Shore Dwellers$(), $(thing)Fish$(), $(thing)Shellfish$(), or $(thing)Large Aquatic Creatures$()",
+            "text": "$(thing)Zwierzęta wodne$() to szeroka kategoria obejmująca stworzenia o różnych zachowaniach. Mogą to być $(thing)mieszkańcy wybrzeży$(), $(thing)ryby$(), $(thing)skorupiaki$() lub $(thing)duże zwierzęta wodne$().",
             "title": "Zwierzęta wodne"
         },
         {

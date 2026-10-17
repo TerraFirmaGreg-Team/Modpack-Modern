@@ -197,7 +197,7 @@
         {
             "type": "patchouli:text",
             "anchor": "rejuvenating_transient_effect",
-            "text": "$(#ff178f)💕$()$(bold) Odświeżenie$()$(li)Zapewnia graczowi efekt $(n)regeneracji$(). Każdy punkt tej cechy zapewnia 1 minutę działania efektu, maksymalnie 3 minuty.$()"
+            "text": "$(#ff178f)💕$()$(bold) Odświeżający$()$(li)Zapewnia graczowi efekt $(n)regeneracji$(). Każdy punkt tej cechy zapewnia 1 minutę działania efektu, maksymalnie 3 minuty.$()"
         },
         {
             "type": "patchouli:text",
