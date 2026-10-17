@@ -54,7 +54,7 @@
 			"scale": 0.7,
 			"name": "Koń zombie",
 			"anchor": "zombie_horse",
-			"text": "$(thing)Koni zombie$() nie można oswoić ani na nich jeździć, ale mogą one napędzać $(item)korbę zwierzęcą$()."
+			"text": "$(thing)Koni zombie$() nie można oswoić ani na nich jeździć, ale mogą one napędzać $(item)korbę konną$()."
 		},
 		{
 			"type": "patchouli:entity",
@@ -86,7 +86,7 @@
 			"scale": 0.6,
 			"name": "Źródlany żelek",
 			"anchor": "spring_jellie",
-			"text": "$(thing)Spring$() $(l:agriculture/jellies)Jellies$() are found in the $(thing)Geothermal Springs$() biome. Their slime balls are a renewable source of $(item)Spring Water$()."
+			"text": "$(thing)Źródlane$() $(l:agriculture/jellies)żelki$() występują w biomie $(thing)źródeł geotermalnych$(). Ich kule szlamu są odnawialnym źródłem $(item)wody źródlanej$()."
 		},
 		{
 			"type": "patchouli:entity",
@@ -150,7 +150,7 @@
 			"scale": 1,
 			"name": "Grafik grafitowy",
 			"anchor": "graphite_glayze",
-			"text": "$(thing)Grafiki grafitowe$() można spotkać w dolnych warstwach. Uważaj, żeby nie strąciły cię do lawy!"
+			"text": "$(thing)Grafiki grafitowe$() można spotkać w dolnych warstwach. Uważaj, aby nie strąciły cię do lawy!"
 		},
 		{
 			"type": "patchouli:entity",

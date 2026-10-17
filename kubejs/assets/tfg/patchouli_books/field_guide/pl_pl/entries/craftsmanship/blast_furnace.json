@@ -17,7 +17,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Konstrukcje wielkiego pieca w rozmiarach 1-5, zbudowane z $(item)cegieł ogniotrwałych pokrytych izolacją$().",
+            "text": "Konstrukcje pieca hutniczego w rozmiarach 1-5, zbudowane z $(item)zaizolowanych cegieł ogniotrwałych$().",
             "multiblocks": [
                 {
                     "pattern": [

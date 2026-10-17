@@ -66,7 +66,7 @@
         {
             "type": "patchouli:text",
             "anchor": "vessel",
-            "text": "小缸就是这样的物品。和所有陶器一样，它必须先经过$(l:https://en.wikipedia.org/wiki/Pottery)烧制$()才能使用。烧制就是把物品$(l:game_mechanics/heating)加热$()到粘土变成坚硬的$(thing)陶瓷$()材料的过程，需要加热到 1400 °C，即$(e)$(bold)$(t:黄白)黄白$()。$(br2)在游戏前期，你需要使用$(l:craftsmanship/pit_kiln)坑窑$()来完成这一步。",
+            "text": "小缸就是这样的物品。和所有陶器一样，它必须先经过$(l:https://en.wikipedia.org/wiki/Pottery)烧制$()才能使用。烧制就是把物品$(l:game_mechanics/heating)加热$()到粘土变成坚硬的$(thing)陶器$()材料的过程，需要加热到 1400 °C，即$(e)$(bold)$(t:黄白)黄白$()。$(br2)在游戏前期，你需要使用$(l:craftsmanship/pit_kiln)坑窑$()来完成这一步。",
             "title": "小缸"
         },
         {
@@ -83,7 +83,7 @@
         {
             "type": "patchouli:text",
             "anchor": "mold",
-            "text": "制作$(thing)模具$()也需要用到粘土。熔融金属可以浇入模具，并最终凝固成模具的形状。之后对着模具$(item)$(k:key.use)$()或把它放进合成格，就能取出成品，模具也可能一并返还。$(br2)所有模具都无法盛放青铜时代之后的熔融金属，$(thing)锭模具除外$()。",
+            "text": "制作$(thing)模具$()也需要用到粘土。熔融金属可以浇入模具，并最终凝固成模具的形状。之后对着模具$(item)$(k:key.use)$()或把它放进合成格，就能取出成品，模具也可能一并返还。$(br2)所有模具都无法盛放青铜时代之后的熔融金属，$(thing)铸锭模具除外$()。",
             "title": "模具"
         },
         {

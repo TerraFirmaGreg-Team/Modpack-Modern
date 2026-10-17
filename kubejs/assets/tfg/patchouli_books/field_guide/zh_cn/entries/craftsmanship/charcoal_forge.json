@@ -36,7 +36,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "炉子需要烟囱才能工作。炉子正上方的方块必须是空气或 $(l:craftsmanship/crucible)坩埚$()。此外，正上方的方块或周围八个方块之一 $(italic)必须能看到天空！$()$(br2)$(l:craftsmanship/charcoal_forge#bellows)风箱$()可以放在炉子旁边且高一格的位置，以提高炉子能达到的最高温度，不过这并非硬性要求。"
+            "text": "木炭炉只能在通风良好的地方正常工作。炉子正上方的方块必须是空气或 $(l:craftsmanship/crucible)坩埚$()。此外，木炭炉方块或它周围两格十字形的区域内 $(italic)必须至少有一格露天方块！$()$(br2)$(l:craftsmanship/charcoal_forge#bellows)风箱$()可以放在炉子旁边且高一格的位置，以提高炉子能达到的最高温度，不过这并非硬性要求。"
         },
         {
             "type": "patchouli:multiblock",
@@ -67,7 +67,7 @@
                 }
             },
             "name": "烟囱示意图",
-            "text": "任一蓝色染色玻璃方块都必须能直接接触到天空且与炉子连通，才能算作有效烟囱。",
+            "text": "任一蓝色染色玻璃方块必须能直接接触到天空且与炉子连通，才能算作有效烟囱。",
             "enable_visualize": false
         },
         {
@@ -75,7 +75,7 @@
             "images": [
                 "tfc:textures/gui/book/gui/charcoal_forge.png"
             ],
-            "title": "炉子的界面。",
+            "title": "木炭炉界面。",
             "text": "$(bold)提示：$()你可以用 $(item)$(k:key.drop)$()把木炭之类的燃料直接丢到炉子上补充燃料。",
             "border": false
         },
@@ -92,7 +92,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "要使用风箱，只需让它朝向目标加热设备放置，然后 $(item)$(k:key.use)$()。风箱会向设备泵入空气，在短时间内提高其最高温度。给风箱背面输入 <16RPM 的 $(thing)机械旋转$()（比如用一根 $(item)传动杆$()）即可实现自动化，但这会禁用手动操作。可以考虑用 $(item)离合器$()来启闭机械动力。"
+            "text": "要使用风箱，只需让它朝向目标加热设备放置，然后 $(item)$(k:key.use)$()。风箱会向设备泵入空气，在短时间内提高其最高温度。给风箱背面输入 <16RPM 的 $(thing)机械旋转$()（比如用一根 $(item)传动杆$()）即可实现自动化，但这会禁用手动操作。可以考虑用 $(item)离合器$()来启用/禁用机械动力。"
         },
         {
             "type": "patchouli:text",
@@ -102,7 +102,7 @@
             "type": "patchouli:text",
             "anchor": "automation",
             "title": "自动化提示",
-            "text": "$(li)炉子会自动收集掉落在它侧面的燃料。（按 $(item)$(k:key.drop)$()，或使用 $(item)投掷器$()、$(item)发射器$()或 $(item)漏斗$()。）$(li)$(item)机械手$()也能为炉子补充燃料。$(li)$(item)置物台$()可以算作炉子的隔热层，如果你想自动化 $(item)工作盆$()的话。"
+            "text": "$(li)木炭炉会自动收集掉落在它侧面的燃料。（按 $(item)$(k:key.drop)$()，或使用 $(item)投掷器$()、$(item)发射器$()或 $(item)漏斗$()。）$(li)$(item)机械手$()也能为炉子补充燃料。$(li)$(item)置物台$()可以算作炉子的隔热层，如果你想自动化 $(item)工作盆$()的话。"
         },
         {
             "type": "patchouli:text",

@@ -27,7 +27,7 @@
         {
             "type": "patchouli:text",
             "text": "大桶的主要作用是用来混合某些液体和物品。用$(thing)大桶$()合成时，桶内的液体和物品的比例必须正确无误。某些配方还需要将大桶$(thing)密封$()一段时间才能执行。",
-            "title": "合成"
+            "title": "用大桶合成"
         },
         {
             "type": "patchouli:text",
@@ -37,18 +37,18 @@
             "type": "tfg:instant_barrel_recipe",
             "anchor": "limewater",
             "recipe": "tfc:barrel/limewater",
-            "text": "$(bold)石灰水$()是把 $(item)助焊剂$()加进一桶 $(thing)水$() 里制成的。一个$(item)助焊剂$()对应每 $(thing)500 mB$() 的$(thing)水$()。$(thing)石灰水$()是$(l:agriculture/leather_making)制皮术$()中用到的一种试剂，也用于制作$(thing)砂浆$()。"
+            "text": "$(bold)石灰水$()是由$(item)助焊剂$()溶于$(thing)淡水$()制成的。每份$(item)助焊剂$()可转化 $(thing)500 mB$()的$(thing)淡水$()。$(thing)石灰水$()可以用来加工$(l:agriculture/leather_making)皮革$()，也可以用来制作$(thing)砂浆$()。"
         },
         {
             "type": "tfg:sealed_barrel_recipe",
             "anchor": "tannin",
             "recipe": "tfc:barrel/tannin",
-            "text": "$(bold)鞣酸$()是一种酸性流体，把某些 $(t:#tfc:makes_tannin)$(6)原木$()的树皮溶解在一桶$(thing)水$()里即可制得。$(thing)橡木$()、$(thing)桦木$()、$(thing)栗木$()、$(thing)花旗松$()、$(thing)山核桃木$()、$(thing)枫木$()和$()红杉木$()都可以用来制作$(thing)鞣酸$()。$(br)$(bold)提示$()：在 $(emi) 中搜索 $(6)#makes_tannin$() 可查看可用原木的完整列表。"
+            "text": "$(bold)鞣酸$()是一种酸性流体，把某些 $(t:#tfc:makes_tannin)$(6)原木$()的树皮溶解在一桶$(thing)水$()里即可制得。$(thing)橡木$()、$(thing)桦木$()、$(thing)栗木$()、$(thing)花旗松木$()、$(thing)山核桃木$()、$(thing)枫木$()和$()红杉木$()都可以用来制作$(thing)鞣酸$()。$(br)$(bold)提示$()：在 $(emi) 中搜索 $(6)#makes_tannin$() 可查看可用原木的完整列表。"
         },
         {
             "type": "patchouli:text",
             "anchor": "fluid_mixing",
-            "title": "流体混合",
+            "title": "液体混合",
             "text": "有些大桶配方需要按一定比例混合两种流体。做法是：拿一桶装满其中一种原料的桶，放进已装有所需量另一种流体的大桶的流体添加槽中。比如将 $(thing)醋$()和 $(thing)海水$()按 1:9 的比例混合，就能制成 $(item)卤水$()。"
         },
         {
@@ -67,7 +67,7 @@
             "type": "patchouli:text",
             "title": "保鲜",
             "anchor": "preservation",
-            "text": "大桶可以用 $(thing)醋$()来保存物品。醋是通过把 $(thing)水果$()密封在一桶 $(thing)酒$()中制成的。想知道这个过程的原理，请参见相关的 $(l:cooking/decay#vinegar)页面$()。"
+            "text": "将食物封入装有$(thing)醋$()的大桶里有助于延长其保质期。将任意$(thing)水果$()密封在装有$(thing)酒$()的大桶中就能得到醋。有关于用醋保鲜的知识，请参看$(l:cooking/decay#vinegar)食物保鲜$()页面。"
         },
         {
             "type": "patchouli:crafting",

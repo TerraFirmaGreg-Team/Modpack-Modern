@@ -1,5 +1,5 @@
 {
-	"name": "服饰",
+	"name": "衣物",
 	"category": "tfg:craftsmanship",
 	"icon": "tfc_textile:cotton_shirt",
 	"read_by_default": true,
@@ -7,7 +7,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "$(item)服饰$()是一类$(thing)装备$()，能提供$(l:game_mechanics/damage_types)盔甲$()之外的效果。$(br2)大多数衣服会影响你的$(l:game_mechanics/player_temperature)玩家体温$()，另一些则能提供额外且实用的效果。"
+			"text": "$(item)衣物$()是一类$(thing)装备$()，能提供$(l:game_mechanics/damage_types)盔甲$()之外的效果。$(br2)大多数衣服会影响你的$(l:game_mechanics/player_temperature)玩家体温$()，另一些则能提供额外且实用的效果。"
 		},
 		{
 			"type": "patchouli:text",
@@ -51,22 +51,22 @@
 		{
 			"type": "tfg:knapping_recipe",
 			"recipe": "tfg:knapping/raw_hat",
-			"text": "$(l:craftsmanship/sticks_and_stones#knapping)石子塑形$()出$(item)原始兜帽$()。"
+			"text": "$(l:craftsmanship/sticks_and_stones#knapping)裁剪$()出$(item)原始兜帽$()。"
 		},
 		{
 			"type": "tfg:knapping_recipe",
 			"recipe": "tfg:knapping/raw_shirt",
-			"text": "石子塑形出$(item)原始托加袍$()。"
+			"text": "裁剪出$(item)原始托加袍$()。"
 		},
 		{
 			"type": "tfg:knapping_recipe",
 			"recipe": "tfg:knapping/raw_pants",
-			"text": "石子塑形出$(item)原始短裤$()。"
+			"text": "裁剪出$(item)原始短裤$()。"
 		},
 		{
 			"type": "tfg:knapping_recipe",
 			"recipe": "tfg:knapping/raw_socks",
-			"text": "石子塑形出$(item)原始靴子$()。"
+			"text": "裁剪出$(item)原始靴子$()。"
 		},
 		{
 			"type": "patchouli:spotlight",

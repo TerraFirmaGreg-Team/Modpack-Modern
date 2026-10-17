@@ -125,7 +125,7 @@
             "type": "patchouli:spotlight",
             "anchor": "hydroponics",
             "item": "tfg:hydroponics_facility",
-            "text": "The $(item)Hydroponics Facility$() is an $(9)IV$() upgrade to the Electric Greenhouse that can grow anything in any dimension and also supports $(item)Parallel Hatches$()."
+            "text": "$(item)Instalacja hydroponiczna$() to ulepszenie elektrycznej szklarni na poziomie $(9)IN$() , które pozwala uprawiać dowolne rośliny w dowolnym wymiarze i obsługuje $(item)włazy zrównoleglania$()."
         },
         {
             "type": "patchouli:relations",

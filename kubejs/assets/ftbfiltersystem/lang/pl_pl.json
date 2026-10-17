@@ -14,7 +14,7 @@
   "filter.ftbfiltersystem.item_tag.name": "Tag przedmiotu",
   "filter.ftbfiltersystem.item_tag.tooltip": "Dopasowuje przedmioty na podstawie ich tagu (przedmioty zawierające ten tag).\nUżyj pola tekstowego, aby filtrować wyświetlane tagi przedmiotów.",
   "filter.ftbfiltersystem.max_stack_size.name": "Maks. rozmiar stosu",
-  "filter.ftbfiltersystem.max_stack_size.tooltip": "Dopasowuje przedmioty według ich maksymalnego rozmiaru stosu.\nPrzedmioty, których nie można układać w stosy, mają maksymalny rozmiar stosu równy 1.",
+  "filter.ftbfiltersystem.max_stack_size.tooltip": "Porównuje maks. rozmiar stosu przedmiotu.\nPrzedmioty, których nie można układać w stosy, mają maksymalny rozmiar stosu równy 1.",
   "filter.ftbfiltersystem.mod.name": "Mod",
   "filter.ftbfiltersystem.mod.tooltip": "Dopasowuje przedmioty na podstawie moda, który je dodaje.\nPrzedmioty Vanilla należą do „moda” Minecraft.",
   "filter.ftbfiltersystem.nbt.name": "NBT",
