@@ -1,0 +1,46 @@
+{
+    "name": "Gregtech Energy",
+    "category": "tfg:game_mechanics",
+    "icon": "gtceu:hv_field_generator",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:game_mechanics/energy#introduction)First Steps$()$(li2)$(l:cooking/decay#calculation)Calculating Decay$()$(li2)$(l:cooking/decay#table)Modifier Table$()$(li)$(bold)$(l:cooking/decay#vessels)Vessels$()$(li)$(bold)$(l:cooking/decay#cooking)Cooking$()$(li)$(bold)$(l:cooking/decay#smoking)Smoking$()$(li)$(bold)$(l:cooking/decay#salting)Salting$()$(li)$(bold)$(l:cooking/decay#vinegar)Pickling$()$(li)$(bold)$(l:cooking/decay#drying)Drying$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:cooking/decay#oven_baked)Oven Baking$()$(li)$(bold)$(l:cooking/decay#cellar)Cellars$()$(li2)$(l:cooking/decay#shelf)Cellar Storage$()$(li)$(bold)$(l:cooking/decay#lunch_box)Lunch Boxes$()$(li)$(bold)$(l:cooking/decay#refrigerator)Refrigerators$()$(li)$(bold)$(l:cooking/decay#freeze_dry)Freeze Drying$()$(li)$(bold)$(l:cooking/decay#pest)Pest Control$()$(li)$(bold)$(l:cooking/decay#cutting)Cutting off decay$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "introduction",
+            "title": "First steps",
+            "text": "When getting into $(thing)LV$(), you may feel a bit overwhelmed but wary not things are easier that you may expect. Gregtech has a lot of similarities with other tech mods.$(br2)You have generators producing power, named EU and not FE/RF, and you have machine using that energy to run."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "power_basics_1",
+            "title": "The Basics of EU",
+            "text": "The differences start with Energy Tier and Amperage. There is different tier of Energy following the tech progression of Gregtech, from LV to UHV everything in Gregtech is tied to a tier.$(br2)Then you have the Amperage, you can see it as a packet of Energy. Each Tier is a range of EU, with the minimum being the just over the tier before and the maximum being a full Amp."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "power_basics_2",
+            "title": "More about Tier",
+            "text": "If you feel a bit overwhelmed, don't worry too much for now. Just understand that your LV machines can only run LV or ULV recipes.$(br2)When browsing EMI, you will notice at the bottom right of the recipe the minimum tier required to run a recipe. LV Machines run LV or under recipe, MV Machines can run MV recipes or under, etc..."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "power_basics_2",
+            "title": "More about Amp",
+            "text": "Let's go back to Amp, as we were saying 1 Amp (or 1A) is the maximum EU of a tier in one packet. So 1A LV equels 32 EU, most recipes will require on average 1A. "
+        },
+        {
+			"type": "patchouli:spotlight",
+			"title": "Generatin Power",
+			"item": "gtceu:lv_steam_turbine,gtceu:lv_combustion,gtceu:lv_gas_turbine",
+			"text": "Initially you will have acces to three kind of generators. Each of them will only work with a specific list of fuels.$(br2)You can see their lists through EMI but we advised you to look at the Energy Chapter in the Quests to see the progression and more details for each of them."
+		}
+    ]
+}
