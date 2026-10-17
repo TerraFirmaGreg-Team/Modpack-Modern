@@ -92,4 +92,23 @@ function registerTFGEquipmentRecipes(event) {
 		G: "#forge:glass_panes",
 		C: '#tfg:water_breathing_ingredients'
 	}).id('tfg:shaped/snorkel')
+
+	event.custom({
+		type: 'gtceu:crafting_shaped_energy_transfer',
+		pattern: [
+			'PBP',
+			'CFC',
+			'PPP'
+		],
+		key: {
+			B: { tag: 'gtceu:batteries/lv'},
+			F: { item: 'waterflasks:unfinished_iron_flask'},
+			C: { tag: 'gtceu:circuits/lv'},
+			P: { item: 'tfg:bakelite_plate'}
+		},
+		chargeIngredient: { tag: 'gtceu:batteries/lv' },
+		overrideCharge: true,
+		transferMaxCharge: true,
+		result: { item: 'tfg:electric_flask' }
+	}).id('tfg:crafting/electric_flask')
 }
