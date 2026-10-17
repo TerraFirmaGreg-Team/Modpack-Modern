@@ -131,8 +131,8 @@
             "type": "patchouli:spotlight",
             "anchor": "gravel_fill",
             "item": "tag:rnr:gravel_road_items",
-            "title": "砾石与马克当碎石路",
-            "text": "在基层上铺少量$(thing)砾石填料$()即可形成简易小径，提供$(thing)$(bold)10% 加成$()的行走速度。继续添加砾石填料并夯实，可以筑成$(thing)马克当碎石路$()，提供$(thing)$(bold)20% 速度加成$()。$(br)所有比碎石更高级的铺面材料都能让$(item)畜力曲柄$()以 32RPM 运转。"
+            "title": "砾石与碎石路",
+            "text": "在基层上铺少量$(thing)砾石填料$()即可形成简易小径，提供$(thing)$(bold)10% 加成$()的行走速度。继续添加砾石填料并夯实，可以筑成$(thing)碎石路$()，提供$(thing)$(bold)20% 速度加成$()。$(br)所有比碎石更高级的铺面材料都能让$(item)畜力曲柄$()以 32RPM 运转。"
         },
         {
             "type": "patchouli:multiblock",

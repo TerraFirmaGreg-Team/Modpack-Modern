@@ -6,7 +6,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:game_mechanics/lighting#torches)火把$()$(li)$(bold)$(l:game_mechanics/lighting#candles)蜡烛$()$(li)$(bold)$(l:game_mechanics/lighting#jack_o_lanterns)南瓜灯$()$(li)$(bold)$(l:game_mechanics/lighting#lamps)灯$()$(li)$(bold)$(l:game_mechanics/lighting#portable_light)便携光源$()$(li)$(bold)$(l:game_mechanics/lighting#permanent_light)永久光源$()",
+            "text": "$(li)$(bold)$(l:game_mechanics/lighting#torches)火把$()$(li)$(bold)$(l:game_mechanics/lighting#candles)蜡烛$()$(li)$(bold)$(l:game_mechanics/lighting#jack_o_lanterns)南瓜灯$()$(li)$(bold)$(l:game_mechanics/lighting#lamps)灯笼$()$(li)$(bold)$(l:game_mechanics/lighting#portable_light)便携光源$()$(li)$(bold)$(l:game_mechanics/lighting#permanent_light)永久光源$()",
             "title": "目录",
             "anchor": "index"
         },
@@ -111,9 +111,9 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "lamps",
-            "title": "灯",
+            "title": "灯笼",
             "item": "tag:tfc:lamps",
-            "text": "灯是燃烧液体燃料的长效光源，被破坏时会保留其中的燃料。你可以用$(thing)管道$()自动为灯加注燃料，也可以用$(l:cooking/drinking_containers)流体容器$()手动加注。$(br)在$(emi)中查看灯即可了解可用的燃料。$(thing)岩浆$()能永久燃烧，但必须装在$(item)蓝钢灯$()里。$(thing)液态荧石$()也一样能永久燃烧，且可用于任何灯。"
+            "text": "灯笼是燃烧液体燃料的长效光源，被破坏时会保留其中的燃料。你可以用$(thing)管道$()自动为灯加注燃料，也可以用$(l:cooking/drinking_containers)流体容器$()手动加注。$(br)在$(emi)中查看灯即可了解可用的燃料。$(thing)岩浆$()能永久燃烧，但必须装在$(item)蓝钢灯$()里。$(thing)液态荧石$()也一样能永久燃烧，且可用于任何灯。"
         },
         {
             "type": "patchouli:multiblock",
@@ -130,7 +130,7 @@
                     "Y": "#tfc:lamps[hanging=true,lit=true]"
                 }
             },
-            "text": "灯可以悬挂在方块下方。$(thing)锁链$()和$(thing)管道$()是尤其好看的选择。",
+            "text": "灯笼可以悬挂在方块下方。$(thing)锁链$()和$(thing)管道$()是尤其好看的选择。",
             "enable_visualize": false
         },
         {

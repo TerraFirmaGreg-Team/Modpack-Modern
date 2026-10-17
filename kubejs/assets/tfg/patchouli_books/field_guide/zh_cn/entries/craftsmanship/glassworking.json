@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:craftsmanship/glassworking#intro)玻璃原料$()$(li2)$(l:craftsmanship/glassworking#lime_and_potash)石灰与钾碱$()$(li)$(bold)$(l:craftsmanship/glassworking#tools)玻璃加工工具$()$(li2)$(l:craftsmanship/glassworking#blowpipe)吹风管$()$(li2)$(l:craftsmanship/glassworking#paddle)玻璃压板$()$(li2)$(l:craftsmanship/glassworking#jacks)玻璃夹钳$()$(li2)$(l:craftsmanship/glassworking#saw)宝石锯$()$(li)$(bold)$(l:craftsmanship/glassworking#glassworking_steps)玻璃加工步骤$()$(li2)$(l:craftsmanship/glassworking#table_pour)桌面浇铸$()$(li2)$(l:craftsmanship/glassworking#basin_pour)盆式浇铸$()$(li)$(bold)$(l:craftsmanship/glassworking#coloring)玻璃染色$()$(li2)$(l:craftsmanship/glassworking#dyes)染料列表$()"
+            "text": "$(li)$(bold)$(l:craftsmanship/glassworking#intro)玻璃原料$()$(li2)$(l:craftsmanship/glassworking#lime_and_potash)石灰与钾碱$()$(li)$(bold)$(l:craftsmanship/glassworking#tools)玻璃加工工具$()$(li2)$(l:craftsmanship/glassworking#blowpipe)吹风管$()$(li2)$(l:craftsmanship/glassworking#paddle)玻璃压板$()$(li2)$(l:craftsmanship/glassworking#jacks)玻璃夹钳$()$(li2)$(l:craftsmanship/glassworking#saw)宝石锯$()$(li)$(bold)$(l:craftsmanship/glassworking#glassworking_steps)玻璃加工步骤$()$(li2)$(l:craftsmanship/glassworking#table_pour)台面浇铸$()$(li2)$(l:craftsmanship/glassworking#basin_pour)盆式浇铸$()$(li)$(bold)$(l:craftsmanship/glassworking#coloring)玻璃染色$()$(li2)$(l:craftsmanship/glassworking#dyes)染料列表$()"
         },
         {
             "type": "patchouli:text",

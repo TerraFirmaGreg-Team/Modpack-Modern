@@ -28,7 +28,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:frog",
 			"scale": 1,
-			"name": "Жабка",
+			"name": "Жаба",
 			"anchor": "frog",
 			"text": "$(thing)Жаб$() можна знайти у верхньому та середньому шарах. Їх можна приручити та їсти."
 		},
@@ -116,7 +116,7 @@
 			"type": "patchouli:entity",
 			"entity": "minecraft:piglin",
 			"scale": 0.9,
-			"name": "Піглін",
+			"name": "Піґлін",
 			"anchor": "piglin",
 			"text": "Піґлінів можна знайти майже в кожному біомі Безодні. З ними можна $(l:beneath/beneath_mechanics#piglins)торгуватися$(), як у ванільній грі."
 		},

@@ -40,7 +40,7 @@
 			"title": "Namorzyny",
 			"anchor": "mangrove",
 			"item": "tag:tfc:mangrove_logs",
-			"text": "$(bold)Mangrove$()$(br)Found only in the $(thing)Muggy Bog$() biome.$(br)$(thing)Growth Days$(): 7$(br2)Can also be found $(l:the_world/earth_tree_index#mangrove)in the overworld$()."
+			"text": "$(bold)Namorzyny$()$(br)Występują tylko w $(thing)dusznym bagnie$().$(br)$(thing)Dni wzrostu$(): 7$(br2)Można je też znaleźć $(l:the_world/earth_tree_index#mangrove)w świecie podstawowym$()."
 		},
 		{
 			"type": "patchouli:relations",

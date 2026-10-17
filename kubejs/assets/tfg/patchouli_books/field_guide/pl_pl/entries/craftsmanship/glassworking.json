@@ -60,7 +60,7 @@
             "anchor": "saw",
             "title": "Piła do klejnotów",
             "recipe": "tfc:crafting/gem_saw",
-            "text": "The $(thing)Saw$() operation can be done with a $(item)Gem Saw$(). The gem saw is also used to break both $(item)Glass Blocks$() and $(item)Glass Panes$() to obtain them."
+            "text": "Operację $(thing)cięcia$() wykonuje się $(item)piłą do klejnotów$(). Służy ona też do zbierania $(item)bloków szkła$() i $(item)szyb$()."
         },
         {
             "type": "patchouli:text",

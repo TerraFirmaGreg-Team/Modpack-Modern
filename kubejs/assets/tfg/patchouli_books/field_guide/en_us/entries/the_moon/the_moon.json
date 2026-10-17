@@ -409,7 +409,17 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Any $(item)solid block$() will work to build your base out of, but you'll want a proper airlock to ensure the gas doesn't all escape in a $(thing)vortex$(). When combined with a $(item)Heat Pump$(), the enclosed space will become inhabitable, letting you take your helmet off, grow crops and place a water source without it freezing.$(br2)Energy consumption scales off of room size so make sure to give the appropriate energy hatch to your distributor."
+			"text": "Any $(item)solid block$() will work to build your base out of, but you'll want a proper airlock to ensure the gas doesn't all escape in a $(thing)vortex$(). When combined with a $(item)Heat Pump$(), the enclosed space will become inhabitable, letting you take your helmet off, grow crops and place a water source without it freezing.$(br2)$(o)(Continued on next page...)$()"
+		},
+		{
+            "type": "patchouli:spotlight",
+            "item": "gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:ultimet\"}},gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:vanadium\"}},gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:rocket_alloy_t1\"}},gtceu:turbine_rotor{GT.PartStats:{Material:\"tfg:rene_41\"}}",
+            "title": "Turbine Rotor",
+            "text": "Like the $(item)Heat Pump$(), you will need a $(item)Turbine Rotor$() so your Oxygen Distributor can run. The Turbine Rotor will lower the consumption of both EU/t and Breathable Gas mB/t.$(br2)$(italic)If $(thing)Efficiency$() or $(thing)Power$() are under 100%, the Rotor will have no benefits.$()"
+        },
+		{
+			"type": "patchouli:text",
+			"text": "The Turbine Rotor will $(thing)never lose durability$() when inserted in an $(item)Exhaust Vent$(), and any Rotor can work. At this point we recommend using R-Aluminosteel or Ultimet.$(br2)Energy consumption scales off of room size so make sure to give the appropriate energy hatch to your distributor and use better Turbine Rotors as you progress."
 		},
 		{
 			"type": "patchouli:spotlight",

@@ -22,7 +22,7 @@
 			"type": "tfg:sealed_barrel_recipe",
 			"recipe": "tfg:barrel/packed_ice",
 			"anchor": "ice",
-			"text": "Bring along some $(l:game_mechanics/player_temperature#blocks)Ice$()! Standing near it will lower $(l:game_mechanics/player_temperature)your temperature$(). Ice can be harvested on the surface and the resulting Ice Shavings can be turned into $(item)Packed Ice$(). $(thing)Packed$() and $(thing)Blue$() ice won't melt and can be picked up using a $(item)Saw$(). $(l:cooking/drinks#ice_slush)Ice Slush$() can be drank."
+			"text": "Zabierz ze sobą trochę $(l:game_mechanics/player_temperature#blocks)lodu$()! Przebywanie w jego pobliżu obniża $(l:game_mechanics/player_temperature)twoją temperaturę$(). Lód można zbierać na powierzchni, a uzyskane wióry lodowe przetworzyć w $(item)zbity lód$(). $(thing)Zbity$() i $(thing)niebieski$() lód nie topnieją i można je podnieść $(item)piłą$(). $(l:cooking/drinks#ice_slush)Płynny lód$() można pić."
 		},
 		{
 			"type": "patchouli:text",

@@ -12,7 +12,7 @@
             "type": "patchouli:text",
             "anchor": "intro",
             "title": "散落金属",
-            "text": "除了地上的树枝、细枝和石块之外，你还可能遇到小块的矿石。它们十分重要，因为在获得镐子之前，它们是为数不多的矿石与金属来源之一。这些指示物有三种：$(li)矿物粉尘$(li)宝石芽$(li)矿粒"
+            "text": "除了地上的树枝、细枝和石块之外，你还可能遇到小块的矿粒。它们十分重要，因为在获得镐子之前，它们是为数不多的矿石与金属来源之一。这些指示物有三种：$(li)矿物粉末$(li)宝石芽$(li)矿粒"
         },
         {
             "type": "patchouli:multiblock",
@@ -34,12 +34,12 @@
                 }
             },
             "name": "地表碎矿",
-            "text": "破坏后：粉尘指示物会掉落一小撮粉尘，宝石芽会掉落$(t:除非用宝石锯破坏！)碎宝石$()，而矿粒掉的自然就是矿粒。",
+            "text": "破坏后：矿粉指示物会掉落一小撮粉末，宝石芽会掉落$(t:除非用宝石锯破坏！)碎宝石$()，而矿粒掉的自然就是矿粒。",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
-            "text": "这些指示物碎块有两个用途：它们本身可以作为金属来源，更重要的是，它们表明其下方某处存在一条更大的矿脉。务必在地图上记下指示物的位置，以便日后回来开采矿脉。$(br2)⚠ 捡起矿物粉尘时要小心，因为其中一些可能$(l:game_mechanics/hazards)有危险$()，例如方钴矿和方铅矿。"
+            "text": "这些指示物碎块有两个用途：它们本身可以作为金属来源，更重要的是，它们表明其下方某处存在一条更大的矿脉。务必在地图上记下指示物的位置，以便日后回来开采矿脉。$(br2)⚠ 捡起矿物矿粉时要小心，因为其中一些可能$(l:game_mechanics/hazards)有危险$()，例如辉钴矿和方铅矿。"
         },
         {
             "type": "patchouli:text",
@@ -137,7 +137,7 @@
             "type": "patchouli:spotlight",
             "item": "tag:forge:ingots/brass,tag:forge:ingots/rose_gold,tag:forge:ingots/sterling_silver,tag:forge:ingots/tin_alloy,tag:forge:ingots/red_alloy,tag:forge:ingots/potin,tag:forge:ingots/cobalt_brass,tag:forge:ingots/invar",
             "anchor": "utility_alloys",
-            "text": "许多合金并不适合制作工具，但对推进进度仍然必不可少。前期最重要的几种功能性合金是$(thing)黄铜$()、$(thing)玫瑰金$()、$(thing)标准纯银$()、$(thing)锡合金$()和$(thing)红合金$()。",
+            "text": "许多合金并不适合制作工具，但对推进进度仍然必不可少。前期最重要的几种功能性合金是$(thing)黄铜$()、$(thing)玫瑰金$()、$(thing)标准纯银$()、$(thing)锡铁合金$()和$(thing)红色合金$()。",
             "title": "功能性合金"
         },
         {

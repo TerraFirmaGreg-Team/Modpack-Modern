@@ -10,7 +10,7 @@
         {
             "type": "patchouli:spotlight",
             "item": "tfc:small_raw_hide,tfc:medium_raw_hide,tfc:large_raw_hide",
-            "title": "Surowe futro",
+            "title": "Surowa skóra",
             "link_recipes": true,
             "text": "To get started you will first need to obtain $(thing)Raw Hide$(), which is dropped when slaughtering many different $(l:the_world/wild_animals)Animals$(). Different animals will drop different sizes of $(thing)Raw Hide$().$(br2)View $(emi) for information on mob drops."
         },
@@ -22,7 +22,7 @@
             "type": "tfg:sealed_barrel_recipe",
             "anchor": "soaking",
             "recipe": "tfc:barrel/medium_soaked_hide",
-            "text": "First, raw hides must be $(thing)soaked$() to clean them and loosen unwanted material before processing. This can be done by sealing some $(thing)Raw Hide$() in a $(l:craftsmanship/barrels#limewater)Barrel of Limewater$() for at least eight hours."
+            "text": "Najpierw surowe skóry trzeba $(thing)namoczyć$(), aby je oczyścić i usunąć zbędne śmieci przed dalszą obróbką. W tym celu należy zamknąć $(thing)surową skórę$() w $(l:craftsmanship/barrels#limewater)beczce z wodą wapienną$() na co najmniej osiem godzin."
         },
         {
             "type": "patchouli:spotlight",
