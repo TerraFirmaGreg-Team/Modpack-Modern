@@ -68,7 +68,7 @@
             "item": {
                 "tag": "tfg:stripped_hardwood"
             },
-            "text": "The process begins by stripping the $(t:#tfg:hardwood)$(6)Hardwood's$() bark off to expose the internal fibers of the log, You can strip the log by placing it down and $(item)$(k:key.use)$() it with an axe."
+            "text": "Proces rozpoczyna się od usunięcia kory z $(t:#tfg:hardwood)$(6)twardego drewna$(), aby odsłonić włókna wewnątrz kłody. W tym celu postaw kłodę i użyj na niej siekiery za pomocą $(item)$(k:key.use)$()."
         },
         {
             "type": "patchouli:crafting",

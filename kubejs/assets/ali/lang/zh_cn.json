@@ -368,6 +368,8 @@
 	"ali.enum.map_decoration_type.mansion": "林地府邸",
 	"ali.enum.map_decoration_type.monument": "海底神殿",
 	"ali.enum.map_decoration_type.player": "玩家",
+	"ali.enum.map_decoration_type.player_off_limits": "玩家超出范围",
+	"ali.enum.map_decoration_type.player_off_map": "玩家不在地图内",
 	"ali.enum.map_decoration_type.red_marker": "红色标记",
 	"ali.enum.map_decoration_type.red_x": "红X",
 	"ali.enum.map_decoration_type.target_point": "目标点",

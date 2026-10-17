@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(thing)手推磨$()是一种研磨物品的设备。它可以把原矿粉碎以便$(l:game_mechanics/mining#processing)加工$()，还能制作粉末、$(thing)染料$()和其他一些物品。它由$(thing)底座$()和$(thing)磨石$()组装而成。$(br)从手推磨的顶面输入低于 32RPM 的$(thing)机械动力$()即可实现自动化。"
+            "text": "$(thing)手推磨$()是一种研磨物品的设备。它可以把原矿粉碎以便$(l:game_mechanics/mining#processing)加工$()，还能制作粉末、$(thing)染料$()和其他一些物品。它由$(thing)底座$()和$(thing)磨盘$()组装而成。$(br)从手推磨的顶面输入低于 32RPM 的$(thing)机械动力$()即可实现自动化。"
         },
         {
             "type": "patchouli:crafting",

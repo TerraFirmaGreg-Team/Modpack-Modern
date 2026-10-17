@@ -24,6 +24,7 @@
   "sodium.extras.options.culling.page": "Entity Culling",
   "sodium.extras.options.culling.tile.distance.horizontal.desc": "Ukrywa byty blokowe znajdujące się dalej niż podana liczba bloków. Znacznie zwiększa wydajność, szczególnie w pobliżu wielu maszyn dodanych przez mody.",
   "sodium.extras.options.culling.tile.distance.horizontal.title": "Odległość maksymalna bytów bloków (pozioma)",
+  "sodium.extras.options.culling.tile.distance.vertical.desc": "Ukrywa byty bloków znajdujące się więcej niż podaną liczbę bloków poniżej gracza, poprawiając wydajność nad jaskiniami (jeśli z jakiegoś powodu trzymasz w nich maszyny). Najlepiej ustawić tę wartość niżej niż odległość poziomą.",
   "sodium.extras.options.culling.tile.distance.vertical.title": "Odległość maksymalna bytów bloków (pionowa)",
   "sodium.extras.options.culling.tiles.desc": "Jeśli włączone, byty bloków będą ukryte na podstawie skonfigurowanego limitu odległości",
   "sodium.extras.options.culling.tiles.title": "Użyj maksymalnej odległości dla bytów bloków",

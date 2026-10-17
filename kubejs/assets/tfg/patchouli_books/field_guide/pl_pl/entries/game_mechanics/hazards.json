@@ -140,10 +140,10 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Substancje powodujące nudności",
+			"title": "Substancje powodujące mdłości",
 			"item": "gtceu:butyraldehyde_bucket",
 			"anchor": "nauseating_chemicals",
-			"text": "$(thing)Substancje powodujące nudności$(), takie jak $(thing)butanal$(), to substancje, które po wdychaniu wywołują $(item)nudności$().$(br)$(l:game_mechanics/hazards#mask)Maseczka$() i $(l:game_mechanics/hazards#hazmat)kombinezon Hazmat$() przed tym chronią."
+			"text": "$(thing)Substancje powodujące mdłości$(), takie jak $(thing)butanal$(), to substancje, które po wdychaniu wywołują $(item)mdłości$().$(br)$(l:game_mechanics/hazards#mask)Maseczka$() i $(l:game_mechanics/hazards#hazmat)kombinezon Hazmat$() przed tym chronią."
 		},
 		{
 			"type": "patchouli:spotlight",

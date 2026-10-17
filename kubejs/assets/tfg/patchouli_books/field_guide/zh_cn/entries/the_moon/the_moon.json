@@ -409,7 +409,17 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "任何$(item)固体方块$()都可以用来建造基地，但你需要一个合格的气闸，确保气体不会因$(thing)涡流$()而全部跑光。配合$(item)热泵$()一起使用，封闭空间就会变得适宜居住，让你能摘下头盔、种植作物、放置水源而不会结冰。$(br2)能耗与房间大小成正比，所以要给分配器配上合适的能源仓。"
+			"text": "任何$(item)固体方块$()都可以用来建造基地，但你需要一个合格的气闸，确保气体不会因$(thing)涡流$()而全部跑光。配合$(item)热泵$()一起使用，封闭空间就会变得适宜居住，让你能摘下头盔、种植作物、放置水源而不会结冰。$(br2)$(o)（接下页……）$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:ultimet\"}},gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:vanadium\"}},gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:rocket_alloy_t1\"}},gtceu:turbine_rotor{GT.PartStats:{Material:\"tfg:rene_41\"}}",
+			"title": "涡轮转子",
+			"text": "与$(item)热泵$()一样，你需要一个$(item)涡轮转子$()才能让氧气分配器运行。涡轮转子会降低EU/t和可呼吸气体mB/t的消耗。$(br2)$(italic)如果$(thing)效率$()或$(thing)功率$()低于100%%，转子将不会带来任何增益。$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "涡轮转子插入$(item)排气口$()后$(thing)永远不会损耗耐久$()，且任何转子都可以使用。现阶段我们推荐使用R型铝钢或哈氏合金。$(br2)能耗与房间大小成正比，所以请确保为分配器配备合适的能源仓，并随着进程推进使用更好的涡轮转子。"
 		},
 		{
 			"type": "patchouli:spotlight",

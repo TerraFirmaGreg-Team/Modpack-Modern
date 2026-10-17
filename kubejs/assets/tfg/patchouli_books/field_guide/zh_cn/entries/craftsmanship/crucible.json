@@ -14,7 +14,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "坩埚塑形完成后，还需要像其他陶器一样$(l:craftsmanship/pottery#vessel)烧制$()。$(br2)要使用坩埚，需要有热源。坩埚可以被下方任何可加热的方块加热，最好是$(l:craftsmanship/charcoal_forge)木炭炉$()。$(br)需要注意的是，坩埚向物品传递热量的速度比锻炉快得多，这可能是好事也可能是坏事。如果$(item)锡$()这类低熔点物品在加工时麻烦不断，不妨继续用锻炉来加热。"
+            "text": "坩埚塑形完成后，还需要像其他陶器一样$(l:craftsmanship/pottery#vessel)烧制$()。$(br2)要使用坩埚，需要有热源。坩埚可以被下方任何可加热的方块加热，最好是$(l:craftsmanship/charcoal_forge)木炭炉$()。$(br)需要注意的是，坩埚向物品传递热量的速度比木炭炉快得多，这可能是好事也可能是坏事。如果$(item)锡$()这类低熔点物品在加工时麻烦不断，不妨继续用木炭炉来加热。"
         },
         {
             "type": "patchouli:multiblock",
