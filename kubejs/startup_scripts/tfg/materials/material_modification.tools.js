@@ -138,6 +138,24 @@ function registerTFGToolMaterialModification(event) {
 		GTToolType.CROWBAR
 	]
 
+	const LUVTools = [
+		GTToolType.HARD_HAMMER,
+		GTToolType.BUTCHERY_KNIFE,
+		GTToolType.SWORD,
+		GTToolType.FILE,
+		GTToolType.HOE,
+		GTToolType.KNIFE,
+		$toolTypes.get("luv_buzzsaw"),
+		$toolTypes.get("luv_scythe"),
+		GTToolType.SCYTHE,
+		$toolTypes.get("luv_wirecutter"),
+		$toolTypes.get("luv_drill"),
+		$toolTypes.get("luv_screwdriver"),
+		$toolTypes.get("luv_chainsaw"),
+		$toolTypes.get("luv_wrench"),
+		GTToolType.CROWBAR
+	]
+
 	const ZPMTools = [
 		GTToolType.HARD_HAMMER,
 		GTToolType.BUTCHERY_KNIFE,
@@ -309,10 +327,10 @@ function registerTFGToolMaterialModification(event) {
 	// LuV
 
 	GTMaterials.Duranium.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT);
-	GTMaterials.Duranium.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(54, 14, 8192 * DURABILITY_MULTIPLIER, 5, IVTools).build());
+	GTMaterials.Duranium.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(54, 14, 8192 * DURABILITY_MULTIPLIER, 5, LUVTools).build());
 
 	GTMaterials.NaquadahAlloy.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT);
-	GTMaterials.NaquadahAlloy.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(64, 15, 8192 * DURABILITY_MULTIPLIER, 5, IVTools).build());
+	GTMaterials.NaquadahAlloy.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(64, 15, 8192 * DURABILITY_MULTIPLIER, 5, LUVTools).build());
 
 	// UV
 
