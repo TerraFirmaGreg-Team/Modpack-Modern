@@ -12712,6 +12712,67 @@
             ]
         },
         {
+            "pakku_id": "ADZh5j4EjrY515z1",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "player-real-zero-gravity",
+                "modrinth": "player-real-zero-gravity"
+            },
+            "name": {
+                "curseforge": "Player: real zero gravity",
+                "modrinth": "Player: real zero gravity"
+            },
+            "id": {
+                "curseforge": "1578674",
+                "modrinth": "XMlHoHNU"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "space_gravity-1.0.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/XMlHoHNU/versions/z8TW30dS/space_gravity-1.0.1.jar",
+                    "id": "z8TW30dS",
+                    "parent_id": "XMlHoHNU",
+                    "hashes": {
+                        "sha512": "b5d41380293ee89a2022a74364fcd4d2c020a8674cdb42ca990723d8b57a26f822aec38fff1a9a3aed48eb964144cd06c8f6e66dfda8962b4f3696772f469fb1",
+                        "sha1": "1b7ae068698309bc1894044e07583f5734e2e896"
+                    },
+                    "required_dependencies": [],
+                    "size": 60458,
+                    "date_published": "2026-06-17T13:58:46.704342Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "space_gravity-1.0.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8266/553/space_gravity-1.0.1.jar",
+                    "id": "8266553",
+                    "parent_id": "1578674",
+                    "hashes": {
+                        "sha1": "28208dc122406460eb2b914dee9625d7aca62d8a",
+                        "md5": "027d154d6fd337327dfd1b94552640ed"
+                    },
+                    "required_dependencies": [],
+                    "size": 60458,
+                    "date_published": "2026-06-17T14:40:02.23Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "7N9O2rPIAVKoRYOH",
             "type": "MOD",
             "side": "BOTH",
