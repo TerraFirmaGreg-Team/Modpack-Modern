@@ -19,7 +19,7 @@
             "anchor": "papyrus",
             "title": "Paper from Papyrus",
             "recipe": "tfc:crafting/papyrus_strips",
-            "text": "Paper can be directly sourced from the $(l:the_world/wild_crops#papyrus)Papyrus$() crop. Papyrus must first be cut into strips with a $(thing)Knife$()..."
+            "text": "Paper can be directly sourced from the $(l:https://en.wikipedia.org/wiki/Papyrus)Papyrus$() crop. Papyrus must first be cut into strips with a $(thing)Knife$()..."
         },
         {
             "type": "tfg:sealed_barrel_recipe",
