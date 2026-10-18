@@ -2610,7 +2610,6 @@
 			id: "321F8E326EDF54F6"
 			optional: true
 			shape: "heart"
-			subtitle: "TEMPORARY RECIPE"
 			tasks: [{
 				id: "28C4FF2914499A02"
 				item: {
@@ -2623,6 +2622,21 @@
 				type: "item"
 			}]
 			x: 13.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["70ABD1E3FC1CA672"]
+			description: ["{quests.extreme_voltage.higgs_emitter.title}"]
+			guide_page: "tfg:field_guide tfg:the_moon/the_moon 21"
+			id: "2FFC51987440B656"
+			shape: "heart"
+			subtitle: "{quests.extreme_voltage.higgs_emitter.subtitle}"
+			tasks: [{
+				id: "576DAEECD1EA938D"
+				item: "tfg:higgs_emitter"
+				type: "item"
+			}]
+			x: 0.5d
 			y: 1.0d
 		}
 	]
