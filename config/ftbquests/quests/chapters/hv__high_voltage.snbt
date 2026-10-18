@@ -1378,7 +1378,7 @@
 			}]
 			title: "{quests.high_voltage.moon_harvester.title}"
 			x: 17.5d
-			y: 1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["00A2566109144D7F"]
