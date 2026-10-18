@@ -7,12 +7,12 @@
             "type": "patchouli:text",
             "title": "Каталог",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:agriculture/fertilizers#compost)Compost$()$(li)$(bold)$(l:agriculture/fertilizers#bone_meal)Bone Meal$()$(li)$(bold)$(l:agriculture/fertilizers#saltpeter)Salt Peter$()$(li)$(bold)$(l:agriculture/fertilizers#guano)Guano$()$(li)$(bold)$(l:agriculture/fertilizers#wood_ash)Wood Ash$()$(li)$(bold)$(l:agriculture/fertilizers#sylvite)Sylvite$()$(li)$(bold)$(l:agriculture/fertilizers#pure_fertilizers)Pure Fertilizers$()$(li)$(bold)$(l:agriculture/fertilizers#fertilizer)Fertilizer$()"
+            "text": "$(li)$(bold)$(l:agriculture/fertilizers#compost)Компост$()$(li)$(bold)$(l:agriculture/fertilizers#bone_meal)Костная мука$()$(li)$(bold)$(l:agriculture/fertilizers#saltpeter)Селитра$()$(li)$(bold)$(l:agriculture/fertilizers#guano)Гуано$()$(li)$(bold)$(l:agriculture/fertilizers#wood_ash)Древесная зола$()$(li)$(bold)$(l:agriculture/fertilizers#sylvite)Сильвин$()$(li)$(bold)$(l:agriculture/fertilizers#pure_fertilizers)Чистые удобрения$()$(li)$(bold)$(l:agriculture/fertilizers#fertilizer)Удобрение$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "text": "Fertilizers are used to add nutrients to $(l:agriculture/growing_crops)crops$(). $(item)$(k:key.use)$() with a fertilizer in your hand on some $(thing)Farmland$(), $(l:agriculture/greenhouse#planters)Planter$() or a $(thing)Crop$() to add the nutrients. Particles should appear, indicating the fertilizer was added.$(br)You can find nutrient information in a fertilizers' tooltip. The next few pages list some available fertilizers.",
+            "text": "Удобрения используются для добавления питательных веществ в $(l:agriculture/growing_crops)посевы$(). $(item)$(k:key.use)$() с удобрением в руке по $(thing)Пашне$(), $(l:agriculture/greenhouse#planters)Рассаде$() или $(thing)Посевам$() чтобы добавить питательные вещества. Должны появиться частицы, говорящие о добавлении удобрений.$(br)Информацию о содержании питательных веществ в удобрении можно найти в подсказке. На следующих страницах перечисляются некоторые доступные удобрения.",
             "title": "Удобрение"
         },
         {
@@ -21,7 +21,7 @@
             "title": "Компост",
             "item": "tfc:compost",
             "link_recipes": false,
-            "text": "Compost is the product of the $(l:agriculture/composting)Composter$(). $(br)$(li)$(b)Nitrogen: 40$()$(li)$(6)Phosphorous: 20$()$(li)$(d)Potassium: 40$()"
+            "text": "Компост производится $(l:agriculture/composting)Компостерами$().$(br)$(li)$(b)Азот: 40$()$(li)$(6)Фосфор: 20$()$(li)$(d)Калий: 40$()"
         },
         {
             "type": "patchouli:spotlight",
@@ -69,7 +69,7 @@
             "anchor": "pure_fertilizers",
             "title": "Чистые удобрения",
             "link_recipes": false,
-            "text": "Different methods are available for creating or extracting pure fertilizers. These fertilizers can serve as a condensed method of raising farmland nutrients. $(br)$(li)$(d)Potassium: 100$()$(br)Or$(li)$(b)Nitrogen: 100$()$(br)Or$(li)$(6)Phosphorous: 100$()"
+            "text": "Существуют разные методы извлечения либо создания чистых удобрений. Такие удобрения представляют собой конденсированные питательные вещества. $(br)$(li)$(d)Калий: 100$()$(br)или$(li)$(b)Азот: 100$()$(br)или$(li)$(6)Фосфор: 100$()"
         },
         {
             "type": "patchouli:spotlight",
@@ -77,11 +77,11 @@
             "anchor": "fertilizer",
             "title": "Удобрение",
             "link_recipes": false,
-            "text": "Fertilizer contains an even spread of nutrient types. Crafting it from compost will give an overall higher yield in nutrients. $(br)$(li)$(d)Potassium: 15$()$(li)$(b)Nitrogen: 15$()$(li)$(6)Phosphorous: 15$()"
+            "text": "Удобрение(предмет) содержит питательные вещества в равных пропорциях. Переработка компоста в удобрение помогает извлечь из него больше питательных веществ.\n$(br)$(li)$(d)Калий: 15$()$(li)$(b)Азот: 15$()$(li)$(6)Фосфор: 15$()"
         },
         {
             "type": "patchouli:relations",
-            "title": "Дальнейшее чтение",
+            "title": "Дополнительно",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/growing_crops",

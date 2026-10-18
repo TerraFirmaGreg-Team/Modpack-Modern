@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:craftsmanship/building_materials#primitive_materials)原始材料$()$(li2)$(l:craftsmanship/building_materials#thatch)茅草$()$(li2)$(l:craftsmanship/building_materials#mud_bricks)泥砖$()$(li2)$(l:craftsmanship/building_materials#wattle_and_daub)板条与涂料$()$(li)$(bold)$(l:craftsmanship/building_materials#advanced_materials)进阶材料$()$(li2)$(l:craftsmanship/building_materials#alabaster)雪花石膏$()$(li2)$(l:craftsmanship/building_materials#bricks_and_mortar)砖块与砂浆$()$(li)$(bold)$(l:craftsmanship/building_materials#block_interactions)方块互动$()$(li)$(bold)$(l:craftsmanship/building_materials#roof_building)屋顶建造$()$(li)$(bold)$(l:craftsmanship/building_materials#modern)现代材料$()",
+            "text": "$(li)$(bold)$(l:craftsmanship/building_materials#primitive_materials)原始材料$()$(li2)$(l:craftsmanship/building_materials#thatch)干草块$()$(li2)$(l:craftsmanship/building_materials#mud_bricks)泥砖$()$(li2)$(l:craftsmanship/building_materials#wattle_and_daub)板条与涂料$()$(li)$(bold)$(l:craftsmanship/building_materials#advanced_materials)进阶材料$()$(li2)$(l:craftsmanship/building_materials#alabaster)雪花石膏$()$(li2)$(l:craftsmanship/building_materials#bricks_and_mortar)砖块与砂浆$()$(li)$(bold)$(l:craftsmanship/building_materials#block_interactions)方块互动$()$(li)$(bold)$(l:craftsmanship/building_materials#roof_building)屋顶建造$()$(li)$(bold)$(l:craftsmanship/building_materials#modern)现代材料$()",
             "title": "目录",
             "anchor": "index"
         },
@@ -13,12 +13,12 @@
             "type": "patchouli:text",
             "anchor": "primitive_materials",
             "title": "原始材料",
-            "text": "在游戏前期，建造可能是个挑战，因为许多坚固的建材都需要金属工具才能获取。不过仍有几种建材只用石器就能得到。$(br2)有了金属工具，就能获取更多 $(l:craftsmanship/building_materials#advanced_materials)进阶建材$()。"
+            "text": "在游戏前期，由于许多坚固的建材都需要金属工具才能获取，建造房屋是比较困难的。不过仍有几种建材只用石制工具就能获得。$(br2)等有了金属工具之后，就能获取更多 $(l:craftsmanship/building_materials#advanced_materials)高级的建筑材料$()。"
         },
         {
             "type": "patchouli:text",
             "anchor": "thatch",
-            "text": "只需一把 $(l:craftsmanship/sticks_and_stones)石刀$()，你就能通过破坏植物类方块获得 $(thing)干草$()。它可以用来合成一种非常简单的建材：$(thing)茅草$()。茅草是一种不受重力影响的轻质方块，但玩家和其他实体可以直接穿过它！需要的话，它也可以重新合成为 $(thing)干草$()。",
+            "text": "只需一把 $(l:craftsmanship/sticks_and_stones)石刀$()，你就能通过破坏植物类方块获得 $(thing)干草$()。它可以用来合成一种非常简单的建材：$(thing)干草块$()。干草块是一种不受重力影响的轻质方块，但玩家和其他实体可以直接穿过它！需要的话，它也可以反向合成为 $(thing)干草$()。",
             "title": "茅草"
         },
         {
@@ -230,7 +230,7 @@
             "type": "patchouli:text",
             "anchor": "advanced_materials",
             "title": "高级建筑材料",
-            "text": "除了石器时代的 $(l:craftsmanship/building_materials#primitive_materials)原始建材$()之外，获得金属工具后，你就能建造更先进的建材了。"
+            "text": "除了石器时代的 $(l:craftsmanship/building_materials#primitive_materials)原始材料$()，金属工具可以帮你生产更多的高级建筑材料。"
         },
         {
             "type": "patchouli:spotlight",
@@ -250,7 +250,7 @@
             "type": "patchouli:spotlight",
             "anchor": "bricks_and_mortar",
             "item": "tag:forge:stone_bricks",
-            "text": "$(thing)石砖$()可以用 $(l:craftsmanship/chisel)凿子$()加工一些散落的小石块制成。之后还需要 $(thing)砂浆$()才能构成坚固的建材。$(br2)把 $(thing)沙子$()加进一桶 $(l:craftsmanship/barrels#limewater)石灰水$()里就能制作砂浆。",
+            "text": "将一些小石子与$(l:craftsmanship/chisel)凿子$()在合成栏中合成就可以得到这种岩石的$(thing)砖$()。将砖与$(thing)砂浆$()合成就能做成坚固的建筑方块。$(br2)把 $(thing)沙子$()泡在装有 $(l:craftsmanship/barrels#limewater)石灰水$()的大桶里就能制作砂浆。",
             "title": "石砖和砂浆"
         },
         {
@@ -271,11 +271,11 @@
         },
         {
             "type": "patchouli:text",
-            "text": "屋顶框架就位后，对它 $(item)$(k:key.use)$()任意一种 $(t:#rnr:shingles)$(6)屋顶材料$()，即可生成对应的屋顶。屋顶类型包括茅草（往屋顶框架上添加干草），还有陶瓦瓦片、木瓦等等。$(br2)屋顶是让你的机器保持干燥的必需品！想想那些可怜的机器……"
+            "text": "屋顶框架就位后，对它 $(item)$(k:key.use)$()任意一种 $(t:#rnr:shingles)$(6)屋顶材料$()，即可生成对应的屋顶。屋顶类型包括干草块（往屋顶框架上添加干草），还有陶瓦瓦片、木瓦等等。$(br2)屋顶是让你的机器保持干燥的必需品！想想那些可怜的机器……"
         },
         {
             "type": "patchouli:image",
-            "title": "给屋顶铺茅草",
+            "title": "给屋顶铺干草",
             "images": [
                 "rnr:textures/gui/book/thatching.png"
             ],

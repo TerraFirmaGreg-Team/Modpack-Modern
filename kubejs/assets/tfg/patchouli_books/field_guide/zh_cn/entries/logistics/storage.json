@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)物品存储$()$(li2)$(l:logistics/storage#chests)箱子$()$(li2)$(l:logistics/storage#crates)板条箱$()$(li2)$(l:logistics/storage#vaults)物品保险库$()$(li2)$(l:logistics/storage#super_chests)超级箱$()$(li)$(bold)物品与流体存储$()$(li2)$(l:logistics/storage#ae2)ME 存储$()$(li2)$(l:logistics/storage#kegs)大酒桶$()$(li)$(bold)流体存储$()$(li2)$(l:logistics/storage#barrels)大桶$()$(li2)$(l:logistics/storage#drums)储液桶$()$(li2)$(l:logistics/storage#fluid_tanks)储液罐$()$(li2)$(l:logistics/storage#multiblock_tanks)多方块储罐$()$(li2)$(l:logistics/storage#super_tanks)超级储罐$()",
+            "text": "$(li)$(bold)物品存储$()$(li2)$(l:logistics/storage#chests)箱子$()$(li2)$(l:logistics/storage#crates)板条箱$()$(li2)$(l:logistics/storage#vaults)物品保险库$()$(li2)$(l:logistics/storage#super_chests)超级箱$()$(li)$(bold)物品与流体存储$()$(li2)$(l:logistics/storage#ae2)ME 存储$()$(li2)$(l:logistics/storage#kegs)大酒桶$()$(li)$(bold)流体存储$()$(li2)$(l:logistics/storage#barrels)大桶$()$(li2)$(l:logistics/storage#drums)流体桶$()$(li2)$(l:logistics/storage#fluid_tanks)流体储罐$()$(li2)$(l:logistics/storage#multiblock_tanks)多方块储罐$()$(li2)$(l:logistics/storage#super_tanks)超级缸$()",
             "title": "目录",
             "anchor": "index"
         },
@@ -45,7 +45,7 @@
             "title": "板条箱",
             "anchor": "crates",
             "item": "tag:gtceu:crates",
-            "text": "在存储方面，GregTech 提供了$(item)板条箱$()，可以容纳所有尺寸的物品，等级越高容量越大，从 27 格到 144 格不等。$(br)板条箱支持$(thing)物品过滤器$()、$(thing)腐烂物销毁覆盖板$()等物流覆盖板。$(br)你甚至可以用$(item)胶带$()封装箱子，拆掉时保留其内容物，方便你大量运输物品。"
+            "text": "在存储方面，格雷科技提供了$(item)板条箱$()，可以容纳所有尺寸的物品，等级越高容量越大，从 27 格到 144 格不等。$(br)板条箱支持$(thing)物品过滤器$()、$(thing)腐烂物销毁覆盖板$()等物流覆盖板。$(br)你甚至可以用$(item)胶带$()封装箱子，拆掉时保留其内容物，方便你大量运输物品。"
         },
         {
             "type": "patchouli:multiblock",
@@ -260,12 +260,12 @@
             "title": "桶",
             "anchor": "drums",
             "item": "tag:gtceu:drums",
-            "text": "$(item)储液桶$()非常适合存储和携带流体。它们能存放大量单一类型的流体，等级越高容量越大，从 32,000 到 1,024,000 mB 不等。$(br2)储液桶被拆除时会保留其中的流体，是转移流体的理想选择。$(br2)用 $(item)$(k:key.use)$() 配合$(thing)软锤$()或$(thing)螺丝刀$()，即可让储液桶从底面自动排出流体。"
+            "text": "$(item)流体桶$()非常适合存储和携带流体。它们能存放大量单一类型的流体，等级越高容量越大，从 32,000 到 1,024,000 mB 不等。$(br2)流体桶被拆除时会保留其中的流体，是转移流体的理想选择。$(br2)用 $(item)$(k:key.use)$() 配合$(thing)软锤$()或$(thing)螺丝刀$()，即可让桶从底面自动排出流体。"
         },
         {
             "type": "patchouli:multiblock",
             "enable_visualize": false,
-            "text": "$(bold)提示$()：储液桶的各个面都可以放置流体物流覆盖板。",
+            "text": "$(bold)提示$()：流体桶的各个面都可以放置流体物流覆盖板。",
             "multiblock": {
                 "pattern": [
                     [
@@ -282,14 +282,14 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "储液罐",
+            "title": "流体储罐",
             "anchor": "fluid_tanks",
             "item": "create:fluid_tank,create_connected:fluid_vessel,fluidlogistics:multi_fluid_tank",
-            "text": "$(item)储液罐$()可以看作$(l:logistics/storage#vaults)物品保险库$()的流体版本。单个储液罐可容纳 32,000 mB，还可以拼成结构以扩展容量。$(br2)$(item)多流体储罐$()可以同时容纳多种流体，但无法手动与之交互。"
+            "text": "$(item)流体储罐$()可以看作$(l:logistics/storage#vaults)物品保险库$()的流体版本。单个流体储罐可容纳 32,000 mB，还可以拼成结构以扩展容量。$(br2)$(item)多流体储罐$()可以同时容纳多种流体，但无法手动与之交互。"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "$(bold)提示$()：对储液罐 $(item)$(k:key.use)$() 一把$(thing)扳手$()即可隐藏/显示它的观察窗。",
+            "text": "$(bold)提示$()：对流体储罐 $(item)$(k:key.use)$() 一把$(thing)扳手$()即可隐藏/显示它的观察窗。",
             "multiblocks": [
                 {
                     "pattern": [

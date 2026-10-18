@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "加热物品是把一种物品转化为另一种物品或流体的方法。加热物品的方式有很多——例如$(l:craftsmanship/firepit)篝火$()、$(l:craftsmanship/pit_kiln)坑窑$()或$(l:craftsmanship/charcoal_forge)木炭炉$()。不过它们的工作方式都一样：把物品放进这些设备后，物品会逐渐升温，这可以从物品的提示框上看到。"
+			"text": "加热物品可以将其转化为另一种物品或熔化为液体。加热物品的方式有很多——例如$(l:craftsmanship/firepit)篝火$()、$(l:craftsmanship/pit_kiln)坑窑$()或$(l:craftsmanship/charcoal_forge)木炭炉$()。不过它们的工作方式都一样：把物品放进这些设备后，物品会逐渐升温，这可以从物品的提示框上看到。"
 		},
 		{
 			"type": "patchouli:text",

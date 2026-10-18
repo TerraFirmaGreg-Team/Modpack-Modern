@@ -794,6 +794,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		mapColor: 'terracotta_yellow',
 		sound: 'stone',
 		raw: { block: 'ad_astra:venus_sandstone' },
+		stonecutterTag: 'tfg:stone_types/trachyte_sandstone',
 		bricks: {
 			block: 'ad_astra:venus_sandstone_bricks',
 			stair: 'ad_astra:venus_sandstone_brick_stairs',

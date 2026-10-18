@@ -300,7 +300,7 @@
             "images": [
                 "tfg:textures/gui/field_guide/supports/support_2d_fail.png"
             ],
-            "text": "However, when there are unsupported blocks outside the support area, mining the highlighted block may cause a collapse even though it itself is supported.",
+            "text": "Jednak gdy poza obszarem podparcia znajdują się niepodparte bloki, podczas wydobywania zaznaczonego bloku może dojść do zawału, mimo że sam ten blok jest podparty.",
             "border": true
         },
         {

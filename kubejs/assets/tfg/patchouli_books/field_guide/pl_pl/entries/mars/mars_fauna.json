@@ -32,7 +32,7 @@
 			"type": "patchouli:spotlight",
 			"title": "SHAI-HULUD",
 			"item": "sandworm_mod:sandworm_tooth,sandworm_mod:thumper",
-			"text": "The $(thing)Sandworm$() is more of an environmental hazard than a boss to kill, so your best way of surviving it is to run away! If you manage to hit its head enough times with $(thing)explosion damage$(), it will leave you alone... for a while."
+			"text": "$(thing)Czerw piaskowy$() to bardziej zagrożenie środowiskowe niż boss do zabicia, więc najlepszym sposobem na przeżycie jest ucieczka! Jednak jeśli uda ci się zadać wystarczająco $(thing)obrażeń od wybuchu$() w jego głowę to zostawi cię w spokoju... na jakiś czas."
 		},
 		{
 			"type": "patchouli:text",
@@ -203,7 +203,7 @@
 			"scale": 0.5,
 			"name": "Łupieżca",
 			"anchor": "raider",
-			"text": "$(thing)Raiders$() are hostile animals found above -109°C. They have a natural rivalry with $(thing)Chargers$(). You can make them neutral by feeding them $(item)Raw Meat$()."
+			"text": "$(thing)Łupieżcy$() to wrogie zwierzęta zamieszkujące obszary powyżej -109°C. Są naturalnymi rywalami $(thing)szarżerów$(). Możesz uczynić je neutralnymi, karmiąc je $(item)surowym mięsem$()."
 		},
 		{
 			"type": "patchouli:entity",

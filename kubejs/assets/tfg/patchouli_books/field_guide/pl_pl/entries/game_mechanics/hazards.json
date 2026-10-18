@@ -41,7 +41,7 @@
 			"title": "Gumowe rękawice",
 			"link_recipes": true,
 			"anchor": "gloves",
-			"text": "The $(thing)Rubber gloves$() can either be made from $(l:agriculture/leather_making)Leather$() and $(thing)Latex$(), or out of $(thing)Rubber Sheets$(). They provide protection from any $(item)Skin Contact$() hazards, such as $(thing)Beryllium Dust$()."
+			"text": "$(thing)Gumowe rękawice$() można wykonać ze $(l:agriculture/leather_making)skóry$() i $(thing)lateksu$() albo z $(thing)arkuszy gumy$(). Chronią przed wszelkimi zagrożeniami związanymi z $(item)kontaktem ze skórą$(), takimi jak $(thing)pył berylowy$()."
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -73,7 +73,7 @@
 				"tag": "minecraft:beds"
 			},
 			"anchor": "respawn",
-			"text": "If all else fails, bringing along a bed to respawn is a good idea.$(br2)If you don't have access to $(item)Wool$() or $(item)String$(), you can also make a $(thing)Thatch Bed$()."
+			"text": "Gdy wszystko inne zawiedzie, warto zabrać ze sobą łóżko do ustawienia odrodzenia.$(br2)Jeśli nie masz $(item)wełny$() ani $(item)nici$(), możesz też zrobić $(thing)słomiane łóżko$()."
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -140,10 +140,10 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Substancje powodujące nudności",
+			"title": "Substancje powodujące mdłości",
 			"item": "gtceu:butyraldehyde_bucket",
 			"anchor": "nauseating_chemicals",
-			"text": "$(thing)Nauseating chemicals$(), such as $(thing)Butyraldehyde$(), are substances that cause $(item)Nausea$() when inhaled.$(br)The $(l:game_mechanics/hazards#mask)Face Mask$() and the $(l:game_mechanics/hazards#hazmat)Hazmat Suit$() protect from inhalation."
+			"text": "$(thing)Substancje powodujące mdłości$(), takie jak $(thing)butanal$(), to substancje, które po wdychaniu wywołują $(item)mdłości$().$(br)$(l:game_mechanics/hazards#mask)Maseczka$() i $(l:game_mechanics/hazards#hazmat)kombinezon Hazmat$() przed tym chronią."
 		},
 		{
 			"type": "patchouli:spotlight",

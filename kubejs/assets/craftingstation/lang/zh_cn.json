@@ -1,6 +1,8 @@
 {
+	"text.crafting_station.clear": "清空合成格\n（按住Shift优先\n放入侧边物品栏）",
 	"text.crafting_station.connected_resources.false": "使用已连接的资源：否",
 	"text.crafting_station.connected_resources.true": "使用已连接的资源：是",
 	"text.crafting_station.error": "发现错误的配方 %s ，请查看日志以获取详细信息",
+	"text.crafting_station.jei_nopull_output": "这个容器中有锁定的槽位！\nJEI无法再从仅输出的槽位获取资源，例如熔炉的输出槽。\n\n请把这些物品转移到一般存储栏位再使用！",
 	"title.crafting_station": "合成站"
 }

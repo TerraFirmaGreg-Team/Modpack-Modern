@@ -72,7 +72,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/moon/thicket.png"
 			],
-			"text": "The $(thing)Chorus Thicket$() is a dense area of $(l:the_moon/moon_crops)Chorus Fruit$(). It is a dangerous biome with hostile $(l:the_moon/moon_fauna#endermen)endermen$()."
+			"text": "$(thing)Refrenusowy gąszcz$() to gęsty obszar zawierający $(l:the_moon/moon_crops)owoce refrenusu$(). Jest to niebezpieczny biom z wrogimi $(l:the_moon/moon_fauna#endermen)endermanami$()."
 		},
 		{
 			"type": "patchouli:image",

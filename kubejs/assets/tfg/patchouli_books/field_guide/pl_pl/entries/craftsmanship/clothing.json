@@ -84,7 +84,7 @@
 		{
 			"type": "tfg:knapping_recipe",
 			"recipe": "tfg:knapping/leather_apron",
-			"text": "The $(l:agriculture/leather_making)Leather$() $(item)Apron$() provides a lot of insulation, but no warmth or cooling. Perfect for working in front of a $(l:craftsmanship/charcoal_forge)forge$()!"
+			"text": "$(item)Fartuch$() ze $(l:agriculture/leather_making)skóry$() zapewnia dużą izolację, ale nie ogrzewa ani nie chłodzi. Idealny do pracy przy $(l:craftsmanship/charcoal_forge)kuźni$()!"
 		},
 		{
 			"type": "patchouli:spotlight",

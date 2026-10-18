@@ -55,19 +55,19 @@
         {
             "type": "patchouli:text",
             "anchor": "blazing",
-            "title": "炽热",
+            "title": "灼热",
             "text": "该效果生效期间，会持续为玩家$(thing)升温$()，最高可达危险的 $(n)60°C$()。建议穿戴防护装备，才能在这种状态下存活。"
         },
         {
             "type": "patchouli:text",
             "anchor": "instant_radiation",
-            "title": "瞬时辐射",
+            "title": "瞬间辐射",
             "text": "该效果会以$(l:game_mechanics/hazards#radioactive_materials)辐射伤害$()快速对玩家造成伤害。"
         },
         {
             "type": "patchouli:text",
             "anchor": "final_moments",
-            "title": "最后时刻",
+            "title": "临终时刻",
             "text": "该效果会启动一个倒计时，数尽你最后的几分钟。时间一到，你就会死亡。"
         },
         {
