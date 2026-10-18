@@ -3,7 +3,7 @@
 ## Unreleased
 ### Changes
 ### Bug fixes
-- Black and Blue Scythe are back, sorry @TomPlop
+- Red and Blue Scythe are back, sorry @TomPlop
 
 ## [0.13.13] - 18-10-2026
 Be sure to check the changelog of the previous two [alpha](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.11) [releases](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.12) too! 
