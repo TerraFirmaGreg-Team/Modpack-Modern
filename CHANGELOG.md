@@ -15,7 +15,7 @@ Be sure to check the changelog of the previous two [alpha](https://github.com/Te
 - Tweaked some recipe durations on the MERF (#5013) @TomPlop
 - Added a new Piglin Outpost structure to the upper and middle layers of the Beneath (#5127) @Filiipa
 - Rearranged some of InventoryHUD to be less intrusive and fixed some overlaps @Pyritie
-- Added 2-Ethylhexyl Nitrate, a new cetane booster (#5129) @TomPlop
+- Added 2-Ethylhexyl Nitrate, a new cetane booster (#5129) @Jeuvke
 - Added new EMI screens for TFC anvils, TFC welding, and firmalife greenhouse planters @Redeix
 - GT fluid containers (drums, cells, super tanks) can now be used in crafting table recipes that use fluids (#5105) @Redeix
 - Added electric scythes with even bigger AoE sizes for clearing away all that pesky grass (#5150) @TomPlop @ArkeHD @Pyritie
