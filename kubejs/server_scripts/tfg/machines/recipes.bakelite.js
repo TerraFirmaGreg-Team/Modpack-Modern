@@ -54,7 +54,7 @@ function registerTFGBakeliteRecipes(event) {
 	event.recipes.gtceu.chemical_reactor("tfg:sodium_hydroxide_from_elements")
 		.itemInputs("#forge:dusts/sodium")
 		.inputFluids(Fluid.of("gtceu:hydrogen", 1000), Fluid.of("gtceu:oxygen", 1000))
-		.itemOutputs("1x #forge:dusts/sodium_hydroxide")
+		.itemOutputs("3x #forge:dusts/sodium_hydroxide")
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.LV])
 
