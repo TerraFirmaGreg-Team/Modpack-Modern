@@ -578,6 +578,10 @@
             "text": "Building the hull is only the first step. Next, look for the blue hammer icon and $(item)$(k:key.use)$() to add the items that show next to your crosshair.$(br)For a full list of materials, you will need:$(li)6 Scaffold Slabs$(li)18 Scaffold Stairs$(li)116 Hardwood Plank Blocks$(li)96 Copper Bolts$(li)4 Cleats$(li)34 Hardwood Stripped Logs$(li)1 Medium Sail$(li)1 Small Sail$(li)16 Lumber$(li)1 Anchor$(li)8 Rope"
         },
         {
+            "type": "patchouli:text",
+            "text": "As the sloop is powered by wind instead of manually, the way you control it is different from the other ships.$(br2)You will need to learn how to $(l:logistics/boats#sailing)Sail$() and $(l:https://w.wiki/dVq$)Tack$() against the wind, how to use $(l:logistics/boats#anchors)an anchor$(), and put your $(l:logistics/boats#sails)sails$() up and down."
+        },
+        {
             "type": "patchouli:spotlight",
             "anchor": "cannons",
             "title": "Cannons",
