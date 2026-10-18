@@ -75,22 +75,10 @@ function registerSpeciesRecipes(event) {
 	], {
 		A: '#forge:springs/steel',
 		B: 'create:precision_mechanism',
-		C: 'tfc:metal/shield/blue_steel',
+		C: ['tfc:metal/shield/blue_steel', 'tfc:metal/shield/red_steel'],
 		D: 'species:kinetic_core',
 		E: '#forge:plates/titanium'
-	}).id('tfg:shaped/ricoshield_blue')
-
-	event.shaped('species:ricoshield', [
-		'EBE',
-		'ACA',
-		'EDE'
-	], {
-		A: '#forge:springs/steel',
-		B: 'create:precision_mechanism',
-		C: 'tfc:metal/shield/red_steel',
-		D: 'species:kinetic_core',
-		E: '#forge:plates/titanium'
-	}).id('tfg:shaped/ricoshield_red')
+	}).id('tfg:shaped/ricoshield')
 
 	event.shaped('species:deflector_dummy', [
 		'A',

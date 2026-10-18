@@ -1,0 +1,108 @@
+{
+    "name": "Удобрения",
+    "category": "tfg:agriculture",
+    "icon": "tfc:groundcover/guano",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "Каталог",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:agriculture/fertilizers#compost)Компост$()$(li)$(bold)$(l:agriculture/fertilizers#bone_meal)Костная мука$()$(li)$(bold)$(l:agriculture/fertilizers#saltpeter)Селитра$()$(li)$(bold)$(l:agriculture/fertilizers#guano)Гуано$()$(li)$(bold)$(l:agriculture/fertilizers#wood_ash)Древесная зола$()$(li)$(bold)$(l:agriculture/fertilizers#sylvite)Сильвин$()$(li)$(bold)$(l:agriculture/fertilizers#pure_fertilizers)Чистые удобрения$()$(li)$(bold)$(l:agriculture/fertilizers#fertilizer)Удобрение$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "text": "Удобрения используются для добавления питательных веществ в $(l:agriculture/growing_crops)посевы$(). $(item)$(k:key.use)$() с удобрением в руке по $(thing)Пашне$(), $(l:agriculture/greenhouse#planters)Рассаде$() или $(thing)Посевам$() чтобы добавить питательные вещества. Должны появиться частицы, говорящие о добавлении удобрений.$(br)Информацию о содержании питательных веществ в удобрении можно найти в подсказке. На следующих страницах перечисляются некоторые доступные удобрения.",
+            "title": "Удобрение"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "compost",
+            "title": "Компост",
+            "item": "tfc:compost",
+            "link_recipes": false,
+            "text": "Компост производится $(l:agriculture/composting)Компостерами$().$(br)$(li)$(b)Азот: 40$()$(li)$(6)Фосфор: 20$()$(li)$(d)Калий: 40$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "minecraft:bone_meal",
+            "anchor": "bone_meal",
+            "title": "Костная мука",
+            "link_recipes": false,
+            "text": "Костная мука состоит из измельченных костей. $(br)$(li)$(6)Фосфор: 10$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:powder/saltpeter",
+            "anchor": "saltpeter",
+            "title": "Селитра",
+            "link_recipes": false,
+            "text": "Селитра получается из её руды. $(br)$(li)$(b)Азот: 10$()$(li)$(d)Калий: 40$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:groundcover/guano",
+            "anchor": "guano",
+            "title": "Гуано",
+            "link_recipes": false,
+            "text": "Гуано находят глубоко под землей и на галечных берегах. $(br)$(li)$(b)Азот: 80$()$(li)$(6)Фосфор: 50$()$(li)$(d)Калий: 10$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:powder/wood_ash",
+            "anchor": "wood_ash",
+            "title": "Древесная зола",
+            "link_recipes": false,
+            "text": "Древесная зола производится путем разрушения костров. Бросание предмета факела в воду также имеет шанс произвести золу. $(br)$(li)$(6)Фосфор: 10$()$(li)$(d)Калий: 30$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:powder/sylvite",
+            "anchor": "sylvite",
+            "title": "Сильвин",
+            "link_recipes": false,
+            "text": "Сильвин изготавливается из его руды. $(br)$(li)$(d)Калий: 50$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:pure_nitrogen,tfc:pure_potassium,tfc:pure_phosphorus",
+            "anchor": "pure_fertilizers",
+            "title": "Чистые удобрения",
+            "link_recipes": false,
+            "text": "Существуют разные методы извлечения либо создания чистых удобрений. Такие удобрения представляют собой конденсированные питательные вещества. $(br)$(li)$(d)Калий: 100$()$(br)или$(li)$(b)Азот: 100$()$(br)или$(li)$(6)Фосфор: 100$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "gtceu:fertilizer",
+            "anchor": "fertilizer",
+            "title": "Удобрение",
+            "link_recipes": false,
+            "text": "Удобрение(предмет) содержит питательные вещества в равных пропорциях. Переработка компоста в удобрение помогает извлечь из него больше питательных веществ.\n$(br)$(li)$(d)Калий: 15$()$(li)$(b)Азот: 15$()$(li)$(6)Фосфор: 15$()"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Дополнительно",
+            "anchor": "relations",
+            "entries": [
+                "tfg:agriculture/growing_crops",
+                "tfg:agriculture/greenhouse",
+                "tfg:agriculture/composting",
+                "tfg:the_world/wild_crops"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 6,
+    "extra_recipe_mappings": {
+        "tfc:compost": 2,
+        "minecraft:bone_meal": 3,
+        "tfc:groundcover/guano": 5,
+        "firmalife:jar/guano": 5,
+        "tfc:powder/wood_ash": 6,
+        "tfc:powder/sylvite": 7,
+        "tfc:pure_nitrogen": 8,
+        "tfc:pure_potassium": 8,
+        "tfc:pure_phosphorus": 8,
+        "gtceu:fertilizer": 9
+    }
+}

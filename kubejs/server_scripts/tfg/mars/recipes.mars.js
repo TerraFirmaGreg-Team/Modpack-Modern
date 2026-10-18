@@ -146,7 +146,7 @@ function registerTFGMarsRecipes(event) {
 		.EUt(4)
 
 	event.recipes.tfc.damage_inputs_shapeless_crafting(
-		event.shapeless('8x tfc:wool_yarn', [			
+		event.shapeless('8x tfc:wool_yarn', [
 			'tfg:glacian_wool',
 			'#tfg:tools/spindles'
 		]).id('tfg:shapeless/glacian_wool_to_yarn'))
@@ -156,14 +156,6 @@ function registerTFGMarsRecipes(event) {
 		.itemOutputs('8x tfc:wool_yarn')
 		.duration(100)
 		.EUt(4)
-
-	event.shaped('minecraft:pink_bed', [
-		'AAA',
-		'BBB'
-	], {
-		A: 'ad_astra:glacian_fur',
-		B: '#tfc:lumber'
-	}).id('tfg:shaped/glacian_bed')
 
 	event.recipes.firmalife.oven('betterend:cave_pumpkin_pie_raw', 400, 60 * 20, 'betterend:cave_pumpkin_pie')	
 	

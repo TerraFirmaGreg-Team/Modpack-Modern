@@ -161,6 +161,9 @@ const registerCreateBlockTags = (event) => {
 
 	event.add('tfc:no_icicle_generation', 'create:chain_conveyor')
 
+	event.add('minecraft:snow_layer_cannot_survive_on', 'create:water_wheel')
+	event.add('minecraft:snow_layer_cannot_survive_on', 'create:large_water_wheel')
+
     event.add('tfg:track_replaceable', '#tfc:can_be_snow_piled')
 
     // Create metal bars weren't metal bars as blocks either :(

@@ -23,6 +23,8 @@ function registerTFCItemTags(event) {
 	// Add chainsaws to #tfc:axes so they drop fruit tree saplings
 	event.add("tfc:axes", "#forge:tools/chainsaws");
 
+	event.add("tfc:scythes", "#forge:tools/scythes");
+
 	/**
 	 * @type {string[]} - Item IDs and tags usable on tfc tool racks.
 	 */
@@ -512,12 +514,11 @@ function registerTFCItemTags(event) {
 	event.add('tfc:firepit_logs', '#tfc:firepit_kindling');
 	event.add('tfc:firepit_fuel', '#tfc:firepit_kindling');
 
-    //TODO: properly allow GT fluid containers to work with TFC crafting recipes.
     /** @type {{Item[]}} */
     const fluidItemIngredientHolders = [
-        //'#gtceu:super_tanks',
-        //'#gtceu:fluid_cells',
-        //'#gtceu:drums',
+        '#gtceu:super_tanks',
+        '#gtceu:fluid_cells',
+        '#gtceu:drums',
         '#tfc:barrels'
     ];
     fluidItemIngredientHolders.forEach(item => {
@@ -595,21 +596,6 @@ function registerTFCBlockTags(event) {
 	event.add("tfc:forge_invisible_whitelist", "greate:stainless_steel_mechanical_pump");
 	event.add("tfc:forge_invisible_whitelist", "greate:titanium_mechanical_pump");
 
-	// Allows any block with the word "brick" in its id to be used as bloomery and forge insulation.
-	// Optimized to compute matching blocks once instead of regex scanning per tag like before.
-	// Blacklist removes blocks that are unwanted.
-	const blacklist = ["drying", "slab", "stairs", "wall", "additionalplacements", "fence", "roof", "bridge"];
-	const matches = [];
-	ForgeRegistries.BLOCKS.getValues().forEach(block => {
-		const id = String(ForgeRegistries.BLOCKS.getKey(block));
-		if (id.includes("brick") && !blacklist.some(no_no_word => id.includes(no_no_word))) {
-			matches.push(id);
-		};
-	});
-	["tfc:bloomery_insulation", "tfc:forge_insulation"].forEach(tag => {
-		matches.forEach(id => event.add(tag, id));
-	});
-
 	event.add("tfc:forge_insulation", 'create:depot');
 
 	global.TFC_STONE_TYPES.forEach((stone) => {
@@ -679,6 +665,29 @@ function registerTFCBlockTags(event) {
     event.add("tfg:metal_bars", "tfc:metal/bars/black_steel");
     event.add("tfg:metal_bars", "tfc:metal/bars/blue_steel");
     event.add("tfg:metal_bars", "tfc:metal/bars/red_steel");
+
+	// Prevent Snow Accumulation on following
+	event.add('minecraft:snow_layer_cannot_survive_on','tfc:molten') //Prevents Bloomery and Blast Furnace voiding when snowing
+
+    // Add small ore block tag to all small ores.
+    const small_ores = [
+        'native_copper',
+        'native_gold',
+        'hematite',
+        'native_silver',
+        'cassiterite',
+        'bismuthinite',
+        'garnierite',
+        'malachite',
+        'magnetite',
+        'limonite',
+        'sphalerite',
+        'tetrahedrite'
+    ];
+    small_ores.forEach(small_ore => {
+        event.add('tfg:small_ore_indicators', `tfc:ore/small_${small_ore}`);
+    });
+    event.add('tfg:small_ore_indicators', 'firmalife:ore/small_chromite');
 }
 
 /** @param {TagEvent.Fluid} event */

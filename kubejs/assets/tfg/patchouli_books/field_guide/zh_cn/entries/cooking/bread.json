@@ -1,0 +1,28 @@
+{
+    "name": "烘焙面包",
+    "category": "tfg:cooking",
+    "icon": "tfc:textures/item/food/barley_bread.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "要制作$(thing)面包$()，首先得获得$(thing)酵母$()。要获得第一份酵母，把$(l:cooking/decay#drying)果干$()密封进装着$(thing)水$()的大桶。三天后就会形成$(thing)酵种$()。$(br)从今以后，把酵种和$(thing)面粉$()一起密封在大桶里就能喂养酵母，让它繁殖。每 100mB 酵母加 1 份面粉能产出 600mB 酵母。这买卖很划算！"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "把酵种、甜味剂和面粉组合起来，就能做成$(thing)面团$()。面团可以像平常一样烹饪，做成$(thing)面包$()！$(br)烤好之后，你可以用$(thing)刀$()把面包切成$(thing)切片$()。切片可以用来$(l:cooking/sandwiches)制作三明治$()，或者烤成$(thing)吐司$()，涂上$(thing)果酱$()或调味酱。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸阅读",
+            "anchor": "relations",
+            "entries": [
+                "tfg:cooking/cooking_methods",
+                "tfg:cooking/decay",
+                "tfg:cooking/sandwiches",
+                "tfg:the_world/wild_crops"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 7
+}

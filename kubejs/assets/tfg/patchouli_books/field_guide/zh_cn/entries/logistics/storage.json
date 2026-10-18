@@ -1,0 +1,595 @@
+{
+    "name": "存储",
+    "category": "tfg:logistics",
+    "icon": "tfc:wood/chest/douglas_fir",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)物品存储$()$(li2)$(l:logistics/storage#chests)箱子$()$(li2)$(l:logistics/storage#crates)板条箱$()$(li2)$(l:logistics/storage#vaults)物品保险库$()$(li2)$(l:logistics/storage#super_chests)超级箱$()$(li)$(bold)物品与流体存储$()$(li2)$(l:logistics/storage#ae2)ME 存储$()$(li2)$(l:logistics/storage#kegs)大酒桶$()$(li)$(bold)流体存储$()$(li2)$(l:logistics/storage#barrels)大桶$()$(li2)$(l:logistics/storage#drums)流体桶$()$(li2)$(l:logistics/storage#fluid_tanks)流体储罐$()$(li2)$(l:logistics/storage#multiblock_tanks)多方块储罐$()$(li2)$(l:logistics/storage#super_tanks)超级缸$()",
+            "title": "目录",
+            "anchor": "index"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "简介",
+            "anchor": "intro",
+            "text": "在 $(tfg) 中，你会积累海量的物品、材料和流体。搭建庞大的存储系统来整理这一切非常重要。存储最关键的要素是其$(thing)容量$()和$(thing)限制$()。关于随身物品管理，请阅读$(l:logistics/personal_storage)个人存储$()。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "箱子",
+            "anchor": "chests",
+            "item": "tag:forge:chests",
+            "text": "箱子可以存放 18 组物品，大箱子为 36 组。箱子可以容纳最大为$(l:game_mechanics/size_and_weight)大型$()的物品。$(br)如果箱子里放有$(thing)食物类物品$()，就会招来啮齿动物。所以最好把食物存放在$(item)小缸$()里。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "enable_visualize": false,
+            "text": "$(bold)提示$()：箱子拥有全部木材变种！",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "Y": "#forge:chests/wooden[facing=north,type=single]"
+                }
+            }
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "板条箱",
+            "anchor": "crates",
+            "item": "tag:gtceu:crates",
+            "text": "在存储方面，格雷科技提供了$(item)板条箱$()，可以容纳所有尺寸的物品，等级越高容量越大，从 27 格到 144 格不等。$(br)板条箱支持$(thing)物品过滤器$()、$(thing)腐烂物销毁覆盖板$()等物流覆盖板。$(br)你甚至可以用$(item)胶带$()封装箱子，拆掉时保留其内容物，方便你大量运输物品。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "enable_visualize": false,
+            "text": "$(bold)提示$()：木质板条箱相当便宜，很适合存放原木。",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#gtceu:crates"
+                }
+            }
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "物品保险库",
+            "anchor": "vaults",
+            "item": "create:item_vault,create_connected:item_silo",
+            "text": "机械动力的$(item)物品保险库$()是整合大量物品的绝佳方式，也可以给$(thing)运动中的装置$()增加存储。$(br)多个保险库可以拼成大型 3D 结构，每个保险库扩展 20 格存储空间。你无法手动放入或取出保险库中的物品，需要使用漏斗之类的物品物流设备。"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "$(bold)提示$()：$(item)集装箱$()是保险库的多彩替代品。",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "   0   ",
+                            "   X   "
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "create:item_vault[axis=z,large=false]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            " XXXXX ",
+                            " XXXXX "
+                        ],
+                        [
+                            "       ",
+                            " XX0XX ",
+                            " XXXXX "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "create:item_vault[axis=z,large=false]",
+                        "X": "create:item_vault[axis=z,large=false]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "XXXXXXX",
+                            "XXXXXXX",
+                            "XXXXXXX"
+                        ],
+                        [
+                            "XXXXXXX",
+                            "XXXXXXX",
+                            "XXXXXXX"
+                        ],
+                        [
+                            "XXXXXXX",
+                            "XXX0XXX",
+                            "XXXXXXX"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "create:item_vault[axis=z,large=false]",
+                        "X": "create:item_vault[axis=z,large=true]"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "超级箱",
+            "anchor": "super_chests",
+            "item": "tag:gtceu:super_chests",
+            "text": "超级箱和量子箱是存放海量单一物品的最佳方式。箱子可容纳的物品数量随等级提升，从 10,000 到 1,024,000,000。超级箱还内置了物品销毁、锁定和自动抽取选项。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "enable_visualize": false,
+            "text": "$(bold)提示$()：超级箱可以在装有物品的情况下直接搬走。",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#gtceu:super_chests"
+                }
+            }
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "ME 存储",
+            "anchor": "ae2",
+            "item": "ae2:drive",
+            "text": "AE2 的$(item)ME驱动器$()和$(item)存储元件$()能让你把存储数字化，构成能力强大且高度密集的物流与合成网络。接上$(item)ME控制器$()和$(thing)终端$()即可查看其中的物品。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "enable_visualize": false,
+            "text": "$(bold)提示$()：更高等级的存储元件能容纳更多物品种类，以及更多「字节」。",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "ae2:drive"
+                }
+            }
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "大酒桶",
+            "anchor": "kegs",
+            "item": "tag:firmalife:big_barrels",
+            "text": "$(item)大酒桶$()拥有独一无二的存储能力，可以同时存放大量物品$(italics)和$()流体。$(br)大酒桶能装任何大桶能装的流体，最多 80,000 mB，还能容纳最多 36 组$(l:game_mechanics/size_and_weight)大型$()物品。$(br2)但大酒桶不能像大桶那样处理配方或陈酿美酒。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "enable_visualize": false,
+            "text": "$(bold)提示$()：可以从大酒桶的任意一个方块自动输入和抽取。",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "67",
+                        "45"
+                    ],
+                    [
+                        "23",
+                        "01"
+                    ]
+                ],
+                "mapping": {
+                    "0": "firmalife:wood/big_barrel/oak[facing=south,barrel_part=0]",
+                    "1": "firmalife:wood/big_barrel/oak[facing=south,barrel_part=1]",
+                    "2": "firmalife:wood/big_barrel/oak[facing=south,barrel_part=2]",
+                    "3": "firmalife:wood/big_barrel/oak[facing=south,barrel_part=3]",
+                    "4": "firmalife:wood/big_barrel/oak[facing=south,barrel_part=4]",
+                    "5": "firmalife:wood/big_barrel/oak[facing=south,barrel_part=5]",
+                    "6": "firmalife:wood/big_barrel/oak[facing=south,barrel_part=6]",
+                    "7": "firmalife:wood/big_barrel/oak[facing=south,barrel_part=7]"
+                }
+            }
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "大桶",
+            "anchor": "barrels",
+            "item": "tag:tfc:barrels",
+            "text": "$(l:craftsmanship/barrels)大桶$()不只对配方有用。它们是储存大量流体非常廉价的方式，每桶最多 10,000 mB。$(br)侧放时，大桶可以从龙头把流体滴进下方的容器，从而以稳定的速率自动输出。$(br)你还可以把装满的大桶背在背上运输其中的东西。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "enable_visualize": false,
+            "text": "$(bold)提示$()：大桶敞口朝天空放置时可以收集雨水。",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#tfc:barrels[facing=up]"
+                }
+            }
+        },
+        {
+            "type": "patchouli:text",
+            "title": "桶",
+            "anchor": "drums",
+            "item": "tag:gtceu:drums",
+            "text": "$(item)流体桶$()非常适合存储和携带流体。它们能存放大量单一类型的流体，等级越高容量越大，从 32,000 到 1,024,000 mB 不等。$(br2)流体桶被拆除时会保留其中的流体，是转移流体的理想选择。$(br2)用 $(item)$(k:key.use)$() 配合$(thing)软锤$()或$(thing)螺丝刀$()，即可让桶从底面自动排出流体。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "enable_visualize": false,
+            "text": "$(bold)提示$()：流体桶的各个面都可以放置流体物流覆盖板。",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#gtceu:drums"
+                }
+            }
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "流体储罐",
+            "anchor": "fluid_tanks",
+            "item": "create:fluid_tank,create_connected:fluid_vessel,fluidlogistics:multi_fluid_tank",
+            "text": "$(item)流体储罐$()可以看作$(l:logistics/storage#vaults)物品保险库$()的流体版本。单个流体储罐可容纳 32,000 mB，还可以拼成结构以扩展容量。$(br2)$(item)多流体储罐$()可以同时容纳多种流体，但无法手动与之交互。"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "$(bold)提示$()：对流体储罐 $(item)$(k:key.use)$() 一把$(thing)扳手$()即可隐藏/显示它的观察窗。",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            " 0 ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "create:fluid_tank[bottom=true,shape=window,top=true]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "54 ",
+                            "67 "
+                        ],
+                        [
+                            "   ",
+                            "10 ",
+                            "23 "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "create:fluid_tank[bottom=true,shape=window_sw,top=false]",
+                        "1": "create:fluid_tank[bottom=true,shape=window_nw,top=false]",
+                        "2": "create:fluid_tank[bottom=true,shape=window_ne,top=false]",
+                        "3": "create:fluid_tank[bottom=true,shape=window_se,top=false]",
+                        "4": "create:fluid_tank[bottom=false,shape=window_sw,top=true]",
+                        "5": "create:fluid_tank[bottom=false,shape=window_nw,top=true]",
+                        "6": "create:fluid_tank[bottom=false,shape=window_ne,top=true]",
+                        "7": "create:fluid_tank[bottom=false,shape=window_se,top=true]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "TYT",
+                            "YTY",
+                            "TYT"
+                        ],
+                        [
+                            "PWP",
+                            "WPW",
+                            "PWP"
+                        ],
+                        [
+                            "PWP",
+                            "WPW",
+                            "PWP"
+                        ],
+                        [
+                            "BXB",
+                            "X0X",
+                            "BXB"
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "create:fluid_tank[bottom=true,shape=plain,top=false]",
+                        "B": "create:fluid_tank[bottom=true,shape=plain,top=false]",
+                        "X": "create:fluid_tank[bottom=true,shape=window,top=false]",
+                        "W": "create:fluid_tank[bottom=false,shape=window,top=false]",
+                        "P": "create:fluid_tank[bottom=false,shape=plain,top=false]",
+                        "T": "create:fluid_tank[bottom=false,shape=plain,top=true]",
+                        "Y": "create:fluid_tank[bottom=false,shape=window,top=true]"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "多方块储罐",
+            "anchor": "multiblock_tanks",
+            "item": "gtceu:wooden_multiblock_tank,gtceu:bronze_multiblock_tank,gtceu:steel_multiblock_tank",
+            "text": "$(item)多方块储罐$()是专门用于存储大量流体的结构。每种类型最多可以有两个阀门，容量随等级提升。$(li)$(bold)木制储罐$()：容量 1,000,000 mB$(li)$(bold)青铜储罐$()：容量 4,000,000 mB$(li)$(bold)钢制储罐$()：容量 8,000,000 mB"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "$(bold)提示$()：多方块储罐会从底面的阀门自动输出流体。",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "CCC",
+                            "CVC",
+                            "CCC"
+                        ],
+                        [
+                            "CCC",
+                            "T C",
+                            "CCC"
+                        ],
+                        [
+                            "CCC",
+                            "C0C",
+                            "CCC"
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "gtceu:wooden_tank_valve[facing=down]",
+                        "C": "gtceu:wood_wall",
+                        "T": "gtceu:wooden_multiblock_tank[facing=north,upwards_facing=north]",
+                        "V": "gtceu:wooden_tank_valve[facing=up]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "CCC",
+                            "CVC",
+                            "CCC"
+                        ],
+                        [
+                            "CCC",
+                            "T C",
+                            "CCC"
+                        ],
+                        [
+                            "CCC",
+                            "C0C",
+                            "CCC"
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "gtceu:bronze_tank_valve[facing=down]",
+                        "C": "gtceu:steam_machine_casing",
+                        "T": "gtceu:bronze_multiblock_tank[facing=north,upwards_facing=north]",
+                        "V": "gtceu:bronze_tank_valve[facing=up]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "CCC",
+                            "CVC",
+                            "CCC"
+                        ],
+                        [
+                            "CCC",
+                            "T C",
+                            "CCC"
+                        ],
+                        [
+                            "CCC",
+                            "C0C",
+                            "CCC"
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "gtceu:steel_tank_valve[facing=down]",
+                        "C": "gtceu:solid_machine_casing",
+                        "T": "gtceu:steel_multiblock_tank[facing=north,upwards_facing=north]",
+                        "V": "gtceu:steel_tank_valve[facing=up]"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "超级缸",
+            "anchor": "super_tanks",
+            "item": "tag:gtceu:super_tanks",
+            "text": "超级缸和量子缸的用法与$(l:logistics/storage#super_chests)超级箱$()类似。它们能存储单一种类的流体，数量极其惊人——从1,000,000到1,024,000,000 mb不等，随等级逐级提升。$(br)超级缸支持自动输出、销毁与锁定选项。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "enable_visualize": false,
+            "text": "$(bold)提示$()：超级缸里装着流体也能直接挖走。",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#gtceu:super_tanks"
+                }
+            }
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸阅读",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/barrels",
+                "tfg:logistics/personal_storage",
+                "tfg:game_mechanics/size_and_weight",
+                "tfg:logistics/create",
+                "tfg:logistics/trains"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "extra_recipe_mappings": {
+        "tag:forge:chests": 2,
+        "tag:gtceu:crates": 4,
+        "create:item_vault": 6,
+        "tag:createdeco:shipping_containers": 6,
+        "tag:gtceu:super_chests": 8,
+        "tag:firmalife:big_barrels": 12,
+        "tag:gtceu:drums": 16,
+        "create:fluid_tank": 18,
+        "fluidlogistics:multi_fluid_tank": 18,
+        "gtceu:wooden_multiblock_tank": 20,
+        "gtceu:wooden_tank_valve": 20,
+        "gtceu:bronze_multiblock_tank": 20,
+        "gtceu:bronze_tank_valve": 20,
+        "gtceu:steel_multiblock_tank": 20,
+        "gtceu:steel_tank_valve": 20,
+        "tag:gtceu:super_tanks": 22
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "name": "鑿子",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:metal/chisel/wrought_iron",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "鑿子是用來將其他方塊製作成裝飾形式(包括半磚和階梯)的工具。要開始使用，你需要一把$(thing)鑿子$()和任何一種$(thing)錘子$()。鑿子必須在模具中澆鑄，或在$(l:craftsmanship/anvils)鐵砧$()上鍛造。要開始鑿刻，將鑿子拿在主手、錘子拿在副手，然後對準世界中的方塊。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "如果那個方塊可以鑿刻，就會依照你選擇的$(thing)模式$()，以$(c)紅色輪廓$()標示要鑿刻的方塊。$(br2)鑿子有三種模式，可以按 $(item)$(k:tfc.key.cycle_chisel_mode)$() 切換：$(thing)半磚$()、$(thing)階梯$()和$(thing)平滑$()。快捷欄旁邊會顯示目前的鑿子模式。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "按 $(item)$(k:key.use)$() 就能將方塊加工成紅色輪廓標示的形狀。如果鑿的是半磚，被鑿掉的那一半會掉落，可以撿起來。改變角色的朝向和滑鼠的位置，就能改變鑿成方塊的朝向。簡單來說，鑿成的方塊朝向會和你自己用那個朝向放置時相同。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/chisel_block.png",
+                "tfc:textures/gui/book/tutorial/chisel_stair.png",
+                "tfc:textures/gui/book/tutorial/chisel_slab.png"
+            ],
+            "text": "$(bold)教學幻燈片：$()可用於$(thing)原始石灰岩$()方塊的三種鑿子模式。",
+            "border": true
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/rock/marble_smooth",
+            "text": "鑿子也可以用在一些合成配方中，方便大量製作。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "小心！在礦坑中鑿刻並不安全。每次鑿刻都有機率引發$(l:game_mechanics/mining#supports)坍塌$()。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸閱讀",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_world/geology",
+                "tfg:craftsmanship/quern",
+                "tfg:craftsmanship/anvils",
+                "tfg:craftsmanship/pottery"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 16,
+    "extra_recipe_mappings": {
+        "tag:tfc:chisels": 0
+    }
+}

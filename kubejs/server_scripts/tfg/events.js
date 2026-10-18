@@ -116,3 +116,20 @@ BlockEvents.broken("tfg:spider_sac", event => {
 		spider.spawn();
 	}
 })
+
+BlockEvents.rightClicked(event => {
+	const { server, item, player, block } = event
+	if (!item.hasTag('forge:tools/hammers')) return;
+	if (block.id === 'beneath:crackrack') {
+		player.swing()
+		const dim = block.level.name.getString();
+		server.runCommandSilent(`execute in ${dim} run fill ${block.x} ${block.y} ${block.z} ${block.x} ${block.y} ${block.z} air`)
+		server.runCommandSilent(`execute in ${dim} run setblock ${block.x} ${block.y} ${block.z} tfg:crackrack_anvil`);
+	}
+	else if (block.id === 'minecraft:blackstone') {
+		player.swing()
+		const dim = block.level.name.getString();
+		server.runCommandSilent(`execute in ${dim} run fill ${block.x} ${block.y} ${block.z} ${block.x} ${block.y} ${block.z} air`)
+		server.runCommandSilent(`execute in ${dim} run setblock ${block.x} ${block.y} ${block.z} tfg:blackstone_anvil`);
+	}
+})

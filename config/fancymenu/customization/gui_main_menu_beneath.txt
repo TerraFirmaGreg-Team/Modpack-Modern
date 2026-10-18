@@ -325,7 +325,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = Official Server
+  label = {"placeholder":"local","values":{"key":"tfg.gui.menu.official_server"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = f72d4cfc-e22d-4fef-9bd2-68a7cd175460-1738509235086
   [loading_requirement_container_meta:f72d4cfc-e22d-4fef-9bd2-68a7cd175460-1738509235086] = [groups:][instances:]

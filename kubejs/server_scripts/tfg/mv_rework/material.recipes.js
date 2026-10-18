@@ -132,13 +132,15 @@ function registerTFGMVMaterialRecipes(event) {
 		{ id: "wire_cutter_head", amount: 2 },
 		{ id: "file_head", amount: 1 },
 		{ id: "sword_head", amount: 2 },
-		{ id: "butchery_knife_head", amount: 1 }
+		{ id: "butchery_knife_head", amount: 1 },
+		{ id: "drill_head", amount: 9 },
+		{ id: "chainsaw_head", amount: 2 },
 	]
 
 	diamondTippedToolHeads.forEach((element, index) => {
 		event.recipes.gtceu.laser_engraver(`tfg:diamond_tipped_mo_50_re_${element.id}_laser_engraving`)
 			.itemInputs(`${element.amount}x #forge:ingots/diamond_tipped_mo_50_re`)
-			.itemOutputs(`tfg:diamond_tipped_mo_50_re_${element.id}`)
+			.itemOutputs(Item.of(`tfg:diamond_tipped_mo_50_re_${element.id}`, 1, '{"tfc:forging_bonus":4}').strongNBT())
 			.notConsumable('gtceu:glass_lens')
 			.duration(15 * 20 * element.amount)
 			.circuit(index + 1)

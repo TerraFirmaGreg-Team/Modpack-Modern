@@ -1,0 +1,7 @@
+{
+    "parent": "tfc:block/anvil",
+    "textures": {
+        "top": "tfg:block/metal/anvil/vanadium_steel_top",
+        "side": "tfg:block/metal/anvil/vanadium_steel_side"
+    }
+}

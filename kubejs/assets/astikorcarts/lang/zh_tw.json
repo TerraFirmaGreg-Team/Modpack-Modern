@@ -1,3 +1,10 @@
 {
-	"key.astikorcarts.desc": "把動物栓上車"
+	"entity.astikorcarts.postilion": "馭手",
+	"itemGroup.astikorcarts": "AstikorCarts",
+	"key.astikorcarts.desc": "動作鍵",
+	"key.categories.astikorcarts": "AstikorCarts",
+	"stat.astikorcarts.cart_one_cm": "乘坐推車移動距離",
+	"subtitles.astikorcarts.cart.attached": "推車：連接",
+	"subtitles.astikorcarts.cart.detached": "推車：脫離",
+	"subtitles.astikorcarts.cart.placed": "推車：放置"
 }

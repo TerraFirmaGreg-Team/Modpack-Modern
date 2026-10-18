@@ -1,0 +1,356 @@
+{
+	"name": "星际轨道炮",
+	"category": "tfg:logistics",
+	"icon": "tfg:railgun_ammo_shell",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"text": "$(li)$(bold)$(l:logistics/railgun#sender)轨道炮发射端$()$(li2)$(l:logistics/railgun#ammo)轨道炮弹药$()$(li2)$(l:logistics/railgun#input_bus)轨道炮输入总线$()$(li)$(bold)$(l:logistics/railgun#monitor)物流监控器$()$(li)$(bold)控制规则$()$(li2)$(l:logistics/railgun#redstone)红石$()$(li2)$(l:logistics/railgun#supply_exact)精确供应$()$(li2)$(l:logistics/railgun#delay)延迟$()$(li)$(bold)$(l:logistics/railgun#receiver)轨道炮接收端$()$(li2)$(l:logistics/railgun#output_bus)接收端输出总线$()$(li)$(bold)$(l:logistics/railgun#tips)提示$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "在 $(tfg) 中，跨维度或远距离运输物品需要你搭建特殊的$(thing)多方块结构$()。$(br2)这套系统$(thing)强大而灵活$()，提供多项设置，让你能随心定制物流方案，完全贴合自己的需求。$(br2)怎么，你以为靠 AE2 量子隧道就能一劳永逸了？"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "这套系统堪称完美，能把你$(thing)被动生产$()的资源精准送往其他星球上需要它们的地方！它还附带一套强大的$(thing)配置系统$()，让你足不出一处就能掌控全局。$(br2)要搭建它，你需要三个组件：$(br2)$(bold)星际轨道炮$()$(br)这是$(thing)发射端$()，负责把物品发射着跨越太空。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(bold)星际接收器$()$(br)这是$(thing)接收端$()，负责接住并存储送来的物品。$(br2)$(bold)星际物流监控器$()$(br)它充当$(thing)中央控制$()，你在这里定义整套运输系统的规则与行为。$(br2)有了这些机器，你就能高效地自动化大规模运输——甚至在星球之间！"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:interplanetary_item_launcher",
+			"title": "轨道炮发射端",
+			"anchor": "sender",
+			"text": "$(item)星际轨道炮$()就是你的$(thing)发射端多方块结构$()。$(br2)它负责把物品发射向远方的$(thing)接收端$()——但它自己无法接收任何东西。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "要正常运作，它需要几个组件：$(li)$(bold)能源仓：$()提供发射物品所需的能量。没有能量，什么都动不了。$(li)$(bold)轨道炮弹药装填器：$()必须装满弹药。每次发射消耗一个单位。$(li)$(bold)输入总线：$()装得下就可以随便加，用来放入你想发送的物品。"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": " ",
+			"enable_visualize": "true",
+			"text": "使用$(l:craftsmanship/building_tools#terminals)终端$()即可轻松搭起这个多方块结构。",
+			"multiblock": {
+				"pattern": [
+					[
+						"     ",
+						" C C ",
+						" R R ",
+						" C C ",
+						"     "
+					],
+					[
+						"     ",
+						" C C ",
+						" R R ",
+						" C C ",
+						"     "
+					],
+					[
+						"     ",
+						" CHC ",
+						" R R ",
+						" CHC ",
+						"     "
+					],
+					[
+						"     ",
+						" L L ",
+						" R R ",
+						" L L ",
+						"     "
+					],
+					[
+						"     ",
+						" L L ",
+						" R R ",
+						" L L ",
+						"     "
+					],
+					[
+						"     ",
+						" L L ",
+						" R R ",
+						" L L ",
+						"     "
+					],
+					[
+						"     ",
+						" CHC ",
+						" R R ",
+						" CHC ",
+						"     "
+					],
+					[
+						"     ",
+						" L L ",
+						" R R ",
+						" L L ",
+						"     "
+					],
+					[
+						"     ",
+						" L L ",
+						" R R ",
+						" L L ",
+						"     "
+					],
+					[
+						"     ",
+						" L L ",
+						" R R ",
+						" L L ",
+						"     "
+					],
+					[
+						"FFFFF",
+						"FLCLF",
+						"FR RF",
+						"FLCLF",
+						"FFFFF"
+					],
+					[
+						"F   F",
+						" LCL ",
+						" R R ",
+						" LCL ",
+						"F   F"
+					],
+					[
+						"F212F",
+						"5SCS3",
+						"5CCC3",
+						"5SCS3",
+						"F4y4F"
+					],
+					[
+						"F   F",
+						" SSS ",
+						" S0S ",
+						" ESE ",
+						"F   F"
+					]
+				],
+				"mapping": {
+					"0": "gtceu:clean_machine_casing",
+					"S": "gtceu:clean_machine_casing",
+					"F": "gtceu:aluminium_frame",
+					"H": "gtceu:hsla_steel_frame",
+					"C": "gtceu:nonconducting_casing",
+					"L": "tfg:superconductor_coil_large",
+					"M": "tfg:superconductor_coil_small",
+					"R": "tfg:electromagnetic_accelerator",
+					"y": "tfg:interplanetary_item_launcher[facing=east]",
+					"E": "gtceu:hv_energy_input_hatch[facing=east]",
+					"1": "tfg:railgun_ammo_loader[facing=west]",
+					"2": "tfg:hv_railgun_item_loader_in[facing=west]",
+					"3": "tfg:hv_railgun_item_loader_in[facing=south]",
+					"4": "tfg:hv_railgun_item_loader_in[facing=east]",
+					"5": "tfg:hv_railgun_item_loader_in[facing=north]"
+				}
+			}
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shaped/interplanetary_item_launcher",
+			"title": " ",
+			"text": "$(bold)重要提示：$()这个多方块结构只能$(italic)发送$()物品。务必让你的$(item)星际轨道炮$()始终保持区块加载！"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:railgun_ammo_shell,tfg:railgun_ammo_loader",
+			"anchor": "ammo",
+			"title": "轨道炮弹药",
+			"text": "每门$(thing)轨道炮$()都需要一种特殊的$(item)弹药$()——可以把它想象成用来运输物品的包裹。每次发射恰好消耗$(thing)一个单位$()的弹药，能发送$(thing)三组物品$()。$(br2)要装填弹药，你的结构里需要有一台$(item)轨道炮弹药装填器$()。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "你可以手动放入弹药，也可以将这个过程自动化。$(br2)我们$(italic)强烈建议$()搭建一条被动生产线，让装填器持续保持满弹——这样才能保证物流链顺畅可靠。$(br2)你可以让每颗星球自己自动化生产弹药，也可以让一颗星球制造全部原料，再分发给其他星球。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:ulv_railgun_item_loader_in,tfg:lv_railgun_item_loader_in,tfg:mv_railgun_item_loader_in,tfg:hv_railgun_item_loader_in,tfg:ev_railgun_item_loader_in,tfg:iv_railgun_item_loader_in,tfg:luv_railgun_item_loader_in,tfg:zpm_railgun_item_loader_in,tfg:uv_railgun_item_loader_in,tfg:uhv_railgun_item_loader_in",
+			"anchor": "input_bus",
+			"title": "轨道炮输入总线",
+			"text": "$(thing)发射端$()的物流界面可以在$(l:logistics/railgun#monitor)星际物流监控器$()上打开，你会在其中看到 GregTech 中熟悉的$(item)编程电路$()。$(br2)这个电路编号就是设置路由规则的核心标识。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "你设置的编号会对轨道炮结构中所有配置了相同电路编号的输入总线应用特定规则。$(br2)这样你就能根据所用电路，精细调整哪些物品发往哪里、适用哪些规则。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(bold)配置方法：$()$(br)1. 打开任意一台$(item)轨道炮输入总线$()的界面$(br)2. 像在其他 GregTech 机器上一样选择你想要的编号。$(br2)这样你就能搭建强大的逻辑，例如：$(li)1 号电路 → 发往月球基地$(li)2 号电路 → 发往火星$(li)3 号电路 → 发往空间站"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "电路设置得当，你就能像真正的工业大亨一样自动化星际贸易！$(br2)$(bold)注意$()：带有 $(br)$(6)#tfg:cannot_launch_in_railgun$() 标签的物品一律无法发送。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:interplanetary_logistics_monitor",
+			"anchor": "monitor",
+			"title": "物流监控器",
+			"text": "$(item)星际物流监控器$()是你的物流指挥中心——星际运输真正的核心所在。$(br2)它只是$(thing)单个方块$()，$(thing)不耗能源$()，还会自动检测你搭建的每一台$(item)轨道炮发射端$()和$(item)接收端$()。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "它看起来简单，内里却藏着强大的工具。来了解一下基础操作：$(br2)打开监控器后，你会看到所有发射端和接收端的列表。你必须给每一台$(thing)命名$()。$(br2)要创建物流规则，点击右箭头选择一台发射端，然后按 $(item)+$() 添加新规则，最后从列表中选择目标接收端。"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "红石控制",
+			"anchor": "redstone",
+			"text": "$(item)红石规则$()很简单——但用好了威力惊人。$(br2)在$(item)发射端$()的规则界面中，启用该规则意味着$(thing)红石信号$()必须存在于$(thing)输入总线$(thing)上，它才会发送物品。$(br2)在$(item)接收端$()的规则界面中，你可以配置该规则，让$(thing)输出总线$()依据该方块上的红石信号来决定是否接收物品。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "是时候施展你的红石逻辑功力了！$(br2)无论是用 $(item)AE2 发信器$()、$(l:logistics/redstone_devices#threshold_switch)机械动力的红石装置$()，还是经典的$(l:logistics/redstone_devices#more_comparators)原版红石机制$()——这条规则都能让你像专家一样，让物流与工厂状态同步。"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "精确供应",
+			"anchor": "supply_exact",
+			"text": "$(item)物品规则$()的运作方式类似于 $(thing)GregTech 机械臂$() 设为$(thing)精确供应$()时的表现。$(br2)它只能在$(item)发射端$()的规则界面中配置。$(br2)该规则启用后，$(thing)轨道炮$(thing)只会发送$(italic)恰好匹配的数量$()，且要求这些物品当时就在 $(item)输入总线$() 中。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(bold)设置方法：$()$(li)从你的 $(emi) 界面把物品拖入过滤器$(li)用$(thing)左键和右键$()调整数量$(li)你还可以收藏物品，方便快速访问与配置$(br2)这条规则非常适合精确自动化——尤其适合批量合成或资源配额场景。"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "延迟",
+			"anchor": "delay",
+			"text": "$(item)延迟规则$()很简单，但对把控物品流动的时机很有用。$(br2)$(bold)发射端一侧：$()$(br)只有当$(item)输入总线$()在设定时长（以秒计）内没有收到任何新物品后，才会发送物品。$(br2)这能避免在输入不断变化时发送得过于频繁。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(bold)接收端一侧：$()$(br)该规则定义了一段延迟时间，过后$(item)输出总线$()才能接收下一批物品。$(br2)这有助于防止溢出，或控制向较慢系统插入物品的节奏。$(br2)这一模式很适合与需要喘息空间的机器同步运作，也能避免不必要的弹药浪费。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "receiver",
+			"item": "tfg:interplanetary_item_receiver",
+			"title": "轨道炮接收端",
+			"text": "顾名思义，$(item)星际接收器$()就是设计用来$(thing)接收物品$()的，接收由$(l:logistics/railgun#sender)轨道炮$()发射来的物品。$(br2)它是一个$(thing)小巧简单的多方块结构$()，无需能源也无需维护——搭好即可投入使用！"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "它的灵活性在于你能挂载的$(item)输出总线$()数量。加得越多，它能同时处理的物品就越多。$(br2)$(bold)搭建很简单：$()$(li)建好结构$(li)按需添加任意数量的输出总线并设置电路$(li)完成——随时可以接收！$(br2)无需燃料、无需维护——纯粹的物流力量。确保它正常保持区块加载，然后坐等物品如雨点般落下吧！"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": " ",
+			"enable_visualize": "true",
+			"text": "使用$(l:craftsmanship/building_tools#terminals)终端$()即可轻松搭起这个多方块结构。",
+			"multiblock": {
+				"pattern": [
+					[
+						"       ",
+						"  GGG  ",
+						" G   G ",
+						" G   G ",
+						" G   G ",
+						"  GGG  ",
+						"       "
+					],
+					[
+						"  CCC  ",
+						" CEFEC ",
+						"CF   FC",
+						"CE   EC",
+						"CF   FC",
+						" CEFEC ",
+						"  CCC  "
+					],
+					[
+						" B   B ",
+						"BB111BB",
+						" 4   2 ",
+						" 4   2 ",
+						" 4   2 ",
+						"BB3D3BB",
+						" B   B "
+					],
+					[
+						"BB   BB",
+						"B     B",
+						"       ",
+						"       ",
+						"       ",
+						"B     B",
+						"BB   BB"
+					],
+					[
+						"B     B",
+						"       ",
+						"       ",
+						"   0   ",
+						"       ",
+						"       ",
+						"B     B"
+					]
+				],
+				"mapping": {
+					"B": "tfg:machine_casing_aluminium_plated_steel",
+					"C": "gtceu:aluminium_frame",
+					"D": "tfg:interplanetary_item_receiver[facing=east]",
+					"E": "gtceu:solid_machine_casing",
+					"F": "gtceu:nonconducting_casing",
+					"G": "gtceu:yellow_stripes_block_a",
+					"1": "tfg:mv_railgun_item_loader_out[facing=west]",
+					"2": "tfg:mv_railgun_item_loader_out[facing=south]",
+					"3": "tfg:mv_railgun_item_loader_out[facing=east]",
+					"4": "tfg:mv_railgun_item_loader_out[facing=north]"
+				}
+			}
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "output_bus",
+			"title": "轨道炮输出总线",
+			"item": "tfg:ulv_railgun_item_loader_out,tfg:lv_railgun_item_loader_out,tfg:mv_railgun_item_loader_out,tfg:hv_railgun_item_loader_out,tfg:ev_railgun_item_loader_out,tfg:iv_railgun_item_loader_out,tfg:luv_railgun_item_loader_out,tfg:zpm_railgun_item_loader_out,tfg:uv_railgun_item_loader_out,tfg:uhv_railgun_item_loader_out",
+			"text": "正如你可以给$(l:logistics/railgun#input_bus)轨道炮输入总线$()分配$(thing)电路编号$()一样，你也可以给$(item)输出总线$()分配编号——它们就装在你的$(thing)接收端$()上。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "这一功能主要有两个用途：$(br2)1. $(bold)引导物品流向$() - 你可以控制哪个$(item)输出总线$()接收物品。只需给输出总线分配一个电路编号，然后在发射端规则里通过$(l:logistics/railgun#monitor)物流监控器$()选中该编号即可。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "2. $(bold)条件规则$() - 你还可以设置规则，在不满足电路规则时$(thing)停止发送物品$()。$(br2)这不是在发射端标签页里设置的，而是在监控器中打开$(thing)接收端$()标签页来设置。$(br2)你可以为每个电路编号指定一条仅作用于使用该编号的输出总线的规则。"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "轨道炮提示",
+			"anchor": "tips",
+			"text": "$(li)轨道炮也可以在同一维度内使用。这是熟悉它运作原理的好方法，在超远距离运输物品时同样好用。$(li)$(thing)单元$()是运输流体的唯一途径。你可以用$(item)罐作机$()自动灌装和清空单元。$(li)除非你使用了$(l:logistics/railgun#redstone)红石控制$()，否则请确保所有$(l:logistics/railgun#input_bus)输入总线$()和$(l:logistics/railgun#output_bus)输出总线$()都处于$(thing)启用$()状态。"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "延伸阅读",
+			"anchor": "relations",
+			"entries": [
+				"tfg:the_moon/the_moon",
+				"tfg:logistics/redstone_devices",
+				"tfg:logistics/storage",
+				"tfg:logistics/create",
+				"tfg:logistics/trains"
+			]
+		}
+	],
+	"extra_recipe_mappings": {
+		"tfg:interplanetary_item_launcher": 4,
+		"tfg:railgun_ammo_shell": 8,
+		"tfg:railgun_ammo_loader": 8,
+		"tfg:interplanetary_logistics_monitor": 14,
+		"tfg:interplanetary_item_receiver": 22
+	}
+}

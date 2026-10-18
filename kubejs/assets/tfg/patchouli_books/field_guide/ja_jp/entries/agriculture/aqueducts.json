@@ -1,0 +1,118 @@
+{
+    "name": "用水路",
+    "category": "tfg:agriculture",
+    "icon": "tfc:rock/aqueduct/shale",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)用水路$()は、$(thing)液体$()を移動させるために使用されるツールです。$(item)木製のバケツ$()では水源を運ぶことができませんが、$(thing)用水路$()を使えば液体を水平方向に任意の距離だけ目的地まで運ぶことができます。これらは、$(thing)淡水$()、$(thing)海水$()、$(thing)温泉水$()を含むあらゆる種類の水や、$(thing)溶岩$()の輸送に使用できます。$(br)普通の水が入った用水路は、$(l:agriculture/growing_crops#hydration)農地に水分を供給する$()ことができます。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)用水路$()を使用するには、単純に水平に接続し、一方の端を$(thing)水源$()または$(thing)落下$()水の近くに配置する必要があります。しばらく待つと、水が用水路網を通って流れ始め、もう一方の端から出ます。$(br2)$(bold)注意：$() 用水路が取り外されると、水の流れが止まります。$(thing)用水路$()は無限水源にはならないことに注意してください。水源ブロックまたは用水路が除去されると水は消えます。"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "     ",
+                            "     ",
+                            "     ",
+                            "  0  ",
+                            "     ",
+                            "     ",
+                            "     "
+                        ],
+                        [
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     "
+                        ],
+                        [
+                            "  W  ",
+                            "  B  ",
+                            "  B  ",
+                            "CADAE",
+                            "B   B",
+                            "B   B",
+                            "W   W"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "tfc:rock/aqueduct/marble[south=true,north=true,fluid=water]",
+                        "B": "tfc:rock/aqueduct/marble[east=true,west=true,fluid=water]",
+                        "C": "tfc:rock/aqueduct/marble[east=true,south=true,fluid=water]",
+                        "D": "tfc:rock/aqueduct/marble[west=true,north=true,south=true,fluid=water]",
+                        "E": "tfc:rock/aqueduct/marble[east=true,north=true,fluid=water]",
+                        "W": "minecraft:water"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "     ",
+                            "     ",
+                            "     ",
+                            "  0  ",
+                            "     ",
+                            "     ",
+                            "     "
+                        ],
+                        [
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     "
+                        ],
+                        [
+                            "  W  ",
+                            "  B  ",
+                            "  B  ",
+                            "CADAE",
+                            "B   B",
+                            "B   B",
+                            "W   W"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "tfc:rock/aqueduct/marble[south=true,north=true,fluid=lava]",
+                        "B": "tfc:rock/aqueduct/marble[east=true,west=true,fluid=lava]",
+                        "C": "tfc:rock/aqueduct/marble[east=true,south=true,fluid=lava]",
+                        "D": "tfc:rock/aqueduct/marble[west=true,north=true,south=true,fluid=lava]",
+                        "E": "tfc:rock/aqueduct/marble[east=true,north=true,fluid=lava]",
+                        "W": "minecraft:lava"
+                    }
+                }
+            ],
+            "name": "用水路網",
+            "text": "水や溶岩を運搬する用水路網の例",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "さらに読む",
+            "anchor": "relations",
+            "entries": [
+                "tfg:agriculture/growing_crops",
+                "tfg:craftsmanship/barrels",
+                "tfg:craftsmanship/chisel",
+                "tfg:craftsmanship/building_materials",
+                "tfg:the_world/geology"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 12,
+    "extra_recipe_mappings": {
+        "tag:tfc:rock/aqueducts": 0
+    }
+}

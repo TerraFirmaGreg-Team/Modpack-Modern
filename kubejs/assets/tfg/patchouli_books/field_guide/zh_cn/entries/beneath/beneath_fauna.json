@@ -1,0 +1,225 @@
+{
+	"name": "幽冥之地生物",
+	"category": "tfg:beneath",
+	"icon": "tfc:textures/item/food/pork.png",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"text": "深渊之下也有生命！幽冥之地中有相当多的生物，有些友善，有些敌对。$(br2)本条目列出了你所能找到的比较有趣的生物。$(br)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(bold)被动型$()$(li2)$(l:beneath/beneath_fauna#axolotl)美西螈$()$(li2)$(l:beneath/beneath_fauna#frog)青蛙$()$(li2)$(l:beneath/beneath_fauna#mammutilation)残缺猛犸$()$(li2)$(l:beneath/beneath_fauna#red_elk)红麋鹿$()$(li2)$(l:beneath/beneath_fauna#zombie_horse)僵尸马$()$(li)$(bold)$(l:agriculture/jellies)黏液灵$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)冰$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)植物$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)发光浆果$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)温泉水$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)熔岩$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)黑云母$()$(li2)$(l:beneath/beneath_fauna#latex_jellie)乳胶$()$(br)$(o)（接下页……）$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(bold)敌对型$()$(li2)$(l:beneath/beneath_fauna#crocodile)鳄鱼$()$(li2)$(l:beneath/beneath_fauna#piglin)猪灵$()$(li2)$(l:beneath/beneath_fauna#phantom)幻翼$()$(li2)$(l:beneath/beneath_fauna#kaolin_klayze)高岭黏土灵$()$(li2)$(l:beneath/beneath_fauna#graphite_glayze)石墨黏土灵$()$(li2)$(l:beneath/beneath_fauna#cliff_hanger)崖悬猎者$()$(li2)$(l:beneath/beneath_fauna#leaf_hanger)叶悬猎者$()$(li2)$(l:beneath/beneath_fauna#endermen)末影人$()$(li2)$(l:beneath/beneath_fauna#spectre)幻灵$()$(li2)$(l:beneath/beneath_fauna#wicked)邪火法师$()$(li2)$(l:beneath/beneath_fauna#ghoul)食尸鬼$()$(li2)$(l:beneath/beneath_fauna#bewereager)渴血狼人$()"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "minecraft:axolotl",
+			"scale": 0.5,
+			"name": "美西螈",
+			"anchor": "axolotl",
+			"text": "$(thing)美西螈$()可以在顶层和中层找到，通常在水池里游来游去。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:frog",
+			"scale": 1,
+			"name": "青蛙",
+			"anchor": "frog",
+			"text": "$(thing)青蛙$()可以在顶层和中层找到。它们能被驯服，也能吃。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:mammutilation",
+			"scale": 0.5,
+			"name": "残缺猛犸",
+			"anchor": "mammutilation",
+			"text": "$(thing)残缺猛犸$()是化为亡灵的猛犸象。给它们一个解脱吧，能换来一些$(item)毛皮$()。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "beneath:red_elk",
+			"scale": 0.7,
+			"name": "红麋鹿",
+			"anchor": "red_elk",
+			"text": "$(thing)红麋鹿$()出没于临近底层的区域，通常在熔岩里游动。击杀它们可以获得$(item)耐火皮革$()。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "minecraft:zombie_horse",
+			"scale": 0.7,
+			"name": "僵尸马",
+			"anchor": "zombie_horse",
+			"text": "$(thing)僵尸马$()无法驯服也无法骑乘，但可以用来拉动$(item)畜力曲柄$()。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:ice",
+			"scale": 0.6,
+			"name": "冰黏液灵",
+			"anchor": "ice_jellie",
+			"text": "$(thing)冰$()$(l:agriculture/jellies)黏液灵$()可以在$(thing)盐窟$()生物群系中找到。它们会给附近的玩家降温。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:plant",
+			"scale": 0.6,
+			"name": "植物黏液灵",
+			"anchor": "plant_jellie",
+			"text": "$(thing)植物$()$(l:agriculture/jellies)黏液灵$()可以在$(thing)闷热沼泽$()和$(thing)荆棘树林$()生物群系中找到。它们的黏液球可以用作$(thing)绿色$()堆肥原料。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:glowberry",
+			"scale": 0.6,
+			"name": "发光浆果黏液灵",
+			"anchor": "glowberry_jellie",
+			"text": "$(thing)发光浆果$()$(l:agriculture/jellies)黏液灵$()可以在$(thing)繁茂空谷$()生物群系中找到。它们的黏液球可以煮成$(item)糖$()。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:spring",
+			"scale": 0.6,
+			"name": "温泉黏液灵",
+			"anchor": "spring_jellie",
+			"text": "$(thing)温泉$()$(l:agriculture/jellies)黏液灵$()可以在$(thing)地热泉$()生物群系中找到。它们的黏液球是$(item)温泉水$()的可再生来源。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:biotite",
+			"scale": 0.6,
+			"name": "黑云母黏液灵",
+			"anchor": "biotite_jellie",
+			"text": "$(thing)黑云母$()$(l:agriculture/jellies)黏液灵$()可以在底层找到。它们的黏液球是$(item)钾$()、$(item)镁$()和$(item)氟$()的可再生来源。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:lava",
+			"scale": 0.6,
+			"name": "熔岩黏液灵",
+			"anchor": "lava_jellie",
+			"text": "$(thing)熔岩$()$(l:agriculture/jellies)黏液灵$()可以在底层找到。它们会给附近的玩家供暖，如果你住在寒冷的地方，这也许能派上用场。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:latex",
+			"scale": 0.6,
+			"name": "乳胶黏液灵",
+			"anchor": "latex_jellie",
+			"text": "$(thing)乳胶$()$(l:agriculture/jellies)黏液灵$()只能由$(thing)植物黏液灵$()和$(thing)熔岩黏液灵$()杂交而来。它们的黏液球是$(item)乳胶$()的来源。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "minecraft:piglin",
+			"scale": 0.9,
+			"name": "猪灵",
+			"anchor": "piglin",
+			"text": "在幽冥之地的几乎每个生物群系都能找到猪灵。可以像原版一样$(l:beneath/beneath_mechanics#piglins)和它们交易$()。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:crocodile",
+			"scale": 0.5,
+			"name": "鳄鱼",
+			"anchor": "crocodile",
+			"text": "$(thing)鳄鱼$()可以在顶层和中层找到，正埋伏着伺机偷袭！"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "minecraft:phantom",
+			"scale": 0.4,
+			"name": "幻翼",
+			"anchor": "phantom",
+			"text": "$(thing)幻翼$()会自然生成于中层和底层，你睡多久都拦不住它们。它们可以被制成$(l:beneath/beneath_mechanics#clothes)服装$()。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "primitive_creatures:tfc",
+			"scale": 0.8,
+			"name": "高岭黏土灵",
+			"anchor": "kaolin_klayze",
+			"text": "$(thing)高岭黏土灵$()可以在$(thing)繁茂空谷$()生物群系中找到，它们守卫着$(item)高岭土$()！"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "primitive_creatures:golem_2",
+			"scale": 1,
+			"name": "石墨黏土灵",
+			"anchor": "graphite_glayze",
+			"text": "$(thing)石墨黏土灵$()可以在底层找到。小心别被它们撞进熔岩里！"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:cliff_hanger",
+			"scale": 0.7,
+			"name": "崖悬猎者",
+			"anchor": "cliff_hanger",
+			"text": "$(thing)崖悬猎者$()悬挂在各种天花板上，会钩住从下方经过的玩家。用远程攻击打它们，就能让它们松手！"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:leaf_hanger",
+			"scale": 0.7,
+			"name": "叶悬猎者",
+			"anchor": "leaf_hanger",
+			"text": "$(thing)叶悬猎者$()潜伏在盐水池中，会钩住走进陷阱的玩家。攻击它们就能让它们放开你！"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "endermanoverhaul:nether_wastes_enderman",
+			"scale": 1,
+			"name": "末影人",
+			"anchor": "endermen",
+			"text": "各种$(thing)末影人$()遍布各地。$(item)蘑菇$()末影人完全被动，其他种类则都是中立的。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:spectre",
+			"scale": 0.7,
+			"name": "幻灵",
+			"anchor": "spectre",
+			"text": "$(thing)幻灵$()是昔日冒险者的亡魂，共有三种。它们是$(item)羽毛$()的来源。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:wicked",
+			"scale": 0.9,
+			"name": "邪火法师",
+			"anchor": "wicked",
+			"text": "$(thing)邪火法师$()是一种能附身附近生物、为它们提供增益效果的幽灵！如果附近没有生物，它们就会使用远程攻击。它们会掉落蜡。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:ghoul",
+			"scale": 0.7,
+			"name": "食尸鬼",
+			"anchor": "ghoul",
+			"text": "$(thing)食尸鬼$()是用回声定位寻找猎物的盲眼怪物。除非你进入它们的“扫描”半径，否则它们是中立的！"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:bewereager",
+			"scale": 0.8,
+			"name": "渴血狼人",
+			"anchor": "bewereager",
+			"text": "$(thing)渴血狼人$()是一种具有攻击性的怪物，还会跳到你面前！它会强化自己，并发动短促的连续攻击。"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "延伸阅读",
+			"anchor": "relations",
+			"entries": [
+				"tfg:the_world/wild_animals",
+				"tfg:agriculture/animal_husbandry",
+				"tfg:agriculture/jellies",
+				"tfg:the_moon/moon_fauna",
+				"tfg:mars/mars_fauna"
+			]
+		}
+	],
+	"read_by_default": true
+}

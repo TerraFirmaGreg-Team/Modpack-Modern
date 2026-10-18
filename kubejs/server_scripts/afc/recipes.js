@@ -26,6 +26,8 @@ const registerAFCRecipes = (event) => {
 	event.remove({ id: "afc:vat/maple_syrup" })
 	event.remove({ id: "afc:vat/birch_syrup" })
 
+	event.replaceInput({id: 'afc:crafting/wood/fig_keg' }, 'afc:wood/log/fig', '#afc:fig_logs')
+	event.replaceInput({id: 'afc:crafting/wood/fig_wine_shelf' }, 'afc:wood/log/fig', '#afc:fig_logs')
 
 
 	// #endregion

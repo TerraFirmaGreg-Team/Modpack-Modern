@@ -1,0 +1,119 @@
+{
+	"name": "Будівельні інструменти",
+	"icon": "tfg:trowel",
+	"category": "tfg:craftsmanship",
+	"pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Фабрика не може розростатися посеред відкритого поля! У цьому розділі перелічено деякі інструменти, які допоможуть тобі забудувати чудовий ландшафт і звести склади твоєї мрії.$(br2)$(bold)Порада:$() Вертикальні плити заважають? Ти можеш перемикати $(thing)Додаткові варіанти розміщення$(), натискаючи $(item)$(k:key.additionalplacements.placement_toggle)$()."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "title": "Зміст",
+            "text": "$(li)$(bold)$(l:craftsmanship/building_tools#trowel)Кельма$()$(li)$(bold)$(l:craftsmanship/building_tools#stonecutter)Каменеріз$()$(li)$(bold)$(l:craftsmanship/building_tools#copycats)Copycats$()$(li)$(bold)$(l:craftsmanship/building_tools#framing_saw)Рамкова пилка$()$(li)$(bold)$(l:craftsmanship/building_tools#architects_cutter)Архітекторський різак$()$(li)$(bold)$(l:craftsmanship/building_tools#wands)Будівельні палички$()$(li)$(bold)$(l:craftsmanship/building_tools#schematicannon)Схематична гармата$()$(li)$(bold)$(l:craftsmanship/building_tools#terminals)Термінали GregTech$()$(li)$(bold)$(l:craftsmanship/building_tools#gadgets)Будівельні гаджети$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Кельма",
+            "item": "tfg:trowel",
+            "text": "$(item)Кельма$() дає будівельнику змогу розміщувати випадкові блоки з панелі швидкого доступу, натискаючи  $(item)$(k:key.use)$() по поверхні.$(br)Кельма також має вбудовану підтримку моду $(item)Roads and Roofs$(), завдяки чому може випадковим чином розміщувати заповнювальні предмети, як-от цеглу або бруківку.$(br)Натхненно інструментом кельми з $(item)Quark$() — моду від Vazkii."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "stonecutter",
+            "item": "minecraft:stonecutter",
+            "title": "Налаштовування блоків",
+            "text": "$(tfg_short) має кілька модів, присвячених додаванню блоків, які можна налаштовувати для дуже деталізованого будівництва.$(br2)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "copycats:copycat_block",
+            "title": "Copycats",
+            "anchor": "copycats",
+            "text": "$(bold)Create: Copycats+$() додає багато блоків, які можна $(item)$(k:key.use)$() іншим блоком, щоб скопіювати його зовнішній вигляд. Їх можна виготовляти за допомогою $(thing)Каменеріза$().$(br2)Переглянути його блоки можна, виконавши пошук за $(6)@copycats$() у $(emi)."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "framing_saw",
+            "item": "framedblocks:framing_saw,framedblocks:powered_framing_saw",
+            "text": "$(bold)Framed Blocks$() додає багато блоків, які можна $(item)$(k:key.use)$() іншим блоком, щоб скопіювати його зовнішній вигляд. Переважно вони виготовляються за допомогою $(thing)Рамкової пилки$().$(br2)Переглянути його блоки можна, виконавши пошук за $(6)@framedblocks$() у $(emi)."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "architects_cutter",
+            "item": "domum_ornamentum:architectscutter",
+            "text": "$(bold)Domum Ornamentum$() додає блоки, які можуть копіювати зовнішній вигляд інших блоків і навіть поєднувати кілька блоків разом. Вони виготовляються за допомогою $(thing)Архітекторського різака$().$(br2)Переглянути його блоки можна, виконавши пошук за $(6)@domum_ornamentum$() у $(emi)."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "constructionwand:stone_wand,constructionwand:iron_wand,constructionwand:diamond_wand,constructionwand:infinity_wand",
+            "title": "Будівельні палички",
+            "anchor": "wands",
+            "text": "Будівельні палички — це простий спосіб встановлювати багато блоків одночасно. Просто натисни правою кнопкою миші по блоку, тримаючи паличку, і вона одразу встановить більше таких самих блоків, що чудово підходить для підлоги, стін тощо.$(br2)Натисни $(item)U$() на будівельній паличці, щоб відкрити сторінку з детальними інструкціями щодо її використання."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "constructionwand:core_destruction,constructionwand:core_angel",
+            "title": "Покращення паличок",
+            "text": "Також існують деякі покращення паличок, які надають їм ще більше можливостей.$(br2)Палички мають міцність, але їх можна ремонтувати за допомогою $(item)Набір для ремонту$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "create:schematicannon,create:schematic_table",
+            "anchor": "schematicannon",
+            "text": "$(item)Схематична гармата$() — це автоматична будівельна машина, яка встановлює блоки відповідно до заданої схеми. Ти можеш використовувати її, щоб переносити будівлі, створені у творчому світі, або копіювати й вставляти частини своїх споруд."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "gtceu:terminal,gtceuterminal:schematic_interface,gtceuterminal:dismantler",
+            "title": "Термінали GregTech",
+            "anchor": "terminals",
+            "text": "$(item)Термінал$() автоматично побудує $(thing)багатоблок GregTech$(), використовуючи предмети з твого інвентарю.$(br2)$(item)Інтерфейс схем$() дає змогу копіювати й вставляти $(thing)багатоблоки$(), а $(item)Розбирач$() дає змогу повністю розібрати їх одним натисканням."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "buildinggadgets2:gadget_building,buildinggadgets2:gadget_exchanging,buildinggadgets2:gadget_copy_paste,buildinggadgets2:gadget_cut_paste,buildinggadgets2:gadget_destruction",
+            "anchor": "gadgets",
+            "title": "Будівельні гаджети",
+            "text": "Розблоковані в $(5)EV$(), $(thing)Будівельні гаджети$() — це потужні інструменти, які дають змогу вирізати, копіювати, вставляти та виконувати інші масштабні операції для будівництва."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "buildinggadgets2:shapeless/guide_book",
+            "title": "Ще одна книга",
+            "text": "У будівельних гаджетів є власна $(thing)книга-посібник$(). Ти можеш створити її ось так."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Докладніше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/anvils",
+                "tfg:craftsmanship/chisel",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/building_materials"
+            ]
+        }
+	],
+	"read_by_default": true,
+	"sortnum": 21,
+	"extra_recipe_mappings": {
+        "tfg:trowel": 1,
+        "domum_ornamentum:architectscutter": 5,
+        "framedblocks:framing_saw": 4,
+        "framedblocks:powered_framing_saw": 4,
+        "minecraft:stonecutter": 2,
+        "constructionwand:stone_wand": 6,
+        "constructionwand:iron_wand": 6,
+        "constructionwand:diamond_wand": 6,
+        "constructionwand:infinity_wand": 6,
+        "constructionwand:core_destruction": 7,
+        "constructionwand:core_angel": 7,
+        "create:schematicannon": 8,
+        "create:schematic_table": 8,
+        "gtceu:terminal": 9,
+        "gtceuterminal:schematic_interface": 9,
+        "gtceuterminal:dismantler": 9
+	}
+}

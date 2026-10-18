@@ -1,0 +1,668 @@
+{
+	"name": "地球动物",
+	"category": "tfg:the_world",
+	"icon": "tfc:medium_raw_hide",
+	"pages": [
+        {
+            "type": "patchouli:text",
+            "title": "目录",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:the_world/wild_animals#intro)简介$()$(li)$(bold)$(l:the_world/wild_animals#livestock)牲畜$()$(li2)$(l:the_world/wild_animals#pig)猪$()$(li2)$(l:the_world/wild_animals#cow)牛$()$(li2)$(l:the_world/wild_animals#goat)山羊$()$(li2)$(l:the_world/wild_animals#yak)牦牛$()$(li2)$(l:the_world/wild_animals#alpaca)羊驼$()$(li2)$(l:the_world/wild_animals#sheep)绵羊$()$(li2)$(l:the_world/wild_animals#musk_ox)麝牛$()$(li2)$(l:the_world/wild_animals#chicken)鸡$()$(li2)$(l:the_world/wild_animals#duck)鸭$()$(li2)$(l:the_world/wild_animals#quail)鹌鹑$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li2)$(l:the_world/wild_animals#donkey)驴$()$(li2)$(l:the_world/wild_animals#mule)骡子$()$(li2)$(l:the_world/wild_animals#horse)马$()$(li2)$(l:the_world/wild_animals#dromedary_camel)单峰骆驼$()$(li2)$(l:the_world/wild_animals#bactrian_camel)双峰骆驼$()$(li)$(bold)$(l:the_world/wild_animals#predators)掠食者$()$(li2)$(l:the_world/wild_animals#polar_bear)北极熊$()$(li2)$(l:the_world/wild_animals#black_bear)黑熊$()$(li2)$(l:the_world/wild_animals#grizzly_bear)棕熊$()$(li2)$(l:the_world/wild_animals#cougar)山狮$()$(li2)$(l:the_world/wild_animals#panther)黑豹$()$(li2)$(l:the_world/wild_animals#lion)狮子$()$(li2)$(l:the_world/wild_animals#tiger)老虎$()$(li2)$(l:the_world/wild_animals#sabertooth)剑齿虎$()$(li2)$(l:the_world/wild_animals#wolf)狼$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li2)$(l:the_world/wild_animals#direwolf)冰原狼$()$(li2)$(l:the_world/wild_animals#hyena)鬣狗$()$(li2)$(l:the_world/wild_animals#crocodile)鳄鱼$()$(li2)$(l:the_world/wild_animals#ocelot)豹猫$()$(bold)$(li)$(l:the_world/wild_animals#ramming_prey)冲撞型猎物$()$(li2)$(l:the_world/wild_animals#boar)野猪$()$(li2)$(l:the_world/wild_animals#moose)麋鹿$()$(li2)$(l:the_world/wild_animals#wildebeest)牛羚$()$(li2)$(l:the_world/wild_animals#bison)野牛$()$(bold)$(li)$(l:the_world/wild_animals#prey)猎物$()$(li2)$(l:the_world/wild_animals#rabbit)兔子$()$(li2)$(l:the_world/wild_animals#fox)狐狸$()$(li2)$(l:the_world/wild_animals#deer)鹿$()$(li2)$(l:the_world/wild_animals#caribou)驯鹿$()$(li2)$(l:the_world/wild_animals#gazelle)瞪羚$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li2)$(l:the_world/wild_animals#bongo)羚羊$()$(li2)$(l:the_world/wild_animals#grouse)松鸡$()$(li2)$(l:the_world/wild_animals#pheasant)雉鸡$()$(li2)$(l:the_world/wild_animals#turkey)火鸡$()$(li2)$(l:the_world/wild_animals#peafowl)孔雀$()$(li2)$(l:the_world/wild_animals#lemming)旅鼠$()$(li2)$(l:the_world/wild_animals#jerboa)跳鼠$()$(li2)$(l:the_world/wild_animals#mongoose)獴$()$(bold)$(li)$(l:the_world/wild_animals#aquatic)水生动物$()$(li2)$(l:the_world/wild_animals#penguin)小蓝企鹅$()$(li2)$(l:the_world/wild_animals#turtle)海龟$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)$(li)$(l:the_world/wild_animals#fish)鱼类$()$(li2)$(l:the_world/wild_animals#cod)鳕鱼$()$(li2)$(l:the_world/wild_animals#pufferfish)河豚$()$(li2)$(l:the_world/wild_animals#jellyfish)水母$()$(li2)$(l:the_world/wild_animals#tropical_fish)热带鱼$()$(li2)$(l:the_world/wild_animals#salmon)三文鱼$()$(li2)$(l:the_world/wild_animals#bluegill)蓝鳃鱼$()$(bold)$(li)$(l:the_world/wild_animals#shellfish)贝类$()$(li2)$(l:the_world/wild_animals#isopod)等足虫$()$(li2)$(l:the_world/wild_animals#lobster)龙虾$()$(li2)$(l:the_world/wild_animals#crayfish)小龙虾$()$(li2)$(l:the_world/wild_animals#horseshoe_crab)马蹄蟹$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)$(li)$(l:the_world/wild_animals#large_aquatic_animals)大型水生动物$()$(li2)$(l:the_world/wild_animals#orca)逆戟鲸$()$(li2)$(l:the_world/wild_animals#dolphin)海豚$()$(li2)$(l:the_world/wild_animals#manatee)海牛$()$(li2)$(l:the_world/wild_animals#leopard_seal)豹海豹$()$(li2)$(l:the_world/wild_animals#squid)乌贼$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "动物简介",
+            "text": "动物可以分为几个不同的类别：$(l:the_world/wild_animals#livestock)牲畜$()、$(l:the_world/wild_animals#predators)掠食者$()、$(l:the_world/wild_animals#prey)猎物$()和$(l:the_world/wild_animals#aquatic)水生$()动物。绝大多数动物被杀死后都会掉落肉。不过，有些肉可能不宜食用，生肉尤其如此。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "牲畜",
+            "anchor": "livestock",
+            "text": "$(thing)牲畜$()是玩家可以驯服和繁殖的动物。牲畜分$(thing)雄性$()和$(thing)雌性$()，因此在捕捉野生牲畜时，最好每种性别各抓一只，以便繁殖。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "pig",
+            "text": "$(bold)$(l:the_world/climate#temperature)生成温度$()：-10 - 35°C$(br)$(bold)$(l:the_world/climate#rainfall)生成降雨量$()：> 200mm$(br)$(bold)生成区域$()：温和森林$(br)$(bold)类别$()：$(l:agriculture/animal_husbandry#mammals)哺乳动物$()$(br)$(bold)食性$()：任何食物，腐烂的也吃。$(br)$(bold)最多幼崽数$()：10$(br)$(bold)妊娠期$()：19天$(br)$(bold)成长时间$()：80天$(br)$(bold)$(l:agriculture/animal_husbandry#uses)最大互动次数$()：60",
+            "title": "猪"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:pig{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.6,
+            "name": " ",
+            "text": "猪"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cow",
+            "text": "$(bold)$(l:the_world/climate#temperature)生成温度$()：-10 - 35°C$(br)$(bold)$(l:the_world/climate#rainfall)生成降雨量$()：> 250mm$(br)$(bold)生成区域$()：大多数气候$(br)$(bold)类别$()：$(l:agriculture/animal_husbandry#dairy_animals)产奶$()$(br)$(bold)食性$()：$(l:cooking/food_and_water#grain)谷物$()，腐烂的也可以。$(br)$(bold)最多幼崽数$()：2$(br)$(bold)妊娠期$()：58天$(br)$(bold)成长时间$()：192天$(br)$(bold)$(l:agriculture/animal_husbandry#uses)最大互动次数$()：128$(br)$(bold)产物$()：$(l:cooking/cheese)牛奶$()$(br)$(bold)产出周期$()：1天",
+            "title": "牛"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:cow{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.75,
+            "name": " ",
+            "text": "牛"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "goat",
+            "text": "$(bold)$(l:the_world/climate#temperature)生成温度$()：-12 - 25°C$(br)$(bold)$(l:the_world/climate#rainfall)生成降雨量$()：> 300mm$(br)$(bold)生成区域$()：温和气候$(br)$(bold)类别$()：$(l:agriculture/animal_husbandry#dairy_animals)产奶$()$(br)$(bold)食性$()：$(l:cooking/food_and_water#grain)谷物$()、$(l:cooking/food_and_water#fruit)水果$()和$(l:cooking/food_and_water#vegetables)蔬菜$()，腐烂的也可以。$(br)$(bold)最多幼崽数$()：2$(br)$(bold)妊娠期$()：32天$(br)$(bold)成长时间$()：96天$(br)$(bold)$(l:agriculture/animal_husbandry#uses)最大互动次数$()：60$(br)$(bold)产物$()：$(l:cooking/cheese)牛奶$()$(br)$(bold)产出周期$()：3天",
+            "title": "山羊"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:goat{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.75,
+            "name": " ",
+            "text": "山羊"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "yak",
+            "text": "$(bold)$(l:the_world/climate#temperature)生成温度$()：> -11°C$(br)$(bold)$(l:the_world/climate#rainfall)生成降雨量$()：> 100mm$(br)$(bold)生成区域$()：寒冷气候$(br)$(bold)类别$()：$(l:agriculture/animal_husbandry#dairy_animals)产奶$()$(br)$(bold)食性$()：$(l:cooking/food_and_water#grain)谷物$()$(br)$(bold)最多幼崽数$()：1$(br)$(bold)妊娠期$()：64天$(br)$(bold)成长时间$()：180天$(br)$(bold)$(l:agriculture/animal_husbandry#uses)最大互动次数$()：230$(br)$(bold)产物$()：$(l:cooking/cheese)牛奶$()$(br)$(bold)产出周期$()：23.5小时",
+            "title": "牦牛"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:yak{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.75,
+            "name": " ",
+            "text": "牦牛"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "alpaca",
+            "text": "$(bold)$(l:the_world/climate#temperature)生成温度$()：-8 - 20°C$(br)$(bold)$(l:the_world/climate#rainfall)生成降雨量$()：> 250mm$(br)$(bold)生成区域$()：温和气候$(br)$(bold)类别$()：$(l:agriculture/animal_husbandry#wooly_animals)产毛$()$(br)$(bold)食性$()：$(l:cooking/food_and_water#grain)谷物$()和$(l:cooking/food_and_water#fruit)水果$()$(br)$(bold)最多幼崽数$()：2$(br)$(bold)妊娠期$()：36天$(br)$(bold)成长时间$()：98天$(br)$(bold)$(l:agriculture/animal_husbandry#uses)最大互动次数$()：128$(br)$(bold)产物$()：$(l:agriculture/weaving)羊毛$()$(br)$(bold)产出周期$()：5天",
+            "title": "羊驼"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:alpaca{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.75,
+            "name": " ",
+            "text": "一只羊驼。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "sheep",
+            "text": "$(bold)$(l:the_world/climate#temperature)生成温度$()：0 - 35°C$(br)$(bold)$(l:the_world/climate#rainfall)生成降雨量$()：70 - 300mm$(br)$(bold)生成区域$()：较干燥气候$(br)$(bold)类别$()：$(l:agriculture/animal_husbandry#wooly_animals)产毛$()$(br)$(bold)食性$()：$(l:cooking/food_and_water#grain)谷物$()$(br)$(bold)最多幼崽数$()：2$(br)$(bold)妊娠期$()：32天$(br)$(bold)成长时间$()：56天$(br)$(bold)$(l:agriculture/animal_husbandry#uses)最大互动次数$()：60$(br)$(bold)产物$()：$(l:agriculture/weaving)羊毛$()$(br)$(bold)产出周期$()：7天",
+            "title": "绵羊"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:sheep{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.75,
+            "name": " ",
+            "text": "一只绵羊。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "musk_ox",
+            "text": "$(bold)$(l:the_world/climate#temperature)生成温度$()：-25 - 0°C$(br)$(bold)$(l:the_world/climate#rainfall)生成降雨量$()：> 100mm$(br)$(bold)生成区域$()：寒冷气候$(br)$(bold)类别$()：$(l:agriculture/animal_husbandry#wooly_animals)产毛$()$(br)$(bold)食性$()：$(l:cooking/food_and_water#grain)谷物$()$(br)$(bold)最多幼崽数$()：1$(br)$(bold)妊娠期$()：64天$(br)$(bold)成长时间$()：168天$(br)$(bold)$(l:agriculture/animal_husbandry#uses)最大互动次数$()：160$(br)$(bold)产物$()：$(l:agriculture/weaving)羊毛$()$(br)$(bold)产出周期$()：4天",
+            "title": "麝牛"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:musk_ox{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.75,
+            "name": " ",
+            "text": "麝牛"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "chicken",
+            "text": "$(bold)$(l:the_world/climate#temperature)生成温度$()：> 14°C$(br)$(bold)$(l:the_world/climate#rainfall)生成降雨量$()：> 225mm$(br)$(bold)生成区域$()：温暖森林$(br)$(bold)类别$()：$(l:agriculture/animal_husbandry#oviparous_animals)卵生动物$()$(br)$(bold)食性$()：$(l:cooking/food_and_water#grain)谷物$()、$(l:cooking/food_and_water#fruit)水果$()、$(l:cooking/food_and_water#vegetables)蔬菜$()和$(l:agriculture/growing_crops)种子$()，腐烂的也可以。$(br)$(bold)产蛋周期$()：30小时$(br)$(bold)成长时间$()：24天$(br)$(bold)孵化时间$()：8天$(br)$(bold)$(l:agriculture/animal_husbandry#uses)最大互动次数$()：100$(br)$(bold)产物$()：蛋和羽毛。$()",
+            "title": "鸡"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:chicken{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.7,
+            "name": " ",
+            "text": "鸡"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "duck",
+            "text": "$(bold)$(l:the_world/climate#temperature)生成温度$()：-25 - 30°C$(br)$(bold)$(l:the_world/climate#rainfall)生成降雨量$()：> 100mm$(br)$(bold)生成区域$()：平原$(br)$(bold)类别$()：$(l:agriculture/animal_husbandry#oviparous_animals)卵生动物$()$(br)$(bold)食性$()：$(l:cooking/food_and_water#grain)谷物$()、$(l:cooking/food_and_water#fruit)水果$()、$(l:cooking/food_and_water#vegetables)蔬菜$()和$(l:agriculture/growing_crops)种子$()。$(br)$(bold)产蛋周期$()：32小时$(br)$(bold)成长时间$()：32天$(br)$(bold)孵化时间$()：8天$(br)$(bold)$(l:agriculture/animal_husbandry#uses)最大互动次数$()：72$(br)$(bold)产物$()：蛋和羽毛。$()",
+            "title": "鸭"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:duck{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.7,
+            "name": " ",
+            "text": "鸭"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "quail",
+            "text": "$(bold)$(l:the_world/climate#temperature)生成温度$()：-15 - 15°C$(br)$(bold)$(l:the_world/climate#rainfall)生成降雨量$()：> 200mm$(br)$(bold)生成区域$()：寒冷气候$(br)$(bold)类别$()：$(l:agriculture/animal_husbandry#oviparous_animals)卵生动物$()$(br)$(bold)食性$()：$(l:cooking/food_and_water#grain)谷物$()、$(l:cooking/food_and_water#fruit)水果$()、$(l:cooking/food_and_water#vegetables)蔬菜$()和$(l:agriculture/growing_crops)种子$()，腐烂的也可以。$(br)$(bold)产蛋周期$()：28小时$(br)$(bold)成长时间$()：22天$(br)$(bold)孵化时间$()：8天$(br)$(bold)$(l:agriculture/animal_husbandry#uses)最大互动次数$()：48$(br)$(bold)产物$()：蛋和羽毛。$()",
+            "title": "鹌鹑"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:quail{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.7,
+            "name": " ",
+            "text": "鹌鹑"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "donkey",
+            "text": "$(bold)$(l:the_world/climate#temperature)生成温度$()：> -15°C$(br)$(bold)$(l:the_world/climate#rainfall)生成降雨量$()：130 - 400mm$(br)$(bold)生成区域$()：湿润平原$(br)$(bold)类别$()：$(l:agriculture/animal_husbandry#equines)马科动物$()$(br)$(bold)食性$()：$(l:cooking/food_and_water#grain)谷物$()和$(l:cooking/food_and_water#fruit)水果$()$(br)$(bold)最多幼崽数$()：1$(br)$(bold)妊娠期$()：19天$(br)$(bold)成长时间$()：80天$(br)$(bold)$(l:agriculture/animal_husbandry#uses)最大互动次数$()：60",
+            "title": "驴"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:donkey{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.6,
+            "name": " ",
+            "text": "驴"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "mule",
+            "text": "$(bold)$(l:the_world/climate#temperature)生成温度$()：> -15°C$(br)$(bold)$(l:the_world/climate#rainfall)生成降雨量$()：130 - 400mm$(br)$(bold)生成区域$()：平原，由马和驴繁殖而来。$(br)$(bold)类别$()：$(l:agriculture/animal_husbandry#equines)马科动物$()$(br)$(bold)食性$()：$(l:cooking/food_and_water#grain)谷物$()和$(l:cooking/food_and_water#fruit)水果$()$(br)$(bold)最多幼崽数$()：1$(br)$(bold)妊娠期$()：19天$(br)$(bold)成长时间$()：80天$(br)$(bold)$(l:agriculture/animal_husbandry#uses)最大互动次数$()：60",
+            "title": "骡子"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:mule{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.6,
+            "name": " ",
+            "text": "骡子"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "horse",
+            "text": "$(bold)$(l:the_world/climate#temperature)生成温度$()：> -15°C$(br)$(bold)$(l:the_world/climate#rainfall)生成降雨量$()：130 - 400mm$(br)$(bold)生成区域$()：平原$(br)$(bold)类别$()：$(l:agriculture/animal_husbandry#equines)马科动物$()$(br)$(bold)食性$()：$(l:cooking/food_and_water#grain)谷物$()和$(l:cooking/food_and_water#fruit)水果$()$(br)$(bold)最多幼崽数$()：1$(br)$(bold)妊娠期$()：19天$(br)$(bold)成长时间$()：80天$(br)$(bold)$(l:agriculture/animal_husbandry#uses)最大互动次数$()：60",
+            "title": "马"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:horse{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.6,
+            "name": " ",
+            "text": "马"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "dromedary_camel",
+            "text": "$(bold)$(l:the_world/climate#temperature)生成温度$()：> -5°C$(br)$(bold)$(l:the_world/climate#rainfall)生成降雨量$()：< 100mm$(br)$(bold)生成区域$()：炎热干燥气候$(br)$(bold)类别$()：$(l:agriculture/animal_husbandry#camelides)骆驼$()$(br)$(bold)食性$()：$(l:cooking/food_and_water#grain)谷物$()和$(l:cooking/food_and_water#fruit)水果$()$(br)$(bold)最多幼崽数$()：1$(br)$(bold)妊娠期$()：19天$(br)$(bold)成长时间$()：80天$(br)$(bold)$(l:agriculture/animal_husbandry#uses)最大互动次数$()：60",
+            "title": "单峰骆驼"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:dromedary_camel{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.6,
+            "name": " ",
+            "text": "一只单峰骆驼。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bactrian_camel",
+            "text": "$(bold)$(l:the_world/climate#temperature)生成温度$()：> -5°C$(br)$(bold)$(l:the_world/climate#rainfall)生成降雨量$()：< 100mm$(br)$(bold)生成区域$()：寒冷干燥气候$(br)$(bold)类别$()：$(l:agriculture/animal_husbandry#camelides)骆驼$() / $(l:agriculture/animal_husbandry#wooly_animals)产毛$()$(br)$(bold)食性$()：$(l:cooking/food_and_water#grain)谷物$()和$(l:cooking/food_and_water#fruit)水果$()$(br)$(bold)最多幼崽数$()：1$(br)$(bold)妊娠期$()：24天$(br)$(bold)成长时间$()：80天$(br)$(bold)$(l:agriculture/animal_husbandry#uses)最大互动次数$()：80$(br)$(bold)产物$()：$(l:agriculture/weaving)羊毛$()$(br)$(bold)产出周期$()：7天",
+            "title": "双峰骆驼"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:bactrian_camel{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.6,
+            "name": " ",
+            "text": "一只双峰骆驼。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "predators",
+            "text": "$(thing)掠食者$()是会攻击玩家的动物。它们要么是$(thing)夜行$()，只在夜间狩猎，要么是$(thing)昼行$()，只在白天狩猎。掠食者可以是中立或敌对的，取决于它们最近是否杀死了猎物。掠食者会保卫它们的领地——如果你跑得足够远，掠食者就会停止追逐并返回家园。",
+            "title": "掠食者"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:polar_bear",
+            "scale": 0.55,
+            "name": "北极熊",
+            "anchor": "polar_bear",
+            "text": "北极熊只生成在最寒冷的地区，$(l:the_world/climate#temperature)温度$()最高10°C，$(l:the_world/climate#rainfall)降雨量$()至少100mm。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:grizzly_bear",
+            "scale": 0.55,
+            "name": "棕熊",
+            "anchor": "grizzly_bear",
+            "text": "棕熊生成在温带气候的森林中，$(l:the_world/climate#temperature)温度$()范围为-15至15°C，$(l:the_world/climate#rainfall)降雨量$()至少200mm。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:black_bear",
+            "scale": 0.55,
+            "name": "黑熊",
+            "anchor": "black_bear",
+            "text": "黑熊生成在更温暖、更潮湿的森林中，$(l:the_world/climate#temperature)温度$()5至20°C，$(l:the_world/climate#rainfall)降雨量$()至少250mm。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:cougar",
+            "scale": 0.6,
+            "name": "山狮",
+            "anchor": "cougar",
+            "text": "山狮偏好温和气候，$(l:the_world/climate#temperature)温度$()为-10至21°C，$(l:the_world/climate#rainfall)降雨量$()至少150mm。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:panther",
+            "scale": 0.6,
+            "name": "黑豹",
+            "anchor": "panther",
+            "text": "黑豹偏好温和气候，$(l:the_world/climate#temperature)温度$()为-10至21°C，$(l:the_world/climate#rainfall)降雨量$()至少150mm。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:lion",
+            "scale": 0.55,
+            "name": "狮子",
+            "anchor": "lion",
+            "text": "狮子生成在平原上，平均$(l:the_world/climate#temperature)温度$()至少16°C，$(l:the_world/climate#rainfall)降雨量$()在50至300mm之间。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:tiger",
+            "scale": 0.55,
+            "name": "老虎",
+            "anchor": "tiger",
+            "text": "老虎生成在森林中，平均$(l:the_world/climate#temperature)温度$()至少13°C，$(l:the_world/climate#rainfall)降雨量$()高于100mm。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:sabertooth",
+            "scale": 0.6,
+            "name": "剑齿虎",
+            "anchor": "sabertooth",
+            "text": "剑齿虎生成在任何$(l:the_world/climate#temperature)温度$()高于0°C、$(l:the_world/climate#rainfall)降雨量$()高于250mm的地方。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:wolf",
+            "anchor": "wolf",
+            "scale": 0.7,
+            "text": "狼会生成在$(l:the_world/climate#temperature)温度$()低于22°C、$(l:the_world/climate#rainfall)降雨量$()介于70到480mm之间的地方。它们成群结队地捕猎。喂食狼足够多次后，就能把它驯服成$(l:game_mechanics/pets)狗$()。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:direwolf",
+            "anchor": "direwolf",
+            "scale": 0.7,
+            "text": "恐狼生成在任何$(l:the_world/climate#temperature)温度$()低于冰点、$(l:the_world/climate#rainfall)降雨量$()在150至420mm之间的地方。它们成群狩猎。它们比普通狼更大，且无法驯服。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:hyena",
+            "anchor": "hyena",
+            "scale": 0.7,
+            "text": "鬣狗生成在任何$(l:the_world/climate#temperature)温度$()高于15°C、$(l:the_world/climate#rainfall)降雨量$()在80至380mm之间的地方。它们成群狩猎。无法驯服。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:crocodile",
+            "anchor": "crocodile",
+            "scale": 0.7,
+            "name": "鳄鱼",
+            "text": "鳄鱼生成在河流、湖泊和沼泽附近，任何$(l:the_world/climate#temperature)温度$()高于15°C的地方，$(l:the_world/climate#rainfall)降雨量$()不限。它们是夜行性动物，在水中最危险。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:ocelot",
+            "anchor": "ocelot",
+            "scale": 0.7,
+            "text": "豹猫会攻击小型动物。它生成在$(l:the_world/climate#temperature)温度$()为15到30°C、$(l:the_world/climate#rainfall)降雨量$()介于300到500mm之间的森林中。喂食豹猫足够多次后，就能把它驯服成$(l:game_mechanics/pets)猫$()。豹猫可以吃生鱼"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ramming_prey",
+            "text": "$(thing)冲撞$()动物偶尔会试图冲撞附近的生物，包括玩家。它们的攻击威力强大，但可以躲避。如果被攻击，它们会更频繁地冲撞。",
+            "title": "冲撞"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:boar",
+            "anchor": "boar",
+            "scale": 0.7,
+            "name": "野猪",
+            "text": "野猪生成在$(l:the_world/climate#temperature)温度$()低于25°C且高于-5°C、$(l:the_world/climate#rainfall)降雨量$()在130至400mm之间的地方。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:moose",
+            "anchor": "moose",
+            "scale": 0.7,
+            "name": "麋鹿",
+            "text": "麋鹿生成在森林中，$(l:the_world/climate#temperature)温度$()低于10°C且高于-15°C，$(l:the_world/climate#rainfall)降雨量$()在150至300mm之间。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:wildebeest",
+            "anchor": "wildebeest",
+            "scale": 0.7,
+            "name": "牛羚",
+            "text": "牛羚生成在开阔平原上，任何$(l:the_world/climate#temperature)温度$()高于13°C、$(l:the_world/climate#rainfall)降雨量$()在90至380mm之间的地方。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:bison",
+            "anchor": "bison",
+            "scale": 0.7,
+            "name": "野牛",
+            "text": "野牛生成在开阔平原上，$(l:the_world/climate#temperature)温度$()低于15°C且高于-10°C，$(l:the_world/climate#rainfall)降雨量$()在160至420mm之间。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "prey",
+            "text": "$(thing)猎物$()害怕玩家和掠食者。它们善于逃离危险，但通常无法反击。有些猎物喜欢啃食作物。",
+            "title": "猎物"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:rabbit",
+            "scale": 0.7,
+            "name": "兔子",
+            "anchor": "rabbit",
+            "text": "兔子以啃食胡萝卜和卷心菜而闻名。它们在世界上无处不在，毛色随气候而变化。它们只需要15mm的$(l:the_world/climate#rainfall)降雨量$()即可生成。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:fox",
+            "scale": 0.7,
+            "name": "狐狸",
+            "anchor": "fox",
+            "text": "狐狸喜欢吃灌木上的浆果。它可以在森林中找到，要求$(l:the_world/climate#temperature)温度$()低于25°C，$(l:the_world/climate#rainfall)降雨量$()在130至400mm之间。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:deer",
+            "anchor": "deer",
+            "scale": 0.7,
+            "text": "鹿生成在森林中，任何$(l:the_world/climate#temperature)温度$()低于25°C且高于-15°C，$(l:the_world/climate#rainfall)降雨量$()在130至400mm之间。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:caribou",
+            "scale": 0.6,
+            "name": "驯鹿",
+            "anchor": "caribou",
+            "text": "驯鹿生成在任何$(l:the_world/climate#temperature)温度$()低于-9°C，$(l:the_world/climate#rainfall)降雨量$()在110至500mm之间的地方。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:gazelle",
+            "scale": 0.7,
+            "anchor": "gazelle",
+            "text": "瞪羚生成在开阔平原上，任何$(l:the_world/climate#temperature)温度$()高于12°C，$(l:the_world/climate#rainfall)降雨量$()在90至380mm之间的地方。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:bongo",
+            "scale": 0.9,
+            "name": "羚羊",
+            "anchor": "bongo",
+            "text": "羚羊生成在森林中，任何$(l:the_world/climate#temperature)温度$()高于15°C，$(l:the_world/climate#rainfall)降雨量$()在230至500mm之间的地方。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:grouse",
+            "scale": 0.7,
+            "anchor": "grouse",
+            "text": "松鸡生成在任何$(l:the_world/climate#temperature)温度$()低于13°C且高于-12°C，$(l:the_world/climate#rainfall)降雨量$()在150至400mm之间的地方。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:pheasant",
+            "scale": 0.7,
+            "anchor": "pheasant",
+            "text": "野鸡生成在森林中，任何$(l:the_world/climate#temperature)温度$()低于17°C且高于-5°C，$(l:the_world/climate#rainfall)降雨量$()在100至300mm之间的地方。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:turkey",
+            "scale": 0.7,
+            "anchor": "turkey",
+            "text": "火鸡生成在森林中，任何$(l:the_world/climate#temperature)温度$()低于17°C且高于0°C，$(l:the_world/climate#rainfall)降雨量$()在250至450mm之间的地方。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:peafowl",
+            "scale": 0.6,
+            "name": "孔雀",
+            "anchor": "peafowl",
+            "text": "孔雀生成在森林中，任何$(l:the_world/climate#temperature)温度$()高于14°C，$(l:the_world/climate#rainfall)降雨量$()在190至500mm之间的地方。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:lemming",
+            "scale": 1.5,
+            "offset": -0.2,
+            "name": "旅鼠",
+            "anchor": "lemming",
+            "text": "旅鼠生成在任何$(l:the_world/climate#temperature)温度$()低于-3°C且高于-12°C，$(l:the_world/climate#rainfall)降雨量$()在160至500mm之间的地方。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:jerboa",
+            "scale": 1.2,
+            "name": "跳鼠",
+            "anchor": "jerboa",
+            "text": "跳鼠生成在任何$(l:the_world/climate#temperature)温度$()低于25°C且高于-3°C，$(l:the_world/climate#rainfall)降雨量$()低于160mm的地方。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:mongoose",
+            "scale": 0.8,
+            "name": "獴",
+            "anchor": "mongoose",
+            "text": "獴生成在任何$(l:the_world/climate#temperature)温度$()高于12°C，$(l:the_world/climate#rainfall)降雨量$()在160至500mm之间的地方。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "aquatic",
+            "text": "$(thing)水生动物$()是一个涵盖多种不同行为的广泛类别。它们可能是$(thing)滨岸生物$()、$(thing)鱼类$()、$(thing)贝类$()或$(thing)大型水生生物$()",
+            "title": "水生动物"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)滨岸动物$()只生成在海滩上，它们一天中一部分时间游泳，一部分时间在海滩上行走。它们是好奇的生物，会跟随玩家，但无法被驯服。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:penguin",
+            "scale": 0.7,
+            "name": "企鹅",
+            "anchor": "penguin",
+            "text": "企鹅只生成在最寒冷的海滩上，$(l:the_world/climate#temperature)温度$()最高-14°C，$(l:the_world/climate#rainfall)降雨量$()至少75mm。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:turtle",
+            "scale": 0.7,
+            "name": "海龟",
+            "anchor": "turtle",
+            "text": "海龟喜欢温暖的水域。它们生成在$(l:the_world/climate#temperature)温度$()至少21°C、$(l:the_world/climate#rainfall)降雨量$()至少250mm的地方。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fish",
+            "text": "$(thing)鱼类$()是在水中游动的小型生物。大多数鱼类都可以通过$(l:agriculture/fishing)钓鱼$()获得。有些偏爱海洋、河流或湖泊。",
+            "title": "鱼类"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:cod",
+            "scale": 0.7,
+            "name": "鳕鱼",
+            "anchor": "cod",
+            "text": "鳕鱼偏好较冷的海洋，$(l:the_world/climate#temperature)温度$()最高18°C。它们可以被钓到。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:pufferfish",
+            "scale": 0.7,
+            "name": "河豚",
+            "anchor": "pufferfish",
+            "text": "河豚生活在任何$(l:the_world/climate#temperature)温度$()至少10°C的海洋中。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:jellyfish",
+            "scale": 0.7,
+            "name": "水母",
+            "anchor": "jellyfish",
+            "text": "水母生活在较温暖的海洋中，$(l:the_world/climate#temperature)温度$()至少18°C。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:tropical_fish",
+            "scale": 0.7,
+            "name": "热带鱼",
+            "anchor": "tropical_fish",
+            "text": "热带鱼偏好较温暖的海洋，$(l:the_world/climate#temperature)温度$()至少18°C。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:salmon",
+            "scale": 0.7,
+            "name": "三文鱼",
+            "anchor": "salmon",
+            "text": "三文鱼生成在任何$(l:the_world/climate#temperature)温度$()至少-5°C的河流或湖泊中。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:bluegill",
+            "scale": 0.7,
+            "name": "蓝鳃鱼",
+            "anchor": "bluegill",
+            "text": "蓝鳃鱼生成在任何$(l:the_world/climate#temperature)温度$()至少-10°C且最高26°C的河流或湖泊中。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "shellfish",
+            "text": "$(thing)贝类$()是生活在水体底部的小型动物。它们无法钓起，但掉落的贝壳可以食用，也可以制成$(thing)助焊剂$()。贝类还可以用作钓鱼的$(l:agriculture/fishing)鱼饵$()。",
+            "title": "贝类"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:isopod",
+            "scale": 0.7,
+            "name": "等足虫",
+            "anchor": "isopod",
+            "text": "等足虫生成在海洋较深区域，$(l:the_world/climate#temperature)温度$()最高14°C。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:lobster",
+            "scale": 0.7,
+            "name": "龙虾",
+            "anchor": "lobster",
+            "text": "龙虾生成在任何$(l:the_world/climate#temperature)温度$()最高21°C的海洋中。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:crayfish",
+            "scale": 0.7,
+            "name": "小龙虾",
+            "anchor": "crayfish",
+            "text": "小龙虾类似于龙虾，但生成在河流和湖泊中。它们需要$(l:the_world/climate#temperature)温度$()至少5°C，$(l:the_world/climate#rainfall)降雨量$()至少125mm。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:horseshoe_crab",
+            "scale": 0.7,
+            "name": "马蹄蟹",
+            "anchor": "horseshoe_crab",
+            "text": "马蹄蟹生成在温带气候的海洋中，$(l:the_world/climate#temperature)温度$()在10至21°C之间，$(l:the_world/climate#rainfall)降雨量$()最高400mm。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "large_aquatic_animals",
+            "text": "$(thing)大型水生动物$()是生活在较大水体中的大型动物。其中一些会捕食鱼类。它们会掉落$(l:game_mechanics/lighting)鲸脂$()，可以制成灯油。",
+            "title": "大型水生动物"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:orca",
+            "scale": 0.25,
+            "name": "逆戟鲸",
+            "anchor": "orca",
+            "text": "逆戟鲸生活在深海中，$(l:the_world/climate#temperature)温度$()最高19°C，$(l:the_world/climate#rainfall)降雨量$()至少100mm。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:dolphin",
+            "scale": 0.4,
+            "name": "海豚",
+            "anchor": "dolphin",
+            "text": "海豚生活在深海中，$(l:the_world/climate#temperature)温度$()至少10°C，$(l:the_world/climate#rainfall)降雨量$()至少200mm。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:manatee",
+            "scale": 0.25,
+            "name": "海牛",
+            "anchor": "manatee",
+            "text": "海牛生活在任何温暖的湖泊中，$(l:the_world/climate#temperature)温度$()至少20°C，$(l:the_world/climate#rainfall)降雨量$()最高300mm。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:leopard_seal",
+            "scale": 0.5,
+            "name": "豹海豹",
+            "anchor": "leopard_seal",
+            "text": "豹海豹只生成在最寒冷的海滩上，$(l:the_world/climate#temperature)温度$()最高-9°C，$(l:the_world/climate#rainfall)降雨量$()至少105mm。它们捕食企鹅，也是逆戟鲸的猎物。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "squid",
+            "text": "鱿鱼可以生成在任何深海。它们掉落$(thing)墨囊$()，并会向靠得太近的玩家喷射墨汁。有人说，在深邃未探的洞穴中的鱿鱼具有奇异的特性。",
+            "title": "乌贼"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸阅读",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/flora",
+                "tfg:the_world/wild_fruits",
+                "tfg:the_world/climate",
+                "tfg:agriculture/animal_husbandry",
+                "tfg:agriculture/weaving",
+                "tfg:agriculture/leather_making"
+            ]
+        }
+	],
+	"read_by_default": true,
+	"sortnum": 7
+}

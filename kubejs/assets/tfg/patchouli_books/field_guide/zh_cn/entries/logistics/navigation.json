@@ -1,0 +1,93 @@
+{
+    "name": "导航",
+    "category": "tfg:logistics",
+    "icon": "firmaciv:textures/item/nav_toolkit.png",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "minimap",
+            "title": "小地图",
+            "item": "minecraft:filled_map",
+            "text": "屏幕顶角会出现一张小地图。默认会显示：$(li)你的坐标。$(li)一天中的时间。$(li)季节和日期。$(li)路径点。$(li)生物。$(br)你可以按$(item)$(k:gui.xaero_open_settings)$()来配置小地图设置。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "map",
+            "title": "全屏地图",
+            "text": "按$(item)$(k:gui.xaero_open_map)$()即可查看全屏地图。$(br)$(bold)提示$()：你可以在路径点管理界面中创建不同的路径点分组，以便整理路径点。游戏中按$(item)$(k:gui.xaero_new_waypoint)$()即可创建路径点。地图中还能查看区块领地。区块领地在多人游戏中非常有用，可以让你强制加载区域。区块可以在物品栏界面左上角的领地管理器中认领。"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "导航",
+            "anchor": "navigation",
+            "images": [
+                "firmaciv:textures/gui/book/navigation.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "在世界上辨明方向并非易事。要建立繁荣的文明，你必须清楚自己的位置，并妥善记录重要地点！如果你想抛开地图和小地图，用更沉浸的方式在世界中导航，可以制作精密仪器来确定自己的位置。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "longitude",
+            "title": "经度",
+            "text": "要确定你的经度，也就是你距离本初子午线有多远，你需要一个时钟！更确切地说，你需要一个能自动与本初子午线处太阳时保持同步的精密计时器。$(br2)先锻造出一个未完成的领航员时计，再为它装入内部机芯。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "时计",
+            "item": "firmaciv:nav_clock",
+            "text": "当你合成了你的领航员钟表时，你可以拿着它按$(item)$(k:key.use)$()来得到你的经度。请记住你的经度信息是分为东经西经的，意味着在本初子午线时未0度，在另一个相同的位置，是360度。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "纬度",
+            "anchor": "latitude",
+            "text": "要确定你的纬度，也就是你距离赤道有多远，你需要测出北极星或太阳所在的角度。具体来说，你需要一个能够观测天体并测量其与地平线夹角的精密装置。$(br2)先锻造出一个未完成的六分仪，然后在工作台上完成它。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "六分仪",
+            "item": "firmaciv:sextant",
+            "text": "当你合成了你的领航员钟表时，你可以拿着它按$(item)$(k:key.use)$()来得到你的维度。请记住，您的纬度数值分为以北纬或南纬，即赤道为0度，极地为90度。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "海拔",
+            "anchor": "altitude",
+            "text": "要确定你的海拔，也就是你相对海平面基准的垂直距离，你需要测量大气压。具体来说，你需要一个装有可压缩流体的装置，通过测量流体的体积来确定气压。$(br2)先锻造出一个未完成的晴雨表，然后在工作台上完成它。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "晴雨表",
+            "item": "firmaciv:barometer",
+            "text": "当你合成了你的领航员钟表时，你可以拿着它按$(item)$(k:key.use)$()来得到你的海拔信息。请记住，您的海拔高度是以距海平面基准面的距离来测量的。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "脚注",
+            "text": "由于你要以度为单位来测量距离，了解一下方块换算会很有帮助：每 90 度对应 20,000 格，每一度约合 222 格。$(br2)在$(tfg)中，指南针永远指向正北。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸阅读",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/glassworking",
+                "tfg:logistics/exploration_gear",
+                "tfg:logistics/boats",
+                "tfg:logistics/tack"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "extra_recipe_mappings": {
+        "firmaciv:nav_clock": 2,
+        "firmaciv:sextant": 4,
+        "firmaciv:barometer": 6,
+        "firmaciv:firmaciv_compass": 7
+    }
+}

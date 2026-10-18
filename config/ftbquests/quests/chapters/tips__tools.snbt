@@ -5,7 +5,7 @@
 	group: "19428C6E7A36D463"
 	icon: "create:white_toolbox"
 	id: "254D02A31AA8EB49"
-	order_index: 2
+	order_index: 0
 	quest_links: [
 		{
 			id: "1AD1F9822B738105"
@@ -18,14 +18,6 @@
 			linked_quest: "044DD42F4F1E900F"
 			x: 2.5d
 			y: 3.5d
-		}
-		{
-			id: "1BD87B2814DE73B7"
-			linked_quest: "533F32CCAD9D5B51"
-			shape: "heart"
-			size: 1.2d
-			x: -1.5d
-			y: -6.0d
 		}
 	]
 	quests: [
@@ -51,6 +43,7 @@
 		{
 			dependencies: ["7178843BCD50A012"]
 			description: ["{quests.tfg_tips.first_backpack.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/personal_storage 11"
 			id: "125563A12EE5C296"
 			shape: "octagon"
 			size: 2.0d
@@ -133,7 +126,11 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["1B0C58B15E7F62B3"]
+			dependencies: [
+				"1B0C58B15E7F62B3"
+				"0C9B7745D812555A"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.crafting_upgrade.desc}"]
 			id: "384B4517EB4F2687"
 			subtitle: "{quests.tfg_tips.crafting_upgrade.subtitle}"
@@ -362,8 +359,13 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["7FA5B6354A49C396"]
+			dependencies: [
+				"7FA5B6354A49C396"
+				"76F88CCE8FEF27B4"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.toolbelt.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/personal_storage 12"
 			id: "4433748B4DA986B0"
 			subtitle: "{quests.tfg_tips.toolbelt.subtitle}"
 			tasks: [
@@ -416,10 +418,11 @@
 		{
 			dependencies: [
 				"7FA5B6354A49C396"
-				"3C173357029AB649"
+				"68F1232DD918BBC2"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.backpack_materials.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/personal_storage"
 			id: "7178843BCD50A012"
 			size: 1.0d
 			subtitle: "{quests.tfg_tips.backpack_materials.subtitle}"
@@ -497,6 +500,7 @@
 			dependencies: ["72B3EA6588E18CCC"]
 			description: ["{quests.tfg_tips.portable_storage.desc}"]
 			disable_toast: true
+			guide_page: "tfg:field_guide tfg:logistics/personal_storage"
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -506,6 +510,14 @@
 					}
 				}
 				id: "sns:leather_sack"
+				tag: {
+					contents: {
+						Items: [ ]
+					}
+					void_slots: {
+						voidSlots: [I; ]
+					}
+				}
 			}
 			id: "7FA5B6354A49C396"
 			shape: "octagon"
@@ -608,10 +620,11 @@
 		{
 			dependencies: [
 				"02FDECC931B5E8EF"
-				"3C173357029AB649"
+				"68F1232DD918BBC2"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.crates.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/storage 4"
 			icon: "gtceu:bronze_crate"
 			id: "6702D52922D85C0D"
 			shape: "square"
@@ -636,6 +649,7 @@
 		{
 			dependencies: ["6702D52922D85C0D"]
 			description: ["{quests.tfg_tips.tape.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/storage 4"
 			icon: "gtceu:basic_tape"
 			id: "36B64597F76625ED"
 			shape: "square"
@@ -704,6 +718,7 @@
 		{
 			dependencies: ["57FE828BAA8F6276"]
 			description: ["{quests.tfg_tips.face_mask.desc}"]
+			guide_page: "tfg:field_guide tfg:game_mechanics/hazards 4"
 			id: "361AC06D62D9BCCF"
 			tasks: [{
 				id: "7AC3F8AF754C76E2"
@@ -880,6 +895,7 @@
 		{
 			dependencies: ["02FDECC931B5E8EF"]
 			description: ["{quests.tfg_tips.hazard_materials.desc}"]
+			guide_page: "tfg:field_guide tfg:game_mechanics/hazards"
 			icon: "createdeco:decal_skull"
 			id: "57FE828BAA8F6276"
 			subtitle: "{quests.tfg_tips.hazard_materials.subtitle}"
@@ -895,6 +911,7 @@
 		{
 			dependencies: ["57FE828BAA8F6276"]
 			description: ["{quests.tfg_tips.rubber_gloves.desc}"]
+			guide_page: "tfg:field_guide tfg:game_mechanics/hazards 5"
 			id: "3DB4AD491EF28CBE"
 			tasks: [{
 				id: "32F0E30B11FE80E4"
@@ -918,6 +935,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.hazmat.desc}"]
+			guide_page: "tfg:field_guide tfg:game_mechanics/hazards 6"
 			id: "784A0743B257EAEB"
 			subtitle: "{quests.tfg_tips.hazmat.subtitle}"
 			tasks: [
@@ -1090,6 +1108,7 @@
 		{
 			dependencies: ["02FDECC931B5E8EF"]
 			description: ["{quests.tfg_tips.terminal.desc}"]
+			guide_page: "tfg:field_guide tfg:craftsmanship/building_tools 9"
 			id: "2F6C9A987865B966"
 			subtitle: "{quests.tfg_tips.terminal.subtitle}"
 			tasks: [{
@@ -1118,32 +1137,9 @@
 			y: 15.0d
 		}
 		{
-			dependencies: ["037CDA933FBE2CBE"]
-			description: ["{quests.tfg_tips.olive_oil.desc}"]
-			id: "13FC17F88DFEB8A8"
-			optional: true
-			size: 1.5d
-			subtitle: "{quests.tfg_tips.olive_oil.subtitle}"
-			tasks: [{
-				id: "41B624CA79C96356"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "only_one(item(tfc:bucket/olive_oil)nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"tfc:olive_oil\"}}))"
-					}
-				}
-				title: "{quests.tfg_tips.olive_oil.task}"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.olive_oil.title}"
-			x: -6.0d
-			y: 15.75d
-		}
-		{
 			dependencies: ["2D959136A5FC5F46"]
 			description: ["{quests.tfg_tips.lamps.desc}"]
-			guide_page: "tfc:field_guide tfc:mechanics/lamps"
+			guide_page: "tfg:field_guide tfg:game_mechanics/lighting 8"
 			id: "037CDA933FBE2CBE"
 			subtitle: "{quests.tfg_tips.lamps.subtitle}"
 			tasks: [
@@ -1184,173 +1180,9 @@
 			y: 12.0d
 		}
 		{
-			dependencies: [
-				"037CDA933FBE2CBE"
-				"5B2696206205CB2E"
-			]
-			description: ["{quests.tfg_tips.glowstone_lamp.desc}"]
-			id: "61F58B402F1AE40B"
-			optional: true
-			shape: "heart"
-			size: 2.0d
-			subtitle: "{quests.tfg_tips.glowstone_lamp.subtitle}"
-			tasks: [{
-				id: "71D52011F8BE66F0"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "only_one(item(gtceu:glowstone_bucket)nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"gtceu:glowstone\"}}))"
-					}
-				}
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.glowstone_lamp.title}"
-			x: -2.42d
-			y: 15.75d
-		}
-		{
-			dependencies: ["037CDA933FBE2CBE"]
-			description: ["{quests.tfg_tips.tallow.desc}"]
-			id: "54E6994D5CC693A7"
-			optional: true
-			size: 1.15d
-			subtitle: "{quests.tfg_tips.tallow.subtitle}"
-			tasks: [{
-				id: "07D0D54839A9A725"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "only_one(nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"tfc:tallow\"}})item(tfc:bucket/tallow))"
-					}
-				}
-				title: "{quests.tfg_tips.tallow.task}"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.tallow.title}"
-			x: -10.0d
-			y: 15.82d
-		}
-		{
-			dependencies: ["037CDA933FBE2CBE"]
-			description: ["{quests.tfg_tips.creosote.desc}"]
-			id: "72C1E430FF6D2DD8"
-			optional: true
-			size: 1.0d
-			subtitle: "{quests.tfg_tips.creosote.subtitle}"
-			tasks: [
-				{
-					id: "6980AF89760133FD"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "only_one(item(gtceu:creosote_bucket)nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"gtceu:creosote\"}}))"
-						}
-					}
-					optional_task: true
-					title: "{quests.tfg_tips.creosote.task_creosote}"
-					type: "item"
-				}
-				{
-					id: "44D9566297A3D4E2"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "only_one(item(gtceu:oil_bucket)nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"gtceu:oil\"}}))"
-						}
-					}
-					optional_task: true
-					title: "{quests.tfg_tips.creosote.task_oil}"
-					type: "item"
-				}
-				{
-					id: "77ECE0485E20212F"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "only_one(item(gtceu:oil_light_bucket)nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"gtceu:oil_light\"}}))"
-						}
-					}
-					optional_task: true
-					title: "{quests.tfg_tips.creosote.task_light_oil}"
-					type: "item"
-				}
-				{
-					id: "65018DAF63ED6217"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "only_one(item(gtceu:oil_medium_bucket)nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"gtceu:oil_medium\"}}))"
-						}
-					}
-					optional_task: true
-					title: "{quests.tfg_tips.creosote.task_raw_oil}"
-					type: "item"
-				}
-				{
-					id: "2A5159D95817D555"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "only_one(item(gtceu:oil_heavy_bucket)nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"gtceu:oil_heavy\"}}))"
-						}
-					}
-					optional_task: true
-					title: "{quests.tfg_tips.creosote.task_heavy_oil}"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.creosote.title}"
-			x: -11.2d
-			y: 15.84d
-		}
-		{
-			dependencies: [
-				"037CDA933FBE2CBE"
-				"56CA2EB7812529C5"
-			]
-			description: ["{quests.tfg_tips.lava_lamp.desc}"]
-			icon: "minecraft:lava_bucket"
-			id: "4EBABACAB444244D"
-			optional: true
-			shape: "square"
-			size: 1.75d
-			subtitle: "{quests.tfg_tips.lava_lamp.subtitle}"
-			tasks: [
-				{
-					id: "50C7B060CC8E91AA"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:metal/lamp/blue_steel"
-					}
-					type: "item"
-				}
-				{
-					id: "5A61ADFCB2AE868E"
-					item: "minecraft:lava_bucket"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.lava_lamp.title}"
-			x: -4.375d
-			y: 15.75d
-		}
-		{
 			dependencies: ["2D959136A5FC5F46"]
 			description: ["{quests.tfg_tips.glass_blocks.desc}"]
-			guide_page: "tfc:field_guide tfc:mechanics/glassworking_applications"
+			guide_page: "tfg:field_guide tfg:craftsmanship/glassworking 14"
 			id: "382FC8824F311665"
 			subtitle: "{quests.tfg_tips.glass_blocks.subtitle}"
 			tasks: [
@@ -1386,6 +1218,7 @@
 		{
 			dependencies: ["22E604DB7E7E87FB"]
 			description: ["{quests.tfg_tips.glassblowing_tools.desc}"]
+			guide_page: "tfg:field_guide tfg:craftsmanship/glassworking 4"
 			id: "2D959136A5FC5F46"
 			subtitle: "{quests.tfg_tips.glassblowing_tools.subtitle}"
 			tasks: [{
@@ -1405,9 +1238,13 @@
 			y: 12.0d
 		}
 		{
-			dependencies: ["205E3ACA10A16C23"]
+			dependencies: [
+				"205E3ACA10A16C23"
+				"68F1232DD918BBC2"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.glassblowing.desc}"]
-			guide_page: "tfc:field_guide tfc:mechanics/glassworking"
+			guide_page: "tfg:field_guide tfg:craftsmanship/glassworking"
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -1464,7 +1301,7 @@
 		{
 			dependencies: ["205E3ACA10A16C23"]
 			description: ["{quests.tfg_tips.trowel.desc}"]
-			guide_page: "tfc:field_guide tfc:mechanics/trowel"
+			guide_page: "tfg:field_guide tfg:craftsmanship/building_tools 1"
 			id: "26DFC32AD5DED4E9"
 			subtitle: "{quests.tfg_tips.trowel.subtitle}"
 			tasks: [{
@@ -1483,8 +1320,10 @@
 			y: 9.0d
 		}
 		{
+			dependencies: ["3C48CA0DAB4EE71B"]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.fishing_net.desc}"]
-			guide_page: "tfc:field_guide tfc:mechanics/fishing_nets"
+			guide_page: "tfg:field_guide tfg:agriculture/fishing"
 			id: "2A57C41D681E4611"
 			subtitle: "{quests.tfg_tips.fishing_net.subtitle}"
 			tasks: [{
@@ -1507,8 +1346,11 @@
 			dependencies: [
 				"0B140885C77A752D"
 				"205E3ACA10A16C23"
+				"76F88CCE8FEF27B4"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.cane.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/exploration_gear 3"
 			id: "75C6BF1C9405B4C7"
 			subtitle: "{quests.tfg_tips.cane.subtitle}"
 			tasks: [{
@@ -2028,9 +1870,10 @@
 		{
 			dependencies: [
 				"72B3EA6588E18CCC"
-				"174DA15847665CF8"
+				"76F88CCE8FEF27B4"
 			]
 			description: ["{quests.tfg_tips.grappling_hook.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/exploration_gear 10"
 			id: "7A200766AAC1EE19"
 			shape: "octagon"
 			size: 2.0d
@@ -2334,6 +2177,7 @@
 			dependencies: [
 				"205E3ACA10A16C23"
 				"00D957B20B4A12F3"
+				"3D87E94AD7F58C31"
 			]
 			dependency_requirement: "one_completed"
 			description: [
@@ -2343,6 +2187,7 @@
 				""
 				"{image:tfg:textures/quests/mining_helmet_option.png width:1000 height:135 align:center fit:true}"
 			]
+			guide_page: "tfg:field_guide tfg:logistics/exploration_gear 9"
 			id: "4425519187BF28FE"
 			subtitle: "{quests.tfg_tips.digger_helmet.subtitle}"
 			tasks: [{
@@ -2456,64 +2301,6 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["037CDA933FBE2CBE"]
-			description: ["{quests.tfg_tips.tools_tips.seed_oil.desc}"]
-			id: "30B9137740247627"
-			optional: true
-			size: 1.25d
-			subtitle: "{quests.tfg_tips.tools_tips.seed_oil.subtitle}"
-			tasks: [
-				{
-					id: "795A37FA87569C51"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "item(gtceu:seed_oil_bucket)"
-						}
-					}
-					title: "{quests.tfg_tips.tools_tips.seed_oil.task}"
-					type: "item"
-				}
-				{
-					id: "62C27C8AC16CBE20"
-					item: "tfg:peanut_oil_bucket"
-					type: "item"
-				}
-				{
-					id: "2C316D9814153B6F"
-					item: "tfg:palm_oil_bucket"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.tools_tips.seed_oil.title}"
-			x: -8.72d
-			y: 15.8d
-		}
-		{
-			dependencies: ["037CDA933FBE2CBE"]
-			description: ["{quests.tfg_tips.tools_tips.soybean_oil.desc}"]
-			id: "6C0A087006DF8679"
-			optional: true
-			size: 1.25d
-			subtitle: "{quests.tfg_tips.tools_tips.soybean_oil.subtitle}"
-			tasks: [{
-				id: "627EFBAAD0A86E02"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "item(firmalife:bucket/soybean_oil)"
-					}
-				}
-				title: "{quests.tfg_tips.tools_tips.soybean_oil.task}"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.tools_tips.soybean_oil.title}"
-			x: -7.4d
-			y: 15.8d
-		}
-		{
 			dependencies: ["72B3EA6588E18CCC"]
 			description: ["{quests.tfg_tips.tools_tips.markings.desc}"]
 			icon: "ags_modernmarkings:wall_marking_hazard_diamond"
@@ -2538,7 +2325,7 @@
 		{
 			dependencies: ["205E3ACA10A16C23"]
 			description: ["{quests.tfg_tips.tools_tips.harvest_basket.desc}"]
-			guide_page: "tfc:field_guide tfc:mechanics/harvest_baskets"
+			guide_page: "tfg:field_guide tfg:agriculture/harvest_baskets"
 			id: "5B0A9757F1EF1B9E"
 			subtitle: "{quests.tfg_tips.tools_tips.harvest_basket.subtitle}"
 			tasks: [{
@@ -2558,7 +2345,10 @@
 			y: 10.0d
 		}
 		{
+			dependencies: ["68F1232DD918BBC2"]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.harpoon.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/exploration_gear 11"
 			id: "78374FC41EFCFD9B"
 			subtitle: "{quests.tfg_tips.harpoon.subtitle}"
 			tasks: [{
@@ -2579,6 +2369,7 @@
 		{
 			dependencies: ["78374FC41EFCFD9B"]
 			description: ["{quests.tfg_tips.coil.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/exploration_gear 11"
 			id: "3876C12655AE6E3C"
 			subtitle: "{quests.tfg_tips.coil.subtitle}"
 			tasks: [{
@@ -2618,7 +2409,7 @@
 				"560B17BFBE8D477D"
 			]
 			description: ["{quests.tfg_tips.first_sacks.desc}"]
-			guide_page: "tfc:field_guide tfc:sns/leather_sack"
+			guide_page: "tfg:field_guide tfg:logistics/personal_storage 6"
 			id: "509C064AA92FD78F"
 			subtitle: "{quests.tfg_tips.first_sacks.subtitle}"
 			tasks: [
@@ -2662,7 +2453,7 @@
 		{
 			dependencies: ["7178843BCD50A012"]
 			description: ["{quests.tfg_tips.frame_pack.desc}"]
-			guide_page: "tfc:field_guide tfc:sns/frame_pack"
+			guide_page: "tfg:field_guide tfg:logistics/personal_storage 9"
 			id: "5443F4F5AE53B91A"
 			shape: "octagon"
 			size: 2.0d
@@ -2693,7 +2484,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.special_sacks.desc}"]
-			guide_page: "tfc:field_guide tfc:sns/ore_sack"
+			guide_page: "tfg:field_guide tfg:logistics/personal_storage 7"
 			id: "21C58B2541BFA2EE"
 			shape: "heart"
 			subtitle: "{quests.tfg_tips.special_sacks.subtitle}"
@@ -2762,7 +2553,7 @@
 				"015E7A116CCD3191"
 			]
 			description: ["{quests.tfg_tips.straw_basket.desc}"]
-			guide_page: "tfc:field_guide tfc:sns/straw_basket"
+			guide_page: "tfg:field_guide tfg:logistics/personal_storage 5"
 			id: "67F40A90844EC0FC"
 			subtitle: "{quests.tfg_tips.straw_basket.subtitle}"
 			tasks: [{
@@ -2791,7 +2582,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.hiking.desc}"]
-			guide_page: "tfc:field_guide tfc:sns/hiking_boots"
+			guide_page: "tfg:field_guide tfg:logistics/exploration_equipment 1"
 			icon: {
 				Count: 1
 				id: "sns:hiking_boots"
@@ -2834,7 +2625,7 @@
 		{
 			dependencies: ["72B3EA6588E18CCC"]
 			description: ["{quests.tfg_tips.tools_tips.mattocks.desc}"]
-			guide_page: "tfc:field_guide tfc:roadsandroofs/making_a_road 0"
+			guide_page: "tfg:field_guide tfg:logistics/roads"
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -2887,7 +2678,7 @@
 		}
 		{
 			dependencies: ["379F434116632A89"]
-			guide_page: "tfc:field_guide tfc:roadsandroofs/making_a_road"
+			guide_page: "tfg:field_guide tfg:logistics/roads 3"
 			id: "15277C12EEB517E1"
 			shape: "diamond"
 			subtitle: "{quests.tfg_tips.tools_tips.base_course.subtitle}"
@@ -2908,23 +2699,31 @@
 			dependencies: ["15277C12EEB517E1"]
 			description: ["{quests.tfg_tips.tools_tips.concrete_roads.desc}"]
 			disable_toast: true
-			guide_page: "tfc:field_guide tfc:roadsandroofs/concrete_roads 0"
+			guide_page: "tfg:field_guide tfg:logistics/roads 12"
+			icon: "rnr:bucket/concrete"
 			id: "191DB28DC6FF4538"
 			subtitle: "{quests.tfg_tips.tools_tips.concrete_roads.subtitle}"
-			tasks: [{
-				id: "0C8FBA664C0CE240"
-				item: "rnr:bucket/concrete"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0C8FBA664C0CE240"
+					item: "rnr:bucket/concrete"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "212FD71A5529A908"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.tfg_tips.tools_tips.concrete_roads.title}"
-			x: 1.0d
+			x: 0.5d
 			y: -8.5d
 		}
 		{
 			dependencies: ["15277C12EEB517E1"]
 			description: ["{quests.tfg_tips.tools_tips.brick_roads.desc}"]
 			disable_toast: true
-			guide_page: "tfc:field_guide tfc:roadsandroofs/stone_roads 0"
+			guide_page: "tfg:field_guide tfg:logistics/roads 10"
 			id: "345EB58B7064BF4A"
 			subtitle: "{quests.tfg_tips.tools_tips.brick_roads.subtitle}"
 			tasks: [{
@@ -2940,14 +2739,14 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.tools_tips.brick_roads.title}"
-			x: 0.0d
+			x: -0.5d
 			y: -8.5d
 		}
 		{
 			dependencies: ["15277C12EEB517E1"]
 			description: ["{quests.tfg_tips.tools_tips.gravel_roads.desc}"]
 			disable_toast: true
-			guide_page: "tfc:field_guide tfc:roadsandroofs/gravel_roads"
+			guide_page: "tfg:field_guide tfg:logistics/roads 8"
 			id: "7E46F50FEBEE9003"
 			subtitle: "{quests.tfg_tips.tools_tips.gravel_roads.subtitle}"
 			tasks: [{
@@ -2963,12 +2762,17 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.tools_tips.gravel_roads.title}"
-			x: -1.0d
+			x: -1.5d
 			y: -8.5d
 		}
 		{
-			dependencies: ["205E3ACA10A16C23"]
+			dependencies: [
+				"205E3ACA10A16C23"
+				"3C48CA0DAB4EE71B"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.feeding_troughs.desc}"]
+			guide_page: "tfg:field_guide tfg:agriculture/animal_husbandry 17"
 			id: "343A712E8869482A"
 			subtitle: "{quests.tfg_tips.feeding_troughs.subtitle}"
 			tasks: [{
@@ -2988,7 +2792,10 @@
 			y: 6.5d
 		}
 		{
-			dependencies: ["205E3ACA10A16C23"]
+			dependencies: [
+				"205E3ACA10A16C23"
+				"29AF4F77D67F91D8"
+			]
 			description: ["{quests.tfg_tips.scraping_knives.desc}"]
 			id: "2301E2248A3560C8"
 			subtitle: "{quests.tfg_tips.scraping_knives.subtitle}"
@@ -3016,6 +2823,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.tools_tips.swim_gear.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/exploration_gear 5"
 			id: "615361AD621B588E"
 			subtitle: "{quests.tfg_tips.tools_tips.swim_gear.subtitle}"
 			tasks: [
@@ -3061,6 +2869,29 @@
 			title: "{quests.tfg_tips.terrafirmacraft.title}"
 			x: -4.5d
 			y: 8.25d
+		}
+		{
+			dependencies: ["15277C12EEB517E1"]
+			description: ["{quests.tfg_tips.tools_tips.asphalt_roads.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/roads 22"
+			icon: "tfg:asphalt_mix_bucket"
+			id: "0B14BD72B452C057"
+			subtitle: "{quests.tfg_tips.tools_tips.asphalt_roads.subtitle}"
+			tasks: [
+				{
+					id: "36E3CB20A999772E"
+					item: "tfg:asphalt_mix_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5317318927D82E61"
+					type: "checkmark"
+				}
+			]
+			title: "{quests.tfg_tips.tools_tips.asphalt_roads.title}"
+			x: 1.5d
+			y: -8.5d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.tools_tips.subtitle}"]

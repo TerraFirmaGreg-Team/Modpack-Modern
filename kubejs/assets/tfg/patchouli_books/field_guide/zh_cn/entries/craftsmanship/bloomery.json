@@ -1,0 +1,273 @@
+{
+    "name": "锻铁炉",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:bloomery",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)锻铁炉$()是一种把 $(thing)铁矿石$()熔炼成 $(thing)生铁方坯$()的装置，生铁方坯再经过加工就能变成 $(thing)锻铁$()。常见的铁矿石有 $(item)赤铁矿$()、$(item)褐铁矿$()和 $(item)磁铁矿$()。这些矿石熔化后是 $(thing)铸铁$()而非 $(thing)锻铁$()。所有含铁物品都会熔成铸铁。要把它们变成可用的铁，就需要锻铁炉。任何含铁物品都能放进锻铁炉，包括铁制工具和铸铁锭！"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/bloomery",
+            "text": "锻铁炉由 8 块 $(thing)青铜双板$()制成，总共需要 32 个青铜锭。$(br)锻铁炉还需要 $(t:#tfc:bloomery_insulation)$(6)22 个石质方块$()，例如石砖。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        " A ",
+                        "A A",
+                        " A "
+                    ],
+                    [
+                        " A ",
+                        "A A",
+                        " A "
+                    ],
+                    [
+                        " A ",
+                        "A A",
+                        " A "
+                    ],
+                    [
+                        "AA ",
+                        "B0A",
+                        "AA "
+                    ],
+                    [
+                        " A ",
+                        "AAA",
+                        " A "
+                    ]
+                ],
+                "mapping": {
+                    "B": "tfc:bloomery[facing=north]",
+                    "A": "tfc:rock/smooth/dacite"
+                }
+            },
+            "name": "锻铁炉结构",
+            "text": "满尺寸的锻铁炉。锻铁炉方块可以用 $(item)$(k:key.use)$()打开和关闭。",
+            "enable_visualize": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "锻铁炉最多能容纳 48 份 $(thing)投入物品$()，每层烟囱最多放 16 份物品：8 个木炭和 8 个含铁物品。$(br2)要往锻铁炉里加东西，需要爬到顶部，用 $(item)$(k:key.drop)$()把物品丢进去。里面应该会形成一根灰色的矿石柱。$(br2)你只能使用 $(item)木炭$()作为锻铁炉的燃料。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/bloomery_hole.png"
+            ],
+            "text": "每生产一块$(thing)生铁方坯$()，锻铁炉需要消耗$(thing)1份木炭$()和$(thing)144mB铸铁$()。",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "大多数铁矿粉含 129mB 铁，所以除非你用的是纯铸铁锭，否则满炉推荐使用 $(item)25 份金属矿粉$()和 $(item)22 份燃料$()。这会损失 57mB 的铁。$(br)把 $(thing)燃料$()和 $(thing)矿石$()按比例装进锻铁炉后，点燃锻铁炉门，然后等待 $(t:12.5 分钟)$(6)15 个游戏小时$()让锻铁炉完成熔炼。锻铁炉熄灭后会留下许多 $(thing)方坯$()方块，里面包含炽热的 $(thing)生铁方坯$()，用镐反复挖掘 $(thing)方坯$()方块即可取出。"
+        },
+        {
+            "type": "tfg:table",
+            "anchor": "ratio_table",
+            "strings": [
+                {
+                    "text": "铁的类型",
+                    "bold": true
+                },
+                {
+                    "text": "铁",
+                    "bold": true
+                },
+                {
+                    "text": "燃料",
+                    "bold": true
+                },
+                {
+                    "text": "格数",
+                    "bold": true
+                },
+                {
+                    "text": "方坯",
+                    "bold": true
+                },
+                {
+                    "text": "损耗",
+                    "bold": true
+                },
+                {
+                    "text": "铸铁锭"
+                },
+                {
+                    "text": "24"
+                },
+                {
+                    "text": "24"
+                },
+                {
+                    "text": "48/48"
+                },
+                {
+                    "text": "24"
+                },
+                {
+                    "text": "0mB"
+                },
+                {
+                    "text": "129mB 矿粉"
+                },
+                {
+                    "text": "25"
+                },
+                {
+                    "text": "22"
+                },
+                {
+                    "text": "47/48"
+                },
+                {
+                    "text": "22"
+                },
+                {
+                    "text": "57mB"
+                },
+                {
+                    "text": "129mB 矿粉"
+                },
+                {
+                    "text": "19"
+                },
+                {
+                    "text": "17"
+                },
+                {
+                    "text": "36/48"
+                },
+                {
+                    "text": "17"
+                },
+                {
+                    "text": "3mB"
+                }
+            ],
+            "text": "记住，为那一点点铁损耗操心可不值得！",
+            "title": "锻铁炉配比",
+            "legend": [],
+            "columns": 5,
+            "first_column_width": 70,
+            "column_width": 32,
+            "row_height": 20,
+            "left_buffer": 2,
+            "top_buffer": 12,
+            "draw_background": false
+        },
+        {
+            "type": "patchouli:empty",
+            "draw_filler": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:bloom[layers=8]"
+                }
+            },
+            "name": "方坯",
+            "text": "一大块$(thing)方坯$()。",
+            "enable_visualize": false
+        },
+        {
+            "type": "tfg:anvil_recipe",
+            "recipe": "tfc:anvil/refined_iron_bloom",
+            "text": "$(thing)生铁方坯$()必须在 $(l:craftsmanship/anvils)砧$()上加工成 $(thing)精铁方坯$()，然后再加工成 $(thing)锻铁锭$()。$(br)建议使用 $(l:craftsmanship/anvils#helve_hammer)杠杆锤$()来自动化这些精炼步骤。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "tips",
+            "text": "$(li)如果锻铁炉里的物品超出了它能处理的数量，它就会试图从锻铁炉门口吐出来。$(li)如果要取回未点燃的锻铁炉里的物品，直接把锻铁炉方块挖掉即可。$(li)生铁方坯只会熔化成铸铁，而不是锻铁。方坯必须经过锻炼才能变成锻铁！",
+            "title": "锻铁炉提示"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "steam_bloomery",
+            "title": "蒸汽锻铁炉",
+            "item": "tfg:steam_bloomery",
+            "text": "做出 $(item)黑钢$()后即可解锁 $(thing)蒸汽锻铁炉$()。这种结构能够自动生产方坯，而且借助高压蒸汽，比传统锻铁炉更快、更高效。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        " A ",
+                        "A A",
+                        " A "
+                    ],
+                    [
+                        " A ",
+                        "O A",
+                        " A "
+                    ],
+                    [
+                        " A ",
+                        "I A",
+                        " A "
+                    ],
+                    [
+                        "AA ",
+                        "B0A",
+                        "AA "
+                    ],
+                    [
+                        " F ",
+                        "SAF",
+                        " F "
+                    ]
+                ],
+                "mapping": {
+                    "B": "tfg:steam_bloomery[facing=north]",
+                    "A": "tfc:rock/smooth/dacite",
+                    "F": "gtceu:bronze_firebox_casing",
+                    "S": "gtceu:steam_input_hatch[facing=north]",
+                    "I": "gtceu:steam_input_bus[facing=north]",
+                    "O": "gtceu:steam_output_bus[facing=north]"
+                }
+            },
+            "name": "结构",
+            "text": "蒸汽锻铁炉需要物品输入总线和物品输出总线、一个蒸汽输入仓，以及三个青铜燃烧室。",
+            "enable_visualize": true
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸阅读",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/pottery",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/charcoal_forge",
+                "tfg:craftsmanship/crucible",
+                "tfg:craftsmanship/charcoal_pit",
+                "tfg:craftsmanship/blast_furnace",
+                "tfg:craftsmanship/anvils",
+                "tfg:game_mechanics/heating"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 9,
+    "extra_recipe_mappings": {
+        "tfc:bloom": 10,
+        "tfc:raw_iron_bloom": 10,
+        "tfc:refined_iron_bloom": 10,
+        "tfc:bloomery": 1,
+        "tfg:steam_bloomery": 12
+    }
+}

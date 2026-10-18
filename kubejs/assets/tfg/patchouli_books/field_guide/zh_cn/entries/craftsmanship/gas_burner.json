@@ -1,0 +1,247 @@
+{
+    "name": "燃气灶",
+    "category": "tfg:craftsmanship",
+    "icon": "tfg:gas_burner",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "燃气灶",
+            "text": "$(thing)燃气灶$()是一种能燃烧$(thing)油类$()、$(l:cooking/alcohol)酒类$()和$(thing)石油燃料$()等流体和气体来产生$(l:game_mechanics/heating)热量$()的设备。$(br)与其他热源不同，燃气灶的最高温度可以用$(l:craftsmanship/gas_burner#redstone)红石$()来设定，从而更精确地控制$(l:cooking/cooking_methods)烹饪$()和$(l:craftsmanship/crucible)熔炼$()。$(br)燃气灶不会因$(l:craftsmanship/charcoal_forge#bellows)风箱$()的鼓风而升温。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfg:gas_burner[lit=true]"
+                }
+            },
+            "name": "燃气灶",
+            "text": "$(thing)燃气灶$()会通过其一个面上的仪表指示最高温度等级。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "redstone",
+            "title": "红石控制",
+            "text": "这台设备有许多可以用$(bold)$(c)红石$()控制的功能：$(li)输入强度为 $(3)15$() 的信号会$(italic)点燃$()燃气灶。$(li)切断所有红石信号会$(italic)熄灭$()燃气灶。$(li)燃气灶的$(italic)最高温度$()可以通过输入 $(3)3-14$() 之间的红石信号来设定。$(li)比较器输出会读取当前$(italic)燃料余量$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "functions",
+            "title": "功能",
+            "text": "燃气灶可以用$(thing)流体管道$()自动供给燃料，也可以手持装有流体的容器按$(item)$(k:key.use)$()手动添加。$(br)其界面中会显示：$(li)热量等级，以及指示最高设定温度的条形。$(li)火焰进度条，显示剩余时间，悬停时还会显示燃烧温度。$(li)燃料箱，带有输入/输出桶插槽。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "燃气灶的用途十分广泛。任何可以从底部受热的设备都能用它加热，例如$(l:craftsmanship/crucible)坩埚$()、$(l:cooking/cooking_methods#grill)烤架$()、$(l:cooking/cooking_methods#pot)陶锅$()和$(l:cooking/cooking_methods#top_oven)烤箱$()，以及任何需要热源的机械动力机械装置。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "Y"
+                    ],
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfg:gas_burner[lit=true]",
+                    "Y": "tfc:crucible"
+                }
+            },
+            "name": "",
+            "text": "$(thing)燃气灶$()与坩埚",
+            "enable_visualize": false
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "Y"
+                        ],
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:gas_burner[lit=true]",
+                        "Y": "firmalife:stovetop_grill"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "Y"
+                        ],
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:gas_burner[lit=true]",
+                        "Y": "firmalife:stovetop_pot"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "Y"
+                        ],
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:gas_burner[lit=true]",
+                        "Y": "firmalife:cured_stone_oven_top"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "Y"
+                        ],
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:gas_burner[lit=true]",
+                        "Y": "firmalife:vat"
+                    }
+                }
+            ],
+            "name": "",
+            "text": "$(thing)燃气灶$()与烹饪设备。",
+            "enable_visualize": false
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "Z"
+                        ],
+                        [
+                            " "
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:gas_burner[lit=true]",
+                        "Y": "create:basin",
+                        "Z": "greate:steel_mechanical_press"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "Z"
+                        ],
+                        [
+                            " "
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:gas_burner[lit=true]",
+                        "Y": "create:basin",
+                        "Z": "greate:steel_mechanical_mixer"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "Z"
+                        ],
+                        [
+                            " "
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:gas_burner[lit=true]",
+                        "Y": "create:basin",
+                        "Z": "vintageimprovements:vacuum_chamber"
+                    }
+                }
+            ],
+            "name": "",
+            "text": "$(thing)燃气灶$()与机械动力机械。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸阅读",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/pottery",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/charcoal_forge",
+                "tfg:craftsmanship/crucible",
+                "tfg:cooking/alcohol",
+                "tfg:cooking/cooking_methods",
+                "tfg:logistics/redstone_devices",
+                "tfg:game_mechanics/heating"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 11,
+    "extra_recipe_mappings": {
+        "tfg:gas_burner": 2
+    }
+}

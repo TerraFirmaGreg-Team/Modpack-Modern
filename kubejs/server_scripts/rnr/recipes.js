@@ -4,6 +4,9 @@ const registerRnrRecipes = (event) => {
 	event.remove({ input: 'rnr:concrete_powder' })
 	event.remove({ id: 'rnr:crafting/concrete_powder' })
 
+	// Buff output from 6 to 12
+	event.replaceOutput({ id: 'rnr:crafting/hoggin_mix' }, 'rnr:hoggin_mix', '12x rnr:hoggin_mix')
+
 	event.recipes.gtceu.assembler('rnr:assembler/base_course')
 		.itemInputs('1x rnr:crushed_base_course', '1x #tfc:dirt')
 		.itemOutputs('2x rnr:base_course')

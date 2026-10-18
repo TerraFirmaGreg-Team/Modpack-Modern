@@ -12,7 +12,7 @@
 		}
 	}
 	id: "28EBC0FF82EFD94B"
-	order_index: 4
+	order_index: 2
 	quest_links: [
 		{
 			id: "77A0335E38D755CA"
@@ -71,90 +71,6 @@
 			y: -1.0d
 		}
 		{
-			id: "39C4E4082B9B5731"
-			linked_quest: "49C1D61741AA288E"
-			shape: "square"
-			x: 4.0d
-			y: 3.0d
-		}
-		{
-			id: "346904314F61ABDB"
-			linked_quest: "698B5F65F2DE4439"
-			shape: "square"
-			x: 4.0d
-			y: 4.0d
-		}
-		{
-			id: "1C0407D7B45603FC"
-			linked_quest: "145F71A817C5996E"
-			shape: "square"
-			x: 4.0d
-			y: 5.0d
-		}
-		{
-			id: "20BCF31B1430ECFC"
-			linked_quest: "327C3E02CD751453"
-			shape: "square"
-			x: 4.0d
-			y: 6.0d
-		}
-		{
-			id: "384FE989BF9BD89D"
-			linked_quest: "082AB255886E73C2"
-			shape: "square"
-			x: 6.0d
-			y: 5.0d
-		}
-		{
-			id: "3DD1B0AE6630A8E5"
-			linked_quest: "370FC1CDF5F9A9CC"
-			shape: "square"
-			x: 6.0d
-			y: 6.0d
-		}
-		{
-			id: "519774012E47875A"
-			linked_quest: "359121584E056022"
-			shape: "square"
-			x: 6.0d
-			y: 7.0d
-		}
-		{
-			id: "0B488F9F519FBA61"
-			linked_quest: "3B49BD004F38E1A2"
-			shape: "square"
-			x: 6.0d
-			y: 8.0d
-		}
-		{
-			id: "025C3D8C61A9C011"
-			linked_quest: "42CD789B8C40E424"
-			shape: "square"
-			x: 5.0d
-			y: 4.0d
-		}
-		{
-			id: "54F1B023BEC98314"
-			linked_quest: "47087361D6DE7DCF"
-			shape: "square"
-			x: 5.0d
-			y: 5.0d
-		}
-		{
-			id: "4EABE2BF51A06FC8"
-			linked_quest: "7AE681E2AB31EA0D"
-			shape: "square"
-			x: 5.0d
-			y: 6.0d
-		}
-		{
-			id: "607E9492E895927E"
-			linked_quest: "79E4E53E9DF45549"
-			shape: "square"
-			x: 5.0d
-			y: 7.0d
-		}
-		{
 			id: "709FB8C1561E7BB8"
 			linked_quest: "1646BF9194100E57"
 			x: 8.0d
@@ -165,58 +81,6 @@
 			linked_quest: "6B08799BCFD01D3D"
 			x: 8.0d
 			y: 2.0d
-		}
-		{
-			id: "76C69275A82861C8"
-			linked_quest: "7A1E3C3A2D699C5B"
-			x: 8.0d
-			y: 4.0d
-		}
-		{
-			id: "6C144735C40EE615"
-			linked_quest: "2FCBA0D780DBDA9E"
-			x: 8.0d
-			y: 5.0d
-		}
-		{
-			id: "5FDCCB7CE9DACB34"
-			linked_quest: "4C7C0F6A6598BC24"
-			x: 8.0d
-			y: 6.0d
-		}
-		{
-			id: "4ACE1AFCEDC37A05"
-			linked_quest: "6AF3A40BC9CE7122"
-			x: 8.0d
-			y: 7.0d
-		}
-		{
-			id: "532482B324E31386"
-			linked_quest: "1776FA1F3255731E"
-			shape: "square"
-			x: 9.0d
-			y: 4.0d
-		}
-		{
-			id: "0F86FC5CD130B2E1"
-			linked_quest: "78277DBC07D3C45C"
-			shape: "square"
-			x: 9.0d
-			y: 5.0d
-		}
-		{
-			id: "7D227159C48FAB94"
-			linked_quest: "0DC999F79A685194"
-			shape: "square"
-			x: 9.0d
-			y: 6.0d
-		}
-		{
-			id: "718938D16A6098A7"
-			linked_quest: "35F13B6D60361904"
-			shape: "square"
-			x: 9.0d
-			y: 7.0d
 		}
 		{
 			id: "713A4F2E798A8BDB"
@@ -336,18 +200,6 @@
 			y: 3.0d
 		}
 		{
-			id: "114F4440C35A8772"
-			linked_quest: "5F3B9E4565922E77"
-			x: -3.0d
-			y: 4.0d
-		}
-		{
-			id: "2270E4372C4A926F"
-			linked_quest: "5F937028722EB4C6"
-			x: -4.0d
-			y: 4.0d
-		}
-		{
 			id: "04B2D5C575260C0D"
 			linked_quest: "7E7F18A8422A6A28"
 			x: 3.0d
@@ -382,6 +234,24 @@
 			linked_quest: "7F4E529627AD9148"
 			x: 8.0d
 			y: 3.0d
+		}
+		{
+			id: "062C5702EF3C00CB"
+			linked_quest: "5899CCAFC067D029"
+			x: -3.0d
+			y: 4.0d
+		}
+		{
+			id: "4E74AD52F4788885"
+			linked_quest: "4B5FD29261A04F49"
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			id: "77D5CE8AFE14D6E9"
+			linked_quest: "706A1824B1487385"
+			x: -1.0d
+			y: -4.5d
 		}
 	]
 	quests: [
@@ -456,55 +326,52 @@
 			y: -3.0d
 		}
 		{
-			dependencies: [
-				"49C1D61741AA288E"
-				"327C3E02CD751453"
-				"698B5F65F2DE4439"
-				"145F71A817C5996E"
-			]
 			description: ["{quests.development.hull_iv.desc}"]
+			disable_toast: true
 			hide_dependency_lines: true
 			icon: "gtceu:iv_machine_hull"
 			id: "66A23AC2EE9BC4AE"
 			progression_mode: "linear"
 			size: 1.0d
 			subtitle: "{quests.development.hull_iv.subtitle}"
+			tasks: [{
+				id: "29F4F3C27BEA6F1D"
+				type: "checkmark"
+			}]
 			title: "{quests.development.hull_iv.title}"
 			x: 4.0d
 			y: -3.0d
 		}
 		{
-			dependencies: [
-				"42CD789B8C40E424"
-				"79E4E53E9DF45549"
-				"47087361D6DE7DCF"
-				"7AE681E2AB31EA0D"
-			]
 			description: ["{quests.development.hull_luv.desc}"]
+			disable_toast: true
 			hide_dependency_lines: true
 			icon: "gtceu:luv_machine_hull"
 			id: "6906121936A688C0"
 			progression_mode: "linear"
 			size: 1.0d
 			subtitle: "{quests.development.hull_luv.subtitle}"
+			tasks: [{
+				id: "79797DA5FEC1CCF1"
+				type: "checkmark"
+			}]
 			title: "{quests.development.hull_luv.title}"
 			x: 5.0d
 			y: -3.0d
 		}
 		{
-			dependencies: [
-				"082AB255886E73C2"
-				"3B49BD004F38E1A2"
-				"370FC1CDF5F9A9CC"
-				"359121584E056022"
-			]
 			description: ["{quests.development.hull_zpm.desc}"]
+			disable_toast: true
 			hide_dependency_lines: true
 			icon: "gtceu:zpm_machine_hull"
 			id: "629E023752317A31"
 			progression_mode: "linear"
 			size: 1.0d
 			subtitle: "{quests.development.hull_zpm.subtitle}"
+			tasks: [{
+				id: "6DC0A2521AB412B2"
+				type: "checkmark"
+			}]
 			title: "{quests.development.hull_zpm.title}"
 			x: 6.0d
 			y: -3.0d
@@ -592,7 +459,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["49C1D61741AA288E"]
 			description: ["{quests.development.ev.desc}"]
 			hide_dependency_lines: true
 			icon: "tfg:ev_universal_circuit"
@@ -609,10 +475,6 @@
 			y: 3.0d
 		}
 		{
-			dependencies: [
-				"42CD789B8C40E424"
-				"698B5F65F2DE4439"
-			]
 			description: ["{quests.development.iv.desc}"]
 			hide_dependency_lines: true
 			icon: "tfg:iv_universal_circuit"
@@ -629,11 +491,6 @@
 			y: 4.0d
 		}
 		{
-			dependencies: [
-				"082AB255886E73C2"
-				"47087361D6DE7DCF"
-				"145F71A817C5996E"
-			]
 			description: ["{quests.development.luv.desc}"]
 			hide_dependency_lines: true
 			icon: "tfg:luv_universal_circuit"
@@ -650,11 +507,6 @@
 			y: 5.0d
 		}
 		{
-			dependencies: [
-				"370FC1CDF5F9A9CC"
-				"327C3E02CD751453"
-				"7AE681E2AB31EA0D"
-			]
 			description: ["{quests.development.zpm.desc}"]
 			hide_dependency_lines: true
 			icon: "tfg:zpm_universal_circuit"
@@ -671,10 +523,6 @@
 			y: 6.0d
 		}
 		{
-			dependencies: [
-				"79E4E53E9DF45549"
-				"359121584E056022"
-			]
 			description: ["{quests.development.uv.desc}"]
 			hide_dependency_lines: true
 			icon: "tfg:uv_universal_circuit"
@@ -691,7 +539,6 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["3B49BD004F38E1A2"]
 			description: ["{quests.development.uhv.desc}"]
 			hide_dependency_lines: true
 			icon: "tfg:uhv_universal_circuit"

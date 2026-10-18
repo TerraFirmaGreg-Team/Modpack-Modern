@@ -60,7 +60,8 @@ function registerTFGFoodData(event) {
 
 	// Ice Soup
 	event.foodItem("tfg:food/ice_soup", (food) => {
-		food.hunger(1);
+		food.hunger(4);
+		food.saturation(0);
 		food.water(20);
 		food.cooling(3);
 		food.decayModifier(0);
@@ -158,6 +159,7 @@ function registerTFGFoodData(event) {
 		'species:springling_egg'
 	];
 	eggItems.forEach(egg => {
+		event.itemHeat(egg, 1, null, null);
 		event.foodItem(egg, food => {
 			food.decayModifier(2)
 		});

@@ -1,0 +1,74 @@
+{
+  "name": "巧克力甜点",
+  "category": "tfg:cooking",
+  "icon": "firmalife:textures/item/food/dark_chocolate.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)制作巧克力$()需要经过几道加工步骤，这是一种沉浸式的烹饪体验。$(br)巧克力类物品含有$(l:cooking/food_and_water#grain)谷物$()和$(l:cooking/food_and_water#dairy)乳制品$()营养，食用时还会提供$(l:cooking/food_and_water#sugary_transient_effect)甜腻$()效果，是非常好的餐点食材。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "要开始加工巧克力，首先必须$(thing)烘烤$()可可豆（在$(l:cooking/cooking_methods#oven)烤炉$()中进行），做成$(thing)烘焙可可豆$()。然后，将烘焙过的可可豆与$(thing)刀$()一起合成，把豆子分成$(thing)可可粉$()和$(thing)可可脂$()。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "用$(l:cooking/mixing_bowl)搅拌碗$()把可可粉、可可脂和甜味剂（糖或蜂蜜）混合起来，就能做出$(thing)巧克力混合物$()。可可脂和可可粉的比例决定了产物：$(br)$(li)1 份可可粉、1 份可可脂、1 份甜味剂：牛奶巧克力$()$(li)2 份可可粉、1 份甜味剂：黑巧克力$()$(li)2 份可可脂、1 份甜味剂：白巧克力$()"
+    },
+    {
+      "type": "tfg:drying_recipe",
+      "recipe": "firmalife:drying/dark_chocolate",
+      "text": "最后，把巧克力放在$(l:cooking/decay#drying)干燥垫$()上干燥，做成$(thing)巧克力$()。"
+    },
+    {
+      "title": "巧克力浇注",
+      "type": "patchouli:text",
+      "text": "$(thing)巧克力$()可不只能是无聊的条状！把$(thing)白$()、$(thing)牛奶$()或$(thing)黑$()巧克力放进$(thing)小缸$()或$(thing)坩埚$()里融化，再浇铸进模具，就能得到巧克力甜点。巧克力甜点有三种：$(thing)爱心$()、$(thing)铃铛$()和$(thing)刀子$()。每一种都要把巧克力浇铸进不同的模具来制作。"
+    },
+    {
+      "type": "tfg:knapping_recipe",
+      "recipe": "tfcchannelcasting:clay_knapping/unfired_heart_mold",
+      "text": "捏制一个$(thing)心型模具$()，用来制作$(thing)心型$()巧克力。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "巧克力点心提供与巧克力棒相同的营养，但食用更快。若在特定月份制作，还会获得使营养翻倍的特质：$(thing)巧克力心型$()在二月获得$(thing)浪漫$()，$(thing)黑巧克力冬铃$()在十二月获得$(thing)节庆$()，$(thing)黑巧克力刀$()在十月获得$(thing)惊悚$()。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "此外，点心可以做成$(thing)夹心$()以获得额外收益：夹心$(thing)果酱$()会额外提供$(thing)水果$()营养，夹心$(thing)酒精$()会给予正面药水效果。"
+    },
+    {
+      "type": "tfg:sealed_barrel_recipe",
+      "recipe": "tfcchannelcasting:barrel/fill_with_sweet_liquor",
+      "text": "食用$(thing)甜酒夹心$()巧克力会获得速度提升。"
+    },
+    {
+      "type": "tfg:sealed_barrel_recipe",
+      "recipe": "tfcchannelcasting:barrel/fill_with_strong_liquor",
+      "text": "食用$(thing)烈酒夹心$()巧克力会获得伤害抗性。"
+    },
+    {
+      "type": "tfg:sealed_barrel_recipe",
+      "recipe": "tfcchannelcasting:barrel/fill_with_whiskey",
+      "text": "食用$(thing)威士忌夹心$()巧克力会获得急迫效果。"
+    },
+    {
+      "type": "patchouli:relations",
+      "title": "延伸阅读",
+      "anchor": "relations",
+      "entries": [
+            "tfg:cooking/alcohol",
+            "tfg:cooking/jam",
+            "tfg:the_world/wild_fruits"
+      ]
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 11,
+  "extra_recipe_mappings": {
+    "tag:firmalife:foods/chocolate": 0,
+    "tag:firmalife:chocolate_blends": 2,
+    "tag:tfcchannelcasting:foods/chocolate_sweet": 6
+  }
+}

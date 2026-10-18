@@ -1,0 +1,40 @@
+{
+	"name": "发射前准备",
+	"category": "tfg:the_moon",
+	"icon": "ad_astra:tier_1_rocket",
+	"read_by_default": true,
+	"priority": true,
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "迫不及待想飞向终极边疆了吗？我们完全理解这份热情，但你不能就这样把自己扔进太空还指望能活下来！$(thing)准备$()才是生存的关键，否则你只会退回石器时代，敲几秒钟石头，然后窒息而亡。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "确保你至少备齐以下物品：$(li)一套$(item)航天服$()和一整桶可呼吸气体$(li)一艘$(item)火箭$()，另备一整桶备用$(thing)燃料$()$(li)第二个$(item)发射台$()，以便返程$(li)充足的食物和水$(li)武器和盾牌，以防月球闹鬼……"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "food",
+			"item": "tfg:food/meal_bag,tfg:food/calorie_paste,tfg:food/freeze_dried_fruit",
+			"text": "不妨为接下来的旅程带上一些$(thing)太空食品$()！制作简单，保质期还长。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(l:cooking/decay#freeze_dry)冻干水果$()是美味的零食，$(item)餐包$()可以装任何你在地球上吃的普通食物，还有$(item)营养膏$()——营养全面但口感堪忧。吃完后铝箔包装袋还可以重复使用！"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "延伸阅读",
+			"anchor": "relations",
+			"entries": [
+				"tfg:the_moon/the_moon",
+				"tfg:the_moon/orbit",
+				"tfg:cooking/food_and_water",
+				"tfg:cooking/sandwiches",
+				"tfg:cooking/decay"
+			]
+		}
+	]
+}

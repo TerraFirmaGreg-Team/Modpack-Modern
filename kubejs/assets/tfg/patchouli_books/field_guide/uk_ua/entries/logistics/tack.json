@@ -1,0 +1,124 @@
+{
+    "name": "Упряж та візки",
+    "category": "tfg:logistics",
+    "icon": "sns:metal/horseshoe/steel",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:logistics/tack#saddle)Сідло$()$(li)$(bold)$(l:logistics/tack#armor)Кінська броня$()$(li)$(bold)$(l:logistics/tack#horseshoes)Підкови$()$(li)$(bold)$(l:logistics/tack#supply_cart)Візок для припасів$()$(li)$(bold)$(l:logistics/tack#plow)Плуг$()$(li)$(bold)$(l:logistics/tack#animal_cart)Візок для тварин$()$(li)$(bold)$(l:logistics/tack#paving_cart)Візок для мощення$()",
+            "title": "Індекс",
+            "anchor": "index"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "saddle",
+            "title": "Сідло",
+            "item": "minecraft:saddle",
+            "text": "$(item)Сідло$() можна спорядити на будь-яку дорослу $(l:agriculture/animal_husbandry#equines)конеподібну тварину$() або $(l:agriculture/animal_husbandry#camelides)верблюда$(), якщо їхня зрілість перевищує 15%. Сідла виготовляються зі $(l:agriculture/leather_making)шкіри$() та дають змогу тобі їздити на придатних тваринах і керувати їхнім рухом."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "armor",
+            "title": "Кінська броня",
+            "item": "minecraft:leather_horse_armor,tfc:metal/horse_armor/bismuth_bronze,tfc:metal/horse_armor/black_bronze,tfc:metal/horse_armor/bronze,tfc:metal/horse_armor/copper,tfc:metal/horse_armor/wrought_iron,tfc:metal/horse_armor/steel,tfc:metal/horse_armor/black_steel,tfc:metal/horse_armor/red_steel,tfc:metal/horse_armor/blue_steel",
+            "text": "$(item)Кінська броню$() можна надягати на будь-якого дорослого $(l:agriculture/animal_husbandry#equines)коня$(), якщо його зрілість становить понад 15%. Кінську броню можна виготовити зі $(l:agriculture/leather_making)шкіри$() та $(l:craftsmanship/metallurgy)металу$(), і вона забезпечує додатковий захист твоєму коневі. Шкіряну броню також можна фарбувати."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "horseshoes",
+            "title": "Підкови",
+            "item": "sns:metal/horseshoes/steel,sns:metal/horseshoes/black_steel,sns:metal/horseshoes/blue_steel,sns:metal/horseshoes/red_steel",
+            "text": "$(item)Підкови$() виготовляються по одній із різних видів сталі, а потім об’єднуються в комплекти. Якщо вдягнути їх на будь-яку $(l:agriculture/animal_husbandry#equines)конячну$() або $(l:agriculture/animal_husbandry#equines)верблюдоподібну тварину$(), вони значно покращують її характеристики, які можна переглянути в описі предмета.$(br)$(bold)ПОРАДА:$() Використовуючи підкови вищого рівня, варто добре прив’язати свого коня чи верблюда."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "supply_cart",
+            "title": "Візок із припасами",
+            "item": "tag:tfcastikorcarts:supply_cart",
+            "text": "$(item)Візки із припасами$() можна причепити до осідланих тварин за допомогою $(item)$(k:key.astikorcarts.desc)$() або тягнути власноруч. Візки із припасами можуть вміщувати велику кількість предметів у своєму сховищі, доступному за допомогою $(item)$(k:key.sneak)-$(k:key.use)$(). Однак надмірна кількість предметів або кілька дуже важких предметів значно сповільнять твою їздову тварину."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfcastikorcarts:supply_cart/oak",
+            "scale": 0.4,
+            "name": " ",
+            "text": "Візок із припасами фізично відображатиме перші кілька предметів зі свого інвентарю."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "plow",
+            "title": "Плуг",
+            "item": "tag:tfcastikorcarts:plow",
+            "text": "$(item)Плуг$() можна причепити до тварин під сідлом за допомогою $(item)$(k:key.astikorcarts.desc)$() або тягнути власноруч. Плуг може вміщувати 3 інструменти, доступні за допомогою $(item)$(k:key.sneak)-$(k:key.use)$(). Коли плуг активовано за допомогою $(item)$(k:key.use)$(), він намагатиметься використовувати ці інструменти на блоках під ним. Це означає, що він може використовувати $(thing)мотики та коси$() для обробітку ґрунту, $(thing)лопати та совки$() для прокладання доріжок і навіть $(thing)сокири$() для очищення колод від кори."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfcastikorcarts:plow/oak",
+            "scale": 0.4,
+            "name": " ",
+            "text": "Плуг відображатиме свої інструменти. Він буде задіяний, коли його важелі опущені."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "animal_cart",
+            "title": "Тваринний візок",
+            "item": "tag:tfcastikorcarts:animal_cart",
+            "text": "$(item)Візок для тварин$() можна прикріпити до осідланих тварин за допомогою $(item)$(k:key.astikorcarts.desc)$() або тягнути власноруч. Візок для тварин може вміщувати до $(thing)2 тварин$(), які автоматично сідають у візок, коли їх переїхати ним."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfcastikorcarts:animal_cart/oak",
+            "scale": 0.4,
+            "name": " ",
+            "text": "Візок для тварин може навіть перевозити інших гравців."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Візок для мощення",
+            "anchor": "paving_cart",
+            "item": "tfg:rnr_plow",
+            "text": "$(thing)Візок для мощення$() — це спеціалізований візок, призначений для швидкого та ефективного укладання дорожнього покриття. Докладніше про нього читай у розділі $(l:logistics/roads#paving_cart)Дороги$()."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:rnr_plow",
+            "scale": 0.4,
+            "name": "Візок для мощення",
+            "text": "Візок для мощення буде активовано, коли його леза опущені."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Докладніше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/metallurgy",
+                "tfg:the_world/wild_animals",
+                "tfg:agriculture/animal_husbandry",
+                "tfg:agriculture/leather_making",
+                "tfg:logistics/roads",
+                "tfg:logistics/exploration_gear"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "extra_recipe_mappings": {
+        "minecraft:saddle": 1,
+        "minecraft:leather_horse_armor": 2,
+        "tfc:metal/horse_armor/bismuth_bronze": 2,
+        "tfc:metal/horse_armor/black_bronze": 2,
+        "tfc:metal/horse_armor/bronze": 2,
+        "tfc:metal/horse_armor/copper": 2,
+        "tfc:metal/horse_armor/wrought_iron": 2,
+        "tfc:metal/horse_armor/steel": 2,
+        "tfc:metal/horse_armor/black_steel": 2,
+        "tfc:metal/horse_armor/red_steel": 2,
+        "tfc:metal/horse_armor/blue_steel": 2,
+        "sns:metal/horseshoes/steel": 3,
+        "sns:metal/horseshoes/black_steel": 3,
+        "sns:metal/horseshoes/blue_steel": 3,
+        "sns:metal/horseshoes/red_steel": 3,
+        "tag:tfcastikorcarts:supply_cart": 4,
+        "tag:tfcastikorcarts:plow": 6,
+        "tag:tfcastikorcarts:animal_cart": 8
+    }
+}

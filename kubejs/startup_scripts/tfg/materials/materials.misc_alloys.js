@@ -42,11 +42,13 @@ function registerTFGMiscAlloyMaterials(event) {
 		.iconSet('dull')
 		.color(0x42705D)
 		.components('4x boron', '1x carbon')
-		.blastTemp(3041, $BlastProperty.GasTier.MID, GTValues.VA[GTValues.HV], 1500)
+		.blastTemp(2073, $BlastProperty.GasTier.MID, GTValues.VA[GTValues.HV], 1500)
 		.flags(
 			GTMaterialFlags.GENERATE_PLATE,
 			GTMaterialFlags.GENERATE_ROD,
-			GTMaterialFlags.GENERATE_LONG_ROD)
+			GTMaterialFlags.GENERATE_LONG_ROD,
+			TFGMaterialFlags.HAS_GT_TOOL,
+			TFGMaterialFlags.GENERATE_DOUBLE_INGOTS)
 
 
 	// Material for MV

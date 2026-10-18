@@ -1,0 +1,628 @@
+{
+    "name": "船只",
+    "category": "tfg:logistics",
+    "icon": "firmaciv:textures/item/rowboat_icon_only.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:logistics/boats#intro)航行信息$()$(li2)$(l:logistics/boats#customization)自定义改装$()$(li2)$(l:logistics/boats#boat_items)能放进物品栏的船$()$(li2)$(l:logistics/boats#animals)运输动物$()$(li2)$(l:logistics/boats#paddles)桨$()$(li2)$(l:logistics/boats#cleats)缆桩与引绳$()$(li2)$(l:logistics/boats#anchors)锚与绞车$()$(li2)$(l:logistics/boats#sails)船帆$()$(li2)$(l:logistics/boats#sailing)航行$()$(li2)$(l:logistics/boats#painting)上漆与染色$()$(li2)$(l:logistics/boats#damage)损坏与修复$()",
+            "title": "目录",
+            "anchor": "index"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:logistics/boats#watercraft)水上载具$()$(li2)$(l:logistics/boats#kayak)皮划艇$()$(li2)$(l:logistics/boats#canoe)独木舟$()$(li2)$(l:logistics/boats#rowboat)划艇$()$(li2)$(l:logistics/boats#sloop)单桅纵帆船$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "简介",
+            "text": "建造并使用一艘船将比你曾经习惯的稍微复杂一些，但是如果要向大海进发，没有什么比先建造一艘完美的船更重要的了。仔细阅读本手册，学习雕刻、手工制作、建造、划船、划水、驾驶和自定义的所有操作方法。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "firmaciv:textures/gui/book/boats.png"
+            ],
+            "border": true,
+            "text": "要环游世界，或者只在你所在的区域通勤，最好走那些可通航的水道。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "自定义改装",
+            "anchor": "customization",
+            "text": "你可以往船上添加方块！就像在陆地上放置方块一样，手持箱子、砧或工作台按$(item)$(k:key.use)$()，就能把它装到船上。再按$(item)$(k:key.use)$()即可打开它们。如果某个位置放不上方块，那多半是因为那里是驾驶位！驾驶位被方块挡住的话，你就没法驾驶这艘船了！想拆掉这些方块，像平常一样破坏它们即可。"
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+                "firmaciv:textures/gui/book/customization.png"
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "title": "能放进物品栏的船",
+            "anchor": "boat_items",
+            "text": "不存在的！除了皮划艇之外，把船打破只会掉落部分制作材料！这意味着，如果你想带着船走陆路，就需要一艘皮划艇；这也意味着，你可能需要为较大的船修建一座码头。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "firmaciv:textures/gui/book/items.png"
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "title": "运输动物",
+            "anchor": "animals",
+            "text": "和往常一样，你可以用船来移动动物！不过，要注意，像马这样的大型动物只适合乘坐足够大的船。如果船上坐了一只动物，而且挡住了你的路，你可以通过shift+ $(item)$(k:key.use)$()以让它从载具上下来。动物在船上呆2天后会坐立不安，呆3天后会自己下船。"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "驾驶",
+            "images": [
+                "firmaciv:textures/gui/book/piloting.png"
+            ],
+            "text": "每只船都有一个特定的驾驶位，你需要坐在上面才能驾船。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "桨",
+            "anchor": "paddles",
+            "text": "如果你感觉到你的船太慢了，请检查一下你握着的是不是正确的桨；如果你的船是需要桨架上的固定桨的，请检查桨架上的桨是否正确安装。在一些船上，多名玩家一起划船会让船的速度更快哦！"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "firmaciv:textures/gui/book/paddles.png"
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "title": "缆桩与栓绳",
+            "anchor": "cleats",
+            "text": "大多数船至少都装有一个系缆桩。你可以把拴绳系在系缆桩上来牵拉船只，还能把小船拖上海岸，或拖上半砖台阶。拴绳还可以把船拴在栅栏上；用拴绳把两个系缆桩分别系在栅栏上，就能轻松停泊较大的船。你会发现你会大量用到拴绳，免得船漂走！"
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+                "firmaciv:textures/gui/book/leads.png"
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "title": "锚与绞车",
+            "anchor": "anchors",
+            "text": "大型船配有锚，可以把船完全停住，前提是锚已经落进海底，且所有船帆都已收起。抛锚停泊期间，船仍会随风转动。找到绞车（起锚绞盘）处的锚形图标，按$(item)$(k:key.use)$()即可下锚或起锚。"
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+                "firmaciv:textures/gui/book/anchor.png"
+            ],
+            "text": "单桅纵帆船上的锚与绞车。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "船帆",
+            "anchor": "sails",
+            "text": "帆船自然配有船帆。你需要把帆展开，才能妥善操控船只。找到三角形的船帆图标，按$(item)$(k:key.use)$()即可展开每一面帆。由于大多数船都有多面帆，你可以通过不同的展开组合来控制船速。"
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+                "firmaciv:textures/gui/book/sails.png"
+            ],
+            "text": "这艘单桅纵帆船的前帆（左）和主帆（右）均已展开。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "航行",
+            "anchor": "sailing",
+            "text": "和你印象中的那些船不同，在“群峦传说：航海文明”里航行是一门技术。当你驾驶帆船时，屏幕上会出现一个新的 UI 元素，显示风速、风向以及船速。风箭头的颜色表示朝该方向航行的难易程度。使用前进和后退移动键来调整船帆角度，多加尝试，找出最适合当前风向的角度。"
+        },
+        {
+            "type": "patchouli:image",
+            "border": false,
+            "images": [
+                "firmaciv:textures/gui/book/sailing.png"
+            ],
+            "text": "航行 UI 会帮助你操控船只。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "上漆与染色",
+            "anchor": "painting",
+            "text": "任何用造船工脚手架建造的船都可以上漆，每面船帆也都能单独染色。只需手持染料，看到画笔图标时按$(item)$(k:key.use)$()，即可给船体上漆或给船帆染色。较大的船每种漆色都有独特的图案。"
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+                "firmaciv:textures/gui/book/painting.png"
+            ],
+            "text": "一艘被漆成黄色的单桅纵帆船，船帆也已染色。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "损坏与修复",
+            "anchor": "damage",
+            "text": "受损的船会开始出现裂纹。对于任何用造船工脚手架建造的船，使用相应种类的木板方块即可修复；独木舟则使用木材修复。损伤达到 90% 时，船会开始进水；达到 100% 时，它就会沉没！皮划艇不受此影响。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "watercraft",
+            "text": "随着进度的推进，你会接触到各种各样的水上载具。选哪种船，取决于你的需求和手头可用的材料。$(li)$(bold)$(l:logistics/boats#kayak)皮划艇$()：便携而迅捷，最适合单人使用。$(li)$(bold)$(l:logistics/boats#canoe)独木舟$()：便宜，由软木制成，可载两人。$(li)$(bold)$(l:logistics/boats#rowboat)划艇$()：中等大小，运载量可观。$(li)$(bold)$(l:logistics/boats#sloop)单桅纵帆船$()：大型远洋船只，最先进的水上载具。",
+            "title": "水上载具"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kayak",
+            "text": "单人陆上探险的最佳伙伴。当然，它是唯一能以物品形式随身携带的船，这一点功不可没。它是单人玩家能划的最快的船，而且非常灵活！$(br)划皮划艇时，把$(item)皮划艇桨$()拿在主手或副手即可。要携带皮划艇，直接打破它就行。",
+            "title": "皮划艇"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "皮划艇",
+            "images": [
+                "firmaciv:textures/gui/book/kayak_isometric.png"
+            ],
+            "text": "橡皮艇是最小的，机动性最强与最便携的海上载具。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "canoe",
+            "title": "独木舟",
+            "text": "独木舟很可能是你水上之旅的第一步！如果你已经进入铜器时代，就可以借助锯子建造独木舟了。$(br)独木舟需要一支$(item)独木舟桨$()和三根$(n)软木$()原木。搜索“$(6)#softwood$()”即可在 $(emi) 中查看所有可用的原木。小提示：所有针叶树都是软木。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "firmaciv:textures/gui/book/canoe_isometric.png"
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "text": "你可以在驾驶座上放置方块或动物，但要注意，这样做之后就无法划动船只了！如果你只是想顺流而下运送物资，这倒是最实用的用法。$(br2)独木舟有两个座位，从后排驾驶。你需要手持独木舟桨才能全速前进，如果两名玩家都手持船桨，速度还能更快。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        " F ",
+                        " 0 ",
+                        " B "
+                    ]
+                ],
+                "mapping": {
+                    "0": "tfc:wood/stripped_log/douglas_fir[axis=x]",
+                    "F": "tfc:wood/stripped_log/douglas_fir[axis=x]",
+                    "B": "tfc:wood/stripped_log/douglas_fir[axis=x]"
+                }
+            },
+            "name": "一根原木",
+            "text": "要建造$(thing)独木舟$()，首先水平放置三根去皮原木。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        " F ",
+                        " 0 ",
+                        " B "
+                    ]
+                ],
+                "mapping": {
+                    "0": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=5,facing=east,end=false]",
+                    "F": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=5,facing=east,end=true]",
+                    "B": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=5,facing=east,end=true]"
+                }
+            },
+            "name": "对半切开的原木",
+            "text": "然后，手持锯子按住$(item)$(k:key.use)$()，去掉上半部分。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        " F ",
+                        " 0 ",
+                        " B "
+                    ]
+                ],
+                "mapping": {
+                    "0": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=east,end=false]",
+                    "F": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=west,end=true]",
+                    "B": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=east,end=true]"
+                }
+            },
+            "name": "凿刻过的原木",
+            "text": "接着，手持斧头按住$(item)$(k:key.use)$()，把顶部凿空。最后，用$(item)起火器$()点燃独木舟，完成制作。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rowboat",
+            "title": "划艇",
+            "text": "那么，你已经进入青铜时代，想要升级一下？划艇正是为你准备的。它有三个座位，可以容纳三名玩家，或最多两只动物，包括马！与以往一样，你也可以用你选择的容器替换座位（驾驶员座位除外）。你还可以在船尾放置两个额外的容器。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "firmaciv:textures/gui/book/rowboat_isometric.png"
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "text": "与其他船不同，你驾驶划艇时是反着坐的。这给你带来了机械优势，让你能真正发挥臂力划桨！当然，你可以以第一人称视角驾驶，但如果你以第三人称视角面对自己，可能会觉得更直观。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "脚手架",
+            "recipe": "firmaciv:crafting/watercraft_frame_angled",
+            "text": "要建造划艇，你需要从造船工脚手架开始。将它们在 2x3 的区域内朝内摆放。$(br)然后用$(n)硬木$()木板填满脚手架。搜索“$(6)#hardwood$()”即可在 $(emi) 中查看所有可用的原木种类。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "   ",
+                        "   ",
+                        "   "
+                    ],
+                    [
+                        " 12",
+                        " 04",
+                        " 56"
+                    ]
+                ],
+                "mapping": {
+                    "0": "firmaciv:watercraft_frame_angled[facing=north,shape=straight]",
+                    "1": "firmaciv:watercraft_frame_angled[facing=west,shape=inner_right]",
+                    "2": "firmaciv:watercraft_frame_angled[facing=west,shape=inner_left]",
+                    "4": "firmaciv:watercraft_frame_angled[facing=south,shape=straight]",
+                    "5": "firmaciv:watercraft_frame_angled[facing=east,shape=inner_left]",
+                    "6": "firmaciv:watercraft_frame_angled[facing=east,shape=inner_right]"
+                }
+            },
+            "name": "划艇脚手架",
+            "text": "按此排列的造船工脚手架，用于建造划艇。",
+            "enable_visualize": true
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "   ",
+                        "   ",
+                        "   "
+                    ],
+                    [
+                        " 12",
+                        " 04",
+                        " 56"
+                    ]
+                ],
+                "mapping": {
+                    "0": "firmaciv:wood/watercraft_frame/angled/hickory[facing=north,shape=straight,frame_processed=3]",
+                    "1": "firmaciv:wood/watercraft_frame/angled/hickory[facing=west,shape=inner_right,frame_processed=3]",
+                    "2": "firmaciv:wood/watercraft_frame/angled/hickory[facing=west,shape=inner_left,frame_processed=3]",
+                    "4": "firmaciv:wood/watercraft_frame/angled/hickory[facing=south,shape=straight,frame_processed=3]",
+                    "5": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_left,frame_processed=3]",
+                    "6": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_right,frame_processed=3]"
+                }
+            },
+            "name": "已填充的脚手架",
+            "text": "每个脚手架中都加入了四块$(6)$(t:#tfg:hardwood)硬木$()木板方块。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "   ",
+                        "   ",
+                        "   "
+                    ],
+                    [
+                        " 12",
+                        " 04",
+                        " 56"
+                    ]
+                ],
+                "mapping": {
+                    "0": "firmaciv:wood/watercraft_frame/angled/hickory[facing=north,shape=straight,frame_processed=7]",
+                    "1": "firmaciv:wood/watercraft_frame/angled/hickory[facing=west,shape=inner_right,frame_processed=7]",
+                    "2": "firmaciv:wood/watercraft_frame/angled/hickory[facing=west,shape=inner_left,frame_processed=7]",
+                    "4": "firmaciv:wood/watercraft_frame/angled/hickory[facing=south,shape=straight,frame_processed=7]",
+                    "5": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_left,frame_processed=7]",
+                    "6": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_right,frame_processed=7]"
+                }
+            },
+            "name": "已装螺栓的脚手架",
+            "text": "副手持锤，为每个脚手架加上四枚$(item)铜螺栓$()。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "   ",
+                        " LR",
+                        "   "
+                    ],
+                    [
+                        " 12",
+                        " 04",
+                        " 56"
+                    ]
+                ],
+                "mapping": {
+                    "0": "firmaciv:wood/watercraft_frame/angled/hickory[facing=north,shape=straight,frame_processed=7]",
+                    "1": "firmaciv:wood/watercraft_frame/angled/hickory[facing=west,shape=inner_right,frame_processed=7]",
+                    "2": "firmaciv:wood/watercraft_frame/angled/hickory[facing=west,shape=inner_left,frame_processed=7]",
+                    "4": "firmaciv:wood/watercraft_frame/angled/hickory[facing=south,shape=straight,frame_processed=7]",
+                    "5": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_left,frame_processed=7]",
+                    "6": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_right,frame_processed=7]",
+                    "L": "alekiships:oarlock[facing=north]",
+                    "R": "alekiships:oarlock[facing=south]"
+                }
+            },
+            "name": "完工的划艇",
+            "text": "最后，将$(item)桨座$()装到船的中央，再为每个桨座装上$(item)船桨$()。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "sloop",
+            "title": "单桅纵帆船",
+            "text": "已经到铁器时代了？好吧，我想你是时候给自己造一艘像样的船了。单桅纵帆船宽 4 格、长 8 格有余，相比划艇是一次相当可观的升级！它能容纳多达 13 个容器和最多 7 名乘客，而且视风向不同，能以极快的速度航行。它还能搭载多达 6 门$(l:logistics/boats#cannons)火炮$()！"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "firmaciv:textures/gui/book/sloop_isometric.png"
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "text": "不过，单桅纵帆船造价不菲，需要大量锻铁、铜、羊毛和其他材料。而且材料还不是唯一的成本！你还得学会如何航行，这可能需要一些练习！如果你打算把船开到近岸，很可能还需要修建码头和其他配套设施。$(br)$(bold)提示$()：建议在水面之上建造你的单桅纵帆船，完工后再放入水中。在水里建造可能会导致它沉没！"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "脚手架",
+            "recipe": "firmaciv:crafting/watercraft_frame_flat",
+            "text": "和划艇一样，你需要从造船工脚手架开始。$(br)然后用$(n)硬木$()木板填满脚手架。搜索“$(6)#hardwood$()”即可在 $(emi) 中查看所有可用的原木种类。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "     ",
+                        "     ",
+                        "     ",
+                        "     ",
+                        "     ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "  12 ",
+                        "  34 ",
+                        " 1562",
+                        " 30a4",
+                        " 3aa4",
+                        " 3aa4",
+                        " 7889"
+                    ]
+                ],
+                "mapping": {
+                    "0": "firmaciv:watercraft_frame_flat",
+                    "1": "firmaciv:watercraft_frame_angled[facing=west,shape=inner_right]",
+                    "2": "firmaciv:watercraft_frame_angled[facing=west,shape=inner_left]",
+                    "3": "firmaciv:watercraft_frame_angled[facing=north,shape=straight]",
+                    "4": "firmaciv:watercraft_frame_angled[facing=south,shape=straight]",
+                    "5": "firmaciv:watercraft_frame_angled[facing=west,shape=outer_right]",
+                    "6": "firmaciv:watercraft_frame_angled[facing=west,shape=outer_left]",
+                    "7": "firmaciv:watercraft_frame_angled[facing=east,shape=inner_left]",
+                    "8": "firmaciv:watercraft_frame_angled[facing=east,shape=straight]",
+                    "9": "firmaciv:watercraft_frame_angled[facing=east,shape=inner_right]",
+                    "a": "firmaciv:watercraft_frame_flat"
+                }
+            },
+            "name": "单桅纵帆船脚手架",
+            "text": "按此排列的造船工脚手架，用于建造单桅纵帆船船体。",
+            "enable_visualize": true
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "     ",
+                        "     ",
+                        "     ",
+                        "     ",
+                        "     ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "  12 ",
+                        "  34 ",
+                        " 1562",
+                        " 30a4",
+                        " 3aa4",
+                        " 3aa4",
+                        " 7889"
+                    ]
+                ],
+                "mapping": {
+                    "0": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=3]",
+                    "1": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=inner_right,frame_processed=3]",
+                    "2": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=inner_left,frame_processed=3]",
+                    "3": "firmaciv:wood/watercraft_frame/angled/oak[facing=north,shape=straight,frame_processed=3]",
+                    "4": "firmaciv:wood/watercraft_frame/angled/oak[facing=south,shape=straight,frame_processed=3]",
+                    "5": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=outer_right,frame_processed=3]",
+                    "6": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=outer_left,frame_processed=3]",
+                    "7": "firmaciv:wood/watercraft_frame/angled/oak[facing=east,shape=inner_left,frame_processed=3]",
+                    "8": "firmaciv:wood/watercraft_frame/angled/oak[facing=east,shape=straight,frame_processed=3]",
+                    "9": "firmaciv:wood/watercraft_frame/angled/oak[facing=east,shape=inner_right,frame_processed=3]",
+                    "a": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=3]"
+                }
+            },
+            "name": "单桅纵帆船脚手架",
+            "text": "每个脚手架中都加入了四块$(6)$(t:#tfg:hardwood)硬木$()木板方块。",
+            "enable_visualize": true
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "     ",
+                        "     ",
+                        "     ",
+                        "     ",
+                        "     ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "  12 ",
+                        "  34 ",
+                        " 1562",
+                        " 30a4",
+                        " 3aa4",
+                        " 3aa4",
+                        " 7889"
+                    ]
+                ],
+                "mapping": {
+                    "0": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=7]",
+                    "1": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=inner_right,frame_processed=7]",
+                    "2": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=inner_left,frame_processed=7]",
+                    "3": "firmaciv:wood/watercraft_frame/angled/oak[facing=north,shape=straight,frame_processed=7]",
+                    "4": "firmaciv:wood/watercraft_frame/angled/oak[facing=south,shape=straight,frame_processed=7]",
+                    "5": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=outer_right,frame_processed=7]",
+                    "6": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=outer_left,frame_processed=7]",
+                    "7": "firmaciv:wood/watercraft_frame/angled/oak[facing=east,shape=inner_left,frame_processed=7]",
+                    "8": "firmaciv:wood/watercraft_frame/angled/oak[facing=east,shape=straight,frame_processed=7]",
+                    "9": "firmaciv:wood/watercraft_frame/angled/oak[facing=east,shape=inner_right,frame_processed=7]",
+                    "a": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=7]"
+                }
+            },
+            "name": "单桅纵帆船脚手架",
+            "text": "副手持锤，为每个脚手架加上四枚$(item)铜螺栓$()。",
+            "enable_visualize": true
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "     ",
+                        "     ",
+                        " L  R",
+                        "     ",
+                        "     ",
+                        "     ",
+                        " L  R"
+                    ],
+                    [
+                        "  12 ",
+                        "  34 ",
+                        " 1562",
+                        " 30a4",
+                        " 3aa4",
+                        " 3aa4",
+                        " 7889"
+                    ]
+                ],
+                "mapping": {
+                    "0": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=7]",
+                    "1": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=inner_right,frame_processed=7]",
+                    "2": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=inner_left,frame_processed=7]",
+                    "3": "firmaciv:wood/watercraft_frame/angled/oak[facing=north,shape=straight,frame_processed=7]",
+                    "4": "firmaciv:wood/watercraft_frame/angled/oak[facing=south,shape=straight,frame_processed=7]",
+                    "5": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=outer_right,frame_processed=7]",
+                    "6": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=outer_left,frame_processed=7]",
+                    "7": "firmaciv:wood/watercraft_frame/angled/oak[facing=east,shape=inner_left,frame_processed=7]",
+                    "8": "firmaciv:wood/watercraft_frame/angled/oak[facing=east,shape=straight,frame_processed=7]",
+                    "9": "firmaciv:wood/watercraft_frame/angled/oak[facing=east,shape=inner_right,frame_processed=7]",
+                    "a": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=7]",
+                    "L": "alekiships:cleat[facing=north]",
+                    "R": "alekiships:cleat[facing=south]"
+                }
+            },
+            "name": "单桅纵帆船脚手架",
+            "text": "最后，将$(item)缆桩$()装到船体上。",
+            "enable_visualize": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "建造船体只是第一步。接下来，找到蓝色的锤子图标并按$(item)$(k:key.use)$()，把准星旁显示的物品加到船上。$(br)完整材料清单如下：$(li)脚手架台阶 x6$(li)脚手架楼梯 x18$(li)硬木木板方块 x116$(li)铜螺栓 x96$(li)缆桩 x4$(li)硬木去皮原木 x34$(li)中型风帆 x1$(li)小型风帆 x1$(li)木材 x16$(li)船锚 x1$(li)绳子 x8"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "cannons",
+            "title": "火炮",
+            "item": "firmaciv:cannon,alekiships:cannonball",
+            "text": "火炮！谁不想要火炮呢？这些强大的海战武器既可以安放在单桅纵帆船上，也可以安置在陆地上，是摧毁敌舰的最佳选择，对船只造成的伤害远超任何其他武器。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "firmaciv:textures/gui/book/cannon_isometric.png"
+            ]
+        },
+        {
+            "type": "text",
+            "text": "要开炮，你还需要由锻铁双锭锻造而成的炮弹，以及火药、粗制纸和打火石。界面上会有一个 UI 元素显示火炮的状态。按$(item)$(k:key.use)$()可以抬高炮管，潜行时按$(item)$(k:key.use)$()则可以压低炮管。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸阅读",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/metallurgy",
+                "tfg:agriculture/weaving",
+                "tfg:logistics/exploration_gear",
+                "tfg:logistics/navigation",
+                "tfg:the_world/earth_tree_index",
+                "tfg:logistics/trains"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "extra_recipe_mappings": {
+        "firmaciv:watercraft_frame_angled": 23,
+        "firmaciv:watercraft_frame_flat": 23,
+        "firmaciv:kayak": 24,
+        "firmaciv:kayak_paddle": 24,
+        "firmaciv:canoe_paddle": 26,
+        "alekiships:oarlock": 34,
+        "alekiships:oar": 34,
+        "alekiships:cleat": 40,
+        "alekiships:anchor": 40,
+        "firmaciv:small_triangular_sail": 40,
+        "firmaciv:medium_triangular_sail": 40,
+        "firmaciv:cannon": 50,
+        "firmaciv:cannon_barrel": 50,
+        "alekiships:cannonball": 50
+    }
+}

@@ -12,7 +12,8 @@ function registerTFGToolMaterialModification(event) {
 		GENERATE_CHAINSAW_HEAD,
 		GENERATE_WRENCH_HEAD,
 		GENERATE_WIRE_CUTTER_HEAD,
-		GENERATE_REPAIR_KIT
+		GENERATE_REPAIR_KIT,
+		GENERATE_SCYTHE_HEAD
 	} = TFGMaterialFlags;
 
 	const $GTToolType = Java.loadClass('com.gregtechceu.gtceu.api.item.tool.GTToolType')
@@ -53,7 +54,7 @@ function registerTFGToolMaterialModification(event) {
 		GTToolType.HOE,
 		GTToolType.KNIFE,
 		GTToolType.BUZZSAW,
-		GTToolType.SCYTHE,
+		$toolTypes.get("lv_scythe"),
 		GTToolType.WIRE_CUTTER,
 		GTToolType.WIRE_CUTTER_LV,
 		GTToolType.DRILL_LV,
@@ -73,7 +74,7 @@ function registerTFGToolMaterialModification(event) {
 		GTToolType.HOE,
 		GTToolType.KNIFE,
 		$toolTypes.get("mv_buzzsaw"),
-		GTToolType.SCYTHE,
+		$toolTypes.get("mv_scythe"),
 		$toolTypes.get("mv_wirecutter"),
 		GTToolType.DRILL_MV,
 		$toolTypes.get("mv_screwdriver"),
@@ -90,7 +91,7 @@ function registerTFGToolMaterialModification(event) {
 		GTToolType.HOE,
 		GTToolType.KNIFE,
 		$toolTypes.get("hv_buzzsaw"),
-		GTToolType.SCYTHE,
+		$toolTypes.get("hv_scythe"),
 		GTToolType.WIRE_CUTTER_HV,
 		GTToolType.DRILL_HV,
 		GTToolType.SCREWDRIVER_HV,
@@ -107,7 +108,7 @@ function registerTFGToolMaterialModification(event) {
 		GTToolType.HOE,
 		GTToolType.KNIFE,
 		$toolTypes.get("ev_buzzsaw"),
-		GTToolType.SCYTHE,
+		$toolTypes.get("ev_scythe"),
 		$toolTypes.get("ev_wirecutter"),
 		GTToolType.DRILL_EV,
 		$toolTypes.get("ev_screwdriver"),
@@ -124,12 +125,29 @@ function registerTFGToolMaterialModification(event) {
 		GTToolType.HOE,
 		GTToolType.KNIFE,
 		$toolTypes.get("iv_buzzsaw"),
-		GTToolType.SCYTHE,
+		$toolTypes.get("iv_scythe"),
 		GTToolType.WIRE_CUTTER_IV,
 		GTToolType.DRILL_IV,
 		GTToolType.SCREWDRIVER_IV,
 		GTToolType.CHAINSAW_IV,
 		GTToolType.WRENCH_IV,
+		GTToolType.CROWBAR
+	]
+
+	const LUVTools = [
+		GTToolType.HARD_HAMMER,
+		GTToolType.BUTCHERY_KNIFE,
+		GTToolType.SWORD,
+		GTToolType.FILE,
+		GTToolType.HOE,
+		GTToolType.KNIFE,
+		$toolTypes.get("luv_buzzsaw"),
+		$toolTypes.get("luv_scythe"),
+		$toolTypes.get("luv_wirecutter"),
+		$toolTypes.get("luv_drill"),
+		$toolTypes.get("luv_screwdriver"),
+		$toolTypes.get("luv_chainsaw"),
+		$toolTypes.get("luv_wrench"),
 		GTToolType.CROWBAR
 	]
 
@@ -141,7 +159,7 @@ function registerTFGToolMaterialModification(event) {
 		GTToolType.HOE,
 		GTToolType.KNIFE,
 		$toolTypes.get("zpm_buzzsaw"),
-		GTToolType.SCYTHE,
+		$toolTypes.get("zpm_scythe"),
 		$toolTypes.get("zpm_wirecutter"),
 		$toolTypes.get("zpm_drill"),
 		$toolTypes.get("zpm_screwdriver"),
@@ -149,6 +167,7 @@ function registerTFGToolMaterialModification(event) {
 		$toolTypes.get("zpm_wrench"),
 		GTToolType.CROWBAR,
 		//Hidden
+		GTToolType.SCYTHE,
 		GTToolType.PICKAXE,
 		GTToolType.WRENCH,
 		GTToolType.SCREWDRIVER,
@@ -238,79 +257,79 @@ function registerTFGToolMaterialModification(event) {
 	// ULV
 
 	// Havest speed, attack damage, durability, harvest level, tool types
-	GTMaterials.Copper.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_REPAIR_KIT);
+	GTMaterials.Copper.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_REPAIR_KIT, GENERATE_SCYTHE_HEAD);
 	GTMaterials.Copper.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.0, 3.5, 132 * DURABILITY_MULTIPLIER, 2, ULVTools).build());
 
-	GTMaterials.BismuthBronze.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_REPAIR_KIT);
+	GTMaterials.BismuthBronze.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_REPAIR_KIT, GENERATE_SCYTHE_HEAD);
 	GTMaterials.BismuthBronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.7, 4.0, 195 * DURABILITY_MULTIPLIER, 2, ULVTools.concat(GTToolType.MORTAR)).build());
 
-	GTMaterials.BlackBronze.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_REPAIR_KIT);
+	GTMaterials.BlackBronze.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_REPAIR_KIT, GENERATE_SCYTHE_HEAD);
 	GTMaterials.BlackBronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(3.1, 5.0, 188 * DURABILITY_MULTIPLIER, 2, ULVTools.concat(GTToolType.MORTAR)).build());
 
-	GTMaterials.Bronze.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_REPAIR_KIT);
+	GTMaterials.Bronze.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_REPAIR_KIT, GENERATE_SCYTHE_HEAD);
 	GTMaterials.Bronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(3, 4, 212 * DURABILITY_MULTIPLIER, 2, ULVTools.concat(GTToolType.MORTAR)).build());
 
-	GTMaterials.WroughtIron.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_REPAIR_KIT);
+	GTMaterials.WroughtIron.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_REPAIR_KIT, GENERATE_SCYTHE_HEAD);
 	GTMaterials.WroughtIron.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(4, 4, 384 * DURABILITY_MULTIPLIER, 2, ULVTools.concat(GTToolType.MORTAR)).build());
 
-	GTMaterials.Steel.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_REPAIR_KIT);
+	GTMaterials.Steel.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_REPAIR_KIT, GENERATE_SCYTHE_HEAD);
 	GTMaterials.Steel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(5, 5, 512 * DURABILITY_MULTIPLIER, 3, ULVTools.concat(GTToolType.MORTAR)).build());
 
 	GTMaterials.DamascusSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(6, 6, 1024 * DURABILITY_MULTIPLIER, 3, ULVTools.concat(GTToolType.MORTAR)).build());
 
-	GTMaterials.BlackSteel.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_REPAIR_KIT);
+	GTMaterials.BlackSteel.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_REPAIR_KIT, GENERATE_SCYTHE_HEAD);
 	GTMaterials.BlackSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(6, 5.5, 612 * DURABILITY_MULTIPLIER, 3, ULVTools.concat(GTToolType.MORTAR)).build());
 
 	// LV
 
-	GTMaterials.BlueSteel.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT);
+	GTMaterials.BlueSteel.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT, GENERATE_SCYTHE_HEAD);
 	GTMaterials.BlueSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(9, 5, 804 * DURABILITY_MULTIPLIER, 3, LVTools).build());
 
-	GTMaterials.RedSteel.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT);
+	GTMaterials.RedSteel.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT, GENERATE_SCYTHE_HEAD);
 	GTMaterials.RedSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(6, 7.5, 1560 * DURABILITY_MULTIPLIER, 3, LVTools).build());
 
 	// MV
 
 	// Diamond Tipped Tools - 11 - 6 - 1024 - 3
 
-	GTMaterials.VanadiumSteel.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT);
+	GTMaterials.VanadiumSteel.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT, GENERATE_SCYTHE_HEAD);
 	GTMaterials.VanadiumSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(5, 8, 2048 * DURABILITY_MULTIPLIER, 3, MVTools).build());
 
-	TFGHelpers.getMaterial('diamond_tipped_mo_50_re').addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT)
+	TFGHelpers.getMaterial('diamond_tipped_mo_50_re').addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT, GENERATE_SCYTHE_HEAD)
 	TFGHelpers.getMaterial('diamond_tipped_mo_50_re').setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(11, 6, 1024 * DURABILITY_MULTIPLIER, 3, MVTools).build());
 
 	// HV
 
-	GTMaterials.Ultimet.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT);
+	GTMaterials.Ultimet.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT, GENERATE_SCYTHE_HEAD);
 	GTMaterials.Ultimet.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(16, 9, 1678 * DURABILITY_MULTIPLIER, 4, HVTools).build());
 
-	TFGHelpers.getMaterial('boron_carbide').addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT);
+	TFGHelpers.getMaterial('boron_carbide').addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT, GENERATE_SCYTHE_HEAD);
 	TFGHelpers.getMaterial('boron_carbide').setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(5, 11, 3678 * DURABILITY_MULTIPLIER, 3, HVTools).build());
 
 	// EV
 
-	GTMaterials.TungstenCarbide.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT);
+	GTMaterials.TungstenCarbide.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT, GENERATE_SCYTHE_HEAD);
 	GTMaterials.TungstenCarbide.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(34, 12, 1024 * DURABILITY_MULTIPLIER, 4, EVTools).build());
 
-	TFGHelpers.getMaterial('ostrum_iodide').addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT);
+	TFGHelpers.getMaterial('ostrum_iodide').addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT, GENERATE_SCYTHE_HEAD);
 	TFGHelpers.getMaterial('ostrum_iodide').setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(20, 10, 3096 * DURABILITY_MULTIPLIER, 4, EVTools).build());
 
 	// IV
 
-	GTMaterials.HSSE.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT);
+	GTMaterials.HSSE.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT, GENERATE_SCYTHE_HEAD);
 	GTMaterials.HSSE.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(44, 13, 4012 * DURABILITY_MULTIPLIER, 3, IVTools).build());
 
 	// LuV
 
-	GTMaterials.Duranium.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT);
-	GTMaterials.Duranium.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(54, 14, 8192 * DURABILITY_MULTIPLIER, 5, IVTools).build());
+	GTMaterials.Duranium.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT, GENERATE_SCYTHE_HEAD);
+	GTMaterials.Duranium.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(54, 14, 8192 * DURABILITY_MULTIPLIER, 5, LUVTools).build());
 
-	GTMaterials.NaquadahAlloy.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT);
-	GTMaterials.NaquadahAlloy.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(64, 15, 8192 * DURABILITY_MULTIPLIER, 5, IVTools).build());
+	GTMaterials.NaquadahAlloy.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT, GENERATE_SCYTHE_HEAD);
+	GTMaterials.NaquadahAlloy.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(64, 15, 8192 * DURABILITY_MULTIPLIER, 5, LUVTools).build());
 
 	// UV
 
-	GTMaterials.Neutronium.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD);
+	GTMaterials.Neutronium.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_SCYTHE_HEAD);
 	GTMaterials.Neutronium.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(180.0, 100.0, 65535, 6, ZPMTools).unbreakable().build());
 
 	//#endregion
@@ -320,6 +339,7 @@ function registerTFGToolMaterialModification(event) {
 	// Remove all the Turbine Rotors we don't want anymore
 	const noRotorMaterials = [
 		GTMaterials.Bronze,
+		GTMaterials.SterlingSilver,
 		GTMaterials.BlackBronze,
 		GTMaterials.CobaltBrass,
 		GTMaterials.Manganese,
@@ -357,7 +377,6 @@ function registerTFGToolMaterialModification(event) {
 	// Balance Turbine Rotors Stats
 
 	const BalanceRotorMaterials = [
-		GTMaterials.SterlingSilver,
 		GTMaterials.Ultimet,
 		GTMaterials.HSSS,
 		GTMaterials.Osmiridium,
@@ -370,7 +389,6 @@ function registerTFGToolMaterialModification(event) {
 		}
 	};
 
-	GTMaterials.SterlingSilver.setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(100, 180, 1, 147));
 	GTMaterials.Ultimet.setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(140, 140, 4, 786));
 	GTMaterials.HSSS.setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(280, 200, 7, 1986));
 	GTMaterials.Osmiridium.setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(320, 200, 12, 2364));
@@ -379,12 +397,14 @@ function registerTFGToolMaterialModification(event) {
 
 	// New Materials - Require MaterialFlags (Plates, Bolt/Screwdriver)
 
+	GTMaterials.get('vanadium').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(90, 80, 2, 412));
+	TFGHelpers.getMaterial('rene_41').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(120, 110, 2, 892));
 	TFGHelpers.getMaterial('silicon_carbide_silicon_carbide').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(200, 50, 2, 238));
 	GTMaterials.get('rocket_alloy_t1').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(170, 105, 3, 1215));
-	TFGHelpers.getMaterial('inconel_718').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(220, 180, 4, 1536));
+	TFGHelpers.getMaterial('inconel_718').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(230, 180, 4, 1536));
 	TFGHelpers.getMaterial('tungsten_bismuth_oxide_composite').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(270, 80, 7, 465));
 	GTMaterials.get('rocket_alloy_t2').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(210, 150, 5, 2484));
-	TFGHelpers.getMaterial('mo_si_b').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(270, 180, 6, 1610));
+	TFGHelpers.getMaterial('mo_si_b').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(290, 210, 6, 2114));
 	//GTMaterials.getMaterial('rocket_alloy_t3').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(300, 160, 8, 3840));
 	//TFGHelpers.getMaterial('ysz').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(270, 220, 10, 5310));
 

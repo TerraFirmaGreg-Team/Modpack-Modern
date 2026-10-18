@@ -1,0 +1,86 @@
+{
+	"name": "果凍怪",
+	"category": "tfg:agriculture",
+	"icon": "jellies:jellie/slime_ball/plant",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)果凍怪$()是出現在各個星球和環境中的友善黏液團。$(br2)牠們有各種用途，但最常見的是生產特定種類的$(thing)黏液球$()。$(br2)我有提過牠們非常友善嗎？如果你把牠們的熟悉度培養得夠高，牠們就會成為你的$(l:game_mechanics/pets)寵物$()，開心地跟著你到處走！"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"text": "$(li)$(bold)$(l:agriculture/jellies#produce)產物$()$(li)$(bold)$(l:agriculture/jellies#feeding)餵食$()$(li)$(bold)地球物種$()$(li2)$(l:agriculture/jellies#herbal)草本$()$(li2)$(l:agriculture/jellies#phosphorum)磷光$()$(li2)$(l:agriculture/jellies#rock)岩石$()$(li)$(bold)地底物種$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)冰$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)植物$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)發光莓$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)溫泉$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)熔岩$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)黑雲母$()$(li2)$(l:beneath/beneath_fauna#latex_jellie)乳膠$()$(br2)$(o)(下頁續……)$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(bold)月球物種$()$(li2)$(l:the_moon/moon_fauna#certus_jellie)賽特斯$()$(li)$(bold)火星物種$()$(li2)$(l:mars/mars_fauna#pentetic_jellie)五酸$()$(li)$(bold)$(l:agriculture/jellies#spoiler)？？？$()"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [
+				"tfg:textures/gui/field_guide/jellies.png"
+			],
+			"text": "$(thing)果凍怪$()是雌雄同體，可以和任何其他$(thing)果凍怪$()繁殖！",
+			"border": true
+		},
+		{
+			"type": "patchouli:text",
+			"title": "產物",
+			"anchor": "produce",
+			"text": "$(thing)果凍怪$()相當挑剔，離開自然棲息地就拒絕生產任何東西；不過牠們在任何環境中都能正常繁殖。$(br2)牠們也不喜歡機器，只有在玩家親手餵食時才會給出產物。$(br2)$(#B0B0B0)$(o)也可能牠們只是想要被關注……"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": "餵食",
+			"recipe": "tfg:shaped/jellies_nutritional_mash",
+			"anchor": "feeding",
+			"text": "$(thing)營養糊$()是所有$(thing)果凍怪$()的主食，主要由穀物、水果和一些特定維度的材料製成。$(br2)遺憾的是，牠們相當挑剔，只能由$(thing)玩家$()親手餵食，無法使用$(l:agriculture/animal_husbandry#feeding_trough)飼料槽$()。$(br)$(#B0B0B0)$(o)它為什麼在動……"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:herbal",
+			"scale": 0.6,
+			"name": "草本果凍怪",
+			"anchor": "herbal",
+			"text": "$(thing)草本$()果凍怪會生成在地球上溫暖的森林中，$(l:the_world/climate#temperature)溫度$()介於 1-10°C，且$(l:the_world/climate#rainfall)降雨量$()至少 150mm。牠們會產出$(thing)草本黏液球$()。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:phosphorum",
+			"scale": 0.6,
+			"name": "磷光果凍怪",
+			"anchor": "phosphorum",
+			"text": "$(thing)磷光$()果凍怪會生成在地球上寒冷的森林中，$(l:the_world/climate#temperature)溫度$()介於 -10-0°C，且$(l:the_world/climate#rainfall)降雨量$()至少 150mm。牠們會產出$(thing)磷光黏液球$()，另外也會吃$(thing)腐肉$()。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:rock",
+			"scale": 0.6,
+			"name": "岩石果凍怪",
+			"anchor": "rock",
+			"text": "$(thing)岩石$()果凍怪很少在地球的山地生態域洞穴中生成。牠們目前沒有任何作用。"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "延伸閱讀",
+			"anchor": "relations",
+			"entries": [
+				"tfg:beneath/beneath_fauna",
+				"tfg:the_moon/moon_fauna",
+				"tfg:mars/mars_fauna"
+			]
+		},
+		{
+			"type": "patchouli:image",
+			"images": [
+				"tfg:textures/gui/field_guide/jellies_secret.png"
+			],
+			"anchor": "spoiler",
+			"text": "$(#B0B0B0)$(o)接下來的頁面褪色得太嚴重，無法閱讀……$()",
+			"border": false
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 7
+}

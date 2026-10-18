@@ -1,0 +1,555 @@
+{
+    "name": "Склоробство",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:blowpipe_with_glass",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:craftsmanship/glassworking#intro)Скляні суміші$()$(li2)$(l:craftsmanship/glassworking#lime_and_potash)Вапно &  Поташ$()$(li)$(bold)$(l:craftsmanship/glassworking#tools)Інструменти для склоробства$()$(li2)$(l:craftsmanship/glassworking#blowpipe)Склодувна трубка$()$(li2)$(l:craftsmanship/glassworking#paddle)Лопатка$()$(li2)$(l:craftsmanship/glassworking#jacks)Щипці$()$(li2)$(l:craftsmanship/glassworking#saw)Ювелірна пилка$()$(li)$(bold)$(l:craftsmanship/glassworking#glassworking_steps)Етапи виготовлення скла$()$(li2)$(l:craftsmanship/glassworking#table_pour)Виливання на стіл$()$(li2)$(l:craftsmanship/glassworking#basin_pour)Виливання у басейн$()$(li)$(bold)$(l:craftsmanship/glassworking#coloring)Фарбування скла$()$(li2)$(l:craftsmanship/glassworking#dyes)Список барвників$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "Вступ",
+            "text": "Склоробство — це процес перетворення піску на скло. Спершу потрібно створити $(thing)порцію для скла$(), яка буває чотирьох типів:$(br)$(br) 1. $(thing)Кремнеземна$() — з білого піску.$(br) 2. $(thing)Гематитова$() — з жовтого, червоного або рожевого піску.$(br) 3. $(thing)Олівінова$() — із зеленого або коричневого піску.$(br) 4. $(thing)Вулканічна$() — з чорного піску."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/silica_glass_batch",
+            "text": "Скляні суміші можна створювати з одного з наведених вище кольорів піску, а також $(l:craftsmanship/glassworking#lime_and_potash)вапна$() та певного типу $(l:craftsmanship/glassworking#lime_and_potash)поташу$().$(br)Пам’ятай, що різні типи піску можна отримати, розбиваючи гравій молотом.",
+            "title": "Силікатна скляна суміш"
+        },
+        {
+            "type": "patchouli:smelting",
+            "anchor": "lime_and_potash",
+            "title": "Вапно та поташ",
+            "recipe": "tfg:smelting/dried_seaweed_to_soda",
+            "text": "$(item)Кальцинована сода$() або $(item)селітра$() можуть використовуватися як джерело $(thing)поташу$(). Кальцинована сода — це порошок, який отримують шляхом нагрівання $(thing)сушених морських водоростей$() або $(thing)ламінарії$().$(br2)$(item)Вапно$() отримують шляхом нагрівання $(item)флюсу$().",
+            "recipe2": "tfg:smelting/lime"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "tools",
+            "text": "Склоробство починається зі скляної суміші, після чого потрібно виконати низку етапів. Для цих етапів можуть знадобитися спеціальні інструменти:$(br)$(li)$(l:craftsmanship/glassworking#blowpipe)Склодувна трубка$() — для $(thing)видування$() та $(thing)розтягування$().$(li)$(l:craftsmanship/glassworking#paddle)Лопатка$() — для $(thing)розплющування$().$(li)$(l:craftsmanship/glassworking#jacks)Щипці$() — для $(thing)стискання$().$(li)$(l:craftsmanship/glassworking#saw)Ювелірна пилка$() — для $(thing)розпилювання$().$(li) $(l:agriculture/weaving)вовняна тканина$() — для $(thing)скручування$().",
+            "title": "Інструменти ремесла"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "blowpipe",
+            "title": "Склодувна трубка",
+            "item": "tfc:ceramic/unfired_blowpipe,tfc:ceramic_blowpipe,tfc:blowpipe",
+            "text": "Найважливішим інструментом є $(thing)склодувна трубка$(). $(item)Непалена керамічна склодувна трубка$() може бути $(thing)вибита$() з глини, а потім обпалена до отримання $(thing)керамічної склодувної трубки$().$(br)Однак керамічні склодувні трубки крихкі та можуть зламатися під час використання. Незламну $(item)склодувну трубку$() можна $(l:craftsmanship/anvils#working)виготовити$() з $(thing)латунного стрижня$() на ковадлі."
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "paddle",
+            "title": "Лопатка",
+            "recipe": "tfc:crafting/paddle",
+            "text": "Операцію $(thing)сплющування$() можна виконати за допомогою $(thing)лопатки$(), яку виготовляють з дерева."
+        },
+        {
+            "type": "tfg:welding_recipe",
+            "anchor": "jacks",
+            "title": "Щипці",
+            "recipe": "tfc:welding/jacks",
+            "text": "Операцію $(thing)стискання$() можна виконувати за допомогою $(thing)щипців$(), виготовлених шляхом $(l:craftsmanship/anvils#welding)зварювання$() латунного стрижня з латунною пластиною."
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "saw",
+            "title": "Ювелірна пилка",
+            "recipe": "tfc:crafting/gem_saw",
+            "text": "Операцію $(thing)розпилювання$() можна виконувати за допомогою $(item)ювелірної пилки$(). Ювелірна пилка також використовується для розбивання $(item)скляних блоків$() та $(item)скляних шибок$(), щоб отримати їх."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "glassworking_steps",
+            "text": "Спочатку скло на склодувній трубці потрібно нагріти щонайменше до $(4)$(bold)ледь червоного$(). Потім тримай склодувну трубку в $(thing)лівій руці$() та утримуй $(item)$(k:key.use)$(), щоб виконати кожен етап$().$(br)Використовуй $(item)$(k:key.swapOffhand)$(), щоб перемістити гарячу склодувну трубку в ліву руку.$(br2)$(bold)Видування$()$(br)Використовуй $(thing)склодувну трубку$(), дивлячись прямо перед собою.$(br2)$(bold)Розтягування$()$(br)Використовуй $(thing)склодувну трубку$(), дивлячись прямо вниз.",
+            "title": "Як працювати зі склом"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)Розплющування$()$(br)Використовуй $(thing)склодувну трубку$(), тримаючи $(l:craftsmanship/glassworking#paddle)лопатку$() в основній руці.$(br2)$(bold)Стискання$()$(br)Використовуй $(thing)склодувну трубку$(), тримаючи $(l:craftsmanship/glassworking#jacks)щипці$() в основній руці.$(br2)$(bold)Розпилювання$()$(br)Використовуй $(thing)склодувну трубку$(), тримаючи $(l:craftsmanship/glassworking#saw)ювелірну пилку$() в основній руці.$(br2)$(bold)Скручування$()$(br)Використовуй $(thing)склодувну трубку$() із $(l:agriculture/weaving)вовняною тканиною$() в основній руці."
+        },
+        {
+            "type": "patchouli:image",
+            "anchor": "guide_pane",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/glassworking/lens_0.png",
+                "tfg:textures/gui/field_guide/glassworking/lens_1.png",
+                "tfg:textures/gui/field_guide/glassworking/pane_0.png",
+                "tfg:textures/gui/field_guide/glassworking/pane_1.png",
+                "tfg:textures/gui/field_guide/glassworking/pane_2.png",
+                "tfg:textures/gui/field_guide/glassworking/pane_3.png",
+                "tfg:textures/gui/field_guide/glassworking/pane_4.png",
+                "tfg:textures/gui/field_guide/glassworking/pane_5.png",
+                "tfg:textures/gui/field_guide/glassworking/pane_6.png"
+            ],
+            "text": "$(bold)Навчальне слайд-шоу:$() Покрокове створення укріплених скляних шибок.",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "anchor": "guide_lens",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/glassworking/lens_0.png",
+                "tfg:textures/gui/field_guide/glassworking/lens_1.png",
+                "tfg:textures/gui/field_guide/glassworking/lens_2.png",
+                "tfg:textures/gui/field_guide/glassworking/lens_3.png",
+                "tfg:textures/gui/field_guide/glassworking/lens_4.png",
+                "tfg:textures/gui/field_guide/glassworking/lens_5.png",
+                "tfg:textures/gui/field_guide/glassworking/lens_6.png",
+                "tfg:textures/gui/field_guide/glassworking/lens_7.png",
+                "tfg:textures/gui/field_guide/glassworking/lens_8.png",
+                "tfg:textures/gui/field_guide/glassworking/lens_9.png"
+            ],
+            "text": "$(bold)Навчальне слайд-шоу:$() Покрокове створення лінзи.",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "anchor": "guide_glass",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/glassworking/lens_0.png",
+                "tfg:textures/gui/field_guide/glassworking/lens_1.png",
+                "tfg:textures/gui/field_guide/glassworking/glass_0.png",
+                "tfg:textures/gui/field_guide/glassworking/glass_1.png",
+                "tfg:textures/gui/field_guide/glassworking/glass_2.png",
+                "tfg:textures/gui/field_guide/glassworking/glass_3.png"
+            ],
+            "text": "$(bold)Навчальне слайд-шоу:$() Покрокове створення зеленого кольорового скла.",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)Скляні шибки$() виготовляються за допомогою $(thing)виливання на стіл$(). Стіл для виливання створюється шляхом розміщення до шістнадцяти $(thing)блоків каолінової глини$() або $(thing)блоків із латунним покриттям$() в суцільній області.$(br2)1. Додай $(l:craftsmanship/glassworking)скляну суміш$() на $(thing)склодувну трубку$().$(br)2. Нагрій склодувну трубку до $(4)$(bold)ледь червоного$().$(br)3. $()Використай $(item)$(k:key.use)$()$(thing)склодувну трубку$() на верхній частині столу.$(br)4. Нарешті, $(item)$(k:key.use)$() із $(l:craftsmanship/glassworking#paddle)лопаткою$(), щоб розплющити скло.",
+            "title": "Виливання на стіл",
+            "anchor": "table_pour"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "text": "Після охолодження скло можна розбити за допомогою $(l:craftsmanship/glassworking#saw)ювелірної пилки$(), щоб отримати скляні шибки.",
+            "border": true,
+            "multiblock": {
+                "mapping": {
+                    "0": "#tfc:glass_pouring_table",
+                    "C": "#tfc:glass_pouring_table"
+                },
+                "pattern": [
+                    [
+                        "CCCC",
+                        "CCC0",
+                        "CCCC",
+                        "CCCC"
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)Скляні блоки$() виготовляються за допомогою $(thing)виливання у басейн$(). Басейн створюється шляхом оточення всіх сторін повітряного блока, крім верхньої, $(thing)блоками каолінової глини$() або $(thing)блоками з латунним покриттям$().$(br2)1. Додай $(l:craftsmanship/glassworking)скляну суміш$() на $(thing)склодувну трубку$().$(br)2. Нагрій склодувну трубку до $(4)$(bold)ледь червоного$().$(br)3. Використай $(item)$(k:key.use)$()$(thing)склодувну трубку$() на верхній частині столу.",
+            "title": "Виливання в басейн",
+            "anchor": "basin_pour"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "text": "Після охолодження скла його можна розбити за допомогою $(l:craftsmanship/glassworking#saw)Ювелирної пилки$(), щоб отримати його.",
+            "border": true,
+            "multiblock": {
+                "mapping": {
+                    "0": "#tfc:glass_basin_blocks",
+                    "C": "#tfc:glass_basin_blocks"
+                },
+                "pattern": [
+                    [
+                        " C ",
+                        "C C",
+                        " C "
+                    ],
+                    [
+                        "   ",
+                        " 0 ",
+                        "   "
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "Блоки для склоробства",
+            "recipe": "tfc:crafting/white_kaolin_clay",
+            "recipe2": "tfg:shapeless/brass_plated_block"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Скло має природний колір залежно від типу $(l:craftsmanship/glassworking)скляної суміші$(), яку було використано. Інші кольори можна отримати за допомогою $(l:cooking/bowls#powder_bowl)миски$().$(br2)Щоб скористатися нею, постав $(l:cooking/bowls)миску$() на землю, а потім використай на ній $(item)$(k:key.use)$() потрібний $(thing)порошок$(). Перед $(thing)виливанням$() використай $(thing)склодувну трубку$() на мисці, щоб додати порошок до суміші.",
+            "anchor": "coloring",
+            "title": "Фарбування скла"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(7)Білий$(): Силікатне або гематитове скло + $(thing)Кальцинована сода\n$()$(li)$(bold)$(0)Чорний$(): Будь-яке скло + $(thing)Графіт$()$(li)$(bold)$(8)Сірий$(): Будь-яке + $(thing)Графіт$() + $(thing)Кальцинована сода\n$()$(li)$(bold)$(7)Світло-сірий$(): Будь-яке + $(thing)Графіт$() + 2x $(thing)Кальцинована сода\n$()$(li)$(bold)$(5)Фіолетовий$(): Будь-яке + $(thing)Залізо$() + $(thing)Мідь$()$(li)$(bold)$(#964b00)Коричневий$(): Будь-яке + $(thing)Нікель$()$(li)$(bold)$(3)Бірюзовий$(): Не вулканічне скло + $(thing)Мідь$() + $(thing)Сапфір$()$(li)$(bold)$(2)Зелений$(): Селікатне або гематитове скло + $(thing)Залізо$()",
+            "title": "Кольорові барвники",
+            "anchor": "dyes"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(a)Лаймовий$(): Силікатне або Гематитове скло + $(thing)Залізо$() + $(thing)Сода$()$(li)$(bold)$(b)Блакитний$(): Силікатне скло + $(thing)Лазур$()$(li)$(bold)$(1)Синій$(): Силікатне скло + $(thing)Мідь$()$(li)$(bold)$(4)Червоний$(): Силікатне або Гематитове скло + $(thing)Олово$()$(li)$(bold)$(6)Жовтий$(): Силікатне або Гематитове скло + $(thing)Срібло$()$(li)$(bold)$(#ef8e38)Помаранчевий$(): Силікатне скло + $(thing)Пірит$()$(li)$(bold)$(5)Пурпуровий$(): Силікатне або Гематитове скло + $(thing)Рубін$()$(li)$(bold)$(d)Рожевий$(): Силікатне скло + $(thing)Золото$()$(li)$(bold)$(0)Тоноване$(): Несилікатне скло + $(thing)Аметист$()"
+        },
+        {
+            "type": "tfg:table_small",
+            "strings": [
+                {
+                    "text": ""
+                },
+                {
+                    "text": "C"
+                },
+                {
+                    "text": "T"
+                },
+                {
+                    "fill": "0xff42f2"
+                },
+                {
+                    "fill": "0x8af3ff"
+                },
+                {
+                    "fill": "0x526cff"
+                },
+                {
+                    "fill": "0xe3e3e3"
+                },
+                {
+                    "fill": "0xe69407"
+                },
+                {
+                    "fill": "0xc738c9"
+                },
+                {
+                    "fill": "0xffe81c"
+                },
+                {
+                    "fill": "0x48ff1f"
+                },
+                {
+                    "fill": "0xe01414"
+                },
+                {
+                    "fill": "0x0c9400"
+                },
+                {
+                    "fill": "0x188a9e"
+                },
+                {
+                    "fill": "0x7d4f00"
+                },
+                {
+                    "fill": "0x6e059c"
+                },
+                {
+                    "fill": "0x7d7d7d"
+                },
+                {
+                    "fill": "0xbdbdbd"
+                },
+                {
+                    "fill": "0x000000"
+                },
+                {
+                    "text": "Силікат"
+                },
+                {
+                    "fill": "0x3d42a8"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "text": "Гематит"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3d42a8"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "text": "Олівін"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0x3d42a8"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "text": "Вулканічний"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0x3d42a8"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                }
+            ],
+            "text": "Доступність кольорів скла. 'C' означає прозоре, 'T' — тоноване. Кольори можна виготовити лише з певних скляних сумішей.",
+            "title": "Доступність кольорів скла",
+            "legend": [
+                {
+                    "text": "Можна виготовити",
+                    "color": "0x3eb340"
+                },
+                {
+                    "text": "Не можна виготовити",
+                    "color": "0xb33e3e"
+                },
+                {
+                    "text": "Стандартний колір",
+                    "color": "0x3d42a8"
+                }
+            ],
+            "columns": 18,
+            "first_column_width": 35,
+            "column_width": 10,
+            "row_height": 10,
+            "left_buffer": 5,
+            "top_buffer": 15,
+            "draw_background": true
+        },
+        {
+            "type": "patchouli:empty",
+            "draw_filler": false
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Докладніше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/pottery",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/charcoal_forge",
+                "tfg:craftsmanship/crucible",
+                "tfg:craftsmanship/charcoal_pit",
+                "tfg:craftsmanship/anvils",
+                "tfg:agriculture/weaving",
+                "tfg:game_mechanics/heating"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 11,
+    "extra_recipe_mappings": {
+        "tag:tfc:glass_batches": 2,
+        "tfc:powder/lime": 3,
+        "tfc:powder/soda_ash": 3,
+        "tag:tfc:glassworking_tools": 9,
+        "tag:tfc:kaolin_blocks": 14,
+        "tfc:metal/block/brass": 14
+    }
+}

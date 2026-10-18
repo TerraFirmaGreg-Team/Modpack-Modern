@@ -263,6 +263,9 @@
         "colorwheel": {
             "side": "CLIENT"
         },
+        "crashexploitfixer": {
+            "side": "SERVER"
+        },
         "autopack-director": {
             "export": false
         },

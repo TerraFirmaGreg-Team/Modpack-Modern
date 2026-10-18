@@ -1,0 +1,40 @@
+{
+    "name": "沙拉制作",
+    "category": "tfg:cooking",
+    "icon": "tfc:textures/item/food/protein_salad.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "salad",
+            "text": "$(thing)沙拉$()是一种在$(thing)碗$()里用最多五种$(thing)$(n)$(t:#tfc:usable_in_salad)配料$()做成的餐点。$(br2)沙拉是最容易制作的餐点之一，只需要一个$(l:cooking/bowls)碗$()。首先，手持$(thing)碗$()，按下$(item)$(k:key.use)$()，同时按住$(item)$(k:key.sneak)$()。这样就会打开沙拉界面。$(br)把配料放进上面的槽位，做好后从下面的槽位取出沙拉。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:tfc:salads",
+            "title": "沙拉",
+            "link_recipes": false,
+            "text": "沙拉是动态的餐点物品。使用的配料会决定做出哪种沙拉，以及它含有哪些$(l:cooking/food_and_water#nutrients)营养素$()。$(br2)$(t:§70.75§r§l∑§r§7配料§r)营养值的计算方法：把所有配料的营养值加起来，再乘以0.75"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸阅读",
+            "anchor": "relations",
+            "entries": [
+                "tfg:cooking/food_and_water",
+                "tfg:cooking/sandwiches",
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/wild_fruits",
+                "tfg:the_world/wild_animals"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 10,
+    "extra_recipe_mappings": {
+        "tfc:food/fruit_salad": 0,
+        "tfc:food/dairy_salad": 0,
+        "tfc:food/vegetables_salad": 0,
+        "tfc:food/protein_salad": 0,
+        "tfc:food/grain_salad": 0
+    }
+}

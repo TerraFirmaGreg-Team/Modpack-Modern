@@ -1,0 +1,378 @@
+{
+    "name": "养蜂",
+    "category": "tfg:agriculture",
+    "icon": "firmalife:beehive",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)蜂箱$()是用来安置蜜蜂、进行 $(thing)养蜂$()的地方。养蜂是蜂蜡和蜂蜜的直接来源。蜂箱里需要放入 $(item)巢脾$() 蜜蜂才能居住。从仍有蜜蜂居住的蜂箱里取出巢脾会招来蜜蜂攻击，除非你穿上一整套 $(item)养蜂人套装$()，或在蜂箱下方点着 $(thing)篝火$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "蜂箱能感知以它为中心 5 格半径内的区域。如果蜂箱周围至少有 10 朵 $(t:#minecraft:flowers block tag)$(3)花朵$()，空巢脾就有机会住进一只 $(thing)蜂王$()。蜂箱里放 4 个空巢脾能大幅提高蜜蜂入住的几率。蜂箱之间可以共享花朵。花朵超过 60 朵后收益会递减。"
+        },
+        {
+            "anchor": "preview",
+            "type": "tfg:multimultiblock",
+            "text": "蜂箱范围",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "YYYYYOYYYYY",
+                            "Y    O    Y",
+                            "Y    O    Y",
+                            "Y    O    Y",
+                            "Y    O    Y",
+                            "OOOOOOOOOOO",
+                            "Y    O    Y",
+                            "Y    O    Y",
+                            "Y    O    Y",
+                            "Y    O    Y",
+                            "YYYYYOYYYYY"
+                        ],
+                        [
+                            "Y    O    Y",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "O         O",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "Y    O    Y"
+                        ],
+                        [
+                            "Y    O    Y",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "O         O",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "Y    O    Y"
+                        ],
+                        [
+                            "Y    O    Y",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "O         O",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "Y    O    Y"
+                        ],
+                        [
+                            "Y    O    Y",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "O         O",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "Y    O    Y"
+                        ],
+                        [
+                            "OOOOOOOOOOO",
+                            "O    O    O",
+                            "O    O    O",
+                            "O    O    O",
+                            "O    O    O",
+                            "OOOOO0OOOOO",
+                            "O    O    O",
+                            "O    O    O",
+                            "O    O    O",
+                            "O    O    O",
+                            "OOOOOOOOOOO"
+                        ],
+                        [
+                            "Y    O    Y",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "O         O",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "Y    O    Y"
+                        ],
+                        [
+                            "Y    O    Y",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "O         O",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "Y    O    Y"
+                        ],
+                        [
+                            "Y    O    Y",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "O         O",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "Y    O    Y"
+                        ],
+                        [
+                            "Y    O    Y",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "O         O",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "Y    O    Y"
+                        ],
+                        [
+                            "YYYYYOYYYYY",
+                            "Y    O    Y",
+                            "Y    O    Y",
+                            "Y    O    Y",
+                            "Y    O    Y",
+                            "OOOOOOOOOOO",
+                            "Y    O    Y",
+                            "Y    O    Y",
+                            "Y    O    Y",
+                            "Y    O    Y",
+                            "YYYYYOYYYYY"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "firmalife:beehive[facing=east]",
+                        "O": "minecraft:orange_stained_glass",
+                        "Y": "minecraft:glass"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           "
+                        ],
+                        [
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           "
+                        ],
+                        [
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           "
+                        ],
+                        [
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           "
+                        ],
+                        [
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           "
+                        ],
+                        [
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "     0     ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           "
+                        ],
+                        [
+                            "ABBAAABAAAA",
+                            "AAABAAAABBA",
+                            "ABAABABAAAA",
+                            "ABBBAAABBBA",
+                            "BAABABBBAAA",
+                            "BABBACABAAB",
+                            "AABBBAABAAA",
+                            "BBAAAAAABBB",
+                            "ABBBBABAABA",
+                            "AABABAABBAA",
+                            "BABAAABBBAA"
+                        ],
+                        [
+                            "DDDDDDDDDDD",
+                            "DDDDDDDDDDD",
+                            "DDDDDDDDDDD",
+                            "DDDDDDDDDDD",
+                            "DDDDDDDDDDD",
+                            "DDDDDDDDDDD",
+                            "DDDDDDDDDDD",
+                            "DDDDDDDDDDD",
+                            "DDDDDDDDDDD",
+                            "DDDDDDDDDDD",
+                            "DDDDDDDDDDD"
+                        ],
+                        [
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           "
+                        ],
+                        [
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           "
+                        ],
+                        [
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "firmalife:beehive[facing=east,honey=true]",
+                        "D": "tfc:grass/loam",
+                        "A": "tfc:plant/labrador_tea[stage=4,age=1]",
+                        "B": "tfc:plant/grape_hyacinth[stage=1,age=3]",
+                        "C": "tfc:firepit[lit=false]"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "text": "如果一个蜂箱里有两个住着蜂王的巢脾和一个空巢脾，两个蜂群就有几率 $(thing)繁殖$()，在空巢脾中产下新的蜂王。这样会把父母双方的 $(thing)性状$() 遗传给后代。性状是蜜蜂拥有的不同特质，会影响它们改变周围世界的方式。性状数值范围为 1-10，10 为最大值。$(br)蜜蜂最多可以拥有 $(thing)四种$()性状。"
+        },
+        {
+            "title": "蜂蜜与蜂蜡",
+            "anchor": "honey_and_wax",
+            "type": "patchouli:spotlight",
+            "item": "firmalife:jar/honey,firmalife:raw_honey,firmalife:beeswax",
+            "text": "蜜蜂会产出 $(thing)蜂蜜$()。手持空罐子对着有蜂蜜的蜂箱 $(item)$(k:key.use)$()，就能得到 $(thing)蜂蜜罐头$()。打开蜂蜜罐头可以得到 $(thing)生蜂蜜$()，它是 $(thing)糖$() 的替代品。$(br2)对着装满的巢脾 $(item)$(k:key.use)$()（手持 $(thing)小刀$()）可以得到 $(thing)蜂蜡$()，它有很多用途。不过，这会杀死巢脾里的蜂王！"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "abilities",
+            "text": "$(li)$(thing)耐寒性$()：使蜜蜂能在更低的温度下产蜜。耐寒性10允许低至-16°C，而耐寒性1仅允许低至2°C。$()$(li)$(thing)生产力$()：提升蜂蜜的产出速度。$()$(li)$(thing)突变性$()：增加繁殖过程中特性遗传的变异性。$()",
+            "title": "性状列表"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(thing)生育力$()：提高繁殖的几率。$()$(li)$(thing)作物亲和力$()：有几率向作物传播少量营养。$()$()$(li)$(thing)自然亲和力$()：使蜂箱周围生成新的花朵和睡莲。$()$()$(li)$(thing)冷静度$()：降低蜜蜂攻击你的几率$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "disease",
+            "title": "疾病",
+            "text": "拥有高突变性性状的蜜蜂有几率患上 $(thing)遗传病$()。患病的蜜蜂会把病症传给后代，并且不再产蜜。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "养蜂提示",
+            "anchor": "tips",
+            "text": "$(li)蜜蜂可以帮助给 $(l:agriculture/greenhouse#planters)种植盆$()施肥！$(li)含水的大型种植盆也算作花朵。$(li)身上是湿的可以避免被蜜蜂攻击。$(li)向日葵、亚麻等一些作物也算作花朵。$(li)$(thing)作物亲和力$()、$(thing)自然亲和力$() 和花朵的范围相同。$(li)务必保持蜂箱入口畅通。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸阅读",
+            "anchor": "relations",
+            "entries": [
+                "tfg:agriculture/greenhouse",
+                "tfg:cooking/cooking_methods",
+                "tfg:cooking/decay",
+                "tfg:the_world/flora"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 4,
+    "extra_recipe_mappings": {
+        "firmalife:beehive": 1,
+        "firmalife:beehive_frame": 1
+    }
+}

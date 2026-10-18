@@ -1,0 +1,86 @@
+{
+	"name": "黏液灵",
+	"category": "tfg:agriculture",
+	"icon": "jellies:jellie/slime_ball/plant",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)黏液灵$()是出现在各个星球和环境中的友好黏液团。 $(br2)它们有各种各样的用途，但最常见的，是产出对应类型的 $(thing)黏液球$()。 $(br2)我有没有说过它们非常友好？只要把亲密度提到足够高，它们就会成为 $(l:game_mechanics/pets)宠物$()，开开心心地跟着你到处跑！"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"text": "$(li)$(bold)$(l:agriculture/jellies#produce)产物$()$(li)$(bold)$(l:agriculture/jellies#feeding)喂食$()$(li)$(bold)地球物种$()$(li2)$(l:agriculture/jellies#herbal)草本$()$(li2)$(l:agriculture/jellies#phosphorum)磷质$()$(li2)$(l:agriculture/jellies#rock)岩石$()$(li)$(bold)幽冥之地物种$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)冰$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)植物$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)发光浆果$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)温泉$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)熔岩$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)黑云母$()$(li2)$(l:beneath/beneath_fauna#latex_jellie)乳胶$()$(br2)$(o)（接下页……）$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(bold)月球物种$()$(li2)$(l:the_moon/moon_fauna#certus_jellie)赛特斯$()$(li)$(bold)火星物种$()$(li2)$(l:mars/mars_fauna#pentetic_jellie)五乙酸$()$(li)$(bold)$(l:agriculture/jellies#spoiler)???$()"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [
+				"tfg:textures/gui/field_guide/jellies.png"
+			],
+			"text": "$(thing)黏液灵$()是雌雄同体的，可以和任何其他 $(thing)黏液灵$()繁殖！",
+			"border": true
+		},
+		{
+			"type": "patchouli:text",
+			"title": "产出物",
+			"anchor": "produce",
+			"text": "$(thing)黏液灵$()非常挑剔，在非原生栖息地拒绝产出任何东西；不过在什么环境里它们都能正常繁殖。$(br2)它们还讨厌机器，只有玩家亲手喂食时才肯交出产出物。$(br2)$(#B0B0B0)$(o)又或者，它们只是想引起你的注意……"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": "喂食",
+			"recipe": "tfg:shaped/jellies_nutritional_mash",
+			"anchor": "feeding",
+			"text": "$(thing)营养糊$()是所有$(thing)黏液灵$()的主食，主要由谷物、水果和一些特定维度才有的材料制成。$(br2)遗憾的是，它们非常挑剔，只能由$(thing)玩家$()亲手喂食，$(l:agriculture/animal_husbandry#feeding_trough)饲料槽$()是不管用的。$(br)$(#B0B0B0)$(o)它怎么在动……"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:herbal",
+			"scale": 0.6,
+			"name": "草药黏液灵",
+			"anchor": "herbal",
+			"text": "$(thing)草药$()黏液灵生成于主世界温暖的森林中，$(l:the_world/climate#temperature)温度$()介于 1-10°C 之间，且$(l:the_world/climate#rainfall)降雨量$()至少 150mm。它们产出$(thing)草药黏液球$()。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:phosphorum",
+			"scale": 0.6,
+			"name": "磷质黏液灵",
+			"anchor": "phosphorum",
+			"text": "$(thing)磷质$()黏液灵生成于主世界寒冷的森林中，$(l:the_world/climate#temperature)温度$()介于 -10-0°C 之间，且$(l:the_world/climate#rainfall)降雨量$()至少 150mm。它们产出$(thing)磷质黏液球$()，还会吃$(thing)腐肉$()。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:rock",
+			"scale": 0.6,
+			"name": "岩石黏液灵",
+			"anchor": "rock",
+			"text": "$(thing)岩石$()黏液灵偶尔生成于主世界山地生物群系的洞穴中。目前它们没有任何作用。"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "延伸阅读",
+			"anchor": "relations",
+			"entries": [
+				"tfg:beneath/beneath_fauna",
+				"tfg:the_moon/moon_fauna",
+				"tfg:mars/mars_fauna"
+			]
+		},
+		{
+			"type": "patchouli:image",
+			"images": [
+				"tfg:textures/gui/field_guide/jellies_secret.png"
+			],
+			"anchor": "spoiler",
+			"text": "$(#B0B0B0)$(o)以下几页字迹模糊，无法辨认……$()",
+			"border": false
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 7
+}

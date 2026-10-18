@@ -1,0 +1,200 @@
+{
+    "name": "Геологія Землі",
+    "category": "tfg:the_world",
+    "icon": "tfc:rock/loose/gabbro",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "text": "Світ $(tfg) поділений на великі континенти — масиви суходолу завширшки в багато кілометрів, розділені океанами. На них можна знайти гірські хребти, річки та безліч інших форм рельєфу. Тут ти дізнаєшся про геологію Землі та про те, як визначаються шари гірських порід."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:the_world/geology#rocks)Шари порід$()$(li)$(bold)$(l:the_world/geology#metamorphism)Метаморфізм$()$(li)$(bold)$(l:the_world/geology#ocean_floors)Океанічне дно$()$(li)$(bold)$(l:the_world/geology#uplift_regions)Регіони підняття$()$(li)$(bold)$(l:the_world/geology#rock_devisions)Поділ порід$()$(li2)$(l:the_world/geology#sedimentary)Осадові$()$(li2)$(l:the_world/geology#metamorphic)Метаморфічні$()$(li2)$(l:the_world/geology#igneous_extrusive)Екструзивні$()$(li2)$(l:the_world/geology#igneous_intrusive)Інтрузивні$()$(li)$(bold)$(l:the_world/geology#rock_classifiers)Класифікація порід$()$(li2)$(l:the_world/geology#sedimentary_carbonate)Осадово-карбонатні$()$(li2)$(l:the_world/geology#sedimentary_clastic)Осадово-уламкові$()$(li2)$(l:the_world/geology#sedimentary_organic)Осадово-органічні$()$(li2)$(l:the_world/geology#igneous_felsic)Магматичні-кислі$()$(li2)$(l:the_world/geology#igneous_intermediate)Магматичні-середні$()$(li2)$(l:the_world/geology#igneous_mafic)Магматичні-основні$()$(li2)$(l:the_world/geology#igneous_ultramafic)Магматичні-ультраосновні$()"
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/maps/terrain_map.png"
+            ],
+            "text": "Мапа площею 65,5 км², на якій відображено типові континентальні утворення та основні річки з їхніми притоками.",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/maps/biomes_map.png"
+            ],
+            "text": "Мапа площею 65,5 км², що відображає середній розподіл біомів на основі локального $(l:the_world/climate#climate)клімату$().",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rocks",
+            "text": "Світ поділений на різні типи $(thing)порід$(). Ділянки порід можуть простягатися більш ніж на кілометр, і під твоїми ногами зазвичай постійно залягають два або три різні шари порід. Оскільки різні руди трапляються в різних типах порід, пошук конкретних типів порід може бути дуже важливим для знаходження таких ресурсів, як $(thing)руди$(), які часто з’являються лише в певних типах порід.",
+            "title": "Гірські породи"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Верхній шар породи на континенті буде або магматичним ефузивним, або $(l:the_world/geology#sedimentary)осадовим$(). Під осадовими породами, найімовірніше, залягатимуть $(l:the_world/geology#metamorphic)метаморфізовані$() форми розташованої вище породи.$(br2)Наприклад, $(thing)мармур$() (метаморфічна порода), найімовірніше, буде знайдено під $(thing)вапняком$() або $(thing)крейдою$(). Високометаморфізовані породи зазвичай залягають глибоко під іншими метаморфічними або магматичними породами."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/biomes/rock_layers.png"
+            ],
+            "text": "Поперечний розріз світу TFC.",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "metamorphism",
+            "text": "$(li)$(thing)Шиферний сланець$() утворюється під $(thing)глинистим сланцем$(), $(thing)аргілітом$() та $(thing)Конгломератом$().$(li)$(thing)Мармур$() утворюється під $(thing)вапняком$(), $(thing)доломітом$() та $(thing)крейдою$().$(li)$(thing)Кварцит$() утворюється під $(thing)кременистим сланцем$().$(li)$(thing)Філіт$() утворюється під $(thing)шиферним сланцем$().$(li)$(thing)Аспідний сланець$() та $(thing)гнейс$() утворюються під $(thing)філітом$() або іншими магматичними інтрузивними породами.",
+            "title": "Метаморфізм"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ocean_floors",
+            "text": "Дно океанів складається з $(l:the_world/geology#igneous_extrusive)магматичних ефузивних$() порід — порід, що утворюються з магми, яка швидко охолоджується. Під магматичною ефузивною породою, найімовірніше, залягатиме $(l:the_world/geology)магматична інтрузивна$() порода того самого $(item)класу$().$(br2)Наприклад, під $(thing)базальтом$() (мафічною магматичною ефузивною породою), найімовірніше, буде $(thing)габро$() (мафічна магматична інтрузивна порода).",
+            "title": "Океанічне дно"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "uplift_regions",
+            "text": "Нарешті, у гірських регіонах ти також можеш побачити $(thing)підняття$(), де на поверхні залягають метаморфічні або інтрузивні магматичні породи. Породи підняття можуть траплятися над іншими континентальними осадовими породами або метаморфічними породами вищого ступеня метаморфізму.$(br2)Крім того, $(l:https://en.wikipedia.org/wiki/Dike_%28geology%29)дайки$() — невеликі вертикальні прошарки інтрузивних магматичних порід — можуть траплятися по всьому світу.",
+            "title": "Регіони підняття"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rock_devisions",
+            "title": "Поділ порід",
+            "text": "Гірські породи в $(tfg_short) зазвичай поділяються на чотири групи: $(l:the_world/geology#sedimentary)осадкові$(), $(l:the_world/geology#metamorphic)метаморфічні$(), $(l:the_world/geology#igneous_extrusive)магматичні ефузивні$() та $(l:the_world/geology#igneous_intrusive)магматичні інтрузивні$(). Ці категорії визначають, де може утворюватися порода, а також які руди можуть з’являтися в ній."
+        },
+        {
+            "title": "Осадові",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:raw_stone/sedimentary"
+            },
+            "anchor": "sedimentary",
+            "text": "$(l:https://en.wikipedia.org/wiki/Sedimentary_rock)Осадові$() породи утворюються внаслідок накопичення або осадження мінеральних чи органічних частинок. Зазвичай вони залягають у верхніх шарах порід на континентальних територіях."
+        },
+        {
+            "title": "Метаморфічні",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:raw_stone/metamorphic"
+            },
+            "anchor": "metamorphic",
+            "text": "$(l:https://en.wikipedia.org/wiki/Metamorphic_rock)Метаморфічні$() породи утворюються внаслідок процесу, який називається метаморфізмом. Їх можна знайти під відповідними осадовими або магматичними породами, а також у зонах підняття земної кори."
+        },
+        {
+            "title": "Нфузивні",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:raw_stone/igneous_extrusive"
+            },
+            "anchor": "igneous_extrusive",
+            "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Extrusive)Екструзивні$() породи утворюються внаслідок охолодження магми на поверхні Землі. Їх можна знайти у верхньому шарі гірських порід на континентальних територіях або на дні океанів."
+        },
+        {
+            "title": "Інтрузивні",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:raw_stone/igneous_intrusive"
+            },
+            "anchor": "igneous_intrusive",
+            "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Intrusive)Інтрузивні$() породи утворюються з магми, яка охолола під земною корою. Їх можна знайти глибоко під землею або, рідше, у дайках чи зонах підняття."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rock_classifiers",
+            "text": "Окрім $(l:the_world/geology#rock_devisions)поділу порід$(), породи також поділяються за їхнім хімічним складом.",
+            "title": "Класифікація порід"
+        },
+        {
+            "title": "Осадово-карбонатні",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:stone_composition/raw/sedimentary_carbonate"
+            },
+            "anchor": "sedimentary_carbonate",
+            "text": "$(l:https://en.wikipedia.org/wiki/Carbonate_rock)Осадово-карбонатні$() породи складаються переважно з карбонатних мінералів, таких як кальцит."
+        },
+        {
+            "title": "Осадово-уламкові",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:stone_composition/raw/sedimentary_clastic"
+            },
+            "anchor": "sedimentary_clastic",
+            "text": "$(l:https://en.wikipedia.org/wiki/Clastic_rock)Осадово-уламкові$() породи складаються з уламків (кластів) мінералів або порід, що існували раніше."
+        },
+        {
+            "title": "Осадово-органічні",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:stone_composition/raw/sedimentary_organic"
+            },
+            "anchor": "sedimentary_organic",
+            "text": "$(l:https://en.wikipedia.org/wiki/Organic-rich_sedimentary_rocks)Осадово-органічні$() породи утворюються внаслідок розкладання або скам’яніння органічних речовин, таких як мушлі чи бактерії."
+        },
+        {
+            "title": "Магматичні-кислі",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:stone_composition/raw/igneous_felsic"
+            },
+            "anchor": "igneous_felsic",
+            "text": "$(l:https://en.wikipedia.org/wiki/Felsic)Магматичні-кислі$() містять значну кількість елементів, з яких утворюються польові шпати та кварц. Загалом порода має містити понад 75% фельзитових мінералів, щоб класифікуватися як $(thing)кислі()$."
+        },
+        {
+            "title": "Магматичні-середні",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:stone_composition/raw/igneous_intermediate"
+            },
+            "anchor": "igneous_intermediate",
+            "text": "$(l:https://en.wikipedia.org/wiki/Intermediate_composition)Магматичні-середні$() породи містять 51,5–63,0 % мас. SiO₂, що ставить їх між породами $(l:the_world/geology#igneous_felsic)кислого$() та $(l:the_world/geology#igneous_mafic)основного$() складу."
+        },
+        {
+            "title": "Магматичні-основні",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:stone_composition/raw/igneous_mafic"
+            },
+            "anchor": "igneous_mafic",
+            "text": "$(l:https://en.wikipedia.org/wiki/Mafic)Магматичні-основні$() породи містять значну кількість мінералів магнію та заліза."
+        },
+        {
+            "title": "Магматичні-ультраосновні",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:stone_composition/raw/igneous_ultramafic"
+            },
+            "anchor": "igneous_ultramafic",
+            "text": "$(l:https://en.wikipedia.org/wiki/Mafic)Магматичні-ультраосновні$() породи містять дуже низьку концентрацію кремнезему."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Докладніше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_world/climate",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:game_mechanics/mining"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 0
+}

@@ -238,11 +238,6 @@ function registerTFGBeneathBiomeTags(event) {
 	event.add('tfg:nether_biomes', 'tfg:nether/basalt_deltas')
 	event.add('tfg:nether_biomes', 'tfg:nether/ash_forest')
 	event.add('tfg:nether_biomes', 'tfg:nether/lava_floes')
-	event.add('tfg:nether_biomes', 'tfg:nether/gneiss_caves')
-	event.add('tfg:nether_biomes', 'tfg:nether/diorite_caves')
-	event.add('tfg:nether_biomes', 'tfg:nether/gabbro_caves')
-	event.add('tfg:nether_biomes', 'tfg:nether/granite_caves')
-	event.add('tfg:nether_biomes', 'tfg:nether/schist_caves')
 
 	event.add('minecraft:has_structure/nether_fossil', '#tfg:nether_biomes')
 	event.add('minecraft:has_structure/bastion_remnant', '#tfg:nether_biomes')

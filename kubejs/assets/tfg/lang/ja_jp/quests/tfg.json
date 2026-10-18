@@ -1,0 +1,23 @@
+{
+    "quests.tfg": "TerraFirmaGregの入り口",
+    "quests.tfg.subtitle": "このModpackについての説明",
+    "quests.tfg.welcome.title": "TerraFirmaGregへようこそ！",
+    "quests.tfg.welcome.subtitle": "「サバイバルゲーム」のあるべき姿",
+    "quests.tfg.welcome.desc": "TerraFirmaGreg Modernを始めていただきありがとうございます！\n\nこのModPackは手つかずの大自然を開拓し、驚異的な産業発展を遂げることが目的になります。最初は、貧しく道端の小石を拾い集めるところから始まり、やがては恒星間を旅するところまで発展します！",
+    "quests.tfg.create_team.title": "チームの作り方",
+    "quests.tfg.create_team.subtitle": "複数人でのプレイについて",
+    "quests.tfg.create_team.desc": "チームを組むことで同時にクエストを攻略することができます。 チームを作るには、インベントリを開き、左上にあるカラフルな人が3人描かれたボタンを選択すると、チームを作成できる画面が開きます。§aCreate_a_team§r と書かれたボタンをクリックし、チーム名やその他のパラメータを設定して、チームの作成に成功したら、右上の緑色の丸の中にあるプラスボタンを使って他のプレイヤーを招待できます。これ以降、クエストは同期され、チームメンバーは誰でもクエストを完了できるようになります。頑張ってくださいね！",
+    "quests.tfg.capture_territory.title": "領有主張の方法",
+    "quests.tfg.capture_territory.subtitle": "それとチャンクロードのしかた",
+    "quests.tfg.capture_territory.desc": "マルチプレイをしているとき、他のプレイヤーに邪魔されないように自分の領地を確保したいと思うことがあるかもしれません。そんな時はOpen_Claimキー(デフォルトだとCtrl+M)を使ってウィンドウを開き、左クリックでチャンクを確保、右クリックで解放することができます。\n\nただし、これには制限があります。世界のすべてを領地にすることはできないですよ。また、Shift+左クリックでチャンクロード状態にすることもできます。Shift+右クリックで解除することができます。そして、これらは同じチーム内で共有されます。",
+    "quests.tfg.chunk_limit.title": "チャンクロード制限の増やし方",
+    "quests.tfg.chunk_limit.desc": "サーバーで遊んでいる場合、デフォルトのフォースロード設定できるチャンク数はかなり少なく抑えられています。\n\nサーバー管理者であれば、README.txtに従ってこの上限を変更できます。また、自分にOP権限がある、あるいはチートをオンにしている場合は、「&a/ftbchunks admin extra_force_load_chunks @p set X&r」というコマンドを使えば、自分のフォースロード上限をXの値に設定できます。",
+    "quests.tfg.field_guide.title": "クエストに関する重要な情報！",
+    "quests.tfg.field_guide.subtitle": "もっといろいろ知りたいですか？",
+    "quests.tfg.field_guide.desc": "クエストはまだ開発中で、常に改善に努めています！特定のゲーム内の仕様に関する多くの情報は、インベントリの「本」タブからアクセスできるフィールドガイドにも記載されています。\n\nクエストですべてが説明されるわけではないので、EMIとフィールドガイドはあなたの強い味方になることを覚えておいてください。",
+    "quests.tfg.books_again.title": "本をなくした方へ",
+    "quests.tfg.books_again.desc": "クエストブックとフィールドガイドの本がまた欲しいですか？コピーはこのクエストで何度でももらえるので安心してください。",
+    "quests.tfg.optional_mods.title": "オプションのMODたち",
+    "quests.tfg.optional_mods.subtitle": "体験をカスタマイズ",
+    "quests.tfg.optional_mods.desc": "Modpackに追加要素を入れたい方は、&dオプションMOD&rのリストもご確認ください！\n\nここには、特定のPC環境でしか動作しないものや、導入時の負荷が重いもの、あるいは用途が限定的すぎて標準では入れていないMODがまとめられています。\n\nなお、これらのMODや互換性についてはTFG開発チームの保証対象外となっているため、今後動作しなくなる可能性があります。\n\nクエスト横の地球儀アイコンをクリックすると、MOD一覧を確認できます。"
+}

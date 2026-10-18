@@ -1,0 +1,225 @@
+{
+    "name": "Животноводство",
+    "category": "tfg:agriculture",
+    "icon": "minecraft:textures/item/egg.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:agriculture/animal_husbandry#intro)Домашний скот$()$(li)$(bold)$(l:agriculture/animal_husbandry#uses)Применения$()$(li2)$(l:agriculture/animal_husbandry#uses_table)Таблица использований$()$(li)$(bold)$(l:agriculture/animal_husbandry#familiarity)Прирученность$()$(li)$(bold)$(l:agriculture/animal_husbandry#mammals)Млекопитающие$()$(li2)$(l:agriculture/animal_husbandry#wooly_animals)Шерстистые млекопитающие$()$(li2)$(l:agriculture/animal_husbandry#dairy_animals)Млекопитающие, дающие молоко$()$(li2)$(l:agriculture/animal_husbandry#equines)Лошадиные$()$(li2)$(l:agriculture/animal_husbandry#camelides)Камелиды$()$(li)$(bold)$(l:agriculture/animal_husbandry#oviparous_animals)Яйцекладущие животные$()$(li)$(bold)$(l:agriculture/animal_husbandry#feeding_trough)Кормушки$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "Введение",
+            "text": "$(thing)Скот$() это животные, которых игрок может приручить и спаривать между собой. Скотина может быть $(thing)самцом$() либо $(thing)самкой$(). Пол некоторых животных может быть определён визуально. У хряков, например, есть бивни."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "uses",
+            "title": "Использует",
+            "text": "Каждая скотина имеет ограниченно количество $(item)Использований$(), индикатор \"Старость\" позволяет понимать, когда животное $(thing)состарится$(). Они рождаются детёнышами, в этом состоянии они маленькие и не могут давать игроку продукты. Спустя определённое количество дней, они становятся $(thing)взрослыми$() животными, способными спариваться, давать молоко и т.п. Животное становится $(thing)старым$(), если оно было использовано или спаривалось достаточное количество раз. Единственная польза от старых животных―их мясо."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/old_cow.png"
+            ],
+            "text": "Этот бык стар и не может размножаться, поэтому у него блеклая шерсть и серые, невидящие глаза.",
+            "border": true
+        },
+        {
+            "type": "tfg:table",
+            "anchor": "uses_table",
+            "strings": [
+                {
+                    "text": "Действие",
+                    "bold": true
+                },
+                {
+                    "text": "Количество использований (Самец)",
+                    "bold": true
+                },
+                {
+                    "text": "Количество использований (Самка)",
+                    "bold": true
+                },
+                {
+                    "text": "Заметки",
+                    "bold": true
+                },
+                {
+                    "text": "Спаривание",
+                    "bold": true
+                },
+                {
+                    "text": "-5"
+                },
+                {
+                    "text": " "
+                },
+                {
+                    "text": "Только самцы"
+                },
+                {
+                    "text": "Рождение",
+                    "bold": true
+                },
+                {
+                    "text": " "
+                },
+                {
+                    "text": "-10"
+                },
+                {
+                    "text": "Только млекопитающие"
+                },
+                {
+                    "text": "Откладывание яиц",
+                    "bold": true
+                },
+                {
+                    "text": " "
+                },
+                {
+                    "text": "-1"
+                },
+                {
+                    "text": "То же, но оплодотворённое"
+                },
+                {
+                    "text": "Продукты",
+                    "bold": true
+                },
+                {
+                    "text": " "
+                },
+                {
+                    "text": "-1"
+                },
+                {
+                    "text": "Молоко, Шерсть и т.д."
+                }
+            ],
+            "title": "Таблица использований",
+            "legend": [],
+            "columns": 3,
+            "first_column_width": 47,
+            "column_width": 64,
+            "row_height": 20,
+            "left_buffer": 2,
+            "top_buffer": 12,
+            "draw_background": false
+        },
+        {
+            "type": "patchouli:empty",
+            "draw_filler": false
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Прирученность",
+            "anchor": "familiarity",
+            "text": "Скот можно кормить для повышения $(thing)привязанности$(). У каждого животного есть любимая еда. Покормить животное можно с помощью $(item)$(k:key.sneak)$() и $(item)$(k:key.use)$() держа еду в руках. $(br) Привязанность требуется для большинства взаимодействий со скотом. Привязанность передаётся детям от матери, но в количестве меньшем, чем было у неё."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/unfamiliarized_pig.png"
+            ],
+            "text": "У скота есть $(thing)Индикатор привязанности$(), показывающий привязанность животного к тебе. Удерживай $(item)$(k:key.sneak)$() глядя на животное, чтобы он показался.",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/no_familiarity_decay_pig.png"
+            ],
+            "text": "Привязанность уменьшается немного каждый день, если не кормить. Повышение привязанности до определенного уровня предотвращает ее снижение, что указывается белым контуром сердца.",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/familiarity_limit_pig.png"
+            ],
+            "text": "Взрослый домашний скот не может быть полностью приручен, что указывается красным контуром сердца. Малыши могут достичь 100% привязанности.",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Млекопитающие",
+            "anchor": "mammals",
+            "text": "$(thing)Млекопитающие$() это скот, который может $(thing)Забеременеть$(). Взрослые млекопитающие с привязанностью больше 30% покормленные в один день начнут спариваться, если они противоположного пола и рядом друг с другом. Самка станет $(thing)Беременной$(), что приведёт к появлению у неё детей через определённое количество дней после оплодотворения. $(br)Примером могут послужить $(l:the_world/wild_animals#pig)Свиньи$()."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Шерстистые млекопитающие",
+            "anchor": "wooly_animals",
+            "text": "$(thing)Шерстистые животные$() это $(l:agriculture/animal_husbandry#mammals)Млекопитающие$(), которых можно $(thing)Подстричь$() если они взрослые и достаточно привязаны к тебе. Примером могут послужить $(l:the_world/wild_animals#sheep)Овцы$(), $(l:the_world/wild_animals#alpaca)Альпаки$(), и $(l:the_world/wild_animals#musk_ox)Овцебыки$()."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Млекопитающие, дающие молоко",
+            "anchor": "dairy_animals",
+            "text": "$(thing)Молочные животные$() это млекопитающие дающие $(thing)Молоко$(). Самок можно кликнуть ведром, чтобы получить молоко. Примеры: $(l:the_world/wild_animals#goat)Козы$(), $(l:the_world/wild_animals#cow)Коровы$(), $(l:the_world/wild_animals#yak)Яки$()."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "equines",
+            "title": "Лошадиные",
+            "text": "$(thing)Лошадиные$() это $(l:agriculture/animal_husbandry#mammals)Млекопитающие$(), на которых можно ездить после приручения. На них можно ездить после достижения 15% прирученности если на них надето $(l:agriculture/leather_making)Седло$().$(br)$(l:the_world/wild_animals#mule)Мулы$() и $(l:the_world/wild_animals#donkey)Ослы$() могут везти сундук или бочку. Снять с них бочку можно при помощи $(item)$(k:key.use)$() держа $(item)$(k:key.sneak)$(). Те же клавиши позволяют извлекать жидкость из бочки, если держать в руках ведро."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "camelides",
+            "title": "Верблюды",
+            "text": "$(thing)Верблюды$() это $(l:agriculture/animal_husbandry#mammals)Млекопитающие$(), схожие с $(l:agriculture/animal_husbandry#equines)Лошадиными$() в том, что на них можно ездить после приручения. На них можно ездить после достижения 15% прирученности если на них надето $(l:agriculture/leather_making)Седло$(). У верблюдов от природы высокий шаг, также они могут пересекать ущелья при помощи мощных прыжков."
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "Яйцекладущие животные",
+            "anchor": "oviparous_animals",
+            "recipe": "tfc:crafting/nest_box",
+            "text": "$(thing)Яйцекладущие животные$() не являются $(l:agriculture/animal_husbandry#mammals)Млекопитающими$(), потомство они производят откладывая $(thing)Яйца$(). Чтобы откладывать яйца, им нужен $(thing)Насест$(). Они найдут поставленный игроком насест самостоятельно.$(br)Примеры: $(l:the_world/wild_animals#duck)Утки$(), $(l:the_world/wild_animals#quail)Перепёлки$(), $(l:the_world/wild_animals#chicken)Куры$()."
+        },
+        {
+            "type": "tfg:heat_recipe",
+            "recipe": "tfg:heating/forge_eggs_to_tfc_food_cooked_egg",
+            "text": "$(thing)Яйца$() можно приготовить, чтобы их съесть. Самцы яйцекладущих животных могут оплодотворять самок, что приводит к оплодотворению следующего отложенного в насест яйца. В подсказке у оплодотворённых яиц написано через какое время вылупится цыплёнок.$(br2)Яйцекладущие животные также могут быть $(thing)ощипаны$() для получения перьев при помощи $(item)$(k:key.sneak) + $(k:key.use)$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Кормушки",
+            "anchor": "feeding_trough",
+            "item": "tfcgroomer:bismuth_bronze_grooming_station,tfcgroomer:black_bronze_grooming_station,tfcgroomer:bronze_grooming_station,tfcgroomer:copper_grooming_station,tfcgroomer:wrought_iron_grooming_station,tfcgroomer:steel_grooming_station,tfcgroomer:black_steel_grooming_station,tfcgroomer:red_steel_grooming_station,tfcgroomer:blue_steel_grooming_station",
+            "text": "$(thing)Кормушки$() позволяют автоматизировать кормление животных в радиусе, указанном в подсказке к ним. Использование $(l:craftsmanship/metallurgy)Металла$() более высокого тира повышает радиус кормления.$(br)Чтобы добавить корм и/или включить автоматическое спаривание―открой интерфейс кормушки при помощи $(item)$(k:key.use)$()."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Дополнительно",
+            "anchor": "relations",
+            "entries": [
+                "tfg:agriculture/growing_crops",
+                "tfg:agriculture/weaving",
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/wild_animals",
+                "tfg:agriculture/leather_making",
+                "tfg:agriculture/weaving"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "priority": true,
+    "extra_recipe_mappings": {
+        "tfc:nest_box": 15,
+        "tfcgroomer:bismuth_bronze_grooming_station": 17,
+        "tfcgroomer:black_bronze_grooming_station": 17,
+        "tfcgroomer:bronze_grooming_station": 17,
+        "tfcgroomer:copper_grooming_station": 17,
+        "tfcgroomer:wrought_iron_grooming_station": 17,
+        "tfcgroomer:steel_grooming_station": 17,
+        "tfcgroomer:black_steel_grooming_station": 17,
+        "tfcgroomer:red_steel_grooming_station": 17,
+        "tfcgroomer:blue_steel_grooming_station": 17
+    }
+}

@@ -1,0 +1,58 @@
+{
+	"name": "Подсочка деревьев",
+	"category": "tfg:agriculture",
+	"icon": "afc:tree_tap",
+	"pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Из некоторых видов деревьев можно добывать полезные жидкости. Эти деревья могут давать либо сахаристые соки, которые можно сконцентрировать в сироп и использовать как подсластитель; либо латекс, который можно переработать в резину; либо cмолу, которую можно переработать в канифоль — заменитель воска."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Подсочка клёна",
+            "images": [
+            	"afc:textures/gui/book/maple_tapping.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Для подсочки деревьев нужны три вещи: само дерево, краник для подсочки, выкованный из медного слитка и установленный в середине ствола минимум 3 блока в высоту, а также бочка, которая должна быть расположена прямо под краником и смотреть вверх. Если все условия соблюдены, то твоя бочка сразу начнёт наполняться соком.$(br2)$(o)$(3)Для подсочки нужно минимум три естественно выросщих бревна."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+            	"tfg:textures/gui/field_guide/tree_tapping/tapping_kapok.png"
+            ],
+            "text": "Допустимая конфигурация, используемая для извлечения латекса из сейбы.",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "text": "Подсочка может быть оптимизирована, если позволить соку течь прямо в открытую трубу для жидкостей.",
+            "title": "Да будет сок!",
+            "images": [
+            	"tfg:textures/gui/field_guide/tree_tapping/tfg_tapping.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Дополнительно",
+            "anchor": "relations",
+            "entries": [
+            	"tfg:the_world/earth_tree_index",
+            	"tfg:cooking/cooking_methods"
+            ]
+        }
+	],
+	"read_by_default": true,
+	"sortnum": 3,
+	"extra_recipe_mappings": {
+        "afc:tree_tap": 0
+	}
+}

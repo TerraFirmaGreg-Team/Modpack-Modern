@@ -1,0 +1,36 @@
+{
+    "name": "Миски",
+    "category": "tfg:cooking",
+    "icon": "tfc:ceramic/bowl",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)Миска$() — універсальний інструмент, який можна використовувати для приготування $(l:cooking/salad)салатів$(), приготування $(l:cooking/cooking_methods#pot)супів$(), $(l:cooking/decay#salting)соління$() м’яса або нанесення $(thing)порошку$() на $(l:craftsmanship/glassworking#coloring)скло$(), щоб змінити колір отриманого скла.$(br2)Миски можна виготовляти як із $(thing)кераміки$() — виколупавши миску з глини, а потім випаливши її, — так і з дерева."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Щоб приготувати $(item)салат$(), відкрий інтерфейс, тримаючи миску в руці та натиснувши $(item)$(k:key.sneak) + $(k:key.use)$() у повітрі.$(br2)Миски також можна розміщувати на землі як блоки. Після встановлення їх можна наповнити будь-яким типом $(thing)порошку$() — результатом подрібнення руд, мінералів або самоцвітів у $(l:craftsmanship/quern)жорнах$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:tfc:powders",
+            "anchor": "powder_bowl",
+            "title": "Порошки",
+            "link_recipes": false,
+            "text": "Миска з порошком може вміщувати до 16 одиниць певного порошку. Щоб додати предмет, натисни $(item)$(k:key.use)$(), тримаючи порошок у руці. Щоб вийняти предмет, натисни $(item)$(k:key.use)$() порожньою рукою.$(br2)Затискання клавіші $(item)$(k:key.sneak)$() дозволяє вийняти весь вміст миски."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:powder/salt",
+            "link_recipes": false,
+            "text": "Якщо в мисці є сіль, натискання по ній несолоним сирим м'ясом засолить його. Це працює так само, як і створення м'яса із сіллю у твоєму інвентарі."
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 12,
+    "extra_recipe_mappings": {
+        "tfc:ceramic/unfired_bowl": 1,
+        "tfc:ceramic/bowl": 1,
+        "minecraft:bowl": 1
+    }
+}

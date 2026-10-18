@@ -1,0 +1,134 @@
+{
+    "name": "炉与风箱",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:textures/block/molten_lit.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "charcoal_forge",
+            "text": "$(thing)木炭炉$()是一种用来 $(l:game_mechanics/heating)加热$()和熔化金属、陶器、砖块等物品的设备。$(br)木炭炉是让 $(l:craftsmanship/crucible)坩埚$()正常工作的必要条件。$(br)它由 5 个 $(thing)石头$()方块——比如圆石、原石或砖块——围绕一个 7 或 8 层的 $(l:craftsmanship/charcoal_pit#charcoal_pile)木炭堆$()构成，然后点燃即可。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        " B ",
+                        "C0C",
+                        " B "
+                    ],
+                    [
+                        "   ",
+                        " R ",
+                        "   "
+                    ]
+                ],
+                "mapping": {
+                    "0": "tfc:charcoal_pile[layers=7]",
+                    "C": "tfc:rock/cobble/gabbro",
+                    "R": "tfc:rock/raw/gabbro",
+                    "B": "tfc:rock/bricks/gabbro"
+                }
+            },
+            "name": "木炭炉",
+            "text": "完整的炉子结构，随时可以点燃。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "木炭炉只能在通风良好的地方正常工作。炉子正上方的方块必须是空气或 $(l:craftsmanship/crucible)坩埚$()。此外，木炭炉方块或它周围两格十字形的区域内 $(italic)必须至少有一格露天方块！$()$(br2)$(l:craftsmanship/charcoal_forge#bellows)风箱$()可以放在炉子旁边且高一格的位置，以提高炉子能达到的最高温度，不过这并非硬性要求。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "  G  ",
+                        "  G  ",
+                        "GGCGG",
+                        "  B  ",
+                        "  G  "
+                    ],
+                    [
+                        "XYXYX",
+                        "YXYXY",
+                        "XY0YX",
+                        "YXYXY",
+                        "XYXYX"
+                    ]
+                ],
+                "mapping": {
+                    "0": "tfc:charcoal_forge[heat_level=7]",
+                    "X": "tfc:rock/smooth/gabbro",
+                    "Y": "tfc:rock/smooth/dacite",
+                    "G": "minecraft:light_blue_stained_glass",
+                    "C": "tfc:crucible",
+                    "B": "tfc:bellows[facing=west]"
+                }
+            },
+            "name": "烟囱示意图",
+            "text": "任一蓝色染色玻璃方块必须能直接接触到天空且与炉子连通，才能算作有效烟囱。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/gui/charcoal_forge.png"
+            ],
+            "title": "木炭炉界面。",
+            "text": "$(bold)提示：$()你可以用 $(item)$(k:key.drop)$()把木炭之类的燃料直接丢到炉子上补充燃料。",
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "炉子底部的五个槽位用来放燃料。炉子运行时会周期性消耗 $(t:#tfc:forge_fuels)$(6)燃料$()，可以是 $(thing)木炭、煤炭、焦煤或泥炭煤球$()。顶部的五个槽位会加热物品，最高可加热到左侧指示器显示的温度。右侧的槽位用来放置能盛装液态金属的容器，比如 $(l:craftsmanship/pottery#vessel)小缸$()和 $(l:craftsmanship/pottery#mold)模具$()。在炉中熔化的物品会流进这些容器，否则熔融流体将被 $(bold)清除$()。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:bellows",
+            "title": "风箱",
+            "anchor": "bellows",
+            "text": "$(thing)风箱$()可以通过改善氧气供应来提高设备的温度。不过由于燃烧温度更高，燃料消耗也会更快。风箱可以给它正前方的方块以及再下面一格的方块供气。这样它就能为 $(l:craftsmanship/blast_furnace)高炉$()或 $(l:craftsmanship/charcoal_forge#charcoal_forge)木炭炉$()之类的设备鼓风。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "要使用风箱，只需让它朝向目标加热设备放置，然后 $(item)$(k:key.use)$()。风箱会向设备泵入空气，在短时间内提高其最高温度。给风箱背面输入 <16RPM 的 $(thing)机械旋转$()（比如用一根 $(item)传动杆$()）即可实现自动化，但这会禁用手动操作。可以考虑用 $(item)离合器$()来启用/禁用机械动力。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "风箱鼓一次风可以为设备供气 200 刻。不过大多数设备一次最多能缓冲 600 刻的供氧量。$(br2)无论剩余供气时间多长，设备的燃料消耗都会翻倍，所以过度使用风箱不会有额外的惩罚。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "automation",
+            "title": "自动化提示",
+            "text": "$(li)木炭炉会自动收集掉落在它侧面的燃料。（按 $(item)$(k:key.drop)$()，或使用 $(item)投掷器$()、$(item)发射器$()或 $(item)漏斗$()。）$(li)$(item)机械手$()也能为炉子补充燃料。$(li)$(item)置物台$()可以算作炉子的隔热层，如果你想自动化 $(item)工作盆$()的话。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "想要更炫一点的东西，或者想把炉子搬进室内？看看 $(l:beneath/beneath_mechanics#hellforge)地狱熔炉$()吧！"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸阅读",
+            "anchor": "relations",
+            "entries": [
+                "tfg:agriculture/leather_making",
+                "tfg:craftsmanship/pit_kiln",
+                "tfg:craftsmanship/pottery",
+                "tfg:craftsmanship/crucible",
+                "tfg:craftsmanship/blast_furnace",
+                "tfg:craftsmanship/bloomery",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/glassworking",
+                "tfg:craftsmanship/charcoal_pit",
+                "tfg:game_mechanics/heating"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 6,
+    "extra_recipe_mappings": {
+        "tfc:bellows": 7
+    }
+}

@@ -333,13 +333,13 @@ const registerTFCRecipes = (event) => {
     ).id('tfg:glassworking/lamp_glass')
 
 	event.recipes.gtceu.macerator('tfg:candle')
-		.itemInputs("#minecraft:candles")
+		.itemInputs("#tfc:candles")
 		.itemOutputs("gtceu:small_wax_dust")
 		.duration(50)
 		.EUt(2)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING);
 	
-	event.recipes.tfc.quern("gtceu:small_wax_dust", "#minecraft:candles")
+	event.recipes.tfc.quern("gtceu:small_wax_dust", "#tfc:candles")
 		.id("tfg:quern/candles")
 	event.recipes.tfc.quern("gtceu:tiny_wax_dust", "gtceu:wax_nugget")
 		.id("tfg:quern/wax_nugget")
@@ -424,7 +424,25 @@ const registerTFCRecipes = (event) => {
 		B: '#forge:small_gears/brass',
 		S: '#forge:plates/wrought_iron',
 		W: '#forge:rods/wrought_iron'
-	}).id('tfg:shaped/vane')
+	}).id('tfg:shaped/vane_wrought')
 
-	TFGHelpers.registerMaterialInfo('tfc:vane', [GTMaterials.Brass, 1, GTMaterials.WroughtIron, 2.5])
+	event.shaped('tfc:vane', [
+		' S ',
+		'WBW',
+		' W '
+	], {
+		B: '#forge:small_gears/brass',
+		S: '#forge:plates/iron',
+		W: '#forge:rods/iron'
+	}).id('tfg:shaped/vane_cast')
+
+	event.shaped('tfc:vane', [
+		' S ',
+		'WBW',
+		' W '
+	], {
+		B: '#forge:small_gears/brass',
+		S: '#forge:plates/lead',
+		W: '#forge:rods/lead'
+	}).id('tfg:shaped/vane_lead')
 }

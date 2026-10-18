@@ -6,6 +6,7 @@ on:
     branches: [dev]
     paths:
       - 'kubejs/assets/**/lang/en_us.json'
+      - 'kubejs/assets/**/lang/en_us/**/*.json'
       - 'kubejs/assets/**/patchouli_books/**/en_us/**/*.json'
   workflow_dispatch:
     inputs:
@@ -81,7 +82,7 @@ jobs:
           CROWDIN_ID: ${{ vars.CROWDIN_ID }}
 
   cleanup-empty-files:
-    name: "[🗑️] Cleanup Empty Files"
+    name: "[🛠️] Post-process Translations"
     runs-on: ubuntu-latest
     needs: [sync-patchouli, sync-language]
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
@@ -92,6 +93,9 @@ jobs:
           ref: ${{ env.LOCALIZATION_BRANCH }}
           fetch-depth: 0
         continue-on-error: true
+
+      - name: "Normalize Patchouli translations"
+        run: python3 .github/scripts/crowdin/patchouli.py
 
       - name: "Remove empty translation files"
         run: |

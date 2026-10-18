@@ -1,0 +1,109 @@
+{
+    "name": "淘金与洗矿槽",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:pan/empty",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "panning",
+            "title": "淘金",
+            "text": "$(thing)淘金$()是在河流和其他水道中搜寻特定自然金属矿石矿粉的方法。$(br2)淘金利用的是$(t:#tfc:ore_deposits)$(6)矿石沉积物$()，它们出现在湖泊和河流底部的砂砾区块中。$(br2)要开始淘金，你需要一个$(item)空淘金盘$()。"
+        },
+        {
+            "type": "tfg:knapping_recipe",
+            "recipe": "tfc:clay_knapping/pan",
+            "text": "如上图所示，粘土可以$(l:craftsmanship/pottery)塑形$()成淘金盘。"
+        },
+        {
+            "type": "tfg:heat_recipe",
+            "recipe": "tfc:heating/ceramic_pan",
+            "text": "淘金盘$(thing)塑形$()完成后，还需要$(l:game_mechanics/heating)烧制$()成$(thing)陶瓷淘金盘$()。$(br2)接下来你需要找到某种$(t:#tfc:ore_deposits)$(6)矿石沉积物$()。矿石沉积物有几种不同的矿石：原生铜、原生银、原生金和锡石。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#tfc:ore_deposits"
+                }
+            },
+            "name": "沉积物示例",
+            "text": "砂砾中的矿石沉积物。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "现在你可以开始淘金了！$(br2)$(bold)1.$()手持淘金盘，对着矿石沉积物方块$(item)$(k:key.use)$()。$(br2)$(bold)2.$()站在水里并手持淘金盘，按住$(item)$(k:key.use)$()即可开始淘洗。$(br2)$(bold)3.$()片刻之后，如果运气好，你的物品栏里就会多出一些矿粉。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/panning.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "sluice",
+            "title": "洗矿槽",
+            "item": "tag:tfc:sluices",
+            "text": "$(thing)洗矿槽$()是一种用来自动处理$(thing)矿石沉积物$()的设备，其产出与$(l:craftsmanship/panning#panning)淘金$()相同，但概率略高。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "洗矿槽被放置后会占据两个方块。为了让它正常工作，水必须流过洗矿槽的顶部并从底部流出。如果水看起来流过了整个洗矿槽，就表示它在正常工作。流进洗矿槽的水必须是水流的最后一格水，且在洗矿槽的出口处必须有一个空方块让水能够流进去。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/sluice_cross.png"
+            ],
+            "text": "一个正确安装的洗矿槽。",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "要使用洗矿槽，只需要把矿石沉积物方块以物品形式丢到上游水流中，让水流把物品冲进洗矿槽，沉积物会出现在洗矿槽中。一段时间之后，洗矿的产物就有可能从下游吐出。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/sluice_in_use.png"
+            ],
+            "text": "一个正常工作的、里面有沉积物的洗矿槽。",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "淘金和洗矿可能产出以下几种产物：$(thing)矿粉$()、$(thing)小堆矿粉$()、$(thing)石子$()和$(thing)宝石$()。$(br)想查看特定掉落物的获取概率，可以在 $(emi) 中查看矿石沉积物。",
+            "title": "可获得的产物"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸阅读",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_world/geology",
+                "tfg:craftsmanship/sticks_and_stones",
+                "tfg:craftsmanship/pottery",
+                "tfg:craftsmanship/metallurgy"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 15,
+    "extra_recipe_mappings": {
+        "tag:tfc:ore_deposits": 0,
+        "tfc:ceramic/unfired_pan": 1,
+        "tfc:pan/empty": 2,
+        "tfc:pan/filled": 4,
+        "tag:tfc:sluices": 6
+    }
+}

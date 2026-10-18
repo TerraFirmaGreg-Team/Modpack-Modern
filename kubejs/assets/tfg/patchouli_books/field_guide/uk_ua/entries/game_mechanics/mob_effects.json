@@ -1,0 +1,87 @@
+{
+    "name": "Глосарій ефектів істот/гравця",
+    "category": "tfg:game_mechanics",
+    "icon": "minecraft:textures/mob_effect/jump_boost.png",
+    "sortnum": 4,
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(2)Позитивні ефекти$()$(li2)$(l:game_mechanics/mob_effects#cooling)Охолодження$()$(li2)$(l:game_mechanics/mob_effects#warming)Зігрівання$()$(li2)$(l:game_mechanics/mob_effects#quenched)Втамування спраги$()$(li2)$(l:game_mechanics/mob_effects#cure_parasites)Лікування паразитів$()$(li2)$(l:game_mechanics/mob_effects#cure_toxins)Детоксикація$()$(li2)$(l:game_mechanics/mob_effects#cure_microplastics)Фільтрація мікропластику$()$(li)$(bold)$(4)Негативні ефекти$()$(li2)$(l:game_mechanics/mob_effects#freezing)Замерзання$()$(li2)$(l:game_mechanics/mob_effects#blazing)Опік$()$(li2)$(l:game_mechanics/mob_effects#instant_radiation)Миттєве випромінювання$()$(li2)$(l:game_mechanics/mob_effects#final_moments)Останні хвилини$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cooling",
+            "title": "Охолодження",
+            "text": "Під час дії цього ефекту температура гравця постійно $(thing)знижується$() до мінімуму $(n)5°C$()."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "warming",
+            "title": "Зігрівання",
+            "text": "Під час дії цього ефекту температура гравця постійно $(thing)підвищується$() до максимуму $(n)25°C$()."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "quenched",
+            "title": "Втамування спраги",
+            "text": "Під час дії цього ефекту запобігає природному зниженню $(l:cooking/food_and_water#thirst)спраги$(). Однак він не перешкоджає ефекту спраги зменшувати показник спраги.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cure_parasites",
+            "title": "Лікування паразитів",
+            "text": "Під час дії цього ефекту $(l:cooking/food_and_water#parasites)паразитарне зараження$() поступово зменшується зі швидкістю близько 1% кожні 10 с на базовому рівні.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cure_toxins",
+            "title": "Детоксикація",
+            "text": "Під час дії цього ефекту $(l:cooking/food_and_water#toxins)токсичне забруднення$() поступово зменшується зі швидкістю близько 1% кожні 10 с на базовому рівні.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cure_microplastics",
+            "title": "Фільтрація мікропластику",
+            "text": "Під час дії цього ефекту $(l:cooking/food_and_water#microplastics)забруднення мікропластиком$() поступово зменшується зі швидкістю близько 1% кожні 10 с на базовому рівні.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "freezing",
+            "title": "Замерзання",
+            "text": "Під час дії цього ефекту температура гравця постійно $(thing)знижується$() до небезпечно низького мінімуму $(n)-20°C$(). Для виживання в цьому стані рекомендується захисне спорядження."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "blazing",
+            "title": "Опік",
+            "text": "Під час дії цього ефекту температура гравця постійно $(thing)підвищується$() до небезпечно високого максимуму $(n)60°C$(). Для виживання в цьому стані рекомендується захисне спорядження."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "instant_radiation",
+            "title": "Миттєве випромінювання",
+            "text": "Цей ефект швидко завдає гравцеві $(l:game_mechanics/hazards#radioactive_materials)радіаційної шкоди$()."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "final_moments",
+            "title": "Останні хвилини",
+            "text": "Цей ефект запускає таймер, який відраховує твої останні хвилин. Коли час спливає, ти помираєш."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Докладніше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_world/geology",
+                "tfg:the_world/climate",
+                "tfg:beneath/beneath_mechanics",
+                "tfg:cooking/food_and_water",
+                "tfg:cooking/drinks",
+                "tfg:game_mechanics/hazards"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,118 @@
+{
+    "name": "Акведуки",
+    "category": "tfg:agriculture",
+    "icon": "tfc:rock/aqueduct/shale",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)Акведуки$() это инструмент, используемый для перемещения $(thing)Жидкостей$(). $(item)Деревянные вёдра$() не способны перемещать источники воды, поэтому для перемещения жидкостей на любую дистанцию по горизонтали существуют $(thing)Акведуки$(). Их можно использовать для перемещения любого типа воды: $(thing)Пресной$(), $(thing)Солёной$() и $(thing)Родниковой$(). Ещё можно перемещать $(thing)Лаву$().$(br)Акведуки с пресной водой могут $(l:agriculture/growing_crops#hydration)орошать пашни$()."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Чтобы использовать $(thing)Акведук$(), тебе нужно просто соединить несколько штук в одну горизонтальную структуру, один из концов которой касается $(thing)Источника$() или $(thing)Текущей$() воды. Вскоре вода начнёт течь по сети акведуков до другого конца.$(br2)$(bold)Учти:$() убрав акведуки, ты прервеёшь поток воды, $(thing)Акведуки$() не создают постоянные блоки-источники, поэтому вода исчезнет если их убрать."
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "     ",
+                            "     ",
+                            "     ",
+                            "  0  ",
+                            "     ",
+                            "     ",
+                            "     "
+                        ],
+                        [
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     "
+                        ],
+                        [
+                            "  W  ",
+                            "  B  ",
+                            "  B  ",
+                            "CADAE",
+                            "B   B",
+                            "B   B",
+                            "W   W"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "tfc:rock/aqueduct/marble[south=true,north=true,fluid=water]",
+                        "B": "tfc:rock/aqueduct/marble[east=true,west=true,fluid=water]",
+                        "C": "tfc:rock/aqueduct/marble[east=true,south=true,fluid=water]",
+                        "D": "tfc:rock/aqueduct/marble[west=true,north=true,south=true,fluid=water]",
+                        "E": "tfc:rock/aqueduct/marble[east=true,north=true,fluid=water]",
+                        "W": "minecraft:water"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "     ",
+                            "     ",
+                            "     ",
+                            "  0  ",
+                            "     ",
+                            "     ",
+                            "     "
+                        ],
+                        [
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     "
+                        ],
+                        [
+                            "  W  ",
+                            "  B  ",
+                            "  B  ",
+                            "CADAE",
+                            "B   B",
+                            "B   B",
+                            "W   W"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "tfc:rock/aqueduct/marble[south=true,north=true,fluid=lava]",
+                        "B": "tfc:rock/aqueduct/marble[east=true,west=true,fluid=lava]",
+                        "C": "tfc:rock/aqueduct/marble[east=true,south=true,fluid=lava]",
+                        "D": "tfc:rock/aqueduct/marble[west=true,north=true,south=true,fluid=lava]",
+                        "E": "tfc:rock/aqueduct/marble[east=true,north=true,fluid=lava]",
+                        "W": "minecraft:lava"
+                    }
+                }
+            ],
+            "name": "Сеть акведуков",
+            "text": "Сеть акведуков с водой или лавой",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Читать дальше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:agriculture/growing_crops",
+                "tfg:craftsmanship/barrels",
+                "tfg:craftsmanship/chisel",
+                "tfg:craftsmanship/building_materials",
+                "tfg:the_world/geology"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 12,
+    "extra_recipe_mappings": {
+        "tag:tfc:rock/aqueducts": 0
+    }
+}

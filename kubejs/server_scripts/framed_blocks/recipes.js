@@ -3,8 +3,6 @@
 
 const registerFramedBlocksRecipes = (event) => {
 
-	event.remove({ id: 'framedblocks:framed_torch' })
-	event.remove({ id: 'framedblocks:framing_saw/framed_torch' })
 	event.remove({ id: 'framedblocks:framed_soul_torch' })
 	event.remove({ id: 'framedblocks:framing_saw/framed_soul_torch' })
 	event.remove({ id: 'framedblocks:framed_obsidian_pressure_plate' })
@@ -576,6 +574,31 @@ const registerFramedBlocksRecipes = (event) => {
 			count: 1
 		}
 	}).id('framedblocks:framing_saw/framed_glowing_cube')
+
+	// Torch
+
+	event.shaped('2x framedblocks:framed_torch', [
+		'A',
+		'B'
+	], {
+		A: 'minecraft:glowstone',
+		B: 'framedblocks:framed_cube'
+	}).id('framedblocks:framed_torch')
+
+	event.custom({
+		type: "framedblocks:frame",
+		additives: [
+			{
+				"count": 1,
+				"ingredient": { item: "minecraft:glowstone" }
+			}
+		],
+		material: 6144,
+		result: {
+			item: "framedblocks:framed_torch",
+			count: 2
+		}
+	}).id('framedblocks:framing_saw/framed_torch')
 
 	// Item Frame
 

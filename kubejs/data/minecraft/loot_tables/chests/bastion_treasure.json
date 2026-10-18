@@ -191,6 +191,44 @@
 							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "species:crankbow",
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"species:capacity": 2,
+								"species:quick_crank": 3
+							},
+							"add": false
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
+						}
+					],
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "species:crankbow",
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"species:sparing": 2,
+								"species:scattershot": 1
+							},
+							"add": false
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
+						}
+					],
+					"weight": 10
 				}
 			]
 		},

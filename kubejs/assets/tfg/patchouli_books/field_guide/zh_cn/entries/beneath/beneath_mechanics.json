@@ -1,0 +1,153 @@
+{
+	"name": "幽冥之地生存技巧",
+	"category": "tfg:beneath",
+	"icon": "beneath:cursecoal",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "在幽冥之地生活与在地面上生活有不少重大差异！本条目包含一些信息，或许能帮助你在深处更长期地生存。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"text": "$(li)$(bold)$(l:beneath/beneath_mechanics#temperature)温度管理$()$(li2)$(l:beneath/beneath_mechanics#ice)冰$()$(li2)$(l:beneath/beneath_mechanics#clothes)衣物$()$(li2)$(l:beneath/beneath_mechanics#other_cooling)其他$()$(li)$(bold)$(l:beneath/beneath_mechanics#hellforge)地狱熔炉$()$(li)$(bold)$(l:beneath/beneath_mechanics#rope_ladder)垂直移动$()$(li2)$(l:beneath/beneath_mechanics#rope_ladder)绳梯$()$(li2)$(l:logistics/exploration_gear#hang_glider)悬挂式滑翔翼$()$(li2)$(l:logistics/exploration_gear#grappling_hook)抓钩$()$(li2)$(l:logistics/exploration_gear#harpoon)吊索与绳圈$()$(li)$(bold)$(l:beneath/beneath_mechanics#piglins)猪灵$()$(li2)$(l:beneath/beneath_mechanics#disguise)伪装$()$(li2)$(l:beneath/beneath_mechanics#towers)塔楼$()$(li2)$(l:beneath/beneath_mechanics#outposts)前哨站$()$(li2)$(l:beneath/beneath_mechanics#bastions)堡垒遗迹$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "temperature",
+			"title": "温度管理",
+			"text": "幽冥之地很热！最顶层的温度从 20°C 起步，越往下只会越热。$(br2)在这里，避免$(l:game_mechanics/player_temperature)中暑$()比在主世界麻烦得多，但有一些缓解的办法。$(br2)避免过热最简单的方法，就是待在幽冥之地的上层，并在你开始过热时$(l:game_mechanics/player_temperature#wetness)跳进水里$()。"
+		},
+		{
+			"type": "tfg:sealed_barrel_recipe",
+			"recipe": "tfg:barrel/packed_ice",
+			"anchor": "ice",
+			"text": "随身带些$(l:game_mechanics/player_temperature#blocks)冰$()！站在冰附近能降低$(l:game_mechanics/player_temperature)你的体温$()。冰可以在地表采集，得到的冰沙可以做成$(item)浮冰$()。$(thing)浮冰$()和$(thing)蓝冰$()不会融化，可以用$(item)锯子$()采集。$(l:cooking/drinks#ice_slush)液态冰沙$()可以直接饮用。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "clothes",
+			"title": "衣物",
+			"text": "$(item)粗麻布$()、$(item)亚麻布$()和$(item)丝绸$()制成的$(l:craftsmanship/clothing)衣物$()能提供一定的耐热效果。$(br)$(l:the_world/wild_animals#crocodile)鳄鱼皮$()、$(l:the_world/wild_animals#tiger)老虎皮$()和$(l:the_world/wild_animals#lion)狮子皮$()衣物能提供更强的降温效果。$(br)最后，$(l:beneath/beneath_fauna#phantom)幻翼丝$()和$(l:beneath/beneath_fauna#red_elk)红麋鹿皮$()衣物是降温效果最强的衣物，而且也非常耐久。$(br2)所有衣物都可以修理。按$(thing)U$()即可在$(emi)中查看修理配方。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shaped/silk_shirt",
+			"recipe2": "tfg:shaped/crocodile_shirt"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shaped/phantom_silk_shirt",
+			"recipe2": "tfg:shaped/red_elk_shirt"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "other_cooling",
+			"recipe": "tfg:crafting/smoothie/magmango",
+			"text": "其他保持凉爽的方法还包括站在$(l:beneath/beneath_fauna#ice_jellie)冰黏液灵$()旁边，以及食用$(item)冰汤$()和$(item)水果冰沙$()之类的降温食物！"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "地狱熔炉",
+			"anchor": "hellforge",
+			"text": "由于缺少天空，$(l:craftsmanship/charcoal_forge)木炭炉$()在幽冥之地无法工作！$(br2)$(thing)地狱熔炉$()是一座大得夸张的熔炉，燃料、产物和加热容量都非常大。它一次最多能加热九个$(l:craftsmanship/crucible)坩埚$()，而且同样不需要天空！$(br2)它在主世界也能使用。"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+				"pattern": [
+					[
+						"ZXXXZ",
+						"XYYYX",
+						"XY0YX",
+						"XYYYX",
+						"ZXXXZ"
+					],
+					[
+						"     ",
+						" XXX ",
+						" XXX ",
+						" XXX ",
+						"     "
+					]
+				],
+				"mapping": {
+					"Z": "beneath:blackstone_aqueduct[fluid=lava]",
+					"Y": "beneath:hellforge_side",
+					"0": "beneath:hellforge",
+					"X": "beneath:hellbricks"
+				}
+			},
+			"name": "地狱熔炉",
+			"text": "任何类型的$(l:agriculture/aqueducts)引水桥$()都可以使用。",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"text": "地狱熔炉需要岩浆流过它四个角落的引水桥，还需要 21 块地狱砖。中央 3x3 区域必须填满各含 7 个木炭的$(l:craftsmanship/charcoal_pit)木炭堆$()，然后点燃即可启动熔炉。$(br2)为避免过热，建议使用幽冥之地上层小型岩浆池里的岩浆。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "地狱熔炉的物品槽既可以放燃料，也可以放要熔炼的东西，两者没有区别。放东西时务必小心！和木炭炉一样，右边的槽是金属熔化后的去处。屏幕上的岩浆计量表指示温度。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "绳梯",
+			"anchor": "rope_ladder",
+			"item": "tag:tfg:rope_ladders",
+			"text": "$(thing)绳梯$()是在幽冥之地上下移动的好办法。和普通梯子不同，它可以悬垂在悬崖边缘，侧面不需要任何支撑方块，而且一整组可以一次放置或收回。$(br)$(item)粗麻纤维$()可以从$(l:beneath/beneath_wild_fruits#oil_palm)油棕$()获取，$(item)黄麻绳$()则可以用$(thing)绳圈$()或$(thing)其他布料$()合成。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "猪灵以物易物",
+			"anchor": "piglins",
+			"item": "minecraft:gold_ingot",
+			"text": "和你想的一样，你可以像在原版中那样和$(thing)猪灵$()交易，用的也是$(item)金锭$()。$(br2)完整的交易列表可以在$(emi)中找到——只要对金锭按$(thing)U$()就能查看。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:piglin_disguise",
+			"title": "猪灵伪装",
+			"anchor": "disguise",
+			"text": "如果你希望顺利交易，或者单纯想融入当地……戴上$(thing)猪灵伪装$()可避免$(thing)猪灵$()一看到你就产生敌意。但注意！它们容忍有限……"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "塔楼",
+			"anchor": "towers",
+			"text": "你可能会在幽冥之地遇到高耸的$(thing)塔楼$()。塔里有少量战利品，但主要用途是方便垂直移动。$(br)不过，越往深处，塔楼的防守就越严密。"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "前哨站",
+			"anchor": "outposts",
+			"text": "$(thing)猪灵前哨站$()是位于幽冥之地上层区域的小型建筑。里面藏着一些有用的战利品，但防守比塔楼更严密。你可以在里面找到诸如：$(li)品质更好的远程武器和药箭$(li)黑青铜武器、工具和护甲$(li)食物和药品$(li)灯笼$(li)布料、袋子、爆炸物和食物"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "堡垒遗迹",
+			"anchor": "bastions",
+			"text": "突袭$(thing)堡垒遗迹$()可能非常危险，但回报也可能非常丰厚！你可以在里面找到这些东西：$(li)金锭、玫瑰金锭、生铁锭、黑铜锭和银锭$(li)黑铜武器、工具和盔甲$(li)高岭土和石墨$(li)灯笼$(li)布料、皮革、种子和食物$(li)还有其他宝藏！"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "延伸阅读",
+			"anchor": "relations",
+			"entries": [
+				"tfg:beneath/beneath",
+				"tfg:beneath/beneath_fauna",
+				"tfg:game_mechanics/player_temperature",
+				"tfg:logistics/exploration_gear",
+				"tfg:craftsmanship/clothing",
+				"tfg:cooking/drinks"
+			]
+		}
+	],
+	"extra_recipe_mappings": {
+		"beneath:hellbricks": 8,
+		"tag:tfg:rope_ladders": 12,
+		"minecraft:gold_ingot": 13,
+		"tfg:piglin_disguise": 14
+	},
+	"read_by_default": true
+}

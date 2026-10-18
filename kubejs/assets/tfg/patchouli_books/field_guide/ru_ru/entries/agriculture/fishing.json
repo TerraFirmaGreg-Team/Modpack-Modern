@@ -1,0 +1,72 @@
+{
+    "name": "Рыбалка",
+    "category": "tfg:agriculture",
+    "icon": "tfc:metal/fishing_rod/copper",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "text": "$(thing)Рыбалка$() - это способ охоты на рыб, плавающих в реках, озерах и океанах. Удочки должны быть заброшены и заманены. Рыбы пытаются съесть наживку, и иногда это им удается. Поднять рыбу на поверхность - это работа, которая становится легче с крючками высшего уровня."
+        },
+        {
+            "type": "tfg:anvil_recipe",
+            "recipe": "tfc:anvil/bismuth_bronze_fish_hook",
+            "text": "Для начала, тебе нужно выковать рыболовный крючок на $(l:craftsmanship/anvils)Наковальне$()."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/metal/fishing_rod/bismuth_bronze",
+            "title": "Удочка",
+            "text": "Удочка изготавливается с рыболовным крючком."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Удочки бесполезны без наживки. \n$(t:#tfc:small_fishing_bait)$(6)Наживку$() можно прицепить к удочке на верстаке. Чтобы поймать обычную рыбу, тебе понадобятся $(thing)Семена$() или $(thing)Ракообразные$(). Чтобы поймать $(t:#tfc:large_fishing_bait)$(6)более крупную рыбу$(), например $(thing)Дельфинов$() и $(thing)Косаток$(), тебе понадобится $(item)треска$(), $(item)лосось$(), $(item)тропическая рыба$(), или $(item)синежаберник$()."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Зашвырнуть поплавок можно при помощи $(item)$(k:key.use)$(). Подожди пока рыба увидит крючок и клюнет. Потом притяни её при помощи $(item)$(k:key.use)$(). Когда ты сделаешь это, шкала на твоей панели быстрого доступа начнёт заполняться. Если будешь тянуть слишком быстро, то рыба уйдёт вместе с наживкой. Чтобы поймать рыбу, вытяни её на сущу и забей её, либо поймай её $(l:agriculture/fishing#fishing_net)Рыболовной сетью$(). Удочку можно держать во второй руке чтобы это было проще."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/fishing.png"
+            ],
+            "text": "Панель рыбалки заменяет панель опыта, когда активна.",
+            "border": true
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "fishing_net",
+            "title": "Рыболовные сети",
+            "item": {
+                "tag": "forge:tools/fishing_nets"
+            },
+            "text": "Устал от рыбалки копьём? Или от слишком брыкливого улова? Смастери $(thing)Рыболовную сеть$() чтобы загребать себе ужин.$(br)Использовать рыболовную сеть можно при помощи $(item)$(k:key.use)$() по рыбе(сущности) чтобы поймать её себе в инвентарь. Сети разных тиров ведут себя одинаково, но имеют разную прочность."
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "Деревянная рыболовная сеть",
+            "recipe": "tfc:kjs/damage/shaped/fishing_net/wood",
+            "text": "Базовая $(item)Деревянная рыболовная сеть$()."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Дополнительно",
+            "anchor": "relations",
+            "entries": [
+                "tfg:cooking/cooking_methods",
+                "tfg:cooking/decay",
+                "tfg:cooking/food_and_water",
+                "tfg:the_world/wild_animals",
+                "tfg:craftsmanship/anvils"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 7,
+    "extra_recipe_mappings": {
+        "tag:forge:fishing_rods": 0,
+        "tag:forge:tools/fishing_nets": 7
+    }
+}
