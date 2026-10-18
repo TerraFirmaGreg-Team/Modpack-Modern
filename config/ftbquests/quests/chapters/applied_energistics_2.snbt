@@ -1415,7 +1415,9 @@
 		}
 		{
 			dependencies: ["386C54268DA9F2BF"]
+			description: ["{quests.ae2.pattern_upgrade.desc}"]
 			id: "061D7009162F7D3E"
+			subtitle: "{quests.ae2.pattern_upgrade.subtitle}"
 			tasks: [
 				{
 					id: "2AEB6FD35D37992B"
@@ -1428,6 +1430,7 @@
 					type: "item"
 				}
 			]
+			title: "{quests.ae2.pattern_upgrade.title}"
 			x: -2.0d
 			y: -10.5d
 		}
