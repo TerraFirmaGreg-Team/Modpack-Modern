@@ -1960,7 +1960,7 @@
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(gtceu:mv_vanadium_steel_drill)item(gtceu:mv_vanadium_steel_wrench)item(gtceu:mv_vanadium_steel_screwdriver)item(gtceu:mv_vanadium_steel_buzzsaw)item(gtceu:mv_vanadium_steel_wire_cutter)item(gtceu:mv_vanadium_steel_chainsaw)item(gtceu:vanadium_steel_knife)item(gtceu:vanadium_steel_hoe)item(gtceu:vanadium_steel_scythe)item(gtceu:vanadium_steel_hammer)item(gtceu:vanadium_steel_file)item(gtceu:vanadium_steel_sword)item(gtceu:vanadium_steel_butchery_knife)item(gtceu:vanadium_steel_crowbar))"
+							"ftbfiltersystem:filter": "or(item(gtceu:mv_vanadium_steel_drill)item(gtceu:mv_vanadium_steel_wrench)item(gtceu:mv_vanadium_steel_screwdriver)item(gtceu:mv_vanadium_steel_buzzsaw)item(gtceu:mv_vanadium_steel_wire_cutter)item(gtceu:mv_vanadium_steel_chainsaw)item(gtceu:vanadium_steel_knife)item(gtceu:vanadium_steel_hoe)item(gtceu:mv_vanadium_steel_scythe)item(gtceu:vanadium_steel_hammer)item(gtceu:vanadium_steel_file)item(gtceu:vanadium_steel_sword)item(gtceu:vanadium_steel_butchery_knife)item(gtceu:vanadium_steel_crowbar))"
 						}
 					}
 					title: "{quests.medium_voltage.vanadium_tools.task}"
@@ -2112,7 +2112,7 @@
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(tfg:mv_diamond_tipped_mo_50_re_drill)item(tfg:mv_diamond_tipped_mo_50_re_wrench)item(tfg:diamond_tipped_mo_50_re_knife)item(tfg:mv_diamond_tipped_mo_50_re_screwdriver)item(tfg:mv_diamond_tipped_mo_50_re_buzzsaw)item(tfg:diamond_tipped_mo_50_re_hoe)item(tfg:diamond_tipped_mo_50_re_scythe)item(tfg:diamond_tipped_mo_50_re_hammer)item(tfg:mv_diamond_tipped_mo_50_re_wire_cutter)item(tfg:diamond_tipped_mo_50_re_file)item(tfg:mv_diamond_tipped_mo_50_re_chainsaw)item(tfg:diamond_tipped_mo_50_re_sword)item(tfg:diamond_tipped_mo_50_re_butchery_knife)item(tfg:diamond_tipped_mo_50_re_crowbar))"
+						"ftbfiltersystem:filter": "or(item(tfg:mv_diamond_tipped_mo_50_re_drill)item(tfg:mv_diamond_tipped_mo_50_re_wrench)item(tfg:diamond_tipped_mo_50_re_knife)item(tfg:mv_diamond_tipped_mo_50_re_screwdriver)item(tfg:mv_diamond_tipped_mo_50_re_buzzsaw)item(tfg:diamond_tipped_mo_50_re_hoe)item(tfg:mv_diamond_tipped_mo_50_re_scythe)item(tfg:diamond_tipped_mo_50_re_hammer)item(tfg:mv_diamond_tipped_mo_50_re_wire_cutter)item(tfg:diamond_tipped_mo_50_re_file)item(tfg:mv_diamond_tipped_mo_50_re_chainsaw)item(tfg:diamond_tipped_mo_50_re_sword)item(tfg:diamond_tipped_mo_50_re_butchery_knife)item(tfg:diamond_tipped_mo_50_re_crowbar))"
 					}
 				}
 				title: "{quests.medium_voltage.diamond_tools.task}"
