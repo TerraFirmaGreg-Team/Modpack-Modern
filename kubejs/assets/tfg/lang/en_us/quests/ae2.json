@@ -218,6 +218,6 @@
 
     "quests.ae2.pattern_upgrade.title": "Pattern Upgrades",
     "quests.ae2.pattern_upgrade.subtitle": "Some QoL Tools",
-    "quests.ae2.pattern_upgrade.desc": "The Pattern Refiller card will be useful so you can always have Blank Patterns in your Pattern Terminal. While the Auto Complete Card is very useful when you pattern a full multiblock, after some time stuck on a step if the Pattern Providers that had the recipe also has the Auto Complete Upgrade, it will simply assume the recipe is finished and compplete it."
+    "quests.ae2.pattern_upgrade.desc": "The Pattern Refiller card will ensure your Pattern Terminal is always filled with Blank Patterns.\n\nThe Auto Complete Card can be useful when you pattern a full multiblock - any Pattern Providers with a Auto Complete Upgrade will simply \"time out\" after a little while and assume the recipe has finished. Check the Guide for more details."
 
 }
