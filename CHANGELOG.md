@@ -1,6 +1,7 @@
 # Changelog
 
 ## Unreleased
+Be sure to check the changelog of the previous two [alpha](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.11) [releases](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.12) too! 
 ### Changes
 - The Oxygen Distributor and Heat Pump now require a rotor. Rotor stats can reduce breathable gas and energy usage. @TomPlop
 - The Heat Pump now allows you to select a temperature. @ashleney
@@ -14,7 +15,8 @@
 - Added new EMI screens for TFC anvils, TFC welding, and firmalife greenhouse planters @Redeix
 - GT fluid containers (drums, cells, super tanks) can now be used in crafting table recipes that use fluids (#5105) @Redeix
 - Added electric scythes with even bigger AoE sizes for clearing away all that pesky grass (#5150) @TomPlop @ArkeHD @Pyritie
-- Added electric flask which will automatically drink for you @TomPlop @ArkeHD
+- Added electric flask, which will automatically drink anything for you, unlike the digger helmet which only works with water @TomPlop @ArkeHD
+- Added a recipe to craft quartz crystal blocks (#4990) @Pyritie
 ### Bug fixes
 - Fixed missing crafting recipes for the composter, windows, create deco supports, and more (#5128, #5134)
 - Fixed blast furnace not being able to automatically drip into a crucible, vessels not emptying into a crucible, and sometimes crucibles containing "unknown" with only one fluid (#5094, #5096) @Redeix
