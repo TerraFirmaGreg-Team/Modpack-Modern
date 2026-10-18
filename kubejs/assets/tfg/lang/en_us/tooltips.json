@@ -355,6 +355,9 @@
     "tfg.tooltip.fuel_burning.days": "%s Days / %s mB (Full Tank)",
 
     "tfg.tooltip.planter.fertilizer_info": "Fertilizers are optional. Crops will grow faster and produce other fertilizer types when consuming their preferred fertilizer.",
-    "tfg.tooltip.greenhouse.minimum_tier": "Min. Tier: "
+    "tfg.tooltip.greenhouse.minimum_tier": "Min. Tier: ",
+
+    "tfg.item.electric_flask.tooltip_1": "An electrical flask that will automatically drink when needed.",
+    "tfg.item.electric_flask.tooltip_2": "Consumes 1000 EU per drink"
 
 }
