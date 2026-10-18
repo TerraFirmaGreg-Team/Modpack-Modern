@@ -2,7 +2,15 @@
 
 ## Unreleased
 ### Changes
+- The Oxygen Distributor and Heat Pump now require a rotor. Rotor stats can reduce breathable gas and energy usage. @TomPlop
+- The Heat Pump now allows you to select a temperature. @ashleney
+- The Higgs Emitter now allows you to change gravity. @ashleney
+- When in a Zero-G environment, your camera will no longer be locked to just pitch and yaw. @ashleney
 ### Bug fixes
+- The Heat Pump now properly prevents water from freezing and heats up players standing inside transparent blocks. @ashleney
+- The zip gun now properly works for vertical movement. @ashleney
+- Heatstroke and frostbite no longer damage armor or reduce hunger. @ashleney
+- Allowed the Oxygen Distributor and Heat Pump bubbles to pass through the cleanroom filters. @ashleney
 
 ## [0.13.12] - 06-10-2026
 This is a hotfix release, check the [0.13.11 changelog](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.11) for the full list of changes!
