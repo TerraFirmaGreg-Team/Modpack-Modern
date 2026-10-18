@@ -48,7 +48,7 @@
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "aaa_particles-forge-1.20.1-2.3.2.jar",
+                    "file_name": "aaa_particles-forge-1.20.1-2.3.4.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -57,16 +57,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9094/337/aaa_particles-forge-1.20.1-2.3.2.jar",
-                    "id": "9094337",
+                    "url": "https://edge.forgecdn.net/files/9239/318/aaa_particles-forge-1.20.1-2.3.4.jar",
+                    "id": "9239318",
                     "parent_id": "979809",
                     "hashes": {
-                        "sha1": "91711325370589ddd0252c0091e8f9b64ed989b1",
-                        "md5": "85420a6f7e598e1fdf838f8daceaa1a4"
+                        "sha1": "3d5d1adc13297a99ab9c6ef2cda910ef4109634f",
+                        "md5": "947aacff8b66c443b76e9ae5710ac0f0"
                     },
                     "required_dependencies": [],
-                    "size": 5780070,
-                    "date_published": "2026-10-07T23:03:49.593Z"
+                    "size": 5821797,
+                    "date_published": "2026-10-18T12:25:05.333Z"
                 }
             ]
         },
@@ -1045,7 +1045,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "AmbientSounds_FORGE_v6.3.9_mc1.20.1.jar",
+                    "file_name": "AmbientSounds_FORGE_v6.3.10_mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -1053,22 +1053,22 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/fM515JnW/versions/EPxVyOnf/AmbientSounds_FORGE_v6.3.9_mc1.20.1.jar",
-                    "id": "EPxVyOnf",
+                    "url": "https://cdn.modrinth.com/data/fM515JnW/versions/ApGAJplZ/AmbientSounds_FORGE_v6.3.10_mc1.20.1.jar",
+                    "id": "ApGAJplZ",
                     "parent_id": "fM515JnW",
                     "hashes": {
-                        "sha512": "7d77e7e6658d7952124d3fd5707baceda6a2bfc14fe394841e6230b42deb859adfa017b82cedefd2bce3d70bc2ec3060f7d525e55ab8ce7fa2887a2ad81adcf4",
-                        "sha1": "28441539a998b5e0822176d8db7b8594042bacbf"
+                        "sha512": "78a8b3bf385aaebab6babb9623718c16ad746a003bbc4e36a62863bd96ae73bc6c9ee49c8b7c6a6e6c6bca3b41c9020bd6868a5b024584393d3e3762eef8d17b",
+                        "sha1": "feb797f5303eb0b43002ad8ea366530249b4710b"
                     },
                     "required_dependencies": [
                         "OsZiaDHq"
                     ],
-                    "size": 53431801,
-                    "date_published": "2026-10-02T12:11:00.069051Z"
+                    "size": 53432458,
+                    "date_published": "2026-10-08T14:33:56.563509Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "AmbientSounds_FORGE_v6.3.9_mc1.20.1.jar",
+                    "file_name": "AmbientSounds_FORGE_v6.3.10_mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -1076,18 +1076,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9037/122/AmbientSounds_FORGE_v6.3.9_mc1.20.1.jar",
-                    "id": "9037122",
+                    "url": "https://edge.forgecdn.net/files/9099/44/AmbientSounds_FORGE_v6.3.10_mc1.20.1.jar",
+                    "id": "9099044",
                     "parent_id": "254284",
                     "hashes": {
-                        "sha1": "28441539a998b5e0822176d8db7b8594042bacbf",
-                        "md5": "b6397bb607a104d87971fab0137bdfdc"
+                        "sha1": "feb797f5303eb0b43002ad8ea366530249b4710b",
+                        "md5": "79933500da488a5eb9902bb11b48227a"
                     },
                     "required_dependencies": [
                         "257814"
                     ],
-                    "size": 53431801,
-                    "date_published": "2026-10-02T12:10:37.417Z"
+                    "size": 53432458,
+                    "date_published": "2026-10-08T14:33:36.273Z"
                 }
             ]
         },
@@ -1835,7 +1835,7 @@
         {
             "pakku_id": "vtaYhgPcR8nFk17t",
             "pakku_links": [
-                "oC0unMVGatUQIsDP"
+                "vE4g6idqWYxedtvY"
             ],
             "type": "MOD",
             "side": "BOTH",
@@ -8137,7 +8137,7 @@
         {
             "pakku_id": "oNrbuMbDK5ha5Mkh",
             "pakku_links": [
-                "oC0unMVGatUQIsDP"
+                "vE4g6idqWYxedtvY"
             ],
             "type": "MOD",
             "side": "BOTH",
@@ -9440,7 +9440,7 @@
             "pakku_id": "XdeciWPrRBAmyKu2",
             "pakku_links": [
                 "Z3WU0ZCcwtEDHhWl",
-                "oC0unMVGatUQIsDP"
+                "vE4g6idqWYxedtvY"
             ],
             "type": "MOD",
             "side": "CLIENT",
@@ -10066,7 +10066,7 @@
             ]
         },
         {
-            "pakku_id": "oC0unMVGatUQIsDP",
+            "pakku_id": "vE4g6idqWYxedtvY",
             "type": "MOD",
             "side": "BOTH",
             "slug": {
@@ -12412,7 +12412,8 @@
         {
             "pakku_id": "nQtePBXUbz4uGR5r",
             "pakku_links": [
-                "oNrbuMbDK5ha5Mkh"
+                "oNrbuMbDK5ha5Mkh",
+                "vE4g6idqWYxedtvY"
             ],
             "type": "MOD",
             "side": "CLIENT",
@@ -16144,7 +16145,7 @@
             "pakku_links": [
                 "ScveDDpCjKro99ki",
                 "GXyDUWkiW0nLPTdo",
-                "oC0unMVGatUQIsDP"
+                "vE4g6idqWYxedtvY"
             ],
             "type": "MOD",
             "side": "BOTH",
@@ -16237,7 +16238,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.25.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.27.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -16245,24 +16246,24 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/8CWHkOAu/TerraFirmaGreg-Core-Modern-0.9.25.jar",
-                    "id": "8CWHkOAu",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/n0Y3ywtk/TerraFirmaGreg-Core-Modern-0.9.27.jar",
+                    "id": "n0Y3ywtk",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "28315aa9a99920603a55d3c298f63f08d7a9f98aadf2c14d7873ea18cd0987d205ab99b79eb52f2ce8ef22abfc38c975cac7637c847429159c961c2a27ee3633",
-                        "sha1": "e5378ed039e3126e3ab54f4932738b4acd1a6f4f"
+                        "sha512": "f52d605bb8bfa670d8fbb925a45f7c14f1eb2e63289924b3cdec7254e21c9a79fe2923d6ddeb1e53b99e6071610a88b40cca407e120dd8f9e44892693c4494b5",
+                        "sha1": "f33354b9bc9ef8779d5d7ce86e3634e0b9999a1a"
                     },
                     "required_dependencies": [
-                        "nU0bVIaL",
                         "1o7aFiY6",
+                        "nU0bVIaL",
                         "vvuO3ImH"
                     ],
-                    "size": 56754859,
-                    "date_published": "2026-10-06T11:28:14.827063Z"
+                    "size": 56794526,
+                    "date_published": "2026-10-18T19:56:38.625363Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.25.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.27.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -16270,19 +16271,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9079/527/TerraFirmaGreg-Core-Modern-0.9.25.jar",
-                    "id": "9079527",
+                    "url": "https://edge.forgecdn.net/files/9247/411/TerraFirmaGreg-Core-Modern-0.9.27.jar",
+                    "id": "9247411",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "e5378ed039e3126e3ab54f4932738b4acd1a6f4f",
-                        "md5": "d865990144f5145145fa2d82c0825ade"
+                        "sha1": "f33354b9bc9ef8779d5d7ce86e3634e0b9999a1a",
+                        "md5": "5b36fe9fda8538e3269bada69eae8328"
                     },
                     "required_dependencies": [
                         "306770",
                         "309927"
                     ],
-                    "size": 56754859,
-                    "date_published": "2026-10-06T11:28:08.410Z"
+                    "size": 56794526,
+                    "date_published": "2026-10-18T19:56:30.107Z"
                 }
             ]
         },
@@ -17495,7 +17496,7 @@
         {
             "pakku_id": "Z3WU0ZCcwtEDHhWl",
             "pakku_links": [
-                "oC0unMVGatUQIsDP"
+                "vE4g6idqWYxedtvY"
             ],
             "type": "MOD",
             "side": "CLIENT",

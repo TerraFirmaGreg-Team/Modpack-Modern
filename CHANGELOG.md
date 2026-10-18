@@ -1,6 +1,10 @@
 # Changelog
 
 ## Unreleased
+### Changes
+### Bug fixes
+
+## [0.13.13] - 18-10-2026
 Be sure to check the changelog of the previous two [alpha](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.11) [releases](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.12) too! 
 ### Changes
 - The Oxygen Distributor and Heat Pump now require a rotor. Rotor stats can reduce breathable gas and energy usage. @TomPlop
@@ -41,6 +45,7 @@ Be sure to check the changelog of the previous two [alpha](https://github.com/Te
 - Fixed towers sometimes spawning with only floating chests and nothing else (#5127) @Filiipa
 - Fixed the overworld having two suns with shaders @Pyritie
 - Fixed the combustion engine sound effect looping @polluxe-1
+- Fixed naquadah alloy and duranium tools being at IV level instead of LuV @TomPlop
 
 ## [0.13.12] - 06-10-2026
 This is a hotfix release, check the [0.13.11 changelog](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.11) for the full list of changes!
