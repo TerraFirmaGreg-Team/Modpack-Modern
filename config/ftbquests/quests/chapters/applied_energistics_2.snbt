@@ -1413,6 +1413,24 @@
 			x: -3.5d
 			y: 1.5d
 		}
+		{
+			dependencies: ["386C54268DA9F2BF"]
+			id: "061D7009162F7D3E"
+			tasks: [
+				{
+					id: "2AEB6FD35D37992B"
+					item: "expandedae:pattern_refiller_card"
+					type: "item"
+				}
+				{
+					id: "09982954BA040285"
+					item: "expandedae:auto_complete_card"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -10.5d
+		}
 	]
 	subtitle: ["{quests.ae2.subtitle}"]
 	title: "{quests.ae2}"

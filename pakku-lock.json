@@ -6615,6 +6615,75 @@
             ]
         },
         {
+            "pakku_id": "IhoU2hVCkDnvlCle",
+            "pakku_links": [
+                "SKNobxecQul3CE8g"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "expanded-ae",
+                "modrinth": "expanded-ae"
+            },
+            "name": {
+                "curseforge": "Expanded AE",
+                "modrinth": "Expanded AE"
+            },
+            "id": {
+                "curseforge": "1213351",
+                "modrinth": "ayN3DZKb"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "expandedae-1.4.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9225/557/expandedae-1.4.3.jar",
+                    "id": "9225557",
+                    "parent_id": "1213351",
+                    "hashes": {
+                        "sha1": "de9e38f2b6131677af2653ba2e6d0607f5b93681",
+                        "md5": "eedfdb03c52c545eee7d76435b3cdb6e"
+                    },
+                    "required_dependencies": [
+                        "459929",
+                        "223794"
+                    ],
+                    "size": 983237,
+                    "date_published": "2026-10-17T16:44:53.040Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "expandedae-1.2.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/ayN3DZKb/versions/KXyq9wjS/expandedae-1.2.2.jar",
+                    "id": "KXyq9wjS",
+                    "parent_id": "ayN3DZKb",
+                    "hashes": {
+                        "sha512": "41362670774ada683740a6eb71bafe6472d8b7a6f227465c79b3942efa72b5eb2607da1d3b98dd54399fd10991d7e70c91d79d223c75c42fdb9e8debfdbb7841",
+                        "sha1": "1861e75508e5b49349ae767e7880db938b9196a8"
+                    },
+                    "required_dependencies": [
+                        "XxWD5pD3"
+                    ],
+                    "size": 433372,
+                    "date_published": "2025-09-24T20:52:09.157373Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "W6JmaRHaofCd4vYa",
             "type": "MOD",
             "side": "BOTH",
@@ -10988,6 +11057,42 @@
             ]
         },
         {
+            "pakku_id": "J4L5vCXHXowJ2Vys",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "matter-manipulator-reborn"
+            },
+            "name": {
+                "curseforge": "Matter Manipulator Reborn"
+            },
+            "id": {
+                "curseforge": "1748833"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "matter_manipulator-0.1.1+1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/9236/503/matter_manipulator-0.1.1+1.20.1.jar",
+                    "id": "9236503",
+                    "parent_id": "1748833",
+                    "hashes": {
+                        "sha1": "d36090941d409f71ad6d80d60253284f785a9c9b",
+                        "md5": "e756eb0ba9723fe334e38280d73025e6"
+                    },
+                    "required_dependencies": [],
+                    "size": 1986789,
+                    "date_published": "2026-10-18T06:38:11.607Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "O1aAdLiNfpMEPlMt",
             "type": "MOD",
             "side": "BOTH",
@@ -12696,7 +12801,7 @@
                     },
                     "required_dependencies": [],
                     "size": 60458,
-                    "date_published": "2026-06-17T14:40:02.23Z"
+                    "date_published": "2026-06-17T14:40:02.230Z"
                 }
             ]
         },

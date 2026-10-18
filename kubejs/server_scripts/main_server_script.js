@@ -253,6 +253,7 @@ ServerEvents.recipes(event => {
 	registerEndermanOverhaulRecipes(event)
 	registerEveryCompatRecipes(event)
 	registerExtendedAE2Recipes(event)
+	registerExpandedAE2Recipes(event)
 	registerExposureRecipes(event)
 	registerEtchedRecipes(event)
 	registerFirmaCivRecipes(event)
