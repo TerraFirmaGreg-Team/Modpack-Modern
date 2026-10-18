@@ -123,7 +123,7 @@
             "type": "patchouli:text",
             "title": "Sailing",
             "anchor": "sailing",
-            "text": "Unlike ships that you may be used to, sailing is a skill with Firma: Civilization. When you're piloting a sailing vessel, a new UI element will appear showing the wind speed and direction, as well as the boat's speed. The color of the wind arrow will indicate the difficulty of sailing in that direction. Use your forward and backward movement keys to set the angle of the sails, and experiment to find the best one for the wind angle."
+            "text": "Unlike ships that you may be used to, sailing is a skill with Firma: Civilization. When you're piloting a sailing vessel, a new UI element will appear showing the wind speed and direction, as well as the boat's speed. The color of the wind arrow will indicate the difficulty of sailing in that direction. Use your $(item)$(k:key.forward)$() and $(item)$(k:key.back)$() movement keys to loosen or tighten the $(thing)Boom$(), while $(item)$(k:key.left)$() and $(item)$(k:key.right)$() control the $(thing)Rudder$()."
         },
         {
             "type": "patchouli:image",
