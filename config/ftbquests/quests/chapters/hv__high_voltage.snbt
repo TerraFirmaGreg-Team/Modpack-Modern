@@ -1600,19 +1600,6 @@
 					type: "item"
 				}
 				{
-					id: "27A6C576F7AFFB67"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "or(item(gtceu:hv_ultimet_drill)item(gtceu:hv_ultimet_buzzsaw)item(gtceu:hv_ultimet_screwdriver)item(gtceu:hv_ultimet_wire_cutter)item(gtceu:hv_ultimet_chainsaw)item(gtceu:hv_ultimet_wrench))"
-						}
-					}
-					optional_task: true
-					title: "{quest.high_voltage.ultimet.task}"
-					type: "item"
-				}
-				{
 					id: "6B62C1679EE0757A"
 					item: {
 						Count: 1
@@ -1631,6 +1618,19 @@
 					id: "195F971960F976EF"
 					item: "tfg:stainless_steel_anvil"
 					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1BFBB4980BD85480"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:hv_ultimet_drill)item(gtceu:hv_ultimet_buzzsaw)item(gtceu:hv_ultimet_screwdriver)item(gtceu:hv_ultimet_wire_cutter)item(gtceu:hv_ultimet_chainsaw)item(gtceu:hv_ultimet_wrench)item(gtceu:hv_ultimet_scythe))"
+						}
+					}
+					optional_task: true
+					title: "{quest.high_voltage.ultimet.task}"
 					type: "item"
 				}
 			]
@@ -1666,22 +1666,22 @@
 					type: "item"
 				}
 				{
-					id: "31F5C6763E32046A"
+					id: "1C79B9431FFDA07E"
+					item: "tfg:stainless_steel_anvil"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "34018A9E3C728137"
 					item: {
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(tfg:hv_boron_carbide_drill)item(tfg:hv_boron_carbide_buzzsaw)item(tfg:hv_boron_carbide_screwdriver)item(tfg:hv_boron_carbide_wire_cutter)item(tfg:hv_boron_carbide_chainsaw)item(tfg:hv_boron_carbide_wrench))"
+							"ftbfiltersystem:filter": "or(item(tfg:hv_boron_carbide_drill)item(tfg:hv_boron_carbide_buzzsaw)item(tfg:hv_boron_carbide_screwdriver)item(tfg:hv_boron_carbide_wire_cutter)item(tfg:hv_boron_carbide_chainsaw)item(tfg:hv_boron_carbide_wrench)item(tfg:hv_boron_carbide_scythe))"
 						}
 					}
 					optional_task: true
 					title: "{quests.high_voltage.boron_tools.task}"
-					type: "item"
-				}
-				{
-					id: "1C79B9431FFDA07E"
-					item: "tfg:stainless_steel_anvil"
-					optional_task: true
 					type: "item"
 				}
 			]
