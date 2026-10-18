@@ -9,7 +9,7 @@
             "item": {
                 "tag": "tfg:harvester"
             },
-            "text": "Made for those with a short stature―$(thing)Harvest Baskets$() are just the tool needed for plucking trees and bushes of fruit.$(br)To use a harvest basket, $(item)$(k:key.use)$() on a $(l:the_world/wild_fruits#fruit_trees)Fruit Tree$(), $(l:the_world/wild_fruits#tall_bushes)Fruit Bush$(), $(l:agriculture/growing_crops#growing_grapes)Grape Trellis$(), $(l:agriculture/greenhouse#bonsai_planter)Bonsai Planter$(), $(l:agriculture/greenhouse#trellis_planter)Trellis Planter$(), or $(l:agriculture/greenhouse#hanging_planter)Hanging Planter$() and all blocks within a $(thing)7-block radius$() will be picked."
+            "text": "Созданные специально для лилипутов―$(thing)Лукошки$() как раз то, что нужно для сбора фруктов с деревьев и кустов. $(br)Использовать лукошко можно при помощи $(item)$(k:key.use)$() по $(l:the_world/wild_fruits#fruit_trees)Фруктовому дереву$(), $(l:the_world/wild_fruits#tall_bushes)Ягодному кусту$(), $(l:agriculture/growing_crops#growing_grapes)Виноградной решётке$(), $(l:agriculture/greenhouse#bonsai_planter)Лотку для бонсая$(), $(l:agriculture/greenhouse#trellis_planter)Подпорке для кустов$() или  $(l:agriculture/greenhouse#hanging_planter)Подвесному лотку для растений$(). Все блоки в $(thing)радиусе 7 блоков$() будут обобраны."
         },
         {
             "type": "patchouli:text",

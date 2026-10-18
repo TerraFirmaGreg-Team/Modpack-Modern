@@ -221,7 +221,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "對高爐按下$(item)$(k:key.use)$()即可開啟高爐介面，如下一張圖所示。在這個介面中，你會看到高爐內礦石和燃料含量的量表。右上方的欄位必須放入$(thing)風口管$()，這是一種將空氣送入高爐的金屬管，要達到熔煉鋼所需的最高溫度就必須有它。風口管可以在$(l:craftsmanship/anvils)鐵砧$()上鍛造。"
+            "text": "對高爐按下$(item)$(k:key.use)$()即可開啟高爐介面，如下一張圖所示。在這個介面中，你會看到高爐內礦石和燃料含量的量表。右上方的欄位必須放入$(thing)鼓風口$()，這是一種將空氣送入高爐的金屬管，要達到熔煉鋼所需的最高溫度就必須有它。鼓風口可以在$(l:craftsmanship/anvils)鐵砧$()上鍛造。"
         },
         {
             "type": "patchouli:image",
@@ -233,7 +233,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "你還需要一個$(l:craftsmanship/charcoal_forge#bellows)風箱$()，高爐才能達到熔化鐵的溫度(除非使用無煙煤作為燃料)。風箱可以放在高爐四個側面的任何一面。$(br)使用風箱會消耗風口管的耐久度，因此建議大約每分鐘只啟動一次。"
+            "text": "你還需要一個$(l:craftsmanship/charcoal_forge#bellows)風箱$()，高爐才能達到熔化鐵的溫度(除非使用無煙煤作為燃料)。風箱可以放在高爐四個側面的任何一面。$(br)使用風箱會消耗鼓風口的耐久度，因此建議大約每分鐘只啟動一次。"
         },
         {
             "type": "patchouli:multiblock",
@@ -304,21 +304,21 @@
             "title": "預熱金屬",
             "anchor": "preheating",
             "item": "tfc:firepit",
-            "text": "要將鐵轉化為鋼，高爐必須將內部的鐵加熱到$(d)$(bold)耀眼白熱$()。第一次運作時，金屬會隨著高爐一起升溫。不過，之後的運作即使高爐已經達到溫度，所需時間也差不多，因為它需要將金屬從冷的狀態開始加熱。"
+            "text": "要將鐵轉化為鋼，高爐必須將內部的鐵加熱到$(d)$(bold)熾白$()。第一次運作時，金屬會隨著高爐一起升溫。不過，之後的運作即使高爐已經達到溫度，所需時間也差不多，因為它需要將金屬從冷的狀態開始加熱。"
         },
         {
             "type": "patchouli:text",
-            "text": "如果放入高爐時金屬已經是熱的，達到耀眼白熱所需的時間就會較短。可以考慮先在$(l:craftsmanship/charcoal_forge)木炭爐$()中加熱金屬，再放入已經熱好的高爐以節省時間，尤其是一次處理量較少的小型高爐。"
+            "text": "如果放入高爐時金屬已經是熱的，達到熾白所需的時間就會較短。可以考慮先在$(l:craftsmanship/charcoal_forge)木炭爐$()中加熱金屬，再放入已經熱好的高爐以節省時間，尤其是一次處理量較少的小型高爐。"
         },
         {
             "type": "patchouli:spotlight",
             "title": "高爐自動化",
             "item": "greate:steel_mechanical_pump",
-            "text": "在$(thing)蒸汽$()和$(thing)LV$()時代，你會需要大量的$(item)鋼$()。非常大量的鋼。$(thing)電力高爐$()還很遙遠，所以也許該考慮優化你的鋼產量。$(br2)你可以從$(l:craftsmanship/charcoal_forge#bellows)風箱$()的背面提供機械動力來將它自動化。不過要小心，使用風箱會消耗更多燃料，並讓你的$(thing)風口管$()更快損壞。"
+            "text": "在$(thing)蒸汽$()和$(7)LV$()時代，你會需要大量的$(item)鋼$()。非常大量的鋼。$(thing)電力高爐$()還很遙遠，所以也許該考慮優化你的鋼產量。$(br2)你可以從$(l:craftsmanship/charcoal_forge#bellows)風箱$()的背面提供機械動力來將它自動化。不過要小心，使用風箱會消耗更多燃料，並讓你的$(thing)鼓風口$()更快損壞。"
         },
         {
             "type": "patchouli:text",
-            "text": "你可以用朝向高爐的漏斗或物品管道自動更換損壞的風口管。$(br2)你可以用機械動力的$(item)機械幫浦$()以極快的速度從高爐抽出液體。將液體抽入$(l:craftsmanship/crucible#channel_casting)模具台$()，再用漏斗或滑槽取出金屬錠：輕鬆自動化！$(br2)你可以在$(thing)鍛造錘$()或$(l:craftsmanship/anvils#helve_hammer)杵錘$()中處理產出的$(item)生鐵$()和$(item)高碳鋼$()。"
+            "text": "你可以用朝向高爐的漏斗或物品管道自動更換損壞的鼓風口。$(br2)你可以用機械動力的$(item)機械幫浦$()以極快的速度從高爐抽出液體。將液體抽入$(l:craftsmanship/crucible#channel_casting)模具台$()，再用漏斗或滑槽取出金屬錠：輕鬆自動化！$(br2)你可以在$(thing)鍛造錘$()或$(l:craftsmanship/anvils#helve_hammer)杵錘$()中處理產出的$(item)生鐵$()和$(item)高碳鋼$()。"
         },
         {
             "type": "patchouli:multiblock",

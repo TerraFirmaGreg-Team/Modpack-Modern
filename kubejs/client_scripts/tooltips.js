@@ -201,6 +201,8 @@ const registerTooltips = (event) => {
 	})
 
 	//#endregion
+
+	//#region Planter
 	
 	event.addAdvanced(['tfg:grow_light'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.grow_light_disapointment'));
@@ -229,6 +231,8 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['firmalife:trellis_planter'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.firmalife_greenhouse.oxygen_required.block'));
 	})
+
+	//#endregion
 
 	// Hot or not containers
 	event.addAdvanced(['#tfg:insulating_container'], (item, advanced, text) => {
@@ -556,6 +560,13 @@ const registerTooltips = (event) => {
     })
 	event.addAdvanced('ae2:damaged_budding_quartz', (item, advanced, text) => {
       text.add(1, Text.translate('block.ae2.damaged_budding_quartz.tooltip'));
+    })
+
+	// Electical Flask
+
+	event.addAdvanced('tfg:electric_flask', (item, advanced, text) => {
+      text.add(1, Text.translate('tfg.item.electric_flask.tooltip_1'));
+	  text.add(2, Text.translate('tfg.item.electric_flask.tooltip_2'));
     })
 
 	// Deprecated Items

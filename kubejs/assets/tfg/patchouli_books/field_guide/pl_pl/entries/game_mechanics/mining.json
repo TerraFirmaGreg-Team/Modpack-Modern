@@ -272,7 +272,7 @@
             "images": [
                 "tfg:textures/gui/field_guide/supports/support_2d.png"
             ],
-            "text": "When mined, individual blocks have their own range check for triggering collapses, up to 7x7x7, shown by the red/yellow area centered on the stone.",
+            "text": "Po wydobyciu każdy blok ma własny zakres sprawdzania zawałów, do 7×7×7, oznaczony czerwono-żółtym obszarem wokół kamienia.",
             "border": true
         },
         {
@@ -300,7 +300,7 @@
             "images": [
                 "tfg:textures/gui/field_guide/supports/support_2d_fail.png"
             ],
-            "text": "However, when there are unsupported blocks outside the support area, mining the highlighted block may cause a collapse even though it itself is supported.",
+            "text": "Jednak gdy poza obszarem podparcia znajdują się niepodparte bloki, podczas wydobywania zaznaczonego bloku może dojść do zawału, mimo że sam ten blok jest podparty.",
             "border": true
         },
         {

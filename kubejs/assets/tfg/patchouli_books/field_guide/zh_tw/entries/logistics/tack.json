@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:logistics/tack#saddle)鞍$()$(li)$(bold)$(l:logistics/tack#armor)馬鎧$()$(li)$(bold)$(l:logistics/tack#horseshoes)馬蹄鐵$()$(li)$(bold)$(l:logistics/tack#supply_cart)補給車$()$(li)$(bold)$(l:logistics/tack#plow)犁$()$(li)$(bold)$(l:logistics/tack#animal_cart)動物車$()$(li)$(bold)$(l:logistics/tack#paving_cart)鋪路車$()",
+            "text": "$(li)$(bold)$(l:logistics/tack#saddle)鞍$()$(li)$(bold)$(l:logistics/tack#armor)馬鎧$()$(li)$(bold)$(l:logistics/tack#horseshoes)馬蹄鐵$()$(li)$(bold)$(l:logistics/tack#supply_cart)物資車$()$(li)$(bold)$(l:logistics/tack#plow)犁$()$(li)$(bold)$(l:logistics/tack#animal_cart)動物車$()$(li)$(bold)$(l:logistics/tack#paving_cart)鋪路車$()",
             "title": "索引",
             "anchor": "index"
         },
@@ -33,16 +33,16 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "supply_cart",
-            "title": "補給車",
+            "title": "物資車",
             "item": "tag:tfcastikorcarts:supply_cart",
-            "text": "$(item)補給車$()可以按下$(item)$(k:key.astikorcarts.desc)$()套在騎乘的動物身上，也可以手動拉動。補給車可以存放大量物品，按下$(item)$(k:key.sneak)-$(k:key.use)$()即可開啟。不過，物品太多或有幾個非常重的物品，都會讓你的坐騎明顯減速。"
+            "text": "$(item)物資車$()可以按下$(item)$(k:key.astikorcarts.desc)$()套在騎乘的動物身上，也可以手動拉動。物資車可以存放大量物品，按下$(item)$(k:key.sneak)-$(k:key.use)$()即可開啟。不過，物品太多或有幾個非常重的物品，都會讓你的坐騎明顯減速。"
         },
         {
             "type": "patchouli:entity",
             "entity": "tfcastikorcarts:supply_cart/oak",
             "scale": 0.4,
             "name": " ",
-            "text": "補給車會實際展示其物品欄中的前幾個物品。"
+            "text": "物資車會實際展示其物品欄中的前幾個物品。"
         },
         {
             "type": "patchouli:spotlight",

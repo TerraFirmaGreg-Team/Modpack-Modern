@@ -296,7 +296,7 @@
 		{
 			"type": "patchouli:multiblock",
 			"enable_visualize": false,
-			"text": "The $(l:logistics/create#packager)Packager$() will only create a package when the Stock Link receives a signal from $(l:logistics/create#stock_ticker)elsewhere$() on the network.",
+			"text": "$(l:logistics/create#packager)Pakowacz$() utworzy paczkę tylko wtedy, gdy łącznik magazynowy otrzyma sygnał z $(l:logistics/create#stock_ticker)innego miejsca$() w sieci.",
 			"name": "Przykład",
 			"multiblock": {
 				"pattern": [
@@ -334,7 +334,7 @@
 		{
 			"type": "tfg:multimultiblock",
 			"enable_visualize": false,
-			"text": "Place a mob on the seat, then $(item)$(k:key.use)$() them to request items which will be deposited in the $(l:logistics/storage#crates)Steel Crate$().",
+			"text": "Umieść stworzenie na siedzeniu, a następnie kliknij je $(item)$(k:key.use)$(), aby zamówić przedmioty, które trafią do $(l:logistics/storage#crates)stalowej skrzyni$().",
 			"name": "Minimalny system",
 			"multiblocks": [
 				{

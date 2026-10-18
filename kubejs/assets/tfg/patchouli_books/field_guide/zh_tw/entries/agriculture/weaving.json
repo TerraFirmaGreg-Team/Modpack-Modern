@@ -5,13 +5,13 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(thing)編織$()是將各種線組合成$(thing)布料$()的過程。雖然編織的最後一步是在$(thing)織機$()上完成，但有些布料，例如從$(l:agriculture/animal_husbandry#wooly_animals)產毛動物$()取得的$(thing)羊毛$()，需要先用$(thing)紡錘$()紡成$(thing)毛線$()才能編織。"
+            "text": "$(thing)編織$()是將各種線組合成$(thing)布料$()的過程。雖然編織的最後一步是在$(thing)紡織機$()上完成，但有些布料，例如從$(l:agriculture/animal_husbandry#wooly_animals)產毛動物$()取得的$(thing)羊毛$()，需要先用$(thing)紡錘$()紡成$(thing)毛線$()才能編織。"
         },
         {
             "type": "tfg:knapping_recipe",
             "recipe": "tfc:clay_knapping/spindle_head",
             "anchor": "spindle",
-            "text": "$(thing)未燒製的紡錘頭$()是用黏土塑形而成，接著可以$(l:game_mechanics/heating)燒製$()成$(thing)紡錘頭$()。將它和$(thing)木棍$()一起合成即可完成紡錘。紡錘也可以用$(l:craftsmanship/metallurgy)金屬$()製作。"
+            "text": "$(thing)未燒製的紡錘頭$()是用黏土塑形而成，接著可以$(l:game_mechanics/heating)燒製$()成$(thing)紡錘頭$()。將它和$(thing)木棒$()一起合成即可完成紡錘。紡錘也可以用$(l:craftsmanship/metallurgy)金屬$()製作。"
         },
         {
             "type": "patchouli:crafting",
@@ -22,17 +22,17 @@
         },
         {
             "type": "patchouli:crafting",
-            "title": "織機",
+            "title": "紡織機",
             "anchor": "loom",
             "recipe": "tfc:crafting/wood/acacia_loom",
-            "text": "織機只需要用$(thing)木板$()和一根$(thing)木棍$()合成。"
+            "text": "紡織機只需要用$(thing)木板$()和一根$(thing)木棒$()合成。"
         },
         {
             "type": "tfg:loom_recipe",
             "anchor": "wool_cloth",
             "title": "布料",
             "recipe": "tfc:loom/wool_cloth",
-            "text": "$(thing)羊毛布$()的配方需要 16 條$(thing)毛線$()。按下$(item)$(k:key.use)$()可將材料放入織機，接著按住$(item)$(k:key.use)$()開始操作織機。完成後，按下$(item)$(k:key.use)$()取出物品。"
+            "text": "$(thing)羊毛布$()的配方需要 16 條$(thing)毛線$()。按下$(item)$(k:key.use)$()可將材料放入紡織機，接著按住$(item)$(k:key.use)$()開始操作紡織機。完成後，按下$(item)$(k:key.use)$()取出物品。"
         },
         {
             "type": "patchouli:image",
@@ -42,7 +42,7 @@
                 "tfc:textures/gui/book/tutorial/loom_working.png",
                 "tfc:textures/gui/book/tutorial/loom_done.png"
             ],
-            "text": "織機的工作原理。",
+            "text": "紡織機的工作原理。",
             "border": true
         },
         {

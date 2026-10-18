@@ -6,13 +6,13 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:craftsmanship/glassworking#intro)玻璃配料$()$(li2)$(l:craftsmanship/glassworking#lime_and_potash)石灰與鉀鹼$()$(li)$(bold)$(l:craftsmanship/glassworking#tools)玻璃加工工具$()$(li2)$(l:craftsmanship/glassworking#blowpipe)吹管$()$(li2)$(l:craftsmanship/glassworking#paddle)整型板$()$(li2)$(l:craftsmanship/glassworking#jacks)夾鉗$()$(li2)$(l:craftsmanship/glassworking#saw)寶石鋸$()$(li)$(bold)$(l:craftsmanship/glassworking#glassworking_steps)玻璃加工步驟$()$(li2)$(l:craftsmanship/glassworking#table_pour)桌面澆注$()$(li2)$(l:craftsmanship/glassworking#basin_pour)盆槽澆注$()$(li)$(bold)$(l:craftsmanship/glassworking#coloring)玻璃上色$()$(li2)$(l:craftsmanship/glassworking#dyes)染料清單$()"
+            "text": "$(li)$(bold)$(l:craftsmanship/glassworking#intro)玻璃配料$()$(li2)$(l:craftsmanship/glassworking#lime_and_potash)石灰與鉀鹼$()$(li)$(bold)$(l:craftsmanship/glassworking#tools)玻璃加工工具$()$(li2)$(l:craftsmanship/glassworking#blowpipe)吹管$()$(li2)$(l:craftsmanship/glassworking#paddle)整型板$()$(li2)$(l:craftsmanship/glassworking#jacks)玻璃夾鉗$()$(li2)$(l:craftsmanship/glassworking#saw)寶石鋸$()$(li)$(bold)$(l:craftsmanship/glassworking#glassworking_steps)玻璃加工步驟$()$(li2)$(l:craftsmanship/glassworking#table_pour)桌面澆注$()$(li2)$(l:craftsmanship/glassworking#basin_pour)盆槽澆注$()$(li)$(bold)$(l:craftsmanship/glassworking#coloring)玻璃上色$()$(li2)$(l:craftsmanship/glassworking#dyes)染料清單$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
             "title": "簡介",
-            "text": "玻璃工藝是將沙子變成玻璃的藝術。首先，决定製作哪種$(thing)玻璃原料$()：$(br)$(br) 1、$(thing)二氧化硅玻璃$()：由白沙製作。$(br) 2、$(thing)赤鐵礦玻璃$()：由黄沙、紅沙或粉紅沙製作。$(br) 3、$(thing)橄欖岩玻璃$()：由綠沙或棕沙製作。$(br) 4、$(thing)火山岩玻璃$()：由黑沙製作。"
+            "text": "玻璃工藝是將沙子變成玻璃的藝術。首先，決定製作哪種$(thing)玻璃原料$()：$(br)$(br) 1、$(thing)二氧化硅玻璃$()：由白沙製作。$(br) 2、$(thing)赤鐵礦玻璃$()：由黃沙、紅沙或粉紅沙製作。$(br) 3、$(thing)橄欖岩玻璃$()：由綠沙或棕沙製作。$(br) 4、$(thing)火山岩玻璃$()：由黑沙製作。"
         },
         {
             "type": "patchouli:crafting",
@@ -31,7 +31,7 @@
         {
             "type": "patchouli:text",
             "anchor": "tools",
-            "text": "玻璃加工從一份玻璃配料開始，接著完成一系列步驟。這些步驟可能需要特定的工具：$(br)$(li)$(l:craftsmanship/glassworking#blowpipe)吹管$()，用來$(thing)吹製$()和$(thing)拉伸$()。$(li)$(l:craftsmanship/glassworking#paddle)整型板$()，用來$(thing)壓平$()。$(li)$(l:craftsmanship/glassworking#jacks)夾鉗$()，用來$(thing)夾捏$()。$(li)$(l:craftsmanship/glassworking#saw)寶石鋸$()，用來$(thing)鋸切$()。$(li)以及$(l:agriculture/weaving)羊毛布$()，用來$(thing)滾壓$()。",
+            "text": "玻璃加工從一份玻璃配料開始，接著完成一系列步驟。這些步驟可能需要特定的工具：$(br)$(li)$(l:craftsmanship/glassworking#blowpipe)吹管$()，用來$(thing)吹製$()和$(thing)拉伸$()。$(li)$(l:craftsmanship/glassworking#paddle)整型板$()，用來$(thing)壓平$()。$(li)$(l:craftsmanship/glassworking#jacks)玻璃夾鉗$()，用來$(thing)夾捏$()。$(li)$(l:craftsmanship/glassworking#saw)寶石鋸$()，用來$(thing)鋸切$()。$(li)以及$(l:agriculture/weaving)羊毛布$()，用來$(thing)滾壓$()。",
             "title": "職人工具"
         },
         {
@@ -51,9 +51,9 @@
         {
             "type": "tfg:welding_recipe",
             "anchor": "jacks",
-            "title": "夾鉗",
+            "title": "玻璃夾鉗",
             "recipe": "tfc:welding/jacks",
-            "text": "$(thing)夾捏$()操作可以用$(thing)夾鉗$()完成，夾鉗是將黃銅棒和黃銅板$(l:craftsmanship/anvils#welding)焊接$()製成的。"
+            "text": "$(thing)夾捏$()操作可以用$(thing)玻璃夾鉗$()完成，玻璃夾鉗是將黃銅棒和黃銅板$(l:craftsmanship/anvils#welding)焊接$()製成的。"
         },
         {
             "type": "patchouli:crafting",
@@ -65,12 +65,12 @@
         {
             "type": "patchouli:text",
             "anchor": "glassworking_steps",
-            "text": "首先，吹管上的玻璃必須加熱到至少$(4)$(bold)暗紅色$()。然後，將吹管拿在$(thing)副手$()，按住$(item)$(k:key.use)$()執行每個步驟$()。$(br)按下$(item)$(k:key.swapOffhand)$()可以將高溫的吹管拿到副手。$(br2)$(bold)吹製$()$(br)面向正前方使用$(thing)吹管$()。$(br2)$(bold)拉伸$()$(br)面向正下方使用$(thing)吹管$()。",
+            "text": "首先，吹管上的玻璃必須加熱到至少$(4)$(bold)淡紅$()。然後，將吹管拿在$(thing)副手$()，按住$(item)$(k:key.use)$()執行每個步驟$()。$(br)按下$(item)$(k:key.swapOffhand)$()可以將高溫的吹管拿到副手。$(br2)$(bold)吹製$()$(br)面向正前方使用$(thing)吹管$()。$(br2)$(bold)拉伸$()$(br)面向正下方使用$(thing)吹管$()。",
             "title": "如何加工玻璃"
         },
         {
             "type": "patchouli:text",
-            "text": "$(bold)壓平$()$(br)主手拿著$(l:craftsmanship/glassworking#paddle)整型板$()時使用$(thing)吹管$()。$(br2)$(bold)夾捏$()$(br)主手拿著$(l:craftsmanship/glassworking#jacks)夾鉗$()時使用$(thing)吹管$()。$(br2)$(bold)鋸切$()$(br)主手拿著$(l:craftsmanship/glassworking#saw)寶石鋸$()時使用$(thing)吹管$()。$(br2)$(bold)滾壓$()$(br)主手拿著$(l:agriculture/weaving)羊毛布$()時使用$(thing)吹管$()。"
+            "text": "$(bold)壓平$()$(br)主手拿著$(l:craftsmanship/glassworking#paddle)整型板$()時使用$(thing)吹管$()。$(br2)$(bold)夾捏$()$(br)主手拿著$(l:craftsmanship/glassworking#jacks)玻璃夾鉗$()時使用$(thing)吹管$()。$(br2)$(bold)鋸切$()$(br)主手拿著$(l:craftsmanship/glassworking#saw)寶石鋸$()時使用$(thing)吹管$()。$(br2)$(bold)滾壓$()$(br)主手拿著$(l:agriculture/weaving)羊毛布$()時使用$(thing)吹管$()。"
         },
         {
             "type": "patchouli:image",
@@ -135,7 +135,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(thing)玻璃片$()是用$(thing)桌面澆注$()製成的。在連續的區域中放置最多十六個$(thing)高嶺土方塊$()或$(thing)鍍黃銅方塊$()即可做成澆注台。$(br2) 1. 將$(l:craftsmanship/glassworking)玻璃配料$()加到$(thing)吹管$()上。$(br) 2. 將吹管加熱到$(4)$(bold)暗紅色$()。$(br) 3. $()手持$(thing)吹管$()對澆注台頂部按下$(item)$(k:key.use)$()。$(br) 4. 最後，手持$(l:craftsmanship/glassworking#paddle)整型板$()按下$(item)$(k:key.use)$()將玻璃壓平。",
+            "text": "$(thing)玻璃片$()是用$(thing)桌面澆注$()製成的。在連續的區域中放置最多十六個$(thing)高嶺土方塊$()或$(thing)鍍黃銅方塊$()即可做成澆注台。$(br2) 1. 將$(l:craftsmanship/glassworking)玻璃配料$()加到$(thing)吹管$()上。$(br) 2. 將吹管加熱到$(4)$(bold)淡紅$()。$(br) 3. $()手持$(thing)吹管$()對澆注台頂部按下$(item)$(k:key.use)$()。$(br) 4. 最後，手持$(l:craftsmanship/glassworking#paddle)整型板$()按下$(item)$(k:key.use)$()將玻璃壓平。",
             "title": "桌面澆注",
             "anchor": "table_pour"
         },
@@ -160,7 +160,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(thing)玻璃方塊$()是用$(thing)盆槽澆注$()製成的。用$(thing)高嶺土方塊$()或$(thing)鍍黃銅方塊$()包圍一格空氣方塊除了頂部以外的所有面，即可做成盆槽。$(br2) 1. 將$(l:craftsmanship/glassworking)玻璃配料$()加到$(thing)吹管$()上。$(br) 2. 將吹管加熱到$(4)$(bold)暗紅色$()。$(br) 3. 手持$(thing)吹管$()對盆槽頂部按下$(item)$(k:key.use)$()。",
+            "text": "$(thing)玻璃方塊$()是用$(thing)盆槽澆注$()製成的。用$(thing)高嶺土方塊$()或$(thing)鍍黃銅方塊$()包圍一格空氣方塊除了頂部以外的所有面，即可做成盆槽。$(br2) 1. 將$(l:craftsmanship/glassworking)玻璃配料$()加到$(thing)吹管$()上。$(br) 2. 將吹管加熱到$(4)$(bold)淡紅$()。$(br) 3. 手持$(thing)吹管$()對盆槽頂部按下$(item)$(k:key.use)$()。",
             "title": "盆槽澆注",
             "anchor": "basin_pour"
         },
@@ -207,7 +207,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(a)淺綠色$()：二氧化矽/赤鐵礦玻璃+$(thing)鐵粉$()+$(thing)碳酸鈉$()$(li)$(bold)$(b)淺藍色$()：二氧化矽玻璃+$(thing)青金石粉$()$(li)$(bold)$(1)藍色$()：二氧化矽玻璃+$(thing)銅粉$()$(li)$(bold)$(4)紅色$()：二氧化矽/赤鐵礦玻璃+$(thing)錫粉$()$(li)$(bold)$(6)黄色$()：二氧化矽/赤鐵礦玻璃+$(thing)銀粉$()$(li)$(bold)$(#ef8e38)橙色$()：二氧化矽+$(thing)黃鐵礦粉$()$(li)$(bold)$(5)洋紅色$()：二氧化矽/赤鐵礦玻璃+$(thing)紅寶石粉$()$(li)$(bold)$(d)粉紅色$()：二氧化矽玻璃+$(thing)金粉$()$(li)$(bold)$(0)遮光$()：非二氧化矽玻璃+$(thing)紫水晶粉$()"
+            "text": "$(li)$(bold)$(a)淺綠色$()：二氧化矽/赤鐵礦玻璃+$(thing)鐵粉$()+$(thing)碳酸鈉$()$(li)$(bold)$(b)淺藍色$()：二氧化矽玻璃+$(thing)青金石粉$()$(li)$(bold)$(1)藍色$()：二氧化矽玻璃+$(thing)銅粉$()$(li)$(bold)$(4)紅色$()：二氧化矽/赤鐵礦玻璃+$(thing)錫粉$()$(li)$(bold)$(6)黃色$()：二氧化矽/赤鐵礦玻璃+$(thing)銀粉$()$(li)$(bold)$(#ef8e38)橙色$()：二氧化矽+$(thing)黃鐵礦粉$()$(li)$(bold)$(5)洋紅色$()：二氧化矽/赤鐵礦玻璃+$(thing)紅寶石粉$()$(li)$(bold)$(d)粉紅色$()：二氧化矽玻璃+$(thing)金粉$()$(li)$(bold)$(0)遮光$()：非二氧化矽玻璃+$(thing)紫水晶粉$()"
         },
         {
             "type": "tfg:table_small",

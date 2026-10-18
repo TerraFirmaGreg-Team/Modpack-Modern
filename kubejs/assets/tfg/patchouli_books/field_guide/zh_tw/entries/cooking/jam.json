@@ -26,7 +26,7 @@
             "type": "patchouli:crafting",
             "title": "解封",
             "recipe": "tfc:crafting/unseal_plum_jar",
-            "text": "要在配方中使用罐子，必須先在合成台中將它解封。罐蓋無法取回。解封的罐子只能保存幾天！"
+            "text": "要在配方中使用罐子，必須先在工作台中將它解封。罐蓋無法取回。解封的罐子只能保存幾天！"
         },
         {
             "type": "patchouli:spotlight",

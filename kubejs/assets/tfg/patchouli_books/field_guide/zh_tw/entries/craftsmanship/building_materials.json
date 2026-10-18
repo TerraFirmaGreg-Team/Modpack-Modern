@@ -77,7 +77,7 @@
         {
             "type": "patchouli:text",
             "anchor": "wattle_and_daub",
-            "text": "$(thing)板條$()與$(thing)塗料$()是一種多用途的建築和裝飾方塊。$(br)$(thing)板條$()可以合成並放置，但它很容易破壞，而且玩家和生物可以穿過它。可以用$(thing)塗料$()強化，使其變成實心方塊。$(br)要讓$(thing)板條$()變成實心，首先必須將它編織，也就是在結構中加入木棍。",
+            "text": "$(thing)板條$()與$(thing)塗料$()是一種多用途的建築和裝飾方塊。$(br)$(thing)板條$()可以合成並放置，但它很容易破壞，而且玩家和生物可以穿過它。可以用$(thing)塗料$()強化，使其變成實心方塊。$(br)要讓$(thing)板條$()變成實心，首先必須將它編織，也就是在結構中加入木棒。",
             "title": "板條與塗料"
         },
         {
@@ -85,19 +85,19 @@
             "images": [
                 "tfc:textures/gui/book/tutorial/wattle_weave.png"
             ],
-            "text": "$(thing)編織$()板條需要四根木棍。",
+            "text": "$(thing)編織$()板條需要四根木棒。",
             "border": true
         },
         {
             "type": "patchouli:text",
-            "text": "你隨時都可以在兩條對角線以及頂部和底部加入木棍。手持一根$(thing)木棍$()按下$(item)$(k:key.use)$()即可加入木棍。選擇面上不同的位置，即可改變木棍要加在板條的哪個部位。"
+            "text": "你隨時都可以在兩條對角線以及頂部和底部加入木棒。手持一根$(thing)木棒$()按下$(item)$(k:key.use)$()即可加入木棒。選擇面上不同的位置，即可改變木棒要加在板條的哪個部位。"
         },
         {
             "type": "patchouli:image",
             "images": [
                 "tfc:textures/gui/book/tutorial/wattle_add_stick.png"
             ],
-            "text": "在板條中加入木棍。",
+            "text": "在板條中加入木棒。",
             "border": true
         },
         {
@@ -267,7 +267,7 @@
             "type": "patchouli:text",
             "anchor": "roof_building",
             "title": "建造屋頂",
-            "text": "使用$(bold)Roads and Roofs$()模組建造屋頂時，要從框架開始。$(thing)屋頂框架方塊$()可以用木材和木棍合成，也能做成階梯和半磚的變體。這些方塊可以用來勾勒屋頂的形狀，是所有屋頂的起點。"
+            "text": "使用$(bold)Roads and Roofs$()模組建造屋頂時，要從框架開始。$(thing)屋頂框架方塊$()可以用木材和木棒合成，也能做成階梯和半磚的變體。這些方塊可以用來勾勒屋頂的形狀，是所有屋頂的起點。"
         },
         {
             "type": "patchouli:text",

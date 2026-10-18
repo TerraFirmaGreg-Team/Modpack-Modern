@@ -12,13 +12,13 @@
 			"type": "patchouli:spotlight",
 			"item": "gtceu:nano_saber",
 			"anchor": "nano_saber",
-			"text": "The $(item)Nano Saber$() is a powerful melee weapon you’ll be able to unlock once you reach late $(5)EV$(). Simply use $(item)$(k:key.sneak) + $(k:key.use)$() to activate the $(thing)bzzzzz mode$()."
+			"text": "$(item)Nano-szabla$() to potężna broń biała, którą odblokujesz pod koniec $(5)EN$(). Użyj $(item)$(k:key.sneak) + $(k:key.use)$(), aby włączyć $(thing)tryb bzzzzz$()."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:certus_mechanism",
 			"anchor": "ev_guns",
-			"text": "The $(item)Certus Mechanism$() is used to craft $(5)EV$()-tier guns. A lot of these weapons use ammo that requires Certus Quartz. The moon has huge veins of it, or you can set up an infinite supply via $(l:the_moon/regolith)Lunar Regolith$()."
+			"text": "The $(item)Certus Mechanism$() is used to craft $(5)EV$()-tier guns. A lot of these weapons use ammo that requires Certus Quartz. The moon has huge veins of it, or you can set up an infinite supply via $(l:the_moon/moon_biomes#harvester)Lunar Regolith$()."
 		},
 		{
 			"type": "patchouli:spotlight",

@@ -92,4 +92,124 @@ function registerTFGEquipmentRecipes(event) {
 		G: "#forge:glass_panes",
 		C: '#tfg:water_breathing_ingredients'
 	}).id('tfg:shaped/snorkel')
+	
+	// Electric flask
+
+	event.custom({
+		type: 'gtceu:crafting_shaped_energy_transfer',
+		pattern: [
+			'PBP',
+			'CFC',
+			'PIP'
+		],
+		key: {
+			B: { item: 'gtceu:lv_sodium_battery' },
+			F: { item: 'waterflasks:iron_flask' },
+			C: { tag: 'gtceu:circuits/lv'},
+			P: [{ item: 'tfg:bakelite_plate' }, { item: 'gtceu:polyethylene_plate' }],
+			I: { item: 'gtceu:double_red_steel_plate' }
+		},
+		chargeIngredient: { item: 'gtceu:lv_sodium_battery' },
+		overrideCharge: true,
+		transferMaxCharge: true,
+		result: { item: 'tfg:electric_flask' }
+	}).id('tfg:crafting/electric_flask_iron_sodium')
+		
+	event.custom({
+		type: 'gtceu:crafting_shaped_energy_transfer',
+		pattern: [
+			'PBP',
+			'CFC',
+			'PIP'
+		],
+		key: {
+			B: { item: 'gtceu:lv_cadmium_battery' },
+			F: { item: 'waterflasks:iron_flask' },
+			C: { tag: 'gtceu:circuits/lv'},
+			P: [{ item: 'tfg:bakelite_plate' }, { item: 'gtceu:polyethylene_plate' }],
+			I: { item: 'gtceu:double_red_steel_plate' }
+		},
+		chargeIngredient: { item: 'gtceu:lv_cadmium_battery' },
+		overrideCharge: true,
+		transferMaxCharge: true,
+		result: { item: 'tfg:electric_flask' }
+	}).id('tfg:crafting/electric_flask_iron_cadmium')
+	
+	event.custom({
+		type: 'gtceu:crafting_shaped_energy_transfer',
+		pattern: [
+			'PBP',
+			'CFC',
+			'PIP'
+		],
+		key: {
+			B: { item: 'gtceu:lv_lithium_battery' },
+			F: { item: 'waterflasks:iron_flask' },
+			C: { tag: 'gtceu:circuits/lv'},
+			P: [{ item: 'tfg:bakelite_plate' }, { item: 'gtceu:polyethylene_plate' }],
+			I: { item: 'gtceu:double_red_steel_plate' }
+		},
+		chargeIngredient: { item: 'gtceu:lv_lithium_battery' },
+		overrideCharge: true,
+		transferMaxCharge: true,
+		result: { item: 'tfg:electric_flask' }
+	}).id('tfg:crafting/electric_flask_iron_lithium')
+
+
+	event.custom({
+		type: 'gtceu:crafting_shaped_energy_transfer',
+		pattern: [
+			'PBP',
+			'CFC',
+			'PPP'
+		],
+		key: {
+			B: { item: 'gtceu:lv_sodium_battery'},
+			F: { item: 'waterflasks:red_steel_flask'},
+			C: { tag: 'gtceu:circuits/lv'},
+			P: [{ item: 'tfg:bakelite_plate' }, { item: 'gtceu:polyethylene_plate' }]
+		},
+		chargeIngredient: { item: 'gtceu:lv_sodium_battery' },
+		overrideCharge: true,
+		transferMaxCharge: true,
+		result: { item: 'tfg:electric_flask' }
+	}).id('tfg:crafting/electric_flask_red_sodium')
+
+	event.custom({
+		type: 'gtceu:crafting_shaped_energy_transfer',
+		pattern: [
+			'PBP',
+			'CFC',
+			'PPP'
+		],
+		key: {
+			B: { item: 'gtceu:lv_cadmium_battery'},
+			F: { item: 'waterflasks:red_steel_flask'},
+			C: { tag: 'gtceu:circuits/lv'},
+			P: [{ item: 'tfg:bakelite_plate' }, { item: 'gtceu:polyethylene_plate' }]
+		},
+		chargeIngredient: { item: 'gtceu:lv_cadmium_battery' },
+		overrideCharge: true,
+		transferMaxCharge: true,
+		result: { item: 'tfg:electric_flask' }
+	}).id('tfg:crafting/electric_flask_red_cadmium')
+
+	event.custom({
+		type: 'gtceu:crafting_shaped_energy_transfer',
+		pattern: [
+			'PBP',
+			'CFC',
+			'PPP'
+		],
+		key: {
+			B: { item: 'gtceu:lv_lithium_battery'},
+			F: { item: 'waterflasks:red_steel_flask'},
+			C: { tag: 'gtceu:circuits/lv'},
+			P: [{ item: 'tfg:bakelite_plate' }, { item: 'gtceu:polyethylene_plate' }]
+		},
+		chargeIngredient: { item: 'gtceu:lv_lithium_battery' },
+		overrideCharge: true,
+		transferMaxCharge: true,
+		result: { item: 'tfg:electric_flask' }
+	}).id('tfg:crafting/electric_flask_red_lithium')
 }

@@ -155,7 +155,7 @@
                 }
             ],
             "text": "",
-            "title": "野生作物的生成條件",
+            "title": "野生作物生長條件",
             "legend": [],
             "columns": 2,
             "first_column_width": 80,
@@ -1687,12 +1687,12 @@
         {
             "type": "patchouli:text",
             "anchor": "green_bean",
-            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：2 — 35 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：38 — 100 %$(br)$(bold)養分$()：氮$(br2)四季豆是兩格高的攀爬作物。四季豆種子可以種在耕地上，若旁邊有木棍就會長到兩格高，產物為$(thing)四季豆$()和$(thing)四季豆種子$()。",
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：2 — 35 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：38 — 100 %$(br)$(bold)養分$()：氮$(br2)四季豆是兩格高的攀爬作物。四季豆種子可以種在耕地上，若旁邊有木棒就會長到兩格高，產物為$(thing)四季豆$()和$(thing)四季豆種子$()。",
             "title": "四季豆"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "作物需要木棍才能完全長成。",
+            "text": "作物需要木棒才能完全長成。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -3194,12 +3194,12 @@
         {
             "type": "patchouli:text",
             "anchor": "tomatoes",
-            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：0 — 36 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：30 — 95 %$(br)$(bold)養分$()：鉀$(br2)番茄是兩格高的攀爬作物。番茄種子可以種在耕地上，若旁邊有木棍就會長到兩格高，產物為$(thing)番茄$()和$(thing)番茄種子$()。",
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：0 — 36 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：30 — 95 %$(br)$(bold)養分$()：鉀$(br2)番茄是兩格高的攀爬作物。番茄種子可以種在耕地上，若旁邊有木棒就會長到兩格高，產物為$(thing)番茄$()和$(thing)番茄種子$()。",
             "title": "番茄"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "作物需要木棍才能完全長成。",
+            "text": "作物需要木棒才能完全長成。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -4128,7 +4128,7 @@
         {
             "type": "patchouli:text",
             "anchor": "cucumber",
-            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：5 — 40 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：70 — 100 %$(br)$(bold)養分$()：氮$(br2)小黃瓜是兩格高的作物。小黃瓜種子可以種在耕地上，會長到兩格高，產物為$(item)小黃瓜$()，能提供$(thing)蔬菜$()營養。$(br)$(bold)小黃瓜需要木棍才能完全成熟。$()",
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：5 — 40 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：70 — 100 %$(br)$(bold)養分$()：氮$(br2)小黃瓜是兩格高的作物。小黃瓜種子可以種在耕地上，會長到兩格高，產物為$(item)小黃瓜$()，能提供$(thing)蔬菜$()營養。$(br)$(bold)小黃瓜需要木棒才能完全成熟。$()",
             "title": "小黃瓜"
         },
         {
@@ -4261,7 +4261,7 @@
                     }
                 }
             ],
-            "text": "$(thing)野生黄瓜$()生長在 15°C 至 40°C的溫度區間與 0 到 150 毫米的降雨環境。",
+            "text": "$(thing)野生小黃瓜$()生長在 15°C 至 40°C的溫度區間與 0 到 150 毫米的降雨環境。",
             "enable_visualize": false
         },
         {

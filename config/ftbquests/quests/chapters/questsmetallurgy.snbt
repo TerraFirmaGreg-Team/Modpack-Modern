@@ -14,7 +14,7 @@
 		id: "gtceu:wrought_iron_ingot"
 	}
 	id: "5F560FF28458A555"
-	order_index: 2
+	order_index: 1
 	quest_links: [
 		{
 			id: "19CF6D922179DFF9"
@@ -3538,7 +3538,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.warfare.desc}"]
-			guide_page: "tfg:field_guide tfg:logistics/boats 51"
+			guide_page: "tfg:field_guide tfg:logistics/boats 52"
 			id: "43ADE3E09542FDBF"
 			optional: true
 			shape: "heart"

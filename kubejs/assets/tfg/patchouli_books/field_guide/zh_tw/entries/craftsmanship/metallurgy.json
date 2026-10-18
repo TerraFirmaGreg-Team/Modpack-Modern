@@ -6,13 +6,13 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:craftsmanship/metallurgy#intro)地表金屬$()$(li)$(bold)$(l:craftsmanship/metallurgy#extraction)提取金屬$()$(li2)$(l:craftsmanship/metallurgy#casting)澆鑄$()$(li)$(bold)$(l:craftsmanship/metallurgy#alloying)合金$()$(li2)$(l:craftsmanship/metallurgy#utility_alloys)實用合金$()$(li)$(bold)$(l:craftsmanship/metallurgy#propick)探礦鎬$()$(li2)$(l:craftsmanship/metallurgy#prospector)數位探礦$()"
+            "text": "$(li)$(bold)$(l:craftsmanship/metallurgy#intro)地表金屬$()$(li)$(bold)$(l:craftsmanship/metallurgy#extraction)提取金屬$()$(li2)$(l:craftsmanship/metallurgy#casting)澆鑄$()$(li)$(bold)$(l:craftsmanship/metallurgy#alloying)合金$()$(li2)$(l:craftsmanship/metallurgy#utility_alloys)實用合金$()$(li)$(bold)$(l:craftsmanship/metallurgy#propick)勘礦鎬$()$(li2)$(l:craftsmanship/metallurgy#prospector)數位探礦$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
             "title": "散落的金屬",
-            "text": "除了地上的木棍、樹枝和石頭之外，你可能還會遇到小塊的礦石。它們很重要，因為在取得鎬之前，它們是少數幾種礦石和金屬來源之一。這類指示物共有三種：$(li)礦物粉塵$(li)寶石芽$(li)小型礦石"
+            "text": "除了地上的木棒、樹枝和石頭之外，你可能還會遇到小塊的礦石。它們很重要，因為在取得鎬之前，它們是少數幾種礦石和金屬來源之一。這類指示物共有三種：$(li)礦物粉塵$(li)寶石芽$(li)小型礦石"
         },
         {
             "type": "patchouli:multiblock",
@@ -44,7 +44,7 @@
         {
             "type": "patchouli:text",
             "anchor": "extraction",
-            "text": "礦石會產出特定$(thing)毫桶 (mB)$()數量的實際金屬，可以透過精煉、熔化和澆鑄來提取。從礦石中取得的量取決於物品的「豐富度」、化學組成和精煉程度。$(br2)礦石豐富度由低到高依序為：小型、貧瘠、一般、富饒。",
+            "text": "礦石會產出特定$(thing)毫桶 (mB)$()數量的實際金屬，可以透過精煉、熔化和澆鑄來提取。從礦石中取得的量取決於物品的「豐富度」、化學組成和精煉程度。$(br2)礦石豐富度由低到高依序為：小型、貧瘠、一般、富集。",
             "title": "提煉橡膠"
         },
         {
@@ -76,7 +76,7 @@
         },
         {
             "type": "patchouli:crafting",
-            "text": "小心，小缸會很燙！用兩根木棍和一把刀合成$(thing)木火鉗$()，將它拿在副手就能安全地拿取高溫小缸。",
+            "text": "小心，小缸會很燙！用兩根木棒和一把刀合成$(thing)木火鉗$()，將它拿在副手就能安全地拿取高溫小缸。",
             "recipe": "tfchotornot:crafting/tongs/wood"
         },
         {
@@ -94,7 +94,7 @@
         {
             "type": "patchouli:crafting",
             "recipe": "gtceu:shaped/pickaxe_copper",
-            "text": "現在你可以合成你的第一把鎬了！找到足夠製作鎬頭的銅，燒製一個鎬頭模具，並用坑窯熔化礦石，然後澆鑄出鎬頭。把它裝到木棍上，就完成了！現在你可以挖掘$(thing)礦石$()了。"
+            "text": "現在你可以合成你的第一把鎬了！找到足夠製作鎬頭的銅，燒製一個鎬頭模具，並用坑窯熔化礦石，然後澆鑄出鎬頭。把它裝到木棒上，就完成了！現在你可以挖掘$(thing)礦石$()了。"
         },
         {
             "type": "patchouli:spotlight",
@@ -143,23 +143,23 @@
         {
             "type": "patchouli:text",
             "anchor": "propick",
-            "title": "探礦鎬",
+            "title": "勘礦鎬",
             "text": "你還記得在哪裡撿到那些指示礦石吧？尋找更多礦石可能需要大量的探索和挖掘。你應該要非常熟悉$(thing)地質學$()。如果你需要特定的資源，就必須在腳下或世界各地找到它所生成的岩石種類。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tag:tfc:propicks",
-            "title": "探礦鎬",
+            "title": "勘礦鎬",
             "link_recipes": false,
-            "text": "如果你在找礦脈，又無法靠猜測找到，那就是拿出$(item)探礦鎬$()的時候了。如果你熟悉$(thing)TFC$()中的基本探礦鎬，可能會驚訝地發現它們在$(tfg)中的運作方式非常不同。"
+            "text": "如果你在找礦脈，又無法靠猜測找到，那就是拿出$(item)勘礦鎬$()的時候了。如果你熟悉$(thing)TFC$()中的基本勘礦鎬，可能會驚訝地發現它們在$(tfg)中的運作方式非常不同。"
         },
         {
             "type": "patchouli:text",
-            "text": "在$(tfg_short)中，對探礦鎬按下右鍵會朝你視線的方向發出搜尋射線。射線的寬度和深度取決於探礦鎬的等級，如其提示框所示。依等級不同，探礦鎬還能告訴你礦石的數量，甚至顯示礦脈的$(thing)透視$()指示。"
+            "text": "在$(tfg_short)中，對勘礦鎬按下右鍵會朝你視線的方向發出搜尋射線。射線的寬度和深度取決於勘礦鎬的等級，如其提示框所示。依等級不同，勘礦鎬還能告訴你礦石的數量，甚至顯示礦脈的$(thing)透視$()指示。"
         },
         {
             "type": "patchouli:text",
-            "text": "使用探礦鎬時可以顯示以下資訊：$(li)在聊天中顯示礦脈的$(thing)總量$()、礦脈的$(thing)內容物$()，以及礦脈中$(thing)每種礦石的數量$()。$(li)$(thing)彩色鋼$()探礦鎬還可以在礦脈的$(thing)中心$()顯示一個大型透視粒子，或顯示$(thing)每個礦石方塊的粒子$()。"
+            "text": "使用勘礦鎬時可以顯示以下資訊：$(li)在聊天中顯示礦脈的$(thing)總量$()、礦脈的$(thing)內容物$()，以及礦脈中$(thing)每種礦石的數量$()。$(li)$(thing)彩色鋼$()勘礦鎬還可以在礦脈的$(thing)中心$()顯示一個大型透視粒子，或顯示$(thing)每個礦石方塊的粒子$()。"
         },
         {
             "type": "patchouli:image",
@@ -167,7 +167,7 @@
             "texture_width": 1024,
             "height": 1024,
             "texture_height": 1024,
-            "text": "彩色鋼探礦鎬：大的$(bold)$(#D68400)❗$()來自以礦脈為單位的透視，較小的則來自以方塊為單位的透視。",
+            "text": "彩色鋼勘礦鎬：大的$(bold)$(#D68400)❗$()來自以礦脈為單位的透視，較小的則來自以方塊為單位的透視。",
             "title": "探礦視角",
             "images": [
                 "tfg:textures/gui/field_guide/prospecting/tfg_prospectors_pick_xray.png"
@@ -177,7 +177,7 @@
         {
             "type": "tfg:anvil_recipe",
             "recipe": "tfc:anvil/copper_propick_head",
-            "text": "探礦鎬頭可以在$(l:craftsmanship/anvils)鐵砧$()上$(l:craftsmanship/anvils#working)鍛造$()或$(l:craftsmanship/metallurgy#casting)澆鑄$()，然後像其他工具一樣裝到木棍上。$(br2)注意：探礦鎬的大部分數據和特性都可以在伺服器設定檔中調整。"
+            "text": "勘礦鎬頭可以在$(l:craftsmanship/anvils)鐵砧$()上$(l:craftsmanship/anvils#working)鍛造$()或$(l:craftsmanship/metallurgy#casting)澆鑄$()，然後像其他工具一樣裝到木棒上。$(br2)注意：勘礦鎬的大部分數據和特性都可以在伺服器設定檔中調整。"
         },
         {
             "type": "patchouli:spotlight",
@@ -197,7 +197,7 @@
                 "tfg:textures/gui/field_guide/prospecting/tfg_luv_ore_prospector.png"
             ],
             "border": true,
-            "text": "使用$(#e373ff)LuV 勘礦儀$()時可能看到的畫面範例。記得保持電池充飽電！"
+            "text": "使用$(d)LuV$()$(#e373ff) 勘礦儀$()時可能看到的畫面範例。記得保持電池充飽電！"
         },
         {
             "type": "patchouli:relations",

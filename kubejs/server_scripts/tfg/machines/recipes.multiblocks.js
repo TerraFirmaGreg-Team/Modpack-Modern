@@ -405,6 +405,19 @@ function registerTFGMultiblockRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 		.addMaterialInfo(true)
 
+	// Exhaust Vent
+
+	event.recipes.gtceu.shaped('tfg:rotor_vent', [
+		'CD ',
+		'BA ',
+		'   '
+	], {
+		A: Item.of('gtceu:black_steel_rotor'),
+		B: '#tfg:metal_bars',
+		C: 'gtceu:mv_machine_hull',
+		D: Item.of('gtceu:mv_electric_motor')
+	}).addMaterialInfo().id('tfg:shaped/rotor_vent')
+
 	// Heat Pump
 	event.recipes.gtceu.assembler('tfg:assembler/heat_pump')
 		.itemInputs(
@@ -415,7 +428,7 @@ function registerTFGMultiblockRecipes(event) {
 		)
 		.inputFluids(Fluid.of('tfg:chlorodifluoromethane', 6000))
 		.itemOutputs('1x tfg:heat_pump')
-		.duration(200)
+		.duration(20*10)
 		.addMaterialInfo(true)
 		.EUt(GTValues.VA[GTValues.LV])
 

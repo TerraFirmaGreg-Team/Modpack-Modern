@@ -37,7 +37,7 @@
             "type": "tfg:instant_barrel_recipe",
             "anchor": "limewater",
             "recipe": "tfc:barrel/limewater",
-            "text": "$(bold)石灰水$()的製作方法是將$(item)助熔劑$()加入裝有$(thing)水$()的木桶中。每$(thing) 500 mB$()的$(thing)水$()需要一個$(item)助熔劑$()。$(thing)石灰水$()是用於$(l:agriculture/leather_making)製作皮革$()的試劑，也可以用來製作$(thing)砂漿$()。"
+            "text": "$(bold)石灰水$()的製作方法是將$(item)助熔劑$()加入裝有$(thing)水$()的木桶中。每$(thing) 500 mB$()的$(thing)水$()需要一個$(item)助熔劑$()。$(thing)石灰水$()是用於$(l:agriculture/leather_making)皮革製作$()的試劑，也可以用來製作$(thing)砂漿$()。"
         },
         {
             "type": "tfg:sealed_barrel_recipe",

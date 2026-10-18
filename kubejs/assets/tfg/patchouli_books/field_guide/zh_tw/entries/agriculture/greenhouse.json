@@ -81,7 +81,7 @@
             "type": "patchouli:spotlight",
             "anchor": "hydroponic_planter",
             "item": "firmalife:hydroponic_planter",
-            "text": "$(thing)水耕種植盆$()用來種植$(thing)稻米$()和$(thing)蔓越莓叢$()等水生作物。它們的運作方式與四格種植盆相同，只是不需要澆水。$(br)取而代之的是，水耕種植盆下方必須有供水的$(item)流體管道$()。沒有管道就不會生長。"
+            "text": "$(thing)水耕種植盆$()用來種植$(thing)稻米$()和$(thing)蔓越莓灌木$()等水生作物。它們的運作方式與四格種植盆相同，只是不需要澆水。$(br)取而代之的是，水耕種植盆下方必須有供水的$(item)流體管道$()。沒有管道就不會生長。"
         },
         {
             "type": "patchouli:spotlight",

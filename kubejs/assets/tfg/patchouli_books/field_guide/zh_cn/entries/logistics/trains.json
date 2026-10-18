@@ -1,5 +1,5 @@
 {
-	"name": "Trains",
+	"name": "列车",
 	"category": "tfg:logistics",
 	"icon": "minecraft:rail",
 	"read_by_default": true,
@@ -7,208 +7,208 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:logistics/trains#tracks)Tracks and Stations$()$(li2)$(l:logistics/trains#station)Creating your first train$()$(li2)$(l:logistics/trains#handcar)The Handcar$()$(li)$(bold)$(l:logistics/trains#cargo)Train Cargo$()$(li2)$(l:logistics/trains#loading)Loading & Unloading$()$(li2)$(l:logistics/trains#detecting)Detecting Cargo$()$(li)$(bold)$(l:logistics/trains#conductors)Conductors$()$(li2)$(l:logistics/trains#schedule)Automated Deliveries$()$(li2)$(l:logistics/trains#whistle)Conductor Whistle$()$(li2)$(l:logistics/trains#remote_lens)Remote Lens$()"
+			"text": "$(li)$(bold)$(l:logistics/trains#tracks)轨道与车站$()$(li2)$(l:logistics/trains#station)创建你的第一辆列车$()$(li2)$(l:logistics/trains#handcar)人力轨道车$()$(li)$(bold)$(l:logistics/trains#cargo)列车货运$()$(li2)$(l:logistics/trains#loading)装载与卸载$()$(li2)$(l:logistics/trains#detecting)检测货物$()$(li)$(bold)$(l:logistics/trains#conductors)列车长$()$(li2)$(l:logistics/trains#schedule)自动化运输$()$(li2)$(l:logistics/trains#whistle)列车指挥哨$()$(li2)$(l:logistics/trains#remote_lens)远程观测镜$()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)Fuel$()$(li2)$(l:logistics/trains#solid_fuel)Solid Fuel$()$(li2)$(l:logistics/trains#liquid_fuel)Liquid Fuel$()$(li)$(bold)$(l:logistics/trains#loco)Decorative Blocks$()$(li)$(bold)$(l:logistics/trains#seat)Seats$()$(li)$(bold)$(l:logistics/trains#signals)Train Signals$()$(li2)$(l:logistics/trains#semaphore)Semaphore$()$(li2)$(l:logistics/trains#switches)Track Switches$()$(li)$(bold)$(l:logistics/trains#coupler)Splitting Carriages$()$(li)$(bold)$(l:logistics/trains#buffer)Derailing$()"
+			"text": "$(li)$(bold)燃料$()$(li2)$(l:logistics/trains#solid_fuel)固体燃料$()$(li2)$(l:logistics/trains#liquid_fuel)液体燃料$()$(li)$(bold)$(l:logistics/trains#loco)装饰方块$()$(li)$(bold)$(l:logistics/trains#seat)坐垫$()$(li)$(bold)$(l:logistics/trains#signals)列车信号机$()$(li2)$(l:logistics/trains#semaphore)臂板信号机$()$(li2)$(l:logistics/trains#switches)转辙器$()$(li)$(bold)$(l:logistics/trains#coupler)分离车厢$()$(li)$(bold)$(l:logistics/trains#buffer)脱轨$()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(thing)Create$() has a powerful $(item)Train$() system for long distance transport of players, items, fluids, and everything else. These can be handy for across the wastelands or help you transport enormous amounts of materials, and most importantly, $(thing)can move through unloaded chunks$().$(br2)$(bold)Tip:$() If something is confusing, you can always hold $(thing)W$() while hovering over an item to view its $(thing)Ponder$()!"
+			"text": "$(thing)机械动力$()拥有一套强大的$(item)列车$()系统，可以长距离运输玩家、物品、流体乃至一切。无论是穿越荒野，还是搬运海量材料，它都十分顺手；最重要的是，它$(thing)可以在未加载的区块中移动$()。$(br2)$(bold)提示：$()如果有看不懂的地方，把鼠标悬停在物品上并按住$(thing)W$()，即可查看它的$(thing)思索$()！"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:create:tracks",
-			"title": "Train Tracks",
+			"title": "列车轨道",
 			"anchor": "tracks",
-			"text": "Laying paths to different locations will allow you to relocate your trains.$(br)Placing a track and $(item)$(k:key.use)$() it with $(item)Tracks$() in your hand allows you to place tracks quickly and create curved shapes.$(br)If you hold blocks (or Girders) in your off-hand, these will automatically be placed below any tracks."
+			"text": "铺设通往不同地点的线路，就能让你的列车往返其间。$(br)先放置一段轨道，然后$(item)$(k:key.use)$()它——手中拿着$(item)轨道$()时——即可快速铺轨并弯出曲线造型。$(br)如果你副手拿着方块（或金属梁），它们会自动被放置在轨道下方。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "create:track_station",
-			"title": "Your First Train",
+			"title": "你的第一辆列车",
 			"anchor": "station",
-			"text": "First, $(item)$(k:key.use)$() tracks with a $(item)Train Station$() to create an arrow on the tracks, which indicate the forward direction of the $(thing)Train$().$(br2)Next, place the $(item)Train Station$() beside the tracks to start creating your own $(thing)Trains$()!"
+			"text": "首先，$(item)$(k:key.use)$()轨道（此时手中拿着$(item)列车站点$()），即可在轨道上创建一个箭头，指示$(thing)列车$()的前进方向。$(br2)接着，把$(item)列车站点$()放在轨道旁，就可以开始打造你自己的$(thing)列车$()了！"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "In the $(thing)Train Station$() interface, press $(thing)Create new Train$() - this will project light blue spots on the tracks next to it.$(br2)Placing $(item)Train Casings$() on those spots will create a $(thing)Bogey$(). You can connect up to two bogeys with building blocks to form a $(thing)Carriage$(). Remember to use $(item)Superglue$()!"
+			"text": "在$(thing)列车站点$()界面中，按下$(thing)创建新列车$()——它会在旁边的轨道上投射出浅蓝色的点位。$(br2)在这些点位上放置$(item)列车机壳$()即可创建一个$(thing)转向架$()。你可以用建筑方块把最多两个转向架连接起来，组成一节$(thing)车厢$()。记得使用$(item)强力胶$()！"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Place $(item)Train Controls$() facing in the forwards direction of your train.$(br2)When you're finished, press $(thing)Assemble Train$() inside the station's interface, and your $(thing)Train$() is now functional! $(item)$(k:key.use)$() on the $(item)Train Controls$() and use your normal forwards and backwards movement keys to drive the train."
+			"text": "将$(item)列车驾驶台$()朝向列车前进的方向放置。$(br2)完成后，在站点界面中按下$(thing)组装列车$()，你的$(thing)列车$()就能开动了！$(item)$(k:key.use)$()$(item)列车驾驶台$()，再使用常规的前后移动键，即可驾驶列车。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Sadly, trains have some limitations. A single train contraption $(bold)cannot$() exceed $(thing)20 bogeys$() or be longer than $(thing)128 blocks$() - keep this in mind while designing your trains.$(br2)$(bold)Note:$() You can always change the limits in Create's config file, but remember that increasing the limit will use $(thing)more$() server resources."
+			"text": "遗憾的是，列车也有一些限制。单辆列车结构$(bold)不能$()超过$(thing)20个转向架$()，长度也不能超过$(thing)128格$()——设计列车时请牢记这一点。$(br2)$(bold)注意：$()你随时可以在机械动力的配置文件中修改这些上限，但请记住，提高上限会占用$(thing)更多$()的服务器资源。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "railways:handcar",
 			"anchor": "handcar",
-			"text": "The $(item)Handcar$() is a deployable train that allows you to move over rails! You can pick it up with a $(item)Wrench$() and move on. This can be a cheap and great way to quickly move around without building a full train."
+			"text": "$(item)人力轨道车$()是一种可部署的列车，让你能在铁轨上行进！用$(item)扳手$()就能把它收起来带走。这是一种廉价又好用的快速出行方式，无需建造整列火车。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "create:fluid_tank,create_connected:fluid_vessel,create:item_vault,create_connected:item_silo,createaddition:modular_accumulator,fluidlogistics:multi_fluid_tank,fluidlogistics:horizontal_multi_fluid_tank",
-			"title": "Train Cargo",
+			"title": "列车货运",
 			"anchor": "cargo",
-			"text": "$(item)Fluid Tanks$(), $(item)Item Vaults$(), and $(item)Accumulators$() can be placed on a $(thing)Train$() to transport items, fluids, and energy.$(br2)You will need to use their respective Interfaces in order to interact with the train, just like on other contraptions."
+			"text": "$(item)流体储罐$()、$(item)物品保险库$()和$(item)蓄电池$()都可以放置在$(thing)列车$()上，用来运输物品、流体和能量。$(br2)你需要使用它们对应的接口才能与列车交换内容，和其他装置一样。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "create:portable_fluid_interface,create:portable_storage_interface,createaddition:portable_energy_interface",
-			"title": "Loading and Unloading",
+			"title": "装载与卸载",
 			"anchor": "loading",
-			"text": "$(item)Portable interfaces$() allow you to move items between your trains and your storage. Placing a $(item)Portable Interface$() on the train and connecting it to a vault, fluid tank, or accumulator will allow you to move items, fluids, and energy on and off your train! The interfaces require a $(thing)two block gap$() between each other to work."
+			"text": "$(item)移动式接口$()让你能在列车和你的存储系统之间搬运物品。把一个$(item)移动式接口$()放在列车上，并与保险库、流体储罐或蓄电池相连，就能在列车与基地之间转移物品、流体和能量！两个接口之间需要相隔$(thing)两格$()才能正常工作。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "When the two interfaces are \"kissing\", they act as one connected interface, so pulling items out of a stationary interface with a chute will pull them out of the train, for example.$(br2)$(bold)Note:$() The Energy Interface will require a $(thing)GregTech Energy Converter$() in order to convert the FE to EU."
+			"text": "当两个接口相互「贴合」时，它们就像一个连通的接口一样工作——比如用溜槽从固定接口中抽出物品，就等于把它们从列车里抽了出来。$(br2)$(bold)注意：$()能量接口需要一个$(thing)GregTech 能量转换器$()才能把 FE 转换为 EU。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "create:track_observer",
-			"title": "Detecting Cargo",
+			"title": "检测货物",
 			"anchor": "detecting",
-			"text": "$(item)Train Observers$() can be used to detect the cargo transported by the $(thing)Train$(). By $(item)$(k:key.use)$() the $(item)Train Observer$() and placing it next to the tracks, you can filter the train cargo by placing an item on top of the block."
+			"text": "$(item)列车侦测器$()可以用来检测$(thing)列车$()运输的货物。$(item)$(k:key.use)$()$(item)列车侦测器$()并把它放在轨道旁，再在方块顶部放一个物品，即可筛选列车货物。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Once a train with the filtered cargo passes over the $(item)Train Observer$(), a redstone signal will be sent from the block!$(br2)$(bold)Tip:$() You can use filters to filter multiple items or fluids at once!"
+			"text": "一旦装载着被筛出货物的列车驶过$(item)列车侦测器$()，该方块就会发出红石信号！$(br2)$(bold)提示：$()你可以用过滤器一次筛选多种物品或流体！"
 		},
 		{
-			"title": "Conductors",
+			"title": "列车长",
 			"anchor": "conductors",
 			"type": "patchouli:spotlight",
 			"item": "tag:railways:conductor_caps",
-			"text": "It's time to automate your railway system! Placing a $(item)Metal Casing$() and $(item)$(k:key.use)$() it with a $(item)Conductor's Cap$() will spawn your own $(thing)Conductor$(). Cute, isn't it? You can move it around with a $(item)Lead$()."
+			"text": "是时候让你的铁路系统自动化了！放置一个$(item)金属机壳$()，然后$(item)$(k:key.use)$()它（手中拿着$(item)列车长帽$()），就会生成你自己的$(thing)列车长$()。很可爱，对吧？你可以用$(item)拴绳$()牵着它到处走。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Placing it next to a $(thing)Lever$() and looking at it will make it pull the lever, which is useful for $(l:logistics/trains#switches)Track Switches$().$(br2)You can also place it on a $(l:logistics/trains#seat)Seat$() in your train to use it as a driver.$(br2)Train drivers are not limited to Conductors! You can use any mob (such as an animal) on a seat or a $(item)Blaze Burner$() as a train driver."
+			"text": "把它放在$(thing)拉杆$()旁边并看向拉杆，它就会扳动拉杆——这对$(l:logistics/trains#switches)转辙器$()很有用。$(br2)你也可以把它放到列车的$(l:logistics/trains#seat)坐垫$()上，让它当司机。$(br2)列车司机并不限于列车长！任何生物（比如动物）都可以坐在坐垫上当司机，$(item)烈焰人燃烧室$()也可以。"
 		},
 		{
-			"title": "Automated Deliveries",
+			"title": "自动化运输",
 			"anchor": "schedule",
 			"type": "patchouli:spotlight",
 			"item": "create:schedule",
-			"text": "$(item)$(k:key.use)$() a $(item)Train Schedule$() in the air allows you to select the $(l:logistics/trains#station)Train Station$() to which the $(thing)Train$() should go and how long it needs to wait at a specific station."
+			"text": "在空中$(item)$(k:key.use)$()$(item)列车时刻表$()，即可选择$(l:logistics/trains#station)列车站点$()——也就是$(thing)列车$()要前往的站点——以及它在指定站点的等待时长。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "You can also select if the $(thing)Train$() should loop the route or stop at a specific point.$(br2)Giving your $(l:logistics/trains#conductors)Conductor$() a $(item)Train Schedule$() will turn it into a driver and make it ride your train between your $(thing)Train Stations$()."
+			"text": "你还可以选择$(thing)列车$()是循环路线，还是在特定站点停下。$(br2)给你的$(l:logistics/trains#conductors)列车长$()一张$(item)列车时刻表$()，它就会成为司机，驾驶你的列车往返于各个$(thing)列车站点$()之间。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "railways:conductor_whistle",
 			"anchor": "whistle",
-			"text": "The $(item)Conductor Whistle$() can be used to make a $(l:logistics/trains#conductors)Train Conductor$() move to a specific place on the tracks, ideal if you want to modify a working $(thing)Train$().$(br2)$(item)$(k:key.use)$() it on a $(thing)Conductor$() will bind the item to the conductor, and using $(item)$(k:key.use)$() on the tracks will move the $(thing)Train$() towards your selected spot."
+			"text": "$(item)列车指挥哨$()可以让$(l:logistics/trains#conductors)列车长$()移动到轨道上的指定位置，如果你想改造一辆正在运行的$(thing)列车$()，它会非常有用。$(br2)$(item)$(k:key.use)$()$(thing)列车长$()即可将该物品与其绑定，之后对着轨道$(item)$(k:key.use)$()，$(thing)列车$()就会朝你选定的位置驶去。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "If the $(thing)Train$() is not able to access the specified location, it will tell you so in the game chat.$(br2)Note: The $(item)Conductor Whistle$() will $(bold)override$() the $(l:logistics/trains#schedule)Train Schedule$() - if you wish for your $(thing)Conductor$() to continue its journey, you have to re-give it the $(item)Train Schedule$() by $(item)$(k:key.use)$() it $(thing)twice$() with an empty hand."
+			"text": "如果$(thing)列车$()无法到达指定位置，它会在游戏聊天中告诉你。$(br2)注意：$(item)列车指挥哨$()会$(bold)覆盖$()$(l:logistics/trains#schedule)列车时刻表$()——如果你想让$(thing)列车长$()继续旅程，就得重新把$(item)列车时刻表$()交给它：空手对它$(item)$(k:key.use)$()$(thing)两次$()即可。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "railways:remote_lens",
 			"anchor": "remote_lens",
-			"text": "Ever wondered where your $(thing)Train$() goes? Or did you lose it and cannot find it? Fear not!$(br)By giving your $(l:logistics/trains#conductors)Train Conductor$() $(item)Engineer's Goggles$() and a $(item)Remote Lens$(), you can now look from the perspective of the $(thing)Train Conductor$().$(br)$(item)$(k:key.use)$() the item on the $(thing)Train Conductor$() to bind it, and use the lens whenever you want to inspect your $(thing)Train$()!"
+			"text": "想知道你的$(thing)列车$()跑到哪儿去了吗？还是把它弄丢了找不到？别慌！$(br)给你的$(l:logistics/trains#conductors)列车长$()戴上$(item)工程师护目镜$()并给它$(item)远程观测镜$()，你就能以$(thing)列车长$()的视角观察了。$(br)$(item)$(k:key.use)$()该物品绑定到$(thing)列车长$()身上，之后随时可以使用透镜查看你的$(thing)列车$()！"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "minecraft:charcoal",
-			"title": "Fueling Your Train",
+			"title": "为列车加注燃料",
 			"anchor": "solid_fuel",
-			"text": "Your $(thing)Train$() can use Solid fuels to accelerate the train up to 50% faster! By supplying the $(thing)Train$() with any kind of $(item)burnable fuel$(), your train's speed will increase for 5 min per item."
+			"text": "你的$(thing)列车$()可以使用固体燃料，速度最高提升50%！给$(thing)列车$()提供任意一种$(item)可燃燃料$()，每件物品都能让列车加速5分钟。"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Liquid Train Fuel",
+			"title": "列车液体燃料",
 			"item": "railways:fuel_tank,railways:portable_fuel_interface",
 			"anchor": "liquid_fuel",
-			"text": "$(thing)Liquid fuels$() are way more energy dense compared to Solid fuels, but they require a bit more infrastructure. By placing a $(item)Fuel Tank$() on the Train and supplying it using the $(item)Fuel Interface$(), your $(thing)Train$() will consume 100mB of fuel and accelerate by 50%. Liquid fuels last $(thing)a lot$() longer compared to $(thing)items$()."
+			"text": "$(thing)液体燃料$()的能量密度远高于固体燃料，但需要多一些基础设施。把$(item)燃料罐$()放在列车上，并用$(item)燃料接口$()为其供料，你的$(thing)列车$()就会消耗100mB燃料并获得50%加速。液体燃料比$(thing)物品$()耐用$(thing)得多$()。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "For example, 100mB of Rocket Fuel lasts for $(thing)6 hours$(), which is $(thing)60 HOURS$() per bucket.$(br2)You can use $(item)Creosote$(), $(item)Syngas$(), $(item)Diesel$() and much more as fuel in your train. Are you unsure if your liquid classifies as a fuel? Try pumping it into a $(item)Fuel Tank$() - if the tank accepts the liquid, it can be used as fuel!"
+			"text": "例如，100mB火箭燃料能持续$(thing)6小时$()，也就是每桶$(thing)60小时$()！$(br2)$(item)杂酚油$()、$(item)合成气$()、$(item)柴油$()等等都可以作为列车燃料。不确定你的液体算不算燃料？试着把它泵进$(item)燃料罐$()——只要罐子肯收，它就能当燃料用！"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Steam Immersion",
+			"title": "蒸汽氛围",
 			"anchor": "loco",
 			"item": "tag:tfg:smokestacks,tag:railways:palettes/dye_groups/boiler",
-			"text": "Is your $(thing)Locomotive$() out of style? Fear Not! $(item)Locoboilers$() and $(item)Smokestacks$() are here to bring immersion to your railway system.$(br)$(item)Smokestacks$() create smoke particles indefinitely, while $(item)Locoboilers$() give you the possibility to build using $(item)round$() shapes.$(br)Both blocks are purely decorative."
+			"text": "觉得你的$(thing)火车头$()不够有范儿？别担心！$(item)机车锅炉$()和$(item)烟囱$()来了，为你的铁路系统增添沉浸感。$(br)$(item)烟囱$()会源源不断地冒出烟雾粒子，而$(item)机车锅炉$()则让你能用$(item)圆形$()造型进行建造。$(br)这两种方块都是纯装饰。"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Seats",
+			"title": "坐垫",
 			"anchor": "seat",
 			"item": "tag:create:seats",
-			"text": "$(item)Seats$() allow you to sit down while operating your train.$(br2)To prevent flying off the train while it's in motion, place a $(item)Seat$() on your $(thing)Train$() and remember to secure it with $(item)Superglue$()."
+			"text": "$(item)坐垫$()让你可以坐着驾驶列车。$(br2)为了防止列车行驶时被甩出去，请放置一个$(item)坐垫$()在你的$(thing)列车$()上，并记得用$(item)强力胶$()固定好。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "create:track_signal",
 			"anchor": "signals",
-			"title": "Collision Prevention",
-			"text": "$(thing)Train crashes$() are a serious problem while automating your railway system. A crash will derail a $(thing)Train$(), making it $(bold)Inoperable$(). Luckily you can prevent most crashes with a bit of infrastructure."
+			"title": "防止相撞",
+			"text": "在铁路系统自动化的过程中，$(thing)列车相撞$()是个严重的问题。一旦相撞，$(thing)列车$()就会脱轨，变得$(bold)无法运行$()。好在只需一些基础设施，就能避免大多数事故。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "railways:semaphore",
 			"anchor": "semaphore",
-			"text": "$(item)$(k:key.use)$() the $(item)Train Signal$() on the tracks before an intersection and place it down next to them, then you can detect when a $(thing)Train$() is moving over them!$(br2)You can place a $(item)Semaphore$() on top of a $(item)Train Signal$() facing the other track."
+			"text": "在路口前的轨道上$(item)$(k:key.use)$()$(item)列车信号机$()并把它放在轨道旁，就能检测$(thing)列车$()何时驶过！$(br2)你还可以把$(item)臂板信号机$()放在$(item)列车信号机$()顶部，并让它朝向另一条轨道。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Now when a $(thing)Train$() is moving over the intersection, the other track will be blocked and $(thing)Trains$() won't be able to pass, preventing a crash.$(br2)$(bold)Note:$() You can stack multiple $(item)Semaphores$() on top of each other and connect them to multiple $(thing)Train Signals$(), but this gets pretty complex. For more information, hold $(item)W$() while hovering over the $(item)Semaphore$() for a visualization of the functionality."
+			"text": "这样，当一列$(thing)列车$()驶过路口时，另一条轨道就会被封锁，$(thing)列车$()无法通过，从而避免相撞。$(br2)$(bold)注意：$()你可以把多个$(item)臂板信号机$()叠放在一起，连接多个$(thing)列车信号机$()，但这会变得相当复杂。欲知详情，可将鼠标悬停在$(item)臂板信号机$()上并按住$(item)W$()，即可查看其功能的可视化演示。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "railways:track_switch_andesite,railways:track_switch_brass",
-			"title": "Track Switches",
+			"title": "转辙器",
 			"anchor": "switches",
-			"text": "$(item)Track Switches$() can be used to switch tracks. $(item)$(k:key.use)$() the $(item)Track Switch$() on somea track and placing it next to it will allow you to switch Tracks!$(br2)$(item)$(k:key.use)$() the $(item)Track Switch$() switches the track towards the right side, while holding $(item)$(k:key.sneak)$() switches the $(item)Track Switch$() switches them towards the left side."
+			"text": "$(item)转辙器$()可以用来切换轨道。对着轨道$(item)$(k:key.use)$()$(item)转辙器$()并把它放在轨道旁，就可以切换轨道了！$(br2)直接$(item)$(k:key.use)$()$(item)转辙器$()会把轨道切向右侧，而按住$(item)$(k:key.sneak)$()再使用$(item)转辙器$()则会把轨道切向左侧。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "You can automate the process of switching tracks with Redstone. Supplying a redstone signal to the sides of the $(item)Track Switch$() will make it change the track direction depending on the side from where the signal was received."
+			"text": "你可以用红石把切换轨道的过程自动化。给$(item)转辙器$()的侧面供给红石信号，它就会根据接收信号的一侧来改变轨道方向。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(bold)Note:$() $(item)Track Switches$() change their orientation depending on their position to the track and the orientation of the player that placed it. Placing the $(item)Track Switch$() on the right-hand-side of the tracks while $(thing)FACING$() the tracks themselves will align them so the switch is aligned parallel with the tracks."
+			"text": "$(bold)注意：$()$(item)转辙器$()的朝向取决于它相对轨道的位置以及放置者的朝向。把$(item)转辙器$()放在轨道右侧、同时$(thing)面向$()轨道放置，它就会自动对齐，与轨道保持平行。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "railways:track_coupler",
 			"anchor": "coupler",
-			"title": "Splitting Carriages",
-			"text": "Does loading your goods take too much time? Did you ever just want to leave the empty $(thing)Carriage$() behind? Now you can! $(item)$(k:key.use)$() a $(item)Train Coupler$() on the tracks and place it next to them to spawn two $(thing)Nodes$() 5 blocks apart from each other."
+			"title": "分离车厢",
+			"text": "装载货物太费时间？有没有想过干脆把空的$(thing)车厢$()丢在原地？现在可以了！对着轨道$(item)$(k:key.use)$()$(item)车钩$()并把它放在轨道旁，就会生成两个相距5格的$(thing)节点$()。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "You can change the distance of the nodes by holding a wrench and hold-$(item)$(k:key.use)$() on the $(item)Train Coupler's$() top-side. Powering the $(item)Train Coupler$() with a redstone signal while two separate $(thing)Carriages$() are above the Nodes will cause the carriages to split! They won't be connected any more and your $(thing)Train$() is free to go wherever it wants. Do you want to connect them back? You can do it by repeating the same steps!"
+			"text": "手持扳手长按$(item)$(k:key.use)$()$(item)车钩$()的顶部，可以调整两个节点之间的距离。当给$(item)车钩$()通入红石信号、而两节独立的$(thing)车厢$()分别位于节点上方时，车厢就会分离开来！它们不再相连，你的$(thing)列车$()从此可以各行其道。想把它们重新连上？重复同样的步骤即可！"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "railways:buffer",
 			"anchor": "buffer",
-			"title": "Track Buffers",
-			"text": "Using $(item)Track Buffers$() can prevent derailing of your $(thing)Trains$()! Placing them on the end of an unfinished track or at the outer-ends of your track will remove the possibility for your $(thing)Train$() to derail."
+			"title": "轨道挡车器",
+			"text": "使用$(item)轨道挡车器$()可以防止你的$(thing)列车$()脱轨！把它们放在未完工轨道的尽头或轨道的两端，你的$(thing)列车$()就没有脱轨的可能了。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "It happens to the best of us. You accidentally break the tracks or your $(thing)Train$() somehow escaped your tracks, or two trains collided with each other. And now it's $(bold)Derailed$().$(br2)Luckily there is an easy fix for that! $(item)$(k:key.use)$() your train with a $(item)Create Wrench$() to select it and then $(item)$(k:key.use)$() on the tracks to place it back."
+			"text": "谁都会有失手的时候。你不小心挖断了轨道，或者$(thing)列车$()不知怎么冲出了轨道，又或者两辆列车撞在了一起——现在它$(bold)脱轨$()了。$(br2)好在解决办法很简单！$(item)$(k:key.use)$()你的列车（手持$(item)机械动力扳手$()）选中它，再对着轨道$(item)$(k:key.use)$()把它放回去。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Did you place the train facing the wrong direction? You can select it again and place it down while facing the other direction, which will make it flip around!"
+			"text": "列车放反方向了？你可以重新选中它，然后面朝另一方向放置，它就会掉头！"
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "延伸阅读",
 			"anchor": "relations",
 			"entries": [
 				"tfg:logistics/tack",

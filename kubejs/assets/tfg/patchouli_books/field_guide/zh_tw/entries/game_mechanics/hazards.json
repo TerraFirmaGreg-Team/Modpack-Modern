@@ -57,14 +57,14 @@
 				"tag": "tfg:medicine"
 			},
 			"anchor": "medicine",
-			"text": "萬一你嚴重暴露於危害之中，有一些$(item)藥物$()可以幫助你康復。$(br2)基本的$(item)藥片$()最原始也最容易製作，但大多數都有$(thing)負面副作用$()。$(item)膠囊$()和$(item)藥膏$()效果更好且副作用較少，但製作它們需要$(thing)LV 設備$()和更進階的資源。"
+			"text": "萬一你嚴重暴露於危害之中，有一些$(item)藥物$()可以幫助你康復。$(br2)基本的$(item)藥片$()最原始也最容易製作，但大多數都有$(thing)負面副作用$()。$(item)膠囊$()和$(item)藥膏$()效果更好且副作用較少，但製作它們需要$(7)LV$()$(thing) 設備$()和更進階的資源。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "消輻寧™藥片",
 			"item": "tfg:rad_away_pill",
 			"anchor": "rad_away",
-			"text": "$(item)所有$() 危害的 $(item)終極$() 藥物，也是對抗 $(item)輻射$() 的 $(item)唯一$() 解藥。然而也是製作起来最 $(thing)昂貴$() 且 $(thing)困難$()的藥物，需要 $(thing)HV設備$() 和高級材料。"
+			"text": "$(item)所有$() 危害的 $(item)終極$() 藥物，也是對抗 $(item)輻射$() 的 $(item)唯一$() 解藥。然而也是製作起來最 $(thing)昂貴$() 且 $(thing)困難$()的藥物，需要 $(6)HV$()$(thing)設備$() 和高級材料。"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -73,7 +73,7 @@
 				"tag": "minecraft:beds"
 			},
 			"anchor": "respawn",
-			"text": "如果其他方法都失敗了，帶一張床用來重生是個好主意。$(br2)如果你沒有$(item)羊毛$()或$(item)線$()，也可以製作$(thing)茅草床$()。"
+			"text": "如果其他方法都失敗了，帶一張床用來重生是個好主意。$(br2)如果你沒有$(item)羊毛$()或$(item)線$()，也可以製作$(thing)乾草床$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -164,7 +164,7 @@
 			"title": "放射性物質",
 			"item": "gtceu:uranium_ingot",
 			"anchor": "radioactive_materials",
-			"text": "大多數$(thing)放射性物質$()，例如$(thing)鈾 238$()，要到$(thing)EV 等級$()或更高才會遇到。它們會讓你$(item)永久受到輻射$()。少量暴露會導致發光，但長時間接觸則會迅速引發$(bold)死亡$()。$(br)我們知道它看起來很美味，熱量還高達十億大卡，但$(#ff0000)拜託不要吃鈾！$()"
+			"text": "大多數$(thing)放射性物質$()，例如$(thing)鈾 238$()，要到$(5)EV$()$(thing) 等級$()或更高才會遇到。它們會讓你$(item)永久受到輻射$()。少量暴露會導致發光，但長時間接觸則會迅速引發$(bold)死亡$()。$(br)我們知道它看起來很美味，熱量還高達十億大卡，但$(#ff0000)拜託不要吃鈾！$()"
 		},
 		{
 			"type": "patchouli:spotlight",

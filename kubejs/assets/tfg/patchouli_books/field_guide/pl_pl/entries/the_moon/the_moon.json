@@ -409,18 +409,28 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Any $(item)solid block$() will work to build your base out of, but you'll want a proper airlock to ensure the gas doesn't all escape in a $(thing)vortex$(). When combined with a $(item)Heat Pump$(), the enclosed space will become inhabitable, letting you take your helmet off, grow crops and place a water source without it freezing.$(br2)Energy consumption scales off of room size so make sure to give the appropriate energy hatch to your distributor."
+			"text": "Any $(item)solid block$() will work to build your base out of, but you'll want a proper airlock to ensure the gas doesn't all escape in a $(thing)vortex$(). When combined with a $(item)Heat Pump$(), the enclosed space will become inhabitable, letting you take your helmet off, grow crops and place a water source without it freezing.$(br2)$(o)(Continued on next page...)$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:ultimet\"}},gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:vanadium\"}},gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:rocket_alloy_t1\"}},gtceu:turbine_rotor{GT.PartStats:{Material:\"tfg:rene_41\"}}",
+			"title": "Turbine Rotor",
+			"text": "$(item)Kratka wentylacyjna$() jest traktowana jak pełny blok, ale przepuszcza powietrze zdatne do oddychania, nie powodując zaburzeń."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "The Turbine Rotor will $(thing)never lose durability$() when inserted in an $(item)Exhaust Vent$(), and any Rotor can work. At this point we recommend using R-Aluminosteel or Ultimet.$(br2)Energy consumption scales off of room size so make sure to give the appropriate energy hatch to your distributor and use better Turbine Rotors as you progress."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "ad_astra:vent",
-			"text": "$(item)Kratka wentylacyjna$() jest traktowana jak pełny blok, ale przepuszcza powietrze zdatne do oddychania, nie powodując zaburzeń."
+			"text": "The $(item)Vent$() is a solid block that can also let breathable air through without causing a vortex."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:ad_astra:sliding_doors",
-			"title": "Drzwi przesuwne",
-			"text": "You will want to set up a proper $(thing)airlock system$() between your base's insides and the vacuum of space. Other normal doors will work, but these 3x3 doors are very thematically appropriate for a high-tech moon base. They can be automated with a $(item)pressure plate$() as usual.$(br2)$(bold)Tip:$() You can also use these doors for cleanrooms!"
+			"title": "Sliding Doors",
+			"text": "$(item)Kosmiczne obrazy$() świetnie nadają się do ozdobienia bazy motywami kosmicznymi. A jeśli tęsknisz za domem, możesz powiesić sobie wielki obraz Ziemi."
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -438,7 +448,7 @@
 			"type": "patchouli:spotlight",
 			"anchor": "death",
 			"item": "tag:minecraft:beds",
-			"title": "Śmierć poza ziemią",
+			"title": "Extraterrestrial Death",
 			"text": "In $(tfg_short), you can set your spawn on any dimension with a bed (even $(l:beneath/beneath)The Beneath$()!), but unless you've got a bunch of extra space suits lying around, respawning on the Moon might complicate things."
 		},
 		{
@@ -452,7 +462,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Czytaj dalej",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_moon/preparations",

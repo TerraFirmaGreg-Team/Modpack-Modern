@@ -11,7 +11,7 @@
         {
             "type": "tfg:anvil_recipe",
             "recipe": "tfc:anvil/bismuth_bronze_fish_hook",
-            "text": "First, you have to forge a fishing hook in an $(l:craftsmanship/anvils)Anvil$()."
+            "text": "Для начала, тебе нужно выковать рыболовный крючок на $(l:craftsmanship/anvils)Наковальне$()."
         },
         {
             "type": "patchouli:crafting",
@@ -21,11 +21,11 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Fishing rods are not useful without bait. $(t:#tfc:small_fishing_bait)$(6)Bait$() can be added to rods in a crafting table. To catch normal fish, you need $(thing)Seeds$() or $(thing)Shellfish$(). To catch $(t:#tfc:large_fishing_bait)$(6)larger fish$(), such as $(thing)Dolphins$() and $(thing)Orcas$(), you need $(item)cod$(), $(item)salmon$(), $(item)tropical fish$(), or $(item)bluegills$()."
+            "text": "Удочки бесполезны без наживки. \n$(t:#tfc:small_fishing_bait)$(6)Наживку$() можно прицепить к удочке на верстаке. Чтобы поймать обычную рыбу, тебе понадобятся $(thing)Семена$() или $(thing)Ракообразные$(). Чтобы поймать $(t:#tfc:large_fishing_bait)$(6)более крупную рыбу$(), например $(thing)Дельфинов$() и $(thing)Косаток$(), тебе понадобится $(item)треска$(), $(item)лосось$(), $(item)тропическая рыба$(), или $(item)синежаберник$()."
         },
         {
             "type": "patchouli:text",
-            "text": "To release the bobber, $(item)$(k:key.use)$(). Wait for a fish to spot the hook and bite it. Then $(item)$(k:key.use)$() to pull it in. As you do that, the meter on your hotbar will fill up. Pull too quickly, and the fish will get away with the bait. Each time you fish, the fish has a chance of eating the bait. To catch the fish, pull it up on land and kill it with a tool or catch it with a $(l:agriculture/fishing#fishing_net)Fishing Net$(). You can hold the fishing rod in your offhand to make this easier."
+            "text": "Зашвырнуть поплавок можно при помощи $(item)$(k:key.use)$(). Подожди пока рыба увидит крючок и клюнет. Потом притяни её при помощи $(item)$(k:key.use)$(). Когда ты сделаешь это, шкала на твоей панели быстрого доступа начнёт заполняться. Если будешь тянуть слишком быстро, то рыба уйдёт вместе с наживкой. Чтобы поймать рыбу, вытяни её на сущу и забей её, либо поймай её $(l:agriculture/fishing#fishing_net)Рыболовной сетью$(). Удочку можно держать во второй руке чтобы это было проще."
         },
         {
             "type": "patchouli:image",
@@ -42,7 +42,7 @@
             "item": {
                 "tag": "forge:tools/fishing_nets"
             },
-            "text": "Tired of hunting down fish with spears? Or losing a floppy catch while fishing? Craft a $(thing)Fishing Net$() to scoop up your dinner.$(br)To use a fishing net; $(item)$(k:key.use)$() on a fish entity to capture the fish into your inventory. Different tier fishing nets all act the same, but have different durability."
+            "text": "Устал от рыбалки копьём? Или от слишком брыкливого улова? Смастери $(thing)Рыболовную сеть$() чтобы загребать себе ужин.$(br)Использовать рыболовную сеть можно при помощи $(item)$(k:key.use)$() по рыбе(сущности) чтобы поймать её себе в инвентарь. Сети разных тиров ведут себя одинаково, но имеют разную прочность."
         },
         {
             "type": "patchouli:crafting",
@@ -52,7 +52,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Дальнейшее чтение",
+            "title": "Дополнительно",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/cooking_methods",

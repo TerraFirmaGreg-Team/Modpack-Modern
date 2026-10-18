@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:agriculture/papermaking#papyrus)紙莎草紙$()$(li2)$(l:agriculture/papermaking#papyrus)1. 紙莎草條$()$(li2)$(l:agriculture/papermaking#soaked_papyrus_strip)2. 浸泡過的紙莎草條$()$(li2)$(l:agriculture/papermaking#unrefined_paper)3. 粗紙$()$(li)$(bold)$(l:agriculture/papermaking#parchment)羊皮紙$()$(li2)$(l:agriculture/papermaking#treated_hide)1. 處理過的毛皮$()$(li2)$(l:agriculture/papermaking#treated_hide)2. 羊皮紙$()$(li)$(bold)$(l:agriculture/papermaking#paper_from_wood)木漿紙$()$(li2)$(l:agriculture/papermaking#hardwood_strip)1. 硬木條$()$(li2)$(l:agriculture/papermaking#soaked_hardwood_strip)2. 浸泡硬木條$()$(li2)$(l:agriculture/papermaking#breaking_down_the_pulp)3. 分解紙漿$()$(li2)$(l:agriculture/papermaking#pressing_the_pulp)4. 壓製紙漿$()$(li2)$(l:agriculture/papermaking#drying_the_paper)5. 乾燥紙張$()"
+            "text": "$(li)$(bold)$(l:agriculture/papermaking#papyrus)紙莎草紙$()$(li2)$(l:agriculture/papermaking#papyrus)1. 紙莎草條$()$(li2)$(l:agriculture/papermaking#soaked_papyrus_strip)2. 浸泡過的紙莎草條$()$(li2)$(l:agriculture/papermaking#unrefined_paper)3. 粗紙$()$(li)$(bold)$(l:agriculture/papermaking#parchment)羊皮紙$()$(li2)$(l:agriculture/papermaking#treated_hide)1. 處理過的獸皮$()$(li2)$(l:agriculture/papermaking#treated_hide)2. 羊皮紙$()$(li)$(bold)$(l:agriculture/papermaking#paper_from_wood)木漿紙$()$(li2)$(l:agriculture/papermaking#hardwood_strip)1. 硬木條$()$(li2)$(l:agriculture/papermaking#soaked_hardwood_strip)2. 浸泡硬木條$()$(li2)$(l:agriculture/papermaking#breaking_down_the_pulp)3. 分解紙漿$()$(li2)$(l:agriculture/papermaking#pressing_the_pulp)4. 壓製紙漿$()$(li2)$(l:agriculture/papermaking#drying_the_paper)5. 乾燥紙張$()"
         },
         {
             "type": "patchouli:text",
@@ -33,7 +33,7 @@
             "anchor": "unrefined_paper",
             "title": "粗紙",
             "recipe": "tfc:loom/unrefined_paper",
-            "text": "接著，在$(l:agriculture/weaving#loom)織機$()上將浸泡過的紙莎草條編織在一起，製成$(thing)粗紙$()。最後，必須將它放在原木上$(l:agriculture/leather_making#scraping)刮製$()，才能做成$(thing)紙$()。"
+            "text": "接著，在$(l:agriculture/weaving#loom)紡織機$()上將浸泡過的紙莎草條編織在一起，製成$(thing)粗紙$()。最後，必須將它放在原木上$(l:agriculture/leather_making#scraping)刮製$()，才能做成$(thing)紙$()。"
         },
         {
             "type": "patchouli:text",
@@ -44,9 +44,9 @@
         {
             "type": "patchouli:crafting",
             "anchor": "treated_hide",
-            "title": "處理過的毛皮",
+            "title": "處理過的獸皮",
             "recipe": "tfc:crafting/large_treated_hide",
-            "text": "將浮石、錘子和刮過的毛皮一起合成，可以得到數份$(thing)處理過的毛皮$()。"
+            "text": "將浮石、錘子和刮過的毛皮一起合成，可以得到數份$(thing)處理過的獸皮$()。"
         },
         {
             "type": "patchouli:crafting",
@@ -87,9 +87,9 @@
         {
             "type": "tfg:quern_recipe",
             "recipe": "tfg:quern/soaked_hardwood_strip",
-            "title": "硬木漿",
+            "title": "硬木木漿",
             "anchor": "hardwood_pulp",
-            "text": "之後，使用$(l:craftsmanship/quern)手推磨$()將浸泡過的木條分解成$(item)硬木漿$()。"
+            "text": "之後，使用$(l:craftsmanship/quern)手推磨$()將浸泡過的木條分解成$(item)硬木木漿$()。"
         },
         {
             "type": "patchouli:crafting",
@@ -112,7 +112,7 @@
             "item": {
                 "tag": "firmalife:stomping_barrels"
             },
-            "text": "用鹼液煮沸分解後，$(item)熱化學處理硬木漿$()可以壓製成一張$(item)浸濕的粗紙$()。你可以在$(l:cooking/alcohol#grape_smashing)踩踏木桶$()中將處理過的硬木漿踩成薄片，或使用$(l:craftsmanship/anvils)鐵砧$()。"
+            "text": "用鹼液煮沸分解後，$(item)熱化學處理硬木木漿$()可以壓製成一張$(item)浸濕的粗紙$()。你可以在$(l:cooking/alcohol#grape_smashing)踩踏木桶$()中將處理過的硬木木漿踩成薄片，或使用$(l:craftsmanship/anvils)鐵砧$()。"
         },
         {
             "type": "tfg:drying_recipe",

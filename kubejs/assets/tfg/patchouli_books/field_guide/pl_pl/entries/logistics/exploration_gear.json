@@ -21,14 +21,14 @@
             "anchor": "safety_boots",
             "title": "Buty ochronne",
             "item": "sns:steel_toe_hiking_boots,sns:black_steel_toe_hiking_boots,sns:red_steel_toe_hiking_boots,sns:blue_steel_toe_hiking_boots",
-            "text": "Various steels can be integrated into your hiking boots to give them an increase in protection. $(thing)Blue and Red Steel$() hiking boots provide additional environmental protection from extreme temperatures."
+            "text": "Buty górskie można wzmocnić różnymi rodzajami stali, aby zapewniały lepszą ochronę. Buty górskie z $(thing)niebieskiej i czerwonej stali$() dodatkowo chronią przed skrajnymi temperaturami otoczenia."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "canes",
             "title": "Laski",
             "item": "tfccanes:walking_cane,tfccanes:refined_walking_cane",
-            "text": "$(thing)Walking Canes$() provide a similar effect to hiking boots but must be held in the hand. Their step height effect can even stack with hiking boots, allowing you to auto-step up even 2-block tall walls."
+            "text": "$(thing)Laski$() działają podobnie do butów górskich, ale trzeba trzymać je w dłoni. Zwiększenie wysokości kroku zapewniane przez laskę kumuluje się z efektem butów górskich, dzięki czemu można automatycznie wchodzić nawet na ściany wysokie na 2 bloki."
         },
         {
             "type": "patchouli:spotlight",

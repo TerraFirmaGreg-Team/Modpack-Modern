@@ -6,45 +6,45 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:agriculture/papermaking#papyrus)Papyrus Paper$()$(li2)$(l:agriculture/papermaking#papyrus)1. Papyrus Strips$()$(li2)$(l:agriculture/papermaking#soaked_papyrus_strip)2. Soaked Papyrus Strips$()$(li2)$(l:agriculture/papermaking#unrefined_paper)3. Unrefined Paper$()$(li)$(bold)$(l:agriculture/papermaking#parchment)Parchment Paper$()$(li2)$(l:agriculture/papermaking#treated_hide)1. Treated Hide$()$(li2)$(l:agriculture/papermaking#treated_hide)2. Parchment Paper$()$(li)$(bold)$(l:agriculture/papermaking#paper_from_wood)Wood Pulp Paper$()$(li2)$(l:agriculture/papermaking#hardwood_strip)1. Hardwood Strips$()$(li2)$(l:agriculture/papermaking#soaked_hardwood_strip)2. Soaking Hardwood Strips$()$(li2)$(l:agriculture/papermaking#breaking_down_the_pulp)3. Breaking Down the Pulp$()$(li2)$(l:agriculture/papermaking#pressing_the_pulp)4. Pressing the Pulp$()$(li2)$(l:agriculture/papermaking#drying_the_paper)5. Drying the Paper$()"
+            "text": "$(li)$(bold)$(l:agriculture/papermaking#papyrus)莎草纸$()$(li2)$(l:agriculture/papermaking#papyrus)1. 纸莎草条$()$(li2)$(l:agriculture/papermaking#soaked_papyrus_strip)2. 浸泡纸莎草条$()$(li2)$(l:agriculture/papermaking#unrefined_paper)3. 粗制纸$()$(li)$(bold)$(l:agriculture/papermaking#parchment)羊皮纸$()$(li2)$(l:agriculture/papermaking#treated_hide)1. 处理兽皮$()$(li2)$(l:agriculture/papermaking#treated_hide)2. 羊皮纸$()$(li)$(bold)$(l:agriculture/papermaking#paper_from_wood)木浆纸$()$(li2)$(l:agriculture/papermaking#hardwood_strip)1. 硬木条$()$(li2)$(l:agriculture/papermaking#soaked_hardwood_strip)2. 浸泡硬木条$()$(li2)$(l:agriculture/papermaking#breaking_down_the_pulp)3. 打碎纸浆$()$(li2)$(l:agriculture/papermaking#pressing_the_pulp)4. 压制纸浆$()$(li2)$(l:agriculture/papermaking#drying_the_paper)5. 晾干纸张$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introduction",
-            "text": "$(thing)Paper$() is either made from the processed stalk of the $(l:the_world/wild_crops#papyrus)Papyrus$() crop, from $(l:agriculture/papermaking#parchment)Animal Hides$(), or from a lengthy process using specific types of $(l:agriculture/papermaking#paper_from_wood)Wood$(). Paper is useful for many things―like $(item)Backpacks$() and $(item)Nametags$()―but most importantly it is required for progression into the $(thing)Electric Age$()!"
+            "title": "简介",
+            "text": "$(thing)纸$()可以用$(l:the_world/wild_crops#papyrus)纸莎草$()作物的茎秆加工制成，可以用$(l:agriculture/papermaking#parchment)兽皮$()制成，也可以用特定种类的$(l:agriculture/papermaking#paper_from_wood)木材$()经过一长串工序制成。纸的用途很多，比如做$(item)背包$()和$(item)命名牌$()，但最重要的是，想要迈进$(thing)电气时代$()就离不开它！"
         },
         {
             "type": "patchouli:crafting",
             "anchor": "papyrus",
-            "title": "Paper from Papyrus",
+            "title": "用纸莎草造纸",
             "recipe": "tfc:crafting/papyrus_strips",
-            "text": "Paper can be directly sourced from the $(l:https://en.wikipedia.org/wiki/Papyrus)Papyrus$() crop. Papyrus must first be cut into strips with a $(thing)Knife$()..."
+            "text": "纸可以直接取自$(l:https://en.wikipedia.org/wiki/Papyrus)纸莎草$()作物。首先要用$(thing)刀$()把纸莎草切成条……"
         },
         {
             "type": "tfg:sealed_barrel_recipe",
             "anchor": "soaked_papyrus_strip",
-            "title": "Soaked Papyrus Strip",
+            "title": "浸泡纸莎草条",
             "recipe": "tfc:barrel/soaked_papyrus_strip",
-            "text": "Then, papyrus strips are soaked in a $(l:craftsmanship/barrels)Barrel$() of $(thing)Water$()."
+            "text": "然后，把纸莎草条放进一个$(l:craftsmanship/barrels)大桶$()的$(thing)水$()中浸泡。"
         },
         {
             "type": "tfg:loom_recipe",
             "anchor": "unrefined_paper",
-            "title": "Unrefined Paper",
+            "title": "粗制纸",
             "recipe": "tfc:loom/unrefined_paper",
-            "text": "Then, soaked papyrus strips are woven together in a $(l:agriculture/weaving#loom)Loom$() to make $(thing)Unrefined Paper$(). Finally, it must be placed on a log and $(l:agriculture/leather_making#scraping)Scraped$() to make $(thing)Paper$()."
+            "text": "接着，把浸泡过的纸莎草条放在$(l:agriculture/weaving#loom)织布机$()上编织成$(thing)粗制纸$()。最后，把它放到原木上$(l:agriculture/leather_making#scraping)刮制$()，就能得到$(thing)纸$()。"
         },
         {
             "type": "patchouli:text",
             "anchor": "parchment",
-            "text": "$(thing)Parchment Paper$() starts with a $(l:agriculture/leather_making#scraping)Scraped Hide$(). Parchment requires treatment with a few different items. First, $(thing)Pumice$() is needed. Pumice is found on the ground near $(l:the_world/geology)Volcanoes$(), rarely from $(l:craftsmanship/panning)Panning$(), or from raiding the chests of locals.",
+            "text": "$(thing)羊皮纸$()要从一张$(l:agriculture/leather_making#scraping)刮制兽皮$()做起。羊皮纸需要用几种不同的物品来处理。首先需要$(thing)浮石$()。浮石可以在$(l:the_world/geology)火山$()附近的地面找到，偶尔能通过$(l:craftsmanship/panning)淘金$()获得，也可以从当地居民的箱子里搜刮。",
             "title": "羊皮纸"
         },
         {
             "type": "patchouli:crafting",
             "anchor": "treated_hide",
-            "title": "Treated Hide",
+            "title": "处理兽皮",
             "recipe": "tfc:crafting/large_treated_hide",
             "text": "将浮石、刮制兽皮与一把锤合成就能得到$(thing)糊化兽皮$()。"
         },
@@ -52,13 +52,13 @@
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/parchment",
             "anchor": "parchment_paper",
-            "title": "Parchment Paper",
-            "text": "Treated hide, $(l:craftsmanship/glassworking#lime_and_potash)lime powder$(), flour, and a fresh egg will complete the treatment process and yield usable paper."
+            "title": "羊皮纸",
+            "text": "用处理过的兽皮、$(l:craftsmanship/glassworking#lime_and_potash)石灰粉$()、面粉和一个新鲜的鸡蛋完成最后的处理，就能得到可用的纸。"
         },
         {
             "type": "patchouli:text",
             "anchor": "paper_from_wood",
-            "text": "$(thing)Creating Paper from Wood$() is an ancient process that requires processing of sturdy types of wood into sheets, which are broken down into a pulp, and then pressed, dried and scraped to make paper.$(br2)Note that softer types of wood are not suitable for making paper, only $(t:#tfg:hardwood)$(6)Hardwoods$() can produce paper.",
+            "text": "$(thing)用木材造纸$()是一门古老的工艺：先把结实的木材加工成薄片，再把薄片打碎成纸浆，然后经过压制、晾干和刮制，做成纸。$(br2)注意，较软的木材不适合造纸，只有$(t:#tfg:hardwood)$(6)硬木$()才能用来造纸。",
             "title": "木材造纸"
         },
         {
@@ -68,42 +68,42 @@
             "item": {
                 "tag": "tfg:stripped_hardwood"
             },
-            "text": "The process begins by stripping the $(t:#tfg:hardwood)$(6)Hardwood's$() bark off to expose the internal fibers of the log, You can strip the log by placing it down and $(item)$(k:key.use)$() it with an axe."
+            "text": "这道工序从剥去$(t:#tfg:hardwood)$(6)硬木$()的树皮开始，露出原木内部的纤维。把原木放置后，用斧头对它$(item)$(k:key.use)$()即可剥皮。"
         },
         {
             "type": "patchouli:crafting",
-            "title": "Hardwood Strip",
+            "title": "硬木条",
             "anchor": "hardwood_strip",
             "recipe": "tfg:crafting/strip_hardwood",
-            "text": "Next, the stripped wood is shaven with an axe to obtain $(item)Hardwood Strips$(). This can be done using an Axe or more sophisticated methods later."
+            "text": "接着，用斧头把剥好的木材削出$(item)硬木条$()。这一步可以用斧头完成，之后也会有更先进的做法。"
         },
         {
             "type": "tfg:sealed_barrel_recipe",
-            "title": "Soaked Hardwood Strip",
+            "title": "浸泡硬木条",
             "anchor": "soaked_hardwood_strip",
             "recipe": "tfg:barrel/soak_hardwood_strip",
-            "text": "Then, the individual strips are soaked in a $(l:craftsmanship/barrels)Barrel$() of $(thing)Water$(). This $(thing)debilitates the structural integrity$() of the $(thing)wood$() so it can be $(thing)broken down further$()."
+            "text": "然后，把一根根硬木条放进一个$(l:craftsmanship/barrels)大桶$()的$(thing)水$()中浸泡。这会$(thing)削弱$()$(thing)木材$()的结构强度，让它可以被$(thing)进一步打碎$()。"
         },
         {
             "type": "tfg:quern_recipe",
             "recipe": "tfg:quern/soaked_hardwood_strip",
-            "title": "Hardwood Pulp",
+            "title": "硬木浆",
             "anchor": "hardwood_pulp",
-            "text": "Afterward, utilize the $(l:craftsmanship/quern)Quern$() to break down the soaked strips into $(item)Hardwood Pulp$()."
+            "text": "随后，用$(l:craftsmanship/quern)手推磨$()把浸泡过的硬木条磨碎成$(item)硬木浆$()。"
         },
         {
             "type": "patchouli:crafting",
             "recipe": "gtceu:shaped/small_dust_assembling_hardwood",
             "title": "纸浆堆叠",
             "anchor": "piling_up_the_pulp",
-            "text": "While the quern gives you small piles of pulp, you'll want to combine them together in a $(thing)Workbench$(). More advanced methods of crushing the strips yield higher amounts of pulp."
+            "text": "手推磨每次只能磨出少量的纸浆，你需要把它们放到$(thing)工作台$()上合并起来。用更先进的方式碾碎硬木条，能获得更多的纸浆。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "gtceu:thermochemically_treated_hardwood_dust",
             "title": "纸浆分解",
             "anchor": "breaking_down_the_pulp",
-            "text": "Before the pulp can be processed further into paper, it needs to be broken down further by $(thing)Boiling it with Lye$() in a $(l:cooking/cooking_methods#vat)Vat$() or a $(l:cooking/cooking_methods#pot)Pot$()."
+            "text": "在纸浆能进一步加工成纸之前，还需要$(thing)加碱液煮沸$()——把它放进$(l:cooking/cooking_methods#vat)铁锅$()或$(l:cooking/cooking_methods#pot)陶锅$()里，做进一步的分解。"
         },
         {
             "type": "patchouli:spotlight",
@@ -112,22 +112,22 @@
             "item": {
                 "tag": "firmalife:stomping_barrels"
             },
-            "text": "After broken down by boiling it with Lye, the $(item)Thermochemically Treated Hardwood Pulp$() can be pressed down into a sheet of $(item)Soaked Unrefined Paper$(). You can stomp the treated hardwood pulp in a $(l:cooking/alcohol#grape_smashing)Stomping Barrel$() into sheets, or you can use an $(l:craftsmanship/anvils)Anvil$()."
+            "text": "加碱液煮沸分解之后，$(item)热化学处理硬木浆$()就可以压成一张$(item)浸泡粗制纸$()。你可以把处理好的硬木浆放进$(l:cooking/alcohol#grape_smashing)踩踏盆$()里踩成薄片，也可以用$(l:craftsmanship/anvils)砧$()来压。"
         },
         {
             "type": "tfg:drying_recipe",
             "recipe": "tfg:drying/unrefined_paper",
             "anchor": "drying_the_paper",
-            "text": "The final step is $(l:cooking/decay#drying)Drying$() the $(item)Soaked Unrefined Paper$() into $(item)Unrefined Paper$(), Which then can be Scraped into $(item)Paper$() as shown before."
+            "text": "最后一步是$(l:cooking/decay#drying)晾干$()$(item)浸泡粗制纸$()，使其成为$(item)粗制纸$()，随后像前面那样刮制成$(item)纸$()。"
         },
         {
             "type": "patchouli:text",
             "title": "简化步骤...？",
-            "text": "Advancing in the Tech-Tree will allow you to create paper from wood with less overall steps, check $(emi) for the different approaches you can take for making paper with wood."
+            "text": "随着科技树的推进，你可以用更少的步骤从木材造纸。用木材造纸的各种不同途径，请查看 $(emi)。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/animal_husbandry",

@@ -431,11 +431,11 @@ client:
     # 3 - left-bottom corner
     # 4 - right-bottom corner
     # Default: 1
-    hudLocation: 4
+    hudLocation: 2
 
     # Horizontal offset of HUD.
     # Default: 0
-    hudOffsetX: 3
+    hudOffsetX: 60
 
     # Vertical offset of HUD.
     # Default: 0

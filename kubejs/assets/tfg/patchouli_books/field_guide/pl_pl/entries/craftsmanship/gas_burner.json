@@ -1,12 +1,12 @@
 {
-    "name": "Gazowy palnik",
+    "name": "Palnik gazowy",
     "category": "tfg:craftsmanship",
     "icon": "tfg:gas_burner",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Gazowy palnik",
+            "title": "Palnik gazowy",
             "text": "A $(thing)Gas Burner$() is a device which can burn fluids and gases like $(thing)Oil$(), $(l:cooking/alcohol)Alcohol$(), and $(thing)Petroluem Fuels$() to generate $(l:game_mechanics/heating)Heat$().$(br)Unlike other heat sources, the maximum Temperature of the burner can be set using $(l:craftsmanship/gas_burner#redstone)Redstone$(). This allows for more precise control over $(l:cooking/cooking_methods)Cooking$() and $(l:craftsmanship/crucible)Smelting$().$(br)The gas burner does not increase in temperature from a $(l:craftsmanship/charcoal_forge#bellows)Bellows'$() air supply."
         },
         {
@@ -24,7 +24,7 @@
                     "X": "tfg:gas_burner[lit=true]"
                 }
             },
-            "name": "Gazowy palnik",
+            "name": "Palnik gazowy",
             "text": "$(thing)Palniki gazowe$() pokazują maksymalną temperaturę na wskaźniku na jednej ze ścianek.",
             "enable_visualize": false
         },
@@ -64,7 +64,7 @@
                 }
             },
             "name": "",
-            "text": "$(thing)Palnik gazowy$() z tygielem",
+            "text": "$(thing)Palnik gazowy$() z tyglem",
             "enable_visualize": false
         },
         {

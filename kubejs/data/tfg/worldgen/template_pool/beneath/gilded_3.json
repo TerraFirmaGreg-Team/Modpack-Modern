@@ -1,12 +1,12 @@
 {
-	"name": "tfg:beneath/outpost",
+	"name": "tfg:beneath/tower_start_pool",
 	"fallback": "minecraft:empty",
 	"elements": [
 		{
-			"weight": 1,
+			"weight": 100,
 			"element": {
-				"location": "tfg:beneath/outpost",
-				"processors": "minecraft:empty",
+				"location": "tfg:beneath/tower/3/gilded",
+				"processors": "tfg:beneath/tower/3/gilded",
 				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
 			}

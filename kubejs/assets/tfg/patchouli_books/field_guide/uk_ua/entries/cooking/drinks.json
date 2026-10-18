@@ -7,7 +7,7 @@
 			"type": "patchouli:text",
 			"title": "Індекс",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:cooking/drinks#alcohol)Алкоголь$()\n$(li2)$(l:cooking/drinks#aged_alcohol)Витриманий алкоголь$()\n$(li2)$(l:cooking/drinks#vintage_alcohol)Вінтажний алкоголь$()\n$(li2)$(l:cooking/drinks#table)Таблиця впливу алкоголю$()\n$(li2)$(l:cooking/drinks#wine)Вино$()\n$(li)$(bold)$(l:cooking/drinks#milk)Молоко$()\n$(li)$(bold)$(l:cooking/drinks#spring_water)Джерельна вода$()\n$(li)$(bold)$(l:cooking/drinks#sea_water)Морська вода$()\n$(li)$(bold)$(l:cooking/drinks#muddy_water)Брудна вода$()\n$(li)$(bold)$(l:cooking/drinks#juice)Фруктовий сік$()\n$(li)$(bold)$(l:cooking/drinks#yogurt)Йогурт$()\n$(li)$(bold)$(l:cooking/drinks#smoothie)Фруктовий смузі$()\n$(li)$(bold)$(l:cooking/drinks#ice_slush)Крижана крихта$()"
+			"text": "$(li)$(bold)$(l:cooking/drinks#alcohol)Алкоголь$()$(li2)$(l:cooking/drinks#aged_alcohol)Витриманий алкоголь$()$(li2)$(l:cooking/drinks#vintage_alcohol)Вінтажний алкоголь$()$(li2)$(l:cooking/drinks#table)Таблиця впливу алкоголю$()$(li2)$(l:cooking/drinks#wine)Вино$()$(li)$(bold)$(l:cooking/drinks#milk)Молоко$()$(li)$(bold)$(l:cooking/drinks#spring_water)Джерельна вода$()$(li)$(bold)$(l:cooking/drinks#sea_water)Морська вода$()$(li)$(bold)$(l:cooking/drinks#muddy_water)Брудна вода$()$(li)$(bold)$(l:cooking/drinks#juice)Фруктовий сік$()$(li)$(bold)$(l:cooking/drinks#yogurt)Йогурт$()$(li)$(bold)$(l:cooking/drinks#smoothie)Фруктовий смузі$()$(li)$(bold)$(l:cooking/drinks#ice_slush)Крижана крихта$()"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -151,7 +151,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(n)$(2)$(t:Квапливість 5:20)Червоне вино$()\n$(li)$(n)$(2)$(t:Опір висушуванню 5:20)Біле вино$()\n$(li)$(n)$(2)$(t:Швидкість плавання 5:20)Рожеве вино$()\n$(li)$(n)$(2)$(t:Підсилення стрибка II 5:20)Ігристе вино$()\n$(li)$(n)$(2)$(t:Стійкість 5:20)Десертне вино$()"
+			"text": "$(li)$(n)$(2)$(t:Haste 5:20)Червоне вино$()$(li)$(n)$(2)$(t:Wither Resistance 5:20)Біле вино$()$(li)$(n)$(2)$(t:Swim Speed 5:20)Рожеве вино$()$(li)$(n)$(2)$(t:Jump Boost II 5:20)Ігристе вино$()$(li)$(n)$(2)$(t:Knockback Resistance 5:20)Десертне вино$()"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -183,7 +183,7 @@
 		},
 		{
 			"title": "Фруктовий сік",
-			"text": "$(thing)Фруктовий сік$() — чудовий спосіб перетворити фрукти на їжу з довшим терміном зберігання. Фруктовий сік дає $(l/food_and_water#quenching_transient_effect)ефект втамування спраги$(), який допомагає втамувати спрагу.$(br2)Фруктовий сік з часом псується.$()",
+			"text": "$(thing)Фруктовий сік$() — чудовий спосіб перетворити фрукти на їжу з довшим терміном зберігання. Фруктовий сік дає $(l:cooking/food_and_water#quenching_transient_effect)ефект втамування спраги$(), який допомагає втамувати спрагу.$(br2)Фруктовий сік з часом псується.$()",
 			"type": "patchouli:spotlight",
 			"anchor": "juice",
 			"item": "tfg:food/juice"
