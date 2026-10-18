@@ -376,7 +376,7 @@
     "quests.extreme_voltage.tungsten_rotor.subtitle": "I'm not just a name",
     "quests.extreme_voltage.tungsten_rotor.desc": "The &bTungsten-Bismuth Oxide Composite Rotor&r is not only known for its long name but also for being an incredibly powerful &eTurbine Rotor&r. It does come with several drawbacks: it is slow to craft, has very poor &aDurability&r, and even worse &bEfficiency&r. However, for a relatively straightforward crafting process, it may still be worth considering.\n\nWe recommend using it as your first &eTurbine Rotor&r on &4Mars&r inside your &eNuclear Turbines&r.",
 
-    "quests.extreme_voltage.mo_si_b.subtitle": "Is that harder than the NaqLine?",
+    "quests.extreme_voltage.mo_si_b.subtitle": "Is it harder than the NaqLine?",
     "quests.extreme_voltage.mo_si_b.desc": "This is your third &eExotic Turbine Rotor&r and definitely the hardest one to obtain. As usual, we will not explain the process, and you will have to rely on EMI to navigate this complex production chain. Keep in mind that looping materials is particularly important for this one.\n\nIn terms of stats, you will not find anything better until much later in the &1IV&r chapter, making it a potentially valuable investment, although it remains entirely optional.",
 
     "quests.extreme_voltage.rocket_t2_rotor.subtitle": "Natural upgrade",
@@ -391,5 +391,5 @@
     "quests.space_survival.mineral_rich_wool.desc": "Once your Sniffers or Wraptors are familiar enough, you can shear them for mineral-rich tufts of fur or feathers. (This can be automated with a Deployer holding Shears.)\n\nThese can be melted down in an EBF for an infinite and cheap source of Alkaline Earth Silicate, and are also a required component of &6Bio-AES Reinforced R-Polyurethane Foam.",
 
     "quests.extreme_voltage.higgs_emitter.subtitle": "Artificial gravity",
-    "quests.extreme_voltage.higgs_emitter.description": "The &6Higgs Emitter&r allows you to create artificial earth gravity in a radius around itself. The area size scales off of the multiblock's energy hatch tier.\n\n",
+    "quests.extreme_voltage.higgs_emitter.description": "The &6Higgs Emitter&r allows you to create artificial earth gravity in a radius around itself. The area size scales off of the multiblock's energy hatch tier. Make sure to have a $(item)Zip Gun$() on you if you want to create a Zero-G environment."
 }
