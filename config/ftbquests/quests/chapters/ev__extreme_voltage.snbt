@@ -1550,11 +1550,24 @@
 			}]
 			shape: "heart"
 			subtitle: "{quests.extreme_voltage.building_gadgets.subtitle}"
-			tasks: [{
-				id: "621C750FCD93D1BC"
-				item: "buildinggadgets2:gadget_building"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "621C750FCD93D1BC"
+					item: "buildinggadgets2:gadget_building"
+					type: "item"
+				}
+				{
+					id: "3EA2E989F820876A"
+					item: {
+						Count: 1
+						id: "matter_manipulator:matter_manipulator_mki"
+						tag: {
+							MatterManipulator: { }
+						}
+					}
+					type: "item"
+				}
+			]
 			title: "{quests.extreme_voltage.building_gadgets.title}"
 			x: 1.5d
 			y: 1.0d
@@ -2591,6 +2604,26 @@
 			}]
 			x: 23.5d
 			y: 4.5d
+		}
+		{
+			dependencies: ["236F53188110F6D5"]
+			id: "321F8E326EDF54F6"
+			optional: true
+			shape: "heart"
+			subtitle: "TEMPORARY RECIPE"
+			tasks: [{
+				id: "28C4FF2914499A02"
+				item: {
+					Count: 1
+					id: "matter_manipulator:matter_manipulator_mkii"
+					tag: {
+						MatterManipulator: { }
+					}
+				}
+				type: "item"
+			}]
+			x: 13.0d
+			y: 1.0d
 		}
 	]
 	subtitle: ["{quests.extreme_voltage.subtitle}"]
