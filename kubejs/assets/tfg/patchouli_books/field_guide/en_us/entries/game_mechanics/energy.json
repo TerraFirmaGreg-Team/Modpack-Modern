@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:game_mechanics/energy#introduction)First Steps$()$(li2)$(l:cooking/decay#calculation)Calculating Decay$()$(li2)$(l:cooking/decay#table)Modifier Table$()$(li)$(bold)$(l:cooking/decay#vessels)Vessels$()$(li)$(bold)$(l:cooking/decay#cooking)Cooking$()$(li)$(bold)$(l:cooking/decay#smoking)Smoking$()$(li)$(bold)$(l:cooking/decay#salting)Salting$()$(li)$(bold)$(l:cooking/decay#vinegar)Pickling$()$(li)$(bold)$(l:cooking/decay#drying)Drying$()"
+            "text": "$(li)$(bold)$(l:game_mechanics/energy#introduction)First Steps$()$(li2)$(l:game_mechanics/energy#power_basics_1)The Basic of EU$()$(li2)$(l:game_mechanics/energy#power_basics_2)More about Tier$()$(li2)$(l:game_mechanics/energy#power_basics_3)More about Amp$()$(li)$(bold)$(l:game_mechanics/energy#generating_power)Generating Power$()$(li)$(bold)$(l:game_mechanics/energy#moving_power)Moving Power$()$(li)$(bold)$(l:cooking/decay#salting)Salting$()$(li)$(bold)$(l:cooking/decay#vinegar)Pickling$()$(li)$(bold)$(l:cooking/decay#drying)Drying$()"
         },
         {
             "type": "patchouli:text",
@@ -32,15 +32,36 @@
         },
         {
             "type": "patchouli:text",
-            "anchor": "power_basics_2",
+            "anchor": "power_basics_3",
             "title": "More about Amp",
-            "text": "Let's go back to Amp, as we were saying 1 Amp (or 1A) is the maximum EU of a tier in one packet. So 1A LV equels 32 EU, most recipes will require on average 1A. "
+            "text": "Let's go back to Amp, as we were saying 1 Amp (or 1A) is the maximum EU of a tier in one packet. So 1A LV equals 32 EU, most recipes will require on average 1A, but sometimes they will cost less so it's always useful to check the cost of your recipe.$(br2)Also know that if a machine has its Energy Buffer over 50% it will ask for 1A but whenver it goes under 50% it will ask for 2A. This will be important when we explain cables."
         },
         {
 			"type": "patchouli:spotlight",
-			"title": "Generatin Power",
+            "anchor": "generating_power",
+			"title": "Generating Power",
 			"item": "gtceu:lv_steam_turbine,gtceu:lv_combustion,gtceu:lv_gas_turbine",
 			"text": "Initially you will have acces to three kind of generators. Each of them will only work with a specific list of fuels.$(br2)You can see their lists through EMI but we advised you to look at the Energy Chapter in the Quests to see the progression and more details for each of them."
-		}
+		},
+        {
+			"type": "patchouli:spotlight",
+            "anchor": "moving_power",
+			"title": "Moving Power",
+			"item": "gtceu:tin_single_cable,gtceu:tin_double_cable,gtceu:nickel_single_cable,gtceu:nickel_double_cable,gtceu:cobalt_single_cable,gtceu:cobalt_double_cable",
+			"text": "Moving Power is a bit different. Each cables also have a Tier and will burn if transfering an higher tier. But they also have a maximum Amp capacity and will burn if carrying more. For example a 1x Tin Cable will burn if carrying more that 1A LV so if you machine asks for 2A (if under 50%) it will automatically burn the cable."
+		},
+        {
+			"type": "patchouli:text",
+            "anchor": "moving_power_2",
+			"item": "gtceu:tin_single_cable,gtceu:tin_double_cable,gtceu:nickel_single_cable,gtceu:nickel_double_cable,gtceu:cobalt_single_cable,gtceu:cobalt_double_cable",
+			"text": "Moving energy around in GregTech can be tricky as $(thing)most cables are lossy$(). For every block, for every amp, you might lose energy as it travels through your wires. But don’t worry, there is solutions:"
+        },
+        {
+			"type": "patchouli:text",
+            "anchor": "moving_power_2",
+			"item": "gtceu:tin_single_cable,gtceu:tin_double_cable,gtceu:nickel_single_cable,gtceu:nickel_double_cable,gtceu:cobalt_single_cable,gtceu:cobalt_double_cable",
+			"text": "• Cover your wires with rubber. By doing so, you'll significantly reduce energy loss over distance.$(br2)• Use higher-tier cables. Platinum cables, for example, only lose 1 EU per block - practically nothing when compared to the 8192 EU it can carry."
+        }
+        
     ]
 }
