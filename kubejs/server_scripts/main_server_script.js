@@ -269,6 +269,7 @@ ServerEvents.recipes(event => {
 	registerHotOrNotRecipes(event)
 	registerImmersiveAircraftRecipes(event)
 	registerJelliesRecipes(event)
+	registerMatterManipulatorRecipes(event)
 	registerMacawsForTFCRecipes(event)
 	registerMeasurementsRecipes(event)
 	registerMegaCellsRecipes(event)
