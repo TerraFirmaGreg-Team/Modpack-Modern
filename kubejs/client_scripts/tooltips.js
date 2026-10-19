@@ -438,6 +438,9 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['#tfc:fired_vessels'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "3,024"))
 	})
+	event.addAdvanced(['tfg:electric_flask'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "4,000"))
+	})
 	event.addAdvanced(['waterflasks:iron_flask', 'waterflasks:red_steel_flask'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "2,000"))
 	})
@@ -565,7 +568,7 @@ const registerTooltips = (event) => {
 	// Electical Flask
 
 	event.addAdvanced('tfg:electric_flask', (item, advanced, text) => {
-      text.add(1, Text.translate('tfg.item.electric_flask.tooltip_1'));
+      text.add(3, Text.translate('tfg.item.electric_flask.tooltip_1'));
 	  text.add(2, Text.translate('tfg.item.electric_flask.tooltip_2'));
     })
 

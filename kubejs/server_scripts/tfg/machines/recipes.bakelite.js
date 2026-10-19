@@ -51,13 +51,6 @@ function registerTFGBakeliteRecipes(event) {
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	event.recipes.gtceu.chemical_reactor("tfg:sodium_hydroxide_from_water")
-		.itemInputs("#forge:dusts/sodium")
-		.inputFluids(Fluid.of("minecraft:water", 1000))
-		.itemOutputs("3x #forge:dusts/sodium_hydroxide")
-		.duration(400)
-		.EUt(GTValues.VA[GTValues.LV])
-
 	event.recipes.gtceu.mixer('tfg:bakelite_wood')
 		.inputFluids('tfg:phenolic_resin 144')
 		.itemInputs('tfg:treated_chipboard_composite')
