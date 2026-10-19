@@ -2,8 +2,10 @@
 
 ## Unreleased
 ### Changes
+- Added another way to craft sodium hydroxide instead of just the TFC way @TomPlop
 ### Bug fixes
-- Red and Blue Scythe are back, sorry @TomPlop
+- Red and Blue Steel non-electric scythes are back, sorry @TomPlop
+- Fixed crucibles sometimes turning single metals into 1mB of unknown
 
 ## [0.13.13] - 18-10-2026
 Be sure to check the changelog of the previous two [alpha](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.11) [releases](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.12) too! 
