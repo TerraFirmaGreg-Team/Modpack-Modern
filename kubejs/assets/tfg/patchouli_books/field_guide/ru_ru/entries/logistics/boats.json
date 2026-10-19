@@ -123,7 +123,7 @@
             "type": "patchouli:text",
             "title": "Плавание под парусами",
             "anchor": "sailing",
-            "text": "Unlike ships that you may be used to, sailing is a skill with Firma: Civilization. When you're piloting a sailing vessel, a new UI element will appear showing the wind speed and direction, as well as the boat's speed. The color of the wind arrow will indicate the difficulty of sailing in that direction. Use your forward and backward movement keys to set the angle of the sails, and experiment to find the best one for the wind angle."
+            "text": "Unlike ships that you may be used to, sailing is a skill with Firma: Civilization. When you're piloting a sailing vessel, a new UI element will appear showing the wind speed and direction, as well as the boat's speed. The color of the wind arrow will indicate the difficulty of sailing in that direction. Use your $(item)$(k:key.forward)$() and $(item)$(k:key.back)$() movement keys to loosen or tighten the $(thing)Boom$(), while $(item)$(k:key.left)$() and $(item)$(k:key.right)$() control the $(thing)Rudder$()."
         },
         {
             "type": "patchouli:image",
@@ -578,9 +578,13 @@
             "text": "Building the hull is only the first step. Next, look for the blue hammer icon and $(item)$(k:key.use)$() to add the items that show next to your crosshair.$(br)For a full list of materials, you will need:$(li)6 Scaffold Slabs$(li)18 Scaffold Stairs$(li)116 Hardwood Plank Blocks$(li)96 Copper Bolts$(li)4 Cleats$(li)34 Hardwood Stripped Logs$(li)1 Medium Sail$(li)1 Small Sail$(li)16 Lumber$(li)1 Anchor$(li)8 Rope"
         },
         {
+            "type": "patchouli:text",
+            "text": "As the sloop is powered by wind instead of manually, the way you control it is different from the other ships.$(br2)You will need to learn how to $(l:logistics/boats#sailing)Sail$() and $(l:https://w.wiki/dVq$)Tack$() against the wind, how to use $(l:logistics/boats#anchors)an anchor$(), and put your $(l:logistics/boats#sails)sails$() up and down."
+        },
+        {
             "type": "patchouli:spotlight",
             "anchor": "cannons",
-            "title": "Пушки",
+            "title": "Cannons",
             "item": "firmaciv:cannon,alekiships:cannonball",
             "text": "Cannons! Who doesn't want cannons? These powerful weapons of naval warfare can be placed on sloops, as well as on land, and are the best way to destroy your enemy's vessels, dealing far more damage to ships than any alternative."
         },
@@ -592,7 +596,7 @@
         },
         {
             "type": "text",
-            "text": "Вам также понадобятся пушечные ядра, выкованные из двойных слитков кованого железа, а также порох, грубая бумага и огниво, чтобы выстрелить из пушки. Графический элемент интерфейса будет отображать статус пушки. Вы можете поднимать оружие пушки, нажав $(item)$(k:key.use)$(), и опускать, если будете красться и нажмете $(item)$(k:key.use)$()."
+            "text": "You'll also need cannonballs, smithed from Wrought Iron Double Ingots, as well as Gunpowder, Unrefined Paper and a Flint and Steel in order to fire a cannon. A UI element will indicate the status of the cannon. You can angle a cannon up by pressing $(item)$(k:key.use)$() and down by crouching and pressing $(item)$(k:key.use)$()."
         },
         {
             "type": "patchouli:relations",

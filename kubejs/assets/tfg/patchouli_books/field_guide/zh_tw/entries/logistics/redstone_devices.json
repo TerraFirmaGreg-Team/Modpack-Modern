@@ -71,7 +71,7 @@
 			"anchor": "morered",
 			"item": "morered:red_alloy_wire,morered:bundled_network_cable",
 			"title": "更多紅石",
-			"text": "想用紅石做更多事嗎？看看$(item)More Red$()模組提供了什麼，例如可以貼在牆壁和天花板上、而且訊號強度不會衰減的導線。$(br2)在$(emi)中輸入$(6)@morered$()即可查看所有內容。"
+			"text": "想用紅石做更多事嗎？看看$(item)More Red(更多紅石)$()模組提供了什麼，例如可以貼在牆壁和天花板上、而且訊號強度不會衰減的導線。$(br2)在$(emi)中輸入$(6)@morered$()即可查看所有內容。"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -121,7 +121,7 @@
 			"anchor": "cover",
 			"title": "機器覆蓋板",
 			"item": "gtceu:machine_controller_cover",
-			"text": "$(thing)GregTech 覆蓋板$()可以直接裝在你的機器上，其中很多都會以某種方式與紅石互動。例如，$(item)機器控制覆蓋板$()可以在接收到紅石訊號時關閉機器。"
+			"text": "$(thing)GregTech(格雷科技) 覆蓋板$()可以直接裝在你的機器上，其中很多都會以某種方式與紅石互動。例如，$(item)機器控制覆蓋板$()可以在接收到紅石訊號時關閉機器。"
 		},
 		{
 			"type": "patchouli:relations",

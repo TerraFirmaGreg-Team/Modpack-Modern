@@ -77,21 +77,21 @@
 			"type": "patchouli:spotlight",
 			"item": "tfg:heat_pump",
 			"anchor": "heat_pump",
-			"text": "當你能夠$(thing)利用電力$()後，就可以製作$(item)熱泵$()，這是一種多方塊結構，能為大得多的建築加熱或降溫。"
+			"text": "當你取得$(b)MV$()$(thing) 電路$()後，就可以製作$(item)熱泵$()，這是一種多方塊結構，能為大得多的建築加熱或降溫。$(br2)你還需要在$(item)排氣口$()中裝入渦輪轉子，熱泵才能運作。$(br2)$(o)(下頁續……)$()"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:turbine_rotor{GT.PartStats:{Material:\"tfg:silicon_carbide_silicon_carbide\"}},gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:vanadium\"}},gtceu:turbine_rotor{GT.PartStats:{Material:\"tfg:rene_41\"}}",
-			"title": "延伸閱讀",
-			"text": "The $(item)Turbine Rotor$() inserted in your Exhaust Vent will never lose durability, therefore it's a stat you can ignore. On the other hand, the Turbine's $(thing)Power$() will influence the discount you get on the $(thing)EU/t requirement$()."
+			"title": "渦輪轉子",
+			"text": "裝在排氣口中的$(item)渦輪轉子$()永遠不會損耗耐久度，所以這項數值可以忽略。另一方面，渦輪的$(thing)功率$()會影響你在$(thing)EU/t 需求$()上獲得的折扣。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "At this point in the game, the easiest solution is a $(item)Vanadium Rotor$(), but you could also go for the $(item)René-41 Rotor$() or the $(item)SiC-SiC Rotor$().$(br2)$(bold)Tip:$() The Heat Pump will still work even if your doors are open, but otherwise needs an enclosed area of non-air blocks to work.$(br2)$(italic)If the Turbine's $(thing)Power$() is under 100%, you will gain no benefits or drawbacks.$()"
+			"text": "在遊戲的這個階段，最簡單的選擇是$(item)釩渦輪轉子$()，但你也可以選用$(item)René-41 渦輪轉子$()或$(item)SiC-SiC 渦輪轉子$()。$(br2)$(bold)提示：$()即使門是開著的，熱泵仍然可以運作；除此之外，它需要一個由非空氣方塊圍成的封閉區域才能運作。$(br2)$(italic)如果渦輪的$(thing)功率$()低於 100%，就不會有任何增益或減益。$()"
 		},
 		{
 			"type": "tfg:multimultiblock",
-			"text": "You can expand the Heat Pump up to 10 Heat Pipes if needed!",
+			"text": "如有需要，熱泵最多可以擴充到 10 根熱管！",
 			"name": " ",
 			"enable_visualize": true,
 			"multiblocks": [
@@ -442,7 +442,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "延伸閱讀",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/climate",

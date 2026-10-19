@@ -19,7 +19,7 @@
             "anchor": "papyrus",
             "title": "Papier z papirusu",
             "recipe": "tfc:crafting/papyrus_strips",
-            "text": "Papier można pozyskać bezpośrednio z uprawy $(l:https://en.wikipedia.org/wiki/Papyrus)papirusu$(). Papirus trzeba najpierw pociąć na paski za pomocą $(thing)noża$()..."
+            "text": "Papier można pozyskać bezpośrednio z uprawy $(l:the_world/wild_crops#papyrus)papirusu$(). Papirus trzeba najpierw pociąć na paski za pomocą $(thing)noża$()..."
         },
         {
             "type": "tfg:sealed_barrel_recipe",
