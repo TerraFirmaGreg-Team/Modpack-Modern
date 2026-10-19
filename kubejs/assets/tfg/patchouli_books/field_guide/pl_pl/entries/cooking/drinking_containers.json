@@ -75,6 +75,15 @@
                     "text": "∞"
                 },
                 {
+                    "text": "Elektryczna manierka"
+                },
+                {
+                    "text": "4000"
+                },
+                {
+                    "text": "∞"
+                },
+                {
                     "text": "Krzemionkowa butelka"
                 },
                 {
@@ -108,7 +117,7 @@
                     "text": "400"
                 },
                 {
-                    "text": "4%"
+                    "text": "∞"
                 },
                 {
                     "text": "Kolba borokrzemiankowa"
@@ -144,7 +153,7 @@
             "columns": 2,
             "first_column_width": 90,
             "column_width": 72,
-            "row_height": 10,
+            "row_height": 9,
             "left_buffer": 2,
             "top_buffer": 12,
             "draw_background": false
@@ -159,6 +168,12 @@
             "title": "Wyciskarka",
             "recipe": "beneath:crafting/juicer",
             "text": "$(item)Wyciskarka$() to specjalne narzędzie, które wyciska wodę zawartą w $(thing)owocach$(), $(thing)grzybach$() i $(thing)kaktusach$() i umożliwia jej picie."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "electric_flask",
+            "item": "tfg:electric_flask",
+            "text": "Similar to a $(l:logistics/exploration_gear#digger_helmet)Digger Helmet$(), the $(item)Electric Flask$() will automatically drink for you when you're thirsty. Unlike the digger helmet, it works with any drinkable fluid!$(br2)It requires charging to work, though you can still drink from it manually if the charge runs out. It also holds $(thing)4,000mB$() of fluid."
         },
         {
             "type": "patchouli:relations",

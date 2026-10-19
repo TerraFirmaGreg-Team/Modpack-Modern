@@ -1,23 +1,23 @@
 {
-    "name": "Composting",
+    "name": "堆肥化",
     "category": "tfg:agriculture",
     "icon": "tfc:composter",
     "pages": [
         {
             "type": "patchouli:text",
-            "title": "Index",
+            "title": "目次",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:agriculture/composting#compostables)Compostables$()$(li2)$(l:agriculture/composting#green_compost)Green Compost$()$(li2)$(l:agriculture/composting#brown_compost)Brown Compost$()$(li2)$(l:agriculture/composting#compost_poisons)Rotten Compost$()$(li)$(bold)$(l:agriculture/composting#compost_tumbler)Compost Tumbler$()"
+            "text": "$(li)$(bold)$(l:agriculture/composting#compostables)堆肥化可能なもの$()$(li2)$(l:agriculture/composting#green_compost)グリーン材t$()$(li2)$(l:agriculture/composting#brown_compost)ブラウン材$()$(li2)$(l:agriculture/composting#compost_poisons)腐った堆肥$()$(li)$(bold)$(l:agriculture/composting#compost_tumbler)コンポストタンブラー$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Intro to Composting",
-            "text": "Composting is an essential process for making fertilizer. It needs both $(2)\"Green\"$() and $(4)\"Brown\"$() organics to work. Different items contribute more to the amount of compost produced than others. To add an item to a composter, $(item)$(k:key.use)$() the block while holding a valid item. The items that can be added are described on later pages."
+            "title": "コンポスト入門",
+            "text": "コンポスターは肥料を作るのに欠かせない道具です。使用するには、$(2)緑$()のアイテムと$(4)茶$()のアイテムの両方が必要です。さまざまな品目は、他の品目よりも堆肥の生産量に大きく貢献します。アイテムを追加するには、$(item)$(k:key.use)$()を押します。追加できるアイテムについては後のページで説明します。"
         },
         {
             "type": "patchouli:text",
-            "text": "Composters operate better in certain conditions. Composters that have a block of snow on top work slightly faster. Composters in regions of $(6)<150mm$() or $(3)>350mm$() of rainfall operate much slower, with that effect getting stronger closer to the maximum and minimum rainfall. Also, composters that are touching other composters work slower."
+            "text": "コンポスターは特定の条件下でより良く動作します。上部に雪のブロックがあるコンポスターは、わずかに速く動作します。降水量が$(6)150mm未満$()または$(3)350mmを超える$()地域では、コンポスターの動作が大幅に遅くなり、その影響は最大降水量と最小降水量に近づくにつれて大きくなります。また、他のコンポスターに触れているコンポスターの動作は遅くなります。"
         },
         {
             "type": "tfg:multimultiblock",
@@ -66,34 +66,34 @@
         },
         {
             "type": "patchouli:text",
-            "text": "The composter takes 6 days to complete in average conditions. When it is ready, it will have a dirt-like color and gray particles will be emitted from the top of it. The compost can then be retrieved with $(item)$(k:key.sneak) + $(k:key.use)$() with an empty hand. Adding things like $(c)meat$() and $(c)bones$() to compost spoils it, turning it reddish and causing it to emit gross particles. When this rotten compost is used on a crop, it instantly kills it. Which can be helpful for $(l:agriculture/growing_crops)Duplicating Seeds$() from mature plants!"
+            "text": "コンポスターは平均的な条件で完成するまでに6日かかります。出来上がると土のような色になり、上から灰色の粒子が出てきます。その後、素手で$(item)$(k:key.sneak)と$(k:key.use)$()を使用し堆肥を取得できます。$(c)肉$()や$(c)骨$()などを堆肥に加えると堆肥が腐り、赤くなり、ひどい粒子が放出されます。腐った堆肥は、良質な堆肥と同じ方法で取り出すことができます。作物に使用すると即座に枯らしてしまいます。これは、成熟した植物から$(l:agriculture/growing_crops)種を増やす$()際に役立つことがあります！"
         },
         {
             "type": "patchouli:text",
-            "title": "Compostables",
+            "title": "堆肥化可能なもの",
             "anchor": "compostables",
-            "text": "Compostables are seperated by quality. Lows provide a value of 1, Mediums 2, Highs 4.$(li)$(l)$(2)Green$():$(li2)$(l)$(t:#tfc:compost_greens_low)Low:$() Basic plants and saplings.$(li2)$(l)$(t:#tfc:compost_greens)Medium:$() $(l:cooking/food_and_water#grain)Grains$(), moss blocks, mushroom blocks.$(li2)$(l)$(t:#tfc:compost_greens_high)High:$() $(l:cooking/food_and_water#vegetables)Vegetables$() and $(l:cooking/food_and_water#vegetables)Fruits$().$(li)$(l)$(4)Brown$():$(li2)$(l)$(t:#tfc:compost_browns_low)Low:$() Vines.$(li2)$(l)$(t:#tfc:compost_browns)Medium:$() Wood ash, fibers, anemone.$(li2)$(l)$(t:#tfc:compost_browns_high)High:$() Humus, dead grass, driftwood."
+            "text": "堆肥化可能な物は品質別に分類されます。「低」は1、「中」は2、「高」は4ポイント分になります。$(li)$(l)$(2)グリーン材$():$(li2)$(l)$(t:#tfc:compost_greens_low) 低：$() 基本的な植物や苗木。$(li2)$(l)$(t:#tfc:compost_greens)中：$() $(l:cooking/food_and_water#grain)穀物$()、コケブロック、キノコブロック。$(li2)$(l)$(t:#tfc:compost_greens_high) 高：$() $(l:cooking/food_and_water#vegetables)野菜$() および $(l:cooking/food_and_water#vegetables)果物$()。$(li)$(l)$(4)ブラウン材$():$(li2)$(l)$(t:#tfc:compost_browns_low) 低：$() つる植物。$(li2)$(l)$(t:#tfc:compost_browns)中：$() 木灰、繊維、イソギンチャク。$(li2)$(l)$(t:#tfc:compost_browns_high)高：$() 腐葉土、枯れ草、流木。"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Green Compost",
+            "title": "グリーン材",
             "anchor": "green_compost",
             "item": "tfg:universal_compost_greens,tfg:universal_compost_greens_bag",
-            "text": "All $(2)\"Green\"$() compost items can be used directly on a composter or turned into universal compost which condenses these items down to take up less space. Universal green compost gives a value of 1 when used in a composter. Universal green compost can be further compacted into bags which give a value of 4."
+            "text": "すべての $(2)グリーン材$() 堆肥化アイテムは、コンポスターで直接使用できるほか、これらのアイテムを圧縮して場所を取らないようにした、「緑の堆肥源」に変換することもできます。緑の堆肥源をコンポスターで使用すると、1ポイント分になります。また、緑の堆肥源はさらに圧縮して袋に詰めることができ、その場合のポイントは 4 となります。"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Brown Compost",
+            "title": "ブラウン材",
             "anchor": "brown_compost",
             "item": "tfg:universal_compost_browns,tfg:universal_compost_browns_bag",
-            "text": "All $(4)\"Brown\"$() compost items can be used directly on a composter or turned into universal compost like their green counterpart. Universal brown compost gives a value of 1 when used in a composter. Universal brown compost bags give a value of 4."
+            "text": "すべての $(4)ブラウン材$() 堆肥化アイテムは、コンポスターで直接使用できるほか、グリーン材と同様に「茶色の堆肥源」に変えることもできます。茶色の堆肥源をコンポスターで使用すると、1ポイント分になります。また、茶色の堆肥源はさらに圧縮して袋に詰めることができ、その場合のポイントは 4 となります。"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Compost Poisons",
+            "title": "堆肥の汚染",
             "anchor": "compost_poisons",
             "item": "tag:tfc:compost_poisons",
-            "text": "Some items will $(c)poison$() your compost, turning it rotten. These include $(c)meat$() and $(c)bones$(). Rotten compost, when used on a crop, instantly kills it. If the crop is fully mature when it dies it will yield multiple seeds. Crops that can be used in compost like grains and vegetables will work even when rotten. They are not compost poisons. "
+            "text": "一部のアイテムは、堆肥を$(c)汚染$()し、腐らせてしまいます。これには$(c)肉$()や$(c)骨$()などが含まれます。腐った堆肥を作物に与えると、その作物は即座に枯れてしまいます。枯れる時点で作物が完全に成熟していれば、複数の種が収穫できます。$(br)穀物や野菜などを堆肥として使用する場合、腐っていたとしても堆肥を汚染することはありません。"
         },
         {
             "type": "patchouli:multiblock",
@@ -111,7 +111,7 @@
                 }
             },
             "anchor": "rotten_compost",
-            "name": "Rotten Compost",
+            "name": "腐った堆肥",
             "text": "腐ったコンポスター。",
             "enable_visualize": false
         },
@@ -119,23 +119,23 @@
             "type": "patchouli:spotlight",
             "anchor": "compost_tumbler",
             "item": "firmalife:compost_tumbler",
-            "text": "$(thing)Compost Tumblers$() are a great way to produce more fertilizer. They must be connected to $(item)Create$() mechanical power from their side in order to work. Tumblers have an $(thing)RPM$() limit of 16 and a kinetic capacity of 8 $(thing)SU$(). It can only be interacted with when not powered, so consider connecting it to a clutch!"
+            "text": "$(thing)コンポストタンブラー$()は、肥料をより多く生産するための優れた方法です。動作させるには、側面から$(item)Create$()の動力源に接続する必要があります。タンブラーの$(thing)RPM$()の上限は16で、応力上限は8 $(thing)SU$()です。回転している間は操作できないため、クラッチを使って制御することをおすすめします！"
         },
         {
             "type": "patchouli:text",
-            "text": "The compost tumbler is unique in that it takes more types of compost, and does not require precise ratios in order to work.$(br2)The tumbler can take green and brown items like a regular composter. It can also take pottery sherds, charcoal, fish, and bones in small amounts."
+            "text": "コンポストタンブラーは、より多くの種類のコンポスト材料を受け入れられ、正確な比率でなくても機能するという点が特徴です。$(br2)このタンブラーは、通常のコンポスターと同様に、グリーン材やブラウン材を入れることができます。また、少量ならば陶器の破片、木炭、魚、骨なども入れることができます。"
         },
         {
             "type": "patchouli:text",
-            "text": "Green and brown items count the same, being on the range 1-4, but the new additions like fish always count for 1. Adding too much weird stuff to the composter causes it to produce rotten compost. Further, you will not know it is rotten until the very end! If the compost is more than fifteen percent bones, fish, or pottery, or more than twenty percent charcoal, it will rot. Or, if there are 10 or more green units than brown units, it will rot."
+            "text": "グリーン材やブラウン材は1～4の範囲で同じようにカウントされますが、魚のような新しく追加されたアイテムは常に1としてカウントされます。コンポストにヘンなものを入れすぎると、腐った堆肥ができてしまいます。さらに、腐ったかどうかは完成するまでわかりません！骨、魚、陶器の割合が15％を超えたり、木炭の割合が20％を超えたりすると、腐ってしまいます。また、グリーン材がブラウン材よりも10ポイント以上多い場合も腐ってしまいます。"
         },
         {
             "type": "patchouli:text",
-            "text": "Favorable amounts of certain additions can extend or shorten the length of time it takes for the compost to complete. Rotation speed does not impact the processing speed!$(br)If 32 units are in the composter, 3 compost will be produced. If at least 24, 2 compost will be made. If 16 or more, 1 will be made. Below that, and there will be no compost."
+            "text": "特定の添加物を適切な量加えることで、堆肥が完成するまでの期間を長くしたり短くしたりすることができます。回転速度は処理速度に影響しません！$(br)コンポスター内に32ポイント入っている場合、堆肥が3つ生成されます。24ポイント以上あれば、2つ生成されます。16ポイント以上あれば、1つ生成されます。それ以下では、堆肥は生成されません。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "さらに読む",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/decay",
