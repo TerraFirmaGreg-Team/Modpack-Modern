@@ -1045,7 +1045,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "AmbientSounds_FORGE_v6.3.10_mc1.20.1.jar",
+                    "file_name": "AmbientSounds_FORGE_v6.3.11_mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -1053,22 +1053,22 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/fM515JnW/versions/ApGAJplZ/AmbientSounds_FORGE_v6.3.10_mc1.20.1.jar",
-                    "id": "ApGAJplZ",
+                    "url": "https://cdn.modrinth.com/data/fM515JnW/versions/YOYpWGZg/AmbientSounds_FORGE_v6.3.11_mc1.20.1.jar",
+                    "id": "YOYpWGZg",
                     "parent_id": "fM515JnW",
                     "hashes": {
-                        "sha512": "78a8b3bf385aaebab6babb9623718c16ad746a003bbc4e36a62863bd96ae73bc6c9ee49c8b7c6a6e6c6bca3b41c9020bd6868a5b024584393d3e3762eef8d17b",
-                        "sha1": "feb797f5303eb0b43002ad8ea366530249b4710b"
+                        "sha512": "fe83669162df1b24702f3f2356273db57bf7baca1ada2a5d269ec4354eb99ad768338f3c3ef33e791c5bed89b04ed46a1d23a08ce1b48e220f4fee2c3ccef856",
+                        "sha1": "61f0bcbfd404de4aeb0627b5b83a72d069fb1825"
                     },
                     "required_dependencies": [
                         "OsZiaDHq"
                     ],
-                    "size": 53432458,
-                    "date_published": "2026-10-08T14:33:56.563509Z"
+                    "size": 53432741,
+                    "date_published": "2026-10-19T11:45:08.172524Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "AmbientSounds_FORGE_v6.3.10_mc1.20.1.jar",
+                    "file_name": "AmbientSounds_FORGE_v6.3.11_mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -1076,18 +1076,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9099/44/AmbientSounds_FORGE_v6.3.10_mc1.20.1.jar",
-                    "id": "9099044",
+                    "url": "https://edge.forgecdn.net/files/9254/806/AmbientSounds_FORGE_v6.3.11_mc1.20.1.jar",
+                    "id": "9254806",
                     "parent_id": "254284",
                     "hashes": {
-                        "sha1": "feb797f5303eb0b43002ad8ea366530249b4710b",
-                        "md5": "79933500da488a5eb9902bb11b48227a"
+                        "sha1": "61f0bcbfd404de4aeb0627b5b83a72d069fb1825",
+                        "md5": "353a17c5700655810861c10ce1a7e97b"
                     },
                     "required_dependencies": [
                         "257814"
                     ],
-                    "size": 53432458,
-                    "date_published": "2026-10-08T14:33:36.273Z"
+                    "size": 53432741,
+                    "date_published": "2026-10-19T11:44:46.827Z"
                 }
             ]
         },
@@ -16238,7 +16238,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.27.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.28.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -16246,24 +16246,24 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/n0Y3ywtk/TerraFirmaGreg-Core-Modern-0.9.27.jar",
-                    "id": "n0Y3ywtk",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/WfKnJlQo/TerraFirmaGreg-Core-Modern-0.9.28.jar",
+                    "id": "WfKnJlQo",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "f52d605bb8bfa670d8fbb925a45f7c14f1eb2e63289924b3cdec7254e21c9a79fe2923d6ddeb1e53b99e6071610a88b40cca407e120dd8f9e44892693c4494b5",
-                        "sha1": "f33354b9bc9ef8779d5d7ce86e3634e0b9999a1a"
+                        "sha512": "47db812400abae5cc923ceef7fc68683736bf13109708e05747ca08a289c0590808a0bcb9f31c6229e329052a4a7f40e0c63ffb4c3f0c977ff9b4b047280a3bc",
+                        "sha1": "186ccbb533630793e3994d05806885528dee4118"
                     },
                     "required_dependencies": [
-                        "1o7aFiY6",
                         "nU0bVIaL",
-                        "vvuO3ImH"
+                        "vvuO3ImH",
+                        "1o7aFiY6"
                     ],
-                    "size": 56794526,
-                    "date_published": "2026-10-18T19:56:38.625363Z"
+                    "size": 56794675,
+                    "date_published": "2026-10-19T20:06:40.807392Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.27.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.28.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -16271,19 +16271,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9247/411/TerraFirmaGreg-Core-Modern-0.9.27.jar",
-                    "id": "9247411",
+                    "url": "https://edge.forgecdn.net/files/9260/88/TerraFirmaGreg-Core-Modern-0.9.28.jar",
+                    "id": "9260088",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "f33354b9bc9ef8779d5d7ce86e3634e0b9999a1a",
-                        "md5": "5b36fe9fda8538e3269bada69eae8328"
+                        "sha1": "186ccbb533630793e3994d05806885528dee4118",
+                        "md5": "b531c7c88d30cf9b7023cd40d6ab3297"
                     },
                     "required_dependencies": [
-                        "306770",
-                        "309927"
+                        "309927",
+                        "306770"
                     ],
-                    "size": 56794526,
-                    "date_published": "2026-10-18T19:56:30.107Z"
+                    "size": 56794675,
+                    "date_published": "2026-10-19T20:06:35.450Z"
                 }
             ]
         },
