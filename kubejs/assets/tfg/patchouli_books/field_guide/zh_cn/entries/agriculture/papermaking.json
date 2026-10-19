@@ -19,7 +19,7 @@
             "anchor": "papyrus",
             "title": "用纸莎草造纸",
             "recipe": "tfc:crafting/papyrus_strips",
-            "text": "纸可以直接取自$(l:https://en.wikipedia.org/wiki/Papyrus)纸莎草$()作物。首先要用$(thing)刀$()把纸莎草切成条……"
+            "text": "纸可以直接取自$(l:the_world/wild_crops#papyrus)纸莎草$()作物。首先要用$(thing)刀$()把纸莎草切成条……"
         },
         {
             "type": "tfg:sealed_barrel_recipe",

@@ -82,7 +82,7 @@
             "title": "Пропитанная полоска твердой древесины",
             "anchor": "soaked_hardwood_strip",
             "recipe": "tfg:barrel/soak_hardwood_strip",
-            "text": "Затем, каждую полоску замачивают в $(l:craftsmanship/barrels)Бочке$() $(thing)Воды$(). Это $(thing)понижает целостность$() $(thing)дерева$(), позволяя ещё больше измельчить его в дальнейшем. "
+            "text": "Затем, каждую полоску замачивают в $(l:craftsmanship/barrels)Бочке$() $(thing)Воды$(). Это $(thing)понижает целостность$() $(thing)дерева$(), позволяя $(thing)ещё больше измельчить$() его в дальнейшем. "
         },
         {
             "type": "tfg:quern_recipe",
@@ -127,7 +127,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Дополнительно",
+            "title": "Читать далее",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/animal_husbandry",

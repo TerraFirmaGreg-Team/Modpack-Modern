@@ -5,12 +5,12 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "$(thing)Jellies$() are friendly blobs of slime that appear on various planets and environments. $(br2)They have a variety of uses, but most commonly, they produce type-specific $(thing)slime balls$(). $(br2)Did I mention they are very friendly? If you raise their familiarity high enough, they will become $(l:game_mechanics/pets)pets$() and happily follow you around!"
+			"text": "$(thing)ジェリー$()は、さまざまな惑星や環境に現れる、親しみやすいねばねばスライムです。$(br2)用途は多岐にわたりますが、最も一般的なのは、種類に応じた$(thing)スライムボール$()を作り出すことです。$(br2)彼らがとても人懐っこいことは、もうお伝えしましたっけ？親密度を十分に高めると、$(l:game_mechanics/pets)ペット$()になって、嬉しそうにあなたの後をついて回ってくれるようになります！"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:agriculture/jellies#produce)Produce$()$(li)$(bold)$(l:agriculture/jellies#feeding)Feeding$()$(li)$(bold)Earth Species$()$(li2)$(l:agriculture/jellies#herbal)Herbal$()$(li2)$(l:agriculture/jellies#phosphorum)Phosphorum$()$(li2)$(l:agriculture/jellies#rock)Rock$()$(li)$(bold)Beneath Species$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)Ice$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)Plant$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)Glowberry$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)Spring$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)Lava$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)Biotite$()$(li2)$(l:beneath/beneath_fauna#latex_jellie)Latex$()$(br2)$(o)(Continued on next page...)$()"
+			"text": "$(li)$(bold)$(l:agriculture/jellies#produce)生産$()$(li)$(bold)$(l:agriculture/jellies#feeding)ごはん$()$(li)$(bold)地球上の種$()$(li2)$(l:agriculture/jellies#herbal)ハーブ$()$(li2)$(l:agriculture/jellies#phosphorum)燐$()$(li2)$(l:agriculture/jellies#rock)石$()$(li)$(bold)深界の種$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)アイス$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)プラント$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)グロウベリー$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)温泉$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)マグマ$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)黒雲母$()$(li2)$(l:beneath/beneath_fauna#latex_jellie)ラテックス$()$(br2)$(o)(次のページに続く…)$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -28,14 +28,14 @@
 			"type": "patchouli:text",
 			"title": "生産",
 			"anchor": "produce",
-			"text": "$(thing)Jellies$() are quite picky and will refuse to produce anything outside their natural habitat; however, they will breed just fine in any environment. $(br2)They also dislike machines and will only give their produce when fed manually by a player.$(br2)$(#B0B0B0)$(o)Or maybe they just want attention..."
+			"text": "$(thing)ジェリー$()はかなり気難しく、本来の生息地以外では何も生産してくれません。しかし、どんな環境でも問題なく繁殖します。$(br2)また、機械を嫌うため、プレイヤーが手作業で餌を与えた場合にのみ、収穫物を提供してくれます。$(br2)$(#B0B0B0)$(o)あるいは、単にかまってもらいたいだけなのかもしれません……"
 		},
 		{
 			"type": "patchouli:crafting",
-			"title": "Feeding",
+			"title": "ごはん",
 			"recipe": "tfg:shaped/jellies_nutritional_mash",
 			"anchor": "feeding",
-			"text": "$(thing)Nutritional Mash$() is the main food of all $(thing)jellies$(), primarily made from grains, fruits, and some dimension-specific ingredients.$(br2)Unfortunately, they are quite picky and can only be fed by the $(thing)Player$() and not a $(l:agriculture/animal_husbandry#feeding_trough)Feeding Trough$().$(br)$(#B0B0B0)$(o)Why is it moving..."
+			"text": "$(thing)Nutritional Mash$()は、すべての$(thing)ジェリー$()の主食であり、主に穀物、果物、およびディメンションごとに異なる一部の食材から作られています。$(br2)残念ながら、彼らはかなり好き嫌いが激しいため、$(thing)プレイヤー$()からしか餌を受け取らず、$(l:agriculture/animal_husbandry#feeding_trough)給餌箱$()からは食べません。$(br)$(#B0B0B0)$(o)なんで動いてるんだ……"
 		},
 		{
 			"type": "patchouli:entity",
@@ -43,7 +43,7 @@
 			"scale": 0.6,
 			"name": "ハーブジェリー",
 			"anchor": "herbal",
-			"text": "$(thing)Herbal$() Jelliesは、$(l:the_world/climate#temperature)気温ure$() 1～10°C、$(l:the_world/climate#rainfall)降水量$() 150mm以上の、地球上の温暖な森林にスポーンします。$(thing)Herbal Slime Balls$() を生産します。"
+			"text": "$(thing)Herbal$() Jelliesは、$(l:the_world/climate#temperature)気温$() 1～10°C、$(l:the_world/climate#rainfall)降水量$() 150mm以上の、地球上の温暖な森林にスポーンします。$(thing)Herbal Slime Balls$() を生産します。"
 		},
 		{
 			"type": "patchouli:entity",
@@ -51,7 +51,7 @@
 			"scale": 0.6,
 			"name": "燐ジェリー",
 			"anchor": "phosphorum",
-			"text": "$(thing)Phosphorum$() jelliesは、$(l:the_world/climate#temperature)気温ure$() -10～0°C、$(l:the_world/climate#rainfall)降水量$() 150mm以上の、地球上の寒冷な森林にスポーンします。 $(thing)Phosphorum Slime Balls$() を生産し、 $(thing)腐った肉$() を食べることもできます。"
+			"text": "$(thing)Phosphorum$() jelliesは、$(l:the_world/climate#temperature)気温$() -10～0°C、$(l:the_world/climate#rainfall)降水量$() 150mm以上の、地球上の寒冷な森林にスポーンします。 $(thing)Phosphorum Slime Balls$() を生産し、 $(thing)腐った肉$() を食べることもできます。"
 		},
 		{
 			"type": "patchouli:entity",
@@ -63,7 +63,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "さらに読む",
 			"anchor": "relations",
 			"entries": [
 				"tfg:beneath/beneath_fauna",

@@ -54,6 +54,7 @@ function registerTFGToolMaterialModification(event) {
 		GTToolType.HOE,
 		GTToolType.KNIFE,
 		GTToolType.BUZZSAW,
+		GTToolType.SCYTHE,
 		$toolTypes.get("lv_scythe"),
 		GTToolType.WIRE_CUTTER,
 		GTToolType.WIRE_CUTTER_LV,

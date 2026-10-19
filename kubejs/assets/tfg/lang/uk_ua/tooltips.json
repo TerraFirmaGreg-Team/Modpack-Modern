@@ -311,5 +311,7 @@
     "tfg.tooltip.gas_burner.max_temp": "Макс. температура: ",
     "tfg.tooltip.fuel_burning.days": "%s днів / %s mB (повний бак)",
     "tfg.tooltip.planter.fertilizer_info": "Добрива необов'язкові. Культури ростуть швидше та виробляють інші типи добрив, коли споживають бажане для них добриво.",
-    "tfg.tooltip.greenhouse.minimum_tier": "Мін. рівень: "
+    "tfg.tooltip.greenhouse.minimum_tier": "Мін. рівень: ",
+    "tfg.item.electric_flask.tooltip_1": "Електрична фляга, яка автоматично поїтиме тебе за потреби.",
+    "tfg.item.electric_flask.tooltip_2": "Споживає 1000 EU за кожен ковток"
 }
