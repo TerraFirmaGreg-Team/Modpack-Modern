@@ -391,5 +391,5 @@
     "quests.space_survival.mineral_rich_wool.desc": "Once your Sniffers or Wraptors are familiar enough, you can shear them for mineral-rich tufts of fur or feathers. (This can be automated with a Deployer holding Shears.)\n\nThese can be melted down in an EBF for an infinite and cheap source of Alkaline Earth Silicate, and are also a required component of &6Bio-AES Reinforced R-Polyurethane Foam.",
 
     "quests.extreme_voltage.higgs_emitter.subtitle": "Artificial gravity",
-    "quests.extreme_voltage.higgs_emitter.description": "The &6Higgs Emitter&r allows you to create artificial earth gravity in a radius around itself. The area size scales off of the multiblock's energy hatch tier. Make sure to have a $(item)Zip Gun$() on you if you want to create a Zero-G environment."
+    "quests.extreme_voltage.higgs_emitter.desc": "The &6Higgs Emitter&r allows you to create artificial earth gravity in a radius around itself. The area size scales off of the multiblock's energy hatch tier.\n\n&cWarning:&r Make sure to have a Zip Gun on you if you want to create a Zero-G environment."
 }

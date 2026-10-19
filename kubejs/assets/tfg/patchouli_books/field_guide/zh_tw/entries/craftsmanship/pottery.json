@@ -187,7 +187,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "除非你在建立世界時選擇了$(item)熱帶$()氣候，否則取得高嶺土的旅程可能很漫長，但這總會是 TerraFirmaCraft 中令人難忘的一段經歷。為旅程做好準備很重要，例如準備$(l:logistics/exploration_gear)裝備$()、$(l:logistics/boats)船$()、$(l:logistics/personal_storage)額外的儲物空間$()、$(l:cooking/food_and_water)食物和飲水$()，以及一把用來挖掘的$(item)鏟子$()。$(br2)一般來說，往$(thing)東南方$()走可以提高溫度和濕度，以抵達理想的氣候區。"
+            "text": "除非你在建立世界時選擇了$(item)熱帶$()氣候，否則取得高嶺土的旅程可能很漫長，但這總會是 TerraFirmaCraft(群巒傳說) 中令人難忘的一段經歷。為旅程做好準備很重要，例如準備$(l:logistics/exploration_gear)裝備$()、$(l:logistics/boats)船$()、$(l:logistics/personal_storage)額外的儲物空間$()、$(l:cooking/food_and_water)食物和飲水$()，以及一把用來挖掘的$(item)鏟子$()。$(br2)一般來說，往$(thing)東南方$()走可以提高溫度和濕度，以抵達理想的氣候區。"
         },
         {
             "type": "patchouli:text",

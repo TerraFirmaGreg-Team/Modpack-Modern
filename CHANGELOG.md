@@ -4,6 +4,16 @@
 ### Changes
 ### Bug fixes
 
+## [0.13.14] - 19-10-2026
+Be sure to check the previous alpha changelogs, as there are a lot of changes: [0.13.11](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.11), [0.13.12](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.12), [0.13.13](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.13)
+### Changes
+- Added another way to craft sodium hydroxide instead of just the TFC way @TomPlop
+### Bug fixes
+- Fixed players and mobs on the moon catching fire during the daytime (#5156) @TomPlop
+- Red and Blue Steel non-electric scythes are back, sorry @TomPlop
+- Fixed crucibles sometimes turning single metals into 1mB of unknown
+- Added a circuit to the heat pump recipe to avoid a collision with fluid regulators (#5157) @TomPlop
+
 ## [0.13.13] - 18-10-2026
 Be sure to check the changelog of the previous two [alpha](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.11) [releases](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.12) too! 
 ### Changes
