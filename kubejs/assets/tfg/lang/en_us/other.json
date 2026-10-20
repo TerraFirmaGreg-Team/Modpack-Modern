@@ -216,5 +216,8 @@
     "tfg.wireless_charger.mode.1": "§eMode: Long Range - Slow Charge§7(§f%s§7 block radius, 1A)",
 
     "tfg.field_guide.name": "Field Guide",
-    "tfg.field_guide.read_me": "§8§oRead Me! ☺§r"
+    "tfg.field_guide.read_me": "§8§oRead Me! ☺§r",
+
+    "death.attack.tfg.hypoxia": "%1$s suffocated",
+    "death.attack.tfg.hypoxia.player": "%1$s suffocated while trying to escape %2$s"
 }
