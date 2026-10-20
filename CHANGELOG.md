@@ -4,6 +4,20 @@
 ### Changes
 ### Bug fixes
 
+## [0.13.15] - 20-10-2026
+Be sure to check the previous alpha changelogs, as there are a lot of changes: [0.13.11](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.11), [0.13.12](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.12), [0.13.13](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.13)
+### Changes
+- Rotten flesh, spider eyes, and rabbit feet are now compost poisons, and added a stomping barrel/compressor recipe to turn any compost poisons into rotten flesh directly instead of breaking and placing composters @Pyritie
+- Snow layers can no longer form on windmill bearings @Pyritie
+- Vexxed TFG resource pack now also includes an anvil helper texture (#5155) @Patchack
+- Forgot to add this in previous patch notes but Sterling Silver Turbine Rotors have been removed, while Vanadium Turbine Rotors have been added. The recipes for turbine rotors is also simpler, no longer needing screws if you use a forming press. @TomPlop
+- Increased the amount of chorus flowers you get from the electric greenhouse @Pyritie
+- Uncraftable workstations are no longer visible in EMI @evanbones
+### Bug fixes
+- Fixed TFC melting sometimes resulting in 1mB of unknown @TomPlop
+- Possibly fixed slimes spawning on the surface when TFC Caelum is installed @Pyritie
+- Fixed GT machines crafting removed removed vanilla items @evanbones
+
 ## [0.13.14] - 19-10-2026
 Be sure to check the previous alpha changelogs, as there are a lot of changes: [0.13.11](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.11), [0.13.12](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.12), [0.13.13](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.13)
 ### Changes
