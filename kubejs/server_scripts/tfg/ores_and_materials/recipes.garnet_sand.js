@@ -16,22 +16,12 @@ function registerTFGGarnetSandLine(event) {
 
     //#region Step 1
 
-    event.recipes.gtceu.chemical_reactor('tfg:garnet_leach_liquor_low_yield')
-            .itemInputs(Item.of('gtceu:crushed_garnet_sand_ore'))
-            .inputFluids(Fluid.of('gtceu:sulfuric_acid', 1000))
-            .itemOutputs(Item.of('gtceu:gypsum_dust', 8), Item.of('tfg:flawed_garnet_residual_slag_gem', 1))
-            .outputFluids(Fluid.of('tfg:garnet_leach_liquor', 1000))
-            .duration(20 * 30)
-            .circuit(1)
-            .EUt(GTValues.VA[GTValues.MV])
-    
-    event.recipes.gtceu.large_chemical_reactor('tfg:garnet_leach_liquor')
+    event.recipes.gtceu.chemical_reactor('tfg:garnet_leach_liquor')
             .itemInputs(Item.of('gtceu:crushed_garnet_sand_ore'))
             .inputFluids(Fluid.of('gtceu:sulfuric_acid', 1000))
             .itemOutputs(Item.of('gtceu:gypsum_dust', 8), Item.of('tfg:flawed_garnet_residual_slag_gem', 1), Item.of('gtceu:silicon_dioxide_dust', 3))
             .outputFluids(Fluid.of('tfg:garnet_leach_liquor', 1000))
             .duration(20 * 30)
-            .circuit(2)
             .EUt(GTValues.VA[GTValues.MV])
 
     event.recipes.gtceu.chemical_reactor('tfg:garnet_leach_liquor_purified_low_yield')
@@ -46,7 +36,7 @@ function registerTFGGarnetSandLine(event) {
     event.recipes.gtceu.large_chemical_reactor('tfg:garnet_leach_liquor_purified')
             .itemInputs(Item.of('gtceu:purified_garnet_sand_ore'))
             .inputFluids(Fluid.of('gtceu:sulfuric_acid', 1000))
-            .itemOutputs(Item.of('gtceu:gypsum_dust', 8), Item.of('tfg:flawed_garnet_residual_slag_gem', 1), Item.of('gtceu:silicon_dioxide_dust', 3))
+            .itemOutputs(Item.of('gtceu:gypsum_dust', 8), Item.of('gtceu:silicon_dioxide_dust', 3), Item.of('tfg:flawed_garnet_residual_slag_gem', 1))
             .outputFluids(Fluid.of('tfg:garnet_leach_liquor', 1000))
             .duration(20 * 30)
             .circuit(2)
