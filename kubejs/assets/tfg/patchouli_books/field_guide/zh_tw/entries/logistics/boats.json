@@ -123,7 +123,7 @@
             "type": "patchouli:text",
             "title": "航行",
             "anchor": "sailing",
-            "text": "與你可能習慣的船隻不同，在 Firma: Civilization 中航行是一門技術。駕駛帆船時，會出現一個新的介面元素，顯示風速和風向以及船的速度。風向箭頭的顏色代表朝該方向航行的難度。使用前進和後退的移動鍵設定帆的角度，並多加嘗試找出最適合當前風向的角度。"
+            "text": "與你可能習慣的船隻不同，在 Firma: Civilization(群巒傳說: 文明) 中航行是一門技術。駕駛帆船時，會出現一個新的介面元素，顯示風速和風向以及船的速度。風向箭頭的顏色代表朝該方向航行的難度。用$(item)$(k:key.forward)$()和$(item)$(k:key.back)$()移動鍵放鬆或收緊$(thing)帆桁$()，用$(item)$(k:key.left)$()和$(item)$(k:key.right)$()控制$(thing)舵$()。"
         },
         {
             "type": "patchouli:image",
@@ -576,6 +576,10 @@
         {
             "type": "patchouli:text",
             "text": "建造船體只是第一步。接著，找到藍色錘子圖示並按下$(item)$(k:key.use)$()，加入準星旁顯示的物品。$(br)完整的材料清單如下：$(li)6 個腳手架半磚$(li)18 個腳手架階梯$(li)116 個硬木木材$(li)96 個銅螺栓$(li)4 個纜樁$(li)34 個剝皮硬木原木$(li)1 面中型帆$(li)1 面小型帆$(li)16 個木板$(li)1 個錨$(li)8 條繩子"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "由於單桅縱帆船靠風力而非人力推進，操控方式和其他船隻不同。$(br2)你需要學會如何$(l:logistics/boats#sailing)航行$()、如何逆風$(l:https://w.wiki/dVq$)搶風$()、如何使用$(l:logistics/boats#anchors)船錨$()，以及如何升降$(l:logistics/boats#sails)船帆$()。"
         },
         {
             "type": "patchouli:spotlight",

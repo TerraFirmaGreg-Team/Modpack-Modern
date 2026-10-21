@@ -5,17 +5,17 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "Beneath Crops",
+			"title": "深界の作物",
 			"text": "$(thing)深界$()は過酷な環境かもしれませんが、それでもそこで作物を育てることは可能です。深界の作物は驚くほど生命力が強く、極度の暑さの中でも育つため、地中での生活にも地表での生活にも役立ちます。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Crops in the beneath behave just the same as crops on the surface; they have hydration, temperature, and nutrient requirements. You can even plant them in $(thing)Greenhouses.$()$(br2)An important concern when planting crops in the Beneath is that crops require a light level of 12, which isn't provided by the Beneath's natural light. To solve this problem, you can utilize $(l:agriculture/aqueducts)Lava Aqueducts$() or any other available light source."
+			"text": "深界の作物は地上の作物と同じように、水分、温度、栄養素の条件が必要です。$(thing)温室$()に植えることも可能です。$(br2)深界で作物を栽培する際の重要な注意点として、作物には光レベル12が必要ですが、深界の自然光ではこれを満たすことができません。この問題を解決するには、$(l:agriculture/aqueducts)溶岩を通した用水路$() や、その他の利用可能な光源を活用しましょう。"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "内容物",
-			"text": "$(li)$(l:beneath/beneath_crops#cassava)Cassava$()$(li)$(l:beneath/beneath_crops#peanut)Peanut$()$(li)$(l:beneath/beneath_crops#beans)Blackstone Beans$()$(li)$(l:beneath/beneath_crops#ghost_pepper)Ghost Pepper$()$(li)$(l:beneath/beneath_crops#cotton)Cotton$()"
+			"text": "$(li)$(l:beneath/beneath_crops#cassava)キャッサバ$()$(li)$(l:beneath/beneath_crops#peanut)ピーナッツ$()$(li)$(l:beneath/beneath_crops#beans)黒石豆$()$(li)$(l:beneath/beneath_crops#ghost_pepper)ゴーストペッパー$()$(li)$(l:beneath/beneath_crops#cotton)綿花$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -24,8 +24,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cassava",
-			"title": "Cassava",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 70 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cassava can be eaten for $(thing)Vegetable$() nutrition, although it is best $(thing)cooked$() before consumed.$(br)"
+			"title": "キャッサバ",
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)水分量$(): 70 - 100 %$(br)$(bold)栄養素$(): 窒素$(br2)キャッサバは$(thing)野菜$()系の栄養を取ることができる食材です。$(thing)加熱調理$()してから食べた方が良いでしょう。$(br)"
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -139,8 +139,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "peanut",
-			"title": "Peanut",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Potassium$(br2)Peanuts can be eaten for $(thing)Vegetable$() and $(thing)Protein$() nutrition"
+			"title": "ピーナッツ",
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)水分量$(): 20 - 80 %$(br)$(bold)栄養素$(): カリウム$(br2)ピーナッツは$(thing)野菜$()と$(thing)タンパク質$() 系の栄養を取ることができる食材です"
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -254,8 +254,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "beans",
-			"title": "Blackstone Beans",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Potassium$(br2)Blackstone Beans can be eaten for $(thing)Vegetable$() and $(thing)Protein$() nutrition. However, they must be cooked first!"
+			"title": "黒石豆",
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)水分量$(): 20 - 80 %$(br)$(bold)栄養素$(): カリウム$(br2)黒石豆は$(thing)野菜$()と$(thing)タンパク質$() 系の栄養を取ることができる食材ですが、加熱調理する必要があります！"
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -369,8 +369,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "ghost_pepper",
-			"title": "Ghost Pepper",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Ghost Peppers can be eaten for $(thing)Vegetable$() nutrition. They are also a common snack among the inhabitants of the Beneath."
+			"title": "ゴーストペッパー",
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)水分量$(): 20 - 80 %$(br)$(bold)栄養素$(): 窒素$(br2)ゴーストペッパーは$(thing)野菜$()系の栄養を取ることができる食材です。また、深界の住人の間では一般的なおやつでもあります。"
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -484,8 +484,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cotton",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 40 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cotton is a two block tall crop. Cotton seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Cotton Balls$() which can be processed into $(thing)Cotton String$() or $(thing)Cloth$().",
-			"title": "Cotton"
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)水分$(): 40 - 100 %$(br)$(bold)栄養素$(): 窒素$(br2)綿花は２ブロックの高さに成長する作物です。綿花の種は農地に植えることができ、２ブロックの高さに成長し、 $(thing)綿糸$()や$(thing)木綿の布$()に加工できる$(item)綿$()を生産します。",
+			"title": "綿花"
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -600,7 +600,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "さらに読む",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/climate",

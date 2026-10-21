@@ -1,116 +1,116 @@
 {
-	"name": "Beneath Fauna",
+	"name": "幽冥之地生物",
 	"category": "tfg:beneath",
 	"icon": "tfc:textures/item/food/pork.png",
 	"pages": [
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "Life exists, deep below! There's quite a lot of life in the Beneath, some friendly, some foe.$(br2)This entry lists the more interesting creatures you can find.$(br)"
+			"text": "深渊之下也有生命！幽冥之地中有相当多的生物，有些友善，有些敌对。$(br2)本条目列出了你所能找到的比较有趣的生物。$(br)"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)Passive$()$(li2)$(l:beneath/beneath_fauna#axolotl)Axolotl$()$(li2)$(l:beneath/beneath_fauna#frog)Frog$()$(li2)$(l:beneath/beneath_fauna#mammutilation)Mammutilation$()$(li2)$(l:beneath/beneath_fauna#red_elk)Red Elk$()$(li2)$(l:beneath/beneath_fauna#zombie_horse)Zombie Horse$()$(li)$(bold)$(l:agriculture/jellies)Jellies$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)Ice$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)Plant$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)Glowberry$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)Spring$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)Lava$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)Biotite$()$(li2)$(l:beneath/beneath_fauna#latex_jellie)Latex$()$(br)$(o)(Continued on next page...)$()"
+			"text": "$(li)$(bold)被动型$()$(li2)$(l:beneath/beneath_fauna#axolotl)美西螈$()$(li2)$(l:beneath/beneath_fauna#frog)青蛙$()$(li2)$(l:beneath/beneath_fauna#mammutilation)残缺猛犸$()$(li2)$(l:beneath/beneath_fauna#red_elk)红麋鹿$()$(li2)$(l:beneath/beneath_fauna#zombie_horse)僵尸马$()$(li)$(bold)$(l:agriculture/jellies)黏液灵$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)冰$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)植物$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)发光浆果$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)温泉水$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)熔岩$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)黑云母$()$(li2)$(l:beneath/beneath_fauna#latex_jellie)乳胶$()$(br)$(o)（接下页……）$()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)Hostile$()$(li2)$(l:beneath/beneath_fauna#crocodile)Crocodile$()$(li2)$(l:beneath/beneath_fauna#piglin)Piglin$()$(li2)$(l:beneath/beneath_fauna#phantom)Phantom$()$(li2)$(l:beneath/beneath_fauna#kaolin_klayze)Kaolin Klayze$()$(li2)$(l:beneath/beneath_fauna#graphite_glayze)Graphite Glayze$()$(li2)$(l:beneath/beneath_fauna#cliff_hanger)Cliff Hanger$()$(li2)$(l:beneath/beneath_fauna#leaf_hanger)Leaf Hanger$()$(li2)$(l:beneath/beneath_fauna#endermen)Endermen$()$(li2)$(l:beneath/beneath_fauna#spectre)Spectre$()$(li2)$(l:beneath/beneath_fauna#wicked)Wicked$()$(li2)$(l:beneath/beneath_fauna#ghoul)Ghoul$()$(li2)$(l:beneath/beneath_fauna#bewereager)Bewereager$()"
+			"text": "$(li)$(bold)敌对型$()$(li2)$(l:beneath/beneath_fauna#crocodile)鳄鱼$()$(li2)$(l:beneath/beneath_fauna#piglin)猪灵$()$(li2)$(l:beneath/beneath_fauna#phantom)幻翼$()$(li2)$(l:beneath/beneath_fauna#kaolin_klayze)高岭黏土灵$()$(li2)$(l:beneath/beneath_fauna#graphite_glayze)石墨黏土灵$()$(li2)$(l:beneath/beneath_fauna#cliff_hanger)崖悬猎者$()$(li2)$(l:beneath/beneath_fauna#leaf_hanger)叶悬猎者$()$(li2)$(l:beneath/beneath_fauna#endermen)末影人$()$(li2)$(l:beneath/beneath_fauna#spectre)幻灵$()$(li2)$(l:beneath/beneath_fauna#wicked)邪火法师$()$(li2)$(l:beneath/beneath_fauna#ghoul)食尸鬼$()$(li2)$(l:beneath/beneath_fauna#bewereager)渴血狼人$()"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "minecraft:axolotl",
 			"scale": 0.5,
-			"name": "Axolotl",
+			"name": "美西螈",
 			"anchor": "axolotl",
-			"text": "$(thing)Axolotls$() can be found in the top and middle layers, usually swimming around in pools of water."
+			"text": "$(thing)美西螈$()可以在顶层和中层找到，通常在水池里游来游去。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:frog",
 			"scale": 1,
-			"name": "Frog",
+			"name": "青蛙",
 			"anchor": "frog",
-			"text": "$(thing)Frogs$() can be found in the top and middle layers. They can be tamed and eaten."
+			"text": "$(thing)青蛙$()可以在顶层和中层找到。它们能被驯服，也能吃。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "species:mammutilation",
 			"scale": 0.5,
-			"name": "Mammutilation",
+			"name": "残缺猛犸",
 			"anchor": "mammutilation",
-			"text": "$(thing)Mammutilations$() are undead Mammoths. You can put them out of their misery for some $(item)Wool$()."
+			"text": "$(thing)残缺猛犸$()是化为亡灵的猛犸象。给它们一个解脱吧，能换来一些$(item)毛皮$()。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "beneath:red_elk",
 			"scale": 0.7,
-			"name": "Red Elk",
+			"name": "红麋鹿",
 			"anchor": "red_elk",
-			"text": "$(thing)Red Elk$() are found near the bottom, usually swimming around in lava. They can be slain for $(item)Lavaproof Hides$()."
+			"text": "$(thing)红麋鹿$()出没于临近底层的区域，通常在熔岩里游动。击杀它们可以获得$(item)耐火皮革$()。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "minecraft:zombie_horse",
 			"scale": 0.7,
-			"name": "Zombie Horse",
+			"name": "僵尸马",
 			"anchor": "zombie_horse",
-			"text": "$(thing)Zombie Horses$() can't be tamed or ridden, but they can pull an $(item)Animal Crank$()."
+			"text": "$(thing)僵尸马$()无法驯服也无法骑乘，但可以用来拉动$(item)畜力曲柄$()。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "jellies:ice",
 			"scale": 0.6,
-			"name": "Ice Jellie",
+			"name": "冰黏液灵",
 			"anchor": "ice_jellie",
-			"text": "$(thing)Ice$() $(l:agriculture/jellies)Jellies$() are found in the $(thing)Salt Caves$() biome. They cool down nearby players."
+			"text": "$(thing)冰$()$(l:agriculture/jellies)黏液灵$()可以在$(thing)盐窟$()生物群系中找到。它们会给附近的玩家降温。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "jellies:plant",
 			"scale": 0.6,
-			"name": "Plant Jellie",
+			"name": "植物黏液灵",
 			"anchor": "plant_jellie",
-			"text": "$(thing)Plant$() $(l:agriculture/jellies)Jellies$() are found in the $(thing)Muggy Bog$() and $(thing)Thorny Grove$() biomes. Their slime balls can be used as $(thing)Green$() compost."
+			"text": "$(thing)植物$()$(l:agriculture/jellies)黏液灵$()可以在$(thing)闷热沼泽$()和$(thing)荆棘树林$()生物群系中找到。它们的黏液球可以用作$(thing)绿色$()堆肥原料。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "jellies:glowberry",
 			"scale": 0.6,
-			"name": "Glowberry Jellie",
+			"name": "发光浆果黏液灵",
 			"anchor": "glowberry_jellie",
-			"text": "$(thing)Glowberry$() $(l:agriculture/jellies)Jellies$() are found in the $(thing)Lush Hollow$() biome. Their slime balls can be boiled into $(item)Sugar$()."
+			"text": "$(thing)发光浆果$()$(l:agriculture/jellies)黏液灵$()可以在$(thing)繁茂空谷$()生物群系中找到。它们的黏液球可以煮成$(item)糖$()。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "jellies:spring",
 			"scale": 0.6,
-			"name": "Spring Jellie",
+			"name": "温泉黏液灵",
 			"anchor": "spring_jellie",
-			"text": "$(thing)Spring$() $(l:agriculture/jellies)Jellies$() are found in the $(thing)Geothermal Springs$() biome. Their slime balls are a renewable source of $(item)Spring Water$()."
+			"text": "$(thing)温泉$()$(l:agriculture/jellies)黏液灵$()可以在$(thing)地热泉$()生物群系中找到。它们的黏液球是$(item)温泉水$()的可再生来源。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "jellies:biotite",
 			"scale": 0.6,
-			"name": "Biotite Jellie",
+			"name": "黑云母黏液灵",
 			"anchor": "biotite_jellie",
-			"text": "$(thing)Biotite$() $(l:agriculture/jellies)Jellies$() are found in the bottom layer. Their slime balls are a renewable source of $(item)Potassium$(), $(item)Magnesium$(), and $(item)Fluorine$()."
+			"text": "$(thing)黑云母$()$(l:agriculture/jellies)黏液灵$()可以在底层找到。它们的黏液球是$(item)钾$()、$(item)镁$()和$(item)氟$()的可再生来源。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "jellies:lava",
 			"scale": 0.6,
-			"name": "Lava Jellie",
+			"name": "熔岩黏液灵",
 			"anchor": "lava_jellie",
-			"text": "$(thing)Lava$() $(l:agriculture/jellies)Jellies$() are found in the bottom layer. They heat up nearby players, which may be useful if you live somewhere cold."
+			"text": "$(thing)熔岩$()$(l:agriculture/jellies)黏液灵$()可以在底层找到。它们会给附近的玩家供暖，如果你住在寒冷的地方，这也许能派上用场。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "jellies:latex",
 			"scale": 0.6,
-			"name": "Latex Jellie",
+			"name": "乳胶黏液灵",
 			"anchor": "latex_jellie",
-			"text": "$(thing)Latex$() $(l:agriculture/jellies)Jellies$() can only be bred from a $(thing)Plant Jellie$() and $(thing)Lava Jellie$(). Their slime balls are a source of $(item)Latex$()."
+			"text": "$(thing)乳胶$()$(l:agriculture/jellies)黏液灵$()只能由$(thing)植物黏液灵$()和$(thing)熔岩黏液灵$()杂交而来。它们的黏液球是$(item)乳胶$()的来源。"
 		},
 		{
 			"type": "patchouli:entity",
@@ -118,99 +118,99 @@
 			"scale": 0.9,
 			"name": "猪灵",
 			"anchor": "piglin",
-			"text": "You can find Piglins in almost every biome throughout the Beneath. They can be $(l:beneath/beneath_mechanics#piglins)traded with$() like in vanilla."
+			"text": "在幽冥之地的几乎每个生物群系都能找到猪灵。可以像原版一样$(l:beneath/beneath_mechanics#piglins)和它们交易$()。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:crocodile",
 			"scale": 0.5,
-			"name": "Crocodile",
+			"name": "鳄鱼",
 			"anchor": "crocodile",
-			"text": "$(thing)Crocodiles$() can be found in the top and middle layers, waiting in ambush!"
+			"text": "$(thing)鳄鱼$()可以在顶层和中层找到，正埋伏着伺机偷袭！"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "minecraft:phantom",
 			"scale": 0.4,
-			"name": "Phantom",
+			"name": "幻翼",
 			"anchor": "phantom",
-			"text": "$(thing)Phantoms$() naturally spawn in the middle and bottom layers, regardless of how much sleep you're getting. They can be turned into $(l:beneath/beneath_mechanics#clothes)Clothing$()."
+			"text": "$(thing)幻翼$()会自然生成于中层和底层，你睡多久都拦不住它们。它们可以被制成$(l:beneath/beneath_mechanics#clothes)服装$()。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "primitive_creatures:tfc",
 			"scale": 0.8,
-			"name": "Kaolin Klayze",
+			"name": "高岭黏土灵",
 			"anchor": "kaolin_klayze",
-			"text": "$(thing)Kaolin Klayzes$() can be found in the $(thing)Lush Hollow$() biome, guarding the $(item)Kaolin$()!"
+			"text": "$(thing)高岭黏土灵$()可以在$(thing)繁茂空谷$()生物群系中找到，它们守卫着$(item)高岭土$()！"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "primitive_creatures:golem_2",
 			"scale": 1,
-			"name": "Graphite Glayze",
+			"name": "石墨黏土灵",
 			"anchor": "graphite_glayze",
-			"text": "$(thing)Graphite Glayzes$() can be found in the bottom layers. Careful they don't knock you into lava!"
+			"text": "$(thing)石墨黏土灵$()可以在底层找到。小心别被它们撞进熔岩里！"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "species:cliff_hanger",
 			"scale": 0.7,
-			"name": "Cliff Hanger",
+			"name": "崖悬猎者",
 			"anchor": "cliff_hanger",
-			"text": "$(thing)Cliff Hangers$() can be found on various ceilings, hooking players who walk below them. Hit them with a ranged attack to make them let go!"
+			"text": "$(thing)崖悬猎者$()悬挂在各种天花板上，会钩住从下方经过的玩家。用远程攻击打它们，就能让它们松手！"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "species:leaf_hanger",
 			"scale": 0.7,
-			"name": "Leaf Hanger",
+			"name": "叶悬猎者",
 			"anchor": "leaf_hanger",
-			"text": "$(thing)Leaf Hangers$() can be found in pools of Salt Water, hooking players who walk into their trap. Hit them to make them let go of you!"
+			"text": "$(thing)叶悬猎者$()潜伏在盐水池中，会钩住走进陷阱的玩家。攻击它们就能让它们放开你！"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "endermanoverhaul:nether_wastes_enderman",
 			"scale": 1,
-			"name": "Endermen",
+			"name": "末影人",
 			"anchor": "endermen",
-			"text": "Various species of $(thing)Endermen$() appear all over. The $(item)mushroom$() one is completely passive, while the others are all neutral."
+			"text": "各种$(thing)末影人$()遍布各地。$(item)蘑菇$()末影人完全被动，其他种类则都是中立的。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "species:spectre",
 			"scale": 0.7,
-			"name": "Spectres",
+			"name": "幻灵",
 			"anchor": "spectre",
-			"text": "$(thing)Spectres$() are ghosts of adventurers past, and come in three varieties. They are a source of $(item)Feathers$()."
+			"text": "$(thing)幻灵$()是昔日冒险者的亡魂，共有三种。它们是$(item)羽毛$()的来源。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "species:wicked",
 			"scale": 0.9,
-			"name": "Wicked",
+			"name": "邪火法师",
 			"anchor": "wicked",
-			"text": "The $(thing)Wicked$() is a ghost that can posess nearby mobs to give them buffs! If no mob is nearby, they use a ranged attack. They drop wax."
+			"text": "$(thing)邪火法师$()是一种能附身附近生物、为它们提供增益效果的幽灵！如果附近没有生物，它们就会使用远程攻击。它们会掉落蜡。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "species:ghoul",
 			"scale": 0.7,
-			"name": "Ghoul",
+			"name": "食尸鬼",
 			"anchor": "ghoul",
-			"text": "$(thing)Ghouls$() are blind monsters that use echolocation to find prey. They are neutral unless you're within their 'scan' radius!"
+			"text": "$(thing)食尸鬼$()是用回声定位寻找猎物的盲眼怪物。除非你进入它们的“扫描”半径，否则它们是中立的！"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "species:bewereager",
 			"scale": 0.8,
-			"name": "Bewereager",
+			"name": "渴血狼人",
 			"anchor": "bewereager",
-			"text": "The $(thing)Bewereager$() is an aggressive monster that can also jump up to you! It buffs itself and attacks in short bursts."
+			"text": "$(thing)渴血狼人$()是一种具有攻击性的怪物，还会跳到你面前！它会强化自己，并发动短促的连续攻击。"
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "延伸阅读",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/wild_animals",

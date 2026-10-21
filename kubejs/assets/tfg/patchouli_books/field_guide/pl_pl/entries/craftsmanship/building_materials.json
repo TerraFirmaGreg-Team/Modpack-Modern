@@ -72,7 +72,7 @@
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/soil/loam_mud_bricks",
             "title": "Bloki błotnych cegieł",
-            "text": "These dried mud bricks can then be crafted into $(thing)Mud Brick Blocks$(). They can also be made into $(thing)Stairs$(), $(thing)Slabs$(), or $(thing)Walls$(), if so desired. Mud brick blocks are mineable with shovels."
+            "text": "Z tych wysuszonych błotnych cegieł można potem wytworzyć $(thing)bloki błotnych cegieł$(). Można z nich też zrobić $(thing)schody$(), $(thing)płyty$() i $(thing)murki$(). Bloki błotnych cegieł da się kopać łopatą."
         },
         {
             "type": "patchouli:text",

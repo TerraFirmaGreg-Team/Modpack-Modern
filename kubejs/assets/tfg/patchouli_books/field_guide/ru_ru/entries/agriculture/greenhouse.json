@@ -5,31 +5,31 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:agriculture/greenhouse#types)Greenhouse Types$()$(li)$(bold)$(l:agriculture/greenhouse#planters)Planters$()$(li2)$(l:agriculture/greenhouse#large_planter)Large Planter$()$(li2)$(l:agriculture/greenhouse#quad_planter)Quad Planter$()$(li2)$(l:agriculture/greenhouse#bonsai_planter)Bonsai Planter$()$(li2)$(l:agriculture/greenhouse#hanging_planter)Hanging Planter$()$(li2)$(l:agriculture/greenhouse#trellis_planter)Trellis Planter$()$(li2)$(l:agriculture/greenhouse#hydroponic_planter)Hydroponic Planter$()$(li)$(bold)$(l:agriculture/greenhouse#irrigation)Irrigation$()$(li)$(bold)$(l:agriculture/greenhouse#auto_harvesting)Auto-Harvesting$()$(li)$(bold)$(l:agriculture/greenhouse#electric)Electric Greenhouse$()$(li)$(bold)$(l:agriculture/greenhouse#hydroponics)Hydroponics Facility$()"
+            "text": "$(li)$(bold)$(l:agriculture/greenhouse#types)Типы теплиц$()$(li)$(bold)$(l:agriculture/greenhouse#planters)Лотки для рассады$()$(li2)$(l:agriculture/greenhouse#large_planter)Большой лоток для рассады$()$(li2)$(l:agriculture/greenhouse#quad_planter)Лоток для небольших растений$()$(li2)$(l:agriculture/greenhouse#bonsai_planter)Лоток для бонсая$()$(li2)$(l:agriculture/greenhouse#hanging_planter)Подвесной лоток для растений$()$(li2)$(l:agriculture/greenhouse#trellis_planter)Подпорки для кустов$()$(li2)$(l:agriculture/greenhouse#hydroponic_planter)Гидропонный лоток$()$(li)$(bold)$(l:agriculture/greenhouse#irrigation)Орошение$()$(li)$(bold)$(l:agriculture/greenhouse#auto_harvesting)Автосбор$()$(li)$(bold)$(l:agriculture/greenhouse#electric)Электрическая теплица$()$(li)$(bold)$(l:agriculture/greenhouse#hydroponics)Гидропонная установка$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
             "title": "Теплица",
-            "text": "The $(thing)Greenhouse$() is a multiblock device controlled by a $(item)Climate Station$(). It allows growing crops year round. The Greenhouse has an array of types and blocks to choose from. However, building a greenhouse is quite simple. Like the $(l:cooking/decay#cellar)Cellar$(), it should be an enclosed area of blocks belonging to the same $(thing)Greenhouse Type$(). The floor of the greenhouse may be any non-air block."
+            "text": "$(thing)Теплица$()–это мультиблок, контролируемый $(item)Климатической станцией$(). Она позволяет выращивать посевы круглый год. В теплице можно разместить множество типов блоков. Тем не менее, построить теплицу достаточно просто. Как и $(l:cooking/decay#cellar)Погреб$(), она должна быть замкнутым пространством из блоков, относящихся к одному $(thing)Типу теплицы$(). Полом может служить любой блок, кроме воздуха."
         },
         {
             "type": "patchouli:text",
-            "text": "The walls of greenhouses must be solid faces. Panel walls should be placed so that the face that is on the exterior of the block (ex. the face you can place a torch on) faces into the greenhouse. Trapdoors, doors, and roofs are always valid and require no special placement.$(br2)The maximum internal volume of a greenhouse is 31x31x31 blocks."
+            "text": "Стены теплицы должны быть построены из цельных блоков. Панельные стены должны быть расположены таким образом, чтобы их лицевая сторона (сторона, на которую можно поставить факел или что-то подобное) смотрела внутрь теплицы. Люки, двери и крыши всегда допустимы и не требуют особого расположения.$(br2)Максимальный внутренний объём теплицы–31x31x31 блок."
         },
         {
             "type": "patchouli:text",
-            "text": "$(thing)Greenhouse Types$() are families of greenhouse blocks that can be used interchangeably in a greenhouse. Additionally, $(tfg) adds more greenhouse wall styles that can be swapped around with the basic greenhouse walls of the same tier.$(br)Validate a greenhouse by placing a climate station against a wall and $(item)$(k:key.use)$() it. Or, place it anywhere and $(item)$(k:key.use)$() it with a greenhouse block of the same type as the structure."
+            "text": "$(thing)Типы теплиц$()–это семьи взаимозаменяемых тепличных блоков. $(tfg) также добавляет больше стилей стен теплиц, которыми можно заменить стены теплиц того же тира.$(br)Утверди теплицу поставив климатическую станцию у стены и нажми $(item)$(k:key.use)$() по ней. Либо поставь её где угодно внутри теплицы и нажми $(item)$(k:key.use)$() по ней держа блок принадлежащий к тому же типу теплицы, что и структура."
         },
         {
             "type": "patchouli:text",
             "anchor": "types",
-            "text": "These are the $(thing)Greenhouse Types$() available, with aged varients availble through crafting:$(br)$(li)Treated Wood: Weathered $()$(li)Copper: Exposed, Weathered, Oxidized$()$(li)Iron: Rusted$() $(li)Stainless Steel: N/A$()$(br)$(bold)Note$(): Aged varients have no effect outside of appearance.",
+            "text": "Доступные $(thing)Типы теплиц$(), с изношенными вариантами доступными через крафт:$(br)$(li)Обработанное дерево: Состаренное $()$(li)Медь: Потемневшая, Состаренная, Окисленная$()$(li)Железо: Ржавое$()$(li)Нержавеющая сталь: N/A$()$(br)$(bold)Примечание$(): изношенные варианты отличаются от обычных лишь внешне.",
             "title": "Типы теплиц"
         },
         {
             "type": "patchouli:text",
-            "text": "There are four types of regular $(thing)Greenhouse Blocks$(): Walls, Doors, Roofs, and Roof Tops. Roofs and Roof Tops are stairs and slabs, respectively. There are also thinner versions of these blocks, known as panel walls, trapdoors, and panel roofs. These can be combined however you choose to form the structure of the greenhouse."
+            "text": "Существует четыре типа обычных $(thing)Блоков теплицы$(): стены, двери, крыши и верхушки. Крыши и верхушки это ступени и плиты соответственно. Есть также более тонкие версии этих блоков, известные как панельные стены, люки и панельные крыши. Комбинируй их как пожелаешь, чтобы сформировать теплицу."
         },
         {
             "type": "tfg:multimultiblock",
@@ -45,91 +45,91 @@
             "type": "patchouli:text",
             "anchor": "planters",
             "title": "Лотки для рассады",
-            "text": "$(thing)Planters$() are used to grow crops inside a Greenhouse. Crops in planters consume $(l:agriculture/growing_crops#intro)Nutrients$() similarly to crops. Planters should be placed inside a valid Greenhouse and activated with a $(item)Climate Station$(). Planters need at least some natural sunlight to work."
+            "text": "$(thing)Лотки для рассады$() используются для выращивания посевов в теплице. Посевы в лотках потребляют $(l:agriculture/growing_crops#intro)Питательные вещества$() наподобие обычным. Лотки должны быть расположены внутри правильно построенной теплицы и активированы при помощи $(item)Климатической станции$(). Лоткам нужно хотя бы небольшое количество естественного солнечного света."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "large_planter",
             "item": "firmalife:large_planter",
-            "text": "$(thing)Large Planters$() are the simplest kind of planter. They grow a single crop from seed, and are harvested with $(item)$(k:key.use)$() when mature.$(br)Large Planters typically grow $(thing)Large Crops$() and $(thing)Grains$(). However, to grow Grains, you need a $(thing)Copper$() or better Greenhouse."
+            "text": "$(thing)Большие лотки$() являются простейшим типом лотков. В них можно посадить одно семечко, а после его созревания собрать урожай с помощью $(item)$(k:key.use)$().$(br)В больших лотках чаще всего выращиваются $(thing)Крупные культуры$() и $(thing)Зерновые$()."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "quad_planter",
             "item": "firmalife:quad_planter",
-            "text": "$(thing)Quad Planters$() grow four individual crops at once that all draw from the same nutrient pool, and can be harvested individually with $(item)$(k:key.use)$() when mature.$(br)Quad Planters typically grow smaller vegetables such as $(thing)Onions$() and $(thing)Beets$(). These crops can be grown in any greenhouse type."
+            "text": "В $(thing)Лотках для небольших растений$() выращивается 4 отдельных растения, потребляющих питательные вещества из общего запаса. Созревшие растения можно собрать по отдельности при помощи $(item)$(k:key.use)$().$(br) В лотках для небольших растений чаще всего выращиваются маленькие овощи, такие как $(thing)Лук$() и $(thing)Свекла$()."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "bonsai_planter",
             "item": "firmalife:bonsai_planter",
-            "text": "$(thing)Bonsai Planters$() grow small fruit trees from their saplings.$(br)Bonsai Planters grow $(item)Fruit Tree Types$(), except $(thing)Bananas$(), and $(thing)Palm Fruit Trees$(), which need a $(thing)Hanging Planter$(). They need an $(thing)Iron$() or better greenhouse to grow."
+            "text": "В $(thing)Лотках для бонсая$() из саженцев выращиваются маленькие фруктовые деревья.$(br)В лотках для бонсая можно выращивать $(item)Фруктовые деревья$(), кроме $(thing)Бананов$() и $(thing)Фруктовых пальм$(). Для них нужны $(thing)Подвесные лотки$()."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "hanging_planter",
             "item": "firmalife:hanging_planter",
-            "text": "$(thing)Hanging Planters$() grow crops upside down.$(br)Hanging Planters grow $(thing)Squash$(), $(thing)Pumpkin$(), $(thing)Melons$(), $(thing)Bananas$(), and $(thing)Palm Fruit Trees$(). Palm Fruit Trees require a $(thing)Copper+$() greenhouse, Squash can be in any tier, and the rest need $(thing)Iron+$(). Hanging planters need to anchor to a solid block above them."
+            "text": "Растения в $(thing)Подвесных лотках$() растут сверху вниз.$(br)В подвесных лотках можно выращивать $(thing)Кабачки$(), $(thing)Тыквы$(), $(thing)Арбузы$(), $(thing)Бананы$() и $(thing)Фруктовые пальмы$(). Подвесные лотки крепятся на цельный блок над ними."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "trellis_planter",
             "item": "firmalife:trellis_planter",
-            "text": "$(thing)Trellis Planters$() grow berry bushes.$(br)Trellis Planters have the unique property of $(thing)propagating$() berry bushes. If a trellis planter is placed on top of another with a mature berry bush, it has a chance to grow upwards into the next one. Trellis planters usually require an $(thing)Iron$() or better greenhouse to work."
+            "text": "На $(thing)Подпорках для кустов$() выращиваются ягодные кусты.$(br)У подпорок для кустов есть уникальная способность $(thing)распространять$() ягодные кусты. Если подпорка поставлена поверх другой содержащей зрелый куст подпорки, то с некоторым шансом этот куст разрастётся вверх."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "hydroponic_planter",
             "item": "firmalife:hydroponic_planter",
-            "text": "$(thing)Hydroponic Planters$() grow submerged crops like $(thing)Rice$() and $(thing)Cranberry Bushes$(). They work the same as a quad planter, except that they do not need to be watered.$(br)Hydroponic Planters must instead, have a $(item)Fluid Pipe$() below them supplying water. Without the pipe they will not grow."
+            "text": "В $(thing)Гидропонных лотках$() выращиваются культуры растущие в воде, такие как $(thing)Рис$() и $(thing)Кусты клюквы$(). Они работают как лотки для небольших растений, не считая того, что их не нужно поливать.$(br)Вместо этого под гидропонными лотками должны быть проложены $(item)Трубы для жидкостей$(), доставляющие воду. Без труб ничего не будет расти."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "irrigation",
             "title": "Орошение",
             "item": "firmalife:watering_can,firmalife:sprinkler",
-            "text": "Planters must be $(thing)Watered$() to grow. This is done with a $(thing)Watering Can$() or automatically with $(thing)Sprinklers$(). Press $(item)$(k:key.use)$() with a watering can to water nearby planters. Refill your can by pressing $(item)$(k:key.use)$() on a water source."
+            "text": "Лотки нужно $(thing)Поливать$() чтобы растения росли. Это делается при помощи $(thing)Лейки$(), либо автоматически при помощи $(thing)Оросителей$(). Нажми $(item)$(k:key.use)$() с лейкой в руках, чтобы полить находящиеся рядом лотки. Наполнить лейку можно нажав $(item)$(k:key.use)$() по источнику воды."
         },
         {
             "type": "patchouli:text",
-            "text": "The $(thing)Sprinkler$() is a device that sprinkles water in a 5x6x5 area centered on the block below or above the sprinkler block. You know it is working when it drips out water particles. Sprinklers must be connected to a system of pipes that feed it water in order to work."
+            "text": "$(thing)Ороситель$() это устройство, разбрызгивающее воду в области 5x6x5 с центром под или над блоком оросителя. Понять что он работает можно по капающим частицам воды. Оросители должны быть подключены к сети труб, обеспечивающей их водой."
         },
         {
             "title": "Трубопровод",
             "item": "gtceu:copper_tiny_fluid_pipe",
             "type": "patchouli:spotlight",
-            "text": "Feeding sprinklers with water can be done by connecting $(thing)Fluid Pipes$() to them and pumping in water with a $(thing)Mechanical Pump$().$(br)You can $(item)$(k:key.use)$() a pipe with a $(t:Such as a Copper Frame)GregTech Frame$() or a Greenhouse Port to pass them through a wall. $(item)$(k:key.use)$() fluid pipes with a wrench to change their direction, and $(item)$(k:key.sneak) + $(k:key.use)$() them with an $(thing)empty offhand$() to make them one-way."
+            "text": "Подать воду в оросители можно подключив к ним $(thing)Трубы для жидкостей$() и закачав воду с помощью $(thing)Механической помпы$(). $(br)Ты можешь нажать $(item)$(k:key.use)$() по трубе держа в руке $(t:Such as a Copper Frame)Каркас из GregTech$() или порт теплицы, чтобы пустить её через стену. Нажми $(item)$(k:key.use)$() по трубе держа в руке гаечный ключ чтобы поменять её направление и $(item)$(k:key.sneak) + $(k:key.use)$() с $(thing)пустой второй рукой$() чтобы сделать её однонаправленной."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "auto_harvesting",
             "title": "Автоматический сбор",
             "item": "firmalife:sweeper,firmalife:picker",
-            "text": "$(li)$(thing)Sweepers$() are used to harvest planters other than Quad and Hydroponic planters. They can be powered by redstone.$(li)$(thing)Pickers$() can be powered via redstone signal from above. They extend down to pick the crops from Quad and Hydroponic planters."
+            "text": "$(li)$(thing)Уборщики$() используются для сбора урожая с лотков, кроме лотков для небольших растений и гидропонных лотков. Их можно запитать редстоуном. $(li)$(thing)Сборщики$() можно запитать сигналом редстоуна сверху. Они протягиваются вниз для сбора урожая с лотков для небольших растений и гидропонных лотков."
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)Additionally, $(item)Harvest Baskets$() can be used to harvest most planter types.$(li)To collect the loose items that the $(thing)Sweepers$() and $(thing)Pickers$() drop, you can use a $(item)Hopper Minecart$(), a $(thing)Contraption$() with $(item)Funnels$(), or a GregTech $(item)Item Collector$()."
+            "text": "$(li)Также можно использовать $(item)Лукошки$() для сбора урожая с большинства типов лотков.$(li)Для подбора валяющихся предметов выбрасываемых $(thing)Уборщиками$() и $(thing)Сборщиками$() ты можешь использовать $(item)Вагонетку с воронкой$(), $(thing)Приспособление$() из $(item)Шлюзов$(), или $(item)Собиратель предметов$() из GregTech."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "electric",
             "item": "tfg:electric_greenhouse",
-            "text": "The multiblock $(item)Electric Greenhouse$() can be your source of $(thing)Logs$() and other plants if you prefer making GregTech machines over Create contraptions. It also has the unique property of being able to grow more of TFC's decorative plants!$(br2)You can make one at the end of $(7)LV$()."
+            "text": "$(item)Электрическая теплица$() может быть твоим источником $(thing)Брёвен$() и других растений, если ты предпочитаешь машины из GregTech приспособлениям из Create. У неё также есть уникальная способность выращивать больше декоративных растений из TFC!$(br2)Ты сможешь построить её в конце $(7)LV$()."
         },
         {
             "type": "patchouli:text",
-            "text": "$(bold)Note:$() This multiblock can have its walls customized to use any valid iron-tier greenhouse block.$(br2)Check the $(emi) multiblock preview for a list of all the different blocks you can use.$(br2)The Electric Greenhouse can also be improved in a few ways, including $(l:agriculture/fertilizers)fertilizer$() or later in $(6)HV$() with the $(thing)Aquaponics Loop$()."
+            "text": "$(bold)Примечание:$() этот мультиблок может использовать любой подходящий блок теплицы железного тира.$(br2)Загляни в меню предпросмотра мультиблоков в $(emi) чтобы узнать перечень доступных блоков.$(br2)Электрическую теплицу также можно улучшить нескольким способами, включая $(l:agriculture/fertilizers)удобрение$() или, позднее в $(6)HV$(), $(thing)Аквапонный цикл$()."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "hydroponics",
             "item": "tfg:hydroponics_facility",
-            "text": "The $(item)Hydroponics Facility$() is an $(9)IV$() upgrade to the Electric Greenhouse that can grow anything in any dimension and also supports $(item)Parallel Hatches$()."
+            "text": "$(item)Гидропонная установка$() это $(9)IV$() модернизация электрической теплицы, способная выращивать что угодно в любом измерении и поддерживающая $(item)Люки контроля параллелей$()."
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Читать далее",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_crops",

@@ -256,8 +256,8 @@ event.recipes.gtceu.chemical_reactor('tfg:process_depleted_garnet_liquor_b_low_y
 
     event.recipes.gtceu.chemical_reactor('tfg:organic_extractant_from_phosphorus_pentoxide_dust')
             .itemInputs(Item.of('gtceu:phosphorus_pentoxide_dust', 14))
-            .inputFluids(Fluid.of('tfg:ethylhexanol', 1000))
-            .outputFluids(Fluid.of('tfg:organic_extractant', 1000), Fluid.of('minecraft:water', 1000))
+            .inputFluids(Fluid.of('tfg:ethylhexanol', 8000))
+            .outputFluids(Fluid.of('tfg:organic_extractant', 4000), Fluid.of('minecraft:water', 2000))
             .duration(20 * 32)
             .EUt(GTValues.VA[GTValues.MV])
 

@@ -1,5 +1,5 @@
 {
-    "name": "Fishing",
+    "name": "釣り",
     "category": "tfg:agriculture",
     "icon": "tfc:metal/fishing_rod/copper",
     "pages": [
@@ -11,7 +11,7 @@
         {
             "type": "tfg:anvil_recipe",
             "recipe": "tfc:anvil/bismuth_bronze_fish_hook",
-            "text": "First, you have to forge a fishing hook in an $(l:craftsmanship/anvils)Anvil$()."
+            "text": "最初に、$(l:craftsmanship/anvils)金床$()で釣り針を鍛造する必要があります。"
         },
         {
             "type": "patchouli:crafting",
@@ -21,11 +21,11 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Fishing rods are not useful without bait. $(t:#tfc:small_fishing_bait)$(6)Bait$() can be added to rods in a crafting table. To catch normal fish, you need $(thing)Seeds$() or $(thing)Shellfish$(). To catch $(t:#tfc:large_fishing_bait)$(6)larger fish$(), such as $(thing)Dolphins$() and $(thing)Orcas$(), you need $(item)cod$(), $(item)salmon$(), $(item)tropical fish$(), or $(item)bluegills$()."
+            "text": "釣り竿は餌がなければ役に立ちません。$(t:#tfc:small_fishing_bait)$(6)餌$()は作業台で釣り竿に追加できます。普通の魚を捕まえるには、$(thing)種$()または$(thing)生の貝$()が必要です。$(thing)イルカ$()や$(thing)シャチ$()などといった$(t:#tfc:large_fishing_bait)$(6)大物$()を捕まえるには、$(item)タラ$()、$(item)サケ$()、$(item)熱帯魚$()または$(item)ブルーギル$()が必要です。"
         },
         {
             "type": "patchouli:text",
-            "text": "To release the bobber, $(item)$(k:key.use)$(). Wait for a fish to spot the hook and bite it. Then $(item)$(k:key.use)$() to pull it in. As you do that, the meter on your hotbar will fill up. Pull too quickly, and the fish will get away with the bait. Each time you fish, the fish has a chance of eating the bait. To catch the fish, pull it up on land and kill it with a tool or catch it with a $(l:agriculture/fishing#fishing_net)Fishing Net$(). You can hold the fishing rod in your offhand to make this easier."
+            "text": "ウキを投げるには、$(item)$(k:key.use)$()を押します。魚が餌を見つけて食いつくのを待ちます。そして$(item)$(k:key.use)$()をもう一度押して引き上げます。これの操作を行うと、ホットバーのメーターがいっぱいになります。急いで引きすぎると、魚が餌を持って逃げてしまいます。釣りをするたびに、餌が魚に食べられて無くなる可能性があります。魚を捕まえるには、魚を陸に引き上げ、道具を使って仕留めるか、$(l:agriculture/fishing#fishing_net)魚取り網$()を使いましょう。釣り竿をオフハンドで持つと、作業が簡単になります。"
         },
         {
             "type": "patchouli:image",
@@ -38,21 +38,21 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "fishing_net",
-            "title": "Fishing Nets",
+            "title": "魚取り網",
             "item": {
                 "tag": "forge:tools/fishing_nets"
             },
-            "text": "Tired of hunting down fish with spears? Or losing a floppy catch while fishing? Craft a $(thing)Fishing Net$() to scoop up your dinner.$(br)To use a fishing net; $(item)$(k:key.use)$() on a fish entity to capture the fish into your inventory. Different tier fishing nets all act the same, but have different durability."
+            "text": "槍で魚を追い回すのに疲れていませんか？それとも、せっかく釣りあげた魚を逃してしまったことはありませんか？そんなときは$(thing)魚取り網$()を作って、手軽に魚を確保しましょう。$(br)使い方は簡単です。ただ魚に向かって$(item)$(k:key.use)$()を押すだけでインベントリに回収できます。なお、魚取り網は上位のものでも性能は変わらず、耐久値のみが異なります。"
         },
         {
             "type": "patchouli:crafting",
-            "title": "Wood Fishing Net",
+            "title": "木製の魚取り網",
             "recipe": "tfc:kjs/damage/shaped/fishing_net/wood",
             "text": "基本的な$(item)木製の魚取り網$()。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "さらに読む",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/cooking_methods",

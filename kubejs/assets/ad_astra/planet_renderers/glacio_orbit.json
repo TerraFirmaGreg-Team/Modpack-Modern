@@ -26,24 +26,6 @@
 			"texture": "ad_astra:textures/environment/blue_sun.png"
 		},
 		{
-			"back_light_color": -3221524,
-			"back_light_scale": 240.0,
-			"blend": false,
-			"global_rotation": [
-				180.0,
-				0.0,
-				0.0
-			],
-			"local_rotation": [
-				0.0,
-				0.0,
-				0.0
-			],
-			"movement_type": "STATIC",
-			"scale": 80.0,
-			"texture": "ad_astra:textures/environment/glacio.png"
-		},
-		{
 			"back_light_color": 15118501,
 			"back_light_scale": 6.0,
 			"blend": false,
@@ -114,6 +96,24 @@
 			"movement_type": "STATIC",
 			"scale": 50.0,
 			"texture": "tfg:textures/gui/jupiter_planet.png"
+		},
+		{
+			"back_light_color": -3221524,
+			"back_light_scale": 240.0,
+			"blend": false,
+			"global_rotation": [
+				180.0,
+				0.0,
+				0.0
+			],
+			"local_rotation": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"movement_type": "STATIC",
+			"scale": 80.0,
+			"texture": "ad_astra:textures/environment/glacio.png"
 		}
 	],
 	"star_brightness": 0.6,

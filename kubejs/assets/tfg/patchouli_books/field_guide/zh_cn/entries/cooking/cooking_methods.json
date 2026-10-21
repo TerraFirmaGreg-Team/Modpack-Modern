@@ -1,25 +1,25 @@
 {
-    "name": "Cooking Methods",
+    "name": "烹饪方式",
     "category": "tfg:cooking",
     "icon": "tfc:grill",
     "pages": [
         {
             "type": "patchouli:text",
-            "title": "Index",
+            "title": "目录",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:cooking/cooking_methods#firepit)Firepit$()$(li2)$(l:cooking/cooking_methods#grill)Grill$()$(li2)$(l:cooking/cooking_methods#pot)Pot$()$(li)$(bold)$(l:cooking/cooking_methods#oven)Ovens$()$(li2)$(l:cooking/cooking_methods#vat)Vat$()$(li2)$(l:cooking/cooking_methods#jarring_station)Jarring Station$()$(li)$(bold)$(l:cooking/cooking_methods#electric_oven)Electric Oven$()$(li)$(bold)$(l:cooking/cooking_methods#food_processor)Food Processor$()"
+            "text": "$(li)$(bold)$(l:cooking/cooking_methods#firepit)篝火$()$(li2)$(l:cooking/cooking_methods#grill)烤架$()$(li2)$(l:cooking/cooking_methods#pot)陶锅$()$(li)$(bold)$(l:cooking/cooking_methods#oven)烤炉$()$(li2)$(l:cooking/cooking_methods#vat)铁锅$()$(li2)$(l:cooking/cooking_methods#jarring_station)装罐台$()$(li)$(bold)$(l:cooking/cooking_methods#electric_oven)电烤箱$()$(li)$(bold)$(l:cooking/cooking_methods#food_processor)食品加工机$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introduction",
-            "text": "Food is one of the most important elements to the mechanics of $(tfg). You will need to cook food to make it safe to eat and to boost its $(l:cooking/food_and_water#nutrients)Nutritional Properties$().$(br2)Some methods of cooking even offer benefits such as reduced decay times."
+            "title": "简介",
+            "text": "食物是$(tfg)机制中最重要的元素之一。你需要烹饪食物，让它可以安全食用，并提升它的$(l:cooking/food_and_water#nutrients)营养价值$()。$(br2)有些烹饪方式甚至还有额外的好处，比如减缓腐坏速度。"
         },
         {
             "type": "patchouli:text",
             "anchor": "firepit",
-            "title": "Firepit",
-            "text": "A $(item)Firepit$() is likely the first cooking method you will have access to. It is capable of cooking only one item at a time and uses logs as fuel."
+            "title": "篝火",
+            "text": "$(item)篝火$()很可能是你最早能使用的烹饪方式。它一次只能烹饪一个物品，并使用原木作燃料。"
         },
         {
             "type": "patchouli:multiblock",
@@ -36,15 +36,15 @@
                     "X": "tfc:firepit[lit=true]"
                 }
             },
-            "name": "A Firepit",
+            "name": "篝火",
             "text": "",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
             "anchor": "grill",
-            "title": "Grill",
-            "text": "A $(thing)Grill$() is an item that can be added to a $(item)Firepit$(), $(item)Oven$(), or $(l:craftsmanship/gas_burner)Gas Burner$() to cook foods more efficiently. The grill is able to cook five items at once, and also gives these items the $(thing)Wood Grilled$() trait when cooking food, which provides a minor buff to the item's $(l:cooking/decay)expiration date$(). In order to create a firepit with grill, first create a $(l:craftsmanship/firepit)Firepit$(), then use a $(thing)Wrought Iron Grill$() on the firepit."
+            "title": "烤架",
+            "text": "$(thing)烤架$()是可以加装到$(item)篝火$()、$(item)烤炉$()或$(l:craftsmanship/gas_burner)燃气灶$()上的物品，能更高效地烹饪食物。烤架一次可以烹饪五个物品，烹饪时还会赋予食物$(thing)烤制$()特性，能略微延长物品的$(l:cooking/decay)保质期$()。要制作带烤架的篝火，先做出$(l:craftsmanship/firepit)篝火$()，然后对篝火使用$(thing)锻铁烤架$()。"
         },
         {
             "type": "patchouli:multiblock",
@@ -67,9 +67,9 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Cooking Pot",
+            "title": "陶锅",
             "anchor": "pot",
-            "text": "A $(thing)Pot$() is an item that can be added to the $(item)Firepit$(), $(item)Oven$(), or $(l:craftsmanship/gas_burner)Gas Burner$() to cook new types of food and also produce some other useful items.$(br2)In order to create a firepit with a pot, first create a $(l:craftsmanship/firepit)Firepit$(), then use a $(thing)Ceramic Pot$() on the firepit."
+            "text": "$(thing)陶锅$()是可以加装到$(item)篝火$()、$(item)烤炉$()或$(l:craftsmanship/gas_burner)燃气灶$()上的物品，能烹饪新类型的食物，还能做一些其他实用的东西。$(br2)要制作带陶锅的篝火，先做出$(l:craftsmanship/firepit)篝火$()，然后对篝火使用$(thing)陶锅$()。"
         },
         {
             "type": "patchouli:multiblock",
@@ -86,13 +86,13 @@
                     "X": "tfc:pot[lit=true]"
                 }
             },
-            "name": "A Firepit with a Pot",
+            "name": "附有陶锅的篝火",
             "text": "",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
-            "text": "The pot contains five item slots and holds up to $(thing)1000 mB$() of any fluid.$(br2)In order to cook something in the pot, first the fluid must be added by using any type of fluid container, such as a bucket, on the pot. Then add items and light the pot. It will begin boiling for a while until the recipe is completed."
+            "text": "陶锅有五个物品槽，最多可容纳$(thing)1000 mB$()的任意流体。$(br2)要用陶锅烹饪，先要用任意一种流体容器（比如桶）对陶锅使用以加入流体，然后放入物品并点燃陶锅。它会沸腾一段时间，直到配方完成。"
         },
         {
             "type": "patchouli:image",
@@ -108,7 +108,7 @@
             "item": "tfc:food/fruit_soup",
             "title": "炖汤配方",
             "link_recipes": false,
-            "text": "Soup is made from 3-5 $(thing)fruits$(), $(thing)vegetables$(), or $(thing)meats$() in a pot of $(thing)water$(). When the recipe is done, the water in the pot will turn red. $(item)$(k:key.use)$() with a $(l:cooking/bowls)bowl$() to retrieve it. Soup combines multiple nutrients into a single meal."
+            "text": "汤是用 3-5 个$(thing)水果$()、$(thing)蔬菜$()或$(thing)肉类$()放进装着$(thing)水$()的陶锅里煮成的。配方完成时，锅里的水会变红。按下$(item)$(k:key.use)$()并手持$(l:cooking/bowls)碗$()即可盛出。汤能把多种营养合并到一餐之中。"
         },
         {
             "type": "patchouli:spotlight",
@@ -121,42 +121,42 @@
             "title": "烤炉",
             "anchor": "oven",
             "type": "patchouli:text",
-            "text": "$(thing)Ovens$() are a great way of cooking lots of food in a way that improves their shelf life. Oven-baked food decays at 90% of the rate of regular food. Ovens are a multiblock structure consisting of a $(thing)Bottom Oven$(), $(thing)Top Oven$(), and $(thing)Chimneys$(). These blocks start off as clay, and must be $(thing)Cured$() by raising their temperature to a certain amount for long enough."
+            "text": "$(thing)烤炉$()是大量烹饪食物并延长其保存期限的好方法。烤炉烘烤的食物腐坏速度只有普通食物的 90%。烤炉是一个多方块结构，由$(thing)烤炉底$()、$(thing)烤炉顶$()和$(thing)烟囱$()组成。这些方块起初是黏土状态，必须通过长时间加热到足够高的温度来$(thing)硬化$()。"
         },
         {
             "type": "patchouli:text",
-            "text": "Ovens are insulated with $(thing)$(t:#firmalife:oven_insulation)Bricks$(), other oven blocks, or anything that can insulate a Forge. This means you can use stone blocks if you want!$(br2)$(l:game_mechanics/heating#tongs)Tongs$() or $(item)Mittens$() are a safe way to remove hot items from an Oven. Just $(item)$(k:key.use)$() on it while holding it to retrieve items. Otherwise, you may get burned!$(br2)$(item)Oven Appliances$() extend oven functionality."
+            "text": "烤炉可以用$(thing)$(t:#firmalife:oven_insulation)砖块$()、其他烤炉方块，或任何能给木炭炉隔热的东西来隔热——也就是说你完全可以用石头方块！$(br2)$(l:game_mechanics/heating#tongs)钳子$()或$(item)手套$()是安全取出烤炉内炽热物品的工具。只需拿着它对烤炉按$(item)$(k:key.use)$()即可取出物品，否则你可能会被烫伤！$(br2)$(item)烤炉配件$()可以扩展烤炉的功能。"
         },
         {
             "type": "patchouli:text",
-            "title": "Oven Building",
+            "title": "建造烤炉",
             "anchor": "oven_building",
-            "text": "The $(thing)Oven$() first consists of the Top Oven placed on top of the Bottom Oven. All sides of each oven part, besides the front face, should then be covered with $(thing)$(t:#firmalife:oven_insulation)Oven Insulation$() blocks. Placing a stack of three chimneys directly behind the oven causes the smoke from the oven to travel up and out of it, preventing fires. If you don't do this, smoke will quickly fill up your house and fire may spread from the oven!"
+            "text": "$(thing)烤炉$()首先由放在烤炉底之上的烤炉顶组成。随后，除正面外，每个烤炉部件的其余各面都应覆盖$(thing)$(t:#firmalife:oven_insulation)烤炉包裹层$()方块。在烤炉正后方放上一列三个烟囱，烤炉产生的烟气就会向上排出，防止起火。如果不这样做，烟气会迅速充满你的房屋，火势还可能从烤炉蔓延开！"
         },
         {
             "type": "patchouli:text",
             "anchor": "bottom_oven",
-            "text": "The Bottom Oven is used to hold fuel, which may only be logs. Press $(item)$(k:key.use)$() to add them. The bottom oven is also the part of the oven which may be lit with a $(thing)Firestarter$() or other tool. It will transfer generated heat to the top oven or appliances.$(br2)The bottom oven must be insulated to maintain heat."
+            "text": "烤炉底用于存放燃料，燃料只能是原木。按$(item)$(k:key.use)$()即可添加。烤炉底也是整个烤炉中可以用$(thing)起火器$()或其他工具点燃的部分。它会把产生的热量传递给烤炉顶或配件。$(br2)烤炉底必须隔热才能保持热量。"
         },
         {
             "type": "patchouli:text",
             "anchor": "top_oven",
-            "text": "The Top Oven contains the items that are being cooked. It will draw heat from the Bottom Oven and slowly release it over time. Press $(item)$(k:key.use)$() with an item to insert. Remember to use $(thing)Tongs$() or $(thing)Mittens$() to remove the items after.$(br2)The top oven needs insulation to reach higher temperatures. But it is not always recommended since some items like bread can burn to ash if left at high heat."
+            "text": "烤炉顶存放正在烹饪的食物。它会从烤炉底吸收热量，并随时间缓慢释放。手持物品按$(item)$(k:key.use)$()即可放入。记得之后用$(thing)钳子$()或$(thing)手套$()取出物品。$(br2)烤炉顶需要隔热才能达到更高的温度，但并不总是建议这样做，因为面包之类的食物在高热下放置过久会烧成灰烬。"
         },
         {
             "type": "patchouli:text",
-            "text": "Pots and Grills can be placed on top of a $(thing)Bottom Oven$(). These devices will get heat automatically from the bottom oven. The pot is only able to be used for making soup. It cannot execute regular pot recipes."
+            "text": "陶锅和烤架可以放在$(thing)烤炉底$()上。这些器具会自动从烤炉底获取热量。陶锅只能用来做汤，无法执行常规的陶锅配方。"
         },
         {
             "type": "patchouli:text",
-            "title": "Oven Curing",
+            "title": "烤炉硬化",
             "anchor": "oven_curing",
-            "text": "Curing Oven blocks is easy, but requires patience. Simply start running your Bottom Oven as you would normally, and then wait. If an oven block is above $(t:Dark Red **)$(4)600$()°C for about 80 seconds, it will cure itself and any oven blocks around it. The curing effect will pass all the way up chimneys nearby."
+            "text": "硬化烤炉方块很简单，但需要耐心。只需像平常一样开始烧你的烤炉底，然后等待。如果某个烤炉方块在约 80 秒内保持高于$(t:暗红**)$(4)600$()°C 的温度，它就会自行硬化，并使其周围的烤炉方块也一并硬化。硬化效果会一路传递到附近的烟囱上。"
         },
         {
             "type": "patchouli:multiblock",
-            "name": "Uncured Oven",
-            "text": "Ovens should first be assembed $(n)uncured$(). You can customize the appliances and size.",
+            "name": "未硬化的烤炉",
+            "text": "烤炉应先以$(n)未硬化$()的状态组装，这样你可以自由定制配件和大小。",
             "enable_visualize": true,
             "multiblock": {
                 "pattern": [
@@ -210,8 +210,8 @@
         },
         {
             "type": "patchouli:multiblock",
-            "name": "Cured Oven",
-            "text": "Example oven structure after curing.",
+            "name": "已硬化的烤炉",
+            "text": "硬化后的烤炉结构示例。",
             "enable_visualize": false,
             "multiblock": {
                 "pattern": [
@@ -270,33 +270,33 @@
         {
             "type": "patchouli:crafting",
             "recipe": "firmalife:crafting/oven_insulation",
-            "text": "Crafting oven insulation for your Bottom Oven allows you to remove the need for insulating it on the sides and back. It does not remove the need for the chimney or to insulate top ovens. Use $(item)$(k:key.use)$() to apply it."
+            "text": "为烤炉底制作烤炉包裹层，可以免去包裹其四周和背面的需要，但这不能省去烟囱，也不能省去给烤炉顶包裹隔热层。手持它按$(item)$(k:key.use)$()即可涂抹。"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Aesthetics",
+            "title": "外观装饰",
             "anchor": "countertop",
             "item": "firmalife:brick_countertop,firmalife:rustic_countertop,firmalife:tile_countertop,firmalife:stone_countertop,firmalife:rustic_finish,firmalife:tile_finish,firmalife:stone_finish",
-            "text": "$(thing)Countertops$() and $(thing)Finishes$() are aesthetic blocks that count as oven parts. Finishes are applied with $(item)$(k:key.use)$(). Only $(n)brick$() oven blocks may take on finishes. Stone finish can't be applied to brick. Use $(item)Sealed bricks$() to match the look."
+            "text": "$(thing)台面$()和$(thing)饰面$()是可视作烤炉部件的装饰性方块。饰面通过$(item)$(k:key.use)$()涂抹。只有$(n)砖$()制烤炉方块才能接受饰面，石制饰面不能涂在砖上。可以使用$(item)密封砖$()来搭配外观。"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Oven Hopper",
+            "title": "烤炉漏斗",
             "anchor": "oven_hopper",
             "item": "firmalife:oven_hopper",
-            "text": "The $(thing)Oven Hopper$() will input logs into any Bottom Oven that it is facing. It holds 16 logs (4 stacks of 4, like a log pile), and its inventory is fed by dropping items in the top. Item pipes are capable of doing the same thing, but they cannot act as insulation."
+            "text": "$(thing)烤炉漏斗$()会把原木输入它所朝向的任何烤炉底。它能容纳 16 根原木（4 组、每组 4 根，和原木堆一样），从顶部丢入物品即可补充它的储存。物品管道也能做到同样的事，但管道无法充当隔热层。"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Ashtray",
+            "title": "炉灰收集器",
             "anchor": "ashtray",
             "item": "firmalife:ashtray",
-            "text": "The $(thing)Ashtray$() collects $(thing)Wood Ash$() when placed below a $(thing)Bottom Oven Block$(). There is a 0.5 chance it gains ash when fuel is consumed. Ash is extracted with $(item)$(k:key.use)$() or hoppers, and inserted via $(item)$(k:key.attack)$() it."
+            "text": "$(thing)炉灰收集器$()放在$(thing)烤炉底方块$()下方时会收集$(thing)草木灰$()。每次消耗燃料时有 0.5 的几率积累草木灰。草木灰可用$(item)$(k:key.use)$()或漏斗取出，并用$(item)$(k:key.attack)$()放入。"
         },
         {
             "type": "patchouli:multiblock",
-            "name": "Insulated Oven",
-            "text": "Example of an insulated oven with appliances and a finish.$(br)Note: $(7)Vats, pots and grills count as insulating blocks.$()",
+            "name": "隔热烤炉",
+            "text": "带配件和饰面的隔热烤炉示例。$(br)注意：$(7)铁锅、陶锅和烤架都算作隔热方块。$()",
             "enable_visualize": false,
             "multiblock": {
                 "pattern": [
@@ -359,18 +359,18 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Vat",
+            "title": "铁锅",
             "anchor": "vat",
             "item": "firmalife:vat",
-            "text": "The $(thing)Vat$() produces boiling recipes in bulk. It has one slot for items, and 10,000mB of fluid space, similar to a barrel.$(br2)Vats can only hold one fluid type at a time. So, if you make a recipe that outputs fluids while still having leftover fluid inputs it will void those inputs!"
+            "text": "$(thing)铁锅$()可以批量生产沸腾配方。它有一个物品槽和 10,000mB 的流体空间，类似大桶。$(br2)铁锅一次只能容纳一种流体。因此，如果你运行的配方在输出流体的同时还有剩余的流体输入，这些剩余的流体就会被直接销毁！"
         },
         {
             "type": "patchouli:text",
-            "text": "To use a vat, $(item)$(k:key.use)$() it with fluids and items to add them to the inventory. With an empty hand and $(item)$(k:key.sneak)$() held, click to seal and unseal the vat. A vat will not boil until it is sealed.$(br)Vats should be placed above a $(thing)Bottom Oven$(). If the vat overflowed on completion of the recipe, it will not boil!$(br2)Vats can be automatically opened and closed with $(thing)Redstone$(), and interact with $(item)pipes$() or a $(item)Mechanical Arm$()."
+            "text": "手持流体和物品对铁锅按$(item)$(k:key.use)$()即可将其加入。空手按住$(item)$(k:key.sneak)$()并点击，可以密封和解封铁锅。铁锅在密封之前不会沸腾。$(br)铁锅应放置在$(thing)烤炉底$()之上。如果配方完成时铁锅溢出，它就不会沸腾！$(br2)铁锅可以用$(thing)红石$()自动开关，并能与$(item)管道$()或$(item)机械手$()互动。"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Example of an oven with a $(l:cooking/cooking_methods#vat)Vat$() and $(l:cooking/cooking_methods#jarring_station)Jarring Station$().",
+            "text": "带有$(l:cooking/cooking_methods#vat)铁锅$()和$(l:cooking/cooking_methods#jarring_station)装罐台$()的烤炉示例。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -436,16 +436,16 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Jarring Station",
+            "title": "装罐台",
             "anchor": "jarring_station",
             "item": "firmalife:jarring_station",
-            "text": "The $(thing)Jarring Station$() is used to automatically fill $(6)$(t:Empty Jar with Lid)Jars$() with the $(l:cooking/cooking_methods#vat)Vat$(). The jarring station has a spout on one side that should point to the vat.$(br)When the vat produces jam, it will automatically fill the jars with it and seal them."
+            "text": "$(thing)装罐台$()用于自动为$(6)$(t:带盖的空壶)罐子$()灌入$(l:cooking/cooking_methods#vat)铁锅$()中产出的果酱。装罐台有一侧带出料口，这一侧应朝向铁锅。$(br)当铁锅产出果酱时，它会自动把果酱灌入罐子并封口。"
         },
         {
             "type": "patchouli:multiblock",
-            "name": "Electric Oven",
+            "name": "电烤箱",
             "anchor": "electric_oven",
-            "text": "The $(item)Electric Oven$() is a machine added by $(tfg) to automatically cook food items using $(thing)EU$().",
+            "text": "$(item)电烤箱$()是$(tfg)添加的机器，使用$(thing)EU$()自动烹饪食物。",
             "enable_visualize": false,
             "multiblock": {
                 "pattern": [
@@ -463,9 +463,9 @@
         },
         {
             "type": "patchouli:multiblock",
-            "name": "Food Processor",
+            "name": "食品加工机",
             "anchor": "food_processor",
-            "text": "The $(item)Food Processor$() is another machine added by $(tfg_short) to automatically create meals or process food ingredients using $(thing)EU$().",
+            "text": "$(item)食品加工机$()是$(tfg_short)添加的另一款机器，使用$(thing)EU$()自动制作餐点或加工食材。",
             "enable_visualize": false,
             "multiblock": {
                 "pattern": [
@@ -483,7 +483,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/food_and_water",

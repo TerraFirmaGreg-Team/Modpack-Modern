@@ -1,5 +1,5 @@
 {
-    "name": "Cooking Methods",
+    "name": "Методы головки",
     "category": "tfg:cooking",
     "icon": "tfc:grill",
     "pages": [
@@ -7,19 +7,19 @@
             "type": "patchouli:text",
             "title": "Каталог",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:cooking/cooking_methods#firepit)Firepit$()$(li2)$(l:cooking/cooking_methods#grill)Grill$()$(li2)$(l:cooking/cooking_methods#pot)Pot$()$(li)$(bold)$(l:cooking/cooking_methods#oven)Ovens$()$(li2)$(l:cooking/cooking_methods#vat)Vat$()$(li2)$(l:cooking/cooking_methods#jarring_station)Jarring Station$()$(li)$(bold)$(l:cooking/cooking_methods#electric_oven)Electric Oven$()$(li)$(bold)$(l:cooking/cooking_methods#food_processor)Food Processor$()"
+            "text": "$(li)$(bold)$(l:cooking/cooking_methods#firepit)Костёр$()$(li2)$(l:cooking/cooking_methods#grill)Гриль$()$(li2)$(l:cooking/cooking_methods#pot)Горшок$()$(li)$(bold)$(l:cooking/cooking_methods#oven)Печь$()$(li2)$(l:cooking/cooking_methods#vat)Чан$()$(li2)$(l:cooking/cooking_methods#jarring_station)Разливочная станция$()$(li)$(bold)$(l:cooking/cooking_methods#electric_oven)Электрическая духовка$()$(li)$(bold)$(l:cooking/cooking_methods#food_processor)Кухонный комбайн$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introduction",
-            "text": "Food is one of the most important elements to the mechanics of $(tfg). You will need to cook food to make it safe to eat and to boost its $(l:cooking/food_and_water#nutrients)Nutritional Properties$().$(br2)Some methods of cooking even offer benefits such as reduced decay times."
+            "title": "Введение",
+            "text": "Еда, это одна из самых важных механик всего $(tfg). Тебе нужно будет готовить правильную еду, чтобы иметь большой запас здоровья и $(l:cooking/food_and_water#nutrients)Нутриентов$().$(br2) Некоторые методы готовки позволяют увеличить срок хранения относительно других."
         },
         {
             "type": "patchouli:text",
             "anchor": "firepit",
-            "title": "Firepit",
-            "text": "A $(item)Firepit$() is likely the first cooking method you will have access to. It is capable of cooking only one item at a time and uses logs as fuel."
+            "title": "Костёр",
+            "text": "$(item)Костёр$() это скорее всего первое о чём ты подумал, когда зашла речь про жарку мяса. Он может жарить всего 1 предмет за раз, и использует дерево как топливо."
         },
         {
             "type": "patchouli:multiblock",
@@ -36,15 +36,15 @@
                     "X": "tfc:firepit[lit=true]"
                 }
             },
-            "name": "A Firepit",
+            "name": "Костёр",
             "text": "",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
             "anchor": "grill",
-            "title": "Grill",
-            "text": "A $(thing)Grill$() is an item that can be added to a $(item)Firepit$(), $(item)Oven$(), or $(l:craftsmanship/gas_burner)Gas Burner$() to cook foods more efficiently. The grill is able to cook five items at once, and also gives these items the $(thing)Wood Grilled$() trait when cooking food, which provides a minor buff to the item's $(l:cooking/decay)expiration date$(). In order to create a firepit with grill, first create a $(l:craftsmanship/firepit)Firepit$(), then use a $(thing)Wrought Iron Grill$() on the firepit."
+            "title": "Гриль",
+            "text": "$(thing)Гриль$() это предмет, который можно поставить на $(item)Костёр$(), $(item)Печь$() или на $(l:craftsmanship/gas_burner)Газовую горелку$() что позволит гораздо эффективнее готовить еду. Гриль может приготовить до 5 предметов за раз и наделяет еду свойством $(thing)Жаренный на брёвнах$(), что слегка продливает их $(l:cooking/decay) срок хранения$(). Чтобы создать гриль на костре, сначала сделай $(l:craftsmanship/firepit)Костёр$(), а затем  кликни по нему держа в руках $(thing)Гриль из кованого железа$()"
         },
         {
             "type": "patchouli:multiblock",
@@ -67,9 +67,9 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Cooking Pot",
+            "title": "Горшок",
             "anchor": "pot",
-            "text": "A $(thing)Pot$() is an item that can be added to the $(item)Firepit$(), $(item)Oven$(), or $(l:craftsmanship/gas_burner)Gas Burner$() to cook new types of food and also produce some other useful items.$(br2)In order to create a firepit with a pot, first create a $(l:craftsmanship/firepit)Firepit$(), then use a $(thing)Ceramic Pot$() on the firepit."
+            "text": "$(thing)Горшок$() это предмет, который можно поставить на $(item)Костёр$(), $(item)Печь$() или на $(l:craftsmanship/gas_burner)Газовую горелку$(). Он даёт возможность готовить особенные типы еды, или выполнять некоторые полезные рецепты. $(br2) Чтобы создать горшок на костре, сначала сделай $(l:craftsmanship/firepit)Костёр$(), а затем  кликни по нему держа в руках $(thing)Горшок$()"
         },
         {
             "type": "patchouli:multiblock",
@@ -86,13 +86,13 @@
                     "X": "tfc:pot[lit=true]"
                 }
             },
-            "name": "A Firepit with a Pot",
+            "name": "Горшок на костре",
             "text": "",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
-            "text": "The pot contains five item slots and holds up to $(thing)1000 mB$() of any fluid.$(br2)In order to cook something in the pot, first the fluid must be added by using any type of fluid container, such as a bucket, on the pot. Then add items and light the pot. It will begin boiling for a while until the recipe is completed."
+            "text": "Горшок вмещает до 5 слотов и до $(thing) 1000 mB$() любой жидкости. "
         },
         {
             "type": "patchouli:image",

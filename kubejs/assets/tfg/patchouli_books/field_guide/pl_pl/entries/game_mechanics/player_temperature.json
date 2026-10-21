@@ -58,7 +58,7 @@
 			"type": "patchouli:text",
 			"title": "Jedzenie i picie",
 			"anchor": "food",
-			"text": "Some $(l:cooking)food$() and $(l:cooking/drinks)drinks$() may have effects that influence the player's temperature. These are:$(li)$(l:game_mechanics/mob_effects#cooling)Cooling$()$(li)$(l:game_mechanics/mob_effects#warming)Warming$()$(li)$(l:game_mechanics/mob_effects#freezing)Freezing$()$(li)$(l:game_mechanics/mob_effects#blazing)Blazing$()$(br2)Drinking $(l:cooking/drinks#spring_water)Spring Water$() will warm you up, and $(l:cooking/drinks#ice_slush)Ice Slush$() will cool you down."
+			"text": "Niektóre $(l:cooking)potrawy$() i $(l:cooking/drinks)napoje$() mogą wywoływać efekty wpływające na temperaturę gracza. Są to:$(li)$(l:game_mechanics/mob_effects#cooling)Chłodzenie$()$(li)$(l:game_mechanics/mob_effects#warming)Ogrzewanie$()$(li)$(l:game_mechanics/mob_effects#freezing)Zamrożenie$()$(li)$(l:game_mechanics/mob_effects#blazing)Pieczenie$()$(br2)Wypicie $(l:cooking/drinks#spring_water)wody źródlanej$() ogrzeje cię, a $(l:cooking/drinks#ice_slush)płynnego lodu$() ochłodzi."
 		},
 		{
 			"type": "patchouli:text",
@@ -77,7 +77,368 @@
 			"type": "patchouli:spotlight",
 			"item": "tfg:heat_pump",
 			"anchor": "heat_pump",
-			"text": "Once you're able to $(thing)harness electricity$(), you can craft the $(item)Heat Pump$(), a multiblock that will warm up or cool down much larger sized buildings."
+			"text": "Once you've reached $(thing)MV Circuits$(), you can craft the $(item)Heat Pump$(), a multiblock that will warm up or cool down much larger sized buildings.$(br2)You will also need to insert a Turbine Rotor in the $(item)Exhaust Vent$() so the Heat Pump can run.$(br2)$(o)(Continued on next page...)$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:turbine_rotor{GT.PartStats:{Material:\"tfg:silicon_carbide_silicon_carbide\"}},gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:vanadium\"}},gtceu:turbine_rotor{GT.PartStats:{Material:\"tfg:rene_41\"}}",
+			"title": "Wirnik turbiny",
+			"text": "The $(item)Turbine Rotor$() inserted in your Exhaust Vent will never lose durability, therefore it's a stat you can ignore. On the other hand, the Turbine's $(thing)Power$() will influence the discount you get on the $(thing)EU/t requirement$()."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "At this point in the game, the easiest solution is a $(item)Vanadium Rotor$(), but you could also go for the $(item)René-41 Rotor$() or the $(item)SiC-SiC Rotor$().$(br2)$(bold)Tip:$() The Heat Pump will still work even if your doors are open, but otherwise needs an enclosed area of non-air blocks to work.$(br2)$(italic)If the Turbine's $(thing)Power$() is under 100%, you will gain no benefits or drawbacks.$()"
+		},
+		{
+			"type": "tfg:multimultiblock",
+			"text": "W razie potrzeby możesz rozszerzyć pompę ciepła na 10 rur!",
+			"name": " ",
+			"enable_visualize": true,
+			"multiblocks": [
+				{
+				"pattern": [
+					[
+						"S1S",
+						"SSS",
+						"   ",
+						"SSS"
+					],
+					[
+						"VVV",
+						"SPS",
+						" P ",
+						"SBS"
+					],
+					[
+						"2HS",
+						"SSS",
+						" 0 ",
+						"SSS"
+					]
+				],
+				"mapping": {
+					"0": "minecraft:air",
+					"S": "tfg:casings/machine_casing_pressure_dark",
+					"P": "gtceu:steel_pipe_casing",
+					"V": "ad_astra:vent",
+					"H": "tfg:oxygen_distributor[facing=west]",
+					"B": "tfg:rotor_vent[facing=east]",
+					"1": "gtceu:maintenance_hatch[facing=west]",
+					"2": "gtceu:mv_input_hatch[facing=west]"
+				}
+				},
+				{
+				"pattern": [
+					[
+						"S1S",
+						"SSS",
+						"   ",
+						"   ",
+						"SSS"
+					],
+					[
+						"VVV",
+						"SPS",
+						" P ",
+						" P ",
+						"SBS"
+					],
+					[
+						"2HS",
+						"SSS",
+						" 0 ",
+						"   ",
+						"SSS"
+					]
+				],
+				"mapping": {
+					"0": "minecraft:air",
+					"S": "tfg:casings/machine_casing_pressure_dark",
+					"P": "gtceu:steel_pipe_casing",
+					"V": "ad_astra:vent",
+					"H": "tfg:oxygen_distributor[facing=west]",
+					"B": "tfg:rotor_vent[facing=east]",
+					"1": "gtceu:maintenance_hatch[facing=west]",
+					"2": "gtceu:mv_input_hatch[facing=west]"
+				}
+				},
+				{
+				"pattern": [
+					[
+						"S1S",
+						"SSS",
+						"   ",
+						"   ",
+						"   ",
+						"SSS"
+					],
+					[
+						"VVV",
+						"SPS",
+						" P ",
+						" P ",
+						" P ",
+						"SBS"
+					],
+					[
+						"2HS",
+						"SSS",
+						"   ",
+						" 0 ",
+						"   ",
+						"SSS"
+					]
+				],
+				"mapping": {
+					"0": "minecraft:air",
+					"S": "tfg:casings/machine_casing_pressure_dark",
+					"P": "gtceu:steel_pipe_casing",
+					"V": "ad_astra:vent",
+					"H": "tfg:oxygen_distributor[facing=west]",
+					"B": "tfg:rotor_vent[facing=east]",
+					"1": "gtceu:maintenance_hatch[facing=west]",
+					"2": "gtceu:mv_input_hatch[facing=west]"
+				}
+				},
+				{
+				"pattern": [
+					[
+						"S1S",
+						"SSS",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"SSS"
+					],
+					[
+						"VVV",
+						"SPS",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						"SBS"
+					],
+					[
+						"2HS",
+						"SSS",
+						"   ",
+						" 0 ",
+						"   ",
+						"   ",
+						"SSS"
+					]
+				],
+				"mapping": {
+					"0": "minecraft:air",
+					"S": "tfg:casings/machine_casing_pressure_dark",
+					"P": "gtceu:steel_pipe_casing",
+					"V": "ad_astra:vent",
+					"H": "tfg:oxygen_distributor[facing=west]",
+					"B": "tfg:rotor_vent[facing=east]",
+					"1": "gtceu:maintenance_hatch[facing=west]",
+					"2": "gtceu:mv_input_hatch[facing=west]"
+				}
+				},
+				{
+				"pattern": [
+					[
+						"S1S",
+						"SSS",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"SSS"
+					],
+					[
+						"VVV",
+						"SPS",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						"SBS"
+					],
+					[
+						"2HS",
+						"SSS",
+						"   ",
+						"   ",
+						" 0 ",
+						"   ",
+						"   ",
+						"SSS"
+					]
+				],
+				"mapping": {
+					"0": "minecraft:air",
+					"S": "tfg:casings/machine_casing_pressure_dark",
+					"P": "gtceu:steel_pipe_casing",
+					"V": "ad_astra:vent",
+					"H": "tfg:oxygen_distributor[facing=west]",
+					"B": "tfg:rotor_vent[facing=east]",
+					"1": "gtceu:maintenance_hatch[facing=west]",
+					"2": "gtceu:mv_input_hatch[facing=west]"
+				}
+				},
+				{
+				"pattern": [
+					[
+						"S1S",
+						"SSS",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"SSS"
+					],
+					[
+						"VVV",
+						"SPS",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						"SBS"
+					],
+					[
+						"2HS",
+						"SSS",
+						"   ",
+						"   ",
+						" 0 ",
+						"   ",
+						"   ",
+						"   ",
+						"SSS"
+					]
+				],
+				"mapping": {
+					"0": "minecraft:air",
+					"S": "tfg:casings/machine_casing_pressure_dark",
+					"P": "gtceu:steel_pipe_casing",
+					"V": "ad_astra:vent",
+					"H": "tfg:oxygen_distributor[facing=west]",
+					"B": "tfg:rotor_vent[facing=east]",
+					"1": "gtceu:maintenance_hatch[facing=west]",
+					"2": "gtceu:mv_input_hatch[facing=west]"
+				}
+				},
+				{
+				"pattern": [
+					[
+						"S1S",
+						"SSS",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"SSS"
+					],
+					[
+						"VVV",
+						"SPS",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						"SBS"
+					],
+					[
+						"2HS",
+						"SSS",
+						"   ",
+						"   ",
+						"   ",
+						" 0 ",
+						"   ",
+						"   ",
+						"   ",
+						"SSS"
+					]
+				],
+				"mapping": {
+					"0": "minecraft:air",
+					"S": "tfg:casings/machine_casing_pressure_dark",
+					"P": "gtceu:steel_pipe_casing",
+					"V": "ad_astra:vent",
+					"H": "tfg:oxygen_distributor[facing=west]",
+					"B": "tfg:rotor_vent[facing=east]",
+					"1": "gtceu:maintenance_hatch[facing=west]",
+					"2": "gtceu:mv_input_hatch[facing=west]"
+				}
+				},
+				{
+				"pattern": [
+					[
+						"S1S",
+						"SSS",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"SSS"
+					],
+					[
+						"VVV",
+						"SPS",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						"SBS"
+					],
+					[
+						"2HS",
+						"SSS",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						" 0 ",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"SSS"
+					]
+				],
+				"mapping": {
+					"0": "minecraft:air",
+					"S": "tfg:casings/machine_casing_pressure_dark",
+					"P": "gtceu:steel_pipe_casing",
+					"V": "ad_astra:vent",
+					"H": "tfg:oxygen_distributor[facing=west]",
+					"B": "tfg:rotor_vent[facing=east]",
+					"1": "gtceu:maintenance_hatch[facing=west]",
+					"2": "gtceu:mv_input_hatch[facing=west]"
+				}
+				}
+			]
 		},
 		{
 			"type": "patchouli:relations",

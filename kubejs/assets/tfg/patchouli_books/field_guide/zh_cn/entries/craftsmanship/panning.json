@@ -1,23 +1,23 @@
 {
-    "name": "Panning & Sluices",
+    "name": "淘金与洗矿槽",
     "category": "tfg:craftsmanship",
     "icon": "tfc:pan/empty",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "panning",
-            "title": "Panning",
-            "text": "$(thing)Panning$() is a method of obtaining ore dusts of certain native ores by searching in rivers and other waterways.$(br2)Panning makes use of $(t:#tfc:ore_deposits)$(6)Ore Deposits$() which are found in gravel patches in the bottom of lakes and rivers.$(br2)In order to get started panning, you will need an $(item)Empty Pan$()."
+            "title": "淘金",
+            "text": "$(thing)淘金$()是在河流和其他水道中搜寻特定自然金属矿石矿粉的方法。$(br2)淘金利用的是$(t:#tfc:ore_deposits)$(6)矿石沉积物$()，它们出现在湖泊和河流底部的砂砾区块中。$(br2)要开始淘金，你需要一个$(item)空淘金盘$()。"
         },
         {
             "type": "tfg:knapping_recipe",
             "recipe": "tfc:clay_knapping/pan",
-            "text": "Clay can be $(l:craftsmanship/pottery)knapped$() into a pan as shown above."
+            "text": "如上图所示，粘土可以$(l:craftsmanship/pottery)塑形$()成淘金盘。"
         },
         {
             "type": "tfg:heat_recipe",
             "recipe": "tfc:heating/ceramic_pan",
-            "text": "Once the pan has been $(thing)knapped$(), it needs to be $(l:game_mechanics/heating)fired$() to create a $(thing)Ceramic Pan$().$(br2)The next thing you will need to find is some sort of $(t:#tfc:ore_deposits)$(6)Ore Deposit$(). Ore deposits can come in several different ores: Native Copper, Native Silver, Native Gold, and Cassiterite."
+            "text": "淘金盘$(thing)塑形$()完成后，还需要$(l:game_mechanics/heating)烧制$()成$(thing)陶瓷淘金盘$()。$(br2)接下来你需要找到某种$(t:#tfc:ore_deposits)$(6)矿石沉积物$()。矿石沉积物有几种不同的矿石：原生铜、原生银、原生金和锡石。"
         },
         {
             "type": "patchouli:multiblock",
@@ -34,13 +34,13 @@
                     "X": "#tfc:ore_deposits"
                 }
             },
-            "name": "Example Deposit",
-            "text": "Ore deposits in gravel.",
+            "name": "沉积物示例",
+            "text": "砂砾中的矿石沉积物。",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
-            "text": "Now you can begin panning!$(br2)$(bold)1.$() With the pan in hand, $(item)$(k:key.use)$() it on the ore deposit block.$(br2)$(bold)2.$() While standing in water with the pan in your hand, hold down $(item)$(k:key.use)$() and you will start panning.$(br2)$(bold)3.$() After a few moments, if you are lucky, you may be rewarded with some ore dust in your inventory."
+            "text": "现在你可以开始淘金了！$(br2)$(bold)1.$()手持淘金盘，对着矿石沉积物方块$(item)$(k:key.use)$()。$(br2)$(bold)2.$()站在水里并手持淘金盘，按住$(item)$(k:key.use)$()即可开始淘洗。$(br2)$(bold)3.$()片刻之后，如果运气好，你的物品栏里就会多出一些矿粉。"
         },
         {
             "type": "patchouli:image",
@@ -52,9 +52,9 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "sluice",
-            "title": "Sluices",
+            "title": "洗矿槽",
             "item": "tag:tfc:sluices",
-            "text": "The $(thing)Sluice$() is a device that is used to process $(thing)Ore Deposits$() automatically, producing the same results that $(l:craftsmanship/panning#panning)Panning$() does, with slightly higher probabilities."
+            "text": "$(thing)洗矿槽$()是一种用来自动处理$(thing)矿石沉积物$()的设备，其产出与$(l:craftsmanship/panning#panning)淘金$()相同，但概率略高。"
         },
         {
             "type": "patchouli:text",
@@ -82,12 +82,12 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Panning and sluicing can give a few possible products: $(thing)Ore Dusts$(), $(thing)Small Piles of Ore Dust$(), $(thing)Loose Rocks$(), and $(thing)Gems$().$(br)The probabilities for obtaining certain drops can be viewed by looking at the ore deposit in $(emi).",
-            "title": "Expected Products"
+            "text": "淘金和洗矿可能产出以下几种产物：$(thing)矿粉$()、$(thing)小堆矿粉$()、$(thing)石子$()和$(thing)宝石$()。$(br)想查看特定掉落物的获取概率，可以在 $(emi) 中查看矿石沉积物。",
+            "title": "可获得的产物"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",

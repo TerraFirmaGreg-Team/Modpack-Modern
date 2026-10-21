@@ -36,7 +36,7 @@
             "type": "patchouli:text",
             "anchor": "seasons",
             "title": "季節",
-            "text": "TerraFirmaCraft 有四個季節，天氣和氣候會隨之變化！每個季節分為$(thing)初$()、$(thing)中$()、$(thing)末$()三個月。四個季節分別是：$(br)$(li)$(bold)春季$()：3 月 - 5 月$(li)$(bold)夏季$()：6 月 - 8 月$(li)$(bold)秋季$()：9 月 - 11 月$(li)$(bold)冬季$()：12 月 - 2 月"
+            "text": "TerraFirmaCraft(群巒傳說) 有四個季節，天氣和氣候會隨之變化！每個季節分為$(thing)初$()、$(thing)中$()、$(thing)末$()三個月。四個季節分別是：$(br)$(li)$(bold)春季$()：3 月 - 5 月$(li)$(bold)夏季$()：6 月 - 8 月$(li)$(bold)秋季$()：9 月 - 11 月$(li)$(bold)冬季$()：12 月 - 2 月"
         },
         {
             "type": "patchouli:text",
@@ -64,7 +64,7 @@
             "type": "patchouli:text",
             "title": "溫度",
             "anchor": "temperature",
-            "text": "TerraFirmaCraft 中的當前溫度受許多因素影響：$(br)$(li)首先，所在區域――尤其是緯度――影響最大，並記錄為$(thing)平均溫度$()。$(li)其次，當前的季節會影響溫度。$(li)第三，溫度每天都可能不同，也會隨每小時變化。$(li)最後，溫度會隨海拔變化。"
+            "text": "TerraFirmaCraft(群巒傳說) 中的當前溫度受許多因素影響：$(br)$(li)首先，所在區域――尤其是緯度――影響最大，並記錄為$(thing)平均溫度$()。$(li)其次，當前的季節會影響溫度。$(li)第三，溫度每天都可能不同，也會隨每小時變化。$(li)最後，溫度會隨海拔變化。"
         },
         {
             "type": "patchouli:image",

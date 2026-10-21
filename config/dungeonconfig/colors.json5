@@ -1,0 +1,126 @@
+// Colours for this mod's Dungeon Config screen, in ARGB hex (alpha, red, green, blue).
+// Lines starting with // are comments. Edit a value and reopen the screen to see it.
+{
+  // Top of the background gradient
+  "BG_TOP": "0xFF0B3647",
+  // Middle of the background gradient
+  "BG_MID": "0xFF0A2633",
+  // Bottom of the background gradient
+  "BG_BOTTOM": "0xFF060D14",
+  // Tint applied over the background picture
+  "BG_TINT": "0xFF06293A",
+  // Faint decorative blocks in the background
+  "BG_BLOCK": "0x0EFFFFFF",
+  // Vertical light streaks in the background
+  "BG_STREAK": "0x2E7FE3FF",
+  // Top of the header bar gradient
+  "BAR_TOP": "0xFF1B1816",
+  // Bottom of the header bar gradient
+  "BAR_BOTTOM": "0xFF0F0D0B",
+  // Header bar bottom edge line
+  "BAR_EDGE": "0xFF2C2824",
+  // Inactive tab text
+  "TAB_TEXT": "0xFF8F999E",
+  // Hovered tab text
+  "TAB_HOVER": "0xFFC9D1D4",
+  // Selected tab text
+  "TAB_SELECTED": "0xFFF4F4F2",
+  // Primary accent (orange) - used for highlights and the active tab underline
+  "ACCENT": "0xFFFFA300",
+  // Lighter accent for gradients and glows
+  "ACCENT_LIGHT": "0xFFFFC85A",
+  // Darker accent for shadows
+  "ACCENT_DARK": "0xFFB86A00",
+  // Section header text in the list
+  "HEADER": "0xFFC3CDD2",
+  // List row background
+  "ROW": "0x2E000A12",
+  // Hovered list row highlight
+  "ROW_HOVER": "0x14FFFFFF",
+  // Selected list row highlight
+  "ROW_SELECTED": "0x24C8E4F0",
+  // Row border when a dropdown is open
+  "ROW_BORDER": "0xE09FB4BF",
+  // Setting label text
+  "LABEL": "0xFFD6DFE2",
+  // Dimmed label text (e.g. for sub-labels)
+  "LABEL_DIM": "0xFF9DAAB0",
+  // Setting value text
+  "VALUE": "0xFFF2F4F2",
+  // Value input box background
+  "VALUE_BOX": "0xC2041722",
+  // Value input box background when hovered/focused
+  "VALUE_BOX_HOVER": "0xD8072433",
+  // Value input box border
+  "VALUE_BOX_EDGE": "0x40A9C6D2",
+  // Muted secondary text
+  "MUTED": "0xFF71828A",
+  // Text input caret
+  "CARET": "0xFFFFC85A",
+  // Toggle switch ON fill
+  "TOGGLE_ON": "0xFF22D467",
+  // Toggle switch ON shadow
+  "TOGGLE_ON_DARK": "0xFF139A47",
+  // Toggle switch ON checkmark
+  "TOGGLE_MARK": "0xFF0B3F20",
+  // Toggle switch border
+  "TOGGLE_EDGE": "0xFF07131A",
+  // Toggle switch OFF fill
+  "TOGGLE_OFF": "0xD0091A23",
+  // Toggle switch OFF circle
+  "TOGGLE_CIRCLE": "0xFF6C7C86",
+  // Slider knob main color
+  "KNOB": "0xFFDCDDD6",
+  // Slider knob top highlight
+  "KNOB_LIGHT": "0xFFF4F4EE",
+  // Slider knob bottom shade
+  "KNOB_SHADE": "0xFFA3A49E",
+  // Slider knob outline
+  "KNOB_DARK": "0xFF6B6C68",
+  // Slider track background
+  "SLIDER_TRACK": "0xFF2B4A58",
+  // Slider filled portion
+  "SLIDER_FILL": "0xFF8FD3EE",
+  // Slider filled portion bottom edge
+  "SLIDER_FILL_DARK": "0xFF3D8FB2",
+  // Keybind chip background
+  "CHIP": "0xFFDCDCCD",
+  // Keybind chip bottom shade
+  "CHIP_SHADE": "0xFFA6A799",
+  // Keybind chip border
+  "CHIP_EDGE": "0xFF0C1216",
+  // Keybind chip text
+  "CHIP_TEXT": "0xFF1C2A1A",
+  // Footer (bottom bar) text
+  "FOOTER_TEXT": "0xFFD9E1E4",
+  // Description panel background
+  "PANEL": "0xE0061B25",
+  // Description panel frame
+  "PANEL_FRAME": "0xFF2F5A69",
+  // Description panel frame highlight
+  "PANEL_FRAME_LIGHT": "0xFF4D7F90",
+  // Description panel title text
+  "PANEL_TITLE": "0xFFDDE6EA",
+  // Description panel body text
+  "PANEL_TEXT": "0xFFC7D2D7",
+  // Description panel divider line
+  "PANEL_DIVIDER": "0xFF2A3F4A",
+  // "Modified" indicator text
+  "MODIFIED": "0xFFFFA300",
+  // Drop shadow under panels and bars
+  "SHADOW": "0xA0000000",
+  // Scrollbar track
+  "SCROLL_TRACK": "0x50000000",
+  // Scrollbar thumb
+  "SCROLL_THUMB": "0xFF5E7A87",
+  // Scrollbar thumb when hovered
+  "SCROLL_THUMB_HOVER": "0xFF8FA9B5",
+  // Dropdown popup background
+  "DROPDOWN_BG": "0xF0081720",
+  // Dropdown popup border
+  "DROPDOWN_BORDER": "0xE09FB4BF",
+  // Dropdown item hover highlight
+  "DROPDOWN_HOVER": "0x24FFFFFF",
+  // Dropdown active item highlight
+  "DROPDOWN_SELECTED": "0x24C8E4F0"
+}

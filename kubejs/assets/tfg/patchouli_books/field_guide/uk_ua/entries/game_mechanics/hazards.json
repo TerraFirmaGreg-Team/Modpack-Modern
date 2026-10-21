@@ -143,7 +143,7 @@
 			"title": "Хімічні речовини, що спричиняють нудоту",
 			"item": "gtceu:butyraldehyde_bucket",
 			"anchor": "nauseating_chemicals",
-			"text": "$(thing)Хімічні речовини, що спричиняють нудоту$(), як-от $(thing)бутиральдегід$(), — це речовини, які під час вдихання спричиняють $(item)нудоту$().$(br)$(l:game_mechanics/hazards#mask)Захисна маска$() та $(l:game_mechanics/hazards#hazmat)захисний костюм$() захищають від вдихання."
+			"text": "$(thing)Хімічні речовини, що спричиняють нудоту$(), як-от $(thing)Бутиральдегід$(), — це речовини, які під час вдихання спричиняють $(item)нудоту$().$(br)$(l:game_mechanics/hazards#mask)Захисна маска$() та $(l:game_mechanics/hazards#hazmat)захисний костюм$() захищають від вдихання."
 		},
 		{
 			"type": "patchouli:spotlight",

@@ -7,7 +7,7 @@
             "type": "patchouli:text",
             "anchor": "index",
             "title": "Індекс",
-            "text": "$(bold)$(li)$(l:beneath/beneath_wild_fruits#fruit_trees)Фруктові дерева$()\n$(li2)$(l:beneath/beneath_wild_fruits#lavacado)Лавокадо$()\n$(li2)$(l:beneath/beneath_wild_fruits#magmango)Магманго$()\n$(bold)$(li)$(l:beneath/beneath_wild_fruits#palm_fruit_trees)Плодові пальми$()\n$(li2)$(l:beneath/beneath_wild_fruits#oil_palm)Олійна пальма$()\n$(li2)$(l:beneath/beneath_wild_fruits#acai)Асаї$()"
+            "text": "$(bold)$(li)$(l:beneath/beneath_wild_fruits#fruit_trees)Фруктові дерева$()$(li2)$(l:beneath/beneath_wild_fruits#lavacado)Лавокадо$()$(li2)$(l:beneath/beneath_wild_fruits#magmango)Магманго$()$(bold)$(li)$(l:beneath/beneath_wild_fruits#palm_fruit_trees)Плодові пальми$()$(li2)$(l:beneath/beneath_wild_fruits#oil_palm)Олійна пальма$()$(li2)$(l:beneath/beneath_wild_fruits#acai)Асаї$()"
         },
         {
             "title": "Вступ",
@@ -172,7 +172,7 @@
         {
             "type": "patchouli:text",
             "anchor": "lavacado",
-            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 8–80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 20–100 %$(br2)Дерева лавокадо ростуть із грудня по квітень, починають цвісти у травні та червні, а плоди достигають у липні.",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 8–80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 20–100%$(br2)Дерева лавокадо ростуть із грудня по квітень, починають цвісти у травні та червні, а плоди достигають у липні.",
             "title": "Лавакадо"
         },
         {
@@ -237,7 +237,7 @@
         {
             "type": "patchouli:text",
             "anchor": "magmango",
-            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 8–80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 30–100 %$(br2)Дерева магманго ростуть із жовтня по лютий, починають цвісти у березні та квітні, а плоди достигають у травні.",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 8–80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 30–100%$(br2)Дерева магманго ростуть із жовтня по лютий, починають цвісти у березні та квітні, а плоди достигають у травні.",
             "title": "Магманго"
         },
         {
@@ -448,7 +448,7 @@
         {
             "type": "patchouli:text",
             "anchor": "oil_palm",
-            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 19–62 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 10–100 %$(br2)Плоди олійної пальми можна збирати та переробляти на пальмову олію й отримувати з них волокно мішковини. Грона плодів олійної пальми ростуть у 4 етапи та дають 3–6 предметів під час збору врожаю.",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 19–62 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 10–100%$(br2)Плоди олійної пальми можна збирати та переробляти на пальмову олію й отримувати з них волокно мішковини. Грона плодів олійної пальми ростуть у 4 етапи та дають 3–6 предметів під час збору врожаю.",
             "title": "Олійна пальма"
         },
         {
@@ -1076,7 +1076,7 @@
         {
             "type": "patchouli:text",
             "anchor": "acai",
-            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 24–70 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 10–100 %$(br2)Грона асаї ростуть у 5 етапів та дають 4–8 плодів під час збору врожаю.",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 24–70 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 10–100%$(br2)Грона асаї ростуть у 5 етапів та дають 4–8 плодів під час збору врожаю.",
             "title": "Дерева асаї"
         },
         {

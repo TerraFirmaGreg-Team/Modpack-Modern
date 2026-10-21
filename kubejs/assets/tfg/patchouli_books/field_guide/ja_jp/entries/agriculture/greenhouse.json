@@ -1,35 +1,35 @@
 {
-    "name": "Greenhouse",
+    "name": "温室",
     "category": "tfg:agriculture",
     "icon": "firmalife:large_planter",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:agriculture/greenhouse#types)Greenhouse Types$()$(li)$(bold)$(l:agriculture/greenhouse#planters)Planters$()$(li2)$(l:agriculture/greenhouse#large_planter)Large Planter$()$(li2)$(l:agriculture/greenhouse#quad_planter)Quad Planter$()$(li2)$(l:agriculture/greenhouse#bonsai_planter)Bonsai Planter$()$(li2)$(l:agriculture/greenhouse#hanging_planter)Hanging Planter$()$(li2)$(l:agriculture/greenhouse#trellis_planter)Trellis Planter$()$(li2)$(l:agriculture/greenhouse#hydroponic_planter)Hydroponic Planter$()$(li)$(bold)$(l:agriculture/greenhouse#irrigation)Irrigation$()$(li)$(bold)$(l:agriculture/greenhouse#auto_harvesting)Auto-Harvesting$()$(li)$(bold)$(l:agriculture/greenhouse#electric)Electric Greenhouse$()$(li)$(bold)$(l:agriculture/greenhouse#hydroponics)Hydroponics Facility$()"
+            "text": "$(li)$(bold)$(l:agriculture/greenhouse#types)温室の種類$()$(li)$(bold)$(l:agriculture/greenhouse#planters)プランターとは$()$(li2)$(l:agriculture/greenhouse#large_planter)大型プランター$()$(li2)$(l:agriculture/greenhouse#quad_planter)4種のプランター$()$(li2)$(l:agriculture/greenhouse#bonsai_planter)果樹用プランター$()$(li2)$(l:agriculture/greenhouse#hanging_planter)吊り下げプランター$()$(li2)$(l:agriculture/greenhouse#trellis_planter)支柱プランター$()$(li2)$(l:agriculture/greenhouse#hydroponic_planter)水耕プランター$()$(li)$(bold)$(l:agriculture/greenhouse#irrigation)給水$()$(li)$(bold)$(l:agriculture/greenhouse#auto_harvesting)自動収穫$()$(li)$(bold)$(l:agriculture/greenhouse#electric)電気温室$()$(li)$(bold)$(l:agriculture/greenhouse#hydroponics)水耕栽培施設$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Greenhouse",
-            "text": "The $(thing)Greenhouse$() is a multiblock device controlled by a $(item)Climate Station$(). It allows growing crops year round. The Greenhouse has an array of types and blocks to choose from. However, building a greenhouse is quite simple. Like the $(l:cooking/decay#cellar)Cellar$(), it should be an enclosed area of blocks belonging to the same $(thing)Greenhouse Type$(). The floor of the greenhouse may be any non-air block."
+            "title": "温室",
+            "text": "$(thing)温室$()は、$(item)空調機$()によって制御されるマルチブロック施設です。年間を通して作物を栽培できます。温室にはさまざまな種類のブロックがありますが、温室の作り方はいたって簡単です。$(l:cooking/decay#cellar)貯蔵庫$()と同じように、$(thing)同じ種類の温室ブロック$()で囲まれたエリアが温室になります。温室の床は非空気ブロックであればどのようなブロックでも構いません。"
         },
         {
             "type": "patchouli:text",
-            "text": "The walls of greenhouses must be solid faces. Panel walls should be placed so that the face that is on the exterior of the block (ex. the face you can place a torch on) faces into the greenhouse. Trapdoors, doors, and roofs are always valid and require no special placement.$(br2)The maximum internal volume of a greenhouse is 31x31x31 blocks."
+            "text": "温室の壁は、固い面である必要があります。パネル壁は、ブロックの外側にある面（例：松明を置ける面）が温室の内側を向くように配置してください。トラップドア、ドア、屋根は常に有効であり、特別な配置は必要ありません。$(br2)温室の最大内部容積は31×31×31ブロックです。"
         },
         {
             "type": "patchouli:text",
-            "text": "$(thing)Greenhouse Types$() are families of greenhouse blocks that can be used interchangeably in a greenhouse. Additionally, $(tfg) adds more greenhouse wall styles that can be swapped around with the basic greenhouse walls of the same tier.$(br)Validate a greenhouse by placing a climate station against a wall and $(item)$(k:key.use)$() it. Or, place it anywhere and $(item)$(k:key.use)$() it with a greenhouse block of the same type as the structure."
+            "text": "$(thing)温室の種類$() は、温室内で互いに置き換え可能な温室ブロックのグループです。さらに、$(tfg)では、同じティアの基本温室壁と入れ替え可能な温室壁のバリエーションが追加されています。$(br)温室を検証するには、空調機を壁に接するように設置し、$(item)$(k:key.use)$()を押してください。あるいは、任意の場所に設置し、その構造物と同じタイプの温室ブロックに対して$(item)$(k:key.use)$()を実行してください。"
         },
         {
             "type": "patchouli:text",
             "anchor": "types",
-            "text": "These are the $(thing)Greenhouse Types$() available, with aged varients availble through crafting:$(br)$(li)Treated Wood: Weathered $()$(li)Copper: Exposed, Weathered, Oxidized$()$(li)Iron: Rusted$() $(li)Stainless Steel: N/A$()$(br)$(bold)Note$(): Aged varients have no effect outside of appearance.",
+            "text": "利用可能な$(thing)温室の種類$()は以下の通りです。また、クラフトによって経年変化したバリエーションも入手可能です：$(br)$(li)防腐処理済み木材：風化 $()$(li)銅：露出、風化、酸化$()$(li)鉄：錆びた$() $(li)ステンレス鋼：該当なし$()$(br)$(bold)注$(): 経年変化したバリエーションは、外観以外の効果はありません。",
             "title": "温室の種類"
         },
         {
             "type": "patchouli:text",
-            "text": "There are four types of regular $(thing)Greenhouse Blocks$(): Walls, Doors, Roofs, and Roof Tops. Roofs and Roof Tops are stairs and slabs, respectively. There are also thinner versions of these blocks, known as panel walls, trapdoors, and panel roofs. These can be combined however you choose to form the structure of the greenhouse."
+            "text": "通常の$(thing)温室ブロック$()には、壁、ドア、屋根、屋上の4種類があります。屋根と屋上は、それぞれ階段とハーフブロックです。また、これらのブロックの薄型バージョンとして、パネル壁、トラップドア、パネル屋根があります。これらを自由に組み合わせて、温室の構造を形成することができます。"
         },
         {
             "type": "tfg:multimultiblock",
@@ -45,91 +45,91 @@
             "type": "patchouli:text",
             "anchor": "planters",
             "title": "プランター",
-            "text": "$(thing)Planters$() are used to grow crops inside a Greenhouse. Crops in planters consume $(l:agriculture/growing_crops#intro)Nutrients$() similarly to crops. Planters should be placed inside a valid Greenhouse and activated with a $(item)Climate Station$(). Planters need at least some natural sunlight to work."
+            "text": "$(thing)プランター$()は、温室内で作物を栽培するために使用されます。プランター内の作物は、通常の作物と同様に$(l:agriculture/growing_crops#intro)栄養素$()を消費します。プランターは、有効な温室内に設置し、$(item)空調機$()で起動する必要があります。プランターが機能するには、ある程度の自然光が必要です。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "large_planter",
             "item": "firmalife:large_planter",
-            "text": "$(thing)Large Planters$() are the simplest kind of planter. They grow a single crop from seed, and are harvested with $(item)$(k:key.use)$() when mature.$(br)Large Planters typically grow $(thing)Large Crops$() and $(thing)Grains$(). However, to grow Grains, you need a $(thing)Copper$() or better Greenhouse."
+            "text": "$(thing)大型プランター$()は、最もシンプルな種類のプランターです。種から1種類の作物を育てられ、成熟したら$(item)$(k:key.use)$()で収穫します。$(br)大型プランターでは、主に$(thing)大型作物$()や$(thing)穀物$()が栽培できます。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "quad_planter",
             "item": "firmalife:quad_planter",
-            "text": "$(thing)Quad Planters$() grow four individual crops at once that all draw from the same nutrient pool, and can be harvested individually with $(item)$(k:key.use)$() when mature.$(br)Quad Planters typically grow smaller vegetables such as $(thing)Onions$() and $(thing)Beets$(). These crops can be grown in any greenhouse type."
+            "text": "$(thing)4種のプランター$()では、同じ栄養源を共有する4種類の作物を同時に栽培でき、成熟したら$(item)$(k:key.use)$()で個別に収穫することができます。$(br)4種のプランターでは、主に$(thing)タマネギ$()や$(thing)ビーツ$()などの小型の野菜が栽培できます。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "bonsai_planter",
             "item": "firmalife:bonsai_planter",
-            "text": "$(thing)Bonsai Planters$() grow small fruit trees from their saplings.$(br)Bonsai Planters grow $(item)Fruit Tree Types$(), except $(thing)Bananas$(), and $(thing)Palm Fruit Trees$(), which need a $(thing)Hanging Planter$(). They need an $(thing)Iron$() or better greenhouse to grow."
+            "text": "$(thing)果樹用プランター$() では、苗木から小さな果樹を育てることができます。$(br)果樹用プランターでは、$(item)果樹類$() を育てることができますが、$(thing)バナナ$() と $(thing)ヤシ類$() は例外で、これらを育てるには $(thing)吊り下げプランター$() が必要です。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "hanging_planter",
             "item": "firmalife:hanging_planter",
-            "text": "$(thing)Hanging Planters$() grow crops upside down.$(br)Hanging Planters grow $(thing)Squash$(), $(thing)Pumpkin$(), $(thing)Melons$(), $(thing)Bananas$(), and $(thing)Palm Fruit Trees$(). Palm Fruit Trees require a $(thing)Copper+$() greenhouse, Squash can be in any tier, and the rest need $(thing)Iron+$(). Hanging planters need to anchor to a solid block above them."
+            "text": "$(thing)吊り下げプランター$() では、作物を逆さまに育てることができます。$(br)吊り下げプランターでは、$(thing)スカッシュ$()、$(thing)カボチャ$()、$(thing)スイカ$()、$(thing)バナナ$()、および $(thing)ヤシ類果樹$() を育てることができます。吊り下げプランターは、頑丈なブロックの下側に吊り下げる必要があります。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "trellis_planter",
             "item": "firmalife:trellis_planter",
-            "text": "$(thing)Trellis Planters$() grow berry bushes.$(br)Trellis Planters have the unique property of $(thing)propagating$() berry bushes. If a trellis planter is placed on top of another with a mature berry bush, it has a chance to grow upwards into the next one. Trellis planters usually require an $(thing)Iron$() or better greenhouse to work."
+            "text": "$(thing)支柱プランター$() では、ベリーの低木を育てることができます。$(br)支柱プランターには、ベリーの低木を $(thing)繁殖させる$() という独自の特性があります。成熟したベリーの低木が植えられた支柱プランターの上に、別の支柱プランターを置くと、その低木が上のプランターに向かって伸びていく可能性があります。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "hydroponic_planter",
             "item": "firmalife:hydroponic_planter",
-            "text": "$(thing)Hydroponic Planters$() grow submerged crops like $(thing)Rice$() and $(thing)Cranberry Bushes$(). They work the same as a quad planter, except that they do not need to be watered.$(br)Hydroponic Planters must instead, have a $(item)Fluid Pipe$() below them supplying water. Without the pipe they will not grow."
+            "text": "$(thing)水耕プランター$()は、$(thing)稲$()や$(thing)クランベリーの茂み$()といった水中で育つ作物を植えられます。これらは4種のプランターと同じように機能しますが、水やりをする必要がない点が異なります。$(br)その代わり、水耕栽培プランターの下から、$(item)液体パイプ$()で水を供給する必要があります。パイプがないと、作物は育ちません。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "irrigation",
             "title": "給水",
             "item": "firmalife:watering_can,firmalife:sprinkler",
-            "text": "Planters must be $(thing)Watered$() to grow. This is done with a $(thing)Watering Can$() or automatically with $(thing)Sprinklers$(). Press $(item)$(k:key.use)$() with a watering can to water nearby planters. Refill your can by pressing $(item)$(k:key.use)$() on a water source."
+            "text": "プランターの作物が育つには$(thing)水やり$() をする必要があります。これは $(thing)ジョウロ$() を使って手動で水やりするほかに、$(thing)スプリンクラー$() によって自動で水やりする方法もあります。ジョウロを手に持った状態で $(item)$(k:key.use)$() を押すと、近くのプランターに水をあげられます。水源で $(item)$(k:key.use)$() を押すと、ジョウロに水を補充できます。"
         },
         {
             "type": "patchouli:text",
-            "text": "The $(thing)Sprinkler$() is a device that sprinkles water in a 5x6x5 area centered on the block below or above the sprinkler block. You know it is working when it drips out water particles. Sprinklers must be connected to a system of pipes that feed it water in order to work."
+            "text": "$(thing)スプリンクラー$()は、設置したブロックの下または上を中心に5×6×5の範囲へ水を散布する装置です。水のパーティクルが出ていれば正常に動作しています。スプリンクラーを動作させるには、パイプで水を供給する必要があります。"
         },
         {
             "title": "配管",
             "item": "gtceu:copper_tiny_fluid_pipe",
             "type": "patchouli:spotlight",
-            "text": "Feeding sprinklers with water can be done by connecting $(thing)Fluid Pipes$() to them and pumping in water with a $(thing)Mechanical Pump$().$(br)You can $(item)$(k:key.use)$() a pipe with a $(t:Such as a Copper Frame)GregTech Frame$() or a Greenhouse Port to pass them through a wall. $(item)$(k:key.use)$() fluid pipes with a wrench to change their direction, and $(item)$(k:key.sneak) + $(k:key.use)$() them with an $(thing)empty offhand$() to make them one-way."
+            "text": "スプリンクラーに水を供給するには、$(thing)液体パイプ$() をスプリンクラーに接続し、$(thing)メカニカルポンプ$() で水を汲み上げる方法があります。$(br)$(item)$(k:key.use)$()で$(t:Such as a Copper Frame)GregTechフレーム$() にパイプを入れたり、温室ポートを使うことで、パイプを壁に通すことができます。レンチを使って $(item)$(k:key.use)$() 液体パイプを操作して方向を変更したり、$(thing)オフハンドに何も持たず$() に$(item)$(k:key.sneak) + $(k:key.use)$() で一方通行にしたりできます。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "auto_harvesting",
-            "title": "Auto-Harvesting",
+            "title": "自動収穫",
             "item": "firmalife:sweeper,firmalife:picker",
-            "text": "$(li)$(thing)Sweepers$() are used to harvest planters other than Quad and Hydroponic planters. They can be powered by redstone.$(li)$(thing)Pickers$() can be powered via redstone signal from above. They extend down to pick the crops from Quad and Hydroponic planters."
+            "text": "$(li)$(thing)刈り取り機(Sweeper)$()は、4種のプランターと水耕プランター以外のプランターから作物を収穫するために使用できます。レッドストーンで駆動させることができます。$(li)$(thing)摘み取り機(Picker)$()は、上からのレッドストーン信号によって駆動させることができます。下方向に伸びることで4種のプランターと水耕プランターから作物を収穫します。"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)Additionally, $(item)Harvest Baskets$() can be used to harvest most planter types.$(li)To collect the loose items that the $(thing)Sweepers$() and $(thing)Pickers$() drop, you can use a $(item)Hopper Minecart$(), a $(thing)Contraption$() with $(item)Funnels$(), or a GregTech $(item)Item Collector$()."
+            "text": "$(li)さらに、$(item)収穫かご$() を使えば、ほとんどのプランターから作物を収穫できます。$(li)$(thing)刈り取り機(Sweeper)$() や $(thing)摘み取り機(Picker)$() が落とす散らばったアイテムを回収するには、$(item)ホッパー付きトロッコ$()、$(item)ファンネル$() を装備した $(thing)からくり$()、または GregTech の $(item)アイテム収集器$() を使用できます。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "electric",
             "item": "tfg:electric_greenhouse",
-            "text": "The multiblock $(item)Electric Greenhouse$() can be your source of $(thing)Logs$() and other plants if you prefer making GregTech machines over Create contraptions. It also has the unique property of being able to grow more of TFC's decorative plants!$(br2)You can make one at the end of $(7)LV$()."
+            "text": "マルチブロック機械である$(item)電気温室$()は、Createに頼らず、電気の力で$(thing)木$()や作物を安定して生産できる便利な設備です。さらに、TFCの装飾用植物なども栽培できます！$(br2)$(7)LV$()時代の終盤に作成できるようになります。"
         },
         {
             "type": "patchouli:text",
-            "text": "$(bold)Note:$() This multiblock can have its walls customized to use any valid iron-tier greenhouse block.$(br2)Check the $(emi) multiblock preview for a list of all the different blocks you can use.$(br2)The Electric Greenhouse can also be improved in a few ways, including $(l:agriculture/fertilizers)fertilizer$() or later in $(6)HV$() with the $(thing)Aquaponics Loop$()."
+            "text": "$(bold)注：$() このマルチブロックの壁は、有効な鉄ティアの温室ブロックであればどの種類でも使用できるようにカスタマイズされています。$(br2)使用可能なすべてのブロックのリストについては、$(emi) マルチブロックのプレビューをご確認ください。$(br2)「電気温室」は、$(l:agriculture/fertilizers)肥料$() を使用したり、さらに $(6)HV$() で $(thing)アクアポニックス・ループ$() を導入したりするなど、いくつかの方法でアップグレードすることも可能です。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "hydroponics",
             "item": "tfg:hydroponics_facility",
-            "text": "The $(item)Hydroponics Facility$() is an $(9)IV$() upgrade to the Electric Greenhouse that can grow anything in any dimension and also supports $(item)Parallel Hatches$()."
+            "text": "$(item)水耕栽培施設$()は、電気温室の$(9)IV$()アップグレード版であり、あらゆるディメンションであらゆる作物を栽培できるほか、$(item)並列制御ユニット$()にも対応しています。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "さらに読む",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_crops",

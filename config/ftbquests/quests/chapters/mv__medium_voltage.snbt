@@ -1200,7 +1200,7 @@
 			]
 			title: "{quests.medium_voltage.mv_lpg.title}"
 			x: -1.0d
-			y: 4.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["6A304E453D74C57C"]
@@ -1231,7 +1231,7 @@
 			]
 			title: "{quests.medium_voltage.mv_benzene.title}"
 			x: -3.0d
-			y: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["6A304E453D74C57C"]
@@ -1262,7 +1262,7 @@
 			]
 			title: "{quests.medium_voltage.mv_light_fuel.title}"
 			x: -5.0d
-			y: 3.0d
+			y: 2.5d
 		}
 		{
 			dependency_requirement: "one_started"
@@ -1726,7 +1726,7 @@
 			]
 			title: "{quests.medium_voltage.reformate_gas.title}"
 			x: -3.0d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["00E1A728E6F6D6A0"]
@@ -1744,7 +1744,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: 4.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["61972B16805FC9EE"]
@@ -1774,7 +1774,7 @@
 			]
 			title: "{quests.medium_voltage.mv_diesel.title}"
 			x: -5.0d
-			y: 4.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["75F38905DEA60F15"]
@@ -1960,7 +1960,7 @@
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(gtceu:mv_vanadium_steel_drill)item(gtceu:mv_vanadium_steel_wrench)item(gtceu:mv_vanadium_steel_screwdriver)item(gtceu:mv_vanadium_steel_buzzsaw)item(gtceu:mv_vanadium_steel_wire_cutter)item(gtceu:mv_vanadium_steel_chainsaw)item(gtceu:vanadium_steel_knife)item(gtceu:vanadium_steel_hoe)item(gtceu:vanadium_steel_scythe)item(gtceu:vanadium_steel_hammer)item(gtceu:vanadium_steel_file)item(gtceu:vanadium_steel_sword)item(gtceu:vanadium_steel_butchery_knife)item(gtceu:vanadium_steel_crowbar))"
+							"ftbfiltersystem:filter": "or(item(gtceu:mv_vanadium_steel_drill)item(gtceu:mv_vanadium_steel_wrench)item(gtceu:mv_vanadium_steel_screwdriver)item(gtceu:mv_vanadium_steel_buzzsaw)item(gtceu:mv_vanadium_steel_wire_cutter)item(gtceu:mv_vanadium_steel_chainsaw)item(gtceu:vanadium_steel_knife)item(gtceu:vanadium_steel_hoe)item(gtceu:mv_vanadium_steel_scythe)item(gtceu:vanadium_steel_hammer)item(gtceu:vanadium_steel_file)item(gtceu:vanadium_steel_sword)item(gtceu:vanadium_steel_butchery_knife)item(gtceu:vanadium_steel_crowbar))"
 						}
 					}
 					title: "{quests.medium_voltage.vanadium_tools.task}"
@@ -2112,7 +2112,7 @@
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(tfg:mv_diamond_tipped_mo_50_re_drill)item(tfg:mv_diamond_tipped_mo_50_re_wrench)item(tfg:diamond_tipped_mo_50_re_knife)item(tfg:mv_diamond_tipped_mo_50_re_screwdriver)item(tfg:mv_diamond_tipped_mo_50_re_buzzsaw)item(tfg:diamond_tipped_mo_50_re_hoe)item(tfg:diamond_tipped_mo_50_re_scythe)item(tfg:diamond_tipped_mo_50_re_hammer)item(tfg:mv_diamond_tipped_mo_50_re_wire_cutter)item(tfg:diamond_tipped_mo_50_re_file)item(tfg:mv_diamond_tipped_mo_50_re_chainsaw)item(tfg:diamond_tipped_mo_50_re_sword)item(tfg:diamond_tipped_mo_50_re_butchery_knife)item(tfg:diamond_tipped_mo_50_re_crowbar))"
+						"ftbfiltersystem:filter": "or(item(tfg:mv_diamond_tipped_mo_50_re_drill)item(tfg:mv_diamond_tipped_mo_50_re_wrench)item(tfg:diamond_tipped_mo_50_re_knife)item(tfg:mv_diamond_tipped_mo_50_re_screwdriver)item(tfg:mv_diamond_tipped_mo_50_re_buzzsaw)item(tfg:diamond_tipped_mo_50_re_hoe)item(tfg:mv_diamond_tipped_mo_50_re_scythe)item(tfg:diamond_tipped_mo_50_re_hammer)item(tfg:mv_diamond_tipped_mo_50_re_wire_cutter)item(tfg:diamond_tipped_mo_50_re_file)item(tfg:mv_diamond_tipped_mo_50_re_chainsaw)item(tfg:diamond_tipped_mo_50_re_sword)item(tfg:diamond_tipped_mo_50_re_butchery_knife)item(tfg:diamond_tipped_mo_50_re_crowbar))"
 					}
 				}
 				title: "{quests.medium_voltage.diamond_tools.task}"
@@ -2171,18 +2171,66 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["26394C1290D70AB6"]
+			dependencies: ["75F38905DEA60F15"]
 			description: ["{quests.medium_voltage.heat_pump.desc}"]
+			guide_page: "tfg:field_guide tfg:game_mechanics/player_temperature 13"
+			icon: "tfg:heat_pump"
 			id: "317C71249EBA0F15"
 			optional: true
+			shape: "heart"
+			size: 1.5d
 			subtitle: "{quests.medium_voltage.heat_pump.subtitle}"
-			tasks: [{
-				id: "4FA36821493DFA40"
-				item: "tfg:heat_pump"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 19.5d
+			tasks: [
+				{
+					id: "4FA36821493DFA40"
+					item: "tfg:heat_pump"
+					type: "item"
+				}
+				{
+					id: "5110C3CBB1935F09"
+					item: {
+						Count: 1
+						id: "gtceu:turbine_rotor"
+						tag: {
+							GT.PartStats: {
+								Material: "gtceu:vanadium"
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1693A713597B57A2"
+					item: {
+						Count: 1
+						id: "gtceu:turbine_rotor"
+						tag: {
+							GT.PartStats: {
+								Material: "tfg:rene_41"
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4654BDD42C7DC7DA"
+					item: {
+						Count: 1
+						id: "gtceu:turbine_rotor"
+						tag: {
+							GT.PartStats: {
+								Material: "tfg:silicon_carbide_silicon_carbide"
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["75F38905DEA60F15"]

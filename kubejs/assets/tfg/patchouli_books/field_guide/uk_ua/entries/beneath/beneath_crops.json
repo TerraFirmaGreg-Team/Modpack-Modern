@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Зміст",
-			"text": "$(li)$(l:beneath/beneath_crops#cassava)Маніок$()\n$(li)$(l:beneath/beneath_crops#peanut)Арахіс$()\n$(li)$(l:beneath/beneath_crops#beans)Чорнокам'яна квасоля$()\n$(li)$(l:beneath/beneath_crops#ghost_pepper)Примарний перець$()\n$(li)$(l:beneath/beneath_crops#cotton)Бавовна$()"
+			"text": "$(li)$(l:beneath/beneath_crops#cassava)Маніок$()$(li)$(l:beneath/beneath_crops#peanut)Арахіс$()$(li)$(l:beneath/beneath_crops#beans)Чорнокам'яна квасоля$()$(li)$(l:beneath/beneath_crops#ghost_pepper)Примарний перець$()$(li)$(l:beneath/beneath_crops#cotton)Бавовна$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"type": "patchouli:text",
 			"anchor": "cassava",
 			"title": "Маніок",
-			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10–80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 70–100 %$(br)$(bold)Поживна речовина$(): Азот$(br2)Маніок можна їсти для забезпечення $(thing)овочевого$() насичення, хоча перед споживанням його краще $(thing)приготувати$().$(br)"
+			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10–80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 70–100%$(br)$(bold)Поживна речовина$(): Азот$(br2)Маніок можна їсти для забезпечення $(thing)овочевого$() насичення, хоча перед споживанням його краще $(thing)приготувати$().$(br)"
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -140,7 +140,7 @@
 			"type": "patchouli:text",
 			"anchor": "peanut",
 			"title": "Арахіс",
-			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10–80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 20–80 %$(br)$(bold)Поживна речовина$(): Калій$(br2)Арахіс можна їсти для забезпечення $(thing)овочевого$() та $(thing)білкового$() насичення."
+			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10–80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 20–80%$(br)$(bold)Поживна речовина$(): Калій$(br2)Арахіс можна їсти для забезпечення $(thing)овочевого$() та $(thing)білкового$() насичення."
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -255,7 +255,7 @@
 			"type": "patchouli:text",
 			"anchor": "beans",
 			"title": "Чорнокам’яна квасоля",
-			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10–80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 20–80 %$(br)$(bold)Поживна речовина$(): Калій$(br2)Чорнокам'яну квасолю можна їсти як забезпеччення $(thing)овочевого$() та $(thing)білкового$() насичення. Однак спочатку її потрібно приготувати!"
+			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10–80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 20–80%$(br)$(bold)Поживна речовина$(): Калій$(br2)Чорнокам'яну квасолю можна їсти як забезпеччення $(thing)овочевого$() та $(thing)білкового$() насичення. Однак спочатку її потрібно приготувати!"
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -370,7 +370,7 @@
 			"type": "patchouli:text",
 			"anchor": "ghost_pepper",
 			"title": "Примарний перець",
-			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10–80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 20–80 %$(br)$(bold)Поживна речовина$(): Азот$(br2)Примарний перець можна їсти для забезпечення $(thing)овочевого$() насичення. Він також є популярною закускою серед мешканців Безодні."
+			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10–80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 20–80%$(br)$(bold)Поживна речовина$(): Азот$(br2)Примарний перець можна їсти для забезпечення $(thing)овочевого$() насичення. Він також є популярною закускою серед мешканців Безодні."
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -484,7 +484,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cotton",
-			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10–80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 40–100 %$(br)$(bold)Поживна речовина$(): Азот$(br2)Бавовна — культура заввишки у два блоки. Насіння бавовни можна посадити на сільськогосподарських грядках, де він виросте заввишки у два блоки та даватиме $(item)бавовняні кульки$(), які можна переробити на $(thing)бавовняну нитку$() або $(thing)тканину$().",
+			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10–80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 40–100%$(br)$(bold)Поживна речовина$(): Азот$(br2)Бавовна — культура заввишки у два блоки. Насіння бавовни можна посадити на сільськогосподарських грядках, де він виросте заввишки у два блоки та даватиме $(item)бавовняні кульки$(), які можна переробити на $(thing)бавовняну нитку$() або $(thing)тканину$().",
 			"title": "Бавовна"
 		},
 		{

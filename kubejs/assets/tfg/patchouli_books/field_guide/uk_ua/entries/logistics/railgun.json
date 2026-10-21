@@ -36,7 +36,7 @@
 			"type": "patchouli:multiblock",
 			"name": " ",
 			"enable_visualize": "true",
-			"text": "Використовуй $(l/building_tools#terminals)Термінал$(), щоб легко побудувати багатоблокову конструкцію.",
+			"text": "Використовуй $(l:craftsmanship/building_tools#terminals)Термінал$(), щоб легко побудувати багатоблокову конструкцію.",
 			"multiblock": {
 				"pattern": [
 					[
@@ -179,7 +179,7 @@
 			"item": "tfg:ulv_railgun_item_loader_in,tfg:lv_railgun_item_loader_in,tfg:mv_railgun_item_loader_in,tfg:hv_railgun_item_loader_in,tfg:ev_railgun_item_loader_in,tfg:iv_railgun_item_loader_in,tfg:luv_railgun_item_loader_in,tfg:zpm_railgun_item_loader_in,tfg:uv_railgun_item_loader_in,tfg:uhv_railgun_item_loader_in",
 			"anchor": "input_bus",
 			"title": "Вхідна шина рейкотрону",
-			"text": "Коли відкриєш екран логістики $(thing)Вдправника$() у $(l/railgun#monitor)Міжпланетному моніторі логістики$(), ти помітиш знайому $(item)Запрограмовану мікросхему$() з GregTech.$(br2)Цей номер мікросхеми є основним ідентифікатором для налаштування правил маршрутизації."
+			"text": "Коли відкриєш екран логістики $(thing)Вдправника$() у $(l:logistics/railgun#monitor)Міжпланетному моніторі логістики$(), ти помітиш знайому $(item)Запрограмовану мікросхему$() з GregTech.$(br2)Цей номер мікросхеми є основним ідентифікатором для налаштування правил маршрутизації."
 		},
 		{
 			"type": "patchouli:text",
@@ -212,7 +212,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Час застосувати свої навички роботи з логікою редстоуну!$(br2)Будь то за допомогою $(item)Випромінювач рівня AE2$(), $(l/redstone_devices#threshold_switch)редстоунових пристроїв Create$() чи доброї старої $(l/redstone_devices#more_comparators)ванільної механіки$() — це правило дає змогу тобі синхронізувати логістику зі станом твоєї фабрики, наче справжньому профі."
+			"text": "Час застосувати свої навички роботи з логікою редстоуну!$(br2)Будь то за допомогою $(item)Випромінювач рівня AE2$(), $(l:logistics/redstone_devices#threshold_switch)редстоунових пристроїв Create$() чи доброї старої $(l:logistics/redstone_devices#more_comparators)ванільної механіки$() — це правило дає змогу тобі синхронізувати логістику зі станом твоєї фабрики, наче справжньому профі."
 		},
 		{
 			"type": "patchouli:text",

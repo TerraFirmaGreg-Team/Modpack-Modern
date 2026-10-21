@@ -132,9 +132,15 @@
     "tfg.tooltip.machine.pastoral_engine_2": "§7Automatically milks and shears any animals within the area indicated by the metal casings.§r",
     "tfg.tooltip.machine.oxygen_distributor_1": "§7Oxygenates a large sealed area. The bigger the area, the more power and gas it needs.",
     "tfg.tooltip.machine.oxygen_distributor_2": "§7Use an airlock to avoid air vortexes. Does not affect temperature.",
-    "tfg.tooltip.machine.heat_pump_1": "§7Sets the temperature of a large mostly-sealed area to 15°C.",
+    "tfg.tooltip.machine.heat_pump_1": "§7Sets the temperature of a large mostly-sealed area to a specifc value between -50°C and 70°C.",
     "tfg.tooltip.machine.heat_pump_2": "§7The bigger the area, the more power it needs. Is lenient on what counts as 'sealed'.",
-    "tfg.tooltip.machine.heat_pump_3": "§7The side with the controller should face indoors, while the opposite should face outdoors.",
+    "tfg.tooltip.machine.heat_pump_3": "§7The side with the controller should face indoors, while the Exhaust should face outdoors and be filled with a Turbine Rotor.",
+    "tfg.tooltip.machine.rotor_vent": "Requires a Turbine Rotor but doesn't wear down its Durability. Efficiency lowers the input mB/t and Power reduces the EU/t cost.",
+
+    "tfg.tooltip.rotor_vent.header": "In an Exhaust Vent reduces by:",
+    "tfg.tooltip.rotor_vent.energy": "%s Energy Cost",
+    "tfg.tooltip.rotor_vent.consumption": "%s Resource Consumption",
+
     "tfg.tooltip.machine.higgs_emitter_1": "§7Changes the gravity of a large spherical area to Earth-like.",
     "tfg.tooltip.machine.higgs_emitter_2": "§7The better the energy hatch it has, the bigger the area.",
 
@@ -349,6 +355,9 @@
     "tfg.tooltip.fuel_burning.days": "%s Days / %s mB (Full Tank)",
 
     "tfg.tooltip.planter.fertilizer_info": "Fertilizers are optional. Crops will grow faster and produce other fertilizer types when consuming their preferred fertilizer.",
-    "tfg.tooltip.greenhouse.minimum_tier": "Min. Tier: "
+    "tfg.tooltip.greenhouse.minimum_tier": "Min. Tier: ",
+
+    "tfg.item.electric_flask.tooltip_1": "An electrical flask that will automatically drink when needed.",
+    "tfg.item.electric_flask.tooltip_2": "§9Consumes: §f1000 EU per drink"
 
 }

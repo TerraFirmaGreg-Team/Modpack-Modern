@@ -40,12 +40,15 @@
 	"block.minecraft.deepslate_tile_wall": "混合岩瓦墙",
 	"block.minecraft.deepslate_tiles": "混合岩瓦",
 	"block.minecraft.dripstone_block": "天然石灰华",
+	"block.minecraft.fern": "软盾蕨",
 	"block.minecraft.gilded_blackstone": "镶金辉石岩",
 	"block.minecraft.gray_wool": "灰色布方块",
 	"block.minecraft.green_wool": "绿色布方块",
 	"block.minecraft.infested_deepslate": "虫蚀混合岩",
 	"block.minecraft.iron_block": "铸铁块",
+	"block.minecraft.large_fern": "荚果蕨",
 	"block.minecraft.light_blue_wool": "淡蓝色布方块",
+	"block.minecraft.light_gray_wool": "淡灰色布方块",
 	"block.minecraft.light_grey_wool": "淡灰色布方块",
 	"block.minecraft.lime_wool": "黄绿色布方块",
 	"block.minecraft.loom": "旗帜织机",
@@ -66,6 +69,7 @@
 	"block.minecraft.nether_bricks": "角斑岩砖",
 	"block.minecraft.nether_wart_block": "绯红伞盖",
 	"block.minecraft.ochre_froglight": "赭黄光绽花",
+	"block.minecraft.orange_wool": "橙色布方块",
 	"block.minecraft.pearlescent_froglight": "珠光光绽花",
 	"block.minecraft.pink_wool": "粉红色布方块",
 	"block.minecraft.polished_basalt": "磨制玄武岩立柱",
@@ -148,5 +152,6 @@
 	"item.minecraft.smithing_template.armor_trim.additions_slot_description": "添加板或精致宝石",
 	"item.minecraft.string": "丝线",
 	"material.tfg.dripstone": "石灰华",
-	"tag.item.minecraft.wool": "布料块"
+	"tag.item.minecraft.wool": "布料块",
+	"tag.item.minecraft.wool_carpets": "地毯"
 }

@@ -10,7 +10,7 @@
         {
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/bloomery",
-            "text": "The bloomery is made from 8 $(thing)Bronze Double Plates$(), which is a total of 32 bronze ingots.$(br)The bloomery will also need $(t:#tfc:bloomery_insulation)$(6)22 stone blocks$() such as stone bricks."
+            "text": "Dymarka powstaje z 8 $(thing)podwójnych płytek z brązu$(), czyli łącznie z 32 sztabek brązu.$(br)Dymarka będzie też potrzebować $(t:#tfc:bloomery_insulation)$(6)22 bloków kamienia$(), na przykład kamiennych cegieł."
         },
         {
             "type": "patchouli:multiblock",

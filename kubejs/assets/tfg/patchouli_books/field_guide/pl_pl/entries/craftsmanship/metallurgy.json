@@ -34,7 +34,7 @@
                 }
             },
             "name": "Luźna ruda",
-            "text": "When broken: dust indicators drop tiny piles of dust, gem buds drop $(t:Unless broken with a Gem Saw!)chipped gems$(), and small ores give, well, small ores.",
+            "text": "Po zniszczeniu: wskaźniki pyłów dają szczypty pyłu, kiełki klejnotów dają $(t:Chyba że zniszczysz je piłą do klejnotów!)wyszczerbione klejnoty$(), a małe rudy dają, cóż, małe rudy.",
             "enable_visualize": false
         },
         {

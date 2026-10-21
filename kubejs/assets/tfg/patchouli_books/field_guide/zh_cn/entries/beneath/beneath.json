@@ -6,7 +6,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "intro",
-			"text": "The $(thing)Beneath$() is a network of very deep caves, directly below the Overworld.$(br)This dimension is balanced around mid to late $(thing)Metallurgy Age$().$(br2)It's more dangerous than the surface, so we recommend a metal shield and good nutrition as a minimum, but some armor, a water flask, cooling clothes, and a ranged weapon will help a lot."
+			"text": "$(thing)幽冥之地$()是主世界正下方一片极深的洞穴网络。$(br)这个维度的难度以$(thing)冶金时代$()中后期为基准。$(br2)这里比地表危险得多，我们建议至少带上金属盾牌并保持良好的营养；如果能再备上一些盔甲、一个水壶、一套降温衣物和一件远程武器，会轻松很多。"
 		},
 		{
 			"type": "patchouli:text",
@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:beneath/beneath#entering)Entering$() and $(bold)$(l:beneath/beneath#exiting)Exiting$()$(li)$(bold)$(l:beneath/beneath#biomes)Biomes$()$(li2)$(l:beneath/beneath#salt_caves)Top Layer$()$(li2)$(l:beneath/beneath#tar_pools)Middle Layer$()$(li2)$(l:beneath/beneath#ash_forest)Bottom Layer$()$(li)$(bold)$(l:beneath/beneath#geology)Geology$()$(li2)$(l:beneath/beneath#more_rocks)More Rocks$()"
+			"text": "$(li)$(bold)$(l:beneath/beneath#entering)进入$()与$(bold)$(l:beneath/beneath#exiting)离开$()$(li)$(bold)$(l:beneath/beneath#biomes)生物群系$()$(li2)$(l:beneath/beneath#salt_caves)顶层$()$(li2)$(l:beneath/beneath#tar_pools)中层$()$(li2)$(l:beneath/beneath#ash_forest)底层$()$(li)$(bold)$(l:beneath/beneath#geology)地质$()$(li2)$(l:beneath/beneath#more_rocks)更多岩石$()"
 		},
 		{
 			"type": "patchouli:image",
@@ -26,177 +26,177 @@
 				"tfg:textures/gui/field_guide/nether/aether.png"
 			],
 			"border": true,
-			"text": "Not like this!"
+			"text": "别这样做！"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "entering",
 			"title": "进入幽冥之地",
-			"text": "To travel Beneath, simply find some overworld Bedrock at $(thing)Y=-58$().$(br2)To get down to the bedrock, you'll have to either break through the Hornfels layer with $(l:game_mechanics/mining#explosives)Explosives$() or $(item)Steel+ Tools$(), find a cave with the more brittle $(thing)Keratophyre$(), or drain a lava lake.$(br2)Note that $(item)Primitive Explosives$() are not strong enough to break Hornfels."
+			"text": "要前往幽冥之地，只需找到主世界$(thing)Y=-58$()处的基岩。$(br2)要下到基岩那里，你可以用$(l:game_mechanics/mining#explosives)炸药$()或$(item)钢级及以上的工具$()炸穿角页岩层，可以找一处有较脆的$(thing)角斑岩$()的洞穴，也可以排干一座熔岩湖。$(br2)注意，$(item)简易炸药$()的威力不足以炸开角页岩。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "You will appear in the Beneath at the same X and Z coordinates, with a 3x2x3 space opened for you to place some supports if necessary.$(br2)A temporary cloud will be provided if there is no floor, as well as short $(thing)Slow Falling$() and $(thing)Fire Protection$() effects to prevent any accidents."
+			"text": "你会在相同的 X、Z 坐标处到达幽冥之地，那里已为你开辟出一个 3x2x3 的空间，必要时可以放置一些支撑梁。$(br2)如果下方没有地面，会临时生成一朵云，并给予短暂的$(thing)缓降$()和$(thing)防火$()效果，以防发生意外。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "exiting",
-			"title": "Exiting the Beneath",
-			"text": "To return, just get up to ceiling bedrock in the same fashion.$(br2)It's a good idea to $(thing)make a note$() of where you entered, so you can return to the same place in the overworld whenever you're ready to leave."
+			"title": "离开幽冥之地",
+			"text": "返程同样只要回到顶部基岩处即可。$(br2)建议你$(thing)记下$()自己进入的位置，这样准备好离开时，就能随时回到主世界的同一地点。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "You will be returned at $(thing)Y=-54$(), above any potential lava lakes, inside another 3x2x3 area. The middle two blocks for the player will always be replaced by air, so you may want to avoid placing ladders there."
+			"text": "你会回到$(thing)Y=-54$()处，位于可能存在的熔岩湖上方，同样处于一个 3x2x3 的空间内。供玩家站立的中间两格方块总会被替换成空气，所以最好不要在那里放梯子。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "biomes",
-			"title": "Biomes",
-			"text": "The Beneath has a full set of new biomes to explore!$(br2)The Beneath can be split into three vertical layers, each with their own set of biomes. Each one is more hot and dangerous as you descend!"
+			"title": "生物群系",
+			"text": "幽冥之地有一整套全新的生物群系等你探索！$(br2)幽冥之地在纵向上分为三层，每层都有自己的一套生物群系。越往深处走，就越炎热、越危险！"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Layers",
-			"text": "像温暖的海风，这个生物群系充满了$(item)岩盐$()。是建立基地的好地方！"
+			"title": "分层",
+			"text": "$(bold)顶层$()$(li)$(l:beneath/beneath#salt_caves)盐窟$()$(li)$(l:beneath/beneath#muggy_bog)闷热泥沼$()$(li)$(l:beneath/beneath#decaying_caverns)腐朽洞窟$()$(li)$(l:beneath/beneath#webbed_lair)蛛网巢穴$()$(br)$(bold)中层$()$(li)$(l:beneath/beneath#tar_pools)焦油池$()$(li)$(l:beneath/beneath#geothermal_springs)地热泉$()$(li)$(l:beneath/beneath#thorny_grove)荆棘树林$()$(li)$(l:beneath/beneath#lush_hollow)繁茂空谷$()$(br)$(bold)底层$()$(li)$(l:beneath/beneath#ash_forest)灰烬森林$()$(li)$(l:beneath/beneath#lava_floes)熔岩浮岛$()$(li)$(l:beneath/beneath#basalt_deltas)玄武岩三角洲$()"
 		},
 		{
 			"type": "patchouli:image",
 			"anchor": "salt_caves",
-			"title": "Salt Caves",
+			"title": "盐窟",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/salt_caves.png"
+			],
+			"border": true,
+			"text": "像温暖的海风，这个生物群系充满了$(item)岩盐$()。是建立基地的好地方！"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "闷热泥沼",
+			"anchor": "muggy_bog",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
 			],
 			"border": true,
 			"text": "潮湿且类似沼泽。如果能避开$(thing)鳄鱼$()，这里是一个安全的木材来源。"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Muggy Bog",
-			"anchor": "muggy_bog",
-			"images": [
-				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
-			],
-			"border": true,
-			"text": "大自然的分解者在这个充满腐烂的潮湿区域辛勤工作。"
-		},
-		{
-			"type": "patchouli:image",
-			"title": "Decaying Caverns",
+			"title": "腐朽洞窟",
 			"anchor": "decaying_caverns",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
 			],
 			"border": true,
-			"text": "Nature's recyclers are hard at work in this damp region full of rot."
+			"text": "大自然的清道夫在这片潮湿腐朽的区域里忙碌不休。"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Webbed Lair",
+			"title": "蛛网巢穴",
 			"anchor": "webbed_lair",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
+			],
+			"border": true,
+			"text": "不用猜也知道这里住着什么！这里是收获$(item)丝绸$()的好地方。"
+		},
+		{
+			"type": "patchouli:image",
+			"anchor": "tar_pools",
+			"title": "焦油池",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/tar_pools.png"
 			],
 			"border": true,
 			"text": "沙质地面宛如小型沙漠，遍布富含石油的黏稠$(thing)焦油坑$()。"
 		},
 		{
 			"type": "patchouli:image",
-			"anchor": "tar_pools",
-			"title": "Tar Pools",
-			"images": [
-				"tfg:textures/gui/field_guide/nether/tar_pools.png"
-			],
-			"border": true,
-			"text": "这里没有硫磺块，但这个热气腾腾的生物群系是寻找$(thing)温泉$()的好地方，可用于治疗。"
-		},
-		{
-			"type": "patchouli:image",
-			"title": "Geothermal Springs",
+			"title": "地热泉",
 			"anchor": "geothermal_springs",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
+			],
+			"border": true,
+			"text": "这里没有硫磺方块，但这个热气腾腾的生物群系是寻找$(thing)泉水$()来治疗的好地方。"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "荆棘树林",
+			"anchor": "thorny_grove",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
 			],
 			"border": true,
 			"text": "难以穿越的生物群系，踩到植物会受其影响。小心！"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Thorny Grove",
-			"anchor": "thorny_grove",
-			"images": [
-				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
-			],
-			"border": true,
-			"text": "炎热且充满绿植！茂密的蕨类植物下隐藏着$(thing)高岭土$()。"
-		},
-		{
-			"type": "patchouli:image",
-			"title": "Lush Hollow",
+			"title": "繁茂空谷",
 			"anchor": "lush_hollow",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
 			],
 			"border": true,
-			"text": "Hot and full of greenery! The dense ferns hides the underlying $(thing)Kaolin Clay$()."
+			"text": "炎热而遍布绿意！茂密的蕨类之下埋藏着$(thing)高岭土$()。"
 		},
 		{
 			"type": "patchouli:image",
 			"anchor": "ash_forest",
-			"title": "Ash Forest",
+			"title": "灰烬森林",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/ash_forest.png"
 			],
 			"border": true,
-			"text": "富含矿产的$(thing)辉石岩$()地区，被岩浆河流纵横切割。"
+			"text": "炎热引发的频繁火灾过后，上层植被仅存的残迹。"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Lava Floes",
+			"title": "熔岩浮岛",
 			"anchor": "lava_floes",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/lava_floes.png"
 			],
 			"border": true,
-			"text": "An ore-rich $(thing)Pyroxenite$() area crisscrossed with rivers of lava."
+			"text": "一片富含矿石的$(thing)辉石岩$()区域，条条熔岩河纵横交错。"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "地质学",
+			"title": "玄武岩三角洲",
 			"anchor": "basalt_deltas",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
 			],
 			"border": true,
-			"text": "Everyone's favourite Nether biome returns, and is just as dangerous to navigate as ever."
+			"text": "大家最喜欢的下界生物群系回来了，在其中穿行依然和以往一样危险。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "geology",
-			"title": "Geology",
-			"text": "Like the overworld, the Beneath has its own set of rock layers. At the very top, you may find Phyllite, Schist, Gneiss, Marble, Slate, Migmatite, and Travertine.$(br2)Underneath those, you may find Schist, Gneiss, Tuff, Migmatite, Travertine, and Diorite."
+			"title": "地质",
+			"text": "和主世界一样，幽冥之地也有属于自己的一套岩层。最顶层你可以找到千枚岩、片岩、片麻岩、大理石、板岩、混合岩和石灰华。$(br2)在其下方，你可以找到片岩、片麻岩、凝灰岩、混合岩、石灰华和闪长岩。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Below that is either Gabbro, Granite, Tuff, Diorite, or Migmatite.$(br2)At the lower levels of the Beneath, there is a layer of exclusively Migmatite, followed by Pyroxenite at the very bottom."
+			"text": "再往下是辉长岩、花岗岩、凝灰岩、闪长岩或混合岩。$(br2)在幽冥之地的深层，有一层纯粹的混合岩，最底部则是辉石岩。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "minecraft:blackstone,minecraft:calcite,tfg:gilsonite,tfg:rock/aragonite,tfg:rock/glauberite,tfg:huge_quartz,beneath:crackrack,tfg:halite",
-			"title": "More Rocks",
+			"title": "更多岩石",
 			"anchor": "more_rocks",
-			"text": "Some other stones can be found in other locations.$(br2)Small lava pools are surrounded by $(item)Pyroxenite$(), while $(item)Calcite$() can be found in spring water pools.$(br2)$(item)Keratophyre$() can be found all over the Beneath in large, tall columns."
+			"text": "另一些石头则分布在别的场所。$(br2)小型熔岩池的四周环绕着$(item)辉石岩$()，而$(item)方解石$()可以在泉水池中找到。$(br2)$(item)角斑岩$()则以高大的石柱形态遍布幽冥之地。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The $(l:beneath/beneath#geothermal_springs)Geothermal Springs$() biome contains the exclusive $(item)Aragonite$() and $(item)Glauberite$(), along with more Calcite.$(br2)This biome also houses $(item)Huge Quartz$() crystals, which can either be broken with a pickaxe to obtain $(item)Smoky Quartz$() gems of varying quality, or broken with a $(item)Gem Saw$() to obtain the transparent block itself."
+			"text": "$(l:beneath/beneath#geothermal_springs)地热泉$()生物群系出产这里独有的$(item)文石$()和$(item)钙芒硝$()，还有更多的方解石。$(br2)这个群系中还生长着$(item)巨型石英$()晶体：用镐敲碎可以获得品质各异的$(item)烟熏石英$()宝石，用$(item)宝石锯$()则可以直接取得透明的方块本身。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(item)Gilsonite$(), a very dark building block and ingredient of $(l:logistics/roads#asphalt)Asphalt$(), can be found in large quantities in the $(l:beneath/beneath#tar_pools)Tar Pools$() biome, along with $(item)Sandstone$().$(br2)Finally, $(item)Halite$() can be found in massive quantities in the $(l:beneath/beneath#salt_caves)Salt Caves$() biome, which can be mined for Halite and Sylvite ores."
+			"text": "$(item)硬沥青$()是一种颜色极深的建筑材料，也是$(l:logistics/roads#asphalt)沥青$()的原料，在$(l:beneath/beneath#tar_pools)焦油池$()生物群系中储量巨大，同处一地的还有$(item)砂岩$()。$(br2)最后，$(item)岩盐$()大量存在于$(l:beneath/beneath#salt_caves)盐洞$()生物群系中，开采它可以得到石盐矿和钾石盐矿。"
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "延伸阅读",
 			"anchor": "relations",
 			"entries": [
 				"tfg:beneath/beneath_mechanics",

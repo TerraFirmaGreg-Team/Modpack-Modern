@@ -23,6 +23,8 @@ function registerTFCItemTags(event) {
 	// Add chainsaws to #tfc:axes so they drop fruit tree saplings
 	event.add("tfc:axes", "#forge:tools/chainsaws");
 
+	event.add("tfc:scythes", "#forge:tools/scythes");
+
 	/**
 	 * @type {string[]} - Item IDs and tags usable on tfc tool racks.
 	 */
@@ -512,12 +514,11 @@ function registerTFCItemTags(event) {
 	event.add('tfc:firepit_logs', '#tfc:firepit_kindling');
 	event.add('tfc:firepit_fuel', '#tfc:firepit_kindling');
 
-    //TODO: properly allow GT fluid containers to work with TFC crafting recipes.
     /** @type {{Item[]}} */
     const fluidItemIngredientHolders = [
-        //'#gtceu:super_tanks',
-        //'#gtceu:fluid_cells',
-        //'#gtceu:drums',
+        '#gtceu:super_tanks',
+        '#gtceu:fluid_cells',
+        '#gtceu:drums',
         '#tfc:barrels'
     ];
     fluidItemIngredientHolders.forEach(item => {
