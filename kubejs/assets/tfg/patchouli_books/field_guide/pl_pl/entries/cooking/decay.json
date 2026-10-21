@@ -210,7 +210,7 @@
                     "Y": "tfc:firepit[lit=true]"
                 }
             },
-            "text": "Wool yarn is used to hang items for $(thing)Smoking$(). Supporting blocks are required on each side. $(item)$(k:key.use)$() on the yarn with an item to store up to 8 items for smoking.",
+            "text": "Wełniana przędza służy do wieszania przedmiotów do $(thing)wędzenia$(). Po obu stronach wymagane są podpory. Użyj $(item)$(k:key.use)$() na przędzy z przedmiotem, aby zawiesić do 8 przedmiotów do wędzenia.",
             "enable_visualize": false
         },
         {

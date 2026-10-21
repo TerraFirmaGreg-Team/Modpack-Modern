@@ -19,7 +19,7 @@
             "anchor": "papyrus",
             "title": "Бумага из папируса",
             "recipe": "tfc:crafting/papyrus_strips",
-            "text": "Бумагу можно напрямую получить из $(l:https://en.wikipedia.org/wiki/Papyrus)Папируса$(). Для начала папирус должен быть нарезан на полоски при помощи $(thing)Ножа$()..."
+            "text": "Бумагу можно напрямую получить из $(l:the_world/wild_crops#papyrus)Папируса$(). Для начала папирус должен быть нарезан на полоски при помощи $(thing)Ножа$()..."
         },
         {
             "type": "tfg:sealed_barrel_recipe",

@@ -39,6 +39,14 @@
     "item.tfg.polycaprolactam_string": "聚己内酰胺线",
     "item.tfg.copper_spindle": "铜纺锤",
     "item.tfg.copper_spindle_head": "铜纺锤头",
+    "item.tfg.bronze_spindle": "青铜纺锤",
+    "item.tfg.bronze_spindle_head": "青铜纺锤头",
+    "item.tfg.black_bronze_spindle": "黑青铜纺锤",
+    "item.tfg.black_bronze_spindle_head": "黑青铜纺锤头",
+    "item.tfg.bismuth_bronze_spindle": "铋青铜纺锤",
+    "item.tfg.bismuth_bronze_spindle_head": "铋青铜纺锤头",
+    "item.tfg.wrought_iron_spindle": "锻铁纺锤",
+    "item.tfg.wrought_iron_spindle_head": "锻铁纺锤头",
     "item.tfg.silk_fibers": "丝纤维",
     "item.tfg.space_suit_fabric": "航天服面料",
     "item.tfg.vitrified_pearl": "玻璃化末影珍珠",
@@ -504,5 +512,6 @@
     "item.tfg.oil_palm_paste": "油棕糊",
     "item.tfg.oil_palm_debris": "油棕渣",
     "item.tfg.oil_palm_fiber": "油棕纤维",
-    "item.tfg.electric_flask": "电水壶"
+    "item.tfg.electric_flask": "电水壶",
+    "item.tfg.electric_flask.filled": "电水壶（%s）"
 }
