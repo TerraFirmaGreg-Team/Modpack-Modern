@@ -1,0 +1,163 @@
+{
+    "name": "Производство бумаги",
+    "category": "tfg:agriculture",
+    "icon": "tfc:unrefined_paper",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:agriculture/papermaking#papyrus)Бумага из папируса$()$(li2)$(l:agriculture/papermaking#papyrus)1. Полоски папируса $()$(li2)$(l:agriculture/papermaking#soaked_papyrus_strip)2. Пропитанные полоски папируса $()$(li2)$(l:agriculture/papermaking#unrefined_paper)3. Грубая бумага$()$(li)$(bold)$(l:agriculture/papermaking#parchment)Пергаментная бумага$()$(li2)$(l:agriculture/papermaking#treated_hide)1. Обработанная шкура\n$()$(li2)$(l:agriculture/papermaking#treated_hide)2. Пергаментная бумага$()$(li)$(bold)$(l:agriculture/papermaking#paper_from_wood)Бумага из дерева$()$(li2)$(l:agriculture/papermaking#hardwood_strip)1. Полоски твердой древесины$()$(li2)$(l:agriculture/papermaking#soaked_hardwood_strip)2. Пропитка полосок твердой древесины$()$(li2)$(l:agriculture/papermaking#breaking_down_the_pulp)3. Расщепление массы$()$(li2)$(l:agriculture/papermaking#pressing_the_pulp)4. Прессовка массы$()$(li2)$(l:agriculture/papermaking#drying_the_paper)5. Сушка бумаги$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "Введение",
+            "text": "$(thing)Бумагу$() делают из переработанного стебля $(l:the_world/wild_crops#papyrus)Папируса$(), или $(l:agriculture/papermaking#parchment)Шкур животных$() или при помощи длительного процесса с использованием определённых типов $(l:agriculture/papermaking#paper_from_wood)Дерева$(). Бумага нужна для многих вещей, таких как $(item)Рюкзаки$() и $(item)Бирки$(), но что более важно, она необходима чтобы достичь $(thing)Электрической эры$()!"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "papyrus",
+            "title": "Бумага из папируса",
+            "recipe": "tfc:crafting/papyrus_strips",
+            "text": "Бумагу можно напрямую получить из $(l:the_world/wild_crops#papyrus)Папируса$(). Для начала папирус должен быть нарезан на полоски при помощи $(thing)Ножа$()..."
+        },
+        {
+            "type": "tfg:sealed_barrel_recipe",
+            "anchor": "soaked_papyrus_strip",
+            "title": "Пропитанная полоска папируса",
+            "recipe": "tfc:barrel/soaked_papyrus_strip",
+            "text": "Затем, полоски папируса замачиваются в $(l:craftsmanship/barrels)Бочке$() $(thing)Воды$()."
+        },
+        {
+            "type": "tfg:loom_recipe",
+            "anchor": "unrefined_paper",
+            "title": "Грубая бумага",
+            "recipe": "tfc:loom/unrefined_paper",
+            "text": "Затем, пропитанные полоски папируса нужно сплести вместе на $(l:agriculture/weaving#loom)Ткацком станке$() чтобы получить $(thing)Грубую бумагу$(). Она должна быть размещена на бревне и $(l:agriculture/leather_making#scraping)обскоблена$() чтобы получить $(thing)Бумагу$()."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "parchment",
+            "text": "Изготовление $(thing)Пергаментной бумаги$() начинается с $(l:agriculture/leather_making#scraping)Голья$(). Пергамент требует обработки с использованием нескольких предметов. Для начала, понадобится $(thing)Пемза$(). Пемзу можно найти на земле рядом с $(l:the_world/geology)Вулканами$(), а также изредка встретить во время $(l:craftsmanship/panning)Промывки в лотке$() или обыска сундуков местных жителей.",
+            "title": "Пергамент"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "treated_hide",
+            "title": "Обработанная шкура",
+            "recipe": "tfc:crafting/large_treated_hide",
+            "text": "Изготовление пемзы, молотка и очищенной шкуры дает куски $(thing)Обработанной шкуры$()."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/parchment",
+            "anchor": "parchment_paper",
+            "title": "Пергаментная бумага",
+            "text": "Из обработанной шкуры, $(l:craftsmanship/glassworking#lime_and_potash)извести$(), муки и свежего яйца можно получить бумагу."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "paper_from_wood",
+            "text": "$(thing)Изготовление бумаги из дерева$()―это древний процесс переработки твёрдых сортов древесины в листы, которые затем перемалывают в целлюлозу, спрессовывают, засушивают и скоблят для получения бумаги.$(br2)Учти, что мягкая древесина не подходит для изготовления бумаги, лишь $(t:#tfg:hardwood)$(6)Твердое дерево$() подходит для процесса.",
+            "title": "Бумага из дерева"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Обтёсанное твёрдое дерево",
+            "anchor": "stripped_hardwood",
+            "item": {
+                "tag": "tfg:stripped_hardwood"
+            },
+            "text": "Процесс начинается с обтесывания коры $(t:#tfg:hardwood)$(6)Твердого дерева$() для оголения внутренних волокон бревна. Ты можешь обтесать бревно поставив его и нажав $(item)$(k:key.use)$() с топором в руке."
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "Полоска твердой древесины",
+            "anchor": "hardwood_strip",
+            "recipe": "tfg:crafting/strip_hardwood",
+            "text": "Затем, обтесанное дерево стругают топором, чтобы получить $(item)Полоски твердой древесины$(). Это можно сделать при помощи топора, а в дальнейшем и другими, более изящными способами."
+        },
+        {
+            "type": "tfg:sealed_barrel_recipe",
+            "title": "Пропитанная полоска твердой древесины",
+            "anchor": "soaked_hardwood_strip",
+            "recipe": "tfg:barrel/soak_hardwood_strip",
+            "text": "Затем, каждую полоску замачивают в $(l:craftsmanship/barrels)Бочке$() $(thing)Воды$(). Это $(thing)понижает целостность$() $(thing)дерева$(), позволяя $(thing)ещё больше измельчить$() его в дальнейшем. "
+        },
+        {
+            "type": "tfg:quern_recipe",
+            "recipe": "tfg:quern/soaked_hardwood_strip",
+            "title": "Масса из твердого дерева",
+            "anchor": "hardwood_pulp",
+            "text": "Затем, используй $(l:craftsmanship/quern)Жернов$() чтобы измельчить замоченные полоски в $(item)Массу из твердого дерева$()."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "gtceu:shaped/small_dust_assembling_hardwood",
+            "title": "Получите целлюлозу",
+            "anchor": "piling_up_the_pulp",
+            "text": "Жернов даёт маленькие кучки массы, тебе нужно объединить их на $(thing)Верстаке$(). Более продвинутые методы измельчения полосок дают больше массы."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "gtceu:thermochemically_treated_hardwood_dust",
+            "title": "Разрушьте эту целлюлозу",
+            "anchor": "breaking_down_the_pulp",
+            "text": "Прежде чем массу можно будет переработать в бумагу, её нужно ещё больше расщепить $(thing)Сварив её в Щелочи$() в $(l:cooking/cooking_methods#vat)Чане$() или $(l:cooking/cooking_methods#pot)Горшке$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Спрессуйте целлюлозу",
+            "anchor": "pressing_the_pulp",
+            "item": {
+                "tag": "firmalife:stomping_barrels"
+            },
+            "text": "После расщепления при помощи варки в щелочи, $(item)Обработанная масса из твердого дерева$() может быть спрессована в лист $(item)Пропитанной необработанной бумаги$(). Ты можешь утоптать обработанную массу из твердого дерева в $(l:cooking/alcohol#grape_smashing)Бочке для топки$(), либо использовать $(l:craftsmanship/anvils)Наковальню$()."
+        },
+        {
+            "type": "tfg:drying_recipe",
+            "recipe": "tfg:drying/unrefined_paper",
+            "anchor": "drying_the_paper",
+            "text": "Последний шаг―$(l:cooking/decay#drying)Засушивание$() $(item)Пропитанной необработанной бумаги$() в $(item)Необработанную бумагу$(), которую затем нужно скоблить для получения $(item)Бумаги$() как показано ранее."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Шаги соскабливания...?",
+            "text": "Продвижение по древу технологий позволит изготавливать бумагу из дерева за меньшее количество шагов, загляни в $(emi) чтобы увидеть различные подходы к которым ты можешь прибегнуть при изготовлении бумаги из дерева"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Читать далее",
+            "anchor": "relations",
+            "entries": [
+                "tfg:agriculture/animal_husbandry",
+                "tfg:agriculture/leather_making",
+                "tfg:cooking/cooking_methods",
+                "tfg:cooking/decay",
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/earth_tree_index",
+                "tfg:the_world/geology",
+                "tfg:craftsmanship/sticks_and_stones",
+                "tfg:craftsmanship/barrels"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 11,
+    "extra_recipe_mappings": {
+        "tfc:papyrus_strip": 2,
+        "tfc:soaked_papyrus_strip": 3,
+        "tfc:unrefined_paper": 4,
+        "tfc:treated_hide": 6,
+        "tag:tfg:stripped_hardwood": 9,
+        "tfg:hardwood_strip": 10,
+        "tfg:soaked_hardwood_strip": 11,
+        "gtceu:hardwood_dust": 12,
+        "gtceu:tiny_hardwood_dust": 12,
+        "gtceu:small_hardwood_dust": 12,
+        "gtceu:thermochemically_treated_hardwood_dust": 14,
+        "gtceu:tiny_thermochemically_treated_hardwood_dust": 14,
+        "gtceu:small_thermochemically_treated_hardwood_dust": 14,
+        "tfg:soaked_unrefined_paper": 15
+    }
+}

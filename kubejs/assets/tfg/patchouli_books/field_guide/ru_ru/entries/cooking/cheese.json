@@ -1,0 +1,92 @@
+{
+  "name": "Изготовление сыра",
+  "category": "tfg:cooking",
+  "icon": "firmalife:textures/item/food/gouda.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Чтобы сделать сыр, сначала нужно будет $(thing)сквасить$() молоко, для этого тебе понадобится $(thing)Сычуг$(), получаемый из $(thing)жвачных$() животных, а именно:\n$(l:the_world/wild_animals#yak)Яки$().\n$(l:the_world/wild_animals#cow)Коровы$().\n$(l:the_world/wild_animals#sheep)Овцы$().\n$(l:the_world/wild_animals#goat)Козы$(), и\n$(l:the_world/wild_animals#musk_ox)Овцебыки$(). Чтобы сделать простоквашу, просто запечатай молоко с сычугом в $(item)бочке$(), на 4 часа."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "curd",
+      "title": "Творог",
+      "item": {
+        "tag": "tfg:foods/cheese_curds"
+      },
+      "text": "Простокваша может быть превращена в $(thing)Творог$(). Просто запечатай её вместе с $(thing)марлей$() в бочке. Эту $(l)Марлю нельзя будет использовать снова$().$(br)Творог сам по себе может быть ингредиентом блюда, ты можешь сделать $(item)сырные шарики в пивном кляре$(). И конечно же, ты можешь превратить творог в сыр!"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "cheese_wheel",
+      "title": "Головка сыра",
+      "item": {
+        "tag": "firmalife:cheese_wheels"
+      },
+      "text": "Головка сыра, это блок, который можно сделать из $(item)Творога$(). Сыр можно $(thing)состарить$() в $(l:cooking/decay#cellar)Погребе$(), это увеличит срок его хранения. Чтобы получить съедобный сыр из головки сыра, просто нажми $(item)$(k:key.use), по нему, держа $(thing)Нож$() в руках. Если сыр будет разрезан или сломан, процесс старения будет утерян! $(br)$(thing)Сухие сыры$(), которые делаются из творога и соли, не требуют особых условий созревания, когда $(thing)Мокрые сыры$() созревают в морской воде."
+    },
+    {
+      "type": "tfg:multimultiblock",
+      "text": "Стадии созревания головки сыра:\n$(thing)Свежий$() +28 дней -> $(thing)Выдержанный$() +112 дней -> Старинный",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:gouda_wheel[age=fresh]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:gouda_wheel[age=aged]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:gouda_wheel[age=vintage]"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:relations",
+      "title": "Дальнейшее чтение",
+      "anchor": "relations",
+      "entries": [
+        "tfg:cooking/food_and_water",
+        "tfg:cooking/decay",
+        "tfg:the_world/wild_animals"
+      ]
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 5,
+  "extra_recipe_mappings": {
+    "firmalife:rennet": 0,
+    "tag:tfg:foods/cheese_curds": 1,
+    "firmalife:cheesecloth": 1,
+    "tag:firmalife:cheese_wheels": 2
+  }
+}

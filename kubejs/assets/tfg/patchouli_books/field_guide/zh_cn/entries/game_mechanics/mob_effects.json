@@ -1,0 +1,87 @@
+{
+    "name": "状态效果术语表",
+    "category": "tfg:game_mechanics",
+    "icon": "minecraft:textures/mob_effect/jump_boost.png",
+    "sortnum": 4,
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(2)正面效果$()$(li2)$(l:game_mechanics/mob_effects#cooling)降温$()$(li2)$(l:game_mechanics/mob_effects#warming)保暖$()$(li2)$(l:game_mechanics/mob_effects#quenched)解渴$()$(li2)$(l:game_mechanics/mob_effects#cure_parasites)驱虫$()$(li2)$(l:game_mechanics/mob_effects#cure_toxins)排毒$()$(li2)$(l:game_mechanics/mob_effects#cure_microplastics)过滤微塑料$()$(li)$(bold)$(4)负面效果$()$(li2)$(l:game_mechanics/mob_effects#freezing)冰冻$()$(li2)$(l:game_mechanics/mob_effects#blazing)灼热$()$(li2)$(l:game_mechanics/mob_effects#instant_radiation)瞬间辐射$()$(li2)$(l:game_mechanics/mob_effects#final_moments)临终时刻$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cooling",
+            "title": "降温",
+            "text": "效果激活期间会持续$(thing)降温$()，玩家体温最低可降至$(n)5°C$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "warming",
+            "title": "保暖",
+            "text": "效果激活期间会持续$(thing)保暖$()，玩家体温最高可升至$(n)25°C$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "quenched",
+            "title": "解渴",
+            "text": "效果激活期间会防止$(l:cooking/food_and_water#thirst)口渴值$()自然衰减。但它无法阻止干渴效果降低你的口渴值。$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cure_parasites",
+            "title": "驱虫",
+            "text": "效果激活期间会逐渐清除$(l:cooking/food_and_water#parasites)寄生虫污染$()，基础等级下约每 10 秒清除 1%。$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cure_toxins",
+            "title": "排毒",
+            "text": "效果激活期间会逐渐清除$(l:cooking/food_and_water#toxins)毒素污染$()，基础等级下约每 10 秒清除 1%。$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cure_microplastics",
+            "title": "过滤微塑料",
+            "text": "效果激活期间会逐渐清除$(l:cooking/food_and_water#microplastics)微塑料污染$()，基础等级下约每 10 秒清除 1%。$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "freezing",
+            "title": "冰冻",
+            "text": "该效果生效期间，会持续为玩家$(thing)降温$()，最低可降至危险的 $(n)-20°C$()。建议穿戴防护装备，才能在这种状态下存活。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "blazing",
+            "title": "灼热",
+            "text": "该效果生效期间，会持续为玩家$(thing)升温$()，最高可达危险的 $(n)60°C$()。建议穿戴防护装备，才能在这种状态下存活。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "instant_radiation",
+            "title": "瞬间辐射",
+            "text": "该效果会以$(l:game_mechanics/hazards#radioactive_materials)辐射伤害$()快速对玩家造成伤害。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "final_moments",
+            "title": "临终时刻",
+            "text": "该效果会启动一个倒计时，数尽你最后的几分钟。时间一到，你就会死亡。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸阅读",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_world/geology",
+                "tfg:the_world/climate",
+                "tfg:beneath/beneath_mechanics",
+                "tfg:cooking/food_and_water",
+                "tfg:cooking/drinks",
+                "tfg:game_mechanics/hazards"
+            ]
+        }
+    ]
+}

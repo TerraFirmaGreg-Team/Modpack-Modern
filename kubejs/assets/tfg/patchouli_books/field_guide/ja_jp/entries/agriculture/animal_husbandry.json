@@ -1,0 +1,225 @@
+{
+    "name": "牧畜",
+    "category": "tfg:agriculture",
+    "icon": "minecraft:textures/item/egg.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:agriculture/animal_husbandry#intro)家畜$()$(li)$(bold)$(l:agriculture/animal_husbandry#uses)老化$()$(li2)$(l:agriculture/animal_husbandry#uses_table)消耗表$()$(li)$(bold)$(l:agriculture/animal_husbandry#familiarity)友好度$()$(li)$(bold)$(l:agriculture/animal_husbandry#mammals)哺乳類$()$(li2)$(l:agriculture/animal_husbandry#wooly_animals)羊毛を持つ哺乳類$()$(li2)$(l:agriculture/animal_husbandry#dairy_animals)乳用哺乳類$()$(li2)$(l:agriculture/animal_husbandry#equines)ウマ科動物$()$(li2)$(l:agriculture/animal_husbandry#camelides)ラクダ$()$(li)$(bold)$(l:agriculture/animal_husbandry#oviparous_animals)卵生動物$()$(li)$(bold)$(l:agriculture/animal_husbandry#feeding_trough)給餌箱$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "はじめに",
+            "text": "$(thing)家畜$()は、プレイヤーが飼いならして繁殖させることができる動物です。家畜は$(thing)オス$()または$(thing)メス$()のいずれかになります。一部の動物では、性別を視覚的に判断することができます。たとえば、雄のブタには牙があります。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "uses",
+            "title": "消耗",
+            "text": "家畜にはそれぞれ、最大$(item)消耗$()回数（「\"消耗度\"」として表示される）があり、それを超えると$(thing)老化$()します。彼らは赤ちゃんとして生まれますが、赤ちゃんは体が小さく、資源を生産することができません。一定の日数が経過すると、繁殖したり乳を生産したりできる$(thing)大人$()の動物に成長します。動物は繁殖したり、十分な回数資源を生産したりすると$(thing)老いた動物$()になり、肉としてしか利用できなくなります。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/old_cow.png"
+            ],
+            "text": "この雄牛は高齢で繁殖ができません。色褪せた毛並みと灰色の目をしています。",
+            "border": true
+        },
+        {
+            "type": "tfg:table",
+            "anchor": "uses_table",
+            "strings": [
+                {
+                    "text": "行動",
+                    "bold": true
+                },
+                {
+                    "text": "消耗（オス）",
+                    "bold": true
+                },
+                {
+                    "text": "消耗（メス）",
+                    "bold": true
+                },
+                {
+                    "text": "備考",
+                    "bold": true
+                },
+                {
+                    "text": "交尾",
+                    "bold": true
+                },
+                {
+                    "text": "-5"
+                },
+                {
+                    "text": " "
+                },
+                {
+                    "text": "オスのみ"
+                },
+                {
+                    "text": "出産",
+                    "bold": true
+                },
+                {
+                    "text": " "
+                },
+                {
+                    "text": "-10"
+                },
+                {
+                    "text": "哺乳類のみ"
+                },
+                {
+                    "text": "産卵",
+                    "bold": true
+                },
+                {
+                    "text": " "
+                },
+                {
+                    "text": "-1"
+                },
+                {
+                    "text": "有精卵でも同じ"
+                },
+                {
+                    "text": "生産",
+                    "bold": true
+                },
+                {
+                    "text": " "
+                },
+                {
+                    "text": "-1"
+                },
+                {
+                    "text": "乳や毛など"
+                }
+            ],
+            "title": "生産表",
+            "legend": [],
+            "columns": 3,
+            "first_column_width": 47,
+            "column_width": 64,
+            "row_height": 20,
+            "left_buffer": 2,
+            "top_buffer": 12,
+            "draw_background": false
+        },
+        {
+            "type": "patchouli:empty",
+            "draw_filler": false
+        },
+        {
+            "type": "patchouli:text",
+            "title": "友好度",
+            "anchor": "familiarity",
+            "text": "家畜に餌を与えることで、$(thing)友好度$()を上げることができます。動物ごとに、好んで食べる餌があります。動物に餌を与えるには、手に餌を持った状態で $(item)$(k:key.sneak)$() と $(item)$(k:key.use)$() を実行してください。$(br)家畜とのほとんどのやり取りには、友好度が必要です。友好度は母方から子へと受け継がれますが、その値は低下します。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/unfamiliarized_pig.png"
+            ],
+            "text": "家畜には、$(thing)親密度$()があり、$(item)$(k:key.sneak)$()を押しながら動物を見ると、頭の上にそれが現れます。",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/no_familiarity_decay_pig.png"
+            ],
+            "text": "餌を与えないと親密度は毎日少しずつ減少します。十分に高めると、白い輪郭のハートで示された分以下への減少が防げます。",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/familiarity_limit_pig.png"
+            ],
+            "text": "大人の家畜は、完全には慣れず赤い枠線のハートで示されます。赤ちゃんは100%の親密度にできます。",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "title": "哺乳類",
+            "anchor": "mammals",
+            "text": "$(thing)哺乳類$()は$(thing)妊娠$()を経験する家畜です。30%以上の親密度があり、その日に餌を与えられた成体の哺乳類は、異性で近くにいる場合、交尾します。雌の動物は$(thing)妊娠$()し、受精後の一定の日数が経過すると子供を産みます。$(br)例えば、$(l:the_world/wild_animals#pig)ブタ$()がそうです。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "羊毛を持つ哺乳類",
+            "anchor": "wooly_animals",
+            "text": "$(thing)羊毛を持つ動物$()は、十分に親密であり、大人であれば$(thing)毛を刈る$()ことができる$(l:agriculture/animal_husbandry#mammals)哺乳類$()です。例えば、$(l:the_world/wild_animals#sheep)羊$()、$(l:the_world/wild_animals#alpaca)アルパカ$()、および$(l:the_world/wild_animals#musk_ox)ジャコウウシ$()がいます。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "乳用哺乳類",
+            "anchor": "dairy_animals",
+            "text": "$(thing)乳用動物$()は、$(thing)ミルク$()を作る哺乳類です。雌の乳用動物は、バケツを使ってミルクを入手できます。例えば、$(l:the_world/wild_animals#goat)ヤギ$()、$(l:the_world/wild_animals#cow)牛$()、および$(l:the_world/wild_animals#yak)ヤク$()がいます。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "equines",
+            "title": "ウマ科動物",
+            "text": "$(thing)ウマ科動物$()は、$(l:agriculture/animal_husbandry#mammals)哺乳類$()の一種であり、飼い慣らすと乗ることができます。$(l:agriculture/leather_making)鞍$()を装備し、親密度が15%に達すると乗れるようになります。$(br)$(l:the_world/wild_animals#mule) ラバ$()$と$(l:the_world/wild_animals#donkey)ロバ$()$は、あらゆるチェストや樽を運ぶことができます。樽を運んでいる場合、$(item)$(k:key.use)$()を押しながら$(item)$(k:key.sneak)$()を押すと、樽を取り外すことができます。バケツを持っている状態で同じキーを押すと、樽から液体を取り出すことができます。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "camelides",
+            "title": "ラクダ",
+            "text": "$(thing)ラクダ$()は、$(l:agriculture/animal_husbandry#mammals)哺乳類$()の一種であり、$(l:agriculture/animal_husbandry#equines)ウマ科の動物$()と同様に、飼い慣らすと乗ることができます。$(l:agriculture/leather_making)鞍$()を装備し、親密度が15%に達すると、騎乗可能になります。ラクダは脚力が高く、力強い跳躍で峡谷を越えることができます。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "卵生動物",
+            "anchor": "oviparous_animals",
+            "recipe": "tfc:crafting/nest_box",
+            "text": "$(thing)卵生動物$()は$(l:agriculture/animal_husbandry#mammals)哺乳類$()ではなく、$(thing)卵$()を産んで子供を得ます。卵を産むには$(thing)巣箱$()が必要で、自力でそれを見つけることができます。$(br)例としては、$(l:the_world/wild_animals#duck)アヒル$()、$(l:the_world/wild_animals#quail)ウズラ$()、および$(l:the_world/wild_animals#chicken)ニワトリ$()がいます。"
+        },
+        {
+            "type": "tfg:heat_recipe",
+            "recipe": "tfg:heating/forge_eggs_to_tfc_food_cooked_egg",
+            "text": "$(thing)卵$()は料理やゆでることで食べられます。雄の卵生動物は雌を受精させることができ、その結果、巣箱に産みつける次の卵が受精卵となります。受精卵には、孵化までの時間がツールチップで表示されます。$(br2)また、卵生動物からは $(item)$(k:key.sneak) + $(k:key.use)$()で、 羽毛を$(thing)採取する$()こともできます。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "給餌箱",
+            "anchor": "feeding_trough",
+            "item": "tfcgroomer:bismuth_bronze_grooming_station,tfcgroomer:black_bronze_grooming_station,tfcgroomer:bronze_grooming_station,tfcgroomer:copper_grooming_station,tfcgroomer:wrought_iron_grooming_station,tfcgroomer:steel_grooming_station,tfcgroomer:black_steel_grooming_station,tfcgroomer:red_steel_grooming_station,tfcgroomer:blue_steel_grooming_station",
+            "text": "$(thing)給餌箱$()は、ツールチップで指定された範囲内の動物に自動的に餌を与えることができます。より高ランクの $(l:craftsmanship/metallurgy)金属$()を使用すると、給餌範囲が広がります。$(br)動物の餌を追加し、必要に応じて自動繁殖を有効にするには、$(item)$(k:key.use)$() を使用して餌箱のインターフェースを開いてください。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "さらに読む",
+            "anchor": "relations",
+            "entries": [
+                "tfg:agriculture/growing_crops",
+                "tfg:agriculture/weaving",
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/wild_animals",
+                "tfg:agriculture/leather_making",
+                "tfg:agriculture/weaving"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "priority": true,
+    "extra_recipe_mappings": {
+        "tfc:nest_box": 15,
+        "tfcgroomer:bismuth_bronze_grooming_station": 17,
+        "tfcgroomer:black_bronze_grooming_station": 17,
+        "tfcgroomer:bronze_grooming_station": 17,
+        "tfcgroomer:copper_grooming_station": 17,
+        "tfcgroomer:wrought_iron_grooming_station": 17,
+        "tfcgroomer:steel_grooming_station": 17,
+        "tfcgroomer:black_steel_grooming_station": 17,
+        "tfcgroomer:red_steel_grooming_station": 17,
+        "tfcgroomer:blue_steel_grooming_station": 17
+    }
+}

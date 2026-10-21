@@ -1,0 +1,50 @@
+{
+    "name": "製作三明治",
+    "category": "tfg:cooking",
+    "icon": "tfc:textures/item/food/barley_bread_sandwich.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "sandwich",
+            "text": "$(thing)三明治$()是一種可以組合兩個$(thing)$(n)$(t:麵包、扁麵包或麵包片)麵包$()物品和三種$(n)$(thing)$(t:tfc:#usable_in_sandwich)三明治材料$()的餐點。$(br2)三明治材料不能是腐爛的，但三明治做好後會被視為新鮮的，並從頭開始計算腐壞。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:food/barley_bread_sandwich",
+            "title": "三明治",
+            "link_recipes": false,
+            "text": "三明治是動態的餐點物品。使用的材料會決定它所含的$(l:cooking/food_and_water#nutrients)養分$()。$(br2)$(t:§70.8§r§l∑§r§7材料 §r+ §70.5§r§l∑§r§7麵包§r)計算營養價值的方法：將每種材料的營養值加總後乘以 0.8，但麵包則乘以 0.5$()。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:food/barley_bread_jam_sandwich",
+            "anchor": "jam_sandwich",
+            "title": "果醬三明治",
+            "link_recipes": false,
+            "text": "果醬三明治同樣是動態的餐點物品，計算方式與一般三明治相同。$(br)合成果醬三明治後會留下一個空罐。$(br2)果醬只能和$(thing)煮熟的肉類和魚$()或$(thing)起司$()組合成果醬三明治。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸閱讀",
+            "anchor": "relations",
+            "entries": [
+                "tfg:cooking/food_and_water",
+                "tfg:cooking/salad",
+                "tfg:cooking/mixing_bowl",
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/wild_fruits",
+                "tfg:the_world/wild_animals"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 10,
+    "extra_recipe_mappings": {
+        "tfc:food/barley_bread_sandwich": 0,
+        "tfc:food/maize_bread_sandwich": 0,
+        "tfc:food/oat_bread_sandwich": 0,
+        "tfc:food/rice_bread_sandwich": 0,
+        "tfc:food/rye_bread_sandwich": 0,
+        "tfc:food/wheat_bread_sandwich": 0
+    }
+}

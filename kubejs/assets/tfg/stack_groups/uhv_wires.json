@@ -1,0 +1,27 @@
+{
+	"id": "tfg:uhv_wires",
+	"type": "remi:group",
+	"name": "stackgroup.remi.tfg_uhv_wires",
+	"contents": [
+		"#forge:single_wires/ruthenium_trinium_americium_neutronate",
+		"#forge:single_wires/europium",
+		"#forge:double_wires/ruthenium_trinium_americium_neutronate",
+		"#forge:double_wires/europium",
+		"#forge:quadruple_wires/ruthenium_trinium_americium_neutronate",
+		"#forge:quadruple_wires/europium",
+		"#forge:octal_wires/ruthenium_trinium_americium_neutronate",
+		"#forge:octal_wires/europium",
+		"#forge:hex_wires/ruthenium_trinium_americium_neutronate",
+		"#forge:hex_wires/europium",
+		"#forge:single_cables/ruthenium_trinium_americium_neutronate",
+		"#forge:single_cables/europium",
+		"#forge:double_cables/ruthenium_trinium_americium_neutronate",
+		"#forge:double_cables/europium",
+		"#forge:quadruple_cables/ruthenium_trinium_americium_neutronate",
+		"#forge:quadruple_cables/europium",
+		"#forge:octal_cables/ruthenium_trinium_americium_neutronate",
+		"#forge:octal_cables/europium",
+		"#forge:hex_cables/ruthenium_trinium_americium_neutronate",
+		"#forge:hex_cables/europium"
+	]
+}

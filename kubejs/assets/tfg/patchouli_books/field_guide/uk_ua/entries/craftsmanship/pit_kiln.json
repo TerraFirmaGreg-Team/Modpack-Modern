@@ -1,0 +1,45 @@
+{
+    "name": "Земляна піч",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:textures/gui/book/icons/pit_kiln.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Земляна піч — це ранній спосіб $(l:game_mechanics/heating)нагрівання$() предметів. Наприклад, її можна використовувати для $(thing)випалювання$() глини в кераміку. Приблизно за вісім внутрішньоігрових годин яма для випалу нагріє свій вміст до 1400 °C, або до $(bold)$(e)$(t:Yellow White)яскраво жовтого$()."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Щоб побудувати земляну піч, тобі знадобляться:$(br)$(li)Яма в землі, піску або камені$(li)До чотирьох предметів для випалу$(li)Вісім шматків $(thing)соломи$()$(li)Вісім $(thing)колод$()$(li)Предмет, здатний розпалювати вогонь, як-от $(l:craftsmanship/firepit#firestarter)скіпка$() або $(thing)смолоскип$().$(br2)$(bold)Порада:$() Смолоскипи можуть розпалити вогонь, якщо просто кинути смолоскип у земляну піч та почекати кілька секунд."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Щоб створити земляну піч:$(br2)$(bold)1.$() Поклади до чотирьох предметів у яму розміром 1×1 за допомогою $(item)$(k:tfc.key.place_block)$().$(br)$(bold)2.$() Використовуй вісім $(thing)соломин$() по земляній печі, доки предмети не будуть накриті.$(br)$(bold)3.$() Використовуй вісім $(thing)колод$() по земляній печі, доки вона не буде заповнена.$(br)$(bold)4.$() Підпали верхню частину!$(br2)Після цього земляна піч горітиме протягом восьми годин, повільно $(l:game_mechanics/heating)нагріваючи$() предмети всередині."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/pit_kiln_1.png",
+                "tfc:textures/gui/book/tutorial/pit_kiln_2.png",
+                "tfc:textures/gui/book/tutorial/pit_kiln_3.png",
+                "tfc:textures/gui/book/tutorial/pit_kiln_4.png",
+                "tfc:textures/gui/book/tutorial/pit_kiln_5.png"
+            ],
+            "text": "$(bold)Навчальне слайд-шоу:$() Створення земляної печі.",
+            "border": true
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Докладніше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/pottery",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/charcoal_forge",
+                "tfg:craftsmanship/anvils",
+                "tfg:game_mechanics/heating"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 4
+}

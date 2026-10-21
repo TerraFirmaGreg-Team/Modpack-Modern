@@ -1,0 +1,122 @@
+{
+	"name": "Особисте сховище",
+	"category": "tfg:logistics",
+	"icon": "sophisticatedbackpacks:backpack",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(bold)$(l:logistics/personal_storage#small_vessel)Горщик$()$(li)$(bold)$(l:logistics/personal_storage#large_vessel)Корчага$()$(li)$(bold)$(l:logistics/personal_storage#straw_basket)Солом’яний кошик$()$(li)$(bold)$(l:logistics/personal_storage#leather_sack)Шкіряний мішок$()$(li)$(bold)$(l:logistics/personal_storage#ore_sack)Мішок для руд$()$(li)$(bold)$(l:logistics/personal_storage#seed_pouch)Мішечок для насіння$()$(li)$(bold)$(l:logistics/personal_storage#frame_pack)Рюкзак для каркасів$()$(li)$(bold)$(l:logistics/personal_storage#quiver)Сагайдак$()$(li)$(bold)$(l:logistics/personal_storage#backpack)Рюкзаки$()$(li)$(bold)$(l:logistics/personal_storage#tool_belt)Ремінь для інструментів$()",
+			"title": "Індекс",
+			"anchor": "index"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "intro",
+			"title": "Вступ",
+			"text": "Існує багато $(item)контейнерів для предметів$(), які допоможуть зменшити навантаження на інвентар під час гри. Під час вибору між ними варто враховувати кілька важливих характеристик.$(li)$(thing)Кількість слотів$(): кількість доступних слотів.$(li)$(thing)Місткість слота$(): скільки предметів може вмістити один слот.$(li)$(thing)Допустимий розмір$(): найбільший $(l:game_mechanics/size_and_weight)розмір TFC$(), дозволений для предметів у слотах."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(thing)Підбирання предметів$(): чи може контейнер підбирати предмети зі світу. Використовуй $(item)$(k:key.sneak)-$(k:key.use)$() або $(item)$(k:sns.key.pickup)$(), щоб перемикати цю функцію.$(li)$(thing)Знищення предметів$(): чи може контейнер знищувати зайві предмети, підняті зі світу. Для перемикання використовуй $(item)$(k:key.sneak)-$(k:key.attack)$() у слотах.$(li)$(thing)Взаємодія з інвентарем$(): чи можна додавати та забирати предмети, натискаючи на стопку, як у горщиках TFC або ванільних мішках.$(li)$(thing)Обмеження$(): які типи предметів дозволено зберігати всередині."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "small_vessel",
+			"title": "Горщик",
+			"item": "tag:tfc:fired_vessels",
+			"text": "$(bold)Слотів$(): 4$(br)$(bold)Розмір стопки$(): 16$(br)$(bold)Найбільший розмір$(): Малий$(br)$(bold)Підбирання предметів$(): $(c)Ні$()$(br)$(bold)Знищення предметів у слотах$(): $(c)Ні$()$(br)$(bold)Обмеження$(): Немає"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "large_vessel",
+			"title": "Корчага",
+			"item": "tag:tfc:fired_large_vessels",
+			"text": "$(bold)Слотів$(): 9$(br)$(bold)Розмір стопки$(): 64$(br)$(bold)Найбільший розмір$(): Звичайний$(br)$(bold)Підбирання предметів$(): $(c)Ні$()$(br)$(bold)Знищення предметів у слотах$(): $(c)Ні$()$(br)$(bold)Обмеження$(): Немає"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "straw_basket",
+			"title": "Солом'яний кошик",
+			"item": "sns:straw_basket",
+			"text": "$(bold)Слотів$(): 4$(br)$(bold)Розмір стопки$(): 16$(br)$(bold)Найбільший розмір$(): Малий$(br)$(bold)Підбирання предметів$(): $(2)Так$()$(br)$(bold)Знищення предметів у слотах$(): $(c)Ні$()$(br)$(bold)Обмеження$(): Немає"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "leather_sack",
+			"title": "Шкіряний мішок",
+			"item": "sns:leather_sack",
+			"text": "$(bold)Слотів$(): 4$(br)$(bold)Розмір стопки$(): 64$(br)$(bold)Найбільший розмір$(): Звичайний$(br)$(bold)Підбирання предметів$(): $(2)Так$()$(br)$(bold)Знищення предметів у слотах$(): $(2)Так$()$(br)$(bold)Обмеження$(): Немає"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "ore_sack",
+			"title": "Мішок для руд",
+			"item": "sns:ore_sack",
+			"text": "$(bold)Слотів$(): 9$(br)$(bold)Розмір стопки$(): 512$(br)$(bold)Найбільший розмір$(): Малий$(br)$(bold)Підбирання предметів$(): $(2)Так$()$(br)$(bold)Знищення предметів у слотах$(): $(2)Так$()$(br)$(bold)Обмеження$(): $(6)$(t:#sns:allowed_in_ore_sack)Дрібний камінь, руда, самоцвіти, глина$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "seed_pouch",
+			"title": "Мішечок для насіння",
+			"item": "sns:seed_pouch",
+			"text": "$(bold)Слотів$(): 27$(br)$(bold)Розмір стопки$(): 128$(br)$(bold)Найбільший розмір$(): Малий$(br)$(bold)Підбирання предметів$(): $(2)Так$()$(br)$(bold)Знищення предметів у слотах$(): $(c)Ні$()$(br)$(bold)Обмеження$(): $(6)$(t:#sns:allowed_in_seed_pouch)Насіння, саджанці, кущі$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "frame_pack",
+			"title": "Рюкзак для каркасів",
+			"item": "sns:frame_pack",
+			"text": "$(bold)Слотів$(): 18$(br)$(bold)Розмір стопки$(): 64$(br)$(bold)Найбільший розмір$(): Дуже великий$(br)$(bold)Підбирання предметів$(): $(2)Так$()$(br)$(bold)Знищення предметів у слотах$(): $(2)Так$()$(br)$(bold)Обмеження$(): Немає"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "quiver",
+			"title": "Сагайдак",
+			"item": "sns:quiver",
+			"text": "$(bold)Слотів$(): 8$(br)$(bold)Розмір стопки$(): 32$(br)$(bold)Найбільший розмір$(): Дуже великий$(br)$(bold)Підбирання предметів$(): $(2)Так$()$(br)$(bold)Знищення предметів у слотах$(): $(c)Ні$()$(br)$(bold)Обмеження$(): $(6)$(t:#sns:allowed_in_quiver)Стріли, списи$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "backpack",
+			"title": "Рюкзаки",
+			"item": "sophisticatedbackpacks:backpack,sophisticatedbackpacks:iron_backpack,sophisticatedbackpacks:gold_backpack,sophisticatedbackpacks:diamond_backpack,sophisticatedbackpacks:netherite_backpack",
+			"text": "$(bold)Слотів$(): 36–120$(br)$(bold)Розмір стопки$(): 64–128$(br)$(bold)Найбільший розмір$(): Дуже великий$(br)$(bold)Підбирання предметів$(): З модифікаціями$(br)$(bold)Знищення предметів у слотах$(): З модифікаціями$(br)$(bold)Обмеження$(): Немає"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "tool_belt",
+			"title": "Ремінь для інструментів",
+			"item": "toolbelt:belt,toolbelt:pouch",
+			"text": "$(item)Пояс для інструментів$() — особливий предмет. Спочатку він має лише 2 слоти, але його можна покращити за допомогою підсумків до 9 слотів. Після спорядження його у $(l:craftsmanship/clothing#curios)слоті цікавинок для пояса$(), ти зможеш отримати доступ до будь-якого з цих предметів через радіальне меню, утримуючи $(item)$(k:key.toolbelt.open)$(), що робить його ідеальним для швидкого перемикання між різними інструментами."
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Докладніше",
+			"anchor": "relations",
+			"entries": [
+				"tfg:craftsmanship/metallurgy",
+				"tfg:craftsmanship/pottery",
+				"tfg:craftsmanship/sewing_table",
+				"tfg:agriculture/leather_making",
+				"tfg:agriculture/weaving",
+				"tfg:logistics/exploration_gear"
+			]
+		}
+	],
+	"read_by_default": true,
+	"extra_recipe_mappings": {
+		"sns:straw_basket": 5,
+		"sns:leather_sack": 6,
+		"sns:ore_sack": 7,
+		"sns:seed_pouch": 8,
+		"sns:frame_pack": 9,
+		"sns:quiver": 10,
+		"sophisticatedbackpacks:backpack": 11,
+		"sophisticatedbackpacks:iron_backpack": 11,
+		"sophisticatedbackpacks:gold_backpack": 11,
+		"sophisticatedbackpacks:diamond_backpack": 11,
+		"sophisticatedbackpacks:netherite_backpack": 11,
+		"toolbelt:belt": 12,
+		"toolbelt:pouch": 12
+	}
+}

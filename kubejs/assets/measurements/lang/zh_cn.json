@@ -1,3 +1,9 @@
 {
-	"item.measurements.tape_measure": "卷尺"
+	"item.measurements.tape_measure": "卷尺",
+	"text.autoconfig.measurements.option.client": "客户端",
+	"text.autoconfig.measurements.option.client.lineColor": "线条颜色",
+	"text.autoconfig.measurements.option.client.lineWidth": "线宽",
+	"text.autoconfig.measurements.option.client.lineWidthMax": "最大线宽",
+	"text.autoconfig.measurements.option.client.textColor": "文字颜色",
+	"text.autoconfig.measurements.option.client.textSize": "文字大小"
 }

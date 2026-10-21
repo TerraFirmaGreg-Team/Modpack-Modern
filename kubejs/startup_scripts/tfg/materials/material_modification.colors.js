@@ -28,8 +28,8 @@ function registerTFGColorsMaterialModification(event) {
 	GTMaterials.Cobalt.setMaterialSecondaryARGB(0x1D2688)
 	GTMaterials.CertusQuartz.setMaterialARGB(0xB8D8FC)
 	GTMaterials.CertusQuartz.setMaterialSecondaryARGB(0xADCCEF)
-	GTMaterials.Vanadium.setMaterialARGB(0xA7AAC6)
-	GTMaterials.Vanadium.setMaterialSecondaryARGB(0xC4EFE6)
+	GTMaterials.Vanadium.setMaterialARGB(0xD9D5E5)
+	GTMaterials.Vanadium.setMaterialSecondaryARGB(0x708D83)
 	GTMaterials.Brass.setMaterialSecondaryARGB(0x791905)
 	GTMaterials.Aluminium.setMaterialARGB(0xb6e5ff)
 	GTMaterials.Aluminium.setMaterialSecondaryARGB(0x7ca29b)
@@ -61,4 +61,6 @@ function registerTFGColorsMaterialModification(event) {
 	GTMaterials.RoseGold.setMaterialSecondaryARGB(0xE7945C)
 	GTMaterials.Flint.setMaterialARGB(0x3C3B3B)
 	GTMaterials.Flint.setMaterialSecondaryARGB(0x222020)
+	GTMaterials.DamascusSteel.setMaterialARGB(0x564766)
+	GTMaterials.DamascusSteel.setMaterialSecondaryARGB(0x31283b)
 }

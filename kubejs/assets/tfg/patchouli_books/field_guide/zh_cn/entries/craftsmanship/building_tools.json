@@ -1,0 +1,119 @@
+{
+	"name": "建筑工具",
+	"icon": "tfg:trowel",
+	"category": "tfg:craftsmanship",
+	"pages": [
+        {
+            "type": "patchouli:text",
+            "text": "工厂可没法自己从旷野里长出来！本条目列出了一些工具，帮你把美丽的自然景观铺平，建起梦寐以求的仓库。$(br2)$(bold)提示：$()竖直台阶碍事？$(thing)Additional Placements$()的放置方式可以按 $(item)$(k:key.additionalplacements.placement_toggle)$()来切换。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "title": "目录",
+            "text": "$(li)$(bold)$(l:craftsmanship/building_tools#trowel)抹刀$()$(li)$(bold)$(l:craftsmanship/building_tools#stonecutter)切石机$()$(li)$(bold)$(l:craftsmanship/building_tools#copycats)伪装方块$()$(li)$(bold)$(l:craftsmanship/building_tools#framing_saw)框架锯$()$(li)$(bold)$(l:craftsmanship/building_tools#architects_cutter)建筑师切割机$()$(li)$(bold)$(l:craftsmanship/building_tools#wands)建筑手杖$()$(li)$(bold)$(l:craftsmanship/building_tools#schematicannon)蓝图加农炮$()$(li)$(bold)$(l:craftsmanship/building_tools#terminals)格雷科技终端$()$(li)$(bold)$(l:craftsmanship/building_tools#gadgets)建筑小帮手$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "抹刀",
+            "item": "tfg:trowel",
+            "text": "$(item)抹刀$()让建造者在对着表面 $(item)$(k:key.use)$()时，从快捷栏中随机放置方块。$(br)抹刀还内置了与 $(item)道路和屋顶$()模组的联动，也能随机放置砖块或石板之类的填充物。$(br)灵感来自 $(item)Quark$()（Vazkii 的模组）中的抹刀工具。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "stonecutter",
+            "item": "minecraft:stonecutter",
+            "title": "可自定义方块",
+            "text": "$(tfg_short)有几个专门添加可自定义方块的模组，可以实现非常精细的建筑。$(br2)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "copycats:copycat_block",
+            "title": "伪装方块",
+            "anchor": "copycats",
+            "text": "$(bold)Create: Copycats+$()添加了许多方块，用它们对另一个方块 $(item)$(k:key.use)$()即可复制其外观。这些方块可以用 $(thing)切石机$()制作。$(br2)搜索 $(6)@copycats$()（在 $(emi) 中）即可查看它的方块。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "framing_saw",
+            "item": "framedblocks:framing_saw,framedblocks:powered_framing_saw",
+            "text": "$(bold)Framed Blocks$()添加了许多方块，用它们对另一个方块 $(item)$(k:key.use)$()即可复制其外观。这些方块大多用 $(thing)框架锯$()制作。$(br2)搜索 $(6)@framedblocks$()（在 $(emi) 中）即可查看它的方块。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "architects_cutter",
+            "item": "domum_ornamentum:architectscutter",
+            "text": "$(bold)Domum Ornamentum$()添加了能复制其他方块外观、甚至把多种方块组合在一起的方块。用 $(thing)建筑师切割机$()制作。$(br2)搜索 $(6)@domum_ornamentum$()（在 $(emi) 中）即可查看它的方块。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "constructionwand:stone_wand,constructionwand:iron_wand,constructionwand:diamond_wand,constructionwand:infinity_wand",
+            "title": "建筑手杖",
+            "anchor": "wands",
+            "text": "建筑手杖是一次放置大量方块的简单方法。手持手杖右键一个方块，它就会一下子放置更多相同的方块，非常适合铺地板、砌墙等。$(br2)对建筑手杖按 $(item)U$()即可打开详细介绍其用法的页面。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "constructionwand:core_destruction,constructionwand:core_angel",
+            "title": "手杖升级",
+            "text": "还有一些手杖升级可以提供更多功能。$(br2)手杖有耐久度，但可以用 $(item)修复工具$()修复。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "create:schematicannon,create:schematic_table",
+            "anchor": "schematicannon",
+            "text": "$(item)蓝图加农炮$()是一种自动建筑机器，能按照给定的蓝图放置方块。你可以用它把在创造模式世界里建好的建筑搬运过来，或者复制粘贴自己建筑的一部分。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "gtceu:terminal,gtceuterminal:schematic_interface,gtceuterminal:dismantler",
+            "title": "GregTech 终端",
+            "anchor": "terminals",
+            "text": "$(item)终端$()会使用你背包里的物品自动搭建 $(thing)GregTech 多方块结构$()。$(br2)$(item)结构蓝图接口$()可以复制和粘贴 $(thing)多方块结构$()，而 $(item)拆卸器$()可以一键把它们完全拆解。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "buildinggadgets2:gadget_building,buildinggadgets2:gadget_exchanging,buildinggadgets2:gadget_copy_paste,buildinggadgets2:gadget_cut_paste,buildinggadgets2:gadget_destruction",
+            "anchor": "gadgets",
+            "title": "建筑小帮手",
+            "text": "在 $(5)EV$()解锁的 $(thing)建筑小帮手$()是功能强大的工具，可以切割、复制、粘贴以及执行其他大规模建筑操作。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "buildinggadgets2:shapeless/guide_book",
+            "title": "另一本手册",
+            "text": "建筑小帮手有自己的 $(thing)指南书$()。可以像这样合成一本。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸阅读",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/anvils",
+                "tfg:craftsmanship/chisel",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/building_materials"
+            ]
+        }
+	],
+	"read_by_default": true,
+	"sortnum": 21,
+	"extra_recipe_mappings": {
+        "tfg:trowel": 1,
+        "domum_ornamentum:architectscutter": 5,
+        "framedblocks:framing_saw": 4,
+        "framedblocks:powered_framing_saw": 4,
+        "minecraft:stonecutter": 2,
+        "constructionwand:stone_wand": 6,
+        "constructionwand:iron_wand": 6,
+        "constructionwand:diamond_wand": 6,
+        "constructionwand:infinity_wand": 6,
+        "constructionwand:core_destruction": 7,
+        "constructionwand:core_angel": 7,
+        "create:schematicannon": 8,
+        "create:schematic_table": 8,
+        "gtceu:terminal": 9,
+        "gtceuterminal:schematic_interface": 9,
+        "gtceuterminal:dismantler": 9
+	}
+}

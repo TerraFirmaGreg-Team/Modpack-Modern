@@ -4,7 +4,7 @@
 const registerWABData = (event) => {
 	
 	event.foodItem('wan_ancient_beasts:toxlacanth', food => {
-		food.hunger(2)
+		food.hunger(4)
 		food.protein(1.5)
 		food.decayModifier(3)
 	})
@@ -18,7 +18,7 @@ const registerWABData = (event) => {
 	
 	// Eater meat
 	event.foodItem('wan_ancient_beasts:raw_ancient_meat', food => {
-		food.hunger(2)
+		food.hunger(4)
 		food.protein(2)
 		food.decayModifier(3)
 	})

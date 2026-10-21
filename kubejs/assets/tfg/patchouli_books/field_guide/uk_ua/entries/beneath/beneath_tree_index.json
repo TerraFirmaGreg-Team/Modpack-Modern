@@ -1,0 +1,66 @@
+{
+	"name": "Індекс дерев Безодні",
+	"category": "tfg:beneath",
+	"icon": "tfg:textures/block/wood/sapling/mahoe.png",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Попри відсутність сонячного світла, у Безодні росте кілька видів дерев, більшість із яких можна знайти лише тут!$(br2)Дерева ростуть у Безодні так само, як і в верхньому світі, але для їхнього росту потрібен рівень освітлення 12, якого не забезпечує природне освітлення Безодні. Щоб вирішити цю проблему, ти можеш використовувати $(l:agriculture/aqueducts)лавові акведуки$() або будь-яке інше доступне джерело світла."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Араукарія",
+			"anchor": "araucaria",
+			"item": "tag:tfg:araucaria_logs",
+			"text": "$(bold)Араукарія$()$(br)Можна знайти лише в біомі $(thing)Павуче лігво$().$(br)$(thing)Днів росту$(): 5"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Бук",
+			"anchor": "beech",
+			"item": "tag:tfg:beech_logs",
+			"text": "$(bold)Бук$()$(br)Можна знайти в біомах $(thing)Тернистий гай$() та $(thing)Пишна западина$().$(br)$(thing)Днів росту$(): 6"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Ґінкго",
+			"anchor": "ginkgo",
+			"item": "tag:wan_ancient_beasts:ginkgo_logs",
+			"text": "$(bold)Ґінкго$()$(br)Можна знайти лише в біомі $(thing)Пишна западина$().$(br)$(thing)Днів росту$(): 7"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Махое",
+			"anchor": "mahoe",
+			"item": "tag:tfg:mahoe_logs",
+			"text": "$(bold)Махое$()$(br)Можна знайти лише в біомі $(thing)Тернистий гай$().$(br)$(thing)Днів росту$(): 5"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Мангрове дерево",
+			"anchor": "mangrove",
+			"item": "tag:tfc:mangrove_logs",
+			"text": "$(bold)Мангрове дерево$()$(br)Можна знайти лише в біомі $(thing)Вогке болото$().$(br)$(thing)Днів росту$(): 7$(br2)Також можна знайти $(l:the_world/earth_tree_index#mangrove) у звичайному світі$()."
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Докладніше",
+			"anchor": "relations",
+			"entries": [
+				"tfg:the_world/earth_tree_index",
+				"tfg:beneath/beneath",
+				"tfg:beneath/beneath_crops",
+				"tfg:beneath/beneath_wild_fruits",
+				"tfg:mars/mars_tree_index"
+			]
+		}
+	],
+	"extra_recipe_mappings": {
+		"tfg:wood/sapling/araucaria": 1,
+		"tfg:wood/sapling/beech": 2,
+		"tfg:wood/sapling/ginkgo": 3,
+		"tfg:wood/sapling/mahoe": 4,
+		"tfc:wood/sapling/mangrove": 5
+	},
+	"read_by_default": true
+}

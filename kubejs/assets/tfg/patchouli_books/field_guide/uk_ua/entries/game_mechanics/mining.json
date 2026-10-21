@@ -1,0 +1,363 @@
+{
+    "name": "Видобування та обвали",
+    "icon": "tfc:textures/item/metal/pickaxe/wrought_iron.png",
+    "category": "tfg:game_mechanics",
+    "priority": true,
+    "sortnum": 2,
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:game_mechanics/mining#tools)Інструменти$()$(li)$(bold)$(l:game_mechanics/mining#collapses)Обвали$()$(li2)$(l:game_mechanics/mining#gravity)Гравітація$()$(li)$(bold)$(l:game_mechanics/mining#supports)Опорні балки$()$(li2)$(l:game_mechanics/mining#higher_tiers)Опори вищих рівнів$()$(li)$(bold)$(l:game_mechanics/mining#explosives)Вибухівка$()$(li)$(bold)$(l:game_mechanics/mining#processing)Переробка руди$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "Вступ",
+            "text": "Після того як ти $(l:craftsmanship/metallurgy)знайдеш$() рудну жилу, можеш починати її розробляти, щоб добувати ресурси. Однак під час видобування є деякі відмінності від звичайного Minecraft, про які варто пам’ятати. Зокрема, це $(l:game_mechanics/mining#collapses)обвали$(), $(l:game_mechanics/mining#supports)опори$(), $(l:game_mechanics/hazards)небезпечні матеріали$() та $(l:game_mechanics/mining#processing)переробка$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "tools",
+            "title": "Інструменти",
+            "item": "tag:tfc:pickaxes,tag:forge:tools/mining_hammers",
+            "text": "Перед початком варто підготувати відповідне спорядження. Для видобування руди тобі знадобиться $(thing)кайло$() або $(thing)шахтарський молот$(). Шахтарський молот має перевагу: він за раз руйнує область розміром 3×3 блоки.$(br2)Звичайний $(thing)молот$() також може руйнувати кам’яні блоки, але руда з них не випадає. Однак він усе ще може бути корисним для $(l:craftsmanship/anvils#raw_rock)видобування$() необробленого каменю."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "collapses",
+            "text": "У $(tfg) необроблена порода нестабільна й схильна до $(thing)обвалів$(). За певних умов багато кам’яних блоків, зокрема $(thing)необроблена порода$(), $(thing)руда$() та $(thing)сталактити й сталагміти$(), можуть обвалитися тобі на голову.$(br2)$(thing)Опорні балки$() можна використовувати, щоб запобігати обвалам.$(br)Коли блоки $(thing)руди$() обвалюються, вони перетворюються на кругляк.",
+            "title": "Обвали"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Обвал може статися, коли гравець $(thing)добуває будь‑який необроблений камінь$(), що знаходиться поруч із $(thing)непідтримуваним необробленим каменем$(). Однак після початку обвалу навіть раніше $(thing)підтримуваний$() камінь може почати обвалюватися.$(br2)Камінь на стелі печер є $(thing)природно підтримуваним$(). Будь‑який необроблений камінь із непровальним твердим блоком під ним також вважається $(thing)підтримуваним$(). Крім того, $(thing)опорні балки$() можуть підтримувати велику площу одночасно."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gravity",
+            "title": "Гравітація",
+            "text": "Земля, трава, глина, гравій, кругляк і пісок також підпорядковуються гравітації. Однак, на відміну від ванільних блоків, що падають під дією гравітації, ці блоки скочуються вниз схилами й не можуть складатися у стос заввишки більше одного блока без опорних блоків навколо. $(l:craftsmanship/panning)Родовища руди$() також можуть сповзати, але не втрачають своєї якості."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:tfc:support_beams",
+            "anchor": "supports",
+            "title": "Опорні балки",
+            "text": "$(thing)Опорні балки$() можна виготовити з колод або каменю.$(br2)Розміщення $(thing)опорної балки$() на блоці створює колону заввишки до трьох блоків. Під нею обов’язково має бути твердий блок, інакше вона впаде.$(br)$(thing)Горизонтальні$() балки можна розміщувати між двома $(thing)вертикальними$() балками, відстань між якими не перевищує п’яти блоків, як показано на схемі вище."
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "$(bold)ПОРАДА$(): Ти можеш використовувати дерев’яні вертикальні опорні балки разом із горизонтальними опорними балками вищої якості, наприклад бетонними.",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "CRD",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "V W",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "V W",
+                            "   "
+                        ],
+                        [
+                            "GGG",
+                            "G0G",
+                            "GGG"
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:rock/raw/andesite",
+                        "R": "air",
+                        "C": "air",
+                        "D": "air",
+                        "V": "air",
+                        "W": "air",
+                        "G": "tfc:rock/raw/andesite"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "CRD",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "V W",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "V W",
+                            "   "
+                        ],
+                        [
+                            "GGG",
+                            "G0G",
+                            "GGG"
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:rock/raw/andesite",
+                        "R": "air",
+                        "C": "tfc:wood/vertical_support/oak",
+                        "D": "air",
+                        "V": "tfc:wood/vertical_support/oak",
+                        "W": "air",
+                        "G": "tfc:rock/raw/andesite"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "CRD",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "V W",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "V W",
+                            "   "
+                        ],
+                        [
+                            "GGG",
+                            "G0G",
+                            "GGG"
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:rock/raw/andesite",
+                        "R": "air",
+                        "C": "tfc:wood/vertical_support/oak",
+                        "D": "tfc:wood/vertical_support/oak",
+                        "V": "tfc:wood/vertical_support/oak",
+                        "W": "tfc:wood/vertical_support/oak",
+                        "G": "tfc:rock/raw/andesite"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "CRD",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "V W",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "V W",
+                            "   "
+                        ],
+                        [
+                            "GGG",
+                            "G0G",
+                            "GGG"
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:rock/raw/andesite",
+                        "R": "tfc:wood/horizontal_support/oak[north=true,south=true]",
+                        "C": "tfc:wood/vertical_support/oak[south=true]",
+                        "D": "tfc:wood/vertical_support/oak[north=true]",
+                        "V": "tfc:wood/vertical_support/oak",
+                        "W": "tfc:wood/vertical_support/oak",
+                        "G": "tfc:rock/raw/andesite"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "CRD",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "V W",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "V W",
+                            "   "
+                        ],
+                        [
+                            "GGG",
+                            "G0G",
+                            "GGG"
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:rock/raw/andesite",
+                        "R": "tfc:wood/horizontal_support/oak[north=true,south=true]",
+                        "C": "tfc:wood/vertical_support/oak[south=true]",
+                        "D": "tfc:wood/vertical_support/oak[north=true]",
+                        "V": "tfc:wood/vertical_support/oak",
+                        "W": "tfc:wood/vertical_support/oak",
+                        "G": "tfc:rock/raw/andesite"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Лише $(thing)$(bold)горизонтальні опорні балки$() роблять сусідні блоки $(thing)підтриманими$(). Будь-який блок у межах області $(bold)9 × 5 × 9$(), центрованої на горизонтальній опорній балці, вважається $(thing)підтриманим$().$(br2)Окрім підтримки опорними балками, порода може утримуватися просто завдяки наявності під нею твердого блока, наприклад іншої породи. Однак важливо зазначити, що $(thing)нетверді блоки$(), такі як $(thing)сходи$() та $(thing)плити$(), а також $(thing)гладкий камінь$(), $(bold)не$() вважаються опорою."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Область підтримки",
+            "anchor": "support_3d",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/supports/support_3d.png"
+            ],
+            "text": "Зона захисту опори центрована на горизонтальній опорній балці. Вертикальні опори не впливають на неї.",
+            "border": false
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Дальність дії блока",
+            "anchor": "block_range",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/supports/support_2d.png"
+            ],
+            "text": "Під час видобування окремі блоки мають власну зону перевірки для запуску обвалів — до 7 × 7 × 7 блоків, як показано червоно-жовтою областю навколо каменю.",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Гарна умова",
+            "anchor": "pass_condition",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/supports/support_2d_pass.png"
+            ],
+            "text": "Під час видобування виділеного блока обвал не станеться, оскільки весь вільний простір (жовта область) захищений опорою (зелена область).",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Погана умова",
+            "anchor": "fail_condition",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/supports/support_2d_fail.png"
+            ],
+            "text": "Однак якщо за межами області підтримки є непідтримані блоки, видобування виділеного блока може спричинити обвал, навіть якщо сам він підтриманий.",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Окрім базових $(thing)дерев’яних і кам’яних опорних балок$(), $(tfg_short) також додає опорні балки вищих рівнів, зокрема $(thing)бетонні опорні балки$(), $(thing)сталеві опорні балки$() та $(thing)залізобетонні опорні балки$(). Найвищий рівень опор утримує область розміром $(bold)33 × 13 × 33$() блоків із центром на горизонтальній опорній балці!$(br)Область підтримки можна переглянути в підказці опорних балок.",
+            "title": "Вищі рівні",
+            "anchor": "higher_tiers"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "support_tips",
+            "text": "Нарешті, важливо знати, що $(l:craftsmanship/chisel)обтесування$() може спричинити обвали так само легко, як і видобування, якщо його виконувати на $(thing)необробленій породі$(), яка може спричинити обвал поблизу.$(br2)Якщо ти все ще маєш проблеми з обвалами, спробуй переглянути цей $(l:https://youtu.be/1KgwEexxGNI)гайд$().",
+            "title": "Поради"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Вибухівка",
+            "anchor": "explosives",
+            "item": "tfc:powderkeg,minecraft:tnt,gtceu:powderbarrel,gtceu:dynamite",
+            "text": "У $(tfg_short) є кілька видів вибухівки для різних цілей.$(li)$(bold)TNT$(): вибухівка середньої потужності.$(li)$(bold)Динаміт$(): вибухівка малої потужності, яку можна кидати.$(li)$(bold)Порохова діжка$(): потужна вибухівка.$(li)$(bold)Порохівниця$(): надзвичайно потужна вибухівка на повній потужності. Потужність залежить від кількості збереженого пороху."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Базова переробка руди",
+            "anchor": "processing",
+            "item": "tag:forge:crushed_ores",
+            "text": "Тобі завжди варто переробляти руду, щоб отримувати більше ресурсів. Почати цей процес можна вже на дуже ранніх етапах.$(br)Перший крок — використати $(l:craftsmanship/quern)жорна$(), щоб подрібнити необроблену руду. У майбутньому цей етап можна автоматизувати за допомогою вдосконалених машин, таких як $(thing)жорновий камінь$(), $(thing)дробильне колесо$(), $(thing)подрібнювач$() та $(thing)ковальський молот$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Очищення порошку",
+            "anchor": "purifying",
+            "item": "tag:forge:pure_dusts",
+            "text": "Щоб із подрібненої руди отримати ще більше mB розплавленого металу, спочатку помісти її у сітку створення разом із $(thing)молотом$(), щоб отримати $(thing)брудний пил$(). Щоб очистити пил, кинь його у воду або в діжку, наповнену водою.$(br)Цей кінцевий пил під час плавлення може дати приблизно $(bold)у 4 рази$() більше металу, ніж необроблена руда."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Докладніше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_world/geology",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/barrels",
+                "tfg:craftsmanship/anvils",
+                "tfg:craftsmanship/quern",
+                "tfg:craftsmanship/panning"
+            ]
+        }
+    ],
+    "extra_recipe_mappings": {
+        "tag:minecraft:pickaxes": 2,
+        "tag:forge:tools/mining_hammers": 2,
+        "tag:forge:tools/drills": 2,
+        "tag:tfc:support_beams": 6,
+        "tfc:powderkeg": 15,
+        "minecraft:tnt": 15,
+        "gtceu:powderbarrel": 15,
+        "gtceu:dynamite": 15
+    }
+}

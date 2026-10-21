@@ -161,10 +161,6 @@ function registerTFGOverworldBlockTags(event) {
 	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/yellow')
 	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/green')
 	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/pink')
-	
-	event.add("tfg:hornfels", "tfg:mafic_hornfels");
-	event.add("tfg:hornfels", "tfg:carbonate_hornfels");
-	event.add("tfg:hornfels", "tfg:pelitic_hornfels");
 }
 
 function registerTFGOverworldBiomeTags(event) {
@@ -549,6 +545,112 @@ function registerTFGOverworldPlacedFeatures(event) {
 		event.add(biome, 'tfg:earth/crop/palm_tree/coconut_patch_common');
 		event.add(biome, 'tfg:earth/crop/palm_tree/date_patch_common');
 	});
+
+	// Jellies
+	const herbalAndPhosJellies = [
+		'tfg:in_biome/surface_decoration/active_shield_volcano',
+		'tfg:in_biome/surface_decoration/ancient_shield_volcano',
+		'tfg:in_biome/surface_decoration/badlands',
+		'tfg:in_biome/surface_decoration/burren_badlands',
+		'tfg:in_biome/surface_decoration/burren_badlands_tall',
+		'tfg:in_biome/surface_decoration/burren_plains',
+		'tfg:in_biome/surface_decoration/burren_plateau',
+		'tfg:in_biome/surface_decoration/burren_roche_moutonee',
+		'tfg:in_biome/surface_decoration/buttes',
+		'tfg:in_biome/surface_decoration/canyons',
+		'tfg:in_biome/surface_decoration/cenote_canyons',
+		'tfg:in_biome/surface_decoration/cenote_highlands',
+		'tfg:in_biome/surface_decoration/cenote_hills',
+		'tfg:in_biome/surface_decoration/cenote_plains',
+		'tfg:in_biome/surface_decoration/cenote_plateau',
+		'tfg:in_biome/surface_decoration/cenote_rolling_hills',
+		'tfg:in_biome/surface_decoration/doline_canyons',
+		'tfg:in_biome/surface_decoration/doline_highlands',
+		'tfg:in_biome/surface_decoration/doline_hills',
+		'tfg:in_biome/surface_decoration/doline_plains',
+		'tfg:in_biome/surface_decoration/doline_plateau',
+		'tfg:in_biome/surface_decoration/doline_rolling_hills',
+		'tfg:in_biome/surface_decoration/dormant_shield_volcano',
+		'tfg:in_biome/surface_decoration/drumlins',
+		'tfg:in_biome/surface_decoration/extinct_shield_volcano',
+		'tfg:in_biome/surface_decoration/extreme_doline_mountains',
+		'tfg:in_biome/surface_decoration/extreme_doline_plateau',
+		'tfg:in_biome/surface_decoration/glacially_carved_mountains',
+		'tfg:in_biome/surface_decoration/glacially_carved_oceanic_mountains',
+		'tfg:in_biome/surface_decoration/highlands',
+		'tfg:in_biome/surface_decoration/hills',
+		'tfg:in_biome/surface_decoration/hoodoos',
+		'tfg:in_biome/surface_decoration/inverted_patterned_ground',
+		'tfg:in_biome/surface_decoration/knob_and_kettle',
+		'tfg:in_biome/surface_decoration/low_canyons',
+		'tfg:in_biome/surface_decoration/lowlands',
+		'tfg:in_biome/surface_decoration/mesas',
+		'tfg:in_biome/surface_decoration/mountains',
+		'tfg:in_biome/surface_decoration/mud_flats',
+		'tfg:in_biome/surface_decoration/oceanic_mountains',
+		'tfg:in_biome/surface_decoration/old_mountains',
+		'tfg:in_biome/surface_decoration/patterned_ground',
+		'tfg:in_biome/surface_decoration/plains',
+		'tfg:in_biome/surface_decoration/plateau',
+		'tfg:in_biome/surface_decoration/plateau_wide',
+		'tfg:in_biome/surface_decoration/rocky_plateau',
+		'tfg:in_biome/surface_decoration/rolling_hills',
+		'tfg:in_biome/surface_decoration/salt_flats',
+		'tfg:in_biome/surface_decoration/salt_marsh',
+		'tfg:in_biome/surface_decoration/shilin_canyons',
+		'tfg:in_biome/surface_decoration/shilin_highlands',
+		'tfg:in_biome/surface_decoration/shilin_hills',
+		'tfg:in_biome/surface_decoration/shilin_plains',
+		'tfg:in_biome/surface_decoration/shilin_plateau',
+		'tfg:in_biome/surface_decoration/stair_step_canyons',
+		'tfg:in_biome/surface_decoration/stone_circles',
+		'tfg:in_biome/surface_decoration/terrace_upper',
+		'tfg:in_biome/surface_decoration/tower_karst_canyons',
+		'tfg:in_biome/surface_decoration/tower_karst_highlands',
+		'tfg:in_biome/surface_decoration/tower_karst_hills',
+		'tfg:in_biome/surface_decoration/tower_karst_plains',
+		'tfg:in_biome/surface_decoration/tuyas',
+		'tfg:in_biome/surface_decoration/volcanic_mountains',
+		'tfg:in_biome/surface_decoration/volcanic_oceanic_mountains',
+		'tfg:in_biome/surface_decoration/whorled_canyons'
+	];
+	herbalAndPhosJellies.forEach(biome => {
+		event.add(biome, "tfg:earth/entity/herbal_jellie");
+		event.add(biome, "tfg:earth/entity/phosphorum_jellie");
+	})
+
+	const rockJellies = [
+		"tfg:in_biome/surface_decoration/mountains",
+		"tfg:in_biome/surface_decoration/old_mountains",
+		"tfg:in_biome/surface_decoration/oceanic_mountains",
+		"tfg:in_biome/surface_decoration/volcanic_mountains",
+		"tfg:in_biome/surface_decoration/volcanic_oceanic_mountains",
+		"tfg:in_biome/surface_decoration/extreme_doline_mountains",
+		"tfg:in_biome/surface_decoration/ice_sheet_mountains",
+		"tfg:in_biome/surface_decoration/ice_sheet_oceanic_mountains",
+		"tfg:in_biome/surface_decoration/ice_shee_mountains_edge",
+		"tfg:in_biome/surface_decoration/ice_sheet_oceanic_mountains_edge",
+		"tfg:in_biome/surface_decoration/glaciated_mountains",
+		"tfg:in_biome/surface_decoration/glaciated_oceanic_mountains",
+		"tfg:in_biome/surface_decoration/glacially_carved_mountains",
+		"tfg:in_biome/surface_decoration/glacially_carved_oceanic_mountains",
+		"tfg:in_biome/surface_decoration/canyons",
+		"tfg:in_biome/surface_decoration/active_shield_volcano",
+		"tfg:in_biome/surface_decoration/dormant_shield_volcano",
+		"tfg:in_biome/surface_decoration/extinct_shield_volcano",
+		"tfg:in_biome/surface_decoration/ancient_shield_volcano",
+		"tfg:in_biome/surface_decoration/sunken_shield_volcano",
+		"tfg:in_biome/surface_decoration/shield_volcano_shore",
+		"tfg:in_biome/surface_decoration/old_shield_volcano_shore",
+		"tfg:in_biome/surface_decoration/ice_sheet_shield_volcano",
+		"tfg:in_biome/surface_decoration/ice_sheet_tuyas",
+		"tfg:in_biome/surface_decoration/ice_sheet_tuyas_edge",
+		"tfg:in_biome/surface_decoration/glaciated_shield_volcano",
+		"tfg:in_biome/surface_decoration/tuyas"
+	];
+	rockJellies.forEach(biome => {
+		event.add(biome, "tfg:earth/entity/rock_jellie");
+	})
 }
 
 function registerTFGOverworldEntityTypeTags(event) {

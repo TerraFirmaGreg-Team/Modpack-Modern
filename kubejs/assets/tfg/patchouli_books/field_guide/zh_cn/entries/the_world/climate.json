@@ -1,0 +1,115 @@
+{
+    "name": "地球气候学",
+    "category": "tfg:the_world",
+    "icon": "tfg:textures/gui/field_guide/icons/climatology.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "text": "在$(tfg)中，气候和时间都是影响你体验这个世界的重要因素。$(l:the_world/climate#seasons)季节$()会循环更替，影响当地天气、作物生长以及你所处的环境温度。在决定定居之前，务必先了解你所在地区的气候和地理环境。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "目录",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:the_world/climate#calendar)日历$()$(li2)$(l:the_world/climate#seasons)季节$()$(li)$(bold)$(l:the_world/climate#climate)气候$()$(li2)$(l:the_world/climate#temperature)温度$()$(li2)$(l:the_world/climate#rainfall)降雨量$()"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "日历",
+            "anchor": "calendar",
+            "text": "随时按下$(item)$(k:key.inventory)$()并点击日历标签页，即可查看$(thing)日历$()。需要注意的是，跨越赤道线（例如$(thing)Z=10000$()处）时，季节的效果会相反。"
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/screens/calendar_screen.png"
+            ],
+            "text": "日历界面，显示$(thing)季节$()、$(thing)天数$()和$(thing)日期$()。",
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "seasons",
+            "title": "季节",
+            "text": "群峦传说中有四个季节，天气和气候会随之变化！每个季节又分为$(thing)初期$()、$(thing)仲期$()、$(thing)暮期$()三个月。四个季节分别是：$(br)$(li)$(bold)春季$()：3月 - 5月$(li)$(bold)夏季$()：6月 - 8月$(li)$(bold)秋季$()：9月 - 11月$(li)$(bold)冬季$()：12月 - 2月"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "当前季节会影响该地区的温度、降水形式（下雨还是下雪），以及环境本身，例如树叶变色等等。多留意日历标签页，它会很有用！"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "climate",
+            "text": "物品栏主界面上的另一个标签页是$(thing)气候$()界面。它会显示当前位置的信息：$(li)第一行显示整体的$(l:https://en.wikipedia.org/wiki/K%C3%B6ppen_climate_classification)气候$()。$(li)第二行显示$(l:the_world/climate#temperature)年平均温度$()。$(li)第三行显示$(l:the_world/climate#rainfall)年平均降雨量$()。$(li)最后一行显示$(l:the_world/climate#temperature)当地当前温度$()。",
+            "title": "气候"
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/screens/climate_screen.png"
+            ],
+            "text": "气候界面",
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "title": "温度",
+            "anchor": "temperature",
+            "text": "群峦传说中的当前温度受多种因素影响：$(br)$(li)首先，所在区域——尤其是纬度——影响最大，并被记录为$(thing)平均温度$()。$(li)其次，当前季节会影响温度。$(li)第三，温度可能逐日不同，也会随时段变化。$(li)最后，温度会随海拔变化。"
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/maps/temperature_map.png"
+            ],
+            "text": "一张65.5km²的地图，显示向南北移动时温度的循环变化。$(br)$(#001cfc)◼$(#00b9fc)◼$(#62fc92)◼$(#e1fc12)◼$(#fc7800)◼$(#cf0000)◼$() -20°C → 30°C",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rainfall",
+            "text": "降雨量是另一项会随你所在位置而变化的气候数值，它决定了植物的生长。$(br2)降雨量是$(l:agriculture/growing_crops#hydration)湿度$()的主要影响因素之一；湿度是特定位置土壤湿润程度的精确量度，决定了$(l:agriculture/growing_crops)农作物$()、$(l:the_world/wild_fruits#fruit_trees)果树$()和$(l:the_world/wild_fruits#tall_bushes)灌木丛$()能否生长。",
+            "title": "年降雨量"
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/maps/rainfall_map.png"
+            ],
+            "text": "一张65.5km²的地图，显示向东西移动时降雨量的循环变化。$(br)$(#800302)◼$(#fc5600)◼$(#fcbe4e)◼$(#a6be4e)◼$(#1268ac)◼$(#76b6f6)◼$() 0mm → 500mm",
+            "border": true
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸阅读",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_world/geology",
+                "tfg:the_world/wild_fruits",
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/flora",
+                "tfg:agriculture/growing_crops",
+                "tfg:craftsmanship/pottery"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 1
+}

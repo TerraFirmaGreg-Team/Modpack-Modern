@@ -1,0 +1,552 @@
+{
+    "name": "道路",
+    "category": "tfg:logistics",
+    "icon": "rnr:rock/sett_road/quartzite",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:logistics/roads#intro)道路修筑$()$(li)$(bold)$(l:logistics/roads#mattock)鹤嘴锄$()$(li)$(bold)$(l:logistics/roads#base_course)基层$()$(li)$(bold)$(l:logistics/roads#pavers)铺面材料$()$(li2)$(l:logistics/roads#hoggin)碎石混合料$()$(li2)$(l:logistics/roads#gravel_fill)砾石填料$()$(li2)$(l:logistics/roads#stone)圆石、仿石砖与铺路砖$()$(li2)$(l:logistics/roads#concrete)混凝土$()$(li2)$(l:logistics/roads#asphalt)沥青$()$(li)$(bold)$(l:logistics/roads#paving_cart)铺路车$()",
+            "title": "目录",
+            "anchor": "index"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "简介",
+            "text": "修筑道路对提升陆路运输效率至关重要，包含三个基本步骤：$(li)$(bold)1：$()用$(l:logistics/roads#mattock)鹤嘴锄$()夯实原状土壤。$(li)$(bold)2：$()铺设$(l:logistics/roads#base_course)碎石基层$()。$(li)$(bold)3：$()铺上路面$(l:logistics/roads#pavers)铺面材料$()。$(br)不同种类的道路使用不同的材料。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:rnr:mattocks",
+            "title": "鹤嘴锄",
+            "anchor": "mattock",
+            "text": "鹤嘴锄可以像$(l:craftsmanship/chisel)凿子$()一样用在泥土类方块上。在默认的方块模式下，对这类方块按 $(item)$(k:key.use)$() 即可将其夯实。如果鹤嘴锄夯实的是泥土或泥根，得到的夯实泥土必须再铺上碎石基层予以修整。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "rnr:crushed_base_course",
+            "title": "基层",
+            "anchor": "base_course",
+            "text": "当地土壤夯实后，下一步就是为道路铺设基层。碎石基层可以用砾石或石粉与石子混合制成，对已夯实的方块按 $(item)$(k:key.use)$() 即可铺设。这层碎石基层会形成坚固的基础，供最终的步行路面承载其上。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:rnr:road_materials",
+            "title": "铺面材料",
+            "anchor": "pavers",
+            "text": "筑路的最后一步是铺设路面。不同的物品——包括$(l:logistics/roads#stone)砖$()、$(l:logistics/roads#hoggin)碎石$()和$(l:logistics/roads#stone)石子$()——都可以通过 $(item)$(k:key.use)$() 铺在基层上，形成可行走的道路。不同的物品会形成不同种类的道路，而不同种类的道路会提供不同的行走速度加成。"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "夯实、铺设基层、再用砖铺面的筑路流程。",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "R"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "R": "tfc:dirt/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "R"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "R": "rnr:tamped_loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "R"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "R": "rnr:base_course"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "R"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "R": "rnr:rock/sett_road/chert"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "hoggin",
+            "item": "rnr:hoggin_mix",
+            "title": "碎石混合料",
+            "text": "$(item)碎石$()是一种由黏土、砾石和沙混合而成的可压实铺地材料。把它铺在基层上就能形成简易小径，提供$(thing)$(bold)10% 加成$()的行走速度，并允许$(item)畜力曲柄$()以 16RPM 运转。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "text": "用碎石混合料筑路。",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "    0    ",
+                        "         "
+                    ],
+                    [
+                        "         ",
+                        "         "
+                    ],
+                    [
+                        "DDCCRRRRR",
+                        "DDCCRRRRR"
+                    ]
+                ],
+                "mapping": {
+                    "D": "rnr:tamped_loam",
+                    "C": "rnr:base_course",
+                    "R": "rnr:hoggin"
+                }
+            }
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "gravel_fill",
+            "item": "tag:rnr:gravel_road_items",
+            "title": "砾石与碎石路",
+            "text": "在基层上铺少量$(thing)砾石填料$()即可形成简易小径，提供$(thing)$(bold)10% 加成$()的行走速度。继续添加砾石填料并夯实，可以筑成$(thing)碎石路$()，提供$(thing)$(bold)20% 速度加成$()。$(br)所有比碎石更高级的铺面材料都能让$(item)畜力曲柄$()以 32RPM 运转。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "text": "用砾石填料筑路。",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "    0    ",
+                        "         "
+                    ],
+                    [
+                        "         ",
+                        "         "
+                    ],
+                    [
+                        "DDCCRROMM",
+                        "DDCCROMMM"
+                    ]
+                ],
+                "mapping": {
+                    "D": "rnr:tamped_loam",
+                    "C": "rnr:base_course",
+                    "R": "rnr:rock/gravel_road/chert",
+                    "O": "rnr:rock/over_height_gravel/chert",
+                    "M": "rnr:rock/macadam_road/chert"
+                }
+            }
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "stone",
+            "item": "tag:rnr:flagstone_road_items,tag:rnr:cobble_road_items,tag:rnr:brick_road_items",
+            "title": "石质铺面材料",
+            "text": "基层之上可以铺设多种不同的石质步行路面，全部提供$(thing)$(bold)20% 速度加成$()。$(li)$(thing)$(bold)圆石路$()：在基层上添加$(item)石子$()即可筑成。$(li)$(thing)$(bold)仿石砖路$()：用石头或陶制的$(item)砖$()筑成。$(li)$(thing)$(bold)铺路砖路$()：用石头或砂岩的$(item)铺路砖$()筑成。"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "用各种石质饰面筑路。",
+            "enable_visualize": false,
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "    0    ",
+                            "         "
+                        ],
+                        [
+                            "         ",
+                            "         "
+                        ],
+                        [
+                            "DDCCRRRRR",
+                            "DDCCRRRRR"
+                        ]
+                    ],
+                    "mapping": {
+                        "D": "rnr:tamped_loam",
+                        "C": "rnr:base_course",
+                        "R": "rnr:rock/cobbled_road/chert"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "    0    ",
+                            "         "
+                        ],
+                        [
+                            "         ",
+                            "         "
+                        ],
+                        [
+                            "DDCCRRRRR",
+                            "DDCCRRRRR"
+                        ]
+                    ],
+                    "mapping": {
+                        "D": "rnr:tamped_loam",
+                        "C": "rnr:base_course",
+                        "R": "rnr:rock/sett_road/chert"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "    0    ",
+                            "         "
+                        ],
+                        [
+                            "         ",
+                            "         "
+                        ],
+                        [
+                            "DDCCRRRRR",
+                            "DDCCRRRRR"
+                        ]
+                    ],
+                    "mapping": {
+                        "D": "rnr:tamped_loam",
+                        "C": "rnr:base_course",
+                        "R": "rnr:rock/flagstones/chert"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:rnr:concrete_roads",
+            "anchor": "concrete",
+            "title": "混凝土",
+            "text": "混凝土路在正确施工时可提供$(thing)$(bold)30% 移动速度加成$()。但修筑混凝土路时必须勤加留意，防止其在未干时$(4)开裂$()或被$(4)踩踏$()，否则速度加成会失效。"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "混凝土路",
+            "images": [
+                "rnr:textures/gui/book/concrete_road.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "wet_concrete",
+            "title": "搅拌混凝土",
+            "text": "$(thing)混凝土路$()由$(item)湿混凝土混合物$()浇筑而成。首先，将水与石粉以及石膏或黏土等黏合剂混合，制成$(thing)液态混凝土$()。然后，用水稀释液态混凝土，制成$(thing)湿混凝土混合物$()。即可用于浇筑。",
+            "item": "rnr:bucket/concrete"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "一旦获得$(thing)湿混凝土$()，即可用桶舀取并倾倒在$(thing)基层方块$()上，它会自动向相邻方块蔓延。混凝土需一天时间硬化，在此期间需防止生物踩踏未凝固的混凝土，否则会形成不平整表面导致速度加成失效。可用$(thing)鹤嘴锄$()抹平脚印痕迹。"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "浇筑混凝土",
+            "images": [
+                "rnr:textures/gui/book/wet_concrete.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "混凝土凝固时还会出现收缩开裂的问题。如果混凝土浇筑的区域宽度超过 $(bold)4x4$() 方块，那么距离最近的$(thing)边缘$()、$(thing)控制缝$()或$(thing)纹理饰面$()超过两个方块的方块在凝固时就会开裂。可以通过小面积浇筑、用$(thing)鹤嘴锄$()添加$(thing)控制缝$()，或施加$(thing)纹理饰面$()来避免。"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "控制缝",
+            "images": [
+                "rnr:textures/gui/book/control_joints.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)纹理饰面$()是将$(thing)砖$()、$(thing)铺路砖$()或$(thing)平滑石块$()压入干燥中的混凝土而形成的建筑饰面。这些方块同时起到$(thing)控制缝$()的作用，可防止开裂。混凝土干燥完成后，可以用$(l:craftsmanship/chisel)凿子$()加工出台阶和楼梯。"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "仿石砖路",
+            "images": [
+                "rnr:textures/gui/book/faux_sett.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "通过浇筑混凝土筑路。",
+            "enable_visualize": false,
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "    0    ",
+                            "         "
+                        ],
+                        [
+                            "         ",
+                            "         "
+                        ],
+                        [
+                            "DDCCRRRRR",
+                            "DDCCRRRRR"
+                        ]
+                    ],
+                    "mapping": {
+                        "D": "rnr:tamped_loam",
+                        "C": "rnr:base_course",
+                        "R": "rnr:wet_concrete_road"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "    0    ",
+                            "         "
+                        ],
+                        [
+                            "         ",
+                            "         "
+                        ],
+                        [
+                            "DDCCRRJRR",
+                            "DDCCRRJRR"
+                        ]
+                    ],
+                    "mapping": {
+                        "D": "rnr:tamped_loam",
+                        "C": "rnr:base_course",
+                        "R": "rnr:wet_concrete_road",
+                        "J": "rnr:wet_concrete_road_control_joint[axis=x]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "    0    ",
+                            "         "
+                        ],
+                        [
+                            "         ",
+                            "         "
+                        ],
+                        [
+                            "DDCCRRJRR",
+                            "DDCCRRJRR"
+                        ]
+                    ],
+                    "mapping": {
+                        "D": "rnr:tamped_loam",
+                        "C": "rnr:base_course",
+                        "R": "rnr:concrete_road",
+                        "J": "rnr:concrete_road_control_joint[axis=x]"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "asphalt",
+            "title": "沥青",
+            "text": "沥青路是一种依赖石油和 $(tfg_short) 生产线的高级道路类型。$(br)准备好基层后，你可以把$(thing)沥青混合料$()浇在上面。它会短暂地变成$(thing)热沥青路$()，随后凝固成耐用的$(item)沥青路$()。$(br)施工得当的沥青路可提供$(thing)$(bold)40% 移动速度加成$()。"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "沥青路",
+            "images": [
+                "tfg:textures/gui/field_guide/asphalt_roads/overview.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "与混凝土路不同，沥青路不需要控制缝，也不会因湿料开裂或踩踏未干路面而失效。$(br2)施工时要当心被$(thing)热沥青路$()烫伤，以及拆除时只能得到$(thing)沥青碎块$()而非整块路面。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "tar_chunk",
+            "item": "tfg:tar_chunk",
+            "title": "焦油块料",
+            "text": "沥青路的原料是石油。将$(thing)石油$()、$(thing)原油$()、$(thing)重油$()等流体在$(thing)流体固化器$()中固化成对应的$(thing)焦油$()，再用$(thing)提取机$()加工成$(thing)焦油块料$()。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "asphalt_mix",
+            "item": "tfg:asphalt_mix_bucket",
+            "title": "沥青混合料",
+            "text": "在$(thing)搅拌机$()中用焦油块料与$(thing)石粉$()制成$(thing)沥青结合料$()。若加入$(thing)硬沥青粉$()，可提高结合料的产量。$(br)随后，把结合料与沙、石粉及$(thing)碎石基层$()一同拌成流体状的$(thing)沥青混合料$()。$(br)将其装入流体容器中，便于运输和浇筑。"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "浇筑沥青路",
+            "images": [
+                "tfg:textures/gui/field_guide/asphalt_roads/pouring.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(item)$(k:key.use)$() 一个已放置的$(thing)基层方块$()（手持一桶$(thing)沥青混合料$()）即可进行浇筑。混合料会向相邻的基层方块蔓延，最多把 20 个相邻基层方块转化为$(thing)热沥青路$()。短暂时间后，热沥青路会冷却成$(thing)沥青路$()。手持混合料时，$(item)$(k:key.sneak)-$(k:key.use)$() 某个$(thing)基层方块$()即可修补小片区域，消耗的流体更少。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfg:asphalt_road_hot",
+            "title": "热沥青路",
+            "text": "$(thing)热沥青路$()非常烫；接触会造成持续的灼烧伤害。处理它时请穿上防热装备。$(br2)等它冷却成$(thing)沥青路$()后，表面就不再烫了。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfg:asphalt_road_stairs,tfg:asphalt_road_slab",
+            "text": "$(thing)沥青路$()可以用$(thing)鹤嘴锄$()加工成$(thing)沥青路台阶$()与$(thing)沥青路楼梯$()。也可以使用切石机进行加工。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "road_marking_stencils",
+            "item": {
+                "tag": "tfg:road_marking_stencils"
+            },
+            "title": "道路标线板",
+            "text": "沥青路最具特色的定制功能就是路面标线：在完工的路面上喷涂颜色和图案，用以规划车道、路口和警示线。$(br2)各种道路标线板都可以在$(thing)工匠台$()上制作。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "gtceu:white_dye_spray_can,gtceu:yellow_dye_spray_can",
+            "text": "一手拿着$(thing)喷漆罐$()，另一手可拿着$(thing)道路标线板$()，然后对沥青路按 $(item)$(k:key.use)$() 即可喷涂标线。颜色由喷漆罐决定，朝向由玩家的朝向决定。$(br)在已有标线上再次喷涂会将其替换并消耗喷漆罐耐久，除非喷涂的图案布局完全相同。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/asphalt_roads/marking.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "gtceu:solvent_spray_can",
+            "title": "清除标线",
+            "text": "若需重新规划路面，对沥青路或沥青路台阶使用$(thing)喷漆罐（溶剂）$()，即可将该处路面标识清除。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfg:asphalt_rubble",
+            "title": "拆除与回收",
+            "text": "破坏沥青路、热沥青路、台阶或楼梯时，只会掉落$(thing)沥青碎块$()，无法保留完整路面方块。将碎块投入$(thing)提取机$()可回收为少量沥青混合料。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "铺路车",
+            "anchor": "paving_cart",
+            "item": "tfg:rnr_plow",
+            "text": "$(thing)铺路车$()是一种专用推车，用于快速高效地铺设路面。它可以装满 $(6)$(t:#rnr:road_materials)道路材料$() 和$(thing)碎石基层$()，然后把它拴到$(l:agriculture/animal_husbandry#equines)马$()身上（$(item)$(k:key.astikorcarts.desc)$()），即可在行进间筑路。铺路车还能填补已有的基层方块。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:rnr_plow",
+            "scale": 0.5,
+            "name": "铺路车",
+            "text": "对铺路车按 $(item)$(k:key.use)$() 后犁刀会放下，表示推车移动时将修筑道路。"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "宽度调节滑块",
+            "images": [
+                "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_width.png"
+            ],
+            "border": true,
+            "text": "用 $(item)$(k:key.sneak)-$(k:key.use)$() 打开界面，即可在 GUI 中调整路径的宽度。"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "可变宽度路径",
+            "images": [
+                "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_width.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "title": "随机模式按钮",
+            "images": [
+                "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_random.png"
+            ],
+            "border": true,
+            "text": "铺路车还有一种以随机图案铺设铺面材料的模式。"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "随机材料路径",
+            "images": [
+                "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_random.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸阅读",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/building_materials",
+                "tfg:craftsmanship/chisel",
+                "tfg:the_world/geology",
+                "tfg:the_world/wild_animals",
+                "tfg:agriculture/animal_husbandry",
+                "tfg:logistics/tack",
+                "tfg:logistics/trains",
+                "tfg:logistics/boats"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "extra_recipe_mappings": {
+        "tag:rnr:mattocks": 2,
+        "tag:forge:mattock_heads": 2,
+        "rnr:crushed_base_course": 3,
+        "rnr:base_course": 3,
+        "tag:rnr:road_materials": 4,
+        "rnr:hoggin_mix": 6,
+        "rnr:hoggin": 6,
+        "rnr:hoggin_slab": 6,
+        "rnr:hoggin_stairs": 6,
+        "tag:rnr:gravel_road_items": 8,
+        "tag:rnr:macadam_roads": 8,
+        "tag:rnr:gravel_roads": 8,
+        "tag:rnr:flagstone_road_items": 10,
+        "tag:rnr:cobbled_roads": 10,
+        "tag:rnr:sett_roads": 10,
+        "tag:rnr:flagstone_roads": 10,
+        "rnr:bucket/concrete": 12,
+        "tag:rnr:concrete_roads": 12,
+        "tfg:asphalt_mix_bucket": 22,
+        "tfg:asphalt_binder": 22,
+        "tfg:asphalt_road": 22,
+        "tfg:asphalt_road_stairs": 22,
+        "tfg:asphalt_road_slab": 22,
+        "tag:tfg:road_marking_stencils": 22,
+        "tfg:rnr_plow": 36
+    }
+}

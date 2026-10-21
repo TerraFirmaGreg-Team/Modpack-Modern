@@ -20,6 +20,7 @@ const registerTFGBlocks = (event) => {
 	registerTFGWorldGenVenusDecoBlocks(event)
 	registerTFGWorldGenEuropaDecoBlocks(event)
 
+	registerTFGMaterialBlocks(event)
 	registerTFGNuclearBlocks(event)
 
 	event.create('tfg:big_volcano_smoke_emitter', 'tfg:particle_emitter_decoration')

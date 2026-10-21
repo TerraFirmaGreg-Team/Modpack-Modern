@@ -1,0 +1,69 @@
+{
+    "name": "機織り",
+    "category": "tfg:agriculture",
+    "icon": "tfc:spindle",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)機織り$()とは、さまざまな種類の糸を組み合わせて$(thing)布$()を作る工程のことです。機織りの最後の工程は$(thing)織機$()で行われますが、$(l:agriculture/animal_husbandry#wooly_animals)羊毛を持つ動物$()から得られる$(thing)羊毛$()のような一部の布地は、織り上げるために$(thing)紡錘$()を用いて$(thing)羊毛の糸$()を準備する必要があります。"
+        },
+        {
+            "type": "tfg:knapping_recipe",
+            "recipe": "tfc:clay_knapping/spindle_head",
+            "anchor": "spindle",
+            "text": "$(thing)未焼成の紡錘の頭$()は、粘土を成形して作られます。これを$(l:game_mechanics/heating)焼成$()することで、$(thing)紡錘の頭$()を作ることができます。紡錘を完成させるには、$(thing)棒$()と組み合わせてクラフトしてください。また、紡錘は$(l:craftsmanship/metallurgy)金属$()からも作ることができます。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "spinning",
+            "title": "糸つむぎ",
+            "recipe": "tfc:kjs/damage/shapeless/wool_yarn",
+            "text": "紡錘で $(thing)羊毛$() をクラフトすると、 $(thing)羊毛の糸$()が作成できます。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "織機",
+            "anchor": "loom",
+            "recipe": "tfc:crafting/wood/acacia_loom",
+            "text": "織機 $(thing)木材の板$() と $(thing)棒$()でクラフトできます。"
+        },
+        {
+            "type": "tfg:loom_recipe",
+            "anchor": "wool_cloth",
+            "title": "布地",
+            "recipe": "tfc:loom/wool_cloth",
+            "text": "$(thing)羊毛の布$()のレシピには、$(thing)羊毛の糸$()が16個必要です。織機に材料を追加するには、$(item)$(k:key.use)$()を使用します。その後、$(item)$(k:key.use)$()を長押しして、織機の作業を開始します。作業が完了したら、$(item)$(k:key.use)$()を押してアイテムを受け取ります。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/loom_empty.png",
+                "tfc:textures/gui/book/tutorial/loom_full.png",
+                "tfc:textures/gui/book/tutorial/loom_working.png",
+                "tfc:textures/gui/book/tutorial/loom_done.png"
+            ],
+            "text": "織機の稼働段階。",
+            "border": true
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "さらに読む",
+            "anchor": "relations",
+            "entries": [
+                "tfg:agriculture/growing_crops",
+                "tfg:agriculture/animal_husbandry",
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/wild_animals",
+                "tfg:craftsmanship/pottery",
+                "tfg:craftsmanship/glassworking"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 9,
+    "extra_recipe_mappings": {
+        "tag:tfg:tools/spindles": 1,
+        "tag:forge:string": 2,
+        "tag:tfc:looms": 3
+    }
+}

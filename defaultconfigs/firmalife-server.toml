@@ -22,7 +22,7 @@
 	smokingFirepitRange = 6
 	#Ticks for a composter tumbler to finish (24000 ticks = 1 day)
 	#Range: > 1
-	compostTumblerTicks = 96000
+	compostTumblerTicks = 60000
 	#Ticks for an oven to cure (24000 ticks = 1 day)
 	#Range: > 1
 	ovenCureTicks = 2000

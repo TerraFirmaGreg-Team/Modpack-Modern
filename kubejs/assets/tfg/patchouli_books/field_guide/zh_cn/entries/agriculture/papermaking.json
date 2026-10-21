@@ -1,0 +1,163 @@
+{
+    "name": "造纸术",
+    "category": "tfg:agriculture",
+    "icon": "tfc:unrefined_paper",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:agriculture/papermaking#papyrus)莎草纸$()$(li2)$(l:agriculture/papermaking#papyrus)1. 纸莎草条$()$(li2)$(l:agriculture/papermaking#soaked_papyrus_strip)2. 浸泡纸莎草条$()$(li2)$(l:agriculture/papermaking#unrefined_paper)3. 粗制纸$()$(li)$(bold)$(l:agriculture/papermaking#parchment)羊皮纸$()$(li2)$(l:agriculture/papermaking#treated_hide)1. 处理兽皮$()$(li2)$(l:agriculture/papermaking#treated_hide)2. 羊皮纸$()$(li)$(bold)$(l:agriculture/papermaking#paper_from_wood)木浆纸$()$(li2)$(l:agriculture/papermaking#hardwood_strip)1. 硬木条$()$(li2)$(l:agriculture/papermaking#soaked_hardwood_strip)2. 浸泡硬木条$()$(li2)$(l:agriculture/papermaking#breaking_down_the_pulp)3. 打碎纸浆$()$(li2)$(l:agriculture/papermaking#pressing_the_pulp)4. 压制纸浆$()$(li2)$(l:agriculture/papermaking#drying_the_paper)5. 晾干纸张$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "简介",
+            "text": "$(thing)纸$()可以用$(l:the_world/wild_crops#papyrus)纸莎草$()作物的茎秆加工制成，可以用$(l:agriculture/papermaking#parchment)兽皮$()制成，也可以用特定种类的$(l:agriculture/papermaking#paper_from_wood)木材$()经过一长串工序制成。纸的用途很多，比如做$(item)背包$()和$(item)命名牌$()，但最重要的是，想要迈进$(thing)电气时代$()就离不开它！"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "papyrus",
+            "title": "用纸莎草造纸",
+            "recipe": "tfc:crafting/papyrus_strips",
+            "text": "纸可以直接取自$(l:the_world/wild_crops#papyrus)纸莎草$()作物。首先要用$(thing)刀$()把纸莎草切成条……"
+        },
+        {
+            "type": "tfg:sealed_barrel_recipe",
+            "anchor": "soaked_papyrus_strip",
+            "title": "浸泡纸莎草条",
+            "recipe": "tfc:barrel/soaked_papyrus_strip",
+            "text": "然后，把纸莎草条放进一个$(l:craftsmanship/barrels)大桶$()的$(thing)水$()中浸泡。"
+        },
+        {
+            "type": "tfg:loom_recipe",
+            "anchor": "unrefined_paper",
+            "title": "粗制纸",
+            "recipe": "tfc:loom/unrefined_paper",
+            "text": "接着，把浸泡过的纸莎草条放在$(l:agriculture/weaving#loom)织布机$()上编织成$(thing)粗制纸$()。最后，把它放到原木上$(l:agriculture/leather_making#scraping)刮制$()，就能得到$(thing)纸$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "parchment",
+            "text": "$(thing)羊皮纸$()要从一张$(l:agriculture/leather_making#scraping)刮制兽皮$()做起。羊皮纸需要用几种不同的物品来处理。首先需要$(thing)浮石$()。浮石可以在$(l:the_world/geology)火山$()附近的地面找到，偶尔能通过$(l:craftsmanship/panning)淘金$()获得，也可以从当地居民的箱子里搜刮。",
+            "title": "羊皮纸"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "treated_hide",
+            "title": "处理兽皮",
+            "recipe": "tfc:crafting/large_treated_hide",
+            "text": "将浮石、刮制兽皮与一把锤合成就能得到$(thing)糊化兽皮$()。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/parchment",
+            "anchor": "parchment_paper",
+            "title": "羊皮纸",
+            "text": "用处理过的兽皮、$(l:craftsmanship/glassworking#lime_and_potash)石灰粉$()、面粉和一个新鲜的鸡蛋完成最后的处理，就能得到可用的纸。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "paper_from_wood",
+            "text": "$(thing)用木材造纸$()是一门古老的工艺：先把结实的木材加工成薄片，再把薄片打碎成纸浆，然后经过压制、晾干和刮制，做成纸。$(br2)注意，较软的木材不适合造纸，只有$(t:#tfg:hardwood)$(6)硬木$()才能用来造纸。",
+            "title": "木材造纸"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "去皮硬木",
+            "anchor": "stripped_hardwood",
+            "item": {
+                "tag": "tfg:stripped_hardwood"
+            },
+            "text": "这道工序从剥去$(t:#tfg:hardwood)$(6)硬木$()的树皮开始，露出原木内部的纤维。把原木放置后，用斧头对它$(item)$(k:key.use)$()即可剥皮。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "硬木条",
+            "anchor": "hardwood_strip",
+            "recipe": "tfg:crafting/strip_hardwood",
+            "text": "接着，用斧头把剥好的木材削出$(item)硬木条$()。这一步可以用斧头完成，之后也会有更先进的做法。"
+        },
+        {
+            "type": "tfg:sealed_barrel_recipe",
+            "title": "浸泡硬木条",
+            "anchor": "soaked_hardwood_strip",
+            "recipe": "tfg:barrel/soak_hardwood_strip",
+            "text": "然后，把一根根硬木条放进一个$(l:craftsmanship/barrels)大桶$()的$(thing)水$()中浸泡。这会$(thing)削弱$()$(thing)木材$()的结构强度，让它可以被$(thing)进一步打碎$()。"
+        },
+        {
+            "type": "tfg:quern_recipe",
+            "recipe": "tfg:quern/soaked_hardwood_strip",
+            "title": "硬木浆",
+            "anchor": "hardwood_pulp",
+            "text": "随后，用$(l:craftsmanship/quern)手推磨$()把浸泡过的硬木条磨碎成$(item)硬木浆$()。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "gtceu:shaped/small_dust_assembling_hardwood",
+            "title": "纸浆堆叠",
+            "anchor": "piling_up_the_pulp",
+            "text": "手推磨每次只能磨出少量的纸浆，你需要把它们放到$(thing)工作台$()上合并起来。用更先进的方式碾碎硬木条，能获得更多的纸浆。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "gtceu:thermochemically_treated_hardwood_dust",
+            "title": "纸浆分解",
+            "anchor": "breaking_down_the_pulp",
+            "text": "在纸浆能进一步加工成纸之前，还需要$(thing)加碱液煮沸$()——把它放进$(l:cooking/cooking_methods#vat)铁锅$()或$(l:cooking/cooking_methods#pot)陶锅$()里，做进一步的分解。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "纸浆压制",
+            "anchor": "pressing_the_pulp",
+            "item": {
+                "tag": "firmalife:stomping_barrels"
+            },
+            "text": "加碱液煮沸分解之后，$(item)热化学处理硬木浆$()就可以压成一张$(item)浸泡粗制纸$()。你可以把处理好的硬木浆放进$(l:cooking/alcohol#grape_smashing)踩踏盆$()里踩成薄片，也可以用$(l:craftsmanship/anvils)砧$()来压。"
+        },
+        {
+            "type": "tfg:drying_recipe",
+            "recipe": "tfg:drying/unrefined_paper",
+            "anchor": "drying_the_paper",
+            "text": "最后一步是$(l:cooking/decay#drying)晾干$()$(item)浸泡粗制纸$()，使其成为$(item)粗制纸$()，随后像前面那样刮制成$(item)纸$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "简化步骤...？",
+            "text": "随着科技树的推进，你可以用更少的步骤从木材造纸。用木材造纸的各种不同途径，请查看 $(emi)。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸阅读",
+            "anchor": "relations",
+            "entries": [
+                "tfg:agriculture/animal_husbandry",
+                "tfg:agriculture/leather_making",
+                "tfg:cooking/cooking_methods",
+                "tfg:cooking/decay",
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/earth_tree_index",
+                "tfg:the_world/geology",
+                "tfg:craftsmanship/sticks_and_stones",
+                "tfg:craftsmanship/barrels"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 11,
+    "extra_recipe_mappings": {
+        "tfc:papyrus_strip": 2,
+        "tfc:soaked_papyrus_strip": 3,
+        "tfc:unrefined_paper": 4,
+        "tfc:treated_hide": 6,
+        "tag:tfg:stripped_hardwood": 9,
+        "tfg:hardwood_strip": 10,
+        "tfg:soaked_hardwood_strip": 11,
+        "gtceu:hardwood_dust": 12,
+        "gtceu:tiny_hardwood_dust": 12,
+        "gtceu:small_hardwood_dust": 12,
+        "gtceu:thermochemically_treated_hardwood_dust": 14,
+        "gtceu:tiny_thermochemically_treated_hardwood_dust": 14,
+        "gtceu:small_thermochemically_treated_hardwood_dust": 14,
+        "tfg:soaked_unrefined_paper": 15
+    }
+}

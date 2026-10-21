@@ -1,0 +1,218 @@
+{
+	"name": "深界とは何ぞや？",
+	"category": "tfg:beneath",
+	"icon": "minecraft:deepslate",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "intro",
+			"text": "$(thing)深界$()は、オーバーワールドの真下に広がる、非常に深い洞窟網です。$(br)この次元は、$(thing)金属時代$()の中盤から後半に訪れる想定でバランス調整されています。$(br2)地表よりも危険なため、最低限でも金属製の盾と十分な栄養摂取をお勧めしますが、防具、水筒、体を涼しく保つ服、遠距離武器を用意しておくと大いに役立ちます。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "differences",
+			"text": "これは、通常のネザーとはいくつかの点で異なります：$(li)入り方が $(l:beneath/beneath#entering)異なる$()$(li)水が即座に蒸発しない$(li)ベッドは通常通り機能する$(li)深界の移動距離はオーバーワールドと同じである$(br2)その代わり、$(thing)カオリン粘土$()や$(thing)グラファイト$()といった資源、より豊富で発見しやすい$(thing)鉱脈$()、そしてその他の宝物を見つけることができます。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"text": "$(li)$(bold)$(l:beneath/beneath#entering)入る方法$() と  $(bold)$(l:beneath/beneath#exiting)出る方法$()$(li)$(bold)$(l:beneath/beneath#biomes)バイオーム$()$(li2)$(l:beneath/beneath#salt_caves)上層$()$(li2)$(l:beneath/beneath#tar_pools)中層$()$(li2)$(l:beneath/beneath#ash_forest)下層$()$(li)$(bold)$(l:beneath/beneath#geology)地質$()$(li2)$(l:beneath/beneath#more_rocks)そのほかの岩$()"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/portal.png",
+				"tfg:textures/gui/field_guide/nether/aether.png"
+			],
+			"border": true,
+			"text": "このようにしないでください！"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "entering",
+			"title": "深界への行き方",
+			"text": "深界へ移動するには、$(thing)Y=-58$()にあるオーバーワールドの岩盤を見つけるだけです。$(br2)岩盤まで降りるには、$(l:game_mechanics/mining#explosives) 爆発物$() または$(item)鋼鉄製以上の道具$() を使ってホルンフェルス層を突き破るか、より脆い $(thing)角斑岩$() がある洞窟を見つけるか、溶岩湖の溶岩を抜く必要があります。$(br2)なお、$(item)原始的な爆発物(Primitive Explosives)$() ではホルンフェルスを破壊するには力が足りません。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "深界内に移動した際には、同じX座標とZ座標の位置に出現し、必要に応じて梁を設置できるよう、3×2×3のスペースが用意されています。$(br2)床がない場合は一時的な雲が出現するほか、事故を防ぐために短時間の $(thing)低速落下$() および $(thing)火耐性$() 効果も付与されます。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "exiting",
+			"title": "深界からの脱出",
+			"text": "戻るには、同じ要領で天井の岩盤にたどり着けばいいです。$(br2)入った場所を $(thing)メモ$() しておくと、地上に戻りたいと思った時にいつでも同じ場所に戻れるので便利です。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "プレイヤーは、$(thing)Y=-54$()の位置、つまり潜在的な溶岩湖の上方にある、別の3x2x3のエリア内に戻されます。プレイヤーにとって中央の2つのブロックは常に空気に置き換えられるため、そこにはしごを設置するのは避けたほうがよいでしょう。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "biomes",
+			"title": "バイオーム",
+			"text": "深界には、探検しがいのある新しいバイオームがたくさんあります！$(br2)深界は3層に分かれており、それぞれに独自のバイオームがあります。 下に行けば行くほど、より暑く、より危険になっていきます！"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "層",
+			"text": "暖かい海風のように、このバイオームは $(item)岩塩$()でいっぱいです。"
+		},
+		{
+			"type": "patchouli:image",
+			"anchor": "salt_caves",
+			"title": "塩の洞窟",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/salt_caves.png"
+			],
+			"border": true,
+			"text": "湿気の多い湿地帯。 $(thing)ワニ$()を避けることができれば、安全な木材の供給源となります。"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "泥だらけの沼地",
+			"anchor": "muggy_bog",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
+			],
+			"border": true,
+			"text": "自然の分解者たちは、腐敗に満ちたこの湿った地域で一生懸命に働いています。"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "腐食洞窟",
+			"anchor": "decaying_caverns",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
+			],
+			"border": true,
+			"text": "自然の分解者たちは、腐敗に満ちたこの湿った地域で一生懸命に働いています。"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "クモの巣窟",
+			"anchor": "webbed_lair",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
+			],
+			"border": true,
+			"text": "ここに何が生息してるかなんて言わなくてもわかりますよね？$(item)絹$()を集めるのに最適な場所です。"
+		},
+		{
+			"type": "patchouli:image",
+			"anchor": "tar_pools",
+			"title": "タールピット",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/tar_pools.png"
+			],
+			"border": true,
+			"text": "小さな砂漠みたいに砂まみれのこのエリアには、ねばつく石油でいっぱいの $(thing)タールピット$()があります。"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "熱水泉",
+			"anchor": "geothermal_springs",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
+			],
+			"border": true,
+			"text": "サルファーキューブは存在しませんが、この湯気まみれのバイオームは癒しのための $(thing)温泉$()を見つけるのに最適な場所です。"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "茨の木立",
+			"anchor": "thorny_grove",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
+			],
+			"border": true,
+			"text": "踏むと影響を受ける植物が生えている、移動が難しいバイオームです。足元には気をつけてください！"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "繁茂した空洞",
+			"anchor": "lush_hollow",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
+			],
+			"border": true,
+			"text": "暑くて緑あふれる場所です！生い茂ったシダが、その下にある$(thing)カオリン粘土$()を覆い隠しています。"
+		},
+		{
+			"type": "patchouli:image",
+			"anchor": "ash_forest",
+			"title": "灰の森",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/ash_forest.png"
+			],
+			"border": true,
+			"text": "この環境では頻繁に火災が発生します。かつての豊かな自然は燃え尽き、今は何が残っているのでしょうか。"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "溶岩床",
+			"anchor": "lava_floes",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lava_floes.png"
+			],
+			"border": true,
+			"text": "鉱物資源が豊富な$(thing)輝岩$()のエリアには、溶岩流が縦横に走っています。"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "玄武岩デルタ",
+			"anchor": "basalt_deltas",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
+			],
+			"border": true,
+			"text": "みんなが大好きなネザーバイオームが返ってきました！相変わらず、ここを渡り歩くのは危険極まりないです。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "geology",
+			"title": "地質",
+			"text": "地表と同様に、深界にも独自の岩層が存在します。最上層には、千枚岩、片岩、片麻岩、大理石、粘板岩、混成岩、トラバーチンが見られることがあります。$(br2)その下層には、片岩、片麻岩、凝灰岩、混成岩、トラバーチン、閃緑岩が見られることがあります。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "その下には、斑れい岩、花崗岩、凝灰岩、閃緑岩、混成岩が存在します。$(br2)深界の最下層には、混成岩のみで構成される層があり、その最下部は輝岩のみの層となります。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "minecraft:blackstone,minecraft:calcite,tfg:gilsonite,tfg:rock/aragonite,tfg:rock/glauberite,tfg:huge_quartz,beneath:crackrack,tfg:halite",
+			"title": "そのほかの岩",
+			"anchor": "more_rocks",
+			"text": "その他の場所では、別の種類の石が見つかることもあります。$(br2)小さな溶岩湖は $(item)輝岩$() に囲まれており、湧き水の池には $(item)方解石$() が見られます。$(br2)$(item)角斑岩$() は、深界の至る所に、大きく高い柱状になって存在しています。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(l:beneath/beneath#geothermal_springs)熱水泉$()バイオームには、このバイオームにのみ存在する $(item)霰石$() や $(item)石灰芒硝$() のほか、より多くの方解石が存在しています。$(br2)このバイオームには $(item)巨大なクォーツ$() の結晶も存在し、これらはツルハシで砕くと品質の異なる $(item)スモーキークォーツ$() の宝石を入手できるほか、$(item)宝石のこぎり$() で砕くと透明なブロックそのものを入手できます。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(item)ギルソナイト$()は、非常に濃い色の建築ブロックであり、$(l:logistics/roads#asphalt)アスファルト$()の原料となるもので、$(l:beneath/beneath#tar_pools) タールピット$()バイオームで、$(item)砂岩$()と共に大量に採掘できます。$(br2)最後に、$(item)岩塩$()は、$(l:beneath/beneath#salt_caves)塩の洞窟$()バイオームで莫大な量を採掘でき、そこから岩塩やカリ岩塩の鉱石を採掘することができます。"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "さらに読む",
+			"anchor": "relations",
+			"entries": [
+				"tfg:beneath/beneath_mechanics",
+				"tfg:beneath/beneath_crops",
+				"tfg:beneath/beneath_wild_fruits",
+				"tfg:beneath/beneath_tree_index",
+				"tfg:beneath/beneath_fauna"
+			]
+		}
+	],
+	"extra_recipe_mappings": {
+		"tfg:gilsonite": 22,
+		"tfg:rock/aragonite": 22,
+		"tfg:rock/glauberite": 22,
+		"tfg:huge_quartz": 22
+	},
+	"read_by_default": true,
+	"priority": true
+}

@@ -1,0 +1,460 @@
+{
+	"name": "Temperatura gracza",
+	"category": "tfg:game_mechanics",
+	"icon": "tfcambiental:straw_hat",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)Player Temperature$() is the temperature that affects, $(bold)you$(), the player, and nothing else. It's different from, but influenced by, the $(l:the_world/climate#temperature)Current and Average Temperature$() of your climate, among $(l:game_mechanics/player_temperature#what_affects_it)other things$().$(br2)You need to keep an eye on it to avoid $(thing)heatstroke$() or $(thing)freezing$()!"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Zawartość",
+			"text": "$(li)$(bold)$(l:game_mechanics/player_temperature#hud)How to see your temperature$()$(li)$(bold)$(l:game_mechanics/player_temperature#what_affects_it)What affects it?$()$(li2)$(l:game_mechanics/player_temperature#what_affects_it)Climate and Seasons$()$(li2)$(l:game_mechanics/player_temperature#wetness)Wetness$()$(li2)$(l:game_mechanics/player_temperature#wetness)Direct sunlight$()$(li2)$(l:game_mechanics/player_temperature#wetness)Sprinting$()$(li2)$(l:game_mechanics/player_temperature#blocks)Blocks$()$(li2)$(l:game_mechanics/player_temperature#food)Food Effects$()$(li2)$(l:game_mechanics/player_temperature#clothing)Clothing$()$(li)$(bold)$(l:game_mechanics/player_temperature#house_tester)Enclosed Spaces$()$(li)$(bold)$(l:game_mechanics/player_temperature#heat_pump)Heat Pump$()"
+		},
+		{
+			"type": "patchouli:image",
+			"anchor": "hud",
+			"text": "Strzałka w środku wskazuje, czy twoja temperatura wzrasta czy spada.",
+			"title": "HUD paska skrótów",
+			"border": false,
+			"images": [
+				"tfg:textures/gui/field_guide/ambiental_hud.png"
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"text": "You can see your player temperature by holding $(item)$(k:key.sneak)$() and looking at the numbers above your $(thing)hotbar$() at the bottom of the screen.$(br2)The two numbers on the right indicate your $(thing)current player temperature$() and the $(thing)target temperature$(), or the number your temperature is \"trending towards\" if your situation doesn't change.$(br2)The two numbers on the left are the same for your $(l:game_mechanics/player_temperature#wetness)wetness$()."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "The $(thing)right two temperature numbers$() are the ones to pay attention to! If your $(thing)player temperature$() goes $(6)above 30°C$() or $(3)below 0°C$(), you will begin taking damage.$(br2)When you are close to these temperatures, the arrow in the middle of the HUD will either be a bright orange or dark blue, and you will have an orange or blue tint to your screen."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "The $(item)gradient bar$() on the very bottom, replacing your XP bar, shows your $(thing)player temperature$() (the $(bold)white mark$()), the $(l:the_world/climate)current climate temperature$() (the $(bold)$(2)green 🔽$()), and the $(l:the_world/climate)average climate temperature$() (the $(bold)$(c)red 🔼$()), all at once.$(br2)The bar is split into 10°C segments, with the very middle representing 0°C."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Co ma na to wpływ?",
+			"anchor": "what_affects_it",
+			"text": "There are many things that influence your temperature!$(br2)The most obvious one is what your climate is doing. You will be hotter in the $(l:the_world/climate#seasons)summer$() and colder in the $(l:the_world/climate#seasons)winter$(), living in the $(l:the_world/climate#climate)Arctic$() will make you colder than living in the $(l:the_world/climate#climate)Tropics$(), and so on."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wetness",
+			"text": "$(thing)Wetness$() will make you slightly colder, while also making you change temperature a bit faster. Unsurprisingly, you get wet from the rain or swimming, and dry off by... not touching water. Jumping in the water is a great way to cool down!$(br2)Standing in $(thing)direct sunlight$() increases temperature by a small amount that scales off the current climate temperature. Actively sprinting will also increase it a little."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "blocks",
+			"text": "Various nearby blocks can affect your temperature much more strongly. For example, you can warm up with a $(l:craftsmanship/firepit)Firepit$(), $(l:craftsmanship/charcoal_forge)Charcoal Forge$(), or blocks like $(item)Magma$() or $(thing)Lava$(), while blocks such as $(item)Packed Ice$() will cool you down."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "More precisely, blocks will influence your temperature if they are up to $(thing)9$() blocks away horizontally, up to $(thing)3$() blocks below you, and up to $(thing)5$() blocks above you (19x9x19). Of those blocks, only the 5 blocks with the strongest effects will influence your temperature, but any $(l:game_mechanics/heating)heating$() devices will always count."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Jedzenie i picie",
+			"anchor": "food",
+			"text": "Niektóre $(l:cooking)potrawy$() i $(l:cooking/drinks)napoje$() mogą wywoływać efekty wpływające na temperaturę gracza. Są to:$(li)$(l:game_mechanics/mob_effects#cooling)Chłodzenie$()$(li)$(l:game_mechanics/mob_effects#warming)Ogrzewanie$()$(li)$(l:game_mechanics/mob_effects#freezing)Zamrożenie$()$(li)$(l:game_mechanics/mob_effects#blazing)Pieczenie$()$(br2)Wypicie $(l:cooking/drinks#spring_water)wody źródlanej$() ogrzeje cię, a $(l:cooking/drinks#ice_slush)płynnego lodu$() ochłodzi."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Ubrania",
+			"anchor": "clothing",
+			"text": "Wearing $(l:craftsmanship/clothing)clothes$() is another important way to change your temperature. Clothes can either warm you up or cool you down (or neither), and may also have an $(thing)insulation$() effect that reduces the amount that other temperatures can influence you.$(br2)Some head clothes will also protect against $(l:game_mechanics/player_temperature#wetness)direct sunlight$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfcambiental:house_tester",
+			"anchor": "house_tester",
+			"title": "Zamknięte przestrzenie",
+			"text": "Creating an enclosed space such as a house will provide an insulating effect. Blocks such as doors, trapdoors, and window panes count as \"sealed\". If you are unsure, the $(item)House Tester$() will tell you!$(br2)This effect will only heat a house up to a maximum of 5°C, and does not work in larger structures."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:heat_pump",
+			"anchor": "heat_pump",
+			"text": "Once you've reached $(thing)MV Circuits$(), you can craft the $(item)Heat Pump$(), a multiblock that will warm up or cool down much larger sized buildings.$(br2)You will also need to insert a Turbine Rotor in the $(item)Exhaust Vent$() so the Heat Pump can run.$(br2)$(o)(Continued on next page...)$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:turbine_rotor{GT.PartStats:{Material:\"tfg:silicon_carbide_silicon_carbide\"}},gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:vanadium\"}},gtceu:turbine_rotor{GT.PartStats:{Material:\"tfg:rene_41\"}}",
+			"title": "Wirnik turbiny",
+			"text": "The $(item)Turbine Rotor$() inserted in your Exhaust Vent will never lose durability, therefore it's a stat you can ignore. On the other hand, the Turbine's $(thing)Power$() will influence the discount you get on the $(thing)EU/t requirement$()."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "At this point in the game, the easiest solution is a $(item)Vanadium Rotor$(), but you could also go for the $(item)René-41 Rotor$() or the $(item)SiC-SiC Rotor$().$(br2)$(bold)Tip:$() The Heat Pump will still work even if your doors are open, but otherwise needs an enclosed area of non-air blocks to work.$(br2)$(italic)If the Turbine's $(thing)Power$() is under 100%, you will gain no benefits or drawbacks.$()"
+		},
+		{
+			"type": "tfg:multimultiblock",
+			"text": "W razie potrzeby możesz rozszerzyć pompę ciepła na 10 rur!",
+			"name": " ",
+			"enable_visualize": true,
+			"multiblocks": [
+				{
+				"pattern": [
+					[
+						"S1S",
+						"SSS",
+						"   ",
+						"SSS"
+					],
+					[
+						"VVV",
+						"SPS",
+						" P ",
+						"SBS"
+					],
+					[
+						"2HS",
+						"SSS",
+						" 0 ",
+						"SSS"
+					]
+				],
+				"mapping": {
+					"0": "minecraft:air",
+					"S": "tfg:casings/machine_casing_pressure_dark",
+					"P": "gtceu:steel_pipe_casing",
+					"V": "ad_astra:vent",
+					"H": "tfg:oxygen_distributor[facing=west]",
+					"B": "tfg:rotor_vent[facing=east]",
+					"1": "gtceu:maintenance_hatch[facing=west]",
+					"2": "gtceu:mv_input_hatch[facing=west]"
+				}
+				},
+				{
+				"pattern": [
+					[
+						"S1S",
+						"SSS",
+						"   ",
+						"   ",
+						"SSS"
+					],
+					[
+						"VVV",
+						"SPS",
+						" P ",
+						" P ",
+						"SBS"
+					],
+					[
+						"2HS",
+						"SSS",
+						" 0 ",
+						"   ",
+						"SSS"
+					]
+				],
+				"mapping": {
+					"0": "minecraft:air",
+					"S": "tfg:casings/machine_casing_pressure_dark",
+					"P": "gtceu:steel_pipe_casing",
+					"V": "ad_astra:vent",
+					"H": "tfg:oxygen_distributor[facing=west]",
+					"B": "tfg:rotor_vent[facing=east]",
+					"1": "gtceu:maintenance_hatch[facing=west]",
+					"2": "gtceu:mv_input_hatch[facing=west]"
+				}
+				},
+				{
+				"pattern": [
+					[
+						"S1S",
+						"SSS",
+						"   ",
+						"   ",
+						"   ",
+						"SSS"
+					],
+					[
+						"VVV",
+						"SPS",
+						" P ",
+						" P ",
+						" P ",
+						"SBS"
+					],
+					[
+						"2HS",
+						"SSS",
+						"   ",
+						" 0 ",
+						"   ",
+						"SSS"
+					]
+				],
+				"mapping": {
+					"0": "minecraft:air",
+					"S": "tfg:casings/machine_casing_pressure_dark",
+					"P": "gtceu:steel_pipe_casing",
+					"V": "ad_astra:vent",
+					"H": "tfg:oxygen_distributor[facing=west]",
+					"B": "tfg:rotor_vent[facing=east]",
+					"1": "gtceu:maintenance_hatch[facing=west]",
+					"2": "gtceu:mv_input_hatch[facing=west]"
+				}
+				},
+				{
+				"pattern": [
+					[
+						"S1S",
+						"SSS",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"SSS"
+					],
+					[
+						"VVV",
+						"SPS",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						"SBS"
+					],
+					[
+						"2HS",
+						"SSS",
+						"   ",
+						" 0 ",
+						"   ",
+						"   ",
+						"SSS"
+					]
+				],
+				"mapping": {
+					"0": "minecraft:air",
+					"S": "tfg:casings/machine_casing_pressure_dark",
+					"P": "gtceu:steel_pipe_casing",
+					"V": "ad_astra:vent",
+					"H": "tfg:oxygen_distributor[facing=west]",
+					"B": "tfg:rotor_vent[facing=east]",
+					"1": "gtceu:maintenance_hatch[facing=west]",
+					"2": "gtceu:mv_input_hatch[facing=west]"
+				}
+				},
+				{
+				"pattern": [
+					[
+						"S1S",
+						"SSS",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"SSS"
+					],
+					[
+						"VVV",
+						"SPS",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						"SBS"
+					],
+					[
+						"2HS",
+						"SSS",
+						"   ",
+						"   ",
+						" 0 ",
+						"   ",
+						"   ",
+						"SSS"
+					]
+				],
+				"mapping": {
+					"0": "minecraft:air",
+					"S": "tfg:casings/machine_casing_pressure_dark",
+					"P": "gtceu:steel_pipe_casing",
+					"V": "ad_astra:vent",
+					"H": "tfg:oxygen_distributor[facing=west]",
+					"B": "tfg:rotor_vent[facing=east]",
+					"1": "gtceu:maintenance_hatch[facing=west]",
+					"2": "gtceu:mv_input_hatch[facing=west]"
+				}
+				},
+				{
+				"pattern": [
+					[
+						"S1S",
+						"SSS",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"SSS"
+					],
+					[
+						"VVV",
+						"SPS",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						"SBS"
+					],
+					[
+						"2HS",
+						"SSS",
+						"   ",
+						"   ",
+						" 0 ",
+						"   ",
+						"   ",
+						"   ",
+						"SSS"
+					]
+				],
+				"mapping": {
+					"0": "minecraft:air",
+					"S": "tfg:casings/machine_casing_pressure_dark",
+					"P": "gtceu:steel_pipe_casing",
+					"V": "ad_astra:vent",
+					"H": "tfg:oxygen_distributor[facing=west]",
+					"B": "tfg:rotor_vent[facing=east]",
+					"1": "gtceu:maintenance_hatch[facing=west]",
+					"2": "gtceu:mv_input_hatch[facing=west]"
+				}
+				},
+				{
+				"pattern": [
+					[
+						"S1S",
+						"SSS",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"SSS"
+					],
+					[
+						"VVV",
+						"SPS",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						"SBS"
+					],
+					[
+						"2HS",
+						"SSS",
+						"   ",
+						"   ",
+						"   ",
+						" 0 ",
+						"   ",
+						"   ",
+						"   ",
+						"SSS"
+					]
+				],
+				"mapping": {
+					"0": "minecraft:air",
+					"S": "tfg:casings/machine_casing_pressure_dark",
+					"P": "gtceu:steel_pipe_casing",
+					"V": "ad_astra:vent",
+					"H": "tfg:oxygen_distributor[facing=west]",
+					"B": "tfg:rotor_vent[facing=east]",
+					"1": "gtceu:maintenance_hatch[facing=west]",
+					"2": "gtceu:mv_input_hatch[facing=west]"
+				}
+				},
+				{
+				"pattern": [
+					[
+						"S1S",
+						"SSS",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"SSS"
+					],
+					[
+						"VVV",
+						"SPS",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						" P ",
+						"SBS"
+					],
+					[
+						"2HS",
+						"SSS",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						" 0 ",
+						"   ",
+						"   ",
+						"   ",
+						"   ",
+						"SSS"
+					]
+				],
+				"mapping": {
+					"0": "minecraft:air",
+					"S": "tfg:casings/machine_casing_pressure_dark",
+					"P": "gtceu:steel_pipe_casing",
+					"V": "ad_astra:vent",
+					"H": "tfg:oxygen_distributor[facing=west]",
+					"B": "tfg:rotor_vent[facing=east]",
+					"1": "gtceu:maintenance_hatch[facing=west]",
+					"2": "gtceu:mv_input_hatch[facing=west]"
+				}
+				}
+			]
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Czytaj dalej",
+			"anchor": "relations",
+			"entries": [
+				"tfg:the_world/climate",
+				"tfg:cooking/food_and_water",
+				"tfg:cooking/drinks",
+				"tfg:game_mechanics/hazards",
+				"tfg:game_mechanics/heating",
+				"tfg:game_mechanics/mob_effects",
+				"tfg:craftsmanship/clothing",
+				"tfg:craftsmanship/sewing_table"
+			]
+		}
+	],
+	"read_by_default": true
+}

@@ -1,3 +1,8 @@
 {
-	"options.borderlessFullscreen": "无边框"
+	"modmenu.nameTranslation.cubes-without-borders": "无边框立方体",
+	"modmenu.descriptionTranslation.cubes-without-borders": "允许你在无边框全屏模式下游玩Minecraft。",
+	"options.borderlessFullscreen": "无边框",
+	"options.pauseOnLostFocus": "失去焦点后暂停",
+	"options.fullscreenType": "全屏类型",
+	"options.borderlessFullscreenType": "无边框全屏类型"
 }

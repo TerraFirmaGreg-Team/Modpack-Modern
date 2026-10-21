@@ -1,0 +1,152 @@
+{
+	"name": "Редстоунові пристрої",
+	"category": "tfg:logistics",
+	"icon": "minecraft:comparator",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(bold)$(l:logistics/redstone_devices#clock)Точний годинник$()$(li)$(bold)$(l:logistics/redstone_devices#thermometer)Термометр$()$(li)$(bold)$(l:logistics/redstone_devices#anemometer)Анемометр$()$(li)$(bold)$(l:logistics/redstone_devices#vane)Флюгер$()$(li)$(bold)$(l:logistics/redstone_devices#morered)Інші пристрої$()$(li2)$(l:logistics/redstone_devices#more_comparators)Додаткові компаратори$()$(li2)$(l:logistics/redstone_devices#pulse_timer)Таймер імпульсів$()$(li2)$(l:logistics/redstone_devices#pulse_generator)Генератор послідовних імпульсів$()$(li2)$(l:logistics/redstone_devices#analog_lever)Аналоговий важіль$()$(li)$(bold)$(l:logistics/redstone_devices#threshold_switch)Пороговий перемикач$()$(li)$(bold)$(l:logistics/redstone_devices#smart_observer)Розумний спостерігач$()$(li)$(bold)$(l:logistics/redstone_devices#link)Бездротовий редстоун$()$(li)$(bold)$(l:logistics/redstone_devices#cover)Кришки для машин$()"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [
+				"tfg:textures/gui/field_guide/redstone_devices.png"
+			],
+			"text": "Коли ти достатньо просунешся у своєму світі, тобі може знадобитися вимірювати певні умови, як-от швидкість вітру чи час доби.",
+			"border": true
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "clock",
+			"recipe": "tfg:shaped/calendar_clock",
+			"text": "Перший — $(thing)точний годинник$(). Годинник визначає годину або, якщо перемкнути режим за допомогою $(item)$(k:key.use)$(), місяць."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "У режимі годинника він видаватиме сильний аналоговий сигнал: сила сигналу 0 означає опівніч або полудень, а сигнал 11 — 11:00 або 23:00.$(br2)У режимі місяця годинник видаватиме сильний аналоговий сигнал: сила сигналу 0 означає січень, а сигнал 11 — грудень.$(br2)Щоб зчитувати силу сигналу годинника, компаратор не потрібен."
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "thermometer",
+			"recipe": "tfg:shaped/thermometer",
+			"text": "Далі маємо $(thing)термометр$(), який визначає температуру довкілля або температуру пристрою, на якому його встановлено."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Під час вимірювання температури довкілля термометр видаватиме сильний аналоговий сигнал: сила сигналу 0 означає −40°C, а сигнал 15 — 40°C.$(br2)Під час вимірювання температури пристрою термометр видаватиме слабкий аналоговий сигнал: сила сигналу 0 означає відсутність нагрівання, а сигнал 15 — сліпучо білий.$(br2)Щоб зчитувати силу сигналу термометра, компаратор не потрібен."
+		},
+		{
+			"type": "tfg:heat_recipe",
+			"recipe": "tfg:heating/metal/cinnabar_dust",
+			"text": "$(item)Ртуть$() можна добути з $(item)кіноварі$().$(br2)Якщо тобі не вдається набрати ртуть у флакон, спробуй використовувати $(l:craftsmanship/pottery#vessel)горщик$(), щоб перелити її в $(l:craftsmanship/barrels)діжку$(), а потім використай $(item)$(k:key.use)$() по діжці, тримаючи флакон."
+		},
+		{
+			"type": "tfg:glassworking_recipe",
+			"recipe": "tfg:glassworking/glass_vial",
+			"text": "Скляний флакон також може переносити різну кількість рідин, як і $(item)дерев’яне відро$(), та безпечно зберігати $(thing)кислоти$()."
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "anemometer",
+			"recipe": "tfg:shaped/anemometer",
+			"title": ""
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)Анемометр$() визначає швидкість вітру. Він видає сильний аналоговий сигнал: сила сигналу 0 означає 0 км/год, а сигнал 15 — 115 км/год.$(br2)Щоб зчитувати силу сигналу анемометра, компаратор не потрібен."
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "vane",
+			"recipe": "tfg:shaped/vane_wrought",
+			"recipe2": "tfg:shaped/vane_lead",
+			"title": ""
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)Флюгер$() визначає напрямок вітру. Він видає сильний аналоговий сигнал: сила сигналу 0 означає північ, а сигнал 8 — південь. Сила сигналу зростає в міру того, як напрямок вітру рухається за годинниковою стрілкою.$(br2)Щоб зчитувати силу сигналу флюгера, компаратор не потрібен."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "morered",
+			"item": "morered:red_alloy_wire,morered:bundled_network_cable",
+			"title": "Більше редстоуну",
+			"text": "Хочеш робити більше з редстоуном? Переглянь, що пропонує мод $(item)More Red$(), наприклад дріт, який кріпиться до стін і стель та не втрачає силу сигналу.$(br2)Введи $(6)@morered$() в $(emi), щоб переглянути всі його можливості."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tag:morered:redstone_devices",
+			"anchor": "more_comparators",
+			"title": "Шлюзи та тригери",
+			"text": "Існує багато інших типів блоків, які можуть керувати редстоуном. Більшість із них можна виготовити шляхом $(thing)каменерізання$() $(item)компаратора$(), а потім і самі ці пристрої можна обробляти в каменерізі, тож тобі не доведеться виготовляти безліч різних пристроїв для експериментів."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shaped/pulse_timer",
+			"anchor": "pulse_timer",
+			"text": "$(item)Таймер імпульсів$() може подавати імпульси редстоуну з довільними інтервалами, наприклад, для автоматичного скидання предметів у $(l:craftsmanship/blast_furnace)доменну піч$()."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "create_connected:crafting/kinetics/sequenced_pulse_generator",
+			"anchor": "pulse_generator",
+			"text": "$(item)Генератор послідовних імпульсів$() можна налаштувати на надсилання комбінації сигналів редстоуну з різними інтервалами часу."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:create/shaped/analog_lever",
+			"anchor": "analog_lever",
+			"text": "Потрібно забезпечити постійну силу сигналу? $(item)Аналоговий важіль$() ідеально для цього підходить."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "create:crafting/logistics/stockpile_switch",
+			"anchor": "threshold_switch",
+			"text": "$(item)Пороговий перемикач$() видає сигнал редстоуну залежно від заповненості контейнера. Він працює як із предметами, так і з рідинами."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "create:crafting/logistics/content_observer",
+			"anchor": "smart_observer",
+			"text": "$(item)Розумний спостерігач$() — це вдосконалена версія звичайного $(item)спостерігача$(). Його можна фільтрувати, а також він може виявляти зміни рівня рідини."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:create/shaped/redstone_link",
+			"anchor": "link",
+			"text": "$(item)Редстоуновий сполучник$() може передавати сигнали редстоуну бездротовим способом."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "cover",
+			"title": "Кришки для машин",
+			"item": "gtceu:machine_controller_cover",
+			"text": "$(thing)Кришки GregTech$() можна встановлювати безпосередньо на твої машини, і багато з них певним чином взаємодіють із редстоуном. Наприклад, $(item)кришка контролера машини$() дає змогу вимкнути машину, коли вона отримує сигнал редстоуну."
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Докладніше",
+			"anchor": "relations",
+			"entries": [
+				"tfg:logistics/storage",
+				"tfg:craftsmanship/barrels"
+			]
+		}
+	],
+	"read_by_default": true,
+	"extra_recipe_mappings": {
+		"tfc:calendar_clock": 2,
+		"tfc:thermometer": 4,
+		"tfc:anemometer": 8,
+		"tfc:vane": 10,
+		"morered:red_alloy_wire": 12,
+		"morered:bundled_network_cable": 12,
+		"tag:morered:redstone_devices": 13,
+		"create:pulse_timer": 14,
+		"create_connected:sequenced_pulse_generator": 15,
+		"create:analog_lever": 16,
+		"create:stockpile_switch": 17,
+		"create:content_observer": 18,
+		"create:redstone_link": 19
+	}
+}

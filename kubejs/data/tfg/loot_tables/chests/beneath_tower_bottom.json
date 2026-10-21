@@ -23,9 +23,67 @@
 								"minecraft:quick_charge": 1
 							},
 							"add": false
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 1}"
 						}
 					],
 					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "species:crankbow",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.9,
+								"max": 1
+							}
+						},
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"species:capacity": 1,
+								"species:quick_crank": 1
+							},
+							"add": false
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 1}"
+						}
+					],
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "species:crankbow",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.9,
+								"max": 1
+							}
+						},
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"species:sparing": 1,
+								"species:scattershot": 1
+							},
+							"add": false
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 1}"
+						}
+					],
+					"weight": 50
 				},
 				{
 					"type": "minecraft:item",
@@ -888,6 +946,66 @@
 				},
 				{
 					"type": "minecraft:item",
+					"name": "tfg:food/oil_palm",
+					"weight": 50,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfg:food/acai",
+					"weight": 50,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfg:food/magmango",
+					"weight": 50,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfg:food/lavacado",
+					"weight": 50,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
 					"name": "minecraft:glow_berries",
 					"functions": [
 						{
@@ -915,6 +1033,16 @@
 					"type": "minecraft:item",
 					"name": "sns:burlap_sack",
 					"weight": 15
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sns:quiver",
+					"weight": 20
+				},
+				{
+					"type": "minecraft:item",
+					"name": "species:cranktrap",
+					"weight": 50
 				},
 				{
 					"type": "minecraft:item",

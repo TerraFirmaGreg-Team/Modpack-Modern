@@ -1,10 +1,5 @@
 {
   "ftbchunks.map_mode.none": "Nichts",
-  "ftbchunks.minimap": "Minimap",
   "ftbchunks.minimap.compass": "Kompass",
-  "ftbchunks.minimap.position": "Position",
-  "ftbchunks.minimap.position.none": "Nichts",
-  "ftbchunks.waypoint.share.server": "Server",
-  "minimap.info.ftbchunks.debug.title": "Debug",
-  "minimap.info.ftbchunks.fps.title": "FPS"
+  "ftbchunks.minimap.position.none": "Nichts"
 }

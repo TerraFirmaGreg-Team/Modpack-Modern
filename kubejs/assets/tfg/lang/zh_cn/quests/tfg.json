@@ -1,0 +1,23 @@
+{
+    "quests.tfg": "欢迎来到群峦格雷！",
+    "quests.tfg.subtitle": "关于某些模组和整合包本体的信息。",
+    "quests.tfg.welcome.title": "欢迎来到群峦格雷(现代版)！",
+    "quests.tfg.welcome.subtitle": "生存模组，本该如此。",
+    "quests.tfg.welcome.desc": "感谢你启动群峦格雷(现代版)！\n\n在此模组包中，你将担负起控制未开发荒野并将其转变为工业奇境的任务。从一个卑微的起点捡起石头开始，到穿越星际空间结束！",
+    "quests.tfg.create_team.title": "如何创建队伍？",
+    "quests.tfg.create_team.subtitle": "你和朋友一起玩吗？",
+    "quests.tfg.create_team.desc": "你可以创建队伍以共同完成任务。为此，打开你的物品栏，在左上角选择画有3个彩色人物的按钮，然后将打开一个界面，你可以在其中创建队伍。点击§a创建队伍§r按钮，给队伍起个名字，然后可能还需要一些其他的参数。成功创建队伍后，你可以使用右上角绿色圆圈中的加号按钮邀请其他玩家加入。从此以后，你们的任务将同步，任何队员都能完成任务。祝你好运！",
+    "quests.tfg.capture_territory.title": "如何占领领土？",
+    "quests.tfg.capture_territory.subtitle": "以及如何加载你领土中的区块",
+    "quests.tfg.capture_territory.desc": "如果你在服务器上游戏，可能想占领你的领土以防其他玩家干扰。使用打开领地键（默认为“Ctrl+M”）打开窗口，然后左键点击以占领区块，右键点击以取消占领。\n\n这有限制，因此你不能占领一切。你可以shift+左键点击区块以强制加载（又名“区块加载”）它，以及shift+右键点击以取消强制加载。如果使用队伍，占领区块将包括你的整个队伍。",
+    "quests.tfg.chunk_limit.title": "如何提升我的强加载区块上限？",
+    "quests.tfg.chunk_limit.desc": "如果你在服务器上游戏，默认情况下你只有少量的区块可以被强制加载。\n\n服务器管理员可以自定义这个数量（请查看README.txt文件！）。但如果你拥有管理员权限（或启用作弊模式），你也可以使用命令 &a/ftbchunks admin extra_force_load_chunks @p set X&r 来设置，其中 X 代表新的上限数值。",
+    "quests.tfg.field_guide.title": "关于任务的重要信息！",
+    "quests.tfg.field_guide.subtitle": "我还需要读更多吗？",
+    "quests.tfg.field_guide.desc": "任务仍在开发中，我们一直在努力改进它们！许多关于具体机制的信息也在你的野外指南中，可通过物品栏的书页标签访问。\n\n记住，EMI和野外指南都是你的朋友，因为并非所有内容都会通过任务解释。",
+    "quests.tfg.books_again.title": "又需要书了吗？",
+    "quests.tfg.books_again.desc": "这是一个可重复任务，如果你想再次获得任务书和野外指南的实体副本。",
+    "quests.tfg.optional_mods.title": "可选模组",
+    "quests.tfg.optional_mods.subtitle": "定制你的游戏体验",
+    "quests.tfg.optional_mods.desc": "如果想为你的整合包添加更多内容，你可能会对我们的&d可选模组列表&r感兴趣！\n\n这些模组要么仅适用于特定PC配置，要么如果默认添加会给所有人带来过多冗余，要么过于小众而不适合默认包含。\n\n请注意，TFG开发团队不确保这些模组或其兼容性，因此它们可能在未来的任何时候停止工作。\n\n点击任务旁边的地球图片即可打开模组列表。"
+}

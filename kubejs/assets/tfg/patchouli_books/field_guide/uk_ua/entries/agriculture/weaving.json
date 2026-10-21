@@ -1,0 +1,69 @@
+{
+    "name": "Ткацтво",
+    "category": "tfg:agriculture",
+    "icon": "tfc:spindle",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)Ткацтво$() — це процес поєднання різних видів ниток у $(thing)тканину$(). Хоча останній етап ткацтва виконується на $(thing)ткацькому верстаті$(), для деяких видів тканини, як-от $(thing)вовна$(), отримана від $(l:agriculture/animal_husbandry#wooly_animals)вовняних тварин$(), потрібна $(thing)веретено$(), щоб отримати $(thing)вовняну пряжу$(), з якої потім виготовляють тканину."
+        },
+        {
+            "type": "tfg:knapping_recipe",
+            "recipe": "tfc:clay_knapping/spindle_head",
+            "anchor": "spindle",
+            "text": "$(thing)Невипалену головку веретена$() можна виколупати з глини. Потім її можна $(l:game_mechanics/heating)випалити$(), щоб отримати $(thing)головку веретена$(). Щоб завершити виготовлення веретена, поїднай її разом із $(thing)палицею$(). Веретено також можна виготовити з $(l:craftsmanship/metallurgy)металу$()."
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "spinning",
+            "title": "Прядіння",
+            "recipe": "tfc:kjs/damage/shapeless/wool_yarn",
+            "text": "Створення $(thing)вовни$() з веретеном дає $(thing)вовняну пряжу$()."
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "Ткацький верстат",
+            "anchor": "loom",
+            "recipe": "tfc:crafting/wood/acacia_loom",
+            "text": "Ткацький верстат створюється лише з $(thing)деревини$() та $(thing)палиць$()."
+        },
+        {
+            "type": "tfg:loom_recipe",
+            "anchor": "wool_cloth",
+            "title": "Тканина",
+            "recipe": "tfc:loom/wool_cloth",
+            "text": "Рецепт $(thing)вовняної тканини$() вимагає 16 одиниць $(thing)вовняної пряжі$(). Додавання матеріалу до ткацького верстата здійснюється за допомогою натискання $(item)$(k:key.use)$(). Потім утримуй $(item)$(k:key.use)$(), щоб запустити роботу верстата. Коли процес завершиться, натисни $(item)$(k:key.use)$(), щоб отримати готовий предмет."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/loom_empty.png",
+                "tfc:textures/gui/book/tutorial/loom_full.png",
+                "tfc:textures/gui/book/tutorial/loom_working.png",
+                "tfc:textures/gui/book/tutorial/loom_done.png"
+            ],
+            "text": "Стадії роботи ткацького верстата.",
+            "border": true
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Докладніше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:agriculture/growing_crops",
+                "tfg:agriculture/animal_husbandry",
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/wild_animals",
+                "tfg:craftsmanship/pottery",
+                "tfg:craftsmanship/glassworking"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 9,
+    "extra_recipe_mappings": {
+        "tag:tfg:tools/spindles": 1,
+        "tag:forge:string": 2,
+        "tag:tfc:looms": 3
+    }
+}

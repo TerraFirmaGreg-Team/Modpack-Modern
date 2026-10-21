@@ -1,0 +1,491 @@
+{
+	"name": "Clothing",
+	"category": "tfg:craftsmanship",
+	"icon": "tfc_textile:cotton_shirt",
+	"read_by_default": true,
+	"sortnum": 19,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(item)Clothing$() is a type of $(thing)equipment$() that provides effects other than $(l:game_mechanics/damage_types)armor$().$(br2)Most clothes affect your $(l:game_mechanics/player_temperature)player temperature$(), but others can provide additional, useful effects."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"text": "$(li)$(bold)$(l:craftsmanship/clothing#curios)About Curios$()$(li)$(bold)Early Clothing$()$(li2)$(l:craftsmanship/clothing#straw_hat)Straw Hat$()$(li2)$(l:craftsmanship/clothing#primitive)Primitive$()$(li2)$(l:craftsmanship/clothing#insulated_leather)Leather$()$(li)$(bold)Advanced Clothing$()$(li2)$(l:craftsmanship/clothing#cloth)Cloth$()$(li2)$(l:craftsmanship/clothing#hides)Animal Hides$()$(li2)$(l:craftsmanship/clothing#fully_insulated)Fully Insulating$()$(li)$(bold)$(l:craftsmanship/clothing#table)Clothing Stats Table$()$(li)$(bold)Other Clothes$()$(li2)$(l:logistics/exploration_gear#snowshoes)Snowshoes$()$(li2)$(l:logistics/exploration_gear#snorkel)Snorkel$() and $(l:logistics/exploration_gear#flippers)Flippers$()$(li2)$(l:game_mechanics/hazards#mask)Face Mask$()$(li2)$(l:game_mechanics/hazards#gloves)Rubber Gloves$()$(li)$(bold)$(l:craftsmanship/clothing#armor_trim)Clothing Trims$()"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "What are Curios?",
+			"anchor": "curios",
+			"images": [
+				"tfg:textures/gui/field_guide/curios.png"
+			],
+			"border": true,
+			"text": "Click the circular button on the top left of your character portrait to open the menu."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Clothing can be worn in your normal equipment slots, but it can also be worn in your $(thing)Curios slots$() to wear other equipment at the same time.$(br2)This menu also has slots for things like a $(l:logistics/personal_storage#backpack)backpack$() or $(l:logistics/personal_storage#tool_belt)tool belt$()."
+		},
+		{
+			"type": "tfg:knapping_recipe",
+			"recipe": "sns:straw_knapping/straw_hat",
+			"anchor": "straw_hat",
+			"title": "Straw Hat",
+			"text": "The first item of clothing you can craft is a simple $(item)Straw Hat$(), made of $(l:craftsmanship/building_materials#thatch)straw$(). It protects you from $(l:game_mechanics/player_temperature#wetness)direct sunlight$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Primitive Clothing",
+			"anchor": "primitive",
+			"item": "tfc_textile:raw_hat,tfc_textile:raw_shirt,tfc_textile:raw_pants,tfc_textile:raw_socks",
+			"text": "Naked and freezing in the arctic? The $(item)primitive$() set of clothing is very easy to craft, only needing some $(l:craftsmanship/building_materials#thatch)straw$() and some $(item)raw hides$(). Perfect for your caveman chic!$(br2)Primitive clothes have very low warmth, insulation, and durability, but they should buy you enough time to find something better."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shapeless/primitive_insulation_small",
+			"recipe2": "tfg:shapeless/primitive_insulation_large",
+			"title": " "
+		},
+		{
+			"type": "tfg:knapping_recipe",
+			"recipe": "tfg:knapping/raw_hat",
+			"text": "$(l:craftsmanship/sticks_and_stones#knapping)Knapping$() a $(item)Primitive Hood$()."
+		},
+		{
+			"type": "tfg:knapping_recipe",
+			"recipe": "tfg:knapping/raw_shirt",
+			"text": "Knapping a $(item)Primitive Toga$()."
+		},
+		{
+			"type": "tfg:knapping_recipe",
+			"recipe": "tfg:knapping/raw_pants",
+			"text": "Knapping $(item)Primitive Shorts$()."
+		},
+		{
+			"type": "tfg:knapping_recipe",
+			"recipe": "tfg:knapping/raw_socks",
+			"text": "Knapping $(item)Primitive Boots$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "insulated_leather",
+			"title": "Insulated Leather",
+			"item": "tfcambiental:insulated_leather_hat,tfcambiental:insulated_leather_tunic,tfcambiental:insulated_leather_pants,tfcambiental:insulated_leather_boots",
+			"text": "$(item)Insulated Leather$() clothes are the next step up from your caveman cosplay. They only require some $(l:agriculture/leather_making)Leather$() armor, plus either $(l:agriculture/animal_husbandry#wooly_animals)raw wool$() or $(l:agriculture/animal_husbandry#oviparous_animals)feathers$()."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shaped/insulated_leather_hat",
+			"recipe2": "tfg:shaped/insulated_leather_tunic",
+			"title": " "
+		},
+		{
+			"type": "tfg:knapping_recipe",
+			"recipe": "tfg:knapping/leather_apron",
+			"text": "The $(l:agriculture/leather_making)Leather$() $(item)Apron$() provides a lot of insulation, but no warmth or cooling. Perfect for working in front of a $(l:craftsmanship/charcoal_forge)forge$()!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Cloth Clothing",
+			"anchor": "cloth",
+			"item": "tag:forge:cloth",
+			"text": "For stronger, longer-term protection, you'll want to look at making some proper clothes out of various $(l:agriculture/weaving)cloths$(). $(l:agriculture/animal_husbandry#wooly_animals)Wool$() and $(l:beneath/beneath_crops#cotton)Cotton$() clothes will warm you up, while $(l:the_world/wild_crops#flax)Linen$(), $(l:the_world/wild_crops#jute)Burlap$(), and $(l:beneath/beneath#webbed_lair)Silk$() clothes will cool you down.$(br)These have a bigger up-front investment, but have a lot more durability and can be cheaply repaired."
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "tfg:shaped/cotton_shirt",
+			"recipe2": "tfg:shaped/burlap_pants"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tag:tfc_textile:animal_furs",
+			"anchor": "hides",
+			"title": "Animal Hides",
+			"text": "The hides and furs of various animals can be used to create some of the strongest clothing in $(tfg_short), boasting the best stats and durability of anything else. They all have different stats depending on how difficult they are to obtain, or where you would find the corresponding animal."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "For example, $(l:the_world/wild_animals#crocodile)crocodile clothing$() will cool you down, while a $(l:the_world/wild_animals#caribou)caribou parka$() would be nice and toasty.$(br2)The strongest cooling clothes will require a trip to somewhere $(l:beneath/beneath_mechanics#clothes)quite hot$()...$(br2)These can also all be easily repaired."
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "tfg:shaped/caribou_shirt",
+			"recipe2": "tfg:shaped/crocodile_shirt"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "fully_insulated",
+			"title": "Fully Insulating",
+			"item": "gtceu:nanomuscle_chestplate,ad_astra:space_suit",
+			"text": "Lastly, some advanced armors will also provide $(thing)full insulation$() from the outside world, preventing your $(l:game_mechanics/player_temperature)player temperature$() from going lower than 5°C or above 25°C."
+		},
+		{
+			"type": "tfg:table",
+			"anchor": "table",
+			"strings": [
+				{
+					"text": "Clothing Type",
+					"bold": true
+				},
+				{
+					"text": "Durability",
+					"bold": true
+				},
+				{
+					"text": "Warmth",
+					"bold": true
+				},
+				{
+					"text": "Insulation",
+					"bold": true
+				},
+				{
+					"text": "Straw Hat"
+				},
+				{
+					"text": "Low"
+				},
+				{
+					"text": "-2°C"
+				},
+				{
+					"text": "+3"
+				},
+				{
+					"text": "Primitive"
+				},
+				{
+					"text": "Low"
+				},
+				{
+					"text": "+2°C"
+				},
+				{
+					"text": "+5"
+				},
+				{
+					"text": "Insulated Leather"
+				},
+				{
+					"text": "Medium"
+				},
+				{
+					"text": "+2°C"
+				},
+				{
+					"text": "+10"
+				},
+				{
+					"text": "Leather Apron"
+				},
+				{
+					"text": "Medium"
+				},
+				{
+					"text": "+0°C"
+				},
+				{
+					"text": "+20"
+				},
+				{
+					"text": "Burlap"
+				},
+				{
+					"text": "Medium"
+				},
+				{
+					"text": "-2°C"
+				},
+				{
+					"text": "+5"
+				},
+				{
+					"text": "Linen"
+				},
+				{
+					"text": "High"
+				},
+				{
+					"text": "-2°C"
+				},
+				{
+					"text": "+3"
+				},
+				{
+					"text": "Wool"
+				},
+				{
+					"text": "Medium"
+				},
+				{
+					"text": "+4°C"
+				},
+				{
+					"text": "+5"
+				},
+				{
+					"text": "Cotton"
+				},
+				{
+					"text": "Medium"
+				},
+				{
+					"text": "+4°C"
+				},
+				{
+					"text": "+5"
+				},
+				{
+					"text": "Silk"
+				},
+				{
+					"text": "Very High"
+				},
+				{
+					"text": "-2°C"
+				},
+				{
+					"text": "+5"
+				},
+				{
+					"text": "Phantom Silk"
+				},
+				{
+					"text": "Medium"
+				},
+				{
+					"text": "-8°C"
+				},
+				{
+					"text": "+5"
+				},
+				{
+					"text": "Red Elk"
+				},
+				{
+					"text": "Very High"
+				},
+				{
+					"text": "-8°C"
+				},
+				{
+					"text": "+20"
+				}
+			],
+			"title": "Clothing Stats",
+			"legend": [],
+			"columns": 3,
+			"first_column_width": 80,
+			"column_width": 50,
+			"row_height": 9,
+			"left_buffer": 2,
+			"top_buffer": 20,
+			"draw_background": false
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(br2)$(br2)$(br2)$(br2)$(br2)$(br2)$(br2)$(br2)$(o)Continued on next page...$()"
+		},
+		{
+			"type": "tfg:table",
+			"anchor": "table",
+			"strings": [
+				{
+					"text": "Clothing Type",
+					"bold": true
+				},
+				{
+					"text": "Durability",
+					"bold": true
+				},
+				{
+					"text": "Warmth",
+					"bold": true
+				},
+				{
+					"text": "Insulation",
+					"bold": true
+				},
+				{
+					"text": "Dire Wolf"
+				},
+				{
+					"text": "Medium"
+				},
+				{
+					"text": "+8°C"
+				},
+				{
+					"text": "+5"
+				},
+				{
+					"text": "Panther"
+				},
+				{
+					"text": "Medium"
+				},
+				{
+					"text": "+8°C"
+				},
+				{
+					"text": "+5"
+				},
+				{
+					"text": "Cougar"
+				},
+				{
+					"text": "Medium"
+				},
+				{
+					"text": "+8°C"
+				},
+				{
+					"text": "+5"
+				},
+				{
+					"text": "Tiger"
+				},
+				{
+					"text": "High"
+				},
+				{
+					"text": "-4°C"
+				},
+				{
+					"text": "+10"
+				},
+				{
+					"text": "Crocodile"
+				},
+				{
+					"text": "High"
+				},
+				{
+					"text": "-4°C"
+				},
+				{
+					"text": "+10"
+				},
+				{
+					"text": "Lion"
+				},
+				{
+					"text": "High"
+				},
+				{
+					"text": "-4°C"
+				},
+				{
+					"text": "+10"
+				},
+				{
+					"text": "Black Bear"
+				},
+				{
+					"text": "High"
+				},
+				{
+					"text": "+8°C"
+				},
+				{
+					"text": "+10"
+				},
+				{
+					"text": "Grizzly Bear"
+				},
+				{
+					"text": "High"
+				},
+				{
+					"text": "+8°C"
+				},
+				{
+					"text": "+10"
+				},
+				{
+					"text": "Caribou"
+				},
+				{
+					"text": "High"
+				},
+				{
+					"text": "+8°C"
+				},
+				{
+					"text": "+20"
+				},
+				{
+					"text": "Sabertooth"
+				},
+				{
+					"text": "High"
+				},
+				{
+					"text": "+8°C"
+				},
+				{
+					"text": "+20"
+				},
+				{
+					"text": "Polar Bear"
+				},
+				{
+					"text": "Very High"
+				},
+				{
+					"text": "+8°C"
+				},
+				{
+					"text": "+20"
+				}
+			],
+			"legend": [],
+			"title": "Clothing Stats (Continued)",
+			"columns": 3,
+			"first_column_width": 80,
+			"column_width": 50,
+			"row_height": 9,
+			"left_buffer": 2,
+			"top_buffer": 20,
+			"draw_background": false
+		},
+		{
+			"type": "patchouli:empty",
+			"draw_filler": false
+		},
+		{
+			"title": "Armor Trims",
+			"item": "tag:minecraft:trim_templates",
+			"type": "patchouli:spotlight",
+			"anchor": "armor_trim",
+			"text": "Are your clothes looking too plain?$(br2)Just like armor, $(l:craftsmanship/sewing_table#armor_trim)Armor Trims$() can be applied to most clothing too."
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Further Reading",
+			"anchor": "relations",
+			"entries": [
+				"tfg:agriculture/leather_making",
+				"tfg:agriculture/weaving",
+				"tfg:game_mechanics/player_temperature",
+				"tfg:craftsmanship/sewing_table",
+				"tfg:the_world/wild_animals",
+				"tfg:the_world/wild_crops",
+				"tfg:the_world/climate",
+				"tfg:logistics/exploration_gear",
+				"tfg:beneath/beneath",
+				"tfg:beneath/beneath_crops"
+			]
+		}
+	],
+	"extra_recipe_mappings": {
+		"tag:curios:clothes_hat": 0,
+		"tag:curios:clothes_torso": 0,
+		"tag:curios:clothes_pants": 0,
+		"tag:curios:clothes_socks": 0
+	}
+}

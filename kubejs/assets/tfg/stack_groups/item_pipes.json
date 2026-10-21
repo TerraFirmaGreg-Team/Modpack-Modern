@@ -1,0 +1,11 @@
+{
+	"id": "tfg:item_pipes",
+	"type": "remi:group",
+	"name": "stackgroup.remi.tfg_item_pipes",
+	"contents": [
+		"#forge:small_item_pipes",
+		"#forge:normal_item_pipes",
+		"#forge:large_item_pipes",
+		"#forge:huge_item_pipes"
+	]
+}

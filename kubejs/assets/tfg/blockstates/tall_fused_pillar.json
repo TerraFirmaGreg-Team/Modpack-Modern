@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "height=0": { "model": "tfg:block/tall_fused_pillar_bottom" },
+        "height=1": { "model": "tfg:block/tall_fused_pillar_top" },
+        "height=2": { "model": "" },
+        "height=3": { "model": "" },
+        "height=4": { "model": "" }
+    }
+}

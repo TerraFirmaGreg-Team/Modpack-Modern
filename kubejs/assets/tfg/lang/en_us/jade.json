@@ -1,0 +1,19 @@
+{
+    "tfc.enum.tfcwolfvariant.default": "Variant: Pale",
+    "tfc.enum.tfcwolfvariant.ashen": "Variant: Ashen",
+    "tfc.enum.tfcwolfvariant.black": "Variant: Black",
+    "tfc.enum.tfcwolfvariant.chestnut": "Variant: Chestnut",
+    "tfc.enum.tfcwolfvariant.rusty": "Variant: Rusty",
+    "tfc.enum.tfcwolfvariant.snowy": "Variant: Snowy",
+    "tfc.enum.tfcwolfvariant.spotted": "Variant: Spotted",
+    "tfc.enum.tfcwolfvariant.striped": "Variant: Striped",
+    "tfc.enum.tfcwolfvariant.woods": "Variant: Woods",
+
+    "tfg.tooltip.tamed_fox.variant.red": "Variant: Red",
+    "tfg.tooltip.tamed_fox.variant.snow": "Variant: Snow",
+
+    "config.jade.plugin_tfc.surfer": "Surfer",
+    "config.jade.plugin_tfc.soarer": "Soarer",
+
+    "config.jade.plugin_tfg.gas_burner_info": "Gas Burner"
+}

@@ -59,6 +59,11 @@
 				},
 				{
 					"type": "minecraft:item",
+					"name": "sns:quiver",
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
 					"name": "minecraft:tipped_arrow",
 					"weight": 50,
 					"functions": [
@@ -66,8 +71,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 8,
-								"min": 4
+								"max": 28,
+								"min": 10
 							},
 							"function": "minecraft:set_count"
 						},
@@ -86,8 +91,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 8,
-								"min": 4
+								"max": 28,
+								"min": 10
 							},
 							"function": "minecraft:set_count"
 						},
@@ -106,8 +111,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 6,
-								"min": 3
+								"max": 28,
+								"min": 10
 							},
 							"function": "minecraft:set_count"
 						},

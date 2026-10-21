@@ -1,0 +1,77 @@
+{
+	"name": "Нагрівання предметів",
+	"category": "tfg:game_mechanics",
+	"sortnum": 5,
+	"icon": "tfc:textures/gui/book/icons/heating.png",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Нагрівання предметів — це спосіб перетворити один предмет на інший або на рідину. Предмети можна нагрівати різними способами — у $(l:craftsmanship/firepit)багатті$(), $(l:craftsmanship/pit_kiln)земляній печі$() або у $(l:craftsmanship/charcoal_forge)вугільному горні$(). Однак усі вони працюють однаково. Коли ти поміщаєш предмети в ці пристрої, вони поступово починають нагріватися. Це можна побачити в підказці предмета."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Зміст",
+			"anchor": "index",
+			"text": "$(li)$(bold)$(l:game_mechanics/heating#temps)Список температур$()$(li)$(bold)Захист$()$(li2)$(l:game_mechanics/heating#tongs)Щипці$()$(li2)$(l:game_mechanics/heating#cloth)Рукавиці та прихватки$()$(li2)$(l:game_mechanics/heating#equipment)Інше спорядження$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "temps",
+			"text": "Температура предмета позначається кольором, який змінюється відповідно до таких значень:$(br2)$(7)$(bold)Нагрівання$(): 1–80 °C$(br)$(7)$(bold)Гарячий$(): 80–210 °C$(br)$(7)$(bold)Дуже гарячий$(): 210–480 °C$(br)$(4)$(bold)Ледь червоний$(): 480–580 °C$(br)$(bold)$(4)Темно червоний$(): 580–730 °C$(br)$(c)$(bold)Яскраво червоний$(): 730–930 °C$(br)$(6)$(bold)Помаранчевий$(): 930–1100 °C$(br)$(e)$(bold)$(t:Yellow)Жовтий$(): 1100–1300 °C$(br)$(e)$(t:Yellow White)$(bold)Яскраво жовтий$(): 1300–1400 °C$(br)$(d)$(bold)$(t:White)Білий$(): 1400–1500 °C$(br)$(d)$(bold)$(t:Brilliant White)Сліпучий білий$(): >1500 °C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tag:tfchotornot:tongs",
+			"title": "Щипці",
+			"anchor": "tongs",
+			"text": "Гарячі предмети надто гарячі, щоб тримати їх голими руками! Коли температура предмета досягає $(t:Configurable in tfchotornot-common.toml)$(4)Ледь червоний *$() або вище, він стає $(c)надто гарячим для утримання$()! Щоб не обпектися, ти маєш тримати $(item)щипці$() у своїй $(thing)другій руці$(). Те саме стосується деяких $(3)дуже холодних$() предметів, як-от $(item)Блакитний лід$()."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(bold)Примітка:$() Навіть зі щипцями гарячі або холодні предмети у твоєму інвентарі впливатимуть на твою $(l:game_mechanics/player_temperature)температуру тіла$()."
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "tfchotornot:crafting/tongs/wood",
+			"recipe2": "tfchotornot:crafting/tongs/wrought_iron",
+			"text": ""
+		},
+		{
+			"type": "tfg:anvil_recipe",
+			"title": "Металеві деталі щипців",
+			"recipe": "tfchotornot:anvil/tong_part/wrought_iron",
+			"text": "$(item)Дерев'яні щипці$() легко виготовити, але вони мають низьку міцність. Спробуй покращити їх!$(br)$(item)Металеві щипці$() мають значно вищу міцність і їх можна ремонтувати.$(br)Зверни увагу, що всі щипці отримують пошкодження, коли у твоєму інвентарі є гарячі предмети, причому чим більше предметів, тим більше міцності вони втрачають. Кинь їх ($(item)$(k:key.drop)$()) у воду, щоб швидко охолодити!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfchotornot:mittens,tfchotornot:burlap_potholder,tfchotornot:silk_potholder,tfchotornot:wool_potholder",
+			"anchor": "cloth",
+			"title": "Альтернативні, тканинні",
+			"text": "Ти також можеш виготовити $(item)Рукавиці$() та $(item)Прихватки$() зі $(l:agriculture/leather_making)Шкіри$() та $(l:agriculture/weaving)Тканини$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfc:metal/chestplate/blue_steel,tfc:metal/chestplate/red_steel,create:netherite_backtank,gtceu:hazmat_chestpiece,ad_astra:space_suit,ad_astra:netherite_space_suit,gtceu:quarktech_chestplate,gtceu:advanced_quarktech_chestplate",
+			"anchor": "equipment",
+			"title": "Інше спорядження",
+			"text": "Насамкінець, деяке спорядження може безпечно захистити тебе під час тримання цих предметів, наприклад $(item)Нагрудник з синьої сталі$() захищає тебе від гарячих предметів."
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Докладніше",
+			"anchor": "relations",
+			"entries": [
+				"tfg:craftsmanship/pit_kiln",
+				"tfg:craftsmanship/crucible",
+				"tfg:craftsmanship/firepit",
+				"tfg:cooking/cooking_methods",
+				"tfg:game_mechanics/player_temperature",
+				"tfg:agriculture/leather_making",
+				"tfg:agriculture/weaving",
+				"tfg:game_mechanics/hazards"
+			]
+		}
+	],
+	"read_by_default": true
+}

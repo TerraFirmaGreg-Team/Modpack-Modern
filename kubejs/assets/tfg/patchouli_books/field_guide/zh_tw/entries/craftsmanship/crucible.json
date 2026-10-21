@@ -1,0 +1,129 @@
+{
+    "name": "坩堝",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:crucible",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)坩堝$()是用來製作$(l:craftsmanship/metallurgy#alloying)合金$()的進階裝置。它比使用$(l:craftsmanship/pottery#vessel)小缸$()製作合金更加精確。$(br2)要取得坩堝，你首先需要取得一些$(l:craftsmanship/pottery#fire_clay)耐火黏土$()，這是一種比黏土更堅固的材料。接著可以塑形耐火黏土，將它塑形成$()未燒製的坩堝$()。"
+        },
+        {
+            "type": "tfg:knapping_recipe",
+            "recipe": "tfc:fire_clay_knapping/crucible",
+            "text": "塑形製作$(thing)未燒製的坩堝$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "塑形出坩堝後，需要像任何陶器一樣將它$(l:craftsmanship/pottery#vessel)燒製$()。$(br2)要使用坩堝，它需要熱源。坩堝可以由下方任何可加熱的方塊加熱，最好是$(l:craftsmanship/charcoal_forge)木炭爐$()。$(br)重要的是，坩堝將熱量傳給物品的速度比木炭爐快得多。這可能是好事，也可能是壞事。如果$(item)錫$()等低熔點物品在鍛造時讓你很困擾，可以考慮繼續用木炭爐加熱。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "   ",
+                        " C ",
+                        "   "
+                    ],
+                    [
+                        "GGG",
+                        "G0G",
+                        "GGG"
+                    ]
+                ],
+                "mapping": {
+                    "0": "tfc:charcoal_forge[heat_level=7]",
+                    "C": "tfc:crucible",
+                    "G": "tfc:rock/bricks/granite"
+                }
+            },
+            "name": "",
+            "text": "用木炭爐加熱坩堝",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "advanced_alloying",
+            "text": "現在你可以開始使用坩堝了。與它互動時，你會看到$(thing)坩堝介面$()，如下一頁所示。上方區域顯示坩堝目前的金屬含量。顯示的第一種金屬就是如果現在取出時會產出的金屬。顯示的其他金屬則是坩堝中目前合金的組成成分。",
+            "title": "高階冶金術"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/gui/crucible.png"
+            ],
+            "text": "坩堝介面",
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "坩堝有九個欄位可以放入要熔化的物品，它們液化後的內容物會直接加入坩堝。$(l:craftsmanship/pottery#mold)模具$()等熔融金屬容器也可以放在這裡，它們會將內容物倒入坩堝，讓你能精確控制合金的成分。將游標移到正在倒出的模具或容器上並按住$(item)$(k:key.sneak)$()，可以讓它倒得更快。$(br)模具或其他流體容器也可以放在輸出欄位，它們會被坩堝的內容物緩慢填滿。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "左側的溫度指示器會依外部熱源而上升，例如下方的$(l:craftsmanship/charcoal_forge)木炭爐$()或上方$(l:craftsmanship/blast_furnace)高爐$()的熱量。只要金屬仍處於熔融狀態，就可以從坩堝中取出。$(br2)坩堝被破壞時也會保留其內容物，如果你願意，可以把這個合金容器帶著走。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "當坩堝頂部的文字顯示你的合金名稱時，就表示合金製作成功了。$(br)如果你不小心將錯誤種類的金屬混入熔融合金中，很遺憾，這整批就毀了。即使只有少量的雜質金屬也會毀掉合金。你也可能在達到完美比例之前就發現坩堝的空間不夠了，並擔心自己浪費了金屬。幸好，你可以犧牲一些產物，倒出一點金屬來騰出空間放更多材料。合金只有在澆鑄後才會固定！"
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/prospecting/crucible_alloying.png"
+            ],
+            "text": "$(4)◼$() - 合金成果。$(br)$(3)◼$() - 構成金屬比例的清單。",
+            "border": false,
+            "title": "熔融合金"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfcchannelcasting:unfired_channel,tfcchannelcasting:channel,tfcchannelcasting:unfired_mold_table,tfcchannelcasting:mold_table",
+            "title": "流道澆鑄",
+            "anchor": "channel_casting",
+            "text": "你可以使用$(thing)流道$()和$(thing)模具台$()，從$(thing)坩堝$()同時澆鑄到多個模具中。只要用$(thing)流道$()將$(thing)模具台$()連接到$(thing)坩堝$()，然後對$(thing)坩堝$()旁的$(thing)流道$()按下$(item)$(k:key.use)$()即可。手持$(l:craftsmanship/pottery#mold)模具$()對$(thing)模具台$()按下$(item)$(k:key.sneak)-$(k:key.use)$()可以放置或取下模具。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock_id": "tfcchannelcasting:example",
+            "name": "澆鑄配置",
+            "text": "流道會將熔融金屬平均分配到所有連接的模具台。模具台不會有讓內部模具破損的機率。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)對$(thing)模具台$()使用$(l:craftsmanship/charcoal_forge#bellows)風箱$()可以讓金屬冷卻得更快。$()$(li)以紅石脈衝啟動$(thing)流道$()也能開始澆注金屬。$()$(li)$(thing)模具台$()會輸出比較器訊號。$(li)金屬可以直接從流體管道或正在排出的$(l:craftsmanship/blast_furnace)高爐$()等來源抽入。$(li)漏斗可以從模具中取出冷卻的金屬物品，同時保留模具。",
+            "title": "自動化"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸閱讀",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/pit_kiln",
+                "tfg:craftsmanship/pottery",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/charcoal_forge",
+                "tfg:craftsmanship/blast_furnace",
+                "tfg:craftsmanship/bloomery",
+                "tfg:craftsmanship/anvils",
+                "tfg:craftsmanship/glassworking",
+                "tfg:game_mechanics/heating"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 7,
+    "extra_recipe_mappings": {
+        "tfc:ceramic/unfired_crucible": 1,
+        "tfc:crucible": 1,
+        "tfcchannelcasting:unfired_channel": 11,
+        "tfcchannelcasting:channel": 11,
+        "tfcchannelcasting:unfired_mold_table": 11,
+        "tfcchannelcasting:mold_table": 11
+    }
+}

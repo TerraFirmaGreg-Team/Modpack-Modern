@@ -1,0 +1,16 @@
+{
+    "quests.stone_age.nutrition.title": "Mécanique: Nutrition",
+    "quests.stone_age.cook_meat.subtitle": "Vous ne voulez pas mourir pour avoir mangé de la viande crue, n'est-ce pas ?",
+    "quests.stone_age.garlic_bread.title": "Pain à l'Ail ?",
+    "quests.stone_age.garlic_bread.subtitle": "Vous essayez de chasser des vampires ou quoi ?",
+    "quests.stone_age.garlic_bread.task": "1024 tranches de pain à l'ail",
+    "quests.stone_age.find_potable_water.subtitle": "Pensez à boire de l'eau !",
+    "quests.stone_age.stone_tools.title": "Stone Tools",
+    "quests.stone_age.stone_tools.desc": "While stone is a relatively simple and primitive material, they're what you're stuck with until you learn how to work with metals. Some other useful tools include the Javelin, which can be thrown like a vanilla Trident, and the Hoe, which allows you to farm.",
+    "quests.stone_age.find_clay.desc": "Clay is an essential part of stone age tech! Similar to knapping rocks, clay can be molded into different shapes and then fired in a Pit Kiln to create a wide variety of items. Stone Tools and Clay Ceramics will be the backbone of your survival until you learn how to work with Metals.\n\nClay is found in blobs in the ground, usually covered by grass. However, certain types of plants, known as \"Clay Indicators\" grow exclusively on clay. Check the Field Guide for what kind of indicators could grow in your climate.",
+    "quests.stone_age.weld_copper_ingots.desc": "Light up your Forge and give it at least 2 Copper Ingots. Keep an eye on their tooltip as they heat up - once they get hot, it'll show \"Can Work\", but we need to wait until they get to \"Can Weld\", which is just before their melting point.\n\nOnce they reach it, quickly pull them out of the forge (while holding some wooden tongs in your off-hand!) and into the Rock Anvil's interface, along with a little bit of flux. Lastly, right-click the anvil while sneaking to weld the two ingots together while they're still hot. You can use water or snow to cool down your new double ingot faster.",
+    "quests.stone_age.snowshoes.title": "Raquettes à neige",
+    "quests.stone_age.barrelrack.title": "Support à tonneaux",
+    "quests.tfg_tips.juicer.subtitle": "Hydration on a Pinch",
+    "quests.tfg_tips.juicer.desc": "L'&3Extracteur de jus&r est un item spécial vous permettant d'extraire l'&dEau potable&r contenue dans les &aFruits&r, &aChampignons&r, et &aCactus&r."
+}

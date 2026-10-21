@@ -1,0 +1,108 @@
+{
+    "name": "肥料",
+    "category": "tfg:agriculture",
+    "icon": "tfc:groundcover/guano",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "目次",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:agriculture/fertilizers#compost)堆肥$()$(li)$(bold)$(l:agriculture/fertilizers#bone_meal)骨粉$()$(li)$(bold)$(l:agriculture/fertilizers#saltpeter)硝酸カリウム$()$(li)$(bold)$(l:agriculture/fertilizers#guano)糞化石$()$(li)$(bold)$(l:agriculture/fertilizers#wood_ash)木の灰$()$(li)$(bold)$(l:agriculture/fertilizers#sylvite)カリ岩塩$()$(li)$(bold)$(l:agriculture/fertilizers#pure_fertilizers)純肥料$()$(li)$(bold)$(l:agriculture/fertilizers#fertilizer)GTの肥料$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "text": "肥料は、$(l:agriculture/growing_crops)作物$()に栄養分を補給するために使用されます。肥料を手に持った状態で、$(thing)農地$()、$(l:agriculture/greenhouse#planters)プランター$()、または$(thing)作物$()に対して$(item)$(k:key.use)$()を実行すると、栄養分が補給されます。肥料が追加されたことを示すパーティクルが表示されます。$(br)肥料のツールチップには、栄養素に関する情報が表示されています。次の数ページでは、利用可能な肥料をいくつか紹介します。",
+            "title": "肥料を与える"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "compost",
+            "title": "堆肥",
+            "item": "tfc:compost",
+            "link_recipes": false,
+            "text": "堆肥は$(l:agriculture/composting)コンポスター$()で作成できる肥料です。以下の栄養素が含まれています。$(br)$(li)$(b)窒素: 40$()$(li)$(6)リン: 20$()$(li)$(d)カリウム: 40$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "minecraft:bone_meal",
+            "anchor": "bone_meal",
+            "title": "骨粉",
+            "link_recipes": false,
+            "text": "骨粉は骨を砕いて作られます。以下の栄養素が含まれています。$(br)$(li)$(6)リン: 10$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:powder/saltpeter",
+            "anchor": "saltpeter",
+            "title": "硝酸カリウム",
+            "link_recipes": false,
+            "text": "硝石は硝石鉱石から作られます。以下の栄養素が含まれています。$(br)$(li)$(b)窒素: 10$()$(li)$(d)カリウム: 40$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:groundcover/guano",
+            "anchor": "guano",
+            "title": "糞化石",
+            "link_recipes": false,
+            "text": "糞化石は地下深くや砂利の多い海岸で見つかります。以下の栄養素が含まれています。$(br)$(li)$(b)窒素: 80$()$(li)$(6)リン: 50$()$(li)$(d)カリウム: 10$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:powder/wood_ash",
+            "anchor": "wood_ash",
+            "title": "木の灰",
+            "link_recipes": false,
+            "text": "木の灰は焚き火を壊すことで得られます。松明を水に投げ込むと生成される場合もあります。以下の栄養素が含まれています。$(br)$(li)$(6)リン: 10$()$(li)$(d)カリウム: 30$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:powder/sylvite",
+            "anchor": "sylvite",
+            "title": "カリ岩塩",
+            "link_recipes": false,
+            "text": "カリ岩塩はカリ岩塩鉱石から作られます。以下の栄養素が含まれています。$(br)$(li)$(d)カリウム: 50$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:pure_nitrogen,tfc:pure_potassium,tfc:pure_phosphorus",
+            "anchor": "pure_fertilizers",
+            "title": "純肥料",
+            "link_recipes": false,
+            "text": "純肥料の製造や抽出には、さまざまな方法があります。これらの肥料は、農地の養分を効率的に高める手段となります。$(br)$(li)$(d)カリウム：100$()$(br)または$(li)$(b)窒素：100$()$(br)または$(li)$(6)リン：100$()$"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "gtceu:fertilizer",
+            "anchor": "fertilizer",
+            "title": "肥料 (GregTech)",
+            "link_recipes": false,
+            "text": "GregTechの肥料には、さまざまな種類の栄養素が均等に配合されています。堆肥を加工してこの肥料を作る場合、加工前よりも合計栄養価を高くできます。$(br)$(li)$(d)カリウム：15$()$(li)$(b)窒素：15$()$(li)$(6)リン：15$()$"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "さらに読む",
+            "anchor": "relations",
+            "entries": [
+                "tfg:agriculture/growing_crops",
+                "tfg:agriculture/greenhouse",
+                "tfg:agriculture/composting",
+                "tfg:the_world/wild_crops"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 6,
+    "extra_recipe_mappings": {
+        "tfc:compost": 2,
+        "minecraft:bone_meal": 3,
+        "tfc:groundcover/guano": 5,
+        "firmalife:jar/guano": 5,
+        "tfc:powder/wood_ash": 6,
+        "tfc:powder/sylvite": 7,
+        "tfc:pure_nitrogen": 8,
+        "tfc:pure_potassium": 8,
+        "tfc:pure_phosphorus": 8,
+        "gtceu:fertilizer": 9
+    }
+}

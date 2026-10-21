@@ -1,0 +1,28 @@
+{
+    "name": "攪拌碗",
+    "category": "tfg:cooking",
+    "icon": "firmalife:mixing_bowl",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "攪拌碗是一種能輕鬆混合物品和流體的方式。要操作攪拌碗，手持$(thing)湯匙$()對它按下$(item)$(k:key.use)$()將湯匙放入碗中。湯匙會留在碗中，且不會損耗耐久度。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "使用攪拌碗時，放入材料後按下$(item)$(k:key.use)$()即可開始攪拌。攪拌碗最多可以放入$(6)5 個物品材料$()和$(3)1 種流體材料$()。配方需要$(n)精確數量$()的物品才能執行。如果配方產出流體，任何多餘的流體材料都會被清除，所以要小心！"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸閱讀",
+            "anchor": "relations",
+            "entries": [
+                "tfg:cooking/decay",
+                "tfg:cooking/bread",
+                "tfg:cooking/cooking_methods",
+                "tfg:agriculture/beekeeping"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 13
+}

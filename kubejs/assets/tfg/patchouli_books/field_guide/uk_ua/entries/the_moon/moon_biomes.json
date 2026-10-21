@@ -1,0 +1,228 @@
+{
+	"name": "Місячні біоми",
+	"category": "tfg:the_moon",
+	"icon": "tfg:textures/block/lunar_roots.png",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)Місяць$() — доволі кам'янисте місце, куди б ти не пішов, але тут усе ж є кілька різних біомів, які можуть тебе зацікавити.$(br2)Шукаєш щось конкретне? Лише деякі біоми можуть генеруватися поруч один з одним, а $(l:the_moon/moon_biomes#sands)Місячні піски$() та $(l:the_moon/moon_biomes#plains)Місячні рівнини$() слугують своєрідною «нейтральною територією» між ними всіма."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"title": "Зміст",
+			"text": "$(li)$(bold)Біоми$()$(li2)$(l:the_moon/moon_biomes#plains)Місячні рівнини$()$(li2)$(l:the_moon/moon_biomes#sands)Місячні піски$()$(li2)$(l:the_moon/moon_biomes#asurine)Азуринові поля$()$(li2)$(l:the_moon/moon_biomes#certus)Поля істинного кварцу$()$(li2)$(l:the_moon/moon_biomes#forest)Хорусний ліс$()$(li2)$(l:the_moon/moon_biomes#thicket)Хорусні хащі$()$(li2)$(l:the_moon/moon_biomes#maria)Місячне море$()$(li2)$(l:the_moon/moon_biomes#reef)Місячний риф$()$(li2)$(l:the_moon/moon_biomes#scrubland)Світлоквітний чагарник$()$(li2)$(l:the_moon/moon_biomes#stargazers)Світлоквітні зоряні гейзери$()$(li)$(bold)$(l:the_moon/moon_biomes#harvester)Збирач місячного пилу$()$(li2)$(l:the_moon/moon_biomes#regolith)Список реголіту$()"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"title": "Місячні рівнини",
+			"anchor": "plains",
+			"images": [
+				"tfg:textures/gui/field_guide/moon/plains.png"
+			],
+			"text": "$(thing)Місячні рівнини$() не мають нічого особливо цікавого, але це чудове нейтральне місце для облаштування бази."
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"title": "Місячні піски",
+			"anchor": "sands",
+			"images": [
+				"tfg:textures/gui/field_guide/moon/sands.png"
+			],
+			"text": "$(thing)Місячні піски$() — це альтернативна версія Місячних рівнин, де менше рослинності, але більше піску."
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"title": "Азуринові поля",
+			"anchor": "asurine",
+			"images": [
+				"tfg:textures/gui/field_guide/moon/asurine.png"
+			],
+			"text": "$(thing)Азуринові поля$() часто мають поклади $(item)Азурину$(). Вони не можуть генеруватися поблизу біомів $(l:the_moon/moon_biomes#forest)Хорусних лісів$()."
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"title": "Поля істинного кварцу",
+			"anchor": "certus",
+			"images": [
+				"tfg:textures/gui/field_guide/moon/certus.png"
+			],
+			"text": "$(thing)Поля істинного кварцу$() — це більші поклади $(item)Азурину$(), які також містять велику кількість $(item)Істинного кварцу$()."
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"title": "Хорусний ліс",
+			"anchor": "forest",
+			"images": [
+				"tfg:textures/gui/field_guide/moon/forest.png"
+			],
+			"text": "$(thing)Хорусний ліс$() — єдине місце, де можна знайти $(l:the_moon/moon_crops)хорусові плоди$(). Він не може генеруватися поблизу біомів $(l:the_moon/moon_biomes#asurine)Азурину$()."
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"title": "Хорусні хащі",
+			"anchor": "thicket",
+			"images": [
+				"tfg:textures/gui/field_guide/moon/thicket.png"
+			],
+			"text": "$(thing)Хорусні хащі$() — це густі зарості $(l:the_moon/moon_crops)хорусових плодів$(). Це небезпечний біом із ворожими $(l:the_moon/moon_fauna#endermen)ендерменами$()."
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"title": "Місячне море",
+			"anchor": "maria",
+			"images": [
+				"tfg:textures/gui/field_guide/moon/maria.png"
+			],
+			"text": "$(thing)Місячні моря$() містять трохи $(item)мертвих коралів$() та піску. Вони не можуть генеруватися поблизу біомів $(l:the_moon/moon_biomes#lightbloom)Світлоквітнкових чагарників$()."
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"title": "Місячний риф",
+			"anchor": "reef",
+			"images": [
+				"tfg:textures/gui/field_guide/moon/reef.png"
+			],
+			"text": "$(thing)Місячний риф$() має багато великих покладів мертвих коралів. Невже в далекому минулому на Місяці були океани?"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"title": "Світлоквітний чагарник",
+			"anchor": "scrubland",
+			"images": [
+				"tfg:textures/gui/field_guide/moon/scrubland.png"
+			],
+			"text": "$(thing)Світлоквіткові чагарники$() мають рідкі зарості $(item)Світлоквіт$(). Вони не можуть генеруватися поблизу $(l:the_moon/moon_biomes#maria)Коралових$() біомів."
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"title": "Світлоквітні зоряні гейзери",
+			"anchor": "stargazers",
+			"images": [
+				"tfg:textures/gui/field_guide/moon/stargazers.png"
+			],
+			"text": "Тут росте багато $(item)Світлоквітів$(). $(bold)Порада:$() Цей біом чудово виглядає вночі з увімкненими шейдерами!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:moon_dust_harvester",
+			"anchor": "harvester",
+			"text": "$(item)Збирач місячного пилу$() — це необов'язкова багатоблокова конструкція, яка збирає $(thing)місячний реголіт$(). Потім цей реголіт можна переробити на $(thing)нескінченні джерела певних руд$()!$(br)Але є один недолік: існує чотири типи реголіту, і кожен із них можна збирати лише в певному біомі. Тож якщо ти хочеш отримати їх усі, доведеться налагодити певну $(l:logistics/trains)інфраструктуру$()."
+		},
+		{
+			"type": "patchouli:multiblock",
+			"title": " ",
+			"text": "Покращення $(item)котушок$() зменшить витрати енергії. $(l:logistics/trains#cargo)Акумулятори$() можна використовувати для транспортування енергії.",
+			"multiblock": {
+				"pattern": [
+					[
+						" AAA ",
+						" BFB ",
+						" BFB ",
+						" BFB ",
+						" BFB ",
+						" BFB ",
+						" AAA "
+					],
+					[
+						"AA1AA",
+						"BB BB",
+						"A   A",
+						"A   A",
+						"A   A",
+						"BB BB",
+						"AABAA"
+					],
+					[
+						"A234A",
+						"B   B",
+						"D   D",
+						"D   D",
+						"D   D",
+						"B   B",
+						"ABXBA"
+					],
+					[
+						"AAAAA",
+						"BBBBB",
+						"ADDDA",
+						"ADDDA",
+						"ADDDA",
+						"BBBBB",
+						"AAAAA"
+					],
+					[
+						"A   A",
+						"     ",
+						"     ",
+						"  0  ",
+						"     ",
+						"     ",
+						"A   A"
+					]
+				],
+				"mapping": {
+					"0": "minecraft:air",
+					"X": "gtceu:moon_dust_harvester[facing=east]",
+					"A": "tfg:casings/machine_casing_iron_desh",
+					"B": "gtceu:nonconducting_casing",
+					"D": "tfg:casings/machine_casing_vacuum_engine_intake",
+					"F": "gtceu:cupronickel_coil_block",
+					"1": "gtceu:maintenance_hatch[facing=west]",
+					"2": "gtceu:hv_energy_input_hatch[facing=west]",
+					"3": "gtceu:ulv_input_bus[facing=west]",
+					"4": "gtceu:ulv_output_bus[facing=west]"
+				}
+			},
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:certus_regolith_dust",
+			"anchor": "regolith",
+			"text": "$(item)Реголітовий пил істинного кварцу$() можна збирати лише в біомі $(l:the_moon/moon_biomes#certus)Поля істинного кварцу$().$(br2)Його можна переробити на $(item)Істинний кварц$() та $(item)Цинк$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:cassiterite_regolith_dust",
+			"text": "$(item)Реголітовий пил каситериту$() можна збирати лише в біомі $(l:the_moon/moon_biomes#stargazers)Світлоквітні зоряні гейзери$().$(br2)Він є джерелом $(item)Олова$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:goethe_regolith_dust",
+			"text": "$(item)Реголітовий пил ґете$() збирають у біомі $(l:the_moon/moon_biomes#thicket)Хорусні хащі$().$(br2)Його можна переробити на $(item)Мідь$() та $(item)Залізо$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:bright_regolith_dust",
+			"text": "$(item)Яскравий пил реголіту$() походить із біому $(l:the_moon/moon_biomes#reef)Місячний риф$().$(br2)Він є джерелом $(item)Алмазів$() та $(item)Золота$()."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "У процесі переробки всі ці $(thing)Реголітові пили$() перетворюються на $(item)Руди з пилу$(). Наразі з них можна отримувати ресурси лише за допомогою центрифугування — для подальшого видобування знадобиться пізньоігрова переробка руд на $(l:venus)Венері$().$(br2)Обов'язково використовуй $(item)Великий хімічний реактор$(), щоб отримати ідеальне прискорення цих рецептів! Якщо ти хочеш налаштувати більш пасивну автоматизацію $(thing)компонентів AE2$() або $(l:logistics/railgun)боєприпасів для рейкотрона$(), ці збирачі реголіту просто незамінні!"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Докладніше",
+			"anchor": "relations",
+			"entries": [
+				"tfg:the_moon/the_moon",
+				"tfg:the_moon/moon_fauna",
+				"tfg:the_moon/moon_crops",
+				"tfg:logistics/railgun",
+				"tfg:logistics/trains"
+			]
+		}
+	]
+}

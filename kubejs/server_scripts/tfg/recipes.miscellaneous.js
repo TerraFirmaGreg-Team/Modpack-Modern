@@ -193,12 +193,8 @@ function registerTFGMiscellaneousRecipes(event) {
 	//#endregion
 
 	// Rotten Voiding Cover
-	event.recipes.gtceu.assembler('tfg:rotten_voiding_cover')
-		.itemInputs('gtceu:item_voiding_cover', '8x tfc:rotten_compost')
-		.itemOutputs('tfg:rotten_voiding_cover')
-		.duration(5*20)
-		.EUt(GTValues.VA[GTValues.LV])
-		.addMaterialInfo(true);
+	event.shapeless('tfg:rotten_voiding_cover', ['gtceu:item_voiding_cover', 'tfc:rotten_compost'])
+		.id('tfg:shapeless/rotten_voiding_cover')
 
 	//#region Struts and Girders
 

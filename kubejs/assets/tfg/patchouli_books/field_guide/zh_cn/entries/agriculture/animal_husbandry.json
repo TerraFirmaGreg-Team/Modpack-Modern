@@ -1,0 +1,225 @@
+{
+    "name": "畜牧业",
+    "category": "tfg:agriculture",
+    "icon": "minecraft:textures/item/egg.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:agriculture/animal_husbandry#intro)牲畜$()$(li)$(bold)$(l:agriculture/animal_husbandry#uses)用途$()$(li2)$(l:agriculture/animal_husbandry#uses_table)用途表$()$(li)$(bold)$(l:agriculture/animal_husbandry#familiarity)亲密度$()$(li)$(bold)$(l:agriculture/animal_husbandry#mammals)哺乳动物$()$(li2)$(l:agriculture/animal_husbandry#wooly_animals)产毛哺乳动物$()$(li2)$(l:agriculture/animal_husbandry#dairy_animals)产奶哺乳动物$()$(li2)$(l:agriculture/animal_husbandry#equines)马科动物$()$(li2)$(l:agriculture/animal_husbandry#camelides)骆驼科动物$()$(li)$(bold)$(l:agriculture/animal_husbandry#oviparous_animals)卵生动物$()$(li)$(bold)$(l:agriculture/animal_husbandry#feeding_trough)饲料槽$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "简介",
+            "text": "$(thing)牲畜$()是玩家可以驯服并一起繁殖的动物。牲畜可以是 $(thing)雄性$() 也可以是 $(thing)雌性$()。有些动物从外观就能分辨性别。例如，公猪长有獠牙。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "uses",
+            "title": "用途",
+            "text": "每只牲畜都有 $(item)用途$() 次数上限——由其“衰老程度”表示——达到上限后就会 $(thing)衰老$()。它们出生时是幼崽，体型更小，无法为玩家提供任何产出。经过一定天数后，会长成 $(thing)成年$() 动物，能够交配、产奶等。在交配或被使用足够次数后，动物就会 $(thing)衰老$()，只有肉还有用处。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/old_cow.png"
+            ],
+            "text": "这只牛太老了，不能繁殖。可以从它灰白的毛色和模糊的眼睛中看出。",
+            "border": true
+        },
+        {
+            "type": "tfg:table",
+            "anchor": "uses_table",
+            "strings": [
+                {
+                    "text": "行为",
+                    "bold": true
+                },
+                {
+                    "text": "用途（雄性）",
+                    "bold": true
+                },
+                {
+                    "text": "用途（雌性）",
+                    "bold": true
+                },
+                {
+                    "text": "备注",
+                    "bold": true
+                },
+                {
+                    "text": "交配",
+                    "bold": true
+                },
+                {
+                    "text": "-5"
+                },
+                {
+                    "text": " "
+                },
+                {
+                    "text": "仅雄性"
+                },
+                {
+                    "text": "产崽",
+                    "bold": true
+                },
+                {
+                    "text": " "
+                },
+                {
+                    "text": "-10"
+                },
+                {
+                    "text": "仅哺乳动物"
+                },
+                {
+                    "text": "产蛋",
+                    "bold": true
+                },
+                {
+                    "text": " "
+                },
+                {
+                    "text": "-1"
+                },
+                {
+                    "text": "与受精相同"
+                },
+                {
+                    "text": "产物",
+                    "bold": true
+                },
+                {
+                    "text": " "
+                },
+                {
+                    "text": "-1"
+                },
+                {
+                    "text": "奶、毛等"
+                }
+            ],
+            "title": "用途表",
+            "legend": [],
+            "columns": 3,
+            "first_column_width": 47,
+            "column_width": 64,
+            "row_height": 20,
+            "left_buffer": 2,
+            "top_buffer": 12,
+            "draw_background": false
+        },
+        {
+            "type": "patchouli:empty",
+            "draw_filler": false
+        },
+        {
+            "type": "patchouli:text",
+            "title": "亲密度",
+            "anchor": "familiarity",
+            "text": "喂食牲畜可以提升 $(thing)亲密度$()。每种动物都有自己爱吃的东西。要喂动物，手持食物 $(item)$(k:key.sneak)$() 并 $(item)$(k:key.use)$()。$(br)大多数牲畜互动都需要亲密度。亲密度会由母方传给后代，但数值会有所降低。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/unfamiliarized_pig.png"
+            ],
+            "text": "按住$(item)$(k:key.sneak)$()并看着牲畜时会在头上显示其$(thing)亲密度$()。",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/no_familiarity_decay_pig.png"
+            ],
+            "text": "如果不喂食，亲密度每天都会减少一点。但如果亲密度高到一定程度（出现一个白色轮廓的心），亲密度就不会因此减少了。",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/familiarity_limit_pig.png"
+            ],
+            "text": "成年牲畜无法达到 100% 的亲密度（出现红色轮廓的心），只有幼年牲畜可能达到 100% 的亲密度。",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "title": "哺乳动物",
+            "anchor": "mammals",
+            "text": "$(thing)哺乳动物$()是会经历 $(thing)妊娠$() 的牲畜。亲密度高于 30%、且当天已被喂过食的成年哺乳动物会交配，前提是它们性别相异且彼此靠近。雌性动物会 $(thing)怀孕$()，并在受精后经过固定天数产下后代。$(br)例如 $(l:the_world/wild_animals#pig)猪$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "产毛哺乳动物",
+            "anchor": "wooly_animals",
+            "text": "$(thing)产毛动物$()是 $(l:agriculture/animal_husbandry#mammals)哺乳动物$()，在成年且对你足够熟悉后可以被 $(thing)剪毛$()。例如 $(l:the_world/wild_animals#sheep)绵羊$()、$(l:the_world/wild_animals#alpaca)羊驼$() 和 $(l:the_world/wild_animals#musk_ox)麝牛$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "产奶哺乳动物",
+            "anchor": "dairy_animals",
+            "text": "$(thing)产奶动物$()是能产出 $(thing)奶$() 的哺乳动物。手持桶点击雌性产奶动物即可获得奶。例如 $(l:the_world/wild_animals#goat)山羊$()、$(l:the_world/wild_animals#cow)牛$() 和 $(l:the_world/wild_animals#yak)牦牛$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "equines",
+            "title": "马科动物",
+            "text": "$(thing)马科动物$()是驯服后可以骑乘的 $(l:agriculture/animal_husbandry#mammals)哺乳动物$()。装备 $(l:agriculture/leather_making)马鞍$() 并达到 15% 亲密度后即可骑乘。$(br)$(l:the_world/wild_animals#mule)骡子$() 和 $(l:the_world/wild_animals#donkey)驴$() 可以携带任意箱子或大桶。如果它驮着大桶，$(item)$(k:key.use)$() 时按住 $(item)$(k:key.sneak)$() 即可取下。手持桶按同样按键，可以放出大桶里的流体。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "camelides",
+            "title": "骆驼",
+            "text": "$(thing)骆驼$()是与 $(l:agriculture/animal_husbandry#mammals)哺乳动物$() 类似的 $(l:agriculture/animal_husbandry#equines)马科动物$()，驯服后同样可以骑乘。装备 $(l:agriculture/leather_making)马鞍$() 并达到 15% 亲密度后即可骑乘。骆驼天生跨步高度很高，还能凭借强力的冲刺跳跃跨过峡谷。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "卵生动物",
+            "anchor": "oviparous_animals",
+            "recipe": "tfc:crafting/nest_box",
+            "text": "$(thing)卵生动物$()不属于 $(l:agriculture/animal_husbandry#mammals)哺乳动物$()，它们通过产 $(thing)蛋$() 来繁殖后代。它们需要 $(thing)巢箱$() 才能下蛋，而且能自己找到巢箱。$(br)例如 $(l:the_world/wild_animals#duck)鸭$()、$(l:the_world/wild_animals#quail)鹌鹑$() 和 $(l:the_world/wild_animals#chicken)鸡$()。"
+        },
+        {
+            "type": "tfg:heat_recipe",
+            "recipe": "tfg:heating/forge_eggs_to_tfc_food_cooked_egg",
+            "text": "$(thing)蛋$()可以煎来吃或煮来吃。雄性卵生动物可以让雌性受精，使其在巢箱中产下的下一枚卵变为受精卵。受精卵的工具提示会显示距离孵化还需多久。$(br2)还可以对卵生动物$(thing)拔毛$()：按$(item)$(k:key.sneak) + $(k:key.use)$()即可拔下羽毛。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "饲料槽",
+            "anchor": "feeding_trough",
+            "item": "tfcgroomer:bismuth_bronze_grooming_station,tfcgroomer:black_bronze_grooming_station,tfcgroomer:bronze_grooming_station,tfcgroomer:copper_grooming_station,tfcgroomer:wrought_iron_grooming_station,tfcgroomer:steel_grooming_station,tfcgroomer:black_steel_grooming_station,tfcgroomer:red_steel_grooming_station,tfcgroomer:blue_steel_grooming_station",
+            "text": "$(thing)饲料槽$()可以在其工具提示注明的范围内自动喂养动物。更高等级的 $(l:craftsmanship/metallurgy)金属$() 能扩大喂养范围。$(br)要添加动物饲料——并可选择开启自动繁殖——用 $(item)$(k:key.use)$() 打开饲料槽界面。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸阅读",
+            "anchor": "relations",
+            "entries": [
+                "tfg:agriculture/growing_crops",
+                "tfg:agriculture/weaving",
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/wild_animals",
+                "tfg:agriculture/leather_making",
+                "tfg:agriculture/weaving"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "priority": true,
+    "extra_recipe_mappings": {
+        "tfc:nest_box": 15,
+        "tfcgroomer:bismuth_bronze_grooming_station": 17,
+        "tfcgroomer:black_bronze_grooming_station": 17,
+        "tfcgroomer:bronze_grooming_station": 17,
+        "tfcgroomer:copper_grooming_station": 17,
+        "tfcgroomer:wrought_iron_grooming_station": 17,
+        "tfcgroomer:steel_grooming_station": 17,
+        "tfcgroomer:black_steel_grooming_station": 17,
+        "tfcgroomer:red_steel_grooming_station": 17,
+        "tfcgroomer:blue_steel_grooming_station": 17
+    }
+}

@@ -1,5 +1,32 @@
 "use strict";
 
+/**
+ * @type {Item[]}
+ */
+const domumBricks = [
+    'domum_ornamentum:brown_bricks',
+    'domum_ornamentum:beige_bricks',
+    'domum_ornamentum:cream_bricks',
+    'domum_ornamentum:roan_bricks',
+    'domum_ornamentum:sand_bricks',
+    'domum_ornamentum:brown_stone_bricks',
+    'domum_ornamentum:beige_stone_bricks',
+    'domum_ornamentum:cream_stone_bricks',
+    'domum_ornamentum:sand_stone_bricks',
+    'domum_ornamentum:roan_stone_bricks'
+];
+
+/**
+ * @type {Item[]}
+ */
+const domumCobble = [
+    'domum_ornamentum:blue_cobblestone_extra',
+    'domum_ornamentum:green_cobblestone_extra',
+    'domum_ornamentum:mossy_cobblestone_extra',
+    'domum_ornamentum:purple_cobblestone_extra',
+    'domum_ornamentum:cobblestone_extra'
+];
+
 /** @param {TagEvent.Item} event */
 function registerDomumOrnamentumItemTags(event) {
     global.DOMUM_ORNAMENTUM_FLOATING_CARPETS.forEach((carpet) => {
@@ -8,6 +35,13 @@ function registerDomumOrnamentumItemTags(event) {
 
     event.add('minecraft:fences', 'domum_ornamentum:vanilla_fence_compat')
     event.add('minecraft:fence_gates', 'domum_ornamentum:vanilla_fence_gate_compat')
+
+    global.MINECRAFT_DYE_NAMES.forEach((color) => {
+        event.add('forge:stone_bricks', `domum_ornamentum:${color}_brick_extra`);
+    });
+
+    event.add('forge:stone_bricks', domumBricks);
+    event.add('forge:cobblestone', domumCobble);
 }
 
 /** @param {TagEvent.Block} event */
@@ -222,4 +256,11 @@ function registerDomumOrnamentumBlockTags(event) {
     event.remove("domum_ornamentum:trapdoors_materials", "#forge:storage_blocks");
     event.remove("domum_ornamentum:framed_light_center", "#forge:storage_blocks");
     //#endregion
+
+    global.MINECRAFT_DYE_NAMES.forEach((color) => {
+        event.add('forge:stone_bricks', `domum_ornamentum:${color}_brick_extra`);
+    });
+    
+    event.add('forge:stone_bricks', domumBricks);
+    event.add('forge:cobblestone', domumCobble);
 }

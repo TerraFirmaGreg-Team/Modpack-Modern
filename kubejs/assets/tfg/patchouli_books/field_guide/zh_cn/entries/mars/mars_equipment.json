@@ -1,0 +1,94 @@
+{
+	"name": "火星装备",
+	"category": "tfg:mars",
+	"icon": "tfg:certus_mechanism",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(bold)近战武器$()$(li2)$(l:mars/mars_equipment#nano_saber)纳米剑$()$(li)$(bold)$(l:mars/mars_equipment#ev_guns)枪械$()$(li2)$(l:mars/mars_equipment#cannon)肩扛式野战炮$()$(li2)$(l:mars/mars_equipment#rifles)先进步枪$()$(li2)$(l:mars/mars_equipment#grenades)榴弹发射器$()$(li2)$(l:mars/mars_equipment#shotguns)先进霰弹枪$()$(li2)$(l:mars/mars_equipment#pistols)先进手枪与冲锋枪$()$(li)$(bold)护甲$()$(li2)$(l:mars/mars_equipment#space_suit)钨钢航天服$()$(li)$(bold)盾牌$()$(li2)$(l:mars/mars_equipment#reinforced_shield)加固盾牌$()$(li2)$(l:mars/mars_equipment#corrupted_shield)腐化之盾$()$(li2)$(l:mars/mars_equipment#ricoshield)反击之盾$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:nano_saber",
+			"anchor": "nano_saber",
+			"text": "$(item)纳米剑$()是一件强力近战武器，进入$(5)EV$()后期即可解锁。只需$(item)$(k:key.sneak) + $(k:key.use)$()即可启动它的$(thing)嗡嗡嗡模式$()。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:certus_mechanism",
+			"anchor": "ev_guns",
+			"text": "$(item)赛特斯机构$()用于制作$(5)EV$()级的枪械。这类武器有很多都要使用消耗赛特斯石英的弹药。月球上有着巨大的赛特斯石英矿脉，你也可以借助$(l:the_moon/moon_biomes#harvester)月球风化土$()建立无限供应。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tacz:modern_kinetic_gun{GunId:\"create_armorer:cannon_40mm_salamander\"},tacz:ammo{AmmoId:\"create_armorer:40mmhe\"}",
+			"title": "肩扛式野战炮",
+			"anchor": "cannon",
+			"text": "想扛着坦克炮到处走吗？这把枪又慢又沉，但威力惊人。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tacz:ammo{AmmoId:\"applied_armorer:hard_core_quartz_bullet\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:moritz_rifle_ar77\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:moritz_sniper_semi_k30\"}",
+			"title": "高级步枪",
+			"anchor": "rifles",
+			"text": "如果你不知道该选什么，这些是性能均衡的好选择。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tacz:ammo{AmmoId:\"applied_armorer:fluix_infused_grenade\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:moritz_gernade_gl3\"}",
+			"title": "榴弹发射器",
+			"anchor": "grenades",
+			"text": "如果你常常要同时对付大群敌人，这把枪就是为你准备的。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tacz:ammo{AmmoId:\"applied_armorer:cluster_quartz_bullet\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:moritz_shotgun_sg914\"}",
+			"title": "高级霰弹枪",
+			"anchor": "shotguns",
+			"text": "轰杀近距离目标的利器。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tacz:ammo{AmmoId:\"applied_armorer:etched_quartz_bullet\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:niklas_smg_freedom\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:niklas_pistol_double_win_win\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:niklas_pistol_semi_pride\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:niklas_pistol_semi_right\"}",
+			"title": "高级手枪与冲锋枪",
+			"anchor": "pistols",
+			"text": "想要射速快？这些枪再合适不过。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "ad_astra:netherite_space_helmet,ad_astra:netherite_space_suit,ad_astra:netherite_space_pants,ad_astra:netherite_space_boots",
+			"title": "钨钢航天服",
+			"anchor": "space_suit",
+			"text": "有了这件新航天服，无论是太空中$(b)最冷$()还是$(c)最热$()的环境都难不倒你！踏上$(6)金星$()和$(5)水星$()时，你必须穿上它，否则会立刻自燃。$(br)作为附赠，它还提供额外的护甲和更大的储气容量！"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shaped/reinforced_shield_from_shield",
+			"anchor": "reinforced_shield",
+			"text": "$(item)加固盾牌$()会把伤害反噬给攻击者，就像原版 Minecraft 的荆棘附魔一样。它的制作材料可以从$(l:mars/mars_fauna#cruncher)贪咀兽$()和$(l:mars/mars_fauna#eater)噬颚兽$()身上获取。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shaped/corrupted_shield",
+			"anchor": "corrupted_shield",
+			"text": "$(item)腐化之盾$()会随机传送攻击者，这有助于让他们远离你……但也可能把他们传送到你身后。你可以从火星地表下的$(l:mars/mars_fauna#endermen)洞穴末影人$()那里获取牙齿。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shaped/ricoshield",
+			"anchor": "ricoshield",
+			"text": "$(item)反击之盾$()会先吸收一定量的伤害，然后释放冲击波，波及周围的其他目标。$(item)动力核心$()是火星洞穴中$(l:mars/mars_fauna#quake)敌对傀儡$()的稀有掉落物。"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "延伸阅读",
+			"anchor": "relations",
+			"entries": [
+				"tfg:mars/mars",
+				"tfg:mars/mars_fauna",
+				"tfg:logistics/exploration_gear"
+			]
+		}
+	]
+}

@@ -215,14 +215,4 @@ function registerTFGElectronicComponentsRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:neon', 1000))
 		.duration(700)
 		.EUt(2720)
-
-	event.shaped('tfg:steel_drill_head', [
-		'ABA',
-		'ABA',
-		'BCB'
-	], {
-		A: '#forge:plates/wrought_iron',
-		B: '#forge:plates/steel',
-		C: '#forge:tools/hammers'
-	}).id('tfg:shaped/steel_drill_head')
 }

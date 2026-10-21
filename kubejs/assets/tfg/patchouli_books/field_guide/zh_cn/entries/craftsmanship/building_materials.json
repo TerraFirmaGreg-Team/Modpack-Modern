@@ -1,0 +1,325 @@
+{
+    "name": "建筑材料",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:wattle/white",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:craftsmanship/building_materials#primitive_materials)原始材料$()$(li2)$(l:craftsmanship/building_materials#thatch)干草块$()$(li2)$(l:craftsmanship/building_materials#mud_bricks)泥砖$()$(li2)$(l:craftsmanship/building_materials#wattle_and_daub)板条与涂料$()$(li)$(bold)$(l:craftsmanship/building_materials#advanced_materials)进阶材料$()$(li2)$(l:craftsmanship/building_materials#alabaster)雪花石膏$()$(li2)$(l:craftsmanship/building_materials#bricks_and_mortar)砖块与砂浆$()$(li)$(bold)$(l:craftsmanship/building_materials#block_interactions)方块互动$()$(li)$(bold)$(l:craftsmanship/building_materials#roof_building)屋顶建造$()$(li)$(bold)$(l:craftsmanship/building_materials#modern)现代材料$()",
+            "title": "目录",
+            "anchor": "index"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "primitive_materials",
+            "title": "原始材料",
+            "text": "在游戏前期，由于许多坚固的建材都需要金属工具才能获取，建造房屋是比较困难的。不过仍有几种建材只用石制工具就能获得。$(br2)等有了金属工具之后，就能获取更多 $(l:craftsmanship/building_materials#advanced_materials)高级的建筑材料$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "thatch",
+            "text": "只需一把 $(l:craftsmanship/sticks_and_stones)石刀$()，你就能通过破坏植物类方块获得 $(thing)干草$()。它可以用来合成一种非常简单的建材：$(thing)干草块$()。干草块是一种不受重力影响的轻质方块，但玩家和其他实体可以直接穿过它！需要的话，它也可以反向合成为 $(thing)干草$()。",
+            "title": "茅草"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "mud_bricks",
+            "recipe": "tfc:crafting/soil/loam_drying_bricks",
+            "title": "泥砖",
+            "text": "$(thing)泥$()可以在地面上、一些水体下方、低海拔的沼泽环境中找到，也可以用 $(item)$(k:key.drop)$()把泥土丢进水里直接制作。加一点 $(thing)干草$()，就能把它合成 $()湿泥砖$()。"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "它们可以放在干燥的地方，一天后它们会硬化成$(thing)壤泥砖$()。",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:drying_bricks/loam[count=4,dried=false]",
+                        "Y": "tfc:grass/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:drying_bricks/loam[count=4,dried=true]",
+                        "Y": "tfc:grass/loam"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/soil/loam_mud_bricks",
+            "title": "泥砖块",
+            "text": "这些晾干的泥砖可以进一步合成 $(thing)泥砖块$()。如有需要，还能做成 $(thing)楼梯$()、$(thing)台阶$()或 $(thing)墙$()。泥砖块可以用锹挖掘。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "wattle_and_daub",
+            "text": "$(thing)板条$()和 $(thing)涂料$()是一种用途广泛的结构和装饰方块。$(br)$(thing)板条$()可以合成并放置，但它可以被破坏，玩家和生物也能直接穿过。用 $(thing)涂料$()加固它，就能让它变得坚实。$(br)要让 $(thing)板条$()变得坚实，首先要进行编织，也就是往结构上添加木棍。",
+            "title": "板条与涂料"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/wattle_weave.png"
+            ],
+            "text": "手持至少四根木棍来$(thing)编织$()板条。",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "可以在板条方块的顶面、底面、和两条对角线添加额外的木棍来添加装饰花纹。手持$(thing)木棍$()并对着板条方块按$(item)$(k:key.use)$()就可以添加一根木棍了。要装饰不同的部位，只需瞄准板条不同的面即可。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/wattle_add_stick.png"
+            ],
+            "text": "在板条上添加木棍。",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/wattle_add_daub.png"
+            ],
+            "text": "对准$(thing)编织加固过的板条$()使用$(thing)涂料$()就能将其转变为实心方块。",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/wattle_stained.png"
+            ],
+            "text": "之后可以对它使用 $(thing)染料$()来进行 $(thing)染色$()。",
+            "border": true
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "板条与涂料的施工过程。",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "W"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "W": "tfc:wattle"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "W"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "W": "tfc:wattle[woven=true]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "W"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "W": "tfc:wattle[woven=true,left=true]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "W"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "W": "tfc:wattle[woven=true,left=true,right=true]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "W"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "W": "tfc:wattle[woven=true,left=true,right=true,top=true]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "W"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "W": "tfc:wattle[woven=true,left=true,right=true,top=true,bottom=true]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "W"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "W": "tfc:wattle/unstained[left=true,right=true,top=true,bottom=true]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "W"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "W": "tfc:wattle/white[left=true,right=true,top=true,bottom=true]"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "advanced_materials",
+            "title": "高级建筑材料",
+            "text": "除了石器时代的 $(l:craftsmanship/building_materials#primitive_materials)原始材料$()，金属工具可以帮你生产更多的高级建筑材料。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:alabaster_brick,tfc:alabaster/raw,tfc:alabaster/bricks,tfc:alabaster/polished",
+            "anchor": "alabaster",
+            "text": "雪花石膏是一种用 $(thing)石膏$()制成的建材。可以直接用石膏合成雪花石膏，但更高效的做法是把一些石膏和 100 mB $(thing)石灰水$()一起在 $(l:craftsmanship/barrels#limewater)大桶$()中密封。",
+            "title": "雪花石膏"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:tfc:colored_raw_alabaster,tag:tfc:colored_bricks_alabaster,tag:tfc:colored_polished_alabaster",
+            "anchor": "alabaster_decor",
+            "text": "雪花石膏可以 $(thing)染色$()：把它密封在装有染料的 $(l:craftsmanship/barrels)大桶$()里，就能染成任意颜色。未加工的雪花石膏块还能被 $(l:craftsmanship/chisel)凿$()成 $(thing)抛光雪花石膏$()（使用 $(thing)平滑$()凿削模式），或者合成楼梯、台阶和墙。",
+            "title": "装饰用雪花石膏"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "bricks_and_mortar",
+            "item": "tag:forge:stone_bricks",
+            "text": "将一些小石子与$(l:craftsmanship/chisel)凿子$()在合成栏中合成就可以得到这种岩石的$(thing)砖$()。将砖与$(thing)砂浆$()合成就能做成坚固的建筑方块。$(br2)把 $(thing)沙子$()泡在装有 $(l:craftsmanship/barrels#limewater)石灰水$()的大桶里就能制作砂浆。",
+            "title": "石砖和砂浆"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "你还可以制作其他的石头装饰方块，例如$(thing)裂纹砖$()和$(thing)雕纹砖$()。将圆石或石砖方块放在水下的其他苔石旁，苔藓就会扩散，将其转换为$(thing)苔石$()或苔石砖。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "block_interactions",
+            "title": "方块互动",
+            "text": "游戏内有许多互动操作可以让建造更省事：$(li)对方块 $(item)$(k:key.sneak)-$(k:key.use)$()使用 $(l:agriculture/composting#green_compost)绿色物品$()，可让方块长出苔藓。$(li)对着石砖 $(item)$(k:key.sneak)-$(k:key.use)$()使用 $(thing)锤子$()，可使其开裂。$(li)对着石砖 $(item)$(k:key.sneak)-$(k:key.use)$()使用 $(thing)砂纸$()，可将其打磨平滑。$(br)所有互动都可以在 $(emi) 的方块修改标签页中查看。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "roof_building",
+            "title": "屋顶建造",
+            "text": "用 $(bold)Roads and Roofs$()模组建造屋顶要从框架开始。$(thing)屋顶框架方块$()可以用木材和木棍合成，还能制成楼梯和台阶变体。这些方块可以用来勾出屋顶的形状，是所有屋顶的起点。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "屋顶框架就位后，对它 $(item)$(k:key.use)$()任意一种 $(t:#rnr:shingles)$(6)屋顶材料$()，即可生成对应的屋顶。屋顶类型包括干草块（往屋顶框架上添加干草），还有陶瓦瓦片、木瓦等等。$(br2)屋顶是让你的机器保持干燥的必需品！想想那些可怜的机器……"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "给屋顶铺干草",
+            "images": [
+                "rnr:textures/gui/book/thatching.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "modern",
+            "title": "现代材料",
+            "text": "想要更现代一点的东西？$(br)$(li)$(thing)GregTech$()有一些混凝土方块和金属立柱，它们也带有 $(l:logistics/roads)移动速度加成$()。它还有大量彩色灯具和金属板方块。$(li)$(thing)Create Deco$()提供了一些金属栈道、窗户、金属板、灯具以及多种颜色的砖块。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(item)梁$()、$(item)支柱$()和 $(item)桁架$()非常适合做工业支撑。$(li)注重安全？$(thing)GregTech$()、$(thing)Create Deco$()和 $(thing)Modern Markings$()都有各种警示标志和装饰。$(li)$(thing)Ad Astra$()还有更多未来风格的方块，比如 3x3 门、更多光源以及其他金属方块。$(li)$(thing)Create: Steam 'n' Rails$()提供了 $(item)机车铁块$()，有大量彩色金属方块可供选择。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸阅读",
+            "anchor": "relations",
+            "entries": [
+                "tfg:agriculture/aqueducts",
+                "tfg:craftsmanship/barrels",
+                "tfg:craftsmanship/chisel",
+                "tfg:the_world/geology",
+                "tfg:logistics/roads",
+                "tfg:craftsmanship/building_tools"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 20,
+    "extra_recipe_mappings": {
+        "tfc:thatch": 2,
+        "tag:tfc:mud_bricks": 5,
+        "tfc:wattle": 6,
+        "tfc:daub": 6,
+        "tfc:alabaster_brick": 14,
+        "tfc:alabaster/raw": 14,
+        "tfc:alabaster/bricks": 14,
+        "tfc:alabaster/polished": 14,
+        "tag:tfc:colored_raw_alabaster": 15,
+        "tag:tfc:colored_bricks_alabaster": 15,
+        "tag:tfc:colored_polished_alabaster": 15,
+        "tag:rnr:roof_blocks": 19,
+        "tag:rnr:shingles": 19
+    }
+}

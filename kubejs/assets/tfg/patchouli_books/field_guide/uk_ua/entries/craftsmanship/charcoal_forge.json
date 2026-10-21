@@ -1,0 +1,134 @@
+{
+    "name": "Горн і міхи",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:textures/block/molten_lit.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "charcoal_forge",
+            "text": "$(thing)Вугільний горн$() — це пристрій, який використовується для $(l:game_mechanics/heating)нагрівання$() та плавлення таких предметів, як метали, кераміка й цегла.$(br)Горн необхідний для роботи $(l:craftsmanship/crucible)тигля$().$(br)Він створюється з 5 блоків $(thing)каменю$() — наприклад, кругляку, необробленого каменю або цегли — що оточують $(l:craftsmanship/charcoal_pit#charcoal_pile)купу деревного вугілля$() заввишки 7 або 8 шарів, яку потім потрібно підпалити."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        " B ",
+                        "C0C",
+                        " B "
+                    ],
+                    [
+                        "   ",
+                        " R ",
+                        "   "
+                    ]
+                ],
+                "mapping": {
+                    "0": "tfc:charcoal_pile[layers=7]",
+                    "C": "tfc:rock/cobble/gabbro",
+                    "R": "tfc:rock/raw/gabbro",
+                    "B": "tfc:rock/bricks/gabbro"
+                }
+            },
+            "name": "Ковальське горно",
+            "text": "Повністю готова конструкція горна, яку можна підпалити.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Для роботи горну потрібен димар. Блок безпосередньо над горном має бути повітрям або $(l:craftsmanship/crucible)тиглем$(). Крім того, або блок безпосередньо над горном, або один із восьми сусідніх блоків $(italic)має бачити небо!$()$(br2)$(l:craftsmanship/charcoal_forge#bellows)Міхи$() можна встановити на один блок вище та поруч із горном, щоб підвищити максимальну температуру, якої він може досягти. Але це не є обов’язковим."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "  G  ",
+                        "  G  ",
+                        "GGCGG",
+                        "  B  ",
+                        "  G  "
+                    ],
+                    [
+                        "XYXYX",
+                        "YXYXY",
+                        "XY0YX",
+                        "YXYXY",
+                        "XYXYX"
+                    ]
+                ],
+                "mapping": {
+                    "0": "tfc:charcoal_forge[heat_level=7]",
+                    "X": "tfc:rock/smooth/gabbro",
+                    "Y": "tfc:rock/smooth/dacite",
+                    "G": "minecraft:light_blue_stained_glass",
+                    "C": "tfc:crucible",
+                    "B": "tfc:bellows[facing=west]"
+                }
+            },
+            "name": "Схема димаря",
+            "text": "Будь-який із синіх блоків скла має мати прямий доступ до неба та доступ до горна, щоб вважатися дійсним димарем.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/gui/charcoal_forge.png"
+            ],
+            "title": "Інтерфейс горна.",
+            "text": "$(bold)ПОРАДА:$() Ти можеш безпосередньо кидати паливо, як-от деревне вугілля, на горн за допомогою $(item)$(k:key.drop)$(), щоб знову заправити його.",
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "П’ять слотів унизу горна використовуються для палива. Поки горн працює, він періодично витрачає $(t:#tfc:forge_fuels)$(6)паливо$(), яким можуть бути $(thing)деревне вугілля, вугілля, кокс або торф’яні брикети$(). П’ять верхніх слотів нагріватимуть предмети до температури, зазначеної на індикаторі ліворуч. Слоти праворуч призначені для ємностей, у яких можна зберігати рідкий метал, як-от $(l:craftsmanship/pottery#vessel)глечики$() та $(l:craftsmanship/pottery#mold)форми$(). Предмети, які плавляться в горні, заповнюватимуть ці ємності. В іншому разі розплавлена рідина буде $(bold)втрачена$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:bellows",
+            "title": "Міхи",
+            "anchor": "bellows",
+            "text": "$(thing)Міхи$() можна використовувати для підвищення температури пристрою завдяки кращому подачі кисню. Однак через горіння за вищої температури вони також швидше витрачатимуть паливо. Міхи можуть подавати повітря в блок безпосередньо перед ними та в блок на один рівень нижче. Це, наприклад, дає змогу подавати повітря в $(l:craftsmanship/blast_furnace)доменну піч$() або $(l:craftsmanship/charcoal_forge#charcoal_forge)вугільний горн$()."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Щоб використовувати міхи, просто встанови їх так, щоб вони були спрямовані на потрібний нагрівальний пристрій, і натисни $(item)$(k:key.use)$. Міхи подаватимуть повітря в пристрій, на короткий час підвищуючи максимальну температуру. Міхи можна автоматизувати, подаючи на їхню задню частину менш як 16 об/хв $(thing)механічного обертання$(), наприклад, за допомогою $(item)вала$(). Це вимкне ручне використання. Розглянь можливість використання $(item)муфти$() для ввімкнення або вимкнення механічної передачі."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Один помах міхів подаватиме повітря до пристрою протягом 200 таків. Однак більшість пристроїв дають змогу накопичити до 600 таків насичення киснем одночасно.$(br2)Витрата палива пристроями подвоюється незалежно від того, скільки часу подачі повітря залишилося, тож надмірне використання міхів не створює додаткових втрат."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "automation",
+            "title": "Поради з автоматизації",
+            "text": "$(li)Кузня автоматично збирає будь-яке паливо, яке падає поруч із його боковими сторонами. (Натисни $(item)$(k:key.drop)$() або використай $(item)Викидач$(), $(item)Роздатчик$() чи $(item)Лійку$().)$(li)$(item)Механічна рука$() також може підтримувати запас палива в кузні.$(li)$(item)Депо$() вважається теплоізоляцією кузні, якщо ти хочеш автоматизувати $(item)Чашу$()."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Шукаєш щось трохи більш вражаюче або хочеш перенести свою кузню в приміщення? Тоді зверни увагу на  $(l:beneath/beneath_mechanics#hellforge)Пекельню кузню$()!"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Докладніше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:agriculture/leather_making",
+                "tfg:craftsmanship/pit_kiln",
+                "tfg:craftsmanship/pottery",
+                "tfg:craftsmanship/crucible",
+                "tfg:craftsmanship/blast_furnace",
+                "tfg:craftsmanship/bloomery",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/glassworking",
+                "tfg:craftsmanship/charcoal_pit",
+                "tfg:game_mechanics/heating"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 6,
+    "extra_recipe_mappings": {
+        "tfc:bellows": 7
+    }
+}

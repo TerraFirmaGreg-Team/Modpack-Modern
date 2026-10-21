@@ -1,0 +1,200 @@
+{
+    "name": "地球地质学",
+    "category": "tfg:the_world",
+    "icon": "tfc:rock/loose/gabbro",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "text": "$(tfg)的世界划分为大型大陆——宽数公里、被海洋分隔的陆地。在大陆上，你会发现山脉、河流以及许多其他地貌。本章将向你介绍地球地质，以及岩层是如何确定的。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:the_world/geology#rocks)岩层$()$(li)$(bold)$(l:the_world/geology#metamorphism)变质作用$()$(li)$(bold)$(l:the_world/geology#ocean_floors)大洋底$()$(li)$(bold)$(l:the_world/geology#uplift_regions)隆起现象$()$(li)$(bold)$(l:the_world/geology#rock_devisions)岩石大类$()$(li2)$(l:the_world/geology#sedimentary)沉积岩$()$(li2)$(l:the_world/geology#metamorphic)变质岩$()$(li2)$(l:the_world/geology#igneous_extrusive)喷出岩$()$(li2)$(l:the_world/geology#igneous_intrusive)侵入岩$()$(li)$(bold)$(l:the_world/geology#rock_classifiers)岩石类别$()$(li2)$(l:the_world/geology#sedimentary_carbonate)沉积岩-碳酸盐岩$()$(li2)$(l:the_world/geology#sedimentary_clastic)沉积岩-碎屑岩$()$(li2)$(l:the_world/geology#sedimentary_organic)沉积岩-有机质$()$(li2)$(l:the_world/geology#igneous_felsic)火成岩-长英质$()$(li2)$(l:the_world/geology#igneous_intermediate)火成岩-中性$()$(li2)$(l:the_world/geology#igneous_mafic)火成岩-镁铁质$()$(li2)$(l:the_world/geology#igneous_ultramafic)火成岩-超镁铁质$()"
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/maps/terrain_map.png"
+            ],
+            "text": "一张65.5km²的地图，展示典型的大陆形态，以及干流河流及其支流。",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/maps/biomes_map.png"
+            ],
+            "text": "一张65.5km²的地图，展示基于当地$(l:the_world/climate#climate)气候$()的平均生物群系分布。",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rocks",
+            "text": "世界的地下由不同类型的$(thing)岩石$()构成。岩石区域的跨度可达一公里以上，而且你的脚下通常随时都有两到三层不同的岩层。不同的矿石分布于不同的岩石类型中，因此找到特定的岩石类型对寻找$(thing)矿石$()等资源十分重要——矿石往往只会出现在特定的岩石类型中。",
+            "title": "岩层"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "大陆的顶层岩石通常是喷出岩或$(l:the_world/geology#sedimentary)沉积岩$()。在沉积岩的下方，有极大概率会是上层岩石的$(l:the_world/geology#metamorphic)变质$()版本。$(br2)例如，$(thing)大理岩$()（一种变质岩）很可能位于$(thing)石灰岩$()或$(thing)白垩岩$()的下方。高变质程度的变质岩通常位于其他变质岩或火成岩的深处。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/biomes/rock_layers.png"
+            ],
+            "text": "一幅群峦传说世界的参考用纵截面图。",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "metamorphism",
+            "text": "$(li)$(thing)板岩$()形成于$(thing)页岩$()、$(thing)泥岩$()和$(thing)砾岩$()之下。$(li)$(thing)大理岩$()形成于$(thing)石灰岩$()、$(thing)白云岩$()和$(thing)白垩岩$()之下。$(li)$(thing)石英岩$()形成于$(thing)硅质岩$()之下。$(li)$(thing)千枚岩$()形成于$(thing)板岩$()之下。$(li)$(thing)片岩$()和$(thing)片麻岩$()形成于$(thing)千枚岩$()或其他侵入岩之下。",
+            "title": "变质作用"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ocean_floors",
+            "text": "群峦传说的大洋底由$(l:the_world/geology#igneous_extrusive)喷出岩$()组成的——这些岩石是由迅速冷却的岩浆形成的。在喷出岩的下方，很可能存在同一$(item)构成元素$()的$(l:the_world/geology)侵入岩$()。$(br2)例如，在$(thing)玄武岩$()（一种镁铁质的喷出岩）之下，很可能是$(thing)辉长岩$()（一种镁铁质的侵入岩）。",
+            "title": "大洋底"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "uplift_regions",
+            "text": "最后，在山地区域你还可能看到$(thing)隆起$()，即变质岩或侵入岩直接出露于地表。隆起岩石位于其他大陆沉积岩或更高级变质岩的上方。$(br2)此外，$(l:https://en.wikipedia.org/wiki/Dike_%28geology%29)岩脉$()——由侵入岩形成的小型垂直岩片——也可能零星分布在世界各处。",
+            "title": "隆起现象"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rock_devisions",
+            "title": "岩石大类",
+            "text": "$(tfg_short)中的岩石通常分为四大类：$(l:the_world/geology#sedimentary)沉积岩$()、$(l:the_world/geology#metamorphic)变质岩$()、$(l:the_world/geology#igneous_extrusive)喷出岩$()和$(l:the_world/geology#igneous_intrusive)侵入岩$()。这些类别决定了岩石的生成位置，以及这种岩石中可能生成哪些矿石。"
+        },
+        {
+            "title": "沉积岩",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:raw_stone/sedimentary"
+            },
+            "anchor": "sedimentary",
+            "text": "$(l:https://en.wikipedia.org/wiki/Sedimentary_rock)沉积岩$()由矿物或有机颗粒堆积、沉积而成，通常出现在大陆地区的顶层岩层中。"
+        },
+        {
+            "title": "变质岩",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:raw_stone/metamorphic"
+            },
+            "anchor": "metamorphic",
+            "text": "$(l:https://en.wikipedia.org/wiki/Metamorphic_rock)变质岩$()由一种叫做变质作用的过程形成，通常位于相应的沉积岩或火成岩之下，或出现在隆起区域中。"
+        },
+        {
+            "title": "喷出岩",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:raw_stone/igneous_extrusive"
+            },
+            "anchor": "igneous_extrusive",
+            "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Extrusive)喷出岩$()由岩浆在地表冷却形成，通常出现在大陆地区的顶层岩层或大洋底部。"
+        },
+        {
+            "title": "侵入岩",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:raw_stone/igneous_intrusive"
+            },
+            "anchor": "igneous_intrusive",
+            "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Intrusive)侵入岩$()由岩浆在地壳之下冷却形成，通常位于地下深处，偶尔出现在岩脉或隆起区域中。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rock_classifiers",
+            "text": "除了$(l:the_world/geology#rock_devisions)岩石大类$()之外，岩石还会按其化学成分进一步分类。",
+            "title": "岩石类别"
+        },
+        {
+            "title": "沉积岩-碳酸盐岩",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:stone_composition/raw/sedimentary_carbonate"
+            },
+            "anchor": "sedimentary_carbonate",
+            "text": "$(l:https://en.wikipedia.org/wiki/Carbonate_rock)沉积岩-碳酸盐岩$()主要由方解石等碳酸盐矿物组成。"
+        },
+        {
+            "title": "沉积岩-碎屑岩",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:stone_composition/raw/sedimentary_clastic"
+            },
+            "anchor": "sedimentary_clastic",
+            "text": "$(l:https://en.wikipedia.org/wiki/Clastic_rock)沉积岩-碎屑岩$()由已有矿物或岩石的碎块（碎屑）组成。"
+        },
+        {
+            "title": "沉积岩-有机质",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:stone_composition/raw/sedimentary_organic"
+            },
+            "anchor": "sedimentary_organic",
+            "text": "$(l:https://en.wikipedia.org/wiki/Organic-rich_sedimentary_rocks)沉积岩-有机质$()由贝壳或细菌等有机物分解或石化而形成。"
+        },
+        {
+            "title": "火成岩-长英质",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:stone_composition/raw/igneous_felsic"
+            },
+            "anchor": "igneous_felsic",
+            "text": "$(l:https://en.wikipedia.org/wiki/Felsic)火成岩-长英质$()岩石富含形成长石和石英的元素。一般来说，岩石中长英质矿物的含量必须超过75%才能被归类为$(thing)长英质$()。"
+        },
+        {
+            "title": "火成岩-中性",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:stone_composition/raw/igneous_intermediate"
+            },
+            "anchor": "igneous_intermediate",
+            "text": "$(l:https://en.wikipedia.org/wiki/Intermediate_composition)火成岩-中性$()岩石含有51.5 - 63.0 wt%的SiO₂，成分介于$(l:the_world/geology#igneous_felsic)长英质$()和$(l:the_world/geology#igneous_mafic)镁铁质$()之间。"
+        },
+        {
+            "title": "火成岩-镁铁质",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:stone_composition/raw/igneous_mafic"
+            },
+            "anchor": "igneous_mafic",
+            "text": "$(l:https://en.wikipedia.org/wiki/Mafic)火成岩-镁铁质$()岩石富含镁矿物和铁矿物。"
+        },
+        {
+            "title": "火成岩-超镁铁质",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:stone_composition/raw/igneous_ultramafic"
+            },
+            "anchor": "igneous_ultramafic",
+            "text": "$(l:https://en.wikipedia.org/wiki/Mafic)火成岩-超镁铁质$()岩石的二氧化硅含量极低。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸阅读",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_world/climate",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:game_mechanics/mining"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 0
+}

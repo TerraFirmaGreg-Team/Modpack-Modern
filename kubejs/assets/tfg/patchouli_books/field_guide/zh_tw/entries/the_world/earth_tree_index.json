@@ -1,0 +1,253 @@
+{
+	"name": "地球樹木",
+	"category": "tfg:the_world",
+	"icon": "tfc:textures/item/wood/log/douglas_fir.png",
+	"pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:the_world/earth_tree_index#acacia)相思木、阿拉伯膠樹$()$(li)$(bold)$(l:the_world/earth_tree_index#ash)梣木$()$(li)$(bold)$(l:the_world/earth_tree_index#aspen)白楊木、楊樹$()$(li)$(bold)$(l:the_world/earth_tree_index#baobob)猴麵包樹$()$(li)$(bold)$(l:the_world/earth_tree_index#birch)樺木$()$(li)$(bold)$(l:the_world/earth_tree_index#blackwood)黑木$()$(li)$(bold)$(l:the_world/earth_tree_index#cedar)雪松$()$(li)$(bold)$(l:the_world/earth_tree_index#chestnut)栗木$()$(li)$(bold)$(l:the_world/earth_tree_index#cypress)柏木、紅檜$()$(li)$(bold)$(l:the_world/earth_tree_index#eucalyptus)尤加利$()$(li)$(bold)$(l:the_world/earth_tree_index#fig)無花果、印度橡膠樹$()$(li)$(bold)$(l:the_world/earth_tree_index#fir)冷杉$()$(li)$(bold)$(l:the_world/earth_tree_index#hevea)橡膠木$()$(li)$(bold)$(l:the_world/earth_tree_index#hickory)山胡桃木$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:the_world/earth_tree_index#ipe)重蟻木$()$(li)$(bold)$(l:the_world/earth_tree_index#ironwood)鐵木$()$(li)$(bold)$(l:the_world/earth_tree_index#kapok)木棉$()$(li)$(bold)$(l:the_world/earth_tree_index#mahogany)桃花心木$()$(li)$(bold)$(l:the_world/earth_tree_index#mangrove)紅樹$()$(li)$(bold)$(l:the_world/earth_tree_index#maple)楓木$()$(li)$(bold)$(l:the_world/earth_tree_index#oak)橡木$()$(li)$(bold)$(l:the_world/earth_tree_index#palm)棕櫚$()$(li)$(bold)$(l:the_world/earth_tree_index#pine)松木$()$(li)$(bold)$(l:the_world/earth_tree_index#rosewood)玫瑰木$()$(li)$(bold)$(l:the_world/earth_tree_index#sequoia)紅杉$()$(li)$(bold)$(l:the_world/earth_tree_index#spruce)雲杉$()$(li)$(bold)$(l:the_world/earth_tree_index#sycamore)懸鈴木$()$(li)$(bold)$(l:the_world/earth_tree_index#teak)柚木$()$(li)$(bold)$(l:the_world/earth_tree_index#tualang)大甘巴豆木$()$(li)$(bold)$(l:the_world/earth_tree_index#willow)柳樹$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "相思木與阿拉伯膠木",
+            "anchor": "acacia",
+            "item": "tag:tfc:acacia_logs",
+            "text": "$(bold)傘刺金合歡$()$(br)$(thing)降雨量$()：90 — 275mm$(br)$(thing)溫度$()：13.4 — 40°C$(br)$(thing)生長天數$()：10$(br2)$(bold)夏威夷相思樹$()$(br)$(thing)降雨量$()：350 — 500mm$(br)$(thing)溫度$()：15.3 — 24.4°C$(br)$(thing)生長天數$()：15$(br2)$(bold)阿拉伯膠樹$()$(br)$(thing)降雨量$()：90 — 275mm$(br)$(thing)溫度$()：11.6 — 40°C$(br)$(thing)生長天數$()：7"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "梣木",
+            "anchor": "ash",
+            "item": "tag:tfc:ash_logs",
+            "text": "$(bold)美國白蠟木$()$(br)$(thing)降雨量$()：60 — 240mm$(br)$(thing)溫度$()：-13.9 — 0.7°C$(br)$(thing)生長天數$()：6"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "白楊木與楊木",
+            "anchor": "aspen",
+            "item": "tag:tfc:aspen_logs",
+            "text": "$(bold)顫楊$()$(br)$(thing)降雨量$()：350 — 500mm$(br)$(thing)溫度$()：-15.7 — -1.1°C$(br)$(thing)生長天數$()：7$(br2)$(bold)楊樹$()$(br)$(thing)降雨量$()：170 — 310mm$(br)$(thing)溫度$()：-15.7 — -6.6°C$(br)$(thing)生長天數$()：7"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "猴麵包木",
+            "anchor": "baobob",
+            "item": "tag:afc:baobab_logs",
+            "text": "$(bold)猴麵包樹$()$(br)$(thing)降雨量$()：30 — 190mm$(br)$(thing)溫度$()：15.3 — 26.2°C$(br)$(thing)生長天數$()：9"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "樺木",
+            "anchor": "birch",
+            "item": "tag:tfc:birch_logs",
+            "text": "$(bold)紙樺$()$(br)$(thing)降雨量$()：125 — 310mm$(br)$(thing)溫度$()：-13.9 — 2.5°C$(br)$(thing)生長天數$()：6"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "黑木",
+            "anchor": "blackwood",
+            "item": "tag:tfc:blackwood_logs",
+            "text": "$(bold)非洲黑木$()$(br)$(thing)降雨量$()：85 — 285mm$(br)$(thing)溫度$()：13.4 — 22.5°C$(br)$(thing)生長天數$()：10$(br2)$(bold)無脈相思樹$()$(br)$(thing)降雨量$()：35 — 150mm$(br)$(thing)溫度$()：9.8 — 20.7°C$(br)$(thing)生長天數$()：7"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "雪松",
+            "anchor": "cedar",
+            "item": "tag:tfc:white_cedar_logs",
+            "text": "$(bold)北美香柏$()$(br)$(thing)降雨量$()：100 — 220mm$(br)$(thing)溫度$()：-13.9 — 4.3°C$(br)$(thing)生長天數$()：6$(br2)$(bold)北非雪松$()$(br)$(thing)降雨量$()：165 — 500mm$(br)$(thing)溫度$()：8.0 — 13.4°C$(br)$(thing)生長天數$()：9"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "栗木",
+            "anchor": "chestnut",
+            "item": "tag:tfc:chestnut_logs",
+            "text": "$(bold)栗木$()$(br)$(thing)降雨量$()：150 — 300mm$(br)$(thing)溫度$()：-6.6 — 11.6°C$(br)$(thing)生長天數$()：6"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "柏木、紅檜",
+            "anchor": "cypress",
+            "item": "tag:afc:cypress_logs",
+            "text": "$(bold)細柏$()$(br)$(thing)降雨量$()：100 — 260mm$(br)$(thing)溫度$()：2.5 — 15.3°C$(br)$(thing)生長天數$()：9$(br2)$(bold)落羽松$()$(br)$(thing)降雨量$()：360 — 500mm$(br)$(thing)溫度$()：-1.1 — 15.3°C$(br)$(thing)生長天數$()：6$(br2)$(bold)垂枝柏$()$(br)$(thing)降雨量$()：290 — 415mm$(br)$(thing)溫度$()：-8.4 — 4.3°C$(br)$(thing)生長天數$()：6"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)紅檜$()$(br)$(thing)降雨量$()：410 — 500mm$(br)$(thing)溫度$()：-4.8 — 9.8°C$(br)$(thing)生長天數$()：9"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "(彩虹)尤加利",
+            "anchor": "eucalyptus",
+            "item": "tag:afc:eucalyptus_logs",
+            "text": "$(bold)藍桉$()$(br)$(thing)降雨量$()：170 — 325mm$(br)$(thing)溫度$()：8.0 — 18.9°C$(br)$(thing)生長天數$()：9$(br2)$(bold)王桉$()$(br)$(thing)降雨量$()：390 — 500mm$(br)$(thing)溫度$()：9.8 — 18.9°C$(br)$(thing)生長天數$()：12$(br2)$(bold)彩虹尤加利$()$(br)$(thing)降雨量$()：300 — 450mm$(br)$(thing)溫度$()：15.3 — 24.4°C$(br)$(thing)生長天數$()：15"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "無花果、印度橡膠樹",
+            "anchor": "fig",
+            "item": "tag:afc:fig_logs",
+            "text": "$(bold)鏽葉榕$()$(br)$(thing)降雨量$()：340 — 500mm$(br)$(thing)溫度$()：18.9 — 26.2°C$(br)$(thing)生長天數$()：11$(br2)$(bold)印度橡膠樹$()$(br)$(thing)降雨量$()：290 — 400mm$(br)$(thing)溫度$()：9.8 — 20.7°C$(br)$(thing)生長天數$()：12"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "冷杉",
+            "anchor": "fir",
+            "item": "tag:tfc:douglas_fir_logs",
+            "text": "$(bold)花旗松$()$(br)$(thing)降雨量$()：305 — 500mm$(br)$(thing)溫度$()：-10.3 — 6.1°C$(br)$(thing)生長天數$()：6$(br2)$(bold)高山冷杉$()$(br)$(thing)降雨量$()：220 — 345mm$(br)$(thing)溫度$()：-1.1 — 11.6°C$(br)$(thing)生長天數$()：10$(br2)$(bold)香脂冷杉$()$(br)$(thing)降雨量$()：210 — 500mm$(br)$(thing)溫度$()：-13.9 — -1.1°C$(br)$(thing)生長天數$()：12"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "橡膠木",
+            "anchor": "hevea",
+            "item": "tag:afc:hevea_logs",
+            "text": "$(bold)橡膠樹$()$(br)$(thing)降雨量$()：390 — 500mm$(br)$(thing)溫度$()：17.1 — 26.2°C$(br)$(thing)生長天數$()：9"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "山胡桃木",
+            "anchor": "hickory",
+            "item": "tag:tfc:hickory_logs",
+            "text": "$(bold)苦味山核桃$()$(br)$(thing)降雨量$()：210 — 400mm$(br)$(thing)溫度$()：-6.6 — 11.6°C$(br)$(thing)生長天數$()：9$(br2)$(bold)灌叢山核桃$()$(br)$(thing)降雨量$()：400 — 475mm$(br)$(thing)溫度$()：11.6 — 17.1°C$(br)$(thing)生長天數$()：6"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "重蟻木",
+            "anchor": "ipe",
+            "item": "tag:afc:ipe_logs",
+            "text": "$(bold)黃花風鈴木$()$(br)$(thing)降雨量$()：340 — 500mm$(br)$(thing)溫度$()：11.6 — 20.7°C$(br)$(thing)生長天數$()：10"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "鐵木",
+            "anchor": "ironwood",
+            "item": "tag:afc:ironwood_logs",
+            "text": "$(bold)國王鐵木$()$(br)$(thing)降雨量$()：320 — 430mm$(br)$(thing)溫度$()：20.7 — 40.0°C$(br)$(thing)生長天數$()：13$(br2)$(bold)萊邦博鐵木$()$(br)$(thing)降雨量$()：150 — 230mm$(br)$(thing)溫度$()：20.7 — 40.0°C$(br)$(thing)生長天數$()：7$(br2)$(bold)木麻黃$()$(br)$(thing)降雨量$()：340 — 500mm$(br)$(thing)溫度$()：9.8 — 20.7°C$(br)$(thing)生長天數$()：9"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "木棉",
+            "anchor": "kapok",
+            "item": "tag:tfc:kapok_logs",
+            "text": "$(bold)吉貝木棉$()$(br)$(thing)降雨量$()：360 — 500mm$(br)$(thing)溫度$()：13.4 — 24.4°C$(br)$(thing)生長天數$()：8$(br2)$(bold)紅花木棉$()$(br)$(thing)降雨量$()：250 — 350mm$(br)$(thing)溫度$()：20.7 — 40.0°C$(br)$(thing)生長天數$()：17"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "桃花心木",
+            "anchor": "mahogany",
+            "item": "tag:afc:mahogany_logs",
+            "text": "$(bold)桃花心木$()$(br)$(thing)降雨量$()：300 — 430mm$(br)$(thing)溫度$()：15.3 — 26.2°C$(br)$(thing)生長天數$()：9$(br2)$(bold)小葉桃花心木$()$(br)$(thing)降雨量$()：320 — 500mm$(br)$(thing)溫度$()：11.6 — 18.9°C$(br)$(thing)生長天數$()：10$(br2)$(bold)沙比利桃花心木$()$(br)$(thing)降雨量$()：330 — 500mm$(br)$(thing)溫度$()：13.4 — 26.2°C$(br)$(thing)生長天數$()：13"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "紅樹",
+            "anchor": "mangrove",
+            "item": "tag:tfc:mangrove_logs",
+            "text": "$(bold)紅樹$()$(br)$(thing)降雨量$()：220mm 以上$(br)$(thing)溫度$()：18.0°C 以上$(br)$(thing)生長天數$()：7$(br)注意：只會在鹽沼生態域生成。也可以在$(l:beneath/beneath_tree_index#mangrove)地底$()找到。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "楓木",
+            "anchor": "maple",
+            "item": "tag:tfc:maple_logs",
+            "text": "$(bold)糖楓$()$(br)$(thing)降雨量$()：260 — 360mm$(br)$(thing)溫度$()：-8.4 — 8.0°C$(br)$(thing)生長天數$()：6$(br2)$(bold)大葉楓$()$(br)$(thing)降雨量$()：405 — 500mm$(br)$(thing)溫度$()：-4.8 — 11.6°C$(br)$(thing)生長天數$()：8$(br2)$(bold)垂枝楓$()$(br)$(thing)降雨量$()：240 — 320mm$(br)$(thing)溫度$()：0.7 — 4.3°C$(br)$(thing)生長天數$()：8"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "橡木、黑橡木",
+            "anchor": "oak",
+            "item": "tag:tfc:oak_logs",
+            "text": "$(bold)沼生櫟$()$(br)$(thing)降雨量$()：210 — 320mm$(br)$(thing)溫度$()：-8.4 — 6.1°C$(br)$(thing)生長天數$()：9$(br2)$(bold)維吉尼亞櫟$()$(br)$(thing)降雨量$()：390 — 500mm$(br)$(thing)溫度$()：0.7 — 13.4°C$(br)$(thing)生長天數$()：9$(br2)$(bold)黑橡木$()$(br)$(thing)降雨量$()：150 — 330mm$(br)$(thing)溫度$()：11.6 — 20.7°C$(br)$(thing)生長天數$()：13"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "棕櫚",
+            "anchor": "palm",
+            "item": "tag:tfc:palm_logs",
+            "text": "$(bold)棕櫚$()$(br)$(thing)降雨量$()：0 — 250mm$(br)$(thing)溫度$()：17.1 — 40.0°C$(br)$(thing)生長天數$()：6$(br2)$(bold)糖棕$()$(br)$(thing)降雨量$()：400 — 500mm$(br)$(thing)溫度$()：20.7 — 26.2°C$(br)$(thing)生長天數$()：5"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "松木",
+            "anchor": "pine",
+            "item": "tag:tfc:pine_logs",
+            "text": "$(bold)北方松$()$(br)$(thing)降雨量$()：60 — 270mm$(br)$(thing)溫度$()：-19.4 — -3.0°C$(br)$(thing)生長天數$()：6$(br2)$(bold)義大利石松$()$(br)$(thing)降雨量$()：140 — 290mm$(br)$(thing)溫度$()：2.5 — 18.9°C$(br)$(thing)生長天數$()：10$(br2)$(bold)紅松$()$(br)$(thing)降雨量$()：185 — 320mm$(br)$(thing)溫度$()：-8.4 — 4.3°C$(br)$(thing)生長天數$()：6"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)美洲落葉松$()$(br)$(thing)降雨量$()：150 — 500mm$(br)$(thing)溫度$()：-17.5 — -1.1°C$(br)$(thing)生長天數$()：9"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "玫瑰木",
+            "anchor": "rosewood",
+            "item": "tag:tfc:rosewood_logs",
+            "text": "$(bold)印度黃檀$()$(br)$(thing)降雨量$()：245 — 360mm$(br)$(thing)溫度$()：15.3 — 24.4°C$(br)$(thing)生長天數$()：7$(br2)$(bold)巨型花梨木$()$(br)$(thing)降雨量$()：340 — 440mm$(br)$(thing)溫度$()：15.3 — 22.5°C$(br)$(thing)生長天數$()：15"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "紅杉",
+            "anchor": "sequoia",
+            "item": "tag:tfc:sequoia_logs",
+            "text": "$(bold)巨杉$()$(br)$(thing)降雨量$()：320 — 500mm$(br)$(thing)溫度$()：0.7 — 8.0°C$(br)$(thing)生長天數$()：17$(br2)$(bold)海岸紅杉$()$(br)$(thing)降雨量$()：320 — 500mm$(br)$(thing)溫度$()：4.3 — 9.8°C$(br)$(thing)生長天數$()：9"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "雲杉",
+            "anchor": "spruce",
+            "item": "tag:tfc:spruce_logs",
+            "text": "$(bold)藍雲杉$()$(br)$(thing)降雨量$()：330 — 500mm$(br)$(thing)溫度$()：-19.4 — 2.5°C$(br)$(thing)生長天數$()：6$(br2)$(bold)海岸雲杉$()$(br)$(thing)降雨量$()：320 — 390mm$(br)$(thing)溫度$()：-12.1 — 6.1°C$(br)$(thing)生長天數$()：7$(br2)$(bold)北美雲杉$()$(br)$(thing)降雨量$()：370 — 500mm$(br)$(thing)溫度$()：2.5 — 8.0°C$(br)$(thing)生長天數$()：9"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)黑雲杉$()$(br)$(thing)降雨量$()：220 — 360mm$(br)$(thing)溫度$()：-17.5 — -1.1°C$(br)$(thing)生長天數$()：11"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "懸鈴木",
+            "anchor": "sycamore",
+            "item": "tag:tfc:sycamore_logs",
+            "text": "$(bold)懸鈴木$()$(br)$(thing)降雨量$()：330 — 480mm$(br)$(thing)溫度$()：-6.6 — 11.6°C$(br)$(thing)生長天數$()：7"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "柚木",
+            "anchor": "teak",
+            "item": "tag:afc:teak_logs",
+            "text": "$(bold)真柚木$()$(br)$(thing)降雨量$()：215 — 330mm$(br)$(thing)溫度$()：13.4 — 26.2°C$(br)$(thing)生長天數$()：9$(br2)$(bold)伊羅科柚木$()$(br)$(thing)降雨量$()：210 — 320mm$(br)$(thing)溫度$()：17.1 — 40.0°C$(br)$(thing)生長天數$()：12$(br2)$(bold)紫礦$()$(br)$(thing)降雨量$()：340 — 500mm$(br)$(thing)溫度$()：13.4 — 24.4°C$(br)$(thing)生長天數$()：10"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "大甘巴豆木",
+            "anchor": "tualang",
+            "item": "tag:afc:tualang_logs",
+            "text": "$(bold)甘巴豆$()$(br)$(thing)降雨量$()：360 — 500mm$(br)$(thing)溫度$()：20.7 — 40.0°C$(br)$(thing)生長天數$()：9"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "柳樹",
+            "anchor": "willow",
+            "item": "tag:tfc:willow_logs",
+            "text": "$(bold)龍爪柳$()$(br)$(thing)降雨量$()：330 — 500mm$(br)$(thing)溫度$()：-6.6 — 9.8°C$(br)$(thing)生長天數$()：10$(br2)$(bold)垂柳$()$(br)$(thing)降雨量$()：355 — 500mm$(br)$(thing)溫度$()：9.8 — 17.1°C$(br)$(thing)生長天數$()：15"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸閱讀",
+            "anchor": "relations",
+            "entries": [
+				"tfg:the_world/wild_fruits",
+				"tfg:the_world/climate",
+				"tfg:the_world/flora",
+				"tfg:the_world/wild_crops",
+				"tfg:beneath/beneath_tree_index",
+				"tfg:mars/mars_tree_index"
+            ]
+        }
+	],
+	"read_by_default": true,
+	"sortnum": 8
+}

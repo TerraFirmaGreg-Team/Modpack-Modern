@@ -1,0 +1,99 @@
+{
+    "name": "皮革製作",
+    "category": "tfg:agriculture",
+    "icon": "minecraft:leather",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(item)皮革$()是由動物毛皮製成的堅韌材料。製作$(item)盔甲$()、$(item)鞍$()或$(l:craftsmanship/charcoal_forge#bellows)風箱$()都需要它。$(item)獸皮$()必須經過數道處理程序：$(l:agriculture/leather_making#soaking)浸泡$()、$(l:agriculture/leather_making#scraping)刮皮$()、$(l:agriculture/leather_making#preparing)整理$()和$(l:agriculture/leather_making#tanning)鞣製$()，才能變成$(item)皮革$()。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:small_raw_hide,tfc:medium_raw_hide,tfc:large_raw_hide",
+            "title": "獸皮",
+            "link_recipes": true,
+            "text": "開始之前，你首先需要取得$(thing)獸皮$()，宰殺許多不同的$(l:the_world/wild_animals)動物$()時都會掉落。不同的動物會掉落不同大小的$(thing)獸皮$()。$(br2)可在$(emi)查看生物掉落物的資訊。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "製作皮革需要數種材料與工具。你需要：$(br)$(li)$(l:craftsmanship/barrels#limewater)石灰水$()――將$(item)助熔劑$()溶於$(thing)水$()中的溶液$(li)水$(li)$(l:craftsmanship/barrels#tannin)單寧$()――由某些樹木的樹皮製成的酸性溶液。$(li)$(thing)獸皮$()$(br2)備齊這些之後，就可以開始製作皮革了。"
+        },
+        {
+            "type": "tfg:sealed_barrel_recipe",
+            "anchor": "soaking",
+            "recipe": "tfc:barrel/medium_soaked_hide",
+            "text": "首先，獸皮必須經過$(thing)浸泡$()，在加工前清潔並鬆動不需要的物質。將$(thing)獸皮$()密封在$(l:craftsmanship/barrels#limewater)裝有石灰水的木桶$()中至少八小時即可。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "scraping",
+            "item": "tfc:small_scraped_hide,tfc:medium_scraped_hide,tfc:large_scraped_hide",
+            "title": "刮皮",
+            "link_recipes": true,
+            "text": "浸泡後，必須刮除$(thing)浸泡過的毛皮$()上多餘的物質。要刮皮時，將毛皮放在$(thing)原木$()的側面，手持$(item)刀$()或$(item)刮刀$()對毛皮的每個部分按下$(item)$(k:key.use)$()，它的材質就會開始改變。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/soaked_hide_1.png",
+                "tfc:textures/gui/book/tutorial/soaked_hide_2.png",
+                "tfc:textures/gui/book/tutorial/soaked_hide_3.png",
+                "tfc:textures/gui/book/tutorial/soaked_hide_4.png"
+            ],
+            "text": "毛皮完全刮好之後，就可以將它打下來，取得$(thing)刮過的毛皮$()。",
+            "border": true
+        },
+        {
+            "type": "tfg:sealed_barrel_recipe",
+            "anchor": "preparing",
+            "recipe": "tfc:barrel/medium_prepared_hide",
+            "text": "刮皮後，必須將$(thing)刮過的毛皮$()密封在裝有$(thing)水$()的$(l:craftsmanship/barrels)木桶$()中至少八小時，在鞣製前做最後一次清潔。"
+        },
+        {
+            "type": "tfg:sealed_barrel_recipe",
+            "anchor": "tanning",
+            "recipe": "tfc:barrel/medium_leather",
+            "text": "最後，必須將$(thing)整理過的毛皮$()密封在$(l:craftsmanship/barrels#tannin)裝有單寧的木桶$()中。單寧是一種酸性化合物――由$(t:#tfc:makes_tannin)$(6)富含單寧的原木$()製成――有助於將毛皮轉化為$(thing)皮革$()。再過八小時後，就可以從木桶中取出$(thing)皮革$()。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "pineapple_leather",
+            "title": "皮革替代品",
+            "item": "firmalife:pineapple_leather",
+            "text": "動物皮革的替代品是$(item)鳳梨皮革$()。製作方式是先$(l:cooking/decay#drying)乾燥$()$(l:the_world/wild_fruits#pineapple)鳳梨$()，將其剝成線，再把鳳梨線$(l:agriculture/weaving)編織$()成鳳梨皮革。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸閱讀",
+            "anchor": "relations",
+            "entries": [
+                "tfg:agriculture/animal_husbandry",
+                "tfg:agriculture/papermaking",
+                "tfg:the_world/wild_animals",
+                "tfg:the_world/wild_fruits",
+                "tfg:craftsmanship/sticks_and_stones",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/charcoal_forge",
+                "tfg:craftsmanship/blast_furnace",
+                "tfg:craftsmanship/barrels"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 10,
+    "extra_recipe_mappings": {
+        "tfc:small_raw_hide": 1,
+        "tfc:medium_raw_hide": 1,
+        "tfc:large_raw_hide": 1,
+        "tfc:small_soaked_hide": 3,
+        "tfc:medium_soaked_hide": 3,
+        "tfc:large_soaked_hide": 3,
+        "tfc:small_scraped_hide": 4,
+        "tfc:medium_scraped_hide": 4,
+        "tfc:large_scraped_hide": 4,
+        "tfc:small_prepared_hide": 6,
+        "tfc:medium_prepared_hide": 6,
+        "tfc:large_prepared_hide": 6,
+        "minecraft:leather": 7
+    }
+}

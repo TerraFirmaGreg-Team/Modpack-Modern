@@ -339,7 +339,7 @@ function registerTFGEarlyGasRecipes(event) {
 
 	event.recipes.gtceu.distillation_tower('tfg:methanol_distil_propylene')
 		.inputFluids(Fluid.of('gtceu:methanol', 6000))
-		.outputFluids(Fluid.of('gtceu:hydrogen', 10000), Fluid.of('gtceu:oxygen', 6000), Fluid.of('gtceu:methane', 1000), Fluid.of('gtceu:ethylene', 1000), Fluid.of('gtceu:propene', 1000))
+		.outputFluids(Fluid.of('gtceu:propene', 1000), Fluid.of('gtceu:ethylene', 1000), Fluid.of('gtceu:methane', 1000), Fluid.of('gtceu:oxygen', 6000), Fluid.of('gtceu:hydrogen', 10000))
 		.duration(20*30)
 		.EUt(GTValues.VA[GTValues.HV])
 

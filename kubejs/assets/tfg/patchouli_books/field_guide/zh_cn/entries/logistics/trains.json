@@ -1,0 +1,223 @@
+{
+	"name": "列车",
+	"category": "tfg:logistics",
+	"icon": "minecraft:rail",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"text": "$(li)$(bold)$(l:logistics/trains#tracks)轨道与车站$()$(li2)$(l:logistics/trains#station)创建你的第一辆列车$()$(li2)$(l:logistics/trains#handcar)人力轨道车$()$(li)$(bold)$(l:logistics/trains#cargo)列车货运$()$(li2)$(l:logistics/trains#loading)装载与卸载$()$(li2)$(l:logistics/trains#detecting)检测货物$()$(li)$(bold)$(l:logistics/trains#conductors)列车长$()$(li2)$(l:logistics/trains#schedule)自动化运输$()$(li2)$(l:logistics/trains#whistle)列车指挥哨$()$(li2)$(l:logistics/trains#remote_lens)远程观测镜$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(bold)燃料$()$(li2)$(l:logistics/trains#solid_fuel)固体燃料$()$(li2)$(l:logistics/trains#liquid_fuel)液体燃料$()$(li)$(bold)$(l:logistics/trains#loco)装饰方块$()$(li)$(bold)$(l:logistics/trains#seat)坐垫$()$(li)$(bold)$(l:logistics/trains#signals)列车信号机$()$(li2)$(l:logistics/trains#semaphore)臂板信号机$()$(li2)$(l:logistics/trains#switches)转辙器$()$(li)$(bold)$(l:logistics/trains#coupler)分离车厢$()$(li)$(bold)$(l:logistics/trains#buffer)脱轨$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)机械动力$()拥有一套强大的$(item)列车$()系统，可以长距离运输玩家、物品、流体乃至一切。无论是穿越荒野，还是搬运海量材料，它都十分顺手；最重要的是，它$(thing)可以在未加载的区块中移动$()。$(br2)$(bold)提示：$()如果有看不懂的地方，把鼠标悬停在物品上并按住$(thing)W$()，即可查看它的$(thing)思索$()！"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tag:create:tracks",
+			"title": "列车轨道",
+			"anchor": "tracks",
+			"text": "铺设通往不同地点的线路，就能让你的列车往返其间。$(br)先放置一段轨道，然后$(item)$(k:key.use)$()它——手中拿着$(item)轨道$()时——即可快速铺轨并弯出曲线造型。$(br)如果你副手拿着方块（或金属梁），它们会自动被放置在轨道下方。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:track_station",
+			"title": "你的第一辆列车",
+			"anchor": "station",
+			"text": "首先，$(item)$(k:key.use)$()轨道（此时手中拿着$(item)列车站点$()），即可在轨道上创建一个箭头，指示$(thing)列车$()的前进方向。$(br2)接着，把$(item)列车站点$()放在轨道旁，就可以开始打造你自己的$(thing)列车$()了！"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "在$(thing)列车站点$()界面中，按下$(thing)创建新列车$()——它会在旁边的轨道上投射出浅蓝色的点位。$(br2)在这些点位上放置$(item)列车机壳$()即可创建一个$(thing)转向架$()。你可以用建筑方块把最多两个转向架连接起来，组成一节$(thing)车厢$()。记得使用$(item)强力胶$()！"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "将$(item)列车驾驶台$()朝向列车前进的方向放置。$(br2)完成后，在站点界面中按下$(thing)组装列车$()，你的$(thing)列车$()就能开动了！$(item)$(k:key.use)$()$(item)列车驾驶台$()，再使用常规的前后移动键，即可驾驶列车。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "遗憾的是，列车也有一些限制。单辆列车结构$(bold)不能$()超过$(thing)20个转向架$()，长度也不能超过$(thing)128格$()——设计列车时请牢记这一点。$(br2)$(bold)注意：$()你随时可以在机械动力的配置文件中修改这些上限，但请记住，提高上限会占用$(thing)更多$()的服务器资源。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "railways:handcar",
+			"anchor": "handcar",
+			"text": "$(item)人力轨道车$()是一种可部署的列车，让你能在铁轨上行进！用$(item)扳手$()就能把它收起来带走。这是一种廉价又好用的快速出行方式，无需建造整列火车。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:fluid_tank,create_connected:fluid_vessel,create:item_vault,create_connected:item_silo,createaddition:modular_accumulator,fluidlogistics:multi_fluid_tank,fluidlogistics:horizontal_multi_fluid_tank",
+			"title": "列车货运",
+			"anchor": "cargo",
+			"text": "$(item)流体储罐$()、$(item)物品保险库$()和$(item)蓄电池$()都可以放置在$(thing)列车$()上，用来运输物品、流体和能量。$(br2)你需要使用它们对应的接口才能与列车交换内容，和其他装置一样。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:portable_fluid_interface,create:portable_storage_interface,createaddition:portable_energy_interface",
+			"title": "装载与卸载",
+			"anchor": "loading",
+			"text": "$(item)移动式接口$()让你能在列车和你的存储系统之间搬运物品。把一个$(item)移动式接口$()放在列车上，并与保险库、流体储罐或蓄电池相连，就能在列车与基地之间转移物品、流体和能量！两个接口之间需要相隔$(thing)两格$()才能正常工作。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "当两个接口相互「贴合」时，它们就像一个连通的接口一样工作——比如用溜槽从固定接口中抽出物品，就等于把它们从列车里抽了出来。$(br2)$(bold)注意：$()能量接口需要一个$(thing)GregTech 能量转换器$()才能把 FE 转换为 EU。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:track_observer",
+			"title": "检测货物",
+			"anchor": "detecting",
+			"text": "$(item)列车侦测器$()可以用来检测$(thing)列车$()运输的货物。$(item)$(k:key.use)$()$(item)列车侦测器$()并把它放在轨道旁，再在方块顶部放一个物品，即可筛选列车货物。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "一旦装载着被筛出货物的列车驶过$(item)列车侦测器$()，该方块就会发出红石信号！$(br2)$(bold)提示：$()你可以用过滤器一次筛选多种物品或流体！"
+		},
+		{
+			"title": "列车长",
+			"anchor": "conductors",
+			"type": "patchouli:spotlight",
+			"item": "tag:railways:conductor_caps",
+			"text": "是时候让你的铁路系统自动化了！放置一个$(item)金属机壳$()，然后$(item)$(k:key.use)$()它（手中拿着$(item)列车长帽$()），就会生成你自己的$(thing)列车长$()。很可爱，对吧？你可以用$(item)拴绳$()牵着它到处走。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "把它放在$(thing)拉杆$()旁边并看向拉杆，它就会扳动拉杆——这对$(l:logistics/trains#switches)转辙器$()很有用。$(br2)你也可以把它放到列车的$(l:logistics/trains#seat)坐垫$()上，让它当司机。$(br2)列车司机并不限于列车长！任何生物（比如动物）都可以坐在坐垫上当司机，$(item)烈焰人燃烧室$()也可以。"
+		},
+		{
+			"title": "自动化运输",
+			"anchor": "schedule",
+			"type": "patchouli:spotlight",
+			"item": "create:schedule",
+			"text": "在空中$(item)$(k:key.use)$()$(item)列车时刻表$()，即可选择$(l:logistics/trains#station)列车站点$()——也就是$(thing)列车$()要前往的站点——以及它在指定站点的等待时长。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "你还可以选择$(thing)列车$()是循环路线，还是在特定站点停下。$(br2)给你的$(l:logistics/trains#conductors)列车长$()一张$(item)列车时刻表$()，它就会成为司机，驾驶你的列车往返于各个$(thing)列车站点$()之间。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "railways:conductor_whistle",
+			"anchor": "whistle",
+			"text": "$(item)列车指挥哨$()可以让$(l:logistics/trains#conductors)列车长$()移动到轨道上的指定位置，如果你想改造一辆正在运行的$(thing)列车$()，它会非常有用。$(br2)$(item)$(k:key.use)$()$(thing)列车长$()即可将该物品与其绑定，之后对着轨道$(item)$(k:key.use)$()，$(thing)列车$()就会朝你选定的位置驶去。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "如果$(thing)列车$()无法到达指定位置，它会在游戏聊天中告诉你。$(br2)注意：$(item)列车指挥哨$()会$(bold)覆盖$()$(l:logistics/trains#schedule)列车时刻表$()——如果你想让$(thing)列车长$()继续旅程，就得重新把$(item)列车时刻表$()交给它：空手对它$(item)$(k:key.use)$()$(thing)两次$()即可。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "railways:remote_lens",
+			"anchor": "remote_lens",
+			"text": "想知道你的$(thing)列车$()跑到哪儿去了吗？还是把它弄丢了找不到？别慌！$(br)给你的$(l:logistics/trains#conductors)列车长$()戴上$(item)工程师护目镜$()并给它$(item)远程观测镜$()，你就能以$(thing)列车长$()的视角观察了。$(br)$(item)$(k:key.use)$()该物品绑定到$(thing)列车长$()身上，之后随时可以使用透镜查看你的$(thing)列车$()！"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "minecraft:charcoal",
+			"title": "为列车加注燃料",
+			"anchor": "solid_fuel",
+			"text": "你的$(thing)列车$()可以使用固体燃料，速度最高提升50%！给$(thing)列车$()提供任意一种$(item)可燃燃料$()，每件物品都能让列车加速5分钟。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "列车液体燃料",
+			"item": "railways:fuel_tank,railways:portable_fuel_interface",
+			"anchor": "liquid_fuel",
+			"text": "$(thing)液体燃料$()的能量密度远高于固体燃料，但需要多一些基础设施。把$(item)燃料罐$()放在列车上，并用$(item)燃料接口$()为其供料，你的$(thing)列车$()就会消耗100mB燃料并获得50%加速。液体燃料比$(thing)物品$()耐用$(thing)得多$()。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "例如，100mB火箭燃料能持续$(thing)6小时$()，也就是每桶$(thing)60小时$()！$(br2)$(item)杂酚油$()、$(item)合成气$()、$(item)柴油$()等等都可以作为列车燃料。不确定你的液体算不算燃料？试着把它泵进$(item)燃料罐$()——只要罐子肯收，它就能当燃料用！"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "蒸汽氛围",
+			"anchor": "loco",
+			"item": "tag:tfg:smokestacks,tag:railways:palettes/dye_groups/boiler",
+			"text": "觉得你的$(thing)火车头$()不够有范儿？别担心！$(item)机车锅炉$()和$(item)烟囱$()来了，为你的铁路系统增添沉浸感。$(br)$(item)烟囱$()会源源不断地冒出烟雾粒子，而$(item)机车锅炉$()则让你能用$(item)圆形$()造型进行建造。$(br)这两种方块都是纯装饰。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "坐垫",
+			"anchor": "seat",
+			"item": "tag:create:seats",
+			"text": "$(item)坐垫$()让你可以坐着驾驶列车。$(br2)为了防止列车行驶时被甩出去，请放置一个$(item)坐垫$()在你的$(thing)列车$()上，并记得用$(item)强力胶$()固定好。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:track_signal",
+			"anchor": "signals",
+			"title": "防止相撞",
+			"text": "在铁路系统自动化的过程中，$(thing)列车相撞$()是个严重的问题。一旦相撞，$(thing)列车$()就会脱轨，变得$(bold)无法运行$()。好在只需一些基础设施，就能避免大多数事故。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "railways:semaphore",
+			"anchor": "semaphore",
+			"text": "在路口前的轨道上$(item)$(k:key.use)$()$(item)列车信号机$()并把它放在轨道旁，就能检测$(thing)列车$()何时驶过！$(br2)你还可以把$(item)臂板信号机$()放在$(item)列车信号机$()顶部，并让它朝向另一条轨道。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "这样，当一列$(thing)列车$()驶过路口时，另一条轨道就会被封锁，$(thing)列车$()无法通过，从而避免相撞。$(br2)$(bold)注意：$()你可以把多个$(item)臂板信号机$()叠放在一起，连接多个$(thing)列车信号机$()，但这会变得相当复杂。欲知详情，可将鼠标悬停在$(item)臂板信号机$()上并按住$(item)W$()，即可查看其功能的可视化演示。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "railways:track_switch_andesite,railways:track_switch_brass",
+			"title": "转辙器",
+			"anchor": "switches",
+			"text": "$(item)转辙器$()可以用来切换轨道。对着轨道$(item)$(k:key.use)$()$(item)转辙器$()并把它放在轨道旁，就可以切换轨道了！$(br2)直接$(item)$(k:key.use)$()$(item)转辙器$()会把轨道切向右侧，而按住$(item)$(k:key.sneak)$()再使用$(item)转辙器$()则会把轨道切向左侧。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "你可以用红石把切换轨道的过程自动化。给$(item)转辙器$()的侧面供给红石信号，它就会根据接收信号的一侧来改变轨道方向。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(bold)注意：$()$(item)转辙器$()的朝向取决于它相对轨道的位置以及放置者的朝向。把$(item)转辙器$()放在轨道右侧、同时$(thing)面向$()轨道放置，它就会自动对齐，与轨道保持平行。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "railways:track_coupler",
+			"anchor": "coupler",
+			"title": "分离车厢",
+			"text": "装载货物太费时间？有没有想过干脆把空的$(thing)车厢$()丢在原地？现在可以了！对着轨道$(item)$(k:key.use)$()$(item)车钩$()并把它放在轨道旁，就会生成两个相距5格的$(thing)节点$()。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "手持扳手长按$(item)$(k:key.use)$()$(item)车钩$()的顶部，可以调整两个节点之间的距离。当给$(item)车钩$()通入红石信号、而两节独立的$(thing)车厢$()分别位于节点上方时，车厢就会分离开来！它们不再相连，你的$(thing)列车$()从此可以各行其道。想把它们重新连上？重复同样的步骤即可！"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "railways:buffer",
+			"anchor": "buffer",
+			"title": "轨道挡车器",
+			"text": "使用$(item)轨道挡车器$()可以防止你的$(thing)列车$()脱轨！把它们放在未完工轨道的尽头或轨道的两端，你的$(thing)列车$()就没有脱轨的可能了。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "谁都会有失手的时候。你不小心挖断了轨道，或者$(thing)列车$()不知怎么冲出了轨道，又或者两辆列车撞在了一起——现在它$(bold)脱轨$()了。$(br2)好在解决办法很简单！$(item)$(k:key.use)$()你的列车（手持$(item)机械动力扳手$()）选中它，再对着轨道$(item)$(k:key.use)$()把它放回去。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "列车放反方向了？你可以重新选中它，然后面朝另一方向放置，它就会掉头！"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "延伸阅读",
+			"anchor": "relations",
+			"entries": [
+				"tfg:logistics/tack",
+				"tfg:logistics/roads",
+				"tfg:logistics/boats",
+				"tfg:logistics/exploration_gear",
+				"tfg:logistics/create",
+				"tfg:the_world/earth_tree_index"
+			]
+		}
+	]
+}

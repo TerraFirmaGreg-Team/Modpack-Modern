@@ -1,0 +1,172 @@
+{
+    "name": "光源",
+    "category": "tfg:game_mechanics",
+    "sortnum": 6,
+    "icon": "tfc:candle",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:game_mechanics/lighting#torches)火把$()$(li)$(bold)$(l:game_mechanics/lighting#candles)蜡烛$()$(li)$(bold)$(l:game_mechanics/lighting#jack_o_lanterns)南瓜灯$()$(li)$(bold)$(l:game_mechanics/lighting#lamps)灯笼$()$(li)$(bold)$(l:game_mechanics/lighting#portable_light)便携光源$()$(li)$(bold)$(l:game_mechanics/lighting#permanent_light)永久光源$()",
+            "title": "目录",
+            "anchor": "index"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "简介",
+            "text": "在$(tfg_short)中有多种产生光照的方式。然而，几乎所有光源都不能永久燃烧！$(br)与原版 Minecraft 不同，你需要留意自己的灯具，在它们燃尽后重新点燃。光源品质越高，持续时间就越长。$(br)永久光源要到很后期才能获得——除非你发挥创意。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "torches",
+            "title": "火把",
+            "item": "tfc:torch,tfc:dead_torch",
+            "text": "在$(l:craftsmanship/firepit)篝火$()或其他加热设备中加热木棍或木棍堆就能做出火把。$(br)火把能持续 3 天，之后会变成$(thing)燃尽的火把$()，可以用火把点击它重新点燃，也可以对它使用起火工具。用木棍点击火把同样可以将其点燃。掉进水里的火把会变成$(thing)草木灰$()或$(thing)木棍$()。"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:torch"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:dead_torch"
+                    }
+                }
+            ],
+            "name": "",
+            "text": "把火把扔到原木堆或$(l:craftsmanship/pit_kiln)坑窑$()上即可将其点燃。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "candles",
+            "title": "蜡烛",
+            "item": "tag:tfc:candles",
+            "text": "蜡烛由$(thing)蜡$()或$(thing)蜡脂$()制成，能持续 30 天，之后需要重新点燃。$(br)蜡烛可以放在地上或$(l:cooking/jam#jarbnet)罐头柜$()中点燃。放置的蜡烛数量会影响其发出的光照等级。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#tfc:candles[candles=1,lit=true]"
+                }
+            },
+            "text": "蜡烛可以$(thing)染色$()成全部 16 种颜色！",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "jack_o_lanterns",
+            "title": "南瓜灯",
+            "item": "tag:tfg:carved_pumpkins,tag:tfg:carved_pumpkins/lit",
+            "text": "南瓜灯是$(thing)雕刻过的南瓜$()的点亮版本，能持续 4.5 天，之后会变回雕刻过的南瓜。$(br)手持南瓜进行$(l:craftsmanship/sticks_and_stones)塑形$()即可雕刻南瓜。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#tfg:carved_pumpkins/lit"
+                }
+            },
+            "name": "",
+            "text": "有许多有趣的南瓜灯图案可供选择！",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "lamps",
+            "title": "灯笼",
+            "item": "tag:tfc:lamps",
+            "text": "灯笼是燃烧液体燃料的长效光源，被破坏时会保留其中的燃料。你可以用$(thing)管道$()自动为灯加注燃料，也可以用$(l:cooking/drinking_containers)流体容器$()手动加注。$(br)在$(emi)中查看灯即可了解可用的燃料。$(thing)岩浆$()能永久燃烧，但必须装在$(item)蓝钢灯$()里。$(thing)液态荧石$()也一样能永久燃烧，且可用于任何灯。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "Y": "#tfc:lamps[hanging=true,lit=true]"
+                }
+            },
+            "text": "灯笼可以悬挂在方块下方。$(thing)锁链$()和$(thing)管道$()是尤其好看的选择。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "portable_light",
+            "title": "便携光源",
+            "text": "你也可以手持光源照亮周围，比如把$(item)火把$()拿在$(thing)副手$()。$(br2)为了腾出副手栏位，你可以把$(l:game_mechanics/lighting#lamps)灯$()戴在$(l:craftsmanship/clothing#curios)饰品$()的$(thing)背部$()栏位上，而$(l:logistics/exploration_gear#digger_helmet)矿工头盔$()也是一种同样能提供光照的头盔。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "permanent_light",
+            "title": "永久光源",
+            "item": "minecraft:glowstone",
+            "text": "当你做出$(item)提取机$()和$(item)流体固化器$()后，就可以用$(thing)液态荧石$()和$(thing)荧石块$()制作各种装饰性的永久光源了。$(br)除了发展科技之外，还有一些有创意的照明方法，例如$(l:agriculture/aqueducts)岩浆引水桥$()。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸阅读",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/sticks_and_stones",
+                "tfg:craftsmanship/barrels",
+                "tfg:craftsmanship/firepit",
+                "tfg:craftsmanship/building_materials",
+                "tfg:cooking/jam",
+                "tfg:agriculture/aqueducts",
+                "tfg:logistics/exploration_gear"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "extra_recipe_mappings": {
+        "tag:tfc:candles": 4,
+        "tag:tfg:carved_pumpkins": 6,
+        "tag:tfg:carved_pumpkins/lit": 6,
+        "tag:tfc:lamps": 8,
+        "minecraft:glowstone": 10
+    }
+}

@@ -24,12 +24,22 @@ function registerTFGGarnetSandLine(event) {
             .duration(20 * 30)
             .EUt(GTValues.VA[GTValues.MV])
 
-    event.recipes.gtceu.chemical_reactor('tfg:garnet_leach_liquor_purified')
+    event.recipes.gtceu.chemical_reactor('tfg:garnet_leach_liquor_purified_low_yield')
+            .itemInputs(Item.of('gtceu:purified_garnet_sand_ore'))
+            .inputFluids(Fluid.of('gtceu:sulfuric_acid', 1000))
+            .itemOutputs(Item.of('gtceu:gypsum_dust', 8), Item.of('tfg:flawed_garnet_residual_slag_gem', 1))
+            .outputFluids(Fluid.of('tfg:garnet_leach_liquor', 1000))
+            .duration(20 * 30)
+            .circuit(1)
+            .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.large_chemical_reactor('tfg:garnet_leach_liquor_purified')
             .itemInputs(Item.of('gtceu:purified_garnet_sand_ore'))
             .inputFluids(Fluid.of('gtceu:sulfuric_acid', 1000))
             .itemOutputs(Item.of('gtceu:gypsum_dust', 8), Item.of('gtceu:silicon_dioxide_dust', 3), Item.of('tfg:flawed_garnet_residual_slag_gem', 1))
             .outputFluids(Fluid.of('tfg:garnet_leach_liquor', 1000))
             .duration(20 * 30)
+            .circuit(2)
             .EUt(GTValues.VA[GTValues.MV])
 
     event.recipes.gtceu.electric_blast_furnace('tfg:garnet_fusion_clinker')
@@ -78,12 +88,21 @@ function registerTFGGarnetSandLine(event) {
             .duration(20 * 38)
             .EUt(GTValues.VA[GTValues.LV])
 
-    event.recipes.gtceu.chemical_reactor('tfg:process_depleted_garnet_liquor_b')
+    event.recipes.gtceu.large_chemical_reactor('tfg:process_depleted_garnet_liquor_b')
             .inputFluids(Fluid.of('tfg:depleted_garnet_liquor_b', 500), Fluid.of('gtceu:carbon_monoxide', 2000))
             .itemOutputs(Item.of('gtceu:manganese_dust', 2), Item.of('gtceu:magnesium_dust', 1), Item.of('gtceu:calcium_carbonate_dust', 1))
             .outputFluids(Fluid.of('gtceu:hydrogen', 1000), Fluid.of('gtceu:sulfuric_acid', 500))
             .duration(20 * 36)
             .EUt(GTValues.VA[GTValues.MV])
+            .circuit(2)
+
+event.recipes.gtceu.chemical_reactor('tfg:process_depleted_garnet_liquor_b_low_yield')
+            .inputFluids(Fluid.of('tfg:depleted_garnet_liquor_b', 500), Fluid.of('gtceu:carbon_monoxide', 2000))
+            .itemOutputs(Item.of('gtceu:manganese_dust', 2), Item.of('gtceu:calcium_carbonate_dust', 1))
+            .outputFluids(Fluid.of('gtceu:hydrogen', 1000), Fluid.of('gtceu:sulfuric_acid', 500))
+            .duration(20 * 36)
+            .EUt(GTValues.VA[GTValues.MV])
+            .circuit(1)
 
     event.recipes.gtceu.autoclave('tfg:cr_y_residue_dust')
             .itemInputs(Item.of('gtceu:sodium_hydroxide_dust', 3), Item.of('tfg:al_cr_y_hydroxide_cake'))
@@ -237,8 +256,8 @@ function registerTFGGarnetSandLine(event) {
 
     event.recipes.gtceu.chemical_reactor('tfg:organic_extractant_from_phosphorus_pentoxide_dust')
             .itemInputs(Item.of('gtceu:phosphorus_pentoxide_dust', 14))
-            .inputFluids(Fluid.of('tfg:ethylhexanol', 1000))
-            .outputFluids(Fluid.of('tfg:organic_extractant', 1000), Fluid.of('minecraft:water', 1000))
+            .inputFluids(Fluid.of('tfg:ethylhexanol', 8000))
+            .outputFluids(Fluid.of('tfg:organic_extractant', 4000), Fluid.of('minecraft:water', 2000))
             .duration(20 * 32)
             .EUt(GTValues.VA[GTValues.MV])
 

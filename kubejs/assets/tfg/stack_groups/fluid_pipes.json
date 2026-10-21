@@ -1,0 +1,14 @@
+{
+	"id": "tfg:fluid_pipes",
+	"type": "remi:group",
+	"name": "stackgroup.remi.tfg_fluid_pipes",
+	"contents": [
+		"#forge:tiny_fluid_pipes",
+		"#forge:small_fluid_pipes",
+		"#forge:normal_fluid_pipes",
+		"#forge:large_fluid_pipes",
+		"#forge:huge_fluid_pipes",
+		"#forge:quadruple_fluid_pipes",
+		"#forge:nonuple_fluid_pipes"
+	]
+}

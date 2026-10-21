@@ -1,0 +1,58 @@
+{
+	"name": "树汁采集",
+	"category": "tfg:agriculture",
+	"icon": "afc:tree_tap",
+	"pages": [
+        {
+            "type": "patchouli:text",
+            "text": "某些树木可以被采集以获取有用的流体。这些树木可产出含糖树液（可浓缩为糖浆用作甜味剂）、乳胶（可加工成橡胶）或树脂（可加工成松香作为蜡替代品）。"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "获取枫树树汁",
+            "images": [
+            	"afc:textures/gui/book/maple_tapping.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "采集树汁需要三样东西：树本身；树汁导管，必须用铜锭锻造，并放在至少三格高的树干正中；以及一个大桶，必须朝上放在导管正下方。条件合适的话，你的大桶会立刻开始积攒树汁。$(br2)$(o)$(3)采汁需要至少三根自然生长的原木。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+            	"tfg:textures/gui/field_guide/tree_tapping/tapping_kapok.png"
+            ],
+            "text": "一个有效的配置：用于从木棉树中提取乳胶",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "text": "让树汁直接流进流体管道的开口，可以进一步优化采集。",
+            "title": "让它流淌吧！",
+            "images": [
+            	"tfg:textures/gui/field_guide/tree_tapping/tfg_tapping.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸阅读",
+            "anchor": "relations",
+            "entries": [
+            	"tfg:the_world/earth_tree_index",
+            	"tfg:cooking/cooking_methods"
+            ]
+        }
+	],
+	"read_by_default": true,
+	"sortnum": 3,
+	"extra_recipe_mappings": {
+        "afc:tree_tap": 0
+	}
+}

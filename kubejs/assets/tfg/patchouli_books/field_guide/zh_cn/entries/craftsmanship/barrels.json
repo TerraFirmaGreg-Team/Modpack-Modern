@@ -1,0 +1,138 @@
+{
+    "name": "大桶",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:wood/barrel/oak",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)大桶$()是一种可以容纳物品和液体的设备。大桶中央的空格是用来放置物品的，液体则显示在左侧的水槽中。将$(thing)桶$()或$(thing)壶$()放在左上角的空格中可以将其中的液体添加到大桶、或将大桶中的液体盛出。拿着容器对着装有液体的大桶按下$(item)$(k:key.use)$()也有同样的效果。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/gui/barrel.png"
+            ],
+            "text": "桶界面",
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "可以按屏幕右边的按钮来将大桶$(thing)密封$()。密封状态下的桶在被破坏时会保留其中的液体。部分配方必须在密封的大桶中才能制作。对着大桶空手$(item)$(k:key.sneak)$()$(item)$(k:key.use)$()也可以切换大桶的密封状态。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)手持空的大桶点击水源方块可以盛装液体。$()$(li)启封的大桶会在雨中慢慢地装满水。$()$(li)大桶会接住上方融化的冰柱。$()$(li)密封大桶会弹出不在中心空格的物品。$()",
+            "title": "用桶小贴士"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "大桶的主要作用是用来混合某些液体和物品。用$(thing)大桶$()合成时，桶内的液体和物品的比例必须正确无误。某些配方还需要将大桶$(thing)密封$()一段时间才能执行。",
+            "title": "用大桶合成"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "如果大桶中物品的比例和配方所需的不一致，多余的物品或液体就会被浪费。但如果执行的是$(thing)瞬时配方$()，则必须提供对应液体的足量物品才能进行。"
+        },
+        {
+            "type": "tfg:instant_barrel_recipe",
+            "anchor": "limewater",
+            "recipe": "tfc:barrel/limewater",
+            "text": "$(bold)石灰水$()是由$(item)助焊剂$()溶于$(thing)淡水$()制成的。每份$(item)助焊剂$()可转化 $(thing)500 mB$()的$(thing)淡水$()。$(thing)石灰水$()可以用来加工$(l:agriculture/leather_making)皮革$()，也可以用来制作$(thing)砂浆$()。"
+        },
+        {
+            "type": "tfg:sealed_barrel_recipe",
+            "anchor": "tannin",
+            "recipe": "tfc:barrel/tannin",
+            "text": "$(bold)鞣酸$()是一种酸性流体，把某些 $(t:#tfc:makes_tannin)$(6)原木$()的树皮溶解在一桶$(thing)水$()里即可制得。$(thing)橡木$()、$(thing)桦木$()、$(thing)栗木$()、$(thing)花旗松木$()、$(thing)山核桃木$()、$(thing)枫木$()和$()红杉木$()都可以用来制作$(thing)鞣酸$()。$(br)$(bold)提示$()：在 $(emi) 中搜索 $(6)#makes_tannin$() 可查看可用原木的完整列表。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fluid_mixing",
+            "title": "液体混合",
+            "text": "有些大桶配方需要按一定比例混合两种流体。做法是：拿一桶装满其中一种原料的桶，放进已装有所需量另一种流体的大桶的流体添加槽中。比如将 $(thing)醋$()和 $(thing)海水$()按 1:9 的比例混合，就能制成 $(item)卤水$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "淬火",
+            "anchor": "quenching",
+            "text": "大桶可以冷却 $(l:game_mechanics/heating)高温$()物品。把滚烫的物品放进装有 $(thing)水$()、$(thing)食用油$()或 $(thing)冰沙$()的大桶里，它的温度会迅速降下来。$(br)你甚至可以用 $(item)$(k:key.drop)$()直接把物品丢进大桶。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "染色",
+            "anchor": "dyeing",
+            "text": "大桶可以给物品 $(thing)染色$()和 $(thing)漂白$()。大多数可染色的东西，比如地毯、蜡烛和 $(l:craftsmanship/building_materials#alabaster)雪花石膏$()，都可以通过密封在装有染料的大桶里来染色，或密封在装有碱液的大桶里来漂白。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "保鲜",
+            "anchor": "preservation",
+            "text": "将食物封入装有$(thing)醋$()的大桶里有助于延长其保质期。将任意$(thing)水果$()密封在装有$(thing)酒$()的大桶中就能得到醋。有关于用醋保鲜的知识，请参看$(l:cooking/decay#vinegar)食物保鲜$()页面。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/barrel_rack",
+            "text": "水平放置的大桶与垂直的大桶功能一致，但是摆放方式有所限制：若想在水平大桶上方放置一只水平大桶，则必须按$(item)$(k:key.use)$()放置一个$(thing)大桶架$()。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:wood/barrel/kapok[facing=north,rack=false,sealed=true]",
+                    "Y": "tfc:wood/barrel/kapok[facing=north,rack=true,sealed=false]"
+                }
+            },
+            "name": "水平放置大桶",
+            "text": "水平放置的大桶会用一只$(thing)龙头$()的方式显示开启状态。如果龙头是横向的，则说明已关闭。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "水平大桶开启时，若龙头下方无其他方块阻挡，会自动将内容流体输出至龙头下其他开启的大桶或其他流体容器中。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/barrel_drip.png"
+            ],
+            "text": "大桶滴答。",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "title": "红石",
+            "text": "大桶可以用 $(thing)红石$()实现自动化。给大桶施加红石信号即可将其密封。未密封的大桶可以从开口面插入和抽出流体与物品。密封的大桶则可以安全地用 $(thing)活塞$()或 $(thing)动态结构$()搬来搬去。$(l:logistics/redstone_devices#clock)精密时钟$()能检测大桶配方何时完成并输出信号。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸阅读",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/sticks_and_stones",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/pottery",
+                "tfg:agriculture/leather_making",
+                "tfg:cooking/decay",
+                "tfg:cooking/cheese",
+                "tfg:logistics/redstone_devices"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 13,
+    "extra_recipe_mappings": {
+        "tag:tfc:barrels": 0,
+        "tfc:barrel_rack": 12
+    }
+}

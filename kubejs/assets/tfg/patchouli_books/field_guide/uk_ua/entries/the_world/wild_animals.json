@@ -1,0 +1,668 @@
+{
+	"name": "Фауна Землі",
+	"category": "tfg:the_world",
+	"icon": "tfc:medium_raw_hide",
+	"pages": [
+        {
+            "type": "patchouli:text",
+            "title": "Індекс",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:the_world/wild_animals#intro)Вступ$()$(li)$(bold)$(l:the_world/wild_animals#livestock)Свійська худоба$()$(li2)$(l:the_world/wild_animals#pig)Свиня$()$(li2)$(l:the_world/wild_animals#cow)Корова$()$(li2)$(l:the_world/wild_animals#goat)Коза$()$(li2)$(l:the_world/wild_animals#yak)Як$()$(li2)$(l:the_world/wild_animals#alpaca)Альпака$()$(li2)$(l:the_world/wild_animals#sheep)Вівця$()$(li2)$(l:the_world/wild_animals#musk_ox)Вівцебик$()$(li2)$(l:the_world/wild_animals#chicken)Курка$()$(li2)$(l:the_world/wild_animals#duck)Качка$()$(li2)$(l:the_world/wild_animals#quail)Перепілка$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li2)$(l:the_world/wild_animals#donkey)Віслюк$()$(li2)$(l:the_world/wild_animals#mule)Мул$()$(li2)$(l:the_world/wild_animals#horse)Кінь$()$(li2)$(l:the_world/wild_animals#dromedary_camel)Одногорбий верблюд$()$(li2)$(l:the_world/wild_animals#bactrian_camel)Двогорбий верблюд$()$(li)$(bold)$(l:the_world/wild_animals#predators)Хижаки$()$(li2)$(l:the_world/wild_animals#polar_bear)Білий ведмідь$()$(li2)$(l:the_world/wild_animals#black_bear)Чорний ведмідь$()$(li2)$(l:the_world/wild_animals#grizzly_bear)Грізлі$()$(li2)$(l:the_world/wild_animals#cougar)Пума$()$(li2)$(l:the_world/wild_animals#panther)Пантера$()$(li2)$(l:the_world/wild_animals#lion)Лев$()$(li2)$(l:the_world/wild_animals#tiger)Тигр$()$(li2)$(l:the_world/wild_animals#sabertooth)Саблезуб$()$(li2)$(l:the_world/wild_animals#wolf)Вовк$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li2)$(l:the_world/wild_animals#direwolf)Жахливий вовк$()$(li2)$(l:the_world/wild_animals#hyena)Гієна$()$(li2)$(l:the_world/wild_animals#crocodile)Крокодил$()$(li2)$(l:the_world/wild_animals#ocelot)Оцелот$()$(bold)$(li)$(l:the_world/wild_animals#ramming_prey)Таранна здобич$()$(li2)$(l:the_world/wild_animals#boar)Вепр$()$(li2)$(l:the_world/wild_animals#moose)Лось$()$(li2)$(l:the_world/wild_animals#wildebeest)Антилопа гну$()$(li2)$(l:the_world/wild_animals#bison)Бізон$()$(bold)$(li)$(l:the_world/wild_animals#prey)Здобич$()$(li2)$(l:the_world/wild_animals#rabbit)Кролик$()$(li2)$(l:the_world/wild_animals#fox)Лисиця$()$(li2)$(l:the_world/wild_animals#deer)Олень$()$(li2)$(l:the_world/wild_animals#caribou)Карібу$()$(li2)$(l:the_world/wild_animals#gazelle)Газель$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li2)$(l:the_world/wild_animals#bongo)Бонго$()$(li2)$(l:the_world/wild_animals#grouse)Рябчик$()$(li2)$(l:the_world/wild_animals#pheasant)Фазан$()$(li2)$(l:the_world/wild_animals#turkey)Індик$()$(li2)$(l:the_world/wild_animals#peafowl)Павич$()$(li2)$(l:the_world/wild_animals#lemming)Лемінг$()$(li2)$(l:the_world/wild_animals#jerboa)Тушканчик$()$(li2)$(l:the_world/wild_animals#mongoose)Мангуст$()$(bold)$(li)$(l:the_world/wild_animals#aquatic)Водні тварини$()$(li2)$(l:the_world/wild_animals#penguin)Пінгвін$()$(li2)$(l:the_world/wild_animals#turtle)Морська черепаха$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)$(li)$(l:the_world/wild_animals#fish)Риба$()$(li2)$(l:the_world/wild_animals#cod)Тріска$()$(li2)$(l:the_world/wild_animals#pufferfish)Риба фугу$()$(li2)$(l:the_world/wild_animals#jellyfish)Медуза$()$(li2)$(l:the_world/wild_animals#tropical_fish)Тропічна риба$()$(li2)$(l:the_world/wild_animals#salmon)Лосось$()$(li2)$(l:the_world/wild_animals#bluegill)Синьозябровий окунь$()$(bold)$(li)$(l:the_world/wild_animals#shellfish)Молюски$()$(li2)$(l:the_world/wild_animals#isopod)Рівноніг$()$(li2)$(l:the_world/wild_animals#lobster)Лобстер$()$(li2)$(l:the_world/wild_animals#crayfish)Річковий рак$()$(li2)$(l:the_world/wild_animals#horseshoe_crab)Мечехвіст$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)$(li)$(l:the_world/wild_animals#large_aquatic_animals)Великі водні тварини$()$(li2)$(l:the_world/wild_animals#orca)Косатка$()$(li2)$(l:the_world/wild_animals#dolphin)Дельфін$()$(li2)$(l:the_world/wild_animals#manatee)Ламантин$()$(li2)$(l:the_world/wild_animals#leopard_seal)Морський леопард$()$(li2)$(l:the_world/wild_animals#squid)Кальмар$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "Вступ до тварин",
+            "text": "Тварин можна поділити на кілька категорій: $(l:the_world/wild_animals#livestock)свійська худоба$(), $(l:the_world/wild_animals#predators)хижаки$(), $(l:the_world/wild_animals#prey)здобич$() та $(l:the_world/wild_animals#aquatic)водні$() тварини. Переважна більшість тварин після вбивства дає м’ясо. Однак деяке м’ясо може бути небезпечним для вживання, особливо сире."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Свійська худоба",
+            "anchor": "livestock",
+            "text": "$(thing)Свійська худоба$() — це тварини, яких гравець може приручати та розводити. Свійська худоба може бути $(thing)самцем$() або $(thing)самкою$(), тому під час збирання дикої худоби важливо намагатися отримати по одній тварині кожної статі для розведення."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "pig",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): −10–35°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): > 200мм$(br)$(bold)Місце появи$(): Помірні ліси$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#mammals)Ссавці$()$(br)$(bold)Раціон$(): Будь-що, навіть гниле.$(br)$(bold)Максимальна кількість дитинчат$(): 10$(br)$(bold)Час вагітності$(): 19 днів$(br)$(bold)Час вирощування$(): 80 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 60",
+            "title": "Свині"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:pig{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.6,
+            "name": " ",
+            "text": "Свині"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cow",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): -10–35°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): > 250мм$(br)$(bold)Місце появи$(): Більшість кліматів$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#dairy_animals)Молочні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$(), яке може бути протухлим.$(br)$(bold)Макс. кількість дитинчат$(): 2$(br)$(bold)Час вагітності$(): 58 днів$(br)$(bold)Час вирощування$(): 192 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 128$(br)$(bold)Продукт$(): $(l:cooking/cheese)Молоко$()$(br)$(bold)Цикл виробництва$(): 1 день",
+            "title": "Корови"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:cow{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.75,
+            "name": " ",
+            "text": "Корова"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "goat",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): −12–25°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): > 300мм$(br)$(bold)Місце появи$(): Помірний клімат$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#dairy_animals)Молочні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$(), $(l:cooking/food_and_water#fruit)Фрукти$() та $(l:cooking/food_and_water#vegetables)Овочі$(), які можуть бути протухлими.$(br)$(bold)Максимум дитинчат$(): 2$(br)$(bold)Час вагітності$(): 32 дні$(br)$(bold)Час вирощування$(): 96 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 60$(br)$(bold)Продукт$(): $(l:cooking/cheese)Молоко$()$(br)$(bold)Цикл виробництва$(): 3 дні",
+            "title": "Кози"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:goat{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.75,
+            "name": " ",
+            "text": "Коза"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "yak",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): > −11°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): > 100мм$(br)$(bold)Місце появи$(): Холодний клімат$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#dairy_animals)Молочні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$()$(br)$(bold)Максимум дитинчат$(): 1$(br)$(bold)Час вагітності$(): 64 днів$(br)$(bold)Час вирощування$(): 180 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 230$(br)$(bold)Продукт$(): $(l:cooking/cheese)Молоко$()$(br)$(bold)Цикл виробництва$(): 23,5 години",
+            "title": "Як"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:yak{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.75,
+            "name": " ",
+            "text": "Як"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "alpaca",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): -8–20°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): > 250мм$(br)$(bold)Місце появи$(): Помірний клімат$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#wooly_animals)Вовняні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$() та $(l:cooking/food_and_water#fruit)Фрукти$()$(br)$(bold)Максимум дитинчат$(): 2$(br)$(bold)Час вагітності$(): 36 днів$(br)$(bold)Час вирощування$(): 98 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань(): 128$(br)$(bold)Продукт$(): $(l:agriculture/weaving)Вовна$()$(br)$(bold)Цикл виробництва$(): 5 днів",
+            "title": "Альпака"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:alpaca{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.75,
+            "name": " ",
+            "text": "Альпака"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "sheep",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): 0–35°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): 70–300мм$(br)$(bold)Місце появи$(): Сухий клімат$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#wooly_animals)Вовняні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$()$(br)$(bold)Максимум дитинчат$(): 2$(br)$(bold)Час вагітності$(): 32 дні$(br)$(bold)Час вирощування$(): 56 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 60$(br)$(bold)Продукт$(): $(l:agriculture/weaving)Вовна$()$(br)$(bold)Цикл виробництва$(): 7 днів",
+            "title": "Вівця"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:sheep{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.75,
+            "name": " ",
+            "text": "Вівця"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "musk_ox",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): -25–0°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): > 100мм$(br)$(bold)Місце появи$(): Холодний клімат$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#wooly_animals)Вовняні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$()$(br)$(bold)Максимум дитинчат$(): 1$(br)$(bold)Час вагітності$(): 64 дні$(br)$(bold)Час вирощування$(): 168 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 160$(br)$(bold)Продукт$(): $(l:agriculture/weaving)Вовна$()$(br)$(bold)Цикл виробництва$(): 4 дні",
+            "title": "Вівцебик"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:musk_ox{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.75,
+            "name": " ",
+            "text": "Вівцебик"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "chicken",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): > 14°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): > 225мм$(br)$(bold)Місце появи$(): Теплі ліси$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#oviparous_animals)Яйцекладні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$(), $(l:cooking/food_and_water#fruit)Фрукти$(), $(l:cooking/food_and_water#vegetables)Овочі$() та $(l:agriculture/growing_crops)Насіння$(), яке може бути гнилим.$(br)$(bold)Цикл відкладання яєць$(): 30 годин$(br)$(bold)Час вирощування$(): 24 дні$(br)$(bold)Час вилуплення$(): 8 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 100$(br)$(bold)Продукт$(): Яйця та пір'я.$()",
+            "title": "Кури"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:chicken{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.7,
+            "name": " ",
+            "text": "Курка"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "duck",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): -25–30°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): > 100мм$(br)$(bold)Місце появи$(): Рівнини$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#oviparous_animals)Яйцекладні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$(), $(l:cooking/food_and_water#fruit)Фрукти$(), $(l:cooking/food_and_water#vegetables)Овочі$() та $(l:agriculture/growing_crops)Насіння$().$(br)$(bold)Цикл відкладання яєць$(): 32 години$(br)$(bold)Час вирощування$$(): 32 дні$(br)$(bold)Час вилуплення$(): 8 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 72$(br)$(bold)Продукт$(): Яйця та пір'я.$()",
+            "title": "Качки"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:duck{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.7,
+            "name": " ",
+            "text": "Качка"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "quail",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): -15–15°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): > 200мм$(br)$(bold)Місце появи$(): Холодний клімат$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#oviparous_animals)Яйцекладні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$(), $(l:cooking/food_and_water#fruit)Фрукти$(), $(l:cooking/food_and_water#vegetables)Овочі$() та $(l:agriculture/growing_crops)Насіння$(), яке може бути гнилим.$(br)$(bold)Цикл відкладання яєць$(): 28 годин$(br)$(bold)Час вирощування$(): 22 дні$(br)$(bold)Час вилуплення$(): 8 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 48$(br)$(bold)Продукт$(): Яйця та пір'я.$()",
+            "title": "Перепілка"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:quail{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.7,
+            "name": " ",
+            "text": "Перепілка"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "donkey",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): > -15°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): 130–400мм$(br)$(bold)Місце появи$(): Вологі рівнини$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#equines)Коні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$() та $(l:cooking/food_and_water#fruit)Фрукти$()$(br)$(bold)Максимум дитинчат$(): 1$(br)$(bold)Час вагітності$(): 19 днів$(br)$(bold)Час вирощування$(): 80 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 60",
+            "title": "Віслюки"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:donkey{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.6,
+            "name": " ",
+            "text": "Віслюк"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "mule",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): > -15°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): 130–400мм$(br)$(bold)Місце появи$(): Рівнини, виводиться від коней і віслюків.$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#equines)Коні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$() та $(l:cooking/food_and_water#fruit)Фрукти$()$(br)$(bold)Максимум дитинчат$$(): 1$(br)$(bold)Час вагітності$(): 19 днів$(br)$(bold)Час вирощування$(): 80 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 60",
+            "title": "Мули"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:mule{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.6,
+            "name": " ",
+            "text": "Мул"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "horse",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): > -15°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): 130–400мм$(br)$(bold)Місце появи$(): Рівнини$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#equines)Коні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$() та $(l:cooking/food_and_water#fruit)Фрукти$()$(br)$(bold)Максимум дитинчат$(): 1$(br)$(bold)Час вагітності$(): 19 днів$(br)$(bold)Час вирощування$(): 80 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 60",
+            "title": "Коні"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:horse{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.6,
+            "name": " ",
+            "text": "Кінь"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "dromedary_camel",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): > -5°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): < 100мм$(br)$(bold)Місця появи$(): Жаркий і сухий клімат$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#camelides)Верблюдові$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$() та $(l:cooking/food_and_water#fruit)Фрукти$()$(br)$(bold)Максимум дитинчат$(): 1$(br)$(bold)Час вагітності$(): 19 днів$(br)$(bold)Час вирощування$(): 80 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 60",
+            "title": "Одногорбий верблюд"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:dromedary_camel{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.6,
+            "name": " ",
+            "text": "Одногорбий верблюд."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bactrian_camel",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): > -5°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): < 100мм$(br)$(bold)Місця появи$(): Холодний і сухий клімат$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#camelides)Верблюдові$() / $(l:agriculture/animal_husbandry#wooly_animals)Вовняні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$() та $(l:cooking/food_and_water#fruit)Фрукти$()$(br)$(bold)Максимум дитинчат$(): 1$(br)$(bold)Час вагітності$(): 24 дні$(br)$(bold)Час вирощування$(): 80 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 80$(br)$(bold)Продукт$(): $(l:agriculture/weaving)Вовна$()$(br)$(bold)Цикл виробництва$(): 7 днів",
+            "title": "Двогорбий верблюд"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:bactrian_camel{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.6,
+            "name": " ",
+            "text": "Двогорбий верблюд."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "predators",
+            "text": "$(thing)Хижаки$() — це тварини, які можуть атакувати гравця. Вони бувають або $(thing)нічними$() (полюють лише вночі), або $(thing)денними$() (полюють лише вдень). Хижаки можуть бути нейтральними або ворожими, залежно від того, чи вбили вони ціль нещодавно. Хижаки мають власну територію, яку захищатимуть: якщо ви відбіжите достатньо далеко, хижак припинить погоню та повернеться додому.",
+            "title": "Хижаки"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:polar_bear",
+            "scale": 0.55,
+            "name": "Білий ведмідь",
+            "anchor": "polar_bear",
+            "text": "Білий ведмідь з'являється лише в найхолодніших регіонах, де $(l:the_world/climate#temperature)температура$() не перевищує 10°C, а рівень $(l:the_world/climate#rainfall)опадів$() становить не менше 100 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:grizzly_bear",
+            "scale": 0.55,
+            "name": "Грізлі",
+            "anchor": "grizzly_bear",
+            "text": "Грізлі з'являється в лісах помірного клімату з діапазоном $(l:the_world/climate#temperature)температур$() від -15 до 15°C та рівнем $(l:the_world/climate#rainfall)опадів$() щонайменше 200 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:black_bear",
+            "scale": 0.55,
+            "name": "Чорний ведмідь",
+            "anchor": "black_bear",
+            "text": "Чорний ведмідь з'являється в лісах теплішого та вологішого клімату з $(l:the_world/climate#temperature)температурою$() від 5 до 20°C та рівнем $(l:the_world/climate#rainfall)опадів$() щонайменше 250 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:cougar",
+            "scale": 0.6,
+            "name": "Пума",
+            "anchor": "cougar",
+            "text": "Пума віддає перевагу більшості помірних кліматичних зон із $(l:the_world/climate#temperature)температурою$() від -10 до 21°C та рівнем $(l:the_world/climate#rainfall)опадів$() щонайменше 150 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:panther",
+            "scale": 0.6,
+            "name": "Пантера",
+            "anchor": "panther",
+            "text": "Пантера віддає перевагу більшості помірних кліматичних зон із $(l:the_world/climate#temperature)температурою$() від -10 до 21°C та рівнем $(l:the_world/climate#rainfall)опадів$() щонайменше 150 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:lion",
+            "scale": 0.55,
+            "name": "Лев",
+            "anchor": "lion",
+            "text": "Лев з'являється на рівнинах із середньою $(l:the_world/climate#temperature)температурою$() щонайменше 16°C та рівнем $(l:the_world/climate#rainfall)опадів$() від 50 до 300 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:tiger",
+            "scale": 0.55,
+            "name": "Тигр",
+            "anchor": "tiger",
+            "text": "Тигр з'являється в лісах із середньою $(l:the_world/climate#temperature)температурою$() щонайменше 13°C та рівнем $(l:the_world/climate#rainfall)опадів$() понад 100 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:sabertooth",
+            "scale": 0.6,
+            "name": "Шаблезуб",
+            "anchor": "sabertooth",
+            "text": "Шаблезубий тигр з'являється за будь-якої $(l:the_world/climate#temperature)температури$() вище 0°C та рівня $(l:the_world/climate#rainfall)опадів$() понад 250 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:wolf",
+            "anchor": "wolf",
+            "scale": 0.7,
+            "text": "Вовк з'являється за будь-якої $(l:the_world/climate#temperature)температури$() нижче 22°C та $(l:the_world/climate#rainfall)опадів$() від 70 до 480мм. Вони полюють зграями. Якщо годувати вовка достатню кількість разів, він приручиться та перетвориться на $(l:game_mechanics/pets)Собаку$()."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:direwolf",
+            "anchor": "direwolf",
+            "scale": 0.7,
+            "text": "Жахливий вовк з'являється за будь-якої $(l:the_world/climate#temperature)температури$() нижче нуля та рівня $(l:the_world/climate#rainfall)опадів$() від 150 до 420 мм. Вони полюють зграями. Вони більші за звичайних вовків і не піддаються прирученню."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:hyena",
+            "anchor": "hyena",
+            "scale": 0.7,
+            "text": "Гієна з'являється за будь-якої $(l:the_world/climate#temperature)температури$() вище 15°C та рівня $(l:the_world/climate#rainfall)опадів$() від 80 до 380 мм. Вони полюють зграями. Вони не піддаються прирученню."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:crocodile",
+            "anchor": "crocodile",
+            "scale": 0.7,
+            "name": "Крокодил",
+            "text": "Крокодил з'являється біля річок, озер та боліт за будь-якої $(l:the_world/climate#temperature)температури$() вище 15°C та будь-якого рівня $(l:the_world/climate#rainfall)опадів$(). Вони ведуть нічний спосіб життя і найбільш небезпечні у воді."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:ocelot",
+            "anchor": "ocelot",
+            "scale": 0.7,
+            "text": "Оцелот полює на дрібних тварин. Він з'являється за $(l:the_world/climate#temperature)температури$() від 15 до 30°C та $(l:the_world/climate#rainfall)опадів$() від 300 до 500мм у лісах. Якщо годувати оцелота достатню кількість разів, він приручиться та перетвориться на $(l:game_mechanics/pets)Кішку$(). Оцелоти можуть їсти сиру рибу."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ramming_prey",
+            "text": "$(thing)Таранні$() тварини час від часу намагаються атакувати з розгону істот поблизу, зокрема й гравця. Їхні атаки потужні, але від них можна ухилитися. Вони таранитимуть частіше, якщо їх атакувати.",
+            "title": "Таранні"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:boar",
+            "anchor": "boar",
+            "scale": 0.7,
+            "name": "Вепр",
+            "text": "Дикий кабан з'являється за $(l:the_world/climate#temperature)температури$() від -5 до 25°C та рівня $(l:the_world/climate#rainfall)опадів$() від 130 до 400 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:moose",
+            "anchor": "moose",
+            "scale": 0.7,
+            "name": "Лось",
+            "text": "Лось з'являється в лісах за $(l:the_world/climate#temperature)температури$() від -15 до 10°C та рівня $(l:the_world/climate#rainfall)опадів$() від 150 до 300 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:wildebeest",
+            "anchor": "wildebeest",
+            "scale": 0.7,
+            "name": "Антилопа гну",
+            "text": "Антилопа гну з'являється на відкритих рівнинах за будь-якої $(l:the_world/climate#temperature)температури$() вище 13°C та рівня $(l:the_world/climate#rainfall)опадів$() від 90 до 380 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:bison",
+            "anchor": "bison",
+            "scale": 0.7,
+            "name": "Бізон",
+            "text": "Бізон з'являється на відкритих рівнинах за $(l:the_world/climate#temperature)температури$() від -10 до 15°C та рівня $(l:the_world/climate#rainfall)опадів$() від 160 до 420 мм."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "prey",
+            "text": "$(thing)Здобич$() — це тварини, які бояться гравців і хижаків. Вони вміють майстерно втікати від небезпеки, але зазвичай не можуть дати відсіч. Деякі тварини-жертви полюбляють ласувати сільськогосподарськими культурами.",
+            "title": "Здобич"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:rabbit",
+            "scale": 0.7,
+            "name": "Кролик",
+            "anchor": "rabbit",
+            "text": "Кролик відомий тим, що полюбляє гризти моркву та капусту. Вони повсюдно поширені у світі та змінюють колір хутра залежно від клімату. Для їхньої появи достатньо лише 15 мм $(l:the_world/climate#rainfall)опадів$()."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:fox",
+            "scale": 0.7,
+            "name": "Лисиця",
+            "anchor": "fox",
+            "text": "Лисиця полюбляє їсти ягоди з кущів. Її можна знайти в лісах за $(l:the_world/climate#temperature)температури$() нижче 25°C та рівня $(l:the_world/climate#rainfall)опадів$() від 130 до 400 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:deer",
+            "anchor": "deer",
+            "scale": 0.7,
+            "text": "Олень з'являється в лісах за будь-якої $(l:the_world/climate#temperature)температури$() від -15 до 25°C та рівня $(l:the_world/climate#rainfall)опадів$() від 130 до 400 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:caribou",
+            "scale": 0.6,
+            "name": "Карибу",
+            "anchor": "caribou",
+            "text": "Північний олень з'являється за будь-якої $(l:the_world/climate#temperature)температури$() нижче -9°C та рівня $(l:the_world/climate#rainfall)опадів$() від 110 до 500 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:gazelle",
+            "scale": 0.7,
+            "anchor": "gazelle",
+            "text": "Газель з'являється на відкритих рівнинах за будь-якої $(l:the_world/climate#temperature)температури$() вище 12°C та рівня $(l:the_world/climate#rainfall)опадів$() від 90 до 380 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:bongo",
+            "scale": 0.9,
+            "name": "Бонго",
+            "anchor": "bongo",
+            "text": "Бонго з'являється в лісах за будь-якої $(l:the_world/climate#temperature)температури$() вище 15°C та рівня $(l:the_world/climate#rainfall)опадів$() від 230 до 500 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:grouse",
+            "scale": 0.7,
+            "anchor": "grouse",
+            "text": "Тетерук з'являється за будь-якої $(l:the_world/climate#temperature)температури$() від -12 до 13°C та рівня $(l:the_world/climate#rainfall)опадів$() від 150 до 400 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:pheasant",
+            "scale": 0.7,
+            "anchor": "pheasant",
+            "text": "Фазан з'являється в лісах за будь-якої $(l:the_world/climate#temperature)температури$() від -5 до 17°C та рівня $(l:the_world/climate#rainfall)опадів$() від 100 до 300 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:turkey",
+            "scale": 0.7,
+            "anchor": "turkey",
+            "text": "Індик з'являється в лісах за будь-якої $(l:the_world/climate#temperature)температури$() від 0 до 17°C та рівня $(l:the_world/climate#rainfall)опадів$() від 250 до 450 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:peafowl",
+            "scale": 0.6,
+            "name": "Павич",
+            "anchor": "peafowl",
+            "text": "Павич з'являється в лісах за будь-якої $(l:the_world/climate#temperature)температури$() вище 14°C та рівня $(l:the_world/climate#rainfall)опадів$() від 190 до 500 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:lemming",
+            "scale": 1.5,
+            "offset": -0.2,
+            "name": "Лемінг",
+            "anchor": "lemming",
+            "text": "Лемінг з'являється за будь-якої $(l:the_world/climate#temperature)температури$() від -12 до -3°C та рівня $(l:the_world/climate#rainfall)опадів$() від 160 до 500 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:jerboa",
+            "scale": 1.2,
+            "name": "Тушканчик",
+            "anchor": "jerboa",
+            "text": "Тушканчик з'являється за будь-якої $(l:the_world/climate#temperature)температури$() від -3 до 25°C та рівня $(l:the_world/climate#rainfall)опадів$() нижче 160 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:mongoose",
+            "scale": 0.8,
+            "name": "Мангуст",
+            "anchor": "mongoose",
+            "text": "Мангуст з'являється за будь-якої $(l:the_world/climate#temperature)температури$() вище 12°C та рівня $(l:the_world/climate#rainfall)опадів$() від 160 до 500 мм."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "aquatic",
+            "text": "$(thing)Водні тварини$() — це широка категорія, що охоплює кілька різних типів поведінки. Вони можуть бути $(thing)мешканцями узбережжя$(), $(thing)рибами$(), $(thing)молюсками$() або $(thing)великими водними істотами$()",
+            "title": "Водні тварини"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)Прибережні тварини$() з'являються лише на морських узбережжях і проводять частину дня плаваючи, а частину — гуляючи пляжем. Це допитливі істоти, які ходитимуть за гравцем услід, проте їх неможливо приручити."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:penguin",
+            "scale": 0.7,
+            "name": "Пінгвін",
+            "anchor": "penguin",
+            "text": "Пінгвін з'являється лише на найхолодніших пляжах, де $(l:the_world/climate#temperature)температура$() не перевищує -14°C, а рівень $(l:the_world/climate#rainfall)опадів$() становить щонайменше 75 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:turtle",
+            "scale": 0.7,
+            "name": "Морська черепаха",
+            "anchor": "turtle",
+            "text": "Морська черепаха полюбляє теплу воду. Вона з'являється за $(l:the_world/climate#temperature)температури$() щонайменше 21°C та рівня $(l:the_world/climate#rainfall)опадів$() не менше 250 мм."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fish",
+            "text": "$(thing)Риби$() — це невеликі істоти, які плавають у воді. Більшість із них можна $(l:agriculture/fishing)ловити на вудку$(). Деякі віддають перевагу океанам, річкам або озерам.",
+            "title": "Риба"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:cod",
+            "scale": 0.7,
+            "name": "Тріска",
+            "anchor": "cod",
+            "text": "Тріска віддає перевагу холодним океанам із $(l:the_world/climate#temperature)температурою$() не вище 18°C. Її можна виловити вудкою."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:pufferfish",
+            "scale": 0.7,
+            "name": "Риба фугу",
+            "anchor": "pufferfish",
+            "text": "Риба фугу мешкає в будь-якому океані з $(l:the_world/climate#temperature)температурою$() щонайменше 10°C."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:jellyfish",
+            "scale": 0.7,
+            "name": "Медуза",
+            "anchor": "jellyfish",
+            "text": "Медузи мешкають у тепліших океанах із $(l:the_world/climate#temperature)температурою$() щонайменше 18°C."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:tropical_fish",
+            "scale": 0.7,
+            "name": "Тропічна риба",
+            "anchor": "tropical_fish",
+            "text": "Тропічні риби віддають перевагу теплішим океанам із $(l:the_world/climate#temperature)температурою$() щонайменше 18°C."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:salmon",
+            "scale": 0.7,
+            "name": "Лосось",
+            "anchor": "salmon",
+            "text": "Лосось з'являється в будь-якій річці або озері з $(l:the_world/climate#temperature)температурою$() щонайменше -5°C."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:bluegill",
+            "scale": 0.7,
+            "name": "Синьозябровий окунь",
+            "anchor": "bluegill",
+            "text": "Синьозябровий окунь з'являється в будь-якій річці або озері з $(l:the_world/climate#temperature)температурою$() від -10°C до 26°C."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "shellfish",
+            "text": "$(thing)Молюски$() — це невеликі тварини, які живуть на дні водойм. Їх не можна ловити на вудку, але з них випадають мушлі, які можна їсти або перетворювати на $(thing)флюс$(). Молюсків можна використовувати як $(l:agriculture/fishing)наживку$() для риб.",
+            "title": "Молюски"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:isopod",
+            "scale": 0.7,
+            "name": "Рівноніг",
+            "anchor": "isopod",
+            "text": "Ізоподи з'являються в глибоководних частинах океанів із $(l:the_world/climate#temperature)температурою$() не вище 14°C."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:lobster",
+            "scale": 0.7,
+            "name": "Лобстер",
+            "anchor": "lobster",
+            "text": "Лобстер з'являється в будь-якому океані, $(l:the_world/climate#temperature)температура$() якого не перевищує 21°C."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:crayfish",
+            "scale": 0.7,
+            "name": "Річковий рак",
+            "anchor": "crayfish",
+            "text": "Річкові раки схожі на лобстерів, але з'являються в річках та озерах. Їм потрібна $(l:the_world/climate#temperature)температура$() щонайменше 5°C та рівень $(l:the_world/climate#rainfall)опадів$() не менше 125 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:horseshoe_crab",
+            "scale": 0.7,
+            "name": "Мечохвіст",
+            "anchor": "horseshoe_crab",
+            "text": "Мечохвости з'являються в океанах помірного клімату з $(l:the_world/climate#temperature)температурою$() від 10 до 21°C та рівнем $(l:the_world/climate#rainfall)опадів$() не більше 400 мм."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "large_aquatic_animals",
+            "text": "$(thing)Великі водні тварини$() — це більші тварини, які живуть у великих водоймах. Деякі з них полюють на рибу. З них випадає $(l:game_mechanics/lighting)жир$(), з якого можна виготовляти паливо для ламп.",
+            "title": "Великі водні тварини"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:orca",
+            "scale": 0.25,
+            "name": "Косатка",
+            "anchor": "orca",
+            "text": "Косатки мешкають у глибоких океанах із $(l:the_world/climate#temperature)температурою$() не вище 19°C та рівнем $(l:the_world/climate#rainfall)опадів$() щонайменше 100 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:dolphin",
+            "scale": 0.4,
+            "name": "Дельфін",
+            "anchor": "dolphin",
+            "text": "Дельфіни мешкають у глибоких океанах із $(l:the_world/climate#temperature)температурою$() щонайменше 10°C та рівнем $(l:the_world/climate#rainfall)опадів$() не менше 200 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:manatee",
+            "scale": 0.25,
+            "name": "Ламантин",
+            "anchor": "manatee",
+            "text": "Ламантини мешкають у будь-яких теплих озерах із $(l:the_world/climate#temperature)температурою$() щонайменше 20°C та рівнем $(l:the_world/climate#rainfall)опадів$() не більше 300 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:leopard_seal",
+            "scale": 0.5,
+            "name": "Морський леопард",
+            "anchor": "leopard_seal",
+            "text": "Морський леопард з'являється лише на найхолодніших пляжах, де $(l:the_world/climate#temperature)температура$() не перевищує -9°C, а рівень $(l:the_world/climate#rainfall)опадів$() становить щонайменше 105 мм. Вони полюють на пінгвінів, а самі стають здобиччю для косаток."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "squid",
+            "text": "Кальмари можуть з'являтися в будь-якому глибокому океані. З них випадають $(thing)чорнильні мішки$(), і вони випускають чорнило на будь-якого гравця, що підійде надто близько. Подейкують, що кальмари в глибоких недосліджених печерах мають дивні властивості.",
+            "title": "Кальмар"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Докладніше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/flora",
+                "tfg:the_world/wild_fruits",
+                "tfg:the_world/climate",
+                "tfg:agriculture/animal_husbandry",
+                "tfg:agriculture/weaving",
+                "tfg:agriculture/leather_making"
+            ]
+        }
+	],
+	"read_by_default": true,
+	"sortnum": 7
+}

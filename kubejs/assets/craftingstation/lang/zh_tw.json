@@ -1,4 +1,8 @@
 {
-	"text.crafting_station.error": "發現錯誤的配方%s,請查看日誌以獲取詳細信息",
-	"title.crafting_station": "工作站"
+	"text.crafting_station.clear": "清空合成格\n(按住 Shift 優先放入\n側邊物品欄)",
+	"text.crafting_station.connected_resources.false": "使用相連資源：否",
+	"text.crafting_station.connected_resources.true": "使用相連資源：是",
+	"text.crafting_station.error": "發現錯誤的配方 %s，詳細資訊請查看記錄檔",
+	"text.crafting_station.jei_nopull_output": "這個容器中有鎖定的欄位！\nJEI 無法再從只能輸出的欄位(例如熔爐的產物欄位)取用資源。\n\n請把這些物品移到一般儲存欄位再使用！",
+	"title.crafting_station": "合成站"
 }

@@ -1,0 +1,4572 @@
+{
+    "name": "地球作物",
+    "category": "tfg:the_world",
+    "icon": "tfc:textures/item/seeds/onion.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:the_world/wild_crops#wild_crops)野生作物$()$(li)$(bold)$(#0000eb)作物$()$(li2)$(l:the_world/wild_crops#barley)大麦$()$(li2)$(l:the_world/wild_crops#beet)甜菜$()$(li2)$(l:the_world/wild_crops#cabbage)卷心菜$()$(li2)$(l:the_world/wild_crops#canola)油菜$()$(li2)$(l:the_world/wild_crops#carrot)胡萝卜$()$(li2)$(l:the_world/wild_crops#cucumber)黄瓜$()$(li2)$(l:the_world/wild_crops#flax)亚麻$()$(li2)$(l:the_world/wild_crops#garlic)大蒜$()$(li2)$(l:the_world/wild_crops#green_bean)四季豆$()$(li2)$(l:the_world/wild_crops#jute)黄麻$()$(li2)$(l:the_world/wild_crops#lentil)扁豆$()$(li2)$(l:the_world/wild_crops#maize)玉米$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li2)$(l:the_world/wild_crops#melon)西瓜$()$(li2)$(l:the_world/wild_crops#oat)燕麦$()$(li2)$(l:the_world/wild_crops#onion)洋葱$()$(li2)$(l:the_world/wild_crops#papyrus)纸莎草$()$(li2)$(l:the_world/wild_crops#potato)马铃薯$()$(li2)$(l:the_world/wild_crops#pumpkin)南瓜$()$(li2)$(l:the_world/wild_crops#radish)萝卜$()$(li2)$(l:the_world/wild_crops#red_bell_pepper)红辣椒$()$(li2)$(l:the_world/wild_crops#rice)水稻$()$(li2)$(l:the_world/wild_crops#rye)黑麦$()$(li2)$(l:the_world/wild_crops#soybean)大豆$()$(li2)$(l:the_world/wild_crops#squash)西葫芦$()$(li2)$(l:the_world/wild_crops#sugarcane)甘蔗$()$(li2)$(l:the_world/wild_crops#sunflower)向日葵$()$(li2)$(l:the_world/wild_crops#tomatoes)西红柿$()$(li2)$(l:the_world/wild_crops#wheat)小麦$()$(li2)$(l:the_world/wild_crops#yellow_bell_pepper)黄甜椒$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "text": "作物是食物和其他材料的来源。虽然每种作物都略有不同，但它们都遵循一些相似的原理。要开始种植作物，你需要一些$(thing)种子$()——找到$(l:the_world/wild_crops#wild_crops)野生作物$()并破坏它们即可获得。$(br2)拿到种子之后，你还需要一把$(thing)锄头$()来开垦耕地。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "除了寻找野生作物，种子也可以从已有的作物中产出。当完全成熟的作物死亡时——无论是因为天气，还是放任它腐烂——它都会结籽，掉落更多种子，供你下一季种出更多作物。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "野生作物",
+            "anchor": "wild_crops",
+            "text": "$(thing)野生作物$()零星散布在世界各地，一小片一小片地生长。收割它们可以获得一些$(thing)产物$()和$(thing)种子$()，之后就可以自己种植了。$(br2)野生作物只在6月到10月之间成熟。其他时候它们会呈现枯死的样子，直到下一个夏天。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "野生作物会生成在该作物本身可种植的气候附近，所以如果你想找某种特定作物，就去它能够种植的气候区域寻找。$(br2)不过，与玩家种植的$(l:agriculture/growing_crops)作物$()不同，野生作物不需要$(l:agriculture/growing_crops#hydration)湿度$()。它们分布在哪些区域，取决于当地的平均$(l:the_world/climate#temperature)温度$()和$(l:the_world/climate#rainfall)降雨量$()。"
+        },
+        {
+            "type": "tfg:table",
+            "strings": [
+                {
+                    "text": "作物",
+                    "bold": true
+                },
+                {
+                    "text": "温度（°C）",
+                    "bold": true
+                },
+                {
+                    "text": "降雨量（mm）",
+                    "bold": true
+                },
+                {
+                    "text": "大麦"
+                },
+                {
+                    "text": " -8 - 26"
+                },
+                {
+                    "text": " 70 - 310"
+                },
+                {
+                    "text": "燕麦"
+                },
+                {
+                    "text": "  3 - 40"
+                },
+                {
+                    "text": "140 - 400"
+                },
+                {
+                    "text": "黑麦"
+                },
+                {
+                    "text": "-11 - 30"
+                },
+                {
+                    "text": "100 - 350"
+                },
+                {
+                    "text": "玉米"
+                },
+                {
+                    "text": " 13 - 40"
+                },
+                {
+                    "text": "300 - 500"
+                },
+                {
+                    "text": "小麦"
+                },
+                {
+                    "text": " -4 - 35"
+                },
+                {
+                    "text": "100 - 400"
+                },
+                {
+                    "text": "水稻"
+                },
+                {
+                    "text": " 15 - 30"
+                },
+                {
+                    "text": "100 - 500"
+                },
+                {
+                    "text": "甜菜"
+                },
+                {
+                    "text": " -5 - 20"
+                },
+                {
+                    "text": " 70 - 300"
+                },
+                {
+                    "text": "卷心菜"
+                },
+                {
+                    "text": "-10 - 27"
+                },
+                {
+                    "text": " 60 - 280"
+                },
+                {
+                    "text": "胡萝卜"
+                },
+                {
+                    "text": "  3 - 30"
+                },
+                {
+                    "text": "100 - 400"
+                },
+                {
+                    "text": "大蒜"
+                },
+                {
+                    "text": "-20 - 18"
+                },
+                {
+                    "text": " 60 - 310"
+                },
+                {
+                    "text": "四季豆"
+                },
+                {
+                    "text": "  2 - 35"
+                },
+                {
+                    "text": "150 - 410"
+                },
+                {
+                    "text": "西瓜"
+                },
+                {
+                    "text": "  5 - 37"
+                },
+                {
+                    "text": "200 - 500"
+                }
+            ],
+            "text": "",
+            "title": "野生作物需求",
+            "legend": [],
+            "columns": 2,
+            "first_column_width": 80,
+            "column_width": 70,
+            "row_height": 10,
+            "left_buffer": 2,
+            "top_buffer": 12,
+            "draw_background": false
+        },
+        {
+            "type": "patchouli:empty",
+            "draw_filler": false
+        },
+        {
+            "type": "tfg:table",
+            "strings": [
+                {
+                    "text": "作物",
+                    "bold": true
+                },
+                {
+                    "text": "温度（°C）",
+                    "bold": true
+                },
+                {
+                    "text": "降雨量（mm）",
+                    "bold": true
+                },
+                {
+                    "text": "马铃薯"
+                },
+                {
+                    "text": " -1 - 37"
+                },
+                {
+                    "text": "200 - 410"
+                },
+                {
+                    "text": "南瓜"
+                },
+                {
+                    "text": "  0 - 30"
+                },
+                {
+                    "text": "120 - 390"
+                },
+                {
+                    "text": "洋葱"
+                },
+                {
+                    "text": "  0 - 30"
+                },
+                {
+                    "text": "100 - 390"
+                },
+                {
+                    "text": "大豆"
+                },
+                {
+                    "text": "  8 - 30"
+                },
+                {
+                    "text": "160 - 410"
+                },
+                {
+                    "text": "西葫芦"
+                },
+                {
+                    "text": "  5 - 33"
+                },
+                {
+                    "text": " 90 - 390"
+                },
+                {
+                    "text": "甘蔗"
+                },
+                {
+                    "text": " 12 - 38"
+                },
+                {
+                    "text": "160 - 500"
+                },
+                {
+                    "text": "西红柿"
+                },
+                {
+                    "text": "  0 - 36"
+                },
+                {
+                    "text": "120 - 390"
+                },
+                {
+                    "text": "黄麻"
+                },
+                {
+                    "text": "  5 - 37"
+                },
+                {
+                    "text": "100 - 410"
+                },
+                {
+                    "text": "纸莎草"
+                },
+                {
+                    "text": " 19 - 37"
+                },
+                {
+                    "text": "310 - 500"
+                },
+                {
+                    "text": "红辣椒"
+                },
+                {
+                    "text": " 16 - 30"
+                },
+                {
+                    "text": "190 - 400"
+                },
+                {
+                    "text": "黄甜椒"
+                },
+                {
+                    "text": " 16 - 30"
+                },
+                {
+                    "text": "190 - 400"
+                },
+                {
+                    "text": "向日葵"
+                },
+                {
+                    "text": "  5 - 40"
+                },
+                {
+                    "text": "100 - 450"
+                }
+            ],
+            "text": "",
+            "title": "野生作物需求",
+            "legend": [],
+            "columns": 2,
+            "first_column_width": 80,
+            "column_width": 70,
+            "row_height": 10,
+            "left_buffer": 2,
+            "top_buffer": 12,
+            "draw_background": false
+        },
+        {
+            "type": "patchouli:empty",
+            "draw_filler": false
+        },
+        {
+            "type": "tfg:table",
+            "strings": [
+                {
+                    "text": "作物",
+                    "bold": true
+                },
+                {
+                    "text": "温度（°C）",
+                    "bold": true
+                },
+                {
+                    "text": "降雨量（mm）",
+                    "bold": true
+                },
+                {
+                    "text": "油菜"
+                },
+                {
+                    "text": " -5 - 25"
+                },
+                {
+                    "text": " 50 - 350"
+                },
+                {
+                    "text": "亚麻"
+                },
+                {
+                    "text": " -8 - 25"
+                },
+                {
+                    "text": "175 - 475"
+                },
+                {
+                    "text": "黄瓜"
+                },
+                {
+                    "text": " 15 - 40"
+                },
+                {
+                    "text": "350 - 500"
+                },
+                {
+                    "text": "萝卜"
+                },
+                {
+                    "text": " -16 - 4"
+                },
+                {
+                    "text": "75 - 325"
+                },
+                {
+                    "text": "扁豆"
+                },
+                {
+                    "text": " -18 - 2"
+                },
+                {
+                    "text": "250 - 425"
+                }
+            ],
+            "text": "",
+            "title": "野生作物需求",
+            "legend": [],
+            "columns": 2,
+            "first_column_width": 80,
+            "column_width": 70,
+            "row_height": 10,
+            "left_buffer": 2,
+            "top_buffer": 12,
+            "draw_background": false
+        },
+        {
+            "type": "patchouli:empty",
+            "draw_filler": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "barley",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：-8 - 26 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：18 - 75 %$(br)$(bold)养分$()：氮$(br2)大麦是单格作物。大麦种子可以种在耕地上，长成后会产出$(thing)大麦$()和$(thing)大麦种子$()。",
+            "title": "大麦"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/barley[age=0]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/barley[age=1]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/barley[age=2]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/barley[age=3]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/barley[age=4]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/barley[age=5]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/barley[age=6]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/barley[age=7]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "oat",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：3 - 40 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：35 - 100 %$(br)$(bold)养分$()：磷$(br2)燕麦是单格作物。燕麦种子可以种在耕地上，长成后会产出$(thing)燕麦$()和$(thing)燕麦种子$()。",
+            "title": "燕麦"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/oat[age=0]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/oat[age=1]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/oat[age=2]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/oat[age=3]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/oat[age=4]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/oat[age=5]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/oat[age=6]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/oat[age=7]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rye",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：-11 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：25 - 85 %$(br)$(bold)养分$()：磷$(br2)黑麦是单格作物。黑麦种子可以种在耕地上，长成后会产出$(thing)黑麦$()和$(thing)黑麦种子$()。",
+            "title": "黑麦"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/rye[age=0]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/rye[age=1]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/rye[age=2]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/rye[age=3]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/rye[age=4]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/rye[age=5]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/rye[age=6]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/rye[age=7]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "maize",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：13 - 40 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：75 - 100 %$(br)$(bold)养分$()：磷$(br2)玉米是两格高的作物。玉米种子可以种在耕地上，会长到两格高，并产出$(thing)玉米$()和$(thing)玉米种子$()。",
+            "title": "玉米"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "minecraft:air",
+                        "Y": "tfc:crop/maize[age=0,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "minecraft:air",
+                        "Y": "tfc:crop/maize[age=1,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "minecraft:air",
+                        "Y": "tfc:crop/maize[age=2,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/maize[age=3,part=top]",
+                        "Y": "tfc:crop/maize[age=3,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/maize[age=4,part=top]",
+                        "Y": "tfc:crop/maize[age=4,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/maize[age=5,part=top]",
+                        "Y": "tfc:crop/maize[age=5,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "wheat",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：-4 - 35 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：25 - 100 %$(br)$(bold)养分$()：磷$(br2)小麦是单格作物。小麦种子可以种在耕地上，长成后会产出$(thing)小麦$()和$(thing)小麦种子$()。",
+            "title": "小麦"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/wheat[age=0]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/wheat[age=1]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/wheat[age=2]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/wheat[age=3]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/wheat[age=4]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/wheat[age=5]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/wheat[age=6]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/wheat[age=7]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rice",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：15 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：25 - 100 %$(br)$(bold)养分$()：磷$(br2)水稻是单格作物。水稻必须在水下生长——要种在深度为一格的淡水中的耕地上。长成后会产出$(thing)水稻$()和$(thing)水稻种子$()。",
+            "title": "水稻"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "注意：水稻方块必须处于$(thing)含水$()状态才能生长。",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/rice[age=0,fluid=water]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/rice[age=1,fluid=water]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/rice[age=2,fluid=water]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/rice[age=3,fluid=water]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/rice[age=4,fluid=water]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/rice[age=5,fluid=water]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/rice[age=6,fluid=water]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/rice[age=7,fluid=water]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "beet",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：-5 - 20 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：18 - 85 %$(br)$(bold)养分$()：钾$(br2)甜菜是单格作物。甜菜种子可以种在耕地上，长成后会产出$(thing)甜菜$()和$(thing)甜菜种子$()。",
+            "title": "甜菜"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/beet[age=0]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/beet[age=1]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/beet[age=2]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/beet[age=3]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/beet[age=4]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/beet[age=5]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cabbage",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：-10 - 27 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：15 - 65 %$(br)$(bold)养分$()：氮$(br2)卷心菜是单格作物。卷心菜种子可以种在耕地上，长成后会产出$(thing)卷心菜$()和$(thing)卷心菜种子$()。",
+            "title": "卷心菜"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/cabbage[age=0]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/cabbage[age=1]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/cabbage[age=2]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/cabbage[age=3]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/cabbage[age=4]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/cabbage[age=5]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "carrot",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：3 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：25 - 100 %$(br)$(bold)养分$()：钾$(br2)胡萝卜是单格作物。胡萝卜种子可以种在耕地上，长成后会产出$(thing)胡萝卜$()和$(thing)胡萝卜种子$()。",
+            "title": "胡萝卜"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/carrot[age=0]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/carrot[age=1]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/carrot[age=2]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/carrot[age=3]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/carrot[age=4]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "garlic",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：-20 - 18 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：15 - 75 %$(br)$(bold)养分$()：氮$(br2)大蒜是单格作物。大蒜种子可以种在耕地上，长成后会产出$(thing)大蒜$()和$(thing)大蒜种子$()。",
+            "title": "大蒜"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/garlic[age=0]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/garlic[age=1]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/garlic[age=2]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/garlic[age=3]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/garlic[age=4]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "green_bean",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：2 - 35 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：38 - 100 %$(br)$(bold)养分$()：氮$(br2)四季豆是需要攀爬的两格高作物。四季豆种子可以种在耕地上，如果有木棍就会长到两格高，并产出$(thing)四季豆$()和$(thing)四季豆种子$()。",
+            "title": "四季豆"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "作物要完全长成，必须有一根木棍。",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/green_bean[age=0,part=top,stick=true]",
+                        "Y": "tfc:crop/green_bean[age=0,part=bottom,stick=true]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/green_bean[age=1,part=top,stick=true]",
+                        "Y": "tfc:crop/green_bean[age=1,part=bottom,stick=true]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/green_bean[age=2,part=top,stick=true]",
+                        "Y": "tfc:crop/green_bean[age=2,part=bottom,stick=true]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/green_bean[age=3,part=top,stick=true]",
+                        "Y": "tfc:crop/green_bean[age=3,part=bottom,stick=true]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/green_bean[age=4,part=top,stick=true]",
+                        "Y": "tfc:crop/green_bean[age=4,part=bottom,stick=true]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/green_bean[age=5,part=top,stick=true]",
+                        "Y": "tfc:crop/green_bean[age=5,part=bottom,stick=true]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/green_bean[age=6,part=top,stick=true]",
+                        "Y": "tfc:crop/green_bean[age=6,part=bottom,stick=true]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/green_bean[age=7,part=top,stick=true]",
+                        "Y": "tfc:crop/green_bean[age=7,part=bottom,stick=true]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "potato",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：-1 - 37 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：50 - 100 %$(br)$(bold)养分$()：钾$(br2)马铃薯是单格作物。马铃薯种子可以种在耕地上，长成后会产出$(thing)马铃薯$()和$(thing)马铃薯种子$()。",
+            "title": "马铃薯"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/potato[age=0]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/potato[age=1]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/potato[age=2]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/potato[age=3]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/potato[age=4]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/potato[age=5]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/potato[age=6]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "pumpkin",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：0 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：30 - 80 %$(br)$(bold)养分$()：磷$(br2)南瓜是蔓延作物。南瓜种子可以种在耕地上，成熟后会在旁边的地面上长出最多两个$(thing)南瓜方块$()。如果摘掉这些南瓜方块，植株再次成熟后还能长出更多南瓜。南瓜可以做成$(l:game_mechanics/lighting#jack_o_lanterns)南瓜灯$()。",
+            "title": "南瓜"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            " CP",
+                            "   "
+                        ],
+                        [
+                            "GGG",
+                            "G0G",
+                            "GGG"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:farmland/loam",
+                        "G": "tfc:farmland/loam",
+                        "C": "tfc:crop/pumpkin[age=0]",
+                        "P": "minecraft:air"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            " CP",
+                            "   "
+                        ],
+                        [
+                            "GGG",
+                            "G0G",
+                            "GGG"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:farmland/loam",
+                        "G": "tfc:farmland/loam",
+                        "C": "tfc:crop/pumpkin[age=1]",
+                        "P": "minecraft:air"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            " CP",
+                            "   "
+                        ],
+                        [
+                            "GGG",
+                            "G0G",
+                            "GGG"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:farmland/loam",
+                        "G": "tfc:farmland/loam",
+                        "C": "tfc:crop/pumpkin[age=2]",
+                        "P": "minecraft:air"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            " CP",
+                            "   "
+                        ],
+                        [
+                            "GGG",
+                            "G0G",
+                            "GGG"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:farmland/loam",
+                        "G": "tfc:farmland/loam",
+                        "C": "tfc:crop/pumpkin[age=3]",
+                        "P": "minecraft:air"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            " CP",
+                            "   "
+                        ],
+                        [
+                            "GGG",
+                            "G0G",
+                            "GGG"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:farmland/loam",
+                        "G": "tfc:farmland/loam",
+                        "C": "tfc:crop/pumpkin[age=4]",
+                        "P": "minecraft:air"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            " CP",
+                            "   "
+                        ],
+                        [
+                            "GGG",
+                            "G0G",
+                            "GGG"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:farmland/loam",
+                        "G": "tfc:farmland/loam",
+                        "C": "tfc:crop/pumpkin[age=5]",
+                        "P": "minecraft:air"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            " CP",
+                            "   "
+                        ],
+                        [
+                            "GGG",
+                            "G0G",
+                            "GGG"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:farmland/loam",
+                        "G": "tfc:farmland/loam",
+                        "C": "tfc:crop/pumpkin[age=6]",
+                        "P": "minecraft:air"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            " CP",
+                            "   "
+                        ],
+                        [
+                            "GGG",
+                            "G0G",
+                            "GGG"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:farmland/loam",
+                        "G": "tfc:farmland/loam",
+                        "C": "tfc:crop/pumpkin[age=7]",
+                        "P": "tfc:pumpkin"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "melon",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：5 - 37 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：75 - 100 %$(br)$(bold)养分$()：磷$(br2)西瓜是蔓生作物。西瓜种子可以种在耕地上，成熟后会在旁边的地面上长出至多两个$(thing)西瓜方块$()。收获这些西瓜方块后，植株再次成熟时还能长出更多西瓜。",
+            "title": "西瓜"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            " CP",
+                            "   "
+                        ],
+                        [
+                            "GGG",
+                            "G0G",
+                            "GGG"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:farmland/loam",
+                        "G": "tfc:farmland/loam",
+                        "C": "tfc:crop/melon[age=0]",
+                        "P": "minecraft:air"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            " CP",
+                            "   "
+                        ],
+                        [
+                            "GGG",
+                            "G0G",
+                            "GGG"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:farmland/loam",
+                        "G": "tfc:farmland/loam",
+                        "C": "tfc:crop/melon[age=1]",
+                        "P": "minecraft:air"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            " CP",
+                            "   "
+                        ],
+                        [
+                            "GGG",
+                            "G0G",
+                            "GGG"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:farmland/loam",
+                        "G": "tfc:farmland/loam",
+                        "C": "tfc:crop/melon[age=2]",
+                        "P": "minecraft:air"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            " CP",
+                            "   "
+                        ],
+                        [
+                            "GGG",
+                            "G0G",
+                            "GGG"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:farmland/loam",
+                        "G": "tfc:farmland/loam",
+                        "C": "tfc:crop/melon[age=3]",
+                        "P": "minecraft:air"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            " CP",
+                            "   "
+                        ],
+                        [
+                            "GGG",
+                            "G0G",
+                            "GGG"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:farmland/loam",
+                        "G": "tfc:farmland/loam",
+                        "C": "tfc:crop/melon[age=4]",
+                        "P": "minecraft:air"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            " CP",
+                            "   "
+                        ],
+                        [
+                            "GGG",
+                            "G0G",
+                            "GGG"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:farmland/loam",
+                        "G": "tfc:farmland/loam",
+                        "C": "tfc:crop/melon[age=5]",
+                        "P": "minecraft:air"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            " CP",
+                            "   "
+                        ],
+                        [
+                            "GGG",
+                            "G0G",
+                            "GGG"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:farmland/loam",
+                        "G": "tfc:farmland/loam",
+                        "C": "tfc:crop/melon[age=6]",
+                        "P": "minecraft:air"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            " CP",
+                            "   "
+                        ],
+                        [
+                            "GGG",
+                            "G0G",
+                            "GGG"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:farmland/loam",
+                        "G": "tfc:farmland/loam",
+                        "C": "tfc:crop/melon[age=7]",
+                        "P": "tfc:melon"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "red_bell_pepper",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：16 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：25 - 60 %$(br)$(bold)养分$()：钾$(br2)红甜椒是可采摘作物。在接近成熟时，可以用$(item)$(k:key.use)$()收获，得到绿甜椒。用$(item)$(k:key.use)$()收获可以让植株以后继续结出更多甜椒，而不是毁掉植株。",
+            "title": "红甜椒"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/red_bell_pepper[age=0]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/red_bell_pepper[age=1]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/red_bell_pepper[age=2]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/red_bell_pepper[age=3]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/red_bell_pepper[age=4]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/red_bell_pepper[age=5]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/red_bell_pepper[age=6]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "yellow_bell_pepper",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：16 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：25 - 60 %$(br)$(bold)养分$()：钾$(br2)黄甜椒是可采摘作物。在接近成熟时，可以用$(item)$(k:key.use)$()收获，得到绿甜椒。用$(item)$(k:key.use)$()收获可以让植株以后继续结出更多甜椒，而不是毁掉植株。",
+            "title": "黄甜椒"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/yellow_bell_pepper[age=0]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/yellow_bell_pepper[age=1]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/yellow_bell_pepper[age=2]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/yellow_bell_pepper[age=3]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/yellow_bell_pepper[age=4]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/yellow_bell_pepper[age=5]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/yellow_bell_pepper[age=6]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "onion",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：0 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：25 - 90 %$(br)$(bold)养分$()：氮$(br2)洋葱是单格作物。洋葱种子可以种在耕地上，会产出$(thing)洋葱$()和$(thing)洋葱种子$()。",
+            "title": "洋葱"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/onion[age=0]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/onion[age=1]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/onion[age=2]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/onion[age=3]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/onion[age=4]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/onion[age=5]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/onion[age=6]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "soybean",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：8 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：40 - 100 %$(br)$(bold)养分$()：氮$(br2)大豆是单格作物。大豆种子可以种在耕地上，会产出$(thing)大豆$()和$(thing)大豆种子$()。",
+            "title": "大豆"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/soybean[age=0]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/soybean[age=1]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/soybean[age=2]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/soybean[age=3]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/soybean[age=4]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/soybean[age=5]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/soybean[age=6]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "squash",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：5 - 33 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：23 - 95 %$(br)$(bold)养分$()：钾$(br2)西葫芦是单格作物。西葫芦种子可以种在耕地上，会产出$(thing)西葫芦$()和$(thing)西葫芦种子$()。",
+            "title": "西葫芦"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/squash[age=0]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/squash[age=1]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/squash[age=2]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/squash[age=3]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/squash[age=4]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/squash[age=5]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/squash[age=6]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/squash[age=7]",
+                        "Y": "tfc:farmland/loam"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "sugarcane",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：12 - 38 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：40 - 100 %$(br)$(bold)养分$()：钾$(br2)甘蔗是两格高作物。甘蔗种子可以种在耕地上，会长到两格高，产出$(thing)甘蔗$()和$(thing)甘蔗种子$()。甘蔗可以用来制作$(thing)糖$()。",
+            "title": "甘蔗"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "minecraft:air",
+                        "Y": "tfc:crop/sugarcane[age=0,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "minecraft:air",
+                        "Y": "tfc:crop/sugarcane[age=1,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "minecraft:air",
+                        "Y": "tfc:crop/sugarcane[age=2,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "minecraft:air",
+                        "Y": "tfc:crop/sugarcane[age=3,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/sugarcane[age=4,part=top]",
+                        "Y": "tfc:crop/sugarcane[age=4,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/sugarcane[age=5,part=top]",
+                        "Y": "tfc:crop/sugarcane[age=5,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/sugarcane[age=6,part=top]",
+                        "Y": "tfc:crop/sugarcane[age=6,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/sugarcane[age=7,part=top]",
+                        "Y": "tfc:crop/sugarcane[age=7,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "tomatoes",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：0 - 36 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：30 - 95 %$(br)$(bold)养分$()：钾$(br2)西红柿是攀爬类的两格高作物。西红柿种子可以种在耕地上，如果有木棍就会长到两格高，产出$(thing)西红柿$()和$(thing)西红柿种子$()。",
+            "title": "西红柿"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "需要插木棍才能使作物充分生长。",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/tomato[age=0,part=top,stick=true]",
+                        "Y": "tfc:crop/tomato[age=0,part=bottom,stick=true]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/tomato[age=1,part=top,stick=true]",
+                        "Y": "tfc:crop/tomato[age=1,part=bottom,stick=true]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/tomato[age=2,part=top,stick=true]",
+                        "Y": "tfc:crop/tomato[age=2,part=bottom,stick=true]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/tomato[age=3,part=top,stick=true]",
+                        "Y": "tfc:crop/tomato[age=3,part=bottom,stick=true]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/tomato[age=4,part=top,stick=true]",
+                        "Y": "tfc:crop/tomato[age=4,part=bottom,stick=true]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/tomato[age=5,part=top,stick=true]",
+                        "Y": "tfc:crop/tomato[age=5,part=bottom,stick=true]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/tomato[age=6,part=top,stick=true]",
+                        "Y": "tfc:crop/tomato[age=6,part=bottom,stick=true]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/tomato[age=7,part=top,stick=true]",
+                        "Y": "tfc:crop/tomato[age=7,part=bottom,stick=true]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "jute",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：5 - 37 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：25 - 100 %$(br)$(bold)养分$()：钾$(br2)黄麻是两格高作物。黄麻种子可以种在耕地上，会长到两格高，产出$(thing)黄麻$()和$(thing)黄麻种子$()。",
+            "title": "黄麻"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "minecraft:air",
+                        "Y": "tfc:crop/jute[age=0,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "minecraft:air",
+                        "Y": "tfc:crop/jute[age=1,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "minecraft:air",
+                        "Y": "tfc:crop/jute[age=2,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/jute[age=3,part=top]",
+                        "Y": "tfc:crop/jute[age=3,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/jute[age=4,part=top]",
+                        "Y": "tfc:crop/jute[age=4,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/jute[age=5,part=top]",
+                        "Y": "tfc:crop/jute[age=5,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "papyrus",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：19 - 37 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：70 - 100 %$(br)$(bold)养分$()：钾$(br2)纸莎草是两格高作物。纸莎草种子可以种在耕地上，会长到两格高，产出$(l:agriculture/papermaking)纸莎草$()和$(thing)纸莎草种子$()。",
+            "title": "纸莎草"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "minecraft:air",
+                        "Y": "tfc:crop/papyrus[age=0,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "minecraft:air",
+                        "Y": "tfc:crop/papyrus[age=1,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "minecraft:air",
+                        "Y": "tfc:crop/papyrus[age=2,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/papyrus[age=3,part=top]",
+                        "Y": "tfc:crop/papyrus[age=3,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/papyrus[age=4,part=top]",
+                        "Y": "tfc:crop/papyrus[age=4,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:crop/papyrus[age=5,part=top]",
+                        "Y": "tfc:crop/papyrus[age=5,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "sunflower",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：5 - 40 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：20 - 80 %$(br)$(bold)养分$()：氮$(br2)向日葵是两格高作物。向日葵种子可以种在耕地上，会长到两格高，产出$(item)向日葵花盘$()，花盘可以加工成$(thing)种子油$()。种子油既可以用作灯油，之后还能用来制作$(thing)生物柴油$()。$(br)在$(l:agriculture/beekeeping)养蜂$()方面，向日葵也算作一种花卉。",
+            "title": "向日葵"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "minecraft:air",
+                        "Y": "tfg:sunflower[age=0,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "minecraft:air",
+                        "Y": "tfg:sunflower[age=1,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "minecraft:air",
+                        "Y": "tfg:sunflower[age=2,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "minecraft:air",
+                        "Y": "tfg:sunflower[age=3,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:sunflower[age=4,part=top]",
+                        "Y": "tfg:sunflower[age=4,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:sunflower[age=5,part=top]",
+                        "Y": "tfg:sunflower[age=5,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:sunflower[age=6,part=top]",
+                        "Y": "tfg:sunflower[age=6,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                }
+            ],
+            "text": "$(thing)野生向日葵$()生长于5°C至40°C的温度区间及100至450毫米的降雨环境。其种子亦可烘烤食用！"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "canola",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：-5 - 25 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：10 - 60 %$(br)$(bold)养分$()：磷$(br2)油菜是两格高作物。油菜种子可以种在耕地上，会长到两格高，产出$(item)油菜籽荚$()，可以加工成$(thing)种子油$()。种子油既可以用作灯油，之后还能用来制作$(thing)生物柴油$()。$(br)在$(l:agriculture/beekeeping)养蜂$()方面，油菜也算作一种花卉。",
+            "title": "油菜"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "minecraft:air",
+                        "Y": "tfg:rapeseed[age=0,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "minecraft:air",
+                        "Y": "tfg:rapeseed[age=1,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "minecraft:air",
+                        "Y": "tfg:rapeseed[age=2,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:rapeseed[age=3,part=top]",
+                        "Y": "tfg:rapeseed[age=3,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:rapeseed[age=4,part=top]",
+                        "Y": "tfg:rapeseed[age=4,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:rapeseed[age=5,part=top]",
+                        "Y": "tfg:rapeseed[age=5,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:rapeseed[age=6,part=top]",
+                        "Y": "tfg:rapeseed[age=6,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                }
+            ],
+            "text": "$(thing)野生油菜$()（亦称$(thing)芸苔$()）生长于-7°C至25°C的温度区间及50至350毫米的降雨环境。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "flax",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：-8 - 25 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：15 - 65 %$(br)$(bold)养分$()：氮$(br2)亚麻是两格高作物。亚麻种子可以种在耕地上，会长到两格高，产出$(item)亚麻茎杆$()，可以加工成$(thing)亚麻布$()或$(thing)粗麻布$()。$(br)在$(l:agriculture/beekeeping)养蜂$()方面，亚麻也算作一种花卉。",
+            "title": "亚麻"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "minecraft:air",
+                        "Y": "tfg:flax[age=0,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "minecraft:air",
+                        "Y": "tfg:flax[age=1,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "minecraft:air",
+                        "Y": "tfg:flax[age=2,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "minecraft:air",
+                        "Y": "tfg:flax[age=3,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:flax[age=4,part=top]",
+                        "Y": "tfg:flax[age=4,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:flax[age=5,part=top]",
+                        "Y": "tfg:flax[age=5,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:flax[age=6,part=top]",
+                        "Y": "tfg:flax[age=6,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                }
+            ],
+            "text": "$(thing)野生亚麻$()生长于-5°C至23°C的温度区间及175至475毫米的降雨环境。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cucumber",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：5 - 40 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：70 - 100 %$(br)$(bold)养分$()：氮$(br2)黄瓜是两格高作物。黄瓜种子可以种在耕地上，会长到两格高，产出$(item)黄瓜$()，提供$(thing)蔬菜$()营养。$(br)$(bold)黄瓜需要木棍才能完全成熟。$()",
+            "title": "黄瓜"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "minecraft:air",
+                        "Y": "tfg:cucumber[age=0,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "minecraft:air",
+                        "Y": "tfg:cucumber[age=1,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:cucumber[age=2,part=top]",
+                        "Y": "tfg:cucumber[age=2,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:cucumber[age=3,part=top]",
+                        "Y": "tfg:cucumber[age=3,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:cucumber[age=4,part=top]",
+                        "Y": "tfg:cucumber[age=4,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:cucumber[age=5,part=top]",
+                        "Y": "tfg:cucumber[age=5,part=bottom]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                }
+            ],
+            "text": "$(thing)野生黄瓜$()生长于15 至 40°C、降雨量0-150mm的区域。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "radish",
+            "title": "萝卜",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：-20 - 20 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：15 - 65 %$(br)$(bold)养分$()：钾$(br2)萝卜可以食用，提供$(thing)蔬菜$()营养。如果你需要一种能在更低温环境下存活的作物，萝卜是个好选择。"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "Y": "tfg:radish[age=0]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "Y": "tfg:radish[age=1]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "Y": "tfg:radish[age=2]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "Y": "tfg:radish[age=3]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "Y": "tfg:radish[age=4]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "Y": "tfg:radish[age=5]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                }
+            ],
+            "text": "$(thing)野生萝卜$()生长于-16 至 4°C、降雨量75-325mm的区域。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "lentil",
+            "title": "扁豆",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：-20 - 18 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：50 - 100 %$(br)$(bold)养分$()：磷$(br2)扁豆可以食用，提供$(thing)蔬菜$()营养，不过建议先煮熟再吃。扁豆也是在较寒冷气候下种植的又一个好选择。"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "Y": "tfg:lentil[age=0]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "Y": "tfg:lentil[age=1]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "Y": "tfg:lentil[age=2]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "Y": "tfg:lentil[age=3]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "Y": "tfg:lentil[age=4]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "Y"
+                        ],
+                        [
+                            "Z"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "Y": "tfg:lentil[age=5]",
+                        "Z": "tfc:farmland/loam"
+                    }
+                }
+            ],
+            "text": "$(thing)野生扁豆$()生长于-18 至 2°C、降雨量250-425mm的区域。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸阅读",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_world/wild_fruits",
+                "tfg:the_world/flora",
+                "tfg:agriculture/growing_crops",
+                "tfg:agriculture/greenhouse",
+                "tfg:agriculture/beekeeping",
+                "tfg:cooking/food_and_water",
+                "tfg:beneath/beneath_crops",
+                "tfg:the_moon/moon_crops",
+                "tfg:mars/mars_crops"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 5,
+    "extra_recipe_mappings": {
+        "tfc:seeds/barley": 12,
+        "tfc:food/barley": 12,
+        "tfc:seeds/oat": 14,
+        "tfc:food/oat": 14,
+        "tfc:seeds/rye": 16,
+        "tfc:food/rye": 16,
+        "tfc:seeds/maize": 18,
+        "tfc:food/maize": 18,
+        "tfc:seeds/wheat": 20,
+        "tfc:food/wheat": 20,
+        "tfc:seeds/rice": 22,
+        "tfc:food/rice": 22,
+        "tfc:seeds/beet": 24,
+        "tfc:food/beet": 24,
+        "tfc:seeds/cabbage": 26,
+        "tfc:food/cabbage": 26,
+        "tfc:seeds/carrot": 28,
+        "tfc:food/carrot": 28,
+        "tfc:seeds/garlic": 30,
+        "tfc:food/garlic": 30,
+        "tfc:seeds/green_bean": 32,
+        "tfc:food/green_bean": 32,
+        "tfc:seeds/potato": 34,
+        "tfc:food/potato": 34,
+        "tfc:seeds/pumpkin": 36,
+        "tfc:seeds/melon": 38,
+        "tfc:seeds/red_bell_pepper": 40,
+        "tfc:seeds/yellow_bell_pepper": 42,
+        "tfc:seeds/onion": 44,
+        "tfc:food/onion": 44,
+        "tfc:seeds/soybean": 46,
+        "tfc:food/soybean": 46,
+        "tfc:seeds/squash": 48,
+        "tfc:food/squash": 48,
+        "tfc:seeds/sugarcane": 50,
+        "tfc:food/sugarcane": 50,
+        "tfc:seeds/tomato": 52,
+        "tfc:food/tomato": 52,
+        "tfc:seeds/jute": 54,
+        "tfc:jute": 54,
+        "tfc:seeds/papyrus": 56,
+        "tfc:papyrus": 56,
+        "tfg:sunflower_seeds": 58,
+        "tfg:sunflower_product": 58,
+        "tfg:rapeseed_seeds": 60,
+        "tfg:rapeseed_product": 60,
+        "tfg:flax_seeds": 62,
+        "tfg:flax_product": 62,
+        "tfg:cucumber_seeds": 64,
+        "tfg:cucumber_product": 64,
+        "tfg:radish_seeds": 66,
+        "tfg:radish_product": 66,
+        "tfg:lentil_seeds": 68,
+        "tfg:lentil_product": 68
+    }
+}

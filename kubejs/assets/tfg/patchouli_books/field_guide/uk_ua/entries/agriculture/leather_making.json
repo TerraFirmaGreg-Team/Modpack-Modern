@@ -1,0 +1,99 @@
+{
+    "name": "Обробка шкіри",
+    "category": "tfg:agriculture",
+    "icon": "minecraft:leather",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(item)Шкіра$() — це міцний матеріал, виготовлений зі шкур тварин. Вона потрібна для виготовлення $(item)обладунків$(), $(item)сідел$() та $(l:craftsmanship/charcoal_forge#bellows)міхів$(). $(item)Сиру шкуру$() потрібно обробити в кілька етапів: $(l:agriculture/leather_making#soaking)вимочування$(), $(l:agriculture/leather_making#scraping)зчищення$(), $(l:agriculture/leather_making#preparing)підготовка$() та $(l:agriculture/leather_making#tanning)дублення$(), щоб перетворити їх на $(item)шкіру$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:small_raw_hide,tfc:medium_raw_hide,tfc:large_raw_hide",
+            "title": "Необроблена шкура",
+            "link_recipes": true,
+            "text": "Щоб розпочати, спочатку тобі потрібно отримати $(thing)сиру шкуру$(), яка випадає після забою багатьох різних $(l:the_world/wild_animals)тварин$(). Різні тварини дають $(thing)сиру шкуру$() різного розміру.$(br2)Переглянь $(emi), щоб дізнатися більше про випадіння предметів з істот."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Для виготовлення шкіри знадобиться кілька матеріалів та інструментів. Тобі знадобиться:$(br)$(li)$(l:craftsmanship/barrels#limewater)Вапняна вода$() — розчин $(item)флюсу$() у $(thing)воді$()$(li)Вода$(li)$(l:craftsmanship/barrels#tannin)Танін$() — кислий розчин, виготовлений із кори деяких дерев.$(li)$(thing)Сирі шкури$()$(br2)Маючи все необхідне, ти готовий розпочати процес обробки шкіри."
+        },
+        {
+            "type": "tfg:sealed_barrel_recipe",
+            "anchor": "soaking",
+            "recipe": "tfc:barrel/medium_soaked_hide",
+            "text": "Спочатку сиру шкури потрібно $(thing)вимочити$(), щоб очистити її, розм’якшити небажані залишки перед подальшою обробкою. Для цього помісти $(thing)сиру шкуру$() у $(l:craftsmanship/barrels#limewater)діжку з вапняною водою$() щонайменше на вісім годин."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "scraping",
+            "item": "tfc:small_scraped_hide,tfc:medium_scraped_hide,tfc:large_scraped_hide",
+            "title": "Зішкрібання",
+            "link_recipes": true,
+            "text": "Після вимочування $(thing)вимочену шкуру$() потрібно зчистити, щоб видалити надлишковий матеріал. Щоб зчищити шкуру, розмісти шкуру на $(thing)колоду$(). За допомогою $(item)ножа$() або $(item)ножа для шкреблення$() натискай $(item)$(k:key.use)$() по кожній частині шкури — її текстура почне змінюватися."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/soaked_hide_1.png",
+                "tfc:textures/gui/book/tutorial/soaked_hide_2.png",
+                "tfc:textures/gui/book/tutorial/soaked_hide_3.png",
+                "tfc:textures/gui/book/tutorial/soaked_hide_4.png"
+            ],
+            "text": "Коли вся шкура зіскоблена, її треба вдарити, щоб отримати $(thing)поскоблену шкуру$().",
+            "border": true
+        },
+        {
+            "type": "tfg:sealed_barrel_recipe",
+            "anchor": "preparing",
+            "recipe": "tfc:barrel/medium_prepared_hide",
+            "text": "Після зчищення $(thing)зчищення шкуру$() потрібно помістити в $(l:craftsmanship/barrels)діжку$() з $(thing)водою$() щонайменше на вісім годин для остаточного очищення перед дубленням."
+        },
+        {
+            "type": "tfg:sealed_barrel_recipe",
+            "anchor": "tanning",
+            "recipe": "tfc:barrel/medium_leather",
+            "text": "Нарешті $(thing)підготовлену шкуру$() потрібно помістити в $(l:craftsmanship/barrels#tannin)діжку з таніном$(). Це кисла хімічна сполука, яку виготовляють із $(t:#tfc:makes_tannin)$(6)колод, багатих на танін$(), і яка допомагає перетворити шкуру на $(thing)шкіру$(). Ще через вісім годин ти зможеш вийняти $(thing)шкіру$() з діжки."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "pineapple_leather",
+            "title": "Альтернатива шкіра",
+            "item": "firmalife:pineapple_leather",
+            "text": "Альтернативою тваринній шкірі є $(item)ананасова шкіра$(). Її можна виготовити, спочатку $(l:cooking/decay#drying)висушивши$() $(l:the_world/wild_fruits#pineapple)ананаси$(), розділивши їх на волокна, а потім $(l:agriculture/weaving)виткавши$() ананасові волокна в ананасову шкіру."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Докладніше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:agriculture/animal_husbandry",
+                "tfg:agriculture/papermaking",
+                "tfg:the_world/wild_animals",
+                "tfg:the_world/wild_fruits",
+                "tfg:craftsmanship/sticks_and_stones",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/charcoal_forge",
+                "tfg:craftsmanship/blast_furnace",
+                "tfg:craftsmanship/barrels"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 10,
+    "extra_recipe_mappings": {
+        "tfc:small_raw_hide": 1,
+        "tfc:medium_raw_hide": 1,
+        "tfc:large_raw_hide": 1,
+        "tfc:small_soaked_hide": 3,
+        "tfc:medium_soaked_hide": 3,
+        "tfc:large_soaked_hide": 3,
+        "tfc:small_scraped_hide": 4,
+        "tfc:medium_scraped_hide": 4,
+        "tfc:large_scraped_hide": 4,
+        "tfc:small_prepared_hide": 6,
+        "tfc:medium_prepared_hide": 6,
+        "tfc:large_prepared_hide": 6,
+        "minecraft:leather": 7
+    }
+}

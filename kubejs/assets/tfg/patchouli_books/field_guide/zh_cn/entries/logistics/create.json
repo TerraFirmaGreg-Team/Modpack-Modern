@@ -1,0 +1,512 @@
+{
+	"name": "机械动力物流",
+	"category": "tfg:logistics",
+	"icon": "create:cardboard_package_12x12",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "目录",
+			"anchor": "index",
+			"text": "$(li)$(bold)$(l:logistics/create#packages)包裹$()$(li2)$(l:logistics/create#packager)打包机$()$(li2)$(l:logistics/create#frogport)货物蛙港$()$(li2)$(l:logistics/create#package_filter)包裹过滤器$()$(li2)$(l:logistics/create#repackager)理包机$()$(li2)$(l:logistics/create#unpackager)拆包机$()$(li2)$(l:logistics/create#clipboard)剪贴板与手持指针$()$(li2)$(l:logistics/create#postbox)邮箱$()$(li2)$(l:logistics/create#package_tips)提示$()"
+		},
+		{
+			"type": "patchouli:text",
+			"title": " ",
+			"text": "$(br)$(li)$(bold)$(l:logistics/create#high_logistics)高级物流$()$(li2)$(l:logistics/create#rose_quartz)玫瑰石英$()$(li2)$(l:logistics/create#exquisite)传输器$()$(li2)$(l:logistics/create#stock_link)仓储链接站$()$(li2)$(l:logistics/create#stock_ticker)仓储发报机$()$(li2)$(l:logistics/create#stock_bridge)AE2 仓储桥接器$()$(li2)$(l:logistics/create#requester)红石请求器$()$(li2)$(l:logistics/create#table_cloths)桌布$()$(li2)$(l:logistics/create#factory_gauge)工厂仪表$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "进入蒸汽时代了吗？$(thing)机械动力物流$()将大幅提升你的物品运输与存储能力。到了 $(7)LV$() 电压后期，你甚至可以自动订购特定物品，或让它们在你的基地内自动流转！既然这是$(thing)机械动力$()，那么$(thing)思索机器$()（按住 $(item)$(k:key.ponder.ponder)$()）就是除本书之外最好的信息来源，记得也去翻一翻。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "包裹",
+			"anchor": "packages",
+			"item": "create:cardboard_package_12x10,create:cardboard_package_10x8,create:cardboard_package_10x12,create:cardboard_package_12x12",
+			"text": "机械动力物流的一切都围绕$(item)包裹$()展开。每个包裹可以装下 9 个槽位的物品。$(br2)包裹还带有$(thing)地址$()，决定包裹应该送往哪里。物流系统的其余部分，就是研究如何把包裹送到这些目的地！"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "流体包裹",
+			"item": "fluidlogistics:fluid_package,fluidlogistics:fluid_package_exposed,fluidlogistics:fluid_package_weathered,fluidlogistics:fluid_package_oxidized",
+			"text": "$(item)流体包裹$()是$(thing)流体$()的对应版本。每个流体包裹可以容纳 $(thing)10,000mB$()，也就是十桶。$(br2)$(bold)提示：$()对物品包裹按$(item)$(k:key.sneak) + $(k:key.use)$()即可将其打开！动力锯也能自动完成这件事。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:packager,fluidlogistics:fluid_packager",
+			"anchor": "packager",
+			"text": "收到$(thing)红石信号$()时，$(item)打包机$()会把所连接容器中的物品打包（可以用$(item)扳手$()切换连接面），输出一个整齐的小小纸板包裹。$(br)$(bold)注意：$()尽管合成配方里有纸板，打包机工作时不消耗任何额外的纸板，所以不用担心耗材！"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "在打包机上放一个$(item)告示牌$()，它就会自动把告示牌上的内容标注到所有包裹上，作为目的地地址。等你开始用各种方式给包裹规划路线时，这会更有用。$(c)注意：带框告示牌不能用于此目的！$()$(br2)打包机也可以拆开放进它的包裹，把内容物卸入所连接的容器。"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"enable_visualize": false,
+			"text": "这套装置会自动把箱子里的所有物品提取打包成包裹，然后就可以发送到别处。",
+			"name": "打包物品",
+			"multiblock": {
+				"pattern": [
+					[
+						" A",
+						"B0",
+						" C"
+					],
+					[
+						"  ",
+						" D",
+						"  "
+					]
+				],
+				"mapping": {
+					"A": "minecraft:lever[face=wall,facing=west,powered=true]",
+					"0": "create:packager[facing=south,powered=true]",
+					"B": "#forge:chests/wooden",
+					"C": "tfc:wood/planks/oak_wall_sign[facing=east]",
+					"D": "create:chute"
+				}
+			}
+		},
+		{
+			"type": "patchouli:multiblock",
+			"enable_visualize": false,
+			"text": "放入这台打包机的任何包裹都会被自动拆开，并装入$(l:logistics/storage#crates)板条箱$()。",
+			"name": "拆包物品",
+			"multiblock": {
+				"pattern": [
+					[
+						"  ",
+						" D",
+						"  "
+					],
+					[
+						"  ",
+						"B0",
+						"  "
+					]
+				],
+				"mapping": {
+					"0": "create:packager[facing=south,powered=false]",
+					"B": "gtceu:steel_crate",
+					"D": "create:chute"
+				}
+			}
+		},
+		{
+			"type": "patchouli:multiblock",
+			"enable_visualize": false,
+			"text": "$(item)流体打包机$()的工作方式相同。",
+			"name": "打包流体",
+			"multiblock": {
+				"pattern": [
+					[
+						"  ",
+						"B ",
+						"  "
+					],
+					[
+						" A",
+						"E0",
+						" C"
+					],
+					[
+						"  ",
+						" D",
+						"  "
+					]
+				],
+				"mapping": {
+					"A": "minecraft:lever[face=wall,facing=west,powered=true]",
+					"0": "fluidlogistics:fluid_packager[facing=south,powered=true]",
+					"B": "create:fluid_tank[top=true,bottom=false]",
+					"C": "tfc:wood/planks/oak_wall_sign[facing=east]",
+					"D": "create:chute",
+					"E": "create:fluid_tank[bottom=true,top=false]"
+				}
+			}
+		},
+		{
+			"type": "patchouli:multiblock",
+			"enable_visualize": false,
+			"text": "它无需泵即可把流体输入或输出所连接的容器。",
+			"name": "流体拆包",
+			"multiblock": {
+				"pattern": [
+					[
+						"  ",
+						" D",
+						"  "
+					],
+					[
+						"  ",
+						"B0",
+						"  "
+					]
+				],
+				"mapping": {
+					"0": "fluidlogistics:fluid_packager[facing=south,powered=false]",
+					"B": "gtceu:steel_drum",
+					"D": "create:chute"
+				}
+			}
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:package_frogport,fluidlogistics:copper_frogport",
+			"title": "蛙港",
+			"anchor": "frogport",
+			"text": "$(item)货物蛙港$()是你转移包裹、把它们送往目的地的三种方式之一。它们可以把包裹挂到$(item)锁链传动轮$()线路上，让包裹沿着链连接运输。要使用它们，你需要先用$(item)锁链传动轮$()组成一个相互连接的网络——用$(t:任意一种 TFC 锁链均可)$(6)锁链$()（任意一种 TFC 锁链均可）连接即可——然后为锁链传动轮提供旋转动力。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "在放置蛙港之前，先$(item)$(k:key.use)$()一段锁链，即可让它与该段锁链交互。$(br2)直接放在$(l:logistics/create#packager)打包机$()正上方的蛙港，会自动挂起该打包机产出的包裹。$(br2)$(bold)注意：$()两种蛙港都能同时用于物品和流体的打包机与包裹，唯一的区别是铜质的那种可以放在方块的任意一侧。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "蛙港除了发送包裹之外还能接收包裹。对蛙港$(item)$(k:key.use)$()，可以看到它有一个可编辑的名称。$(br2)这个名称相当于一个$(thing)地址$()：任何标有目的地地址的包裹，只要与该名称匹配，蛙港就会把它们从锁链网络上取下，$(thing)自动收集起来$()！"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "收集到的包裹会被放入蛙港所依附方块的容器中。$(br2)只要锁链网络$(o)以某种方式$()连接着收发两端的蛙港，包裹最终总能自己找到路，不过你也可以自行优化路线，缩短包裹的在途时间。"
+		},
+		{
+			"type": "patchouli:image",
+			"text": "一个用于收发物品的小型装置。",
+			"title": "蛙港",
+			"border": true,
+			"images": [
+				"tfg:textures/gui/field_guide/frogports.png"
+			]
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:package_filter",
+			"anchor": "package_filter",
+			"text": "可以用专用的$(item)包裹过滤器$()来为包裹规划路线，它的用法和任何支持过滤槽的$(thing)机械动力$()机器中的过滤器一样，例如$(item)黄铜漏斗$()。只需手持过滤器$(item)$(k:key.use)$()并输入要过滤的地址，所有具有该目的地地址的包裹都会被放行。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:repackager",
+			"anchor": "repackager",
+			"text": "$(item)理包机$()可以把多个物品包裹合并成一个包裹。当一份订单的物品来自不同地点、却又必须同时送达目的地时，它会非常有用。$(br2)它也能把合并后的包裹重新拆回各个组成部分。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "fluidlogistics:fluid_repackager",
+			"anchor": "unpackager",
+			"text": "$(item)拆包机$()与$(l:logistics/create#repackager)理包机$()类似，但它能把物品包裹和流体包裹合并为一体，也可以反向拆分。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "fluidlogistics:hand_pointer,create:clipboard",
+			"title": "空间紧张？",
+			"anchor": "clipboard",
+			"text": "$(item)指读棒$()和$(item)剪贴板$()无需任何相邻方块，就能为打包机供电并设置地址。$(br2)要使用$(item)指读棒$()，只需对任意打包机或理包机$(item)$(k:key.use)$()，强制其通电，无需红石信号！"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(item)指读棒$()还可以在放置之后更改$(l:logistics/create#frogport)蛙港$()的目标。操作方法：手持$(item)指读棒$()，先$(item)$(k:key.use)$()你想更改的$(item)蛙港$()，再$(item)$(k:key.use)$()链上要连接的新位置。$(br2)要设置地址，请拿一本空白$(item)剪贴板$()，在第一行输入想要的地址$(c)（注意该行必须以“#”开头）$()，然后对任意打包机$(item)$(k:key.use)$()即可设置地址，无需告示牌！"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tag:create:postboxes",
+			"title": "邮箱",
+			"anchor": "postbox",
+			"text": "$(item)邮箱$()用于借助$(l:logistics/trains)火车网络$()来为包裹规划路线。放置之前，先$(item)$(k:key.use)$()一座$(l:logistics/trains#station)火车站$()，把邮箱绑定到该车站；此后任何在该车站停靠的火车都能与邮箱交互（前提是邮箱距车站 4 格以内）。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "与$(l:logistics/create#frogport)货物蛙港$()一样，邮箱也可以命名。驶过的火车会取走所有目的地与邮箱名称不匹配的包裹。$(br2)此外，如果火车货舱中有$(italic)恰好$()与邮箱匹配的包裹，这些包裹反而会被送入邮箱的容器中。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(item)邮箱$()还有一点很妙：从它那里自动抽取物品时（通过溜槽、漏斗等），只有目的地$(thing)与邮箱名称匹配$()的包裹才会被取出，目的地不同的包裹会留在里面，之后再装上火车。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "package_tips",
+			"title": "包裹小贴士",
+			"text": "包裹是从四种*可能的物品中随机生成的，所以像 GregTech 的$(item)物品过滤器$()这类东西会$(thing)非常难以配置$()！我们建议尽可能使用$(l:logistics/create#package_filter)包裹过滤器$()，不过……$(br2)$(7)* 流体是四种；物品其实要多得多，因为还有若干隐藏的稀有变体$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "……如果你真想尝试用其他方法转移包裹：目的地地址会作为 NBT 数据存储在$(thing)Address$()标签中。例如，目的地地址为\"Home\"的包裹，其 NBT 数据中会有：$(thing){Address:\"Home\"}$()。$(br2)$(o)（接下页……）"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "包裹地址过滤实际上支持简化版的$(l:https://en.wikipedia.org/wiki/Regular_expression)正则表达式$()。这意味着你可以：$(br)$(li)用$(bold)*$()匹配任意长度的字符串$(li)用$(bold)?$()匹配任意单个字符$(li)用$(bold)[]$()匹配括起的一组字符中的单个字符（例如 A[cr]t 会匹配 'Act' 和 'Art'，但不会匹配 'Ant'）"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)用$(bold)[! ]$()匹配不属于括起一组字符的单个字符（例如 A[!cr]t 会匹配 'Aft' 和 'Apt'，但不会匹配 'Act' 或 'Art'）$(li)用$(bold){}$()中给出的字符串列表匹配其中一个字符串（例如 TerraFirma{Craft,Greg} 会同时匹配 TerraFirma$(thing)Craft$()和 TerraFirma$(thing)Greg$()）$(li)以上所有符号都可以转义。例如 A$(bold)\\$()* 会被读作 A*，且只匹配 'A*'。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:transmitter",
+			"anchor": "high_logistics",
+			"title": "高阶物流",
+			"text": "搬运包裹固然不错，但肯定不止如此吧？没错，你猜对了。包裹还有很多玩法，包括$(thing)读取容器内容$()、$(thing)远程交付物品$()，之后甚至能依据物品的阈值$(thing)自动发送待加工的原料$()！"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "但在深入研究$(thing)高阶物流$()之前，得先做好一些准备。$(br2)制作这类设备所需的$(item)发射器$()，实际上只能通过一种独特矿物折射的高能光来生产：$(item)玫瑰石英$()。换句话说，我们既需要一台$(item)基础激光蚀刻机$()，也需要想办法弄到$(item)玫瑰石英透镜$()，所以你最好赶紧把这些搞定，对吧？"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "greate:rich_raw_rose_quartz,greate:raw_rose_quartz,greate:poor_raw_rose_quartz",
+			"title": "玫瑰石英",
+			"anchor": "rose_quartz",
+			"text": "品质高到足以轻松制成$(item)透镜$()的$(item)玫瑰石英$()，其唯一天然产地在遥远的极北方，那里酷寒无比（低于$(3)-10°C$()）。是不是让你回想起了找高岭土的那段经历？"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "玫瑰石英只在远古冰川的核心生成。冰川虽然不算常见，但凭其$(9)蓝冰$()外壳很容易辨认。$(br2)除温度要求外，它们只生成于$(thing)冰盖$()或$(thing)冰川$()生物群系。$(br2)$(item)玫瑰石英$()就在冰川内部——先是矿石，在最中心则是压缩的原矿方块。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "greate:exquisite_rose_quartz_gem,greate:rose_quartz_lens",
+			"anchor": "exquisite",
+			"text": "我们需要的是$(item)精致玫瑰石英$()。把你挖到的原矿$(thing)破碎、清洗，然后再筛选$()即可获得。筛出精致宝石的概率是 3%，不过你只需要一颗就能继续。$(br2)$(c)千万别熔炼矿石，那样只会得到普通品质的玫瑰石英$()！"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "当年你可能为$(l:craftsmanship/pottery#kaolin_clay)高岭土$()做过的那些准备，在这里同样适用：备好大量$(l:cooking)食物$()、可随身携带的$(l:cooking/drinking_containers)饮用水$()、$(thing)保暖衣物$()，以及一些交通工具。（$(l:logistics/boats)船$()不错，不过$(thing)飞行器$()此时对你来说也完全不在话下）。"
+		},
+		{
+			"type": "patchouli:image",
+			"text": "$(thing)冰川核心$()周围环绕着一簇簇小小的玫瑰石英晶芽，在地图上很容易辨认。",
+			"title": "一座冰川核心",
+			"border": true,
+			"images": [
+				"tfg:textures/gui/field_guide/rose_quartz.png"
+			]
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:stock_link",
+			"anchor": "stock_link",
+			"text": "你能做出的第一台$(thing)高阶物流$()机器是$(thing)仓储链接站$()，它可以用来组建$(thing)物流网络$()。把它放在$(l:logistics/create#packager)打包机$()的任意一侧，仓储链接站就会让打包机所连接的容器对整个网络可见！"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "仓储链接站单看本身并没有太大用处，但它是之后所有机器的核心组件……$(br2)记住，放置新的链接站之前，先对已有的仓储链接站$(item)$(k:key.use)$()，把两者调谐到同一网络。想要取消，只需把仓储链接站单独合成一次即可清除其调谐。$(br2)更多信息请查看$(thing)思索$()！"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"enable_visualize": false,
+			"text": "$(l:logistics/create#packager)打包机$()只有当仓储链接站收到来自网络中$(l:logistics/create#stock_ticker)别处$()的信号时，才会生成包裹。",
+			"name": "示例",
+			"multiblock": {
+				"pattern": [
+					[
+						" D"
+					],
+					[
+						"B0"
+					],
+					[
+						"  "
+					]
+				],
+				"mapping": {
+					"0": "create:packager[facing=south,linked=true,powered=false]",
+					"B": "#forge:chests/wooden",
+					"D": "create:stock_link[face=floor,facing=east]"
+				}
+			}
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:stock_ticker",
+			"anchor": "stock_ticker",
+			"text": "如果你已经用$(l:logistics/create#stock_link)仓储链接站$()向$(thing)物流网络$()供应了各种物品，下一步就是做一台能远程调取这些物品的装置……这正是$(item)仓储发报机$()的用武之地。与仓储链接站一样，你需要先对已有的链接站$(item)$(k:key.use)$()，把发报机调谐到该网络。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "然后你需要在仓储发报机旁边放置一个$(item)烈焰人燃烧室$()，或者让任意生物坐上$(l:logistics/trains#seat)坐垫$()，让它们担任$(thing)仓库管理员$()。$(br2)既然这可怜的家伙已被终身聘用，你现在可以点击它，查看$(thing)物流网络$()上的所有物品。你甚至可以搜索网络中的物品，并创建订单发送到指定地址！"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "这没有距离限制，但你需要自己设计路线，让通过仓储链接站下单的包裹能顺利送达，并且让相关链接站保持区块加载，这一切才能运作。$(br2)此外，你还可以在发报机内放入$(item)过滤器$()，让它只显示特定物品，或者设置物品分类。"
+		},
+		{
+			"type": "tfg:multimultiblock",
+			"enable_visualize": false,
+			"text": "让生物坐上坐垫，然后对它$(item)$(k:key.use)$()即可请求物品，物品会被存入$(l:logistics/storage#crates)钢板条箱$()。",
+			"name": "最简配置",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"VVVVVVV",
+							"VVVVVVV",
+							"VVVVVVV",
+							"    LP ",
+							"       "
+						],
+						[
+							"VVVVVVV",
+							"VVVVVVV",
+							"VVVVVVV",
+							"     C ",
+							"       "
+						],
+						[
+							"VVVVVVV",
+							"VVVVVVV",
+							"VVVVVVV",
+							"   0SR ",
+							" ET    "
+						]
+					],
+					"mapping": {
+						"V": "create:item_vault[axis=z,large=true]",
+						"L": "create:stock_link[face=wall,facing=north]",
+						"P": "create:packager[facing=west,linked=true]",
+						"C": "create_connected:brass_chute",
+						"R": "create:packager[facing=south]",
+						"S": "gtceu:steel_crate",
+						"T": "create:stock_ticker[facing=west]",
+						"E": "create:white_seat"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"       ",
+							"       ",
+							"     V ",
+							"    LP ",
+							"       "
+						],
+						[
+							"       ",
+							"       ",
+							"       ",
+							"     C ",
+							"       "
+						],
+						[
+							"       ",
+							"       ",
+							"       ",
+							"   0SR ",
+							" ET    "
+						]
+					],
+					"mapping": {
+						"0": "minecraft:air",
+						"V": "gtceu:bismuth_bronze_crate",
+						"L": "create:stock_link[face=wall,facing=north]",
+						"P": "create:packager[facing=west,linked=true]",
+						"C": "create_connected:brass_chute",
+						"R": "create:packager[facing=south]",
+						"S": "gtceu:steel_crate",
+						"T": "create:stock_ticker[facing=west]",
+						"E": "create:white_seat"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:redstone_requester",
+			"anchor": "requester",
+			"text": "$(item)红石请求器$()可以看作一台更专用的$(l:logistics/create#stock_ticker)仓储发报机$()。你无法通过它查看$(thing)物流网络$()里的物品，但可以设置一份订单，让机器每次收到红石信号时自动下单。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "这对于搭建特定物品的自动供应系统非常有用——例如可以考虑搭配$(l:logistics/redstone_devices#threshold_switch)阈值开关$()或$(l:logistics/redstone_devices#smart_observer)智能观察器$()使用。$(br2)记住，与其他$(thing)高阶物流$()机器一样，放置请求器之前需要先对已有的链接站$(item)$(k:key.use)$()，把它调谐到该网络！"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tag:create:table_cloths",
+			"title": "桌布",
+			"anchor": "table_cloths",
+			"text": "$(item)桌布$()是机械动力的玩家商店系统！每张桌布可以出售一种物品。要开始营业，你需要一套小装置：$(l:logistics/create#stock_ticker)仓储发报机$()、$(l:logistics/create#packager)打包机$()，外加一位$(thing)仓库管理员$()（烈焰人燃烧室或坐在坐垫上的生物）。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "对仓库管理员$(item)$(k:key.use)$()（须手持$(item)桌布$()），然后选择要出售的物品。接着把桌布放到方块或$(item)脚手架$()上即可。$(br2)放好之后，手持想用作报酬的物品，对桌布正面的槽位$(item)$(k:key.use)$()。随后$(item)$(k:key.use)$()并按住，即可更改该物品的数量。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "空手对桌布$(item)$(k:key.use)$()，即可将其加入$(thing)采购清单$()。$(br2)清单准备好后，手持采购清单对仓库管理员$(item)$(k:key.use)$()即可购买物品！$(br2)按$(item)$(k:key.sneak) + $(k:key.use)$()可清空采购清单。货款随后会存入仓储发报机，店主可以稍后来收取，或把它送回自己的基地！"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "createstockbridge:ae_bridge",
+			"anchor": "stock_bridge",
+			"text": "如果你在机械动力的物流网络上投入颇多，一想到要在$(6)HV$()阶段把它全部拆掉换成 AE2，可能会感到绝望。$(item)仓储桥接器$()正是连接你的 ME 网络与机械动力网络之间的桥梁。想知道怎么设置，就去看它的思索条目吧。$(br)我们仍然建议最终把旧装置迁移到 AE2，主要原因是它对游戏性能的负担要轻得多。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:factory_gauge,fluidlogistics:fluid_factory_gauge",
+			"anchor": "factory_gauge",
+			"title": "工厂仪表",
+			"text": "$(item)工厂仪表$()是终极的$(thing)高阶物流$()机器，你需要先解锁$(item)铝$()和$(item)二极管$()的制造技术才能合成它——但它的强大也与之相称。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "工厂仪表的第一种用法，是装在$(l:logistics/create#packager)打包机$()上，监测所连容器中某一种物品的数量。这样设置后，仪表的外框会变成$(1)蓝色$()，也就是处于$(thing)补货模式$()。$(br2)另一种用法，是让它在$(thing)物流网络$()中目标产物数量低于阈值时自动下单订购原料。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "当仪表放在打包机以外的任何方块上时，就是这种运行模式；此时外框会变成$(6)黄色$()，也就是处于$(thing)配方模式$()。$(br2)无论哪种模式，你都可以设定一个工厂仪表要设法维持的具体数值。随后你还需要在界面中设置目标地址，让自动创建的订单发往你选定的地址。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "在$(thing)补货模式$()下，指定的地址最好指向仪表所装的那台打包机，这样送来的包裹就能自动解包进目标容器。$(br2)在$(thing)配方模式$()下，指定的地址应指向你生产该产物的地方。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "此外，每种原料都需要多设一块仪表，然后在界面中用$(thing)「添加新连接」$()把它们与第一块仪表相连。$(br2)如果你在$(thing)配方模式$()下要制作的产物是普通合成配方，就需要启用$(thing)「使用动力合成」$()，并确保包裹被解包到 3x3 的$(item)动力合成器$()阵列中。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(c)关键是包裹在途中绝不能被解包$()，因为包裹本身就载有合成配方指令——如果原料必须来自不同地点，可以考虑用$(l:logistics/create#repackager)理包机$()来充当包裹的缓冲。$(br2)$(bold)注意：$()工厂仪表发出的请求在机制上是「承诺」，即网络保证相应物品$(italic)必定$()会在将来的某个时刻送达。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "这样做是为了防止物品被重复下单。默认情况下，这些承诺永不失效；也就是说，如果物品将来无望送达，承诺会一直存在下去。$(br2)你可以调整仪表界面底部的设置来改变这一行为，限制承诺保留的时长。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "不出所料，$(item)流体工厂仪表$()就是面向流体的同类机器。$(br2)也一定要去看看工厂仪表的$(thing)思索$()！里面有$(italic)大量$()设置示例，非常直观。$(br2)$(bold)注意：$()如果你玩仪表玩上瘾、还想要更多花样，$(tfg_short)可与$(l:https://www.curseforge.com/minecraft/mc-mods/create-extra-gauges)Create: Extra Gauges$()选择性联动！只要装上该模组，新配方就会出现。"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "延伸阅读",
+			"anchor": "relations",
+			"entries": [
+				"tfg:logistics/redstone_devices",
+				"tfg:logistics/storage",
+				"tfg:logistics/trains",
+				"tfg:logistics/railgun"
+			]
+		}
+	],
+	"extra_recipe_mappings": {
+		"tag:create:packages": 3,
+		"create:packager": 5,
+		"create:package_frogport": 11,
+		"fluidlogistics:copper_frogport": 11,
+		"create:package_filter": 16,
+		"create:repackager": 17,
+		"fluidlogistics:fluid_repackager": 18,
+		"fluidlogistics:hand_pointer": 19,
+		"tag:create:postboxes": 21,
+		"create:transmitter": 28,
+		"create:rose_quartz": 28,
+		"greate:rose_quartz_lens": 32,
+		"create:stock_link": 35,
+		"create:stock_ticker": 38,
+		"create:redstone_requester": 42,
+		"tag:create:table_cloths": 44,
+		"createstockbridge:ae_bridge": 47,
+		"create:factory_gauge": 48,
+		"fluidlogistics:fluid_factory_gauge": 48
+	}
+}

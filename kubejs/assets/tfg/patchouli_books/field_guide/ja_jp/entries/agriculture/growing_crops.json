@@ -1,0 +1,103 @@
+{
+    "name": "作物の成長",
+    "category": "tfg:agriculture",
+    "icon": "tfc:textures/item/food/wheat.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "text": "作物はすべて、栽培するために耕地へ植える必要があります。作物によっては、水に浸かっている必要があったり、支柱として棒が必要だったりと追加条件があります。$(br2)作物をただ育てるだけであれば$(thing)栄養素$()は必要ありません、しかし、栄養素があると成長が有利になります。栄養素には$(b)窒素$()、$(6)リン$()、$(d)カリウム$()の3種類があり、それぞれの作物ごとに適した栄養素があります。",
+            "title": "作物の成長"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "作物は好む栄養素を吸収することで成長が早まり、収穫時の収量も向上します。つまり、より多くの栄養素を吸収した作物は、壊されたときに落ちる食料の量も多くなるということです！また、栄養素を吸収すると、周囲にある他の栄養素もわずかに補充される効果があります。$(br)作物ごとに、$(l:the_world/climate#temperature)温度$()と$(l:agriculture/growing_crops#hydration)水分$()の要件が異なります。各作物の適応気候範囲は、$(l:the_world/wild_crops)[野生作物]$()または種のアイテムツールチップで確認できます。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "作物を十分な水分がない状態や適温範囲外で植えると、その作物は枯れてしまいます。作物が完全に成熟した後で枯れると、種が多く得られます。$(l:agriculture/composting#rotten_compost)腐った堆肥$()を使って作物を枯らすことで、意図的にその種を増やすことができます。$(l:agriculture/greenhouse#planters)温室用プランター$()に植えられた作物は枯れることがなく、自動的に追加の種を提供してくれます。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "hydration",
+            "text": "水分含有率は、作物に利用可能な水の割合を示す指標です。作物の種類によって、水分含有率の計算方法は異なります。$(li)$(l:the_world/wild_crops)作物$() および $(l:the_world/wild_fruits#tall_bushes) ベリーの茂み$()の水分含有率は、その地域の降雨量と淡水源からの距離の両方の影響を受けます。$(li2)具体的には、以下の式で作物の水分含有率を計算できます： $(o)$(2)(60 * 降水量 / $(t:500は許容される最大降水量です。設定ファイルで最大降水量を変更した場合は、500をその数値に置き換えてください。)500$()$(o)$(2)) + 20 * (5 - waterCost)$() ここで、$(t:水源からの距離は3Dグリッドとして計算されます。)waterCostは、淡水までの距離（1～5）を表します$()",
+            "title": "水分量"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(l:the_world/wild_fruits#fruit_trees)果樹$()、$(l:the_world/wild_fruits#palm_fruit_trees) ヤシ類果樹$()、および $(l:the_world/wild_fruits#banana)バナナ$() の水分量は、次の式で計算されます：$(o)$(2)降水量 / 5$()$(br2)ブドウには水分要件がありません。米やクランベリーのような水中で育つ作物も、まあ…水に浸かっているので、水分要件はありません。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "growing_grapes",
+            "text": "ブドウは、支柱とジュート繊維で作られたブドウ棚で栽培する必要があります。ブドウ棚を作るには、まず2本の支柱を垂直に立てます。次に、1ブロック分の隙間を空けて、その左側または右側に別の支柱を立てます。$(item)$(k:key.use)$() を使って、上部と下部の支柱に $(thing)ジュート繊維$() を結びつけ、支柱の間に紐を張ります。最後に、支柱間のスペースにある土の上にブドウの種を植えます。ブドウ棚は水平方向に連結することで、ブドウの列を作ることができます。",
+            "title": "ブドウの栽培"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "ブドウの棚。",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "XYX"
+                        ],
+                        [
+                            "XGX"
+                        ],
+                        [
+                            "D0D"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:dirt/loam",
+                        "G": "firmalife:grape_string_plant_red[axis=z,lifecycle=healthy,stage=0]",
+                        "D": "tfc:dirt/loam",
+                        "X": "firmalife:grape_trellis_post[axis=x,string_plus=true,string_minus=true]",
+                        "Y": "firmalife:grape_string[axis=z]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "ZYZ"
+                        ],
+                        [
+                            "XGX"
+                        ],
+                        [
+                            "D0D"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:dirt/loam",
+                        "G": "firmalife:grape_string_plant_red[axis=z,lifecycle=healthy,stage=2]",
+                        "D": "tfc:dirt/loam",
+                        "X": "firmalife:grape_trellis_post[axis=x,string_plus=true,string_minus=true]",
+                        "Y": "firmalife:grape_string_red[axis=z,lifecycle=healthy]",
+                        "Z": "firmalife:grape_trellis_post_red[axis=x,lifecycle=healthy,string_plus=true,string_minus=true]"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(l:the_world/climate#temperature)温度$()の要件が満たされていれば、ブドウの木は数か月の間にブドウ棚を這い上がって覆い尽くします。7月に実を結び、その1か月前に開花します。その後、ブドウを収穫して $(l:cooking/alcohol#wine_making)ワイン$() を醸造することができます。$(br2)ブドウの木は、適温の範囲外になっても枯れることはありません。ただし、その場合は休眠状態となり、適切な温度に戻るまで実を結びません。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "さらに読む",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/wild_fruits",
+                "tfg:cooking/alcohol",
+                "tfg:the_world/climate",
+                "tfg:agriculture/greenhouse"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 1,
+    "priority": true
+}

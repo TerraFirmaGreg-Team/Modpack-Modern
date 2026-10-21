@@ -27,7 +27,7 @@ function registerTFGMiscMealFoodRecipes(event) {
 			.firmaLifeCopyDynamicFood()
 			.addTrait("firmalife:oven_baked")
 			.meal(
-				(food) => food.hunger(3).saturation(2).decayModifier(1.5),
+				(food) => food.hunger(4).saturation(2).decayModifier(1.5),
 				[(portion) => portion.nutrientModifier(2.0)])
 	});
 
@@ -38,7 +38,7 @@ function registerTFGMiscMealFoodRecipes(event) {
 		itemOutputs: ['2x tfg:food/raw_dino_nugget'],
 		circuit: 1,
 		itemOutputProvider: TFC.isp.of("2x tfg:food/raw_dino_nugget").meal(
-			(food) => food.hunger(1).decayModifier(3).grain(0.4),
+			(food) => food.hunger(4).decayModifier(3).grain(0.4),
 			[(portion) => portion.nutrientModifier(0.5).waterModifier(0.4)]
 		)
 	});
@@ -53,7 +53,7 @@ function registerTFGMiscMealFoodRecipes(event) {
 		fluidInputs: ['tfg:brown_gravy 50'],
 		itemOutputs: ['2x tfg:food/poutine'],
 		itemOutputProvider: TFC.isp.of('2x tfg:food/poutine').simpleModifier('tfg:add_bowl').meal(
-            (food) => food.hunger(5).water(5).saturation(1).decayModifier(1).grain(1).protein(0.5).dairy(1.5).warming(5),
+            (food) => food.hunger(4).water(5).saturation(1).decayModifier(1).grain(1).protein(0.5).dairy(1.5).warming(5),
 			[(portion) => portion.nutrientModifier(0.8).saturationModifier(1)]
 		)
 	});
