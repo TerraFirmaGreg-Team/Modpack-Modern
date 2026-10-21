@@ -48,7 +48,7 @@
   "commands.ftbquests.command.feedback.reloaded.disclaimer": "Uwaga: przeładowywanie zadań to narzędzie pomocnicze dla twórców zadań i nie zaleca się używania go na działających serwerach.",
   "commands.ftbquests.command.feedback.rewards_blocked": "Blokowanie nagród za zadania dla drużyny '%s' zostało ustawione na: %s",
   "commands.ftbquests.command.feedback.table_exported": "Pomyślnie wyeksportowano tabelę nagród „%s” z %s przedmiotami do bloku docelowego!",
-  "commands.ftbquests.command.feedback.table_imported": "Pomyślnie zaimportowano tabelę nagród '%s' z %s przedmiotem/przedmiotami!",
+  "commands.ftbquests.command.feedback.table_imported": "Pomyślnie zaimportowano tabelę nagród '%s' z %s przedmiotami!",
   "commands.ftbquests.command.feedback.table_too_many_items": "UWAGA: tabela %s zawiera więcej przedmiotów, niż może obsłużyć blok docelowy. Eksportowanie przerwano!",
   "commands.ftbquests.editing_mode.disabled": "Tryb edycji dla '%s' wyłączony",
   "commands.ftbquests.editing_mode.enabled": "Tryb edycji dla '%s' włączony",

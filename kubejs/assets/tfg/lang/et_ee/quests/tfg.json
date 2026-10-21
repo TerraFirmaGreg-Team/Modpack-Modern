@@ -3,5 +3,18 @@
     "quests.tfg.subtitle": "Teave teatud modide ja kogu modipaki kohta.",
     "quests.tfg.welcome.title": "Tere tulemast TerraFirmaGregi!",
     "quests.tfg.welcome.subtitle": "Ellujäämise modipakk sellisena, nagu see oleks pidanud olema",
-    "quests.tfg.welcome.desc": "Aitäh, et alustasid TerraFirmaGreg Moderni mängimist!\n\nSelles modipakis saad ülesandeks võtta enda kontrolli alla puutumatu metsiku looduse ja muuta see tööstuslikuks imedemaaks.\nAlusta tagasihoidlikult, korjates maast kive, ning lõpuks jõua tähtedevahelise kosmose avastamiseni! \n"
+    "quests.tfg.welcome.desc": "Aitäh, et alustasid TerraFirmaGreg Moderni mängimist!\n\nSelles modipakis saad ülesandeks võtta enda kontrolli alla puutumatu metsiku looduse ja muuta see tööstuslikuks imedemaaks.\nAlusta tagasihoidlikult, korjates maast kive, ning lõpuks jõua tähtedevahelise kosmose avastamiseni! \n",
+    "quests.tfg.create_team.title": "Kuidas luua tiim?",
+    "quests.tfg.create_team.subtitle": "Kas sa mängid koos sõpradega?",
+    "quests.tfg.capture_territory.title": "Kuidas vallutada territooriumi?",
+    "quests.tfg.capture_territory.subtitle": "Ja kuidas laadida chunke oma territooriumil",
+    "quests.tfg.capture_territory.desc": "Kui mängid serveris, võid soovida oma territooriumi enda valdusesse võtta, et teised mängijad ei saaks seal sinu tegevust segada.\nKasuta akna avamiseks klahvikombinatsiooni Ctrl + M (vaikimisi). Seejärel klõpsa vasaku hiireklahviga, et võtta üks maailmaosa (chunk) enda valdusesse, või parema hiireklahviga, et see enda valdusesse võtmine tühistada.\n\nSellel on piirang, seega ei saa sa kõiki maailmaosi enda valdusesse võtta.\nSa saad vajutada Shift + vasak hiireklahv mõne maailmaosa peal, et sundida seda pidevalt laetuna püsima (ehk laadida chunk'i). Vajutades Shift + parem hiireklahv, saad selle pideva laadimise lõpetada.\nKui kasutad meeskonda, kuuluvad sinu hõivatud maailmaosad ka kogu sinu meeskonnale.",
+    "quests.tfg.chunk_limit.title": "Kuidas suurendada oma maailmaosade laadimise piirangut?",
+    "quests.tfg.field_guide.title": "Oluline teave ülesannete kohta!",
+    "quests.tfg.field_guide.subtitle": "Kas ma pean rohkem lugema?",
+    "quests.tfg.field_guide.desc": "Ülesanded on endiselt arendamisel ja me töötame pidevalt nende täiustamise nimel!\nPalju teavet konkreetsete mängumehaanikate kohta leiad ka oma välijuhendist (Field Guide), millele pääsed ligi inventaris oleva raamatu vahekaardi kaudu.\nPea meeles, et nii EMI kui ka välijuhend on sulle abiks, sest kõike ei selgitata ülesannete kaudu.",
+    "quests.tfg.books_again.title": "Kas ma vajan raamatuid uuesti?",
+    "quests.tfg.books_again.desc": "Siin on korduv ülesanne, mille abil saad soovi korral uuesti endale füüsilised koopiad ülesannete raamatust ja välijuhendist.",
+    "quests.tfg.optional_mods.title": "Lisamodid",
+    "quests.tfg.optional_mods.subtitle": "Kohanda oma mängukogemust"
 }

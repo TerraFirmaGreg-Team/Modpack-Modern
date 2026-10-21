@@ -39,6 +39,14 @@
     "item.tfg.polycaprolactam_string": "Поликапролактамовая нить",
     "item.tfg.copper_spindle": "Веретено (Медь)",
     "item.tfg.copper_spindle_head": "Головка веретена (Медь)",
+    "item.tfg.bronze_spindle": "Веретено (Бронза)",
+    "item.tfg.bronze_spindle_head": "Головка веретена (Бронза)",
+    "item.tfg.black_bronze_spindle": "Веретено (Чёрная бронза)",
+    "item.tfg.black_bronze_spindle_head": "Головка веретена (Чёрная бронза)",
+    "item.tfg.bismuth_bronze_spindle": "Веретено (Висмутовая бронза)",
+    "item.tfg.bismuth_bronze_spindle_head": "Головка веретена (Висмутовая бронза)",
+    "item.tfg.wrought_iron_spindle": "Веретено (Кованое железо)",
+    "item.tfg.wrought_iron_spindle_head": "Головка веретена (Кованое железо)",
     "item.tfg.silk_fibers": "Шёлковое волокно",
     "item.tfg.space_suit_fabric": "Ткань скафандра",
     "item.tfg.vitrified_pearl": "Остеклованный эндер-жемчуг",
@@ -503,5 +511,7 @@
     "item.tfg.food.opened_green_coconut": "Открытый молодой кокос",
     "item.tfg.oil_palm_paste": "Паста из масличной пальмы",
     "item.tfg.oil_palm_debris": "Остатки масличной пальмы",
-    "item.tfg.oil_palm_fiber": "Волокно масличной пальмы"
+    "item.tfg.oil_palm_fiber": "Волокно масличной пальмы",
+    "item.tfg.electric_flask": "Электрическая фляга",
+    "item.tfg.electric_flask.filled": "Электрическая фляга (%s)"
 }
