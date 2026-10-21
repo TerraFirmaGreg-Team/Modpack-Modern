@@ -6,11 +6,11 @@
 		{
 			"type": "patchouli:text",
 			"title": "Extraterrestrial Fauna",
-			"text": "Space is home to many other kinds of animals than those you'd find on Earth. A few animals are hostile and will attack the player, but most are passive. Only a few of them are $(l:agriculture/animal_husbandry)domesticatable$().$(br)Animals you find on other worlds can be divided into two categories: $(item)hot$() and $(item)cold$(). Animals can only survive on planets that either have a similar climate to where they came from, or on $(thing)temperate$() planets like Earth."
+			"text": "Space is home to many other kinds of animals than those you'd find on Earth. A few animals are hostile and will attack the player, but most are passive. Only a few of them are $(l:agriculture/animal_husbandry)domesticatable$(). Animals you find on other worlds can be divided into two categories: $(item)hot$() and $(item)cold$(). Animals can only survive on planets that either have a similar climate to where they came from, or on $(thing)temperate$() planets like Earth."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Space animals do not require an oxygenated environment, but it will make the area count as \"temperate\" for their survival. For example, if you bring a cold-dwelling animal (like a Moon Rabbit) to a hot planet (like Venus), it will catch on fire, unless it's inside an oxygenated environment.$(br)This makes Earth the ideal place to build a zoo, if you'd like.$(br)You can transport animals between planets using AE2's Spatial Storage system."
+			"text": "Extraterrestrial animals do not require an oxygenated environment, but you can use a $(l:game_mechanics/player_temperature#heat_pump)Heat Pump$() to change the temperature in an area. For example, if you bring a cold-dwelling animal (like a Moon Rabbit) to a hot planet (like Venus), it will catch on fire, unless it's inside a temperature-controlled environment. This makes Earth the ideal place to build a zoo, if you'd like.$(br)You can transport animals between planets using AE2's Spatial Storage system."
 		},
 		{
 			"type": "patchouli:text",
@@ -23,7 +23,7 @@
 			"offset": -0.3,
 			"name": "Moon Rabbit",
 			"anchor": "moon_rabbit",
-			"text": "Besides their coloring, $(thing)Moon Rabbits$() have identical stats to Earth rabbits. They also eat Chorus Fruit."
+			"text": "Besides their coloring, $(thing)Moon Rabbits$() have identical behaviours to Earth rabbits. They also eat Chorus Fruit."
 		},
 		{
 			"type": "patchouli:entity",
