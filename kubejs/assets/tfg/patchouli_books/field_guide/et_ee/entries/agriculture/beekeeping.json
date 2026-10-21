@@ -348,7 +348,7 @@
         {
             "type": "patchouli:text",
             "anchor": "disease",
-            "title": "Disease",
+            "title": "Haigus",
             "text": "Bees with a high Mutant ability have a chance of developing a $(thing)Genetic Disease$(). Diseased bees pass on their affliction to their offspring, and do not produce honey."
         },
         {

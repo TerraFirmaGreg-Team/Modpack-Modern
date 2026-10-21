@@ -1,16 +1,16 @@
 {
-    "name": "Beneath Fruits",
+    "name": "深界産のフルーツ",
     "category": "tfg:beneath",
     "icon": "tfg:textures/item/fruit_trees/magmango_sapling.png",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "title": "Index",
-            "text": "$(bold)$(li)$(l:beneath/beneath_wild_fruits#fruit_trees)Fruit Trees$()$(li2)$(l:beneath/beneath_wild_fruits#lavacado)Lavacado$()$(li2)$(l:beneath/beneath_wild_fruits#magmango)Magmango$()$(bold)$(li)$(l:beneath/beneath_wild_fruits#palm_fruit_trees)Palm Fruit Trees$()$(li2)$(l:beneath/beneath_wild_fruits#oil_palm)Oil Palm$()$(li2)$(l:beneath/beneath_wild_fruits#acai)Açaí$()"
+            "title": "目次",
+            "text": "$(bold)$(li)$(l:beneath/beneath_wild_fruits#fruit_trees)果樹$()$(li2)$(l:beneath/beneath_wild_fruits#lavacado)ラヴァボカド$()$(li2)$(l:beneath/beneath_wild_fruits#magmango)マグマンゴー$()$(bold)$(li)$(l:beneath/beneath_wild_fruits#palm_fruit_trees)ヤシ類果樹$()$(li2)$(l:beneath/beneath_wild_fruits#oil_palm)アブラヤシ$()$(li2)$(l:beneath/beneath_wild_fruits#acai)アサイー$()"
         },
         {
-            "title": "Introduction",
+            "title": "はじめに",
             "anchor": "into",
             "type": "patchouli:text",
             "text": "$(l:beneath)深界$()には、地下の過酷な環境に適応した、この場所ならではの野生の果物が自生しています。これらの野生の果物は、オーバーワールドにある通常の$(l:the_world/wild_fruits)野生の果物$()とまったく同じ方法で栽培することができます。"
@@ -35,7 +35,7 @@
                     "text": "4月"
                 },
                 {
-                    "text": "May"
+                    "text": "5月"
                 },
                 {
                     "text": "6月"
@@ -59,7 +59,7 @@
                     "text": "12月"
                 },
                 {
-                    "text": "Lavacado"
+                    "text": "ラヴァボカド"
                 },
                 {
                     "fill": "0x6ab553"
@@ -98,7 +98,7 @@
                     "fill": "0x6ab553"
                 },
                 {
-                    "text": "Magmango"
+                    "text": "マグマンゴー"
                 },
                 {
                     "fill": "0x6ab553"
@@ -172,8 +172,8 @@
         {
             "type": "patchouli:text",
             "anchor": "lavacado",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 100 %$(br2)Lavacado trees grow in the months of December through April, start flowering in May and June, and bear fruit in July.",
-            "title": "Lavacado"
+            "text": "$(bold)$(l:the_world/climate#temperature)気温$(): 8 - 80°C$(br)$(bold)$(l:agriculture/growing_crops#hydration)水分$(): 20 - 100%$(br2)ラヴァボカドの木は12月から4月にかけて成長し、5月から6月に開花、7月に果実をつけます。",
+            "title": "ラヴァボカド"
         },
         {
             "type": "tfg:multimultiblock",
@@ -237,8 +237,8 @@
         {
             "type": "patchouli:text",
             "anchor": "magmango",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 30 - 100 %$(br2)Magmango trees grow in the months of October through February, start flowering in March and April, and bear fruit in May.",
-            "title": "Magmango"
+            "text": "$(bold)$(l:the_world/climate#temperature)気温$(): 8 - 80°C$(br)$(bold)$(l:agriculture/growing_crops#hydration)水分$(): 30 - 100%$(br2)マグマンゴーの木は10月から2月にかけて成長し、3月から4月に開花、5月に果実をつけます。",
+            "title": "マグマンゴー"
         },
         {
             "type": "tfg:multimultiblock",
@@ -307,61 +307,43 @@
                     "text": ""
                 },
                 {
-                    "text": "Jan"
+                    "text": "1月"
                 },
                 {
-                    "text": "Feb"
+                    "text": "2月"
                 },
                 {
-                    "text": "Mar"
+                    "text": "3月"
                 },
                 {
-                    "text": "Apr"
+                    "text": "4月"
                 },
                 {
-                    "text": "May"
+                    "text": "5月"
                 },
                 {
-                    "text": "Jun"
+                    "text": "6月"
                 },
                 {
-                    "text": "Jul"
+                    "text": "7月"
                 },
                 {
-                    "text": "Aug"
+                    "text": "8月"
                 },
                 {
-                    "text": "Sep"
+                    "text": "9月"
                 },
                 {
-                    "text": "Oct"
+                    "text": "10月"
                 },
                 {
-                    "text": "Nov"
+                    "text": "11月"
                 },
                 {
-                    "text": "Dec"
+                    "text": "12月"
                 },
                 {
-                    "text": "Oil Palm"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa217ff"
+                    "text": "アブラヤシ"
                 },
                 {
                     "fill": "0xa217ff"
@@ -373,6 +355,24 @@
                     "fill": "0xa8986a"
                 },
                 {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
                     "fill": "0xa8986a"
                 },
                 {
@@ -382,7 +382,7 @@
                     "fill": "0xa217ff"
                 },
                 {
-                    "text": "Açaí"
+                    "text": "アサイー"
                 },
                 {
                     "fill": "0xa217ff"
@@ -421,15 +421,15 @@
                     "fill": "0xa8986a"
                 }
             ],
-            "text": "The fruiting calendar for palm fruit trees.",
-            "title": "Palm Fruit Trees",
+            "text": "ヤシ類の結実カレンダー。",
+            "title": "ヤシ類果樹",
             "legend": [
                 {
-                    "text": "Dormant",
+                    "text": "休眠期",
                     "color": "0xa8986a"
                 },
                 {
-                    "text": "Fruiting",
+                    "text": "結実期",
                     "color": "0xa217ff"
                 }
             ],
@@ -448,12 +448,12 @@
         {
             "type": "patchouli:text",
             "anchor": "oil_palm",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 19 - 62 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 10 - 100 %$(br2)Oil Palm trees are harvested for their fruits which can be processed into Palm Oil and a source of burlap fiber. Oil palm clusters grow in 4 stages and yield 3-6 items when harvested.",
-            "title": "Oil Palm Tree"
+            "text": "$(bold)$(l:the_world/climate#temperature)気温$(): 19～62 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration) 水分$(): 10 - 100 %$(br2)アブラヤシは、その果実を収穫するために栽培されます。果実はパーム油に加工できるほか、麻布の原料ともなります。アブラヤシの房は4つの成長段階を経て成長し、収穫時には3～6個のアイテムが得られます。",
+            "title": "アブラヤシの木"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Oil palm trees can be found in $(l:beneath/beneath#salt_caves)Salt Caves$() and $(l:beneath/beneath#tar_pools)Tar Pools$() biomes between Y=50 and Y=190",
+            "text": "アブラヤシの木は、 $(l:beneath/beneath#salt_caves)塩の洞窟$() と $(l:beneath/beneath#tar_pools)タールピット$()バイオームのY=50からY=190の間で見られます。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -1076,12 +1076,12 @@
         {
             "type": "patchouli:text",
             "anchor": "acai",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 24 - 70 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 10 - 100 %$(br2)Açaí tree clusters grow in 5 stages and yield 4-8 fruits when harvested.",
-            "title": "Açaí Tree"
+            "text": "$(bold)$(l:the_world/climate#temperature)気温$(): 24～70　°C$(br)$(bold)$(l:agriculture/growing_crops#hydration) 水分$(): 10 - 100 %$(br2)アサイーの房は4つの成長段階を経て成長し、収穫時には4～8個のアイテムが得られます。",
+            "title": "アサイヤシの木"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Açaí trees can be found in $(l:beneath/beneath#salt_caves)Salt Caves$() and $(l:beneath/beneath#tar_pools)Tar Pools$() biomes between Y=50 and Y=190",
+            "text": "アサイヤシの木は、 $(l:beneath/beneath#salt_caves)塩の洞窟$() と $(l:beneath/beneath#tar_pools)タールピット$()バイオームのY=50からY=190の間で見られます。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -1827,7 +1827,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "さらに読む",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/climate",

@@ -6,45 +6,45 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:agriculture/papermaking#papyrus)Papyrus Paper$()$(li2)$(l:agriculture/papermaking#papyrus)1. Papyrus Strips$()$(li2)$(l:agriculture/papermaking#soaked_papyrus_strip)2. Soaked Papyrus Strips$()$(li2)$(l:agriculture/papermaking#unrefined_paper)3. Unrefined Paper$()$(li)$(bold)$(l:agriculture/papermaking#parchment)Parchment Paper$()$(li2)$(l:agriculture/papermaking#treated_hide)1. Treated Hide$()$(li2)$(l:agriculture/papermaking#treated_hide)2. Parchment Paper$()$(li)$(bold)$(l:agriculture/papermaking#paper_from_wood)Wood Pulp Paper$()$(li2)$(l:agriculture/papermaking#hardwood_strip)1. Hardwood Strips$()$(li2)$(l:agriculture/papermaking#soaked_hardwood_strip)2. Soaking Hardwood Strips$()$(li2)$(l:agriculture/papermaking#breaking_down_the_pulp)3. Breaking Down the Pulp$()$(li2)$(l:agriculture/papermaking#pressing_the_pulp)4. Pressing the Pulp$()$(li2)$(l:agriculture/papermaking#drying_the_paper)5. Drying the Paper$()"
+            "text": "$(li)$(bold)$(l:agriculture/papermaking#papyrus)パピルス紙$()$(li2)$(l:agriculture/papermaking#papyrus)1. パピルスの帯$()$(li2)$(l:agriculture/papermaking#soaked_papyrus_strip)2. 浸したパピルスの帯$()$(li2)$(l:agriculture/papermaking#unrefined_paper)3. \n未精製の紙$()$(li)$(bold)$(l:agriculture/papermaking#parchment)羊皮紙$()$(li2)$(l:agriculture/papermaking#treated_hide)1. 加工された皮$()$(li2)$(l:agriculture/papermaking#treated_hide)2. 羊皮紙$()$(li)$(bold)$(l:agriculture/papermaking#paper_from_wood)木材パルプ紙$()$(li2)$(l:agriculture/papermaking#hardwood_strip)1. 剥いだ堅木\n$()$(li2)$(l:agriculture/papermaking#soaked_hardwood_strip)2. 剥いで浸した堅木$()$(li2)$(l:agriculture/papermaking#breaking_down_the_pulp)3. パルプへの粉砕$()$(li2)$(l:agriculture/papermaking#pressing_the_pulp)4. 濡れた未精製の紙$()$(li2)$(l:agriculture/papermaking#drying_the_paper)5. 乾燥$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
             "title": "はじめに",
-            "text": "$(thing)Paper$() is either made from the processed stalk of the $(l:the_world/wild_crops#papyrus)Papyrus$() crop, from $(l:agriculture/papermaking#parchment)Animal Hides$(), or from a lengthy process using specific types of $(l:agriculture/papermaking#paper_from_wood)Wood$(). Paper is useful for many things―like $(item)Backpacks$() and $(item)Nametags$()―but most importantly it is required for progression into the $(thing)Electric Age$()!"
+            "text": "$(thing)紙$()は、$(l:the_world/wild_crops#papyrus)パピルス$()の茎を加工したもの、$(l:agriculture/papermaking#parchment)動物の皮$()、あるいは特定の種類の$(l:agriculture/papermaking#paper_from_wood)木材$()を用いた長い工程を経て作られます。紙は、$(item)バックパック$()や$(item)ネームタグ$()など、さまざまな用途に役立ちますが、何よりも重要なのは、$(thing)電気時代$()へと進むために必要不可欠であるということです！"
         },
         {
             "type": "patchouli:crafting",
             "anchor": "papyrus",
-            "title": "Paper from Papyrus",
+            "title": "パピルスからの製紙",
             "recipe": "tfc:crafting/papyrus_strips",
-            "text": "Paper can be directly sourced from the $(l:the_world/wild_crops#papyrus)Papyrus$() crop. Papyrus must first be cut into strips with a $(thing)Knife$()..."
+            "text": "紙は、$(l:the_world/wild_crops#papyrus)パピルス$()という作物から直接入手できます。パピルスは、まず$(thing)ナイフ$()を使って細長い帯状に切り分けなければなりません……"
         },
         {
             "type": "tfg:sealed_barrel_recipe",
             "anchor": "soaked_papyrus_strip",
-            "title": "Soaked Papyrus Strip",
+            "title": "浸したパピルスの帯",
             "recipe": "tfc:barrel/soaked_papyrus_strip",
-            "text": "Then, papyrus strips are soaked in a $(l:craftsmanship/barrels)Barrel$() of $(thing)Water$()."
+            "text": "次に、パピルスの帯を水が入った$(l:craftsmanship/barrels)樽$()に入れて$(thing)浸し$()ます。"
         },
         {
             "type": "tfg:loom_recipe",
             "anchor": "unrefined_paper",
-            "title": "Unrefined Paper",
+            "title": "未精製の紙",
             "recipe": "tfc:loom/unrefined_paper",
-            "text": "Then, soaked papyrus strips are woven together in a $(l:agriculture/weaving#loom)Loom$() to make $(thing)Unrefined Paper$(). Finally, it must be placed on a log and $(l:agriculture/leather_making#scraping)Scraped$() to make $(thing)Paper$()."
+            "text": "次に、浸したパピルスの帯を$(l:agriculture/weaving#loom)織機$()で織り合わせて$(thing)未精製の紙$()を作成します。最後に、それを丸太の上に置き、$(l:agriculture/leather_making#scraping)剥ぐ$()ことで、$(thing)紙$()が完成します。"
         },
         {
             "type": "patchouli:text",
             "anchor": "parchment",
-            "text": "$(thing)Parchment Paper$() starts with a $(l:agriculture/leather_making#scraping)Scraped Hide$(). Parchment requires treatment with a few different items. First, $(thing)Pumice$() is needed. Pumice is found on the ground near $(l:the_world/geology)Volcanoes$(), rarely from $(l:craftsmanship/panning)Panning$(), or from raiding the chests of locals.",
+            "text": "$(thing)羊皮紙$()は、$(l:agriculture/leather_making#scraping)剥がれた皮$()から作られます。羊皮紙を作るには、いくつかの異なるアイテムを使った処理が必要です。まず、$(thing)軽石$()が必要です。軽石は、$(l:the_world/geology)火山$()の近くの地面で見つかるほか、まれに$(l:craftsmanship/panning)砂利をふるう$()ことで入手したり、地元住民の宝箱を略奪したりして手に入れることもできます。",
             "title": "羊皮紙"
         },
         {
             "type": "patchouli:crafting",
             "anchor": "treated_hide",
-            "title": "Treated Hide",
+            "title": "加工された皮",
             "recipe": "tfc:crafting/large_treated_hide",
             "text": "軽石、ハンマー、剥がれた皮を組み合わせてクラフトすることで、$(thing)加工された皮$()を作成できます。"
         },
@@ -52,13 +52,13 @@
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/parchment",
             "anchor": "parchment_paper",
-            "title": "Parchment Paper",
-            "text": "Treated hide, $(l:craftsmanship/glassworking#lime_and_potash)lime powder$(), flour, and a fresh egg will complete the treatment process and yield usable paper."
+            "title": "羊皮紙",
+            "text": "加工された皮と、$(l:craftsmanship/glassworking#lime_and_potash)石灰の粉末$()、穀物の粉、新鮮な卵を組み合わせて加工することで、紙が完成します。"
         },
         {
             "type": "patchouli:text",
             "anchor": "paper_from_wood",
-            "text": "$(thing)Creating Paper from Wood$() is an ancient process that requires processing of sturdy types of wood into sheets, which are broken down into a pulp, and then pressed, dried and scraped to make paper.$(br2)Note that softer types of wood are not suitable for making paper, only $(t:#tfg:hardwood)$(6)Hardwoods$() can produce paper.",
+            "text": "$(thing)木材からの製紙$()は、古くから伝わる方法で、硬い木材をシート状に加工し、それをパルプ状になるまで粉砕した後、さらに熱処理し、圧縮、乾燥、削りの工程を経て紙へと仕上げる工程です。$(br2)ただし、軟木は製紙に適していないため使用できず、$(t:#tfg:hardwood)$(6)堅木$()のみが製紙に使用できます。 ",
             "title": "木材からの製紙"
         },
         {
@@ -68,42 +68,42 @@
             "item": {
                 "tag": "tfg:stripped_hardwood"
             },
-            "text": "The process begins by stripping the $(t:#tfg:hardwood)$(6)Hardwood's$() bark off to expose the internal fibers of the log, You can strip the log by placing it down and $(item)$(k:key.use)$() it with an axe."
+            "text": "この工程はまず、$(t:#tfg:hardwood)$(6)堅木$()の丸太から樹皮を取り除き、内部の繊維質を露出させるところから始まります。丸太を設置して斧を$(item)$(k:key.use)$()で使うことで、樹皮を剥ぐことができます。"
         },
         {
             "type": "patchouli:crafting",
-            "title": "Hardwood Strip",
+            "title": "剥いだ堅木",
             "anchor": "hardwood_strip",
             "recipe": "tfg:crafting/strip_hardwood",
-            "text": "Next, the stripped wood is shaven with an axe to obtain $(item)Hardwood Strips$(). This can be done using an Axe or more sophisticated methods later."
+            "text": "次に、樹皮を剥いだ木材を斧で削ることで$(item)剥いだ堅木$()を入手します。この作業は斧、もしくはより高性能な道具で実行可能です。"
         },
         {
             "type": "tfg:sealed_barrel_recipe",
-            "title": "Soaked Hardwood Strip",
+            "title": "剥いで浸した堅木",
             "anchor": "soaked_hardwood_strip",
             "recipe": "tfg:barrel/soak_hardwood_strip",
-            "text": "Then, the individual strips are soaked in a $(l:craftsmanship/barrels)Barrel$() of $(thing)Water$(). This $(thing)debilitates the structural integrity$() of the $(thing)wood$() so it can be $(thing)broken down further$()."
+            "text": "次に、剥いだ堅木を$(thing)水$()の入った$(l:craftsmanship/barrels)樽$()に浸します。これによって$(thing)木材$()の$(thing)構造的な強度が脆くなり$()、より細かく$(thing)分解できる状態$()になります。"
         },
         {
             "type": "tfg:quern_recipe",
             "recipe": "tfg:quern/soaked_hardwood_strip",
-            "title": "Hardwood Pulp",
+            "title": "堅木のパルプ",
             "anchor": "hardwood_pulp",
-            "text": "Afterward, utilize the $(l:craftsmanship/quern)Quern$() to break down the soaked strips into $(item)Hardwood Pulp$()."
+            "text": "その後、$(l:craftsmanship/quern)石臼$()を使って、剥いで浸した堅木をすり潰し、$(item)堅木のパルプ$()へと加工します。"
         },
         {
             "type": "patchouli:crafting",
             "recipe": "gtceu:shaped/small_dust_assembling_hardwood",
             "title": "パルプをまとめる",
             "anchor": "piling_up_the_pulp",
-            "text": "While the quern gives you small piles of pulp, you'll want to combine them together in a $(thing)Workbench$(). More advanced methods of crushing the strips yield higher amounts of pulp."
+            "text": "臼ではパルプが少量ずつ出てくるため、それらを$(thing)作業台$()でまとめる必要があります。なお、より高度な粉砕手段を用いることで、より多くのパルプを効率的に得ることができるようになります。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "gtceu:thermochemically_treated_hardwood_dust",
             "title": "パルプの熱処理",
             "anchor": "breaking_down_the_pulp",
-            "text": "Before the pulp can be processed further into paper, it needs to be broken down further by $(thing)Boiling it with Lye$() in a $(l:cooking/cooking_methods#vat)Vat$() or a $(l:cooking/cooking_methods#pot)Pot$()."
+            "text": "パルプを最終的に紙へ加工する前に、灰汁で煮沸する$(thing)熱処理$()によってさらに分解する必要があります。この処理は$(l:cooking/cooking_methods#vat)釜$()または$(l:cooking/cooking_methods#pot)鍋$()を用いて行います。"
         },
         {
             "type": "patchouli:spotlight",
@@ -112,22 +112,22 @@
             "item": {
                 "tag": "firmalife:stomping_barrels"
             },
-            "text": "After broken down by boiling it with Lye, the $(item)Thermochemically Treated Hardwood Pulp$() can be pressed down into a sheet of $(item)Soaked Unrefined Paper$(). You can stomp the treated hardwood pulp in a $(l:cooking/alcohol#grape_smashing)Stomping Barrel$() into sheets, or you can use an $(l:craftsmanship/anvils)Anvil$()."
+            "text": "灰汁で煮沸して分解した後、$(item)熱処理済み堅木のパルプ$()を圧搾して、$(item)濡れた未精製の紙$()のシートにすることができます。$(l:cooking/alcohol#grape_smashing)踏み桶$()の中で、処理済みの広葉樹パルプを踏み潰してシート状にするか、$(l:craftsmanship/anvils)金床$()を使用することができます。"
         },
         {
             "type": "tfg:drying_recipe",
             "recipe": "tfg:drying/unrefined_paper",
             "anchor": "drying_the_paper",
-            "text": "The final step is $(l:cooking/decay#drying)Drying$() the $(item)Soaked Unrefined Paper$() into $(item)Unrefined Paper$(), Which then can be Scraped into $(item)Paper$() as shown before."
+            "text": "最終工程は$(l:cooking/decay#drying)乾燥$()工程です。$(item)濡れた未精製の紙$()を乾かして$(item)未精製の紙$()へと仕上げます。その後は先述の通り、削り加工を行うことで$(item)紙$()が完成します。"
         },
         {
             "type": "patchouli:text",
             "title": "もうちょっと楽にならない...？",
-            "text": "Advancing in the Tech-Tree will allow you to create paper from wood with less overall steps, check $(emi) for the different approaches you can take for making paper with wood."
+            "text": "技術の発達により、木材から紙を作る際の工程数を減らすことができます。木材を用いた製紙の別のアプローチについては$(emi)を参照してください。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "さらに読む",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/animal_husbandry",
