@@ -45,21 +45,12 @@ const NEW_MOB_MAX_HP = {
 	"species:trooper": 30,
 	"minecraft:blaze": 80,
 	"minecraft:strider": 50,
-	'arthropocolypse:scarab': 10,
 	'arthropocolypse:prairie_grasshopper': 14,
 	'arthropocolypse:field_cricket': 20,
-	'arthropocolypse:ice_crawler': 70,
-	'arthropocolypse:behemoth_desert_spider': 1300,
-	'arthropocolypse:behemoth_desert_scorpion': 200,
-	'arthropocolypse:worker_ant': 30,
-	'arthropocolypse:soldier_ant': 60,
-	'arthropocolypse:stag_beetle': 90,
 	'arthropocolypse:stag_beetle_larva': 20,
 	'arthropocolypse:wharf_roach': 20,
-	'arthropocolypse:platerodrilus': 90,
 	'arthropocolypse:mealworm_beetle': 50,
 	'arthropocolypse:mealworm': 14,
-	'arthropocolypse:millipede_head': 200,
 	'arthropocolypse:millipede_body': 200,
 	'arthropocolypse:millipede_tail': 200,
 	"opposing_force:slug": 80,
@@ -82,66 +73,34 @@ const NEW_MOB_ARMOR = {
 	"endermanoverhaul:desert_enderman": 4,
 	"endermanoverhaul:nether_wastes_enderman": 2,
 	"ad_astra:sulfur_creeper": 4,
-	'arthropocolypse:ice_crawler': 6,
-	'arthropocolypse:behemoth_desert_spider': 10,
-	'arthropocolypse:behemoth_desert_scorpion': 20,
-	'arthropocolypse:worker_ant': 6,
-	'arthropocolypse:soldier_ant': 10,
-	'arthropocolypse:stag_beetle': 8,
 	'arthropocolypse:wharf_roach': 6,
-	'arthropocolypse:platerodrilus': 6,
 	'arthropocolypse:mealworm_beetle': 8,
-	'arthropocolypse:millipede_head': 16,
 	'arthropocolypse:millipede_body': 16,
 	'arthropocolypse:millipede_tail': 16,
 };
 
 const NEW_MOB_ARMOR_TOUGHNESS = {
-	'arthropocolypse:behemoth_desert_spider': 4,
-	'arthropocolypse:behemoth_desert_scorpion': 8,
 }
 
 const NEEDS_FIREPROOFING = [
 	"minecraft:bat",
 	"minecraft:hoglin",
-	"primitive_creatures:golem_2",
 	"endermanoverhaul:savanna_enderman",
 	"endermanoverhaul:desert_enderman",
 	"endermanoverhaul:dark_oak_enderman",
-	'arthropocolypse:scarab',
 	'arthropocolypse:prairie_grasshopper',
 	'arthropocolypse:field_cricket',
-	'arthropocolypse:ice_crawler',
-	'arthropocolypse:behemoth_desert_spider',
-	'arthropocolypse:behemoth_desert_scorpion',
-	'arthropocolypse:worker_ant',
-	'arthropocolypse:soldier_ant',
-	'arthropocolypse:stag_beetle',
 	'arthropocolypse:stag_beetle_larva',
 	'arthropocolypse:wharf_roach',
-	'arthropocolypse:platerodrilus',
 	'arthropocolypse:mealworm_beetle',
 	'arthropocolypse:mealworm',
-	'arthropocolypse:millipede_head',
 	'arthropocolypse:millipede_body',
 	'arthropocolypse:millipede_tail'
 ];
 
 const VENUS_DAMAGE_BUFFING = {
-	"primitive_creatures:golem_2": 10,
 	"endermanoverhaul:savanna_enderman": 10,
-	"endermanoverhaul:desert_enderman": 10,
-	'arthropocolypse:scarab': 4,
-	'arthropocolypse:ice_crawler': 12,
-	'arthropocolypse:behemoth_desert_spider': 30,
-	'arthropocolypse:behemoth_desert_scorpion': 20,
-	'arthropocolypse:worker_ant': 10,
-	'arthropocolypse:soldier_ant': 15,
-	'arthropocolypse:stag_beetle': 8,
-	'arthropocolypse:wharf_roach': 8,
-	'arthropocolypse:platerodrilus': 14,
-	'arthropocolypse:mealworm_beetle': 8,
-	'arthropocolypse:millipede_head': 20
+	"endermanoverhaul:desert_enderman": 10
 };
 
 
@@ -214,18 +173,6 @@ EntityEvents.spawned((event) => {
 		}
 	}
 
-	// Add fire immunity to some things
-	if (NEEDS_FIREPROOFING.includes(type)) {
-		entity.potionEffects.add("minecraft:fire_resistance", -1, 0, true, false);
-	}
-
-	let newAttack = VENUS_DAMAGE_BUFFING[type] ?? 0
-	if (dimension === "ad_astra:venus" && newAttack !== 0) {
-		let baseAttack = entity.attack_damage;
-		let missingAttack = newAttack - baseAttack;
-		entity.modifyAttribute("minecraft:generic.attack_damage", "tfg_attack_buff_id", missingAttack, "addition");
-	}
-
 	let newArmor = NEW_MOB_ARMOR[type] ?? 0;
 	if (newArmor !== 0) {
 		let baseArmor = entity.armor;
@@ -238,5 +185,18 @@ EntityEvents.spawned((event) => {
 		let baseToughness = entity.armor_toughness;
 		let missingToughness = newToughness - baseToughness;
 		entity.modifyAttribute("minecraft:generic.armor_toughness", "tfg_toughness_buff_id", missingToughness, "addition");
+	}
+
+	// Add fire immunity to some things
+	if (NEEDS_FIREPROOFING.includes(type)) {
+		entity.potionEffects.add("minecraft:fire_resistance", -1, 0, true, false);
+	}
+
+	// Doesn't seem to work for some entities?
+	let newAttack = VENUS_DAMAGE_BUFFING[type] ?? 0
+	if (dimension === "ad_astra:venus" && newAttack !== 0) {
+		let baseAttack = entity.attack_damage;
+		let missingAttack = newAttack - baseAttack;
+		entity.modifyAttribute("minecraft:generic.attack_damage", "tfg_attack_buff_id", missingAttack, "addition");
 	}
 })
