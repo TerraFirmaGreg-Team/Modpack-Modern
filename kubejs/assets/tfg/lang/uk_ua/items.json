@@ -39,6 +39,14 @@
     "item.tfg.polycaprolactam_string": "Полікапролактамова нитка",
     "item.tfg.copper_spindle": "Мідне веретено",
     "item.tfg.copper_spindle_head": "Головка мідного веретена",
+    "item.tfg.bronze_spindle": "Бронзовий шпиндель",
+    "item.tfg.bronze_spindle_head": "Бронзова головка шпинделя",
+    "item.tfg.black_bronze_spindle": "Шпиндель із чорної бронзи",
+    "item.tfg.black_bronze_spindle_head": "Головка шпинделя з чорної бронзи",
+    "item.tfg.bismuth_bronze_spindle": "Шпиндель із бісмутової бронзи",
+    "item.tfg.bismuth_bronze_spindle_head": "Головка шпинделя з бісмутової бронзи",
+    "item.tfg.wrought_iron_spindle": "Шпиндель із кованого заліза",
+    "item.tfg.wrought_iron_spindle_head": "Головка шпинделя з кованого заліза",
     "item.tfg.silk_fibers": "Шовкове волокно",
     "item.tfg.space_suit_fabric": "Тканина для скафандра",
     "item.tfg.vitrified_pearl": "Вітрифікована перлина Енду",
@@ -503,5 +511,7 @@
     "item.tfg.food.opened_green_coconut": "Розкритий молодий кокос",
     "item.tfg.oil_palm_paste": "Паста з олійної пальми",
     "item.tfg.oil_palm_debris": "Залишки олійної пальми",
-    "item.tfg.oil_palm_fiber": "Волокно олійної пальми"
+    "item.tfg.oil_palm_fiber": "Волокно олійної пальми",
+    "item.tfg.electric_flask": "Електрична фляга",
+    "item.tfg.electric_flask.filled": "%s електрична фляга"
 }

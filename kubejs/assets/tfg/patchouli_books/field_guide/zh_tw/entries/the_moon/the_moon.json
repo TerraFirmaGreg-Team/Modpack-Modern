@@ -409,60 +409,60 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "任何$(item)實心方塊$()都可以用來建造基地，但你需要一個像樣的氣閘，確保氣體不會因為$(thing)漩渦$()全部散逸。搭配$(item)熱泵$()時，封閉空間就會變得適合居住，讓你可以脫下頭盔、種植作物，並放置不會結冰的水源。$(br2)能源消耗會隨房間大小而增加，所以請為分配器配置適當的能源倉。"
+			"text": "任何$(item)實心方塊$()都可以用來建造基地，但你需要一個像樣的氣閘，確保氣體不會因為$(thing)漩渦$()全部散逸。搭配$(item)熱泵$()時，封閉空間就會變得適合居住，讓你可以脫下頭盔、種植作物，並放置不會結冰的水源。$(br2)$(o)(下頁續……)$()"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:ultimet\"}},gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:vanadium\"}},gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:rocket_alloy_t1\"}},gtceu:turbine_rotor{GT.PartStats:{Material:\"tfg:rene_41\"}}",
-			"title": "Turbine Rotor",
-			"text": "$(item)通風口$()是一種實心方塊，也能讓可呼吸空氣通過而不產生漩渦。"
+			"title": "渦輪轉子",
+			"text": "和$(item)熱泵$()一樣，你需要一個$(item)渦輪轉子$()才能讓可呼吸空氣分配器運作。渦輪轉子會同時降低 EU/t 與可呼吸氣體 mB/t 的消耗量。$(br2)$(italic)如果$(thing)效率$()或$(thing)功率$()低於 100%，轉子就不會帶來任何好處。$()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "你會想在基地內部和太空真空之間設置一套像樣的$(thing)氣閘系統$()。一般的門也可以用，但這種 3x3 的門非常符合高科技月球基地的風格。和平常一樣，可以用$(item)壓力板$()自動開關。$(br2)$(bold)小技巧：$()這種門也可以用在無塵室！"
+			"text": "渦輪轉子裝在$(item)排氣口$()中時$(thing)永遠不會損耗耐久度$()，而且任何轉子都能用。在這個階段，我們建議使用 R-鋁鋼或鈷基超合金。$(br2)能源消耗會隨房間大小而增加，所以請為分配器配置適當的能源倉，並隨著進度推進改用更好的渦輪轉子。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "ad_astra:vent",
-			"text": "$(item)希格斯發射器$()可以製造人工重力，就像$(item)熱泵$()或$(l:the_moon/the_moon#distributor)可呼吸空氣分配器$()一樣，作用範圍是一個密封區域。範圍大小取決於多方塊結構的能源倉等級。"
+			"text": "$(item)通風口$()是一種實心方塊，也能讓可呼吸空氣通過而不產生漩渦。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:ad_astra:sliding_doors",
-			"title": "Sliding Doors",
-			"text": "$(item)太空畫$()可以為你的基地增添一些酷炫的太空主題裝飾；如果你想家了，也可以掛一幅巨大的地球畫。"
+			"title": "滑門",
+			"text": "你會想在基地內部和太空真空之間設置一套像樣的$(thing)氣閘系統$()。一般的門也可以用，但這種 3x3 的門非常符合高科技月球基地的風格。和平常一樣，可以用$(item)壓力板$()自動開關。$(br2)$(bold)小技巧：$()這種門也可以用在無塵室！"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:higgs_emitter",
 			"anchor": "higgs",
-			"text": "在$(tfg_short)中，你可以在任何維度用床設定重生點(就連$(l:beneath/beneath)地底$()也可以！)，但除非你身邊有一堆備用的太空服，否則在月球上重生可能會讓事情變得很麻煩。"
+			"text": "$(item)Higgs 發射器$()可以製造人工重力，就像$(item)熱泵$()或$(l:the_moon/the_moon#distributor)可呼吸空氣分配器$()一樣，作用範圍是一個密封區域。範圍大小取決於多方塊結構的能源倉等級。想創造零重力環境，請確保身上帶著一把 $(item)壓縮槍$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "ad_astra:space_painting",
 			"anchor": "painting",
-			"text": "首先，你一定要把床放在$(l:the_moon/the_moon#distributor)有供氧的區域$()內，這樣才不會一重生就馬上死掉。$(br2)萬一停電，你應該還有足夠的時間破壞床，把重生點重設回地球。"
+			"text": "$(item)太空畫$()可以為你的基地增添一些酷炫的太空主題裝飾；如果你想家了，也可以掛一幅巨大的地球畫。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "death",
 			"item": "tag:minecraft:beds",
-			"title": "Extraterrestrial Death",
-			"text": "其次，你可以用$(item)靈魂珍珠$()升級$(thing)太空服$()的每一個部件。這樣死亡時它們就會保持穿在身上！$(br2)你可以從月球上那些比較強悍的敵對$(l:the_moon/moon_fauna#endermen)終界使者$()身上取得靈魂珍珠。$(br2)$(italic)我們保證這是科幻，不是魔法。$()"
+			"title": "地球外的死亡",
+			"text": "在$(tfg_short)中，你可以在任何維度用床設定重生點(就連$(l:beneath/beneath)地底$()也可以！)，但除非你身邊有一堆備用的太空服，否則在月球上重生可能會讓事情變得很麻煩。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "First of all, you'll definitely want your bed to be inside an $(l:the_moon/the_moon#distributor)oxygenated area$(), so you don't immediately die as soon as you respawn.$(br2)In case of a blackout, you should have enough time to break your bed and reset your spawn back to Earth."
+			"text": "首先，你一定要把床放在$(l:the_moon/the_moon#distributor)有供氧的區域$()內，這樣才不會一重生就馬上死掉。$(br2)萬一停電，你應該還有足夠的時間破壞床，把重生點重設回地球。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "endermanoverhaul:soul_pearl",
-			"text": "Secondly, you can upgrade each piece of your $(thing)Space Suit$() with a $(item)Soul Pearl$(). This will make them stay equipped when you die!$(br2)You can get these from any of the tougher, hostile $(l:the_moon/moon_fauna#endermen)Endermen$() on the Moon.$(br2)$(italic)We promise it's sci-fi and not magic.$()"
+			"text": "其次，你可以用$(item)靈魂珍珠$()升級$(thing)太空服$()的每一個部件。這樣死亡時它們就會保持穿在身上！$(br2)你可以從月球上那些比較強悍的敵對$(l:the_moon/moon_fauna#endermen)終界使者$()身上取得靈魂珍珠。$(br2)$(italic)我們保證這是科幻，不是魔法。$()"
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "延伸閱讀",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_moon/preparations",

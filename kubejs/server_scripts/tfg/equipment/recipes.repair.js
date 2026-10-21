@@ -2,9 +2,9 @@
 "use strict";
 
 function registerTFGRepairRecipes(event) {
-	const ELECTRIC_TOOLS = ['drill', 'buzzsaw', 'wrench', 'chainsaw', 'wire_cutter', 'screwdriver']
-	const MANUAL_TOOLS = ['knife', 'hoe', 'scythe', 'hammer', 'file', 'sword', 'butchery_knife', 'crowbar']
-	const ONLY_MANUAL_TOOLS = ['spade', 'pickaxe', 'shovel', 'axe', 'wrench', 'mortar', 'saw', 'screwdriver', 'wire_cutter', 'mining_hammer']
+	const ELECTRIC_TOOLS = ['drill', 'buzzsaw', 'wrench', 'chainsaw', 'wire_cutter', 'screwdriver', 'scythe']
+	const MANUAL_TOOLS = ['knife', 'hoe', 'hammer', 'file', 'sword', 'butchery_knife', 'crowbar']
+	const ONLY_MANUAL_TOOLS = ['spade', 'pickaxe', 'shovel', 'axe', 'wrench', 'mortar', 'saw', 'screwdriver', 'scythe', 'wire_cutter', 'mining_hammer']
 	const ONLY_COLORED_TOOLS = ['buzzsaw']
 	const TFC_EQUIPMENT_METAL_GEAR = ['propick', 'chisel', 'mace', 'fishing_rod', 'shears', 'helmet', 'chestplate', 'greaves', 'boots', 'shield', 'javelin']
 	const SNS_METALS = ['steel', 'black_steel', 'blue_steel', "red_steel"]
@@ -134,8 +134,8 @@ function registerTFGRepairRecipes(event) {
 	repairElectricTools('tfg', 'hv', 'boron_carbide');
 	repairElectricTools('tfg', 'mv', 'diamond_tipped_mo_50_re');
 	repairElectricTools('gtceu', 'iv', 'hsse');
-	repairElectricTools('gtceu', 'iv', 'naquadah_alloy');
-	repairElectricTools('gtceu', 'iv', 'duranium');
+	repairElectricTools('gtceu', 'luv', 'naquadah_alloy');
+	repairElectricTools('gtceu', 'luv', 'duranium');
 	repairElectricTools('gtceu', 'ev', 'ostrum_iodide');
 	repairElectricTools('gtceu', 'ev', 'tungsten_carbide');
 	repairElectricTools('gtceu', 'hv', 'ultimet');

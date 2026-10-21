@@ -16,7 +16,7 @@
             "type": "patchouli:text",
             "anchor": "decay",
             "title": "腐壞",
-            "text": "在 TerraFirmaCraft 中，沒有任何食物能永久保存！食物會隨著時間$(thing)過期$()並腐爛。腐爛的食物無法恢復飢餓值，還可能給你$(thing)飢餓$()或$(thing)中毒$()等負面效果，而且不能用來做餐點！$(br2)幸好，有許多方法可以透過$(thing)保存$()來延長食物的期限。"
+            "text": "在 TerraFirmaCraft(群巒傳說) 中，沒有任何食物能永久保存！食物會隨著時間$(thing)過期$()並腐爛。腐爛的食物無法恢復飢餓值，還可能給你$(thing)飢餓$()或$(thing)中毒$()等負面效果，而且不能用來做餐點！$(br2)幸好，有許多方法可以透過$(thing)保存$()來延長食物的期限。"
         },
         {
             "type": "patchouli:text",

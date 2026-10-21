@@ -4,6 +4,73 @@
 ### Changes
 ### Bug fixes
 
+## [0.13.15] - 20-10-2026
+Be sure to check the previous alpha changelogs, as there are a lot of changes: [0.13.11](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.11), [0.13.12](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.12), [0.13.13](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.13)
+### Changes
+- Rotten flesh, spider eyes, and rabbit feet are now compost poisons, and added a stomping barrel/compressor recipe to turn any compost poisons into rotten flesh directly instead of breaking and placing composters @Pyritie
+- Snow layers can no longer form on windmill bearings @Pyritie
+- Vexxed TFG resource pack now also includes an anvil helper texture (#5155) @Patchack
+- Forgot to add this in previous patch notes but Sterling Silver Turbine Rotors have been removed, while Vanadium Turbine Rotors have been added. The recipes for turbine rotors is also simpler, no longer needing screws if you use a forming press. @TomPlop
+- Increased the amount of chorus flowers you get from the electric greenhouse @Pyritie
+- Uncraftable workstations are no longer visible in EMI @evanbones
+### Bug fixes
+- Fixed TFC melting sometimes resulting in 1mB of unknown @TomPlop
+- Possibly fixed slimes spawning on the surface when TFC Caelum is installed @Pyritie
+- Fixed GT machines crafting removed removed vanilla items @evanbones
+
+## [0.13.14] - 19-10-2026
+Be sure to check the previous alpha changelogs, as there are a lot of changes: [0.13.11](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.11), [0.13.12](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.12), [0.13.13](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.13)
+### Changes
+- Added another way to craft sodium hydroxide instead of just the TFC way @TomPlop
+### Bug fixes
+- Fixed players and mobs on the moon catching fire during the daytime (#5156) @TomPlop
+- Red and Blue Steel non-electric scythes are back, sorry @TomPlop
+- Fixed crucibles sometimes turning single metals into 1mB of unknown
+- Added a circuit to the heat pump recipe to avoid a collision with fluid regulators (#5157) @TomPlop
+
+## [0.13.13] - 18-10-2026
+Be sure to check the changelog of the previous two [alpha](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.11) [releases](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.12) too! 
+### Changes
+- The Oxygen Distributor and Heat Pump now require a rotor. Rotor stats can reduce breathable gas and energy usage. @TomPlop
+- The Heat Pump now allows you to select a temperature. @ashleney
+- The Higgs Emitter now allows you to change gravity. @ashleney
+- When in a Zero-G environment, your camera will no longer be locked to just pitch and yaw. @ashleney
+- Increased the step height of the Rover from 1.2 to 1.5 (#5137) @Pyritie
+- Tweaked some recipe durations on the MERF (#5013) @TomPlop
+- Added a new Piglin Outpost structure to the upper and middle layers of the Beneath (#5127) @Filiipa
+- Rearranged some of InventoryHUD to be less intrusive and fixed some overlaps @Pyritie
+- Added 2-Ethylhexyl Nitrate, a new cetane booster (#5129) @Jeuvke
+- Added new EMI screens for TFC anvils, TFC welding, and firmalife greenhouse planters @Redeix
+- GT fluid containers (drums, cells, super tanks) can now be used in crafting table recipes that use fluids (#5105) @Redeix
+- Added electric scythes with even bigger AoE sizes for clearing away all that pesky grass (#5150) @TomPlop @ArkeHD @Pyritie
+- Added electric flask, which will automatically drink anything for you, unlike the digger helmet which only works with water @TomPlop @ArkeHD
+- Added a recipe to craft quartz crystal blocks (#4990) @Pyritie
+### Bug fixes
+- Fixed missing crafting recipes for the composter, windows, create deco supports, and more (#5128, #5134)
+- Fixed blast furnace not being able to automatically drip into a crucible, vessels not emptying into a crucible, and sometimes crucibles containing "unknown" with only one fluid (#5094, #5096) @Redeix
+- The Heat Pump now properly prevents water from freezing and heats up players standing inside transparent blocks. @ashleney
+- The zip gun now properly works for vertical movement. @ashleney
+- Heatstroke and frostbite no longer damage armor or reduce hunger. @ashleney
+- Allowed the Oxygen Distributor and Heat Pump bubbles to pass through the cleanroom filters. @ashleney
+- Fixed not being able to craft trachyte sandstone bricks (#4914) @Pyritie
+- Fixed flux quest field guide link (#5125) @Pyritie
+- Fixed alloy smelter crafting the wrong rubber ingot when crafted with sulfur powder (#5110) @Pyritie
+- Fixed trowel using double items (#5106) @Redeix
+- Fixed Beneath start (#5102) @Pyritie
+- Fixed mobs being able to spawn on concrete @Pyritie
+- Fixed some blocks being collapsible which shouldnt've been (#5112, #5098) @Pyritie
+- Fixed brioche and pie dough sometimes being immediately rotten when crafted (#4750) @Redeix
+- Fixed jar of compost having the wrong size/weight (#4780) @Redeix
+- Fixed non-earth eggs not being able to be used in firepits, forges, or ovens (#4867) @Redeix
+- Fixed AE2 blank pattern recipes having wrong voltage tiers (#5093) @NeonNoise
+- Fixed High Temperature Precision Fabricator ignoring coil requirement (#4983) @TomPlop
+- Fixed issues with the chromium-yttrium line in single block machines (#4939) @TomPlop
+- Fixed earth jellies spawning over oceans @Pyritie
+- Fixed towers sometimes spawning with only floating chests and nothing else (#5127) @Filiipa
+- Fixed the overworld having two suns with shaders @Pyritie
+- Fixed the combustion engine sound effect looping @polluxe-1
+- Fixed naquadah alloy and duranium tools being at IV level instead of LuV @TomPlop
+
 ## [0.13.12] - 06-10-2026
 This is a hotfix release, check the [0.13.11 changelog](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.11) for the full list of changes!
 ### Changes

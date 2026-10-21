@@ -314,5 +314,8 @@
 	"quests.low_voltage.stock_ticker.desc": "你现在可以使用&6集中式、可搜索的存储&r了！\n\n基础设置很简单：你只需要一个&e库存管理器&r、&e库存链接&r和&e打包机&r，以及一个存放所有东西的地方，比如一个大型&9物品保险库&r。\n\n请阅读&b野外指南&r了解更多！",
 	"quests.low_voltage.factory_gauge.title": "工厂仪表",
 	"quests.low_voltage.factory_gauge.subtitle": "重新发明自动化",
-	"quests.low_voltage.factory_gauge.desc": "&b工厂仪表&r（以及它们的同类&6流体仪表&r）可以做两件事：\n\n1) 监控连接到打包机的物品或流体水平\n2) 当这些水平低于一定数量时，自动下单合成请求。\n\n你没听错，仪表可以实现&6自动合成&r！请查阅&a野外指南&r了解如何使用它们的完整说明。"
+	"quests.low_voltage.factory_gauge.desc": "&b工厂仪表&r（以及它们的同类&6流体仪表&r）可以做两件事：\n\n1) 监控连接到打包机的物品或流体水平\n2) 当这些水平低于一定数量时，自动下单合成请求。\n\n你没听错，仪表可以实现&6自动合成&r！请查阅&a野外指南&r了解如何使用它们的完整说明。",
+	"quests.low_voltage.electric_flask.title": "电水壶",
+	"quests.low_voltage.electric_flask.subtitle": "自动吸管杯",
+	"quests.low_voltage.electric_flask.desc": "与矿工头盔类似，&b电水壶&r会在你口渴时自动饮水。不同之处在于它适用于任何可饮用的流体！\n\n它需要充电才能工作，不过即使电量耗尽，你仍然可以手动从中饮用。它还可容纳&64,000mB&r的流体。"
 }

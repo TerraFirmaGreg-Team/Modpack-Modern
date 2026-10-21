@@ -26,6 +26,7 @@
 	"quests.low_voltage.lv_combuston_gen.subtitle": "Robi boom i wytwarza energię",
 	"quests.low_voltage.lv_biodiesel.title": "Biodiesel",
 	"quests.low_voltage.lv_biodiesel.subtitle": "Twoje pierwsze paliwo spalinowe",
+	"quests.low_voltage.lv_biodiesel.desc": "Aby wytworzyć &2biodiesel&r, będziesz potrzebować &7reaktora chemicznego NN&r. Wystarczy wymieszać &aolej nasienny&r z dowolnym &ealkoholem&r z &6TFC&r. Inne przepisy, używające &detanolu&r będą dostępne dopiero od &bSN&r.",
 	"quests.low_voltage.lv_seed_oil.title": "Olej roślinny",
 	"quests.low_voltage.lv_seed_oil.subtitle": "Rzeczywista moc roślin",
 	"quests.low_voltage.lv_seeds.title": "Najpierw zgarnij nasiona",
@@ -202,5 +203,7 @@
 	"quests.low_voltage.stock_ticker.title": "Licznik magazynowy",
 	"quests.low_voltage.stock_ticker.subtitle": "Kelner! Kelner! Poproszę więcej pylasto-ilastej zakorzenionej ziemi!",
 	"quests.low_voltage.factory_gauge.title": "Miernik fabryczny",
-	"quests.low_voltage.factory_gauge.subtitle": "Automatyzacja, wynaleziona ponownie"
+	"quests.low_voltage.factory_gauge.subtitle": "Automatyzacja, wynaleziona ponownie",
+	"quests.low_voltage.electric_flask.title": "Elektryczna manierka",
+	"quests.low_voltage.electric_flask.subtitle": "Automatyczny kubek niekapek"
 }

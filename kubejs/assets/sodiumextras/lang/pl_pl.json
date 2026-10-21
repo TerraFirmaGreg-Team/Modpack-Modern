@@ -82,6 +82,7 @@
   "sodium.extras.options.dynlights.page": "Dynamiczne światła",
   "sodium.extras.options.dynlights.speed.desc": "Określa, jak często aktualizowane jest dynamiczne oświetlenie.\n\nPrzeliczenie oświetlenia może być kosztowne obliczeniowo, dlatego rzadsze aktualizacje zapewniają lepszą wydajność.",
   "sodium.extras.options.dynlights.speed.title": "Prędkość aktualizacji świateł",
+  "sodium.extras.options.dynlights.tiles.desc": "Jeśli włączone, dynamiczne oświetlenie będzie widoczne na bytach bloków (piece, maszyny, itp.).\n\nTo może drastycznie zwiększyć ilość aktualizacji oświetlenia, nawet jeśli nie jesteś blisko piecy.",
   "sodium.extras.options.dynlights.tiles.title": "Użyj dla bytów bloków",
   "sodium.extras.options.fadein.desc": "Określa szybkość stopniowego pojawiania się chunków. Nie wpływa na wydajność. Tryb „Fancy” trwa po prostu dłużej, ale wygląda nieco efektowniej. Obecnie ta funkcja nie działa.",
   "sodium.extras.options.fadein.title": "Jakość stopniowego pojawiania się chunków",

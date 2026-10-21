@@ -39,6 +39,14 @@
     "item.tfg.polycaprolactam_string": "Nić z polikaprolaktamu",
     "item.tfg.copper_spindle": "Miedziane wrzeciono",
     "item.tfg.copper_spindle_head": "Miedziana głowica wrzeciona",
+    "item.tfg.bronze_spindle": "Wrzeciono z brązu",
+    "item.tfg.bronze_spindle_head": "Głowica wrzeciona z brązu",
+    "item.tfg.black_bronze_spindle": "Wrzeciono z czarnego brązu",
+    "item.tfg.black_bronze_spindle_head": "Głowica wrzeciona z czarnego brązu",
+    "item.tfg.bismuth_bronze_spindle": "Wrzeciono z brązu bizmutowego",
+    "item.tfg.bismuth_bronze_spindle_head": "Głowica wrzeciona z brązu bizmutowego",
+    "item.tfg.wrought_iron_spindle": "Kute żelazne wrzeciono",
+    "item.tfg.wrought_iron_spindle_head": "Kłuta żelazna głowica wrzeciona",
     "item.tfg.silk_fibers": "Jedwabne włókna",
     "item.tfg.space_suit_fabric": "Tkanina stroju kosmicznego",
     "item.tfg.vitrified_pearl": "Zeszklona enderperła",
@@ -503,5 +511,7 @@
     "item.tfg.food.opened_green_coconut": "Otwarty młody kokos",
     "item.tfg.oil_palm_paste": "Pasta z olejowca",
     "item.tfg.oil_palm_debris": "Uschnięty olejowiec",
-    "item.tfg.oil_palm_fiber": "Włókno olejowca"
+    "item.tfg.oil_palm_fiber": "Włókno olejowca",
+    "item.tfg.electric_flask": "Elektryczna manierka",
+    "item.tfg.electric_flask.filled": "Elektryczna manierka (%s)"
 }

@@ -23,6 +23,8 @@ function registerTFCItemTags(event) {
 	// Add chainsaws to #tfc:axes so they drop fruit tree saplings
 	event.add("tfc:axes", "#forge:tools/chainsaws");
 
+	event.add("tfc:scythes", "#forge:tools/scythes");
+
 	/**
 	 * @type {string[]} - Item IDs and tags usable on tfc tool racks.
 	 */

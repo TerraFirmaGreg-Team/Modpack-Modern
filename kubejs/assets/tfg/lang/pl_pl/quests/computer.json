@@ -86,6 +86,7 @@
     "quests.computer.rotation_speed_controller.title": "Kontroler prędkości obrotowej",
     "quests.computer.rotation_speed_controller.subtitle": "Inżynierowie NAPRAWDĘ go nienawidzą!",
     "quests.computer.train_observer.title": "Detektor kolejowy",
+    "quests.computer.train_observer.subtitle": "Opłata za tablicę",
     "quests.computer.train_observer.desc": "Nie robi zbyt wiele, ale wciąż jest bardziej użyteczny niż &3przyklejacz&r.\n\n&eisTrainPassing()&r - Zwraca informację, czy pociąg mija &3detektor&r\n&egetPassingTrainName()&r - Pobiera nazwę pociągu mijającego &3detektor&r",
     "quests.computer.train_signal.title": "Sygnał kolejowy",
     "quests.computer.train_signal.subtitle": "Kiedy znaki stop nie wystarczają",
