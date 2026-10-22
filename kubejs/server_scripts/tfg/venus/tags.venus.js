@@ -154,7 +154,7 @@ function registerTFGVenusEntityTypeTags(event) {
 		'species:trooper',
 		'primitive_creatures:golem_2',
 		'arthropocolypse:scarab',
-		'arthropocolypse:prairie_grasshopper',
+		'arthropocolypse:prairie_grasshopper', 
 		'arthropocolypse:field_cricket',
 		'arthropocolypse:ice_crawler',
 		'arthropocolypse:behemoth_desert_spider',
