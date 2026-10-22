@@ -5,6 +5,8 @@
 - Add recipes to start the Garnet-Yttrium line with Crushed Ores in a CR @TomPlop
 - Auto-Complete Card now requires a Paper rather that a Crafting Card @TomPlop
 ### Bug fixes
+- Only Turbine Rotors can be inserted in Exhaust Vent @TomPlop
+- The Large Turbine efficiency can get under 100%, sorry SiC-SiC you were goated and no one knew @TomPlop 
 
 ## [0.13.15] - 20-10-2026
 Be sure to check the previous alpha changelogs, as there are a lot of changes: [0.13.11](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.11), [0.13.12](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.12), [0.13.13](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.13)
