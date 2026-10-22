@@ -40,6 +40,7 @@ function registerRealmRpgBiomeTags(event) {
 	
 	event.add('realmrpg_skeletons:has_sand_skeletons', '#tfg:venus_biomes');
 	event.add('realmrpg_skeletons:has_burnt_skeletons', '#tfg:venus_biomes');
+	event.add('realmrpg_skeletons:has_lava_nether_skeletons', '#tfg:venus_biomes');
 
 	
 	event.removeAll('realmrpg_skeletons:has_extra_undergarden_loot');

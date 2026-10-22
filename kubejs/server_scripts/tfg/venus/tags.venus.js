@@ -1,6 +1,14 @@
 "use strict";
 
 function registerTFGVenusItemTags(event) {
+
+	// TODO: foods for bugs with tfg:venusian_arthropod_foods
+	event.add('tfg:venusian_arthropod_foods', 'arthropocolypse:beetle_fragment')
+	event.add('tfg:venusian_arthropod_foods', 'arthropocolypse:gilded_scale')
+
+	event.add('tfg:sulfie_food', 'tfc:powder/sulfur')
+	event.add('tfg:sulfie_food', 'minecraft:gunpowder')
+	event.add('tfg:sulfie_food', '#forge:dusts/sulfur')
 }
 
 
@@ -79,37 +87,32 @@ function registerTFGVenusBlockTags(event) {
 	event.add('ad_astra:venus_stone_replaceables', 'tfg:sandstone/raw/fluorapatite/white')
 	event.add('ad_astra:venus_stone_replaceables', 'tfg:sand/fluorapatite/yellow')
 	event.add('ad_astra:venus_stone_replaceables', 'tfg:sandstone/raw/fluorapatite/yellow')
-	event.add('ad_astra:venus_stone_replaceables', 'tfc:sand/red')
-	event.add('ad_astra:venus_stone_replaceables', 'tfc:raw_sandstone/red')
 	event.add('ad_astra:venus_stone_replaceables', 'tfc:sand/black')
-	event.add('ad_astra:venus_stone_replaceables', 'tfc:raw_sandstone/black')
 	event.add('ad_astra:venus_stone_replaceables', 'create:scoria')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/hardened_scoria')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/gravel_scoria')
 	event.add('ad_astra:venus_stone_replaceables', 'create:scorchia')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/hardened_scorchia')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/gravel_scorchia')
+	event.add('ad_astra:venus_stone_replaceables', 'create:ochrum')
+	event.add('ad_astra:venus_stone_replaceables', 'create:crimsite')
 	event.add('ad_astra:venus_stone_replaceables', 'ad_astra:conglomerate')
 	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/halite')
 	event.add('ad_astra:venus_stone_replaceables', 'minecraft:tuff')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:tuff_gravel')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/hardened_tuff')
+	event.add('ad_astra:venus_stone_replaceables', 'minecraft:calcite')
 	event.add('ad_astra:venus_stone_replaceables', 'minecraft:basalt')
 	event.add('ad_astra:venus_stone_replaceables', 'minecraft:smooth_basalt')
-	event.add('ad_astra:venus_stone_replaceables', 'betterend:brimstone')
-	event.add('ad_astra:venus_stone_replaceables', 'betterend:flavolite')
-	event.add('ad_astra:venus_stone_replaceables', 'betterend:sandy_jadestone')
 	event.add('ad_astra:venus_stone_replaceables', 'betterend:sulphuric_rock')
-	event.add('ad_astra:venus_stone_replaceables', 'betterend:flavolite')
 	event.add('ad_astra:venus_stone_replaceables', 'betterend:lacugrove_bark')
 	event.add('ad_astra:venus_stone_replaceables', 'betterend:lucernia_bark')
+	event.add('ad_astra:venus_stone_replaceables', 'vintageimprovements:sulfur_block')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/glauberite')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/aragonite')
 
 	event.add('tfc:can_carve', '#ad_astra:venus_stone_replaceables')
 	event.add('minecraft:animals_spawnable_on', '#ad_astra:venus_stone_replaceables')
-
-	event.add("minecraft:strider_warm_blocks", "create:scorchia");
-	event.add("minecraft:strider_warm_blocks", "tfg:rock/hardened_scorchia");
-	event.add("minecraft:strider_warm_blocks", "minecraft:basalt");
-	event.add("minecraft:strider_warm_blocks", "minecraft:smooth_basalt");
-	event.add("minecraft:strider_warm_blocks", 'tfc:rock/raw/basalt');
-	event.add("minecraft:strider_warm_blocks", 'tfc:rock/magma/basalt');
-	event.add("minecraft:strider_warm_blocks", 'tfc:rock/hardened/basalt');
-	event.add("minecraft:strider_warm_blocks", 'beneath:crackrack');
-	event.add("minecraft:strider_warm_blocks", '#minecraft:infiniburn_nether');
 
 	event.add('tfc:can_landslide', 'tfg:sand/fluorapatite/blue')
 	event.add('tfc:can_landslide', 'tfg:sand/fluorapatite/green')
@@ -119,6 +122,15 @@ function registerTFGVenusBlockTags(event) {
 	event.add('tfc:can_landslide', 'tfg:sand/fluorapatite/yellow')
 
 	event.add('tfg:decorative_plant_attachable', 'betterend:sulphuric_rock')
+
+	event.add('tfg:silk_moth_blocks', 'betterend:silk_moth_nest')
+	event.add('tfg:silk_moth_blocks', 'betterend:silk_moth_nest_holes')
+	event.add('tfg:silk_moth_blocks', 'betterend:silk_moth_nest_filled')
+
+	event.add('tfg:heightmap_ignore', 'create:crimsite')
+
+	event.add('minecraft:lava_pool_stone_cannot_replace', 'tfg:venus_hornfels')
+	event.add('minecraft:features_cannot_replace', 'tfg:venus_hornfels')
 }
 
 function registerTFGVenusBiomeTags(event) {
@@ -137,6 +149,7 @@ function registerTFGVenusEntityTypeTags(event) {
 		"endermanoverhaul:desert_enderman",
 		"endermanoverhaul:savanna_enderman",
 		"endermanoverhaul:nether_wastes_enderman",
+		"endermanoverhaul:scarab",
 		"ad_astra:sulfur_creeper",
 		'species:trooper',
 		'primitive_creatures:golem_2',
@@ -156,7 +169,20 @@ function registerTFGVenusEntityTypeTags(event) {
 		'arthropocolypse:mealworm',
 		'arthropocolypse:millipede_head',
 		'arthropocolypse:millipede_body',
-		'arthropocolypse:millipede_tail'
+		'arthropocolypse:millipede_tail',
+		'opposing_force:slug',
+		'opposing_force:trembler',
+		'opposing_force:guzzler',
+		'opposing_force:fire_slime',
+		'opposing_force:hanging_spider',
+		'opposing_force:umber_spider',
+		'opposing_force:ladybug',
+		'opposing_force:whizz',
+		'aliencraft_kepler:tree_mite',
+		'aliencraft_kepler:xenoscorpion_surface',
+		'aliencraft_kepler:ancient_beetle',
+		'tfg:silk_moth',
+		'tfg:dragonfly'
 	]
 
 	ENTITIES.forEach(entity => {
@@ -164,6 +190,29 @@ function registerTFGVenusEntityTypeTags(event) {
 		event.add('ad_astra:lives_without_oxygen', entity)
 		event.add('ad_astra:can_survive_in_acid_rain', entity)
 		event.add('gtceu:heat_immune', entity)
+		event.add('tfg:ignores_cacti', entity)
+		event.add('tfg:ignores_gravity', entity)
+	})
+
+	const venusPrey = [
+		'minecraft:strider',
+		'species:trooper',
+		'arthropocolypse:scarab',
+		'arthropocolypse:prairie_grasshopper',
+		'arthropocolypse:field_cricket',
+		'arthropocolypse:ice_crawler',
+		'arthropocolypse:worker_ant',
+		'arthropocolypse:stag_beetle_larva',
+		'arthropocolypse:wharf_roach',
+		'arthropocolypse:mealworm',
+		'opposing_force:whizz',
+		'endermanoverhaul:scarab',
+		'tfg:silk_moth',
+		'tfg:dragonfly'
+	];
+
+	venusPrey.forEach(entity => {
+		event.add('tfg:venus_prey', entity);
 	})
 
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:desert_enderman')
@@ -181,12 +230,22 @@ function registerTFGVenusEntityTypeTags(event) {
 	event.add('tfc:deals_piercing_damage', 'arthropocolypse:platerodrilus')
 	event.add('tfc:deals_piercing_damage', 'arthropocolypse:mealworm_beetle')
 	event.add('tfc:deals_piercing_damage', 'arthropocolypse:millipede_head')
+	event.add('tfc:deals_crushing_damage', 'opposing_force:slug')
+	event.add('tfc:deals_crushing_damage', 'opposing_force:trembler')
+	event.add('tfc:deals_crushing_damage', 'opposing_force:guzzler')
+	event.add('tfc:deals_crushing_damage', 'opposing_force:fire_slime')
+	event.add('tfc:deals_piercing_damage', 'opposing_force:hanging_spider')
+	event.add('tfc:deals_piercing_damage', 'opposing_force:umber_spider')
+	event.add('tfc:deals_crushing_damage', 'opposing_force:ladybug')
+	event.add('tfc:deals_piercing_damage', 'opposing_force:whizz')
+	event.add('tfc:deals_piercing_damage', 'aliencraft_kepler:tree_mite')
+	event.add('tfc:deals_slashing_damage', 'aliencraft_kepler:xenoscorpion_surface')
+	event.add('tfc:deals_piercing_damage', 'aliencraft_kepler:ancient_beetle')
 }
 
 function registerTFGVenusPlacedFeatures(event) {
 
 	// Underground decoration
-	event.add("tfg:venus_underground_decoration", "tfg:glow_lichen")
 	event.add('tfg:venus_underground_decoration', 'tfg:venus/underground/loose_rocks')
 	event.add('tfg:venus_underground_decoration', 'tfc:cave_spike')
 	event.add('tfg:venus_underground_decoration', 'tfc:cave_column')

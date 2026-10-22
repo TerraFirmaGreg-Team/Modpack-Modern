@@ -1,0 +1,17 @@
+{
+	"structures": [
+		{
+			"structure": "tfg:venus/salt_arches",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "tfc:climate",
+		"salt": 1234542,
+		"spacing": 5,
+		"separation": 3,
+		"climate": {
+			"max_forest": "edge"
+		}
+	}
+}

@@ -1,6 +1,8 @@
 {
 	"carvers": {
-		"air": []
+		"air": [
+			"tfg:venus_cave"
+		]
 	},
 	"downfall": 0,
 	"effects": {
@@ -8,11 +10,11 @@
 			"sound": "tfg:ambient.venus_surface.additions",
 			"tick_chance": 0.0015
 		},
-		"fog_color": 9938052,
-		"sky_color": 10465603,
+		"fog_color": 2827545,
+		"sky_color": 10854944,
 		"water_color": 8241044,
 		"water_fog_color": 10866612,
-		"ambient_sound": "tfg:ambient.venus_surface.loop",
+
 		"mood_sound": {
 			"block_search_extent": 8,
 			"offset": 2.0,
@@ -36,47 +38,64 @@
 	},
 	"features": [
 		[
+
+			"tfg:venus/terrain/lava_spring_rare",
+			"tfg:venus/terrain/sulfur_fumes_spring"
+		],
+		[
+			"tfg:venus/terrain/chemical_lake_encased",
+			"tfg:venus/terrain/chemical_lake_exposed"
+		],
+		[
+			"tfg:venus/surface/glauberite_formation",
+			"tfg:venus/surface/aragonite_formation"
+		],
+		[
+			"tfg:venus/terrain/chemical_lake_small"
+		],
+		[
+			"tfg:venus_forest"
+		],
+		[
 			"tfc:erosion"
 		],
-		[],
-		[
-			"tfc:random_empty_hot_spring"
-		],
-		[],
-		[],
-		[],
 		"#tfg:venus_veins",
-		"#tfg:venus_underground_decoration",
+		[],
 		[
 			"tfc:raw_boulder_small_patch",
 			"tfc:cobble_boulder_small_patch"
 		],
 		[
-
+			"tfg:venus/surface/crawling_lily",
+			"tfg:venus/surface/large_cactus",
+			"tfg:venus/surface/thornflower",
+			"tfg:venus/surface/inklight",
+			"tfg:venus/surface/fused_pillar_rare",
+			"tfg:venus/surface/bloodthorn"
 		],
 		"#tfg:venus_top_layer_modification"
 	],
 	"has_precipitation": true,
 	"spawn_costs": {
 		"endermanoverhaul:desert_enderman": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"endermanoverhaul:savanna_enderman": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"endermanoverhaul:nether_wastes_enderman": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"minecraft:enderman": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"ad_astra:sulfur_creeper": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"primitive_creatures:golem_2": {
 			"energy_budget": 0.15,
@@ -93,25 +112,24 @@
 		"arthropocolypse:millipede_head": {
 			"energy_budget": 0.05,
 			"charge": 0.9
+		},
+		"aliencraft_kepler:ancient_beetle": {
+			"energy_budget": 0.05,
+			"charge": 0.9
 		}
 	},
-	"creature_spawn_probability": 0.2,
+	"creature_spawn_probability": 0.1,
 	"spawners": {
-		"ambient": [],
+		"ambient": [
+			{
+				"type": "tfg:silk_moth",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 100
+			}
+		],
 		"axolotls": [],
 		"creature": [
-			{
-				"type": "arthropocolypse:mealworm_beetle",
-				"maxCount": 4,
-				"minCount": 2,
-				"weight": 30
-			},
-			{
-				"type": "arthropocolypse:stag_beetle",
-				"maxCount": 4,
-				"minCount": 2,
-				"weight": 40
-			},
 			{
 				"type": "arthropocolypse:platerodrilus",
 				"maxCount": 4,
@@ -126,9 +144,39 @@
 			},
 			{
 				"type": "arthropocolypse:wharf_roach",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 70
+			},
+			{
+				"type": "arthropocolypse:mealworm_beetle",
+				"maxCount": 6,
+				"minCount": 3,
+				"weight": 60
+			},
+			{
+				"type": "arthropocolypse:mealworm",
+				"maxCount": 6,
+				"minCount": 3,
+				"weight": 40
+			},
+			{
+				"type": "arthropocolypse:stag_beetle",
 				"maxCount": 4,
 				"minCount": 2,
 				"weight": 40
+			},
+			{
+				"type": "arthropocolypse:soldier_ant",
+				"maxCount": 6,
+				"minCount": 4,
+				"weight": 50
+			},
+			{
+				"type": "arthropocolypse:worker_ant",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 10
 			}
 		],
 		"misc": [],
@@ -152,6 +200,18 @@
 				"weight": 20
 			},
 			{
+				"type": "minecraft:magma_cube",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 10
+			},
+			{
+				"type": "minecraft:blaze",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
 				"type": "ad_astra:sulfur_creeper",
 				"maxCount": 3,
 				"minCount": 1,
@@ -162,6 +222,48 @@
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 100
+			},
+			{
+				"type": "opposing_force:whizz",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 50
+			},
+			{
+				"type": "opposing_force:slug",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
+				"type": "opposing_force:trembler",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 70
+			},
+			{
+				"type": "opposing_force:ladybug",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 50
+			},
+			{
+				"type": "aliencraft_kepler:xenoscorpion_surface",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 60
+			},
+			{
+				"type": "aliencraft_kepler:ancient_beetle",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
+				"type": "aliencraft_kepler:tree_mite",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 40
 			}
 		],
 		"underground_water_creature": [],

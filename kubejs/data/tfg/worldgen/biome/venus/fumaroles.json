@@ -1,6 +1,8 @@
 {
 	"carvers": {
-		"air": []
+		"air": [
+			"tfg:venus_cave"
+		]
 	},
 	"downfall": 0,
 	"effects": {
@@ -8,11 +10,11 @@
 			"sound": "tfg:ambient.venus_surface.additions",
 			"tick_chance": 0.0015
 		},
-		"sky_color": 11644227,
-		"fog_color": 10788996,
+		"sky_color": 10854944,
+		"fog_color": 2827545,
 		"water_color": 8241044,
 		"water_fog_color": 10866612,
-		"ambient_sound": "tfg:ambient.venus_surface.loop",
+
 		"mood_sound": {
 			"block_search_extent": 8,
 			"offset": 2,
@@ -36,7 +38,12 @@
 	},
 	"features": [
 		[
-			"tfg:venus/terrain/sulfur_fumes_spring" 
+			"tfg:venus/terrain/sulfur_fumes_spring",
+			"tfg:venus/surface/glauberite_formation",
+			"tfg:venus/surface/aragonite_formation"
+		],
+		[
+			"tfg:venus_forest"
 		],
 		[
 			"tfc:erosion"
@@ -44,9 +51,8 @@
 		[],
 		[],
 		[],
-		[],
 		"#tfg:venus_veins",
-		"#tfg:venus_underground_decoration",
+		[],
 		[
 			"tfg:venus/terrain/sulfur_blob_rare",
 			"tfc:raw_boulder",
@@ -58,31 +64,33 @@
 		[
 			"tfg:venus/surface/sulfur_patch",
 			"tfg:venus/surface/hydralux_rare",
-			"tfg:venus/surface/loose_scoria"
+			"tfg:venus/surface/loose_scoria",
+			"tfg:venus/surface/fused_pillar",
+			"tfg:venus/surface/bloodthorn"
 		],
 		"#tfg:venus_top_layer_modification"
 	],
 	"has_precipitation": true,
 	"spawn_costs": {
 		"endermanoverhaul:desert_enderman": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"endermanoverhaul:savanna_enderman": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"endermanoverhaul:nether_wastes_enderman": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"minecraft:enderman": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"ad_astra:sulfur_creeper": {
-			"energy_budget": 0.2,
-			"charge": 0.4
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"primitive_creatures:golem_2": {
 			"energy_budget": 0.15,
@@ -99,11 +107,28 @@
 		"arthropocolypse:millipede_head": {
 			"energy_budget": 0.05,
 			"charge": 0.9
+		},
+		"aliencraft_kepler:ancient_beetle": {
+			"energy_budget": 0.05,
+			"charge": 0.9
 		}
 	},
 	"creature_spawn_probability": 0.01,
 	"spawners": {
-		"ambient": [],
+		"ambient": [
+			{
+				"type": "tfg:silk_moth",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
+				"type": "tfg:dragonfly",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 100
+			}
+		],
 		"axolotls": [],
 		"creature": [
 			{
@@ -122,6 +147,36 @@
 				"type": "arthropocolypse:field_cricket",
 				"maxCount": 2,
 				"minCount": 1,
+				"weight": 50
+			},
+			{
+				"type": "arthropocolypse:wharf_roach",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 70
+			},
+			{
+				"type": "arthropocolypse:mealworm_beetle",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 30
+			},
+			{
+				"type": "arthropocolypse:stag_beetle",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 40
+			},
+			{
+				"type": "arthropocolypse:soldier_ant",
+				"maxCount": 6,
+				"minCount": 4,
+				"weight": 100
+			},
+			{
+				"type": "arthropocolypse:worker_ant",
+				"maxCount": 3,
+				"minCount": 2,
 				"weight": 50
 			}
 		],
@@ -146,10 +201,58 @@
 				"weight": 10
 			},
 			{
+				"type": "minecraft:magma_cube",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 10
+			},
+			{
+				"type": "minecraft:blaze",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
 				"type": "ad_astra:sulfur_creeper",
 				"maxCount": 3,
 				"minCount": 1,
 				"weight": 100
+			},
+			{
+				"type": "opposing_force:whizz",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 50
+			},
+			{
+				"type": "opposing_force:slug",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
+				"type": "opposing_force:trembler",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 70
+			},
+			{
+				"type": "aliencraft_kepler:xenoscorpion_surface",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 30
+			},
+			{
+				"type": "aliencraft_kepler:ancient_beetle",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 30
+			},
+			{
+				"type": "aliencraft_kepler:tree_mite",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 20
 			}
 		],
 		"underground_water_creature": [],

@@ -8,11 +8,11 @@
 			"sound": "tfg:ambient.venus_surface.additions",
 			"tick_chance": 0.0015
 		},
-		"sky_color": 7687245,
-		"fog_color": 7687245,
+		"sky_color": 10854944,
+		"fog_color": 2827545,
 		"water_color": 8241044,
 		"water_fog_color": 10866612,
-		"ambient_sound": "tfg:ambient.venus_surface.loop",
+
 		"mood_sound": {
 			"block_search_extent": 8,
 			"offset": 2,
@@ -40,9 +40,11 @@
 			"tfg:venus/terrain/lava_delta",
 			"tfg:venus/terrain/lava_lake",
 			"tfg:venus/terrain/lava_fissure",
-			"tfg:venus/terrain/lava_rivulet",
 			"tfg:venus/terrain/magma_rivulet",
 			"tfg:venus/terrain/basalt_pillar"
+		],
+		[
+			"tfg:venus_forest"
 		],
 		[
 			"tfc:erosion"
@@ -55,7 +57,7 @@
 		],
 		[],
 		"#tfg:venus_veins",
-		"#tfg:venus_underground_decoration",
+		[],
 		[
 			"tfc:raw_boulder",
 			"tfc:cobble_boulder",
@@ -63,6 +65,7 @@
 			"tfc:cobble_boulder_small_patch",
 			"tfg:venus/terrain/thermal_vent_rare",
 			"tfg:venus/surface/smoker_source_patch",
+			"tfg:venus/surface/large_smoker_source",
 			"tfg:venus/surface/lava_source_patch",
 			"tfg:venus/surface/twisted_vine",
 			"tfg:venus/surface/shadow_plant_patch",
@@ -72,31 +75,33 @@
 			"tfg:venus/surface/loose_crackrack"
 		],
 		[
-			"tfg:venus/terrain/lava_fill"
+			"tfg:venus/terrain/lava_fill",
+			"tfg:venus/surface/inklight",
+			"tfg:venus/surface/bloodthorn"
 		],
 		"#tfg:venus_top_layer_modification"
 	],
 	"has_precipitation": true,
 	"spawn_costs": {
 		"endermanoverhaul:desert_enderman": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"endermanoverhaul:savanna_enderman": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"endermanoverhaul:nether_wastes_enderman": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"minecraft:enderman": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"ad_astra:sulfur_creeper": {
-			"energy_budget": 0.15,
-			"charge": 0.6
+			"energy_budget": 0.05,
+			"charge": 0.8
 		},
 		"primitive_creatures:golem_2": {
 			"energy_budget": 0.15,
@@ -113,19 +118,17 @@
 		"arthropocolypse:millipede_head": {
 			"energy_budget": 0.05,
 			"charge": 0.9
+		},
+		"aliencraft_kepler:ancient_beetle": {
+			"energy_budget": 0.05,
+			"charge": 0.9
 		}
 	},
-	"creature_spawn_probability": 0.2,
+	"creature_spawn_probability": 0.1,
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],
 		"creature": [
-			{
-				"type": "minecraft:strider",
-				"maxCount": 5,
-				"minCount": 3,
-				"weight": 100
-			},
 			{
 				"type": "arthropocolypse:ice_crawler",
 				"maxCount": 2,
@@ -143,6 +146,18 @@
 				"maxCount": 3,
 				"minCount": 2,
 				"weight": 100
+			},
+			{
+				"type": "arthropocolypse:platerodrilus",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 60
+			},
+			{
+				"type": "arthropocolypse:wharf_roach",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 70
 			}
 		],
 		"misc": [],
@@ -167,14 +182,14 @@
 			},
 			{
 				"type": "minecraft:magma_cube",
-				"maxCount": 4,
-				"minCount": 2,
-				"weight": 100
+				"maxCount": 3,
+				"minCount": 1,
+				"weight": 70
 			},
 			{
 				"type": "minecraft:blaze",
 				"maxCount": 4,
-				"minCount": 2,
+				"minCount": 3,
 				"weight": 100
 			},
 			{
@@ -188,6 +203,24 @@
 				"maxCount": 3,
 				"minCount": 1,
 				"weight": 100
+			},
+			{
+				"type": "opposing_force:fire_slime",
+				"maxCount": 6,
+				"minCount": 4,
+				"weight": 100
+			},
+			{
+				"type": "opposing_force:guzzler",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "aliencraft_kepler:tree_mite",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 40
 			}
 		],
 		"underground_water_creature": [],

@@ -54,11 +54,11 @@
 			#Whether fireflies can spawn in rain
 			canSpawnInRain = true
 			#Biomes where fireflies always spawn (bypasses temperature check). Example: "minecraft:swamp"
-			biomes = ["tfc:lowlands", "tfg:earth/lowlands", "tfc:salt_marsh", "tfg:earth/salt_marsh", "tfc:river", "tfg:earth/river", "tfc:lake", "tfg:earth/lake", "tfc:mountain_lake", "tfg:earth/mountain_lake", "tfc:oceanic_mountain_lake", "tfg:earth/oceanic_mountain_lake", "tfc:old_mountain_lake", "tfg:earth/old_mountain_lake", "tfc:plateau_lake", "tfg:earth/plateau_lake", "tfg:earth/tower_karst_lake", "tfc:volcanic_mountain_lake", "tfg:earth/volcanic_mountain_lake", "tfc:volcanic_oceanic_mountain_lake", "tfg:earth/volcanic_oceanic_mountain_lake"]
+			biomes = ["tfc:lowlands", "tfg:earth/lowlands", "tfc:salt_marsh", "tfg:earth/salt_marsh", "tfc:river", "tfg:earth/river", "tfc:lake", "tfg:earth/lake", "tfc:mountain_lake", "tfg:earth/mountain_lake", "tfc:oceanic_mountain_lake", "tfg:earth/oceanic_mountain_lake", "tfc:old_mountain_lake", "tfg:earth/old_mountain_lake", "tfc:plateau_lake", "tfg:earth/plateau_lake", "tfg:earth/tower_karst_lake", "tfc:volcanic_mountain_lake", "tfg:earth/volcanic_mountain_lake", "tfc:volcanic_oceanic_mountain_lake", "tfg:earth/volcanic_oceanic_mountain_lake", "tfg:venus/arachnoids", "tfg:venus/fractured_pools", "tfg:venus/fumaroles", "tfg:venus/geysers", "tfg:venus/jagged_tablelands", "tfg:venus/salt_flats", "tfg:venus/scorching_volcanoes", "tfg:venus/stromatolite_beach", "tfg:venus/sulfuric_ravine", "tfg:venus/venus_caves"]
 			#Extra blocks that spawn fireflies. Example: "tfc:plant/cattail"
-			spawnBlocks = ["tfc:plant/arrowhead", "tfc:plant/bur_reed", "tfc:plant/cattail", "tfc:plant/marigold", "tfc:plant/phragmite", "tfc:plant/pickerelweed", "tfc:plant/water_taro", "tfc:plant/water_lily", "tfc:plant/water_canna", "tfc:plant/lotus"]
+			spawnBlocks = ["tfc:plant/arrowhead", "tfc:plant/bur_reed", "tfc:plant/cattail", "tfc:plant/marigold", "tfc:plant/phragmite", "tfc:plant/pickerelweed", "tfc:plant/water_taro", "tfc:plant/water_lily", "tfc:plant/water_canna", "tfc:plant/lotus", "tfg:loose/scoria", "tfg:loose/crackrack", "tfg:loose/red_granite", "tfg:loose/scorchia", "tfg:loose/venus_stone", "tfg:loose/flavolite", "tfg:loose/sandy_jadestone"]
 			#Per-biome firefly RGB hex tints. Format: "biomeId|RRGGBB". Example: "minecraft:swamp|FFD27F". Takes priority over fireflyColorPool.
-			biomeColors = []
+			biomeColors = ["tfg:venus/arachnoids", "tfg:venus/fractured_pools|e9ff78", "tfg:venus/fumaroles|ffeb78", "tfg:venus/geysers|fcc76a", "tfg:venus/jagged_tablelands|fcc76a", "tfg:venus/salt_flats|e9ff78", "tfg:venus/scorching_volcanoes|fcc76a", "tfg:venus/stromatolite_beach|ffeb78", "tfg:venus/sulfuric_ravine|ffeb78", "tfg:venus/venus_caves|e9ff78"]
 			#Random RGB hex colors picked per firefly when no biomeColors entry matches. Empty = use built-in yellow/blue/red mix. Format: "RRGGBB".
 			colorPool = []
 
@@ -140,7 +140,7 @@
 
 		[general.advancedSettings.customFluidsSettings]
 			#Fluid IDs treated like vanilla water for splash, rain ripples, and waterfall spray. Example: "tfc:river_water"
-			waterLikeFluids = ["tfc:river_water", "tfc:flowing_salt_water", "tfc:salt_water", "tfc:flowing_spring_water", "tfc:spring_water", "tfg:semiheavy_ammoniacal_water", "tfg:muddy_water", "tfg:geyser_slurry"]
+			waterLikeFluids = ["tfc:river_water", "tfc:flowing_salt_water", "tfc:salt_water", "tfc:flowing_spring_water", "tfc:spring_water", "tfg:semiheavy_ammoniacal_water", "tfg:muddy_water", "tfg:geyser_slurry", "tfg:sulfur_fumes"]
 			#Flowing,source fluid pairs that produce cascade waterfalls. Example: "mymod:flowing_water,mymod:water". TFC fluids do not produce cascades because they have no flowing variant.
 			cascadeFluidPairs = ["minecraft:flowing_water,tfc:river_water", "tfc:flowing_salt_water,tfc:salt_water", "tfc:flowing_spring_water,tfc:spring_water", "tfg:flowing_muddy_water,tfg:muddy_water", "tfg:flowing_semiheavy_ammoniacal_water,tfg:semiheavy_ammoniacal_water", "tfg:flowing_geyser_slurry,tfg:geyser_slurry"]
 

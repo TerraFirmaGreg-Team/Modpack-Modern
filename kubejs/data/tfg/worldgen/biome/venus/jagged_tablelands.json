@@ -1,6 +1,8 @@
 {
 	"carvers": {
-		"air": []
+		"air": [
+			"tfg:venus_cave"
+		]
 	},
 	"downfall": 0,
 	"effects": {
@@ -8,11 +10,11 @@
 			"sound": "tfg:ambient.venus_surface.additions",
 			"tick_chance": 0.0015
 		},
-		"sky_color": 11239553,
-		"fog_color": 11239553,
+		"sky_color": 10854944,
+		"fog_color": 2827545,
 		"water_color": 8241044,
 		"water_fog_color": 10866612,
-		"ambient_sound": "tfg:ambient.venus_surface.loop",
+
 		"mood_sound": {
 			"block_search_extent": 8,
 			"offset": 2,
@@ -36,28 +38,30 @@
 	},
 	"features": [
 		[
+			"tfg:venus/terrain/lava_spring_rare",
+			"tfc:random_empty_hot_spring",
+			"tfg:venus/surface/glauberite_formation",
+			"tfg:venus/surface/aragonite_formation"
+		],
+		[
+			"tfg:venus_forest"
+		],
+		[
 			"tfc:erosion"
 		],
-		[],
 		[
-			"tfg:venus/terrain/lava_spring_rare",
-			"tfc:random_empty_hot_spring"
-		],
-		[
-			"tfg:venus/terrain/adakite_column"
+			"tfg:venus/terrain/huge_stromatolite_column"
 		],
 		[],
 		[],
 		"#tfg:venus_veins",
-		"#tfg:venus_underground_decoration",
+		[],
 		[
 			"tfc:raw_boulder",
 			"tfc:cobble_boulder",
 			"tfc:raw_boulder_small_patch",
 			"tfc:cobble_boulder_small_patch",
-			"tfg:venus/surface/adakite_spikes",
-			"tfg:venus/surface/ochrum_spikes",
-			"tfg:venus/surface/crimsite_spikes"
+			"tfg:venus/surface/stromatolite_column"
 		],
 		[
 			"tfg:venus/surface/smoker_source_patch",
@@ -65,31 +69,33 @@
 			"tfg:venus/surface/twisted_vine",
 			"tfg:venus/surface/shadow_plant_patch",
 			"tfg:venus/surface/pile_volcanic_ash",
-			"tfg:venus/surface/loose_scorchia"
+			"tfg:venus/surface/loose_scorchia",
+			"tfg:venus/surface/inklight",
+			"tfg:venus/surface/bloodthorn"
 		],
 		"#tfg:venus_top_layer_modification"
 	],
 	"has_precipitation": true,
 	"spawn_costs": {
 		"endermanoverhaul:desert_enderman": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"endermanoverhaul:savanna_enderman": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"endermanoverhaul:nether_wastes_enderman": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"minecraft:enderman": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"ad_astra:sulfur_creeper": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"primitive_creatures:golem_2": {
 			"energy_budget": 0.15,
@@ -106,19 +112,17 @@
 		"arthropocolypse:millipede_head": {
 			"energy_budget": 0.05,
 			"charge": 0.9
+		},
+		"aliencraft_kepler:ancient_beetle": {
+			"energy_budget": 0.05,
+			"charge": 0.9
 		}
 	},
-	"creature_spawn_probability": 0.15,
+	"creature_spawn_probability": 0.1,
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],
 		"creature": [
-			{
-				"type": "minecraft:strider",
-				"maxCount": 2,
-				"minCount": 1,
-				"weight": 10
-			},
 			{
 				"type": "arthropocolypse:field_cricket",
 				"maxCount": 3,
@@ -154,6 +158,12 @@
 				"maxCount": 4,
 				"minCount": 2,
 				"weight": 30
+			},
+			{
+				"type": "aliencraft_kepler:ancient_beetle",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 20
 			}
 		],
 		"misc": [],
@@ -205,6 +215,48 @@
 				"maxCount": 2,
 				"minCount": 1,
 				"weight": 100
+			},
+			{
+				"type": "primitive_creatures:golem_2",
+				"maxCount": 3,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "opposing_force:fire_slime",
+				"maxCount": 6,
+				"minCount": 4,
+				"weight": 100
+			},
+			{
+				"type": "opposing_force:guzzler",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "opposing_force:whizz",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 50
+			},
+			{
+				"type": "aliencraft_kepler:xenoscorpion_surface",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
+				"type": "aliencraft_kepler:ancient_beetle",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 70
+			},
+			{
+				"type": "aliencraft_kepler:tree_mite",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 40
 			}
 		],
 		"underground_water_creature": [],

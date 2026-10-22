@@ -382,6 +382,11 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		bricks: generateForms('obsidian', 'tfg:rock/%s_bricks'),
 		polished: generateForms('obsidian', 'tfg:rock/smooth_%s'),
 		chiseled: generateForms('obsidian', 'tfg:rock/chiseled_%s'),
+		stonecutting: [
+			{ block: "opposing_force:guzzler_scale_bricks", stairs: "opposing_force:guzzler_scale_brick_stairs", slab: "opposing_force:guzzler_scale_brick_slab" },
+			{ block: "opposing_force:trembling_guzzler_scale_bricks", stairs: "opposing_force:trembling_guzzler_scale_brick_stairs", slab: "opposing_force:trembling_guzzler_scale_brick_slab" },
+			{ block: "opposing_force:trembling_guzzler_scale_shingles", stairs: "opposing_force:trembling_guzzler_scale_shingle_stairs", slab: "opposing_force:trembling_guzzler_scale_shingle_slab" }
+		]
 	},
 
 	/////////////////////////////////////////////////////////////////////////////////////////////
@@ -417,7 +422,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		tfcTag: 'tfc:metamorphic_items',
 		gravelTag: 'tfc:black_gravel',
 		sound: 'deepslate',
-		mapColor: 'terracotta_grey',
+		mapColor: 'terracotta_gray',
 		collapsible: true,
 		dimensions: ['minecraft:overworld', 'minecraft:the_nether', 'ad_astra:venus'],
 		support: 'tfg:migmatite_support',
@@ -1301,8 +1306,8 @@ global.FLUORAPATITE_COLORS.forEach(color => {
 		stonecutterTag: `tfg:fluorapatite_sandstone/${color}`,
 		raw: { block: `tfg:sandstone/raw/fluorapatite/${color}` },
 		polished: { block: `tfg:sandstone/smooth/fluorapatite/${color}` },
-		chiseled: { block: `tfg:sandstone/smooth/chiseled/fluorapatite/${color}` },
-		pillar: `tfg:sandstone/fluorapatite/${color}`,
+		chiseled: { block: `tfg:sandstone/chiseled/fluorapatite/${color}` },
+		pillar: `tfg:sandstone/cut/fluorapatite/${color}`,
 	}
 });
 

@@ -38,7 +38,7 @@ renderType = "AUTO"
 	#List of entity type IDs that should not produce wakes (e.g., "minecraft:dolphin", "minecraft:squid")
 	blacklistedMobs = []
 	#List of fluid IDs that can produce wakes
-	fluidWhitelist = ["minecraft:water", "minecraft:flowing_water", "tfc:salt_water", "tfc:spring_water", "tfc:river_water"]
+	fluidWhitelist = ["minecraft:water", "minecraft:flowing_water", "tfc:salt_water", "tfc:spring_water", "tfc:river_water", "tfg:geyser_slurry"]
 
 #Wake Behavior
 [wakeBehavior]

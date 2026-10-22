@@ -10,9 +10,9 @@
     "storm": true,
     "surface-selector": {
         "regions": [
-            "surface"
+            "surface",
+            "venus"
         ]
     },
-    "regions": [
-    ]
+    "regions": []
 }

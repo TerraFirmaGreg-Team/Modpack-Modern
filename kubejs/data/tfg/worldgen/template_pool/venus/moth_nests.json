@@ -1,0 +1,33 @@
+{
+	"name": "tfg:venus/moth_nests",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 1,
+			"element": {
+				"location": "tfg:venus/moth_nest_1",
+				"processors": "tfg:venus/moth_nests",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"location": "tfg:venus/moth_nest_2",
+				"processors": "tfg:venus/moth_nests",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"location": "tfg:venus/moth_nest_3",
+				"processors": "tfg:venus/moth_nests",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
+}

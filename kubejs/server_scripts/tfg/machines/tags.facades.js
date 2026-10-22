@@ -165,7 +165,6 @@ function registerTFGFacadeWhitelistItemTags(event) {
 		'create:small_rose_quartz_tiles',
 
 		// better end
-		'betterend:brimstone',
 		'betterend:lacugrove_bark',
 		'betterend:lucernia_bark',
 	];

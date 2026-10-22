@@ -23,10 +23,15 @@ let rainLayer = TFC.misc.newOpenSimplex2D(2846746456346)
 	.octaves(2)
 	.spread(0.05)
 	.scaled(-3, 3)
-let forestDensityNoise = TFC.misc.newOpenSimplex2D(98713856895664)
+let marsForestDensityNoise = TFC.misc.newOpenSimplex2D(98713856895664)
 	.octaves(4)
 	.spread(0.0025)
 	.scaled(-0.2, 1.2)
+	.clamped(0, 1)
+let venusForestDensityNoise = TFC.misc.newOpenSimplex2D(62363645435234)
+	.octaves(4)
+	.spread(0.0025)
+	.scaled(-0.5, 1.0)
 	.clamped(0, 1)
 let forestWeirdnessNoise = TFC.misc.newOpenSimplex2D(3210378120)
 	.octaves(4)
@@ -147,7 +152,7 @@ TFCEvents.createChunkDataProvider('mars', event => {
 			temp,
 			floatToForestType(forestLayerNoise.noise(x, z)),
 			forestWeirdnessNoise.noise(x, z), // forest weirdness
-			forestDensityNoise.noise(x, z) // forest density
+			marsForestDensityNoise.noise(x, z) // forest density
 		);
 	});
 
@@ -175,7 +180,34 @@ TFCEvents.createChunkDataProvider('venus', event => {
 	const emptyLayer = TFC.misc.lerpFloatLayer(0, 0, 0, 0);
 
 	event.partial((data, chunk) => {
-		data.generatePartial(emptyLayer, emptyLayer, 0, 0, 0)
+		let x = chunk.pos.minBlockX;
+		let z = chunk.pos.minBlockZ;
+
+		const avgTemp1 = calcAverage(z, global.VENUS_PLANET_SIZE, global.VENUS_MIN_AVG_TEMP, global.VENUS_MAX_AVG_TEMP)
+		const avgTemp2 = calcAverage(z + 15, global.VENUS_PLANET_SIZE, global.VENUS_MIN_AVG_TEMP, global.VENUS_MAX_AVG_TEMP)
+		const avgRain1 = calcAverage(x, global.VENUS_PLANET_SIZE, global.VENUS_MIN_AVG_RAIN, global.VENUS_MAX_AVG_RAIN)
+		const avgRain2 = calcAverage(x + 15, global.VENUS_PLANET_SIZE, global.VENUS_MIN_AVG_RAIN, global.VENUS_MAX_AVG_RAIN)
+
+		let rain = TFC.misc.lerpFloatLayer(
+			avgRain1 + rainLayer.noise(x, z),
+			avgRain1 + rainLayer.noise(x, z + 15),
+			avgRain2 + rainLayer.noise(x + 15, z),
+			avgRain2 + rainLayer.noise(x + 15, z + 15)
+		);
+		let temp = TFC.misc.lerpFloatLayer(
+			avgTemp1 + tempLayer.noise(x, z),
+			avgTemp1 + tempLayer.noise(x, z + 15),
+			avgTemp2 + tempLayer.noise(x + 15, z),
+			avgTemp2 + tempLayer.noise(x + 15, z + 15)
+		);
+
+		data.generatePartial(
+			rain,
+			temp,
+			floatToForestType(forestLayerNoise.noise(x, z)),
+			forestWeirdnessNoise.noise(x, z), // forest weirdness
+			venusForestDensityNoise.noise(x, z) // forest density
+		);
 	})
 
 	event.full((data, chunk) => {
@@ -226,7 +258,7 @@ TFCEvents.createChunkDataProvider('glacio', event => {
 			temp,
 			floatToForestType(forestLayerNoise.noise(x, z)),
 			forestWeirdnessNoise.noise(x, z), // forest weirdness
-			forestDensityNoise.noise(x, z) // forest density
+			marsForestDensityNoise.noise(x, z) // forest density
 		);
 	});
 

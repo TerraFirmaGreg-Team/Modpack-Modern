@@ -1,0 +1,16 @@
+{
+	"feature": "tfg:venus/terrain/chemical_lake_encased",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 1
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "OCEAN_FLOOR"
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

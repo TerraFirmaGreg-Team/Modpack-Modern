@@ -876,13 +876,7 @@
 		]
 	},
 	"ambient.venus_surface.loop": {
-		"sounds": [
-			{
-				"name": "minecraft:ambient/nether/basalt_deltas/ambience",
-				"stream": true,
-				"volume": 0.77
-			}
-		]
+		"sounds": []
 	},
 	"ambient.venus_surface.additions": {
 		"sounds": [
@@ -940,21 +934,6 @@
 				"name": "minecraft:ambient/nether/basalt_deltas/long_debris2",
 				"volume": 0.35,
 				"weight": 40
-			},
-			{
-				"name": "minecraft:ambient/nether/basalt_deltas/plode1",
-				"volume": 0.5,
-				"weight": 10
-			},
-			{
-				"name": "minecraft:ambient/nether/basalt_deltas/plode2",
-				"volume": 0.5,
-				"weight": 10
-			},
-			{
-				"name": "minecraft:ambient/nether/basalt_deltas/plode3",
-				"volume": 0.5,
-				"weight": 10
 			},
 			{
 				"name": "minecraft:ambient/nether/basalt_deltas/twist1",
@@ -1035,6 +1014,13 @@
 			}
 		]
 	},
+	"ambient.venus_plode": {
+		"sounds": [
+			"minecraft:ambient/nether/basalt_deltas/plode1",
+			"minecraft:ambient/nether/basalt_deltas/plode2",
+			"minecraft:ambient/nether/basalt_deltas/plode3"
+		]
+	},
 	"ambient.venus_surface.mood": {
 		"sounds": [
 			"minecraft:ambient/nether/nether_wastes/mood1",
@@ -1091,9 +1077,14 @@
 	"music.mercury": {
 		"sounds": [
 			{
-				"name": "minecraft:records/13",
+				"name": "ambientsounds:cave/underworld",
 				"stream": true,
 				"volume": 0.4
+			},
+			{
+				"name": "minecraft:records/key",
+				"stream": true,
+				"volume": 0.3
 			}
 		]
 	},
@@ -1111,6 +1102,20 @@
 			},
 			{
 				"name": "minecraft:music/game/water/shuniji",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.flesh_planet": {
+		"sounds": [
+			{
+				"name": "minecraft:records/13",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "ambientsounds:cave/deep-dark",
 				"stream": true,
 				"volume": 0.4
 			}
