@@ -2,6 +2,8 @@
 
 ## Unreleased
 ### Changes
+- Add recipes to start the Garnet-Yttrium line with Crushed Ores in a CR @TomPlop
+- Auto-Complete Card now requires a Paper rather that a Crafting Card @TomPlop
 ### Bug fixes
 
 ## [0.13.15] - 20-10-2026
