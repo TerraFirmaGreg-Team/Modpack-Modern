@@ -125,7 +125,7 @@
     "tfg.tooltip.machine.pastoral_engine_2": "§7Automatycznie doi i strzyże wszystkie zwierzęta w obszarze wyznaczonym przez metalowe obudowy.§r",
     "tfg.tooltip.machine.oxygen_distributor_1": "§7Natlenia dużą zamkniętą przestrzeń. Im większa przestrzeń, tym więcej wymaga energii i gaz.",
     "tfg.tooltip.machine.oxygen_distributor_2": "§7Użyj śluzy powietrznej, aby uniknąć wirów powietrznych. Nie wpływa na temperaturę.§r",
-    "tfg.tooltip.machine.heat_pump_1": "§7Ustawia temperaturę w dużej zamkniętej przestrzeni na 15°C.",
+    "tfg.tooltip.machine.heat_pump_1": "§7Ustawia temperaturę w dużej zamkniętej przestrzeni na wybraną temperaturę pomiędzy -50°C a 70°C.",
     "tfg.tooltip.machine.heat_pump_2": "§7Im większy obszar, tym więcej energii potrzebuje. Jest dosyć pobłażliwy i określaniu, co liczy się jako \"zamknięta\".",
     "tfg.tooltip.machine.heat_pump_3": "§7Strona z kontrolerem powinna być skierowana wewnątrz, a wydech powinien wychodzić na zewnątrz i być wypełniony wirnikiem turbiny.",
     "tfg.tooltip.machine.rotor_vent": "Wymaga wirnika turbiny, ale nie zużywa jego wytrzymałości. Efektywność obniża zużycie cieczy wejściowej (mB/t), a moc zmniejsza koszt energii (EU/t).",
