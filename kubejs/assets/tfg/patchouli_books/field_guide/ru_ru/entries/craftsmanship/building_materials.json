@@ -284,7 +284,7 @@
         {
             "type": "patchouli:text",
             "anchor": "modern",
-            "title": "Читать далее",
+            "title": "Modern Materials",
             "text": "Looking for something a little more modern?$(br)$(li)$(thing)GregTech$() has some concrete blocks and metal studs which also have a $(l:logistics/roads)movement speed bonus$(). It also has a large number of colorful lamps and sheet metal blocks.$(li)$(thing)Create Deco$() has some metal catwalks, windows, sheet metal, lights, and many colors of bricks."
         },
         {
@@ -293,7 +293,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Читать далее",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/aqueducts",

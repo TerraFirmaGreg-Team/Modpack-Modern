@@ -2,8 +2,12 @@
 
 ## Unreleased
 ### Changes
+- Add recipes to start the Garnet-Yttrium line with Crushed Ores in a CR @TomPlop
+- Auto-Complete Card now requires Paper rather than a Crafting Card @TomPlop
 - Updated the Preservation entry of the field guide with more info about Smoking (#5188) @WiseMack
 ### Bug fixes
+- Only Turbine Rotors can be inserted in Exhaust Vent @TomPlop
+- Fixed Large Turbine efficiency having a minimum of 100%, sorry SiC-SiC you were goated and no one knew @TomPlop 
 - Fixed firestarters not working when Vivecraft is installed (backport of a TFC fix) (#5113)
 ### Mods
 #### TerraFirmaCraft

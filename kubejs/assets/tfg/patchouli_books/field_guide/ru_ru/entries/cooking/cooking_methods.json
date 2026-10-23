@@ -1,5 +1,5 @@
 {
-    "name": "Методы головки",
+    "name": "Методы готовки",
     "category": "tfg:cooking",
     "icon": "tfc:grill",
     "pages": [
@@ -13,7 +13,7 @@
             "type": "patchouli:text",
             "anchor": "intro",
             "title": "Введение",
-            "text": "Еда, это одна из самых важных механик всего $(tfg). Тебе нужно будет готовить правильную еду, чтобы иметь большой запас здоровья и $(l:cooking/food_and_water#nutrients)Нутриентов$().$(br2) Некоторые методы готовки позволяют увеличить срок хранения относительно других."
+            "text": "Еда - это одна из самых важных механик всего $(tfg). Тебе нужно будет готовить правильную еду, чтобы иметь большой запас здоровья и $(l:cooking/food_and_water#nutrients)Нутриентов$().$(br2) Некоторые методы готовки позволяют увеличить срок хранения относительно других."
         },
         {
             "type": "patchouli:text",
@@ -99,7 +99,7 @@
             "images": [
                 "tfc:textures/gui/book/gui/pot.png"
             ],
-            "text": "The pot interface, actively boiling and making a type of soup.",
+            "text": "Кастрюля на плите, в которой активно варится суп.",
             "border": false
         },
         {
@@ -108,55 +108,55 @@
             "item": "tfc:food/fruit_soup",
             "title": "Рецепты супов",
             "link_recipes": false,
-            "text": "Soup is made from 3-5 $(thing)fruits$(), $(thing)vegetables$(), or $(thing)meats$() in a pot of $(thing)water$(). When the recipe is done, the water in the pot will turn red. $(item)$(k:key.use)$() with a $(l:cooking/bowls)bowl$() to retrieve it. Soup combines multiple nutrients into a single meal."
+            "text": "Суп готовится из 3-5 $(thing)фруктов$(), $(thing)овощей$() или $(thing)мяса$() в кастрюле с $(thing)водой$(). Когда суп будет готов, вода в кастрюле станет красной. Чтобы достать суп, возьмите $(item)$(k:key.use)$() с $(l:cooking/bowls)миской$(). Суп — это блюдо, в котором сочетаются различные питательные вещества."
         },
         {
             "type": "patchouli:spotlight",
             "item": "tfc:bucket/red_dye",
             "title": "Простые рецепты",
             "link_recipes": false,
-            "text": "Other pot recipes transform the items and fluid in the pot into something else. For example, boiling five $(thing)ash$() in $(thing)water$() makes $(thing)lye$()."
+            "text": "В других рецептах ингредиенты и жидкость в кастрюле превращаются во что-то другое. Например, если прокипятить пять кусков $(thing)золы$() в $(thing)воде$(), получится $(thing)щёлочь$()."
         },
         {
             "title": "Печи",
             "anchor": "oven",
             "type": "patchouli:text",
-            "text": "$(thing)Ovens$() are a great way of cooking lots of food in a way that improves their shelf life. Oven-baked food decays at 90% of the rate of regular food. Ovens are a multiblock structure consisting of a $(thing)Bottom Oven$(), $(thing)Top Oven$(), and $(thing)Chimneys$(). These blocks start off as clay, and must be $(thing)Cured$() by raising their temperature to a certain amount for long enough."
+            "text": "$(thing)Печи$() — отличный способ приготовить много еды так, чтобы продлить срок её хранения. Еда, приготовленная в печи, портится на 90% медленнее, чем обычная. Печи представляют собой многоблочную конструкцию, состоящую из $(thing)нижней печи$(), $(thing)верхней печи$() и $(thing)дымоходов$(). Эти блоки изначально сделаны из глины и должны быть $(thing)обработаны$() путём повышения температуры до определённого уровня на достаточно долгое время."
         },
         {
             "type": "patchouli:text",
-            "text": "Ovens are insulated with $(thing)$(t:#firmalife:oven_insulation)Bricks$(), other oven blocks, or anything that can insulate a Forge. This means you can use stone blocks if you want!$(br2)$(l:game_mechanics/heating#tongs)Tongs$() or $(item)Mittens$() are a safe way to remove hot items from an Oven. Just $(item)$(k:key.use)$() on it while holding it to retrieve items. Otherwise, you may get burned!$(br2)$(item)Oven Appliances$() extend oven functionality."
+            "text": "Печи изолируются с помощью $(thing)$(t:#firmalife:oven_insulation)кирпичей$(), других блоков для печей или любых других материалов, которые можно использовать для изоляции горна. Это значит, что при желании вы можете использовать каменные блоки!$(br2)$(l:game_mechanics/heating#tongs)Щипцы$() или $(item)рукавицы$() — безопасный способ достать горячие предметы из печи. Просто $(item)$(k:key.use)$() удерживайте предмет, чтобы достать его из печи. Иначе вы можете обжечься!$(br2)$(item)Приспособления для печей$() расширяют возможности печей."
         },
         {
             "type": "patchouli:text",
-            "title": "Oven Building",
+            "title": "Строительство печи",
             "anchor": "oven_building",
-            "text": "The $(thing)Oven$() first consists of the Top Oven placed on top of the Bottom Oven. All sides of each oven part, besides the front face, should then be covered with $(thing)$(t:#firmalife:oven_insulation)Oven Insulation$() blocks. Placing a stack of three chimneys directly behind the oven causes the smoke from the oven to travel up and out of it, preventing fires. If you don't do this, smoke will quickly fill up your house and fire may spread from the oven!"
+            "text": "$(thing)Печь$() сначала состоит из верхней и нижней частей, которые ставятся друг на друга. Все стороны каждой части печи, кроме передней, должны быть покрыты блоками $(thing)$(t:#firmalife:oven_insulation)Изоляция для печи$(). Если поставить три дымохода друг на друга прямо за печью, дым будет выходить вверх, предотвращая возгорание. Если этого не сделать, дым быстро заполнит весь дом, а огонь может перекинуться с печи на другие части дома!"
         },
         {
             "type": "patchouli:text",
             "anchor": "bottom_oven",
-            "text": "The Bottom Oven is used to hold fuel, which may only be logs. Press $(item)$(k:key.use)$() to add them. The bottom oven is also the part of the oven which may be lit with a $(thing)Firestarter$() or other tool. It will transfer generated heat to the top oven or appliances.$(br2)The bottom oven must be insulated to maintain heat."
+            "text": "Нижняя печь предназначена для хранения топлива, которым могут быть только поленья. Нажмите $(item)$(k:key.use)$(), чтобы добавить их. Нижняя печь — это та часть печи, которую можно разжечь с помощью $(thing)огневого запала$() или другого инструмента. Она будет передавать вырабатываемое тепло в верхнюю печь или приборы.$(br2)Нижняя печь должна быть изолирована для сохранения тепла."
         },
         {
             "type": "patchouli:text",
             "anchor": "top_oven",
-            "text": "The Top Oven contains the items that are being cooked. It will draw heat from the Bottom Oven and slowly release it over time. Press $(item)$(k:key.use)$() with an item to insert. Remember to use $(thing)Tongs$() or $(thing)Mittens$() to remove the items after.$(br2)The top oven needs insulation to reach higher temperatures. But it is not always recommended since some items like bread can burn to ash if left at high heat."
+            "text": "В верхней духовке находятся продукты, которые нужно приготовить. Она будет забирать тепло из нижней духовки и постепенно отдавать его. Нажмите $(item)$(k:key.use)$() с предметом, который нужно поместить в духовку. Не забудьте использовать $(thing)Щипцы$() или $(thing)Рукавицы$(), чтобы достать готовые продукты.$(br2) Для достижения более высоких температур верхняя духовка должна быть изолирована. Но это не всегда рекомендуется, так как некоторые продукты, например хлеб, могут сгореть дотла, если их готовить при высокой температуре."
         },
         {
             "type": "patchouli:text",
-            "text": "Pots and Grills can be placed on top of a $(thing)Bottom Oven$(). These devices will get heat automatically from the bottom oven. The pot is only able to be used for making soup. It cannot execute regular pot recipes."
+            "text": "Кастрюли и грили можно ставить на $(thing)нижнюю плиту$(). Эти устройства будут автоматически получать тепло от нижней плиты. Кастрюлю можно использовать только для приготовления супа. В ней нельзя готовить по обычным рецептам для кастрюль."
         },
         {
             "type": "patchouli:text",
-            "title": "Oven Curing",
+            "title": "Сушка в печи",
             "anchor": "oven_curing",
-            "text": "Curing Oven blocks is easy, but requires patience. Simply start running your Bottom Oven as you would normally, and then wait. If an oven block is above $(t:Dark Red **)$(4)600$()°C for about 80 seconds, it will cure itself and any oven blocks around it. The curing effect will pass all the way up chimneys nearby."
+            "text": "Высушить блоки в печи несложно, но это требует терпения. Просто запустите печь, как обычно, и подождите. Если температура блока в печи превышает $(t:Dark Red **)$(4)600$()°C в течение примерно 80 секунд, он высохнет сам и высушит все блоки вокруг себя. Эффект сушки распространяется по всем дымоходам поблизости."
         },
         {
             "type": "patchouli:multiblock",
-            "name": "Uncured Oven",
-            "text": "Ovens should first be assembed $(n)uncured$(). You can customize the appliances and size.",
+            "name": "Необработанная печь",
+            "text": "Печи должны быть собраны в первую очередь $(n)uncured$(). Вы можете выбрать тип и размер оборудования.",
             "enable_visualize": true,
             "multiblock": {
                 "pattern": [
@@ -210,8 +210,8 @@
         },
         {
             "type": "patchouli:multiblock",
-            "name": "Cured Oven",
-            "text": "Example oven structure after curing.",
+            "name": "Печь для сушки",
+            "text": "Пример структуры печи после отверждения.",
             "enable_visualize": false,
             "multiblock": {
                 "pattern": [
@@ -270,33 +270,33 @@
         {
             "type": "patchouli:crafting",
             "recipe": "firmalife:crafting/oven_insulation",
-            "text": "Crafting oven insulation for your Bottom Oven allows you to remove the need for insulating it on the sides and back. It does not remove the need for the chimney or to insulate top ovens. Use $(item)$(k:key.use)$() to apply it."
+            "text": "Изоляция нижней части печи позволяет не утеплять ее боковые и заднюю стенки. При этом не нужно изолировать дымоход или верхнюю часть печи. Для применения используйте $(item)$(k:key.use)$()."
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Aesthetics",
+            "title": "Эстетика",
             "anchor": "countertop",
             "item": "firmalife:brick_countertop,firmalife:rustic_countertop,firmalife:tile_countertop,firmalife:stone_countertop,firmalife:rustic_finish,firmalife:tile_finish,firmalife:stone_finish",
-            "text": "$(thing)Countertops$() and $(thing)Finishes$() are aesthetic blocks that count as oven parts. Finishes are applied with $(item)$(k:key.use)$(). Only $(n)brick$() oven blocks may take on finishes. Stone finish can't be applied to brick. Use $(item)Sealed bricks$() to match the look."
+            "text": "$(thing)Столешницы$() и $(thing)Отделка$() — это эстетические блоки, которые считаются деталями печи.  Отделка наносится с помощью $(item)$(k:key.use)$().  Отделка может наноситься только на блоки печи $(n)brick$().  Каменная отделка не может наноситься на кирпичную кладку.  Для создания соответствующего внешнего вида используйте $(item)Загерметизированные кирпичи$()."
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Oven Hopper",
+            "title": "Бункер для дров",
             "anchor": "oven_hopper",
             "item": "firmalife:oven_hopper",
-            "text": "The $(thing)Oven Hopper$() will input logs into any Bottom Oven that it is facing. It holds 16 logs (4 stacks of 4, like a log pile), and its inventory is fed by dropping items in the top. Item pipes are capable of doing the same thing, but they cannot act as insulation."
+            "text": "$(thing)Бункер для печи$() подает бревна в любую нижнюю печь, к которой обращен.  Он вмещает 16 бревен (4 стопки по 4 бревна, как в поленнице), а его инвентарь пополняется за счет сброса предметов сверху.  Трубы для предметов могут выполнять ту же функцию, но не могут служить изоляцией."
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Ashtray",
+            "title": "Зольник",
             "anchor": "ashtray",
             "item": "firmalife:ashtray",
-            "text": "The $(thing)Ashtray$() collects $(thing)Wood Ash$() when placed below a $(thing)Bottom Oven Block$(). There is a 0.5 chance it gains ash when fuel is consumed. Ash is extracted with $(item)$(k:key.use)$() or hoppers, and inserted via $(item)$(k:key.attack)$() it."
+            "text": "$(thing)Зольник$() собирает $(thing)древесную золу$(), если находится под $(thing)блоком нижней печи$(). С вероятностью 0,5 при сгорании топлива в пепельницу попадает зола. Зола извлекается с помощью $(item)$(k:key.use)$() или воронок и помещается в пепельницу с помощью $(item)$(k:key.attack)$()."
         },
         {
             "type": "patchouli:multiblock",
-            "name": "Insulated Oven",
-            "text": "Example of an insulated oven with appliances and a finish.$(br)Note: $(7)Vats, pots and grills count as insulating blocks.$()",
+            "name": "Изоляция печи",
+            "text": "Пример изолированной печи с бытовой техникой и отделкой.$(br) Примечание: $(7)Кастрюли, горшки и грили считаются изолирующими блоками.$()",
             "enable_visualize": false,
             "multiblock": {
                 "pattern": [
@@ -359,18 +359,18 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Vat",
+            "title": "Чан",
             "anchor": "vat",
             "item": "firmalife:vat",
-            "text": "The $(thing)Vat$() produces boiling recipes in bulk. It has one slot for items, and 10,000mB of fluid space, similar to a barrel.$(br2)Vats can only hold one fluid type at a time. So, if you make a recipe that outputs fluids while still having leftover fluid inputs it will void those inputs!"
+            "text": "$(thing)Чан$() позволяет готовить кипящие блюда в больших количествах. У него один слот для предметов и 10 000 МБ для жидкости, как у бочки.$(br2)Чан может одновременно хранить только один тип жидкости. Поэтому, если вы приготовите блюдо, для которого нужна жидкость, но у вас останется лишняя жидкость, она пропадёт!"
         },
         {
             "type": "patchouli:text",
-            "text": "To use a vat, $(item)$(k:key.use)$() it with fluids and items to add them to the inventory. With an empty hand and $(item)$(k:key.sneak)$() held, click to seal and unseal the vat. A vat will not boil until it is sealed.$(br)Vats should be placed above a $(thing)Bottom Oven$(). If the vat overflowed on completion of the recipe, it will not boil!$(br2)Vats can be automatically opened and closed with $(thing)Redstone$(), and interact with $(item)pipes$() or a $(item)Mechanical Arm$()."
+            "text": "Чтобы использовать чан, $(item)$(k:key.use)$() наполните его жидкостями и предметами, чтобы добавить их в инвентарь. С пустой рукой и $(item)$(k:key.sneak)$() в руке нажмите на чан, чтобы закрыть и открыть его. Чан не закипит, пока не будет закрыт.$(br)Чаны следует размещать над $(thing)печью с нижним нагревом$(). Если по завершении приготовления чан переполнился, он не закипит!$(br2)Чаны можно автоматически открывать и закрывать с помощью $(thing)редстоуна$(), а также взаимодействовать с ними с помощью $(item)труб$() или $(item)механической руки$()."
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Example of an oven with a $(l:cooking/cooking_methods#vat)Vat$() and $(l:cooking/cooking_methods#jarring_station)Jarring Station$().",
+            "text": "Пример печи с $(l:cooking/cooking_methods#vat) Чаном$() и $(l:cooking/cooking_methods#jarring_station)Разливочной станцией$().",
             "multiblocks": [
                 {
                     "pattern": [
@@ -436,16 +436,16 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Jarring Station",
+            "title": "Разливочная станция",
             "anchor": "jarring_station",
             "item": "firmalife:jarring_station",
-            "text": "The $(thing)Jarring Station$() is used to automatically fill $(6)$(t:Empty Jar with Lid)Jars$() with the $(l:cooking/cooking_methods#vat)Vat$(). The jarring station has a spout on one side that should point to the vat.$(br)When the vat produces jam, it will automatically fill the jars with it and seal them."
+            "text": "$(thing)Разливочная станция$() используется для автоматического наполнения $(6)$(t: пустых банок с крышками) банок$() из $(l:cooking/cooking_methods#vat) чана$(). С одной стороны станции для розлива есть носик, который должен быть направлен в сторону чана.$(br)Когда в чане появляется джем, он автоматически наполняет им банки и закрывает их."
         },
         {
             "type": "patchouli:multiblock",
-            "name": "Electric Oven",
+            "name": "Электрическая печь",
             "anchor": "electric_oven",
-            "text": "The $(item)Electric Oven$() is a machine added by $(tfg) to automatically cook food items using $(thing)EU$().",
+            "text": "$(item) Электро - печь$() — это устройство, добавленное компанией $(tfg) для автоматического приготовления продуктов с использованием $(thing)EU$().",
             "enable_visualize": false,
             "multiblock": {
                 "pattern": [
@@ -463,9 +463,9 @@
         },
         {
             "type": "patchouli:multiblock",
-            "name": "Food Processor",
+            "name": "Кухонный комбайн",
             "anchor": "food_processor",
-            "text": "The $(item)Food Processor$() is another machine added by $(tfg_short) to automatically create meals or process food ingredients using $(thing)EU$().",
+            "text": "$(item)Кухонный комбайн$() — это еще одна машина, добавленная $(tfg_short) для автоматического приготовления блюд или обработки пищевых ингредиентов с использованием $(thing)EU$().",
             "enable_visualize": false,
             "multiblock": {
                 "pattern": [
@@ -483,7 +483,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Читать далее",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/food_and_water",
