@@ -1,36 +1,36 @@
 {
-    "name": "Drinking Containers",
+    "name": "Емкости для напитков",
     "category": "tfg:cooking",
     "icon": "tfc:ceramic/jug",
     "pages": [
         {
             "type": "patchouli:text",
-            "title": "Introduction",
+            "title": "Вступление",
             "anchor": "intro",
-            "text": "If you are tired of drinking directly out of streams and ponds like a wild horse then consider making a $(item)Drinking Vessel!$()$(br2)Every time you drink from a vessel you will consume $(thing)100mB$() of fluid and damage the vessel 1 durability (if applicable) or has a chance of breaking (if applicable, can be changed in TFC server config)."
+            "text": "Если вам надоело пить прямо из ручьев и прудов, как дикая лошадь, подумайте о том, чтобы сделать $(item)сосуд для питья!$()$(br2)Каждый раз, когда вы пьете из сосуда, вы расходуете $(thing)100 мБ$() жидкости и снижаете прочность сосуда на 1 единицу (если применимо) или повышаете вероятность того, что он разобьется (если применимо, можно изменить в настройках сервера TFC)."
         },
         {
             "type": "patchouli:text",
-            "text": "Drinking from a container will also work for acquiring drink effects from $(item)Alcohol$() or other fluids, as well as $(l:cooking/food_and_water#nutrients)Nutrient$() values.$(br2)$(o)$(7)Some drinking containers can even be played as a musical instrument when empty.$()"
+            "text": "Если пить из сосуда, можно получить эффект от употребления алкоголя $(item)Alcohol$() или других жидкостей, а также $(l:cooking/food_and_water#nutrients)питательных веществ$().$(br2)$(o)$(7) Некоторые сосуды для питья можно использовать даже как музыкальный инструмент, когда они пусты.$()"
         },
         {
             "type": "tfg:table",
             "anchor": "table",
             "strings": [
                 {
-                    "text": "Vessel",
+                    "text": "Судно",
                     "bold": true
                 },
                 {
-                    "text": "Capacity (mb)",
+                    "text": "Объем (Мб)",
                     "bold": true
                 },
                 {
-                    "text": "Health/ Break%",
+                    "text": "Здоровье/ Отдых%",
                     "bold": true
                 },
                 {
-                    "text": "Ceramic Jug"
+                    "text": "Кувшин"
                 },
                 {
                     "text": "100"
@@ -39,7 +39,7 @@
                     "text": "2%"
                 },
                 {
-                    "text": "Wine Glass"
+                    "text": "Винная бутылка"
                 },
                 {
                     "text": "100"
@@ -48,7 +48,7 @@
                     "text": "2%"
                 },
                 {
-                    "text": "Leather Flask"
+                    "text": "Бурдюк"
                 },
                 {
                     "text": "500"
@@ -57,7 +57,7 @@
                     "text": "100"
                 },
                 {
-                    "text": "Iron Flask"
+                    "text": "Железная фляга"
                 },
                 {
                     "text": "2000"
@@ -66,7 +66,7 @@
                     "text": "400"
                 },
                 {
-                    "text": "Red Steel Flask"
+                    "text": "Фляга из красной стали"
                 },
                 {
                     "text": "2000"
@@ -75,7 +75,7 @@
                     "text": "∞"
                 },
                 {
-                    "text": "Electric Flask"
+                    "text": "Электро - фляга"
                 },
                 {
                     "text": "4000"
@@ -84,7 +84,7 @@
                     "text": "∞"
                 },
                 {
-                    "text": "Silica Glass Bottle"
+                    "text": "Бутылка из кварцевого стекла"
                 },
                 {
                     "text": "500"
@@ -93,7 +93,7 @@
                     "text": "0.5%"
                 },
                 {
-                    "text": "Hematitic Glass Bottle"
+                    "text": "Бутылка из гематитового стекла"
                 },
                 {
                     "text": "400"
@@ -102,7 +102,7 @@
                     "text": "2%"
                 },
                 {
-                    "text": "Olivine Glass Bottle"
+                    "text": "Бутылка из ониксового стекла"
                 },
                 {
                     "text": "400"
@@ -111,7 +111,7 @@
                     "text": "1%"
                 },
                 {
-                    "text": "Volcanic Glass Bottle"
+                    "text": "Бутылка из вулканического стекла"
                 },
                 {
                     "text": "400"
@@ -120,7 +120,7 @@
                     "text": "∞"
                 },
                 {
-                    "text": "Borosilicate Flask"
+                    "text": "Боросиликатная фляга"
                 },
                 {
                     "text": "144"
@@ -129,7 +129,7 @@
                     "text": "∞"
                 },
                 {
-                    "text": "Borosilicate Beaker"
+                    "text": "Боросиликатный химический стакан"
                 },
                 {
                     "text": "1296"
@@ -138,7 +138,7 @@
                     "text": "∞"
                 },
                 {
-                    "text": "Borosilicate Vial"
+                    "text": "Боросиликатный флакон"
                 },
                 {
                     "text": "16"
@@ -148,7 +148,7 @@
                 }
             ],
             "text": "",
-            "title": "Drinking Containers",
+            "title": "Емкости для напитков",
             "legend": [],
             "columns": 2,
             "first_column_width": 90,
@@ -165,19 +165,19 @@
         {
             "type": "patchouli:crafting",
             "anchor": "juicer",
-            "title": "Juicer",
+            "title": "Соковыжималка",
             "recipe": "beneath:crafting/juicer",
-            "text": "The $(item)Juicer$() is a special item that can extract the water contained in $(thing)Fruits$(), $(thing)Mushrooms$(), and $(thing)Cacti$() into drinkable water."
+            "text": "$(item)Соковыжималка$() — это особый предмет, который может извлекать воду из $(thing)фруктов$(), $(thing)грибов$() и $(thing)кактусов$() и превращать её в питьевую воду."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "electric_flask",
             "item": "tfg:electric_flask",
-            "text": "Similar to a $(l:logistics/exploration_gear#digger_helmet)Digger Helmet$(), the $(item)Electric Flask$() will automatically drink for you when you're thirsty. Unlike the digger helmet, it works with any drinkable fluid!$(br2)It requires charging to work, though you can still drink from it manually if the charge runs out. It also holds $(thing)4,000mB$() of fluid."
+            "text": "Подобно $(l:logistics/exploration_gear#digger_helmet)шлему копателя$(), $(item)электрическая фляга$() будет автоматически наполняться, когда вы испытываете жажду.  В отличие от шлема копателя, она работает с любой пригодной для питья жидкостью! $(br2) Для работы ее нужно зарядить, но если заряд закончится, вы все равно сможете пить из нее вручную.  Она вмещает $(thing)4000 Мб$() жидкости."
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Читать далее",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/drinks",

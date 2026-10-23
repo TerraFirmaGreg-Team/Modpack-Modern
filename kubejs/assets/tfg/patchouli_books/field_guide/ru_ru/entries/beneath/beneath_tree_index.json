@@ -1,50 +1,50 @@
 {
-	"name": "Beneath Tree Index",
+	"name": "Бездна Каталог ̶Ш̶а̶н̶е̶л̶ь̶ Деревьев",
 	"category": "tfg:beneath",
 	"icon": "tfg:textures/block/wood/sapling/mahoe.png",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Despite the lack of sunlight, several species of trees grow in the Beneath, most of which can only be found here!$(br2)Trees grow in the Beneath the same way they do in the overworld, but they do require a light level of 12, which isn't provided by the Beneath's natural light. To solve this problem, you can utilize $(l:agriculture/aqueducts)Lava Aqueducts$() or any other available light source."
+			"text": "Несмотря на отсутствие солнечного света, в Бездне растут несколько видов деревьев, большинство из которых можно найти только здесь!$(br2)Деревья растут таким же образом, как и в мире но они требуют 12 светового уровня, который не обеспечивается естественным светом Бездной. Для решения этой проблемы вы можете использовать $(l:agriculture/aqueducts)Лавовые Акведуки$() или любой другой доступный источник света."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Araucaria",
+			"title": "Араукария",
 			"anchor": "araucaria",
 			"item": "tag:tfg:araucaria_logs",
-			"text": "$(bold)Araucaria$()$(br)Found only in the $(thing)Webbed Lair$() biome.$(br)$(thing)Growth Days$(): 5"
+			"text": "$(bold)Араукария$()$(br)Находится только в биоме $(thing)Плетёное Логово$(). $(br)$(thing)Дней роста$(): 5"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Beech",
+			"title": "Бук",
 			"anchor": "beech",
 			"item": "tag:tfg:beech_logs",
-			"text": "$(bold)Beech$()$(br)Found in the $(thing)Thorny Grove$() and $(thing)Lush Hollow$() biomes.$(br)$(thing)Growth Days$(): 6"
+			"text": "$(bold)Бук$()$(br)Находится в биомах  $(thing)Терновая роща$() и $(thing)Пышная Лощина$(). $(br)$(thing)Дней роста$(): 6"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Ginkgo",
+			"title": "Гинкго",
 			"anchor": "ginkgo",
 			"item": "tag:wan_ancient_beasts:ginkgo_logs",
-			"text": "$(bold)Ginkgo$()$(br)Found only in the $(thing)Lush Hollow$() biome.$(br)$(thing)Growth Days$(): 7"
+			"text": "$(bold)Гинкго$()$(br)Находится только в биоме $(thing)Пышная Лощина$(). $(br)$(thing)Дней роста$(): 7"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Mahoe",
+			"title": "Махое",
 			"anchor": "mahoe",
 			"item": "tag:tfg:mahoe_logs",
-			"text": "$(bold)Mahoe$()$(br)Found only in the $(thing)Thorny Grove$() biome.$(br)$(thing)Growth Days$(): 5"
+			"text": "$(bold)Махое$()$(br)Находится только в биоме $(thing)Терновая роща$(). $(br)$(thing)Дней роста$(): 5"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Мангровое дерево",
 			"anchor": "mangrove",
 			"item": "tag:tfc:mangrove_logs",
-			"text": "$(bold)Mangrove$()$(br)Found only in the $(thing)Muggy Bog$() biome.$(br)$(thing)Growth Days$(): 7$(br2)Can also be found $(l:the_world/earth_tree_index#mangrove)in the overworld$()."
+			"text": "$(bold)Мангровое дерево$()$(br)Находится в биоме $(thing)Знойная трясина$(). $(br)$(thing)Дней роста$(): 7$(br2)Также можно найти$(l:the_world/earth_tree_index#mangrove)в верхнем мире$()."
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Читать далее",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/earth_tree_index",
