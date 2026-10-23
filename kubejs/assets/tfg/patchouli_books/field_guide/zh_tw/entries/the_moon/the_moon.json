@@ -436,7 +436,7 @@
 			"type": "patchouli:spotlight",
 			"item": "tfg:higgs_emitter",
 			"anchor": "higgs",
-			"text": "$(item)希格斯發射器$()可以製造人工重力，就像$(item)熱泵$()或$(l:the_moon/the_moon#distributor)可呼吸空氣分配器$()一樣，作用範圍是一個密封區域。範圍大小取決於多方塊結構的能源倉等級。"
+			"text": "$(item)Higgs 發射器$()可以製造人工重力，就像$(item)熱泵$()或$(l:the_moon/the_moon#distributor)可呼吸空氣分配器$()一樣，作用範圍是一個密封區域。範圍大小取決於多方塊結構的能源倉等級。想創造零重力環境，請確保身上帶著一把 $(item)壓縮槍$()。"
 		},
 		{
 			"type": "patchouli:spotlight",

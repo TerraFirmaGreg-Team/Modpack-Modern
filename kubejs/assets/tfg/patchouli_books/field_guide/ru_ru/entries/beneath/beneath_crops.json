@@ -5,17 +5,17 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "Beneath Crops",
+			"title": "Культуры Бездны",
 			"text": "$(thing)Бездна$() может быть суровой средой, но там всё же можно найти культуры. Культуры Бездны невероятно устойчивы и могут расти в условиях экстремальной жары, что делает их полезными для выживания под землёй и на поверхности."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Crops in the beneath behave just the same as crops on the surface; they have hydration, temperature, and nutrient requirements. You can even plant them in $(thing)Greenhouses.$()$(br2)An important concern when planting crops in the Beneath is that crops require a light level of 12, which isn't provided by the Beneath's natural light. To solve this problem, you can utilize $(l:agriculture/aqueducts)Lava Aqueducts$() or any other available light source."
+			"text": "Культуры в Бездне ведут себя так же, как и культуры на поверхности: у них есть потребности в увлажнении, температуре и питательных веществах. Их можно даже сажать в $(thing)теплицах$().$(br2)Важное замечание при посадке культур в Бездне: растениям требуется уровень освещения 12, а естественный свет Бездны его не обеспечивает. Чтобы решить эту проблему, можно использовать  $(l:agriculture/aqueducts)Лавовые Акведуки$() или любой другой доступный источник света."
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Содержит",
-			"text": "$(li)$(l:beneath/beneath_crops#cassava)Cassava$()$(li)$(l:beneath/beneath_crops#peanut)Peanut$()$(li)$(l:beneath/beneath_crops#beans)Blackstone Beans$()$(li)$(l:beneath/beneath_crops#ghost_pepper)Ghost Pepper$()$(li)$(l:beneath/beneath_crops#cotton)Cotton$()"
+			"text": "$(li)$(l:beneath/beneath_crops#cassava)Маниок$()$(li)$(l:beneath/beneath_crops#peanut)Арахис$()$(li)$(l:beneath/beneath_crops#beans)Чернитная Фасоль$()$(li)$(l:beneath/beneath_crops#ghost_pepper)Призрачный Перец$()$(li)$(l:beneath/beneath_crops#cotton)Хлопок$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -24,8 +24,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cassava",
-			"title": "Cassava",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 70 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cassava can be eaten for $(thing)Vegetable$() nutrition, although it is best $(thing)cooked$() before consumed.$(br)"
+			"title": "Маниок",
+			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 70 - 100 %$(br)$(bold)Удобрение$(): Азот$(br2)Маниока может быть съедена для $(thing)Овощного$() насыщения, хотя лучше всего её $(thing)приготовить$() перед употреблением.$(br)"
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -139,8 +139,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "peanut",
-			"title": "Peanut",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Potassium$(br2)Peanuts can be eaten for $(thing)Vegetable$() and $(thing)Protein$() nutrition"
+			"title": "Арахис",
+			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 20 - 80 %$(br)$(bold)Удобрение$(): Калий$(br2)Арахис могжет быть съеден для $(thing)Овощного$() и $(thing)Протеинового$() насыщения."
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -254,8 +254,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "beans",
-			"title": "Blackstone Beans",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Potassium$(br2)Blackstone Beans can be eaten for $(thing)Vegetable$() and $(thing)Protein$() nutrition. However, they must be cooked first!"
+			"title": "Чернитная Фасоль",
+			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 20 - 80 %$(br)$(bold)Удобрение$(): Калий$(br2)Чернитные Бобы могут быть съедены для $(thing)Овощного$() и $(thing)прпотеинового$() насыщения. \nОднако сначала стоит их приготовить!\n"
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -369,8 +369,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "ghost_pepper",
-			"title": "Ghost Pepper",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Ghost Peppers can be eaten for $(thing)Vegetable$() nutrition. They are also a common snack among the inhabitants of the Beneath."
+			"title": "Призрачный Перец",
+			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 20 - 80 %$(br)$(bold)Удобрение$(): Азот$(br2)Призрачный Перец cможет быть съеден для $(thing)Овощного$() насыщения. Они также служат распространённым перекусом среди обитателей Бездны."
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -484,8 +484,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cotton",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 40 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cotton is a two block tall crop. Cotton seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Cotton Balls$() which can be processed into $(thing)Cotton String$() or $(thing)Cloth$().",
-			"title": "Cotton"
+			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 40 - 100 %$(br)$(bold)Удобрение$(): Азот$(br2)Хлопок — это культура высотой в два блока. Семена хлопка можно высадить на обработанную землю; растение вырастает до двух блоков в высоту и дает $(item)Хлопковые Коробочки$() которые можно переработать в $(thing)Хлопковую Нить$() или $(thing)Ткань$().",
+			"title": "Хлопок"
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -600,7 +600,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Читать далее",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/climate",

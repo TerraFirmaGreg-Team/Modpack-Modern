@@ -2,8 +2,47 @@
 
 ## Unreleased
 ### Changes
+- Add recipes to start the Garnet-Yttrium line with Crushed Ores in a CR @TomPlop
+- Auto-Complete Card now requires Paper rather than a Crafting Card @TomPlop
+- Updated the Preservation entry of the field guide with more info about Smoking (#5188) @WiseMack
 ### Bug fixes
-- Red and Blue Scythe are back, sorry @TomPlop
+- Only Turbine Rotors can be inserted in Exhaust Vent @TomPlop
+- Fixed Large Turbine efficiency having a minimum of 100%, sorry SiC-SiC you were goated and no one knew @TomPlop 
+- Fixed firestarters not working when Vivecraft is installed (backport of a TFC fix) (#5113)
+### Mods
+#### TerraFirmaCraft
+- Prevent double high blocks from breaking bedrock.
+- Fix an issue with squid spawning.
+- Fix issues with berry bushes.
+- Fix a rare crash with chunk data.
+- Skip knife damage when scraping makes no progress.
+- Add Jade tooltip for scraping recipes.
+- Fix client desync for loom progress.
+- Misc Entity and AI fixes.
+
+## [0.13.15] - 20-10-2026
+Be sure to check the previous alpha changelogs, as there are a lot of changes: [0.13.11](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.11), [0.13.12](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.12), [0.13.13](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.13)
+### Changes
+- Rotten flesh, spider eyes, and rabbit feet are now compost poisons, and added a stomping barrel/compressor recipe to turn any compost poisons into rotten flesh directly instead of breaking and placing composters @Pyritie
+- Snow layers can no longer form on windmill bearings @Pyritie
+- Vexxed TFG resource pack now also includes an anvil helper texture (#5155) @Patchack
+- Forgot to add this in previous patch notes but Sterling Silver Turbine Rotors have been removed, while Vanadium Turbine Rotors have been added. The recipes for turbine rotors is also simpler, no longer needing screws if you use a forming press. @TomPlop
+- Increased the amount of chorus flowers you get from the electric greenhouse @Pyritie
+- Uncraftable workstations are no longer visible in EMI @evanbones
+### Bug fixes
+- Fixed TFC melting sometimes resulting in 1mB of unknown @TomPlop
+- Possibly fixed slimes spawning on the surface when TFC Caelum is installed @Pyritie
+- Fixed GT machines crafting removed removed vanilla items @evanbones
+
+## [0.13.14] - 19-10-2026
+Be sure to check the previous alpha changelogs, as there are a lot of changes: [0.13.11](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.11), [0.13.12](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.12), [0.13.13](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.13)
+### Changes
+- Added another way to craft sodium hydroxide instead of just the TFC way @TomPlop
+### Bug fixes
+- Fixed players and mobs on the moon catching fire during the daytime (#5156) @TomPlop
+- Red and Blue Steel non-electric scythes are back, sorry @TomPlop
+- Fixed crucibles sometimes turning single metals into 1mB of unknown
+- Added a circuit to the heat pump recipe to avoid a collision with fluid regulators (#5157) @TomPlop
 
 ## [0.13.13] - 18-10-2026
 Be sure to check the changelog of the previous two [alpha](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.11) [releases](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.12) too! 

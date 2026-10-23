@@ -429,18 +429,20 @@ function registerTFGMultiblockRecipes(event) {
 		.inputFluids(Fluid.of('tfg:chlorodifluoromethane', 6000))
 		.itemOutputs('1x tfg:heat_pump')
 		.duration(20*10)
+		.circuit(3)
 		.addMaterialInfo(true)
 		.EUt(GTValues.VA[GTValues.LV])
 
 	// Oxygen Distributor
 	event.recipes.gtceu.shaped('tfg:oxygen_distributor', [
 		'ABA',
-		'BCB',
+		'DCD',
 		'ABA'
 	], {
 		A: 'gtceu:hv_electric_pump',
 		B: 'gtceu:filter_casing',
-		C: 'gtceu:hv_machine_hull'
+		C: 'gtceu:hv_machine_hull',
+		D: '#gtceu:circuits/hv'
 	}).addMaterialInfo().id('tfg:shaped/oxygen_distributor')
 
 	// Higgs Emitter
