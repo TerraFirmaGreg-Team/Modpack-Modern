@@ -2,7 +2,19 @@
 
 ## Unreleased
 ### Changes
+- Updated the Preservation entry of the field guide with more info about Smoking (#5188) @WiseMack
 ### Bug fixes
+- Fixed firestarters not working when Vivecraft is installed (backport of a TFC fix) (#5113)
+### Mods
+#### TerraFirmaCraft
+- Prevent double high blocks from breaking bedrock.
+- Fix an issue with squid spawning.
+- Fix issues with berry bushes.
+- Fix a rare crash with chunk data.
+- Skip knife damage when scraping makes no progress.
+- Add Jade tooltip for scraping recipes.
+- Fix client desync for loom progress.
+- Misc Entity and AI fixes.
 
 ## [0.13.15] - 20-10-2026
 Be sure to check the previous alpha changelogs, as there are a lot of changes: [0.13.11](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.11), [0.13.12](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.12), [0.13.13](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.13)
