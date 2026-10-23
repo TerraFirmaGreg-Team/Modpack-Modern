@@ -5,6 +5,8 @@
 - Add recipes to start the Garnet-Yttrium line with Crushed Ores in a CR @TomPlop
 - Auto-Complete Card now requires Paper rather than a Crafting Card @TomPlop
 - Updated the Preservation entry of the field guide with more info about Smoking (#5188) @WiseMack
+- Astikor Carts and the Paving Cart are now immune to cacti (#5189) @Pyritie
+- Added a config option (tfg-server.toml) to enable announcing some quests in chat, off by default (#5203) @Pyritie
 ### Bug fixes
 - Only Turbine Rotors can be inserted in Exhaust Vent @TomPlop
 - Fixed Large Turbine efficiency having a minimum of 100%, sorry SiC-SiC you were goated and no one knew @TomPlop 
