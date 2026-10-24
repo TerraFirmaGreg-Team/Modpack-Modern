@@ -7,11 +7,14 @@
 - Updated the Preservation entry of the field guide with more info about Smoking (#5188) @WiseMack
 - Astikor Carts and the Paving Cart are now immune to cacti (#5189) @Pyritie
 - Added a config option (tfg-server.toml) to enable announcing some quests in chat, off by default (#5203) @Pyritie
+- Drastically improved chunk generation speed in the Beneath, Moon, and Mars @Mqrius @Pyritie
 ### Bug fixes
 - Only Turbine Rotors can be inserted in Exhaust Vent @TomPlop
 - Fixed Large Turbine efficiency having a minimum of 100%, sorry SiC-SiC you were goated and no one knew @TomPlop 
 - Fixed firestarters not working when Vivecraft is installed (backport of a TFC fix) (#5113)
 - Fixed being able to cast vanadium steel, ultimet, boron carbide, and tungsten carbide tools and items with TFC molds @Pyritie
+- Fixed not being able to use GT concrete in Domum Ornamentum recipes @Pyritie
+- Fixed some recipes missing from EMI @evanbones
 ### Mods
 #### TerraFirmaCraft
 - Prevent double high blocks from breaking bedrock.
