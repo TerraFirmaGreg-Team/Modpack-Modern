@@ -11,6 +11,7 @@
 - Only Turbine Rotors can be inserted in Exhaust Vent @TomPlop
 - Fixed Large Turbine efficiency having a minimum of 100%, sorry SiC-SiC you were goated and no one knew @TomPlop 
 - Fixed firestarters not working when Vivecraft is installed (backport of a TFC fix) (#5113)
+- Fixed being able to cast vanadium steel, ultimet, boron carbide, and tungsten carbide tools and items with TFC molds @Pyritie
 ### Mods
 #### TerraFirmaCraft
 - Prevent double high blocks from breaking bedrock.
