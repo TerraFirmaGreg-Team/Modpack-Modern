@@ -570,11 +570,18 @@
 			guide_page: "tfg:field_guide tfg:mars/mars_fauna"
 			id: "51BEA1053F203050"
 			subtitle: "{quests.space_survival.mineral_rich_wool.subtitle}"
-			tasks: [{
-				id: "03F10750FD9BBAA6"
-				item: "tfg:sniffer_wool"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "03F10750FD9BBAA6"
+					item: "tfg:sniffer_wool"
+					type: "item"
+				}
+				{
+					id: "00D7F21BFEE80F30"
+					item: "tfg:wraptor_wool"
+					type: "item"
+				}
+			]
 			title: "{quests.space_survival.mineral_rich_wool.title}"
 			x: -5.5d
 			y: 5.5d
@@ -1041,6 +1048,8 @@
 			description: ["{quests.extreme_voltage.tritiated_water.desc}"]
 			icon: "gtceu:tritiated_water_bucket"
 			id: "3E0ABDFCC0FC6928"
+			shape: "octagon"
+			size: 2.0d
 			subtitle: "{quests.extreme_voltage.tritiated_water.subtitle}"
 			tasks: [
 				{
@@ -1063,8 +1072,6 @@
 			dependencies: ["3E0ABDFCC0FC6928"]
 			description: ["{quests.extreme_voltage.nano_cpu_wafer.desc}"]
 			id: "61E3352A78B3EAA1"
-			shape: "octagon"
-			size: 2.0d
 			subtitle: "{quests.extreme_voltage.nano_cpu_wafer.subtitle}"
 			tasks: [
 				{
