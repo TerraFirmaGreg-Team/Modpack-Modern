@@ -51,8 +51,8 @@ const NEW_MOB_MAX_HP = {
 	'arthropocolypse:wharf_roach': 20,
 	'arthropocolypse:mealworm_beetle': 50,
 	'arthropocolypse:mealworm': 14,
-	'arthropocolypse:millipede_body': 200,
-	'arthropocolypse:millipede_tail': 200,
+	'arthropocolypse:millipede_body': 120,
+	'arthropocolypse:millipede_tail': 120,
 	"opposing_force:slug": 80,
 
 	// europa mobs
