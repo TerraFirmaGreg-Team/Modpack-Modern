@@ -206,9 +206,7 @@ function registerTFGVenusEntityTypeTags(event) {
 		'arthropocolypse:wharf_roach',
 		'arthropocolypse:mealworm',
 		'opposing_force:whizz',
-		'endermanoverhaul:scarab',
-		'tfg:silk_moth',
-		'tfg:dragonfly'
+		'endermanoverhaul:scarab'
 	];
 
 	venusPrey.forEach(entity => {

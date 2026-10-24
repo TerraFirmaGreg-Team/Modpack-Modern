@@ -53,7 +53,6 @@ const NEW_MOB_MAX_HP = {
 	'arthropocolypse:mealworm': 14,
 	'arthropocolypse:millipede_body': 120,
 	'arthropocolypse:millipede_tail': 120,
-	"opposing_force:slug": 80,
 
 	// europa mobs
 	"endermanoverhaul:ice_spikes_enderman": 90,

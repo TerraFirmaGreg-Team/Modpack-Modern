@@ -4,14 +4,14 @@
 		"tfg:venus/salt_flats"
 	],
 	"max_distance_from_center": 1,
-	"project_start_to_heightmap": "OCEAN_FLOOR",
+	"project_start_to_heightmap": "OCEAN_FLOOR_WG",
 	"size": 1,
 	"spawn_overrides": {},
 	"start_height": {
-		"absolute": 0
+		"absolute": -1
 	},
 	"start_pool": "tfg:venus/salt_arches",
-	"step": "surface_structures",
+	"step": "raw_generation",
 	"terrain_adaptation": "beard_thin",
 	"use_expansion_hack": false,
 	"adapt_noise": true

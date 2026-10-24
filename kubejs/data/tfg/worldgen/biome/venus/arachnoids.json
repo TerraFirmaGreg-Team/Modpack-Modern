@@ -110,6 +110,38 @@
 		"aliencraft_kepler:ancient_beetle": {
 			"energy_budget": 0.05,
 			"charge": 0.9
+		},
+		"opposing_force:slug": {
+			"energy_budget": 0.15,
+			"charge": 0.7
+		},
+		"opposing_force:trembler": {
+			"energy_budget": 0.15,
+			"charge": 0.7
+		},
+		"opposing_force:whizz": {
+			"energy_budget": 0.15,
+			"charge": 0.7
+		},
+		"opposing_force:ladybug": {
+			"energy_budget": 0.15,
+			"charge": 0.7
+		},
+		"opposing_force:guzzler": {
+			"energy_budget": 0.15,
+			"charge": 0.7
+		},
+		"opposing_force:fire_slime": {
+			"energy_budget": 0.15,
+			"charge": 0.7
+		},
+		"aliencraft_kepler:xenoscorpion_surface": {
+			"energy_budget": 0.15,
+			"charge": 0.7
+		},
+		"aliencraft_kepler:tree_mite": {
+			"energy_budget": 0.15,
+			"charge": 0.7
 		}
 	},
 	"creature_spawn_probability": 0.1,
@@ -197,7 +229,7 @@
 				"type": "ad_astra:sulfur_creeper",
 				"maxCount": 2,
 				"minCount": 1,
-				"weight": 30
+				"weight": 60
 			},
 			{
 				"type": "minecraft:magma_cube",
