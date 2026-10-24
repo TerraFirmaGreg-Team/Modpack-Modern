@@ -65,4 +65,6 @@ TFCEvents.registerFaunas(event => {
 	event.replace("aliencraft_kepler:ancient_beetle", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
 	event.replace("aliencraft_kepler:xenoscorpion_surface", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
 	event.replace("aliencraft_kepler:tree_mite", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
+	event.replace("tfg:dragonfly", $SpawnPlacements.Type.ON_GROUND, "motion_blocking_no_leaves");
+	event.replace("tfg:silk_moth", $SpawnPlacements.Type.ON_GROUND, "motion_blocking_no_leaves");
 })

@@ -148,7 +148,7 @@ function registerVenusFauna(event) {
 	event.fauna(
 		climate => {
 			climate.minTemp(400)
-			climate.minForest('edge')
+			climate.minForest('normal')
 		},
 		faunaData => {
 			faunaData.solidGround(true)
@@ -184,4 +184,22 @@ function registerVenusFauna(event) {
 			faunaData.solidGround(true)
 		},
 		"aliencraft_kepler:tree_mite")
+	
+	event.fauna(
+		climate => {
+			climate.minTemp(400)
+		},
+		faunaData => {
+			faunaData.solidGround(true)
+		},
+		"tfg:dragonfly")
+	
+	event.fauna(
+		climate => {
+			climate.minTemp(400)
+		},
+		faunaData => {
+			faunaData.solidGround(true)
+		},
+		"tfg:silk_moth")
 }
