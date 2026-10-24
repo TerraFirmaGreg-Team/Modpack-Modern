@@ -53,7 +53,7 @@
 										"from_value": 0.0,
 										"from_y": -64,
 										"to_value": 1.0,
-										"to_y": -40
+										"to_y": -50
 									},
 									"argument2": {
 										"type": "minecraft:add",
@@ -129,7 +129,7 @@
 																				"type": "minecraft:clamp",
 																				"input": {
 																					"type": "minecraft:add",
-																					"argument1": 1.5,
+																					"argument1": 10,
 																					"argument2": {
 																						"type": "minecraft:mul",
 																						"argument1": -0.64,
@@ -137,7 +137,7 @@
 																					}
 																				},
 																				"max": 0.5,
-																				"min": 0.0
+																				"min": -0.5
 																			}
 																		}
 																	},
@@ -193,7 +193,7 @@
 					"from_value": 0.0,
 					"from_y": -64,
 					"to_value": 1.0,
-					"to_y": -40
+					"to_y": -50
 				},
 				"argument2": {
 					"type": "minecraft:add",
