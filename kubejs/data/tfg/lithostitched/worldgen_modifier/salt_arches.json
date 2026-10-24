@@ -1,0 +1,22 @@
+{
+	"type": "lithostitched:set_structure_spawn_condition",
+	"structures": [
+		"tfg:venus/salt_arches"
+	],
+	"spawn_condition": {
+		"type": "lithostitched:grid",
+		"condition": {
+			"type": "lithostitched:in_biome",
+			"biomes": [
+				"tfg:venus/stromatolite_beach",
+				"tfg:venus/sulfuric_ravine",
+				"tfg:venus/fumaroles",
+				"tfg:venus/fractured_pools",
+				"tfg:venus/geysers"
+			]
+		},
+		"radius": 14,
+		"distance_between_points": 7,
+		"allowed_count": 0
+	}
+}
