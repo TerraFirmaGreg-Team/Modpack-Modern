@@ -4,8 +4,6 @@
 const $HeightMap = Java.loadClass("net.minecraft.world.level.levelgen.Heightmap")
 const $ForestType = Java.loadClass("net.dries007.tfc.world.chunkdata.ForestType")
 
-const ROCK_LAYER_HEIGHT = 40;
-
 // Precompute the aquifer heights as constants as this is not used
 let EMPTY_AQUIFER = [];
 let aquifer_i = 0;
@@ -38,10 +36,6 @@ let forestWeirdnessNoise = TFC.misc.newOpenSimplex2D(3210378120)
 	.spread(0.0025)
 	.map(i => 1.1 * Math.abs(i))
 	.clamped(0, 1)
-let depthRockNoise = TFC.misc.newOpenSimplex2D(432746324)
-	.octaves(2)
-	.spread(0.03)
-	.scaled(-10, 10)
 
 //let cellularNoise = TFC.misc.cellular3D(678965856);
 
@@ -57,21 +51,8 @@ let forestLayerNoise = TFC.misc.newOpenSimplex2D(3210378120)
 	.spread(0.005)
 	.scaled(0, 1)
 
-// Rock layer
-const rockLayer = TFC.misc.uniformLayeredArea(413567326);
-for (let i = 0; i < 3; i++) {
-	rockLayer.zoom(true, 19763144126).smooth(79784123632);
-}
-for (let i = 0; i < 6; i++) {
-	rockLayer.zoom(true, 451364589723);
-}
-rockLayer.smooth(71214856214).zoom(true, 854126548632).smooth(145256147896)
-
-
 
 // Beneath
-
-const BENEATH_ROCK_LAYER_HEIGHT = 38;
 
 let emptyNetherHeights = [];
 for (let z = 0; z < 16; z++) {
@@ -90,11 +71,7 @@ TFCEvents.createChunkDataProvider('nether', event => {
 		data.generateFull(emptyNetherHeights, EMPTY_AQUIFER);
 	});
 
-	event.rocks((x, y, z, surfaceY, cache, rockSettings) => {
-		let skew = y / 6;
-		return rockSettings.sampleAtLayer(rockLayer.getAt(x + skew, z + skew),
-			(global.NETHER_HEIGHT - y + depthRockNoise.noise(x + skew, z + skew)) / BENEATH_ROCK_LAYER_HEIGHT);
-	});
+	event.rocks(TFGRockGetters.Beneath);
 });
 
 
@@ -116,9 +93,7 @@ TFCEvents.createChunkDataProvider('moon', event => {
 	event.full((data, chunk) => {
 		data.generateFull(heights, EMPTY_AQUIFER)
 	})
-	event.rocks((x, y, z, surfaceY, cache, rockSettings) => {
-		return rockSettings.sampleAtLayer(0, 0)
-	})
+	event.rocks(TFGRockGetters.Moon)
 })
 
 
@@ -166,11 +141,7 @@ TFCEvents.createChunkDataProvider('mars', event => {
 		data.generateFull(heights, EMPTY_AQUIFER);
 	});
 
-	event.rocks((x, y, z, surfaceY, cache, rockSettings) => {
-		let skew = y / 8;
-		return rockSettings.sampleAtLayer(rockLayer.getAt(x + skew, z + skew),
-			(surfaceY - y + depthRockNoise.noise(x + skew, z + skew)) / ROCK_LAYER_HEIGHT);
-	});
+	event.rocks(TFGRockGetters.Mars);
 })
 
 
@@ -220,11 +191,7 @@ TFCEvents.createChunkDataProvider('venus', event => {
 		data.generateFull(heights, EMPTY_AQUIFER);
 	});
 
-	event.rocks((x, y, z, surfaceY, cache, rockSettings) => {
-		let skew = y / 6;
-		return rockSettings.sampleAtLayer(rockLayer.getAt(x + skew, z + skew),
-			(surfaceY - y + depthRockNoise.noise(x + skew, z + skew)) / ROCK_LAYER_HEIGHT);
-	});
+	event.rocks(TFGRockGetters.Venus);
 })
 
 
@@ -272,11 +239,7 @@ TFCEvents.createChunkDataProvider('glacio', event => {
 		data.generateFull(heights, EMPTY_AQUIFER);
 	});
 
-	event.rocks((x, y, z, surfaceY, cache, rockSettings) => {
-		let skew = y / 8;
-		return rockSettings.sampleAtLayer(rockLayer.getAt(x + skew, z + skew),
-			(surfaceY - y + depthRockNoise.noise(x + skew, z + skew)) / ROCK_LAYER_HEIGHT);
-	});
+	event.rocks(TFGRockGetters.Europa);
 })
 
 /**

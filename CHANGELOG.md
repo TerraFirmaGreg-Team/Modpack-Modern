@@ -3,10 +3,28 @@
 ## Unreleased
 ### Changes
 - Add recipes to start the Garnet-Yttrium line with Crushed Ores in a CR @TomPlop
-- Auto-Complete Card now requires a Paper rather that a Crafting Card @TomPlop
+- Auto-Complete Card now requires Paper rather than a Crafting Card @TomPlop
+- Updated the Preservation entry of the field guide with more info about Smoking (#5188) @WiseMack
+- Astikor Carts and the Paving Cart are now immune to cacti (#5189) @Pyritie
+- Added a config option (tfg-server.toml) to enable announcing some quests in chat, off by default (#5203) @Pyritie
+- Drastically improved chunk generation speed in the Beneath, Moon, and Mars @Mqrius @Pyritie
 ### Bug fixes
 - Only Turbine Rotors can be inserted in Exhaust Vent @TomPlop
-- The Large Turbine efficiency can get under 100%, sorry SiC-SiC you were goated and no one knew @TomPlop 
+- Fixed Large Turbine efficiency having a minimum of 100%, sorry SiC-SiC you were goated and no one knew @TomPlop 
+- Fixed firestarters not working when Vivecraft is installed (backport of a TFC fix) (#5113)
+- Fixed being able to cast vanadium steel, ultimet, boron carbide, and tungsten carbide tools and items with TFC molds @Pyritie
+- Fixed not being able to use GT concrete in Domum Ornamentum recipes @Pyritie
+- Fixed some recipes missing from EMI @evanbones
+### Mods
+#### TerraFirmaCraft
+- Prevent double high blocks from breaking bedrock.
+- Fix an issue with squid spawning.
+- Fix issues with berry bushes.
+- Fix a rare crash with chunk data.
+- Skip knife damage when scraping makes no progress.
+- Add Jade tooltip for scraping recipes.
+- Fix client desync for loom progress.
+- Misc Entity and AI fixes.
 
 ## [0.13.15] - 20-10-2026
 Be sure to check the previous alpha changelogs, as there are a lot of changes: [0.13.11](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.11), [0.13.12](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.12), [0.13.13](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.13)
