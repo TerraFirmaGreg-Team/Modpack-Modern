@@ -23,6 +23,8 @@
 - Fixed being able to cast vanadium steel, ultimet, boron carbide, and tungsten carbide tools and items with TFC molds @Pyritie
 - Fixed not being able to use GT concrete in Domum Ornamentum recipes @Pyritie
 - Fixed some recipes missing from EMI (#5181) @evanbones
+- Mixing Bio-Diesel with 2-EHN now gives the proper amount of Biodisel @Jeuvke
+- Crafting the SiC-SiC Turbine Rotor is now three times cheaper @TomPlop
 ### Mods
 #### TerraFirmaCraft
 - Prevent double high blocks from breaking bedrock.
