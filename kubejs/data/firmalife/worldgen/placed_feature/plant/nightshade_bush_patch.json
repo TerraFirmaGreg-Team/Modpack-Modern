@@ -1,0 +1,21 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"feature": "firmalife:plant/nightshade_bush_patch",
+	"placement": [
+		{
+			"type": "tfc:climate",
+			"min_temperature": 0,
+			"max_temperature": 24,
+			"min_rainfall": 200,
+			"max_rainfall": 400,
+			"min_forest": "sparse"
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 30
+		}
+	]
+}

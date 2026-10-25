@@ -1,136 +1,136 @@
 {
-    "name": "Decay & Preservation",
+    "name": "Гниение &  сохранение",
     "category": "tfg:cooking",
     "icon": "tfclunchbox:lunchbox",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:cooking/decay#decay)Introduction$()$(li2)$(l:cooking/decay#calculation)Calculating Decay$()$(li2)$(l:cooking/decay#table)Modifier Table$()$(li)$(bold)$(l:cooking/decay#vessels)Vessels$()$(li)$(bold)$(l:cooking/decay#cooking)Cooking$()$(li)$(bold)$(l:cooking/decay#smoking)Smoking$()$(li)$(bold)$(l:cooking/decay#salting)Salting$()$(li)$(bold)$(l:cooking/decay#vinegar)Pickling$()$(li)$(bold)$(l:cooking/decay#drying)Drying$()"
+            "text": "$(li)$(bold)$(l:cooking/decay#decay)Введение$()$(li2)$(l:cooking/decay#calculation)Расчет гниения$()$(li2)$(l:cooking/decay#table)Таблица модификаторов$()$(li)$(bold)$(l:cooking/decay#vessels)Сосуды$()$(li)$(bold)$(l:cooking/decay#cooking)Приготовление$()$(li)$(bold)$(l:cooking/decay#smoking)Копчение$()$(li)$(bold)$(l:cooking/decay#salting)Засолка$()$(li)$(bold)$(l:cooking/decay#vinegar)Маринование$()$(li)$(bold)$(l:cooking/decay#drying)Сушка$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:cooking/decay#oven_baked)Oven Baking$()$(li)$(bold)$(l:cooking/decay#cellar)Cellars$()$(li2)$(l:cooking/decay#shelf)Cellar Storage$()$(li)$(bold)$(l:cooking/decay#lunch_box)Lunch Boxes$()$(li)$(bold)$(l:cooking/decay#refrigerator)Refrigerators$()$(li)$(bold)$(l:cooking/decay#freeze_dry)Freeze Drying$()$(li)$(bold)$(l:cooking/decay#pest)Pest Control$()$(li)$(bold)$(l:cooking/decay#cutting)Cutting off decay$()"
+            "text": "$(li)$(bold)$(l:cooking/decay#oven_baked)Выпечка в духовке$()$(li)$(bold)$(l:cooking/decay#cellar)Подвалы$()$(li2)$(l:cooking/decay#shelf)Хранение в подвале$()$(li)$(bold)$(l:cooking/decay#lunch_box)Ланч-боксы$()$(li)$(bold)$(l:cooking/decay#refrigerator)Холодильники$()$(li)$(bold)$(l:cooking/decay#freeze_dry)Сублимационная сушка$()$(li)$(bold)$(l:cooking/decay#pest)Борьба с вредителями$()$(li)$(bold)$(l:cooking/decay#cutting)Остановка гниения$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "decay",
-            "title": "Decay",
-            "text": "In TerraFirmaCraft, no food will last forever! Food will $(thing)expire$() over time, turning rotten. Rotten food will not restore any hunger, has the potential to give you debuff effects such as $(thing)Hunger$() or $(thing)Poison$(), and cannot be used in meals!$(br2)Fortunately, there are a number of ways to make your food last longer by $(thing)Preserving$() it."
+            "title": "Гниение",
+            "text": "В TerraFirmaCraft еда не может храниться вечно! Со временем еда $(thing)истекает$(), то есть портится. Порченая еда не утоляет голод, может наложить на вас такие негативные эффекты, как $(thing)Голод$() или $(thing)Отравление$(), и не может быть использована в приготовлении блюд!$(br2)К счастью, есть несколько способов продлить срок хранения еды, если ее $(thing)законсервировать$()."
         },
         {
             "type": "patchouli:text",
-            "text": "When you hover over a piece of food, you will see a tooltip which shows how long the food has until it will rot. It might look something like:$(br2)$(bold)$(2)Expires on: 5:30 July 5, 1000 (in 5 day(s))$()$(br2)By using various preservation mechanics, that date can be extended, giving you more time before your food roots. Most preservation traits even stack."
+            "text": "Когда вы наводите курсор на продукт питания, появляется подсказка, показывающая, сколько времени осталось до его порчи. Она может выглядеть так: $(br2)$(bold)$(2)Срок годности истекает: 5:30, 5 июля 1000 года (in 5 day(s))$()$(br2) Используя различные способы консервации, можно продлить этот срок и получить больше времени до того, как пища испортится. Большинство свойств, замедляющих порчу, даже суммируются при совместном использовании."
         },
         {
             "type": "patchouli:text",
             "anchor": "calculation",
-            "title": "Calculating Decay",
-            "text": "When a food item is created in a world it is marked with a creation date time stamp internally. $(thing)TFC$() calculates the spoil rate by referencing that time stamp and the food's inherent decay modifier. Any preservation traits are added on top to shift the creation date back, allowing the item to last longer.$(br)Decay modifiers are a value from 0 to ∞. When 0, the food lasts forever, when ∞ the food spoils instantly. Therefore, the lower the modifier the better."
+            "title": "Подсчёт гниения",
+            "text": "Когда в мире создаётся какой-либо продукт питания, он получает внутреннюю метку с указанием даты создания. $(thing)TFC$() рассчитывает скорость порчи, используя эту метку и модификатор распада продукта. Любые свойства, продлевающие срок хранения, сдвигают дату создания назад, благодаря чему продукт хранится дольше.$(br)Модификаторы распада имеют значения от 0 до ∞. При значении 0 продукт хранится вечно, при значении ∞ — портится мгновенно. Таким образом, чем ниже модификатор, тем лучше."
         },
         {
             "type": "patchouli:text",
-            "text": "To calculate the new spoil time when applying preservation traits you can use the formula: $(2)$(o)New Spoil Days = Spoil Days / Preservation Modifier$() rounded up. Stacking preservation traits is calculated multiplicatively like so: $(2)$(o)NSD = SD / (PM1 * PM2 * ...)$() which means that stacking traits exponentially increases decay time. A table of base preservation modifiers is available on the next page and each trait will be referenced in their own sections."
+            "text": "Чтобы рассчитать новое время порчи при применении свойств сохранения, можно использовать формулу: $(2)$(o)Новые дни порчи = Дни порчи / Модификатор сохранения$() с округлением в большую сторону. Свойства сохранения суммируются мультипликативно: $(2)$(o) NSD = SD / (PM1 * PM2 * ...)$(), то есть при суммировании свойств время порчи увеличивается экспоненциально. Таблица базовых модификаторов сохранения доступна на следующей странице, а каждое свойство описано в отдельном разделе."
         },
         {
             "type": "tfg:table",
             "anchor": "table",
             "strings": [
                 {
-                    "text": "Trait",
+                    "text": "Черты",
                     "bold": true
                 },
                 {
-                    "text": "Modifier",
+                    "text": "Модификаторы",
                     "bold": true
                 },
                 {
-                    "text": "Oven Baked"
+                    "text": "Запекание в печи"
                 },
                 {
                     "text": "0.900"
                 },
                 {
-                    "text": "Grilled"
+                    "text": "Жаренное"
                 },
                 {
                     "text": "0.800"
                 },
                 {
-                    "text": "Smoked"
+                    "text": "копчённое"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Salted"
+                    "text": "засаленное"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Pickled"
+                    "text": "Маринованное"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Preserved"
+                    "text": "Запасённое"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Wild"
+                    "text": "Дикий"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Dried"
+                    "text": "Высушенное"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Cooled"
+                    "text": "Приготовленное"
                 },
                 {
                     "text": "0.300"
                 },
                 {
-                    "text": "Shelved"
+                    "text": "Откложенное"
                 },
                 {
                     "text": "0.400 - 0.350 - 0.250"
                 },
                 {
-                    "text": "Hung"
+                    "text": "Подвешенно"
                 },
                 {
                     "text": "0.350 - 0.300 - 0.250"
                 },
                 {
-                    "text": "Refrigerating"
+                    "text": "Замороденно"
                 },
                 {
                     "text": "0.125"
                 },
                 {
-                    "text": "Preserved in Vinegar"
+                    "text": "Консервированный в уксусе"
                 },
                 {
                     "text": "0.100"
                 },
                 {
-                    "text": "Cryodessicated"
+                    "text": "Крио-дессицированный"
                 },
                 {
                     "text": "0.020"
                 }
             ],
             "text": "",
-            "title": "Preservation Traits: Worst to Best",
+            "title": "Характеристики сохранности: от худших к лучшим",
             "legend": [],
             "columns": 1,
             "first_column_width": 118,
@@ -147,7 +147,7 @@
         {
             "type": "patchouli:text",
             "anchor": "vessels",
-            "text": "One of the earliest ways to preserve food is to use a $(thing)Vessel$(). $(thing)Large Vessels$() are a block which can store up to nine items, and when $(thing)sealed$() the items inside will gain the $(5)$(bold)Preserved$() trait with a modifier of 0.5.$(br2)$(thing)Small Vessels$() are an item which can store up to four other items, and will also apply the $(5)$(bold)Preserved$() trait to their contents.",
+            "text": "Один из самых ранних способов сохранения продуктов — использование $(thing)сосуда$(). $(thing)Большие сосуды$() — это блоки, в которых можно хранить до девяти предметов. Если их $(thing)запечатать$(), предметы внутри получат свойство $(5)$(bold)сохранности$() с модификатором 0,5.$(br2)$(thing)Маленькие сосуды$() — это предметы, в которых можно хранить до четырёх других предметов. Они также наделяют содержимое свойством $(5)$(bold)сохранности$().",
             "title": "Сосуды"
         },
         {
@@ -173,19 +173,19 @@
         {
             "type": "patchouli:text",
             "anchor": "cooking",
-            "text": "One other way to easily preserve certain types of food is to cook them. $(thing)Meats$() will all expire slower when they are cooked than when they are raw.$(br2)Certain devices that heat very hot, such as a $(l:craftsmanship/charcoal_forge)Charcoal Forge$() or a $(l:craftsmanship/crucible)Crucible$() are $(bold)bad$() for cooking food, which will make them expire faster!$(br)They give the $(c)$(bold)Burnt to a Crisp!$() trait with a modifier of 2.5.",
+            "text": "Еще один простой способ сохранить некоторые продукты — подвергнуть их термической обработке. $(thing)Мясо$() после приготовления портится медленнее, чем в сыром виде.$(br2)Некоторые устройства с очень высокой температурой нагрева, такие как $(l:craftsmanship/charcoal_forge)Угольная кузница$() или $(l:craftsmanship/crucible)Тигель$(), $(bold)не подходят$() для приготовления пищи, из-за чего она портится быстрее!$(br)Они дают продукту свойство $(c)$(bold)Подгорело до хрустящей корочки!$() с модификатором 2,5.",
             "title": "Готовка"
         },
         {
             "type": "tfg:heat_recipe",
             "recipe": "tfc:heating/mutton",
-            "text": "Instead, a $(l:cooking/cooking_methods#firepit)Firepit$() or a $(l:cooking/cooking_methods#grill)Grill$() can even provide a buff for using it! For example, cooking mutton (pictured above) in a $(thing)Firepit$() will increase its lifetime by about +42%, and cooking in a $(thing)Grill$() will give the $(5)$(bold)Wood Grilled$() trait with a modifier of 0.8."
+            "text": "А вот $(l:cooking/cooking_methods#firepit)костёр$() или $(l:cooking/cooking_methods#grill)гриль$() могут даже дать бонус за его использование! Например, приготовление баранины (на фото выше) на $(thing)костре$() увеличит срок её хранения примерно на +42%, а приготовление на $(thing)гриле$() даст бонус $(5)$(bold)приготовлено на гриле$() с модификатором 0,8."
         },
         {
             "type": "patchouli:text",
             "anchor": "smoking",
-            "title": "Smoking",
-            "text": "Smoking is used to preserve $(thing)Meat$() and $(l:cooking/cheese)Cheese$() with a modifier of 0.7. To smoke meat, it must have first been $(thing)Brined$() by sealing it in a $(thing)Barrel$() with $(thing)Brine$(). Cheese does not have this requirement.$(br)To start smoking, add an item to wool yarn that is within four blocks above a firepit. The string should begin to generate some smoke if it is working.$(br)Note: The firepit may only be burned with $(thing)Logs$()!"
+            "title": "Копчённое",
+            "text": "Копчение используется для сохранения $(thing)мяса$() и $(l:cooking/cheese)сыра$() с коэффициентом сохранности 0,7. Чтобы закоптить мясо, его нужно сначала $(thing)засолить$(), поместив в $(thing)бочку$() с $(thing)рассолом$(). Для сыра это требование не требуется.$(br)Чтобы начать копчение, добавьте предмет в шерстяную пряжу, которая находится в пределах четырех блоков над костром. Если все сделано правильно, из нити начнет идти дым.$(br)Примечание: в костре можно сжигать только $(thing)поленья$()!"
         },
         {
             "type": "patchouli:multiblock",
@@ -210,13 +210,13 @@
                     "Y": "tfc:firepit[lit=true]"
                 }
             },
-            "text": "Wool yarn is used to hang items for $(thing)Smoking$(). Supporting blocks are required on each side. $(item)$(k:key.use)$() on the yarn with an item to store up to 8 items for smoking.",
+            "text": "Шерстяная пряжа используется для подвешивания предметов для $(thing)Smoking$(). С каждой стороны необходимы опорные блоки. $(item)$(k:key.use)$() на пряже можно разместить до 8 предметов для курения.",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
             "anchor": "salting",
-            "text": "$(thing)Salting$() is a way to make meat last longer. To salt meat, it must be crafted with $(thing)Salt$() in a crafting grid. Only raw meat can be salted. Afterward, cooking or otherwise preserving the meat does not take away the salted property.$(7)$(bold)Salted$() food gain a modifier of 0.5.",
+            "text": "$(thing)Засолка$() — это способ продлить срок хранения мяса. Чтобы засолить мясо, его нужно соединить с $(thing)солью$() в сетке крафта. Засолить можно только сырое мясо. После засолки приготовление или иная консервация мяса не влияет на его солёность.$(7)$(bold)Засоленные$() продукты получают модификатор 0,5.",
             "title": "Засаливание"
         },
         {
@@ -235,44 +235,44 @@
                 }
             },
             "name": "Самосадочная соль",
-            "text": "Salt can be found naturally in forests in the form of salt licks, or ground from salt ores like halite.",
+            "text": "Соль в природе можно найти в лесах в виде солонцов или в виде соли, добываемой из соляных руд, таких как галит.",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
             "anchor": "vinegar",
-            "title": "Vinegar Preservation",
-            "text": "$(thing)Vinegar Preservation$() is a way of making fruits, veggies, and meat last longer. To preserve food in vinegar it must first be $(thing)Pickled$() in $(thing)Brine$(). Once food is pickled, it can be sealed in a Barrel of Vinegar. If there is 125mB of Vinegar per pickled food item, the food will last longer. $(7)$(bold)Pickled$() food gain a modifier of 0.5 while $(7)$(bold)Submerged in Vinegar$() food gain a modifier of 0.1."
+            "title": "Консервация в уксусе",
+            "text": "$(thing)Консервация в уксусе$() — это способ продлить срок хранения фруктов, овощей и мяса. Чтобы законсервировать продукты в уксусе, их нужно сначала $(thing)замариновать$() в $(thing)рассоле$(). После маринования продукты можно поместить в бочку с уксусом. Если на каждый маринованный продукт приходится 125 МБ уксуса, срок его хранения увеличивается. $(7)$(bold)Маринованные$() продукты получают модификатор 0,5, а $(7)$(bold)заправленные уксусом$() продукты — модификатор 0,1."
         },
         {
             "type": "patchouli:text",
             "anchor": "drying",
-            "title": "Drying",
-            "text": "The $(thing)Drying Mat$() is used to dry items. It is made with $(thing)Fruit Leaves$(), which are obtained from breaking the leaves of $(thing)Fruit Trees$(). To use the drying mat, place it out in the sun and add an item to it with $(item)$(k:key.use)$(). If it rains, the drying process must start over. Some food items―Like fruits―Will gain the $(7)$(bold)Dried$() trait which gives a modifier of 0.8."
+            "title": "Сушка",
+            "text": "Сушка на $(thing)сушилке$() используется для высушивания предметов. Она изготавливается из $(thing)листьев фруктовых деревьев$(), которые можно получить, сломав листья $(thing)фруктовых деревьев$(). Чтобы воспользоваться сушивкой, положите её на солнце и поместите на неё предмет с помощью $(item)$(k:key.use)$(). Если пойдёт дождь, процесс сушки придётся начать заново. Некоторые продукты питания, например фрукты, приобретают свойство $(7)$(bold)высушенные$(), которое даёт модификатор 0,8."
         },
         {
             "type": "patchouli:text",
-            "text": "The solar drier functions the same as the drying mat, but 12x as fast. Both can be automated by pushing a piston head against its side. Dropping an item onto a drying mat will place it on the mat."
+            "text": "Солнечная сушилка работает так же, как коврик для сушки, но в 12 раз быстрее. Обе сушилки можно автоматизировать, прижав к ним поршень. Если бросить предмет на коврик для сушки, он окажется на коврике."
         },
         {
             "type": "patchouli:text",
             "anchor": "oven_baked",
-            "title": "Oven Baked",
-            "text": "Baking food items in a $(l:cooking/cooking_methods#top_oven)Top Oven$() is the second-best way to preserve your food items through cooking as it gives the $(7)$(bold)Oven Baked$() trait with a modifier of 0.9."
+            "title": "Запеченный в печи",
+            "text": "Запекание продуктов в $(l:cooking/cooking_methods#top_oven)верхней духовке$() — второй по эффективности способ сохранить продукты при приготовлении, так как он дает признак $(7)$(bold)запечено в духовке$() с модификатором 0,9."
         },
         {
             "type": "patchouli:text",
             "anchor": "cellar",
             "title": "Погреб",
-            "text": "The $(thing)Cellar$() is a multiblock device controlled by a $(item)Climate Station$(). The Cellar multiblock must be fully enclosed by $(thing)$(t:#firmalife:cellar_insulation)Sealed Bricks$() on all sides. The Climate Station must be placed on the first level of the cellar, touching a wall. Activate the climate station by $(item)$(k:key.use)$() it. If you update the structure in any way you will need to reactivate the climate station.$(br)The maximum internal volume of a cellar is 31x31x31 blocks."
+            "text": "Подвал(чик) $(thing)Cellar$() представляет собой многоблочное устройство, управляемое $(item)климатической станцией$(). Многоблочный подвал должен быть полностью окружен со всех сторон $(thing)$(t:#firmalife:cellar_insulation)герметичными кирпичами$(). Климатическая станция должна быть размещена на первом уровне подвала вплотную к стене. Активируйте климатическую станцию, нажав на нее $(item)$(k:key.use)$(). Если вы каким-либо образом измените конструкцию, вам потребуется снова активировать климатическую станцию.$(br)Максимальный внутренний объем подвала — 31x31x31 блок."
         },
         {
             "type": "patchouli:text",
-            "text": "The cellar is used for food preservation and $(l:cooking/cheese#cheese_wheel)Aging Cheese$() by using $(l:cooking/decay#shelf)Food Shelves$() and $(l:cooking/decay#shelf)Hangers$() to hold food items or by placing cheese on the ground or $(thing)Barrel Racks$().$(br2)The cellar performs better in $(l:the_world/climate#temperature)Colder Environments$().$(li)$(2)Temp >= 0°C:$() Shelves 0.4, Hangers 0.35$(li)$(2)Temp < 0°C:$() Shelves 0.35, Hangers 0.3$(li)$(2)Temp < -12°C:$() Shelves 0.25, Hangers 0.25"
+            "text": "Подвал используется для хранения продуктов и $(l:cooking/cheese#cheese_wheel)вызревания сыра$() с помощью $(l:cooking/decay#shelf)полок для продуктов$() и $(l:cooking/decay#shelf)вешалок$() для хранения продуктов, а также путем размещения сыра на полу или на $(thing)стеллажах для бочек$().$(br2)Погреб лучше работает в $(l:the_world/climate#temperature)более холодных регионах$().$(li)$(2)Температура >= 0 °C:$() полки 0,4, вешалки 0,35$(li)$(2)Температура < 0 °C:$() полки 0,35, вешалки 0,3$(li)$(2)Температура < -12 °C:$() полки 0,25, вешалки 0,25"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "An example cellar structure.",
+            "text": "Пример конструкции подвала.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -439,44 +439,44 @@
             "anchor": "shelf",
             "title": "Хранилища для подвала",
             "item": "tag:firmalife:food_shelves,tag:firmalife:hangers",
-            "text": "$(item)Food shelves$() and $(item)Hangers$() can contain a full stack of one food item. Adding and removing the item can be done with $(item)$(k:key.use)$() or $(item)$(k:key.sneak) + $(k:key.use)$() for full stacks. Items in valid food shelves and hangers receive a decay modifier that is better than vessels and increases with declining $(thing)Average Temperature$()."
+            "text": "$(item)Полки для продуктов$() и $(item)вешалки$() могут вмещать полный набор одного продукта. Добавить или убрать продукт можно с помощью $(item)$(k:key.use)$() или $(item)$(k:key.sneak) + $(k:key.use)$() для полных наборов. Продукты на полках и вешалках получают модификатор сохранности, который лучше, чем у сосудов, и увеличивается при снижении $(thing)средней температуры$()."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "lunch_box",
-            "title": "Lunch Boxes",
+            "title": "Коробки для завтрака",
             "item": "tfclunchbox:lunchbox,tfclunchbox:cooling_lunchbox,tfclunchbox:electric_lunchbox",
-            "text": "Lunch boxes provide a convenient method to transport and consume food items. The basic lunchbox provides the $(5)$(bold)Preserved$() trait while the $(item)Cooling$() and $(item)Electric Lunchboxes$() give the $(9)$(bold)Cooled$() trait with a modifier of 0.3.$(br2)Cooling lunchboxes consume $(item)Ice$() to preserve food, while the electric lunchbox consumes $(2)EU$() energy."
+            "text": "Ланч-боксы — удобный способ транспортировки и употребления продуктов питания. Обычный ланч-бокс обладает свойством $(5)$(bold)сохранности$(), а $(item)охлаждающие$() и $(item)электрические ланч-боксы$() дают свойство $(9)$(bold)охлаждения$() с модификатором 0,3.$(br2)Охлаждающие ланч-боксы расходуют $(item)лед$() для сохранения продуктов, а электрический ланч-бокс расходует $(2)электроэнергии$()."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "refrigerator",
-            "title": "Refrigerators",
+            "title": "Холодильник",
             "item": "tfg:mv_food_refrigerator,tfg:hv_food_refrigerator,tfg:ev_food_refrigerator,tfg:iv_food_refrigerator",
-            "text": "Refrigerators are added by $(tfg_short) and consume $(2)EU$() to provide the $(3)$(bold)Refrigerating$() trait with a modifier of 0.125.$(br)Higher tiers of the fridge do not affect the preservation buff―only the storage space available. Fridges can also combine food stacks by merging expiration dates."
+            "text": "Холодильники добавляются с помощью $(tfg_short) и потребляют $(2)EU$(), чтобы обеспечить свойство $(3)$(bold)Охлаждение$() с модификатором 0,125.$(br) Более высокие уровни холодильника не влияют на бонус к сроку хранения, а только на объем доступного места для хранения. Холодильники также могут объединять запасы продуктов, сопоставляя сроки годности."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "freeze_dry",
-            "title": "Freeze Drying",
+            "title": "Сублимационная сушка",
             "item": "tfg:food/meal_bag,tfg:food/freeze_dried_fruit,tfg:food/calorie_paste",
-            "text": "$(tfg_short) adds the ability to freeze-dry select food items in $(item)Food Processors$() to greatly increase shelf life. Freeze drying gives the $(7)$(bold)Cryodessicated$() trait with a modifier of 0.02."
+            "text": "$(tfg_short) Добавляет возможность сублимационной сушки некоторых продуктов в $(item)Food Processors$(), что значительно увеличивает срок их хранения. Сублимационная сушка дает свойство $(7)$(bold)Cryodessicated$() с модификатором 0,02."
         },
         {
             "type": "patchouli:text",
             "anchor": "pest",
-            "title": "Pests",
-            "text": "Food that is left sitting in chests can attract $(thing)Rats$(), so remember to store food properly in vessels, cellars, or fridges. Rats are able to open containers and eat the food out of them. You will be alerted to a rat's presence by the message $(thing)'This container has a foul smell'$(). It is important to note that unsealing and resealing a large vessel before you leave the screen will never attract pests."
+            "title": "Вредители",
+            "text": "Еда, оставленная в сундуках, может привлечь $(thing)крыс$(), поэтому не забывайте правильно хранить продукты в сосудах, подвалах или холодильниках. Крысы могут открывать контейнеры и поедать их содержимое. О присутствии крыс вас предупредит сообщение $(thing)'В этом контейнере неприятный запах'$(). Важно отметить, что если вы распечатаете и снова запечатаете большой сосуд перед тем, как выйти из игры, это не привлечёт вредителей."
         },
         {
             "type": "patchouli:text",
             "anchor": "cutting",
-            "title": "Cutting off",
-            "text": "Lastly, you can cut off the decayed part of food by picking up a $(item)knife$() with your cursor and $(item)right-clicking$() a partially decayed food item stack in your inventory.$(br2)This will reset the decay while losing some of the item stack, proportional to how decayed it was."
+            "title": "Убрать лишнее",
+            "text": "Наконец, вы можете отрезать подгнившую часть продукта, взяв в руки $(item)knife$() и $(item)щелкнув правой кнопкой мыши$() по частично подгнившему продукту в инвентаре. $(br2) Это остановит процесс гниения, но вы потеряете часть продукта, пропорционально степени его разложения."
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Читать далее",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/food_and_water",

@@ -1,52 +1,52 @@
 {
-	"name": "Create Logistics",
+	"name": "Create Логистика",
 	"category": "tfg:logistics",
 	"icon": "create:cardboard_package_12x12",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "Contents",
+			"title": "Содержимое",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:logistics/create#packages)Packages$()$(li2)$(l:logistics/create#packager)Packager$()$(li2)$(l:logistics/create#frogport)Frogports$()$(li2)$(l:logistics/create#package_filter)Package Filter$()$(li2)$(l:logistics/create#repackager)Re-Packager$()$(li2)$(l:logistics/create#unpackager)Unpackager$()$(li2)$(l:logistics/create#clipboard)Clipboard and Hand Pointer$()$(li2)$(l:logistics/create#postbox)Postbox$()$(li2)$(l:logistics/create#package_tips)Tips$()"
+			"text": "$(li)$(bold)$(l:logistics/create#packages) Коробки\n$()$(li2)$(l:logistics/create#packager)Упаковщик\n$()$(li2)$(l:logistics/create#frogport)Квакопорты\n$()$(li2)$(l:logistics/create#package_filter) Фильтр коробок \n$()$(li2)$(l:logistics/create#repackager) Переупаковщик\n$()$(li2)$(l:logistics/create#unpackager)Распаковщик\n$()$(li2)$(l:logistics/create#clipboard)Планшет и указатель руки\n$()$(li2)$(l:logistics/create#postbox)Почтовый ящик\n$()$(li2)$(l:logistics/create#package_tips)Советы$()"
 		},
 		{
 			"type": "patchouli:text",
 			"title": " ",
-			"text": "$(br)$(li)$(bold)$(l:logistics/create#high_logistics)High Logistics$()$(li2)$(l:logistics/create#rose_quartz)Rose Quartz$()$(li2)$(l:logistics/create#exquisite)Transmitter$()$(li2)$(l:logistics/create#stock_link)Stock Link$()$(li2)$(l:logistics/create#stock_ticker)Stock Ticker$()$(li2)$(l:logistics/create#stock_bridge)AE2 Stock Bridge$()$(li2)$(l:logistics/create#requester)Redstone Requester$()$(li2)$(l:logistics/create#table_cloths)Table Cloths$()$(li2)$(l:logistics/create#factory_gauge)Factory Gauge$()"
+			"text": "$(br)$(li)$(bold)$(l:logistics/create#high_logistics)High Logistics\n$()$(li2)$(l:logistics/create#rose_quartz)Rose Quartz\n$()$(li2)$(l:logistics/create#exquisite)Transmitter\n$()$(li2)$(l:logistics/create#stock_link) Складской передатчик\n$()$(li2)$(l:logistics/create#stock_ticker) Складской контроллер\nr$()$(li2)$(l:logistics/create#stock_bridge)AE2 складской контроллер\n$()$(li2)$(l:logistics/create#requester)Запросчик редстоуна\n$()$(li2)$(l:logistics/create#table_cloths) Скатерти\n$()$(li2)$(l:logistics/create#factory_gauge)Фабричный контроллер $()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Made it to the Steam Age? $(thing)Create Logistics$() will improve your item transportation and storage capabilities significantly. Later on in $(7)LV$() you'll even be able to to automatically order specific items or route them around your base! As this is $(thing)Create$(), this means $(thing)Pondering the machines$() (hold $(item)$(k:key.ponder.ponder)$()) will be your best source of information aside from here, so be sure to look through them too."
+			"text": "Дожили до эпохи Steamа? $(thing)ЛОгистика Create$() значительно улучшит ваши возможности по транспортировке и хранению предметов. Позже, на $(7)LV$(), вы даже сможете автоматически заказывать определенные предметы или распределять их по своей базе! Поскольку это $(thing)Create$(), это означает, что $(thing) есть Размышления$() (держите $(item)$(k:key.ponder.ponder)$()) станут для вас лучшим источником информации, так что не забывайте заглядывать и туда."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Packages",
+			"title": "коробки",
 			"anchor": "packages",
 			"item": "create:cardboard_package_12x10,create:cardboard_package_10x8,create:cardboard_package_10x12,create:cardboard_package_12x12",
-			"text": "Everything to do with Create Logistics revolves around $(item)Packages$(). Each package can contain 9 slots' worth of items.$(br2)Packages also have an $(thing)address$(), which determines where the package should go. The rest of the logistics system is all about how to move the packages to these destinations!"
+			"text": "Все, что связано с Логистикой Create, вращается вокруг $(item)Коробочек $(). Каждый пакет может вмещать 9 слотов с предметами.$(br2)Пакеты также могут иметь $(thing)адрес$(), который определяет, куда должен быть доставлен пакет. Остальная часть логистической системы отвечает за перемещение пакетов к месту назначения или заказа коробок!"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Fluid Packages",
+			"title": "Жидкостные \"коробки\"",
 			"item": "fluidlogistics:fluid_package,fluidlogistics:fluid_package_exposed,fluidlogistics:fluid_package_weathered,fluidlogistics:fluid_package_oxidized",
-			"text": "$(item)Fluid Packages$() are the equivalent for $(thing)fluids$(). Each fluid package can hold $(thing)10,000mB$(), or ten buckets.$(br2)$(bold)Tip:$() $(item)$(k:key.sneak) + $(k:key.use)$() an item package to open it! Mechanical Saws can also do this automatically."
+			"text": "$(item)Жидкостные Банки$() являются вариантом $(thing)Коробок$(). В каждом банке с жидкостью может храниться $(thing)10 000 Мб$(), или десять вёдер.$(br2)$(bold)Совет:$() $(item)$(k:key.sneak) + $(k:key.use)$() откройте обычную коробку с предметом, чтобы открыть его! Механические пилы могут делать это автоматически. Однако Жидкостные банки таким образом вы открыть не сможете."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "create:packager,fluidlogistics:fluid_packager",
 			"anchor": "packager",
-			"text": "When provided with a $(thing)redstone signal$(), the $(item)Packager$() will wrap up items from the container it is attached to (you can switch the connection side with a $(item)wrench$()) and output a neat little cardboard package.$(br)$(bold)Note:$() Despite the crafting recipe, the packager works without any additional cardboard, so don't worry about upkeep!"
+			"text": "При наличии сигнала $(thing)Редстоуна$()$(item)Упаковщик$() будет упаковывать предметы из контейнера, к которому оно подключено (сторону подключения можно поменять с помощью $(item)ключа$()), и выдавать аккуратную картонную коробку или банку. $(br)$(bold) Примечание:$() Несмотря на рецепт крафта, упаковщик работает без дополнительного картона, так что не беспокойтесь о его обслуживании!"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Putting a $(item)Sign$() on the Packager will make it automatically label the sign's contents onto all packages as a destination address. This will be more useful once you start working with various ways to route packages around. $(c)Note that Framed Signs do not work for this purpose!$()$(br2)Packagers can also unwrap any packages that get put into it, unloading their contents into the attached inventory."
+			"text": "Коробки и банки без адреса не будут отправляться куда вам нужно. Чтобы у коробки появился адрес, повесьте любой вид $(item)таблички$() и напишите в ней адрес, а если у вас Квакопорт, то поменяйте ей имя. Если будет подан на такой упаковщик Редстоун сигнал, то коробка поедет к этому адресу. $(c)Обратите внимание, что знаки в рамке для этой цели не подходят!$()$(br2)Упаковщики также могут распаковывать любые посылки, которые в них помещают, и выгружать их содержимое в прикрепленный инвентарь."
 		},
 		{
 			"type": "patchouli:multiblock",
 			"enable_visualize": false,
-			"text": "This setup will automatically extract everything from the chest into packages, which can then be sent elsewhere.",
-			"name": "Packaging Items",
+			"text": " Эта установка автоматически извлекает все содержимое из сундука и упаковывает его для отправки в другое место.",
+			"name": "Упаковка предметов",
 			"multiblock": {
 				"pattern": [
 					[
@@ -72,8 +72,8 @@
 		{
 			"type": "patchouli:multiblock",
 			"enable_visualize": false,
-			"text": "Any packages inserted into this packager will automatically be unpackaged and inserted into the $(l:logistics/storage#crates)Crate$().",
-			"name": "Unpackaging Items",
+			"text": "Все посылки, попавшие в любой упаковщик, будут автоматически распакованы и помещены в $(l:logistics/storage#crates)хранилище$(). \"Сейчас у нас будет Анбокс этой посылки из Китая!\"",
+			"name": "Распаковка предметов",
 			"multiblock": {
 				"pattern": [
 					[
@@ -97,8 +97,8 @@
 		{
 			"type": "patchouli:multiblock",
 			"enable_visualize": false,
-			"text": "$(item)Fluid Packagers$() work the same way.",
-			"name": "Packaging Fluids",
+			"text": "$(item)Жидкостные банки$() работают по тому же принципу.",
+			"name": "Упаковка Жидкостных банок",
 			"multiblock": {
 				"pattern": [
 					[
@@ -130,8 +130,8 @@
 		{
 			"type": "patchouli:multiblock",
 			"enable_visualize": false,
-			"text": "It does not need a pump to move fluids into or out of their attached container.",
-			"name": "Unpackaging Fluids",
+			"text": "Для подачи жидкости в прикрепленный контейнер или из него насос не требуется.",
+			"name": "Распаковка Жидкостных банок",
 			"multiblock": {
 				"pattern": [
 					[
@@ -155,26 +155,26 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "create:package_frogport,fluidlogistics:copper_frogport",
-			"title": "Frogports",
+			"title": "Квакопорт",
 			"anchor": "frogport",
-			"text": "$(item)Package Frogports$() are one of three ways you can move packages around and get them to where you want them to be. They can hang packages onto $(item)Chain Conveyor$() lines to be transported along the chain connections. To use them, you first need a network of $(item)Chain Conveyors$() connected to each other using $(t:Any kind of TFC chain will work)$(6)chains$(), and then power the chain conveyors with rotation."
+			"text": "$(item)Квакопортыё$() — это один из трех способов перемещения посылок в нужное место.  С их помощью посылки можно подвешивать на линии $(item)цепного конвейера$(), чтобы они перемещались по цепным соединениям.  Для их использования сначала нужно создать сеть из $(item)цепных конвейеров$(), соединенных друг с другом с помощью $(t:Any kind of TFC chain will work)$(6)цепей$(), а затем обеспечить питание цепных конвейеров с помощью вращения."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(item)$(k:key.use)$() a chain before placing down a Frogport to have it interact with that segment of chain.$(br2)Frogports placed directly on top of a $(l:logistics/create#packager)Packager$() automatically hang up packages that are created in said Packager.$(br2)$(bold)Note:$() Either frogport will work with both item and fluid packagers and packages. The only difference is that the copper one can be placed on any side of a block."
+			"text": "Щёлкните $(item)$(k:key.use)$() перед установкой Квакопорт на цепь, чтобы он взаимодействовал с этим сегментом цепи.$(br2)Квакопорты, установленные непосредственно на $(l:logistics/create#packager)Упаковщик$(), автоматически подвешивают пакеты, созданные в этом упаковщике.$(br2)$(bold)Примечание:$() Любой Фрогпорт будет работать как с упаковщиками предметов, так и с упаковщиками жидкостей.  Разница лишь в том, что медный Фрогпорт можно установить с любой стороны блока."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Frogports can also receive packages in addition to sending them. If you $(item)$(k:key.use)$() on a Frogport, you can see that it has a name you can edit.$(br2)This name acts as an $(thing)address$(): if any packages that are labelled with a destination address matches this name, the Frogport will $(thing)automatically collect them$() by taking them off the chain network!"
+			"text": "Помимо отправки посылок, Квакопорты могут их принимать.  Если вы $(item)$(k:key.use)$() на Квакопорт, то увидите, что у него есть имя, которое можно изменить. $(br2) Это имя выступает в качестве $(thing)адреса$(): если какие-либо посылки с адресом назначения, совпадающим с этим именем, будут обнаружены, Квакопорт $(thing)автоматически заберет их$(), Сняв с цепей!"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "This collected package will be put into the inventory of the block the Frogport is placed on.$(br2)As long as the chain network is connected to the input and output Frogports $(o)somehow$(), the package will eventually find its own way, although you may want to optimize the paths to reduce package travel time on your own."
+			"text": "Этот собранный пакет будет помещён в инвентарь блока, на котором расположен Фрогпорт. $(br2) Пока цепная сеть соединена с входными и выходными Фрогпортами $(o)каким-то образом$(), пакет в конечном счёте найдёт свой путь, хотя вы можете самостоятельно оптимизировать маршруты, чтобы сократить время транспортировки."
 		},
 		{
 			"type": "patchouli:image",
-			"text": "A small setup to send and receive items.",
-			"title": "Frogports",
+			"text": "Небольшое устройство для отправки и получения посылок.",
+			"title": "Квакопорт",
 			"border": true,
 			"images": [
 				"tfg:textures/gui/field_guide/frogports.png"
@@ -184,35 +184,35 @@
 			"type": "patchouli:spotlight",
 			"item": "create:package_filter",
 			"anchor": "package_filter",
-			"text": "Packages can be routed using the specialized $(item)Package Filter$(), which can be used just like a filter in any $(thing)Create$() machine that supports filter slots, such as $(item)Brass Funnels$(). Just $(item)$(k:key.use)$() while holding the filter and type in the address that should be filtered, and any packages with that specified destination address will be let through."
+			"text": "Пакеты можно перенаправлять с помощью специального фильтра $(item)Упаковочный Фильтр$(), который можно использовать как фильтр в любой машине $(thing)Create$(), поддерживающей слоты для фильтров, например в $(item)Латунные туннели$(). Просто удерживайте фильтр и введите адрес, который нужно отфильтровать, с помощью $(item)$(k:key.use)$(). Все пакеты с указанным адресом назначения будут пропущены."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "create:repackager",
 			"anchor": "repackager",
-			"text": "The $(item)Re-Packager$() can combine multiple item packages into a single package. This is useful if a request's items are being sourced from different locations, but need to reach their destination at exactly the same time.$(br2)It can also separate a combined package back into its components."
+			"text": "$(item)Переупаковщик$() может объединять несколько пакетов с товарами в один. Это удобно, если товары для заказа поступают из разных мест, но должны быть доставлены в пункт назначения одновременно.$(br2) Он также может разделить объединенный пакет на составляющие."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "fluidlogistics:fluid_repackager",
 			"anchor": "unpackager",
-			"text": "The $(item)Unpackager$() is similar to a $(l:logistics/create#repackager)Repackager$(), but it can combine item and fluid packages into one, and vice versa."
+			"text": "Устройство $(item)упаковщик$() похоже на $(l:logistics/create#repackager)переупаковщик$(), но он может объединять упаковки с товарами и жидкостями в одну и наоборот."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "fluidlogistics:hand_pointer,create:clipboard",
 			"title": "Маловато места?",
 			"anchor": "clipboard",
-			"text": "The $(item)Hand Pointer$() and $(item)Clipboard$() can be used to power packagers and set addresses without any adjacent block.$(br2)To use the $(item)Hand Pointer$(), just $(item)$(k:key.use)$() on any packager or re-packager to force it to be powered, no redstone signal needed!"
+			"text": "$(item)Указатель $() и $(item)Планшет$() можно использовать для питания упаковщиков и установки адресов без привязки к соседнему блоку.$(br2)Чтобы использовать указатель $(item)Указатель $(), просто нажмите $(item)$(k:key.use)$() на любом упаковщике или переупаковщике, чтобы принудительно подать на него питание без сигнала красного камня!"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The $(item)Hand Pointer$() can also be used to change the target of $(l:logistics/create#frogport)Frogports$() after they have been placed. To do so, while holding the $(item)Hand Pointer$(), $(item)$(k:key.use)$() the $(item)Frogport$() you want to change, then $(item)$(k:key.use)$() the new point on the chain to connect to.$(br2)To set an address, get an empty $(item)Clipboard$() and type the address you want on the first line $(c)(make sure to start the line with a \"#\")$(), then $(item)$(k:key.use)$() on any packager to set the address, no sign needed!"
+			"text": "$(item)Указатель $() также можно использовать для изменения цели $(l:logistics/create#frogport)квакопорт $() после их размещения. Для этого, удерживая $(item)указатель $(), нажмите $(item)$(k:key.use)$() на $(item)квакопорт$(), который хотите изменить, а затем $(item)$(k:key.use)$() на новую точку в цепочке, к которой нужно подключиться. $(br2) Чтобы задать адрес, откройте пустой $(item)планшет $() и введите нужный адрес в первой строке $(c)(не забудьте начать строку с символа \"#\")$(), затем нажмите $(item)$(k:key.use)$() на любом упаковщике, чтобы установить адрес. Знак не нужен!"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:create:postboxes",
-			"title": "Postboxes",
+			"title": "Почтовый ящик",
 			"anchor": "postbox",
 			"text": "$(item)Postboxes$() are used to route packages around using $(l:logistics/trains)Train Networks$(). You first $(item)$(k:key.use)$() a $(l:logistics/trains#station)Train Station$() to link the Postbox to that station before placing it, and from then on any trains that stop there will be able to interact with the Postbox (given it is within 4 blocks of the station)."
 		},
@@ -478,7 +478,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Читать далее",
 			"anchor": "relations",
 			"entries": [
 				"tfg:logistics/redstone_devices",

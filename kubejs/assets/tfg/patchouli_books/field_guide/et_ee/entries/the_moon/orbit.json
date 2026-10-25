@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "By keeping the following items in your inventory (or the inventory of your rocket), you'll be able to build a $(item)Space Station$() in orbit once you launch!$(br)$(li)43x Aluminium Frame$(li)24x Glass Plate$(li)4x Glowstone Dust$(li)1x Launch Pad"
+			"text": "Hoides järgmisi esemeid oma inventaris (või raketi inventaris), saad pärast starti ehitada orbiidile $(item)Kosmosejaama$()!$(br)$(li)43x Alumiiniumraam$(li)24x Klaasplaat$(li)4x Hõõgkivipulber$(li)1x Stardiplatvorm"
 		},
 		{
 			"type": "patchouli:text",

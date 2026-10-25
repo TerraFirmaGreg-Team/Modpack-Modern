@@ -6,12 +6,12 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "intro",
-			"text": "The $(thing)Beneath$() is a network of very deep caves, directly below the Overworld.$(br)This dimension is balanced around mid to late $(thing)Metallurgy Age$().$(br2)It's more dangerous than the surface, so we recommend a metal shield and good nutrition as a minimum, but some armor, a water flask, cooling clothes, and a ranged weapon will help a lot."
+			"text": "$(thing)Бездна$() представляет собой сеть очень глубоких пещер прямо под Верхним Миром.$(br)Это измерение сбалансировано в промежутке от примерно среднего до позднего $(thing)Металлургического Века$().$(br2) Здесь опаснее чем на поверхности, поэтому мы рекомендуем, как минимум, любой металлический щит и хорошее питание, но некоторые доспехи, водяные фляги, охлаждающяя одежда и оружие дальнего боя будут очень кстати."
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "differences",
-			"text": "Но игровой опыт отличается от нижнего мира несколькими аспектами:$(li)Вы попадаете туда $(l:beneath/beneath#entering)иначе$()$(li)Вода не испоряется мгновенно$(li)Кровати работают нормально$(li)Скорость путешествия в бездне такая же как и Верхнем мире$(br2)Но взамен, вы можете найти такие ресурсы, как $(thing)Каолинитовая глина$(), $(thing)Графит$(), более богатые и доступные $(thing)рудные жилы$(), а так же другие сокровища."
+			"text": "Сам же игровой опыт не будет схож с ванильным нижним миром. $(li)Портал не сработает, ты будешь попадать в бездну $(l:beneath/beneath#entering)другими способами$(). $(li)Вода не испаряется мгновенно,$(li) а кровати больше не взрываются. $(li)Один блок в бездне не равняется восьми блокам в Верхнем мире, скорость путешествий равна$(br2)Взамен ты сможешь найти большое количество ресурсов, например $(thing)Каолинитовой глины$() и $(thing)Графита$(). $(thing)Жилы$() в бездне заметно больше чем во Внешнем мире."
 		},
 		{
 			"type": "patchouli:text",
@@ -172,7 +172,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "geology",
-			"title": "Geology",
+			"title": "Геология",
 			"text": "Like the overworld, the Beneath has its own set of rock layers. At the very top, you may find Phyllite, Schist, Gneiss, Marble, Slate, Migmatite, and Travertine.$(br2)Underneath those, you may find Schist, Gneiss, Tuff, Migmatite, Travertine, and Diorite."
 		},
 		{
@@ -182,7 +182,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "minecraft:blackstone,minecraft:calcite,tfg:gilsonite,tfg:rock/aragonite,tfg:rock/glauberite,tfg:huge_quartz,beneath:crackrack,tfg:halite",
-			"title": "More Rocks",
+			"title": "Больше Камней",
 			"anchor": "more_rocks",
 			"text": "Some other stones can be found in other locations.$(br2)Small lava pools are surrounded by $(item)Pyroxenite$(), while $(item)Calcite$() can be found in spring water pools.$(br2)$(item)Keratophyre$() can be found all over the Beneath in large, tall columns."
 		},
@@ -192,11 +192,11 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(item)Gilsonite$(), a very dark building block and ingredient of $(l:logistics/roads#asphalt)Asphalt$(), can be found in large quantities in the $(l:beneath/beneath#tar_pools)Tar Pools$() biome, along with $(item)Sandstone$().$(br2)Finally, $(item)Halite$() can be found in massive quantities in the $(l:beneath/beneath#salt_caves)Salt Caves$() biome, which can be mined for Halite and Sylvite ores."
+			"text": "$(item)Гильсонит$(), очень темный строительный блок и ингредиент $(l:logistics/roads#asphalt)Асфальта$(), можно найти в больших количествах в биоме $(l:beneath/beneath#tar_pools)Битумных Бассейнов$() , в сочетании с $(item)Песчанником$(). $(br2)Наконец, $(item)Галит$() можно найти в массивных количествах в биоме $(l:beneath/beneath#salt_caves)Соляных Пещер$(), который подходит для добыи Галитовых и Сильвитовых руд."
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Читать далее",
 			"anchor": "relations",
 			"entries": [
 				"tfg:beneath/beneath_mechanics",

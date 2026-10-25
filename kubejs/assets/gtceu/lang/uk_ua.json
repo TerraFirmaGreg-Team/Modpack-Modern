@@ -1,7 +1,7 @@
 {
-	"behavior.data_item.title": "§nДані про конструкцію \"%s\":",
-	"behavior.item_magnet.disabled": "§cМагнітне поле вимкнено",
-	"behavior.item_magnet.enabled": "§aМагнітне поле увімкнено",
+	"behavior.data_item.title": "§n%s Дані про конструкцію:",
+	"behavior.item_magnet.disabled": "§c Магнітне поле вимкнено",
+	"behavior.item_magnet.enabled": "§a Магнітне поле увімкнено",
 	"behavior.portable_scanner.amp_per_sec": "В середньому (за останню секунду): %s A",
 	"behavior.portable_scanner.bedrock_fluid.amount": "Розміщена рідина: %s %s - %s%%",
 	"behavior.portable_scanner.bedrock_fluid.amount_unknown": "Розміщена рідина: %s%%",

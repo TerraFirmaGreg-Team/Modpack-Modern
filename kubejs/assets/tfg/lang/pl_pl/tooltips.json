@@ -125,7 +125,7 @@
     "tfg.tooltip.machine.pastoral_engine_2": "§7Automatycznie doi i strzyże wszystkie zwierzęta w obszarze wyznaczonym przez metalowe obudowy.§r",
     "tfg.tooltip.machine.oxygen_distributor_1": "§7Natlenia dużą zamkniętą przestrzeń. Im większa przestrzeń, tym więcej wymaga energii i gaz.",
     "tfg.tooltip.machine.oxygen_distributor_2": "§7Użyj śluzy powietrznej, aby uniknąć wirów powietrznych. Nie wpływa na temperaturę.§r",
-    "tfg.tooltip.machine.heat_pump_1": "§7Ustawia temperaturę w dużej zamkniętej przestrzeni na 15°C.",
+    "tfg.tooltip.machine.heat_pump_1": "§7Ustawia temperaturę w dużej zamkniętej przestrzeni na wybraną temperaturę pomiędzy -50°C a 70°C.",
     "tfg.tooltip.machine.heat_pump_2": "§7Im większy obszar, tym więcej energii potrzebuje. Jest dosyć pobłażliwy i określaniu, co liczy się jako \"zamknięta\".",
     "tfg.tooltip.machine.heat_pump_3": "§7Strona z kontrolerem powinna być skierowana wewnątrz, a wydech powinien wychodzić na zewnątrz i być wypełniony wirnikiem turbiny.",
     "tfg.tooltip.machine.rotor_vent": "Wymaga wirnika turbiny, ale nie zużywa jego wytrzymałości. Efektywność obniża zużycie cieczy wejściowej (mB/t), a moc zmniejsza koszt energii (EU/t).",
@@ -260,6 +260,7 @@
     "tfg.tooltip.nutrition.protein_info": "Wartości odżywcze białka są dostępne z jedzenia mięsa. Kilka roślin także zapewnia białko.\n\n§f§lEfekty:§r\n  ›§n§f55%§r → §bZmniejsza szybkość głodnięcia o 25%§r\n  ›§n§f85%§r → §bMożesz nosić dodatkowy wielki przedmiot§r",
     "tfg.tooltip.nutrition.dairy_info": "Wartości odżywcze nabiału są dostępne z picia mleka albo od produktów nabiałowych takich jak ser.\n\n§f§lEfekty:§r\n  ›§n§f55%§r → §bOtrzymujesz łagodny upadek I§r\n  ›§n§f85%§r → §bOtrzymujesz łagodny upadek IV§r",
     "tfg.tooltip.nutrition.grain_info": "Wartość odżywcza zbóż pochodzi z jedzenia przetworzonych upraw zbożowych, takich jak pszenica, ryż, jęczmień itp.\n\n§f§lEfekty:§r\n  ›§n§f55%§r → §bZyskaj 5% premii do szybkości§r\n  ›§n§f85%§r → §bZyskaj 15% premii do szybkości§r",
+    "tfg.tooltip.nutrition.toxins_info": "Skażenie toksynami zdobywa się przez spożywanie niektórych niebezpiecznych produktów spożywczych.\n\n§8§oZmniejsza się o 3% każdego dnia§r\n\n§f§lEfekty:§r\n  ›§n§f0%§r → §nPrzy nowym wzroście§r → §c25% na otrzymanie losowego niebezpiecznego efektu na 10s§r\n  ›§n§f99%§r → §cŚmierć§r",
     "tfg.tooltip.nutrition.negative_info": "Skażenia to specjalne rodzaje składników odżywczych, które można przenosić do posiłków tak samo jak zwykłe składniki odżywcze. Są jednak niebezpieczne i szkodzą postaci, jeśli nie zostaną wyleczone.",
     "tfg.tooltip.widget.player_list.offline": "Offline",
     "tfg.tooltip.asphalt_rubble.obtain": "Wypada podczas niszczenia asfaltowych dróg.",
@@ -296,7 +297,7 @@
     "tfg.tooltip.unposter": "Zużywa kompostowalne przedmioty, aby powielić pobliskie kwiaty i grzyby.",
     "tfg.tooltip.glassworking.complete": "☆ Gotowe! ☆",
     "tfg.tooltip.growth_time": "Czas wzrostu",
-    "tfg.tooltip.digger_helmet_mining_upgrade": "§cNie ma wpływu na większe narzędzia, takie jak młoty górnicze!§r",
+    "tfg.tooltip.digger_helmet_mining_upgrade": "§cNie wpływa na większe narzędzia, takie jak młoty górnicze!§r",
     "tfg.tooltip.unit.mB": "%s mW",
     "tfg.tooltip.unit.seconds": "%s sekund(a)",
     "tfg.tooltip.unit.power": "Moc: %s",
@@ -305,5 +306,5 @@
     "tfg.tooltip.planter.fertilizer_info": "Nawóz jest opcjonalny. Rośliny będą rosnąć szybciej i wyprodukują inne rodzaje nawozów, gdy będą rosły ze swoim preferowanym typem nawozu.",
     "tfg.tooltip.greenhouse.minimum_tier": "Min. poziom: ",
     "tfg.item.electric_flask.tooltip_1": "Elektryczna manierka, która będzie automatycznie cię poiła w razie potrzeby.",
-    "tfg.item.electric_flask.tooltip_2": "Zużywa 1000 EU na łyk"
+    "tfg.item.electric_flask.tooltip_2": "§9Zużywa : §f1000 EU na łyk"
 }
