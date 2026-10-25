@@ -1,34 +1,34 @@
 {
-	"name": "Item Heating",
+	"name": "Нагревание предметов",
 	"category": "tfg:game_mechanics",
 	"sortnum": 5,
 	"icon": "tfc:textures/gui/book/icons/heating.png",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Heating items is a way of converting one item to another, or an item to a fluid. Items can be heated in many ways - in a $(l:craftsmanship/firepit)Firepit$(), a $(l:craftsmanship/pit_kiln)Pit Kiln$(), or a $(l:craftsmanship/charcoal_forge)Charcoal Forge$(), to name a few. However, they all function in the same way. When you place items inside these devices, the items will gradually start to heat up. This is visible on the item's tooltip."
+			"text": "Нагревание позволяет превратить предмет в жидкость или в другой предмет. Предметы можно нагревать разными способами, например на $(l:craftsmanship/firepit)Костре$(), в $(l:craftsmanship/pit_kiln)Земляной печи$() или $(l:craftsmanship/charcoal_forge)Угольной кузне$(). Они все работают по одному принципу: помести предмет в одно из этих устройств и он начнёт постепенно нагреваться, что видно в подсказке к предмету."
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Contents",
+			"title": "Содержание",
 			"anchor": "index",
-			"text": "Температура предмета обозначается цветом, который будет меняться через следующие значения: $(br2)$(7)$(bold)Теплеет$(): 1 - 80 °C$(br)$(7)$(bold)Горячий$(): 80 - 210 °C$(br)$(7)$(bold)Очень горячий$(): 210 - 480 °C$(br)$(4)$(bold)Слабо-красный$(): 480 - 580 °C$(br)$(bold)$(4)Тёмно-красный$(): 580 - 730 °C$(br)$(c)$(bold)Ярко-красный$(): 730 - 930 °C$(br)$(6)$(bold)Оранжевый$(): 930 - 1100 °C$(br)$(e)$(bold)$(t: Yellow)Жёлтый$(): 1100 - 1300 °C$(br)$(e)$(t: Yellow White)$(bold)Светло-жёлтый$(): 1300 - 1400 °C$(br)$(d)$(bold)$(t: White)Белый$(): 1400 - 1500 °C$(br)$(d)$(bold)$(t: Brilliant White)Сияюще-белый$(): >1500 °C"
+			"text": "$(li)$(bold)$(l:game_mechanics/heating#temps)Список температур$()$(li)$(bold)Защита$()$(li2)$(l:game_mechanics/heating#tongs)Клещи$()$(li2)$(l:game_mechanics/heating#cloth)Перчатки и прихватки$()$(li2)$(l:game_mechanics/heating#equipment)Прочая экипировка$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "temps",
-			"text": "The temperature of an item is represented by a color, which will change through the following values:$(br2)$(7)$(bold)Warming$(): 1 - 80 °C$(br)$(7)$(bold)Hot$(): 80 - 210 °C$(br)$(7)$(bold)Very Hot$(): 210 - 480 °C$(br)$(4)$(bold)Faint Red$(): 480 - 580 °C$(br)$(bold)$(4)Dark Red$(): 580 - 730 °C$(br)$(c)$(bold)Bright Red$(): 730 - 930 °C$(br)$(6)$(bold)Orange$(): 930 - 1100 °C$(br)$(e)$(bold)$(t:Yellow)Yellow$(): 1100 - 1300 °C$(br)$(e)$(t:Yellow White)$(bold)Yellow White$(): 1300 - 1400 °C$(br)$(d)$(bold)$(t:White)White$(): 1400 - 1500 °C$(br)$(d)$(bold)$(t:Brilliant White)Brilliant White$(): >1500 °C"
+			"text": "Температура предмета обозначается цветом, который будет меняться через следующие значения: $(br2)$(7)$(bold)Теплеет$(): 1 - 80 °C$(br)$(7)$(bold)Горячий$(): 80 - 210 °C$(br)$(7)$(bold)Очень горячий$(): 210 - 480 °C$(br)$(4)$(bold)Слабо-красный$(): 480 - 580 °C$(br)$(bold)$(4)Тёмно-красный$(): 580 - 730 °C$(br)$(c)$(bold)Ярко-красный$(): 730 - 930 °C$(br)$(6)$(bold)Оранжевый$(): 930 - 1100 °C$(br)$(e)$(bold)$(t:Yellow)Жёлтый$(): 1100 - 1300 °C$(br)$(e)$(t:Yellow White)$(bold)Светло-жёлтый$(): 1300 - 1400 °C$(br)$(d)$(bold)$(t:White)Белый$(): 1400 - 1500 °C$(br)$(d)$(bold)$(t:Brilliant White)Сияюще-белый$(): >1500 °C"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:tfchotornot:tongs",
-			"title": "Tongs",
+			"title": "Клещи",
 			"anchor": "tongs",
-			"text": "Hot items are too hot to hold with your bare hands! When an item reaches $(t:Configurable in tfchotornot-common.toml)$(4)Faint Red *$() or higher, it will become $(c)too hot to hold$()! You must hold $(item)tongs$() in your $(thing)off-hand$() in order to avoid burning yourself. The same applies for some $(3)very cold$() items such as $(item)Blue Ice$()."
+			"text": "Горячие предметы слишком горячи для голых рук! Когда предмет достигает $(t:Configurable in tfchotornot-common.toml)$(4)Слабо-красной *$() температуры или выше, он становится $(c)слишком горячим чтобы держать$()! Ты должен держать $(item)клещи$() во $(thing)второй руке$() чтобы не обжечься. То же самое с $(3)очень холодными$() предметами вроде $(item)Синего льда$()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(bold)Note:$() Even with tongs, holding hot or cold items in your inventory will affect your $(l:game_mechanics/player_temperature)player temperature$()."
+			"text": "$(bold)Примечание:$() Холодные и горячие предметы в твоём инвентаре влияют на твою $(l:game_mechanics/player_temperature)температуру$(), даже когда ты используешь клещи."
 		},
 		{
 			"type": "patchouli:crafting",
@@ -39,23 +39,23 @@
 		},
 		{
 			"type": "tfg:anvil_recipe",
-			"title": "Metal Tong Parts",
+			"title": "Части металлических клещей",
 			"recipe": "tfchotornot:anvil/tong_part/wrought_iron",
-			"text": "$(item)Wooden Tongs$() are easy to make, but have low durability. Consider upgrading!$(br)$(item)Metal Tongs$() have much higher durability and can be repaired.$(br)Note that all tongs take damage while hot things are in your inventory, with more items costing more durability. Toss them ($(item)$(k:key.drop)$()) into water to cool them down fast!"
+			"text": "$(item)Деревянные клещи$() просты в изготовлении, но имеют низкую прочность. Задумайся о модернизации!$(br)$(item)Клещи из металла$() гораздо прочнее и могут быть отремонтированы.$(br)Учти, что все клещи получают урон, пока у тебя в инвентаре есть горячие предметы, чем больше предметов, тем больше урона. Швырни их ($(item)$(k:key.drop)$()) в воду чтобы быстро их охладить!"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfchotornot:mittens,tfchotornot:burlap_potholder,tfchotornot:silk_potholder,tfchotornot:wool_potholder",
 			"anchor": "cloth",
-			"title": "Cloth Alternatives",
-			"text": "You can also make $(item)Mittens$() and $(item)Potholders$() out of $(l:agriculture/leather_making)Leather$() and $(l:agriculture/weaving)Cloth$()."
+			"title": "Тканевые альтернативы",
+			"text": "Также ты можешь сделать $(item)Перчатки кузнеца$() и $(item)Прихватки$() из $(l:agriculture/leather_making)Кожи$() и $(l:agriculture/weaving)Ткани$()."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfc:metal/chestplate/blue_steel,tfc:metal/chestplate/red_steel,create:netherite_backtank,gtceu:hazmat_chestpiece,ad_astra:space_suit,ad_astra:netherite_space_suit,gtceu:quarktech_chestplate,gtceu:advanced_quarktech_chestplate",
 			"anchor": "equipment",
-			"title": "Other Equipment",
-			"text": "Lastly, certain equipment can safely protect you while holding these items, such as the $(item)Blue Steel Chestplate$() protecting you from hot items."
+			"title": "Прочая экипировка",
+			"text": "Напоследок, некоторая экипировка может защитить тебя пока ты держишь предметы, $(item)Нагрудник из синей стали$(), например, может защитить тебя от горячих предметов"
 		},
 		{
 			"type": "patchouli:relations",

@@ -8,6 +8,9 @@
 - Astikor Carts and the Paving Cart are now immune to cacti (#5189) @Pyritie
 - Added a config option (tfg-server.toml) to enable announcing some quests in chat, off by default (#5203) @Pyritie
 - Drastically improved chunk generation speed in the Beneath, Moon, and Mars @Mqrius @Pyritie
+- Camels can now be used with the animal crank and count as a large animal @Pyritie
+- Added repair recipes for bows, crossbows, and crankbows @Pyritie
+- Changed all spawn conditions and growing climates of fruit trees and berry bushes. Small bushes are a little more common, cranberries should be actually findable (and are no longer destroyed by ice), and generally everything is a little more cold tolerant. Check the field guide for more details. If you live somewhere cold, now you have no excuses for bad fruit nutrition! (#5210) @Pyritie
 ### Bug fixes
 - Only Turbine Rotors can be inserted in Exhaust Vent @TomPlop
 - Fixed Large Turbine efficiency having a minimum of 100%, sorry SiC-SiC you were goated and no one knew @TomPlop 

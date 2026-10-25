@@ -120,12 +120,15 @@ function registerTFGRepairRecipes(event) {
 		{ item: "tfc_textile:red_elk_pants", material: "species:ghoul_tongue" },
 		{ item: "tfc_textile:red_elk_boots", material: "species:ghoul_tongue" },
 
-		{ item: "hangglider:reinforced_hang_glider", material: "sns:reinforced_fabric" }
+		{ item: "hangglider:reinforced_hang_glider", material: "sns:reinforced_fabric" },
+		{ item: "minecraft:crossbow", material: "gtceu:repair_kit_wrought_iron" },
+		{ item: "species:crankbow", material: "gtceu:repair_kit_wrought_iron" }
 	]
 
 	const SPECIAL_TAG_REPAIRS = [
 		{ item: "hangglider:hang_glider", tag: "forge:cloth" },
-		{ item: "hangglider:reinforced_hang_glider", tag: "tfg:lightweight_cloth" }
+		{ item: "hangglider:reinforced_hang_glider", tag: "tfg:lightweight_cloth" },
+		{ item: "minecraft:bow", tag: "forge:string" }
 	]
 
 	repairColoredSteel('gtceu', 'red_steel');
