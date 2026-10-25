@@ -3,6 +3,7 @@
 ## Unreleased
 ### Changes
 ### Bug fixes
+- Fixed the tar pools beneath biome never spawning raw oil, only the other three @Pyritie
 
 ## [0.13.16] - 25-10-2026
 ### Changes

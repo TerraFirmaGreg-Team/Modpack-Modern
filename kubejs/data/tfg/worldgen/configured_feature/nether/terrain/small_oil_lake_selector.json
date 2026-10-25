@@ -26,6 +26,13 @@
 					"feature": "tfg:nether/terrain/small_oil_lake_raw",
 					"placement": []
 				}
+			},
+			{
+				"chance": 0.4,
+				"feature": {
+					"feature": "tfg:nether/terrain/small_oil_lake",
+					"placement": []
+				}
 			}
 		]
 	}
