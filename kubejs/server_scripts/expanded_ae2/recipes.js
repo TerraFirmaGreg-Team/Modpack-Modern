@@ -3,6 +3,7 @@ const registerExpandedAE2Recipes = (event) => {
     event.remove({
 		not: [
 			{ id: 'expandedae:crafting/pattern_refiller_card' },
+			{ id: 'expandedae:crafting/auto_complete_card' }
 		], mod: 'expandedae'
 	});
 
