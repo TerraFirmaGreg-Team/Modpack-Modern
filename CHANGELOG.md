@@ -1,6 +1,7 @@
 # Changelog
 
 ### Changes
+- Ceramic Circuit Board have different tiers so player can understand easily which one they can craft @TomPlop
 ### Bug fixes
 
 ## [0.13.17] - 26-10-2026
