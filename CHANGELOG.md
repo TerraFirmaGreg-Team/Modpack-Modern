@@ -9,6 +9,7 @@
 - Fixed the Auto-Complete Card recipe so it's actually visible @TomPlop
 - Fixed the firepot pot turning everything into rice (#5221) @Pyritie
 - Fixed not being able to hold rclick to put straw on a pit kiln (#5223) @Pyritie
+- Fix brioche dough coming out rotten when using the yeast-based processor recipe @Redeix
 
 ## [0.13.16] - 25-10-2026
 ### Changes
@@ -36,7 +37,6 @@
 - Fixed being able to move immovable things with the new matter manipulator @Pyritie
 - Mixing Bio-Diesel with 2-EHN now gives the proper amount of Biodisel @Jeuvke
 - Crafting the SiC-SiC Turbine Rotor is now three times cheaper @TomPlop
-- Fix brioche dough coming out rotten when using the yeast-based processor recipe @Redeix
 ### Mods
 #### TerraFirmaCraft
 - Prevent double high blocks from breaking bedrock.
