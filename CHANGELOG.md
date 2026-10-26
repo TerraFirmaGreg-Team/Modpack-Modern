@@ -36,6 +36,7 @@
 - Fixed being able to move immovable things with the new matter manipulator @Pyritie
 - Mixing Bio-Diesel with 2-EHN now gives the proper amount of Biodisel @Jeuvke
 - Crafting the SiC-SiC Turbine Rotor is now three times cheaper @TomPlop
+- Fix brioche dough coming out rotten when using the yeast-based processor recipe @Redeix
 ### Mods
 #### TerraFirmaCraft
 - Prevent double high blocks from breaking bedrock.
