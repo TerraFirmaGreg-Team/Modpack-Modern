@@ -1,9 +1,14 @@
 # Changelog
 
-## Unreleased
 ### Changes
 ### Bug fixes
+
+## [0.13.17] - 26-10-2026
+### Bug fixes
 - Fixed the tar pools beneath biome never spawning raw oil, only the other three @Pyritie
+- Fixed the Auto-Complete Card recipe so it's actually visible @TomPlop
+- Fixed the firepot pot turning everything into rice (#5221) @Pyritie
+- Fixed not being able to hold rclick to put straw on a pit kiln (#5223) @Pyritie
 
 ## [0.13.16] - 25-10-2026
 ### Changes
