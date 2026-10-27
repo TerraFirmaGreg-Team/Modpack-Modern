@@ -383,6 +383,30 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		polished: generateForms('obsidian', 'tfg:rock/smooth_%s'),
 		chiseled: generateForms('obsidian', 'tfg:rock/chiseled_%s'),
 	},
+	"snow_block": {
+		stonecutterTag: "tfg:stone_types/snow",
+		isTFC: false,
+		collapsible: false,
+		raw: { 
+			block: 'tfg:snow_bricks',
+			stair: 'tfg:snow_brick_stairs',
+			slab: 'tfg:snow_brick_slab', 
+			wall: 'tfg:snow_brick_wall'
+		}
+	},
+	"packed_ice": {
+		stonecutterTag: "tfg:stone_types/packed_ice",
+		isTFC: false,
+		collapsible: false,
+		raw: { block: 'minecraft:packed_ice' },
+		bricks: {
+			block: 'tfg:packed_ice_bricks',
+			stair: 'tfg:packed_ice_brick_stairs',
+			slab: 'tfg:packed_ice_brick_slab', 
+			wall: 'tfg:packed_ice_brick_wall'
+		},
+		chiseled: { block: 'tfg:chiseled_packed_ice' }
+	},
 
 	/////////////////////////////////////////////////////////////////////////////////////////////
 	// BENEATH ROCKS
