@@ -12,7 +12,7 @@
             "type": "patchouli:text",
             "anchor": "clay",
             "title": "黏土",
-            "text": "$(thing)黏土$()是一種特別有用的材料，你可以用它製作陶器。一開始你可能難以找到黏土，因為它們總是隱藏在草皮之下。但簡而言之，有兩種取得它們的手段。首先，黏土會在$(l:the_world/climate#rainfall)年降雨量$()大於 175mm 的區域中成片地大量生成，而且有幾種特殊的$(thing)植物$()會生長在黏土之上。"
+            "text": "$(thing)黏土$()是非常實用、用途廣泛的陶器材料，但一開始可能不好找。黏土通常藏在草皮底下，常見於兩種地方。首先，在$(l:the_world/climate#rainfall)年降雨量$()至少 175mm 的區域，到處都有成片的黏土，通常可從某些$(thing)植物$()判斷位置。"
         },
         {
             "type": "patchouli:multiblock",
@@ -53,20 +53,20 @@
         },
         {
             "type": "patchouli:text",
-            "text": "有幾種植物指示了附近可能存在黏土，它們是：$(thing)蹄蓋蕨$()、$(thing)美人蕉$()、$(thing)一枝黃花$()、$(thing)蒲葦$()、$(thing)分藥花$()、和$(thing)水生美人蕉$()。其次，黏土也會在水源附近，比如河流、湖泊、或水池邊，以小塊的形式生成。$(br2)和石子類似，黏土也可以被塑形成有用的物品。需要手持五個黏土球才能塑形。不同於石子塑形，捏壞了的黏土並不會消失，只要關閉黏土塑形介面重新嘗試即可。"
+            "text": "以下植物都表示附近可能有黏土：$(thing)蹄蓋蕨$()、$(thing)美人蕉$()、$(thing)一枝黃花$()、$(thing)蒲葦$()、$(thing)分藥花$()和$(thing)水生美人蕉$()。其次，河流、湖泊或池塘等水源附近也會生成小塊黏土。$(br2)黏土和石頭一樣可以塑形成新物品，需要手持五個黏土球。不同於石頭，捏壞了不會損失黏土，只要關閉塑形介面重新嘗試即可。"
         },
         {
             "type": "patchouli:image",
             "images": [
                 "tfc:textures/gui/book/gui/clay_knapping.png"
             ],
-            "text": "打製介面。",
+            "text": "塑形介面。",
             "border": false
         },
         {
             "type": "patchouli:text",
             "anchor": "vessel",
-            "text": "小缸就是這樣的物品之一。和所有陶器一樣，它必須先$(l:https://en.wikipedia.org/wiki/Pottery)燒製$()才能使用。燒製是將物品$(l:game_mechanics/heating)加熱$()到使黏土轉化為堅硬$(thing)陶瓷$()材料的過程，需要加熱到 1400 °C，也就是$(e)$(bold)$(t:黃白)黃白$()。$(br2)要在遊戲初期做到這一點，你需要使用$(l:craftsmanship/pit_kiln)坑窯$()。",
+            "text": "小缸就是這樣的物品。和所有陶器一樣，必須先$(l:https://en.wikipedia.org/wiki/Pottery)燒製$()才能使用。燒製是將物品$(l:game_mechanics/heating)加熱$()，讓黏土轉化為堅硬的$(thing)陶瓷$()，需要加熱到 1400 °C，也就是$(e)$(bold)$(t:黃白)黃白$()。$(br2)遊戲初期要用$(l:craftsmanship/pit_kiln)坑窯$()燒製。",
             "title": "小缸"
         },
         {
@@ -77,39 +77,39 @@
         {
             "type": "patchouli:text",
             "anchor": "jug",
-            "text": "另一種實用的陶器是$(thing)陶壺$()。它可以用來裝取並$(thing)飲用$()淡水等流體。$(br2)使用時，只要手持陶壺對世界中的流體按下$(item)$(k:key.use)$()即可。然後使用陶壺就能從中飲用。陶壺是一次可以裝$(thing)100 mB$()流體的$(l:cooking/drinking_containers)飲水容器$()。",
+            "text": "另一種實用的陶器是$(thing)陶壺$()，可以裝取並$(thing)飲用$()淡水等流體。$(br2)手持陶壺對世界中的流體按 $(item)$(k:key.use)$() 即可裝取，再使用陶壺就能飲用。陶壺是一次可裝$(thing)100 mB$()流體的$(l:cooking/drinking_containers)飲水容器$()。",
             "title": "陶壺"
         },
         {
             "type": "patchouli:text",
             "anchor": "mold",
-            "text": "製作$(thing)模具$()也需要黏土。模具可以倒入熔融金屬，金屬最終會凝固成模具的形狀。接著對模具按下$(item)$(k:key.use)$()或將它放入合成格，即可取出物品，並可能取回模具。$(br2)除了$(thing)錠模具$()以外，所有模具都無法容納青銅時代以後的熔融金屬。",
+            "text": "製作$(thing)模具$()也需要黏土。倒入模具的熔融金屬最終會凝固成模具的形狀，接著對模具按 $(item)$(k:key.use)$() 或將它放入合成格，即可取出物品，模具也可能保留下來。$(br2)除了$(thing)錠模具$()以外，所有模具都無法容納青銅時代以後的熔融金屬。",
             "title": "模具"
         },
         {
             "type": "patchouli:spotlight",
             "title": "模具種類",
             "item": "tag:tfc:unfired_molds,tag:tfc:fired_molds",
-            "text": "模具有許多不同的種類，其中最實用的是$(item)錠$()模具和$(item)工具頭$()模具。$(br)錠模具需要$(thing)144mb$()的熔融金屬才能產出一個錠。$(br)工具頭模具取代了傳統以打製石頭製作工具的方式，通常需要$(thing)144mB$()的流體，不過有些工具類型可能需要更少或更多。"
+            "text": "模具有許多種類，最實用的是$(item)錠$()模具和$(item)工具頭$()模具。$(br)錠模具需要$(thing)144mb$()的熔融金屬才能產出一個錠。$(br)工具頭模具取代了傳統的打製石器，通常需要$(thing)144mB$()的流體，但有些工具可能需要更少或更多。"
         },
         {
             "type": "tfg:heat_recipe",
             "recipe": "tfc:heating/ingot_mold",
-            "text": "接著模具需要燒製――就像所有黏土物品一樣――才能使用，例如在$(l:craftsmanship/pit_kiln)坑窯$()中燒製。$(br2)燒製完成後，就可以倒入熔融金屬。金屬充分冷卻後即可取出。"
+            "text": "模具和所有黏土物品一樣，需要燒製(例如在$(l:craftsmanship/pit_kiln)坑窯$()中)才能使用。$(br2)燒製後即可倒入熔融金屬，金屬充分冷卻後就能取出。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tfc:ceramic/ingot_mold{tank:{\"Amount\":100,\"FluidName\":\"gtceu:copper\"}}",
             "title": "澆鑄",
             "link_recipes": false,
-            "text": "你很可能會遇到產出少量多餘熔融金屬的情況。建議將它倒入錠模具中，留到下次需要澆鑄該金屬時使用。在進入蒸汽時代的加工之前，試圖做出剛好 144mB 的完美合金比例既不可行，也不值得花費心力。"
+            "text": "你很可能會產出少量多餘的熔融金屬，建議倒入錠模具，留到下次澆鑄該金屬時使用。進入蒸汽時代的加工之前，想做出剛好 144mB 的完美合金比例既不可行，也不值得。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "kaolin_clay",
             "title": "高嶺土",
             "item": "tfc:kaolin_clay",
-            "text": "製作$(l:craftsmanship/pottery#fire_clay)耐火黏土$()需要高嶺土。它會生成在 Y=75-110 之間的高原、起伏丘陵和高地(以及它們的$(t:地表岩石為石灰岩、白雲岩、白堊岩或大理岩)喀斯特$()$(t:石灰、天坑、溶蝕、石林或峰林)變體$())、古老山脈和盾狀火山中，$(l:the_world/climate#temperature)溫度$()至少 18°C，且$(l:the_world/climate#rainfall)降雨量$()至少 300mm。$(thing)血百合$()花會長在高嶺土上，而高嶺土可能位於其下方最深 35 格處。"
+            "text": "製作$(l:craftsmanship/pottery#fire_clay)耐火黏土$()需要高嶺土。高嶺土生成在 Y=75-110 之間的高原、起伏丘陵和高地(及其$(t:地表岩石為石灰岩、白雲岩、白堊岩或大理岩)喀斯特$()$(t:石灰、天坑、溶蝕、石林或峰林)變體$())、古老山脈和盾狀火山，需要$(l:the_world/climate#temperature)溫度$()至少 18°C、$(l:the_world/climate#rainfall)降雨量$()至少 300mm。$(thing)血百合$()花會長在高嶺土上，高嶺土可能位於其下方最深 35 格處。"
         },
         {
             "type": "tfg:multimultiblock",
@@ -187,7 +187,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "除非你在建立世界時選擇了$(item)熱帶$()氣候，否則取得高嶺土的旅程可能很漫長，但這總會是 TerraFirmaCraft(群巒傳說) 中令人難忘的一段經歷。為旅程做好準備很重要，例如準備$(l:logistics/exploration_gear)裝備$()、$(l:logistics/boats)船$()、$(l:logistics/personal_storage)額外的儲物空間$()、$(l:cooking/food_and_water)食物和飲水$()，以及一把用來挖掘的$(item)鏟子$()。$(br2)一般來說，往$(thing)東南方$()走可以提高溫度和濕度，以抵達理想的氣候區。"
+            "text": "除非建立世界時選擇了$(item)熱帶$()氣候，否則取得高嶺土的旅程可能很漫長，但總會是群巒傳說中難忘的經歷。出發前要做好準備，例如$(l:logistics/exploration_gear)裝備$()、$(l:logistics/boats)船$()、$(l:logistics/personal_storage)額外的儲物空間$()、$(l:cooking/food_and_water)食物和飲水$()，以及一把用來挖掘的$(item)鍬$()。$(br2)一般來說，往$(thing)東南方$()走溫度和濕度會升高，可抵達理想的氣候區。"
         },
         {
             "type": "patchouli:text",
@@ -197,23 +197,23 @@
             "type": "patchouli:spotlight",
             "item": "tfc:powder/kaolinite",
             "anchor": "kaolinite_powder",
-            "text": "高嶺石粉是加熱$(l:craftsmanship/pottery#kaolin_clay)高嶺土$()製成的。不過，這個過程並不完美，只有 20% 的黏土會變成粉末！$(br2)要在早期大量生產高嶺石粉，建議將高嶺土方塊裝滿小缸，再將這些小缸放入$(l:craftsmanship/pit_kiln)坑窯$()中就地燒製。用這個方法，每座坑窯一次最多可以燒製 1,024 個高嶺土。"
+            "text": "加熱$(l:craftsmanship/pottery#kaolin_clay)高嶺土$()可製成高嶺石粉，但過程並不完美，只有 20% 的黏土會變成粉末！$(br2)早期要大量生產高嶺石粉，建議將高嶺土方塊裝滿小缸，再把小缸放入$(l:craftsmanship/pit_kiln)坑窯$()就地燒製。用這個方法，每座坑窯一次最多可燒製 1,024 個高嶺土。"
         },
         {
             "type": "patchouli:text",
-            "text": "你需要的高嶺石粉數量非常龐大。如果你長途跋涉去取得高嶺土，並希望這趟旅程物盡其用，建議至少取得 7 組(448 個)$(n)高嶺石粉$()後再回來。這能確保你有足夠的量建造全尺寸的$(l:craftsmanship/blast_furnace)高爐$()、$(l:craftsmanship/crucible)坩堝$()和模具。你也應該帶回至少 20 個高嶺土方塊用於$(l:craftsmanship/glassworking)玻璃加工$()。"
+            "text": "你需要非常大量的高嶺石粉。如果長途跋涉去取得高嶺土，又想讓這趟旅程物盡其用，建議至少取得 7 組(448 個)$(n)高嶺石粉$()再回來，才足夠建造全尺寸的$(l:craftsmanship/blast_furnace)高爐$()、$(l:craftsmanship/crucible)坩堝$()和模具。另外也應帶回至少 20 個高嶺土方塊，用於$(l:craftsmanship/glassworking)玻璃加工$()。"
         },
         {
             "type": "patchouli:spotlight",
             "title": "耐火黏土",
             "anchor": "fire_clay",
             "item": "tfc:fire_clay",
-            "text": "耐火黏土能做的東西不多，但每個都是科技進步上不可或缺的要素！耐火黏土比普通黏土能承受更高的高溫，因此某些進階設備只能用耐火黏土建造！"
+            "text": "耐火黏土的用途不多，但每項都很重要。它是黏土更堅固的變體，耐熱性更好，用來製作需要承受極高溫的東西！"
         },
         {
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/fire_clay",
-            "text": "耐火黏土是用在$(l:craftsmanship/quern)手推磨$()中磨碎的$(thing)石墨$()以及$(l:craftsmanship/pottery#kaolinite_powder)高嶺石粉$()製成的。$(br2)蒸汽機器會解鎖更有效率的耐火黏土合成方式，所以你可能想保留一些材料留待日後使用。"
+            "text": "耐火黏土是用$(l:craftsmanship/quern)手推磨$()磨碎的$(thing)石墨$()加上$(l:craftsmanship/pottery#kaolinite_powder)高嶺石粉$()製成。$(br2)蒸汽機器會解鎖更有效率的合成方式，或許可以保留一些材料日後再用。"
         },
         {
             "type": "tfg:knapping_recipe",

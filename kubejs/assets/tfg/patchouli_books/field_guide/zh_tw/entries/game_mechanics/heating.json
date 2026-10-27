@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "加熱物品是將一種物品轉化為另一種物品，或將物品轉化為流體的方法。物品可以用許多方式加熱――例如$(l:craftsmanship/firepit)篝火$()、$(l:craftsmanship/pit_kiln)坑窯$()或$(l:craftsmanship/charcoal_forge)木炭爐$()等等。不過，它們的運作方式都相同。當你將物品放入這些裝置中，物品會逐漸開始升溫。這可以在物品的提示框中看到。"
+			"text": "加熱可以將一種物品轉化為另一種物品或流體。加熱的方式很多，例如$(l:craftsmanship/firepit)篝火$()、$(l:craftsmanship/pit_kiln)坑窯$()或$(l:craftsmanship/charcoal_forge)木炭爐$()，但運作方式都相同：將物品放入這些裝置後，物品會逐漸升溫，可在物品的提示框中看到。"
 		},
 		{
 			"type": "patchouli:text",
@@ -24,7 +24,7 @@
 			"item": "tag:tfchotornot:tongs",
 			"title": "火鉗",
 			"anchor": "tongs",
-			"text": "高溫物品燙得無法徒手拿取！當物品達到$(t:可在 tfchotornot-common.toml 中設定)$(4)淡紅 *$()或更高溫度時，就會變得$(c)太燙而無法拿取$()！你必須在$(thing)副手$()拿著$(item)火鉗$()，才能避免燙傷自己。某些$(3)極冷$()的物品也是如此，例如$(item)藍冰$()。"
+			"text": "高溫物品燙得無法徒手拿取！物品達到$(t:可在 tfchotornot-common.toml 中設定)$(4)淡紅 *$()或更高溫度時，就會$(c)太燙而無法拿取$()！必須在$(thing)副手$()拿著$(item)火鉗$()才不會燙傷。某些$(3)極冷$()的物品也是如此，例如$(item)藍冰$()。"
 		},
 		{
 			"type": "patchouli:text",
@@ -41,7 +41,7 @@
 			"type": "tfg:anvil_recipe",
 			"title": "金屬火鉗零件",
 			"recipe": "tfchotornot:anvil/tong_part/wrought_iron",
-			"text": "$(item)木火鉗$()容易製作，但耐久度很低。考慮升級吧！$(br)$(item)金屬火鉗$()的耐久度高得多，而且可以修理。$(br)請注意，當物品欄中有高溫物品時，所有火鉗都會損耗耐久度，物品越多損耗越大。把它們丟($(item)$(k:key.drop)$())進水裡可以快速冷卻！"
+			"text": "$(item)木火鉗$()容易製作，但耐久度很低，考慮升級吧！$(br)$(item)金屬火鉗$()耐久度高得多，還能修理。$(br)注意，物品欄中有高溫物品時，所有火鉗都會損耗耐久度，物品越多損耗越大。把高溫物品丟($(item)$(k:key.drop)$())進水裡可以快速冷卻！"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -55,7 +55,7 @@
 			"item": "tfc:metal/chestplate/blue_steel,tfc:metal/chestplate/red_steel,create:netherite_backtank,gtceu:hazmat_chestpiece,ad_astra:space_suit,ad_astra:netherite_space_suit,gtceu:quarktech_chestplate,gtceu:advanced_quarktech_chestplate",
 			"anchor": "equipment",
 			"title": "其他裝備",
-			"text": "最後，某些裝備也能在拿取這些物品時安全地保護你，例如$(item)藍鋼胸甲$()可以保護你不被高溫物品燙傷。"
+			"text": "最後，某些裝備也能在拿取這些物品時保護你，例如$(item)藍鋼胸甲$()能防止被高溫物品燙傷。"
 		},
 		{
 			"type": "patchouli:relations",

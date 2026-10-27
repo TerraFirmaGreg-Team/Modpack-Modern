@@ -12,7 +12,7 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "text": "肥料用於為$(l:agriculture/growing_crops)作物$()補充養分。手持肥料對$(thing)耕地$()、$(l:agriculture/greenhouse#planters)種植盆$()或$(thing)作物$()按下$(item)$(k:key.use)$()即可補充養分。出現粒子即表示肥料已施加。$(br)你可以在肥料的提示框中查看養分資訊。接下來幾頁會列出一些可用的肥料。",
+            "text": "肥料能為$(l:agriculture/growing_crops)作物$()補充養分。手持肥料對$(thing)耕地$()、$(l:agriculture/greenhouse#planters)種植盆$()或$(thing)作物$()按 $(item)$(k:key.use)$() 即可施肥，出現粒子即表示成功。$(br)肥料的提示框會顯示養分資訊，接下來幾頁列出一些可用的肥料。",
             "title": "施肥"
         },
         {
@@ -69,7 +69,7 @@
             "anchor": "pure_fertilizers",
             "title": "純肥料",
             "link_recipes": false,
-            "text": "有多種方法可以製造或提取純肥料。這些肥料可以作為提升耕地養分的濃縮手段。$(br)$(li)$(d)鉀：100$()$(br)或$(li)$(b)氮：100$()$(br)或$(li)$(6)磷：100$()"
+            "text": "純肥料有多種製造或提取方法，能以濃縮的方式提升耕地養分。$(br)$(li)$(d)鉀：100$()$(br)或$(li)$(b)氮：100$()$(br)或$(li)$(6)磷：100$()"
         },
         {
             "type": "patchouli:spotlight",

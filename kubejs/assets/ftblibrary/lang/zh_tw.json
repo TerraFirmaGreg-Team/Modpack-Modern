@@ -6,7 +6,7 @@
   "dimension.minecraft.overworld": "主世界",
   "dimension.minecraft.the_end": "終界",
   "dimension.minecraft.the_nether": "地獄",
-  "ftblibrary.client_settings": "客戶端設定",
+  "ftblibrary.client_settings": "用戶端設定",
   "ftblibrary.client_settings.tooltips.fluid_modname": "流體選擇介面顯示模組名稱",
   "ftblibrary.client_settings.tooltips.image_modname": "圖片選擇介面顯示模組名稱",
   "ftblibrary.client_settings.tooltips.item_modname": "物品選擇介面顯示模組名稱",
@@ -95,7 +95,7 @@
   "sidebar_button.ftblibrary.toggle.night.tooltip": "設為夜晚",
   "sidebar_button.ftblibrary.toggle.rain": "切換下雨",
   "sidebar_button.ftblibrary.toggle.rain.tooltip": "晴天與雨天間切換",
-  "sidebar_group.ftblibrary.cheat": "FTB Library(FTB 函式庫) — 作弊",
-  "sidebar_group.ftblibrary.info": "FTB Library(FTB 函式庫) — 資訊",
-  "sidebar_group.ftblibrary.util": "FTB Library(FTB 函式庫) — 工具"
+  "sidebar_group.ftblibrary.cheat": "FTB 函式庫 — 作弊",
+  "sidebar_group.ftblibrary.info": "FTB 函式庫 — 資訊",
+  "sidebar_group.ftblibrary.util": "FTB 函式庫 — 工具"
 }

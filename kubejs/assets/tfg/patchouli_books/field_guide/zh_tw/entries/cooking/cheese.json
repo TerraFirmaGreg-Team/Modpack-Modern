@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "要製作起司，必須先讓牛奶$(thing)凝結$()。凝結牛奶需要$(thing)凝乳酶$()。凝乳酶來自$(thing)反芻$()動物的胃，包括$(l:the_world/wild_animals#yak)犛牛$()、$(l:the_world/wild_animals#cow)牛$()、$(l:the_world/wild_animals#sheep)綿羊$()、$(l:the_world/wild_animals#goat)山羊$()和$(l:the_world/wild_animals#musk_ox)麝牛$()。將牛奶和凝乳酶一起密封在$(item)木桶$()中 4 小時即可凝結牛奶。"
+      "text": "製作起司前，必須先讓牛奶$(thing)凝結$()，這需要$(thing)凝乳酶$()。凝乳酶來自$(thing)反芻$()動物的胃，包括$(l:the_world/wild_animals#yak)犛牛$()、$(l:the_world/wild_animals#cow)牛$()、$(l:the_world/wild_animals#sheep)綿羊$()、$(l:the_world/wild_animals#goat)山羊$()和$(l:the_world/wild_animals#musk_ox)麝牛$()。將牛奶和凝乳酶一起密封在$(item)大桶$()中 4 小時即可。"
     },
     {
       "type": "patchouli:spotlight",
@@ -14,7 +14,7 @@
       "item": {
         "tag": "tfg:foods/cheese_curds"
       },
-      "text": "接著將凝結的牛奶和$(thing)起司布$()一起密封在木桶中，即可轉化為$(thing)起司塊$()。$(l)起司布無法重複使用$()。$(br)起司塊可以和幾種材料混合後油炸，做成$(item)裹漿起司塊$()，或熟成為濕起司和乾起司。"
+      "text": "接著將凝結的牛奶和$(thing)起司布$()一起密封在大桶中，即可轉化為$(thing)起司塊$()。$(l)起司布無法重複使用$()。$(br)起司塊可以和幾種材料混合後油炸，做成$(item)裹漿起司塊$()，或熟成為濕起司和乾起司。"
     },
     {
       "type": "patchouli:spotlight",
@@ -23,7 +23,7 @@
       "item": {
         "tag": "firmalife:cheese_wheels"
       },
-      "text": "起司輪是用$(item)起司塊$()製成的方塊。為了延長保存期限，起司輪應放在$(l:cooking/decay#cellar)地窖$()中$(thing)熟成$()。要從起司輪取得可食用的起司，需手持$(thing)刀$()按下$(item)$(k:key.use)$()從輪上切下。如果起司輪被切開或破壞，熟成進度就會消失！$(br)$(thing)乾起司$()是用起司塊和鹽製成，而$(thing)濕起司$()則是在海水中熟成。"
+      "text": "起司輪是用$(item)起司塊$()製成的方塊，放在$(l:cooking/decay#cellar)地窖$()中$(thing)熟成$()可延長保存期限。手持$(thing)刀$()按 $(item)$(k:key.use)$() 即可從起司輪切下可食用的起司。起司輪一旦被切開或破壞，熟成進度就會消失！$(br)$(thing)乾起司$()用起司塊和鹽製成，$(thing)濕起司$()則在海水中熟成。"
     },
     {
       "type": "tfg:multimultiblock",

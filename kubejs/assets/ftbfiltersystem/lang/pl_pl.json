@@ -2,7 +2,7 @@
   "filter.ftbfiltersystem.and.name": "Wszystkie z",
   "filter.ftbfiltersystem.and.tooltip": "Filtr złożony: ten filtr pasuje, jeśli WSZYSTKIE filtry podrzędne pasują.",
   "filter.ftbfiltersystem.block.name": "Jest blokiem",
-  "filter.ftbfiltersystem.block.tooltip": "Prosty filtr, który pasuje, jeśli przedmiot jest blokiem możliwym do położenia.",
+  "filter.ftbfiltersystem.block.tooltip": "Prosty filtr dopasowujący przedmioty będące blokami, które można postawić.",
   "filter.ftbfiltersystem.custom.name": "Niestandardowa",
   "filter.ftbfiltersystem.durability.name": "Wytrzymałość",
   "filter.ftbfiltersystem.durability.tooltip": "Dopasuje przedmiot na podstawie jego pozostałej wytrzymałości.\nPrzedmioty bez wytrzymałości traktuje się, jakby posiadały wytrzymałość 0.",

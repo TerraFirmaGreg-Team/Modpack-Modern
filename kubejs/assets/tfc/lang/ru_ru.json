@@ -4960,7 +4960,7 @@
 	"tfc.enum.weight.medium": "Средний",
 	"tfc.enum.weight.very_heavy": "Очень тяжелый",
 	"tfc.enum.weight.very_light": "Очень лёгкий",
-	"tfc.field_guide.book_landing_text": "Добро пожаловать в $(bold)$(#ff0fb7)TerraFirma$(#595959)Greg$()!$(br)Это руководство станет одним из твоих главных источников информации во время игры, поэтому, пожалуйста, найди время, чтобы прочесть его.$(br)$(bold)Веб-версия$():$(li)$(l:terrafirmagreg.team)Полевое руководство$().$(br2)$(bold)СОВЕТ$(): Нажми на $(italic)Указатель статей$() и $(d)начни вводить текст для поиска$().",
+	"tfc.field_guide.book_landing_text": "Добро пожаловать в $(bold)$(#ff0fb7)TerraFirma$(#595959)Greg$()!$(br)Это руководство станет одним из твоих главных источников информации во время игры, поэтому, пожалуйста, найди время, чтобы прочесть его.$(br)$(bold)Веб-версия$():$(li)$(l:https://wiki.terrafirmagreg.team/modern/field-guide/ru_ru/)Полевое руководство$().$(br2)$(bold)СОВЕТ$(): Нажми на $(italic)Указатель статей$() и $(d)начни вводить текст для поиска$().",
 	"tfc.field_guide.book_name": "TerraFirmaCraft",
 	"tfc.fishing.no_bait": "Для рыбалки нужна наживка!",
 	"tfc.fishing.pulled_too_hard": "Вы потянули слишком сильно, и рыба сорвалась с крючка и съела наживку",
