@@ -73,5 +73,7 @@
   "gui.comforts.config.sleepingBagsStopPhantoms.name": "A hálózsákok véget vetnek a fantomoknak.",
   "item.comforts.hammock.placement.tooltip": "A %s elhelyezéséhez szükséges.",
   "item.comforts.rope_and_nail.placement.tooltip": "Függőágyak elhelyezésére szolgál.",
-  "item.comforts.sleeping_bag.auto_use.tooltip": "Automatikusan alvó módba vált.\nElhelyezéséhez guggolás közben használd."
+  "item.comforts.sleeping_bag.auto_use.tooltip": "Automatikusan alvó módba vált.\nElhelyezéséhez guggolás közben használd.",
+  "itemGroup.comforts": "Comforts",
+  "itemGroup.comforts.general": "Comforts"
 }
