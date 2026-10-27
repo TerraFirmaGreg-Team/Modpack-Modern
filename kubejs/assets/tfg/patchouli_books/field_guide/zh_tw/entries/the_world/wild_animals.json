@@ -11,7 +11,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li2)$(l:the_world/wild_animals#donkey)驢$()$(li2)$(l:the_world/wild_animals#mule)騾$()$(li2)$(l:the_world/wild_animals#horse)馬$()$(li2)$(l:the_world/wild_animals#dromedary_camel)單峰駱駝$()$(li2)$(l:the_world/wild_animals#bactrian_camel)雙峰駱駝$()$(li)$(bold)$(l:the_world/wild_animals#predators)掠食者$()$(li2)$(l:the_world/wild_animals#polar_bear)北極熊$()$(li2)$(l:the_world/wild_animals#black_bear)黑熊$()$(li2)$(l:the_world/wild_animals#grizzly_bear)灰熊$()$(li2)$(l:the_world/wild_animals#cougar)美洲獅$()$(li2)$(l:the_world/wild_animals#panther)黑豹$()$(li2)$(l:the_world/wild_animals#lion)獅子$()$(li2)$(l:the_world/wild_animals#tiger)老虎$()$(li2)$(l:the_world/wild_animals#sabertooth)劍齒虎$()$(li2)$(l:the_world/wild_animals#wolf)狼$()"
+            "text": "$(li2)$(l:the_world/wild_animals#donkey)驢$()$(li2)$(l:the_world/wild_animals#mule)騾子$()$(li2)$(l:the_world/wild_animals#horse)馬$()$(li2)$(l:the_world/wild_animals#dromedary_camel)單峰駱駝$()$(li2)$(l:the_world/wild_animals#bactrian_camel)雙峰駱駝$()$(li)$(bold)$(l:the_world/wild_animals#predators)掠食者$()$(li2)$(l:the_world/wild_animals#polar_bear)北極熊$()$(li2)$(l:the_world/wild_animals#black_bear)黑熊$()$(li2)$(l:the_world/wild_animals#grizzly_bear)灰熊$()$(li2)$(l:the_world/wild_animals#cougar)美洲獅$()$(li2)$(l:the_world/wild_animals#panther)黑豹$()$(li2)$(l:the_world/wild_animals#lion)獅子$()$(li2)$(l:the_world/wild_animals#tiger)老虎$()$(li2)$(l:the_world/wild_animals#sabertooth)劍齒虎$()$(li2)$(l:the_world/wild_animals#wolf)狼$()"
         },
         {
             "type": "patchouli:text",
@@ -33,13 +33,13 @@
             "type": "patchouli:text",
             "anchor": "intro",
             "title": "動物簡介",
-            "text": "動物可以分成幾個類別：$(l:the_world/wild_animals#livestock)牲畜$()、$(l:the_world/wild_animals#predators)掠食者$()、$(l:the_world/wild_animals#prey)獵物$()和$(l:the_world/wild_animals#aquatic)水生$()動物。絕大多數動物被殺死後都會掉落肉。不過有些肉吃了可能不安全，尤其是生吃。"
+            "text": "動物可分為幾類：$(l:the_world/wild_animals#livestock)牲畜$()、$(l:the_world/wild_animals#predators)掠食者$()、$(l:the_world/wild_animals#prey)獵物$()和$(l:the_world/wild_animals#aquatic)水生$()動物。絕大多數動物被殺死後會掉落肉，不過有些肉吃了可能不安全，尤其是生吃。"
         },
         {
             "type": "patchouli:text",
             "title": "牲畜",
             "anchor": "livestock",
-            "text": "$(thing)牲畜$()是玩家可以馴服和繁殖的動物。牲畜分為$(thing)雄性$()和$(thing)雌性$()，所以收集野生牲畜時，盡量每種性別各抓一隻以便繁殖。"
+            "text": "$(thing)牲畜$()是玩家可以馴服和繁殖的動物，分為$(thing)雄性$()和$(thing)雌性$()，收集野生牲畜時盡量公母各抓一隻以便繁殖。"
         },
         {
             "type": "patchouli:text",
@@ -188,14 +188,14 @@
             "type": "patchouli:text",
             "anchor": "mule",
             "text": "$(bold)$(l:the_world/climate#temperature)生成溫度$()：> -15°C$(br)$(bold)$(l:the_world/climate#rainfall)生成降雨量$()：130 — 400mm$(br)$(bold)生成區域$()：平原，由馬和驢繁殖而來。$(br)$(bold)類別$()：$(l:agriculture/animal_husbandry#equines)馬科動物$()$(br)$(bold)食性$()：$(l:cooking/food_and_water#grain)穀物$()和$(l:cooking/food_and_water#fruit)水果$()$(br)$(bold)最多子代$()：1$(br)$(bold)妊娠期$()：19 天$(br)$(bold)成長時間$()：80 天$(br)$(bold)$(l:agriculture/animal_husbandry#uses)最大互動次數$()：60",
-            "title": "騾"
+            "title": "騾子"
         },
         {
             "type": "patchouli:entity",
             "entity": "tfc:mule{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
             "scale": 0.6,
             "name": " ",
-            "text": "騾"
+            "text": "騾子"
         },
         {
             "type": "patchouli:text",
@@ -239,7 +239,7 @@
         {
             "type": "patchouli:text",
             "anchor": "predators",
-            "text": "$(thing)掠食者$()是會攻擊玩家的動物。牠們分為只在夜間狩獵的$(thing)夜行性$()，以及只在白天狩獵的$(thing)日行性$()。掠食者可能是中立或敵對的，取決於牠們最近是否殺死過目標。掠食者有自己會守護的領地：只要你跑得夠遠，掠食者就會停止追趕並返回領地。",
+            "text": "$(thing)掠食者$()是會攻擊玩家的動物，分為只在夜間狩獵的$(thing)夜行性$()和只在白天狩獵的$(thing)日行性$()。掠食者是中立還是敵對，取決於最近是否殺死過目標。牠們會守護自己的領地，只要跑得夠遠，牠們就會停止追趕並返回領地。",
             "title": "掠食者"
         },
         {
@@ -264,7 +264,7 @@
             "scale": 0.55,
             "name": "黑熊",
             "anchor": "black_bear",
-            "text": "黑熊生成於較溫暖潮濕氣候的森林中，需要$(l:the_world/climate#temperature)溫度$() 5 至 20°C，以及至少 250mm 的$(l:the_world/climate#rainfall)降雨量$()。"
+            "text": "黑熊在較溫暖潮濕氣候的森林中生成，$(l:the_world/climate#temperature)溫度$()為 5 至 20°C，且$(l:the_world/climate#rainfall)降雨量$()至少 250mm。"
         },
         {
             "type": "patchouli:entity",
@@ -304,28 +304,28 @@
             "scale": 0.6,
             "name": "劍齒虎",
             "anchor": "sabertooth",
-            "text": "劍齒虎可在任何 0°C 以上的$(l:the_world/climate#temperature)溫度$()、任何 250mm 以上的$(l:the_world/climate#rainfall)降雨量$()生成。"
+            "text": "劍齒虎在$(l:the_world/climate#temperature)溫度$() 0°C 以上、$(l:the_world/climate#rainfall)降雨量$() 250mm 以上的任何地區生成。"
         },
         {
             "type": "patchouli:entity",
             "entity": "tfc:wolf",
             "anchor": "wolf",
             "scale": 0.7,
-            "text": "狼可在任何低於 22°C 的$(l:the_world/climate#temperature)溫度$()生成，$(l:the_world/climate#rainfall)降雨量$()介於 70 至 480mm。牠們會成群狩獵。餵食狼足夠次數後，就能將牠馴服成$(l:game_mechanics/pets)狗$()。"
+            "text": "狼在$(l:the_world/climate#temperature)溫度$()低於 22°C、$(l:the_world/climate#rainfall)降雨量$()介於 70 至 480mm 的地區生成。牠們會成群狩獵。餵食狼足夠次數後，就能將牠馴服成$(l:game_mechanics/pets)狗$()。"
         },
         {
             "type": "patchouli:entity",
             "entity": "tfc:direwolf",
             "anchor": "direwolf",
             "scale": 0.7,
-            "text": "恐狼可在任何低於冰點的$(l:the_world/climate#temperature)溫度$()生成，$(l:the_world/climate#rainfall)降雨量$()介於 150 至 420mm。牠們會成群狩獵，體型比一般的狼大，而且無法馴服。"
+            "text": "恐狼在$(l:the_world/climate#temperature)溫度$()低於冰點、$(l:the_world/climate#rainfall)降雨量$()介於 150 至 420mm 的地區生成。牠們會成群狩獵，體型比一般的狼大，且無法馴服。"
         },
         {
             "type": "patchouli:entity",
             "entity": "tfc:hyena",
             "anchor": "hyena",
             "scale": 0.7,
-            "text": "鬣狗可在任何高於 15°C 的$(l:the_world/climate#temperature)溫度$()生成，$(l:the_world/climate#rainfall)降雨量$()介於 80 至 380mm。牠們會成群狩獵，而且無法馴服。"
+            "text": "鬣狗在$(l:the_world/climate#temperature)溫度$()高於 15°C、$(l:the_world/climate#rainfall)降雨量$()介於 80 至 380mm 的地區生成。牠們會成群狩獵，無法馴服。"
         },
         {
             "type": "patchouli:entity",
@@ -340,7 +340,7 @@
             "entity": "tfc:ocelot",
             "anchor": "ocelot",
             "scale": 0.7,
-            "text": "山貓會攻擊小型動物。牠在森林中生成，$(l:the_world/climate#temperature)溫度$()為 15 至 30°C，$(l:the_world/climate#rainfall)降雨量$()介於 300 至 500mm。餵食山貓足夠次數後，就能將牠馴服成$(l:game_mechanics/pets)貓$()。山貓可以吃生魚"
+            "text": "山貓會攻擊小型動物，在$(l:the_world/climate#temperature)溫度$() 15 至 30°C、$(l:the_world/climate#rainfall)降雨量$()介於 300 至 500mm 的森林中生成。餵食足夠次數後，就能將牠馴服成$(l:game_mechanics/pets)貓$()。山貓可以吃生魚"
         },
         {
             "type": "patchouli:text",
@@ -400,7 +400,7 @@
             "scale": 0.7,
             "name": "狐狸",
             "anchor": "fox",
-            "text": "狐狸喜歡吃灌木上的莓果。可以在$(l:the_world/climate#temperature)溫度$()低於 25°C、$(l:the_world/climate#rainfall)降雨量$()介於 130 至 400mm 的森林中找到牠們。"
+            "text": "狐狸喜歡吃灌木上的莓果，出沒在$(l:the_world/climate#temperature)溫度$()低於 25°C、$(l:the_world/climate#rainfall)降雨量$()介於 130 至 400mm 的森林中。"
         },
         {
             "type": "patchouli:entity",
@@ -415,7 +415,7 @@
             "scale": 0.6,
             "name": "馴鹿",
             "anchor": "caribou",
-            "text": "北美馴鹿在$(l:the_world/climate#temperature)溫度$()低於 -9°C、$(l:the_world/climate#rainfall)降雨量$()介於 110 至 500mm 的地區生成。"
+            "text": "馴鹿在$(l:the_world/climate#temperature)溫度$()低於 -9°C、$(l:the_world/climate#rainfall)降雨量$()介於 110 至 500mm 的地區生成。"
         },
         {
             "type": "patchouli:entity",
@@ -515,7 +515,7 @@
         {
             "type": "patchouli:text",
             "anchor": "fish",
-            "text": "$(thing)魚類$()是在水中游動的小型生物。大多數都可以用來$(l:agriculture/fishing)釣魚$()。有些偏好海洋，有些偏好河流或湖泊。",
+            "text": "$(thing)魚類$()是在水中游動的小型生物，大多能透過$(l:agriculture/fishing)釣魚$()捕獲，有些偏好海洋，有些偏好河流或湖泊。",
             "title": "魚類"
         },
         {
@@ -569,7 +569,7 @@
         {
             "type": "patchouli:text",
             "anchor": "shellfish",
-            "text": "$(thing)甲殼類$()是生活在水底的小型動物。牠們無法用釣的，但會掉落貝殼，可以食用或製成$(thing)助熔劑$()。甲殼類可以當作釣魚用的$(l:agriculture/fishing)魚餌$()。",
+            "text": "$(thing)甲殼類$()是生活在水底的小型動物，無法用釣的，但會掉落貝殼，可食用或製成$(thing)助熔劑$()。甲殼類也可以當作$(l:agriculture/fishing)魚餌$()。",
             "title": "甲殼類"
         },
         {
@@ -594,7 +594,7 @@
             "scale": 0.7,
             "name": "小龍蝦",
             "anchor": "crayfish",
-            "text": "小龍蝦和龍蝦很像，但會在河流和湖泊中生成。需要$(l:the_world/climate#temperature)溫度$()至少 5°C，且$(l:the_world/climate#rainfall)降雨量$()至少 125mm。"
+            "text": "小龍蝦和龍蝦很像，但生成於河流和湖泊，需要$(l:the_world/climate#temperature)溫度$()至少 5°C、$(l:the_world/climate#rainfall)降雨量$()至少 125mm。"
         },
         {
             "type": "patchouli:entity",
@@ -645,7 +645,7 @@
         {
             "type": "patchouli:text",
             "anchor": "squid",
-            "text": "魷魚可以在任何深海中生成。牠們會掉落$(thing)墨囊$()，並向靠得太近的玩家噴墨。據說在深邃、未經探索的洞穴中，魷魚擁有奇特的特性。",
+            "text": "魷魚可在任何深海中生成，會掉落$(thing)墨囊$()，並向靠得太近的玩家噴墨。據說深邃、未經探索的洞穴中的魷魚擁有奇特的特性。",
             "title": "魷魚"
         },
         {

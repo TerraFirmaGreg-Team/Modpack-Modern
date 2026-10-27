@@ -5,11 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(thing)高爐$()是用來製造$(thing)鋼$()的高階裝置。在受控的高溫環境中混合$(l:craftsmanship/metallurgy)鐵礦石$()、$(l:craftsmanship/charcoal_pit#coke_oven)焦炭$()或$(thing)無煙煤$()以及$(item)助熔劑$()，就能製造出比鑄鐵或鍛鐵更堅固的金屬。$(br2)要取得高爐，你首先需要一個$(l:craftsmanship/crucible)坩堝$()和大量的$(l:craftsmanship/bloomery)鍛鐵板$()。"
+            "text": "$(thing)高爐$()是用來製造$(thing)鋼$()的高階裝置。在受控的高溫環境中混合$(l:craftsmanship/metallurgy)鐵礦石$()、$(l:craftsmanship/charcoal_pit#coke_oven)焦炭$()或$(thing)無煙煤$()以及$(item)助熔劑$()，就能製造出比鑄鐵或鍛鐵更堅固的金屬。$(br2)要取得高爐，首先需要一個$(l:craftsmanship/crucible)坩堝$()和大量$(l:craftsmanship/bloomery)鍛鐵板$()。"
         },
         {
             "type": "patchouli:text",
-            "text": "合成高爐本身需要一個$(thing)坩堝$()，以及一些你會用到的$(thing)雙重鍛鐵板$()。$(br)接著你需要建造高爐及其$(thing)煙囪$()。煙囪必須用$(l:craftsmanship/pottery#fire_clay)耐火磚$()建造，因為只有它們才夠堅固，能承受強烈的高溫。"
+            "text": "合成高爐需要一個$(thing)坩堝$()和一些$(thing)雙重鍛鐵板$()。$(br)接著要建造高爐及其$(thing)煙囪$()。煙囪必須用$(l:craftsmanship/pottery#fire_clay)耐火磚$()建造，只有它夠堅固，能承受高溫。"
         },
         {
             "type": "patchouli:text",
@@ -213,15 +213,15 @@
         },
         {
             "type": "patchouli:text",
-            "text": "高爐的煙囪最多可以有$(italic)五層$()。每一層需要$(thing)4 個$(item)耐火磚和$(thing)12 個$(item)鍛鐵/鑄鐵板$()才能完成。每多一層，高爐的總容量就增加 4 份鋼。$(br)使用高爐時，必須從煙囪頂端丟入物品。生產鋼時，必須放入數量相等的$(l:craftsmanship/metallurgy)鐵礦石$()和$(item)助熔劑$()。"
+            "text": "高爐煙囪最多$(italic)五層$()，每層需要$(thing)4 個$(item)耐火磚和$(thing)12 個$(item)鍛鐵/鑄鐵板$()。每多一層，高爐總容量增加 4 份鋼。$(br)使用高爐時，要從煙囪頂端丟入物品。生產鋼時，必須放入等量的$(l:craftsmanship/metallurgy)鐵礦石$()和$(item)助熔劑$()。"
         },
         {
             "type": "patchouli:text",
-            "text": "每加入 144mB 的鐵，就必須搭配 1 個助熔劑。任何可以熔化成$(thing)鑄鐵$()的鐵礦石或物品都可以使用。你還需要加入$(l:craftsmanship/charcoal_pit#coke_oven)焦炭$()或$(thing)無煙煤$()，它們會在高爐運作時被消耗。$(br2)基本上，每一層需要$(t:144 x 4)$(6)576mB$()的鐵和 4 個助熔劑，以及約 4-8 個焦炭。燃料消耗量不會隨層數增加。"
+            "text": "每 144mB 的鐵要搭配 1 個助熔劑，任何可熔成$(thing)鑄鐵$()的鐵礦石或物品都可以。另外還要加入$(l:craftsmanship/charcoal_pit#coke_oven)焦炭$()或$(thing)無煙煤$()，作為高爐運作時消耗的燃料。$(br2)大致上，每層需要$(t:144 x 4)$(6)576mB$()的鐵和 4 個助熔劑，以及約 4-8 個焦炭。燃料消耗量不會隨層數增加。"
         },
         {
             "type": "patchouli:text",
-            "text": "對高爐按下$(item)$(k:key.use)$()即可開啟高爐介面，如下一張圖所示。在這個介面中，你會看到高爐內礦石和燃料含量的量表。右上方的欄位必須放入$(thing)鼓風口$()，這是一種將空氣送入高爐的金屬管，要達到熔煉鋼所需的最高溫度就必須有它。鼓風口可以在$(l:craftsmanship/anvils)鐵砧$()上鍛造。"
+            "text": "對高爐按 $(item)$(k:key.use)$() 開啟高爐介面(見下一張圖)，可看到高爐內礦石與燃料的量表。右上方欄位必須放入$(thing)鼓風口$()，這是將空氣送入高爐的金屬管，要達到熔煉鋼的最高溫度就少不了它。鼓風口可在$(l:craftsmanship/anvils)砧$()上鍛造。"
         },
         {
             "type": "patchouli:image",
@@ -233,7 +233,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "你還需要一個$(l:craftsmanship/charcoal_forge#bellows)風箱$()，高爐才能達到熔化鐵的溫度(除非使用無煙煤作為燃料)。風箱可以放在高爐四個側面的任何一面。$(br)使用風箱會消耗鼓風口的耐久度，因此建議大約每分鐘只啟動一次。"
+            "text": "高爐還需要一個$(l:craftsmanship/charcoal_forge#bellows)風箱$()才能達到熔化鐵的溫度(使用無煙煤作燃料則不需要)。風箱可放在高爐四個側面的任一面。$(br)使用風箱會消耗鼓風口的耐久度，建議大約每分鐘啟動一次就好。"
         },
         {
             "type": "patchouli:multiblock",
@@ -287,38 +287,38 @@
         },
         {
             "type": "patchouli:text",
-            "text": "最後，用$(l:craftsmanship/firepit#firestarter)生火器$()或$(item)打火石$()點燃高爐即可開始。它會開始加熱內部的礦石。請確保高爐持續有燃料，並用風箱為高爐送入空氣，直到內部溫度達到鋼的熔點。內部的礦石加熱後，會熔化並轉化為液態$(item)生鐵$()。"
+            "text": "最後，用$(l:craftsmanship/firepit#firestarter)生火器$()或$(item)打火石$()點燃高爐，就會開始加熱內部的礦石。請確保燃料不斷，並用風箱送風，直到內部溫度達到鋼的熔點。礦石加熱後會熔化，轉化為液態$(item)生鐵$()。"
         },
         {
             "type": "patchouli:text",
-            "text": "這種液態金屬會滴入放在高爐正下方的任何金屬流體容器中，例如$(item)桶$()、$(l:craftsmanship/crucible)坩堝$()或$(l:craftsmanship/crucible#channel_casting)模具台$()。冷卻後，生鐵錠必須在鐵砧或$(l:craftsmanship/anvils#helve_hammer)杵錘$()上鍛造成$(item)高碳鋼$()，然後再鍛造成$(item)鋼$()。"
+            "text": "液態金屬會滴入高爐正下方的金屬流體容器，例如$(item)桶$()、$(l:craftsmanship/crucible)坩堝$()或$(l:craftsmanship/crucible#channel_casting)模具台$()。冷卻後的生鐵錠須在砧或$(l:craftsmanship/anvils#helve_hammer)杵錘$()上鍛造成$(item)高碳鋼$()，再鍛造成$(item)鋼$()。"
         },
         {
             "type": "patchouli:text",
             "anchor": "tips",
             "title": "高爐提示",
-            "text": "在你把所有耐火黏土用來做 20 塊耐火磚之前，請注意：進入蒸汽時代後，你可以用便宜得多的方式合成它。開始時並不需要全尺寸的高爐。事實上，4 層高的高爐材料比例更好，因為它每次運作使用 16 個助熔劑和 16 份鐵。"
+            "text": "在把所有耐火黏土拿去做 20 塊耐火磚之前，請注意：進入蒸汽時代後，合成成本會便宜很多。一開始不需要蓋全尺寸高爐，事實上 4 層高的高爐材料比例更好，每次運作使用 16 個助熔劑和 16 份鐵。"
         },
         {
             "type": "patchouli:spotlight",
             "title": "預熱金屬",
             "anchor": "preheating",
             "item": "tfc:firepit",
-            "text": "要將鐵轉化為鋼，高爐必須將內部的鐵加熱到$(d)$(bold)熾白$()。第一次運作時，金屬會隨著高爐一起升溫。不過，之後的運作即使高爐已經達到溫度，所需時間也差不多，因為它需要將金屬從冷的狀態開始加熱。"
+            "text": "要把鐵轉化為鋼，高爐必須將內部的鐵加熱到$(d)$(bold)熾白$()。第一次運作時，金屬會隨高爐一起升溫；之後即使高爐已達溫度，所需時間也差不多，因為金屬仍要從冷的狀態加熱。"
         },
         {
             "type": "patchouli:text",
-            "text": "如果放入高爐時金屬已經是熱的，達到熾白所需的時間就會較短。可以考慮先在$(l:craftsmanship/charcoal_forge)木炭爐$()中加熱金屬，再放入已經熱好的高爐以節省時間，尤其是一次處理量較少的小型高爐。"
+            "text": "若金屬放入高爐時已是熱的，達到熾白的時間就會較短。可以先在$(l:craftsmanship/charcoal_forge)木炭爐$()中加熱金屬，再放入已熱好的高爐以節省時間，一次處理量較少的小型高爐尤其適用。"
         },
         {
             "type": "patchouli:spotlight",
             "title": "高爐自動化",
             "item": "greate:steel_mechanical_pump",
-            "text": "在$(thing)蒸汽$()和$(7)LV$()時代，你會需要大量的$(item)鋼$()。非常大量的鋼。$(thing)電力高爐$()還很遙遠，所以也許該考慮優化你的鋼產量。$(br2)你可以從$(l:craftsmanship/charcoal_forge#bellows)風箱$()的背面提供機械動力來將它自動化。不過要小心，使用風箱會消耗更多燃料，並讓你的$(thing)鼓風口$()更快損壞。"
+            "text": "在$(thing)蒸汽$()和$(7)LV$()時代需要大量的$(item)鋼$()。非常大量的鋼。$(thing)電力高爐$()還很遙遠，或許該想想如何優化鋼產量。$(br2)從$(l:craftsmanship/charcoal_forge#bellows)風箱$()背面提供機械動力即可將它自動化。不過要小心，使用風箱會消耗更多燃料，也會讓$(thing)鼓風口$()更快損壞。"
         },
         {
             "type": "patchouli:text",
-            "text": "你可以用朝向高爐的漏斗或物品管道自動更換損壞的鼓風口。$(br2)你可以用機械動力的$(item)機械幫浦$()以極快的速度從高爐抽出液體。將液體抽入$(l:craftsmanship/crucible#channel_casting)模具台$()，再用漏斗或滑槽取出金屬錠：輕鬆自動化！$(br2)你可以在$(thing)鍛造錘$()或$(l:craftsmanship/anvils#helve_hammer)杵錘$()中處理產出的$(item)生鐵$()和$(item)高碳鋼$()。"
+            "text": "用朝向高爐的漏斗或物品管道，可自動更換損壞的鼓風口。$(br2)用機械動力的$(item)機械幫浦$()能以極快速度從高爐抽出液體。抽入$(l:craftsmanship/crucible#channel_casting)模具台$()，再用漏斗或滑槽取出金屬錠：輕鬆自動化！$(br2)產出的$(item)生鐵$()和$(item)高碳鋼$()可以在$(thing)鍛造錘$()或$(l:craftsmanship/anvils#helve_hammer)杵錘$()中加工。"
         },
         {
             "type": "patchouli:multiblock",
