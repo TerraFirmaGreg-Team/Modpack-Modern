@@ -73,7 +73,5 @@
   "gui.comforts.config.sleepingBagsStopPhantoms.name": "Спальные мешки предотвращают фантомов",
   "item.comforts.hammock.placement.tooltip": "Требует %s для размещения.",
   "item.comforts.rope_and_nail.placement.tooltip": "Используется для размещения гамаков.",
-  "item.comforts.sleeping_bag.auto_use.tooltip": "Автоматически пытается уснуть.\nДля установки используйте, присев.",
-  "itemGroup.comforts": "Comforts",
-  "itemGroup.comforts.general": "Comforts"
+  "item.comforts.sleeping_bag.auto_use.tooltip": "Автоматически пытается уснуть.\nДля установки используйте, присев."
 }

@@ -1,0 +1,23 @@
+{
+	"tfg.machine.oxygen_distributor.status.restoring": "Restoring...",
+	"tfg.machine.oxygen_distributor.status.too_wide": "Room too wide",
+	"tfg.machine.oxygen_distributor.energy": "Using %s EU/t",
+	"tfg.machine.oxygen_distributor.idle": "Idle",
+	"tfg.machine.oxygen_distributor.status.chunk_unloaded": "Room unloaded",
+	"tfg.machine.oxygen_distributor.active": "Active",
+	"tfg.machine.oxygen_distributor.status.breached": "Breached",
+	"tfg.machine.oxygen_distributor.status.scanning": "Scanning...",
+	"tfg.machine.oxygen_distributor.status.no_energy": "Waiting for power",
+	"block.tfg.oxygen_distributor": "Oxygen Distributor",
+	"tfg.machine.oxygen_distributor.status.scan_limit": "Room too large to scan",
+	"tfg.machine.oxygen_distributor.find_leak": "Trace leak",
+	"block.tfg.higgs_emitter": "Higgs Emitter",
+	"tfg.machine.oxygen_distributor.size": "Room size: %s blocks",
+	"tfg.machine.oxygen_distributor.fill_suit": "Refill suit oxygen",
+	"tfg.machine.higgs_emitter.radius": "Radius: %s",
+	"tfg.machine.oxygen_distributor.status.sealed": "Sealed",
+	"tfg.machine.oxygen_distributor.consumption": "Consuming %s",
+	"tfg.machine.oxygen_distributor.status": "Status: ",
+	"tfg.machine.heat_pump.status.blocked": "Exhaust trapped - heat pump must back onto open space",
+	"block.tfg.heat_pump": "Heat Pump"
+}

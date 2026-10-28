@@ -11,13 +11,9 @@
 	"block.greate.aluminium_millstone": "铝石磨",
 	"block.greate.aluminium_shaft": "铝传动杆",
 	"block.greate.andesite_alloy_cogwheel": "基础齿轮",
-	"block.greate.andesite_alloy_crushing_wheel": "基础粉碎轮",
 	"block.greate.andesite_alloy_crushing_wheel_controller": "基础粉碎轮控制器",
-	"block.greate.andesite_alloy_encased_fan": "基础鼓风机",
 	"block.greate.andesite_alloy_gearbox": "基础十字齿轮箱",
-	"block.greate.andesite_alloy_mechanical_mixer": "基础动力搅拌器",
 	"block.greate.andesite_alloy_mechanical_press": "基础动力冲压机",
-	"block.greate.andesite_alloy_mechanical_pump": "基础动力泵",
 	"block.greate.andesite_alloy_mechanical_saw": "基础动力锯",
 	"block.greate.andesite_alloy_millstone": "基础石磨",
 	"block.greate.andesite_alloy_shaft": "基础传动杆",
@@ -318,5 +314,8 @@
 	"material.greate.rose_quartz": "玫瑰石英",
 	"material.greate.shadow_steel": "暗影钢",
 	"tagprefix.alloy": "%s合金",
-	"tagprefix.whisk": "%s搅拌器"
+	"tagprefix.whisk": "%s搅拌器",
+	"item.greate.polybenzimidazole_belt_connector": "聚苯并咪唑传送带",
+	"item.greate.polyethylene_belt_connector": "聚乙烯传送带",
+	"item.greate.polytetrafluoroethylene_belt_connector": "聚四氟乙烯传送带"
 }
