@@ -111,7 +111,7 @@ function registerTFGIceRecipes(event) {
 		'AA'
 	], {
 		A: 'minecraft:snowball'
-	}).id('tfg:shaped/snowball_to_snow_block')
+	}).id('tfg:shaped/snowball_to_snow_block_manual_only')
 
 	event.shapeless('4x minecraft:snowball', ['minecraft:snow_block'])
 		.id('tfg:shapeless/snowball')
@@ -119,19 +119,19 @@ function registerTFGIceRecipes(event) {
 	event.shapeless('8x minecraft:snow', ['minecraft:snow_block', '#forge:tools/saws'])
 		.id('tfg:shapeless/snow')
 
-	event.recipes.greate.pressing('minecraft:snow_block', [
+	event.recipes.greate.compacting('minecraft:snow_block', [
 			'minecraft:snowball', 'minecraft:snowball', 'minecraft:snowball', 'minecraft:snowball'
 		])
 		.circuitNumber(1)
 		.recipeTier(0)
-		.id('tfg:pressing/snowball_to_block')
+		.id('tfg:compacting/snowball_to_block')
 
-	event.recipes.greate.pressing('tfg:snow_bricks', [
+	event.recipes.greate.compacting('tfg:snow_bricks', [
 			'minecraft:snow_block', 'minecraft:snow_block', 'minecraft:snow_block', 'minecraft:snow_block'
 		])
 		.circuitNumber(2)
 		.recipeTier(0)
-		.id('tfg:pressing/snow_blocks_to_bricks')
+		.id('tfg:compacting/snow_blocks_to_bricks')
 
 	event.recipes.gtceu.compressor('tfg:snow_block')
 		.itemInputs('4x minecraft:snowball')
@@ -145,7 +145,7 @@ function registerTFGIceRecipes(event) {
 		'AA'
 	], {
 		A: 'minecraft:snow_block'
-	}).id('tfg:shaped/snow_bricks')
+	}).id('tfg:shaped/snow_bricks_manual_only')
 	
 	event.shaped('tfg:snow_brick_stairs', [
 		'A ',
@@ -186,21 +186,21 @@ function registerTFGIceRecipes(event) {
 		.EUt(2)
 
 	// Ice bricks
-	event.recipes.greate.pressing('minecraft:packed_ice', [
+	event.recipes.greate.compacting('minecraft:packed_ice', [
 			'minecraft:ice', 'minecraft:ice', 'minecraft:ice', 'minecraft:ice', 'minecraft:ice',
 			'minecraft:ice', 'minecraft:ice', 'minecraft:ice', 'minecraft:ice'
 		])
 		.circuitNumber(1)
 		.recipeTier(0)
-		.id('tfg:pressing/ice_to_packed_ice')
+		.id('tfg:compacting/ice_to_packed_ice')
 		
-	event.recipes.greate.pressing('minecraft:blue_ice', [
+	event.recipes.greate.compacting('minecraft:blue_ice', [
 			'minecraft:packed_ice', 'minecraft:packed_ice', 'minecraft:packed_ice', 'minecraft:packed_ice',
 			'minecraft:packed_ice', 'minecraft:packed_ice', 'minecraft:packed_ice', 'minecraft:packed_ice',
 			'minecraft:packed_ice'])
 		.circuitNumber(1)
 		.recipeTier(0)
-		.id('tfg:pressing/packed_ice_to_blue_ice')
+		.id('tfg:compacting/packed_ice_to_blue_ice')
 
 	event.recipes.gtceu.macerator('tfg:macerate_ice_bricks')
 		.itemInputs('#tfg:stone_types/packed_ice')
