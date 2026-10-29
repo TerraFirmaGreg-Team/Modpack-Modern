@@ -1,21 +1,21 @@
 {
-    "name": "Bowls",
+    "name": "Миски",
     "category": "tfg:cooking",
     "icon": "tfc:ceramic/bowl",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(thing)Bowls$() are a versatile tool which can be used to make $(l:cooking/salad)Salads$(), to make $(l:cooking/cooking_methods#pot)Soups$(), to $(l:cooking/decay#salting)Salt$() meat, or to apply $(thing)Powder$() to $(l:craftsmanship/glassworking#coloring)Glass$() in order to change the resulting glass's color.$(br2)Bowls can be made both from $(thing)Ceramic$()―By knapping a bowl out of clay, and then firing them―Or out of wood."
+            "text": "$(thing)Миски$() — универсальный инструмент, который можно использовать для приготовления $(l:cooking/salad)салатов$(), $(l:cooking/cooking_methods#pot)супов$(), $(l:cooking/decay#salting)засолки$() мяса, а также для нанесения $(thing)порошка$() на $(l:craftsmanship/glassworking#coloring)стекло$(), чтобы изменить его итоговый цвет.$(br2)Миски можно изготовить из $(thing)керамики$() или дерева. Для изготовления керамической миски нужно вылепить её из глины методом скалывания, а затем обжечь."
         },
         {
             "type": "patchouli:text",
-            "text": "To make a $(item)Salad$() open the interface by holding a bowl and $(item)$(k:key.sneak) + $(k:key.use)$() in the air.$(br2)Bowls can also be placed on the ground like blocks. When placed, they can be filled with any type of $(thing)Powder$() - the results of grinding ores, minerals, or gems in the $(l:craftsmanship/quern)Quern$()."
+            "text": "Чтобы приготовить $(item)салат$(), откройте интерфейс: возьмите миску в руку и нажмите $(item)$(k:key.sneak) + $(k:key.use)$(), находясь в воздухе.$(br2)Миски также можно ставить на землю, как обычные блоки. В установленную миску можно поместить любой $(thing)порошок$(), полученный при измельчении руд, минералов или драгоценных камней в $(l:craftsmanship/quern)жерновах$()."
         },
         {
             "type": "patchouli:spotlight",
             "item": "tag:tfc:powders",
             "anchor": "powder_bowl",
-            "title": "Powders",
+            "title": "Порошки",
             "link_recipes": false,
             "text": "Чаша для порошка может вместить до 16 данного порошка. Чтобы вставить предметы, $(item)$(k:key.use)$() держа порошок. Чтобы извлечь предметы, $(item)$(k:key.use)$() с пустой рукой.$(br2)$(item)$(k:key.sneak)$() позволяет извлечь все содержимое чаши."
         },

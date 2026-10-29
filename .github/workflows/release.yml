@@ -1,0 +1,148 @@
+name: "Project Release"
+run-name: "[🚀]: Project Release #${{ github.run_number }}"
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.pakku/'
+      - 'config/'
+      - 'defaultconfigs/'
+      - 'kubejs/'
+      - 'CHANGELOG.md'
+      - 'pakku-lock.json'
+      - 'pakku.json'
+      - '.github/workflows/release.yml'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  info:
+    name: "[🖥️] Project Info"
+    runs-on: ubuntu-latest
+    if: ${{ !github.event.repository.fork }}
+    outputs:
+      project_version: ${{ steps.info.outputs.project_version }}
+      project_name: ${{ steps.info.outputs.project_name }}
+      project_full_name: ${{ steps.info.outputs.project_full_name }}
+      changelog: ${{ steps.info.outputs.changelog }}
+      changelog_version: ${{ steps.info.outputs.changelog_version }}
+      mc_version: ${{ steps.info.outputs.mc_version }}
+      loader_version: ${{ steps.info.outputs.loader_version }}
+      loader_type: ${{ steps.info.outputs.loader_type }}
+      release_type: ${{ steps.info.outputs.release_type }}
+      diff: ${{ steps.info.outputs.diff }}
+      exists: ${{ steps.info.outputs.exists }}
+      make_release: ${{ steps.info.outputs.make_release }}
+      make_pr: ${{ steps.info.outputs.make_pr }}
+    steps:
+      - name: Collect info
+        id: info
+        uses: TerraFirmaGreg-Team/Actions/modpack/info@main
+        with:
+          pakku_jar: local
+
+  build:
+    name: "[📦] Project Build"
+    needs: [info]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build artifacts
+        uses: TerraFirmaGreg-Team/Actions/modpack/build@main
+        with:
+          project_version: ${{ needs.info.outputs.project_version }}
+          project_full_name: ${{ needs.info.outputs.project_full_name }}
+          loader_type: ${{ needs.info.outputs.loader_type }}
+          loader_version: ${{ needs.info.outputs.loader_version }}
+          mc_version: ${{ needs.info.outputs.mc_version }}
+          pakku_jar: local
+          version_files: |
+            pakku.json
+            config/mod-director/modpack.json
+            config/fancymenu/customization/*
+            .pakku/multimc-overrides/instance.cfg
+            .pakku/server-overrides/server.properties
+            .pakku/docker-overrides/docker-compose.yml
+          loader_files: |
+            .pakku/multimc-overrides/mmc-pack.json
+            .pakku/server-overrides/forge-auto-install.txt
+            .pakku/docker-overrides/docker-compose.yml
+          server_icon_src: config/fancymenu/assets/icons/icon64x64.png
+          multimc_icon_src: config/fancymenu/assets/icons/icon128x128.png
+          prune_export_false: true
+          artifact_docker: true
+
+  release:
+    name: "[🚀] Project Release"
+    needs: [info, build]
+    runs-on: ubuntu-latest
+    if: ${{ needs.info.outputs.make_release == 'true' }}
+    outputs:
+      curseforge-id: ${{ steps.publish.outputs.curseforge-id }}
+      curseforge-url: ${{ steps.publish.outputs.curseforge-url }}
+      github-tag: ${{ steps.publish.outputs.github-tag }}
+      github-url: ${{ steps.publish.outputs.github-url }}
+    steps:
+      - name: Publish
+        id: publish
+        uses: TerraFirmaGreg-Team/Actions/modpack/release@main
+        with:
+          project_full_name: ${{ needs.info.outputs.project_full_name }}
+          project_version: ${{ needs.info.outputs.project_version }}
+          release_type: ${{ needs.info.outputs.release_type }}
+          changelog: ${{ needs.info.outputs.changelog }}
+          diff: ${{ needs.info.outputs.diff }}
+          mc_version: ${{ needs.info.outputs.mc_version }}
+          loader_type: ${{ needs.info.outputs.loader_type }}
+          files: |
+            ${{ needs.info.outputs.project_full_name }}-multimc.zip
+            ${{ needs.info.outputs.project_full_name }}-docker.yml
+          curseforge_server_name: Server Pack ${{ needs.info.outputs.project_version }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          curseforge_id: ${{ vars.CURSEFORGE_ID }}
+          curseforge_token: ${{ secrets.CURSEFORGE_TOKEN }}
+
+  export:
+    name: "[📤] Game Export"
+    needs: [info, build]
+    if: ${{ needs.info.outputs.make_release == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Live export
+        uses: TerraFirmaGreg-Team/Actions/modpack/export@main
+        with:
+          mc_version: ${{ needs.info.outputs.mc_version }}
+          loader_type: ${{ needs.info.outputs.loader_type }}
+          platform: modern
+          pack_artifact: ${{ needs.info.outputs.project_full_name }}-multimc
+          artifact_name: ${{ needs.info.outputs.project_full_name }}-export
+
+  message:
+    name: "[📱] Discord Message"
+    needs: [info, build, release]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Truncate Changelog
+        id: truncated
+        uses: cisox/read-more-action@v1.0.2
+        with:
+          text: '${{ needs.info.outputs.changelog }}'
+          max_chars: '1400'
+
+      - name: Send Discord message
+        uses: TerraFirmaGreg-Team/Actions/discord@main
+        with:
+          webhook_key: ${{ secrets.DISCORD_RELEASES }}
+          content: |
+            **Release**: `${{ needs.info.outputs.project_version }}`
+            **Release Type**: `${{ needs.info.outputs.release_type }}`
+            **Game Version**: `${{ needs.info.outputs.mc_version }}`
+
+            [CurseForge](${{ needs.release.outputs.curseforge-url }}) • [ServerPack](https://github.com/${{ github.repository }}/releases/download/${{ needs.release.outputs.github-tag }}/${{ needs.info.outputs.project_full_name }}-serverpack.zip) • [GitHub](${{ needs.release.outputs.github-url }}) • [Issues](https://github.com/${{ github.repository }}/issues)
+            ```markdown
+            ${{ steps.truncated.outputs.text }}
+            - ...```
+            ** [Read more...](${{ needs.release.outputs.github-url }}) **

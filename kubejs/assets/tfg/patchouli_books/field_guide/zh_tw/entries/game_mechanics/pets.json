@@ -12,13 +12,13 @@
             "type": "patchouli:text",
             "anchor": "intro",
             "title": "簡介",
-            "text": "$(thing)寵物$()是功能類似$(l:agriculture/animal_husbandry)家畜$()的動物。寵物不提供產物，而是能聽從指令、當你的朋友、防治害蟲和協助狩獵。$(br)寵物會將某位玩家認定為牠的$(thing)主人$()。要成為寵物的主人，請餵食牠，讓熟悉度超過$(item)15%$()。寵物只會聽從主人的指令。$(br)手持$(thing)染料$()點擊寵物可以改變牠的項圈顏色。"
+            "text": "$(thing)寵物$()是功能類似$(l:agriculture/animal_husbandry)家畜$()的動物，但不提供產物，而是能聽從指令、陪伴你、防治害蟲和協助狩獵。$(br)寵物會認定某位玩家為$(thing)主人$()。餵食寵物讓熟悉度超過$(item)15%$()，就能成為牠的主人。寵物只聽從主人的指令。$(br)手持$(thing)染料$()點擊寵物可以改變項圈顏色。"
         },
         {
             "type": "patchouli:text",
             "anchor": "dogs",
             "title": "狗",
-            "text": "狗是一種吃穀物、蔬菜和肉類的寵物，不論食物是否腐爛都吃。牠們會幫你獵捕幾乎任何陸地上的掠食者或獵物。$(br)狗有多種變體，取決於牠是由哪種$(l:the_world/wild_animals#wolf)狼$()馴化而來的。"
+            "text": "狗吃穀物、蔬菜和肉類，不論是否腐爛。牠們會幫你獵捕幾乎所有陸地掠食者或獵物。$(br)狗有多種變體，取決於是由哪種$(l:the_world/wild_animals#wolf)狼$()馴化而來。"
         },
         {
             "type": "patchouli:image",
@@ -113,7 +113,7 @@
             "type": "patchouli:text",
             "anchor": "cats",
             "title": "貓",
-            "text": "貓是一種吃穀物、熟肉和乳製品的寵物。牠們會幫你獵捕陸地獵物和小型魚類。在家時，牠們會主動消滅害蟲。叫貓坐下時，牠們不一定會聽話。$(br2)變體：黑貓、英國短毛貓、三花貓、Jellie、波斯貓、布偶貓、橘貓、暹羅貓、虎斑貓、白貓。"
+            "text": "貓吃穀物、熟肉和乳製品，會幫你獵捕陸地獵物和小型魚類，在家時會主動消滅害蟲。叫貓坐下時，牠不一定會聽話。$(br2)變體：黑貓、英國短毛貓、三花貓、Jellie、波斯貓、布偶貓、橘貓、暹羅貓、虎斑貓、白貓。"
         },
         {
             "type": "patchouli:entity",
@@ -126,7 +126,7 @@
             "type": "patchouli:text",
             "anchor": "foxes",
             "title": "狐狸",
-            "text": "狐狸是一種吃任何可食用食物的寵物。牠們會幫你獵捕陸地獵物和小型魚類。在家時，牠們會主動消滅害蟲。叫狐狸坐下時，牠們不一定會聽話。$(br2)變體：紅狐、雪狐。"
+            "text": "狐狸什麼可食用的食物都吃，會幫你獵捕陸地獵物和小型魚類，在家時會主動消滅害蟲。叫狐狸坐下時，牠不一定會聽話。$(br2)變體：紅狐、雪狐。"
         },
         {
             "type": "patchouli:entity",
@@ -139,7 +139,7 @@
             "type": "patchouli:text",
             "anchor": "pigeons",
             "title": "鴿子",
-            "text": "鴿子可以被馴服並遞送包裹，但不會聽從一般指令。你可以餵鴿子吃穀物和蔬菜等$(t:#fowlplay:pigeon_food)$(6)鴿子食物$()來馴服牠。$(br)馴服後，只要先用玩家的名字$(l:craftsmanship/scribing_table)為袋子命名$()再交給鴿子，牠就能將$(t:#fowlplay:pigeon_deliverable)$(6)麻袋$()遞送給其他玩家。 "
+            "text": "鴿子可以馴服並遞送包裹，但不會聽從一般指令。餵鴿子吃穀物和蔬菜等$(t:#fowlplay:pigeon_food)$(6)鴿子食物$()即可馴服。$(br)馴服後，先用玩家的名字$(l:craftsmanship/scribing_table)為袋子命名$()再交給鴿子，牠就能將$(t:#fowlplay:pigeon_deliverable)$(6)麻袋$()遞送給其他玩家。 "
         },
         {
             "type": "patchouli:entity",
@@ -151,25 +151,25 @@
             "type": "patchouli:text",
             "anchor": "commands",
             "title": "指令",
-            "text": "負責任的寵物主人必須學會控制自己的寵物。幸好這很簡單。空手按住$(item)$(k:key.sneak)$()並按下$(item)$(k:key.use)$()，即可開啟$(thing)寵物介面$()。這個介面包含多個可以告訴寵物該做什麼的指令：$(thing)放鬆$()、$(thing)到家了$()、$(thing)坐下$()、$(thing)跟著我$()和$(thing)一起狩獵$()。"
+            "text": "負責任的寵物主人必須學會控制寵物，幸好這很簡單。空手按住 $(item)$(k:key.sneak)$() 並按 $(item)$(k:key.use)$()，即可開啟$(thing)寵物介面$()，其中有多個指令可以告訴寵物該做什麼：$(thing)放鬆$()、$(thing)到家了$()、$(thing)坐下$()、$(thing)跟著我$()和$(thing)一起狩獵$()。"
         },
         {
             "type": "patchouli:text",
             "anchor": "relax",
             "title": "放鬆",
-            "text": "$(thing)放鬆$()是寵物的預設狀態，下達此指令會讓牠們回到這個狀態。如果寵物在家，牠會在家園範圍內四處閒逛但不會離開，並且每天睡一次覺。如果離家太遠，牠會漫無目的地走動。"
+            "text": "$(thing)放鬆$()是寵物的預設狀態，下達此指令會讓牠們回到這個狀態。寵物在家時，會在家園範圍內閒逛但不離開，每天睡一次覺；離家太遠時則會漫無目的地走動。"
         },
         {
             "type": "patchouli:text",
             "anchor": "home",
             "title": "回家",
-            "text": "$(thing)到家了$()會設定寵物的家的位置。這會告訴動物在放鬆時應該待在那附近。告訴動物牠在家並不會改變牠目前正在進行的活動。$(br2)$(thing)坐下$()會讓寵物原地坐下。不過，動物有自己的想法，最終會感到無聊並站起來！"
+            "text": "$(thing)到家了$()會設定寵物的家，讓動物放鬆時待在附近。這個指令不會改變動物目前正在進行的活動。$(br2)$(thing)坐下$()會讓寵物原地坐下。不過動物有自己的想法，最終會覺得無聊而站起來！"
         },
         {
             "type": "patchouli:text",
             "anchor": "hunt",
             "title": "狩獵",
-            "text": "$(thing)一起狩獵$()會讓寵物跟著你，並在你攻擊或被攻擊時投入戰鬥。寵物只會攻擊牠們有能力攻擊的動物(例如，貓和狐狸無法幫忙攻擊熊！)。$(br2)$(thing)跟著我$()與一起狩獵相同，但寵物不會讓自己在戰鬥中冒險。"
+            "text": "$(thing)一起狩獵$()會讓寵物跟著你，並在你攻擊或被攻擊時投入戰鬥。寵物只會攻擊有能力對付的動物(例如貓和狐狸無法幫忙攻擊熊！)。$(br2)$(thing)跟著我$()與一起狩獵相同，但寵物不會冒險參戰。"
         },
         {
             "type": "patchouli:spotlight",
@@ -183,14 +183,14 @@
             "anchor": "name_tag",
             "title": "命名牌",
             "item": "minecraft:name_tag",
-            "text": "$(thing)命名牌$()可以用紙和線合成。做好後，可以在$(l:craftsmanship/scribing_table)書寫桌$()上編輯，為它取一個自訂名稱，再對寵物按下$(item)$(k:key.use)$()即可將名稱套用到寵物身上。"
+            "text": "$(thing)命名牌$()可以用紙和線合成，做好後可以在$(l:craftsmanship/scribing_table)書寫桌$()上編輯自訂名稱，再對寵物按 $(item)$(k:key.use)$() 即可套用。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "lead",
             "title": "拴繩",
             "item": "minecraft:lead",
-            "text": "$(thing)拴繩$()可以用粗麻纖維或線，加上一個金屬環合成。$(br)手持拴繩對動物按下$(item)$(k:key.use)$()即可牽著牠走。這比用食物引誘牠們有效率多了！$(br2)你也可以空手按下$(item)$(k:key.sneak) + $(k:key.use)$()抱起一些較小的動物。"
+            "text": "$(thing)拴繩$()可以用粗麻纖維或線加上金屬環合成。$(br)手持拴繩對動物按 $(item)$(k:key.use)$() 即可牽著走，比用食物引誘有效率多了！$(br2)也可以空手按 $(item)$(k:key.sneak) + $(k:key.use)$() 抱起一些較小的動物。"
         },
         {
             "type": "patchouli:relations",

@@ -50,7 +50,7 @@
     "tfg.tooltip.solar_panel.single": "Produktuje §6128 FE/t§r (32 EU/t) na §6księżycu§r w ciągu §6dnia§r",
     "tfg.tooltip.solar_panel.large_tier1": "Olbrzymia struktura produkująca od §61024 do 4096 EU/t§r na §6księżycu§r w ciągu §6dnia§r",
     "tfg.tooltip.solar_panel.large_tier2": "Olbrzymia struktura produkująca od §64096 do 16384 EU/t§r na §6księżycu§r w ciągu §6dnia§r",
-    "tfg.tooltip.solar_panel.large_tier3": "Olbrzymia struktura produkująca od §616384 do 65536 EU/t§r na §6księżycu§r w ciągu §7dnia§r",
+    "tfg.tooltip.solar_panel.large_tier3": "Olbrzymia struktura produkująca od §616384 do 65536 EU/t§r na §6księżycu§r w ciągu §6dnia§r",
     "tfg.tooltip.petrified_egg": "§7Do inkubacji jest potrzebna magma",
     "tfg.tooltip.large_egg": "§7Może być wysiadywane tylko w §odużym gnieździe",
     "tfg.tooltip.sniffer_wool": "§7Pozyskane z pleców niuchacza",
@@ -125,7 +125,7 @@
     "tfg.tooltip.machine.pastoral_engine_2": "§7Automatycznie doi i strzyże wszystkie zwierzęta w obszarze wyznaczonym przez metalowe obudowy.§r",
     "tfg.tooltip.machine.oxygen_distributor_1": "§7Natlenia dużą zamkniętą przestrzeń. Im większa przestrzeń, tym więcej wymaga energii i gaz.",
     "tfg.tooltip.machine.oxygen_distributor_2": "§7Użyj śluzy powietrznej, aby uniknąć wirów powietrznych. Nie wpływa na temperaturę.§r",
-    "tfg.tooltip.machine.heat_pump_1": "§7Ustawia temperaturę w dużej zamkniętej przestrzeni na 15°C.",
+    "tfg.tooltip.machine.heat_pump_1": "§7Ustawia temperaturę w dużej zamkniętej przestrzeni na wybraną temperaturę pomiędzy -50°C a 70°C.",
     "tfg.tooltip.machine.heat_pump_2": "§7Im większy obszar, tym więcej energii potrzebuje. Jest dosyć pobłażliwy i określaniu, co liczy się jako \"zamknięta\".",
     "tfg.tooltip.machine.heat_pump_3": "§7Strona z kontrolerem powinna być skierowana wewnątrz, a wydech powinien wychodzić na zewnątrz i być wypełniony wirnikiem turbiny.",
     "tfg.tooltip.machine.rotor_vent": "Wymaga wirnika turbiny, ale nie zużywa jego wytrzymałości. Efektywność obniża zużycie cieczy wejściowej (mB/t), a moc zmniejsza koszt energii (EU/t).",
@@ -169,7 +169,7 @@
     "tfg.tooltip.machine.smt_2": "§7Do działania wymaga smaru, a wzmacniacz może zwiększyć produkcję energii.§r",
     "tfg.tooltip.machine.smt_3": "§7Do wprowadzania płynów akceptuje wyłącznie§r zawór wejściowy SMT§7.§r",
     "tfg.tooltip.machine.small_fission_reactor_mk1_1": "§7Moc atomu, ale znacznie mniejsza§r",
-    "tfg.tooltip.machine.small_fission_reactor_mk1_2": "§7Może przetwarzać wyłącznie§r pręt z ameryku-241§7§r wraz z superkrytycznym CO₂ nasyconym TiCl₄",
+    "tfg.tooltip.machine.small_fission_reactor_mk1_2": "§7Może przetwarzać wyłącznie§r pręt z ameryku-241§7 wraz z§r superkrytycznym CO₂ nasyconym TiCl₄",
     "tfg.tooltip.machine.heat_battery_1": "§7Przechowuje ciepło§r",
     "tfg.tooltip.machine.heat_battery_2": "§7Zwiększaj jej temperaturę, doprowadzając gorące płyny, a zgromadzone ciepło wykorzystuj do doprowadzania innych płynów do wrzenia lub wykonywania przepisów w OLA.§r",
     "tfg.tooltip.machine.heat_battery_3": "§7Aby przekazywać ciepło do ostrowego akceleratora liniowego, ustaw §rport cieplny§7 i §rzawór wejściowy ciepła§7 tak, aby były skierowane ku sobie.§r",
@@ -306,5 +306,5 @@
     "tfg.tooltip.planter.fertilizer_info": "Nawóz jest opcjonalny. Rośliny będą rosnąć szybciej i wyprodukują inne rodzaje nawozów, gdy będą rosły ze swoim preferowanym typem nawozu.",
     "tfg.tooltip.greenhouse.minimum_tier": "Min. poziom: ",
     "tfg.item.electric_flask.tooltip_1": "Elektryczna manierka, która będzie automatycznie cię poiła w razie potrzeby.",
-    "tfg.item.electric_flask.tooltip_2": "§9Zużywa : §f1000 EU na łyk"
+    "tfg.item.electric_flask.tooltip_2": "§9Zużywa: §f1000 EU na łyk"
 }

@@ -179,7 +179,7 @@
 			"item": "tfg:ulv_railgun_item_loader_in,tfg:lv_railgun_item_loader_in,tfg:mv_railgun_item_loader_in,tfg:hv_railgun_item_loader_in,tfg:ev_railgun_item_loader_in,tfg:iv_railgun_item_loader_in,tfg:luv_railgun_item_loader_in,tfg:zpm_railgun_item_loader_in,tfg:uv_railgun_item_loader_in,tfg:uhv_railgun_item_loader_in",
 			"anchor": "input_bus",
 			"title": "軌道炮輸入匯流排",
-			"text": "在$(l:logistics/railgun#monitor)星際物流監控器$()上打開$(thing)發送端$()物流畫面時，你會看到 GregTech(格雷科技) 中熟悉的$(item)編程電路$()。$(br2)這個電路編號是設定路由規則的核心識別碼。"
+			"text": "在$(l:logistics/railgun#monitor)星際物流監控器$()上打開$(thing)發送端$()物流畫面時，你會看到格雷科技中熟悉的$(item)編程電路$()。$(br2)這個電路編號是設定路由規則的核心識別碼。"
 		},
 		{
 			"type": "patchouli:text",
@@ -187,7 +187,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(bold)設定方式：$()$(br)1. 打開任一$(item)軌道炮輸入匯流排$()的介面$(br)2. 像其他 GregTech(格雷科技) 機器一樣選擇你要的編號。$(br2)這樣就能建立強大的邏輯，例如：$(li)電路 1 → 送到月球基地$(li)電路 2 → 送到火星$(li)電路 3 → 送到軌道站"
+			"text": "$(bold)設定方式：$()$(br)1. 打開任一$(item)軌道炮輸入匯流排$()的介面$(br)2. 像其他格雷科技機器一樣選擇你要的編號。$(br2)這樣就能建立強大的邏輯，例如：$(li)電路 1 → 送到月球基地$(li)電路 2 → 送到火星$(li)電路 3 → 送到軌道站"
 		},
 		{
 			"type": "patchouli:text",
@@ -212,23 +212,23 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "是時候發揮你的紅石邏輯技巧了！$(br2)無論是用 $(item)AE2 的 ME 標準發信器$()、$(l:logistics/redstone_devices#threshold_switch)機械動力的紅石工具$()，還是傳統的$(l:logistics/redstone_devices#more_comparators)原版機制$()，這條規則都能讓你像專家一樣，讓物流與工廠狀態同步。"
+			"text": "是時候發揮你的紅石邏輯技巧了！$(br2)無論是用 $(item)AE2 的 ME 標準發信器$()、$(l:logistics/redstone_devices#threshold_switch)機械動力的紅石工具$()，還是傳統的$(l:logistics/redstone_devices#more_comparators)原版機制$()，這條規則都能讓你像專家一樣同步物流與工廠狀態。"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "精確供應",
 			"anchor": "supply_exact",
-			"text": "$(item)物品規則$()的運作方式和設定為$(thing)精確供應$()的 $(thing)GregTech(格雷科技) 機械臂$()類似。$(br2)它只能在$(item)發送端$()規則介面中設定。$(br2)啟用這條規則時，只有當$(item)輸入匯流排$()中有足夠的物品時，$(thing)軌道炮$(thing)才會發送$(italic)剛好的數量$()。"
+			"text": "$(item)物品規則$()的運作方式和設定為$(thing)精確供應$()的$(thing)格雷科技機械臂$()類似。$(br2)它只能在$(item)發送端$()規則介面中設定。$(br2)啟用這條規則時，只有當$(item)輸入匯流排$()中有足夠的物品時，$(thing)軌道炮$(thing)才會發送$(italic)剛好的數量$()。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(bold)設定方式：$()$(li)從 $(emi) 介面把物品拖進過濾器$(li)使用$(thing)左鍵和右鍵$()調整數量$(li)你也可以把物品加入書籤，方便快速存取和設定$(br2)這條規則非常適合精確的自動化，最適合批次合成或資源配額。"
+			"text": "$(bold)設定方式：$()$(li)從 $(emi) 介面把物品拖進過濾器$(li)使用$(thing)左鍵和右鍵$()調整數量$(li)你也可以把物品加入書籤，方便快速存取和設定$(br2)這條規則適合精確的自動化，尤其是批次合成或資源配額。"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "延遲",
 			"anchor": "delay",
-			"text": "$(item)延遲規則$()很簡單，但在管理物品流動的時機上很有用。$(br2)$(bold)在發送端：$()$(br)只有當$(item)輸入匯流排$()在設定的時間(秒)內沒有收到任何新物品時，才會發送物品。$(br2)這可以避免在輸入不斷變動時太頻繁地發送物品。"
+			"text": "$(item)延遲規則$()很簡單，但很適合控制物品流動的時機。$(br2)$(bold)在發送端：$()$(br)$(item)輸入匯流排$()在設定時間(秒)內都沒收到新物品，才會發送物品。$(br2)可避免輸入不斷變動時過於頻繁地發送。"
 		},
 		{
 			"type": "patchouli:text",

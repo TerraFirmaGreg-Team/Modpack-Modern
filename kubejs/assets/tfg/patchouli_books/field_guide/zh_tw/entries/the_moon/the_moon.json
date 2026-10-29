@@ -31,7 +31,7 @@
 			"item": "tfg:compressed_nitrox_bucket,tfg:compressed_heliox_bucket,tfg:compressed_heliox_3_bucket,tfg:compressed_trimix_bucket,tfg:compressed_trimix_3_bucket",
 			"anchor": "gases",
 			"title": "可呼吸氣體",
-			"text": "覺得有點喘不過氣嗎？在太空中你需要能呼吸的東西，所以你會想生產以下任一種壓縮氣體。它們都是以現實中深海潛水所用的氣體為基礎！"
+			"text": "覺得有點喘不過氣嗎？太空中需要能呼吸的東西，可以生產以下任一種壓縮氣體，它們都取材自現實中深海潛水用的氣體！"
 		},
 		{
 			"type": "patchouli:text",
@@ -46,7 +46,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(thing)氦-3$()有多種用途，其中最重要的是透過$(l:the_moon/the_moon#gases)氦氧混合氣-3$()製造更多可呼吸的空氣！你也可以在$(l:agriculture/greenhouse)電力溫室$()中把它當作$(l:the_moon/moon_crops)歌萊果$()的「肥料」，之後還能作為核融合發電的另一種燃料。$(br2)最終，你會想把$(thing)氦-3$()、$(6)$(t:最容易的取得方式是把圓石做成燧石，再做成二氧化矽)氧$()和$(l:the_moon/moon_crops#nitrogen)氮$()結合，建立$(item)氦-3 三混氣$()的自動化生產，為$(l:the_moon/the_moon#lsa)大型太陽能陣列$()提供完整動力。"
+			"text": "$(thing)氦-3$()有多種用途，其中最重要的是透過$(l:the_moon/the_moon#gases)氦氧混合氣-3$()製造更多可呼吸的空氣！你也可以在$(l:agriculture/greenhouse)電力溫室$()中把它當作$(l:the_moon/moon_crops)歌萊果$()的「肥料」，之後還能作為核融合發電的另一種燃料。$(br2)最終，你會想把$(thing)氦-3$()、$(6)$(t:最容易的取得方式是把鵝卵石做成燧石，再做成二氧化矽)氧$()和$(l:the_moon/moon_crops#nitrogen)氮$()結合，建立$(item)氦-3 三混氣$()的自動化生產，為$(l:the_moon/the_moon#lsa)大型太陽能陣列$()提供完整動力。"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -409,7 +409,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "任何$(item)實心方塊$()都可以用來建造基地，但你需要一個像樣的氣閘，確保氣體不會因為$(thing)漩渦$()全部散逸。搭配$(item)熱泵$()時，封閉空間就會變得適合居住，讓你可以脫下頭盔、種植作物，並放置不會結冰的水源。$(br2)$(o)(下頁續……)$()"
+			"text": "任何$(item)實心方塊$()都可以用來建造基地，但你需要一個像樣的氣閘，確保氣體不會因為$(thing)漩渦$()全部散逸。搭配$(item)熱泵$()後，封閉空間就適合居住，可以脫下頭盔、種植作物，放置水源也不會結冰。$(br2)$(o)(下頁續……)$()"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -430,13 +430,13 @@
 			"type": "patchouli:spotlight",
 			"item": "tag:ad_astra:sliding_doors",
 			"title": "滑門",
-			"text": "你會想在基地內部和太空真空之間設置一套像樣的$(thing)氣閘系統$()。一般的門也可以用，但這種 3x3 的門非常符合高科技月球基地的風格。和平常一樣，可以用$(item)壓力板$()自動開關。$(br2)$(bold)小技巧：$()這種門也可以用在無塵室！"
+			"text": "基地內部與太空真空之間最好設置一套像樣的$(thing)氣閘系統$()。一般的門也可以用，但這種 3x3 的門非常符合高科技月球基地的風格。一樣可以用$(item)壓力板$()自動開關。$(br2)$(bold)小技巧：$()這種門也可以用在無塵室！"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:higgs_emitter",
 			"anchor": "higgs",
-			"text": "$(item)Higgs 發射器$()可以製造人工重力，就像$(item)熱泵$()或$(l:the_moon/the_moon#distributor)可呼吸空氣分配器$()一樣，作用範圍是一個密封區域。範圍大小取決於多方塊結構的能源倉等級。想創造零重力環境，請確保身上帶著一把 $(item)壓縮槍$()。"
+			"text": "$(item)希格斯發射器$()可以製造人工重力，和$(item)熱泵$()或$(l:the_moon/the_moon#distributor)可呼吸空氣分配器$()一樣作用於密封區域。範圍大小取決於多方塊結構的能源倉等級。想創造零重力環境，記得身上帶把$(item)壓縮槍$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -458,7 +458,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "endermanoverhaul:soul_pearl",
-			"text": "其次，你可以用$(item)靈魂珍珠$()升級$(thing)太空服$()的每一個部件。這樣死亡時它們就會保持穿在身上！$(br2)你可以從月球上那些比較強悍的敵對$(l:the_moon/moon_fauna#endermen)終界使者$()身上取得靈魂珍珠。$(br2)$(italic)我們保證這是科幻，不是魔法。$()"
+			"text": "其次，可以用$(item)靈魂珍珠$()升級$(thing)太空服$()的每個部件，死亡時就不會脫落！$(br2)靈魂珍珠可從月球上較強悍的敵對$(l:the_moon/moon_fauna#endermen)終界使者$()身上取得。$(br2)$(italic)我們保證這是科幻，不是魔法。$()"
 		},
 		{
 			"type": "patchouli:relations",

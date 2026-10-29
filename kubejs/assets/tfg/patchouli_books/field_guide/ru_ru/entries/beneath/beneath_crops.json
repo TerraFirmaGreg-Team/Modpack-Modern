@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "Культуры Бездны",
+			"title": "Beneath Crops",
 			"text": "$(thing)Бездна$() может быть суровой средой, но там всё же можно найти культуры. Культуры Бездны невероятно устойчивы и могут расти в условиях экстремальной жары, что делает их полезными для выживания под землёй и на поверхности."
 		},
 		{
@@ -254,7 +254,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "beans",
-			"title": "Чернитная Фасоль",
+			"title": "Blackstone Beans",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Potassium$(br2)Blackstone Beans can be eaten for $(thing)Vegetable$() and $(thing)Protein$() nutrition. However, they must be cooked first!"
 		},
 		{
@@ -484,7 +484,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cotton",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 40 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cotton is a two block tall crop. Cotton seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Cotton Balls$() which can be processed into $(thing)Cotton String$() or $(thing)Cloth$().",
+			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 40 - 100 %$(br)$(bold)Удобрение$(): Азот$(br2)Хлопок — это культура высотой в два блока. Семена хлопка можно высадить на обработанную землю; растение вырастает до двух блоков в высоту и дает $(item)Хлопковые Коробочки$() которые можно переработать в $(thing)Хлопковую Нить$() или $(thing)Ткань$().",
 			"title": "Хлопок"
 		},
 		{
@@ -600,7 +600,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Читать дальше",
+			"title": "Читать далее",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/climate",

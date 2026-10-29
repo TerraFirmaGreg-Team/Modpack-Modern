@@ -702,7 +702,9 @@ const registerGTCEURecipes = (event) => {
 	global.modifyRecipe(event, "gtceu:chemical_reactor/butraldehyde", {
         newId: "tfg:butraldehyde",
         duration: 20 * 30,
-        eut: GTValues.VA[GTValues.MV]
+        eut: GTValues.VA[GTValues.MV],
+		circuit: 5
+
     })
 
 	// Change Cracker to require Cleanroom

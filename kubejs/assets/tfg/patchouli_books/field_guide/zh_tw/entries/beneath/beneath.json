@@ -6,12 +6,12 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "intro",
-			"text": "$(thing)地底$()是位於主世界正下方、由極深洞穴構成的網路。$(br)這個維度的平衡設計以$(thing)冶金時代$()中後期為準。$(br2)這裡比地表更危險，因此我們建議至少要有金屬盾牌和良好的營養狀態，而盔甲、水壺、降溫衣物和遠程武器也會大有幫助。"
+			"text": "$(thing)地底$()是主世界正下方由極深洞穴構成的網路。$(br)這個維度以$(thing)冶金時代$()中後期為平衡基準。$(br2)這裡比地表更危險，建議至少備妥金屬盾牌並維持良好營養；盔甲、水壺、降溫衣物和遠程武器也會大有幫助。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "differences",
-			"text": "它與一般的地獄體驗有幾點不同：$(li)進入的$(l:beneath/beneath#entering)方式不同$()$(li)水不會瞬間蒸發$(li)床可以正常使用$(li)在地底移動不會比在主世界快$(br2)作為回報，你可以在這裡找到$(thing)高嶺土$()、$(thing)石墨$()等資源，以及更豐富且更容易接觸的$(thing)礦脈$()和其他寶藏。"
+			"text": "這裡和一般的地獄有幾點不同：$(li)進入的$(l:beneath/beneath#entering)方式不同$()$(li)水不會瞬間蒸發$(li)床可以正常使用$(li)在地底移動不會比在主世界快$(br2)相對地，你可以在這裡找到$(thing)高嶺土$()、$(thing)石墨$()等資源，以及更豐富且更容易接觸的$(thing)礦脈$()和其他寶藏。"
 		},
 		{
 			"type": "patchouli:text",
@@ -32,27 +32,27 @@
 			"type": "patchouli:text",
 			"anchor": "entering",
 			"title": "進入地底",
-			"text": "要前往地底，只需在$(thing)Y=-58$()找到主世界的基岩。$(br2)要挖到基岩，你必須用$(l:game_mechanics/mining#explosives)炸藥$()或$(item)鋼以上的工具$()突破角岩層、找到含有較脆的$(thing)角斑岩$()的洞穴，或是排乾熔岩湖。$(br2)請注意，$(item)原始炸藥$()的威力不足以破壞角岩。"
+			"text": "只要在$(thing)Y=-58$()找到主世界的基岩，就能前往地底。$(br2)要挖到基岩，必須用$(l:game_mechanics/mining#explosives)炸藥$()或$(item)鋼以上的工具$()突破角岩層、找到含有較脆$(thing)角斑岩$()的洞穴，或排乾熔岩湖。$(br2)注意，$(item)原始炸藥$()的威力不足以破壞角岩。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "你會出現在地底相同的 X 和 Z 座標，周圍會開出 3x2x3 的空間，必要時可以放置一些支撐。$(br2)如果腳下沒有地板，會提供一朵暫時的雲，同時給予短暫的$(thing)緩降$()和$(thing)火焰保護$()效果，以防發生意外。"
+			"text": "你會出現在地底相同的 X、Z 座標，周圍開出 3x2x3 的空間，必要時可放置支撐。$(br2)若腳下沒有地板，會出現一朵暫時的雲，並給予短暫的$(thing)緩降$()和$(thing)火焰保護$()效果，以防意外。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "exiting",
 			"title": "離開地底",
-			"text": "要返回時，只需以相同的方式抵達天花板的基岩。$(br2)建議$(thing)記下$()你進入的位置，這樣準備離開時就能回到主世界的同一個地方。"
+			"text": "返回時，只要以相同方式抵達天花板的基岩即可。$(br2)建議$(thing)記下$()進入的位置，準備離開時就能回到主世界的同一個地方。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "你會在$(thing)Y=-54$()返回，位於任何可能存在的熔岩湖上方，同樣在 3x2x3 的空間內。玩家所在的中間兩格一定會被替換成空氣，所以你可能要避免在那裡放置梯子。"
+			"text": "你會回到$(thing)Y=-54$()，位於任何熔岩湖上方，同樣在 3x2x3 的空間內。玩家所在的中間兩格一定會被替換成空氣，最好別在那裡放梯子。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "biomes",
 			"title": "生態域",
-			"text": "地底有一整套全新的生態域等你探索！$(br2)地底可以垂直分為三層，每一層都有自己的生態域。越往下越熱，也越危險！"
+			"text": "地底有一整套全新的生態域等你探索！$(br2)地底可垂直分為三層，各有自己的生態域，越往下越熱也越危險！"
 		},
 		{
 			"type": "patchouli:text",
@@ -117,7 +117,7 @@
 				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
 			],
 			"border": true,
-			"text": "這裡沒有硫磺立方怪，但這個熱氣蒸騰的生態域是尋找具有治療效果的$(thing)溫泉水$()的好地方。"
+			"text": "這裡沒有硫磺立方怪，但這個熱氣蒸騰的生態域很適合尋找可治療的$(thing)溫泉水$()。"
 		},
 		{
 			"type": "patchouli:image",
@@ -173,18 +173,18 @@
 			"type": "patchouli:text",
 			"anchor": "geology",
 			"title": "地質",
-			"text": "和主世界一樣，地底也有自己的岩層。在最上層，你可能會找到千枚岩、片岩、片麻岩、大理岩、板岩、混合岩和石灰華。$(br2)在這些岩層之下，你可能會找到片岩、片麻岩、凝灰岩、混合岩、石灰華和閃長岩。"
+			"text": "和主世界一樣，地底也有自己的岩層。最上層可能有千枚岩、片岩、片麻岩、大理岩、板岩、混合岩和石灰華。$(br2)其下可能有片岩、片麻岩、凝灰岩、混合岩、石灰華和閃長岩。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "再往下是輝長岩、花崗岩、凝灰岩、閃長岩或混合岩。$(br2)在地底的較低層，有一層只有混合岩的岩層，最底部則是輝石岩。"
+			"text": "再往下是輝長岩、花崗岩、凝灰岩、閃長岩或混合岩。$(br2)地底的較低層有一層全是混合岩，最底部則是輝石岩。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "minecraft:blackstone,minecraft:calcite,tfg:gilsonite,tfg:rock/aragonite,tfg:rock/glauberite,tfg:huge_quartz,beneath:crackrack,tfg:halite",
 			"title": "更多岩石",
 			"anchor": "more_rocks",
-			"text": "其他一些石頭可以在別的地方找到。$(br2)小型熔岩池周圍環繞著$(item)輝石岩$()，而$(item)方解石$()可以在溫泉水池中找到。$(br2)$(item)角斑岩$()以高大的巨柱形式遍布整個地底。"
+			"text": "其他石頭則分布在別處。$(br2)小型熔岩池周圍是$(item)輝石岩$()，溫泉水池中可找到$(item)方解石$()。$(br2)$(item)角斑岩$()以高大的巨柱遍布整個地底。"
 		},
 		{
 			"type": "patchouli:text",
@@ -192,7 +192,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(item)硬瀝青$()是一種非常深色的建築方塊，也是$(l:logistics/roads#asphalt)瀝青$()的原料，可以在$(l:beneath/beneath#tar_pools)焦油池$()生態域中大量找到，同時還有$(item)砂岩$()。$(br2)最後，$(item)石鹽$()可以在$(l:beneath/beneath#salt_caves)鹽窟$()生態域中大量找到，可以開採出石鹽和鉀石鹽礦石。"
+			"text": "$(item)硬瀝青$()是非常深色的建築方塊，也是$(l:logistics/roads#asphalt)瀝青$()的原料，在$(l:beneath/beneath#tar_pools)焦油池$()生態域大量存在，那裡也有$(item)砂岩$()。$(br2)最後，$(l:beneath/beneath#salt_caves)鹽窟$()生態域有大量$(item)石鹽$()，可開採出石鹽和鉀石鹽礦石。"
 		},
 		{
 			"type": "patchouli:relations",

@@ -8,5 +8,9 @@
     "quests.groups.space_age": "太空时代",
     "quests.groups.interstellar": "星际时代",
     "quests.groups.technological_help": "技术帮助",
-    "quests.groups.tips": "提示与技巧"
+    "quests.groups.tips": "提示与技巧",
+    "quests.player_completed_quest": "&e%s&r 已完成任务： ",
+    "quests.team_completed_quest": "&e%s&7 [%s]&r 已完成任务： ",
+    "quests.player_completed_chapter": "&e%s&r 已完成任务章节： ",
+    "quests.team_completed_chapter": "&e%s&7 [%s]&r 已完成任务章节： "
 }

@@ -22,7 +22,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(l:cooking/decay#freeze_dry)冷凍乾燥水果$()是美味的點心，$(item)餐包$()可以裝任何你在地球上會吃的一般食物，還有營養完整但很噁心的$(item)能量膏$()。吃完後，鋁箔包裝也可以重複使用！"
+			"text": "$(l:cooking/decay#freeze_dry)凍乾水果$()是美味的點心，$(item)餐包$()可以裝任何你在地球上會吃的一般食物，還有營養完整但很噁心的$(item)能量膏$()。吃完後，鋁箔包裝也可以重複使用！"
 		},
 		{
 			"type": "patchouli:relations",

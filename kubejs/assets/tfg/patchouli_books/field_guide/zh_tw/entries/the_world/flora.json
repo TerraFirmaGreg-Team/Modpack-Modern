@@ -15,11 +15,11 @@
             "item": {
                 "tag": "tfc:plants"
             },
-            "text": "地球的植物極為多樣。與原版$(thing)Minecraft$()不同――$(tfg)中的植物會依當地的$(l:the_world/climate#climate)氣候條件$()生成。"
+            "text": "地球的植物極為多樣。與原版$(thing)Minecraft$()不同，$(tfg)中的植物會依當地$(l:the_world/climate#climate)氣候條件$()生成。"
         },
         {
             "type": "patchouli:text",
-            "text": "在某些$(l:the_world/climate#seasons)季節$()中可能很難找到植物，因為它們會經歷開花與休眠的循環，或隨當地溫度變化而改變顏色。$(br2)色彩繽紛的花朵通常可以在$(l:craftsmanship/quern)手推磨$()中磨成$(thing)染料$()。有些植物則可以用來製作$(l:the_world/flora#medicinal_plants)藥物$()或$(l:the_world/flora#spices)餐點$()。"
+            "text": "植物會經歷開花與休眠的循環，或隨當地溫度改變顏色，因此在某些$(l:the_world/climate#seasons)季節$()可能很難找到。$(br2)色彩繽紛的花朵通常可放入$(l:craftsmanship/quern)手推磨$()磨成$(thing)染料$()，有些植物則可用來製作$(l:the_world/flora#medicinal_plants)藥物$()或$(l:the_world/flora#spices)餐點$()。"
         },
         {
             "type": "patchouli:multiblock",
@@ -38,7 +38,7 @@
             },
             "name": "一般",
             "anchor": "standard_plants",
-            "text": "普通植物就像小花。它們會生長在草地、泥土和農田上。",
+            "text": "一般植物就像小花。它們會生長在草地、泥土和耕地上。",
             "enable_visualize": false
         },
         {
@@ -57,7 +57,7 @@
                 }
             },
             "name": "乾燥",
-            "text": "耐旱植物與普通植物一樣，但它們可以在沙子上生長。這些植物一般只會生長在降雨量少的地區。",
+            "text": "耐旱植物與一般植物相同，但能長在沙子上，一般只會出現在降雨量少的地區。",
             "enable_visualize": false
         },
         {
@@ -100,7 +100,7 @@
                 }
             },
             "name": "匍匐植物",
-            "text": "匍匐植物會在其他方塊表面爬行。它們大部分時候都會成片出現。",
+            "text": "匍匐植物會依附在周圍方塊的表面上。它們大多成片出現在地面上。",
             "enable_visualize": false
         },
         {
@@ -139,7 +139,7 @@
                 }
             },
             "name": "矮草",
-            "text": "矮草會隨著時間推移而長高。它們也能夠在泥炭和壤泥上生長。",
+            "text": "矮草會隨時間長高。它們也能在泥炭和泥巴上生長。",
             "enable_visualize": false
         },
         {
@@ -162,7 +162,7 @@
                 }
             },
             "name": "芒草",
-            "text": "高草方塊的高度剛好足以遮住你的視野。",
+            "text": "芒草的高度剛好足以遮住你的視野。",
             "enable_visualize": false
         },
         {
@@ -204,7 +204,7 @@
                 }
             },
             "name": "懸垂藤",
-            "text": "懸垂藤蔓以其頂部一個方塊為基礎向下生長。",
+            "text": "懸垂藤會從上方的附著方塊向下生長。",
             "enable_visualize": false
         },
         {
@@ -233,7 +233,7 @@
         {
             "type": "patchouli:text",
             "anchor": "aquatic_plants",
-            "text": "水生植物只會生成在淡水或鹹水中。除此之外，它們的生長和行為與地表上的植物大致相同。有些水生植物可以煮來吃。",
+            "text": "水生植物只會生成在淡水或鹹水中，其餘生長和行為與地表植物大致相同。有些水生植物可以煮來吃。",
             "title": "水生植物"
         },
         {
@@ -251,7 +251,7 @@
                     "X": "tfc:plant/sago[fluid=water]"
                 }
             },
-            "name": "普通水生植物",
+            "name": "一般水生植物",
             "text": "用$(thing)$()刀$()破壞一般的水生植物，可以取得$(thing)海草$()。",
             "enable_visualize": false
         },
@@ -373,7 +373,7 @@
                 "tag": "tfg:medicinal_ingredients/plants"
             },
             "title": "藥用植物",
-            "text": "$(tfg)中有許多植物具有藥用價值，可以用來製作植物療法藥物。你可以在攪拌碗中將這些材料與蠟、黏合劑和溫泉水混合製成藥片，或製成更進階的藥物。"
+            "text": "$(tfg)中有許多植物具藥用價值，可用來製作植物療法藥物。在攪拌碗中將這些材料與蠟、黏合劑和溫泉水混合，即可製成藥丸或更進階的藥物。"
         },
         {
             "title": "香料",
@@ -382,7 +382,7 @@
                 "tag": "tfg:foods/spice_plants"
             },
             "anchor": "spices",
-            "text": "有了$(thing)群巒生活$()，你可以收集並自行種植許多具有烹飪用途的小型植物。它們都可以在野外找到，採收後可以在$(l:agriculture/greenhouse)溫室$()中栽培，它們會消耗 20 點的氮、磷、鉀。"
+            "text": "$(thing)群巒生活$()加入了許多具烹飪用途的小型植物，可以自行採集、種植。它們都能在野外找到，採收後可在$(l:agriculture/greenhouse)溫室$()中栽培，會消耗氮、磷、鉀各 20 點。"
         },
         {
             "type": "tfg:table",
@@ -392,7 +392,7 @@
                     "bold": true
                 },
                 {
-                    "text": "平均溫度(°C)",
+                    "text": "溫度(°C)",
                     "bold": true
                 },
                 {
@@ -544,7 +544,7 @@
             },
             "name": "小荳蔻",
             "anchor": "cardamom",
-            "text": "$(thing)野生豆蔻$()生長在溫度18-30°C、降雨量350-500mm的區域。",
+            "text": "$(thing)野生小荳蔻$()生長在溫度18-30°C、降雨量350-500mm的區域。",
             "enable_visualize": false
         },
         {
@@ -651,7 +651,7 @@
             "type": "patchouli:crafting",
             "anchor": "seed_ball",
             "recipe": "firmalife:crafting/seed_ball",
-            "text": "$(item)種子球$()用來種植不同類型的植物。在清理基地準備建造時很有用。種子球的配方需要$(item)堆肥$()和4份$(thing)種子$()。"
+            "text": "$(item)種子球$()可用來種植不同類型的草，清理基地準備建造後很實用。配方需要$(item)堆肥$()和 4 個$(thing)種子$()。"
         },
         {
             "type": "patchouli:multiblock",
@@ -675,7 +675,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "蝴蝶草會隨時間成熟。成熟時有機會蔓延到周圍的方塊，或變為新植物。從其他草塊蔓延開的蝴蝶草將不再蔓延。 $(br)蝴蝶草變為其他植物後，可以用$(item)剪刀$()來收集它們。"
+            "text": "蝴蝶草會隨時間成熟。成熟時有機會蔓延到周圍的方塊，或變成新的草。由其他草蔓延而來的蝴蝶草不會再蔓延。$(br)蝴蝶草變成其他草後，可以用$(item)剪刀$()採集。"
         },
         {
             "type": "patchouli:relations",

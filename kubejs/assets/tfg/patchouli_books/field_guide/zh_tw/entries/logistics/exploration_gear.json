@@ -21,21 +21,21 @@
             "anchor": "safety_boots",
             "title": "安全靴",
             "item": "sns:steel_toe_hiking_boots,sns:black_steel_toe_hiking_boots,sns:red_steel_toe_hiking_boots,sns:blue_steel_toe_hiking_boots",
-            "text": "可以在登山靴中整合各種鋼材來提高防護力。$(thing)藍鋼和紅鋼$()登山靴還能額外防護極端溫度等環境危害。"
+            "text": "登山靴可以加入各種鋼材提高防護力，$(thing)藍鋼和紅鋼$()登山靴還能額外抵禦極端溫度。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "canes",
             "title": "手杖",
             "item": "tfccanes:walking_cane,tfccanes:refined_walking_cane",
-            "text": "$(thing)手杖$()提供與登山靴類似的效果，但必須拿在手上。它的跨步高度效果甚至可以與登山靴疊加，讓你能自動跨上 2 格高的牆。"
+            "text": "$(thing)手杖$()效果與登山靴類似，但必須拿在手上。它的跨步高度效果還能與登山靴疊加，讓你自動跨上 2 格高的牆。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "snowshoes",
             "title": "雪鞋",
             "item": "tfg:snowshoes",
-            "text": "將$(thing)雪鞋$()穿在腳上，可以消除在雪地上行走時的減速懲罰，並讓你能在粉雪上行走。"
+            "text": "穿上$(thing)雪鞋$()可以消除在雪地行走的減速懲罰，還能在粉雪上行走。"
         },
         {
             "type": "patchouli:spotlight",
@@ -56,58 +56,58 @@
             "anchor": "diving_suit",
             "title": "潛水服",
             "item": "create:copper_diving_helmet,create:copper_diving_boots,create:copper_backtank",
-            "text": "$(item)銅潛水頭盔和背負氣瓶$()能讓穿戴者無限期待在水下，直到背負氣瓶的空氣耗盡為止。你可以為氣瓶提供$(thing)機械動力$()來補充空氣。穿著$(item)銅潛水靴$()可以讓你在海床上移動得更好，並防止$(thing)機械輸送帶$()和$(thing)比空氣輕的氣體$()對你產生影響。"
+            "text": "$(item)銅潛水頭盔和背負氣瓶$()能讓穿戴者一直待在水下，直到氣瓶空氣耗盡。為氣瓶提供$(thing)機械動力$()即可補充空氣。穿上$(item)銅潛水靴$()能在海床上行動更自如，也不會受$(thing)機械輸送帶$()和$(thing)比空氣輕的氣體$()影響。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "lava_diving_suit",
             "title": "熔岩潛水服",
             "item": "create:netherite_diving_helmet,create:netherite_diving_boots,create:netherite_backtank,minecraft:netherite_leggings",
-            "text": "$(thing)藍鋼潛水服$()的運作方式與$(l:logistics/exploration_gear#diving_suit)潛水服$()類似，但它不是讓你在水下呼吸，而是讓你在熔岩中呼吸。必須穿戴整套才能保護你免受高溫傷害。"
+            "text": "$(thing)藍鋼潛水服$()與$(l:logistics/exploration_gear#diving_suit)潛水服$()類似，但不是讓你在水下呼吸，而是在熔岩中呼吸。必須穿戴整套才能抵禦高溫。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "digger_helmet",
             "title": "礦工頭盔",
             "item": "diggerhelmet:digger_helmet,diggerhelmet:copper_digger_helmet,diggerhelmet:bismuth_bronze_digger_helmet,diggerhelmet:black_bronze_digger_helmet,diggerhelmet:bronze_digger_helmet,diggerhelmet:wrought_iron_digger_helmet,diggerhelmet:steel_digger_helmet,diggerhelmet:black_steel_digger_helmet,diggerhelmet:red_steel_digger_helmet,diggerhelmet:blue_steel_digger_helmet,diggerhelmet:wool_lining,diggerhelmet:silk_lining,diggerhelmet:mining_speed_modifier,diggerhelmet:auto_drink_modifier",
-            "text": "多虧了頭上的蠟燭，$(thing)礦工頭盔$()能在玩家周圍提供永久的環境光源。它還有一些實用的修飾升級，例如$(item)挖掘速度修飾$()、$(item)自動飲水修飾$()或$(thing)隔熱內襯$()。$(br)可以佩戴在你的$(l:craftsmanship/clothing#curios)飾品欄$()中，但這樣就不會提供護甲值。"
+            "text": "$(thing)礦工頭盔$()頭頂有蠟燭，能在玩家周圍提供永久的環境光源，還有一些實用的修飾升級，例如$(item)挖掘速度修飾$()、$(item)自動飲水修飾$()或$(thing)隔熱內襯$()。$(br)可以佩戴在$(l:craftsmanship/clothing#curios)飾品欄$()中，但這樣就不會提供護甲值。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "grappling_hook",
             "title": "抓鉤",
             "item": "grapplemod:grapplinghook",
-            "text": "$(thing)抓鉤$()按下$(item)$(k:key.attack)$()可以射出一條繩索並固定在方塊上，讓你能擺盪移動並快速垂直移動。$(br2)你可以將抓鉤與各種物品合成來升級――詳情請參閱$(thing)提示 - 工具$()任務章節中的相關段落。"
+            "text": "$(thing)抓鉤$()按 $(item)$(k:key.attack)$() 可射出繩索並固定在方塊上，讓你擺盪移動、快速垂直移動。$(br2)抓鉤可以與各種物品合成升級，詳情請參閱$(thing)提示 - 工具$()任務章節。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "harpoon",
             "title": "魚叉",
             "item": "species:harpoon",
-            "text": "$(thing)魚叉$()與$(l:logistics/exploration_gear#grappling_hook)抓鉤$()非常相似，但限制多得多，它沒有升級，而且按下$(item)$(k:key.use)$()時只能筆直向上發射。$(br2)不過，它可以讓你按下$(item)$(k:key.jump)$()直接沿著繩索往上爬，還能與$(l:logistics/exploration_gear#coil)繩捲$()搭配製作$(item)滑索$()！"
+            "text": "$(thing)魚叉$()與$(l:logistics/exploration_gear#grappling_hook)抓鉤$()非常相似，但限制多得多：沒有升級，按 $(item)$(k:key.use)$() 時只能筆直向上發射。$(br2)不過它可以按 $(item)$(k:key.jump)$() 直接沿繩索往上爬，還能與$(l:logistics/exploration_gear#coil)繩捲$()搭配製作$(item)滑索$()！"
         },
         {
             "type": "patchouli:spotlight",
             "item": "species:coil",
             "anchor": "coil",
-            "text": "手持$(item)繩捲$()對兩個柵欄按下右鍵，就能建造一條$(item)滑索$()！在你上方建一條，然後將$(l:logistics/exploration_gear#harpoon)魚叉$()射向柵欄，就能開始滑行了。"
+            "text": "手持$(item)繩捲$()對兩個柵欄按右鍵，就能建造一條$(item)滑索$()！在上方建一條，再將$(l:logistics/exploration_gear#harpoon)魚叉$()射向柵欄，就能開始滑行了。"
         },
         {
             "type": "patchouli:text",
-            "text": "空手對繩捲按下右鍵可以改變繩索的鬆緊度。每個繩捲都是$(thing)單向$()的，由繩索上的「箭頭」表示，所以如果你想要雙向的滑索，就需要兩個繩捲。$(br2)你也可以將繩捲放在其他方塊上作為裝飾，但必須放在柵欄上才能作為滑索使用。"
+            "text": "空手對繩捲按右鍵可以調整繩索鬆緊。每個繩捲都是$(thing)單向$()的(看繩索上的「箭頭」)，想要雙向滑索就需要兩個繩捲。$(br2)繩捲也能放在其他方塊上當裝飾，但必須放在柵欄上才能當滑索。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "hang_glider",
             "item": "hangglider:hang_glider,hangglider:reinforced_hang_glider",
-            "text": "$(item)懸掛式滑翔傘$()可以讓你進行長距離的水平移動，非常適合穿越寬廣的開闊地帶。"
+            "text": "$(item)懸掛式滑翔傘$()能長距離水平移動，非常適合穿越開闊地帶。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "jetpacks",
             "item": "gtceu:liquid_fuel_jetpack,gtceu:electric_jetpack,gtceu:advanced_electric_jetpack",
             "title": "噴射背包",
-            "text": "$(item)噴射背包$()非常適合垂直移動，而且有好幾種升級，每一種都比前一種更快、更擅長懸停。$(br2)電動噴射背包可以對電池按下$(item)潛行-$(k:key.use)$()進行遠端充電，或使用$(item)無線充電器$()充電。"
+            "text": "$(item)噴射背包$()非常適合垂直移動，有好幾種升級，一種比一種更快、更擅長懸停。$(br2)電動噴射背包可以對電池按 $(item)潛行-$(k:key.use)$() 遠端充電，或使用$(item)無線充電器$()。"
         },
         {
             "type": "patchouli:relations",
