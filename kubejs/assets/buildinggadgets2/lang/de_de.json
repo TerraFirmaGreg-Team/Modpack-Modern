@@ -89,6 +89,8 @@
   "buildinggadgets2.screen.up": "Hoch",
   "buildinggadgets2.snap": "Der EINRASTER!",
   "buildinggadgets2.squish": "Quetschen",
+  "buildinggadgets2.templatename": "Name: %s",
+  "buildinggadgets2.tooltips.blockstate": "Block: %s",
   "buildinggadgets2.tooltips.boundto": "Gebunden zu: %s:%s",
   "buildinggadgets2.tooltips.energy": "Energie: %d/%d",
   "buildinggadgets2.tooltips.holdshift": "Halte Shift für Details",
@@ -102,7 +104,9 @@
   "item.buildinggadgets2.gadget_exchanging": "Austauschgerät",
   "item.buildinggadgets2.redprint": "Rotpause",
   "item.buildinggadgets2.template": "Vorlage",
+  "itemGroup.buildinggadgets2": "BuildingGadgets2",
   "key.buildinggadgets2.anchor": "Anker",
+  "key.buildinggadgets2.category": "Building Gadgets 2",
   "key.buildinggadgets2.range": "Reichweite",
   "key.buildinggadgets2.settings_menu": "Einstellungsmenü",
   "key.buildinggadgets2.undo": "Rückgängig machen"

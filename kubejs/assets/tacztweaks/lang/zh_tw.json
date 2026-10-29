@@ -77,6 +77,7 @@
 	"tacztweaks.config.label.ETiltGun.NEVER": "永不",
 	"tacztweaks.config.label.disabled": "停用",
 	"tacztweaks.config.label.enabled": "啟用",
+	"tacztweaks.config.label.multiplier": "%1$sx",
 	"tacztweaks.config.label.synced": "顯示伺服器端設定",
 	"tacztweaks.config.modifier.addend.description": "加上這個數值。",
 	"tacztweaks.config.modifier.addend.name": "加數",
@@ -155,6 +156,7 @@
 	"tacztweaks.config.tweaks.infiniteAmmoDisablesConsumption.description": "玩家擁有無限彈藥時(例如來自創造模式彈藥箱)不消耗彈藥。",
 	"tacztweaks.config.tweaks.infiniteAmmoDisablesConsumption.name": "無限彈藥不消耗",
 	"tacztweaks.config.tweaks.rps.description": "把槍械數據中的 RPM(每分鐘發數)改成 RPS(每秒發數)。",
+	"tacztweaks.config.tweaks.rps.name": "RPS",
 	"tacztweaks.config.tweaks.suppressFleshHitSounds.description": "靜音非爆頭命中時播放的音效。",
 	"tacztweaks.config.tweaks.suppressFleshHitSounds.name": "靜音身體命中音效",
 	"tacztweaks.config.tweaks.suppressHeadHitSounds.description": "靜音爆頭時播放的音效。",
@@ -166,5 +168,6 @@
 	"tacztweaks.key.tiltGun": "傾斜槍械",
 	"tacztweaks.key.unload": "卸下",
 	"tacztweaks.packs.filter": "過濾器",
+	"tacztweaks.property_diagrams.rps": "RPS",
 	"tacztweaks.search": "搜尋……"
 }

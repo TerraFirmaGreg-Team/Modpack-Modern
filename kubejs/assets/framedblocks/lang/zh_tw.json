@@ -16,7 +16,7 @@
   "block.framedblocks.framed_checkered_panel_segment": "棋盤紋豎板分段框架",
   "block.framedblocks.framed_checkered_slab": "棋盤紋半磚框架",
   "block.framedblocks.framed_checkered_slab_segment": "棋盤紋半磚分段框架",
-  "block.framedblocks.framed_chest": "箱子框架",
+  "block.framedblocks.framed_chest": "儲物箱框架",
   "block.framedblocks.framed_chiseled_bookshelf": "雕紋書櫃框架",
   "block.framedblocks.framed_collapsible_block": "可變形方塊框架",
   "block.framedblocks.framed_collapsible_copycat_block": "可變形仿製方塊框架",
@@ -280,7 +280,7 @@
   "msg.framedblocks.powered_saw.status.ready": "就緒",
   "msg.framedblocks.prism_offset.switch": "使用框架錘敲擊以切換偏移",
   "msg.framedblocks.split_line.switch": "使用框架扳手敲擊以切換分割線方向",
-  "title.framedblocks.framed_chest": "箱子框架",
+  "title.framedblocks.framed_chest": "儲物箱框架",
   "title.framedblocks.framed_secret_storage": "秘密儲物框架",
   "title.framedblocks.framing_saw": "框架鋸",
   "title.framedblocks.powered_framing_saw": "動力框架鋸",
@@ -328,6 +328,7 @@
   "tooltip.framedblocks.one_way_window.face_abbr.up": "上",
   "tooltip.framedblocks.one_way_window.face_abbr.west": "西",
   "tooltip.framedblocks.one_way_window.set_face": "使用框架扳手敲擊以將透視面設為%s",
+  "tooltip.framedblocks.powered_saw.energy": "%s / %s FE",
   "tooltip.framedblocks.powered_saw.status.no_recipe": "未選擇配方，點選目標格並放入任意框架方塊以選擇配方",
   "tooltip.framedblocks.prism_offset.false": "三角紋理未偏移。",
   "tooltip.framedblocks.prism_offset.true": "三角紋理偏移了半個方塊。",
@@ -339,5 +340,6 @@
   "tooltip.framedblocks.y_slope": "方塊使用%s面作為垂直坡面。",
   "tooltip.framedblocks.y_slope.horizontal": "水平",
   "tooltip.framedblocks.y_slope.toggle": "使用框架扳手敲擊以切換至%s面",
-  "tooltip.framedblocks.y_slope.vertical": "垂直"
+  "tooltip.framedblocks.y_slope.vertical": "垂直",
+  "block.framedblocks.framed_torch": "火把框架"
 }

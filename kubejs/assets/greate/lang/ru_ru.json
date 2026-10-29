@@ -307,11 +307,17 @@
 	"item.greate.stone_belt_connector": "Ремень (Кожа)",
 	"item.greate.styrene_butadiene_rubber_belt_connector": "Ремень (Стирол-бутадиеновая резина)",
 	"item.greate.titanium_vertical_gearbox": "Вертикальная коробка передач (Титан)",
+	"itemGroup.greate": "Greate",
 	"material.greate.andesite_alloy": "Андезитовый сплав",
 	"material.greate.chromatic_compound": "Хроматическое соединение",
 	"material.greate.refined_radiance": "Изысканное сияние",
 	"material.greate.rose_quartz": "Розовый кварц",
 	"material.greate.shadow_steel": "Теневая сталь",
 	"tagprefix.alloy": "%s (Сплав)",
-	"tagprefix.whisk": "Венчик (%s)"
+	"tagprefix.whisk": "Венчик (%s)",
+	"greate.tooltip.network_statistics": "Статистика сети: ",
+	"greate.tooltip.saw.active_recipe_type": "Доступные рецепты: %s",
+	"item.greate.polybenzimidazole_belt_connector": "Ремень (Полибензимидазол (ПБИ))",
+	"item.greate.polyethylene_belt_connector": "Ремень (Стирол-бутадиеновая резина)",
+	"item.greate.polytetrafluoroethylene_belt_connector": "Ремень (Политетрафторэтилен)"
 }

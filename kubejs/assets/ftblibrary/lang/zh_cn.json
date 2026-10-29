@@ -46,6 +46,8 @@
   "ftblibrary.select_item.list_mode": "列出模式",
   "ftblibrary.select_item.list_mode.all": "所有物品",
   "ftblibrary.select_item.list_mode.inv": "物品栏",
+  "ftblibrary.select_item.list_mode.jei": "JEI",
+  "ftblibrary.select_item.list_mode.rei": "REI",
   "ftblibrary.select_item.nbt": "编辑 NBT\n§7左键: 快速字符串编辑器\n§7右键: 交互式NBT 编辑器",
   "ftblibrary.unsaved_changes": "放弃未保存的更改？",
   "gui.accept": "确认",

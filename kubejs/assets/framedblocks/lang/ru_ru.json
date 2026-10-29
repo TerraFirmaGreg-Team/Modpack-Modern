@@ -239,7 +239,9 @@
   "desc.framedblocks.blueprint_missing_materials": "[Чертёж Framed] Отсутствуют необходимые материалы:",
   "desc.framedblocks.blueprint_none": "Нет",
   "desc.framedblocks.blueprint_reinforced": "Усилено: %s",
+  "desc.framedblocks.blueprint_true": "true",
   "desc.framedblocks.slope_slab.place_upside_down": "Удерживайте клавишу приседания, чтобы разместить вверх ногами",
+  "framedblocks.key.categories.framedblocks": "FramedBlocks",
   "framedblocks.key.update_cull": "Обновить кэш отсечения",
   "item.framedblocks.framed_blueprint": "Чертёж Framed",
   "item.framedblocks.framed_hammer": "Рамный молоток",
@@ -247,6 +249,7 @@
   "item.framedblocks.framed_reinforcement": "Рамное упрочнение",
   "item.framedblocks.framed_screwdriver": "Рамная отвёртка",
   "item.framedblocks.framed_wrench": "Рамный гаечный ключ",
+  "itemGroup.framed_blocks": "FramedBlocks",
   "msg.framedblocks.camo.blacklisted": "Этот блок недопустим в качестве камуфляжа!",
   "msg.framedblocks.camo.block_entity": "Блоки с BlockEntities нельзя вставлять в рамные блоки!",
   "msg.framedblocks.camo.non_solid": "Нетегированные неплотные блоки нельзя вставлять в рамные блоки!",
@@ -325,6 +328,7 @@
   "tooltip.framedblocks.one_way_window.face_abbr.up": "Вв",
   "tooltip.framedblocks.one_way_window.face_abbr.west": "З",
   "tooltip.framedblocks.one_way_window.set_face": "Ударьте рамным ключом, чтобы установить прозрачную сторону на %s",
+  "tooltip.framedblocks.powered_saw.energy": "%s / %s FE",
   "tooltip.framedblocks.powered_saw.status.no_recipe": "Рецепт не выбран; нажмите на целевой слот любым рамным блоком, чтобы выбрать рецепт",
   "tooltip.framedblocks.prism_offset.false": "Текстура треугольника не смещена.",
   "tooltip.framedblocks.prism_offset.true": "Текстура треугольника смещена на полблока.",
@@ -336,5 +340,6 @@
   "tooltip.framedblocks.y_slope": "Блок использует %s грани для вертикальных наклонных граней.",
   "tooltip.framedblocks.y_slope.horizontal": "горизонтальную",
   "tooltip.framedblocks.y_slope.toggle": "Ударьте рамным ключом, чтобы переключиться на %s грани",
-  "tooltip.framedblocks.y_slope.vertical": "вертикальную"
+  "tooltip.framedblocks.y_slope.vertical": "вертикальную",
+  "block.framedblocks.framed_torch": "Рамный факел"
 }

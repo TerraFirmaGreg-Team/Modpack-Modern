@@ -1,4 +1,5 @@
 {
+	"advancedperipherals.name": "Advanced Peripherals",
 	"block.advancedperipherals.ar_controller": "Контроллер доп. реальности",
 	"block.advancedperipherals.block_reader": "Чтец блока",
 	"block.advancedperipherals.chat_box": "Чат-коробка",
@@ -40,6 +41,8 @@
 	"item.advancedperipherals.tooltip.show_desc": "§b[§7%s§b] §7Для описания",
 	"item.advancedperipherals.tooltip.weak_automata_core": "§7Улучшение для черепашки, что позволяет черепашке снова стать полезной",
 	"item.advancedperipherals.weak_automata_core": "Ядро автомата: Слабое",
+	"itemGroup.advancedperipheralstab": "Advanced Peripherals",
+	"keybind.advancedperipherals.category": "Advanced Peripherals",
 	"keybind.advancedperipherals.description": "Показать описание",
 	"pocket.advancedperipherals.chatty_pocket": "Болтушка",
 	"pocket.advancedperipherals.colony_pocket": "Колония",

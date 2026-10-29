@@ -203,6 +203,8 @@
 	"item.sophisticatedbackpacks.upgrade_base": "Yükseltme Temeli",
 	"item.sophisticatedbackpacks.void_upgrade": "Geçersiz Kılma Yükseltmesi",
 	"item.sophisticatedbackpacks.void_upgrade.tooltip": "Filtrede seçilen eşyaları yok eder",
+	"itemGroup.sophisticatedbackpacks": "Sophisticated Backpacks",
+	"key.category.sophisticatedbackpacks.main": "Sophisticated Backpacks",
 	"key.sophisticatedbackpacks.inventory_interaction": "Envanter Etkileşim Yükseltmelerini Çalıştır",
 	"key.sophisticatedbackpacks.open_backpack": "Sırt Çantasını Aç",
 	"key.sophisticatedbackpacks.toggle_upgrade_1": "1'inci Yuvadaki Yükseltmeyi Aç/Kapat",
@@ -210,6 +212,5 @@
 	"key.sophisticatedbackpacks.toggle_upgrade_3": "3'üncü Yuvadaki Yükseltmeyi Aç/Kapat",
 	"key.sophisticatedbackpacks.toggle_upgrade_4": "4'üncü Yuvadaki Yükseltmeyi Aç/Kapat",
 	"key.sophisticatedbackpacks.toggle_upgrade_5": "5'inci Yuvadaki Yükseltmeyi Aç/Kapat",
-	"key.sophisticatedbackpacks.tool_swap": "Geçerli bloğa/varlığa göre takas aleti",
-	"gui.sophisticatedbackpacks.upgrades.refill.target_slot.any": "H"
+	"key.sophisticatedbackpacks.tool_swap": "Geçerli bloğa/varlığa göre takas aleti"
 }

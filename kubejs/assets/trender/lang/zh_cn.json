@@ -1,4 +1,5 @@
 {
+	"text.trender.name": "Trender",
 	"text.trender.sendstacktraces": "发送堆栈记录",
 	"text.trender.sendstacktraces.tooltip": "启用后，日志或游戏崩溃中若包含对 tr7zw 模组的引用，其堆栈跟踪将通过 Sentry (Sentry.io) 发送给模组作者，以帮助更快修复 bug。不会收集或发送任何个人信息。（开启后请重启游戏）",
 	"text.trender.style": "UI 样式",

@@ -327,5 +327,9 @@
   "gui.xaero_pac_requested_large_claim": "開始認領大範圍區域……使用右鍵選項 %1$s 取消。",
   "gui.xaero_pac_requested_large_unclaim": "開始取消認領大範圍區域……使用右鍵選項 %1$s 取消。",
   "gui.xaero_pac_requested_large_forceload": "開始標記大範圍區域為強制載入……使用右鍵選項 %1$s 取消。",
-  "gui.xaero_pac_requested_large_unforceload": "開始取消大範圍區域的強制載入標記……使用右鍵選項 %1$s 取消。"
+  "gui.xaero_pac_requested_large_unforceload": "開始取消大範圍區域的強制載入標記……使用右鍵選項 %1$s 取消。",
+  "gui.xaero_pac_add_claiming_anchor": "新增領地錨點",
+  "gui.xaero_pac_remove_claiming_anchor": "移除領地錨點",
+  "gui.xaero_pac_remove_claiming_anchor_confirm_line1": "要移除以下領地錨點，以及只在其範圍內的所有領地嗎？",
+  "gui.xaero_pac_remove_claiming_anchor_confirm_line2": "此動作無法復原！錨點區塊：%1$s"
 }

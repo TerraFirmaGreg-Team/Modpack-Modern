@@ -109,6 +109,7 @@
   "sodium.extras.options.zoom.cinematic.title": "Zbliżenie kinowe",
   "sodium.extras.options.zoom.default.desc": "Domyślny procent początkowego powiększenia.",
   "sodium.extras.options.zoom.default.title": "Domyślne powiększenie",
+  "sodium.extras.options.zoom.easing.desc": "Postęp animacji wygładzania zostanie podniesiony do tej potęgi, aby uzyskać łagodne zmiany. Wyższe wartości sprawiają, że ruch wydaje się szybszy.\nPrzy zwiększaniu tej wartości zaleca się zwiększyć też zoomSmoothnessMs.\nUstaw 1, aby wyłączyć.",
   "sodium.extras.options.zoom.easing.title": "Wykładnik wygładzania",
   "sodium.extras.options.zoom.max.desc": "Maksymalne powiększenie FOV.",
   "sodium.extras.options.zoom.max.title": "Maksymalna wartość FOV",

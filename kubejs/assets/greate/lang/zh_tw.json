@@ -314,5 +314,12 @@
 	"material.greate.rose_quartz": "玫瑰石英",
 	"material.greate.shadow_steel": "暗影鋼",
 	"tagprefix.alloy": "%s合金",
-	"tagprefix.whisk": "%s攪拌器"
+	"tagprefix.whisk": "%s攪拌器",
+	"config.jade.plugin_greate.saw.active_recipe_type": "目前配方類型",
+	"greate.tooltip.network_statistics": "網路狀態：",
+	"greate.tooltip.saw.active_recipe_type": "目前配方類型：%s",
+	"greate.tooltip.saw.recipe_type_toggle": "用螺絲起子右鍵點擊以切換目前的配方狀態。",
+	"item.greate.polybenzimidazole_belt_connector": "聚苯並咪唑輸送帶",
+	"item.greate.polyethylene_belt_connector": "聚乙烯輸送帶",
+	"item.greate.polytetrafluoroethylene_belt_connector": "聚四氟乙烯輸送帶"
 }
