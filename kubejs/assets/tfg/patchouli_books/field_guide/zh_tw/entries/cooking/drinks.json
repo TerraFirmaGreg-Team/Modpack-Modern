@@ -11,22 +11,22 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "酒精",
-			"text": "$(thing)基礎酒類$()不會為玩家提供任何增益。將各種水果、麵粉或其他材料和水一起放在$(l:craftsmanship/barrels)木桶$()中即可釀造。額外福利是：喝醉時，任何酒類都會影響你在聊天中的說話方式！",
+			"title": "酒類",
+			"text": "$(thing)基礎酒類$()不提供任何增益，將各種水果、麵粉或其他材料和水一起放進$(l:craftsmanship/barrels)大桶$()即可釀造。額外福利：喝醉時，任何酒類都會影響你在聊天中的說話方式！",
 			"item": "tfc:bucket/beer,tfc:bucket/cider,tfc:bucket/rum,tfc:bucket/sake,tfc:bucket/vodka,tfc:bucket/whiskey,tfc:bucket/corn_whiskey,tfc:bucket/rye_whiskey,firmalife:bucket/mead",
 			"anchor": "alcohol"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "陳年酒",
-			"text": "$(thing)陳年酒$()是將酒在密封木桶內熟成3個月發酵而成。飲用陳年酒會提供效果。",
+			"text": "$(thing)陳年酒$()是將一般酒類在密封大桶中熟成 3 個月製成，飲用時會提供效果。",
 			"item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey,tfcagedalcohol:bucket/aged_mead",
 			"anchor": "aged_alcohol"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "年份酒",
-			"text": "$(thing)年份酒類$()是將酒在密封的木桶中再熟成 3 個月製成的。這些酒能提供更強的效果和更長的持續時間。",
+			"text": "$(thing)年份酒類$()是將酒在密封大桶中再熟成 3 個月製成，效果更強、持續更久。",
 			"item": "tfg:vintage_beer_bucket,tfg:vintage_cider_bucket,tfg:vintage_rum_bucket,tfg:vintage_sake_bucket,tfg:vintage_vodka_bucket,tfg:vintage_whiskey_bucket,tfg:vintage_corn_whiskey_bucket,tfg:vintage_rye_whiskey_bucket,tfg:vintage_mead_bucket",
 			"anchor": "vintage_alcohol"
 		},
@@ -145,24 +145,24 @@
 		{
 			"type": "patchouli:text",
 			"title": "葡萄酒",
-			"text": "$(thing)葡萄酒$()是另一種酒，釀造方式與其他酒類不同。這是一個複雜但值得的過程，無法用機器自動化。請查看$(l:cooking/alcohol#wine_making)葡萄酒釀造$()條目了解如何製作。$(br2)所有葡萄酒除了另一種效果之外，還會給予$(item)力量 (5:20)$()！",
+			"text": "$(thing)葡萄酒$()的釀造方式與其他酒類不同，過程複雜但值得，且無法用機器自動化。製作方法請見$(l:cooking/alcohol#wine_making)葡萄酒釀造$()條目。$(br2)所有葡萄酒除了另一種效果外，還會給予$(item)力量 (5:20)$()！",
 			"item": "firmalife:bucket/red_wine,firmalife:bucket/white_wine,firmalife:bucket/rose_wine,firmalife:bucket/sparkling_wine,firmalife:bucket/dessert_wine",
 			"anchor": "wine"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(n)$(2)$(t:挖掘加速 5:20)紅葡萄酒$()$(li)$(n)$(2)$(t:凋零抗性 5:20)白葡萄酒$()$(li)$(n)$(2)$(t:游泳速度 5:20)桃紅葡萄酒$()$(li)$(n)$(2)$(t:跳躍提升 II 5:20)氣泡酒$()$(li)$(n)$(2)$(t:擊退抗性 5:20)甜點酒$()"
+			"text": "$(li)$(n)$(2)$(t:挖掘加速 5:20)紅葡萄酒$()$(li)$(n)$(2)$(t:凋零抗性 5:20)白葡萄酒$()$(li)$(n)$(2)$(t:游泳速度 5:20)桃紅葡萄酒$()$(li)$(n)$(2)$(t:跳躍提升 II 5:20)起泡酒$()$(li)$(n)$(2)$(t:擊退抗性 5:20)甜酒$()"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "牛奶",
-			"text": "當熟悉度夠高時，只要手持木桶或金屬桶對大多數母家畜按下$(item)$(k:key.use)$()，就能取得$(thing)牛奶$()。(如果沒有反應，請確認桶子沒有堆疊！)$(br)雖然牛奶不提供任何增益――也不會移除效果――但在進食後飲用可以補充$(l:cooking/food_and_water#dairy)乳製品$()營養。",
+			"text": "熟悉度夠高時，手持木桶或金屬桶對大多數雌性牲畜按 $(item)$(k:key.use)$()，就能取得$(thing)牛奶$()。(如果沒有反應，請確認桶子沒有堆疊！)$(br)牛奶不提供增益――也不會移除效果――但在進食後飲用可補充$(l:cooking/food_and_water#dairy)乳製品$()營養。",
 			"item": "minecraft:milk_bucket,firmalife:bucket/yak_milk,firmalife:bucket/goat_milk",
 			"anchor": "milk"
 		},
 		{
 			"title": "溫泉水",
-			"text": "飲用$(thing)溫泉$()可以暖和4°C，泡在溫泉內會提供些微的生命恢復並讓你感到溫暖。",
+			"text": "飲用$(thing)溫泉水$()可以讓你升溫 4°C；站在溫泉中則會獲得輕微的回復效果，同時也會讓你暖和起來。",
 			"item": "tfc:bucket/spring_water",
 			"type": "patchouli:spotlight",
 			"anchor": "spring_water"
@@ -183,21 +183,21 @@
 		},
 		{
 			"title": "果汁",
-			"text": "$(thing)果汁$()是將水果濃縮成保存期限更長之食物的好方法。果汁提供$(l:cooking/food_and_water#quenching_transient_effect)解渴效果$()，有助於抵禦口渴。$(br2)果汁會隨時間過期。$()",
+			"text": "$(thing)果汁$()能將水果濃縮成保存更久的食物，並提供$(l:cooking/food_and_water#quenching_transient_effect)解渴效果$()，有助於抵禦口渴。$(br2)果汁會隨時間過期。$()",
 			"type": "patchouli:spotlight",
 			"anchor": "juice",
 			"item": "tfg:food/juice"
 		},
 		{
 			"title": "優格",
-			"text": "$(thing)優格$()提供與牛奶一樣提供乳製品營養。可以與水果混合製作成$(item)水果優格$()。$(br2)優格會隨著時間推移而過期。$()",
+			"text": "$(thing)優格$()和牛奶一樣提供乳製品營養，也可與水果混合製成$(item)水果優格$()。$(br2)優格會隨時間過期。$()",
 			"type": "patchouli:spotlight",
 			"anchor": "yogurt",
 			"item": "tfg:food/yogurt,tfg:food/fruit_yogurt"
 		},
 		{
-			"title": "果昔",
-			"text": "$(thing)冰沙$()是一種強力飲品。它同時提供$(l:cooking/food_and_water#quenching_transient_effect)解渴效果$()和$(l:cooking/food_and_water#cooling_transient_effect)降溫效果$()，也是$(l:cooking/food_and_water#fruit)水果$()和$(l:cooking/food_and_water#dairy)乳製品$()營養的絕佳來源。$(br2)冰沙會隨時間過期。$()",
+			"title": "水果冰沙",
+			"text": "$(thing)水果冰沙$()是強力飲品，同時提供$(l:cooking/food_and_water#quenching_transient_effect)解渴效果$()和$(l:cooking/food_and_water#cooling_transient_effect)降溫效果$()，也是$(l:cooking/food_and_water#fruit)水果$()和$(l:cooking/food_and_water#dairy)乳製品$()營養的絕佳來源。$(br2)水果冰沙會隨時間過期。$()",
 			"type": "patchouli:spotlight",
 			"anchor": "smoothie",
 			"item": "tfg:food/smoothie"

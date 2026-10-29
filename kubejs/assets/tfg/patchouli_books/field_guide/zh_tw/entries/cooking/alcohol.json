@@ -13,7 +13,7 @@
         "type": "patchouli:text",
         "title": "葡萄酒釀造",
         "anchor": "wine_making",
-        "text": "$(thing)葡萄酒釀造$()是將$(thing)葡萄$()轉化為酒的學問。你必須先在野外找到$(l:the_world/wild_fruits#red_grapes)紅葡萄$()或$(l:the_world/wild_fruits#white_grapes)白葡萄$()，並將它們的種子種在$(thing)棚架$()上以取得$(item)葡萄$()。葡萄酒的效果可以在$(l:cooking/drinks#wine)這裡$()查看"
+        "text": "$(thing)葡萄酒釀造$()是把$(thing)葡萄$()變成酒的學問。必須先在野外找到$(l:the_world/wild_fruits#red_grapes)紅葡萄$()或$(l:the_world/wild_fruits#white_grapes)白葡萄$()，將種子種在$(thing)棚架$()上取得$(item)葡萄$()。葡萄酒的效果見$(l:cooking/drinks#wine)這裡$()"
     },
     {
         "type": "patchouli:spotlight",
@@ -22,7 +22,7 @@
         "item": {
         "tag": "firmalife:stomping_barrels"
         },
-        "text": "接著必須在$(thing)踩踏木桶$()、$(thing)手推磨$()或$(l:cooking/cooking_methods#food_processor)食物調理機$()中壓碎葡萄，取得壓碎的葡萄。使用踩踏木桶時，手持新鮮葡萄按下$(item)$(k:key.use)$()，然後在桶上跳 16 次。空手按下$(item)$(k:key.use)$()即可取出物品。$(br2)接著，將壓碎的葡萄密封在木桶中 5 天，讓它們$(thing)發酵$()。"
+        "text": "接著在$(thing)踩踏木桶$()、$(thing)手推磨$()或$(l:cooking/cooking_methods#food_processor)食物調理機$()中把葡萄壓碎。使用踩踏木桶時，手持新鮮葡萄按 $(item)$(k:key.use)$() 放入，然後在桶上跳 16 次，再空手按 $(item)$(k:key.use)$() 取出。$(br2)最後將壓碎的葡萄密封在大桶中 5 天，讓它$(thing)發酵$()。"
     },
     {
         "type": "patchouli:crafting",
@@ -33,12 +33,12 @@
     },
     {
         "type": "patchouli:text",
-        "text": "最左側的槽最多可放入16個葡萄。釀造一瓶葡萄酒需要4個葡萄。中間的四個槽用於將葡萄與其他原料混合，但這是可選的。僅使用紅葡萄或白葡萄會產出紅葡萄酒或白葡萄酒。在白葡萄酒中加入至少一個紅葡萄會製成桃紅葡萄酒。在白葡萄酒中加入糖會製成甜酒。加入二次發酵混合劑(在桶中混合酵母和甜味劑)會製成起泡酒。"
+        "text": "最左側的槽最多可放 16 個葡萄，一瓶葡萄酒需要 4 個。中間四個槽可選擇性地將葡萄與其他原料混合。只用紅葡萄或白葡萄會產出紅葡萄酒或白葡萄酒；白葡萄酒中加入至少一個紅葡萄可製成桃紅葡萄酒，加糖可製成甜酒，加入二次發酵混合劑(在桶中混合酵母和甜味劑)則可製成起泡酒。"
     },
     {
         "type": "tfg:glassworking_recipe",
         "recipe": "firmalife:glassworking/olivine_wine_bottle",
-        "text": "葡萄酒必須裝入由非矽酸鹽玻璃製成的專用酒瓶中。"
+        "text": "葡萄酒必須裝入由非矽玻璃製成的專用酒瓶中。"
     },
     {
         "type": "patchouli:crafting",
@@ -49,21 +49,21 @@
     },
     {
         "type": "patchouli:text",
-        "text": "葡萄酒需要配上$(thing)軟木塞$()，做法是把$(thing)防腐木板$()浸泡在$(thing)石灰水$()中一天。一切就緒後，可以使用酒瓶欄位裝入葡萄酒，或手持酒瓶按 $(item)$(k:key.use)$()。"
+        "text": "葡萄酒需要$(thing)軟木塞$()，把$(thing)防腐木板$()浸泡在$(thing)石灰水$()中一天即可製成。一切就緒後，用酒瓶欄位裝入葡萄酒，或手持酒瓶按 $(item)$(k:key.use)$()。"
     },
     {
         "type": "patchouli:text",
         "anchor": "wine_properties",
         "title": "品嚐葡萄酒",
-        "text": "眼光敏銳的侍酒師能察覺在不同條件下釀造的葡萄酒之間的細微差異。事實上，在$(tfg_short)的世界中也是如此。這要從種植葡萄的田地說起――一排葡萄會深受周遭環境和土壤的影響。"
+        "text": "眼光敏銳的侍酒師能察覺不同條件下釀造的葡萄酒有何細微差異，在$(tfg_short)的世界也一樣。這要從種葡萄的田地說起――一排葡萄深受周遭環境和土壤影響。"
     },
     {
         "type": "patchouli:text",
-        "text": "葡萄會孕育出三種與地形相關的特質：根據周邊環境不同，可能形成「礫石育成」、「坡地育成」或「泥土育成」。葡萄酒還會記錄裝瓶所在地的柯本氣候分類。若葡萄在蜜蜂附近生長，則會獲得「蜜蜂授粉」特質。"
+        "text": "葡萄依周邊環境，可能有三種地形特質：「礫石育成」、「坡地育成」和「泥土育成」。葡萄酒還會記錄裝瓶地的柯本氣候分類。在蜜蜂附近生長的葡萄則會有「蜜蜂授粉」特質。"
     },
     {
         "type": "patchouli:text",
-        "text": "葡萄酒裝瓶後就會開始陳釀，拔掉軟木塞後便停止陳釀。手持刀子對酒瓶物品按 $(item)$(k:key.use)$() 即可拔掉軟木塞。除此之外，酒瓶的用法有點像水桶，可以倒進木桶或其他裝置中。"
+        "text": "葡萄酒裝瓶後就開始陳釀，拔掉軟木塞後便停止。手持刀子對酒瓶按 $(item)$(k:key.use)$() 即可拔掉軟木塞。此外，酒瓶用法有點像水桶，可以倒進大桶或其他裝置。"
     },
     {
         "type": "patchouli:crafting",

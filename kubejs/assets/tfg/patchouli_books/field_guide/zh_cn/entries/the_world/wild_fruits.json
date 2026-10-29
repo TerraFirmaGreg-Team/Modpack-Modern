@@ -597,7 +597,7 @@
         {
             "type": "patchouli:text",
             "anchor": "cherry",
-            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：5 - 25 °C$(br)$(bold)$(l:the_world/climate#calendar)生长天数$()：8$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：100 - 350mm$(br2)樱桃树在1月至3月间生长，4月和5月开始开花，6月结果。",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：-8 - 25 °C$(br)$(bold)$(l:the_world/climate#calendar)生长天数$()：8$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：100 - 350mm$(br2)樱桃树在1月至3月间生长，4月和5月开始开花，6月结果。",
             "title": "樱桃树"
         },
         {
@@ -821,7 +821,7 @@
         {
             "type": "patchouli:text",
             "anchor": "green_apple",
-            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：1 - 25 °C$(br)$(bold)$(l:the_world/climate#calendar)生长天数$()：10$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：13 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：110 - 280mm$(br2)青苹果树在3月至7月间生长，8月和9月开始开花，10月结果。",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：-12 - 25 °C$(br)$(bold)$(l:the_world/climate#calendar)生长天数$()：10$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：13 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：110 - 280mm$(br2)青苹果树在3月至7月间生长，8月和9月开始开花，10月结果。",
             "title": "青苹果树"
         },
         {
@@ -1045,7 +1045,7 @@
         {
             "type": "patchouli:text",
             "anchor": "lemon",
-            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：10 - 30 °C$(br)$(bold)$(l:the_world/climate#calendar)生长天数$()：8$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：21 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：180 - 470mm$(br2)柠檬树在2月至5月间生长，6月和7月开始开花，8月结果。",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：0 - 30 °C$(br)$(bold)$(l:the_world/climate#calendar)生长天数$()：8$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：21 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：180 - 470mm$(br2)柠檬树在2月至5月间生长，6月和7月开始开花，8月结果。",
             "title": "柠檬树"
         },
         {
@@ -1269,7 +1269,7 @@
         {
             "type": "patchouli:text",
             "anchor": "olive",
-            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：5 - 30 °C$(br)$(bold)$(l:the_world/climate#calendar)生长天数$()：12$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：18 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：150 - 500mm$(br2)橄榄树在3月至7月间生长，8月和9月开始开花，10月结果。$(br2)橄榄可以用来生产$(thing)橄榄油$()，橄榄油可用作灯的燃料。",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：-8 - 25 °C$(br)$(bold)$(l:the_world/climate#calendar)生长天数$()：12$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：18 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：150 - 500mm$(br2)橄榄树在3月至7月间生长，8月和9月开始开花，10月结果。$(br2)橄榄可以用来生产$(thing)橄榄油$()，橄榄油可用作灯的燃料。",
             "title": "橄榄树"
         },
         {
@@ -1493,7 +1493,7 @@
         {
             "type": "patchouli:text",
             "anchor": "orange",
-            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：15 - 36 °C$(br)$(bold)$(l:the_world/climate#calendar)生长天数$()：7$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：30 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：250 - 500mm$(br2)橙子树在3月至6月间生长，7月和8月开始开花，9月结果。",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：7 - 36 °C$(br)$(bold)$(l:the_world/climate#calendar)生长天数$()：7$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：30 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：250 - 500mm$(br2)橙子树在3月至6月间生长，7月和8月开始开花，9月结果。",
             "title": "橙子树"
         },
         {
@@ -1717,7 +1717,7 @@
         {
             "type": "patchouli:text",
             "anchor": "peach",
-            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：4 - 27 °C$(br)$(bold)$(l:the_world/climate#calendar)生长天数$()：11$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：7 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：60 - 230mm$(br2)桃树在12月至3月间生长，4月和5月开始开花，6月结果。",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：-10 - 27 °C$(br)$(bold)$(l:the_world/climate#calendar)生长天数$()：11$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：7 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：60 - 230mm$(br2)桃树在12月至3月间生长，4月和5月开始开花，6月结果。",
             "title": "桃树"
         },
         {
@@ -1941,7 +1941,7 @@
         {
             "type": "patchouli:text",
             "anchor": "plum",
-            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：15 - 31 °C$(br)$(bold)$(l:the_world/climate#calendar)生长天数$()：8$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：30 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：250 - 400mm$(br2)李子树在1月至4月间生长，5月和6月开始开花，7月结果。",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：5 - 31 °C$(br)$(bold)$(l:the_world/climate#calendar)生长天数$()：8$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：30 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：250 - 400mm$(br2)李子树在1月至4月间生长，5月和6月开始开花，7月结果。",
             "title": "李子树"
         },
         {
@@ -2165,7 +2165,7 @@
         {
             "type": "patchouli:text",
             "anchor": "red_apple",
-            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：1 - 25 °C$(br)$(bold)$(l:the_world/climate#calendar)生长天数$()：10$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：100 - 280mm$(br2)红苹果树在3月至7月间生长，8月和9月开始开花，10月结果。",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：-12 - 25 °C$(br)$(bold)$(l:the_world/climate#calendar)生长天数$()：10$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：100 - 280mm$(br2)红苹果树在3月至7月间生长，8月和9月开始开花，10月结果。",
             "title": "红苹果树"
         },
         {
@@ -2389,7 +2389,7 @@
         {
             "type": "patchouli:text",
             "anchor": "cocoa",
-            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：20 - 35 °C$(br)$(bold)$(l:the_world/climate#calendar)生长天数$()：8$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：26 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：220 - 400mm$(br2)可可树可用来制作$(l:cooking/chocolate_confections)巧克力$()。$(br2)可可树在12月至3月间生长，4月和5月开始开花，6月结果。",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：15 - 35 °C$(br)$(bold)$(l:the_world/climate#calendar)生长天数$()：8$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：26 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：220 - 400mm$(br2)可可树可用来制作$(l:cooking/chocolate_confections)巧克力$()。$(br2)可可树在12月至3月间生长，4月和5月开始开花，6月结果。",
             "title": "可可树"
         },
         {
@@ -2613,7 +2613,7 @@
         {
             "type": "patchouli:text",
             "anchor": "fig",
-            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：20 - 35 °C$(br)$(bold)$(l:the_world/climate#calendar)生长天数$()：8$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：15 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：125 - 215mm$(br2)它们在11月至次年2月间生长，3月和4月开始开花，5月结果。",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：15 - 35 °C$(br)$(bold)$(l:the_world/climate#calendar)生长天数$()：8$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：15 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：125 - 215mm$(br2)它们在11月至次年2月间生长，3月和4月开始开花，5月结果。",
             "title": "无花果树"
         },
         {
@@ -3100,7 +3100,7 @@
         {
             "type": "patchouli:text",
             "anchor": "coconut",
-            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：15 - 45 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：35 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：175 - 500mm$(br2)椰子树是一种特殊的棕榈果树。椰子果簇分7个阶段生长。可以在果实还青绿时收获，得到能提供椰奶的青椰；也可以等成熟后收获，得到椰子果肉。收获椰子树时要小心，椰子掉下来砸到你可是会造成不小的伤害。",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：5 - 45 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：35 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：175 - 500mm$(br2)椰子树是一种特殊的棕榈果树。椰子果簇分7个阶段生长。可以在果实还青绿时收获，得到能提供椰奶的青椰；也可以等成熟后收获，得到椰子果肉。收获椰子树时要小心，椰子掉下来砸到你可是会造成不小的伤害。",
             "title": "椰子树"
         },
         {
@@ -5252,7 +5252,7 @@
         {
             "type": "patchouli:text",
             "anchor": "blackberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：7 - 24 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：200 - 500mm$(br2)黑莓灌木在 2 月至 5 月生长，6 月和 7 月开始开花，8 月结果。$(br2)它们可以在树木稀少的地区找到。",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：-10 - 15 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：200 - 500mm$(br2)黑莓灌木在 2 月至 5 月生长，6 月和 7 月开始开花，8 月结果。$(br2)它们可以在树木稀少的地区找到。",
             "title": "黑莓灌木"
         },
         {
@@ -5352,7 +5352,7 @@
         {
             "type": "patchouli:text",
             "anchor": "raspberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：5 - 25 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：200 - 500mm$(br2)树莓灌木在 4 月至 7 月生长，8 月和 9 月开始开花，10 月结果。$(br2)它们可以在树木稀少的地区找到。",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：-5 - 20 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：200 - 500mm$(br2)树莓灌木在 4 月至 7 月生长，8 月和 9 月开始开花，10 月结果。$(br2)它们可以在树木稀少的地区找到。",
             "title": "树莓灌木"
         },
         {
@@ -5452,7 +5452,7 @@
         {
             "type": "patchouli:text",
             "anchor": "blueberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：7 - 29 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：100 - 400mm$(br2)蓝莓灌木在 2 月至 5 月生长，6 月和 7 月开始开花，8 月结果。$(br2)它们可以在树木稀少的地区找到。",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：-5 - 20 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：100 - 400mm$(br2)蓝莓灌木在 2 月至 5 月生长，6 月和 7 月开始开花，8 月结果。$(br2)它们可以在树木稀少的地区找到。",
             "title": "蓝莓灌木"
         },
         {
@@ -5552,7 +5552,7 @@
         {
             "type": "patchouli:text",
             "anchor": "elderberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：10 - 33 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：100 - 400mm$(br2)接骨木灌木在 2 月至 5 月生长，6 月和 7 月开始开花，8 月结果。$(br2)它们可以在树木稀少的地区找到。",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：5 - 33 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：100 - 400mm$(br2)接骨木灌木在 2 月至 5 月生长，6 月和 7 月开始开花，8 月结果。$(br2)它们可以在树木稀少的地区找到。",
             "title": "接骨木灌木"
         },
         {
@@ -5703,7 +5703,7 @@
         {
             "type": "patchouli:text",
             "anchor": "bunchberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：15 - 35 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：200 - 500mm(br2)御膳橘灌木在 5 月至 7 月生长，8 月和 9 月开始开花，10 月结果。$(br2)它们可以在森林中找到。",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：5 - 35 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：200 - 500mm$(br2)御膳橘灌木在 5 月至 7 月生长，8 月和 9 月开始开花，10 月结果。$(br2)它们可以在森林中找到。",
             "title": "御膳橘灌木"
         },
         {
@@ -5767,7 +5767,7 @@
         {
             "type": "patchouli:text",
             "anchor": "gooseberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：5 - 27 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：200 - 500mm$(br2)鹅莓灌木在 4 月至 7 月生长，8 月和 9 月开始开花，10 月结果。$(br2)它们可以在森林中找到。",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：-5 - 27 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：200 - 500mm$(br2)鹅莓灌木在 4 月至 7 月生长，8 月和 9 月开始开花，10 月结果。$(br2)它们可以在森林中找到。",
             "title": "鹅莓灌木"
         },
         {
@@ -5831,7 +5831,7 @@
         {
             "type": "patchouli:text",
             "anchor": "snowberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：-7 - 18 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：200 - 500mm$(br2)雪莓灌木在 3 月至 6 月生长，7 月和 8 月开始开花，9 月结果。$(br2)它们可以在森林中找到。",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：-25 - 5 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：200 - 500mm$(br2)雪莓灌木在 3 月至 6 月生长，7 月和 8 月开始开花，9 月结果。$(br2)它们可以在森林中找到。",
             "title": "雪莓灌木"
         },
         {
@@ -5895,7 +5895,7 @@
         {
             "type": "patchouli:text",
             "anchor": "cloudberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：-2 - 17 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：9 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：250 - 500mm$(br2)云莓灌木在 2 月至 5 月生长，6 月至 8 月开始开花，9 月结果。$(br2)它们可以在森林中找到。",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：-15 - 10 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：9 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：250 - 500mm$(br2)云莓灌木在 2 月至 5 月生长，6 月至 8 月开始开花，9 月结果。$(br2)它们可以在森林中找到。",
             "title": "云莓灌木"
         },
         {
@@ -5959,7 +5959,7 @@
         {
             "type": "patchouli:text",
             "anchor": "strawberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：5 - 28 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：100 - 400mm$(br2)草莓灌木在 10 月至 12 月生长，1 月和 2 月开始开花，3 月结果。$(br2)它们可以在森林中找到。",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：0 - 28 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：100 - 400mm$(br2)草莓灌木在 10 月至 12 月生长，1 月和 2 月开始开花，3 月结果。$(br2)它们可以在森林中找到。",
             "title": "草莓灌木"
         },
         {
@@ -6023,7 +6023,7 @@
         {
             "type": "patchouli:text",
             "anchor": "wintergreen_berry",
-            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：-6 - 17 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：100 - 400mm$(br2)冬青莓灌木在 5 月至 9 月生长，10 月和 11 月开始开花，12 月结果。$(br2)它们可以在森林中找到。",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：-20 - 15 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：50 - 350mm$(br2)冬青莓灌木在 5 月至 9 月生长，10 月和 11 月开始开花，12 月结果。$(br2)它们可以在森林中找到。",
             "title": "冬青莓灌木"
         },
         {
@@ -6087,7 +6087,7 @@
         {
             "type": "patchouli:text",
             "anchor": "cranberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：-5 - 17 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：30 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：250 - 500mm$(br2)蔓越莓灌木在 3 月至 6 月生长，7 月和 8 月开始开花，9 月结果。$(br2)它们可以在森林中找到。与大多数小型灌木不同，蔓越莓灌木要在水下种植。",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：-10 - 17 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：30 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：250 - 500mm$(br2)蔓越莓灌木在 3 月至 6 月生长，7 月和 8 月开始开花，9 月结果。$(br2)它们可以在森林中找到。与大多数小型灌木不同，蔓越莓灌木要在水下种植。",
             "title": "蔓越莓灌木"
         },
         {
@@ -6151,7 +6151,7 @@
         {
             "type": "patchouli:text",
             "anchor": "nightshade",
-            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：7 - 24 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：200 - 400mm$(br2)龙葵灌木在 2 月至 6 月生长，7 月开始开花，8 月结果。$(br2)它们可以在森林中找到，且$(c)有毒$()。",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：0 - 24 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：200 - 400mm$(br2)龙葵灌木在 2 月至 6 月生长，7 月开始开花，8 月结果。$(br2)它们可以在森林中找到，且$(c)有毒$()。",
             "title": "龙葵灌木"
         },
         {
@@ -6215,7 +6215,7 @@
         {
             "type": "patchouli:text",
             "anchor": "pineapple",
-            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：20 - 32 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：30 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：250 - 500mm$(br2)菠萝灌木在 3 月至 6 月生长，7 月和 8 月开始开花，9 月结果。$(br2)它们可以在森林中找到，可用于制作$(l:agriculture/leather_making#pineapple_leather)菠萝皮革$()。",
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：15 - 32 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：30 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：250 - 500mm$(br2)菠萝灌木在 3 月至 6 月生长，7 月和 8 月开始开花，9 月结果。$(br2)它们可以在森林中找到，可用于制作$(l:agriculture/leather_making#pineapple_leather)菠萝皮革$()。",
             "title": "菠萝灌木"
         },
         {
