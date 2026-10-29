@@ -16,7 +16,6 @@ on:
         default: false
         required: true
   schedule:
-    # Run daily at 3 AM UTC
     - cron: '0 3 */2 * *'
 
 concurrency:
@@ -40,21 +39,15 @@ jobs:
         uses: actions/checkout@v7
 
       - name: "Crowdin"
-        uses: crowdin/github-action@v3
+        uses: TerraFirmaGreg-Team/Actions/crowdin/sync@main
         with:
-          upload_sources: true
+          config: .github/config/crowdin/patchouli.yml
           download_translations: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
-          # skip_untranslated_files: true
-          # export_only_approved: true
-          create_pull_request: false
-          localization_branch_name: ${{ env.LOCALIZATION_BRANCH }}
-          pull_request_base_branch_name: ${{ env.TARGET_BRANCH }}
-          commit_message: "[translation] New translations"
-          config: .github/config/crowdin_patchouli.yml
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
-          CROWDIN_ID: ${{ vars.CROWDIN_ID }}
+          localization_branch: ${{ env.LOCALIZATION_BRANCH }}
+          target_branch: ${{ env.TARGET_BRANCH }}
+          crowdin_token: ${{ secrets.CROWDIN_TOKEN }}
+          crowdin_id: ${{ vars.CROWDIN_ID }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
   sync-language:
     name: "[🔄] Sync Language"
@@ -65,21 +58,16 @@ jobs:
         uses: actions/checkout@v7
 
       - name: "Crowdin"
-        uses: crowdin/github-action@v3
+        uses: TerraFirmaGreg-Team/Actions/crowdin/sync@main
         with:
-          upload_sources: true
+          config: .github/config/crowdin/lang.yml
           download_translations: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
           skip_untranslated_strings: true
-          # export_only_approved: true
-          create_pull_request: false
-          localization_branch_name: ${{ env.LOCALIZATION_BRANCH }}
-          pull_request_base_branch_name: ${{ env.TARGET_BRANCH }}
-          commit_message: "[translation] New translations"
-          config: .github/config/crowdin_lang.yml
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
-          CROWDIN_ID: ${{ vars.CROWDIN_ID }}
+          localization_branch: ${{ env.LOCALIZATION_BRANCH }}
+          target_branch: ${{ env.TARGET_BRANCH }}
+          crowdin_token: ${{ secrets.CROWDIN_TOKEN }}
+          crowdin_id: ${{ vars.CROWDIN_ID }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
   cleanup-empty-files:
     name: "[🛠️] Post-process Translations"
@@ -87,26 +75,10 @@ jobs:
     needs: [sync-patchouli, sync-language]
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     steps:
-      - name: "Checkout translations branch"
-        uses: actions/checkout@v7
+      - name: "Post-process translations"
+        uses: TerraFirmaGreg-Team/Actions/crowdin/postprocess@main
         with:
-          ref: ${{ env.LOCALIZATION_BRANCH }}
-          fetch-depth: 0
-        continue-on-error: true
-
-      - name: "Normalize Patchouli translations"
-        run: python3 .github/scripts/crowdin/patchouli.py
-
-      - name: "Remove empty translation files"
-        run: |
-          find kubejs/assets -name "*.json" -type f -exec sh -c 'jq -e "keys | length == 0" "$1" >/dev/null 2>&1 && rm "$1"' _ {} \;
-
-      - name: "Commit and push changes"
-        uses: stefanzweifel/git-auto-commit-action@v7
-        with:
-          commit_message: "[translation] Remove empty translation files"
-          commit_author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
-          branch: ${{ env.LOCALIZATION_BRANCH }}
+          localization_branch: ${{ env.LOCALIZATION_BRANCH }}
 
   create-pr:
     name: "[🤝] Create Pull Request"
@@ -114,9 +86,6 @@ jobs:
     needs: [cleanup-empty-files]
     if: (github.event_name == 'schedule') || (github.event_name == 'workflow_dispatch' && inputs.create_pr)
     steps:
-      - name: "Checkout repository"
-        uses: actions/checkout@v7
-
       - name: "Generate GitHub App Token"
         id: generate_token
         uses: actions/create-github-app-token@v3
@@ -126,12 +95,12 @@ jobs:
 
       - name: "Create Pull Request"
         id: create_pr
-        uses: devops-infra/action-pull-request@v1
+        uses: TerraFirmaGreg-Team/Actions/pull-request/create@main
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
           source_branch: ${{ env.LOCALIZATION_BRANCH }}
           target_branch: ${{ env.TARGET_BRANCH }}
-          ignore_users: "dependabot"
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          draft: false
           label: "Pull request: Translation"
           title: 'add: New Crowdin translations'
           body: |
@@ -142,13 +111,7 @@ jobs:
             - Patchouli book translations
 
       - name: "Automatically Merge PR"
-        uses: pascalgn/automerge-action@v0.16.4
-        env:
-          GITHUB_TOKEN: "${{ steps.generate_token.outputs.token }}"
-          MERGE_METHOD: "squash"
-          MERGE_LABELS: ""
-          MERGE_REQUIRED_APPROVALS: "0"
-          MERGE_DELETE_BRANCH: true
-          MERGE_READY_STATE: "clean,has_hooks,unknown,unstable,blocked"
-          PULL_REQUEST: ${{ steps.create_pr.outputs.pr_number }}
-          
+        uses: TerraFirmaGreg-Team/Actions/pull-request/automerge@main
+        with:
+          github_token: ${{ steps.generate_token.outputs.token }}
+          pull_request: ${{ steps.create_pr.outputs.pr_number }}

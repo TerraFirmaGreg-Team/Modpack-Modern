@@ -5,6 +5,219 @@
 	"read_by_default": true,
 	"pages": [
 		{
+			"type": "patchouli:text",
+			"text": "$(li)$(bold)$(l:mars/fission#mechanics)裂變機制$()$(li)$(bold)$(l:mars/fission#components)元件$()$(li)$(bold)$(l:mars/fission#damage)燃料棒損耗$()$(li)$(bold)$(l:mars/fission#frames)隔熱$()$(li)$(bold)$(l:mars/fission#holder)材料支架$()$(li)$(bold)$(l:mars/fission#math)範例$()$(li)$(bold)燃料棒$()$(li2)$(l:mars/fission#thorium)釷$()$(li2)$(l:mars/fission#uranium)鈾$()$(li2)$(l:mars/fission#plutonium)鈽$()$(li2)$(l:mars/fission#depleted)乏燃料棒$()$(li)$(bold)$(l:mars/fission#heat_exchanger)熱交換器$()$(li)$(bold)$(l:mars/fission#earth)地球上的裂變$()$(li)$(bold)$(l:mars/fission#tips)小技巧$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(item)裂變反應爐$()在格雷科技中確實少見，無論主題還是運作方式都是。不過別擔心，我們會帶你認識這座多用途又燒腦的多方塊結構！$(br2)最重要的是，反應爐就像一顆巨大的熱力$(thing)電池發電機$()。放入合適的燃料，就會得到$(thing)熱量$()(就像 EU/t)，並以$(thing)溫度上升$()的形式儲存在反應爐中(就像儲存的 EU)。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "接著可以把這些熱量傳給$(thing)冷卻流體$()來驅動渦輪，或進行類似電力高爐的合成配方。$(br2)裂變的玩法循環，主要在於精細平衡燃料棒產生的熱量與反應爐的散熱速度。掌握得當，你會擁有多到用不完的電力！"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"title": "裂變反應爐",
+			"enable_visualize": false,
+			"text": "注意中央那一列$(thing)燃料支架$()，以及留給$(l:mars/fission#components)元件$()和$(l:mars/fission#holder)材料支架$()的空位。",
+			"multiblock": {
+				"pattern": [
+					[
+						"AAAAA",
+						"ABBBA",
+						"ABBBA",
+						"ABBBA",
+						"AFFGA"
+					],
+					[
+						"CABAC",
+						"A   A",
+						"B D B",
+						"A   A",
+						"CABAC"
+					],
+					[
+						"CABAC",
+						"A   A",
+						"B D B",
+						"A   A",
+						"CABAC"
+					],
+					[
+						"CABAC",
+						"A   A",
+						"B D B",
+						"A   A",
+						"CABAC"
+					],
+					[
+						"CABAC",
+						"A   A",
+						"B D B",
+						"A   A",
+						"CABAC"
+					],
+					[
+						"CABAC",
+						"A   A",
+						"B D B",
+						"A   A",
+						"CABAC"
+					],
+					[
+						"AAHAA",
+						"ACCCA",
+						"AC0CI",
+						"ACCCA",
+						"AAEAA"
+					]
+				],
+				"mapping": {
+					"0": "gtceu:atomic_casing",
+					"A": "gtceu:atomic_casing",
+					"B": "gtceu:laminated_glass",
+					"C": "gtceu:high_temperature_smelting_casing",
+					"D": "deafission:fuel_holder",
+					"E": "deafission:fission_reactor_mk1[facing=east]",
+					"F": "gtceu:ev_input_bus[facing=east]",
+					"G": "gtceu:ev_input_hatch[facing=east]",
+					"H": "gtceu:ev_output_hatch[facing=west]",
+					"I": "deafission:redstone_port"
+				}
+			}
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mechanics",
+			"title": "裂變機制",
+			"text": "反應爐中裝的燃料棒越多，溫度就越$(thing)高$()。溫度越高，能傳給冷卻流體和待加工物品的熱量也越多。$(br2)但物理有其極限，反應爐的溫度$(italic)只能到某個程度$()，所以別裝太多燃料棒。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "不過別擔心！反應爐的熱量一旦逼近危險範圍，就會進入$(thing)自動冷卻程序$()，直到所有熱量都安全散去才會重新啟動。$(br2)不過冷卻相當慢，這段寶貴的時間原本可以拿來發更多電。冷卻還會$(l:mars/fission#damage)損耗燃料棒$()，使它耗盡時產出的副產物變少。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "components",
+			"title": "元件",
+			"item": "tag:deafission:components_fr,deafission:material_holder",
+			"text": "除了 5 個$(item)燃料支架$()，你還可以裝入$(bold)最多 20 個$()$(item)元件$()。$(br2)所有已安裝元件的數值會直接加總，就這樣！不需要講究擺放位置。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "元件能以四種方式影響反應爐：$(br)$(li)最大溫度(隔熱材)$(li)物品支架$()(允許額外的物品輸入)$(li)效率(燃料更耐用)$(li)功率限制(減緩反應)$(br2)目前你只能取得隔熱材和$(l:mars/fission#holder)物品支架$()。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "damage",
+			"text": "反應爐越$(thing)熱$()，產生蒸汽和副產物的速度越快，但對燃料棒的負擔也越大。每根燃料棒的耐久度有限，損耗會隨溫度線性增加。$(br2)而溫度越高需要的燃料棒也越多，所以實際上損耗是以$(thing)平方$()增加的。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "frames",
+			"text": "想以最高效率加熱冷卻劑，就用低溫運轉；想加快可分裂物質的轉換，就把溫度拉到隔熱允許的最高值。$(br2)一開始，你會用$(item)藍冰$()或$(item)鹼土矽酸鹽隔熱框架$()填滿裂變反應爐，因為這是登陸火星後唯二能取得的隔熱材；不過最好盡快升級成$(l:mars/mars_fauna#glacian_sheep)霜原羊毛框架$()。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "holder",
+			"title": "加工配方",
+			"item": "deafission:material_holder",
+			"text": "反應爐裡能放的不只有燃料棒！在反應爐內放入$(item)材料支架$()，就能進行$(thing)加工配方$()：對材料支架按 $(item)U$() 即可在 $(emi) 中查看配方。材料支架越多，能同時進行的配方就越多。這些配方會影響反應爐的熱量，或產出其他產物。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "math",
+			"title": "範例",
+			"text": "簡化的算法如下：在冷卻流體充足的情況下，使用一根$(thing)100%$()熱量的燃料棒，反應爐溫度會達到約 $(item)200$() $(t:熱量單位)$(6)HU$()。這也可以稱為熱量等級，或直接叫熱量。$(italic)兩根$()$(thing)100%$()燃料棒等於$(italic)一根$()$(thing)200%$()燃料棒，兩者都會讓溫度達到約 $(item)400$() HU。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "這是因為燃料棒會產生 $(item)200 $(t:每刻熱量單位)$(6)HU/t$()。冷卻流體每$(thing)1 度熱量$()能帶走 $(item)1 HU/t$()。$(br2)如果反應爐的最大熱量是 $(item)190$()，一根$(thing)100%$()燃料棒就會讓它過熱。你可以用$(l:mars/fission#components)元件$()提高最大熱量，或透過加工系統使用$(l:mars/fission#holder)主動冷卻劑$()。每個配方都有熱量影響值。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "例如，若配方溫度是 $(item)100$()、影響值是 $(thing)-10 HU/t$()，在 $(thing)190$() 度時就能讓反應爐降溫 $(item)19 HU/t$()。$(br2)這樣反應爐就能以較低的最大熱量運轉而不過熱！如果溫度低於 $(item)100$()，配方就完全不會運作，就像電力高爐配方有溫度限制一樣。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:thorium_rod",
+			"anchor": "thorium",
+			"text": "首先，取得一些$(item)釷$()。記得穿戴所有$(l:game_mechanics/hazards#hazmat)相關的個人防護裝備$()，因為釷具有$(l:game_mechanics/hazards#radioactive_materials)放射性$()。太空服能保護你一小段時間，但放在物品欄裡也會受到損傷。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "接著，製作一些空的$(thing)燃料棒$()，再用$(item)核燃料工廠$()填充。燃料棒可以重複使用，不必做太多。事實上，現在可能只做一根就好。$(br2)當然，你也需要一座完整的反應爐。$(br2)為什麼只做一根？下一頁將深入探討反應爐的機制。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "depleted",
+			"title": "乏燃料棒",
+			"item": "tfg:depleted_thorium_rod",
+			"text": "第一根$(item)釷燃料棒$()處理完畢後，反應爐會輸出一根$(item)乏$()燃料棒。燃料棒提示框上的$(thing)平均生命週期熱量$()數值，代表它因過熱受到多少「損耗」：數值越低越好。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "把所有乏燃料棒送回$(item)核燃料工廠$()，就能取回空燃料棒和一些$(thing)廢料$()。廢料才是你要的東西，獲得的數量取決於燃料棒的平均生命週期熱量。$(br2)以釷來說，目前唯一的用途是製作下一階的燃料棒：$(l:mars/fission#uranium)鈾$()。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "uranium",
+			"item": "tfg:uranium_rod",
+			"text": "釷燃料棒產生的電力不多，真正的價值在於生產$(item)鈾燃料棒$()所需的$(item)釷廢料$()。進入鈾燃料棒之前，請先弄懂裂變反應爐的運作方式，因為沒有任何$(l:mars/fission#components)元件$()的反應爐承受不了它們 $(bold)435$() 的熱量。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "這時，你有三種方式能安全使用鈾燃料棒：$(br)$(li)20 個$(l:mars/fission#frames)霜原羊毛框架$()能把最大熱量提高到 $(bold)440$()。這是最簡單的方法，但需要先$(l:agriculture/animal_husbandry#wooly_animals)剪$()很多$(l:mars/mars_fauna#glacian_sheep)霜原羊$()的毛。$(br)$(li)使用$(l:mars/fission#holder)材料支架$()並放入大量$(item)乾冰$()來降低反應爐溫度。走這條路的話，最好能取得$(thing)液態 CO₂ 流體礦脈$()。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:refrigerant_pellet",
+			"anchor": "pellet",
+			"text": "$(li)搭配$(l:mars/fission#holder)材料支架$()使用$(item)製冷顆粒$()。效果和乾冰類似，但強得多。注意製冷顆粒需要消耗不少$(item)氟$()來製作，而你這時的氟並非無限。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "當然，你也可以自己調配，把這些方法混合使用。我們建議釷和鈾分別使用不同的反應爐；等日後冷卻能力更好時，或許就能混在一起。$(br2)也要確保蒸汽渦輪準備好了！鈾燃料棒的壽命是釷的 4 倍，產生的蒸汽則多達 5 倍。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:heat_exchanger",
+			"anchor": "heat_exchanger",
+			"text": "說到蒸汽，鈾燃料棒產生的蒸汽對蒸汽渦輪來說有點太「辣」了，必須先送進$(item)熱交換器$()。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:plutonium_rod",
+			"anchor": "plutonium",
+			"text": "和之前一樣，鈾燃料棒的主要目標是產出副產物來製作下一階燃料棒，也就是$(item)鈽$()。這是你的最終考驗：反應爐需要裝滿最好的$(l:mars/fission#components)被動$()和$(l:mars/fission#holder)主動$()冷卻(例如$(item)TerraFirmaGuard PA6$())，才能盡可能提高珍貴的$(thing)氚化水$()產量。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:tbu_232_rod",
+			"title": "地球上的裂變",
+			"anchor": "earth",
+			"text": "還想玩更多裂變？從$(item)釷鈾滋生燃料棒$()開始，你能生產其他令人興奮、在$(l:the_world)地球$()上也能使用的燃料棒。你需要一套穩固的$(l:logistics/railgun)軌道炮$()網路，在火星生產燃料棒再送回主基地；作為回報，你會擁有一個困難但能長久帶來豐厚回報的電力來源。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tips",
+			"title": "小技巧",
+			"text": "如果蒸汽傳輸速度不夠快，試試$(item)鎢鉍氧化物複合材料$()或$(item)鎢鋼$()流體管道，或 AE2 的$(thing)流體 P2P$()。$(br2)別想透過介面傳送，或暫存在 ME 驅動器中，速度會不夠快！"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "物品輸入匯流排一定會從其標示的那一面拉取物品。$(br2)別忘了你也可以從其他面輸入物品，這樣能更好地控制$(item)物品的輸入方式$()。$(br2)搭配儲量偵測器的輸出匯流排，甚至機械動力的元件都很實用，其他$(l:logistics/redstone_devices)紅石裝置$()也是。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "需要生產更多重水？$(br2)別忘了大型離心機組可以超頻到 $(9)IV$()，也能使用多安培能源倉來加快速度。$(br2)裂變能輸出大量能源，好好利用吧！"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "最後，也別忘了閱讀 $(5)EV$() 階段的裂變任務！任務會更深入說明每種燃料棒之間的其他步驟，以及整體進程。"
+		},
+		{
 			"type": "patchouli:relations",
 			"title": "延伸閱讀",
 			"anchor": "relations",
@@ -12,7 +225,8 @@
 				"tfg:mars/mars",
 				"tfg:logistics/railgun",
 				"tfg:game_mechanics/hazards",
-				"tfg:mars/mars_tree_index"
+				"tfg:mars/mars_tree_index",
+				"tfg:agriculture/animal_husbandry"
 			]
 		}
 	]

@@ -13,13 +13,6 @@ function registerTFGVenusItemTags(event) {
 
 
 function registerTFGVenusBlockTags(event) {
-
-	event.add('buildinggadgets2:deny', 'tfg:geyser_source')
-	event.add('ae2:blacklisted/spatial', 'tfg:geyser_source')
-
-	event.add('buildinggadgets2:deny', 'tfg:geyser_source_small')
-	event.add('ae2:blacklisted/spatial', 'tfg:geyser_source_small')
-
 	event.add('ad_astra:venus_stone_replaceables', 'ad_astra:venus_stone')
 	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/hardened_venus_stone')
 	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/gravel_venus')

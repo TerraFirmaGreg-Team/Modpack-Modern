@@ -26,7 +26,7 @@
             "type": "patchouli:text",
             "anchor": "quenched",
             "title": "解渴",
-            "text": "生效期間，此效果會防止$(l:cooking/food_and_water#thirst)口渴$()值自然消耗。不過，它無法阻止口渴效果降低你的水分條。$()"
+            "text": "生效期間，此效果會防止$(l:cooking/food_and_water#thirst)口渴$()值自然消耗，但無法阻止口渴效果降低水分條。$()"
         },
         {
             "type": "patchouli:text",

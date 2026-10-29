@@ -210,13 +210,10 @@ const NORMAL_QUESTS = [
 	"2E86CDE7C64B88B0", // t2 space suit
 
 	"673433C6D5A451F8", // fluix
-	"3CD0A43CE62CF618", // MERF
 	"31F7F3379D17FFD6", // MERC
-	"1AAD526450E5A732", // ae2 controller
 	"25007C5E43D28DB2", // interface
 	"378E2294EFD85C65", // pat prov
 	"349620A86711E263", // stock bridge
-	"5B4AD301357488D6", // accumulation processor
 	"57C98F43A9818B49", // mega patprov
 	"59D42D755D58D18F", // extended patprov
 	"1BD1BB1FFF9A70A9", // extended interface
@@ -274,12 +271,13 @@ const BIG_QUESTS = [
 	"0C7E9422BF567F2C", // adv nano
 	"67F9A71A21D9C7C1", // quarktech
 
-	"6CF08AFB924905F0", // welcome to ae2
-	"426B327852C46764", // mega storage component
+	"3CD0A43CE62CF618", // MERF
+	"1AAD526450E5A732", // ae2 controller
+	"5B4AD301357488D6", // accumulation processor
+	"426B327852C46764", // 64m mega storage component
 ];
 
 const QUEST_CHAPTERS = [
-	"5DD2C08324B24805", // welcome
 	"66469D508CDD9C7E", // stone age
 	"5F560FF28458A555", // metallurgy age
 	"784A885090386609", // steam age

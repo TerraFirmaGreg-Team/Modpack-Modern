@@ -6,14 +6,14 @@
         {
             "type": "patchouli:text",
             "anchor": "salad",
-            "text": "$(thing)沙拉$()是在$(thing)碗$()中用最多五種$(thing)$(n)$(t:#tfc:usable_in_salad)材料$()製作的餐點。$(br2)沙拉是最容易製作的餐點之一，只需要一個$(l:cooking/bowls)碗$()。首先，拿著$(thing)碗$()並按住$(item)$(k:key.sneak)$()再按下$(item)$(k:key.use)$()，即可開啟沙拉介面。$(br)將材料放入上方欄位，完成後從下方欄位取出沙拉。"
+            "text": "$(thing)沙拉$()是在$(thing)碗$()中用最多五種$(thing)$(n)$(t:#tfc:usable_in_salad)材料$()製作的餐點。$(br2)沙拉是最容易製作的餐點之一，只需要一個$(l:cooking/bowls)碗$()。手持$(thing)碗$()按住 $(item)$(k:key.sneak)$() 再按 $(item)$(k:key.use)$()，即可開啟沙拉介面。$(br)將材料放入上方欄位，完成後從下方欄位取出沙拉。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tag:tfc:salads",
             "title": "沙拉",
             "link_recipes": false,
-            "text": "沙拉是動態的餐點物品。使用的材料會決定沙拉的種類以及它所含的$(l:cooking/food_and_water#nutrients)養分$()。$(br2)$(t:§70.75§r§l∑§r§7材料§r)計算營養價值的方法：將每種材料的營養值加總，再乘以 0.75"
+            "text": "沙拉是動態餐點，所用材料決定沙拉的種類及所含的$(l:cooking/food_and_water#nutrients)養分$()。$(br2)$(t:§70.75§r§l∑§r§7材料§r)營養價值的計算方式：將每種材料的營養值加總，再乘以 0.75"
         },
         {
             "type": "patchouli:relations",

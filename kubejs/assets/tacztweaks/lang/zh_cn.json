@@ -155,7 +155,6 @@
 	"tacztweaks.config.tweaks.infiniteAmmoDisablesConsumption.description": "当玩家拥有无限弹药（例如来自创造弹药盒）时，禁用弹药消耗。",
 	"tacztweaks.config.tweaks.infiniteAmmoDisablesConsumption.name": "无限弹药不消耗",
 	"tacztweaks.config.tweaks.rps.description": "将枪械属性中的 RPM（每分钟射速）替换为 RPS（每秒射速）。",
-	"tacztweaks.config.tweaks.rps.name": "RPS",
 	"tacztweaks.config.tweaks.suppressFleshHitSounds.description": "抑制非爆头命中时播放的音效。",
 	"tacztweaks.config.tweaks.suppressFleshHitSounds.name": "抑制肉体命中音效",
 	"tacztweaks.config.tweaks.suppressHeadHitSounds.description": "抑制爆头命中时播放的音效。",
@@ -167,6 +166,5 @@
 	"tacztweaks.key.tiltGun": "倾斜枪械",
 	"tacztweaks.key.unload": "卸载",
 	"tacztweaks.packs.filter": "过滤器",
-	"tacztweaks.property_diagrams.rps": "RPS",
 	"tacztweaks.search": "搜索中..."
 }

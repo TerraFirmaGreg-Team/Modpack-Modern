@@ -1,23 +1,45 @@
 # Changelog
 
-## Unreleased
+### Changes
+- Ceramic Circuit Board have different tiers so player can understand easily which one they can craft @TomPlop
+- Change Butraldehyde circuit to 5 @TomPlop
+- Lower the energy cost of Garnet-Yttrium Line @TomPlop
+### Bug fixes
+
+## [0.13.17] - 26-10-2026
+### Bug fixes
+- Fixed the tar pools beneath biome never spawning raw oil, only the other three @Pyritie
+- Fixed the Auto-Complete Card recipe so it's actually visible @TomPlop
+- Fixed the firepot pot turning everything into rice (#5221) @Pyritie
+- Fixed not being able to hold rclick to put straw on a pit kiln (#5223) @Pyritie
+- Fix brioche dough coming out rotten when using the yeast-based processor recipe @Redeix
+
+## [0.13.16] - 25-10-2026
 ### Changes
 - Add recipes to start the Garnet-Yttrium line with Crushed Ores in a CR @TomPlop
 - Auto-Complete Card now requires Paper rather than a Crafting Card @TomPlop
 - Updated the Preservation entry of the field guide with more info about Smoking (#5188) @WiseMack
 - Astikor Carts and the Paving Cart are now immune to cacti (#5189) @Pyritie
-- Added a config option (tfg-server.toml) to enable announcing some quests in chat, off by default (#5203) @Pyritie
+- Added a config option (tfg-server.toml) to enable announcing quests in chat, off by default (#5203) @Pyritie
 - Drastically improved chunk generation speed in the Beneath, Moon, and Mars @Mqrius @Pyritie
 - Camels can now be used with the animal crank and count as a large animal @Pyritie
 - Added repair recipes for bows, crossbows, and crankbows @Pyritie
 - Changed all spawn conditions and growing climates of fruit trees and berry bushes. Small bushes are a little more common, cranberries should be actually findable (and are no longer destroyed by ice), and generally everything is a little more cold tolerant. Check the field guide for more details. If you live somewhere cold, now you have no excuses for bad fruit nutrition! (#5210) @Pyritie
+- Changed many smoke-emitting particle effects to follow the wind direction @Pyritie
+- Added block modification recipes to work with Additional Placements (so now you can rclick your vertical slabs of stone bricks to make them cracked, for example) (#5168) @Redeix
 ### Bug fixes
 - Only Turbine Rotors can be inserted in Exhaust Vent @TomPlop
 - Fixed Large Turbine efficiency having a minimum of 100%, sorry SiC-SiC you were goated and no one knew @TomPlop 
 - Fixed firestarters not working when Vivecraft is installed (backport of a TFC fix) (#5113)
 - Fixed being able to cast vanadium steel, ultimet, boron carbide, and tungsten carbide tools and items with TFC molds @Pyritie
 - Fixed not being able to use GT concrete in Domum Ornamentum recipes @Pyritie
-- Fixed some recipes missing from EMI @evanbones
+- Fixed some recipes missing from EMI (#5181) @evanbones
+- Fixed not being able to take fluids out of combustion engines using a bucket/drum etc (#5143) @Pyritie
+- Fixed air vortexes not behaving properly with redstone-activated doors @ashleney
+- Fixed being able to move lootr chests with spatial storage/building gadgets @Pyritie
+- Fixed being able to move immovable things with the new matter manipulator @Pyritie
+- Mixing Bio-Diesel with 2-EHN now gives the proper amount of Biodisel @Jeuvke
+- Crafting the SiC-SiC Turbine Rotor is now three times cheaper @TomPlop
 ### Mods
 #### TerraFirmaCraft
 - Prevent double high blocks from breaking bedrock.

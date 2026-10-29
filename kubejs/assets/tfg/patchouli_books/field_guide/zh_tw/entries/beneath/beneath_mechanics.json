@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "地底的生活與地面上有很大的不同！本條目包含一些在深處長期生存時可能派得上用場的資訊。"
+			"text": "地底的生活和地面大不相同！本條目提供一些在深處長期生存時可能用得上的資訊。"
 		},
 		{
 			"type": "patchouli:text",
@@ -16,19 +16,19 @@
 			"type": "patchouli:text",
 			"anchor": "temperature",
 			"title": "溫度管理",
-			"text": "地底很熱！最上層的溫度從 20°C 起跳，越往下只會越熱。$(br2)在這裡，避免$(l:game_mechanics/player_temperature)中暑$()比在主世界麻煩得多，但還是有辦法緩解。$(br2)避免過熱最簡單的方法，就是待在地底的上層，並在開始過熱時$(l:game_mechanics/player_temperature#wetness)跳進水裡$()。"
+			"text": "地底很熱！最上層從 20°C 起跳，越往下越熱。$(br2)這裡比主世界更容易$(l:game_mechanics/player_temperature)中暑$()，但仍有辦法緩解。$(br2)最簡單的方法是待在地底上層，一開始過熱就$(l:game_mechanics/player_temperature#wetness)跳進水裡$()。"
 		},
 		{
 			"type": "tfg:sealed_barrel_recipe",
 			"recipe": "tfg:barrel/packed_ice",
 			"anchor": "ice",
-			"text": "隨身帶些$(l:game_mechanics/player_temperature#blocks)冰$()！站在冰的附近可以降低$(l:game_mechanics/player_temperature)你的體溫$()。冰可以在地表採集，得到的碎冰可以製成$(item)冰磚$()。$(thing)冰磚$()和$(thing)藍冰$()不會融化，可以用$(item)鋸子$()撿起。$(l:cooking/drinks#ice_slush)冰沙$()可以飲用。"
+			"text": "隨身帶些$(l:game_mechanics/player_temperature#blocks)冰$()！站在冰附近可以降低$(l:game_mechanics/player_temperature)你的體溫$()。冰可在地表採集，得到的碎冰可製成$(item)冰磚$()。$(thing)冰磚$()和$(thing)藍冰$()不會融化，可用$(item)鋸子$()撿起。$(l:cooking/drinks#ice_slush)冰沙$()可以飲用。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "clothes",
 			"title": "衣物",
-			"text": "$(item)粗麻布$()、$(item)亞麻$()和$(item)絲綢$()$(l:craftsmanship/clothing)衣物$()能提供一些耐熱效果。$(br)$(l:the_world/wild_animals#crocodile)鱷魚$()、$(l:the_world/wild_animals#tiger)老虎$()和$(l:the_world/wild_animals#lion)獅子$()衣物能提供更強的降溫效果。$(br)最後，$(l:beneath/beneath_fauna#phantom)夜魅$()和$(l:beneath/beneath_fauna#red_elk)紅麋鹿$()衣物是降溫效果最強的衣物，而且也非常耐用。$(br2)所有衣物都可以修理。在$(emi)中按下$(thing)U$()即可查看修理配方。"
+			"text": "$(item)粗麻布$()、$(item)亞麻$()和$(item)絲綢$()$(l:craftsmanship/clothing)衣物$()能提供一些耐熱效果。$(br)$(l:the_world/wild_animals#crocodile)鱷魚$()、$(l:the_world/wild_animals#tiger)老虎$()和$(l:the_world/wild_animals#lion)獅子$()衣物的降溫效果更強。$(br)最後，$(l:beneath/beneath_fauna#phantom)夜魅$()和$(l:beneath/beneath_fauna#red_elk)紅麋鹿$()衣物降溫效果最強，而且非常耐用。$(br2)所有衣物都可修理，在$(emi)中按$(thing)U$()即可查看修理配方。"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -50,7 +50,7 @@
 			"type": "patchouli:text",
 			"title": "地獄熔爐",
 			"anchor": "hellforge",
-			"text": "由於無法接觸天空，$(l:craftsmanship/charcoal_forge)木炭爐$()在地底無法運作！$(br2)$(thing)地獄熔爐$()是一座大得誇張的熔爐，燃料、產物和加熱的容量都很大。它一次可以加熱多達九個$(l:craftsmanship/crucible)坩堝$()，而且也不需要接觸天空！$(br2)它在主世界也能使用。"
+			"text": "由於看不到天空，$(l:craftsmanship/charcoal_forge)木炭爐$()在地底無法運作！$(br2)$(thing)地獄熔爐$()是大得誇張的熔爐，燃料、產物和加熱容量都很大，一次可加熱多達九個$(l:craftsmanship/crucible)坩堝$()，也不需要接觸天空！$(br2)主世界也能使用。"
 		},
 		{
 			"type": "patchouli:multiblock",
@@ -84,25 +84,25 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "地獄熔爐需要熔岩流過四個角落的引水橋，以及 21 塊地獄磚。中央 3x3 的區域必須填滿每堆 7 個木炭的$(l:craftsmanship/charcoal_pit)木炭堆$()，然後點燃即可啟動熔爐。$(br2)為了避免過熱，我們建議使用地底上層小型熔岩池的熔岩。"
+			"text": "地獄熔爐的四個角落需要有熔岩流過的引水橋，另需 21 塊地獄磚。中央 3x3 區域必須填滿$(l:craftsmanship/charcoal_pit)木炭堆$()(每堆 7 個木炭)，點燃即可啟動。$(br2)為避免過熱，建議使用地底上層小型熔岩池的熔岩。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "地獄熔爐的物品欄位可以放燃料，也可以放要熔煉的東西，兩者沒有區別。放東西時請小心！和木炭爐一樣，右側的欄位是金屬熔化後的去處。介面上的熔岩量表代表溫度。"
+			"text": "地獄熔爐的物品欄位不分燃料或熔煉物，放東西時請小心！和木炭爐一樣，右側欄位是金屬熔化後的去處，介面上的熔岩量表代表溫度。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "繩梯",
 			"anchor": "rope_ladder",
 			"item": "tag:tfg:rope_ladders",
-			"text": "$(thing)繩梯$()是在地底上下移動的好方法。與一般梯子不同，它可以垂掛在懸崖邊緣，側面不需要任何支撐方塊，而且一整組可以一次放置或收回。$(br)$(item)粗麻纖維$()可以從$(l:beneath/beneath_wild_fruits#oil_palm)油棕$()取得，$(item)黃麻繩$()可以用$(thing)繩捲$()或$(thing)其他布料$()合成。"
+			"text": "$(thing)繩梯$()是在地底上下移動的好方法。和一般梯子不同，它能垂掛在懸崖邊緣，側面不需支撐方塊，還能一次放置或收回一整組。$(br)$(item)粗麻纖維$()可從$(l:beneath/beneath_wild_fruits#oil_palm)油棕$()取得，$(item)黃麻繩$()可用$(thing)繩捲$()或$(thing)其他布料$()合成。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "豬布林以物易物",
 			"anchor": "piglins",
 			"item": "minecraft:gold_ingot",
-			"text": "如你所料，你可以像在原版中一樣用$(item)金錠$()和$(thing)豬布林$()交易。$(br2)完整的交易清單可以在$(emi)中找到――只要對金錠按下$(thing)U$()就能查看。"
+			"text": "如你所料，可以像原版一樣用$(item)金錠$()和$(thing)豬布林$()交易。$(br2)完整交易清單可在$(emi)查看――對金錠按$(thing)U$()即可。"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -115,13 +115,13 @@
 			"type": "patchouli:text",
 			"title": "高塔",
 			"anchor": "towers",
-			"text": "你可能會在地底遇到高聳的$(thing)高塔$()。塔內有少量戰利品，但主要用途是方便垂直移動。$(br)不過越往深處，高塔的防守就越嚴密。"
+			"text": "你可能會在地底遇到高聳的$(thing)高塔$()，裡面有少量戰利品，但主要用途是方便垂直移動。$(br)不過越深處的高塔防守越嚴密。"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "前哨站",
 			"anchor": "outposts",
-			"text": "$(thing)豬布林前哨站$()是位於地底上層區域的較小型建築。裡面有一些實用的戰利品，但防守比高塔更嚴密。你可以找到：$(li)品質較好的遠程武器和藥水箭$(li)黑青銅武器、工具和盔甲$(li)食物和藥品$(li)燈籠$(li)布料、背包、炸藥和食物"
+			"text": "$(thing)豬布林前哨站$()是地底上層的小型建築，有一些實用戰利品，但防守比高塔嚴密。你可以找到：$(li)品質較好的遠程武器和藥水箭$(li)黑青銅武器、工具和盔甲$(li)食物和藥品$(li)燈籠$(li)布料、背包、炸藥和食物"
 		},
 		{
 			"type": "patchouli:text",

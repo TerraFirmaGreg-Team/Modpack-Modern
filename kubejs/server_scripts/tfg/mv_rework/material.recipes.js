@@ -180,7 +180,7 @@ function registerTFGMVMaterialRecipes(event) {
 		event.recipes.create.deploying(transitional, [transitional, '#forge:tools/wire_cutters']),
 	])
 		.transitionalItem(transitional)
-		.loops(10)
+		.loops(3)
 		.id('tfg:equenced_assembly/sic_sic_turbine_rotor')
 
 
