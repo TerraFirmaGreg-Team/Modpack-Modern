@@ -106,9 +106,120 @@ function registerTFGIceRecipes(event) {
 	event.shapeless('minecraft:snow_block', ['8x minecraft:snow'])
 		.id('tfg:shapeless/snow_block')
 
-	event.shapeless('8x minecraft:snowball', ['minecraft:snow_block'])
+	event.shaped('minecraft:snow_block', [
+		'AA',
+		'AA'
+	], {
+		A: 'minecraft:snowball'
+	}).id('tfg:shaped/snowball_to_snow_block_manual_only')
+
+	event.shapeless('4x minecraft:snowball', ['minecraft:snow_block'])
 		.id('tfg:shapeless/snowball')
 
 	event.shapeless('8x minecraft:snow', ['minecraft:snow_block', '#forge:tools/saws'])
 		.id('tfg:shapeless/snow')
+
+	event.recipes.greate.compacting('minecraft:snow_block', [
+			'minecraft:snowball', 'minecraft:snowball', 'minecraft:snowball', 'minecraft:snowball'
+		])
+		.circuitNumber(1)
+		.recipeTier(0)
+		.id('tfg:compacting/snowball_to_block')
+
+	event.recipes.greate.compacting('tfg:snow_bricks', [
+			'minecraft:snow_block', 'minecraft:snow_block', 'minecraft:snow_block', 'minecraft:snow_block'
+		])
+		.circuitNumber(2)
+		.recipeTier(0)
+		.id('tfg:compacting/snow_blocks_to_bricks')
+
+	event.recipes.gtceu.compressor('tfg:snow_block')
+		.itemInputs('4x minecraft:snowball')
+		.itemOutputs('minecraft:snow_block')
+		.duration(40)
+		.EUt(2)
+
+	// Snow bricks
+	event.shaped('tfg:snow_bricks', [
+		'AA',
+		'AA'
+	], {
+		A: 'minecraft:snow_block'
+	}).id('tfg:shaped/snow_bricks_manual_only')
+	
+	event.shaped('tfg:snow_brick_stairs', [
+		'A ',
+		'AA'
+	], {
+		A: 'minecraft:snow_block'
+	}).id('tfg:shaped/snow_brick_stairs')
+	
+	event.shaped('tfg:snow_brick_slab', [
+		'AA'
+	], {
+		A: 'minecraft:snow_block'
+	}).id('tfg:shaped/snow_brick_slab')
+	
+	event.shaped('tfg:snow_brick_wall', [
+		'A',
+		'A'
+	], {
+		A: 'minecraft:snow_block'
+	}).id('tfg:shaped/snow_brick_wall')
+
+	event.recipes.gtceu.compressor('tfg:snow_bricks')
+		.itemInputs('4x minecraft:snow_block')
+		.itemOutputs('tfg:snow_bricks')
+		.duration(40)
+		.EUt(2)
+
+	event.recipes.gtceu.extractor('tfg:snow_bricks')
+		.itemInputs("#tfg:stone_types/snow")
+		.itemOutputs('4x minecraft:snow_block')
+		.duration(40)
+		.EUt(2)
+
+	event.recipes.gtceu.extractor('tfg:snow_bricks_half')
+		.itemInputs("#tfg:stone_types/snow_half")
+		.itemOutputs('2x minecraft:snow_block')
+		.duration(40)
+		.EUt(2)
+
+	// Ice bricks
+	event.recipes.greate.compacting('minecraft:packed_ice', [
+			'minecraft:ice', 'minecraft:ice', 'minecraft:ice', 'minecraft:ice', 'minecraft:ice',
+			'minecraft:ice', 'minecraft:ice', 'minecraft:ice', 'minecraft:ice'
+		])
+		.circuitNumber(1)
+		.recipeTier(0)
+		.id('tfg:compacting/ice_to_packed_ice')
+		
+	event.recipes.greate.compacting('minecraft:blue_ice', [
+			'minecraft:packed_ice', 'minecraft:packed_ice', 'minecraft:packed_ice', 'minecraft:packed_ice',
+			'minecraft:packed_ice', 'minecraft:packed_ice', 'minecraft:packed_ice', 'minecraft:packed_ice',
+			'minecraft:packed_ice'])
+		.circuitNumber(1)
+		.recipeTier(0)
+		.id('tfg:compacting/packed_ice_to_blue_ice')
+
+	event.recipes.gtceu.macerator('tfg:macerate_ice_bricks')
+		.itemInputs('#tfg:stone_types/packed_ice')
+		.itemOutputs('9x gtceu:ice_dust')
+		.duration(40)
+		.EUt(2)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
+
+	event.recipes.gtceu.macerator('tfg:macerate_ice_bricks_half')
+		.itemInputs('#tfg:stone_types/packed_ice_half')
+		.itemOutputs('18x gtceu:small_ice_dust')
+		.duration(40)
+		.EUt(2)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
+		
+	event.recipes.tfc.damage_inputs_shapeless_crafting(
+		event.shapeless('tfg:packed_ice_bricks', ['minecraft:packed_ice', '#tfc:chisels'])
+	).id('tfg:chisel_packed_ice_to_bricks')
+
+	event.recipes.tfc.chisel('tfg:packed_ice_bricks', 'minecraft:packed_ice', 'smooth')
+		.id('tfg:chisel/packed_ice_bricks')
 }
