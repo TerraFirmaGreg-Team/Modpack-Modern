@@ -8,8 +8,6 @@ function registerTFGConcreteRecipes(event) {
 	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/concrete_from_calcite' })
 	event.remove({ id: 'gtceu:mixer/concrete_from_clay' })
 	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/concrete_from_clay' })
-	event.remove({ id: 'gtceu:mixer/concrete_from_clay_calcite' })
-	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/concrete_from_clay_calcite' })
 
 	event.recipes.gtceu.mixer('tfg:concrete_from_marble')
 		.itemInputs(
