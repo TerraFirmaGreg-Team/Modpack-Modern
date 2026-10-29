@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:beneath/beneath#entering)Entering$() and $(bold)$(l:beneath/beneath#exiting)Exiting$()$(li)$(bold)$(l:beneath/beneath#biomes)Biomes$()$(li2)$(l:beneath/beneath#salt_caves)Top Layer$()$(li2)$(l:beneath/beneath#tar_pools)Middle Layer$()$(li2)$(l:beneath/beneath#ash_forest)Bottom Layer$()$(li)$(bold)$(l:beneath/beneath#geology)Geology$()$(li2)$(l:beneath/beneath#more_rocks)More Rocks$()"
+			"text": "$(li)$(bold)$(l:beneath/beneath#entering)Как попасть$() и $(bold)$(l:beneath/beneath#exiting)Как выйти$()$(li)$(bold)$(l:beneath/beneath#biomes)Биомы$()$(li2)$(l:beneath/beneath#salt_caves)Верхний уровнь$()$(li2)$(l:beneath/beneath#tar_pools)Средний уровнь$()$(li2)$(l:beneath/beneath#ash_forest)Нижний уровень$()$(li)$(bold)$(l:beneath/beneath#geology)Геология$()$(li2)$(l:beneath/beneath#more_rocks)Больше камней$()"
 		},
 		{
 			"type": "patchouli:image",
@@ -26,7 +26,7 @@
 				"tfg:textures/gui/field_guide/nether/aether.png"
 			],
 			"border": true,
-			"text": "Not like this!"
+			"text": "Не так!"
 		},
 		{
 			"type": "patchouli:text",

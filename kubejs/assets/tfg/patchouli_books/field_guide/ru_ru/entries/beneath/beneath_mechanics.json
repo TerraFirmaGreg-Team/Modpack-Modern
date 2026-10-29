@@ -10,13 +10,13 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:beneath/beneath_mechanics#temperature)Temperature Management$()$(li2)$(l:beneath/beneath_mechanics#ice)Ice$()$(li2)$(l:beneath/beneath_mechanics#clothes)Clothing$()$(li2)$(l:beneath/beneath_mechanics#other_cooling)Other$()$(li)$(bold)$(l:beneath/beneath_mechanics#hellforge)The Hellforge$()$(li)$(bold)$(l:beneath/beneath_mechanics#rope_ladder)Vertical Navigation$()$(li2)$(l:beneath/beneath_mechanics#rope_ladder)Rope Ladder$()$(li2)$(l:logistics/exploration_gear#hang_glider)Hang Glider$()$(li2)$(l:logistics/exploration_gear#grappling_hook)Grappling Hook$()$(li2)$(l:logistics/exploration_gear#harpoon)Harpoon & Coil$()$(li)$(bold)$(l:beneath/beneath_mechanics#piglins)Piglins$()$(li2)$(l:beneath/beneath_mechanics#disguise)Disguising$()$(li2)$(l:beneath/beneath_mechanics#towers)Towers$()$(li2)$(l:beneath/beneath_mechanics#outposts)Outposts$()$(li2)$(l:beneath/beneath_mechanics#bastions)Bastions$()"
+			"text": "$(li)$(bold)$(l:beneath/beneath_mechanics#temperature)Управление температурой$()$(li2)$(l:beneath/beneath_mechanics#ice)Лёд$()$(li2)$(l:beneath/beneath_mechanics#clothes)Одежда$()$(li2)$(l:beneath/beneath_mechanics#other_cooling)Другое$()$(li)$(bold)$(l:beneath/beneath_mechanics#hellforge)Адская кузня$()$(li)$(bold)$(l:beneath/beneath_mechanics#rope_ladder)Вертикальная навигация$()$(li2)$(l:beneath/beneath_mechanics#rope_ladder)Верёвочная лестница$()$(li2)$(l:logistics/exploration_gear#hang_glider)Дельтаплан$()$(li2)$(l:logistics/exploration_gear#grappling_hook)Крюк-кошка$()$(li2)$(l:logistics/exploration_gear#harpoon)Гарпун & Трос$()$(li)$(bold)$(l:beneath/beneath_mechanics#piglins)Пиглины$()$(li2)$(l:beneath/beneath_mechanics#disguise)Маскировка под Пиглина$()$(li2)$(l:beneath/beneath_mechanics#towers)Башни$()$(li2)$(l:beneath/beneath_mechanics#outposts)Аванпосты$()$(li2)$(l:beneath/beneath_mechanics#bastions)Бастионы$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "temperature",
 			"title": "Управление температурой",
-			"text": "The Beneath is hot! The temperature starts at 20°C at the very top, and only gets hotter as you descend.$(br2)Avoiding $(l:game_mechanics/player_temperature)hyperthermia$() is much more of an issue than in the overworld, but there are ways to mitigate it.$(br2)The easiest way to avoid overheating is to stay in the upper levels of the Beneath and $(l:game_mechanics/player_temperature#wetness)dunk yourself$() in water whenever you start overheating."
+			"text": "В Бездне очень жарко! Температура на самом верху составляет 20 °C, и чем ниже вы спускаетесь, тем жарче становится.$(br2) Избежать $(l:game_mechanics/player_temperature)перегрева$() гораздо сложнее, чем в обычном мире, но есть способы смягчить последствия.$(br2) Самый простой способ  — оставаться на верхних уровнях Бездны и $(l:game_mechanics/player_temperature#wetness)окунаться$() в воду всякий раз, когда вы начинаете перегреваться."
 		},
 		{
 			"type": "tfg:sealed_barrel_recipe",

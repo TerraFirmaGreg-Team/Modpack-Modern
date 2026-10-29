@@ -6,13 +6,13 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:craftsmanship/anvils#stone_anvil)Каменные наковальни$()$(li2)$(l:craftsmanship/anvils#raw_rock)Получение сырой породы$()$(li)$(bold)$(l:craftsmanship/anvils#welding)Сварка$()$(li)$(bold)$(l:craftsmanship/anvils#metal_anvil)Металлические наковальни$()$(li2)$(l:craftsmanship/anvils#tiers)Тиры$()$(li)$(bold)$(l:craftsmanship/anvils#working)Обработка металлов$()$(li2)$(l:craftsmanship/anvils#forging_bonus)Бонусы ковки$()$(li)$(bold)$(l:craftsmanship/anvils#helve_hammer)Рычажный Молот$()$(li)$(bold)$(l:craftsmanship/anvils#anvil_helper)Гид по Anvil Helper$()"
+            "text": "$(li)$(bold)$(l:craftsmanship/anvils#stone_anvil)Каменные наковальни$()$(li2)$(l:craftsmanship/anvils#raw_rock)Получение сырой породы$()$(li)$(bold)$(l:craftsmanship/anvils#welding)Сварка$()$(li)$(bold)$(l:craftsmanship/anvils#metal_anvil)Металлические наковальни$()$(li2)$(l:craftsmanship/anvils#tiers)Уровни$()$(li)$(bold)$(l:craftsmanship/anvils#working)Обработка металлов$()$(li2)$(l:craftsmanship/anvils#forging_bonus)Бонусы ковки$()$(li)$(bold)$(l:craftsmanship/anvils#helve_hammer)Рычажный Молот$()$(li)$(bold)$(l:craftsmanship/anvils#anvil_helper)Руководство по наковальне$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
             "title": "Введение",
-            "text": "Альтернатива отливке инструментов напрямую (и требование для металлов более высоких уровней) — использование $(thing)Наковальни$(). Наковальная — это блок который может использоваться в двух задачах:  $(l:craftsmanship/anvils#working)Обработка$() и $(l:craftsmanship/anvils#welding)Сварка$(). На наковальне возможно сварить двойные слитки металла тира на один выше тира металла, из которого накольня сделана, для создания наковальни следующего тира, что потребутся для изготовления предметов из нового металла."
+            "text": "Альтернатива отливке инструментов напрямую (и требование для металлов более высоких уровней) — использование $(thing)Наковальни$(). Наковальная — это блок который может использоваться в двух задачах:  $(l:craftsmanship/anvils#working)Обработка$() и $(l:craftsmanship/anvils#welding)Сварка$(). Наковальня может сварить двойные слитки металла уровня на один выше уровня металла, из которого она сделана, что требуется для создания наковальни следующего уровня и обработки предметов из этого металла."
         },
         {
             "type": "patchouli:text",

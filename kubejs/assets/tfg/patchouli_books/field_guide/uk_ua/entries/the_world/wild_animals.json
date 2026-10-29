@@ -7,7 +7,7 @@
             "type": "patchouli:text",
             "title": "Індекс",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:the_world/wild_animals#intro)Вступ$()$(li)$(bold)$(l:the_world/wild_animals#livestock)Свійська худоба$()$(li2)$(l:the_world/wild_animals#pig)Свиня$()$(li2)$(l:the_world/wild_animals#cow)Корова$()$(li2)$(l:the_world/wild_animals#goat)Коза$()$(li2)$(l:the_world/wild_animals#yak)Як$()$(li2)$(l:the_world/wild_animals#alpaca)Альпака$()$(li2)$(l:the_world/wild_animals#sheep)Вівця$()$(li2)$(l:the_world/wild_animals#musk_ox)Вівцебик$()$(li2)$(l:the_world/wild_animals#chicken)Курка$()$(li2)$(l:the_world/wild_animals#duck)Качка$()$(li2)$(l:the_world/wild_animals#quail)Перепілка$()"
+            "text": "$(li)$(bold)$(l:the_world/wild_animals#intro)Вступ$()$(li)$(bold)$(l:the_world/wild_animals#livestock)Свійська худоба$()$(li2)$(l:the_world/wild_animals#pig)Свиня$()$(li2)$(l:the_world/wild_animals#cow)Корова$()$(li2)$(l:the_world/wild_animals#goat)Коза$()$(li2)$(l:the_world/wild_animals#yak)Як$()$(li2)$(l:the_world/wild_animals#alpaca)Альпака$()$(li2)$(l:the_world/wild_animals#sheep)Вівця$()$(li2)$(l:the_world/wild_animals#musk_ox)Мускусний бик$()$(li2)$(l:the_world/wild_animals#chicken)Курка$()$(li2)$(l:the_world/wild_animals#duck)Качка$()$(li2)$(l:the_world/wild_animals#quail)Перепілка$()"
         },
         {
             "type": "patchouli:text",
@@ -123,14 +123,14 @@
             "type": "patchouli:text",
             "anchor": "musk_ox",
             "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): -25–0°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): > 100мм$(br)$(bold)Місце появи$(): Холодний клімат$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#wooly_animals)Вовняні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$()$(br)$(bold)Максимум дитинчат$(): 1$(br)$(bold)Час вагітності$(): 64 дні$(br)$(bold)Час вирощування$(): 168 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 160$(br)$(bold)Продукт$(): $(l:agriculture/weaving)Вовна$()$(br)$(bold)Цикл виробництва$(): 4 дні",
-            "title": "Вівцебик"
+            "title": "Мускусний бик"
         },
         {
             "type": "patchouli:entity",
             "entity": "tfc:musk_ox{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
             "scale": 0.75,
             "name": " ",
-            "text": "Вівцебик"
+            "text": "Мускусний бик"
         },
         {
             "type": "patchouli:text",
