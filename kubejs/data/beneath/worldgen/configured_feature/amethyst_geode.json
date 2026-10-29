@@ -1,0 +1,5 @@
+{
+    "type": "minecraft:no_op",
+    "__comment__": "1.21 TFC removed its geode feature, and we don't use it either. Unfortunately, the beneath still does.",
+    "config": {}
+}
