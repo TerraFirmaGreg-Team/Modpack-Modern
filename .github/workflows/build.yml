@@ -1,5 +1,5 @@
-name: "Project Build"
-run-name: "[📦]: Project Build #${{ github.run_number }}"
+name: "Build"
+run-name: "[📦]: Build #${{ github.run_number }}"
 on:
   push:
     branches:
@@ -98,7 +98,7 @@ jobs:
           artifact_docker: true
 
   test:
-    name: "[🧪] Runtime Test"
+    name: "[🧪] Project Test"
     needs: [info, build, create-pr]
     if: ${{ github.ref_name != 'main' }}
     runs-on: ubuntu-latest
