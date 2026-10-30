@@ -1,5 +1,6 @@
 # Changelog
 
+## [1.0.0] - 30-10-2026
 ### Changes
 - Ceramic Circuit Board have different tiers so player can understand easily which one they can craft @TomPlop
 - Change Butraldehyde circuit to 5 @TomPlop
