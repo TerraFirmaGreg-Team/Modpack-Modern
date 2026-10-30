@@ -113,6 +113,7 @@ jobs:
         with:
           mc_version: ${{ needs.info.outputs.mc_version }}
           loader_type: ${{ needs.info.outputs.loader_type }}
+          loader_version: ${{ needs.info.outputs.loader_version }}
           test_mod: forge
           java_version: "17"
           pack_artifact: ${{ needs.info.outputs.project_full_name }}-multimc
