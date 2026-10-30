@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - dev
+      - main
     paths:
       - '.pakku/'
       - 'config/'
@@ -13,6 +14,7 @@ on:
       - 'pakku-lock.json'
       - 'pakku.json'
       - '.github/workflows/build.yml'
+  workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -47,29 +49,21 @@ jobs:
   create-pr:
     name: "[🤝] Create Release PR"
     needs: [info]
-    if: ${{ needs.info.outputs.make_pr == 'true' }}
+    if: ${{ github.event_name == 'push' && needs.info.outputs.make_pr == 'true' }}
     runs-on: ubuntu-latest
+    outputs:
+      pr_number: ${{ steps.pr.outputs.pr_number }}
     steps:
       - name: Create Pull Request
+        id: pr
         uses: TerraFirmaGreg-Team/Actions/pull-request/create@main
         with:
-          source_branch: dev
-          target_branch: main
           milestone: ${{ needs.info.outputs.changelog_version }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          draft: true
-          title: 'new Release: ${{ needs.info.outputs.changelog_version }}'
-          body: |
-            **This is an automated Pull Request from the dev branch.**
-            📃 **Name**: ${{ needs.info.outputs.project_name }}
-
-            📃 **Release**:  `${{ needs.info.outputs.changelog_version }}`
-            📃 **Release Type**: `${{ needs.info.outputs.release_type }}`
-
-            📃 **Loader Type**: `${{ needs.info.outputs.loader_type }}`
-            📃 **Loader Version**: `${{ needs.info.outputs.loader_version }}`
-
-            ${{ needs.info.outputs.changelog }}
+          project_name: ${{ needs.info.outputs.project_name }}
+          release_type: ${{ needs.info.outputs.release_type }}
+          loader_type: ${{ needs.info.outputs.loader_type }}
+          loader_version: ${{ needs.info.outputs.loader_version }}
+          changelog: ${{ needs.info.outputs.changelog }}
 
   build:
     name: "[📦] Project Build"
@@ -100,3 +94,100 @@ jobs:
           multimc_icon_src: config/fancymenu/assets/icons/icon128x128.png
           prune_export_false: true
           artifact_docker: true
+
+  test:
+    name: "[🧪] Runtime Test"
+    needs: [info, build, create-pr]
+    if: ${{ github.ref_name != 'main' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
+    steps:
+      - name: Runtime test
+        uses: TerraFirmaGreg-Team/Actions/modpack/test@main
+        with:
+          mc_version: ${{ needs.info.outputs.mc_version }}
+          loader_type: ${{ needs.info.outputs.loader_type }}
+          test_mod: forge
+          java_version: "17"
+          pack_artifact: ${{ needs.info.outputs.project_full_name }}-multimc
+          artifact_prefix: ${{ needs.info.outputs.project_full_name }}
+          pr_number: ${{ needs.create-pr.outputs.pr_number }}
+
+  release:
+    name: "[🚀] Project Release"
+    needs: [info, build]
+    runs-on: ubuntu-latest
+    if: ${{ needs.info.outputs.make_release == 'true' }}
+    outputs:
+      curseforge-id: ${{ steps.publish.outputs.curseforge-id }}
+      curseforge-url: ${{ steps.publish.outputs.curseforge-url }}
+      github-tag: ${{ steps.publish.outputs.github-tag }}
+      github-url: ${{ steps.publish.outputs.github-url }}
+    steps:
+      - name: Publish
+        id: publish
+        uses: TerraFirmaGreg-Team/Actions/modpack/release@main
+        with:
+          project_full_name: ${{ needs.info.outputs.project_full_name }}
+          project_version: ${{ needs.info.outputs.project_version }}
+          release_type: ${{ needs.info.outputs.release_type }}
+          changelog: ${{ needs.info.outputs.changelog }}
+          diff: ${{ needs.info.outputs.diff }}
+          mc_version: ${{ needs.info.outputs.mc_version }}
+          loader_type: ${{ needs.info.outputs.loader_type }}
+          files: |
+            ${{ needs.info.outputs.project_full_name }}-curseforge.zip
+            ${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
+            ${{ needs.info.outputs.project_full_name }}-multimc.zip
+            ${{ needs.info.outputs.project_full_name }}-serverpack.zip
+            ${{ needs.info.outputs.project_full_name }}-docker.yml
+          curseforge_server_name: ${{ needs.info.outputs.project_full_name }}-serverpack
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          curseforge_id: ${{ vars.CURSEFORGE_ID }}
+          curseforge_token: ${{ secrets.CURSEFORGE_TOKEN }}
+
+  message:
+    name: "[📱] Discord Message"
+    needs: [info, build, release]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Discord message
+        uses: TerraFirmaGreg-Team/Actions/modpack/discord@main
+        with:
+          webhook_key: ${{ secrets.DISCORD_RELEASES }}
+          project_version: ${{ needs.info.outputs.project_version }}
+          project_full_name: ${{ needs.info.outputs.project_full_name }}
+          release_type: ${{ needs.info.outputs.release_type }}
+          mc_version: ${{ needs.info.outputs.mc_version }}
+          changelog: ${{ needs.info.outputs.changelog }}
+          curseforge_url: ${{ needs.release.outputs.curseforge-url }}
+          github_tag: ${{ needs.release.outputs.github-tag }}
+          github_url: ${{ needs.release.outputs.github-url }}
+
+  export:
+    name: "[📤] Game Export"
+    needs: [info, build]
+    if: ${{ needs.info.outputs.make_release == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Live export
+        uses: TerraFirmaGreg-Team/Actions/modpack/export@main
+        with:
+          platform: modern
+          version: ${{ needs.info.outputs.project_version }}
+          mc_version: ${{ needs.info.outputs.mc_version }}
+          loader_type: ${{ needs.info.outputs.loader_type }}
+          pack_artifact: ${{ needs.info.outputs.project_full_name }}-multimc
+          dump_s3_endpoint: ${{ secrets.DUMP_S3_ENDPOINT }}
+          dump_s3_bucket: ${{ secrets.DUMP_S3_BUCKET }}
+          dump_s3_prefix: ${{ secrets.DUMP_S3_PREFIX }}
+          dump_s3_region: ${{ secrets.DUMP_S3_REGION }}
+          dump_s3_access_key: ${{ secrets.DUMP_S3_ACCESS_KEY }}
+          dump_s3_secret_key: ${{ secrets.DUMP_S3_SECRET_KEY }}
+
+
