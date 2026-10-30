@@ -51,6 +51,8 @@ jobs:
     needs: [info]
     if: ${{ github.event_name == 'push' && needs.info.outputs.make_pr == 'true' }}
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     outputs:
       pr_number: ${{ steps.pr.outputs.pr_number }}
     steps:
@@ -122,6 +124,8 @@ jobs:
     needs: [info, build]
     runs-on: ubuntu-latest
     if: ${{ needs.info.outputs.make_release == 'true' }}
+    permissions:
+      contents: write
     outputs:
       curseforge-id: ${{ steps.publish.outputs.curseforge-id }}
       curseforge-url: ${{ steps.publish.outputs.curseforge-url }}
@@ -152,7 +156,7 @@ jobs:
 
   message:
     name: "[📱] Discord Message"
-    needs: [info, build, release]
+    needs: [info, release]
     runs-on: ubuntu-latest
     steps:
       - name: Send Discord message
@@ -170,7 +174,7 @@ jobs:
 
   export:
     name: "[📤] Game Export"
-    needs: [info, build]
+    needs: [info, build, release]
     if: ${{ needs.info.outputs.make_release == 'true' }}
     runs-on: ubuntu-latest
     timeout-minutes: 360
