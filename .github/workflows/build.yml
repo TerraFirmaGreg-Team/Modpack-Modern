@@ -116,6 +116,7 @@ jobs:
           test_mod: forge
           java_version: "17"
           pack_artifact: ${{ needs.info.outputs.project_full_name }}-multimc
+          server_artifact: ${{ needs.info.outputs.project_full_name }}-serverpack
           artifact_prefix: ${{ needs.info.outputs.project_full_name }}
           pr_number: ${{ needs.create-pr.outputs.pr_number }}
 
