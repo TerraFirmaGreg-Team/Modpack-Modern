@@ -36,6 +36,9 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['minecraft:shield'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.wooden_shield'))
 	})
+	event.addAdvanced(['minecraft:campfire'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.campfire'))
+	})
 
 	//#region Multiblock Controler Tooltip
 
