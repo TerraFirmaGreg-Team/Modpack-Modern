@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "$(thing)體溫$()是只影響$(bold)你$()(玩家)的溫度，不影響其他任何東西。它不同於氣候的$(l:the_world/climate#temperature)目前溫度與平均溫度$()，但會受到它們以及$(l:game_mechanics/player_temperature#what_affects_it)其他因素$()的影響。$(br2)你需要留意它，以免$(thing)中暑$()或$(thing)凍傷$()！"
+			"text": "$(thing)體溫$()是只影響$(bold)你$()(玩家)的溫度。它不同於氣候的$(l:the_world/climate#temperature)目前溫度與平均溫度$()，但會受其與$(l:game_mechanics/player_temperature#what_affects_it)其他因素$()影響。$(br2)請留意體溫，以免$(thing)中暑$()或$(thing)凍傷$()！"
 		},
 		{
 			"type": "patchouli:text",
@@ -24,11 +24,11 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "按住 $(item)$(k:key.sneak)$() 並看向螢幕底部$(thing)快捷欄$()上方的數字，就能查看你的體溫。$(br2)右邊的兩個數字表示你$(thing)目前的體溫$()和$(thing)目標溫度$()，也就是在情況不變時體溫「趨向」的數值。$(br2)左邊的兩個數字則是你的$(l:game_mechanics/player_temperature#wetness)濕度$()，意義相同。"
+			"text": "按住 $(item)$(k:key.sneak)$() 並看螢幕底部$(thing)快捷欄$()上方的數字，就能查看體溫。$(br2)右邊兩個數字是$(thing)目前體溫$()和$(thing)目標溫度$()，也就是情況不變時體溫「趨向」的數值。$(br2)左邊兩個數字則以相同方式顯示$(l:game_mechanics/player_temperature#wetness)濕度$()。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "要留意的是$(thing)右邊的兩個溫度數字$()！如果你的$(thing)體溫$()$(6)高於 30°C$()或$(3)低於 0°C$()，就會開始受到傷害。$(br2)接近這些溫度時，HUD 中間的箭頭會變成亮橘色或深藍色，螢幕也會帶有橘色或藍色的色調。"
+			"text": "要留意的是$(thing)右邊兩個溫度數字$()！$(thing)體溫$()$(6)高於 30°C$()或$(3)低於 0°C$()時，就會開始受到傷害。$(br2)接近這些溫度時，HUD 中間的箭頭會變成亮橙色或深藍色，螢幕也會染上橙色或藍色。"
 		},
 		{
 			"type": "patchouli:text",
@@ -38,21 +38,21 @@
 			"type": "patchouli:text",
 			"title": "哪些因素會影響體溫？",
 			"anchor": "what_affects_it",
-			"text": "影響體溫的因素有很多！$(br2)最明顯的是你所在地的氣候。$(l:the_world/climate#seasons)夏天$()會比較熱，$(l:the_world/climate#seasons)冬天$()會比較冷；住在$(l:the_world/climate#climate)極地$()會比住在$(l:the_world/climate#climate)熱帶$()更冷，以此類推。"
+			"text": "影響體溫的因素很多！$(br2)最明顯的是當地氣候：$(l:the_world/climate#seasons)夏天$()較熱、$(l:the_world/climate#seasons)冬天$()較冷；住在$(l:the_world/climate#climate)極地$()比住在$(l:the_world/climate#climate)熱帶$()冷，以此類推。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "wetness",
-			"text": "$(thing)濕度$()會讓你稍微變冷，同時讓體溫變化得快一些。不出所料，淋雨或游泳會讓你變濕，而要變乾就……別碰水。跳進水裡是降溫的好方法！$(br2)站在$(thing)陽光直射$()下會讓體溫小幅上升，幅度取決於目前的氣候溫度。持續衝刺也會讓體溫稍微上升。"
+			"text": "$(thing)濕度$()會讓你稍微變冷，體溫也變化得快一些。淋雨或游泳自然會變濕，要變乾就……別碰水。跳進水裡是降溫的好方法！$(br2)站在$(thing)陽光直射$()下會讓體溫小幅上升，幅度隨目前氣候溫度而定。持續衝刺也會讓體溫稍微上升。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "blocks",
-			"text": "附近的各種方塊對體溫的影響要大得多。例如，你可以用$(l:craftsmanship/firepit)篝火$()、$(l:craftsmanship/charcoal_forge)木炭爐$()，或$(item)岩漿塊$()、$(thing)熔岩$()等方塊取暖，而$(item)冰磚$()等方塊則能讓你降溫。"
+			"text": "附近的方塊對體溫的影響大得多。例如$(l:craftsmanship/firepit)篝火$()、$(l:craftsmanship/charcoal_forge)木炭爐$()，或$(item)岩漿塊$()、$(thing)熔岩$()等方塊能讓你取暖，$(item)冰磚$()等方塊則能降溫。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "更精確地說，水平距離 $(thing)9$() 格以內、下方 $(thing)3$() 格以內和上方 $(thing)5$() 格以內(19x9x19)的方塊都會影響你的體溫。在這些方塊中，只有效果最強的 5 個方塊會影響你的體溫，但任何$(l:game_mechanics/heating)加熱$()裝置一定會計入。"
+			"text": "更精確地說，水平 $(thing)9$() 格、下方 $(thing)3$() 格和上方 $(thing)5$() 格以內(19x9x19)的方塊都會影響體溫。其中只有效果最強的 5 個方塊會計入，但$(l:game_mechanics/heating)加熱$()裝置一定會計入。"
 		},
 		{
 			"type": "patchouli:text",
@@ -64,30 +64,30 @@
 			"type": "patchouli:text",
 			"title": "衣物",
 			"anchor": "clothing",
-			"text": "穿上$(l:craftsmanship/clothing)衣物$()是改變體溫的另一個重要方法。衣物可以讓你保暖或降溫(或兩者皆無)，也可能帶有$(thing)隔熱$()效果，減少其他溫度對你的影響。$(br2)有些頭部衣物也能保護你免受$(l:game_mechanics/player_temperature#wetness)陽光直射$()。"
+			"text": "穿$(l:craftsmanship/clothing)衣物$()是改變體溫的另一個重要方法。衣物能保暖或降溫(或兩者皆無)，也可能有$(thing)隔熱$()效果，減少外界溫度的影響。$(br2)有些頭部衣物還能遮擋$(l:game_mechanics/player_temperature#wetness)陽光直射$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfcambiental:house_tester",
 			"anchor": "house_tester",
 			"title": "封閉空間",
-			"text": "打造房屋之類的封閉空間能提供隔熱效果。門、地板門和玻璃片等方塊都算是「密封」的。如果不確定，$(item)房屋測試器$()會告訴你！$(br2)這個效果最多只能讓房屋升溫到 5°C，而且在較大的建築中無效。"
+			"text": "房屋等封閉空間能提供隔熱效果。門、地板門和玻璃片等方塊都算「密封」。不確定的話，$(item)房屋測試器$()會告訴你！$(br2)這個效果最多只能讓房屋升溫到 5°C，且對較大的建築無效。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:heat_pump",
 			"anchor": "heat_pump",
-			"text": "當你取得$(b)MV$()$(thing) 電路$()後，就可以製作$(item)熱泵$()，這是一種多方塊結構，能為大得多的建築加熱或降溫。$(br2)你還需要在$(item)排氣口$()中裝入渦輪轉子，熱泵才能運作。$(br2)$(o)(下頁續……)$()"
+			"text": "取得$(b)MV$()$(thing) 電路$()後，就能製作$(item)熱泵$()，這種多方塊結構能為大得多的建築加熱或降溫。$(br2)還需要在$(item)排氣口$()中裝入渦輪轉子，熱泵才能運作。$(br2)$(o)(下頁續……)$()"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:turbine_rotor{GT.PartStats:{Material:\"tfg:silicon_carbide_silicon_carbide\"}},gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:vanadium\"}},gtceu:turbine_rotor{GT.PartStats:{Material:\"tfg:rene_41\"}}",
 			"title": "渦輪轉子",
-			"text": "裝在排氣口中的$(item)渦輪轉子$()永遠不會損耗耐久度，所以這項數值可以忽略。另一方面，渦輪的$(thing)功率$()會影響你在$(thing)EU/t 需求$()上獲得的折扣。"
+			"text": "裝在排氣口中的$(item)渦輪轉子$()永遠不會損耗耐久度，這項數值可以忽略。渦輪的$(thing)功率$()則會影響$(thing)EU/t 需求$()的折扣。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "在遊戲的這個階段，最簡單的選擇是$(item)釩渦輪轉子$()，但你也可以選用$(item)René-41 渦輪轉子$()或$(item)SiC-SiC 渦輪轉子$()。$(br2)$(bold)提示：$()即使門是開著的，熱泵仍然可以運作；除此之外，它需要一個由非空氣方塊圍成的封閉區域才能運作。$(br2)$(italic)如果渦輪的$(thing)功率$()低於 100%，就不會有任何增益或減益。$()"
+			"text": "現階段最簡單的選擇是$(item)釩渦輪轉子$()，也可以選用$(item)René-41 渦輪轉子$()或$(item)SiC-SiC 渦輪轉子$()。$(br2)$(bold)提示：$()即使門開著，熱泵仍能運作，但除此之外需要由非空氣方塊圍成的封閉區域。$(br2)$(italic)渦輪$(thing)功率$()低於 100% 時，沒有任何增益或減益。$()"
 		},
 		{
 			"type": "tfg:multimultiblock",

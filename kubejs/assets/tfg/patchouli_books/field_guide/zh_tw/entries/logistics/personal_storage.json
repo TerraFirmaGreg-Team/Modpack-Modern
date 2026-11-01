@@ -13,11 +13,11 @@
 			"type": "patchouli:text",
 			"anchor": "intro",
 			"title": "簡介",
-			"text": "遊戲中有許多$(item)物品容器$()可以減輕物品欄的壓力。選擇時有幾項重要的數據需要考慮。$(li)$(thing)欄位數$()：它擁有的欄位數量。$(li)$(thing)欄位容量$()：一個欄位可以放多少個物品。$(li)$(thing)允許尺寸$()：欄位中允許的最大$(l:game_mechanics/size_and_weight)TFC 尺寸$()。"
+			"text": "遊戲中有許多$(item)物品容器$()能減輕物品欄壓力，挑選時要注意以下幾項數據。$(li)$(thing)欄位數$()：有幾個欄位。$(li)$(thing)欄位容量$()：每格可放多少物品。$(li)$(thing)允許尺寸$()：欄位可放的最大$(l:game_mechanics/size_and_weight)TFC 尺寸$()。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(thing)物品拾取$()：是否能撿起世界中的物品實體。按下$(item)$(k:key.sneak)-$(k:key.use)$()或使用$(item)$(k:sns.key.pickup)$()切換。$(li)$(thing)物品銷毀$()：是否能銷毀從世界中撿起的多餘物品。對欄位按下$(item)$(k:key.sneak)-$(k:key.attack)$()切換。$(li)$(thing)物品欄互動$()：是否能像 TFC 容器或原版收納袋一樣，點擊物品堆疊來放入和取出物品。$(li)$(thing)限制$()：允許放入哪些類型的物品。"
+			"text": "$(li)$(thing)物品拾取$()：能否撿起地上的物品實體。按$(item)$(k:key.sneak)-$(k:key.use)$()或$(item)$(k:sns.key.pickup)$()切換。$(li)$(thing)物品銷毀$()：能否銷毀撿起的多餘物品。對欄位按$(item)$(k:key.sneak)-$(k:key.attack)$()切換。$(li)$(thing)物品欄互動$()：能否像 TFC 容器或原版收納袋一樣，點擊物品堆疊來放入、取出。$(li)$(thing)限制$()：可放入的物品類型。"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -87,7 +87,7 @@
 			"anchor": "tool_belt",
 			"title": "工具腰帶",
 			"item": "toolbelt:belt,toolbelt:pouch",
-			"text": "$(item)工具腰帶$()很特別。它一開始只有 2 個欄位，但可以用小袋升級到 9 個欄位。將它裝備在$(l:craftsmanship/clothing#curios)腰帶飾品欄$()後，按住$(item)$(k:key.toolbelt.open)$()即可在環狀選單中取用其中任何物品，非常適合在不同工具之間快速切換。"
+			"text": "$(item)工具腰帶$()很特別：一開始只有 2 格，可用小袋升級到 9 格。裝備在$(l:craftsmanship/clothing#curios)腰帶飾品欄$()後，按住$(item)$(k:key.toolbelt.open)$()即可從環狀選單取用其中物品，非常適合快速切換工具。"
 		},
 		{
 			"type": "patchouli:relations",

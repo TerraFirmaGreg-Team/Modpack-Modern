@@ -1,5 +1,4 @@
 {
-  "block.ftbquests.detector.player": "Player Detector",
   "block.ftbquests.detector.player.height": "高さ",
   "block.ftbquests.detector.player.radius": "半径",
   "block.ftbquests.screen.size": "容量",
@@ -27,7 +26,6 @@
   "ftbquests.task.ftbquests.fluid": "液体",
   "ftbquests.task.ftbquests.fluid.amount": "金額",
   "ftbquests.task.ftbquests.fluid.fluid": "液体",
-  "ftbquests.task.ftbquests.ic2_energy.text": "%d EU",
   "ftbquests.task.ftbquests.item": "アイテム",
   "ftbquests.task.ftbquests.item.ignore_damage": "ダメージ値を無視",
   "ftbquests.task.ftbquests.kill.entity": "エンティティ名",

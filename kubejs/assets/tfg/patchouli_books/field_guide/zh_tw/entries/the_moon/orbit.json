@@ -10,7 +10,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "上面其實沒什麼事可做，而且完全是選擇性的。但如果你基於某種原因想要一個虛空維度，或只是$(italic)非常$()喜歡高空跳傘，那這是個選擇。$(br2)記得帶點能抓住的東西，因為軌道上$(thing)沒有重力$()。$(br2)$(bold)小技巧：$()在配方條件中，軌道視同$(item)無塵室$()。"
+			"text": "上面其實沒什麼事可做，也完全可以不去。但如果你出於某種原因想要虛空維度，或$(italic)真的$()很愛高空跳傘，可以考慮。$(br2)記得帶點能抓住的東西，因為軌道上$(thing)沒有重力$()。$(br2)$(bold)小技巧：$()在配方條件中，軌道視同$(item)無塵室$()。"
 		},
 		{
 			"type": "patchouli:multiblock",
@@ -50,7 +50,7 @@
 			"type": "patchouli:spotlight",
 			"item": "ad_astra:zip_gun",
 			"anchor": "zip_gun",
-			"text": "噴射槍可以填充任何可呼吸的$(l:the_moon/the_moon#gases)壓縮氣體$()來噴出空氣，在低重力環境中推動你移動。如果你想在軌道上建造任何東西，這是必備工具！"
+			"text": "壓縮槍可以填充任何可呼吸的$(l:the_moon/the_moon#gases)壓縮氣體$()來噴出空氣，在低重力環境中推動你移動。如果你想在軌道上建造任何東西，這是必備工具！"
 		},
 		{
 			"type": "patchouli:relations",

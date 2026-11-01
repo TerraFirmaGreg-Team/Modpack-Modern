@@ -2633,7 +2633,7 @@
 		}
 		{
 			dependencies: ["70ABD1E3FC1CA672"]
-			description: ["{quests.extreme_voltage.higgs_emitter.title}"]
+			description: ["{quests.extreme_voltage.higgs_emitter.desc}"]
 			guide_page: "tfg:field_guide tfg:the_moon/the_moon 21"
 			id: "2FFC51987440B656"
 			shape: "heart"

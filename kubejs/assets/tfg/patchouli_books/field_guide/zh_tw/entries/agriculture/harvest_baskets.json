@@ -9,17 +9,17 @@
             "item": {
                 "tag": "tfg:harvester"
             },
-            "text": "專為身材矮小的人打造――$(thing)採收籃$()正是採摘果樹和果叢所需的工具。$(br)使用採收籃時，對$(l:the_world/wild_fruits#fruit_trees)果樹$()、$(l:the_world/wild_fruits#tall_bushes)果叢$()、$(l:agriculture/growing_crops#growing_grapes)葡萄棚架$()、$(l:agriculture/greenhouse#bonsai_planter)盆景種植盆$()、$(l:agriculture/greenhouse#trellis_planter)棚架種植盆$()或$(l:agriculture/greenhouse#hanging_planter)懸掛種植盆$()按下$(item)$(k:key.use)$()，$(thing)半徑 7 格$()內的所有方塊都會被採摘。"
+            "text": "專為矮個子打造――$(thing)採收籃$()正是採摘果樹和果叢的利器。$(br)手持採收籃對$(l:the_world/wild_fruits#fruit_trees)果樹$()、$(l:the_world/wild_fruits#tall_bushes)果叢$()、$(l:agriculture/growing_crops#growing_grapes)葡萄棚架$()、$(l:agriculture/greenhouse#bonsai_planter)盆景種植盆$()、$(l:agriculture/greenhouse#trellis_planter)棚架種植盆$()或$(l:agriculture/greenhouse#hanging_planter)懸掛種植盆$()按 $(item)$(k:key.use)$()，$(thing)半徑 7 格$()內的所有方塊都會被採摘。"
         },
         {
             "type": "patchouli:text",
-            "text": "普通採收籃的耐久度為 $(thing)128$()，而鋁製採收籃不會在使用過程受損。採收籃也可以被 $(thing)機械手$()等設備用來自動化採收。"
+            "text": "普通採收籃的耐久度為 $(thing)128$()，而鋁製採收籃不會在使用過程受損。採收籃也可以讓$(thing)機械手$()等裝置用來自動採收，過程中同樣會消耗耐久度。"
         },
         {
             "type": "patchouli:crafting",
             "title": "採收籃",
             "recipe": "tfg:shaped/harvest_basket_from_papyrus",
-            "text": "$(item)採收籃$()可用浸泡後的紙莎紙或硬木製作。"
+            "text": "$(item)採收籃$()可用浸泡過的紙莎草或硬木製作。"
         },
         {
             "type": "patchouli:relations",

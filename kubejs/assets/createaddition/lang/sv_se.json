@@ -66,5 +66,7 @@
 	"statusbar.createaddition.wire.long": "Tråden är för lång",
 	"statusbar.createaddition.wire.no_connection": "Ingen koppling finns här",
 	"statusbar.createaddition.wire.removed": "Tråd borttagen",
-	"statusbar.createaddition.wire.requires_high_current": "[NEEDS_TRANSLATION] This connection requires a high current wire"
+	"statusbar.createaddition.wire.requires_high_current": "[NEEDS_TRANSLATION] This connection requires a high current wire",
+	"block.createaddition.creative_energy": "Kreativ Generator",
+	"block.createaddition.creative_energy.tooltip.summary": "Genererar en oändlig mängd energi _fe_."
 }

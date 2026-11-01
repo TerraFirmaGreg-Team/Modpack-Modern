@@ -358,6 +358,8 @@
     "tfg.tooltip.greenhouse.minimum_tier": "Min. Tier: ",
 
     "tfg.item.electric_flask.tooltip_1": "An electrical flask that will automatically drink when needed.",
-    "tfg.item.electric_flask.tooltip_2": "§9Consumes: §f1000 EU per drink"
+    "tfg.item.electric_flask.tooltip_2": "§9Consumes: §f1000 EU per drink",
+
+    "tfg.tooltip.campfire": "Cosmetic only usable as an infinite source of light"
 
 }

@@ -43,7 +43,7 @@
 			"scale": 0.6,
 			"name": "草本果凍怪",
 			"anchor": "herbal",
-			"text": "$(thing)草本$()果凍怪會生成在地球上溫暖的森林中，$(l:the_world/climate#temperature)溫度$()介於 1-10°C，且$(l:the_world/climate#rainfall)降雨量$()至少 150mm。牠們會產出$(thing)草本黏液球$()。"
+			"text": "$(thing)草本$()果凍怪生成於地球溫暖的森林，$(l:the_world/climate#temperature)溫度$()介於 1-10°C，且$(l:the_world/climate#rainfall)降雨量$()至少 150mm，會產出$(thing)草本黏液球$()。"
 		},
 		{
 			"type": "patchouli:entity",
@@ -51,7 +51,7 @@
 			"scale": 0.6,
 			"name": "磷光果凍怪",
 			"anchor": "phosphorum",
-			"text": "$(thing)磷光$()果凍怪會生成在地球上寒冷的森林中，$(l:the_world/climate#temperature)溫度$()介於 -10-0°C，且$(l:the_world/climate#rainfall)降雨量$()至少 150mm。牠們會產出$(thing)磷光黏液球$()，另外也會吃$(thing)腐肉$()。"
+			"text": "$(thing)磷光$()果凍怪生成於地球寒冷的森林，$(l:the_world/climate#temperature)溫度$()介於 -10-0°C，且$(l:the_world/climate#rainfall)降雨量$()至少 150mm，會產出$(thing)磷光黏液球$()，也會吃$(thing)腐肉$()。"
 		},
 		{
 			"type": "patchouli:entity",
@@ -59,7 +59,7 @@
 			"scale": 0.6,
 			"name": "岩石果凍怪",
 			"anchor": "rock",
-			"text": "$(thing)岩石$()果凍怪很少在地球的山地生態域洞穴中生成。牠們目前沒有任何作用。"
+			"text": "$(thing)岩石$()果凍怪偶爾生成於地球山地生態域的洞穴，目前沒有任何作用。"
 		},
 		{
 			"type": "patchouli:relations",

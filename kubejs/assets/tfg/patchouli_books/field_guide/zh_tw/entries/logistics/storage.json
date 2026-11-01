@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)物品儲存$()$(li2)$(l:logistics/storage#chests)儲物箱$()$(li2)$(l:logistics/storage#crates)板條箱$()$(li2)$(l:logistics/storage#vaults)保險庫$()$(li2)$(l:logistics/storage#super_chests)超級箱$()$(li)$(bold)物品與流體儲存$()$(li2)$(l:logistics/storage#ae2)ME 儲存$()$(li2)$(l:logistics/storage#kegs)酒桶$()$(li)$(bold)流體儲存$()$(li2)$(l:logistics/storage#barrels)木桶$()$(li2)$(l:logistics/storage#drums)桶$()$(li2)$(l:logistics/storage#fluid_tanks)流體儲罐$()$(li2)$(l:logistics/storage#multiblock_tanks)多方塊儲罐$()$(li2)$(l:logistics/storage#super_tanks)超級缸$()",
+            "text": "$(li)$(bold)物品儲存$()$(li2)$(l:logistics/storage#chests)儲物箱$()$(li2)$(l:logistics/storage#crates)板條箱$()$(li2)$(l:logistics/storage#vaults)保險庫$()$(li2)$(l:logistics/storage#super_chests)超級箱$()$(li)$(bold)物品與流體儲存$()$(li2)$(l:logistics/storage#ae2)ME 儲存$()$(li2)$(l:logistics/storage#kegs)酒桶$()$(li)$(bold)流體儲存$()$(li2)$(l:logistics/storage#barrels)大桶$()$(li2)$(l:logistics/storage#drums)桶$()$(li2)$(l:logistics/storage#fluid_tanks)流體儲罐$()$(li2)$(l:logistics/storage#multiblock_tanks)多方塊儲罐$()$(li2)$(l:logistics/storage#super_tanks)超級缸$()",
             "title": "索引",
             "anchor": "index"
         },
@@ -13,14 +13,14 @@
             "type": "patchouli:text",
             "title": "簡介",
             "anchor": "intro",
-            "text": "在$(tfg)中，你會累積大量的物品、材料和流體。建立龐大的儲存系統來整理所有東西非常重要。儲存最重要的兩個面向是$(thing)容量$()和$(thing)限制$()。關於隨身的物品欄管理，你應該閱讀$(l:logistics/personal_storage)個人儲物$()。"
+            "text": "在$(tfg)中，你會累積大量物品、材料和流體，因此需要建立龐大的儲存系統來整理。儲存最重要的兩個面向是$(thing)容量$()和$(thing)限制$()。隨身物品欄管理請參閱$(l:logistics/personal_storage)個人儲物$()。"
         },
         {
             "type": "patchouli:spotlight",
             "title": "儲物箱",
             "anchor": "chests",
             "item": "tag:forge:chests",
-            "text": "儲物箱可以存放 18 個物品，大型儲物箱可以存放 36 個。儲物箱可以容納最大到$(l:game_mechanics/size_and_weight)大$()的物品。$(br)如果儲物箱裡有$(thing)食物$()，就會引來老鼠。所以最好把它們存放在$(item)小缸$()中。"
+            "text": "儲物箱可存放 18 格物品，大型儲物箱可存放 36 格，可容納最大到$(l:game_mechanics/size_and_weight)大$()的物品。$(br)儲物箱裡有$(thing)食物$()會引來老鼠，最好存放在$(item)小缸$()中。"
         },
         {
             "type": "patchouli:multiblock",
@@ -45,7 +45,7 @@
             "title": "板條箱",
             "anchor": "crates",
             "item": "tag:gtceu:crates",
-            "text": "在儲物方面，GregTech(格雷科技) 有可以容納任何尺寸物品的$(item)板條箱$()，等級越高容量越大，從 27 到 144 個欄位不等。$(br)板條箱支援$(thing)物品篩選器$()和$(thing)腐爛物銷毀覆蓋板$()等物流覆蓋板。$(br)你甚至可以用$(item)膠帶$()包住板條箱，讓它被破壞時保留內容物，方便運送大量物品。"
+            "text": "格雷科技的$(item)板條箱$()可容納任何尺寸的物品，等級越高容量越大，從 27 到 144 格不等。$(br)板條箱支援$(thing)物品篩選器$()、$(thing)腐爛物銷毀覆蓋板$()等物流覆蓋板。$(br)還能用$(item)膠帶$()包住板條箱，破壞時保留內容物，方便運送大量物品。"
         },
         {
             "type": "patchouli:multiblock",
@@ -70,7 +70,7 @@
             "title": "保險庫",
             "anchor": "vaults",
             "item": "create:item_vault,create_connected:item_silo",
-            "text": "機械動力的$(item)保險庫$()是集中存放大量物品，或為$(thing)動態結構$()增加儲存空間的好方法。$(br)保險庫可以組成大型立體結構，每個保險庫增加 20 個欄位。你無法手動放入或取出保險庫中的物品，需要使用漏斗等物品物流方式。"
+            "text": "機械動力的$(item)保險庫$()很適合集中存放大量物品，或為$(thing)動態結構$()增加儲存空間。$(br)保險庫可組成大型立體結構，每個增加 20 格。無法手動放入或取出物品，需要使用漏斗等物流方式。"
         },
         {
             "type": "tfg:multimultiblock",
@@ -151,7 +151,7 @@
             "title": "超級箱",
             "anchor": "super_chests",
             "item": "tag:gtceu:super_chests",
-            "text": "超級箱和量子箱是存放數量驚人的單一種類物品的最佳方式。箱子可容納的物品數量隨等級增加，從 10,000 到 1,024,000,000 個不等。超級箱還內建物品銷毀、鎖定和自動輸出選項。"
+            "text": "超級箱和量子箱是存放大量單一物品的最佳方式，容量隨等級從 10,000 到 1,024,000,000 個不等。超級箱還內建物品銷毀、鎖定和自動輸出選項。"
         },
         {
             "type": "patchouli:multiblock",
@@ -176,7 +176,7 @@
             "title": "ME 儲存",
             "anchor": "ae2",
             "item": "ae2:drive",
-            "text": "Applied Energistics(應用能源) 的$(item)驅動器$()和$(item)儲存元件$()可以將你的儲存數位化，建立功能強大且高密度的物流與合成網路。連接$(item)ME 控制器$()和$(thing)終端機$()即可查看其中的物品。"
+            "text": "應用能源的$(item)驅動器$()和$(item)儲存元件$()能將儲存數位化，建立強大且高密度的物流與合成網路。連接$(item)ME 控制器$()和$(thing)終端機$()即可查看其中物品。"
         },
         {
             "type": "patchouli:multiblock",
@@ -201,7 +201,7 @@
             "title": "酒桶",
             "anchor": "kegs",
             "item": "tag:firmalife:big_barrels",
-            "text": "$(item)酒桶$()具有同時存放大量物品$(italics)和$()流體的獨特能力。$(br)酒桶可以裝木桶能裝的任何流體，最多 80,000 mB，並可以存放最多 36 組$(l:game_mechanics/size_and_weight)大$()物品。$(br2)酒桶無法像木桶一樣處理配方或熟成酒類。"
+            "text": "$(item)酒桶$()能同時存放大量物品$(italics)和$()流體。$(br)酒桶可裝大桶能裝的任何流體，最多 80,000 mB，並可存放最多 36 組$(l:game_mechanics/size_and_weight)大$()物品。$(br2)酒桶無法像大桶一樣處理配方或熟成酒類。"
         },
         {
             "type": "patchouli:multiblock",
@@ -232,15 +232,15 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "木桶",
+            "title": "大桶",
             "anchor": "barrels",
             "item": "tag:tfc:barrels",
-            "text": "$(l:craftsmanship/barrels)木桶$()不只能用於配方。它們是儲存大量流體非常便宜的方式，每個木桶最多可以裝 10,000 mB。$(br)將木桶橫放時，它可以從水龍頭將流體滴入下方的容器，以穩定的速度自動輸出。$(br)你可以背著裝滿的木桶來運送其內容物。"
+            "text": "$(l:craftsmanship/barrels)大桶$()不只能用於配方，也是很便宜的大量流體儲存方式，每個最多 10,000 mB。$(br)橫放時，大桶會從水龍頭將流體滴入下方容器，穩定地自動輸出。$(br)可以背著裝滿的大桶來運送內容物。"
         },
         {
             "type": "patchouli:multiblock",
             "enable_visualize": false,
-            "text": "$(bold)提示$()：木桶在打開並暴露於天空下時可以收集雨水。",
+            "text": "$(bold)提示$()：大桶在打開並暴露於天空下時可以收集雨水。",
             "multiblock": {
                 "pattern": [
                     [
@@ -260,7 +260,7 @@
             "title": "桶",
             "anchor": "drums",
             "item": "tag:gtceu:drums",
-            "text": "$(item)桶$()很適合用來儲存和攜帶流體。它們可以裝大量的單一種類流體，等級越高容量越大，從 32,000 到 1,024,000 mB 不等。$(br2)桶被破壞時會保留其中的流體，非常適合用來搬運流體。$(br2)手持$(thing)軟錘$()或$(thing)螺絲起子$()對桶按下$(item)$(k:key.use)$()，可以讓它自動從底面輸出流體。"
+            "text": "$(item)桶$()很適合儲存和攜帶流體，可裝大量單一流體，等級越高容量越大，從 32,000 到 1,024,000 mB 不等。$(br2)桶被破壞時會保留流體，非常適合搬運。$(br2)手持$(thing)軟錘$()或$(thing)螺絲起子$()對桶按$(item)$(k:key.use)$()，可讓它自動從底面輸出流體。"
         },
         {
             "type": "patchouli:multiblock",
@@ -285,7 +285,7 @@
             "title": "流體儲罐",
             "anchor": "fluid_tanks",
             "item": "create:fluid_tank,create_connected:fluid_vessel,fluidlogistics:multi_fluid_tank",
-            "text": "$(item)流體儲罐$()可以視為$(l:logistics/storage#vaults)保險庫$()的流體版本。每個儲罐可以裝 32,000 mB，並可以組成結構來擴充容量。$(br2)$(item)多流體儲罐$()可以同時裝多種流體，但無法手動互動。"
+            "text": "$(item)流體儲罐$()可視為流體版的$(l:logistics/storage#vaults)保險庫$()。每個儲罐可裝 32,000 mB，並可組成結構擴充容量。$(br2)$(item)多流體儲罐$()可同時裝多種流體，但無法手動互動。"
         },
         {
             "type": "tfg:multimultiblock",
@@ -422,7 +422,7 @@
             "title": "多方塊儲罐",
             "anchor": "multiblock_tanks",
             "item": "gtceu:wooden_multiblock_tank,gtceu:bronze_multiblock_tank,gtceu:steel_multiblock_tank",
-            "text": "$(item)多方塊儲罐$()是專門用來儲存大量流體的結構。每種類型最多可以有兩個閥門，容量隨等級增加。$(li)$(bold)木製儲罐$()：容量 1,000,000 mB$(li)$(bold)青銅儲罐$()：容量 4,000,000 mB$(li)$(bold)鋼製儲罐$()：容量 8,000,000 mB"
+            "text": "$(item)多方塊儲罐$()是專門儲存大量流體的結構，每種最多兩個閥門，容量隨等級增加。$(li)$(bold)木製儲罐$()：容量 1,000,000 mB$(li)$(bold)青銅儲罐$()：容量 4,000,000 mB$(li)$(bold)鋼製儲罐$()：容量 8,000,000 mB"
         },
         {
             "type": "tfg:multimultiblock",
@@ -540,7 +540,7 @@
             "title": "超級缸",
             "anchor": "super_tanks",
             "item": "tag:gtceu:super_tanks",
-            "text": "超級缸和量子儲罐的運作方式與對應的$(l:logistics/storage#super_chests)超級箱$()類似。它們可以儲存數量驚人的單一種類流體――從 1,000,000 到 1,024,000,000 mb 不等――隨等級增加。$(br)超級缸有自動輸出、銷毀和鎖定的選項。"
+            "text": "超級缸和量子缸的運作方式與$(l:logistics/storage#super_chests)超級箱$()類似，能儲存大量單一流體，容量隨等級從 1,000,000 到 1,024,000,000 mb 不等。$(br)超級缸有自動輸出、銷毀和鎖定選項。"
         },
         {
             "type": "patchouli:multiblock",

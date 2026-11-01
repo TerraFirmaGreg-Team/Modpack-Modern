@@ -1,3 +1,7 @@
 {
-	"block.phoenix_chromatic_codes.phoenix_enriched_tritanium_casing": "§wExtremely Heat-Stable Casing"
+	"block.phoenix_chromatic_codes.phoenix_enriched_tritanium_casing": "§wExtremely Heat-Stable Casing",
+	"phoenix_chromatic_codes.test.wave": "§wThis is a wave effect using section symbol.\n hello",
+	"phoenix_chromatic_codes.test.pulse": "&pThis is a pulse effect using ampersand.",
+	"phoenix_chromatic_codes.test.rainbow": "§[rainbow]This is a named rainbow effect.",
+	"phoenix_chromatic_codes.test.sunset": "&[sunset]This is a named sunset effect."
 }
