@@ -36,6 +36,7 @@
 	"deafission.machine.material_holder.tooltip": "Хранит и содержит входящий ингредиент для рецептов ядерных реакторов, работающих на основе тепла и излучения.",
 	"deafission.machine.redstone_port.tooltip": "Для смены режима используйте гаечный ключ",
 	"deafission.overlay.hb_capacity": "Емкость: %s HU/°",
+	"deafission.overlay.hb_energy": "%s HU",
 	"deafission.overlay.hb_load": "Вход: %s%% // %s%%",
 	"deafission.overlay.hb_temp": "Температура: %s° / %s°",
 	"deafission.recipe.coolant_heat_per_tick": "Удельный нагрев: -%s HU/t/°",

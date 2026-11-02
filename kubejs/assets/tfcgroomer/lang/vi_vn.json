@@ -1,0 +1,18 @@
+{
+	"block.tfcgroomer.bismuth_bronze_grooming_station": "Máng cho ăn đồng bismuth",
+	"block.tfcgroomer.black_bronze_grooming_station": "Máng cho ăn đồng đen",
+	"block.tfcgroomer.black_steel_grooming_station": "Máng cho ăn thép đen",
+	"block.tfcgroomer.blue_steel_grooming_station": "Máng cho ăn thép xanh",
+	"block.tfcgroomer.bronze_grooming_station": "Máng cho ăn đồng thau",
+	"block.tfcgroomer.copper_grooming_station": "Máng cho ăn đồng",
+	"block.tfcgroomer.grooming_station": "Trạm chăm sóc vật nuôi",
+	"block.tfcgroomer.red_steel_grooming_station": "Máng cho ăn thép đỏ",
+	"block.tfcgroomer.steel_grooming_station": "Máng cho ăn thép",
+	"block.tfcgroomer.wrought_iron_grooming_station": "Máng cho ăn sắt",
+	"config.jade.plugin_tfcgroomer.grooming_station": "Trạm chăm sóc vật nuôi",
+	"gui.tfcgroomer.enable_breeding": "Đang bật giao phối tự động",
+	"tfcgroomer.grooming_station.range": "Phạm Vi: %s",
+	"tfcgroomer.tooltip.breedDisabled": "Không cho phép giao phối tự động",
+	"tfcgroomer.tooltip.breedEnabled": "Cho phép giao phối tự động",
+	"tfcgroomer.tooltip.toggleBreeding": "Bật/tắt cho phép giao phối tự động"
+}

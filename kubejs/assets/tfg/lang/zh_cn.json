@@ -1,0 +1,23 @@
+{
+	"tfg.machine.oxygen_distributor.status.restoring": "恢复中……",
+	"tfg.machine.oxygen_distributor.status.too_wide": "房间过宽",
+	"tfg.machine.oxygen_distributor.energy": "消耗 %s EU/t",
+	"tfg.machine.oxygen_distributor.idle": "闲置",
+	"tfg.machine.oxygen_distributor.status.chunk_unloaded": "房间已卸载",
+	"tfg.machine.oxygen_distributor.active": "工作中",
+	"tfg.machine.oxygen_distributor.status.breached": "已泄漏",
+	"tfg.machine.oxygen_distributor.status.scanning": "扫描中……",
+	"tfg.machine.oxygen_distributor.status.no_energy": "等待供能",
+	"block.tfg.oxygen_distributor": "氧气分配器",
+	"tfg.machine.oxygen_distributor.status.scan_limit": "房间过大，无法扫描",
+	"tfg.machine.oxygen_distributor.find_leak": "追踪泄漏",
+	"block.tfg.higgs_emitter": "希格斯发射器",
+	"tfg.machine.oxygen_distributor.size": "房间大小：%s 个方块",
+	"tfg.machine.oxygen_distributor.fill_suit": "补充宇航服氧气",
+	"tfg.machine.higgs_emitter.radius": "半径：%s",
+	"tfg.machine.oxygen_distributor.status.sealed": "已密封",
+	"tfg.machine.oxygen_distributor.consumption": "消耗 %s",
+	"tfg.machine.oxygen_distributor.status": "状态：",
+	"tfg.machine.heat_pump.status.blocked": "排气口受阻——热泵背面必须朝向开放空间",
+	"block.tfg.heat_pump": "热泵"
+}

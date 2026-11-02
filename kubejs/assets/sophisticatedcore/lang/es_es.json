@@ -281,8 +281,5 @@
 	"key.sophisticatedcore.transfer_to_storage": "Transferir al almacenamiento",
 	"upgrade_group.sophisticatedcore.cooking_upgrades": "Mejoras de horno",
 	"upgrade_group.sophisticatedcore.jukebox_upgrades": "Mejoras de tocadiscos",
-	"upgrade_group.sophisticatedcore.stack_upgrades": "Mejoras de stack",
-	"item.sophisticatedcore.stack_upgrade_conversion.tooltip": "Haz clic derecho en una mejora de stack instalada para convertirla",
-	"gui.sophisticatedcore.buttons.browse_results": "Abrir lista de resultados ampliada con búsqueda",
-	"gui.sophisticatedcore.settings.buttons.z_offset_detail": "Fuera = Clic izquierdo\nDentro = Clic derecho"
+	"upgrade_group.sophisticatedcore.stack_upgrades": "Mejoras de stack"
 }
