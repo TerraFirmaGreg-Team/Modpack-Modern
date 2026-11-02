@@ -4,7 +4,6 @@
 	"additionalplacements.stairs.connections_type.no_vertical_connections": "Conexiones verticales no permitidas",
 	"commands.ap_stairs_state_debug.wrong_block": "%s no es un bloque válido, debe ser una escalera con estados adicionales.",
 	"key.additionalplacements.placement_toggle": "Alternar lógica de colocación",
-	"key.categories.additionalplacements": "Additional Placements",
 	"msg.additionalplacements.disconnected": "Conflicto en configuración de Additional Placements",
 	"msg.additionalplacements.errors.client": "El lado del cliente negó:",
 	"msg.additionalplacements.errors.server": "El lado del servidor negó:",

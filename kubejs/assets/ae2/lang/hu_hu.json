@@ -271,7 +271,6 @@
 	"gui.ae2.Facade": "Fedő (%s)",
 	"gui.ae2.FacadeCrafting": "Fedő barkácsolás",
 	"gui.ae2.Fluids": "Folyadékok",
-	"gui.ae2.Fluix": "Fluix",
 	"gui.ae2.FormationPlane": "Formációs sík",
 	"gui.ae2.FromStorage": "Elérhető: %s",
 	"gui.ae2.Fuzzy": "Megkülönböztető",
@@ -321,7 +320,6 @@
 	"gui.ae2.NumberGreaterThanMaxValue": "Kérlek adj meg egy számot ami kisebb vagy egyenlő mint %s",
 	"gui.ae2.NumberLessThanMinValue": "Kérlek adj meg egy számot ami nagyobb vagy egyenlő mint %s",
 	"gui.ae2.NumberNonInteger": "Egész számnak kell lennie",
-	"gui.ae2.OCTunnel": "OpenComputers",
 	"gui.ae2.Of": "-ból/-ből",
 	"gui.ae2.OfSecondOutput": "%1$d%% esély másodlagos termékre.",
 	"gui.ae2.Or": "vagy",
@@ -433,9 +431,6 @@
 	"gui.ae2.Types": "Típus",
 	"gui.ae2.Unattached": "Nincs összekötve",
 	"gui.ae2.Unformatted": "Formázatlan",
-	"gui.ae2.units.appliedenergistics": "AE",
-	"gui.ae2.units.fe": "FE",
-	"gui.ae2.units.rf": "RF",
 	"gui.ae2.Unlinked": "Nincs összekötve",
 	"gui.ae2.UpgradeToolbelt": "Eszközöv fejlesztés",
 	"gui.ae2.VibrationChamber": "Vibrációs kamra",
@@ -850,7 +845,6 @@
 	"item.ae2.yellow_paint_ball": "Sárga festékgömb",
 	"item.ae2.yellow_smart_cable": "Sárga ME okos kábel",
 	"item.ae2.yellow_smart_dense_cable": "Sárga sűrű ME okos kábel",
-	"key.ae2.category": "Applied Energistics 2",
 	"key.ae2.guide": "Útmutató megnyitása",
 	"key.ae2.portable_fluid_cell": "Hordozható folyadékcella megnyitása",
 	"key.ae2.portable_item_cell": "Hordozható tárgycella megnyitása",
@@ -901,5 +895,6 @@
 	"waila.ae2.Showing": "Mutatott tárgy",
 	"waila.ae2.Stored": "Tárolt: %s / %s",
 	"waila.ae2.Suppressed": "Elnyomva",
-	"waila.ae2.Unlocked": "Feloldva"
+	"waila.ae2.Unlocked": "Feloldva",
+	"dimension.ae2.spatial_storage": "Térbeli tároló"
 }

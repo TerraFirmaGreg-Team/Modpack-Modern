@@ -3,6 +3,7 @@
 ### Changes
 - Ceramic Circuit Board have different tiers so player can understand easily which one they can craft @TomPlop
 - Change Butraldehyde circuit to 5 @TomPlop
+- Lower the energy cost of Garnet-Yttrium Line @TomPlop
 ### Bug fixes
 
 ## [0.13.17] - 26-10-2026
