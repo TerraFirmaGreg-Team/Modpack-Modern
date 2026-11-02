@@ -20,6 +20,9 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+env:
+  PREFIX: modern
+
 jobs:
   info:
     name: "[🖥️] Project Info"
@@ -184,16 +187,31 @@ jobs:
       - name: Live export
         uses: TerraFirmaGreg-Team/Actions/modpack/export@main
         with:
-          platform: modern
+          platform: ${{ env.PREFIX }}
           version: ${{ needs.info.outputs.project_version }}
           mc_version: ${{ needs.info.outputs.mc_version }}
           loader_type: ${{ needs.info.outputs.loader_type }}
           pack_artifact: ${{ needs.info.outputs.project_full_name }}-multimc
-          dump_s3_endpoint: ${{ secrets.DUMP_S3_ENDPOINT }}
-          dump_s3_bucket: ${{ secrets.DUMP_S3_BUCKET }}
-          dump_s3_prefix: ${{ secrets.DUMP_S3_PREFIX }}
-          dump_s3_region: ${{ secrets.DUMP_S3_REGION }}
-          dump_s3_access_key: ${{ secrets.DUMP_S3_ACCESS_KEY }}
-          dump_s3_secret_key: ${{ secrets.DUMP_S3_SECRET_KEY }}
+          dump_s3_endpoint: ${{ secrets.CLOUDFLARE_R2_ENDPOINT }}
+          dump_s3_bucket: ${{ vars.DUMP_S3_BUCKET }}
+          dump_s3_prefix: ${{ env.PREFIX }}
+          dump_s3_region: ${{ vars.DUMP_S3_REGION }}
+          dump_s3_access_key: ${{ secrets.CLOUDFLARE_R2_ACCESS_KEY }}
+          dump_s3_secret_key: ${{ secrets.CLOUDFLARE_R2_SECRET_KEY }}
+
+  changelog:
+    name: "[📰] Wiki Changelog"
+    needs: [release]
+    if: ${{ always() && (needs.release.result == 'success' || github.event_name == 'workflow_dispatch') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sync wiki changelog
+        uses: TerraFirmaGreg-Team/Actions/modpack/changelog@main
+        with:
+          pack: ${{ env.PREFIX }}
+          repo: ${{ github.repository }}
+          tag: ${{ needs.release.outputs.github-tag }}
+          app_id: ${{ secrets.APP_ID }}
+          app_private_key: ${{ secrets.APP_PRIVATE_KEY }}
 
 
