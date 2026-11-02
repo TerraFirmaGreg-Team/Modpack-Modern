@@ -190,5 +190,7 @@
 	"wireless_advanced.mode.add": "§b添加",
 	"wireless_advanced.mode.swapped": "切换模式为: %s",
 	"wireless_advanced.mode.use": "§d使用",
-	"wireless_advanced.port_list": "已存储的连接(%s/%s)："
+	"wireless_advanced.port_list": "已存储的连接(%s/%s)：",
+	"wireless_advanced.cleared": "清除所有已保存的连接",
+	"key.ae2.wireless_ex_crafting_terminal": "打开无线合成终端"
 }

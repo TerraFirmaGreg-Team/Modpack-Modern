@@ -210,7 +210,7 @@
                     "Y": "tfc:firepit[lit=true]"
                 }
             },
-            "text": "毛線用來吊掛要$(thing)煙燻$()的物品，兩側都需要支撐方塊。手持物品對毛線按下$(item)$(k:key.use)$()，最多可以掛上 8 個物品進行煙燻。",
+            "text": "毛線用來吊掛要$(thing)煙燻$()的物品，兩側都需要支撐方塊。手持物品對毛線按 $(item)$(k:key.use)$() 即可掛上，最多 8 個。",
             "enable_visualize": false
         },
         {
@@ -248,7 +248,7 @@
             "type": "patchouli:text",
             "anchor": "drying",
             "title": "乾燥",
-            "text": "$(thing)乾燥墊$()用來乾燥物品，以破壞$(thing)果樹$()樹葉取得的$(thing)果樹葉$()製成。將乾燥墊放在陽光下，按 $(item)$(k:key.use)$() 放入物品即可。下雨時乾燥過程必須重新開始。有些食物――例如水果――會獲得修正值 0.8 的$(7)$(bold)乾燥$()特性。"
+            "text": "$(thing)乾燥墊$()用來乾燥物品，以破壞$(thing)果樹$()樹葉取得的$(thing)果樹葉$()製成。將乾燥墊放在陽光下，按 $(item)$(k:key.use)$() 放入物品即可。下雨時乾燥過程必須重新開始。有些食物(例如水果)會獲得修正值 0.8 的$(7)$(bold)乾燥$()特性。"
         },
         {
             "type": "patchouli:text",
@@ -453,7 +453,7 @@
             "anchor": "refrigerator",
             "title": "冰箱",
             "item": "tfg:mv_food_refrigerator,tfg:hv_food_refrigerator,tfg:ev_food_refrigerator,tfg:iv_food_refrigerator",
-            "text": "冰箱由$(tfg_short)新增，消耗$(2)EU$()提供修正值 0.125 的$(3)$(bold)冷藏中$()特性。$(br)更高等級的冰箱不影響保存效果――只會增加儲存空間。冰箱也能合併過期日期，把食物堆疊在一起。"
+            "text": "冰箱由$(tfg_short)新增，消耗$(2)EU$()提供修正值 0.125 的$(3)$(bold)冷藏中$()特性。$(br)更高等級的冰箱不影響保存效果，只會增加儲存空間。冰箱也能合併過期日期，把食物堆疊在一起。"
         },
         {
             "type": "patchouli:spotlight",

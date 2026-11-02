@@ -7,7 +7,7 @@
             "type": "patchouli:text",
             "title": "索引",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:cooking/food_and_water#basics)基礎$()$(li)$(bold)$(l:cooking/food_and_water#thirst)口渴$()$(li)$(bold)$(l:cooking/food_and_water#nutrition_screen)營養介面$()$(li)$(bold)$(l:cooking/food_and_water#nutrients)養分$()$(li2)$(l:cooking/food_and_water#fruit)水果$()$(li2)$(l:cooking/food_and_water#vegetables)蔬菜$()$(li2)$(l:cooking/food_and_water#protein)蛋白質$()$(li2)$(l:cooking/food_and_water#grain)穀物$()$(li2)$(l:cooking/food_and_water#dairy)乳製品$()$(li)$(bold)$(l:cooking/food_and_water#contaminants)污染物$()$(li2)$(l:cooking/food_and_water#toxins)毒素$()$(li2)$(l:cooking/food_and_water#parasites)寄生蟲$()$(li2)$(l:cooking/food_and_water#microplastics)微塑膠$()"
+            "text": "$(li)$(bold)$(l:cooking/food_and_water#basics)基礎$()$(li)$(bold)$(l:cooking/food_and_water#thirst)口渴$()$(li)$(bold)$(l:cooking/food_and_water#nutrition_screen)營養介面$()$(li)$(bold)$(l:cooking/food_and_water#nutrients)養分$()$(li2)$(l:cooking/food_and_water#fruit)水果$()$(li2)$(l:cooking/food_and_water#vegetables)蔬菜$()$(li2)$(l:cooking/food_and_water#protein)蛋白質$()$(li2)$(l:cooking/food_and_water#grain)穀物$()$(li2)$(l:cooking/food_and_water#dairy)乳製品$()$(li)$(bold)$(l:cooking/food_and_water#contaminants)汙染物$()$(li2)$(l:cooking/food_and_water#toxins)毒素$()$(li2)$(l:cooking/food_and_water#parasites)寄生蟲$()$(li2)$(l:cooking/food_and_water#microplastics)微塑膠$()"
         },
         {
             "type": "patchouli:text",
@@ -17,7 +17,7 @@
             "type": "patchouli:text",
             "title": "基礎",
             "anchor": "basics",
-            "text": "在$(tfg)中，你不只要管理飢餓，還要管理口渴。飢餓的運作和原版類似，大多數食物會恢復約五分之一的飢餓條，有些則少一點，例如$(thing)香蒲根$()。進食也會恢復$(thing)飽和度$()，可以理解為飽足程度。食物或水耗盡會導致行動遲緩並受到傷害。死亡不會重置養分或污染物。"
+            "text": "在$(tfg)中，你不只要管理飢餓，還要管理口渴。飢餓的運作和原版類似，大多數食物會恢復約五分之一的飢餓條，有些則少一點，例如$(thing)香蒲根$()。進食也會恢復$(thing)飽和度$()，可以理解為飽足程度。食物或水耗盡會導致行動遲緩並受到傷害。死亡不會重置養分或汙染物。"
         },
         {
             "type": "patchouli:text",
@@ -29,7 +29,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "食物的提示框可能看起來像這樣：$(br2)$(bold)橘子$()$(br)  $(2)$(bold)過期時間：1004 年 7 月 6 日 11:59(1 個月又 1 天後)$()$(br)  $(8)營養：$(br)  - 飽和度：2%$(br)  - 水分：10%$(br)$(a)  - 水果：0.5"
+            "text": "食物提示框範例：$(br2)$(bold)橘子$()$(br)  $(2)$(bold)過期時間：1004 年 7 月 6 日 11:59(1 個月又 1 天後)$()$(br)  $(8)營養：$(br)  - 飽和度：2%$(br)  - 水分：10%$(br)$(a)  - 水果：0.5"
         },
         {
             "type": "patchouli:text",
@@ -75,7 +75,7 @@
         {
             "type": "patchouli:text",
             "anchor": "nutrition_screen",
-            "text": "在$(tfg)中，營養介面會顯示大量健康資訊。$(li)主圖表顯示你的$(l:cooking/food_and_water#nutrients)養分$()。$(li)側邊圖表顯示你的$(l:cooking/food_and_water#contaminants)污染物$()。$(li)表格顯示你的健康數據。$()$(li)可切換的檢視畫面，用來查看隊伍成員的營養狀態。$()$(br)游標移到介面元素上並$(item)按住 $(k:key.sneak)$()可查看更多資訊。$()",
+            "text": "在$(tfg)中，營養介面會顯示大量健康資訊。$(li)主圖表顯示你的$(l:cooking/food_and_water#nutrients)養分$()。$(li)側邊圖表顯示你的$(l:cooking/food_and_water#contaminants)汙染物$()。$(li)表格顯示你的健康數據。$()$(li)可切換的檢視畫面，用來查看隊伍成員的營養狀態。$()$(br)游標移到介面元素上並$(item)按住 $(k:key.sneak)$()可查看更多資訊。$()",
             "title": "營養介面"
         },
         {
@@ -138,8 +138,8 @@
         {
             "type": "patchouli:text",
             "anchor": "contaminants",
-            "text": "除了養分，$(tfg)還新增了污染物，共三種，都可能從食物中攝取：$(l)$(d)毒素$()$()、$(l)$(4)寄生蟲$()$()和$(l)$(3)微塑膠$()$()。污染物會傳入餐點，並在玩家體內累積。",
-            "title": "污染物"
+            "text": "除了養分，$(tfg)還新增了汙染物，共三種，都可能從食物中攝取：$(l)$(d)毒素$()$()、$(l)$(4)寄生蟲$()$()和$(l)$(3)微塑膠$()$()。汙染物會傳入餐點，並在玩家體內累積。",
+            "title": "汙染物"
         },
         {
             "title": "毒素",
@@ -166,7 +166,7 @@
         {
             "type": "patchouli:text",
             "anchor": "transient_effects",
-            "text": "$(tfg)也新增了$(item)短暫效果$()，用來將材料的增益/減益轉移到餐點中。短暫效果可以組合並食用，但不會在玩家體內累積――食用時立即生效。$(br)效果強度取決於養分數值，但每種效果的計算方式不盡相同。$()",
+            "text": "$(tfg)也新增了$(item)短暫效果$()，用來將材料的增益/減益轉移到餐點中。短暫效果可以組合並食用，但不會在玩家體內累積，食用時立即生效。$(br)效果強度取決於養分數值，但每種效果的計算方式不盡相同。$()",
             "title": "短暫效果"
         },
         {

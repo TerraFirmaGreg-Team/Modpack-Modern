@@ -24,7 +24,7 @@
                 }
             },
             "name": "原木堆",
-            "text": "原木堆下方必須有實心方塊才能放置。它們非常易燃。",
+            "text": "原木堆下方必須有實心方塊才能放置，而且非常易燃。",
             "enable_visualize": false
         },
         {
@@ -44,7 +44,7 @@
                 "tfg:textures/gui/field_guide/charcoal_pit/charcoal_pit_3.png",
                 "tfg:textures/gui/field_guide/charcoal_pit/charcoal_pit_4.png"
             ],
-            "text": "$(bold)教學幻燈片：$()建造 2x2x2 的木炭坑。",
+            "text": "$(bold)教學投影片：$()建造 2x2x2 的木炭坑。",
             "border": true
         },
         {

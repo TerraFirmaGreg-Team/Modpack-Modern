@@ -1269,7 +1269,7 @@
         {
             "type": "patchouli:text",
             "anchor": "olive",
-            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：-8 - 25 °C$(br)$(bold)$(l:the_world/climate#calendar)生長天數$()：12$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：18 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：150 - 500mm$(br2)橄欖樹在三月到七月生長，八月和九月開花，十月結果。$(br2)橄欖可以用來製作$(thing)橄欖油$()，可以當作燈的燃料。",
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：-8 - 25 °C$(br)$(bold)$(l:the_world/climate#calendar)生長天數$()：12$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：18 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：150 - 500mm$(br2)橄欖樹在三月到七月生長，八月和九月開花，十月結果。$(br2)橄欖可以用來製作$(thing)橄欖油$()，可以當作油燈的燃料。",
             "title": "橄欖樹"
         },
         {
@@ -2394,7 +2394,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "可可樹範例。",
+            "text": "一棵可可樹。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -2618,7 +2618,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "無花果樹範例。",
+            "text": "一棵無花果樹。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -3105,7 +3105,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "椰子樹範例。",
+            "text": "一棵椰子樹。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -4105,7 +4105,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "椰棗樹範例。",
+            "text": "一棵椰棗樹。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -5657,7 +5657,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "健康的小型灌木的三種不同大小。",
+            "text": "健康小型灌木的三種大小。",
             "multiblocks": [
                 {
                     "pattern": [

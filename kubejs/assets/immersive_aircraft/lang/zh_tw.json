@@ -123,5 +123,6 @@
 	"option.immersive_aircraft.weaponsAreDestructive": "允許特定武器破壞方塊。",
 	"option.immersive_aircraft.windClearWeather": "基礎風力影響。",
 	"option.immersive_aircraft.windRainWeather": "降雨時的風。",
-	"option.immersive_aircraft.windThunderWeather": "打雷時有更大的風。"
+	"option.immersive_aircraft.windThunderWeather": "打雷時有更大的風。",
+	"option.immersive_aircraft.defaultCanEnter": "預設允許生物自動登上飛行器。"
 }

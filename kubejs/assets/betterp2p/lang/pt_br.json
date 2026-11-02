@@ -4,7 +4,9 @@
     "gui.advanced_memory_card.select": "Selecionar",
     "gui.advanced_memory_card.bind": "Vincular",
     "gui.advanced_memory_card.unbind": "Desvincular",
+    "gui.advanced_memory_card.pos": "Pos: %d, %d, %d",
     "gui.advanced_memory_card.side": "Lado: %s",
+    "gui.advanced_memory_card.dim": "Dim: %d",
     "gui.advanced_memory_card.name": "Nome: %s",
     "gui.advanced_memory_card.sortinfo1": "Ordenar tags",
     "gui.advanced_memory_card.sortinfo2": "Mostrar apenas P2Ps de Entrada",
@@ -40,7 +42,9 @@
     "gui.advanced_memory_card.p2p_status.unbound": "Desvinculado",
     "gui.advanced_memory_card.p2p_status.input": "Entrada",
     "gui.advanced_memory_card.p2p_status.output": "Saída",
+    "gui.advanced_memory_card.p2p_status.offline": "Offline",
     "gui.advanced_memory_card.types.filtered": "Mostrando: %s",
     "gui.advanced_memory_card.types.any": "§aTodos",
     "gui.advanced_memory_card.error.same_type": "P2P já é este tipo."
 }
+

@@ -14,7 +14,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "塑形出坩堝後，需要像其他陶器一樣$(l:craftsmanship/pottery#vessel)燒製$()。$(br2)坩堝需要熱源才能使用，下方任何可加熱的方塊都能加熱坩堝，最好是$(l:craftsmanship/charcoal_forge)木炭爐$()。$(br)要注意，坩堝傳熱給物品的速度比木炭爐快得多，這有好有壞。如果$(item)錫$()等低熔點物品在鍛造時讓你很困擾，可以繼續用木炭爐加熱。"
+            "text": "塑形出坩堝後，需要像其他陶器一樣$(l:craftsmanship/pottery#vessel)燒製$()。$(br2)坩堝需要熱源才能使用，下方任何可加熱的方塊都能加熱坩堝，最好是$(l:craftsmanship/charcoal_forge)木炭爐$()。$(br)注意，坩堝傳熱給物品的速度比木炭爐快得多，這有好有壞。如果$(item)錫$()等低熔點物品在鍛造時讓你很困擾，可以繼續用木炭爐加熱。"
         },
         {
             "type": "patchouli:multiblock",

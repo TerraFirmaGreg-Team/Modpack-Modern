@@ -15,7 +15,7 @@
             "type": "patchouli:text",
             "anchor": "intro",
             "title": "簡介",
-            "text": "$(l:craftsmanship/metallurgy)找到$()礦脈後，就可以開始開採資源了。不過，挖礦時有一些與原版 Minecraft 不同的地方需要注意，例如$(l:game_mechanics/mining#collapses)坍塌$()、$(l:game_mechanics/mining#supports)支撐梁$()、$(l:game_mechanics/hazards)危險物質$()和$(l:game_mechanics/mining#processing)加工$()。"
+            "text": "$(l:craftsmanship/metallurgy)找到$()礦脈後，就可以開始開採資源了。但挖礦時有一些與原版 Minecraft 不同的地方需要注意，例如$(l:game_mechanics/mining#collapses)坍塌$()、$(l:game_mechanics/mining#supports)支撐梁$()、$(l:game_mechanics/hazards)危險物質$()和$(l:game_mechanics/mining#processing)加工$()。"
         },
         {
             "type": "patchouli:spotlight",
@@ -32,7 +32,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "玩家$(thing)開採任何原石$()時，若附近有$(thing)未受支撐的原石$()，就可能發生坍塌。而坍塌一旦開始，即使原本$(thing)受到支撐的$()岩石也可能坍塌。$(br2)洞穴頂部的岩石是$(thing)自然受支撐$()的；下方有不會坍塌的實心方塊的原石也算$(thing)受到支撐$()。此外，$(thing)支撐梁$()可一次支撐一大片區域。"
+            "text": "玩家$(thing)開採任何原石$()時，若附近有$(thing)未受支撐的原石$()，就可能發生坍塌。坍塌一旦開始，即使原本$(thing)受到支撐的$()岩石也可能坍塌。$(br2)洞穴頂部的岩石是$(thing)自然受支撐$()的；下方有不會坍塌的實心方塊的原石也算$(thing)受到支撐$()。$(thing)支撐梁$()則可一次支撐一大片區域。"
         },
         {
             "type": "patchouli:text",
@@ -245,7 +245,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "只有$(thing)$(bold)水平支撐梁$()會讓附近方塊受到$(thing)支撐$()：以水平支撐梁為中心、$(bold)9 x 5 x 9$()範圍內的方塊都算受到$(thing)支撐$()。$(br2)除了支撐梁，岩石只要下方有實心方塊(例如更多岩石)也能獲得支撐。不過要注意，$(thing)階梯$()和$(thing)半磚$()等$(thing)非實心方塊$()以及$(thing)平滑石頭$()都$(bold)不$()算作支撐。"
+            "text": "只有$(thing)$(bold)水平支撐梁$()會讓附近方塊受到$(thing)支撐$()：以水平支撐梁為中心、$(bold)9 x 5 x 9$()範圍內的方塊都算受到$(thing)支撐$()。$(br2)除了支撐梁，岩石只要下方有實心方塊(例如更多岩石)也能獲得支撐。注意，$(thing)階梯$()和$(thing)半磚$()等$(thing)非實心方塊$()以及$(thing)平滑石頭$()都$(bold)不$()算作支撐。"
         },
         {
             "type": "patchouli:image",
@@ -300,7 +300,7 @@
             "images": [
                 "tfg:textures/gui/field_guide/supports/support_2d_fail.png"
             ],
-            "text": "不過，當支撐範圍外有未受支撐的方塊時，即使標示的方塊本身受到支撐，挖掘它仍可能引發坍塌。",
+            "text": "但若支撐範圍外有未受支撐的方塊，即使標示的方塊本身受到支撐，挖掘它仍可能引發坍塌。",
             "border": true
         },
         {

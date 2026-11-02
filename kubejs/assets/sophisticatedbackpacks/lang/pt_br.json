@@ -222,6 +222,8 @@
 	"item.sophisticatedbackpacks.upgrade_base": "Base do Módulo",
 	"item.sophisticatedbackpacks.void_upgrade": "Módulo de Descarte",
 	"item.sophisticatedbackpacks.void_upgrade.tooltip": "Descarta itens selecionados no filtro",
+	"itemGroup.sophisticatedbackpacks": "Sophisticated Backpacks",
+	"key.category.sophisticatedbackpacks.main": "Sophisticated Backpacks",
 	"key.sophisticatedbackpacks.inventory_interaction": "Abrir a aba de módulos",
 	"key.sophisticatedbackpacks.open_backpack": "Abrir Mochila",
 	"key.sophisticatedbackpacks.toggle_upgrade_1": "Alternar estado do Primeiro módulo",
@@ -231,6 +233,5 @@
 	"key.sophisticatedbackpacks.toggle_upgrade_5": "Alternar estado do Quinto módulo",
 	"key.sophisticatedbackpacks.tool_swap": "Trocar de ferramenta automaticamente",
 	"sophisticatedbackpacks.configuration.animalMultiplier": "Multiplicador do custo de espaço para animais",
-	"sophisticatedbackpacks.configuration.hostileMultiplier": "Multiplicador do custo de espaço para criaturas hostis",
-	"gui.sophisticatedbackpacks.upgrades.refill.target_slot.any": "Q"
+	"sophisticatedbackpacks.configuration.hostileMultiplier": "Multiplicador do custo de espaço para criaturas hostis"
 }
