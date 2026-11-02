@@ -5,6 +5,8 @@
 - Change Butraldehyde circuit to 5 @TomPlop
 - Lower the energy cost of Garnet-Yttrium Line @TomPlop
 ### Bug fixes
+- Fixed mineshafts sticking out of the sides of mountains @Pyritie
+- Fixed some plants and flowers growing in the wrong elevations (#4994) @Pyritie
 
 ## [0.13.17] - 26-10-2026
 ### Bug fixes

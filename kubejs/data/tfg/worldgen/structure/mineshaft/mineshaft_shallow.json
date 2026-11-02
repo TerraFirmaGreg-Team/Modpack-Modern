@@ -1,6 +1,6 @@
 {
 	"type": "lithostitched:jigsaw",
-	"start_pool": "tfg:mineshaft/mineshaft_start_pool",
+	"start_pool": "tfg:mineshaft/mineshaft_shallow_start_pool",
 	"size": 15,
 	"max_distance_from_center": 116,
 	"biomes": "#tfg:has_structure/mineshaft",

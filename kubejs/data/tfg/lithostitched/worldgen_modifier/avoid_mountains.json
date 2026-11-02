@@ -1,7 +1,8 @@
 {
 	"type": "lithostitched:set_structure_spawn_condition",
 	"structures": [
-		"tfg:mineshaft/mineshaft"
+		"tfg:mineshaft/mineshaft_shallow",
+		"tfg:mineshaft/mineshaft_deep"
 	],
 	"spawn_condition": {
 		"type": "lithostitched:height_filter",

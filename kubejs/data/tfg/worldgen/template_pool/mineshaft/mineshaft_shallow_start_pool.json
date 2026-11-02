@@ -1,5 +1,5 @@
 {
-	"name": "tfg:mineshaft/mineshaft_start_pool",
+	"name": "tfg:mineshaft/mineshaft_shallow_start_pool",
 	"fallback": "minecraft:empty",
 	"elements": [
 		{
@@ -12,7 +12,7 @@
 					"projection": "rigid",
 					"element_type": "minecraft:single_pool_element"
 				},
-				"override_terrain_adaption": "bury"
+				"override_terrain_adaptation": "bury"
 			}
 		}
 	]
