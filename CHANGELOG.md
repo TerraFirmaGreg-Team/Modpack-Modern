@@ -4,9 +4,15 @@
 - Ceramic Circuit Board have different tiers so player can understand easily which one they can craft @TomPlop
 - Change Butraldehyde circuit to 5 @TomPlop
 - Lower the energy cost of Garnet-Yttrium Line @TomPlop
+- Added a calcite + clay dust recipe for liquid concrete (#5238) @lysteryale
+- Added snow bricks and ice bricks (#5235) @Pyritie
 ### Bug fixes
 - Fixed mineshafts sticking out of the sides of mountains @Pyritie
 - Fixed some plants and flowers growing in the wrong elevations (#4994) @Pyritie
+- Fixed another crash when generating chunks that contain a sealed barrel in a structure @Pyritie
+- Fixed an issue with painted firmalife boats allocating a large amount of VRAM @Zippity
+- Fixed duplicate tallow gas burner fuel @Redeix
+- Quest fixes (#5192) @TomPlop
 
 ## [0.13.17] - 26-10-2026
 ### Bug fixes
