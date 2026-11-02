@@ -82,7 +82,7 @@ function registerTACZGunRecipes(event){
 	event.recipes.gtceu.assembler('tfg_tacz:ca_m1_rifle')
 		.itemInputs('2x gtceu:steel_small_fluid_pipe', '5x #forge:ingots/black_steel', '4x #forge:plates/brass',
 					'3x #forge:rings/brass', '16x #forge:screws/black_steel', '8x gtceu:treated_wood_planks', 
-					'8x #forge:screws/black_steel', '2x greate:steel_cogwheel')
+					'8x #forge:screws/black_steel', 'create:precision_mechanism')
 		.inputFluids(Fluid.of('gtceu:soldering_alloy', 432))
 		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
 			'{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"create_armorer:sniper_semi_m1",HasBulletInBarrel:1b}'))
