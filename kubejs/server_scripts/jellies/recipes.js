@@ -37,18 +37,6 @@ function registerJelliesRecipes(event) {
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	// Biotite Slime Ball
-	event.shapeless('gtceu:biotite_dust', ['jellies:jellie/slime_ball/biotite', '#forge:tools/mortars'])
-		.id('tfg:shapeless/mortar_biotite_slime_ball')
-
-	event.recipes.tfc.quern('gtceu:biotite_dust', 'jellies:jellie/slime_ball/biotite')
-		.id('tfg:quern/biotite_slime_ball')
-
-	event.recipes.gtceu.macerator('tfg:biotite_slime_ball')
-		.itemInputs('jellies:jellie/slime_ball/biotite')
-		.itemOutputs('gtceu:biotite_dust')
-		.duration(50)
-		.EUt(GTValues.VA[GTValues.ULV])
 
 	// Glowberry Slime Ball
 	for (let i = 1; i <= 5; i++) {
@@ -71,7 +59,7 @@ function registerJelliesRecipes(event) {
 		.length(600)
 		.id('tfg:vat/glowberry_slime_ball_to_sugar')
 
-	event.recipes.gtceu.chemical_reactor('tfg:glowberry_slime_ball')
+	event.recipes.gtceu.extractor('tfg:glowberry_slime_ball')
 		.itemInputs('jellies:jellie/slime_ball/glowberry')
 		.inputFluids(Fluid.of('tfc:spring_water', 200))
 		.itemOutputs('minecraft:sugar')
@@ -80,15 +68,14 @@ function registerJelliesRecipes(event) {
 
 	// Latex Slime Ball
 	event.recipes.firmalife.vat()
-		.inputs('jellies:jellie/slime_ball/latex', Fluid.of('tfc:spring_water', 200))
-		.outputFluid(Fluid.of('tfg:latex', 200))
+		.inputItem('jellies:jellie/slime_ball/latex')
+		.outputFluid(Fluid.of('tfg:jellie_milk', 1000))
 		.length(600)
 		.id('tfg:vat/latex_slime_ball_to_latex')
 
 	event.recipes.gtceu.brewery('tfg:latex_slime_ball')
 		.itemInputs('jellies:jellie/slime_ball/latex')
-		.inputFluids(Fluid.of('tfc:spring_water', 200))
-		.outputFluids(Fluid.of('tfg:latex', 200))
+		.outputFluids(Fluid.of('tfg:jellie_milk', 1000))
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
 	
@@ -108,13 +95,13 @@ function registerJelliesRecipes(event) {
 	// Spring Slime Ball
 	event.recipes.firmalife.vat()
 		.inputItem('jellies:jellie/slime_ball/spring')
-		.outputFluid(Fluid.of('tfc:spring_water', 200))
+		.outputFluid(Fluid.of('tfc:spring_water', 1000))
 		.length(600)
 		.id('tfg:vat/spring_slime_ball_to_spring_water')
 
 	event.recipes.gtceu.brewery('tfg:spring_slime_ball')
 		.itemInputs('jellies:jellie/slime_ball/spring')
-		.outputFluids(Fluid.of('tfc:spring_water', 200))
+		.outputFluids(Fluid.of('tfc:spring_water', 1000))
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
 }

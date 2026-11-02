@@ -13,6 +13,12 @@
 - Fixed an issue with painted firmalife boats allocating a large amount of VRAM @Zippity
 - Fixed duplicate tallow gas burner fuel @Redeix
 - Quest fixes (#5192) @TomPlop
+### Mods
+#### Jellies
+- Plant and Phosphorum Jellies now give 4x the items, since they're only useful for compost generation
+- Certus Jellies now give certus gems instead of the large bud clusters
+- Latex Jellies are renamed to Milk Jellies and their slime ball can be heated and drank as a Beneath source of dairy
+- Feeding troughs can be used to feed and breed Jellies, and deployers can be used to automate their products. They still only produce in their home dimension, though
 
 ## [0.13.17] - 26-10-2026
 ### Bug fixes

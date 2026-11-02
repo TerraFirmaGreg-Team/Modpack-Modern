@@ -10,7 +10,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:agriculture/jellies#produce)Produce$()$(li)$(bold)$(l:agriculture/jellies#feeding)Feeding$()$(li)$(bold)Earth Species$()$(li2)$(l:agriculture/jellies#herbal)Herbal$()$(li2)$(l:agriculture/jellies#phosphorum)Phosphorum$()$(li2)$(l:agriculture/jellies#rock)Rock$()$(li)$(bold)Beneath Species$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)Ice$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)Plant$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)Glowberry$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)Spring$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)Lava$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)Biotite$()$(li2)$(l:beneath/beneath_fauna#latex_jellie)Latex$()$(br2)$(o)(Continued on next page...)$()"
+			"text": "$(li)$(bold)$(l:agriculture/jellies#produce)Produce$()$(li)$(bold)$(l:agriculture/jellies#feeding)Feeding$()$(li)$(bold)Earth Species$()$(li2)$(l:agriculture/jellies#herbal)Herbal$()$(li2)$(l:agriculture/jellies#phosphorum)Phosphorum$()$(li2)$(l:agriculture/jellies#rock)Rock$()$(li)$(bold)Beneath Species$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)Ice$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)Plant$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)Glowberry$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)Spring$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)Lava$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)Biotite$()$(li2)$(l:beneath/beneath_fauna#latex_jellie)Milk$()$(br2)$(o)(Continued on next page...)$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -28,14 +28,14 @@
 			"type": "patchouli:text",
 			"title": "Produce",
 			"anchor": "produce",
-			"text": "$(thing)Jellies$() are quite picky and will refuse to produce anything outside their natural habitat; however, they will breed just fine in any environment. $(br2)They also dislike machines and will only give their produce when fed manually by a player.$(br2)$(#B0B0B0)$(o)Or maybe they just want attention..."
+			"text": "$(thing)Jellies$() are quite picky and will refuse to produce anything outside their natural habitat; however, they will breed just fine in any environment.$(br2)You can use a $(l:agriculture/animal_husbandry#feeding_trough)Feeding Trough$() to feed and breed them, but they require hand-feeding (either a player or deployer) to give any of their products.$(br2)$(#B0B0B0)$(o)Or maybe they just want attention..."
 		},
 		{
 			"type": "patchouli:crafting",
 			"title": "Feeding",
 			"recipe": "tfg:shaped/jellies_nutritional_mash",
 			"anchor": "feeding",
-			"text": "$(thing)Nutritional Mash$() is the main food of all $(thing)jellies$(), primarily made from grains, fruits, and some dimension-specific ingredients.$(br2)Unfortunately, they are quite picky and can only be fed by the $(thing)Player$() and not a $(l:agriculture/animal_husbandry#feeding_trough)Feeding Trough$().$(br)$(#B0B0B0)$(o)Why is it moving..."
+			"text": "$(thing)Nutritional Mash$() is the main food of all $(thing)jellies$(), primarily made from fruits, mushrooms, and some dimension-specific ingredients."
 		},
 		{
 			"type": "patchouli:entity",
