@@ -48,7 +48,7 @@
 			"item": "tfchotornot:mittens,tfchotornot:burlap_potholder,tfchotornot:silk_potholder,tfchotornot:wool_potholder",
 			"anchor": "cloth",
 			"title": "布料替代品",
-			"text": "你也可以用$(l:agriculture/leather_making)皮革$()和$(l:agriculture/weaving)布料$()製作$(item)隔熱手套$()和$(item)隔熱墊$()。"
+			"text": "也可以用$(l:agriculture/leather_making)皮革$()和$(l:agriculture/weaving)布料$()製作$(item)隔熱手套$()和$(item)隔熱墊$()。"
 		},
 		{
 			"type": "patchouli:spotlight",

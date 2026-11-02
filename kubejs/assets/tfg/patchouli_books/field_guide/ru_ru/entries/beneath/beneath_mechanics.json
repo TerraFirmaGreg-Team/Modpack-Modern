@@ -10,7 +10,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:beneath/beneath_mechanics#temperature)Temperature Management$()$(li2)$(l:beneath/beneath_mechanics#ice)Ice$()$(li2)$(l:beneath/beneath_mechanics#clothes)Clothing$()$(li2)$(l:beneath/beneath_mechanics#other_cooling)Other$()$(li)$(bold)$(l:beneath/beneath_mechanics#hellforge)The Hellforge$()$(li)$(bold)$(l:beneath/beneath_mechanics#rope_ladder)Vertical Navigation$()$(li2)$(l:beneath/beneath_mechanics#rope_ladder)Rope Ladder$()$(li2)$(l:logistics/exploration_gear#hang_glider)Hang Glider$()$(li2)$(l:logistics/exploration_gear#grappling_hook)Grappling Hook$()$(li2)$(l:logistics/exploration_gear#harpoon)Harpoon & Coil$()$(li)$(bold)$(l:beneath/beneath_mechanics#piglins)Piglins$()$(li2)$(l:beneath/beneath_mechanics#disguise)Disguising$()$(li2)$(l:beneath/beneath_mechanics#towers)Towers$()$(li2)$(l:beneath/beneath_mechanics#outposts)Outposts$()$(li2)$(l:beneath/beneath_mechanics#bastions)Bastions$()"
+			"text": "$(li)$(bold)$(l:beneath/beneath_mechanics#temperature)Управление температурой$()$(li2)$(l:beneath/beneath_mechanics#ice)Лёд$()$(li2)$(l:beneath/beneath_mechanics#clothes)Одежда$()$(li2)$(l:beneath/beneath_mechanics#other_cooling)Другое$()$(li)$(bold)$(l:beneath/beneath_mechanics#hellforge)Адская кузня$()$(li)$(bold)$(l:beneath/beneath_mechanics#rope_ladder)Вертикальная навигация$()$(li2)$(l:beneath/beneath_mechanics#rope_ladder)Верёвочная лестница$()$(li2)$(l:logistics/exploration_gear#hang_glider)Дельтаплан$()$(li2)$(l:logistics/exploration_gear#grappling_hook)Крюк-кошка$()$(li2)$(l:logistics/exploration_gear#harpoon)Гарпун & Трос$()$(li)$(bold)$(l:beneath/beneath_mechanics#piglins)Пиглины$()$(li2)$(l:beneath/beneath_mechanics#disguise)Маскировка под Пиглина$()$(li2)$(l:beneath/beneath_mechanics#towers)Башни$()$(li2)$(l:beneath/beneath_mechanics#outposts)Аванпосты$()$(li2)$(l:beneath/beneath_mechanics#bastions)Бастионы$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -22,7 +22,7 @@
 			"type": "tfg:sealed_barrel_recipe",
 			"recipe": "tfg:barrel/packed_ice",
 			"anchor": "ice",
-			"text": "Возьми с собой немного$(l:game_mechanics/player_temperature#blocks)Льда$()! Пока стоишь рядом он будет понижать $(l:game_mechanics/player_temperature)твою температуру$().Лёд можно добывать на поверхности а полученную ледяную стружку можно превратить в $(item)Плотный Лёд$(). $(thing)Плотный$() и $(thing)Синий$() лёд не плавится и может быть перенесён с помощью $(item)пилы $(). $(l:cooking/drinks#ice_slush)Ледяная слякоть$() может быть выпита."
+			"text": "Bring along some $(l:game_mechanics/player_temperature#blocks)Ice$()! Standing near it will lower $(l:game_mechanics/player_temperature)your temperature$(). Ice can be harvested on the surface and the resulting Ice Shavings can be turned into $(item)Packed Ice$(). $(thing)Packed$() and $(thing)Blue$() ice won't melt and can be picked up using a $(item)Saw$(). $(l:cooking/drinks#ice_slush)Ice Slush$() can be drank."
 		},
 		{
 			"type": "patchouli:text",

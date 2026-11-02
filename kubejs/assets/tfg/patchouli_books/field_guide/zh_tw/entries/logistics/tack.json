@@ -35,14 +35,14 @@
             "anchor": "supply_cart",
             "title": "物資車",
             "item": "tag:tfcastikorcarts:supply_cart",
-            "text": "$(item)物資車$()可按$(item)$(k:key.astikorcarts.desc)$()套在騎乘的動物身上，也可手動拉。物資車能存放大量物品，按$(item)$(k:key.sneak)-$(k:key.use)$()開啟。不過物品太多或有幾件很重的物品，都會讓坐騎明顯減速。"
+            "text": "$(item)物資車$()可按$(item)$(k:key.astikorcarts.desc)$()套在騎乘的動物身上，也可手動拉。物資車能存放大量物品，按$(item)$(k:key.sneak)-$(k:key.use)$()開啟。但物品太多或有幾件很重的物品，都會讓坐騎明顯減速。"
         },
         {
             "type": "patchouli:entity",
             "entity": "tfcastikorcarts:supply_cart/oak",
             "scale": 0.4,
             "name": " ",
-            "text": "物資車會實際展示其物品欄中的前幾個物品。"
+            "text": "物資車會在車上顯示物品欄中的前幾個物品。"
         },
         {
             "type": "patchouli:spotlight",
@@ -56,7 +56,7 @@
             "entity": "tfcastikorcarts:plow/oak",
             "scale": 0.4,
             "name": " ",
-            "text": "犁地車會展示它的工具。當它的臂放下時表示已啟用。"
+            "text": "犁地車會顯示裝上的工具，臂放下時表示已啟用。"
         },
         {
             "type": "patchouli:spotlight",
@@ -84,7 +84,7 @@
             "entity": "tfg:rnr_plow",
             "scale": 0.4,
             "name": "鋪路車",
-            "text": "當鋪路車的刀片放下時，表示它已啟用。"
+            "text": "鋪路車的刀片放下時表示已啟用。"
         },
         {
             "type": "patchouli:relations",

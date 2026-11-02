@@ -156,13 +156,13 @@
 		{
 			"type": "patchouli:spotlight",
 			"title": "牛奶",
-			"text": "熟悉度夠高時，手持木桶或金屬桶對大多數雌性牲畜按 $(item)$(k:key.use)$()，就能取得$(thing)牛奶$()。(如果沒有反應，請確認桶子沒有堆疊！)$(br)牛奶不提供增益――也不會移除效果――但在進食後飲用可補充$(l:cooking/food_and_water#dairy)乳製品$()營養。",
+			"text": "熟悉度夠高時，手持木桶或金屬桶對大多數雌性牲畜按 $(item)$(k:key.use)$()，就能取得$(thing)牛奶$()。(如果沒有反應，請確認桶子沒有堆疊！)$(br)牛奶不提供增益，也不會移除效果，但在進食後飲用可補充$(l:cooking/food_and_water#dairy)乳製品$()營養。",
 			"item": "minecraft:milk_bucket,firmalife:bucket/yak_milk,firmalife:bucket/goat_milk",
 			"anchor": "milk"
 		},
 		{
 			"title": "溫泉水",
-			"text": "飲用$(thing)溫泉水$()可以讓你升溫 4°C；站在溫泉中則會獲得輕微的回復效果，同時也會讓你暖和起來。",
+			"text": "飲用$(thing)溫泉水$()可升溫 4°C；站在溫泉中會獲得輕微的回復效果，身體也會變暖。",
 			"item": "tfc:bucket/spring_water",
 			"type": "patchouli:spotlight",
 			"anchor": "spring_water"
@@ -176,7 +176,7 @@
 		},
 		{
 			"title": "泥水",
-			"text": "不建議飲用$(thing)泥水$()。這麼做會讓你噁心反胃，還會感染$(l:cooking/food_and_water#parasites)寄生蟲$()。",
+			"text": "不建議飲用$(thing)泥水$()，會讓你噁心反胃，還會感染$(l:cooking/food_and_water#parasites)寄生蟲$()。",
 			"type": "patchouli:spotlight",
 			"item": "tfg:muddy_water_bucket",
 			"anchor": "muddy_water"

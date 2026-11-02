@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:beneath/beneath#entering)Entering$() and $(bold)$(l:beneath/beneath#exiting)Exiting$()$(li)$(bold)$(l:beneath/beneath#biomes)Biomes$()$(li2)$(l:beneath/beneath#salt_caves)Top Layer$()$(li2)$(l:beneath/beneath#tar_pools)Middle Layer$()$(li2)$(l:beneath/beneath#ash_forest)Bottom Layer$()$(li)$(bold)$(l:beneath/beneath#geology)Geology$()$(li2)$(l:beneath/beneath#more_rocks)More Rocks$()"
+			"text": "$(li)$(bold)$(l:beneath/beneath#entering)Как попасть$() и $(bold)$(l:beneath/beneath#exiting)Как выйти$()$(li)$(bold)$(l:beneath/beneath#biomes)Биомы$()$(li2)$(l:beneath/beneath#salt_caves)Верхний уровнь$()$(li2)$(l:beneath/beneath#tar_pools)Средний уровнь$()$(li2)$(l:beneath/beneath#ash_forest)Нижний уровень$()$(li)$(bold)$(l:beneath/beneath#geology)Геология$()$(li2)$(l:beneath/beneath#more_rocks)Больше камней$()"
 		},
 		{
 			"type": "patchouli:image",
@@ -26,7 +26,7 @@
 				"tfg:textures/gui/field_guide/nether/aether.png"
 			],
 			"border": true,
-			"text": "Not like this!"
+			"text": "Не так!"
 		},
 		{
 			"type": "patchouli:text",
@@ -192,7 +192,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(item)Гильсонит$(), очень темный строительный блок и ингредиент $(l:logistics/roads#asphalt)Асфальта$(), можно найти в больших количествах в биоме $(l:beneath/beneath#tar_pools)Битумных Бассейнов$() , в сочетании с $(item)Песчанником$(). $(br2)Наконец, $(item)Галит$() можно найти в массивных количествах в биоме $(l:beneath/beneath#salt_caves)Соляных Пещер$(), который подходит для добыи Галитовых и Сильвитовых руд."
+			"text": "$(item)Gilsonite$(), a very dark building block and ingredient of $(l:logistics/roads#asphalt)Asphalt$(), can be found in large quantities in the $(l:beneath/beneath#tar_pools)Tar Pools$() biome, along with $(item)Sandstone$().$(br2)Finally, $(item)Halite$() can be found in massive quantities in the $(l:beneath/beneath#salt_caves)Salt Caves$() biome, which can be mined for Halite and Sylvite ores."
 		},
 		{
 			"type": "patchouli:relations",
