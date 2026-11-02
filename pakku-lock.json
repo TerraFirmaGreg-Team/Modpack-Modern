@@ -1781,7 +1781,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "[1.16.5-1.20.1] Belroft Motors Mk 7-4.jar",
+                    "file_name": "1.16.5-1.20.1-Belroft-Motors-Mk-15-5.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -1789,19 +1789,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8770/256/[1.16.5-1.20.1] Belroft Motors Mk 7-4.jar",
-                    "id": "8770256",
+                    "url": "https://edge.forgecdn.net/files/9388/6/1.16.5-1.20.1-Belroft-Motors-Mk-15-5.jar",
+                    "id": "9388006",
                     "parent_id": "1618243",
                     "hashes": {
-                        "sha1": "0f6da8c075ed57613fc79113d8b6bc7366097a40",
-                        "md5": "5a6f7b0acb111148649c36d6c2429a13"
+                        "sha1": "ed97be1288788d6ebd9eb9690b052087844b8222",
+                        "md5": "c43d5122351d2b327f6e6e85d3a9900e"
                     },
                     "required_dependencies": [
-                        "292217",
-                        "286703"
+                        "286703",
+                        "292217"
                     ],
-                    "size": 14674034,
-                    "date_published": "2026-08-30T15:10:19.113Z"
+                    "size": 26662855,
+                    "date_published": "2026-10-31T19:53:26.237Z"
                 }
             ]
         },
