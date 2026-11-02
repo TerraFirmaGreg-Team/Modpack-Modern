@@ -227,4 +227,20 @@ function registerTFGQuartzRecipes(event) {
 		.recipeTier(1)
 		.id(`tfg:pressing/small_rose_quartz_tiles_to_blocks`)
 	//#endregion
+
+	// Huge quartz
+	event.recipes.gtceu.laser_engraver('tfg:huge_quartz_from_flawless')
+		.itemInputs('gtceu:flawless_nether_quartz_gem', '20x minecraft:quartz')
+		.notConsumable('tfc:lens')
+		.itemOutputs('20x tfg:huge_quartz')
+		.duration(100)
+		.EUt(GTValues.VHA[GTValues.LV])
+		
+	event.recipes.gtceu.laser_engraver('tfg:huge_quartz_from_exquisite')
+		.chancedInput('gtceu:exquisite_nether_quartz_gem', 2000, 0)
+		.itemInputs('20x minecraft:quartz')
+		.notConsumable('tfc:lens')
+		.itemOutputs('20x tfg:huge_quartz')
+		.duration(100)
+		.EUt(GTValues.VHA[GTValues.LV])
 }

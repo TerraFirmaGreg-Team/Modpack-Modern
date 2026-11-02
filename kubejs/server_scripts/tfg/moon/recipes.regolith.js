@@ -143,7 +143,6 @@ function registerTFGMoonRegolithRecipes(event) {
 
 	event.recipes.gtceu.centrifuge('tfg:dusty_to_dust_certus_quartz')
 		.itemInputs('#forge:dusty_raw_materials/certus_quartz')
-		.chancedItemOutputLogic($ChanceLogic.XOR)
 		.itemOutputs('#forge:dusts/certus_quartz')
 		.chancedOutput('#forge:dusts/zinc', 2000, 0)
 		.duration(20 * 45)

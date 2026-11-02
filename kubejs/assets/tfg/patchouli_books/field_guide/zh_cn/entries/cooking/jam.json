@@ -1,50 +1,50 @@
 {
-    "name": "Jam Making",
+    "name": "果酱制作",
     "category": "tfg:cooking",
     "icon": "tfc:textures/item/jar/cloudberry.png",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:cooking/jam#jarring_station)Jarring Station$()$(li)$(bold)$(l:cooking/jam#shelves)Jar Shelves$()$(li)$(bold)$(l:cooking/jam#jarbnets)Jarbnets$()"
+            "text": "$(li)$(bold)$(l:cooking/jam#jarring_station)装罐台$()$(li)$(bold)$(l:cooking/jam#shelves)果酱架$()$(li)$(bold)$(l:cooking/jam#jarbnets)罐头柜$()"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tag:tfg:foods/all_jams",
             "anchor": "jam",
-            "title": "Jarring Jam",
-            "text": "$(thing)Jars$() are used to preserve fruit for longer periods of time by making Jam. Jars start as $(thing)Empty Jars$(), obtained through $(thing)Glassworking$(). Then, a $(thing)Jar Lid$() is added to create an $(thing)Empty Jar With Lid$().$(br)In a pot, boil $(thing)Sugar$() with 2-4 pieces of $(thing)Fruit$(). When the recipe is done, $(item)$(k:key.use)$() with the empty jar with lid to create a $(thing)Sealed Jar of Jam$()."
+            "title": "果酱装罐",
+            "text": "$(thing)罐子$()通过制作果酱来把水果保存得更久。罐子最初是$(thing)空罐子$()，通过$(thing)玻璃加工$()获得。然后装上$(thing)罐子盖$()，做成$(thing)带盖空罐子$()。$(br)在陶锅里把$(thing)糖$()和2-4块$(thing)水果$()一起煮。配方完成后，手持带盖空罐子按$(item)$(k:key.use)$()，即可做出$(thing)密封果酱罐$()。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "firmalife:vat,firmalife:jarring_station",
             "anchor": "jarring_station",
-            "title": "Automating Jam",
-            "text": "Jam can also be mass-produced in a $(l:cooking/cooking_methods#vat)Vat$() using a $(l:cooking/cooking_methods#jarring_station)Jarring Station$(). Funnel ingredients into the vat, use redstone to close it and then extract the outputs from the jarring station."
+            "title": "自动化制作果酱",
+            "text": "果酱也可以在$(l:cooking/cooking_methods#vat)铁锅$()里用$(l:cooking/cooking_methods#jarring_station)装罐台$()批量生产。用漏斗把配料送入铁锅，用红石信号将其封上，然后从装罐台取出产物。"
         },
         {
             "type": "patchouli:crafting",
-            "title": "Unsealing",
+            "title": "开封",
             "recipe": "tfc:crafting/unseal_plum_jar",
-            "text": "Unseal a jar first in a crafting table in order to use it in recipes. The lid is not able to be retrieved. An unsealed jar only lasts for a few days!"
+            "text": "要在配方中使用罐子，得先放在工作台里开封。盖子无法取回。未密封的罐子只能保存几天！"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tag:tfc:jar_shelves,tag:beneath:jar_shelves",
             "anchor": "shelves",
-            "title": "Jar Shelves",
-            "text": "$(thing)Jar Shelves$() can be attached to solid walls. They can be placed directly or by clicking on an existing block of placed jars. The top of the jar shelf counts as a solid surface for placing items, more jars, or other blocks.$(br)Jars can be placed on any solid surfaces with $(item)$(k:key.use)$(). A block can contain four jars of any kind."
+            "title": "果酱架",
+            "text": "$(thing)果酱架$()可以安装在实心墙上。可以直接放置，也可以点击已放置的罐子方块来放置。果酱架的顶面算作实心表面，可以用来放置物品、更多罐子或其他方块。$(br)用$(item)$(k:key.use)$()可以把罐子放在任何实心表面上。一个方块最多可容纳四个任意种类的罐子。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tag:firmalife:jarbnets",
             "anchor": "jarbnet",
-            "title": "Jarbnets",
-            "text": "The jarbnet is a cosmetic storage block for $(item)Jars$(), $(item)Candles$(), and $(item)Jugs$(). It can be opened and closed by clicking with an empty hand and $(item)$(k:key.sneak)$() pressed. If candles are inside, it can be lit to produce a small amount of light."
+            "title": "罐头柜",
+            "text": "罐头柜是用来存放$(item)罐子$()、$(item)蜡烛$()和$(item)陶壶$()的装饰性存储方块。空手按住$(item)$(k:key.sneak)$()并点击即可打开或关闭它。如果里面放了蜡烛，还可以点燃来产生少量光亮。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/food_and_water",

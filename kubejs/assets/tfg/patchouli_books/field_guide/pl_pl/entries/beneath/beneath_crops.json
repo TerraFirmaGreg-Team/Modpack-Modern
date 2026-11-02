@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Zawartość",
-			"text": "$(li)$(l:beneath/beneath_crops#cassava)Cassava$()$(li)$(l:beneath/beneath_crops#peanut)Peanut$()$(li)$(l:beneath/beneath_crops#beans)Blackstone Beans$()$(li)$(l:beneath/beneath_crops#ghost_pepper)Ghost Pepper$()$(li)$(l:beneath/beneath_crops#cotton)Cotton$()"
+			"text": "$(li)$(l:beneath/beneath_crops#cassava)Maniok$()$(li)$(l:beneath/beneath_crops#peanut)Orzech ziemny$()$(li)$(l:beneath/beneath_crops#beans)Czernitowe fasolki$()$(li)$(l:beneath/beneath_crops#ghost_pepper)Naga Jolokia$()$(li)$(l:beneath/beneath_crops#cotton)Bawełna$()"
 		},
 		{
 			"type": "patchouli:text",

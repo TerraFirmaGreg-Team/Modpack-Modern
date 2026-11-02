@@ -1,28 +1,21 @@
 {
     "clothes_hat": {
-        "x": 30,
+        "x": 43,
         "y": 98,
         "enabled": true,
         "halign": "LEFT",
         "valign": "BOTTOM"
     },
     "gtceu_magnet": {
-        "x": 2,
+        "x": 0,
         "y": 116,
         "enabled": true,
         "halign": "LEFT",
         "valign": "BOTTOM"
     },
     "hands": {
-        "x": 2,
+        "x": 0,
         "y": 44,
-        "enabled": true,
-        "halign": "LEFT",
-        "valign": "BOTTOM"
-    },
-    "belt": {
-        "x": 2,
-        "y": 62,
         "enabled": true,
         "halign": "LEFT",
         "valign": "BOTTOM"
@@ -34,9 +27,23 @@
         "halign": "LEFT",
         "valign": "TOP"
     },
+    "belt": {
+        "x": 0,
+        "y": 62,
+        "enabled": true,
+        "halign": "LEFT",
+        "valign": "BOTTOM"
+    },
     "back": {
-        "x": 2,
+        "x": 0,
         "y": 80,
+        "enabled": true,
+        "halign": "LEFT",
+        "valign": "BOTTOM"
+    },
+    "necklace": {
+        "x": 2,
+        "y": 146,
         "enabled": true,
         "halign": "LEFT",
         "valign": "BOTTOM"
@@ -48,13 +55,6 @@
         "halign": "LEFT",
         "valign": "CENTER"
     },
-    "necklace": {
-        "x": 2,
-        "y": 146,
-        "enabled": true,
-        "halign": "LEFT",
-        "valign": "BOTTOM"
-    },
     "body": {
         "x": 2,
         "y": 126,
@@ -63,7 +63,7 @@
         "valign": "BOTTOM"
     },
     "clothes_torso": {
-        "x": 30,
+        "x": 43,
         "y": 80,
         "enabled": true,
         "halign": "LEFT",
@@ -84,15 +84,15 @@
         "valign": "TOP"
     },
     "head": {
-        "x": 2,
+        "x": 0,
         "y": 98,
         "enabled": true,
         "halign": "LEFT",
         "valign": "BOTTOM"
     },
     "face": {
-        "x": 2,
-        "y": 134,
+        "x": 43,
+        "y": 116,
         "enabled": true,
         "halign": "LEFT",
         "valign": "BOTTOM"
@@ -105,14 +105,14 @@
         "valign": "TOP"
     },
     "clothes_pants": {
-        "x": 30,
+        "x": 43,
         "y": 62,
         "enabled": true,
         "halign": "LEFT",
         "valign": "BOTTOM"
     },
     "clothes_socks": {
-        "x": 30,
+        "x": 43,
         "y": 44,
         "enabled": true,
         "halign": "LEFT",

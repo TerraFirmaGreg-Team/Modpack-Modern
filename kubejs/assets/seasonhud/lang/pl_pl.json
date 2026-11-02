@@ -106,6 +106,7 @@
 	"menu.seasonhud.season.showFertility.tooltip": "Pokaż poziom żyzności obecnego biomu",
 	"menu.seasonhud.season.showSubSeason.button": "Pokaż podsezon",
 	"menu.seasonhud.season.showSubSeason.tooltip": "Pokaż podsezon (np. wczesna zima, środek jesieni, późna wiosna) zamiast zwykłej pory roku",
+	"menu.seasonhud.season.showSubSeason.tooltip.error": "Obecna długość pory roku: %d dni (%d ticków) nie jest podzielna przez 3\n\nAby włączyć tę funkcję, zmień wartości 'seasonLength' w 'seasons.json', aby były podzielne przez 3",
 	"menu.seasonhud.season.showTropicalSeason.button": "Pokaż tropikalne pory roku",
 	"menu.seasonhud.season.showTropicalSeason.tooltip": "Pokaż tropikalne pory roku (deszczowa/sucha) w biomach tropikalnych",
 	"menu.seasonhud.season.title": "Opcje wyświetlania pory roku",

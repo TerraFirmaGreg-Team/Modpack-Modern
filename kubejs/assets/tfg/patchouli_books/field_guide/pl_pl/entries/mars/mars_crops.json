@@ -10,7 +10,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "A $(thing)Heat Pump$() will also keep an enclosed area a stable 15 °C.$(br2)Another alternative is to use Firmalife's Greenhouse, which doesn't provide as much output, but also ignores all climate conditions."
+			"text": "$(thing)Pompa ciepła$() również utrzymuje stałą temperaturę 15 °C w zamkniętej przestrzeni.$(br2)Innym rozwiązaniem jest szklarnia z Firmalife, która daje mniejsze plony, ale pozwala uprawiać rośliny niezależnie od warunków klimatycznych."
 		},
 		{
 			"type": "patchouli:text",

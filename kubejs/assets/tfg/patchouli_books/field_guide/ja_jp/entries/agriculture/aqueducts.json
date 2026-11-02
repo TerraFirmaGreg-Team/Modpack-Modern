@@ -1,15 +1,15 @@
 {
-    "name": "Aqueducts",
+    "name": "用水路",
     "category": "tfg:agriculture",
     "icon": "tfc:rock/aqueduct/shale",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(thing)Aqueducts$() are a tool used for moving $(thing)Fluids$() around. Since $(item)Wooden Buckets$() are not able to transport water sources, $(thing)Aqueducts$() exist to move fluids horizontally any distance to their destination. They can be used to transport any type of water―including $(thing)Fresh Water$(), $(thing)Salt Water$(), and $(thing)Hot Spring Water$()―as well as $(thing)Lava$().$(br)Aqueducts with plain water in them can $(l:agriculture/growing_crops#hydration)hydrate farmland$()."
+            "text": "$(thing)用水路$()は、$(thing)液体$()を移動させるために使用されるツールです。$(item)木製のバケツ$()では水源を運ぶことができませんが、$(thing)用水路$()を使えば液体を水平方向に任意の距離だけ目的地まで運ぶことができます。これらは、$(thing)淡水$()、$(thing)海水$()、$(thing)温泉水$()を含むあらゆる種類の水や、$(thing)溶岩$()の輸送に使用できます。$(br)普通の水が入った用水路は、$(l:agriculture/growing_crops#hydration)農地に水分を供給する$()ことができます。"
         },
         {
             "type": "patchouli:text",
-            "text": "In order to use an $(thing)Aqueduct$(), you must simply connect them in a horizontal pattern, and place one end adjacent to either a $(thing)Source$() or $(thing)Falling$() water. After waiting a short while, water will begin to flow through the aqueduct network, and out the other end.$(br2)$(bold)Note:$() If aqueducts are removed, water will cease flowing, and $(thing)Aqueducts$() will not create permanent source blocks―any water will disappear after the aqueducts are removed."
+            "text": "$(thing)用水路$()を使用するには、単純に水平に接続し、一方の端を$(thing)水源$()または$(thing)落下$()水の近くに配置する必要があります。しばらく待つと、水が用水路網を通って流れ始め、もう一方の端から出ます。$(br2)$(bold)注意：$() 用水路が取り外されると、水の流れが止まります。$(thing)用水路$()は無限水源にはならないことに注意してください。水源ブロックまたは用水路が除去されると水は消えます。"
         },
         {
             "type": "tfg:multimultiblock",
@@ -93,8 +93,8 @@
                     }
                 }
             ],
-            "name": "Aqueduct Network",
-            "text": "An aqueduct network with water or lava.",
+            "name": "用水路網",
+            "text": "水や溶岩を運搬する用水路網の例",
             "enable_visualize": false
         },
         {

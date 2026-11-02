@@ -2082,6 +2082,7 @@
 				"{@pagebreak}"
 				"{quests.space_survival.soulbound.desc.2}"
 			]
+			guide_page: "tfg:field_guide tfg:the_moon/the_moon 24"
 			id: "06CE39915DFA099C"
 			optional: true
 			shape: "heart"

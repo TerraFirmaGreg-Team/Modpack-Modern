@@ -6,7 +6,6 @@
 function registerTFGPizzaAndPastaFoodRecipes(event) {
 
 	//#region Pizza
-	//TODO: refactor most of these when TFCGourmet is removed.
 
 	// Raw Pizza.
 	for (let i = 0; i <= 2; i++) {
@@ -30,7 +29,7 @@ function registerTFGPizzaAndPastaFoodRecipes(event) {
 		itemInputs: ['firmalife:spice/basil_leaves', '#tfc:foods/dough', 'tfc:powder/salt'],
 		fluidInputs: ['#firmalife:oils 100'],
 		itemOutputs: ['4x firmalife:food/pizza_dough'],
-		itemOutputProvider: TFC.isp.of("4x firmalife:food/pizza_dough").copyOldestFood()
+		itemOutputProvider: TFC.isp.of("4x firmalife:food/pizza_dough").resetFood()
 	});
 
 	// Cooking Pizza.
@@ -50,7 +49,7 @@ function registerTFGPizzaAndPastaFoodRecipes(event) {
 		itemInputs: ["tfc:food/rice_flour", 'tfc:food/maize_flour', 'tfc:powder/salt'],
 		fluidInputs: ['#tfc:milks 1000'],
 		itemOutputs: ['2x firmalife:food/raw_rice_noodles'],
-		itemOutputProvider: TFC.isp.of('2x firmalife:food/raw_rice_noodles').copyOldestFood()
+		itemOutputProvider: TFC.isp.of('2x firmalife:food/raw_rice_noodles').resetFood()
 	});
 	
 	global.generateWaterBoilingFoodRecipes(event, 'firmalife:food/raw_egg_noodles', 'firmalife:food/cooked_pasta', false, true, true)

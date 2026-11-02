@@ -44,19 +44,19 @@
             "type": "patchouli:text",
             "anchor": "cure_microplastics",
             "title": "Filtr mikroplastików",
-            "text": "While active this effect gradually removes $(l:cooking/food_and_water#microplastics)Microplastic Contamination$() at a rate of about 1% every 10s at base level.$()"
+            "text": "Na poziomie podstawowym efekt ten stopniowo zmniejsza $(l:cooking/food_and_water#microplastics)skażenie mikroplastikiem$() o około 1% co 10 s.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "freezing",
             "title": "Zamrożenie",
-            "text": "While active this effect continually $(thing)Cools$() the player down to a dangerously-low minimum of $(n)-20°C$(). Protective equipment is recommended to survive this condition."
+            "text": "Dopóki działa, efekt ten stale $(thing)ochładza$() gracza aż do niebezpiecznie niskiego $(n)-20°C$(). Aby przetrwać ten stan, zaleca się sprzęt ochronny."
         },
         {
             "type": "patchouli:text",
             "anchor": "blazing",
             "title": "Pieczenie",
-            "text": "While active this effect continually $(thing)Warms$() the player up to a dangerously-high maximum of $(n)60°C$(). Protective equipment is recommended to survive this condition."
+            "text": "Dopóki działa, efekt ten stale $(thing)ogrzewa$() gracza aż do niebezpiecznie wysokiego $(n)60°C$(). Aby przetrwać ten stan, zaleca się sprzęt ochronny."
         },
         {
             "type": "patchouli:text",

@@ -1550,11 +1550,24 @@
 			}]
 			shape: "heart"
 			subtitle: "{quests.extreme_voltage.building_gadgets.subtitle}"
-			tasks: [{
-				id: "621C750FCD93D1BC"
-				item: "buildinggadgets2:gadget_building"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "621C750FCD93D1BC"
+					item: "buildinggadgets2:gadget_building"
+					type: "item"
+				}
+				{
+					id: "3EA2E989F820876A"
+					item: {
+						Count: 1
+						id: "matter_manipulator:matter_manipulator_mki"
+						tag: {
+							MatterManipulator: { }
+						}
+					}
+					type: "item"
+				}
+			]
 			title: "{quests.extreme_voltage.building_gadgets.title}"
 			x: 1.5d
 			y: 1.0d
@@ -2426,22 +2439,21 @@
 					type: "item"
 				}
 				{
-					id: "3B578E54D11D2CA5"
+					id: "0AED12CA65C4ABE7"
+					item: "tfg:tungsten_anvil"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "60C20FCE157FC44F"
 					item: {
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(gtceu:ev_tungsten_carbide_drill)item(gtceu:ev_tungsten_carbide_screwdriver)item(gtceu:ev_tungsten_carbide_wrench)item(gtceu:ev_tungsten_carbide_chainsaw)item(gtceu:ev_tungsten_carbide_buzzsaw)item(gtceu:ev_tungsten_carbide_wire_cutter))"
+							"ftbfiltersystem:filter": "or(item(gtceu:ev_tungsten_carbide_drill)item(gtceu:ev_tungsten_carbide_screwdriver)item(gtceu:ev_tungsten_carbide_wrench)item(gtceu:ev_tungsten_carbide_chainsaw)item(gtceu:ev_tungsten_carbide_buzzsaw)item(gtceu:ev_tungsten_carbide_wire_cutter)item(gtceu:ev_tungsten_carbide_scythe))"
 						}
 					}
-					optional_task: true
 					title: "{quests.extreme_voltage.tungsten_carbide_tools.task}"
-					type: "item"
-				}
-				{
-					id: "0AED12CA65C4ABE7"
-					item: "tfg:tungsten_anvil"
-					optional_task: true
 					type: "item"
 				}
 			]
@@ -2523,21 +2535,21 @@
 					type: "item"
 				}
 				{
-					id: "318864D5687CE68B"
+					id: "2F68B01564BA75F3"
+					item: "tfg:tungsten_anvil"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5C9A692D259A2652"
 					item: {
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(gtceu:ev_ostrum_iodide_drill)item(gtceu:ev_ostrum_iodide_screwdriver)item(gtceu:ev_ostrum_iodide_wrench)item(gtceu:ev_ostrum_iodide_chainsaw)item(gtceu:ev_ostrum_iodide_buzzsaw)item(gtceu:ev_ostrum_iodide_wire_cutter))"
+							"ftbfiltersystem:filter": "or(item(gtceu:ev_ostrum_iodide_drill)item(gtceu:ev_ostrum_iodide_screwdriver)item(gtceu:ev_ostrum_iodide_wrench)item(gtceu:ev_ostrum_iodide_chainsaw)item(gtceu:ev_ostrum_iodide_buzzsaw)item(gtceu:ev_ostrum_iodide_wire_cutter)item(gtceu:ev_ostrum_iodide_scythe))"
 						}
 					}
 					title: "{quests.extreme_voltage.ostrum_tools.task}"
-					type: "item"
-				}
-				{
-					id: "2F68B01564BA75F3"
-					item: "tfg:tungsten_anvil"
-					optional_task: true
 					type: "item"
 				}
 			]
@@ -2592,6 +2604,40 @@
 			}]
 			x: 23.5d
 			y: 4.5d
+		}
+		{
+			dependencies: ["236F53188110F6D5"]
+			id: "321F8E326EDF54F6"
+			optional: true
+			shape: "heart"
+			tasks: [{
+				id: "28C4FF2914499A02"
+				item: {
+					Count: 1
+					id: "matter_manipulator:matter_manipulator_mkii"
+					tag: {
+						MatterManipulator: { }
+					}
+				}
+				type: "item"
+			}]
+			x: 13.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["70ABD1E3FC1CA672"]
+			description: ["{quests.extreme_voltage.higgs_emitter.title}"]
+			guide_page: "tfg:field_guide tfg:the_moon/the_moon 21"
+			id: "2FFC51987440B656"
+			shape: "heart"
+			subtitle: "{quests.extreme_voltage.higgs_emitter.subtitle}"
+			tasks: [{
+				id: "576DAEECD1EA938D"
+				item: "tfg:higgs_emitter"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.0d
 		}
 	]
 	subtitle: ["{quests.extreme_voltage.subtitle}"]

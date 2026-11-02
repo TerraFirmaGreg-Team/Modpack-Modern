@@ -126,7 +126,7 @@
             "images": [
                 "tfc:textures/gui/book/tutorial/unfamiliarized_pig.png"
             ],
-            "text": "Livestock have a $(thing)Familiarity Indicator$() that shows how familiar they are with you. Hold $(item)$(k:key.sneak)$() and look at the animal to reveal it.",
+            "text": "Zwierzęta hodowlane mają $(thing)wskaźnik ufności$(), który pokazuje, jak bardzo ci ufają. Przytrzymaj $(item)$(k:key.sneak)$() i spórz na zwierzę, aby się pojawił.",
             "border": true
         },
         {

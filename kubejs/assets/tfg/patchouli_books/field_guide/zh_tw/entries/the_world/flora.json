@@ -382,7 +382,7 @@
                 "tag": "tfg:foods/spice_plants"
             },
             "anchor": "spices",
-            "text": "有了$(thing)Firmalife$()，你可以收集並自行種植許多具有烹飪用途的小型植物。它們都可以在野外找到，採收後可以在$(l:agriculture/greenhouse)溫室$()中栽培，它們會消耗 20 點的氮、磷、鉀。"
+            "text": "有了$(thing)群巒生活$()，你可以收集並自行種植許多具有烹飪用途的小型植物。它們都可以在野外找到，採收後可以在$(l:agriculture/greenhouse)溫室$()中栽培，它們會消耗 20 點的氮、磷、鉀。"
         },
         {
             "type": "tfg:table",

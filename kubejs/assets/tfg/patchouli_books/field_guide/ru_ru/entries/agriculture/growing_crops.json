@@ -7,35 +7,35 @@
             "type": "patchouli:text",
             "anchor": "intro",
             "text": "Для выращивания все культуры необходимо посадить на пашню. Некоторые культуры имеют дополнительные требования, такие как нахождение в воде, или требуют палку для роста. Для выращивания$(br2)не требуется $(thing)питательных веществ $(), но они, безусловно, помогают. Есть три питательных вещества: $(b)Азот$(), $(6)Фосфор$() и $(d)Кальций$(). У каждого растения есть любимое питательное вещество",
-            "title": "Growing Crops"
+            "title": "Выращивание урожая"
         },
         {
             "type": "patchouli:text",
-            "text": "Consuming its favorite nutrient causes a crop to grow faster, and improves the yield of the crop at harvest time. That means that crops that consumed more nutrients drop more food when broken! Consuming a nutrient also has the effect of replenishing the other nutrients around it a small amount.$(br)Every crop has a different $(l:the_world/climate#temperature)Temperature$() and $(l:agriculture/growing_crops#hydration)Hydration$() requirement. You can find each crops climate range in $(l:the_world/wild_crops)[Wild Crops]$() or in its item tooltip."
+            "text": "Потребление любимых питательных веществ позволяет посевам расти быстрее, а также повышает количество урожая. Это значит, что сломав посевы поглотившие большее количество питательных веществ, ты получишь больше еды! Когда один вид питательного вещества поглощается из почвы, другие немного восполняются.$(br)Каждая культура имеет свои требования по $(l:the_world/climate#temperature)Температуре$() и $(l:agriculture/growing_crops#hydration)Увлажнению$(). Климатический диапазон каждой культуры можно узнать в $(l:the_world/wild_crops)[Дикие культуры]$() или в подсказке к посевам."
         },
         {
             "type": "patchouli:text",
-            "text": "When crops are planted without sufficient hydration or outside their temperature range the crop will die. If a crop reaches full maturity before dying it will yield excess seeds. You can kill a crop with $(l:agriculture/composting#rotten_compost)Rotten Compost$() to purposefully duplicate its seeds. Crops planted in $(l:agriculture/greenhouse#planters)Greenhouse Planters$() are not capable of dying and will automatically provide bonus seeds."
+            "text": "При недостаточном увлажнении или неподходящей температуре, посаженные растения погибнут. Если посевы успели созреть перед гибелью, то с них можно будет получить лишние семена. Ты можешь убить посевы при помощи $(l:agriculture/composting#rotten_compost)Гнилого компоста$() для намеренного размножения семян. Растения посаженные в $(l:agriculture/greenhouse#planters)Парнике$() не могут погибнуть и автоматически дают дополнительные семена."
         },
         {
             "type": "patchouli:text",
             "anchor": "hydration",
-            "text": "Hydration is a measure of the % water available for the crop. Different crop types calculate their hydration differently.$(li)$(l:the_world/wild_crops)Crop$() and $(l:the_world/wild_fruits#tall_bushes)Berry Bush$() hydration is affected by both local rainfall and proximity to fresh water.$(li2)To be very specific you can calculate crop hydration by following: $(o)$(2)(60 * rainfall / $(t:500 is the maximum rainfall allowed. If you used configs to change the max rainfall replace 500 with that number.)500$()$(o)$(2)) + 20 * (5 - waterCost)$() where $(t:Distance from water is calculated as a 3D grid.)waterCost is the distance to fresh water from 1-5$()",
-            "title": "Hydration"
+            "text": "Увлажнение это мера % воды, доступной посевам. Разные типы растений по-разному рассчитывают своё увлажнение. На увлажнение $(li)$(l:the_world/wild_crops)Культур$() и $(l:the_world/wild_fruits#tall_bushes)Ягодных кустов$() влияют как годовые осадки, так и близость к пресной воде.$(li2)Если вдаваться в подробности, то ты можешь посчитать увлажнение посева вот так: $(o)$(2)(60 * осадки / $(t:500 is the maximum rainfall allowed. If you used configs to change the max rainfall replace 500 with that number.)500$()$(o)$(2)) + 20 * (5 - ценаВоды)$() где $(t:Distance from water is calculated as a 3D grid.)ценаВоды это расстояние до пресной воды в промежутке 1-5$()",
+            "title": "Орошение"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)Hydration for $(l:the_world/wild_fruits#fruit_trees)Fruit Trees$(), $(l:the_world/wild_fruits#palm_fruit_trees)Palm Fruit Trees$(), and $(l:the_world/wild_fruits#banana)Bananas$() is calculated with: $(o)$(2)rainfall / 5$()$(br2)Grapes do not have a hydration requirement. Submerged crops like rice and cranberries also have no hydration requirement since... well... they are submerged in water."
+            "text": "$(li)Увлажнение $(l:the_world/wild_fruits#fruit_trees)Фруктовых деревьев$(), $(l:the_world/wild_fruits#palm_fruit_trees)Фруктовых пальм$() и $(l:the_world/wild_fruits#banana)Бананов$() считается так: $(o)$(2)осадки / 5$()$(br2)У винограда нет требований к увлажнению. Культуры растущие в воде, такие как рис и клюква также не имеют требований к увлажнению так как... ну... они растут в воде."
         },
         {
             "type": "patchouli:text",
             "anchor": "growing_grapes",
-            "text": "Grapes must be grown on trellises constructed from posts and jute fiber. To construct a trellis, place two posts vertically. Then, leaving a one block gap construct another post to the left or right. $(item)$(k:key.use)$() the top and bottom posts with $(thing)Jute Fiber$() to string lines between the posts. Finally plant a grape seed in the space between the posts on dirt or soil. Grape trellises can be chained horizontally to create rows of grapes.",
-            "title": "Growing Grapes"
+            "text": "Виноград должен расти на решётке, сконструированной из столбов и джутового волокна. Чтобы соорудить решётку, поставь два блока столба вертикально. Затем, оставив промежуток в один блок, построй ещё один такой столб слева или справа. При помощи $(item)$(k:key.use)$() повесь $(thing)джутовое волокно$() между двумя столбами нажав по верхней и нижней части одного из столбов. Наконец, посади семечко винограда в землю между столбами. Виноградные решётки можно объединять горизонтально чтобы сделать ряды виноградных лоз.",
+            "title": "Выращивание винограда"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "A grape trellis.",
+            "text": "Столб для виноградной решетки",
             "multiblocks": [
                 {
                     "pattern": [
@@ -82,11 +82,11 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Provided the $(l:the_world/climate#temperature)Temperature$() requirements are satisfied, the grape vine will grow up and over the trellis over the course of a few months. It will fruit in the month of July, flowering the month prior. Grapes can then be harvested and used to produce $(l:cooking/alcohol#wine_making)Wine$().$(br2)Grape plants will not die even when they are outside their temperature range. But they will go dormant and won't produce any fruit until they are back to the right temperature."
+            "text": "При соблюдении правильной $(l:the_world/climate#temperature)Температуры$(), виноградная лоза будет расти вдоль и поверх решётки в течение нескольких месяцев. Она даст плоды в Июле, расцвев месяцем ранее. Виноград может быть собран и использован для приготовления $(l:cooking/alcohol#wine_making)Вина$().$(br2)Виноградная лоза не погибнет даже при неподходящей температуре. Но она заснет и не будет давать плоды, пока температура не вернётся в подходящий диапазон."
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Читать далее",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_crops",

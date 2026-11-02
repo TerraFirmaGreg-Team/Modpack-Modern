@@ -349,7 +349,7 @@
             "type": "patchouli:text",
             "anchor": "disease",
             "title": "Choroby",
-            "text": "Bees with a high Mutant ability have a chance of developing a $(thing)Genetic Disease$(). Diseased bees pass on their affliction to their offspring, and do not produce honey."
+            "text": "Pszczoły z wysoką zdolnością mutacji mają szansę nabawić się $(thing)choroby genetycznej$(). Chore pszczoły przekazują schorzenie potomstwu i nie produkują miodu."
         },
         {
             "type": "patchouli:text",

@@ -1,33 +1,33 @@
 {
-  "name": "Cheese Making",
+  "name": "制作奶酪",
   "category": "tfg:cooking",
   "icon": "firmalife:textures/item/food/gouda.png",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "To make cheese, milk must be $(thing)curdled$() first. To curdle milk, you need $(thing)Rennet$(). Rennet comes from the stomach of $(thing)Ruminant$() animals. This includes $(l:the_world/wild_animals#yak)Yaks$(), $(l:the_world/wild_animals#cow)Cows$(), $(l:the_world/wild_animals#sheep)Sheep$(), $(l:the_world/wild_animals#goat)Goats$(), and $(l:the_world/wild_animals#musk_ox)Musk Oxen$(). To curdle milk, seal it in a $(item)Barrel$() with Rennet for 4 hours."
+      "text": "要制作奶酪，必须先让奶$(thing)凝结$()。凝结奶需要$(thing)凝乳酶$()。凝乳酶来自$(thing)反刍动物$()的胃，包括$(l:the_world/wild_animals#yak)牦牛$()、$(l:the_world/wild_animals#cow)奶牛$()、$(l:the_world/wild_animals#sheep)绵羊$()、$(l:the_world/wild_animals#goat)山羊$()和$(l:the_world/wild_animals#musk_ox)麝牛$()。把奶和凝乳酶一起密封在$(item)大桶$()中 4 小时即可使其凝结。"
     },
     {
       "type": "patchouli:spotlight",
       "anchor": "curd",
-      "title": "Cheese Curds",
+      "title": "芝士凝块",
       "item": {
         "tag": "tfg:foods/cheese_curds"
       },
-      "text": "Curdled milk can then be converted to $(thing)Curds$() by sealing it in a barrel with $(thing)Cheesecloth$(). $(l)Cheesecloth is not reusable$().$(br)Cheese curds can be mixed with a few ingredients and fried to make $(item)Beer Battered Cheese Curds$() or aged into wet and dry cheeses."
+      "text": "接着把凝结的奶和$(thing)奶酪布$()一起密封在大桶中，就能转化为$(thing)凝乳$()。$(l)奶酪布无法重复使用$()。$(br)凝乳可以和几种配料混合后油炸，做成$(item)啤酒面糊芝士凝块$()，或者熟成为湿奶酪和干奶酪。"
     },
     {
       "type": "patchouli:spotlight",
       "anchor": "cheese_wheel",
-      "title": "Cheese Wheels",
+      "title": "奶酪轮",
       "item": {
         "tag": "firmalife:cheese_wheels"
       },
-      "text": "Cheese wheels are blocks made from $(item)Cheese Curds$(). To improve their shelf life, cheese wheels should be $(thing)Aged$() in a $(l:cooking/decay#cellar)Cellar$(). In order to obtain edible cheese from a cheese wheel, it should be sliced off the wheel by clicking $(item)$(k:key.use)$() with a $(thing)Knife$(). If the wheel is sliced or broken, the aging is lost!$(br)$(thing)Dry Cheeses$() are made from curds and salt, while $(thing)Wet Cheeses$() are aged in seawater."
+      "text": "奶酪轮是用$(item)芝士凝块$()制成的方块。为了延长保质期，奶酪轮应$(thing)熟成$()于$(l:cooking/decay#cellar)地窖$()中。要从奶酪轮上取得可食用的奶酪，需要对其按$(item)$(k:key.use)$()并手持$(thing)刀$()，把奶酪从轮上切下来。如果奶酪轮被切开或破坏，熟成进度就会丢失！$(br)$(thing)干奶酪$()由凝乳和盐制成，而$(thing)湿奶酪$()则在海水中熟成。"
     },
     {
       "type": "tfg:multimultiblock",
-      "text": "The aging stages of a wheel of cheese: $(thing)Fresh$() + 28 Days → $(thing)Aged$() + 112 Days → $(thing)Vintage$().",
+      "text": "一整轮奶酪的熟成阶段：$(thing)新鲜$() + 28 天 → $(thing)熟成$() + 112 天 → $(thing)陈年$()。",
       "multiblocks": [
         {
           "pattern": [
@@ -72,7 +72,7 @@
     },
     {
       "type": "patchouli:relations",
-      "title": "Further Reading",
+      "title": "延伸阅读",
       "anchor": "relations",
       "entries": [
         "tfg:cooking/food_and_water",

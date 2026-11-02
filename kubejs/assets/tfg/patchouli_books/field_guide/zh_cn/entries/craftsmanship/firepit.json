@@ -11,12 +11,12 @@
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/firestarter",
-      "text": "Crafting a firestarter can be done with two sticks. Firestarters can be used for any task that requires lighting, such as igniting a candle or starting a forge."
+      "text": "用两根木棍就可以合成一个起火器。起火器能用于任何需要点火的场合，例如点燃蜡烛或点燃锻炉。"
     },
     {
       "type": "patchouli:text",
-      "text": "With a firestarter, you can light a $(thing)Firepit$(). To make one, you will need one $(thing)log$(), three $(thing)sticks$(), and optionally up to five pieces of $(thing)kindling$(). Kindling can be items such as paper products, straw, or fallen leaves, and will increase the chance of successfully creating a firepit by 10 percent per item used. Throw ($(item)$(k:key.drop)$()) all the items on the ground, on the same block. Then use the firestarter on the block with the items floating above it.",
-      "title": "Firepit"
+      "text": "有了起火器，你就可以点燃$(thing)篝火$()。制作篝火需要一根$(thing)原木$()、三根$(thing)木棍$()，还可以选用至多五件$(thing)引火物$()。引火物可以是纸制品、干草或落叶之类的物品，每件能让成功生成篝火的几率提高 10%。把所有物品丢（$(item)$(k:key.drop)$()）在地上同一个方块上，然后对着物品漂浮其上的方块使用起火器。",
+      "title": "篝火"
     },
     {
       "type": "patchouli:multiblock",
@@ -33,13 +33,13 @@
           "X": "tfc:firepit[lit=true]"
         }
       },
-      "name": "Fire!",
+      "name": "生火成功！",
       "text": "如果成功的话，就能点燃一束篝火。",
       "enable_visualize": false
     },
     {
       "type": "patchouli:text",
-      "text": "Using the firepit will now open the firepit screen. On the left are four $(thing)fuel$() slots. Logs, Peat, and Stick Bundles can all be used as firepit fuel by placing them in the topmost slot. Fuel will be consumed from the bottommost slot. There is a gauge which displays the current $(thing)Temperature$() of the firepit, and on the right, a slot for items to be $(l:game_mechanics/heating)heated$() in."
+      "text": "现在使用篝火会打开篝火界面。左侧是四个$(thing)燃料$()槽位。原木、泥炭和木棍捆都可以作为篝火燃料，放入最上方的槽位即可。燃料会从最下方的槽位开始消耗。这里有一个显示篝火当前$(thing)温度$()的仪表，右侧则是一个供物品$(l:game_mechanics/heating)加热$()的槽位。"
     },
     {
       "type": "patchouli:image",
@@ -57,11 +57,11 @@
     {
       "type": "tfg:heat_recipe",
       "recipe": "tfc:heating/cod",
-      "text": "The fire pit is also a good device for $(l:cooking/cooking_methods)Cooking Food$(). All raw meats can be cooked in a firepit, which will lengthen their shelf life. More on decay and preservation can be read $(l:cooking/decay)here$()."
+      "text": "篝火也是$(l:cooking/cooking_methods)烹饪食物$()的好帮手。所有生肉都可以在篝火中烤熟，从而延长保质期。关于腐坏与保鲜的更多内容可以在$(l:cooking/decay)这里$()阅读。"
     },
     {
       "type": "patchouli:text",
-      "text": "The firepit can be extinguished at any time by using a $(thing)Shovel$() on it.$(br2)A firepit can also have other devices added to it to extend its functionality. Using a $(thing)Wrought Iron Grill$() will convert the firepit into a $(l:cooking/cooking_methods#grill)Grill$(), and using a $(thing)Ceramic Pot$() will convert the firepit into a $(l:cooking/cooking_methods#pot)Pot$(). To remove either device, $(item)$(k:key.use)$() while holding $(item)$(k:key.sneak)$(). Be careful not to try to remove a hot grill or pot!"
+      "text": "随时可以用$(thing)铲子$()熄灭篝火。$(br2)篝火还可以加装其他设备来扩展功能。放上$(thing)锻铁烤架$()就能把篝火变成$(l:cooking/cooking_methods#grill)烤架$()，放上$(thing)陶锅$()就能把篝火变成$(l:cooking/cooking_methods#pot)陶锅$()。要取下其中任何一种附件，对其$(item)$(k:key.use)$()时按住$(item)$(k:key.sneak)$()即可。小心别试图取下滚烫的烤架或陶锅！"
     },
     {
       "type": "tfg:multimultiblock",
@@ -110,11 +110,11 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Firepit fuels have different levels of purity. Fuel purity effects how long a fuel burns for and what temperature it may reach. The most pure fuels are logs, while fuels like straw and fallen leaves do not get hot enough to do much cooking, but can help you keep warm in a pinch."
+      "text": "篝火燃料有不同的纯度。燃料纯度决定了燃烧时长以及能达到的温度。最纯净的燃料是原木，而干草、落叶之类的燃料烧不到足够烹调的温度，但在紧要关头能帮你取暖。"
     },
     {
       "type": "patchouli:relations",
-      "title": "Further Reading",
+      "title": "延伸阅读",
       "anchor": "relations",
       "entries": [
         "tfg:cooking/cooking_methods",

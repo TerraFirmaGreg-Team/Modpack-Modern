@@ -115,7 +115,7 @@
             "item": "tfc:bucket/red_dye",
             "title": "Proste przepisy",
             "link_recipes": false,
-            "text": "Other pot recipes transform the items and fluid in the pot into something else. For example, boiling five $(thing)ash$() in $(thing)water$() makes $(thing)lye$()."
+            "text": "Inne przepisy garnka przekształcają przedmioty i ciecz w garnku w coś innego. Na przykład gotowanie pięciu $(thing)kupek popiołu$() w $(thing)wodzie$() daje $(thing)ług$()."
         },
         {
             "title": "Piece",
@@ -145,7 +145,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Pots and Grills can be placed on top of a $(thing)Bottom Oven$(). These devices will get heat automatically from the bottom oven. The pot is only able to be used for making soup. It cannot execute regular pot recipes."
+            "text": "Garnki i ruszty można umieścić na $(thing)dole pieca$(). Te urządzenia pobierają ciepło automatycznie z dołu pieca. Garnek służy tylko do gotowania zupy. Nie wykonuje zwykłych przepisów garnka."
         },
         {
             "type": "patchouli:text",

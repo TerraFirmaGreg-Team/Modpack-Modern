@@ -272,7 +272,7 @@
             "scale": 0.6,
             "name": "Puma",
             "anchor": "cougar",
-            "text": "The cougar prefers most moderate climates, with $(l:the_world/climate#temperature)temperature$() from -10 to 21°C and at least 150mm of $(l:the_world/climate#rainfall)rainfall$()."
+            "text": "Puma preferuje umiarkowany klimat z $(l:the_world/climate#temperature)temperaturą$() od -10 do 21°C oraz $(l:the_world/climate#rainfall)opadami$() co najmniej 150 mm."
         },
         {
             "type": "patchouli:entity",
@@ -280,7 +280,7 @@
             "scale": 0.6,
             "name": "Pantera",
             "anchor": "panther",
-            "text": "The panther prefers most moderate climates, with $(l:the_world/climate#temperature)temperature$() from -10 to 21°C and at least 150mm of $(l:the_world/climate#rainfall)rainfall$()."
+            "text": "Pantera preferuje umiarkowany klimat z $(l:the_world/climate#temperature)temperaturą$() od -10 do 21°C oraz $(l:the_world/climate#rainfall)opadami$() co najmniej 150 mm."
         },
         {
             "type": "patchouli:entity",
@@ -288,7 +288,7 @@
             "scale": 0.55,
             "name": "Lew",
             "anchor": "lion",
-            "text": "The lion spawns in plains with an average $(l:the_world/climate#temperature)temperature$() of at least 16°C, and $(l:the_world/climate#rainfall)rainfall$() between 50 and 300mm."
+            "text": "Lew pojawia się na równinach przy średniej $(l:the_world/climate#temperature)temperaturze$() powyżej 16°C oraz $(l:the_world/climate#rainfall)opadach$() między 50 a 300 mm."
         },
         {
             "type": "patchouli:entity",
@@ -325,7 +325,7 @@
             "entity": "tfc:hyena",
             "anchor": "hyena",
             "scale": 0.7,
-            "text": "The hyena spawns at any $(l:the_world/climate#temperature)temperature$() warmer than 15°C, and $(l:the_world/climate#rainfall)rainfall$() between 80 and 380mm. They hunt in packs. They are not tamable."
+            "text": "Hiena pojawia się przy dowolnej $(l:the_world/climate#temperature)temperaturze$() powyżej 15°C oraz $(l:the_world/climate#rainfall)opadach$() między 80 a 380 mm. Hieny polują w grupach i nie da się ich oswoić."
         },
         {
             "type": "patchouli:entity",
@@ -345,7 +345,7 @@
         {
             "type": "patchouli:text",
             "anchor": "ramming_prey",
-            "text": "$(thing)Ramming$() animals occasionally attempt to charge nearby creatures, including the player. Their attacks are powerful, but can be dodged. They will ram more frequently if attacked.",
+            "text": "$(thing)Taranujące$() zwierzęta czasami próbują zaszarżować na pobliskie stworzenia, w tym gracza. Ich ataki są potężne, ale można ich uniknąć. Gdy zostaną zaatakowane, szarżują częściej.",
             "title": "Taranowanie"
         },
         {
@@ -354,7 +354,7 @@
             "anchor": "boar",
             "scale": 0.7,
             "name": "Dzik",
-            "text": "Dzik pojawia się tam, gdzie $(l:the_world/climate#temperature)temperatura$() jest wyższa niż -5°C i niższa niż 25°C, a $(l:the_world/climate#rainfall)ilość opadów$() wynosi od 130 do 400 mm."
+            "text": "Dzik pojawia się przy $(l:the_world/climate#temperature)temperaturze$() wyższej niż -5°C i niższej niż 25°C oraz $(l:the_world/climate#rainfall)opadach$() pomiędzy 130 a 400 mm."
         },
         {
             "type": "patchouli:entity",
@@ -362,7 +362,7 @@
             "anchor": "moose",
             "scale": 0.7,
             "name": "Łoś",
-            "text": "The moose spawns in forests at $(l:the_world/climate#temperature)temperature$() below 10°C and above -15°C, and $(l:the_world/climate#rainfall)rainfall$() between 150 and 300mm."
+            "text": "Łoś pojawia się w lasach przy $(l:the_world/climate#temperature)temperaturze$() poniżej 10°C i powyżej -15°C oraz $(l:the_world/climate#rainfall)opadach$() od 150 do 300 mm."
         },
         {
             "type": "patchouli:entity",
@@ -370,7 +370,7 @@
             "anchor": "wildebeest",
             "scale": 0.7,
             "name": "Gnu",
-            "text": "The wildebeest spawns in open plains at any $(l:the_world/climate#temperature)temperature$() above 13°C, and $(l:the_world/climate#rainfall)rainfall$() between 90 and 380mm."
+            "text": "Gnu pojawia się na równinach przy dowolnej $(l:the_world/climate#temperature)temperaturze$() powyżej 13°C oraz $(l:the_world/climate#rainfall)opadach$() między 90 a 380 mm."
         },
         {
             "type": "patchouli:entity",
@@ -378,13 +378,13 @@
             "anchor": "bison",
             "scale": 0.7,
             "name": "Bizon",
-            "text": "The bison spawns in open plains at $(l:the_world/climate#temperature)temperature$() below 15°C and above -10°C, and $(l:the_world/climate#rainfall)rainfall$() between 160 and 420mm."
+            "text": "Bizon pojawia się na równinach przy $(l:the_world/climate#temperature)temperaturze$() poniżej 15°C i powyżej -10°C oraz $(l:the_world/climate#rainfall)opadach$() między 160 a 420 mm."
         },
         {
             "type": "patchouli:text",
             "anchor": "prey",
-            "text": "$(thing)Prey$() animals fear players and predators. They are adept at fleeing from danger, but generally cannot fight back. Some prey animals enjoy snacking on crops.",
-            "title": "Zwierzyna"
+            "text": "Zwierzęta $(thing)łowne$() boją się graczy i drapieżników. Zwykle uciekają przed niebezpieczeństwem, i nie są w stanie ci oddać. Niektóre zwierzęta będą zjadać twoje plony.",
+            "title": "Zwierzyna łowna"
         },
         {
             "type": "patchouli:entity",
@@ -407,7 +407,7 @@
             "entity": "tfc:deer",
             "anchor": "deer",
             "scale": 0.7,
-            "text": "The deer spawns in forests at any $(l:the_world/climate#temperature)temperature$() below 25°C and above -15°C, and $(l:the_world/climate#rainfall)rainfall$() between 130 and 400mm."
+            "text": "Jeleń pojawia się w lasach przy dowolnej $(l:the_world/climate#temperature)temperaturze$() poniżej 25°C i powyżej -15°C oraz $(l:the_world/climate#rainfall)opadach$() od 130 do 400 mm."
         },
         {
             "type": "patchouli:entity",
@@ -415,14 +415,14 @@
             "scale": 0.6,
             "name": "Renifer",
             "anchor": "caribou",
-            "text": "The caribou spawns at any $(l:the_world/climate#temperature)temperature$() below -9°C, and $(l:the_world/climate#rainfall)rainfall$() between 110 and 500mm."
+            "text": "Renifer pojawia się przy dowolnej $(l:the_world/climate#temperature)temperaturze$() poniżej -9°C oraz $(l:the_world/climate#rainfall)opadach$() między 110 a 500 mm."
         },
         {
             "type": "patchouli:entity",
             "entity": "tfc:gazelle",
             "scale": 0.7,
             "anchor": "gazelle",
-            "text": "The gazelle spawns in open plains at any $(l:the_world/climate#temperature)temperature$() above 12°C, and $(l:the_world/climate#rainfall)rainfall$() between 90 and 380mm."
+            "text": "Gazela pojawia się na równinach przy dowolnej $(l:the_world/climate#temperature)temperaturze$() powyżej 12°C oraz $(l:the_world/climate#rainfall)opadach$() między 90 a 380 mm."
         },
         {
             "type": "patchouli:entity",
@@ -430,14 +430,14 @@
             "scale": 0.9,
             "name": "Bongo leśne",
             "anchor": "bongo",
-            "text": "The bongo spawns in forests at any $(l:the_world/climate#temperature)temperature$() above 15°C, and $(l:the_world/climate#rainfall)rainfall$() between 230 and 500mm."
+            "text": "Bongo pojawia się w lasach przy dowolnej $(l:the_world/climate#temperature)temperaturze$() powyżej 15°C oraz $(l:the_world/climate#rainfall)opadach$()  od 230 do 500 mm."
         },
         {
             "type": "patchouli:entity",
             "entity": "tfc:grouse",
             "scale": 0.7,
             "anchor": "grouse",
-            "text": "The grouse spawns at any $(l:the_world/climate#temperature)temperature$() below 13°C and above -12°C, and $(l:the_world/climate#rainfall)rainfall$() between 150 and 400mm."
+            "text": "Kuropatwa pojawia się przy dowolnej $(l:the_world/climate#temperature)temperaturze$() poniżej 13°C i powyżej -12°C oraz $(l:the_world/climate#rainfall)opadach$() od 150 do 400 mm."
         },
         {
             "type": "patchouli:entity",
@@ -451,7 +451,7 @@
             "entity": "tfc:turkey",
             "scale": 0.7,
             "anchor": "turkey",
-            "text": "The turkey spawns in forests at any $(l:the_world/climate#temperature)temperature$() below 17°C and above 0°C, and $(l:the_world/climate#rainfall)rainfall$() between 250 and 450mm."
+            "text": "Indyk pojawia się w lasach przy dowolnej $(l:the_world/climate#temperature)temperaturze$() poniżej 17°C i powyżej 0°C oraz $(l:the_world/climate#rainfall)opadach$() od 250 do 450 mm."
         },
         {
             "type": "patchouli:entity",
@@ -468,7 +468,7 @@
             "offset": -0.2,
             "name": "Leming",
             "anchor": "lemming",
-            "text": "The lemming spawns at any $(l:the_world/climate#temperature)temperature$() below -3°C and above -12°C, and $(l:the_world/climate#rainfall)rainfall$() between 160 and 500mm."
+            "text": "Leming pojawia się przy dowolnej $(l:the_world/climate#temperature)temperaturze$() poniżej -3°C i powyżej -12°C oraz $(l:the_world/climate#rainfall)opadach$() od 160 do 500 mm."
         },
         {
             "type": "patchouli:entity",
@@ -476,7 +476,7 @@
             "scale": 1.2,
             "name": "Skoczek pustynny",
             "anchor": "jerboa",
-            "text": "The jerboa spawns at any $(l:the_world/climate#temperature)temperature$() below 25°C and above -3°C, and $(l:the_world/climate#rainfall)rainfall$() below 160mm."
+            "text": "Skoczek pustynny pojawia się przy dowolnej $(l:the_world/climate#temperature)temperaturze$() poniżej 25°C i powyżej -3°C oraz $(l:the_world/climate#rainfall)opadach$()  poniżej 160 mm."
         },
         {
             "type": "patchouli:entity",
@@ -484,12 +484,12 @@
             "scale": 0.8,
             "name": "Mangusta",
             "anchor": "mongoose",
-            "text": "The mongoose spawns at any $(l:the_world/climate#temperature)temperature$() above 12°C, and $(l:the_world/climate#rainfall)rainfall$() between 160 and 500mm."
+            "text": "Mangusta pojawia się przy dowolnej $(l:the_world/climate#temperature)temperaturze$() powyżej 12°C oraz $(l:the_world/climate#rainfall)opadach$() między 160 a 500 mm."
         },
         {
             "type": "patchouli:text",
             "anchor": "aquatic",
-            "text": "$(thing)Aquatic Animals$() are a broad category which covers a number of different behaviors. They may be $(thing)Shore Dwellers$(), $(thing)Fish$(), $(thing)Shellfish$(), or $(thing)Large Aquatic Creatures$()",
+            "text": "$(thing)Zwierzęta wodne$() to szeroka kategoria obejmująca stworzenia o różnych zachowaniach. Mogą to być $(thing)mieszkańcy wybrzeży$(), $(thing)ryby$(), $(thing)skorupiaki$() lub $(thing)duże zwierzęta wodne$().",
             "title": "Zwierzęta wodne"
         },
         {
@@ -586,7 +586,7 @@
             "scale": 0.7,
             "name": "Homar",
             "anchor": "lobster",
-            "text": "Homary występują w oceanach o $(l:the_world/climate#temperature)temperaturze$() nieprzekraczającej 21°C."
+            "text": "Homary występują w oceanach o $(l:the_world/climate#temperature)temperaturze$() co najwyżej 21°C."
         },
         {
             "type": "patchouli:entity",
@@ -602,12 +602,12 @@
             "scale": 0.7,
             "name": "Skrzypłocz",
             "anchor": "horseshoe_crab",
-            "text": "Horseshoe crabs spawn in oceans of moderate climate, $(l:the_world/climate#temperature)temperature$() between 10 and 21°C and with a $(l:the_world/climate#rainfall)rainfall$() of at most 400mm."
+            "text": "Skrzypłocze pojawiają się w oceanach o umiarkowanym klimacie, przy $(l:the_world/climate#temperature)temperaturze$() między 10 a 21°C oraz $(l:the_world/climate#rainfall)opadach$() co najwyżej 400 mm."
         },
         {
             "type": "patchouli:text",
             "anchor": "large_aquatic_animals",
-            "text": "$(thing)Large Water Creatures$() are larger animals that live in the bigger bodies of water. Some of them hunt fish. They drop $(l:game_mechanics/lighting)blubber$(), which can be made into lamp fuel.",
+            "text": "$(thing)Duże zwierzęta wodne$() żyją w większych zbiornikach wodnych. Niektóre z nich polują na ryby. Można z nich pozyskać $(l:game_mechanics/lighting)sadło$(), który można wykorzystać jako paliwo do lampy.",
             "title": "Duże zwierzęta wodne"
         },
         {
@@ -616,7 +616,7 @@
             "scale": 0.25,
             "name": "Orka",
             "anchor": "orca",
-            "text": "Orca whales live in deep oceans with $(l:the_world/climate#temperature)temperature$() of at most 19°C and $(l:the_world/climate#rainfall)rainfall$() of at least 100mm."
+            "text": "Orki żyją w głębokich oceanach, o $(l:the_world/climate#temperature)temperaturze$() co najwyżej 19°C oraz $(l:the_world/climate#rainfall)opadach$() co najmniej 100 mm."
         },
         {
             "type": "patchouli:entity",
@@ -624,7 +624,7 @@
             "scale": 0.4,
             "name": "Delfin",
             "anchor": "dolphin",
-            "text": "Dolphins live in deep oceans with $(l:the_world/climate#temperature)temperature$() of at least 10°C and $(l:the_world/climate#rainfall)rainfall$() of at least 200mm."
+            "text": "Delfiny żyją w głębokich oceanach, o $(l:the_world/climate#temperature)temperaturze$() co najmniej 10°C oraz $(l:the_world/climate#rainfall)opadach$() co najmniej 200 mm."
         },
         {
             "type": "patchouli:entity",
@@ -632,7 +632,7 @@
             "scale": 0.25,
             "name": "Manat",
             "anchor": "manatee",
-            "text": "Manatees live in any warm lake, with $(l:the_world/climate#temperature)temperature$() of at least 20°C and $(l:the_world/climate#rainfall)rainfall$() of at most 300mm."
+            "text": "Manaty żyją w każdym ciepłym jeziorze, o$(l:the_world/climate#temperature)temperaturze$() co najmniej 20°C oraz $(l:the_world/climate#rainfall)opadach$() co najwyżej 300 mm."
         },
         {
             "type": "patchouli:entity",
@@ -645,7 +645,7 @@
         {
             "type": "patchouli:text",
             "anchor": "squid",
-            "text": "Squid can spawn in any deep ocean. They drop $(thing)Ink Sacs$(), and ink any player that gets too close. Some say that squids in deep, unexplored caves have strange properties.",
+            "text": "Kałamarnice mogą pojawiać się w dowolnym głębokim oceanie. Wypadają z nich $(thing)woreczki atramentu$() i obryzgują atramentem każdego gracza, który podpłynie zbyt blisko. Niektórzy mówią, że kałamarnice w głębokich, niezbadanych jaskiniach mają dziwne właściwości.",
             "title": "Kałamarnica"
         },
         {

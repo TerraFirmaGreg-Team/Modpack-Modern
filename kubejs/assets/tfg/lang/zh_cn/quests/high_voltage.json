@@ -91,7 +91,8 @@
     "quests.high_voltage.nitric_acid.desc.2": "制作&a硝酸&r主要有两种方法——&o好的&a方法&r和&4坏的&r方法！\n\n因此，我们将为你指引最佳方案：\n\n使用&3大型化学反应釜&r制备&a二氧化氮&r，随后在普通&3化学反应釜&r中将其与更多&d氧气&r和&d水&r反应，即可得到&a硝酸&r！\n\n此过程需消耗大量&d氧气&r，请参考&7LV&r章节中对应的任务来获取高效量产方案。注意该方法完全无需氢气！",
     "quests.high_voltage.cetane_diesel.title": "高十六烷值柴油",
     "quests.high_voltage.cetane_diesel.subtitle": "这是为了更进一步",
-    "quests.high_voltage.cetane_diesel.desc": "既然你已经解锁了&6HV&r搅拌机并且掌握了&e硝酸&r制备技术，现在就有可能制造&a高十六烷值柴油&r了，其能量密度将提升&e180%%&r。\n\n唯一棘手的环节是获取&b四硝基甲烷&r。建议通过混合&9硝酸&r与&d乙烯酮&r来生产——若将&9硫酸&r（当前应已大量储备）与&c乙酸&r结合，乙烯酮的制备并不困难，而乙酸只需通过&3氧气&r和&5乙烯&r即可轻松制得。\n\n&c别忘了&r将机器设置切换至2号电路模式，否则最终产物将是&6聚乙烯&r！",
+    "quests.high_voltage.cetane_diesel.desc.1": "既然你已解锁&6HV&r搅拌机，并且能够获取&e硝酸&r，现在就可以制作&a高十六烷值柴油&r了，其效能可提升&e180%%&r。\n\n唯一棘手的地方在于获取&b四硝基甲烷&r（TNM）或&b2-乙基己基硝酸酯&r（2-EHN）。如果你已经搭建了&c石油加工&r产线，2-乙基己基硝酸酯尤其容易获得，而四硝基甲烷的制作耗电稍低一些。",
+    "quests.high_voltage.cetane_diesel.desc.2": "我们推荐通过混合&9硝酸&r和&d乙烯酮&r来生产四硝基甲烷。乙烯酮本身并不难制作，只需将&9硫酸&r——你现在应该已经有很多了——与&c乙酸&r结合即可，而乙酸可以轻松地由&3氧&r和&5乙烯&r制得。\n\n&c别忘了&r将机器设置为电路 2，否则你最终会产出&6聚乙烯&r！\n\n对于2-乙基己基硝酸酯，只有一条路线。首先用&e丙烯、氢和一氧化碳&r制得&a丁醛&r，然后沿着配方链逐步推进。",
     "quests.high_voltage.smd_components.title": "贴片元件",
     "quests.high_voltage.smd_components.subtitle": "替代元件！",
     "quests.high_voltage.smd_components.desc": "&e贴片&r&a元件&r是GTCEu独有的组件，是下一代&5纳米级&r电路的必备材料，在多数电路配方中可替代非贴片元件。\n\n当然它们的制作工艺更为复杂——但这可是格雷科技！你还期待什么呢？\n\n建议为这些元件投资自动化产线——你的需求将永无止境。",
@@ -232,5 +233,7 @@
     "quests.space_survival.compressed_gases.task": "任何压缩可呼吸气体",
     "quests.space_survival.railgun.title": "星际物流",
     "quests.space_survival.railgun.subtitle": "末影箱？从来没听说过她！",
-    "quests.space_survival.railgun.desc": "&7在&b群峦格雷&r整合包中，跨维度或长距离运输物品需要建造特殊的&6多方块结构&r。\n\n该系统具备&a强大而灵活&r的特性，提供多种设置选项，可让你根据需求自定义物流方案。\n\n这套完美系统能将所有&a被动产出&r的资源精准输送至其他行星的所需之处！更配备强大的&d配置系统&r，让你可从单一控制点全面掌控运输网络。"
+    "quests.space_survival.railgun.desc": "&7在&b群峦格雷&r整合包中，跨维度或长距离运输物品需要建造特殊的&6多方块结构&r。\n\n该系统具备&a强大而灵活&r的特性，提供多种设置选项，可让你根据需求自定义物流方案。\n\n这套完美系统能将所有&a被动产出&r的资源精准输送至其他行星的所需之处！更配备强大的&d配置系统&r，让你可从单一控制点全面掌控运输网络。",
+    "quests.high_voltage.oxygen_distributor.subtitle": " 又是涡轮转子！你知道这些有多贵吗？",
+    "quests.high_voltage.oxygen_distributor.desc": "&6氧气分配器&r对维持你的月球基地运转至关重要。首先——谁不想在自己的基地里走动时摘掉头盔呢？其次，更重要的是——大多数应用能源2配方都需要&5富氧环境&r才能运行。\n\n选一个你想要的涡轮转子吧，但记住&b效率&r会降低每tick消耗的可呼吸气体量。"
 }

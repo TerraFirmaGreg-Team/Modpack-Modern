@@ -1,22 +1,22 @@
 {
-	"name": "Space Stations",
+	"name": "空间站",
 	"category": "tfg:the_moon",
 	"icon": "ad_astra:textures/gui/sprites/space_station.png",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "By keeping the following items in your inventory (or the inventory of your rocket), you'll be able to build a $(item)Space Station$() in orbit once you launch!$(br)$(li)43x Aluminium Frame$(li)24x Glass Plate$(li)4x Glowstone Dust$(li)1x Launch Pad"
+			"text": "只要把以下物品放在物品栏里（或火箭的物品栏里），发射后你就能在轨道上建造$(item)空间站$()！$(br)$(li)43x 铝框架$(li)24x 玻璃板$(li)4x 荧石粉$(li)1x 发射台"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "There's not really much to do up there, and they're totally optional, but if you want a void dimension for whatever reason, or just $(italic)really$() like sky diving, they're an option.$(br2)Be sure you bring something to hold on to, as orbits have $(thing)no gravity$().$(br2)$(bold)Tip:$() Orbits count as a $(item)Cleanroom$() for the purposes of recipe conditions."
+			"text": "上面其实没什么可做的，而且完全可选。不过如果你出于某种原因想要一个虚空维度，或者只是$(italic)非常$()喜欢跳伞，那它也是个选择。$(br2)记得带些能抓住的东西，因为轨道上$(thing)没有重力$()。$(br2)$(bold)提示：$()在配方条件判定中，轨道算作$(item)超净间$()。"
 		},
 		{
 			"type": "patchouli:multiblock",
 			"anchor": "space_station",
-			"name": "Space Platform",
-			"text": "A platform will be constructed for your rocket to land on.",
+			"name": "太空平台",
+			"text": "会自动建造一个平台，供你的火箭降落。",
 			"enable_visualize": false,
 			"multiblock": {
 				"pattern": [
@@ -50,11 +50,11 @@
 			"type": "patchouli:spotlight",
 			"item": "ad_astra:zip_gun",
 			"anchor": "zip_gun",
-			"text": "A Zip Gun can be filled up with any of the breathable $(l:the_moon/the_moon#gases)Compressed Gases$() to shoot out air, pushing you around in low gravity environments. They're essential if you want to build anything in orbit!"
+			"text": "压缩枪可以充入任意一种可呼吸的$(l:the_moon/the_moon#gases)压缩气体$()，喷射气流推动你在低重力环境中移动。想在轨道上建造任何东西，它都必不可少！"
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "延伸阅读",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_moon/the_moon",

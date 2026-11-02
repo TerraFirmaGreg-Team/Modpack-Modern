@@ -267,7 +267,7 @@
             "type": "patchouli:text",
             "anchor": "roof_building",
             "title": "建造屋頂",
-            "text": "使用$(bold)Roads and Roofs$()模組建造屋頂時，要從框架開始。$(thing)屋頂框架方塊$()可以用木材和木棒合成，也能做成階梯和半磚的變體。這些方塊可以用來勾勒屋頂的形狀，是所有屋頂的起點。"
+            "text": "使用$(bold)Roads and Roofs(道路與屋頂)$()模組建造屋頂時，要從框架開始。$(thing)屋頂框架方塊$()可以用木材和木棒合成，也能做成階梯和半磚的變體。這些方塊可以用來勾勒屋頂的形狀，是所有屋頂的起點。"
         },
         {
             "type": "patchouli:text",
@@ -285,11 +285,11 @@
             "type": "patchouli:text",
             "anchor": "modern",
             "title": "現代材料",
-            "text": "想找更現代一點的材料嗎？$(br)$(li)$(thing)GregTech$()有一些混凝土方塊和金屬立柱，它們也有$(l:logistics/roads)移動速度加成$()。它還有大量色彩繽紛的燈具和金屬板方塊。$(li)$(thing)Create Deco$()有一些金屬走道、窗戶、金屬板、燈具和許多顏色的磚塊。"
+            "text": "想找更現代一點的材料嗎？$(br)$(li)$(thing)GregTech(格雷科技)$()有一些混凝土方塊和金屬立柱，它們也有$(l:logistics/roads)移動速度加成$()。它還有大量色彩繽紛的燈具和金屬板方塊。$(li)$(thing)Create(機械動力) Deco(機械動力：裝飾)$()有一些金屬走道、窗戶、金屬板、燈具和許多顏色的磚塊。"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(item)大梁$()、$(item)支柱$()和$(item)桁架$()非常適合作為工業支撐結構。$(li)注重安全嗎？$(thing)GregTech$()、$(thing)Create Deco$()和$(thing)Modern Markings$()都有各種危險標誌和裝飾。$(li)$(thing)Ad Astra$()有更多充滿未來感的方塊，例如 3x3 的門、更多光源和其他金屬方塊。$(li)$(thing)Create: Steam 'n' Rails$()的$(item)機車金屬$()提供大量彩色金屬方塊可供選擇。"
+            "text": "$(li)$(item)大梁$()、$(item)支柱$()和$(item)桁架$()非常適合作為工業支撐結構。$(li)注重安全嗎？$(thing)GregTech(格雷科技)$()、$(thing)Create(機械動力) Deco(機械動力：裝飾)$()和$(thing)Modern Markings(現代標示)$()都有各種危險標誌和裝飾。$(li)$(thing)Ad Astra(向星辰)$()有更多充滿未來感的方塊，例如 3x3 的門、更多光源和其他金屬方塊。$(li)$(thing)Create: Steam 'n' Rails(機械動力：蒸汽與鐵路)$()的$(item)機車金屬$()提供大量彩色金屬方塊可供選擇。"
         },
         {
             "type": "patchouli:relations",

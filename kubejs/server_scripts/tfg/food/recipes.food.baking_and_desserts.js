@@ -251,7 +251,7 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 		itemInputs: ['#tfc:sweetener', 'firmalife:food/butter', '#tfc:foods/flour'],
 		fluidInputs: ['#tfg:clean_water 1000'],
 		itemOutputs: ['firmalife:food/pie_dough'],
-		itemOutputProvider: TFC.isp.of('firmalife:food/pie_dough').copyOldestFood()
+		itemOutputProvider: TFC.isp.of('firmalife:food/pie_dough').resetFood()
 	});
 
 	// Jam Pie

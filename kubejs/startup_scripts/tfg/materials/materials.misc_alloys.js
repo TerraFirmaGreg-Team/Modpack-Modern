@@ -39,6 +39,7 @@ function registerTFGMiscAlloyMaterials(event) {
 
 	event.create('tfg:boron_carbide')
 		.ingot()
+		.fluid()
 		.iconSet('dull')
 		.color(0x42705D)
 		.components('4x boron', '1x carbon')

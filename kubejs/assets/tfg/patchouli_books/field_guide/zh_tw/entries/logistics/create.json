@@ -40,7 +40,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "在包裹裝卸站上放一個$(item)告示牌$()，它就會自動把告示牌上的內容標記到所有包裹上，作為目的地地址。等你開始使用各種方式規劃包裹路線時，這會更有用。$(c)注意：Framed Blocks 的告示牌無法用於此用途！$()$(br2)包裹裝卸站也能拆開放進去的包裹，把內容物卸到所連接的物品欄中。"
+			"text": "在包裹裝卸站上放一個$(item)告示牌$()，它就會自動把告示牌上的內容標記到所有包裹上，作為目的地地址。等你開始使用各種方式規劃包裹路線時，這會更有用。$(c)注意：Framed Blocks(框架方塊) 的告示牌無法用於此用途！$()$(br2)包裹裝卸站也能拆開放進去的包裹，把內容物卸到所連接的物品欄中。"
 		},
 		{
 			"type": "patchouli:multiblock",
@@ -228,7 +228,7 @@
 			"type": "patchouli:text",
 			"anchor": "package_tips",
 			"title": "包裹小技巧",
-			"text": "包裹會從四種*可能的外觀中隨機產生，所以像 GregTech 的$(item)物品過濾器$()這類東西會$(thing)非常難設定$()！我們建議盡可能使用$(l:logistics/create#package_filter)包裹過濾器$()，不過……$(br2)$(7)* 流體是四種，物品其實多得多，因為還有好幾種秘密的稀有款式$()"
+			"text": "包裹會從四種*可能的外觀中隨機產生，所以像 GregTech(格雷科技) 的$(item)物品過濾器$()這類東西會$(thing)非常難設定$()！我們建議盡可能使用$(l:logistics/create#package_filter)包裹過濾器$()，不過……$(br2)$(7)* 流體是四種，物品其實多得多，因為還有好幾種秘密的稀有款式$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -474,7 +474,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "不出所料，$(item)流體工廠控制片$()就是流體版的工廠控制片。$(br2)也一定要看看工廠控制片的$(thing)思索$()！裡面有$(italic)大量$()設定方式的視覺化範例。$(br2)$(bold)注意：$()如果你真的很愛用儀表，希望有更多選擇，$(tfg_short)有選用的 $(l:https://www.curseforge.com/minecraft/mc-mods/create-extra-gauges)Create: Extra Gauges$() 相容支援！只要安裝這個模組，新的配方就會出現。"
+			"text": "不出所料，$(item)流體工廠控制片$()就是流體版的工廠控制片。$(br2)也一定要看看工廠控制片的$(thing)思索$()！裡面有$(italic)大量$()設定方式的視覺化範例。$(br2)$(bold)注意：$()如果你真的很愛用儀表，希望有更多選擇，$(tfg_short)有選用的 $(l:https://www.curseforge.com/minecraft/mc-mods/create-extra-gauges)Create: Extra Gauges(機械動力：額外控制片)$() 相容支援！只要安裝這個模組，新的配方就會出現。"
 		},
 		{
 			"type": "patchouli:relations",

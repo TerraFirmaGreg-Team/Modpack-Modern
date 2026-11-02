@@ -49,6 +49,13 @@ const registerBeneathBlockTags = (event) => {
 
     event.add('tfc:can_landslide', 'beneath:soul_clay')
 
+	event.remove('tfc:can_trigger_collapse', '#beneath:nether_bricks')
+	event.remove('tfc:can_trigger_collapse', '#beneath:nether_brick_decor')
+	event.remove('tfc:can_trigger_collapse', '#beneath:blackstone')
+	event.remove('tfc:can_trigger_collapse', '#beneath:blackstone_decor')
+	event.remove('tfc:can_start_collapse', '#beneath:nether_bricks')
+	event.remove('tfc:can_start_collapse', '#beneath:blackstone')
+
 	event.add('beneath:blackstone_decor', 'minecraft:blackstone');
 	event.remove('beneath:blackstone')
 

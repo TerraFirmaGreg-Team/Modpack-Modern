@@ -1076,7 +1076,7 @@
         {
             "type": "patchouli:text",
             "anchor": "acai",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 24 - 70 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 10 - 100 %$(br2)Açaí tree clusters grow in 5 stages and yield 4-8 fruits when harvested.",
+            "text": "$(bold)$(l:the_world/climate#temperature)Temperatura$(): 24 - 70°C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Nawodnienie$(): 10 - 100%$(br2)Kiście owoców euterpy rosną w 5 etapach i przy zbiorze dają 4-8 owoców.",
             "title": "Euterpa"
         },
         {

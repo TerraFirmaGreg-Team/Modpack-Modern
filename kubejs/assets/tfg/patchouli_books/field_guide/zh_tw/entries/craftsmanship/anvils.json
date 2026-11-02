@@ -412,7 +412,7 @@
             "type": "patchouli:text",
             "anchor": "anvil_helper",
             "title": "鐵砧輔助指南",
-            "text": "在$(l:craftsmanship/anvils#metal_anvil)鐵砧$()上$(l:craftsmanship/anvils#working)鍛造$()是$(tfg)中的關鍵程序，因為你在$(thing)蒸汽與機械時代$()的大部分工作都需要使用鐵砧。$(br)本指南分為兩部分：$(l:craftsmanship/anvils#ui_explained)了解介面$()和$(l:craftsmanship/anvils#how_to_perfectly_forge)如何完美鍛造$()。$(br2)本模組包有一個名為$(l:https://www.curseforge.com/minecraft/texture-packs/tfc-anvil-helper-patched)TFC Anvil Helper$()的自訂$(thing)資源包$()，你需要啟用它才能看懂本指南。$()"
+            "text": "在$(l:craftsmanship/anvils#metal_anvil)鐵砧$()上$(l:craftsmanship/anvils#working)鍛造$()是$(tfg)中的關鍵程序，因為你在$(thing)蒸汽與機械時代$()的大部分工作都需要使用鐵砧。$(br)本指南分為兩部分：$(l:craftsmanship/anvils#ui_explained)了解介面$()和$(l:craftsmanship/anvils#how_to_perfectly_forge)如何完美鍛造$()。$(br2)本模組包有一個名為$(l:https://www.curseforge.com/minecraft/texture-packs/tfc-anvil-helper-patched)TFC Anvil Helper(TFC 鐵砧幫手)$()的自訂$(thing)資源包$()，你需要啟用它才能看懂本指南。$()"
         },
         {
             "type": "patchouli:image",

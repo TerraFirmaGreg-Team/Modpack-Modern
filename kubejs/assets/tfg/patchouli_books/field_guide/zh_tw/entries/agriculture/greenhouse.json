@@ -51,31 +51,31 @@
             "type": "patchouli:spotlight",
             "anchor": "large_planter",
             "item": "firmalife:large_planter",
-            "text": "$(thing)大型種植盆$()是最簡單的種植盆。它從種子開始種植單一作物，成熟後按下$(item)$(k:key.use)$()即可收成。$(br)大型種植盆通常用來種植$(thing)大型作物$()和$(thing)穀物$()。不過要種植穀物，你需要$(thing)銅$()或更高等級的溫室。"
+            "text": "$(thing)大型種植盆$()是最簡單的種植盆。它從種子開始種植單一作物，成熟後按下$(item)$(k:key.use)$()即可收成。$(br)大型種植盆通常用來種植$(thing)大型作物$()和$(thing)穀物$()。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "quad_planter",
             "item": "firmalife:quad_planter",
-            "text": "$(thing)四格種植盆$()可同時種植四株各自獨立的作物，它們共用同一個養分池，成熟後可分別按下$(item)$(k:key.use)$()收成。$(br)四格種植盆通常用來種植$(thing)洋蔥$()和$(thing)甜菜$()等較小的蔬菜。這些作物可以在任何類型的溫室中種植。"
+            "text": "$(thing)四格種植盆$()可同時種植四株各自獨立的作物，它們共用同一個養分池，成熟後可分別按下$(item)$(k:key.use)$()收成。$(br)四格種植盆通常用來種植$(thing)洋蔥$()和$(thing)甜菜$()等較小的蔬菜。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "bonsai_planter",
             "item": "firmalife:bonsai_planter",
-            "text": "$(thing)盆景種植盆$()可從樹苗種出小型果樹。$(br)盆景種植盆可種植$(item)果樹類型$()，但$(thing)香蕉$()和$(thing)棕櫚果樹$()除外，這兩種需要$(thing)懸掛種植盆$()。它們需要$(thing)鐵$()或更高等級的溫室才能生長。"
+            "text": "$(thing)盆景種植盆$()可從樹苗種出小型果樹。$(br)盆景種植盆可種植$(item)果樹類型$()，但$(thing)香蕉$()和$(thing)棕櫚果樹$()除外，這兩種需要$(thing)懸掛種植盆$()。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "hanging_planter",
             "item": "firmalife:hanging_planter",
-            "text": "$(thing)懸掛種植盆$()讓作物倒吊生長。$(br)懸掛種植盆可種植$(thing)櫛瓜$()、$(thing)南瓜$()、$(thing)西瓜$()、$(thing)香蕉$()和$(thing)棕櫚果樹$()。棕櫚果樹需要$(thing)銅以上$()的溫室，櫛瓜可在任何等級種植，其餘則需要$(thing)鐵以上$()。懸掛種植盆必須固定在上方的實心方塊上。"
+            "text": "$(thing)懸掛種植盆$()讓作物倒吊生長。$(br)懸掛種植盆可種植$(thing)櫛瓜$()、$(thing)南瓜$()、$(thing)西瓜$()、$(thing)香蕉$()和$(thing)棕櫚果樹$()。懸掛種植盆必須固定在上方的實心方塊上。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "trellis_planter",
             "item": "firmalife:trellis_planter",
-            "text": "$(thing)棚架種植盆$()用來種植漿果叢。$(br)棚架種植盆具有$(thing)繁殖$()漿果叢的獨特特性。如果在長有成熟漿果叢的棚架種植盆上方再放置一個，漿果叢有機率向上長進上方的種植盆。棚架種植盆通常需要$(thing)鐵$()或更高等級的溫室才能運作。"
+            "text": "$(thing)棚架種植盆$()用來種植漿果叢。$(br)棚架種植盆具有$(thing)繁殖$()漿果叢的獨特特性。如果在長有成熟漿果叢的棚架種植盆上方再放置一個，漿果叢有機率向上長進上方的種植盆。"
         },
         {
             "type": "patchouli:spotlight",
@@ -98,7 +98,7 @@
             "title": "管道",
             "item": "gtceu:copper_tiny_fluid_pipe",
             "type": "patchouli:spotlight",
-            "text": "要為灑水器供水，可以將$(thing)流體管道$()連接到灑水器，再用$(thing)機械幫浦$()抽水。$(br)你可以手持$(t:例如銅框架)GregTech 框架$()或溫室連接埠對管道按下$(item)$(k:key.use)$()，讓管道穿過牆壁。手持扳手對流體管道按下$(item)$(k:key.use)$()可改變方向，而在$(thing)副手空著$()時按下$(item)$(k:key.sneak) + $(k:key.use)$()可將其設為單向。"
+            "text": "要為灑水器供水，可以將$(thing)流體管道$()連接到灑水器，再用$(thing)機械幫浦$()抽水。$(br)你可以手持$(t:例如銅框架)GregTech(格雷科技) 框架$()或溫室連接埠對管道按下$(item)$(k:key.use)$()，讓管道穿過牆壁。手持扳手對流體管道按下$(item)$(k:key.use)$()可改變方向，而在$(thing)副手空著$()時按下$(item)$(k:key.sneak) + $(k:key.use)$()可將其設為單向。"
         },
         {
             "type": "patchouli:spotlight",
@@ -109,13 +109,13 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)此外，$(item)採收籃$()可以收成大部分類型的種植盆。$(li)要收集$(thing)清掃機$()和$(thing)採摘機$()掉落的物品，可以使用$(item)漏斗礦車$()、裝有$(item)漏斗$()的$(thing)動態結構$()，或 GregTech 的$(item)物品收集器$()。"
+            "text": "$(li)此外，$(item)採收籃$()可以收成大部分類型的種植盆。$(li)要收集$(thing)清掃機$()和$(thing)採摘機$()掉落的物品，可以使用$(item)漏斗礦車$()、裝有$(item)漏斗$()的$(thing)動態結構$()，或 GregTech(格雷科技) 的$(item)物品收集器$()。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "electric",
             "item": "tfg:electric_greenhouse",
-            "text": "如果你偏好製作 GregTech 機器而非機械動力裝置，多方塊結構$(item)電力溫室$()可以成為你的$(thing)原木$()和其他植物來源。它還有一項獨特能力：可以種植更多 TFC 的裝飾性植物！$(br2)你可以在$(7)LV$()後期製作一座。"
+            "text": "如果你偏好製作 GregTech(格雷科技) 機器而非機械動力裝置，多方塊結構$(item)電力溫室$()可以成為你的$(thing)原木$()和其他植物來源。它還有一項獨特能力：可以種植更多 TFC 的裝飾性植物！$(br2)你可以在$(7)LV$()後期製作一座。"
         },
         {
             "type": "patchouli:text",

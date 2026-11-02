@@ -17,7 +17,7 @@
         {
             "type": "patchouli:text",
             "anchor": "slashing",
-            "text": "$(thing)Slashing$() damage is dealt by weapons with long sharp edges like $(thing)Axes$() and $(thing)Swords$(), as well as large $(l:the_world/wild_animals#predators)Predators$() like bears and cougars. $(thing)Creepers$() are vulnerable to slashing damage.",
+            "text": "Obrażenia $(thing)sieczne$() są zadawane przez bronie z długimi ostrymi krawędziami, takie jak $(thing)siekiery$() i $(thing)miecze$(), a także duże $(l:the_world/wild_animals#predators)drapieżniki$(), jak niedźwiedzie i pumy. $(thing)Creepery$() są podatne na obrażenia sieczne.",
             "title": "Sieczne"
         },
         {

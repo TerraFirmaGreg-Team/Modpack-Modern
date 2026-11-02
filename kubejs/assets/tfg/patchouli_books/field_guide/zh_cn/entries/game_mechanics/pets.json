@@ -6,23 +6,23 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:game_mechanics/pets#dogs)Dogs$()$(li)$(bold)$(l:game_mechanics/pets#cats)Cats$()$(li)$(bold)$(l:game_mechanics/pets#foxes)Foxes$()$(li)$(bold)$(l:game_mechanics/pets#pigeons)Pigeons$()$(li)$(bold)$(l:game_mechanics/pets#commands)Commands$()$(li2)$(l:game_mechanics/pets#relax)Relax$()$(li2)$(l:game_mechanics/pets#home)Home$()$(li2)$(l:game_mechanics/pets#hunt)Hunt$()$(li)$(bold)$(l:game_mechanics/pets#treat)Pet Treat$()$(li)$(bold)$(l:game_mechanics/pets#name_tag)Name Tag$()$(li)$(bold)$(l:game_mechanics/pets#lead)Lead$()"
+            "text": "$(li)$(bold)$(l:game_mechanics/pets#dogs)狗$()$(li)$(bold)$(l:game_mechanics/pets#cats)猫$()$(li)$(bold)$(l:game_mechanics/pets#foxes)狐狸$()$(li)$(bold)$(l:game_mechanics/pets#pigeons)鸽子$()$(li)$(bold)$(l:game_mechanics/pets#commands)指令$()$(li2)$(l:game_mechanics/pets#relax)放松$()$(li2)$(l:game_mechanics/pets#home)我们到家了$()$(li2)$(l:game_mechanics/pets#hunt)与我狩猎$()$(li)$(bold)$(l:game_mechanics/pets#treat)宠物零食$()$(li)$(bold)$(l:game_mechanics/pets#name_tag)命名牌$()$(li)$(bold)$(l:game_mechanics/pets#lead)拴绳$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introduction",
-            "text": "$(thing)Pets$() are animals that function similarly to $(l:agriculture/animal_husbandry)Livestock$(). Instead of products, pets are useful for obeying commands, being friends, pest control, hunting.$(br)Pets recognize a certain player as their $(thing)Owner$(). To become a pet's owner, feed it to raise its familiarity above $(item)15%$(). Pets will only obey commands that come from their owner.$(br)Clicking on a pet with $(thing)dye$() changes its collar color."
+            "title": "简介",
+            "text": "$(thing)宠物$()是作用类似$(l:agriculture/animal_husbandry)牲畜$()的动物。不过宠物提供的不是产品，而是听从指令、陪伴、除虫和协助狩猎。$(br)宠物会认定某个玩家作为它的$(thing)主人$()。要成为宠物的主人，喂食它直到亲密度超过 $(item)15%$()。宠物只会听从主人下达的指令。$(br)拿着$(thing)染料$()点击宠物可以改变它项圈的颜色。"
         },
         {
             "type": "patchouli:text",
             "anchor": "dogs",
-            "title": "Dogs",
-            "text": "Dogs are a pet that eats grains, vegetables, and meat, rotten or not rotten. They will help you hunt almost any land predator or prey.$(br)Dogs come in multiple variants that depend on what type of $(l:the_world/wild_animals#wolf)wolf$() it was domesticated from."
+            "title": "狗",
+            "text": "狗是一种吃谷物、蔬菜和肉类的宠物，腐坏与否都能吃。它们会帮你猎捕几乎任何陆地捕食者或猎物。$(br)狗有多个变种，取决于它是由哪种$(l:the_world/wild_animals#wolf)狼$()驯化而来的。"
         },
         {
             "type": "patchouli:image",
-            "text": "Backported from $(item)Minecraft 1.20.5$()!",
+            "text": "从 $(item)Minecraft 1.20.5$() 回移植而来！",
             "images": [
                 "tfg:textures/gui/field_guide/dog_variants.png"
             ],
@@ -37,7 +37,7 @@
                     "bold": true
                 },
                 {
-                    "text": "Climate",
+                    "text": "气候",
                     "bold": true
                 },
                 {
@@ -53,7 +53,7 @@
                     "text": "北极、亚北极（森林）"
                 },
                 {
-                    "text": "Black"
+                    "text": "黑色"
                 },
                 {
                     "text": "苔原、湿润亚北极（森林）"
@@ -112,12 +112,12 @@
         {
             "type": "patchouli:text",
             "anchor": "cats",
-            "title": "Cats",
-            "text": "Cats are a pet that eats grains, cooked meats, and dairy products. They will help you hunt land prey and small fish. When at home, they will kill pests without being asked. Cats do not always listen when being told to sit.$(br2)Variants: Black, British Shorthair, Calico, Jellie, Persian, Ragdoll, Red, Siamese, Tabby, White."
+            "title": "猫",
+            "text": "猫是一种吃谷物、熟肉和乳制品的宠物。它们会帮你猎捕陆地猎物和小鱼。在家时，它们会主动消灭害虫。让猫坐下时，它们不一定听话。$(br2)变种：黑猫、英国短毛猫、三花猫、杰莉、波斯猫、布偶猫、红虎斑猫、暹罗猫、虎斑猫、白猫。"
         },
         {
             "type": "patchouli:entity",
-            "text": "As villages do not exist, taming an $(l:the_world/wild_animals#ocelot)Ocelot$() is the only way to obtain a cat.",
+            "text": "由于游戏中没有村庄，驯服$(l:the_world/wild_animals#ocelot)豹猫$()是获得猫的唯一途径。",
             "entity": "tfc:cat{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
             "title": " ",
             "scale": 0.7
@@ -125,8 +125,8 @@
         {
             "type": "patchouli:text",
             "anchor": "foxes",
-            "title": "Foxes",
-            "text": "Foxes are a pet that eats any edible food. They will help you hunt land prey and small fish. When at home, they will kill pests without being asked. Foxes do not always listen when being told to sit.$(br2)Variants: Red, Snow."
+            "title": "狐狸",
+            "text": "狐狸是一种来者不拒的宠物，任何能吃的东西都吃。它们会帮你猎捕陆地猎物和小鱼。在家时，它们会主动消灭害虫。让狐狸坐下时，它们不一定听话。$(br2)变种：红狐、雪狐。"
         },
         {
             "type": "patchouli:entity",
@@ -138,63 +138,63 @@
         {
             "type": "patchouli:text",
             "anchor": "pigeons",
-            "title": "Pigeons",
-            "text": "Pigeons are capable of being tamed and delivering packages, but do not follow standard commands. You can feed $(t:#fowlplay:pigeon_food)$(6)Pigeon Food$(), such as grains and vegetables, to a pigeon to tame it.$(br)Once tamed a pigeon can deliver $(t:#fowlplay:pigeon_deliverable)$(6)Sacks$() to other players by $(l:craftsmanship/scribing_table)naming the pouch$() with the player's name before handing it over. "
+            "title": "鸽子",
+            "text": "可以给鸽子喂食$(t:#fowlplay:pigeon_food)$(6)鸽子食物$()（例如谷物和蔬菜）来驯服它。$(br)驯服后，鸽子可以给其他玩家投递$(t:#fowlplay:pigeon_deliverable)$(6)包裹袋$()，只需在交出前$(l:craftsmanship/scribing_table)给袋子命名$()写上玩家的名字即可。"
         },
         {
             "type": "patchouli:entity",
             "entity": "fowlplay:pigeon{NoAI:1b}",
             "scale": 0.8,
-            "text": "A pigeon."
+            "text": "一只鸽子。"
         },
         {
             "type": "patchouli:text",
             "anchor": "commands",
-            "title": "Commands",
-            "text": "Responsible pet owners must learn to control their pet. Luckily, this is easy. By pressing $(item)$(k:key.use)$() while holding $(item)$(k:key.sneak)$() with an empty hand, the $(thing)Pet Screen$() may be opened. This screen contains a number of commands that can be used to tell the pet what to do: $(thing)Relax$(), $(thing)We're Home$(), $(thing)Sit$(), $(thing)Follow Me$(), and $(thing)Hunt With Me$()."
+            "title": "指令",
+            "text": "负责任的宠物主人必须学会控制自己的宠物。好在这很简单。空手时按下$(item)$(k:key.use)$()并保持按住$(item)$(k:key.sneak)$()，即可打开$(thing)宠物界面$()。这个界面里有许多指令，可以告诉宠物该做什么：$(thing)放松$()、$(thing)我们到家了$()、$(thing)坐下$()、$(thing)跟着我$()和$(thing)与我狩猎$()。"
         },
         {
             "type": "patchouli:text",
             "anchor": "relax",
-            "title": "Relax",
+            "title": "放松",
             "text": "$(thing)放松$()是宠物的默认状态，下达此指令可使其恢复该状态。如果宠物在家附近，它会在领地内漫步但不离开，并每天睡一次觉。如果离家太远，它会漫无目的地行走。"
         },
         {
             "type": "patchouli:text",
             "anchor": "home",
-            "title": "Home",
+            "title": "我们到家了",
             "text": "$(thing)我们到家了$()用于设定宠物的家位置。这告诉宠物，在放松时应该待在该区域内。告知宠物“到家”不会改变它当前正在进行的活动。$(br2)$(thing)坐下$()指令让宠物就地坐下。不过，动物也有自己的想法，最终会感到无聊而站起来！"
         },
         {
             "type": "patchouli:text",
             "anchor": "hunt",
-            "title": "Hunt",
+            "title": "与我狩猎",
             "text": "$(thing)与我狩猎$()指令会让宠物跟随你，并在你攻击或被攻击时参与战斗。宠物只会攻击它们能力范围内的动物（例如，猫和狐狸无法帮助攻击熊！）。$(br2)$(thing)跟随我$()与“与我狩猎”类似，但宠物不会在战斗中冒险。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "treat",
-            "title": "Pet Treat",
+            "title": "宠物零食",
             "item": "species:wicked_treat",
-            "text": "$(thing)Pet Treats$() can be made by mixing medicine with bone meal.$(br)Pet treats give $(bold)massive$() stat bonuses to your pets for a short duration."
+            "text": "$(thing)宠物零食$()可以将药品与骨粉混合制成。$(br)宠物零食会在短时间内给你的宠物带来$(bold)巨幅$()属性加成。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "name_tag",
-            "title": "Name Tag",
+            "title": "命名牌",
             "item": "minecraft:name_tag",
-            "text": "$(thing)Name Tags$() can be crafted from paper and string. Once made, they can be edited on a $(l:craftsmanship/scribing_table)Scribing Table$() to give them a custom name that will transfer to your pet with $(item)$(k:key.use)$()."
+            "text": "$(thing)命名牌$()可以用纸和线合成。做好后，可以在$(l:craftsmanship/scribing_table)书写桌$()上编辑它，写上一个自定义名字，随后用$(item)$(k:key.use)$()即可把这个名字传给你的宠物。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "lead",
-            "title": "Lead",
+            "title": "拴绳",
             "item": "minecraft:lead",
-            "text": "A $(thing)Lead$() can be crafted from burlap fiber or string, and a metal ring.$(br)You can $(item)$(k:key.use)$() an animal with a lead to pull them around. Much more efficient than baiting them with food!$(br2)You can also pick up some smaller animals with $(item)$(k:key.sneak) + $(k:key.use)$() with empty hands."
+            "text": "$(thing)拴绳$()可以用粗麻纤维或线，加上一个金属环合成。$(br)拿着拴绳对动物按$(item)$(k:key.use)$()就能拖着它们走。比用食物引诱它们高效多了！$(br2)你还可以空手用$(item)$(k:key.sneak) + $(k:key.use)$()抱起一些小动物。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/animal_husbandry",

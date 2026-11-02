@@ -53,7 +53,7 @@
             "anchor": "wood_ash",
             "title": "Popiół drzewny",
             "link_recipes": false,
-            "text": "Wood ash is produced by breaking firepits. Throwing a torch item into water also has a chance to produce ash. $(br)$(li)$(6)Phosphorous: 10$()$(li)$(d)Potassium: 30$()"
+            "text": "Popiół drzewny uzyskuje się, niszcząc ogniska. Wrzucenie pochodni do wody również może wytworzyć popiół. $(br)$(li)$(6)Fosfor: 10$()$(li)$(d)Potas: 30$()"
         },
         {
             "type": "patchouli:spotlight",

@@ -1,15 +1,15 @@
 {
-    "name": "Harvest Baskets",
+    "name": "収穫かご",
     "icon": "tfg:harvest_basket",
     "category": "tfg:agriculture",
     "pages": [
         {
             "type": "patchouli:spotlight",
-            "title": "Harvest Baskets",
+            "title": "収穫かご",
             "item": {
                 "tag": "tfg:harvester"
             },
-            "text": "Made for those with a short stature―$(thing)Harvest Baskets$() are just the tool needed for plucking trees and bushes of fruit.$(br)To use a harvest basket, $(item)$(k:key.use)$() on a $(l:the_world/wild_fruits#fruit_trees)Fruit Tree$(), $(l:the_world/wild_fruits#tall_bushes)Fruit Bush$(), $(l:agriculture/growing_crops#growing_grapes)Grape Trellis$(), $(l:agriculture/greenhouse#bonsai_planter)Bonsai Planter$(), $(l:agriculture/greenhouse#trellis_planter)Trellis Planter$(), or $(l:agriculture/greenhouse#hanging_planter)Hanging Planter$() and all blocks within a $(thing)7-block radius$() will be picked."
+            "text": "背の低い人向けに作られた$(thing)収穫かご$()は、果樹や茂みの果実を摘むのにぴったりの道具です。$(br)収穫かごを使用するには、$(l:the_world/wild_fruits#fruit_trees) 果樹$()、$(l:the_world/wild_fruits#tall_bushes)ベリーの茂み$()、$(l:agriculture/growing_crops#growing_grapes) ブドウ棚$()、$(l:agriculture/greenhouse#bonsai_planter)果樹用プランター$()、$(l:agriculture/greenhouse#trellis_planter)支柱プランター$()、または$(l:agriculture/greenhouse#hanging_planter)吊り下げプランター$()に対して$(item)$(k:key.use)$()を押すと、$(thing)半径7ブロック$()以内のすべてのブロックが収穫されます。"
         },
         {
             "type": "patchouli:text",
@@ -17,13 +17,13 @@
         },
         {
             "type": "patchouli:crafting",
-            "title": "Harvest Basket",
+            "title": "収穫かご",
             "recipe": "tfg:shaped/harvest_basket_from_papyrus",
             "text": "$(item)収穫バスケット$()は、浸したパピルスや堅木を使って作成できます。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "さらに読む",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/growing_crops",

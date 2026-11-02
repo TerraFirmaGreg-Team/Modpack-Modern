@@ -7,31 +7,31 @@
             "type": "patchouli:text",
             "anchor": "intro",
             "text": "所有作物都需要种植在耕地上才能生长。有些作物还有额外的要求，比如只能种在水里或者需要插一根木棍才能生长。$(br2)作物不需要$(thing)营养物质$()就能生长，但营养物质能加速其成熟。营养物质分为三种：$(b)氮$()、$(6)磷$()和$(d)钾$()。每种作物都有一种偏爱的养分。",
-            "title": "Growing Crops"
+            "title": "种植作物"
         },
         {
             "type": "patchouli:text",
-            "text": "Consuming its favorite nutrient causes a crop to grow faster, and improves the yield of the crop at harvest time. That means that crops that consumed more nutrients drop more food when broken! Consuming a nutrient also has the effect of replenishing the other nutrients around it a small amount.$(br)Every crop has a different $(l:the_world/climate#temperature)Temperature$() and $(l:agriculture/growing_crops#hydration)Hydration$() requirement. You can find each crops climate range in $(l:the_world/wild_crops)[Wild Crops]$() or in its item tooltip."
+            "text": "作物消耗自己偏好的营养后会生长得更快，并在收获时提高产量。也就是说，消耗营养更多的作物被破坏时会掉落更多食物！消耗营养还能少量补充周围的其他营养。$(br)每种作物都有不同的 $(l:the_world/climate#temperature)温度$() 和 $(l:agriculture/growing_crops#hydration)湿度$() 需求。你可以在 $(l:the_world/wild_crops)[野生作物]$() 或物品提示中查看每种作物的气候范围。"
         },
         {
             "type": "patchouli:text",
-            "text": "When crops are planted without sufficient hydration or outside their temperature range the crop will die. If a crop reaches full maturity before dying it will yield excess seeds. You can kill a crop with $(l:agriculture/composting#rotten_compost)Rotten Compost$() to purposefully duplicate its seeds. Crops planted in $(l:agriculture/greenhouse#planters)Greenhouse Planters$() are not capable of dying and will automatically provide bonus seeds."
+            "text": "如果作物没有足够的水分，或者种在温度范围之外，就会死亡。如果作物在死亡前已完全成熟，会产出多余的种子。你可以用 $(l:agriculture/composting#rotten_compost)腐烂的堆肥$() 杀死作物，来刻意复制种子。种在 $(l:agriculture/greenhouse#planters)温室种植盆$() 里的作物不会死亡，并且会自动提供额外的种子。"
         },
         {
             "type": "patchouli:text",
             "anchor": "hydration",
-            "text": "Hydration is a measure of the % water available for the crop. Different crop types calculate their hydration differently.$(li)$(l:the_world/wild_crops)Crop$() and $(l:the_world/wild_fruits#tall_bushes)Berry Bush$() hydration is affected by both local rainfall and proximity to fresh water.$(li2)To be very specific you can calculate crop hydration by following: $(o)$(2)(60 * rainfall / $(t:500 is the maximum rainfall allowed. If you used configs to change the max rainfall replace 500 with that number.)500$()$(o)$(2)) + 20 * (5 - waterCost)$() where $(t:Distance from water is calculated as a 3D grid.)waterCost is the distance to fresh water from 1-5$()",
-            "title": "Hydration"
+            "text": "湿度衡量作物可利用水分的百分比。不同类型的作物计算湿度的方式不同。$(li)$(l:the_world/wild_crops)作物$() 和 $(l:the_world/wild_fruits#tall_bushes)浆果丛$() 的湿度同时受当地降雨量和距淡水距离的影响。$(li2)具体来说，作物湿度可以按下面的公式计算：$(o)$(2)(60 * 降雨量/ $(t:500 是允许的最大降雨量。如果你用配置文件修改了最大降雨量，请将 500 替换为对应数值。)500$()$(o)$(2)) + 20 * (5 - waterCost)$()，其中 $(t:与水的距离按三维网格计算。)waterCost 是到淡水的距离，取值 1-5$()",
+            "title": "湿度"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)Hydration for $(l:the_world/wild_fruits#fruit_trees)Fruit Trees$(), $(l:the_world/wild_fruits#palm_fruit_trees)Palm Fruit Trees$(), and $(l:the_world/wild_fruits#banana)Bananas$() is calculated with: $(o)$(2)rainfall / 5$()$(br2)Grapes do not have a hydration requirement. Submerged crops like rice and cranberries also have no hydration requirement since... well... they are submerged in water."
+            "text": "$(li)$(l:the_world/wild_fruits#fruit_trees)果树$()、$(l:the_world/wild_fruits#palm_fruit_trees)棕榈果树$() 和 $(l:the_world/wild_fruits#banana)香蕉$() 的湿度按以下公式计算：$(o)$(2)降雨量/ 5$()$(br2)葡萄没有湿度需求。水稻和蔓越莓这类浸水作物也没有湿度需求——因为……嗯……它们本来就泡在水里。"
         },
         {
             "type": "patchouli:text",
             "anchor": "growing_grapes",
-            "text": "Grapes must be grown on trellises constructed from posts and jute fiber. To construct a trellis, place two posts vertically. Then, leaving a one block gap construct another post to the left or right. $(item)$(k:key.use)$() the top and bottom posts with $(thing)Jute Fiber$() to string lines between the posts. Finally plant a grape seed in the space between the posts on dirt or soil. Grape trellises can be chained horizontally to create rows of grapes.",
-            "title": "Growing Grapes"
+            "text": "葡萄必须种在用柱子和黄麻纤维搭成的棚架上。搭建棚架时，先垂直放置两根柱子，然后间隔一格，在左边或右边再搭一根柱子。$(item)$(k:key.use)$() 顶部和底部的柱子（手持 $(thing)黄麻纤维$()），即可在柱子之间拉出绳线。最后在柱子之间的泥土或土壤上种下葡萄种子。葡萄棚架可以横向连接，排成一排排葡萄。",
+            "title": "种植葡萄"
         },
         {
             "type": "tfg:multimultiblock",
@@ -82,11 +82,11 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Provided the $(l:the_world/climate#temperature)Temperature$() requirements are satisfied, the grape vine will grow up and over the trellis over the course of a few months. It will fruit in the month of July, flowering the month prior. Grapes can then be harvested and used to produce $(l:cooking/alcohol#wine_making)Wine$().$(br2)Grape plants will not die even when they are outside their temperature range. But they will go dormant and won't produce any fruit until they are back to the right temperature."
+            "text": "只要 $(l:the_world/climate#temperature)温度$() 需求得到满足，葡萄藤就会在几个月内沿着棚架攀爬生长。它会在七月结果，前一个月开花。之后就可以收获葡萄，用来酿造 $(l:cooking/alcohol#wine_making)葡萄酒$()。$(br2)即使超出温度范围，葡萄植株也不会死亡，但会进入休眠，直到温度恢复适宜才重新结果。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_crops",

@@ -12,7 +12,7 @@
             "type": "patchouli:text",
             "title": "Indeks",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:the_world/climate#calendar)Calendar$()$(li2)$(l:the_world/climate#seasons)Seasons$()$(li)$(bold)$(l:the_world/climate#climate)Climate$()$(li2)$(l:the_world/climate#temperature)Temperature$()$(li2)$(l:the_world/climate#rainfall)Rainfall$()"
+            "text": "$(li)$(bold)$(l:the_world/climate#calendar)Kalendarz$()$(li2)$(l:the_world/climate#seasons)Pory roku$()$(li)$(bold)$(l:the_world/climate#climate)Klimat$()$(li2)$(l:the_world/climate#temperature)Temperatura$()$(li2)$(l:the_world/climate#rainfall)Opady$()"
         },
         {
             "type": "patchouli:text",

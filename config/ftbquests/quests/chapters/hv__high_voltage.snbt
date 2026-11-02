@@ -764,7 +764,11 @@
 		}
 		{
 			dependencies: ["5BACED5AE350EAB1"]
-			description: ["{quests.high_voltage.cetane_diesel.desc}"]
+			description: [
+				"{quests.high_voltage.cetane_diesel.desc.1}"
+				"{@pagebreak}"
+				"{quests.high_voltage.cetane_diesel.desc.2}"
+			]
 			icon: "gtceu:cetane_boosted_diesel_bucket"
 			id: "04F6E968CEEC3D49"
 			optional: true
@@ -1358,6 +1362,7 @@
 			dependencies: [
 				"00A2566109144D7F"
 				"578ECB10B30A77C7"
+				"7FA0ACB7F161F378"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.high_voltage.moon_harvester.desc}"]
@@ -1373,7 +1378,7 @@
 			}]
 			title: "{quests.high_voltage.moon_harvester.title}"
 			x: 17.5d
-			y: 1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["00A2566109144D7F"]
@@ -1595,19 +1600,6 @@
 					type: "item"
 				}
 				{
-					id: "27A6C576F7AFFB67"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "or(item(gtceu:hv_ultimet_drill)item(gtceu:hv_ultimet_buzzsaw)item(gtceu:hv_ultimet_screwdriver)item(gtceu:hv_ultimet_wire_cutter)item(gtceu:hv_ultimet_chainsaw)item(gtceu:hv_ultimet_wrench))"
-						}
-					}
-					optional_task: true
-					title: "{quest.high_voltage.ultimet.task}"
-					type: "item"
-				}
-				{
 					id: "6B62C1679EE0757A"
 					item: {
 						Count: 1
@@ -1626,6 +1618,19 @@
 					id: "195F971960F976EF"
 					item: "tfg:stainless_steel_anvil"
 					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1BFBB4980BD85480"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:hv_ultimet_drill)item(gtceu:hv_ultimet_buzzsaw)item(gtceu:hv_ultimet_screwdriver)item(gtceu:hv_ultimet_wire_cutter)item(gtceu:hv_ultimet_chainsaw)item(gtceu:hv_ultimet_wrench)item(gtceu:hv_ultimet_scythe))"
+						}
+					}
+					optional_task: true
+					title: "{quest.high_voltage.ultimet.task}"
 					type: "item"
 				}
 			]
@@ -1661,22 +1666,22 @@
 					type: "item"
 				}
 				{
-					id: "31F5C6763E32046A"
+					id: "1C79B9431FFDA07E"
+					item: "tfg:stainless_steel_anvil"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "34018A9E3C728137"
 					item: {
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(tfg:hv_boron_carbide_drill)item(tfg:hv_boron_carbide_buzzsaw)item(tfg:hv_boron_carbide_screwdriver)item(tfg:hv_boron_carbide_wire_cutter)item(tfg:hv_boron_carbide_chainsaw)item(tfg:hv_boron_carbide_wrench))"
+							"ftbfiltersystem:filter": "or(item(tfg:hv_boron_carbide_drill)item(tfg:hv_boron_carbide_buzzsaw)item(tfg:hv_boron_carbide_screwdriver)item(tfg:hv_boron_carbide_wire_cutter)item(tfg:hv_boron_carbide_chainsaw)item(tfg:hv_boron_carbide_wrench)item(tfg:hv_boron_carbide_scythe))"
 						}
 					}
 					optional_task: true
 					title: "{quests.high_voltage.boron_tools.task}"
-					type: "item"
-				}
-				{
-					id: "1C79B9431FFDA07E"
-					item: "tfg:stainless_steel_anvil"
-					optional_task: true
 					type: "item"
 				}
 			]
@@ -1961,6 +1966,39 @@
 			}]
 			title: "{quests.space_survival.railgun.title}"
 			x: 17.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["403B34B669894C26"]
+			description: ["{quests.high_voltage.oxygen_distributor.desc}"]
+			guide_page: "tfg:field_guide tfg:the_moon/the_moon 15"
+			id: "11514DCB02911D9E"
+			subtitle: "{quests.high_voltage.oxygen_distributor.subtitle}"
+			tasks: [{
+				id: "72892DD24F453DC4"
+				item: "tfg:oxygen_distributor"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["396E85A39FF414CF"]
+			id: "01E5ECAB3D167CBC"
+			optional: true
+			shape: "heart"
+			tasks: [{
+				id: "6D74C51DCB5D0285"
+				item: {
+					Count: 1
+					id: "matter_manipulator:prototype_matter_manipulator"
+					tag: {
+						MatterManipulator: { }
+					}
+				}
+				type: "item"
+			}]
+			x: 16.0d
 			y: -6.0d
 		}
 	]

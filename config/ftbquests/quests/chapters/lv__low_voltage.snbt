@@ -2224,6 +2224,22 @@
 			x: -8.5d
 			y: 2.0d
 		}
+		{
+			dependencies: ["1C5F5EDAEE355130"]
+			description: ["{quests.low_voltage.electric_flask.desc}"]
+			guide_page: "tfg:field_guide tfg:cooking/drinking_containers 5"
+			id: "4651E1A7756AD80A"
+			shape: "heart"
+			subtitle: "{quests.low_voltage.electric_flask.subtitle}"
+			tasks: [{
+				id: "2C4E748EA64284CE"
+				item: "tfg:electric_flask"
+				type: "item"
+			}]
+			title: "{quests.low_voltage.electric_flask.title}"
+			x: -6.5d
+			y: 19.0d
+		}
 	]
 	subtitle: ["{quests.low_voltage.subtitle}"]
 	title: "{quests.low_voltage}"

@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "The $(thing)Scribing Table$() is used to rename items. It requires $(thing)Black Dye$() to rename items, which can be supplied as the traditional dye item or as a bucket of dye fluid."
+            "text": "$(thing)Stół pisarski$() służy do zmiany nazw przedmiotów. Wymaga do tego przedmiotu $(thing)czarnego barwnika$() albo wiadra z płynnym czarnym barwnikiem."
         },
         {
             "type": "patchouli:multiblock",

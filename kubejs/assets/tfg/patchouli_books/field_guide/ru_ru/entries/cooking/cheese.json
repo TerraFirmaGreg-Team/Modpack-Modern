@@ -1,33 +1,33 @@
 {
-  "name": "Cheese Making",
+  "name": "Изготовление сыра",
   "category": "tfg:cooking",
   "icon": "firmalife:textures/item/food/gouda.png",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "To make cheese, milk must be $(thing)curdled$() first. To curdle milk, you need $(thing)Rennet$(). Rennet comes from the stomach of $(thing)Ruminant$() animals. This includes $(l:the_world/wild_animals#yak)Yaks$(), $(l:the_world/wild_animals#cow)Cows$(), $(l:the_world/wild_animals#sheep)Sheep$(), $(l:the_world/wild_animals#goat)Goats$(), and $(l:the_world/wild_animals#musk_ox)Musk Oxen$(). To curdle milk, seal it in a $(item)Barrel$() with Rennet for 4 hours."
+      "text": "Чтобы сделать сыр, сначала нужно будет $(thing)сквасить$() молоко, для этого тебе понадобится $(thing)Сычуг$(), получаемый из $(thing)жвачных$() животных, а именно:\n$(l:the_world/wild_animals#yak)Яки$().\n$(l:the_world/wild_animals#cow)Коровы$().\n$(l:the_world/wild_animals#sheep)Овцы$().\n$(l:the_world/wild_animals#goat)Козы$(), и\n$(l:the_world/wild_animals#musk_ox)Овцебыки$(). Чтобы сделать простоквашу, просто запечатай молоко с сычугом в $(item)бочке$(), на 4 часа."
     },
     {
       "type": "patchouli:spotlight",
       "anchor": "curd",
-      "title": "Cheese Curds",
+      "title": "Творог",
       "item": {
         "tag": "tfg:foods/cheese_curds"
       },
-      "text": "Curdled milk can then be converted to $(thing)Curds$() by sealing it in a barrel with $(thing)Cheesecloth$(). $(l)Cheesecloth is not reusable$().$(br)Cheese curds can be mixed with a few ingredients and fried to make $(item)Beer Battered Cheese Curds$() or aged into wet and dry cheeses."
+      "text": "Простокваша может быть превращена в $(thing)Творог$(). Просто запечатай её вместе с $(thing)марлей$() в бочке. Эту $(l)Марлю нельзя будет использовать снова$().$(br)Творог сам по себе может быть ингредиентом блюда, ты можешь сделать $(item)сырные шарики в пивном кляре$(). И конечно же, ты можешь превратить творог в сыр!"
     },
     {
       "type": "patchouli:spotlight",
       "anchor": "cheese_wheel",
-      "title": "Cheese Wheels",
+      "title": "Головка сыра",
       "item": {
         "tag": "firmalife:cheese_wheels"
       },
-      "text": "Cheese wheels are blocks made from $(item)Cheese Curds$(). To improve their shelf life, cheese wheels should be $(thing)Aged$() in a $(l:cooking/decay#cellar)Cellar$(). In order to obtain edible cheese from a cheese wheel, it should be sliced off the wheel by clicking $(item)$(k:key.use)$() with a $(thing)Knife$(). If the wheel is sliced or broken, the aging is lost!$(br)$(thing)Dry Cheeses$() are made from curds and salt, while $(thing)Wet Cheeses$() are aged in seawater."
+      "text": "Головка сыра, это блок, который можно сделать из $(item)Творога$(). Сыр можно $(thing)состарить$() в $(l:cooking/decay#cellar)Погребе$(), это увеличит срок его хранения. Чтобы получить съедобный сыр из головки сыра, просто нажми $(item)$(k:key.use), по нему, держа $(thing)Нож$() в руках. Если сыр будет разрезан или сломан, процесс старения будет утерян! $(br)$(thing)Сухие сыры$(), которые делаются из творога и соли, не требуют особых условий созревания, когда $(thing)Мокрые сыры$() созревают в морской воде."
     },
     {
       "type": "tfg:multimultiblock",
-      "text": "The aging stages of a wheel of cheese: $(thing)Fresh$() + 28 Days → $(thing)Aged$() + 112 Days → $(thing)Vintage$().",
+      "text": "Стадии созревания головки сыра:\n$(thing)Свежий$() +28 дней -> $(thing)Выдержанный$() +112 дней -> Старинный",
       "multiblocks": [
         {
           "pattern": [
@@ -72,7 +72,7 @@
     },
     {
       "type": "patchouli:relations",
-      "title": "Further Reading",
+      "title": "Дальнейшее чтение",
       "anchor": "relations",
       "entries": [
         "tfg:cooking/food_and_water",

@@ -1,29 +1,29 @@
 {
-  "name": "Chocolate Confections",
+  "name": "巧克力甜点",
   "category": "tfg:cooking",
   "icon": "firmalife:textures/item/food/dark_chocolate.png",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Chocolate-making$() takes a few processing steps, and is intended to be an immersive way to experience cooking.$(br)Chocolate items contain $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#dairy)Dairy$() nutrients while also providing the $(l:cooking/food_and_water#sugary_transient_effect)Sugary$() effect when eaten, making them a strong choice for meal ingredients."
+      "text": "$(thing)制作巧克力$()需要经过几道加工步骤，这是一种沉浸式的烹饪体验。$(br)巧克力类物品含有$(l:cooking/food_and_water#grain)谷物$()和$(l:cooking/food_and_water#dairy)乳制品$()营养，食用时还会提供$(l:cooking/food_and_water#sugary_transient_effect)甜腻$()效果，是非常好的餐点食材。"
     },
     {
       "type": "patchouli:text",
-      "text": "To start chocolate processing, cocoa beans must first be $(thing)roasted$() in an $(l:cooking/cooking_methods#oven)Oven$() to make $(thing)Roasted Cocoa Beans$(). Then, craft the roasted beans with a $(thing)Knife$() to split the beans into $(thing)Cocoa Powder$() and $(thing)Cocoa Butter$()."
+      "text": "要开始加工巧克力，首先必须$(thing)烘烤$()可可豆（在$(l:cooking/cooking_methods#oven)烤炉$()中进行），做成$(thing)烘焙可可豆$()。然后，将烘焙过的可可豆与$(thing)刀$()一起合成，把豆子分成$(thing)可可粉$()和$(thing)可可脂$()。"
     },
     {
       "type": "patchouli:text",
-      "text": "The $(l:cooking/mixing_bowl)Mixing Bowl$() is used to mix cocoa powder, butter, and sweetener (sugar or honey) to make $(thing)Chocolate Blends$(). The ratio of cocoa butter to powder determines what comes out:$(br)$(li)1 Powder, 1 Butter, 1 Sweetener: Milk Chocolate$()$(li)2 Powder, 1 Sweetener: Dark Chocolate$()$(li)2 Butter, 1 Sweetener: White Chocolate$()"
+      "text": "用$(l:cooking/mixing_bowl)搅拌碗$()把可可粉、可可脂和甜味剂（糖或蜂蜜）混合起来，就能做出$(thing)巧克力混合物$()。可可脂和可可粉的比例决定了产物：$(br)$(li)1 份可可粉、1 份可可脂、1 份甜味剂：牛奶巧克力$()$(li)2 份可可粉、1 份甜味剂：黑巧克力$()$(li)2 份可可脂、1 份甜味剂：白巧克力$()"
     },
     {
       "type": "tfg:drying_recipe",
       "recipe": "firmalife:drying/dark_chocolate",
-      "text": "Finally, chocolate is dried on a $(l:cooking/decay#drying)Drying Mat$() to make $(thing)Chocolate$()."
+      "text": "最后，把巧克力放在$(l:cooking/decay#drying)干燥垫$()上干燥，做成$(thing)巧克力$()。"
     },
     {
       "title": "巧克力浇注",
       "type": "patchouli:text",
-      "text": "$(thing)Chocolate$() does not need to come only in boring bars! Melt down $(thing)White$(), $(thing)Milk$(), or $(thing)Dark$() chocolate in a $(thing)Vessel$() or $(thing)Crucible$() and then cast it into a mold to obtain chocolate confections. There are three types of chocolate confections: $(thing)Hearts$(), $(thing)Bells$(), and $(thing)Knives$(). Each is obtained by casting chocolate into a different mold."
+      "text": "$(thing)巧克力$()可不只能是无聊的条状！把$(thing)白$()、$(thing)牛奶$()或$(thing)黑$()巧克力放进$(thing)小缸$()或$(thing)坩埚$()里融化，再浇铸进模具，就能得到巧克力甜点。巧克力甜点有三种：$(thing)爱心$()、$(thing)铃铛$()和$(thing)刀子$()。每一种都要把巧克力浇铸进不同的模具来制作。"
     },
     {
       "type": "tfg:knapping_recipe",
@@ -55,7 +55,7 @@
     },
     {
       "type": "patchouli:relations",
-      "title": "Further Reading",
+      "title": "延伸阅读",
       "anchor": "relations",
       "entries": [
             "tfg:cooking/alcohol",

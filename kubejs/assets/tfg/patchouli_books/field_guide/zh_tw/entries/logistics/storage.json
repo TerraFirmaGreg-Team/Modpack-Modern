@@ -45,7 +45,7 @@
             "title": "板條箱",
             "anchor": "crates",
             "item": "tag:gtceu:crates",
-            "text": "在儲物方面，GregTech 有可以容納任何尺寸物品的$(item)板條箱$()，等級越高容量越大，從 27 到 144 個欄位不等。$(br)板條箱支援$(thing)物品篩選器$()和$(thing)腐爛物銷毀覆蓋板$()等物流覆蓋板。$(br)你甚至可以用$(item)膠帶$()包住板條箱，讓它被破壞時保留內容物，方便運送大量物品。"
+            "text": "在儲物方面，GregTech(格雷科技) 有可以容納任何尺寸物品的$(item)板條箱$()，等級越高容量越大，從 27 到 144 個欄位不等。$(br)板條箱支援$(thing)物品篩選器$()和$(thing)腐爛物銷毀覆蓋板$()等物流覆蓋板。$(br)你甚至可以用$(item)膠帶$()包住板條箱，讓它被破壞時保留內容物，方便運送大量物品。"
         },
         {
             "type": "patchouli:multiblock",
@@ -176,7 +176,7 @@
             "title": "ME 儲存",
             "anchor": "ae2",
             "item": "ae2:drive",
-            "text": "Advanced Energistics 的$(item)驅動器$()和$(item)儲存元件$()可以將你的儲存數位化，建立功能強大且高密度的物流與合成網路。連接$(item)ME 控制器$()和$(thing)終端機$()即可查看其中的物品。"
+            "text": "Applied Energistics(應用能源) 的$(item)驅動器$()和$(item)儲存元件$()可以將你的儲存數位化，建立功能強大且高密度的物流與合成網路。連接$(item)ME 控制器$()和$(thing)終端機$()即可查看其中的物品。"
         },
         {
             "type": "patchouli:multiblock",

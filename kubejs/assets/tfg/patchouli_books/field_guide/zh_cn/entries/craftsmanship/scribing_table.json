@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "The $(thing)Scribing Table$() is used to rename items. It requires $(thing)Black Dye$() to rename items, which can be supplied as the traditional dye item or as a bucket of dye fluid."
+            "text": "$(thing)书写桌$()用于重命名物品。重命名需要消耗$(thing)黑色染料$()，既可以是传统的染料物品，也可以是一桶染料流体。"
         },
         {
             "type": "patchouli:multiblock",
@@ -36,7 +36,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/anvils",

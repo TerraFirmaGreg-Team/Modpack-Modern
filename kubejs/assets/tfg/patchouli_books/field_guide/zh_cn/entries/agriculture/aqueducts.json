@@ -1,15 +1,15 @@
 {
-    "name": "Aqueducts",
+    "name": "引水桥",
     "category": "tfg:agriculture",
     "icon": "tfc:rock/aqueduct/shale",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(thing)Aqueducts$() are a tool used for moving $(thing)Fluids$() around. Since $(item)Wooden Buckets$() are not able to transport water sources, $(thing)Aqueducts$() exist to move fluids horizontally any distance to their destination. They can be used to transport any type of water―including $(thing)Fresh Water$(), $(thing)Salt Water$(), and $(thing)Hot Spring Water$()―as well as $(thing)Lava$().$(br)Aqueducts with plain water in them can $(l:agriculture/growing_crops#hydration)hydrate farmland$()."
+            "text": "$(thing)引水桥$()是一种用来输送 $(thing)流体$() 的工具。由于 $(item)木桶$() 无法搬运水源方块，$(thing)引水桥$() 便可以把流体沿水平方向输送到任意距离外的目的地。它可以输送任何类型的水——包括 $(thing)淡水$()、$(thing)盐水$() 和 $(thing)温泉水$()，也能输送 $(thing)熔岩$()。$(br)装有普通水的引水桥可以 $(l:agriculture/growing_crops#hydration)为耕地补水$()。"
         },
         {
             "type": "patchouli:text",
-            "text": "In order to use an $(thing)Aqueduct$(), you must simply connect them in a horizontal pattern, and place one end adjacent to either a $(thing)Source$() or $(thing)Falling$() water. After waiting a short while, water will begin to flow through the aqueduct network, and out the other end.$(br2)$(bold)Note:$() If aqueducts are removed, water will cease flowing, and $(thing)Aqueducts$() will not create permanent source blocks―any water will disappear after the aqueducts are removed."
+            "text": "要使用 $(thing)引水桥$()，只需把它们水平连接起来，并将一端紧邻 $(thing)水源$() 或 $(thing)下落$() 的水放置。稍等片刻，水就会流过整个引水桥网络，从另一端流出。$(br2)$(bold)注意：$()引水桥被拆除后水就会停止流动，而且 $(thing)引水桥$() 不会创建永久水源方块——引水桥拆除后，所有的水都会消失。"
         },
         {
             "type": "tfg:multimultiblock",
@@ -93,8 +93,8 @@
                     }
                 }
             ],
-            "name": "Aqueduct Network",
-            "text": "An aqueduct network with water or lava.",
+            "name": "引水桥网络",
+            "text": "一张装有水或熔岩的引水桥网络。",
             "enable_visualize": false
         },
         {

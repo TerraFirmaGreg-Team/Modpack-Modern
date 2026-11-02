@@ -52,14 +52,14 @@
 			"anchor": "ore_sack",
 			"title": "Worek na rudę",
 			"item": "sns:ore_sack",
-			"text": "$(bold)Slots$(): 9$(br)$(bold)Stack Size$(): 512$(br)$(bold)Largest Size$(): Small$(br)$(bold)Item Pickup$(): $(2)True$()$(br)$(bold)Slot Voiding$(): $(2)True$()$(br)$(bold)Restricted To$(): $(6)$(t:#sns:allowed_in_ore_sack)Loose Stone, Ore, Gems, Clay$()"
+			"text": "$(bold)Sloty$(): 9$(br)$(bold)Rozmiar stosu$(): 512$(br)$(bold)Największy rozmiar$(): Mały$(br)$(bold)Podnoszenie przedmiotów$(): $(2)Tak$()$(br)$(bold)Usuwanie przedmiotów$(): $(2)Tak$()$(br)$(bold)Ograniczenia$(): $(6)$(t:#sns:allowed_in_ore_sack)Luźne kamienie, ruda, klejnoty, glina$()"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "seed_pouch",
 			"title": "Woreczek na nasiona",
 			"item": "sns:seed_pouch",
-			"text": "$(bold)Slots$(): 27$(br)$(bold)Stack Size$(): 128$(br)$(bold)Largest Size$(): Small$(br)$(bold)Item Pickup$(): $(2)True$()$(br)$(bold)Slot Voiding$(): $(c)False$()$(br)$(bold)Restricted To$(): $(6)$(t:#sns:allowed_in_seed_pouch)Seeds, Saplings, Bushes$()"
+			"text": "$(bold)Sloty$(): 27$(br)$(bold)Rozmiar stosu$(): 128$(br)$(bold)Największy rozmiar$(): Mały$(br)$(bold)Podnoszenie przedmiotów$(): $(2)Tak$()$(br)$(bold)Usuwanie przedmiotów$(): $(c)Nie$()$(br)$(bold)Ograniczenia$(): $(6)$(t:#sns:allowed_in_seed_pouch)nasiona, sadzonki, krzewy$()"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -73,14 +73,14 @@
 			"anchor": "quiver",
 			"title": "Kołczan",
 			"item": "sns:quiver",
-			"text": "$(bold)Slots$(): 8$(br)$(bold)Stack Size$(): 32$(br)$(bold)Largest Size$(): Very Large$(br)$(bold)Item Pickup$(): $(2)True$()$(br)$(bold)Slot Voiding$(): $(c)False$()$(br)$(bold)Restricted To$(): $(6)$(t:#sns:allowed_in_quiver)Arrows, Javelins$()"
+			"text": "$(bold)Sloty$(): 8$(br)$(bold)Rozmiar stosu$(): 32$(br)$(bold)Największy rozmiar$(): Bardzo duży$(br)$(bold)Podnoszenie przedmiotów$(): $(2)Tak$()$(br)$(bold)Usuwanie przedmiotów$(): $(c)Nie$()$(br)$(bold)Ograniczenia$(): $(6)$(t:#sns:allowed_in_quiver)strzały, oszczepy$()"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "backpack",
 			"title": "Plecaki",
 			"item": "sophisticatedbackpacks:backpack,sophisticatedbackpacks:iron_backpack,sophisticatedbackpacks:gold_backpack,sophisticatedbackpacks:diamond_backpack,sophisticatedbackpacks:netherite_backpack",
-			"text": "$(bold)Slots$(): 36-120$(br)$(bold)Stack Size$(): 64-128$(br)$(bold)Largest Size$(): Very Large$(br)$(bold)Item Pickup$(): With Upgrades$(br)$(bold)Slot Voiding$(): With Upgrades$(br)$(bold)Restricted To$(): N/A"
+			"text": "$(bold)Sloty$(): 36-120$(br)$(bold)Rozmiar stosu$(): 64-128$(br)$(bold)Największy rozmiar$(): Bardzo duży$(br)$(bold)Podnoszenie przedmiotów$(): Z ulepszeniami$(br)$(bold)Usuwanie przedmiotów$(): Z ulepszeniami$(br)$(bold)Ograniczenia$(): Brak"
 		},
 		{
 			"type": "patchouli:spotlight",

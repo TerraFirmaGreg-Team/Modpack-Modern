@@ -5,17 +5,17 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "Beneath Crops",
+			"title": "幽冥之地作物",
 			"text": "$(thing)幽冥之地$()环境或许恶劣，但依然能在那里找到农作物。幽冥之地的作物具有极强的生命力，能在极端高温条件下生长，这使它们在地下和地表生存中发挥重要作用。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Crops in the beneath behave just the same as crops on the surface; they have hydration, temperature, and nutrient requirements. You can even plant them in $(thing)Greenhouses.$()$(br2)An important concern when planting crops in the Beneath is that crops require a light level of 12, which isn't provided by the Beneath's natural light. To solve this problem, you can utilize $(l:agriculture/aqueducts)Lava Aqueducts$() or any other available light source."
+			"text": "幽冥之地的作物和地表作物表现完全相同：它们对湿度、温度和养分同样有要求。你甚至可以把它们种进$(thing)温室$()里。$(br2)在幽冥之地种植作物时要注意一点：作物需要 12 级光照，而幽冥之地的自然光照达不到。要解决这个问题，可以利用$(l:agriculture/aqueducts)岩浆引水桥$()或其他任何可用的光源。"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "目录",
-			"text": "$(li)$(l:beneath/beneath_crops#cassava)Cassava$()$(li)$(l:beneath/beneath_crops#peanut)Peanut$()$(li)$(l:beneath/beneath_crops#beans)Blackstone Beans$()$(li)$(l:beneath/beneath_crops#ghost_pepper)Ghost Pepper$()$(li)$(l:beneath/beneath_crops#cotton)Cotton$()"
+			"text": "$(li)$(l:beneath/beneath_crops#cassava)木薯$()$(li)$(l:beneath/beneath_crops#peanut)花生$()$(li)$(l:beneath/beneath_crops#beans)黑石豆$()$(li)$(l:beneath/beneath_crops#ghost_pepper)鬼椒$()$(li)$(l:beneath/beneath_crops#cotton)棉花$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -24,8 +24,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cassava",
-			"title": "Cassava",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 70 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cassava can be eaten for $(thing)Vegetable$() nutrition, although it is best $(thing)cooked$() before consumed.$(br)"
+			"title": "木薯",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：70 - 100 %$(br)$(bold)养分$()：氮$(br2)木薯可以作为$(thing)蔬菜$()食用，不过最好$(thing)煮熟$()再吃。$(br)"
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -139,8 +139,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "peanut",
-			"title": "Peanut",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Potassium$(br2)Peanuts can be eaten for $(thing)Vegetable$() and $(thing)Protein$() nutrition"
+			"title": "花生",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：20 - 80 %$(br)$(bold)养分$()：钾$(br2)食用花生可提供$(thing)蔬菜$()和$(thing)蛋白质$()营养"
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -254,8 +254,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "beans",
-			"title": "Blackstone Beans",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Potassium$(br2)Blackstone Beans can be eaten for $(thing)Vegetable$() and $(thing)Protein$() nutrition. However, they must be cooked first!"
+			"title": "黑石豆",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：20 - 80 %$(br)$(bold)养分$()：钾$(br2)食用黑石豆可提供$(thing)蔬菜$()和$(thing)蛋白质$()营养。不过，必须先煮熟才行！"
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -369,8 +369,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "ghost_pepper",
-			"title": "Ghost Pepper",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Ghost Peppers can be eaten for $(thing)Vegetable$() nutrition. They are also a common snack among the inhabitants of the Beneath."
+			"title": "鬼椒",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：20 - 80 %$(br)$(bold)养分$()：氮$(br2)鬼椒可以作为$(thing)蔬菜$()食用。它也是幽冥之地居民间常见的小吃。"
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -484,8 +484,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cotton",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 40 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cotton is a two block tall crop. Cotton seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Cotton Balls$() which can be processed into $(thing)Cotton String$() or $(thing)Cloth$().",
-			"title": "Cotton"
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：40 - 100 %$(br)$(bold)养分$()：氮$(br2)棉花是两格高的作物。棉花种子可以种在耕地上，会长到两格高，并结出$(item)棉球$()，可以加工成$(thing)棉线$()或$(thing)布料$()。",
+			"title": "棉花"
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -600,7 +600,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "延伸阅读",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/climate",

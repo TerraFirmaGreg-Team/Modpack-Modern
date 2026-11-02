@@ -26,24 +26,6 @@
 			"texture": "ad_astra:textures/environment/sun.png"
 		},
 		{
-			"back_light_color": -12813094,
-			"back_light_scale": 240.0,
-			"blend": false,
-			"global_rotation": [
-				180.0,
-				0.0,
-				0.0
-			],
-			"local_rotation": [
-				0.0,
-				0.0,
-				0.0
-			],
-			"movement_type": "STATIC",
-			"scale": 80.0,
-			"texture": "ad_astra:textures/environment/earth.png"
-		},
-		{
 			"back_light_color": -5261108,
 			"back_light_scale": 24.0,
 			"blend": false,
@@ -64,7 +46,7 @@
 		{
 			"back_light_color": 15118501,
 			"back_light_scale": 2.4,
-			"blend": true,
+			"blend": false,
 			"global_rotation": [
 				15.0,
 				0.0,
@@ -82,7 +64,7 @@
 		{
 			"back_light_color": 15134116,
 			"back_light_scale": 2.25,
-			"blend": true,
+			"blend": false,
 			"global_rotation": [
 				80.0,
 				-20.0,
@@ -100,7 +82,7 @@
 		{
 			"back_light_color": -1714771,
 			"back_light_scale": 1.2,
-			"blend": true,
+			"blend": false,
 			"global_rotation": [
 				-40.0,
 				0.0,
@@ -118,7 +100,7 @@
 		{
 			"back_light_color": 11588853,
 			"back_light_scale": 0.2,
-			"blend": true,
+			"blend": false,
 			"global_rotation": [
 				-38.8,
 				0.0,
@@ -136,7 +118,7 @@
 		{
 			"back_light_color": -1714771,
 			"back_light_scale": 0.2,
-			"blend": true,
+			"blend": false,
 			"global_rotation": [
 				-39.1,
 				0.2,
@@ -154,7 +136,7 @@
 		{
 			"back_light_color": 12233686,
 			"back_light_scale": 0.2,
-			"blend": true,
+			"blend": false,
 			"global_rotation": [
 				-40.9,
 				0.4,
@@ -172,7 +154,7 @@
 		{
 			"back_light_color": 15129641,
 			"back_light_scale": 0.2,
-			"blend": true,
+			"blend": false,
 			"global_rotation": [
 				-41.5,
 				-0.6,
@@ -186,6 +168,24 @@
 			"movement_type": "TIME_OF_DAY_REVERSED",
 			"scale": 0.09,
 			"texture": "tfg:textures/block/rock/glauberite.png"
+		},
+		{
+			"back_light_color": -12813094,
+			"back_light_scale": 240.0,
+			"blend": false,
+			"global_rotation": [
+				180.0,
+				0.0,
+				0.0
+			],
+			"local_rotation": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"movement_type": "STATIC",
+			"scale": 80.0,
+			"texture": "ad_astra:textures/environment/earth.png"
 		}
 	],
 	"star_brightness": 0.6,

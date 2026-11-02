@@ -185,7 +185,7 @@
             "item": "gtceu:prospector.lv,gtceu:prospector.hv,gtceu:prospector.luv",
             "title": "數位勘礦儀",
             "link_recipes": false,
-            "text": "科技時代來臨了！隨之而來的是尋找礦脈的新方法！$(br)$(item)勘礦儀$()是$(thing)GregTech$()用來尋找世界中礦脈和流體礦床的解決方案。勘礦儀的範圍和功能取決於其$(#ff1100)電壓等級$()。"
+            "text": "科技時代來臨了！隨之而來的是尋找礦脈的新方法！$(br)$(item)勘礦儀$()是$(thing)GregTech(格雷科技)$()用來尋找世界中礦脈和流體礦床的解決方案。勘礦儀的範圍和功能取決於其$(#ff1100)電壓等級$()。"
         },
         {
             "type": "patchouli:image",

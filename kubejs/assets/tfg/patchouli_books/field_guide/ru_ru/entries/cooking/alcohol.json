@@ -1,5 +1,5 @@
 {
-  "name": "Alcohol Production",
+  "name": "Производство алкоголя",
   "category": "tfg:cooking",
   "icon": "firmalife:textures/item/hematitic_wine_bottle.png",
   "pages": [
@@ -27,7 +27,7 @@
     {
         "type": "patchouli:crafting",
         "anchor": "barrel_press",
-        "title": "Barrel press",
+        "title": "Пресс для бочек",
         "recipe": "firmalife:crafting/wood/acacia_barrel_press",
         "text": "Пресс для бочек — это последний этап обработки винограда."
     },

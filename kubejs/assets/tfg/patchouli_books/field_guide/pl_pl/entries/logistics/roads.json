@@ -417,7 +417,7 @@
             "type": "patchouli:spotlight",
             "item": "tfg:asphalt_road_hot",
             "title": "Gorący asfalt",
-            "text": "$(thing)Hot Asphalt$() is very hot; touching it will cause ongoing burn damage. Wear heat-protective gear when working with it.$(br2)Once it cools into an $(thing)Asphalt Road$(), the surface is no longer hot."
+            "text": "$(thing)Gorący asfalt$() ma bardzo wysoką temperaturę i będzie powodował ciągłe obrażenia od oparzeń. Podczas pracy z nim noś wyposażenie chroniące przed temperaturą.$(br2)Gdy ostygnie i zmieni się w $(thing)asfaltową drogę$(), jego powierzchnia nie będzie już gorąca."
         },
         {
             "type": "patchouli:spotlight",
@@ -455,7 +455,7 @@
             "type": "patchouli:spotlight",
             "item": "tfg:asphalt_rubble",
             "title": "Zrywanie i odzyskiwanie materiałów",
-            "text": "Breaking asphalt roads, hot asphalt, slabs, or stairs drops $(thing)Asphalt Rubble$() instead of the intact block. Processing the rubble in an $(thing)Extractor$() recovers a small amount of asphalt mixture."
+            "text": "Przy niszczeniu asfaltowych dróg, gorącego asfaltu, płyt lub schodów zamiast całego bloku wypada $(thing)tłuczeń asfaltowy$(). Przetworzenie tłucznia w $(thing)ekstraktorze$() pozwala odzyskać niewielką ilość mieszaniny asfaltu."
         },
         {
             "type": "patchouli:spotlight",

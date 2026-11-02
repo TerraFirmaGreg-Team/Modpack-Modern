@@ -33,7 +33,7 @@
 			"title": "Szkarłatne",
 			"anchor": "crimson",
 			"item": "tag:tfc:crimson_logs",
-			"text": "$(bold)Crimson Mushroom$()$(br)$(thing)Temperature$(): -109 — -13°C$(br)Appears more often to the East.$(br)$(thing)Growth Days$(): 6$(br2)$(bold)Tip:$() Want to show off? You can build a $(l:logistics/boats#canoe)canoe$() out of Crimson Stems."
+			"text": "$(bold)Grzyby szkarłatne$()$(br)$(thing)Temperatura$(): -109 — -13°C$(br)Pojawiają się częściej na wschodzie.$(br)$(thing)Czas wzrostu$(): 6 dni$(br2)$(bold)Wskazówka:$() \nChcesz się popisać? Możesz zbudować $(l:logistics/boats#canoe)kanoe$() ze szkarłatnych trzonów."
 		},
 		{
 			"type": "patchouli:spotlight",

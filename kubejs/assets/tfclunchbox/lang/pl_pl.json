@@ -25,7 +25,7 @@
   "tooltip.tfclunchbox.contents": "Zawartość:",
   "tooltip.tfclunchbox.cooling_active": "Chłodzenie: Aktywne",
   "tooltip.tfclunchbox.cooling_inactive": "Chłodzenie: Pasywne",
-  "tooltip.tfclunchbox.cooling_lunchbox.hold_shift": "Przytrzymaj §eSHIFT§7, aby uzyskać szczegóły",
+  "tooltip.tfclunchbox.cooling_lunchbox.hold_shift": "Przytrzymaj §eShift§7, aby zobaczyć szczegóły",
   "tooltip.tfclunchbox.cooling_lunchbox.ice_absent": "Brak",
   "tooltip.tfclunchbox.cooling_lunchbox.ice_present": "Obecny",
   "tooltip.tfclunchbox.cooling_lunchbox.ice_status": "Lód: %s",
@@ -45,7 +45,7 @@
   "tooltip.tfclunchbox.lunchbox.empty": "Pusty",
   "tooltip.tfclunchbox.lunchbox.scroll_hint": "Przytrzymaj CTRL i przewijaj, aby zmienić wybrany slot",
   "tooltip.tfclunchbox.lunchbox.selected_slot": "Wybrany slot: %d",
-  "tooltip.tfclunchbox.lunchbox.shift": "Przytrzymaj SHIFT po więcej szczegółów",
-  "tooltip.tfclunchbox.simple_lunchbox.hold_shift": "Przytrzymaj §eSHIFT§7, aby uzyskać szczegóły",
+  "tooltip.tfclunchbox.lunchbox.shift": "Przytrzymaj Shift, aby zobaczyć szczegóły",
+  "tooltip.tfclunchbox.simple_lunchbox.hold_shift": "Przytrzymaj §eShift§7, aby zobaczyć szczegóły",
   "tooltip.tfclunchbox.simple_lunchbox.shift_info": "Użyj CTRL + przewijanie kółkiem myszy w górę/w dół, aby wybrać jedzenie"
 }

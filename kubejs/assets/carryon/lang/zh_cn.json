@@ -1,5 +1,14 @@
 {
 	"carryon.category.blacklist": "黑名单",
+	"carryon.category.custompickupconditions": "自定义搬运条件（高级）",
+	"carryon.category.custompickupconditions.custompickupconditionsblocks": "自定义方块搬运条件",
+	"carryon.category.custompickupconditions.custompickupconditionsentities": "自定义实体搬运条件",
+	"carryon.category.modeloverrides": "模型覆盖（高级）",
 	"carryon.category.settings": "设置",
-	"carryon.category.whitelist": "白名单"
+	"carryon.category.whitelist": "白名单",
+	"carryon.general.blacklist.forbiddenentities": "不允许玩家抱起的实体",
+	"carryon.general.blacklist.forbiddentiles": "不允许玩家抱起的方块",
+	"carryon.general.modeloverrides.modeloverrides": "模型覆盖",
+	"key.carry.category": "搬运",
+	"key.carry.desc": "搬运"
 }

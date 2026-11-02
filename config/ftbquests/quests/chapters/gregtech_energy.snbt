@@ -825,6 +825,7 @@
 				"{@pagebreak}"
 				"{quests.gregtech_energy.large_solar.desc.2}"
 			]
+			guide_page: "tfg:field_guide tfg:the_moon/the_moon 13"
 			icon: "gtceu:large_solar_panel"
 			id: "0585527D1854628B"
 			subtitle: "{quests.gregtech_energy.large_solar.subtitle}"
@@ -1100,7 +1101,11 @@
 				"4D0ADC66D2CF09B1"
 				"0C718329245D9619"
 			]
-			description: ["{quests.high_voltage.cetane_diesel.desc}"]
+			description: [
+				"{quests.high_voltage.cetane_diesel.desc.1}"
+				"{@pagebreak}"
+				"{quests.high_voltage.cetane_diesel.desc.2}"
+			]
 			id: "376BFF92714C5012"
 			subtitle: "{quests.high_voltage.cetane_diesel.subtitle}"
 			tasks: [{

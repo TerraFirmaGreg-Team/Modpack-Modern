@@ -402,5 +402,9 @@
 
 	"quests.low_voltage.factory_gauge.title": "Factory Gauge",
 	"quests.low_voltage.factory_gauge.subtitle": "Automation, reinvented",
-	"quests.low_voltage.factory_gauge.desc": "&bFactory Gauges&r (and their cousins, &6Fluid Gauges&r, can do two things:\n\n1) Monitor levels of items or fluids attached to a connected Packager\n2) Automatically order crafting requests when those levels drop below a certain amount.\n\nYou heard that right, Gauges enable &6autocrafting&r! Check through the &aField Guide&r for a full breakdown on how to use them."
+	"quests.low_voltage.factory_gauge.desc": "&bFactory Gauges&r (and their cousins, &6Fluid Gauges&r, can do two things:\n\n1) Monitor levels of items or fluids attached to a connected Packager\n2) Automatically order crafting requests when those levels drop below a certain amount.\n\nYou heard that right, Gauges enable &6autocrafting&r! Check through the &aField Guide&r for a full breakdown on how to use them.",
+
+	"quests.low_voltage.electric_flask.title": "Electric Flask",
+	"quests.low_voltage.electric_flask.subtitle": "Automatic sippy cup",
+	"quests.low_voltage.electric_flask.desc": "Similar to a Digger Helmet, the &bElectric Flask&r will automatically drink for you when you're thirsty. Unlike the digger helmet, it works with any drinkable fluid!\n\nIt requires charging to work, though you can still drink from it manually if the charge runs out. It also holds &64,000mB&r of fluid."
 }

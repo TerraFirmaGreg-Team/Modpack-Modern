@@ -31,7 +31,7 @@
 			"anchor": "birt",
 			"scale": 0.9,
 			"name": "Ptok",
-			"text": "$(thing)Birts$() are a type of bird? They lay eggs in their nests, are passive unless attacked, and can be eaten. Their eggs can be thrown to stun targets."
+			"text": "Czy $(thing)ptoki$() są rodzajem ptaków? Składają jajka w gniazdach, są pasywne, chyba, że je zaatakowano i można je zjeść. Ich jajka mogą ogłuszyć wrogów, gdy w nich trafisz."
 		},
 		{
 			"type": "patchouli:entity",

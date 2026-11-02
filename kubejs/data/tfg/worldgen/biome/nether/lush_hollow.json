@@ -42,7 +42,8 @@
 		[],
 		"#tfg:nether_underground_decoration",
 		[
-			"tfg:nether/terrain/lush_caves_clay"
+			"tfg:nether/terrain/lush_caves_clay",
+			"tfg:nether/structure/outpost"
 		],
 		[
 			"tfc:erosion"

@@ -12,7 +12,7 @@
 			"type": "patchouli:spotlight",
 			"item": "gtceu:nano_saber",
 			"anchor": "nano_saber",
-			"text": "The $(item)Nano Saber$() is a powerful melee weapon you’ll be able to unlock once you reach late $(5)EV$(). Simply use $(item)$(k:key.sneak) + $(k:key.use)$() to activate the $(thing)bzzzzz mode$()."
+			"text": "$(item)Nano-szabla$() to potężna broń biała, którą odblokujesz pod koniec $(5)EN$(). Użyj $(item)$(k:key.sneak) + $(k:key.use)$(), aby włączyć $(thing)tryb bzzzzz$()."
 		},
 		{
 			"type": "patchouli:spotlight",

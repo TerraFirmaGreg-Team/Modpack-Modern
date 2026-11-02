@@ -17,7 +17,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Three things are required to tap a tree: the tree itself, a tree tap, which must forged from a Copper Ingot and placed in the middle of a trunk at least three blocks tall, and a barrel, which must be placed directly below the tap facing upward. If the conditions are right, your barrel will immediately begin to fill with sap.$(br2)$(o)$(3)At least three naturally grown logs are required for tapping."
+            "text": "Для подсочки деревьев нужны три вещи: само дерево, краник для подсочки, выкованный из медного слитка и установленный в середине ствола минимум 3 блока в высоту, а также бочка, которая должна быть расположена прямо под краником и смотреть вверх. Если все условия соблюдены, то твоя бочка сразу начнёт наполняться соком.$(br2)$(o)$(3)Для подсочки нужно минимум три естественно выросщих бревна."
         },
         {
             "type": "patchouli:image",
@@ -33,8 +33,8 @@
             "texture_width": 1024,
             "height": 1024,
             "texture_height": 1024,
-            "text": "Tapping can be optimized by letting the sap flow directly into an open face of a fluid pipe.",
-            "title": "Let it flow!",
+            "text": "Подсочка может быть оптимизирована, если позволить соку течь прямо в открытую трубу для жидкостей.",
+            "title": "Да будет сок!",
             "images": [
             	"tfg:textures/gui/field_guide/tree_tapping/tfg_tapping.png"
             ],
@@ -42,7 +42,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Читать далее",
             "anchor": "relations",
             "entries": [
             	"tfg:the_world/earth_tree_index",

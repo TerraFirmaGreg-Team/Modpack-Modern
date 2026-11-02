@@ -5,11 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(thing)Aqueducts$() are a tool used for moving $(thing)Fluids$() around. Since $(item)Wooden Buckets$() are not able to transport water sources, $(thing)Aqueducts$() exist to move fluids horizontally any distance to their destination. They can be used to transport any type of water―including $(thing)Fresh Water$(), $(thing)Salt Water$(), and $(thing)Hot Spring Water$()―as well as $(thing)Lava$().$(br)Aqueducts with plain water in them can $(l:agriculture/growing_crops#hydration)hydrate farmland$()."
+            "text": "$(thing)Акведуки$() это инструмент, используемый для перемещения $(thing)Жидкостей$(). $(item)Деревянные вёдра$() не способны перемещать источники воды, поэтому для перемещения жидкостей на любую дистанцию по горизонтали существуют $(thing)Акведуки$(). Их можно использовать для перемещения любого типа воды: $(thing)Пресной$(), $(thing)Солёной$() и $(thing)Родниковой$(). Ещё можно перемещать $(thing)Лаву$().$(br)Акведуки с пресной водой могут $(l:agriculture/growing_crops#hydration)орошать пашни$()."
         },
         {
             "type": "patchouli:text",
-            "text": "In order to use an $(thing)Aqueduct$(), you must simply connect them in a horizontal pattern, and place one end adjacent to either a $(thing)Source$() or $(thing)Falling$() water. After waiting a short while, water will begin to flow through the aqueduct network, and out the other end.$(br2)$(bold)Note:$() If aqueducts are removed, water will cease flowing, and $(thing)Aqueducts$() will not create permanent source blocks―any water will disappear after the aqueducts are removed."
+            "text": "Чтобы использовать $(thing)Акведук$(), тебе нужно просто соединить несколько штук в одну горизонтальную структуру, один из концов которой касается $(thing)Источника$() или $(thing)Текущей$() воды. Вскоре вода начнёт течь по сети акведуков до другого конца.$(br2)$(bold)Учти:$() убрав акведуки, ты прервеёшь поток воды, $(thing)Акведуки$() не создают постоянные блоки-источники, поэтому вода исчезнет если их убрать."
         },
         {
             "type": "tfg:multimultiblock",

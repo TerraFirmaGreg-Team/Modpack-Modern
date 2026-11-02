@@ -8,24 +8,6 @@
 	"render_in_rain": true,
 	"sky_renderables": [
 		{
-			"back_light_color": -39,
-			"back_light_scale": 30.0,
-			"blend": false,
-			"global_rotation": [
-				0.0,
-				0.0,
-				0.0
-			],
-			"local_rotation": [
-				0.0,
-				0.0,
-				0.0
-			],
-			"movement_type": "TIME_OF_DAY",
-			"scale": 8.5,
-			"texture": "ad_astra:textures/environment/sun.png"
-		},
-		{
 			"back_light_color": 15118501,
 			"back_light_scale": 2.4,
 			"blend": true,

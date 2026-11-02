@@ -28,7 +28,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(bold)Note:$() Even with tongs, holding hot or cold items in your inventory will affect your $(l:game_mechanics/player_temperature)player temperature$()."
+			"text": "$(bold)Uwaga:$() Nawet ze szczypcami gorące lub zimne przedmioty w ekwipunku wpływają na twoją $(l:game_mechanics/player_temperature)temperaturę$()."
 		},
 		{
 			"type": "patchouli:crafting",
@@ -55,7 +55,7 @@
 			"item": "tfc:metal/chestplate/blue_steel,tfc:metal/chestplate/red_steel,create:netherite_backtank,gtceu:hazmat_chestpiece,ad_astra:space_suit,ad_astra:netherite_space_suit,gtceu:quarktech_chestplate,gtceu:advanced_quarktech_chestplate",
 			"anchor": "equipment",
 			"title": "Inne wyposażenie",
-			"text": "Lastly, certain equipment can safely protect you while holding these items, such as the $(item)Blue Steel Chestplate$() protecting you from hot items."
+			"text": "Na koniec, niektóre elementy wyposażenia mogą cię chronić, gdy masz przy sobie takie przedmioty. Na przykład $(item)napierśnik z niebieskiej stali$() chroni przed poparzeniem przez gorące przedmioty."
 		},
 		{
 			"type": "patchouli:relations",

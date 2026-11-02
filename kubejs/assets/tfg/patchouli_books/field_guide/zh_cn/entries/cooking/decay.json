@@ -1,136 +1,136 @@
 {
-    "name": "Decay & Preservation",
+    "name": "腐败与保存",
     "category": "tfg:cooking",
     "icon": "tfclunchbox:lunchbox",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:cooking/decay#decay)Introduction$()$(li2)$(l:cooking/decay#calculation)Calculating Decay$()$(li2)$(l:cooking/decay#table)Modifier Table$()$(li)$(bold)$(l:cooking/decay#vessels)Vessels$()$(li)$(bold)$(l:cooking/decay#cooking)Cooking$()$(li)$(bold)$(l:cooking/decay#smoking)Smoking$()$(li)$(bold)$(l:cooking/decay#salting)Salting$()$(li)$(bold)$(l:cooking/decay#vinegar)Pickling$()$(li)$(bold)$(l:cooking/decay#drying)Drying$()"
+            "text": "$(li)$(bold)$(l:cooking/decay#decay)简介$()$(li2)$(l:cooking/decay#calculation)计算腐败$()$(li2)$(l:cooking/decay#table)修正表$()$(li)$(bold)$(l:cooking/decay#vessels)陶缸$()$(li)$(bold)$(l:cooking/decay#cooking)烹饪$()$(li)$(bold)$(l:cooking/decay#smoking)烟熏$()$(li)$(bold)$(l:cooking/decay#salting)盐腌$()$(li)$(bold)$(l:cooking/decay#vinegar)腌制$()$(li)$(bold)$(l:cooking/decay#drying)干燥$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:cooking/decay#oven_baked)Oven Baking$()$(li)$(bold)$(l:cooking/decay#cellar)Cellars$()$(li2)$(l:cooking/decay#shelf)Cellar Storage$()$(li)$(bold)$(l:cooking/decay#lunch_box)Lunch Boxes$()$(li)$(bold)$(l:cooking/decay#refrigerator)Refrigerators$()$(li)$(bold)$(l:cooking/decay#freeze_dry)Freeze Drying$()$(li)$(bold)$(l:cooking/decay#pest)Pest Control$()$(li)$(bold)$(l:cooking/decay#cutting)Cutting off decay$()"
+            "text": "$(li)$(bold)$(l:cooking/decay#oven_baked)烤炉烘烤$()$(li)$(bold)$(l:cooking/decay#cellar)地窖$()$(li2)$(l:cooking/decay#shelf)地窖存储$()$(li)$(bold)$(l:cooking/decay#lunch_box)便当盒$()$(li)$(bold)$(l:cooking/decay#refrigerator)电冰箱$()$(li)$(bold)$(l:cooking/decay#freeze_dry)冷冻干燥$()$(li)$(bold)$(l:cooking/decay#pest)防治害虫$()$(li)$(bold)$(l:cooking/decay#cutting)切除腐坏部分$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "decay",
-            "title": "Decay",
-            "text": "In TerraFirmaCraft, no food will last forever! Food will $(thing)expire$() over time, turning rotten. Rotten food will not restore any hunger, has the potential to give you debuff effects such as $(thing)Hunger$() or $(thing)Poison$(), and cannot be used in meals!$(br2)Fortunately, there are a number of ways to make your food last longer by $(thing)Preserving$() it."
+            "title": "腐败",
+            "text": "在群峦传说中，没有食物能永远保存！食物会随时间$(thing)变质$()并腐烂。腐烂的食物不能恢复任何饥饿值，还可能给你带来$(thing)饥饿$()或$(thing)中毒$()之类的负面效果，并且不能用于制作餐点！$(br2)幸运的是，有很多方法可以通过$(thing)保存$()来让食物存放得更久。"
         },
         {
             "type": "patchouli:text",
-            "text": "When you hover over a piece of food, you will see a tooltip which shows how long the food has until it will rot. It might look something like:$(br2)$(bold)$(2)Expires on: 5:30 July 5, 1000 (in 5 day(s))$()$(br2)By using various preservation mechanics, that date can be extended, giving you more time before your food roots. Most preservation traits even stack."
+            "text": "当你把鼠标悬停在食物上时，会看到一个提示框，显示距离食物变质还有多久。它可能看起来像这样：$(br2)$(bold)$(2)到期时间：1000年7月5日 5:30（还剩5天）$()$(br2)通过各种保存手段，这个日期可以被推后，让你的食物有更多时间才变质。大多数保存特性甚至还能叠加。"
         },
         {
             "type": "patchouli:text",
             "anchor": "calculation",
-            "title": "Calculating Decay",
-            "text": "When a food item is created in a world it is marked with a creation date time stamp internally. $(thing)TFC$() calculates the spoil rate by referencing that time stamp and the food's inherent decay modifier. Any preservation traits are added on top to shift the creation date back, allowing the item to last longer.$(br)Decay modifiers are a value from 0 to ∞. When 0, the food lasts forever, when ∞ the food spoils instantly. Therefore, the lower the modifier the better."
+            "title": "计算腐败",
+            "text": "食物在世界上生成时，内部会被标记一个创建时间戳。$(thing)TFC$()会参照这个时间戳以及食物自带的腐坏修正值来计算腐坏速度。各种保存特性会在此基础上叠加，把创建日期向前推移，从而让物品保存得更久。$(br)腐坏修正值是 0 到 ∞ 之间的数值。为 0 时食物永不腐坏，为 ∞ 时食物立即腐坏。因此，修正值越低越好。"
         },
         {
             "type": "patchouli:text",
-            "text": "To calculate the new spoil time when applying preservation traits you can use the formula: $(2)$(o)New Spoil Days = Spoil Days / Preservation Modifier$() rounded up. Stacking preservation traits is calculated multiplicatively like so: $(2)$(o)NSD = SD / (PM1 * PM2 * ...)$() which means that stacking traits exponentially increases decay time. A table of base preservation modifiers is available on the next page and each trait will be referenced in their own sections."
+            "text": "要计算施加保存特性后新的腐坏时间，可以使用公式：$(2)$(o)新腐坏天数 = 腐坏天数 / 保存修正值$()（向上取整）。叠加保存特性时按乘法计算，即：$(2)$(o)NSD = SD / (PM1 * PM2 * ...)$()，这意味着叠加特性能让保存时长呈指数级延长。下一页附有基础保存修正值表，每种特性也会在各自的章节中说明。"
         },
         {
             "type": "tfg:table",
             "anchor": "table",
             "strings": [
                 {
-                    "text": "Trait",
+                    "text": "特性",
                     "bold": true
                 },
                 {
-                    "text": "Modifier",
+                    "text": "修正值",
                     "bold": true
                 },
                 {
-                    "text": "Oven Baked"
+                    "text": "烤炉烘烤"
                 },
                 {
                     "text": "0.900"
                 },
                 {
-                    "text": "Grilled"
+                    "text": "炙烤"
                 },
                 {
                     "text": "0.800"
                 },
                 {
-                    "text": "Smoked"
+                    "text": "熏制"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Salted"
+                    "text": "抹盐"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Pickled"
+                    "text": "腌制"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Preserved"
+                    "text": "储存"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Wild"
+                    "text": "野生"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Dried"
+                    "text": "晒干"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Cooled"
+                    "text": "冷却"
                 },
                 {
                     "text": "0.300"
                 },
                 {
-                    "text": "Shelved"
+                    "text": "架存"
                 },
                 {
                     "text": "0.400 - 0.350 - 0.250"
                 },
                 {
-                    "text": "Hung"
+                    "text": "悬挂"
                 },
                 {
                     "text": "0.350 - 0.300 - 0.250"
                 },
                 {
-                    "text": "Refrigerating"
+                    "text": "冷藏保鲜"
                 },
                 {
                     "text": "0.125"
                 },
                 {
-                    "text": "Preserved in Vinegar"
+                    "text": "醋浸保存"
                 },
                 {
                     "text": "0.100"
                 },
                 {
-                    "text": "Cryodessicated"
+                    "text": "冷冻干燥"
                 },
                 {
                     "text": "0.020"
                 }
             ],
             "text": "",
-            "title": "Preservation Traits: Worst to Best",
+            "title": "保存特性：从差到优",
             "legend": [],
             "columns": 1,
             "first_column_width": 118,
@@ -147,7 +147,7 @@
         {
             "type": "patchouli:text",
             "anchor": "vessels",
-            "text": "One of the earliest ways to preserve food is to use a $(thing)Vessel$(). $(thing)Large Vessels$() are a block which can store up to nine items, and when $(thing)sealed$() the items inside will gain the $(5)$(bold)Preserved$() trait with a modifier of 0.5.$(br2)$(thing)Small Vessels$() are an item which can store up to four other items, and will also apply the $(5)$(bold)Preserved$() trait to their contents.",
+            "text": "使用$(thing)陶缸$()是最早的保存食物的方法之一。$(thing)大缸$()是一个最多能存放九件物品的方块，$(thing)密封$()后其中的物品会获得修正值为 0.5 的$(5)$(bold)储存$()特性。$(br2)$(thing)小缸$()是一件最多能存放四件其他物品的物品，同样会为其中的物品施加$(5)$(bold)储存$()特性。",
             "title": "缸"
         },
         {
@@ -173,19 +173,19 @@
         {
             "type": "patchouli:text",
             "anchor": "cooking",
-            "text": "One other way to easily preserve certain types of food is to cook them. $(thing)Meats$() will all expire slower when they are cooked than when they are raw.$(br2)Certain devices that heat very hot, such as a $(l:craftsmanship/charcoal_forge)Charcoal Forge$() or a $(l:craftsmanship/crucible)Crucible$() are $(bold)bad$() for cooking food, which will make them expire faster!$(br)They give the $(c)$(bold)Burnt to a Crisp!$() trait with a modifier of 2.5.",
+            "text": "另一种轻松保存某些食物的方法是烹饪。$(thing)肉类$()煮熟后都比生的时候腐坏得慢。$(br2)某些加热温度极高的设备，比如$(l:craftsmanship/charcoal_forge)木炭炉$()或$(l:craftsmanship/crucible)坩埚$()，$(bold)不适合$()用来烹饪食物，反而会让食物更快变质！$(br)它们会给予$(c)$(bold)一堆黑灰，恶心死了！$()特性，修正值为 2.5。",
             "title": "烹饪"
         },
         {
             "type": "tfg:heat_recipe",
             "recipe": "tfc:heating/mutton",
-            "text": "Instead, a $(l:cooking/cooking_methods#firepit)Firepit$() or a $(l:cooking/cooking_methods#grill)Grill$() can even provide a buff for using it! For example, cooking mutton (pictured above) in a $(thing)Firepit$() will increase its lifetime by about +42%, and cooking in a $(thing)Grill$() will give the $(5)$(bold)Wood Grilled$() trait with a modifier of 0.8."
+            "text": "相反，$(l:cooking/cooking_methods#firepit)篝火$()或$(l:cooking/cooking_methods#grill)烤架$()甚至能为食物提供保存加成！例如，在$(thing)篝火$()里烹煮羊肉（如上图）能将其保存期限延长约 +42%，而在$(thing)烤架$()上烹饪则会给予$(5)$(bold)烤制$()特性，修正值为 0.8。"
         },
         {
             "type": "patchouli:text",
             "anchor": "smoking",
-            "title": "Smoking",
-            "text": "Smoking is used to preserve $(thing)Meat$() and $(l:cooking/cheese)Cheese$() with a modifier of 0.7. To smoke meat, it must have first been $(thing)Brined$() by sealing it in a $(thing)Barrel$() with $(thing)Brine$(). Cheese does not have this requirement.$(br)To start smoking, add an item to wool yarn that is within four blocks above a firepit. The string should begin to generate some smoke if it is working.$(br)Note: The firepit may only be burned with $(thing)Logs$()!"
+            "title": "烟熏",
+            "text": "烟熏可用于保存$(thing)肉类$()和$(l:cooking/cheese)奶酪$()，修正值为 0.7。要熏制肉类，必须先将其$(thing)盐渍$()——与$(thing)卤水$()一起密封在$(thing)大桶$()中。奶酪没有这个要求。$(br)开始烟熏时，把物品挂到篝火上方四格内的羊毛纱上。如果正常工作，毛线就会开始冒烟。$(br)注意：篝火只能用$(thing)原木$()作燃料！"
         },
         {
             "type": "patchouli:multiblock",
@@ -210,13 +210,13 @@
                     "Y": "tfc:firepit[lit=true]"
                 }
             },
-            "text": "Wool yarn is used to hang items for $(thing)Smoking$(). Supporting blocks are required on each side. $(item)$(k:key.use)$() on the yarn with an item to store up to 8 items for smoking.",
+            "text": "羊毛纱用于悬挂物品进行$(thing)烟熏$()。两侧都需要支撑方块。手持物品对毛线按$(item)$(k:key.use)$()即可存放最多 8 件物品进行熏制。",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
             "anchor": "salting",
-            "text": "$(thing)Salting$() is a way to make meat last longer. To salt meat, it must be crafted with $(thing)Salt$() in a crafting grid. Only raw meat can be salted. Afterward, cooking or otherwise preserving the meat does not take away the salted property.$(7)$(bold)Salted$() food gain a modifier of 0.5.",
+            "text": "$(thing)盐腌$()是让肉类保存更久的方法。要给肉抹盐，需要在合成格中将它与$(thing)盐$()合成。只有生肉可以抹盐。之后，烹饪或其他保存手段都不会去掉抹盐属性。$(7)$(bold)抹盐$()的食物获得 0.5 的修正值。",
             "title": "抹盐"
         },
         {
@@ -235,44 +235,44 @@
                 }
             },
             "name": "舔盐",
-            "text": "Salt can be found naturally in forests in the form of salt licks, or ground from salt ores like halite.",
+            "text": "盐可以在森林中以舔盐的形式天然找到，也可以从石盐之类的盐矿石磨制获得。",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
             "anchor": "vinegar",
-            "title": "Vinegar Preservation",
-            "text": "$(thing)Vinegar Preservation$() is a way of making fruits, veggies, and meat last longer. To preserve food in vinegar it must first be $(thing)Pickled$() in $(thing)Brine$(). Once food is pickled, it can be sealed in a Barrel of Vinegar. If there is 125mB of Vinegar per pickled food item, the food will last longer. $(7)$(bold)Pickled$() food gain a modifier of 0.5 while $(7)$(bold)Submerged in Vinegar$() food gain a modifier of 0.1."
+            "title": "醋浸保存",
+            "text": "$(thing)醋浸保存$()是让水果、蔬菜和肉类保存更久的方法。要用醋保存食物，必须先在$(thing)卤水$()中$(thing)腌制$()。食物腌好之后，就可以密封进装醋的大桶。只要每件腌制食物对应 125mB 醋，食物就能保存得更久。$(7)$(bold)腌制$()的食物获得 0.5 的修正值，而$(7)$(bold)酸渍$()的食物获得 0.1 的修正值。"
         },
         {
             "type": "patchouli:text",
             "anchor": "drying",
-            "title": "Drying",
-            "text": "The $(thing)Drying Mat$() is used to dry items. It is made with $(thing)Fruit Leaves$(), which are obtained from breaking the leaves of $(thing)Fruit Trees$(). To use the drying mat, place it out in the sun and add an item to it with $(item)$(k:key.use)$(). If it rains, the drying process must start over. Some food items―Like fruits―Will gain the $(7)$(bold)Dried$() trait which gives a modifier of 0.8."
+            "title": "干燥",
+            "text": "$(thing)干燥垫$()用于干燥物品。它由$(thing)果树叶$()制成，果树叶可通过破坏$(thing)果树$()的树叶获得。使用干燥垫时，把它放在阳光下，手持物品按$(item)$(k:key.use)$()即可放上物品。如果下雨，干燥过程必须重新开始。某些食物——比如水果——会获得$(7)$(bold)晒干$()特性，修正值为 0.8。"
         },
         {
             "type": "patchouli:text",
-            "text": "The solar drier functions the same as the drying mat, but 12x as fast. Both can be automated by pushing a piston head against its side. Dropping an item onto a drying mat will place it on the mat."
+            "text": "太阳能干燥器的功能与干燥垫相同，但速度是它的 12 倍。两者都可以通过用活塞头抵住其侧面来实现自动化。把物品丢到干燥垫上也会将物品放上去。"
         },
         {
             "type": "patchouli:text",
             "anchor": "oven_baked",
-            "title": "Oven Baked",
-            "text": "Baking food items in a $(l:cooking/cooking_methods#top_oven)Top Oven$() is the second-best way to preserve your food items through cooking as it gives the $(7)$(bold)Oven Baked$() trait with a modifier of 0.9."
+            "title": "烤炉烘烤",
+            "text": "在$(l:cooking/cooking_methods#top_oven)烤炉顶$()中烘烤食物，是通过烹饪保存食物的第二好方法，它会给予$(7)$(bold)烤炉烘烤$()特性，修正值为 0.9。"
         },
         {
             "type": "patchouli:text",
             "anchor": "cellar",
             "title": "地窖",
-            "text": "The $(thing)Cellar$() is a multiblock device controlled by a $(item)Climate Station$(). The Cellar multiblock must be fully enclosed by $(thing)$(t:#firmalife:cellar_insulation)Sealed Bricks$() on all sides. The Climate Station must be placed on the first level of the cellar, touching a wall. Activate the climate station by $(item)$(k:key.use)$() it. If you update the structure in any way you will need to reactivate the climate station.$(br)The maximum internal volume of a cellar is 31x31x31 blocks."
+            "text": "$(thing)地窖$()是一个由$(item)气象站$()控制的多方块设备。地窖多方块结构的所有面都必须用$(thing)$(t:#firmalife:cellar_insulation)密封砖$()完全封闭。气象站必须放在地窖的第一层并紧贴墙壁。按$(item)$(k:key.use)$()激活气象站。如果你以任何方式改动了结构，就需要重新激活气象站。$(br)地窖的最大内部体积为 31x31x31 方块。"
         },
         {
             "type": "patchouli:text",
-            "text": "The cellar is used for food preservation and $(l:cooking/cheese#cheese_wheel)Aging Cheese$() by using $(l:cooking/decay#shelf)Food Shelves$() and $(l:cooking/decay#shelf)Hangers$() to hold food items or by placing cheese on the ground or $(thing)Barrel Racks$().$(br2)The cellar performs better in $(l:the_world/climate#temperature)Colder Environments$().$(li)$(2)Temp >= 0°C:$() Shelves 0.4, Hangers 0.35$(li)$(2)Temp < 0°C:$() Shelves 0.35, Hangers 0.3$(li)$(2)Temp < -12°C:$() Shelves 0.25, Hangers 0.25"
+            "text": "地窖用于保存食物，也用于$(l:cooking/cheese#cheese_wheel)陈化奶酪$()——把食物放在$(l:cooking/decay#shelf)食物架$()和$(l:cooking/decay#shelf)悬挂架$()上，或把奶酪放在地上或$(thing)桶架$()上。$(br2)地窖在$(l:the_world/climate#temperature)更寒冷的环境$()中表现更好。$(li)$(2)温度 >= 0°C：$()食物架 0.4，悬挂架 0.35$(li)$(2)温度 < 0°C：$()食物架 0.35，悬挂架 0.3$(li)$(2)温度 < -12°C：$()食物架 0.25，悬挂架 0.25"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "An example cellar structure.",
+            "text": "地窖结构示例。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -439,44 +439,44 @@
             "anchor": "shelf",
             "title": "地窖存储",
             "item": "tag:firmalife:food_shelves,tag:firmalife:hangers",
-            "text": "$(item)Food shelves$() and $(item)Hangers$() can contain a full stack of one food item. Adding and removing the item can be done with $(item)$(k:key.use)$() or $(item)$(k:key.sneak) + $(k:key.use)$() for full stacks. Items in valid food shelves and hangers receive a decay modifier that is better than vessels and increases with declining $(thing)Average Temperature$()."
+            "text": "$(item)食物架$()和$(item)悬挂架$()各自能存放一整组同种食物。放入和取出物品可用$(item)$(k:key.use)$()，整组存取则用$(item)$(k:key.sneak) + $(k:key.use)$()。放在有效的食物架和悬挂架上的物品会获得比陶缸更好的腐坏修正值，且随着$(thing)平均温度$()的降低而进一步提升。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "lunch_box",
-            "title": "Lunch Boxes",
+            "title": "午餐盒",
             "item": "tfclunchbox:lunchbox,tfclunchbox:cooling_lunchbox,tfclunchbox:electric_lunchbox",
-            "text": "Lunch boxes provide a convenient method to transport and consume food items. The basic lunchbox provides the $(5)$(bold)Preserved$() trait while the $(item)Cooling$() and $(item)Electric Lunchboxes$() give the $(9)$(bold)Cooled$() trait with a modifier of 0.3.$(br2)Cooling lunchboxes consume $(item)Ice$() to preserve food, while the electric lunchbox consumes $(2)EU$() energy."
+            "text": "午餐盒提供了一种携带和食用食物的便捷方式。基础午餐盒提供$(5)$(bold)储存$()特性，而$(item)冷藏午餐盒$()和$(item)电动午餐盒$()则提供修正值为 0.3 的$(9)$(bold)冷藏$()特性。$(br2)冷藏便当盒消耗$(item)冰$()来保存食物，而电动便当盒消耗$(2)EU$()能量。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "refrigerator",
-            "title": "Refrigerators",
+            "title": "电冰箱",
             "item": "tfg:mv_food_refrigerator,tfg:hv_food_refrigerator,tfg:ev_food_refrigerator,tfg:iv_food_refrigerator",
-            "text": "Refrigerators are added by $(tfg_short) and consume $(2)EU$() to provide the $(3)$(bold)Refrigerating$() trait with a modifier of 0.125.$(br)Higher tiers of the fridge do not affect the preservation buff―only the storage space available. Fridges can also combine food stacks by merging expiration dates."
+            "text": "电冰箱由$(tfg_short)添加，消耗$(2)EU$()来提供修正值为 0.125 的$(3)$(bold)冷藏保鲜$()特性。$(br)更高等级的电冰箱不会增强保存效果——只会增加可用存储空间。电冰箱还能通过合并过期日期来合并食物堆叠。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "freeze_dry",
-            "title": "Freeze Drying",
+            "title": "冷冻干燥",
             "item": "tfg:food/meal_bag,tfg:food/freeze_dried_fruit,tfg:food/calorie_paste",
-            "text": "$(tfg_short) adds the ability to freeze-dry select food items in $(item)Food Processors$() to greatly increase shelf life. Freeze drying gives the $(7)$(bold)Cryodessicated$() trait with a modifier of 0.02."
+            "text": "$(tfg_short)增加了在$(item)食品加工机$()中对特定食物进行冷冻干燥的功能，可大幅延长保存期限。冷冻干燥会给予$(7)$(bold)冷冻干燥$()特性，修正值为 0.02。"
         },
         {
             "type": "patchouli:text",
             "anchor": "pest",
-            "title": "Pests",
-            "text": "Food that is left sitting in chests can attract $(thing)Rats$(), so remember to store food properly in vessels, cellars, or fridges. Rats are able to open containers and eat the food out of them. You will be alerted to a rat's presence by the message $(thing)'This container has a foul smell'$(). It is important to note that unsealing and resealing a large vessel before you leave the screen will never attract pests."
+            "title": "害虫",
+            "text": "长时间放在箱子里的食物会吸引$(thing)老鼠$()，所以记得把食物妥善存放在陶缸、地窖或电冰箱中。老鼠能打开容器并吃掉里面的食物。当出现$(thing)「这个容器有一股臭味」$()的消息时，就说明有老鼠出没。需要注意的是，在离开这个界面之前解开再重新密封大缸，是绝对不会招来害虫的。"
         },
         {
             "type": "patchouli:text",
             "anchor": "cutting",
-            "title": "Cutting off",
-            "text": "Lastly, you can cut off the decayed part of food by picking up a $(item)knife$() with your cursor and $(item)right-clicking$() a partially decayed food item stack in your inventory.$(br2)This will reset the decay while losing some of the item stack, proportional to how decayed it was."
+            "title": "切除腐坏部分",
+            "text": "最后，你可以用光标拿起$(item)刀$()，然后在物品栏中对已部分腐坏的食物堆叠$(item)右键点击$()，切掉腐坏的部分。$(br2)这会重置腐坏进度，但会损失一部分食物，损失比例与其腐坏程度成正比。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/food_and_water",

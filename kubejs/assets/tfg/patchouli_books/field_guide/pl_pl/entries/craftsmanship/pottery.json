@@ -218,7 +218,7 @@
         {
             "type": "tfg:knapping_recipe",
             "recipe": "tfc:fire_clay_knapping/fire_ingot_mold",
-            "text": "$(thing)Fire Ingot Molds$() are a stronger type of $(l:craftsmanship/pottery#mold)Ingot Mold$() that has just a 1 in 100 chance of breaking, compared to 1 in 10 for a regular ingot mold."
+            "text": "$(thing)Ogniotrwałe formy odlewnicze sztabki$() to wytrzymalszy rodzaj $(l:craftsmanship/pottery#mold)formy odlewniczej sztabki$(). Pękają z szansą 1 na 100, w porównaniu do 1 na 10 zwykłej formy."
         },
         {
             "type": "patchouli:relations",

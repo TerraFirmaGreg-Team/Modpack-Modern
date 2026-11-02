@@ -1,20 +1,20 @@
 {
-    "name": "Beekeeping",
+    "name": "养蜂",
     "category": "tfg:agriculture",
     "icon": "firmalife:beehive",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(thing)Beehives$() are a place to house bees for $(thing)Beekeeping$(). Beekeeping is a direct source of both wax and honey. Beehives need $(item)Beehive Frames$() inside them for the bees to live. Removing frames from an active hive will cause the bees to attack you, unless wearing a full $(item)Beekeeper Suit$(), or with a lit $(thing)Firepit$() beneath the hive."
+            "text": "$(thing)蜂箱$()是用来安置蜜蜂、进行 $(thing)养蜂$()的地方。养蜂是蜂蜡和蜂蜜的直接来源。蜂箱里需要放入 $(item)巢脾$() 蜜蜂才能居住。从仍有蜜蜂居住的蜂箱里取出巢脾会招来蜜蜂攻击，除非你穿上一整套 $(item)养蜂人套装$()，或在蜂箱下方点着 $(thing)篝火$()。"
         },
         {
             "type": "patchouli:text",
-            "text": "Beehives know about the area in a 5 block radius from them. If there are at least 10 $(t:#minecraft:flowers block tag)$(3)Flowers$() around the hive, there is a chance an empty frame will be populated with a $(thing)Queen$(). Having 4 empty frames in a hive greatly increases the chances of bees moving in. Beehives can share flowers. The benefit of flowers diminishes after 60 flowers."
+            "text": "蜂箱能感知以它为中心 5 格半径内的区域。如果蜂箱周围至少有 10 朵 $(t:#minecraft:flowers block tag)$(3)花朵$()，空巢脾就有机会住进一只 $(thing)蜂王$()。蜂箱里放 4 个空巢脾能大幅提高蜜蜂入住的几率。蜂箱之间可以共享花朵。花朵超过 60 朵后收益会递减。"
         },
         {
             "anchor": "preview",
             "type": "tfg:multimultiblock",
-            "text": "Beehive Range",
+            "text": "蜂箱范围",
             "multiblocks": [
                 {
                     "pattern": [
@@ -326,14 +326,14 @@
         },
         {
             "type": "patchouli:text",
-            "text": "If a beehive has two frames with queens, and an empty frame, the two colonies have a chance of $(thing)Breeding$() and producing a new queen in the empty frame. This has the effect of passing on the $(thing)Abilities$() of each parent to the offspring. Abilities are different traits bees have that change how they affect the world around them. They are on a scale of 1-10, with 10 being the max.$(br)Bees can have up to $(thing)four$() abilities."
+            "text": "如果一个蜂箱里有两个住着蜂王的巢脾和一个空巢脾，两个蜂群就有几率 $(thing)繁殖$()，在空巢脾中产下新的蜂王。这样会把父母双方的 $(thing)性状$() 遗传给后代。性状是蜜蜂拥有的不同特质，会影响它们改变周围世界的方式。性状数值范围为 1-10，10 为最大值。$(br)蜜蜂最多可以拥有 $(thing)四种$()性状。"
         },
         {
-            "title": "Honey & Wax",
+            "title": "蜂蜜与蜂蜡",
             "anchor": "honey_and_wax",
             "type": "patchouli:spotlight",
             "item": "firmalife:jar/honey,firmalife:raw_honey,firmalife:beeswax",
-            "text": "Bees produce $(thing)Honey$(). Using $(item)$(k:key.use)$() with an Empty Jar on a hive that contains honey gives you a $(thing)Honey Jar$(). Opening a Honey Jar gives you $(thing)Raw Honey$(), a $(thing)Sugar$() substitute.$(br2)Pressing $(item)$(k:key.use)$() on a filled frame with a $(thing)Knife$() gives you $(thing)Beeswax$(), which has many uses. However, this kills the queen inside the frame!"
+            "text": "蜜蜂会产出 $(thing)蜂蜜$()。手持空罐子对着有蜂蜜的蜂箱 $(item)$(k:key.use)$()，就能得到 $(thing)蜂蜜罐头$()。打开蜂蜜罐头可以得到 $(thing)生蜂蜜$()，它是 $(thing)糖$() 的替代品。$(br2)对着装满的巢脾 $(item)$(k:key.use)$()（手持 $(thing)小刀$()）可以得到 $(thing)蜂蜡$()，它有很多用途。不过，这会杀死巢脾里的蜂王！"
         },
         {
             "type": "patchouli:text",
@@ -343,23 +343,23 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(thing)Fertility$(): Increases likelihood of breeding.$()$(li)$(thing)Crop Affinity$(): Likelihood of spreading a small amount of nutrients to crops.$()$()$(li)$(thing)Nature Restoration$(): Causes new flowers and lilypads to spawn around the hive.$()$()$(li)$(thing)Calmness$(): Decreases likelihood of bees attacking you$()."
+            "text": "$(li)$(thing)生育力$()：提高繁殖的几率。$()$(li)$(thing)作物亲和力$()：有几率向作物传播少量营养。$()$()$(li)$(thing)自然亲和力$()：使蜂箱周围生成新的花朵和睡莲。$()$()$(li)$(thing)冷静度$()：降低蜜蜂攻击你的几率$()。"
         },
         {
             "type": "patchouli:text",
             "anchor": "disease",
-            "title": "Disease",
-            "text": "Bees with a high Mutant ability have a chance of developing a $(thing)Genetic Disease$(). Diseased bees pass on their affliction to their offspring, and do not produce honey."
+            "title": "疾病",
+            "text": "拥有高突变性性状的蜜蜂有几率患上 $(thing)遗传病$()。患病的蜜蜂会把病症传给后代，并且不再产蜜。"
         },
         {
             "type": "patchouli:text",
             "title": "养蜂提示",
             "anchor": "tips",
-            "text": "$(li)Bees can help fertilize $(l:agriculture/greenhouse#planters)Planters!$()$(li)Hydrated large planters count as flowers.$(li)Being wet prevents bee attacks.$(li)Some crops like sunflowers and flax count as flowers.$(li)The ranges for $(thing)Crop Affinity$(), $(thing)Nature Restoration$(), and flowers are the same.$(li)Make sure to keep the hive entrance unobstructed."
+            "text": "$(li)蜜蜂可以帮助给 $(l:agriculture/greenhouse#planters)种植盆$()施肥！$(li)含水的大型种植盆也算作花朵。$(li)身上是湿的可以避免被蜜蜂攻击。$(li)向日葵、亚麻等一些作物也算作花朵。$(li)$(thing)作物亲和力$()、$(thing)自然亲和力$() 和花朵的范围相同。$(li)务必保持蜂箱入口畅通。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/greenhouse",

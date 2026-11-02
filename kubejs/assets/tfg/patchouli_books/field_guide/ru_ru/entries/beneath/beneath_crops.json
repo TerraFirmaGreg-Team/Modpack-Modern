@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "Beneath Crops",
+			"title": "Культуры Бездны",
 			"text": "$(thing)Бездна$() может быть суровой средой, но там всё же можно найти культуры. Культуры Бездны невероятно устойчивы и могут расти в условиях экстремальной жары, что делает их полезными для выживания под землёй и на поверхности."
 		},
 		{
@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Содержит",
-			"text": "$(li)$(l:beneath/beneath_crops#cassava)Cassava$()$(li)$(l:beneath/beneath_crops#peanut)Peanut$()$(li)$(l:beneath/beneath_crops#beans)Blackstone Beans$()$(li)$(l:beneath/beneath_crops#ghost_pepper)Ghost Pepper$()$(li)$(l:beneath/beneath_crops#cotton)Cotton$()"
+			"text": "$(li)$(l:beneath/beneath_crops#cassava)Маниок$()$(li)$(l:beneath/beneath_crops#peanut)Арахис$()$(li)$(l:beneath/beneath_crops#beans)Чернитная Фасоль$()$(li)$(l:beneath/beneath_crops#ghost_pepper)Призрачный Перец$()$(li)$(l:beneath/beneath_crops#cotton)Хлопок$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -24,7 +24,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cassava",
-			"title": "Cassava",
+			"title": "Маниок",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 70 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cassava can be eaten for $(thing)Vegetable$() nutrition, although it is best $(thing)cooked$() before consumed.$(br)"
 		},
 		{
@@ -139,7 +139,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "peanut",
-			"title": "Peanut",
+			"title": "Арахис",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Potassium$(br2)Peanuts can be eaten for $(thing)Vegetable$() and $(thing)Protein$() nutrition"
 		},
 		{
@@ -254,7 +254,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "beans",
-			"title": "Blackstone Beans",
+			"title": "Чернитная Фасоль",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Potassium$(br2)Blackstone Beans can be eaten for $(thing)Vegetable$() and $(thing)Protein$() nutrition. However, they must be cooked first!"
 		},
 		{
@@ -369,7 +369,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "ghost_pepper",
-			"title": "Ghost Pepper",
+			"title": "Призрачный Перец",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Ghost Peppers can be eaten for $(thing)Vegetable$() nutrition. They are also a common snack among the inhabitants of the Beneath."
 		},
 		{
@@ -485,7 +485,7 @@
 			"type": "patchouli:text",
 			"anchor": "cotton",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 40 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cotton is a two block tall crop. Cotton seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Cotton Balls$() which can be processed into $(thing)Cotton String$() or $(thing)Cloth$().",
-			"title": "Cotton"
+			"title": "Хлопок"
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -600,7 +600,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Читать дальше",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/climate",

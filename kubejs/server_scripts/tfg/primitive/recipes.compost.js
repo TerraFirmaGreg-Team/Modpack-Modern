@@ -5,6 +5,18 @@
  * @param {Internal.RecipesEventJS} event 
  */
 function registerTFGCompostRecipes(event) {
+	
+	// Maybe people will do this instead of just breaking and placing composters
+	event.recipes.firmalife.stomping('tfc:rotten_compost', '#tfc:compost_poisons',
+		'tfc:block/devices/composter/rotten', 'tfg:block/mud/oxisol', 'minecraft:entity.zombie.step')
+		.id('tfg:stomping/rotten_compost')
+
+	event.recipes.gtceu.compressor('tfg:rotten_compost')
+		.itemInputs('#tfc:compost_poisons')
+		.itemOutputs('tfc:rotten_compost')
+		.duration(50)
+		.EUt(4)
+
 	//#region Fertiliser
 	event.recipes.gtceu.mixer('tfg:fertilizer')
 		.itemInputs(

@@ -5,32 +5,32 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(item)Leather$() is a sturdy material formed from animal hides. It is required to craft $(item)Armor$(), $(item)Saddles$(), or a $(l:craftsmanship/charcoal_forge#bellows)Bellows$(). $(item)Raw Hides$() must be treated through several processes: $(l:agriculture/leather_making#soaking)soaking$(), $(l:agriculture/leather_making#scraping)scraping$(), $(l:agriculture/leather_making#preparing)preparing$(), and $(l:agriculture/leather_making#tanning)tanning$() to turn them into $(item)Leather$()."
+            "text": "$(item)革$()は動物の皮から作られた丈夫な素材です。$(item)防具$()、$(item)サドル$()、または$(l:craftsmanship/charcoal_forge#bellows)ふいご$()などの作成に使用できます。$(item)生皮$()はいくつかのプロセスを通じて処理する必要があります: $(l:agriculture/leather_making#soaking)浸漬$()、$(l:agriculture/leather_making#scraping)剥ぎ$()、$(l:agriculture/leather_making#preparing)準備$()と$(l:agriculture/leather_making#tanning)タンニン$()を使用して$(item)革$()に変換します。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tfc:small_raw_hide,tfc:medium_raw_hide,tfc:large_raw_hide",
             "title": "生皮",
             "link_recipes": true,
-            "text": "To get started you will first need to obtain $(thing)Raw Hide$(), which is dropped when slaughtering many different $(l:the_world/wild_animals)Animals$(). Different animals will drop different sizes of $(thing)Raw Hide$().$(br2)View $(emi) for information on mob drops."
+            "text": "革の作成を始めるには、まず$(thing)生皮$()を入手する必要があります。これは、さまざまな$(l:the_world/wild_animals)動物$()からドロップされます。動物ごとに、異なるサイズの$(thing)生皮$()がドロップされます。$(br2)どんなモブがどの皮をドロップするかについては、$(emi)をご覧ください。"
         },
         {
             "type": "patchouli:text",
-            "text": "Leather making will require several materials and tools. You will need:$(br)$(li)$(l:craftsmanship/barrels#limewater)Limewater$() - a solution of $(item)Flux$() in $(thing)Water$()$(li)Water$(li)$(l:craftsmanship/barrels#tannin)Tannin$() - an acidic solution made from the bark of some trees.$(li)$(thing)Raw Hides$()$(br2)With all that on hand, you are ready to begin the leather working process."
+            "text": "革を作るにはいくつかの材料と道具が必要です。必要なもの: $(br)$(li)$(l:craftsmanship/barrels#limewater)石灰水$(): $(thing)水$()と$(item)融剤$()の混合液$(li)水$(li)$(l:craftsmanship/barrels#tannin)タンニン$(): 木の樹皮から作られた酸性溶液。$(li)$(thing)生皮$()$(br2)これらがすべて揃えれば革の加工プロセスを開始する準備が整いました。"
         },
         {
             "type": "tfg:sealed_barrel_recipe",
             "anchor": "soaking",
             "recipe": "tfc:barrel/medium_soaked_hide",
-            "text": "First, raw hides must be $(thing)soaked$() to clean them and loosen unwanted material before processing. This can be done by sealing some $(thing)Raw Hide$() in a $(l:craftsmanship/barrels#limewater)Barrel of Limewater$() for at least eight hours."
+            "text": "まず、加工前に生皮を$(thing)浸漬$()してきれいにし、不要な物質をほぐす必要があります。$(thing)生皮$()を$(l:craftsmanship/barrels#limewater)石灰水入りの樽$()に8時間密封します。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "scraping",
             "item": "tfc:small_scraped_hide,tfc:medium_scraped_hide,tfc:large_scraped_hide",
-            "title": "Scraping",
+            "title": "剥ぎ",
             "link_recipes": true,
-            "text": "After soaking, $(thing)Soaked Hides$() must be scraped which removes any excess material. In order to scrape hides, place the hide on the side of a $(thing)Log$(). With a $(item)Knife$() or $(item)Scrapping Knife$(), $(item)$(k:key.use)$() on each part of the hide, and it will start to change texture."
+            "text": "浸漬した後、$(thing)石灰漬けされた皮$()を削り、余分な材料を取り除く必要があります。皮を削り取るには、皮を$(thing)原木$()の上部に置きます。$(item)ナイフ$()または$(item)剝ぎ取りナイフ$()で$(item)$(k:key.use)$()を皮の各部分に実行すると、その部分を剥ぎ取ることができます。"
         },
         {
             "type": "patchouli:image",
@@ -47,24 +47,24 @@
             "type": "tfg:sealed_barrel_recipe",
             "anchor": "preparing",
             "recipe": "tfc:barrel/medium_prepared_hide",
-            "text": "After scraping, $(thing)Scraped Hides$() must be sealed in a $(l:craftsmanship/barrels)Barrel$() of $(thing)Water$() for at least eight hours, for one final cleaning before tanning."
+            "text": "削り終わった後、$(thing)剥がれた皮$()を$(thing)水$()入りの$(l:craftsmanship/barrels)樽$()に8時間密封し、なめし前の最終洗浄を行う必要があります。"
         },
         {
             "type": "tfg:sealed_barrel_recipe",
             "anchor": "tanning",
             "recipe": "tfc:barrel/medium_leather",
-            "text": "Finally, $(thing)Prepared Hides$() must be sealed in a $(l:craftsmanship/barrels#tannin)Barrel of Tannin$(), which is an acidic chemical compound―made from $(t:#tfc:makes_tannin)$(6)Tannin Rich Logs$()―that helps to convert the hide to $(thing)Leather$(). After another eight hours, you can remove the $(thing)Leather$() from the barrel."
+            "text": "最後に、$(thing)準備された皮$()を、$(l:craftsmanship/barrels#tannin)タンニン入りの樽$()に密封する必要があります。これは、$(t:#tfc:makes_tannin)$(6)タンニンが豊富な木$()を水に密封することで作成できる、皮を$(thing)革$()に変換するのに役立つ酸性の化合物です。さらに8時間後、樽から$(thing)革$()を回収することができます。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "pineapple_leather",
-            "title": "Leather Alternative",
+            "title": "革の代替品",
             "item": "firmalife:pineapple_leather",
-            "text": "An alternative to animal leather is $(item)Pineapple Leather$(). Which can be produced by first $(l:cooking/decay#drying)drying$() $(l:the_world/wild_fruits#pineapple)Pineapples$(), stripping them into string, and then $(l:agriculture/weaving)Weaving$() the pineapple string into pineapple leather."
+            "text": "動物の革に代わる素材として、$(item)パイナップルレザー$()があります。これは、まず$(l:cooking/decay#drying)乾燥$()させた$(l:the_world/wild_fruits#pineapple)パイナップル$()を紐状に加工し、そのパイナップルの織り糸を$(l:agriculture/weaving)織りあげる$()ことでパイナップルレザーを作ることができます。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "さらに読む",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/animal_husbandry",

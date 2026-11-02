@@ -409,7 +409,17 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "任何$(item)實心方塊$()都可以用來建造基地，但你需要一個像樣的氣閘，確保氣體不會因為$(thing)漩渦$()全部散逸。搭配$(item)熱泵$()時，封閉空間就會變得適合居住，讓你可以脫下頭盔、種植作物，並放置不會結冰的水源。$(br2)能源消耗會隨房間大小而增加，所以請為分配器配置適當的能源倉。"
+			"text": "任何$(item)實心方塊$()都可以用來建造基地，但你需要一個像樣的氣閘，確保氣體不會因為$(thing)漩渦$()全部散逸。搭配$(item)熱泵$()時，封閉空間就會變得適合居住，讓你可以脫下頭盔、種植作物，並放置不會結冰的水源。$(br2)$(o)(下頁續……)$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:ultimet\"}},gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:vanadium\"}},gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:rocket_alloy_t1\"}},gtceu:turbine_rotor{GT.PartStats:{Material:\"tfg:rene_41\"}}",
+			"title": "渦輪轉子",
+			"text": "和$(item)熱泵$()一樣，你需要一個$(item)渦輪轉子$()才能讓可呼吸空氣分配器運作。渦輪轉子會同時降低 EU/t 與可呼吸氣體 mB/t 的消耗量。$(br2)$(italic)如果$(thing)效率$()或$(thing)功率$()低於 100%，轉子就不會帶來任何好處。$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "渦輪轉子裝在$(item)排氣口$()中時$(thing)永遠不會損耗耐久度$()，而且任何轉子都能用。在這個階段，我們建議使用 R-鋁鋼或鈷基超合金。$(br2)能源消耗會隨房間大小而增加，所以請為分配器配置適當的能源倉，並隨著進度推進改用更好的渦輪轉子。"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -426,7 +436,7 @@
 			"type": "patchouli:spotlight",
 			"item": "tfg:higgs_emitter",
 			"anchor": "higgs",
-			"text": "$(item)希格斯發射器$()可以製造人工重力，就像$(item)熱泵$()或$(l:the_moon/the_moon#distributor)可呼吸空氣分配器$()一樣，作用範圍是一個密封區域。範圍大小取決於多方塊結構的能源倉等級。"
+			"text": "$(item)Higgs 發射器$()可以製造人工重力，就像$(item)熱泵$()或$(l:the_moon/the_moon#distributor)可呼吸空氣分配器$()一樣，作用範圍是一個密封區域。範圍大小取決於多方塊結構的能源倉等級。想創造零重力環境，請確保身上帶著一把 $(item)壓縮槍$()。"
 		},
 		{
 			"type": "patchouli:spotlight",

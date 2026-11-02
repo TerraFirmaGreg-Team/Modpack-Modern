@@ -67,7 +67,7 @@
 	"error.exposure.exposure_retrieve.timeout.casual": "Ujęcia nie śpieszą się, aby być dostępne.",
 	"error.exposure.exposure_retrieve.timeout.technical": "Nie udało się pobrać ujęć na czas.",
 	"error.exposure.generic.casual": "Coś jest nie tak… Może logi powiedzą więcej?",
-	"error.exposure.generic.technical": "Wystąpił błąd. Szczegóły w logach.",
+	"error.exposure.generic.technical": "Wystąpił błąd. Zobacz szczegóły w dzienniku.",
 	"exposure.configuration.album": "Album",
 	"exposure.configuration.album_show_photos_count": "Pokaż liczbę zdjęć w albumie",
 	"exposure.configuration.attachments_show_info_toast": "Pokaż wskazówkę: części aparatu",
@@ -182,7 +182,7 @@
 	"gui.exposure.camera_controls.film_frame_counter.tooltip": "Klatki filmu",
 	"gui.exposure.camera_controls.film_frame_counter.tooltip.no_film": "Brak filmu",
 	"gui.exposure.camera_controls.flash_mode.tooltip": "Tryb błysku",
-	"gui.exposure.camera_controls.focal_length": "%smm",
+	"gui.exposure.camera_controls.focal_length": "%s mm",
 	"gui.exposure.camera_controls.focal_length.tooltip": "Długość ogniskowej",
 	"gui.exposure.camera_controls.focal_range": "%s mm",
 	"gui.exposure.camera_controls.self_timer.cancel.tooltip": "Anuluj samowyzwalacz",
@@ -353,5 +353,5 @@
 	"task.exposure.export.status.exporting": "Eksportowanie '%s' - [%s/%s]",
 	"task.exposure.export.status.requesting": "Żądanie '%s' - [%s/%s]",
 	"task.exposure.export.stopped": "Eksportowanie zatrzymane.",
-	"tooltip.exposure.hold_for_details": "§8Przytrzymaj [§7Shift§8], aby uzyskać szczegóły"
+	"tooltip.exposure.hold_for_details": "§8Przytrzymaj [§7Shift§8], aby zobaczyć szczegóły"
 }
