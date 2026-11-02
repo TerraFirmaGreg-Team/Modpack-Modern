@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "製作$(thing)麵包$()首先需要$(thing)酵母$()。第一份酵母的取得方式是將$(l:cooking/decay#drying)果乾$()密封在裝有$(thing)水$()的大桶中，三天後就會形成$(thing)酵母種$()。$(br)之後只要將酵母種和$(thing)麵粉$()一起密封在大桶中，就能餵養酵母使其繁殖。每 100mB 酵母搭配 1 份麵粉可產出 600mB 酵母，真划算！"
+            "text": "製作$(thing)麵包$()首先需要$(thing)酵母$()，第一份要將$(l:cooking/decay#drying)果乾$()密封在裝有$(thing)水$()的大桶中，三天後就會形成$(thing)酵母種$()。$(br)之後只要將酵母種和$(thing)麵粉$()一起密封在大桶中，就能餵養酵母使其繁殖。每 100mB 酵母搭配 1 份麵粉可產出 600mB 酵母，真划算！"
         },
         {
             "type": "patchouli:text",

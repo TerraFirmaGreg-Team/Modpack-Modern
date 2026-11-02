@@ -67,7 +67,7 @@
 				"tfg:textures/gui/field_guide/nether/salt_caves.png"
 			],
 			"border": true,
-			"text": "就像溫暖的海風，這個生態域充滿了$(item)石鹽$()。很適合作為基地地點！"
+			"text": "就像溫暖的海風，這個生態域充滿了$(item)石鹽$()，很適合蓋基地！"
 		},
 		{
 			"type": "patchouli:image",
@@ -77,7 +77,7 @@
 				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
 			],
 			"border": true,
-			"text": "潮濕且像沼澤一樣。如果你能避開$(thing)鱷魚$()，這裡是安全的木材來源。"
+			"text": "潮濕，像沼澤一樣。只要避開$(thing)鱷魚$()，這裡就是安全的木材來源。"
 		},
 		{
 			"type": "patchouli:image",
@@ -107,7 +107,7 @@
 				"tfg:textures/gui/field_guide/nether/tar_pools.png"
 			],
 			"border": true,
-			"text": "這片區域像小沙漠一樣滿是沙子，有著充滿石油的黏稠$(thing)焦油坑$()。"
+			"text": "這裡沙地遍布，像座小沙漠，還有滿是石油的黏稠$(thing)焦油坑$()。"
 		},
 		{
 			"type": "patchouli:image",
@@ -117,7 +117,7 @@
 				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
 			],
 			"border": true,
-			"text": "這裡沒有硫磺立方怪，但這個熱氣蒸騰的生態域很適合尋找可治療的$(thing)溫泉水$()。"
+			"text": "這裡沒有硫磺立方怪，但熱氣蒸騰，是尋找療傷$(thing)溫泉水$()的好去處。"
 		},
 		{
 			"type": "patchouli:image",
@@ -127,7 +127,7 @@
 				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
 			],
 			"border": true,
-			"text": "一個難以穿越的生態域，踩到這裡的植物會對你產生影響。小心！"
+			"text": "難以穿越的生態域，踩到這裡的植物會有各種效果。小心！"
 		},
 		{
 			"type": "patchouli:image",
@@ -147,7 +147,7 @@
 				"tfg:textures/gui/field_guide/nether/ash_forest.png"
 			],
 			"border": true,
-			"text": "上層的綠意在高溫頻繁引發的火災之後，所剩下的殘跡。"
+			"text": "高溫頻繁引發火災後，上層綠意僅存的殘跡。"
 		},
 		{
 			"type": "patchouli:image",
@@ -157,7 +157,7 @@
 				"tfg:textures/gui/field_guide/nether/lava_floes.png"
 			],
 			"border": true,
-			"text": "富含礦物的$(thing)輝石岩$()區域，被縱橫交錯的熔岩河流貫穿。"
+			"text": "富含礦物的$(thing)輝石岩$()區域，熔岩河縱橫交錯。"
 		},
 		{
 			"type": "patchouli:image",

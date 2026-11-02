@@ -54,7 +54,7 @@
                 }
             ],
             "name": "",
-            "text": "可以把火把丟到原木堆或$(l:craftsmanship/pit_kiln)坑窯$()上來點燃它們。",
+            "text": "把火把丟到原木堆或$(l:craftsmanship/pit_kiln)坑窯$()上即可點燃。",
             "enable_visualize": false
         },
         {
@@ -87,7 +87,7 @@
             "anchor": "jack_o_lanterns",
             "title": "南瓜燈",
             "item": "tag:tfg:carved_pumpkins,tag:tfg:carved_pumpkins/lit",
-            "text": "南瓜燈是點燃的$(thing)雕刻過的南瓜$()，可以持續 4.5 天，之後會變回雕刻過的南瓜。$(br)手持南瓜並進行$(l:craftsmanship/sticks_and_stones)塑形$()即可雕刻南瓜。"
+            "text": "南瓜燈是點燃的$(thing)雕刻過的南瓜$()，可以持續 4.5 天，之後會變回雕刻過的南瓜。$(br)手持南瓜$(l:craftsmanship/sticks_and_stones)塑形$()即可雕刻南瓜。"
         },
         {
             "type": "patchouli:multiblock",
@@ -113,7 +113,7 @@
             "anchor": "lamps",
             "title": "燈",
             "item": "tag:tfc:lamps",
-            "text": "燈是燃燒液態燃料的長期光源，被破壞時會保留燃料。可以用$(thing)管道$()自動補充燃料，或用$(l:cooking/drinking_containers)流體容器$()手動補充。$(br)在$(emi)中查看燈即可確認可用燃料。$(thing)熔岩$()可永久燃燒，但只能用於$(item)藍鋼燈$()；$(thing)液態螢光石$()同樣能永久燃燒，且任何燈都能用。"
+            "text": "油燈是燃燒液態燃料的長期光源，被破壞時會保留燃料。可以用$(thing)管道$()自動補充燃料，或用$(l:cooking/drinking_containers)流體容器$()手動補充。$(br)在$(emi)中查看油燈即可確認可用燃料。$(thing)熔岩$()可永久燃燒，但只能用於$(item)藍鋼燈$()；$(thing)液態螢光石$()同樣能永久燃燒，且任何油燈都能用。"
         },
         {
             "type": "patchouli:multiblock",

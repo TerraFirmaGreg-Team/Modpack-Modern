@@ -33,7 +33,7 @@
             "type": "patchouli:text",
             "anchor": "intro",
             "title": "動物簡介",
-            "text": "動物可分為幾類：$(l:the_world/wild_animals#livestock)牲畜$()、$(l:the_world/wild_animals#predators)掠食者$()、$(l:the_world/wild_animals#prey)獵物$()和$(l:the_world/wild_animals#aquatic)水生$()動物。絕大多數動物被殺死後會掉落肉，不過有些肉吃了可能不安全，尤其是生吃。"
+            "text": "動物可分為幾類：$(l:the_world/wild_animals#livestock)牲畜$()、$(l:the_world/wild_animals#predators)掠食者$()、$(l:the_world/wild_animals#prey)獵物$()和$(l:the_world/wild_animals#aquatic)水生$()動物。絕大多數動物被殺死後會掉落肉，但有些肉吃了可能不安全，尤其是生吃。"
         },
         {
             "type": "patchouli:text",
@@ -510,7 +510,7 @@
             "scale": 0.7,
             "name": "海龜",
             "anchor": "turtle",
-            "text": "海龜喜歡溫暖的水域。牠在$(l:the_world/climate#temperature)溫度$()至少 21°C、$(l:the_world/climate#rainfall)降雨量$()至少 250mm 的地區生成。"
+            "text": "海龜喜歡溫暖的水域，在$(l:the_world/climate#temperature)溫度$()至少 21°C、$(l:the_world/climate#rainfall)降雨量$()至少 250mm 的地區生成。"
         },
         {
             "type": "patchouli:text",
@@ -524,7 +524,7 @@
             "scale": 0.7,
             "name": "鱈魚",
             "anchor": "cod",
-            "text": "鱈魚偏好較冷的海洋，$(l:the_world/climate#temperature)溫度$()最高 18°C。可以釣到。"
+            "text": "鱈魚偏好較冷的海洋，$(l:the_world/climate#temperature)溫度$()最高 18°C，可以釣到。"
         },
         {
             "type": "patchouli:entity",

@@ -60,7 +60,7 @@
             "images": [
                 "tfc:textures/gui/book/tutorial/bloomery_hole.png"
             ],
-            "text": "Dymarka zużywa $(thing)1 węgiel drzewny$() i $(thing)144 mW Żeliwa$(), aby stworzyć jeden kawałek $(thing)surówki$().",
+            "text": "Dymarka zużywa $(thing)1 węgiel drzewny$() i $(thing)144 mB Żeliwa$(), aby stworzyć jeden kawałek $(thing)surówki$().",
             "border": true
         },
         {
@@ -111,10 +111,10 @@
                     "text": "24"
                 },
                 {
-                    "text": "0 mW"
+                    "text": "0 mB"
                 },
                 {
-                    "text": "129 mW pyłu rudy"
+                    "text": "129 mB pyłu rudy"
                 },
                 {
                     "text": "25"
@@ -129,10 +129,10 @@
                     "text": "22"
                 },
                 {
-                    "text": "57 mW"
+                    "text": "57 mB"
                 },
                 {
-                    "text": "129 mW pyłu rudy"
+                    "text": "129 mB pyłu rudy"
                 },
                 {
                     "text": "19"
@@ -147,7 +147,7 @@
                     "text": "17"
                 },
                 {
-                    "text": "3 mW"
+                    "text": "3 mB"
                 }
             ],
             "text": "Pamiętaj, że nie warto przejmować się niewielkimi stratami żelaza!",
