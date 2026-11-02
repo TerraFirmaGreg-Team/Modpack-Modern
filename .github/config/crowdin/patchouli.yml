@@ -1,8 +1,8 @@
-# crowdin upload sources -v --config=".github\config\crowdin_patchouli.yml" --delete-obsolete
-# crowdin upload translations -v --config=".github\config\crowdin_patchouli.yml"  
+# crowdin upload sources -v --config=".github\config\crowdin\patchouli.yml" --delete-obsolete
+# crowdin upload translations -v --config=".github\config\crowdin\patchouli.yml"  
 
 base_url: "https://terrafirmagreg.api.crowdin.com"
-base_path: "../../kubejs/assets"
+base_path: "../../../kubejs/assets"
 
 project_id_env: "CROWDIN_ID"
 api_token_env: "CROWDIN_TOKEN"
