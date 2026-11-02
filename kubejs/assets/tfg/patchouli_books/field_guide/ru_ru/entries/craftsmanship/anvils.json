@@ -411,8 +411,8 @@
         {
             "type": "patchouli:text",
             "anchor": "anvil_helper",
-            "title": "Anvil Helper Guide",
-            "text": "$(l:craftsmanship/anvils#working)Working$() in $(l:craftsmanship/anvils#metal_anvil)Anvils$() is a key process inside $(tfg), as most of your work towards the $(thing)Steam and Mechanical ages$() will require the usage of an Anvil.$(br)This guide is broken down into two parts, $(l:craftsmanship/anvils#ui_explained)Understanding the UI$() and $(l:craftsmanship/anvils#how_to_perfectly_forge)How to Perfectly Forge$().$(br2)The Modpack has a custom $(thing)Resource Pack$() called $(l:https://www.curseforge.com/minecraft/texture-packs/tfc-anvil-helper-patched)TFC Anvil Helper$() that you need to enable for this guide to make sense.$()"
+            "title": "Руководство по наковальне",
+            "text": "$(l:craftsmanship/anvils#working)Работа$() на $(l:craftsmanship/anvils#metal_anvil)наковальнях$() — важнейший процесс в $(tfg), поскольку большая часть работ, необходимых для перехода к $(thing)парамеханической и механической эпохам$(), требует использования наковальни.$(br)Это руководство состоит из двух частей: $(l:craftsmanship/anvils#ui_explained)Разбор интерфейса$() и $(l:craftsmanship/anvils#how_to_perfectly_forge)Как идеально выковать предмет$().$(br2)В сборке есть собственный $(thing)пакет ресурсов$() под названием $(l:https://www.curseforge.com/minecraft/texture-packs/tfc-anvil-helper-patched) TFC Anvil Helper$(), который необходимо включить, чтобы руководство имело смысл.$()"
         },
         {
             "type": "patchouli:image",
@@ -467,13 +467,13 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(#00a7ff)5.$() The Slots where your Hammer goes, and Flux if you're Welding.$(br)$(#00ff26)6. $()The current Work amount the item has, Doing different Steps either Increases or Decreases the amount of Work the item has.$(br)$(#fff400)7. $()The Target Work value, the $(#00ff26)Work$() value must be aligned EXACTLY with the Target Work, AND the $(#ff00c6)Required Steps$() must be fulfilled for the Item to be considered complete.$(br)$(#ff6b00)8. $()The Work Bar, used for Aligning the Work value with the Target Work value."
+            "text": "$(#00a7ff)5.$() Ячейки для молота и, для сварки, флюса.$(br)$(#00ff26)6. $() Прогресс проделенной работы. Выполнение различных шагов либо увеличивает, либо уменьшает этот прогресс.$(br)$(#fff400)7. $() Целевой объем работы. Для успешного завершения обработки, значение $(#00ff26)Прогресса$() должно ТОЧНО совпасть с целевым объемом работы И должны быть выполнены $(#ff00c6)требуемые шаги$().$(br)$(#ff6b00)8. $() Шкала работы, используемая для отслеживания прогресса работы и  целевого объема работы."
         },
         {
             "type": "patchouli:text",
             "anchor": "how_to_perfectly_forge",
             "title": "Как идеально выковать",
-            "text": "$(thing)Perfectly Forging$() an Item which can break, such as $(thing)Tool Heads$(), $(thing)Weapons$(), and $(thing)Armor$() causes the Item to gain bonuses to its durability and general efficiency with the less total steps you take to forge the Item. Completing the Work on an Item with very few steps causes it to be Perfectly Forged, not only giving your finished item bonuses, but also reducing the overall wear and tear to the Hammer."
+            "text": "$(thing)Идеальная ковка$() предмета, который может сломаться, например, $(thing)оголовий инструментов$(), $(thing)оружия$() и $(thing)брони$(), дает предмету бонусы к прочности и общей эффективности — в зависимости от количества затраченных шагов. Завершение работы за минимальное количество шагов приведет к идеальной ковке, что не только даст готовому предмету бонусы, но и снизит общий износ молота."
         },
         {
             "type": "patchouli:image",
@@ -487,16 +487,16 @@
             "type": "patchouli:spotlight",
             "title": "Руководство по ковке",
             "item": "gtceu:wrought_iron_pickaxe_head",
-            "text": "This part of the guide will cover how to Perfectly Forge anything, starting with a Wrought Iron Pickaxe Head."
+            "text": "В этой части руководства мы расскажем, как идеально выковать что угодно — начиная с оголовья кирки из кованого железа."
         },
         {
             "type": "patchouli:text",
-            "text": "$(bold)$(italic)DISCLAIMER:$()$(br)While the Required Steps and Orders for an Item are universal within all worlds in $(tfg_short), the Target Work value differs because it's derived from your world's Seed, as such, this Guide ASSUMES the Target Work value for the Wrought Iron Pickaxe Head is $(bold)83$()."
+            "text": "$(bold)$(italic)ДИСКЛЕЙМЕР:$()$(br)Хотя обязательные шаги и их последовательность одинаковы для всех миров в $(tfg_short), целевое значение работы будет отличается, поскольку оно зависит от сида твоего мира. Поэтому, в этом руководстве ПРЕДПОЛАГАЕТСЯ, что целевое значение работы для оголовья кирки из кованого железа составляет $(bold)83$()."
         },
         {
             "type": "patchouli:text",
             "title": "Шаг 1",
-            "text": "The first Step in your Forging Journey is to get the Value taken by Adding all the Required Step's values together. For a Pickaxe Head, you need the following Steps:$(li)$(bold)Punch$() Last$()$(li)$(bold)Bend$() Not Last$()$(li)$(bold)Draw$() Not Last$().$(br)By adding the Values on the Bottom of each Step, We get the Value we're looking for. Let's call this value \"requiredWork\".$(br)$(bold)2 + 7 + (-15) = -6$()"
+            "text": "Первый шаг на твоем кузнечном пути — расчитать итоговое значение работы от необходимых шагов, сложих их вместе. Для изготовления оголовья кирки необходимы следующие шаги: $(li)$(bold)Штамповать$() последний$()$(li)$(bold)Изогнуть$() не последний$()$(li)$(bold)Протянуть$() не последний$().$(br) Теперь сложим значения работы снизу всех иконок шагов вместе. Назовем это значение «целевой объем работы». $(br)$(bold)2 + 7 + (-15) = -6$()"
         },
         {
             "type": "patchouli:image",
@@ -508,7 +508,7 @@
         {
             "type": "patchouli:text",
             "title": "Шаг 2",
-            "text": "While our main goal for the Work Amount is to align it with the Target Work, we need to make sure both that requirement AND the Steps requirements are fulfilled, as such, directly aligning the Work Amount with the Target Work will not yield desirable results. Instead, we can calculate the value derived from Target Work and \"requiredWork\""
+            "text": "Хотя наша главная цель при определении объема работ — посчитать его так, чтобы объем совпал с целевым количеством работы — нам нужно соблюсти это требование И требование по шагам. Поэтому, только свести прогресс работы с целевым объемом работы будет недостаточно. Вместо этого, мы можем вывести общее значение из этих двух значений объема работы и «требуемойРаботы»."
         },
         {
             "type": "patchouli:text",
@@ -540,7 +540,7 @@
         {
             "type": "patchouli:text",
             "title": "Шаг 4",
-            "text": "Now that we know the required steps, it's time to reach the Value derived from \"Target Work\" and \"requiredWork\". For a pickaxe head where it's TotalWork value is 83, we need to reach 89. As such, we do: (Shrink x 5) → Bend → Punch.$(br2)Once our Work value is at our desired value, just follow the Required Steps, which for a pickaxe head its: Draw → Bend → Punch. And Voilà! We've obtained a Perfectly Forged Item!"
+            "text": "Теперь, когда мы знаем, какие шаги нужно предпринять, пришло время довести прогресс работы до выведенного значения объема работы и «требуемойРаботы». Для оголовья кирки с целевым объемом работы 83, выведенное значение получится 89. Поэтому делаем следующие шаги: (Усадить x 5) → Изогнуть → Штамповать.$(br2)Как только мы достигним нужного значения работы, просто следуем требумым шагам. Для оголовья кирки это: Протянуть → Изогнуть → Штамповать. И вуаля! Мы сделали идеального выкованный предмет!"
         },
         {
             "type": "patchouli:image",
@@ -549,16 +549,16 @@
                 "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_some_work.png",
                 "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_complete.png"
             ],
-            "text": "An Ingot with No Work → Desired Work Value Reached → Doing the Required Steps for our Item."
+            "text": "Необработанный слиток → Требуемая степень обработки достигнута → Делаем нужные шаги"
         },
         {
             "type": "patchouli:text",
             "title": "Примеры",
-            "text": "Lets see this process with other items, such as a Plate, or a Rod. Again, the Target Work differs by the world seed, so their values will be different on your world.$(br)Plate Target Value: $(bold)111$()$(br)Required Steps: Hit x 3, Any Order.$(br)\"requiredWork\": -3 x 3 = -9$(br)Derived Value: 111 + 9 = 120.$(br)Reaching the Value: (Shrink x 5) → (Upset x 2) → (Punch x 2)$(br)Getting the Item: 120 - (Light Hit x 3) == $(bold)111$(). Both requirements met."
+            "text": "Давай посмотрим, как этот процесс выглядит с другими предметами — к примеру, с пластиной или стержнем. Опять же, целевой объем работы отличается от мира к миру, так что фактическое значение будет иным в твоем мире.$(br)Объем работы для пластины: $(bold)111$()$(br)Требуемые шаги: Ударить x 3, в любом порядке.$(br)«требуемаяРабота»: -3 x 3 = -9$(br)Выведенное значение работы: 111 + 9 = 120.$(br)Шаги для достижения значения: (Усадить x 5) → (Обжать x 2) → (Штамповать x 2)$(br)Завершение обработки: 120 - (Слабо ударить x 3) == $(bold)111$(). Оба условия выполнены."
         },
         {
             "type": "patchouli:text",
-            "text": "Rod Target Value: $(bold)78$()$(br)Required Steps: Draw → Draw → Bend$(br)\"requiredWork\": (-15 x 2) + 7 = -23$(br)Derived Value: 78 + 23 = 101.$(br)Reaching the Value: (Shrink x 5) → (Bend x 3)$(br)Getting the Item: 101 - 15 - 15 + 7 = 78."
+            "text": "Целевой объем работы для стержня: $(bold)78$()$(br)Требуемые шаги: Протянуть → Протянуть → Изогнуть$(br)«требуемаяРабота»: (-15 x 2) + 7 = -23$(br)Выведенное значение работы: 78 + 23 = 101.$(br)Шаги для достижения значения: (Усадить x 5) → (Изогнуть x 3)$(br)Завершение обработки: 101 - 15 - 15 + 7 = 78."
         },
         {
             "type": "patchouli:text",
@@ -567,11 +567,11 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Congratulations on reaching the end! If you want to follow along in a creative world, the seed used during its writing is $(bold)-7291708953208913102$()."
+            "text": "Поздравляем с завершением руководства! Если ты хочешь повторить эти шаги в точности в креативном мире, то используй тот же самый сид, который был у нас на момент написания этого руководства: $(bold)-7291708953208913102$()"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Читать далее",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pottery",

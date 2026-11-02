@@ -1,17 +1,17 @@
 {
-    "name": "Earth Geology",
+    "name": "Геология Земли",
     "category": "tfg:the_world",
     "icon": "tfc:rock/loose/gabbro",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "text": "The world of $(tfg) is divided into large continents - landmasses many kilometers wide and seperated by oceans. In these, you may find mountain ranges, rivers, and many other formations. Here you will learn about the geology of Earth and how rock layers are determined."
+            "text": "Мир $(tfg)$ разделен на крупные континенты — массивы суши шириной в многие километры, разделенные океанами. На них можно встретить горные хребты, реки и множество других геологических образований. Здесь вы узнаете о геологии Земли и о том, как определяются слои горных пород."
         },
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:the_world/geology#rocks)Rock Layers$()$(li)$(bold)$(l:the_world/geology#metamorphism)Metamorphism$()$(li)$(bold)$(l:the_world/geology#ocean_floors)Ocean Floors$()$(li)$(bold)$(l:the_world/geology#uplift_regions)Uplift Regions$()$(li)$(bold)$(l:the_world/geology#rock_devisions)Rock Devisions$()$(li2)$(l:the_world/geology#sedimentary)Sedimentary$()$(li2)$(l:the_world/geology#metamorphic)Metamorphic$()$(li2)$(l:the_world/geology#igneous_extrusive)Igneous Extrusive$()$(li2)$(l:the_world/geology#igneous_intrusive)Igneous Intrusive$()$(li)$(bold)$(l:the_world/geology#rock_classifiers)Rock Classifiers$()$(li2)$(l:the_world/geology#sedimentary_carbonate)Sedimentary-Carbonate$()$(li2)$(l:the_world/geology#sedimentary_clastic)Sedimentary-Clastic$()$(li2)$(l:the_world/geology#sedimentary_organic)Sedimentary-Organic$()$(li2)$(l:the_world/geology#igneous_felsic)Igneous-Felsic$()$(li2)$(l:the_world/geology#igneous_intermediate)Igneous-Intermediate$()$(li2)$(l:the_world/geology#igneous_mafic)Igneous-Mafic$()$(li2)$(l:the_world/geology#igneous_ultramafic)Igneous-ultramafic$()"
+            "text": "$(li)$(bold)$(l:the_world/geology#rocks)Слои горных пород$()$(li)$(bold)$(l:the_world/geology#metamorphism)Метаморфизм$()$(li)$(bold)$(l:the_world/geology#ocean_floors)Дно океанов$()$(li)$(bold)$(l:the_world/geology#uplift_regions) Регионы поднятия$()$(li)$(bold)$(l:the_world/geology#rock_devisions)Классификация горных пород$()$(li2)$(l:the_world/geology#sedimentary)Осадочные$()$(li2)$(l:the_world/geology#metamorphic) Метаморфические$()$(li2)$(l:the_world/geology#igneous_extrusive)Магматические экструзивные$()$(li2)$(l:the_world/geology#igneous_intrusive)Магматические интрузивные$()$(li)$(bold)$(l:the_world/geology#rock_classifiers) Классификаторы горных пород$()$(li2)$(l:the_world/geology#sedimentary_carbonate)Осадочные-карбонатные$()$(li2)$(l:the_world/geology#sedimentary_clastic)Осадочные-кластические$()$(li2)$(l:the_world/geology#sedimentary_organic) Осадочные-органические$()$(li2)$(l:the_world/geology#igneous_felsic)Магматические-фельзитовые$()$(li2)$(l:the_world/geology#igneous_intermediate)Магматические-промежуточные$()$(li2)$(l:the_world/geology#igneous_mafic) Магматические-мафические$()$(li2)$(l:the_world/geology#igneous_ultramafic)Магматические-ультрамафические$()"
         },
         {
             "type": "patchouli:image",
@@ -22,7 +22,7 @@
             "images": [
                 "tfg:textures/gui/field_guide/maps/terrain_map.png"
             ],
-            "text": "A 65.5km² map displaying average continental formations and mainstream rivers with their tributaries.",
+            "text": "Карта площадью 65,5 км², на которой изображены типичные континентальные геологические формации, а также основные реки с их притоками.",
             "border": true
         },
         {
@@ -34,13 +34,13 @@
             "images": [
                 "tfg:textures/gui/field_guide/maps/biomes_map.png"
             ],
-            "text": "A 65.5km² map displaying average biome distribution based on local $(l:the_world/climate#climate)Climate$().",
+            "text": "Карта площадью 65,5 км², на которой показано среднее распределение биомов на основе данных из местного $(l:the_world/climate#climate)Climate$().",
             "border": true
         },
         {
             "type": "patchouli:text",
             "anchor": "rocks",
-            "text": "The world is divided up into different types of $(thing)Rock$(). Rock regions can be over a kilometer across, and there will usually be two or three different rock layers under your feet at all times. As different ores are found in different rock types, locating specific rock types can be very important for finding resources such as $(thing)Ores$(), which will often only appear in certain rock types.",
+            "text": "Мир разделен на различные типы $(thing)Rock$(). Площадь скальных массивов может превышать километр, и, как правило, под вашими ногами всегда находятся два или три разных слоя породы. Поскольку различные руды встречаются в разных типах породы, определение конкретных типов породы может иметь большое значение для поиска ресурсов, таких как $(thing)Ores$(), которые зачастую встречаются только в определённых типах породы.",
             "title": "Слои породы"
         },
         {
@@ -59,7 +59,7 @@
             "type": "patchouli:text",
             "anchor": "metamorphism",
             "text": "$(li)$(thing)Шиферный сланец$() образуется под $(thing)сланцем$(), $(thing)аргиллитом$(), и $(thing)конгломератом$().$(li)$(thing)Мрамор$() образуется под $(thing)известняком$(), $(thing)доломитом$(), и $(thing)мелом$().$(li)$(thing)Кварцит$() образуется под $(thing)кремнистым сланцем$().$(li)$(thing)Филлит$() образуется под $(thing)шиферный сланцем$()$(li)$(thing)Аспидный сланец$() и $(thing)гнейс$() образуются под $(thing)филлитом$(), или другими интрузивными вулканическими породами.",
-            "title": "Metamorphism"
+            "title": "Метаморфическая порода"
         },
         {
             "type": "patchouli:text",
@@ -70,41 +70,41 @@
         {
             "type": "patchouli:text",
             "anchor": "uplift_regions",
-            "text": "Finally, in mountainous regions you might also see $(thing)uplift$(), where a metamorphic or igneous intrusive rock is found on the surface. Uplift rocks can be found above other continental sedimentary or higher-grade metamorphic rocks.$(br2)In addition, $(l:https://en.wikipedia.org/wiki/Dike_%28geology%29)Dikes$() - small vertical slices of igneous intrusive rock - may appear scattered around the world.",
+            "text": "Наконец, в горных районах можно также встретить $(thing)подъем$(), когда на поверхности обнажаются метаморфические или магматические интрузивные породы. Поднятые породы могут находиться над другими континентальными осадочными или метаморфическими породами более высокой степени метаморфизма.$(br2)Кроме того, $(l:https://en.wikipedia.org/wiki/Dike_%28geology%29)дики$() — небольшие вертикальные вкрапления магматических интрузивных пород — могут встречаться в разбросанном виде по всему миру.",
             "title": "Районы поднятия"
         },
         {
             "type": "patchouli:text",
             "anchor": "rock_devisions",
-            "title": "Rock Devisions",
-            "text": "Rocks in $(tfg_short) are typically classified among four devisions: $(l:the_world/geology#sedimentary)Sedimentary$(), $(l:the_world/geology#metamorphic)Metamorphic$(), $(l:the_world/geology#igneous_extrusive)Igneous Extrusive$(), and $(l:the_world/geology#igneous_intrusive)Igneous Intrusive$(). These categories determine where the rock can spawn, and also what ores may spawn in this rock."
+            "title": "Виды горных пород",
+            "text": "Породы в $(tfg_short) обычно подразделяются на четыре категории: $(l:the_world/geology#sedimentary)Осадочные$(), $(l:the_world/geology#metamorphic)Метаморфические$(), $(l:the_world/geology#igneous_extrusive) «Магматические экструзивные»$(), и $(l:the_world/geology#igneous_intrusive)«Магматические интрузивные»$(). Эти категории определяют, где может появляться данная порода, а также какие руды могут в ней встречаться."
         },
         {
-            "title": "Sedimentary",
+            "title": "Осадочные",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:raw_stone/sedimentary"
             },
             "anchor": "sedimentary",
-            "text": "$(l:https://en.wikipedia.org/wiki/Sedimentary_rock)Sedimentary$() rocks are formed by the accumulation or deposition of mineral or organic particles. They are typically found on the top layers of rock in continental areas."
+            "text": "$(l:https://en.wikipedia.org/wiki/Sedimentary_rock)Осадочные$()  породы образуются в результате накопления или осаждения минеральных, или органических частиц. Как правило, они встречаются в верхних слоях горных пород в континентальных районах."
         },
         {
-            "title": "Metamorphic",
+            "title": "Метаморфические",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:raw_stone/metamorphic"
             },
             "anchor": "metamorphic",
-            "text": "$(l:https://en.wikipedia.org/wiki/Metamorphic_rock)Metamorphic$() rocks are created by a process called metamorphism. They can be found underneath corresponding sedimentary or igneous rock, or in uplift areas."
+            "text": "$(l:https://en.wikipedia.org/wiki/Metamorphic_rock)Метаморфические$() породы образуются в результате процесса, называемого метаморфизмом. Их можно найти под соответствующими осадочными или магматическими породами, а также в районах поднятия земной коры."
         },
         {
-            "title": "Igneous Extrusive",
+            "title": "Магматические экструзивные\n",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:raw_stone/igneous_extrusive"
             },
             "anchor": "igneous_extrusive",
-            "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Extrusive)Igneous Extrusive$() rocks are formed from magma cooling on the Earth's surface. They can be found on the top layer of rock in continental areas, or on the floor of oceans."
+            "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Extrusive)Этрузивные магматические$() породы образуются в результате остывания магмы на поверхности Земли. Их можно встретить в верхнем слое горных пород в континентальных районах или на дне океанов."
         },
         {
             "title": "Igneous Intrusive",
@@ -113,80 +113,80 @@
                 "tag": "tfg:raw_stone/igneous_intrusive"
             },
             "anchor": "igneous_intrusive",
-            "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Intrusive)Igneous Intrusive$() rocks are formed from magma which cooled under the Earth's crust. They can be found deep underground, or rarely in dikes or uplift areas."
+            "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Intrusive)Магматические интрузивные$() породы образуются из магмы, остывшей под земной корой. Они встречаются глубоко под землей или, в редких случаях, в дайках и в районах поднятия."
         },
         {
             "type": "patchouli:text",
             "anchor": "rock_classifiers",
-            "text": "On top of $(l:the_world/geology#rock_devisions)Rock Devisions$(), rocks are further categorized by their chemical compositions.",
-            "title": "Rock Classifiers"
+            "text": "Помимо $(l:the_world/geology#rock_devisions)классификации горных пород$(), горные породы дополнительно подразделяются по их химическому составу.",
+            "title": "Классификация горных пород"
         },
         {
-            "title": "Sedimentary-Carbonate",
+            "title": "Осадочно-карбонатные",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:stone_composition/raw/sedimentary_carbonate"
             },
             "anchor": "sedimentary_carbonate",
-            "text": "$(l:https://en.wikipedia.org/wiki/Carbonate_rock)Sedimentary-Carbonate$() rocks are composed primarily of carbonate minerals like calcite."
+            "text": "$(l:https://en.wikipedia.org/wiki/Carbonate_rock)Осадочно-карбонатные$() породы состоят преимущественно из карбонатных минералов, таких как кальцит."
         },
         {
-            "title": "Sedimentary-Clastic",
+            "title": "Осадочно-кластические",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:stone_composition/raw/sedimentary_clastic"
             },
             "anchor": "sedimentary_clastic",
-            "text": "$(l:https://en.wikipedia.org/wiki/Clastic_rock)Sedimentary-Clastic$() rocks are composed of fragmants (clasts) of pre-existing minerals or rocks."
+            "text": "$(l:https://en.wikipedia.org/wiki/Clastic_rock)Осадочно-кластические$() породы состоят из обломков(кластолитов) ранее существовавших минералов или пород."
         },
         {
-            "title": "Sedimentary-Organic",
+            "title": "Осадочно-органический",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:stone_composition/raw/sedimentary_organic"
             },
             "anchor": "sedimentary_organic",
-            "text": "$(l:https://en.wikipedia.org/wiki/Organic-rich_sedimentary_rocks)Sedimentary-Organic$() rocks are formed from the breakdown or fossilization of organic matter like shells or bacteria."
+            "text": "$(l:https://en.wikipedia.org/wiki/Organic-rich_sedimentary_rocks)Осадочно-органические$() породы образуются в результате разложения или окаменения органического вещества, такого как раковин или бактерий."
         },
         {
-            "title": "Igneous-Felsic",
+            "title": "Магматические фельзитовые",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:stone_composition/raw/igneous_felsic"
             },
             "anchor": "igneous_felsic",
-            "text": "$(l:https://en.wikipedia.org/wiki/Felsic)Igneous-Felsic$() rocks contain a rich presence of elements that form feldspar and quartz. Generally a rock must contain more than 75% of felsic minerals to be classified as $(thing)Felsic$()."
+            "text": "$(l:https://en.wikipedia.org/wiki/Felsic)Магматические фельзитовые$() породы содержат большое количество элементов, входящих в состав полевого шпата и кварца. Как правило, для отнесения породы к категории $(thing)фельзитовых$() необходимо, чтобы она содержала более 75 % фельзитовых минералов."
         },
         {
-            "title": "Igneous-Intermediate",
+            "title": "Магматические породы промежуточного типа",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:stone_composition/raw/igneous_intermediate"
             },
             "anchor": "igneous_intermediate",
-            "text": "$(l:https://en.wikipedia.org/wiki/Intermediate_composition)Igneous-Intermediate$() rocks contain 51.5 - 63.0 wt% SiO₂, putting them in between $(l:the_world/geology#igneous_felsic)Felsic$() and $(l:the_world/geology#igneous_mafic)Mafic$() compositions."
+            "text": "$(l:https://en.wikipedia.org/wiki/Intermediate_composition)Магматические породы промежуточного типа$() содержат 51,5–63,0 мас. % SiO₂, что позволяет отнести их к промежуточному типу между $(l:the_world/geology#igneous_felsic)фельзическими$() и $(l:the_world/geology#igneous_mafic)мафическими$() по составу."
         },
         {
-            "title": "Igneous-Mafic",
+            "title": "Магматические горные породы",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:stone_composition/raw/igneous_mafic"
             },
             "anchor": "igneous_mafic",
-            "text": "$(l:https://en.wikipedia.org/wiki/Mafic)Igneous-Mafic$() rocks contain a rich presence of magnesium and iron minerals."
+            "text": "$(l:https://en.wikipedia.org/wiki/Mafic)Магматические $() породы содержат большое количество минералов магния и железа."
         },
         {
-            "title": "Igneous-Ultramafic",
+            "title": "Ультраосновные магматические горные породы",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:stone_composition/raw/igneous_ultramafic"
             },
             "anchor": "igneous_ultramafic",
-            "text": "$(l:https://en.wikipedia.org/wiki/Mafic)Igneous-Ultramafic$() rocks contain a very low concentration of silica."
+            "text": "$(l:https://en.wikipedia.org/wiki/Mafic)Ультраосновные магматические $() породы содержат очень низкую концентрацию кремнезема."
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Читать далее",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/climate",

@@ -13,7 +13,7 @@
             "title": "簡介",
             "anchor": "into",
             "type": "patchouli:text",
-            "text": "$(l:beneath)地底$()有一套獨特的野生水果，它們已經適應了地下的極端環境。這些野生水果可以用與主世界一般$(l:the_world/wild_fruits)野生水果$()完全相同的方式栽培。"
+            "text": "$(l:beneath)地底$()有一套獨特的野生水果，已適應地下的極端環境，栽培方式與主世界的$(l:the_world/wild_fruits)野生水果$()完全相同。"
         },
         {
             "type": "tfg:table",
@@ -172,7 +172,7 @@
         {
             "type": "patchouli:text",
             "anchor": "lavacado",
-            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：8 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：20 - 100 %$(br2)熔岩酪梨樹在 12 月至 4 月生長，5 月和 6 月開始開花，7 月結果。",
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：8 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：20 - 100%$(br2)熔岩酪梨樹在 12 月至 4 月生長，5 月和 6 月開始開花，7 月結果。",
             "title": "熔岩酪梨"
         },
         {
@@ -237,7 +237,7 @@
         {
             "type": "patchouli:text",
             "anchor": "magmango",
-            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：8 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：30 - 100 %$(br2)岩漿芒果樹在 10 月至 2 月生長，3 月和 4 月開始開花，5 月結果。",
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：8 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：30 - 100%$(br2)岩漿芒果樹在 10 月至 2 月生長，3 月和 4 月開始開花，5 月結果。",
             "title": "岩漿芒果"
         },
         {
@@ -448,12 +448,12 @@
         {
             "type": "patchouli:text",
             "anchor": "oil_palm",
-            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：19 - 62 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：10 - 100 %$(br2)採收油棕樹的果實可以加工成棕櫚油，它也是粗麻纖維的來源。油棕果串分 4 個階段生長，採收時可獲得 3-6 個物品。",
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：19 - 62 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：10 - 100%$(br2)油棕樹的果實可加工成棕櫚油，也是粗麻纖維的來源。油棕果串分 4 個階段生長，採收時可獲得 3-6 個物品。",
             "title": "油棕樹"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "油棕樹可以在 Y=50 到 Y=190 之間的$(l:beneath/beneath#salt_caves)鹽窟$()和$(l:beneath/beneath#tar_pools)焦油池$()生態域中找到",
+            "text": "油棕樹分布在 Y=50 到 Y=190 之間的$(l:beneath/beneath#salt_caves)鹽窟$()和$(l:beneath/beneath#tar_pools)焦油池$()生態域",
             "multiblocks": [
                 {
                     "pattern": [
@@ -1076,12 +1076,12 @@
         {
             "type": "patchouli:text",
             "anchor": "acai",
-            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：24 - 70 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：10 - 100 %$(br2)巴西莓樹的果串分 5 個階段生長，採收時可獲得 4-8 個果實。",
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：24 - 70 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：10 - 100%$(br2)巴西莓樹的果串分 5 個階段生長，採收時可獲得 4-8 個果實。",
             "title": "巴西莓樹"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "巴西莓樹可以在 Y=50 到 Y=190 之間的$(l:beneath/beneath#salt_caves)鹽窟$()和$(l:beneath/beneath#tar_pools)焦油池$()生態域中找到",
+            "text": "巴西莓樹分布在 Y=50 到 Y=190 之間的$(l:beneath/beneath#salt_caves)鹽窟$()和$(l:beneath/beneath#tar_pools)焦油池$()生態域",
             "multiblocks": [
                 {
                     "pattern": [

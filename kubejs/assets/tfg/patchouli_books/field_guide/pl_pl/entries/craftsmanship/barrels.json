@@ -67,7 +67,7 @@
             "type": "patchouli:text",
             "title": "Konserwacja",
             "anchor": "preservation",
-            "text": "Barrels can preserve items in $(thing)Vinegar$(). Vinegar is made by sealing $(thing)Fruit$() in a barrel of $(thing)Alcohol$(). For information on how that process works, see the relevant $(l:cooking/decay#vinegar)page$()."
+            "text": "Beczki mogą konserwować przedmioty w $(thing)occie$(). Ocet wytwarza się, zamykając $(thing)owoce$() w beczce z $(thing)alkoholem$(). Więcej o tym procesie znajdziesz na odpowiedniej $(l:cooking/decay#vinegar)stronie$().\n"
         },
         {
             "type": "patchouli:crafting",

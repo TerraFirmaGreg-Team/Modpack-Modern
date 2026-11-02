@@ -42,6 +42,18 @@ function registerTFGConcreteRecipes(event) {
 		.circuit(3)
 		.EUt(16)
 
+	//VENUS - IV - REWORK
+	event.recipes.gtceu.mixer('tfg:concrete_from_clay_calcite')
+		.itemInputs(
+			Ingredient.of('#tfg:stone_dusts').withCount(3),
+			'gtceu:calcite_dust',
+			'gtceu:clay_dust')
+		.inputFluids("#tfg:clean_water 500")
+		.outputFluids('gtceu:concrete 576')
+		.duration(40)
+		.circuit(4)
+		.EUt(16)
+
 
 	//GT light/dark concrete recipe fix
 
@@ -99,6 +111,11 @@ function registerTFGConcreteRecipes(event) {
 	event.recipes.firmalife.mixing_bowl()
 		.ingredients(['#tfg:stone_dusts', '#tfg:stone_dusts', '#tfg:stone_dusts', '#forge:dusts/calcite', '#forge:dusts/gypsum'], Fluid.of('minecraft:water', 1000))
 		.outputFluid(Fluid.of('gtceu:concrete', 1000))
+
+    //VENUS - IV - REWORK
+	event.recipes.firmalife.mixing_bowl()
+		.ingredients(['#tfg:stone_dusts', '#tfg:stone_dusts', '#tfg:stone_dusts', '#forge:dusts/calcite', '#forge:dusts/clay'], Fluid.of('minecraft:water', 500))
+		.outputFluid(Fluid.of('gtceu:concrete', 500))
 
 	event.recipes.tfc.barrel_sealed(1000)
 		.inputFluid(Fluid.of('gtceu:concrete', 144))

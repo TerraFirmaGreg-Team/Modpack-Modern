@@ -1114,13 +1114,21 @@
 			dependency_requirement: "one_completed"
 			description: ["{quests.high_voltage.rocket_fuel.desc}"]
 			guide_page: "tfg:field_guide tfg:the_moon/preparations"
+			icon: "gtceu:rocket_fuel_bucket"
 			id: "6EF2D4D1C1CC9D3E"
 			subtitle: "{quests.high_voltage.rocket_fuel.subtitle}"
-			tasks: [{
-				id: "0E3E97E93E9F3A3A"
-				item: "gtceu:rocket_fuel_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0E3E97E93E9F3A3A"
+					item: "gtceu:rocket_fuel_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1541D4540FCB7EDD"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.high_voltage.rocket_fuel.title}"
 			x: 11.0d
 			y: -2.0d

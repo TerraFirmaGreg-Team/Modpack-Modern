@@ -78,7 +78,7 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 		fluidInputs: ['#tfc:milks 500', 'firmalife:yeast_starter 100'],
 		itemOutputs: ['4x tfg:food/brioche_dough'],
 		circuit: 5,
-		itemOutputProvider: TFC.isp.of('4x tfg:food/brioche_dough').copyOldestFood()
+		itemOutputProvider: TFC.isp.of('4x tfg:food/brioche_dough').resetFood()
 	});
 
 	global.generateFoodCookingRecipes(event, 'tfg:food/brioche_dough', 'tfg:food/brioche_bun', true, false, true);

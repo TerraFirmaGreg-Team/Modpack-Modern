@@ -11,7 +11,7 @@
             "type": "patchouli:text",
             "anchor": "intro",
             "title": "溫室",
-            "text": "$(thing)溫室$()是由$(item)氣候站$()控制的多方塊結構裝置，可以讓作物全年生長。溫室有多種類型和方塊可供選擇，不過建造溫室相當簡單。就像$(l:cooking/decay#cellar)地窖$()一樣，它必須是由同一種$(thing)溫室類型$()方塊圍成的封閉區域。溫室的地板可以是任何非空氣方塊。"
+            "text": "$(thing)溫室$()是由$(item)氣候站$()控制的多方塊結構，可讓作物全年生長。溫室有多種類型和方塊可選，但建造相當簡單：和$(l:cooking/decay#cellar)地窖$()一樣，只要用同一種$(thing)溫室類型$()的方塊圍成封閉區域即可。地板可以是任何非空氣方塊。"
         },
         {
             "type": "patchouli:text",
@@ -19,7 +19,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(thing)溫室類型$()是一系列可以在溫室中互相替換使用的溫室方塊。此外，$(tfg)新增了更多溫室牆壁樣式，可與同等級的基本溫室牆壁互換。$(br)將氣候站貼著牆壁放置並按下$(item)$(k:key.use)$()即可驗證溫室。或者將它放在任意位置，手持與結構同類型的溫室方塊對它按下$(item)$(k:key.use)$()。"
+            "text": "$(thing)溫室類型$()是可在溫室中互相替換的一系列溫室方塊。$(tfg)另外新增了更多溫室牆壁樣式，可與同等級的基本溫室牆壁互換。$(br)將氣候站貼著牆壁放置並按 $(item)$(k:key.use)$() 即可驗證溫室；或將它放在任意位置，再手持與結構同類型的溫室方塊對它按 $(item)$(k:key.use)$()。"
         },
         {
             "type": "patchouli:text",
@@ -45,13 +45,13 @@
             "type": "patchouli:text",
             "anchor": "planters",
             "title": "種植盆",
-            "text": "$(thing)種植盆$()用於在溫室內種植作物。種植盆中的作物會像一般作物一樣消耗$(l:agriculture/growing_crops#intro)養分$()。種植盆應放在有效的溫室內，並以$(item)氣候站$()啟動。種植盆至少需要一些自然陽光才能運作。"
+            "text": "$(thing)種植盆$()用於在溫室內種植作物，種在裡面的作物和一般作物一樣會消耗$(l:agriculture/growing_crops#intro)養分$()。種植盆需放在有效溫室內並以$(item)氣候站$()啟動，且至少需要一些自然陽光才能運作。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "large_planter",
             "item": "firmalife:large_planter",
-            "text": "$(thing)大型種植盆$()是最簡單的種植盆。它從種子開始種植單一作物，成熟後按下$(item)$(k:key.use)$()即可收成。$(br)大型種植盆通常用來種植$(thing)大型作物$()和$(thing)穀物$()。"
+            "text": "$(thing)大型種植盆$()是最簡單的種植盆，從種子種出單一作物，成熟後按 $(item)$(k:key.use)$() 即可收成。$(br)大型種植盆通常用來種植$(thing)大型作物$()和$(thing)穀物$()。"
         },
         {
             "type": "patchouli:spotlight",
@@ -75,30 +75,30 @@
             "type": "patchouli:spotlight",
             "anchor": "trellis_planter",
             "item": "firmalife:trellis_planter",
-            "text": "$(thing)棚架種植盆$()用來種植漿果叢。$(br)棚架種植盆具有$(thing)繁殖$()漿果叢的獨特特性。如果在長有成熟漿果叢的棚架種植盆上方再放置一個，漿果叢有機率向上長進上方的種植盆。"
+            "text": "$(thing)棚架種植盆$()用來種植漿果叢。$(br)棚架種植盆有$(thing)繁殖$()漿果叢的獨特特性：在長有成熟漿果叢的棚架種植盆上方再放一個，漿果叢有機率向上長進去。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "hydroponic_planter",
             "item": "firmalife:hydroponic_planter",
-            "text": "$(thing)水耕種植盆$()用來種植$(thing)稻米$()和$(thing)蔓越莓灌木$()等水生作物。它們的運作方式與四格種植盆相同，只是不需要澆水。$(br)取而代之的是，水耕種植盆下方必須有供水的$(item)流體管道$()。沒有管道就不會生長。"
+            "text": "$(thing)水耕種植盆$()用來種植$(thing)稻米$()和$(thing)蔓越莓灌木$()等水生作物。運作方式與四格種植盆相同，只是不需要澆水。$(br)水耕種植盆下方必須改由$(item)流體管道$()供水，沒有管道就不會生長。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "irrigation",
             "title": "灌溉",
             "item": "firmalife:watering_can,firmalife:sprinkler",
-            "text": "種植盆必須$(thing)澆水$()才能生長。可以使用$(thing)澆水壺$()，或用$(thing)灑水器$()自動澆水。手持澆水壺按下$(item)$(k:key.use)$()可為附近的種植盆澆水。對水源按下$(item)$(k:key.use)$()即可為澆水壺補水。"
+            "text": "種植盆必須$(thing)澆水$()才能生長，可用$(thing)澆水壺$()手動澆水，或用$(thing)灑水器$()自動澆水。手持澆水壺按 $(item)$(k:key.use)$() 可為附近的種植盆澆水，對水源按 $(item)$(k:key.use)$() 即可補水。"
         },
         {
             "type": "patchouli:text",
-            "text": "$(thing)灑水器$()是一種在 5x6x5 範圍內灑水的裝置，範圍以灑水器下方或上方的方塊為中心。當它滴出水粒子時，就表示正在運作。灑水器必須連接到供水的管道系統才能運作。"
+            "text": "$(thing)灑水器$()會在 5x6x5 範圍內灑水，範圍以灑水器下方或上方的方塊為中心。滴出水粒子即表示正在運作。灑水器必須連接供水的管道系統才能運作。"
         },
         {
             "title": "管道",
             "item": "gtceu:copper_tiny_fluid_pipe",
             "type": "patchouli:spotlight",
-            "text": "要為灑水器供水，可以將$(thing)流體管道$()連接到灑水器，再用$(thing)機械幫浦$()抽水。$(br)你可以手持$(t:例如銅框架)GregTech(格雷科技) 框架$()或溫室連接埠對管道按下$(item)$(k:key.use)$()，讓管道穿過牆壁。手持扳手對流體管道按下$(item)$(k:key.use)$()可改變方向，而在$(thing)副手空著$()時按下$(item)$(k:key.sneak) + $(k:key.use)$()可將其設為單向。"
+            "text": "將$(thing)流體管道$()接到灑水器，再用$(thing)機械幫浦$()抽水，即可為灑水器供水。$(br)手持$(t:例如銅框架)格雷科技框架$()或溫室連接埠對管道按 $(item)$(k:key.use)$()，可讓管道穿過牆壁。手持扳手對流體管道按 $(item)$(k:key.use)$() 可改變方向；$(thing)副手空著$()時按 $(item)$(k:key.sneak) + $(k:key.use)$() 可設為單向。"
         },
         {
             "type": "patchouli:spotlight",
@@ -109,17 +109,17 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)此外，$(item)採收籃$()可以收成大部分類型的種植盆。$(li)要收集$(thing)清掃機$()和$(thing)採摘機$()掉落的物品，可以使用$(item)漏斗礦車$()、裝有$(item)漏斗$()的$(thing)動態結構$()，或 GregTech(格雷科技) 的$(item)物品收集器$()。"
+            "text": "$(li)此外，$(item)採收籃$()可以收成大部分類型的種植盆。$(li)要收集$(thing)清掃機$()和$(thing)採摘機$()掉落的物品，可以使用$(item)漏斗礦車$()、裝有$(item)漏斗$()的$(thing)動態結構$()，或格雷科技的$(item)物品收集器$()。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "electric",
             "item": "tfg:electric_greenhouse",
-            "text": "如果你偏好製作 GregTech(格雷科技) 機器而非機械動力裝置，多方塊結構$(item)電力溫室$()可以成為你的$(thing)原木$()和其他植物來源。它還有一項獨特能力：可以種植更多 TFC 的裝飾性植物！$(br2)你可以在$(7)LV$()後期製作一座。"
+            "text": "如果你偏好格雷科技機器勝過機械動力裝置，多方塊結構$(item)電力溫室$()可作為$(thing)原木$()和其他植物的來源，還能種植更多 TFC 的裝飾性植物！$(br2)可在$(7)LV$()後期製作。"
         },
         {
             "type": "patchouli:text",
-            "text": "$(bold)注意：$()這個多方塊結構的牆壁可以自訂為任何有效的鐵等級溫室方塊。$(br2)查看$(emi)多方塊結構預覽，可得知所有可使用的方塊清單。$(br2)電力溫室也可以透過幾種方式強化，包括$(l:agriculture/fertilizers)肥料$()，或在$(6)HV$()後期使用$(thing)魚菜共生循環$()。"
+            "text": "$(bold)注意：$()這個多方塊結構的牆壁可自訂為任何有效的鐵等級溫室方塊。$(br2)查看$(emi)多方塊結構預覽即可看到所有可用的方塊。$(br2)電力溫室也能透過幾種方式強化，例如$(l:agriculture/fertilizers)肥料$()，或之後在 $(6)HV$() 使用$(thing)魚菜共生循環$()。"
         },
         {
             "type": "patchouli:spotlight",

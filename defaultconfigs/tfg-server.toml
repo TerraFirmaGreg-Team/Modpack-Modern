@@ -1,3 +1,6 @@
+[quests]
+	#Enables announcing certain quests in chat when players complete them.
+	enableQuestBroadcasts = false
 
 [hang_glider]
 	#

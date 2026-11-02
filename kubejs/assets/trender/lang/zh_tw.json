@@ -1,5 +1,4 @@
 {
-	"text.trender.name": "Trender",
 	"text.trender.sendstacktraces": "傳送堆疊追蹤",
 	"text.trender.sendstacktraces.tooltip": "啟用後，記錄檔或遊戲崩潰中涉及 tr7zw 模組的堆疊追蹤，會透過 Sentry(Sentry.io)傳送給模組作者，以便更快修正錯誤。不會收集或傳送任何個人資訊。(開啟後請重新啟動遊戲)",
 	"text.trender.style": "介面風格",

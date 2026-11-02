@@ -1,18 +1,18 @@
 {
-    "name": "木桶",
+    "name": "大桶",
     "category": "tfg:craftsmanship",
     "icon": "tfc:wood/barrel/oak",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(thing)大桶$()是一種可以容納物品和液體的裝置。大桶中央的空格是用來放置物品的，液體則顯示在左側的水槽中。將$(thing)桶$()或$(thing)壺$()放在左上角的空格中可以將其中的液體新增到大桶、或將大桶中的液體盛出。拿著容器對著裝有液體的大桶按下$(item)$(k:key.use)$()也有同樣的效果。"
+            "text": "$(thing)大桶$()可以容納物品和液體。中央欄位用來放物品，液體則顯示在左側的儲槽中。將裝滿的$(thing)桶$()或$(thing)壺$()放入左上角欄位可加入液體，放入空的流體容器則可取出液體。拿著桶對大桶按 $(item)$(k:key.use)$() 也可以。"
         },
         {
             "type": "patchouli:image",
             "images": [
                 "tfc:textures/gui/book/gui/barrel.png"
             ],
-            "text": "木桶介面。",
+            "text": "大桶介面。",
             "border": false
         },
         {
@@ -21,58 +21,58 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)手持空的大桶點選水源方塊可以盛裝液體。$()$(li)啟封的大桶會在雨中慢慢地裝滿水。$()$(li)大桶會接住上方融化的冰柱。$()$(li)密封大桶會彈出不在中心空格的物品。$()",
-            "title": "木桶小提示"
+            "text": "$(li)手持空的大桶點選流體方塊即可盛裝。$()$(li)大桶在雨中會慢慢裝滿水。$()$(li)上方的冰柱融化時，水也會滴進大桶。$()$(li)密封大桶時，會彈出不在中央欄位的物品。$()",
+            "title": "大桶小提示"
         },
         {
             "type": "patchouli:text",
-            "text": "大桶是用來把各種流體和物品混合在一起的重要裝置。要使用$(thing)大桶$()配方，大桶中必須裝有比例正確的所需流體和物品。視配方而定，可能需要$(thing)密封$()一段時間，讓內容物轉化。",
+            "text": "大桶是混合各種流體與物品的重要裝置。使用$(thing)大桶$()配方時，桶內的流體與物品必須符合配方比例。視配方而定，可能需要$(thing)密封$()一段時間讓內容物轉化。",
             "title": "合成"
         },
         {
             "type": "patchouli:text",
-            "text": "如果大桶中內容物的比例和配方所需的不符，多出來的流體或物品都會損失。不過，如果是會立即轉化的配方，依照配方，你一定需要至少足以將流體完全轉化的物品數量。"
+            "text": "若大桶內容物的比例與配方不符，多出的流體或物品都會損失。不過，若是立即轉化的配方，物品數量至少要足以依配方將流體完全轉化。"
         },
         {
             "type": "tfg:instant_barrel_recipe",
             "anchor": "limewater",
             "recipe": "tfc:barrel/limewater",
-            "text": "$(bold)石灰水$()的製作方法是將$(item)助熔劑$()加入裝有$(thing)水$()的木桶中。每$(thing) 500 mB$()的$(thing)水$()需要一個$(item)助熔劑$()。$(thing)石灰水$()是用於$(l:agriculture/leather_making)皮革製作$()的試劑，也可以用來製作$(thing)砂漿$()。"
+            "text": "將$(item)助熔劑$()加入裝有$(thing)水$()的大桶即可製成$(bold)石灰水$()，每$(thing) 500 mB$()的$(thing)水$()需要一個$(item)助熔劑$()。$(thing)石灰水$()是$(l:agriculture/leather_making)皮革製作$()的試劑，也用來製作$(thing)砂漿$()。"
         },
         {
             "type": "tfg:sealed_barrel_recipe",
             "anchor": "tannin",
             "recipe": "tfc:barrel/tannin",
-            "text": "$(bold)單寧$()是一種酸性流體，將特定$(t:#tfc:makes_tannin)$(6)原木$()的樹皮溶解在裝有$(thing)水$()的木桶中即可製成。$(thing)橡木$()、$(thing)樺木$()、$(thing)栗木$()、$(thing)花旗松$()、$(thing)山胡桃木$()、$(thing)楓木$()和$()紅杉$()都可以用來製作$(thing)單寧$()。$(br)$(bold)提示$()：在$(emi)中搜尋$(6)#makes_tannin$()即可查看所有可用原木的完整清單。"
+            "text": "$(bold)單寧$()是一種酸性流體，將特定$(t:#tfc:makes_tannin)$(6)原木$()的樹皮溶於裝有$(thing)水$()的大桶即可製成。$(thing)橡木$()、$(thing)樺木$()、$(thing)栗木$()、$(thing)花旗松$()、$(thing)山胡桃木$()、$(thing)楓木$()和$()紅杉$()都能製作$(thing)單寧$()。$(br)$(bold)提示$()：在$(emi)中搜尋$(6)#makes_tannin$()可查看所有可用的原木。"
         },
         {
             "type": "patchouli:text",
             "anchor": "fluid_mixing",
             "title": "流體混合",
-            "text": "有些木桶配方是以特定比例混合兩種流體。做法是將裝滿其中一種材料的桶子，放入裝有所需量另一種流體的木桶的流體添加欄位。例如以 1:9 的比例混合$(thing)醋$()和$(thing)鹽水$()來製作$(item)醃漬鹽水$()。"
+            "text": "有些大桶配方是以特定比例混合兩種流體：把裝滿其中一種材料的桶子，放進已裝有足量另一種流體的大桶的流體添加欄位。例如以 1:9 混合$(thing)醋$()和$(thing)鹽水$()可製作$(item)醃漬鹽水$()。"
         },
         {
             "type": "patchouli:text",
             "title": "淬火",
             "anchor": "quenching",
-            "text": "木桶可以冷卻$(l:game_mechanics/heating)高溫$()物品。將高溫物品放入裝有$(thing)水$()、$(thing)食用油$()或$(thing)冰沙$()的木桶中，它的溫度就會快速下降。$(br)你甚至可以按下$(item)$(k:key.drop)$()直接把物品丟進木桶。"
+            "text": "大桶可以冷卻$(l:game_mechanics/heating)高溫$()物品。將高溫物品放入裝有$(thing)水$()、$(thing)食用油$()或$(thing)碎冰$()的大桶，溫度就會快速下降。$(br)甚至可以按 $(item)$(k:key.drop)$() 直接把物品丟進大桶。"
         },
         {
             "type": "patchouli:text",
             "title": "染色",
             "anchor": "dyeing",
-            "text": "木桶可以為物品$(thing)染色$()和$(thing)漂白$()。大多數可以上色的東西，例如地毯、蠟燭和$(l:craftsmanship/building_materials#alabaster)雪花石膏$()，都可以密封在裝有染料的木桶中染色，或密封在裝有鹼液的木桶中漂白。"
+            "text": "大桶可以為物品$(thing)染色$()和$(thing)漂白$()。地毯、蠟燭、$(l:craftsmanship/building_materials#alabaster)雪花石膏$()等大多數可上色的物品，密封在裝有染料的大桶中即可染色，密封在裝有鹼液的大桶中則可漂白。"
         },
         {
             "type": "patchouli:text",
             "title": "保存",
             "anchor": "preservation",
-            "text": "木桶可以用$(thing)醋$()保存物品。醋是將$(thing)水果$()密封在裝有$(thing)酒$()的木桶中製成的。關於此過程的運作方式，請參閱相關$(l:cooking/decay#vinegar)頁面$()。"
+            "text": "大桶可以用$(thing)醋$()保存物品。醋是將$(thing)水果$()密封在裝有$(thing)酒$()的大桶中製成，詳見相關$(l:cooking/decay#vinegar)頁面$()。"
         },
         {
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/barrel_rack",
-            "text": "靠在方塊側面放置的大桶和直立的大桶功能相同，但擺放上有限制。例如，必須對它按 $(item)$(k:key.use)$() 加裝$(thing)大桶架$()，才能在它上方再放一個橫放的大桶。"
+            "text": "靠在方塊側面放置的大桶和直立的大桶功能相同，但擺放上有限制。例如，必須對它按 $(item)$(k:key.use)$() 加裝$(thing)桶架$()，才能在它上方再放一個橫放的大桶。"
         },
         {
             "type": "patchouli:multiblock",
@@ -99,7 +99,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "水平大桶開啟時，若龍頭下方無其他方塊阻擋，會自動將內容流體輸出至龍頭下其他開啟的大桶或其他流體容器中。"
+            "text": "未密封的橫放大桶會自動將流體排入龍頭下方未密封的大桶(或其他流體容器)。龍頭延伸進去的那一格必須是空氣，流體才能排出。"
         },
         {
             "type": "patchouli:image",
@@ -112,7 +112,7 @@
         {
             "type": "patchouli:text",
             "title": "紅石",
-            "text": "木桶可以用$(thing)紅石$()自動化。對木桶施加紅石訊號會將它密封。未密封的木桶可以從開口面送入或取出流體和物品。密封的木桶可以安全地用$(thing)活塞$()或$(thing)動態結構$()移動。$(l:logistics/redstone_devices#clock)精密時鐘$()可以偵測木桶配方何時完成並輸出訊號。"
+            "text": "大桶可以用$(thing)紅石$()自動化：施加紅石訊號即可密封。未密封的大桶可從開口面送入或取出流體與物品；密封的大桶可以安全地用$(thing)活塞$()或$(thing)動態結構$()移動。$(l:logistics/redstone_devices#clock)精密時鐘$()可偵測大桶配方何時完成並輸出訊號。"
         },
         {
             "type": "patchouli:relations",

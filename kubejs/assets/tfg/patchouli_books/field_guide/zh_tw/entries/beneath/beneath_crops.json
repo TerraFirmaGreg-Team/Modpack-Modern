@@ -6,11 +6,11 @@
 		{
 			"type": "patchouli:text",
 			"title": "地底作物",
-			"text": "$(thing)地底$()或許是嚴酷的環境，但仍然可以在那裡找到作物。地底作物的韌性極強，能在極端高溫下生長，無論是在地底下還是地表上求生都很有用。"
+			"text": "$(thing)地底$()環境嚴酷，但仍找得到作物。地底作物韌性極強，能在極端高溫下生長，無論在地底或地表求生都很有用。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "地底的作物和地表的作物運作方式完全相同，都有含水量、溫度和養分需求。你甚至可以把它們種在$(thing)溫室中。$()$(br2)在地底種植作物時要特別注意，作物需要 12 級的光照，而地底的自然光照無法提供。要解決這個問題，可以利用$(l:agriculture/aqueducts)熔岩引水橋$()或其他可用的光源。"
+			"text": "地底作物和地表作物運作方式完全相同，都有含水量、溫度和養分需求，甚至可以種在$(thing)溫室中。$()$(br2)在地底種植時要特別注意：作物需要 12 級光照，但地底的自然光照不夠。可以利用$(l:agriculture/aqueducts)熔岩引水橋$()或其他光源解決。"
 		},
 		{
 			"type": "patchouli:text",
@@ -484,7 +484,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cotton",
-			"text": "$(bold)$(l:the_world/climate#temperature)溫度$()：10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：40 - 100 %$(br)$(bold)養分$()：氮$(br2)棉花是兩格高的作物。棉花種子可以種在耕地上，會長到兩格高，並產出$(item)棉花球$()，可加工成$(thing)棉線$()或$(thing)布料$()。",
+			"text": "$(bold)$(l:the_world/climate#temperature)溫度$()：10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：40 - 100 %$(br)$(bold)養分$()：氮$(br2)棉花是兩格高的作物，種子可種在耕地上，會產出$(item)棉花球$()，可加工成$(thing)棉線$()或$(thing)布料$()。",
 			"title": "棉花"
 		},
 		{

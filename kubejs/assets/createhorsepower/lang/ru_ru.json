@@ -13,7 +13,6 @@
 	"createhorsepower.ponder.tag.path_types.description": "Блоки, по которым могут ходить рабочие животные",
 	"createhorsepower.ponder.tag.viable_workers": "Подходящий рабочий",
 	"createhorsepower.ponder.tag.viable_workers.description": "Животные, которые могут приводить в движение скотный привод",
-	"entity.createhorsepower.chp_leash_knot": "(CHP) Leash Knot",
 	"item.createhorsepower.horse_crank": "Скотный привод",
 	"tooltip.createhorsepower.horse_crank.alreadyHasWorker": "Привод уже имеет рабочего",
 	"tooltip.createhorsepower.horse_crank.attached": "Рабочий был привязан",

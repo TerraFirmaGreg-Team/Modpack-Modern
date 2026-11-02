@@ -73,7 +73,5 @@
   "gui.comforts.config.sleepingBagsStopPhantoms.name": "Os sacos de dormir param os fantasmas",
   "item.comforts.hammock.placement.tooltip": "Requer %s para colocar.",
   "item.comforts.rope_and_nail.placement.tooltip": "Usado para colocar redes.",
-  "item.comforts.sleeping_bag.auto_use.tooltip": "Tenta dormir automaticamente.\nPara colocar, use enquanto estiver agachado.",
-  "itemGroup.comforts": "Comforts",
-  "itemGroup.comforts.general": "Comforts"
+  "item.comforts.sleeping_bag.auto_use.tooltip": "Tenta dormir automaticamente.\nPara colocar, use enquanto estiver agachado."
 }

@@ -24,7 +24,7 @@
 			"title": "包裹",
 			"anchor": "packages",
 			"item": "create:cardboard_package_12x10,create:cardboard_package_10x8,create:cardboard_package_10x12,create:cardboard_package_12x12",
-			"text": "機械動力物流的一切都圍繞著$(item)包裹$()。每個包裹可以裝 9 格的物品。$(br2)包裹也有一個$(thing)地址$()，決定包裹要送往哪裡。整個物流系統的其他部分，就是在處理如何把包裹送到這些目的地！"
+			"text": "機械動力物流的一切都圍繞著$(item)包裹$()。每個包裹可以裝 9 格的物品。$(br2)包裹也有一個$(thing)地址$()，決定包裹要送往哪裡。物流系統的其餘部分，都在解決如何把包裹送到這些目的地！"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -40,7 +40,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "在包裹裝卸站上放一個$(item)告示牌$()，它就會自動把告示牌上的內容標記到所有包裹上，作為目的地地址。等你開始使用各種方式規劃包裹路線時，這會更有用。$(c)注意：Framed Blocks(框架方塊) 的告示牌無法用於此用途！$()$(br2)包裹裝卸站也能拆開放進去的包裹，把內容物卸到所連接的物品欄中。"
+			"text": "在包裹裝卸站上放一個$(item)告示牌$()，它就會自動把告示牌上的內容標記到所有包裹上，作為目的地地址。等你開始使用各種方式規劃包裹路線時，這會更有用。$(c)注意：框架方塊的告示牌無法用於此用途！$()$(br2)包裹裝卸站也能拆開放進去的包裹，把內容物卸到所連接的物品欄中。"
 		},
 		{
 			"type": "patchouli:multiblock",
@@ -169,7 +169,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "收取的包裹會放進蛙郵港所在方塊的物品欄中。$(br2)只要鏈條網路$(o)以某種方式$()連接到輸入和輸出的蛙郵港，包裹最終都會自己找到路，不過你可能會想自行優化路徑，縮短包裹的運送時間。"
+			"text": "收取的包裹會放進蛙郵港所在方塊的物品欄中。$(br2)只要鏈條網路$(o)以某種方式$()連接到輸入和輸出的蛙郵港，包裹最終都會自己找到路，不過也可以自行優化路徑，縮短運送時間。"
 		},
 		{
 			"type": "patchouli:image",
@@ -203,7 +203,7 @@
 			"item": "fluidlogistics:hand_pointer,create:clipboard",
 			"title": "空間不夠嗎？",
 			"anchor": "clipboard",
-			"text": "$(item)指示手$()和$(item)剪貼板$()可以在旁邊沒有任何方塊的情況下，為包裹裝卸站供能和設定地址。$(br2)要使用$(item)指示手$()，只要對任何包裹裝卸站或包裹分揀站按$(item)$(k:key.use)$()，就能強制為它供能，不需要紅石訊號！"
+			"text": "$(item)指示手$()和$(item)剪貼板$()不需相鄰方塊，就能為包裹裝卸站供能和設定地址。$(br2)要使用$(item)指示手$()，只要對任何包裹裝卸站或包裹分揀站按$(item)$(k:key.use)$()，就能強制為它供能，不需要紅石訊號！"
 		},
 		{
 			"type": "patchouli:text",
@@ -228,7 +228,7 @@
 			"type": "patchouli:text",
 			"anchor": "package_tips",
 			"title": "包裹小技巧",
-			"text": "包裹會從四種*可能的外觀中隨機產生，所以像 GregTech(格雷科技) 的$(item)物品過濾器$()這類東西會$(thing)非常難設定$()！我們建議盡可能使用$(l:logistics/create#package_filter)包裹過濾器$()，不過……$(br2)$(7)* 流體是四種，物品其實多得多，因為還有好幾種秘密的稀有款式$()"
+			"text": "包裹會從四種*可能的外觀中隨機產生，所以像格雷科技的$(item)物品過濾器$()這類東西會$(thing)非常難設定$()！我們建議盡可能使用$(l:logistics/create#package_filter)包裹過濾器$()，不過……$(br2)$(7)* 流體是四種，物品其實多得多，因為還有好幾種秘密的稀有款式$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -251,7 +251,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "不過在深入$(thing)高階物流$()之前，需要先做一些準備。$(br2)製作這類設備所需的$(item)發訊線圈$()，實際上只能透過以高能量光線折射穿過一種非常獨特的礦物來生產：$(item)玫瑰石英$()。換句話說，我們需要一台$(item)基礎雷射雕刻機$()，以及取得$(item)玫瑰石英透鏡$()的方法，所以趕快把這些搞定吧！"
+			"text": "不過在深入$(thing)高階物流$()之前，需要先做一些準備。$(br2)製作這類設備所需的$(item)發訊線圈$()，實際上只能靠高能光線穿過一種非常獨特的礦物折射來生產：$(item)玫瑰石英$()。換句話說，我們需要一台$(item)基礎雷射雕刻機$()，以及取得$(item)玫瑰石英透鏡$()的方法，所以趕快把這些搞定吧！"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -321,7 +321,7 @@
 			"type": "patchouli:spotlight",
 			"item": "create:stock_ticker",
 			"anchor": "stock_ticker",
-			"text": "如果你已經用$(l:logistics/create#stock_link)庫存鏈路$()把各種物品提供給$(thing)物流網路$()，下一步就是做一個能遠端叫貨的東西……這就輪到$(item)庫存終端$()登場了。和庫存鏈路一樣，你需要先對現有的連結器按$(item)$(k:key.use)$()，讓看板調頻到該網路。"
+			"text": "如果你已經用$(l:logistics/create#stock_link)庫存鏈路$()把各種物品提供給$(thing)物流網路$()，下一步就是做一個能遠端叫貨的東西……這就輪到$(item)庫存終端$()登場了。和庫存鏈路一樣，你需要先對現有的庫存鏈路按$(item)$(k:key.use)$()，讓庫存終端調頻到該網路。"
 		},
 		{
 			"type": "patchouli:text",
@@ -329,7 +329,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "這項功能沒有距離限制，不過你需要自行規劃透過庫存鏈路訂購的包裹路線，而且相關的連結器所在的區塊必須保持載入才能運作。$(br2)此外，你可以在看板中放入$(item)過濾器$()，只顯示特定物品，或是設定物品分類。"
+			"text": "這項功能沒有距離限制，不過你需要自行規劃透過庫存鏈路訂購的包裹路線，而且相關的庫存鏈路所在的區塊必須保持載入才能運作。$(br2)此外，你可以在庫存終端中放入$(item)過濾器$()，只顯示特定物品，或是設定物品分類。"
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -418,7 +418,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "這對設定特定物品的自動供應非常有用。例如，可以考慮搭配$(l:logistics/redstone_devices#threshold_switch)儲量偵測器$()或$(l:logistics/redstone_devices#smart_observer)智慧偵測器$()一起使用。$(br2)記得和其他$(thing)高階物流$()機器一樣，放下請求器之前，要先對現有的連結器按$(item)$(k:key.use)$()，讓它調頻到該網路！"
+			"text": "這對設定特定物品的自動供應非常有用。例如，可以考慮搭配$(l:logistics/redstone_devices#threshold_switch)儲量偵測器$()或$(l:logistics/redstone_devices#smart_observer)智慧偵測器$()一起使用。$(br2)記得和其他$(thing)高階物流$()機器一樣，放下請求器之前，要先對現有的庫存鏈路按$(item)$(k:key.use)$()，讓它調頻到該網路！"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -446,7 +446,7 @@
 			"item": "create:factory_gauge,fluidlogistics:fluid_factory_gauge",
 			"anchor": "factory_gauge",
 			"title": "工廠控制片",
-			"text": "$(item)工廠控制片$()是終極的$(thing)高階物流$()機器，你必須具備製作$(item)鋁$()和$(item)二極體$()的技術才能合成，但它的功能也強大到與之相稱。"
+			"text": "$(item)工廠控制片$()是終極的$(thing)高階物流$()機器，你必須具備製作$(item)鋁$()和$(item)二極體$()的技術才能合成，但功能也相對強大。"
 		},
 		{
 			"type": "patchouli:text",
@@ -470,11 +470,11 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "這是為了避免物品被重複請求。預設情況下，這些承諾永遠不會過期；這代表如果物品不太可能在未來送達，承諾就會永遠存在。$(br2)你可以調整儀表介面底部的區塊來改變這個行為，限制承諾的有效時間。"
+			"text": "這是為了避免物品被重複請求。預設這些承諾永不過期，也就是說，若物品不太可能送達，承諾就會一直存在。$(br2)你可以調整儀表介面底部的區塊來改變這個行為，限制承諾的有效時間。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "不出所料，$(item)流體工廠控制片$()就是流體版的工廠控制片。$(br2)也一定要看看工廠控制片的$(thing)思索$()！裡面有$(italic)大量$()設定方式的視覺化範例。$(br2)$(bold)注意：$()如果你真的很愛用儀表，希望有更多選擇，$(tfg_short)有選用的 $(l:https://www.curseforge.com/minecraft/mc-mods/create-extra-gauges)Create: Extra Gauges(機械動力：額外控制片)$() 相容支援！只要安裝這個模組，新的配方就會出現。"
+			"text": "不出所料，$(item)流體工廠控制片$()就是流體版的工廠控制片。$(br2)也一定要看看工廠控制片的$(thing)思索$()！裡面有$(italic)大量$()設定方式的視覺化範例。$(br2)$(bold)注意：$()如果你真的很愛用儀表，希望有更多選擇，$(tfg_short)有選用的$(l:https://www.curseforge.com/minecraft/mc-mods/create-extra-gauges)機械動力：額外控制片$()相容支援！只要安裝這個模組，新的配方就會出現。"
 		},
 		{
 			"type": "patchouli:relations",

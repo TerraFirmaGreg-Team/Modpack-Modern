@@ -7,7 +7,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "$(item)衣物$()是一種$(thing)裝備$()，提供$(l:game_mechanics/damage_types)護甲$()以外的效果。$(br2)大多數衣物會影響你的$(l:game_mechanics/player_temperature)體溫$()，但也有一些能提供其他有用的效果。"
+			"text": "$(item)衣物$()是一種$(thing)裝備$()，提供$(l:game_mechanics/damage_types)護甲$()以外的效果。$(br2)大多數衣物會影響$(l:game_mechanics/player_temperature)體溫$()，也有些能提供其他實用效果。"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,21 +26,21 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "衣物可以穿在一般的裝備欄位，也可以穿在$(thing)飾品欄位$()，以便同時穿戴其他裝備。$(br2)這個選單也有$(l:logistics/personal_storage#backpack)背包$()或$(l:logistics/personal_storage#tool_belt)工具腰帶$()等物品的欄位。"
+			"text": "衣物可穿在一般裝備欄位，也可穿在$(thing)飾品欄位$()，以便同時穿戴其他裝備。$(br2)這個選單也有放$(l:logistics/personal_storage#backpack)背包$()或$(l:logistics/personal_storage#tool_belt)工具腰帶$()等物品的欄位。"
 		},
 		{
 			"type": "tfg:knapping_recipe",
 			"recipe": "sns:straw_knapping/straw_hat",
 			"anchor": "straw_hat",
 			"title": "稻草帽",
-			"text": "你能製作的第一件衣物是簡單的$(item)稻草帽$()，用$(l:craftsmanship/building_materials#thatch)乾草$()製成。它能保護你免受$(l:game_mechanics/player_temperature#wetness)陽光直射$()。"
+			"text": "第一件能製作的衣物是用$(l:craftsmanship/building_materials#thatch)乾草$()做成的簡單$(item)稻草帽$()，能遮擋$(l:game_mechanics/player_temperature#wetness)陽光直射$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "原始衣物",
 			"anchor": "primitive",
 			"item": "tfc_textile:raw_hat,tfc_textile:raw_shirt,tfc_textile:raw_pants,tfc_textile:raw_socks",
-			"text": "在極地光著身子快凍死了嗎？$(item)原始$()套裝非常容易製作，只需要一些$(l:craftsmanship/building_materials#thatch)乾草$()和一些$(item)獸皮$()。最適合你的穴居人時尚！$(br2)原始衣物的保暖度、隔熱度和耐久度都很低，但應該能為你爭取足夠的時間找到更好的衣物。"
+			"text": "在極地光著身子快凍死了嗎？$(item)原始$()套裝非常容易製作，只需要一些$(l:craftsmanship/building_materials#thatch)乾草$()和$(item)獸皮$()。最適合你的穴居人時尚！$(br2)原始衣物的保暖度、隔熱度和耐久度都很低，但應該能撐到你找到更好的衣物。"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -73,7 +73,7 @@
 			"anchor": "insulated_leather",
 			"title": "隔熱皮革",
 			"item": "tfcambiental:insulated_leather_hat,tfcambiental:insulated_leather_tunic,tfcambiental:insulated_leather_pants,tfcambiental:insulated_leather_boots",
-			"text": "$(item)隔熱皮革$()衣物是穴居人扮裝的下一步。只需要一些$(l:agriculture/leather_making)皮革$()護甲，再加上$(l:agriculture/animal_husbandry#wooly_animals)生羊毛$()或$(l:agriculture/animal_husbandry#oviparous_animals)羽毛$()。"
+			"text": "$(item)隔熱皮革$()衣物是穴居人扮裝的下一步，只需要$(l:agriculture/leather_making)皮革$()護甲，再加上$(l:agriculture/animal_husbandry#wooly_animals)生羊毛$()或$(l:agriculture/animal_husbandry#oviparous_animals)羽毛$()。"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -91,7 +91,7 @@
 			"title": "布料衣物",
 			"anchor": "cloth",
 			"item": "tag:forge:cloth",
-			"text": "要取得更強、更長久的防護，你會想用各種$(l:agriculture/weaving)布料$()製作像樣的衣服。$(l:agriculture/animal_husbandry#wooly_animals)羊毛$()和$(l:beneath/beneath_crops#cotton)棉$()衣物能讓你保暖，而$(l:the_world/wild_crops#flax)亞麻$()、$(l:the_world/wild_crops#jute)粗麻布$()和$(l:beneath/beneath#webbed_lair)絲綢$()衣物則能讓你降溫。$(br)這些衣物前期投入較大，但耐久度高得多，修理也很便宜。"
+			"text": "想要更強、更持久的防護，就用各種$(l:agriculture/weaving)布料$()做像樣的衣服。$(l:agriculture/animal_husbandry#wooly_animals)羊毛$()和$(l:beneath/beneath_crops#cotton)棉$()衣物能保暖，$(l:the_world/wild_crops#flax)亞麻$()、$(l:the_world/wild_crops#jute)粗麻布$()和$(l:beneath/beneath#webbed_lair)絲綢$()衣物則能降溫。$(br)這些衣物前期投入較大，但耐久度高得多，修理也便宜。"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -104,11 +104,11 @@
 			"item": "tag:tfc_textile:animal_furs",
 			"anchor": "hides",
 			"title": "動物毛皮",
-			"text": "各種動物的獸皮和毛皮可以用來製作 $(tfg_short) 中最強的一些衣物，數值和耐久度都是所有衣物中最好的。它們的數值依取得難度或對應動物的分布地點而有所不同。"
+			"text": "各種動物的獸皮和毛皮能製作 $(tfg_short) 中最強的衣物，數值和耐久度都是所有衣物之冠。數值依取得難度或對應動物的分布地點而不同。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "例如，$(l:the_world/wild_animals#crocodile)鱷魚皮衣物$()能讓你降溫，而$(l:the_world/wild_animals#caribou)北美馴鹿皮大衣$()則溫暖舒適。$(br2)最強的降溫衣物需要你前往某個$(l:beneath/beneath_mechanics#clothes)相當炎熱$()的地方……$(br2)這些衣物也都很容易修理。"
+			"text": "例如，$(l:the_world/wild_animals#crocodile)鱷魚皮衣物$()能讓你降溫，而$(l:the_world/wild_animals#caribou)馴鹿皮大衣$()則溫暖舒適。$(br2)最強的降溫衣物需要你前往某個$(l:beneath/beneath_mechanics#clothes)相當炎熱$()的地方……$(br2)這些衣物也都很容易修理。"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -121,7 +121,7 @@
 			"anchor": "fully_insulated",
 			"title": "完全隔熱",
 			"item": "gtceu:nanomuscle_chestplate,ad_astra:space_suit",
-			"text": "最後，一些進階護甲還能提供與外界的$(thing)完全隔熱$()，防止你的$(l:game_mechanics/player_temperature)體溫$()低於 5°C 或高於 25°C。"
+			"text": "最後，有些進階護甲能與外界$(thing)完全隔熱$()，讓$(l:game_mechanics/player_temperature)體溫$()維持在 5°C 到 25°C 之間。"
 		},
 		{
 			"type": "tfg:table",
