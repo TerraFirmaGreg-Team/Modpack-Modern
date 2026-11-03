@@ -871,7 +871,7 @@ function registerGreateRecipes(event) {
 		'D D'
 	], {
 		A: '#forge:tools/hammers',
-		B: '#forge:rings/any_bronze',
+		B: '#forge:any_bronze_ring',
 		C: '#forge:tools/wrenches',
 		D: '#forge:rods/any_bronze'
 	}).id('greate:shaped/andesite_alloy_whisk')
