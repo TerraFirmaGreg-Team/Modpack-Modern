@@ -15,9 +15,14 @@ on:
       - 'pakku.json'
       - '.github/workflows/build.yml'
   workflow_dispatch:
+    inputs:
+      version:
+        description: "Release tag to export (empty = latest incl. pre)"
+        required: false
+        default: ""
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: ${{ github.workflow }}-${{ github.ref }}-${{ inputs.version }}
   cancel-in-progress: true
 
 env:
@@ -73,6 +78,7 @@ jobs:
   build:
     name: "[📦] Project Build"
     needs: [info]
+    if: ${{ github.event_name == 'push' }}
     runs-on: ubuntu-latest
     steps:
       - name: Build artifacts
@@ -100,10 +106,28 @@ jobs:
           prune_export_false: true
           artifact_docker: true
 
+  route:
+    name: "[🚦] Route"
+    needs: [info, build, create-pr, release]
+    if: always()
+    outputs:
+      test: ${{ steps.r.outputs.test }}
+      export: ${{ steps.r.outputs.export }}
+      changelog: ${{ steps.r.outputs.changelog }}
+      message: ${{ steps.r.outputs.message }}
+    steps:
+      - id: r
+        uses: TerraFirmaGreg-Team/Actions/modpack/route@main
+        with:
+          info_result: ${{ needs.info.result }}
+          build_result: ${{ needs.build.result }}
+          release_result: ${{ needs.release.result }}
+          make_release: ${{ needs.info.outputs.make_release }}
+
   test:
     name: "[🧪] Project Test"
-    needs: [info, build, create-pr]
-    if: ${{ github.ref_name != 'main' }}
+    needs: [route, info, build, create-pr]
+    if: ${{ needs.route.outputs.test == 'true' }}
     runs-on: ubuntu-latest
     timeout-minutes: 60
     permissions:
@@ -128,7 +152,7 @@ jobs:
     name: "[🚀] Project Release"
     needs: [info, build]
     runs-on: ubuntu-latest
-    if: ${{ needs.info.outputs.make_release == 'true' }}
+    if: ${{ github.event_name == 'push' && needs.info.outputs.make_release == 'true' }}
     permissions:
       contents: write
     outputs:
@@ -161,7 +185,8 @@ jobs:
 
   message:
     name: "[📱] Discord Message"
-    needs: [info, release]
+    needs: [route, info, release]
+    if: ${{ needs.route.outputs.message == 'true' }}
     runs-on: ubuntu-latest
     steps:
       - name: Send Discord message
@@ -179,8 +204,8 @@ jobs:
 
   export:
     name: "[📤] Game Export"
-    needs: [info, build, release]
-    if: ${{ needs.info.outputs.make_release == 'true' }}
+    needs: [route, info, build, release]
+    if: ${{ needs.route.outputs.export == 'true' }}
     runs-on: ubuntu-latest
     timeout-minutes: 360
     steps:
@@ -188,21 +213,20 @@ jobs:
         uses: TerraFirmaGreg-Team/Actions/modpack/export@main
         with:
           platform: ${{ env.PREFIX }}
-          version: ${{ needs.info.outputs.project_version }}
+          version: ${{ github.event_name == 'push' && needs.info.outputs.project_version || inputs.version }}
           mc_version: ${{ needs.info.outputs.mc_version }}
           loader_type: ${{ needs.info.outputs.loader_type }}
-          pack_artifact: ${{ needs.info.outputs.project_full_name }}-multimc
+          pack_artifact: ${{ github.event_name == 'push' && format('{0}-multimc', needs.info.outputs.project_full_name) || '' }}
           dump_s3_endpoint: ${{ secrets.CLOUDFLARE_R2_ENDPOINT }}
           dump_s3_bucket: ${{ vars.DUMP_S3_BUCKET }}
-          dump_s3_prefix: ${{ env.PREFIX }}
           dump_s3_region: ${{ vars.DUMP_S3_REGION }}
           dump_s3_access_key: ${{ secrets.CLOUDFLARE_R2_ACCESS_KEY }}
           dump_s3_secret_key: ${{ secrets.CLOUDFLARE_R2_SECRET_KEY }}
 
   changelog:
     name: "[📰] Wiki Changelog"
-    needs: [release]
-    if: ${{ always() && (needs.release.result == 'success' || github.event_name == 'workflow_dispatch') }}
+    needs: [route, release]
+    if: ${{ needs.route.outputs.changelog == 'true' }}
     runs-on: ubuntu-latest
     steps:
       - name: Sync wiki changelog
