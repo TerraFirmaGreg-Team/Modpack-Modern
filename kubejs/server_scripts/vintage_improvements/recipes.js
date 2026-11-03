@@ -162,7 +162,10 @@ function registerVintageImprovementsRecipes(event) {
 		{ material: GTMaterials.Silver, blows: STARTING_BLOWS },
 		{ material: GTMaterials.SterlingSilver, blows: STARTING_BLOWS },
 		{ material: GTMaterials.Tin, blows: STARTING_BLOWS },
-		{ material: GTMaterials.Lead, blows: STARTING_BLOWS }
+		{ material: GTMaterials.Lead, blows: STARTING_BLOWS },
+		{ material: GTMaterials.Electrum, blows: STARTING_BLOWS },
+		{ material: GTMaterials.Cupronickel, blows: STARTING_BLOWS },
+		{ material: GTMaterials.BatteryAlloy, blows: STARTING_BLOWS }
 	]
 
 	let HAMMERING_ITEMS = [
@@ -290,7 +293,7 @@ function registerVintageImprovementsRecipes(event) {
 	})
 
 	// Tier 9
-	HAMMERING_MATERIALS.push({ material: GTMaterials.get('ostrum_iodide'), blows: STARTING_BLOWS })
+	HAMMERING_MATERIALS.push({ material: GTMaterials.get('tfg:ostrum_iodide'), blows: STARTING_BLOWS })
 	HAMMERING_MATERIALS.push({ material: GTMaterials.TungstenCarbide, blows: STARTING_BLOWS })
 
 	HAMMERING_MATERIALS.forEach(x => {
