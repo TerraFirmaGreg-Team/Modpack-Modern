@@ -219,5 +219,16 @@
     "tfg.wireless_charger.mode.1": "§eMode: Long Range - Slow Charge§7(§f%s§7 block radius, 1A)",
 
     "tfg.field_guide.name": "Field Guide",
-    "tfg.field_guide.read_me": "§8§oRead Me! ☺§r"
+    "tfg.field_guide.read_me": "§8§oRead Me! ☺§r",
+    
+	"tfg.display_source.thermometer": "Thermometer",
+  	"tfg.display_source.thermometer.display_mode": "Thermometer Display Mode",
+	"tfg.display_source.calendar_clock": "Thermometer",
+  	"tfg.display_source.calendar_clock.display_mode": "Calendar Clock Display Mode",
+	"tfg.display_source.anemometer": "Anemometer",
+	"tfg.display_source.anemometer.display_mode": "Anemometer Display Mode",
+	"tfg.display_source.environment": "Environment",
+	"tfg.display_source.environment.display_mode": "Environment Display Mode",
+    "tfg.display_source.me_network": "ME Network",
+    "tfg.display_source.me_network.display_mode": "Network Display Mode"
 }

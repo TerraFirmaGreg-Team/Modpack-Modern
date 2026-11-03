@@ -361,6 +361,30 @@
     "tfg.item.electric_flask.tooltip_1": "An electrical flask that will automatically drink when needed.",
     "tfg.item.electric_flask.tooltip_2": "§9Consumes: §f1000 EU per drink",
 
-    "tfg.tooltip.campfire": "Cosmetic only usable as an infinite source of light"
+    "tfg.tooltip.campfire": "Cosmetic only usable as an infinite source of light",
+
+    "tfg.tooltip.calendar_weekday_month_day_year": "%s-%s %d, %04d",
+    "tfg.tooltip.calendar_standard_date": "%s/%s/%04d",
+    "tfg.tooltip.calendar_iso_date": "%04d-%s-%s",
+    "tfg.tooltip.calendar_month_and_day": "%d-%s",
+	"tfg.tooltip.climate_precipitation.chance": "Precipitation: %s%% ",
+	"tfg.tooltip.climate_precipitation.mm": "%smm",
+	"tfg.tooltip.climate_wind.speed_ms": "%s m/s",
+	"tfg.tooltip.climate_wind.speed_bs": "%s block/s",
+	"tfg.tooltip.climate_wind.speed_knots": "%s Knots",
+	"tfg.tooltip.climate_wind.angl_n": "%s°N",
+	"tfg.tooltip.climate_wind.angl_ne": "%s°NE",
+	"tfg.tooltip.climate_wind.angl_nw": "%s°NW",
+	"tfg.tooltip.climate_wind.angl_e": "%s°E",
+	"tfg.tooltip.climate_wind.angl_s": "%s°S",
+	"tfg.tooltip.climate_wind.angl_se": "%s°SE",
+	"tfg.tooltip.climate_wind.angl_sw": "%s°SW",
+	"tfg.tooltip.climate_wind.angl_w": "%s°W",
+	"tfg.tooltip.environment.pressure_atm": "%s atm",
+	"tfg.tooltip.environment.pressure_pascal": "%s kPa",
+	"tfg.tooltip.environment.pressure_bar": "%s bar",
+	"tfg.tooltip.environment.gravity_mss": "%s m/s²",
+	"tfg.tooltip.environment.gravity_bss": "%s block/s²",
+    "tfg.tooltip.me_network.channels": "%s Exposed Channels"
 
 }
