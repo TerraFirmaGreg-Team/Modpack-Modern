@@ -597,8 +597,6 @@ function registerGTCEuMachineRecipes(event) {
 
 	//#region ULV Hatches
 
-	event.replaceInput({ id: 'gtceu:shaped/ulv_machine_hull' }, '#forge:plates/wood', '#forge:plates/lead')
-
 	event.recipes.gtceu.shaped('gtceu:ulv_input_bus', [
 		'CAC',
 		'CBC',

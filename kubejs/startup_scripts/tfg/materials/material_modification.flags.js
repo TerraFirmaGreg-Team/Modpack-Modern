@@ -32,6 +32,7 @@ function registerTFGFlagsMaterialModification(event) {
 		GENERATE_FINE_WIRE,
 		NO_ORE_PROCESSING_TAB,
 		NO_ORE_SMELTING,
+		NO_SMELTING,
 		DISABLE_DECOMPOSITION,
 		GENERATE_LENS
 	} = $MATERIAL_FLAGS
@@ -187,6 +188,13 @@ function registerTFGFlagsMaterialModification(event) {
 	GTMaterials.CobaltBrass.addFlags(GENERATE_ROTOR)
 	GTMaterials.Magnalium.addFlags(GENERATE_ROTOR)
 	GTMaterials.VanadiumSteel.addFlags(GENERATE_ROTOR)
+
+	// Change Steels to be made in ArcFurnace
+
+	//GTMaterials.Steel.addFlags(NO_SMELTING)
+	GTMaterials.BlackSteel.addFlags(NO_SMELTING)
+	GTMaterials.BlueSteel.addFlags(NO_SMELTING)
+	GTMaterials.RedSteel.addFlags(NO_SMELTING)
 
 	// electric tools
 	GTMaterials.VanadiumSteel.addFlags(HAS_GT_TOOL, GENERATE_DOUBLE_INGOTS)

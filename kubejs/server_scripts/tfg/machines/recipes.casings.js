@@ -280,4 +280,154 @@ function registerTFGCasingRecipes(event) {
 		.duration(2.5 * 20)
 		.EUt(16)
 		.addMaterialInfo(true)
+
+	//#region Machine Casings Rework
+
+	// Maldonite Alloy Recipes
+
+	event.recipes.gtceu.mixer('tfg:maldonite_dust')
+		.itemInputs(Item.of('gtceu:gold_dust', 2), Item.of('gtceu:bismuth_dust', 1))
+		.itemOutputs(Item.of('tfg:maldonite_dust', 3))
+		.circuit(1)
+		.duration(20 * 15)
+		.EUt(GTValues.VHA[GTValues.LV])
+
+	event.recipes.gtceu.alloy_smelter('tfg:maldonite_both_dust')
+		.itemInputs(Item.of('gtceu:gold_dust', 2), Item.of('gtceu:bismuth_dust', 1))
+		.itemOutputs(Item.of('tfg:maldonite_ingot', 3))
+		.duration(20 * 10)
+		.EUt(GTValues.VH[GTValues.LV])
+
+	event.recipes.gtceu.alloy_smelter('tfg:maldonite_gold_dust')
+		.itemInputs(Item.of('gtceu:gold_dust', 2), Item.of('gtceu:bismuth_ingot', 1))
+		.itemOutputs(Item.of('tfg:maldonite_ingot', 3))
+		.duration(20 * 10)
+		.EUt(GTValues.VH[GTValues.LV])
+
+	event.recipes.gtceu.alloy_smelter('tfg:maldonite_bismuth_dust')
+		.itemInputs(Item.of('minecraft:gold_ingot', 2), Item.of('gtceu:bismuth_dust', 1))
+		.itemOutputs(Item.of('tfg:maldonite_ingot', 3))
+		.duration(20 * 10)
+		.EUt(GTValues.VH[GTValues.LV])
+
+	event.recipes.gtceu.alloy_smelter('tfg:maldonite_both_ingot')
+		.itemInputs(Item.of('minecraft:gold_ingot', 2), Item.of('gtceu:bismuth_ingot', 1))
+		.itemOutputs(Item.of('tfg:maldonite_ingot', 3))
+		.duration(20 * 10)
+		.EUt(GTValues.VH[GTValues.LV])
+
+	// Blue Steel and Red Steel Shortcut recipes
+	/* Ratio issue, I'm not sure it's really doable
+	event.recipes.gtceu.mixer('tfg:red_steel_shortcut')
+		.itemInputs(Item.of('gtceu:copper_dust', 4), Item.of('gtceu:gold_dust', 4), Item.of('gtceu:zinc_dust', 1), Item.of('gtceu:steel_dust', 2), Item.of('gtceu:black_steel_dust', 4))
+		.itemOutputs(Item.of('tfg:red_steel_dust', 3))
+		.circuit(4)
+		.duration(20 * 15)
+		.EUt(GTValues.VHA[GTValues.LV])
+	*/
+
+	// Move the Steels to Arc Furnace
+
+	event.remove({ id: 'gtceu:electric_blast_furnace/steel_from_iron' })
+	event.remove({ id: 'gtceu:electric_blast_furnace/steel_from_wrought_iron' })
+
+	event.recipes.gtceu.arc_furnace('tfg:steel')
+		.itemInputs(Item.of('gtceu:steel_dust', 1))
+		.inputFluids(Fluid.of('gtceu:oxygen', 63))
+		.itemOutputs(Item.of('gtceu:steel_ingot', 1))
+		.duration(20 * 4.2)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.arc_furnace('tfg:black_steel')
+		.itemInputs(Item.of('gtceu:black_steel_dust', 1))
+		.inputFluids(Fluid.of('gtceu:oxygen', 70))
+		.itemOutputs(Item.of('tfc:metal/ingot/black_steel', 1))
+		.duration(20 * 5.2)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.arc_furnace('tfg:red_steel')
+		.itemInputs(Item.of('gtceu:red_steel_dust', 1))
+		.inputFluids(Fluid.of('gtceu:oxygen', 70))
+		.itemOutputs(Item.of('tfc:metal/ingot/red_steel', 1))
+		.duration(20 * 6)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.arc_furnace('tfg:blue_steel')
+		.itemInputs(Item.of('gtceu:blue_steel_dust', 1))
+		.inputFluids(Fluid.of('gtceu:oxygen', 70))
+		.itemOutputs(Item.of('tfc:metal/ingot/blue_steel', 1))
+		.duration(20 * 6)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	// Machine Hulls
+
+	event.replaceInput({ id: 'gtceu:shaped/ulv_machine_hull' }, '#forge:plates/wood', '#forge:plates/lead')
+
+	event.recipes.gtceu.assembler('tfg:ulv_hull_bakelite')
+		.itemInputs('gtceu:ulv_machine_casing', '2x #forge:single_cables/red_alloy')
+		.inputFluids('tfg:bakelite 432')
+		.itemOutputs('gtceu:ulv_machine_hull')
+		.duration(25)
+		.EUt(16)
+
+	event.recipes.gtceu.assembler('tfg:lv_hull_bakelite')
+		.itemInputs('gtceu:lv_machine_casing', '2x #forge:single_cables/tin')
+		.inputFluids('tfg:bakelite 432')
+		.itemOutputs('gtceu:lv_machine_hull')
+		.duration(50)
+		.EUt(16)
+
+	event.replaceInput('gtceu:shaped/lv_machine_hull', '#forge:plates/wrought_iron', '#forge:plates/red_steel')
+
+	event.remove({ id: 'gtceu:shaped/mv_machine_hull'})
+	event.shaped('gtceu:mv_machine_hull', [
+		'ABA',
+		'DCD',
+		'ABA'
+	], {
+		A: '#forge:plates/bakelite',
+		B: '#forge:plates/aluminum',
+		C: 'gtceu:mv_machine_casing',
+		D: 'gtceu:copper_single_cable'
+	}).id('tfg:shaped/mv_machine_hull')
+
+	event.remove({ id: 'gtceu:assembler/hull_mv_annealed'})
+	event.recipes.gtceu.assembler('tfg:mv_machine_hull')
+		.itemInputs('gtceu:mv_machine_casing', '2x gtceu:copper_single_cable')
+		.inputFluids('tfg:bakelite 576')
+		.itemOutputs('gtceu:mv_machine_hull')
+		.duration(20*2.5)
+		.EUt(GTValues.VH[GTValues.LV])
+
+	// Machine Casings
+
+	modifyMachineCasing(event, 'ulv', 'plates/wrought_iron', 'plates/maldonite')
+	modifyMachineCasing(event, 'lv', 'plates/steel', 'plates/red_steel')
+	modifyMachineCasing(event, 'mv', 'plates/aluminium', 'plates/blue_steel')
+	modifyMachineCasing(event, 'hv', 'double_plates/stainless_steel', 'double_plates/platinum')
+	modifyMachineCasing(event, 'ev', 'double_plates/titanium', 'double_plates/palladium')
+
+	function modifyMachineCasing(event, tier, base, added) {
+		var originalPlate = `forge:plates/${base.split('/')[1]}`
+		var basePlate = `#forge:${base}`
+		var addedPlate = `#forge:${added}`
+
+		event.remove({ id: `gtceu:shaped/casing_${tier}` })
+		event.recipes.gtceu.shaped(`gtceu:${tier}_machine_casing`, [
+			'ABA',
+			'BCB',
+			'ABA'
+		], {
+			A: basePlate,
+			B: addedPlate,
+			C: '#forge:tools/wrenches'
+		}).addMaterialInfo().id(`tfg:shaped/${tier}_machine_casing`)
+
+		global.modifyRecipe(event, `gtceu:assembler/casing_${tier}`, {
+			newId: `tfg:casing_${tier}`,
+			removeItemInputs: [originalPlate],
+			addItemInputs: [`4x ${basePlate}`, `4x ${addedPlate}`]
+		})
+	}
+
 }

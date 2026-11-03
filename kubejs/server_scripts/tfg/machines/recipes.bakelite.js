@@ -90,25 +90,6 @@ function registerTFGBakeliteRecipes(event) {
 	// machine hull changes/additions
 
 	// To Move to MV Rework after
-	event.remove({ id: 'gtceu:shaped/mv_machine_hull'})
-	event.shaped('gtceu:mv_machine_hull', [
-		'ABA',
-		'DCD',
-		'ABA'
-	], {
-		A: '#forge:plates/bakelite',
-		B: '#forge:plates/aluminum',
-		C: 'gtceu:mv_machine_casing',
-		D: 'gtceu:copper_single_cable'
-	}).id('tfg:shaped/mv_machine_hull')
-
-	event.remove({ id: 'gtceu:assembler/hull_mv_annealed'})
-	event.recipes.gtceu.assembler('tfg:mv_machine_hull')
-		.itemInputs('gtceu:mv_machine_casing', '2x gtceu:copper_single_cable')
-		.inputFluids('tfg:bakelite 576')
-		.itemOutputs('gtceu:mv_machine_hull')
-		.duration(20*2.5)
-		.EUt(GTValues.VH[GTValues.LV])
 
 	// MV Buses
 	event.recipes.gtceu.assembler('tfg:mv_input_bus')
@@ -209,23 +190,6 @@ function registerTFGBakeliteRecipes(event) {
 		.duration(20*15)
 		.EUt(GTValues.VA[GTValues.ULV])
 		.circuit(2)
-
-
-	// LV/ULV Hulls
-
-	event.recipes.gtceu.assembler('tfg:ulv_hull_bakelite')
-		.itemInputs('gtceu:ulv_machine_casing', '2x #forge:single_cables/red_alloy')
-		.inputFluids('tfg:bakelite 432')
-		.itemOutputs('gtceu:ulv_machine_hull')
-		.duration(25)
-		.EUt(16)
-
-	event.recipes.gtceu.assembler('tfg:lv_hull_bakelite')
-		.itemInputs('gtceu:lv_machine_casing', '2x #forge:single_cables/tin')
-		.inputFluids('tfg:bakelite 432')
-		.itemOutputs('gtceu:lv_machine_hull')
-		.duration(50)
-		.EUt(16)
 
 	event.shaped('gtceu:lv_hermetic_casing', [
 		'AAA',

@@ -16,12 +16,14 @@
 		{
 			id: "46612C429BCA8A18"
 			linked_quest: "6BAC3BE1D4FE0F6B"
+			shape: "heart"
 			x: 4.5d
 			y: 14.0d
 		}
 		{
 			id: "5E5AD44B50E0B15B"
 			linked_quest: "31A6A236B6710B95"
+			shape: "heart"
 			x: 4.5d
 			y: 12.0d
 		}
@@ -544,11 +546,6 @@
 				"{quests.low_voltage.lv_ebf.desc.3}"
 			]
 			id: "1E9BE8D3F8A602DC"
-			rewards: [{
-				id: "5A3DDA916C125D0F"
-				item: "gtceu:terminal"
-				type: "item"
-			}]
 			shape: "octagon"
 			size: 2.0d
 			subtitle: "{quests.low_voltage.lv_ebf.subtitle}"
@@ -689,7 +686,7 @@
 			}]
 			title: "{quests.low_voltage.lv_gas_collector.title}"
 			x: -8.5d
-			y: 12.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["47B899144B865516"]
@@ -821,7 +818,7 @@
 			}]
 			title: "{quests.low_voltage.lv_electroliser.title}"
 			x: -2.5d
-			y: 12.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["12565AB92A2BF976"]
@@ -954,7 +951,8 @@
 				"{quests.low_voltage.lv_arc_furnace.desc.2}"
 			]
 			id: "63256ED95F17B242"
-			size: 1.0d
+			shape: "octagon"
+			size: 1.5d
 			subtitle: "{quests.low_voltage.lv_arc_furnace.subtitle}"
 			tasks: [{
 				id: "2374C06C5E1EFC24"
@@ -1006,7 +1004,7 @@
 			]
 			title: "{quests.low_voltage.lv_oxygen.title}"
 			x: -4.5d
-			y: 12.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["5263F866638D875C"]
@@ -1129,7 +1127,7 @@
 			}]
 			title: "{quests.low_voltage.aluminium_dust.title}"
 			x: -12.5d
-			y: 12.0d
+			y: 11.5d
 		}
 		{
 			description: ["{quests.low_voltage.multiblock_tech.desc}"]
@@ -1298,7 +1296,7 @@
 			]
 			title: "{quests.low_voltage.lv_nitrogen.title}"
 			x: -10.5d
-			y: 12.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["22510C5F2386B453"]
@@ -2002,6 +2000,7 @@
 			description: ["{quests.low_voltage.lv_laser_engraver.desc}"]
 			id: "383A14A5C65B3ADF"
 			optional: true
+			shape: "heart"
 			subtitle: "{quests.low_voltage.lv_laser_engraver.subtitle}"
 			tasks: [{
 				id: "4CB619C294C16642"
@@ -2156,6 +2155,7 @@
 			description: ["{quests.low_voltage.stock_ticker.desc}"]
 			guide_page: "tfg:field_guide tfg:logistics/create 35"
 			id: "551B1AC08D0BE017"
+			optional: true
 			shape: "octagon"
 			size: 2.0d
 			subtitle: "{quests.low_voltage.stock_ticker.subtitle}"
@@ -2177,7 +2177,8 @@
 			guide_page: "tfg:field_guide tfg:logistics/create 48"
 			hide_until_deps_complete: false
 			id: "36BF3283BEBCCEBF"
-			shape: "octagon"
+			optional: true
+			shape: "heart"
 			size: 1.5d
 			subtitle: "{quests.low_voltage.factory_gauge.subtitle}"
 			tasks: [
@@ -2207,6 +2208,8 @@
 			guide_page: "tfg:field_guide tfg:logistics/create 28"
 			icon: "greate:rose_quartz_lens"
 			id: "6771D2D96EEA8FD0"
+			optional: true
+			shape: "heart"
 			subtitle: "{quests.create_logistics.rose_quartz_lens.subtitle}"
 			tasks: [
 				{
@@ -2229,6 +2232,7 @@
 			description: ["{quests.low_voltage.electric_flask.desc}"]
 			guide_page: "tfg:field_guide tfg:cooking/drinking_containers 5"
 			id: "4651E1A7756AD80A"
+			optional: true
 			shape: "heart"
 			subtitle: "{quests.low_voltage.electric_flask.subtitle}"
 			tasks: [{
