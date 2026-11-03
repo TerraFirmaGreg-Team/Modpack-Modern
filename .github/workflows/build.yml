@@ -110,6 +110,7 @@ jobs:
     name: "[🚦] Route"
     needs: [info, build, create-pr, release]
     if: always()
+    runs-on: ubuntu-latest
     outputs:
       test: ${{ steps.r.outputs.test }}
       export: ${{ steps.r.outputs.export }}
