@@ -32,49 +32,37 @@ function registerJelliesRecipes(event) {
 
 	event.recipes.gtceu.chemical_bath('tfg:jellies_to_slime')
 		.itemInputs('#jellies:slime_ball')
-		.inputFluids(Fluid.of('minecraft:water', 250))
+		.inputFluids(Fluid.of('minecraft:water', 200))
 		.itemOutputs('minecraft:slime_ball')
 		.duration(50)
 		.EUt(GTValues.VHA[GTValues.ULV])
 
 
 	// Glowberry Slime Ball
-	for (let i = 1; i <= 5; i++) {
-		let inputArray = new Array(0)
-		let outputArray = new Array(0)
+	event.recipes.tfc.heating('jellies:jellie/slime_ball/glowberry', 100)
+		.resultItem('minecraft:sugar')
+		.id('tfg:heating/glowberry_jellie')
 
-		for (let j = 1; j < i + 1; j++) {
-			inputArray.push('jellies:jellie/slime_ball/glowberry')
-			outputArray.push('minecraft:sugar')
-		}
+	event.recipes.tfc.pot('jellies:jellie/slime_ball/glowberry', Fluid.of('minecraft:water', 200), 100, 100)
+		.itemOutput('minecraft:sugar')
+		.id('tfg:pot/glowberry_jellie')
 
-		event.recipes.tfc.pot(inputArray, Fluid.of('tfc:spring_water', 200 * i), 300, 200)
-			.itemOutput(outputArray)
-			.id(`tfg:pot/${i}x_glowberry_slime_ball_to_sugar`)
-	}
+	event.smelting('minecraft:sugar', 'jellies:jellie/slime_ball/glowberry')
+		.id('tfg:smelting/glowberry_jellie')
 
-	event.recipes.firmalife.vat()
-		.inputs('jellies:jellie/slime_ball/glowberry', Fluid.of('tfc:spring_water', 200))
-		.outputItem('minecraft:sugar')
-		.length(600)
-		.id('tfg:vat/glowberry_slime_ball_to_sugar')
+	// TODO: recipe for glowberry jam?
 
-	event.recipes.gtceu.extractor('tfg:glowberry_slime_ball')
-		.itemInputs('jellies:jellie/slime_ball/glowberry')
-		.inputFluids(Fluid.of('tfc:spring_water', 200))
-		.itemOutputs('minecraft:sugar')
-		.duration(100)
-		.EUt(GTValues.VHA[GTValues.ULV])
+	// Milk Slime Ball
+	event.recipes.tfc.heating('jellies:jellie/slime_ball/milk', 100)
+		.resultFluid(Fluid.of('tfg:jellie_milk', 1000))
+		.id('tfg:heating/milk_jellie')
 
-	// Latex Slime Ball
-	event.recipes.firmalife.vat()
-		.inputItem('jellies:jellie/slime_ball/latex')
-		.outputFluid(Fluid.of('tfg:jellie_milk', 1000))
-		.length(600)
-		.id('tfg:vat/latex_slime_ball_to_latex')
+	event.recipes.tfc.pot('jellies:jellie/slime_ball/milk', Fluid.of('minecraft:water', 200), 100, 100)
+		.fluidOutput(Fluid.of('tfg:jellie_milk', 1000))
+		.id('tfg:pot/milk_jellie')
 
-	event.recipes.gtceu.brewery('tfg:latex_slime_ball')
-		.itemInputs('jellies:jellie/slime_ball/latex')
+	event.recipes.gtceu.brewery('tfg:milk_slime_ball')
+		.itemInputs('jellies:jellie/slime_ball/milk')
 		.outputFluids(Fluid.of('tfg:jellie_milk', 1000))
 		.duration(100)
 		.EUt(GTValues.VHA[GTValues.ULV])
@@ -93,11 +81,13 @@ function registerJelliesRecipes(event) {
 		.EUt(GTValues.VHA[GTValues.ULV])
 
 	// Spring Slime Ball
-	event.recipes.firmalife.vat()
-		.inputItem('jellies:jellie/slime_ball/spring')
-		.outputFluid(Fluid.of('tfc:spring_water', 1000))
-		.length(600)
-		.id('tfg:vat/spring_slime_ball_to_spring_water')
+	event.recipes.tfc.heating('jellies:jellie/slime_ball/spring', 100)
+		.resultFluid(Fluid.of('tfc:spring_water', 1000))
+		.id('tfg:heating/spring_jellie')
+
+	event.recipes.tfc.pot('jellies:jellie/slime_ball/spring', Fluid.of('minecraft:water', 200), 100, 100)
+		.fluidOutput(Fluid.of('tfc:spring_water', 1000))
+		.id('tfg:pot/spring_jellie')
 
 	event.recipes.gtceu.brewery('tfg:spring_slime_ball')
 		.itemInputs('jellies:jellie/slime_ball/spring')

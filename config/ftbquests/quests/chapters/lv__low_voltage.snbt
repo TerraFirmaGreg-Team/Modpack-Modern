@@ -224,7 +224,16 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.low_voltage.lv_battery_preparation.desc}"]
-			icon: "gtceu:battery_alloy_ingot"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "gtceu:battery_alloy_ingot"
+			}
 			id: "6D9D54FAB21EC086"
 			subtitle: "{quests.low_voltage.lv_battery_preparation.subtitle}"
 			tasks: [
