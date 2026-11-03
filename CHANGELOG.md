@@ -7,6 +7,8 @@
 - Added a calcite + clay dust recipe for liquid concrete (#5238) @lysteryale
 - Added snow bricks and ice bricks (#5235) @Pyritie
 - Added the Basic Mechanical Mixer @Pyritie
+- Mechanical pumps can now pull fluids from aqueducts, except for lava @Allmoz @Pyritie
+- Increased the damage the sandworm deals @Pyritie
 ### Bug fixes
 - Fixed mineshafts sticking out of the sides of mountains @Pyritie
 - Fixed some plants and flowers growing in the wrong elevations (#4994) @Pyritie
@@ -14,6 +16,8 @@
 - Fixed an issue with painted firmalife boats allocating a large amount of VRAM @Zippity
 - Fixed duplicate tallow gas burner fuel @Redeix
 - Quest fixes (#5192) @TomPlop
+- Fixed hose pulleys not being able to drain/fill TFC fluid-logged blocks such as plants, loose rocks, stone spikes, etc (#3428) @Allmoz
+- Fixed being able to move water sources via waterlogged plants and a schematicannon @Allmoz
 ### Mods
 #### Jellies
 - Plant and Phosphorum Jellies now give 4x the items, since they're only useful for compost generation
