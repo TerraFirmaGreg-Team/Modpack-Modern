@@ -6,7 +6,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "生命存在於深處！地底有相當多的生物，有些友善，有些敵對。$(br2)本條目列出你可以找到的一些比較有趣的生物。$(br)"
+			"text": "深處也有生命！地底有不少生物，有些友善，有些敵對。$(br2)本條目列出一些比較有趣的生物。$(br)"
 		},
 		{
 			"type": "patchouli:text",
@@ -118,7 +118,7 @@
 			"scale": 0.9,
 			"name": "豬布林",
 			"anchor": "piglin",
-			"text": "地底幾乎每個生態域都可以找到豬布林。你可以像在原版中一樣和牠們$(l:beneath/beneath_mechanics#piglins)交易$()。"
+			"text": "地底幾乎每個生態域都有豬布林，可以像原版一樣和牠們$(l:beneath/beneath_mechanics#piglins)交易$()。"
 		},
 		{
 			"type": "patchouli:entity",
@@ -134,7 +134,7 @@
 			"scale": 0.4,
 			"name": "夜魅",
 			"anchor": "phantom",
-			"text": "無論你睡得多不多，$(thing)夜魅$()都會在中層和下層自然生成。牠們可以被製成$(l:beneath/beneath_mechanics#clothes)衣物$()。"
+			"text": "無論你睡了多少，$(thing)夜魅$()都會在中層和下層自然生成，可製成$(l:beneath/beneath_mechanics#clothes)衣物$()。"
 		},
 		{
 			"type": "patchouli:entity",
@@ -190,7 +190,7 @@
 			"scale": 0.9,
 			"name": "邪火",
 			"anchor": "wicked",
-			"text": "$(thing)邪火$()是一種能附身在附近生物身上、為其提供增益效果的幽靈！如果附近沒有生物，牠們會使用遠程攻擊。牠們會掉落蠟。"
+			"text": "$(thing)邪火$()是能附身在附近生物身上、提供增益效果的幽靈！附近沒有生物時會使用遠程攻擊，會掉落蠟。"
 		},
 		{
 			"type": "patchouli:entity",
@@ -206,7 +206,7 @@
 			"scale": 0.8,
 			"name": "飢渴獸",
 			"anchor": "bewereager",
-			"text": "$(thing)飢渴獸$()是一種具攻擊性的怪物，還會跳到你面前！牠會強化自己，並以短暫的連續攻擊發動攻勢。"
+			"text": "$(thing)飢渴獸$()是具攻擊性的怪物，還會跳向你！牠會強化自己，並發動短暫的連續攻擊。"
 		},
 		{
 			"type": "patchouli:relations",

@@ -17,24 +17,24 @@
             "type": "patchouli:text",
             "title": "基礎",
             "anchor": "basics",
-            "text": "在$(tfg)中，你不只要管理飢餓，還必須管理口渴。飢餓的運作方式與原版類似。大多數食物會恢復約五分之一的飢餓條。有些食物恢復得少一點，例如$(thing)香蒲根$()。進食也會恢復$(thing)飽和度$()，可以理解為你有多飽。食物或水耗盡會導致行動遲緩並受到傷害。死亡不會重置你的養分或污染物。"
+            "text": "在$(tfg)中，你不只要管理飢餓，還要管理口渴。飢餓的運作和原版類似，大多數食物會恢復約五分之一的飢餓條，有些則少一點，例如$(thing)香蒲根$()。進食也會恢復$(thing)飽和度$()，可以理解為飽足程度。食物或水耗盡會導致行動遲緩並受到傷害。死亡不會重置養分或污染物。"
         },
         {
             "type": "patchouli:text",
-            "text": "有些食物非常有飽足感，能讓你更久不會餓，而有些食物的效果則很短暫。$(br2)一般遊玩就會消耗飢餓值。如果你進行衝刺、游泳或$(l:game_mechanics/size_and_weight#overburdening)負擔過重$()等行為，飢餓值會消耗得更快。將游標移到物品欄中的食物上，即可查看該食物提供的$(thing)飽和度$()、$(thing)水分$()和$(thing)養分$()資訊。按住$(item)$(k:key.sneak)$()可顯示完整的提示框。"
+            "text": "有些食物很有飽足感，能讓你更久不餓，有些效果則很短暫。$(br2)一般遊玩就會消耗飢餓值，衝刺、游泳或$(l:game_mechanics/size_and_weight#overburdening)負擔過重$()時消耗更快。將游標移到物品欄中的食物上，即可查看它提供的$(thing)飽和度$()、$(thing)水分$()和$(thing)養分$()資訊，按住 $(item)$(k:key.sneak)$() 可顯示完整提示框。"
         },
         {
             "type": "patchouli:text",
-            "text": "所有食物都有包含這些資訊的提示框。提示框中包含食物的$(l:cooking/decay#decay)腐壞日期$()，可以透過保存來延長。查看這些資訊時，要注意並非所有食物都有營養價值。例如，$(l:cooking/bread)麵團$()是食物，但它沒有營養、飽和度或水分值。吃它沒什麼好處。"
+            "text": "所有食物都有包含這些資訊的提示框，其中包括食物的$(l:cooking/decay#decay)腐壞日期$()，可透過保存延長。要注意並非所有食物都有營養價值，例如$(l:cooking/bread)麵團$()是食物，但沒有營養、飽和度或水分值，吃了沒什麼好處。"
         },
         {
             "type": "patchouli:text",
-            "text": "食物的提示框可能看起來像這樣：$(br2)$(bold)柳橙$()$(br)  $(2)$(bold)過期時間：1004 年 7 月 6 日 11:59(1 個月又 1 天後)$()$(br)  $(8)營養：$(br)  - 飽和度：2%$(br)  - 水分：10%$(br)$(a)  - 水果：0.5"
+            "text": "食物的提示框可能看起來像這樣：$(br2)$(bold)橘子$()$(br)  $(2)$(bold)過期時間：1004 年 7 月 6 日 11:59(1 個月又 1 天後)$()$(br)  $(8)營養：$(br)  - 飽和度：2%$(br)  - 水分：10%$(br)$(a)  - 水果：0.5"
         },
         {
             "type": "patchouli:text",
             "anchor": "thirst",
-            "text": "口渴是你體內的水分含量。它的消耗速度與飢餓相近。在高溫或飢餓消耗量大的情況下，口渴會消耗得更快。幸好，飲用$(thing)淡水$()可以補充水分。對水方塊按下$(item)$(k:key.use)$()即可飲用。喝鹽水會讓你更加口渴，甚至有機率給予$(thing)口渴$()效果，讓你流失更多水分。",
+            "text": "口渴值代表體內的水分，消耗速度與飢餓相近，高溫或飢餓消耗大時降得更快。飲用$(thing)淡水$()可補充水分，對水方塊按 $(item)$(k:key.use)$() 即可飲用。喝鹽水反而更渴，還可能獲得$(thing)乾渴$()效果，加速流失水分。",
             "title": "口渴"
         },
         {
@@ -66,16 +66,16 @@
             "item": {
                 "tag": "tfg:drinking_vessels"
             },
-            "text": "$(l:craftsmanship/pottery)塑形$()並燒製一個$(l:craftsmanship/pottery#jug)陶壺$()，是早期隨身攜帶水的方法。像桶子一樣按下$(item)$(k:key.use)$()即可裝水。按住$(item)$(k:key.use)$()即可喝水。$(br2)你也可以用$(item)水壺$()或$(l:craftsmanship/glassworking)玻璃瓶$()等其他$(l:cooking/drinking_containers)容器$()喝水。"
+            "text": "$(l:craftsmanship/pottery)塑形$()並燒製$(l:craftsmanship/pottery#jug)陶壺$()是早期隨身帶水的方法。像桶子一樣按 $(item)$(k:key.use)$() 即可裝水，按住 $(item)$(k:key.use)$() 即可喝水。$(br2)也可以用$(item)水壺$()或$(l:craftsmanship/glassworking)玻璃瓶$()等其他$(l:cooking/drinking_containers)容器$()喝水。"
         },
         {
             "type": "patchouli:text",
-            "text": "$(br)有些流體，例如$(thing)牛奶$()，飲用時甚至會提供$(l:cooking/food_and_water#nutrients)養分$()。$(br2)飲用流體所恢復的水分並不固定。不過，水和牛奶都會提供 10 點水分，以一個$(9)💧$()水滴表示。"
+            "text": "$(br)有些流體，例如$(thing)牛奶$()，飲用時還會提供$(l:cooking/food_and_water#nutrients)養分$()。$(br2)飲用流體恢復的水分不固定，但水和牛奶都提供 10 點水分，以一個$(9)💧$()水滴表示。"
         },
         {
             "type": "patchouli:text",
             "anchor": "nutrition_screen",
-            "text": "在$(tfg)中，營養介面會顯示大量關於你健康狀態的資訊。$(li)主圖表顯示你的$(l:cooking/food_and_water#nutrients)養分$()。$(li)側邊圖表顯示你的$(l:cooking/food_and_water#contaminants)污染物$()。$(li)一個顯示你健康數據的表格。$()$(li)以及可切換的檢視畫面，用來查看隊伍成員的營養狀態。$()$(br)將游標移到介面上的元素並$(item)按住 $(k:key.sneak)$()可查看更多資訊。$()",
+            "text": "在$(tfg)中，營養介面會顯示大量健康資訊。$(li)主圖表顯示你的$(l:cooking/food_and_water#nutrients)養分$()。$(li)側邊圖表顯示你的$(l:cooking/food_and_water#contaminants)污染物$()。$(li)表格顯示你的健康數據。$()$(li)可切換的檢視畫面，用來查看隊伍成員的營養狀態。$()$(br)游標移到介面元素上並$(item)按住 $(k:key.sneak)$()可查看更多資訊。$()",
             "title": "營養介面"
         },
         {
@@ -93,13 +93,13 @@
         {
             "type": "patchouli:text",
             "anchor": "nutrients",
-            "text": "共有五種養分，都可以從食物中取得：$(l)$(a)水果$()$()、$(l)$(2)蔬菜$()$()、$(l)$(c)蛋白質$()$()、$(l)$(6)穀物$()$()和$(l)$(5)乳製品$()$()。進食會讓你獲得食物中的養分。$(l:cooking/cooking_methods#pot)湯$()等餐點能將更多養分結合在一餐中。餐點通常會直接沿用其材料的養分。這點很重要，因為一段時間前吃的餐點不會計入你的營養。",
+            "text": "共有五種養分，都能從食物中取得：$(l)$(a)水果$()$()、$(l)$(2)蔬菜$()$()、$(l)$(c)蛋白質$()$()、$(l)$(6)穀物$()$()和$(l)$(5)乳製品$()$()。進食即可獲得食物中的養分，$(l:cooking/cooking_methods#pot)湯$()等餐點能把更多養分集中在一餐。餐點通常直接沿用材料的養分。這點很重要，因為一段時間前吃的餐點不會計入營養。",
             "title": "養分"
         },
         {
             "type": "patchouli:text",
             "anchor": "average_nutrients",
-            "text": "養分的總值決定你的最大生命值。數值最高時可以達到$(l)$(c)30 顆心$()$()，最低則是$(l)$(c)3 顆心$()$()。$(br)你的平均養分也會影響以下項目：$()$(li)$(bold)平均 >55% ↴$()$()$(italic)$(li2)被動生命恢復增加 50%。$()$()$(italic)$(li2)$(l:game_mechanics/hazards#medicine)病症$()惡化速度降低 25%。$()$()$(italic)$(li2)病症被動痊癒速度增加 50%。$()$()"
+            "text": "養分總值決定最大生命值，最高可達$(l)$(c)30 顆心$()$()，最低則是$(l)$(c)3 顆心$()$()。$(br)平均養分也會影響以下項目：$()$(li)$(bold)平均 >55% ↴$()$()$(italic)$(li2)被動生命恢復增加 50%。$()$()$(italic)$(li2)$(l:game_mechanics/hazards#medicine)病症$()惡化速度降低 25%。$()$()$(italic)$(li2)病症被動痊癒速度增加 50%。$()$()"
         },
         {
             "type": "patchouli:text",
@@ -109,7 +109,7 @@
             "title": "水果",
             "type": "patchouli:text",
             "anchor": "fruit",
-            "text": "$(l)$(a)水果$()$()養分主要來自漿果叢和果樹等$(l:the_world/wild_fruits)結果植物$()。值得注意的例外是$(l:the_world/wild_crops#pumpkin)南瓜$()和$(l:the_world/wild_crops#melon)西瓜$()，它們在營養上屬於水果。$(br2)提高水果數值會帶來以下效果：$()$(li)$(bold)平均 >55% → $()$()$(italic)口渴消耗降低 25%。$()$(li)$(bold)平均 >85% → $()$()$(italic)挖掘速度增加 30%。$()"
+            "text": "$(l)$(a)水果$()$()養分主要來自漿果叢和果樹等$(l:the_world/wild_fruits)結果植物$()。值得注意的例外是$(l:the_world/wild_crops#pumpkin)南瓜$()和$(l:the_world/wild_crops#melon)西瓜$()，它們在營養上也算水果。$(br2)提高水果數值會帶來以下效果：$()$(li)$(bold)平均 >55% → $()$()$(italic)口渴消耗降低 25%。$()$(li)$(bold)平均 >85% → $()$()$(italic)挖掘速度增加 30%。$()"
         },
         {
             "title": "蔬菜",
@@ -121,31 +121,31 @@
             "title": "蛋白質",
             "type": "patchouli:text",
             "anchor": "protein",
-            "text": "$(l)$(c)蛋白質$()$()可以從$(l:the_world/wild_animals)動物$()的肉中取得，也可以從$(thing)豆類$()等部分作物中取得。$(br2)提高蛋白質數值會帶來以下效果：$()$(li)$(bold)數值 >55% → $()$()$(italic)疲勞倍率降低 25%。$()$(li)$(bold)數值 >85% → $()$()$(italic)可以多攜帶一個巨大且沉重的物品(例如密封的木桶)而不會$(l:game_mechanics/size_and_weight#overburdening)負擔過重$()。$()"
+            "text": "$(l)$(c)蛋白質$()$()可從$(l:the_world/wild_animals)動物$()的肉取得，也可從$(thing)豆類$()等部分作物取得。$(br2)提高蛋白質數值會帶來以下效果：$()$(li)$(bold)數值 >55% → $()$()$(italic)疲勞倍率降低 25%。$()$(li)$(bold)數值 >85% → $()$()$(italic)可以多攜帶一個巨大且沉重的物品(例如密封的大桶)而不會$(l:game_mechanics/size_and_weight#overburdening)負擔過重$()。$()"
         },
         {
             "title": "穀物",
             "type": "patchouli:text",
             "anchor": "grain",
-            "text": "$(l)$(6)穀物$()$()存在於$(l:the_world/wild_crops#barley)大麥$()等穀類作物中。穀物的加工方式在$(l:cooking/bread)麵包$()頁面中說明。有些根莖類作物也算作穀物。$(br2)提高穀物數值會帶來以下效果：$()$(li)$(bold)數值 >55% → $()$()$(italic)給予 5% 的速度增益。$()$(li)$(bold)數值 >85% → $()$()$(italic)給予 15% 的速度增益。$()"
+            "text": "$(l)$(6)穀物$()$()來自$(l:the_world/wild_crops#barley)大麥$()等穀類作物，加工方式見$(l:cooking/bread)麵包$()頁面。有些根莖類作物也算穀物。$(br2)提高穀物數值會帶來以下效果：$()$(li)$(bold)數值 >55% → $()$()$(italic)給予 5% 的速度增益。$()$(li)$(bold)數值 >85% → $()$()$(italic)給予 15% 的速度增益。$()"
         },
         {
             "title": "乳製品",
             "type": "patchouli:text",
             "anchor": "dairy",
-            "text": "$(l)$(5)乳製品$()$()來自$(thing)牛奶$()，而牛奶取自$(l:agriculture/animal_husbandry#dairy_animals)產乳動物$()。牛奶的加工與飲用在$(l:cooking/cheese)乳製品$()頁面中說明。$(br2)提高乳製品數值會帶來以下效果：$()$(li)$(bold)數值 >55% → $()$()$(italic)給予$(thing)輕盈 I$()效果。$()$(li)$(bold)數值 >85% → $()$()$(italic)給予$(thing)輕盈 $(9)IV$()效果。$()"
+            "text": "$(l)$(5)乳製品$()$()來自$(l:agriculture/animal_husbandry#dairy_animals)產乳動物$()的$(thing)牛奶$()，牛奶的加工與飲用見$(l:cooking/cheese)乳製品$()頁面。$(br2)提高乳製品數值會帶來以下效果：$()$(li)$(bold)數值 >55% → $()$()$(italic)給予$(thing)輕盈 I$()效果。$()$(li)$(bold)數值 >85% → $()$()$(italic)給予$(thing)輕盈 IV$()效果。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "contaminants",
-            "text": "除了養分之外，$(tfg)還新增了污染物。共有三種污染物，都可能從食物中攝取：$(l)$(d)毒素$()$()、$(l)$(4)寄生蟲$()$()和$(l)$(3)微塑膠$()$()。污染物會傳入餐點中，並在玩家體內累積。",
+            "text": "除了養分，$(tfg)還新增了污染物，共三種，都可能從食物中攝取：$(l)$(d)毒素$()$()、$(l)$(4)寄生蟲$()$()和$(l)$(3)微塑膠$()$()。污染物會傳入餐點，並在玩家體內累積。",
             "title": "污染物"
         },
         {
             "title": "毒素",
             "type": "patchouli:text",
             "anchor": "toxins",
-            "text": "$(l)$(d)毒素$()來自特定的危險作物和肉類。毒素會以每天 3% 的速度自然減少。服用$(item)排毒膠囊$()可以主動$(l:game_mechanics/mob_effects#cure_toxins)清除毒素$()。$(br2)毒素數值增加會帶來以下效果：$()$(li)$(bold)數值 >0% → $()$()$(italic)每次毒素增加時：有 25% 的機率獲得隨機的危險效果 10 秒。$()$(li)$(bold)數值 >99% → $()$()$(italic)$(l:game_mechanics/mob_effects#final_moments)死亡。$()"
+            "text": "$(l)$(d)毒素$()來自特定的危險作物和肉類，每天會自然減少 3%。服用$(item)排毒膠囊$()可以主動$(l:game_mechanics/mob_effects#cure_toxins)清除毒素$()。$(br2)毒素數值增加會帶來以下效果：$()$(li)$(bold)數值 >0% → $()$()$(italic)每次毒素增加時：有 25% 的機率獲得隨機的危險效果 10 秒。$()$(li)$(bold)數值 >99% → $()$()$(italic)$(l:game_mechanics/mob_effects#final_moments)死亡。$()"
         },
         {
             "title": "寄生蟲",
@@ -157,7 +157,7 @@
             "title": "微塑膠",
             "type": "patchouli:text",
             "anchor": "microplastics",
-            "text": "$(l)$(3)微塑膠$()來自食用以塑膠包裝的食物。微塑膠會以每天 1% 的速度自然減少。服用$(item)奈米過濾膠囊$()可以主動$(l:game_mechanics/mob_effects#cure_microplastics)清除微塑膠$()。$(br)微塑膠數值增加會帶來以下效果：$(br2)$(o)(下頁續……)$()"
+            "text": "$(l)$(3)微塑膠$()來自食用塑膠包裝的食物，每天會自然減少 1%。服用$(item)奈米過濾膠囊$()可以主動$(l:game_mechanics/mob_effects#cure_microplastics)清除微塑膠$()。$(br)微塑膠數值增加會帶來以下效果：$(br2)$(o)(下頁續……)$()"
         },
         {
             "type": "patchouli:text",
@@ -166,7 +166,7 @@
         {
             "type": "patchouli:text",
             "anchor": "transient_effects",
-            "text": "$(tfg)也新增了$(item)短暫效果$()。短暫效果的目的是將材料的增益/減益效果轉移到餐點中。短暫效果可以組合並食用，但它們不會在玩家體內累積――會在食用時立即生效。$(br)效果的強度取決於該養分的數值，不過每種效果決定強度的方式不盡相同。$()",
+            "text": "$(tfg)也新增了$(item)短暫效果$()，用來將材料的增益/減益轉移到餐點中。短暫效果可以組合並食用，但不會在玩家體內累積――食用時立即生效。$(br)效果強度取決於養分數值，但每種效果的計算方式不盡相同。$()",
             "title": "短暫效果"
         },
         {

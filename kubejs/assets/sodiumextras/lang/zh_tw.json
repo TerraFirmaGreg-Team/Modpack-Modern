@@ -113,7 +113,7 @@
   "sodium.extras.options.zoom.easing.title": "平滑動畫指數",
   "sodium.extras.options.zoom.max.desc": "最大縮放視野",
   "sodium.extras.options.zoom.max.title": "最大視野",
-  "sodium.extras.options.zoom.min.desc": "最小縮放視野",
+  "sodium.extras.options.zoom.min.desc": "最大縮放視野",
   "sodium.extras.options.zoom.min.title": "最小視野",
   "sodium.extras.options.zoom.page": "縮放",
   "sodium.extras.options.zoom.quadratics.desc": "啟用後縮放百分比會先平方再套用。\n使視野變化更均勻。不清楚作用的話建議保持啟用。",

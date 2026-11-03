@@ -13,28 +13,28 @@
             "type": "patchouli:text",
             "anchor": "intro",
             "title": "簡介",
-            "text": "建造道路對提高陸路運輸效率至關重要，包含三個基本步驟：$(li)$(bold)1：$()用$(l:logistics/roads#mattock)鶴嘴鋤$()夯實原生土壤。$(li)$(bold)2：$()鋪設$(l:logistics/roads#base_course)碎石基層$()。$(li)$(bold)3：$()鋪設表面的$(l:logistics/roads#pavers)鋪面材料$()。$(br)不同種類的道路使用不同的材料。"
+            "text": "建造道路能大幅提升陸路運輸效率，分為三個基本步驟：$(li)$(bold)1：$()用$(l:logistics/roads#mattock)鶴嘴鋤$()夯實原生土壤。$(li)$(bold)2：$()鋪設$(l:logistics/roads#base_course)碎石基層$()。$(li)$(bold)3：$()鋪設表面的$(l:logistics/roads#pavers)鋪面材料$()。$(br)不同種類的道路使用不同材料。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tag:rnr:mattocks",
             "title": "鶴嘴鋤",
             "anchor": "mattock",
-            "text": "鶴嘴鋤可以像$(l:craftsmanship/chisel)鑿子$()一樣用在泥土類方塊上。在預設的方塊模式下，按下$(item)$(k:key.use)$()即可用鶴嘴鋤夯實這些方塊。如果用鶴嘴鋤夯實的是泥巴或泥濘根土，產生的夯實泥巴必須鋪上碎石基層來改良。"
+            "text": "鶴嘴鋤可像$(l:craftsmanship/chisel)鑿子$()一樣用在泥土類方塊上。在預設的方塊模式下，按$(item)$(k:key.use)$()即可夯實這些方塊。若夯實的是泥巴或泥濘根土，產生的夯實泥巴必須鋪上碎石基層來改良。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "rnr:crushed_base_course",
             "title": "基層",
             "anchor": "base_course",
-            "text": "夯實當地土壤後，下一步是為道路鋪設基層。碎石基層可以用礫石或石粉混合碎石合成，按下$(item)$(k:key.use)$()即可鋪在夯實的方塊上。這層碎石基層能為最終的行走表面提供堅固的基礎。"
+            "text": "夯實土壤後，下一步是鋪設道路基層。碎石基層可用礫石或石粉混合碎石合成，按$(item)$(k:key.use)$()即可鋪在夯實的方塊上，為最終路面提供堅固的基礎。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tag:rnr:road_materials",
             "title": "鋪面材料",
             "anchor": "pavers",
-            "text": "建造道路的最後一步是鋪設路面。各種物品，包括$(l:logistics/roads#stone)磚塊$()、$(l:logistics/roads#hoggin)混合碎石$()和$(l:logistics/roads#stone)碎石$()，都可以按下$(item)$(k:key.use)$()鋪在基層上，形成可行走的道路。不同的物品會形成不同種類的道路，不同種類的道路會提供不同程度的行走速度加成。"
+            "text": "建造道路的最後一步是鋪設路面。$(l:logistics/roads#stone)磚塊$()、$(l:logistics/roads#hoggin)混合碎石$()、$(l:logistics/roads#stone)碎石$()等物品都可按$(item)$(k:key.use)$()鋪在基層上形成道路。不同物品會形成不同種類的道路，提供不同程度的行走速度加成。"
         },
         {
             "type": "tfg:multimultiblock",
@@ -99,11 +99,11 @@
             "anchor": "hoggin",
             "item": "rnr:hoggin_mix",
             "title": "混合碎石",
-            "text": "$(item)混合碎石$()是由黏土、礫石和沙子混合而成的可壓實地面材料。將它鋪在基層上可以做出簡單的小路，提供小幅的$(thing)$(bold)10% 加成$()行走速度，並讓$(item)畜力把手$()以 16RPM 運轉。"
+            "text": "$(item)混合碎石$()是由黏土、礫石和沙子混合而成的可壓實地面材料。鋪在基層上可做出簡易小路，行走速度獲得小幅$(thing)$(bold)10% 加成$()，並讓$(item)畜力把手$()以 16RPM 運轉。"
         },
         {
             "type": "patchouli:multiblock",
-            "text": "以混合砂礫建造道路。",
+            "text": "以混合碎石建造道路。",
             "enable_visualize": false,
             "multiblock": {
                 "pattern": [
@@ -132,7 +132,7 @@
             "anchor": "gravel_fill",
             "item": "tag:rnr:gravel_road_items",
             "title": "礫石與碎石路",
-            "text": "在基層上鋪少量$(thing)礫石填料$()，可以做出簡單的小路，提供小幅的$(thing)$(bold)10% 加成$()行走速度。再加入更多礫石填料並夯實，即可做出提供$(thing)$(bold)20% 速度加成$()的$(thing)碎石路$()。$(br)所有比混合砂礫更高級的鋪面材料都能讓$(item)畜力把手$()以 32RPM 運轉。"
+            "text": "在基層上鋪少量$(thing)礫石填料$()可做出簡易小路，行走速度獲得小幅$(thing)$(bold)10% 加成$()。再加入更多礫石填料並夯實，即可做出提供$(thing)$(bold)20% 速度加成$()的$(thing)碎石路$()。$(br)比混合碎石更高級的鋪面材料都能讓$(item)畜力把手$()以 32RPM 運轉。"
         },
         {
             "type": "patchouli:multiblock",
@@ -167,7 +167,7 @@
             "anchor": "stone",
             "item": "tag:rnr:flagstone_road_items,tag:rnr:cobble_road_items,tag:rnr:brick_road_items",
             "title": "石材鋪面",
-            "text": "基層上可以鋪設各種不同的石材行走表面，全部都提供$(thing)$(bold)20% 速度加成$()。$(li)在基層上加入$(item)碎石$()即可建造$(thing)$(bold)鵝卵石路$()。$(li)$(thing)$(bold)方石路$()可以用石製或陶瓷$(item)磚塊$()建造。$(li)$(thing)$(bold)石板路$()可以用石頭或砂岩$(item)石板$()建造。"
+            "text": "基層上可鋪設各種石材路面，全都提供$(thing)$(bold)20% 速度加成$()。$(li)在基層上加入$(item)碎石$()即成$(thing)$(bold)鵝卵石路$()。$(li)$(thing)$(bold)方石路$()可用石製或陶瓷$(item)磚塊$()建造。$(li)$(thing)$(bold)石板路$()可用石頭或砂岩$(item)石板$()建造。"
         },
         {
             "type": "tfg:multimultiblock",
@@ -244,7 +244,7 @@
             "item": "tag:rnr:concrete_roads",
             "anchor": "concrete",
             "title": "混凝土",
-            "text": "正確建造的混凝土道路可以提供$(thing)$(bold)30% 移動速度加成$()。不過，建造混凝土道路時必須格外小心，防止道路在潮濕時$(4)龜裂$()或被$(4)踩踏$()，因為這會讓速度加成消失。"
+            "text": "正確建造的混凝土道路提供$(thing)$(bold)30% 移動速度加成$()。不過建造時必須格外小心，別讓道路$(4)龜裂$()或在潮濕時被$(4)踩踏$()，否則速度加成會消失。"
         },
         {
             "type": "patchouli:image",
@@ -258,12 +258,12 @@
             "type": "patchouli:spotlight",
             "anchor": "wet_concrete",
             "title": "攪拌混凝土",
-            "text": "$(thing)混凝土道路$()是用$(item)濕混凝土混合料$()澆注而成的。首先，將水、石粉和石膏或黏土等黏合劑混合，製成$(thing)液態混凝土$()。接著用水稀釋液態混凝土，製成$(thing)濕混凝土混合料$()。這樣就可以澆注了。",
+            "text": "$(thing)混凝土道路$()是用$(item)濕混凝土混合料$()澆注而成。先將水、石粉和石膏或黏土等黏合劑混合，製成$(thing)液態混凝土$()，再用水稀釋，製成$(thing)濕混凝土混合料$()，即可澆注。",
             "item": "rnr:bucket/concrete"
         },
         {
             "type": "patchouli:text",
-            "text": "取得已混合的$(thing)濕混凝土$()就可以用桶舀取並倒在$(thing)基層方塊$()上，它會自動向相鄰方塊蔓延。混凝土需要一天時間硬化，此期間要防止生物踩踏尚未凝固的混凝土，否則會形成不平整的表面導致速度加成失效。$(thing)鶴嘴鋤$()可以抹平腳印。"
+            "text": "$(thing)濕混凝土$()混合好後，可用桶舀起倒在$(thing)基層方塊$()上，它會向相鄰方塊蔓延。混凝土一天後硬化，在此之前要防止生物踩過，否則表面會不平整，失去速度加成。腳印可用$(thing)鶴嘴鋤$()抹平。"
         },
         {
             "type": "patchouli:image",
@@ -275,11 +275,11 @@
         },
         {
             "type": "patchouli:text",
-            "text": "混凝土凝固時，收縮龜裂也是一個問題。如果混凝土澆注的區域寬度超過$(bold)4x4$()格，距離最近的$(thing)邊緣$()、$(thing)伸縮縫$()或$(thing)紋理飾面$()超過兩格的方塊就會在凝固時龜裂。可以將混凝土澆注在較小的區域、用$(thing)鶴嘴鋤$()加入$(thing)伸縮縫$()，或套用$(thing)紋理飾面$()來防止龜裂。"
+            "text": "混凝土凝固時也要注意收縮龜裂。若澆注區域超過$(bold)4x4$()格，距離最近的$(thing)邊緣$()、$(thing)伸縮縫$()或$(thing)紋理飾面$()超過兩格的方塊，凝固時就會龜裂。可縮小澆注範圍、用$(thing)鶴嘴鋤$()加入$(thing)伸縮縫$()，或套用$(thing)紋理飾面$()來避免。"
         },
         {
             "type": "patchouli:image",
-            "title": "控制縫",
+            "title": "伸縮縫",
             "images": [
                 "rnr:textures/gui/book/control_joints.png"
             ],
@@ -373,7 +373,7 @@
             "type": "patchouli:text",
             "anchor": "asphalt",
             "title": "瀝青",
-            "text": "瀝青路是一種進階道路類型，仰賴石油和$(tfg_short)的生產線。$(br)準備好基層後，可以在上面澆注$(thing)瀝青混合物$()。它會短暫變成$(thing)高溫瀝青$()，然後凝固成耐用的$(item)瀝青路$()。$(br)正確建造的瀝青路可以提供$(thing)$(bold)40% 移動速度加成$()。"
+            "text": "瀝青路是仰賴石油與$(tfg_short)生產線的進階道路。$(br)準備好基層後，在上面澆注$(thing)瀝青混合物$()，它會短暫變成$(thing)高溫瀝青$()，再凝固成耐用的$(item)瀝青路$()。$(br)正確建造的瀝青路提供$(thing)$(bold)40% 移動速度加成$()。"
         },
         {
             "type": "patchouli:image",
@@ -385,21 +385,21 @@
         },
         {
             "type": "patchouli:text",
-            "text": "與混凝土道路不同，瀝青不需要伸縮縫，不會因潮濕材料而龜裂，也不會因為在未固化的路面上行走而受損。$(br2)處理$(thing)高溫瀝青$()時要小心――碰到它會被燙傷。最好穿戴隔熱裝備。此外，破壞瀝青會得到$(thing)瀝青碎塊$()，而不是完整的道路方塊。"
+            "text": "與混凝土道路不同，瀝青不需要伸縮縫，不會因潮濕而龜裂，也不會因踩踏未固化的路面而受損。$(br2)處理$(thing)高溫瀝青$()時要小心，碰到會被燙傷，最好穿戴隔熱裝備。此外，破壞瀝青會得到$(thing)瀝青碎塊$()，而非完整的道路方塊。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "tar_chunk",
             "item": "tfg:tar_chunk",
             "title": "焦油塊",
-            "text": "瀝青路的原料是石油。在$(thing)流體固化機$()中固化$(thing)石油$()、$(thing)原油$()、$(thing)重油$()等，即可取得對應的$(thing)焦油$()方塊，再於$(thing)提取機$()中加工即可得到$(thing)焦油塊$()。"
+            "text": "瀝青路的原料是石油。在$(thing)流體固化機$()中固化$(thing)石油$()、$(thing)原油$()、$(thing)重油$()等，可得到對應的$(thing)焦油$()方塊，再用$(thing)提取機$()加工成$(thing)焦油塊$()。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "asphalt_mix",
             "item": "tfg:asphalt_mix_bucket",
             "title": "瀝青混合物",
-            "text": "在$(thing)攪拌機$()中將焦油塊和$(thing)石粉$()混合，製成$(thing)瀝青黏合劑$()。加入$(thing)硬瀝青粉$()可以提高黏合劑的產量。$(br)接著將黏合劑與沙子、石粉和$(thing)碎石基層$()混合，製成流體的$(thing)瀝青混合物$()。$(br)將它存放在流體容器中，方便運送和澆注。"
+            "text": "在$(thing)攪拌機$()中混合焦油塊和$(thing)石粉$()，製成$(thing)瀝青黏合劑$()；加入$(thing)硬瀝青粉$()可提高產量。$(br)再將黏合劑與沙子、石粉和$(thing)碎石基層$()混合，製成流體$(thing)瀝青混合物$()。$(br)存放在流體容器中，方便運送和澆注。"
         },
         {
             "type": "patchouli:image",
@@ -411,13 +411,13 @@
         },
         {
             "type": "patchouli:text",
-            "text": "手持一桶$(thing)瀝青混合物$()對已放置的$(thing)基層方塊$()按下$(item)$(k:key.use)$()即可澆注。混合料會擴散到相鄰的基層方塊，最多可將 20 個相鄰的基層方塊轉化為$(thing)高溫瀝青$()。不久後，高溫瀝青會冷卻成$(thing)瀝青路$()。手持混合料對$(thing)基層方塊$()按下$(item)$(k:key.sneak)-$(k:key.use)$()可以修補小範圍區域，消耗較少流體。"
+            "text": "手持一桶$(thing)瀝青混合物$()對已放置的$(thing)基層方塊$()按$(item)$(k:key.use)$()即可澆注。混合物會擴散到相鄰的基層方塊，最多將 20 個轉為$(thing)高溫瀝青$()，不久後冷卻成$(thing)瀝青路$()。手持混合物對$(thing)基層方塊$()按$(item)$(k:key.sneak)-$(k:key.use)$()可修補小範圍，消耗較少流體。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tfg:asphalt_road_hot",
             "title": "高溫瀝青",
-            "text": "$(thing)高溫瀝青$()非常燙；碰到它會持續受到燙傷傷害。處理它時請穿戴隔熱裝備。$(br2)冷卻成$(thing)瀝青路$()後，表面就不再燙了。"
+            "text": "$(thing)高溫瀝青$()非常燙，碰到會持續受到燙傷傷害，處理時請穿戴隔熱裝備。$(br2)冷卻成$(thing)瀝青路$()後就不再燙了。"
         },
         {
             "type": "patchouli:spotlight",
@@ -436,7 +436,7 @@
         {
             "type": "patchouli:spotlight",
             "item": "gtceu:white_dye_spray_can,gtceu:yellow_dye_spray_can",
-            "text": "一手拿著$(thing)噴漆罐$()，另一手可選擇拿著$(thing)道路標線模板$()，然後對瀝青路按下$(item)$(k:key.use)$()即可噴漆。顏色由噴漆罐決定，方向則由玩家面對的方向決定。$(br)在現有標線上再次噴漆會取代原本的標線並消耗噴漆罐的耐久度，除非使用完全相同的配置。"
+            "text": "一手拿$(thing)噴漆罐$()，另一手可拿$(thing)道路標線模板$()(非必要)，再對瀝青路按$(item)$(k:key.use)$()即可噴漆。顏色由噴漆罐決定，方向由玩家面向決定。$(br)在現有標線上再次噴漆會取代原標線並消耗噴漆罐耐久度，除非配置完全相同。"
         },
         {
             "type": "patchouli:image",
@@ -449,20 +449,20 @@
             "type": "patchouli:spotlight",
             "item": "gtceu:solvent_spray_can",
             "title": "移除標線",
-            "text": "要重新設計道路，可以對瀝青路或半磚使用$(thing)噴漆罐(溶劑)$()，清除該位置的標線。"
+            "text": "要重新設計道路，可對瀝青路或半磚使用$(thing)噴漆罐(溶劑)$()，清除該處標線。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tfg:asphalt_rubble",
             "title": "破壞與回收",
-            "text": "破壞瀝青路、高溫瀝青、半磚或階梯時，會掉落$(thing)瀝青碎塊$()而不是完整的方塊。在$(thing)提取機$()中加工碎塊可以回收少量瀝青混合物。"
+            "text": "破壞瀝青路、高溫瀝青、半磚或階梯會掉落$(thing)瀝青碎塊$()，而非完整方塊。碎塊放進$(thing)提取機$()加工可回收少量瀝青混合物。"
         },
         {
             "type": "patchouli:spotlight",
             "title": "鋪路車",
             "anchor": "paving_cart",
             "item": "tfg:rnr_plow",
-            "text": "$(thing)鋪路車$()是一種專門用來快速有效率地鋪設路面的車。它可以裝入$(6)$(t:#rnr:road_materials)道路材料$()和$(thing)碎石基層$()，再按下$(item)$(k:key.astikorcarts.desc)$()將它套到$(l:agriculture/animal_husbandry#equines)馬$()身上，就能邊走邊鋪路。鋪路車也可以填補任何現有的基層方塊。"
+            "text": "$(thing)鋪路車$()是專門用來快速鋪設路面的車。可裝入$(6)$(t:#rnr:road_materials)道路材料$()和$(thing)碎石基層$()，再按$(item)$(k:key.astikorcarts.desc)$()套到$(l:agriculture/animal_husbandry#equines)馬$()身上，就能邊走邊鋪路，也能填補現有的基層方塊。"
         },
         {
             "type": "patchouli:entity",

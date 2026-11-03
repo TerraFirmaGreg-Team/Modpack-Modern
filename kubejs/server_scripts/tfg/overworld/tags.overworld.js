@@ -702,14 +702,19 @@ function registerTFGOverworldEntityTypeTags(event) {
 	event.add('tfg:slimes', 'minecraft:magma_cube')
 	event.add('tfg:slimes', '#jellies:jellie')
 
-	// Takes no damage from the new 1.21 cacti
-	event.add('tfg:ignores_cacti', 'waves:waves')
+	// Takes no damage from cacti
 	event.add('tfg:ignores_cacti', 'tfg:jerboa')
 	event.add('tfg:ignores_cacti', 'tfc:horse')
 	event.add('tfg:ignores_cacti', 'tfc:donkey')
 	event.add('tfg:ignores_cacti', 'tfc:mule')
 	event.add('tfg:ignores_cacti', 'tfg:dromedary_camel')
 	event.add('tfg:ignores_cacti', 'tfg:bactrian_camel')
+	event.add('tfg:ignores_cacti', 'tfg:rnr_plow')
+	global.TFC_WOOD_TYPES.forEach(wood => {
+		event.add('tfg:ignores_cacti', `tfcastikorcarts:animal_cart/${wood}`)
+		event.add('tfg:ignores_cacti', `tfcastikorcarts:supply_cart/${wood}`)
+		event.add('tfg:ignores_cacti', `tfcastikorcarts:plow/${wood}`)
+	})
 
 	event.add('tfc:amphibious_creatures', 'tfg:leopard_seal')
 	event.add('tfc:spawns_on_cold_blocks', 'tfg:leopard_seal')

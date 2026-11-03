@@ -1,7 +1,6 @@
 {
 	"accessories.slot.calendarslot": "カレンダー",
 	"curios.identifier.calendarslot": "カレンダー",
-	"desc.seasonhud.keybind.category": "SeasonHud",
 	"desc.seasonhud.keybind.options": "SeasonHudオプション",
 	"desc.seasonhud.location.bottomLeft": "左下",
 	"desc.seasonhud.location.bottomRight": "右下",
@@ -36,7 +35,6 @@
 	"menu.seasonhud.color.season.spring.editbox": "春",
 	"menu.seasonhud.color.season.summer.editbox": "夏",
 	"menu.seasonhud.color.season.winter.editbox": "冬",
-	"menu.seasonhud.main.journeymap.title": "JourneyMap",
 	"menu.seasonhud.season.calendarDetail.button": "カレンダーの詳細モード",
 	"menu.seasonhud.season.calendarDetail.tooltip": "カレンダーアイテムを持つとHUDの詳細なバージョンが表示されます",
 	"menu.seasonhud.season.fertilityReplacesSeason.button": "肥沃度で季節名を置き換える",

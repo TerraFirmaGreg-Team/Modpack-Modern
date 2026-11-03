@@ -318,7 +318,7 @@
             "entity": "tfc:direwolf",
             "anchor": "direwolf",
             "scale": 0.7,
-            "text": "The direwolf spawns at any $(l:the_world/climate#temperature)temperature$() below freezing, and $(l:the_world/climate#rainfall)rainfall$() between 150 and 420mm. They hunt in packs. They are larger than regular wolves, and are not tamable."
+            "text": "Wilk straszny pojawia się przy dowolnej $(l:the_world/climate#temperature)temperaturze$() powyżej 0°C oraz $(l:the_world/climate#rainfall)opadach$() między 150 a 420 mm. Wilki straszne są większe od normalnych wilków, polują w grupach i nie da się ich oswoić."
         },
         {
             "type": "patchouli:entity",
@@ -510,7 +510,7 @@
             "scale": 0.7,
             "name": "Żółw morski",
             "anchor": "turtle",
-            "text": "The sea turtle likes warm water. It spawns in $(l:the_world/climate#temperature)temperature$() of at least 21°C and $(l:the_world/climate#rainfall)rainfall$() of at least 250mm."
+            "text": "Żółwie morskie lubią ciepłą wodę. Pojawiają się przy $(l:the_world/climate#temperature)temperaturze$() co najmniej 21°C oraz $(l:the_world/climate#rainfall)opadach$() co najmniej 250 mm."
         },
         {
             "type": "patchouli:text",
@@ -594,7 +594,7 @@
             "scale": 0.7,
             "name": "Rak",
             "anchor": "crayfish",
-            "text": "Crayfish are like lobster, but spawn in rivers and lakes. They need a $(l:the_world/climate#temperature)temperature$() of at least 5°C and a $(l:the_world/climate#rainfall)rainfall$() of at least 125mm."
+            "text": "Raki są jak homary, ale pojawiają się w rzekach i jeziorach. Potrzebują $(l:the_world/climate#temperature)temperatury$() co najmniej 5°C oraz $(l:the_world/climate#rainfall)opadów$() co najmniej 125 mm."
         },
         {
             "type": "patchouli:entity",

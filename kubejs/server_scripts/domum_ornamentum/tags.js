@@ -102,6 +102,7 @@ function registerDomumOrnamentumBlockTags(event) {
         //gtceu blocks
         "gtceu:coke_oven_bricks",
         "gtceu:firebricks",
+        "gtceu:light_concrete",
         "gtceu:mossy_light_concrete_cobblestone",
         "gtceu:polished_light_concrete",
         "gtceu:light_concrete_bricks",
@@ -114,6 +115,7 @@ function registerDomumOrnamentumBlockTags(event) {
         "gtceu:light_concrete_windmill_b",
         "gtceu:small_light_concrete_bricks",
         "gtceu:square_light_concrete_bricks",
+        "gtceu:dark_concrete",
         "gtceu:mossy_dark_concrete_cobblestone",
         "gtceu:polished_dark_concrete",
         "gtceu:dark_concrete_bricks",

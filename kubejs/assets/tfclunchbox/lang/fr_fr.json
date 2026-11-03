@@ -1,7 +1,6 @@
 {
   "container.tfclunchbox.cooling_lunchbox": "Frigo-box",
   "container.tfclunchbox.electric_lunchbox": "Boîte à tartine électrique",
-  "container.tfclunchbox.lunchbox": "Lunch Box",
   "gui.tfclunchbox.cooling_lunchbox": "Frigo-box",
   "gui.tfclunchbox.electric_lunchbox": "Boîte à tartine électrique",
   "item.tfclunchbox.cooling_lunchbox": "Frigo-box",
@@ -12,7 +11,6 @@
   "tooltip.tfclunchbox.contents": "Contenu :",
   "tooltip.tfclunchbox.cooling_active": "Refroidissement : Actif",
   "tooltip.tfclunchbox.cooling_inactive": "Refroidissement : Inactif",
-  "tooltip.tfclunchbox.cooling_lunchbox.ice_absent": "Absent",
   "tooltip.tfclunchbox.cooling_lunchbox.ice_present": "Présent",
   "tooltip.tfclunchbox.empty": "Vide",
   "tooltip.tfclunchbox.food_trait.lunchbox_cooled": "Réfrigéré",

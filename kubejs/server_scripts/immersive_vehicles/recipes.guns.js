@@ -270,6 +270,34 @@ function registerImmersiveVehiclesGunsRecipes(event) {
 		.EUt(GTValues.VA[GTValues.MV])
 		.circuit(13)
 		.duration(300)
+		
+	event.recipes.gtceu.assembler('mts:mtsofficialpack.plane_mg')
+		.itemInputs('2x gtceu:steel_small_fluid_pipe', '2x #forge:ingots/black_steel', '4x #forge:plates/steel',
+					'2x #forge:rings/rubber', '#forge:springs/steel', '2x #forge:rods/long/steel', 
+					'create:precision_mechanism')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+		.itemOutputs('mts:mtsofficialpack.gunm1919')
+		.circuit(11)
+		.EUt(GTValues.VA[GTValues.LV])
+		.duration(240)
+		
+	event.recipes.gtceu.assembler('mts:mtsofficialpack.plane_mg_ob')
+		.itemInputs('2x gtceu:steel_small_fluid_pipe', '2x #forge:ingots/black_steel', '4x #forge:plates/steel',
+					'2x #forge:rings/rubber', '#forge:springs/steel', '2x #forge:rods/long/steel', 
+					'create:precision_mechanism')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+		.itemOutputs('mts:mtsofficialpack.gunobserver')
+		.circuit(12)
+		.EUt(GTValues.VA[GTValues.LV])
+		.duration(240)
+		
+	event.shapeless('mts:mtsofficialpack.gunobserver', [
+		'mts:mtsofficialpack.gunm1919'
+	]).id('mts:mtsofficialpack.plane_mg_convert')
+	
+	event.shapeless('mts:mtsofficialpack.gunm1919', [
+		'mts:mtsofficialpack.gunobserver'
+	]).id('mts:mtsofficialpack.plane_mg_ob_convert')
 	
 	// Ammo related
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.762_ammo')

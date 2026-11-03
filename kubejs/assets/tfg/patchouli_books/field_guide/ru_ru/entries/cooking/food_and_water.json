@@ -1,5 +1,5 @@
 {
-    "name": "Nutrition & Thirst",
+    "name": "Питание & и Питьё",
     "category": "tfg:cooking",
     "icon": "tfc:textures/item/food/orange.png",
     "pages": [
@@ -7,25 +7,25 @@
             "type": "patchouli:text",
             "title": "Каталог",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:cooking/food_and_water#basics)Basics$()$(li)$(bold)$(l:cooking/food_and_water#thirst)Thirst$()$(li)$(bold)$(l:cooking/food_and_water#nutrition_screen)The Nutrition Screen$()$(li)$(bold)$(l:cooking/food_and_water#nutrients)Nutrients$()$(li2)$(l:cooking/food_and_water#fruit)Fruit$()$(li2)$(l:cooking/food_and_water#vegetables)Vegetables$()$(li2)$(l:cooking/food_and_water#protein)Protein$()$(li2)$(l:cooking/food_and_water#grain)Grain$()$(li2)$(l:cooking/food_and_water#dairy)Dairy$()$(li)$(bold)$(l:cooking/food_and_water#contaminants)Contaminants$()$(li2)$(l:cooking/food_and_water#toxins)Toxins$()$(li2)$(l:cooking/food_and_water#parasites)Parasites$()$(li2)$(l:cooking/food_and_water#microplastics)Microplastics$()"
+            "text": "$(li)$(bold)$(l:cooking/food_and_water#basics)Основы$()\n$(li)$(bold)$(l:cooking/food_and_water#thirst)Жажда$()\n$(li)$(bold)$(l:cooking/food_and_water#nutrition_screen)Экран питания$()\n$(li)$(bold)$(l:cooking/food_and_water#nutrients)Питательные вещества$()\n$(li2)$(l:cooking/food_and_water#fruit)Фрукты$()\n$(li2)$(l:cooking/food_and_water#vegetables)Овощи$()\n$(li2)$(l:cooking/food_and_water#protein)Белки$()\n$(li2)$(l:cooking/food_and_water#grain)Зерновые$()\n$(li2)$(l:cooking/food_and_water#dairy)Молочные продукты$()\n$(li)$(bold)$(l:cooking/food_and_water#contaminants)Загрязняющие вещества$()\n$(li2)$(l:cooking/food_and_water#toxins)Токсины$()\n$(li2)$(l:cooking/food_and_water#parasites)Паразиты$()\n$(li2)$(l:cooking/food_and_water#microplastics)Микропластик$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:cooking/food_and_water#transient_effects)Transient Effects$()$(li2)$(l:cooking/food_and_water#cooling_transient_effect)Cooling$()$(li2)$(l:cooking/food_and_water#warming_transient_effect)Warming$()$(li2)$(l:cooking/food_and_water#quenching_transient_effect)Quenching$()$(li2)$(l:cooking/food_and_water#bolstering_transient_effect)Bolstering$()$(li2)$(l:cooking/food_and_water#hearty_transient_effect)Hearty$()$(li2)$(l:cooking/food_and_water#rejuvenating_transient_effect)Rejuvenating$()$(li2)$(l:cooking/food_and_water#freezing_transient_effect)Freezing$()$(li2)$(l:cooking/food_and_water#blazing_transient_effect)Blazing$()$(li2)$(l:cooking/food_and_water#radiating_transient_effect)Radiating$()$(li2)$(l:cooking/food_and_water#nauseating_transient_effect)Nauseating$()$(li2)$(l:cooking/food_and_water#parching_transient_effect)Parching$()$(li2)$(l:cooking/food_and_water#deadly_transient_effect)Deadly$()$(li2)$(l:cooking/food_and_water#fulfilling_transient_effect)Fulfilling$()$(li2)$(l:cooking/food_and_water#sugary_transient_effect)Sugary$()$(li2)$(l:cooking/food_and_water#spicy_transient_effect)Spicy$()"
+            "text": "$(li)$(bold)$(l:cooking/food_and_water#transient_effects)Временные эффекты$()\n$(li2)$(l:cooking/food_and_water#cooling_transient_effect)Охлаждение$()\n$(li2)$(l:cooking/food_and_water#warming_transient_effect)Согревание$()\n$(li2)$(l:cooking/food_and_water#quenching_transient_effect)Утоление жажды$()\n$(li2)$(l:cooking/food_and_water#bolstering_transient_effect)Укрепление$()\n$(li2)$(l:cooking/food_and_water#hearty_transient_effect)Жизненная сила$()\n$(li2)$(l:cooking/food_and_water#rejuvenating_transient_effect)Восстановление$()\n$(li2)$(l:cooking/food_and_water#freezing_transient_effect)Промерзание$()\n$(li2)$(l:cooking/food_and_water#blazing_transient_effect)Жар$()\n$(li2)$(l:cooking/food_and_water#radiating_transient_effect)Облучение$()\n$(li2)$(l:cooking/food_and_water#nauseating_transient_effect)Тошнота$()\n$(li2)$(l:cooking/food_and_water#parching_transient_effect)Обезвоживание$()\n$(li2)$(l:cooking/food_and_water#deadly_transient_effect)Смертельный эффект$()\n$(li2)$(l:cooking/food_and_water#fulfilling_transient_effect)Насыщение$()\n$(li2)$(l:cooking/food_and_water#sugary_transient_effect)Сладость$()\n$(li2)$(l:cooking/food_and_water#spicy_transient_effect)Острота$()"
         },
         {
             "type": "patchouli:text",
             "title": "Основы",
             "anchor": "basics",
-            "text": "In $(tfg), not only must you manage your hunger, but you must manage your thirst. Hunger works similar to vanilla. Most pieces of food restore about a fifth of your hunger bar. Some pieces of food may restore a bit less, such as $(thing)Cattail Roots$(). Eating food also restores $(thing)Saturation$(), which can be thought of as how full you are. Depleting food or water results in sluggish movement and taking damage. Dying does not reset your nutrients or contaminants."
+            "text": "В $(tfg) вам нужно следить не только за голодом, но и за жаждой. Голод работает так же, как в ванильной версии. Большинство продуктов восстанавливают примерно пятую часть шкалы голода. Некоторые продукты восстанавливают чуть меньше, например $(thing)корни рогоза$(). Прием пищи также восстанавливает $(thing)сытость$(), то есть чувство насыщения. Если у вас заканчивается еда или вода, вы двигаетесь медленнее и получаете больше урона. Смерть не сбрасывает уровень питательных веществ и токсинов."
         },
         {
             "type": "patchouli:text",
-            "text": "Some foods are very filling, so they keep you from losing hunger for longer, while some foods have a short-lived effect.$(br2)You will lose hunger just from regular gameplay. Hunger drains faster if you do things like sprint, swim, or become $(l:game_mechanics/size_and_weight#overburdening)Overburdened$(). Information about the $(thing)Saturation$(), $(thing)Water$(), as well as $(thing)Nutrients$() available from a food is available by hovering over it in your inventory. Using $(item)$(k:key.sneak)$() reveals the full tooltip."
+            "text": "Некоторые продукты очень сытные, поэтому вы дольше не будете испытывать чувство голода, в то время как другие продукты дают лишь кратковременный эффект.$(br2)Голод будет уменьшаться просто в процессе игры. Голод будет уменьшаться быстрее, если вы будете бегать, плавать или станете $(l:game_mechanics/size_and_weight#overburdening)перегруженным$(). Информацию о $(thing)насыщении$(), $(thing)воде$(), а также $(thing)питательных веществах$(), содержащихся в еде, можно получить, наведя на нее курсор в инвентаре. При использовании $(item)$(k:key.sneak)$() отображается полная всплывающая подсказка."
         },
         {
             "type": "patchouli:text",
-            "text": "All foods have a tooltip with this information. The tooltip includes the $(l:cooking/decay#decay)Decay Date$() of the food, which may be extended with preservation. When viewing this information, it's important to realize that not all foods have nutritional value. For example, $(l:cooking/bread)Dough$() is a food, but it has no Nutrition, Saturation, or Water value. Eating it would not do much good."
+            "text": "У всех продуктов есть всплывающая подсказка с этой информацией.  Во всплывающей подсказке указана $(l:cooking/decay#decay)дата истечения срока годности$() продукта, которая может быть продлена за счет консервации.  При просмотре этой информации важно помнить, что не все продукты имеют пищевую ценность.  Например, $(l:cooking/bread)тесто$() — это продукт, но в нем нет ни Питательных веществ, ни жиров, ни воды.  Его употребление не принесет особой пользы."
         },
         {
             "type": "patchouli:text",
@@ -35,7 +35,7 @@
             "type": "patchouli:text",
             "anchor": "thirst",
             "text": "Жажда — это уровень воды в организме. Она истощается с такой же скоростью, как и голод. При больших температурах или при сильном голоде, потребность в воде возрастёт. Благо, ты всегда можешь выпить $(thing)Свежую воду$() и восполнить жажду. Просто подойди к источнику воды и нажми $(item)$(k:key.use)$() на блок. Питьё морской воды не восполнит потребность, а наоборот, наложит $(thing)эффект жажды$().",
-            "title": "Thirst"
+            "title": "Жажда"
         },
         {
             "type": "patchouli:multiblock",
@@ -62,20 +62,20 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Drinking Vessels",
+            "title": "Сосуды для питья",
             "item": {
                 "tag": "tfg:drinking_vessels"
             },
-            "text": "$(l:craftsmanship/pottery)Knapping$() and firing a $(l:craftsmanship/pottery#jug)jug$() is an early way to carry water with you. Fill it like a bucket with $(item)$(k:key.use)$(). Holding $(item)$(k:key.use)$() drinks the water.$(br2)You can also drink out of other $(l:cooking/drinking_containers)Containers$() such as $(item)Flasks$() or $(l:craftsmanship/glassworking)Glass Bottles$()."
+            "text": "$(l:craftsmanship/pottery)Лепка$() и обжиг $(l:craftsmanship/pottery#jug)кувшина$() — один из первых способов носить с собой воду. Наполните его, как ведро, $(item)$(k:key.use)$(). Если держать $(item)$(k:key.use)$() в руке, воду можно будет пить.$(br2)Можно также пить из других $(l:cooking/drinking_containers)сосудов$(), таких как $(item)фляги$() или $(l:craftsmanship/glassworking)стеклянные бутылки$()."
         },
         {
             "type": "patchouli:text",
-            "text": "$(br)Some fluids like $(thing)Milk$() even give $(l:cooking/food_and_water#nutrients)Nutrients$() when consumed.$(br2)The amount of thirst gained by drinking fluids is not standard. However, water and milk both give 10 points of water, indicated by one $(9)💧$() droplet."
+            "text": "$(br)Некоторые жидкости, такие как $(thing)молоко$(), при употреблении даже дают $(l:cooking/food_and_water#nutrients)питательные вещества$().$(br2)Степень утоления жажды при употреблении жидкостей не является стандартной.  Однако и вода, и молоко дают по 10 единиц воды, что обозначается одной каплей $(9)💧$()."
         },
         {
             "type": "patchouli:text",
             "anchor": "nutrition_screen",
-            "text": "In $(tfg) the nutrition screen displays vast information about your health. $(li)There is a main graph displaying your $(l:cooking/food_and_water#nutrients)Nutrients$().$(li)A side graph showing your $(l:cooking/food_and_water#contaminants)Contaminants$().$(li)A table displaying your health stats.$()$(li)And a toggleable view for checking on your teams nutrition.$()$(br)$(item)Hold-$(k:key.sneak)$() over an element on the screen to view more information.$()",
+            "text": "На экране питания в $(tfg) отображается обширная информация о вашем здоровье.  $(li) Основной график показывает ваши $(l:cooking/food_and_water#nutrients)питательные вещества$().$(li) Боковой график показывает ваши $(l:cooking/food_and_water#contaminants)загрязнители$().$(li) Таблица отображает показатели вашего здоровья.$()$(li) И переключаемый режим для проверки питания вашей команды.$()$(br)$(item) Удерживайте $(k:key.sneak)$() палец на элементе экрана, чтобы просмотреть дополнительную информацию.$()",
             "title": "Экран Рациона"
         },
         {
@@ -93,96 +93,96 @@
         {
             "type": "patchouli:text",
             "anchor": "nutrients",
-            "text": "There are five nutrients, all obtainable from food: $(l)$(a)Fruit$()$(), $(l)$(2)Vegetables$()$(), $(l)$(c)Protein$()$(), $(l)$(6)Grain$()$(), and $(l)$(5)Dairy$()$(). Eating food gives you its nutrients. Meals such as $(l:cooking/cooking_methods#pot)Soup$() combine more nutrients into one meal. Often meals will borrow the nutrients from their ingredients directly. This is important, because meals you ate a while ago don't count towards your nutrition.",
+            "text": "Существует пять питательных веществ, которые можно получить из пищи: $(l)$(a)фрукты$()$(), $(l)$(2)овощи$()$(), $(l)$(c)белки$()$(), $(l)$(6)злаки$()$() и $(l)$(5)молочные продукты$()$(). Питательные вещества содержатся в пище. Такие блюда, как $(l:cooking/cooking_methods#pot)суп$(), содержат сразу несколько питательных веществ. Часто питательные вещества поступают непосредственно из ингредиентов блюда. Это важно, потому что блюда, которые вы ели давно, не учитываются при подсчете питательных веществ.",
             "title": "Питательные вещества"
         },
         {
             "type": "patchouli:text",
             "anchor": "average_nutrients",
-            "text": "The total value of your nutrients determines your maximum HP. At max value you can achieve $(l)$(c)30 hearts$()$(), while the lowest is $(l)$(c)3 hearts$()$().$(br)Your average nutrients also effect the following:$()$(li)$(bold)Average >55% ↴$()$()$(italic)$(li2)Increase passive health regen by 50%.$()$()$(italic)$(li2)Decreases $(l:game_mechanics/hazards#medicine)Medical Condition$() progression rate by 25%.$()$()$(italic)$(li2)Increase medical condition passive healing rate by 50%.$()$()"
+            "text": "Общее количество питательных веществ определяет ваш максимальный запас ОЗ.  При максимальном значении вы можете достичь $(l)$(c)30 сердец$()$(), а при минимальном — $(l)$(c)3 сердца$()$().$(br)Среднее количество питательных веществ также влияет на следующее:$()$(li)$(bold)Среднее значение >55% ↴$()$()$(italic)$(li2)Увеличение пассивной регенерации здоровья на 50%.$()$()$(italic)$(li2)Снижение скорости развития $(l:game_mechanics/hazards#medicine)медицинского состояния$() на 25%.$()$()$(italic)$(li2)Увеличение скорости пассивного лечения медицинских состояний на 50%.$()$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)Average >85% ↴$()$()$(italic)$(li2)Increase passive health regen by 100%.$()$()$(italic)$(li2)Decreases $(l:game_mechanics/hazards#medicine)Medical Condition$() progression rate by 50%.$()$()$(italic)$(li2)Increase medical condition passive healing rate by 100%.$()$()"
+            "text": "$(li)$(bold)В среднем >85% ↴$()$()$(italic)$(li2)Увеличение пассивной регенерации здоровья на 100%.$()$()$(italic)$(li2)Снижение скорости развития $(l:game_mechanics/hazards#medicine)Медицинского состояния$() на 50%.$()$()$(italic)$(li2)Увеличение скорости пассивного лечения медицинских состояний на 100%.$()$()"
         },
         {
-            "title": "Fruit",
+            "title": "Фрукты",
             "type": "patchouli:text",
             "anchor": "fruit",
-            "text": "$(l)$(a)Fruit$()$() nutrients are mostly found from $(l:the_world/wild_fruits)Fruiting Plants$(), like berry bushes, and fruit trees. A notable exception to this is $(l:the_world/wild_crops#pumpkin)Pumpkins$() and $(l:the_world/wild_crops#melon)Melons$(), which nutritionally are fruits.$(br2)Increasing your fruit value gives the following effects:$()$(li)$(bold)Average >55% → $()$()$(italic)Decreases thirst usage by 25%.$()$(li)$(bold)Average >85% → $()$()$(italic)Increases mining speed by 30%.$()"
+            "text": "$(l)$(a)Питательные вещества, содержащиеся во фруктах$()$(), в основном содержатся в $(l:the_world/wild_fruits)плодоносящих растениях$(), таких как ягодные кустарники и фруктовые деревья. Заметным исключением являются $(l:the_world/wild_crops#pumpkin)тыква$() и $(l:the_world/wild_crops#melon)дыня$(), которые по своей питательной ценности являются фруктами.$(br2)Повышение ценности фруктов дает следующие эффекты:$()$(li)$(bold)В среднем >55% → $()$()$(italic)Снижает расход воды на 25%.$()$(li)$(bold)В среднем >85% → $()$()$(italic)Увеличивает скорость добычи на 30%.$()"
         },
         {
-            "title": "Vegetables",
+            "title": "овощи",
             "type": "patchouli:text",
             "anchor": "vegetables",
-            "text": "$(l)$(2)Vegetables$()$() are found in nearly every $(l:agriculture/growing_crops)Crop$().$(br2)Increasing your vegetable value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Removes under-water mining penalty.$()$(li)$(bold)Value >85% → $()$()$(italic)Gives the respiration effect.$()"
+            "text": "$(l)$(2)Овощи$()$() встречаются почти в каждом $(l:agriculture/growing_crops)Кусте$().$(br2)Повышение ценности овощей дает следующие эффекты:$()$(li)$(bold)Ценность >55% → $()$()$(italic)Снимает штраф за добычу под водой.$()$(li)$(bold)Ценность >85% → $()$()$(italic)Дает эффект дыхания.$()"
         },
         {
-            "title": "Protein",
+            "title": "Протеин",
             "type": "patchouli:text",
             "anchor": "protein",
-            "text": "$(l)$(c)Protein$()$() can be sourced from the meat of $(l:the_world/wild_animals)Animals$(). It can also be obtained from some crops like $(thing)legumes$().$(br2)Increasing your protein value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Decrease exhaustion multiplier by 25%.$()$(li)$(bold)Value >85% → $()$()$(italic)Allows you to carry an additional huge & heavy item without being $(l:game_mechanics/size_and_weight#overburdening)Overburdened$() (like a sealed barrel).$()"
+            "text": "$(l)$(c)Белок$()$() можно получить из мяса $(l:the_world/wild_animals)животных$(). Его также можно получить из некоторых культур, например из $(thing)бобовых$().$(br2) Повышение уровня белка дает следующие эффекты:$()$(li)$(bold)Значение >55% → $()$()$(italic)Снижение множителя истощения на 25%.$()$(li)$(bold)Значение >85% → $()$()$(italic)Позволяет нести дополнительный тяжелый предмет, не будучи $(l:game_mechanics/size_and_weight#overburdening)перегруженным$() (как в случае с запечатанной бочкой). \"нет ничего лучше охоты на кабанчиков.\" $()"
         },
         {
-            "title": "Grain",
+            "title": "Зерновые",
             "type": "patchouli:text",
             "anchor": "grain",
-            "text": "$(l)$(6)Grain$()$() is found in cereal crops, such as $(l:the_world/wild_crops#barley)Barley$(). The processing of grain is on the $(l:cooking/bread)Bread$() page. Some root crops also count as grains.$(br2)Increasing your grain value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Gives a 5% speed buff.$()$(li)$(bold)Value >85% → $()$()$(italic)Gives a 15% speed buff.$()"
+            "text": "$(l)$(6)Зерновые $()$() содержится в злаковых культурах, таких как $(l:the_world/wild_crops#barley)ячмень$(). Обработка зерна описана на странице $(l:cooking/bread)Хлеб$(). Некоторые корнеплоды также считаются зерновыми культурами.$(br2)Повышение ценности зерна дает следующие эффекты:$()$(li)$(bold)Ценность >55% → $()$()$(italic)Дает прибавку к скорости на 5%.$()$(li)$(bold)Ценность >85% → $()$()$(italic)Дает прибавку к скорости на 15%.$()"
         },
         {
-            "title": "Dairy",
+            "title": "Молочные",
             "type": "patchouli:text",
             "anchor": "dairy",
-            "text": "$(l)$(5)Dairy$()$() comes from $(thing)Milk$(), which is derived from $(l:agriculture/animal_husbandry#dairy_animals)Dairy Animals$(). Processing and drinking milk is covered on the $(l:cooking/cheese)Dairy$() page.$(br2)Increasing your dairy value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Gives the $(thing)Feather Falling I$() effect.$()$(li)$(bold)Value >85% → $()$()$(italic)Gives the $(thing)Feather Falling IV$() effect.$()"
+            "text": "$(l)$(5)Молочное$()$() получают из $(thing)молока$(), которое, в свою очередь, получают от $(l:agriculture/animal_husbandry#dairy_animals)Животных$(). Обработка и употребление молока описаны на странице $(l:cooking/cheese)Молочные продукты$().$(br2)Повышение ценности молочных продуктов дает следующие эффекты:$()$(li)$(bold)Ценность >55% → $()$()$(italic)Дает эффект $(thing)«Легкость» I$().$()$(li)$(bold)Ценность >85% → $()$()$(italic)Дает эффект $(thing)«Легкость» IV.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "contaminants",
-            "text": "In addition to nutrients $(tfg) also adds contaminants. There are three contaminants, all obtainable from food: $(l)$(d)Toxins$()$(), $(l)$(4)Parasites$()$(), and $(l)$(3)Microplastics$()$(). Contaminants can be passed into meal items and build up within the player.",
-            "title": "Contaminants"
+            "text": "Помимо питательных веществ, $(tfg) также содержит загрязняющие вещества. Существует три вида загрязняющих веществ, которые попадают в организм с пищей: $(l)$(d)токсины$()$(), $(l)$(4)паразиты$()$() и $(l)$(3)микропластик$()$(). Загрязняющие вещества могут попадать в пищу и накапливаться в организме игрока.",
+            "title": "Загрязнение"
         },
         {
-            "title": "Toxins",
+            "title": "Токсичность",
             "type": "patchouli:text",
             "anchor": "toxins",
-            "text": "$(l)$(d)Toxins$() come from specifically dangerous crops and meats. Toxins decrease naturally at a rate of 3%/day. Consume $(item)Detox Capsules$() to actively $(l:game_mechanics/mob_effects#cure_toxins)Cure Toxins$().$(br2)Increasing your toxins value gives the following effects:$()$(li)$(bold)Value >0% → $()$()$(italic)On any new increase: 25% chance to get a random hazardous effect for 10sec.$()$(li)$(bold)Value >99% → $()$()$(italic)$(l:game_mechanics/mob_effects#final_moments)Death.$()"
+            "text": "$(l)$(d)Токсины$() выделяются из особо опасных культур и мяса. Токсины естественным образом выводятся из организма со скоростью 3% в день. Употребляйте $(item)капсулы детоксикации$(), чтобы активно $(l:game_mechanics/mob_effects#cure_toxins)избавляться от токсинов$().$(br2)Повышение уровня токсинов дает следующие эффекты:$()$(li)$(bold)Значение >0% → $()$()$(italic)При каждом новом повышении: 25% шанс получить случайный опасный эффект на 10 секунд.$()$(li)$(bold)Значение >99% → $()$()$(italic)$(l:game_mechanics/mob_effects#final_moments)Смерть.$()"
         },
         {
-            "title": "Parasites",
+            "title": "Паразиты",
             "type": "patchouli:text",
             "anchor": "parasites",
-            "text": "$(l)$(4)Parasites$() come from eating certain raw meats or drinking muddy water. Consume $(item)Parasiticide Capsules$() to actively $(l:game_mechanics/mob_effects#cure_parasites)Cure Parasites$().$(br2)Increasing your parasites value gives the following effects:$()$(li)$(bold)Value >10% → $()$()$(italic)20% chance to increase by 10% each day to a max of 60%.$()$(li)$(bold)Value >33% → $()$()$(italic)Increases passive exhaustion by 25%.$()$(li)$(bold)Value >66% → $()$()$(italic)Increases passive exhaustion by 50%.$()"
+            "text": "$(l)$(4)Паразиты (Жаль не те самые) $() появляются при употреблении в пищу сырого мяса или грязной воды. Съешьте $(item)капсулы с противопаразитарным средством$(), чтобы активно $(l:game_mechanics/mob_effects#cure_parasites)избавиться от паразитов$().$(br2)Повышение уровня заражения паразитами дает следующие эффекты:$()$(li)$(bold)Значение >10% → $()$()$(italic)20% шанс увеличения на 10% каждый день до максимального значения 60%.$()$(li)$(bold)Значение >33% → $()$()$(italic)Увеличивает пассивное истощение на 25%.$()$(li)$(bold)Значение >66% → $()$()$(italic)Увеличивает пассивное истощение на 50%.$()"
         },
         {
-            "title": "Microplastics",
+            "title": "Микропластик",
             "type": "patchouli:text",
             "anchor": "microplastics",
-            "text": "$(l)$(3)Microplastics$() come from consuming food packaged in plastic. Microplastics decrease naturally at a rate of 1%/day. Consume $(item)Nanofiltration Capsules$() to actively $(l:game_mechanics/mob_effects#cure_microplastics)Cure Microplastics$().$(br)Increasing your microplastics value gives the following effects:$(br2)$(o)(Continued on next page...)$()"
+            "text": "$(l)$(3)Микропластик$() попадает в организм при употреблении продуктов, упакованных в пластик. Количество микропластика естественным образом уменьшается со скоростью 1% в день. Принимайте $(item)капсулы для нанофильтрации$(), чтобы активно $(l:game_mechanics/mob_effects#cure_microplastics)избавляться от микропластика$().$(br)Увеличение количества микропластика дает следующие эффекты:$(br2)$(o)(Продолжение на следующей странице...)$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)Value >33% → $()$()$(italic)Increase high-temp thirst decay multiplier by 25%$()$(li)$(bold)Value >66% ↴$()$()$(italic)$(li2)Increase high-temp thirst decay multiplier by 50%.$()$()$(italic)$(li2)On any new increase: 5% chance to get $(l:game_mechanics/hazards#carcinogens)Cancer$()."
+            "text": "$(li)$(bold)Значение >33% → $()$()$(italic)Увеличивает множитель снижения жажды при высоких температурах на 25%$()$(li)$(bold)Значение >66% ↴$()$()$(italic)$(li2)Увеличивает множитель снижения жажды при высоких температурах на 50%.$()$()$(italic)$(li2)При каждом новом увеличении: 5% шанс получить $(l:game_mechanics/hazards#carcinogens)рак$()."
         },
         {
             "type": "patchouli:text",
             "anchor": "transient_effects",
-            "text": "$(tfg) also adds $(item)Transient Effects$(). Transient effects exist for the purpose of transferring buffs/ debuffs from ingredients into meal items. Transient effects can be combined and consumed. However, they do not accumulate within the player―They are immediately consumed.$(br)The strength of the effect depends on the value of the nutrient. However, the way the strength is determined is not uniform for every type.$()",
+            "text": "$(tfg) также добавляет $(item)Временные эффекты$(). Временные эффекты нужны для того, чтобы переносить положительные и отрицательные эффекты из ингредиентов в блюда. Временные эффекты можно комбинировать и использовать. Однако они не накапливаются в организме игрока — они расходуются сразу.$(br)Сила эффекта зависит от ценности питательного вещества. Однако способ определения силы эффекта не является одинаковым для всех типов.$()",
             "title": "Переходящие эффекты"
         },
         {
             "type": "patchouli:text",
             "anchor": "cooling_transient_effect",
-            "text": "$(#12d7ff)❅$()$(bold) Cooling$()$(li)Gives the player the $(l:game_mechanics/mob_effects#cooling)Cooling$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#12d7ff)❅$()$(bold) Обморожение$()$(li)Дает игроку эффект $(l:game_mechanics/mob_effects#cooling) Обморожение$() продолжительностью 1 минута за 1 очко питательных веществ. Максимальная продолжительность — 30 минут.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "warming_transient_effect",
-            "text": "$(#ff7700)🔆$()$(bold) Warming$()$(li)Gives the player the $(l:game_mechanics/mob_effects#warming)Warming$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#ff7700)🔆$()$(bold) Перегрев$()$(li)Дает игроку эффект $(l:game_mechanics/mob_effects#warming) Перегрев$() продолжительностью 1 минута за 1 очко питательных веществ. Максимальная продолжительность — 30 минут.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "quenching_transient_effect",
-            "text": "$(#00c792)🍹$()$(bold) Quenching$()$(li)Gives the player the $(l:game_mechanics/mob_effects#quenched)Quenched$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#00c792)🍹$()$(bold) Закаливание$()$(li)Дает игроку эффект $(l:game_mechanics/mob_effects#quenched)Закаливание$() длительностью 1 минута за 1 очко питательных веществ. Максимальная продолжительность — 30 минут.$()"
         },
         {
             "type": "patchouli:text",
@@ -202,17 +202,17 @@
         {
             "type": "patchouli:text",
             "anchor": "freezing_transient_effect",
-            "text": "$(#12d7ff)⛇$()$(bold) Freezing$()$(li)Gives the player the $(l:game_mechanics/mob_effects#freezing)Freezing$() effect with 5 seconds of duration per 1 nutrient point. With a max duration of 30sec.$()"
+            "text": "$(#12d7ff)⛇$()$(bold) Заморозка$()$(li)Дает игроку эффект $(l:game_mechanics/mob_effects#freezing)Заморозка$() длительностью 5 секунд за 1 очко питательных веществ. Максимальная продолжительность — 30 секунд.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "blazing_transient_effect",
-            "text": "$(#ff7700)🔥$()$(bold) Blazing$()$(li)Gives the player the $(l:game_mechanics/mob_effects#blazing)Blazing$() effect with 5 seconds of duration per 1 nutrient point. With a max duration of 30sec.$()"
+            "text": "$(#ff7700)🔥$()$(bold) Горящий $()$(li)Дает игроку эффект $(l:game_mechanics/mob_effects#blazing)Горящий$() длительностью 5 секунд за 1 очко питательных веществ. Максимальная продолжительность — 30 секунд. \"Жаль вы не Орсик\"$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "radiating_transient_effect",
-            "text": "$(#9fc700)☢$()$(bold) Radiating$()$(li)Gives the player the $(n)Glowing$() effect for 24 seconds.$()$(li)Gives the player the $(l:game_mechanics/mob_effects#instant_radiation)Radiation$() effect for 24 seconds. With its amplifier scaled based on the amount of nutrient points with a max amplifier of 5.$()"
+            "text": "$(#9fc700)☢$()$(bold) Радиоактивный $()$(li)Дает игроку эффект $(n)Сияния$() на 24 секунды.$()$(li)Дает игроку эффект $(l:game_mechanics/mob_effects#instant_radiation)Излучения$() на 24 секунды. Усиление зависит от количества очков питательных веществ, максимальное усиление — 5. \"Вы случаем не из Радиоактивных людей?\"$() "
         },
         {
             "type": "patchouli:text",
@@ -227,7 +227,7 @@
         {
             "type": "patchouli:text",
             "anchor": "deadly_transient_effect",
-            "text": "$(#470275)💀$()$(bold) Deadly$()$(li)Gives the player the $(l:game_mechanics/mob_effects#final_moments)Final Moments$() effect for 8min. With every additional nutrient point halving the duration.$()"
+            "text": "$(#470275)💀$()$(bold) Присмерти $()$(li) Дает игроку эффект $(l:game_mechanics/mob_effects#final_moments)«Последние мгновения»$() на 8 минут. С каждым дополнительным очком питательных веществ продолжительность действия эффекта уменьшается вдвое.$()"
         },
         {
             "type": "patchouli:text",
@@ -242,11 +242,11 @@
         {
             "type": "patchouli:text",
             "anchor": "spicy_transient_effect",
-            "text": "$(#8F0000)🌶 $()$(bold) Spicy$()$(li)Gives the player the $(n)Thirsty$() effect with 15 seconds of duration per 1 nutrient point. With a max duration of 5min.$()$(li)Gives the player the $(l:game_mechanics/mob_effects#warming)Warming$() mob effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#8F0000)🌶 $()$(bold) Острый $()$(li)Дает игроку эффект $(n)Жажды$() на 15 секунд за 1 единицу питательного вещества. Максимальная продолжительность — 5 минут.$()$(li)Дает игроку эффект $(l:game_mechanics/mob_effects#warming) Перегрева $() на 1 минуту за 1 единицу питательного вещества. Максимальная продолжительность — 30 минут. \"Molten Core!\"$()"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Читать далее",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/decay",

@@ -2,5 +2,12 @@
 	"aci.util.auto_detected": "自动检测：%s",
 	"aci.util.entry": "条目：",
 	"aci.util.missing": "未实现：%s",
-	"aci.util.tag": "标签：%s"
+	"aci.util.tag": "标签：%s",
+	"aci.spawn.category": "类别：%s",
+	"aci.spawn.dimension": "维度：%s",
+	"aci.spawn.group_size": "组大小：%s",
+	"aci.spawn.spawn_cost": "生成成本：消耗 %s，预算 %s",
+	"aci.spawn.spawns": "生成：",
+	"aci.spawn.structure": "结构：%s",
+	"aci.spawn.weight": "权重：%s"
 }

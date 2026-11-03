@@ -280,12 +280,20 @@
 	"item.sophisticatedcore.storage.tooltip.shift": "Left Shift",
 	"item.sophisticatedcore.storage.tooltip.stack_multiplier": "Stack Size Multiplier: %s",
 	"item.sophisticatedcore.storage.tooltip.upgrades": "Upgrades",
-	"item.sophisticatedcore.xp_bucket": "Bucket of Experience",
 	"key.category.sophisticatedcore.main": "Sophisticated Mods",
 	"key.sophisticatedcore.sort": "Sort Storage/Backpack",
 	"key.sophisticatedcore.transfer_to_inventory": "Transfer to Inventory",
 	"key.sophisticatedcore.transfer_to_storage": "Transfer to Storage",
 	"upgrade_group.sophisticatedcore.cooking_upgrades": "Furnace Upgrades",
 	"upgrade_group.sophisticatedcore.jukebox_upgrades": "Jukebox Upgrades",
-	"upgrade_group.sophisticatedcore.stack_upgrades": "Stack Upgrades"
+	"upgrade_group.sophisticatedcore.stack_upgrades": "Stack Upgrades",
+	"itemGroup.sophisticatedcore": "Sophisticated Core",
+	"gui.sophisticatedcore.status.ender_linker.already_linked": "Storage is already linked",
+	"gui.sophisticatedcore.status.ender_linker.unsupported_endpoint": "Storage cannot be linked",
+	"gui.sophisticatedcore.status.ender_linker.incompatible_endpoint": "Storage is incompatible with this linked storage group",
+	"gui.sophisticatedcore.status.ender_linker.endpoint_has_contents": "Storage has contents",
+	"item.sophisticatedcore.storage.tooltip.linked_storage_group": "Linked Storage Group: %s",
+	"item.sophisticatedcore.storage.tooltip.linked_storage_endpoint": "Linked Storage Endpoint: %s",
+	"tooltip.sophisticatedcore.linked_storage.primary": "Main Linked",
+	"tooltip.sophisticatedcore.linked_storage.secondary": "Linked"
 }

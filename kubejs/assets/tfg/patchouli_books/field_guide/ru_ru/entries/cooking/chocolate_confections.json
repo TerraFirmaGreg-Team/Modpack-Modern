@@ -1,29 +1,29 @@
 {
-  "name": "Chocolate Confections",
+  "name": "Производство Шоколада и конфет",
   "category": "tfg:cooking",
   "icon": "firmalife:textures/item/food/dark_chocolate.png",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Chocolate-making$() takes a few processing steps, and is intended to be an immersive way to experience cooking.$(br)Chocolate items contain $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#dairy)Dairy$() nutrients while also providing the $(l:cooking/food_and_water#sugary_transient_effect)Sugary$() effect when eaten, making them a strong choice for meal ingredients."
+      "text": "$(thing)Приготовление шоколада$() состоит из нескольких этапов и призвано погрузить вас в процесс приготовления пищи.$(br)Шоколадные изделия содержат $(l:cooking/food_and_water#grain)зерновые$() и $(l:cooking/food_and_water#dairy)молочные$() продукты, а также обладают $(l:cooking/food_and_water#sugary_transient_effect)сладким$() вкусом, что делает их отличным дополнением к блюдам."
     },
     {
       "type": "patchouli:text",
-      "text": "To start chocolate processing, cocoa beans must first be $(thing)roasted$() in an $(l:cooking/cooking_methods#oven)Oven$() to make $(thing)Roasted Cocoa Beans$(). Then, craft the roasted beans with a $(thing)Knife$() to split the beans into $(thing)Cocoa Powder$() and $(thing)Cocoa Butter$()."
+      "text": "Чтобы начать производство шоколада, какао-бобы нужно сначала $(thing)обжарить$() в $(l:cooking/cooking_methods#oven)духовке$(), чтобы получить $(thing)обжаренные какао-бобы$(). Затем с помощью $(thing)ножа$() измельчите обжаренные бобы, чтобы получить $(thing)какао-порошок$() и $(thing)какао-масло$()."
     },
     {
       "type": "patchouli:text",
-      "text": "The $(l:cooking/mixing_bowl)Mixing Bowl$() is used to mix cocoa powder, butter, and sweetener (sugar or honey) to make $(thing)Chocolate Blends$(). The ratio of cocoa butter to powder determines what comes out:$(br)$(li)1 Powder, 1 Butter, 1 Sweetener: Milk Chocolate$()$(li)2 Powder, 1 Sweetener: Dark Chocolate$()$(li)2 Butter, 1 Sweetener: White Chocolate$()"
+      "text": "$(l:cooking/mixing_bowl)Миска для смешивания$() используется для смешивания какао-порошка, сливочного масла и подсластителя (сахара или мёда) для получения $(thing)шоколадных смесей$(). Соотношение какао-масла и порошка определяет, какой шоколад получится:$(br)$(li)1 порошок, 1 масло, 1 подсластитель: молочный шоколад$()$(li)2 порошка, 1 подсластитель: тёмный шоколад$()$(li)2 масла, 1 подсластитель: белый шоколад$()"
     },
     {
       "type": "tfg:drying_recipe",
       "recipe": "firmalife:drying/dark_chocolate",
-      "text": "Finally, chocolate is dried on a $(l:cooking/decay#drying)Drying Mat$() to make $(thing)Chocolate$()."
+      "text": "Наконец, шоколад сушат на $(l:cooking/decay#drying)сушильном коврике$(), чтобы получить $(thing)шоколад$()."
     },
     {
       "title": "Литьё Шоколада",
       "type": "patchouli:text",
-      "text": "$(thing)Chocolate$() does not need to come only in boring bars! Melt down $(thing)White$(), $(thing)Milk$(), or $(thing)Dark$() chocolate in a $(thing)Vessel$() or $(thing)Crucible$() and then cast it into a mold to obtain chocolate confections. There are three types of chocolate confections: $(thing)Hearts$(), $(thing)Bells$(), and $(thing)Knives$(). Each is obtained by casting chocolate into a different mold."
+      "text": "Шоколад бывает не только в скучных плитках! Растопи $(thing)белый$(), $(thing)молочный$() или $(thing)тёмный$() шоколад в $(thing)сосуде$() или $(thing)тигле$(), а затем залей его в форму, чтобы получить шоколадные изделия.\n\nСуществует три вида шоколадных изделий: $(thing)сердечки$(), $(thing)колокольчики$() и $(thing)ножи$(). Каждое из них получается путём заливки шоколада в соответствующую форму."
     },
     {
       "type": "tfg:knapping_recipe",
@@ -55,7 +55,7 @@
     },
     {
       "type": "patchouli:relations",
-      "title": "Further Reading",
+      "title": "Читать далее",
       "anchor": "relations",
       "entries": [
             "tfg:cooking/alcohol",

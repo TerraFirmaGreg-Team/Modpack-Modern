@@ -340,5 +340,6 @@
   "tooltip.framedblocks.y_slope": "Block uses %s faces for vertical sloped faces.",
   "tooltip.framedblocks.y_slope.horizontal": "horizontal",
   "tooltip.framedblocks.y_slope.toggle": "Hit with a Framed Wrench to switch to %s faces",
-  "tooltip.framedblocks.y_slope.vertical": "vertical"
+  "tooltip.framedblocks.y_slope.vertical": "vertical",
+  "block.framedblocks.framed_torch": "Framed Torch"
 }

@@ -34,7 +34,7 @@
   "buildinggadgets2.messages.redprintremovesuccess": "Usunięto schemat: %s",
   "buildinggadgets2.messages.relativepaste": "Względne wklejenie ustawiono na: [%s]",
   "buildinggadgets2.messages.render_set": "Typ renderowania ustawiony na: %s",
-  "buildinggadgets2.messages.undofailedunloaded": "Cofnięcie niepowiodło się: Chunki nie są załadowane (Za daleko): %s",
+  "buildinggadgets2.messages.undofailedunloaded": "Cofnięcie nie powiodło się: Chunki nie są załadowane (Za daleko): %s",
   "buildinggadgets2.modes.build_to_me": "Buduj w moją stronę",
   "buildinggadgets2.modes.copy": "Kopiuj",
   "buildinggadgets2.modes.cut": "Wytnij",
@@ -104,9 +104,7 @@
   "item.buildinggadgets2.gadget_exchanging": "Gadżet wymiany",
   "item.buildinggadgets2.redprint": "Schemat",
   "item.buildinggadgets2.template": "Szablon",
-  "itemGroup.buildinggadgets2": "BuildingGadgets2",
   "key.buildinggadgets2.anchor": "Zakotwicz",
-  "key.buildinggadgets2.category": "Building Gadgets 2",
   "key.buildinggadgets2.range": "Zasięg",
   "key.buildinggadgets2.settings_menu": "Menu ustawień",
   "key.buildinggadgets2.undo": "Cofnij"
