@@ -128,7 +128,7 @@ jobs:
   test:
     name: "[🧪] Project Test"
     needs: [route, info, build, create-pr]
-    if: ${{ needs.route.outputs.test == 'true' }}
+    if: ${{ always() && needs.route.outputs.test == 'true' }}
     runs-on: ubuntu-latest
     timeout-minutes: 60
     permissions:
@@ -187,7 +187,7 @@ jobs:
   message:
     name: "[📱] Discord Message"
     needs: [route, info, release]
-    if: ${{ needs.route.outputs.message == 'true' }}
+    if: ${{ always() && needs.route.outputs.message == 'true' }}
     runs-on: ubuntu-latest
     steps:
       - name: Send Discord message
@@ -206,7 +206,7 @@ jobs:
   export:
     name: "[📤] Game Export"
     needs: [route, info, build, release]
-    if: ${{ needs.route.outputs.export == 'true' }}
+    if: ${{ always() && needs.route.outputs.export == 'true' }}
     runs-on: ubuntu-latest
     timeout-minutes: 360
     steps:
@@ -227,7 +227,7 @@ jobs:
   changelog:
     name: "[📰] Wiki Changelog"
     needs: [route, release]
-    if: ${{ needs.route.outputs.changelog == 'true' }}
+    if: ${{ always() && needs.route.outputs.changelog == 'true' }}
     runs-on: ubuntu-latest
     steps:
       - name: Sync wiki changelog
