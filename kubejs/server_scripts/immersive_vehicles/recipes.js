@@ -401,19 +401,12 @@ function registerImmersiveVehiclesRecipes(event) {
 		.duration(50)
 		.EUt(GTValues.VHA[GTValues.LV])
 
-	event.recipes.gtceu.assembler('mts:mtsofficialpack.headlight_chromium')
-		.itemInputs('2x #forge:foils/chromium', '#forge:glass', '#forge:single_cables/copper')
-		.inputFluids(Fluid.of('gtceu:glowstone', 144))
-		.itemOutputs('2x mts:mtsofficialpack.headlight')
-		.duration(50)
-		.EUt(GTValues.VHA[GTValues.MV])
-
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.headlight_platinum')
 		.itemInputs('2x #forge:foils/platinum', '#forge:glass', '#forge:single_cables/gold')
 		.inputFluids(Fluid.of('gtceu:glowstone', 144))
 		.itemOutputs('4x mts:mtsofficialpack.headlight')
 		.duration(50)
-		.EUt(GTValues.VHA[GTValues.HV])
+		.EUt(GTValues.VHA[GTValues.MV])
 
 	// #endregion
 }
