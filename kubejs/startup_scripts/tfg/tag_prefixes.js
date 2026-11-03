@@ -151,6 +151,8 @@ function registerTFGTagPrefixes(event) {
 	TagPrefix.dustTiny.setIgnored(GTMaterials.get('tfg:enriched_cr_y_residue'))
 	TagPrefix.dustTiny.setIgnored(GTMaterials.get('tfg:cr_y_residue'))
 
+	TagPrefix.ingot.removeIgnored(GTMaterials.Wax);
+
 	excludeAllButFlawedGem(GTMaterials.get('tfg:garnet_residual_slag'));
 	excludeAllButFlawedGem(GTMaterials.get('tfg:inert_slag'));
 

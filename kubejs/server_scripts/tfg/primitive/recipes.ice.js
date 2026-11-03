@@ -222,4 +222,27 @@ function registerTFGIceRecipes(event) {
 
 	event.recipes.tfc.chisel('tfg:packed_ice_bricks', 'minecraft:packed_ice', 'smooth')
 		.id('tfg:chisel/packed_ice_bricks')
+
+	// Powder snow
+
+	event.recipes.gtceu.extractor('tfg:snowball_to_powder_snow')
+		.itemInputs('minecraft:snowball')
+		.outputFluids(Fluid.of('fluidlogistics:powder_snow', 250))
+		.duration(20)
+		.EUt(2)
+
+	event.recipes.gtceu.extractor('tfg:snow_block_to_powder_snow')
+		.itemInputs('minecraft:snow_block')
+		.outputFluids(Fluid.of('fluidlogistics:powder_snow', 1000))
+		.duration(80)
+		.EUt(2)
+
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('fluidlogistics:powder_snow', 250), 'minecraft:snowball')
+		.id('tfg:vacummizing/snowball_to_powder_snow')
+		
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('fluidlogistics:powder_snow', 1000), 'minecraft:snow_block')
+		.id('tfg:vacummizing/snow_block_to_powder_snow')
+		
+	event.recipes.vintageimprovements.pressurizing('minecraft:snow_block', Fluid.of('fluidlogistics:powder_snow', 1000))
+		.id('tfg:pressurizing/powder_snow_to_snow_block')
 }

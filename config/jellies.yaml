@@ -165,7 +165,7 @@ entities:
     # Default: 32
     gestationDays: 16
 
-  latexJellie:
+  milkJellie:
     # Maximum familiarity that a wild jellie can reach.
     # Default: 1
     familiarityCap: 1.0
