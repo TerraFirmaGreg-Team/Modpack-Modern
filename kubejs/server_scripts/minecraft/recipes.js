@@ -835,23 +835,19 @@ const registerMinecraftRecipes = (event) => {
 
 	//#region Campfire
 	event.shaped('minecraft:campfire', [
-		' A ',
-		'ABA',
+		' B ',
 		'CDC'
 	], {
-		A: '#forge:rods/black_steel',
-		B: 'minecraft:lava_bucket',
+		B: 'minecraft:glowstone',
 		C: '#minecraft:logs',
 		D: '#forge:storage_blocks/charcoal'
 	}).id('tfg:campfire_charcoal')
 
 	event.shaped('minecraft:campfire', [
-		' A ',
-		'ABA',
+		' B ',
 		'CDC'
 	], {
-		A: '#forge:rods/black_steel',
-		B: 'minecraft:lava_bucket',
+		B: 'minecraft:glowstone',
 		C: '#minecraft:logs',
 		D: '#forge:storage_blocks/coal'
 	}).id('tfg:campfire_coal')
