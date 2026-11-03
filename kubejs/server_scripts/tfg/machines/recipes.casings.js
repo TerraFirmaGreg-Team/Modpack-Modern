@@ -331,7 +331,14 @@ function registerTFGCasingRecipes(event) {
 	event.remove({ id: 'gtceu:electric_blast_furnace/steel_from_iron' })
 	event.remove({ id: 'gtceu:electric_blast_furnace/steel_from_wrought_iron' })
 
-	event.recipes.gtceu.arc_furnace('tfg:steel')
+	event.recipes.gtceu.arc_furnace('tfg:steel_from_wrought')
+		.itemInputs(Item.of('gtceu:wrought_iron_ingot', 1))
+		.inputFluids(Fluid.of('gtceu:oxygen', 63))
+		.itemOutputs(Item.of('gtceu:steel_ingot', 1))
+		.duration(20 * 4.2)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.arc_furnace('tfg:steel_from_dust')
 		.itemInputs(Item.of('gtceu:steel_dust', 1))
 		.inputFluids(Fluid.of('gtceu:oxygen', 63))
 		.itemOutputs(Item.of('gtceu:steel_ingot', 1))
