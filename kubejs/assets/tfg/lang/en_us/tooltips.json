@@ -232,7 +232,7 @@
     "tfg.tooltip.firmalife_greenhouse.oxygen_required": "§cAn oxygenated environment is required!",
     "tfg.tooltip.firmalife_greenhouse.oxygen_required.block": "§7An oxygenated environment is required to function as a greenhouse in space.",
     "tfg.tooltip.firmalife_inside_valid_greenhouse": "Inside a valid greenhouse",
-    
+
     "tfg.tooltip.grow_light_disapointment": "§7No. This will not increase your crop growth speed...",
     "tfg.tooltip.rotten_voiding_cover": "§7The Rotten Voiding Cover works just like an Item Voiding Cover but only targets and destroys §cRotten Items.",
 
@@ -361,6 +361,6 @@
     "tfg.item.electric_flask.tooltip_1": "An electrical flask that will automatically drink when needed.",
     "tfg.item.electric_flask.tooltip_2": "§9Consumes: §f1000 EU per drink",
 
-    "tfg.tooltip.campfire": "Cosmetic only usable as an infinite source of light"
+    "tfg.tooltip.campfire": "§7Cosmetic only, usable as an infinite light source or particle emitter."
 
 }

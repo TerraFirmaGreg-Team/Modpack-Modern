@@ -8,6 +8,7 @@
 - Added snow bricks and ice bricks (#5235) @Pyritie
 - Added craftable powder snow @Pyritie
 - Added heating and casting for wax, and another way to make medicine powders that's possible in the Beneath (#5268) @Pyritie
+- Also added heating and casting for electrum, cupronickel, and battery alloy @Pyritie
 - Added the Basic Mechanical Mixer @Pyritie
 - Mechanical pumps can now pull fluids from aqueducts, except for lava @Allmoz @Pyritie
 - Increased the damage the sandworm deals @Pyritie

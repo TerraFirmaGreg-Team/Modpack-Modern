@@ -61,6 +61,7 @@ function registerTFGHeatData(event) {
 	event.itemHeat('gtceu:wax_dust', 0.25, null, null)
 	event.itemHeat('gtceu:small_wax_dust', 0.25, null, null)
 	event.itemHeat('gtceu:tiny_wax_dust', 0.25, null, null)
+	event.itemHeat('gtceu:wax_ingot', 0.25, null, null)
 	event.itemHeat('gtceu:wax_nugget', 0.25, null, null)
 }
 

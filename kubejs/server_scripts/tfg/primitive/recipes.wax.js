@@ -150,15 +150,8 @@ function registerTFGWaxRecipes(event) {
 		.id("tfg:quern/wax_nugget")
 
 	
-	event.recipes.tfc.quern("gtceu:wax_dust", ["gtceu:wax_ingot", "firmalife:beeswax", "tfg:paraffin_wax", "tfg:conifer_rosin"])
+	event.recipes.tfc.quern("gtceu:wax_dust", ["firmalife:beeswax", "tfg:paraffin_wax", "tfg:conifer_rosin"])
 		.id("tfg:quern/wax_to_dust")
-
-	event.recipes.gtceu.macerator('tfg:wax_ingot_to_dust')
-		.itemInputs("gtceu:wax_ingot")
-		.itemOutputs("gtceu:wax_dust")
-		.duration(50)
-		.EUt(2)
-		.category(GTRecipeCategories.MACERATOR_RECYCLING);
 
 	event.recipes.gtceu.macerator('tfg:beeswax_to_dust')
 		.itemInputs("firmalife:beeswax")
