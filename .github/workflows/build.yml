@@ -124,6 +124,7 @@ jobs:
           build_result: ${{ needs.build.result }}
           release_result: ${{ needs.release.result }}
           make_release: ${{ needs.info.outputs.make_release }}
+          make_pr: ${{ needs.info.outputs.make_pr }}
 
   test:
     name: "[🧪] Project Test"
@@ -143,7 +144,7 @@ jobs:
           loader_type: ${{ needs.info.outputs.loader_type }}
           loader_version: ${{ needs.info.outputs.loader_version }}
           test_mod: forge
-          java_version: "17"
+          java_version: "21"
           pack_artifact: ${{ needs.info.outputs.project_full_name }}-multimc
           server_artifact: ${{ needs.info.outputs.project_full_name }}-serverpack
           artifact_prefix: ${{ needs.info.outputs.project_full_name }}
