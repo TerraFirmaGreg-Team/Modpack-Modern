@@ -8,7 +8,5 @@ function registerTFGAircraftItems(event) {
 
 	event.create('tfg:airship_balloon')
 
-	event.create('tfg:aircraft_sail')
-
 	event.create('tfg:spark_plug_casing')
 }

@@ -177,14 +177,14 @@ function registerImmersiveVehiclesRecipes(event) {
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.beacon_tower_standard')
 		.itemInputs('mts:mtsofficialpack.beacon_top', '8x gtceu:invar_frame', '#forge:dyes/red', '#forge:dyes/white')
 		.itemOutputs('mts:mtsofficialpack.beacon_tower_standard')
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VHA[GTValues.ULV])
 		.duration(100)
 		.circuit(1)
 
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.beacon_tower_inverted')
 		.itemInputs('mts:mtsofficialpack.beacon_top', '8x gtceu:invar_frame', '#forge:dyes/red', '#forge:dyes/white')
 		.itemOutputs('mts:mtsofficialpack.beacon_tower_inverted')
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VHA[GTValues.ULV])
 		.duration(100)
 		.circuit(2)
 
@@ -322,35 +322,27 @@ function registerImmersiveVehiclesRecipes(event) {
 		.itemOutputs('tfg:airship_hull')
 		.duration(40)
 		.circuit(1)
-		.EUt(GTValues.VA[GTValues.ULV]);
+		.EUt(GTValues.VHA[GTValues.ULV]);
 
 	//Airship Balloon
-	event.shaped('tfg:airship_balloon', [
-		'ABA',
-		'BAB',
-		'ABA'
-	], {
-		A: '#forge:string',
-		B: 'immersive_aircraft:sail'
-	}).id('tfg:shaped/airship_balloon')
+	event.recipes.tfc.damage_inputs_shaped_crafting(
+		event.shaped('tfg:airship_balloon', [
+			'ABA',
+			'BAB',
+			'ACA'
+		], {
+			A: '#forge:string',
+			B: 'firmaciv:small_triangular_sail',
+			C: '#tfc:sewing_needles'
+		})
+	).id('tfg:shaped/airship_balloon')
 
 	event.recipes.gtceu.assembler('tfg:assembler/airship_balloon')
-		.itemInputs('4x immersive_aircraft:sail', '4x #forge:string')
+		.itemInputs('3x firmaciv:small_triangular_sail', '4x #forge:string')
 		.itemOutputs('tfg:airship_balloon')
 		.duration(40)
 		.circuit(1)
-		.EUt(GTValues.VA[GTValues.ULV])
-
-	// Aircraft Sail
-	event.shaped('tfg:aircraft_sail', [
-		'ABA',
-		'BCB',
-		'ABA'
-	], {
-		A: 'gtceu:wrought_iron_screw',
-		B: '#forge:cloth',
-		C: '#minecraft:trapdoors'
-	}).id('tfg:shaped/sail');
+		.EUt(GTValues.VHA[GTValues.ULV])
 
 	// Sparkplug
 
@@ -372,33 +364,33 @@ function registerImmersiveVehiclesRecipes(event) {
 		.itemInputs('tfg:spark_plug_casing', '2x #forge:bolts/copper', '2x #forge:foils/steel', '#forge:rings/steel', '#forge:fine_wires/tin', '#forge:rods/invar')
 		.itemOutputs('mts:mtsofficialpack.sparkplug')
 		.duration(60)
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VHA[GTValues.LV])
 
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.sparkplug_mv')
 		.itemInputs('2x tfg:spark_plug_casing', '2x #forge:bolts/chromium', '2x #forge:foils/aluminium', '#forge:rings/aluminium', '#forge:fine_wires/copper', '#forge:rods/cupronickel')
 		.itemOutputs('2x mts:mtsofficialpack.sparkplug')
 		.duration(60)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VHA[GTValues.MV])
 
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.sparkplug_hv')
 		.itemInputs('4x tfg:spark_plug_casing', '2x #forge:bolts/platinum', '2x #forge:foils/stainless_steel', '#forge:rings/stainless_steel', '#forge:fine_wires/gold', '#forge:rods/nichrome')
 		.itemOutputs('4x mts:mtsofficialpack.sparkplug')
 		.duration(60)
-		.EUt(GTValues.VA[GTValues.HV])
+		.EUt(GTValues.VHA[GTValues.HV])
 
 	event.recipes.gtceu.alloy_smelter('tfg:spark_plug_casing_fireclay')
 		.itemInputs('tfc:fire_clay')
 		.notConsumable('gtceu:tiny_pipe_casting_mold')
 		.itemOutputs('tfg:spark_plug_casing')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VHA[GTValues.LV])
 
 	event.recipes.gtceu.alloy_smelter('tfg:spark_plug_casing_alumina')
 		.itemInputs('#tfg:aluminium_oxide')
 		.notConsumable('gtceu:tiny_pipe_casting_mold')
 		.itemOutputs('tfg:spark_plug_casing')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VHA[GTValues.LV])
 
 	// Headlights
 
@@ -406,15 +398,22 @@ function registerImmersiveVehiclesRecipes(event) {
 		.itemInputs('2x #forge:foils/silver', '#forge:glass', '#forge:single_cables/tin')
 		.inputFluids(Fluid.of('gtceu:glowstone', 144))
 		.itemOutputs('mts:mtsofficialpack.headlight')
-		.duration(100)
-		.EUt(GTValues.VA[GTValues.LV])
+		.duration(50)
+		.EUt(GTValues.VHA[GTValues.LV])
+
+	event.recipes.gtceu.assembler('mts:mtsofficialpack.headlight_chromium')
+		.itemInputs('2x #forge:foils/chromium', '#forge:glass', '#forge:single_cables/copper')
+		.inputFluids(Fluid.of('gtceu:glowstone', 144))
+		.itemOutputs('2x mts:mtsofficialpack.headlight')
+		.duration(50)
+		.EUt(GTValues.VHA[GTValues.MV])
 
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.headlight_platinum')
 		.itemInputs('2x #forge:foils/platinum', '#forge:glass', '#forge:single_cables/gold')
 		.inputFluids(Fluid.of('gtceu:glowstone', 144))
 		.itemOutputs('4x mts:mtsofficialpack.headlight')
-		.duration(100)
-		.EUt(GTValues.VA[GTValues.LV])
+		.duration(50)
+		.EUt(GTValues.VHA[GTValues.HV])
 
 	// #endregion
 }

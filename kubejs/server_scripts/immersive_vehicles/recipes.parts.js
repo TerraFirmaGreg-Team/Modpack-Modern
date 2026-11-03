@@ -39,6 +39,27 @@ function registerImmersiveVehiclesPartsRecipes(event) {
 		A: '#forge:gears/steel',
 		B: '#tfg:rubber_plates'
 	}).id('mts:mtsofficialpack.wheelhuge')
+
+	event.shaped('mts:belroftmotors.concave_truck_wheel', [
+		'BBB',
+		' A ',
+		'BBB'
+	], {
+		A: '#forge:small_gears/steel',
+		B: '#tfg:rubber_plates'
+	}).id('mts:belroftmotors.concave_truck_wheel')
+
+	event.shaped('mts:belroftmotors.convex_truck_wheel', [
+		'B B',
+		'BAB',
+		'B B'
+	], {
+		A: '#forge:small_gears/steel',
+		B: '#tfg:rubber_plates'
+	}).id('mts:belroftmotors.convex_truck_wheel')
+
+	event.shapeless('mts:belroftmotors.convex_truck_wheel', ['mts:belroftmotors.concave_truck_wheel', '#forge:tools/screwdrivers'])
+	event.shapeless('mts:belroftmotors.concave_truck_wheel', ['mts:belroftmotors.convex_truck_wheel', '#forge:tools/screwdrivers'])
 	// #endregion
 
 	// #region Propellers
@@ -59,7 +80,7 @@ function registerImmersiveVehiclesPartsRecipes(event) {
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.propellersmall3blade')
 		.itemInputs('#forge:rings/steel', '3x #forge:rods/long/steel', '#forge:screws/steel')
 		.itemOutputs('mts:mtsofficialpack.propellersmall3blade')
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VHA[GTValues.ULV])
 		.duration(100)
 
 	event.shaped('mts:mtsofficialpack.propellersmall2blade', [
@@ -78,7 +99,7 @@ function registerImmersiveVehiclesPartsRecipes(event) {
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.propellersmall2blade')
 		.itemInputs('#forge:rings/cobalt_brass', '2x #forge:rods/long/cobalt_brass', '#forge:screws/steel')
 		.itemOutputs('mts:mtsofficialpack.propellersmall2blade')
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VHA[GTValues.ULV])
 		.duration(100)
 
 	event.shaped('mts:mtsofficialpack.propellerlarge2blade', [
@@ -95,7 +116,7 @@ function registerImmersiveVehiclesPartsRecipes(event) {
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.propellerlarge2blade')
 		.itemInputs('#forge:rotors/aluminium', '4x #forge:rods/long/aluminium', '#forge:screws/steel')
 		.itemOutputs('mts:mtsofficialpack.propellerlarge2blade')
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VHA[GTValues.ULV])
 		.duration(100)
 
 	event.recipes.create.mechanical_crafting('mts:mtsofficialpack.propellerrotor', [
@@ -110,7 +131,7 @@ function registerImmersiveVehiclesPartsRecipes(event) {
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.propellerrotor')
 		.itemInputs('#forge:rotors/steel', '6x #forge:rods/long/black_steel', '#forge:screws/steel')
 		.itemOutputs('mts:mtsofficialpack.propellerrotor')
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VHA[GTValues.ULV])
 		.duration(100)
 
 	event.recipes.create.mechanical_crafting('mts:mtsofficialpack.propellerrotor206', [
@@ -125,7 +146,7 @@ function registerImmersiveVehiclesPartsRecipes(event) {
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.propellerrotor206')
 		.itemInputs('#forge:rotors/aluminium', '8x #forge:rods/long/aluminium', '#forge:screws/steel')
 		.itemOutputs('mts:mtsofficialpack.propellerrotor206')
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VHA[GTValues.ULV])
 		.duration(100)
 
 	event.shapeless('mts:belroftmotors.tuna_propeller',
@@ -154,7 +175,7 @@ function registerImmersiveVehiclesPartsRecipes(event) {
 		.itemInputs('2x #forge:leather', '2x #minecraft:wooden_slabs', '2x #forge:screws')
 		.itemOutputs('mts:mtsofficialpack.carseat_brown')
 		.duration(50)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VHA[GTValues.ULV])
 
 	event.recipes.tfc.barrel_sealed(1000)
 		.inputs(Ingredient.of('#mts:carseats').subtract(`mts:mtsofficialpack.carseat_brown`), Fluid.of(`tfc:lye`, 144))
@@ -218,7 +239,7 @@ function registerImmersiveVehiclesPartsRecipes(event) {
 			.itemInputs(`create:${seat.dye}_seat`, '2x #forge:screws')
 			.itemOutputs(`mts:mtsofficialpack.seat${seat.mts}`)
 			.duration(50)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(GTValues.VHA[GTValues.ULV])
 			.circuit(2)
 
 		if (seat.create !== 'white') {

@@ -43,14 +43,14 @@ const registerTFCDataForImmersiveVehicles = (event) => {
 	event.itemSize('#mts:bullfrog', 'huge', 'very_heavy');
 	event.itemSize('#mts:citadel', 'huge', 'very_heavy');
 	event.itemSize('#mts:corallum', 'huge', 'very_heavy');
-	event.itemSize('#mts:fisker_a', 'huge', 'very_heavy');
-	event.itemSize('#mts:fisker_b', 'huge', 'very_heavy');
-	event.itemSize('#mts:harpy', 'huge', 'very_heavy');
+	event.itemSize('#mts:fisker', 'huge', 'very_heavy');
 	event.itemSize('#mts:dry_van', 'huge', 'very_heavy');
 	event.itemSize('#mts:tanker', 'huge', 'very_heavy');
 	event.itemSize('#mts:keeper', 'huge', 'very_heavy');
-	event.itemSize('#mts:nugget', 'huge', 'very_heavy');
+	event.itemSize('#mts:brotchen', 'huge', 'very_heavy');
 	event.itemSize('#mts:silver', 'huge', 'very_heavy');
+	event.itemSize('#mts:paragon', 'huge', 'very_heavy');
+	event.itemSize('#mts:starfish', 'huge', 'very_heavy');
 
 	event.itemSize('#mts:brigtrailers', 'huge', 'very_heavy');
     event.itemSize('mts:mtsofficialpack.auxiliary_tank', 'normal', 'heavy');

@@ -381,17 +381,6 @@ function registerImmersiveVehiclesUpgradeRecipes(event) {
 		D: '#forge:tools/wrenches'
 	}).id('mts:belroftmotors.fifthwheel_brig')
 
-	event.shaped('mts:belroftmotors.fifthwheel_harpy', [
-		'ACD',
-		'BB ',
-		'AC '
-	], {
-		A: '#forge:rings/steel',
-		B: '#forge:plates/steel',
-		C: '#forge:bolts/steel',
-		D: '#forge:tools/wrenches'
-	}).id('mts:belroftmotors.fifthwheel_harpy')
-
 	event.shaped('mts:belroftmotors.keeper_bullbar', [
 		' A ',
 		'BCB',
@@ -411,6 +400,60 @@ function registerImmersiveVehiclesUpgradeRecipes(event) {
 		C: '#forge:foils/steel',
 		D: '#forge:tools/wrenches'
 	}).id('mts:belroftmotors.keeperroofrack')
+
+	event.shaped('mts:belroftmotors.keeper_sidestep', [
+		'A A',
+		'BBB',
+		'C  '
+	], {
+		A: '#forge:bolts/steel',
+		B: '#forge:plates/steel',
+		C: '#forge:tools/wrenches'
+	}).id('mts:belroftmotors.keeper_sidestep')
+
+	event.shaped('mts:belroftmotors.adventure_sidestep', [
+		'A A',
+		'BBB',
+		'  C'
+	], {
+		A: '#forge:bolts/steel',
+		B: '#forge:plates/steel',
+		C: '#forge:tools/wrenches'
+	}).id('mts:belroftmotors.adventure_sidestep')
+
+	event.shaped('mts:belroftmotors.brotchen_extra_pedals', [
+		'AAA',
+		'BBB'
+	], {
+		A: '#forge:bolts/steel',
+		B: ['#forge:plates/bakelite', '#forge:plates/polyethylene']
+	}).id('mts:belroftmotors.brotchen_extra_pedals')
+
+	event.shaped('mts:belroftmotors.federal_plate', [
+		'AAB'
+	], {
+		A: ['#forge:plates/bakelite', '#forge:plates/polyethylene'],
+		B: '#forge:tools/files'
+	}).id('mts:belroftmotors.federal_plate')
+
+	event.shaped('mts:belroftmotors.union_plate', [
+		'BAA'
+	], {
+		A: ['#forge:plates/bakelite', '#forge:plates/polyethylene'],
+		B: '#forge:tools/files'
+	}).id('mts:belroftmotors.union_plate')
+
+	event.shaped('mts:belroftmotors.searchlight_boat', [
+		'AD',
+		'BC'
+	], {
+		A: '#gtceu:lamps',
+		B: '#forge:rods/steel',
+		C: 'gtceu:lv_electric_motor',
+		D: 'tfc:lens'
+	}).id('mts:belroftmotors.searchlight_boat')
+
+	// Automotives
 
 	event.shaped('mts:automotives.upgrade_airhorn', [
 		'ABC',

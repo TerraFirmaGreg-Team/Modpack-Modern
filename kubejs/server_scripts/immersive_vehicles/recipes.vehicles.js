@@ -7,14 +7,14 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 	event.recipes.create.mechanical_crafting('mts:automotives.biplane', [
 		'    C    ',
 		'ADDBEBDDA',
-		' AADHDAA ',
+		'  ADHDA  ',
 		'  GBDBG  ',
 		'    D    ',
 		'   BAB   ',
 		'   DFD   ',
-		'   ADA   '
+		'    A    '
 	], {
-		A: 'tfg:aircraft_sail',
+		A: 'firmaciv:small_triangular_sail',
 		B: '#forge:plates/black_steel',
 		C: 'mts:mtsofficialpack.propellersmall3blade',
 		D: 'create:brass_casing',
@@ -26,11 +26,11 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 
 	event.recipes.gtceu.automotive_workshop('mts:automotives.biplane')
 		.itemInputs(
-			'11x create:brass_casing', '9x tfg:aircraft_sail', '6x #forge:plates/black_steel',
+			'10x create:brass_casing', '6x firmaciv:small_triangular_sail', '6x #forge:plates/black_steel',
 			'2x mts:mtsofficialpack.wheelmedium', 'tfg:generators/steel_combustion_engine', '#create:seats',
 			'create:fluid_tank', 'mts:mtsofficialpack.propellersmall3blade')
 		.itemOutputs('mts:automotives.biplane')
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VHA[GTValues.LV])
 		.duration(60 * 20)
 		.addMaterialInfo(true)
 		
@@ -53,7 +53,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 				Fluid.of('gtceu:soldering_alloy', 8 * 144), 
 				Fluid.of(`tfc:${bell.dye}_dye`, 8 * 144))
 			.itemOutputs(`mts:mtsofficialpack.bell47g${bell.suffix}`)
-			.EUt(GTValues.VA[GTValues.LV])
+			.EUt(GTValues.VHA[GTValues.LV])
 			.duration(60 * 20)
 			.circuit(1)
 			.addMaterialInfo(true)
@@ -86,7 +86,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 				Fluid.of('gtceu:polyethylene', 5 * 144),
 				Fluid.of(`tfc:${bell.dye}_dye`, 8 * 144))
 			.itemOutputs(`mts:mtsofficialpack.bell206_${bell.suffix}`)
-			.EUt(GTValues.VA[GTValues.MV])
+			.EUt(GTValues.VHA[GTValues.MV])
 			.duration(60 * 20)
 			.circuit(1)
 			.addMaterialInfo(true, true)
@@ -109,7 +109,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 				Fluid.of('gtceu:soldering_alloy', 10 * 144),
 				Fluid.of(`tfc:${pzlp11.dye}_dye`, 10 * 144))
 			.itemOutputs(`mts:mtsofficialpack.pzlp11${pzlp11.suffix}`)
-			.EUt(GTValues.VA[GTValues.LV])
+			.EUt(GTValues.VHA[GTValues.LV])
 			.duration(60 * 20)
 			.circuit(2)
 			.addMaterialInfo(true)
@@ -133,7 +133,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 				Fluid.of('gtceu:soldering_alloy', 14 * 144),
 				Fluid.of(`tfc:${pzl37.dye}_dye`, 14 * 144))
 			.itemOutputs(`mts:mtsofficialpack.pzl37los${pzl37.suffix}`)
-			.EUt(GTValues.VA[GTValues.LV])
+			.EUt(GTValues.VHA[GTValues.LV])
 			.duration(60 * 20)
 			.circuit(3)
 			.addMaterialInfo(true)
@@ -159,7 +159,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 				Fluid.of('gtceu:polyethylene', 30 * 144),
 				Fluid.of(`tfc:${trimotor.dye}_dye`, 4 * 144))
 			.itemOutputs(`mts:mtsofficialpack.trimotor_${trimotor.suffix}`)
-			.EUt(GTValues.VA[GTValues.MV])
+			.EUt(GTValues.VHA[GTValues.MV])
 			.duration(60 * 20)
 			.circuit(2)
 			.addMaterialInfo(true)
@@ -186,7 +186,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 				Fluid.of('gtceu:polyethylene', 12 * 144),
 				Fluid.of(`tfc:${comanche.dye}_dye`, 10 * 144))
 			.itemOutputs(`mts:mtsofficialpack.comanche_${comanche.suffix}`)
-			.EUt(GTValues.VA[GTValues.MV])
+			.EUt(GTValues.VHA[GTValues.MV])
 			.duration(60 * 20)
 			.circuit(3)
 			.addMaterialInfo(true)
@@ -218,7 +218,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 				Fluid.of('gtceu:polyethylene', 10 * 144),
 				Fluid.of(`tfc:${skyhawk.dye}_dye`, 10 * 144))
 			.itemOutputs(`mts:mtsofficialpack.skyhawk_${skyhawk.suffix}`)
-			.EUt(GTValues.VA[GTValues.MV])
+			.EUt(GTValues.VHA[GTValues.MV])
 			.duration(60 * 20)
 			.circuit(4 + skyhawk.alt)
 			.addMaterialInfo(true)
@@ -250,7 +250,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 				Fluid.of('gtceu:polyvinyl_chloride', 16 * 144),
 				Fluid.of(`tfc:${vulcanair.dye}_dye`, 12 * 144))
 			.itemOutputs(`mts:mtsofficialpack.vulcanair_${vulcanair.suffix}`)
-			.EUt(GTValues.VA[GTValues.HV])
+			.EUt(GTValues.VHA[GTValues.HV])
 			.duration(60 * 20)
 			.circuit(1 + vulcanair.alt)
 			.addMaterialInfo(true)
@@ -277,7 +277,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 				Fluid.of('gtceu:polyvinyl_chloride', 16 * 144),
 				Fluid.of(`tfc:${eclipse.dye}_dye`, 12 * 144))
 			.itemOutputs(`mts:mtsofficialpack.e500_${eclipse.suffix}`)
-			.EUt(GTValues.VA[GTValues.HV])
+			.EUt(GTValues.VHA[GTValues.HV])
 			.duration(60 * 20)
 			.circuit(3)
 			.addMaterialInfo(true)
@@ -304,24 +304,20 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 		{ suffix: 'white', dye: 'white', alt: 0 },
 		{ suffix: 'yellow', dye: 'yellow', alt: 0 },
 	];
-	const fisker_types = ['a', 'b']
-	fisker_types.forEach(type => {
-		let circuit = type === 'a' ? 4 : 6;
-		fiskers.forEach(fisker => {
-			event.recipes.gtceu.automotive_workshop(`mts:belroftmotors.fisker_type_${type}_${fisker.suffix}`)
-				.itemInputs('mts:belroftmotors.engine_tuna', '6x #forge:glass', '2x #forge:frames/invar',
-					'8x #forge:plates/invar', '#gtceu:circuits/lv', 'create:controls',
-					'2x #gtceu:batteries/lv', '4x #forge:single_cables/tin', 'mts:belroftmotors.tuna_propeller')
-				.inputFluids(
-					Fluid.of('gtceu:rubber', 16 * 144), 
-					Fluid.of('gtceu:soldering_alloy', 4 * 144), 
-					Fluid.of(`tfc:${fisker.dye}_dye`, 6 * 144))
-				.itemOutputs(`mts:belroftmotors.fisker_type_${type}_${fisker.suffix}`)
-				.EUt(GTValues.VA[GTValues.LV])
-				.duration(60 * 20)
-				.circuit(circuit + fisker.alt)
-				.addMaterialInfo(true)
-		})
+	fiskers.forEach(fisker => {
+		event.recipes.gtceu.automotive_workshop(`mts:belroftmotors.fisker_type_a_${fisker.suffix}`)
+			.itemInputs('mts:belroftmotors.engine_tuna', '6x #forge:glass', '2x #forge:frames/invar',
+				'8x #forge:plates/invar', '#gtceu:circuits/lv', 'create:controls',
+				'2x #gtceu:batteries/lv', '4x #forge:single_cables/tin', 'mts:belroftmotors.tuna_propeller')
+			.inputFluids(
+				Fluid.of('gtceu:rubber', 16 * 144), 
+				Fluid.of('gtceu:soldering_alloy', 4 * 144), 
+				Fluid.of(`tfc:${fisker.dye}_dye`, 6 * 144))
+			.itemOutputs(`mts:belroftmotors.fisker_type_a_${fisker.suffix}`)
+			.EUt(GTValues.VHA[GTValues.LV])
+			.duration(60 * 20)
+			.circuit(4 + fisker.alt)
+			.addMaterialInfo(true)
 	})
 
 	const corallums = [
@@ -334,7 +330,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 		{ suffix: 'coral', dye: 'orange', alt: 1 },
 		{ suffix: 'coralius', dye: 'orange', alt: 2 },
 		{ suffix: 'cyan', dye: 'cyan', alt: 0 },
-		{ suffix: 'emerald', dye: 'green', alt: 0 },
+		{ suffix: 'emerald', dye: 'lime', alt: 0 },
 		{ suffix: 'gray', dye: 'gray', alt: 0 },
 		{ suffix: 'khaki', dye: 'light_gray', alt: 0 },
 		{ suffix: 'khaki_steelie', dye: 'light_gray', alt: 1 },
@@ -347,6 +343,10 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 		{ suffix: 'tan', dye: 'yellow', alt: 1 },
 		{ suffix: 'white', dye: 'white', alt: 0 },
 		{ suffix: 'yellow', dye: 'yellow', alt: 0 },
+		{ suffix: 'police_black', dye: 'black', alt: 2 },
+		{ suffix: 'police_blue', dye: 'blue', alt: 2 },
+		{ suffix: 'police_green', dye: 'lime', alt: 1 },
+		{ suffix: 'police_orange', dye: 'brown', alt: 1 }
 	];
 
 	corallums.forEach(corallum => {
@@ -360,9 +360,50 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 				Fluid.of('gtceu:soldering_alloy', 6 * 144), 
 				Fluid.of(`tfc:${corallum.dye}_dye`, 6 * 144))
 			.itemOutputs(`mts:belroftmotors.corallum_${corallum.suffix}`)
-			.EUt(GTValues.VA[GTValues.MV])
+			.EUt(GTValues.VHA[GTValues.MV])
 			.duration(60 * 20)
 			.circuit(6 + corallum.alt)
+			.addMaterialInfo(true)
+	})
+
+	const starfishes = [
+		{ suffix: 'black', dye: 'black', alt: 0 },
+		{ suffix: 'black_red', dye: 'black', alt: 1 },
+		{ suffix: 'blue', dye: 'blue', alt: 0 },
+		{ suffix: 'brown', dye: 'brown', alt: 0 },
+		{ suffix: 'cherry_red', dye: 'red', alt: 1 },
+		{ suffix: 'copper', dye: 'orange', alt: 0 },
+		{ suffix: 'coral', dye: 'orange', alt: 1 },
+		{ suffix: 'cyan', dye: 'cyan', alt: 0 },
+		{ suffix: 'emerald', dye: 'green', alt: 0 },
+		{ suffix: 'gray', dye: 'gray', alt: 0 },
+		{ suffix: 'green', dye: 'lime', alt: 0 },
+		{ suffix: 'khaki', dye: 'light_gray', alt: 0 },
+		{ suffix: 'marine', dye: 'blue', alt: 1 },
+		{ suffix: 'olive', dye: 'green', alt: 1 },
+		{ suffix: 'phantom', dye: 'gray', alt: 1 },
+		{ suffix: 'purple', dye: 'purple', alt: 0 },
+		{ suffix: 'purple_black', dye: 'purple', alt: 1 },
+		{ suffix: 'red', dye: 'red', alt: 0 },
+		{ suffix: 'tan', dye: 'yellow', alt: 1 },
+		{ suffix: 'white', dye: 'white', alt: 0 },
+		{ suffix: 'yellow', dye: 'yellow', alt: 0 }
+	];
+
+	starfishes.forEach(starfish => {
+		event.recipes.gtceu.automotive_workshop(`mts:belroftmotors.starfish_${starfish.suffix}`)
+			.itemInputs('3x mts:belroftmotors.engine_barracuda', '4x gtceu:tempered_glass', '2x #forge:frames/stainless_steel',
+				'8x #forge:plates/vanadium_steel', '2x #gtceu:circuits/hv', 'create:controls', 
+				'2x gtceu:computer_monitor_cover', '4x #gtceu:batteries/hv', '8x #forge:single_cables/gold',
+				'3x mts:belroftmotors.barracuda_propeller')
+			.inputFluids(
+				Fluid.of('gtceu:polyvinyl_chloride', 16 * 144), 
+				Fluid.of('tfg:woods_metal', 6 * 144), 
+				Fluid.of(`tfc:${starfish.dye}_dye`, 6 * 144))
+			.itemOutputs(`mts:belroftmotors.starfish_${starfish.suffix}`)
+			.EUt(GTValues.VHA[GTValues.HV])
+			.duration(60 * 20)
+			.circuit(9 + starfish.alt)
 			.addMaterialInfo(true)
 	})
 	// #endregion
@@ -399,7 +440,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 			'steampowered:bronze_steam_engine', 'create:blaze_burner', '6x #forge:shafts',
 			'2x create:fluid_tank', '#tfg:smokestacks', 'create:precision_mechanism')
 		.itemOutputs('mts:automotives.boilerbox')
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VHA[GTValues.LV])
 		.duration(60 * 20)
 		.addMaterialInfo(true)
 
@@ -426,7 +467,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 				Fluid.of('gtceu:soldering_alloy', 6 * 144),
 				Fluid.of(`tfc:${quad.dye}_dye`, 6 * 144))
 			.itemOutputs(`mts:mtsofficialpack.quad_${quad.suffix}`)
-			.EUt(GTValues.VA[GTValues.LV])
+			.EUt(GTValues.VHA[GTValues.LV])
 			.duration(60 * 20)
 			.circuit(8)
 			.addMaterialInfo(true)
@@ -457,13 +498,13 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 				Fluid.of('gtceu:soldering_alloy', 6 * 144),
 				Fluid.of(`tfc:${silver.dye}_dye`, 6 * 144))
 			.itemOutputs(`mts:belroftmotors.silver_${silver.suffix}`)
-			.EUt(GTValues.VA[GTValues.LV])
+			.EUt(GTValues.VHA[GTValues.LV])
 			.duration(60 * 20)
 			.circuit(9 + silver.alt)
 			.addMaterialInfo(true)
 	})
 
-	const nuggets = [
+	const brotchens = [
 		{ suffix: 'black', dye: 'black', alt: 0 },
 		{ suffix: 'blue', dye: 'blue', alt: 0 },
 		{ suffix: 'brown', dye: 'brown', alt: 0 },
@@ -473,30 +514,29 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 		{ suffix: 'emerald', dye: 'green', alt: 0 },
 		{ suffix: 'gray', dye: 'gray', alt: 0 },
 		{ suffix: 'green', dye: 'lime', alt: 0 },
-		{ suffix: 'police_black', dye: 'black', alt: 1 },
-		{ suffix: 'police_blue', dye: 'blue', alt: 1 },
-		{ suffix: 'police_green', dye: 'green', alt: 1 },
+		{ suffix: 'khaki', dye: 'light_gray', alt: 0 },
+		{ suffix: 'marine', dye: 'blue', alt: 1 },
+		{ suffix: 'olive', dye: 'green', alt: 1 },
 		{ suffix: 'purple', dye: 'purple', alt: 0 },
 		{ suffix: 'red', dye: 'red', alt: 0 },
 		{ suffix: 'tan', dye: 'yellow', alt: 1 },
 		{ suffix: 'white', dye: 'white', alt: 0 },
-		{ suffix: 'white_sport', dye: 'white', alt: 1 },
 		{ suffix: 'yellow', dye: 'yellow', alt: 0 },
 	];
-	nuggets.forEach(silver => {
-		event.recipes.gtceu.automotive_workshop(`mts:belroftmotors.nugget_${silver.suffix}`)
+	brotchens.forEach(brotchen => {
+		event.recipes.gtceu.automotive_workshop(`mts:belroftmotors.brotchen_${brotchen.suffix}`)
 			.itemInputs(
 				'mts:belroftmotors.bee_i3_engine', '#create:valve_handles', '6x #forge:glass',
 				'2x #gtceu:circuits/lv', 'create:precision_mechanism', '2x #gtceu:batteries/lv',
 				'8x #forge:plates/invar', '2x #forge:frames/invar', 'gtceu:lv_machine_hull',
-				'4x mts:mtsofficialpack.headlight', '3x #forge:springs/steel')
+				'4x mts:mtsofficialpack.headlight', '4x #forge:springs/steel')
 			.inputFluids(
 				Fluid.of('gtceu:soldering_alloy', 8 * 144),
-				Fluid.of(`tfc:${silver.dye}_dye`, 6 * 144))
-			.itemOutputs(`mts:belroftmotors.nugget_${silver.suffix}`)
-			.EUt(GTValues.VA[GTValues.LV])
+				Fluid.of(`tfc:${brotchen.dye}_dye`, 6 * 144))
+			.itemOutputs(`mts:belroftmotors.brotchen_${brotchen.suffix}`)
+			.EUt(GTValues.VHA[GTValues.LV])
 			.duration(60 * 20)
-			.circuit(11 + silver.alt)
+			.circuit(11 + brotchen.alt)
 			.addMaterialInfo(true)
 	})
 
@@ -525,7 +565,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 				Fluid.of('gtceu:soldering_alloy', 8 * 144),
 				Fluid.of(`tfc:${bullfrog.dye}_dye`, 6 * 144))
 			.itemOutputs(`mts:belroftmotors.bullfrog_${bullfrog.suffix}`)
-			.EUt(GTValues.VA[GTValues.LV])
+			.EUt(GTValues.VHA[GTValues.LV])
 			.duration(60 * 20)
 			.circuit(13 + bullfrog.alt)
 			.addMaterialInfo(true)
@@ -557,7 +597,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 				Fluid.of('gtceu:soldering_alloy', 8 * 144),
 				Fluid.of(`tfc:${scout.dye}_dye`, 6 * 144))
 			.itemOutputs(`mts:mtsofficialpack.scout_${scout.suffix}`)
-			.EUt(GTValues.VA[GTValues.LV])
+			.EUt(GTValues.VHA[GTValues.LV])
 			.duration(60 * 20)
 			.circuit(15 + scout.alt)
 			.addMaterialInfo(true)
@@ -587,7 +627,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 				Fluid.of('gtceu:soldering_alloy', 10 * 144),
 				Fluid.of(`tfc:${brigadier.dye}_dye`, 8 * 144))
 			.itemOutputs(`mts:mtsofficialpack.gmcbrig_${brigadier.suffix}`)
-			.EUt(GTValues.VA[GTValues.LV])
+			.EUt(GTValues.VHA[GTValues.LV])
 			.duration(60 * 20)
 			.circuit(17 + brigadier.alt)
 			.addMaterialInfo(true)
@@ -613,6 +653,9 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 		{ suffix: 'tan', dye: 'yellow', alt: 0 },
 		{ suffix: 'white', dye: 'white', alt: 0 },
 		{ suffix: 'yellow', dye: 'yellow', alt: 0 },
+		{ suffix: 'ambulance_green_yellow', dye: 'yellow', alt: 1 },
+		{ suffix: 'ambulance_orange', dye: 'orange', alt: 1 },
+		{ suffix: 'ambulance_red', dye: 'white', alt: 1 }
 	];
 	adventures.forEach(adventure => {
 		event.recipes.gtceu.automotive_workshop(`mts:belroftmotors.adventure_${adventure.suffix}`)
@@ -626,7 +669,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 				Fluid.of('gtceu:polyethylene', 10 * 144),
 				Fluid.of(`tfc:${adventure.dye}_dye`, 8 * 144))
 			.itemOutputs(`mts:belroftmotors.adventure_${adventure.suffix}`)
-			.EUt(GTValues.VA[GTValues.MV])
+			.EUt(GTValues.VHA[GTValues.MV])
 			.duration(60 * 20)
 			.circuit(9 + adventure.alt)
 			.addMaterialInfo(true)
@@ -650,9 +693,10 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 		{ suffix: 'police_green', dye: 'lime', alt: 1 },
 		{ suffix: 'purple', dye: 'purple', alt: 0 },
 		{ suffix: 'red', dye: 'red', alt: 0 },
-		{ suffix: 'tan', dye: 'yellow', alt: 0 },
+		{ suffix: 'tan', dye: 'yellow', alt: 1 },
 		{ suffix: 'white', dye: 'white', alt: 0 },
 		{ suffix: 'yellow', dye: 'yellow', alt: 0 },
+		{ suffix: 'fire_chief', dye: 'white', alt: 1 }
 	];
 	keepers.forEach(keeper => {
 		event.recipes.gtceu.automotive_workshop(`mts:belroftmotors.keeper_${keeper.suffix}`)
@@ -666,46 +710,51 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 				Fluid.of('gtceu:polyethylene', 10 * 144),
 				Fluid.of(`tfc:${keeper.dye}_dye`, 8 * 144))
 			.itemOutputs(`mts:belroftmotors.keeper_${keeper.suffix}`)
-			.EUt(GTValues.VA[GTValues.MV])
+			.EUt(GTValues.VHA[GTValues.MV])
 			.duration(60 * 20)
 			.circuit(11 + keeper.alt)
 			.addMaterialInfo(true)
 	})
 
-	const harpies = [
+	const paragons = [
+		{ suffix: 'andesite', dye: 'light_gray', alt: 1 },
 		{ suffix: 'black', dye: 'black', alt: 0 },
 		{ suffix: 'blue', dye: 'blue', alt: 0 },
 		{ suffix: 'brown', dye: 'brown', alt: 0 },
 		{ suffix: 'cherry_red', dye: 'red', alt: 1 },
 		{ suffix: 'copper', dye: 'orange', alt: 0 },
 		{ suffix: 'cyan', dye: 'cyan', alt: 0 },
+		{ suffix: 'dandelion', dye: 'lime', alt: 1 },
 		{ suffix: 'emerald', dye: 'green', alt: 0 },
 		{ suffix: 'gray', dye: 'gray', alt: 0 },
 		{ suffix: 'green', dye: 'lime', alt: 0 },
 		{ suffix: 'khaki', dye: 'light_gray', alt: 0 },
 		{ suffix: 'marine', dye: 'cyan', alt: 1 },
+		{ suffix: 'morning_grass', dye: 'white', alt: 1 },
 		{ suffix: 'olive', dye: 'green', alt: 1 },
 		{ suffix: 'purple', dye: 'purple', alt: 0 },
 		{ suffix: 'red', dye: 'red', alt: 0 },
-		{ suffix: 'tan', dye: 'yellow', alt: 0 },
+		{ suffix: 'sea_breeze', dye: 'light_blue', alt: 0 },
+		{ suffix: 'sunrise', dye: 'yellow', alt: 1 },
+		{ suffix: 'tan', dye: 'brown', alt: 1 },
 		{ suffix: 'white', dye: 'white', alt: 0 },
 		{ suffix: 'yellow', dye: 'yellow', alt: 0 },
 	];
-	harpies.forEach(harpy => {
-		event.recipes.gtceu.automotive_workshop(`mts:belroftmotors.harpy_${harpy.suffix}`)
+	paragons.forEach(paragon => {
+		event.recipes.gtceu.automotive_workshop(`mts:belroftmotors.paragon_${paragon.suffix}`)
 			.itemInputs(
-				'mts:belroftmotors.engine_granite', '#create:valve_handles', '6x gtceu:tempered_glass',
-				'2x #gtceu:circuits/mv', '2x gtceu:computer_monitor_cover', '4x #gtceu:batteries/mv',
+				'mts:belroftmotors.engine_flatliner_h8', '#create:valve_handles', '10x gtceu:tempered_glass',
+				'2x #gtceu:circuits/mv', '6x mts:belroftmotors.convex_truck_wheel', '4x #gtceu:batteries/mv',
 				'16x #forge:plates/magnalium', '6x #forge:frames/aluminium', '2x gtceu:mv_machine_hull',
-				'6x mts:mtsofficialpack.headlight', '6x #forge:springs/aluminium')
+				'6x mts:mtsofficialpack.headlight', '4x #forge:springs/aluminium')
 			.inputFluids(
 				Fluid.of('gtceu:soldering_alloy', 14 * 144),
 				Fluid.of('gtceu:polyethylene', 14 * 144),
-				Fluid.of(`tfc:${harpy.dye}_dye`, 10 * 144))
-			.itemOutputs(`mts:belroftmotors.harpy_${harpy.suffix}`)
-			.EUt(GTValues.VA[GTValues.MV])
+				Fluid.of(`tfc:${paragon.dye}_dye`, 10 * 144))
+			.itemOutputs(`mts:belroftmotors.paragon_${paragon.suffix}`)
+			.EUt(GTValues.VHA[GTValues.MV])
 			.duration(60 * 20)
-			.circuit(13 + harpy.alt)
+			.circuit(13 + paragon.alt)
 			.addMaterialInfo(true)
 	})
 
@@ -724,7 +773,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 		{ suffix: 'olive', dye: 'green', alt: 1 },
 		{ suffix: 'purple', dye: 'purple', alt: 0 },
 		{ suffix: 'red', dye: 'red', alt: 0 },
-		{ suffix: 'tan', dye: 'yellow', alt: 0 },
+		{ suffix: 'tan', dye: 'yellow', alt: 1 },
 		{ suffix: 'white', dye: 'white', alt: 0 },
 		{ suffix: 'yellow', dye: 'yellow', alt: 0 },
 	];
@@ -740,7 +789,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 				Fluid.of('gtceu:polyethylene', 16 * 144),
 				Fluid.of(`tfc:${citadel.dye}_dye`, 10 * 144))
 			.itemOutputs(`mts:belroftmotors.citadel_${citadel.suffix}`)
-			.EUt(GTValues.VA[GTValues.MV])
+			.EUt(GTValues.VHA[GTValues.MV])
 			.duration(60 * 20)
 			.circuit(15 + citadel.alt)
 			.addMaterialInfo(true)
@@ -757,7 +806,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 			Fluid.of('gtceu:polyethylene', 12 * 144),
 			Fluid.of(`tfc:red_dye`, 16 * 144))
 		.itemOutputs(`mts:mtsofficialpack.firetruck`)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VHA[GTValues.MV])
 		.duration(60 * 20)
 		.addMaterialInfo(true)
 
@@ -790,7 +839,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 				Fluid.of('gtceu:polyvinyl_chloride', 8 * 144),
 				Fluid.of(`tfc:${mustang.dye}_dye`, 8 * 144))
 			.itemOutputs(`mts:mtsofficialpack.fordmustang69_${mustang.suffix}`)
-			.EUt(GTValues.VA[GTValues.HV])
+			.EUt(GTValues.VHA[GTValues.HV])
 			.duration(60 * 20)
 			.circuit(4 + mustang.alt)
 			.addMaterialInfo(true)
@@ -820,7 +869,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 				Fluid.of('gtceu:polyvinyl_chloride', 8 * 144),
 				Fluid.of(`tfc:${merc.dye}_dye`, 8 * 144))
 			.itemOutputs(`mts:mtsofficialpack.merc230_${merc.suffix}`)
-			.EUt(GTValues.VA[GTValues.HV])
+			.EUt(GTValues.VHA[GTValues.HV])
 			.duration(60 * 20)
 			.circuit(6 + merc.alt)
 			.addMaterialInfo(true)
@@ -834,7 +883,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 		.itemInputs('16x #forge:plates/steel', '2x #forge:frames/steel', '2x #minecraft:doors')
 		.inputFluids(Fluid.of('gtceu:soldering_alloy', 4 * 144))
 		.itemOutputs('mts:mtsofficialpack.brigbedbox')
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VHA[GTValues.LV])
 		.duration(20 * 20)
 		.circuit(20)
 		.addMaterialInfo(true)
@@ -842,7 +891,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 	event.recipes.gtceu.automotive_workshop('mts:mtsofficialpack.brigbeddump')
 		.itemInputs('6x #forge:plates/steel', '2x #forge:frames/steel')
 		.itemOutputs('mts:mtsofficialpack.brigbeddump')
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VHA[GTValues.LV])
 		.duration(20 * 20)
 		.circuit(21)
 		.addMaterialInfo(true)
@@ -850,14 +899,14 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 	event.recipes.gtceu.automotive_workshop('mts:mtsofficialpack.brigbedflat')
 		.itemInputs('8x #minecraft:planks', '4x #forge:plates/steel')
 		.itemOutputs('mts:mtsofficialpack.brigbedflat')
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VHA[GTValues.LV])
 		.duration(20 * 20)
 		.addMaterialInfo(true)
 		
 	event.recipes.gtceu.automotive_workshop('mts:mtsofficialpack.brigbedlogs')
 		.itemInputs('2x #forge:plates/steel', '4x #forge:rods/long/steel')
 		.itemOutputs('mts:mtsofficialpack.brigbedlogs')
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VHA[GTValues.LV])
 		.duration(20 * 20)
 		.circuit(22)
 		.addMaterialInfo(true)
@@ -865,7 +914,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 	event.recipes.gtceu.automotive_workshop('mts:mtsofficialpack.brigbedstake')
 		.itemInputs('mts:mtsofficialpack.brigbedflat', '16x #tfc:lumber')
 		.itemOutputs('mts:mtsofficialpack.brigbedstake')
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VHA[GTValues.LV])
 		.duration(10 * 20)
 		.addMaterialInfo(true)
 		
@@ -883,7 +932,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 				Fluid.of('gtceu:soldering_alloy', 4 * 144),
 				Fluid.of(`tfc:${tanker.dye}_dye`, 4 * 144))
 			.itemOutputs(`mts:mtsofficialpack.brigbedtanker_${tanker.suffix}`)
-			.EUt(GTValues.VA[GTValues.LV])
+			.EUt(GTValues.VHA[GTValues.LV])
 			.duration(20 * 20)
 			.circuit(23)
 			.addMaterialInfo(true)
@@ -902,7 +951,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 				Fluid.of('gtceu:soldering_alloy', 4 * 144),
 				Fluid.of(`tfc:${transport.dye}_dye`, 4 * 144))
 			.itemOutputs(`mts:mtsofficialpack.brigbedtransport${transport.suffix}`)
-			.EUt(GTValues.VA[GTValues.LV])
+			.EUt(GTValues.VHA[GTValues.LV])
 			.duration(20 * 20)
 			.addMaterialInfo(true)
 	})
@@ -911,7 +960,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 		.itemInputs('8x #forge:rods/steel', '2x #forge:rods/long/steel', '2x #forge:plates/steel')
 		.inputFluids(Fluid.of('gtceu:soldering_alloy', 2 * 144))
 		.itemOutputs('mts:belroftmotors.boat_trailer')
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VHA[GTValues.LV])
 		.duration(20 * 20)
 		.circuit(24)
 		.addMaterialInfo(true)
@@ -920,7 +969,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 		.itemInputs('8x #forge:rods/steel', '4x #forge:rods/long/steel', '4x #forge:plates/steel')
 		.inputFluids(Fluid.of('gtceu:soldering_alloy', 4 * 144))
 		.itemOutputs('mts:belroftmotors.trailer_cars')
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VHA[GTValues.LV])
 		.duration(20 * 20)
 		.circuit(25)
 		.addMaterialInfo(true)
@@ -929,7 +978,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 		.itemInputs('8x #forge:rods/steel', '6x #forge:rods/long/steel', '6x #forge:plates/steel')
 		.inputFluids(Fluid.of('gtceu:soldering_alloy', 6 * 144))
 		.itemOutputs('mts:belroftmotors.trailer_trucks')
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VHA[GTValues.LV])
 		.duration(20 * 20)
 		.circuit(26)
 		.addMaterialInfo(true)
@@ -963,7 +1012,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 				Fluid.of('gtceu:soldering_alloy', 4 * 144),
 				Fluid.of(`tfc:${dry_van.dye}_dye`, 8 * 144))
 			.itemOutputs(`mts:belroftmotors.trailer_dry_van_${dry_van.suffix}`)
-			.EUt(GTValues.VA[GTValues.MV])
+			.EUt(GTValues.VHA[GTValues.MV])
 			.duration(20 * 20)
 			.circuit(20 + dry_van.alt)
 			.addMaterialInfo(true)
@@ -976,7 +1025,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 				Fluid.of('gtceu:soldering_alloy', 4 * 144),
 				Fluid.of(`tfc:${dry_van.dye}_dye`, 8 * 144))
 			.itemOutputs(`mts:belroftmotors.trailer_tanker_${dry_van.suffix}`)
-			.EUt(GTValues.VA[GTValues.MV])
+			.EUt(GTValues.VHA[GTValues.MV])
 			.duration(20 * 20)
 			.circuit(22 + dry_van.alt)
 			.addMaterialInfo(true)

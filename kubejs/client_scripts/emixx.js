@@ -332,17 +332,17 @@ const registerSingleGroups = (event) => {
         'mts:bullfrog',
         'mts:citadel',
         'mts:corallum',
-        'mts:fisker_a',
-        'mts:fisker_b',
-        'mts:harpy',
+        'mts:fisker',
         'mts:dry_van',
         'mts:tanker',
         'mts:keeper',
-        'mts:nugget',
+        'mts:brotchen',
+        'mts:paragon',
+        'mts:starfish',
         'mts:silver',
         'automotives:dashornaments',
         'mts:indicators',
-
+        'mts:wheels'
     ]
 
     SINGLE_GROUPS_TO_REGISTER.forEach(x => {

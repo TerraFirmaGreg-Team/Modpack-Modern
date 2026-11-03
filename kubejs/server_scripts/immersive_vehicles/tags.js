@@ -184,7 +184,12 @@ function registerImmersiveVehiclesItemTags(event) {
 		'mts:belroftmotors.engine_mahogany',
 		'mts:belroftmotors.engine_tuna',
 		'mts:belroftmotors.engine_turbo_hauler_v8',
-		'mts:belroftmotors.enginepounderv8'
+		'mts:belroftmotors.enginepounderv8',
+		'mts:belroftmotors.engine_comet_i4',
+		'mts:belroftmotors.engine_flatliner_h8',
+		'mts:belroftmotors.engine_nebula_i6',
+		'mts:belroftmotors.engine_royal_v8',
+		'mts:belroftmotors.engine_sunbeam_v8'
 	]);
 	event.add('mts:brigtrailers', [
 		'mts:mtsofficialpack.brigbedtanker_grey',
@@ -230,11 +235,19 @@ function registerImmersiveVehiclesItemTags(event) {
 		'mts:mtsofficialpack.watercannon',
 		'mts:mtsofficialpack.watercannon_proj',
 		'mts:mtsofficialpack.grilleornament_cowskull',
+		'mts:belroftmotors.boat_trailer',
 		'mts:belroftmotors.boat_trailer_tow_hitch',
 		'mts:belroftmotors.fifthwheel_brig',
-		'mts:belroftmotors.fifthwheel_harpy',
 		'mts:belroftmotors.keeper_bullbar',
 		'mts:belroftmotors.keeperroofrack',
+		'mts:belroftmotors.adventure_sidestep',
+		'mts:belroftmotors.brotchen_extra_pedals',
+		'mts:belroftmotors.federal_plate',
+		'mts:belroftmotors.keeper_sidestep',
+		'mts:belroftmotors.searchlight_boat',
+		'mts:belroftmotors.union_plate',
+		'mts:belroftmotors.trailer_cars',
+		'mts:belroftmotors.trailer_trucks',
 		'mts:automotives.upgrade_airhorn',
 		'mts:automotives.upgrade_cab',
 		'mts:automotives.upgrade_cakeloader',
@@ -255,6 +268,8 @@ function registerImmersiveVehiclesItemTags(event) {
 		'mts:mtsofficialpack.wheelsmall',
 		'mts:mtsofficialpack.pontoon',
 		'mts:mtsofficialpack.skidhelicopter',
+		'mts:belroftmotors.concave_truck_wheel',
+		'mts:belroftmotors.convex_truck_wheel'
 	]);
 	event.add('mts:propellers', [
 		'mts:mtsofficialpack.propellerlarge2blade',
@@ -363,7 +378,8 @@ function registerImmersiveVehiclesItemTags(event) {
 
 	// Belroft Motors
 	const adventure = ['black', 'black_gray', 'blue', 'blue_white', 'brown', 'cherry_red', 'cherry_tan', 'copper',
-		'cyan', 'emerald', 'gray', 'gray_brown', 'purple', 'red', 'tan', 'white', 'yellow'];
+		'cyan', 'emerald', 'gray', 'gray_brown', 'purple', 'red', 'tan', 'white', 'yellow', 'police_black', 'police_blue',
+		'ambulance_green_yellow', 'ambulance_orange', 'ambulance_red'];
 	adventure.forEach(adv => {
 		event.add('mts:adventure', `mts:belroftmotors.adventure_${adv}`)
 	})
@@ -382,7 +398,7 @@ function registerImmersiveVehiclesItemTags(event) {
 
 	const corallum = ['black', 'black_phantom', 'blue', 'brown', 'cherry_red', 'copper', 'coral', 'coralius', 'cyan',
 		'emerald', 'gray', 'khaki', 'khaki_steelie', 'marine', 'olive', 'olive_steelie', 'purple', 'red', 'steelie',
-		'tan', 'white', 'yellow'];
+		'tan', 'white', 'yellow', 'police_black', 'police_blue', 'police_green', 'police_orange'];
 	corallum.forEach(c => {
 		event.add('mts:corallum', `mts:belroftmotors.corallum_${c}`)
 	})
@@ -390,30 +406,41 @@ function registerImmersiveVehiclesItemTags(event) {
 	const fisker = ['black', 'blue', 'brown', 'cherry_red', 'copper', 'cyan', 'emerald', 'gray', 'khaki', 'marine', 'green',
 		'olive', 'purple', 'red', 'tan', 'white', 'yellow'];
 	fisker.forEach(f => {
-		event.add('mts:fisker_a', `mts:belroftmotors.fisker_type_a_${f}`)
-		event.add('mts:fisker_b', `mts:belroftmotors.fisker_type_b_${f}`)
+		event.add('mts:fisker', `mts:belroftmotors.fisker_type_a_${f}`)
 		// not a fisker but it has the same colors
-		event.add('mts:harpy', `mts:belroftmotors.harpy_${f}`)
 		event.add('mts:dry_van', `mts:belroftmotors.trailer_dry_van_${f}`)
 		event.add('mts:tanker', `mts:belroftmotors.trailer_tanker_${f}`)
 	})
 
 	const keeper = ['black', 'blue', 'brown', 'cherry_red', 'copper', 'cyan', 'emerald', 'gray', 'green', 'khaki', 'marine',
-		'olive', 'police_black', 'police_blue', 'police_green', 'purple', 'red', 'tan', 'white', 'yellow'];
+		'olive', 'police_black', 'police_blue', 'police_green', 'purple', 'red', 'tan', 'white', 'yellow', 'fire_chief'];
 	keeper.forEach(k => {
 		event.add('mts:keeper', `mts:belroftmotors.keeper_${k}`)
 	})
 
-	const nugget = ['black', 'blue', 'brown', 'cherry_red', 'copper', 'cyan', 'emerald', 'gray', 'green',
-		'police_black', 'police_blue', 'police_green', 'purple', 'red', 'tan', 'white', 'yellow', 'white_sport'];
-	nugget.forEach(n => {
-		event.add('mts:nugget', `mts:belroftmotors.nugget_${n}`)
+	const brotchen = ['black', 'blue', 'brown', 'cherry_red', 'copper', 'cyan', 'emerald', 'gray', 'green',
+		'khaki', 'marine', 'olive', 'purple', 'red', 'tan', 'white', 'yellow'];
+	brotchen.forEach(n => {
+		event.add('mts:brotchen', `mts:belroftmotors.brotchen_${n}`)
 	})
 
 	const silver = ['black', 'blue', 'cherry_red', 'copper', 'green', 'khaki', 'marine', 'olive', 'purple',
 		'red', 'white', 'yellow']
 	silver.forEach(s => {
 		event.add('mts:silver', `mts:belroftmotors.silver_${s}`)
+	})
+
+	const paragon = ['andesite', 'black', 'blue', 'brown', 'cherry_red', 'copper', 'cyan', 'dandelion', 'emerald',
+		'gray', 'green', 'khaki', 'marine', 'morning_grass', 'olive', 'purple', 'red', 'sea_breeze', 'sunrise',
+		'tan', 'white', 'yellow']
+	paragon.forEach(p => {
+		event.add('mts:paragon', `mts:belroftmotors.paragon_${p}`)
+	})
+
+	const starfish = ['black', 'black_red', 'blue', 'brown', 'cherry_red', 'copper', 'coral', 'cyan', 'emerald',
+		'gray', 'green', 'khaki', 'marine', 'olive', 'phantom', 'purple', 'purple_black', 'red', 'tan', 'white', 'yellow']
+	starfish.forEach(s => {
+		event.add('mts:starfish', `mts:belroftmotors.starfish_${s}`)
 	})
 }
 
