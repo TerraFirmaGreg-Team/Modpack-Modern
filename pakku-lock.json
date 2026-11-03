@@ -8535,6 +8535,47 @@
             ]
         },
         {
+            "pakku_id": "2bbRTNuLomzDpgBP",
+            "pakku_links": [
+                "WN9DdLqsRKVeZIc9"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "gregtech-cables"
+            },
+            "name": {
+                "curseforge": "GregTech Cables"
+            },
+            "id": {
+                "curseforge": "1723063"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "gtcables-1.0.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9410/927/gtcables-1.0.0.jar",
+                    "id": "9410927",
+                    "parent_id": "1723063",
+                    "hashes": {
+                        "sha1": "33371166c8c109dc50766fc67d20305fde6fd8b0",
+                        "md5": "a9096ab56c795b948ed93a090ab3b9a5"
+                    },
+                    "required_dependencies": [
+                        "890405"
+                    ],
+                    "size": 254326,
+                    "date_published": "2026-11-02T20:35:10.420Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "OtgfNTzqVoq1a5Vi",
             "pakku_links": [
                 "NONadCSyrDp2oF0G",
