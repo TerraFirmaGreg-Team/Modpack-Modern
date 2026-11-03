@@ -332,18 +332,6 @@ const registerTFCRecipes = (event) => {
         ]
     ).id('tfg:glassworking/lamp_glass')
 
-	event.recipes.gtceu.macerator('tfg:candle')
-		.itemInputs("#tfc:candles")
-		.itemOutputs("gtceu:small_wax_dust")
-		.duration(50)
-		.EUt(2)
-		.category(GTRecipeCategories.MACERATOR_RECYCLING);
-	
-	event.recipes.tfc.quern("gtceu:small_wax_dust", "#tfc:candles")
-		.id("tfg:quern/candles")
-	event.recipes.tfc.quern("gtceu:tiny_wax_dust", "gtceu:wax_nugget")
-		.id("tfg:quern/wax_nugget")
-
 	// Hot item cooling
 	event.recipes.tfc.barrel_instant()
 		.inputItem(TFC.ingredient.heatable(1, null))

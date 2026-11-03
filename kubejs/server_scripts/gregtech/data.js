@@ -149,6 +149,8 @@ const registerGTCEUMetals = (event) => {
 	event.metal('tfg:boron_carbide', 3041, 0.005, '#forge:ingots/boron_carbide', '#forge:double_ingots/boron_carbide', '#forge:plates/boron_carbide', 8, 'tfg:boron_carbide')
 	event.metal('gtceu:tungsten_carbide', 3058, 0.005, '#forge:ingots/tungsten_carbide', '#forge:double_ingots/tungsten_carbide', '#forge:plates/tungsten_carbide', 9, 'tfg:tungsten_carbide')
 	event.metal('gtceu:ostrum_iodide', 3700, 0.005, '#forge:ingots/ostrum_iodide', '#forge:double_ingots/ostrum_iodide', '#forge:plates/ostrum_iodide', 9, 'tfg:ostrum_iodide')
+
+	event.metal('gtceu:wax', 60, 0.02143, null, null, null, 0, 'tfg:wax')
 }
 
 function registerGTCEUBedrockFluidVeins(event) {

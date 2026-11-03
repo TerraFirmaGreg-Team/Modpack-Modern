@@ -114,7 +114,7 @@ function registerTFGWaxRecipes(event) {
 
 	// Extractor Recipe
 	event.recipes.gtceu.extractor('tfg:wax_melting')
-		.itemInputs(Ingredient.of('#forge:wax'))
+		.itemInputs('#forge:wax')
 		.outputFluids(Fluid.of('gtceu:wax', 144))
 		.duration(20 * 5)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -135,4 +135,80 @@ function registerTFGWaxRecipes(event) {
 		.category(GTRecipeCategories.EXTRACTOR_RECYCLING);
 
 	//#endregion
+	
+	// Recycling
+	event.recipes.gtceu.macerator('tfg:candle')
+		.itemInputs("#tfc:candles")
+		.itemOutputs("gtceu:small_wax_dust")
+		.duration(50)
+		.EUt(2)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING);
+	
+	event.recipes.tfc.quern("gtceu:small_wax_dust", "#tfc:candles")
+		.id("tfg:quern/candles")
+	event.recipes.tfc.quern("gtceu:tiny_wax_dust", "gtceu:wax_nugget")
+		.id("tfg:quern/wax_nugget")
+
+	
+	event.recipes.tfc.quern("gtceu:wax_dust", ["gtceu:wax_ingot", "firmalife:beeswax", "tfg:paraffin_wax", "tfg:conifer_rosin"])
+		.id("tfg:quern/wax_to_dust")
+
+	event.recipes.gtceu.macerator('tfg:wax_ingot_to_dust')
+		.itemInputs("gtceu:wax_ingot")
+		.itemOutputs("gtceu:wax_dust")
+		.duration(50)
+		.EUt(2)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING);
+
+	event.recipes.gtceu.macerator('tfg:beeswax_to_dust')
+		.itemInputs("firmalife:beeswax")
+		.itemOutputs("gtceu:wax_dust")
+		.duration(50)
+		.EUt(2)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING);
+
+	event.recipes.gtceu.macerator('tfg:paraffin_wax_to_dust')
+		.itemInputs("tfg:paraffin_wax")
+		.itemOutputs("gtceu:wax_dust")
+		.duration(50)
+		.EUt(2)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING);
+
+	event.recipes.gtceu.macerator('tfg:rosin_to_dust')
+		.itemInputs("tfg:conifer_rosin")
+		.itemOutputs("gtceu:wax_dust")
+		.duration(50)
+		.EUt(2)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING);
+
+	// Heating
+	event.recipes.tfc.heating("#forge:wax", 60)
+		.resultFluid(Fluid.of('gtceu:wax', 144))
+		.id('tfg:heating/wax')
+		
+	event.recipes.tfc.heating("gtceu:small_wax_dust", 60)
+		.resultFluid(Fluid.of('gtceu:wax', 36))
+		.id('tfg:heating/small_wax')
+		
+	event.recipes.tfc.heating("gtceu:tiny_wax_dust", 60)
+		.resultFluid(Fluid.of('gtceu:wax', 16))
+		.id('tfg:heating/tiny_wax')
+		
+	event.recipes.tfc.heating("gtceu:wax_nugget", 60)
+		.resultFluid(Fluid.of('gtceu:wax', 16))
+		.id('tfg:heating/wax_nugget')
+		
+	event.recipes.tfc.heating("#tfc:candles", 60)
+		.resultFluid(Fluid.of('gtceu:wax', 36))
+		.id('tfg:heating/candles')
+
+	// Casting
+	event.recipes.tfc.casting("4x gtceu:wax_nugget", "tfg:nugget_mold", TFC.fluidStackIngredient('gtceu:wax', 144 * 4/9), 0.1)
+		.id('tfg:casting/wax_nugget')
+
+	event.recipes.tfc.casting("gtceu:wax_ingot", "tfc:ceramic/ingot_mold", TFC.fluidStackIngredient('gtceu:wax', 144), 0.1)
+		.id('tfg:casting/wax_ingot')
+
+	event.recipes.tfc.casting("gtceu:wax_ingot", "tfc:ceramic/fire_ingot_mold", TFC.fluidStackIngredient('gtceu:wax', 144), 0.01)
+		.id('tfg:casting/wax_ingot_fire')
 }
