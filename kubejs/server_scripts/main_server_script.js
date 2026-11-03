@@ -179,6 +179,7 @@ TFCEvents.data(event => {
 	registerTFCDataForTFG(event)
 	registerTFCDataForWaterFlasks(event)
 	registerTFCDataForRailways(event)
+	registerJelliesData(event)
 	registerWABData(event)
 	registerSpeciesData(event)
 })

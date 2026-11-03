@@ -156,7 +156,7 @@
         {
             "type": "patchouli:multiblock",
             "enable_visualize": false,
-            "text": "$(bold)提示$()：超級箱可以在裝有物品的情況下撿起。",
+            "text": "$(bold)提示$()：超級箱裝著物品也能直接撿起。",
             "multiblock": {
                 "pattern": [
                     [
@@ -240,7 +240,7 @@
         {
             "type": "patchouli:multiblock",
             "enable_visualize": false,
-            "text": "$(bold)提示$()：大桶在打開並暴露於天空下時可以收集雨水。",
+            "text": "$(bold)提示$()：大桶打開並露天放置時可以收集雨水。",
             "multiblock": {
                 "pattern": [
                     [
@@ -545,7 +545,7 @@
         {
             "type": "patchouli:multiblock",
             "enable_visualize": false,
-            "text": "$(bold)提示$()：超級缸可以在裝有流體的情況下撿起。",
+            "text": "$(bold)提示$()：超級缸裝著流體也能直接撿起。",
             "multiblock": {
                 "pattern": [
                     [

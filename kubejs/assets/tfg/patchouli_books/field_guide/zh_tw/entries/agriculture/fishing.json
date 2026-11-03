@@ -11,7 +11,7 @@
         {
             "type": "tfg:anvil_recipe",
             "recipe": "tfc:anvil/bismuth_bronze_fish_hook",
-            "text": "首先，你必須在$(l:craftsmanship/anvils)砧$()上鍛造魚鉤。"
+            "text": "首先要在$(l:craftsmanship/anvils)砧$()上鍛造魚鉤。"
         },
         {
             "type": "patchouli:crafting",

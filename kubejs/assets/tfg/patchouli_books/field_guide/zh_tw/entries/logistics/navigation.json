@@ -8,13 +8,13 @@
             "anchor": "minimap",
             "title": "小地圖",
             "item": "minecraft:filled_map",
-            "text": "小地圖會顯示在畫面的上方角落。預設會顯示：$(li)你的座標。$(li)時間。$(li)季節和日期。$(li)路徑點。$(li)實體。$(br)按下$(item)$(k:gui.xaero_open_settings)$()可以設定小地圖。"
+            "text": "小地圖會顯示在畫面的上方角落。預設會顯示：$(li)你的座標。$(li)時間。$(li)季節和日期。$(li)導航點。$(li)實體。$(br)按下$(item)$(k:gui.xaero_open_settings)$()可以設定小地圖。"
         },
         {
             "type": "patchouli:text",
             "anchor": "map",
             "title": "完整地圖",
-            "text": "按 $(item)$(k:gui.xaero_open_map)$() 可查看完整地圖。$(br)$(bold)提示$()：可以在路徑點管理介面中建立不同的路徑點組來整理路徑點，遊玩時按 $(item)$(k:gui.xaero_new_waypoint)$() 即可建立路徑點。地圖中也能查看區塊認領，區塊認領在多人遊戲中很實用，還能強制載入區域。在物品欄左上角的認領管理器中即可認領區塊。"
+            "text": "按 $(item)$(k:gui.xaero_open_map)$() 可查看完整地圖。$(br)$(bold)提示$()：可以在導航點管理介面中建立不同的導航點組來整理導航點，遊玩時按 $(item)$(k:gui.xaero_new_waypoint)$() 即可建立導航點。地圖中也能查看區塊認領，區塊認領在多人遊戲中很實用，還能強制載入區域。在物品欄左上角的認領管理器中即可認領區塊。"
         },
         {
             "type": "patchouli:image",

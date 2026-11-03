@@ -12,7 +12,7 @@
             "type": "patchouli:text",
             "anchor": "intro",
             "title": "簡介",
-            "text": "$(thing)紙$()可以用$(l:the_world/wild_crops#papyrus)紙莎草$()的莖加工製成，也可以用$(l:agriculture/papermaking#parchment)動物毛皮$()，或用特定種類的$(l:agriculture/papermaking#paper_from_wood)木材$()經過漫長程序製成。紙有很多用途――例如$(item)背包$()和$(item)命名牌$()――但最重要的是，進入$(thing)電力時代$()必須要有它！"
+            "text": "$(thing)紙$()可以用$(l:the_world/wild_crops#papyrus)紙莎草$()的莖加工製成，也可以用$(l:agriculture/papermaking#parchment)動物毛皮$()，或用特定種類的$(l:agriculture/papermaking#paper_from_wood)木材$()經過漫長程序製成。紙有很多用途，例如$(item)背包$()和$(item)命名牌$()，但最重要的是，進入$(thing)電力時代$()必須要有它！"
         },
         {
             "type": "patchouli:crafting",
@@ -89,14 +89,14 @@
             "recipe": "tfg:quern/soaked_hardwood_strip",
             "title": "硬木木漿",
             "anchor": "hardwood_pulp",
-            "text": "之後，使用$(l:craftsmanship/quern)手推磨$()將浸泡過的木條分解成$(item)硬木木漿$()。"
+            "text": "再用$(l:craftsmanship/quern)手推磨$()將浸泡過的木條分解成$(item)硬木木漿$()。"
         },
         {
             "type": "patchouli:crafting",
             "recipe": "gtceu:shaped/small_dust_assembling_hardwood",
             "title": "堆積紙漿",
             "anchor": "piling_up_the_pulp",
-            "text": "手推磨只會產出小堆的紙漿，你需要在$(thing)工作台$()中將它們合併起來。更先進的粉碎方法可以產出更多紙漿。"
+            "text": "手推磨只會產出小堆紙漿，要在$(thing)工作台$()中合併起來。更先進的粉碎方法可以產出更多紙漿。"
         },
         {
             "type": "patchouli:spotlight",

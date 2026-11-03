@@ -53,7 +53,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "挖掉原石六個面上的方塊——完成後，中間的方塊就會掉落成物品。",
+            "text": "挖掉原石六個面上的方塊，完成後中間的方塊就會掉落成物品。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -304,7 +304,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(2)綠色$()動作一定會讓目標$(bold)向右$()移動，$(4)紅色$()動作一定會讓進度$(bold)向左$()移動。注意，若目標超出進度條，物品就會鍛造過度，金屬錠也會損失。此外，鍛造時還必須符合$(thing)規則$()……"
+            "text": "$(2)綠色$()動作一定會讓目標$(bold)向右$()移動，$(4)紅色$()動作一定會讓進度$(bold)向左$()移動。注意，若目標超出進度條，物品就會鍛造過度，金屬錠也會損失。鍛造時還必須符合$(thing)規則$()……"
         },
         {
             "type": "patchouli:text",
@@ -420,7 +420,7 @@
                 "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui.png"
             ],
             "border": false,
-            "text": "啟用TFC Anvil Helper後的砧介面"
+            "text": "啟用 TFC 鐵砧幫手後的砧介面"
         },
         {
             "type": "patchouli:image",
@@ -430,7 +430,7 @@
             "border": false,
             "anchor": "ui_explained",
             "title": "認識介面",
-            "text": "啟用 TFC Anvil Helper 後的砧介面(以顏色標示)。"
+            "text": "啟用 TFC 鐵砧幫手後的砧介面(以顏色標示)。"
         },
         {
             "type": "patchouli:text",
@@ -503,12 +503,12 @@
             "images": [
                 "tfg:textures/gui/field_guide/anvil_working_guide/steps.png"
             ],
-            "text": "這些是鎬頭的必要步驟"
+            "text": "鎬頭的必要步驟"
         },
         {
             "type": "patchouli:text",
             "title": "鍛造第二步",
-            "text": "調整鍛造值的主要目標雖然是對齊目標鍛造值，但必須同時滿足這項要求「和」步驟要求，因此直接對齊目標鍛造值並不理想。我們可以改為計算由目標鍛造值和「requiredWork」推導出的數值"
+            "text": "調整鍛造值的主要目標是對齊目標鍛造值，但必須同時滿足這項要求「和」步驟要求，因此直接對齊目標鍛造值並不理想。我們可以改為計算由目標鍛造值和「requiredWork」推導出的數值"
         },
         {
             "type": "patchouli:text",

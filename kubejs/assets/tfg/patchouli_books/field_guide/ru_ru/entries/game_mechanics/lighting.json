@@ -1,27 +1,27 @@
 {
-    "name": "Light Sources",
+    "name": "Источники света",
     "category": "tfg:game_mechanics",
     "sortnum": 6,
     "icon": "tfc:candle",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:game_mechanics/lighting#torches)Torches$()$(li)$(bold)$(l:game_mechanics/lighting#candles)Candles$()$(li)$(bold)$(l:game_mechanics/lighting#jack_o_lanterns)Jack 'o Lanterns$()$(li)$(bold)$(l:game_mechanics/lighting#lamps)Lamps$()$(li)$(bold)$(l:game_mechanics/lighting#portable_light)Portable Lights$()$(li)$(bold)$(l:game_mechanics/lighting#permanent_light)Permanent Light$()",
+            "text": "$(li)$(bold)$(l:game_mechanics/lighting#torches)Факела$()$(li)$(bold)$(l:game_mechanics/lighting#candles)Свечи$()$(li)$(bold)$(l:game_mechanics/lighting#jack_o_lanterns)Светильники Джека$()$(li)$(bold)$(l:game_mechanics/lighting#lamps)Фонари$()$(li)$(bold)$(l:game_mechanics/lighting#portable_light)Переносной свет$()$(li)$(bold)$(l:game_mechanics/lighting#permanent_light)Вечный свет$()",
             "title": "Каталог",
             "anchor": "index"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introduction",
-            "text": "There are a number of ways to produce light in $(tfg_short). However, nearly all light sources do not last forever!$(br)Unlike vanilla Minecraft, you will need to keep an eye on your lights to re-ignite them when they burn out. The higher quality the light source is, the longer it will last.$(br)Permanent lightsources aren't available until much later, unless you get creative."
+            "title": "Введение",
+            "text": "В $(tfg_short) много способов освещения. Однако, почти все источники света рано или поздно гаснут!$(br)В отличие от ванильного Майнкрафта, здесь тебе придётся следить за своими источниками света и заново зажигать их когда они потухнут. Чем выше качество источника, тем дольше он горит.$(br)Вечные источники света не будут доступны довольно долго, если только ты не проявишь смекалку."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "torches",
-            "title": "Torches",
+            "title": "Факела",
             "item": "tfc:torch,tfc:dead_torch",
-            "text": "Torches can be made by heating sticks or stick bunches in a $(l:craftsmanship/firepit)Firepit$() or other heating device.$(br)Torches last for 3 days, and then become $(thing)Dead Torches$(), which may be relit by clicking them with a torch, or by using a fire starting tool on them. Sticks can also be clicked on torches to light them. Torches dropped in water turn into $(thing)Wood Ash$() or $(thing)Sticks$()."
+            "text": "Факела можно сделать нагрев палки или связки палок на $(l:craftsmanship/firepit)Костре$() или другими способами.$(br)Факела горят 3 дня, после чего $(thing)Гаснут$(). Их можно снова зажечь кликнув по ним факелом, или использовав огниво. По горящим факелам также можно кликать палками, чтобы поджечь их. Выброшенные в воду факела превращаются в $(thing)Древесную золу$() или $(thing)Палки$()."
         },
         {
             "type": "tfg:multimultiblock",
@@ -54,15 +54,15 @@
                 }
             ],
             "name": "",
-            "text": "Torches may be tossed on log piles or $(l:craftsmanship/pit_kiln)Pit Kilns$() to ignite them.",
+            "text": "Факела можно бросать на поленницы или $(l:craftsmanship/pit_kiln)Земляные печи$() чтобы зажечь их.",
             "enable_visualize": false
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "candles",
-            "title": "Candles",
+            "title": "Свечи",
             "item": "tag:tfc:candles",
-            "text": "Candles are made from $(thing)Wax$() or $(thing)Tallow$() and last for 30 days before needing to be relit.$(br)Candles may be placed and lit on the ground or in $(l:cooking/jam#jarbnet)Jarbnets$(). The amount of candles placed effects the light-level they emit."
+            "text": "Свечи делаются из $(thing)Воска$() или $(thing)Жира$() и горят 30 дней прежде чем потухнуть.$(br)Свечи можно ставить и зажигать на земле или в $(l:cooking/jam#jarbnet)Стеллажах для банок$(). Количество размещённых свечей влияет на количество излучаемого света."
         },
         {
             "type": "patchouli:multiblock",
@@ -79,15 +79,15 @@
                     "X": "#tfc:candles[candles=1,lit=true]"
                 }
             },
-            "text": "Candles can be $(thing)dyed$() into all 16 colors!.",
+            "text": "Свечи могут быть $(thing)окрашены$() во все 16 цветов!",
             "enable_visualize": false
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "jack_o_lanterns",
-            "title": "Jack 'o Lanterns",
+            "title": "Светильники Джека",
             "item": "tag:tfg:carved_pumpkins,tag:tfg:carved_pumpkins/lit",
-            "text": "Jack 'o Lanterns are the lit version of $(thing)Carved Pumpkins$(), and last for 4.5 days, before reverting to carved pumpkins.$(br)Pumpkins are carved by holding them in hand and $(l:craftsmanship/sticks_and_stones)Knapping$()."
+            "text": "Светильники Джека это зажжённые версии $(thing)Вырезанных тыкв$(), горящие 4.5 дня прежде чем снова стать вырезанной тыквой.$(br)Тыкву можно вырезать держа её в руке и начав $(l:craftsmanship/sticks_and_stones)Обработку$()."
         },
         {
             "type": "patchouli:multiblock",
@@ -105,15 +105,15 @@
                 }
             },
             "name": "",
-            "text": "There are many fun designs of Jack 'o Lanterns to choose from!",
+            "text": "На выбор есть куча классных дизайнов светильников Джека!",
             "enable_visualize": false
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "lamps",
-            "title": "Lamps",
+            "title": "Фонари",
             "item": "tag:tfc:lamps",
-            "text": "Lamps are a long term source of light that burn liquid fuels. Lamps retain their fuel content when broken. You can fuel lamps automatically with $(thing)Pipes$() or manually with $(l:cooking/drinking_containers)Fluid Containers$().$(br)You can check capable lamp fuels in $(emi) by viewing a lamp. $(thing)Lava$() will burn forever but must be in a $(item)Blue Steel Lamp$(). $(thing)Liquid Glowstone$() is the same, but works in any lamp."
+            "text": "Фонари это долгосрочный источник света, сжигающий топливо. Фонари сохраняют залитое топливо, если их сломать. Ты можешь автоматически заправлять фонари $(thing)Трубами$() или вручную $(l:cooking/drinking_containers)Контейнерами для жидкостей$().$(br)Ты можешь узнать о подходящем топливе в $(emi), просматривая фонарь. $(thing)Лава$() горит вечно, но должна быть в $(item)Фонаре из синей стали$(). $(thing)Жидкий светокамень$() тоже, но работает в любом фонаре."
         },
         {
             "type": "patchouli:multiblock",
@@ -130,21 +130,21 @@
                     "Y": "#tfc:lamps[hanging=true,lit=true]"
                 }
             },
-            "text": "Lamps can hang from blocks. $(thing)Chains$() and $(thing)Pipes$() are particularly nice choices.",
+            "text": "Фонари могут свисать с блоков. $(thing)Цепи$() и $(thing)Трубы$() прекрасно для этого подходят.",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
             "anchor": "portable_light",
-            "title": "Portable Light",
-            "text": "You can also carry lights in your hand to illuminate the area around you, such as with a $(item)Torch$() in your $(thing)off-hand$().$(br2)To free up your off-hand slot, $(l:game_mechanics/lighting#lamps)lamps$() can be worn in the $(thing)Back$() slot of your $(l:craftsmanship/clothing#curios)Curios$(), and $(l:logistics/exploration_gear#digger_helmet)Digger Helmets$() are a type of helmet that also provides light."
+            "title": "Переносной свет",
+            "text": "Ты также можешь носить светильники в руке, чтобы освещать окружение, например $(item)Факел$() во $(thing)второй руке$().$(br2)Если хочешь её освободить, $(l:game_mechanics/lighting#lamps)фонари$() можно носить в слоте $(thing)\"Спина\"$() из $(l:craftsmanship/clothing#curios)Curios$(), а $(l:logistics/exploration_gear#digger_helmet)Шахтёрские каски$() это шлемы, дающие свет."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "permanent_light",
-            "title": "Permanent Light",
+            "title": "Вечный свет",
             "item": "minecraft:glowstone",
-            "text": "By the time you make an $(item)Extractor$() and $(item)Fluid Solidifier$() you can begin producing a variety of decorative permanent light sources with $(thing)Liquid Glowstone$() and $(thing)Glowstone Blocks$().$(br)Besides advancing in tech, there are some creative ways to light up an area, such as $(l:agriculture/aqueducts)Lava Aqueducts$()."
+            "text": "Создав $(item)Экстрактор$() и $(item)Жидкостный отвердитель$() ты сможешь начать производить множество декоративных вечных источников света из $(thing)Жидкого светокамня$() и $(thing)Блоков светокамня$().$(br)Помимо развития технологий, есть ещё несколько креативных способов освещения, например $(l:agriculture/aqueducts)Лавовые акведуки$()."
         },
         {
             "type": "patchouli:relations",

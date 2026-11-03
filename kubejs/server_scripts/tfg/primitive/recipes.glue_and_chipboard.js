@@ -25,8 +25,8 @@ function registerTFGChipboardRecipes(event) {
 		.itemInputs('minecraft:bone_meal')
 		.inputFluids(Fluid.of('tfc:limewater', 500))
 		.outputFluids(Fluid.of('gtceu:glue', 50))
-		.duration(100)
-		.EUt(5)
+		.duration(60)
+		.EUt(GTValues.VHA[GTValues.LV])
 
 	event.recipes.gtceu.compressor('tfg:glue_from_anemones')
 		.itemInputs('#tfg:anemones')
@@ -83,28 +83,28 @@ function registerTFGChipboardRecipes(event) {
 			'1x #forge:wax')
 		.itemOutputs('2x tfg:chipboard_composite')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VHA[GTValues.LV])
 
 	event.recipes.gtceu.mixer('gtceu:chipboard_composite_resin')
 		.itemInputs('4x #tfg:wood_dusts',
 			'1x gtceu:sticky_resin')
 		.itemOutputs('4x tfg:chipboard_composite')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VHA[GTValues.LV])
 
 	event.recipes.gtceu.mixer('gtceu:chipboard_composite_glue')
 		.itemInputs('2x #tfg:wood_dusts',
 			'1x tfc:glue')
 		.itemOutputs('2x tfg:chipboard_composite')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VHA[GTValues.LV])
 
 	event.recipes.gtceu.mixer('gtceu:chipboard_composite_fluid_glue')
 		.itemInputs('1x #tfg:wood_dusts')
 		.inputFluids(Fluid.of('gtceu:glue', 25))
 		.itemOutputs('1x tfg:chipboard_composite')
 		.duration(10)
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VHA[GTValues.LV])
 
 	// Pre-treated chipboard
 	event.recipes.firmalife.mixing_bowl()
@@ -126,26 +126,26 @@ function registerTFGChipboardRecipes(event) {
 		.itemInputs('2x gtceu:treated_wood_dust', '1x #forge:wax')
 		.itemOutputs('2x tfg:treated_chipboard_composite')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VHA[GTValues.LV])
 
 	event.recipes.gtceu.mixer('gtceu:treated_chipboard_composite_resin')
 		.itemInputs('4x gtceu:treated_wood_dust', '1x gtceu:sticky_resin')
 		.itemOutputs('4x tfg:treated_chipboard_composite')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VHA[GTValues.LV])
 
 	event.recipes.gtceu.mixer('gtceu:treated_chipboard_composite_glue')
 		.itemInputs('2x gtceu:treated_wood_dust', '1x tfc:glue')
 		.itemOutputs('2x tfg:treated_chipboard_composite')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VHA[GTValues.LV])
 
 	event.recipes.gtceu.mixer('gtceu:treated_chipboard_composite_fluid_glue')
 		.itemInputs('1x gtceu:treated_wood_dust')
 		.inputFluids(Fluid.of('gtceu:glue', 25))
 		.itemOutputs('1x tfg:treated_chipboard_composite')
 		.duration(10)
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VHA[GTValues.LV])
 
 
 	// 

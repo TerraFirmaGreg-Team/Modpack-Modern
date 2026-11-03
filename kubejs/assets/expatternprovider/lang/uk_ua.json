@@ -175,9 +175,11 @@
 	"item.expatternprovider.wireless_ex_ct": "Бездротовий розширений термінал створення",
 	"item.expatternprovider.wireless_ex_pat": "Бездротовий розширений термінал доступу до шаблонів",
 	"item.expatternprovider.wireless_tool": "Набір бездротового МЕ налаштування",
+	"itemGroup.epp": "Extended AE2",
 	"jade.crystal_chamber.progress": "Прогрес: %s",
 	"jade.wireless_connector.color": "Колір : %s",
 	"jade.wireless_connector.used": "Використано каналів: %s",
+	"key.epp.category": "Extended AE",
 	"key.epp.viewpattern": "Перегляд шаблону",
 	"packaged_device.error.tooltip": "Недійсне",
 	"packaged_device.tooltip": "Пристрій: %s",
@@ -189,5 +191,7 @@
 	"wireless_advanced.mode.add": "§bДодати",
 	"wireless_advanced.mode.swapped": "Режим змінено на: %s",
 	"wireless_advanced.mode.use": "§dЗастосувати",
-	"wireless_advanced.port_list": "Збережені з'єднання (%s/%s):"
+	"wireless_advanced.port_list": "Збережені з'єднання (%s/%s):",
+	"wireless_advanced.cleared": "Усі збережені з’єднання очищено",
+	"key.ae2.wireless_ex_crafting_terminal": "Відкрити бездротовий термінал екстреного створення"
 }

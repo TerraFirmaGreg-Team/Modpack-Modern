@@ -307,11 +307,16 @@
 	"item.greate.stone_belt_connector": "Skórzany pas mechaniczny",
 	"item.greate.styrene_butadiene_rubber_belt_connector": "Pas mechaniczny z gumy butadienowo-styrenowej",
 	"item.greate.titanium_vertical_gearbox": "Tytanowa przekładnia pionowa",
+	"itemGroup.greate": "Greate",
 	"material.greate.andesite_alloy": "Stop andezytu",
 	"material.greate.chromatic_compound": "Związek chromatyczny",
 	"material.greate.refined_radiance": "Świetlisty materiał",
 	"material.greate.rose_quartz": "Różowy kwarc",
 	"material.greate.shadow_steel": "Mroczna stal",
 	"tagprefix.alloy": "Stop (%s)",
-	"tagprefix.whisk": "Trzepaczka (%s)"
+	"tagprefix.whisk": "Trzepaczka (%s)",
+	"greate.tooltip.network_statistics": "Statystyki sieci: ",
+	"item.greate.polybenzimidazole_belt_connector": "Łącznik polibenzimidazolowego pasa",
+	"item.greate.polyethylene_belt_connector": "Łącznik polietylenowego pasa",
+	"item.greate.polytetrafluoroethylene_belt_connector": "Łącznik politetrafluoroetylenowego pasa"
 }

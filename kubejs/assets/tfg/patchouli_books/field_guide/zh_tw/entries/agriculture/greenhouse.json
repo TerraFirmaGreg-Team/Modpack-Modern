@@ -29,7 +29,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "一般的$(thing)溫室方塊$()有四種：牆壁、門、屋頂和屋頂頂部。屋頂和屋頂頂部分別是階梯和半磚。這些方塊也有較薄的版本，稱為面板牆、地板門和面板屋頂。你可以隨意組合這些方塊來建造溫室結構。"
+            "text": "一般的$(thing)溫室方塊$()有四種：牆壁、門、屋頂和屋頂頂部。屋頂和屋頂頂部分別是階梯和半磚。這些方塊也有較薄的版本，稱為面板牆、地板門和面板屋頂。可任意組合來建造溫室。"
         },
         {
             "type": "tfg:multimultiblock",
@@ -57,7 +57,7 @@
             "type": "patchouli:spotlight",
             "anchor": "quad_planter",
             "item": "firmalife:quad_planter",
-            "text": "$(thing)四格種植盆$()可同時種植四株各自獨立的作物，它們共用同一個養分池，成熟後可分別按下$(item)$(k:key.use)$()收成。$(br)四格種植盆通常用來種植$(thing)洋蔥$()和$(thing)甜菜$()等較小的蔬菜。"
+            "text": "$(thing)四格種植盆$()可同時種植四株各自獨立的作物，它們共用同一個養分池，成熟後可分別按 $(item)$(k:key.use)$() 收成。$(br)四格種植盆通常用來種植$(thing)洋蔥$()和$(thing)甜菜$()等較小的蔬菜。"
         },
         {
             "type": "patchouli:spotlight",
@@ -109,13 +109,13 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)此外，$(item)採收籃$()可以收成大部分類型的種植盆。$(li)要收集$(thing)清掃機$()和$(thing)採摘機$()掉落的物品，可以使用$(item)漏斗礦車$()、裝有$(item)漏斗$()的$(thing)動態結構$()，或格雷科技的$(item)物品收集器$()。"
+            "text": "$(li)$(item)採收籃$()也能收成大部分類型的種植盆。$(li)要收集$(thing)清掃機$()和$(thing)採摘機$()掉落的物品，可以使用$(item)漏斗礦車$()、裝有$(item)漏斗$()的$(thing)動態結構$()，或格雷科技的$(item)物品收集器$()。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "electric",
             "item": "tfg:electric_greenhouse",
-            "text": "如果你偏好格雷科技機器勝過機械動力裝置，多方塊結構$(item)電力溫室$()可作為$(thing)原木$()和其他植物的來源，還能種植更多 TFC 的裝飾性植物！$(br2)可在$(7)LV$()後期製作。"
+            "text": "偏好格雷科技機器而非機械動力裝置的話，多方塊結構$(item)電力溫室$()可以供應$(thing)原木$()和其他植物，還能種植更多 TFC 的裝飾性植物！$(br2)可在$(7)LV$()後期製作。"
         },
         {
             "type": "patchouli:text",

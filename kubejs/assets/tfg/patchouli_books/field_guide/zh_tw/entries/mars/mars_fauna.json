@@ -75,12 +75,12 @@
 			"entity": "tfg:glacian_ram{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
 			"scale": 0.7,
 			"name": " ",
-			"text": "一隻霜原公羊/母羊。"
+			"text": "霜原公羊/母羊。"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "搶奪者",
-			"text": "$(thing)搶奪者$()是喜歡偷東西的被動動物！攻擊牠們可取回物品，或餵$(item)生魚$()來馴服。$(br2)馴服後可以把牠們背在背上，並裝備一個木箱。按$(k:key.wan_ancient_beasts.special_ability)$()把牠們丟出去，牠們就會偷走附近箱子裡的東西帶回給你。",
+			"text": "$(thing)搶奪者$()是喜歡偷東西的被動動物！攻擊牠們可取回物品，或餵$(item)生魚$()來馴服。$(br2)馴服後可以把牠們背在背上，並裝備儲物箱。按$(k:key.wan_ancient_beasts.special_ability)$()把牠們丟出去，牠們就會偷走附近箱子裡的東西帶回給你。",
 			"anchor": "snatcher"
 		},
 		{
@@ -107,7 +107,7 @@
 			"type": "patchouli:text",
 			"title": "翱翔獸",
 			"anchor": "soarer",
-			"text": "$(thing)翱翔獸$()是出沒在 -106°C 以上的被動動物，可用$(item)生魚$()馴服，當作飛行坐騎。$(br2)不過牠們無法一直飛，左上角的翅膀圖示代表剩餘飛行能力，偶爾需要降落休息。(多餵生魚可加快恢復。)$(br2)牠們很適合長途旅行，也不會激怒沙蟲！"
+			"text": "$(thing)翱翔獸$()是出沒在 -106°C 以上的被動動物，可用$(item)生魚$()馴服，當作飛行坐騎。$(br2)但牠們無法一直飛，左上角的翅膀圖示代表剩餘飛行能力，偶爾需要降落休息。(多餵生魚可加快恢復。)$(br2)牠們很適合長途旅行，也不會激怒沙蟲！"
 		},
 		{
 			"type": "patchouli:entity",
@@ -243,7 +243,7 @@
 			"scale": 0.8,
 			"name": "骷髏迅猛龍",
 			"anchor": "skeletal_raptor",
-			"text": "一種不死的恐龍。可以在地下找到牠們。"
+			"text": "不死的恐龍，出沒在地下。"
 		},
 		{
 			"type": "patchouli:relations",
