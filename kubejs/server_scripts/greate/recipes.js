@@ -8,6 +8,7 @@ function registerGreateRecipes(event) {
 	
 	removeGreateRecipes(event)
 	registerGreateRecyclingRecipes(event);
+	tierGreateRecipes(event)
 
 	event.replaceInput({ input: 'create:cogwheel'}, 'create:cogwheel', '#forge:cogwheels')
 	event.replaceInput({ input: 'create:large_cogwheel'}, 'create:large_cogwheel', '#forge:large_cogwheels')
@@ -750,6 +751,29 @@ function registerGreateRecipes(event) {
 
 	// #region Mixer
 
+	event.shaped('greate:andesite_alloy_mechanical_mixer', [
+		'ABA',
+		'DCD',
+		'FEG'
+	], {
+		A: '#forge:screws/wrought_iron',
+		B: 'greate:andesite_alloy_shaft',
+		C: 'create:andesite_casing',
+		D: 'greate:andesite_alloy_cogwheel',
+		E: 'greate:andesite_alloy_whisk',
+		F: '#forge:tools/wrenches',
+		G: '#forge:tools/screwdrivers'
+	}).id('greate:shaped/andesite_alloy_mechanical_mixer')
+
+	event.recipes.gtceu.assembler('greate:andesite_alloy_mechanical_mixer')
+		.itemInputs('greate:andesite_alloy_shaft', '2x greate:andesite_alloy_cogwheel', 'create:andesite_casing',
+			'greate:andesite_alloy_whisk', '2x #forge:screws/wrought_iron')
+		.itemOutputs('greate:andesite_alloy_mechanical_mixer')
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.ULV])
+		.removePreviousMaterialInfo()
+		.addMaterialInfo(true)
+
 	event.shaped('greate:steel_mechanical_mixer', [
 		'ABA',
 		'DCD',
@@ -761,7 +785,7 @@ function registerGreateRecipes(event) {
 		D: '#forge:plates/black_steel',
 		E: 'gtceu:steel_whisk',
 		F: '#forge:tools/wrenches',
-		G: '#forge:tools/hammers'
+		G: '#forge:tools/screwdrivers'
 	}).id('greate:shaped/steel_mechanical_mixer')
 
 	event.recipes.gtceu.assembler('greate:steel_mechanical_mixer')
@@ -783,7 +807,7 @@ function registerGreateRecipes(event) {
 		D: '#forge:plates/cobalt_brass',
 		E: 'gtceu:aluminium_whisk',
 		F: '#forge:tools/wrenches',
-		G: '#forge:tools/hammers'
+		G: '#forge:tools/screwdrivers'
 	}).id('greate:shaped/aluminium_mechanical_mixer')
 
 	event.recipes.gtceu.assembler('greate:aluminium_mechanical_mixer')
@@ -805,7 +829,7 @@ function registerGreateRecipes(event) {
 		D: '#forge:plates/vanadium_steel',
 		E: 'gtceu:stainless_steel_whisk',
 		F: '#forge:tools/wrenches',
-		G: '#forge:tools/hammers'
+		G: '#forge:tools/screwdrivers'
 	}).id('greate:shaped/stainless_steel_mechanical_mixer')
 
 	event.recipes.gtceu.assembler('greate:stainless_steel_mechanical_mixer')
@@ -827,7 +851,7 @@ function registerGreateRecipes(event) {
 		D: '#forge:plates/blue_alloy',
 		E: 'gtceu:titanium_whisk',
 		F: '#forge:tools/wrenches',
-		G: '#forge:tools/hammers'
+		G: '#forge:tools/screwdrivers'
 	}).id('greate:shaped/titanium_mechanical_mixer')
 
 	event.recipes.gtceu.assembler('greate:titanium_mechanical_mixer')
@@ -841,6 +865,40 @@ function registerGreateRecipes(event) {
 	// #endregion
 
 	// #region Whisks
+	event.shaped('greate:andesite_alloy_whisk', [
+		'ABC',
+		'D D',
+		'D D'
+	], {
+		A: '#forge:tools/hammers',
+		B: '#forge:rings/any_bronze',
+		C: '#forge:tools/wrenches',
+		D: '#forge:rods/any_bronze'
+	}).id('greate:shaped/andesite_alloy_whisk')
+	
+	event.recipes.gtceu.extruder('greate:andesite_alloy_whisk')
+		.itemInputs('2x #forge:ingots/bronze')
+		.notConsumable('tfg:whisk_extruder_mold')
+		.itemOutputs('greate:andesite_alloy_whisk')
+		.duration(GTMaterials.Bronze.getMass() * 4)
+		.EUt(GTValues.VHA[GTValues.MV])
+	
+	event.recipes.gtceu.extruder('greate:black_bronze_whisk')
+		.itemInputs('2x #forge:ingots/black_bronze')
+		.notConsumable('tfg:whisk_extruder_mold')
+		.itemOutputs('greate:andesite_alloy_whisk')
+		.duration(GTMaterials.BlackBronze.getMass() * 4)
+		.EUt(GTValues.VHA[GTValues.MV])
+	
+	event.recipes.gtceu.extruder('greate:bismuth_bronze_whisk')
+		.itemInputs('2x #forge:ingots/bismuth_bronze')
+		.notConsumable('tfg:whisk_extruder_mold')
+		.itemOutputs('greate:andesite_alloy_whisk')
+		.duration(GTMaterials.BismuthBronze.getMass() * 4)
+		.EUt(GTValues.VHA[GTValues.MV])
+		
+	TFGHelpers.clearMaterialInfo('greate:andesite_alloy_whisk');
+
 	event.shaped('gtceu:steel_whisk', [
 		'ABC',
 		'D D',
@@ -857,11 +915,10 @@ function registerGreateRecipes(event) {
 		.notConsumable('tfg:whisk_extruder_mold')
 		.itemOutputs('gtceu:steel_whisk')
 		.duration(GTMaterials.Steel.getMass() * 4)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VHA[GTValues.MV])
 		
 	TFGHelpers.clearMaterialInfo('gtceu:steel_whisk');
 	TFGHelpers.registerMaterialInfo('gtceu:steel_whisk', [GTMaterials.Steel, 4]);
-	event.remove({ id: 'gtceu:extractor/extract_steel_whisk' })
 	
 	event.shaped('gtceu:aluminium_whisk', [
 		'ABC',
@@ -879,11 +936,10 @@ function registerGreateRecipes(event) {
 		.notConsumable('tfg:whisk_extruder_mold')
 		.itemOutputs('gtceu:aluminium_whisk')
 		.duration(GTMaterials.Aluminium.getMass() * 4)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VHA[GTValues.MV])
 		
 	TFGHelpers.clearMaterialInfo('gtceu:aluminium_whisk');
 	TFGHelpers.registerMaterialInfo('gtceu:aluminium_whisk', [GTMaterials.Aluminium, 4]);
-	event.remove({ id: 'gtceu:extractor/extract_aluminium_whisk' })
 	
 	event.shaped('gtceu:stainless_steel_whisk', [
 		'ABC',
@@ -901,11 +957,10 @@ function registerGreateRecipes(event) {
 		.notConsumable('tfg:whisk_extruder_mold')
 		.itemOutputs('gtceu:stainless_steel_whisk')
 		.duration(GTMaterials.StainlessSteel.getMass() * 4)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VHA[GTValues.MV])
 		
 	TFGHelpers.clearMaterialInfo('gtceu:stainless_steel_whisk');
 	TFGHelpers.registerMaterialInfo('gtceu:stainless_steel_whisk', [GTMaterials.StainlessSteel, 4]);
-	event.remove({ id: 'gtceu:extractor/extract_stainless_steel_whisk' })
 	
 	event.shaped('gtceu:titanium_whisk', [
 		'ABC',
@@ -923,11 +978,10 @@ function registerGreateRecipes(event) {
 		.notConsumable('tfg:whisk_extruder_mold')
 		.itemOutputs('gtceu:titanium_whisk')
 		.duration(GTMaterials.Titanium.getMass() * 4)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VHA[GTValues.MV])
 		
 	TFGHelpers.clearMaterialInfo('gtceu:titanium_whisk');
 	TFGHelpers.registerMaterialInfo('gtceu:titanium_whisk', [GTMaterials.Titanium, 4]);
-	event.remove({ id: 'gtceu:extractor/extract_titanium_whisk' })
 		
 	event.shaped('gtceu:tungsten_steel_whisk', [
 		'ABC',
@@ -945,11 +999,10 @@ function registerGreateRecipes(event) {
 		.notConsumable('tfg:whisk_extruder_mold')
 		.itemOutputs('gtceu:tungsten_steel_whisk')
 		.duration(GTMaterials.TungstenSteel.getMass() * 4)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VHA[GTValues.MV])
 		
 	TFGHelpers.clearMaterialInfo('gtceu:tungsten_steel_whisk');
 	TFGHelpers.registerMaterialInfo('gtceu:tungsten_steel_whisk', [GTMaterials.TungstenSteel, 4]);
-	event.remove({ id: 'gtceu:extractor/extract_tungsten_steel_whisk' })
 		
 	event.shaped('gtceu:rhodium_plated_palladium_whisk', [
 		'ABC',
@@ -967,11 +1020,10 @@ function registerGreateRecipes(event) {
 		.notConsumable('tfg:whisk_extruder_mold')
 		.itemOutputs('gtceu:rhodium_plated_palladium_whisk')
 		.duration(GTMaterials.RhodiumPlatedPalladium.getMass() * 4)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VHA[GTValues.MV])
 		
 	TFGHelpers.clearMaterialInfo('gtceu:rhodium_plated_palladium_whisk');
 	TFGHelpers.registerMaterialInfo('gtceu:rhodium_plated_palladium_whisk', [GTMaterials.RhodiumPlatedPalladium, 4]);
-	event.remove({ id: 'gtceu:extractor/extract_rhodium_plated_palladium_whisk' })
 		
 	event.shaped('gtceu:naquadah_alloy_whisk', [
 		'ABC',
@@ -989,11 +1041,10 @@ function registerGreateRecipes(event) {
 		.notConsumable('tfg:whisk_extruder_mold')
 		.itemOutputs('gtceu:naquadah_alloy_whisk')
 		.duration(GTMaterials.NaquadahAlloy.getMass() * 4)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VHA[GTValues.MV])
 		
 	TFGHelpers.clearMaterialInfo('gtceu:naquadah_alloy_whisk');
 	TFGHelpers.registerMaterialInfo('gtceu:naquadah_alloy_whisk', [GTMaterials.NaquadahAlloy, 4]);
-	event.remove({ id: 'gtceu:extractor/extract_naquadah_alloy_whisk' })
 		
 	event.shaped('gtceu:darmstadtium_whisk', [
 		'ABC',
@@ -1011,11 +1062,10 @@ function registerGreateRecipes(event) {
 		.notConsumable('tfg:whisk_extruder_mold')
 		.itemOutputs('gtceu:darmstadtium_whisk')
 		.duration(GTMaterials.Darmstadtium.getMass() * 4)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VHA[GTValues.MV])
 		
 	TFGHelpers.clearMaterialInfo('gtceu:darmstadtium_whisk');
 	TFGHelpers.registerMaterialInfo('gtceu:darmstadtium_whisk', [GTMaterials.Darmstadtium, 4]);
-	event.remove({ id: 'gtceu:extractor/extract_darmstadtium_whisk' })
 
 	// #endregion
 

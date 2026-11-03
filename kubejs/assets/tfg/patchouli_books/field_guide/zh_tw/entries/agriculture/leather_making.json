@@ -16,7 +16,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "製作皮革需要以下材料與工具：$(br)$(li)$(l:craftsmanship/barrels#limewater)石灰水$()――將$(item)助熔劑$()溶於$(thing)水$()中的溶液$(li)水$(li)$(l:craftsmanship/barrels#tannin)單寧$()――由某些樹木的樹皮製成的酸性溶液。$(li)$(thing)獸皮$()$(br2)備齊後就可以開始製作皮革了。"
+            "text": "製作皮革需要以下材料與工具：$(br)$(li)$(l:craftsmanship/barrels#limewater)石灰水$()：將$(item)助熔劑$()溶於$(thing)水$()中的溶液$(li)水$(li)$(l:craftsmanship/barrels#tannin)單寧$()：由某些樹木的樹皮製成的酸性溶液。$(li)$(thing)獸皮$()$(br2)備齊後就可以開始製作皮革了。"
         },
         {
             "type": "tfg:sealed_barrel_recipe",
@@ -40,7 +40,7 @@
                 "tfc:textures/gui/book/tutorial/soaked_hide_3.png",
                 "tfc:textures/gui/book/tutorial/soaked_hide_4.png"
             ],
-            "text": "毛皮完全刮好之後，就可以將它打下來，取得$(thing)刮製獸皮$()。",
+            "text": "毛皮完全刮好後，將它打下來即可取得$(thing)刮製獸皮$()。",
             "border": true
         },
         {

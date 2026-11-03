@@ -242,7 +242,7 @@
             "type": "patchouli:text",
             "anchor": "vinegar",
             "title": "Konserwacja w occie",
-            "text": "$(thing)Konserwowanie w occie$() przedłuża trwałość owoców, warzyw i mięsa. Aby zakonserwować żywność w occie, należy ją najpierw $(thing)ukisić$() w $(thing)solance$(). Następnie można ją zamknąć w beczce z octem. Każdą sztuka kiszonej żywności wymaga co najmniej 125 mW octu, by jej trwałość została dodatkowo wydłużona. Cecha $(7)$(bold)kiszone$() daje modyfikator 0,5, a cecha $(7)$(bold)zakonserwowane w occie$() - 0,1."
+            "text": "$(thing)Konserwowanie w occie$() przedłuża trwałość owoców, warzyw i mięsa. Aby zakonserwować żywność w occie, należy ją najpierw $(thing)ukisić$() w $(thing)solance$(). Następnie można ją zamknąć w beczce z octem. Każdą sztuka kiszonej żywności wymaga co najmniej 125 mB octu, by jej trwałość została dodatkowo wydłużona. Cecha $(7)$(bold)kiszone$() daje modyfikator 0,5, a cecha $(7)$(bold)zakonserwowane w occie$() - 0,1."
         },
         {
             "type": "patchouli:text",

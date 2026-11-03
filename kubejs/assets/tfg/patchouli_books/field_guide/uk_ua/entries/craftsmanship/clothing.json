@@ -16,7 +16,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Що таке цікавинки? (Curios)",
+			"title": "Що таке цікавинки?",
 			"anchor": "curios",
 			"images": [
 				"tfg:textures/gui/field_guide/curios.png"
@@ -33,7 +33,7 @@
 			"recipe": "sns:straw_knapping/straw_hat",
 			"anchor": "straw_hat",
 			"title": "Солом'яний капелюх",
-			"text": "Перший предмет одягу, який ти можеш виготовити, — простий $(item)Солом'яний капелюх$(), зроблений із $(l:craftsmanship/building_materials#thatch)соломи$(). Він захищає тебе від $(l:game_mechanics/player_temperature#wetness)прямих сонячних променів$()."
+			"text": "Перший предмет одягу, який ти можеш виготовити, — простий $(item)солом'яний капелюх$(), зроблений із $(l:craftsmanship/building_materials#thatch)соломи$(). Він захищає тебе від $(l:game_mechanics/player_temperature#wetness)прямих сонячних променів$()."
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -51,29 +51,29 @@
 		{
 			"type": "tfg:knapping_recipe",
 			"recipe": "tfg:knapping/raw_hat",
-			"text": "$(l:craftsmanship/sticks_and_stones#knapping)Виготовлення$() $(item)Примітивного капюшона$()."
+			"text": "$(l:craftsmanship/sticks_and_stones#knapping)Виготовлення$() $(item)примітивного капюшона$()."
 		},
 		{
 			"type": "tfg:knapping_recipe",
 			"recipe": "tfg:knapping/raw_shirt",
-			"text": "Виготовлення $(item)Примітивної тоги$()."
+			"text": "Виготовлення $(item)примітивної тоги$()."
 		},
 		{
 			"type": "tfg:knapping_recipe",
 			"recipe": "tfg:knapping/raw_pants",
-			"text": "Виготовлення $(item)Примітивних шорт$()."
+			"text": "Виготовлення $(item)примітивних шорт$()."
 		},
 		{
 			"type": "tfg:knapping_recipe",
 			"recipe": "tfg:knapping/raw_socks",
-			"text": "Виготовлення $(item)Примітивних чобот$()."
+			"text": "Виготовлення $(item)примітивних чобот$()."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "insulated_leather",
 			"title": "Утеплена шкіра",
 			"item": "tfcambiental:insulated_leather_hat,tfcambiental:insulated_leather_tunic,tfcambiental:insulated_leather_pants,tfcambiental:insulated_leather_boots",
-			"text": "Одяг із $(item)Утепленої шкіри$() — наступний крок після твого печерного косплею. Для нього потрібна лише броня зі  $(l:agriculture/leather_making)Шкіри$(), а також $(l:agriculture/animal_husbandry#wooly_animals)сира вовна$(), або $(l:agriculture/animal_husbandry#oviparous_animals)пір'я$()."
+			"text": "Одяг з $(item)утепленої шкіри$() — наступний крок після твого печерного косплею. Для нього потрібна лише броня зі  $(l:agriculture/leather_making)шкіри$(), а також $(l:agriculture/animal_husbandry#wooly_animals)сира вовна$(), або $(l:agriculture/animal_husbandry#oviparous_animals)пір'я$()."
 		},
 		{
 			"type": "patchouli:crafting",

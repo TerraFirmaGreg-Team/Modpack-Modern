@@ -196,7 +196,7 @@ function registerTFCDyeRecipes(event) {
                 Fluid.of(`tfc:${dyeMixes[2][i]}_dye`, 288)
             )
             .duration(20)
-            .EUt(8)
+            .EUt(7)
 		
 		// TFC barrel recipes (2x because 2! = 2)
 		event.recipes.tfc.barrel_instant_fluid(

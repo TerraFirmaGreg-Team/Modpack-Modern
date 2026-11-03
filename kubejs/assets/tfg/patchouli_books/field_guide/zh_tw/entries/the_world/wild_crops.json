@@ -28,7 +28,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "野生作物會在接近該作物適合種植的氣候中生成，想找特定作物，就到它能種植的氣候中尋找。$(br2)不過與玩家種下的$(l:agriculture/growing_crops)作物$()不同，野生作物不需要$(l:agriculture/growing_crops#hydration)含水量$()，而是依平均$(l:the_world/climate#temperature)溫度$()和$(l:the_world/climate#rainfall)降雨量$()分布。"
+            "text": "野生作物會在接近該作物適合種植的氣候中生成，想找特定作物，就到它能種植的氣候中尋找。$(br2)但與玩家種下的$(l:agriculture/growing_crops)作物$()不同，野生作物不需要$(l:agriculture/growing_crops#hydration)含水量$()，而是依平均$(l:the_world/climate#temperature)溫度$()和$(l:the_world/climate#rainfall)降雨量$()分布。"
         },
         {
             "type": "tfg:table",
@@ -4383,7 +4383,7 @@
             "type": "patchouli:text",
             "anchor": "lentil",
             "title": "扁豆",
-            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：-20 - 18 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：50 - 100 %$(br)$(bold)養分$()：磷$(br2)扁豆可以食用，提供$(thing)蔬菜$()營養，不過建議先煮熟再吃。扁豆也是在寒冷氣候中耕種的好選擇。"
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：-20 - 18 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：50 - 100 %$(br)$(bold)養分$()：磷$(br2)扁豆可以食用，提供$(thing)蔬菜$()營養，建議先煮熟再吃。扁豆也是在寒冷氣候中耕種的好選擇。"
         },
         {
             "type": "tfg:multimultiblock",

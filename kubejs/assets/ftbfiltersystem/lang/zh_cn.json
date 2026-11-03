@@ -19,6 +19,7 @@
   "filter.ftbfiltersystem.max_stack_size.tooltip": "与物品的最大堆叠数相匹配。\n不可堆叠的物品最大堆叠数为1。",
   "filter.ftbfiltersystem.mod.name": "模组",
   "filter.ftbfiltersystem.mod.tooltip": "与添加该物品所属的模组匹配。\n原版物品属于Minecraft“模组”。",
+  "filter.ftbfiltersystem.nbt.name": "NBT",
   "filter.ftbfiltersystem.nbt.tooltip": "精确或模糊匹配物品的 NBT 数据。\n精确： NBT 数据必须完全一致。\n模糊： 仅检查此处指定的 NBT 字段是否匹配。\n如果你拥有管理员权限，可以点击物品栏中带有 NBT 的物品，将其当前 NBT 标签复制到文本编辑器中。",
   "filter.ftbfiltersystem.not.name": "否",
   "filter.ftbfiltersystem.not.tooltip": "复合过滤器：如果子过滤器不匹配，则此过滤器视为匹配。最多只能添加一个子过滤器。",

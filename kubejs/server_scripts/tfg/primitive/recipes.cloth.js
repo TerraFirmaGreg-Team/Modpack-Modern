@@ -179,7 +179,7 @@ function registerTFGClothRecipes(event) {
 		.EUt(4)
 
 	generateMixerRecipe(event, 'tfc:jute', "#tfg:clean_water 200",
-		'tfc:jute_fiber', null, [], 100, 4, 16, 'tfg:tfc/jute_fiber')
+		'tfc:jute_fiber', null, [], 100, GTValues.VHA[GTValues.LV], 16, 'tfg:tfc/jute_fiber')
 
 	event.recipes.tfc.loom(
 		'1x tfc:burlap_cloth',

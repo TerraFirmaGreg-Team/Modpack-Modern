@@ -73,7 +73,25 @@
 			"greate:cutting/integration/gtceu/cutter/cut_hpic_distilled_water",
 			"greate:cutting/integration/gtceu/cutter/cut_uhpic",
 			"greate:cutting/integration/gtceu/cutter/cut_uhpic_water",
-			"greate:cutting/integration/gtceu/cutter/cut_uhpic_distilled_water"
+			"greate:cutting/integration/gtceu/cutter/cut_uhpic_distilled_water",
+			"gtceu:extractor/extract_andesite_alloy_rotor",
+			"gtceu:extractor/extract_andesite_alloy_plate",
+			"gtceu:extractor/extract_double_andesite_alloy_plate",
+			"gtceu:extractor/extract_andesite_alloy_ring",
+			"gtceu:extractor/extract_andesite_alloy_screw",
+			"gtceu:extractor/extract_andesite_alloy_nugget",
+			"gtceu:extractor/extract_andesite_alloy_bolt",
+			"gtceu:extractor/extract_andesite_alloy_block",
+			"gtceu:extractor/extract_andesite_alloy_rod",
+			"gtceu:extractor/extract_andesite_alloy_whisk",
+			"gtceu:extractor/extract_steel_whisk",
+			"gtceu:extractor/extract_aluminium_whisk",
+			"gtceu:extractor/extract_stainless_steel_whisk",
+			"gtceu:extractor/extract_titanium_whisk",
+			"gtceu:extractor/extract_tungsten_steel_whisk",
+			"gtceu:extractor/extract_rhodium_plated_palladium_whisk",
+			"gtceu:extractor/extract_naquadah_alloy_whisk",
+			"gtceu:extractor/extract_darmstadtium_whisk"
 		]
 	},
 	{

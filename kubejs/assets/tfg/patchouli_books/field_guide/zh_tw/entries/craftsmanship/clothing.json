@@ -40,7 +40,7 @@
 			"title": "原始衣物",
 			"anchor": "primitive",
 			"item": "tfc_textile:raw_hat,tfc_textile:raw_shirt,tfc_textile:raw_pants,tfc_textile:raw_socks",
-			"text": "在極地光著身子快凍死了嗎？$(item)原始$()套裝非常容易製作，只需要一些$(l:craftsmanship/building_materials#thatch)乾草$()和$(item)獸皮$()。最適合你的穴居人時尚！$(br2)原始衣物的保暖度、隔熱度和耐久度都很低，但應該能撐到你找到更好的衣物。"
+			"text": "在極地光著身子快凍僵了？$(item)原始$()套裝非常容易製作，只需要一些$(l:craftsmanship/building_materials#thatch)乾草$()和$(item)獸皮$()。最適合你的穴居人時尚！$(br2)原始衣物的保暖度、隔熱度和耐久度都很低，但應該能撐到你找到更好的衣物。"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -108,7 +108,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "例如，$(l:the_world/wild_animals#crocodile)鱷魚皮衣物$()能讓你降溫，而$(l:the_world/wild_animals#caribou)馴鹿皮大衣$()則溫暖舒適。$(br2)最強的降溫衣物需要你前往某個$(l:beneath/beneath_mechanics#clothes)相當炎熱$()的地方……$(br2)這些衣物也都很容易修理。"
+			"text": "例如，$(l:the_world/wild_animals#crocodile)鱷魚皮衣物$()能讓你降溫，$(l:the_world/wild_animals#caribou)馴鹿皮大衣$()則溫暖舒適。$(br2)最強的降溫衣物需要你前往某個$(l:beneath/beneath_mechanics#clothes)相當炎熱$()的地方……$(br2)這些衣物也都很容易修理。"
 		},
 		{
 			"type": "patchouli:crafting",

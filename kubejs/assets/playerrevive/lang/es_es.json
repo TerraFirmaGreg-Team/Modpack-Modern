@@ -1,5 +1,6 @@
 {
 	"playerrevive.chat.bleeding": "%s se está desangrando",
+	"playerrevive.chat.no_commands": "No se permiten comandos mientras te desangras",
 	"playerrevive.gui.hold": "Mantén '%s' por %s segundos para rendirte",
 	"playerrevive.gui.label.time_left": "Te desangrarás en %s",
 	"playerrevive.revive.item": "Necesitas %s"

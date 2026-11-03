@@ -29,7 +29,7 @@
             "anchor": "bone_meal",
             "title": "骨粉",
             "link_recipes": false,
-            "text": "骨粉是由壓碎的骨頭製成。$(br)$(li)$(6)磷：10$()"
+            "text": "骨粉由壓碎的骨頭製成。$(br)$(li)$(6)磷：10$()"
         },
         {
             "type": "patchouli:spotlight",
@@ -37,7 +37,7 @@
             "anchor": "saltpeter",
             "title": "硝石",
             "link_recipes": false,
-            "text": "硝石是由它的礦石製成。$(br)$(li)$(b)氮：10$()$(li)$(d)鉀：40$()"
+            "text": "硝石由硝石礦製成。$(br)$(li)$(b)氮：10$()$(li)$(d)鉀：40$()"
         },
         {
             "type": "patchouli:spotlight",
@@ -61,7 +61,7 @@
             "anchor": "sylvite",
             "title": "鉀石鹽",
             "link_recipes": false,
-            "text": "鉀石鹽是由它的礦石製成。$(br)$(li)$(d)鉀：50$()"
+            "text": "鉀石鹽由鉀石鹽礦製成。$(br)$(li)$(d)鉀：50$()"
         },
         {
             "type": "patchouli:spotlight",
@@ -77,7 +77,7 @@
             "anchor": "fertilizer",
             "title": "肥料",
             "link_recipes": false,
-            "text": "肥料平均含有各種養分。用堆肥合成肥料，整體可獲得更多的養分。$(br)$(li)$(d)鉀：15$()$(li)$(b)氮：15$()$(li)$(6)磷：15$()"
+            "text": "肥料平均含有各種養分。用堆肥合成，整體養分更多。$(br)$(li)$(d)鉀：15$()$(li)$(b)氮：15$()$(li)$(6)磷：15$()"
         },
         {
             "type": "patchouli:relations",

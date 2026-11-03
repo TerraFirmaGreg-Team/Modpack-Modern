@@ -314,7 +314,7 @@
             "type": "patchouli:spotlight",
             "title": "高爐自動化",
             "item": "greate:steel_mechanical_pump",
-            "text": "在$(thing)蒸汽$()和$(7)LV$()時代需要大量的$(item)鋼$()。非常大量的鋼。$(thing)電力高爐$()還很遙遠，或許該想想如何優化鋼產量。$(br2)從$(l:craftsmanship/charcoal_forge#bellows)風箱$()背面提供機械動力即可將它自動化。不過要小心，使用風箱會消耗更多燃料，也會讓$(thing)鼓風口$()更快損壞。"
+            "text": "在$(thing)蒸汽$()和$(7)LV$()時代需要大量的$(item)鋼$()。非常大量的鋼。$(thing)電力高爐$()還很遙遠，或許該想想如何優化鋼產量。$(br2)從$(l:craftsmanship/charcoal_forge#bellows)風箱$()背面提供機械動力即可將它自動化。但要小心，使用風箱會消耗更多燃料，也會讓$(thing)鼓風口$()更快損壞。"
         },
         {
             "type": "patchouli:text",

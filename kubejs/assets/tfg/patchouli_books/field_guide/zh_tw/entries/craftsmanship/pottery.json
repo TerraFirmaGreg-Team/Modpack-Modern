@@ -48,7 +48,7 @@
                 }
             },
             "name": "黏土指示植物",
-            "text": "黏土，以及可能表示其存在的植物。",
+            "text": "黏土，以及暗示附近有黏土的植物。",
             "enable_visualize": false
         },
         {
@@ -113,7 +113,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "如果你看到了花，但地表沒有黏土，那就挖深一點！",
+            "text": "看到花卻沒看到黏土？往下挖深一點！",
             "multiblocks": [
                 {
                     "pattern": [
@@ -218,7 +218,7 @@
         {
             "type": "tfg:knapping_recipe",
             "recipe": "tfc:fire_clay_knapping/fire_ingot_mold",
-            "text": "$(thing)耐火錠模具$()是一種更堅固的$(l:craftsmanship/pottery#mold)錠模具$()，破損機率只有 1/100，而一般錠模具則是 1/10。"
+            "text": "$(thing)耐火錠模具$()是一種更堅固的$(l:craftsmanship/pottery#mold)錠模具$()，破損機率只有 1/100，一般錠模具則是 1/10。"
         },
         {
             "type": "patchouli:relations",

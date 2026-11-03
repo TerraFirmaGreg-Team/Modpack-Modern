@@ -44,7 +44,7 @@
 			"type": "patchouli:crafting",
 			"anchor": "other_cooling",
 			"recipe": "tfg:crafting/smoothie/magmango",
-			"text": "其他保持涼爽的方法，包括站在$(l:beneath/beneath_fauna#ice_jellie)冰果凍怪$()旁邊，以及吃$(item)冰湯$()和$(item)水果冰沙$()等降溫食物！"
+			"text": "其他保持涼爽的方法：站在$(l:beneath/beneath_fauna#ice_jellie)冰果凍怪$()旁邊，或吃$(item)冰湯$()和$(item)水果冰沙$()等降溫食物！"
 		},
 		{
 			"type": "patchouli:text",
@@ -102,14 +102,14 @@
 			"title": "豬布林以物易物",
 			"anchor": "piglins",
 			"item": "minecraft:gold_ingot",
-			"text": "如你所料，可以像原版一樣用$(item)金錠$()和$(thing)豬布林$()交易。$(br2)完整交易清單可在$(emi)查看――對金錠按$(thing)U$()即可。"
+			"text": "如你所料，可以像原版一樣用$(item)金錠$()和$(thing)豬布林$()交易。$(br2)完整交易清單可在$(emi)查看：對金錠按$(thing)U$()即可。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:piglin_disguise",
 			"title": "豬布林偽裝",
 			"anchor": "disguise",
-			"text": "如果你想確保交易順利――或只是想和當地居民打成一片――穿上$(thing)豬布林偽裝$()可以防止$(thing)豬布林$()一見到你就產生敵意。但要小心！牠們的耐心是有限的……"
+			"text": "想確保交易順利，或只是想和當地居民打成一片的話，穿上$(thing)豬布林偽裝$()可以防止$(thing)豬布林$()一見到你就產生敵意。但要小心！牠們的耐心是有限的……"
 		},
 		{
 			"type": "patchouli:text",

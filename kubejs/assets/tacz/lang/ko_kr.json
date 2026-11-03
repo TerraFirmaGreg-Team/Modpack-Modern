@@ -286,7 +286,5 @@
 	"tooltip.tacz.gun.type": "종류: ",
 	"tooltip.tacz.page.next": "다음",
 	"tooltip.tacz.page.previous": "이전",
-	"tooltip.tacz.refit.unload": "탄약 제거",
-	"config.tacz.client.sound.first_person_animation_sound_tracking": "일인칭 애니메이션 사운드 추적",
-	"config.tacz.client.sound.first_person_animation_sound_tracking.desc": "일인칭 애니메이션 키프레임 사운드에 특정 개체에 종속되지 않는 월드 사운드 소스를 사용하게 합니다. 이는 물리 사운드 모드와의 호환성을 높일 수 있지만, 이동 시 미세한 스테레오 음상 편차가 발생할 수 있습니다."
+	"tooltip.tacz.refit.unload": "탄약 제거"
 }

@@ -17,7 +17,7 @@ function registerJelliesRecipes(event) {
 		.itemInputs('#tfg:items/jellie_nutritional_mash_ingredient', '#tfg:items/jellie_nutritional_mash_ingredient', '#tfg:items/jellie_nutritional_mash_ingredient', '#tfg:items/jellie_nutritional_mash_ingredient')
 		.itemOutputs('4x jellies:jellie/food/nutritional_mash')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VHA[GTValues.ULV])
 
 	// Jellie Slime Ball to Minecraft Slime Ball
 	event.custom({
@@ -35,20 +35,8 @@ function registerJelliesRecipes(event) {
 		.inputFluids(Fluid.of('minecraft:water', 250))
 		.itemOutputs('minecraft:slime_ball')
 		.duration(50)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VHA[GTValues.ULV])
 
-	// Biotite Slime Ball
-	event.shapeless('gtceu:biotite_dust', ['jellies:jellie/slime_ball/biotite', '#forge:tools/mortars'])
-		.id('tfg:shapeless/mortar_biotite_slime_ball')
-
-	event.recipes.tfc.quern('gtceu:biotite_dust', 'jellies:jellie/slime_ball/biotite')
-		.id('tfg:quern/biotite_slime_ball')
-
-	event.recipes.gtceu.macerator('tfg:biotite_slime_ball')
-		.itemInputs('jellies:jellie/slime_ball/biotite')
-		.itemOutputs('gtceu:biotite_dust')
-		.duration(50)
-		.EUt(GTValues.VA[GTValues.ULV])
 
 	// Glowberry Slime Ball
 	for (let i = 1; i <= 5; i++) {
@@ -71,26 +59,25 @@ function registerJelliesRecipes(event) {
 		.length(600)
 		.id('tfg:vat/glowberry_slime_ball_to_sugar')
 
-	event.recipes.gtceu.chemical_reactor('tfg:glowberry_slime_ball')
+	event.recipes.gtceu.extractor('tfg:glowberry_slime_ball')
 		.itemInputs('jellies:jellie/slime_ball/glowberry')
 		.inputFluids(Fluid.of('tfc:spring_water', 200))
 		.itemOutputs('minecraft:sugar')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VHA[GTValues.ULV])
 
 	// Latex Slime Ball
 	event.recipes.firmalife.vat()
-		.inputs('jellies:jellie/slime_ball/latex', Fluid.of('tfc:spring_water', 200))
-		.outputFluid(Fluid.of('tfg:latex', 200))
+		.inputItem('jellies:jellie/slime_ball/latex')
+		.outputFluid(Fluid.of('tfg:jellie_milk', 1000))
 		.length(600)
 		.id('tfg:vat/latex_slime_ball_to_latex')
 
 	event.recipes.gtceu.brewery('tfg:latex_slime_ball')
 		.itemInputs('jellies:jellie/slime_ball/latex')
-		.inputFluids(Fluid.of('tfc:spring_water', 200))
-		.outputFluids(Fluid.of('tfg:latex', 200))
+		.outputFluids(Fluid.of('tfg:jellie_milk', 1000))
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VHA[GTValues.ULV])
 	
 	// Plant Slime Ball
 	event.shapeless('2x gtceu:plant_ball', ['jellies:jellie/slime_ball/plant', '#forge:tools/mortars'])
@@ -103,18 +90,18 @@ function registerJelliesRecipes(event) {
 		.itemInputs('jellies:jellie/slime_ball/plant')
 		.itemOutputs('2x gtceu:plant_ball')
 		.duration(50)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VHA[GTValues.ULV])
 
 	// Spring Slime Ball
 	event.recipes.firmalife.vat()
 		.inputItem('jellies:jellie/slime_ball/spring')
-		.outputFluid(Fluid.of('tfc:spring_water', 200))
+		.outputFluid(Fluid.of('tfc:spring_water', 1000))
 		.length(600)
 		.id('tfg:vat/spring_slime_ball_to_spring_water')
 
 	event.recipes.gtceu.brewery('tfg:spring_slime_ball')
 		.itemInputs('jellies:jellie/slime_ball/spring')
-		.outputFluids(Fluid.of('tfc:spring_water', 200))
+		.outputFluids(Fluid.of('tfc:spring_water', 1000))
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VHA[GTValues.ULV])
 }
