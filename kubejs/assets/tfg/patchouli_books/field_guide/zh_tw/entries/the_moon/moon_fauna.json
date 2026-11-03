@@ -55,7 +55,7 @@
 			"scale": 0.4,
 			"name": "星際行者",
 			"anchor": "star_crawler",
-			"text": "$(thing)星際行者$()是一種海星。牠們是敵對的，可以被吃掉。"
+			"text": "$(thing)星際行者$()是一種海星，具敵意，可作為食物。"
 		},
 		{
 			"type": "patchouli:entity",
@@ -63,7 +63,7 @@
 			"scale": 1,
 			"name": "終界使者",
 			"anchor": "endermen",
-			"text": "月球上棲息著更多種類的$(thing)終界使者$()。有些是中立的，但少數是敵對的，所以要小心！"
+			"text": "月球上棲息著更多種類的$(thing)終界使者$()。有些是中立的，但也有少數具敵意，要小心！"
 		},
 		{
 			"type": "patchouli:entity",

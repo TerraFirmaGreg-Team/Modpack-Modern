@@ -42,7 +42,6 @@ function registerTFGConcreteRecipes(event) {
 		.circuit(3)
 		.EUt(16)
 
-	//VENUS - IV - REWORK
 	event.recipes.gtceu.mixer('tfg:concrete_from_clay_calcite')
 		.itemInputs(
 			Ingredient.of('#tfg:stone_dusts').withCount(3),
@@ -112,7 +111,6 @@ function registerTFGConcreteRecipes(event) {
 		.ingredients(['#tfg:stone_dusts', '#tfg:stone_dusts', '#tfg:stone_dusts', '#forge:dusts/calcite', '#forge:dusts/gypsum'], Fluid.of('minecraft:water', 1000))
 		.outputFluid(Fluid.of('gtceu:concrete', 1000))
 
-    //VENUS - IV - REWORK
 	event.recipes.firmalife.mixing_bowl()
 		.ingredients(['#tfg:stone_dusts', '#tfg:stone_dusts', '#tfg:stone_dusts', '#forge:dusts/calcite', '#forge:dusts/clay'], Fluid.of('minecraft:water', 500))
 		.outputFluid(Fluid.of('gtceu:concrete', 500))

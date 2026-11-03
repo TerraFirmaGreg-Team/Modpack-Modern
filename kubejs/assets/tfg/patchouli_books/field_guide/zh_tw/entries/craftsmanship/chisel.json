@@ -22,7 +22,7 @@
                 "tfc:textures/gui/book/tutorial/chisel_stair.png",
                 "tfc:textures/gui/book/tutorial/chisel_slab.png"
             ],
-            "text": "$(bold)教學幻燈片：$()可用於$(thing)原始石灰岩$()方塊的三種鑿子模式。",
+            "text": "$(bold)教學投影片：$()可用於$(thing)原始石灰岩$()方塊的三種鑿子模式。",
             "border": true
         },
         {

@@ -5,7 +5,8 @@
 		"tfg:illagers/norse_village_ruined",
 		"tfg:illagers/arabic_village_living",
 		"tfg:illagers/yurts_village_living",
-		"tfg:mineshaft/mineshaft"
+		"tfg:mineshaft/mineshaft_shallow",
+		"tfg:mineshaft/mineshaft_deep"
 	],
 	"spawn_condition": {
 		"type": "lithostitched:grid",

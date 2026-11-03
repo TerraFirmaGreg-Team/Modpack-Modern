@@ -172,6 +172,8 @@
 	"item.wan_ancient_beasts.walker_spawn_egg": "Яйцо призыва ходуна",
 	"item.wan_ancient_beasts.white_charger_armor": "Броня Крушителя (Белая)",
 	"item.wan_ancient_beasts.yellow_charger_armor": "Броня Крушителя (Жёлтая)",
+	"itemGroup.wan_ancient_beasts.items": "Wan Ancient Beasts",
+	"key.categories.wan_ancient_beasts": "Wan's Ancient Beasts",
 	"key.messages.wan_ancient_beasts.special_ability.not_enough_oxygen": "У сёрфера недостаточно кислорода",
 	"key.wan_ancient_beasts.special_ability": "Особая способность",
 	"recipe_category.wan_ancient_beasts.crushing": "Дробление Крушителем",
@@ -277,5 +279,8 @@
 	"trim_pattern.wan_ancient_beasts.ancient_upgrade_smithing_template": "Кузнечный шаблон Древнего улучшения",
 	"trim_pattern.wan_ancient_beasts.sniff": "Отделка «Нюх»",
 	"trim_pattern.wan_ancient_beasts.spike": "Отделка «Шип»",
-	"upgrade.wan_ancient_beasts.ancient_upgrade": "Древний кузнечый шаблон"
+	"upgrade.wan_ancient_beasts.ancient_upgrade": "Древний кузнечый шаблон",
+	"enchantment.wan_ancient_beasts.egg_thief.desc": "Больший шанс найти яйца во время метения",
+	"enchantment.wan_ancient_beasts.preservation.desc": "Подозрительный блок требует меньше подметаний, чтобы отдать добычу",
+	"enchantment.wan_ancient_beasts.treasure_hunter.desc": "Лучшая добыча при метении подозрительных блоков"
 }

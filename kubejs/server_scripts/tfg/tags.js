@@ -424,6 +424,9 @@ const registerTFGFluidTags = (event) => {
 				event.add('tfg:vintage_alcohols', alcohol.vintageId);
 			 }
 		}
+
+		event.add('tfc:drinkables', 'tfg:jellie_milk');
+		event.add('tfc:milks', 'tfg:jellie_milk')
 	});
 	
 	event.add('tfc:drinkables', 'gtceu:ice')

@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:craftsmanship/glassworking#intro)玻璃配料$()$(li2)$(l:craftsmanship/glassworking#lime_and_potash)石灰與鉀鹼$()$(li)$(bold)$(l:craftsmanship/glassworking#tools)玻璃加工工具$()$(li2)$(l:craftsmanship/glassworking#blowpipe)吹管$()$(li2)$(l:craftsmanship/glassworking#paddle)整型板$()$(li2)$(l:craftsmanship/glassworking#jacks)玻璃夾鉗$()$(li2)$(l:craftsmanship/glassworking#saw)寶石鋸$()$(li)$(bold)$(l:craftsmanship/glassworking#glassworking_steps)玻璃加工步驟$()$(li2)$(l:craftsmanship/glassworking#table_pour)桌面澆注$()$(li2)$(l:craftsmanship/glassworking#basin_pour)盆槽澆注$()$(li)$(bold)$(l:craftsmanship/glassworking#coloring)玻璃上色$()$(li2)$(l:craftsmanship/glassworking#dyes)染料清單$()"
+            "text": "$(li)$(bold)$(l:craftsmanship/glassworking#intro)玻璃配料$()$(li2)$(l:craftsmanship/glassworking#lime_and_potash)石灰與鉀鹼$()$(li)$(bold)$(l:craftsmanship/glassworking#tools)玻璃加工工具$()$(li2)$(l:craftsmanship/glassworking#blowpipe)吹管$()$(li2)$(l:craftsmanship/glassworking#paddle)整型板$()$(li2)$(l:craftsmanship/glassworking#jacks)玻璃夾鉗$()$(li2)$(l:craftsmanship/glassworking#saw)寶石鋸$()$(li)$(bold)$(l:craftsmanship/glassworking#glassworking_steps)玻璃加工步驟$()$(li2)$(l:craftsmanship/glassworking#table_pour)桌式澆注$()$(li2)$(l:craftsmanship/glassworking#basin_pour)盆式澆注$()$(li)$(bold)$(l:craftsmanship/glassworking#coloring)玻璃上色$()$(li2)$(l:craftsmanship/glassworking#dyes)染料清單$()"
         },
         {
             "type": "patchouli:text",
@@ -39,7 +39,7 @@
             "anchor": "blowpipe",
             "title": "吹管",
             "item": "tfc:ceramic/unfired_blowpipe,tfc:ceramic_blowpipe,tfc:blowpipe",
-            "text": "最重要的工具是$(thing)吹管$()。可以用黏土$(thing)塑形$()出$(item)未燒製的陶瓷吹管$()，再燒製成$(thing)陶瓷吹管$()。$(br)不過陶瓷吹管很脆，使用時有機率破損。用$(thing)黃銅棒$()在砧上$(l:craftsmanship/anvils#working)鍛造$()可做出不會損壞的$(item)吹管$()。"
+            "text": "最重要的工具是$(thing)吹管$()。可以用黏土$(thing)塑形$()出$(item)未燒製的陶瓷吹管$()，再燒製成$(thing)陶瓷吹管$()。$(br)但陶瓷吹管很脆，使用時有機率破損。用$(thing)黃銅棒$()在砧上$(l:craftsmanship/anvils#working)鍛造$()可做出不會損壞的$(item)吹管$()。"
         },
         {
             "type": "patchouli:crafting",
@@ -90,7 +90,7 @@
                 "tfg:textures/gui/field_guide/glassworking/pane_5.png",
                 "tfg:textures/gui/field_guide/glassworking/pane_6.png"
             ],
-            "text": "$(bold)教學幻燈片：$()逐步製作強化玻璃片。",
+            "text": "$(bold)教學投影片：$()逐步製作強化玻璃片。",
             "border": true
         },
         {
@@ -112,7 +112,7 @@
                 "tfg:textures/gui/field_guide/glassworking/lens_8.png",
                 "tfg:textures/gui/field_guide/glassworking/lens_9.png"
             ],
-            "text": "$(bold)教學幻燈片：$()逐步製作透鏡。",
+            "text": "$(bold)教學投影片：$()逐步製作透鏡。",
             "border": true
         },
         {
@@ -130,18 +130,18 @@
                 "tfg:textures/gui/field_guide/glassworking/glass_2.png",
                 "tfg:textures/gui/field_guide/glassworking/glass_3.png"
             ],
-            "text": "$(bold)教學幻燈片：$()逐步製作綠色染色玻璃。",
+            "text": "$(bold)教學投影片：$()逐步製作綠色染色玻璃。",
             "border": true
         },
         {
             "type": "patchouli:text",
-            "text": "$(thing)玻璃片$()以$(thing)台式澆注$()製作。在連續區域放置最多十六個$(thing)高嶺土方塊$()或$(thing)鍍黃銅方塊$()即可做成澆注台。$(br2) 1. 將$(l:craftsmanship/glassworking)玻璃配料$()加到$(thing)吹管$()上。$(br) 2. 將吹管加熱到$(4)$(bold)淡紅$()。$(br) 3. $()手持$(thing)吹管$()對澆注台頂部按 $(item)$(k:key.use)$()。$(br) 4. 最後手持$(l:craftsmanship/glassworking#paddle)整型板$()按 $(item)$(k:key.use)$() 將玻璃壓平。",
-            "title": "台式澆注",
+            "text": "$(thing)玻璃片$()以$(thing)桌式澆注$()製作。在連續區域放置最多十六個$(thing)高嶺土方塊$()或$(thing)鍍黃銅方塊$()即可做成澆注台。$(br2) 1. 將$(l:craftsmanship/glassworking)玻璃配料$()加到$(thing)吹管$()上。$(br) 2. 將吹管加熱到$(4)$(bold)淡紅$()。$(br) 3. $()手持$(thing)吹管$()對澆注台頂部按 $(item)$(k:key.use)$()。$(br) 4. 最後手持$(l:craftsmanship/glassworking#paddle)整型板$()按 $(item)$(k:key.use)$() 將玻璃壓平。",
+            "title": "桌式澆注",
             "anchor": "table_pour"
         },
         {
             "type": "patchouli:multiblock",
-            "text": "玻璃冷卻後，可以用$(l:craftsmanship/glassworking#saw)寶石鋸$()破壞來取得。",
+            "text": "玻璃冷卻後，用$(l:craftsmanship/glassworking#saw)寶石鋸$()破壞即可取得。",
             "border": true,
             "multiblock": {
                 "mapping": {
@@ -166,7 +166,7 @@
         },
         {
             "type": "patchouli:multiblock",
-            "text": "玻璃冷卻後，可以用$(l:craftsmanship/glassworking#saw)寶石鋸$()破壞來取得。",
+            "text": "玻璃冷卻後，用$(l:craftsmanship/glassworking#saw)寶石鋸$()破壞即可取得。",
             "border": true,
             "multiblock": {
                 "mapping": {
@@ -498,7 +498,7 @@
                     "fill": "0x3eb340"
                 }
             ],
-            "text": "每種原料可製成的玻璃顏色。C表示透明玻璃，T表示遮光玻璃。",
+            "text": "每種原料可製成的玻璃顏色。C 表示透明玻璃，T 表示遮光玻璃。顏色只能用特定玻璃配料製作。",
             "title": "可製成的玻璃顏色",
             "legend": [
                 {

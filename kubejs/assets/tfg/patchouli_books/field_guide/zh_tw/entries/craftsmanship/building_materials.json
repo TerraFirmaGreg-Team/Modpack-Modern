@@ -13,7 +13,7 @@
             "type": "patchouli:text",
             "anchor": "primitive_materials",
             "title": "原始材料",
-            "text": "遊戲初期建築可能是一大挑戰，因為許多堅固的建築方塊需要金屬工具才能取得。不過，有幾種建築方塊只用石製工具就能取得。$(br2)更多$(l:craftsmanship/building_materials#advanced_materials)進階建築方塊$()則需要金屬工具。"
+            "text": "遊戲初期建築可能是一大挑戰，因為許多堅固的建築方塊需要金屬工具才能取得。但有幾種建築方塊只用石製工具就能取得。$(br2)更多$(l:craftsmanship/building_materials#advanced_materials)進階建築方塊$()則需要金屬工具。"
         },
         {
             "type": "patchouli:text",

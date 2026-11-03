@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "$(thing)體溫$()是只影響$(bold)你$()(玩家)的溫度。它不同於氣候的$(l:the_world/climate#temperature)目前溫度與平均溫度$()，但會受其與$(l:game_mechanics/player_temperature#what_affects_it)其他因素$()影響。$(br2)請留意體溫，以免$(thing)中暑$()或$(thing)凍傷$()！"
+			"text": "$(thing)體溫$()是只影響$(bold)你$()(玩家)的溫度。它不同於氣候的$(l:the_world/climate#temperature)目前溫度與平均溫度$()，但會受兩者與$(l:game_mechanics/player_temperature#what_affects_it)其他因素$()影響。$(br2)留意體溫，以免$(thing)中暑$()或$(thing)凍傷$()！"
 		},
 		{
 			"type": "patchouli:text",
@@ -58,7 +58,7 @@
 			"type": "patchouli:text",
 			"title": "飲食",
 			"anchor": "food",
-			"text": "有些$(l:cooking)食物$()和$(l:cooking/drinks)飲料$()帶有影響體溫的效果，包括：$(li)$(l:game_mechanics/mob_effects#cooling)降溫$()$(li)$(l:game_mechanics/mob_effects#warming)保暖$()$(li)$(l:game_mechanics/mob_effects#freezing)凍結$()$(li)$(l:game_mechanics/mob_effects#blazing)灼熱$()$(br2)喝$(l:cooking/drinks#spring_water)溫泉水$()能讓你暖和起來，而$(l:cooking/drinks#ice_slush)冰沙$()能讓你降溫。"
+			"text": "有些$(l:cooking)食物$()和$(l:cooking/drinks)飲料$()帶有影響體溫的效果，包括：$(li)$(l:game_mechanics/mob_effects#cooling)降溫$()$(li)$(l:game_mechanics/mob_effects#warming)保暖$()$(li)$(l:game_mechanics/mob_effects#freezing)凍結$()$(li)$(l:game_mechanics/mob_effects#blazing)灼熱$()$(br2)喝$(l:cooking/drinks#spring_water)溫泉水$()能暖身，$(l:cooking/drinks#ice_slush)冰沙$()能讓你降溫。"
 		},
 		{
 			"type": "patchouli:text",

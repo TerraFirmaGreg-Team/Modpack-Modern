@@ -633,9 +633,11 @@
 	"block.tfg.rock.bricks_tuff_slab": "Tuff Brick Slab",
 	"block.tfg.rock.bricks_tuff_stairs": "Tuff Brick Stairs",
 	"block.tfg.rock.bricks_tuff_wall": "Tuff Brick Wall",
+	"block.tfg.rock.mossy_bricks_tuff": "Mossy Tuff Bricks",
 	"block.tfg.rock.mossy_bricks_tuff_slab": "Mossy Tuff Brick Slab",
 	"block.tfg.rock.mossy_bricks_tuff_stairs": "Mossy Tuff Brick Stairs",
 	"block.tfg.rock.mossy_bricks_tuff_wall": "Mossy Tuff Brick Wall",
+	"block.tfg.rock.cracked_bricks_tuff": "Cracked Tuff Bricks",
 	"block.tfg.rock.cracked_bricks_tuff_slab": "Cracked Tuff Brick Slab",
 	"block.tfg.rock.cracked_bricks_tuff_stairs": "Cracked Tuff Brick Stairs",
 	"block.tfg.rock.cracked_bricks_tuff_wall": "Cracked Tuff Brick Wall",
@@ -1673,5 +1675,5 @@
 	"block.tfg.blackstone_anvil": "Pyroxenite Anvil",
 	"block.tfg.crackrack_anvil": "Keratophyre Anvil",
 
-    "block.tfg.gas_burner": "Gas Burner"
+	"block.tfg.gas_burner": "Gas Burner"
 }

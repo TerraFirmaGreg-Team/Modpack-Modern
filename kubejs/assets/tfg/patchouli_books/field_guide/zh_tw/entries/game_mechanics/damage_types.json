@@ -23,7 +23,7 @@
         {
             "type": "patchouli:text",
             "anchor": "crushing",
-            "text": "$(thing)鈍擊$()傷害是由$(thing)錘子$()和$(thing)錘矛$()等鈍器造成的。$(thing)殭屍$()會造成鈍擊傷害，對它也有些抗性。$(thing)苦力怕$()也能抵抗部分鈍擊傷害$()。$(thing)骷髏$()則容易受到鈍擊傷害。",
+            "text": "$(thing)鈍擊$()傷害來自$(thing)錘子$()和$(thing)錘矛$()等鈍器。$(thing)殭屍$()會造成鈍擊傷害，對它也有些抗性。$(thing)苦力怕$()也能抵抗部分鈍擊傷害$()。$(thing)骷髏$()則容易受到鈍擊傷害。",
             "title": "鈍擊"
         },
         {
@@ -34,7 +34,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "就$(thing)彩鋼$()而言，$(thing)藍鋼$()較擅長抵抗$(thing)鈍擊$()傷害，$(thing)紅鋼$()則較擅長抵抗$(thing)穿刺$()傷害。"
+            "text": "就$(thing)彩色鋼$()而言，$(thing)藍鋼$()較擅長抵抗$(thing)鈍擊$()傷害，$(thing)紅鋼$()則較擅長抵抗$(thing)穿刺$()傷害。"
         },
         {
             "type": "patchouli:relations",

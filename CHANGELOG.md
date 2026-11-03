@@ -4,7 +4,30 @@
 - Ceramic Circuit Board have different tiers so player can understand easily which one they can craft @TomPlop
 - Change Butraldehyde circuit to 5 @TomPlop
 - Lower the energy cost of Garnet-Yttrium Line @TomPlop
+- Added a calcite + clay dust recipe for liquid concrete (#5238) @lysteryale
+- Added snow bricks and ice bricks (#5235) @Pyritie
+- Added craftable powder snow @Pyritie
+- Added heating and casting for wax, and another way to make medicine powders that's possible in the Beneath (#5268) @Pyritie
+- Also added heating and casting for electrum, cupronickel, and battery alloy @Pyritie
+- Added the Basic Mechanical Mixer @Pyritie
+- Mechanical pumps can now pull fluids from aqueducts, except for lava @Allmoz @Pyritie
+- Increased the damage the sandworm deals @Pyritie
+- Blue and red steel tongs now have infinite durability (#4665) @Pyritie
 ### Bug fixes
+- Fixed mineshafts sticking out of the sides of mountains @Pyritie
+- Fixed some plants and flowers growing in the wrong elevations (#4994) @Pyritie
+- Fixed another crash when generating chunks that contain a sealed barrel in a structure @Pyritie
+- Fixed an issue with painted firmalife boats allocating a large amount of VRAM @Zippity
+- Fixed duplicate tallow gas burner fuel @Redeix
+- Quest fixes (#5192) @TomPlop
+- Fixed hose pulleys not being able to drain/fill TFC fluid-logged blocks such as plants, loose rocks, stone spikes, etc (#3428) @Allmoz
+- Fixed being able to move water sources via waterlogged plants and a schematicannon @Allmoz
+### Mods
+#### Jellies
+- Plant and Phosphorum Jellies now give 4x the items, since they're only useful for compost generation
+- Certus Jellies now give certus gems instead of the large bud clusters
+- Latex Jellies are renamed to Milk Jellies and their slime ball can be heated and drank as a Beneath source of dairy
+- Feeding troughs can be used to feed and breed Jellies, and deployers can be used to automate their products. They still only produce in their home dimension, though
 
 ## [0.13.17] - 26-10-2026
 ### Bug fixes

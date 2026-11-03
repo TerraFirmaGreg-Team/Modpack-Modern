@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)$(l:logistics/redstone_devices#clock)精密時鐘$()$(li)$(bold)$(l:logistics/redstone_devices#thermometer)溫度計$()$(li)$(bold)$(l:logistics/redstone_devices#anemometer)風速計$()$(li)$(bold)$(l:logistics/redstone_devices#vane)風向標$()$(li)$(bold)$(l:logistics/redstone_devices#morered)其他裝置$()$(li2)$(l:logistics/redstone_devices#more_comparators)更多比較器$()$(li2)$(l:logistics/redstone_devices#pulse_timer)脈衝計時器$()$(li2)$(l:logistics/redstone_devices#pulse_generator)序列脈衝產生器$()$(li2)$(l:logistics/redstone_devices#analog_lever)類比控制桿$()$(li)$(bold)$(l:logistics/redstone_devices#threshold_switch)儲量偵測器$()$(li)$(bold)$(l:logistics/redstone_devices#smart_observer)智慧偵測器$()$(li)$(bold)$(l:logistics/redstone_devices#link)無線紅石$()$(li)$(bold)$(l:logistics/redstone_devices#cover)機器覆蓋板$()"
+			"text": "$(li)$(bold)$(l:logistics/redstone_devices#clock)精密時鐘$()$(li)$(bold)$(l:logistics/redstone_devices#thermometer)溫度計$()$(li)$(bold)$(l:logistics/redstone_devices#anemometer)風速計$()$(li)$(bold)$(l:logistics/redstone_devices#vane)風向標$()$(li)$(bold)$(l:logistics/redstone_devices#morered)其他裝置$()$(li2)$(l:logistics/redstone_devices#more_comparators)更多比較器$()$(li2)$(l:logistics/redstone_devices#pulse_timer)脈衝計時器$()$(li2)$(l:logistics/redstone_devices#pulse_generator)序列脈衝產生器$()$(li2)$(l:logistics/redstone_devices#analog_lever)類比控制桿$()$(li)$(bold)$(l:logistics/redstone_devices#threshold_switch)儲量偵測器$()$(li)$(bold)$(l:logistics/redstone_devices#smart_observer)智慧偵測器$()$(li)$(bold)$(l:logistics/redstone_devices#link)無線紅石鏈路$()$(li)$(bold)$(l:logistics/redstone_devices#cover)機器覆蓋板$()"
 		},
 		{
 			"type": "patchouli:image",
@@ -114,7 +114,7 @@
 			"type": "patchouli:crafting",
 			"recipe": "tfg:create/shaped/redstone_link",
 			"anchor": "link",
-			"text": "$(item)紅石連結$()可以無線傳輸紅石訊號。"
+			"text": "$(item)無線紅石鏈路$()可以無線傳輸紅石訊號。"
 		},
 		{
 			"type": "patchouli:spotlight",
