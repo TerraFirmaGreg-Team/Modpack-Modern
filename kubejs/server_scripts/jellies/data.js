@@ -10,4 +10,8 @@ const registerJelliesData = (event) => {
 		food.water(0)
 		food.decayModifier(0)
 	})
+
+	event.itemHeat('jellies:jellie/slime_ball/glowberry', 1, null, null);
+	event.itemHeat('jellies:jellie/slime_ball/milk', 1, null, null);
+	event.itemHeat('jellies:jellie/slime_ball/spring', 1, null, null);
 }

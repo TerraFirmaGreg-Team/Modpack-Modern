@@ -46,6 +46,26 @@ function registerTFCMetalsRecipes(event) {
 		TFC.alloyPart('tfg:aluminium_silicate', 0.08, 0.14)
 	]).id('tfg:alloy/cobalt_brass')
 
+	event.recipes.tfc.alloy('tfg:electrum', [
+		TFC.alloyPart('tfc:silver', 0.45, 0.55),
+		TFC.alloyPart('tfc:gold', 0.45, 0.55)
+	]).id('tfg:alloy/electrum')
+	
+	event.recipes.tfc.alloy('tfg:cupronickel', [
+		TFC.alloyPart('tfc:copper', 0.45, 0.55),
+		TFC.alloyPart('tfc:nickel', 0.45, 0.55)
+	]).id('tfg:alloy/cupronickel')
+
+	event.recipes.tfc.alloy('tfg:battery_alloy', [
+		TFC.alloyPart('tfg:lead', 0.75, 0.85),
+		TFC.alloyPart('tfc:tin', 0.15, 0.25)
+	]).id('tfg:alloy/battery_alloy')
+
+	event.recipes.tfc.alloy('tfg:maldonite', [
+		TFC.alloyPart('tfc:gold', 0.60, 0.70),
+		TFC.alloyPart('tfc:bismuth', 0.30, 0.40)
+	]).id('tfg:alloy/maldonite')
+
 	//#endregion
 
 	//#region Рецепты ковки TFC слитков в GT машинах

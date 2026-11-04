@@ -40,6 +40,7 @@ ItemEvents.modification(event => {
     registerSNSItemModifications(event)
 	registerSpeciesItemModifications(event)
 	registerTFGItemModifications(event)
+	registerTFCHotOrNotItemModifications(event)
 })
 
 StartupEvents.registry('fluid', event => {

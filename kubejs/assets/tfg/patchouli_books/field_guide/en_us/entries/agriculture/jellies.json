@@ -10,7 +10,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:agriculture/jellies#produce)Produce$()$(li)$(bold)$(l:agriculture/jellies#feeding)Feeding$()$(li)$(bold)Earth Species$()$(li2)$(l:agriculture/jellies#herbal)Herbal$()$(li2)$(l:agriculture/jellies#phosphorum)Phosphorum$()$(li2)$(l:agriculture/jellies#rock)Rock$()$(li)$(bold)Beneath Species$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)Ice$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)Plant$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)Glowberry$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)Spring$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)Lava$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)Biotite$()$(li2)$(l:beneath/beneath_fauna#latex_jellie)Milk$()$(br2)$(o)(Continued on next page...)$()"
+			"text": "$(li)$(bold)$(l:agriculture/jellies#produce)Produce$()$(li)$(bold)$(l:agriculture/jellies#feeding)Feeding$()$(li)$(bold)Earth Species$()$(li2)$(l:agriculture/jellies#herbal)Herbal$()$(li2)$(l:agriculture/jellies#phosphorum)Phosphorum$()$(li2)$(l:agriculture/jellies#rock)Rock$()$(li)$(bold)Beneath Species$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)Ice$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)Plant$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)Glowberry$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)Spring$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)Lava$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)Biotite$()$(li2)$(l:beneath/beneath_fauna#milk_jellie)Milk$()$(br2)$(o)(Continued on next page...)$()"
 		},
 		{
 			"type": "patchouli:text",

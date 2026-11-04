@@ -98,7 +98,7 @@ function registerTFGMedicineRecipes(event) {
 			event.recipes.gtceu.mixer(`tfg:gtceu/mixer/arrow/${type.name}_1`)
 				.circuit(4)
 				.inputFluids(Fluid.of('gtceu:ethanol', 25))
-				.itemOutputs(Item.of('16x minecraft:tipped_arrow', `{Potion:"minecraft:${type.name}"}`))
+				.itemOutputs(Item.of('16x minecraft:tipped_arrow', `{Potion:"minecraft:${type.name}"}`).strongNBT())
 				.itemInputs('16x minecraft:arrow', `tfg:${type.name}_pill`)
 				.duration(200)
 				.EUt(GTValues.VHA[GTValues.LV])
@@ -106,7 +106,7 @@ function registerTFGMedicineRecipes(event) {
 			event.recipes.gtceu.mixer(`tfg:gtceu/mixer/arrow/${type.name}_2`)
 				.circuit(4)
 				.inputFluids(Fluid.of('gtceu:ethanol', 25))
-				.itemOutputs(Item.of('16x minecraft:tipped_arrow', `{Potion:"minecraft:long_${type.name}"}`))
+				.itemOutputs(Item.of('16x minecraft:tipped_arrow', `{Potion:"minecraft:long_${type.name}"}`).strongNBT())
 				.itemInputs('16x minecraft:arrow', `tfg:${type.name}_tablet`)
 				.duration(200)
 				.EUt(GTValues.VHA[GTValues.LV])
@@ -166,7 +166,7 @@ function registerTFGMedicineRecipes(event) {
 	]
 
 	powderTypes.forEach(type => {
-		// Regular
+		// Rosin
 		event.recipes.firmalife.mixing_bowl()
 			.ingredients([`#tfg:${type[1]}_ingredients`, `#tfg:${type[2]}_ingredients`, 'minecraft:bone_meal'], Fluid.of('tfg:conifer_pitch', 100))
 			.outputItem(`1x tfg:${type[0]}_powder`)
@@ -177,6 +177,19 @@ function registerTFGMedicineRecipes(event) {
 			.inputFluids(Fluid.of('tfg:conifer_pitch', 100))
 			.itemOutputs(`1x tfg:${type[0]}_powder`)
 			.itemInputs(`#tfg:${type[1]}_ingredients`, `#tfg:${type[2]}_ingredients`, 'minecraft:bone_meal')
+			.duration(200)
+			.EUt(GTValues.VHA[GTValues.ULV])
+
+		// Wax
+		event.recipes.firmalife.mixing_bowl()
+			.itemIngredients([`#tfg:${type[1]}_ingredients`, `#tfg:${type[2]}_ingredients`, 'minecraft:bone_meal', 'gtceu:wax_nugget'])
+			.outputItem(`1x tfg:${type[0]}_powder`)
+			.id(`tfg:mixing_bowl/${type[0]}_powder_with_wax`)
+
+		event.recipes.gtceu.mixer(`tfg:gtceu/mixer/${type[0]}_powder_with_wax`)
+			.circuit(4)
+			.itemInputs(`#tfg:${type[1]}_ingredients`, `#tfg:${type[2]}_ingredients`, 'minecraft:bone_meal', 'gtceu:wax_nugget')
+			.itemOutputs(`1x tfg:${type[0]}_powder`)
 			.duration(200)
 			.EUt(GTValues.VHA[GTValues.ULV])
 
