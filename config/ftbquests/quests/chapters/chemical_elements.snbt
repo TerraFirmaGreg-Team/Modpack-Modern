@@ -1892,16 +1892,16 @@
 			y: 3.0d
 		}
 		{
-			description: ["{quests.chemical_elements.sulfur.desc}"]
+			description: ["{quests.chemical_elements.tellurium.desc}"]
 			disable_toast: true
 			id: "4747A6E1F03B49A1"
-			subtitle: "{quests.chemical_elements.element} #16"
+			subtitle: "{quests.chemical_elements.element} #52"
 			tasks: [{
 				id: "77279F144E932986"
 				item: "gtceu:tellurium_dust"
 				type: "item"
 			}]
-			title: "{material.gtceu.sulfur}"
+			title: "{material.gtceu.tellurium}"
 			x: 15.0d
 			y: 4.0d
 		}
