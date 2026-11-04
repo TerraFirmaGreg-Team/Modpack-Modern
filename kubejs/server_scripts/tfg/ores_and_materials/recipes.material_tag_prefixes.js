@@ -189,6 +189,7 @@ function processPlate(event, material) {
 	if (material === GTMaterials.Stone
 		|| material === GTMaterials.Wood
 		|| material === GTMaterials.TreatedWood
+		|| material === TFGHelpers.getMaterial('telluride_tungstensteel')
 		|| material.hasProperty(PropertyKey.POLYMER))
 		return;
 
