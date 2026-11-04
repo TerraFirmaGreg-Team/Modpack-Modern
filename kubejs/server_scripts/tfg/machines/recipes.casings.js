@@ -473,8 +473,8 @@ function registerTFGCasingRecipes(event) {
 
 	TFGHelpers.registerMaterialInfo('gtceu:hv_machine_hull',
 		[
-			GTMaterials.Platinum, 4,
-			GTMaterials.StainlessSteel, 4,
+			GTMaterials.Platinum, 8,
+			GTMaterials.StainlessSteel, 8,
 			GTMaterials.Gold, 1
 		])
 
@@ -495,9 +495,30 @@ function registerTFGCasingRecipes(event) {
 
 	TFGHelpers.registerMaterialInfo('gtceu:ev_machine_hull',
 		[
-			GTMaterials.Palladium, 4,
-			GTMaterials.Titanium, 4,
+			GTMaterials.Palladium, 8,
+			GTMaterials.Titanium, 8,
 			GTMaterials.Aluminium, 1
+		])
+	// IV Machine Hull
+
+	event.remove({ id: 'gtceu:shaped/iv_machine_hull'})
+	event.shaped('gtceu:iv_machine_hull', [
+		'EBA',
+		'DCD',
+		'ABE'
+	], {
+		A: '#forge:plates/telluride_tungstensteel',
+		B: '#forge:plates/polytetrafluoroethylene',
+		C: 'gtceu:iv_machine_casing',
+		D: 'gtceu:platinum_single_cable',
+		E: '#forge:plates/ni-cr-al-y'
+	}).id('tfg:shaped/iv_machine_hull')
+
+	TFGHelpers.registerMaterialInfo('gtceu:iv_machine_hull',
+		[
+			TFGHelpers.getMaterial('telluride_tungstensteel'), 8,
+			TFGHelpers.getMaterial('ni-cr-al-y'), 8,
+			GTMaterials.Platinum, 1
 		])
 
 	// Machine Casings
@@ -507,9 +528,10 @@ function registerTFGCasingRecipes(event) {
 	modifyMachineCasing(event, 'mv', 'plates/aluminium', 'plates/blue_steel')
 	modifyMachineCasing(event, 'hv', 'double_plates/stainless_steel', 'double_plates/platinum')
 	modifyMachineCasing(event, 'ev', 'double_plates/titanium', 'double_plates/palladium')
+	modifyMachineCasing(event, 'iv', 'double_plates/telluride_tungstensteel', 'double_plates/ni-cr-al-y', 'tungsten_steel')
 
-	function modifyMachineCasing(event, tier, base, added) {
-		var originalPlate = `forge:plates/${base.split('/')[1]}`
+	function modifyMachineCasing(event, tier, base, added, original) {
+		var originalPlate = `forge:plates/${original || base.split('/')[1]}`
 		var basePlate = `#forge:${base}`
 		var addedPlate = `#forge:${added}`
 
