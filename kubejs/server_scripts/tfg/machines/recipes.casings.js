@@ -368,43 +368,137 @@ function registerTFGCasingRecipes(event) {
 
 	// Machine Hulls
 
-	event.replaceInput({ id: 'gtceu:shaped/ulv_machine_hull' }, '#forge:plates/wood', '#forge:plates/lead')
+	// ULV Machine Hull
+
+	event.remove({ id: 'gtceu:shaped/ulv_machine_hull' })
+	event.shaped('gtceu:ulv_machine_hull', [
+		'EBA',
+		'DCD',
+		'ABE'
+	], {
+		A: '#forge:plates/maldonite',
+		B: '#forge:plates/wrought_iron',
+		C: 'gtceu:ulv_machine_casing',
+		D: 'gtceu:red_alloy_single_cable',
+		E: '#forge:plates/maldonite'
+	}).id('tfg:shaped/ulv_machine_hull')
 
 	event.recipes.gtceu.assembler('tfg:ulv_hull_bakelite')
 		.itemInputs('gtceu:ulv_machine_casing', '2x #forge:single_cables/red_alloy')
-		.inputFluids('tfg:bakelite 432')
+		.inputFluids('tfg:bakelite 288')
 		.itemOutputs('gtceu:ulv_machine_hull')
 		.duration(25)
 		.EUt(16)
 
+	TFGHelpers.registerMaterialInfo('gtceu:ulv_machine_hull',
+		[
+			TFGHelpers.getMaterial('maldonite'), 4,
+			GTMaterials.WroughtIron, 4,
+			GTMaterials.RedAlloy, 1
+		])
+
+	// LV Machine Hull
+
+	event.remove({ id: 'gtceu:shaped/lv_machine_hull' })
+	event.shaped('gtceu:lv_machine_hull', [
+		'EBA',
+		'DCD',
+		'ABE'
+	], {
+		A: '#forge:plates/red_steel',
+		B: '#forge:plates/steel',
+		C: 'gtceu:lv_machine_casing',
+		D: 'gtceu:tin_single_cable',
+		E: '#forge:plates/red_steel'
+	}).id('tfg:shaped/lv_machine_hull')
+
 	event.recipes.gtceu.assembler('tfg:lv_hull_bakelite')
 		.itemInputs('gtceu:lv_machine_casing', '2x #forge:single_cables/tin')
-		.inputFluids('tfg:bakelite 432')
+		.inputFluids('tfg:bakelite 288')
 		.itemOutputs('gtceu:lv_machine_hull')
 		.duration(50)
 		.EUt(16)
 
-	event.replaceInput('gtceu:shaped/lv_machine_hull', '#forge:plates/wrought_iron', '#forge:plates/red_steel')
+	TFGHelpers.registerMaterialInfo('gtceu:lv_machine_hull',
+		[
+			GTMaterials.RedSteel, 4,
+			GTMaterials.Steel, 4,
+			GTMaterials.Tin, 1
+		])
+
+	// MV Machine Hull
 
 	event.remove({ id: 'gtceu:shaped/mv_machine_hull'})
 	event.shaped('gtceu:mv_machine_hull', [
-		'ABA',
+		'EBA',
 		'DCD',
-		'ABA'
+		'ABE'
 	], {
-		A: '#forge:plates/bakelite',
-		B: '#forge:plates/aluminum',
+		A: '#forge:plates/aluminum',
+		B: '#forge:plates/bakelite',
 		C: 'gtceu:mv_machine_casing',
-		D: 'gtceu:copper_single_cable'
+		D: 'gtceu:copper_single_cable',
+		E: '#forge:plates/blue_steel'
 	}).id('tfg:shaped/mv_machine_hull')
 
 	event.remove({ id: 'gtceu:assembler/hull_mv_annealed'})
 	event.recipes.gtceu.assembler('tfg:mv_machine_hull')
 		.itemInputs('gtceu:mv_machine_casing', '2x gtceu:copper_single_cable')
-		.inputFluids('tfg:bakelite 576')
+		.inputFluids('tfg:bakelite 288')
 		.itemOutputs('gtceu:mv_machine_hull')
 		.duration(20*2.5)
 		.EUt(GTValues.VH[GTValues.LV])
+
+	TFGHelpers.registerMaterialInfo('gtceu:mv_machine_hull',
+		[
+			GTMaterials.BlueSteel, 4,
+			GTMaterials.Aluminium, 4,
+			GTMaterials.Copper, 1
+		])
+
+	// HV Machine Hull
+
+	event.remove({ id: 'gtceu:shaped/hv_machine_hull'})
+	event.shaped('gtceu:hv_machine_hull', [
+		'EBA',
+		'DCD',
+		'ABE'
+	], {
+		A: '#forge:plates/stainless_steel',
+		B: '#forge:plates/polyethylene',
+		C: 'gtceu:hv_machine_casing',
+		D: 'gtceu:gold_single_cable',
+		E: '#forge:plates/platinum'
+	}).id('tfg:shaped/hv_machine_hull')
+
+	TFGHelpers.registerMaterialInfo('gtceu:hv_machine_hull',
+		[
+			GTMaterials.Platinum, 4,
+			GTMaterials.StainlessSteel, 4,
+			GTMaterials.Gold, 1
+		])
+
+	// EV Machine Hull
+
+	event.remove({ id: 'gtceu:shaped/ev_machine_hull'})
+	event.shaped('gtceu:ev_machine_hull', [
+		'EBA',
+		'DCD',
+		'ABE'
+	], {
+		A: '#forge:plates/titanium',
+		B: '#forge:plates/polyethylene',
+		C: 'gtceu:ev_machine_casing',
+		D: 'gtceu:aluminium_single_cable',
+		E: '#forge:plates/palladium'
+	}).id('tfg:shaped/ev_machine_hull')
+
+	TFGHelpers.registerMaterialInfo('gtceu:ev_machine_hull',
+		[
+			GTMaterials.Palladium, 4,
+			GTMaterials.Titanium, 4,
+			GTMaterials.Aluminium, 1
+		])
 
 	// Machine Casings
 

@@ -94,7 +94,7 @@ function registerTFGBakeliteRecipes(event) {
 	// MV Buses
 	event.recipes.gtceu.assembler('tfg:mv_input_bus')
 		.itemInputs('gtceu:mv_machine_hull', '#tfg:any_bronze_crate')
-		.inputFluids('tfg:bakelite 576')
+		.inputFluids('tfg:bakelite 432')
 		.itemOutputs('gtceu:mv_input_bus')
 		.duration(20*15)
 		.EUt(GTValues.VA[GTValues.MV])
@@ -102,7 +102,7 @@ function registerTFGBakeliteRecipes(event) {
 
 	event.recipes.gtceu.assembler('tfg:mv_output_bus')
 		.itemInputs('gtceu:mv_machine_hull', '#tfg:any_bronze_crate')
-		.inputFluids('tfg:bakelite 576')
+		.inputFluids('tfg:bakelite 432')
 		.itemOutputs('gtceu:mv_output_bus')
 		.duration(20*15)
 		.EUt(GTValues.VA[GTValues.MV])
@@ -111,7 +111,7 @@ function registerTFGBakeliteRecipes(event) {
 	// MV Hatches
 	event.recipes.gtceu.assembler('tfg:mv_input_hatch')
 		.itemInputs('gtceu:mv_machine_hull', '#tfg:any_bronze_drum')
-		.inputFluids('tfg:bakelite 576')
+		.inputFluids('tfg:bakelite 432')
 		.itemOutputs('gtceu:mv_input_hatch')
 		.duration(20*15)
 		.EUt(GTValues.VA[GTValues.MV])
@@ -119,7 +119,7 @@ function registerTFGBakeliteRecipes(event) {
 
 	event.recipes.gtceu.assembler('tfg:mv_output_hatch')
 		.itemInputs('gtceu:mv_machine_hull', '#tfg:any_bronze_drum')
-		.inputFluids('tfg:bakelite 576')
+		.inputFluids('tfg:bakelite 432')
 		.itemOutputs('gtceu:mv_output_hatch')
 		.duration(20*15)
 		.EUt(GTValues.VA[GTValues.MV])
@@ -129,7 +129,7 @@ function registerTFGBakeliteRecipes(event) {
 	// LV Buses
 	event.recipes.gtceu.assembler('tfg:lv_input_bus_bakelite')
 		.itemInputs('gtceu:lv_machine_hull', 'gtceu:wood_crate')
-		.inputFluids('tfg:bakelite 432')
+		.inputFluids('tfg:bakelite 288')
 		.itemOutputs('gtceu:lv_input_bus')
 		.duration(20*15)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -137,7 +137,7 @@ function registerTFGBakeliteRecipes(event) {
 
 	event.recipes.gtceu.assembler('tfg:lv_output_bus_bakelite')
 		.itemInputs('gtceu:lv_machine_hull', 'gtceu:wood_crate')
-		.inputFluids('tfg:bakelite 432')
+		.inputFluids('tfg:bakelite 288')
 		.itemOutputs('gtceu:lv_output_bus')
 		.duration(20*15)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -145,7 +145,7 @@ function registerTFGBakeliteRecipes(event) {
 	// LV Hatches
 	event.recipes.gtceu.assembler('tfg:lv_input_hatch_bakelite')
 		.itemInputs('gtceu:lv_machine_hull', '#forge:glass')
-		.inputFluids('tfg:bakelite 432')
+		.inputFluids('tfg:bakelite 288')
 		.itemOutputs('gtceu:lv_input_hatch')
 		.duration(20*15)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -153,7 +153,7 @@ function registerTFGBakeliteRecipes(event) {
 
 	event.recipes.gtceu.assembler('tfg:lv_output_hatch_bakelite')
 		.itemInputs('gtceu:lv_machine_hull', '#forge:glass')
-		.inputFluids('tfg:bakelite 432')
+		.inputFluids('tfg:bakelite 288')
 		.itemOutputs('gtceu:lv_output_hatch')
 		.duration(20*15)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -161,7 +161,7 @@ function registerTFGBakeliteRecipes(event) {
 	// ULV Buses
 	event.recipes.gtceu.assembler('tfg:ulv_input_bus_bakelite')
 		.itemInputs('gtceu:ulv_machine_hull', '#forge:chests/wooden')
-		.inputFluids('tfg:bakelite 216')
+		.inputFluids('tfg:bakelite 144')
 		.itemOutputs('gtceu:ulv_input_bus')
 		.duration(20*15)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -169,7 +169,7 @@ function registerTFGBakeliteRecipes(event) {
 
 	event.recipes.gtceu.assembler('tfg:ulv_output_bus_bakelite')
 		.itemInputs('gtceu:ulv_machine_hull', '#forge:chests/wooden')
-		.inputFluids('tfg:bakelite 216')
+		.inputFluids('tfg:bakelite 144')
 		.itemOutputs('gtceu:ulv_output_bus')
 		.duration(20*15)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -177,7 +177,7 @@ function registerTFGBakeliteRecipes(event) {
 	// ULV Hatches
 	event.recipes.gtceu.assembler('tfg:ulv_input_hatch_bakelite')
 		.itemInputs('gtceu:ulv_machine_hull', '#forge:glass')
-		.inputFluids('tfg:bakelite 216')
+		.inputFluids('tfg:bakelite 144')
 		.itemOutputs('gtceu:ulv_input_hatch')
 		.duration(20*15)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -185,7 +185,7 @@ function registerTFGBakeliteRecipes(event) {
 
 	event.recipes.gtceu.assembler('tfg:ulv_output_hatch_bakelite')
 		.itemInputs('gtceu:ulv_machine_hull', '#forge:glass')
-		.inputFluids('tfg:bakelite 216')
+		.inputFluids('tfg:bakelite 144')
 		.itemOutputs('gtceu:ulv_output_hatch')
 		.duration(20*15)
 		.EUt(GTValues.VA[GTValues.ULV])
