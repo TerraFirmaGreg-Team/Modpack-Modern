@@ -97,4 +97,5 @@ function registerTFGMiscAlloyMaterials(event) {
             GTMaterialFlags.GENERATE_ROD,
 			GTMaterialFlags.GENERATE_LONG_ROD,
             GTMaterialFlags.DISABLE_DECOMPOSITION)
+
 }

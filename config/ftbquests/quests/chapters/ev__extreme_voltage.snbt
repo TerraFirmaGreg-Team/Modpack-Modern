@@ -1830,7 +1830,10 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["3A2E442E4D84C891"]
+			dependencies: [
+				"3A2E442E4D84C891"
+				"6A451F43F3D7A671"
+			]
 			description: ["{quests.extreme_voltage.cracker.desc}"]
 			id: "36B9B5024356C53C"
 			shape: "octagon"

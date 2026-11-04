@@ -19,7 +19,11 @@ function registerTFGPropertyMaterialModification(event) {
 	GTMaterials.Cadmium.setProperty(PropertyKey.INGOT, new $INGOT_PROPERTY());
 
 	GTMaterials.Thallium.setProperty(PropertyKey.DUST, new $DUST_PROPERTY());
-	GTMaterials.Thallium.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.SKIN_CONTACT, GTMedicalConditions.CHEMICAL_BURNS, 1, false));
+
+	GTMaterials.Selenium.setProperty(PropertyKey.DUST, new $DUST_PROPERTY());
+	GTMaterials.Selenium.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.INHALATION, GTMedicalConditions.POISON, 2, false));
+
+	GTMaterials.Tellurium.setProperty(PropertyKey.DUST, new $DUST_PROPERTY());
 
 	// Bismuth item pipe - 1/4 as good as tin
 	GTMaterials.Bismuth.setProperty(PropertyKey.ITEM_PIPE, new $ITEM_PIPE_PROPERTY(16384, 0.125));
@@ -48,20 +52,21 @@ function registerTFGPropertyMaterialModification(event) {
 	// Superconductors being radioactive at EV is a little evil
 	GTMaterials.UraniumTriplatinum.getProperties().removeProperty(PropertyKey.HAZARD);
 
-	// Make these the lowest tier of EBF instead
-	GTMaterials.BlackSteel.getProperty(PropertyKey.BLAST).setBlastTemperature(1000)
-	GTMaterials.RedSteel.getProperty(PropertyKey.BLAST).setBlastTemperature(1000)
-	GTMaterials.BlueSteel.getProperty(PropertyKey.BLAST).setBlastTemperature(1000)
+	// Change to be made in the Arc Furnace - Check Material Flags to remove Smeltable ability
+	GTMaterials.BlackSteel.getProperties().removeProperty(PropertyKey.BLAST);
+	GTMaterials.RedSteel.getProperties().removeProperty(PropertyKey.BLAST);
+	GTMaterials.BlueSteel.getProperties().removeProperty(PropertyKey.BLAST);
+	GTMaterials.Steel.getProperties().removeProperty(PropertyKey.BLAST);
 
 	// BLAST property
 	let zirconium_diboride = TFGHelpers.getMaterial('zirconium_diboride');
 	zirconium_diboride.setProperty(PropertyKey.BLAST, new $BLAST_PROPERTY(4500, $BLAST_PROPERTY.GasTier.HIGH, GTValues.VA[GTValues.EV], 2700, GTValues.VA[GTValues.HV], 12.5 * 20));
 
-	GTMaterials.Titanium.getProperties().removeProperty(PropertyKey.BLAST);
-	GTMaterials.Titanium.setProperty(PropertyKey.BLAST, new $BLAST_PROPERTY(2750, $BLAST_PROPERTY.GasTier.MID, GTValues.VA[GTValues.HV], 20 * 60, GTValues.VA[GTValues.HV], 7.2 * 20));
-
 	GTMaterials.Vanadium.getProperties().removeProperty(PropertyKey.BLAST);
 	GTMaterials.Vanadium.setProperty(PropertyKey.BLAST, new $BLAST_PROPERTY(850, $BLAST_PROPERTY.GasTier.LOW, GTValues.VA[GTValues.LV], 20 * 30, GTValues.VA[GTValues.MV], 3.2 * 20));
+
+	GTMaterials.Palladium.getProperties().removeProperty(PropertyKey.BLAST);
+	GTMaterials.Palladium.setProperty(PropertyKey.BLAST, new $BLAST_PROPERTY(3100, $BLAST_PROPERTY.GasTier.MID, GTValues.VA[GTValues.HV], 20 * 45, GTValues.VA[GTValues.HV], 7.5 * 20));
 	
 	// Make this smeltable
 	GTMaterials.VanadiumMagnetite.getProperty(PropertyKey.ORE).setDirectSmeltResult(GTMaterials.Iron);
