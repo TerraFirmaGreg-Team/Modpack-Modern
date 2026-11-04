@@ -296,7 +296,7 @@ function registerTFGTierCasingRecipes(event) {
 
 	modifyMachineCasing(event, 'ulv', 'plates/wrought_iron', 'plates/maldonite')
 	modifyMachineCasing(event, 'lv', 'plates/steel', 'plates/red_steel')
-	modifyMachineCasing(event, 'mv', 'plates/aluminium', 'plates/blue_steel')
+	modifyMachineCasing(event, 'mv', 'plates/aluminium', 'plates/magnalium')
 	modifyMachineCasing(event, 'hv', 'double_plates/stainless_steel', 'double_plates/platinum')
 	modifyMachineCasing(event, 'ev', 'double_plates/titanium', 'double_plates/palladium')
 	modifyMachineCasing(event, 'iv', 'double_plates/telluride_tungstensteel', 'double_plates/ni-cr-al-y', 'tungsten_steel')
