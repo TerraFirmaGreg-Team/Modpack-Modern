@@ -27,7 +27,7 @@ function registerTFGCasingsMaterials(event) {
 		.secondaryColor(0x6B6F7D)
 		.components('7x tungsten_steel', '1x tellurium', '1x manganese')
 		.iconSet(GTMaterialIconSet.getByName('shiny'))
-		.blastTemp(1231, $BlastProperty.GasTier.LOW, GTValues.VA[GTValues.MV], (20*95))
+		.blastTemp(3815, $BlastProperty.GasTier.HIGH, GTValues.VA[GTValues.IV], (20*75))
 		.flags(
 			GTMaterialFlags.GENERATE_PLATE)
 
@@ -37,7 +37,6 @@ function registerTFGCasingsMaterials(event) {
 		.secondaryColor(0x4A4452)
 		.components('1x tungsten_steel', '2x selenium')
 		.iconSet(GTMaterialIconSet.getByName('bright'))
-		.blastTemp(1231, $BlastProperty.GasTier.LOW, GTValues.VA[GTValues.MV], (20*95))
 		.flags(
 			GTMaterialFlags.DISABLE_DECOMPOSITION)
 

@@ -111,6 +111,7 @@ function registerTFGTierCasingRecipes(event) {
 
 	event.remove({ output: 'tfg:telluride_tungstensteel_plate' })
 	event.remove({ output: 'tfg:double_telluride_tungstensteel_plate' })
+    event.remove({ id: 'tfg:rolling/telluride_tungstensteel_plate' })
 	
 	event.recipes.gtceu.bender('tfg:telluride_tungstensteel_plate')
 		.itemInputs(Item.of('tfg:telluride_tungstensteel_ingot', 1), Item.of('tfg:tiny_tungsten_diselenide_dust', 1))
