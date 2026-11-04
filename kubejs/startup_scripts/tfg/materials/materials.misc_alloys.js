@@ -98,15 +98,4 @@ function registerTFGMiscAlloyMaterials(event) {
 			GTMaterialFlags.GENERATE_LONG_ROD,
             GTMaterialFlags.DISABLE_DECOMPOSITION)
 
-	event.create('tfg:maldonite')
-		.ingot()
-		.fluid()
-		.color(0xE4EB94)
-		.secondaryColor(0xC6C9C5)
-		.components('2x gold', '1x bismuth')
-		.iconSet(GTMaterialIconSet.getByName('metallic'))
-		.flags(
-			GTMaterialFlags.GENERATE_PLATE,
-			TFGMaterialFlags.CAN_BE_UNMOLDED,
-			TFGMaterialFlags.GENERATE_DOUBLE_INGOTS)
 }
