@@ -559,9 +559,12 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		sound: 'stone',
 		mapColor: 'quartz',
 		dimensions: ['minecraft:overworld', 'minecraft:the_nether', 'ad_astra:venus'],
-		pillar: 'create:calcite_pillar',
-		pillar2: 'create:layered_calcite',
-		raw: { block: 'minecraft:calcite' },
+		pillar: 'tfg:rock/pillar_calcite',
+		pillar2: 'create:calcite_pillar',
+		raw: generateFormsExisting('calcite', 'tfg:rock/%s', { block: 'minecraft:calcite' }),
+		bricks: generateForms('calcite', 'tfg:rock/bricks_%s'),
+		polished: generateForms('calcite', 'tfg:rock/polished_%s'),
+		chiseled: { block: 'create:layered_calcite' },
 		stonecutting: [
 			generateForms('calcite', 'create:cut_%s'),
 			generateForms('calcite', 'create:polished_cut_%s'),
@@ -571,6 +574,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	},
 	"tuff": generateMissing('tuff', {
 		isTFC: false,
+		isStone: true,
 		material: 'tfg:igneous_felsic',
 		tfcTag: 'tfc:igneous_extrusive_items',
 		gravelTag: 'tfc:green_gravel',
