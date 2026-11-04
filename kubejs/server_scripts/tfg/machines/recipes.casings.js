@@ -366,6 +366,37 @@ function registerTFGCasingRecipes(event) {
 		.duration(20 * 6)
 		.EUt(GTValues.VA[GTValues.LV])
 
+	// IV Materials for the Casings
+
+	event.recipes.gtceu.mixer('tfg:ni-cr-al-y')
+		.itemInputs(Item.of('gtceu:nickel_dust', 5), Item.of('gtceu:chromium_dust', 2), Item.of('gtceu:aluminium_dust', 1), Item.of('gtceu:yttrium_dust', 1))
+		.itemOutputs(Item.of('tfg:ni-cr-al-y_dust', 9))
+		.duration(20 * 26)
+		.circuit(4)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	event.recipes.gtceu.mixer('tfg:telluride_tungstensteel')
+		.itemInputs(Item.of('gtceu:tungsten_steel_dust', 7), Item.of('gtceu:tellurium_dust', 1), Item.of('gtceu:manganese_dust', 1))
+		.itemOutputs(Item.of('tfg:telluride_tungstensteel_dust', 9))
+		.duration(20 * 29)
+		.circuit(1)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	event.recipes.gtceu.alloy_smelter('tfg:tungsten_diselenide')
+		.itemInputs(Item.of('gtceu:tungsten_steel_dust', 1), Item.of('gtceu:selenium_dust', 2))
+		.itemOutputs(Item.of('tfg:tungsten_diselenide_dust', 3))
+		.duration(20 * 5030)
+		.EUt(GTValues.VA[GTValues.IV])
+
+	event.recipes.gtceu.bender('tfg:telluride_tungstensteel_plate')
+		.itemInputs(Item.of('tfg:telluride_tungstensteel_ingot', 1), Item.of('tfg:tiny_tungsten_diselenide_dust', 1))
+		.itemOutputs(Item.of('tfg:telluride_tungstensteel_plate', 1))
+		.duration(20 * 12.5)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	event.remove({ output: 'tfg:telluride_tungstensteel_plate' })
+	event.remove({ output: 'tfg:double_telluride_tungstensteel_plate' })
+
 	// Machine Hulls
 
 	// ULV Machine Hull

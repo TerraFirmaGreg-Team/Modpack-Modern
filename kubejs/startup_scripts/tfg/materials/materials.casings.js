@@ -26,21 +26,20 @@ function registerTFGCasingsMaterials(event) {
 		.color(0x4A4F5C)
 		.secondaryColor(0x6B6F7D)
 		.components('7x tungsten_steel', '1x tellurium', '1x manganese')
-		.iconSet(GTMaterialIconSet.getByName('bright'))
+		.iconSet(GTMaterialIconSet.getByName('shiny'))
 		.blastTemp(1231, $BlastProperty.GasTier.LOW, GTValues.VA[GTValues.MV], (20*95))
 		.flags(
 			GTMaterialFlags.GENERATE_PLATE)
 
 	event.create('tfg:tungsten_diselenide')
-		.ingot()
-		.fluid()
+		.dust()
 		.color(0x2E2A33)
 		.secondaryColor(0x4A4452)
-		.components('7x tungsten_steel', '1x tellurium', '1x manganese')
-		.iconSet(GTMaterialIconSet.getByName('shiny'))
+		.components('1x tungsten_steel', '2x selenium')
+		.iconSet(GTMaterialIconSet.getByName('bright'))
 		.blastTemp(1231, $BlastProperty.GasTier.LOW, GTValues.VA[GTValues.MV], (20*95))
 		.flags(
-			GTMaterialFlags.GENERATE_PLATE)
+			GTMaterialFlags.DISABLE_DECOMPOSITION)
 
 	event.create('tfg:ni-cr-al-y')
 		.ingot()
@@ -48,7 +47,7 @@ function registerTFGCasingsMaterials(event) {
 		.color(0xA8AEB4)
 		.secondaryColor(0xC4C9CE)
 		.iconSet(GTMaterialIconSet.getByName('chonky'))
-		.components('7x tungsten_steel', '1x tellurium', '1x manganese')
+		.components('5x nickel', '2x chromium', '1x aluminium', '1x yttrium')
 		.blastTemp(3050, $BlastProperty.GasTier.MID, GTValues.VA[GTValues.EV], (20*50))
 		.flags(
 			GTMaterialFlags.GENERATE_PLATE)
