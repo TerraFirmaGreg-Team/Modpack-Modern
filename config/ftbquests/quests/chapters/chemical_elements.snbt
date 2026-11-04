@@ -1877,6 +1877,34 @@
 			x: 0.0d
 			y: -1.0d
 		}
+		{
+			description: ["{quests.chemical_elements.selenium.desc}"]
+			disable_toast: true
+			id: "539A099E9AFE9A3C"
+			subtitle: "{quests.chemical_elements.element} #34"
+			tasks: [{
+				id: "4F4C254D08158F03"
+				item: "gtceu:selenium_dust"
+				type: "item"
+			}]
+			title: "{material.gtceu.selenium}"
+			x: 15.0d
+			y: 3.0d
+		}
+		{
+			description: ["{quests.chemical_elements.sulfur.desc}"]
+			disable_toast: true
+			id: "4747A6E1F03B49A1"
+			subtitle: "{quests.chemical_elements.element} #16"
+			tasks: [{
+				id: "77279F144E932986"
+				item: "gtceu:tellurium_dust"
+				type: "item"
+			}]
+			title: "{material.gtceu.sulfur}"
+			x: 15.0d
+			y: 4.0d
+		}
 	]
 	title: "{quests.chemical_elements.chapter_title}"
 }
