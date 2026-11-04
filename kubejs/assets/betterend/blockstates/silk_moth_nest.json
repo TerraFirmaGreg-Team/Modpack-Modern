@@ -1,0 +1,8 @@
+{
+	"variants": {
+		"": [
+			{ "model": "betterend:block/silk_moth_nest_side", "weight": 30 },
+			{ "model": "betterend:block/silk_moth_nest_top", "weight": 1 }
+		]
+	}
+}

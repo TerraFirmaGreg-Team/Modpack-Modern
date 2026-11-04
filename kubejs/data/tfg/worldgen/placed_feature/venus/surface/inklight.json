@@ -1,0 +1,34 @@
+{
+	"feature": "tfg:venus/surface/inklight",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 16
+		},
+		{
+			"type": "minecraft:count",
+			"count": {
+				"type": "minecraft:uniform",
+				"value": {
+					"max_inclusive": 4,
+					"min_inclusive": 2
+				}
+			}
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "OCEAN_FLOOR_WG"
+		},
+		{
+			"type": "minecraft:biome"
+		},
+		{
+			"type": "tfc:climate",
+			"max_forest": "edge",
+			"fuzzy": true
+		}
+	]
+}

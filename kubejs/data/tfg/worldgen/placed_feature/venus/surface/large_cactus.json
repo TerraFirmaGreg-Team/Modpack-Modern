@@ -1,0 +1,24 @@
+{
+	"feature": "tfg:venus/surface/large_cactus",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 6
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "OCEAN_FLOOR_WG"
+		},
+		{
+			"type": "minecraft:biome"
+		},
+		{
+			"type": "tfc:climate",
+			"min_forest": "edge",
+			"fuzzy": true
+		}
+	]
+}

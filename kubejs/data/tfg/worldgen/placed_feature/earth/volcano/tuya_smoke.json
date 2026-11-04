@@ -3,7 +3,7 @@
     "placement": [
         {
             "center": true,
-            "type": "tfg:tuya"
+            "type": "tfc:tuya"
         },
         {
             "type": "minecraft:random_offset",

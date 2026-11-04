@@ -2,6 +2,8 @@
 
 function registerTFGWorldGenVenusDecoBlocks(event) {
 
+	// Particle emitters
+
 	event.create('tfg:geyser_source', 'tfg:particle_emitter_decoration')
 		.soundType('dripstone_block')
 		.mapColor('color_white')
@@ -11,7 +13,7 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.particles(a => a
 			.range(0.3, 1, 0.3)
 			.velocity(0, 0.1, 0)
-			.particle('minecraft:campfire_signal_smoke')
+			.particle('tfg:geyser_poof')
 			.count(5)
 			.forced(true));
 
@@ -24,7 +26,7 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.particles(a => a
 			.range(0.3, 1, 0.3)
 			.velocity(0, 0.05, 0)
-			.particle('minecraft:campfire_cosy_smoke')
+			.particle('tfg:geyser_poof')
 			.count(2)
 			.forced(false));
 
@@ -38,7 +40,7 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.particles(a => a
 			.range(0.3, 1, 0.3)
 			.velocity(0, 0.05, 0)
-			.particle('minecraft:campfire_cosy_smoke')
+			.particle('tfc:smoke_2')
 			.count(1)
 			.forced(false));
 
@@ -68,7 +70,9 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 			.count(1)
 			.forced(false));
 
+
 	//Geyserite
+
 	event.create('tfg:rock/raw/geyserite', 'tfc:raw_rock')
 		.textureAll('tfg:block/planets/venus/geyserite')
 		.rockTypeTooltip(Text.translatable('tooltip.tfg.sedimentary'))
@@ -90,7 +94,9 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.requiresTool(true)
 		.tagBlock('minecraft:mineable/pickaxe')
 
+
 	//Stromatolite
+
 	event.create('tfg:rock/raw/stromatolite', 'tfc:raw_rock')
 		.textureAll('tfg:block/planets/venus/stromatolite_spike')
 		.model('tfg:block/rock/stromatolite_block')
@@ -121,89 +127,54 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.soundType('dripstone_block')
 		.mapColor('color_brown')
 		.box(3, 0, 3, 13, 14, 13)
+		
 
-	//#region Fluorapatite
-	global.FLUORAPATITE_COLORS.forEach(color => {
-		const mapColor = color === 'white' ? 'quartz' : `color_${color}`;
+	event.create('tfg:tall_stromatolite')
+		.soundType('basalt')
+		.mapColor('podzol')
+		.requiresTool(true)
+		.tagBlock('minecraft:mineable/pickaxe')
 
-		//Sand
-		event.create(`tfg:sand/fluorapatite/${color}`, 'falling')
-			.textureAll(`tfg:block/planets/venus/sand_fluorapatite_${color}`)
-			.soundType('sand')
-			.requiresTool(false)
-			.tagBoth('forge:sand')
-			.tagItem('forge:sand/fluorapatite')
-			.tagBlock('minecraft:mineable/shovel')
-			.mapColor(mapColor)
-			.fullBlock(true)
-			.opaque(true)
-		//Raw Sandstone
-		event.create(`tfg:sandstone/raw/fluorapatite/${color}`)
-			.textureAll(`tfg:block/planets/venus/sandstone_bottom_fluorapatite_${color}`)
-			.texture('up', `tfg:block/planets/venus/sandstone_top_fluorapatite_${color}`)
-			.hardness(0.8)
-			.resistance(0.8)
-			.soundType('stone')
-			.requiresTool(true)
-			.tagBoth('forge:sandstone')
-			.tagItem('forge:sandstone/fluorapatite')
-			.tagBlock('minecraft:mineable/pickaxe')
-			.mapColor(mapColor)
-			.fullBlock(true)
-			.opaque(true)
-		//Smooth Sandstone
-		event.create(`tfg:sandstone/smooth/fluorapatite/${color}`)
-			.textureAll(`tfg:block/planets/venus/sandstone_top_fluorapatite_${color}`)
-			.hardness(0.8)
-			.resistance(0.8)
-			.soundType('stone')
-			.requiresTool(true)
-			.tagBoth('forge:sandstone')
-			.tagItem('forge:sandstone/fluorapatite')
-			.tagBlock('minecraft:mineable/pickaxe')
-			.mapColor(mapColor)
-			.fullBlock(true)
-			.opaque(true)
-		//Chiseled Sandstone
-		event.create(`tfg:sandstone/smooth/chiseled/fluorapatite/${color}`)
-			.textureAll(`tfg:block/planets/venus/sandstone_chiseled_fluorapatite_${color}`)
-			.texture('up', `tfg:block/planets/venus/sandstone_top_fluorapatite_${color}`)
-			.texture('down', `tfg:block/planets/venus/sandstone_bottom_fluorapatite_${color}`)
-			.hardness(0.8)
-			.resistance(0.8)
-			.soundType('stone')
-			.requiresTool(true)
-			.tagBoth('forge:sandstone')
-			.tagItem('forge:sandstone/fluorapatite')
-			.tagBlock('minecraft:mineable/pickaxe')
-			.mapColor(mapColor)
-			.fullBlock(true)
-			.opaque(true)
-		//Sandstone
-		event.create(`tfg:sandstone/fluorapatite/${color}`)
-			.textureAll(`tfg:block/planets/venus/sandstone_fluorapatite_${color}`)
-			.texture('down', `tfg:block/planets/venus/sandstone_bottom_fluorapatite_${color}`)
-			.texture('up', `tfg:block/planets/venus/sandstone_top_fluorapatite_${color}`)
-			.hardness(0.8)
-			.resistance(0.8)
-			.soundType('stone')
-			.requiresTool(true)
-			.tagBoth('forge:sandstone')
-			.tagItem('forge:sandstone/fluorapatite')
-			.tagBlock('minecraft:mineable/pickaxe')
-			.mapColor(mapColor)
-			.fullBlock(true)
-			.opaque(true)
-	})
-	//#endregion
+	event.create('tfg:tall_stromatolite_cyanobacteria')
+		.soundType('basalt')
+		.mapColor('podzol')
+		.requiresTool(true)
+		.tagBlock('minecraft:mineable/pickaxe')
+
+	// Other deco blocks
+	
+	event.create('tfg:huge_salt')
+		.fullBlock(true)
+		.soundType('amethyst')
+		.mapColor('quartz')
+		.textureAll('tfg:block/huge_salt')
+		.requiresTool(true)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('tfc:mineable_with_glass_saw')
+		.defaultTranslucent()
+
+
 
 	// Some more stone blocks from better end, for variety's sake
 
-	event.create('betterend:brimstone')
-		.soundType('tuff')
-		.mapColor('color_yellow')
+	event.create('betterend:silk_moth_nest')
+		.fullBlock(true)
+		.soundType('lily_pad')
+		.mapColor('wool')
 		.requiresTool(true)
-		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('minecraft:mineable/axe')
+	event.create('betterend:silk_moth_nest_holes')
+		.fullBlock(true)
+		.soundType('lily_pad')
+		.mapColor('wool')
+		.requiresTool(true)
+		.tagBlock('minecraft:mineable/axe')
+	event.create('betterend:silk_moth_nest_filled')
+		.fullBlock(true)
+		.soundType('lily_pad')
+		.mapColor('wool')
+		.requiresTool(true)
+		.tagBlock('minecraft:mineable/axe')
 
 	event.create('betterend:hydrothermal_vent', 'tfg:particle_emitter_decoration')
 		.soundType('dripstone_block')
@@ -217,7 +188,7 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.particles(a => a
 			.range(0.3, 1, 0.3)
 			.velocity(0, 0.1, 0)
-			.particle('minecraft:large_smoke')
+			.particle('tfg:large_smoke')
 			.count(2)
 			.forced(false));
 
@@ -226,14 +197,6 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.mapColor('terracotta_white')
 		.tagBlock('minecraft:replaceable')
 		.tagBlock('tfg:do_not_destroy_in_space')
-
-	event.create('betterend:lacugrove_bark')
-		.soundType('basalt')
-		.mapColor('podzol')
-		.requiresTool(true)
-		.tagBlock('minecraft:mineable/pickaxe')
-		.tagBoth('tfc:rock/raw')
-		.tagBoth('forge:stone')
 
 	event.create('betterend:lucernia_bark')
 		.soundType('netherrack')
@@ -307,6 +270,7 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 			.requiresTool(true)
 			.tagBlock('minecraft:mineable/pickaxe')
 	})
+
 
 	// Plants
 

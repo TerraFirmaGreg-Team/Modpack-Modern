@@ -6,6 +6,9 @@ function registerTFGBiotechItems(event) {
 		.unstackable()
 		.maxDamage(9999)
 
+	event.create('betterend:silk_moth_matrix')
+	event.create('betterend:silk_fiber')
+
 	//#region Lab Equipment
 
 	global.LAB_EQUIPMENT_CONTAINERS.forEach((item) => {

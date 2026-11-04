@@ -1,0 +1,34 @@
+{
+	"feature": "tfg:earth/crop/palm_tree/coconut_patch",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 30
+		},
+		{
+			"type": "tfc:climate",
+			"min_temperature": 15,
+			"max_temperature": 45,
+			"min_rainfall": 170
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "WORLD_SURFACE_WG"
+		},
+		{
+			"type": "minecraft:block_predicate_filter",
+			"predicate": {
+				"type": "matching_block_tag",
+				"offset": [ 0, -1, 0 ],
+				"tag": "minecraft:bamboo_plantable_on"
+			}
+		},
+		{
+			"type": "tfc:flat_enough",
+			"flatness": 0.2
+		}
+	]
+}

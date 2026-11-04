@@ -3,7 +3,9 @@
 	"biomes": [
 		"ocean",
 		"ocean_reef",
-		"subglacial_lake"
+		"subglacial_lake",
+		"ocean_atolls",
+		"oceanic_volcanic_arc"
 	],
 	"features": [
 		"water"

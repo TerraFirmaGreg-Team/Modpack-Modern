@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:entity",
+	"pools": [
+		{
+			"bonus_rolls": 0.0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 10.0,
+								"min": 6.0
+							},
+							"function": "minecraft:set_count"
+						}
+					],
+					"name": "opposing_force:fire_gel"
+				}
+			],
+			"rolls": 1.0
+		}
+	],
+  "random_sequence": "opposing_force:entities/guzzler"
+}

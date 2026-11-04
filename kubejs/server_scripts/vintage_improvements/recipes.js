@@ -5,6 +5,12 @@ function registerVintageImprovementsRecipes(event) {
 
 	event.remove({ mod: 'vintageimprovements' })
 
+	event.recipes.gtceu.macerator('vintageimprovements:sulfur_block')
+		.itemInputs('vintageimprovements:sulfur_block')
+		.itemOutputs('9x #forge:dusts/sulfur')
+		.duration(100)
+		.EUt(2)
+
 	// #region Machines
 
 	event.recipes.gtceu.shaped('vintageimprovements:spring_coiling_machine', [
