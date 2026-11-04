@@ -316,6 +316,25 @@ function registerTFGCasingRecipes(event) {
 		.duration(20 * 10)
 		.EUt(GTValues.VH[GTValues.LV])
 
+	event.shaped('tfg:casings/machine_casing_maldonite', [
+		'ACA',
+		'ABA',
+		'ADA'
+	], {
+		A: '#forge:plates/maldonite',
+		B: 'gtceu:coke_oven_bricks',
+		C: '#forge:tools/hammers',
+		D: '#forge:tools/wrenches'
+	});
+
+	event.recipes.gtceu.assembler('machine_casing_maldonite')
+		.itemInputs('6x #forge:plates/maldonite', 'gtceu:coke_oven_bricks')
+		.itemOutputs('tfg:casings/machine_casing_maldonite')
+		.circuit(6)
+		.duration(2.5 * 20)
+		.EUt(16)
+		.addMaterialInfo(true)
+
 	// Blue Steel and Red Steel Shortcut recipes
 	/* Ratio issue, I'm not sure it's really doable
 	event.recipes.gtceu.mixer('tfg:red_steel_shortcut')
