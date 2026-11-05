@@ -471,7 +471,16 @@
 			"gtceu:compressor/compressor/snowballs_to_snow_fixed",
 			"gtceu:alloy_smelter/alloy_smelt_wax_to_ingot",
 			"gtceu:arc_furnace/arc_honeycomb_block",
-			"gtceu:extractor/snowball_extraction"
+			"gtceu:extractor/snowball_extraction",
+			"gtceu:electric_blast_furnace/steel_from_iron",
+			"gtceu:electric_blast_furnace/steel_from_wrought_iron",
+			"gtceu:shaped/ulv_machine_hull",
+			"gtceu:shaped/lv_machine_hull",
+			"gtceu:shaped/mv_machine_hull",
+			"gtceu:assembler/hull_mv_annealed",
+			"gtceu:shaped/hv_machine_hull",
+			"gtceu:shaped/ev_machine_hull",
+			"gtceu:shaped/iv_machine_hull",
 		]
 	},
 	{

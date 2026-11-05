@@ -68,9 +68,6 @@ function registerTFGTierCasingRecipes(event) {
 
 	//#region Steel
 
-	event.remove({ id: 'gtceu:electric_blast_furnace/steel_from_iron' })
-	event.remove({ id: 'gtceu:electric_blast_furnace/steel_from_wrought_iron' })
-
 	event.recipes.gtceu.arc_furnace('tfg:steel_from_wrought')
 		.itemInputs(Item.of('gtceu:wrought_iron_ingot', 1))
 		.inputFluids(Fluid.of('gtceu:oxygen', 63))
@@ -141,7 +138,6 @@ function registerTFGTierCasingRecipes(event) {
 
 	// ULV Machine Hull
 
-	event.remove({ id: 'gtceu:shaped/ulv_machine_hull' })
 	event.shaped('gtceu:ulv_machine_hull', [
 		'EBA',
 		'DCD',
@@ -163,14 +159,14 @@ function registerTFGTierCasingRecipes(event) {
 
 	TFGHelpers.registerMaterialInfo('gtceu:ulv_machine_hull',
 		[
-			TFGHelpers.getMaterial('maldonite'), 4,
+			TFGHelpers.getMaterial('tfg:maldonite'), 4,
 			GTMaterials.WroughtIron, 4,
+			GTMaterials.Rubber, 2,
 			GTMaterials.RedAlloy, 1
 		])
 
 	// LV Machine Hull
 
-	event.remove({ id: 'gtceu:shaped/lv_machine_hull' })
 	event.shaped('gtceu:lv_machine_hull', [
 		'EBA',
 		'DCD',
@@ -194,12 +190,12 @@ function registerTFGTierCasingRecipes(event) {
 		[
 			GTMaterials.RedSteel, 4,
 			GTMaterials.Steel, 4,
+			GTMaterials.Rubber, 2,
 			GTMaterials.Tin, 1
 		])
 
 	// MV Machine Hull
 
-	event.remove({ id: 'gtceu:shaped/mv_machine_hull'})
 	event.shaped('gtceu:mv_machine_hull', [
 		'EBA',
 		'DCD',
@@ -212,7 +208,6 @@ function registerTFGTierCasingRecipes(event) {
 		E: '#forge:plates/blue_steel'
 	}).id('tfg:shaped/mv_machine_hull')
 
-	event.remove({ id: 'gtceu:assembler/hull_mv_annealed'})
 	event.recipes.gtceu.assembler('tfg:mv_machine_hull')
 		.itemInputs('gtceu:mv_machine_casing', '2x gtceu:copper_single_cable')
 		.inputFluids('tfg:bakelite 288')
@@ -224,12 +219,12 @@ function registerTFGTierCasingRecipes(event) {
 		[
 			GTMaterials.BlueSteel, 4,
 			GTMaterials.Aluminium, 4,
+			GTMaterials.Rubber, 2,
 			GTMaterials.Copper, 1
 		])
 
 	// HV Machine Hull
 
-	event.remove({ id: 'gtceu:shaped/hv_machine_hull'})
 	event.shaped('gtceu:hv_machine_hull', [
 		'EBA',
 		'DCD',
@@ -246,12 +241,12 @@ function registerTFGTierCasingRecipes(event) {
 		[
 			GTMaterials.Platinum, 8,
 			GTMaterials.StainlessSteel, 8,
+			GTMaterials.Rubber, 2,
 			GTMaterials.Gold, 1
 		])
 
 	// EV Machine Hull
 
-	event.remove({ id: 'gtceu:shaped/ev_machine_hull'})
 	event.shaped('gtceu:ev_machine_hull', [
 		'EBA',
 		'DCD',
@@ -268,11 +263,11 @@ function registerTFGTierCasingRecipes(event) {
 		[
 			GTMaterials.Palladium, 8,
 			GTMaterials.Titanium, 8,
+			GTMaterials.Rubber, 2,
 			GTMaterials.Aluminium, 1
 		])
 	// IV Machine Hull
 
-	event.remove({ id: 'gtceu:shaped/iv_machine_hull'})
 	event.shaped('gtceu:iv_machine_hull', [
 		'EBA',
 		'DCD',
@@ -287,8 +282,9 @@ function registerTFGTierCasingRecipes(event) {
 
 	TFGHelpers.registerMaterialInfo('gtceu:iv_machine_hull',
 		[
-			TFGHelpers.getMaterial('telluride_tungstensteel'), 8,
-			TFGHelpers.getMaterial('ni-cr-al-y'), 8,
+			TFGHelpers.getMaterial('tfg:telluride_tungstensteel'), 8,
+			TFGHelpers.getMaterial('tfg:ni-cr-al-y'), 8,
+			GTMaterials.Rubber, 2,
 			GTMaterials.Platinum, 1
 		])
 
