@@ -23,4 +23,21 @@ function registerTFGPetroChemMaterials(event) {
 	dust('tfg:coked_platinum_tin_alumina_catalyst', 0x55595c, 0x3A372B)
     dust('tfg:bismuth_molybdate_catalyst', 0xc9b458, 0x8a7a3a)
 
+    event.create('tfg:aromatized_lpg')
+	.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(480))
+	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+	.color(0xb8733a)
+
+    event.create('tfg:gallium_zsm5_catalyst')
+        .dust()
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .iconSet(GTMaterialIconSet.FINE)
+        .color(0xcfd8c8)
+
+    event.create('tfg:coked_gallium_zsm5_catalyst')
+        .dust()
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .iconSet(GTMaterialIconSet.FINE)
+        .color(0x4a4f46)
+
 }

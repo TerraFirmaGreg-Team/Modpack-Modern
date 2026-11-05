@@ -147,8 +147,8 @@ function registerTFGTierCasingRecipes(event) {
 		'DCD',
 		'ABE'
 	], {
-		A: '#forge:plates/maldonite',
-		B: '#forge:plates/wrought_iron',
+		A: '#forge:plates/wrought_iron',
+		B: '#forge:plates/wood',
 		C: 'gtceu:ulv_machine_casing',
 		D: 'gtceu:red_alloy_single_cable',
 		E: '#forge:plates/maldonite'
@@ -176,8 +176,8 @@ function registerTFGTierCasingRecipes(event) {
 		'DCD',
 		'ABE'
 	], {
-		A: '#forge:plates/red_steel',
-		B: '#forge:plates/steel',
+		A: '#forge:plates/steel',
+		B: '#forge:plates/rubber',
 		C: 'gtceu:lv_machine_casing',
 		D: 'gtceu:tin_single_cable',
 		E: '#forge:plates/red_steel'
