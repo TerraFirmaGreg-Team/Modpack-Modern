@@ -963,14 +963,5 @@ function registerGTCEuMachineRecipes(event) {
 		C: 'gtceu:cupronickel_quadruple_wire',
 		D: 'gtceu:mv_machine_hull',
 		E: 'gtceu:mv_electric_pump'
-	});
-
-	TFGHelpers.registerMaterialInfo('tfg:pyrolyse_oven',[
-		GTMaterials.Aluminium, 21,
-		GTMaterials.Cupronickel, 16,
-		GTMaterials.Rubber, 54,
-		GTMaterials.Copper, (1/4) * 26,
-		GTMaterials.Bronze, (1/9) * 37,
-		GTMaterials.Steel, 3
-	]);
+	}).addMaterialInfo().id('tfg:shaped/pyrolyse_oven');
 }
