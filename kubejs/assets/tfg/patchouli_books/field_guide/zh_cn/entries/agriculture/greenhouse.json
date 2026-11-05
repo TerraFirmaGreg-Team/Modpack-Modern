@@ -102,34 +102,41 @@
         },
         {
             "type": "patchouli:spotlight",
-            "anchor": "auto_harvesting",
+            "anchor": "auto_planting",
             "title": "自动收获",
-            "item": "firmalife:sweeper,firmalife:picker",
+            "item": "create:mechanical_arm",
             "text": "$(li)$(thing)清扫器$()用于收获四槽和水培种植盆以外的种植盆。它们可以由红石供能。$(li)$(thing)采摘器$()可以通过来自上方的红石信号供能。它们会向下伸展，从四槽和水培种植盆中摘取作物。"
         },
         {
-            "type": "patchouli:text",
+            "type": "patchouli:spotlight",
+            "anchor": "auto_harvesting",
+            "title": "Auto-Harvesting",
+            "item": "firmalife:sweeper,firmalife:picker",
             "text": "$(li)此外，$(item)收获篮$()还可以用来收获大多数类型的种植盆。$(li)要收集 $(thing)清扫器$() 和 $(thing)采摘器$() 掉落的散落物品，可以使用 $(item)漏斗矿车$()、一种 $(thing)机械动力装置$()（带 $(item)漏斗$()），或 格雷的 $(item)物品收集器$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "如果你更喜欢造格雷机器而不是机械动力装置，多方块结构 $(item)电力温室$() 可以成为你的 $(thing)原木$() 和其他植物的来源。它还有一项独特之处：能种植更多群峦传说的装饰性植物！$(br2)你可以在 $(7)LV$() 末期造一台。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "electric",
             "item": "tfg:electric_greenhouse",
-            "text": "如果你更喜欢造格雷机器而不是机械动力装置，多方块结构 $(item)电力温室$() 可以成为你的 $(thing)原木$() 和其他植物的来源。它还有一项独特之处：能种植更多群峦传说的装饰性植物！$(br2)你可以在 $(7)LV$() 末期造一台。"
+            "text": "$(bold)注意：$()这个多方块结构的墙体可以自定义，使用任意有效的铁级温室方块。$(br2)查看 $(emi)多方块预览，即可了解所有可用的方块。$(br2)电力温室还能通过多种方式强化，包括 $(l:agriculture/fertilizers)肥料$()，以及在更后面的 $(6)HV$() 阶段加装 $(thing)鱼菜共生回路$()。"
         },
         {
             "type": "patchouli:text",
-            "text": "$(bold)注意：$()这个多方块结构的墙体可以自定义，使用任意有效的铁级温室方块。$(br2)查看 $(emi)多方块预览，即可了解所有可用的方块。$(br2)电力温室还能通过多种方式强化，包括 $(l:agriculture/fertilizers)肥料$()，以及在更后面的 $(6)HV$() 阶段加装 $(thing)鱼菜共生回路$()。"
+            "text": "$(item)水培设施$()是电力温室的 $(9)IV$() 升级版，可以在任何维度种植任何作物，还支持 $(item)并行控制仓$()。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "hydroponics",
             "item": "tfg:hydroponics_facility",
-            "text": "$(item)水培设施$()是电力温室的 $(9)IV$() 升级版，可以在任何维度种植任何作物，还支持 $(item)并行控制仓$()。"
+            "text": "The $(item)Hydroponics Facility$() is an $(9)IV$() upgrade to the Electric Greenhouse that can grow anything in any dimension and also supports $(item)Parallel Hatches$()."
         },
         {
             "type": "patchouli:relations",
-            "title": "延伸阅读",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_crops",

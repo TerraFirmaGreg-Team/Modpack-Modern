@@ -106,10 +106,10 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "jellies:latex",
+			"entity": "jellies:milk",
 			"scale": 0.6,
 			"name": "乳膠果凍怪",
-			"anchor": "latex_jellie",
+			"anchor": "milk_jellie",
 			"text": "$(thing)乳膠$()$(l:agriculture/jellies)果凍怪$()只能由$(thing)植物果凍怪$()和$(thing)熔岩果凍怪$()繁殖而來。牠們的黏液球是$(item)乳膠$()的來源。"
 		},
 		{

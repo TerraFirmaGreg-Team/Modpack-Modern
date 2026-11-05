@@ -1,33 +1,33 @@
 {
-  "name": "Alcohol Production",
+  "name": "酒類の生産",
   "category": "tfg:cooking",
   "icon": "firmalife:textures/item/hematitic_wine_bottle.png",
   "pages": [
     {
         "type": "patchouli:text",
-        "title": "Index",
+        "title": "目次",
         "anchor": "index",
-        "text": "$(li)$(bold)$(l:cooking/drinks#alcohol)Alcohol$()$(li)$(bold)$(l:cooking/drinks#aged_alcohol)Aged Alcohol$()$(li)$(bold)$(l:cooking/drinks#vintage_alcohol)Vintage Alcohol$()$(li)$(bold)$(l:cooking/alcohol#wine_making)Wine Making$()$(li2)$(l:cooking/alcohol#wine_properties)Wine Properties$()$(li)$(bold)$(l:cooking/alcohol#wine_shelf)Wine Shelf$()"
+        "text": "$(li)$(bold)$(l:cooking/drinks#alcohol)酒類$()$(li)$(bold)$(l:cooking/drinks#aged_alcohol)酒類の熟成$()$(li)$(bold)$(l:cooking/drinks#vintage_alcohol)年代物の酒類$()$(li)$(bold)$(l:cooking/alcohol#wine_making)ワイン作り$()$(li2)$(l:cooking/alcohol#wine_properties)ワインの特徴$()$(li)$(bold)$(l:cooking/alcohol#wine_shelf)ワイン棚$()"
     },
     {
         "type": "patchouli:text",
-        "title": "Wine Making",
+        "title": "ワイン作り",
         "anchor": "wine_making",
-        "text": "$(thing)Wine-making$() is the science of turning $(thing)grapes$() into alcohol. You must first find $(l:the_world/wild_fruits#red_grapes)Red Grapes$() or $(l:the_world/wild_fruits#white_grapes)White Grapes$() in the wild and cultivate their seeds on $(thing)Trellises$() to obtain $(item)Grapes$(). Wine effects can be viewed $(l:cooking/drinks#wine)Here$()"
+        "text": "$(thing)ワイン作り$()とは、$(thing)ブドウ$()をアルコールに変える科学のことです。まず、$(l:the_world/wild_fruits#red_grapes) 赤ブドウ$() または $(l:the_world/wild_fruits#white_grapes)白ブドウ$() を野生の状態で見つけ、その種を $(thing)ブドウ棚$() で育てて $(item)ブドウ$() を入手する必要があります。ワインの効果については $(l:cooking/drinks#wine)こちら$() で確認できます。"
     },
     {
         "type": "patchouli:spotlight",
         "anchor": "grape_smashing",
-        "title": "Grape Smashing",
+        "title": "ブドウをつぶす",
         "item": {
         "tag": "firmalife:stomping_barrels"
         },
-        "text": "Grapes must then be smashed in a $(thing)Stomping Barrel$(), $(thing)Quern$(), or $(l:cooking/cooking_methods#food_processor)Food Processor$() to obtain smashed grapes. To use a stomping barrel, $(item)$(k:key.use)$() with fresh grapes. Then, jump up and down on the barrel 16 times. $(item)$(k:key.use)$() with an empty hand to retrieve the items.$(br2)Then, seal the smashed grapes in a barrel for 5 days to $(thing)ferment$() them."
+        "text": "その後、ブドウを $(thing)踏み桶$()、$(thing)石臼$()、または $(l:cooking/cooking_methods#food_processor)自動調理機$() で潰し、潰れたブドウを作ります。\n潰れた赤いブドウを使用するには、新鮮なブドウを $(item)$(k:key.use)$() で投入します。その後、踏み桶の上で16回ジャンプします。手に何も持たず $(item)$(k:key.use)$() を実行して、アイテムを取り出します。$(br2)次に、潰れたブドウを樽に密封し、5日間 $(thing)発酵$() させます。"
     },
     {
         "type": "patchouli:crafting",
         "anchor": "barrel_press",
-        "title": "Barrel press",
+        "title": "圧搾機",
         "recipe": "firmalife:crafting/wood/acacia_barrel_press",
         "text": "圧搾機はブドウ加工の最終段階です。"
     },
@@ -43,7 +43,7 @@
     {
         "type": "patchouli:crafting",
         "anchor": "bottle_label",
-        "title": "Bottle Label",
+        "title": "ボトルラベル",
         "recipe": "firmalife:crafting/bottle_label",
         "text": "$(thing)ボトルラベル$()は筆記台で名前を変更でき、その名前がワインのツールチップに追加されます。"
     },
@@ -54,8 +54,8 @@
     {
         "type": "patchouli:text",
         "anchor": "wine_properties",
-        "title": "Drinking Wine",
-        "text": "The discerning sommelier will be able to detect subtleties in the wine that is produced under different conditions. Indeed, this is possible in the world of $(tfg_short) as well. It starts in the fields in which those grapes were grown -- a row of grapes is deeply affected by the ambient environment and soil."
+        "title": "ワインを飲む",
+        "text": "目の肥えたソムリエは、異なる条件下で生産されたワインの微妙な違いを見分けることができます。$(tfg_short)の世界でも同様です。それは、ブドウが育った畑から始まります。ブドウ棚は、周囲の環境や土壌の影響を大きく受けます。"
     },
     {
         "type": "patchouli:text",
@@ -67,14 +67,14 @@
     },
     {
         "type": "patchouli:crafting",
-        "title": "Wine Shelf",
+        "title": "ワイン棚",
         "anchor": "wine_shelf",
         "recipe": "firmalife:crafting/wood/hickory_wine_shelf",
         "text": "$(thing)ワイン棚$()は、ワイナリーに最適なアクセサリーで、ワインボトルをスタイリッシュに展示・保管できます。"
     },
     {
         "type": "patchouli:relations",
-        "title": "Further Reading",
+        "title": "さらに読む",
         "anchor": "relations",
         "entries": [
         "tfg:cooking/food_and_water",

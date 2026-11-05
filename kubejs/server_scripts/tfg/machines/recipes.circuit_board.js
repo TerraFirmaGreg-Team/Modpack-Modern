@@ -80,7 +80,7 @@ function registerTFGCircuitBoardsRecipes(event) {
 		.notConsumable(Item.of('gtceu:cylinder_casting_mold'))
 		.itemOutputs(Item.of('tfg:optical_borosilicate_blank', 1))
 		.duration(20 * 5)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	function lensPolishing(event, fluid, colour, slurry, temp, energy) {
 		event.recipes.gtceu.high_temperature_precision_fabricator(`tfg:lens_${fluid}_${colour}`)
