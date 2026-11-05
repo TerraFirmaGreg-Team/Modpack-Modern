@@ -222,6 +222,7 @@ global.modifyRecipe = function(event, recipeId, options) {
             .EUt(recipeJson.tickInputs.eu[0].content)
 
         // Rebuild item inputs
+        var circuitConfig = null
         if (recipeJson.inputs && recipeJson.inputs.item) {
             for (var ii2 = 0; ii2 < recipeJson.inputs.item.length; ii2++) {
                 var ing2 = recipeJson.inputs.item[ii2].content.ingredient
@@ -231,10 +232,21 @@ global.modifyRecipe = function(event, recipeId, options) {
                 } else if (ing2 && typeof ing2 === "object" && "item" in ing2) {
                     newRecipe.itemInputs(Item.of(ing2.item, count))
                 } else if (!ing2 && recipeJson.inputs.item[ii2].content.type === "gtceu:circuit") {
-                    newRecipe.circuit(recipeJson.inputs.item[ii2].content.configuration)
+                    circuitConfig = recipeJson.inputs.item[ii2].content.configuration
                 }
-                
             }
+        }
+
+        // Add new item inputs
+        if (options.addItemInputs) {
+            for (var ai = 0; ai < options.addItemInputs.length; ai++) {
+                newRecipe.itemInputs(options.addItemInputs[ai])
+            }
+        }
+
+        // Add circuit after every other item input else it wasn't last on the recipe and it looks like shit
+        if (circuitConfig !== null) {
+            newRecipe.circuit(circuitConfig)
         }
 
         // Rebuild fluid inputs

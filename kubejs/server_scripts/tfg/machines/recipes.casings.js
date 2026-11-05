@@ -280,4 +280,5 @@ function registerTFGCasingRecipes(event) {
 		.duration(2.5 * 20)
 		.EUt(16)
 		.addMaterialInfo(true)
+
 }

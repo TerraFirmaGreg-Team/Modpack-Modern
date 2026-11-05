@@ -61,6 +61,11 @@ function registerTFCMetalsRecipes(event) {
 		TFC.alloyPart('tfc:tin', 0.15, 0.25)
 	]).id('tfg:alloy/battery_alloy')
 
+	event.recipes.tfc.alloy('tfg:maldonite', [
+		TFC.alloyPart('tfc:gold', 0.60, 0.70),
+		TFC.alloyPart('tfc:bismuth', 0.30, 0.40)
+	]).id('tfg:alloy/maldonite')
+
 	//#endregion
 
 	//#region Рецепты ковки TFC слитков в GT машинах

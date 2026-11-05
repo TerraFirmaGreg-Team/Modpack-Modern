@@ -46,7 +46,7 @@
 				"{@pagebreak}"
 				"{quests.medium_voltage.pyrolyse.desc.4}"
 			]
-			icon: "gtceu:pyrolyse_oven"
+			icon: "tfg:pyrolyse_oven"
 			id: "53DC6E32C41C94C3"
 			optional: true
 			shape: "square"
@@ -54,7 +54,7 @@
 			subtitle: "{quests.medium_voltage.pyrolyse.subtitle}"
 			tasks: [{
 				id: "0FD2962C232149F8"
-				item: "gtceu:pyrolyse_oven"
+				item: "tfg:pyrolyse_oven"
 				type: "item"
 			}]
 			title: "{quests.medium_voltage.pyrolyse.title}"

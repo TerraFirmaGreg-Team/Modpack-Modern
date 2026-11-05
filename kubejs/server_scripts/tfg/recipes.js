@@ -81,6 +81,7 @@ const registerTFGRecipes = (event) => {
 	registerTFGPowerGenBalance(event)
 	registerTFGGarnetSandLine(event)
 	registerTFGBuddingRecipes(event)
+	registerTFGTierCasingRecipes(event)
 
 	registerTFGZirconiumRecipes(event)
 	registerTFGBromineRecipes(event)
