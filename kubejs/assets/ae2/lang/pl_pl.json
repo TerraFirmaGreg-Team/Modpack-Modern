@@ -972,6 +972,7 @@
 	"gui.ae2.FilterTerminalShort": "Filtrowany terminal",
 	"gui.ae2.SuperMEReplenisherBytesTotal": "Bajty łącznie: %s",
 	"gui.ae2.SuperMEReplenisherBytesUsed": "Użyte bajty: %s",
+	"gui.ae2.SuperMEReplenisherStored": "Przechowywane: %s",
 	"gui.ae2.SuperMEReplenisherTarget": "Cel: %s",
 	"gui.ae2.SuperMEReplenisherThreshold": "Próg",
 	"gui.ae2.SuperMEReplenisherUnlimited": "Nieograniczony",
@@ -979,5 +980,6 @@
 	"gui.tooltips.ae2.FilterTerminalHighlight": "Podświetl cel",
 	"gui.tooltips.ae2.PatternProviderDisplayMode": "Tryb wyświetlania",
 	"item.ae2.filter_terminal": "Filtrowany terminal ME",
+	"key.ae2.cycle_controller_animation": "Przełącz animację kontrolera",
 	"key.ae2.pin_entry": "Przypnij/odepnij wpis"
 }

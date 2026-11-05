@@ -102,34 +102,41 @@
         },
         {
             "type": "patchouli:spotlight",
-            "anchor": "auto_harvesting",
+            "anchor": "auto_planting",
             "title": "自動収穫",
-            "item": "firmalife:sweeper,firmalife:picker",
+            "item": "create:mechanical_arm",
             "text": "$(li)$(thing)刈り取り機(Sweeper)$()は、4種のプランターと水耕プランター以外のプランターから作物を収穫するために使用できます。レッドストーンで駆動させることができます。$(li)$(thing)摘み取り機(Picker)$()は、上からのレッドストーン信号によって駆動させることができます。下方向に伸びることで4種のプランターと水耕プランターから作物を収穫します。"
         },
         {
-            "type": "patchouli:text",
+            "type": "patchouli:spotlight",
+            "anchor": "auto_harvesting",
+            "title": "Auto-Harvesting",
+            "item": "firmalife:sweeper,firmalife:picker",
             "text": "$(li)さらに、$(item)収穫かご$() を使えば、ほとんどのプランターから作物を収穫できます。$(li)$(thing)刈り取り機(Sweeper)$() や $(thing)摘み取り機(Picker)$() が落とす散らばったアイテムを回収するには、$(item)ホッパー付きトロッコ$()、$(item)ファンネル$() を装備した $(thing)からくり$()、または GregTech の $(item)アイテム収集器$() を使用できます。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "マルチブロック機械である$(item)電気温室$()は、Createに頼らず、電気の力で$(thing)木$()や作物を安定して生産できる便利な設備です。さらに、TFCの装飾用植物なども栽培できます！$(br2)$(7)LV$()時代の終盤に作成できるようになります。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "electric",
             "item": "tfg:electric_greenhouse",
-            "text": "マルチブロック機械である$(item)電気温室$()は、Createに頼らず、電気の力で$(thing)木$()や作物を安定して生産できる便利な設備です。さらに、TFCの装飾用植物なども栽培できます！$(br2)$(7)LV$()時代の終盤に作成できるようになります。"
+            "text": "$(bold)注：$() このマルチブロックの壁は、有効な鉄ティアの温室ブロックであればどの種類でも使用できるようにカスタマイズされています。$(br2)使用可能なすべてのブロックのリストについては、$(emi) マルチブロックのプレビューをご確認ください。$(br2)「電気温室」は、$(l:agriculture/fertilizers)肥料$() を使用したり、さらに $(6)HV$() で $(thing)アクアポニックス・ループ$() を導入したりするなど、いくつかの方法でアップグレードすることも可能です。"
         },
         {
             "type": "patchouli:text",
-            "text": "$(bold)注：$() このマルチブロックの壁は、有効な鉄ティアの温室ブロックであればどの種類でも使用できるようにカスタマイズされています。$(br2)使用可能なすべてのブロックのリストについては、$(emi) マルチブロックのプレビューをご確認ください。$(br2)「電気温室」は、$(l:agriculture/fertilizers)肥料$() を使用したり、さらに $(6)HV$() で $(thing)アクアポニックス・ループ$() を導入したりするなど、いくつかの方法でアップグレードすることも可能です。"
+            "text": "$(item)水耕栽培施設$()は、電気温室の$(9)IV$()アップグレード版であり、あらゆるディメンションであらゆる作物を栽培できるほか、$(item)並列制御ユニット$()にも対応しています。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "hydroponics",
             "item": "tfg:hydroponics_facility",
-            "text": "$(item)水耕栽培施設$()は、電気温室の$(9)IV$()アップグレード版であり、あらゆるディメンションであらゆる作物を栽培できるほか、$(item)並列制御ユニット$()にも対応しています。"
+            "text": "The $(item)Hydroponics Facility$() is an $(9)IV$() upgrade to the Electric Greenhouse that can grow anything in any dimension and also supports $(item)Parallel Hatches$()."
         },
         {
             "type": "patchouli:relations",
-            "title": "さらに読む",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_crops",
