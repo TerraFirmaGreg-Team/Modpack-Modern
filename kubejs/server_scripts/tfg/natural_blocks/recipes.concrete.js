@@ -54,6 +54,21 @@ function registerTFGConcreteRecipes(event) {
 		.EUt(16)
 
 
+	//Concrete Powder Barrel Recipe Parity
+
+	global.MINECRAFT_DYE_NAMES.forEach(color => {
+		event.remove({ id: `gtceu:chemical_bath/${color}_concrete` })
+
+		event.recipes.gtceu.chemical_bath(`tfg:${color}_concrete`)
+			.itemInputs(`minecraft:${color}_concrete_powder`)
+			.inputFluids('minecraft:water 100')
+			.itemOutputs(`minecraft:${color}_concrete`)
+			.category(GTRecipeCategories.CHEM_DYES)
+			.duration(20)
+			.EUt(7)
+	})
+
+
 	//GT light/dark concrete recipe fix
 
 	event.remove({ id: 'gtceu:fluid_solidifier/solidify_concrete_block' })
