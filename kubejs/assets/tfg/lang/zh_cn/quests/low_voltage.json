@@ -317,5 +317,8 @@
 	"quests.low_voltage.factory_gauge.desc": "&b工厂仪表&r（以及它们的同类&6流体仪表&r）可以做两件事：\n\n1) 监控连接到打包机的物品或流体水平\n2) 当这些水平低于一定数量时，自动下单合成请求。\n\n你没听错，仪表可以实现&6自动合成&r！请查阅&a野外指南&r了解如何使用它们的完整说明。",
 	"quests.low_voltage.electric_flask.title": "电水壶",
 	"quests.low_voltage.electric_flask.subtitle": "自动吸管杯",
-	"quests.low_voltage.electric_flask.desc": "与矿工头盔类似，&b电水壶&r会在你口渴时自动饮水。不同之处在于它适用于任何可饮用的流体！\n\n它需要充电才能工作，不过即使电量耗尽，你仍然可以手动从中饮用。它还可容纳&64,000mB&r的流体。"
+	"quests.low_voltage.electric_flask.desc": "与矿工头盔类似，&b电水壶&r会在你口渴时自动饮水。不同之处在于它适用于任何可饮用的流体！\n\n它需要充电才能工作，不过即使电量耗尽，你仍然可以手动从中饮用。它还可容纳&64,000mB&r的流体。",
+	"quests.low_voltage.spool.title": "架空线缆",
+	"quests.low_voltage.spool.subtitle": "🎵 危险！危险！高电压！",
+	"quests.low_voltage.spool.desc": "想在你不断扩张的基地之间搭建更长距离的架空线缆？还是只想架设几条大型电力线路？\n\n试试这些&b电线线轴&r和&b连接器&r吧！你可以像往收纳袋里放物品一样，把任何线缆或导线放入线轴。然后，手持线轴右键点击两个连接器。用剪线钳右键点击连接器即可断开线缆。\n\n它们遵循与普通放置线缆完全相同的规则——电流过大会烧毁线缆，混用电压仍会导致爆炸，区块必须加载才能传输电力，等等。潜行并看向连接器，即可查看&6电压损耗&r等数据。"
 }

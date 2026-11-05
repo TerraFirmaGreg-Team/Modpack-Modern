@@ -106,6 +106,7 @@
     "tfg.clientmessage.link.field_guide": "§oprzewodnik",
     "tfg.clientmessage.link.recipe_book": "§oksiążka przepisów",
     "tfg.clientmessage.link.quest_book": "§oksiążka zadań",
+    "tfg.clientmessage.link.e4mc": "§oe4mc",
     "tfg.machine.gas_well.active": "Aktywny",
     "tfg.machine.gas_well.waiting_explosive": "Oczekiwanie na wybuch",
     "tfg.machine.gas_well.waiting_explosive.tooltip": "Włóż materiał wybuchowy (znacznik #explosive w EMI), aby uruchomić maszynę",
@@ -187,5 +188,10 @@
     "tfg.wireless_charger.mode.0": "§eTryb: Superładowanie - Szybkie ładowanie §7(zasięg §f%s§7 bloków, 4A)",
     "tfg.wireless_charger.mode.1": "§eTryb: Daleki zasięg - Wolne ładowanie§7(zasięg §f%s§7 bloków, 1A)",
     "tfg.field_guide.name": "Przewodnik",
-    "tfg.field_guide.read_me": "§8§oPrzeczytaj mnie!☺§r"
+    "tfg.field_guide.read_me": "§8§oPrzeczytaj mnie!☺§r",
+    "tfg.display_source.thermometer": "Termometr",
+    "tfg.display_source.calendar_clock": "Termometr",
+    "tfg.display_source.anemometer": "Anemometr",
+    "tfg.display_source.environment": "Środowisko",
+    "tfg.display_source.me_network": "Sieć ME"
 }

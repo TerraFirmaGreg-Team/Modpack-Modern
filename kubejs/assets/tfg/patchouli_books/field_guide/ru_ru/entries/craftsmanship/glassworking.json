@@ -1,17 +1,17 @@
 {
-    "name": "Glassworking",
+    "name": "Стеклоделие",
     "category": "tfg:craftsmanship",
     "icon": "tfc:blowpipe_with_glass",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:craftsmanship/glassworking#intro)Glass Batches$()$(li2)$(l:craftsmanship/glassworking#lime_and_potash)Lime & Potash$()$(li)$(bold)$(l:craftsmanship/glassworking#tools)Glassworking Tools$()$(li2)$(l:craftsmanship/glassworking#blowpipe)Blowpipe$()$(li2)$(l:craftsmanship/glassworking#paddle)Paddle$()$(li2)$(l:craftsmanship/glassworking#jacks)Jacks$()$(li2)$(l:craftsmanship/glassworking#saw)Gem Saw$()$(li)$(bold)$(l:craftsmanship/glassworking#glassworking_steps)Glassworking Steps$()$(li2)$(l:craftsmanship/glassworking#table_pour)Table Pour$()$(li2)$(l:craftsmanship/glassworking#basin_pour)Basin Pour$()$(li)$(bold)$(l:craftsmanship/glassworking#coloring)Glass Coloring$()$(li2)$(l:craftsmanship/glassworking#dyes)Dye List$()"
+            "text": "$(li)$(bold)$(l:craftsmanship/glassworking#intro)Стеклянные смеси$()$(li2)$(l:craftsmanship/glassworking#lime_and_potash)Известь и Поташ$()$(li)$(bold)$(l:craftsmanship/glassworking#tools)Инструменты стеклодува$()$(li2)$(l:craftsmanship/glassworking#blowpipe)Стеклодувная трубка$()$(li2)$(l:craftsmanship/glassworking#paddle)Лопатка$()$(li2)$(l:craftsmanship/glassworking#jacks)Щипцы$()$(li2)$(l:craftsmanship/glassworking#saw)Пилка с напылением$()$(li)$(bold)$(l:craftsmanship/glassworking#glassworking_steps)Обработка стекла$()$(li2)$(l:craftsmanship/glassworking#table_pour)Разлив на стол$()$(li2)$(l:craftsmanship/glassworking#basin_pour)Разлив в резервуар$()$(li)$(bold)$(l:craftsmanship/glassworking#coloring)Окрашивание стекла$()$(li2)$(l:craftsmanship/glassworking#dyes)Красители$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introduction",
+            "title": "Введение",
             "text": "Стеклоделие - это процесс превращения песка в стекло. Для начала вам нужно создать $(thing)Партию стекла$(), существует четыре типа: $(br)$(br) 1. $(thing)Кремнезём$(), из белого песка.$(br) 2. $(thing)Гематитовый$(), из жёлтого, красного или розового песка.$(br) 3. $(thing)Оливиновый$(), из зелёного или коричневого песка.$(br) 4. $(thing)Вулканический$(), из чёрного песка."
         },
         {

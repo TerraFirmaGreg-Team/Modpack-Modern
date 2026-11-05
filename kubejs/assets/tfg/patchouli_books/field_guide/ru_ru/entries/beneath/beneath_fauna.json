@@ -20,17 +20,17 @@
 			"type": "patchouli:entity",
 			"entity": "minecraft:axolotl",
 			"scale": 0.5,
-			"name": "Axolotl",
+			"name": "Аксолотль",
 			"anchor": "axolotl",
-			"text": "$(thing)Axolotls$() can be found in the top and middle layers, usually swimming around in pools of water."
+			"text": "$(thing)Аксолотлей$() можно найти в верхних и средних слоях, обычно купающихся в небольших источниках воды"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:frog",
 			"scale": 1,
-			"name": "Frog",
+			"name": "Лягушка",
 			"anchor": "frog",
-			"text": "$(thing)Frogs$() can be found in the top and middle layers. They can be tamed and eaten."
+			"text": "$(thing)Лягушек$() можно найти в верхних и средних слоях. Их можно приручить или съесть"
 		},
 		{
 			"type": "patchouli:entity",
@@ -62,7 +62,7 @@
 			"scale": 0.6,
 			"name": "Ice Jellie",
 			"anchor": "ice_jellie",
-			"text": "$(thing)Ice$() $(l:agriculture/jellies)Jellies$() are found in the $(thing)Salt Caves$() biome. They cool down nearby players."
+			"text": "$(thing)Ледяной$() $(l:agriculture/jellies)Джелли$() можно найти в биоме $(thing)Cоляных пещер$(). Они пассивно охлаждают всех игроков в небольшом радиусе."
 		},
 		{
 			"type": "patchouli:entity",
@@ -78,7 +78,7 @@
 			"scale": 0.6,
 			"name": "Glowberry Jellie",
 			"anchor": "glowberry_jellie",
-			"text": "$(thing)Glowberry$() $(l:agriculture/jellies)Jellies$() are found in the $(thing)Lush Hollow$() biome. Their slime balls can be boiled into $(item)Sugar$()."
+			"text": "$(thing)Светящийся$() $(l:agriculture/jellies)Джелли$() можно найти в биоме $(thing)Пышных лощин$(). Их слизь можно переработать в $(thing)Сахар$()"
 		},
 		{
 			"type": "patchouli:entity",
@@ -106,11 +106,11 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "jellies:latex",
+			"entity": "jellies:milk",
 			"scale": 0.6,
-			"name": "Latex Jellie",
-			"anchor": "latex_jellie",
-			"text": "$(thing)Latex$() $(l:agriculture/jellies)Jellies$() can only be bred from a $(thing)Plant Jellie$() and $(thing)Lava Jellie$(). Their slime balls are a source of $(item)Latex$()."
+			"name": "Milk Jellie",
+			"anchor": "milk_jellie",
+			"text": "$(thing)Milk$() $(l:agriculture/jellies)Jellies$() can only be bred from a $(thing)Plant Jellie$() and $(thing)Lava Jellie$(). Their slime balls are a source of $(item)Dairy$()."
 		},
 		{
 			"type": "patchouli:entity",
@@ -150,7 +150,7 @@
 			"scale": 1,
 			"name": "Graphite Glayze",
 			"anchor": "graphite_glayze",
-			"text": "$(thing)Graphite Glayzes$() can be found in the bottom layers. Careful they don't knock you into lava!"
+			"text": "$(thing)Графитовых Глейзов$() можно найти на нижнем слое бездны. Будь осторожен, ведь он 100% скинет тебя в лаву!"
 		},
 		{
 			"type": "patchouli:entity",

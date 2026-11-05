@@ -10,7 +10,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:agriculture/jellies#produce)Виробництво$()$(li)$(bold)$(l:agriculture/jellies#feeding)Годування$()$(li)$(bold)Джеллі з Землі$()$(li2)$(l:agriculture/jellies#herbal)Трав’яний$()$(li2)$(l:agriculture/jellies#phosphorum)Фосфорумовий$()$(li2)$(l:agriculture/jellies#rock)Кам’яний$()$(li)$(bold)Джеллі з Безодні$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)Крижаний$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)Рослинний$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)Світлоягідний$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)Джерельний$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)Лавовий$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)Біотитовий$()$(li2)$(l:beneath/beneath_fauna#latex_jellie)Латексний$()$(br2)$(o)(Продовження на наступній сторінці...)$()"
+			"text": "$(li)$(bold)$(l:agriculture/jellies#produce)Виробництво$()$(li)$(bold)$(l:agriculture/jellies#feeding)Годування$()$(li)$(bold)Джеллі з Землі$()$(li2)$(l:agriculture/jellies#herbal)Трав’яний$()$(li2)$(l:agriculture/jellies#phosphorum)Фосфорумовий$()$(li2)$(l:agriculture/jellies#rock)Кам’яний$()$(li)$(bold)Джеллі з Безодні$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)Крижаний$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)Рослинний$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)Світлоягідний$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)Джерельний$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)Лавовий$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)Біотитовий$()$(li2)$(l:beneath/beneath_fauna#milk_jellie)Молочний$()$(br2)$(o)(Продовження на наступній сторінці...)$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -28,14 +28,14 @@
 			"type": "patchouli:text",
 			"title": "Вироби",
 			"anchor": "produce",
-			"text": "$(thing)Джеллі$() досить вибагливі й відмовляються щось виробляти поза межами свого природного середовища, проте вони без проблем розмножуються в будь-якому середовищі. $(br2)Також вони не люблять машини й виробляють свій продукт лише тоді, коли гравець годує їх власноруч.$(br2)$(#B0B0B0)$(o)Або, можливо, їм просто хочеться уваги..."
+			"text": "$(thing)Джеллі$() досить вибагливі й відмовляються виробляти будь-що за межами свого природного середовища, проте розмножуються без проблем у будь-яких умовах.$(br2)Ти можеш використовувати $(l:agriculture/animal_husbandry#feeding_trough)годівницю$(), щоб годувати їх і розводити, але для отримання будь-якої продукції їх потрібно годувати власноруч (гравцем або активатором).$(br2)$(#B0B0B0)$(o)А може, їм просто бракує уваги..."
 		},
 		{
 			"type": "patchouli:crafting",
 			"title": "Годування",
 			"recipe": "tfg:shaped/jellies_nutritional_mash",
 			"anchor": "feeding",
-			"text": "$(thing)Поживна каша$() — це основна їжа всіх $(thing)джеллі$(), яку переважно виготовляють із зернових, фруктів і деяких інгредієнтів, характерних для певних вимірів.$(br2)На жаль, вони досить вибагливі, тому годувати їх може лише $(thing)гравець$(), а не $(l:agriculture/animal_husbandry#feeding_trough)годівниця$().$(br)$(#B0B0B0)$(o)Чому воно рухається..."
+			"text": "$(thing)Поживна суміш$() — це основна їжа всіх $(thing)джеллі$(), яку переважно виготовляють із фруктів, грибів та деяких інгредієнтів, характерних для певного виміру."
 		},
 		{
 			"type": "patchouli:entity",
