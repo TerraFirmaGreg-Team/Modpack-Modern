@@ -1,5 +1,5 @@
 {
-    "name": "Anvils",
+    "name": "Yunques",
     "category": "tfg:craftsmanship",
     "icon": "tfc:metal/anvil/bronze",
     "pages": [
@@ -11,13 +11,13 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introduction",
+            "title": "Introducción",
             "text": "An alternative to casting tools directly (and a requirement for higher tier metals) is to use an $(thing)Anvil$(). An anvil is a block which can be used for two different processes: $(l:craftsmanship/anvils#working)Working$() and $(l:craftsmanship/anvils#welding)Welding$(). An anvil can weld double ingots of the metal type needed to create the next tier anvil above it, which will be necessary to work other items from that metal."
         },
         {
             "type": "patchouli:text",
             "anchor": "stone_anvil",
-            "title": "Stone Anvil",
+            "title": "Yunque de piedra",
             "text": "First, you need to acquire a block of $(thing)raw igneous rock$(), that is $(l:the_world/geology#igneous_extrusive)igneous extrusive$() (Rhyolite, Basalt, Andesite, or Dacite) or $(l:the_world/geology#igneous_intrusive)igneous intrusive$() (Granite, Diorite, Gabbro, Pyroxenite, or Keratophyre). You could find and use an exposed block in the world, or you could $(l:craftsmanship/anvils#raw_rock)extract one$() from the surrounding rock."
         },
         {
@@ -222,7 +222,7 @@
             "type": "patchouli:text",
             "anchor": "welding",
             "text": "Welding is a process through which two items are fused together to create a new item. Welding works the same whether on a $(l:craftsmanship/anvils#stone_anvil)Stone Anvil$() or a $(l:craftsmanship/anvils#metal_anvil)Metal Anvil$().$(br2)First, you must place the two items you want to weld on the anvil by opening the anvil interface and inserting them in the two leftmost slots.",
-            "title": "Welding"
+            "title": "Soldadura"
         },
         {
             "type": "patchouli:text",
@@ -232,7 +232,7 @@
             "type": "patchouli:spotlight",
             "item": "tag:tfc:anvils",
             "anchor": "metal_anvil",
-            "title": "Metal Anvils",
+            "title": "Yunques de metal",
             "text": "Metal anvils are an important tool required for metalworking, as they allow you to work and weld metal ingots into various different forms.$(br2)$(l:craftsmanship/anvils#working)Working$() is done to form one piece of metal into another, and $(l:craftsmanship/anvils#welding)welding$(), is used to fuse two metal items into one solid piece."
         },
         {
@@ -258,7 +258,7 @@
                 }
             },
             "name": "",
-            "text": "All types of metal anvils.",
+            "text": "Todos los tipos de yunques de metal.",
             "enable_visualize": false
         },
         {
@@ -275,7 +275,7 @@
             "type": "patchouli:text",
             "anchor": "working",
             "text": "In order to work an item on the anvil, you will need to $(item)$(k:key.use)$() the anvil, to open up the anvil interface, seen on the next image. On the left, there are two input slots for items - for working, the target item must be in the right-hand slot. You will also need a hammer while working, either in the hammer slot on the right of the anvil $(bold)or$() in your main hand. The hammer will gradually take damage as you work the item.",
-            "title": "Working"
+            "title": "Trabajo"
         },
         {
             "type": "patchouli:image",
@@ -294,13 +294,13 @@
             "images": [
                 "tfc:textures/gui/book/gui/anvil_in_use.png"
             ],
-            "text": "After selecting to create a pickaxe.",
+            "text": "Después de seleccionar la creación de un pico.",
             "border": false
         },
         {
             "type": "patchouli:text",
             "text": "In the middle of the anvil screen, there is a bar with two colored indicators. The $(2)green$() pointer, is your current working progress. The $(4)red$() pointer, is the target. Your goal is to line up the current progress, with the target.$(br2)In order to do this, you can use the $(2)green$() and $(4)red$() action buttons, which move your current progress a certain amount, depending on the action taken.",
-            "title": "Targets"
+            "title": "Objetivos"
         },
         {
             "type": "patchouli:text",
@@ -309,7 +309,7 @@
         {
             "type": "patchouli:text",
             "text": "The $(thing)rules$(), are the two or three icons shown on the top of the anvil interface. They represent specific actions that must be taken, at specific times, in order for your working to be a success. For example, a rule could be $(2)Bend Second Last$(), meaning the second to last action you take $(bold)must$() be a $(2)Bend$() action.",
-            "title": "Working Rules"
+            "title": "Reglas de trabajo"
         },
         {
             "type": "patchouli:text",
