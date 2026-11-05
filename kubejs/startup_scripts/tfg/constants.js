@@ -89,7 +89,8 @@ global.VENUS_BIOMES = [
 	'tfg:venus/salt_flats',
 	'tfg:venus/stromatolite_beach',
 	'tfg:venus/sulfuric_ravine',
-	'tfg:venus/scorching_volcanoes'
+	'tfg:venus/scorching_volcanoes',
+	'tfg:venus/venus_caves'
 ];
 
 /**

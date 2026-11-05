@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:lake",
+	"config": {
+		"barrier": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "tfg:rock/hardened_scoria"
+			}
+		},
+		"fluid": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "ad_astra:oil"
+			}
+		}
+	}
+}

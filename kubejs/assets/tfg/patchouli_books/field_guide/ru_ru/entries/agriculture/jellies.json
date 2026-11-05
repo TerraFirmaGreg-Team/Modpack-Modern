@@ -28,7 +28,7 @@
 			"type": "patchouli:text",
 			"title": "Производит",
 			"anchor": "produce",
-			"text": "$(thing)Джелли$() довольно привередливы, они откажутся производить что-либо вне своей естественной среды обитания; тем не менее, спариваться они могут в любых условиях. $(br2)Ещё им не нравятся машины, поэтому чтобы что-то с них получить, их придётся кормить вручную.$(br2)$(#B0B0B0)$(o)Может быть им просто хочется внимания..."
+			"text": "$(thing)Jellies$() are quite picky and will refuse to produce anything outside their natural habitat; however, they will breed just fine in any environment.$(br2)You can use a $(l:agriculture/animal_husbandry#feeding_trough)Feeding Trough$() to feed and breed them, but they require hand-feeding (either a player or deployer) to give any of their products.$(br2)$(#B0B0B0)$(o)Or maybe they just want attention..."
 		},
 		{
 			"type": "patchouli:crafting",
@@ -43,7 +43,7 @@
 			"scale": 0.6,
 			"name": "Целебный джелли",
 			"anchor": "herbal",
-			"text": "$(thing)Целебный$() джелли спавнится на земле в лесах с $(l:the_world/climate#temperature)Температурой$() 1-10°C и $(l:the_world/climate#rainfall)Годовыми осадками$() как минимум 150мм.\nОни производят $(thing)Целебную слизь$()."
+			"text": "$(thing)Целебный$() Джелли спавнится на Земле, в лесах с $(l:the_world/climate#temperature)Температурой$() 1-10°C и $(l:the_world/climate#rainfall)Годовыми осадками$() как минимум 150мм.\nОни производят $(thing)Целебную слизь$()."
 		},
 		{
 			"type": "patchouli:entity",
@@ -51,19 +51,19 @@
 			"scale": 0.6,
 			"name": "Фосфорный джелли",
 			"anchor": "phosphorum",
-			"text": "$(thing)Фосфорный$() джелли спавнится на Земле в холодных лесах, с $(l:the_world/climate#temperature)Температурой$() -10-0°C и $(l:the_world/climate#rainfall)Годовыми осадками$() как минимум 150мм. Он производит $(thing)Фосфорные шары слизи$(), а также может есть $(thing)гнилую плоть$()."
+			"text": "$(thing)Phosphorum$() jellies spawn on Earth in cold forests, with $(l:the_world/climate#temperature)temperature$() between -10-0°C and $(l:the_world/climate#rainfall)rainfall$() of at least 150mm. They produce $(thing)Phosphorum Slime Balls$() and additionally eat $(thing)rotten flesh$()."
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "jellies:rock",
 			"scale": 0.6,
-			"name": "Каменистый джелли",
+			"name": "Rock Jellie",
 			"anchor": "rock",
-			"text": "$(thing)Каменистый$() джелли изредка спавнится на Земле в пещерах горных биомов. На данный момент он ничего не делают."
+			"text": "$(thing)Rock$() jellies rarely spawn on Earth in caves of mountainous biomes. Currently, they do nothing."
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Дополнительно",
+			"title": "Читать далее",
 			"anchor": "relations",
 			"entries": [
 				"tfg:beneath/beneath_fauna",

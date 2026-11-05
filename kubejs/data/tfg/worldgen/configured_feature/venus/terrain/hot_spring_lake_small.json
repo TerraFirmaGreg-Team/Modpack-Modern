@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:lake",
+	"config": {
+		"barrier": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "tfg:rock/raw/geyserite"
+			}
+		},
+		"fluid": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "tfg:fluid/geyser_slurry"
+			}
+		}
+	}
+}

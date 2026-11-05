@@ -1,0 +1,48 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfg:mapped_rivulet",
+  "config": {
+    "states": [
+      {
+        "replace": "tfc:rock/raw/andesite",
+        "with": "tfc:rock/magma/andesite"
+      },
+      {
+        "replace": "tfc:rock/raw/dacite",
+        "with": "tfc:rock/magma/dacite"
+      },
+      {
+        "replace": "tfc:rock/raw/basalt",
+        "with": "tfc:rock/magma/basalt"
+      },
+      {
+        "replace": "tfc:rock/raw/rhyolite",
+        "with": "tfc:rock/magma/rhyolite"
+      },
+      {
+        "replace": "minecraft:tuff",
+        "with": "tfc:rock/magma/andesite"
+      },
+      {
+        "replace": "tfc:rock/hardened/andesite",
+        "with": "tfc:rock/magma/andesite"
+      },
+      {
+        "replace": "tfc:rock/hardened/dacite",
+        "with": "tfc:rock/magma/dacite"
+      },
+      {
+        "replace": "tfc:rock/hardened/basalt",
+        "with": "tfc:rock/magma/basalt"
+      },
+      {
+        "replace": "tfc:rock/hardened/rhyolite",
+        "with": "tfc:rock/magma/rhyolite"
+      },
+      {
+        "replace": "tfg:rock/hardened_tuff",
+        "with": "tfc:rock/magma/andesite"
+      }
+    ]
+  }
+}

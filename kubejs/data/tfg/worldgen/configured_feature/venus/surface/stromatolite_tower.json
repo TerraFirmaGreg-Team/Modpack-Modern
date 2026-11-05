@@ -52,7 +52,7 @@
 			"placement": [
 				{
 					"type": "minecraft:heightmap",
-					"heightmap": "WORLD_SURFACE"
+					"heightmap": "OCEAN_FLOOR_WG"
 				},
 				{
 					"type": "minecraft:block_predicate_filter",
@@ -67,6 +67,11 @@
 							"tfg:rock/raw/stromatolite"
 						]
 					}
+				},
+				{
+					"type": "minecraft:random_offset",
+					"y_spread": 1,
+					"xz_spread": 0
 				}
 			]
 		},

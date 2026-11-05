@@ -1,8 +1,102 @@
 # Changelog
 
-## Unreleased
 ### Changes
+- Ceramic Circuit Board have different tiers so player can understand easily which one they can craft @TomPlop
+- Change Butraldehyde circuit to 5 @TomPlop
+- Lower the energy cost of Garnet-Yttrium Line @TomPlop
+- Added a calcite + clay dust recipe for liquid concrete (#5238) @lysteryale
+- Added snow bricks and ice bricks (#5235) @Pyritie
+- Added craftable powder snow @Pyritie
+- Added heating and casting for wax, and another way to make medicine powders that's possible in the Beneath (#5268) @Pyritie
+- Also added heating and casting for electrum, cupronickel, and battery alloy @Pyritie
+- Added the Basic Mechanical Mixer @Pyritie
+- Mechanical pumps can now pull fluids from aqueducts, except for lava @Allmoz @Pyritie
+- Increased the damage the sandworm deals @Pyritie
+- Blue and red steel tongs now have infinite durability (#4665) @Pyritie
 ### Bug fixes
+- Fixed mineshafts sticking out of the sides of mountains @Pyritie
+- Fixed some plants and flowers growing in the wrong elevations (#4994) @Pyritie
+- Fixed another crash when generating chunks that contain a sealed barrel in a structure @Pyritie
+- Fixed an issue with painted firmalife boats allocating a large amount of VRAM @Zippity
+- Fixed duplicate tallow gas burner fuel @Redeix
+- Quest fixes (#5192) @TomPlop
+- Fixed hose pulleys not being able to drain/fill TFC fluid-logged blocks such as plants, loose rocks, stone spikes, etc (#3428) @Allmoz
+- Fixed being able to move water sources via waterlogged plants and a schematicannon @Allmoz
+### Mods
+#### Jellies
+- Plant and Phosphorum Jellies now give 4x the items, since they're only useful for compost generation
+- Certus Jellies now give certus gems instead of the large bud clusters
+- Latex Jellies are renamed to Milk Jellies and their slime ball can be heated and drank as a Beneath source of dairy
+- Feeding troughs can be used to feed and breed Jellies, and deployers can be used to automate their products. They still only produce in their home dimension, though
+
+## [0.13.17] - 26-10-2026
+### Bug fixes
+- Fixed the tar pools beneath biome never spawning raw oil, only the other three @Pyritie
+- Fixed the Auto-Complete Card recipe so it's actually visible @TomPlop
+- Fixed the firepot pot turning everything into rice (#5221) @Pyritie
+- Fixed not being able to hold rclick to put straw on a pit kiln (#5223) @Pyritie
+- Fix brioche dough coming out rotten when using the yeast-based processor recipe @Redeix
+
+## [0.13.16] - 25-10-2026
+### Changes
+- Add recipes to start the Garnet-Yttrium line with Crushed Ores in a CR @TomPlop
+- Auto-Complete Card now requires Paper rather than a Crafting Card @TomPlop
+- Updated the Preservation entry of the field guide with more info about Smoking (#5188) @WiseMack
+- Astikor Carts and the Paving Cart are now immune to cacti (#5189) @Pyritie
+- Added a config option (tfg-server.toml) to enable announcing quests in chat, off by default (#5203) @Pyritie
+- Drastically improved chunk generation speed in the Beneath, Moon, and Mars @Mqrius @Pyritie
+- Camels can now be used with the animal crank and count as a large animal @Pyritie
+- Added repair recipes for bows, crossbows, and crankbows @Pyritie
+- Changed all spawn conditions and growing climates of fruit trees and berry bushes. Small bushes are a little more common, cranberries should be actually findable (and are no longer destroyed by ice), and generally everything is a little more cold tolerant. Check the field guide for more details. If you live somewhere cold, now you have no excuses for bad fruit nutrition! (#5210) @Pyritie
+- Changed many smoke-emitting particle effects to follow the wind direction @Pyritie
+- Added block modification recipes to work with Additional Placements (so now you can rclick your vertical slabs of stone bricks to make them cracked, for example) (#5168) @Redeix
+### Bug fixes
+- Only Turbine Rotors can be inserted in Exhaust Vent @TomPlop
+- Fixed Large Turbine efficiency having a minimum of 100%, sorry SiC-SiC you were goated and no one knew @TomPlop 
+- Fixed firestarters not working when Vivecraft is installed (backport of a TFC fix) (#5113)
+- Fixed being able to cast vanadium steel, ultimet, boron carbide, and tungsten carbide tools and items with TFC molds @Pyritie
+- Fixed not being able to use GT concrete in Domum Ornamentum recipes @Pyritie
+- Fixed some recipes missing from EMI (#5181) @evanbones
+- Fixed not being able to take fluids out of combustion engines using a bucket/drum etc (#5143) @Pyritie
+- Fixed air vortexes not behaving properly with redstone-activated doors @ashleney
+- Fixed being able to move lootr chests with spatial storage/building gadgets @Pyritie
+- Fixed being able to move immovable things with the new matter manipulator @Pyritie
+- Mixing Bio-Diesel with 2-EHN now gives the proper amount of Biodisel @Jeuvke
+- Crafting the SiC-SiC Turbine Rotor is now three times cheaper @TomPlop
+### Mods
+#### TerraFirmaCraft
+- Prevent double high blocks from breaking bedrock.
+- Fix an issue with squid spawning.
+- Fix issues with berry bushes.
+- Fix a rare crash with chunk data.
+- Skip knife damage when scraping makes no progress.
+- Add Jade tooltip for scraping recipes.
+- Fix client desync for loom progress.
+- Misc Entity and AI fixes.
+
+## [0.13.15] - 20-10-2026
+Be sure to check the previous alpha changelogs, as there are a lot of changes: [0.13.11](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.11), [0.13.12](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.12), [0.13.13](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.13)
+### Changes
+- Rotten flesh, spider eyes, and rabbit feet are now compost poisons, and added a stomping barrel/compressor recipe to turn any compost poisons into rotten flesh directly instead of breaking and placing composters @Pyritie
+- Snow layers can no longer form on windmill bearings @Pyritie
+- Vexxed TFG resource pack now also includes an anvil helper texture (#5155) @Patchack
+- Forgot to add this in previous patch notes but Sterling Silver Turbine Rotors have been removed, while Vanadium Turbine Rotors have been added. The recipes for turbine rotors is also simpler, no longer needing screws if you use a forming press. @TomPlop
+- Increased the amount of chorus flowers you get from the electric greenhouse @Pyritie
+- Uncraftable workstations are no longer visible in EMI @evanbones
+### Bug fixes
+- Fixed TFC melting sometimes resulting in 1mB of unknown @TomPlop
+- Possibly fixed slimes spawning on the surface when TFC Caelum is installed @Pyritie
+- Fixed GT machines crafting removed removed vanilla items @evanbones
+
+## [0.13.14] - 19-10-2026
+Be sure to check the previous alpha changelogs, as there are a lot of changes: [0.13.11](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.11), [0.13.12](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.12), [0.13.13](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.13)
+### Changes
+- Added another way to craft sodium hydroxide instead of just the TFC way @TomPlop
+### Bug fixes
+- Fixed players and mobs on the moon catching fire during the daytime (#5156) @TomPlop
+- Red and Blue Steel non-electric scythes are back, sorry @TomPlop
+- Fixed crucibles sometimes turning single metals into 1mB of unknown
+- Added a circuit to the heat pump recipe to avoid a collision with fluid regulators (#5157) @TomPlop
 
 ## [0.13.13] - 18-10-2026
 Be sure to check the changelog of the previous two [alpha](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.11) [releases](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.12) too! 

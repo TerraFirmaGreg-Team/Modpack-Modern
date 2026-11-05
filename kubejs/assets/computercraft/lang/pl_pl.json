@@ -75,6 +75,7 @@
 	"gui.computercraft.config.computer_space_limit": "Limit przestrzeni komputerowej (bajty)",
 	"gui.computercraft.config.computer_space_limit.tooltip": "Pojemność dysku komputerów i żółwi podana w bajtach.",
 	"gui.computercraft.config.default_computer_settings": "Domyślne ustawienia komputerów",
+	"gui.computercraft.config.default_computer_settings.tooltip": "Lista domyślnych ustawień systemowych rozdzielona przecinkami, stosowanych na nowych komputerach.\nNa przykład: \"shell.autocomplete=false,lua.autocomplete=false,edit.autocomplete=false\"\nwyłączy całe autouzupełnianie.",
 	"gui.computercraft.config.disabled_generic_methods": "Wyłączone metody generyczne",
 	"gui.computercraft.config.execution": "Wykonywanie",
 	"gui.computercraft.config.execution.computer_threads": "Wątki komputera",

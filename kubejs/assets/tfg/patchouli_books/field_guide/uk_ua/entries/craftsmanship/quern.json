@@ -22,7 +22,7 @@
             "images": [
                 "tfc:textures/gui/book/tutorial/quern_empty.png"
             ],
-            "text": "Наведіть на верхню частину блоку жорен та $(item)$(k:key.use)$(), щоб встановити ручний камінь.",
+            "text": "Наведи на верхню частину блоку жорен та $(item)$(k:key.use)$(), щоб встановити ручний камінь.",
             "border": true
         },
         {
@@ -30,7 +30,7 @@
             "images": [
                 "tfc:textures/gui/book/tutorial/quern_add_item.png"
             ],
-            "text": "Використайте $(item)$(k:key.use)$() по верхній частині ручного каменя, щоб додати предмети.",
+            "text": "Використай $(item)$(k:key.use)$() по верхній частині ручного каменя, щоб додати предмети.",
             "border": true
         },
         {
@@ -38,7 +38,7 @@
             "images": [
                 "tfc:textures/gui/book/tutorial/quern_handle.png"
             ],
-            "text": "Використайте $(item)$(k:key.use)$() по ручці, щоб обертати ручний камінь.",
+            "text": "Використай $(item)$(k:key.use)$() по ручці, щоб обертати ручний камінь.",
             "border": true
         },
         {

@@ -12,6 +12,10 @@
         "ocean_reef",
         "deep_ocean",
         "deep_ocean_trench",
+        "oceanic_volcanic_arc",
+        "ocean_atolls",
+        "deep_ocean_atolls",
+        "ocean_ridge",
         "rain",
         "sangnum_edge",
         "sangnum_plains",
@@ -24,7 +28,16 @@
         "amber_hills",
         "martian_river",
         "martian_mountains",
-        "martian_dune_edge"
+        "martian_dune_edge",
+        "arachnoids",
+        "stromatolite_beach",
+        "fractured_pools",
+        "geysers",
+        "salt_flats",
+        "sulfuric_ravine",
+        "fumaroles",
+        "jagged_tablelands",
+        "scorching_volcanoes"
     ],
     "sounds": [
         {

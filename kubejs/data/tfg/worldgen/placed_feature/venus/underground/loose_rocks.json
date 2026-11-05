@@ -26,7 +26,8 @@
 				"type": "minecraft:matching_blocks",
 				"blocks": [
 					"minecraft:air",
-					"tfg:fluid/semiheavy_ammoniacal_water"
+					"minecraft:lava",
+					"tfg:fluid/sulfur_fumes"
 				]
 			},
 			"direction_of_search": "down",

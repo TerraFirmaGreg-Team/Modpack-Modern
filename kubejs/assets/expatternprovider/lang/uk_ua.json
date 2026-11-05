@@ -191,5 +191,7 @@
 	"wireless_advanced.mode.add": "§bДодати",
 	"wireless_advanced.mode.swapped": "Режим змінено на: %s",
 	"wireless_advanced.mode.use": "§dЗастосувати",
-	"wireless_advanced.port_list": "Збережені з'єднання (%s/%s):"
+	"wireless_advanced.port_list": "Збережені з'єднання (%s/%s):",
+	"wireless_advanced.cleared": "Усі збережені з’єднання очищено",
+	"key.ae2.wireless_ex_crafting_terminal": "Відкрити бездротовий термінал екстреного створення"
 }

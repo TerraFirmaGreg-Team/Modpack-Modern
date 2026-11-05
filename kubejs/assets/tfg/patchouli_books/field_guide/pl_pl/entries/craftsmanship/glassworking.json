@@ -25,7 +25,7 @@
             "anchor": "lime_and_potash",
             "title": "Wapno palone i potaż",
             "recipe": "tfg:smelting/dried_seaweed_to_soda",
-            "text": "$(item)Soda Ash$() or $(item)Saltpeter$() can be used as a source of $(thing)Potash$(). Soda ash is a powder made from heating $(thing)Dried Seaweed$() or $(thing)Kelp$().$(br2)$(item)Lime$() is produced by heating $(item)Flux$().",
+            "text": "$(item)Soda kalcynowana$() lub $(item)sproszkowana saletra potasowa$() mogą służyć jako źródło $(thing)potażu$(). Soda kalcynowana to proszek powstający z pieczenia $(thing)suszonych wodorostów$() lub $(thing)listownicowców$().$(br2)$(item)Wapno palone$() powstaje przez pieczenie $(item)topnika$().",
             "recipe2": "tfg:smelting/lime"
         },
         {

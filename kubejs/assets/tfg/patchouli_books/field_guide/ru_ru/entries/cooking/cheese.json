@@ -27,7 +27,7 @@
     },
     {
       "type": "tfg:multimultiblock",
-      "text": "Стадии созревания головки сыра:\n$(thing)Свежий$() +28 дней -> $(thing)Выдержанный$() +112 дней -> Старинный",
+      "text": "Стадии созревания головки сыра:\n$(thing)Свежий$() +28 дней → $(thing)Выдержанный$() +112 дней → $(thing)Элитный$().",
       "multiblocks": [
         {
           "pattern": [
@@ -72,7 +72,7 @@
     },
     {
       "type": "patchouli:relations",
-      "title": "Дальнейшее чтение",
+      "title": "Читать далее",
       "anchor": "relations",
       "entries": [
         "tfg:cooking/food_and_water",

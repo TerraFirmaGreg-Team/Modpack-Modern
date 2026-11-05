@@ -8,5 +8,9 @@
     "quests.groups.space_age": "Era kosmiczna",
     "quests.groups.interstellar": "Era międzygwiezdna",
     "quests.groups.technological_help": "Pomoc technologiczna",
-    "quests.groups.tips": "Wskazówki"
+    "quests.groups.tips": "Wskazówki",
+    "quests.player_completed_quest": "&e%s&r zakończył zadanie: ",
+    "quests.team_completed_quest": "&e%s&7 [%s]&r zakończył zadanie: ",
+    "quests.player_completed_chapter": "&e%s&r zakończył rozdział zadań: ",
+    "quests.team_completed_chapter": "&e%s&7 [%s]&r zakończył rozdział zadań: "
 }

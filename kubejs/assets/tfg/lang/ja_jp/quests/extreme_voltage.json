@@ -276,11 +276,11 @@
     "quests.extreme_voltage.ostrum_tools.title": "ヨウ化オストラム製ツール",
     "quests.extreme_voltage.ostrum_tools.task": "全てのヨウ化オストラム製ツール",
     "quests.extreme_voltage.ostrum_tools.subtitle": "TFGにおける最も魔術的なもの",
-    "quests.extreme_voltage.ostrum_tools.desc": "&bヨウ化オストラム&r製のツールは万能型です。&eタングステンカーバイド&rほどの採掘速度はありませんが、&a耐久力&rと&e採掘速度&rのバランスが良く、幅広い用途で使える安定した選択肢となります。\n\nまた、現時点で&bヨウ素&rの生産が少し手間に感じても、&6金星&rに進めば、より簡単に大量生産できるようになりますのでご安心ください。\n\nタングステンの金床で自作すれば鍛造ボーナスを付与することができます。",
+    "quests.extreme_voltage.ostrum_tools.desc": "&bヨウ化オストラム&r製のツールは万能型です。&eタングステンカーバイド&rほどの採掘速度はありませんが、&a耐久力&rと&e採掘速度&rのバランスが良く、幅広い用途で使える安定した選択肢となります。\n\nまた、現時点で&bヨウ素&rの生産が少し手間に感じても、&6金星&rに進めば、より簡単に大量生産できるようになりますのでご安心ください。\n\n&aタングステンの金床&rで手作りすれば鍛造ボーナスを付与することができます。",
     "quests.extreme_voltage.tungsten_carbide_tools.title": "タングステンカーバイド製ツール",
     "quests.extreme_voltage.tungsten_carbide_tools.task": "すべてのタングステンカーバイド製ツール",
     "quests.extreme_voltage.tungsten_carbide_tools.subtitle": "まさにこのスピード",
-    "quests.extreme_voltage.tungsten_carbide_tools.desc": "&bタングステンカーバイド製ツール&rは極めて高い&e採掘速度&rを誇る一方で、&a耐久力&rはやや低めであり、この段階では&6タングステン&rの生産がまだ少し手間であるという欠点があります。&bレンチ&rとして使うには速すぎて扱いづらい可能性がありますが、&bドリル&rや&bワイヤーカッター&rとしてならば非常に優れた使い心地を発揮することでしょう。\n\nタングステンの金床で自作すれば鍛造ボーナスを付与することができます。",
+    "quests.extreme_voltage.tungsten_carbide_tools.desc": "&bタングステンカーバイド製ツール&rは極めて高い&e採掘速度&rを誇る一方で、&a耐久力&rはやや低めであり、この段階では&6タングステン&rの生産がまだ少し手間であるという欠点があります。&bレンチ&rとして使うには速すぎて扱いづらい可能性がありますが、&bドリル&rや&bワイヤーカッター&rとしてならば非常に優れた使い心地を発揮することでしょう。\n\n&aタングステンの金床&rで手作りすれば鍛造ボーナスを付与することができます。",
     "quests.extreme_voltage.tungsten_rotor.subtitle": "名前負けしない性能",
     "quests.extreme_voltage.tungsten_rotor.desc": "&b酸化タングステン-ビスマス混合物製タービンローター&rは、名前が長いだけでなく、非常に高い出力を持つ&eタービンローター&rです。とはいえ、作成に時間がかかるうえ、&a耐久性&rが低く、&bタービン効率&rも低いという欠点があります。とはいえ、作成工程自体は比較的複雑ではないため、採用を検討する価値はあります。\n\n&4火星&rに到達したら、、&e核分裂発電&rでの&eタービンローター&rとして使ってみるのをおすすめします。",
     "quests.extreme_voltage.mo_si_b.subtitle": "ナクアダラインより難しいんじゃ？",
@@ -292,5 +292,7 @@
     "quests.extreme_voltage.mars_infinites.desc": "これらは、オストラム線形加速器を使って火星での無限化が可能な資源の一覧です。\n\nなお、核分裂炉の出力によって得られる鉱石の量は変わります。また、プルトニウム燃料棒の完全放置生産を目指す場合は、&bトリチウム水&rを消費するレシピを利用する必要があります。",
     "quests.space_survival.mineral_rich_wool.title": "資源豊富な毛皮",
     "quests.space_survival.mineral_rich_wool.subtitle": "永遠の砂嵐の中で",
-    "quests.space_survival.mineral_rich_wool.desc": "スニッファー、ラプターの両動物は、飼いならすことで毛刈りが可能になります。いずれの動物からも、特殊な毛皮を入手することができます。(デプロイヤーにハサミを持たせることで自動回収もできます。)\n\nEBFでこの毛皮を製錬すると、アルカリアースシリケートが入手できます。また、&6バイオAES強化Rポリウレタンフォーム&rの作成にも必要です。"
+    "quests.space_survival.mineral_rich_wool.desc": "スニッファー、ラプターの両動物は、飼いならすことで毛刈りが可能になります。いずれの動物からも、特殊な毛皮を入手することができます。(デプロイヤーにハサミを持たせることで自動回収もできます。)\n\nEBFでこの毛皮を製錬すると、アルカリアースシリケートが入手できます。また、&6バイオAES強化Rポリウレタンフォーム&rの作成にも必要です。",
+    "quests.extreme_voltage.higgs_emitter.subtitle": "人工重力",
+    "quests.extreme_voltage.higgs_emitter.desc": "&6ヒッグス粒子放出機&rを使用すると、その周囲の半径内に人工的な地球の重力を生成することができます。生成される領域の大きさは、マルチブロックのエネルギーハッチのティアに応じて変化します。\n\n&c警告：&r 無重力環境を作成したい場合は、必ず宇宙銃(Zip Gun)を所持していることを確認してください。"
 }

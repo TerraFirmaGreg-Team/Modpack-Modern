@@ -50,6 +50,10 @@ const registerMinecraftItemTags = (event) => {
 	event.add('tfg:stonecutting/crackrack', 'minecraft:nether_brick_fence')
 
 	event.remove('forge:stone', 'minecraft:polished_deepslate')
+
+	event.add('tfc:compost_poisons', 'minecraft:rotten_flesh')
+	event.add('tfc:compost_poisons', 'minecraft:spider_eye')
+	event.add('tfc:compost_poisons', 'minecraft:rabbit_foot')
 }
 
 const registerMinecraftBlockTags = (event) => {

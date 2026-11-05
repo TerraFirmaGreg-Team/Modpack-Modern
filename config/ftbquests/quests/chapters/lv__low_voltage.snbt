@@ -222,7 +222,16 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.low_voltage.lv_battery_preparation.desc}"]
-			icon: "gtceu:battery_alloy_ingot"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "gtceu:battery_alloy_ingot"
+			}
 			id: "6D9D54FAB21EC086"
 			subtitle: "{quests.low_voltage.lv_battery_preparation.subtitle}"
 			tasks: [
@@ -2239,6 +2248,30 @@
 			title: "{quests.low_voltage.electric_flask.title}"
 			x: -6.5d
 			y: 19.0d
+		}
+		{
+			dependencies: ["7FA1525D681C4B4A"]
+			description: ["{quests.low_voltage.spool.desc}"]
+			icon: "gtcables:spool"
+			id: "557E63D456849EDC"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.low_voltage.spool.subtitle}"
+			tasks: [
+				{
+					id: "0335C5FB69A9BC64"
+					item: "gtcables:spool"
+					type: "item"
+				}
+				{
+					id: "2C1E414359C772B7"
+					item: "gtcables:connector"
+					type: "item"
+				}
+			]
+			title: "{quests.low_voltage.spool.title}"
+			x: -2.0d
+			y: -8.0d
 		}
 	]
 	subtitle: ["{quests.low_voltage.subtitle}"]

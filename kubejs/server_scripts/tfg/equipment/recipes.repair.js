@@ -76,6 +76,11 @@ function registerTFGRepairRecipes(event) {
 		{ item: "ad_astra:netherite_space_pants", material: "gtceu:repair_kit_tungsten_carbide" },
 		{ item: "ad_astra:netherite_space_boots", material: "gtceu:repair_kit_tungsten_carbide" },
 
+		{ item: "ad_astra:netherite_space_helmet", material: "gtceu:repair_kit_ostrum_iodide" },
+		{ item: "ad_astra:netherite_space_suit", material: "gtceu:repair_kit_ostrum_iodide" },
+		{ item: "ad_astra:netherite_space_pants", material: "gtceu:repair_kit_ostrum_iodide" },
+		{ item: "ad_astra:netherite_space_boots", material: "gtceu:repair_kit_ostrum_iodide" },
+
 		{ item: "tfcambiental:wool_hat", material: "tfc:wool_cloth" },
 		{ item: "tfcambiental:wool_sweater", material: "tfc:wool_cloth" },
 		{ item: "tfcambiental:wool_pants", material: "tfc:wool_cloth" },
@@ -115,12 +120,15 @@ function registerTFGRepairRecipes(event) {
 		{ item: "tfc_textile:red_elk_pants", material: "species:ghoul_tongue" },
 		{ item: "tfc_textile:red_elk_boots", material: "species:ghoul_tongue" },
 
-		{ item: "hangglider:reinforced_hang_glider", material: "sns:reinforced_fabric" }
+		{ item: "hangglider:reinforced_hang_glider", material: "sns:reinforced_fabric" },
+		{ item: "minecraft:crossbow", material: "gtceu:repair_kit_wrought_iron" },
+		{ item: "species:crankbow", material: "gtceu:repair_kit_wrought_iron" }
 	]
 
 	const SPECIAL_TAG_REPAIRS = [
 		{ item: "hangglider:hang_glider", tag: "forge:cloth" },
-		{ item: "hangglider:reinforced_hang_glider", tag: "tfg:lightweight_cloth" }
+		{ item: "hangglider:reinforced_hang_glider", tag: "tfg:lightweight_cloth" },
+		{ item: "minecraft:bow", tag: "forge:string" }
 	]
 
 	repairColoredSteel('gtceu', 'red_steel');
@@ -309,7 +317,7 @@ function registerTFGRepairRecipes(event) {
 
 	// Tongs
 	global.TFC_METALS.forEach(metal => {
-		if (metal === "cast_iron")
+		if (metal === "cast_iron" || metal === "red_steel" || metal === "blue_steel")
 			return;
 
 		event.custom({

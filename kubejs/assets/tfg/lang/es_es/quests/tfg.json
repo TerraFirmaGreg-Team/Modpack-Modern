@@ -1,12 +1,12 @@
 {
-    "quests.tfg": "TerraFirmaGreg - Modern",
-    "quests.tfg.subtitle": "Bienvenid@ a TerraFirmaGreg!",
-    "quests.tfg.welcome.title": "Bienvenid@ a TerraFirmaGreg!",
-    "quests.tfg.welcome.subtitle": "Modpack de Supervivencia como debería haber sido",
-    "quests.tfg.welcome.desc": "Gracias por comenzar en TerraFirmaGreg Modern!\n\nEn este modpack, tendrás la tarea de tomar el control de la naturaleza salvaje y hacerla un paraíso industrial. Inicia desde un humilde comienzo cogiendo rocas, y finaliza atravesando el espacio interestelar!",
+    "quests.tfg": "¡Bienvenid@ a TerraFirmaGreg!",
+    "quests.tfg.subtitle": "Información sobre ciertos mods y el modpack en sí mismo.",
+    "quests.tfg.welcome.title": "¡Bienvenid@ a TerraFirmaGreg!",
+    "quests.tfg.welcome.subtitle": "Modpack de supervivencia tal y como debería haber sido.",
+    "quests.tfg.welcome.desc": "¡Gracias por comenzar en TerraFirmaGreg Modern!\n\nEn este modpack, tendrás la tarea de tomar el control de la naturaleza salvaje y convertirla en un paraíso industrial. ¡Comienza desde un humilde origen recogiendo rocas, y acaba mientras atraviesas el espacio interestelar!",
     "quests.tfg.create_team.title": "¿Cómo crear un equipo?",
     "quests.tfg.create_team.subtitle": "¿Juegas con amigos?",
-    "quests.tfg.create_team.desc": "Puedes crear un equipo para completar misiones juntos. Para hacerlo, abre tu inventario, luego en la esquina superior izquierda selecciona el botón donde hay 3 personas coloridas, luego una interfaz se abrirá en la cual puedes crear un equipo. Dale click al botón §aCreate a team§r, luego dale un nombre y posiblemente otros parámetros, y luego de crear un equipo con éxito, puedes invitar otros jugadores a este usando el botón de más en el circulo verde en la esquina superior derecha. Desde este punto, tus misiones serán sincronizadas y cualquier miembro del equipo será capaz de completarlas. ¡Buena suerte!",
+    "quests.tfg.create_team.desc": "Puedes crear un equipo para completar misiones juntos. Para hacerlo, abre tu inventario, y luego en la esquina superior izquierda selecciona el botón donde hay 3 personas coloridas, luego una interfaz se abrirá en la cual podrás crear un equipo. Dale click al botón §aCreate a team§r, luego dale un nombre y posiblemente otros parámetros, y tras crear un equipo correctamente, puedes invitar otros jugadores a este usando el botón de más en el circulo verde en la esquina superior derecha. Desde este punto, tus misiones serán sincronizadas y cualquier miembro del equipo será capaz de completarlas. ¡Buena suerte!",
     "quests.tfg.capture_territory.title": "¿Cómo capturar territorio?",
     "quests.tfg.capture_territory.subtitle": "Y cómo cargar chunks en tu territorio",
     "quests.tfg.capture_territory.desc": "Si juegas en un servidor, querrás reclamar tu territorio para que otros jugadores no interfieran. Usa la tecla de Open Claims (\"Ctrl+M\" por defecto) para abrir la pestaña, luego haz click izquierdo para reclamar un chunk y click derecho para abandonarlo.\n\nThere is a limit to this, so you can't claim everything. You can shift-left-click on a chunk to forceload (aka \"chunk load\") it, and shift-right-click to un-forceload it. Claiming chunks will include your whole team, if you're using one.",
@@ -16,5 +16,8 @@
     "quests.tfg.field_guide.subtitle": "¿Tengo que seguir leyendo?",
     "quests.tfg.field_guide.desc": "Estas misiones siguen en desarrollo, y seguimos trabajando en mejorarlas! Montones de información sobre mecánicas específicas se encuentran en tu Guía de Campo, accesible através de la pestaña del libro tab en tu inventario.\n\nRecuerda que JEI y la Guía de Campo son tus amigos, ya que no todo estará explícito en las misiones.",
     "quests.tfg.books_again.title": "¿Necesitas los libros de nuevo?",
-    "quests.tfg.books_again.desc": "Aquí hay una misión repetible si quieres copias físicas del libro de misiones y la Guía de Campo de nuevo."
+    "quests.tfg.books_again.desc": "Aquí hay una misión repetible si quieres copias físicas del libro de misiones y la Guía de Campo de nuevo.",
+    "quests.tfg.optional_mods.title": "Mods Opcionales",
+    "quests.tfg.optional_mods.subtitle": "Personalizar Experiencia",
+    "quests.tfg.optional_mods.desc": "¡Si quieres añadir más contenido a tu modpack, quizás te interese nuestra lista de &dmods opcionales&r!\n\nEstos son mods que solo funcionan para ciertas configuraciones de ordenadores, que añadirían demasiada sobrecarga si fuesen añadidos para todos, o que son demasiado de nicho para ser incluidos por defecto.\n\nPor favor, sed conscientes de que estos mods o su compatibilidad no están garantizados por el equipo de desarrollo de TFG, así que pueden dejar de funcionar en cualquier momento.\n\nPulsa la imagen del planeta justo al lado de la misión para abrir la lista de mods."
 }

@@ -76,6 +76,7 @@ ServerEvents.tags('block', event => {
 	registerFirmaLifeBlockTags(event)
 	registerFowlPlayBlockTags(event)
 	registerGTCEUBlockTags(event)
+	registerGTCablesBlockTags(event)
 	registerMinecraftBlockTags(event)
 	registerRailWaysBlockTags(event)
 	registerRealmRpgBlockTags(event)
@@ -95,6 +96,7 @@ ServerEvents.tags('block', event => {
 ServerEvents.tags('fluid', event => {
 	registerAFCFluidTags(event)
 	registerAdAstraFluidTags(event)
+	registerAliencraftFluidTags(event)
 	registerCreateFluidTags(event)
 	registerCreateAdditionsFluidTags(event)
 	registerCreateSteamPoweredFluidTags(event)
@@ -136,6 +138,7 @@ ServerEvents.tags('worldgen/biome', event => {
 ServerEvents.tags('entity_type', event => {
 	registerFowlPlayEntityTags(event)
 	registerJelliesEntityTags(event)
+	registerOpposingForceEntityTags(event);
 	registerTFGEntityTypeTags(event)
 	registerWABEntityTypeTags(event)
 })
@@ -177,6 +180,7 @@ TFCEvents.data(event => {
 	registerTFCDataForTFG(event)
 	registerTFCDataForWaterFlasks(event)
 	registerTFCDataForRailways(event)
+	registerJelliesData(event)
 	registerWABData(event)
 	registerSpeciesData(event)
 })
@@ -264,6 +268,7 @@ ServerEvents.recipes(event => {
 	registerGreateRecipes(event)
 	registerGTCEURecipes(event);
 	registerGTCEUTerminalRecipes(event)
+	registerGTCablesRecipes(event)
 	registerGTModernUtilitiesRecipes(event)
 	registerHandGliderRecipes(event)
 	registerHotOrNotRecipes(event)

@@ -44,12 +44,6 @@ const gasBurnerFuels = [
 	},
 	// ========== VERY HOT ============
 	{
-		fluid: 'tfc:tallow',
-		qty: 10,
-		duration: 100,
-		temp: $Heat.VERY_HOT.getMin()
-	},
-	{
 		fluid: '#tfc:alcohols',
 		qty: 10,
 		duration: 100,

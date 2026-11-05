@@ -24,6 +24,7 @@ StartupEvents.registry('block', event => {
 
 BlockEvents.modification(event => {
 	registerAdAstraBlockModifications(event)
+	registerAliencraftBlockModification(event)
 	registerBeneathBlockModifications(event)
 	registerSpeciesBlockModifications(event)
 	registerMinecraftBlockModifications(event)
@@ -39,6 +40,7 @@ ItemEvents.modification(event => {
     registerSNSItemModifications(event)
 	registerSpeciesItemModifications(event)
 	registerTFGItemModifications(event)
+	registerTFCHotOrNotItemModifications(event)
 })
 
 StartupEvents.registry('fluid', event => {

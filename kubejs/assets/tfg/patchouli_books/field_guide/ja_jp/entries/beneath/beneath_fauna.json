@@ -1,36 +1,36 @@
 {
-	"name": "Beneath Fauna",
+	"name": "深界の動物",
 	"category": "tfg:beneath",
 	"icon": "tfc:textures/item/food/pork.png",
 	"pages": [
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "Life exists, deep below! There's quite a lot of life in the Beneath, some friendly, some foe.$(br2)This entry lists the more interesting creatures you can find.$(br)"
+			"text": "生命は地下深くにも存在します！深界には実に多くの生命体がおり、友好的なものもいれば、敵対的なものもいます。$(br2)この項目では、深界で見つけることができる特に興味深い生物を紹介します。$(br)"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)Passive$()$(li2)$(l:beneath/beneath_fauna#axolotl)Axolotl$()$(li2)$(l:beneath/beneath_fauna#frog)Frog$()$(li2)$(l:beneath/beneath_fauna#mammutilation)Mammutilation$()$(li2)$(l:beneath/beneath_fauna#red_elk)Red Elk$()$(li2)$(l:beneath/beneath_fauna#zombie_horse)Zombie Horse$()$(li)$(bold)$(l:agriculture/jellies)Jellies$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)Ice$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)Plant$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)Glowberry$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)Spring$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)Lava$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)Biotite$()$(li2)$(l:beneath/beneath_fauna#latex_jellie)Latex$()$(br)$(o)(Continued on next page...)$()"
+			"text": "$(li)$(bold)友好的$()$(li2)$(l:beneath/beneath_fauna#axolotl)ウーパールーパー$()$(li2)$(l:beneath/beneath_fauna#frog)カエル$()$(li2)$(l:beneath/beneath_fauna#mammutilation)Mammutilation$()$(li2)$(l:beneath/beneath_fauna#red_elk)アカゲシカ$()$(li2)$(l:beneath/beneath_fauna#zombie_horse)ゾンビホース$()$(li)$(bold)$(l:agriculture/jellies)ジェリー$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)アイス$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)プラント$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)グロウベリー$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)温泉$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)マグマ$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)黒雲母$()$(li2)$(l:beneath/beneath_fauna#milk_jellie)ミルク$()$(br)$(o)(次のページに続く…)$()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)Hostile$()$(li2)$(l:beneath/beneath_fauna#crocodile)Crocodile$()$(li2)$(l:beneath/beneath_fauna#piglin)Piglin$()$(li2)$(l:beneath/beneath_fauna#phantom)Phantom$()$(li2)$(l:beneath/beneath_fauna#kaolin_klayze)Kaolin Klayze$()$(li2)$(l:beneath/beneath_fauna#graphite_glayze)Graphite Glayze$()$(li2)$(l:beneath/beneath_fauna#cliff_hanger)Cliff Hanger$()$(li2)$(l:beneath/beneath_fauna#leaf_hanger)Leaf Hanger$()$(li2)$(l:beneath/beneath_fauna#endermen)Endermen$()$(li2)$(l:beneath/beneath_fauna#spectre)Spectre$()$(li2)$(l:beneath/beneath_fauna#wicked)Wicked$()$(li2)$(l:beneath/beneath_fauna#ghoul)Ghoul$()$(li2)$(l:beneath/beneath_fauna#bewereager)Bewereager$()"
+			"text": "$(li)$(bold)敵対的$()$(li2)$(l:beneath/beneath_fauna#crocodile)ワニ$()$(li2)$(l:beneath/beneath_fauna#piglin)ピグリン$()$(li2)$(l:beneath/beneath_fauna#phantom)ファントム$()$(li2)$(l:beneath/beneath_fauna#kaolin_klayze)カオリンクレイズ$()$(li2)$(l:beneath/beneath_fauna#graphite_glayze)黒鉛グレイズ$()$(li2)$(l:beneath/beneath_fauna#cliff_hanger)クリフハンガー$()$(li2)$(l:beneath/beneath_fauna#leaf_hanger)リーフハンガー$()$(li2)$(l:beneath/beneath_fauna#endermen)エンダーマン類$()$(li2)$(l:beneath/beneath_fauna#spectre)スペクター$()$(li2)$(l:beneath/beneath_fauna#wicked)Wicked$()$(li2)$(l:beneath/beneath_fauna#ghoul)グール$()$(li2)$(l:beneath/beneath_fauna#bewereager)ビウェレイガー$()"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "minecraft:axolotl",
 			"scale": 0.5,
-			"name": "Axolotl",
+			"name": "ウーパールーパー",
 			"anchor": "axolotl",
-			"text": "$(thing)Axolotls$() can be found in the top and middle layers, usually swimming around in pools of water."
+			"text": "$(thing)ウーパールーパー$()は、上層部や中層部に生息しており、たいていは水たまりの中を泳ぎ回っています。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:frog",
 			"scale": 1,
-			"name": "Frog",
+			"name": "カエル",
 			"anchor": "frog",
-			"text": "$(thing)Frogs$() can be found in the top and middle layers. They can be tamed and eaten."
+			"text": "$(thing)カエル$()は、最上層と中層に生息しています。飼いならすことも、食べることもできます。"
 		},
 		{
 			"type": "patchouli:entity",
@@ -38,23 +38,23 @@
 			"scale": 0.5,
 			"name": "Mammutilation",
 			"anchor": "mammutilation",
-			"text": "$(thing)Mammutilations$() are undead Mammoths. You can put them out of their misery for some $(item)Wool$()."
+			"text": "$(thing)Mammutilations$()はアンデッド化したマンモスです。$(item)羊毛$()を得るために彼らを苦痛から解放することができます。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "beneath:red_elk",
 			"scale": 0.7,
-			"name": "Red Elk",
+			"name": "アカゲジカ",
 			"anchor": "red_elk",
-			"text": "$(thing)Red Elk$() are found near the bottom, usually swimming around in lava. They can be slain for $(item)Lavaproof Hides$()."
+			"text": "$(thing)アカゲジカ$()は、底付近に生息しており、たいていは溶岩の中を泳ぎ回っています。これを倒すと、$(item)耐火毛皮$()を入手できます。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "minecraft:zombie_horse",
 			"scale": 0.7,
-			"name": "Zombie Horse",
+			"name": "ゾンビホース",
 			"anchor": "zombie_horse",
-			"text": "$(thing)Zombie Horses$() can't be tamed or ridden, but they can pull an $(item)Animal Crank$()."
+			"text": "$(thing)ゾンビホース$() は飼いならしたり乗ったりすることはできませんが、 $(item)アニマルクランク$()を回すことができます。"
 		},
 		{
 			"type": "patchouli:entity",
@@ -62,7 +62,7 @@
 			"scale": 0.6,
 			"name": "アイスジェリー",
 			"anchor": "ice_jellie",
-			"text": "$(thing)Ice$() $(l:agriculture/jellies)Jellies$() are found in the $(thing)Salt Caves$() biome. They cool down nearby players."
+			"text": "$(thing)Ice$() $(l:agriculture/jellies)Jelly$() は、$(thing)塩の洞窟$() バイオームに生息しています。彼らは、近くにいるプレイヤーの体温を下げてくれます。"
 		},
 		{
 			"type": "patchouli:entity",
@@ -70,7 +70,7 @@
 			"scale": 0.6,
 			"name": "プラントジェリー",
 			"anchor": "plant_jellie",
-			"text": "$(thing)Plant$() $(l:agriculture/jellies)Jellies$() are found in the $(thing)Muggy Bog$() and $(thing)Thorny Grove$() biomes. Their slime balls can be used as $(thing)Green$() compost."
+			"text": "$(thing)Plant$() $(l:agriculture/jellies)Jelly$() は、$(thing)泥だらけの沼地$() および $(thing)茨の木立$() バイオームに生息しています。そのスライムボールは、堆肥の$(thing)グリーン材$() として使用できます。"
 		},
 		{
 			"type": "patchouli:entity",
@@ -78,7 +78,7 @@
 			"scale": 0.6,
 			"name": "グロウベリージェリー",
 			"anchor": "glowberry_jellie",
-			"text": "$(thing)Glowberry$() $(l:agriculture/jellies)Jellies$() are found in the $(thing)Lush Hollow$() biome. Their slime balls can be boiled into $(item)Sugar$()."
+			"text": "$(thing)Glowberry$() $(l:agriculture/jellies)Jelly$()は、$(thing)繁茂した空洞$()バイオームに生息しています。そのスライムボールは、煮沸することで$(item)砂糖$()に加工できます。"
 		},
 		{
 			"type": "patchouli:entity",
@@ -86,7 +86,7 @@
 			"scale": 0.6,
 			"name": "温泉ジェリー",
 			"anchor": "spring_jellie",
-			"text": "$(thing)Spring$() $(l:agriculture/jellies)Jellies$() are found in the $(thing)Geothermal Springs$() biome. Their slime balls are a renewable source of $(item)Spring Water$()."
+			"text": "$(thing)Spring$() $(l:agriculture/jellies)Jelly$() は、$(thing)熱水泉$() バイオームに生息しています。そのスライムボールは、$(item)温泉水$() の無限供給源になります。"
 		},
 		{
 			"type": "patchouli:entity",
@@ -94,7 +94,7 @@
 			"scale": 0.6,
 			"name": "黒雲母ジェリー",
 			"anchor": "biotite_jellie",
-			"text": "$(thing)Biotite$() $(l:agriculture/jellies)Jellies$() are found in the bottom layer. Their slime balls are a renewable source of $(item)Potassium$(), $(item)Magnesium$(), and $(item)Fluorine$()."
+			"text": "$(thing)Biotite$() $(l:agriculture/jellies)Jelly$()は最下層に生息しています。そのスライムボールは、$(item)カリウム$()、$(item)マグネシウム$()、および$(item)フッ素$()の無限供給源になります。"
 		},
 		{
 			"type": "patchouli:entity",
@@ -102,15 +102,15 @@
 			"scale": 0.6,
 			"name": "マグマジェリー",
 			"anchor": "lava_jellie",
-			"text": "$(thing)Lava$() $(l:agriculture/jellies)Jellies$() are found in the bottom layer. They heat up nearby players, which may be useful if you live somewhere cold."
+			"text": "$(thing)Lava$() $(l:agriculture/jellies)Jelly$() は最下層に生息しています。彼らは近くのプレイヤーを温めてくれるため、寒い場所に住んでいる場合には役立つかもしれません。"
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "jellies:latex",
+			"entity": "jellies:milk",
 			"scale": 0.6,
-			"name": "ラテックスジェリー",
-			"anchor": "latex_jellie",
-			"text": "$(thing)Latex$() $(l:agriculture/jellies)Jellies$() can only be bred from a $(thing)Plant Jellie$() and $(thing)Lava Jellie$(). Their slime balls are a source of $(item)Latex$()."
+			"name": "ミルクジェリー",
+			"anchor": "milk_jellie",
+			"text": "$(thing)Milk$() $(l:agriculture/jellies)Jelly$() は、$(thing)Plant Jelly$() と $(thing)Lava Jelly$() を交配させることでのみ誕生させられます。そのスライムボールは、$(item)乳製品$()の供給源となります。"
 		},
 		{
 			"type": "patchouli:entity",
@@ -118,71 +118,71 @@
 			"scale": 0.9,
 			"name": "ピグリン",
 			"anchor": "piglin",
-			"text": "You can find Piglins in almost every biome throughout the Beneath. They can be $(l:beneath/beneath_mechanics#piglins)traded with$() like in vanilla."
+			"text": "ピグリンは、深界全域のほぼすべてのバイオームに生息しています。バニラと同様に、$(l:beneath/beneath_mechanics#piglins)取引する$()ことができます。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:crocodile",
 			"scale": 0.5,
-			"name": "Crocodile",
+			"name": "ワニ",
 			"anchor": "crocodile",
-			"text": "$(thing)Crocodiles$() can be found in the top and middle layers, waiting in ambush!"
+			"text": "$(thing)ワニ$()は、上層部と中層部に潜んで、待ち伏せをしています！"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "minecraft:phantom",
 			"scale": 0.4,
-			"name": "Phantom",
+			"name": "ファントム",
 			"anchor": "phantom",
-			"text": "$(thing)Phantoms$() naturally spawn in the middle and bottom layers, regardless of how much sleep you're getting. They can be turned into $(l:beneath/beneath_mechanics#clothes)Clothing$()."
+			"text": "$(thing)ファントム$()は、睡眠していようがいまいが、自然に中間層や最下層に出現します。その皮膜から$(l:beneath/beneath_mechanics#clothes)衣類$()を作ることができます。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "primitive_creatures:tfc",
 			"scale": 0.8,
-			"name": "Kaolin Klayze",
+			"name": "カオリンクレイズ",
 			"anchor": "kaolin_klayze",
-			"text": "$(thing)Kaolin Klayzes$() can be found in the $(thing)Lush Hollow$() biome, guarding the $(item)Kaolin$()!"
+			"text": "$(thing)カオリンクレイズ$()は、$(thing)繫茂した空洞$()バイオームに生息しており、$(item)カオリン$()を守っています！"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "primitive_creatures:golem_2",
 			"scale": 1,
-			"name": "Graphite Glayze",
+			"name": "黒鉛グレイズ",
 			"anchor": "graphite_glayze",
-			"text": "$(thing)Graphite Glayzes$() can be found in the bottom layers. Careful they don't knock you into lava!"
+			"text": "$(thing)黒鉛グレイズ$()は、最下層に生息しています。溶岩に突き落とされないよう、気をつけてください！"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "species:cliff_hanger",
 			"scale": 0.7,
-			"name": "Cliff Hanger",
+			"name": "クリフハンガー",
 			"anchor": "cliff_hanger",
-			"text": "$(thing)Cliff Hangers$() can be found on various ceilings, hooking players who walk below them. Hit them with a ranged attack to make them let go!"
+			"text": "$(thing)クリフハンガー$()はいたるところの天井に生息しており、その下を歩くプレイヤーを引っ掛けます。捕まった時は、遠距離攻撃で逃れましょう！"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "species:leaf_hanger",
 			"scale": 0.7,
-			"name": "Leaf Hanger",
+			"name": "リーフハンガー",
 			"anchor": "leaf_hanger",
-			"text": "$(thing)Leaf Hangers$() can be found in pools of Salt Water, hooking players who walk into their trap. Hit them to make them let go of you!"
+			"text": "$(thing)リーフハンガー$()は、塩水のプールに生息しており、罠に近づいたプレイヤーを引っ掛けます。捕まった時は、攻撃して逃れましょう！"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "endermanoverhaul:nether_wastes_enderman",
 			"scale": 1,
-			"name": "Endermen",
+			"name": "エンダーマン類",
 			"anchor": "endermen",
-			"text": "Various species of $(thing)Endermen$() appear all over. The $(item)mushroom$() one is completely passive, while the others are all neutral."
+			"text": "バラエティ豊かな$(thing)エンダーマン$()が様々な場所に生息しています。$(item)キノコエンダーマン$()だけは完全に友好的ですが、それ以外のものはすべて中立です。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "species:spectre",
 			"scale": 0.7,
-			"name": "Spectres",
+			"name": "スペクター",
 			"anchor": "spectre",
-			"text": "$(thing)Spectres$() are ghosts of adventurers past, and come in three varieties. They are a source of $(item)Feathers$()."
+			"text": "$(thing)スペクター$()は、かつての冒険者たちの亡霊であり、3種類存在します。$(item)羽$()の入手源となります。"
 		},
 		{
 			"type": "patchouli:entity",
@@ -190,27 +190,27 @@
 			"scale": 0.9,
 			"name": "Wicked",
 			"anchor": "wicked",
-			"text": "The $(thing)Wicked$() is a ghost that can posess nearby mobs to give them buffs! If no mob is nearby, they use a ranged attack. They drop wax."
+			"text": "$(thing)Wicked$()は、近くのモブに取り憑いてバフを与えることができる幽霊です！近くにモブがいない場合は、遠距離攻撃を行います。ワックスをドロップします。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "species:ghoul",
 			"scale": 0.7,
-			"name": "Ghoul",
+			"name": "グール",
 			"anchor": "ghoul",
-			"text": "$(thing)Ghouls$() are blind monsters that use echolocation to find prey. They are neutral unless you're within their 'scan' radius!"
+			"text": "$(thing)グール$()は、エコーロケーションを使って獲物を探す、目が見えないモンスターです。あなたがその「探知」範囲内にいない限り、彼らは中立です！"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "species:bewereager",
 			"scale": 0.8,
-			"name": "Bewereager",
+			"name": "ビウェレイガー",
 			"anchor": "bewereager",
-			"text": "The $(thing)Bewereager$() is an aggressive monster that can also jump up to you! It buffs itself and attacks in short bursts."
+			"text": "$(thing)ビウェレイガー$()は、攻撃的なモンスターで、プレイヤーに向かって飛びかかってくることもあります！自身にバフをかけ、短時間の集中攻撃を仕掛けてきます。"
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "さらに読む",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/wild_animals",

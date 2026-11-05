@@ -340,5 +340,6 @@
   "tooltip.framedblocks.y_slope": "Блок використовує %s граней для вертикальних похилих граней.",
   "tooltip.framedblocks.y_slope.horizontal": "horizontal",
   "tooltip.framedblocks.y_slope.toggle": "Ударте рамним ключем, щоб перемкнутися на %s граней",
-  "tooltip.framedblocks.y_slope.vertical": "vertical"
+  "tooltip.framedblocks.y_slope.vertical": "vertical",
+  "block.framedblocks.framed_torch": "Каркас: Смолоскип"
 }

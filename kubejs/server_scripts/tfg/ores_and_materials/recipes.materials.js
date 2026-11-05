@@ -259,7 +259,8 @@ function processTurbineBlade(event, material) {
 	const materialName = material.getName();
 	global.modifyRecipe(event, `gtceu:forming_press/press_${materialName}_turbine_rotor`, {
 		newId: `tfg:press_${materialName}_turbine_blade`,
-		removeItemInputs: [`forge:screws/${materialName}`]
+		removeItemInputs: [`forge:screws/${materialName}`],
+		eut: GTValues.VA[GTValues.MV]
 	});
 }
 

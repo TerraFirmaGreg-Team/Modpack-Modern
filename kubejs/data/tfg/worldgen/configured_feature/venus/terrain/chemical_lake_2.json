@@ -1,0 +1,18 @@
+{
+	"type": "tfg:large_lake",
+	"config": {
+		"is_encased": false,
+		"barrier": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "tfg:rock/aragonite"
+			}
+		},
+		"fluid": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "createaddition:seed_oil"
+			}
+		}
+	}
+}

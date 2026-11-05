@@ -280,12 +280,20 @@
 	"item.sophisticatedcore.storage.tooltip.shift": "左 Shift",
 	"item.sophisticatedcore.storage.tooltip.stack_multiplier": "堆疊數量倍率：%s",
 	"item.sophisticatedcore.storage.tooltip.upgrades": "升級",
-	"item.sophisticatedcore.xp_bucket": "經驗桶",
 	"key.category.sophisticatedcore.main": "Sophisticated 系列模組",
 	"key.sophisticatedcore.sort": "整理儲存空間／背包",
 	"key.sophisticatedcore.transfer_to_inventory": "移到物品欄",
 	"key.sophisticatedcore.transfer_to_storage": "移到儲存空間",
 	"upgrade_group.sophisticatedcore.cooking_upgrades": "熔爐升級",
 	"upgrade_group.sophisticatedcore.jukebox_upgrades": "唱片機升級",
-	"upgrade_group.sophisticatedcore.stack_upgrades": "堆疊升級"
+	"upgrade_group.sophisticatedcore.stack_upgrades": "堆疊升級",
+	"itemGroup.sophisticatedcore": "精緻核心",
+	"gui.sophisticatedcore.status.ender_linker.already_linked": "儲存已連結",
+	"gui.sophisticatedcore.status.ender_linker.unsupported_endpoint": "無法連結此儲存",
+	"gui.sophisticatedcore.status.ender_linker.incompatible_endpoint": "此儲存與這個連結儲存群組不相容",
+	"gui.sophisticatedcore.status.ender_linker.endpoint_has_contents": "儲存內有物品",
+	"item.sophisticatedcore.storage.tooltip.linked_storage_group": "連結儲存群組：%s",
+	"item.sophisticatedcore.storage.tooltip.linked_storage_endpoint": "連結儲存端點：%s",
+	"tooltip.sophisticatedcore.linked_storage.primary": "主要連結",
+	"tooltip.sophisticatedcore.linked_storage.secondary": "已連結"
 }

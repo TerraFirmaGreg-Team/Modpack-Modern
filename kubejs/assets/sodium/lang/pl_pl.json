@@ -30,6 +30,7 @@
 	"sodium.options.entity_distance.tooltip": "Określa, jak daleko od gracza mogą być renderowane byty. Wyższe wartości zwiększają zasięg ich renderowania kosztem liczby klatek na sekundę.",
 	"sodium.options.entity_shadows.tooltip": "Jeśli włączone, podstawowe cienie będą renderowane pod mobami i innymi bytami.",
 	"sodium.options.fullscreen.tooltip": "Jeśli włączone, gra będzie wyświetlana w trybie pełnoekranowym (Jeśli opcja jest wspierana).",
+	"sodium.options.graphics_quality.tooltip": "Domyślna jakość grafiki kontroluje starsze opcje i jest potrzebna, żeby zachować kompatybilność. Jeśli opcje poniżej są ustawione na \"Domyślna\", będą używać tego ustawienia.",
 	"sodium.options.gui_scale.tooltip": "Ustawia maksymalną skalę interfejsu użytkownika. Wybranie opcji „auto” powoduje, że zawsze używana jest największa dostępna skala.",
 	"sodium.options.leaves_quality.name": "Liście",
 	"sodium.options.leaves_quality.tooltip": "Kontroluje jakość liści.",

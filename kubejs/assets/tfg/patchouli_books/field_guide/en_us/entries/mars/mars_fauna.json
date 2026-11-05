@@ -12,11 +12,11 @@
 			"type": "patchouli:text",
 			"anchor": "index",
 			"title": "Contents",
-			"text": "$(li)$(bold)$(l:mars/mars_fauna#sandworm)The Sandworm$()$(li)$(bold)Domesticatable$()$(li2)$(l:mars/mars_fauna#sniffer)Sniffer$()$(li2)$(l:mars/mars_fauna#wraptor)Wraptor$()$(li2)$(l:mars/mars_fauna#glacian_sheep)Glacian Sheep$()$(li2)$(l:mars/mars_fauna#snatcher)Snatcher$()$(li2)$(l:mars/mars_fauna#charger)Charger$()$(li2)$(l:mars/mars_fauna#soarer)Soarer$()$(li2)$(l:mars/mars_fauna#pentetic_jellie)Pentetic Jellie$()$(br2)$(o)(Continued on next page...)$()"
+			"text": "$(li)$(bold)$(l:mars/mars_fauna#sandworm)The Sandworm$()$(li)$(bold)Domesticatable$()$(li2)$(l:mars/mars_fauna#sniffer)Sniffer$()$(li2)$(l:mars/mars_fauna#wraptor)Wraptor$()$(li2)$(l:mars/mars_fauna#glacian_sheep)Glacian Sheep$()$(li2)$(l:mars/mars_fauna#snatcher)Snatcher$()$(li2)$(l:mars/mars_fauna#charger)Charger$()$(li2)$(l:mars/mars_fauna#soarer)Soarer$()$(li2)$(l:mars/mars_fauna#surfer)Surfer$()$(li2)$(l:mars/mars_fauna#walker)Walker$()$(li2)$(l:mars/mars_fauna#pentetic_jellie)Pentetic Jellie$()$(br2)$(o)(Continued on next page...)$()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)Wild$()$(li2)$(l:mars/mars_fauna#eater)Eater$()$(li2)$(l:mars/mars_fauna#cruncher)Cruncher$()$(li2)$(l:mars/mars_fauna#glider)Glider$()$(li2)$(l:mars/mars_fauna#crusher)Crusher$()$(li2)$(l:mars/mars_fauna#springling)Springling$()$(li2)$(l:mars/mars_fauna#goober)Goober$()$(li2)$(l:mars/mars_fauna#walker)Walker$()$(li2)$(l:mars/mars_fauna#raider)Raider$()$(li2)$(l:mars/mars_fauna#toxlacanth)Toxlacanth$()$(li2)$(l:mars/mars_fauna#stackatick)Stackatick$()$(li)$(bold)Monsters$()$(li2)$(l:mars/mars_fauna#quake)Quake$()$(li2)$(l:mars/mars_fauna#endermen)Endermen$()$(li2)$(l:mars/mars_fauna#skeletal_raptor)Skeletal Raptor$()"
+			"text": "$(li)$(bold)Wild$()$(li2)$(l:mars/mars_fauna#eater)Eater$()$(li2)$(l:mars/mars_fauna#cruncher)Cruncher$()$(li2)$(l:mars/mars_fauna#glider)Glider$()$(li2)$(l:mars/mars_fauna#crusher)Crusher$()$(li2)$(l:mars/mars_fauna#springling)Springling$()$(li2)$(l:mars/mars_fauna#goober)Goober$()$(li2)$(l:mars/mars_fauna#raider)Raider$()$(li2)$(l:mars/mars_fauna#toxlacanth)Toxlacanth$()$(li2)$(l:mars/mars_fauna#stackatick)Stackatick$()$(li)$(bold)Monsters$()$(li2)$(l:mars/mars_fauna#quake)Quake$()$(li2)$(l:mars/mars_fauna#endermen)Endermen$()$(li2)$(l:mars/mars_fauna#skeletal_raptor)Skeletal Raptor$()"
 		},
 		{
 			"type": "patchouli:image",
@@ -129,6 +129,20 @@
 			"text": "Surfers come in a variety of colors."
 		},
 		{
+			"type": "patchouli:text",
+			"title": "Walker",
+			"anchor": "walker",
+			"text": "The gigantic $(thing)Walkers$() inhabit areas above -97°C. They are herbivorous and eat any Mars crop. Once tamed, you can right-click them with a chest to give them cargo space. When equipped with a saddle, they can also carry around up to four passengers."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:walker{NoAI:1b}",
+			"scale": 0.6,
+			"offset": 2.2,
+			"name": " ",
+			"text": ""
+		},
+		{
 			"type": "patchouli:entity",
 			"entity": "jellies:pentetic{NoAI:1b}",
 			"scale": 0.6,
@@ -185,15 +199,6 @@
 			"name": "Goober",
 			"anchor": "goober",
 			"text": "$(thing)Goobers$() are lazy wild animals found above -109°C. They are passive and can be eaten."
-		},
-		{
-			"type": "patchouli:entity",
-			"entity": "wan_ancient_beasts:walker{NoAI:1b}",
-			"scale": 0.6,
-			"offset": 2.2,
-			"name": "Walker",
-			"anchor": "walker",
-			"text": "The gigantic $(thing)Walkers$() inhabit areas above -97°C. They are passive and can be eaten."
 		},
 		{
 			"type": "patchouli:entity",

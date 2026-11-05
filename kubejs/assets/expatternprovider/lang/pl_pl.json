@@ -17,7 +17,7 @@
 	"block.expatternprovider.wireless_connect": "Bezprzewodowy łącznik ME",
 	"chat.ex_pattern_access_terminal.pos": "Dostawca wzoru jest teraz podświetlony na: %s, wymiar: %s (%s bloków)",
 	"chat.pattern_view.error": "Ten wzorzec nie jest obsługiwany przez ExtendedAE, zgłoś go do GitHuba: %s",
-	"chat.wireless.highlight": "Bezprzewodowy łącznik jest teraz podświetlony na: %s, wymiar: %s (%s bloków)",
+	"chat.wireless.highlight": "Bezprzewodowy łącznik jest teraz podświetlony: %s, wymiar: %s (%s bloków)",
 	"chat.wireless_added": "Dodano do listy X: %s, Y: %s, Z: %s",
 	"chat.wireless_advanced_duplicate": "§4Nie można dodać zduplikowanego łącznika",
 	"chat.wireless_advanced_queue_limit": "Nie można dodać więcej niż %s wpisów do kolejki",
@@ -84,7 +84,7 @@
 	"gui.expatternprovider.pattern_modifier.blank": "Puste wzorce",
 	"gui.expatternprovider.pattern_modifier.change": "Zmień tryb",
 	"gui.expatternprovider.pattern_modifier.clear": "Wyczyść",
-	"gui.expatternprovider.pattern_modifier.clear.desc": "Wyczyść zawartość wszystkich wzorców, zamieniając je w puste wzorce",
+	"gui.expatternprovider.pattern_modifier.clear.desc": "Czyści zawartość wszystkich wzorców, zamieniając je w puste wzorce",
 	"gui.expatternprovider.pattern_modifier.clone": "Tryb klonowania",
 	"gui.expatternprovider.pattern_modifier.clone.desc": "Klonuj wzorzec docelowy",
 	"gui.expatternprovider.pattern_modifier.div.desc": "Podziel wartość wejścia i wyjścia przez %s",
@@ -115,7 +115,7 @@
 	"gui.expatternprovider.tag_storage_bus.desc.03": "() = priorytet    * = wieloznacznik",
 	"gui.expatternprovider.tag_storage_bus.tooltip": "Wprowadź tag tutaj",
 	"gui.expatternprovider.tag_storage_bus.whitelist": "Filtr białej listy",
-	"gui.expatternprovider.tank_amount": "%s mW / %s mW",
+	"gui.expatternprovider.tank_amount": "%s mB / %s mB",
 	"gui.expatternprovider.tank_empty": "Pusty",
 	"gui.expatternprovider.threshold_export_bus": "Progowa magistrala eksportowa ME",
 	"gui.expatternprovider.threshold_export_bus.greater": "Pracuje, gdy przekracza próg",
@@ -191,5 +191,7 @@
 	"wireless_advanced.mode.add": "§bDodaj",
 	"wireless_advanced.mode.swapped": "Zmieniono tryb na: %s",
 	"wireless_advanced.mode.use": "§dUżyj",
-	"wireless_advanced.port_list": "Zapisane połączenia (%s/%s):"
+	"wireless_advanced.port_list": "Zapisane połączenia (%s/%s):",
+	"wireless_advanced.cleared": "Wyczyszczono wszystkie zapisane połączenia",
+	"key.ae2.wireless_ex_crafting_terminal": "Otwórz bezprzewodowy rozszerzony terminal rzemieślniczy"
 }

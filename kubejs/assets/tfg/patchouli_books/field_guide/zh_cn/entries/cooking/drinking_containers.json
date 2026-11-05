@@ -75,6 +75,15 @@
                     "text": "∞"
                 },
                 {
+                    "text": "电水壶"
+                },
+                {
+                    "text": "4000"
+                },
+                {
+                    "text": "∞"
+                },
+                {
                     "text": "硅质玻璃瓶"
                 },
                 {
@@ -144,7 +153,7 @@
             "columns": 2,
             "first_column_width": 90,
             "column_width": 72,
-            "row_height": 10,
+            "row_height": 9,
             "left_buffer": 2,
             "top_buffer": 12,
             "draw_background": false
@@ -159,6 +168,12 @@
             "title": "榨汁器",
             "recipe": "beneath:crafting/juicer",
             "text": "$(item)榨汁器$()是一种特殊物品，能把$(thing)水果$()、$(thing)蘑菇$()和$(thing)仙人掌$()中所含的水分提取成可饮用水。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "electric_flask",
+            "item": "tfg:electric_flask",
+            "text": "与$(l:logistics/exploration_gear#digger_helmet)矿工头盔$()类似，$(item)电水壶$()会在你口渴时自动饮用。不同之处在于它适用于任何可饮用的流体！$(br2)它需要充电才能工作，不过即使电量耗尽，你仍然可以手动从中饮用。它还可容纳$(thing)4,000mB$()的流体。"
         },
         {
             "type": "patchouli:relations",

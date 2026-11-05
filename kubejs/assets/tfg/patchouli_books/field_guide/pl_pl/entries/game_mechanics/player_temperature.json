@@ -77,12 +77,12 @@
 			"type": "patchouli:spotlight",
 			"item": "tfg:heat_pump",
 			"anchor": "heat_pump",
-			"text": "Gdy będziesz mógł $(thing)korzystać z elektryczności$(), możesz wytworzyć $(item)pompę ciepła$() - multiblok, który ogrzewa lub chłodzi znacznie większe budynki."
+			"text": "Once you've reached $(thing)MV Circuits$(), you can craft the $(item)Heat Pump$(), a multiblock that will warm up or cool down much larger sized buildings.$(br2)You will also need to insert a Turbine Rotor in the $(item)Exhaust Vent$() so the Heat Pump can run.$(br2)$(o)(Continued on next page...)$()"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:turbine_rotor{GT.PartStats:{Material:\"tfg:silicon_carbide_silicon_carbide\"}},gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:vanadium\"}},gtceu:turbine_rotor{GT.PartStats:{Material:\"tfg:rene_41\"}}",
-			"title": "Czytaj dalej",
+			"title": "Wirnik turbiny",
 			"text": "The $(item)Turbine Rotor$() inserted in your Exhaust Vent will never lose durability, therefore it's a stat you can ignore. On the other hand, the Turbine's $(thing)Power$() will influence the discount you get on the $(thing)EU/t requirement$()."
 		},
 		{
@@ -91,7 +91,7 @@
 		},
 		{
 			"type": "tfg:multimultiblock",
-			"text": "You can expand the Heat Pump up to 10 Heat Pipes if needed!",
+			"text": "W razie potrzeby możesz rozszerzyć pompę ciepła na 10 rur!",
 			"name": " ",
 			"enable_visualize": true,
 			"multiblocks": [
@@ -442,7 +442,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Czytaj dalej",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/climate",

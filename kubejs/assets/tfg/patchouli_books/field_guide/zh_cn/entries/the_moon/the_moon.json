@@ -436,7 +436,7 @@
 			"type": "patchouli:spotlight",
 			"item": "tfg:higgs_emitter",
 			"anchor": "higgs",
-			"text": "$(item)希格斯发射器$()可以制造人工重力，像$(item)热泵$()或$(l:the_moon/the_moon#distributor)可呼吸空气分配器$()一样填满密封区域。区域大小取决于多方块结构能源仓的等级。"
+			"text": "$(item)希格斯发射器$()可以制造人工重力，像$(item)热泵$()或$(l:the_moon/the_moon#distributor)可呼吸空气分配器$()一样填满密封区域。区域大小取决于多方块结构能源仓的等级。如果你想创造零重力环境，请确保随身携带一把$(item)压缩枪$()。"
 		},
 		{
 			"type": "patchouli:spotlight",

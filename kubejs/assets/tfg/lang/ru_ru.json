@@ -1,0 +1,23 @@
+{
+	"tfg.machine.oxygen_distributor.status.restoring": "Восстановление...",
+	"tfg.machine.oxygen_distributor.status.too_wide": "Комната слишком широкая",
+	"tfg.machine.oxygen_distributor.energy": "Использует %s EU/t",
+	"tfg.machine.oxygen_distributor.idle": "Бездействует",
+	"tfg.machine.oxygen_distributor.status.chunk_unloaded": "Комната выгружена",
+	"tfg.machine.oxygen_distributor.active": "Активирован",
+	"tfg.machine.oxygen_distributor.status.breached": "Нарушено",
+	"tfg.machine.oxygen_distributor.status.scanning": "Сканирование...",
+	"tfg.machine.oxygen_distributor.status.no_energy": "Ожидание питания",
+	"block.tfg.oxygen_distributor": "Распределитель воздуха",
+	"tfg.machine.oxygen_distributor.status.scan_limit": "Комната велика для сканирования",
+	"tfg.machine.oxygen_distributor.find_leak": "Поиск утечки",
+	"block.tfg.higgs_emitter": "Гравитационный излучатель Хиггса",
+	"tfg.machine.oxygen_distributor.size": "Размер комнаты: %s блоков",
+	"tfg.machine.oxygen_distributor.fill_suit": "Пополнить кислород в костюме",
+	"tfg.machine.higgs_emitter.radius": "Радиус: %s",
+	"tfg.machine.oxygen_distributor.status.sealed": "Запечатано",
+	"tfg.machine.oxygen_distributor.consumption": "Потребляет %s ",
+	"tfg.machine.oxygen_distributor.status": "Статус: ",
+	"tfg.machine.heat_pump.status.blocked": "Выхлоп заблокирован - тепловой насос должен быть обращён задней стороной в открытый космос",
+	"block.tfg.heat_pump": "Тепловой насос"
+}

@@ -75,6 +75,28 @@ function registerTFGGeneralWorldgenBlockTags(event) {
 	event.add("c:hidden_from_recipe_viewers", "#forge:raw_ore_blocks");
     event.add("tfc:monster_spawns_on", "#forge:raw_ore_blocks");
     event.add("tfc:prospectable", "#forge:raw_ore_blocks");
+	
+    event.add("tfc:monster_spawns_on", "tfg:halite");
+    event.add("tfc:monster_spawns_on", "tfg:hardened_clay");
+    event.add("tfc:monster_spawns_on", "tfg:rock/raw/geyserite");
+    event.add("tfc:monster_spawns_on", "minecraft:calcite");
+    event.add("tfc:monster_spawns_on", "tfg:rock/glauberite");
+    event.add("tfc:monster_spawns_on", "tfg:rock/aragonite");
+
+    event.add("minecraft:animals_spawnable_on", "tfg:halite");
+    event.add("minecraft:animals_spawnable_on", "tfg:hardened_clay");
+    event.add("minecraft:animals_spawnable_on", "tfg:rock/raw/geyserite");
+    event.add("minecraft:animals_spawnable_on", "minecraft:calcite");
+    event.add("minecraft:animals_spawnable_on", "tfg:rock/glauberite");
+    event.add("minecraft:animals_spawnable_on", "tfg:rock/aragonite");
+
+	event.add('forge:stone', 'tfg:halite')
+	event.add('forge:stone', 'tfg:gilsonite')
+	event.add('forge:stone', 'tfg:rock/glauberite')
+	event.add('forge:stone', 'tfg:rock/aragonite')
+	event.add('forge:stone', 'minecraft:calcite')
+	event.add('forge:stone', 'ad_astra:conglomerate')
+	event.add('forge:stone', 'ae2:sky_stone_block')
 
 	// Let GT indicators be covered by snow
 	forEachMaterial((material) => {
@@ -141,4 +163,9 @@ function registerTFGGeneralWorldgenBlockTags(event) {
 	event.add('minecraft:replaceable', 'tfg:pile/volcanic_ash')
 
 	event.add('minecraft:replaceable', '#tfc:loose_rocks')
+	
+	event.add('create:non_movable', 'lootr:lootr_chest')
+	event.add('buildinggadgets2:deny', 'lootr:lootr_chest')
+	event.add('ae2:blacklisted/spatial', 'lootr:lootr_chest')
+	event.add('matter_manipulator:immovable', 'lootr:lootr_chest')
 }

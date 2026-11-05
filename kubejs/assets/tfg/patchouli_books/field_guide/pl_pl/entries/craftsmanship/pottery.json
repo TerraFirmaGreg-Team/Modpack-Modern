@@ -95,7 +95,7 @@
         {
             "type": "tfg:heat_recipe",
             "recipe": "tfc:heating/ingot_mold",
-            "text": "The mold then needs to be fired―like all clay items―to be usable, such as in a $(l:craftsmanship/pit_kiln)Pit Kiln$().$(br2)Once it is fired, molten metal can be poured in. Once the metal has cooled enough, it can be extracted."
+            "text": "Następnie formę trzeba wypalić, jak wszystkie gliniane przedmioty, żeby była użyteczna, na przykład w $(l:craftsmanship/pit_kiln)piecu ziemnym$().$(br2)Po wypaleniu można wlać do niej stopiony metal. Gdy metal wystarczająco ostygnie, można go wyjąć."
         },
         {
             "type": "patchouli:spotlight",

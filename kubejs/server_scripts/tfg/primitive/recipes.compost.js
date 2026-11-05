@@ -5,6 +5,18 @@
  * @param {Internal.RecipesEventJS} event 
  */
 function registerTFGCompostRecipes(event) {
+	
+	// Maybe people will do this instead of just breaking and placing composters
+	event.recipes.firmalife.stomping('tfc:rotten_compost', '#tfc:compost_poisons',
+		'tfc:block/devices/composter/rotten', 'tfg:block/mud/oxisol', 'minecraft:entity.zombie.step')
+		.id('tfg:stomping/rotten_compost')
+
+	event.recipes.gtceu.compressor('tfg:rotten_compost')
+		.itemInputs('#tfc:compost_poisons')
+		.itemOutputs('tfc:rotten_compost')
+		.duration(50)
+		.EUt(4)
+
 	//#region Fertiliser
 	event.recipes.gtceu.mixer('tfg:fertilizer')
 		.itemInputs(
@@ -16,14 +28,14 @@ function registerTFGCompostRecipes(event) {
 		.inputFluids("#tfg:clean_water 1000")
 		.itemOutputs('4x gtceu:fertilizer')
 		.duration(300)
-		.EUt(30)
+		.EUt(GTValues.VHA[GTValues.LV])
 
 	event.recipes.gtceu.mixer('tfg:fertilizer_2')
 		.itemInputs('tfc:compost')
 		.inputFluids('#tfg:clean_water 1000')
 		.itemOutputs('4x gtceu:fertilizer')
 		.duration(300)
-		.EUt(30)
+		.EUt(GTValues.VHA[GTValues.LV])
 
 	event.recipes.gtceu.centrifuge('tfg:gtceu/centrifuge/pure_fertilizers')
 		.itemInputs('8x gtceu:fertilizer')
@@ -35,26 +47,26 @@ function registerTFGCompostRecipes(event) {
 		.itemInputs('1x tfc:pure_nitrogen', '1x tfc:pure_potassium', '1x tfc:pure_phosphorus', ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.Clay, 1))
 		.itemOutputs('8x gtceu:fertilizer')
 		.duration(160)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VHA[GTValues.LV])
 
 	event.recipes.gtceu.mixer('tfg:pure_nitrogen')
 		.itemInputs('#forge:wax')
 		.inputFluids(Fluid.of('gtceu:nitrogen', 4000))
 		.itemOutputs('4x tfc:pure_nitrogen')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VHA[GTValues.LV])
 
 	event.recipes.gtceu.mixer('tfg:pure_potassium')
 		.itemInputs('#forge:wax', '4x gtceu:potassium_dust')
 		.itemOutputs('4x tfc:pure_potassium')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VHA[GTValues.LV])
 	
 	event.recipes.gtceu.mixer('tfg:pure_phosphorus')
 		.itemInputs('#forge:wax', '4x gtceu:phosphorus_dust')
 		.itemOutputs('4x tfc:pure_phosphorus')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VHA[GTValues.LV])
 	//#endregion
 
 	// Humus and compost
@@ -91,7 +103,7 @@ function registerTFGCompostRecipes(event) {
 				.itemInputs(brown, green)
 				.itemOutputs('tfc:compost')
 				.duration(1200)
-				.EUt(2)
+				.EUt(GTValues.VHA[GTValues.LV])
 		})
 	})
 

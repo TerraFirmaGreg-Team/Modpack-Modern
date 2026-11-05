@@ -1,0 +1,17 @@
+{
+	"structures": [
+		{
+			"structure": "tfg:venus/moth_nests",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "tfc:climate",
+		"salt": 1234542,
+		"spacing": 5,
+		"separation": 2,
+		"climate": {
+			"max_forest": "normal"
+		}
+	}
+}

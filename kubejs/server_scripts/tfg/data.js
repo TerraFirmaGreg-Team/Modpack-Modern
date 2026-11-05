@@ -11,6 +11,7 @@ function registerTFCDataForTFG(event) {
 	registerTFGFLPlanters(event);
 	registerOverworldFauna(event);
 	registerMarsFauna(event);
+	registerVenusFauna(event);
 	registerTFGEquipmentData(event);
 	registerTFGAquaponicsData(event);
 }
@@ -53,6 +54,16 @@ function registerTFGHeatData(event) {
 	event.itemHeat('betterend:charnia_light_blue', 0.25, null, null)
 	event.itemHeat('betterend:charnia_purple', 0.25, null, null)
 	event.itemHeat('betterend:charnia_red', 0.25, null, null)
+	
+	event.itemHeat('#tfc:candles', 0.25, null, null)
+	event.itemHeat('firmalife:beeswax', 0.25, null, null)
+	event.itemHeat('tfg:conifer_rosin', 0.25, null, null)
+	event.itemHeat('tfg:paraffin_wax', 0.25, null, null)
+	event.itemHeat('gtceu:wax_dust', 0.25, null, null)
+	event.itemHeat('gtceu:small_wax_dust', 0.25, null, null)
+	event.itemHeat('gtceu:tiny_wax_dust', 0.25, null, null)
+	event.itemHeat('gtceu:wax_ingot', 0.25, null, null)
+	event.itemHeat('gtceu:wax_nugget', 0.25, null, null)
 }
 
 //#endregion

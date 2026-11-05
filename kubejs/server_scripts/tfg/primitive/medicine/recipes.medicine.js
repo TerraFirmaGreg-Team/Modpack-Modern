@@ -32,14 +32,14 @@ function registerTFGMedicineRecipes(event) {
 			.itemOutputs(`2x tfg:${type.name}_pill`)
 			.itemInputs('#forge:wax', `#tfg:${type.name}_ingredients`, ChemicalHelper.get(TagPrefix.dust, type.extra, 1))
 			.duration(200)
-			.EUt(GTValues.VA[GTValues.LV])
+			.EUt(GTValues.VHA[GTValues.LV])
 		event.recipes.gtceu.mixer(`tfg:gtceu/mixer/distilled_water/pill_${type.name}`)
 			.circuit(4)
 			.inputFluids(Fluid.of('gtceu:distilled_water', 50))
 			.itemOutputs(`2x tfg:${type.name}_pill`)
 			.itemInputs('#forge:wax', `#tfg:${type.name}_ingredients`, ChemicalHelper.get(TagPrefix.dust, type.extra, 1))
 			.duration(200)
-			.EUt(GTValues.VA[GTValues.LV])
+			.EUt(GTValues.VHA[GTValues.LV])
 		event.recipes.gtceu.mixer(`tfg:gtceu/mixer/spring_water/tablet_${type.name}`)
 			.circuit(4)
 			.inputFluids(Fluid.of('tfc:spring_water', 250))
@@ -47,7 +47,7 @@ function registerTFGMedicineRecipes(event) {
 			.notConsumable('gtceu:pill_casting_mold')
 			.itemInputs('gtceu:sodium_bicarbonate_dust', 'gtceu:lactose_dust', `#tfg:${type.name}_ingredients`, ChemicalHelper.get(TagPrefix.dust, type.extra, 1))
 			.duration(200)
-			.EUt(GTValues.VA[GTValues.LV])
+			.EUt(GTValues.VHA[GTValues.LV])
 		event.recipes.gtceu.mixer(`tfg:gtceu/mixer/distilled_water/tablet_${type.name}`)
 			.circuit(4)
 			.inputFluids(Fluid.of('gtceu:distilled_water', 50))
@@ -55,7 +55,7 @@ function registerTFGMedicineRecipes(event) {
 			.notConsumable('gtceu:pill_casting_mold')
 			.itemInputs('gtceu:sodium_bicarbonate_dust', 'gtceu:lactose_dust', `#tfg:${type.name}_ingredients`, ChemicalHelper.get(TagPrefix.dust, type.extra, 1))
 			.duration(200)
-			.EUt(GTValues.VA[GTValues.LV])
+			.EUt(GTValues.VHA[GTValues.LV])
 
 		// With Herbal Slime Ball
 		event.recipes.firmalife.mixing_bowl()
@@ -68,27 +68,27 @@ function registerTFGMedicineRecipes(event) {
 			.itemOutputs(`4x tfg:${type.name}_pill`)
 			.itemInputs('#forge:wax', `#tfg:${type.name}_ingredients`, 'jellies:jellie/slime_ball/herbal')
 			.duration(200)
-			.EUt(GTValues.VA[GTValues.LV])
+			.EUt(GTValues.VHA[GTValues.LV])
 		event.recipes.gtceu.mixer(`tfg:gtceu/mixer/distilled_water/pill_${type.name}_with_herbal_slime_ball`)
 			.circuit(4)
 			.itemOutputs(`4x tfg:${type.name}_pill`)
 			.itemInputs('#forge:wax', `#tfg:${type.name}_ingredients`, 'jellies:jellie/slime_ball/herbal')
 			.duration(200)
-			.EUt(GTValues.VA[GTValues.LV])
+			.EUt(GTValues.VHA[GTValues.LV])
 		event.recipes.gtceu.mixer(`tfg:gtceu/mixer/spring_water/tablet_${type.name}_with_herbal_slime_ball`)
 			.circuit(4)
 			.itemOutputs(`4x tfg:${type.name}_tablet`)
 			.notConsumable('gtceu:pill_casting_mold')
 			.itemInputs('gtceu:sodium_bicarbonate_dust', 'gtceu:lactose_dust', `#tfg:${type.name}_ingredients`, 'jellies:jellie/slime_ball/herbal')
 			.duration(200)
-			.EUt(GTValues.VA[GTValues.LV])
+			.EUt(GTValues.VHA[GTValues.LV])
 		event.recipes.gtceu.mixer(`tfg:gtceu/mixer/distilled_water/tablet_${type.name}_with_herbal_slime_ball`)
 			.circuit(4)
 			.itemOutputs(`4x tfg:${type.name}_tablet`)
 			.notConsumable('gtceu:pill_casting_mold')
 			.itemInputs('gtceu:sodium_bicarbonate_dust', 'gtceu:lactose_dust', `#tfg:${type.name}_ingredients`, 'jellies:jellie/slime_ball/herbal')
 			.duration(200)
-			.EUt(GTValues.VA[GTValues.LV])
+			.EUt(GTValues.VHA[GTValues.LV])
 
 		// Arrow
 		if(type.makeArrow) {
@@ -98,18 +98,18 @@ function registerTFGMedicineRecipes(event) {
 			event.recipes.gtceu.mixer(`tfg:gtceu/mixer/arrow/${type.name}_1`)
 				.circuit(4)
 				.inputFluids(Fluid.of('gtceu:ethanol', 25))
-				.itemOutputs(Item.of('16x minecraft:tipped_arrow', `{Potion:"minecraft:${type.name}"}`))
+				.itemOutputs(Item.of('16x minecraft:tipped_arrow', `{Potion:"minecraft:${type.name}"}`).strongNBT())
 				.itemInputs('16x minecraft:arrow', `tfg:${type.name}_pill`)
 				.duration(200)
-				.EUt(GTValues.VA[GTValues.MV])
+				.EUt(GTValues.VHA[GTValues.LV])
 
 			event.recipes.gtceu.mixer(`tfg:gtceu/mixer/arrow/${type.name}_2`)
 				.circuit(4)
 				.inputFluids(Fluid.of('gtceu:ethanol', 25))
-				.itemOutputs(Item.of('16x minecraft:tipped_arrow', `{Potion:"minecraft:long_${type.name}"}`))
+				.itemOutputs(Item.of('16x minecraft:tipped_arrow', `{Potion:"minecraft:long_${type.name}"}`).strongNBT())
 				.itemInputs('16x minecraft:arrow', `tfg:${type.name}_tablet`)
 				.duration(200)
-				.EUt(GTValues.VA[GTValues.MV])
+				.EUt(GTValues.VHA[GTValues.LV])
 		}
 	})
 
@@ -137,7 +137,7 @@ function registerTFGMedicineRecipes(event) {
 			.itemOutputs(`1x tfg:${type}_salvo`)
 			.itemInputs('gtceu:sticky_resin', `#tfg:${type}_ingredients`, ChemicalHelper.get(TagPrefix.dust, GTMaterials.TricalciumPhosphate, 1))
 			.duration(200)
-			.EUt(GTValues.VA[GTValues.LV])
+			.EUt(GTValues.VHA[GTValues.LV])
 
 		// With Herbal Slime Ball
 		event.recipes.firmalife.mixing_bowl()
@@ -150,7 +150,7 @@ function registerTFGMedicineRecipes(event) {
 			.itemOutputs(`2x tfg:${type}_salvo`)
 			.itemInputs('gtceu:sticky_resin', `#tfg:${type}_ingredients`, 'jellies:jellie/slime_ball/herbal')
 			.duration(200)
-			.EUt(GTValues.VA[GTValues.LV])
+			.EUt(GTValues.VHA[GTValues.LV])
 	})
 
 	//#endregion
@@ -166,32 +166,45 @@ function registerTFGMedicineRecipes(event) {
 	]
 
 	powderTypes.forEach(type => {
-		// Regular
+		// Rosin
 		event.recipes.firmalife.mixing_bowl()
-		.ingredients([`#tfg:${type[1]}_ingredients`, `#tfg:${type[2]}_ingredients`, 'minecraft:bone_meal'], Fluid.of('tfg:conifer_pitch', 100))
-		.outputItem(`1x tfg:${type[0]}_powder`)
-		.id(`tfg:mixing_bowl/${type[0]}_powder`)
+			.ingredients([`#tfg:${type[1]}_ingredients`, `#tfg:${type[2]}_ingredients`, 'minecraft:bone_meal'], Fluid.of('tfg:conifer_pitch', 100))
+			.outputItem(`1x tfg:${type[0]}_powder`)
+			.id(`tfg:mixing_bowl/${type[0]}_powder`)
 
 		event.recipes.gtceu.mixer(`tfg:gtceu/mixer/${type[0]}_powder`)
-		.circuit(4)
-		.inputFluids(Fluid.of('tfg:conifer_pitch', 100))
-		.itemOutputs(`1x tfg:${type[0]}_powder`)
-		.itemInputs(`#tfg:${type[1]}_ingredients`, `#tfg:${type[2]}_ingredients`, 'minecraft:bone_meal')
-		.duration(200)
-		.EUt(GTValues.VA[GTValues.LV])
+			.circuit(4)
+			.inputFluids(Fluid.of('tfg:conifer_pitch', 100))
+			.itemOutputs(`1x tfg:${type[0]}_powder`)
+			.itemInputs(`#tfg:${type[1]}_ingredients`, `#tfg:${type[2]}_ingredients`, 'minecraft:bone_meal')
+			.duration(200)
+			.EUt(GTValues.VHA[GTValues.ULV])
+
+		// Wax
+		event.recipes.firmalife.mixing_bowl()
+			.itemIngredients([`#tfg:${type[1]}_ingredients`, `#tfg:${type[2]}_ingredients`, 'minecraft:bone_meal', 'gtceu:wax_nugget'])
+			.outputItem(`1x tfg:${type[0]}_powder`)
+			.id(`tfg:mixing_bowl/${type[0]}_powder_with_wax`)
+
+		event.recipes.gtceu.mixer(`tfg:gtceu/mixer/${type[0]}_powder_with_wax`)
+			.circuit(4)
+			.itemInputs(`#tfg:${type[1]}_ingredients`, `#tfg:${type[2]}_ingredients`, 'minecraft:bone_meal', 'gtceu:wax_nugget')
+			.itemOutputs(`1x tfg:${type[0]}_powder`)
+			.duration(200)
+			.EUt(GTValues.VHA[GTValues.ULV])
 
 		// With Herbal Slime Ball
 		event.recipes.firmalife.mixing_bowl()
-		.itemIngredients([`#tfg:${type[1]}_ingredients`, `#tfg:${type[2]}_ingredients`, 'jellies:jellie/slime_ball/herbal'])
-		.outputItem(`2x tfg:${type[0]}_powder`)
-		.id(`tfg:mixing_bowl/${type[0]}_powder_with_herbal_slime_ball`)
+			.itemIngredients([`#tfg:${type[1]}_ingredients`, `#tfg:${type[2]}_ingredients`, 'jellies:jellie/slime_ball/herbal'])
+			.outputItem(`2x tfg:${type[0]}_powder`)
+			.id(`tfg:mixing_bowl/${type[0]}_powder_with_herbal_slime_ball`)
 
 		event.recipes.gtceu.mixer(`tfg:gtceu/mixer/${type[0]}_powder_with_herbal_slime_ball`)
-		.circuit(4)
-		.itemOutputs(`2x tfg:${type[0]}_powder`)
-		.itemInputs(`#tfg:${type[1]}_ingredients`, `#tfg:${type[2]}_ingredients`, 'jellies:jellie/slime_ball/herbal')
-		.duration(200)
-		.EUt(GTValues.VA[GTValues.LV])
+			.circuit(4)
+			.itemOutputs(`2x tfg:${type[0]}_powder`)
+			.itemInputs(`#tfg:${type[1]}_ingredients`, `#tfg:${type[2]}_ingredients`, 'jellies:jellie/slime_ball/herbal')
+			.duration(200)
+			.EUt(GTValues.VHA[GTValues.ULV])
 	})
 
 	//#endregion
@@ -227,7 +240,7 @@ function registerTFGMedicineRecipes(event) {
 		.itemOutputs('tfg:empty_capsule')
 		.itemInputs('tfg:food/crude_gelatin', 'gtceu:sticky_resin', ChemicalHelper.get(TagPrefix.dust, GTMaterials.TricalciumPhosphate, 1))
 		.duration(20 * 30)
-		.EUt(GTValues.VA[GTValues.LV]);
+		.EUt(GTValues.VHA[GTValues.LV]);
 
 	event.recipes.gtceu.forming_press('tfg:gtceu/forming_press/empty_capsule_from_gelatin')
 		.notConsumable('gtceu:pill_casting_mold')
@@ -235,7 +248,7 @@ function registerTFGMedicineRecipes(event) {
 		.itemInputs(ChemicalHelper.get(TagPrefix.dust, GTMaterials.Gelatin, 1), 'gtceu:sticky_resin', ChemicalHelper.get(TagPrefix.dust, GTMaterials.TricalciumPhosphate, 1))
 		.duration(20 * 30)
 		.cleanroom(CleanroomType.STERILE_CLEANROOM)
-		.EUt(GTValues.VA[GTValues.HV]);
+		.EUt(GTValues.VHA[GTValues.HV]);
 
 	//#endregion
 }

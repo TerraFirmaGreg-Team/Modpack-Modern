@@ -29,7 +29,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "A food tooltip may look like:$(br2)$(bold)Orange$()$(br)  $(2)$(bold)Expires on: 11:59 July 6, 1004 (in 1 month(s) and 1 day(s))$()$(br)  $(8)Nutrition:$(br)  - Saturation: 2%$(br)  - Water: 10%$(br)$(a)  - Fruit: 0.5"
+            "text": "Opis jedzenia może wyglądać tak:$(br2)$(bold)Pomarańcza$()$(br) $(2)$(bold)Zepsuje się w dniu: 11:59 Lipiec 6, 1004 (za 1 miesiąc(miesięcy) i 1 dzień(dni))$()$(br) $(8)Składniki odżywcze:$(br) - nasycenie: 2%$(br) - woda: 10%$(br)$(a) - Owoce: 0.5"
         },
         {
             "type": "patchouli:text",

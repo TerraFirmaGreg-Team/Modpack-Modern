@@ -39,7 +39,7 @@
 			"scale": 0.6,
 			"name": "赛特斯黏液灵",
 			"anchor": "certus_jellie",
-			"text": "$(thing)赛特斯$()$(l:agriculture/jellies)黏液灵$()生成在月球的$(item)皓蓝石$()生物群系中。它们会长出$(thing)大型赛特斯石英芽$()。"
+			"text": "$(thing)赛特斯$()$(l:agriculture/jellies)黏液灵$()生成在月球的$(item)皓蓝石$()生物群系中。它们会产出$(thing)赛特斯石英水晶$()。"
 		},
 		{
 			"type": "patchouli:entity",

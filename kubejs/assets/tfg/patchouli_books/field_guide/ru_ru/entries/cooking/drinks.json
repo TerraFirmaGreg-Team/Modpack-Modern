@@ -7,12 +7,12 @@
 			"type": "patchouli:text",
 			"title": "Каталог",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:cooking/drinks#alcohol)Alcohol$()$(li2)$(l:cooking/drinks#aged_alcohol)Aged Alcohol$()$(li2)$(l:cooking/drinks#vintage_alcohol)Vintage Alcohol$()$(li2)$(l:cooking/drinks#table)Alcohol Effects Table$()$(li2)$(l:cooking/drinks#wine)Wine$()$(li)$(bold)$(l:cooking/drinks#milk)Milk$()$(li)$(bold)$(l:cooking/drinks#spring_water)Spring Water$()$(li)$(bold)$(l:cooking/drinks#sea_water)Sea Water$()$(li)$(bold)$(l:cooking/drinks#muddy_water)Muddy Water$()$(li)$(bold)$(l:cooking/drinks#juice)Fruit Juice$()$(li)$(bold)$(l:cooking/drinks#yogurt)Yogurt$()$(li)$(bold)$(l:cooking/drinks#smoothie)Fruit Smoothie$()$(li)$(bold)$(l:cooking/drinks#ice_slush)Ice Slush$()"
+			"text": "$(li)$(bold)$(l:cooking/drinks#alcohol)Алкоголь$()$(li2)$(l:cooking/drinks#aged_alcohol)Старинный алкоголь$()$(li2)$(l:cooking/drinks#vintage_alcohol)Старинный алкоголь$()$(li2)$(l:cooking/drinks#table)Таблица воздействия алкоголя$()$(li2)$(l:cooking/drinks#wine)Вино$()$(li)$(bold)$(l:cooking/drinks#milk)Молоко$()$(li)$(bold)$(l:cooking/drinks#spring_water)Родниковая вода$()$(li)$(bold)$(l:cooking/drinks#sea_water)Морская вода$()$(li)$(bold)$(l:cooking/drinks#muddy_water)Мутная вода$()$(li)$(bold)$(l:cooking/drinks#juice)Фруктовый сок$()$(li)$(bold)$(l:cooking/drinks#yogurt)Йогурт$()$(li)$(bold)$(l:cooking/drinks#smoothie)Фруктовый смузи$()$(li)$(bold)$(l:cooking/drinks#ice_slush)Айс-слэш$()"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Алкоголь",
-			"text": "$(thing)Base Alcohols$() provide no buff to the player. They can be produced by leaving various fruits, flours, or other ingredients in a $(l:craftsmanship/barrels)Barrel$() with water. As a bonus, when drunk, any alcohol will affect your speech in chat!",
+			"text": "$(thing)Базовый алкоголь$() не даёт игроку никаких бонусов. Их можно получить, смешав различные фрукты, муку или другие ингредиенты с водой в $(l:craftsmanship/barrels)бочке$(). Кроме того, любой алкоголь, если его выпить, повлияет на вашу речь в чате!",
 			"item": "tfc:bucket/beer,tfc:bucket/cider,tfc:bucket/rum,tfc:bucket/sake,tfc:bucket/vodka,tfc:bucket/whiskey,tfc:bucket/corn_whiskey,tfc:bucket/rye_whiskey,firmalife:bucket/mead",
 			"anchor": "alcohol"
 		},
@@ -25,8 +25,8 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Сверхвыдержанный алкоголь",
-			"text": "$(thing)Vintage Alcohols$() are prepared by further ageing alcohol in sealed barrels for another 3 months. These alcohols provide a stronger effect and a longer duration.",
+			"title": "Старинный алкоголь",
+			"text": "$(thing)Старинный алкоголь$() получают путем дополнительной выдержки спирта в герметично закрытых бочках в течение еще 3 месяцев. Такие напитки обладают более сильным действием и более длительным эффектом.",
 			"item": "tfg:vintage_beer_bucket,tfg:vintage_cider_bucket,tfg:vintage_rum_bucket,tfg:vintage_sake_bucket,tfg:vintage_vodka_bucket,tfg:vintage_whiskey_bucket,tfg:vintage_corn_whiskey_bucket,tfg:vintage_rye_whiskey_bucket,tfg:vintage_mead_bucket",
 			"anchor": "vintage_alcohol"
 		},
@@ -35,100 +35,100 @@
 			"anchor": "table",
 			"strings": [
 				{
-					"text": "Alcohol",
+					"text": "Алкоголь",
 					"bold": true
 				},
 				{
-					"text": "Aged",
+					"text": "Выдержанный",
 					"bold": true
 				},
 				{
-					"text": "Vintage",
+					"text": "Старинное",
 					"bold": true
 				},
 				{
-					"text": "Beer"
+					"text": "Пиво"
 				},
 				{
-					"text": "Absorption II (5:20)"
+					"text": "Поглощение II (5:20)"
 				},
 				{
-					"text": "Absorption III (8:00)"
+					"text": "Поглощение II (8:00)"
 				},
 				{
-					"text": "Cider"
+					"text": "Сидр"
 				},
 				{
-					"text": "Speed (5:20)"
+					"text": "Скорость (5:20)"
 				},
 				{
-					"text": "Speed II (8:00)"
+					"text": "Скорость II (8:00)"
 				},
 				{
-					"text": "Rum"
+					"text": "Ром"
 				},
 				{
-					"text": "Speed II (2:40)"
+					"text": "Скорость II (2:40)"
 				},
 				{
-					"text": "Speed III (4:00)"
+					"text": "Скорость III (4:00)"
 				},
 				{
-					"text": "Sake"
+					"text": "Саке"
 				},
 				{
-					"text": "Resistance (5:20)"
+					"text": "Регенерация (5:20)"
 				},
 				{
-					"text": "Resistance II (8:00)"
+					"text": "Регенерация II (8:00)"
 				},
 				{
-					"text": "Vodka"
+					"text": "Водка"
 				},
 				{
-					"text": "Resistance II (2:40)"
+					"text": "Поглощение II (2:40)"
 				},
 				{
-					"text": "Resistance III (4:00)"
+					"text": "Поглощение III (4:00)"
 				},
 				{
-					"text": "Whiskey"
+					"text": "Виски"
 				},
 				{
-					"text": "Haste II (2:40)"
+					"text": "Спешка II (2:40)"
 				},
 				{
-					"text": "Haste III (4:00)"
+					"text": "Спешка III (4:00)"
 				},
 				{
-					"text": "Corn Whiskey"
+					"text": "Кукурузный виски"
 				},
 				{
-					"text": "Haste (5:20)"
+					"text": "Спешка (5:20)"
 				},
 				{
-					"text": "Haste II (8:00)"
+					"text": "Спешка II (8:00)"
 				},
 				{
-					"text": "Rye Whiskey"
+					"text": "Ржаной виски"
 				},
 				{
-					"text": "Haste (5:20)"
+					"text": "Спешка (5:20)"
 				},
 				{
-					"text": "Haste II (8:00)"
+					"text": "Спешка II (8:00)"
 				},
 				{
-					"text": "Mead"
+					"text": "Медовуха"
 				},
 				{
-					"text": "Regeneration (5:20)"
+					"text": "Регенерация (5:20)"
 				},
 				{
-					"text": "Regeneration II (8:00)"
+					"text": "Регенерация II (8:00)"
 				}
 			],
-			"title": "Alcohol Effects",
+			"title": "Эффект Алкоголя",
 			"legend": [],
 			"columns": 2,
 			"first_column_width": 60,
@@ -145,51 +145,51 @@
 		{
 			"type": "patchouli:text",
 			"title": "Вино",
-			"text": "$(thing)Wine$() is another kind of alcohol that's made differently than the others. It's a complex but rewarding process that can't be automated in a machine. Check the $(l:cooking/alcohol#wine_making)Winemaking$() entry to learn how to craft it.$(br2)All wines also give $(item)Strength (5:20)$() in addition to another effect!",
+			"text": "$(thing)Вино$() — это ещё один вид алкоголя, который производится не так, как остальные. Это сложный, но увлекательный процесс, который невозможно автоматизировать. О том, как его приготовить, читайте в статье $(l:cooking/alcohol#wine_making)Виноделие$().$(br2)Все вина дают $(item)Прилив сил (5:20)$() в дополнение к другому эффекту!",
 			"item": "firmalife:bucket/red_wine,firmalife:bucket/white_wine,firmalife:bucket/rose_wine,firmalife:bucket/sparkling_wine,firmalife:bucket/dessert_wine",
 			"anchor": "wine"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(n)$(2)$(t:Haste 5:20)Red Wine$()$(li)$(n)$(2)$(t:Wither Resistance 5:20)White Wine$()$(li)$(n)$(2)$(t:Swim Speed 5:20)Rose Wine$()$(li)$(n)$(2)$(t:Jump Boost II 5:20)Sparkling Wine$()$(li)$(n)$(2)$(t:Knockback Resistance 5:20)Dessert Wine$()"
+			"text": "$(li)$(n)$(2)$(t:Haste 5:20)Красное вино$()$(li)$(n)$(2)$(t:Wither Resistance 5:20)Белое вино$()$(li)$(n)$(2)$(t:Swim Speed 5:20) Розовое вино$()$(li)$(n)$(2)$(t:Jump Boost II 5:20)Игристое вино$()$(li)$(n)$(2)$(t:Knockback Resistance 5:20)Десертное вино$()"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Молоко",
-			"text": "$(thing)Milk$() can be aquired from most female livestock by simply $(item)$(k:key.use)$() them with a wood or metal bucket once familiarity is at a high enough level. (If it isn't working, make sure the buckets aren't stacked!)$(br)While it doesn't provide any buffs―and won't remove effects―it provides $(l:cooking/food_and_water#dairy)Dairy$() nutrition if drunk after eating.",
+			"text": "$(thing)Молоко$() можно получить от большинства самок домашнего скота, просто $(item)$(k:key.use)$() подойдя к ним с деревянным или металлическим ведром, когда «Приручение» достигнет достаточно высокого уровня.  (Если не получается, убедитесь, что ведра не сложены друг на друга!)$(br) Молоко не дает никаких бонусов и не снимает эффекты, но если выпить его после еды, оно обеспечит вас $(l:cooking/food_and_water#dairy)молочными$() питательными веществами.",
 			"item": "minecraft:milk_bucket,firmalife:bucket/yak_milk,firmalife:bucket/goat_milk",
 			"anchor": "milk"
 		},
 		{
-			"title": "Spring Water",
+			"title": "Родниковая вода",
 			"text": "Питьё $(thing)Родниковой воды$() согревает тебя на 4°C и при стоянии в ней даёт эффект регенерация, а также согревает.",
 			"item": "tfc:bucket/spring_water",
 			"type": "patchouli:spotlight",
 			"anchor": "spring_water"
 		},
 		{
-			"title": "Sea Water",
+			"title": "Морская вода",
 			"text": "$(thing)Молоко$() можно получить от большинства самок молочных животных, просто щелкнув по ним правой кнопкой мыши с деревянным или металлическим ведром, только когда уровень прирученности достигнет достаточно высокого уровня. (Если доение не работает, убедитесь, что ведра не состаканы!)$(br)Хотя этот напиток не дает никаких бонусов, он обеспечивает организм молочными продуктами, если его выпить после еды. Из него впоследствии можно приготовить сыр.",
 			"type": "patchouli:spotlight",
 			"item": "tfc:bucket/salt_water",
 			"anchor": "sea_water"
 		},
 		{
-			"title": "Muddy Water",
-			"text": "Drinking $(thing)Muddy Water$() is not recommended. Doing so will make you nauseous and give you $(l:cooking/food_and_water#parasites)parasites$().",
+			"title": "Мутная вода",
+			"text": "Не рекомендуется пить $(thing)мутную воду$(). Это вызовет тошноту и приведет к заражению $(l:cooking/food_and_water#parasites)паразитами$().",
 			"type": "patchouli:spotlight",
 			"item": "tfg:muddy_water_bucket",
 			"anchor": "muddy_water"
 		},
 		{
-			"title": "Fruit Juice",
-			"text": "$(thing)Fruit Juice$() is a great way to condense your fruits into a longer lasting food item. Fruit juice provides the $(l:cooking/food_and_water#quenching_transient_effect)Quenching Effect$(), which helps stave off thirst.$(br2)Fruit Juice will expire over time.$()",
+			"title": "Фруктовый сок",
+			"text": "$(thing) Фруктовый сок$() — отличный способ превратить фрукты в продукт длительного хранения. Фруктовый сок обладает $(l:cooking/food_and_water#quenching_transient_effect)утоляющим эффектом$(), который помогает утолить жажду.$(br2) Фруктовый сок со временем портится.$()",
 			"type": "patchouli:spotlight",
 			"anchor": "juice",
 			"item": "tfg:food/juice"
 		},
 		{
-			"title": "Yogurt",
+			"title": "Йогурт",
 			"text": "$(thing)Йогурт$() содержит те же питательные вещества, что и молоко. Он также может быть смешат с фруктами для получения $(item)Фруктового йогурта$().$(br2)Срок годности йогурта ограничен.$()",
 			"type": "patchouli:spotlight",
 			"anchor": "yogurt",
@@ -197,21 +197,21 @@
 		},
 		{
 			"title": "Фруктовый смузи",
-			"text": "$(thing)Smoothies$() are a powerful drink. They provide both the $(l:cooking/food_and_water#quenching_transient_effect)Quenching Effect$() and the $(l:cooking/food_and_water#cooling_transient_effect)Cooling Effect$(). They are also a great source for $(l:cooking/food_and_water#fruit)Fruit$() and $(l:cooking/food_and_water#dairy)Dairy$() nutrition.$(br2)Smoothies will expire over time.$()",
+			"text": "$(thing) Йогурт$() — это мощный напиток. Он обеспечивает как $(l:cooking/food_and_water#quenching_transient_effect)утоляющий эффект$(), так и $(l:cooking/food_and_water#cooling_transient_effect)охлаждающий эффект$(). Кроме того, это отличный источник питательных веществ из $(l:cooking/food_and_water#fruit)фруктов$() и $(l:cooking/food_and_water#dairy)молочных продуктов$().$(br2)Смузи со временем портятся.$()",
 			"type": "patchouli:spotlight",
 			"anchor": "smoothie",
 			"item": "tfg:food/smoothie"
 		},
 		{
 			"title": "Жидкая ледяная слякоть",
-			"text": "Drinking $(thing)Ice Slush$() cools you down by 4°C, perfect for summer! Also handy for traversing $(l:beneath/beneath)the Beneath$().",
+			"text": "Напиток $(thing)фруктовый лед $() охлаждает на 4 °C, идеально подходит для лета! Также удобен для перемещения по $(l:beneath/beneath) Подземью$().",
 			"type": "patchouli:spotlight",
 			"item": "gtceu:ice_bucket",
 			"anchor": "ice_slush"
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Читать далее",
 			"anchor": "relations",
 			"entries": [
 				"tfg:cooking/food_and_water",

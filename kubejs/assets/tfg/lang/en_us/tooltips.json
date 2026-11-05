@@ -17,6 +17,7 @@
     "tfg.tooltip.attribution.dromedary_camel": "§9§oCredit: Minecraft",
     "tfg.tooltip.attribution.bactrian_camel": "§9§oCredit: TerraFirmaCraft 1.21",
     "tfg.tooltip.attribution.diesel_generators": "§9§oCredit: Create: Diesel Generators",
+    "tfg.tooltip.attribution.betterend": "§9§oCredit: Better End",
     "tfg.tooltip.surfer_variant.base": "Teal Hide",
     "tfg.tooltip.surfer_variant.__comment__": "For magenta, yellow, blue, red, and pink colors. You can make something up!",
     "tfg.tooltip.surfer_variant.bubble": "Blossom Berry Hide",
@@ -132,7 +133,7 @@
     "tfg.tooltip.machine.pastoral_engine_2": "§7Automatically milks and shears any animals within the area indicated by the metal casings.§r",
     "tfg.tooltip.machine.oxygen_distributor_1": "§7Oxygenates a large sealed area. The bigger the area, the more power and gas it needs.",
     "tfg.tooltip.machine.oxygen_distributor_2": "§7Use an airlock to avoid air vortexes. Does not affect temperature.",
-    "tfg.tooltip.machine.heat_pump_1": "§7Sets the temperature of a large mostly-sealed area to 15°C.",
+    "tfg.tooltip.machine.heat_pump_1": "§7Sets the temperature of a large mostly-sealed area to a specifc value between -50°C and 70°C.",
     "tfg.tooltip.machine.heat_pump_2": "§7The bigger the area, the more power it needs. Is lenient on what counts as 'sealed'.",
     "tfg.tooltip.machine.heat_pump_3": "§7The side with the controller should face indoors, while the Exhaust should face outdoors and be filled with a Turbine Rotor.",
     "tfg.tooltip.machine.rotor_vent": "Requires a Turbine Rotor but doesn't wear down its Durability. Efficiency lowers the input mB/t and Power reduces the EU/t cost.",
@@ -231,6 +232,7 @@
 
     "tfg.tooltip.firmalife_greenhouse.oxygen_required": "§cAn oxygenated environment is required!",
     "tfg.tooltip.firmalife_greenhouse.oxygen_required.block": "§7An oxygenated environment is required to function as a greenhouse in space.",
+    "tfg.tooltip.firmalife_inside_valid_greenhouse": "Inside a valid greenhouse",
 
     "tfg.tooltip.grow_light_disapointment": "§7No. This will not increase your crop growth speed...",
     "tfg.tooltip.rotten_voiding_cover": "§7The Rotten Voiding Cover works just like an Item Voiding Cover but only targets and destroys §cRotten Items.",
@@ -249,6 +251,9 @@
 
     "tfg.tooltip.tier_locked_block": "Requires Steel+ Tools to Break",
     "tfg.tooltip.tier_locked_block_explosives": "Break with Explosives or find Keratophyre or Lava",
+
+    "tfg.tooltip.tier_locked_block_iv": "Requires ZPM+ Tools to Break",
+    "tfg.tooltip.tier_locked_block_acid": "Dissolves when submerged in TODO",
 
     "tfg.tooltip.nutrition.health": "Health",
     "tfg.tooltip.nutrition.style_button_2": "Style: Solid Color",
@@ -358,6 +363,32 @@
     "tfg.tooltip.greenhouse.minimum_tier": "Min. Tier: ",
 
     "tfg.item.electric_flask.tooltip_1": "An electrical flask that will automatically drink when needed.",
-    "tfg.item.electric_flask.tooltip_2": "Consumes 1000 EU per drink"
+    "tfg.item.electric_flask.tooltip_2": "§9Consumes: §f1000 EU per drink",
+
+    "tfg.tooltip.campfire": "§7Cosmetic only, usable as an infinite light source or particle emitter.",
+
+    "tfg.tooltip.calendar_weekday_month_day_year": "%s-%s %d, %04d",
+    "tfg.tooltip.calendar_standard_date": "%s/%s/%04d",
+    "tfg.tooltip.calendar_iso_date": "%04d-%s-%s",
+    "tfg.tooltip.calendar_month_and_day": "%d-%s",
+    "tfg.tooltip.climate_precipitation.chance": "Precipitation: %s%% ",
+    "tfg.tooltip.climate_precipitation.mm": "%smm",
+    "tfg.tooltip.climate_wind.speed_ms": "%s m/s",
+    "tfg.tooltip.climate_wind.speed_bs": "%s block/s",
+    "tfg.tooltip.climate_wind.speed_knots": "%s Knots",
+    "tfg.tooltip.climate_wind.angl_n": "%s°N",
+    "tfg.tooltip.climate_wind.angl_ne": "%s°NE",
+    "tfg.tooltip.climate_wind.angl_nw": "%s°NW",
+    "tfg.tooltip.climate_wind.angl_e": "%s°E",
+    "tfg.tooltip.climate_wind.angl_s": "%s°S",
+    "tfg.tooltip.climate_wind.angl_se": "%s°SE",
+    "tfg.tooltip.climate_wind.angl_sw": "%s°SW",
+    "tfg.tooltip.climate_wind.angl_w": "%s°W",
+    "tfg.tooltip.environment.pressure_atm": "%s atm",
+    "tfg.tooltip.environment.pressure_pascal": "%s kPa",
+    "tfg.tooltip.environment.pressure_bar": "%s bar",
+    "tfg.tooltip.environment.gravity_mss": "%s m/s²",
+    "tfg.tooltip.environment.gravity_bss": "%s block/s²",
+    "tfg.tooltip.me_network.channels": "%s Exposed Channels"
 
 }
