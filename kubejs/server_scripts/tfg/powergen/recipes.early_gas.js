@@ -355,7 +355,7 @@ function registerTFGEarlyGasRecipes(event) {
 	event.recipes.gtceu.large_chemical_reactor('tfg:btx_fuel')
 		.inputFluids(Fluid.of('tfg:crude_mixed_gas', 10000))
 		.inputFluids(Fluid.of('gtceu:benzene', 20000))
-		.inputFluids(Fluid.of('gtceu:toluene', 6000))
+		.inputFluids(Fluid.of('gtceu:toluene', 4000))
 		.inputFluids(Fluid.of('gtceu:dimethylbenzene', 12000))
 		.outputFluids(Fluid.of('tfg:btx_fuel', 54000))
 		.duration(20*6)
