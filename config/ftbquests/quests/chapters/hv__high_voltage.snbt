@@ -10,8 +10,9 @@
 		{
 			id: "2583D0B64E51FAC8"
 			linked_quest: "5063FDFFBE3E4855"
-			x: 0.0d
-			y: -11.0d
+			shape: "diamond"
+			x: 1.0d
+			y: -9.5d
 		}
 		{
 			id: "308E11BE764398A1"
@@ -39,13 +40,15 @@
 			linked_quest: "3A2E442E4D84C891"
 			shape: "octagon"
 			size: 2.0d
-			x: 2.5d
+			x: 0.0d
 			y: -11.0d
 		}
 		{
 			id: "1B29194F9C306CFE"
 			linked_quest: "36B9B5024356C53C"
-			x: 5.0d
+			shape: "octagon"
+			size: 2.0d
+			x: -2.5d
 			y: -11.0d
 		}
 		{
@@ -402,10 +405,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: [
-				"727075AAF9F91FAE"
-				"6B08799BCFD01D3D"
-			]
+			dependencies: ["727075AAF9F91FAE"]
 			description: ["{quests.high_voltage.titanium.desc}"]
 			icon: "gtceu:titanium_ingot"
 			id: "7FA0ACB7F161F378"
@@ -1066,11 +1066,14 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["7FA0ACB7F161F378"]
+			dependencies: [
+				"7FA0ACB7F161F378"
+				"5DE6CBCF56FC69BC"
+			]
 			description: ["{quests.high_voltage.ev_machine_hull.desc}"]
 			id: "4214D5C501C35876"
 			shape: "gear"
-			size: 4.0d
+			size: 3.0d
 			subtitle: "{quests.high_voltage.ev_machine_hull.subtitle}"
 			tasks: [{
 				id: "766F3215D322BAAE"
@@ -1078,8 +1081,8 @@
 				type: "item"
 			}]
 			title: "{quests.high_voltage.ev_machine_hull.title}"
-			x: 24.0d
-			y: 2.0d
+			x: 21.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["56D337E264A4154F"]
@@ -1544,8 +1547,8 @@
 				type: "item"
 			}]
 			title: "{quests.gregtech_energy.reformate_gas.title}"
-			x: 6.5d
-			y: -11.0d
+			x: -2.5d
+			y: -13.0d
 		}
 		{
 			dependencies: ["6A451F43F3D7A671"]
@@ -2008,6 +2011,26 @@
 			}]
 			x: 16.0d
 			y: -6.0d
+		}
+		{
+			dependencies: ["6B08799BCFD01D3D"]
+			description: [
+				"{quests.high_voltage.palladium.desc.1}"
+				"{@pagebreak}"
+				"{quests.high_voltage.palladium.desc.2}"
+			]
+			id: "5DE6CBCF56FC69BC"
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "{quests.high_voltage.palladium.subtitle}"
+			tasks: [{
+				id: "599E923A5598FA15"
+				item: "gtceu:palladium_ingot"
+				type: "item"
+			}]
+			title: "{quests.high_voltage.palladium.title}"
+			x: 21.0d
+			y: 0.75d
 		}
 	]
 	subtitle: ["{quests.high_voltage.subtitle}"]

@@ -597,8 +597,6 @@ function registerGTCEuMachineRecipes(event) {
 
 	//#region ULV Hatches
 
-	event.replaceInput({ id: 'gtceu:shaped/ulv_machine_hull' }, '#forge:plates/wood', '#forge:plates/lead')
-
 	event.recipes.gtceu.shaped('gtceu:ulv_input_bus', [
 		'CAC',
 		'CBC',
@@ -954,4 +952,16 @@ function registerGTCEuMachineRecipes(event) {
 		E: 'gtceu:hv_electric_motor',
 		F: '#forge:single_cables/gold'
 	}).addMaterialInfo().id('tfg:shaped/steam_turbine_hv')
+
+	event.recipes.gtceu.shaped('tfg:pyrolyse_oven', [
+		'ABC',
+		'BDB',
+		'AEC'
+	], {
+		A: 'gtceu:mv_electric_piston',
+		B: '#gtceu:circuits/mv',
+		C: 'gtceu:cupronickel_quadruple_wire',
+		D: 'gtceu:mv_machine_hull',
+		E: 'gtceu:mv_electric_pump'
+	}).addMaterialInfo().id('tfg:shaped/pyrolyse_oven');
 }

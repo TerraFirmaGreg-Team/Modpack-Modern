@@ -1131,6 +1131,7 @@
 				"{quests.steam_age.large_bronze_boiler.desc.3}"
 			]
 			id: "1F7AAF65CC0A4ADF"
+			optional: true
 			shape: "heart"
 			size: 1.25d
 			subtitle: "{quests.steam_age.large_bronze_boiler.subtitle}"
@@ -1201,6 +1202,11 @@
 			description: ["{quest.steam_age.soft_mallet.desc}"]
 			id: "1D4701C28C2FACF7"
 			optional: true
+			rewards: [{
+				id: "3A7332D92A14A0FF"
+				item: "gtceu:terminal"
+				type: "item"
+			}]
 			shape: "heart"
 			subtitle: "{quest.steam_age.soft_mallet.subtitle}"
 			tasks: [{
