@@ -187,8 +187,8 @@ function registerTFGPetroChemRecipes(event) {
     event.recipes.gtceu.distillation_tower('tfg:distill_aromatized_lpg')
         .inputFluids(Fluid.of('tfg:aromatized_lpg', 1000))
         .outputFluids(
-            Fluid.of('gtceu:dimethylbenzene', 120),
-            Fluid.of('gtceu:toluene', 130),
+            Fluid.of('gtceu:dimethylbenzene', 90),
+            Fluid.of('gtceu:toluene', 110),
             Fluid.of('gtceu:benzene', 150),
             Fluid.of('gtceu:ethane', 350),
             Fluid.of('gtceu:methane', 270),
