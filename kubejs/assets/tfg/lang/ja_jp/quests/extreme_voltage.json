@@ -292,5 +292,7 @@
     "quests.extreme_voltage.mars_infinites.desc": "これらは、オストラム線形加速器を使って火星での無限化が可能な資源の一覧です。\n\nなお、核分裂炉の出力によって得られる鉱石の量は変わります。また、プルトニウム燃料棒の完全放置生産を目指す場合は、&bトリチウム水&rを消費するレシピを利用する必要があります。",
     "quests.space_survival.mineral_rich_wool.title": "資源豊富な毛皮",
     "quests.space_survival.mineral_rich_wool.subtitle": "永遠の砂嵐の中で",
-    "quests.space_survival.mineral_rich_wool.desc": "スニッファー、ラプターの両動物は、飼いならすことで毛刈りが可能になります。いずれの動物からも、特殊な毛皮を入手することができます。(デプロイヤーにハサミを持たせることで自動回収もできます。)\n\nEBFでこの毛皮を製錬すると、アルカリアースシリケートが入手できます。また、&6バイオAES強化Rポリウレタンフォーム&rの作成にも必要です。"
+    "quests.space_survival.mineral_rich_wool.desc": "スニッファー、ラプターの両動物は、飼いならすことで毛刈りが可能になります。いずれの動物からも、特殊な毛皮を入手することができます。(デプロイヤーにハサミを持たせることで自動回収もできます。)\n\nEBFでこの毛皮を製錬すると、アルカリアースシリケートが入手できます。また、&6バイオAES強化Rポリウレタンフォーム&rの作成にも必要です。",
+    "quests.extreme_voltage.higgs_emitter.subtitle": "人工重力",
+    "quests.extreme_voltage.higgs_emitter.desc": "&6ヒッグス粒子放出機&rを使用すると、その周囲の半径内に人工的な地球の重力を生成することができます。生成される領域の大きさは、マルチブロックのエネルギーハッチのティアに応じて変化します。\n\n&c警告：&r 無重力環境を作成したい場合は、必ず宇宙銃(Zip Gun)を所持していることを確認してください。"
 }
