@@ -187,5 +187,10 @@
     "tfg.wireless_charger.mode.0": "§eРежим: Суперзаряд - быстрая зарядка §7(Радиус: §f%s§7 блоков, 4A)",
     "tfg.wireless_charger.mode.1": "§eРежим: Дальний - медленная зарядка §7(Радиус: §f%s§7 блоков, 1A)",
     "tfg.field_guide.name": "Полевое руководство",
-    "tfg.field_guide.read_me": "§8§oПрочитай меня! ☺§r"
+    "tfg.field_guide.read_me": "§8§oПрочитай меня! ☺§r",
+    "tfg.display_source.thermometer": "Термометр",
+    "tfg.display_source.calendar_clock": "Термометр",
+    "tfg.display_source.anemometer": "Анемометр",
+    "tfg.display_source.environment": "Окружающая среда",
+    "tfg.display_source.me_network": "МЭ Сеть"
 }

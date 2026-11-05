@@ -15,6 +15,7 @@
 	"block.greate.andesite_alloy_gearbox": "Podstawowa przekładnia",
 	"block.greate.andesite_alloy_mechanical_press": "Podstawowa prasa mechaniczna",
 	"block.greate.andesite_alloy_mechanical_saw": "Podstawowa piła mechaniczna",
+	"block.greate.andesite_alloy_mechanical_mixer": "Podstawowa mikser mechaniczny",
 	"block.greate.andesite_alloy_millstone": "Podstawowy kamień młyński",
 	"block.greate.andesite_alloy_shaft": "Podstawowy wał",
 	"block.greate.andesite_encased_aluminium_cogwheel": "Aluminiowe koło zębate w metalowej obudowie",
@@ -315,7 +316,10 @@
 	"material.greate.shadow_steel": "Mroczna stal",
 	"tagprefix.alloy": "Stop (%s)",
 	"tagprefix.whisk": "Trzepaczka (%s)",
+	"item.greate.andesite_alloy_whisk": "Podstawowa trzepaczka",
+	"config.jade.plugin_greate.saw.active_recipe_type": "Aktywny typ przepisu",
 	"greate.tooltip.network_statistics": "Statystyki sieci: ",
+	"greate.tooltip.saw.active_recipe_type": "Aktywny typ przepisu: %s",
 	"item.greate.polybenzimidazole_belt_connector": "Łącznik polibenzimidazolowego pasa",
 	"item.greate.polyethylene_belt_connector": "Łącznik polietylenowego pasa",
 	"item.greate.polytetrafluoroethylene_belt_connector": "Łącznik politetrafluoroetylenowego pasa"

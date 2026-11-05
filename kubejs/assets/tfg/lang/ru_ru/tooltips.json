@@ -313,5 +313,17 @@
     "tfg.tooltip.planter.fertilizer_info": "Удобрения необязательны. Сельскохозяйственные культуры будут расти быстрее и производить другие типы удобрений, если подкармливать их предпочитаемым видом удобрения.",
     "tfg.tooltip.greenhouse.minimum_tier": "Мин. тир: ",
     "tfg.item.electric_flask.tooltip_1": "Электрическая фляга, которая автоматически потребляет жидкость при необходимости.",
-    "tfg.item.electric_flask.tooltip_2": "§9Потребление: §f1000 EU за использование"
+    "tfg.item.electric_flask.tooltip_2": "§9Потребление: §f1000 EU за использование",
+    "tfg.tooltip.calendar_weekday_month_day_year": "%s-%s %d, %04d",
+    "tfg.tooltip.calendar_standard_date": "%s/%s/%04d",
+    "tfg.tooltip.calendar_iso_date": "%04d-%s-%s",
+    "tfg.tooltip.calendar_month_and_day": "%d-%s",
+    "tfg.tooltip.climate_precipitation.mm": "%smm",
+    "tfg.tooltip.climate_wind.speed_ms": "%s m/s",
+    "tfg.tooltip.climate_wind.speed_bs": "%s блоков/s",
+    "tfg.tooltip.environment.pressure_atm": "%s atm",
+    "tfg.tooltip.environment.pressure_pascal": "%s kPa",
+    "tfg.tooltip.environment.pressure_bar": "%s bar",
+    "tfg.tooltip.environment.gravity_mss": "%s m/s²",
+    "tfg.tooltip.environment.gravity_bss": "%s блоков/s²"
 }
