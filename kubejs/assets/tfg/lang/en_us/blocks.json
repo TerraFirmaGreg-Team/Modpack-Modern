@@ -885,6 +885,7 @@
 	"block.tfg.casings.machine_casing_pressure_dark": "Pressure Casing",
 	"block.tfg.casings.machine_casing_ae2": "Fluix-Inscribed Casing",
 	"block.tfg.casings.machine_casing_ptfe_black": "Degaussing Polymerized Steel Casing",
+	"block.tfg.casings.machine_casing_maldonite": "Anaerobic Casing",
 
 	"block.tfg.glacian_wool_frame": "Framed Glacian Wool",
 	"block.tfg.aes_insulation_frame": "Framed AES Insulation",
@@ -1052,6 +1053,7 @@
 	"block.tfg.higgs_emitter": "Higgs Emitter",
 	"block.tfg.heat_pump": "Heat Pump",
 	"block.tfg.rotor_vent": "Exhaust Vent",
+	"block.tfg.pyrolyse_oven": "Pyrolyse Oven",
 	"block.gtceu.ulv_super_tank": "Basic Super Tank",
 	"block.gtceu.ulv_super_chest": "Basic Super Chest",
 	"block.gtceu.ulv_hermetic_casing": "Basic Hermetic Casing",

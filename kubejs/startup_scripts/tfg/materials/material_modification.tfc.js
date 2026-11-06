@@ -69,6 +69,7 @@ function registerTFCMaterialModification(event) {
 	GTMaterials.Electrum.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(606, 808, 1010, 1));
 	GTMaterials.BatteryAlloy.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(330 * 0.6, 330 * 0.8, 330, 1));
 	GTMaterials.Cupronickel.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(760, 1013, 1266, 1));
+	GTMaterials.get('tfg:maldonite').setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(478, 637, 796, 1));
 
 	let AlSi = GTMaterials.get('aluminium_silicate')
 	AlSi.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, 1))

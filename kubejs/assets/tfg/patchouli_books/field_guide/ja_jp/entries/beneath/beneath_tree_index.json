@@ -1,50 +1,50 @@
 {
-	"name": "Beneath Tree Index",
+	"name": "深界の樹木一覧",
 	"category": "tfg:beneath",
 	"icon": "tfg:textures/block/wood/sapling/mahoe.png",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Despite the lack of sunlight, several species of trees grow in the Beneath, most of which can only be found here!$(br2)Trees grow in the Beneath the same way they do in the overworld, but they do require a light level of 12, which isn't provided by the Beneath's natural light. To solve this problem, you can utilize $(l:agriculture/aqueducts)Lava Aqueducts$() or any other available light source."
+			"text": "日光が当たらないにもかかわらず、深界にはいくつかの種類の木が生えており、そのほとんどはここでしか見られないものです！$(br2)深界での木の成長は地上と同じですが、光レベル12が必要であり、これは深界の自然光だけでは得られません。この問題を解決するには、$(l:agriculture/aqueducts)溶岩水路$()や、その他の利用可能な光源を活用することができます。"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Araucaria",
+			"title": "ナンヨウスギ",
 			"anchor": "araucaria",
 			"item": "tag:tfg:araucaria_logs",
-			"text": "$(bold)Araucaria$()$(br)Found only in the $(thing)Webbed Lair$() biome.$(br)$(thing)Growth Days$(): 5"
+			"text": "$(bold)ナンヨウスギ$()$(br)$(thing)クモの巣窟$() バイオームでのみ見られます。$(br)$(thing)成長にかかる日数$(): 5"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Beech",
+			"title": "ブナ",
 			"anchor": "beech",
 			"item": "tag:tfg:beech_logs",
-			"text": "$(bold)Beech$()$(br)Found in the $(thing)Thorny Grove$() and $(thing)Lush Hollow$() biomes.$(br)$(thing)Growth Days$(): 6"
+			"text": "$(bold)ブナ$()$(br)$(thing)茨の木立$() と $(thing)繫茂した空洞$() バイオームで見られます。$(br)$(thing)成長にかかる日数$(): 6"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Ginkgo",
+			"title": "イチョウ",
 			"anchor": "ginkgo",
 			"item": "tag:wan_ancient_beasts:ginkgo_logs",
-			"text": "$(bold)Ginkgo$()$(br)Found only in the $(thing)Lush Hollow$() biome.$(br)$(thing)Growth Days$(): 7"
+			"text": "$(bold)イチョウ$()$(br)$(thing)繫茂した空洞$() バイオームでのみ見られます。$(br)$(thing)成長にかかる日数$(): 7"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Mahoe",
+			"title": "マホエ",
 			"anchor": "mahoe",
 			"item": "tag:tfg:mahoe_logs",
-			"text": "$(bold)Mahoe$()$(br)Found only in the $(thing)Thorny Grove$() biome.$(br)$(thing)Growth Days$(): 5"
+			"text": "$(bold)マホエ$()$(br)$(thing)茨の木立$() バイオームでのみ見られます。$(br)$(thing)成長にかかる日数$(): 5"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "マングローブ",
 			"anchor": "mangrove",
 			"item": "tag:tfc:mangrove_logs",
-			"text": "$(bold)Mangrove$()$(br)Found only in the $(thing)Muggy Bog$() biome.$(br)$(thing)Growth Days$(): 7$(br2)Can also be found $(l:the_world/earth_tree_index#mangrove)in the overworld$()."
+			"text": "$(bold)マングローブ$()$(br)$(thing)泥だらけの沼地$() バイオームでのみ見られます。$(br)$(thing)成長にかかる日数$(): 7$(br2)また、$(l:the_world/earth_tree_index#mangrove)オーバーワールド$()でも見られます。"
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "さらに読む",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/earth_tree_index",
