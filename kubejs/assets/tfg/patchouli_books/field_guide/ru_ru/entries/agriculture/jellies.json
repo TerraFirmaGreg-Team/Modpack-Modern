@@ -28,7 +28,7 @@
 			"type": "patchouli:text",
 			"title": "Производит",
 			"anchor": "produce",
-			"text": "$(thing)Джелли$() слегка привередливы, и не будут производить продукты вне среды своего естественного обитания.\nСтоит учесть, что размножать их можно в любой среде.\n$(br2)Они так же не любят автоматизацию, и будут давать продукты только в том случае, когда их кормит игрок. .$(br2)$(#B0B0B0)$(o)Возможно они хотят внимания и заботы..."
+			"text": "$(thing)Jellies$() are quite picky and will refuse to produce anything outside their natural habitat; however, they will breed just fine in any environment.$(br2)You can use a $(l:agriculture/animal_husbandry#feeding_trough)Feeding Trough$() to feed and breed them, but they require hand-feeding (either a player or deployer) to give any of their products.$(br2)$(#B0B0B0)$(o)Or maybe they just want attention..."
 		},
 		{
 			"type": "patchouli:crafting",

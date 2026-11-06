@@ -290,8 +290,10 @@
 	"itemGroup.sophisticatedcore": "Sophisticated Core",
 	"gui.sophisticatedcore.status.ender_linker.already_linked": "Magazyn jest już połączony",
 	"gui.sophisticatedcore.status.ender_linker.unsupported_endpoint": "Nie można połączyć magazynu",
+	"gui.sophisticatedcore.status.ender_linker.incompatible_endpoint": "Magazyn jest niekompatybilny z tą grupą połączonych magazynów",
 	"gui.sophisticatedcore.status.ender_linker.endpoint_has_contents": "Magazyn nie jest pusty",
 	"item.sophisticatedcore.storage.tooltip.linked_storage_group": "Grupa połączonych magazynów: %s",
 	"item.sophisticatedcore.storage.tooltip.linked_storage_endpoint": "Połączony punkt końcowy magazynu: %s",
+	"tooltip.sophisticatedcore.linked_storage.primary": "Główny połączony",
 	"tooltip.sophisticatedcore.linked_storage.secondary": "Połączony"
 }
