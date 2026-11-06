@@ -220,6 +220,9 @@
 
     "tfg.field_guide.name": "Field Guide",
     "tfg.field_guide.read_me": "§8§oRead Me! ☺§r",
+
+    "death.attack.tfg.hypoxia": "%1$s suffocated",
+    "death.attack.tfg.hypoxia.player": "%1$s suffocated while trying to escape %2$s"
     
 	"tfg.display_source.thermometer": "Thermometer",
   	"tfg.display_source.thermometer.display_mode": "Thermometer Display Mode",
