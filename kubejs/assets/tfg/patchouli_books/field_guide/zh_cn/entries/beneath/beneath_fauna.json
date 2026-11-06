@@ -10,7 +10,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)被动型$()$(li2)$(l:beneath/beneath_fauna#axolotl)美西螈$()$(li2)$(l:beneath/beneath_fauna#frog)青蛙$()$(li2)$(l:beneath/beneath_fauna#mammutilation)残缺猛犸$()$(li2)$(l:beneath/beneath_fauna#red_elk)红麋鹿$()$(li2)$(l:beneath/beneath_fauna#zombie_horse)僵尸马$()$(li)$(bold)$(l:agriculture/jellies)黏液灵$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)冰$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)植物$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)发光浆果$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)温泉水$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)熔岩$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)黑云母$()$(li2)$(l:beneath/beneath_fauna#latex_jellie)乳胶$()$(br)$(o)（接下页……）$()"
+			"text": "$(li)$(bold)被动型$()$(li2)$(l:beneath/beneath_fauna#axolotl)美西螈$()$(li2)$(l:beneath/beneath_fauna#frog)青蛙$()$(li2)$(l:beneath/beneath_fauna#mammutilation)残缺猛犸$()$(li2)$(l:beneath/beneath_fauna#red_elk)红麋鹿$()$(li2)$(l:beneath/beneath_fauna#zombie_horse)僵尸马$()$(li)$(bold)$(l:agriculture/jellies)黏液灵$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)冰$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)植物$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)发光浆果$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)温泉水$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)熔岩$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)黑云母$()$(li2)$(l:beneath/beneath_fauna#milk_jellie)泌乳$()$(br)$(o)（接下页……）$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -106,11 +106,11 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "jellies:latex",
+			"entity": "jellies:milk",
 			"scale": 0.6,
-			"name": "乳胶黏液灵",
-			"anchor": "latex_jellie",
-			"text": "$(thing)乳胶$()$(l:agriculture/jellies)黏液灵$()只能由$(thing)植物黏液灵$()和$(thing)熔岩黏液灵$()杂交而来。它们的黏液球是$(item)乳胶$()的来源。"
+			"name": "泌乳黏液灵",
+			"anchor": "milk_jellie",
+			"text": "$(thing)泌乳$()$(l:agriculture/jellies)黏液灵$()只能由$(thing)植物黏液灵$()和$(thing)熔岩黏液灵$()杂交而来。它们的黏液球是$(item)乳制品$()的来源。"
 		},
 		{
 			"type": "patchouli:entity",

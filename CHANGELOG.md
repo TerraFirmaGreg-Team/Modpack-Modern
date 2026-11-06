@@ -13,6 +13,9 @@
 - Mechanical pumps can now pull fluids from aqueducts, except for lava @Allmoz @Pyritie
 - Increased the damage the sandworm deals @Pyritie
 - Blue and red steel tongs now have infinite durability (#4665) @Pyritie
+- The higgs emitter now scales less extremely (16 blocks of extra radius per tier) @ashleney
+- Removed the barely noticeable mechanic where the Heat Pump made a small area around its back part slightly less hospitable. @ashleney
+- The Heat Pump now uses half the energy compared to the Oxygen Distributor. @ashleney
 ### Bug fixes
 - Fixed mineshafts sticking out of the sides of mountains @Pyritie
 - Fixed some plants and flowers growing in the wrong elevations (#4994) @Pyritie
@@ -22,6 +25,9 @@
 - Quest fixes (#5192) @TomPlop
 - Fixed hose pulleys not being able to drain/fill TFC fluid-logged blocks such as plants, loose rocks, stone spikes, etc (#3428) @Allmoz
 - Fixed being able to move water sources via waterlogged plants and a schematicannon @Allmoz
+- Fixed the lag caused by Ad Astra checking if it should freeze water on the moon and mars. @ashleney
+- Fixed ae2 facades not blocking the Oxygen Distributor's floodfill properly. (#5271) @ashleney
+- The grappling hook now properly works with different gravity environments. (#4346) @ashleney
 ### Mods
 #### Jellies
 - Plant and Phosphorum Jellies now give 4x the items, since they're only useful for compost generation

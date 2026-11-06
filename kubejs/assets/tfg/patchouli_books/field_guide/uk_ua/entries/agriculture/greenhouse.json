@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:agriculture/greenhouse#types)Типи теплиць$()$(li)$(bold)$(l:agriculture/greenhouse#planters)Лотки для рослин$()$(li2)$(l:agriculture/greenhouse#large_planter)Великий лоток для рослин$()$(li2)$(l:agriculture/greenhouse#quad_planter)Подвійний лоток для рослин$()$(li2)$(l:agriculture/greenhouse#bonsai_planter)Лоток для бонсаю$()$(li2)$(l:agriculture/greenhouse#hanging_planter)Підвісний лоток для рослин$()$(li2)$(l:agriculture/greenhouse#trellis_planter)Жардиньєрка для кущів$()$(li2)$(l:agriculture/greenhouse#hydroponic_planter)Гідропонний лоток для рослин$()$(li)$(bold)$(l:agriculture/greenhouse#irrigation)Зрошення$()$(li)$(bold)$(l:agriculture/greenhouse#auto_harvesting)Автоматичний збір урожаю$()$(li)$(bold)$(l:agriculture/greenhouse#electric)Електрична теплиця$()$(li)$(bold)$(l:agriculture/greenhouse#hydroponics)Гідропонний комплекс$()"
+            "text": "$(li)$(bold)$(l:agriculture/greenhouse#types)Типи теплиць$()$(li)$(bold)$(l:agriculture/greenhouse#planters)Лотки для рослин$()$(li2)$(l:agriculture/greenhouse#large_planter)Великий лоток для рослин$()$(li2)$(l:agriculture/greenhouse#quad_planter)Подвійний лоток для рослин$()$(li2)$(l:agriculture/greenhouse#bonsai_planter)Лоток для бонсаю$()$(li2)$(l:agriculture/greenhouse#hanging_planter)Підвісний лоток для рослин$()$(li2)$(l:agriculture/greenhouse#trellis_planter)Жардиньєрка для кущів$()$(li2)$(l:agriculture/greenhouse#hydroponic_planter)Гідропонний лоток для рослин$()$(li)$(bold)$(l:agriculture/greenhouse#irrigation)Зрошення$()$(li)$(bold)$(l:agriculture/greenhouse#auto_planting)Автоматичне висаджування$()$(li)$(bold)$(l:agriculture/greenhouse#auto_harvesting)Автоматичний збір урожаю$()$(li)$(bold)$(l:agriculture/greenhouse#electric)Електрична теплиця$()$(li)$(bold)$(l:agriculture/greenhouse#hydroponics)Гідропонний комплекс$()"
         },
         {
             "type": "patchouli:text",
@@ -45,7 +45,7 @@
             "type": "patchouli:text",
             "anchor": "planters",
             "title": "Лотки для рослин",
-            "text": "$(thing)Лотки для рослин$() використовуються для вирощування культур усередині теплиці. Культури в лотках для рослин споживають $(l:agriculture/growing_crops#intro)поживні речовини$(), як і звичайні культури. Лотки для рослин потрібно розміщувати всередині дійсної теплиці та активувати за допомогою $(item)кліматичної станції$(). Для роботи лоткам для рослин потрібна хоча б деяка кількість природного сонячного світла."
+            "text": "$(thing)Лотки для рослин$() використовуються для вирощування культур усередині теплиці. Культури в лотках для рослин споживають $(l:agriculture/growing_crops#intro)поживні речовини$(), як і звичайні культури. Лотки для рослин потрібно розміщувати всередині дійсної теплиці та активувати за допомогою $(item)кліматичної станції$(). Для роботи лоткам потрібне хоча б невелике освітлення."
         },
         {
             "type": "patchouli:spotlight",
@@ -102,10 +102,17 @@
         },
         {
             "type": "patchouli:spotlight",
+            "anchor": "auto_planting",
+            "title": "Автоматичне висаджування",
+            "item": "create:mechanical_arm",
+            "text": "$(li)$(thing)Механічні руки$() можна використовувати для висаджування культур у грядки. Якщо призначити грядку ціллю механічної руки, вона автоматично братиме насіння з призначених складів і висаджуватиме його у відповідну грядку залежно від типу насіння."
+        },
+        {
+            "type": "patchouli:spotlight",
             "anchor": "auto_harvesting",
             "title": "Автоматичний збір врожаю",
             "item": "firmalife:sweeper,firmalife:picker",
-            "text": "$(li)$(thing)Підмітальники$() використовуються для збору врожаю з усіх лотків, крім чотиримісних та гідропонних. Їх можна живити сигналом редстоуну.$(li)$(thing)Збирачі$() можуть живитися сигналом редстоуну зверху. Вони висуваються вниз, щоб збирати врожай із чотиримісних та гідропонних лотків."
+            "text": "$(li)Додатково, $(item)кошики для збору врожаю$() можна використовувати для збору врожаю з більшості типів саджалок.$(li)Щоб збирати предмети, які викидають $(thing)підмітальники$() та $(thing)збирачі$(), ти можеш використати $(item)вагонетку з лійкою$(), $(thing)контрапцію$() з $(item)лійками$() або GregTech $(item)збирач предметів$()."
         },
         {
             "type": "patchouli:text",
@@ -125,7 +132,7 @@
             "type": "patchouli:spotlight",
             "anchor": "hydroponics",
             "item": "tfg:hydroponics_facility",
-            "text": "$(item)Гідропонний комплекс$() — це покращення $(9)IV$() для Електричної теплиці, яка може вирощувати будь-що в будь-якому вимірі, а також підтримує $(item)Паралельні люки$()."
+            "text": "$(item)Гідропонний комплекс$() — це покращена версія електричної теплиці рівня $(9)IV$(), яка дозволяє вирощувати будь-які рослини в будь-якому вимірі, а також підтримує $(item)паралельні люки$()."
         },
         {
             "type": "patchouli:relations",

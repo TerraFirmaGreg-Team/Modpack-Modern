@@ -10,11 +10,11 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:agriculture/jellies#produce)产物$()$(li)$(bold)$(l:agriculture/jellies#feeding)喂食$()$(li)$(bold)地球物种$()$(li2)$(l:agriculture/jellies#herbal)草本$()$(li2)$(l:agriculture/jellies#phosphorum)磷质$()$(li2)$(l:agriculture/jellies#rock)岩石$()$(li)$(bold)幽冥之地物种$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)冰$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)植物$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)发光浆果$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)温泉$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)熔岩$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)黑云母$()$(li2)$(l:beneath/beneath_fauna#latex_jellie)乳胶$()$(br2)$(o)（接下页……）$()"
+			"text": "$(li)$(bold)$(l:agriculture/jellies#produce)产物$()$(li)$(bold)$(l:agriculture/jellies#feeding)喂食$()$(li)$(bold)地球物种$()$(li2)$(l:agriculture/jellies#herbal)草药$()$(li2)$(l:agriculture/jellies#phosphorum)磷$()$(li2)$(l:agriculture/jellies#rock)岩石$()$(li)$(bold)幽冥之地物种$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)冰$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)植物$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)发光浆果$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)温泉$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)熔岩$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)黑云母$()$(li2)$(l:beneath/beneath_fauna#milk_jellie)泌乳$()$(br2)$(o)（接下页……）$()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)月球物种$()$(li2)$(l:the_moon/moon_fauna#certus_jellie)赛特斯$()$(li)$(bold)火星物种$()$(li2)$(l:mars/mars_fauna#pentetic_jellie)五乙酸$()$(li)$(bold)$(l:agriculture/jellies#spoiler)???$()"
+			"text": "$(li)$(bold)月球物种$()$(li2)$(l:the_moon/moon_fauna#certus_jellie)赛特斯$()$(li)$(bold)火星物种$()$(li2)$(l:mars/mars_fauna#pentetic_jellie)喷替$()$(li)$(bold)$(l:agriculture/jellies#spoiler)???$()"
 		},
 		{
 			"type": "patchouli:image",
@@ -28,14 +28,14 @@
 			"type": "patchouli:text",
 			"title": "产出物",
 			"anchor": "produce",
-			"text": "$(thing)黏液灵$()非常挑剔，在非原生栖息地拒绝产出任何东西；不过在什么环境里它们都能正常繁殖。$(br2)它们还讨厌机器，只有玩家亲手喂食时才肯交出产出物。$(br2)$(#B0B0B0)$(o)又或者，它们只是想引起你的注意……"
+			"text": "$(thing)黏液灵$()非常挑剔，在非原生栖息地拒绝产出任何东西；不过在什么环境里它们都能正常繁殖。$(br2)你可以使用$(l:agriculture/animal_husbandry#feeding_trough)喂食槽$()来喂养和繁殖它们，但它们需要手动喂食（由玩家或机械手进行）才会交出任何产物。$(br2)$(#B0B0B0)$(o)又或者，它们只是想引起你的注意……"
 		},
 		{
 			"type": "patchouli:crafting",
 			"title": "喂食",
 			"recipe": "tfg:shaped/jellies_nutritional_mash",
 			"anchor": "feeding",
-			"text": "$(thing)营养糊$()是所有$(thing)黏液灵$()的主食，主要由谷物、水果和一些特定维度才有的材料制成。$(br2)遗憾的是，它们非常挑剔，只能由$(thing)玩家$()亲手喂食，$(l:agriculture/animal_husbandry#feeding_trough)饲料槽$()是不管用的。$(br)$(#B0B0B0)$(o)它怎么在动……"
+			"text": "$(thing)营养糊$()是所有$(thing)黏液灵$()的主食，主要由谷物、水果和一些特定维度才有的材料制成。"
 		},
 		{
 			"type": "patchouli:entity",
@@ -49,9 +49,9 @@
 			"type": "patchouli:entity",
 			"entity": "jellies:phosphorum",
 			"scale": 0.6,
-			"name": "磷质黏液灵",
+			"name": "磷黏液灵",
 			"anchor": "phosphorum",
-			"text": "$(thing)磷质$()黏液灵生成于主世界寒冷的森林中，$(l:the_world/climate#temperature)温度$()介于 -10-0°C 之间，且$(l:the_world/climate#rainfall)降雨量$()至少 150mm。它们产出$(thing)磷质黏液球$()，还会吃$(thing)腐肉$()。"
+			"text": "$(thing)磷$()黏液灵生成于主世界寒冷的森林中，$(l:the_world/climate#temperature)温度$()介于 -10-0°C 之间，且$(l:the_world/climate#rainfall)降雨量$()至少 150mm。它们产出$(thing)磷黏液球$()，还会吃$(thing)腐肉$()。"
 		},
 		{
 			"type": "patchouli:entity",
