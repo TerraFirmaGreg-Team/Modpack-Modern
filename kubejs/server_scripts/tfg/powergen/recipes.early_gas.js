@@ -337,12 +337,6 @@ function registerTFGEarlyGasRecipes(event) {
 
 	// BTX
 
-	event.recipes.gtceu.distillation_tower('tfg:methanol_distil_propylene')
-		.inputFluids(Fluid.of('gtceu:methanol', 6000))
-		.outputFluids(Fluid.of('gtceu:propene', 1000), Fluid.of('gtceu:ethylene', 1000), Fluid.of('gtceu:methane', 1000), Fluid.of('gtceu:oxygen', 6000), Fluid.of('gtceu:hydrogen', 10000))
-		.duration(20*30)
-		.EUt(GTValues.VA[GTValues.HV])
-
 	event.recipes.gtceu.cracker('tfg:crude_mixed_gas')
 		.itemInputs(Item.of('tfg:catalyser_pt_re_zsm'))
 		.inputFluids(Fluid.of('tfg:reformate_gas', 8000))
