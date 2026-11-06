@@ -1,25 +1,25 @@
 {
-    "name": "Cooking Methods",
+    "name": "料理の方法",
     "category": "tfg:cooking",
     "icon": "tfc:grill",
     "pages": [
         {
             "type": "patchouli:text",
-            "title": "Index",
+            "title": "目次",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:cooking/cooking_methods#firepit)Firepit$()$(li2)$(l:cooking/cooking_methods#grill)Grill$()$(li2)$(l:cooking/cooking_methods#pot)Pot$()$(li)$(bold)$(l:cooking/cooking_methods#oven)Ovens$()$(li2)$(l:cooking/cooking_methods#vat)Vat$()$(li2)$(l:cooking/cooking_methods#jarring_station)Jarring Station$()$(li)$(bold)$(l:cooking/cooking_methods#electric_oven)Electric Oven$()$(li)$(bold)$(l:cooking/cooking_methods#food_processor)Food Processor$()"
+            "text": "$(li)$(bold)$(l:cooking/cooking_methods#firepit)焚き火$()$(li2)$(l:cooking/cooking_methods#grill)グリル$()$(li2)$(l:cooking/cooking_methods#pot)鍋$()$(li)$(bold)$(l:cooking/cooking_methods#oven)オーブン$()$(li2)$(l:cooking/cooking_methods#vat)釜$()$(li2)$(l:cooking/cooking_methods#jarring_station)瓶詰め機$()$(li)$(bold)$(l:cooking/cooking_methods#electric_oven)電気オーブン$()$(li)$(bold)$(l:cooking/cooking_methods#food_processor)自動調理機$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introduction",
-            "text": "Food is one of the most important elements to the mechanics of $(tfg). You will need to cook food to make it safe to eat and to boost its $(l:cooking/food_and_water#nutrients)Nutritional Properties$().$(br2)Some methods of cooking even offer benefits such as reduced decay times."
+            "title": "はじめに",
+            "text": "食料は、$(tfg)$のメカニズムにおいて最も重要な要素の一つです。食料を安全に食べられるようにし、その$(l:cooking/food_and_water#nutrients)栄養価$()を高めるためには、調理を行う必要があります。$(br2)調理方法によっては、腐敗時間の短縮といったメリットがあるものもあります。"
         },
         {
             "type": "patchouli:text",
             "anchor": "firepit",
-            "title": "Firepit",
-            "text": "A $(item)Firepit$() is likely the first cooking method you will have access to. It is capable of cooking only one item at a time and uses logs as fuel."
+            "title": "焚き火",
+            "text": "$(item)焚き火$()は、おそらく最初に手に入る調理方法でしょう。一度に1つのアイテムしか調理できず、燃料には原木を使います。"
         },
         {
             "type": "patchouli:multiblock",
@@ -36,15 +36,15 @@
                     "X": "tfc:firepit[lit=true]"
                 }
             },
-            "name": "A Firepit",
+            "name": "焚き火。",
             "text": "",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
             "anchor": "grill",
-            "title": "Grill",
-            "text": "A $(thing)Grill$() is an item that can be added to a $(item)Firepit$(), $(item)Oven$(), or $(l:craftsmanship/gas_burner)Gas Burner$() to cook foods more efficiently. The grill is able to cook five items at once, and also gives these items the $(thing)Wood Grilled$() trait when cooking food, which provides a minor buff to the item's $(l:cooking/decay)expiration date$(). In order to create a firepit with grill, first create a $(l:craftsmanship/firepit)Firepit$(), then use a $(thing)Wrought Iron Grill$() on the firepit."
+            "title": "グリル",
+            "text": "$(thing)グリル$()は、食べ物をより効率的に調理するために$(item)焚き火$()、$(item)オーブン$()、$(l:craftsmanship/gas_burner)ガスバーナー$()に追加できるアイテムです。グリルは一度に5つのアイテムを調理することができ、また調理した食べ物に$(thing)焚き火焼き$()の特性を付与します。この特性は、アイテムの$(l:cooking/decay)消費期限$()をわずかに延長します。グリル付きの焚き火を作るには、まず$(l:craftsmanship/firepit)焚き火$()を作成し、次に$(thing)錬鉄のグリル$()を焚き火に使用します。"
         },
         {
             "type": "patchouli:multiblock",
@@ -67,9 +67,9 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Cooking Pot",
+            "title": "調理鍋",
             "anchor": "pot",
-            "text": "A $(thing)Pot$() is an item that can be added to the $(item)Firepit$(), $(item)Oven$(), or $(l:craftsmanship/gas_burner)Gas Burner$() to cook new types of food and also produce some other useful items.$(br2)In order to create a firepit with a pot, first create a $(l:craftsmanship/firepit)Firepit$(), then use a $(thing)Ceramic Pot$() on the firepit."
+            "text": "$(thing)鍋$()は、食べ物を調理したり、その他の便利なアイテムを作成するために、$(item)焚き火$()、$(item)オーブン$()、$(l:craftsmanship/gas_burner)ガスバーナー$()に追加できるアイテムです。$(br2)鍋付きの焚き火を作るには、まず$(l:craftsmanship/firepit)焚き火$()を作成し、次に$(thing)鍋$()を焚き火に使用します。"
         },
         {
             "type": "patchouli:multiblock",
@@ -86,13 +86,13 @@
                     "X": "tfc:pot[lit=true]"
                 }
             },
-            "name": "A Firepit with a Pot",
+            "name": "鍋付きの焚き火。",
             "text": "",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
-            "text": "The pot contains five item slots and holds up to $(thing)1000 mB$() of any fluid.$(br2)In order to cook something in the pot, first the fluid must be added by using any type of fluid container, such as a bucket, on the pot. Then add items and light the pot. It will begin boiling for a while until the recipe is completed."
+            "text": "鍋には5つのアイテムスロットがあり、最大$(thing)1000mB$()の液体を入れることができます。$(br2)鍋で何かを調理するにはまず、なんらかの種類の液体容器(バケツなど)を使用して液体を追加する必要があります。次にアイテムを追加し、鍋に火をつけます。レシピが完了するまでしばらく煮込みます。"
         },
         {
             "type": "patchouli:image",
@@ -108,7 +108,7 @@
             "item": "tfc:food/fruit_soup",
             "title": "スープのレシピ",
             "link_recipes": false,
-            "text": "Soup is made from 3-5 $(thing)fruits$(), $(thing)vegetables$(), or $(thing)meats$() in a pot of $(thing)water$(). When the recipe is done, the water in the pot will turn red. $(item)$(k:key.use)$() with a $(l:cooking/bowls)bowl$() to retrieve it. Soup combines multiple nutrients into a single meal."
+            "text": "スープは、$(thing)水$()の入った鍋に3～5個の$(thing)果物$()、$(thing)野菜$()、$(thing)肉を$()入れることで作成できます。レシピが完成すると、鍋の水が赤くなります。$(l:cooking/bowls)ボウル$()を持ち、$(item)$(k:key.use)$()を使って回収できます。スープは複数の栄養素を1つの食事に組み合わせて摂取することができます。"
         },
         {
             "type": "patchouli:spotlight",
@@ -121,42 +121,42 @@
             "title": "オーブン",
             "anchor": "oven",
             "type": "patchouli:text",
-            "text": "$(thing)Ovens$() are a great way of cooking lots of food in a way that improves their shelf life. Oven-baked food decays at 90% of the rate of regular food. Ovens are a multiblock structure consisting of a $(thing)Bottom Oven$(), $(thing)Top Oven$(), and $(thing)Chimneys$(). These blocks start off as clay, and must be $(thing)Cured$() by raising their temperature to a certain amount for long enough."
+            "text": "$(thing)オーブン$()は、食品の保存期間を延ばしながら大量に調理するのに最適な方法です。オーブンで焼いた食品の腐敗速度は、通常の食品の90%になります。オーブンは、$(thing)オーブンかまど$()、$(thing)オーブン$()本体、および $(thing)煙突$() から構成されるマルチブロック構造です。これらのブロックは当初粘土の状態ですが、温度を一定値以上に上げ、十分な時間加熱することで $(thing)硬化$() させる必要があります。"
         },
         {
             "type": "patchouli:text",
-            "text": "Ovens are insulated with $(thing)$(t:#firmalife:oven_insulation)Bricks$(), other oven blocks, or anything that can insulate a Forge. This means you can use stone blocks if you want!$(br2)$(l:game_mechanics/heating#tongs)Tongs$() or $(item)Mittens$() are a safe way to remove hot items from an Oven. Just $(item)$(k:key.use)$() on it while holding it to retrieve items. Otherwise, you may get burned!$(br2)$(item)Oven Appliances$() extend oven functionality."
+            "text": "オーブンは、$(thing)$(t:#firmalife:oven_insulation)レンガ$()、その他のオーブン用ブロック、あるいは炉で使える断熱効果のあるものなら何でも使って断熱できます。つまり、必要であれば石のブロックを使っても構いません！$(br2)$(l:game_mechanics/heating#tongs)トング$() や $(item)ミトン$() を使えば、オーブンから高温のアイテムを安全に取り出すことができます。アイテムを保持した状態で $(item)$(k:key.use)$() を押すするだけで、アイテムを取り出すことができます。そうしないと、火傷をする恐れがあります！$(br2)$(item)オーブン用器具$()は、オーブンの機能を拡張します。"
         },
         {
             "type": "patchouli:text",
-            "title": "Oven Building",
+            "title": "オーブンの構築方法",
             "anchor": "oven_building",
-            "text": "The $(thing)Oven$() first consists of the Top Oven placed on top of the Bottom Oven. All sides of each oven part, besides the front face, should then be covered with $(thing)$(t:#firmalife:oven_insulation)Oven Insulation$() blocks. Placing a stack of three chimneys directly behind the oven causes the smoke from the oven to travel up and out of it, preventing fires. If you don't do this, smoke will quickly fill up your house and fire may spread from the oven!"
+            "text": "$(thing)オーブン$()は、まずオーブンかまどの上にオーブン本体を配置して構成されます。その後、各オーブンパーツの前面を除くすべての側面を、$(thing)$(t:#firmalife:oven_insulation)オーブン用断熱$()ブロックで覆う必要があります。オーブンの真後ろに煙突を3つ積み重ねて設置すると、オーブンからの煙が上方に抜け出し、火災を防ぐことができます。これを怠ると、家の中がすぐに煙で満たされ、オーブンから火が燃え広がる恐れがあります！"
         },
         {
             "type": "patchouli:text",
             "anchor": "bottom_oven",
-            "text": "The Bottom Oven is used to hold fuel, which may only be logs. Press $(item)$(k:key.use)$() to add them. The bottom oven is also the part of the oven which may be lit with a $(thing)Firestarter$() or other tool. It will transfer generated heat to the top oven or appliances.$(br2)The bottom oven must be insulated to maintain heat."
+            "text": "オーブンかまどは燃料を入れることができますが、使用できるのは原木のみです。$(item)$(k:key.use)$() で原木を追加または取り出すことができます。また、オーブンかまどは、$(thing)火起こし器$() やその他の道具を使って火をつけることができる部分でもあります。 発生した熱は、オーブンや調理器具へと伝達されます。$(br2)熱を保持するためには、オーブンかまどを断熱する必要があります。"
         },
         {
             "type": "patchouli:text",
             "anchor": "top_oven",
-            "text": "The Top Oven contains the items that are being cooked. It will draw heat from the Bottom Oven and slowly release it over time. Press $(item)$(k:key.use)$() with an item to insert. Remember to use $(thing)Tongs$() or $(thing)Mittens$() to remove the items after.$(br2)The top oven needs insulation to reach higher temperatures. But it is not always recommended since some items like bread can burn to ash if left at high heat."
+            "text": "オーブン本体には、調理中のアイテムを入れます。オーブンかまどから熱を取り込み、時間をかけてゆっくりと放出します。挿入したいアイテムを所持した状態で、$(item)$(k:key.use)$() を押してください。調理後のアイテムを取り出す際は、$(thing)トング$() または $(thing)三トン$() を使用することを忘れないでください。$(br2)オーブンは、より高い温度に達するために断熱処理が必要です。ただし、パンなどの一部のアイテムは高温のまま放置すると灰になってしまうため、必ずしも断熱処理が推奨されるわけではありません。"
         },
         {
             "type": "patchouli:text",
-            "text": "Pots and Grills can be placed on top of a $(thing)Bottom Oven$(). These devices will get heat automatically from the bottom oven. The pot is only able to be used for making soup. It cannot execute regular pot recipes."
+            "text": "鍋やグリルは$(thing)オーブンかまど$()の上に置くことができます。これらの器具はオーブンかまどから自動的に熱を得ます。ただし、鍋はスープを作るためにのみ使用でき、通常の鍋レシピを実行することはできません。"
         },
         {
             "type": "patchouli:text",
-            "title": "Oven Curing",
+            "title": "オーブンの硬化",
             "anchor": "oven_curing",
-            "text": "Curing Oven blocks is easy, but requires patience. Simply start running your Bottom Oven as you would normally, and then wait. If an oven block is above $(t:Dark Red **)$(4)600$()°C for about 80 seconds, it will cure itself and any oven blocks around it. The curing effect will pass all the way up chimneys nearby."
+            "text": "オーブンブロックの硬化は簡単ですが、根気が必要です。普段通りオーブンかまどを稼働させ、あとは待つだけです。オーブンブロックが約80秒間$(t:Dark Red **)$(4)600$()度以上を維持すれば、そのブロック自体と周囲のオーブンブロックが自動的に硬化します。この硬化効果は、近くの煙突を伝って上まで広がっていきます。"
         },
         {
             "type": "patchouli:multiblock",
-            "name": "Uncured Oven",
-            "text": "Ovens should first be assembed $(n)uncured$(). You can customize the appliances and size.",
+            "name": "硬化していないオーブン",
+            "text": "オーブンは、まず$(n)未焼成$()の状態で組み立てる必要があります。機器の種類やサイズをカスタマイズすることができます。",
             "enable_visualize": true,
             "multiblock": {
                 "pattern": [
@@ -210,8 +210,8 @@
         },
         {
             "type": "patchouli:multiblock",
-            "name": "Cured Oven",
-            "text": "Example oven structure after curing.",
+            "name": "硬化したオーブン",
+            "text": "硬化後のオーブン構造例。",
             "enable_visualize": false,
             "multiblock": {
                 "pattern": [
@@ -270,33 +270,33 @@
         {
             "type": "patchouli:crafting",
             "recipe": "firmalife:crafting/oven_insulation",
-            "text": "Crafting oven insulation for your Bottom Oven allows you to remove the need for insulating it on the sides and back. It does not remove the need for the chimney or to insulate top ovens. Use $(item)$(k:key.use)$() to apply it."
+            "text": "オーブンかまど用の断熱材を作成すると、側面や背面の断熱処理が不要になります。ただし煙突の設置やオーブン本体の断熱は必要です。$(item)$(k:key.use)$() で適用してください。"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Aesthetics",
+            "title": "装飾",
             "anchor": "countertop",
             "item": "firmalife:brick_countertop,firmalife:rustic_countertop,firmalife:tile_countertop,firmalife:stone_countertop,firmalife:rustic_finish,firmalife:tile_finish,firmalife:stone_finish",
-            "text": "$(thing)Countertops$() and $(thing)Finishes$() are aesthetic blocks that count as oven parts. Finishes are applied with $(item)$(k:key.use)$(). Only $(n)brick$() oven blocks may take on finishes. Stone finish can't be applied to brick. Use $(item)Sealed bricks$() to match the look."
+            "text": "$(thing)カウンター$() および $(thing)仕上げ$() は、オーブンの部品として扱われる外観用ブロックです。仕上げは $(item)$(k:key.use)$() を使用して適用します。仕上げを適用できるのは $(n)レンガ$() オーブンブロックのみです。普通のレンガブロックには石仕上げを適用することはできません。外観を統一するには、$(item)密封レンガ$() を使用してください。"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Oven Hopper",
+            "title": "オーブンホッパー",
             "anchor": "oven_hopper",
             "item": "firmalife:oven_hopper",
-            "text": "The $(thing)Oven Hopper$() will input logs into any Bottom Oven that it is facing. It holds 16 logs (4 stacks of 4, like a log pile), and its inventory is fed by dropping items in the top. Item pipes are capable of doing the same thing, but they cannot act as insulation."
+            "text": "$(thing)オーブンホッパー$()は、対面にあるオーブンかまどに原木を投入します。16本の原木（4つを4スタック）を収納し、インベントリへは上部にアイテムをドロップすることで供給できます。$(br)アイテムパイプでも同じことができますが、断熱材としての役割は果たせません。"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Ashtray",
+            "title": "灰受け",
             "anchor": "ashtray",
             "item": "firmalife:ashtray",
-            "text": "The $(thing)Ashtray$() collects $(thing)Wood Ash$() when placed below a $(thing)Bottom Oven Block$(). There is a 0.5 chance it gains ash when fuel is consumed. Ash is extracted with $(item)$(k:key.use)$() or hoppers, and inserted via $(item)$(k:key.attack)$() it."
+            "text": "$(thing)灰受け$()は$(thing)オーブンかまど$()の下に置くと$(thing)木の灰$()を集めます。$(br)燃料が消費されると0.5%の確率で灰を集めます。$(br)灰は $(item)$(k:key.use)$() またはホッパーを使って回収でき、$(item)$(k:key.attack)$() で挿入できます。"
         },
         {
             "type": "patchouli:multiblock",
-            "name": "Insulated Oven",
-            "text": "Example of an insulated oven with appliances and a finish.$(br)Note: $(7)Vats, pots and grills count as insulating blocks.$()",
+            "name": "断熱されたオーブン",
+            "text": "設備と仕上げが施された断熱オーブンの例。$(br)注：$(7)釜、鍋、グリルは断熱ブロックとして扱われます。$()",
             "enable_visualize": false,
             "multiblock": {
                 "pattern": [
@@ -359,18 +359,18 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Vat",
+            "title": "釜",
             "anchor": "vat",
             "item": "firmalife:vat",
-            "text": "The $(thing)Vat$() produces boiling recipes in bulk. It has one slot for items, and 10,000mB of fluid space, similar to a barrel.$(br2)Vats can only hold one fluid type at a time. So, if you make a recipe that outputs fluids while still having leftover fluid inputs it will void those inputs!"
+            "text": "$(thing)釜$()は、煮込みレシピを大量に生成します。アイテム用のスロットが1つあり、樽と同様に10,000mBの液体収納スペースがあります。$(br2)釜は、一度に1種類の液体しか収納できません。そのため、液体を出力するレシピを作成する際、まだ余っている液体素材がある場合、それらの素材は無駄になってしまいます！"
         },
         {
             "type": "patchouli:text",
-            "text": "To use a vat, $(item)$(k:key.use)$() it with fluids and items to add them to the inventory. With an empty hand and $(item)$(k:key.sneak)$() held, click to seal and unseal the vat. A vat will not boil until it is sealed.$(br)Vats should be placed above a $(thing)Bottom Oven$(). If the vat overflowed on completion of the recipe, it will not boil!$(br2)Vats can be automatically opened and closed with $(thing)Redstone$(), and interact with $(item)pipes$() or a $(item)Mechanical Arm$()."
+            "text": "釜を使用するには、液体やアイテム手にもって$(item)$(k:key.use)$() を押すことで、それらをインベントリに追加します。両手を空にした状態で $(item)$(k:key.sneak)$() を押したままクリックすると、大桶の密封や密封解除ができます。釜は密閉されるまで沸騰しません。$(br)大釜は $(thing)オーブンかまど$() の上に設置してください。レシピの完了時に釜から液体が溢れてしま場合は、沸騰しなくなります！$(br2)大釜は $(thing)レッドストーン$() を使って自動的に開閉させることができ、$(item)パイプ$() や $(item)メカニカルアーム$() と連動させることができます。"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Example of an oven with a $(l:cooking/cooking_methods#vat)Vat$() and $(l:cooking/cooking_methods#jarring_station)Jarring Station$().",
+            "text": "$(l:cooking/cooking_methods#vat)釜$() と $(l:cooking/cooking_methods#jarring_station)瓶詰め機$() のあるオーブンの例。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -436,16 +436,16 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Jarring Station",
+            "title": "瓶詰め機",
             "anchor": "jarring_station",
             "item": "firmalife:jarring_station",
-            "text": "The $(thing)Jarring Station$() is used to automatically fill $(6)$(t:Empty Jar with Lid)Jars$() with the $(l:cooking/cooking_methods#vat)Vat$(). The jarring station has a spout on one side that should point to the vat.$(br)When the vat produces jam, it will automatically fill the jars with it and seal them."
+            "text": "$(thing)瓶詰め機$()は、$(6)$(t:空の蓋付きジャム瓶)瓶$()に、$(l:cooking/cooking_methods#vat)大釜$()の中身を自動的に充填するために使用されます。瓶詰め機の片側には注ぎ口があり、これを釜の方に向ける必要があります。$(br)釜でジャムが作られると、自動的に瓶にジャムが充填され、密封されます。"
         },
         {
             "type": "patchouli:multiblock",
-            "name": "Electric Oven",
+            "name": "電気オーブン",
             "anchor": "electric_oven",
-            "text": "The $(item)Electric Oven$() is a machine added by $(tfg) to automatically cook food items using $(thing)EU$().",
+            "text": "$(item)電気オーブン$()は、$(tfg)$によって追加された装置で、$(thing)EU$()を使用して食材を自動的に調理します。",
             "enable_visualize": false,
             "multiblock": {
                 "pattern": [
@@ -463,9 +463,9 @@
         },
         {
             "type": "patchouli:multiblock",
-            "name": "Food Processor",
+            "name": "自動調理機",
             "anchor": "food_processor",
-            "text": "The $(item)Food Processor$() is another machine added by $(tfg_short) to automatically create meals or process food ingredients using $(thing)EU$().",
+            "text": "$(item)自動調理機$()は、$(tfg_short)$によって追加されたもう1つの機械で、$(thing)EU$()を使用して自動的に食事を作ったり、食材を加工したりすることができます。",
             "enable_visualize": false,
             "multiblock": {
                 "pattern": [
@@ -483,7 +483,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "さらに読む",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/food_and_water",

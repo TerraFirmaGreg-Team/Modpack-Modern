@@ -16,7 +16,7 @@
 			"type": "patchouli:multiblock",
 			"anchor": "space_station",
 			"name": "太空平台",
-			"text": "會建造一座平台，讓你的火箭降落。",
+			"text": "會建好一座平台供火箭降落。",
 			"enable_visualize": false,
 			"multiblock": {
 				"pattern": [

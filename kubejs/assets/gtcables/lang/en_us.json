@@ -1,0 +1,39 @@
+{
+	"item.gtcables.spool.empty": "Empty Spool",
+	"item.gtcables.spool.filled": "%s Spool",
+
+	"block.gtcables.connector": "Wire Connector",
+
+	"tooltip.gtcables.length": "%s / %s m",
+	"tooltip.gtcables.loss_per_block": "§cLoss/Centimeter/Ampere:§r §c%d§7 mEU-Volt",
+	"tooltip.gtcables.selected": "Starting connector: %s (sneak-click to clear)",
+
+	"message.gtcables.selection_cleared": "Starting connector cleared.",
+	"message.gtcables.empty": "Fill this spool with GregTech wire or cable in your inventory first.",
+	"message.gtcables.selected": "Starting connector selected. Use this spool on the second connector.",
+	"message.gtcables.missing_start": "Starting connector is missing. Select it again.",
+	"message.gtcables.same_connector": "Choose a different connector.",
+	"message.gtcables.too_long": "Span exceeds maximum length.",
+	"message.gtcables.insufficient_wire": "This spool doesn't have enough wire.",
+	"message.gtcables.invalid_wire": "This wire type is unavailable.",
+	"message.gtcables.duplicate": "These connectors are already connected.",
+	"message.gtcables.cable_obstructed": "The cable is obstructed.",
+	"message.gtcables.connected": "Cable connected.",
+	"message.gtcables.no_space": "Make enough room in empty or matching spools before cutting.",
+	"message.gtcables.cut_first": "Recover attached cables with a wire cutter before breaking this connector.",
+	"message.gtcables.recovered": "Cable recovered into spools.",
+
+	"config.gtcables.spool_max_capacity": "Max Spool Capacity",
+	"config.gtcables.connection_max_length": "Max Connection Length",
+	"config.gtcables.cable_intersection_test": "Cable Intersection Test",
+
+	"config.gtcables.render_distance": "Cable Render Distance",
+
+	"config.jade.plugin_gtcables.wire_data": "Suspended wire data",
+	"jade.gtcables.voltage": "Voltage: %s",
+	"jade.gtcables.amperage": "Amperage: %s",
+	"jade.gtcables.length": "Length: %s m",
+	"jade.gtcables.span_loss": "Span loss: %s EU/A",
+	"jade.gtcables.endpoint_a": "From: %s",
+	"jade.gtcables.endpoint_b": "To: %s"
+}

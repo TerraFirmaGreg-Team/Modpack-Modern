@@ -29,7 +29,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "一般的$(thing)溫室方塊$()有四種：牆壁、門、屋頂和屋頂頂部。屋頂和屋頂頂部分別是階梯和半磚。這些方塊也有較薄的版本，稱為面板牆、地板門和面板屋頂。你可以隨意組合這些方塊來建造溫室結構。"
+            "text": "一般的$(thing)溫室方塊$()有四種：牆壁、門、屋頂和屋頂頂部。屋頂和屋頂頂部分別是階梯和半磚。這些方塊也有較薄的版本，稱為面板牆、地板門和面板屋頂。可任意組合來建造溫室。"
         },
         {
             "type": "tfg:multimultiblock",
@@ -57,7 +57,7 @@
             "type": "patchouli:spotlight",
             "anchor": "quad_planter",
             "item": "firmalife:quad_planter",
-            "text": "$(thing)四格種植盆$()可同時種植四株各自獨立的作物，它們共用同一個養分池，成熟後可分別按下$(item)$(k:key.use)$()收成。$(br)四格種植盆通常用來種植$(thing)洋蔥$()和$(thing)甜菜$()等較小的蔬菜。"
+            "text": "$(thing)四格種植盆$()可同時種植四株各自獨立的作物，它們共用同一個養分池，成熟後可分別按 $(item)$(k:key.use)$() 收成。$(br)四格種植盆通常用來種植$(thing)洋蔥$()和$(thing)甜菜$()等較小的蔬菜。"
         },
         {
             "type": "patchouli:spotlight",
@@ -102,34 +102,41 @@
         },
         {
             "type": "patchouli:spotlight",
-            "anchor": "auto_harvesting",
+            "anchor": "auto_planting",
             "title": "自動收成",
-            "item": "firmalife:sweeper,firmalife:picker",
+            "item": "create:mechanical_arm",
             "text": "$(li)$(thing)清掃機$()用來收成四格種植盆和水耕種植盆以外的種植盆，可以用紅石驅動。$(li)$(thing)採摘機$()可以由上方的紅石訊號驅動，它會向下伸出，採摘四格種植盆和水耕種植盆中的作物。"
         },
         {
+            "type": "patchouli:spotlight",
+            "anchor": "auto_harvesting",
+            "title": "Auto-Harvesting",
+            "item": "firmalife:sweeper,firmalife:picker",
+            "text": "$(li)$(item)採收籃$()也能收成大部分類型的種植盆。$(li)要收集$(thing)清掃機$()和$(thing)採摘機$()掉落的物品，可以使用$(item)漏斗礦車$()、裝有$(item)漏斗$()的$(thing)動態結構$()，或格雷科技的$(item)物品收集器$()。"
+        },
+        {
             "type": "patchouli:text",
-            "text": "$(li)此外，$(item)採收籃$()可以收成大部分類型的種植盆。$(li)要收集$(thing)清掃機$()和$(thing)採摘機$()掉落的物品，可以使用$(item)漏斗礦車$()、裝有$(item)漏斗$()的$(thing)動態結構$()，或格雷科技的$(item)物品收集器$()。"
+            "text": "偏好格雷科技機器而非機械動力裝置的話，多方塊結構$(item)電力溫室$()可以供應$(thing)原木$()和其他植物，還能種植更多 TFC 的裝飾性植物！$(br2)可在$(7)LV$()後期製作。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "electric",
             "item": "tfg:electric_greenhouse",
-            "text": "如果你偏好格雷科技機器勝過機械動力裝置，多方塊結構$(item)電力溫室$()可作為$(thing)原木$()和其他植物的來源，還能種植更多 TFC 的裝飾性植物！$(br2)可在$(7)LV$()後期製作。"
+            "text": "$(bold)注意：$()這個多方塊結構的牆壁可自訂為任何有效的鐵等級溫室方塊。$(br2)查看$(emi)多方塊結構預覽即可看到所有可用的方塊。$(br2)電力溫室也能透過幾種方式強化，例如$(l:agriculture/fertilizers)肥料$()，或之後在 $(6)HV$() 使用$(thing)魚菜共生循環$()。"
         },
         {
             "type": "patchouli:text",
-            "text": "$(bold)注意：$()這個多方塊結構的牆壁可自訂為任何有效的鐵等級溫室方塊。$(br2)查看$(emi)多方塊結構預覽即可看到所有可用的方塊。$(br2)電力溫室也能透過幾種方式強化，例如$(l:agriculture/fertilizers)肥料$()，或之後在 $(6)HV$() 使用$(thing)魚菜共生循環$()。"
+            "text": "$(item)水耕設施$()是電力溫室在$(9)IV$()的升級版，可以在任何維度種植任何作物，並支援$(item)平行倉$()。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "hydroponics",
             "item": "tfg:hydroponics_facility",
-            "text": "$(item)水耕設施$()是電力溫室在$(9)IV$()的升級版，可以在任何維度種植任何作物，並支援$(item)平行倉$()。"
+            "text": "The $(item)Hydroponics Facility$() is an $(9)IV$() upgrade to the Electric Greenhouse that can grow anything in any dimension and also supports $(item)Parallel Hatches$()."
         },
         {
             "type": "patchouli:relations",
-            "title": "延伸閱讀",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_crops",

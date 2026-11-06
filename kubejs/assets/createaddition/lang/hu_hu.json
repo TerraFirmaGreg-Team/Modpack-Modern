@@ -135,7 +135,5 @@
 	"statusbar.createaddition.wire.long": "Vezeték túl hosszú",
 	"statusbar.createaddition.wire.no_connection": "Nincs csatlakozás",
 	"statusbar.createaddition.wire.removed": "Vezeték eltávolítva",
-	"statusbar.createaddition.wire.requires_high_current": "Ehhez a csatlakozáshoz Magas Áramú kábel kell",
-	"block.createaddition.creative_energy": "Kreatív Generátor",
-	"block.createaddition.creative_energy.tooltip.summary": "Végtelen _⚡_ -ot termel."
+	"statusbar.createaddition.wire.requires_high_current": "Ehhez a csatlakozáshoz Magas Áramú kábel kell"
 }

@@ -112,6 +112,8 @@
 	"create_connected.battery.status.discharging": "XảF",
 	"create_connected.battery.status.empty": "Trống",
 	"create_connected.battery.status.full": "Đầy",
+	"create_connected.centrifugal_clutch.max_speed": "Tốc độ tối đa",
+	"create_connected.centrifugal_clutch.min_speed": "Tốc độ tối thiểu",
 	"create_connected.centrifugal_clutch.speed_threshold": "Ngưỡng tốc độ",
 	"create_connected.display_source.boiler_status": "Trạng thái nồi hơi",
 	"create_connected.generic.unit.su_hours": "su-giờ",

@@ -312,7 +312,7 @@ function registerTFGRepairRecipes(event) {
 
 	// Tongs
 	global.TFC_METALS.forEach(metal => {
-		if (metal === "cast_iron")
+		if (metal === "cast_iron" || metal === "red_steel" || metal === "blue_steel")
 			return;
 
 		event.custom({

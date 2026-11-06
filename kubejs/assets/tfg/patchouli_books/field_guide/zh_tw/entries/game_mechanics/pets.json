@@ -12,7 +12,7 @@
             "type": "patchouli:text",
             "anchor": "intro",
             "title": "簡介",
-            "text": "$(thing)寵物$()是功能類似$(l:agriculture/animal_husbandry)家畜$()的動物，但不提供產物，而是能聽從指令、陪伴你、防治害蟲和協助狩獵。$(br)寵物會認定某位玩家為$(thing)主人$()。餵食寵物讓熟悉度超過$(item)15%$()，就能成為牠的主人。寵物只聽從主人的指令。$(br)手持$(thing)染料$()點擊寵物可以改變項圈顏色。"
+            "text": "$(thing)寵物$()是功能類似$(l:agriculture/animal_husbandry)牲畜$()的動物，但不提供產物，而是能聽從指令、陪伴你、防治害蟲和協助狩獵。$(br)寵物會認定某位玩家為$(thing)主人$()。餵食寵物讓熟悉度超過$(item)15%$()，就能成為牠的主人。寵物只聽從主人的指令。$(br)手持$(thing)染料$()點擊寵物可以改變項圈顏色。"
         },
         {
             "type": "patchouli:text",
@@ -117,7 +117,7 @@
         },
         {
             "type": "patchouli:entity",
-            "text": "由於不存在村莊，馴服$(l:the_world/wild_animals#ocelot)山貓$()是取得貓的唯一方法。",
+            "text": "由於沒有村莊，馴服$(l:the_world/wild_animals#ocelot)山貓$()是取得貓的唯一方法。",
             "entity": "tfc:cat{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
             "title": " ",
             "scale": 0.7
@@ -163,7 +163,7 @@
             "type": "patchouli:text",
             "anchor": "home",
             "title": "回家",
-            "text": "$(thing)到家了$()會設定寵物的家，讓動物放鬆時待在附近。這個指令不會改變動物目前正在進行的活動。$(br2)$(thing)坐下$()會讓寵物原地坐下。不過動物有自己的想法，最終會覺得無聊而站起來！"
+            "text": "$(thing)到家了$()會設定寵物的家，讓動物放鬆時待在附近。這個指令不會打斷動物目前的活動。$(br2)$(thing)坐下$()會讓寵物原地坐下。但動物有自己的想法，最終會覺得無聊而站起來！"
         },
         {
             "type": "patchouli:text",
@@ -176,7 +176,7 @@
             "anchor": "treat",
             "title": "邪火點心",
             "item": "species:wicked_treat",
-            "text": "將藥物與骨粉混合即可製作$(thing)邪火點心$()。$(br)邪火點心會在短時間內為你的寵物提供$(bold)大幅$()的能力值加成。"
+            "text": "將藥物與骨粉混合即可製作$(thing)邪火點心$()。$(br)邪火點心能在短時間內$(bold)大幅$()提升寵物的能力值。"
         },
         {
             "type": "patchouli:spotlight",

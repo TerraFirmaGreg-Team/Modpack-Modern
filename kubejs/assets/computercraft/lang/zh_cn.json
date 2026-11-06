@@ -91,6 +91,7 @@
 	"gui.computercraft.config.execution.tooltip": "控制计算机的执行行为。这主要用于微调服务器，一般不需要触碰。",
 	"gui.computercraft.config.floppy_space_limit": "软盘空间限制（字节）",
 	"gui.computercraft.config.floppy_space_limit.tooltip": "软盘的存储空间限制，以字节为单位。",
+	"gui.computercraft.config.http": "HTTP",
 	"gui.computercraft.config.http.bandwidth": "带宽",
 	"gui.computercraft.config.http.bandwidth.global_download": "全局下载限速",
 	"gui.computercraft.config.http.bandwidth.global_download.tooltip": "每秒钟内可下载的字节数。此值在所有计算机之间共享。（字节/秒）",

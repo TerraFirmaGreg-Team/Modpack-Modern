@@ -42,7 +42,6 @@ function registerTFGConcreteRecipes(event) {
 		.circuit(3)
 		.EUt(16)
 
-	//VENUS - IV - REWORK
 	event.recipes.gtceu.mixer('tfg:concrete_from_clay_calcite')
 		.itemInputs(
 			Ingredient.of('#tfg:stone_dusts').withCount(3),
@@ -53,6 +52,19 @@ function registerTFGConcreteRecipes(event) {
 		.duration(40)
 		.circuit(4)
 		.EUt(16)
+
+
+	//Concrete Powder Barrel Recipe Parity
+
+	global.MINECRAFT_DYE_NAMES.forEach(color => {
+		event.recipes.gtceu.chemical_bath(`gtceu:${color}_concrete`)
+			.itemInputs(`minecraft:${color}_concrete_powder`)
+			.inputFluids('minecraft:water 100')
+			.itemOutputs(`minecraft:${color}_concrete`)
+			.category(GTRecipeCategories.CHEM_DYES)
+			.duration(20)
+			.EUt(7)
+	})
 
 
 	//GT light/dark concrete recipe fix
@@ -112,7 +124,6 @@ function registerTFGConcreteRecipes(event) {
 		.ingredients(['#tfg:stone_dusts', '#tfg:stone_dusts', '#tfg:stone_dusts', '#forge:dusts/calcite', '#forge:dusts/gypsum'], Fluid.of('minecraft:water', 1000))
 		.outputFluid(Fluid.of('gtceu:concrete', 1000))
 
-    //VENUS - IV - REWORK
 	event.recipes.firmalife.mixing_bowl()
 		.ingredients(['#tfg:stone_dusts', '#tfg:stone_dusts', '#tfg:stone_dusts', '#forge:dusts/calcite', '#forge:dusts/clay'], Fluid.of('minecraft:water', 500))
 		.outputFluid(Fluid.of('gtceu:concrete', 500))

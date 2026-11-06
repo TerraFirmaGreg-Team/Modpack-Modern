@@ -8,6 +8,7 @@
   "block.megacells.mega_crafting_unit": "MEGAクラフトユニット",
   "block.megacells.mega_emc_interface": "MEGA錬成インターフェース",
   "block.megacells.mega_energy_cell": "超濃縮エナジーセル",
+  "gui.megacells.ModName": "MEGA Cells",
   "gui.tooltips.megacells.AcceleratorThreads": "ブロック1つごとに４個の並列処理を提供します。",
   "gui.tooltips.megacells.Contains": "内容: %s",
   "gui.tooltips.megacells.Disabled": "無効化",
@@ -48,6 +49,7 @@
   "item.megacells.portable_item_cell_4m": "4M ポータブルアイテムセル",
   "item.megacells.portable_item_cell_64m": "64M ポータブルアイテムセル",
   "item.megacells.printed_accumulation_processor": "集積回路",
+  "text.autoconfig.megacells.title": "MEGA Cells",
   "block.megacells.mega_pattern_provider": "MEGAパターンプロバイダー",
   "item.megacells.cable_mega_pattern_provider": "MEGAパターンプロバイダー"
 }

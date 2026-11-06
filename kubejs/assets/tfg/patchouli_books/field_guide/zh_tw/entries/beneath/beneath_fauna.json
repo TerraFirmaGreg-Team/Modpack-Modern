@@ -30,7 +30,7 @@
 			"scale": 1,
 			"name": "青蛙",
 			"anchor": "frog",
-			"text": "$(thing)青蛙$()可以在上層和中層找到。牠們可以被馴服，也可以被吃掉。"
+			"text": "$(thing)青蛙$()可以在上層和中層找到，可以馴服，也可以吃掉。"
 		},
 		{
 			"type": "patchouli:entity",
@@ -54,7 +54,7 @@
 			"scale": 0.7,
 			"name": "殭屍馬",
 			"anchor": "zombie_horse",
-			"text": "$(thing)殭屍馬$()無法被馴服或騎乘，但可以拉動$(item)畜力把手$()。"
+			"text": "$(thing)殭屍馬$()無法馴服或騎乘，但可以拉動$(item)畜力把手$()。"
 		},
 		{
 			"type": "patchouli:entity",
@@ -102,14 +102,14 @@
 			"scale": 0.6,
 			"name": "熔岩果凍怪",
 			"anchor": "lava_jellie",
-			"text": "$(thing)熔岩$()$(l:agriculture/jellies)果凍怪$()出沒在下層。牠們會讓附近的玩家升溫，如果你住在寒冷的地方，這可能很有用。"
+			"text": "$(thing)熔岩$()$(l:agriculture/jellies)果凍怪$()出沒在下層。牠們會讓附近的玩家升溫，住在寒冷地帶的話很實用。"
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "jellies:latex",
+			"entity": "jellies:milk",
 			"scale": 0.6,
 			"name": "乳膠果凍怪",
-			"anchor": "latex_jellie",
+			"anchor": "milk_jellie",
 			"text": "$(thing)乳膠$()$(l:agriculture/jellies)果凍怪$()只能由$(thing)植物果凍怪$()和$(thing)熔岩果凍怪$()繁殖而來。牠們的黏液球是$(item)乳膠$()的來源。"
 		},
 		{
@@ -126,7 +126,7 @@
 			"scale": 0.5,
 			"name": "鱷魚",
 			"anchor": "crocodile",
-			"text": "$(thing)鱷魚$()可以在上層和中層找到，牠們正埋伏著等待獵物！"
+			"text": "$(thing)鱷魚$()出沒在上層和中層，總在埋伏等待獵物！"
 		},
 		{
 			"type": "patchouli:entity",
@@ -142,7 +142,7 @@
 			"scale": 0.8,
 			"name": "高嶺土靈",
 			"anchor": "kaolin_klayze",
-			"text": "$(thing)高嶺土靈$()可以在$(thing)繁生岩穴$()生態域找到，牠們守護著$(item)高嶺土$()！"
+			"text": "$(thing)高嶺土靈$()出沒在$(thing)繁生岩穴$()生態域，守護著$(item)高嶺土$()！"
 		},
 		{
 			"type": "patchouli:entity",
@@ -150,7 +150,7 @@
 			"scale": 1,
 			"name": "石墨黏土靈",
 			"anchor": "graphite_glayze",
-			"text": "$(thing)石墨黏土靈$()可以在下層找到。小心別被牠們撞進熔岩裡！"
+			"text": "$(thing)石墨黏土靈$()出沒在下層。小心別被牠們撞進熔岩裡！"
 		},
 		{
 			"type": "patchouli:entity",
@@ -174,7 +174,7 @@
 			"scale": 1,
 			"name": "終界使者",
 			"anchor": "endermen",
-			"text": "各種不同的$(thing)終界使者$()遍布各處。$(item)蘑菇$()終界使者完全被動，其他種類則都是中立的。"
+			"text": "各種$(thing)終界使者$()遍布各處。$(item)蘑菇$()終界使者完全被動，其他種類則都是中立的。"
 		},
 		{
 			"type": "patchouli:entity",

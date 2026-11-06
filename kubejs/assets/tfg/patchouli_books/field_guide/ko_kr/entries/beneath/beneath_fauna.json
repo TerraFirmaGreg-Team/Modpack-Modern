@@ -10,7 +10,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)Passive$()$(li2)$(l:beneath/beneath_fauna#axolotl)Axolotl$()$(li2)$(l:beneath/beneath_fauna#frog)Frog$()$(li2)$(l:beneath/beneath_fauna#mammutilation)Mammutilation$()$(li2)$(l:beneath/beneath_fauna#red_elk)Red Elk$()$(li2)$(l:beneath/beneath_fauna#zombie_horse)Zombie Horse$()$(li)$(bold)$(l:agriculture/jellies)Jellies$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)Ice$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)Plant$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)Glowberry$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)Spring$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)Lava$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)Biotite$()$(li2)$(l:beneath/beneath_fauna#latex_jellie)Latex$()$(br)$(o)(Continued on next page...)$()"
+			"text": "$(li)$(bold)Passive$()$(li2)$(l:beneath/beneath_fauna#axolotl)Axolotl$()$(li2)$(l:beneath/beneath_fauna#frog)Frog$()$(li2)$(l:beneath/beneath_fauna#mammutilation)Mammutilation$()$(li2)$(l:beneath/beneath_fauna#red_elk)Red Elk$()$(li2)$(l:beneath/beneath_fauna#zombie_horse)Zombie Horse$()$(li)$(bold)$(l:agriculture/jellies)Jellies$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)Ice$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)Plant$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)Glowberry$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)Spring$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)Lava$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)Biotite$()$(li2)$(l:beneath/beneath_fauna#milk_jellie)Milk$()$(br)$(o)(Continued on next page...)$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -106,11 +106,11 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "jellies:latex",
+			"entity": "jellies:milk",
 			"scale": 0.6,
-			"name": "Latex Jellie",
-			"anchor": "latex_jellie",
-			"text": "$(thing)Latex$() $(l:agriculture/jellies)Jellies$() can only be bred from a $(thing)Plant Jellie$() and $(thing)Lava Jellie$(). Their slime balls are a source of $(item)Latex$()."
+			"name": "Milk Jellie",
+			"anchor": "milk_jellie",
+			"text": "$(thing)Milk$() $(l:agriculture/jellies)Jellies$() can only be bred from a $(thing)Plant Jellie$() and $(thing)Lava Jellie$(). Their slime balls are a source of $(item)Dairy$()."
 		},
 		{
 			"type": "patchouli:entity",

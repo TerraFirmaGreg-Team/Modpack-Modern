@@ -19,7 +19,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "預防與治療",
-			"text": "$(li)$(l:game_mechanics/hazards#containers)容器$()$(li)$(l:game_mechanics/hazards#mask)口罩$()$(li)$(l:game_mechanics/hazards#gloves)橡膠手套$()$(li)$(l:game_mechanics/hazards#hazmat)防護服$()$(li)$(l:game_mechanics/hazards#medicine)藥片、藥片與藥膏$()$(li)$(l:game_mechanics/hazards#rad_away)消輻寧™藥片$()$(li)$(l:game_mechanics/hazards#respawn)不堪設想的事……$()"
+			"text": "$(li)$(l:game_mechanics/hazards#containers)容器$()$(li)$(l:game_mechanics/hazards#mask)口罩$()$(li)$(l:game_mechanics/hazards#gloves)橡膠手套$()$(li)$(l:game_mechanics/hazards#hazmat)防護服$()$(li)$(l:game_mechanics/hazards#medicine)藥丸、藥片與藥膏$()$(li)$(l:game_mechanics/hazards#rad_away)消輻寧™藥丸$()$(li)$(l:game_mechanics/hazards#respawn)不堪設想的事……$()"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -47,7 +47,7 @@
 			"type": "patchouli:spotlight",
 			"title": "防護服",
 			"item": "gtceu:hazmat_headpiece,gtceu:hazmat_chestpiece,gtceu:hazmat_leggings,gtceu:hazmat_boots",
-			"text": "完整的$(thing)防護服$()能讓你對$(item)所有$()危害$(item)免疫$()，甚至包括$(item)輻射$()。它主要由$(thing)橡膠$()和$(thing)聚氯乙烯$()製成。$(br2)$(bold)提示$()：你也可以在$(emi)中搜尋$(6)#ppe_armor$()，查看更多能防護危險物質的裝備。",
+			"text": "完整的$(thing)防護服$()能讓你對$(item)所有$()危害$(item)免疫$()，甚至包括$(item)輻射$()。它主要由$(thing)橡膠$()和$(thing)聚氯乙烯$()製成。$(br2)$(bold)提示$()：也可以在$(emi)中搜尋$(6)#ppe_armor$()，查看更多能防護危險物質的裝備。",
 			"anchor": "hazmat"
 		},
 		{
@@ -57,14 +57,14 @@
 				"tag": "tfg:medicine"
 			},
 			"anchor": "medicine",
-			"text": "萬一嚴重暴露於危害，有些$(item)藥物$()能幫助康復。$(br2)基本的$(item)藥片$()最原始也最容易製作，但多半有$(thing)負面副作用$()。$(item)膠囊$()和$(item)藥膏$()效果更好、副作用較少，但需要$(7)LV$()$(thing) 設備$()和更進階的資源才能製作。"
+			"text": "萬一嚴重暴露於危害，有些$(item)藥物$()能幫助康復。$(br2)基本的$(item)藥丸$()最原始也最容易製作，但多半有$(thing)負面副作用$()。$(item)藥片$()和$(item)藥膏$()效果更好、副作用較少，但需要$(7)LV$()$(thing) 設備$()和更進階的資源才能製作。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "消輻寧™藥丸",
 			"item": "tfg:rad_away_pill",
 			"anchor": "rad_away",
-			"text": "這是治療$(item)所有$()危害的$(item)終極$()藥物，也是治療$(item)輻射$()的$(item)唯一$()有效藥物。不過它也是最$(thing)昂貴$()、最$(thing)難$()製作的藥物，需要$(6)HV$()$(thing)設備$()和進階材料。"
+			"text": "這是治療$(item)所有$()危害的$(item)終極$()藥物，也是治療$(item)輻射$()的$(item)唯一$()有效藥物。但它也是最$(thing)昂貴$()、最$(thing)難$()製作的藥物，需要$(6)HV$()$(thing)設備$()和進階材料。"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -73,7 +73,7 @@
 				"tag": "minecraft:beds"
 			},
 			"anchor": "respawn",
-			"text": "如果其他方法都失敗，帶張床用來重生是個好主意。$(br2)沒有$(item)羊毛$()或$(item)線$()的話，也可以製作$(thing)乾草床$()。"
+			"text": "萬一都不管用，記得帶張床好重生。$(br2)沒有$(item)羊毛$()或$(item)線$()的話，也可以製作$(thing)乾草床$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -115,7 +115,7 @@
 			"title": "致癌物",
 			"item": "gtceu:chromium_dust",
 			"anchor": "carcinogens",
-			"text": "$(l:game_mechanics/hazards#mask)口罩$()可以防止吸入有害化學物質，而$(l:game_mechanics/hazards#gloves)手套$()可以防止接觸$(thing)鉻粉$()。$(br)$(l:game_mechanics/hazards#hazmat)防護服$()兩者皆可防護。$(br)若嚴重暴露，建議服用一些$(l:game_mechanics/hazards#medicine)藥物$()來$(thing)預防$()可能的傷害。"
+			"text": "$(l:game_mechanics/hazards#mask)口罩$()可以防止吸入有害化學物質，$(l:game_mechanics/hazards#gloves)手套$()可以防止接觸$(thing)鉻粉$()。$(br)$(l:game_mechanics/hazards#hazmat)防護服$()兩者皆可防護。$(br)若嚴重暴露，建議服用一些$(l:game_mechanics/hazards#medicine)藥物$()來$(thing)預防$()可能的傷害。"
 		},
 		{
 			"type": "patchouli:spotlight",
