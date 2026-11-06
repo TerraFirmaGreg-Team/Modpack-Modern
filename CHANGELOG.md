@@ -1,18 +1,40 @@
 # Changelog
 
 ### Changes
+#### CC-Tweaked
+- Fixes a [severe security vulnerability](https://github.com/cc-tweaked/CC-Tweaked/security/advisories/GHSA-g5h5-fp5g-fmx4)
+#### Hypoxia
+- Added a new hypoxia system to discourage you from taking your space suit off while on other planets, outside of an oxygenated area. Works in tandem with the recent changes to the heat/oxygenation system. @TomPlop
+- Experiencing hypoxia will cause breath "debt" which can only be slowly recovered while in an oxygenated area.
+- Removed the ugly Ad Astra oxygen meter and replaced it with a new bar where the vanilla breath meter goes. You can check your space suit item if you still want to know exactly how much air you have left.
+- Note that this system only affects non-Earth dimensions. Swimming underwater works as it does in vanilla.
+#### Oxygen Rework
+- The higgs emitter now scales less extremely (16 blocks of extra radius per tier) @ashleney
+- Removed the barely noticeable mechanic where the Heat Pump made a small area around its back part slightly less hospitable. @ashleney
+- The Heat Pump now uses half the energy compared to the Oxygen Distributor. @ashleney
+- Fixed the lag caused by Ad Astra checking if it should freeze water on the moon and mars. @ashleney
+- Fixed ae2 facades not blocking the Oxygen Distributor's floodfill properly. (#5271) @ashleney
+#### Greenhouses
+- Planters now work with any light source instead of exclusively sky light, so you can have a greenhouse underground or in the Beneath now @Zippity
+- Greenhouses now also affect tree taps and bees, so you don't need a bedrock farm to get latex all year round
+- Mechanical arms now work with planters for automatic seed planting (and work correctly with quad and hydroponic planters too)
+#### Other changes
 - Ceramic Circuit Board have different tiers so player can understand easily which one they can craft @TomPlop
 - Change Butraldehyde circuit to 5 @TomPlop
 - Lower the energy cost of Garnet-Yttrium Line @TomPlop
 - Added a calcite + clay dust recipe for liquid concrete (#5238) @lysteryale
-- Added snow bricks and ice bricks (#5235) @Pyritie
+- Backported vanilla's new snow bricks, ice bricks, and calcite bricks (#5235) @Pyritie
 - Added craftable powder snow @Pyritie
 - Added heating and casting for wax, and another way to make medicine powders that's possible in the Beneath (#5268) @Pyritie
 - Also added heating and casting for electrum, cupronickel, and battery alloy @Pyritie
-- Added the Basic Mechanical Mixer @Pyritie
+- Added the Basic Mechanical Mixer. It doesn't do a whole lot right now, but we have more uses planned for it @Pyritie
 - Mechanical pumps can now pull fluids from aqueducts, except for lava @Allmoz @Pyritie
 - Increased the damage the sandworm deals @Pyritie
 - Blue and red steel tongs now have infinite durability (#4665) @Pyritie
+- Buzzsaws now also work as glass saws for safely breaking all glass-type blocks (#4957, #5285) @strangelyng
+- The Thermometer, Anemometer, Precision Clock, Oxygen Sensor, and AE2 Controller are now valid sources for Display Links to display various climate, time, oxygenation, and AE2 data on Display Boards @Redeix
+- Concrete powder recipes in a chem bath now only use 100mB water to match barrels (#5265) @strangelyng
+- Electrum, cupronickel, and battery alloy can now be melted and alloyed the TFC way too @Pyritie
 ### Bug fixes
 - Fixed mineshafts sticking out of the sides of mountains @Pyritie
 - Fixed some plants and flowers growing in the wrong elevations (#4994) @Pyritie
@@ -22,12 +44,34 @@
 - Quest fixes (#5192) @TomPlop
 - Fixed hose pulleys not being able to drain/fill TFC fluid-logged blocks such as plants, loose rocks, stone spikes, etc (#3428) @Allmoz
 - Fixed being able to move water sources via waterlogged plants and a schematicannon @Allmoz
+- Fixed right-clicking wood turning into stripped logs instead of stripped wood (#5272) @strangelyng
+- Fixed locometal glass blocks not being breakable with wrenches @strangelyng
+- The grappling hook now properly works with different gravity environments. (#4346) @ashleney
+- Fixed automatic drinking from the electric flask cancelling sprinting @Thomasx0
 ### Mods
 #### Jellies
 - Plant and Phosphorum Jellies now give 4x the items, since they're only useful for compost generation
 - Certus Jellies now give certus gems instead of the large bud clusters
 - Latex Jellies are renamed to Milk Jellies and their slime ball can be heated and drank as a Beneath source of dairy
 - Feeding troughs can be used to feed and breed Jellies, and deployers can be used to automate their products. They still only produce in their home dimension, though
+#### Create: Fluid Logistics
+- Add Package list filter
+- The Hand Pointer now also shows unloaded stock link locations
+- Changed copper frogport connection rules
+- Increased the limit of fluid factory gauge restock targets
+- Fixed fluid gauges turning into item gauges when placing them into the same block as other item gauges
+#### GregTech Terminals
+- You can now expand multiblocks vertically and horizontally (such as distillation towers and cleanrooms)
+- Schematics are now able to place liquids from AE2
+- Dismantler is now able to pick up fluids into AE2 or tanks/drums in your inventory
+- Added a clear button to remove the current copied multiblock
+- Added a ghost preview to the multi-structure manager
+- Fixed connected textures in the previews
+#### AE2
+- Fixed spatial IO causing full chunk reloads (and causing crashes) (#5146)
+- Added the sticky card! It works like the one from GTNH, read the GuideME for more information
+#### GregTech Cables
+- Added a new mod which lets you have long dangling cables. Check the new quest in LV for more information!
 
 ## [0.13.17] - 26-10-2026
 ### Bug fixes
