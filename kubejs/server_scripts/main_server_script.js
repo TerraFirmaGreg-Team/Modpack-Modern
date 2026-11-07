@@ -270,6 +270,7 @@ ServerEvents.recipes(event => {
 	registerGTModernUtilitiesRecipes(event)
 	registerHandGliderRecipes(event)
 	registerHotOrNotRecipes(event)
+	registerImmersiveAircraftRecipes(event)
 	registerImmersiveVehiclesRecipes(event)
 	registerJelliesRecipes(event)
 	registerMatterManipulatorRecipes(event)

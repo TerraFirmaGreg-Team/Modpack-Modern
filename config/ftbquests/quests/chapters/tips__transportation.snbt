@@ -1358,19 +1358,26 @@
 			id: "5BD8697CD77C4FC1"
 			shape: "octagon"
 			size: 1.5d
-			tasks: [{
-				disable_toast: true
-				id: "1D9D345E47E88A76"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/lv)"
+			tasks: [
+				{
+					disable_toast: true
+					id: "1D9D345E47E88A76"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/lv)"
+						}
 					}
+					title: "Any #gtceu:circuits/lv"
+					type: "item"
 				}
-				title: "Any #gtceu:circuits/lv"
-				type: "item"
-			}]
+				{
+					id: "777E8690F984B469"
+					item: "tfg:automotive_workshop"
+					type: "item"
+				}
+			]
 			title: "{quests.combat_tips.lv_main.title}"
 			x: 13.0d
 			y: 0.0d
@@ -1576,14 +1583,27 @@
 			y: -4.5d
 		}
 		{
+			can_repeat: true
 			dependencies: ["5903C9AE3493EEED"]
+			icon: "mts:mts.partscanner"
 			id: "3BE985DAF516E42D"
+			rewards: [
+				{
+					id: "13D13156DE5A4D78"
+					item: "mts:mts.handbook_car"
+					type: "item"
+				}
+				{
+					id: "4B8EE654CA794E7A"
+					item: "mts:mts.handbook_plane"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
-				id: "4D730CCA20251D05"
-				item: "mts:mts.partscanner"
-				type: "item"
+				id: "5996F24FB3131B94"
+				type: "checkmark"
 			}]
 			x: 9.0d
 			y: -3.0d
