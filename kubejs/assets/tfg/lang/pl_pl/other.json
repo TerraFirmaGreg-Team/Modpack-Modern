@@ -193,5 +193,7 @@
     "tfg.display_source.calendar_clock": "Termometr",
     "tfg.display_source.anemometer": "Anemometr",
     "tfg.display_source.environment": "Środowisko",
-    "tfg.display_source.me_network": "Sieć ME"
+    "tfg.display_source.environment.display_mode": "Tryb wyświetlania środowiska",
+    "tfg.display_source.me_network": "Sieć ME",
+    "tfg.display_source.me_network.display_mode": "Tryb wyświetlania sieci"
 }
