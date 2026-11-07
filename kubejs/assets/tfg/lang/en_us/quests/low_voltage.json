@@ -409,6 +409,6 @@
 	"quests.low_voltage.electric_flask.desc": "Similar to a Digger Helmet, the &bElectric Flask&r will automatically drink for you when you're thirsty. Unlike the digger helmet, it works with any drinkable fluid!\n\nIt requires charging to work, though you can still drink from it manually if the charge runs out. It also holds &64,000mB&r of fluid.",
 
 	"quests.low_voltage.spool.title": "Suspended Cables",
-	"quests.low_voltage.spool.subtitle": "🎵 Danger! Danger! High Voltage!",
+	"quests.low_voltage.spool.subtitle": "Super Fly",
 	"quests.low_voltage.spool.desc": "Want to build some longer, suspeded cables between your ever-sprawling base? Or just want to set up some big power lines?\n\nTry out these &bWire Spools&r and &bConnectors&r! You can drop any cables or wires into the Spool the same way you'd put items in a Bundle. From there, right-click the Spool onto two Connectors. Right-click the Connector with a Wire Cutter to disconnect the cable.\n\nCables can extend to another connector up to 256 blocks away, and can even &6pass through unloaded chunks&r as long as each connector is loaded.\n\nThese obey all the same rules as placing cables normally - too many amps will burn cables, mixing voltage still causes explosions, etc. Hold sneak and look at the Connectors to see stats like &6voltage loss&r."
 }
