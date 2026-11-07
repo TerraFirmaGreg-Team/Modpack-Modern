@@ -96,6 +96,7 @@
 	"config.tacz.client.sound.default_sound_concurrency_limit": "Domyślny limit jednoczesnego odtwarzania dźwięków",
 	"config.tacz.client.sound.default_sound_concurrency_limit.desc": "Maksymalna liczba aktywnych dźwięków broni dla tego samego obiektu i id dźwięku. 0 wyłącza ten limit.",
 	"config.tacz.client.sound.first_person_animation_sound_tracking": "Śledzenie dźwięku animacji z perspektywy pierwszej osoby",
+	"config.tacz.client.sound.first_person_animation_sound_tracking.desc": "Używa niewzględnego źródła dźwięku w świecie, podążającego za bytem, dla dźwięków klatek kluczowych animacji z perspektywy pierwszej osoby. Może to poprawić zgodność z modami symulującymi fizykę dźwięku, ale podczas ruchu może powodować lekkie przesuwanie się dźwięku w stereo.",
 	"config.tacz.client.sound.high_frequency_sound_concurrency_limit": "Limit jednoczesnego odtwarzania dźwięków wysokiej częstotliwości",
 	"config.tacz.client.sound.high_frequency_sound_concurrency_limit.desc": "Maksymalne aktywne dźwięki o wysokiej częstotliwości, takie jak strzelanie i dźwięki klatkowe animacji, dla tego samego obiektu i id dźwięku. 0 wyłącza ten limit.",
 	"config.tacz.client.sound.hit_sound_concurrency_limit": "Limit jednocześnie odtwarzanych dźwięków potwierdzenia trafienia",

@@ -1,34 +1,34 @@
 {
-	"name": "Beneath Tips & Tricks",
+	"name": "深界におけるヒントとコツ",
 	"category": "tfg:beneath",
 	"icon": "beneath:cursecoal",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Living in the Beneath has some significant differences from life above! This entry contains some information that may prove to be useful for longer term survival in the depths."
+			"text": "深界での生活は、地上での生活とはいくつかの大きな違いがあります！このエントリには、地下での長期的な生存に役立つかもしれない情報がいくつか含まれています。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:beneath/beneath_mechanics#temperature)Temperature Management$()$(li2)$(l:beneath/beneath_mechanics#ice)Ice$()$(li2)$(l:beneath/beneath_mechanics#clothes)Clothing$()$(li2)$(l:beneath/beneath_mechanics#other_cooling)Other$()$(li)$(bold)$(l:beneath/beneath_mechanics#hellforge)The Hellforge$()$(li)$(bold)$(l:beneath/beneath_mechanics#rope_ladder)Vertical Navigation$()$(li2)$(l:beneath/beneath_mechanics#rope_ladder)Rope Ladder$()$(li2)$(l:logistics/exploration_gear#hang_glider)Hang Glider$()$(li2)$(l:logistics/exploration_gear#grappling_hook)Grappling Hook$()$(li2)$(l:logistics/exploration_gear#harpoon)Harpoon & Coil$()$(li)$(bold)$(l:beneath/beneath_mechanics#piglins)Piglins$()$(li2)$(l:beneath/beneath_mechanics#disguise)Disguising$()$(li2)$(l:beneath/beneath_mechanics#towers)Towers$()$(li2)$(l:beneath/beneath_mechanics#outposts)Outposts$()$(li2)$(l:beneath/beneath_mechanics#bastions)Bastions$()"
+			"text": "$(li)$(bold)$(l:beneath/beneath_mechanics#temperature)温度管理$()$(li2)$(l:beneath/beneath_mechanics#ice)氷$()$(li2)$(l:beneath/beneath_mechanics#clothes)衣服$()$(li2)$(l:beneath/beneath_mechanics#other_cooling)その他$()$(li)$(bold)$(l:beneath/beneath_mechanics#hellforge)獄炎炉$()$(li)$(bold)$(l:beneath/beneath_mechanics#rope_ladder)縦方向の移動$()$(li2)$(l:beneath/beneath_mechanics#rope_ladder)縄梯子$()$(li2)$(l:logistics/exploration_gear#hang_glider)ハンググライダー$()$(li2)$(l:logistics/exploration_gear#grappling_hook)グラップリングフック$()$(li2)$(l:logistics/exploration_gear#harpoon)Harpoon & Coil$()$(li)$(bold)$(l:beneath/beneath_mechanics#piglins)ピグリン$()$(li2)$(l:beneath/beneath_mechanics#disguise)変装$()$(li2)$(l:beneath/beneath_mechanics#towers)塔$()$(li2)$(l:beneath/beneath_mechanics#outposts)前哨拠点$()$(li2)$(l:beneath/beneath_mechanics#bastions)要塞$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "temperature",
 			"title": "温度管理",
-			"text": "The Beneath is hot! The temperature starts at 20°C at the very top, and only gets hotter as you descend.$(br2)Avoiding $(l:game_mechanics/player_temperature)hyperthermia$() is much more of an issue than in the overworld, but there are ways to mitigate it.$(br2)The easiest way to avoid overheating is to stay in the upper levels of the Beneath and $(l:game_mechanics/player_temperature#wetness)dunk yourself$() in water whenever you start overheating."
+			"text": "深界は暑いです！最上層の気温は20°Cから始まり、下へ降りるにつれてさらに暑くなります。$(br2)$(l:game_mechanics/player_temperature)熱中症$()を避けることは、地上世界よりもはるか重要な問題ですが、暑さを軽減する方法があります。$(br2)過熱を防ぐ最も簡単な方法は、深界の上層部に留まったり、体温が危険レベルになり始めたら、すぐに水に$(l:game_mechanics/player_temperature#wetness)浸かる$()ことです。"
 		},
 		{
 			"type": "tfg:sealed_barrel_recipe",
 			"recipe": "tfg:barrel/packed_ice",
 			"anchor": "ice",
-			"text": "Bring along some $(l:game_mechanics/player_temperature#blocks)Ice$()! Standing near it will lower $(l:game_mechanics/player_temperature)your temperature$(). Ice can be harvested on the surface and the resulting Ice Shavings can be turned into $(item)Packed Ice$(). $(thing)Packed$() and $(thing)Blue$() ice won't melt and can be picked up using a $(item)Saw$(). $(l:cooking/drinks#ice_slush)Ice Slush$() can be drank."
+			"text": "$(l:game_mechanics/player_temperature#blocks)氷$()をいくつか持っていきましょう！氷の近くに立っていると、$(l:game_mechanics/player_temperature)体温$()が下がります。氷は地表で採取でき、得られた「氷の削りくず」は $(item)氷塊$() に加工できます。$(thing)氷塊$() と $(thing)青氷$() は溶けず、$(item)のこぎり$() を使って拾うことができます。$(l:cooking/drinks#ice_slush)液化氷泥$() は飲むことができます。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "clothes",
-			"title": "Clothing",
-			"text": "$(item)Burlap$(), $(item)Linen$(), and $(item)Silk$() $(l:craftsmanship/clothing)clothing$() will help provide some heat resistance.$(br)$(l:the_world/wild_animals#crocodile)Crocodile$(), $(l:the_world/wild_animals#tiger)Tiger$(), and $(l:the_world/wild_animals#lion)Lion$() clothing provide a stronger cooling effect.$(br)Lastly, $(l:beneath/beneath_fauna#phantom)Phantom$() and $(l:beneath/beneath_fauna#red_elk)Red Elk$() clothes are the strongest cooling clothes, and last a long time too.$(br2)All clothing can be repaired. Press $(thing)U$() to check the repair recipes in $(emi)."
+			"title": "衣類",
+			"text": "$(item)麻布$()、$(item)リネン$()、および$(item)絹$() の$(l:craftsmanship/clothing)衣類$()は、ある程度の耐熱性を発揮します。$(br)$(l:the_world/wild_animals#crocodile) ワニ$()、$(l:the_world/wild_animals#tiger)トラ$()、および$(l:the_world/wild_animals#lion)ライオン$()の衣類は、より強力な冷却効果をもたらします。$(br)最後に、$(l:beneath/beneath_fauna#phantom)ファントム$()および$(l:beneath/beneath_fauna#red_elk)アカゲシカ$()の服は、最も冷却効果が高く、耐久性も長持ちします。$(br2)すべての服は修理可能です。$(thing)U$()を押すと、$(emi)内の修理レシピを確認できます。"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -44,13 +44,13 @@
 			"type": "patchouli:crafting",
 			"anchor": "other_cooling",
 			"recipe": "tfg:crafting/smoothie/magmango",
-			"text": "Other ways to stay cool include standing next to $(l:beneath/beneath_fauna#ice_jellie)Ice Jellies$() and eating cooling foods such as $(item)Ice Soup$() and $(item)Fruit Smoothies$()!"
+			"text": "他にも、$(l:beneath/beneath_fauna#ice_jellie)アイスジェリー$()のそばに立ったり、$(item)アイススープ$()や$(item)フルーツスムージー$()といった体を冷やす食べ物を食べたりするのも、涼しく過ごす方法の一つです！"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "獄炎炉",
 			"anchor": "hellforge",
-			"text": "Due to the lack of sky access, the $(l:craftsmanship/charcoal_forge)Charcoal Forge$() does not work in the Beneath!$(br2)The $(thing)Hellforge$() is a gratuitously large forge, with high capacity for fuel, products, and heating. It can heat up to nine $(l:craftsmanship/crucible)Crucibles$() at a time, and doesn't require sky access either!$(br2)It works in the overworld too."
+			"text": "空へのアクセスがないため、$(l:craftsmanship/charcoal_forge)木炭炉$()は深界では機能しません！$(br2)$(thing)獄炎炉$()は、燃料、製品、加熱能力のすべてにおいて高い容量を誇る、必要以上に巨大な炉です。一度に最大9つの$(l:craftsmanship/crucible)るつぼ$()を加熱でき、さらに空へのアクセスも不要です！$(br2)オーバーワールドでも使用可能です。"
 		},
 		{
 			"type": "patchouli:multiblock",
@@ -78,60 +78,60 @@
 					"X": "beneath:hellbricks"
 				}
 			},
-			"name": "Hellforge",
-			"text": "Any type of $(l:agriculture/aqueducts)Aqueduct$() will work.",
+			"name": "獄炎炉",
+			"text": "あらゆるタイプの $(l:agriculture/aqueducts)用水路$() が機能します。",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The Hellforge requires lava to flow in aqueducts in its four corners, as well as 21 hellbricks. The 3x3 center must be filled with $(l:craftsmanship/charcoal_pit)Charcoal Piles$() with 7 charcoal each, which then may be lit to start the forge.$(br2)To avoid overheating, we recommend using the lava from a small lava pool in the upper levels of the Beneath."
+			"text": "獄炎炉を構築するには、用水路の水路に溶岩を流し、さらに21個の獄炎レンガが必要です。中央の3×3のエリアには、それぞれ7個の木炭が入った$(l:craftsmanship/charcoal_pit)木炭の山$()を配置し、火をつけて炉を稼働させる必要があります。$(br2)過熱を防ぐため、下層ではなく深界の上層にある小さな溶岩湖の溶岩を使用することをお勧めします。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The item slots of the Hellforge may contain fuel, or things to be smelted; there is no distinction. Be careful what you put in! The slots on the right are what metals will melt into, as with the charcoal forge. The lava meter on the screen indicates temperature."
+			"text": "獄炎炉のアイテムスロットには、燃料や精錬対象のアイテムが入る場合がありますが、その区別はありません。入れるものには注意してください！右側のスロットは、木炭炉と同様に、どの金属が溶けてその形になるかを示しています。画面上の溶岩メーターは温度を示しています。"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Rope Ladder",
+			"title": "縄はしご",
 			"anchor": "rope_ladder",
 			"item": "tag:tfg:rope_ladders",
-			"text": "$(thing)Rope Ladders$() are a great way to get up and down in the Beneath. Unlike regular ladders, they can hang over the edge of cliffs without needing any supporting blocks on the side, and a whole stack can be placed or picked up at once.$(br)$(item)Burlap Fiber$() can be obtained from $(l:beneath/beneath_wild_fruits#oil_palm)Oil Palms$(), and $(item)Rope Coils$() can be crafted out of $(thing)Coils$() or $(thing)other cloth$()."
+			"text": "$(thing)縄はしご$()は、深界での移動に最適なアイテムです。通常のはしごと異なり、側面に支えとなるブロックがなくても崖の端からぶら下げる事ができ、スタック全体を一度に設置したり拾ったりすることができます。$(br)$(item)麻の繊維$()は、$(l:beneath/beneath_wild_fruits#oil_palm) アブラヤシ$()から入手でき、$(item)ロープコイル$()は、$(thing)コイル$()や$(thing)その他の布$()からクラフトできます。"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Piglin Bartering",
+			"title": "ピグリンとの物々交換",
 			"anchor": "piglins",
 			"item": "minecraft:gold_ingot",
-			"text": "Like you'd expect, you can trade with $(thing)Piglins$() in the same way you trade with them in vanilla, with $(item)Gold Ingots$().$(br2)A full list of trades can be found in $(emi) - simply press $(thing)U$() on a Gold Ingot to see it."
+			"text": "ご想像の通り、$(thing)ピグリン$()とは、バニラと同じように$(item)金のインゴット$()を使って取引することができます。$(br2)取引の完全なリストは$(emi)に記載されており、金のインゴット上で$(thing)U$()を押すだけで確認できます。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:piglin_disguise",
-			"title": "Piglin Disguise",
+			"title": "ピグリンの変装マスク",
 			"anchor": "disguise",
 			"text": "取引をスムーズに進めたい場合、あるいは単に地元の人たちと交流したい場合は、$(thing)ピグリンの変装マスク$()を身につければ、$(thing)ピグリン$()が初対面で敵対的になるのを防げます。ただし、注意してください！ 彼らにも我慢の限界があります……"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Towers",
+			"title": "塔",
 			"anchor": "towers",
-			"text": "You may come across tall $(thing)Towers$() in the Beneath. These contain a little bit of loot, but are primarily intended for easy vertical travel.$(br)They are more heavily defended the deeper you get, however."
+			"text": "深界では、背の高い $(thing)塔$() に出くわすことがあるかもしれません。少量の戦利品を得ることもできますが、垂直方向の移動を容易にするために使うのが主でしょう。$(br)ただし、深くへ進むほど、防衛が強固になっていきます。"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "砦",
 			"anchor": "outposts",
-			"text": "$(thing)砦$()への襲撃は極めて危険ですが、その分、大きな見返りが得られることもあります！以下のようなものが手に入ります：$(li)金、ローズゴールド、銑鉄、黒青銅、銀のインゴット$(li)黒青銅製の武器、道具、防具$(li)カオリン粘土と黒鉛$(li)ランタン$(li)布、革、種、食料$(li)その他、さまざまな宝物！"
+			"text": "$(thing)ピグリンの前哨拠点$()は、深界の上層部に点在する小規模な建造物です。有用な戦利品が入手できますが、塔に比べて防衛が堅固です。以下のようなアイテムが見つかります：$(li)高品質な遠距離武器や効果付きの矢$(li)黒青銅製の武器、道具、防具$(li)食料や薬$(li)ランタン$(li)布、袋、爆発物、食料"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Bastions",
+			"title": "砦",
 			"anchor": "bastions",
-			"text": "Raiding a $(thing)Bastion$() might be very dangerous, but they can also be very rewarding! You can find things like:$(li)Gold, Rose Gold, Pig Iron, Black Bronze, and Silver ingots$(li)Black Bronze weapons, tools, and armor$(li)Kaolin clay and graphite$(li)Lanterns$(li)Cloth, leather, seeds, and food$(li)And other treasures!"
+			"text": "$(thing)砦$()への襲撃は極めて危険ですが、その分、大きな見返りが得られることもあります！以下のようなものが手に入ります：$(li)金、ローズゴールド、銑鉄、黒青銅、銀のインゴット$(li)黒青銅製の武器、道具、防具$(li)カオリン粘土と黒鉛$(li)ランタン$(li)布、革、種、食料$(li)その他、さまざまな宝物！"
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "さらに読む",
 			"anchor": "relations",
 			"entries": [
 				"tfg:beneath/beneath",

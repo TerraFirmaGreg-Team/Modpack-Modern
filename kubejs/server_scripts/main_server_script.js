@@ -265,6 +265,7 @@ ServerEvents.recipes(event => {
 	registerGreateRecipes(event)
 	registerGTCEURecipes(event);
 	registerGTCEUTerminalRecipes(event)
+	registerGTCablesRecipes(event)
 	registerGTModernUtilitiesRecipes(event)
 	registerHandGliderRecipes(event)
 	registerHotOrNotRecipes(event)
