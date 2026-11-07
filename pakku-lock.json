@@ -10601,46 +10601,48 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "lithostitched-forge-1.20.1-1.4.11.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6742/615/lithostitched-forge-1.20.1-1.4.11.jar",
-                    "id": "6742615",
-                    "parent_id": "936015",
-                    "hashes": {
-                        "sha1": "d1a755de84ee5d8910ff1e65e815473056e93ece",
-                        "md5": "3c596bbc1b5f769f22be751e9c21a6c8"
-                    },
-                    "required_dependencies": [],
-                    "size": 476347,
-                    "date_published": "2025-07-07T23:21:45.877Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "lithostitched-forge-1.20.1-1.4.11.jar",
+                    "file_name": "lithostitched-forge-1.20.1-1.4.12.jar",
                     "mc_versions": [
-                        "1.20.1"
+                        "1.20.1",
+                        "1.20"
                     ],
                     "loaders": [
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/XaDC71GB/versions/srPoHKt8/lithostitched-forge-1.20.1-1.4.11.jar",
-                    "id": "srPoHKt8",
+                    "url": "https://cdn.modrinth.com/data/XaDC71GB/versions/Uqt1Zm1l/lithostitched-forge-1.20.1-1.4.12.jar",
+                    "id": "Uqt1Zm1l",
                     "parent_id": "XaDC71GB",
                     "hashes": {
-                        "sha512": "4e50a0fb4f054b429803cb20fc0820011b12098ebca1f17b1b0634cab832369e08446901d5e97fd35b01e99cf6066d20a16cc673c5b7bc8196568b3db67128c2",
-                        "sha1": "d1a755de84ee5d8910ff1e65e815473056e93ece"
+                        "sha512": "bb96c8518cf0ccfa1210fee4f01ff38cbee09c3b7f82df330cef8fe4d2c8cfca19a1c7d36136fdd3f23804cb814317de99f907cd5880a8bf1229397e0b2ffc25",
+                        "sha1": "c8a23f9c1975f11a8d10110aa862251a6043db78"
                     },
                     "required_dependencies": [],
-                    "size": 476347,
-                    "date_published": "2025-07-07T23:21:46.041450Z"
+                    "size": 480788,
+                    "date_published": "2026-11-07T04:25:06.965118Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "lithostitched-forge-1.20.1-1.4.12.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9486/341/lithostitched-forge-1.20.1-1.4.12.jar",
+                    "id": "9486341",
+                    "parent_id": "936015",
+                    "hashes": {
+                        "sha1": "c8a23f9c1975f11a8d10110aa862251a6043db78",
+                        "md5": "9459f7128b85631020a59e6447ed21a7"
+                    },
+                    "required_dependencies": [],
+                    "size": 480788,
+                    "date_published": "2026-11-07T04:27:15.593Z"
                 }
             ]
         },
@@ -11477,7 +11479,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "moonlight-1.20-2.16.38B-forge.jar",
+                    "file_name": "moonlight-1.20-2.16.39-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11486,20 +11488,20 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/twkfQtEc/versions/ibsm7pYC/moonlight-1.20-2.16.38B-forge.jar",
-                    "id": "ibsm7pYC",
+                    "url": "https://cdn.modrinth.com/data/twkfQtEc/versions/rF6052yd/moonlight-1.20-2.16.39-forge.jar",
+                    "id": "rF6052yd",
                     "parent_id": "twkfQtEc",
                     "hashes": {
-                        "sha512": "d3d4d454c76277dc6556e62e1e4a7d83d8b517330bde3a85bb5d80f673f42666fc7fd63b2abc288489bef7e13af216bfad06703ca38cf37e642e564dfae78663",
-                        "sha1": "7394cf9cbc30015b50f794ae9a85aa0b18ab152b"
+                        "sha512": "972d18375a4d028e421d755c111d0a523787b831fabb3160d5c5eced0df9b863f2fb515582b6fc117995c2abf908e17eb6fd17e88cf62e0c8f6adcbd777a3f17",
+                        "sha1": "12405de298c0d6c8ba53effdc5c8f28edee3aadc"
                     },
                     "required_dependencies": [],
-                    "size": 1425261,
-                    "date_published": "2026-10-28T16:28:10.489884Z"
+                    "size": 1423451,
+                    "date_published": "2026-11-07T14:03:09.893554Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "moonlight-1.20-2.16.38B-forge.jar",
+                    "file_name": "moonlight-1.20-2.16.39-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11508,16 +11510,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9354/258/moonlight-1.20-2.16.38B-forge.jar",
-                    "id": "9354258",
+                    "url": "https://edge.forgecdn.net/files/9493/250/moonlight-1.20-2.16.39-forge.jar",
+                    "id": "9493250",
                     "parent_id": "499980",
                     "hashes": {
-                        "sha1": "7394cf9cbc30015b50f794ae9a85aa0b18ab152b",
-                        "md5": "04fc8215134a52769ae27835f630bb4f"
+                        "sha1": "12405de298c0d6c8ba53effdc5c8f28edee3aadc",
+                        "md5": "c80b924d3430e6dd61371ff5ac17f312"
                     },
                     "required_dependencies": [],
-                    "size": 1425261,
-                    "date_published": "2026-10-28T16:29:39.903Z"
+                    "size": 1423451,
+                    "date_published": "2026-11-07T14:03:02.223Z"
                 }
             ]
         },
@@ -16240,7 +16242,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.33.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.34.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -16248,20 +16250,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/EOFVsKUn/TerraFirmaGreg-Core-Modern-0.9.33.jar",
-                    "id": "EOFVsKUn",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/U3YTPchH/TerraFirmaGreg-Core-Modern-0.9.34.jar",
+                    "id": "U3YTPchH",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "8a1340498dcc2271a26fccdbfd3c0517fd47474d4126915173f9fdcab46a943ccb11fba77bd3be7043cf83e724ecbc9c1f8b1f89c2b2a4e245a3a44a6de54d90",
-                        "sha1": "97eb9bcf5be5465ca89c277ff17c11b19f20cda4"
+                        "sha512": "fa3ea8d599c21289dfae6001a16f4f6a18e2f29d5396439efc24b584083eac50d9b0d326525176b364b2a7e3f56af469ed1e090138476ec786c7da036675867b",
+                        "sha1": "efb5d43d85226b70883217659bbf38c37a666f34"
                     },
                     "required_dependencies": [],
-                    "size": 56895524,
-                    "date_published": "2026-11-07T00:40:02.007308Z"
+                    "size": 56895631,
+                    "date_published": "2026-11-07T19:30:26.186985Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.33.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.34.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -16269,18 +16271,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9484/263/TerraFirmaGreg-Core-Modern-0.9.33.jar",
-                    "id": "9484263",
+                    "url": "https://edge.forgecdn.net/files/9498/453/TerraFirmaGreg-Core-Modern-0.9.34.jar",
+                    "id": "9498453",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "97eb9bcf5be5465ca89c277ff17c11b19f20cda4",
-                        "md5": "5d1724ec73f483b596553f4e4576dc3c"
+                        "sha1": "efb5d43d85226b70883217659bbf38c37a666f34",
+                        "md5": "485abca671961044cb1a7d3e73ce4f89"
                     },
                     "required_dependencies": [
                         "302973"
                     ],
-                    "size": 56895524,
-                    "date_published": "2026-11-07T00:39:58.050Z"
+                    "size": 56895631,
+                    "date_published": "2026-11-07T19:30:22.113Z"
                 }
             ]
         },
@@ -17387,7 +17389,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "applied_ammo_box-1.20.1-1.2.3.jar",
+                    "file_name": "applied_ammo_box-1.20.1-1.2.4.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -17395,23 +17397,23 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/VQOi9K8E/versions/p7yt6uMn/applied_ammo_box-1.20.1-1.2.3.jar",
-                    "id": "p7yt6uMn",
+                    "url": "https://cdn.modrinth.com/data/VQOi9K8E/versions/twqLQ9U3/applied_ammo_box-1.20.1-1.2.4.jar",
+                    "id": "twqLQ9U3",
                     "parent_id": "VQOi9K8E",
                     "hashes": {
-                        "sha512": "4ebc6498364b6e1d5b224a1247fa92bcb97722ecd72df9a42d20fc5aa60facf01322d76ae6d60401a7660022347c29cffc95e5a4cd498ad3ca603225fbf4b45c",
-                        "sha1": "86351432988a10b5940e3ae7ae4f5f43e95c169e"
+                        "sha512": "270aa8a6f413d30f105f94f883d0e52a9486e2c10eaa4d3d0d90924026354c4ab703d767a9ed272e00b7fb6c04d4cb9521f425b4533c4ac9b0fb7a8bfba2a2de",
+                        "sha1": "732495b41e5dff2d8f9b58ed351fe02f32d35e10"
                     },
                     "required_dependencies": [
-                        "SzzJttH8",
-                        "XxWD5pD3"
+                        "XxWD5pD3",
+                        "SzzJttH8"
                     ],
-                    "size": 75150,
-                    "date_published": "2026-07-11T12:23:09.287092Z"
+                    "size": 75364,
+                    "date_published": "2026-11-07T13:53:57.204255Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "applied_ammo_box-1.20.1-1.2.3.jar",
+                    "file_name": "applied_ammo_box-1.20.1-1.2.4.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -17419,19 +17421,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8412/68/applied_ammo_box-1.20.1-1.2.3.jar",
-                    "id": "8412068",
+                    "url": "https://edge.forgecdn.net/files/9493/120/applied_ammo_box-1.20.1-1.2.4.jar",
+                    "id": "9493120",
                     "parent_id": "1338332",
                     "hashes": {
-                        "sha1": "86351432988a10b5940e3ae7ae4f5f43e95c169e",
-                        "md5": "d316581e90fa9aa8c3343950cd3bae30"
+                        "sha1": "732495b41e5dff2d8f9b58ed351fe02f32d35e10",
+                        "md5": "302945d280f482732ceeb890a043903a"
                     },
                     "required_dependencies": [
-                        "223794",
-                        "1028108"
+                        "1028108",
+                        "223794"
                     ],
-                    "size": 75150,
-                    "date_published": "2026-07-11T12:22:11.040Z"
+                    "size": 75364,
+                    "date_published": "2026-11-07T13:53:56.177Z"
                 }
             ]
         },
