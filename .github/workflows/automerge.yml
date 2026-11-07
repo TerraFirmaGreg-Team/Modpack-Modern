@@ -32,3 +32,4 @@ jobs:
           pull_request: ${{ inputs.pull_request || github.event.pull_request.number }}
           merge_method: merge
           auto_merge: "true"
+          delete_branch: "false"

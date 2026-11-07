@@ -106,6 +106,6 @@ jobs:
       - name: "Automatically Merge PR"
         uses: TerraFirmaGreg-Team/Actions/pull-request/automerge@main
         with:
-          app_client_id: ${{ secrets.APP_ID }}
+          app_client_id: ${{ vars.APP_ID }}
           app_private_key: ${{ secrets.APP_PRIVATE_KEY }}
           pull_request: ${{ steps.create_pr.outputs.pr_number }}
