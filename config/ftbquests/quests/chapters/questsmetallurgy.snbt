@@ -189,7 +189,7 @@
 			id: "32A6A6BF942C4AB5"
 			linked_quest: "02854A3E8A5D5043"
 			x: 16.625d
-			y: -13.375d
+			y: -12.875d
 		}
 	]
 	quests: [
@@ -1684,7 +1684,11 @@
 			y: -2.375d
 		}
 		{
-			dependencies: ["68F1232DD918BBC2"]
+			dependencies: [
+				"68F1232DD918BBC2"
+				"7D45BFF5659DBFB8"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.create_rowboat.desc}"]
 			guide_page: "tfg:field_guide tfg:logistics/boats 32"
 			icon: "firmaciv:rowboat_icon_only"
@@ -1752,7 +1756,10 @@
 			y: -13.375d
 		}
 		{
-			dependencies: ["76F88CCE8FEF27B4"]
+			dependencies: [
+				"76F88CCE8FEF27B4"
+				"3F4231A5F725DCF1"
+			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.sloop_under_construction_materials.desc}"]
 			guide_page: "tfg:field_guide tfg:logistics/boats 40"
@@ -3171,7 +3178,7 @@
 				type: "item"
 			}]
 			x: 16.625d
-			y: -14.375d
+			y: -13.875d
 		}
 		{
 			dependencies: ["52DAF93E2F3D688A"]
@@ -3442,7 +3449,10 @@
 			y: -12.375d
 		}
 		{
-			dependencies: ["68F1232DD918BBC2"]
+			dependencies: [
+				"68F1232DD918BBC2"
+				"7D45BFF5659DBFB8"
+			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.glider.desc}"]
 			guide_page: "tfg:field_guide tfg:logistics/exploration_gear 14"
@@ -3466,7 +3476,10 @@
 			y: -12.375d
 		}
 		{
-			dependencies: ["68F1232DD918BBC2"]
+			dependencies: [
+				"68F1232DD918BBC2"
+				"7D45BFF5659DBFB8"
+			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.astikorcarts.desc}"]
 			guide_page: "tfg:field_guide tfg:logistics/tack"
@@ -3485,7 +3498,11 @@
 			y: -13.375d
 		}
 		{
-			dependencies: ["76F88CCE8FEF27B4"]
+			dependencies: [
+				"76F88CCE8FEF27B4"
+				"3F4231A5F725DCF1"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.hiking_boots.desc}"]
 			guide_page: "tfg:field_guide tfg:logistics/exploration_gear 1"
 			id: "0C8E678DEB92F74A"
@@ -3509,7 +3526,10 @@
 			y: -11.375d
 		}
 		{
-			dependencies: ["0C9B7745D812555A"]
+			dependencies: [
+				"0C9B7745D812555A"
+				"223D8B06DC3EF71D"
+			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.horseshoes.desc}"]
 			guide_page: "tfg:field_guide tfg:logistics/tack 3"
@@ -3571,7 +3591,10 @@
 			y: -14.375d
 		}
 		{
-			dependencies: ["61A8220EA30E7649"]
+			dependencies: [
+				"61A8220EA30E7649"
+				"18EC4CB75BF22292"
+			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.kayak_materials.desc}"]
 			guide_page: "tfg:field_guide tfg:logistics/boats 24"
@@ -3617,6 +3640,33 @@
 			title: "{quests.tfg_tips.kayak_materials.title}"
 			x: -18.875d
 			y: -0.875d
+		}
+		{
+			dependencies: [
+				"0C9B7745D812555A"
+				"223D8B06DC3EF71D"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.reinforced_glider.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/exploration_gear 14"
+			id: "685E1C207FCAFECE"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.reinforced_glider.subtitle}"
+			tasks: [{
+				id: "4C4231073853EB89"
+				item: {
+					Count: 1
+					id: "hangglider:reinforced_hang_glider"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.reinforced_glider.title}"
+			x: 16.625d
+			y: -14.875d
 		}
 	]
 	subtitle: ["{quests.metal_age.subtitle}"]

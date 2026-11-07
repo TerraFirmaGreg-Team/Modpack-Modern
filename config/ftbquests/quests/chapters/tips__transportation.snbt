@@ -1,0 +1,2309 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tips__transportation"
+	group: "19428C6E7A36D463"
+	icon: "firmaciv:sloop_icon_only"
+	id: "577081F95F02BDC2"
+	images: [
+		{
+			alpha: 200
+			height: 3.0d
+			image: "ad_astra:textures/gui/sprites/sun.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 5.0d
+			y: -13.5d
+		}
+		{
+			alpha: 150
+			height: 3.5d
+			image: "minecraft:textures/particle/big_smoke_2.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: 11.5d
+			y: -9.0d
+		}
+		{
+			alpha: 150
+			height: 3.0d
+			image: "minecraft:textures/particle/big_smoke_4.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: -1.5d
+			y: -9.0d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 6.5d
+			y: 2.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 6.5d
+			y: 4.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 8.5d
+			y: 2.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 8.5d
+			y: 4.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: -5.5d
+			y: 4.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: -5.5d
+			y: 2.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: -3.5d
+			y: 4.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 0.5d
+			y: 4.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 2.5d
+			y: -4.5d
+		}
+		{
+			alpha: 150
+			height: 3.5d
+			image: "minecraft:textures/particle/big_smoke_3.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: 3.5d
+			y: -12.0d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: -3.5d
+			y: -4.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: -5.5d
+			y: -4.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: -5.5d
+			y: -2.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 4.5d
+			y: -2.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 6.5d
+			y: -4.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 8.5d
+			y: -4.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 8.5d
+			y: -2.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 10.5d
+			y: -4.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 10.5d
+			y: -2.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 12.5d
+			y: -4.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 12.5d
+			y: -2.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 14.5d
+			y: -2.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 14.5d
+			y: -4.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 16.5d
+			y: -4.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 16.5d
+			y: -2.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 18.5d
+			y: -4.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 18.5d
+			y: -2.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 20.5d
+			y: -4.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 20.5d
+			y: -2.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 22.5d
+			y: -4.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 22.5d
+			y: -2.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 10.5d
+			y: 2.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 10.5d
+			y: 4.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 12.5d
+			y: 2.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 12.5d
+			y: 4.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 14.5d
+			y: 4.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 14.5d
+			y: 2.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 16.5d
+			y: 2.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 16.5d
+			y: 4.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 18.5d
+			y: 2.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 18.5d
+			y: 4.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 20.5d
+			y: 2.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 20.5d
+			y: 4.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 22.5d
+			y: 2.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 22.5d
+			y: 4.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 24.5d
+			y: -4.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 24.5d
+			y: -2.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 24.5d
+			y: 2.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 24.5d
+			y: 4.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 26.5d
+			y: 2.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 26.5d
+			y: 4.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 28.5d
+			y: 2.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 28.5d
+			y: 4.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 30.5d
+			y: 2.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 30.5d
+			y: 4.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 26.5d
+			y: -4.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 26.5d
+			y: -2.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 28.5d
+			y: -4.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 28.5d
+			y: -2.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 30.5d
+			y: -4.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 30.5d
+			y: -2.5d
+		}
+		{
+			alpha: 150
+			height: 3.0d
+			image: "minecraft:textures/particle/big_smoke_4.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: 14.0d
+			y: -12.5d
+		}
+		{
+			alpha: 150
+			height: 3.0d
+			image: "minecraft:textures/particle/big_smoke_4.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: 26.5d
+			y: -10.0d
+		}
+		{
+			alpha: 150
+			height: 3.5d
+			image: "minecraft:textures/particle/big_smoke_2.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: 17.0d
+			y: -11.5d
+		}
+		{
+			alpha: 150
+			height: 3.5d
+			image: "minecraft:textures/particle/big_smoke_3.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: 22.5d
+			y: -8.0d
+		}
+		{
+			alpha: 150
+			height: 3.5d
+			image: "minecraft:textures/particle/big_smoke_2.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: 22.5d
+			y: -14.5d
+		}
+		{
+			height: 1.0d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 1.0d
+			x: 20.0d
+			y: -20.5d
+		}
+		{
+			height: 1.0d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 1.0d
+			x: 18.5d
+			y: -18.5d
+		}
+		{
+			height: 1.0d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 1.0d
+			x: 23.0d
+			y: -19.5d
+		}
+		{
+			height: 1.0d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 1.0d
+			x: 25.0d
+			y: -17.5d
+		}
+		{
+			height: 1.0d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 1.0d
+			x: 26.5d
+			y: -21.5d
+		}
+		{
+			height: 1.0d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 1.0d
+			x: 29.0d
+			y: -19.5d
+		}
+	]
+	order_index: 1
+	quest_links: [
+		{
+			id: "4C2F62D5F7254F2E"
+			linked_quest: "159A0DAEE55DCAC0"
+			shape: "heart"
+			x: 21.0d
+			y: 1.0d
+		}
+		{
+			id: "1928D8D989DEE663"
+			linked_quest: "564258B25C477A28"
+			x: -5.0d
+			y: 3.5d
+		}
+		{
+			id: "05E9003C952C5DA1"
+			linked_quest: "0E1A20D0790AAFEB"
+			x: -3.0d
+			y: 3.5d
+		}
+		{
+			id: "6EFD9C98F18DD5A6"
+			linked_quest: "07400BEB7BC0C58D"
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			id: "39C9C56605F27BC1"
+			linked_quest: "36F08D50D4363A7B"
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			id: "5AE5B6CD78E73833"
+			linked_quest: "669A31E7B085A3DB"
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			id: "7F53254008E03641"
+			linked_quest: "1AF194B74265872C"
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			id: "44267538CF5BEBC2"
+			linked_quest: "43ADE3E09542FDBF"
+			shape: "heart"
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			id: "09225F12E65C68B6"
+			linked_quest: "0C8E678DEB92F74A"
+			x: 3.0d
+			y: -3.5d
+		}
+		{
+			id: "0EBF41B7413608D5"
+			linked_quest: "2B25B8F950B75BCD"
+			x: 5.5d
+			y: -3.5d
+		}
+		{
+			id: "2591755A7D2814F3"
+			linked_quest: "02854A3E8A5D5043"
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			id: "3972FA9B1C2C6E60"
+			linked_quest: "685E1C207FCAFECE"
+			x: 6.0d
+			y: -9.0d
+		}
+		{
+			id: "3D8885B8803E2BD9"
+			linked_quest: "281D25FF34849430"
+			x: 10.5d
+			y: -3.5d
+		}
+		{
+			id: "07133BFEDE8782F9"
+			linked_quest: "21F70EACF6D81E6A"
+			x: 17.5d
+			y: -9.0d
+		}
+		{
+			id: "6762C009627A248B"
+			linked_quest: "56F3FEDDF440C8C5"
+			x: 23.0d
+			y: -9.0d
+		}
+		{
+			id: "56F1100069819EF0"
+			linked_quest: "3FBDC8552F7D8008"
+			x: 22.0d
+			y: -18.5d
+		}
+		{
+			id: "42CD8DDD96511F42"
+			linked_quest: "52AB0BDC64293253"
+			x: 26.5d
+			y: -18.5d
+		}
+		{
+			id: "6B6AF968658E37BD"
+			linked_quest: "0B14BD72B452C057"
+			x: 16.5d
+			y: 1.0d
+		}
+	]
+	quests: [
+		{
+			dependencies: ["7D45BFF5659DBFB8"]
+			description: ["{quests.tfg_tips.firmaciv_info.desc}"]
+			id: "5EDE435F876349CD"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.firmaciv_info.subtitle}"
+			tasks: [
+				{
+					id: "343A05C706244FB9"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "firmaciv:sextant"
+					}
+					type: "item"
+				}
+				{
+					id: "0753AB3E96E9EF91"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "firmaciv:nav_clock"
+					}
+					type: "item"
+				}
+				{
+					id: "0F7BB20275FC7764"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "firmaciv:barometer"
+					}
+					type: "item"
+				}
+				{
+					id: "612EBA6C7B6FD94C"
+					item: "firmaciv:firmaciv_compass"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.firmaciv_info.title}"
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["36F08D50D4363A7B"]
+			description: ["{quests.tfg_tips.supply_cart.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/tack 4"
+			id: "6CC2DE7963434FAD"
+			subtitle: "{quests.tfg_tips.supply_cart.subtitle}"
+			tasks: [{
+				id: "2F45CE2D7364E06B"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfcastikorcarts:supply_cart)"
+					}
+				}
+				title: "{quests.tasktype.item.any} #tfcastikorcarts:supply_cart"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.supply_cart.title}"
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["18EC4CB75BF22292"]
+			description: ["{quests.tfg_tips.equines.desc}"]
+			guide_page: "tfg:field_guide tfg:the_world/wild_animals"
+			icon: "minecraft:saddle"
+			id: "1594C2564FC7982D"
+			subtitle: "{quests.tfg_tips.equines.subtitle}"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "ftbchunks:textures/faces/minecraft/horse.png"
+						}
+					}
+					id: "39B185B16CC5E612"
+					observe_type: 6
+					optional_task: true
+					timer: 0L
+					title: "{quests.tasktype.lookat} #tfc:horses"
+					to_observe: "#tfc:horses"
+					type: "observation"
+				}
+				{
+					icon: "minecraft:camel_spawn_egg"
+					id: "79D19147C88F1B78"
+					observe_type: 6
+					optional_task: true
+					timer: 0L
+					title: "{quests.tasktype.lookat} #tfc:camels"
+					to_observe: "#tfc:camels"
+					type: "observation"
+				}
+				{
+					id: "759FBE1158BA1018"
+					item: "minecraft:saddle"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.equines.title}"
+			x: -4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["36F08D50D4363A7B"]
+			description: ["{quests.tfg_tips.animal_cart.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/tack 8"
+			id: "3C4B7CE42195A466"
+			subtitle: "{quests.tfg_tips.animal_cart.subtitle}"
+			tasks: [{
+				id: "661B1D97980E0D09"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfcastikorcarts:animal_cart)"
+					}
+				}
+				title: "{quests.tasktype.item.any} #tfcastikorcarts:animal_cart"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.animal_cart.title}"
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["36F08D50D4363A7B"]
+			description: ["{quests.tfg_tips.plow.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/tack 6"
+			id: "68B4990C3A20E27C"
+			subtitle: "{quests.tfg_tips.plow.subtitle}"
+			tasks: [{
+				id: "579F6AF5B08FC4CC"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfcastikorcarts:plow)"
+					}
+				}
+				title: "{quests.tasktype.item.any} #tfcastikorcarts:plow"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.plow.title}"
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"00A2566109144D7F"
+				"02349F377C6B2475"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.space_survival.rover.desc}"]
+			id: "317088F2C23B3342"
+			subtitle: "{quests.space_survival.rover.subtitle}"
+			tasks: [{
+				id: "2184B3B5CB253216"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_1_rover"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "{quests.space_survival.rover.title}"
+			x: 21.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["55BF74AD2E6EF14A"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:ceramic/scythe_blade_mold"
+			}
+			id: "18EC4CB75BF22292"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				disable_toast: true
+				id: "16FBE8DD1EB265E8"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:fired_molds)"
+					}
+				}
+				title: "Any #tfc:fired_molds"
+				type: "item"
+			}]
+			title: "{quests.combat_tips.mold_main.title}"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["18EC4CB75BF22292"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/anvil/bronze"
+			}
+			id: "7D45BFF5659DBFB8"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				disable_toast: true
+				id: "48F86CA531531C87"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:bronze_anvils)"
+					}
+				}
+				title: "Any #tfc:bronze_anvils"
+				type: "item"
+			}]
+			title: "{quests.combat_tips.bronze_main.title}"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7D45BFF5659DBFB8"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/anvil/wrought_iron"
+			}
+			id: "3F4231A5F725DCF1"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				disable_toast: true
+				id: "550A18E91DF8E3F5"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/anvil/wrought_iron"
+				}
+				type: "item"
+			}]
+			title: "{quests.combat_tips.iron_main.title}"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3F4231A5F725DCF1"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/anvil/steel"
+			}
+			id: "223D8B06DC3EF71D"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				disable_toast: true
+				id: "18ECD82274CF67AD"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/anvil/black_steel"
+				}
+				type: "item"
+			}]
+			title: "{quests.transport.steel_main.title}"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5903C9AE3493EEED"]
+			description: [""]
+			disable_toast: true
+			icon: "tfg:lv_universal_circuit"
+			id: "5BD8697CD77C4FC1"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				disable_toast: true
+				id: "1D9D345E47E88A76"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/lv)"
+					}
+				}
+				title: "Any #gtceu:circuits/lv"
+				type: "item"
+			}]
+			title: "{quests.combat_tips.lv_main.title}"
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5BD8697CD77C4FC1"]
+			description: [""]
+			disable_toast: true
+			icon: "tfg:mv_universal_circuit"
+			id: "258335BDE0B7E1E7"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				disable_toast: true
+				id: "33A8D32C4062A95E"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/mv)"
+					}
+				}
+				title: "Any #gtceu:circuits/mv"
+				type: "item"
+			}]
+			title: "{quests.transport.mv_main.title}"
+			x: 17.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["02349F377C6B2475"]
+			description: [""]
+			disable_toast: true
+			icon: "tfg:ev_universal_circuit"
+			id: "5CEF31AC98120044"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				disable_toast: true
+				id: "2E674C39C21324D7"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/ev)"
+					}
+				}
+				title: "Any #gtceu:circuits/ev"
+				type: "item"
+			}]
+			title: "{quests.transport.ev_main.title}"
+			x: 26.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["258335BDE0B7E1E7"]
+			description: [""]
+			disable_toast: true
+			icon: "tfg:hv_universal_circuit"
+			id: "02349F377C6B2475"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				disable_toast: true
+				id: "503B5EC5A0E01E6F"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/hv)"
+					}
+				}
+				title: "Any #gtceu:circuits/hv"
+				type: "item"
+			}]
+			title: "{quests.combat_tips.hv_main.title}"
+			x: 22.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5CEF31AC98120044"]
+			disable_toast: true
+			icon: "tfg:iv_universal_circuit"
+			id: "1065E6CE51C7F883"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				disable_toast: true
+				id: "4192615FC33C2872"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/iv)"
+					}
+				}
+				title: "Any #gtceu:circuits/iv"
+				type: "item"
+			}]
+			title: "{quests.combat_tips.iv_main.title}"
+			x: 30.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["223D8B06DC3EF71D"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/anvil/black_steel"
+			}
+			id: "5903C9AE3493EEED"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				disable_toast: true
+				id: "0E4F1DBA4CBF55F3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/anvil/black_steel"
+				}
+				type: "item"
+			}]
+			title: "{quests.combat_tips.black_steel_main.title}"
+			x: 9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3F4231A5F725DCF1"]
+			id: "62591B69459A6752"
+			tasks: [{
+				id: "76D2B2A7D92E7BFE"
+				item: "firmaciv:small_triangular_sail"
+				type: "item"
+			}]
+			title: "TODO: new IV airship"
+			x: 3.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["3BE985DAF516E42D"]
+			icon: "mts:automotives.biplane"
+			id: "3C452F4E743E06B2"
+			tasks: [
+				{
+					id: "082E183237537F26"
+					item: "mts:automotives.biplane"
+					type: "item"
+				}
+				{
+					id: "2333DC089AE26347"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:buzzard_upgrades)"
+						}
+					}
+					optional_task: true
+					title: "Any #mts:buzzard_upgrades"
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: -13.5d
+		}
+		{
+			dependencies: ["3BE985DAF516E42D"]
+			icon: "mts:automotives.boilerbox"
+			id: "12000ED8E9172390"
+			tasks: [
+				{
+					id: "36B239D50F5B5BE7"
+					item: "mts:automotives.boilerbox"
+					type: "item"
+				}
+				{
+					id: "53B381A5A4649CBE"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:boilerbox_upgrades)"
+						}
+					}
+					optional_task: true
+					title: "Any #mts:boilerbox_upgrades"
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5903C9AE3493EEED"]
+			id: "3BE985DAF516E42D"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "4D730CCA20251D05"
+				item: "mts:mts.partscanner"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5BD8697CD77C4FC1"]
+			id: "4103264B6392FBFB"
+			tasks: [{
+				id: "62CF6C9AA8AC8C1E"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:pzl37los)"
+					}
+				}
+				title: "Any #mts:pzl37los"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -13.5d
+		}
+		{
+			dependencies: ["5BD8697CD77C4FC1"]
+			id: "55EED06539EF03FC"
+			tasks: [{
+				id: "654C48D19AD83499"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:pzlp11)"
+					}
+				}
+				title: "Any #mts:pzlp11"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -13.5d
+		}
+		{
+			dependencies: ["258335BDE0B7E1E7"]
+			id: "6409B86377BAB568"
+			tasks: [{
+				id: "6057662B5EADE764"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:trimotor)"
+					}
+				}
+				title: "Any #mts:trimotor"
+				type: "item"
+			}]
+			x: 17.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["258335BDE0B7E1E7"]
+			id: "41C562B02DBD9FDA"
+			tasks: [{
+				id: "7569D41895C4C916"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:comanche)"
+					}
+				}
+				title: "Any #mts:comanche"
+				type: "item"
+			}]
+			x: 17.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["258335BDE0B7E1E7"]
+			id: "41D6C1D0DBE8A57E"
+			tasks: [{
+				id: "5162D01C44741984"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:skyhawk)"
+					}
+				}
+				title: "Any #mts:skyhawk"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["5BD8697CD77C4FC1"]
+			id: "228F05F040AD6EEA"
+			tasks: [
+				{
+					id: "3444C09A794FC161"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:brotchen)"
+						}
+					}
+					title: "Any #mts:brotchen"
+					type: "item"
+				}
+				{
+					id: "12C247C318A353A1"
+					item: "mts:belroftmotors.brotchen_extra_pedals"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5BD8697CD77C4FC1"]
+			id: "1F9033F99BE87B3C"
+			tasks: [{
+				id: "11C6A5EEE0EED56B"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:bullfrog)"
+					}
+				}
+				title: "Any #mts:bullfrog"
+				type: "item"
+			}]
+			x: 13.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5BD8697CD77C4FC1"]
+			id: "1872CFB74565EFAE"
+			tasks: [
+				{
+					id: "3F9EB44139D606A2"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:scout)"
+						}
+					}
+					title: "Any #mts:scout"
+					type: "item"
+				}
+				{
+					id: "3954ABA388492B83"
+					item: "mts:mtsofficialpack.scoutbedpickup"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "120C8F438ADC7973"
+					item: "mts:mtsofficialpack.scouthardtop"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3E4A2235FD90A361"
+					item: "mts:mtsofficialpack.scouthardtop_vinyl"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7C84E1BAEC4C25E1"
+					item: "mts:mtsofficialpack.scoutpickuproof"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5BD8697CD77C4FC1"]
+			id: "1932CC4C464454A7"
+			tasks: [
+				{
+					id: "692D5B2BBFD5EEF3"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:gmcbrig)"
+						}
+					}
+					title: "Any #mts:gmcbrig"
+					type: "item"
+				}
+				{
+					id: "0D01BF0500D4F592"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:brigtrailers)"
+						}
+					}
+					title: "Any #mts:brigtrailers"
+					type: "item"
+				}
+				{
+					id: "0C74A46CA5132795"
+					item: "mts:belroftmotors.fifthwheel_brig"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5BD8697CD77C4FC1"]
+			id: "26EC654768FAB9DA"
+			tasks: [
+				{
+					id: "23024AAC3E7C90C9"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:fisker)"
+						}
+					}
+					title: "Any #mts:fisker"
+					type: "item"
+				}
+				{
+					id: "185573DC9491A9D3"
+					item: "mts:belroftmotors.boat_trailer"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "23C933EADB011CB3"
+					item: "mts:belroftmotors.searchlight_boat"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5BD8697CD77C4FC1"]
+			id: "4AAD388D98AA6443"
+			tasks: [{
+				id: "6F628830817FABC3"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:quad)"
+					}
+				}
+				title: "Any #mts:quad"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5BD8697CD77C4FC1"]
+			id: "20B0FA8A80AFDB2E"
+			tasks: [{
+				id: "0D0DCF102AC36666"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:silver)"
+					}
+				}
+				title: "Any #mts:silver"
+				type: "item"
+			}]
+			x: 13.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["258335BDE0B7E1E7"]
+			id: "19798B9E0E1B1052"
+			tasks: [
+				{
+					id: "478B79FEA51CE0E1"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:bell206)"
+						}
+					}
+					title: "Any #mts:bell206"
+					type: "item"
+				}
+				{
+					id: "25C9CAFC79628872"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:helicopter_attachments)"
+						}
+					}
+					optional_task: true
+					title: "Any #mts:helicopter_attachments"
+					type: "item"
+				}
+				{
+					id: "44F4A41BF67DADD2"
+					item: "mts:mtsofficialpack.auxiliary_tank"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "40E81EA97931D0D4"
+					item: "mts:mtsofficialpack.hoist_bell206"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0C9F4ED847B84987"
+					item: "mts:mtsofficialpack.spotlight_bell206"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 18.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["5BD8697CD77C4FC1"]
+			id: "73E82DC2500DC417"
+			tasks: [
+				{
+					id: "01AA537FA8AAF380"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:bell47g)"
+						}
+					}
+					title: "Any #mts:bell47g"
+					type: "item"
+				}
+				{
+					id: "78DB4275D1D33F90"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:helicopter_attachments)"
+						}
+					}
+					optional_task: true
+					title: "Any #mts:helicopter_attachments"
+					type: "item"
+				}
+				{
+					id: "0BAD63EFC8423054"
+					item: "mts:mtsofficialpack.barrelbell47g"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "02A82B11339D9199"
+					item: "mts:mtsofficialpack.cratebell47g"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: -13.5d
+		}
+		{
+			dependencies: ["258335BDE0B7E1E7"]
+			id: "6184F38C7F7F51D0"
+			tasks: [
+				{
+					id: "4605580A40F25A17"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:corallum)"
+						}
+					}
+					title: "Any #mts:corallum"
+					type: "item"
+				}
+				{
+					id: "649232F34968A46C"
+					item: "mts:belroftmotors.boat_trailer"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "36655F7C53D374A3"
+					item: "mts:belroftmotors.searchlight_boat"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 17.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["258335BDE0B7E1E7"]
+			id: "760CC436900B7FE5"
+			tasks: [
+				{
+					id: "4CBCCA855A1E1CF9"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:adventure)"
+						}
+					}
+					title: "Any #mts:adventure"
+					type: "item"
+				}
+				{
+					id: "11F417A4C14AD14F"
+					item: "mts:belroftmotors.adventure_sidestep"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6F32EC4A59A89E5D"
+					item: "mts:belroftmotors.boat_trailer_tow_hitch"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 17.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["258335BDE0B7E1E7"]
+			id: "209602057E3C7A42"
+			tasks: [
+				{
+					id: "37D9FB1F1F4B05C9"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:keeper)"
+						}
+					}
+					title: "Any #mts:keeper"
+					type: "item"
+				}
+				{
+					id: "0AA10CB8269BAEC5"
+					item: "mts:belroftmotors.keeper_bullbar"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "623E6933D710B0F7"
+					item: "mts:belroftmotors.keeper_sidestep"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "59BD05A4E33A3F7A"
+					item: "mts:belroftmotors.keeperroofrack"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "68E1CBE47E4578DA"
+					item: "mts:belroftmotors.boat_trailer_tow_hitch"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 18.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["258335BDE0B7E1E7"]
+			id: "7B608C8D0ED21E9F"
+			tasks: [{
+				id: "5FE722B459CBAB22"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:paragon)"
+					}
+				}
+				title: "Any #mts:paragon"
+				type: "item"
+			}]
+			x: 17.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["258335BDE0B7E1E7"]
+			id: "50086AEB63645287"
+			tasks: [
+				{
+					id: "4C6FD1A9A6188B67"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:citadel)"
+						}
+					}
+					title: "Any #mts:citadel"
+					type: "item"
+				}
+				{
+					id: "2699BBFADFA115C6"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:dry_van)"
+						}
+					}
+					optional_task: true
+					title: "Any #mts:dry_van"
+					type: "item"
+				}
+				{
+					id: "02134722DD3F6F27"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:tanker)"
+						}
+					}
+					optional_task: true
+					title: "Any #mts:tanker"
+					type: "item"
+				}
+				{
+					id: "0DE3E89519CB02D1"
+					item: "mts:belroftmotors.trailer_cars"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0164ABCFD48FA6BB"
+					item: "mts:belroftmotors.trailer_trucks"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 18.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["258335BDE0B7E1E7"]
+			id: "58F11110F0659190"
+			tasks: [{
+				id: "0206F95CCBC235CF"
+				item: "mts:mtsofficialpack.firetruck"
+				type: "item"
+			}]
+			x: 16.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["02349F377C6B2475"]
+			id: "031841EA4D914926"
+			tasks: [{
+				id: "194DFB721876D211"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:e500)"
+					}
+				}
+				title: "Any #mts:e500"
+				type: "item"
+			}]
+			x: 22.5d
+			y: -13.5d
+		}
+		{
+			dependencies: ["02349F377C6B2475"]
+			id: "4652B6FB10B34F6C"
+			tasks: [
+				{
+					id: "542CDC7EDBB9D8CB"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:vulcanair)"
+						}
+					}
+					title: "Any #mts:vulcanair"
+					type: "item"
+				}
+				{
+					id: "6DAC89ED5CCED42A"
+					item: "mts:mtsofficialpack.camera_vulcanair"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 21.5d
+			y: -13.5d
+		}
+		{
+			dependencies: ["02349F377C6B2475"]
+			id: "48F3C4EF4EEB6C02"
+			tasks: [{
+				id: "601C1914FDC1C89E"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:starfish)"
+					}
+				}
+				title: "Any #mts:starfish"
+				type: "item"
+			}]
+			x: 22.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["02349F377C6B2475"]
+			id: "4A309335F188BE34"
+			tasks: [{
+				id: "3032299CFC5B5253"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:fordmustang69)"
+					}
+				}
+				title: "Any #mts:fordmustang69"
+				type: "item"
+			}]
+			x: 23.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["02349F377C6B2475"]
+			id: "319EE508746310D8"
+			tasks: [{
+				id: "663D24DD8072DBBA"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:merc230)"
+					}
+				}
+				title: "Any #mts:merc230"
+				type: "item"
+			}]
+			x: 22.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["02349F377C6B2475"]
+			dependency_requirement: "one_completed"
+			id: "529D97FCF0CB175D"
+			tasks: [{
+				id: "0C842431CE7D7084"
+				item: {
+					Count: 1
+					id: "gtceu:advanced_electric_jetpack"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 22.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["5CEF31AC98120044"]
+			description: ["soarer, surfer, walker, charger"]
+			guide_page: "tfg:field_guide tfg:mars/mars_fauna"
+			id: "515A863161B1DF3C"
+			tasks: [{
+				id: "5A8C71C6EA2D248D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:food": {
+							creationDate: 77880000L
+							traits: [ ]
+						}
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "wan_ancient_beasts:soarer_egg"
+				}
+				type: "item"
+			}]
+			x: 26.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1065E6CE51C7F883"]
+			description: ["the two bugs"]
+			id: "2DE6BFD305F5FBF7"
+			tasks: [{
+				id: "25E3412A502D5D55"
+				item: "arthropocolypse:platerodrilus_spawn_egg"
+				type: "item"
+			}]
+			x: 30.5d
+			y: -3.5d
+		}
+	]
+	subtitle: ["{quests.transport.subtitle}"]
+	title: "{quests.transport}"
+}

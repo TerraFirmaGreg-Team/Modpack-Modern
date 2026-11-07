@@ -716,6 +716,9 @@ function registerTFGOverworldEntityTypeTags(event) {
 		event.add('tfg:ignores_cacti', `tfcastikorcarts:plow/${wood}`)
 	})
 
+	event.add('tfc:camels', 'tfg:dromedary_camel')
+	event.add('tfc:camels', 'tfg:bactrian_camel')
+
 	event.add('tfc:amphibious_creatures', 'tfg:leopard_seal')
 	event.add('tfc:spawns_on_cold_blocks', 'tfg:leopard_seal')
 	event.add('tfc:land_predators', 'tfg:leopard_seal')

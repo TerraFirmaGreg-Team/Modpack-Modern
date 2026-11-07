@@ -30,40 +30,12 @@
 		x: 13.5d
 		y: -6.0d
 	}]
-	order_index: 1
+	order_index: 2
 	quest_links: [
-		{
-			id: "4016D8415F59B1A4"
-			linked_quest: "38FF003C9349C0F2"
-			x: 16.5d
-			y: -1.5d
-		}
-		{
-			id: "0C7E9422BF567F2C"
-			linked_quest: "4C37DAD7C66523CC"
-			shape: "gear"
-			size: 1.5d
-			x: 16.5d
-			y: -3.0d
-		}
-		{
-			id: "6DB21C9A32CCA1C2"
-			linked_quest: "4D5B75F5270CCBD3"
-			x: 25.0d
-			y: -1.5d
-		}
-		{
-			id: "67F9A71A21D9C7C1"
-			linked_quest: "035B0FDD90E51C0C"
-			shape: "gear"
-			size: 2.0d
-			x: 25.0d
-			y: -3.0d
-		}
 		{
 			id: "5A0155B06CF04C97"
 			linked_quest: "038B204DAC9C863D"
-			x: 16.5d
+			x: 17.0d
 			y: 1.5d
 		}
 		{
@@ -75,50 +47,70 @@
 		{
 			id: "156D1EDE1657636B"
 			linked_quest: "21042F13F754E6E6"
-			x: 3.0d
+			x: 2.5d
 			y: -3.0d
 		}
 		{
 			id: "6691530BA2A34EB4"
 			linked_quest: "615361AD621B588E"
-			x: -3.0d
+			x: -3.5d
 			y: 1.5d
 		}
 		{
 			id: "226F255DA78E438C"
 			linked_quest: "4425519187BF28FE"
-			x: -4.0d
+			x: -4.5d
 			y: -4.5d
 		}
 		{
 			id: "44336726DD9F224A"
 			linked_quest: "70FE6706B43FC5FC"
-			x: 0.0d
+			x: -0.5d
 			y: -4.5d
 		}
 		{
 			id: "591636FADB59A1AE"
 			linked_quest: "4201BFA1946F6491"
-			x: -4.0d
+			x: -4.5d
 			y: 3.0d
-		}
-		{
-			id: "35F893275E728B14"
-			linked_quest: "7A4C6930EF68646E"
-			x: 21.0d
-			y: -3.0d
 		}
 		{
 			id: "22A2FD93040504D0"
 			linked_quest: "4B4F052F00435AFE"
-			x: 9.0d
+			x: 9.5d
 			y: -3.0d
 		}
 		{
 			id: "5C6FE90B6491697A"
 			linked_quest: "43ADE3E09542FDBF"
-			x: 3.0d
+			x: 2.5d
 			y: 1.5d
+		}
+		{
+			id: "3E6A02DA2AFCBFEE"
+			linked_quest: "4AF8B2C2E62AA261"
+			x: 17.0d
+			y: -1.5d
+		}
+		{
+			id: "012D499E665B4339"
+			linked_quest: "56F3FEDDF440C8C5"
+			shape: "gear"
+			size: 1.5d
+			x: 17.0d
+			y: -3.0d
+		}
+		{
+			id: "5077FEFE38E3EA36"
+			linked_quest: "18F2D96C0163B974"
+			x: 8.5d
+			y: -1.5d
+		}
+		{
+			id: "7F24FE5B0AA16B56"
+			linked_quest: "21F70EACF6D81E6A"
+			x: 14.0d
+			y: -3.0d
 		}
 	]
 	quests: [
@@ -154,7 +146,7 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.iron_main.title}"
-			x: 3.0d
+			x: 2.5d
 			y: 0.0d
 		}
 		{
@@ -174,7 +166,7 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.crossbow.title}"
-			x: 4.5d
+			x: 4.0d
 			y: -1.5d
 		}
 		{
@@ -208,7 +200,7 @@
 				}
 				type: "item"
 			}]
-			title: "{quests.combat_tips.steel_main.title}"
+			title: "{quests.combat_tips.black_steel_main.title}"
 			x: 6.0d
 			y: 0.0d
 		}
@@ -229,7 +221,7 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.crankbow.title}"
-			x: 4.5d
+			x: 4.0d
 			y: -3.0d
 		}
 		{
@@ -305,12 +297,13 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.lv_main.title}"
-			x: 9.0d
+			x: 9.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["165215273D49B85B"]
 			description: ["{quests.combat_tips.adv_clock_main.desc}"]
+			disable_toast: true
 			icon: "tfg:mv_universal_circuit"
 			id: "07A777BAAB2DBCFC"
 			shape: "octagon"
@@ -338,7 +331,7 @@
 				}
 			]
 			title: "{item.tfg.advanced_clockwork_mechanism}"
-			x: 13.0d
+			x: 13.5d
 			y: 0.0d
 		}
 		{
@@ -386,7 +379,7 @@
 				}
 			]
 			title: "{quests.combat_tips.revolver_gun.title}"
-			x: 10.0d
+			x: 10.5d
 			y: -1.5d
 		}
 		{
@@ -447,7 +440,7 @@
 				}
 			]
 			title: "{quests.combat_tips.rimmed_blunt_ammo.title}"
-			x: 12.0d
+			x: 12.5d
 			y: 1.5d
 		}
 		{
@@ -524,7 +517,7 @@
 				}
 			]
 			title: "{quests.combat_tips.slap_ammo.title}"
-			x: 12.0d
+			x: 12.5d
 			y: -1.5d
 		}
 		{
@@ -569,12 +562,13 @@
 				}
 			]
 			title: "{quests.combat_tips.high_slap_ammo.title}"
-			x: 14.0d
+			x: 14.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["1FF607647FA682B3"]
 			description: ["{quests.combat_tips.certus_main.desc}"]
+			disable_toast: true
 			guide_page: "tfg:field_guide tfg:mars/mars_equipment"
 			icon: "tfg:ev_universal_circuit"
 			id: "278F18477F9B7E08"
@@ -603,7 +597,7 @@
 				}
 			]
 			title: "{item.tfg.certus_mechanism}"
-			x: 21.0d
+			x: 21.5d
 			y: 0.0d
 		}
 		{
@@ -664,7 +658,7 @@
 				}
 			]
 			title: "{quests.combat_tips.hard_quartz_ammo.title}"
-			x: 21.0d
+			x: 21.5d
 			y: -1.5d
 		}
 		{
@@ -741,7 +735,7 @@
 				}
 			]
 			title: "{quests.combat_tips.12g_ammo.title}"
-			x: 14.0d
+			x: 14.5d
 			y: 1.5d
 		}
 		{
@@ -786,7 +780,7 @@
 				}
 			]
 			title: "{quests.combat_tips.fluix_quartz_ammo.title}"
-			x: 22.5d
+			x: 23.0d
 			y: -1.5d
 		}
 		{
@@ -879,7 +873,7 @@
 				}
 			]
 			title: "{quests.combat_tips.etched_quartz_ammo.title}"
-			x: 19.5d
+			x: 20.0d
 			y: 1.5d
 		}
 		{
@@ -924,7 +918,7 @@
 				}
 			]
 			title: "{quests.combat_tips.cluster_quartz_ammo.title}"
-			x: 22.5d
+			x: 23.0d
 			y: 1.5d
 		}
 		{
@@ -973,7 +967,7 @@
 				}
 			]
 			title: "{quests.combat_tips.40mm_ammo.title}"
-			x: 19.5d
+			x: 20.0d
 			y: -1.5d
 		}
 		{
@@ -1006,7 +1000,7 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.bronze_main.title}"
-			x: 0.0d
+			x: -0.5d
 			y: 0.0d
 		}
 		{
@@ -1016,7 +1010,7 @@
 			shape: "octagon"
 			size: 1.5d
 			title: "{quests.combat_tips.stone_main.title}"
-			x: -8.0d
+			x: -8.5d
 			y: 0.0d
 		}
 		{
@@ -1054,7 +1048,7 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.knife.title}"
-			x: -7.0d
+			x: -7.5d
 			y: 1.5d
 		}
 		{
@@ -1075,7 +1069,7 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.shield.title}"
-			x: -1.0d
+			x: -1.5d
 			y: -1.5d
 		}
 		{
@@ -1134,7 +1128,7 @@
 				}
 			]
 			title: "{quests.combat_tips.armor.title}"
-			x: 0.0d
+			x: -0.5d
 			y: -3.0d
 		}
 		{
@@ -1163,7 +1157,7 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.javelin.title}"
-			x: -8.0d
+			x: -8.5d
 			y: -3.0d
 		}
 		{
@@ -1184,7 +1178,7 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.forged_weapons.title}"
-			x: 1.0d
+			x: 0.5d
 			y: -1.5d
 		}
 		{
@@ -1227,7 +1221,7 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.chainsaw.title}"
-			x: 10.0d
+			x: 10.5d
 			y: 1.5d
 		}
 		{
@@ -1268,7 +1262,7 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.axe.title}"
-			x: -9.0d
+			x: -9.5d
 			y: 1.5d
 		}
 		{
@@ -1301,7 +1295,7 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.mold_main.title}"
-			x: -4.0d
+			x: -4.5d
 			y: 0.0d
 		}
 		{
@@ -1344,7 +1338,7 @@
 				}
 			]
 			title: "{quests.combat_tips.bow.title}"
-			x: -7.0d
+			x: -7.5d
 			y: -1.5d
 		}
 		{
@@ -1382,7 +1376,7 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.hammer.title}"
-			x: -9.0d
+			x: -9.5d
 			y: -1.5d
 		}
 		{
@@ -1429,7 +1423,7 @@
 				}
 			]
 			title: "{quests.combat_tips.mold_weapons.title}"
-			x: -3.0d
+			x: -3.5d
 			y: -1.5d
 		}
 		{
@@ -1449,7 +1443,7 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.wood_shield.title}"
-			x: -5.0d
+			x: -5.5d
 			y: -1.5d
 		}
 		{
@@ -1504,7 +1498,7 @@
 				}
 			]
 			title: "{quests.combat_tips.leather.title}"
-			x: -4.0d
+			x: -4.5d
 			y: -3.0d
 		}
 		{
@@ -1529,7 +1523,7 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.steel_ammo.title}"
-			x: 9.0d
+			x: 9.5d
 			y: 4.5d
 		}
 		{
@@ -1553,7 +1547,7 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.wireless_ammo.title}"
-			x: 21.0d
+			x: 21.5d
 			y: 4.5d
 		}
 		{
@@ -1578,7 +1572,7 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.magnalium_ammo.title}"
-			x: 13.0d
+			x: 13.5d
 			y: 4.5d
 		}
 		{
@@ -1603,7 +1597,7 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.desh_ammo.title}"
-			x: 16.5d
+			x: 17.0d
 			y: 4.5d
 		}
 		{
@@ -1684,7 +1678,7 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.any_ammo.title}"
-			x: 3.0d
+			x: 2.5d
 			y: 4.5d
 		}
 		{
@@ -1771,7 +1765,7 @@
 				}
 			]
 			title: "{quests.combat_tips.flintlock_gun.title}"
-			x: 4.5d
+			x: 4.0d
 			y: 3.0d
 		}
 		{
@@ -1789,7 +1783,7 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.flintlock_mechanism.title}"
-			x: 4.5d
+			x: 4.0d
 			y: 1.5d
 		}
 		{
@@ -1838,12 +1832,13 @@
 				}
 			]
 			title: "{quests.combat_tips.club.title}"
-			x: -8.0d
+			x: -8.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["07A777BAAB2DBCFC"]
 			description: ["{quests.combat_tips.hv_main.desc}"]
+			disable_toast: true
 			icon: "tfg:hv_universal_circuit"
 			id: "1FF607647FA682B3"
 			shape: "octagon"
@@ -1862,11 +1857,12 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.hv_main.title}"
-			x: 16.5d
+			x: 17.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["278F18477F9B7E08"]
+			disable_toast: true
 			icon: "tfg:iv_universal_circuit"
 			id: "11DE49B8724C2603"
 			shape: "octagon"
@@ -1885,7 +1881,7 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.iv_main.title}"
-			x: 25.0d
+			x: 25.5d
 			y: 0.0d
 		}
 		{
@@ -1913,7 +1909,7 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.quiver.title}"
-			x: -7.0d
+			x: -7.5d
 			y: -3.0d
 		}
 		{
@@ -1931,7 +1927,7 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.trims.title}"
-			x: 0.0d
+			x: -0.5d
 			y: 1.5d
 		}
 		{
@@ -1945,7 +1941,7 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.javelin_throwing.title}"
-			x: -8.0d
+			x: -8.5d
 			y: -4.5d
 		}
 		{
@@ -1959,7 +1955,7 @@
 				item: "tfg:piglin_disguise"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -5.5d
 			y: 1.5d
 		}
 		{
@@ -2071,7 +2067,7 @@
 				}
 			]
 			title: "{quests.space_survival.t2_space_suit.title}"
-			x: 21.0d
+			x: 21.5d
 			y: 1.5d
 		}
 		{
@@ -2097,8 +2093,81 @@
 				type: "item"
 			}]
 			title: "{quests.space_survival.soulbound.title}"
-			x: 18.0d
+			x: 18.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["11DE49B8724C2603"]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.quarktech.desc}"]
+			id: "0D8AA8975F136729"
+			subtitle: "{quests.tfg_tips.quarktech.subtitle}"
+			tasks: [
+				{
+					id: "7B7EA0F053B3AEE1"
+					item: {
+						Count: 1
+						id: "gtceu:quarktech_helmet"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "405F5ABCC38AA72F"
+					item: "gtceu:quarktech_chestplate"
+					type: "item"
+				}
+				{
+					id: "6958328DC7894D83"
+					item: "gtceu:quarktech_leggings"
+					type: "item"
+				}
+				{
+					id: "3B48D555A95A0A1F"
+					item: "gtceu:quarktech_boots"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.quarktech.title}"
+			x: 25.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0D8AA8975F136729"]
+			description: ["{quests.tfg_tips.adv_quarktech.desc}"]
+			id: "168251ED221ADBA7"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "{quests.tfg_tips.adv_quarktech.subtitle}"
+			tasks: [{
+				id: "1030632768ACC9D9"
+				item: {
+					Count: 1
+					id: "gtceu:advanced_quarktech_chestplate"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 25.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"2D2CB8104E40E808"
+				"278F18477F9B7E08"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.nano_saber.desc}"]
+			id: "0FF0C31928D7C61F"
+			subtitle: "{quests.tfg_tips.nano_saber.subtitle}"
+			tasks: [{
+				id: "246DC88481390596"
+				item: "gtceu:nano_saber"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.nano_saber.title}"
+			x: 21.5d
+			y: -3.0d
 		}
 	]
 	subtitle: ["{quests.combat.subtitle}"]

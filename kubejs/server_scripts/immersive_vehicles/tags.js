@@ -75,14 +75,6 @@ function registerImmersiveVehiclesItemTags(event) {
 		'mts:mtsofficialpack.gmcbrig_tan',
 		'mts:mtsofficialpack.gmcbrig_white'
 	])
-	event.add('mts:mc172', [
-		'mts:mtsofficialpack.mc172_acacia',
-		'mts:mtsofficialpack.mc172_birch',
-		'mts:mtsofficialpack.mc172_darkoak',
-		'mts:mtsofficialpack.mc172_jungle',
-		'mts:mtsofficialpack.mc172_oak',
-		'mts:mtsofficialpack.mc172_spruce'
-	]);
 	event.add('mts:merc230', [
 		'mts:mtsofficialpack.merc230_white',
 		'mts:mtsofficialpack.merc230_black',
@@ -248,6 +240,10 @@ function registerImmersiveVehiclesItemTags(event) {
 		'mts:belroftmotors.union_plate',
 		'mts:belroftmotors.trailer_cars',
 		'mts:belroftmotors.trailer_trucks',
+		'#mts:boilerbox_upgrades',
+		'#mts:buzzard_upgrades'
+	]);
+	event.add('mts:boilerbox_upgrades', [
 		'mts:automotives.upgrade_airhorn',
 		'mts:automotives.upgrade_cab',
 		'mts:automotives.upgrade_cakeloader',
@@ -255,21 +251,35 @@ function registerImmersiveVehiclesItemTags(event) {
 		'mts:automotives.upgrade_fuel',
 		'mts:automotives.upgrade_navalhorn',
 		'mts:automotives.upgrade_nitro',
+		'mts:automotives.upgrade_seat',
+		'mts:automotives.upgrade_storage',
+		'mts:automotives.upgrade_turbo'
+	]);
+	event.add('mts:buzzard_upgrades', [
+		'mts:automotives.upgrade_cab',
+		'mts:automotives.upgrade_fuel',
 		'mts:automotives.upgrade_pontoons',
 		'mts:automotives.upgrade_seat',
 		'mts:automotives.upgrade_storage',
-		'mts:automotives.upgrade_turbo',
-		'mts:automotives.upgrade_urlwings'
+		'mts:automotives.upgrade_urlwings',
+		'mts:automotives.upgrade_turbo'
+	]);
+	event.add('mts:pzl_bombracks', [
+		'mts:mtsofficialpack.heavy_bombrack',
+		'mts:mtsofficialpack.double_bombrack',
+		'mts:mtsofficialpack.bomblet_bombrack'
 	]);
 	event.add('mts:wheels', [
-		'mts:mtsofficialpack.ft17track',
+		'mts:mtsofficialpack.wheelhuge',
 		'mts:mtsofficialpack.wheellarge',
 		'mts:mtsofficialpack.wheelmedium',
 		'mts:mtsofficialpack.wheelsmall',
-		'mts:mtsofficialpack.pontoon',
-		'mts:mtsofficialpack.skidhelicopter',
 		'mts:belroftmotors.concave_truck_wheel',
 		'mts:belroftmotors.convex_truck_wheel'
+	]);
+	event.add('mts:helicopter_attachments', [
+		'mts:mtsofficialpack.pontoon',
+		'mts:mtsofficialpack.skidhelicopter'
 	]);
 	event.add('mts:propellers', [
 		'mts:mtsofficialpack.propellerlarge2blade',

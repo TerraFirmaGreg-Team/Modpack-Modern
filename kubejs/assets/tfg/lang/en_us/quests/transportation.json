@@ -1,0 +1,70 @@
+{
+	"quests.transport": "Travel and Transport",
+	"quests.transport.subtitle": "What ever happened to walking on your own two feet?",
+
+	"quests.tfg_tips.glider.title": "Hang Glider",
+	"quests.tfg_tips.glider.subtitle": "This is not Breath of the Wild",
+	"quests.tfg_tips.glider.desc": "A &dHang Glider&r can be used to glide along the air. You &ccannot gain altitude&r with this but it can be useful to traverse long distances if you jump from high up.\nGreat synergy with &bJetpacks&r though!",
+
+	"quests.tfg_tips.reinforced_glider.title": "Reinforced Glider",
+	"quests.tfg_tips.reinforced_glider.subtitle": "Light as a feather!",
+	"quests.tfg_tips.reinforced_glider.desc": "A &dReinforced Hang Glider&r is the improved version of a &aHang Glider&r. With an upgraded &aAluminium&r frame and a fabric made of either &aReinforced Fabric&r or &aLightweight Cloth&r, you can now soar through the skies at &cdouble the speed&r!\nIt also has &cmore durability&r than the normal hang glider, and can be &crepaired&r in an assembler.\n\n&3Pro tip:&r\nUsing either &aSilk Cloth&r or &aPhantom Silk&r obtained in &4The Beneath&r reduces the fabric cost by &e2/3rds&r for both crafting and repairing!\nOnce you enter &6HV&r, you can also use &aPolycaprolactam Fabric&r as one of the fabrics with a reduced cost.",
+
+	"quests.tfg_tips.warfare.title": "Sea Warfare",
+	"quests.tfg_tips.warfare.subtitle": "FIRE ALL CANNONS!",
+	"quests.tfg_tips.warfare.desc": "You can outfit your &bSloop&r with firepower via the &dCannon&r and cannon balls, in case you want to blow something to smithereens.\nTo fire a cannon, you'll need to load it with some &aGunpowder&r, &aUnrefined Paper&r and your &aCannon Ball&r. Then light the wick with &cFlint and Steel.&r\n\nDon't have a &bSloop&r? Don't worry! Cannons can be placed and fired on the ground the same way you would fire one on a &bSloop&r.",
+
+	"quests.tfg_tips.kayak_materials.title": "The Kayak",
+	"quests.tfg_tips.kayak_materials.subtitle": "Get yourself that Kayak.",
+	"quests.tfg_tips.kayak_materials.desc": "The &dKayak&r is the second most simple boat you can craft, requiring &bWaxes&r for the &aWaterproof Hides&r. It is also the &conly&r boat that can be picked up as an item. Despite having a &dsingle passenger&r slot, it is the fastest boat in the game until the iron age &dSloop!&r",
+
+	"quests.tfg_tips.create_canoe.title": "The Canoe",
+	"quests.tfg_tips.create_canoe.subtitle": "Happy Canoe-ing!",
+	"quests.tfg_tips.create_canoe.desc": "With the &dCanoe&r, traversing bodies of water in the early game will now be possible. Make sure you create a &bCanoe Paddle&r so you can go faster!\n\nTo complete the first task of this quest, you need to look at the finished &dCanoe.&r\n\n&3&lTip:&r&o Two players, both equipped with paddles, can achieve a higher top speed together in the same canoe. Multiplayer only of course!",
+
+	"quests.tfg_tips.create_rowboat.title": "The Rowboat",
+	"quests.tfg_tips.create_rowboat.subtitle": "Happy Rowboat-ing!",
+	"quests.tfg_tips.create_rowboat.desc": "With the &dRowboat&r, you can now transport a decent amount of items across the oceans, perfect for overseas exploration, perhaps to the tropics! Make sure you create two &bOars&r so you can go faster!\nYou can also dye it!\n\nTo complete the first task of this quest, you need to look at any finished &dRowboat.&r\n\n&3&lTips:&r&o Two passenger slots? Perfect for bringing home pairs of breeding animals for your farm through a river system or across lakes and oceans.",
+
+	"quests.tfg_tips.sloop_under_construction_materials.title": "The Sloop",
+	"quests.tfg_tips.sloop_under_construction_materials.subtitle": "The Great Pirate Era has begun",
+	"quests.tfg_tips.sloop_under_construction_materials.desc": "The &dSloop&r is the most advanced seaworthy vessel, requiring &aWrought Iron.&r It has ample space for storage, anvils and workbenches! It is incredibly expensive and requires practice to sail. The &2Field Guide&r has all the details for construction and on how to sail.\n\nAgain, do not attempt to mix up different kinds of hardwoods in the same vessel.",
+	"quests.tfg_tips.sloop_under_construction_materials.task": "16x of any Hardwood Lumber",
+
+	"quests.tfg_tips.astikorcarts.title": "TFC Astikor Carts",
+	"quests.tfg_tips.astikorcarts.subtitle": "Overland routes",
+	"quests.tfg_tips.astikorcarts.desc": "&2TFC Astikor Carts&r provide early game transport options for land travel for both mobs and items.\nCarts can be manually pulled by &cplayers&r (very slow if they are full!) or by &bequine animals&r, such as horses.\n\nRemember to use the &4\"Action Key\" keybind (default R)&r to attach or de-attach yourself or the animal you are riding to the cart.",
+
+	"quests.tfg_tips.horseshoes.title": "Horseshoes",
+	"quests.tfg_tips.horseshoes.subtitle": "Fashionable Equine Footwear",
+	"quests.tfg_tips.horseshoes.desc": "&aHorseshoes&r are an accessory for your equine companions that boost their &9speed&r, &dfall resistance&r, and &cstep height&r at higher tiers.",
+	"quests.tfg_tips.horseshoes.task": "Any Horseshoes",
+
+	"quests.tfg_tips.hiking_boots.title": "Hiking Boots",
+	"quests.tfg_tips.hiking_boots.subtitle": "🎵 and I would walk five hundred miles",
+	"quests.tfg_tips.hiking_boots.desc": "&aHiking Boots&r prevent tall grass from slowing you down, increase your safe fall height, and can even give you some extra step height and walking speed. They don't provide as much protection as proper metal armor, but if you're not actually fighting something, these are well worth the trade-off!",
+	"quests.tfg_tips.hiking_boots.task": "Any Hiking Boots",
+
+	"quests.tfg_tips.firmaciv_info.title": "Voyage Gadgets",
+	"quests.tfg_tips.firmaciv_info.subtitle": "In case you care for realism",
+	"quests.tfg_tips.firmaciv_info.desc": "&3Firma:Civ&r comes with 4 different navigational tools, each giving you important information about your position in the world.\nIncludes the &dSextant&r, &dNavigator's Timepiece&r, &dBarometer&r, and &dCompass&r; more information about the tools in the &2Field Guide.&r\n\n&3&lLore:&r&o Firma:Civ by default removes coordinates to make you use its navigational tools. TFG has that disabled by default, but you can re-enable it in its configs if you'd like.",
+
+	"quests.tfg_tips.equines.title": "Horse Riding",
+	"quests.tfg_tips.equines.subtitle": "Stallion of the Cimarron",
+	"quests.tfg_tips.equines.desc": "Find yourself either a &bHorse&r, &bDonkey&r, or &bCamel&r and build up enough &afamiliarity&r to let them ride you with your trusty &aSaddle&r, knapped from leather.\nIn addition, they can pull &dCarts&r without speed penalties!\n\n&bHorses&r are great for exploring the interior of continents effortlessly in the early game, and can be bred for better stats.\n\n&bDonkeys&r and &bMules&r can carry an extra chest or even a barrel without a &2Supply Cart&r, while &bCamels&r can carry two players, walk faster on sand, and have a long jump.\n\nAs always, more information (such as spawning conditions) is in the &2Field Guide.&r\n\n&3&lTip:&r&o Want to horse-ride on a different continent across the ocean? Don't worry, you can bring along your trusty ride on certain boats!",
+
+	"quests.tfg_tips.supply_cart.title": "Supply Cart",
+	"quests.tfg_tips.supply_cart.subtitle": "Carry All",
+	"quests.tfg_tips.supply_cart.desc": "With a whopping &c54&r slots, &dSupply Carts&r can carry a large amount of items &aregardless of their weight&r, even anvils!\nPerfect for exploration, mining and logging trips, or for moving bases!",
+
+	"quests.tfg_tips.animal_cart.title": "Animal Cart",
+	"quests.tfg_tips.animal_cart.subtitle": "Animal Kidnapper Machine",
+	"quests.tfg_tips.animal_cart.desc": "The &dAnimal Cart&r allows you transport up to 3 animals across land.\nPerfect for collecting breeding pairs for your livestock farms! Simply run over an animal with the cart. &cShift-right click&r to dismount all animals.",
+	"quests.tfg_tips.plow.title": "Plow",
+	"quests.tfg_tips.plow.subtitle": "Large Scale Farming",
+	"quests.tfg_tips.plow.desc": "If there ever comes the need to till large sections of land for some megafarms, the &dPlow&r can come in clutch.",
+
+	"quests.transport.steel_main.title": "Steel Age",
+	"quests.transport.mv_main.title": "&bMV&r",
+	"quests.transport.ev_main.title": "&5EV&r"
+}

@@ -2542,7 +2542,11 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["76B145EFF9B5DB67"]
+			dependencies: [
+				"76B145EFF9B5DB67"
+				"18EC4CB75BF22292"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.create_canoe.desc}"]
 			guide_page: "tfg:field_guide tfg:logistics/boats 26"
 			icon: "firmaciv:canoe_icon_only"

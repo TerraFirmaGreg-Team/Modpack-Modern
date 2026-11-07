@@ -110,7 +110,9 @@
 				"601088B7920140B2"
 				"3FBDC8552F7D8008"
 				"3B18DE7395776B41"
+				"5CEF31AC98120044"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.extreme_voltage.t2_rocket.desc}"]
 			icon: {
 				Count: 1

@@ -2050,29 +2050,6 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["292938760AB9A12B"]
-			dependency_requirement: "one_completed"
-			description: ["{quests.medium_voltage.mv_jetpack.desc}"]
-			guide_page: "tfg:field_guide tfg:logistics/exploration_gear 15"
-			id: "62737DC459F6F5F5"
-			optional: true
-			shape: "heart"
-			size: 1.0d
-			subtitle: "{quests.medium_voltage.mv_jetpack.subtitle}"
-			tasks: [{
-				id: "78D9D6C90B1C751E"
-				item: {
-					Count: 1
-					id: "gtceu:liquid_fuel_jetpack"
-					tag: { }
-				}
-				type: "item"
-			}]
-			title: "{quests.medium_voltage.mv_jetpack.title}"
-			x: 1.0d
-			y: 9.5d
-		}
-		{
 			dependencies: ["0DBC148D92A9F69F"]
 			description: ["{quests.low_voltage.rancher.desc}"]
 			icon: "minecraft:milk_bucket"

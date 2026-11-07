@@ -678,24 +678,6 @@
 			y: 8.5d
 		}
 		{
-			dependencies: [
-				"2D2CB8104E40E808"
-				"278F18477F9B7E08"
-			]
-			dependency_requirement: "one_completed"
-			description: ["{quests.tfg_tips.nano_saber.desc}"]
-			id: "7A4C6930EF68646E"
-			subtitle: "{quests.tfg_tips.nano_saber.subtitle}"
-			tasks: [{
-				id: "41A7611367BBD2A7"
-				item: "gtceu:nano_saber"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.nano_saber.title}"
-			x: 11.5d
-			y: 11.0d
-		}
-		{
 			dependencies: ["2D2CB8104E40E808"]
 			description: ["{quests.tfg_tips.magnets.desc}"]
 			id: "49D2EFFFC15563F9"
@@ -712,8 +694,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.magnets.title}"
-			x: 11.5d
-			y: 12.0d
+			x: 10.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["57FE828BAA8F6276"]
@@ -731,104 +713,8 @@
 				}
 				type: "item"
 			}]
-			x: 8.5d
-			y: 14.0d
-		}
-		{
-			dependencies: [
-				"7516BF9C12015DF3"
-				"1FF607647FA682B3"
-				"16B735F9C391D260"
-			]
-			dependency_requirement: "one_completed"
-			description: ["{quests.tfg_tips.nano_armor.desc}"]
-			id: "38FF003C9349C0F2"
-			subtitle: "{quests.tfg_tips.nano_armor.subtitle}"
-			tasks: [
-				{
-					id: "7C3E295B35639EC9"
-					item: {
-						Count: 1
-						id: "gtceu:nanomuscle_helmet"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "5A6F7D3FBD64E383"
-					item: "gtceu:nanomuscle_chestplate"
-					type: "item"
-				}
-				{
-					id: "71FC38DE4929E578"
-					item: "gtceu:nanomuscle_leggings"
-					type: "item"
-				}
-				{
-					id: "275CF158B69FF055"
-					item: "gtceu:nanomuscle_boots"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.nano_armor.title}"
 			x: 5.0d
-			y: 14.0d
-		}
-		{
-			dependencies: [
-				"7516BF9C12015DF3"
-				"11DE49B8724C2603"
-			]
-			dependency_requirement: "one_completed"
-			description: ["{quests.tfg_tips.quarktech.desc}"]
-			id: "4D5B75F5270CCBD3"
-			subtitle: "{quests.tfg_tips.quarktech.subtitle}"
-			tasks: [
-				{
-					id: "4DFF8E5F32E7AFC3"
-					item: {
-						Count: 1
-						id: "gtceu:quarktech_helmet"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "3AA49E7CEA246A9B"
-					item: "gtceu:quarktech_chestplate"
-					type: "item"
-				}
-				{
-					id: "573F87C0CFC826DA"
-					item: "gtceu:quarktech_leggings"
-					type: "item"
-				}
-				{
-					id: "0452DFF0948B9B3E"
-					item: "gtceu:quarktech_boots"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.quarktech.title}"
-			x: 6.0d
-			y: 14.0d
-		}
-		{
-			dependencies: ["4D5B75F5270CCBD3"]
-			description: ["{quests.tfg_tips.adv_quarktech.desc}"]
-			id: "035B0FDD90E51C0C"
-			subtitle: "{quests.tfg_tips.adv_quarktech.subtitle}"
-			tasks: [{
-				id: "154A01EC8F888EDB"
-				item: {
-					Count: 1
-					id: "gtceu:advanced_quarktech_chestplate"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 6.0d
-			y: 15.0d
+			y: 13.0d
 		}
 		{
 			dependencies: [
@@ -875,22 +761,8 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg_tips.gt_power_tools.title}"
-			x: 10.5d
+			x: 9.0d
 			y: 11.5d
-		}
-		{
-			dependencies: ["02FDECC931B5E8EF"]
-			description: ["{quests.tfg_tips.armor.desc}"]
-			icon: "gtceu:advanced_integrated_circuit"
-			id: "7516BF9C12015DF3"
-			tasks: [{
-				id: "666B73CFDEA434F9"
-				title: "Armor"
-				type: "checkmark"
-			}]
-			title: "{quests.tfg_tips.armor.title}"
-			x: 5.5d
-			y: 13.0d
 		}
 		{
 			dependencies: ["02FDECC931B5E8EF"]
@@ -905,8 +777,8 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg_tips.hazard_materials.title}"
-			x: 9.5d
-			y: 14.0d
+			x: 6.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["57FE828BAA8F6276"]
@@ -924,8 +796,8 @@
 				}
 				type: "item"
 			}]
-			x: 10.5d
-			y: 14.0d
+			x: 7.0d
+			y: 13.0d
 		}
 		{
 			dependencies: [
@@ -985,8 +857,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.hazmat.title}"
-			x: 9.5d
-			y: 15.0d
+			x: 6.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["02FDECC931B5E8EF"]
@@ -1118,23 +990,6 @@
 			}]
 			x: 1.5d
 			y: 9.5d
-		}
-		{
-			dependencies: ["38FF003C9349C0F2"]
-			description: ["{quests.tfg_tips.adv_nano_armor.desc}"]
-			id: "4C37DAD7C66523CC"
-			subtitle: "{quests.tfg_tips.adv_nano_armor.subtitle}"
-			tasks: [{
-				id: "05BCE3FC68B3C66E"
-				item: {
-					Count: 1
-					id: "gtceu:advanced_nanomuscle_chestplate"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 5.0d
-			y: 15.0d
 		}
 		{
 			dependencies: ["2D959136A5FC5F46"]
@@ -2871,7 +2726,11 @@
 			y: 8.25d
 		}
 		{
-			dependencies: ["15277C12EEB517E1"]
+			dependencies: [
+				"15277C12EEB517E1"
+				"258335BDE0B7E1E7"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.tools_tips.asphalt_roads.desc}"]
 			guide_page: "tfg:field_guide tfg:logistics/roads 22"
 			icon: "tfg:asphalt_mix_bucket"

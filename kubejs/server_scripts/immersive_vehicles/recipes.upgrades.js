@@ -566,8 +566,7 @@ function registerImmersiveVehiclesUpgradeRecipes(event) {
 
 	event.shaped('mts:automotives.upgrade_urlwings', [
 		'A A',
-		'BDB',
-		'   '
+		'BDB'
 	], {
 		A: 'exposure:interplanar_projector',
 		B: '#forge:screws/steel',
