@@ -358,8 +358,12 @@
             "text": "$(li)ミツバチは、$(l:agriculture/greenhouse#planters)プランターの受粉を助けてくれます！$()$(li)水分を十分に含んだ大きなプランターは、花として扱われます。$(li)湿っている状態であれば、ミツバチによる攻撃を防ぐことができます。$(li)ヒマワリや亜麻などの一部の作物は、花として扱われます。$(li)$(thing)作物親和$()、$(thing)自然回復$()、および花の対象範囲は同じです。$(li)巣箱の入り口が塞がれていないことを確認してください。"
         },
         {
+            "type": "patchouli:text",
+            "text": "$(li)Make sure to keep the hive entrance unobstructed. Bees can't do anything if they can't leave their hive!$(li)Bees can live in $(l:agriculture/greenhouse)Greenhouses$()! They will ignore seasonal temperatures when inside, allowing bees to thrive year-round."
+        },
+        {
             "type": "patchouli:relations",
-            "title": "さらに読む",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/greenhouse",

@@ -120,13 +120,20 @@
         },
         {
             "type": "patchouli:spotlight",
-            "anchor": "electric",
-            "item": "tfg:electric_greenhouse",
+            "anchor": "bees_and_taps",
+            "title": "Beehives and Tree Taps",
+            "item": "firmalife:beehive,afc:tree_tap",
             "text": "$(bold)注：$() このマルチブロックの壁は、有効な鉄ティアの温室ブロックであればどの種類でも使用できるようにカスタマイズされています。$(br2)使用可能なすべてのブロックのリストについては、$(emi) マルチブロックのプレビューをご確認ください。$(br2)「電気温室」は、$(l:agriculture/fertilizers)肥料$() を使用したり、さらに $(6)HV$() で $(thing)アクアポニックス・ループ$() を導入したりするなど、いくつかの方法でアップグレードすることも可能です。"
         },
         {
-            "type": "patchouli:text",
+            "type": "patchouli:spotlight",
+            "anchor": "electric",
+            "item": "tfg:electric_greenhouse",
             "text": "$(item)水耕栽培施設$()は、電気温室の$(9)IV$()アップグレード版であり、あらゆるディメンションであらゆる作物を栽培できるほか、$(item)並列制御ユニット$()にも対応しています。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)Note:$() This multiblock can have its walls customized to use any valid iron-tier greenhouse block.$(br2)Check the $(emi) multiblock preview for a list of all the different blocks you can use.$(br2)The Electric Greenhouse can also be improved in a few ways, including $(l:agriculture/fertilizers)fertilizer$() or later in $(6)HV$() with the $(thing)Aquaponics Loop$()."
         },
         {
             "type": "patchouli:spotlight",
