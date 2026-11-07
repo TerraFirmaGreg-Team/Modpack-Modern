@@ -86,13 +86,6 @@ jobs:
     needs: [cleanup-empty-files]
     if: (github.event_name == 'schedule') || (github.event_name == 'workflow_dispatch' && inputs.create_pr)
     steps:
-      - name: "Generate GitHub App Token"
-        id: generate_token
-        uses: actions/create-github-app-token@v3
-        with:
-          client-id: ${{ secrets.APP_ID }}
-          private-key: ${{ secrets.APP_PRIVATE_KEY }}
-
       - name: "Create Pull Request"
         id: create_pr
         uses: TerraFirmaGreg-Team/Actions/pull-request/create@main
@@ -113,5 +106,6 @@ jobs:
       - name: "Automatically Merge PR"
         uses: TerraFirmaGreg-Team/Actions/pull-request/automerge@main
         with:
-          github_token: ${{ steps.generate_token.outputs.token }}
+          app_client_id: ${{ secrets.APP_ID }}
+          app_private_key: ${{ secrets.APP_PRIVATE_KEY }}
           pull_request: ${{ steps.create_pr.outputs.pr_number }}

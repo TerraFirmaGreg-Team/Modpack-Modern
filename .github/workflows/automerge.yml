@@ -20,7 +20,8 @@ jobs:
     steps:
       - uses: TerraFirmaGreg-Team/Actions/pull-request/automerge@main
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          app_client_id: ${{ secrets.APP_ID }}
+          app_private_key: ${{ secrets.APP_PRIVATE_KEY }}
           pull_request: ${{ github.event.pull_request.number }}
           merge_method: merge
           auto_merge: "true"
