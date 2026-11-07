@@ -3,7 +3,7 @@ import sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[3]
-CFG = json.loads((REPO / ".github/config/extract_patchouli.json").read_text(encoding="utf-8"))
+CFG = json.loads((REPO / ".github/config/extract/patchouli.json").read_text(encoding="utf-8"))
 ASSETS = REPO / CFG["kubejs_assets"]
 TRANS = set(CFG["translatable_keys"])
 SKIP = {"en_us", *CFG.get("skip_relpaths", [])}

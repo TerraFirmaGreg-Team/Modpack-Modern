@@ -191,5 +191,7 @@
 	"wireless_advanced.mode.add": "§bAdd",
 	"wireless_advanced.mode.swapped": "Swapped Mode to: %s",
 	"wireless_advanced.mode.use": "§dUse",
-	"wireless_advanced.port_list": "Stored Connections (%s/%s):"
+	"wireless_advanced.port_list": "Stored Connections (%s/%s):",
+	"wireless_advanced.cleared": "Cleared all saved connections",
+	"key.ae2.wireless_ex_crafting_terminal": "Open Wireless Ex. Crafting Terminal"
 }

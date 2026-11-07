@@ -3068,6 +3068,7 @@
 	"config.jade.plugin_tfc.quern": "石臼",
 	"config.jade.plugin_tfc.rabbit": "ウサギ",
 	"config.jade.plugin_tfc.sapling": "苗木",
+	"config.jade.plugin_tfc.scraping": "剥ぎ取り",
 	"config.jade.plugin_tfc.sheet_pile": "貼り付けられたプレート",
 	"config.jade.plugin_tfc.squid": "イカ",
 	"config.jade.plugin_tfc.torch": "松明",
@@ -3558,7 +3559,7 @@
 	"item.tfc.food.cooked_wolf": "焼きオオカミ肉",
 	"item.tfc.food.cranberry": "クランベリー",
 	"item.tfc.food.crappie": "生のクラッピー",
-	"item.tfc.food.dairy_salad": "まずいサラダ",
+	"item.tfc.food.dairy_salad": "チーズサラダ",
 	"item.tfc.food.dairy_soup": "濃厚なスープ",
 	"item.tfc.food.dried_kelp": "乾燥した昆布",
 	"item.tfc.food.dried_seaweed": "乾燥したワカメ",
@@ -5593,5 +5594,6 @@
 	"trim_material.tfc.topaz": "トパーズの素材",
 	"trim_material.tfc.topaz_tfc": "Topaz",
 	"trim_material.tfc.uvarovite_tfc": "Uvarovite",
-	"trim_material.tfc.yellow_garnet_tfc": "Yellow Garnet"
+	"trim_material.tfc.yellow_garnet_tfc": "Yellow Garnet",
+	"item.tfc.bucket.metal.pig_iron": "溶融銑鉄入りのバケツ"
 }

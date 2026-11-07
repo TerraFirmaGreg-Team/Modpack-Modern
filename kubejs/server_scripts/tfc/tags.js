@@ -746,6 +746,9 @@ function registerTFCFluidTags(event) {
 	event.add("tfc:usable_in_ingot_mold", "gtceu:cobalt");
 	event.add("tfc:usable_in_ingot_mold", "gtceu:cobalt_brass");
 	event.add("tfc:usable_in_ingot_mold", "gtceu:aluminium_silicate");
+	event.add("tfc:usable_in_ingot_mold", "gtceu:electrum");
+
+	event.add("tfc:usable_in_ingot_mold", "gtceu:wax");
 
 	event.add("tfc:usable_in_bell_mold", "gtceu:bronze");
 	event.add("tfc:usable_in_bell_mold", "gtceu:gold");

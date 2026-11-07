@@ -119,11 +119,14 @@
     "tfg.clientmessage.welcome.1": "§oWelcome to §l§dTerraFirma§7Greg§r§o!",
     "tfg.clientmessage.welcome.2": "§oCheck out our %1$s§o for our Wiki, and offline versions of the %2$s§o %3$s§o and %4$s",
     "tfg.clientmessage.welcome.3": "Click to open the link in your browser",
+    "tfg.clientmessage.welcome.essentials.1": "§cPlease remove §~Essentials§c and use a different mod such as %1$s§c instead. §~Essentials§c is known to cause issues such as stopping the daylight cycle and changing other game rules, which will cause issues.",
+    "tfg.clientmessage.welcome.essentials.2": "§cAfter removing §~Essentials§c, you can fix the daylight cycle with a command: §e/gamerule doDaylightCycle true",
 
     "tfg.clientmessage.link.website": "§owebsite",
     "tfg.clientmessage.link.field_guide": "§oField Guide",
     "tfg.clientmessage.link.recipe_book": "§oRecipe Book",
     "tfg.clientmessage.link.quest_book": "§oQuest Book",
+    "tfg.clientmessage.link.e4mc": "§oe4mc",
 
     "tfg.machine.gas_well.active": "Active",
     "tfg.machine.gas_well.waiting_explosive": "Waiting for Explosive",
@@ -216,5 +219,19 @@
     "tfg.wireless_charger.mode.1": "§eMode: Long Range - Slow Charge§7(§f%s§7 block radius, 1A)",
 
     "tfg.field_guide.name": "Field Guide",
-    "tfg.field_guide.read_me": "§8§oRead Me! ☺§r"
+    "tfg.field_guide.read_me": "§8§oRead Me! ☺§r",
+
+    "death.attack.tfg.hypoxia": "%1$s experienced hypoxia",
+    "death.attack.tfg.hypoxia.player": "%1$s experienced hypoxia while trying to escape %2$s",
+
+    "tfg.display_source.thermometer": "Thermometer",
+    "tfg.display_source.thermometer.display_mode": "Thermometer Display Mode",
+    "tfg.display_source.calendar_clock": "Precision Clock",
+    "tfg.display_source.calendar_clock.display_mode": "Precision Clock Display Mode",
+    "tfg.display_source.anemometer": "Anemometer",
+    "tfg.display_source.anemometer.display_mode": "Anemometer Display Mode",
+    "tfg.display_source.environment": "Environment",
+    "tfg.display_source.environment.display_mode": "Environment Display Mode",
+    "tfg.display_source.me_network": "ME Network",
+    "tfg.display_source.me_network.display_mode": "Network Display Mode"
 }

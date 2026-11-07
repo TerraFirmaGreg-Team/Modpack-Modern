@@ -1,3 +1,7 @@
 {
-	"block.phoenix_chromatic_codes.phoenix_enriched_tritanium_casing": "§wНадтермостійкий корпус"
+	"block.phoenix_chromatic_codes.phoenix_enriched_tritanium_casing": "§wНадтермостійкий корпус",
+	"phoenix_chromatic_codes.test.wave": "§wЦе ефект хвилі, який використовує символ параграфа.\n привіт",
+	"phoenix_chromatic_codes.test.pulse": "&pЦе ефект пульсації, який використовує амперсанд.",
+	"phoenix_chromatic_codes.test.rainbow": "§[rainbow]Це іменований ефект веселки.",
+	"phoenix_chromatic_codes.test.sunset": "&[sunset]Це іменований ефект заходу сонця."
 }

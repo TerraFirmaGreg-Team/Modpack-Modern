@@ -5,17 +5,17 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(thing)Bowls$() are a versatile tool which can be used to make $(l:cooking/salad)Salads$(), to make $(l:cooking/cooking_methods#pot)Soups$(), to $(l:cooking/decay#salting)Salt$() meat, or to apply $(thing)Powder$() to $(l:craftsmanship/glassworking#coloring)Glass$() in order to change the resulting glass's color.$(br2)Bowls can be made both from $(thing)Ceramic$()―By knapping a bowl out of clay, and then firing them―Or out of wood."
+            "text": "$(thing)ボウル$()は、多目的なツールであり、$(l:cooking/salad)サラダ$()や$(l:cooking/cooking_methods#pot)スープ$()の作成、$(l:cooking/decay#salting)肉の塩漬け$()、または$(thing)粉末$()を$(l:craftsmanship/glassworking#coloring)ガラス$()に適用して、ガラスの色を変更するために使用できます。$(br2)ボウルは、粘土を加工してボウルを作り、それを焼成することで$(thing)セラミック$()製のものを作ることができるほか、 木からも作れます。"
         },
         {
             "type": "patchouli:text",
-            "text": "To make a $(item)Salad$() open the interface by holding a bowl and $(item)$(k:key.sneak) + $(k:key.use)$() in the air.$(br2)Bowls can also be placed on the ground like blocks. When placed, they can be filled with any type of $(thing)Powder$() - the results of grinding ores, minerals, or gems in the $(l:craftsmanship/quern)Quern$()."
+            "text": "$(item)サラダ$() を作るには、ボウルを手に持ち、空中で $(item)$(k:key.sneak) + $(k:key.use)$() を押してインターフェースを開きます。$(br2)ボウルはブロックと同じように地面に設置することもできます。設置すると、$(l:craftsmanship/quern)石臼$()で鉱石、鉱物、宝石を粉砕して得られたあらゆる種類の$(thing)粉$()を入れることができます。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tag:tfc:powders",
             "anchor": "powder_bowl",
-            "title": "Powders",
+            "title": "粉",
             "link_recipes": false,
             "text": "粉末入りのボウルは、指定された粉末を最大16個まで保持できます。粉末を入れるには、粉末を持ちながら$(item)$(k:key.use)$()を押します。アイテムを取り出すには、空の手で$(item)$(k:key.use)$()を押します。$(br2)$(item)$(k:key.sneak)$()を押すと、ボウルの中身を全て取り出せます。"
         },

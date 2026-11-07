@@ -132,6 +132,9 @@ const registerGTCEUMetals = (event) => {
 	event.metal('gtceu:gold', 1060, 0.005, '#forge:ingots/gold', '#forge:double_ingots/gold', '#forge:plates/gold', 1, 'tfc:gold')
 	event.metal('gtceu:nickel', 1453, 0.00625, '#forge:ingots/nickel', '#forge:double_ingots/nickel', '#forge:plates/nickel', 1, 'tfc:nickel')
 	event.metal('gtceu:brass', 930, 0.00857, '#forge:ingots/brass', '#forge:double_ingots/brass', '#forge:plates/brass', 2, 'tfc:brass')
+	event.metal('gtceu:electrum', 1010, 0.00562, '#forge:ingots/electrum', '#forge:double_ingots/electrum', '#forge:plates/electrum', 1, 'tfg:electrum')
+	event.metal('gtceu:battery_alloy', 330, 0.01729, '#forge:ingots/battery_alloy', '#forge:double_ingots/battery_alloy', '#forge:plates/battery_alloy', 1, 'tfg:battery_alloy')
+	event.metal('gtceu:cupronickel', 1266, 0.00741, '#forge:ingots/cupronickel', '#forge:double_ingots/cupronickel', '#forge:plates/cupronickel', 1, 'tfg:cupronickel')
 
 	event.metal('gtceu:redstone', 460, 0.01729, null, null, null, 1, 'tfg:redstone')
 	event.metal('gtceu:red_alloy', 740, 0.01529, '#forge:ingots/red_alloy', '#forge:double_ingots/red_alloy', '#forge:plates/red_alloy', 2, 'tfg:red_alloy')
@@ -149,6 +152,10 @@ const registerGTCEUMetals = (event) => {
 	event.metal('tfg:boron_carbide', 3041, 0.005, '#forge:ingots/boron_carbide', '#forge:double_ingots/boron_carbide', '#forge:plates/boron_carbide', 8, 'tfg:boron_carbide')
 	event.metal('gtceu:tungsten_carbide', 3058, 0.005, '#forge:ingots/tungsten_carbide', '#forge:double_ingots/tungsten_carbide', '#forge:plates/tungsten_carbide', 9, 'tfg:tungsten_carbide')
 	event.metal('gtceu:ostrum_iodide', 3700, 0.005, '#forge:ingots/ostrum_iodide', '#forge:double_ingots/ostrum_iodide', '#forge:plates/ostrum_iodide', 9, 'tfg:ostrum_iodide')
+
+	event.metal('gtceu:wax', 60, 0.02143, '#forge:ingots/wax', null, null, 0, 'tfg:wax')
+	event.metal('tfg:jellie_milk', -1, 0.02143, null, null, null, 0, 'tfg:jellie_milk')
+	event.metal('tfc:spring_water', -1, 0.02143, null, null, null, 0, 'tfg:spring_water')
 }
 
 function registerGTCEUBedrockFluidVeins(event) {

@@ -123,5 +123,6 @@
 	"option.immersive_aircraft.weaponsAreDestructive": "Allow some weapons to destroy blocks.",
 	"option.immersive_aircraft.windClearWeather": "Base wind effect.",
 	"option.immersive_aircraft.windRainWeather": "Wind at rainfall.",
-	"option.immersive_aircraft.windThunderWeather": "Extra wind at thunder."
+	"option.immersive_aircraft.windThunderWeather": "Extra wind at thunder.",
+	"option.immersive_aircraft.defaultCanEnter": "Allow mobs to automatically board aircraft by default."
 }

@@ -36,6 +36,9 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['minecraft:shield'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.wooden_shield'))
 	})
+	event.addAdvanced(['minecraft:campfire'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.campfire'))
+	})
 
 	//#region Multiblock Controler Tooltip
 
@@ -425,6 +428,10 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['#firmalife:big_barrels'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.item_storage_capacity", "36"))
 		text.add(2, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "80,000"))
+	})
+	event.addAdvanced(['fluidlogistics:copper_basket'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.item_storage_capacity", "27"))
+		text.add(2, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "8,000"))
 	})
 	event.addAdvanced(['create:fluid_tank', 'create_connected:fluid_vessel', 'fluidlogistics:multi_fluid_tank', 'fluidlogistics:horizontal_multi_fluid_tank'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "32,000"))
