@@ -2273,7 +2273,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "cc_utf8_compat-1.0.1-beta.1.jar",
+                    "file_name": "cc_utf8_compat-1.1.0-beta.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2281,16 +2281,16 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/8283/462/cc_utf8_compat-1.0.1-beta.1.jar",
-                    "id": "8283462",
+                    "url": "https://edge.forgecdn.net/files/9483/415/cc_utf8_compat-1.1.0-beta.1.jar",
+                    "id": "9483415",
                     "parent_id": "1581366",
                     "hashes": {
-                        "sha1": "983f71217eab5bccd47a3b9df6bf71825528f977",
-                        "md5": "a0db91af41c3a05b79478b7b7dce21bf"
+                        "sha1": "ab13ddbb9beaca991cbc19f1671eccdf4238f29b",
+                        "md5": "5c048973d0fa198f4d5d8db9aa1e5251"
                     },
                     "required_dependencies": [],
-                    "size": 92508,
-                    "date_published": "2026-06-20T00:42:38.827Z"
+                    "size": 91710,
+                    "date_published": "2026-11-06T23:34:51.373Z"
                 }
             ]
         },
@@ -16240,7 +16240,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.31.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.33.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -16248,24 +16248,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/mAhbB7Sj/TerraFirmaGreg-Core-Modern-0.9.31.jar",
-                    "id": "mAhbB7Sj",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/EOFVsKUn/TerraFirmaGreg-Core-Modern-0.9.33.jar",
+                    "id": "EOFVsKUn",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "187999b6c6361339f98c68e5095b46ecd95fa431fcff07e0a4d30a8f7a81b96564778051a311bdf3f459f8bdd5d36f0ab2bc7c7a7142e9efdbd3f05f16954511",
-                        "sha1": "2bdf37467a26e26d6cde8ddc3d9bf298723f1fcd"
+                        "sha512": "8a1340498dcc2271a26fccdbfd3c0517fd47474d4126915173f9fdcab46a943ccb11fba77bd3be7043cf83e724ecbc9c1f8b1f89c2b2a4e245a3a44a6de54d90",
+                        "sha1": "97eb9bcf5be5465ca89c277ff17c11b19f20cda4"
                     },
-                    "required_dependencies": [
-                        "nU0bVIaL",
-                        "1o7aFiY6",
-                        "vvuO3ImH"
-                    ],
-                    "size": 56814925,
-                    "date_published": "2026-10-26T13:52:40.605506Z"
+                    "required_dependencies": [],
+                    "size": 56895524,
+                    "date_published": "2026-11-07T00:40:02.007308Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.31.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.33.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -16273,19 +16269,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9333/497/TerraFirmaGreg-Core-Modern-0.9.31.jar",
-                    "id": "9333497",
+                    "url": "https://edge.forgecdn.net/files/9484/263/TerraFirmaGreg-Core-Modern-0.9.33.jar",
+                    "id": "9484263",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "2bdf37467a26e26d6cde8ddc3d9bf298723f1fcd",
-                        "md5": "d63aafd30bbc0d0b4c05f2e322a6f0d5"
+                        "sha1": "97eb9bcf5be5465ca89c277ff17c11b19f20cda4",
+                        "md5": "5d1724ec73f483b596553f4e4576dc3c"
                     },
                     "required_dependencies": [
-                        "309927",
-                        "306770"
+                        "302973"
                     ],
-                    "size": 56814925,
-                    "date_published": "2026-10-26T13:52:35.107Z"
+                    "size": 56895524,
+                    "date_published": "2026-11-07T00:39:58.050Z"
                 }
             ]
         },

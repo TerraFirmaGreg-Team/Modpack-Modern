@@ -1,6 +1,9 @@
 # Changelog
 
 ### Changes
+### Bug fixes
+
+## [0.13.18] - 07-11-2026
 #### CC-Tweaked
 - Fixes a [severe security vulnerability](https://github.com/cc-tweaked/CC-Tweaked/security/advisories/GHSA-g5h5-fp5g-fmx4)
 #### Hypoxia
@@ -56,6 +59,7 @@
 - Feeding troughs can be used to feed and breed Jellies, and deployers can be used to automate their products. They still only produce in their home dimension, though
 #### Create: Fluid Logistics
 - Add Package list filter
+- Add Storage Basket, sort of like a cheaper but more limited GT Buffer Block
 - The Hand Pointer now also shows unloaded stock link locations
 - Changed copper frogport connection rules
 - Increased the limit of fluid factory gauge restock targets
@@ -71,7 +75,7 @@
 - Fixed spatial IO causing full chunk reloads (and causing crashes) (#5146)
 - Added the sticky card! It works like the one from GTNH, read the GuideME for more information
 #### GregTech Cables
-- Added a new mod which lets you have long dangling cables. Check the new quest in LV for more information!
+- A new mod which lets you have long dangling cables. Check the new quest in LV for more information!
 
 ## [0.13.17] - 26-10-2026
 ### Bug fixes
