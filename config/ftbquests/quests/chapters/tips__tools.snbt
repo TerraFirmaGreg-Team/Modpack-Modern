@@ -2478,7 +2478,11 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["72B3EA6588E18CCC"]
+			dependencies: [
+				"72B3EA6588E18CCC"
+				"18EC4CB75BF22292"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.tools_tips.mattocks.desc}"]
 			guide_page: "tfg:field_guide tfg:logistics/roads"
 			icon: {
@@ -2551,7 +2555,11 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["15277C12EEB517E1"]
+			dependencies: [
+				"15277C12EEB517E1"
+				"5903C9AE3493EEED"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.tools_tips.concrete_roads.desc}"]
 			disable_toast: true
 			guide_page: "tfg:field_guide tfg:logistics/roads 12"

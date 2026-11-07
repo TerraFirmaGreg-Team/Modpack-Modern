@@ -902,8 +902,8 @@
 			id: "4C2F62D5F7254F2E"
 			linked_quest: "159A0DAEE55DCAC0"
 			shape: "heart"
-			x: 21.0d
-			y: 1.0d
+			x: 23.0d
+			y: -1.0d
 		}
 		{
 			id: "1928D8D989DEE663"
@@ -1005,8 +1005,20 @@
 		{
 			id: "6B6AF968658E37BD"
 			linked_quest: "0B14BD72B452C057"
-			x: 16.5d
-			y: 1.0d
+			x: 18.5d
+			y: -1.0d
+		}
+		{
+			id: "62807E271044CCF0"
+			linked_quest: "191DB28DC6FF4538"
+			x: 10.5d
+			y: -1.0d
+		}
+		{
+			id: "5D4EDC35F0CCB7B2"
+			linked_quest: "379F434116632A89"
+			x: -3.0d
+			y: -1.0d
 		}
 	]
 	quests: [
@@ -1067,8 +1079,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.firmaciv_info.title}"
-			x: -1.0d
-			y: 1.0d
+			x: 1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["36F08D50D4363A7B"]
