@@ -78,6 +78,7 @@ ServerEvents.tags('block', event => {
 	registerFowlPlayBlockTags(event)
 	registerGTCEUBlockTags(event)
 	registerImmersiveVehiclesBlockTags(event)
+	registerGTCablesBlockTags(event)
 	registerMinecraftBlockTags(event)
 	registerRailWaysBlockTags(event)
 	registerRealmRpgBlockTags(event)
