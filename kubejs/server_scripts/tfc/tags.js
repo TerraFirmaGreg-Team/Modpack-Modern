@@ -582,9 +582,6 @@ function registerTFCBlockTags(event) {
 	event.add("tfc:glass_basin_blocks", "tfc:white_kaolin_clay");
 	event.add("tfc:glass_pouring_table", "tfc:white_kaolin_clay");
 
-	// Удаление тегов у руд
-	event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/");
-
 	// Lets the basin be put on top of a charcoal forge
 	event.add("tfc:forge_invisible_whitelist", "create:basin");
 

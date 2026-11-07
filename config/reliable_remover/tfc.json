@@ -537,9 +537,5 @@
 			"tfc:bucket/metal/blue_steel",
 			"tfc:bucket/metal/red_steel"
 		]
-	},
-	{
-		"action": "remove",
-		"pattern": "/tfc:ore/.+/.+/"
 	}
 ]
