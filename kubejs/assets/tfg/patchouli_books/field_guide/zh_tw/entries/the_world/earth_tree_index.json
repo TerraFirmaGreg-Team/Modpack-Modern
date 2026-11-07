@@ -14,7 +14,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "相思木與阿拉伯膠木",
+            "title": "相思木、阿拉伯膠樹",
             "anchor": "acacia",
             "item": "tag:tfc:acacia_logs",
             "text": "$(bold)傘刺金合歡$()$(br)$(thing)降雨量$()：90 — 275mm$(br)$(thing)溫度$()：13.4 — 40°C$(br)$(thing)生長天數$()：10$(br2)$(bold)夏威夷相思樹$()$(br)$(thing)降雨量$()：350 — 500mm$(br)$(thing)溫度$()：15.3 — 24.4°C$(br)$(thing)生長天數$()：15$(br2)$(bold)阿拉伯膠樹$()$(br)$(thing)降雨量$()：90 — 275mm$(br)$(thing)溫度$()：11.6 — 40°C$(br)$(thing)生長天數$()：7"
@@ -28,7 +28,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "白楊木與楊木",
+            "title": "白楊木、楊樹",
             "anchor": "aspen",
             "item": "tag:tfc:aspen_logs",
             "text": "$(bold)顫楊$()$(br)$(thing)降雨量$()：350 — 500mm$(br)$(thing)溫度$()：-15.7 — -1.1°C$(br)$(thing)生長天數$()：7$(br2)$(bold)楊樹$()$(br)$(thing)降雨量$()：170 — 310mm$(br)$(thing)溫度$()：-15.7 — -6.6°C$(br)$(thing)生長天數$()：7"

@@ -955,5 +955,21 @@
 	"waila.ae2.Showing": "Показ",
 	"waila.ae2.Stored": "Хранится: %s / %s",
 	"waila.ae2.Suppressed": "Подавлено",
-	"waila.ae2.Unlocked": "Разблокировано"
+	"waila.ae2.Unlocked": "Разблокировано",
+	"block.ae2.colorable_controller": "Раскрашиваемый МЭ контроллер",
+	"chat.ae2.Color": "Цвета: %s",
+	"chat.ae2.ControllerAnimation": "Анимация контроллера: %s",
+	"chat.ae2.Uncolored": "Неокрашенный",
+	"controller_animation.ae2.breathing": "Дышащий",
+	"controller_animation.ae2.wave": "Волна",
+	"gui.ae2.FilterTerminalShort": "Фильтрующий терминал",
+	"gui.ae2.SuperMEReplenisherBytesTotal": "Всего байтов: %s",
+	"gui.ae2.SuperMEReplenisherBytesUsed": "Байтов использовано: %s",
+	"gui.ae2.SuperMEReplenisherStored": "Хранится: %s",
+	"gui.ae2.SuperMEReplenisherTarget": "Цель: %s",
+	"gui.ae2.SuperMEReplenisherTickRate": "Скорость тиков",
+	"gui.ae2.SuperMEReplenisherUnlimited": "Неограниченно",
+	"gui.ae2.units.eu": "EU",
+	"gui.tooltips.ae2.FilterTerminalHighlight": "Подсветить цель",
+	"gui.tooltips.ae2.ForceStart": "Нажмите Shift для начала без необходимых ингредиентов"
 }

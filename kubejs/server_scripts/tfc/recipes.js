@@ -161,7 +161,7 @@ const registerTFCRecipes = (event) => {
 		.inputFluids(Fluid.of('tfc:limewater', 100))
 		.itemOutputs('16x tfc:mortar')
 		.duration(600)
-		.EUt(8)
+		.EUt(7)
 
 	event.recipes.tfc.barrel_sealed(8000)
 		.inputs('#tfg:stone_dusts', TFC.fluidStackIngredient('tfc:limewater', 25))
@@ -172,8 +172,8 @@ const registerTFCRecipes = (event) => {
 		.itemInputs('#tfg:stone_dusts')
 		.inputFluids(Fluid.of('tfc:limewater', 25))
 		.itemOutputs('tfc:mortar')
-		.duration(30)
-		.EUt(8);
+		.duration(600)
+		.EUt(7);
 
 	// Jar lids
 
@@ -331,18 +331,6 @@ const registerTFCRecipes = (event) => {
 			'saw'
         ]
     ).id('tfg:glassworking/lamp_glass')
-
-	event.recipes.gtceu.macerator('tfg:candle')
-		.itemInputs("#tfc:candles")
-		.itemOutputs("gtceu:small_wax_dust")
-		.duration(50)
-		.EUt(2)
-		.category(GTRecipeCategories.MACERATOR_RECYCLING);
-	
-	event.recipes.tfc.quern("gtceu:small_wax_dust", "#tfc:candles")
-		.id("tfg:quern/candles")
-	event.recipes.tfc.quern("gtceu:tiny_wax_dust", "gtceu:wax_nugget")
-		.id("tfg:quern/wax_nugget")
 
 	// Hot item cooling
 	event.recipes.tfc.barrel_instant()

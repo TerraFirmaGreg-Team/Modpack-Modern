@@ -633,15 +633,30 @@
 	"block.tfg.rock.bricks_tuff_slab": "Tuff Brick Slab",
 	"block.tfg.rock.bricks_tuff_stairs": "Tuff Brick Stairs",
 	"block.tfg.rock.bricks_tuff_wall": "Tuff Brick Wall",
+	"block.tfg.rock.mossy_bricks_tuff": "Mossy Tuff Bricks",
 	"block.tfg.rock.mossy_bricks_tuff_slab": "Mossy Tuff Brick Slab",
 	"block.tfg.rock.mossy_bricks_tuff_stairs": "Mossy Tuff Brick Stairs",
 	"block.tfg.rock.mossy_bricks_tuff_wall": "Mossy Tuff Brick Wall",
+	"block.tfg.rock.cracked_bricks_tuff": "Cracked Tuff Bricks",
 	"block.tfg.rock.cracked_bricks_tuff_slab": "Cracked Tuff Brick Slab",
 	"block.tfg.rock.cracked_bricks_tuff_stairs": "Cracked Tuff Brick Stairs",
 	"block.tfg.rock.cracked_bricks_tuff_wall": "Cracked Tuff Brick Wall",
 	"block.tfg.rock.chiseled_tuff": "Chiseled Tuff",
 	"block.tfg.rock.chiseled_tuff_bricks": "Chiseled Tuff Bricks",
 	"block.tfg.rock.aqueduct_tuff": "Tuff Aqueduct",
+
+	"block.tfg.rock.calcite_slab": "Calcite Slab",
+	"block.tfg.rock.calcite_stairs": "Calcite Stairs",
+	"block.tfg.rock.calcite_wall": "Calcite Wall",
+	"block.tfg.rock.bricks_calcite": "Calcite Bricks",
+	"block.tfg.rock.bricks_calcite_slab": "Calcite Brick Slab",
+	"block.tfg.rock.bricks_calcite_stairs": "Calcite Brick Stairs",
+	"block.tfg.rock.bricks_calcite_wall": "Calcite Brick Wall",
+	"block.tfg.rock.polished_calcite": "Polished Calcite",
+	"block.tfg.rock.polished_calcite_slab": "Polished Calcite Slab",
+	"block.tfg.rock.polished_calcite_stairs": "Polished Calcite Stairs",
+	"block.tfg.rock.polished_calcite_wall": "Polished Calcite Wall",
+	"block.tfg.rock.pillar_calcite": "Calcite Pillar",
 
 	"block.tfg.mushroom_roots": "Mushroom Roots",
 	"block.tfg.mushroom_sprouts": "Mushroom Sprouts",
@@ -1181,6 +1196,16 @@
 	"block.tfg.tamped.dirt.podzol": "Tamped Layered Dirt",
 	"block.tfg.tamped.mud.podzol": "Tamped Layered Mud",
 
+	"block.tfg.snow_bricks": "Snow Bricks",
+	"block.tfg.snow_brick_stairs": "Snow Brick Stairs",
+	"block.tfg.snow_brick_slab": "Snow Brick Slab",
+	"block.tfg.snow_brick_wall": "Snow Brick Wall",
+	"block.tfg.packed_ice_bricks": "Packed Ice Bricks",
+	"block.tfg.packed_ice_brick_stairs": "Packed Ice Brick Stairs",
+	"block.tfg.packed_ice_brick_slab": "Packed Ice Brick Slab",
+	"block.tfg.packed_ice_brick_wall": "Packed Ice Brick Wall",
+	"block.tfg.chiseled_packed_ice": "Chiseled Packed Ice",
+
 	"block.tfg.large_bronze_boiler": "Large Bronze Boiler",
 	"block.tfg.large_steel_boiler": "Large Steel Boiler",
 	"block.tfg.large_steam_turbine": "Large Steam Turbine",
@@ -1663,5 +1688,5 @@
 	"block.tfg.blackstone_anvil": "Pyroxenite Anvil",
 	"block.tfg.crackrack_anvil": "Keratophyre Anvil",
 
-    "block.tfg.gas_burner": "Gas Burner"
+	"block.tfg.gas_burner": "Gas Burner"
 }

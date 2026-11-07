@@ -91,6 +91,10 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:screws/any_bronze', '#forge:screws/bismuth_bronze')
 	event.add('forge:screws/any_bronze', '#forge:screws/black_bronze')
 
+	event.add('forge:rings/any_bronze', '#forge:rings/bronze')
+	event.add('forge:rings/any_bronze', '#forge:rings/bismuth_bronze')
+	event.add('forge:rings/any_bronze', '#forge:rings/black_bronze')
+
 	// Steam Bloomery
     event.add("tfg:bloomery_basic_fuels", "minecraft:charcoal");
     event.add("tfg:bloomery_basic_fuels", "tfc:ore/bituminous_coal");
@@ -416,6 +420,9 @@ const registerTFGFluidTags = (event) => {
 				event.add('tfg:vintage_alcohols', alcohol.vintageId);
 			 }
 		}
+
+		event.add('tfc:drinkables', 'tfg:jellie_milk');
+		event.add('tfc:milks', 'tfg:jellie_milk')
 	});
 	
 	event.add('tfc:drinkables', 'gtceu:ice')

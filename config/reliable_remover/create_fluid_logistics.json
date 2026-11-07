@@ -2,17 +2,19 @@
 	{
 		"action": "remove",
 		"items": [
-            "fluidlogistics:fluid_transporter",
-            "fluidlogistics:infinite_fluid_tank",
-            "fluidlogistics:fluid_pump",
-            "fluidlogistics:water_containing_copper_casing",
+			"fluidlogistics:fluid_transporter",
+			"fluidlogistics:infinite_fluid_tank",
+			"fluidlogistics:fluid_pump",
+			"fluidlogistics:water_containing_copper_casing",
 			"fluidlogistics:copper_basin",
 			"fluidlogistics:copper_bucket",
 			"fluidlogistics:copper_schematicannon",
 			"fluidlogistics:empty_fluid_schematic",
 			"fluidlogistics:blaze_cooler",
 			"fluidlogistics:frost_cake",
-			"fluidlogistics:industrial_copper_block"
+			"fluidlogistics:industrial_copper_block",
+			"fluidlogistics:oscillating_steam_engine",
+			"fluidlogistics:snow_golem_freezer"
 		]
 	}
 ]

@@ -340,5 +340,6 @@
   "tooltip.framedblocks.y_slope": "方块使用%s面作为垂直坡面。",
   "tooltip.framedblocks.y_slope.horizontal": "水平",
   "tooltip.framedblocks.y_slope.toggle": "使用框架扳手敲击以切换至%s面",
-  "tooltip.framedblocks.y_slope.vertical": "垂直"
+  "tooltip.framedblocks.y_slope.vertical": "垂直",
+  "block.framedblocks.framed_torch": "镶框火把"
 }

@@ -101,6 +101,8 @@ const registerTFGEnvironmentBlockTags = (event) => {
         '#forge:octal_cables',
         '#forge:hex_cables',
 
+        'ae2:cable_bus',
+
         // Railways
         'railways:buffer',
         'railways:buffer_narrow',
@@ -151,7 +153,7 @@ const registerTFGEnvironmentBlockTags = (event) => {
         '#mcw_tfc_aio:log_bridges',
     ]);
 
-    // --------- GT facade covers can seal individual faces ---------
+    // --------- GT covers and AE2 facades can seal individual faces ---------
     event.add('tfg:atmosphere_check_facades', [
         // Pipes
         '#forge:tiny_fluid_pipes',
@@ -193,5 +195,7 @@ const registerTFGEnvironmentBlockTags = (event) => {
         '#forge:quadruple_cables',
         '#forge:octal_cables',
         '#forge:hex_cables',
+
+        'ae2:cable_bus',
     ]);
 };

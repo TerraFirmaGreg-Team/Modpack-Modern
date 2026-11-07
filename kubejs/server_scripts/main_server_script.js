@@ -76,6 +76,7 @@ ServerEvents.tags('block', event => {
 	registerFirmaLifeBlockTags(event)
 	registerFowlPlayBlockTags(event)
 	registerGTCEUBlockTags(event)
+	registerGTCablesBlockTags(event)
 	registerMinecraftBlockTags(event)
 	registerRailWaysBlockTags(event)
 	registerRealmRpgBlockTags(event)
@@ -177,6 +178,7 @@ TFCEvents.data(event => {
 	registerTFCDataForTFG(event)
 	registerTFCDataForWaterFlasks(event)
 	registerTFCDataForRailways(event)
+	registerJelliesData(event)
 	registerWABData(event)
 	registerSpeciesData(event)
 })
@@ -264,6 +266,7 @@ ServerEvents.recipes(event => {
 	registerGreateRecipes(event)
 	registerGTCEURecipes(event);
 	registerGTCEUTerminalRecipes(event)
+	registerGTCablesRecipes(event)
 	registerGTModernUtilitiesRecipes(event)
 	registerHandGliderRecipes(event)
 	registerHotOrNotRecipes(event)

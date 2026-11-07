@@ -15,7 +15,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(thing)機械動力$()有一套強大的$(item)火車$()系統，可以長距離運送玩家、物品、流體和其他所有東西。火車很適合用來橫越荒野，或是運送大量材料，而最重要的是，它$(thing)可以穿越未載入的區塊$()。$(br2)$(bold)小技巧：$()如果有不懂的地方，隨時可以把游標移到物品上並按住 $(thing)W$()，查看它的$(thing)思索$()！"
+			"text": "$(thing)機械動力$()有一套強大的$(item)火車$()系統，可以長距離運送玩家、物品、流體和其他所有東西。火車適合橫越荒野或運送大量材料，最重要的是$(thing)能穿越未載入的區塊$()。$(br2)$(bold)小技巧：$()如果有不懂的地方，隨時可以把游標移到物品上並按住 $(thing)W$()，查看它的$(thing)思索$()！"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -41,7 +41,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "可惜火車有一些限制。單一火車動態結構$(bold)不能$()超過 $(thing)20 個轉向架$()，長度也不能超過 $(thing)128 格$()，設計火車時請記住這一點。$(br2)$(bold)注意：$()你隨時可以在機械動力的設定檔中修改這些限制，但請記住，提高限制會使用$(thing)更多$()伺服器資源。"
+			"text": "可惜火車有一些限制。單一火車動態結構$(bold)不能$()超過 $(thing)20 個轉向架$()，長度也不能超過 $(thing)128 格$()，設計火車時請記住這一點。$(br2)$(bold)注意：$()你隨時可以在機械動力的設定檔中修改這些限制，但提高限制會耗用$(thing)更多$()伺服器資源。"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -65,7 +65,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "當兩個介面「親在一起」時，它們會視為一個相連的介面。例如，用滑槽從固定的介面抽出物品，就會從火車中抽出物品。$(br2)$(bold)注意：$()移動式能源介面需要搭配 $(thing)GregTech(格雷科技) 能量轉換器$()，才能把 FE 轉換成 EU。"
+			"text": "兩個介面「親在一起」時會視為同一個介面，例如用滑槽從固定介面抽出物品，就等於從火車抽出。$(br2)$(bold)注意：$()移動式能源介面需要搭配$(thing)格雷科技能量轉換器$()，才能把 FE 轉換成 EU。"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -83,7 +83,7 @@
 			"anchor": "conductors",
 			"type": "patchouli:spotlight",
 			"item": "tag:railways:conductor_caps",
-			"text": "是時候把鐵路系統自動化了！放置一個$(item)安山岩機殼$()，再手持$(item)列車長帽$()對它按$(item)$(k:key.use)$()，就會生成你自己的$(thing)列車長$()。很可愛吧？你可以用$(item)拴繩$()牽著牠移動。"
+			"text": "是時候把鐵路系統自動化了！放置一個$(item)金屬機殼$()，再手持$(item)列車長帽$()對它按$(item)$(k:key.use)$()，就會生成你自己的$(thing)列車長$()。很可愛吧？你可以用$(item)拴繩$()牽著牠移動。"
 		},
 		{
 			"type": "patchouli:text",
@@ -104,7 +104,7 @@
 			"type": "patchouli:spotlight",
 			"item": "railways:conductor_whistle",
 			"anchor": "whistle",
-			"text": "$(item)列車長哨子$()可以讓$(l:logistics/trains#conductors)列車長$()移動到軌道上的特定位置，很適合在你想修改正在運作的$(thing)火車$()時使用。$(br2)對$(thing)列車長$()按$(item)$(k:key.use)$()會把這個物品綁定到該列車長，再對軌道按$(item)$(k:key.use)$()，$(thing)火車$()就會開往你選擇的位置。"
+			"text": "$(item)列車長哨子$()可以讓$(l:logistics/trains#conductors)列車長$()移動到軌道上的特定位置，很適合用來修改運作中的$(thing)火車$()。$(br2)對$(thing)列車長$()按$(item)$(k:key.use)$()會把這個物品綁定到該列車長，再對軌道按$(item)$(k:key.use)$()，$(thing)火車$()就會開往你選擇的位置。"
 		},
 		{
 			"type": "patchouli:text",
@@ -121,7 +121,7 @@
 			"item": "minecraft:charcoal",
 			"title": "為火車補充燃料",
 			"anchor": "solid_fuel",
-			"text": "你的$(thing)火車$()可以使用固體燃料，讓火車加速最多 50%！只要為$(thing)火車$()提供任何種類的$(item)可燃燃料$()，每個物品就能讓火車加速 5 分鐘。"
+			"text": "$(thing)火車$()可以使用固體燃料加速，最多快 50%！為$(thing)火車$()提供任何$(item)可燃燃料$()，每個物品可加速 5 分鐘。"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -146,7 +146,7 @@
 			"title": "座椅",
 			"anchor": "seat",
 			"item": "tag:create:seats",
-			"text": "$(item)座椅$()讓你在操作火車時可以坐下。$(br2)為了避免在火車行駛時被甩出去，請在$(thing)火車$()上放置$(item)座椅$()，並記得用$(item)強力膠$()固定。"
+			"text": "$(item)座椅$()讓你操作火車時能坐著。$(br2)為了避免行駛時被甩出去，請在$(thing)火車$()上放置$(item)座椅$()，並記得用$(item)強力膠$()固定。"
 		},
 		{
 			"type": "patchouli:spotlight",

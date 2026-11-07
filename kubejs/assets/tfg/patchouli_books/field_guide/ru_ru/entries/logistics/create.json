@@ -214,70 +214,70 @@
 			"item": "tag:create:postboxes",
 			"title": "Почтовый ящик",
 			"anchor": "postbox",
-			"text": "$(item)Postboxes$() are used to route packages around using $(l:logistics/trains)Train Networks$(). You first $(item)$(k:key.use)$() a $(l:logistics/trains#station)Train Station$() to link the Postbox to that station before placing it, and from then on any trains that stop there will be able to interact with the Postbox (given it is within 4 blocks of the station)."
+			"text": "$(item)Почтовые ящики$() используются для пересылки посылок с помощью $(l:logistics/trains)железнодорожных сетей$(). Сначала вы $(item)$(k:key.use)$() устанавливаете $(l:logistics/trains#station)железнодорожную станцию$(), чтобы связать почтовый ящик с ней, а затем размещаете его. После этого все поезда, которые останавливаются на этой станции, смогут взаимодействовать с почтовым ящиком (при условии, что он находится в пределах 4 блоков от станции)."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Much like $(l:logistics/create#frogport)Package Frogports$(), they can be named. Passing trains will then pick up any packages whose destination does not match the Postbox's name.$(br2)Furthermore, if the train has any packages in its inventories that $(italic)do$() match the Postbox, they will be passed into the Postbox's inventory instead."
+			"text": "Как и в случае с $(l:logistics/create#frogport) квакопортами$(), им можно присвоить название. Тогда проходящие поезда будут забирать все посылки, пункт назначения которых не совпадает с названием почтового ящика.$(br2)Кроме того, если в инвентаре поезда есть посылки, которые $(italic)совпадают$() с названием почтового ящика, они будут переданы в инвентарь почтового ящика."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "One last cool thing about $(item)Postboxes$() is that when extracting automatically from them (via chutes, funnels, etc), only packages with a destination that $(thing)matches the Postbox's name$() will be taken out and any packages with a different destination will remain inside to be loaded onto trains later."
+			"text": "И последнее, что круто в $(item)почтовых ящиках$(), — это то, что при их автоматическом извлечении (через желоба, воронки и т. д.) из них достаются только посылки, пункт назначения которых $(thing)соответствует названию почтового ящика$(), а все посылки с другим пунктом назначения остаются внутри, чтобы их можно было загрузить в поезда позже."
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "package_tips",
-			"title": "Package Tips",
-			"text": "Packages are randomly created from a selection of four* possible items, so stuff like GregTech's $(item)Item Filters$() will be $(thing)very tedious to set up$()! We recommend using the $(l:logistics/create#package_filter)Package Filter$() wherever you can, but...$(br2)$(7)* Four for fluids, and actually a lot more for items, as there's several secret rare variants$()"
+			"title": "Советы по упаковке",
+			"text": "Коробки создаются случайным образом из четырех* возможных предметов, поэтому такие вещи, как $(item)фильтры для предметов$() от GregTech, будет $(thing)очень утомительно настраивать$()! Мы рекомендуем использовать $(l:logistics/create#package_filter)фильтр для пакетов$() везде, где это возможно, но...$(br2)$(7)* Четыре для жидкостей и гораздо больше для предметов, так как существует несколько секретных редких вариантов$()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "...If you really want to try using other methods to move packages around, the destination address is stored as NBT data in the tag $(thing)Address$(). For example, a package with the destination address \"Home\" will have in its NBT data: $(thing){Address:\"Home\"}$().$(br2)$(o)(Continued on next page...)"
+			"text": "...Если вы действительно хотите попробовать использовать другие способы перемещения посылок, то адрес назначения хранится в виде данных NBT тега $(thing)Адреса$(). Например, посылка с адресом назначения «Домик» будет иметь следующие данные NBT: $(thing){Address:\"Home\"}$().$(br2)$(o)(Продолжение на следующей странице...)"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Package address filtering actually supports a simplified form of $(l:https://en.wikipedia.org/wiki/Regular_expression)RegEx$(). This means you can:$(br)$(li)Match any length of string with $(bold)*$()$(li)Match any single character with $(bold)?$()$(li)Match a single character from a group of characters surrounded by $(bold)[]$() (e.g. A[cr]t will match 'Act' and 'Art', but not 'Ant')"
+			"text": "Фильтрация адресов пакетов фактически поддерживает упрощенную форму $(l:https://en.wikipedia.org/wiki/Regular_expression)RegEx$(). Это значит, что вы можете:$(br)$(li)сопоставить строку любой длины с помощью $(bold)*$()$(li)сопоставить любой отдельный символ с помощью $(bold)?$()$(li)сопоставить один символ из группы символов, заключенных в $(bold)[]$() (например, A[cr]t будет соответствовать словам 'Act' и 'Art', но не 'Ant')"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)Match a single character that does not belong to a group of characters surrounded by $(bold)[! ]$() (e.g. A[!cr]t will match 'Aft' and 'Apt', but not 'Act' or 'Art')$(li)Match a string from a list of strings given inside $(bold){}$() (e.g. TerraFirma{Craft,Greg} will match both TerraFirma$(thing)Craft$() and TerraFirma$(thing)Greg$())$(li)All previous symbols can be escaped. For example, A$(bold)\\$()* will be read as A* and only match 'A*'."
+			"text": "$(li)Соответствует одному символу, который не входит в группу символов, заключенных в $(bold)[! ]$() (например, A[!cr]t будет соответствовать словам 'Aft' и 'Apt', но не 'Act' или 'Art')$(li)Соответствует строке из списка строк, указанных внутри $(bold){}$() (например, TerraFirma{Craft,Greg} будет соответствовать как TerraFirma$(thing)Craft$(), так и TerraFirma$(thing)Greg$())$(li)Все предыдущие символы можно экранировать. Например, A$(bold)\\$()* будет прочитано как A* и будет соответствовать только слову 'A*'."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "create:transmitter",
 			"anchor": "high_logistics",
-			"title": "High Logistics",
-			"text": "Moving packages around is good and all, but surely that can't be all there is? Well, you're exactly right. There's much more that can be done with packages, including $(thing)reading inventory contents$() and $(thing)having things be delivered remotely$(), and later on even $(thing)automatically sending ingredients to be processed$() based on an item's threshold!"
+			"title": "Высшая Логистика",
+			"text": "Передвигать посылки — это, конечно, хорошо, но неужели это всё, что можно сделать? Что ж, ваши мысли правильные. С посылками можно делать гораздо больше, в том числе $(thing)считывать содержимое инвентаря$() и $(thing)доставлять посылки удалённо$(), а в будущем даже $(thing)автоматически отправлять ингредиенты на переработку$() в зависимости от количества товара!"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "But before delving into $(thing)High Logistics$(), some preparations are in order.$(br2)The $(item)Transmitters$() that would be required for crafting such equipment can only realistically be produced via high-energy light refracted through a very unique mineral: $(item)Rose Quartz$(). In other words, we need both a $(item)Basic Laser Engraver$() and some way of obtaining a $(item)Rose Quartz Lens$(), so you better get to getting these done, eh?"
+			"text": "Но прежде чем углубляться в $(thing)High Logistics$(), нужно кое-что подготовить. $(br2) $(item)Передатчики$(), необходимые для создания такого оборудования, можно получить только с помощью высокоэнергетического света, преломленного через уникальный минерал: $(item)розовый кварц$(). Другими словами, нам нужны как $(item)базовый лазерный гравер$(), так и способ получения $(item)линзы из розового кварца$(), так что лучше займитесь этим прямо сейчас, хорошо?"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "greate:rich_raw_rose_quartz,greate:raw_rose_quartz,greate:poor_raw_rose_quartz",
-			"title": "Rose Quartz",
+			"title": "Розовый кварц",
 			"anchor": "rose_quartz",
-			"text": "The only natural source of $(item)Rose Quartz$() of a high enough quality to easily craft the $(item)Lens$() out of is located far, far to the north in freezing temperatures (under $(3)-10°C$()). Getting Kaolin clay flashbacks yet?"
+			"text": "Единственный природный источник $(item)розового кварца$() достаточно высокого качества, из которого можно легко изготовить $(item)линзу$(), находится далеко-далеко на севере, где температура опускается ниже нуля (ниже $(3)-10°C$()). У вас уже начались флешбэки о каолиновой глине?"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Rose Quartz only forms in the cores of ancient glaciers. Although not common, these are easily identified by their $(9)Blue Ice$() outer shells.$(br2)Besides the temperature requirement, they only spawn in $(thing)Ice Sheet$() or $(thing)Glaciated$() biomes.$(br2)The $(item)Rose Quartz$() will be found inside - first as ore, then as compressed raw ore blocks in the very center."
+			"text": "Розовый кварц образуется только в сердцевинах древних ледников.  Такие ледники встречаются нечасто, но их легко узнать по внешней оболочке из $(9)голубого льда$(). $(br2)Помимо требования к температуре, они появляются только в биомах $(thing)ледяных щитов$() или $(thing)оледенений$(). $(br2)Внутри можно найти $(item)розовый кварц$() — сначала в виде руды, а затем в виде спрессованных блоков необработанной руды в самом центре."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "greate:exquisite_rose_quartz_gem,greate:rose_quartz_lens",
 			"anchor": "exquisite",
-			"text": "What we need is $(item)Exquisite Rose Quartz$(), which you can get by $(thing)crushing, washing, and then sifting$() the raw ore you mined. The Exquisite gem has a 3% chance of being sifted out, but you only need one such gem to proceed.$(br2)$(c)Do not smelt the ore as this will only get you normal quality Rose Quartz$()!"
+			"text": "Нам нужен $(item)изысканный розовый кварц$(), который можно получить, если $(thing)дробить, промывать, а затем просеивать$() добытую руду. Шанс получить изысканный драгоценный камень при просеивании составляет 3%, но для продолжения вам понадобится всего один такой камень.$(br2)$(c)Не переплавляйте руду, так как в этом случае вы получите розовый кварц обычного качества$()!"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The same preparations you once may have made for $(l:craftsmanship/pottery#kaolin_clay)Kaolin Clay$() will apply here as well: Prepare a lot of $(l:cooking)food$(), portable water to $(l:cooking/drinking_containers)drink$(), $(thing)warm clothes$(), and some transportation. ($(l:logistics/boats)Boats$() are nice, but $(thing)Aircraft$() should be well within your reach at this point)."
+			"text": "Здесь применимы те же меры предосторожности, которые вы когда-то использовали при работе с $(l:craftsmanship/pottery#kaolin_clay)каолиновой глиной$(): подготовьте много $(l:cooking)еды$(), переносную емкость для воды, чтобы $(l:cooking/drinking_containers)пить$(), $(thing)теплую одежду$() и какой-нибудь транспорт. ($(l:logistics/boats)Лодки$() — это хорошо, но на данном этапе вам вполне по силам $(thing)поднять в воздух самолет$())."
 		},
 		{
 			"type": "patchouli:image",
-			"text": "$(thing)Glaciar Cores$() are surrounded by small buds of Rose Quartz. They are easily identifiable on your map.",
-			"title": "A Glaciar Core",
+			"text": "$(thing)Ледяные ядра$() окружены маленькими бутонами розового кварца. Их легко найти на карте.",
+			"title": "Ледниковое керновое долото",
 			"border": true,
 			"images": [
 				"tfg:textures/gui/field_guide/rose_quartz.png"
@@ -287,17 +287,17 @@
 			"type": "patchouli:spotlight",
 			"item": "create:stock_link",
 			"anchor": "stock_link",
-			"text": "The first $(thing)High Logistics$() machine you can make is a $(thing)Stock Link$(), which can be used to create a $(thing)Logistics Network$(). When placed onto any side of a $(l:logistics/create#packager)Packager$(), the Stock Link will make the inventory the Packager is attached to visible to the network!"
+			"text": "Первая машина $(thing)высшей логистики$(), которую вы можете создать, — это $(thing)Складской передатчик$(), с помощью которой можно создать $(thing)Логическую сеть$(). Если разместить Складской передатчик с любой стороны $(l:logistics/create#packager)Упаковщик$(), то инвентарь, к которому прикреплен Упаковщик, станет виден в сети!"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "On its own, the Stock Link isn't super useful, but it is a core component of all the other machines yet to come...$(br2)Remember to $(item)$(k:key.use)$() on an existing Stock Link before placing one down to tune the two to share the same network. To cancel this, you can simply craft the Stock Link by itself to clear its attunement.$(br2)Check the $(thing)ponder$() for more information!"
+			"text": "Сам по себе Складской передатчик не слишком полезен, но он является ключевым компонентом всех остальных машин, которые появятся в будущем...$(br2) Не забудьте $(item)$(k:key.use)$() на существующем Складской передатчик, прежде чем устанавливать новый, чтобы настроить их на общую сеть. Чтобы отменить настройку, просто пересоздайте Складской передатчик отдельно.$(br2) Дополнительную информацию можно найти в $(thing)размышлении$()."
 		},
 		{
 			"type": "patchouli:multiblock",
 			"enable_visualize": false,
-			"text": "The $(l:logistics/create#packager)Packager$() will only create a package when the Stock Link receives a signal from $(l:logistics/create#stock_ticker)elsewhere$() on the network.",
-			"name": "Example",
+			"text": "$(l:logistics/create#packager)Упаковщик$() создаст посылку только после того, как Складской передатчик получит сигнал от $(l:logistics/create#stock_ticker)другого источника$() в сети.",
+			"name": "Пример",
 			"multiblock": {
 				"pattern": [
 					[
@@ -321,15 +321,15 @@
 			"type": "patchouli:spotlight",
 			"item": "create:stock_ticker",
 			"anchor": "stock_ticker",
-			"text": "If you've already used $(l:logistics/create#stock_link)Stock Links$() to provide various items to a $(thing)Logistics Network$(), the next step is to make something that can call in said items remotely... And that's where the $(item)Stock Ticker$() comes in. Much like the Stock Link, you first need to $(item)$(k:key.use)$() an existing link to attune the Ticker to that network."
+			"text": "Если вы уже использовали $(l:logistics/create#stock_link)Складской передатчик$() для предоставления различных товаров в $(thing)Логистическую сеть$(), то следующим шагом будет создание чего-то, что сможет удаленно запрашивать эти товары... И здесь на помощь приходит $(item)Складской передатчик$(). Как и в случае со Складским передатчиком, сначала нужно $(item)$(k:key.use)$() существующую ссылку, чтобы настроить заказ на работу с этой сетью."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "You then need to place down a $(item)Blaze Burner$() or any mob in a $(l:logistics/trains#seat)Seat$() next to the Stock Ticker to have them work as a $(thing)Stock Keeper$().$(br2)Now that the poor creature is indentured for life, you can click on them to see all the items on the $(thing)Logistics Network$(). You can even search for items in the network, and create an order to be sent to specific addresses!"
+			"text": "Затем вам нужно поставить $(item)Горелку всполоха$() или любого моба на $(l:logistics/trains#seat)Сиденье$() рядом с Складским тикером, чтобы он работал как $(thing)Терминал хранения$().$(br2) Теперь, когда бедное существо навеки привязано к этому месту (Сижу за решеткой в темнице сырой.), вы можете нажать на него, чтобы увидеть все предметы в $(thing)Логистической сети$(). Вы даже можете искать предметы в сети и создавать заказы на отправку по определенным адресам!"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "There's no range limitation for this, although you do need to create your own way of routing around the packages that will be ordered through the Stock Links as well as have the link in question chunkloaded for this to work.$(br2)Additionally, you can place $(item)Filters$() inside the Ticker so that only specific items are shown, or set up categories of items."
+			"text": "Для этого нет ограничений по диапазону, хотя вам нужно будет создать собственный способ маршрутизации пакетов, которые будут заказываться через Stock Links, а также загрузить соответствующий фрагмент, чтобы это работало. $(br2) Кроме того, вы можете разместить $(item)Фильтры$() внутри тикера, чтобы отображались только определенные товары, или настроить категории товаров."
 		},
 		{
 			"type": "tfg:multimultiblock",

@@ -49,7 +49,7 @@
 	"block.wan_ancient_beasts.ginkgo_fence": "銀杏木柵欄",
 	"block.wan_ancient_beasts.ginkgo_fence_gate": "銀杏木柵欄門",
 	"block.wan_ancient_beasts.ginkgo_hanging_sign": "銀杏木懸掛牌",
-	"block.wan_ancient_beasts.ginkgo_log": "銀杏原木",
+	"block.wan_ancient_beasts.ginkgo_log": "銀杏木原木",
 	"block.wan_ancient_beasts.ginkgo_planks": "銀杏木木材",
 	"block.wan_ancient_beasts.ginkgo_pressure_plate": "銀杏木壓力板",
 	"block.wan_ancient_beasts.ginkgo_sign": "銀杏木告示牌",
@@ -73,7 +73,7 @@
 	"block.wan_ancient_beasts.sniffer_skull": "嗅探獸頭顱",
 	"block.wan_ancient_beasts.soarer_egg": "翱翔獸蛋",
 	"block.wan_ancient_beasts.soarer_skull": "翱翔獸頭顱",
-	"block.wan_ancient_beasts.stripped_ginkgo_log": "剝皮銀杏原木",
+	"block.wan_ancient_beasts.stripped_ginkgo_log": "剝皮銀杏木原木",
 	"block.wan_ancient_beasts.stripped_ginkgo_wood": "剝皮銀杏木塊",
 	"block.wan_ancient_beasts.sundew": "毛氈苔",
 	"block.wan_ancient_beasts.sundew_crop": "毛氈苔作物",
@@ -172,8 +172,8 @@
 	"item.wan_ancient_beasts.walker_spawn_egg": "巨步獸生怪蛋",
 	"item.wan_ancient_beasts.white_charger_armor": "白色衝鋒獸盔甲",
 	"item.wan_ancient_beasts.yellow_charger_armor": "黃色衝鋒獸盔甲",
-	"itemGroup.wan_ancient_beasts.items": "Wan's Ancient Beasts(Wan 的遠古巨獸)",
-	"key.categories.wan_ancient_beasts": "Wan's Ancient Beasts(Wan 的遠古巨獸)",
+	"itemGroup.wan_ancient_beasts.items": "Wan 的遠古巨獸",
+	"key.categories.wan_ancient_beasts": "Wan 的遠古巨獸",
 	"key.messages.wan_ancient_beasts.special_ability.not_enough_oxygen": "破浪獸：氧氣不足",
 	"key.wan_ancient_beasts.special_ability": "特殊能力",
 	"recipe_category.wan_ancient_beasts.crushing": "碾壓獸粉碎",
@@ -279,5 +279,8 @@
 	"trim_pattern.wan_ancient_beasts.ancient_upgrade_smithing_template": "遠古升級鍛造模板",
 	"trim_pattern.wan_ancient_beasts.sniff": "嗅探盔甲紋飾",
 	"trim_pattern.wan_ancient_beasts.spike": "尖刺盔甲紋飾",
-	"upgrade.wan_ancient_beasts.ancient_upgrade": "遠古升級"
+	"upgrade.wan_ancient_beasts.ancient_upgrade": "遠古升級",
+	"enchantment.wan_ancient_beasts.egg_thief.desc": "用刷子刷時更容易找到蛋",
+	"enchantment.wan_ancient_beasts.preservation.desc": "可疑的方塊只需較少次刷動就會交出戰利品",
+	"enchantment.wan_ancient_beasts.treasure_hunter.desc": "刷可疑的方塊時獲得更好的戰利品"
 }

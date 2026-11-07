@@ -437,7 +437,7 @@ const registerRnrRecipes = (event) => {
 		.outputFluids('rnr:concrete 1000')
 		.circuit(7)
 		.duration(200)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VHA[GTValues.LV])
 
 	// Tamped blocks for new world gen soils
 	const DIRT_VARIATIONS = [

@@ -3,11 +3,11 @@
     "showGravityNormalizerArea": false,
     "jetSuitEnabled": false,
     // Type: Integer
-    "oxygenBarX": 5,
+    "oxygenBarX": 0,
     // Type: Integer
-    "oxygenBarY": 250,
+    "oxygenBarY": 0,
     // Type: Float
-    "oxygenBarScale": 0.5,
+    "oxygenBarScale": 0.0,
     // Type: Integer
     "energyBarX": 12,
     // Type: Integer

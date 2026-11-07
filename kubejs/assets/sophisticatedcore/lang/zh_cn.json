@@ -280,12 +280,20 @@
 	"item.sophisticatedcore.storage.tooltip.shift": "左Shift",
 	"item.sophisticatedcore.storage.tooltip.stack_multiplier": "堆叠倍数：%s",
 	"item.sophisticatedcore.storage.tooltip.upgrades": "升级",
-	"item.sophisticatedcore.xp_bucket": "经验桶",
 	"key.category.sophisticatedcore.main": "精妙模组",
 	"key.sophisticatedcore.sort": "整理容器/背包",
 	"key.sophisticatedcore.transfer_to_inventory": "转移至物品栏",
 	"key.sophisticatedcore.transfer_to_storage": "转移至容器",
 	"upgrade_group.sophisticatedcore.cooking_upgrades": "熔炉升级",
 	"upgrade_group.sophisticatedcore.jukebox_upgrades": "唱片机升级",
-	"upgrade_group.sophisticatedcore.stack_upgrades": "堆叠升级"
+	"upgrade_group.sophisticatedcore.stack_upgrades": "堆叠升级",
+	"itemGroup.sophisticatedcore": "精妙核心",
+	"gui.sophisticatedcore.status.ender_linker.already_linked": "存储设备已链接",
+	"gui.sophisticatedcore.status.ender_linker.unsupported_endpoint": "无法链接该存储设备",
+	"gui.sophisticatedcore.status.ender_linker.incompatible_endpoint": "该存储设备与此已链接存储组不兼容",
+	"gui.sophisticatedcore.status.ender_linker.endpoint_has_contents": "存储设备内有物品",
+	"item.sophisticatedcore.storage.tooltip.linked_storage_group": "已链接存储组：%s",
+	"item.sophisticatedcore.storage.tooltip.linked_storage_endpoint": "已链接存储端点：%s",
+	"tooltip.sophisticatedcore.linked_storage.primary": "主链接",
+	"tooltip.sophisticatedcore.linked_storage.secondary": "已链接"
 }
