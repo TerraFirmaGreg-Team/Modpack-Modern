@@ -1,0 +1,13 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"type": "firmalife:stomping",
+	"ingredient": {
+		"item": "minecraft:charcoal"
+	},
+	"result": {
+		"item": "gtceu:charcoal_dust"
+	},
+	"input_texture": "tfc:block/charcoal_pile",
+	"output_texture": "tfc:block/powder/charcoal",
+	"sound": "tfc:block.charcoal.fall"
+}
