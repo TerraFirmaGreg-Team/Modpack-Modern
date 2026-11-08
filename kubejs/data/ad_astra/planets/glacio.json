@@ -1,9 +1,9 @@
 {
 	"dimension": "ad_astra:glacio",
-	"gravity": 3.721,
+	"gravity": 1.314,
 	"orbit": "ad_astra:glacio_orbit",
 	"oxygen": false,
-	"solar_power": 16,
+	"solar_power": 2,
 	"solar_system": "ad_astra:solar_system",
 	"tier": 4,
 
