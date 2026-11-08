@@ -191,7 +191,10 @@ TFCEvents.data(event => {
  */
 LootJS.modifiers((event) => {
 	registerAdAstraLoots(event)
+	registerAliencraftLoots(event)
+	registerArthropocolypseLoots(event)
 	registerBeneathLoots(event)
+	registerOpposingForceLoots(event)
 	registerTFGRockLoots(event)
 	registerTFGOreLoots(event)
 	registerMinecraftLoots(event)
