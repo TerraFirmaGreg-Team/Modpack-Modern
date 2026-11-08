@@ -45,7 +45,11 @@ const registerFirmaLifeRecipes = (event) => {
 
 	event.remove({ id: 'firmalife:pot/chocolate' })
 
-	//#endregion
+	// Powder removal
+	event.remove({ id: 'firmalife:stomping/charcoal' })
+
+
+
 
 	event.shapeless('firmalife:barrel_stave', ['2x firmalife:treated_lumber', '#forge:screws/any_bronze', '#forge:tools/hammers'])
 		.id('firmalife:crafting/barrel_stave')
@@ -642,7 +646,7 @@ const registerFirmaLifeRecipes = (event) => {
 	event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`2x firmalife:food/hardtack_dough`).copyFood(), [
 		'firmalife:spoon',
 		TFC.ingredient.notRotten(`#tfc:foods/flour`),
-		'tfc:powder/salt',
+		'gtceu:small_salt_dust',
 		TFC.ingredient.fluid(TFC.fluidStackIngredient('minecraft:water', 100)),
 		'#tfc:bowls'
 	]).keepIngredient('#tfc:bowls').id(`tfg:shapeless/hardtack_dough`)
@@ -650,7 +654,7 @@ const registerFirmaLifeRecipes = (event) => {
 	event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`4x firmalife:food/hardtack_dough`).copyFood(), [
 		'firmalife:spoon',
 		TFC.ingredient.notRotten(`#tfc:foods/flour`),
-		'tfc:powder/salt',
+		'gtceu:small_salt_dust',
 		TFC.ingredient.fluid(TFC.fluidStackIngredient('minecraft:water', 100)),
 		'firmalife:mixing_bowl'
 	]).id(`tfg:shapeless/hardtack_dough_mixing`)
@@ -659,8 +663,8 @@ const registerFirmaLifeRecipes = (event) => {
 		'firmalife:spoon',
 		TFC.ingredient.notRotten(`#tfc:foods/flour`),
 		TFC.ingredient.notRotten(`#tfc:foods/flour`),
-		'tfc:powder/salt',
-		'tfc:powder/salt',
+		'gtceu:small_salt_dust',
+		'gtceu:small_salt_dust',
 		TFC.ingredient.fluid(TFC.fluidStackIngredient('minecraft:water', 200)),
 		'#tfc:bowls'
 	]).keepIngredient('#tfc:bowls').id(`tfg:shapeless/hardtack_dough_2`)
@@ -669,8 +673,8 @@ const registerFirmaLifeRecipes = (event) => {
 		'firmalife:spoon',
 		TFC.ingredient.notRotten(`#tfc:foods/flour`),
 		TFC.ingredient.notRotten(`#tfc:foods/flour`),
-		'tfc:powder/salt',
-		'tfc:powder/salt',
+		'gtceu:small_salt_dust',
+		'gtceu:small_salt_dust',
 		TFC.ingredient.fluid(TFC.fluidStackIngredient('minecraft:water', 200)),
 		'firmalife:mixing_bowl'
 	]).id(`tfg:shapeless/hardtack_dough_2_mixing`)
@@ -680,9 +684,9 @@ const registerFirmaLifeRecipes = (event) => {
 		TFC.ingredient.notRotten(`#tfc:foods/flour`),
 		TFC.ingredient.notRotten(`#tfc:foods/flour`),
 		TFC.ingredient.notRotten(`#tfc:foods/flour`),
-		'tfc:powder/salt',
-		'tfc:powder/salt',
-		'tfc:powder/salt',
+		'gtceu:small_salt_dust',
+		'gtceu:small_salt_dust',
+		'gtceu:small_salt_dust',
 		TFC.ingredient.fluid(TFC.fluidStackIngredient('minecraft:water', 300)),
 		'#tfc:bowls'
 	]).keepIngredient('#tfc:bowls').id(`tfg:shapeless/hardtack_dough_3`)
@@ -692,9 +696,9 @@ const registerFirmaLifeRecipes = (event) => {
 		TFC.ingredient.notRotten(`#tfc:foods/flour`),
 		TFC.ingredient.notRotten(`#tfc:foods/flour`),
 		TFC.ingredient.notRotten(`#tfc:foods/flour`),
-		'tfc:powder/salt',
-		'tfc:powder/salt',
-		'tfc:powder/salt',
+		'gtceu:small_salt_dust',
+		'gtceu:small_salt_dust',
+		'gtceu:small_salt_dust',
 		TFC.ingredient.fluid(TFC.fluidStackIngredient('minecraft:water', 300)),
 		'firmalife:mixing_bowl'
 	]).id(`tfg:shapeless/hardtack_dough_3_mixing`)
@@ -845,7 +849,7 @@ const registerFirmaLifeRecipes = (event) => {
 		'BBB',
 		'AAA'
 	], {
-		A: 'tfc:powder/salt',
+		A: 'gtceu:small_salt_dust',
 		B: TFC.ingredient.notRotten('firmalife:food/milk_curd')
 	}, 0, 0).id('tfg:crafting/cheddar_wheel')
 	event.recipes.tfc.advanced_shaped_crafting(
@@ -854,7 +858,7 @@ const registerFirmaLifeRecipes = (event) => {
 		'BBB',
 		'AAA'
 	], {
-		A: 'tfc:powder/salt',
+		A: 'gtceu:small_salt_dust',
 		B: TFC.ingredient.notRotten('firmalife:food/goat_curd')
 	}, 0, 0).id('tfg:crafting/chevre_wheel')
 	event.recipes.tfc.advanced_shaped_crafting(
@@ -863,7 +867,7 @@ const registerFirmaLifeRecipes = (event) => {
 		'BBB',
 		'AAA'
 	], {
-		A: 'tfc:powder/salt',
+		A: 'gtceu:small_salt_dust',
 		B: TFC.ingredient.notRotten('firmalife:food/yak_curd')
 	}, 0, 0).id('tfg:crafting/rajya_metok_wheel')
 	event.custom({
@@ -933,7 +937,7 @@ const registerFirmaLifeRecipes = (event) => {
 		[
 			TFC.ingredient.notRotten(TFC.ingredient.hasTrait('tfc:food/pork', "firmalife:smoked")),
 			'#forge:tools/knives',
-			'tfc:powder/salt'
+			'gtceu:small_salt_dust'
 		])
 		.modifyResult((craftingGrid, result) => {
 			result.resetHoverName();

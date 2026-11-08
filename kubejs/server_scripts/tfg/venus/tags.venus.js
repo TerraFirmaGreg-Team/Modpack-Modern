@@ -6,7 +6,6 @@ function registerTFGVenusItemTags(event) {
 	event.add('tfg:venusian_arthropod_foods', 'arthropocolypse:beetle_fragment')
 	event.add('tfg:venusian_arthropod_foods', 'arthropocolypse:gilded_scale')
 
-	event.add('tfg:sulfie_food', 'tfc:powder/sulfur')
 	event.add('tfg:sulfie_food', 'minecraft:gunpowder')
 	event.add('tfg:sulfie_food', '#forge:dusts/sulfur')
 }

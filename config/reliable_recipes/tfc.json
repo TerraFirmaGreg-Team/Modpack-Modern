@@ -2,8 +2,6 @@
 	{
 		"action": "remove_recipe",
 		"id": [
-			"tfc:quern/charcoal",
-			"tfc:quern/graphite",
 			"tfc:barrel/fresh_to_salt_water",
 			"tfc:crafting/vanilla/redstone/observer",
 			"tfc:crafting/vanilla/brick_stairs",

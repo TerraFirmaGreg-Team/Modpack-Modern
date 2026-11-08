@@ -27,21 +27,6 @@ function registerTFGHeatData(event) {
 	});
 	event.itemHeat("tfg:decorative_vase/unfired", 1, null, null);
 
-	event.itemHeat("tfc:powder/native_copper", 1, null, null);
-	event.itemHeat("tfc:powder/native_silver", 1, null, null);
-	event.itemHeat("tfc:powder/native_gold", 1, null, null);
-	event.itemHeat("tfc:powder/hematite", 1, null, null);
-	event.itemHeat("tfc:powder/cassiterite", 1, null, null);
-	event.itemHeat("tfc:powder/bismuthinite", 1, null, null);
-	event.itemHeat("tfc:powder/garnierite", 1, null, null);
-	event.itemHeat("tfc:powder/malachite", 1, null, null);
-	event.itemHeat("tfc:powder/magnetite", 1, null, null);
-	event.itemHeat("tfc:powder/limonite", 1, null, null);
-	event.itemHeat("tfc:powder/sphalerite", 1, null, null);
-	event.itemHeat("tfc:powder/tetrahedrite", 1, null, null);
-	event.itemHeat("tfc:powder/pyrite", 1, null, null);
-	event.itemHeat("tfc:powder/lapis_lazuli", 1, null, null);
-
 	event.itemHeat('tfg:unfired_rod_mold', 1.0, null, null);
 	event.itemHeat('tfg:unfired_spindle_head_mold', 1.0, null, null);
 	event.itemHeat('tfg:unfired_small_gear_mold', 1.0, null, null);

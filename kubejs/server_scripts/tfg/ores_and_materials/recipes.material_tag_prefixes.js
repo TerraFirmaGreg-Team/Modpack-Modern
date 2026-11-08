@@ -55,43 +55,6 @@ function processDust(event, material) {
  * @param {Internal.RecipesEventJS} event 
  * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
  */
-function processPowder(event, material) {
-	const powderItem = ChemicalHelper.get(TFGTagPrefix.powder, material, 1);
-
-	if (powderItem.isEmpty())
-		return;
-
-	const dustItem = ChemicalHelper.get(TagPrefix.dust, material, 1);
-	const materialName = material.getName();
-
-	event.recipes.gtceu.macerator(`tfg:${materialName}_to_powder`)
-		.itemInputs(dustItem)
-		.itemOutputs(powderItem.withCount(4))
-		.duration(60)
-		.EUt(2)
-
-	event.recipes.tfc.quern(powderItem.withCount(4), dustItem)
-		.id(`tfg:quern/${materialName}`)
-
-	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY);
-	if (tfcProperty !== null) {
-		addTFCMelting(event, powderItem, material, global.calcAmountOfMetalProcessed(144 / 4, tfcProperty.getPercentOfMaterial()), 'powder');
-	}
-
-	if (material.hasProperty(PropertyKey.FLUID)) {
-		event.recipes.gtceu.extractor(`tfg:${materialName}_powder`)
-			.itemInputs(powderItem)
-			.outputFluids(Fluid.of(material.getFluid(), global.calcAmountOfMetalProcessed(144 / 4, tfcProperty.getPercentOfMaterial())))
-			.duration(material.getMass() / 4)
-			.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-			.EUt(getFluidRecipeEUt(material))
-	}
-}
-
-/**
- * @param {Internal.RecipesEventJS} event 
- * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
- */
 function processIngot(event, material) {
 	const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
 

@@ -1,0 +1,24 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"type": "tfc:damage_inputs_shapeless_crafting",
+	"recipe": {
+		"type": "minecraft:crafting_shapeless",
+		"ingredients": [
+			{
+				"type": "tfc:not_rotten",
+				"ingredient": {
+					"item": "firmalife:food/taco_shell"
+				}
+			},
+			{
+				"item": "gtceu:small_salt_dust"
+			},
+			{
+				"tag": "tfc:hammers"
+			}
+		],
+		"result": {
+			"item": "firmalife:food/tortilla_chips"
+		}
+	}
+}

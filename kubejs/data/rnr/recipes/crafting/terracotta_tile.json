@@ -1,0 +1,37 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "rnr:unfired_roof_tile"
+		},
+		{
+			"item": "rnr:unfired_roof_tile"
+		},
+		{
+			"item": "rnr:unfired_roof_tile"
+		},
+		{
+			"item": "rnr:unfired_roof_tile"
+		},
+		{
+			"tag": "forge:dyes/red"
+		},
+		{
+			"item": "rnr:unfired_roof_tile"
+		},
+		{
+			"item": "rnr:unfired_roof_tile"
+		},
+		{
+			"item": "rnr:unfired_roof_tile"
+		},
+		{
+			"item": "rnr:unfired_roof_tile"
+		}
+	],
+	"result": {
+		"item": "rnr:unfired_terracotta_roof_tile",
+		"count": 8
+	}
+}

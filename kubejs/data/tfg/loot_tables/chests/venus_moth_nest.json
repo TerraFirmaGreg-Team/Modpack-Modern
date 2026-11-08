@@ -102,15 +102,15 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfc:powder/sulfur",
+					"name": "gtceu:sulfur_dust",
 					"weight": 30,
 					"functions": [
 						{
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 20,
-								"min": 10
+								"max": 10,
+								"min": 5
 							},
 							"function": "minecraft:set_count"
 						}

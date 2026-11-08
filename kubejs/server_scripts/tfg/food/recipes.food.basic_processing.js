@@ -51,7 +51,7 @@ function registerTFGBasicProcessingFoodRecipes(event) {
 
 	global.processorRecipe(event, 'soy_mixture', 300, 8, {
 		circuit: 1,
-		itemInputs: ['tfc:food/soybean', 'tfc:powder/salt'],
+		itemInputs: ['tfc:food/soybean', 'gtceu:small_salt_dust'],
 		fluidInputs: ['#tfg:clean_water 50'],
 		itemOutputs: ['firmalife:food/soy_mixture'],
 		itemOutputProvider: TFC.isp.of('firmalife:food/soy_mixture').copyFood()
@@ -148,7 +148,7 @@ function registerTFGBasicProcessingFoodRecipes(event) {
 	// Bacon
 	global.processorRecipe(event, 'bacon', 300, 8, {
 		circuit: 1,
-		itemInputs: ['tfc:food/pork', 'tfc:powder/salt'],
+		itemInputs: ['tfc:food/pork', 'gtceu:small_salt_dust'],
 		itemOutputs: ['4x firmalife:food/bacon'],
 		fluidInputs: ['gtceu:wood_gas 5', 'tfc:brine 100'],
 		itemOutputProvider: TFC.isp.of('4x firmalife:food/bacon')
@@ -166,7 +166,7 @@ function registerTFGBasicProcessingFoodRecipes(event) {
 	
 	global.processorRecipe(event, 'pickled_egg', 1000, 8, {
 		circuit: 1,
-		itemInputs: ['minecraft:clay_ball', 'tfc:powder/wood_ash', 'tfc:powder/salt', 'tfc:food/boiled_egg'],
+		itemInputs: ['minecraft:clay_ball', 'tfc:powder/wood_ash', 'gtceu:small_salt_dust', 'tfc:food/boiled_egg'],
 		itemOutputs: ['firmalife:food/pickled_egg'],
 		itemOutputProvider: TFC.isp.of('firmalife:food/pickled_egg').copyFood()
 	});
@@ -264,7 +264,7 @@ function registerTFGBasicProcessingFoodRecipes(event) {
 	});
 
 	// Salt
-	event.shapeless('4x tfc:powder/salt', ['#forge:dusts/salt', '#forge:tools/mortars'])
+	event.shapeless('4x gtceu:small_salt_dust', ['#forge:dusts/salt', '#forge:tools/mortars'])
 		.id(`tfg:mortar/salt`);
 		
 	// Sodium Dihydrogen Citrate

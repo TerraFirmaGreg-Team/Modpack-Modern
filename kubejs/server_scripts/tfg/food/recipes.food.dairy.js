@@ -58,7 +58,7 @@ function registerTFGDairyFoodRecipes(event) {
 
 		global.processorRecipe(event, `${item.id}_salted_cheese_wheel`, 1000, 16, {
 			circuit: 2,
-			itemInputs: [`3x ${item.curd}`, `6x tfc:powder/salt`],
+			itemInputs: [`3x ${item.curd}`, `6x gtceu:small_salt_dust`],
 			itemOutputs: [item.salted_wheel],
 			itemOutputProvider: TFC.isp.of(item.salted_wheel).copyOldestFood()
 		});
@@ -145,7 +145,7 @@ function registerTFGDairyFoodRecipes(event) {
 		.EUt(24);
 
 	global.processorRecipe(event, 'butter', 300, 16, {
-		itemInputs: ['tfc:powder/salt'],
+		itemInputs: ['gtceu:small_salt_dust'],
 		fluidInputs: [Fluid.of('firmalife:cream', 1000)],
 		itemOutputs: ['firmalife:food/butter'],
 		itemOutputProvider: TFC.isp.of('firmalife:food/butter').resetFood()
