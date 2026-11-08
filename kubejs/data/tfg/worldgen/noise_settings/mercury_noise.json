@@ -13,8 +13,8 @@
 	"noise": {
 		"min_y": 0,
 		"height": 256,
-		"size_horizontal": 1,
-		"size_vertical": 2
+		"size_horizontal": 4,
+		"size_vertical": 4
 	},
 	"noise_router": {
 		"barrier": 0,
@@ -42,15 +42,65 @@
 		"continents": 0,
 		"ridges": 0,
 		"erosion": 0,
-		"depth": {
-			"type": "minecraft:y_clamped_gradient",
-			"from_value": 2,
-			"from_y": 0,
-			"to_value": -2,
-			"to_y": 256
+		"depth": 0,
+		"initial_density_without_jaggedness": 0,
+		"final_density": {
+			"type": "minecraft:squeeze",
+			"argument": {
+				"type": "minecraft:mul",
+				"argument1": 0.64,
+				"argument2": {
+					"type": "minecraft:interpolated",
+					"argument": {
+						"type": "minecraft:blend_density",
+						"argument": {
+							"type": "minecraft:add",
+							"argument1": -0.234375,
+							"argument2": {
+								"type": "minecraft:mul",
+								"argument1": {
+									"type": "minecraft:y_clamped_gradient",
+									"from_y": 4,
+									"from_value": 0,
+									"to_y": 32,
+									"to_value": 1
+								},
+								"argument2": {
+									"type": "minecraft:add",
+									"argument1": 0.234375,
+									"argument2": {
+										"type": "minecraft:add",
+										"argument1": -23.4375,
+										"argument2": {
+											"type": "minecraft:mul",
+											"argument1": {
+												"type": "minecraft:y_clamped_gradient",
+												"from_y": 224,
+												"from_value": 1,
+												"to_y": 252,
+												"to_value": 0
+											},
+											"argument2": {
+												"type": "minecraft:add",
+												"argument1": 23.4375,
+												"argument2": {
+													"type": "minecraft:add",
+													"argument1": -0.6,
+													"argument2": {
+														"type": "tfg:cellular3d",
+														"scale_factor": 0.03
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
 		},
-		"initial_density_without_jaggedness": 1,
-		"final_density": 1,
 		"vein_gap": 0,
 		"vein_ridged": 0,
 		"vein_toggle": 0
@@ -58,14 +108,8 @@
 	"surface_rule": {
 		"type": "minecraft:sequence",
 		"sequence": [
-			
-
-			{
-				"type": "minecraft:block",
-				"result_state": {
-					"Name": "ad_astra:mercury_stone"
-				}
-			}
+		
+		
 		]
 	},
 	"spawn_target": []
