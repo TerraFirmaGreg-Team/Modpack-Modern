@@ -19,7 +19,7 @@ function registerArthropocolypseLoots(event) {
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([2, 3], ['arthropocolypse:ice_crawler_meat'])
 
-	event.addEntityLootModifier('arthropocolypse:millepede_head')
+	event.addEntityLootModifier('arthropocolypse:millipede_head')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([3, 5], ['arthropocolypse:ice_crawler_meat'])
 

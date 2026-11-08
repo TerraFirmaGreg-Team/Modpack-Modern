@@ -8,6 +8,7 @@ ServerEvents.tags('item', event => {
 	registerAdAstraItemTags(event)
 	registerAE2ItemTags(event)
 	registerAFCItemTags(event)
+	registerAliencraftItemTags(event)
 	registerArthropocolypseItemTags(event)
 	registerBeneathItemTags(event)
 	registerComputerCraftItemTags(event)
@@ -183,6 +184,9 @@ TFCEvents.data(event => {
 	registerJelliesData(event)
 	registerWABData(event)
 	registerSpeciesData(event)
+	registerArthropocolypseTFCData(event)
+	registerAliencraftTFCData(event)
+	registerOpposingForceTFCData(event)
 })
 
 /**
@@ -227,6 +231,7 @@ ServerEvents.recipes(event => {
 	registerAdAstraRecipes(event)
 	registerAdvancedPeripheralsRecipes(event)
 	registerAlekishipsRecipes(event)
+	registerAliencraftRecipes(event)
 	registerAE2Recipes(event)
 	registerAFCRecipes(event)
 	registerArthropocolypseRecipes(event)
@@ -287,6 +292,7 @@ ServerEvents.recipes(event => {
 	registerMoreRedRecipes(event)
 	registerMTSRecipes(event)
 	registerMTSOCPRecipes(event)
+	registerOpposingForceRecipes(event)
 	registerPrimitiveCreaturesRecipes(event)
 	registerRailWaysRecipes(event)
 	registerRailwaysNavigatorRecipes(event)

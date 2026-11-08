@@ -6,12 +6,9 @@
  */
 function registerArthropocolypseRecipes(event) {
 	
-
-	//event.recipes.tfc.knapping('arthropocolypse:mandible_dagger', 'tfc:goat_horn', [
-	//	' X   ',
-	//	' XX  ',
-	//	' XX  ',
-	//	' XX  ',
-	//	' XX  '
-	//]).ingredient('arthropocolypse:mandible_part').outsideSlotRequired(false).id('tfg:knapping/mandible_dagger')
+	event.recipes.gtceu.macerator('arthropocolypse:beetle_fragment')
+		.itemInputs('arthropocolypse:beetle_fragment')
+		.itemOutputs('#forge:dusts/silicon', 'minecraft:bone_meal') // TODO: something biological?
+		.duration(20)
+		.EUt(2)
 }

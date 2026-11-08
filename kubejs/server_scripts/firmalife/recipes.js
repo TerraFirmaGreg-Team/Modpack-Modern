@@ -336,7 +336,7 @@ const registerFirmaLifeRecipes = (event) => {
 							.inputFluids('#tfc:any_water 150')
 							.itemOutputs(`firmalife:${weatheringArray[i + 1]}${tier.tier}_greenhouse_${block}`)
 							.duration(30)
-							.EUt(30)
+							.EUt(GTValues.VA[GTValues.ULV])
 
 						event.recipes.tfc.barrel_sealed(2000)
 							.inputFluid(TFC.fluidStackIngredient('#tfc:any_water', 150))
@@ -350,7 +350,7 @@ const registerFirmaLifeRecipes = (event) => {
 							.inputFluids('gtceu:phosphoric_acid 10')
 							.itemOutputs(`firmalife:${tier.tier}_greenhouse_${block}`)
 							.duration(30)
-							.EUt(30)
+							.EUt(GTValues.VA[GTValues.ULV])
 					}
 				})
 			})

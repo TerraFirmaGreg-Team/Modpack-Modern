@@ -8,6 +8,15 @@ function registerTFGVenusItemTags(event) {
 
 	event.add('tfg:sulfie_food', 'minecraft:gunpowder')
 	event.add('tfg:sulfie_food', '#forge:dusts/sulfur')
+
+	event.add('tfg:venus_plants', 'aliencraft_kepler:small_desert_cactus')
+	event.add('tfg:venus_plants', 'aliencraft_kepler:big_alien_cactus')
+	event.add('tfg:venus_plants', 'aliencraft_kepler:alien_cactus_flower')
+	event.add('tfg:venus_plants', 'aliencraft_kepler:thorn_flower')
+	event.add('tfg:venus_plants', 'aliencraft_kepler:crawling_lily')
+	event.add('tfg:venus_plants', 'aliencraft_kepler:desertgrass_3')
+	event.add('tfg:venus_plants', 'aliencraft_kepler:alien_vines')
+	event.add('tfc:compost_greens_low', '#tfg:venus_plants')
 }
 
 
