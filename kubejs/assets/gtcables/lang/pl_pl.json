@@ -1,7 +1,19 @@
 {
 	"item.gtcables.spool.empty": "Pusta szpula",
-	"item.gtcables.spool.filled": "Szpula (%S)",
+	"item.gtcables.spool.filled": "Szpula (%s)",
+	"block.gtcables.connector": "Złącze przewodów",
+	"tooltip.gtcables.length": "%s / %s m",
+	"tooltip.gtcables.loss_per_block": "§cStrata centymetr/amper:§r §c%d§7 mEU-wolt",
+	"message.gtcables.invalid_wire": "Ten typ przewodu jest niedostępny.",
+	"message.gtcables.duplicate": "Te złącza są już połączone.",
+	"message.gtcables.cable_obstructed": "Na drodze kabla znajdują się bloki.",
+	"message.gtcables.connected": "Kabel podłączony.",
+	"config.gtcables.connection_max_length": "Maksymalna długość połączenia",
+	"config.gtcables.render_distance": "Odległość renderowania kabli",
+	"config.jade.plugin_gtcables.wire_data": "Dane podwieszonych przewodów",
 	"jade.gtcables.voltage": "Napięcie: %s",
+	"jade.gtcables.amperage": "Natężenie: %s",
+	"jade.gtcables.length": "Długość: %s m",
 	"jade.gtcables.endpoint_a": "Od: %s",
 	"jade.gtcables.endpoint_b": "Do: %s"
 }

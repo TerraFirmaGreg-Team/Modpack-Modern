@@ -123,5 +123,6 @@
 	"option.immersive_aircraft.weaponsAreDestructive": "いくつかの武器でブロックを破壊できるようにする。",
 	"option.immersive_aircraft.windClearWeather": "基本の風による影響",
 	"option.immersive_aircraft.windRainWeather": "雨天時の風による影響",
-	"option.immersive_aircraft.windThunderWeather": "雷雨時の風による影響"
+	"option.immersive_aircraft.windThunderWeather": "雷雨時の風による影響",
+	"option.immersive_aircraft.defaultCanEnter": "モブが航空機にデフォルトで自動的に搭載できるようにする。"
 }
