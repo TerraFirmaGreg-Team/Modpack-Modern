@@ -227,6 +227,47 @@
             ]
         },
         {
+            "pakku_id": "h4IMkyhSNnZjriw9",
+            "pakku_links": [
+                "pIZDOkEUyxqgQofO"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ae2wtlib-uelm"
+            },
+            "name": {
+                "curseforge": "AE2 Wireless Terminals Extended Life Modern"
+            },
+            "id": {
+                "curseforge": "1787710"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ae2wtlib-15.4.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9483/221/ae2wtlib-15.4.0.jar",
+                    "id": "9483221",
+                    "parent_id": "1787710",
+                    "hashes": {
+                        "sha1": "50d06e739a90c5969094a0ebc3d6b4019781929e",
+                        "md5": "559799fdfa597d96697a58ec2277eaa1"
+                    },
+                    "required_dependencies": [
+                        "1624366"
+                    ],
+                    "size": 252928,
+                    "date_published": "2026-11-06T23:12:58.957Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "f1zNCW1T31PKFnSo",
             "type": "MOD",
             "side": "BOTH",
@@ -1088,83 +1129,6 @@
                     ],
                     "size": 53432741,
                     "date_published": "2026-10-19T11:44:46.827Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "SKNobxecQul3CE8g",
-            "pakku_links": [
-                "3QJUyVc5jxbc7OFC",
-                "x1EwQZ6H2kVKR3U3",
-                "0DMPJ1AWW6qfYubI",
-                "peldUtKoWsEyuilP"
-            ],
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "applied-energistics-2-wireless-terminals",
-                "modrinth": "applied-energistics-2-wireless-terminals"
-            },
-            "name": {
-                "curseforge": "Applied Energistics 2 Wireless Terminals",
-                "modrinth": "Applied Energistics 2 Wireless Terminals"
-            },
-            "id": {
-                "curseforge": "459929",
-                "modrinth": "pNabrMMw"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "ae2wtlib-15.3.3-forge.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7251/206/ae2wtlib-15.3.3-forge.jar",
-                    "id": "7251206",
-                    "parent_id": "459929",
-                    "hashes": {
-                        "sha1": "1a546af04844677542b6914191783c7de15364fc",
-                        "md5": "9e60a31acb384e832f03bcb16e092ec9"
-                    },
-                    "required_dependencies": [
-                        "309927",
-                        "223794",
-                        "348521",
-                        "419699"
-                    ],
-                    "size": 229518,
-                    "date_published": "2025-11-23T00:02:48.137Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "ae2wtlib-15.3.3-forge.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/pNabrMMw/versions/z8QXeyI0/ae2wtlib-15.3.3-forge.jar",
-                    "id": "z8QXeyI0",
-                    "parent_id": "pNabrMMw",
-                    "hashes": {
-                        "sha512": "f036f278e6d1360147b04f2090829154e75e456f3b2c0af7571b537bf0fd13e97f29211f7a044f9437a171a1c525195737860895118eab70b2b4af54485367d4",
-                        "sha1": "1a546af04844677542b6914191783c7de15364fc"
-                    },
-                    "required_dependencies": [
-                        "9s6osm5g",
-                        "XxWD5pD3",
-                        "lhGA9TYQ",
-                        "vvuO3ImH"
-                    ],
-                    "size": 229518,
-                    "date_published": "2025-11-23T00:02:50.212750Z"
                 }
             ]
         },
@@ -6620,9 +6584,6 @@
         },
         {
             "pakku_id": "IhoU2hVCkDnvlCle",
-            "pakku_links": [
-                "SKNobxecQul3CE8g"
-            ],
             "type": "MOD",
             "side": "BOTH",
             "slug": {
