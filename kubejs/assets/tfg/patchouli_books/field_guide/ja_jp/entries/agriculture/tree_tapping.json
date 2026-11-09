@@ -41,8 +41,14 @@
             "border": true
         },
         {
+            "type": "patchouli:text",
+            "title": "樹液採取のヒント",
+            "anchor": "tips",
+            "text": "$(li)樹液採取に適さない気候ですか？ それなら、木を $(l:agriculture/greenhouse)温室$() に置いてみてはいかがでしょうか！ 温室内の環境は管理されているため、外がどんなに寒くても、木から樹液を採取することができます。"
+        },
+        {
             "type": "patchouli:relations",
-            "title": "さらに読む",
+            "title": "関連項目",
             "anchor": "relations",
             "entries": [
             	"tfg:the_world/earth_tree_index",
