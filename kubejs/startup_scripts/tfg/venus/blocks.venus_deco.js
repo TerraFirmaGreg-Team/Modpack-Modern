@@ -336,7 +336,7 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 
 	event.create('tfg:slurry_slime_mold', 'tfg:floating_decorative_plant')
 		.soundType('honey_block')
-		.defaultTranslucent(true)
+		.defaultTranslucent()
 		.xz_offset(false)
 		.box(0, 0, 0, 16, 2, 16)
 		.mapColor('color_light_blue')
@@ -345,7 +345,7 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 
 	event.create('tfg:floating_fumarole_colony', 'tfg:floating_decorative_plant')
 		.soundType('honey_block')
-		.defaultTranslucent(true)
+		.defaultTranslucent()
 		.xz_offset(false)
 		.box(0, 0, 0, 16, 2, 16)
 		.mapColor('color_light_blue')

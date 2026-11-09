@@ -415,6 +415,34 @@
 						{
 							"type": "minecraft:condition",
 							"if_true": {
+								"type": "tfg:all_of",
+								"conditions": [
+									{
+										"type": "minecraft:y_above",
+										"anchor": {
+											"absolute": 67
+										},
+										"surface_depth_multiplier": 0,
+										"add_stone_depth": false
+									},
+									{
+										"type": "tfg:cellular_2d",
+										"scale_factor": 0.05,
+										"min_threshold": 0,
+										"max_threshold": 0.07
+									}
+								]
+							},
+							"then_run": {
+								"type": "minecraft:block",
+								"result_state": {
+									"Name": "tfg:huge_salt"
+								}
+							}
+						},
+						{
+							"type": "minecraft:condition",
+							"if_true": {
 								"type": "minecraft:not",
 								"invert": {
 									"type": "minecraft:vertical_gradient",
