@@ -203,7 +203,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "appliedenergistics2-forge-15.5.8-uelm.jar",
+                    "file_name": "appliedenergistics2-forge-15.5.9-uelm.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -211,18 +211,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9481/64/appliedenergistics2-forge-15.5.8-uelm.jar",
-                    "id": "9481064",
+                    "url": "https://edge.forgecdn.net/files/9531/710/appliedenergistics2-forge-15.5.9-uelm.jar",
+                    "id": "9531710",
                     "parent_id": "1624366",
                     "hashes": {
-                        "sha1": "652256c4a2bdb384def46b2344c18a502c23eab4",
-                        "md5": "f36e6be2a48f3c158390bf84b687ace6"
+                        "sha1": "7170a5c422b45697602e4cc900cc02f2b769390f",
+                        "md5": "77620b90c849dace777fdecf64a52ea8"
                     },
                     "required_dependencies": [
                         "1173950"
                     ],
-                    "size": 8793436,
-                    "date_published": "2026-11-06T20:16:25.093Z"
+                    "size": 8799295,
+                    "date_published": "2026-11-09T20:16:41.373Z"
                 }
             ]
         },
@@ -244,7 +244,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ae2wtlib-15.4.0.jar",
+                    "file_name": "ae2wtlib-15.4.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -252,18 +252,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9483/221/ae2wtlib-15.4.0.jar",
-                    "id": "9483221",
+                    "url": "https://edge.forgecdn.net/files/9531/944/ae2wtlib-15.4.1.jar",
+                    "id": "9531944",
                     "parent_id": "1787710",
                     "hashes": {
-                        "sha1": "50d06e739a90c5969094a0ebc3d6b4019781929e",
-                        "md5": "559799fdfa597d96697a58ec2277eaa1"
+                        "sha1": "28a4b684a07b36a43a23a0a785433267ef98555c",
+                        "md5": "8f36c14472e6c2a122d93f05ed042082"
                     },
                     "required_dependencies": [
                         "1624366"
                     ],
-                    "size": 252928,
-                    "date_published": "2026-11-06T23:12:58.957Z"
+                    "size": 252909,
+                    "date_published": "2026-11-09T20:34:03.460Z"
                 }
             ]
         },
