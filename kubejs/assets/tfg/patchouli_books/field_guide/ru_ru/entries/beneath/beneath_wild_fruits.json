@@ -448,12 +448,12 @@
         {
             "type": "patchouli:text",
             "anchor": "oil_palm",
-            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 19 - 62 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 10 - 100 %$(br2) Из плодов масличной пальмы получают пальмовое масло и мешковину. Гроздья масличной пальмы созревают в четыре этапа, и с одной пальмы можно собрать 3-6 плодов.",
-            "title": "Масляничная Пальма"
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 19 - 62 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 10 - 100 %$(br2)Масличную пальму выращивают ради плодов, из которых получают пальмовое масло и волокно для джутовой ткани. Гроздья масличной пальмы растут в 4 стадии и при сборе дают 3–6 предметов.",
+            "title": "Масличная пальма"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Масличные пальмы можно найти в биомах $(l:beneath/beneath#salt_caves)Соляных пещер$() и $(l:beneath/beneath#tar_pools)Смоляных ям$() между Y=50 и Y=190",
+            "text": "Масличные пальмы можно найти в биомах $(l:beneath/beneath#salt_caves)Соляных пещер$() и $(l:beneath/beneath#tar_pools)Битумных озёр$() между Y=50 и Y=190",
             "multiblocks": [
                 {
                     "pattern": [
@@ -1081,7 +1081,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Деревья асаи можно найти в биомах $(l:beneath/beneath#salt_caves)Соляные пещеры$() и $(l:beneath/beneath#tar_pools)Смоляные ямы$() между Y=50 и Y=190",
+            "text": "Деревья асаи можно найти в биомах $(l:beneath/beneath#salt_caves)Соляные пещеры$() и $(l:beneath/beneath#tar_pools)Битумные озёра$() между Y=50 и Y=190",
             "multiblocks": [
                 {
                     "pattern": [

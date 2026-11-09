@@ -1,25 +1,25 @@
 {
-    "name": "Earth Flora",
+    "name": "Флора Земли",
     "category": "tfg:the_world",
     "icon": "tfc:plant/goldenrod",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:the_world/flora#standard_plants)Standard Plant Types$()$(li)$(bold)$(l:the_world/flora#aquatic_plants)Aquatic Plant Types$()$(li)$(bold)$(l:the_world/flora#medicinal_plants)Medicinal Plants$()$(li)$(bold)$(l:the_world/flora#spices)Spices$()$(li2)$(l:the_world/flora#basil)Basil$()$(li2)$(l:the_world/flora#bay)Bay Laural$()$(li2)$(l:the_world/flora#cardamom)Cardamom$()$(li2)$(l:the_world/flora#cilantro)Cilantro$()$(li2)$(l:the_world/flora#cumin)Cumin$()$(li2)$(l:the_world/flora#oregano)Oregano$()$(li2)$(l:the_world/flora#pimento)Pimento$()$(li2)$(l:the_world/flora#vanilla)Vanilla$()$(li)$(bold)$(l:the_world/flora#seed_ball)Seed Ball$()"
+            "text": "$(li)$(bold)$(l:the_world/flora#standard_plants)Обычные растения$()$(li)$(bold)$(l:the_world/flora#aquatic_plants)Водные растения$()$(li)$(bold)$(l:the_world/flora#medicinal_plants)Лекарственные растения$()$(li)$(bold)$(l:the_world/flora#spices)Пряности$()$(li2)$(l:the_world/flora#basil)Базилик$()$(li2)$(l:the_world/flora#bay)Лавр$()$(li2)$(l:the_world/flora#cardamom)Кардамон$()$(li2)$(l:the_world/flora#cilantro)Кинза$()$(li2)$(l:the_world/flora#cumin)Тмин$()$(li2)$(l:the_world/flora#oregano)Орегано$()$(li2)$(l:the_world/flora#pimento)Пимента$()$(li2)$(l:the_world/flora#vanilla)Ваниль$()$(li)$(bold)$(l:the_world/flora#seed_ball)Шарик с семенами$()"
         },
         {
             "anchor": "intro",
             "type": "patchouli:spotlight",
-            "title": "Intro to Earth Flora",
+            "title": "Знакомство с флорой Земли",
             "item": {
                 "tag": "tfc:plants"
             },
-            "text": "Earth is an incredibly diverse planet when it comes to flora. Unlike in vanilla $(thing)Minecraft$()--Plants in $(tfg) spawn based on local $(l:the_world/climate#climate)Climate Conditions$()."
+            "text": "Флора Земли невероятно разнообразна. В отличие от ванильного $(thing)Minecraft$(), растения в $(tfg) появляются в зависимости от местных $(l:the_world/climate#climate)климатических условий$()."
         },
         {
             "type": "patchouli:text",
-            "text": "Plants may be difficult to find during some $(l:the_world/climate#seasons)Seasons$() as they go through cycles of flowering and laying dormant, or changing color as the local temperature changes.$(br2)Colorful flowers can typically be crushed in a $(l:craftsmanship/quern)Quern$() for $(thing)Dye$(). While some plants can be used for making $(l:the_world/flora#medicinal_plants)medicine$() or $(l:the_world/flora#spices)meals$()."
+            "text": "В некоторые $(l:the_world/climate#seasons)времена года$() растения бывает трудно найти: они то цветут, то впадают в спячку или меняют цвет вместе с температурой.$(br2)Яркие цветы обычно можно размолоть в $(l:craftsmanship/quern)жёрнове$() и получить $(thing)краситель$(). А некоторые растения годятся для $(l:the_world/flora#medicinal_plants)лекарств$() или $(l:the_world/flora#spices)блюд$()."
         },
         {
             "type": "patchouli:multiblock",
@@ -36,7 +36,7 @@
                     "X": "tfc:plant/anthurium"
                 }
             },
-            "name": "Standard",
+            "name": "Обычные",
             "anchor": "standard_plants",
             "text": "Обычные растения похожи на маленькие цветы. Они растут на траве, земле и пашне.",
             "enable_visualize": false
@@ -56,7 +56,7 @@
                     "X": "tfc:plant/sagebrush"
                 }
             },
-            "name": "Dry",
+            "name": "Сухие",
             "text": "Сухие растения похожи на обычные, но могут расти на песке. Обычно они появляются только в районах с низким уровнем осадков.",
             "enable_visualize": false
         },
@@ -162,7 +162,7 @@
                 }
             },
             "name": "Высокая трава",
-            "text": "Блоки высокой травы достаточно высоки, чтобы блокировать ваше поле зрения.",
+            "text": "Высокая трава как раз настолько высокая, чтобы закрывать обзор.",
             "enable_visualize": false
         },
         {
@@ -233,8 +233,8 @@
         {
             "type": "patchouli:text",
             "anchor": "aquatic_plants",
-            "text": "Aquatic plants are restricted to either spawn in fresh or salty water. Otherwise, they grow and act much like the plants you see on the surface. Some water plants can be cooked for food.",
-            "title": "Aquatic Plants"
+            "text": "Водные растения появляются либо в пресной, либо в солёной воде. В остальном они растут и ведут себя так же, как растения на поверхности. Некоторые водные растения можно приготовить и съесть.",
+            "title": "Водные растения"
         },
         {
             "type": "patchouli:multiblock",
@@ -372,23 +372,23 @@
             "item": {
                 "tag": "tfg:medicinal_ingredients/plants"
             },
-            "title": "Medicinal Plants",
-            "text": "Many plants in $(tfg) hold medicinal value and can be used for creating phytotherapeutic medicine. You can combine these ingredients in a mixing bowl with wax, binders, and spring water to make pills. Or more advanced medications."
+            "title": "Лекарственные растения",
+            "text": "Многие растения в $(tfg) обладают лечебными свойствами, и из них можно делать фитолекарства. Смешай эти ингредиенты в миске для смешивания с воском, связующими и родниковой водой — получатся пилюли. Или лекарства посложнее."
         },
         {
-            "title": "Spices",
+            "title": "Пряности",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:foods/spice_plants"
             },
             "anchor": "spices",
-            "text": "With $(thing)Firmalife$(), there are a number of small plants you can collect and grow on your own, which have cooking properties. They can all be found in the wild, and once harvested, may be cultivated in a $(l:agriculture/greenhouse)Greenhouse$(), in which they consume 20 points of N, P, and K."
+            "text": "С $(thing)Firmalife$() появляется ряд маленьких растений с кулинарными свойствами, которые можно собирать и выращивать самому. Все они встречаются в дикой природе, а собранные можно выращивать в $(l:agriculture/greenhouse)теплице$(), где они расходуют по 20 единиц N, P и K."
         },
         {
             "type": "tfg:table",
             "strings": [
                 {
-                    "text": "Spice",
+                    "text": "Пряность",
                     "bold": true
                 },
                 {
@@ -400,7 +400,7 @@
                     "bold": true
                 },
                 {
-                    "text": "Basil"
+                    "text": "Базилик"
                 },
                 {
                     "text": "12 - 25"
@@ -409,7 +409,7 @@
                     "text": "300 - 500"
                 },
                 {
-                    "text": "Bay Laurel"
+                    "text": "Лавр благородный"
                 },
                 {
                     "text": "8 - 14"
@@ -418,7 +418,7 @@
                     "text": "25 - 225"
                 },
                 {
-                    "text": "Cardamom"
+                    "text": "Кардамон"
                 },
                 {
                     "text": "18 - 30"
@@ -427,7 +427,7 @@
                     "text": "350 - 500"
                 },
                 {
-                    "text": "Cilantro"
+                    "text": "Кинза"
                 },
                 {
                     "text": "5 - 15"
@@ -436,7 +436,7 @@
                     "text": "0 - 150"
                 },
                 {
-                    "text": "Cumin"
+                    "text": "Тмин"
                 },
                 {
                     "text": "6 - 20"
@@ -445,7 +445,7 @@
                     "text": "50 - 250"
                 },
                 {
-                    "text": "Oregano"
+                    "text": "Орегано"
                 },
                 {
                     "text": "5 - 13"
@@ -454,7 +454,7 @@
                     "text": "50 - 150"
                 },
                 {
-                    "text": "Pimento"
+                    "text": "Пимента"
                 },
                 {
                     "text": "15 - 30"
@@ -463,7 +463,7 @@
                     "text": "200 - 450"
                 },
                 {
-                    "text": "Vanilla"
+                    "text": "Ваниль"
                 },
                 {
                     "text": "18 - 30"
@@ -473,7 +473,7 @@
                 }
             ],
             "text": "",
-            "title": "Wild Spice Ranges",
+            "title": "Где растут дикие пряности",
             "legend": [],
             "columns": 2,
             "first_column_width": 80,
@@ -502,7 +502,7 @@
                     "X": "firmalife:plant/basil[stage=1]"
                 }
             },
-            "name": "Basil",
+            "name": "Базилик",
             "anchor": "basil",
             "text": "$(thing)Дикий базилик$() растёт при температуре от 12 до 25 °C и осадках 300–500 мм.",
             "enable_visualize": false
@@ -522,7 +522,7 @@
                     "X": "firmalife:plant/bay_laurel[stage=1]"
                 }
             },
-            "name": "Bay Laurel",
+            "name": "Лавр благородный",
             "anchor": "bay",
             "text": "$(thing)Дикий лавровый лист$() растёт при температуре от 8 до 14 °C и осадках 25–225 мм.",
             "enable_visualize": false
@@ -542,7 +542,7 @@
                     "X": "firmalife:plant/cardamom[stage=1]"
                 }
             },
-            "name": "Cardamom",
+            "name": "Кардамон",
             "anchor": "cardamom",
             "text": "$(thing)Дикий кардамон$() растёт при температуре от 18 до 30 °C и осадках 350–500 мм.",
             "enable_visualize": false
@@ -562,7 +562,7 @@
                     "X": "firmalife:plant/cilantro[stage=1]"
                 }
             },
-            "name": "Cilantro",
+            "name": "Кинза",
             "anchor": "cilantro",
             "text": "$(thing)Дикий кориандр$() растёт при температуре от 5 до 15 °C и осадках 0–150 мм.",
             "enable_visualize": false
@@ -582,7 +582,7 @@
                     "X": "firmalife:plant/cumin[stage=1]"
                 }
             },
-            "name": "Cumin",
+            "name": "Тмин",
             "anchor": "cumin",
             "text": "$(thing)Дикий тмин$() растёт при температуре от 6 до 20 °C и осадках 50–250 мм.",
             "enable_visualize": false
@@ -602,7 +602,7 @@
                     "X": "firmalife:plant/oregano[stage=1]"
                 }
             },
-            "name": "Oregano",
+            "name": "Орегано",
             "anchor": "oregano",
             "text": "$(thing)Дикий орегано$() растёт при температуре от 5 до 13 °C и осадках 50–150 мм.",
             "enable_visualize": false
@@ -622,9 +622,9 @@
                     "X": "firmalife:plant/pimento[stage=1]"
                 }
             },
-            "name": "Pimento",
+            "name": "Пимента",
             "anchor": "pimento",
-            "text": "$(thing)Дикий душистый перец$() растёт при температуре от 15 до 30 °C и осадках 200–450 мм.",
+            "text": "$(thing)Дикая пимента$() растёт при температуре от 15 до 30 °C и осадках 200–450 мм.",
             "enable_visualize": false
         },
         {
@@ -642,7 +642,7 @@
                     "X": "firmalife:plant/vanilla[stage=1]"
                 }
             },
-            "name": "Vanilla",
+            "name": "Ваниль",
             "anchor": "vanilla",
             "text": "$(thing)Дикая ваниль$() растёт при температуре от 18 до 30 °C и осадках 200–500 мм.",
             "enable_visualize": false
@@ -651,7 +651,7 @@
             "type": "patchouli:crafting",
             "anchor": "seed_ball",
             "recipe": "firmalife:crafting/seed_ball",
-            "text": "$(item)Семенные шары$() можно использовать для посадки разных типов травы. Это особенно полезно после очистки базы под строительство. Для рецепта семенного шара требуется $(item)Компост$() и 4 $(thing)Семени$()."
+            "text": "$(item)Шариками с семенами$() можно засевать участки разными видами травы. Это особенно удобно после расчистки места под стройку. Для шарика с семенами нужны $(item)компост$() и 4 $(thing)семени$()."
         },
         {
             "type": "patchouli:multiblock",
@@ -668,7 +668,7 @@
                     "X": "firmalife:plant/butterfly_grass"
                 }
             },
-            "name": "Butterfly Grass",
+            "name": "Бабочковая трава",
             "anchor": "butterfly_grass",
             "text": "Бабочковая трава.",
             "enable_visualize": false

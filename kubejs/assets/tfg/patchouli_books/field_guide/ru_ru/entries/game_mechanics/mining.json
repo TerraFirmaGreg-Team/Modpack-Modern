@@ -1,5 +1,5 @@
 {
-    "name": "Mining & Collapses",
+    "name": "Добыча и обвалы",
     "icon": "tfc:textures/item/metal/pickaxe/wrought_iron.png",
     "category": "tfg:game_mechanics",
     "priority": true,
@@ -9,26 +9,26 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:game_mechanics/mining#tools)Tools$()$(li)$(bold)$(l:game_mechanics/mining#collapses)Collapses$()$(li2)$(l:game_mechanics/mining#gravity)Gravity$()$(li)$(bold)$(l:game_mechanics/mining#supports)Support Beams$()$(li2)$(l:game_mechanics/mining#higher_tiers)Higher Tier Supports$()$(li)$(bold)$(l:game_mechanics/mining#explosives)Explosives$()$(li)$(bold)$(l:game_mechanics/mining#processing)Ore Processing$()"
+            "text": "$(li)$(bold)$(l:game_mechanics/mining#tools)Инструменты$()$(li)$(bold)$(l:game_mechanics/mining#collapses)Обвалы$()$(li2)$(l:game_mechanics/mining#gravity)Гравитация$()$(li)$(bold)$(l:game_mechanics/mining#supports)Опоры$()$(li2)$(l:game_mechanics/mining#higher_tiers)Опоры высших уровней$()$(li)$(bold)$(l:game_mechanics/mining#explosives)Взрывчатка$()$(li)$(bold)$(l:game_mechanics/mining#processing)Переработка руды$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introduction",
-            "text": "Once you have $(l:craftsmanship/metallurgy)located$() an ore vein you can begin excavating it for resources. However, there are some differences from base Mincraft to be aware of when mining. Such as $(l:game_mechanics/mining#collapses)Collapses$(), $(l:game_mechanics/mining#supports)Supports$(), $(l:game_mechanics/hazards)Hazardous Materials$(), and $(l:game_mechanics/mining#processing)Processing$()."
+            "title": "Введение",
+            "text": "Когда рудная жила $(l:craftsmanship/metallurgy)найдена$(), можно начинать её разрабатывать. Но в добыче есть отличия от обычного Minecraft, о которых стоит знать: $(l:game_mechanics/mining#collapses)обвалы$(), $(l:game_mechanics/mining#supports)опоры$(), $(l:game_mechanics/hazards)опасные материалы$() и $(l:game_mechanics/mining#processing)переработка$()."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "tools",
-            "title": "Tools",
+            "title": "Инструменты",
             "item": "tag:tfc:pickaxes,tag:forge:tools/mining_hammers",
-            "text": "Before starting, you should prepare the right equipment for the job. You will need a $(thing)pickaxe$() or $(thing)mining hammer$() to mine ores. A mining hammer has an advantage of breaking a 3x3 area of blocks at once.$(br2)A regular $(thing)hammer$() can also break stone type blocks, but will not drop ores. It can still be useful for $(l:craftsmanship/anvils#raw_rock)extracting$() raw stone, however."
+            "text": "Перед началом подготовь подходящее снаряжение. Для добычи руды нужна $(thing)кирка$() или $(thing)шахтёрский молот$(). Шахтёрский молот выгоден тем, что ломает сразу область 3x3.$(br2)Обычный $(thing)молот$() тоже ломает каменные блоки, но руда с него не выпадает. Зато он пригодится для $(l:craftsmanship/anvils#raw_rock)извлечения$() необработанного камня."
         },
         {
             "type": "patchouli:text",
             "anchor": "collapses",
-            "text": "In $(tfg), raw rock is unstable and susceptible to $(thing)Collapsing$(). Many rock blocks, including $(thing)Raw Rock$(), $(thing)Ores$(), and $(thing)Spikes$() can all rain down on your head under the right circumstances.$(br2)$(thing)Support Beams$() can be used to prevent collapses from occurring.$(br)When $(thing)Ore$() blocks collapse, they will degrade into cobblestone.",
-            "title": "Collapses"
+            "text": "В $(tfg) необработанная порода неустойчива и может $(thing)обрушиться$(). Многие каменные блоки — $(thing)необработанная порода$(), $(thing)руды$() и $(thing)сталактиты$() — при определённых условиях могут посыпаться тебе на голову.$(br2)Чтобы предотвратить обвалы, используют $(thing)опоры$().$(br)Обрушившиеся блоки $(thing)руды$() превращаются в булыжник.",
+            "title": "Обвалы"
         },
         {
             "type": "patchouli:text",
@@ -37,19 +37,19 @@
         {
             "type": "patchouli:text",
             "anchor": "gravity",
-            "title": "Gravity",
-            "text": "Dirt, grass, clay, gravel, cobblestone, and sand are also affected by gravity. However, unlike vanilla gravity blocks, these blocks fall down slopes, and cannot be stacked more than one high without supporting blocks around. $(l:craftsmanship/panning)Ore Deposits$() also landslide, but do not degrade in quality."
+            "title": "Гравитация",
+            "text": "Земля, трава, глина, гравий, булыжник и песок тоже подвержены гравитации. Но в отличие от ванильных сыпучих блоков они скатываются по склонам и не держатся друг на друге выше одного блока без опоры вокруг. $(l:craftsmanship/panning)Месторождения руды$() тоже осыпаются, но в качестве не теряют."
         },
         {
             "type": "patchouli:spotlight",
             "item": "tag:tfc:support_beams",
             "anchor": "supports",
-            "title": "Support Beams",
-            "text": "$(thing)Support Beams$() can be crafted from logs or stone.$(br2)Placing a $(thing)Support Beam$() on top of a block places a column up to three tall. These must have a solid block beneath them to stay upright.$(br)$(thing)Horizontal$() beams can be placed between to connect two $(thing)Vertical$() beams that are within five blocks, as in the above diagram."
+            "title": "Опоры",
+            "text": "$(thing)Опоры$() крафтятся из брёвен или камня.$(br2)$(thing)Опора$(), поставленная на блок, образует колонну высотой до трёх блоков. Под ней должен быть твёрдый блок, иначе она не устоит.$(br)Между двумя $(thing)вертикальными$() опорами на расстоянии до пяти блоков можно поставить $(thing)горизонтальные$(), как на схеме выше."
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "$(bold)TIP$(): You can use wooden vertical support beams with higher quality horizontal support beams like concrete.",
+            "text": "$(bold)СОВЕТ$(): деревянные вертикальные опоры можно сочетать с более качественными горизонтальными, например бетонными.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -245,11 +245,11 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Only $(thing)$(bold)Horizontal Support Beams$() cause nearby blocks to be $(thing)Supported$(). Any block within a $(bold)9 x 5 x 9$() area centered on a horizontal support beam is considered $(thing)Supported$().$(br2)In addition to being supported by support beams, rock can be supported simply by the virtue of having a solid block below it, such as more rock. However, it is important to note that $(thing)Non-Solid Blocks$() such as $(thing)Stairs$() and $(thing)Slabs$(), along with $(thing)Smooth Stone$(), do $(bold)not$() count as supporting."
+            "text": "$(thing)Поддерживают$() соседние блоки только $(thing)$(bold)горизонтальные опоры$(). Любой блок в области $(bold)9 x 5 x 9$() с центром на горизонтальной опоре считается $(thing)поддержанным$().$(br2)Кроме опор, породу поддерживает и просто твёрдый блок под ней, например другая порода. Но важно: $(thing)нетвёрдые блоки$() вроде $(thing)ступенек$() и $(thing)плит$(), а также $(thing)гладкий камень$() опорой $(bold)не$() считаются."
         },
         {
             "type": "patchouli:image",
-            "title": "Support Area",
+            "title": "Зона поддержки",
             "anchor": "support_3d",
             "width": 1024,
             "texture_width": 1024,
@@ -258,12 +258,12 @@
             "images": [
                 "tfg:textures/gui/field_guide/supports/support_3d.png"
             ],
-            "text": "The protection area of the support is centered on the horizontal support beam. Vertical supports make no impact.",
+            "text": "Центр зоны поддержки — горизонтальная опора. Вертикальные опоры на зону не влияют.",
             "border": false
         },
         {
             "type": "patchouli:image",
-            "title": "Block Range",
+            "title": "Радиус блока",
             "anchor": "block_range",
             "width": 1024,
             "texture_width": 1024,
@@ -272,12 +272,12 @@
             "images": [
                 "tfg:textures/gui/field_guide/supports/support_2d.png"
             ],
-            "text": "When mined, individual blocks have their own range check for triggering collapses, up to 7x7x7, shown by the red/yellow area centered on the stone.",
+            "text": "У каждого добываемого блока своя зона проверки на обвал, до 7x7x7 — она показана красно-жёлтой областью с центром на камне.",
             "border": true
         },
         {
             "type": "patchouli:image",
-            "title": "Pass Condition",
+            "title": "Условие выполнено",
             "anchor": "pass_condition",
             "width": 1024,
             "texture_width": 1024,
@@ -286,12 +286,12 @@
             "images": [
                 "tfg:textures/gui/field_guide/supports/support_2d_pass.png"
             ],
-            "text": "When mining the highlighted block, no collapse can occur because all free space (yellow area) is protected by the support (green area).",
+            "text": "При добыче выделенного блока обвала не будет: всё свободное пространство (жёлтая зона) защищено опорой (зелёная зона).",
             "border": true
         },
         {
             "type": "patchouli:image",
-            "title": "Fail Condition",
+            "title": "Условие не выполнено",
             "anchor": "fail_condition",
             "width": 1024,
             "texture_width": 1024,
@@ -300,41 +300,41 @@
             "images": [
                 "tfg:textures/gui/field_guide/supports/support_2d_fail.png"
             ],
-            "text": "However, when there are unsupported blocks outside the support area, mining the highlighted block may cause a collapse even though it itself is supported.",
+            "text": "А вот если за пределами зоны поддержки есть неподдержанные блоки, добыча выделенного блока может вызвать обвал, хотя сам он поддержан.",
             "border": true
         },
         {
             "type": "patchouli:text",
-            "text": "In addition to basic $(thing)Wooden and stone Support Beams$(), $(tfg_short) also adds higher tiers of support beams, including $(thing)Concrete Support Beams$(), $(thing)Steel Support Beams$(), and $(thing)Reinforced Concrete Support Beams$(). The highest tier of supports holds an area of $(bold)33 x 13 x 33$() blocks centered on the horizontal support beam!$(br)Support area can be viewed in the support beams tooltip.",
-            "title": "Higher Tiers",
+            "text": "Кроме простых $(thing)деревянных и каменных опор$(), в $(tfg_short) есть опоры более высоких уровней: $(thing)бетонные$(), $(thing)стальные$() и $(thing)железобетонные$() опоры. Опоры высшего уровня держат область $(bold)33 x 13 x 33$() блока с центром на горизонтальной опоре!$(br)Зону поддержки можно посмотреть в подсказке к опоре.",
+            "title": "Высшие уровни",
             "anchor": "higher_tiers"
         },
         {
             "type": "patchouli:text",
             "anchor": "support_tips",
-            "text": "Finally, it is important to know that $(l:craftsmanship/chisel)Chiseling$() has the potential to cause collapses, just as easily as mining does, when it is done on any $(thing)Raw Rock$() that has potential to cause a nearby collapse.$(br2)If you are still struggling with collapses, consider watching this $(l:https://youtu.be/1KgwEexxGNI)Guide$().",
-            "title": "Tips"
+            "text": "Наконец, важно знать: работа $(l:craftsmanship/chisel)зубилом$() может вызвать обвал так же легко, как и добыча, если ты обрабатываешь $(thing)необработанную породу$(), способную обрушить что-то рядом.$(br2)Если с обвалами всё ещё беда, посмотри это $(l:https://youtu.be/1KgwEexxGNI)руководство$().",
+            "title": "Советы"
         },
         {
             "type": "patchouli:spotlight",
             "title": "Взрывчатка",
             "anchor": "explosives",
             "item": "tfc:powderkeg,minecraft:tnt,gtceu:powderbarrel,gtceu:dynamite",
-            "text": "There are multiple forms of explosives in $(tfg_short) for various purposes.$(li)$(bold)TNT$(): Medium sized explosive.$(li)$(bold)Dynamite$(): Throwable, low-power explosive.$(li)$(bold)Powderbarrel$(): Large explosive.$(li)$(bold)Powderkeg$(): Extremely powerful explosive at full strength. Scales with the quantity of stored gunpowder."
+            "text": "В $(tfg_short) есть несколько видов взрывчатки для разных задач.$(li)$(bold)Динамитная шашка (TNT)$(): взрывчатка средней силы.$(li)$(bold)Динамит$(): метательная взрывчатка малой мощности.$(li)$(bold)Пороховая бочка$(): мощная взрывчатка.$(li)$(bold)Пороховой бочонок$(): на полной мощности чрезвычайно силён. Сила растёт с количеством пороха внутри."
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Basic Ore Processing",
+            "title": "Простая переработка руды",
             "anchor": "processing",
             "item": "tag:forge:crushed_ores",
-            "text": "You should always process your ores for better yields. You can start this process very early on.$(br)The first step is to use a $(l:craftsmanship/quern)Quern$() to crush raw ore. This step can be automated in the future with improved machines such as the $(thing)Millstone$(), $(thing)Crushing Wheel$(), $(thing)Macerator$(), and $(thing)Forge Hammer$()."
+            "text": "Руду всегда стоит перерабатывать — выход будет больше. Начать можно очень рано.$(br)Первый шаг — дробить сырую руду в $(l:craftsmanship/quern)жёрнове$(). Позже этот шаг можно автоматизировать машинами получше: $(thing)мельничным жёрновом$(), $(thing)дробильными колёсами$(), $(thing)измельчителем$() и $(thing)кузнечным молотом$()."
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Purifying Dust",
+            "title": "Очистка пыли",
             "anchor": "purifying",
             "item": "tag:forge:pure_dusts",
-            "text": "To make your crushed ores melt into even more mB, first place them in a crafting grid along with a $(thing)Hammer$() to produce $(thing)Impure Dust$(). To purify the dust, throw it in water or a barrel filled with water.$(br)This final dust can yield around $(bold)4x$() the quantity of metal when melted compared to raw ore."
+            "text": "Чтобы дроблёная руда плавилась в ещё больше mB, сначала положи её в сетку крафта вместе с $(thing)молотом$() — получится $(thing)грязная пыль$(). Чтобы очистить её, брось её в воду или в бочку с водой.$(br)Такая очищенная пыль при плавке даёт примерно в $(bold)4 раза$() больше металла, чем сырая руда."
         },
         {
             "type": "patchouli:relations",

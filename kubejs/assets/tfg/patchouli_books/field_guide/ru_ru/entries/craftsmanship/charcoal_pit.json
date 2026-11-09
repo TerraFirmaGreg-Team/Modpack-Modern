@@ -1,5 +1,5 @@
 {
-    "name": "Making Charcoal",
+    "name": "Древесный уголь",
     "category": "tfg:craftsmanship",
     "icon": "minecraft:charcoal",
     "pages": [
@@ -29,7 +29,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "The charcoal pit is formed by surrounding log piles with solid, non-flammable blocks. The amount of charcoal produced is proportional to the amount of logs contained inside the log piles. To start the burning process, light one of the log piles, and then cover it. If it worked, you should see $(thing)smoke$() particles rise up from the structure.$(br)You can make a charcoal pit any size and shape so long as its fully insulated.$(br)By default the charcoal pit will take $(t:15 minutes)18 in-game hours.$()"
+            "text": "Угольная яма — это поленницы, со всех сторон обложенные твёрдыми негорючими блоками. Количество угля зависит от количества брёвен в поленницах. Чтобы начать обжиг, подожги одну из поленниц, а потом закрой её. Если всё получилось, над конструкцией поднимутся частицы $(thing)дыма$().$(br)Угольная яма может быть любого размера и формы, лишь бы была полностью изолирована.$(br)По умолчанию угольная яма горит $(t:15 минут)18 игровых часов.$()"
         },
         {
             "type": "patchouli:image",
@@ -44,7 +44,7 @@
                 "tfg:textures/gui/field_guide/charcoal_pit/charcoal_pit_3.png",
                 "tfg:textures/gui/field_guide/charcoal_pit/charcoal_pit_4.png"
             ],
-            "text": "$(bold)Tutorial Slideshow:$() Creating a 2x2x2 charcoal pit.",
+            "text": "$(bold)Обучающее слайд-шоу:$() строим угольную яму 2x2x2.",
             "border": true
         },
         {
@@ -205,13 +205,13 @@
         {
             "type": "patchouli:text",
             "anchor": "charcoal_pile",
-            "text": "After the charcoal pit burns out and stops smoking, you will be left with $(thing)Charcoal piles$(). The charcoal pile contains up to 8 layers of $(thing)Charcoal$(). Dig it with a shovel to obtain the charcoal items. Charcoal piles can be added to or placed with $(item)$(k:key.use)$().$(br2)$(bold)TIP:$() Do not cover your charcoal pit with a dense material like cobblestone, or it may fall and destroy your charcoal when completed."
+            "text": "Когда яма прогорит и перестанет дымить, останутся $(thing)кучки древесного угля$(). В такой кучке до 8 слоёв $(thing)древесного угля$(). Раскапывай её лопатой, чтобы получить уголь. Кучки угля можно ставить и пополнять через $(item)$(k:key.use)$().$(br2)$(bold)СОВЕТ:$() не накрывай угольную яму плотным материалом вроде булыжника, иначе он может обвалиться и уничтожить уголь, когда обжиг закончится."
         },
         {
             "type": "patchouli:text",
             "anchor": "coke_oven",
-            "title": "Coke Oven",
-            "text": "The $(thing)Coke Oven$() is a multiblock that can automatically convert logs into charcoal and coal into $(item)Coke$() while producing $(thing)Creosote$(). This structure becomes available when you first produce $(l:craftsmanship/bloomery)Wrought Iron$() and it is recommended to make one as soon as possible. Coke ovens are a massive quality of life upgrade for charcoal production, and both coke and creosote will be necessary for progression."
+            "title": "Коксовая печь",
+            "text": "$(thing)Коксовая печь$() — многоблочная структура, которая автоматически превращает брёвна в древесный уголь, а уголь — в $(item)кокс$(), попутно выделяя $(thing)креозот$(). Она становится доступна, как только ты впервые получишь $(l:craftsmanship/bloomery)кованое железо$(), и строить её советуем как можно скорее. Коксовая печь сильно упрощает производство угля, а кокс и креозот понадобятся для прогрессии."
         },
         {
             "type": "patchouli:multiblock",
@@ -241,13 +241,13 @@
                     "C": "gtceu:coke_oven[facing=north]"
                 }
             },
-            "text": "An example coke oven with three hatches, suitable for item input, item output, and fluid output.",
+            "text": "Пример коксовой печи с тремя люками: для входа предметов, выхода предметов и выхода жидкости.",
             "enable_visualize": true
         },
         {
             "type": "patchouli:text",
-            "title": "Coke Oven Tips",
-            "text": "$(li)Coke ovens can have up to 4 hatches, replacing any coke oven brick.$(li)Coke ovens must be hollow in the center.$(li)The coke oven input hatch may get clogged with the output item. To avoid this, have an item pipe facing the input hatch with its flow direction set. You can use a hopper or chute to push into that pipe.$(li)Crates are able to hold logs, unlike chests.$(li)Save all your creosote!"
+            "title": "Советы по коксовой печи",
+            "text": "$(li)У коксовой печи может быть до 4 люков вместо любых коксовых кирпичей.$(li)Внутри коксовая печь должна быть пустой.$(li)Входной люк печи может забиться готовым продуктом. Чтобы этого избежать, поставь трубу для предметов, направленную в люк, с заданным направлением потока. Подавать в эту трубу можно воронкой или желобом.$(li)В ящики, в отличие от сундуков, можно класть брёвна.$(li)Сохраняй весь креозот!"
         },
         {
             "type": "patchouli:relations",

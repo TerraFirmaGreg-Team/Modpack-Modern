@@ -1,28 +1,28 @@
 {
-    "name": "Quern",
+    "name": "Жёрнов",
     "category": "tfg:craftsmanship",
     "icon": "tfc:quern",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "The $(thing)Quern$() is a device for grinding items. It can crush raw ores for $(l:game_mechanics/mining#processing)processing$(), as well as make powders, $(thing)dyes$(), and some other items. It is assembled from a $(thing)Base$() and $(thing)Handstone$().$(br)Querns can be automated by supplying $(thing)Mechanical Power$() to their top face at <32RPM."
+            "text": "$(thing)Жёрнов$() — устройство для помола. Он дробит сырую руду для $(l:game_mechanics/mining#processing)переработки$(), а также делает порошки, $(thing)красители$() и некоторые другие предметы. Собирается из $(thing)нижней$() и $(thing)верхней части жёрнова$().$(br)Жёрнов можно автоматизировать, подав $(thing)механическую энергию$() на его верхнюю сторону при <32 RPM."
         },
         {
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/quern",
-            "text": "The base of the quern can be crafted with three $(t:#forge:smooth_stone)$(6)smooth stone$() and three of any other $(t:#forge:stone)$(6)stone$() blocks.$(br2)Raw stone blocks can be acquired via $(l:craftsmanship/anvils#raw_rock)extraction$(), and smooth blocks with the $(l:craftsmanship/chisel)chisel$()."
+            "text": "Основание жёрнова крафтится из трёх блоков $(t:#forge:smooth_stone)$(6)гладкого камня$() и трёх любых других $(t:#forge:stone)$(6)каменных$() блоков.$(br2)Блоки необработанного камня добываются $(l:craftsmanship/anvils#raw_rock)извлечением$(), а гладкие — $(l:craftsmanship/chisel)зубилом$()."
         },
         {
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/handstone",
-            "text": "Для работы жернова необходим $(thing)Ручной камень$()."
+            "text": "Для работы жёрнова нужна $(thing)верхняя часть жёрнова$()."
         },
         {
             "type": "patchouli:image",
             "images": [
                 "tfc:textures/gui/book/tutorial/quern_empty.png"
             ],
-            "text": "Наведите на верхнюю часть блока жернова и $(item)$(k:key.use)$(), чтобы поставить ручной камень.",
+            "text": "Наведи курсор на верх основания жёрнова и нажми $(item)$(k:key.use)$(), чтобы поставить верхнюю часть жёрнова.",
             "border": true
         },
         {
@@ -30,7 +30,7 @@
             "images": [
                 "tfc:textures/gui/book/tutorial/quern_add_item.png"
             ],
-            "text": "Используйте $(item)$(k:key.use)$() на верхней части ручного камня, чтобы добавить предметы.",
+            "text": "Нажми $(item)$(k:key.use)$() по верху верхней части жёрнова, чтобы положить предметы.",
             "border": true
         },
         {
@@ -38,7 +38,7 @@
             "images": [
                 "tfc:textures/gui/book/tutorial/quern_handle.png"
             ],
-            "text": "Используйте $(item)$(k:key.use)$() на ручке, чтобы вращать ручной камень.",
+            "text": "Нажми $(item)$(k:key.use)$() по ручке, чтобы вращать верхнюю часть жёрнова.",
             "border": true
         },
         {
@@ -46,31 +46,31 @@
             "images": [
                 "tfc:textures/gui/book/tutorial/quern_result.png"
             ],
-            "text": "Продукция должна появиться на основании жернова. $(item)$(k:key.use)$() в любом месте основания, чтобы забрать её.",
+            "text": "Результат появится на основании жёрнова. Нажми $(item)$(k:key.use)$() в любом месте основания, чтобы забрать его.",
             "border": true
         },
         {
             "type": "tfg:quern_recipe",
             "recipe": "tfg:quern/copper_crushed_ore_from_normal_raw_ore",
-            "text": "$(l:game_mechanics/mining#processing)Ores$() can be crushed to obtain more metal.",
-            "title": "Crushed Ore"
+            "text": "$(l:game_mechanics/mining#processing)Руду$() можно дробить, чтобы получить больше металла.",
+            "title": "Дроблёная руда"
         },
         {
             "type": "tfg:quern_recipe",
             "recipe": "tfg:quern/sulfur",
-            "text": "$(l:mechanics/dye)Краситель$() можно получить из различных цветов.",
-            "title": "Powders"
+            "text": "На жёрнове из пыли делают различные $(thing)порошки$(), например $(thing)серу$(). $(thing)Самоцветы$() тоже можно перемолоть в порошок.",
+            "title": "Порошки"
         },
         {
             "type": "tfg:quern_recipe",
             "recipe": "tfc:quern/red_dye",
-            "text": "$(thing)Dye$() can be obtained from various flowers.",
-            "title": "Dyes"
+            "text": "$(thing)Красители$() можно получить из разных цветов.",
+            "title": "Красители"
         },
         {
             "type": "tfg:quern_recipe",
             "recipe": "tfc:quern/barley_grain",
-            "text": "$(thing)Мука$() также доступна из жернова."
+            "text": "$(thing)Урожай$() можно обработать ножом или на жёрнове, чтобы получить $(thing)зерно$(), которое затем можно перемолоть в $(thing)муку$()."
         },
         {
             "type": "patchouli:relations",

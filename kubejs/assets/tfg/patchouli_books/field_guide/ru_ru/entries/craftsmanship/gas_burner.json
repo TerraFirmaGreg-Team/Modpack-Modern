@@ -1,13 +1,13 @@
 {
-    "name": "Gas Burner",
+    "name": "Газовая горелка",
     "category": "tfg:craftsmanship",
     "icon": "tfg:gas_burner",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Gas Burner",
-            "text": "A $(thing)Gas Burner$() is a device which can burn fluids and gases like $(thing)Oil$(), $(l:cooking/alcohol)Alcohol$(), and $(thing)Petroluem Fuels$() to generate $(l:game_mechanics/heating)Heat$().$(br)Unlike other heat sources, the maximum Temperature of the burner can be set using $(l:craftsmanship/gas_burner#redstone)Redstone$(). This allows for more precise control over $(l:cooking/cooking_methods)Cooking$() and $(l:craftsmanship/crucible)Smelting$().$(br)The gas burner does not increase in temperature from a $(l:craftsmanship/charcoal_forge#bellows)Bellows'$() air supply."
+            "title": "Газовая горелка",
+            "text": "$(thing)Газовая горелка$() — устройство, которое сжигает жидкости и газы вроде $(thing)нефти$(), $(l:cooking/alcohol)алкоголя$() и $(thing)нефтяного топлива$(), выделяя $(l:game_mechanics/heating)тепло$().$(br)В отличие от других источников тепла, максимальную температуру горелки можно задать $(l:craftsmanship/gas_burner#redstone)редстоуном$(). Это даёт более точный контроль над $(l:cooking/cooking_methods)готовкой$() и $(l:craftsmanship/crucible)плавкой$().$(br)Воздух от $(l:craftsmanship/charcoal_forge#bellows)мехов$() температуру газовой горелки не повышает."
         },
         {
             "type": "patchouli:multiblock",
@@ -24,25 +24,25 @@
                     "X": "tfg:gas_burner[lit=true]"
                 }
             },
-            "name": "Gas Burner",
-            "text": "$(thing)Gas Burners$() will indicate their max temp level through a meter on one face.",
+            "name": "Газовая горелка",
+            "text": "$(thing)Газовые горелки$() показывают уровень максимальной температуры шкалой на одной из сторон.",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
             "anchor": "redstone",
-            "title": "Redstone Control",
-            "text": "This device has many functions that can be controlled with $(bold)$(c)Redstone$():$(li)Supplying a signal strength of $(3)15$() will $(italic)ignite$() the burner.$(li)Removing all redstone signals will $(italic)extinguish$() the burner.$(li)The $(italic)maximum temperature$() of the burner can be set by supplying redstone with signals between $(3)3-14$().$(li)Comparator output will read the current $(italic)fuel level$()."
+            "title": "Управление редстоуном",
+            "text": "У этого устройства много функций, которыми можно управлять $(bold)$(c)редстоуном$():$(li)Сигнал силой $(3)15$() $(italic)зажигает$() горелку.$(li)Если убрать все сигналы редстоуна, горелка $(italic)погаснет$().$(li)$(italic)Максимальную температуру$() горелки задают сигналом силой $(3)3–14$().$(li)Компаратор показывает текущий $(italic)уровень топлива$()."
         },
         {
             "type": "patchouli:text",
             "anchor": "functions",
-            "title": "Functions",
-            "text": "Gas Burners can be supplied automatically using $(thing)Fluid Pipes$(), or manually with $(item)$(k:key.use)$() while holding a container of fluid.$(br)Inside their interface will show:$(li)The heat level, with a bar indicating maximum set temperature.$(li)A flame progress bar which displays the time left, and fuel burn temp when hovered over.$(li)Fuel tank with bucket in/out slots."
+            "title": "Функции",
+            "text": "Газовые горелки можно заправлять автоматически по $(thing)трубам для жидкостей$() или вручную через $(item)$(k:key.use)$() с ёмкостью жидкости в руке.$(br)В интерфейсе показаны:$(li)уровень нагрева и полоса максимальной заданной температуры;$(li)полоса пламени с оставшимся временем, а при наведении — температура горения топлива;$(li)бак топлива со слотами для вёдер на вход и выход."
         },
         {
             "type": "patchouli:text",
-            "text": "Burners have many useful applications. You can use them for any device which can be supplied with heat from the bottom, such as $(l:craftsmanship/crucible)Crucibles$(), $(l:cooking/cooking_methods#grill)Grills$(), $(l:cooking/cooking_methods#pot)Pots$(), and $(l:cooking/cooking_methods#top_oven)Ovens$(), as well as any Create mechanical machines that need a heat source."
+            "text": "У горелок много применений. Их можно ставить под любое устройство, которое греется снизу: $(l:craftsmanship/crucible)тигли$(), $(l:cooking/cooking_methods#grill)грили$(), $(l:cooking/cooking_methods#pot)горшки$() и $(l:cooking/cooking_methods#top_oven)печи$(), а также любые механические машины Create, которым нужен источник тепла."
         },
         {
             "type": "patchouli:multiblock",
@@ -64,7 +64,7 @@
                 }
             },
             "name": "",
-            "text": "$(thing)Gas Burner$() with a crucible",
+            "text": "$(thing)Газовая горелка$() с тиглем",
             "enable_visualize": false
         },
         {
@@ -140,7 +140,7 @@
                 }
             ],
             "name": "",
-            "text": "$(thing)Gas Burner$() with cooking appliances.",
+            "text": "$(thing)Газовая горелка$() с кухонной утварью.",
             "enable_visualize": false
         },
         {
@@ -220,7 +220,7 @@
                 }
             ],
             "name": "",
-            "text": "$(thing)Gas Burner$() with mechanical machines.",
+            "text": "$(thing)Газовая горелка$() с механическими машинами.",
             "enable_visualize": false
         },
         {

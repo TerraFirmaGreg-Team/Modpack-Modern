@@ -1,19 +1,19 @@
 {
-    "name": "Sewing Table",
+    "name": "Швейный стол",
     "category": "tfg:craftsmanship",
     "icon": "tfc:wood/sewing_table/oak",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "The $(thing)Sewing Table$() is used to produce banner patterns, smithing templates, and other cloth items. It requires $(t:#tfc:sewing_light_cloth)$(6)Light Cloth$(), $(t:#tfc:sewing_dark_cloth)$(6)Dark Cloth$(), $(t:#forge:string)$(6)String$(), as well as a $(item)Needle$().$(br)A needle for sewing can be made from a bone. An indestructable needle can be made later on out of stainless steel."
+            "text": "$(thing)Швейный стол$() нужен для узоров флагов, кузнечных шаблонов и других тканевых предметов. Ему нужны $(t:#tfc:sewing_light_cloth)$(6)светлая ткань$(), $(t:#tfc:sewing_dark_cloth)$(6)тёмная ткань$(), $(t:#forge:string)$(6)нити$() и $(item)игла$().$(br)Иглу для шитья можно сделать из кости. Позже можно сделать неразрушимую иглу из нержавеющей стали."
         },
         {
             "type": "patchouli:text",
-            "text": "The sewing table's inventory is similar to that of a crafting table. If you ever make a mistake, you can simply exit the inventory, and your items will be returned to you. There is a recipe book available in the GUI. Selecting the book opens a menu where you can select a recipe. This places small indicators of what steps to perform on the working surface."
+            "text": "Инвентарь швейного стола похож на верстак. Если ошибся, просто выйди из интерфейса — предметы вернутся. В интерфейсе есть книга рецептов. Если выбрать её, откроется меню, где можно выбрать рецепт. Тогда на рабочей поверхности появятся маленькие подсказки, что делать."
         },
         {
             "type": "patchouli:image",
-            "title": "Sewing Screen",
+            "title": "Экран шитья",
             "anchor": "sewing_screen",
             "width": 1024,
             "texture_width": 1024,
@@ -23,21 +23,21 @@
                 "tfg:textures/gui/field_guide/sewing_preview.png",
                 "tfg:textures/gui/field_guide/sewing_table.png"
             ],
-            "text": "Recipe preview and filled recipe.",
+            "text": "Превью рецепта и заполненный рецепт.",
             "border": true
         },
         {
             "type": "patchouli:text",
-            "text": "The slots on the left are for the string and the needle. The two bottom slots can hold any combination of dark and light cloth. The slot on the right will show the result when it is ready to be taken. Taking the result from the result slot completes the craft, and uses the items."
+            "text": "Слоты слева — для нити и иглы. В два нижних слота можно класть любую комбинацию тёмной и светлой ткани. В слоте справа появится результат, когда его можно будет забрать. Забрав результат, ты завершаешь крафт и тратишь предметы."
         },
         {
             "type": "patchouli:text",
-            "text": "Each cloth item allows placing 8 squares of that material on the sewing surface. Similarly, each string item allows placing 16 stitches. When you have selected a recipe, just use the buttons on the top right of the screen to place squares and stitch them together as shown by the guide. Want to remove stitches? Use the red 'X' button to get rid of squares."
+            "text": "Каждая единица ткани позволяет положить на швейную поверхность 8 квадратов этого материала. Так же каждая нить даёт 16 стежков. Выбрав рецепт, просто используй кнопки справа вверху, чтобы класть квадраты и сшивать их, как показывает подсказка. Хочешь убрать стежки? Красная кнопка «X» убирает квадраты."
         },
         {
             "type": "patchouli:crafting",
             "anchor": "banner_loom",
-            "title": "Banner Loom",
+            "title": "Ткацкий станок для баннеров",
             "recipe": "tfc:crafting/vanilla/loom",
             "text": "Ткацкий станок для создания вещей с узорами на баннерах можно создать для работы с узорами на баннерах."
         },
@@ -45,8 +45,8 @@
             "type": "patchouli:spotlight",
             "item": "tag:minecraft:trim_templates",
             "anchor": "armor_trim",
-            "title": "Armor Trims",
-            "text": "Armor trims can be applied to any $(t:#minecraft:trimmable_armor)$(6)Trimmable Armor$() by sewing a $(item)Smithing Template$(). Combine it with a $(t:#minecraft:trim_materials)$(6)Trim Material$() (like $(thing)Exquisite Gems$() or $(thing)Jewlery Metal$()) and the armor on a $(item)Smithing Table$()."
+            "title": "Отделка брони",
+            "text": "Отделку брони можно нанести на любую $(t:#minecraft:trimmable_armor)$(6)отделываемую броню$(), сшив $(item)кузнечный шаблон$(). Объедини его с $(t:#minecraft:trim_materials)$(6)материалом отделки$() (например, $(thing)изысканными самоцветами$() или $(thing)ювелирным металлом$()) и бронёй на $(item)кузнечном столе$()."
         },
         {
             "type": "patchouli:relations",

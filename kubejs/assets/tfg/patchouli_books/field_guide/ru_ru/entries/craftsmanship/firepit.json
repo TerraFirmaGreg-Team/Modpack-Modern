@@ -1,133 +1,133 @@
 {
-  "name": "Ямы с огнём",
-  "category": "tfg:craftsmanship",
-  "icon": "tfc:firepit",
-  "pages": [
-    {
-      "type": "patchouli:text",
-      "anchor": "firestarter",
-      "text": "$(thing)Fire$() is an important technological advancement. In order to create fire, you will need a $(thing)Firestarter$(). In order to use, simply hold $(item)$(k:key.use)$() down on the ground. After a few moments, smoke, and then fire will be created. It may take a couple tries to light successfully."
-    },
-    {
-      "type": "patchouli:crafting",
-      "recipe": "tfc:crafting/firestarter",
-      "text": "Crafting a firestarter can be done with two sticks. Firestarters can be used for any task that requires lighting, such as igniting a candle or starting a forge."
-    },
-    {
-      "type": "patchouli:text",
-      "text": "With a firestarter, you can light a $(thing)Firepit$(). To make one, you will need one $(thing)log$(), three $(thing)sticks$(), and optionally up to five pieces of $(thing)kindling$(). Kindling can be items such as paper products, straw, or fallen leaves, and will increase the chance of successfully creating a firepit by 10 percent per item used. Throw ($(item)$(k:key.drop)$()) all the items on the ground, on the same block. Then use the firestarter on the block with the items floating above it.",
-      "title": "Firepit"
-    },
-    {
-      "type": "patchouli:multiblock",
-      "multiblock": {
-        "pattern": [
-          [
-            "X"
-          ],
-          [
-            "0"
-          ]
-        ],
-        "mapping": {
-          "X": "tfc:firepit[lit=true]"
-        }
-      },
-      "name": "Fire!",
-      "text": "If you were successful, a firepit will be created.",
-      "enable_visualize": false
-    },
-    {
-      "type": "patchouli:text",
-      "text": "Using the firepit will now open the firepit screen. On the left are four $(thing)fuel$() slots. Logs, Peat, and Stick Bundles can all be used as firepit fuel by placing them in the topmost slot. Fuel will be consumed from the bottommost slot. There is a gauge which displays the current $(thing)Temperature$() of the firepit, and on the right, a slot for items to be $(l:game_mechanics/heating)heated$() in."
-    },
-    {
-      "type": "patchouli:image",
-      "images": [
-        "tfc:textures/gui/book/gui/firepit.png"
-      ],
-      "text": "The Firepit Screen",
-      "border": false
-    },
-    {
-      "type": "tfg:heat_recipe",
-      "recipe": "tfc:heating/torch_from_stick",
-      "text": "Many useful items can be made in a firepit by heating them. Sticks can be heated, where they will produce two $(thing)Torches$(). Note that torches will eventually burn out, and need to be re-lit by using a $(thing)Firestarter$(), or using another $(thing)Torch$() on them."
-    },
-    {
-      "type": "tfg:heat_recipe",
-      "recipe": "tfc:heating/cod",
-      "text": "The fire pit is also a good device for $(l:cooking/cooking_methods)Cooking Food$(). All raw meats can be cooked in a firepit, which will lengthen their shelf life. More on decay and preservation can be read $(l:cooking/decay)here$()."
-    },
-    {
-      "type": "patchouli:text",
-      "text": "The firepit can be extinguished at any time by using a $(thing)Shovel$() on it.$(br2)A firepit can also have other devices added to it to extend its functionality. Using a $(thing)Wrought Iron Grill$() will convert the firepit into a $(l:cooking/cooking_methods#grill)Grill$(), and using a $(thing)Ceramic Pot$() will convert the firepit into a $(l:cooking/cooking_methods#pot)Pot$(). To remove either device, $(item)$(k:key.use)$() while holding $(item)$(k:key.sneak)$(). Be careful not to try to remove a hot grill or pot!"
-    },
-    {
-      "type": "tfg:multimultiblock",
-      "text": "A firepit, with either a grill or pot added.",
-      "multiblocks": [
+    "name": "Ямы с огнём",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:firepit",
+    "pages": [
         {
-          "pattern": [
-            [
-              "X"
-            ],
-            [
-              "0"
-            ]
-          ],
-          "mapping": {
-            "X": "tfc:firepit"
-          }
+            "type": "patchouli:text",
+            "anchor": "firestarter",
+            "text": "$(thing)Огонь$() — важный технологический шаг. Чтобы развести огонь, нужно $(thing)примитивное огниво$(). Просто зажми $(item)$(k:key.use)$(), целясь в землю. Через несколько мгновений появится дым, а затем огонь. Возможно, получится не с первой попытки."
         },
         {
-          "pattern": [
-            [
-              "X"
-            ],
-            [
-              "0"
-            ]
-          ],
-          "mapping": {
-            "X": "tfc:grill"
-          }
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/firestarter",
+            "text": "Примитивное огниво крафтится из двух палок. Им можно пользоваться везде, где нужно что-то поджечь, например свечу или кузню."
         },
         {
-          "pattern": [
-            [
-              "X"
+            "type": "patchouli:text",
+            "text": "Примитивным огнивом можно разжечь $(thing)костёр$(). Для него нужно одно $(thing)бревно$(), три $(thing)палки$() и по желанию до пяти единиц $(thing)растопки$(). Растопка — это бумажные изделия, солома или опавшие листья; каждая единица повышает шанс разжечь костёр на 10 процентов. Брось ($(item)$(k:key.drop)$()) все предметы на землю в один блок. Затем используй примитивное огниво на блоке, над которым парят предметы.",
+            "title": "Костёр"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:firepit[lit=true]"
+                }
+            },
+            "name": "Огонь!",
+            "text": "Если всё получилось, появится костёр.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Теперь при использовании костра откроется его экран. Слева четыре слота для $(thing)топлива$(). Брёвна, торф и стога палок годятся как топливо — клади их в самый верхний слот. Топливо расходуется из самого нижнего слота. Шкала показывает текущую $(thing)температуру$() костра, а справа — слот для предметов, которые нужно $(l:game_mechanics/heating)нагреть$()."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/gui/firepit.png"
             ],
-            [
-              "0"
+            "text": "Экран костра",
+            "border": false
+        },
+        {
+            "type": "tfg:heat_recipe",
+            "recipe": "tfc:heating/torch_from_stick",
+            "text": "Нагревом на костре можно сделать много полезного. Если нагреть палку, получатся два $(thing)факела$(). Учти, что факелы со временем гаснут, и их нужно заново зажигать $(thing)примитивным огнивом$() или другим $(thing)факелом$()."
+        },
+        {
+            "type": "tfg:heat_recipe",
+            "recipe": "tfc:heating/cod",
+            "text": "Костёр также хорош для $(l:cooking/cooking_methods)готовки еды$(). На нём можно приготовить любое сырое мясо, и оно дольше не испортится. Подробнее о порче и хранении можно прочитать $(l:cooking/decay)здесь$()."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Костёр можно потушить в любой момент, применив к нему $(thing)лопату$().$(br2)К костру можно добавлять другие устройства, расширяя его возможности. $(thing)Гриль из кованого железа$() превратит костёр в $(l:cooking/cooking_methods#grill)гриль$(), а $(thing)керамический горшок$() — в $(l:cooking/cooking_methods#pot)горшок$(). Чтобы снять их, нажми $(item)$(k:key.use)$(), удерживая $(item)$(k:key.sneak)$(). Не пытайся снимать горячий гриль или горшок!"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "Костёр с грилем или горшком.",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:firepit"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:grill"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:pot"
+                    }
+                }
             ]
-          ],
-          "mapping": {
-            "X": "tfc:pot"
-          }
+        },
+        {
+            "type": "patchouli:text",
+            "text": "У топлива для костра разная чистота. От неё зависит, как долго топливо горит и до какой температуры может нагреть. Самое чистое топливо — брёвна, а солома и опавшие листья не дают достаточно жара для готовки, зато в крайнем случае помогут согреться."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Читать далее",
+            "anchor": "relations",
+            "entries": [
+                "tfg:cooking/cooking_methods",
+                "tfg:cooking/decay",
+                "tfg:game_mechanics/heating"
+            ]
         }
-      ]
-    },
-    {
-      "type": "patchouli:text",
-      "text": "Firepit fuels have different levels of purity. Fuel purity effects how long a fuel burns for and what temperature it may reach. The most pure fuels are logs, while fuels like straw and fallen leaves do not get hot enough to do much cooking, but can help you keep warm in a pinch."
-    },
-    {
-      "type": "patchouli:relations",
-      "title": "Читать далее",
-      "anchor": "relations",
-      "entries": [
-        "tfg:cooking/cooking_methods",
-        "tfg:cooking/decay",
-        "tfg:game_mechanics/heating"
-      ]
+    ],
+    "read_by_default": true,
+    "sortnum": 1,
+    "extra_recipe_mappings": {
+        "tfc:firepit": 0,
+        "tfc:torch": 6,
+        "minecraft:torch": 6
     }
-  ],
-  "read_by_default": true,
-  "sortnum": 1,
-  "extra_recipe_mappings": {
-    "tfc:firepit": 0,
-    "tfc:torch": 6,
-    "minecraft:torch": 6
-  }
 }

@@ -1,16 +1,16 @@
 {
-    "name": "Bloomery",
+    "name": "Сыродутный горн",
     "category": "tfg:craftsmanship",
     "icon": "tfc:bloomery",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "The $(thing)Bloomery$() is a device used to smelt $(thing)Iron Ore$() into $(thing)Iron Blooms$() which can be worked into $(thing)Wrought Iron$(). Some common iron ores are $(item)Hematite$(), $(item)Limonite$(), and $(item)Magnetite$(). These ores melt into $(thing)Cast Iron$() rather than $(thing)Wrought Iron$(). All iron-bearing items melt into Cast Iron. To turn them into usable iron, the bloomery is needed. Any iron item can be used in the bloomery, including iron tools and cast iron ingots!"
+            "text": "$(thing)Сыродутный горн$() — устройство для переплавки $(thing)железной руды$() в $(thing)железные крицы$(), из которых потом выковывают $(thing)кованое железо$(). Распространённые железные руды: $(item)гематит$(), $(item)лимонит$() и $(item)магнетит$(). Они плавятся в $(thing)чугун$(), а не в $(thing)кованое железо$(). Всё, что содержит железо, плавится в чугун. Чтобы сделать из него пригодное железо, нужен сыродутный горн. В него подходит любой железный предмет, включая железные инструменты и чугунные слитки!"
         },
         {
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/bloomery",
-            "text": "The bloomery is made from 8 $(thing)Bronze Double Plates$(), which is a total of 32 bronze ingots.$(br)The bloomery will also need $(t:#tfc:bloomery_insulation)$(6)22 stone blocks$() such as stone bricks."
+            "text": "Сыродутный горн делается из 8 $(thing)двойных бронзовых пластин$(), это всего 32 бронзовых слитка.$(br)Ещё для горна нужно $(t:#tfc:bloomery_insulation)$(6)22 каменных блока$(), например каменные кирпичи."
         },
         {
             "type": "patchouli:multiblock",
@@ -47,13 +47,13 @@
                     "A": "tfc:rock/smooth/dacite"
                 }
             },
-            "name": "Bloomery Structure",
-            "text": "A full size bloomery. The bloomery block will open and close with $(item)$(k:key.use)$().",
+            "name": "Устройство сыродутного горна",
+            "text": "Полноразмерный сыродутный горн. Блок сыродутного горна открывается и закрывается по $(item)$(k:key.use)$().",
             "enable_visualize": true
         },
         {
             "type": "patchouli:text",
-            "text": "The bloomery can contain up to a maximum of 48 $(thing)Inputs$(), with 16 items per layer of the chimney; 8 charcoal and 8 iron containing items.$(br2)To add items to the bloomery, climb up to the top and throw items inside with $(item)$(k:key.drop)$(). A tower of grey ore should form.$(br2)You can only use $(item)Charcoal$() as fuel for your bloomery."
+            "text": "В сыродутный горн помещается до 48 $(thing)загружаемых предметов$(), по 16 на каждый ярус трубы: 8 древесного угля и 8 предметов с железом.$(br2)Чтобы загрузить горн, заберись наверх и бросай предметы внутрь клавишей $(item)$(k:key.drop)$(). Должна вырасти башенка серой руды.$(br2)Топливом для сыродутного горна может быть только $(item)древесный уголь$()."
         },
         {
             "type": "patchouli:image",
@@ -65,38 +65,38 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Most iron dust contains 129mB of iron, so unless you are using pure cast iron ingots, we recommend $(item)25 metal ore dusts$() and $(item)22 charcoal$() for a full bloomery. This will incur a loss of 57mB of iron.$(br)After filling the bloomery with a combination of $(thing)Fuel$() and $(thing)Ore$(), light the bloomery doors, and wait $(t:12.5 min)$(6)15 in-game hours$() for the bloomery to smelt. When the bloomery shuts off, it leaves behind a $(thing)Bloom$() block. This contains hot $(thing)Raw Iron Blooms$() which can be obtained by mining the $(thing)Bloom$() repeatedly with a pickaxe."
+            "text": "В большинстве железной пыли 129 mB железа, так что, если ты не используешь чистые чугунные слитки, на полный горн советуем $(item)25 порций рудной пыли$() и $(item)22 древесного угля$(). Потеряется 57 mB железа.$(br)Загрузив в горн смесь $(thing)топлива$() и $(thing)руды$(), подожги дверцу и подожди $(t:12,5 мин)$(6)15 игровых часов$(), пока всё переплавится. Когда горн погаснет, после него останется блок $(thing)сыродутного шлака$(). В нём горячие $(thing)крицы$(): добывай их, раз за разом ломая $(thing)шлак$() киркой."
         },
         {
             "type": "tfg:table",
             "anchor": "ratio_table",
             "strings": [
                 {
-                    "text": "Iron Type",
+                    "text": "Тип железа",
                     "bold": true
                 },
                 {
-                    "text": "Iron",
+                    "text": "Железо",
                     "bold": true
                 },
                 {
-                    "text": "Fuel",
+                    "text": "Топливо",
                     "bold": true
                 },
                 {
-                    "text": "Slots",
+                    "text": "Слоты",
                     "bold": true
                 },
                 {
-                    "text": "Blooms",
+                    "text": "Крицы",
                     "bold": true
                 },
                 {
-                    "text": "Waste",
+                    "text": "Потери",
                     "bold": true
                 },
                 {
-                    "text": "Cast Iron Ingots"
+                    "text": "Чугунные слитки"
                 },
                 {
                     "text": "24"
@@ -114,7 +114,7 @@
                     "text": "0мБ"
                 },
                 {
-                    "text": "129mB Ore Dust"
+                    "text": "Рудная пыль 129 mB"
                 },
                 {
                     "text": "25"
@@ -129,10 +129,10 @@
                     "text": "22"
                 },
                 {
-                    "text": "57mB"
+                    "text": "57 mB"
                 },
                 {
-                    "text": "129mB Ore Dust"
+                    "text": "Рудная пыль 129 mB"
                 },
                 {
                     "text": "19"
@@ -150,8 +150,8 @@
                     "text": "3мБ"
                 }
             ],
-            "text": "Remember that a little iron waste is not worth your time worrying about!",
-            "title": "Bloomery Ratios",
+            "text": "Помни: из-за небольших потерь железа переживать не стоит!",
+            "title": "Пропорции для сыродутного горна",
             "legend": [],
             "columns": 5,
             "first_column_width": 70,
@@ -180,27 +180,27 @@
                     "X": "tfc:bloom[layers=8]"
                 }
             },
-            "name": "Блок крицы",
-            "text": "Здоровенная $(thing)Крица$().",
+            "name": "Сыродутный шлак",
+            "text": "Крупный блок $(thing)сыродутного шлака$().",
             "enable_visualize": false
         },
         {
             "type": "tfg:anvil_recipe",
             "recipe": "tfc:anvil/refined_iron_bloom",
-            "text": "The $(thing)Raw Iron Bloom$() must be worked in a $(l:craftsmanship/anvils)Anvil$() to make $(thing)Refined Iron Bloom$(). And then that must be worked again into $(thing)Wrought Iron Ingots$().$(br)It is recommended to use $(l:craftsmanship/anvils#helve_hammer)Helve Hammers$() to automate the refining steps."
+            "text": "$(thing)Крицу$() нужно проковать на $(l:craftsmanship/anvils)наковальне$() в $(thing)кричное железо$(). А её ещё раз — в $(thing)слитки кованого железа$().$(br)Для автоматизации очистки советуем $(l:craftsmanship/anvils#helve_hammer)рычажные молоты$()."
         },
         {
             "type": "patchouli:text",
             "anchor": "tips",
-            "text": "$(li)If the bloomery finds contains more items than it can handle it will try to spit them out the front.$(li)To retrieve your items from a bloomery that is not lit, break the bloomery block.$(li)Blooms will only melt into cast iron, not wrought iron. They must be worked!",
-            "title": "Bloomery Tips"
+            "text": "$(li)Если в сыродутном горне окажется больше предметов, чем он вмещает, он попытается выплюнуть лишнее наружу через переднюю сторону.$(li)Чтобы забрать предметы из незажжённого сыродутного горна, сломай его блок.$(li)Крицы плавятся только в чугун, а не в кованое железо. Их обязательно нужно ковать!",
+            "title": "Советы по сыродутному горну"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "steam_bloomery",
-            "title": "Steam Bloomery",
+            "title": "Паровой сыродутный горн",
             "item": "tfg:steam_bloomery",
-            "text": "Available with the creation of $(item)Black Steel$() is the $(thing)Steam Bloomery$(). This structure is capable of producing blooms automatically, on top of being faster and more efficent than the traditional bloomery by using high-pressure steam."
+            "text": "С появлением $(item)чёрной стали$() становится доступен $(thing)паровой сыродутный горн$(). Эта конструкция делает крицы автоматически, да ещё и быстрее и эффективнее обычного сыродутного горна благодаря пару высокого давления."
         },
         {
             "type": "patchouli:multiblock",
@@ -241,8 +241,8 @@
                     "O": "gtceu:steam_output_bus[facing=north]"
                 }
             },
-            "name": "Structure",
-            "text": "A steam bloomery requires item input and item output buses, a steam input hatch, and three Bronze Firebox Casings.",
+            "name": "Конструкция",
+            "text": "Паровому сыродутному горну нужны входной и выходной предметные люки, входной люк пара и три бронзовых корпуса топки.",
             "enable_visualize": true
         },
         {

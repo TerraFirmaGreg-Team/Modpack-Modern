@@ -25,7 +25,7 @@
 			"type": "patchouli:text",
 			"anchor": "cassava",
 			"title": "Маниок",
-			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Увлажнение$(): 70 - 100 %$(br)$(bold)Питательное вещество$(): Азот$(br2)Маниок можно есть для получения $(thing)овощной$() питательности, хотя перед употреблением его лучше $(thing)приготовить$().$(br)"
+			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 70 - 100 %$(br)$(bold)Питательное вещество$(): Азот$(br2)Маниок можно есть для получения $(thing)овощной$() питательности, хотя перед употреблением его лучше $(thing)приготовить$().$(br)"
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -140,7 +140,7 @@
 			"type": "patchouli:text",
 			"anchor": "peanut",
 			"title": "Арахис",
-			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Увлажнение$(): 20 - 80 %$(br)$(bold)Питательное вещество$(): Калий$(br2)Арахис можно есть для получения $(thing)овощной$() и $(thing)белковой$() питательности"
+			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 20 - 80 %$(br)$(bold)Питательное вещество$(): Калий$(br2)Арахис можно есть для получения $(thing)овощной$() и $(thing)белковой$() питательности"
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -255,7 +255,7 @@
 			"type": "patchouli:text",
 			"anchor": "beans",
 			"title": "Чернитная фасоль",
-			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Увлажнение$(): 20 - 80 %$(br)$(bold)Питательное вещество$(): Калий$(br2)Чернитную фасоль можно есть для получения $(thing)овощного$() и $(thing)белкового$() рациона. Однако перед употреблением её необходимо приготовить!"
+			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 20 - 80 %$(br)$(bold)Питательное вещество$(): Калий$(br2)Чернитная фасоль даёт $(thing)овощи$() и $(thing)белки$(). Но перед едой её нужно приготовить!"
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -370,7 +370,7 @@
 			"type": "patchouli:text",
 			"anchor": "ghost_pepper",
 			"title": "Призрачный Перец",
-			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Увлажнение$(): 20 - 80 %$(br)$(bold)Питательное вещество$(): Азот$(br2)Призрачный перец можно есть для получения $(thing)овощной$() питательности. Это обычная закуска среди обитателей Бездны."
+			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 20 - 80 %$(br)$(bold)Питательное вещество$(): Азот$(br2)Призрачный перец можно есть для получения $(thing)овощной$() питательности. Это обычная закуска среди обитателей Бездны."
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -484,7 +484,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cotton",
-			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Влажность$(): 40 - 100 %$(br)$(bold)Питательное вещество$(): Азот$(br2)Хлопок — это культура высотой в два блока. Семена хлопка можно сажать на пашне, он вырастает до двух блоков и даёт $(item)Коробочку хлопка$(), которую можно переработать в $(thing)Хлопковую нить$() или $(thing)Ткань$().",
+			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 40 - 100 %$(br)$(bold)Питательное вещество$(): Азот$(br2)Хлопок — это культура высотой в два блока. Семена хлопка можно сажать на пашне, он вырастает до двух блоков и даёт $(item)Коробочку хлопка$(), которую можно переработать в $(thing)Хлопковую нить$() или $(thing)Ткань$().",
 			"title": "Хлопок"
 		},
 		{

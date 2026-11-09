@@ -1,11 +1,11 @@
 {
-    "name": "Crucible",
+    "name": "Тигель",
     "category": "tfg:craftsmanship",
     "icon": "tfc:crucible",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "A $(thing)Crucible$() is an advanced device used for the creation of $(l:craftsmanship/metallurgy#alloying)Alloys$(). It is a more precise method than using a $(l:craftsmanship/pottery#vessel)Small Vessel$() to make alloys.$(br2)To obtain a crucible, you will first need to obtain some $(l:craftsmanship/pottery#fire_clay)Fire Clay$(), which is a stronger material than clay. This fire clay can then be knapped to shape it into an $()Unfired Crucible$()."
+            "text": "$(thing)Тигель$() — продвинутое устройство для создания $(l:craftsmanship/metallurgy#alloying)сплавов$(). Это более точный способ, чем сплавлять в $(l:craftsmanship/pottery#vessel)малом сосуде$().$(br2)Чтобы получить тигель, сначала понадобится $(l:craftsmanship/pottery#fire_clay)огнеупорная глина$() — материал прочнее обычной глины. Из неё высеканием делают $()необожжённый тигель$()."
         },
         {
             "type": "tfg:knapping_recipe",
@@ -14,7 +14,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "After the crucible is knapped, it will need to be $(l:craftsmanship/pottery#vessel)Fired$(), like any piece of pottery.$(br2)In order to use the crucible, it needs a source of heat. The crucible can be heated by any heatable block below, preferably a $(l:craftsmanship/charcoal_forge)Charcoal Forge$().$(br)Importantly, crucibles transfer their heat to items much faster than forges. This can be good or bad. If low-melting-point items like $(item)Tin$() are being troublesome for working, consider sticking to the forge for heating."
+            "text": "Высеченный тигель надо $(l:craftsmanship/pottery#vessel)обжечь$(), как любую керамику.$(br2)Тиглю для работы нужен источник тепла. Его можно греть любым нагревающим блоком снизу, лучше всего $(l:craftsmanship/charcoal_forge)угольной кузней$().$(br)Важно: тигель передаёт тепло предметам гораздо быстрее кузни. Это бывает и хорошо, и плохо. Если легкоплавкие предметы вроде $(item)олова$() мешают работе, лучше грей их в кузне."
         },
         {
             "type": "patchouli:multiblock",
@@ -38,14 +38,14 @@
                 }
             },
             "name": "",
-            "text": "Тигель, нагреваемый угольной кузницей снизу.",
+            "text": "Тигель, нагреваемый угольной кузней снизу.",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
             "anchor": "advanced_alloying",
-            "text": "Now you are ready to use the crucible. When you interact with it, you will see the $(thing)Crucible Interface$(), shown on the next page. The top region shows the current metal content of the crucible. The first metal shown is what would be produced, if it were to be extracted right now. Other metals shown are the makeup of the current alloy in the crucible.",
-            "title": "Advanced Alloying"
+            "text": "Теперь тигель готов к работе. При взаимодействии откроется $(thing)интерфейс тигля$(), показанный на следующей странице. Вверху виден текущий состав металла в тигле. Первым указан металл, который получится, если извлечь его прямо сейчас. Остальные — это состав текущего сплава в тигле.",
+            "title": "Продвинутое сплавление"
         },
         {
             "type": "patchouli:image",
@@ -57,15 +57,15 @@
         },
         {
             "type": "patchouli:text",
-            "text": "The crucible has nine slots where items can be added to be melted, and their liquefied contents will be directly added to the crucible. Molten metal containers such as $(l:craftsmanship/pottery#mold)Molds$() can also be placed here, and they will be drained into the crucible, allowing for precise control over your alloy's content. Holding $(item)$(k:key.sneak)$() while hovering over a draining mold or vessel makes it drain faster.$(br)Molds or other fluid containers can also be placed in the output slot, and will be slowly filled with the contents of the crucible."
+            "text": "В тигле девять слотов, куда кладут предметы для плавки, и их расплав сразу попадает в тигель. Сюда же можно класть ёмкости с расплавленным металлом, например $(l:craftsmanship/pottery#mold)формы$(): они сольются в тигель, позволяя точно управлять составом сплава. Если зажать $(item)$(k:key.sneak)$() и навести курсор на сливаемую форму или сосуд, слив пойдёт быстрее.$(br)Формы и другие ёмкости можно класть и в выходной слот — они будут медленно наполняться содержимым тигля."
         },
         {
             "type": "patchouli:text",
-            "text": "The temperature indicator on the left will rise based on external sources of heat, such as a $(l:craftsmanship/charcoal_forge)Charcoal Forge$() below or heat from a $(l:craftsmanship/blast_furnace)Blast Furnace$() above. Metal can be extracted from the crucible as long as it is still molten.$(br2)The crucible will also keep its contents when broken, allowing you to transport the alloy container around if you wish."
+            "text": "Индикатор температуры слева растёт от внешних источников тепла: например, $(l:craftsmanship/charcoal_forge)угольной кузни$() снизу или жара $(l:craftsmanship/blast_furnace)доменной печи$() сверху. Металл можно извлекать из тигля, пока он ещё расплавлен.$(br2)При разрушении тигель сохраняет содержимое, так что при желании ёмкость со сплавом можно переносить."
         },
         {
             "type": "patchouli:text",
-            "text": "You will have successfully alloyed when the text at the top of the crucible says the name of your alloy.$(br)If you accidentally mix the wrong type of metal into your molten alloy, then unfortunately you have lost the whole batch. Even a small amount of foreign metal can ruin an alloy. You may also find yourself running out of room in your crucible before hitting your perfect ratio, and you may worry you have wasted the metal. Luckily, you can sacrifice some product by decanting a bit of metal to make room for more material. An alloy is only permanent when cast!"
+            "text": "Сплав получился, когда надпись вверху тигля показывает название твоего сплава.$(br)Если случайно добавить в расплав не тот металл, к сожалению, вся партия испорчена. Даже немного постороннего металла может погубить сплав. Ещё может случиться, что место в тигле кончится раньше, чем ты выйдешь на идеальную пропорцию, и покажется, что металл пропал зря. К счастью, можно пожертвовать частью продукта и слить немного металла, освободив место. Сплав становится окончательным только после отливки!"
         },
         {
             "type": "patchouli:image",
@@ -76,28 +76,28 @@
             "images": [
                 "tfg:textures/gui/field_guide/prospecting/crucible_alloying.png"
             ],
-            "text": "$(4)◼$() - Alloyed result.$(br)$(3)◼$() - List of contributing metal fractions.",
+            "text": "$(4)◼$() — итоговый сплав.$(br)$(3)◼$() — доли входящих в него металлов.",
             "border": false,
-            "title": "Molten Alloy"
+            "title": "Расплавленный сплав"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tfcchannelcasting:unfired_channel,tfcchannelcasting:channel,tfcchannelcasting:unfired_mold_table,tfcchannelcasting:mold_table",
-            "title": "Channel Casting",
+            "title": "Литьё по каналам",
             "anchor": "channel_casting",
-            "text": "You can cast from a $(thing)Crucible$() to more than one mold at a time using $(thing)Channels$() and $(thing)Mold Tables$(). Simply connect the $(thing)Mold Tables$() to the $(thing)Crucible$() using $(thing)Channels$() and $(item)$(k:key.use)$() on the $(thing)Channel$() next to the $(thing)Crucible$(). $(item)$(k:key.sneak)-$(k:key.use)$() the $(thing)Mold Table$() with a $(l:craftsmanship/pottery#mold)Mold$() to place it or remove it."
+            "text": "Из $(thing)тигля$() можно лить сразу в несколько форм с помощью $(thing)каналов$() и $(thing)литейных столов$(). Просто соедини $(thing)литейные столы$() с $(thing)тиглем$() $(thing)каналами$() и нажми $(item)$(k:key.use)$() по $(thing)каналу$() рядом с $(thing)тиглем$(). $(item)$(k:key.sneak)-$(k:key.use)$() по $(thing)литейному столу$() с $(l:craftsmanship/pottery#mold)формой$() ставит её или снимает."
         },
         {
             "type": "patchouli:multiblock",
             "multiblock_id": "tfcchannelcasting:example",
-            "name": "A casting set up",
-            "text": "Channels will evenly distribute molten metal to all connected tables. Tables will not have a chance to break the mold inside.",
+            "name": "Литейная установка",
+            "text": "Каналы поровну распределяют расплав по всем подключённым столам. На столах форма не может сломаться.",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)Using a $(l:craftsmanship/charcoal_forge#bellows)Bellows$() on a $(thing)Mold Table$() will cool the metal faster.$()$(li)Activating a $(thing)Channel$() with a redstone pulse will also start pouring the metal.$()$(li)$(thing)Mold Tables$() output a comparator signal.$(li)Metal can be directly pumped in from things like fluid pipes or a draining $(l:craftsmanship/blast_furnace)Blast Furnace$().$(li)Hoppers can extract cooled metal items from molds while leaving the mold behind.",
-            "title": "Automation"
+            "text": "$(li)Если применить $(l:craftsmanship/charcoal_forge#bellows)кузнечные меха$() к $(thing)литейному столу$(), металл остынет быстрее.$()$(li)Импульс редстоуна на $(thing)канал$() тоже запускает разлив металла.$()$(li)$(thing)Литейные столы$() выдают сигнал для компаратора.$(li)Металл можно закачивать напрямую, например через трубы для жидкостей или из сливающейся $(l:craftsmanship/blast_furnace)доменной печи$().$(li)Воронки могут забирать остывшие металлические предметы из форм, оставляя сами формы.",
+            "title": "Автоматизация"
         },
         {
             "type": "patchouli:relations",

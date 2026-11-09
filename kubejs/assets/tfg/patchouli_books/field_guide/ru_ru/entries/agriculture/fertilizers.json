@@ -21,7 +21,7 @@
             "title": "Компост",
             "item": "tfc:compost",
             "link_recipes": false,
-            "text": "Компост производится $(l:agriculture/composting)Компостерами$().$(br)$(li)$(b)Азот: 40$()$(li)$(6)Фосфор: 20$()$(li)$(d)Калий: 40$()"
+            "text": "Компост производится в $(l:agriculture/composting)компостницах$().$(br)$(li)$(b)Азот: 40$()$(li)$(6)Фосфор: 20$()$(li)$(d)Калий: 40$()"
         },
         {
             "type": "patchouli:spotlight",

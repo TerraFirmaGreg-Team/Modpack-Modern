@@ -1,90 +1,90 @@
 {
-    "name": "Tack & Carts",
+    "name": "Упряжь и повозки",
     "category": "tfg:logistics",
     "icon": "sns:metal/horseshoe/steel",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:logistics/tack#saddle)Saddle$()$(li)$(bold)$(l:logistics/tack#armor)Horse Armor$()$(li)$(bold)$(l:logistics/tack#horseshoes)Horseshoes$()$(li)$(bold)$(l:logistics/tack#supply_cart)Supply Cart$()$(li)$(bold)$(l:logistics/tack#plow)Plow$()$(li)$(bold)$(l:logistics/tack#animal_cart)Animal Cart$()$(li)$(bold)$(l:logistics/tack#paving_cart)Paving Cart$()",
+            "text": "$(li)$(bold)$(l:logistics/tack#saddle)Седло$()$(li)$(bold)$(l:logistics/tack#armor)Конская броня$()$(li)$(bold)$(l:logistics/tack#horseshoes)Подковы$()$(li)$(bold)$(l:logistics/tack#supply_cart)Грузовая повозка$()$(li)$(bold)$(l:logistics/tack#plow)Плуг$()$(li)$(bold)$(l:logistics/tack#animal_cart)Повозка для животных$()$(li)$(bold)$(l:logistics/tack#paving_cart)Тележка для мощения$()",
             "title": "Каталог",
             "anchor": "index"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "saddle",
-            "title": "Saddle",
+            "title": "Седло",
             "item": "minecraft:saddle",
-            "text": "A $(item)Saddle$() can be equipped on any adult $(l:agriculture/animal_husbandry#equines)Equine$() or $(l:agriculture/animal_husbandry#camelides)Camel$() when their maturity is at least above 15%. Saddles are crafted from $(l:agriculture/leather_making)Leather$() and allow you to ride suitable animals to direct their movements."
+            "text": "$(item)Седло$() можно надеть на любое взрослое животное из $(l:agriculture/animal_husbandry#equines)семейства лошадиных$() или на $(l:agriculture/animal_husbandry#camelides)верблюда$(), если его зрелость выше 15%. Сёдла крафтятся из $(l:agriculture/leather_making)кожи$() и позволяют ездить на подходящих животных и управлять ими."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "armor",
-            "title": "Horse Armor",
+            "title": "Конская броня",
             "item": "minecraft:leather_horse_armor,tfc:metal/horse_armor/bismuth_bronze,tfc:metal/horse_armor/black_bronze,tfc:metal/horse_armor/bronze,tfc:metal/horse_armor/copper,tfc:metal/horse_armor/wrought_iron,tfc:metal/horse_armor/steel,tfc:metal/horse_armor/black_steel,tfc:metal/horse_armor/red_steel,tfc:metal/horse_armor/blue_steel",
-            "text": "$(item)Horse Armor$() can be equipped on any adult $(l:agriculture/animal_husbandry#equines)Horse$() when their maturity is at least above 15%. Horse armor can be made from $(l:agriculture/leather_making)Leather$() and $(l:craftsmanship/metallurgy)Metal$() and provide extra protection to your mount. Leather armor may also be dyed."
+            "text": "$(item)Конскую броню$() можно надеть на любую взрослую $(l:agriculture/animal_husbandry#equines)лошадь$(), если её зрелость выше 15%. Конская броня делается из $(l:agriculture/leather_making)кожи$() и $(l:craftsmanship/metallurgy)металла$() и дополнительно защищает скакуна. Кожаную броню можно покрасить."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "horseshoes",
-            "title": "Horseshoes",
+            "title": "Подковы",
             "item": "sns:metal/horseshoes/steel,sns:metal/horseshoes/black_steel,sns:metal/horseshoes/blue_steel,sns:metal/horseshoes/red_steel",
-            "text": "$(item)Horseshoes$() are smithed individually from types of steel and then combined into sets. When equiped on any $(l:agriculture/animal_husbandry#equines)Equine$() or $(l:agriculture/animal_husbandry#equines)Camilide Mammal$() they provide great benefits to their stats which can be viewed in the item description.$(br)$(bold)TIP:$() It's a good idea to tie up your mount properly when using a higher tier horseshoes."
+            "text": "$(item)Подковы$() куют по одной из разных сталей, а потом собирают в комплекты. Если надеть их на любое животное из $(l:agriculture/animal_husbandry#equines)лошадиных$() или $(l:agriculture/animal_husbandry#equines)мозоленогих$(), они сильно улучшают характеристики — их можно посмотреть в описании предмета.$(br)$(bold)СОВЕТ:$() с подковами высоких уровней скакуна лучше как следует привязывать."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "supply_cart",
             "title": "Грузовая тележка",
             "item": "tag:tfcastikorcarts:supply_cart",
-            "text": "$(item)Supply Carts$() can be attached to ridden animals with $(item)$(k:key.astikorcarts.desc)$() or pulled manually. Supply carts can hold a large amount of items in their storage, accessed with $(item)$(k:key.sneak)-$(k:key.use)$(). However, too many items, or a few very heavy items will cause your mount to slow down considerably."
+            "text": "$(item)Грузовые повозки$() можно прицепить к животному, на котором едешь, клавишей $(item)$(k:key.astikorcarts.desc)$() или тянуть вручную. В них помещается много предметов — открываются через $(item)$(k:key.sneak)-$(k:key.use)$(). Но слишком много предметов или несколько очень тяжёлых сильно замедлят скакуна."
         },
         {
             "type": "patchouli:entity",
             "entity": "tfcastikorcarts:supply_cart/oak",
             "scale": 0.4,
             "name": " ",
-            "text": "The supply cart will physically display the first few items in its inventory."
+            "text": "Грузовая повозка наглядно показывает первые несколько предметов из своего инвентаря."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "plow",
             "title": "Плуг",
             "item": "tag:tfcastikorcarts:plow",
-            "text": "A $(item)Plow$() can be attached to ridden animals with $(item)$(k:key.astikorcarts.desc)$() or pulled manually. Plows can hold 3 tools, accessed with $(item)$(k:key.sneak)-$(k:key.use)$(). The plow will attempt to use these tools on blocks below them when engaged with $(item)$(k:key.use)$(). Meaning that they can use $(thing)Hoes and Scythes$() to till soil, use $(thing)Shovels and Spades$() to pave paths, and even use $(thing)Axes$() to strip logs."
+            "text": "$(item)Плуг$() можно прицепить к животному, на котором едешь, клавишей $(item)$(k:key.astikorcarts.desc)$() или тянуть вручную. В плуге помещается 3 инструмента — открываются через $(item)$(k:key.sneak)-$(k:key.use)$(). Если включить плуг через $(item)$(k:key.use)$(), он будет применять эти инструменты к блокам под собой. То есть $(thing)мотыгами и косами$() вспахивать землю, $(thing)лопатами и заступами$() прокладывать тропы и даже $(thing)топорами$() ошкуривать брёвна."
         },
         {
             "type": "patchouli:entity",
             "entity": "tfcastikorcarts:plow/oak",
             "scale": 0.4,
             "name": " ",
-            "text": "The plow will display its tools. It will be engaged when its arms are lowered."
+            "text": "Плуг показывает свои инструменты. Он включён, когда его рукояти опущены."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "animal_cart",
             "title": "Скотовоз",
             "item": "tag:tfcastikorcarts:animal_cart",
-            "text": "An $(item)Animal Cart$() can be attached to ridden animals with $(item)$(k:key.astikorcarts.desc)$() or pulled manually. Animal carts can hold up to $(thing)2 animals$(), which automatically enter the cart when run over with it."
+            "text": "$(item)Повозку для животных$() можно прицепить к животному, на котором едешь, клавишей $(item)$(k:key.astikorcarts.desc)$() или тянуть вручную. В неё помещается до $(thing)2 животных$(), которые сами залезают внутрь, если на них наехать."
         },
         {
             "type": "patchouli:entity",
             "entity": "tfcastikorcarts:animal_cart/oak",
             "scale": 0.4,
             "name": " ",
-            "text": "The animal cart can even hold other players."
+            "text": "В повозке для животных можно возить даже других игроков."
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Paving Cart",
+            "title": "Тележка для мощения",
             "anchor": "paving_cart",
             "item": "tfg:rnr_plow",
-            "text": "The $(thing)Paving Cart$() is a specialized cart used for laying down road surfaces quickly and efficiently. Read more about them in the entry for $(l:logistics/roads#paving_cart)Roads$()."
+            "text": "$(thing)Тележка для мощения$() — специальная тележка для быстрой и удобной укладки дорожных покрытий. Подробнее — в статье $(l:logistics/roads#paving_cart)Дороги$()."
         },
         {
             "type": "patchouli:entity",
             "entity": "tfg:rnr_plow",
             "scale": 0.4,
-            "name": "Paving Cart",
-            "text": "The paving cart will be engaged when its blades are lowered."
+            "name": "Тележка для мощения",
+            "text": "Тележка для мощения включена, когда её ножи опущены."
         },
         {
             "type": "patchouli:relations",

@@ -87,11 +87,11 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "At this point in the game, the easiest solution is a $(item)Vanadium Rotor$(), but you could also go for the $(item)René-41 Rotor$() or the $(item)SiC-SiC Rotor$().$(br2)$(bold)Tip:$() The Heat Pump will still work even if your doors are open, but otherwise needs an enclosed area of non-air blocks to work.$(br2)$(italic)If the Turbine's $(thing)Power$() is under 100%, you will gain no benefits or drawbacks.$()"
+			"text": "На этом этапе игры проще всего поставить $(item)ванадиевый ротор турбины$(), но подойдут и $(item)ротор из Рене-41$() или $(item)ротор из SiC-SiC$().$(br2)$(bold)Совет:$() тепловой насос работает, даже если двери открыты, но в остальном ему нужно замкнутое пространство из твёрдых блоков.$(br2)$(italic)Если $(thing)мощность$() турбины ниже 100%, никаких бонусов или штрафов не будет.$()"
 		},
 		{
 			"type": "tfg:multimultiblock",
-			"text": "You can expand the Heat Pump up to 10 Heat Pipes if needed!",
+			"text": "При необходимости тепловой насос можно расширить до 10 тепловых труб!",
 			"name": " ",
 			"enable_visualize": true,
 			"multiblocks": [

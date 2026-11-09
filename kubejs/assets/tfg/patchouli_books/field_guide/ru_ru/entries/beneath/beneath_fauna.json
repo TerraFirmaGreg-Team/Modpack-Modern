@@ -1,225 +1,225 @@
 {
-	"name": "Фауна бездны",
-	"category": "tfg:beneath",
-	"icon": "tfc:textures/item/food/pork.png",
-	"pages": [
-		{
-			"type": "patchouli:text",
-			"anchor": "index",
-			"text": "Жизнь существует и глубоко под землёй! На самом деле её в Бездне довольно много, некоторая дружелюбная, некоторая не очень...\n$(br2)Эти записи расскажут об интересных существах которых ты можешь найти в Бездне. $(br)"
-		},
-		{
-			"type": "patchouli:text",
-			"text": "$(li)$(bold)Пассивные$()$(li2)$(l:beneath/beneath_fauna#axolotl)Аксолотль$()$(li2)$(l:beneath/beneath_fauna#frog)Лягушка$()$(li2)$(l:beneath/beneath_fauna#mammutilation)Мамонтродье$()$(li2)$(l:beneath/beneath_fauna#red_elk)Красный лось$()$(li2)$(l:beneath/beneath_fauna#zombie_horse)Зомби Лошадь$()$(li)$(bold)$(l:agriculture/jellies)Джелли$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)Ледяные$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)Природные$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)Светящиеся$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)Родниковая$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)Лавовые$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)Биотитовые$()$(li2)$(l:beneath/beneath_fauna#latex_jellie)Латексные$()$(br)$(o)(Продолжение на следующей странице...)$()"
-		},
-		{
-			"type": "patchouli:text",
-			"text": "$(li)$(bold)Враждебные$()$(li2)$(l:beneath/beneath_fauna#crocodile)Крокодил$()$(li2)$(l:beneath/beneath_fauna#piglin)Пиглин$()$(li2)$(l:beneath/beneath_fauna#phantom)Фантом$()$(li2)$(l:beneath/beneath_fauna#kaolin_klayze)Каолинитовый Клейз$()$(li2)$(l:beneath/beneath_fauna#graphite_glayze)Графитовый Глейз$()$(li2)$(l:beneath/beneath_fauna#cliff_hanger)Скалистый подвесник$()$(li2)$(l:beneath/beneath_fauna#leaf_hanger)Лиственный подвесник$()$(li2)$(l:beneath/beneath_fauna#endermen)Эндермен$()$(li2)$(l:beneath/beneath_fauna#spectre)Спектр$()$(li2)$(l:beneath/beneath_fauna#wicked)Озорник$()$(li2)$(l:beneath/beneath_fauna#ghoul)Гуль$()$(li2)$(l:beneath/beneath_fauna#bewereager)Волколак$()"
-		},
-		{
-			"type": "patchouli:entity",
-			"entity": "minecraft:axolotl",
-			"scale": 0.5,
-			"name": "Аксолотль",
-			"anchor": "axolotl",
-			"text": "$(thing)Аксолотлей$() можно найти в верхних и средних слоях, обычно купающихся в небольших источниках воды"
-		},
-		{
-			"type": "patchouli:entity",
-			"entity": "tfc:frog",
-			"scale": 1,
-			"name": "Лягушка",
-			"anchor": "frog",
-			"text": "$(thing)Лягушек$() можно найти в верхних и средних слоях. Их можно приручить или съесть"
-		},
-		{
-			"type": "patchouli:entity",
-			"entity": "species:mammutilation",
-			"scale": 0.5,
-			"name": "Mammutilation",
-			"anchor": "mammutilation",
-			"text": "$(thing)Mammutilations$() are undead Mammoths. You can put them out of their misery for some $(item)Wool$()."
-		},
-		{
-			"type": "patchouli:entity",
-			"entity": "beneath:red_elk",
-			"scale": 0.7,
-			"name": "Red Elk",
-			"anchor": "red_elk",
-			"text": "$(thing)Red Elk$() are found near the bottom, usually swimming around in lava. They can be slain for $(item)Lavaproof Hides$()."
-		},
-		{
-			"type": "patchouli:entity",
-			"entity": "minecraft:zombie_horse",
-			"scale": 0.7,
-			"name": "Zombie Horse",
-			"anchor": "zombie_horse",
-			"text": "$(thing)Zombie Horses$() can't be tamed or ridden, but they can pull an $(item)Animal Crank$()."
-		},
-		{
-			"type": "patchouli:entity",
-			"entity": "jellies:ice",
-			"scale": 0.6,
-			"name": "Ice Jellie",
-			"anchor": "ice_jellie",
-			"text": "$(thing)Ледяной$() $(l:agriculture/jellies)Джелли$() можно найти в биоме $(thing)Cоляных пещер$(). Они пассивно охлаждают всех игроков в небольшом радиусе."
-		},
-		{
-			"type": "patchouli:entity",
-			"entity": "jellies:plant",
-			"scale": 0.6,
-			"name": "Plant Jellie",
-			"anchor": "plant_jellie",
-			"text": "$(thing)Plant$() $(l:agriculture/jellies)Jellies$() are found in the $(thing)Muggy Bog$() and $(thing)Thorny Grove$() biomes. Their slime balls can be used as $(thing)Green$() compost."
-		},
-		{
-			"type": "patchouli:entity",
-			"entity": "jellies:glowberry",
-			"scale": 0.6,
-			"name": "Glowberry Jellie",
-			"anchor": "glowberry_jellie",
-			"text": "$(thing)Светящийся$() $(l:agriculture/jellies)Джелли$() можно найти в биоме $(thing)Пышных лощин$(). Их слизь можно переработать в $(thing)Сахар$()"
-		},
-		{
-			"type": "patchouli:entity",
-			"entity": "jellies:spring",
-			"scale": 0.6,
-			"name": "Spring Jellie",
-			"anchor": "spring_jellie",
-			"text": "$(thing)Spring$() $(l:agriculture/jellies)Jellies$() are found in the $(thing)Geothermal Springs$() biome. Their slime balls are a renewable source of $(item)Spring Water$()."
-		},
-		{
-			"type": "patchouli:entity",
-			"entity": "jellies:biotite",
-			"scale": 0.6,
-			"name": "Biotite Jellie",
-			"anchor": "biotite_jellie",
-			"text": "$(thing)Biotite$() $(l:agriculture/jellies)Jellies$() are found in the bottom layer. Their slime balls are a renewable source of $(item)Potassium$(), $(item)Magnesium$(), and $(item)Fluorine$()."
-		},
-		{
-			"type": "patchouli:entity",
-			"entity": "jellies:lava",
-			"scale": 0.6,
-			"name": "Lava Jellie",
-			"anchor": "lava_jellie",
-			"text": "$(thing)Lava$() $(l:agriculture/jellies)Jellies$() are found in the bottom layer. They heat up nearby players, which may be useful if you live somewhere cold."
-		},
-		{
-			"type": "patchouli:entity",
-			"entity": "jellies:milk",
-			"scale": 0.6,
-			"name": "Milk Jellie",
-			"anchor": "milk_jellie",
-			"text": "$(thing)Milk$() $(l:agriculture/jellies)Jellies$() can only be bred from a $(thing)Plant Jellie$() and $(thing)Lava Jellie$(). Their slime balls are a source of $(item)Dairy$()."
-		},
-		{
-			"type": "patchouli:entity",
-			"entity": "minecraft:piglin",
-			"scale": 0.9,
-			"name": "Пиглины",
-			"anchor": "piglin",
-			"text": "You can find Piglins in almost every biome throughout the Beneath. They can be $(l:beneath/beneath_mechanics#piglins)traded with$() like in vanilla."
-		},
-		{
-			"type": "patchouli:entity",
-			"entity": "tfc:crocodile",
-			"scale": 0.5,
-			"name": "Crocodile",
-			"anchor": "crocodile",
-			"text": "$(thing)Crocodiles$() can be found in the top and middle layers, waiting in ambush!"
-		},
-		{
-			"type": "patchouli:entity",
-			"entity": "minecraft:phantom",
-			"scale": 0.4,
-			"name": "Phantom",
-			"anchor": "phantom",
-			"text": "$(thing)Phantoms$() naturally spawn in the middle and bottom layers, regardless of how much sleep you're getting. They can be turned into $(l:beneath/beneath_mechanics#clothes)Clothing$()."
-		},
-		{
-			"type": "patchouli:entity",
-			"entity": "primitive_creatures:tfc",
-			"scale": 0.8,
-			"name": "Kaolin Klayze",
-			"anchor": "kaolin_klayze",
-			"text": "$(thing)Kaolin Klayzes$() can be found in the $(thing)Lush Hollow$() biome, guarding the $(item)Kaolin$()!"
-		},
-		{
-			"type": "patchouli:entity",
-			"entity": "primitive_creatures:golem_2",
-			"scale": 1,
-			"name": "Graphite Glayze",
-			"anchor": "graphite_glayze",
-			"text": "$(thing)Графитовых Глейзов$() можно найти на нижнем слое бездны. Будь осторожен, ведь он 100% скинет тебя в лаву!"
-		},
-		{
-			"type": "patchouli:entity",
-			"entity": "species:cliff_hanger",
-			"scale": 0.7,
-			"name": "Cliff Hanger",
-			"anchor": "cliff_hanger",
-			"text": "$(thing)Cliff Hangers$() can be found on various ceilings, hooking players who walk below them. Hit them with a ranged attack to make them let go!"
-		},
-		{
-			"type": "patchouli:entity",
-			"entity": "species:leaf_hanger",
-			"scale": 0.7,
-			"name": "Leaf Hanger",
-			"anchor": "leaf_hanger",
-			"text": "$(thing)Leaf Hangers$() can be found in pools of Salt Water, hooking players who walk into their trap. Hit them to make them let go of you!"
-		},
-		{
-			"type": "patchouli:entity",
-			"entity": "endermanoverhaul:nether_wastes_enderman",
-			"scale": 1,
-			"name": "Endermen",
-			"anchor": "endermen",
-			"text": "Various species of $(thing)Endermen$() appear all over. The $(item)mushroom$() one is completely passive, while the others are all neutral."
-		},
-		{
-			"type": "patchouli:entity",
-			"entity": "species:spectre",
-			"scale": 0.7,
-			"name": "Spectres",
-			"anchor": "spectre",
-			"text": "$(thing)Spectres$() are ghosts of adventurers past, and come in three varieties. They are a source of $(item)Feathers$()."
-		},
-		{
-			"type": "patchouli:entity",
-			"entity": "species:wicked",
-			"scale": 0.9,
-			"name": "Wicked",
-			"anchor": "wicked",
-			"text": "The $(thing)Wicked$() is a ghost that can posess nearby mobs to give them buffs! If no mob is nearby, they use a ranged attack. They drop wax."
-		},
-		{
-			"type": "patchouli:entity",
-			"entity": "species:ghoul",
-			"scale": 0.7,
-			"name": "Ghoul",
-			"anchor": "ghoul",
-			"text": "$(thing)Ghouls$() are blind monsters that use echolocation to find prey. They are neutral unless you're within their 'scan' radius!"
-		},
-		{
-			"type": "patchouli:entity",
-			"entity": "species:bewereager",
-			"scale": 0.8,
-			"name": "Bewereager",
-			"anchor": "bewereager",
-			"text": "The $(thing)Bewereager$() is an aggressive monster that can also jump up to you! It buffs itself and attacks in short bursts."
-		},
-		{
-			"type": "patchouli:relations",
-			"title": "Читать далее",
-			"anchor": "relations",
-			"entries": [
-				"tfg:the_world/wild_animals",
-				"tfg:agriculture/animal_husbandry",
-				"tfg:agriculture/jellies",
-				"tfg:the_moon/moon_fauna",
-				"tfg:mars/mars_fauna"
-			]
-		}
-	],
-	"read_by_default": true
+    "name": "Фауна Бездны",
+    "category": "tfg:beneath",
+    "icon": "tfc:textures/item/food/pork.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "Жизнь есть и глубоко внизу! В Бездне её довольно много: кто-то дружелюбен, кто-то — нет.$(br2)В этой статье собраны самые интересные существа, которых ты здесь встретишь.$(br)"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)Мирные$()$(li2)$(l:beneath/beneath_fauna#axolotl)Аксолотль$()$(li2)$(l:beneath/beneath_fauna#frog)Лягушка$()$(li2)$(l:beneath/beneath_fauna#mammutilation)Маммутиляция$()$(li2)$(l:beneath/beneath_fauna#red_elk)Красный лось$()$(li2)$(l:beneath/beneath_fauna#zombie_horse)Лошадь-зомби$()$(li)$(bold)$(l:agriculture/jellies)Джелли$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)Ледяной$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)Растительный$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)Светоягодный$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)Родниковый$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)Лавовый$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)Биотитовый$()$(li2)$(l:beneath/beneath_fauna#milk_jellie)Молочный$()$(br)$(o)(Продолжение на следующей странице...)$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)Враждебные$()$(li2)$(l:beneath/beneath_fauna#crocodile)Крокодил$()$(li2)$(l:beneath/beneath_fauna#piglin)Пиглин$()$(li2)$(l:beneath/beneath_fauna#phantom)Фантом$()$(li2)$(l:beneath/beneath_fauna#kaolin_klayze)Каолиновый глейз$()$(li2)$(l:beneath/beneath_fauna#graphite_glayze)Графитовый глейз$()$(li2)$(l:beneath/beneath_fauna#cliff_hanger)Скальный висельник$()$(li2)$(l:beneath/beneath_fauna#leaf_hanger)Листовой висельник$()$(li2)$(l:beneath/beneath_fauna#endermen)Эндермены$()$(li2)$(l:beneath/beneath_fauna#spectre)Призрак$()$(li2)$(l:beneath/beneath_fauna#wicked)Злыдень$()$(li2)$(l:beneath/beneath_fauna#ghoul)Гуль$()$(li2)$(l:beneath/beneath_fauna#bewereager)Бешенозверь$()"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "minecraft:axolotl",
+            "scale": 0.5,
+            "name": "Аксолотль",
+            "anchor": "axolotl",
+            "text": "$(thing)Аксолотли$() водятся в верхнем и среднем слоях, обычно плавают в водоёмах."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:frog",
+            "scale": 1.0,
+            "name": "Лягушка",
+            "anchor": "frog",
+            "text": "$(thing)Лягушки$() водятся в верхнем и среднем слоях. Их можно приручить и съесть."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "species:mammutilation",
+            "scale": 0.5,
+            "name": "Маммутиляция",
+            "anchor": "mammutilation",
+            "text": "$(thing)Маммутиляции$() — это мамонты-нежить. Избавь их от страданий и получи немного $(item)шерсти$()."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "beneath:red_elk",
+            "scale": 0.7,
+            "name": "Красный лось",
+            "anchor": "red_elk",
+            "text": "$(thing)Красные лоси$() живут у самого дна и обычно плавают в лаве. С них можно добыть $(item)огнеупорные шкуры$()."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "minecraft:zombie_horse",
+            "scale": 0.7,
+            "name": "Лошадь-зомби",
+            "anchor": "zombie_horse",
+            "text": "$(thing)Лошадей-зомби$() нельзя приручить или оседлать, зато они могут крутить $(item)скотный привод$()."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "jellies:ice",
+            "scale": 0.6,
+            "name": "Ледяной джелли",
+            "anchor": "ice_jellie",
+            "text": "$(thing)Ледяные$() $(l:agriculture/jellies)джелли$() встречаются в биоме $(thing)Соляные пещеры$(). Они охлаждают игроков рядом."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "jellies:plant",
+            "scale": 0.6,
+            "name": "Растительный джелли",
+            "anchor": "plant_jellie",
+            "text": "$(thing)Растительные$() $(l:agriculture/jellies)джелли$() встречаются в биомах $(thing)Знойная трясина$() и $(thing)Терновая роща$(). Их шарики слизи годятся как $(thing)зелёный$() компост."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "jellies:glowberry",
+            "scale": 0.6,
+            "name": "Светоягодный джелли",
+            "anchor": "glowberry_jellie",
+            "text": "$(thing)Светоягодные$() $(l:agriculture/jellies)джелли$() встречаются в биоме $(thing)Пышная лощина$(). Их шарики слизи можно выварить в $(item)сахар$()."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "jellies:spring",
+            "scale": 0.6,
+            "name": "Родниковый джелли",
+            "anchor": "spring_jellie",
+            "text": "$(thing)Родниковые$() $(l:agriculture/jellies)джелли$() встречаются в биоме $(thing)Геотермальные источники$(). Их шарики слизи — возобновляемый источник $(item)родниковой воды$()."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "jellies:biotite",
+            "scale": 0.6,
+            "name": "Биотитовый джелли",
+            "anchor": "biotite_jellie",
+            "text": "$(thing)Биотитовые$() $(l:agriculture/jellies)джелли$() встречаются в нижнем слое. Их шарики слизи — возобновляемый источник $(item)калия$(), $(item)магния$() и $(item)фтора$()."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "jellies:lava",
+            "scale": 0.6,
+            "name": "Лавовый джелли",
+            "anchor": "lava_jellie",
+            "text": "$(thing)Лавовые$() $(l:agriculture/jellies)джелли$() встречаются в нижнем слое. Они согревают игроков рядом — полезно, если живёшь где-то в холоде."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "jellies:milk",
+            "scale": 0.6,
+            "name": "Молочный джелли",
+            "anchor": "milk_jellie",
+            "text": "$(thing)Молочных$() $(l:agriculture/jellies)джелли$() можно получить только скрестив $(thing)растительного$() и $(thing)лавового джелли$(). Их шарики слизи — источник $(item)молочных продуктов$()."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "minecraft:piglin",
+            "scale": 0.9,
+            "name": "Пиглин",
+            "anchor": "piglin",
+            "text": "Пиглинов можно встретить почти в любом биоме Бездны. С ними можно $(l:beneath/beneath_mechanics#piglins)торговать$(), как в ванилле."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:crocodile",
+            "scale": 0.5,
+            "name": "Крокодил",
+            "anchor": "crocodile",
+            "text": "$(thing)Крокодилы$() водятся в верхнем и среднем слоях и поджидают в засаде!"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "minecraft:phantom",
+            "scale": 0.4,
+            "name": "Фантом",
+            "anchor": "phantom",
+            "text": "$(thing)Фантомы$() сами появляются в среднем и нижнем слоях, сколько бы ты ни спал. Из них можно сделать $(l:beneath/beneath_mechanics#clothes)одежду$()."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "primitive_creatures:tfc",
+            "scale": 0.8,
+            "name": "Каолиновый глейз",
+            "anchor": "kaolin_klayze",
+            "text": "$(thing)Каолиновые глейзы$() водятся в биоме $(thing)Пышная лощина$() и охраняют $(item)каолин$()!"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "primitive_creatures:golem_2",
+            "scale": 1.0,
+            "name": "Графитовый глейз",
+            "anchor": "graphite_glayze",
+            "text": "$(thing)Графитовые глейзы$() водятся в нижних слоях. Смотри, чтобы они не столкнули тебя в лаву!"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "species:cliff_hanger",
+            "scale": 0.7,
+            "name": "Скальный висельник",
+            "anchor": "cliff_hanger",
+            "text": "$(thing)Скальные висельники$() сидят на потолках и цепляют игроков, проходящих под ними. Ударь их дальней атакой, чтобы они тебя отпустили!"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "species:leaf_hanger",
+            "scale": 0.7,
+            "name": "Листовой висельник",
+            "anchor": "leaf_hanger",
+            "text": "$(thing)Листовые висельники$() прячутся в озёрах солёной воды и цепляют игроков, попавших в их ловушку. Ударь их, чтобы они тебя отпустили!"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "endermanoverhaul:nether_wastes_enderman",
+            "scale": 1.0,
+            "name": "Эндермены",
+            "anchor": "endermen",
+            "text": "Разные виды $(thing)эндерменов$() встречаются повсюду. $(item)Грибной$() полностью мирный, остальные — нейтральные."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "species:spectre",
+            "scale": 0.7,
+            "name": "Призраки",
+            "anchor": "spectre",
+            "text": "$(thing)Призраки$() — духи былых искателей приключений, бывают трёх видов. С них падают $(item)перья$()."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "species:wicked",
+            "scale": 0.9,
+            "name": "Злыдень",
+            "anchor": "wicked",
+            "text": "$(thing)Злыдень$() — призрак, который вселяется в мобов рядом и даёт им усиления! Если мобов рядом нет, атакует издалека. С него падает воск."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "species:ghoul",
+            "scale": 0.7,
+            "name": "Гуль",
+            "anchor": "ghoul",
+            "text": "$(thing)Гули$() — слепые чудовища, которые ищут добычу эхолокацией. Они нейтральны, пока ты не попал в радиус их «сканирования»!"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "species:bewereager",
+            "scale": 0.8,
+            "name": "Бешенозверь",
+            "anchor": "bewereager",
+            "text": "$(thing)Бешенозверь$() — агрессивный монстр, который ещё и умеет прыгать на тебя! Он усиливает себя и атакует короткими сериями."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Дополнительно",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_world/wild_animals",
+                "tfg:agriculture/animal_husbandry",
+                "tfg:agriculture/jellies",
+                "tfg:the_moon/moon_fauna",
+                "tfg:mars/mars_fauna"
+            ]
+        }
+    ],
+    "read_by_default": true
 }

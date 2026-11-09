@@ -1,88 +1,88 @@
 {
-	"name": "Building Tools",
-	"icon": "tfg:trowel",
-	"category": "tfg:craftsmanship",
-	"pages": [
+    "name": "Строительные инструменты",
+    "icon": "tfg:trowel",
+    "category": "tfg:craftsmanship",
+    "pages": [
         {
             "type": "patchouli:text",
-            "text": "The factory can't grow on an open field! This entry lists some tools that can help you pave over the beautiful landscape and build the warehouses of your dreams.$(br2)$(bold)Tip:$() Vertical slabs getting in the way? You can toggle $(thing)Additional Placements$() by pressing $(item)$(k:key.additionalplacements.placement_toggle)$()."
+            "text": "Завод в чистом поле не вырастет! Здесь собраны инструменты, которые помогут закатать прекрасный пейзаж в бетон и построить склады твоей мечты.$(br2)$(bold)Совет:$() мешают вертикальные плиты? $(thing)Additional Placements$() переключается клавишей $(item)$(k:key.additionalplacements.placement_toggle)$()."
         },
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "title": "Contents",
-            "text": "$(li)$(bold)$(l:craftsmanship/building_tools#trowel)Trowel$()$(li)$(bold)$(l:craftsmanship/building_tools#stonecutter)Stonecutter$()$(li)$(bold)$(l:craftsmanship/building_tools#copycats)Copycats$()$(li)$(bold)$(l:craftsmanship/building_tools#framing_saw)Framing Saw$()$(li)$(bold)$(l:craftsmanship/building_tools#architects_cutter)Architect's Cutter$()$(li)$(bold)$(l:craftsmanship/building_tools#wands)Construction Wands$()$(li)$(bold)$(l:craftsmanship/building_tools#schematicannon)Schematicannon$()$(li)$(bold)$(l:craftsmanship/building_tools#terminals)GregTech Terminals$()$(li)$(bold)$(l:craftsmanship/building_tools#gadgets)Building Gadgets$()"
+            "title": "Содержание",
+            "text": "$(li)$(bold)$(l:craftsmanship/building_tools#trowel)Мастерок$()$(li)$(bold)$(l:craftsmanship/building_tools#stonecutter)Камнерез$()$(li)$(bold)$(l:craftsmanship/building_tools#copycats)Заполняемые блоки$()$(li)$(bold)$(l:craftsmanship/building_tools#framing_saw)Рамочная пила$()$(li)$(bold)$(l:craftsmanship/building_tools#architects_cutter)Резак архитектора$()$(li)$(bold)$(l:craftsmanship/building_tools#wands)Строительные жезлы$()$(li)$(bold)$(l:craftsmanship/building_tools#schematicannon)Строительная пушка$()$(li)$(bold)$(l:craftsmanship/building_tools#terminals)Терминалы GregTech$()$(li)$(bold)$(l:craftsmanship/building_tools#gadgets)Building Gadgets$()"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Trowel",
+            "title": "Мастерок",
             "item": "tfg:trowel",
-            "text": "A $(item)Trowel$() allows a builder to place random blocks from their hotbar when $(item)$(k:key.use)$() a surface.$(br)Trowels also have built-in functionality with the $(item)Roads and Roofs$() mod, meaning that they can place filler items like bricks or flagstones randomly as well.$(br)Inspired by the trowel tool from $(item)Quark$()―A mod by Vazkii."
+            "text": "$(item)Мастерок$() позволяет строителю ставить случайные блоки с хотбара при нажатии $(item)$(k:key.use)$() по поверхности.$(br)Мастерки также поддерживают мод $(item)Roads and Roofs$(), то есть могут случайно расставлять и заполнители вроде кирпичей или плитняка.$(br)Вдохновлён мастерком из $(item)Quark$() — мода от Vazkii."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "stonecutter",
             "item": "minecraft:stonecutter",
-            "title": "Customizable Blocks",
-            "text": "$(tfg_short) has a few mods dedicated to adding customizable blocks for very intricate building.$(br2)"
+            "title": "Настраиваемые блоки",
+            "text": "В $(tfg_short) есть несколько модов, добавляющих настраиваемые блоки для очень детальной стройки.$(br2)"
         },
         {
             "type": "patchouli:spotlight",
             "item": "copycats:copycat_block",
-            "title": "Copycats",
+            "title": "Заполняемые блоки",
             "anchor": "copycats",
-            "text": "$(bold)Create: Copycats+$() adds many blocks that can be $(item)$(k:key.use)$() with another block to copy its appearance. They can be made with a $(thing)Stonecutter$().$(br2)You can check out its blocks by searching for $(6)@copycats$() in $(emi)."
+            "text": "$(bold)Create: Copycats+$() добавляет много блоков, по которым можно нажать $(item)$(k:key.use)$() другим блоком, чтобы скопировать его вид. Делаются на $(thing)камнерезе$().$(br2)Посмотреть их можно, введя $(6)@copycats$() в поиске $(emi)."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "framing_saw",
             "item": "framedblocks:framing_saw,framedblocks:powered_framing_saw",
-            "text": "$(bold)Framed Blocks$() adds many blocks that can be $(item)$(k:key.use)$() with another block to copy its appearance. Mostly made with a $(thing)Framing Saw$().$(br2)You can check out its blocks by searching for $(6)@framedblocks$() in $(emi)."
+            "text": "$(bold)Framed Blocks$() добавляет много блоков, по которым можно нажать $(item)$(k:key.use)$() другим блоком, чтобы скопировать его вид. В основном делаются $(thing)рамочной пилой$().$(br2)Посмотреть их можно, введя $(6)@framedblocks$() в поиске $(emi)."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "architects_cutter",
             "item": "domum_ornamentum:architectscutter",
-            "text": "$(bold)Domum Ornamentum$() adds blocks that can copy the appearance of others and even combine multiple blocks together. Made with an $(thing)Architect's Cutter$().$(br2)You can check out its blocks by searching for $(6)@domum_ornamentum$() in $(emi)."
+            "text": "$(bold)Domum Ornamentum$() добавляет блоки, которые копируют вид других и даже совмещают несколько блоков сразу. Делаются на $(thing)резаке архитектора$().$(br2)Посмотреть их можно, введя $(6)@domum_ornamentum$() в поиске $(emi)."
         },
         {
             "type": "patchouli:spotlight",
             "item": "constructionwand:stone_wand,constructionwand:iron_wand,constructionwand:diamond_wand,constructionwand:infinity_wand",
-            "title": "Construction Wands",
+            "title": "Строительные жезлы",
             "anchor": "wands",
-            "text": "Construction Wands are an easy way to place many blocks at the same time. Simply right-click a block while holding the wand and it will place more of that block all at once, making it great for floors, walls, and so on.$(br2)Press $(item)U$() on the construction wand to bring up a page detailing its instructions."
+            "text": "Строительные жезлы — простой способ ставить много блоков за раз. Просто кликни ПКМ по блоку с жезлом в руке, и он поставит ещё таких блоков разом — идеально для полов, стен и так далее.$(br2)Нажми $(item)U$() на строительном жезле, чтобы открыть страницу с инструкцией."
         },
         {
             "type": "patchouli:spotlight",
             "item": "constructionwand:core_destruction,constructionwand:core_angel",
-            "title": "Wand Upgrades",
-            "text": "There are also some wand upgrades to provide even more functionality.$(br2)Wands have durability but can be repaired with $(item)Repair Kits$()."
+            "title": "Улучшения жезлов",
+            "text": "Есть и улучшения для жезлов, добавляющие ещё больше возможностей.$(br2)У жезлов есть прочность, но их можно чинить $(item)ремкомплектами$()."
         },
         {
             "type": "patchouli:spotlight",
             "item": "create:schematicannon,create:schematic_table",
             "anchor": "schematicannon",
-            "text": "The $(item)Schematicannon$() is an automatic building machine that will place blocks according to a given schematic. You can use it to transfer buildings made in a creative world, or to copy and paste segments of your structures."
+            "text": "$(item)Строительная пушка$() — автоматическая строительная машина, которая ставит блоки по заданной схеме. С её помощью можно перенести постройки из творческого мира или копировать и вставлять части своих сооружений."
         },
         {
             "type": "patchouli:spotlight",
             "item": "gtceu:terminal,gtceuterminal:schematic_interface,gtceuterminal:dismantler",
-            "title": "GregTech Terminals",
+            "title": "Терминалы GregTech",
             "anchor": "terminals",
-            "text": "The $(item)Terminal$() will automatically build a $(thing)GregTech multiblock$() using items from your inventory.$(br2)The $(item)Schematic Interface$() lets you copy and paste $(thing)multiblocks$(), while the $(item)Dismantler$() lets you disassemble them entirely in one click."
+            "text": "$(item)Терминал$() автоматически строит $(thing)многоблочную структуру GregTech$() из предметов в твоём инвентаре.$(br2)$(item)Интерфейс схем$() позволяет копировать и вставлять $(thing)многоблочные структуры$(), а $(item)разборщик$() разбирает их целиком в один клик."
         },
         {
             "type": "patchouli:spotlight",
             "item": "buildinggadgets2:gadget_building,buildinggadgets2:gadget_exchanging,buildinggadgets2:gadget_copy_paste,buildinggadgets2:gadget_cut_paste,buildinggadgets2:gadget_destruction",
             "anchor": "gadgets",
             "title": "Building Gadgets",
-            "text": "Unlocked in $(5)EV$(), $(thing)Building Gadgets$() are powerful tools that let you cut, copy, paste, and otherwise do large operations for building."
+            "text": "$(thing)Building Gadgets$() открываются в $(5)EV$() — это мощные инструменты, позволяющие вырезать, копировать, вставлять и делать другие масштабные строительные операции."
         },
         {
             "type": "patchouli:crafting",
             "recipe": "buildinggadgets2:shapeless/guide_book",
-            "title": "Another Book",
-            "text": "Building Gadgets has its own $(thing)guide book$(). You can craft one like this."
+            "title": "Ещё одна книга",
+            "text": "У Building Gadgets есть собственная $(thing)книга-руководство$(). Её можно скрафтить вот так."
         },
         {
             "type": "patchouli:relations",
@@ -95,10 +95,10 @@
                 "tfg:craftsmanship/building_materials"
             ]
         }
-	],
-	"read_by_default": true,
-	"sortnum": 21,
-	"extra_recipe_mappings": {
+    ],
+    "read_by_default": true,
+    "sortnum": 21,
+    "extra_recipe_mappings": {
         "tfg:trowel": 1,
         "domum_ornamentum:architectscutter": 5,
         "framedblocks:framing_saw": 4,
@@ -115,5 +115,5 @@
         "gtceu:terminal": 9,
         "gtceuterminal:schematic_interface": 9,
         "gtceuterminal:dismantler": 9
-	}
+    }
 }

@@ -1,82 +1,82 @@
 {
-	"name": "Каталог марсианских грибов",
-	"category": "tfg:mars",
-	"icon": "tfg:saplings/aeronos",
-	"read_by_default": true,
-	"pages": [
-		{
-			"type": "patchouli:text",
-			"text": "This is a list of every huge mushroom on Mars, and what climates they grow in.$(br2)Looking for particular type of mushroom stem to decorate your base? This should help you find it. The list is sorted alphabetically by stem type."
-		},
-		{
-			"type": "patchouli:text",
-			"title": "Содержит",
-			"anchor": "index",
-			"text": "$(li)$(bold)Large Mushrooms$()$(li2)$(l:mars/mars_tree_index#aeronos)Aeronos$()$(li2)$(l:mars/mars_tree_index#alphacene)Alphacene$()$(li2)$(l:mars/mars_tree_index#crimson)Crimson$()$(li2)$(l:mars/mars_tree_index#glacian)Glacian$()$(li2)$(l:mars/mars_tree_index#strophar)Strophar$()$(li2)$(l:mars/mars_tree_index#warped)Warped$()$(li)$(bold)$(l:mars/mars_tree_index#iodine)Iodine$()"
-		},
-		{
-			"type": "patchouli:spotlight",
-			"title": "Аэронос",
-			"anchor": "aeronos",
-			"item": "ad_astra:aeronos_stem",
-			"text": "$(bold)Aeronos Mushroom$()$(br)$(thing)Temperature$(): -100°C and above$(br)Appears more often to the East.$(br)$(thing)Growth Days$(): 7"
-		},
-		{
-			"type": "patchouli:spotlight",
-			"title": "Альфанценовый",
-			"anchor": "alphacene",
-			"item": "species:alphacene_mushroom_block",
-			"text": "$(bold)Alphacene Mushroom$()$(br)$(thing)Temperature$(): -85°C and above$(br)Appears both to the East and West.$(br)$(thing)Growth Days$(): 3$(br2)Alphacene Mushroom Blocks can be combined with $(l:mars/mars_crops#bulbkin)Bulbkin Chunks$() to get $(item)Glowstone Dust$()."
-		},
-		{
-			"type": "patchouli:spotlight",
-			"title": "Багряный",
-			"anchor": "crimson",
-			"item": "tag:tfc:crimson_logs",
-			"text": "$(bold)Crimson Mushroom$()$(br)$(thing)Temperature$(): -109 — -13°C$(br)Appears more often to the East.$(br)$(thing)Growth Days$(): 6$(br2)$(bold)Tip:$() Want to show off? You can build a $(l:logistics/boats#canoe)canoe$() out of Crimson Stems."
-		},
-		{
-			"type": "patchouli:spotlight",
-			"title": "Гласиан",
-			"anchor": "glacian",
-			"item": "tag:ad_astra:glacian_logs",
-			"text": "$(bold)Glacian Mushroom$()$(br)$(thing)Temperature$(): -107°C and below$(br)Appears both to the East and West.$(br)$(thing)Growth Days$(): 9"
-		},
-		{
-			"type": "patchouli:spotlight",
-			"title": "Строфаровый",
-			"anchor": "strophar",
-			"item": "ad_astra:strophar_stem",
-			"text": "$(bold)Strophar Mushroom$()$(br)$(thing)Temperature$(): -100°C and above$(br)Appears more often to the West.$(br)$(thing)Growth Days$(): 7"
-		},
-		{
-			"type": "patchouli:spotlight",
-			"title": "Искажённый",
-			"anchor": "warped",
-			"item": "tag:tfc:warped_logs",
-			"text": "$(bold)Warped Mushroom$()$(br)$(thing)Temperature$(): -109 — -13°C$(br)Appears more often to the West.$(br)$(thing)Growth Days$(): 6$(br2)$(bold)Tip:$() Want to show off? You can build a $(l:logistics/boats#rowboat)Rowboat$() or $(l:logistics/boats#sloop)Sloop$() out of Warped Stems."
-		},
-		{
-			"type": "patchouli:spotlight",
-			"item": "tag:forge:dusts/iodine",
-			"title": "Iodine",
-			"anchor": "iodine",
-			"text": "$(l:mars/mars_tree_index#crimson)Crimson$() and $(l:mars/mars_tree_index#warped)Warped$() Mushrooms can be tree tapped for $(4)Crimsene$() and $(3)Warpane$() respectively.$(br2)You'll need both to get started on producing $(thing)Iodine$(), but they don't often grow in the same place, so you might need to travel a bit. You can also obtain the saplings from the corresponding $(l:mars/mars_fauna#endermen)Endermen$()."
-		},
-		{
-			"type": "patchouli:text",
-			"text": "Mix together the Crimsene and Warpane, along with some Krypton from Mars Air Distillation (it's looped) and the heat from your $(l:mars/fission)Fission Reactor$(), and you'll get $(item)Iodine$()!$(br2)This process is slow, but you shouldn't need a lot of it for now, and there will be better methods of obtaining Iodine on further planets."
-		},
-		{
-			"type": "patchouli:relations",
-			"title": "Читать далее",
-			"anchor": "relations",
-			"entries": [
-				"tfg:mars/mars",
-				"tfg:the_world/earth_tree_index",
-				"tfg:beneath/beneath_tree_index",
-				"tfg:agriculture/tree_tapping"
-			]
-		}
-	]
+    "name": "Каталог марсианских грибов",
+    "category": "tfg:mars",
+    "icon": "tfg:saplings/aeronos",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Это список всех огромных грибов Марса и климата, в котором они растут.$(br2)Ищешь определённый вид ножки гриба, чтобы украсить базу? Этот список поможет. Он отсортирован по алфавиту по типу ножки."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Содержит",
+            "anchor": "index",
+            "text": "$(li)$(bold)Большие грибы$()$(li2)$(l:mars/mars_tree_index#aeronos)Аэронос$()$(li2)$(l:mars/mars_tree_index#alphacene)Альфаценовый$()$(li2)$(l:mars/mars_tree_index#crimson)Багряный$()$(li2)$(l:mars/mars_tree_index#glacian)Гласиан$()$(li2)$(l:mars/mars_tree_index#strophar)Строфаровый$()$(li2)$(l:mars/mars_tree_index#warped)Искажённый$()$(li)$(bold)$(l:mars/mars_tree_index#iodine)Йод$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Аэронос",
+            "anchor": "aeronos",
+            "item": "ad_astra:aeronos_stem",
+            "text": "$(bold)Гриб аэронос$()$(br)$(thing)Температура$(): от -100°C и выше$(br)Чаще встречается на востоке.$(br)$(thing)Дней роста$(): 7"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Альфаценовый",
+            "anchor": "alphacene",
+            "item": "species:alphacene_mushroom_block",
+            "text": "$(bold)Альфаценовый гриб$()$(br)$(thing)Температура$(): от -85°C и выше$(br)Встречается и на востоке, и на западе.$(br)$(thing)Дней роста$(): 3$(br2)Блоки альфаценового гриба можно объединить с $(l:mars/mars_crops#bulbkin)кусками лукыквы$() и получить $(item)светящуюся пыль$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Багряный",
+            "anchor": "crimson",
+            "item": "tag:tfc:crimson_logs",
+            "text": "$(bold)Багряный гриб$()$(br)$(thing)Температура$(): -109 — -13°C$(br)Чаще встречается на востоке.$(br)$(thing)Дней роста$(): 6$(br2)$(bold)Совет:$() хочешь покрасоваться? Из багряных ножек можно сделать $(l:logistics/boats#canoe)каноэ$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Гласиан",
+            "anchor": "glacian",
+            "item": "tag:ad_astra:glacian_logs",
+            "text": "$(bold)Гласиановый гриб$()$(br)$(thing)Температура$(): -107°C и ниже$(br)Встречается и на востоке, и на западе.$(br)$(thing)Дней роста$(): 9"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Строфаровый",
+            "anchor": "strophar",
+            "item": "ad_astra:strophar_stem",
+            "text": "$(bold)Строфаровый гриб$()$(br)$(thing)Температура$(): от -100°C и выше$(br)Чаще встречается на западе.$(br)$(thing)Дней роста$(): 7"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Искажённый",
+            "anchor": "warped",
+            "item": "tag:tfc:warped_logs",
+            "text": "$(bold)Искажённый гриб$()$(br)$(thing)Температура$(): -109 — -13°C$(br)Чаще встречается на западе.$(br)$(thing)Дней роста$(): 6$(br2)$(bold)Совет:$() хочешь покрасоваться? Из искажённых ножек можно сделать $(l:logistics/boats#rowboat)гребную лодку$() или $(l:logistics/boats#sloop)шлюп$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:forge:dusts/iodine",
+            "title": "Йод",
+            "anchor": "iodine",
+            "text": "С $(l:mars/mars_tree_index#crimson)багряных$() и $(l:mars/mars_tree_index#warped)искажённых$() грибов можно собирать подсочкой $(4)багреллий$() и $(3)искажеллий$() соответственно.$(br2)Для производства $(thing)йода$() понадобятся оба, но растут они редко в одном месте, так что, возможно, придётся попутешествовать. Саженцы также можно получить с соответствующих $(l:mars/mars_fauna#endermen)эндерменов$()."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Смешай багреллий и искажеллий с криптоном из перегонки марсианского воздуха (он идёт по кругу) и жаром $(l:mars/fission)ядерного реактора$() — и получишь $(item)йод$()!$(br2)Процесс медленный, но пока тебе много и не нужно, а на дальних планетах будут способы получать йод получше."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Читать далее",
+            "anchor": "relations",
+            "entries": [
+                "tfg:mars/mars",
+                "tfg:the_world/earth_tree_index",
+                "tfg:beneath/beneath_tree_index",
+                "tfg:agriculture/tree_tapping"
+            ]
+        }
+    ]
 }

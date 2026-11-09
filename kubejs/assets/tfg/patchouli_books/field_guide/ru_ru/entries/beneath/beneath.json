@@ -1,218 +1,218 @@
 {
-	"name": "Что такое Бездна?",
-	"category": "tfg:beneath",
-	"icon": "minecraft:deepslate",
-	"pages": [
-		{
-			"type": "patchouli:text",
-			"anchor": "intro",
-			"text": "$(thing)Бездна$() представляет собой сеть очень глубоких пещер прямо под Верхним Миром.$(br)Это измерение сбалансировано в промежутке от примерно среднего до позднего $(thing)Металлургического Века$().$(br2) Здесь опаснее чем на поверхности, поэтому мы рекомендуем, как минимум, любой металлический щит и хорошее питание, но некоторые доспехи, водяные фляги, охлаждающяя одежда и оружие дальнего боя будут очень кстати."
-		},
-		{
-			"type": "patchouli:text",
-			"anchor": "differences",
-			"text": "Сам же игровой опыт не будет схож с ванильным нижним миром. $(li)Портал не сработает, ты будешь попадать в бездну $(l:beneath/beneath#entering)другими способами$(). $(li)Вода не испаряется мгновенно,$(li) а кровати больше не взрываются. $(li)Один блок в бездне не равняется восьми блокам в Верхнем мире, скорость путешествий равна$(br2)Взамен ты сможешь найти большое количество ресурсов, например $(thing)Каолинитовой глины$() и $(thing)Графита$(). $(thing)Жилы$() в бездне заметно больше чем во Внешнем мире."
-		},
-		{
-			"type": "patchouli:text",
-			"anchor": "index",
-			"text": "$(li)$(bold)$(l:beneath/beneath#entering)Как попасть$() и $(bold)$(l:beneath/beneath#exiting)Как выйти$()$(li)$(bold)$(l:beneath/beneath#biomes)Биомы$()$(li2)$(l:beneath/beneath#salt_caves)Верхний уровнь$()$(li2)$(l:beneath/beneath#tar_pools)Средний уровнь$()$(li2)$(l:beneath/beneath#ash_forest)Нижний уровень$()$(li)$(bold)$(l:beneath/beneath#geology)Геология$()$(li2)$(l:beneath/beneath#more_rocks)Больше камней$()"
-		},
-		{
-			"type": "patchouli:image",
-			"title": "",
-			"images": [
-				"tfg:textures/gui/field_guide/nether/portal.png",
-				"tfg:textures/gui/field_guide/nether/aether.png"
-			],
-			"border": true,
-			"text": "Не так!"
-		},
-		{
-			"type": "patchouli:text",
-			"anchor": "entering",
-			"title": "Вход в Бездну",
-			"text": "To travel Beneath, simply find some overworld Bedrock at $(thing)Y=-58$().$(br2)To get down to the bedrock, you'll have to either break through the Hornfels layer with $(l:game_mechanics/mining#explosives)Explosives$() or $(item)Steel+ Tools$(), find a cave with the more brittle $(thing)Keratophyre$(), or drain a lava lake.$(br2)Note that $(item)Primitive Explosives$() are not strong enough to break Hornfels."
-		},
-		{
-			"type": "patchouli:text",
-			"text": "You will appear in the Beneath at the same X and Z coordinates, with a 3x2x3 space opened for you to place some supports if necessary.$(br2)A temporary cloud will be provided if there is no floor, as well as short $(thing)Slow Falling$() and $(thing)Fire Protection$() effects to prevent any accidents."
-		},
-		{
-			"type": "patchouli:text",
-			"anchor": "exiting",
-			"title": "Exiting the Beneath",
-			"text": "To return, just get up to ceiling bedrock in the same fashion.$(br2)It's a good idea to $(thing)make a note$() of where you entered, so you can return to the same place in the overworld whenever you're ready to leave."
-		},
-		{
-			"type": "patchouli:text",
-			"text": "You will be returned at $(thing)Y=-54$(), above any potential lava lakes, inside another 3x2x3 area. The middle two blocks for the player will always be replaced by air, so you may want to avoid placing ladders there."
-		},
-		{
-			"type": "patchouli:text",
-			"anchor": "biomes",
-			"title": "Biomes",
-			"text": "The Beneath has a full set of new biomes to explore!$(br2)The Beneath can be split into three vertical layers, each with their own set of biomes. Each one is more hot and dangerous as you descend!"
-		},
-		{
-			"type": "patchouli:text",
-			"title": "Layers",
-			"text": "$(bold)Top Layer$()$(li)$(l:beneath/beneath#salt_caves)Salt Caves$()$(li)$(l:beneath/beneath#muggy_bog)Muggy Bog$()$(li)$(l:beneath/beneath#decaying_caverns)Decaying Caverns$()$(li)$(l:beneath/beneath#webbed_lair)Webbed Lair$()$(br)$(bold)Middle Layer$()$(li)$(l:beneath/beneath#tar_pools)Tar Pools$()$(li)$(l:beneath/beneath#geothermal_springs)Geothermal Springs$()$(li)$(l:beneath/beneath#thorny_grove)Thorny Grove$()$(li)$(l:beneath/beneath#lush_hollow)Lush Hollow$()$(br)$(bold)Bottom Layer$()$(li)$(l:beneath/beneath#ash_forest)Ash Forest$()$(li)$(l:beneath/beneath#lava_floes)Lava Floes$()$(li)$(l:beneath/beneath#basalt_deltas)Basalt Deltas$()"
-		},
-		{
-			"type": "patchouli:image",
-			"anchor": "salt_caves",
-			"title": "Salt Caves",
-			"images": [
-				"tfg:textures/gui/field_guide/nether/salt_caves.png"
-			],
-			"border": true,
-			"text": "Like a warm ocean breeze, this biome is full of $(item)Halite$(). Makes for a great base location!"
-		},
-		{
-			"type": "patchouli:image",
-			"title": "Muggy Bog",
-			"anchor": "muggy_bog",
-			"images": [
-				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
-			],
-			"border": true,
-			"text": "Humid and swamp-like. A safe source of wood, if you can avoid the $(thing)Crocodiles$()."
-		},
-		{
-			"type": "patchouli:image",
-			"title": "Decaying Caverns",
-			"anchor": "decaying_caverns",
-			"images": [
-				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
-			],
-			"border": true,
-			"text": "Nature's recyclers are hard at work in this damp region full of rot."
-		},
-		{
-			"type": "patchouli:image",
-			"title": "Webbed Lair",
-			"anchor": "webbed_lair",
-			"images": [
-				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
-			],
-			"border": true,
-			"text": "No prizes for guessing what lives here! A great place to harvest $(item)Silk$()."
-		},
-		{
-			"type": "patchouli:image",
-			"anchor": "tar_pools",
-			"title": "Tar Pools",
-			"images": [
-				"tfg:textures/gui/field_guide/nether/tar_pools.png"
-			],
-			"border": true,
-			"text": "Sandy like a small desert, this area contains sticky $(thing)Tar Pits$() full of oil."
-		},
-		{
-			"type": "patchouli:image",
-			"title": "Geothermal Springs",
-			"anchor": "geothermal_springs",
-			"images": [
-				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
-			],
-			"border": true,
-			"text": "No Sulfur Cubes here, but this steamy biome can be a great place to find $(thing)Spring Water$() for healing."
-		},
-		{
-			"type": "patchouli:image",
-			"title": "Thorny Grove",
-			"anchor": "thorny_grove",
-			"images": [
-				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
-			],
-			"border": true,
-			"text": "A difficult to traverse biome with plants that affect you when stepped on. Watch out!"
-		},
-		{
-			"type": "patchouli:image",
-			"title": "Lush Hollow",
-			"anchor": "lush_hollow",
-			"images": [
-				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
-			],
-			"border": true,
-			"text": "Hot and full of greenery! The dense ferns hides the underlying $(thing)Kaolin Clay$()."
-		},
-		{
-			"type": "patchouli:image",
-			"anchor": "ash_forest",
-			"title": "Ash Forest",
-			"images": [
-				"tfg:textures/gui/field_guide/nether/ash_forest.png"
-			],
-			"border": true,
-			"text": "What remains of the upper greenery after the frequent fires caused by the heat."
-		},
-		{
-			"type": "patchouli:image",
-			"title": "Lava Floes",
-			"anchor": "lava_floes",
-			"images": [
-				"tfg:textures/gui/field_guide/nether/lava_floes.png"
-			],
-			"border": true,
-			"text": "An ore-rich $(thing)Pyroxenite$() area crisscrossed with rivers of lava."
-		},
-		{
-			"type": "patchouli:image",
-			"title": "Basalt Deltas",
-			"anchor": "basalt_deltas",
-			"images": [
-				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
-			],
-			"border": true,
-			"text": "Everyone's favourite Nether biome returns, and is just as dangerous to navigate as ever."
-		},
-		{
-			"type": "patchouli:text",
-			"anchor": "geology",
-			"title": "Геология",
-			"text": "Like the overworld, the Beneath has its own set of rock layers. At the very top, you may find Phyllite, Schist, Gneiss, Marble, Slate, Migmatite, and Travertine.$(br2)Underneath those, you may find Schist, Gneiss, Tuff, Migmatite, Travertine, and Diorite."
-		},
-		{
-			"type": "patchouli:text",
-			"text": "Below that is either Gabbro, Granite, Tuff, Diorite, or Migmatite.$(br2)At the lower levels of the Beneath, there is a layer of exclusively Migmatite, followed by Pyroxenite at the very bottom."
-		},
-		{
-			"type": "patchouli:spotlight",
-			"item": "minecraft:blackstone,minecraft:calcite,tfg:gilsonite,tfg:rock/aragonite,tfg:rock/glauberite,tfg:huge_quartz,beneath:crackrack,tfg:halite",
-			"title": "Больше Камней",
-			"anchor": "more_rocks",
-			"text": "Some other stones can be found in other locations.$(br2)Small lava pools are surrounded by $(item)Pyroxenite$(), while $(item)Calcite$() can be found in spring water pools.$(br2)$(item)Keratophyre$() can be found all over the Beneath in large, tall columns."
-		},
-		{
-			"type": "patchouli:text",
-			"text": "The $(l:beneath/beneath#geothermal_springs)Geothermal Springs$() biome contains the exclusive $(item)Aragonite$() and $(item)Glauberite$(), along with more Calcite.$(br2)This biome also houses $(item)Huge Quartz$() crystals, which can either be broken with a pickaxe to obtain $(item)Smoky Quartz$() gems of varying quality, or broken with a $(item)Gem Saw$() to obtain the transparent block itself."
-		},
-		{
-			"type": "patchouli:text",
-			"text": "$(item)Gilsonite$(), a very dark building block and ingredient of $(l:logistics/roads#asphalt)Asphalt$(), can be found in large quantities in the $(l:beneath/beneath#tar_pools)Tar Pools$() biome, along with $(item)Sandstone$().$(br2)Finally, $(item)Halite$() can be found in massive quantities in the $(l:beneath/beneath#salt_caves)Salt Caves$() biome, which can be mined for Halite and Sylvite ores."
-		},
-		{
-			"type": "patchouli:relations",
-			"title": "Читать далее",
-			"anchor": "relations",
-			"entries": [
-				"tfg:beneath/beneath_mechanics",
-				"tfg:beneath/beneath_crops",
-				"tfg:beneath/beneath_wild_fruits",
-				"tfg:beneath/beneath_tree_index",
-				"tfg:beneath/beneath_fauna"
-			]
-		}
-	],
-	"extra_recipe_mappings": {
-		"tfg:gilsonite": 22,
-		"tfg:rock/aragonite": 22,
-		"tfg:rock/glauberite": 22,
-		"tfg:huge_quartz": 22
-	},
-	"read_by_default": true,
-	"priority": true
+    "name": "Что такое Бездна?",
+    "category": "tfg:beneath",
+    "icon": "minecraft:deepslate",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "text": "$(thing)Бездна$() представляет собой сеть очень глубоких пещер прямо под Верхним Миром.$(br)Это измерение сбалансировано в промежутке от примерно среднего до позднего $(thing)Металлургического Века$().$(br2) Здесь опаснее чем на поверхности, поэтому мы рекомендуем, как минимум, любой металлический щит и хорошее питание, но некоторые доспехи, водяные фляги, охлаждающяя одежда и оружие дальнего боя будут очень кстати."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "differences",
+            "text": "Сам же игровой опыт не будет схож с ванильным нижним миром. $(li)Портал не сработает, ты будешь попадать в бездну $(l:beneath/beneath#entering)другими способами$(). $(li)Вода не испаряется мгновенно,$(li) а кровати больше не взрываются. $(li)Один блок в бездне не равняется восьми блокам в Верхнем мире, скорость путешествий равна$(br2)Взамен ты сможешь найти большое количество ресурсов, например $(thing)Каолинитовой глины$() и $(thing)Графита$(). $(thing)Жилы$() в бездне заметно больше чем во Внешнем мире."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:beneath/beneath#entering)Как попасть$() и $(bold)$(l:beneath/beneath#exiting)Как выйти$()$(li)$(bold)$(l:beneath/beneath#biomes)Биомы$()$(li2)$(l:beneath/beneath#salt_caves)Верхний уровнь$()$(li2)$(l:beneath/beneath#tar_pools)Средний уровнь$()$(li2)$(l:beneath/beneath#ash_forest)Нижний уровень$()$(li)$(bold)$(l:beneath/beneath#geology)Геология$()$(li2)$(l:beneath/beneath#more_rocks)Больше камней$()"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "",
+            "images": [
+                "tfg:textures/gui/field_guide/nether/portal.png",
+                "tfg:textures/gui/field_guide/nether/aether.png"
+            ],
+            "border": true,
+            "text": "Не так!"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "entering",
+            "title": "Вход в Бездну",
+            "text": "Чтобы попасть в Бездну, найди бедрок верхнего мира на $(thing)Y=-58$().$(br2)Чтобы до него добраться, придётся либо пробить слой роговика $(l:game_mechanics/mining#explosives)взрывчаткой$() или $(item)инструментами из стали и выше$(), либо найти пещеру с более хрупким $(thing)кератофиром$(), либо осушить лавовое озеро.$(br2)Учти: $(item)примитивная взрывчатка$() недостаточно сильна, чтобы ломать роговик."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Ты окажешься в Бездне на тех же координатах X и Z, а вокруг будет расчищено пространство 3x2x3, чтобы при необходимости поставить опоры.$(br2)Если пола нет, появится временное облако, а также ненадолго дадут $(thing)Плавное падение$() и $(thing)Защиту от огня$(), чтобы обойтись без несчастных случаев."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "exiting",
+            "title": "Выход из Бездны",
+            "text": "Чтобы вернуться, просто доберись так же до бедрока на потолке.$(br2)Неплохо бы $(thing)записать$(), где ты спустился, чтобы потом вернуться в то же место верхнего мира, когда соберёшься уходить."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Ты вернёшься на $(thing)Y=-54$(), над возможными лавовыми озёрами, опять внутри области 3x2x3. Два средних блока для игрока всегда заменяются воздухом, так что лестницы там лучше не ставить."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "biomes",
+            "title": "Биомы",
+            "text": "В Бездне целый набор новых биомов для исследования!$(br2)Бездну можно разделить на три вертикальных слоя, у каждого свои биомы. Чем глубже, тем жарче и опаснее!"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Слои",
+            "text": "$(bold)Верхний слой$()$(li)$(l:beneath/beneath#salt_caves)Соляные пещеры$()$(li)$(l:beneath/beneath#muggy_bog)Знойная трясина$()$(li)$(l:beneath/beneath#decaying_caverns)Гниющие пещеры$()$(li)$(l:beneath/beneath#webbed_lair)Паучье логово$()$(br)$(bold)Средний слой$()$(li)$(l:beneath/beneath#tar_pools)Битумные озёра$()$(li)$(l:beneath/beneath#geothermal_springs)Геотермальные источники$()$(li)$(l:beneath/beneath#thorny_grove)Терновая роща$()$(li)$(l:beneath/beneath#lush_hollow)Пышная лощина$()$(br)$(bold)Нижний слой$()$(li)$(l:beneath/beneath#ash_forest)Пепельный лес$()$(li)$(l:beneath/beneath#lava_floes)Магмовые пустоши$()$(li)$(l:beneath/beneath#basalt_deltas)Базальтовые дельты$()"
+        },
+        {
+            "type": "patchouli:image",
+            "anchor": "salt_caves",
+            "title": "Соляные пещеры",
+            "images": [
+                "tfg:textures/gui/field_guide/nether/salt_caves.png"
+            ],
+            "border": true,
+            "text": "Словно тёплый морской бриз: этот биом полон $(item)галита$(). Отличное место для базы!"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Знойная трясина",
+            "anchor": "muggy_bog",
+            "images": [
+                "tfg:textures/gui/field_guide/nether/muggy_bog.png"
+            ],
+            "border": true,
+            "text": "Влажное, болотистое место. Безопасный источник древесины, если сумеешь избежать $(thing)крокодилов$()."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Гниющие пещеры",
+            "anchor": "decaying_caverns",
+            "images": [
+                "tfg:textures/gui/field_guide/nether/decaying_caverns.png"
+            ],
+            "border": true,
+            "text": "Природные переработчики вовсю трудятся в этом сыром краю, полном гнили."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Паучье логово",
+            "anchor": "webbed_lair",
+            "images": [
+                "tfg:textures/gui/field_guide/nether/webbed_lair.png"
+            ],
+            "border": true,
+            "text": "Угадай с одного раза, кто тут живёт! Отличное место, чтобы добывать $(item)шёлк$()."
+        },
+        {
+            "type": "patchouli:image",
+            "anchor": "tar_pools",
+            "title": "Битумные озёра",
+            "images": [
+                "tfg:textures/gui/field_guide/nether/tar_pools.png"
+            ],
+            "border": true,
+            "text": "Песчаная местность, похожая на маленькую пустыню, с липкими $(thing)смоляными ямами$(), полными нефти."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Геотермальные источники",
+            "anchor": "geothermal_springs",
+            "images": [
+                "tfg:textures/gui/field_guide/nether/geothermal_springs.png"
+            ],
+            "border": true,
+            "text": "Серных кубов тут нет, зато в этом парящем биоме удобно искать целебную $(thing)родниковую воду$()."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Терновая роща",
+            "anchor": "thorny_grove",
+            "images": [
+                "tfg:textures/gui/field_guide/nether/thorny_brambles.png"
+            ],
+            "border": true,
+            "text": "Труднопроходимый биом с растениями, которые действуют на тебя, если на них наступить. Осторожно!"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Пышная лощина",
+            "anchor": "lush_hollow",
+            "images": [
+                "tfg:textures/gui/field_guide/nether/lush_hollow.png"
+            ],
+            "border": true,
+            "text": "Жарко и всё в зелени! Густые папоротники скрывают под собой $(thing)каолинитовую глину$()."
+        },
+        {
+            "type": "patchouli:image",
+            "anchor": "ash_forest",
+            "title": "Пепельный лес",
+            "images": [
+                "tfg:textures/gui/field_guide/nether/ash_forest.png"
+            ],
+            "border": true,
+            "text": "Всё, что осталось от верхней зелени после частых пожаров от жары."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Магмовые пустоши",
+            "anchor": "lava_floes",
+            "images": [
+                "tfg:textures/gui/field_guide/nether/lava_floes.png"
+            ],
+            "border": true,
+            "text": "Богатая рудой зона из $(thing)пироксенита$(), изрезанная реками лавы."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Базальтовые дельты",
+            "anchor": "basalt_deltas",
+            "images": [
+                "tfg:textures/gui/field_guide/nether/basalt_deltas.png"
+            ],
+            "border": true,
+            "text": "Всеми любимый биом Незера вернулся и по-прежнему опасен для путешествий."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "geology",
+            "title": "Геология",
+            "text": "Как и в верхнем мире, у Бездны свои слои пород. На самом верху можно найти филлит, аспидный сланец, гнейс, мрамор, шиферный сланец, мигматит и травертин.$(br2)Под ними встречаются аспидный сланец, гнейс, туф, мигматит, травертин и диорит."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Ниже лежит габбро, гранит, туф, диорит или мигматит.$(br2)На нижних уровнях Бездны идёт слой из одного мигматита, а на самом дне — пироксенит."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "minecraft:blackstone,minecraft:calcite,tfg:gilsonite,tfg:rock/aragonite,tfg:rock/glauberite,tfg:huge_quartz,beneath:crackrack,tfg:halite",
+            "title": "Больше Камней",
+            "anchor": "more_rocks",
+            "text": "Некоторые другие камни встречаются в особых местах.$(br2)Маленькие лавовые озёра окружены $(item)пироксенитом$(), а $(item)кальцит$() можно найти в озёрцах с родниковой водой.$(br2)$(item)Кератофир$() встречается по всей Бездне в виде больших высоких колонн."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Только в биоме $(l:beneath/beneath#geothermal_springs)Геотермальные источники$() есть $(item)арагонит$() и $(item)глауберит$(), а также ещё больше кальцита.$(br2)Здесь же растут $(item)огромные кристаллы кварца$(): разбей их киркой, чтобы получить самоцветы $(item)дымчатого кварца$() разного качества, или $(item)пилкой с напылением$(), чтобы получить сам прозрачный блок."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(item)Гильсонит$() — очень тёмный строительный блок и ингредиент $(l:logistics/roads#asphalt)асфальта$() — в больших количествах лежит в биоме $(l:beneath/beneath#tar_pools)Битумные озёра$() вместе с $(item)песчаником$().$(br2)Наконец, $(item)галита$() огромные залежи в биоме $(l:beneath/beneath#salt_caves)Соляные пещеры$(): там можно добывать руды галита и сильвина."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Читать далее",
+            "anchor": "relations",
+            "entries": [
+                "tfg:beneath/beneath_mechanics",
+                "tfg:beneath/beneath_crops",
+                "tfg:beneath/beneath_wild_fruits",
+                "tfg:beneath/beneath_tree_index",
+                "tfg:beneath/beneath_fauna"
+            ]
+        }
+    ],
+    "extra_recipe_mappings": {
+        "tfg:gilsonite": 22,
+        "tfg:rock/aragonite": 22,
+        "tfg:rock/glauberite": 22,
+        "tfg:huge_quartz": 22
+    },
+    "read_by_default": true,
+    "priority": true
 }

@@ -1,5 +1,5 @@
 {
-    "name": "Earth Fruits",
+    "name": "Фрукты Земли",
     "category": "tfg:the_world",
     "icon": "tfc:textures/item/food/cherry.png",
     "pages": [
@@ -7,15 +7,15 @@
             "type": "patchouli:text",
             "title": "Каталог",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:the_world/wild_fruits#intro)Introduction$()$(li)$(bold)$(l:the_world/wild_fruits#fruit_trees)Fruit Trees$()$(li2)$(l:the_world/wild_fruits#cherry)Cherry$()$(li2)$(l:the_world/wild_fruits#green_apple)Green Apple$()$(li2)$(l:the_world/wild_fruits#lemon)Lemon$()$(li2)$(l:the_world/wild_fruits#olive)Olive$()$(li2)$(l:the_world/wild_fruits#orange)Orange$()$(li2)$(l:the_world/wild_fruits#peach)Peach$()$(li2)$(l:the_world/wild_fruits#plum)Plum$()$(li2)$(l:the_world/wild_fruits#red_apple)Red Apple$()$(li2)$(l:the_world/wild_fruits#cocoa)Cocoa$()$(li2)$(l:the_world/wild_fruits#fig)Fig$()$(li2)$(l:the_world/wild_fruits#banana)Bananas$()"
+            "text": "$(li)$(bold)$(l:the_world/wild_fruits#intro)Введение$()$(li)$(bold)$(l:the_world/wild_fruits#fruit_trees)Фруктовые деревья$()$(li2)$(l:the_world/wild_fruits#cherry)Вишня$()$(li2)$(l:the_world/wild_fruits#green_apple)Зелёное яблоко$()$(li2)$(l:the_world/wild_fruits#lemon)Лимон$()$(li2)$(l:the_world/wild_fruits#olive)Оливка$()$(li2)$(l:the_world/wild_fruits#orange)Апельсин$()$(li2)$(l:the_world/wild_fruits#peach)Персик$()$(li2)$(l:the_world/wild_fruits#plum)Слива$()$(li2)$(l:the_world/wild_fruits#red_apple)Красное яблоко$()$(li2)$(l:the_world/wild_fruits#cocoa)Какао$()$(li2)$(l:the_world/wild_fruits#fig)Инжир$()$(li2)$(l:the_world/wild_fruits#banana)Бананы$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:the_world/wild_fruits#palm_fruit_trees)Palm Fruit Trees$()$(li2)$(l:the_world/wild_fruits#coconut)Coconut$()$(li2)$(l:the_world/wild_fruits#date)Date$()$(li)$(bold)$(l:the_world/wild_fruits#tall_bushes)Tall Fruit Bushes$()$(li2)$(l:the_world/wild_fruits#blackberry)Blackberry$()$(li2)$(l:the_world/wild_fruits#raspberry)Raspberry$()$(li2)$(l:the_world/wild_fruits#blueberry)Blueberry$()$(li2)$(l:the_world/wild_fruits#elderberry)Elderberry$()$(li)$(bold)$(l:the_world/wild_fruits#small_bushes)Small Fruit Bushes$()$(li2)$(l:the_world/wild_fruits#bunchberry)Bunchberry$()$(li2)$(l:the_world/wild_fruits#gooseberry)Gooseberry$()$(li2)$(l:the_world/wild_fruits#snowberry)Snowberry$()$(li2)$(l:the_world/wild_fruits#cloudberry)Cloudberry$()$(li2)$(l:the_world/wild_fruits#strawberry)Strawberry$()"
+            "text": "$(li)$(bold)$(l:the_world/wild_fruits#palm_fruit_trees)Плодовые пальмы$()$(li2)$(l:the_world/wild_fruits#coconut)Кокос$()$(li2)$(l:the_world/wild_fruits#date)Финик$()$(li)$(bold)$(l:the_world/wild_fruits#tall_bushes)Высокие ягодные кусты$()$(li2)$(l:the_world/wild_fruits#blackberry)Ежевика$()$(li2)$(l:the_world/wild_fruits#raspberry)Малина$()$(li2)$(l:the_world/wild_fruits#blueberry)Черника$()$(li2)$(l:the_world/wild_fruits#elderberry)Бузина$()$(li)$(bold)$(l:the_world/wild_fruits#small_bushes)Низкие ягодные кусты$()$(li2)$(l:the_world/wild_fruits#bunchberry)Кизил$()$(li2)$(l:the_world/wild_fruits#gooseberry)Крыжовник$()$(li2)$(l:the_world/wild_fruits#snowberry)Снежноягодник$()$(li2)$(l:the_world/wild_fruits#cloudberry)Морошка$()$(li2)$(l:the_world/wild_fruits#strawberry)Клубника$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li2)$(l:the_world/wild_fruits#wintergreen_berry)Wintergreen Berry$()$(li2)$(l:the_world/wild_fruits#cranberry)Cranberry$()$(li2)$(l:the_world/wild_fruits#nightshade)Nightshade$()$(li2)$(l:the_world/wild_fruits#pineapple)Pineapple$()$(li2)$(l:the_world/wild_fruits#red_grapes)Red Grapes$()$(li2)$(l:the_world/wild_fruits#white_grapes)White Grapes$()"
+            "text": "$(li2)$(l:the_world/wild_fruits#wintergreen_berry)Брусника$()$(li2)$(l:the_world/wild_fruits#cranberry)Клюква$()$(li2)$(l:the_world/wild_fruits#nightshade)Паслён$()$(li2)$(l:the_world/wild_fruits#pineapple)Ананас$()$(li2)$(l:the_world/wild_fruits#red_grapes)Красный виноград$()$(li2)$(l:the_world/wild_fruits#white_grapes)Белый виноград$()"
         },
         {
             "type": "patchouli:empty",
@@ -24,18 +24,18 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introduction to Fruits",
-            "text": "Many different varieties of wild fruits can be found growing in the world. These can be collected to be eaten, or farmed, with the right equipment. These can be found on different varieties of bushes or trees.$(br2)Most fruiting plants have a common lifecycle. They will grow, form flowers, sprout fruit, and then lay dormant."
+            "title": "Знакомство с фруктами",
+            "text": "В мире растёт множество видов диких фруктов. Их можно собирать и есть, а с нужным снаряжением — выращивать. Растут они на разных кустах и деревьях.$(br2)У большинства плодовых растений общий жизненный цикл: они растут, зацветают, завязывают плоды, а затем впадают в спячку."
         },
         {
             "type": "patchouli:text",
-            "text": "Fruit plants are seasonal. During their cold season, these plants will appear brown and lifeless. In the spring, they become green and healthy, getting ready to produce fruit and grow larger. The exact times this happen varies by the fruit. Fruit plants can die if kept outside the range of their $(l:the_world/climate#climate)Climate Conditions$()."
+            "text": "Плодовые растения зависят от сезона. В холодный сезон они выглядят бурыми и безжизненными. Весной зеленеют и набираются сил, готовясь плодоносить и расти. Точные сроки зависят от вида. Если растение держать вне его $(l:the_world/climate#climate)климатических условий$(), оно может погибнуть."
         },
         {
             "type": "patchouli:text",
             "anchor": "fruit_trees",
-            "text": "$(thing)Fruit trees$() grow from tiny saplings into large, flowering trees. The branches of fruit trees are their heart, and they will grow as long as the climate conditions are right. As fruit trees mature, they will grow $(thing)leaves$() all around their branches. The leaves can flower and fruit depending on the $(l:the_world/climate#seasons)Season$().",
-            "title": "Fruit Trees"
+            "text": "$(thing)Фруктовые деревья$() вырастают из крошечных саженцев в большие цветущие деревья. Сердце дерева — его ветви, и они растут, пока климат подходящий. По мере взросления на ветвях появляются $(thing)листья$(). Листья цветут и плодоносят в зависимости от $(l:the_world/climate#seasons)сезона$().",
+            "title": "Фруктовые деревья"
         },
         {
             "type": "patchouli:image",
@@ -47,11 +47,11 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Fruit trees start out as $(thing)Saplings$(). Saplings will only start growing―Placing their first piece of the tree trunk―If it is not their dormant season. The size of the finished tree is loosely determined by how many saplings are in the original sapling block.$(br)More saplings can be spliced onto a single block through $(thing)Grafting$(). To splice a sapling into another, just $(item)$(k:key.use)$() on it while holding a sapling and a $(thing)Knife$() in your off hand."
+            "text": "Фруктовые деревья начинаются с $(thing)саженцев$(). Саженец начнёт расти — поставит первый кусок ствола — только если сейчас не сезон спячки. Размер взрослого дерева примерно зависит от того, сколько саженцев в исходном блоке.$(br)Добавить в один блок больше саженцев можно $(thing)прививкой$(). Чтобы привить саженец к другому, нажми по нему $(item)$(k:key.use)$(), держа саженец, а во второй руке — $(thing)нож$()."
         },
         {
             "type": "patchouli:text",
-            "text": "To get saplings from a fruit tree, break the 'elbow' branch blocks (90° angled branches) with an $(thing)Axe$(). Saplings can also be placed on these 'elbow' sections, if they are not too high up in the tree. This allows one fruit tree to grow multiple kinds of fruit. Harvesting fruit is done with $(item)$(k:key.use)$() when the leaf block is bearing fruit. This will give one fruit, and revert the plant back to its growing stage. Harvesting can be automated with $(item)Harvest Baskets$()"
+            "text": "Чтобы получить саженцы с фруктового дерева, сломай $(thing)топором$() «коленчатые» блоки ветвей (изогнутые под 90°). На такие «колени» можно и сажать саженцы, если они не слишком высоко на дереве — так одно дерево может давать несколько видов фруктов. Плоды собирают через $(item)$(k:key.use)$(), когда на листве есть плоды: выпадает один плод, а растение возвращается в стадию роста. Сбор можно автоматизировать $(item)лукошками$()"
         },
         {
             "type": "tfg:table",
@@ -97,7 +97,7 @@
                     "text": "Дек"
                 },
                 {
-                    "text": "Cherry"
+                    "text": "Вишня"
                 },
                 {
                     "fill": "0x6ab553"
@@ -175,7 +175,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Lemon"
+                    "text": "Лимон"
                 },
                 {
                     "fill": "0xa8986a"
@@ -214,7 +214,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Olive"
+                    "text": "Оливка"
                 },
                 {
                     "fill": "0xa8986a"
@@ -253,7 +253,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Orange"
+                    "text": "Апельсин"
                 },
                 {
                     "fill": "0xa8986a"
@@ -292,7 +292,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Peach"
+                    "text": "Персик"
                 },
                 {
                     "fill": "0x6ab553"
@@ -331,7 +331,7 @@
                     "fill": "0x6ab553"
                 },
                 {
-                    "text": "Plum"
+                    "text": "Слива"
                 },
                 {
                     "fill": "0x6ab553"
@@ -370,23 +370,23 @@
                     "fill": "0xa8986a"
                 }
             ],
-            "text": "The fruiting calendar for fruit trees.",
-            "title": "Fruit Trees",
+            "text": "Календарь плодоношения фруктовых деревьев.",
+            "title": "Фруктовые деревья",
             "legend": [
                 {
-                    "text": "Dormant",
+                    "text": "Спячка",
                     "color": "0xa8986a"
                 },
                 {
-                    "text": "Healthy",
+                    "text": "Рост",
                     "color": "0x6ab553"
                 },
                 {
-                    "text": "Flowering",
+                    "text": "Цветение",
                     "color": "0xcca0db"
                 },
                 {
-                    "text": "Fruiting",
+                    "text": "Плодоношение",
                     "color": "0xa217ff"
                 }
             ],
@@ -445,7 +445,7 @@
                     "text": "Дек"
                 },
                 {
-                    "text": "Banana"
+                    "text": "Банан"
                 },
                 {
                     "fill": "0xa8986a"
@@ -484,7 +484,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Cocoa"
+                    "text": "Какао"
                 },
                 {
                     "fill": "0x6ab553"
@@ -523,7 +523,7 @@
                     "fill": "0x6ab553"
                 },
                 {
-                    "text": "Fig"
+                    "text": "Инжир"
                 },
                 {
                     "fill": "0x6ab553"
@@ -562,23 +562,23 @@
                     "fill": "0x6ab553"
                 }
             ],
-            "text": "The fruiting calendar for fruit trees.",
-            "title": "Fruit Trees",
+            "text": "Календарь плодоношения фруктовых деревьев.",
+            "title": "Фруктовые деревья",
             "legend": [
                 {
-                    "text": "Dormant",
+                    "text": "Спячка",
                     "color": "0xa8986a"
                 },
                 {
-                    "text": "Healthy",
+                    "text": "Рост",
                     "color": "0x6ab553"
                 },
                 {
-                    "text": "Flowering",
+                    "text": "Цветение",
                     "color": "0xcca0db"
                 },
                 {
-                    "text": "Fruiting",
+                    "text": "Плодоношение",
                     "color": "0xa217ff"
                 }
             ],
@@ -597,7 +597,7 @@
         {
             "type": "patchouli:text",
             "anchor": "cherry",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -8 - 25 °C$(br)$(bold)$(l:the_world/climate#calendar)Growth Days$(): 8$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 100 - 350mm$(br2)Cherry trees grow in the months of January through March, start flowering in April and May, and bear fruit in June.",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -8 - 25 °C$(br)$(bold)$(l:the_world/climate#calendar)Дней роста$(): 8$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Осадки$(): 100 - 350 мм$(br2)Вишнёвые деревья растут с января по март, цветут в апреле и мае и плодоносят в июне.",
             "title": "Вишневое дерево"
         },
         {
@@ -821,7 +821,7 @@
         {
             "type": "patchouli:text",
             "anchor": "green_apple",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -12 - 25 °C$(br)$(bold)$(l:the_world/climate#calendar)Growth Days$(): 10$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 13 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 110 - 280mm$(br2)Green apple trees grow from March to July, start flowering in August and September, and bear fruit in October.",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -12 - 25 °C$(br)$(bold)$(l:the_world/climate#calendar)Дней роста$(): 10$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 13 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Осадки$(): 110 - 280 мм$(br2)Деревья зелёных яблок растут с марта по июль, цветут в августе и сентябре и плодоносят в октябре.",
             "title": "Зеленая яблоня"
         },
         {
@@ -1045,7 +1045,7 @@
         {
             "type": "patchouli:text",
             "anchor": "lemon",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 0 - 30 °C$(br)$(bold)$(l:the_world/climate#calendar)Growth Days$(): 8$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 21 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 180 - 470mm$(br2)Lemon trees grow from February to May, start flowering in June and July, and bear fruit in August.",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 0 - 30 °C$(br)$(bold)$(l:the_world/climate#calendar)Дней роста$(): 8$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 21 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Осадки$(): 180 - 470 мм$(br2)Лимонные деревья растут с февраля по май, цветут в июне и июле и плодоносят в августе.",
             "title": "Лимонное дерево"
         },
         {
@@ -1269,7 +1269,7 @@
         {
             "type": "patchouli:text",
             "anchor": "olive",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -8 - 25 °C$(br)$(bold)$(l:the_world/climate#calendar)Growth Days$(): 12$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 18 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 150 - 500mm$(br2)Olive trees grow from March to July, start flowering in August and September, and bear fruit in October.$(br2)Olives can be used to produce $(thing)Olive Oil$(), which can be used as a fuel for lamps.",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -8 - 25 °C$(br)$(bold)$(l:the_world/climate#calendar)Дней роста$(): 12$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 18 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Осадки$(): 150 - 500 мм$(br2)Оливковые деревья растут с марта по июль, цветут в августе и сентябре и плодоносят в октябре.$(br2)Из оливок делают $(thing)оливковое масло$(), которое годится как топливо для ламп.",
             "title": "Оливковое дерево"
         },
         {
@@ -1493,7 +1493,7 @@
         {
             "type": "patchouli:text",
             "anchor": "orange",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 7 - 36 °C$(br)$(bold)$(l:the_world/climate#calendar)Growth Days$(): 7$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 30 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 250 - 500mm$(br2)Orange trees grow from March to June, start flowering in July and August, and bear fruit in September.",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 7 - 36 °C$(br)$(bold)$(l:the_world/climate#calendar)Дней роста$(): 7$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 30 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Осадки$(): 250 - 500 мм$(br2)Апельсиновые деревья растут с марта по июнь, цветут в июле и августе и плодоносят в сентябре.",
             "title": "Апельсиновое дерево"
         },
         {
@@ -1717,7 +1717,7 @@
         {
             "type": "patchouli:text",
             "anchor": "peach",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -10 - 27 °C$(br)$(bold)$(l:the_world/climate#calendar)Growth Days$(): 11$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 7 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 60 - 230mm$(br2)Peach trees grow from December to March, start flowering in April and May, and bear fruit in June.",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -10 - 27 °C$(br)$(bold)$(l:the_world/climate#calendar)Дней роста$(): 11$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 7 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Осадки$(): 60 - 230 мм$(br2)Персиковые деревья растут с декабря по март, цветут в апреле и мае и плодоносят в июне.",
             "title": "Персиковое дерево"
         },
         {
@@ -1941,7 +1941,7 @@
         {
             "type": "patchouli:text",
             "anchor": "plum",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 31 °C$(br)$(bold)$(l:the_world/climate#calendar)Growth Days$(): 8$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 30 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 250 - 400mm$(br2)Plum trees grow from January to April, start flowering in May and June, and bear fruit in July.",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 5 - 31 °C$(br)$(bold)$(l:the_world/climate#calendar)Дней роста$(): 8$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 30 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Осадки$(): 250 - 400 мм$(br2)Сливовые деревья растут с января по апрель, цветут в мае и июне и плодоносят в июле.",
             "title": "Сливовое дерево"
         },
         {
@@ -2165,7 +2165,7 @@
         {
             "type": "patchouli:text",
             "anchor": "red_apple",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -12 - 25 °C$(br)$(bold)$(l:the_world/climate#calendar)Growth Days$(): 10$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 100 - 280mm$(br2)Red Apple trees grow from March to July, start flowering in August and September, and bear fruit in October.",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -12 - 25 °C$(br)$(bold)$(l:the_world/climate#calendar)Дней роста$(): 10$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Осадки$(): 100 - 280 мм$(br2)Деревья красных яблок растут с марта по июль, цветут в августе и сентябре и плодоносят в октябре.",
             "title": "Красная яблоня"
         },
         {
@@ -2389,12 +2389,12 @@
         {
             "type": "patchouli:text",
             "anchor": "cocoa",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 15 - 35 °C$(br)$(bold)$(l:the_world/climate#calendar)Growth Days$(): 8$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 26 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 220 - 400mm$(br2)Cocoa trees are used to make $(l:cooking/chocolate_confections)Chocolate$().$(br2)They grow from December to March, start flowering in April and May, and bear fruit in June.",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 15 - 35 °C$(br)$(bold)$(l:the_world/climate#calendar)Дней роста$(): 8$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 26 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Осадки$(): 220 - 400 мм$(br2)Из какао-деревьев делают $(l:cooking/chocolate_confections)шоколад$().$(br2)Они растут с декабря по март, цветут в апреле и мае и плодоносят в июне.",
             "title": "Какао-дерево"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "An example cocoa tree.",
+            "text": "Пример какао-дерева.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -2613,12 +2613,12 @@
         {
             "type": "patchouli:text",
             "anchor": "fig",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 15 - 35 °C$(br)$(bold)$(l:the_world/climate#calendar)Growth Days$(): 8$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 15 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 125 - 215mm$(br2)They grow from November to February, start flowering in March and April, and bear fruit in May.",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 15 - 35 °C$(br)$(bold)$(l:the_world/climate#calendar)Дней роста$(): 8$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 15 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Осадки$(): 125 - 215 мм$(br2)Они растут с ноября по февраль, цветут в марте и апреле и плодоносят в мае.",
             "title": "Фиговое дерево"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "An example fig tree.",
+            "text": "Пример инжирного дерева.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -2837,7 +2837,7 @@
         {
             "type": "patchouli:text",
             "anchor": "banana",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 17 - 35 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 33 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 280 - 500mm$(br2)Bananas are a special kind of fruit tree. They grow only vertically, lack leaves, and only fruit at the topmost block. Saplings are dropped from the flowering part of the plant. Once a banana plant is harvested, it dies, and will not produce any more fruit. It must be replanted in the spring.",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 17 - 35 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 33 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Осадки$(): 280 - 500 мм$(br2)Бананы — особый вид фруктового дерева. Они растут только вверх, не имеют листьев и плодоносят лишь на самом верхнем блоке. Саженцы выпадают из цветущей части растения. После сбора урожая банан погибает и больше не плодоносит — его нужно пересадить весной.",
             "title": "Банановое дерево"
         },
         {
@@ -2945,12 +2945,12 @@
         {
             "type": "patchouli:text",
             "anchor": "palm_fruit_trees",
-            "text": "$(thing)Palm Fruit Trees$() are another variety of fruit-bearing trees that can typically be found along coasts near sea water.$(br2)Palm fruit trees will develop fruit clusters when within their $(l:the_world/climate#climate)Climate Range$() and during their fruiting season. Clusters grow attached to the \"head/crown\" of the tree and advance in age once per day until mature. Mature fruit clusters can be harvested by throwing projectiles (except snowballs) at them, $(item)$(k:key.use)$() them, or using $(item)Harvest Baskets$() on them.",
-            "title": "Palm Fruit Trees"
+            "text": "$(thing)Плодовые пальмы$() — ещё один вид плодовых деревьев, обычно растущих по побережьям у морской воды.$(br2)Плодовые пальмы образуют грозди плодов, когда находятся в своём $(l:the_world/climate#climate)климатическом диапазоне$() и в сезон плодоношения. Грозди растут на «кроне» дерева и раз в день становятся старше, пока не созреют. Спелые грозди можно собрать, бросив в них снаряд (кроме снежков), нажав по ним $(item)$(k:key.use)$() или применив $(item)лукошко$().",
+            "title": "Плодовые пальмы"
         },
         {
             "type": "patchouli:text",
-            "text": "To transplant palm fruit trees you can harvest their crown block with an axe to yield 1-2 saplings. Saplings can be planted on dirt or sand and will grow during their season and when $(l:agriculture/growing_crops#hydration)Hydration$() and $(l:the_world/climate#temperature)Average Temperature$() are valid. Saplings will grow in multiple stages, taking around 5 days per stage. Their final height is determined by the tree type.$(br)Palm fruit saplings can also be planted in $(thing)Hanging Planters$()."
+            "text": "Чтобы пересадить плодовую пальму, сруби топором блок кроны — выпадет 1–2 саженца. Саженцы сажают на землю или песок; они растут в свой сезон, если подходят $(l:agriculture/growing_crops#hydration)увлажнение$() и $(l:the_world/climate#temperature)средняя температура$(). Рост идёт в несколько стадий, примерно по 5 дней каждая. Итоговая высота зависит от вида пальмы.$(br)Саженцы плодовых пальм можно сажать и в $(thing)подвесные лотки для растений$()."
         },
         {
             "type": "tfg:table",
@@ -2995,7 +2995,7 @@
                     "text": "Дек"
                 },
                 {
-                    "text": "Coconut"
+                    "text": "Кокос"
                 },
                 {
                     "fill": "0xa8986a"
@@ -3034,7 +3034,7 @@
                     "fill": "0xa217ff"
                 },
                 {
-                    "text": "Date"
+                    "text": "Финик"
                 },
                 {
                     "fill": "0xa8986a"
@@ -3073,15 +3073,15 @@
                     "fill": "0xa217ff"
                 }
             ],
-            "text": "The fruiting calendar for palm fruit trees.",
-            "title": "Palm Fruit Trees",
+            "text": "Календарь плодоношения плодовых пальм.",
+            "title": "Плодовые пальмы",
             "legend": [
                 {
-                    "text": "Dormant",
+                    "text": "Спячка",
                     "color": "0xa8986a"
                 },
                 {
-                    "text": "Fruiting",
+                    "text": "Плодоношение",
                     "color": "0xa217ff"
                 }
             ],
@@ -3100,12 +3100,12 @@
         {
             "type": "patchouli:text",
             "anchor": "coconut",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 45 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 35 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 175 - 500mm$(br2)Coconut trees are a special kind of palm fruit tree. Coconut clusters grow in 7 stages. They can be harvested while green for young coconuts which provide coconut milk. Or they can be harvested when mature for coconut flesh. Be careful when harvesting coconut trees as they will deliver a strong blow if they fall on you.",
-            "title": "Coconut Tree"
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 5 - 45 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 35 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Осадки$(): 175 - 500 мм$(br2)Кокосовая пальма — особый вид плодовой пальмы. Грозди кокосов проходят 7 стадий. Зелёные грозди дают молодые кокосы с кокосовым молоком, а спелые — кокосовую мякоть. Осторожнее при сборе: падающий кокос бьёт очень больно.",
+            "title": "Кокосовая пальма"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "An example coconut tree.",
+            "text": "Пример кокосовой пальмы.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -4100,12 +4100,12 @@
         {
             "type": "patchouli:text",
             "anchor": "date",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 20 - 50 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 40 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 200 - 500mm$(br2)Date trees can be harvested for fruit when their clusters fully mature. Date clusters grow in 4 stages and provide 4-8 item drops when harvested.",
-            "title": "Date Tree"
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 20 - 50 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 40 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Осадки$(): 200 - 500 мм$(br2)С финиковой пальмы собирают плоды, когда грозди полностью созреют. Грозди фиников проходят 4 стадии и при сборе дают 4–8 предметов.",
+            "title": "Финиковая пальма"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "An example date tree.",
+            "text": "Пример финиковой пальмы.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -4745,7 +4745,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Any mature bush block can grow berries, which are harvestable with $(item)$(k:key.use)$() or by using $(item)Harvest Baskets$().$(br2)Fruit bushes may also be placed in greenhouse $(item)Trellis Planters$() to grow year-round in any climate."
+            "text": "Любой взрослый блок куста может дать ягоды; их собирают через $(item)$(k:key.use)$() или $(item)лукошком$().$(br2)Ягодные кусты можно также посадить на тепличные $(item)подпорки для кустов$(), чтобы они росли круглый год в любом климате."
         },
         {
             "type": "tfg:table",
@@ -4791,7 +4791,7 @@
                     "text": "Дек"
                 },
                 {
-                    "text": "Snowberry"
+                    "text": "Снежноягодник"
                 },
                 {
                     "fill": "0xa8986a"
@@ -4830,7 +4830,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Bunchberry"
+                    "text": "Кизил"
                 },
                 {
                     "fill": "0xa8986a"
@@ -4869,7 +4869,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Gooseberry"
+                    "text": "Крыжовник"
                 },
                 {
                     "fill": "0xa8986a"
@@ -4908,7 +4908,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Cloudberry"
+                    "text": "Морошка"
                 },
                 {
                     "fill": "0xa8986a"
@@ -4947,7 +4947,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Strawberry"
+                    "text": "Клубника"
                 },
                 {
                     "fill": "0xcca0db"
@@ -5025,7 +5025,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Cranberry"
+                    "text": "Клюква"
                 },
                 {
                     "fill": "0xa8986a"
@@ -5068,19 +5068,19 @@
             "title": "Ягодные кусты",
             "legend": [
                 {
-                    "text": "Dormant",
+                    "text": "Спячка",
                     "color": "0xa8986a"
                 },
                 {
-                    "text": "Healthy",
+                    "text": "Рост",
                     "color": "0x6ab553"
                 },
                 {
-                    "text": "Flowering",
+                    "text": "Цветение",
                     "color": "0xcca0db"
                 },
                 {
-                    "text": "Fruiting",
+                    "text": "Плодоношение",
                     "color": "0xa217ff"
                 }
             ],
@@ -5139,7 +5139,7 @@
                     "text": "Дек"
                 },
                 {
-                    "text": "Nightshade"
+                    "text": "Паслён"
                 },
                 {
                     "fill": "0xa8986a"
@@ -5178,7 +5178,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Pineapple"
+                    "text": "Ананас"
                 },
                 {
                     "fill": "0xa8986a"
@@ -5217,23 +5217,23 @@
                     "fill": "0xa8986a"
                 }
             ],
-            "text": "The fruiting calendar for berry bushes.",
-            "title": "Berry Bushes",
+            "text": "Календарь плодоношения ягодных кустов.",
+            "title": "Ягодные кусты",
             "legend": [
                 {
-                    "text": "Dormant",
+                    "text": "Спячка",
                     "color": "0xa8986a"
                 },
                 {
-                    "text": "Healthy",
+                    "text": "Рост",
                     "color": "0x6ab553"
                 },
                 {
-                    "text": "Flowering",
+                    "text": "Цветение",
                     "color": "0xcca0db"
                 },
                 {
-                    "text": "Fruiting",
+                    "text": "Плодоношение",
                     "color": "0xa217ff"
                 }
             ],
@@ -5252,8 +5252,8 @@
         {
             "type": "patchouli:text",
             "anchor": "blackberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -10 - 15 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 200 - 500mm$(br2)Blackberry bushes grow from February to May, start flowering in June and July, and bear fruit in August.$(br2)They can be found in areas with few trees.",
-            "title": "Blackberry Bush"
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -10 - 15 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Осадки$(): 200 - 500 мм$(br2)Кусты ежевики растут с февраля по май, цветут в июне и июле и плодоносят в августе.$(br2)Встречаются в местах, где мало деревьев.",
+            "title": "Куст ежевики"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5352,8 +5352,8 @@
         {
             "type": "patchouli:text",
             "anchor": "raspberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -5 - 20 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 200 - 500mm$(br2)Raspberry bushes grow from April to July, start flowering in August and September, and bear fruit in October.$(br2)They can be found in areas with few trees.",
-            "title": "Raspberry Bush"
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -5 - 20 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Осадки$(): 200 - 500 мм$(br2)Кусты малины растут с апреля по июль, цветут в августе и сентябре и плодоносят в октябре.$(br2)Встречаются в местах, где мало деревьев.",
+            "title": "Куст малины"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5452,8 +5452,8 @@
         {
             "type": "patchouli:text",
             "anchor": "blueberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -5 - 20 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 100 - 400mm$(br2)Blueberry bushes grow from February to May, start flowering in June and July, and bear fruit in August.$(br2)They can be found in areas with few trees.",
-            "title": "Blueberry Bush"
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -5 - 20 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Осадки$(): 100 - 400 мм$(br2)Кусты черники растут с февраля по май, цветут в июне и июле и плодоносят в августе.$(br2)Встречаются в местах, где мало деревьев.",
+            "title": "Куст черники"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5552,8 +5552,8 @@
         {
             "type": "patchouli:text",
             "anchor": "elderberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 33 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 100 - 400mm$(br2)Elderberry bushes grow from February to May, start flowering in June and July, and bear fruit in August.$(br2)They can be found in areas with few trees.",
-            "title": "Elderberry Bush"
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 5 - 33 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Осадки$(): 100 - 400 мм$(br2)Кусты бузины растут с февраля по май, цветут в июне и июле и плодоносят в августе.$(br2)Встречаются в местах, где мало деревьев.",
+            "title": "Куст бузины"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5703,8 +5703,8 @@
         {
             "type": "patchouli:text",
             "anchor": "bunchberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 35 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 200 - 500mm$(br2)Bunchberry bushes grow from May to July, start flowering in August and September, and bear fruit in October.$(br2)They can be found in forests.",
-            "title": "Bunchberry Bush"
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 35 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Осадки$(): 200 - 500 мм$(br2)Кусты кизила растут с мая по июль, цветут в августе и сентябре и плодоносят в октябре.$(br2)Встречаются в лесах.",
+            "title": "Куст кизила"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5767,8 +5767,8 @@
         {
             "type": "patchouli:text",
             "anchor": "gooseberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -5 - 27 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 200 - 500mm$(br2)Gooseberry bushes grow from April to July, start flowering in August and September, and bear fruit in October.$(br2)They can be found in forests.",
-            "title": "Gooseberry Bush"
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -5 - 27 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Осадки$(): 200 - 500 мм$(br2)Кусты крыжовника растут с апреля по июль, цветут в августе и сентябре и плодоносят в октябре.$(br2)Встречаются в лесах.",
+            "title": "Куст крыжовника"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5831,8 +5831,8 @@
         {
             "type": "patchouli:text",
             "anchor": "snowberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -25 - 5 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 200 - 500mm$(br2)Snowberry bushes grow from March to June, start flowering in July and August, and bear fruit in September.$(br2)They can be found in forests.",
-            "title": "Snowberry Bush"
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -25 - 5 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Осадки$(): 200 - 500 мм$(br2)Кусты снежноягодника растут с марта по июнь, цветут в июле и августе и плодоносят в сентябре.$(br2)Встречаются в лесах.",
+            "title": "Куст снежноягодника"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5895,8 +5895,8 @@
         {
             "type": "patchouli:text",
             "anchor": "cloudberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -15 - 10 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 9 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 250 - 500mm$(br2)Cloudberry bushes grow from February to May, start flowering in June to August, and bear fruit in September.$(br2)They can be found in forests.",
-            "title": "Cloudberry Bush"
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -15 - 10 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 9 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Осадки$(): 250 - 500 мм$(br2)Кусты морошки растут с февраля по май, цветут с июня по август и плодоносят в сентябре.$(br2)Встречаются в лесах.",
+            "title": "Куст морошки"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5959,8 +5959,8 @@
         {
             "type": "patchouli:text",
             "anchor": "strawberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 0 - 28 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 100 - 400mm$(br2)Strawberry bushes grow from October to December, start flowering in January and February, and bear fruit in March.$(br2)They can be found in forests.",
-            "title": "Strawberry Bush"
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 0 - 28 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Осадки$(): 100 - 400 мм$(br2)Кусты клубники растут с октября по декабрь, цветут в январе и феврале и плодоносят в марте.$(br2)Встречаются в лесах.",
+            "title": "Куст клубники"
         },
         {
             "type": "tfg:multimultiblock",
@@ -6023,8 +6023,8 @@
         {
             "type": "patchouli:text",
             "anchor": "wintergreen_berry",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -20 - 15 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 10 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 50 - 350mm$(br2)Wintergreen berry bushes grow from May to September, start flowering in October and November, and bear fruit in December.$(br2)They can be found in forests.",
-            "title": "Wintergreen Berry Bush"
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -20 - 15 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 10 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Осадки$(): 50 - 350 мм$(br2)Кусты брусники растут с мая по сентябрь, цветут в октябре и ноябре и плодоносят в декабре.$(br2)Встречаются в лесах.",
+            "title": "Куст брусники"
         },
         {
             "type": "tfg:multimultiblock",
@@ -6087,8 +6087,8 @@
         {
             "type": "patchouli:text",
             "anchor": "cranberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -10 - 17 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 30 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 250 - 500mm$(br2)Cranberry bushes grow from March to June, start flowering in July and August, and bear fruit in September.$(br2)They can be found in forests. Unlike most small bushes, cranberry bushes are grown underwater.",
-            "title": "Cranberry Bush"
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -10 - 17 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 30 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Осадки$(): 250 - 500 мм$(br2)Кусты клюквы растут с марта по июнь, цветут в июле и августе и плодоносят в сентябре.$(br2)Встречаются в лесах. В отличие от большинства маленьких кустов, клюква растёт под водой.",
+            "title": "Куст клюквы"
         },
         {
             "type": "tfg:multimultiblock",
@@ -6151,12 +6151,12 @@
         {
             "type": "patchouli:text",
             "anchor": "nightshade",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 0 - 24 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 200 - 400mm$(br2)Nightshade berry bushes grow from February to June, start flowering in July, and bear fruit in August.$(br2)They can be found in forests and are $(c)Poisonous$().",
-            "title": "Nightshade Berry Bush"
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 0 - 24 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Осадки$(): 200 - 400 мм$(br2)Кусты паслёна растут с февраля по июнь, цветут в июле и плодоносят в августе.$(br2)Встречаются в лесах и $(c)ядовиты$().",
+            "title": "Куст паслёна"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "The monthly stages of a nightshade bush.",
+            "text": "Стадии куста паслёна по месяцам.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -6215,12 +6215,12 @@
         {
             "type": "patchouli:text",
             "anchor": "pineapple",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 15 - 32 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 30 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 250 - 500mm$(br2)Pineapple bushes grow from March to June, start flowering in July and August, and bear fruit in September.$(br2)They can be found in forests and are used to make $(l:agriculture/leather_making#pineapple_leather)Pineapple Leather$().",
-            "title": "Pineapple Bush"
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 15 - 32 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 30 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Осадки$(): 250 - 500 мм$(br2)Кусты ананаса растут с марта по июнь, цветут в июле и августе и плодоносят в сентябре.$(br2)Встречаются в лесах; из них делают $(l:agriculture/leather_making#pineapple_leather)ананасовую кожу$().",
+            "title": "Куст ананаса"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "The monthly stages of a pineapple bush.",
+            "text": "Стадии куста ананаса по месяцам.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -6279,12 +6279,12 @@
         {
             "type": "patchouli:text",
             "anchor": "red_grapes",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 0 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 0 - 100 %$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 125 - 500mm$(br2)Red grapes spawn naturally, but once harvested from the wild they need to grow on $(item)Trellises$() to produce product.",
-            "title": "Red Grapes"
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 0 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 0 - 100 %$(br)$(bold)$(l:the_world/climate#rainfall)Осадки$(): 125 - 500 мм$(br2)Красный виноград растёт в дикой природе, но после сбора ему нужны $(item)шпалеры$(), чтобы давать урожай.",
+            "title": "Красный виноград"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "A red grape bush.",
+            "text": "Куст красного винограда.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -6317,12 +6317,12 @@
         {
             "type": "patchouli:text",
             "anchor": "white_grapes",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 0 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 0 - 100 %$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 125 - 500mm$(br2)White grapes spawn naturally, but once harvested from the wild they need to grow on $(item)Trellises$() to produce product.",
-            "title": "White Grapes"
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 0 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 0 - 100 %$(br)$(bold)$(l:the_world/climate#rainfall)Осадки$(): 125 - 500 мм$(br2)Белый виноград растёт в дикой природе, но после сбора ему нужны $(item)шпалеры$(), чтобы давать урожай.",
+            "title": "Белый виноград"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "A white grape bush.",
+            "text": "Куст белого винограда.",
             "multiblocks": [
                 {
                     "pattern": [

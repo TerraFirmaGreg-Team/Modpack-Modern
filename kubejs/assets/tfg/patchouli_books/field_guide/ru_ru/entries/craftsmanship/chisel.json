@@ -1,19 +1,19 @@
 {
-    "name": "Chisels",
+    "name": "Зубила",
     "category": "tfg:craftsmanship",
     "icon": "tfc:metal/chisel/wrought_iron",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "Chisels are a tool for creating decorative forms of other blocks, including slabs and stairs. In order to get started, you will need a $(thing)Chisel$() and any type of $(thing)Hammer$(). Chisels must be cast in molds or forged on an $(l:craftsmanship/anvils)Anvil$(). In order to start chiseling, hold the chisel in your main hand and a hammer in your offhand, and target a block in the world."
+            "text": "Зубило — инструмент для создания декоративных вариантов блоков, включая плиты и ступеньки. Для начала нужны $(thing)зубило$() и любой $(thing)молот$(). Зубила отливают в формах или куют на $(l:craftsmanship/anvils)наковальне$(). Чтобы начать работу, возьми зубило в основную руку, молот во вторую и наведи курсор на блок в мире."
         },
         {
             "type": "patchouli:text",
-            "text": "Если вы можете долбить этот блок, будет показан $(c)красный контур$() блока, который будет долблен, в зависимости от выбранного $(thing)Режима$() долота.$(br2)У долота есть три режима, которые можно переключать, используя $(item)$(k:tfc.key.cycle_chisel_mode)$(): $(thing)плита$(), $(thing)ступенька$() и $(thing)шлифовка$(). Индикатор вашего режима долота должен появиться рядом с панелью быстрого доступа."
+            "text": "Если блок можно обработать зубилом, вокруг него появится $(c)красный контур$() — в зависимости от выбранного $(thing)режима$().$(br2)У зубила три режима, которые переключаются клавишей $(item)$(k:tfc.key.cycle_chisel_mode)$(): $(thing)плита$(), $(thing)ступенька$() и $(thing)шлифовка$(). Значок текущего режима отображается рядом с панелью быстрого доступа."
         },
         {
             "type": "patchouli:text",
-            "text": "Нажмите $(item)$(k:key.use)$(), чтобы превратить блок в форму, выделенную красным. Если вы выдолбили плиту, половина блока, который вы долбили, отвалится, и вы сможете ее подобрать. Измените ориентацию вашего игрока и мыши, чтобы изменить ориентацию выдолбленного блока. Как правило, ориентация выдолбленного блока будет такой же, как если бы вы разместили его в этой ориентации самостоятельно."
+            "text": "Нажми $(item)$(k:key.use)$(), чтобы придать блоку форму, выделенную красным. Если ты вырезаешь плиту, отколотая половина блока выпадет, и её можно подобрать. Чтобы изменить ориентацию обработанного блока, поверни персонажа и наведи курсор по-другому. Как правило, блок будет ориентирован так же, как если бы ты сам поставил его в таком положении."
         },
         {
             "type": "patchouli:image",
@@ -22,17 +22,17 @@
                 "tfc:textures/gui/book/tutorial/chisel_stair.png",
                 "tfc:textures/gui/book/tutorial/chisel_slab.png"
             ],
-            "text": "$(bold)Tutorial Slideshow:$() The three chisel modes usable on a $(thing)Raw Limestone$() block.",
+            "text": "$(bold)Обучающее слайд-шоу:$() три режима зубила на блоке $(thing)известняка$().",
             "border": true
         },
         {
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/rock/marble_smooth",
-            "text": "Долото также может использоваться в некоторых рецептах крафта как сокращение для больших количеств."
+            "text": "Зубило также используется в некоторых рецептах крафта — так удобнее обрабатывать много блоков сразу."
         },
         {
             "type": "patchouli:text",
-            "text": "Be careful! Chiseling in a mineshaft is not safe. Each time you chisel, there is a chance of $(l:game_mechanics/mining#supports)Collapse$()."
+            "text": "Осторожно! Работать зубилом в шахте небезопасно. Каждый раз есть шанс $(l:game_mechanics/mining#supports)обвала$()."
         },
         {
             "type": "patchouli:relations",

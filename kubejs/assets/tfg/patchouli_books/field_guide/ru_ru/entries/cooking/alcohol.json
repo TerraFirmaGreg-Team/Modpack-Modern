@@ -7,13 +7,13 @@
         "type": "patchouli:text",
         "title": "Каталог",
         "anchor": "index",
-        "text": "$(li)$(bold)$(l:cooking/drinks#alcohol)Алкоголь$()$(li)$(bold)$(l:cooking/drinks#aged_alcohol)Выдержанный алкоголь$()$(li)$(bold)$(l:cooking/drinks#vintage_alcohol)Старинный алкоголь$()$(li)$(bold)$(l:cooking/alcohol#wine_making)Изготовление вина$()$(li2)$(l:cooking/alcohol#wine_properties)Свойства вина$()$(li)$(bold)$(l:cooking/alcohol#wine_shelf)Винная полка$()"
+        "text": "$(li)$(bold)$(l:cooking/drinks#alcohol)Алкоголь$()$(li)$(bold)$(l:cooking/drinks#aged_alcohol)Выдержанный алкоголь$()$(li)$(bold)$(l:cooking/drinks#vintage_alcohol)Элитный алкоголь$()$(li)$(bold)$(l:cooking/alcohol#wine_making)Изготовление вина$()$(li2)$(l:cooking/alcohol#wine_properties)Свойства вина$()$(li)$(bold)$(l:cooking/alcohol#wine_shelf)Винная полка$()"
     },
     {
         "type": "patchouli:text",
         "title": "Производство вина",
         "anchor": "wine_making",
-        "text": "$(thing)Виноделие$() — это процесс превращения $(thing)винограда$() в алкоголь. Сначала найдите в дикой природе $(l:the_world/wild_fruits#red_grapes)красный виноград$() или $(l:the_world/wild_fruits#white_grapes)белый виноград$(), а затем вырастите растения из их семян на $(thing)виноградных шпалерах$(), чтобы получить $(item)виноград$(). Эффекты вина можно посмотреть $(l:cooking/drinks#wine)здесь$()."
+        "text": "$(thing)Виноделие$() — это процесс превращения $(thing)винограда$() в алкоголь. Сначала найди в дикой природе $(l:the_world/wild_fruits#red_grapes)красный виноград$() или $(l:the_world/wild_fruits#white_grapes)белый виноград$(), а затем вырасти растения из их семян на $(thing)виноградных шпалерах$(), чтобы получить $(item)виноград$(). Эффекты вина можно посмотреть $(l:cooking/drinks#wine)здесь$()."
     },
     {
         "type": "patchouli:spotlight",
@@ -22,7 +22,7 @@
         "item": {
         "tag": "firmalife:stomping_barrels"
         },
-        "text": "Виноград необходимо раздавить в $(thing)бочке для топтания$(), $(thing)жерновах$() или $(l:cooking/cooking_methods#food_processor)кухонном комбайне$(), чтобы получить раздавленный виноград. Чтобы использовать бочку для топтания, нажмите $(item)$(k:key.use)$() со свежим виноградом в руке. Затем 16 раз подпрыгните на бочке. Нажмите $(item)$(k:key.use)$() с пустой рукой, чтобы забрать полученные предметы.$(br2)Затем поместите раздавленный виноград в бочку, герметично закройте её и оставьте на 5 дней для $(thing)ферментации$()."
+        "text": "Виноград необходимо раздавить в $(thing)бочке для топки$(), $(thing)жёрнове$() или $(l:cooking/cooking_methods#food_processor)кухонном комбайне$(), чтобы получить раздавленный виноград. Чтобы использовать бочку для топки, нажми $(item)$(k:key.use)$() со свежим виноградом в руке. Затем 16 раз подпрыгни на бочке. Нажми $(item)$(k:key.use)$() пустой рукой, чтобы забрать полученные предметы.$(br2)Затем помести раздавленный виноград в бочку, запечатай её и оставь на 5 дней для $(thing)ферментации$()."
     },
     {
         "type": "patchouli:crafting",
@@ -70,7 +70,7 @@
         "title": "Винная полка",
         "anchor": "wine_shelf",
         "recipe": "firmalife:crafting/wood/hickory_wine_shelf",
-        "text": "$(thing)Полка для вина$() — идеальный аксессуар для вашего виноградника, позволяющий стильно демонстрировать и хранить ваши бутылки вина."
+        "text": "$(thing)Полка для вина$() — идеальный аксессуар для твоего виноградника, позволяющий стильно выставлять и хранить твои бутылки вина."
     },
     {
         "type": "patchouli:relations",

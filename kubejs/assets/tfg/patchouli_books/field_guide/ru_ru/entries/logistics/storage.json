@@ -1,31 +1,31 @@
 {
-    "name": "Storage",
+    "name": "Хранение",
     "category": "tfg:logistics",
     "icon": "tfc:wood/chest/douglas_fir",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)Item Storage$()$(li2)$(l:logistics/storage#chests)Chests$()$(li2)$(l:logistics/storage#crates)Crates$()$(li2)$(l:logistics/storage#vaults)Vaults$()$(li2)$(l:logistics/storage#super_chests)Super Chests$()$(li)$(bold)Item & Fluid Storage$()$(li2)$(l:logistics/storage#ae2)ME Storage$()$(li2)$(l:logistics/storage#kegs)Kegs$()$(li)$(bold)Fluid Storage$()$(li2)$(l:logistics/storage#barrels)Barrels$()$(li2)$(l:logistics/storage#drums)Drums$()$(li2)$(l:logistics/storage#fluid_tanks)Fluid Tanks$()$(li2)$(l:logistics/storage#multiblock_tanks)Multiblock Tanks$()$(li2)$(l:logistics/storage#super_tanks)Super Tanks$()",
+            "text": "$(li)$(bold)Хранение предметов$()$(li2)$(l:logistics/storage#chests)Сундуки$()$(li2)$(l:logistics/storage#crates)Ящики$()$(li2)$(l:logistics/storage#vaults)Хранилища$()$(li2)$(l:logistics/storage#super_chests)Суперсундуки$()$(li)$(bold)Хранение предметов и жидкостей$()$(li2)$(l:logistics/storage#ae2)ME-хранилище$()$(li2)$(l:logistics/storage#kegs)Бочонки$()$(li)$(bold)Хранение жидкостей$()$(li2)$(l:logistics/storage#barrels)Бочки$()$(li2)$(l:logistics/storage#drums)Цистерны$()$(li2)$(l:logistics/storage#fluid_tanks)Жидкостные баки$()$(li2)$(l:logistics/storage#multiblock_tanks)Многоблочные резервуары$()$(li2)$(l:logistics/storage#super_tanks)Суперрезервуары$()",
             "title": "Каталог",
             "anchor": "index"
         },
         {
             "type": "patchouli:text",
-            "title": "Introduction",
+            "title": "Введение",
             "anchor": "intro",
-            "text": "There are a vast amount of items, materials, and fluids that you will accumulate in $(tfg). It will be important to set up vast storage systems to organize everything. Some of the most important aspects of storage is its $(thing)capacity$() and $(thing)restrictions$(). For on-the-go inventory management you should read up on $(l:logistics/personal_storage)Personal Storage$()."
+            "text": "В $(tfg) у тебя накопится огромное количество предметов, материалов и жидкостей. Важно наладить большие системы хранения, чтобы всё упорядочить. Главное в хранении — $(thing)вместимость$() и $(thing)ограничения$(). Про управление инвентарём в пути читай в статье $(l:logistics/personal_storage)Личные хранилища$()."
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Chests",
+            "title": "Сундуки",
             "anchor": "chests",
             "item": "tag:forge:chests",
-            "text": "Chest can store 18 items or 36 items for double chests. Chests can hold item sized up to $(l:game_mechanics/size_and_weight)Large$().$(br)If $(thing)Food Items$() are present in chests then it will attract rodents. So it is best to store them in $(item)Vessels$()."
+            "text": "В сундук помещается 18 предметов, в двойной — 36. В сундуках можно хранить предметы размером до $(l:game_mechanics/size_and_weight)большого$().$(br)Если в сундуке лежит $(thing)еда$(), она привлекает грызунов. Так что лучше хранить её в $(item)сосудах$()."
         },
         {
             "type": "patchouli:multiblock",
             "enable_visualize": false,
-            "text": "$(bold)TIP$(): Chests come in all wood varients!",
+            "text": "$(bold)СОВЕТ$(): сундуки бывают из любого дерева!",
             "multiblock": {
                 "pattern": [
                     [
@@ -45,12 +45,12 @@
             "title": "Ящики",
             "anchor": "crates",
             "item": "tag:gtceu:crates",
-            "text": "For storage, GregTech has $(item)Crates$() which can hold all sizes of items, with advancing tiers having larger capacity, from 27 to 144 slots.$(br)Crates support logistics covers such as $(thing)Item Filters$(), and $(thing)Rotten Voiding Covers$().$(br)You can even wrap crates with $(item)Tape$() to keep their contents when broken, allowing you to transport large quantities of items."
+            "text": "Для хранения в GregTech есть $(item)ящики$(), в которые помещаются предметы любого размера; чем выше уровень, тем больше вместимость — от 27 до 144 слотов.$(br)Ящики поддерживают логистические улучшения вроде $(thing)предметных фильтров$() и $(thing)улучшения «Удаление гнили»$().$(br)Ящики можно даже обмотать $(item)лентой$(), чтобы при разрушении они сохраняли содержимое, — так удобно перевозить много предметов."
         },
         {
             "type": "patchouli:multiblock",
             "enable_visualize": false,
-            "text": "$(bold)TIP$(): Wooden crates are quite cheap and make for good log storage.",
+            "text": "$(bold)СОВЕТ$(): деревянные ящики довольно дешёвые и хорошо подходят для хранения брёвен.",
             "multiblock": {
                 "pattern": [
                     [
@@ -67,14 +67,14 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Vaults",
+            "title": "Хранилища",
             "anchor": "vaults",
             "item": "create:item_vault,create_connected:item_silo",
-            "text": "Create $(item)Vaults$() are a great method for consolidating a large amount of items, or for adding storage to $(thing)moving contraptions$().$(br)Vaults can be built into large 3D structures to expand their storage by 20 slots per vault. You cannot add/remove items to vaults manually, you will need to use item logistics such as hoppers."
+            "text": "$(item)Хранилища$() Create — отличный способ собрать много предметов в одном месте или добавить хранение $(thing)движущимся штуковинам$().$(br)Из хранилищ можно строить большие трёхмерные структуры: каждый блок добавляет 20 слотов. Класть и забирать предметы вручную нельзя — нужна логистика вроде воронок."
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "$(bold)TIP$(): $(item)Shipping Containers$() are a colorful alternative to vaults.",
+            "text": "$(bold)СОВЕТ$(): $(item)транспортные контейнеры$() — красочная альтернатива хранилищам.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -148,15 +148,15 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Super Chests",
+            "title": "Суперсундуки",
             "anchor": "super_chests",
             "item": "tag:gtceu:super_chests",
-            "text": "Super and Quantum chests are the best way to store and absurd quantity of one item type. The amount of items the chest can hold increases per tier, from 10,000 to 1,024,000,000. Super chests also have built in item voiding, locking, and auto-extraction options."
+            "text": "Супер- и квантовые сундуки — лучший способ хранить абсурдное количество предметов одного типа. Вместимость растёт с уровнем: от 10 000 до 1 024 000 000. У суперсундуков есть встроенное уничтожение лишнего, блокировка и автовыгрузка."
         },
         {
             "type": "patchouli:multiblock",
             "enable_visualize": false,
-            "text": "$(bold)TIP$(): Super chests can be picked up with items inside.",
+            "text": "$(bold)СОВЕТ$(): суперсундуки можно подбирать вместе с предметами внутри.",
             "multiblock": {
                 "pattern": [
                     [
@@ -173,15 +173,15 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "ME Storage",
+            "title": "ME-хранилище",
             "anchor": "ae2",
             "item": "ae2:drive",
-            "text": "Advanced Energistics $(item)Drives$() and $(item)Cells$() allow you to digitize your storage into a very capable and dense logistics and crafting network. Connect an $(item)ME Controller$() and $(thing)Terminal$() to view items inside."
+            "text": "$(item)Накопители$() и $(item)ячейки$() Applied Energistics позволяют оцифровать хранилище в очень мощную и компактную сеть логистики и крафта. Подключи $(item)ME-контроллер$() и $(thing)терминал$(), чтобы видеть предметы внутри."
         },
         {
             "type": "patchouli:multiblock",
             "enable_visualize": false,
-            "text": "$(bold)TIP$(): Higher tier cells can fit more item types, and more \"bytes\".",
+            "text": "$(bold)СОВЕТ$(): ячейки более высокого уровня вмещают больше типов предметов и больше «байтов».",
             "multiblock": {
                 "pattern": [
                     [
@@ -198,15 +198,15 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Kegs",
+            "title": "Бочонки",
             "anchor": "kegs",
             "item": "tag:firmalife:big_barrels",
-            "text": "$(item)Kegs$() have the unique ability to store large amounts of items $(italics)and$() fluids.$(br)Kegs can hold any fluid a barrel can, up to 80,000 mB worth, and can hold up to 36 stacks of $(l:game_mechanics/size_and_weight)Large$() items.$(br2)Kegs cannot process recipes or age alcohol like barrels."
+            "text": "$(item)Бочонки$() уникальны тем, что хранят много предметов $(italics)и$() жидкостей.$(br)В бочонок помещается любая жидкость, которую держит бочка, до 80 000 mB, и до 36 стаков $(l:game_mechanics/size_and_weight)больших$() предметов.$(br2)Бочонки не умеют выполнять рецепты и выдерживать алкоголь, как бочки."
         },
         {
             "type": "patchouli:multiblock",
             "enable_visualize": false,
-            "text": "$(bold)TIP$(): You can insert and extract automatically from any block of the keg.",
+            "text": "$(bold)СОВЕТ$(): закачивать и выкачивать можно автоматически через любой блок бочонка.",
             "multiblock": {
                 "pattern": [
                     [
@@ -232,15 +232,15 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Barrels",
+            "title": "Бочки",
             "anchor": "barrels",
             "item": "tag:tfc:barrels",
-            "text": "$(l:craftsmanship/barrels)Barrels$() aren't just useful for recipes. They are a very cheap way of holding plenty of fluid, up to 10,000 mB per barrel.$(br)When placed on their side, barrels can drip fluid from their tap into containers below, allowing them to auto-ouput at a steady rate.$(br)You can carry a filled barrel on your back to transport its contents."
+            "text": "$(l:craftsmanship/barrels)Бочки$() нужны не только для рецептов. Это очень дешёвый способ хранить много жидкости — до 10 000 mB в одной бочке.$(br)Бочка, положенная на бок, капает жидкостью из крана в ёмкости под ней, то есть сама выдаёт её с постоянной скоростью.$(br)Полную бочку можно нести на спине, чтобы перевезти содержимое."
         },
         {
             "type": "patchouli:multiblock",
             "enable_visualize": false,
-            "text": "$(bold)TIP$(): Barrels can collect rain water when left open exposed to the sky.",
+            "text": "$(bold)СОВЕТ$(): открытая бочка под открытым небом собирает дождевую воду.",
             "multiblock": {
                 "pattern": [
                     [
@@ -260,12 +260,12 @@
             "title": "Бочки",
             "anchor": "drums",
             "item": "tag:gtceu:drums",
-            "text": "$(item)Drums$() are great for storing and carrying fluids. These can hold a large amount of a single fluid type, and different tiers hold more, from 32,000 to 1,024,000 mB worth.$(br2)Drums will retain their fluid when broken, making them ideal for moving fluids around.$(br2)Drums can automatically push fluid out of their bottom face by $(item)$(k:key.use)$() them with a $(thing)Soft Mallet$() or $(thing)Screwdriver$()."
+            "text": "$(item)Цистерны$() (в игре — бочки GregTech, например «Бронзовая бочка») отлично подходят для хранения и переноски жидкостей. В них помещается много жидкости одного типа, и чем выше уровень, тем больше — от 32 000 до 1 024 000 mB.$(br2)При разрушении цистерны сохраняют жидкость, так что идеально подходят для её перевозки.$(br2)Цистерна может сама выталкивать жидкость через нижнюю сторону, если нажать по ней $(item)$(k:key.use)$() $(thing)киянкой$() или $(thing)отвёрткой$()."
         },
         {
             "type": "patchouli:multiblock",
             "enable_visualize": false,
-            "text": "$(bold)TIP$(): Drums can have fluid logistic covers placed on their faces.",
+            "text": "$(bold)СОВЕТ$(): на стороны цистерн можно ставить жидкостные логистические улучшения.",
             "multiblock": {
                 "pattern": [
                     [
@@ -282,14 +282,14 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Fluid Tanks",
+            "title": "Жидкостные баки",
             "anchor": "fluid_tanks",
             "item": "create:fluid_tank,create_connected:fluid_vessel,fluidlogistics:multi_fluid_tank",
-            "text": "$(item)Fluid Tanks$() can be seen as the fluid version of $(l:logistics/storage#vaults)Vaults$(). Individual tanks hold 32,000 mB each, and can be formed into structures to expand their capacity.$(br2)$(item)Multi-Fluid Tanks$() can hold multiple fluid types at a time, but cannot be interacted with manually."
+            "text": "$(item)Жидкостные баки$() — это как бы жидкостная версия $(l:logistics/storage#vaults)хранилищ$(). Каждый бак вмещает 32 000 mB, и из них можно строить структуры побольше.$(br2)$(item)Мультижидкостные баки$() вмещают сразу несколько типов жидкостей, но вручную с ними взаимодействовать нельзя."
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "$(bold)TIP$(): Tanks can be $(item)$(k:key.use)$() with a $(thing)Wrench$() to hide/show their window.",
+            "text": "$(bold)СОВЕТ$(): нажми $(item)$(k:key.use)$() по баку $(thing)гаечным ключом$(), чтобы скрыть или показать окошко.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -419,14 +419,14 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Multiblock Tanks",
+            "title": "Многоблочные резервуары",
             "anchor": "multiblock_tanks",
             "item": "gtceu:wooden_multiblock_tank,gtceu:bronze_multiblock_tank,gtceu:steel_multiblock_tank",
-            "text": "$(item)Multiblock Tanks$() are structures dedicated to storing large quantities of fluids. Each type can have up to two valves and increase in capacity by tier.$(li)$(bold)Wooden Tank$(): 1,000,000 mB Capacity$(li)$(bold)Bronze Tank$(): 4,000,000 mB Capacity$(li)$(bold)Steel Tank$(): 8,000,000 mB Capacity"
+            "text": "$(item)Многоблочные резервуары$() — структуры для хранения огромного количества жидкостей. У каждого вида может быть до двух клапанов, а вместимость растёт с уровнем.$(li)$(bold)Деревянный резервуар$(): 1 000 000 mB$(li)$(bold)Бронзовый резервуар$(): 4 000 000 mB$(li)$(bold)Стальной резервуар$(): 8 000 000 mB"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "$(bold)TIP$(): Multiblock tanks will auto-push fluids from valves on its bottom face.",
+            "text": "$(bold)СОВЕТ$(): многоблочные резервуары сами выталкивают жидкость через клапаны на нижней стороне.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -537,15 +537,15 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Super Tanks",
+            "title": "Суперрезервуары",
             "anchor": "super_tanks",
             "item": "tag:gtceu:super_tanks",
-            "text": "Super and Quantum tanks work similarly to their $(l:logistics/storage#super_chests)Super Chest$() counterparts. They can store an absurd amount of one type of fluid―ranging from 1,000,000 to 1,024,000,000 mb―increasing by tier.$(br)Super Tanks have options for auto-output, voiding, and locking."
+            "text": "Супер- и квантовые резервуары работают как $(l:logistics/storage#super_chests)суперсундуки$(). Они хранят абсурдное количество одного типа жидкости — от 1 000 000 до 1 024 000 000 mB в зависимости от уровня.$(br)У суперрезервуаров есть автовыгрузка, уничтожение лишнего и блокировка."
         },
         {
             "type": "patchouli:multiblock",
             "enable_visualize": false,
-            "text": "$(bold)TIP$(): Super tanks can be picked up with fluid inside.",
+            "text": "$(bold)СОВЕТ$(): суперрезервуары можно подбирать вместе с жидкостью внутри.",
             "multiblock": {
                 "pattern": [
                     [

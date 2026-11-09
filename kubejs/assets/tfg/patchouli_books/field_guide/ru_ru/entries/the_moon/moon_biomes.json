@@ -1,228 +1,228 @@
 {
-	"name": "Moon Biomes",
-	"category": "tfg:the_moon",
-	"icon": "tfg:textures/block/lunar_roots.png",
-	"read_by_default": true,
-	"pages": [
-		{
-			"type": "patchouli:text",
-			"text": "$(thing)The Moon$() is a pretty rocky place wherever you go, but it still has a few different biomes to explore that you may be interested in.$(br2)Looking for somewhere specific? Only some biomes can spawn near each other, with the $(l:the_moon/moon_biomes#sands)Lunar Sands$() and $(l:the_moon/moon_biomes#plains)Lunar Plains$() serving as a sort of \"neutral ground\" between them all."
-		},
-		{
-			"type": "patchouli:text",
-			"anchor": "index",
-			"title": "Contents",
-			"text": "$(li)$(bold)Biomes$()$(li2)$(l:the_moon/moon_biomes#plains)Lunar Plains$()$(li2)$(l:the_moon/moon_biomes#sands)Lunar Sands$()$(li2)$(l:the_moon/moon_biomes#asurine)Asurine Fields$()$(li2)$(l:the_moon/moon_biomes#certus)Certus Fields$()$(li2)$(l:the_moon/moon_biomes#forest)Chorus Forest$()$(li2)$(l:the_moon/moon_biomes#thicket)Chorus Thicket$()$(li2)$(l:the_moon/moon_biomes#maria)Lunar Maria$()$(li2)$(l:the_moon/moon_biomes#reef)Lunar Reef$()$(li2)$(l:the_moon/moon_biomes#scrubland)Lightbloom Scrubland$()$(li2)$(l:the_moon/moon_biomes#stargazers)Lightbloom Star Gazers$()$(li)$(bold)$(l:the_moon/moon_biomes#harvester)Moon Dust Harvester$()$(li2)$(l:the_moon/moon_biomes#regolith)Regolith List$()"
-		},
-		{
-			"type": "patchouli:image",
-			"border": true,
-			"title": "Lunar Plains",
-			"anchor": "plains",
-			"images": [
-				"tfg:textures/gui/field_guide/moon/plains.png"
-			],
-			"text": "$(thing)Lunar Plains$() don't really have anything interesting going on, but they're a nice neutral place to make a base."
-		},
-		{
-			"type": "patchouli:image",
-			"border": true,
-			"title": "Lunar Sands",
-			"anchor": "sands",
-			"images": [
-				"tfg:textures/gui/field_guide/moon/sands.png"
-			],
-			"text": "$(thing)Lunar Sands$() are an alternate version of Lunar Plains that have less vegetation but more sand."
-		},
-		{
-			"type": "patchouli:image",
-			"border": true,
-			"title": "Asurine Fields",
-			"anchor": "asurine",
-			"images": [
-				"tfg:textures/gui/field_guide/moon/asurine.png"
-			],
-			"text": "$(thing)Asurine Fields$() has frequent formations of $(item)Asurine$(). It cannot spawn near $(l:the_moon/moon_biomes#forest)Chorus$() biomes."
-		},
-		{
-			"type": "patchouli:image",
-			"border": true,
-			"title": "Certus Fields",
-			"anchor": "certus",
-			"images": [
-				"tfg:textures/gui/field_guide/moon/certus.png"
-			],
-			"text": "$(thing)Certus Fields$() larger formations of $(item)Asurine$() that also contain large amounts of $(item)Certus Quartz$()."
-		},
-		{
-			"type": "patchouli:image",
-			"border": true,
-			"title": "Chorus Forest",
-			"anchor": "forest",
-			"images": [
-				"tfg:textures/gui/field_guide/moon/forest.png"
-			],
-			"text": "The $(thing)Chorus Forest$() is the only place to find $(l:the_moon/moon_crops)Chorus Fruit$(). It cannot spawn near $(l:the_moon/moon_biomes#asurine)Asurine$() biomes."
-		},
-		{
-			"type": "patchouli:image",
-			"border": true,
-			"title": "Chorus Thicket",
-			"anchor": "thicket",
-			"images": [
-				"tfg:textures/gui/field_guide/moon/thicket.png"
-			],
-			"text": "The $(thing)Chorus Thicket$() is a dense area of $(l:the_moon/moon_crops)Chorus Fruit$(). It is a dangerous biome with hostile $(l:the_moon/moon_fauna#endermen)endermen$()."
-		},
-		{
-			"type": "patchouli:image",
-			"border": true,
-			"title": "Lunar Maria",
-			"anchor": "maria",
-			"images": [
-				"tfg:textures/gui/field_guide/moon/maria.png"
-			],
-			"text": "The $(thing)Lunar Maria$() contains some $(item)dead coral$() and sand. It cannot spawn near $(l:the_moon/moon_biomes#lightbloom)Lightbloom$() biomes."
-		},
-		{
-			"type": "patchouli:image",
-			"border": true,
-			"title": "Lunar Reef",
-			"anchor": "reef",
-			"images": [
-				"tfg:textures/gui/field_guide/moon/reef.png"
-			],
-			"text": "The $(thing)Lunar Reef$() has many large formations of dead coral. Did the moon have oceans in the distant past?"
-		},
-		{
-			"type": "patchouli:image",
-			"border": true,
-			"title": "Lightbloom Scrubland",
-			"anchor": "scrubland",
-			"images": [
-				"tfg:textures/gui/field_guide/moon/scrubland.png"
-			],
-			"text": "$(thing)Lightbloom Scrublands$() have some sparse growths of $(item)Lightblooms$(). It cannot spawn near $(l:the_moon/moon_biomes#maria)Coral$() biomes."
-		},
-		{
-			"type": "patchouli:image",
-			"border": true,
-			"title": "Lightbloom Star Gazers",
-			"anchor": "stargazers",
-			"images": [
-				"tfg:textures/gui/field_guide/moon/stargazers.png"
-			],
-			"text": "Many $(item)Lightblooms$() grow here. $(bold)Tip:$() This biome looks beautiful at night time with shaders on!"
-		},
-		{
-			"type": "patchouli:spotlight",
-			"item": "gtceu:moon_dust_harvester",
-			"anchor": "harvester",
-			"text": "The $(item)Moon Dust Harvester$() is an optional multiblock that collects $(thing)lunar regolith$(). This regolith can then be processed into $(thing)infinite sources of certain ores$()!$(br)The downside? There's four types of regolith and each can only be harvested in a certain biome, so if you want all of them, you'll have to set up some $(l:logistics/trains)infrastructure$()."
-		},
-		{
-			"type": "patchouli:multiblock",
-			"title": " ",
-			"text": "Upgrading the $(item)coils$() will reduce the energy cost. $(l:logistics/trains#cargo)Accumulators$() can be used to transport energy around.",
-			"multiblock": {
-				"pattern": [
-					[
-						" AAA ",
-						" BFB ",
-						" BFB ",
-						" BFB ",
-						" BFB ",
-						" BFB ",
-						" AAA "
-					],
-					[
-						"AA1AA",
-						"BB BB",
-						"A   A",
-						"A   A",
-						"A   A",
-						"BB BB",
-						"AABAA"
-					],
-					[
-						"A234A",
-						"B   B",
-						"D   D",
-						"D   D",
-						"D   D",
-						"B   B",
-						"ABXBA"
-					],
-					[
-						"AAAAA",
-						"BBBBB",
-						"ADDDA",
-						"ADDDA",
-						"ADDDA",
-						"BBBBB",
-						"AAAAA"
-					],
-					[
-						"A   A",
-						"     ",
-						"     ",
-						"  0  ",
-						"     ",
-						"     ",
-						"A   A"
-					]
-				],
-				"mapping": {
-					"0": "minecraft:air",
-					"X": "gtceu:moon_dust_harvester[facing=east]",
-					"A": "tfg:casings/machine_casing_iron_desh",
-					"B": "gtceu:nonconducting_casing",
-					"D": "tfg:casings/machine_casing_vacuum_engine_intake",
-					"F": "gtceu:cupronickel_coil_block",
-					"1": "gtceu:maintenance_hatch[facing=west]",
-					"2": "gtceu:hv_energy_input_hatch[facing=west]",
-					"3": "gtceu:ulv_input_bus[facing=west]",
-					"4": "gtceu:ulv_output_bus[facing=west]"
-				}
-			},
-			"enable_visualize": false
-		},
-		{
-			"type": "patchouli:spotlight",
-			"item": "tfg:certus_regolith_dust",
-			"anchor": "regolith",
-			"text": "$(item)Certus Regolith Dust$() can only be harvested in the $(l:the_moon/moon_biomes#certus)Certus Fields$() biome.$(br2)It can be processed into $(item)Certus Quartz$() and $(item)Zinc$()."
-		},
-		{
-			"type": "patchouli:spotlight",
-			"item": "tfg:cassiterite_regolith_dust",
-			"text": "$(item)Cassiterite Regolith Dust$() requires the $(l:the_moon/moon_biomes#stargazers)Lightbloom Star Gazers$() biome.$(br2)It is a source of $(item)Tin$()."
-		},
-		{
-			"type": "patchouli:spotlight",
-			"item": "tfg:goethe_regolith_dust",
-			"text": "$(item)Goethe Regolith Dust$() is harvested in the $(l:the_moon/moon_biomes#thicket)Chorus Thicket$() biome.$(br2)It can be processed into $(item)Copper$() and $(item)Iron$()."
-		},
-		{
-			"type": "patchouli:spotlight",
-			"item": "tfg:bright_regolith_dust",
-			"text": "$(item)Bright Regolith Dust$() is from the $(l:the_moon/moon_biomes#reef)Lunar Reef$() biome.$(br2)It is a source of $(item)Diamond$() and $(item)Gold$()."
-		},
-		{
-			"type": "patchouli:text",
-			"text": "As part of their processing, all of these $(thing)Regolith Dusts$() are turned into $(item)Dusty Ores$(). These can only be centrifuged for resources for now - further extraction will require some lategame ore processing on $(l:venus)Venus$().$(br2)Be sure to use a $(item)Large Chemical Reactor$() to get perfect overclocking on these recipes! If you want to set up more passive automation for $(thing)AE2 components$() or $(l:logistics/railgun)Railgun Ammo$(), these regolith harvesters are essential!"
-		},
-		{
-			"type": "patchouli:relations",
-			"title": "Читать далее",
-			"anchor": "relations",
-			"entries": [
-				"tfg:the_moon/the_moon",
-				"tfg:the_moon/moon_fauna",
-				"tfg:the_moon/moon_crops",
-				"tfg:logistics/railgun",
-				"tfg:logistics/trains"
-			]
-		}
-	]
+    "name": "Биомы Луны",
+    "category": "tfg:the_moon",
+    "icon": "tfg:textures/block/lunar_roots.png",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)Луна$() — довольно каменистое место, куда ни пойди, но и на ней есть несколько разных биомов, которые могут тебя заинтересовать.$(br2)Ищешь что-то конкретное? Рядом друг с другом могут появляться лишь некоторые биомы, а $(l:the_moon/moon_biomes#sands)лунные пески$() и $(l:the_moon/moon_biomes#plains)лунные равнины$() служат между ними чем-то вроде «нейтральной территории»."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "title": "Содержание",
+            "text": "$(li)$(bold)Биомы$()$(li2)$(l:the_moon/moon_biomes#plains)Лунные равнины$()$(li2)$(l:the_moon/moon_biomes#sands)Лунные пески$()$(li2)$(l:the_moon/moon_biomes#asurine)Азуриновые поля$()$(li2)$(l:the_moon/moon_biomes#certus)Кварцевые поля$()$(li2)$(l:the_moon/moon_biomes#forest)Хорусовый лес$()$(li2)$(l:the_moon/moon_biomes#thicket)Хорусовые дебри$()$(li2)$(l:the_moon/moon_biomes#maria)Лунное море$()$(li2)$(l:the_moon/moon_biomes#reef)Лунный риф$()$(li2)$(l:the_moon/moon_biomes#scrubland)Светоцветная степь$()$(li2)$(l:the_moon/moon_biomes#stargazers)Светоцветы-звездочёты$()$(li)$(bold)$(l:the_moon/moon_biomes#harvester)Сборщик лунной пыли$()$(li2)$(l:the_moon/moon_biomes#regolith)Список реголитов$()"
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "title": "Лунные равнины",
+            "anchor": "plains",
+            "images": [
+                "tfg:textures/gui/field_guide/moon/plains.png"
+            ],
+            "text": "На $(thing)лунных равнинах$() особо ничего интересного нет, но это хорошее нейтральное место для базы."
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "title": "Лунные пески",
+            "anchor": "sands",
+            "images": [
+                "tfg:textures/gui/field_guide/moon/sands.png"
+            ],
+            "text": "$(thing)Лунные пески$() — вариант лунных равнин, где меньше растительности, но больше песка."
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "title": "Азуриновые поля",
+            "anchor": "asurine",
+            "images": [
+                "tfg:textures/gui/field_guide/moon/asurine.png"
+            ],
+            "text": "На $(thing)азуриновых полях$() часто встречаются образования $(item)азурина$(). Этот биом не появляется рядом с биомами $(l:the_moon/moon_biomes#forest)хоруса$()."
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "title": "Кварцевые поля",
+            "anchor": "certus",
+            "images": [
+                "tfg:textures/gui/field_guide/moon/certus.png"
+            ],
+            "text": "На $(thing)кварцевых полях$() — более крупные образования $(item)азурина$(), в которых также много $(item)истинного кварца$()."
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "title": "Хорусовый лес",
+            "anchor": "forest",
+            "images": [
+                "tfg:textures/gui/field_guide/moon/forest.png"
+            ],
+            "text": "$(thing)Хорусовый лес$() — единственное место, где растут $(l:the_moon/moon_crops)плоды хоруса$(). Этот биом не появляется рядом с $(l:the_moon/moon_biomes#asurine)азуриновыми$() биомами."
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "title": "Хорусовые дебри",
+            "anchor": "thicket",
+            "images": [
+                "tfg:textures/gui/field_guide/moon/thicket.png"
+            ],
+            "text": "$(thing)Хорусовые дебри$() — густые скопления $(l:the_moon/moon_crops)плодов хоруса$(). Опасный биом с враждебными $(l:the_moon/moon_fauna#endermen)эндерменами$()."
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "title": "Лунное море",
+            "anchor": "maria",
+            "images": [
+                "tfg:textures/gui/field_guide/moon/maria.png"
+            ],
+            "text": "В $(thing)лунном море$() есть немного $(item)мёртвых кораллов$() и песка. Этот биом не появляется рядом с биомами $(l:the_moon/moon_biomes#lightbloom)светоцвета$()."
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "title": "Лунный риф",
+            "anchor": "reef",
+            "images": [
+                "tfg:textures/gui/field_guide/moon/reef.png"
+            ],
+            "text": "На $(thing)лунном рифе$() много больших образований мёртвых кораллов. Неужели когда-то на Луне были океаны?"
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "title": "Светоцветная степь",
+            "anchor": "scrubland",
+            "images": [
+                "tfg:textures/gui/field_guide/moon/scrubland.png"
+            ],
+            "text": "В $(thing)светоцветной степи$() редкими пятнами растут $(item)светоцветы$(). Этот биом не появляется рядом с $(l:the_moon/moon_biomes#maria)коралловыми$() биомами."
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "title": "Светоцветы-звездочёты",
+            "anchor": "stargazers",
+            "images": [
+                "tfg:textures/gui/field_guide/moon/stargazers.png"
+            ],
+            "text": "Здесь растёт много $(item)светоцветов$(). $(bold)Совет:$() ночью с шейдерами этот биом выглядит потрясающе!"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "gtceu:moon_dust_harvester",
+            "anchor": "harvester",
+            "text": "$(item)Сборщик лунной пыли$() — необязательная многоблочная структура, которая собирает $(thing)лунный реголит$(). Реголит потом перерабатывается в $(thing)бесконечные источники некоторых руд$()!$(br)Минус? Реголит бывает четырёх видов, и каждый добывается только в своём биоме, так что ради всех придётся построить $(l:logistics/trains)инфраструктуру$()."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "title": " ",
+            "text": "Улучшение $(item)катушек$() снижает расход энергии. Для перевозки энергии можно использовать $(l:logistics/trains#cargo)аккумуляторы$().",
+            "multiblock": {
+                "pattern": [
+                    [
+                        " AAA ",
+                        " BFB ",
+                        " BFB ",
+                        " BFB ",
+                        " BFB ",
+                        " BFB ",
+                        " AAA "
+                    ],
+                    [
+                        "AA1AA",
+                        "BB BB",
+                        "A   A",
+                        "A   A",
+                        "A   A",
+                        "BB BB",
+                        "AABAA"
+                    ],
+                    [
+                        "A234A",
+                        "B   B",
+                        "D   D",
+                        "D   D",
+                        "D   D",
+                        "B   B",
+                        "ABXBA"
+                    ],
+                    [
+                        "AAAAA",
+                        "BBBBB",
+                        "ADDDA",
+                        "ADDDA",
+                        "ADDDA",
+                        "BBBBB",
+                        "AAAAA"
+                    ],
+                    [
+                        "A   A",
+                        "     ",
+                        "     ",
+                        "  0  ",
+                        "     ",
+                        "     ",
+                        "A   A"
+                    ]
+                ],
+                "mapping": {
+                    "0": "minecraft:air",
+                    "X": "gtceu:moon_dust_harvester[facing=east]",
+                    "A": "tfg:casings/machine_casing_iron_desh",
+                    "B": "gtceu:nonconducting_casing",
+                    "D": "tfg:casings/machine_casing_vacuum_engine_intake",
+                    "F": "gtceu:cupronickel_coil_block",
+                    "1": "gtceu:maintenance_hatch[facing=west]",
+                    "2": "gtceu:hv_energy_input_hatch[facing=west]",
+                    "3": "gtceu:ulv_input_bus[facing=west]",
+                    "4": "gtceu:ulv_output_bus[facing=west]"
+                }
+            },
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfg:certus_regolith_dust",
+            "anchor": "regolith",
+            "text": "$(item)Кварцевая реголитовая пыль$() добывается только в биоме $(l:the_moon/moon_biomes#certus)Кварцевые поля$().$(br2)Её перерабатывают в $(item)истинный кварц$() и $(item)цинк$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfg:cassiterite_regolith_dust",
+            "text": "Для $(item)касситеритовой реголитовой пыли$() нужен биом $(l:the_moon/moon_biomes#stargazers)Светоцветы-звездочёты$().$(br2)Это источник $(item)олова$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfg:goethe_regolith_dust",
+            "text": "$(item)Гётитовая реголитовая пыль$() добывается в биоме $(l:the_moon/moon_biomes#thicket)Хорусовые дебри$().$(br2)Её перерабатывают в $(item)медь$() и $(item)железо$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfg:bright_regolith_dust",
+            "text": "$(item)Светлая реголитовая пыль$() — из биома $(l:the_moon/moon_biomes#reef)Лунный риф$().$(br2)Это источник $(item)алмазов$() и $(item)золота$()."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "При переработке вся $(thing)реголитовая пыль$() превращается в $(item)пыльные дроблёные руды$(). Пока что их можно только центрифугировать — дальнейшее извлечение потребует поздней переработки руды на $(l:venus)Венере$().$(br2)Используй $(item)большой химический реактор$(), чтобы получить идеальный разгон на этих рецептах! Если хочешь наладить пассивное производство $(thing)компонентов AE2$() или $(l:logistics/railgun)патронов для рельсотрона$(), без этих сборщиков реголита не обойтись!"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Читать далее",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_moon/the_moon",
+                "tfg:the_moon/moon_fauna",
+                "tfg:the_moon/moon_crops",
+                "tfg:logistics/railgun",
+                "tfg:logistics/trains"
+            ]
+        }
+    ]
 }

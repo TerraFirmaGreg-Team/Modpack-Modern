@@ -1,11 +1,11 @@
 {
-    "name": "Scribing Table",
+    "name": "Стол писаря",
     "category": "tfg:craftsmanship",
     "icon": "tfc:wood/scribing_table/oak",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "The $(thing)Scribing Table$() is used to rename items. It requires $(thing)Black Dye$() to rename items, which can be supplied as the traditional dye item or as a bucket of dye fluid."
+            "text": "$(thing)Стол писаря$() нужен, чтобы переименовывать предметы. Для этого требуется $(thing)чёрный краситель$() — обычным предметом-красителем или ведром жидкого красителя."
         },
         {
             "type": "patchouli:multiblock",
@@ -23,7 +23,7 @@
                 }
             },
             "name": "",
-            "text": "The scribing table.",
+            "text": "Стол писаря.",
             "enable_visualize": false
         },
         {
@@ -31,7 +31,7 @@
             "images": [
                 "tfc:textures/gui/book/gui/scribing.png"
             ],
-            "text": "The scribing screen takes text entry at the top, an input on the left, a dye in the center. The output is taken from the right slot.",
+            "text": "На экране стола вверху поле для текста, слева вход, в центре краситель. Результат забирают из правого слота.",
             "border": false
         },
         {
