@@ -72,7 +72,12 @@ function registerTFGRubberRecipes(event) {
 	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:latex', 100), ['#tfg:rubber_plants', 'tfc:powder/soda_ash', Fluid.of('tfc:salt_water', 50)])
 		.heated()
 		.processingTime(20 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-		.id('tfg:vi/vacuumizing/latex_from_rubber_plants')
+		.id('tfg:vi/vacuumizing/latex_from_rubber_plants_soda_ash')
+
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:latex', 200), ['#tfg:rubber_plants', '#forge:tiny_dusts/sodium_hydroxide', Fluid.of('tfc:salt_water', 50)])
+		.heated()
+		.processingTime(20 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+		.id('tfg:vi/vacuumizing/latex_from_rubber_plants_sodium_hydroxide')
 
 	// Sticky resin
 	event.recipes.tfc.pot('tfc:powder/wood_ash', Fluid.of('tfg:latex', 1000), 1200, 300)
@@ -185,7 +190,14 @@ function registerTFGRubberRecipes(event) {
 		.duration(20 * 20)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	event.recipes.gtceu.chemical_reactor(`tfg:treat_latex_plants_into_latex`)
+	event.recipes.gtceu.chemical_reactor(`tfg:treat_latex_plants_into_latex_soda_ash`)
+		.itemInputs('10x #tfg:rubber_plants', '#forge:small_dusts/soda_ash')
+		.circuit(1)
+		.outputFluids(Fluid.of('tfg:latex', 500))
+		.duration(200)
+		.EUt(20)
+
+	event.recipes.gtceu.chemical_reactor(`tfg:treat_latex_plants_into_latex_sodium_hydroxide`)
 		.itemInputs('10x #tfg:rubber_plants', 'gtceu:tiny_sodium_hydroxide_dust')
 		.circuit(1)
 		.outputFluids(Fluid.of('tfg:latex', 1000))
