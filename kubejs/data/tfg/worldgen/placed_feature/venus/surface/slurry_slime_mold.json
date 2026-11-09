@@ -1,13 +1,16 @@
 {
-	"feature": "tfg:venus/terrain/hot_spring_lake_small",
+	"feature": "tfg:venus/surface/slurry_slime_mold",
 	"placement": [
 		{
 			"type": "minecraft:count",
-			"count": 10
+			"count": 2
+		},
+		{
+			"type": "minecraft:in_square"
 		},
 		{
 			"type": "minecraft:heightmap",
-			"heightmap": "OCEAN_FLOOR"
+			"heightmap": "WORLD_SURFACE"
 		},
 		{
 			"type": "minecraft:biome"
