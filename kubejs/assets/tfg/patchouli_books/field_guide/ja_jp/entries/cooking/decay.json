@@ -1,12 +1,12 @@
 {
-    "name": "Decay & Preservation",
+    "name": "食品の劣化と保存",
     "category": "tfg:cooking",
     "icon": "tfclunchbox:lunchbox",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:cooking/decay#decay)Introduction$()$(li2)$(l:cooking/decay#calculation)Calculating Decay$()$(li2)$(l:cooking/decay#table)Modifier Table$()$(li)$(bold)$(l:cooking/decay#vessels)Vessels$()$(li)$(bold)$(l:cooking/decay#cooking)Cooking$()$(li)$(bold)$(l:cooking/decay#smoking)Smoking$()$(li)$(bold)$(l:cooking/decay#salting)Salting$()$(li)$(bold)$(l:cooking/decay#vinegar)Pickling$()$(li)$(bold)$(l:cooking/decay#drying)Drying$()"
+            "text": "$(li)$(bold)$(l:cooking/decay#decay)はじめに$()$(li2)$(l:cooking/decay#calculation)食品劣化の計算$()$(li2)$(l:cooking/decay#table)保存特性表$()$(li)$(bold)$(l:cooking/decay#vessels)壺$()$(li)$(bold)$(l:cooking/decay#cooking)調理$()$(li)$(bold)$(l:cooking/decay#smoking)燻製$()$(li)$(bold)$(l:cooking/decay#salting)塩漬け$()$(li)$(bold)$(l:cooking/decay#vinegar)酢漬け$()$(li)$(bold)$(l:cooking/decay#drying)乾燥$()"
         },
         {
             "type": "patchouli:text",
@@ -15,8 +15,8 @@
         {
             "type": "patchouli:text",
             "anchor": "decay",
-            "title": "Decay",
-            "text": "In TerraFirmaCraft, no food will last forever! Food will $(thing)expire$() over time, turning rotten. Rotten food will not restore any hunger, has the potential to give you debuff effects such as $(thing)Hunger$() or $(thing)Poison$(), and cannot be used in meals!$(br2)Fortunately, there are a number of ways to make your food last longer by $(thing)Preserving$() it."
+            "title": "食品の劣化",
+            "text": "TerraFirmaCraftでは、どんな食べ物も永遠に持ちません！食べ物は時間の経過とともに$(thing)期限切れ$()となり、腐ってしまいます。腐った食べ物は空腹を回復せず、$(thing)空腹$()や$(thing)毒$()といったデバフ効果を引き起こす可能性があり、料理にも使用できません！$(br2)幸いなことに、$(thing)保存$()することで、食べ物の持ちを長くする方法はいくつかあります。"
         },
         {
             "type": "patchouli:text",
@@ -25,7 +25,7 @@
         {
             "type": "patchouli:text",
             "anchor": "calculation",
-            "title": "Calculating Decay",
+            "title": "食品劣化の計算",
             "text": "When a food item is created in a world it is marked with a creation date time stamp internally. $(thing)TFC$() calculates the spoil rate by referencing that time stamp and the food's inherent decay modifier. Any preservation traits are added on top to shift the creation date back, allowing the item to last longer.$(br)Decay modifiers are a value from 0 to ∞. When 0, the food lasts forever, when ∞ the food spoils instantly. Therefore, the lower the modifier the better."
         },
         {
@@ -37,7 +37,7 @@
             "anchor": "table",
             "strings": [
                 {
-                    "text": "Trait",
+                    "text": "特性",
                     "bold": true
                 },
                 {
@@ -45,85 +45,85 @@
                     "bold": true
                 },
                 {
-                    "text": "Oven Baked"
+                    "text": "オーブン焼き"
                 },
                 {
                     "text": "0.900"
                 },
                 {
-                    "text": "Grilled"
+                    "text": "グリル焼き"
                 },
                 {
                     "text": "0.800"
                 },
                 {
-                    "text": "Smoked"
+                    "text": "燻製"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Salted"
+                    "text": "塩漬け"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Pickled"
+                    "text": "酢漬け"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Preserved"
+                    "text": "保存済み"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Wild"
+                    "text": "野生"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Dried"
+                    "text": "乾燥"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Cooled"
+                    "text": "冷却"
                 },
                 {
                     "text": "0.300"
                 },
                 {
-                    "text": "Shelved"
+                    "text": "棚で保管"
                 },
                 {
                     "text": "0.400 - 0.350 - 0.250"
                 },
                 {
-                    "text": "Hung"
+                    "text": "吊り下げ棚で保管"
                 },
                 {
                     "text": "0.350 - 0.300 - 0.250"
                 },
                 {
-                    "text": "Refrigerating"
+                    "text": "冷蔵保存"
                 },
                 {
                     "text": "0.125"
                 },
                 {
-                    "text": "Preserved in Vinegar"
+                    "text": "酢で保存"
                 },
                 {
                     "text": "0.100"
                 },
                 {
-                    "text": "Cryodessicated"
+                    "text": "フリーズドライ"
                 },
                 {
                     "text": "0.020"
@@ -167,7 +167,7 @@
                 }
             },
             "name": "",
-            "text": "A Sealed Large Vessel.",
+            "text": "密閉された大きな壺。",
             "enable_visualize": false
         },
         {
@@ -476,7 +476,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "関連項目",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/food_and_water",
