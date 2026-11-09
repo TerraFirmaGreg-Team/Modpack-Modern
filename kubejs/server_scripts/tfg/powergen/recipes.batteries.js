@@ -21,16 +21,7 @@ function registerTFGBatteriesRecipes(event) {
 
 	// ULV sodium
 
-	const carbonPowders = ['tfc:soot', 'tfc:powder/charcoal', 'tfc:powder/coke'];
-	const carbonDusts = ['#forge:dusts/charcoal', '#forge:dusts/coal', '#forge:dusts/coke', '#forge:dusts/carbon'];
-
-	event.recipes.vintageimprovements.vacuumizing(
-		[Fluid.of('gtceu:carbon_dioxide', 250), 'gtceu:small_sodium_dust'],
-		['tfc:powder/soda_ash', 'tfc:powder/soda_ash', 'tfc:powder/soda_ash', carbonPowders])
-		.secondaryFluidOutput(0)
-		.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-		.heated()
-		.id('tfg:vacuumizing/sodium_from_soda_ash_powder')
+	const carbonDusts = ['tfc:soot', '#forge:dusts/charcoal', '#forge:dusts/coal', '#forge:dusts/coke', '#forge:dusts/carbon'];
 
 	event.recipes.vintageimprovements.vacuumizing(
 		[Fluid.of('gtceu:carbon_dioxide', 1000), 'gtceu:sodium_dust'],
