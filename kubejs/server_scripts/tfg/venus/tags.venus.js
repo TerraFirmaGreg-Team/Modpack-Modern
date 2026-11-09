@@ -132,6 +132,17 @@ function registerTFGVenusBlockTags(event) {
 
 	event.add('minecraft:lava_pool_stone_cannot_replace', 'tfg:venus_hornfels')
 	event.add('minecraft:features_cannot_replace', 'tfg:venus_hornfels')
+
+	event.add('tfg:geyserite_geode_cannot_replace', 'minecraft:air')
+	event.add('tfg:geyserite_geode_cannot_replace', 'minecraft:cave_air')
+	event.add('tfg:geyserite_geode_cannot_replace', 'tfg:fluid/geyser_slurry')
+	event.add('tfg:geyserite_geode_cannot_replace', 'minecraft:lava')
+	event.add('tfg:geyserite_geode_cannot_replace', '#minecraft:mineable/hoe')
+	event.add('tfg:geyserite_geode_cannot_replace', '#minecraft:mineable/axe')
+	event.add('tfg:geyserite_geode_cannot_replace', 'tfg:geyser_source')
+	event.add('tfg:geyserite_geode_cannot_replace', 'betterend:sulphuric_rock')
+	event.add('tfg:geyserite_geode_cannot_replace', 'betterend:hydrothermal_vent')
+	event.add('tfg:geyserite_geode_cannot_replace', '#tfc:loose_rocks')
 }
 
 function registerTFGVenusBiomeTags(event) {

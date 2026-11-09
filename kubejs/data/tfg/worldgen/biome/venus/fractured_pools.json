@@ -71,7 +71,8 @@
 			"tfg:venus/surface/thornflower",
 			"tfg:venus/surface/inklight",
 			"tfg:venus/surface/fused_pillar_rare",
-			"tfg:venus/surface/bloodthorn"
+			"tfg:venus/surface/bloodthorn",
+			"tfg:venus/surface/volcano_smoke_random"
 		],
 		"#tfg:venus_top_layer_modification"
 	],
@@ -126,8 +127,8 @@
 			"charge": 0.7
 		},
 		"opposing_force:whizz": {
-			"energy_budget": 0.3,
-			"charge": 0.5
+			"energy_budget": 0.15,
+			"charge": 0.7
 		},
 		"opposing_force:ladybug": {
 			"energy_budget": 0.15,
@@ -295,7 +296,7 @@
 				"type": "aliencraft_kepler:tree_mite",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 40
+				"weight": 100
 			}
 		],
 		"underground_water_creature": [],
