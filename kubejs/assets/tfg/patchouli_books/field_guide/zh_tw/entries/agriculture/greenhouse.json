@@ -120,13 +120,20 @@
         },
         {
             "type": "patchouli:spotlight",
-            "anchor": "electric",
-            "item": "tfg:electric_greenhouse",
+            "anchor": "bees_and_taps",
+            "title": "Beehives and Tree Taps",
+            "item": "firmalife:beehive,afc:tree_tap",
             "text": "$(bold)注意：$()這個多方塊結構的牆壁可自訂為任何有效的鐵等級溫室方塊。$(br2)查看$(emi)多方塊結構預覽即可看到所有可用的方塊。$(br2)電力溫室也能透過幾種方式強化，例如$(l:agriculture/fertilizers)肥料$()，或之後在 $(6)HV$() 使用$(thing)魚菜共生循環$()。"
         },
         {
-            "type": "patchouli:text",
+            "type": "patchouli:spotlight",
+            "anchor": "electric",
+            "item": "tfg:electric_greenhouse",
             "text": "$(item)水耕設施$()是電力溫室在$(9)IV$()的升級版，可以在任何維度種植任何作物，並支援$(item)平行倉$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)Note:$() This multiblock can have its walls customized to use any valid iron-tier greenhouse block.$(br2)Check the $(emi) multiblock preview for a list of all the different blocks you can use.$(br2)The Electric Greenhouse can also be improved in a few ways, including $(l:agriculture/fertilizers)fertilizer$() or later in $(6)HV$() with the $(thing)Aquaponics Loop$()."
         },
         {
             "type": "patchouli:spotlight",
