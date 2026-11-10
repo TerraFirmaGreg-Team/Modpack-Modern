@@ -1053,7 +1053,9 @@ global.TFG_FOOD_COOKING = /** @type {FoodCooking[]} */ ([
 	{ input: 'tfg:food/raw_burger_patty', output: 'tfg:food/cooked_burger_patty' },
 	{ input: 'tfg:lentil_product', output: 'tfg:food/cooked_lentil' },
 	{ input: 'tfg:cassava_product', output: 'tfg:food/cooked_cassava' },
-	{ input: 'tfg:beans_product', output: 'tfg:food/cooked_beans' }
+	{ input: 'tfg:beans_product', output: 'tfg:food/cooked_beans' },
+	{ input: 'arthropocolypse:ice_crawler_meat', output: 'arthropocolypse:cooked_ice_crawler_meat' },
+	{ input: 'opposing_force:terror_leg', output: 'opposing_force:fried_terror_leg' }
 ]);
 
 animalProducts.forEach(meat => {

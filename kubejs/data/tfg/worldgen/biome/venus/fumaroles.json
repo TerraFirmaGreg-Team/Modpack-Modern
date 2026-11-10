@@ -66,7 +66,8 @@
 			"tfg:venus/surface/hydralux_rare",
 			"tfg:venus/surface/loose_scoria",
 			"tfg:venus/surface/fused_pillar",
-			"tfg:venus/surface/bloodthorn"
+			"tfg:venus/surface/bloodthorn",
+			"tfg:venus/surface/floating_fumarole_colony"
 		],
 		"#tfg:venus_top_layer_modification"
 	],
@@ -284,7 +285,7 @@
 				"type": "aliencraft_kepler:tree_mite",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 20
+				"weight": 100
 			}
 		],
 		"underground_water_creature": [],

@@ -1,6 +1,71 @@
 {
-	"type": "tfc:rivulet",
+	"type": "tfg:mapped_rivulet",
 	"config": {
-		"state": "tfc:rock/magma/basalt"
+		"states": [
+			{
+				"with": "tfc:rock/magma/andesite",
+				"replace": "tfc:rock/raw/andesite"
+			},
+			{
+				"with": "tfc:rock/magma/dacite",
+				"replace": "tfc:rock/raw/dacite"
+			},
+			{
+				"with": "tfc:rock/magma/basalt",
+				"replace": "tfc:rock/raw/basalt"
+			},
+			{
+				"with": "tfc:rock/magma/rhyolite",
+				"replace": "tfc:rock/raw/rhyolite"
+			},
+			{
+				"with": "tfc:rock/magma/andesite",
+				"replace": "minecraft:tuff"
+			},
+			{
+				"with": "tfc:rock/magma/andesite",
+				"replace": "tfc:rock/hardened/andesite"
+			},
+			{
+				"with": "tfc:rock/magma/dacite",
+				"replace": "tfc:rock/hardened/dacite"
+			},
+			{
+				"with": "tfc:rock/magma/basalt",
+				"replace": "tfc:rock/hardened/basalt"
+			},
+			{
+				"with": "tfc:rock/magma/rhyolite",
+				"replace": "tfc:rock/hardened/rhyolite"
+			},
+			{
+				"with": "tfc:rock/magma/basalt",
+				"replace": "ad_astra:moon_deepslate"
+			},
+			{
+				"with": "tfc:rock/magma/granite",
+				"replace": "gtceu:red_granite"
+			},
+			{
+				"with": "tfc:rock/magma/gabbro",
+				"replace": "minecraft:deepslate"
+			},
+			{
+				"with": "tfc:rock/magma/dacite",
+				"replace": "minecraft:dripstone_block"
+			},
+			{
+				"with": "tfc:rock/magma/diorite",
+				"replace": "minecraft:calcite"
+			},
+			{
+				"with": "tfc:rock/magma/rhyolite",
+				"replace": "betterend:sandy_jadestone"
+			},
+			{
+				"with": "tfc:rock/magma/rhyolite",
+				"replace": "betterend:flavolite"
+			}
+		]
 	}
 }

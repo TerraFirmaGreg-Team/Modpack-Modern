@@ -1,0 +1,28 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"type": "tfc:damage_inputs_shapeless_crafting",
+	"recipe": {
+		"type": "minecraft:crafting_shapeless",
+		"ingredients": [
+			{
+				"type": "tfc:not_rotten",
+				"ingredient": {
+					"item": "tfc:food/tomato"
+				}
+			},
+			{
+				"item": "gtceu:small_salt_dust"
+			},
+			{
+				"item": "firmalife:plant/cilantro"
+			},
+			{
+				"tag": "forge:knives"
+			}
+		],
+		"result": {
+			"item": "firmalife:food/salsa",
+			"count": 5
+		}
+	}
+}

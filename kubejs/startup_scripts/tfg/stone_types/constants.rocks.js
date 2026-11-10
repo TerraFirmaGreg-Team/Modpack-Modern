@@ -388,9 +388,9 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		polished: generateForms('obsidian', 'tfg:rock/smooth_%s'),
 		chiseled: generateForms('obsidian', 'tfg:rock/chiseled_%s'),
 		stonecutting: [
-			{ block: "opposing_force:guzzler_scale_bricks", stairs: "opposing_force:guzzler_scale_brick_stairs", slab: "opposing_force:guzzler_scale_brick_slab" },
-			{ block: "opposing_force:trembling_guzzler_scale_bricks", stairs: "opposing_force:trembling_guzzler_scale_brick_stairs", slab: "opposing_force:trembling_guzzler_scale_brick_slab" },
-			{ block: "opposing_force:trembling_guzzler_scale_shingles", stairs: "opposing_force:trembling_guzzler_scale_shingle_stairs", slab: "opposing_force:trembling_guzzler_scale_shingle_slab" }
+			{ block: "opposing_force:guzzler_scale_bricks", stair: "opposing_force:guzzler_scale_brick_stairs", slab: "opposing_force:guzzler_scale_brick_slab" },
+			{ block: "opposing_force:trembling_guzzler_scale_bricks", stair: "opposing_force:trembling_guzzler_scale_brick_stairs", slab: "opposing_force:trembling_guzzler_scale_brick_slab" },
+			{ block: "opposing_force:trembling_guzzler_scale_shingles", stair: "opposing_force:trembling_guzzler_scale_shingle_stairs", slab: "opposing_force:trembling_guzzler_scale_shingle_slab" }
 		]
 	},
 	"snow_block": {
@@ -561,12 +561,15 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		isTFC: false,
 		isStone: true,
 		collapsible: false,
-		sound: 'stone',
+		sound: 'calcite',
 		mapColor: 'quartz',
 		dimensions: ['minecraft:overworld', 'minecraft:the_nether', 'ad_astra:venus'],
-		pillar: 'create:calcite_pillar',
-		pillar2: 'create:layered_calcite',
-		raw: { block: 'minecraft:calcite' },
+		pillar: 'tfg:rock/pillar_calcite',
+		pillar2: 'create:calcite_pillar',
+		raw: generateFormsExisting('calcite', 'tfg:rock/%s', { block: 'minecraft:calcite' }),
+		bricks: generateForms('calcite', 'tfg:rock/bricks_%s'),
+		polished: generateForms('calcite', 'tfg:rock/polished_%s'),
+		chiseled: { block: 'create:layered_calcite' },
 		stonecutting: [
 			generateForms('calcite', 'create:cut_%s'),
 			generateForms('calcite', 'create:polished_cut_%s'),
@@ -576,6 +579,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	},
 	"tuff": generateMissing('tuff', {
 		isTFC: false,
+		isStone: true,
 		material: 'tfg:igneous_felsic',
 		tfcTag: 'tfc:igneous_extrusive_items',
 		gravelTag: 'tfc:green_gravel',
@@ -959,7 +963,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		material: 'tfg:igneous_ultramafic',
 		tfcTag: 'tfc:igneous_extrusive_items',
 		gravelTag: 'tfc:green_gravel',
-		sound: 'stone',
+		sound: 'calcite',
 		mapColor: 'grass',
 		collapsible: true,
 		dimensions: ['ad_astra:venus'],
@@ -1049,6 +1053,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		isTFC: false,
 		isStone: true,
 		collapsible: false,
+		sound: 'stone',
 		dimensions: ['ad_astra:venus'],
 		raw: { block: 'ad_astra:conglomerate' },
 		gravel: 'tfc:rock/gravel/conglomerate',

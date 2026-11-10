@@ -26,6 +26,7 @@
                 "ad_astra:cheese_block",
                 "ad_astra:moon_cheese_ore",
                 "tfg:huge_quartz",
+                "tfg:huge_salt",
                 "tfg:halite",
                 "minecraft:basalt",
                 "minecraft:fern",
@@ -66,7 +67,8 @@
                 "ae2:flawless_budding_quartz",
                 "ae2:flawed_budding_quartz",
                 "ae2:chipped_budding_quartz",
-                "ae2:damaged_budding_quartz"
+                "ae2:damaged_budding_quartz",
+                "opposing_force:deep_web"
             ]
         }
     ],

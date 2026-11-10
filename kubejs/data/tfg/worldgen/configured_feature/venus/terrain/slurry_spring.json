@@ -1,0 +1,8 @@
+{
+	"type": "tfc:hot_spring",
+	"config": {
+		"fluid_state": "tfg:fluid/geyser_slurry",
+		"wall_state": "tfg:rock/raw/geyserite",
+		"radius": 12
+	}
+}

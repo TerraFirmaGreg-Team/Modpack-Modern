@@ -57,21 +57,8 @@ function registerTFGCoilRecipes(event) {
 		.duration(5 * 20)
 		.EUt(GTValues.VHA[GTValues.LV])
 
-	event.recipes.gtceu.mixer('tfg:magnesia_refractory_brick_dust_sticky_powder')
-		.itemInputs('#forge:dusts/magnesia', '#forge:dusts/refractory_clay', '4x tfc:powder/graphite', '10x gtceu:sticky_resin')
-		.itemOutputs('3x #forge:dusts/magnesia_refractory_brick')
-		.duration(5 * 20)
-		.EUt(GTValues.VHA[GTValues.LV])
-
 	event.recipes.gtceu.mixer('tfg:magnesia_refractory_brick_dust_phenolic')
 		.itemInputs('#forge:dusts/magnesia', '#forge:dusts/refractory_clay', '#forge:dusts/graphite')
-		.inputFluids(Fluid.of('tfg:phenolic_resin', 72))
-		.itemOutputs('3x #forge:dusts/magnesia_refractory_brick')
-		.duration(5 * 20)
-		.EUt(GTValues.VHA[GTValues.LV])
-
-	event.recipes.gtceu.mixer('tfg:magnesia_refractory_brick_dust_phenolic_powder')
-		.itemInputs('#forge:dusts/magnesia', '#forge:dusts/refractory_clay', '4x tfc:powder/graphite')
 		.inputFluids(Fluid.of('tfg:phenolic_resin', 72))
 		.itemOutputs('3x #forge:dusts/magnesia_refractory_brick')
 		.duration(5 * 20)

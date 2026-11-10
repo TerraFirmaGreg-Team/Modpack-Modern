@@ -26,7 +26,7 @@ function registerTFGPizzaAndPastaFoodRecipes(event) {
 
 	// Pizza Dough.
 	global.processorRecipe(event, "pizza_dough", 300, 16, {
-		itemInputs: ['firmalife:spice/basil_leaves', '#tfc:foods/dough', 'tfc:powder/salt'],
+		itemInputs: ['firmalife:spice/basil_leaves', '#tfc:foods/dough', 'gtceu:small_salt_dust'],
 		fluidInputs: ['#firmalife:oils 100'],
 		itemOutputs: ['4x firmalife:food/pizza_dough'],
 		itemOutputProvider: TFC.isp.of("4x firmalife:food/pizza_dough").resetFood()
@@ -41,12 +41,12 @@ function registerTFGPizzaAndPastaFoodRecipes(event) {
 	event.remove({ id: 'firmalife:mixing_bowl/egg_noodles' });
 
 	global.generateMixingFoodRecipes(event, 
-		['#forge:eggs', 'tfc:powder/salt', '#tfc:foods/flour'],
+		['#forge:eggs', 'gtceu:small_salt_dust', '#tfc:foods/flour'],
 		'#tfc:milks 1000', null, 'firmalife:food/raw_egg_noodles'
 	);
 
 	global.processorRecipe(event, `rice_noodles`, 50, 8, {
-		itemInputs: ["tfc:food/rice_flour", 'tfc:food/maize_flour', 'tfc:powder/salt'],
+		itemInputs: ["tfc:food/rice_flour", 'tfc:food/maize_flour', 'gtceu:small_salt_dust'],
 		fluidInputs: ['#tfc:milks 1000'],
 		itemOutputs: ['2x firmalife:food/raw_rice_noodles'],
 		itemOutputProvider: TFC.isp.of('2x firmalife:food/raw_rice_noodles').resetFood()
@@ -90,7 +90,7 @@ function registerTFGPizzaAndPastaFoodRecipes(event) {
 	
 	global.processorRecipe(event, 'tomato_sauce', 300, 8, {
 		circuit: 1,
-		itemInputs: ['tfc:food/tomato', 'tfc:powder/salt', 'tfc:food/garlic'],
+		itemInputs: ['tfc:food/tomato', 'gtceu:small_salt_dust', 'tfc:food/garlic'],
 		fluidInputs: ['#tfg:clean_water 200'],
 		itemOutputs: ['5x firmalife:food/tomato_sauce'],
 		itemOutputProvider: TFC.isp.of('5x firmalife:food/tomato_sauce').copyOldestFood()
@@ -98,7 +98,7 @@ function registerTFGPizzaAndPastaFoodRecipes(event) {
 
 	global.processorRecipe(event, 'tomato_sauce_mix', 600, 8, {
 		circuit: 2,
-		itemInputs: ['tfc:food/tomato', 'tfc:powder/salt', 'tfc:food/garlic'],
+		itemInputs: ['tfc:food/tomato', 'gtceu:small_salt_dust', 'tfc:food/garlic'],
 		itemOutputs: ['5x firmalife:food/tomato_sauce_mix'],
 		itemOutputProvider: TFC.isp.of('5x firmalife:food/tomato_sauce_mix').copyOldestFood()
 	});

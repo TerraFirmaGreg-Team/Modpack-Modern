@@ -140,7 +140,7 @@
 
 		[general.advancedSettings.customFluidsSettings]
 			#Fluid IDs treated like vanilla water for splash, rain ripples, and waterfall spray. Example: "tfc:river_water"
-			waterLikeFluids = ["tfc:river_water", "tfc:flowing_salt_water", "tfc:salt_water", "tfc:flowing_spring_water", "tfc:spring_water", "tfg:semiheavy_ammoniacal_water", "tfg:muddy_water", "tfg:geyser_slurry", "tfg:sulfur_fumes"]
+			waterLikeFluids = ["tfc:river_water", "tfc:flowing_salt_water", "tfc:salt_water", "tfc:flowing_spring_water", "tfc:spring_water", "tfg:semiheavy_ammoniacal_water", "tfg:muddy_water", "tfg:geyser_slurry"]
 			#Flowing,source fluid pairs that produce cascade waterfalls. Example: "mymod:flowing_water,mymod:water". TFC fluids do not produce cascades because they have no flowing variant.
 			cascadeFluidPairs = ["minecraft:flowing_water,tfc:river_water", "tfc:flowing_salt_water,tfc:salt_water", "tfc:flowing_spring_water,tfc:spring_water", "tfg:flowing_muddy_water,tfg:muddy_water", "tfg:flowing_semiheavy_ammoniacal_water,tfg:semiheavy_ammoniacal_water", "tfg:flowing_geyser_slurry,tfg:geyser_slurry"]
 

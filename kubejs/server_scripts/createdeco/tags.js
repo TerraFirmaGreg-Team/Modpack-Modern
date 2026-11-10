@@ -46,6 +46,13 @@ function registerCreateDecoItemTags(event) {
 	event.add("createdeco:internal/blocks/zinc_blocks", "#forge:storage_blocks/zinc");
 	event.add("createdeco:internal/blocks/andesite_blocks", "#forge:storage_blocks/tin_alloy");	
 
+	event.add('createdeco:sheet_metal', 'createdeco:andesite_sheet_metal');
+	event.add('createdeco:sheet_metal', 'createdeco:brass_sheet_metal');
+	event.add('createdeco:sheet_metal', 'createdeco:iron_sheet_metal');
+	event.add('createdeco:sheet_metal', 'createdeco:copper_sheet_metal');
+	event.add('createdeco:sheet_metal', 'createdeco:industrial_iron_sheet_metal');
+	event.add('createdeco:sheet_metal', 'createdeco:zinc_sheet_metal');
+
 	global.MINECRAFT_DYE_NAMES.forEach((color) => {
 		event.add("createdeco:shipping_containers", `createdeco:${color}_shipping_container`);
 	});

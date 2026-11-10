@@ -38,10 +38,12 @@
 	},
 	"features": [
 		[
-			"tfg:venus/terrain/hot_spring_lake",
+			"tfg:venus/terrain/geyser_terrain_geode",
+			"tfg:venus/terrain/slurry_spring",
 			"tfg:venus/terrain/hot_spring_delta",
-			"tfg:venus/terrain/lava_spring_rare",
 			"tfc:random_empty_hot_spring",
+			"tfg:venus/terrain/magma_rivulet",
+			"tfg:venus/terrain/obsidian_rivulet",
 			"tfg:venus/surface/glauberite_formation",
 			"tfg:venus/surface/aragonite_formation",
 			"tfg:venus/surface/geyserite_formation"
@@ -58,6 +60,8 @@
 		"#tfg:venus_veins",
 		[],
 		[
+			"tfc:raw_boulder",
+			"tfc:cobble_boulder",
 			"tfc:raw_boulder_small_patch",
 			"tfc:cobble_boulder_small_patch",
 			"tfg:venus/surface/geyser_source_patch",
@@ -69,7 +73,9 @@
 			"tfg:venus/surface/thornflower",
 			"tfg:venus/surface/inklight",
 			"tfg:venus/surface/fused_pillar_rare",
-			"tfg:venus/surface/bloodthorn"
+			"tfg:venus/surface/bloodthorn",
+			"tfg:venus/surface/volcano_smoke_random",
+			"tfg:venus/surface/slurry_slime_mold"
 		],
 		"#tfg:venus_top_layer_modification"
 	],

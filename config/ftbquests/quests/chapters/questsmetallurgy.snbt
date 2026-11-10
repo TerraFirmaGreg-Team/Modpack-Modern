@@ -467,7 +467,7 @@
 			dependency_requirement: "one_started"
 			description: ["{quests.metal_age.overworld_graphite.desc}"]
 			guide_page: "tfg:field_guide tfg:game_mechanics/mining"
-			icon: "tfc:ore/graphite/gabbro"
+			icon: "gtceu:gabbro_graphite_ore"
 			id: "53E1383F12EC6765"
 			optional: true
 			shape: "diamond"
@@ -484,7 +484,7 @@
 			dependencies: ["5A936E9BCF30AA3D"]
 			dependency_requirement: "one_completed"
 			description: ["{quests.metal_age.graphite.desc}"]
-			icon: "tfc:powder/graphite"
+			icon: "gtceu:graphite_dust"
 			id: "31CE13462759950C"
 			shape: "octagon"
 			size: 2.0d

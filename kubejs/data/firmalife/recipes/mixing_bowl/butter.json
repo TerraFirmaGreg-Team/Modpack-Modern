@@ -1,0 +1,16 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"type": "firmalife:mixing_bowl",
+	"ingredients": [
+		{
+			"item": "gtceu:small_salt_dust"
+		}
+	],
+	"fluid_ingredient": {
+		"ingredient": "firmalife:cream",
+		"amount": 1000
+	},
+	"output_item": {
+		"item": "firmalife:food/butter"
+	}
+}

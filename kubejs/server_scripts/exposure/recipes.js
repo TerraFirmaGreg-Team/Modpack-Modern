@@ -104,56 +104,56 @@ const registerExposureRecipes = (event) => {
 	// Creating the developer
 
 	// Pyrogallol
-	event.recipes.tfc.pot(['tfc:powder/saltpeter'], Fluid.of('tfc:tannin', 500), 30 * 20, 450)
+	event.recipes.tfc.pot(['gtceu:small_saltpeter_dust'], Fluid.of('tfc:tannin', 500), 30 * 20, 450)
 		.itemOutput('tfg:pyrogallol_dust')
 		.id('tfg:pot/tannin_to_pyrogallol_saltpeter')
 
-	event.recipes.tfc.pot(['tfc:powder/soda_ash'], Fluid.of('tfc:tannin', 500), 30 * 20, 450)
+	event.recipes.tfc.pot(['gtceu:small_soda_ash_dust'], Fluid.of('tfc:tannin', 500), 30 * 20, 450)
 		.itemOutput('tfg:pyrogallol_dust')
 		.id('tfg:pot/tannin_to_pyrogallol_soda_ash')
 
 	event.recipes.firmalife.vat()
-		.inputs('tfc:powder/saltpeter', Fluid.of('tfc:tannin', 500))
+		.inputs('gtceu:small_saltpeter_dust', Fluid.of('tfc:tannin', 500))
 		.length(30 * 20)
 		.temperature(450)
 		.outputItem('tfg:pyrogallol_dust')
 		.id('tfg:vat/tannin_to_pyrogallol_saltpeter')
 
 	event.recipes.firmalife.vat()
-		.inputs('tfc:powder/soda_ash', Fluid.of('tfc:tannin', 500))
+		.inputs('gtceu:small_soda_ash_dust', Fluid.of('tfc:tannin', 500))
 		.length(30 * 20)
 		.temperature(450)
 		.outputItem('tfg:pyrogallol_dust')
 		.id('tfg:vat/tannin_to_soda_ash')
 
 	event.recipes.gtceu.chemical_reactor('tfg:tannin_to_pyrogallol_saltpeter')
-		.itemInputs('tfc:powder/saltpeter')
+		.itemInputs('gtceu:small_saltpeter_dust')
 		.inputFluids(Fluid.of('tfc:tannin', 500))
 		.itemOutputs('tfg:pyrogallol_dust')
 		.duration(200)
 		.EUt(7)
 
 	event.recipes.gtceu.chemical_reactor('tfg:tannin_to_pyrogallol_soda_ash')
-		.itemInputs('tfc:powder/soda_ash')
+		.itemInputs('gtceu:small_soda_ash_dust')
 		.inputFluids(Fluid.of('tfc:tannin', 500))
 		.itemOutputs('tfg:pyrogallol_dust')
 		.duration(200)
 		.EUt(7)
 
 	// Developer
-	event.recipes.tfc.pot(['#forge:dusts/pyrogallol', 'tfc:powder/soda_ash', 'tfc:powder/sulfur', '#exposure:black_printing_dyes'], Fluid.of('tfc:lye', 1000), 30 * 20, 450)
+	event.recipes.tfc.pot(['#forge:dusts/pyrogallol', 'gtceu:small_soda_ash_dust', 'gtceu:small_sulfur_dust', '#exposure:black_printing_dyes'], Fluid.of('tfc:lye', 1000), 30 * 20, 450)
 		.fluidOutput(Fluid.of('tfg:bw_photographic_developer', 1000))
 		.id('tfg:pot/bw_developer')
 
 	event.recipes.gtceu.mixer('tfg:bw_developer')
-		.itemInputs('#forge:dusts/pyrogallol', 'tfc:powder/soda_ash', 'tfc:powder/sulfur', '#exposure:black_printing_dyes')
+		.itemInputs('#forge:dusts/pyrogallol', 'gtceu:small_soda_ash_dust', 'gtceu:small_sulfur_dust', '#exposure:black_printing_dyes')
 		.inputFluids(Fluid.of('tfc:lye', 1000))
 		.outputFluids(Fluid.of('tfg:bw_photographic_developer', 1000))
 		.duration(200)
 		.EUt(7)
 
 	event.recipes.gtceu.mixer('tfg:color_developer')
-		.itemInputs('#forge:dusts/pyrogallol', 'tfc:powder/soda_ash', 'tfc:powder/sulfur', '#exposure:cyan_printing_dyes', '#exposure:yellow_printing_dyes', '#exposure:magenta_printing_dyes')
+		.itemInputs('#forge:dusts/pyrogallol', 'gtceu:small_soda_ash_dust', 'gtceu:small_sulfur_dust', '#exposure:cyan_printing_dyes', '#exposure:yellow_printing_dyes', '#exposure:magenta_printing_dyes')
 		.inputFluids(Fluid.of('tfc:lye', 1000))
 		.outputFluids(Fluid.of('tfg:color_photographic_developer', 1000))
 		.duration(200)

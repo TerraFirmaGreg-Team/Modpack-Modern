@@ -77,7 +77,8 @@
 		[
 			"tfg:venus/terrain/lava_fill",
 			"tfg:venus/surface/inklight",
-			"tfg:venus/surface/bloodthorn"
+			"tfg:venus/surface/bloodthorn",
+			"tfg:venus/surface/volcano_smoke_random"
 		],
 		"#tfg:venus_top_layer_modification"
 	],
@@ -252,7 +253,7 @@
 				"type": "aliencraft_kepler:tree_mite",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 40
+				"weight": 100
 			}
 		],
 		"underground_water_creature": [],

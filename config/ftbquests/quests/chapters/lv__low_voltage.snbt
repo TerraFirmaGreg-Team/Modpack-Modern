@@ -2254,7 +2254,12 @@
 			y: 19.0d
 		}
 		{
-			dependencies: ["7FA1525D681C4B4A"]
+			dependencies: [
+				"7FA1525D681C4B4A"
+				"6A21CCAEB1FDF38E"
+				"236F53188110F6D5"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.low_voltage.spool.desc}"]
 			icon: "gtcables:spool"
 			id: "557E63D456849EDC"

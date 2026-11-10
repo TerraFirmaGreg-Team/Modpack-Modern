@@ -69,7 +69,7 @@ function registerTFGRubberRecipes(event) {
 		.processingTime(75 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
 		.id('tfg:vi/vacuumizing/latex_from_rubber_leaves')
 
-	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:latex', 100), ['#tfg:rubber_plants', 'tfc:powder/soda_ash', Fluid.of('tfc:salt_water', 50)])
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:latex', 100), ['#tfg:rubber_plants', 'gtceu:small_soda_ash_dust', Fluid.of('tfc:salt_water', 50)])
 		.heated()
 		.processingTime(20 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
 		.id('tfg:vi/vacuumizing/latex_from_rubber_plants')
@@ -122,21 +122,14 @@ function registerTFGRubberRecipes(event) {
 		.heated()
 		.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
 		.id('tfg:vi/vacuumizing/rubber')
-
-	// matches the sulfur dust + raw rubber recipe, just an alternative using powder
-	event.recipes.gtceu.alloy_smelter('tfg:rubber_ingot_powder')
-		.itemInputs('4x tfc:powder/sulfur', '3x #forge:dusts/raw_rubber')
-		.itemOutputs('gtceu:rubber_ingot')
-		.duration(5 * 20)
-		.EUt(7)
 	
 	// Rubber Processing Line
-	event.recipes.tfc.pot('tfc:powder/sulfur', Fluid.of('tfg:latex', 1000), 1200, 300)
+	event.recipes.tfc.pot('gtceu:small_sulfur_dust', Fluid.of('tfg:latex', 1000), 1200, 300)
 		.fluidOutput(Fluid.of('tfg:vulcanized_latex', 1000))
 		.id('tfg:pot/vulcanized_latex')
 
 	event.recipes.firmalife.vat()
-		.inputs('tfc:powder/sulfur', Fluid.of('tfg:latex', 1000))
+		.inputs('gtceu:small_sulfur_dust', Fluid.of('tfg:latex', 1000))
 		.outputFluid(Fluid.of('tfg:vulcanized_latex', 1000))
 		.length(300)
 		.temperature(300)
@@ -145,7 +138,7 @@ function registerTFGRubberRecipes(event) {
 	event.recipes.gtceu.chemical_reactor('tfg:latex_to_vulcanized_latex')
 		.duration(100)
 		.EUt(20)
-		.itemInputs('tfc:powder/sulfur')
+		.itemInputs('gtceu:small_sulfur_dust')
 		.inputFluids(Fluid.of('tfg:latex', 1000))
 		.outputFluids(Fluid.of('tfg:vulcanized_latex', 1000))
 
