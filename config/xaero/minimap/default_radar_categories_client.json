@@ -128,7 +128,8 @@
 						"arthropocolypse:soldier_ant",
 						"arthropocolypse:stag_beetle",
 						"arthropocolypse:millipede_body",
-						"arthropocolypse:millipede_tail"
+						"arthropocolypse:millipede_tail",
+						"aliencraft_kepler:tree_mite"
 					],
 					"includeListInSuperCategory": true,
 					"excludeMode": "ONLY",
@@ -196,7 +197,8 @@
 						"arthropocolypse:soldier_ant",
 						"arthropocolypse:stag_beetle",
 						"arthropocolypse:millipede_body",
-						"arthropocolypse:millipede_tail"
+						"arthropocolypse:millipede_tail",
+						"aliencraft_kepler:tree_mite"
 					],
 					"name": "gui.xaero_entity_category_friendly",
 					"protection": true,

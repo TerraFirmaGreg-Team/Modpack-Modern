@@ -69,7 +69,22 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 			.particle('tfg:noxious_gas')
 			.count(1)
 			.forced(false));
-
+			
+	event.create('betterend:hydrothermal_vent', 'tfg:particle_emitter_decoration')
+		.soundType('dripstone_block')
+		.mapColor('dirt')
+		.requiresTool(true)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.opaque(false)
+		.fullBlock(false)
+		.box(1, 0, 1, 15, 16, 15)
+		.notSolid()
+		.particles(a => a
+			.range(0.3, 1, 0.3)
+			.velocity(0, 0.1, 0)
+			.particle('tfg:large_smoke')
+			.count(2)
+			.forced(false));
 
 	//Geyserite
 
@@ -175,22 +190,6 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.mapColor('wool')
 		.requiresTool(true)
 		.tagBlock('minecraft:mineable/axe')
-
-	event.create('betterend:hydrothermal_vent', 'tfg:particle_emitter_decoration')
-		.soundType('dripstone_block')
-		.mapColor('dirt')
-		.requiresTool(true)
-		.tagBlock('minecraft:mineable/pickaxe')
-		.opaque(false)
-		.fullBlock(false)
-		.box(1, 0, 1, 15, 16, 15)
-		.notSolid()
-		.particles(a => a
-			.range(0.3, 1, 0.3)
-			.velocity(0, 0.1, 0)
-			.particle('tfg:large_smoke')
-			.count(2)
-			.forced(false));
 
 	event.create('betterend:tube_worm', 'tfg:attached_decorative_plant')
 		.soundType('nether_wart')
