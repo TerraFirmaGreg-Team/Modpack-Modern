@@ -223,7 +223,7 @@ global.modifyRecipe = function(event, recipeId, options) {
 
         javaRecipe.remove()
 
-        var newRecipe = event.recipes.gtceu[machineName](newId)
+            var newRecipe = (event.recipes.tfg[machineName] || event.recipes.gtceu[machineName])(newId)
             .duration(recipeJson.duration)
             .EUt(recipeJson.tickInputs.eu[0].content)
 
