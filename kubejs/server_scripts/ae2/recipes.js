@@ -2203,7 +2203,7 @@ const registerAE2Recipes = (event) => {
 	// Cable Anchor
 	event.recipes.gtceu.extruder('ae2:cable_anchor')
 		.itemInputs('#forge:plates/steel')
-		.notConsumable('gtceu:bolt_extruder_mold')
+		.notConsumable('gtceu:wire_extruder_mold')
 		.itemOutputs('8x ae2:cable_anchor')
 		.duration(15)
 		.EUt(120)
