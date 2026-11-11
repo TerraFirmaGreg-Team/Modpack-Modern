@@ -176,7 +176,7 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 		//======================== Greenhouse Recipes ========================
 
 		// Base recipe.
-		let a = event.recipes.gtceu.greenhouse(`tfg:${global.linuxUnfucker(input)}${idCircuit}`)
+		let a = event.recipes.tfg.greenhouse(`tfg:${global.linuxUnfucker(input)}${idCircuit}`)
 			.notConsumable(input)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)
@@ -200,7 +200,7 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 		};
 
 		// Fertilized Recipe.
-		let b = event.recipes.gtceu.greenhouse(`tfg:${global.linuxUnfucker(input)}_fertilized${idCircuit}`)
+		let b = event.recipes.tfg.greenhouse(`tfg:${global.linuxUnfucker(input)}_fertilized${idCircuit}`)
 			.notConsumable(input)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)
@@ -225,7 +225,7 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 		};
 
 		// Aquaponics Recipe.
-		let c = event.recipes.gtceu.greenhouse(`tfg:${global.linuxUnfucker(input)}_aquaponic${idCircuit}`)
+		let c = event.recipes.tfg.greenhouse(`tfg:${global.linuxUnfucker(input)}_aquaponic${idCircuit}`)
 			.notConsumable(input)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)
@@ -252,7 +252,7 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 		//======================== Hydroponic Facility Recipes ========================
 
 		// Base recipe.
-		let d = event.recipes.gtceu.hydroponics_facility(`tfg:${global.linuxUnfucker(input)}${idCircuit}`)
+		let d = event.recipes.tfg.hydroponics_facility(`tfg:${global.linuxUnfucker(input)}${idCircuit}`)
 			.notConsumable(input)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)
@@ -273,7 +273,7 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 		};
 
 		// Fertilized Recipe.
-		let e = event.recipes.gtceu.hydroponics_facility(`tfg:${global.linuxUnfucker(input)}_fertilized${idCircuit}`)
+		let e = event.recipes.tfg.hydroponics_facility(`tfg:${global.linuxUnfucker(input)}_fertilized${idCircuit}`)
 			.notConsumable(input)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)
@@ -295,7 +295,7 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 		};
 
 		// Aquaponics Recipe.
-		let f = event.recipes.gtceu.hydroponics_facility(`tfg:${global.linuxUnfucker(input)}_aquaponic${idCircuit}`)
+		let f = event.recipes.tfg.hydroponics_facility(`tfg:${global.linuxUnfucker(input)}_aquaponic${idCircuit}`)
 			.notConsumable(input)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)
@@ -321,7 +321,7 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 
 		//======================== Greenhouse Recipes ========================
 
-		let a = event.recipes.gtceu.greenhouse(`tfg:${global.linuxUnfucker(input)}${idCircuit}`)
+		let a = event.recipes.tfg.greenhouse(`tfg:${global.linuxUnfucker(input)}${idCircuit}`)
 			.notConsumable(input)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)
@@ -346,7 +346,7 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 		
 		//======================== Hydroponics Facility Recipes ========================
 
-		let b = event.recipes.gtceu.hydroponics_facility(`tfg:${global.linuxUnfucker(input)}${idCircuit}`)
+		let b = event.recipes.tfg.hydroponics_facility(`tfg:${global.linuxUnfucker(input)}${idCircuit}`)
 			.notConsumable(input)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)

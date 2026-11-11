@@ -144,7 +144,7 @@ function registerTFGBeneathOreProcRecipes(event) {
 			? `tfg:ore_proc_gas/${materialName}`
 			: `tfg:ore_proc_gas/${tier}/${materialName}`;
 
-		let recipe = event.recipes.gtceu.ore_processing_gas(recipeId)
+		let recipe = event.recipes.tfg.ore_processing_gas(recipeId)
 			.itemInputs(inputItem)
 			.perTick(true)
 			.inputFluids(Fluid.of('gtceu:natural_gas', gasAmount))

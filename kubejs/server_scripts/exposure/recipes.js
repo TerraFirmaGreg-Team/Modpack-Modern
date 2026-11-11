@@ -170,7 +170,7 @@ const registerExposureRecipes = (event) => {
 		.outputItem(TFC.isp.of('exposure:developed_black_and_white_film').simpleModifier('tfg:copy_nbt').asCanonClass())
 		.id('tfg:barrel/develop_high_sensitivity_black_and_white_film')
 
-	event.recipes.gtceu.food_processor('black_and_white_film')
+	event.recipes.tfg.food_processor('black_and_white_film')
 		.itemInputs('exposure:black_and_white_film')
 		.inputFluids(Fluid.of('tfg:bw_photographic_developer', 250))
 		.itemOutputs('exposure:developed_black_and_white_film')
@@ -182,7 +182,7 @@ const registerExposureRecipes = (event) => {
 		TFC.isp.of('exposure:developed_black_and_white_film').simpleModifier('tfg:copy_nbt').asCanonClass(),
 		[])
 
-	event.recipes.gtceu.food_processor('high_sensitivity_black_and_white_film')
+	event.recipes.tfg.food_processor('high_sensitivity_black_and_white_film')
 		.itemInputs('exposure:high_sensitivity_black_and_white_film')
 		.inputFluids(Fluid.of('tfg:bw_photographic_developer', 250))
 		.itemOutputs('exposure:developed_black_and_white_film')
@@ -205,7 +205,7 @@ const registerExposureRecipes = (event) => {
 		.outputItem(TFC.isp.of('exposure:developed_color_film').simpleModifier('tfg:copy_nbt'))
 		.id('tfg:barrel/develop_high_sensitivity_color_film')
 
-	event.recipes.gtceu.food_processor('color_film')
+	event.recipes.tfg.food_processor('color_film')
 		.itemInputs('exposure:color_film')
 		.inputFluids(Fluid.of('tfg:color_photographic_developer', 250))
 		.itemOutputs('exposure:developed_color_film')
@@ -217,7 +217,7 @@ const registerExposureRecipes = (event) => {
 		TFC.isp.of('exposure:developed_color_film').simpleModifier('tfg:copy_nbt').asCanonClass(),
 		[])
 
-	event.recipes.gtceu.food_processor('high_sensitivity_color_film')
+	event.recipes.tfg.food_processor('high_sensitivity_color_film')
 		.itemInputs('exposure:high_sensitivity_color_film')
 		.inputFluids(Fluid.of('tfg:color_photographic_developer', 250))
 		.itemOutputs('exposure:developed_color_film')

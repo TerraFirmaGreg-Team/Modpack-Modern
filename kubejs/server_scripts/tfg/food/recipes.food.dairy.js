@@ -79,7 +79,7 @@ function registerTFGDairyFoodRecipes(event) {
 	});
 
 	// Slice of "Cheese"
-	event.recipes.gtceu.food_processor('slice_of_cheese')
+	event.recipes.tfg.food_processor('slice_of_cheese')
 		.itemInputs(
 			ChemicalHelper.get(TagPrefix.dust, 'gtceu:lactose', 1),
 			ChemicalHelper.get(TagPrefix.dust, 'tfg:cholesterol', 1),
