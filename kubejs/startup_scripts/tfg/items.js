@@ -101,4 +101,10 @@ const registerTFGItems = (event) => {
 		.texture('tfg:item/al_cr_y_hydroxide_cake')
 		.tag('forge:cake/al_cr_y_hydroxide')
 
+	// Item for Platinum Line
+
+	event.create('tfg:pgm_cement')
+		.texture('tfg:item/pgm_cement')
+		.tag('forge:pgm_cement')
+
 }
