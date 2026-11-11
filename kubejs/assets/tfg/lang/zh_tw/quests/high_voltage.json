@@ -235,5 +235,7 @@
     "quests.space_survival.railgun.subtitle": "終界箱？沒聽過！",
     "quests.space_survival.railgun.desc": "&7在&b群巒格雷&r中，要跨維度或長距離運送物品，你必須建造特殊的&6多方塊結構&r。\n\n這套系統&a強大又靈活&r，提供多種設定，讓你依照需求自訂物流。\n\n這套系統最適合把所有&a被動生產&r的資源，準確送到其他行星上需要的地方！它還附帶強大的&d設定系統&r，讓你在同一個地方控制一切。",
     "quests.high_voltage.oxygen_distributor.subtitle": " 又是渦輪轉子！你知道這些東西有多貴嗎？",
-    "quests.high_voltage.oxygen_distributor.desc": "&6可呼吸空氣分配器&r是經營月球基地的關鍵。首先，誰不想在基地裡走動時摘下頭盔呢？其次，也更重要的是：大部分應用能源的配方都需要&5有供氧的環境&r才能運作。\n\n渦輪轉子可任選，但記得&b效率&r能降低每 tick 消耗的可呼吸氣體量。"
+    "quests.high_voltage.oxygen_distributor.desc": "&6可呼吸空氣分配器&r是經營月球基地的關鍵。首先，誰不想在基地裡走動時摘下頭盔呢？其次，也更重要的是：大部分應用能源的配方都需要&5有供氧的環境&r才能運作。\n\n渦輪轉子可任選，但記得&b效率&r能降低每 tick 消耗的可呼吸氣體量。",
+    "quests.high_voltage.accumulator.subtitle": "給火車裝電池！",
+    "quests.high_voltage.accumulator.desc": "想把電力送到遠方，又不想讓每根電線桿所在的區塊都保持載入？另一個選擇是&6蓄電池&r，這是一種可以裝在火車等動態結構上的多方塊電池。\n\n每個方塊可儲存 2,000,000 EU，單個不算多，但可以像流體儲罐或儲物倉一樣疊在一起，火車上要裝多少都行。\n\n和其他列車零件一樣，電力進出火車要透過&b移動式能量介面&r。注意這些都使用 FE 而非 EU，所以還需要一台能量轉換器。"
 }

@@ -5,6 +5,7 @@
 	"dungeonconfig.key.ctrl_combo": "Ctrl + %s",
 	"dungeonconfig.config.category.general": "Ogólne",
 	"dungeonconfig.config.category.appearance": "Wygląd",
+	"dungeonconfig.config.option.titleScreenButton": "Przycisk w menu głównym",
 	"dungeonconfig.config.option.menuBackground": "Tło menu",
 	"dungeonconfig.config.option.menuBackgroundBlurPercent": "Rozmycie tła",
 	"dungeonconfig.config.option.menuBackgroundBlurPercent.desc": "Jak mocno rozmyte jest tło menu, aby menu było czytelne. 0 oznacza brak rozmycia.",
