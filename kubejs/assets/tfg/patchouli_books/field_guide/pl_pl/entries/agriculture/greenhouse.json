@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:agriculture/greenhouse#types)Greenhouse Types$()$(li)$(bold)$(l:agriculture/greenhouse#planters)Planters$()$(li2)$(l:agriculture/greenhouse#large_planter)Large Planter$()$(li2)$(l:agriculture/greenhouse#quad_planter)Quad Planter$()$(li2)$(l:agriculture/greenhouse#bonsai_planter)Bonsai Planter$()$(li2)$(l:agriculture/greenhouse#hanging_planter)Hanging Planter$()$(li2)$(l:agriculture/greenhouse#trellis_planter)Trellis Planter$()$(li2)$(l:agriculture/greenhouse#hydroponic_planter)Hydroponic Planter$()$(li)$(bold)$(l:agriculture/greenhouse#irrigation)Irrigation$()$(li)$(bold)$(l:agriculture/greenhouse#auto_planting)Auto-Planting$()$(li)$(bold)$(l:agriculture/greenhouse#auto_harvesting)Auto-Harvesting$()$(li)$(bold)$(l:agriculture/greenhouse#electric)Electric Greenhouse$()$(li)$(bold)$(l:agriculture/greenhouse#hydroponics)Hydroponics Facility$()"
+            "text": "$(bold)$(l:agriculture/greenhouse#types)Greenhouse Types$()$(li)$(bold)$(l:agriculture/greenhouse#planters)Planters$()$(li2)$(l:agriculture/greenhouse#large_planter)Large Planter$()$(li2)$(l:agriculture/greenhouse#quad_planter)Quad Planter$()$(li2)$(l:agriculture/greenhouse#bonsai_planter)Bonsai Planter$()$(li2)$(l:agriculture/greenhouse#hanging_planter)Hanging Planter$()$(li2)$(l:agriculture/greenhouse#trellis_planter)Trellis Planter$()$(li2)$(l:agriculture/greenhouse#hydroponic_planter)Hydroponic Planter$()$(li)$(bold)$(l:agriculture/greenhouse#irrigation)Irrigation$()$(li)$(bold)$(l:agriculture/greenhouse#auto_planting)Auto-Planting$()$(li)$(bold)$(l:agriculture/greenhouse#auto_harvesting)Auto-Harvesting$()$(li)$(bold)$(l:agriculture/greenhouse#bees_and_taps)Beehives and Tree Taps$()$(li)$(bold)$(l:agriculture/greenhouse#electric)Electric Greenhouse$()$(li)$(bold)$(l:agriculture/greenhouse#hydroponics)Hydroponics Facility$()"
         },
         {
             "type": "patchouli:text",
@@ -103,20 +103,27 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "auto_planting",
-            "title": "Automatyczne zbieranie",
+            "title": "Automatyczne sadzenie",
             "item": "create:mechanical_arm",
-            "text": "$(li)$(thing)Mechanical Arms$() can be used to plant crops in planters. By setting a planter as an arm's target, the arm will automatically take seeds from assigned depots and plant them in the appropriate planter for each seed type."
+            "text": "$(thing)Mechanical Arms$() can be used to plant crops in planters. By setting a planter as an arm's target, the arm will automatically take seeds from assigned depots and plant them in the appropriate planter for each seed type."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "auto_harvesting",
-            "title": "Auto-Harvesting",
+            "title": "Automatyczne zbieranie",
             "item": "firmalife:sweeper,firmalife:picker",
-            "text": "$(li)$(thing)Sweepers$() are used to harvest planters other than Quad and Hydroponic planters. They can be powered by redstone.$(li)$(thing)Pickers$() can be powered via redstone signal from above. They extend down to pick the crops from Quad and Hydroponic planters."
+            "text": "$(thing)Sweepers$() are used to harvest planters other than Quad and Hydroponic planters. They can be powered by redstone.$(li)$(thing)Pickers$() can be powered via redstone signal from above. They extend down to pick the crops from Quad and Hydroponic planters."
         },
         {
             "type": "patchouli:text",
             "text": "$(li)Additionally, $(item)Harvest Baskets$() can be used to harvest most planter types.$(li)To collect the loose items that the $(thing)Sweepers$() and $(thing)Pickers$() drop, you can use a $(item)Hopper Minecart$(), a $(thing)Contraption$() with $(item)Funnels$(), or a GregTech $(item)Item Collector$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "bees_and_taps",
+            "title": "Ule i kraniki do drzew",
+            "item": "firmalife:beehive,afc:tree_tap",
+            "text": "$(l:agriculture/beekeeping)Beehives$() and $(l:agriculture/tree_tapping)Tree Taps$() both benefit from being placed inside a greenhouse! The greenhouse's controlled climate ensures year-round productivity, ignoring seasonal changes in temperature."
         },
         {
             "type": "patchouli:spotlight",
@@ -126,7 +133,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(item)Instalacja hydroponiczna$() to ulepszenie elektrycznej szklarni na poziomie $(9)IN$() , które pozwala uprawiać dowolne rośliny w dowolnym wymiarze i obsługuje $(item)włazy zrównoleglania$()."
+            "text": "$(bold)Note:$() This multiblock can have its walls customized to use any valid iron-tier greenhouse block.$(br2)Check the $(emi) multiblock preview for a list of all the different blocks you can use.$(br2)The Electric Greenhouse can also be improved in a few ways, including $(l:agriculture/fertilizers)fertilizer$() or later in $(6)HV$() with the $(thing)Aquaponics Loop$()."
         },
         {
             "type": "patchouli:spotlight",
@@ -136,7 +143,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_crops",

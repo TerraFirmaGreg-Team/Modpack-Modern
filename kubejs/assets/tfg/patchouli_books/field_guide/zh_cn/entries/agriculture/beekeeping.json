@@ -358,8 +358,12 @@
             "text": "$(li)蜜蜂可以帮助给 $(l:agriculture/greenhouse#planters)种植盆$()施肥！$(li)含水的大型种植盆也算作花朵。$(li)身上是湿的可以避免被蜜蜂攻击。$(li)向日葵、亚麻等一些作物也算作花朵。$(li)$(thing)作物亲和力$()、$(thing)自然亲和力$() 和花朵的范围相同。$(li)务必保持蜂箱入口畅通。"
         },
         {
+            "type": "patchouli:text",
+            "text": "$(li)Make sure to keep the hive entrance unobstructed. Bees can't do anything if they can't leave their hive!$(li)Bees can live in $(l:agriculture/greenhouse)Greenhouses$()! They will ignore seasonal temperatures when inside, allowing bees to thrive year-round."
+        },
+        {
             "type": "patchouli:relations",
-            "title": "延伸阅读",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/greenhouse",
