@@ -7,8 +7,6 @@
             "icon": "gtceu:copper_pickaxe",
             "hide": false,
             "blocks": [
-                "#forge:ores",
-                "#forge:raw_ore_blocks",
                 "#tfc:clay_grass",
                 "#tfc:clay",
                 "#tfc:kaolin_clay",
@@ -16,7 +14,6 @@
                 "#tfc:wild_crops",
                 "#tfg:dead_crops",
                 "#minecraft:leaves",
-                "#forge:surface_rocks",
                 "#tfc:rock/raw",
                 "#forge:cobblestone",
                 "#tfc:rock/gravel",
