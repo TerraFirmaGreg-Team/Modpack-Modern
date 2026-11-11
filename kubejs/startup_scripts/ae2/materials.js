@@ -4,7 +4,7 @@
 const registerAE2Materials = (event) => {
     event.create('tfg:fluix')
         .liquid()
-        .gem()
+        .gem(1)
         .iconSet(GTMaterialIconSet.CERTUS)
         .flags(
             GTMaterialFlags.NO_SMELTING, 
