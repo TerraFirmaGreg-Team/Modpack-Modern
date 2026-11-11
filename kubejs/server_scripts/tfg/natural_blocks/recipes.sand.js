@@ -5,23 +5,23 @@ function registerTFGSandRecipes(event) {
 
 	event.recipes.gtceu.centrifuge('oilsands_ore_separation')
 		.itemInputs('#forge:ores/oilsands')
-		.chancedOutput('tfc:sand/yellow', 5000, 5000)
+		.chancedOutput('tfc:sand/yellow', 5000)
 		.outputFluids(Fluid.of('gtceu:oil', 2000))
 		.duration(200)
 		.EUt(30)
 
 	event.recipes.gtceu.centrifuge('oilsands_dust_separation')
 		.itemInputs('gtceu:oilsands_dust')
-		.chancedOutput('tfc:sand/yellow', 5000, 5000)
+		.chancedOutput('tfc:sand/yellow', 5000)
 		.outputFluids(Fluid.of('gtceu:oil', 2000))
 		.duration(200)
 		.EUt(30)
 
 	event.recipes.gtceu.centrifuge('dirt_separation')
 		.itemInputs('#tfc:dirt')
-		.chancedOutput('gtceu:plant_ball', 1250, 700)
-		.chancedOutput('tfc:sand/yellow', 5000, 1200)
-		.chancedOutput('gtceu:tiny_clay_dust', 4000, 900)
+		.chancedOutput('gtceu:plant_ball', 1250)
+		.chancedOutput('tfc:sand/yellow', 5000)
+		.chancedOutput('gtceu:tiny_clay_dust', 4000)
 		.duration(250)
 		.EUt(30)
 
@@ -174,12 +174,12 @@ function registerTFGSandRecipes(event) {
 		.duration(60)
 		.itemInputs('2x gtceu:quartz_sand_dust')
 		.itemOutputs('gtceu:quartzite_dust')
-		.chancedOutput('#forge:dusts/nether_quartz', 2000, 0)
+		.chancedOutput('#forge:dusts/nether_quartz', 2000)
 
 	event.recipes.gtceu.autoclave('tfg:quartz_sand_autoclave')
 		.itemInputs('gtceu:quartz_sand_dust')
 		.inputFluids(Fluid.of('gtceu:distilled_water', 250))
-		.chancedOutput('gtceu:quartzite_gem', 4500, 0)
+		.chancedOutput('gtceu:quartzite_gem', 4500)
 		.duration(60 * 20)
 		.EUt(GTValues.VA[GTValues.LV])
 }

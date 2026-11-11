@@ -80,7 +80,7 @@ function registerTFGHVMaterialRecipes(event) {
     event.recipes.gtceu.coal_liquefaction_tower('tfg:molten_mafic_silicate')
         .itemInputs(Item.of('tfg:igneous_mafic_dust', 16))
         .perTick(true)
-	    .chancedFluidInput(Fluid.of('gtceu:hydrogen', 1), 1000, 0)
+	    .chancedFluidInput(Fluid.of('gtceu:hydrogen', 1), 1000)
 	    .perTick(false)
 		.outputFluids(Fluid.of('tfg:igneous_mafic', 144*16))
         .duration(20 * 50)

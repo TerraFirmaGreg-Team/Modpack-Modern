@@ -28,7 +28,7 @@ function registerTFGDairyFoodRecipes(event) {
 		event.recipes.gtceu.mixer(`lactose_milk_vinegar_${item.id}`)
 			.circuit(1)
 			.inputFluids(Fluid.of(item.milk, 1000), Fluid.of('tfc:vinegar', 100))
-			.chancedOutput('gtceu:lactose_dust', 1000, 0)
+			.chancedOutput('gtceu:lactose_dust', 1000)
 			.outputFluids(Fluid.of(item.curdled_fluid, 1000))
 			.duration(300)
 			.EUt(GTValues.VA[GTValues.LV]);

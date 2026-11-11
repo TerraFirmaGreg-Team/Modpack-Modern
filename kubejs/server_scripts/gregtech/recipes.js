@@ -67,7 +67,7 @@ const registerGTCEURecipes = (event) => {
 	event.recipes.gtceu.alloy_blast_smelter('tfg:uranium_triplatinum')
 		.itemInputs(Item.of('gtceu:uranium_dust', 1), Item.of('gtceu:platinum_dust', 3))
 		.inputFluids(Fluid.of('gtceu:radon', 10))
-		.outputFluids(Fluid.of('gtceu:molten_uranium_triplatinum', 576))
+		.outputFluids(Fluid.of('gtceu:uranium_triplatinum', 576))
 		.duration(20*150)
 		.blastFurnaceTemp(4400)
 		.EUt(GTValues.VA[GTValues.EV])
@@ -76,7 +76,7 @@ const registerGTCEURecipes = (event) => {
 	event.recipes.gtceu.alloy_blast_smelter('tfg:uranium_triplatinum_gas')
 		.itemInputs(Item.of('gtceu:uranium_dust', 1), Item.of('gtceu:platinum_dust', 3))
 		.inputFluids(Fluid.of('gtceu:helium', 400), Fluid.of('gtceu:radon', 10))
-		.outputFluids(Fluid.of('gtceu:molten_uranium_triplatinum', 576))
+		.outputFluids(Fluid.of('gtceu:uranium_triplatinum', 576))
 		.duration(20*100.5)
 		.blastFurnaceTemp(4400)
 		.EUt(GTValues.VA[GTValues.EV])
@@ -499,7 +499,7 @@ const registerGTCEURecipes = (event) => {
 	
 	event.recipes.gtceu.centrifuge('tfg:uranium_238_separation')
 		.itemInputs('#forge:dusts/uranium')
-		.chancedOutput('#forge:tiny_dusts/uranium_235', 2300, 0)
+		.chancedOutput('#forge:tiny_dusts/uranium_235', 2300)
 		.duration(20*40)
 		.EUt(GTValues.VA[GTValues.HV])
 	
@@ -742,8 +742,8 @@ const registerGTCEURecipes = (event) => {
 	event.recipes.gtceu.electromagnetic_separator('tfg:bauxite_slag_separation')
 		.itemInputs(Item.of('gtceu:bauxite_slag_dust', 1))
 		.itemOutputs(Item.of('gtceu:salt_dust', 1))
-		.chancedOutput(Item.of('gtceu:chromium_dust', 1), 7500, 0)
-		.chancedOutput(Item.of('gtceu:neodymium_dust', 1), 2000, 0)
+		.chancedOutput(Item.of('gtceu:chromium_dust', 1), 7500)
+		.chancedOutput(Item.of('gtceu:neodymium_dust', 1), 2000)
 		.duration(2.5*20)
 		.EUt(GTValues.VA[GTValues.MV])
 
