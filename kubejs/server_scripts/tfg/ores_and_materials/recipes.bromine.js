@@ -69,7 +69,7 @@ function registerTFGBromineRecipes(event) {
 
 	event.recipes.gtceu.centrifuge('debrominated_brine_decomposition')
 		.inputFluids(Fluid.of('gtceu:debrominated_brine', 2000))
-		.outputFluids(Fluid.of('tfc:salt_water'), 1000)
+		.outputFluids(Fluid.of('gtceu:hydrogen', 1000))
 		.duration(20*3)
 		.EUt(GTValues.VA[GTValues.MV])
 
