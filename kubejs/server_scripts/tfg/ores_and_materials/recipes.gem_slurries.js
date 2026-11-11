@@ -10,7 +10,7 @@ function registerTFGGemSlurriesProcessing(event) {
         event.recipes.gtceu.coal_liquefaction_tower(`tfg:dirty_${output}_slurry_${global.linuxUnfucker(input.getItem())}`)
             .itemInputs(input)
             .perTick(true)
-		    .chancedFluidInput(Fluid.of('gtceu:hydrogen', 10), 1000, 0)
+		    .chancedFluidInput(Fluid.of('gtceu:hydrogen', 10), 1000)
 		    .perTick(false)
             .outputFluids(Fluid.of(`tfg:dirty_${output}_slurry`, amount))
             .duration(20 * 50)
@@ -97,7 +97,7 @@ function registerTFGGemSlurriesProcessing(event) {
         }
         if (chancedOutputs && chancedOutputs.length > 0) {
             chancedOutputs.forEach(([item, chance, tierBoost]) => {
-                recipe.chancedOutput(Item.of(item), chance, tierBoost);
+                recipe.chancedOutput(Item.of(item), chance);
             });
         }
     }

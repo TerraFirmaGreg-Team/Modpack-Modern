@@ -92,7 +92,7 @@ function registerTFGSolarRecipes(event) {
 	// Solar T1
 
 	event.recipes.gtceu.large_solar_panel('solar_panel_t1_emergency')
-		.chancedInput('tfg:photo_cell_t1', 100, 0)
+		.chancedInput('tfg:photo_cell_t1', 100)
 		.duration(20 * 20)
 		.daytime(false)
 		.dimension('ad_astra:moon')
@@ -102,7 +102,7 @@ function registerTFGSolarRecipes(event) {
 	event.recipes.gtceu.large_solar_panel('solar_panel_t1')
 		.notConsumable('tfg:photo_cell_t1')
 		.perTick(true)
-		.chancedFluidInput('tfg:compressed_trimix_3 4', 5000, 0)
+		.chancedFluidInput('tfg:compressed_trimix_3 4', 5000)
 		.perTick(false)
 		.duration(20 * 20)
 		.daytime(false)
@@ -113,7 +113,7 @@ function registerTFGSolarRecipes(event) {
 	// Solar T2
 
 	event.recipes.gtceu.large_solar_panel_tier2('solar_panel_t2_emergency')
-		.chancedInput('ad_astra:photovoltaic_etrium_cell', 100, 0)
+		.chancedInput('ad_astra:photovoltaic_etrium_cell', 100)
 		.duration(20 * 20)
 		.daytime(false)
 		.dimension('ad_astra:moon')
@@ -123,7 +123,7 @@ function registerTFGSolarRecipes(event) {
 	event.recipes.gtceu.large_solar_panel_tier2('solar_panel_t2_strong')
 		.notConsumable('ad_astra:photovoltaic_etrium_cell')
 		.perTick(true)
-		.chancedFluidInput('tfg:solar_coolant 10', 5000, 0)
+		.chancedFluidInput('tfg:solar_coolant 10', 5000)
 		.inputFluids('tfg:cryogenized_fluix 4')
 		.outputFluids('tfg:fluix 1')
 		.perTick(false)
@@ -147,7 +147,7 @@ function registerTFGSolarRecipes(event) {
 	// Solar T3
 
 	event.recipes.gtceu.large_solar_panel_tier3('solar_panel_t3_emergency')
-		.chancedInput('ad_astra:photovoltaic_vesnium_cell', 100, 0)
+		.chancedInput('ad_astra:photovoltaic_vesnium_cell', 100)
 		.duration(20 * 20)
 		.daytime(false)
 		.dimension('ad_astra:moon')
@@ -157,7 +157,7 @@ function registerTFGSolarRecipes(event) {
 	event.recipes.gtceu.large_solar_panel_tier3('solar_panel_t3_strong')
 		.notConsumable('ad_astra:photovoltaic_vesnium_cell')
 		.perTick(true)
-		.chancedFluidInput('tfg:solar_coolant_tier2 10', 5000, 0)
+		.chancedFluidInput('tfg:solar_coolant_tier2 10', 5000)
 		.inputFluids('tfg:cryogenized_fluix 4')
 		.outputFluids('tfg:fluix 1')
 		.perTick(false)
@@ -170,7 +170,7 @@ function registerTFGSolarRecipes(event) {
 	event.recipes.gtceu.large_solar_panel_tier3('solar_panel_t3_cheap')
 		.notConsumable('ad_astra:photovoltaic_vesnium_cell')
 		.perTick(true)
-		.chancedFluidInput('tfg:solar_coolant 10', 5000, 0)
+		.chancedFluidInput('tfg:solar_coolant 10', 5000)
 		.inputFluids('tfg:cryogenized_fluix 4')
 		.outputFluids('tfg:fluix 1')
 		.perTick(false)

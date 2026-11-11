@@ -148,7 +148,7 @@ function registerTFGBeneathOreProcRecipes(event) {
 			.itemInputs(inputItem)
 			.perTick(true)
 			.inputFluids(Fluid.of('gtceu:natural_gas', gasAmount))
-			.chancedFluidInput(Fluid.of('gtceu:distilled_water', 5), 1000, 0)
+			.chancedFluidInput(Fluid.of('gtceu:distilled_water', 5), 1000)
 			.perTick(false)
 			.duration(20 * 20)
 			.EUt(GTValues.VA[GTValues.LV])
@@ -215,6 +215,6 @@ function registerTFGBeneathOreProcRecipes(event) {
 		if (split.guaranteed > 0)
 			recipe.itemOutputs(item.copyWithCount(split.guaranteed));
 		if (split.chance > 0)
-			recipe.chancedOutput(item, split.chance, 0);
+			recipe.chancedOutput(item, split.chance);
 	}
 }

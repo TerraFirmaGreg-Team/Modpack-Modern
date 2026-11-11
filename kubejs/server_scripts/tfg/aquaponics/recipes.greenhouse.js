@@ -180,7 +180,7 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			.notConsumable(input)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)
-			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance, 0)
+			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance)
 			.perTick(false)
 			.duration(greenhouse_base_duration)
 			.EUt(resolvedEUt)
@@ -191,9 +191,9 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			TFGRecipeSchemaBindings.isOxygenated(a, requiresOxygen)
 		};
 		if (outputs_array[1] !== null) {
-			a.chancedOutput(outputs_array[1], base_chance, 0)
-			a.chancedOutput(outputs_array[2], base_chance, 0)
-			a.chancedOutput(outputs_array[3], base_chance, 0)
+			a.chancedOutput(outputs_array[1], base_chance)
+			a.chancedOutput(outputs_array[2], base_chance)
+			a.chancedOutput(outputs_array[3], base_chance)
 		};
 		if (circuit !== null) {
 			a.circuit(circuit)
@@ -204,7 +204,7 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			.notConsumable(input)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)
-			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance, 0)
+			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance)
 			.perTick(false)
 			.duration(fertilizer_duration)
 			.EUt(resolvedEUt)
@@ -215,9 +215,9 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			TFGRecipeSchemaBindings.isOxygenated(b, requiresOxygen)
 		};
 		if (outputs_array[1] !== null) {
-			b.chancedOutput(outputs_array[1], fertilizer_chance, 0)
-			b.chancedOutput(outputs_array[2], fertilizer_chance, 0)
-			b.chancedOutput(outputs_array[3], fertilizer_chance, 0)
+			b.chancedOutput(outputs_array[1], fertilizer_chance)
+			b.chancedOutput(outputs_array[2], fertilizer_chance)
+			b.chancedOutput(outputs_array[3], fertilizer_chance)
 			b.itemInputs(Item.of(resolvedFertilizer, 8))
 		};
 		if (circuit !== null) {
@@ -229,7 +229,7 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			.notConsumable(input)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)
-			.chancedFluidInput(`${resolvedFluidTier2} 1`, resolvedChance, 0)
+			.chancedFluidInput(`${resolvedFluidTier2} 1`, resolvedChance)
 			.perTick(false)
 			.duration(aquaponic_duration)
 			.EUt(resolvedEUt)
@@ -240,9 +240,9 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			TFGRecipeSchemaBindings.isOxygenated(c, requiresOxygen)
 		};
 		if (outputs_array[1] !== null) {
-			c.chancedOutput(outputs_array[1], aquaponic_chance, 0)
-			c.chancedOutput(outputs_array[2], aquaponic_chance, 0)
-			c.chancedOutput(outputs_array[3], aquaponic_chance, 0)
+			c.chancedOutput(outputs_array[1], aquaponic_chance)
+			c.chancedOutput(outputs_array[2], aquaponic_chance)
+			c.chancedOutput(outputs_array[3], aquaponic_chance)
 		};
 		if (circuit !== null) {
 			c.circuit(circuit + 2)
@@ -256,7 +256,7 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			.notConsumable(input)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)
-			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance, 0)
+			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance)
 			.perTick(false)
 			.duration(greenhouse_base_duration)
 			.EUt(resolvedEUt)
@@ -264,9 +264,9 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			d.dimension(dimension)
 		};
 		if (outputs_array[1] !== null) {
-			d.chancedOutput(outputs_array[1], hydroponics_base_chance, 0)
-			d.chancedOutput(outputs_array[2], hydroponics_base_chance, 0)
-			d.chancedOutput(outputs_array[3], hydroponics_base_chance, 0)
+			d.chancedOutput(outputs_array[1], hydroponics_base_chance)
+			d.chancedOutput(outputs_array[2], hydroponics_base_chance)
+			d.chancedOutput(outputs_array[3], hydroponics_base_chance)
 		};
 		if (circuit !== null) {
 			d.circuit(circuit)
@@ -277,7 +277,7 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			.notConsumable(input)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)
-			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance, 0)
+			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance)
 			.perTick(false)
 			.duration(fertilizer_duration)
 			.EUt(resolvedEUt)
@@ -285,9 +285,9 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			e.dimension(dimension)
 		};
 		if (outputs_array[1] !== null) {
-			e.chancedOutput(outputs_array[1], hydroponics_fertilizer_chance, 0)
-			e.chancedOutput(outputs_array[2], hydroponics_fertilizer_chance, 0)
-			e.chancedOutput(outputs_array[3], hydroponics_fertilizer_chance, 0)
+			e.chancedOutput(outputs_array[1], hydroponics_fertilizer_chance)
+			e.chancedOutput(outputs_array[2], hydroponics_fertilizer_chance)
+			e.chancedOutput(outputs_array[3], hydroponics_fertilizer_chance)
 			e.itemInputs(Item.of(resolvedFertilizer, 8))
 		};
 		if (circuit !== null) {
@@ -299,7 +299,7 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			.notConsumable(input)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)
-			.chancedFluidInput(`${resolvedFluidTier2} 1`, resolvedChance, 0)
+			.chancedFluidInput(`${resolvedFluidTier2} 1`, resolvedChance)
 			.perTick(false)
 			.duration(aquaponic_duration)
 			.EUt(resolvedEUt)
@@ -307,9 +307,9 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			f.dimension(dimension)
 		};
 		if (outputs_array[1] !== null) {
-			f.chancedOutput(outputs_array[1], hydroponics_aquaponic_chance, 0)
-			f.chancedOutput(outputs_array[2], hydroponics_aquaponic_chance, 0)
-			f.chancedOutput(outputs_array[3], hydroponics_aquaponic_chance, 0)
+			f.chancedOutput(outputs_array[1], hydroponics_aquaponic_chance)
+			f.chancedOutput(outputs_array[2], hydroponics_aquaponic_chance)
+			f.chancedOutput(outputs_array[3], hydroponics_aquaponic_chance)
 		};
 		if (circuit !== null) {
 			f.circuit(circuit + 2)
@@ -325,7 +325,7 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			.notConsumable(input)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)
-			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance, 0)
+			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance)
 			.perTick(false)
 			.duration(fertilizer_duration)
 			.EUt(resolvedEUt)
@@ -336,9 +336,9 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			TFGRecipeSchemaBindings.isOxygenated(a, requiresOxygen)
 		};
 		if (outputs_array[1] !== null) {
-			a.chancedOutput(outputs_array[1], fertilizer_chance, 0)
-			a.chancedOutput(outputs_array[2], fertilizer_chance, 0)
-			a.chancedOutput(outputs_array[3], fertilizer_chance, 0)
+			a.chancedOutput(outputs_array[1], fertilizer_chance)
+			a.chancedOutput(outputs_array[2], fertilizer_chance)
+			a.chancedOutput(outputs_array[3], fertilizer_chance)
 		};
 		if (circuit !== null) {
 			a.circuit(circuit)
@@ -350,7 +350,7 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			.notConsumable(input)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)
-			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance, 0)
+			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance)
 			.perTick(false)
 			.duration(fertilizer_duration)
 			.EUt(resolvedEUt)
@@ -358,9 +358,9 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			b.dimension(dimension)
 		};
 		if (outputs_array[1] !== null) {
-			b.chancedOutput(outputs_array[1], hydroponics_fertilizer_chance, 0)
-			b.chancedOutput(outputs_array[2], hydroponics_fertilizer_chance, 0)
-			b.chancedOutput(outputs_array[3], hydroponics_fertilizer_chance, 0)
+			b.chancedOutput(outputs_array[1], hydroponics_fertilizer_chance)
+			b.chancedOutput(outputs_array[2], hydroponics_fertilizer_chance)
+			b.chancedOutput(outputs_array[3], hydroponics_fertilizer_chance)
 		};
 		if (circuit !== null) {
 			b.circuit(circuit)

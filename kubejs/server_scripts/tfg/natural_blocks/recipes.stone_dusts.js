@@ -11,15 +11,17 @@ function registerTFGStoneDustRecipes(event) {
 	event.recipes.gtceu.centrifuge('gtceu:stone_dust_separation')
 		.itemInputs('gtceu:stone_dust')
 		.chancedItemOutputLogic($ChanceLogic.XOR)
-		.chancedOutput('#forge:dusts/igneous_mafic', 1666, 0)
-		.chancedOutput('#forge:dusts/igneous_intermediate', 1666, 0)
-		.chancedOutput('#forge:dusts/igneous_felsic', 1666, 0)
-		.chancedOutput('#forge:dusts/metamorphic', 1666, 0)
-		.chancedOutput('#forge:dusts/sedimentary_carbonate', 1666, 0)
-		.chancedOutput('#forge:dusts/sedimentary_clastic', 1666, 0)
+		.chancedOutput('#forge:dusts/igneous_mafic', 1666)
+		.chancedOutput('#forge:dusts/igneous_intermediate', 1666)
+		.chancedOutput('#forge:dusts/igneous_felsic', 1666)
+		.chancedOutput('#forge:dusts/metamorphic', 1666)
+		.chancedOutput('#forge:dusts/sedimentary_carbonate', 1666)
+		.chancedOutput('#forge:dusts/sedimentary_clastic', 1666)
 		.duration(1 * 20)
 		.EUt(GTValues.VA[GTValues.HV])
 
+
+		// You guys stay here I will come back deleting you - VENUS - DELETE
 
 	// AE2
 
@@ -28,7 +30,7 @@ function registerTFGStoneDustRecipes(event) {
 		.duration(100)
 		.itemInputs('ae2:sky_dust')
 		.itemOutputs(ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.SiliconDioxide, 1))
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.CertusQuartz, 1), 4500, 0)
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.CertusQuartz, 1), 4500)
 
 	// Create
 
@@ -36,17 +38,17 @@ function registerTFGStoneDustRecipes(event) {
 		.EUt(GTValues.VA[GTValues.MV])
 		.duration(10 * 20)
 		.itemInputs(ChemicalHelper.get(TagPrefix.dust, TFGHelpers.getMaterial('asurine'), 1))
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.NetherQuartz, 1), 5000, 0)
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Olivine, 1), 4500, 0)
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Zinc, 1), 3500, 0)
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.NetherQuartz, 1), 5000)
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Olivine, 1), 4500)
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Zinc, 1), 3500)
 		.outputFluids(Fluid.of('gtceu:helium_3', 500))
 
 	event.recipes.gtceu.centrifuge('ochrum_dust_separation')
 		.EUt(GTValues.VA[GTValues.MV])
 		.duration(480)
 		.itemInputs(ChemicalHelper.get(TagPrefix.dust, TFGHelpers.getMaterial('ochrum'), 1))
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.Quartzite, 1), 5000, 0)
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Hematite, 1), 3500, 0)
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Gold, 1), 3500, 0)
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.Quartzite, 1), 5000)
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Hematite, 1), 3500)
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Gold, 1), 3500)
 
 }
