@@ -1,12 +1,12 @@
 {
-    "name": "Forge & Bellows",
+    "name": "炉とふいご",
     "category": "tfg:craftsmanship",
     "icon": "tfc:textures/block/molten_lit.png",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "charcoal_forge",
-            "text": "The $(thing)Charcoal Forge$() is a device used to $(l:game_mechanics/heating)heat$() and melt items like metals, pottery, and bricks.$(br)Forges are necessary to make a $(l:craftsmanship/crucible)Crucible$() work.$(br)It is constructed with 5 $(thing)stone$() blocks―like cobblestone, raw stone, or bricks―surrounding a $(l:craftsmanship/charcoal_pit#charcoal_pile)Charcoal Pile$() of 7 or 8 layers which is then lit."
+            "text": "$(thing)木炭炉$()は、金属、陶器、レンガなどのアイテムを$(l:game_mechanics/heating)加熱$()したり、溶かしたりするために使用される装置です。$(br)また、炉は、$(l:craftsmanship/crucible)るつぼ$()を機能させるためにも必要です。$(br)5つの $(thing)石$()ブロック（丸石、未加工の石、レンガなど）で、7層または8層の $(l:craftsmanship/charcoal_pit#charcoal_pile)木炭の山$()を囲むように構築し、火をつければ炉が完成します。"
         },
         {
             "type": "patchouli:multiblock",
@@ -31,12 +31,12 @@
                 }
             },
             "name": "炉",
-            "text": "A complete forge structure, ready to be lit.",
+            "text": "点火準備が整った、完成した炉の構造。",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
-            "text": "A Forge needs a chimney in order to work. The block directly above the Forge must be air, or a $(l:craftsmanship/crucible)Crucible$(). In addition, either the block directly above, or one of eight nearby blocks $(italic)must be able to see the sky!$()$(br2)A $(l:craftsmanship/charcoal_forge#bellows)Bellows$() can be placed one-block-up and adjacent-to the Forge, in order to increase the maximum temperature it can reach. But isn't strictly required."
+            "text": "炉が機能するには煙道が必要です。炉の真上にあるブロックは空気、または$(l:craftsmanship/crucible)るつぼ$()でなければなりません。そして、真上、または近くの8つのエリアの1つが$(italic)空と通じている必要があります！$()$(br2)$(l:craftsmanship/charcoal_forge#bellows)ふいご$()を炉の1ブロック上、かつ隣接する位置に設置することで、炉が到達できる最高温度を上げることができます。ただし、これは厳密には必須ではありません。"
         },
         {
             "type": "patchouli:multiblock",
@@ -66,8 +66,8 @@
                     "B": "tfc:bellows[facing=west]"
                 }
             },
-            "name": "Chimney Diagram",
-            "text": "Any one of the blue stained-glass must have direct sky access and access to the forge to count as a valid chimney.",
+            "name": "煙道図",
+            "text": "有効な煙道として認められるためには、青いステンドグラスで示された場所のうちいずれか1つが、空に直接通じており、かつ炉へのアクセスが可能でなければなりません。",
             "enable_visualize": false
         },
         {
@@ -75,38 +75,38 @@
             "images": [
                 "tfc:textures/gui/book/gui/charcoal_forge.png"
             ],
-            "title": "The Forge's Interface.",
-            "text": "$(bold)TIP:$() You can directly throw fuel like charcoal on top of the forge with $(item)$(k:key.drop)$() to re-fuel it.",
+            "title": "炉のGUI。",
+            "text": "$(bold)ヒント：$() $(item)$(k:key.drop)$() で、炉の上に炭などの燃料を直接投げ入れて、燃料を補充することができます。",
             "border": false
         },
         {
             "type": "patchouli:text",
-            "text": "The five slots at the bottom of the forge are used for fuel. While the forge is running, it periodically consumes $(t:#tfc:forge_fuels)$(6)fuel$(), which can be $(thing)Charcoal, Coal, Coke, or Peat Briquettes$(). The top five slots will heat items, up to the temperature shown in the indicator on the left. The right side slots are for containers that can contain liquid metal, like $(l:craftsmanship/pottery#vessel)Vessels$() and $(l:craftsmanship/pottery#mold)Molds$(). Items that melt in the forge will fill those containers. Otherwise, the molten fluid will be $(bold)voided$()."
+            "text": "炉の下部にある5つのスロットは燃料用です。炉が作動している間、定期的に $(t:#tfc:forge_fuels)$(6)燃料$()を消費します。燃料としては、$(thing)木炭、石炭、コークス、または泥炭ブリケット$()が使用可能です。上部の5つのスロットでは、左側のインジケーターに表示されている温度までアイテムを加熱します。右側のスロットは、$(l:craftsmanship/pottery#vessel)壺$()や$(l:craftsmanship/pottery#mold)鋳型$()など、溶けた金属を収容できる容器用です。炉内で溶けたアイテムは、これらの容器に入ります。入る先が無い場合、溶けた液体は$(bold)破棄$()されます。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tfc:bellows",
-            "title": "Bellows",
+            "title": "ふいご",
             "anchor": "bellows",
-            "text": "$(thing)Bellows$() can be used to increase the temperature of a device by improving the supply of oxygen. However, by burning at a hotter temperature they will also consume fuel faster. The bellows can provide air to a block directly in front of it and one block below that. This allows it to provide air to a $(l:craftsmanship/blast_furnace)Blast Furnace$(), or a $(l:craftsmanship/charcoal_forge#charcoal_forge)Charcoal Forge$() for example."
+            "text": "$(thing)ふいご$()は、酸素の供給を促進することで、装置の温度を上げるために使用できます。ただし、より高温で燃焼させることで、燃料の消費も早くなります。ふいごは、その目の前と、その1ブロック下のブロックに空気を供給することができます。これにより、例えば $(l:craftsmanship/blast_furnace)高炉$() や $(l:craftsmanship/charcoal_forge#charcoal_forge)木炭炉$() などに空気を供給することが可能です。"
         },
         {
             "type": "patchouli:text",
-            "text": "To use the bellows, simply place it facing the targeted heating device, and $(item)$(k:key.use)$() it. The bellows will pump air into the device, raising the maximum temperature for a short time. Bellows may be automated by supplying <16RPM of $(thing)mechanical rotation$() to the back using a $(item)Shaft$() for example. This will disable manual usage. Consider using a $(item)Clutch$() to enable/disable mechanical power."
+            "text": "ふいごを使用するには、対象の加熱装置に向けて設置し、$(item)$(k:key.use)$() を実行するだけです。ふいごが装置内に空気を送り込み、短時間だけ最高温度を上昇させます。ふいごは、例えば $(item)シャフト$() を使用して背面に <16RPM の $(thing)回転動力$() を供給することなどで、自動化することができます。この場合、手動での使用は無効になります。機械的な動力のオン／オフを切り替えるには、$(item)クラッチ$()の使用を検討してください。"
         },
         {
             "type": "patchouli:text",
-            "text": "A puff from a bellows will supply air to a device for 200 ticks. However, most devices allow you to buffer up to 600 ticks of oxygenation at a time.$(br2)Devices will have their fuel consumption doubled no matter the duration of air left, so there is no additional penalty for using the bellows too much."
+            "text": "ふいごを1回押すと、200ティック分の空気が供給されます。ただし、ほとんどのデバイスでは、一度に最大600ティック分の酸素供給分を蓄えておくことができます。$(br2)残りの空気量にかかわらず燃料消費量が2倍になるため、ふいごを多用しても追加のペナルティは発生しません。"
         },
         {
             "type": "patchouli:text",
             "anchor": "automation",
-            "title": "Automation Tips",
-            "text": "$(li)A forge will automatically collect any fuel that is dropped near the sides. (Press $(item)$(k:key.drop)$(), or use a $(item)Dropper$(), $(item)Dispenser$(), or $(item)Funnel$().)$(li)A $(item)Mechanical Arm$() can also keep a forge fueled.$(li)A $(item)Depot$() counts as forge insulation, if you want to automate a $(item)Basin$()."
+            "title": "自動化のヒント",
+            "text": "$(li)炉では、側面に落とされた燃料が自動的に回収されます。（$(item)$(k:key.drop)$() を押す、$(item)ドロッパー$()、$(item)ディスペンサー$()、または $(item)ファンネル$() を使用してください。）$(li)$(item)メカニカルアーム$()も、炉に燃料を供給し続けることができます。$(li)$(item)デポ$()は、$(item)鉢$()を自動化したい場合、炉の断熱材として機能します。"
         },
         {
             "type": "patchouli:text",
-            "text": "Looking for something a little more impressive, or want to bring your forge indoors? Check out the $(l:beneath/beneath_mechanics#hellforge)Hellforge$()!"
+            "text": "もっと印象的なものを探している方、あるいは鍛冶場を屋内に持ち込みたい方は、$(l:beneath/beneath_mechanics#hellforge)獄炎炉$()をぜひチェックしてみてください！"
         },
         {
             "type": "patchouli:relations",

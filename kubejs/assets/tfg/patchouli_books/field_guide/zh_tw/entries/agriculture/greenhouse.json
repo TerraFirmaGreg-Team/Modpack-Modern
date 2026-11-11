@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:agriculture/greenhouse#types)溫室類型$()$(li)$(bold)$(l:agriculture/greenhouse#planters)種植盆$()$(li2)$(l:agriculture/greenhouse#large_planter)大型種植盆$()$(li2)$(l:agriculture/greenhouse#quad_planter)四格種植盆$()$(li2)$(l:agriculture/greenhouse#bonsai_planter)盆景種植盆$()$(li2)$(l:agriculture/greenhouse#hanging_planter)懸掛種植盆$()$(li2)$(l:agriculture/greenhouse#trellis_planter)棚架種植盆$()$(li2)$(l:agriculture/greenhouse#hydroponic_planter)水耕種植盆$()$(li)$(bold)$(l:agriculture/greenhouse#irrigation)灌溉$()$(li)$(bold)$(l:agriculture/greenhouse#auto_harvesting)自動收成$()$(li)$(bold)$(l:agriculture/greenhouse#electric)電力溫室$()$(li)$(bold)$(l:agriculture/greenhouse#hydroponics)水耕設施$()"
+            "text": "$(bold)$(l:agriculture/greenhouse#types)溫室類型$()$(li)$(bold)$(l:agriculture/greenhouse#planters)種植盆$()$(li2)$(l:agriculture/greenhouse#large_planter)大型種植盆$()$(li2)$(l:agriculture/greenhouse#quad_planter)四格種植盆$()$(li2)$(l:agriculture/greenhouse#bonsai_planter)盆栽種植盆$()$(li2)$(l:agriculture/greenhouse#hanging_planter)懸掛種植盆$()$(li2)$(l:agriculture/greenhouse#trellis_planter)棚架種植盆$()$(li2)$(l:agriculture/greenhouse#hydroponic_planter)水耕種植盆$()$(li)$(bold)$(l:agriculture/greenhouse#irrigation)灌溉$()$(li)$(bold)$(l:agriculture/greenhouse#auto_planting)自動種植$()$(li)$(bold)$(l:agriculture/greenhouse#auto_harvesting)自動收成$()$(li)$(bold)$(l:agriculture/greenhouse#bees_and_taps)蜂箱與樹液提取器$()$(li)$(bold)$(l:agriculture/greenhouse#electric)電力溫室$()$(li)$(bold)$(l:agriculture/greenhouse#hydroponics)水耕設施$()"
         },
         {
             "type": "patchouli:text",
@@ -45,7 +45,7 @@
             "type": "patchouli:text",
             "anchor": "planters",
             "title": "種植盆",
-            "text": "$(thing)種植盆$()用於在溫室內種植作物，種在裡面的作物和一般作物一樣會消耗$(l:agriculture/growing_crops#intro)養分$()。種植盆需放在有效溫室內並以$(item)氣候站$()啟動，且至少需要一些自然陽光才能運作。"
+            "text": "$(thing)種植盆$()用於在溫室內種植作物，種在裡面的作物和一般作物一樣會消耗$(l:agriculture/growing_crops#intro)養分$()。種植盆需放在有效溫室內並以$(item)氣候站$()啟動，且至少需要一些光照才能運作。"
         },
         {
             "type": "patchouli:spotlight",
@@ -63,7 +63,7 @@
             "type": "patchouli:spotlight",
             "anchor": "bonsai_planter",
             "item": "firmalife:bonsai_planter",
-            "text": "$(thing)盆景種植盆$()可從樹苗種出小型果樹。$(br)盆景種植盆可種植$(item)果樹類型$()，但$(thing)香蕉$()和$(thing)棕櫚果樹$()除外，這兩種需要$(thing)懸掛種植盆$()。"
+            "text": "$(thing)盆栽種植盆$()可從樹苗種出小型果樹。$(br)盆栽種植盆可種植$(item)果樹類型$()，但$(thing)香蕉$()和$(thing)棕櫚果樹$()除外，這兩種需要$(thing)懸掛種植盆$()。"
         },
         {
             "type": "patchouli:spotlight",
@@ -103,47 +103,47 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "auto_planting",
-            "title": "自動收成",
+            "title": "自動種植",
             "item": "create:mechanical_arm",
-            "text": "$(li)$(thing)清掃機$()用來收成四格種植盆和水耕種植盆以外的種植盆，可以用紅石驅動。$(li)$(thing)採摘機$()可以由上方的紅石訊號驅動，它會向下伸出，採摘四格種植盆和水耕種植盆中的作物。"
+            "text": "$(thing)機械臂$()可以把作物種進種植盆。將種植盆設為機械臂的目標後，機械臂會自動從指定的置物台取出種子，依種子類型種進對應的種植盆。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "auto_harvesting",
-            "title": "Auto-Harvesting",
+            "title": "自動收成",
             "item": "firmalife:sweeper,firmalife:picker",
-            "text": "$(li)$(item)採收籃$()也能收成大部分類型的種植盆。$(li)要收集$(thing)清掃機$()和$(thing)採摘機$()掉落的物品，可以使用$(item)漏斗礦車$()、裝有$(item)漏斗$()的$(thing)動態結構$()，或格雷科技的$(item)物品收集器$()。"
+            "text": "$(thing)清掃機$()用來收成四格種植盆和水耕種植盆以外的種植盆，可以用紅石驅動。$(li)$(thing)採摘機$()可以由上方的紅石訊號驅動，它會向下伸出，採摘四格種植盆和水耕種植盆中的作物。"
         },
         {
             "type": "patchouli:text",
-            "text": "偏好格雷科技機器而非機械動力裝置的話，多方塊結構$(item)電力溫室$()可以供應$(thing)原木$()和其他植物，還能種植更多 TFC 的裝飾性植物！$(br2)可在$(7)LV$()後期製作。"
+            "text": "$(li)$(item)採收籃$()也能收成大部分類型的種植盆。$(li)要收集$(thing)清掃機$()和$(thing)採摘機$()掉落的物品，可以使用$(item)漏斗礦車$()、裝有$(item)漏斗$()的$(thing)動態結構$()，或格雷科技的$(item)物品收集器$()。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "bees_and_taps",
-            "title": "Beehives and Tree Taps",
+            "title": "蜂箱與樹液提取器",
             "item": "firmalife:beehive,afc:tree_tap",
-            "text": "$(bold)注意：$()這個多方塊結構的牆壁可自訂為任何有效的鐵等級溫室方塊。$(br2)查看$(emi)多方塊結構預覽即可看到所有可用的方塊。$(br2)電力溫室也能透過幾種方式強化，例如$(l:agriculture/fertilizers)肥料$()，或之後在 $(6)HV$() 使用$(thing)魚菜共生循環$()。"
+            "text": "$(l:agriculture/beekeeping)蜂箱$()和$(l:agriculture/tree_tapping)樹液提取器$()放在溫室內都有好處！溫室的受控氣候不受季節溫度變化影響，讓它們全年都能生產。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "electric",
             "item": "tfg:electric_greenhouse",
-            "text": "$(item)水耕設施$()是電力溫室在$(9)IV$()的升級版，可以在任何維度種植任何作物，並支援$(item)平行倉$()。"
+            "text": "偏好格雷科技機器而非機械動力裝置的話，多方塊結構$(item)電力溫室$()可以供應$(thing)原木$()和其他植物，還能種植更多 TFC 的裝飾性植物！$(br2)可在$(7)LV$()後期製作。"
         },
         {
             "type": "patchouli:text",
-            "text": "$(bold)Note:$() This multiblock can have its walls customized to use any valid iron-tier greenhouse block.$(br2)Check the $(emi) multiblock preview for a list of all the different blocks you can use.$(br2)The Electric Greenhouse can also be improved in a few ways, including $(l:agriculture/fertilizers)fertilizer$() or later in $(6)HV$() with the $(thing)Aquaponics Loop$()."
+            "text": "$(bold)注意：$()這個多方塊結構的牆壁可自訂為任何有效的鐵等級溫室方塊。$(br2)查看$(emi)多方塊結構預覽即可看到所有可用的方塊。$(br2)電力溫室也能透過幾種方式強化，例如$(l:agriculture/fertilizers)肥料$()，或之後在 $(6)HV$() 使用$(thing)魚菜共生循環$()。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "hydroponics",
             "item": "tfg:hydroponics_facility",
-            "text": "The $(item)Hydroponics Facility$() is an $(9)IV$() upgrade to the Electric Greenhouse that can grow anything in any dimension and also supports $(item)Parallel Hatches$()."
+            "text": "$(item)水耕設施$()是電力溫室在$(9)IV$()的升級版，可以在任何維度種植任何作物，並支援$(item)平行倉$()。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸閱讀",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_crops",

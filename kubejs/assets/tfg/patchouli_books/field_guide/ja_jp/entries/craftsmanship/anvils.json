@@ -1,28 +1,28 @@
 {
-    "name": "Anvils",
+    "name": "金床",
     "category": "tfg:craftsmanship",
     "icon": "tfc:metal/anvil/bronze",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:craftsmanship/anvils#stone_anvil)Stone Anvils$()$(li2)$(l:craftsmanship/anvils#raw_rock)Obtaining Raw Rock$()$(li)$(bold)$(l:craftsmanship/anvils#welding)Welding$()$(li)$(bold)$(l:craftsmanship/anvils#metal_anvil)Metal Anvils$()$(li2)$(l:craftsmanship/anvils#tiers)Tiers$()$(li)$(bold)$(l:craftsmanship/anvils#working)Working Metal$()$(li2)$(l:craftsmanship/anvils#forging_bonus)Forging Bonuses$()$(li)$(bold)$(l:craftsmanship/anvils#helve_hammer)Helve Hammer$()$(li)$(bold)$(l:craftsmanship/anvils#anvil_helper)Anvil Helper Guide$()"
+            "text": "$(li)$(bold)$(l:craftsmanship/anvils#stone_anvil)石の金床$()$(li2)$(l:craftsmanship/anvils#raw_rock)石の回収$()$(li)$(bold)$(l:craftsmanship/anvils#welding)溶接$()$(li)$(bold)$(l:craftsmanship/anvils#metal_anvil)金属製の金床$()$(li2)$(l:craftsmanship/anvils#tiers)等級$()$(li)$(bold)$(l:craftsmanship/anvils#working)鍛造$()$(li2)$(l:craftsmanship/anvils#forging_bonus)鍛造ボーナス$()$(li)$(bold)$(l:craftsmanship/anvils#helve_hammer)動力鍛造ハンマー$()$(li)$(bold)$(l:craftsmanship/anvils#anvil_helper)Anvil Helperガイド$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introduction",
-            "text": "An alternative to casting tools directly (and a requirement for higher tier metals) is to use an $(thing)Anvil$(). An anvil is a block which can be used for two different processes: $(l:craftsmanship/anvils#working)Working$() and $(l:craftsmanship/anvils#welding)Welding$(). An anvil can weld double ingots of the metal type needed to create the next tier anvil above it, which will be necessary to work other items from that metal."
+            "title": "はじめに",
+            "text": "$(thing)金床$()は序盤の金属加工に必須の作業台です。金床では「$(l:craftsmanship/anvils#working)鍛造$()」と「$(l:craftsmanship/anvils#welding)溶接$()」の2種類の加工を行うことができます。この章では、本格的な金床を作るために必要な原始的な金床である「石の金床」の作り方について説明します。"
         },
         {
             "type": "patchouli:text",
             "anchor": "stone_anvil",
-            "title": "Stone Anvil",
-            "text": "First, you need to acquire a block of $(thing)raw igneous rock$(), that is $(l:the_world/geology#igneous_extrusive)igneous extrusive$() (Rhyolite, Basalt, Andesite, or Dacite) or $(l:the_world/geology#igneous_intrusive)igneous intrusive$() (Granite, Diorite, Gabbro, Pyroxenite, or Keratophyre). You could find and use an exposed block in the world, or you could $(l:craftsmanship/anvils#raw_rock)extract one$() from the surrounding rock."
+            "title": "石の金床",
+            "text": "まず、特定の種類の$(thing)石$()ブロックが必要になります（丸石ではいけません）。対象となるのは$(l:the_world/geology#igneous_extrusive)火成噴出岩$()（流紋岩・玄武岩・安山岩・デイサイト）か、$(l:the_world/geology#igneous_intrusive)火成貫入岩$()（花崗岩・閃緑岩・斑れい岩・輝岩・角斑岩）です。地表に露出しているものをそのまま使うか、周囲の岩から$(l:craftsmanship/anvils#raw_rock)切り出して$()入手することもできます。"
         },
         {
             "type": "patchouli:text",
-            "text": "You will also need any kind of $(thing)hammer$(). In order to make the anvil, simply $(item)$(k:key.use)$() the exposed $(thing)top$() face of a raw rock block with your $(thing)hammer$(), and voilà! An anvil will be formed.$(br2)Anvils have $(l:craftsmanship/anvils#tiers)tiers$() and the rock anvil is tier 0 - the lowest tier. It is only able to $(l:craftsmanship/anvils#welding)Weld$() tier I ingots."
+            "text": "また、$(thing)ハンマー$()も用意してください。金床は、前述の種類の石ブロックの$(thing)上面$()を $(thing)ハンマー$()で$(item)$(k:key.use)$()することで作成できます。$(br2)金床には$(l:craftsmanship/anvils#tiers)等級（ティア）$()があり、石の金床は等級０（最下位の等級）です。そのため、石の金床では等級１のインゴットの$(l:craftsmanship/anvils#welding)溶接$()しか行えません。"
         },
         {
             "type": "tfg:multimultiblock",
@@ -48,7 +48,7 @@
         {
             "type": "patchouli:text",
             "anchor": "raw_rock",
-            "text": "In order to obtain a raw rock block without breaking it into smaller rocks, it needs to be $(thing)extracted$(). You must mine the blocks on all six sides of a raw rock block. Once it is surrounded by air on all sides it will pop off as an item which can be picked up.",
+            "text": "石ブロックをそのままの形で手に入れるには、$(thing)切り出す$()必要があります。切り出したいブロックの上下左右前後すべてを採掘して周囲を空気にすると、ブロックがアイテム化して回収できるようになります。",
             "title": "石の回収"
         },
         {
@@ -221,19 +221,19 @@
         {
             "type": "patchouli:text",
             "anchor": "welding",
-            "text": "Welding is a process through which two items are fused together to create a new item. Welding works the same whether on a $(l:craftsmanship/anvils#stone_anvil)Stone Anvil$() or a $(l:craftsmanship/anvils#metal_anvil)Metal Anvil$().$(br2)First, you must place the two items you want to weld on the anvil by opening the anvil interface and inserting them in the two leftmost slots.",
-            "title": "Welding"
+            "text": "溶接は、2つのアイテムを接合して別のアイテムを作る工程です。$(l:craftsmanship/anvils#stone_anvil)石の金床$()でも$(l:craftsmanship/anvils#metal_anvil)金属の金床$()でも、やり方は共通です。$(br2)まずはGUIを開いて、溶接したいアイテム2つ（インゴットやプレートなど）左側の2スロットに入れます。",
+            "title": "溶接"
         },
         {
             "type": "patchouli:text",
-            "text": "You also need to have at least one $(item)Flux$() in the anvil to aid the welding process. Then, while both items are $(l:game_mechanics/heating)hot enough$() to weld (the tooltip will say \"Can Weld\") you must use any $(thing)hammer$() on the anvil or press the weld button on the anvil interface. You will hear a hammering sound and the items will be welded together."
+            "text": "また、溶接を行うには、金床に$(item)融剤$()を少なくとも1つ入れておく必要があります。そのうえで、溶接するアイテムが両方とも$(l:game_mechanics/heating)溶接可能な温度$()（ツールチップに「溶接可能」と表示）になっている状態で、$(thing)ハンマー$()を持ちShift+右クリックで叩くか、GUIの「Weld」ボタンを押します。すると打撃音とともにアイテムが溶接されます。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tag:tfc:anvils",
             "anchor": "metal_anvil",
-            "title": "Metal Anvils",
-            "text": "Metal anvils are an important tool required for metalworking, as they allow you to work and weld metal ingots into various different forms.$(br2)$(l:craftsmanship/anvils#working)Working$() is done to form one piece of metal into another, and $(l:craftsmanship/anvils#welding)welding$(), is used to fuse two metal items into one solid piece."
+            "title": "金属製の金床",
+            "text": "金属製の金床は、金属のインゴットをさまざまな形に加工したり溶接したりするために必要な、金属加工に欠かせない作業台です。$(br2)$(l:craftsmanship/anvils#working)鍛造$()はインゴットを叩いて実用的な形に加工することです。$(l:craftsmanship/anvils#welding)溶接$()は2つの金属アイテムを一体化させるための工程です。"
         },
         {
             "type": "patchouli:multiblock",
@@ -264,7 +264,7 @@
         {
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/metal/anvil/copper",
-            "text": "Anvils can be crafted with $(thing)Double Ingots$() of their respective metal. For your first anvil, you must first $(l:craftsmanship/anvils#welding)Weld$() double ingots on a $(l:craftsmanship/anvils#stone_anvil)Stone Anvil$(). Anvils are very heavy, you can only carry one at a time."
+            "text": "金床は、金属の $(thing)ダブルインゴット$() を使って作成できます。最初の金床を作成するには、まず$(l:craftsmanship/anvils#stone_anvil)石の金床$() 上でダブルインゴットを $(l:craftsmanship/anvils#welding)溶接$() する必要があります。金床は非常に重いため、一度に持ち運べるのは1つだけです。"
         },
         {
             "type": "patchouli:text",
@@ -274,8 +274,8 @@
         {
             "type": "patchouli:text",
             "anchor": "working",
-            "text": "In order to work an item on the anvil, you will need to $(item)$(k:key.use)$() the anvil, to open up the anvil interface, seen on the next image. On the left, there are two input slots for items - for working, the target item must be in the right-hand slot. You will also need a hammer while working, either in the hammer slot on the right of the anvil $(bold)or$() in your main hand. The hammer will gradually take damage as you work the item.",
-            "title": "Working"
+            "text": "金床でアイテムを鍛造するには、まず金床に向かって$(item)$(k:key.use)$()を実行し、図のようなGUIを開きます。左側には2つのスロットがあり、鍛造したいアイテムは左側の2つのスロットの右スロットに入れます。鍛造するにはハンマーも必要です。金床GUIの右側にあるハンマースロットにセットするか、$(bold)または$()手に持って使用します。鍛造作業をしているうちにハンマーの耐久は少しずつ減っていきます。",
+            "title": "鍛造"
         },
         {
             "type": "patchouli:image",
@@ -287,7 +287,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "You will then need to select the $(thing)plan$(), which chooses which item you want to create. $(item)$(k:key.attack)$() on the scroll button, and then pick one of the items to create. The anvil interface will return, but now you will have selected a plan. The scroll will show the item you are working to create, and the $(thing)rules$() and $(thing)target$() will now be populated."
+            "text": "次に、金床GUIの$(thing)レシピ$()ボタン（左側の2つのスロットの上のボタン）から作りたいものをを選び、どのアイテムを作るか決めます。$(item)$(k:key.attack)$()で一覧を開き、その中から作りたいアイテムを選択します。すると金床GUIに戻り、作成内容が設定された状態になります。レシピボタンには現在作っているアイテムが表示され、$(thing)ルール$()と$(thing)ターゲット$()も表示されます。"
         },
         {
             "type": "patchouli:image",
@@ -304,7 +304,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(2)Green$() actions will always move your target $(bold)right$(), and $(4)Red$() actions will always move your progress $(bold)left$(). Note that if you move your target off of the progress bar, you will have overworked your item and will lose the ingot. However, while working, you must also match the $(thing)rules$()..."
+            "text": "$(2)緑$()アクションは進行状況を$(bold)右$()に動かし、$(4)赤$()アクションは進行状況を$(bold)左$()へ動かします。もし進行状況がメーターの外に出てしまうと加工失敗となり、元のアイテムは失われます。さらに鍛造を完了させるには、$(thing)ルール$()の条件も満たす必要があります…"
         },
         {
             "type": "patchouli:text",
@@ -313,15 +313,15 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Your last three actions are shown right underneath the rules. When a rule is satisfied, its outline will change to green. Success occurs when all rules are satisfied.$(br2)Finally, you have to be mindful of your item's $(l:game_mechanics/heating)temperature$(). Metals can only be worked when they are above a certain temperature where the tooltip shows \"Can Work\". You may take an item out and re-heat it during the working process."
+            "text": "直前の3回分のアクションはルールの下に表示されます。それがルールのとおりになっていた場合は、該当ルールが緑色になります。すべてのルールを満たして緑と赤矢印が一致していたら鍛造成功です！$(br2)また、アイテムの$(l:game_mechanics/heating)温度$()管理も重要です。金属はツールチップに「鍛造可能」と表示される温度以上でないと鍛造できません。途中で取り出して再加熱してもそのアイテムに進行状況は残るため、続きから行うことができます。"
         },
         {
             "type": "patchouli:text",
-            "text": "Confused? That's ok, it's a lot to take in, but it's actually just a simple bit of addition and subtraction. Check our $(l:craftsmanship/anvils#anvil_helper)step-by-step guide$() on how to use the \"anvil helper\" resource pack, which makes smithing easy!"
+            "text": "混乱しましたか？ 大丈夫ですよ。情報量が多くて戸惑うかもしれませんが、実際には単純な足し算と引き算に過ぎません。Anvil Helperリソースパックの使い方については、 $(l:craftsmanship/anvils#anvil_helper)手順書$() をご覧ください。これを使えば、鍛冶作業がぐっと楽になります！"
         },
         {
             "type": "patchouli:text",
-            "text": "Working can be tedious, and take many steps to get correct. However, there is a reward for being efficient. Some items―such as tool heads―when they are worked in a low or minimal amount of steps, receive a $(thing)Forging Bonus$() based on how efficiently they were forged. This bonus will then apply to tools that the item is used in, for example, a pickaxe head used to make a pickaxe.$(br)We also have $(l:craftsmanship/anvils#how_to_perfectly_forge)a step-by-step guide$() on how to perfectly forge anything!",
+            "text": "ここまでの話を聞いて鍛造は手順が多く面倒だと感じたかもしれません。ですが鍛造にはその手間に見合ったメリットがあります。ツールヘッドなどは、少ない手数で鍛造すると$(thing)鍛造ボーナス$()が付き、そのボーナス応じて性能が向上します。このボーナスは、その部品を使ってツールを作った際にも適応されます。$(br)また、どんなものでも完璧に鍛造する方法について、$(l:craftsmanship/anvils#how_to_perfectly_forge)手順書$()もご用意しています！",
             "title": "鍛造ボーナス",
             "anchor": "forging_bonus"
         },
@@ -330,18 +330,18 @@
             "item": "gtceu:wrought_iron_pickaxe{\"tfc:forging_bonus\":4}",
             "title": "完璧な鍛造",
             "link_recipes": false,
-            "text": "There are four tiers of forging bonus:$(li)Modestly Forged$(li)Well Forged$(li)Expertly Forged$(li)Perfectly Forged$(br2)These bonuses increase the power of your tool - making it $(t:Like the Unbreaking enchant)$(6)break less often$(), $(t:Like the Efficiency enchant)$(6)mine faster$(), and/or $(t:Like the Sharpness enchant)$(6)do more damage in combat$(), depending on the tool."
+            "text": "鍛造ボーナスには4つの段階があります：$(li)良い鍛造$(li)上手な鍛造$(li)巧みな鍛造$(li)完璧な鍛造$(br2)これらのボーナスはツールの性能を高め、ツールによっては $(t:「耐久力」エンチャントのように)$(6)破損しにくくなったり$()、$(t:「効率強化」のエンチャントのように)$(6)採掘速度が上がったり$()、 $(t:「ダメージ増加」のエンチャントのように)$(6)戦闘でのダメージが増加$()したりします。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "helve_hammer",
-            "title": "Helve Hammer",
+            "title": "動力鍛造ハンマー",
             "item": "vintageimprovements:helve_hammer",
-            "text": "The $(item)Helve Hammer$() is a device that can automate many anvil functions using $(thing)mechanical energy$().$(br)To function, a helve hammer needs an anvil below its striking face. The $(l:craftsmanship/anvils#tiers)Tier$() of the anvil will dictate how many blows is needed. To add items to a helve hammer simply $(bold)throw$() them on top of the anvil with $(item)$(k:key.drop)$(). Items may be extracted automatically by adding funnels to the hammer head block."
+            "text": "$(item)動力鍛造ハンマー$()は、$(thing)回転動力$()を用いて、金床の多くの機能を自動化できる装置です。$(br)動力鍛造ハンマーが機能するには、打撃面の下に金床が必要です。金床の $(l:craftsmanship/anvils#tiers)等級$() によって、必要な打撃回数が決まります。動力鍛造ハンマーにアイテムを追加するには、$(item)$(k:key.drop)$() を使用して、金床の上に $(bold)投げる$() だけです。ハンマーのヘッドブロックにファンネルを取り付けることで、アイテムを自動的に取り出すことができます。"
         },
         {
             "type": "patchouli:multiblock",
-            "text": "Helve hammer with anvil.",
+            "text": "金床と動力鍛造ハンマー。",
             "enable_visualize": true,
             "multiblock": {
                 "pattern": [
@@ -362,7 +362,7 @@
         },
         {
             "type": "patchouli:multiblock",
-            "text": "It is recommened to make two helve hammers and chain them together to automatically process $(l:craftsmanship/bloomery)Blooms$() and $(l:craftsmanship/blast_furnace)Steel$().",
+            "text": "2つの動力鍛造ハンマーを作成し、それらを連動させることで、$(l:craftsmanship/bloomery)錬鉄$()と$(l:craftsmanship/blast_furnace)鋼鉄$()の鍛造工程を自動化することをお勧めします。",
             "enable_visualize": true,
             "multiblock": {
                 "pattern": [
@@ -411,8 +411,8 @@
         {
             "type": "patchouli:text",
             "anchor": "anvil_helper",
-            "title": "Anvil Helper Guide",
-            "text": "$(l:craftsmanship/anvils#working)Working$() in $(l:craftsmanship/anvils#metal_anvil)Anvils$() is a key process inside $(tfg), as most of your work towards the $(thing)Steam and Mechanical ages$() will require the usage of an Anvil.$(br)This guide is broken down into two parts, $(l:craftsmanship/anvils#ui_explained)Understanding the UI$() and $(l:craftsmanship/anvils#how_to_perfectly_forge)How to Perfectly Forge$().$(br2)The Modpack has a custom $(thing)Resource Pack$() called $(l:https://www.curseforge.com/minecraft/texture-packs/tfc-anvil-helper-patched)TFC Anvil Helper$() that you need to enable for this guide to make sense.$()"
+            "title": "Anvil Helperガイド",
+            "text": "$(l:craftsmanship/anvils#working)鍛造$()は、$(l:craftsmanship/anvils#metal_anvil)金床$()で行う非常に重要な作業です。$(tfg)では、$(thing)蒸気時代と機械時代$()へ進むための多くの工程で金床を使用することになります。$(br)このガイドは、$(l:craftsmanship/anvils#ui_explained))UIの見方$()と、$(l:craftsmanship/anvils#how_to_perfectly_forge)完璧な鍛造への道$()の2つのパートに分かれています。$(br2)このガイドを理解するためには、MODパックに含まれている専用の$(thing)リソースパック$()である$(l:https://www.curseforge.com/minecraft/texture-packs/tfc-anvil-helper-patched)TFC Anvil Helper$()を有効にする必要があります。$()"
         },
         {
             "type": "patchouli:image",
@@ -467,13 +467,13 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(#00a7ff)5.$() The Slots where your Hammer goes, and Flux if you're Welding.$(br)$(#00ff26)6. $()The current Work amount the item has, Doing different Steps either Increases or Decreases the amount of Work the item has.$(br)$(#fff400)7. $()The Target Work value, the $(#00ff26)Work$() value must be aligned EXACTLY with the Target Work, AND the $(#ff00c6)Required Steps$() must be fulfilled for the Item to be considered complete.$(br)$(#ff6b00)8. $()The Work Bar, used for Aligning the Work value with the Target Work value."
+            "text": "$(#00a7ff)5.$() ハンマーを配置するスロットです。溶接を行う場合は、ここに融剤も配置する必要があります。$(br)$(#00ff26)6.$() 現在の進行度です。実行する工程によって、この値が増加または減少します。$(br)$(#fff400)7.$() 目標進行度です。アイテムを完成させるには、$(#ff00c6)必要工程$()の順番を満たしながら$(#00ff26)進行度$()をこの目標値に完全に一致させなければなりません。$(br)$(#ff6b00)8.$() 進行度バーです。現在の進行度を目標進行度に合わせるために使用します。"
         },
         {
             "type": "patchouli:text",
             "anchor": "how_to_perfectly_forge",
             "title": "完璧な鍛造への道",
-            "text": "$(thing)Perfectly Forging$() an Item which can break, such as $(thing)Tool Heads$(), $(thing)Weapons$(), and $(thing)Armor$() causes the Item to gain bonuses to its durability and general efficiency with the less total steps you take to forge the Item. Completing the Work on an Item with very few steps causes it to be Perfectly Forged, not only giving your finished item bonuses, but also reducing the overall wear and tear to the Hammer."
+            "text": "$(thing)ツールヘッド$()、$(thing)武器$()、$(thing)防具$()などの破損するアイテムを鍛造するために要した総工程数が少ないほど、そのアイテムの耐久性および全体的な効率にボーナスが与えられます。非常に少ない工程数でアイテムの加工を完了すると、そのアイテムは$(thing)完璧な鍛造（Perfectly Forged）$()となります。これにより完成品にボーナスが付与されるだけでなく、当然ですがハンマーの損耗も少なくてすみます。"
         },
         {
             "type": "patchouli:image",

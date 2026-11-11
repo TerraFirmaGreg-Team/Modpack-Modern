@@ -1,15 +1,15 @@
 {
-    "name": "Mixing Bowl",
+    "name": "ミキシングボウル",
     "category": "tfg:cooking",
     "icon": "firmalife:mixing_bowl",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "The mixing bowl is a way of mixing items and fluids together in a friendly way. In order to operate a mixing bowl $(item)$(k:key.use)$() on one with a $(thing)Spoon$() to add it to the bowl. The spoon will remain in the bowl and not degrade in durability."
+            "text": "ミキシングボウルは、アイテムや液体をスムーズに混ぜ合わせるための道具です。ミキシングボウルを使用するには、$(item)$(k:key.use)$()で$(thing)スプーン$()を入れる必要があります。スプーンはボウルの中に残ったままとなり、耐久力は低下しません。"
         },
         {
             "type": "patchouli:text",
-            "text": "To use a mixing bowl add in your ingredients and $(item)$(k:key.use)$() it to begin mixing. Mixing bowls can take up to $(6)5 item inputs$() and $(3)1 fluid input$(). Recipes need $(n)exact quantities$() of items to be performed. If a recipe outputs a fluid any excess input fluids will be voided, so be careful!"
+            "text": "ミキシングボウルを使用するには、材料を入れ、$(item)$(k:key.use)$() を押して混ぜ始めます。ミキシングボウルには、最大 $(6)5 個のアイテム$() と $(3)1 個の液体$() を投入できます。レシピを実行するには、$(n)正確な量$() のアイテムが必要です。レシピの結果として液体が出力される場合、余分な液体は破棄されますので、ご注意ください！"
         },
         {
             "type": "patchouli:relations",
