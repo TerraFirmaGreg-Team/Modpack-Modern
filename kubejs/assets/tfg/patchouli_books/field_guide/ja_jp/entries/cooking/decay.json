@@ -10,7 +10,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:cooking/decay#oven_baked)Oven Baking$()$(li)$(bold)$(l:cooking/decay#cellar)Cellars$()$(li2)$(l:cooking/decay#shelf)Cellar Storage$()$(li)$(bold)$(l:cooking/decay#lunch_box)Lunch Boxes$()$(li)$(bold)$(l:cooking/decay#refrigerator)Refrigerators$()$(li)$(bold)$(l:cooking/decay#freeze_dry)Freeze Drying$()$(li)$(bold)$(l:cooking/decay#pest)Pest Control$()$(li)$(bold)$(l:cooking/decay#cutting)Cutting off decay$()"
+            "text": "$(li)$(bold)$(l:cooking/decay#oven_baked)オーブン焼き$()$(li)$(bold)$(l:cooking/decay#cellar)貯蔵庫$()$(li2)$(l:cooking/decay#shelf)貯蔵庫での保管方法$()$(li)$(bold)$(l:cooking/decay#lunch_box)ランチボックス$()$(li)$(bold)$(l:cooking/decay#refrigerator)冷蔵庫$()$(li)$(bold)$(l:cooking/decay#freeze_dry)フリーズドライ$()$(li)$(bold)$(l:cooking/decay#pest)ネズミ防止$()$(li)$(bold)$(l:cooking/decay#cutting)劣化の切り落とし$()"
         },
         {
             "type": "patchouli:text",
@@ -20,17 +20,17 @@
         },
         {
             "type": "patchouli:text",
-            "text": "When you hover over a piece of food, you will see a tooltip which shows how long the food has until it will rot. It might look something like:$(br2)$(bold)$(2)Expires on: 5:30 July 5, 1000 (in 5 day(s))$()$(br2)By using various preservation mechanics, that date can be extended, giving you more time before your food roots. Most preservation traits even stack."
+            "text": "食べ物の上にカーソルを合わせると、その食べ物が腐るまでの残り時間が表示されるツールチップが現れます。例えば、次のような表示になります：$(br2)$(bold)$(2) 5:30 7月5日, 1000年 に腐る（あと5日）$()$(br2)さまざまな保存方法を活用することで、この期限を延長し、食材が腐るまでの時間を延ばすことができます。ほとんどの保存特性は、効果が積み重なるようになっています。"
         },
         {
             "type": "patchouli:text",
             "anchor": "calculation",
             "title": "食品劣化の計算",
-            "text": "When a food item is created in a world it is marked with a creation date time stamp internally. $(thing)TFC$() calculates the spoil rate by referencing that time stamp and the food's inherent decay modifier. Any preservation traits are added on top to shift the creation date back, allowing the item to last longer.$(br)Decay modifiers are a value from 0 to ∞. When 0, the food lasts forever, when ∞ the food spoils instantly. Therefore, the lower the modifier the better."
+            "text": "ワールド内で食品が生成されると、内部的に生成日時が記録されます。$(thing)TFC$() は、その日時と食品固有の劣化補正値を参照して、劣化率を算出します。保存特性がある場合は、それに上乗せされることで生成日が遡り、アイテムの保存期間が延長されます。$(br)劣化補正値は0から∞までの値です。0の場合、食品は永久に保存され、∞の場合、食品は即座に腐敗します。したがって、修正値は低いほど良いと言えます。"
         },
         {
             "type": "patchouli:text",
-            "text": "To calculate the new spoil time when applying preservation traits you can use the formula: $(2)$(o)New Spoil Days = Spoil Days / Preservation Modifier$() rounded up. Stacking preservation traits is calculated multiplicatively like so: $(2)$(o)NSD = SD / (PM1 * PM2 * ...)$() which means that stacking traits exponentially increases decay time. A table of base preservation modifiers is available on the next page and each trait will be referenced in their own sections."
+            "text": "保存特性を適用した際の新しい腐敗時間を計算するには、次の式を使用できます：$(2)$(o)新しい腐敗までの日数 = 腐敗までの日数 / 保存補正値$()（切り上げ）。保存特性の積み重ねは、次のように乗算して計算されます：$(2)$(o)新腐敗日数 = 腐敗日数 / (補正1 * 補正2 * ...)$()。つまり、特性を積み重ねることで腐敗までの時間が指数関数的に延びることになります。基本の保存補正値の表は次のページに掲載されており、各特性についてはそれぞれのセクションで解説します。"
         },
         {
             "type": "tfg:table",
@@ -41,7 +41,7 @@
                     "bold": true
                 },
                 {
-                    "text": "Modifier",
+                    "text": "補正値",
                     "bold": true
                 },
                 {
@@ -130,7 +130,7 @@
                 }
             ],
             "text": "",
-            "title": "Preservation Traits: Worst to Best",
+            "title": "保存特性：上から弱い順に",
             "legend": [],
             "columns": 1,
             "first_column_width": 118,
@@ -147,8 +147,8 @@
         {
             "type": "patchouli:text",
             "anchor": "vessels",
-            "text": "One of the earliest ways to preserve food is to use a $(thing)Vessel$(). $(thing)Large Vessels$() are a block which can store up to nine items, and when $(thing)sealed$() the items inside will gain the $(5)$(bold)Preserved$() trait with a modifier of 0.5.$(br2)$(thing)Small Vessels$() are an item which can store up to four other items, and will also apply the $(5)$(bold)Preserved$() trait to their contents.",
-            "title": "Vessels"
+            "text": "食品を保存する最も古い方法の一つは、$(thing)壺$()を使用することです。$(thing)大きな壺$()は、最大9つのアイテムを収納できるブロックであり、$(thing)密閉$()すると、中のアイテムは補正値0.5の$(5)$(bold)保存済み$()特性を獲得します。$(br2)$(thing)小さな壺$()は、最大4つのアイテムを収納できるアイテムであり、こちらも中身のアイテムは$(5)$(bold)保存済み$()特性を付与します。",
+            "title": "壺"
         },
         {
             "type": "patchouli:multiblock",
@@ -173,19 +173,19 @@
         {
             "type": "patchouli:text",
             "anchor": "cooking",
-            "text": "One other way to easily preserve certain types of food is to cook them. $(thing)Meats$() will all expire slower when they are cooked than when they are raw.$(br2)Certain devices that heat very hot, such as a $(l:craftsmanship/charcoal_forge)Charcoal Forge$() or a $(l:craftsmanship/crucible)Crucible$() are $(bold)bad$() for cooking food, which will make them expire faster!$(br)They give the $(c)$(bold)Burnt to a Crisp!$() trait with a modifier of 2.5.$(br2)Remember to $(l:cooking/decay#smoking)Smoke$() $(thing)Meat$() before cooking it!",
-            "title": "Cooking"
+            "text": "特定の種類の食品を簡単に保存するもう一つの方法は、調理することです。$(thing)肉類$()は生の場合に比べて、加熱すると、すべて腐敗する速度が遅くなります。$(br2)$(l:craftsmanship/charcoal_forge)木炭炉$()や$(l:craftsmanship/crucible)るつぼ$()など、非常に高温になる特定の装置は、食品の加熱には$(bold)不向き$()であり、食品を加熱すると腐敗が早まってしまいます！$(br)これらは、補正値2.5の$(c)$(bold)焦げてしまった！$()という特性を付与します。$(br2)$(thing)肉類$()を $(l:cooking/decay#smoking)燻製$()する場合は、焼く前に処理しましょう！",
+            "title": "調理"
         },
         {
             "type": "tfg:heat_recipe",
             "recipe": "tfc:heating/mutton",
-            "text": "Instead, a $(l:cooking/cooking_methods#firepit)Firepit$() or a $(l:cooking/cooking_methods#grill)Grill$() can even provide a buff for using it! For example, cooking mutton (pictured above) in a $(thing)Firepit$() will increase its lifetime by about +42%, and cooking in a $(thing)Grill$() will give the $(5)$(bold)Wood Grilled$() trait with a modifier of 0.8."
+            "text": "その代わり、$(l:cooking/cooking_methods#firepit)焚き火$() や $(l:cooking/cooking_methods#grill)グリル$() を使えば、使用時にバフが得られることさえあります！例えば、$(thing)焚き火$()で羊肉（上の画像）を調理すると、その腐敗までの時間が約+42%増加し、$(thing)グリル$()で調理すると、補正値0.8の$(5)$(bold)グリル焼き$()という特性が付与されます。"
         },
         {
             "type": "patchouli:text",
             "anchor": "smoking",
-            "title": "Smoking",
-            "text": "Smoking is used to preserve $(thing)Meat$() and $(l:cooking/cheese)Cheese$() with a modifier of 0.7. To smoke meat, it must have first been $(thing)Brined$() by sealing it in a $(thing)Barrel$() with $(thing)Brine$(). Cheese does not have this requirement.$(br)To start smoking, add an item to wool yarn that is within four blocks above a firepit. The string should begin to generate some smoke if it is working.$(br)Note: The firepit may only be burned with $(thing)Logs$()!"
+            "title": "燻製",
+            "text": "燻製は、$(thing)肉類$() および $(l:cooking/cheese)チーズ$() を保存するために使用され、補正値は 0.7 です。肉を燻製にするには、まず $(thing)塩酢$() を使って $(thing)樽$() に密封し、$(thing)塩酢漬け$() しておく必要があります。チーズにはこの要件はありません。$(br)燻製を開始するには、焚き火の上4ブロック以内の範囲にある羊毛の糸にアイテムを追加してください。正常に動作していれば、糸から煙が立ち上り始めます。$(br)注：焚き火には $(thing)原木$() のみを使用してください！"
         },
         {
             "type": "patchouli:multiblock",
@@ -210,14 +210,14 @@
                     "Y": "tfc:firepit[lit=true]"
                 }
             },
-            "text": "Wool yarn is used to hang items for $(thing)Smoking$(). Supporting blocks are required on each side. $(item)$(k:key.use)$() on the yarn with an item to store up to 8 items for smoking.",
+            "text": "羊毛の糸は、$(thing)燻製$()するアイテムを吊るすために使用されます。両側に支えとなるブロックが必要です。アイテムを糸に $(item)$(k:key.use)$() すると、燻製用に最大 8 個のアイテムを設置できます。",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
             "anchor": "salting",
-            "text": "$(thing)Salting$() is a way to make meat last longer. To salt meat, it must be crafted with $(thing)Salt$() in a crafting grid. Only raw meat can be salted. Afterward, cooking or otherwise preserving the meat does not take away the salted property.$(7)$(bold)Salted$() food gain a modifier of 0.5.",
-            "title": "Salting"
+            "text": "$(thing)塩漬け$() は、肉の保存期間を延ばす方法です。肉を塩漬けするには、クラフトグリッドで $(thing)塩$()を使ってクラフトする必要があります。塩漬けにできるのは生の肉のみです。その後、肉を調理したり、その他の方法で保存したりしても、塩漬けの状態は失われません。$(7)$(bold)塩漬け$()の食品は、0.5 の補正値を得ます。",
+            "title": "塩漬け"
         },
         {
             "type": "patchouli:multiblock",
@@ -234,45 +234,45 @@
                     "X": "tfc:groundcover/salt_lick"
                 }
             },
-            "name": "Salt Licks",
-            "text": "Salt can be found naturally in forests in the form of salt licks, or ground from salt ores like halite.",
+            "name": "塩だまり",
+            "text": "塩は、森の中で自然の塩だまりとして見つけることができますが、岩塩のような鉱石として地中から見つけることもできます。",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
             "anchor": "vinegar",
-            "title": "Vinegar Preservation",
-            "text": "$(thing)Vinegar Preservation$() is a way of making fruits, veggies, and meat last longer. To preserve food in vinegar it must first be $(thing)Pickled$() in $(thing)Brine$(). Once food is pickled, it can be sealed in a Barrel of Vinegar. If there is 125mB of Vinegar per pickled food item, the food will last longer. $(7)$(bold)Pickled$() food gain a modifier of 0.5 while $(7)$(bold)Submerged in Vinegar$() food gain a modifier of 0.1."
+            "title": "酢漬け保存",
+            "text": "$(thing)酢漬け保存$()は、果物、野菜、肉などの保存期間を延ばす方法です。食品を酢で保存するには、まず$(thing)塩酢漬け$()のあとに$(thing)酢漬け$()を行う必要があります。漬け込みが終わったら、酢の入った樽に密封します。漬け込んだ食材1つにつき125mBの酢があれば、その食材はより長く保存できます。$(7)$(bold)酢漬け$()された食材は0.5の補正値を得ますが、$(7)$(bold)酢で保存$()された食材は0.1の補正値を得ます。"
         },
         {
             "type": "patchouli:text",
             "anchor": "drying",
-            "title": "Drying",
-            "text": "The $(thing)Drying Mat$() is used to dry items. It is made with $(thing)Fruit Leaves$(), which are obtained from breaking the leaves of $(thing)Fruit Trees$(). To use the drying mat, place it out in the sun and add an item to it with $(item)$(k:key.use)$(). If it rains, the drying process must start over. Some food items―Like fruits―Will gain the $(7)$(bold)Dried$() trait which gives a modifier of 0.8."
+            "title": "乾燥",
+            "text": "$(thing)乾燥マット$()は、アイテムを乾かすために使用されます。これは、$(thing)果樹$()の葉を壊すことで入手できる$(thing)果樹の葉$()で作られています。乾燥マットを使用するには、日当たりの良い場所に置き、$(item)$(k:key.use)$()でアイテムをその上に置きます。雨が降ると、乾燥プロセスを最初からやり直す必要があります。果物などの一部の食品は、$(7)$(bold)乾燥$()という特性が付き、0.8の補正値が適用されます。"
         },
         {
             "type": "patchouli:text",
-            "text": "The solar drier functions the same as the drying mat, but 12x as fast. Both can be automated by pushing a piston head against its side. Dropping an item onto a drying mat will place it on the mat."
+            "text": "太陽光乾燥機は乾燥マットと同じように機能しますが、乾燥速度は12倍速いです。どちらも、ピストンヘッドを側面に押し付けることで自動化できます。乾燥マットの上にアイテムを落とすと、そのアイテムがマットの上に置かれます。"
         },
         {
             "type": "patchouli:text",
             "anchor": "oven_baked",
-            "title": "Oven Baked",
-            "text": "Baking food items in a $(l:cooking/cooking_methods#top_oven)Top Oven$() is the second-best way to preserve your food items through cooking as it gives the $(7)$(bold)Oven Baked$() trait with a modifier of 0.9."
+            "title": "オーブン焼き",
+            "text": "$(l:cooking/cooking_methods#top_oven)オーブン$()で食材を焼くことは、調理によって食材を保存する上で2番目に優れた方法です。これは、補正値0.9を持つ$(7)$(bold)オーブン焼き$()という特性を付与するためです。"
         },
         {
             "type": "patchouli:text",
             "anchor": "cellar",
             "title": "貯蔵庫",
-            "text": "The $(thing)Cellar$() is a multiblock device controlled by a $(item)Climate Station$(). The Cellar multiblock must be fully enclosed by $(thing)$(t:#firmalife:cellar_insulation)Sealed Bricks$() on all sides. The Climate Station must be placed on the first level of the cellar, touching a wall. Activate the climate station by $(item)$(k:key.use)$() it. If you update the structure in any way you will need to reactivate the climate station.$(br)The maximum internal volume of a cellar is 31x31x31 blocks."
+            "text": "$(thing)貯蔵庫$() は、$(item)空調機$() によって制御されるマルチブロック設備です。貯蔵庫マルチブロックは、四方を $(thing)$(t:#firmalife:cellar_insulation)密閉レンガ$() で完全に囲まれている必要があります。空調機は、貯蔵庫の最下層で壁に接するように設置する必要があります。$(item)$(k:key.use)$() を使用して空調機を起動してください。構造に何らかの変更を加えた場合は、空調機を再起動する必要があります。$(br)貯蔵庫の最大内部容積は31x31x31ブロックです。"
         },
         {
             "type": "patchouli:text",
-            "text": "The cellar is used for food preservation and $(l:cooking/cheese#cheese_wheel)Aging Cheese$() by using $(l:cooking/decay#shelf)Food Shelves$() and $(l:cooking/decay#shelf)Hangers$() to hold food items or by placing cheese on the ground or $(thing)Barrel Racks$().$(br2)The cellar performs better in $(l:the_world/climate#temperature)Colder Environments$().$(li)$(2)Temp >= 0°C:$() Shelves 0.4, Hangers 0.35$(li)$(2)Temp < 0°C:$() Shelves 0.35, Hangers 0.3$(li)$(2)Temp < -12°C:$() Shelves 0.25, Hangers 0.25"
+            "text": "貯蔵庫は、食品の保存や$(l:cooking/cheese#cheese_wheel)チーズの熟成$()に利用されます。食品を収納するには、$(l:cooking/decay#shelf)食品棚$()や$(l:cooking/decay#shelf)吊り下げ棚$()を使用するか、チーズを床や$(thing)バレルラック$()の上に置くことで行います。$(br2)貯蔵庫は、$(l:the_world/climate#temperature)低温環境$()においてより高い性能を発揮します。$(li)$(2)0°C以上：$() 棚 0.4、吊り下げ 0.35$(li)$(2)0°C以下：$() 棚 0.35、吊り下げ 0.3$(li)$(2)-12°C以下：$() 棚 0.25、吊り下げ 0.25"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "An example cellar structure.",
+            "text": "貯蔵庫の構造例。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -439,40 +439,40 @@
             "anchor": "shelf",
             "title": "貯蔵庫での保管方法",
             "item": "tag:firmalife:food_shelves,tag:firmalife:hangers",
-            "text": "$(item)Food shelves$() and $(item)Hangers$() can contain a full stack of one food item. Adding and removing the item can be done with $(item)$(k:key.use)$() or $(item)$(k:key.sneak) + $(k:key.use)$() for full stacks. Items in valid food shelves and hangers receive a decay modifier that is better than vessels and increases with declining $(thing)Average Temperature$()."
+            "text": "$(item)食料棚$() および $(item)吊り下げ棚$() には、1種類の食料アイテムを1スタック分収納できます。アイテムの追加や取り出しは、$(item)$(k:key.use)$() または、フルスタックの場合は $(item)$(k:key.sneak) + $(k:key.use)$() で行えます。有効な食料棚や吊り下げ棚に収納されたアイテムには、壺よりも優れた劣化補正値が適用され、$(thing)平均温度$() が低下するにつれてその値は増加します。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "lunch_box",
-            "title": "Lunch Boxes",
+            "title": "ランチボックス",
             "item": "tfclunchbox:lunchbox,tfclunchbox:cooling_lunchbox,tfclunchbox:electric_lunchbox",
-            "text": "Lunch boxes provide a convenient method to transport and consume food items. The basic lunchbox provides the $(5)$(bold)Preserved$() trait while the $(item)Cooling$() and $(item)Electric Lunchboxes$() give the $(9)$(bold)Cooled$() trait with a modifier of 0.3.$(br2)Cooling lunchboxes consume $(item)Ice$() to preserve food, while the electric lunchbox consumes $(2)EU$() energy."
+            "text": "ランチボックスは、食べ物を持ち運び、食べるための便利な手段です。基本的なお弁当箱は、$(5)$(bold)保存済み$()という特性を与え、一方、$(item)冷却$()および$(item)電動ランチボックス$()は、補正値0.3を持つ$(9)$(bold)冷却$()という特性を備えています。$(br2)冷却ランチボックスは、食品を保存するために$(item)氷$()を消費し、電動ランチボックスは$(2)EU$()エネルギーを消費します。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "refrigerator",
-            "title": "Refrigerators",
+            "title": "冷蔵庫",
             "item": "tfg:mv_food_refrigerator,tfg:hv_food_refrigerator,tfg:ev_food_refrigerator,tfg:iv_food_refrigerator",
-            "text": "Refrigerators are added by $(tfg_short) and consume $(2)EU$() to provide the $(3)$(bold)Refrigerating$() trait with a modifier of 0.125.$(br)Higher tiers of the fridge do not affect the preservation buff―only the storage space available. Fridges can also combine food stacks by merging expiration dates."
+            "text": "冷蔵庫は $(tfg_short)で追加され、$(2)EU$() を消費して、補正値0.125 の$(3)$(bold)冷蔵保存$() 特性を与えます。$(br)より高いティアの冷蔵庫は、保存効果が強くなったりはせず、利用可能な収納スペースにのみ影響します。また、冷蔵庫は賞味期限の異なる食品を自動的に１つのスタックにまとめることもできます。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "freeze_dry",
-            "title": "Freeze Drying",
+            "title": "フリーズドライ",
             "item": "tfg:food/meal_bag,tfg:food/freeze_dried_fruit,tfg:food/calorie_paste",
-            "text": "$(tfg_short) adds the ability to freeze-dry select food items in $(item)Food Processors$() to greatly increase shelf life. Freeze drying gives the $(7)$(bold)Cryodessicated$() trait with a modifier of 0.02."
+            "text": "$(tfg_short) により、$(item)自動調理機$() 内で特定の食品を凍結乾燥させ、保存期間を大幅に延長できるようになります。凍結乾燥を行うと、$(7)$(bold)フリーズドライ$() という特性が付与され、補正値は 0.02 となります。"
         },
         {
             "type": "patchouli:text",
             "anchor": "pest",
-            "title": "Pests",
-            "text": "Food that is left sitting in chests can attract $(thing)Rats$(), so remember to store food properly in vessels, cellars, or fridges. Rats are able to open containers and eat the food out of them. You will be alerted to a rat's presence by the message $(thing)'This container has a foul smell'$(). It is important to note that unsealing and resealing a large vessel before you leave the screen will never attract pests."
+            "title": "ネズミ",
+            "text": "チェストの中に放置された食べ物は $(thing)ネズミ$() を引き寄せる可能性があるため、食べ物は容器や地下室、冷蔵庫などに適切に保管するようにしてください。ネズミは容器を開けて中の食べ物を食べてしまうことがあります。ネズミが近づくと、「$(thing)この容器から悪臭がする$()」というメッセージが表示されます。なお、画面を離れる前に大きな壺の蓋を開けてから再び閉めても、ネズミを引き寄せることは決してないという点に注意してください。"
         },
         {
             "type": "patchouli:text",
             "anchor": "cutting",
-            "title": "Cutting off",
-            "text": "Lastly, you can cut off the decayed part of food by picking up a $(item)knife$() with your cursor and $(item)right-clicking$() a partially decayed food item stack in your inventory.$(br2)This will reset the decay while losing some of the item stack, proportional to how decayed it was."
+            "title": "切り落とし",
+            "text": "最後に、マウスカーソルで $(item)ナイフ$() を持ち、インベントリ内にある部分的に劣化した食料のスタックを $(item)右クリック$() することで、劣化した部分を切り取ることができます。$(br2)これにより、劣化具合に比例してアイテムの量が減少する一方で、劣化はリセットされます。"
         },
         {
             "type": "patchouli:relations",
