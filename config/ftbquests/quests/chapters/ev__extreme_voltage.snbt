@@ -2459,7 +2459,16 @@
 			tasks: [
 				{
 					id: "639039222D6F4B30"
-					item: "gtceu:tungsten_carbide_ingot"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:tungsten_carbide_ingot"
+					}
 					type: "item"
 				}
 				{
@@ -2555,7 +2564,16 @@
 			tasks: [
 				{
 					id: "5E09DBF8B5973CA6"
-					item: "gtceu:ostrum_iodide_ingot"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:ostrum_iodide_ingot"
+					}
 					type: "item"
 				}
 				{

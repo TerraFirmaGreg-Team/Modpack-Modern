@@ -245,7 +245,16 @@
 				{
 					count: 2L
 					id: "619E37C6DE44F972"
-					item: "gtceu:battery_alloy_plate"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:battery_alloy_plate"
+					}
 					type: "item"
 				}
 			]
@@ -1629,7 +1638,16 @@
 			subtitle: "{quests.low_voltage.cupronickel_ingot.subtitle}"
 			tasks: [{
 				id: "701DEB748320107C"
-				item: "gtceu:cupronickel_ingot"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "gtceu:cupronickel_ingot"
+				}
 				type: "item"
 			}]
 			title: "{quests.low_voltage.cupronickel_ingot.title}"
