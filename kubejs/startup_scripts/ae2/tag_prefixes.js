@@ -5,7 +5,7 @@ const registerAE2TagPrefixes = (event) => {
 	const $AE_BLOCKS = Java.loadClass('appeng.core.definitions.AEBlocks');
 	const $AE_ITEMS = Java.loadClass('appeng.core.definitions.AEItems');
 
-	const Fluix = GTCEuAPI.materialManager.getMaterial('tfg:fluix')
+	const Fluix = GTMaterials.get('tfg:fluix')
 
 	TagPrefix.block.setIgnored(Fluix, $AE_BLOCKS.FLUIX_BLOCK);
 

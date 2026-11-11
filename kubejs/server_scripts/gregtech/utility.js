@@ -74,7 +74,7 @@ const generateCutterRecipe = (event, input, output, duration, EUt, id) => {
  * @param {(material: com.gregtechceu.gtceu.api.data.chemical.material.Material_) => void} iterator 
  */
 function forEachMaterial(iterator) {
-	for (const material of GTCEuAPI.materialManager.getRegisteredMaterials()) {
+	for (const material of GTRegistries.MATERIALS.values()) {
 		iterator(material)
 	}
 }
