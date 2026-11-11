@@ -391,7 +391,16 @@
 				{
 					disable_toast: true
 					id: "28A082F6FF520B21"
-					item: "gtceu:crushed_cobalt_ore"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:crushed_cobalt_ore"
+					}
 					type: "item"
 				}
 			]
@@ -431,7 +440,16 @@
 				{
 					disable_toast: true
 					id: "54041D4FF39893F5"
-					item: "gtceu:purified_galena_ore"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:purified_galena_ore"
+					}
 					optional_task: true
 					type: "item"
 				}

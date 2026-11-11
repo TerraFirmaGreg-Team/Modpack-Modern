@@ -192,7 +192,7 @@ function registerGTCEUItemTags(event) {
 
 /** @param {TagEvent.Block} event  */
 function registerGTCEUBlockTags(event) {
-    event.add('gtceu:mineable/pickaxe_or_wrench', 'gtceu:ulv_hermetic_casing');
+    event.add('gtceu:mineable/pickaxe_or_wrench', 'tfg:ulv_hermetic_casing');
 
     event.remove("gtceu:cleanroom_doors", "#minecraft:wooden_doors");
     event.add("gtceu:cleanroom_doors", "firmalife:sealed_door");

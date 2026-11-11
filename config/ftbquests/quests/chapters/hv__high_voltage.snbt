@@ -1364,6 +1364,10 @@
 								ingredients: [ ]
 								traits: [ ]
 							}
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
 						}
 						id: "tfg:food/meal_bag"
 					}

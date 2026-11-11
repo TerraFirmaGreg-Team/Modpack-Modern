@@ -455,7 +455,16 @@
 			subtitle: "{quests.medium_voltage.mv_steel_alloy.subtitle}"
 			tasks: [{
 				id: "2E6C71CB2E5EEAC7"
-				item: "gtceu:vanadium_steel_ingot"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "gtceu:vanadium_steel_ingot"
+				}
 				type: "item"
 			}]
 			title: "{quests.medium_voltage.mv_steel_alloy.title}"
