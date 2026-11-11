@@ -1106,8 +1106,6 @@ function registerTFGNuclearRecipes(event) {
 		.addDataString("avgHeat2", "∞")
 		TFGRecipeSchemaBindings.isOxygenated(s, true);
 
-	//#region FLiBe Line - SCRAP FROM MARS TO VENUS
-/*
 	event.recipes.gtceu.evaporation_tower('raw_rich_brine_earth')
 		.inputFluids(Fluid.of('tfc:spring_water', 20000))
 		.outputFluids(Fluid.of('tfg:raw_rich_brine', 1000))
@@ -1188,7 +1186,7 @@ function registerTFGNuclearRecipes(event) {
 		.itemOutputs('gtceu:iron_dust')
 		.duration(20*36)
 		.EUt(GTValues.VA[GTValues.IV])
-*/
+
 	//#endregion
 
 	//#region Isotopic Solvent and degradated
