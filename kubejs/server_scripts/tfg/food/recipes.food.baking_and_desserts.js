@@ -124,7 +124,7 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 	});
 
 	// Tirage Mixture
-	event.recipes.gtceu.food_processor('tfg:tirage_mixture')
+	event.recipes.tfg.food_processor('tfg:tirage_mixture')
 		.itemInputs('#tfc:sweetener')
 		.inputFluids(Fluid.of('firmalife:yeast_starter', 100))
 		.itemOutputs('firmalife:tirage_mixture')

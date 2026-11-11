@@ -429,7 +429,7 @@ function registerTFGBiochemRecipes(event) {
 	 * @param {number} organicAmount - Amount of the organic input.
 	 */
 	function deccellularizationRecipe(event, organicType, organicId, organicAmount) {
-		let recipe = event.recipes.gtceu.bioreactor(`tfg:decellularization/${global.linuxUnfucker(organicId)}`)
+		let recipe = event.recipes.tfg.bioreactor(`tfg:decellularization/${global.linuxUnfucker(organicId)}`)
 			.inputFluids(
 				Fluid.of('tfg:sodium_dodecyl_sulfate', 200),
 				Fluid.of('gtceu:acetone', 1000),
@@ -464,7 +464,7 @@ function registerTFGBiochemRecipes(event) {
 	);
 	
 	// Chlorplast "Centrifuging"
-	event.recipes.gtceu.bioreactor('tfg:chloroplasts')
+	event.recipes.tfg.bioreactor('tfg:chloroplasts')
 		.notConsumableFluid(
 			Fluid.of('gtceu:glycerol', 1000)
 		)
@@ -668,7 +668,7 @@ function registerTFGBiochemRecipes(event) {
 	});
 
 	// Proto growth medium synthesis.
-	event.recipes.gtceu.bioreactor('tfg:proto_growth_medium')
+	event.recipes.tfg.bioreactor('tfg:proto_growth_medium')
 		.inputFluids(
 			Fluid.of('gtceu:distilled_water', 1000)
 		)
@@ -685,7 +685,7 @@ function registerTFGBiochemRecipes(event) {
 		.cleanroom(CleanroomType.CLEANROOM);
 
 	// Fibroblast feeder cell synthesis.
-	event.recipes.gtceu.bioreactor('tfg:fibroblast_feeder_cells')
+	event.recipes.tfg.bioreactor('tfg:fibroblast_feeder_cells')
 		.inputFluids(
 			Fluid.of('firmalife:sugar_water', 1000),
 			Fluid.of('tfg:mutative_yeast', 1000)

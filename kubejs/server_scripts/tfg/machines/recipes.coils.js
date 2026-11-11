@@ -104,7 +104,7 @@ function registerTFGCoilRecipes(event) {
 
 	// #region Nichrome Coil
 
-	event.recipes.gtceu.gas_pressurizer('tfg:blue_alloy_desh_foil')
+	event.recipes.tfg.gas_pressurizer('tfg:blue_alloy_desh_foil')
 		.itemInputs('2x #forge:foils/desh', '2x #forge:foils/blue_alloy', 'tfc:powder/flux')
 		.inputFluids('gtceu:regolith_vapor 500')
 		.itemOutputs('tfg:blue_alloy_desh_foil')

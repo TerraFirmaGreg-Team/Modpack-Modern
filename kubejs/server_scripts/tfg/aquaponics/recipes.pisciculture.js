@@ -84,7 +84,7 @@ const pisciculture_dimension_index = [
 			throw new TypeError(`Pisciculture Fishery recipe errors for recipe ID ${`tfg:pisciculture_fishery/${id}`}\n - ${errors.join("\n - ")}`);
 		};
 
-	let a = event.recipes.gtceu.pisciculture_fishery(`tfg:${id}`)
+	let a = event.recipes.tfg.pisciculture_fishery(`tfg:${id}`)
 		.itemInputs(input)
 		.perTick(true)
 		.chancedFluidInput(`${resolvedFluid} 8`, resolvedChance)

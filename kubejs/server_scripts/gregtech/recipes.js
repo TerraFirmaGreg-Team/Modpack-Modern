@@ -522,7 +522,7 @@ const registerGTCEURecipes = (event) => {
 
 	// ME Pattern Buffer
 	event.remove({ id: 'gtceu:assembly_line/me_pattern_buffer_proxy' })
-	event.recipes.gtceu.me_assembler('tfg:me_pattern_buffer_proxy')
+	event.recipes.tfg.me_assembler('tfg:me_pattern_buffer_proxy')
 		.itemInputs(
 			'gtceu:luv_machine_hull',
 			'2x gtceu:luv_sensor',
