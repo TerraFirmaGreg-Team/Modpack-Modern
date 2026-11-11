@@ -203,7 +203,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "appliedenergistics2-forge-15.5.8-uelm.jar",
+                    "file_name": "appliedenergistics2-forge-15.5.9-uelm.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -211,18 +211,59 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9481/64/appliedenergistics2-forge-15.5.8-uelm.jar",
-                    "id": "9481064",
+                    "url": "https://edge.forgecdn.net/files/9531/710/appliedenergistics2-forge-15.5.9-uelm.jar",
+                    "id": "9531710",
                     "parent_id": "1624366",
                     "hashes": {
-                        "sha1": "652256c4a2bdb384def46b2344c18a502c23eab4",
-                        "md5": "f36e6be2a48f3c158390bf84b687ace6"
+                        "sha1": "7170a5c422b45697602e4cc900cc02f2b769390f",
+                        "md5": "77620b90c849dace777fdecf64a52ea8"
                     },
                     "required_dependencies": [
                         "1173950"
                     ],
-                    "size": 8793436,
-                    "date_published": "2026-11-06T20:16:25.093Z"
+                    "size": 8799295,
+                    "date_published": "2026-11-09T20:16:41.373Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "h4IMkyhSNnZjriw9",
+            "pakku_links": [
+                "pIZDOkEUyxqgQofO"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ae2wtlib-uelm"
+            },
+            "name": {
+                "curseforge": "AE2 Wireless Terminals Extended Life Modern"
+            },
+            "id": {
+                "curseforge": "1787710"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ae2wtlib-15.4.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9531/944/ae2wtlib-15.4.1.jar",
+                    "id": "9531944",
+                    "parent_id": "1787710",
+                    "hashes": {
+                        "sha1": "28a4b684a07b36a43a23a0a785433267ef98555c",
+                        "md5": "8f36c14472e6c2a122d93f05ed042082"
+                    },
+                    "required_dependencies": [
+                        "1624366"
+                    ],
+                    "size": 252909,
+                    "date_published": "2026-11-09T20:34:03.460Z"
                 }
             ]
         },
@@ -1150,83 +1191,6 @@
                     ],
                     "size": 53432741,
                     "date_published": "2026-10-19T11:44:46.827Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "SKNobxecQul3CE8g",
-            "pakku_links": [
-                "3QJUyVc5jxbc7OFC",
-                "x1EwQZ6H2kVKR3U3",
-                "0DMPJ1AWW6qfYubI",
-                "peldUtKoWsEyuilP"
-            ],
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "applied-energistics-2-wireless-terminals",
-                "modrinth": "applied-energistics-2-wireless-terminals"
-            },
-            "name": {
-                "curseforge": "Applied Energistics 2 Wireless Terminals",
-                "modrinth": "Applied Energistics 2 Wireless Terminals"
-            },
-            "id": {
-                "curseforge": "459929",
-                "modrinth": "pNabrMMw"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "ae2wtlib-15.3.3-forge.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7251/206/ae2wtlib-15.3.3-forge.jar",
-                    "id": "7251206",
-                    "parent_id": "459929",
-                    "hashes": {
-                        "sha1": "1a546af04844677542b6914191783c7de15364fc",
-                        "md5": "9e60a31acb384e832f03bcb16e092ec9"
-                    },
-                    "required_dependencies": [
-                        "309927",
-                        "223794",
-                        "348521",
-                        "419699"
-                    ],
-                    "size": 229518,
-                    "date_published": "2025-11-23T00:02:48.137Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "ae2wtlib-15.3.3-forge.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/pNabrMMw/versions/z8QXeyI0/ae2wtlib-15.3.3-forge.jar",
-                    "id": "z8QXeyI0",
-                    "parent_id": "pNabrMMw",
-                    "hashes": {
-                        "sha512": "f036f278e6d1360147b04f2090829154e75e456f3b2c0af7571b537bf0fd13e97f29211f7a044f9437a171a1c525195737860895118eab70b2b4af54485367d4",
-                        "sha1": "1a546af04844677542b6914191783c7de15364fc"
-                    },
-                    "required_dependencies": [
-                        "9s6osm5g",
-                        "XxWD5pD3",
-                        "lhGA9TYQ",
-                        "vvuO3ImH"
-                    ],
-                    "size": 229518,
-                    "date_published": "2025-11-23T00:02:50.212750Z"
                 }
             ]
         },
@@ -6682,9 +6646,6 @@
         },
         {
             "pakku_id": "IhoU2hVCkDnvlCle",
-            "pakku_links": [
-                "SKNobxecQul3CE8g"
-            ],
             "type": "MOD",
             "side": "BOTH",
             "slug": {

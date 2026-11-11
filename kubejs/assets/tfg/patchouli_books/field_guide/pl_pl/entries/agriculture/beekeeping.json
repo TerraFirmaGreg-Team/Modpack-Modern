@@ -355,7 +355,11 @@
             "type": "patchouli:text",
             "title": "Wskazówki dotyczące pszczół",
             "anchor": "tips",
-            "text": "$(li)Bees can help fertilize $(l:agriculture/greenhouse#planters)Planters!$()$(li)Hydrated large planters count as flowers.$(li)Being wet prevents bee attacks.$(li)Some crops like sunflowers and flax count as flowers.$(li)The ranges for $(thing)Crop Affinity$(), $(thing)Nature Restoration$(), and flowers are the same.$(li)Make sure to keep the hive entrance unobstructed."
+            "text": "$(li)Bees can help fertilize $(l:agriculture/greenhouse#planters)Planters!$()$(li)Hydrated large planters count as flowers.$(li)Being wet prevents bee attacks.$(li)Some crops like sunflowers and flax count as flowers.$(li)The ranges for $(thing)Crop Affinity$(), $(thing)Nature Restoration$(), and flowers are the same."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)Make sure to keep the hive entrance unobstructed. Bees can't do anything if they can't leave their hive!$(li)Bees can live in $(l:agriculture/greenhouse)Greenhouses$()! They will ignore seasonal temperatures when inside, allowing bees to thrive year-round."
         },
         {
             "type": "patchouli:relations",
