@@ -6,23 +6,23 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:game_mechanics/pets#dogs)Dogs$()$(li)$(bold)$(l:game_mechanics/pets#cats)Cats$()$(li)$(bold)$(l:game_mechanics/pets#foxes)Foxes$()$(li)$(bold)$(l:game_mechanics/pets#pigeons)Pigeons$()$(li)$(bold)$(l:game_mechanics/pets#commands)Commands$()$(li2)$(l:game_mechanics/pets#relax)Relax$()$(li2)$(l:game_mechanics/pets#home)Home$()$(li2)$(l:game_mechanics/pets#hunt)Hunt$()$(li)$(bold)$(l:game_mechanics/pets#treat)Pet Treat$()$(li)$(bold)$(l:game_mechanics/pets#name_tag)Name Tag$()$(li)$(bold)$(l:game_mechanics/pets#lead)Lead$()"
+            "text": "$(li)$(bold)$(l:game_mechanics/pets#dogs)Собаки$()$(li)$(bold)$(l:game_mechanics/pets#cats)Коты$()$(li)$(bold)$(l:game_mechanics/pets#foxes)Лисы$()$(li)$(bold)$(l:game_mechanics/pets#pigeons)Голуби$()$(li)$(bold)$(l:game_mechanics/pets#commands)Команды$()$(li2)$(l:game_mechanics/pets#relax)Отдых$()$(li2)$(l:game_mechanics/pets#home)Дом$()$(li2)$(l:game_mechanics/pets#hunt)Охота$()$(li)$(bold)$(l:game_mechanics/pets#treat)Лакомства$()$(li)$(bold)$(l:game_mechanics/pets#name_tag)Бирка$()$(li)$(bold)$(l:game_mechanics/pets#lead)Поводок$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introduction",
-            "text": "$(thing)Pets$() are animals that function similarly to $(l:agriculture/animal_husbandry)Livestock$(). Instead of products, pets are useful for obeying commands, being friends, pest control, hunting.$(br)Pets recognize a certain player as their $(thing)Owner$(). To become a pet's owner, feed it to raise its familiarity above $(item)15%$(). Pets will only obey commands that come from their owner.$(br)Clicking on a pet with $(thing)dye$() changes its collar color."
+            "title": "Введение",
+            "text": "$(thing)Питомцы$() это животные, похожие на $(l:agriculture/animal_husbandry)Скот$(). Их польза не в продуктах, а в том, что они подчиняются командам, дружат с тобой, истребляют вредителей и охотятся.$(br)Питомцы считают определённого игрока своим $(thing)Хозяином$(). Чтобы стать хозяином питомца, подними привязанность выше $(item)15%$() покормив его. Питомцы подчиняются только командам хозяина.$(br)Клик по питомцу $(thing)красителем$() меняет цвет ошейника."
         },
         {
             "type": "patchouli:text",
             "anchor": "dogs",
-            "title": "Dogs",
-            "text": "Dogs are a pet that eats grains, vegetables, and meat, rotten or not rotten. They will help you hunt almost any land predator or prey.$(br)Dogs come in multiple variants that depend on what type of $(l:the_world/wild_animals#wolf)wolf$() it was domesticated from."
+            "title": "Собаки",
+            "text": "Собаки это питомцы, которые едят зерновые, овощи и мясо, гнилое или нет. Они помогут с охотой на большинство наземных животных.$(br)Существует несколько окрасов собак, зависящих от типа $(l:the_world/wild_animals#wolf)волка$() из которого они были одомашнены."
         },
         {
             "type": "patchouli:image",
-            "text": "Backported from $(item)Minecraft 1.20.5$()!",
+            "text": "Портировано из $(item)Майнкрафта 1.20.5$()!",
             "images": [
                 "tfg:textures/gui/field_guide/dog_variants.png"
             ],
@@ -37,7 +37,7 @@
                     "bold": true
                 },
                 {
-                    "text": "Climate",
+                    "text": "Климат",
                     "bold": true
                 },
                 {
@@ -53,7 +53,7 @@
                     "text": "Арктический, субарктический (леса)"
                 },
                 {
-                    "text": "Black"
+                    "text": "Чёрный"
                 },
                 {
                     "text": "Тундра, влажный субарктический (леса)"
@@ -112,12 +112,12 @@
         {
             "type": "patchouli:text",
             "anchor": "cats",
-            "title": "Cats",
-            "text": "Cats are a pet that eats grains, cooked meats, and dairy products. They will help you hunt land prey and small fish. When at home, they will kill pests without being asked. Cats do not always listen when being told to sit.$(br2)Variants: Black, British Shorthair, Calico, Jellie, Persian, Ragdoll, Red, Siamese, Tabby, White."
+            "title": "Коты",
+            "text": "Коты это питомцы, питающиеся зерновыми, приготовленным мясом и молочными продуктами. Они помогут с охотой на наземных животных(не хищных) и мелкую рыбу. Дома они самостоятельно будут убивать вредителей. Коты не всегда садятся по команде.$(br2)Окрасы: Чёрный, Короткошёрстный Британец, Трёхцветный, Джелли, Персидский, Рэгдолл, Рыжий, Сиамский, Табби, Белый."
         },
         {
             "type": "patchouli:entity",
-            "text": "As villages do not exist, taming an $(l:the_world/wild_animals#ocelot)Ocelot$() is the only way to obtain a cat.",
+            "text": "Ввиду отсутствия деревень, приручение $(l:the_world/wild_animals#ocelot)Оцелота$() это единственный способ получить кота.",
             "entity": "tfc:cat{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
             "title": " ",
             "scale": 0.7
@@ -125,8 +125,8 @@
         {
             "type": "patchouli:text",
             "anchor": "foxes",
-            "title": "Foxes",
-            "text": "Foxes are a pet that eats any edible food. They will help you hunt land prey and small fish. When at home, they will kill pests without being asked. Foxes do not always listen when being told to sit.$(br2)Variants: Red, Snow."
+            "title": "Лисы",
+            "text": "Лисы это питомцы, питающиеся чем угодно. Они помогут в охоте на наземных животных(не хищных) и мелкую рыбу. Дома они самостоятельно будут убивать вредителей. Лисы не всегда садятся по команде.$(br2)Окрасы: Красный, Снежный."
         },
         {
             "type": "patchouli:entity",
@@ -138,59 +138,59 @@
         {
             "type": "patchouli:text",
             "anchor": "pigeons",
-            "title": "Pigeons",
-            "text": "Pigeons are capable of being tamed and delivering packages, but do not follow standard commands. You can feed $(t:#fowlplay:pigeon_food)$(6)Pigeon Food$(), such as grains and vegetables, to a pigeon to tame it.$(br)Once tamed a pigeon can deliver $(t:#fowlplay:pigeon_deliverable)$(6)Sacks$() to other players by $(l:craftsmanship/scribing_table)naming the pouch$() with the player's name before handing it over. "
+            "title": "Голуби",
+            "text": "Голубей можно приручить для доставки посылок. Они не подчиняются стандартным командам. Голубей можно покормить $(t:#fowlplay:pigeon_food)$(6)Голубиной едой$(), такой как зерновые и овощи, чтобы приручить их.$(br)После приручения, они способны доставлять $(t:#fowlplay:pigeon_deliverable)$(6)Мешочки$() другим игрокам, если их имя $(l:craftsmanship/scribing_table)указано на мешочке$()."
         },
         {
             "type": "patchouli:entity",
             "entity": "fowlplay:pigeon{NoAI:1b}",
             "scale": 0.8,
-            "text": "A pigeon."
+            "text": "Голубь."
         },
         {
             "type": "patchouli:text",
             "anchor": "commands",
-            "title": "Commands",
-            "text": "Responsible pet owners must learn to control their pet. Luckily, this is easy. By pressing $(item)$(k:key.use)$() while holding $(item)$(k:key.sneak)$() with an empty hand, the $(thing)Pet Screen$() may be opened. This screen contains a number of commands that can be used to tell the pet what to do: $(thing)Relax$(), $(thing)We're Home$(), $(thing)Sit$(), $(thing)Follow Me$(), and $(thing)Hunt With Me$()."
+            "title": "Команды",
+            "text": "Ответственные хозяева должны научиться контролировать своих питомцев. К счастью, это просто. Нажав $(item)$(k:key.use)$() удерживая $(item)$(k:key.sneak)$() с пустой рукой можно открыть $(thing)Панель питомца$(). Эта панель содержит команды, которыми можно управлять питомцем: $(thing)Отдыхай$(), $(thing)Мы дома$(), $(thing)Сидеть$(), $(thing)Следуй за мной$() и $(thing)Охота со мной$()."
         },
         {
             "type": "patchouli:text",
             "anchor": "relax",
-            "title": "Relax",
+            "title": "Отдых",
             "text": "$(thing)Отдых$() — это стандартное состояние питомца, и эта команда вернёт его к этому состоянию. Если питомец дома, то он будет ходить по территории, но не будет покидать её и будет спать раз в день. Если он далеко от дома, то питомец будет ходить бесцельно."
         },
         {
             "type": "patchouli:text",
             "anchor": "home",
-            "title": "Home",
+            "title": "Дом",
             "text": "$(thing)Мы дома$() устанавливает позицию дома для питомца. Это сообщит питомцу не покидать территорию и отдыхать здесь. Эта команда не меняет нынешнюю активность. $(br2)$(thing)Сидеть$() — указывает питомцу сесть. Но, учти, что, со временем, питомцу надоест и он может встать!"
         },
         {
             "type": "patchouli:text",
             "anchor": "hunt",
-            "title": "Hunt",
+            "title": "Охота",
             "text": "$(thing)Охота со мной$() сообщит питомцу следовать за тобой и учавствовать в бою, когда ты или тебя атакуют. Питомцы могут атаковать только тех животных, которых они могут осилить (Например: коты и лисы не могут помочь с медведем!). $(br2)$(thing)Следуй за мной$() похоже на Охота со мной, но питомец не будет рисковать собой в бою."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "treat",
-            "title": "Pet Treat",
+            "title": "Лакомства",
             "item": "species:wicked_treat",
-            "text": "$(thing)Pet Treats$() can be made by mixing medicine with bone meal.$(br)Pet treats give $(bold)massive$() stat bonuses to your pets for a short duration."
+            "text": "$(thing)Лакомства$() можно сделать смешав медикаменты с костной мукой.\n$(br)Лакомства ненадолго дают $(bold)огромные$() бонусы к характеристикам питомца."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "name_tag",
-            "title": "Name Tag",
+            "title": "Бирка",
             "item": "minecraft:name_tag",
-            "text": "$(thing)Name Tags$() can be crafted from paper and string. Once made, they can be edited on a $(l:craftsmanship/scribing_table)Scribing Table$() to give them a custom name that will transfer to your pet with $(item)$(k:key.use)$()."
+            "text": "$(thing)Бирки$() можно сделать из бумаги и нитей. Их можно подписать на $(l:craftsmanship/scribing_table)Столе писаря$() чтобы дать им имя, которое перейдёт к питомцу если использовать $(item)$(k:key.use)$()."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "lead",
-            "title": "Lead",
+            "title": "Поводок",
             "item": "minecraft:lead",
-            "text": "A $(thing)Lead$() can be crafted from burlap fiber or string, and a metal ring.$(br)You can $(item)$(k:key.use)$() an animal with a lead to pull them around. Much more efficient than baiting them with food!$(br2)You can also pick up some smaller animals with $(item)$(k:key.sneak) + $(k:key.use)$() with empty hands."
+            "text": "$(thing)Поводок$() может быть сделан из волокна джута или нити, а также металлического кольца.$(br)Ты можешь нажать $(item)$(k:key.use)$() по животному держа поводок чтобы тягать его. Гораздо эффективнее чем приманивать их едой!$(br2)Ты также можешь поднять некоторых мелких животных при помощи $(item)$(k:key.sneak) + $(k:key.use)$() с пустыми руками."
         },
         {
             "type": "patchouli:relations",
