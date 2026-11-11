@@ -108,16 +108,16 @@ function registerTFGRubberRecipes(event) {
 		.heated()
 		.id('tfg:create/mixer/sticky_resin_from_pitch');
 
-	event.recipes.gtceu.fluid_solidifier('tfg:fluid_solidifier/latex_to_sticky_resin')
+	event.recipes.gtceu.fluid_solidifier('tfg:latex_to_sticky_resin')
 		.duration(12 * 20)
-		.EUt(16)
+		.EUt(GTValues.VA[GTValues.ULV])
 		.itemInputs('tfc:powder/wood_ash')
 		.itemOutputs('2x gtceu:sticky_resin')
 		.inputFluids(Fluid.of('tfg:latex', 1000))
 
-	event.recipes.gtceu.fluid_solidifier('tfg:fluid_solidifier/pitch_to_sticky_resin')
+	event.recipes.gtceu.fluid_solidifier('tfg:pitch_to_sticky_resin')
 		.duration(12 * 20)
-		.EUt(16)
+		.EUt(GTValues.VA[GTValues.ULV])
 		.itemInputs('tfc:powder/wood_ash')
 		.itemOutputs('2x gtceu:sticky_resin')
 		.inputFluids(Fluid.of('tfg:conifer_pitch', 1000))

@@ -86,6 +86,12 @@
         newId: "tfg:press_ssss_turbine_blade",
         removeItemInputs: ["forge:screws/hsss"]
     })
+
+    global.modifyRecipe(event, "gtceu:mixer/some_recipe", {
+	newId: "tfg:some_recipe",
+	addFluidOutputs: { "gtceu:sulfuric_acid": 1000 }
+    })
+
     */
 
 global.modifyRecipe = function(event, recipeId, options) {
@@ -283,6 +289,13 @@ global.modifyRecipe = function(event, recipeId, options) {
                 } else if (fluidOutVal && fluidOutVal.tag) {
                     newRecipe.outputFluids(Fluid.of(`gtceu:${fluidOutVal.tag.split(":")[1]}`, outAmount))
                 }
+            }
+        }
+
+        // Add new fluid outputs
+        if (options.addFluidOutputs) {
+            for (var afo in options.addFluidOutputs) {
+                newRecipe.outputFluids(Fluid.of(afo, options.addFluidOutputs[afo]))
             }
         }
 

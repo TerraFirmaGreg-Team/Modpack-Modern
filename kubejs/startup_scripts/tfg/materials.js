@@ -62,6 +62,7 @@ const registerTFGMaterials = (event) => {
 	registerTFGGemSlurryMaterials(event);
 	registerTFGMiscAlloyMaterials(event);
 	registerTFGCasingsMaterials(event);
+	registerTFGPetroChemMaterials(event);
 
 
 	// Crafting components
