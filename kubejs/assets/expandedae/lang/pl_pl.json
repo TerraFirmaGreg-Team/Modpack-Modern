@@ -91,6 +91,8 @@
 	"item.expandedae.ext2g_pattern_provider_upgrade": "Ulepszenie dostawcy wzorców (rozszerzony-GIGA)",
 	"item.expandedae.ext_pattern_provider_upgrade": "Ulepszenie rozszerzonego dostawcy wzorców",
 	"item.expandedae.giga_pattern_provider_part": "Dostawca wzorców GIGA",
+	"item.expandedae.greater_accel_card": "Większa karta przyśpieszenia",
+	"item.expandedae.greater_accel_card.tooltip.1": "Jeszcze większe przyspieszenie",
 	"item.expandedae.greater_accel_card.tooltip.2": "Uwaga: Kosztowne energetycznie!",
 	"item.expandedae.m2g_pattern_provider_upgrade": "Ulepszenie dostawcy wzorców (MEGA-GIGA)",
 	"item.expandedae.mega_dual_cell_housing": "Obudowa podwójnego magazynu MEGA ME",
@@ -103,6 +105,7 @@
 	"key.categories.expandedae": "Expanded AE",
 	"key.expandedae.highlight": "Podświetl miejsca przechowywania",
 	"msg.expandedae.mode_changed": "Zmieniono tryb na: %s",
+	"msg.expandedae.no_highlighted_blocks": "Nie znaleziono nic do podświetlenia",
 	"msg.expandedae.prio_reset": "Resetuj priorytet do %s",
 	"text.expandedae.card": "Obecnie: %s"
 }
