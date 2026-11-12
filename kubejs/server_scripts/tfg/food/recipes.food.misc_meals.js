@@ -11,7 +11,7 @@ function registerTFGMiscMealFoodRecipes(event) {
 		.itemOutput(TFC.isp.of('tfg:food/ice_soup'))
 		.id('tfg:pot/ice_soup');
 
-	event.recipes.gtceu.food_processor('ice_soup')
+	event.recipes.tfg.food_processor('ice_soup')
 		.itemInputs('#tfc:bowls', '4x firmalife:ice_shavings')
 		.inputFluids(Fluid.of('minecraft:water', 1000))
 		.itemOutputs('tfg:food/ice_soup')

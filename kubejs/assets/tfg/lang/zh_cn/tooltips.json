@@ -69,6 +69,7 @@
     "tfg.tooltip.vessel_warning": "§c加热过满的小缸将销毁所有溢出的金属，并可能毁掉你正在冶炼的合金！§r",
     "tfg.tooltip.machine.one_energy_hatch": "只允许有且仅有§61个§r能源仓。",
     "tfg.tooltip.machine.two_energy_hatches": "允许有最多§62个§r能源仓。",
+    "tfg.tooltip.machine.no_oc": "该机器§6不支持超频§r。使用更高级的能源仓只会解锁更高级的配方。",
     "tfg.tooltip.machine.subtick": "这台机器支持§2子刻机制§r！",
     "tfg.tooltip.machine.coil_energy_discount": "使用§6白铜§r后的每个线圈等级可以减少10%的能源消耗。",
     "tfg.tooltip.machine.coil_speed_discount": "§6白铜§r线圈会使处理速度减慢25%，§3坎塔尔合金§r后的每个线圈都会增加50%的速度。",

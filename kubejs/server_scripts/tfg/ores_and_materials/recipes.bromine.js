@@ -2,13 +2,15 @@
 
 function registerTFGBromineRecipes(event) {
 
+	/*
+
 	event.recipes.gtceu.evaporation_tower('evaporation_brine')
 		.inputFluids(Fluid.of('tfc:salt_water', 20000))
 		.outputFluids(Fluid.of('gtceu:raw_brine', 1000))
 		.duration(20*50)
 		.EUt(GTValues.VA[GTValues.HV])
 
-	event.recipes.gtceu.evaporation_tower('evaporation_brine_mars')
+	event.recipes.tfg.evaporation_tower('evaporation_brine_mars')
 		.inputFluids(Fluid.of('tfg:semiheavy_ammoniacal_water', 20000))
 		.outputFluids(Fluid.of('gtceu:raw_brine', 1000))
 		.duration(20*50)
@@ -20,7 +22,7 @@ function registerTFGBromineRecipes(event) {
 		.duration(20*600)
 		.EUt(GTValues.VA[GTValues.HV])
 
-	event.recipes.gtceu.heat_exchanger('heat_brine_nuclear')
+	event.recipes.tfg.heat_exchanger('heat_brine_nuclear')
 		.inputFluids(Fluid.of("gtceu:raw_brine", 1000))
 		.inputFluids(Fluid.of("gtceu:irradiated_steam", 1000))
 		.outputFluids(Fluid.of("gtceu:hot_brine", 1000))

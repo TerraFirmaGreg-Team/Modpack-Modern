@@ -8,12 +8,14 @@
 	"message.gtcables.duplicate": "Te złącza są już połączone.",
 	"message.gtcables.cable_obstructed": "Na drodze kabla znajdują się bloki.",
 	"message.gtcables.connected": "Kabel podłączony.",
+	"config.gtcables.spool_max_capacity": "Maksymalna pojemność szpuli",
 	"config.gtcables.connection_max_length": "Maksymalna długość połączenia",
 	"config.gtcables.render_distance": "Odległość renderowania kabli",
 	"config.jade.plugin_gtcables.wire_data": "Dane podwieszonych przewodów",
 	"jade.gtcables.voltage": "Napięcie: %s",
 	"jade.gtcables.amperage": "Natężenie: %s",
 	"jade.gtcables.length": "Długość: %s m",
+	"jade.gtcables.span_loss": "Strata na przęśle: %s EU/A",
 	"jade.gtcables.endpoint_a": "Od: %s",
 	"jade.gtcables.endpoint_b": "Do: %s"
 }

@@ -646,7 +646,16 @@
 			tasks: [
 				{
 					id: "4D1E98E699F1E724"
-					item: "gtceu:red_alloy_ingot"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:red_alloy_ingot"
+					}
 					type: "item"
 				}
 				{

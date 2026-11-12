@@ -237,7 +237,7 @@ function registerTFGQuartzRecipes(event) {
 		.EUt(GTValues.VHA[GTValues.LV])
 		
 	event.recipes.gtceu.laser_engraver('tfg:huge_quartz_from_exquisite')
-		.chancedInput('gtceu:exquisite_nether_quartz_gem', 2000, 0)
+		.chancedInput('gtceu:exquisite_nether_quartz_gem', 2000)
 		.itemInputs('20x minecraft:quartz')
 		.notConsumable('tfc:lens')
 		.itemOutputs('20x tfg:huge_quartz')

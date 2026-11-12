@@ -56,21 +56,21 @@ function registerTFGSpaceRecipes(event) {
 
 	// Aqueous accumulator -- use adjacentFluids (plural) to avoid rhino ambiguous method issues
 	
-	event.recipes.gtceu.aqueous_accumulator('water')
+	event.recipes.tfg.aqueous_accumulator('water')
 		.circuit(1)
 		.duration(20)
 		.EUt(GTValues.VHA[GTValues.ULV])
 		.adjacentFluids(["minecraft:water"])
 		.outputFluids(Fluid.of("minecraft:water", 1000))
 		
-	event.recipes.gtceu.aqueous_accumulator('sea_water')
+	event.recipes.tfg.aqueous_accumulator('sea_water')
 		.circuit(2)
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.ULV])
 		.adjacentFluids(["tfc:salt_water"])
 		.outputFluids(Fluid.of("tfc:salt_water", 1000))
 		
-	event.recipes.gtceu.aqueous_accumulator('semiheavy_water_mars')
+	event.recipes.tfg.aqueous_accumulator('semiheavy_water_mars')
 		.circuit(3)
 		.dimension('ad_astra:mars')
 		.duration(20)
@@ -80,7 +80,7 @@ function registerTFGSpaceRecipes(event) {
 
 	// 4 and 5 used to be lava, add something else here
 
-	event.recipes.gtceu.aqueous_accumulator('spring_water')
+	event.recipes.tfg.aqueous_accumulator('spring_water')
 		.circuit(6)
 		.dimension('minecraft:overworld')
 		.dimension('minecraft:the_nether')
@@ -89,7 +89,7 @@ function registerTFGSpaceRecipes(event) {
 		.adjacentFluids(["tfc:spring_water"])
 		.outputFluids(Fluid.of("tfc:spring_water", 1000))
 
-	event.recipes.gtceu.aqueous_accumulator('more_water')
+	event.recipes.tfg.aqueous_accumulator('more_water')
 		.circuit(7)
 		.duration(10)
 		.EUt(GTValues.VHA[GTValues.HV])

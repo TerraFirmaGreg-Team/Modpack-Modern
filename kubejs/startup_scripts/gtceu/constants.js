@@ -79,8 +79,6 @@ global.TFG_EXTRUDER_MOLDS = /** @type {const} */ ([
 
 global.GTCEU_EXTRUDER_MOLDS = /** @type {const} */ ([
 	"gtceu:plate_extruder_mold",
-	"gtceu:rod_extruder_mold",
-	"gtceu:bolt_extruder_mold",
 	"gtceu:ring_extruder_mold",
 	"gtceu:cell_extruder_mold",
 	"gtceu:ingot_extruder_mold",
@@ -91,11 +89,8 @@ global.GTCEU_EXTRUDER_MOLDS = /** @type {const} */ ([
 	"gtceu:large_pipe_extruder_mold",
 	"gtceu:huge_pipe_extruder_mold",
 	"gtceu:block_extruder_mold",
-	"gtceu:gear_extruder_mold",
 	"gtceu:bottle_extruder_mold",
-	"gtceu:foil_extruder_mold",
-	"gtceu:small_gear_extruder_mold",
-	"gtceu:rotor_extruder_mold"
+	"gtceu:foil_extruder_mold"
 ]);
 //#endregion
 

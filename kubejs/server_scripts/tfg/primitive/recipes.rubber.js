@@ -108,16 +108,16 @@ function registerTFGRubberRecipes(event) {
 		.heated()
 		.id('tfg:create/mixer/sticky_resin_from_pitch');
 
-	event.recipes.gtceu.fluid_solidifier('tfg:fluid_solidifier/latex_to_sticky_resin')
+	event.recipes.gtceu.fluid_solidifier('tfg:latex_to_sticky_resin')
 		.duration(12 * 20)
-		.EUt(16)
+		.EUt(GTValues.VA[GTValues.ULV])
 		.itemInputs('tfc:powder/wood_ash')
 		.itemOutputs('2x gtceu:sticky_resin')
 		.inputFluids(Fluid.of('tfg:latex', 1000))
 
-	event.recipes.gtceu.fluid_solidifier('tfg:fluid_solidifier/pitch_to_sticky_resin')
+	event.recipes.gtceu.fluid_solidifier('tfg:pitch_to_sticky_resin')
 		.duration(12 * 20)
-		.EUt(16)
+		.EUt(GTValues.VA[GTValues.ULV])
 		.itemInputs('tfc:powder/wood_ash')
 		.itemOutputs('2x gtceu:sticky_resin')
 		.inputFluids(Fluid.of('tfg:conifer_pitch', 1000))
@@ -171,7 +171,7 @@ function registerTFGRubberRecipes(event) {
 		.outputFluids(Fluid.of('gtceu:glue', 50))
 		.itemOutputs('2x #forge:dusts/carbon')
 		.itemOutputs('4x gtceu:plant_ball')
-		.chancedOutput('8x gtceu:plant_ball', 7500, 0)
+		.chancedOutput('8x gtceu:plant_ball', 7500)
 		.duration(20 * 20)
 		.EUt(GTValues.VA[GTValues.LV])
 
@@ -179,7 +179,7 @@ function registerTFGRubberRecipes(event) {
 		.itemInputs('gtceu:sticky_resin')
 		.outputFluids(Fluid.of('gtceu:glue', 100))
 		.itemOutputs('3x #forge:dusts/carbon')
-		.chancedOutput('gtceu:plant_ball', 5000, 0)
+		.chancedOutput('gtceu:plant_ball', 5000)
 		.duration(20 * 20)
 		.EUt(GTValues.VA[GTValues.LV])
 
@@ -199,10 +199,10 @@ function registerTFGRubberRecipes(event) {
 
 	event.recipes.gtceu.centrifuge('rubber_log_separation')
 		.itemInputs('#tfg:latex_logs')
-		.chancedOutput('gtceu:raw_rubber_dust', 5000, 0)
-		.chancedOutput('gtceu:plant_ball', 3750, 0)
-		.chancedOutput('gtceu:sticky_resin', 2500, 0)
-		.chancedOutput('gtceu:wood_dust', 2500, 0)
+		.chancedOutput('gtceu:raw_rubber_dust', 5000)
+		.chancedOutput('gtceu:plant_ball', 3750)
+		.chancedOutput('gtceu:sticky_resin', 2500)
+		.chancedOutput('gtceu:wood_dust', 2500)
 		.outputFluids(Fluid.of('gtceu:methane', 60))
 		.duration(20 * 20)
 		.EUt(GTValues.VA[GTValues.MV])

@@ -1,27 +1,27 @@
 {
-    "name": "Sandwich Making",
+    "name": "サンドイッチ作り",
     "category": "tfg:cooking",
     "icon": "tfc:textures/item/food/barley_bread_sandwich.png",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "sandwich",
-            "text": "$(thing)Sandwiches$() are a meal allowing the combination of two $(thing)$(n)$(t:Bread, Flat Bread, or Bread Slice)Bread$() items and three $(n)$(thing)$(t:tfc:#usable_in_sandwich)Sandwich Ingredients$().$(br2)Sandwich ingredients must not be rotten, but once the sandwich is created, it is considered fresh, and decays like it is new."
+            "text": "$(thing)サンドイッチ$()は、2つの$(thing)$(n)$(t:パン、フラットブレッド、またはスライスパン) パン$() アイテムと、3つの $(n)$(thing)$(t:tfc:#usable_in_sandwich)サンドイッチの具$() を組み合わせることで作れる食事です。$(br2)腐った材料はサンドイッチの具として使えませんが、サンドイッチが作成されると劣化度がリセットされれ、完全に新鮮な状態から劣化していきます。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tfc:food/barley_bread_sandwich",
-            "title": "Sandwich",
+            "title": "サンドイッチ",
             "link_recipes": false,
-            "text": "Sandwiches are dynamic meal items. The ingrediants used will determine the $(l:cooking/food_and_water#nutrients)Nutrients$() it contains.$(br2)$(t:§70.8§r§l∑§r§7Ingredients §r+ §70.5§r§l∑§r§7Bread§r)To calculate the nutritional value; take the sum of each ingredient's nutrition and multiply by 0.8 except the bread which is multiplied by 0.5$()."
+            "text": "サンドイッチは、その内容によって栄養価が変化する食事アイテムです。使用される具材によって、$(l:cooking/food_and_water#nutrients) 栄養素$()の含有量が決まります。$(br2)$(t:§70.8§r§l∑§r§7食材 §r+ §70.5§r§l∑§r§7パン§r)栄養価を算出するには、各食材の栄養価を合計し、0.8掛けます。ただし、パンについては0.5掛けです。$()。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tfc:food/barley_bread_jam_sandwich",
             "anchor": "jam_sandwich",
-            "title": "Jam Sandwich",
+            "title": "ジャムサンドイッチ",
             "link_recipes": false,
-            "text": "Jam Sandwiches are also dynamic meal items that use the same calculation as regular sandwiches.$(br)Crafting a jam sandwich will leave an empty jar behind.$(br2)Jam can only be combined with $(thing)cooked meat and fish$() or $(thing)cheese$() to make a jam sandwich."
+            "text": "ジャムサンドイッチも、通常のサンドイッチと同じ計算式が適用される動的な食事アイテムです。$(br)ジャムサンドイッチを作成すると、空の瓶が残ります。$(br2)ジャムは、$(thing)調理済みの肉や魚$() または $(thing)チーズ$() と組み合わせることでのみ、ジャムサンドイッチを作ることができます。"
         },
         {
             "type": "patchouli:relations",

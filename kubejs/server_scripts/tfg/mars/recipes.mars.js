@@ -26,7 +26,7 @@ function registerTFGMarsRecipes(event) {
 		.outputFluids(Fluid.of('gtceu:krypton', 1000))
 		.outputFluids(Fluid.of('gtceu:neon', 1000))
 		.outputFluids(Fluid.of('gtceu:xenon', 1000))
-		.chancedOutput('gtceu:ammonium_chloride_dust', 2250, 0)
+		.chancedOutput('gtceu:ammonium_chloride_dust', 1)
 		.disableDistilleryRecipes(true)
 		.duration(2000)
 		.EUt(GTValues.VA[GTValues.EV])

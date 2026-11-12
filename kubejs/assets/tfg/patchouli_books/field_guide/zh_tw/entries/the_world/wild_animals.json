@@ -304,7 +304,7 @@
             "scale": 0.6,
             "name": "劍齒虎",
             "anchor": "sabertooth",
-            "text": "劍齒虎在$(l:the_world/climate#temperature)溫度$() 0°C 以上、$(l:the_world/climate#rainfall)降雨量$() 250mm 以上的任何地區生成。"
+            "text": "劍齒虎在$(l:the_world/climate#temperature)溫度$() 0°C 以下、$(l:the_world/climate#rainfall)降雨量$() 250mm 以上的任何地區生成。"
         },
         {
             "type": "patchouli:entity",

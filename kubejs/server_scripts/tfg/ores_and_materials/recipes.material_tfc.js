@@ -324,7 +324,7 @@ function processTongs(event, material) {
 	const materialName = material.getName();
 	let tongPart = `tfchotornot:tong_part/${materialName}`;
 	let tong = `tfchotornot:tongs/${materialName}`;
-	addToolExtruderRecipe(event, material, tongPart, ChemicalHelper.get(TagPrefix.rodLong, material, 1), 'gtceu:rod_extruder_mold', 'tong_part');
+	addToolExtruderRecipe(event, material, tongPart, ChemicalHelper.get(TagPrefix.rodLong, material, 1), 'gtceu:wire_extruder_mold', 'tong_part');
 	addMaterialRecyclingNoTagPrefix(event, tongPart, material, 'tong_part', 1);
 	addTFCMelting(event, tong, material, 144 * 2, 'tong');
 

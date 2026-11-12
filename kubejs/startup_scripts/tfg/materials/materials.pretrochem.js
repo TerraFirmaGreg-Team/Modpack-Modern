@@ -1,0 +1,33 @@
+function registerTFGPetroChemMaterials(event) {
+
+	event.create('tfg:dehydrogenated_propane')
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(480))
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xd9a441)
+
+	event.create('tfg:dehydrogenated_butane')
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(480))
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xc9783a)
+
+    event.create('tfg:aromatized_lpg')
+        .gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(480))
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .color(0xb8733a)
+
+	const dust = (id, color, secondaryColor, iconSet) => event.create(id)
+        .dust()
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .iconSet(iconSet)
+        .color(color)
+        .secondaryColor(secondaryColor)
+
+        dust('tfg:chromia_alumina_catalyst', 0x7fa37a, 0x596775, GTMaterialIconSet.ROUGH)
+        dust('tfg:coked_chromia_alumina_catalyst', 0x51604D, 0xA398A4, GTMaterialIconSet.RUBY)
+        dust('tfg:platinum_tin_alumina_catalyst', 0xd8dde0, 0xd8dde0, GTMaterialIconSet.DULL)
+        dust('tfg:coked_platinum_tin_alumina_catalyst', 0x55595c, 0x3A372B, GTMaterialIconSet.BRIGHT)
+        dust('tfg:bismuth_molybdate_catalyst', 0xc9b458, 0x8a7a3a, GTMaterialIconSet.OPAL)
+        dust('tfg:gallium_zsm5_catalyst', 0xC8CCD8, 0x8F9BE8, GTMaterialIconSet.DIAMOND)
+        dust('tfg:coked_gallium_zsm5_catalyst', 0x4a4f46, 0x4a4f46, GTMaterialIconSet.FLINT)
+
+}

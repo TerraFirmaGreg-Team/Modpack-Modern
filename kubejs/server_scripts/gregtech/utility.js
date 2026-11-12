@@ -74,7 +74,7 @@ const generateCutterRecipe = (event, input, output, duration, EUt, id) => {
  * @param {(material: com.gregtechceu.gtceu.api.data.chemical.material.Material_) => void} iterator 
  */
 function forEachMaterial(iterator) {
-	for (const material of GTCEuAPI.materialManager.getRegisteredMaterials()) {
+	for (const material of GTRegistries.MATERIALS.values()) {
 		iterator(material)
 	}
 }
@@ -108,7 +108,7 @@ function addCircuitToRecipe(event, recipeId, circuitNumber) {
 		}
 
 		// Cache existing item inputs.
-		const itemEl = inputsObj.get("item");
+		const itemEl = inputsObj.has("gtceu:item") ? inputsObj.get("gtceu:item") : inputsObj.get("item");
 		let itemArray;
 		if (itemEl === null || itemEl === undefined || itemEl.isJsonNull()) {
 			itemArray = new JsonArray();

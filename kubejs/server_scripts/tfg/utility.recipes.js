@@ -86,7 +86,48 @@
         newId: "tfg:press_ssss_turbine_blade",
         removeItemInputs: ["forge:screws/hsss"]
     })
+
+    global.modifyRecipe(event, "gtceu:mixer/some_recipe", {
+	newId: "tfg:some_recipe",
+	addFluidOutputs: { "gtceu:sulfuric_acid": 1000 }
+    })
+
     */
+
+    // Changes through Gtm8
+    // capability keys are now namespaced: "gtceu:item", "gtceu:fluid", "gtceu:eu"
+    // a fluid ingredient with a single value serializes "value" as an object instead of an array
+    // EU content is a number (1A) or { voltage, amperage }
+    // recipe condition types are namespaced: "gtceu:cleanroom", "gtceu:research"
+
+function tfgCap(map, name) {
+    if (!map) return undefined
+    return map[`gtceu:${name}`] || map[name]
+}
+
+function tfgSetCap(map, name, value) {
+    if (map[name] !== undefined && map[`gtceu:${name}`] === undefined) map[name] = value
+    else map[`gtceu:${name}`] = value
+}
+
+function tfgFluidValues(content) {
+    var v = content.value
+    if (v === undefined || v === null) return []
+    return Array.isArray(v) ? v : [v]
+}
+
+function tfgEuVoltage(content) {
+    return (typeof content === "object" && content !== null) ? content.voltage : content
+}
+
+function tfgEuAmperage(content) {
+    return (typeof content === "object" && content !== null && content.amperage) ? content.amperage : 1
+}
+
+function tfgConditionType(cond) {
+    var t = String(cond.type)
+    return t.indexOf(":") >= 0 ? t.split(":")[1] : t
+}
 
 global.modifyRecipe = function(event, recipeId, options) {
     var matches = event.findRecipes({ id: recipeId })
@@ -101,11 +142,17 @@ global.modifyRecipe = function(event, recipeId, options) {
         var recipeName = recipeId.split("/").slice(1).join("/")
         var newId = options.newId || (`tfg:${machineName}/${recipeName}`)
 
+        var inItems = tfgCap(recipeJson.inputs, "item")
+        var inFluids = tfgCap(recipeJson.inputs, "fluid")
+        var outItems = tfgCap(recipeJson.outputs, "item")
+        var outFluids = tfgCap(recipeJson.outputs, "fluid")
+        var tickEu = tfgCap(recipeJson.tickInputs, "eu")
+
         // Extract Temp
         if (recipeJson.recipeConditions) {
             for (var ci0 = 0; ci0 < recipeJson.recipeConditions.length; ci0++) {
                 var cond0 = recipeJson.recipeConditions[ci0]
-                if (cond0.type === "blastFurnaceTemp") {
+                if (tfgConditionType(cond0) === "blastFurnaceTemp") {
                     recipeJson.blastFurnaceTemp = cond0.temperature
                 }
             }
@@ -115,8 +162,10 @@ global.modifyRecipe = function(event, recipeId, options) {
         }
 
         // Duration and EUt
+        var euVoltage = (tickEu && tickEu.length > 0) ? tfgEuVoltage(tickEu[0].content) : 0
+        var euAmperage = (tickEu && tickEu.length > 0) ? tfgEuAmperage(tickEu[0].content) : 1
         if (options.duration) recipeJson.duration = options.duration
-        if (options.eut) recipeJson.tickInputs.eu[0].content = options.eut
+        if (options.eut) euVoltage = options.eut
 
         // Override blast furnace temperature
         if (options.blastFurnaceTemp) recipeJson.blastFurnaceTemp = options.blastFurnaceTemp
@@ -124,28 +173,31 @@ global.modifyRecipe = function(event, recipeId, options) {
         // Override or add circuit
         if (options.circuit !== undefined) {
             if (!recipeJson.inputs) recipeJson.inputs = {}
-            if (!recipeJson.inputs.item) recipeJson.inputs.item = []
+            if (!inItems) {
+                inItems = []
+                tfgSetCap(recipeJson.inputs, "item", inItems)
+            }
             var circuitSlot = null
-            for (var cs = 0; cs < recipeJson.inputs.item.length; cs++) {
-                if (recipeJson.inputs.item[cs].content.type === "gtceu:circuit") {
-                    circuitSlot = recipeJson.inputs.item[cs]
+            for (var cs = 0; cs < inItems.length; cs++) {
+                if (inItems[cs].content.type === "gtceu:circuit") {
+                    circuitSlot = inItems[cs]
                     break
                 }
             }
             if (circuitSlot) {
                 circuitSlot.content.configuration = options.circuit
             } else {
-                recipeJson.inputs.item.push({
+                inItems.push({
                     content: { type: "gtceu:circuit", configuration: options.circuit },
-                    chance: 0, maxChance: 10000, tierChanceBoost: 0
+                    chance: 0, maxChance: 10000
                 })
             }
         }
 
         // Replace a fluid
-        if (options.fluidReplacements && recipeJson.inputs && recipeJson.inputs.fluid) {
-            for (var fr = 0; fr < recipeJson.inputs.fluid.length; fr++) {
-                var frValues = recipeJson.inputs.fluid[fr].content.value
+        if (options.fluidReplacements && inFluids) {
+            for (var fr = 0; fr < inFluids.length; fr++) {
+                var frValues = tfgFluidValues(inFluids[fr].content)
                 for (var frv = 0; frv < frValues.length; frv++) {
                     var frVal = frValues[frv]
                     var frKey = frVal.tag || frVal.fluid
@@ -158,8 +210,8 @@ global.modifyRecipe = function(event, recipeId, options) {
         }
 
         // Remove item inputs (tag or item id)
-        if (options.removeItemInputs && recipeJson.inputs && recipeJson.inputs.item) {
-            recipeJson.inputs.item = recipeJson.inputs.item.filter(function(entry) {
+        if (options.removeItemInputs && inItems) {
+            inItems = inItems.filter(function(entry) {
                 var ingR = entry.content.ingredient
                 if (!ingR) return true // circuits, etc.
                 var keyR = ingR.tag || ingR.item
@@ -168,48 +220,48 @@ global.modifyRecipe = function(event, recipeId, options) {
         }
 
         // Modify amount of item input
-        if (options.itemInputs && recipeJson.inputs && recipeJson.inputs.item) {
+        if (options.itemInputs && inItems) {
             for (var key in options.itemInputs) {
-                for (var ii = 0; ii < recipeJson.inputs.item.length; ii++) {
-                    var ing = recipeJson.inputs.item[ii].content.ingredient
+                for (var ii = 0; ii < inItems.length; ii++) {
+                    var ing = inItems[ii].content.ingredient
                     if (ing && ((ing.item && ing.item === key) || (ing.tag && ing.tag === key))) {
-                        recipeJson.inputs.item[ii].content.count = options.itemInputs[key]
+                        inItems[ii].content.count = options.itemInputs[key]
                     }
                 }
             }
         }
 
         // Modify amount of fluid input
-        if (options.fluidInputs && recipeJson.inputs && recipeJson.inputs.fluid) {
+        if (options.fluidInputs && inFluids) {
             for (var fkey in options.fluidInputs) {
-                for (var fi = 0; fi < recipeJson.inputs.fluid.length; fi++) {
-                    var val = recipeJson.inputs.fluid[fi].content.value[0]
-                    if ((val.fluid && val.fluid === fkey) || (val.tag && val.tag === fkey)) {
-                        recipeJson.inputs.fluid[fi].content.amount = options.fluidInputs[fkey]
+                for (var fi = 0; fi < inFluids.length; fi++) {
+                    var val = tfgFluidValues(inFluids[fi].content)[0]
+                    if (val && ((val.fluid && val.fluid === fkey) || (val.tag && val.tag === fkey))) {
+                        inFluids[fi].content.amount = options.fluidInputs[fkey]
                     }
                 }
             }
         }
 
         // Modify amount of item output
-        if (options.itemOutputs && recipeJson.outputs && recipeJson.outputs.item) {
+        if (options.itemOutputs && outItems) {
             for (var okey in options.itemOutputs) {
-                for (var oi2 = 0; oi2 < recipeJson.outputs.item.length; oi2++) {
-                    var outIng2 = recipeJson.outputs.item[oi2].content.ingredient || recipeJson.outputs.item[oi2].content
+                for (var oi2 = 0; oi2 < outItems.length; oi2++) {
+                    var outIng2 = outItems[oi2].content.ingredient || outItems[oi2].content
                     if (outIng2.item && outIng2.item === okey) {
-                        recipeJson.outputs.item[oi2].content.count = options.itemOutputs[okey]
+                        outItems[oi2].content.count = options.itemOutputs[okey]
                     }
                 }
             }
         }
 
         // Modify amount of fluid output
-        if (options.fluidOutputs && recipeJson.outputs && recipeJson.outputs.fluid) {
+        if (options.fluidOutputs && outFluids) {
             for (var fokey in options.fluidOutputs) {
-                for (var fo = 0; fo < recipeJson.outputs.fluid.length; fo++) {
-                    var outVal = recipeJson.outputs.fluid[fo].content.value[0]
+                for (var fo = 0; fo < outFluids.length; fo++) {
+                    var outVal = tfgFluidValues(outFluids[fo].content)[0]
                     if (outVal && outVal.fluid && outVal.fluid === fokey) {
-                        recipeJson.outputs.fluid[fo].content.amount = options.fluidOutputs[fokey]
+                        outFluids[fo].content.amount = options.fluidOutputs[fokey]
                     }
                 }
             }
@@ -217,22 +269,22 @@ global.modifyRecipe = function(event, recipeId, options) {
 
         javaRecipe.remove()
 
-        var newRecipe = event.recipes.gtceu[machineName](newId)
+        var newRecipe = (event.recipes.tfg[machineName] || event.recipes.gtceu[machineName])(newId)
             .duration(recipeJson.duration)
-            .EUt(recipeJson.tickInputs.eu[0].content)
+        if (euVoltage > 0) newRecipe.EUt(euVoltage, euAmperage)
 
         // Rebuild item inputs
         var circuitConfig = null
-        if (recipeJson.inputs && recipeJson.inputs.item) {
-            for (var ii2 = 0; ii2 < recipeJson.inputs.item.length; ii2++) {
-                var ing2 = recipeJson.inputs.item[ii2].content.ingredient
-                var count = recipeJson.inputs.item[ii2].content.count || 1
+        if (inItems) {
+            for (var ii2 = 0; ii2 < inItems.length; ii2++) {
+                var ing2 = inItems[ii2].content.ingredient
+                var count = inItems[ii2].content.count || 1
                 if (ing2 && typeof ing2 === "object" && "tag" in ing2) {
                     newRecipe.itemInputs(`${count}x #${ing2.tag}`)
                 } else if (ing2 && typeof ing2 === "object" && "item" in ing2) {
                     newRecipe.itemInputs(Item.of(ing2.item, count))
-                } else if (!ing2 && recipeJson.inputs.item[ii2].content.type === "gtceu:circuit") {
-                    circuitConfig = recipeJson.inputs.item[ii2].content.configuration
+                } else if (!ing2 && inItems[ii2].content.type === "gtceu:circuit") {
+                    circuitConfig = inItems[ii2].content.configuration
                 }
             }
         }
@@ -250,10 +302,10 @@ global.modifyRecipe = function(event, recipeId, options) {
         }
 
         // Rebuild fluid inputs
-        if (recipeJson.inputs && recipeJson.inputs.fluid) {
-            for (var fi2 = 0; fi2 < recipeJson.inputs.fluid.length; fi2++) {
-                var fluidVal = recipeJson.inputs.fluid[fi2].content.value[0]
-                var amount = recipeJson.inputs.fluid[fi2].content.amount
+        if (inFluids) {
+            for (var fi2 = 0; fi2 < inFluids.length; fi2++) {
+                var fluidVal = tfgFluidValues(inFluids[fi2].content)[0]
+                var amount = inFluids[fi2].content.amount
                 if (fluidVal && fluidVal.fluid) {
                     newRecipe.inputFluids(Fluid.of(fluidVal.fluid, amount))
                 } else if (fluidVal && fluidVal.tag) {
@@ -263,10 +315,10 @@ global.modifyRecipe = function(event, recipeId, options) {
         }
 
         // Rebuild item outputs
-        if (recipeJson.outputs && recipeJson.outputs.item) {
-            for (var oi = 0; oi < recipeJson.outputs.item.length; oi++) {
-                var outIng = recipeJson.outputs.item[oi].content.ingredient || recipeJson.outputs.item[oi].content
-                var outCount = recipeJson.outputs.item[oi].content.count || 1
+        if (outItems) {
+            for (var oi = 0; oi < outItems.length; oi++) {
+                var outIng = outItems[oi].content.ingredient || outItems[oi].content
+                var outCount = outItems[oi].content.count || 1
                 if (outIng && typeof outIng === "object" && "item" in outIng) {
                     newRecipe.itemOutputs(Item.of(outIng.item, outCount))
                 }
@@ -274,10 +326,10 @@ global.modifyRecipe = function(event, recipeId, options) {
         }
 
         // Rebuild fluid outputs
-        if (recipeJson.outputs && recipeJson.outputs.fluid) {
-            for (var fo2 = 0; fo2 < recipeJson.outputs.fluid.length; fo2++) {
-                var fluidOutVal = recipeJson.outputs.fluid[fo2].content.value[0]
-                var outAmount = recipeJson.outputs.fluid[fo2].content.amount
+        if (outFluids) {
+            for (var fo2 = 0; fo2 < outFluids.length; fo2++) {
+                var fluidOutVal = tfgFluidValues(outFluids[fo2].content)[0]
+                var outAmount = outFluids[fo2].content.amount
                 if (fluidOutVal && fluidOutVal.fluid) {
                     newRecipe.outputFluids(Fluid.of(fluidOutVal.fluid, outAmount))
                 } else if (fluidOutVal && fluidOutVal.tag) {
@@ -286,15 +338,23 @@ global.modifyRecipe = function(event, recipeId, options) {
             }
         }
 
+        // Add new fluid outputs
+        if (options.addFluidOutputs) {
+            for (var afo in options.addFluidOutputs) {
+                newRecipe.outputFluids(Fluid.of(afo, options.addFluidOutputs[afo]))
+            }
+        }
+
         // Recipe conditions
         if (recipeJson.recipeConditions) {
             for (var ci = 0; ci < recipeJson.recipeConditions.length; ci++) {
                 var cond = recipeJson.recipeConditions[ci]
-                if (cond.type === "cleanroom") {
+                var condType = tfgConditionType(cond)
+                if (condType === "cleanroom") {
                     newRecipe.cleanroom(CleanroomType[cond.cleanroom.toUpperCase()])
-                } else if (cond.type === "blastFurnaceTemp") {
+                } else if (condType === "blastFurnaceTemp") {
                     newRecipe.blastFurnaceTemp(recipeJson.blastFurnaceTemp || cond.temperature)
-                } else if (cond.type === "research" && cond.research && cond.research.length > 0) {
+                } else if (condType === "research" && cond.research && cond.research.length > 0) {
                     var research = cond.research[0]
                     newRecipe.researchWithoutRecipe(research.researchId, research.dataItem.id)
                 }
@@ -302,7 +362,7 @@ global.modifyRecipe = function(event, recipeId, options) {
         }
 
         // Temperature via data.ebf_temp only applied if not recipeConditions unsure about that part
-        if (recipeJson.blastFurnaceTemp && (!recipeJson.recipeConditions || !recipeJson.recipeConditions.some(function(c) { return c.type === "blastFurnaceTemp" }))) {
+        if (recipeJson.blastFurnaceTemp && (!recipeJson.recipeConditions || !recipeJson.recipeConditions.some(function(c) { return tfgConditionType(c) === "blastFurnaceTemp" }))) {
             newRecipe.blastFurnaceTemp(recipeJson.blastFurnaceTemp)
         }
     }

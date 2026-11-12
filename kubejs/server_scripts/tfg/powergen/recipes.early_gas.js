@@ -91,7 +91,7 @@ function registerTFGEarlyGasRecipes(event) {
 		.itemInputs(Item.of('minecraft:charcoal', 40))
 		.inputFluids(Fluid.of('gtceu:creosote', 4000))
 		.perTick(true)
-		.chancedFluidInput(Fluid.of('gtceu:hydrogen', 1), 1000, 0)
+		.chancedFluidInput(Fluid.of('gtceu:hydrogen', 1), 1000)
 		.perTick(false)
 		.outputFluids(Fluid.of('gtceu:coal_tar', 500), Fluid.of('tfg:syngas', 4400), Fluid.of('tfg:raw_aromatic_mix', 4000))
 		.duration(20*32)
@@ -112,7 +112,7 @@ function registerTFGEarlyGasRecipes(event) {
 		.itemInputs(Item.of('tfc:ore/lignite', 10))
 		.inputFluids(Fluid.of('gtceu:creosote', 4000))
 		.perTick(true)
-		.chancedFluidInput(Fluid.of('gtceu:hydrogen', 1), 1000, 0)
+		.chancedFluidInput(Fluid.of('gtceu:hydrogen', 1), 1000)
 		.perTick(false)
 		.outputFluids(Fluid.of('gtceu:coal_tar', 1000), Fluid.of('tfg:syngas', 6400), Fluid.of('tfg:raw_aromatic_mix', 4000))
 		.duration(20*32)
@@ -133,7 +133,7 @@ function registerTFGEarlyGasRecipes(event) {
 		.itemInputs(Item.of('tfc:ore/bituminous_coal', 10))
 		.inputFluids(Fluid.of('gtceu:creosote', 4000))
 		.perTick(true)
-		.chancedFluidInput(Fluid.of('gtceu:hydrogen', 1), 1000, 0)
+		.chancedFluidInput(Fluid.of('gtceu:hydrogen', 1), 1000)
 		.perTick(false)
 		.outputFluids(Fluid.of('gtceu:coal_tar', 1000), Fluid.of('tfg:syngas', 9600), Fluid.of('tfg:raw_aromatic_mix', 4000))
 		.duration(20*32)
@@ -154,7 +154,7 @@ function registerTFGEarlyGasRecipes(event) {
 		.itemInputs(Item.of('gtceu:coke_gem', 8))
 		.inputFluids(Fluid.of('gtceu:creosote', 4000))
 		.perTick(true)
-		.chancedFluidInput(Fluid.of('gtceu:hydrogen', 1), 1000, 0)
+		.chancedFluidInput(Fluid.of('gtceu:hydrogen', 1), 1000)
 		.perTick(false)
 		.outputFluids(Fluid.of('gtceu:coal_tar', 2000), Fluid.of('tfg:syngas', 12800), Fluid.of('tfg:raw_aromatic_mix', 4000))
 		.duration(20*32)
@@ -175,7 +175,7 @@ function registerTFGEarlyGasRecipes(event) {
 		.itemInputs(Item.of('beneath:cursecoal', 5))
 		.inputFluids(Fluid.of('gtceu:creosote', 4000))
 		.perTick(true)
-		.chancedFluidInput(Fluid.of('gtceu:hydrogen', 1), 1000, 0)
+		.chancedFluidInput(Fluid.of('gtceu:hydrogen', 1), 1000)
 		.perTick(false)
 		.outputFluids(Fluid.of('gtceu:coal_tar', 2000), Fluid.of('tfg:syngas', 12800), Fluid.of('tfg:raw_aromatic_mix', 4000))
 		.duration(20*32)
@@ -191,7 +191,7 @@ function registerTFGEarlyGasRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.chemical_reactor('tfg:reformed_aromatic_feedstock')
-		.chancedInput(Item.of('gtceu:tiny_rhenium_dust'), 1000, 0) // 10% chance
+		.chancedInput(Item.of('gtceu:tiny_rhenium_dust'), 1000) // 10% chance
 		.inputFluids(Fluid.of('tfg:aromatic_feedstock', 2000))
 		.outputFluids(Fluid.of('tfg:reformed_aromatic_feedstock', 2000))
 		.duration(20*18)
@@ -217,7 +217,7 @@ function registerTFGEarlyGasRecipes(event) {
 	event.recipes.gtceu.electrolyzer('tfg:cracker_off_gas_recycling')
 		.inputFluids(Fluid.of('tfg:cracker_off_gas', 1000))
 		.outputFluids(Fluid.of('gtceu:carbon_dioxide', 500), Fluid.of('gtceu:hydrogen', 500))
-		.chancedOutput(Item.of('gtceu:tiny_rhenium_dust'), 1000, 0) // 10% chance SWITCH TO 5% when new platline is out
+		.chancedOutput(Item.of('gtceu:tiny_rhenium_dust'), 1000) // 10% chance SWITCH TO 5% when new platline is out
 		.duration(20*4.5)
 		.EUt(GTValues.VA[GTValues.HV])
 
@@ -337,12 +337,6 @@ function registerTFGEarlyGasRecipes(event) {
 
 	// BTX
 
-	event.recipes.gtceu.distillation_tower('tfg:methanol_distil_propylene')
-		.inputFluids(Fluid.of('gtceu:methanol', 6000))
-		.outputFluids(Fluid.of('gtceu:propene', 1000), Fluid.of('gtceu:ethylene', 1000), Fluid.of('gtceu:methane', 1000), Fluid.of('gtceu:oxygen', 6000), Fluid.of('gtceu:hydrogen', 10000))
-		.duration(20*30)
-		.EUt(GTValues.VA[GTValues.HV])
-
 	event.recipes.gtceu.cracker('tfg:crude_mixed_gas')
 		.itemInputs(Item.of('tfg:catalyser_pt_re_zsm'))
 		.inputFluids(Fluid.of('tfg:reformate_gas', 8000))
@@ -355,7 +349,7 @@ function registerTFGEarlyGasRecipes(event) {
 	event.recipes.gtceu.large_chemical_reactor('tfg:btx_fuel')
 		.inputFluids(Fluid.of('tfg:crude_mixed_gas', 10000))
 		.inputFluids(Fluid.of('gtceu:benzene', 20000))
-		.inputFluids(Fluid.of('gtceu:toluene', 6000))
+		.inputFluids(Fluid.of('gtceu:toluene', 4000))
 		.inputFluids(Fluid.of('gtceu:dimethylbenzene', 12000))
 		.outputFluids(Fluid.of('tfg:btx_fuel', 54000))
 		.duration(20*6)

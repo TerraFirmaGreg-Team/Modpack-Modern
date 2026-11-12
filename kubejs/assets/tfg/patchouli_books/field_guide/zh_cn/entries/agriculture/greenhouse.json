@@ -139,11 +139,11 @@
             "type": "patchouli:spotlight",
             "anchor": "hydroponics",
             "item": "tfg:hydroponics_facility",
-            "text": "The $(item)Hydroponics Facility$() is an $(9)IV$() upgrade to the Electric Greenhouse that can grow anything in any dimension and also supports $(item)Parallel Hatches$()."
+            "text": "$(item)水培设施$()是电力温室的 $(9)IV$() 升级版，可以在任何维度种植任何作物，还支持 $(item)并行控制仓$()。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_crops",

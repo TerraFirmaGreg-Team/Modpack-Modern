@@ -636,7 +636,7 @@
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:wood_crate)item(gtceu:bronze_crate)item(gtceu:steel_crate)item(gtceu:aluminium_crate)item(gtceu:stainless_steel_crate)item(gtceu:titanium_crate)item(gtceu:tungsten_steel_crate)item(gtceu:bismuth_bronze_crate)item(gtceu:black_bronze_crate))"
+						"ftbfiltersystem:filter": "or(item(gtceu:wood_crate)item(gtceu:bronze_crate)item(gtceu:steel_crate)item(gtceu:aluminium_crate)item(gtceu:stainless_steel_crate)item(gtceu:titanium_crate)item(gtceu:tungsten_steel_crate)item(tfg:bismuth_bronze_crate)item(tfg:black_bronze_crate))"
 					}
 				}
 				title: "{quests.tfg_tips.crates.task}"
@@ -749,24 +749,24 @@
 					id: "7C3E295B35639EC9"
 					item: {
 						Count: 1
-						id: "gtceu:nanomuscle_helmet"
+						id: "gtceu:nano_fiber_helmet"
 						tag: { }
 					}
 					type: "item"
 				}
 				{
 					id: "5A6F7D3FBD64E383"
-					item: "gtceu:nanomuscle_chestplate"
+					item: "gtceu:nano_fiber_chestplate"
 					type: "item"
 				}
 				{
 					id: "71FC38DE4929E578"
-					item: "gtceu:nanomuscle_leggings"
+					item: "gtceu:nano_fiber_leggings"
 					type: "item"
 				}
 				{
 					id: "275CF158B69FF055"
-					item: "gtceu:nanomuscle_boots"
+					item: "gtceu:nano_fiber_boots"
 					type: "item"
 				}
 			]
@@ -788,24 +788,24 @@
 					id: "4DFF8E5F32E7AFC3"
 					item: {
 						Count: 1
-						id: "gtceu:quarktech_helmet"
+						id: "gtceu:quark_matter_helmet"
 						tag: { }
 					}
 					type: "item"
 				}
 				{
 					id: "3AA49E7CEA246A9B"
-					item: "gtceu:quarktech_chestplate"
+					item: "gtceu:quark_matter_chestplate"
 					type: "item"
 				}
 				{
 					id: "573F87C0CFC826DA"
-					item: "gtceu:quarktech_leggings"
+					item: "gtceu:quark_matter_leggings"
 					type: "item"
 				}
 				{
 					id: "0452DFF0948B9B3E"
-					item: "gtceu:quarktech_boots"
+					item: "gtceu:quark_matter_boots"
 					type: "item"
 				}
 			]
@@ -822,7 +822,7 @@
 				id: "154A01EC8F888EDB"
 				item: {
 					Count: 1
-					id: "gtceu:advanced_quarktech_chestplate"
+					id: "gtceu:quark_matter_chestplate"
 					tag: { }
 				}
 				type: "item"
@@ -1128,7 +1128,7 @@
 				id: "05BCE3FC68B3C66E"
 				item: {
 					Count: 1
-					id: "gtceu:advanced_nanomuscle_chestplate"
+					id: "gtceu:nano_fiber_chestplate"
 					tag: { }
 				}
 				type: "item"
@@ -2421,7 +2421,6 @@
 							Parent: {
 								Items: [ ]
 								voidSlots: [I; ]
-								weight: 0b
 							}
 						}
 						id: "sns:leather_sack"
@@ -2437,7 +2436,6 @@
 							Parent: {
 								Items: [ ]
 								voidSlots: [I; ]
-								weight: 0b
 							}
 						}
 						id: "sns:burlap_sack"
@@ -2466,7 +2464,6 @@
 						Parent: {
 							Items: [ ]
 							voidSlots: [I; ]
-							weight: 0b
 						}
 					}
 					id: "sns:frame_pack"
@@ -2497,7 +2494,6 @@
 							Parent: {
 								Items: [ ]
 								voidSlots: [I; ]
-								weight: 0b
 							}
 						}
 						id: "sns:seed_pouch"
@@ -2513,7 +2509,6 @@
 							Parent: {
 								Items: [ ]
 								voidSlots: [I; ]
-								weight: 0b
 							}
 						}
 						id: "sns:ore_sack"
@@ -2564,7 +2559,6 @@
 						Parent: {
 							Items: [ ]
 							voidSlots: [I; ]
-							weight: 0b
 						}
 					}
 					id: "sns:straw_basket"

@@ -129,8 +129,8 @@ function registerGTCEUItemTags(event) {
      */
     const drums = [
         'gtceu:bronze_drum',
-        'gtceu:bismuth_bronze_drum',
-        'gtceu:black_bronze_drum',
+        'tfg:bismuth_bronze_drum',
+        'tfg:black_bronze_drum',
         'gtceu:steel_drum',
         'gtceu:aluminium_drum',
         'gtceu:stainless_steel_drum',
@@ -148,8 +148,8 @@ function registerGTCEUItemTags(event) {
     const crates = [
         'gtceu:wood_crate',
         'gtceu:bronze_crate',
-        'gtceu:bismuth_bronze_crate',
-        'gtceu:black_bronze_crate',
+        'tfg:bismuth_bronze_crate',
+        'tfg:black_bronze_crate',
         'gtceu:steel_crate',
         'gtceu:aluminium_crate',
         'gtceu:stainless_steel_crate',
@@ -192,7 +192,7 @@ function registerGTCEUItemTags(event) {
 
 /** @param {TagEvent.Block} event  */
 function registerGTCEUBlockTags(event) {
-    event.add('gtceu:mineable/pickaxe_or_wrench', 'gtceu:ulv_hermetic_casing');
+    event.add('gtceu:mineable/pickaxe_or_wrench', 'tfg:ulv_hermetic_casing');
 
     event.remove("gtceu:cleanroom_doors", "#minecraft:wooden_doors");
     event.add("gtceu:cleanroom_doors", "firmalife:sealed_door");
@@ -266,8 +266,8 @@ function registerGTCEUBlockTags(event) {
      */
     const drums = [
         'gtceu:bronze_drum',
-        'gtceu:bismuth_bronze_drum',
-        'gtceu:black_bronze_drum',
+        'tfg:bismuth_bronze_drum',
+        'tfg:black_bronze_drum',
         'gtceu:steel_drum',
         'gtceu:aluminium_drum',
         'gtceu:stainless_steel_drum',
@@ -285,8 +285,8 @@ function registerGTCEUBlockTags(event) {
     const crates = [
         'gtceu:wood_crate',
         'gtceu:bronze_crate',
-        'gtceu:bismuth_bronze_crate',
-        'gtceu:black_bronze_crate',
+        'tfg:bismuth_bronze_crate',
+        'tfg:black_bronze_crate',
         'gtceu:steel_crate',
         'gtceu:aluminium_crate',
         'gtceu:stainless_steel_crate',
@@ -321,18 +321,6 @@ function registerGTCEUBlockTags(event) {
 function registerGTCEUFluidTags(event) {
     event.add("c:hidden_from_recipe_viewers", /gtceu.*potion.*/);
 
-    event.add("c:hidden_from_recipe_viewers", "gtceu:molten_black_steel");
-    event.add("c:hidden_from_recipe_viewers", "gtceu:molten_red_steel");
-    event.add("c:hidden_from_recipe_viewers", "gtceu:molten_blue_steel");
-    event.add("c:hidden_from_recipe_viewers", "gtceu:molten_black_bronze");
-    event.add("c:hidden_from_recipe_viewers", "gtceu:molten_bismuth_bronze");
-    event.add("c:hidden_from_recipe_viewers", "gtceu:molten_rose_gold");
-    event.add("c:hidden_from_recipe_viewers", "gtceu:molten_sterling_silver");
-    event.add("c:hidden_from_recipe_viewers", "gtceu:molten_stainless_steel");
-    event.add("c:hidden_from_recipe_viewers", "gtceu:molten_manganese_phosphide");
-    event.add("c:hidden_from_recipe_viewers", "gtceu:molten_vanadium_steel");
-    event.add("c:hidden_from_recipe_viewers", "gtceu:molten_gallium_arsenide");
-    event.add("c:hidden_from_recipe_viewers", "gtceu:molten_hsla_steel");
     event.add("c:hidden_from_recipe_viewers", "gtceu:damascus_steel");
     event.add("c:hidden_from_recipe_viewers", "gtceu:blaze");
     event.add("c:hidden_from_recipe_viewers", "gtceu:thorium");
