@@ -15,7 +15,7 @@ function processSmallOre(event, material) {
 	const smallDust = ChemicalHelper.get(TagPrefix.dustSmall, material, 1);
 
 	let materialName = material.getName();
-	event.recipes.gtceu.tfg_ore_macerator(`tfg:macerate_${materialName}_small_ore`)
+	event.recipes.tfg.tfg_ore_macerator(`tfg:macerate_${materialName}_small_ore`)
 		.itemInputs(smallOre)
 		.itemOutputs(smallDust)
 		.duration(material.getMass())
@@ -136,7 +136,7 @@ function processPoorRawOre(event, material) {
 	}
 
 	// Macerator
-	let maceratorRecipe = event.recipes.gtceu.tfg_ore_macerator(`macerate_poor_raw_${materialName}_ore_to_crushed_ore`)
+	let maceratorRecipe = event.recipes.tfg.tfg_ore_macerator(`macerate_poor_raw_${materialName}_ore_to_crushed_ore`)
 		.itemInputs(poorOreItem)
 		//.category(GTRecipeCategories.ORE_CRUSHING)
 		.duration(40)
@@ -236,7 +236,7 @@ function processNormalRawOre(event, material) {
 	event.remove({ id: `greate:crushing/integration/gtceu/macerator/macerate_raw_${materialName}_ore_to_crushed_ore` })
 */
 	// Macerator
-	event.recipes.gtceu.tfg_ore_macerator(`macerate_raw_${materialName}_ore_to_crushed_ore`)
+	event.recipes.tfg.tfg_ore_macerator(`macerate_raw_${materialName}_ore_to_crushed_ore`)
 		.itemInputs(normalOreItem)
 		.itemOutputs(crushedOreItem)
 		.chancedOutput(crushedOreItem.copyWithCount(1), 5000)
@@ -325,7 +325,7 @@ function processRichRawOre(event, material) {
 	}
 
 	// Macerator
-	event.recipes.gtceu.tfg_ore_macerator(`macerate_rich_raw_${materialName}_ore_to_crushed_ore`)
+	event.recipes.tfg.tfg_ore_macerator(`macerate_rich_raw_${materialName}_ore_to_crushed_ore`)
 		.itemInputs(richOreItem)
 		.itemOutputs(crushedOreItem)
 		.chancedOutput(crushedOreItem.copyWithCount(1), 5000)
