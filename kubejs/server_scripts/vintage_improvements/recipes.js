@@ -478,27 +478,39 @@ function registerVintageImprovementsRecipes(event) {
 		recipe => {
 			let r = JSON.parse(recipe.json)
 
+			const cap = (map, name) => map ? (map[`gtceu:${name}`] || map[name]) : undefined
+			let inItems = cap(r.inputs, 'item')
+			let outItems = cap(r.outputs, 'item')
+			let tickEu = cap(r.tickInputs, 'eu')
+			if (!inItems || inItems.length < 2 || !outItems || outItems.length < 1) return
+
 			// LV recipes only
-			let EUt = (r.tickInputs && r.tickInputs.eu) ? r.tickInputs.eu[0].content : null;
-			
+			let euContent = (tickEu && tickEu.length > 0) ? tickEu[0].content : null
+			let EUt = (euContent !== null && typeof euContent === 'object') ? euContent.voltage : euContent
 			if (EUt > 32) return
+
+			let outIngredient = outItems[0].content.ingredient
+			let inIngredient = inItems[0].content.ingredient
+			let moldIngredient = inItems[1].content.ingredient
+			if (!outIngredient || !inIngredient || !moldIngredient) return
+
 			// Skip this one
-			if (r.outputs.item[0].content.ingredient.item === "gtceu:nan_certificate") return
+			if (outIngredient.item === "gtceu:nan_certificate") return
 			// Skip glass too
-			if (r.inputs.item[0].content.ingredient.item === "gtceu:glass_dust") return
+			if (inIngredient.item === "gtceu:glass_dust") return
 			// And this
-			if (r.inputs.item[0].content.ingredient.tag === "#forge:ingots/damascus_steel") return
+			if (inIngredient.tag === "forge:ingots/damascus_steel") return
 
 			let input_array = [];
-			for (let i = 0; i < r.inputs.item[0].content.count; i++) {
-				input_array.push(r.inputs.item[0].content.ingredient);
+			for (let i = 0; i < (inItems[0].content.count || 1); i++) {
+				input_array.push(inIngredient);
 			}
 
-			let output = r.outputs.item[0].content.ingredient;
-			output.count = r.outputs.item[0].content.count;
+			let output = outIngredient;
+			output.count = outItems[0].content.count || 1;
 
 			event.recipes.vintageimprovements.curving(output, input_array)
-				.head(r.inputs.item[1].content.ingredient.item)
+				.head(moldIngredient.item)
 				.id(`tfg:vi/curving/${recipe.getId().split(':')[1]}`)
 		}
 	)

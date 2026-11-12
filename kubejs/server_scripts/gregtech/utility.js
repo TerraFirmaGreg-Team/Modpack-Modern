@@ -108,7 +108,7 @@ function addCircuitToRecipe(event, recipeId, circuitNumber) {
 		}
 
 		// Cache existing item inputs.
-		const itemEl = inputsObj.get("item");
+		const itemEl = inputsObj.has("gtceu:item") ? inputsObj.get("gtceu:item") : inputsObj.get("item");
 		let itemArray;
 		if (itemEl === null || itemEl === undefined || itemEl.isJsonNull()) {
 			itemArray = new JsonArray();
