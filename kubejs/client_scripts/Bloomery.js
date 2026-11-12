@@ -1,5 +1,5 @@
 Ponder.registry((event) => {
-    event.create("tfc:bloomery").scene("bloomery","Using the Bloomery","kubejs:bloomeryponder",(scene, util) => {
+    event.create("tfc:bloomery").scene("bloomery","Using the Bloomery","tfg:bloomeryponder",(scene, util) => {
         scene.showBasePlate();
         scene.scaleSceneView(1);
         scene.world.showSection([4,1,3,2,3,5], Facing.DOWN)
