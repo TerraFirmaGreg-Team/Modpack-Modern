@@ -242,7 +242,7 @@ function processNormalRawOre(event, material) {
 		.chancedOutput(crushedOreItem.copyWithCount(1), 5000)
 		.chancedOutput(crushedOreItem.copyWithCount(1), 2500)
 		.chancedOutput(crushedOreItem.copyWithCount(1), 1250)
-		.category(GTRecipeCategories.ORE_CRUSHING)
+		//.category(GTRecipeCategories.ORE_CRUSHING)
 		.duration(40)
 		.EUt(2)
 
@@ -331,7 +331,7 @@ function processRichRawOre(event, material) {
 		.chancedOutput(crushedOreItem.copyWithCount(1), 5000)
 		.chancedOutput(crushedOreItem.copyWithCount(1), 2500)
 		.chancedOutput(crushedOreItem.copyWithCount(1), 1250)
-		.category(GTRecipeCategories.ORE_CRUSHING)
+		//.category(GTRecipeCategories.ORE_CRUSHING)
 		.duration(40)
 		.EUt(2)
 
@@ -407,7 +407,7 @@ function processCrushedOre(event, material) {
 			.itemInputs(crushedOreItem)
 			.itemOutputs(impureDustItem)
 			.chancedOutput(byproductItem, 1400)
-			.category(GTRecipeCategories.ORE_CRUSHING)
+			//.category(GTRecipeCategories.ORE_CRUSHING)
 			.duration(20)
 			.EUt(2)
 			*/
