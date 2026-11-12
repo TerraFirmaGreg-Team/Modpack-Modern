@@ -770,10 +770,9 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		isStone: false,
 		collapsible: false,
 		stonecutterTag: 'tfg:stone_types/certus',
-		raw: { block: 'gtceu:certus_quartz_block' },
-		polished: generateFormsExisting('quartz', 'ae2:%s', { block: 'ae2:quartz_block' }),
+		raw: generateFormsExisting('quartz', 'ae2:%s', { block: 'ae2:quartz_block' }),
+		polished: generateFormsExisting('quartz', 'ae2:cut_%s', { block: 'ae2:cut_quartz_block' }),
 		stonecutting: [
-			generateFormsExisting('quartz', 'ae2:cut_%s', { block: 'ae2:cut_quartz_block' }),
 			generateFormsExisting('quartz', 'ae2:smooth_%s', { block: 'ae2:smooth_quartz_block' }),
 			generateFormsExisting('quartz', 'ae2:%s_brick', { block: 'ae2:quartz_bricks' }),
 			generateForms('quartz', 'ae2:%s_pillar'),
