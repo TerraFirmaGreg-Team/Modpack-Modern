@@ -1,6 +1,6 @@
 Ponder.registry((event) => {
     
-    event.create("gtceu:bronze_wrench").scene("steam_engine","The Steam engine","kubejs:steamengineponder",(scene, util) => {
+    event.create("gtceu:bronze_wrench").scene("steam_engine","The Steam engine","tfg:steamengineponder",(scene, util) => {
                 
         scene.showBasePlate();
         scene.world.showSection([0, 1, 0, 5, 2 ,1], Facing.DOWN);
