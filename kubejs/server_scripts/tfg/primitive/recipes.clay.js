@@ -129,26 +129,20 @@ function registerTFGClayRecipes(event) {
 	event.recipes.gtceu.alloy_smelter('tfg:kaolinite')
 		.itemInputs('tfc:kaolin_clay')
 		.notConsumable('gtceu:ball_casting_mold')
-		.chancedOutput('tfc:powder/kaolinite', 2000, 0)
+		.chancedOutput('tfc:powder/kaolinite', 2000)
 		.duration(100)
 		.EUt(16)
 
 	event.recipes.gtceu.alloy_smelter('tfg:kaolinite_from_blocks')
 		.itemInputs('#tfc:kaolin_blocks')
 		.notConsumable('gtceu:ball_casting_mold')
-		.chancedOutput('tfc:powder/kaolinite', 8000, 0)
+		.chancedOutput('tfc:powder/kaolinite', 8000)
 		.duration(400)
 		.EUt(16)
 
 	// Fire Clay
 	event.recipes.gtceu.alloy_smelter('tfg:cheaper_fire_clay')
 		.itemInputs('#forge:dusts/graphite', '4x tfc:kaolin_clay')
-		.itemOutputs('2x tfc:fire_clay')
-		.duration(600)
-		.EUt(GTValues.VA[GTValues.ULV])
-
-	event.recipes.gtceu.alloy_smelter('tfg:cheaper_fire_clay2')
-		.itemInputs('4x tfc:powder/graphite', '4x tfc:kaolin_clay')
 		.itemOutputs('2x tfc:fire_clay')
 		.duration(600)
 		.EUt(GTValues.VA[GTValues.ULV])

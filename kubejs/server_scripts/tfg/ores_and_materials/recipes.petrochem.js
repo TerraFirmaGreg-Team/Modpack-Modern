@@ -38,7 +38,7 @@ function registerTFGPetroChemRecipes(event) {
             Fluid.of('gtceu:ethylene', 650),
             Fluid.of('gtceu:methane', 925),
             Fluid.of('gtceu:hydrogen', 650))
-        .chancedOutput(Item.of('gtceu:carbon_dust', 1), 2500, 0)
+        .chancedOutput(Item.of('gtceu:carbon_dust', 1), 2500)
         .duration(20 * 6)
         .EUt(GTValues.VA[GTValues.MV])
 
@@ -51,7 +51,7 @@ function registerTFGPetroChemRecipes(event) {
             Fluid.of('gtceu:ethylene', 800),
             Fluid.of('gtceu:methane', 900),
             Fluid.of('gtceu:hydrogen', 800))
-        .chancedOutput(Item.of('gtceu:carbon_dust', 1), 2500, 0)
+        .chancedOutput(Item.of('gtceu:carbon_dust', 1), 2500)
         .duration(20 * 6)
         .EUt(GTValues.VA[GTValues.MV])
 
@@ -88,7 +88,7 @@ function registerTFGPetroChemRecipes(event) {
 		event.recipes.gtceu.chemical_reactor(`tfg:regenerate_${c.id}`)
 			.itemInputs(Item.of(`tfg:coked_${c.id}_dust`, 1))
 			.inputFluids(Fluid.of('gtceu:oxygen', c.coke * 2000))
-			.chancedOutput(Item.of(`tfg:${c.id}_dust`, 1), c.keep, 0)
+			.chancedOutput(Item.of(`tfg:${c.id}_dust`, 1), c.keep)
 			.outputFluids(Fluid.of('gtceu:carbon_dioxide', c.coke * 1000))
 			.duration(20 * 10 * c.coke)
 			.EUt(GTValues.VA[GTValues.MV])
@@ -128,7 +128,7 @@ function registerTFGPetroChemRecipes(event) {
         .EUt(GTValues.VA[GTValues.MV])
 
     event.recipes.gtceu.large_chemical_reactor('tfg:butadiene_from_butene')
-        .chancedInput(Item.of('tfg:bismuth_molybdate_catalyst_dust'), 2500, 0)
+        .chancedInput(Item.of('tfg:bismuth_molybdate_catalyst_dust'), 2500)
         .inputFluids(
             Fluid.of('gtceu:butene', 1000),
             Fluid.of('gtceu:oxygen', 1550))
@@ -179,7 +179,7 @@ function registerTFGPetroChemRecipes(event) {
     event.recipes.gtceu.chemical_reactor('tfg:regenerate_gallium_zsm5_catalyst')
         .itemInputs(Item.of('tfg:coked_gallium_zsm5_catalyst_dust', 1))
         .inputFluids(Fluid.of('gtceu:oxygen', 2000))
-        .chancedOutput(Item.of('tfg:gallium_zsm5_catalyst_dust', 1), 9000, 0)
+        .chancedOutput(Item.of('tfg:gallium_zsm5_catalyst_dust', 1), 9000)
         .outputFluids(Fluid.of('gtceu:carbon_dioxide', 1000))
         .duration(20 * 10)
         .EUt(GTValues.VA[GTValues.MV])

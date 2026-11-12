@@ -88,7 +88,7 @@ const registerTFCRecipes = (event) => {
 		.id('tfg:barrel/water_to_salt_water')
 
 	event.recipes.tfc.barrel_instant()
-		.inputItem("tfc:powder/salt")
+		.inputItem("gtceu:small_salt_dust")
 		.inputFluid(Fluid.of('minecraft:water', 250))
 		.outputFluid(Fluid.of('tfc:salt_water', 250))
 		.id('tfg:barrel/water_to_salt_water_tfc')
@@ -102,13 +102,13 @@ const registerTFCRecipes = (event) => {
 		.resultItem('tfc:food/dried_kelp')
 
 	// Soda Ash
-	event.smelting('3x tfc:powder/soda_ash', 'tfc:food/dried_seaweed').id('tfg:smelting/dried_seaweed_to_soda')
-	event.smelting('3x tfc:powder/soda_ash', 'tfc:food/dried_kelp').id('tfg:smelting/dried_kelp_to_soda')
-	event.smelting('3x tfc:powder/soda_ash', 'tfc:food/fresh_seaweed').id('tfg:smelting/fresh_seaweed_to_soda')
-	event.smelting('3x tfc:powder/soda_ash', 'tfc:groundcover/seaweed').id('tfg:smelting/seaweed_to_soda')
-	event.smelting('3x tfc:powder/soda_ash', 'tfc:plant/winged_kelp').id('tfg:smelting/winged_kelp_to_soda')
-	event.smelting('3x tfc:powder/soda_ash', 'tfc:plant/leafy_kelp').id('tfg:smelting/leafy_kelp_to_soda')
-	event.smelting('3x tfc:powder/soda_ash', 'tfc:plant/giant_kelp_flower').id('tfg:smelting/giant_kelp_to_soda')
+	event.smelting('3x gtceu:small_soda_ash_dust', 'tfc:food/dried_seaweed').id('tfg:smelting/dried_seaweed_to_soda')
+	event.smelting('3x gtceu:small_soda_ash_dust', 'tfc:food/dried_kelp').id('tfg:smelting/dried_kelp_to_soda')
+	event.smelting('3x gtceu:small_soda_ash_dust', 'tfc:food/fresh_seaweed').id('tfg:smelting/fresh_seaweed_to_soda')
+	event.smelting('3x gtceu:small_soda_ash_dust', 'tfc:groundcover/seaweed').id('tfg:smelting/seaweed_to_soda')
+	event.smelting('3x gtceu:small_soda_ash_dust', 'tfc:plant/winged_kelp').id('tfg:smelting/winged_kelp_to_soda')
+	event.smelting('3x gtceu:small_soda_ash_dust', 'tfc:plant/leafy_kelp').id('tfg:smelting/leafy_kelp_to_soda')
+	event.smelting('3x gtceu:small_soda_ash_dust', 'tfc:plant/giant_kelp_flower').id('tfg:smelting/giant_kelp_to_soda')
 
 	//More accesible solar drier
 	event.replaceInput({ id: 'firmalife:crafting/solar_drier' }, 'gtceu:stainless_steel_rod', 'gtceu:silver_rod')

@@ -10,7 +10,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)被動$()$(li2)$(l:beneath/beneath_fauna#axolotl)六角恐龍$()$(li2)$(l:beneath/beneath_fauna#frog)青蛙$()$(li2)$(l:beneath/beneath_fauna#mammutilation)孤行獸$()$(li2)$(l:beneath/beneath_fauna#red_elk)紅麋鹿$()$(li2)$(l:beneath/beneath_fauna#zombie_horse)殭屍馬$()$(li)$(bold)$(l:agriculture/jellies)果凍怪$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)冰$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)植物$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)發光莓$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)溫泉$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)熔岩$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)黑雲母$()$(li2)$(l:beneath/beneath_fauna#latex_jellie)乳膠$()$(br)$(o)(下頁續……)$()"
+			"text": "$(li)$(bold)被動$()$(li2)$(l:beneath/beneath_fauna#axolotl)六角恐龍$()$(li2)$(l:beneath/beneath_fauna#frog)青蛙$()$(li2)$(l:beneath/beneath_fauna#mammutilation)孤行獸$()$(li2)$(l:beneath/beneath_fauna#red_elk)紅麋鹿$()$(li2)$(l:beneath/beneath_fauna#zombie_horse)殭屍馬$()$(li)$(bold)$(l:agriculture/jellies)果凍怪$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)冰$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)植物$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)發光莓$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)溫泉$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)熔岩$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)黑雲母$()$(li2)$(l:beneath/beneath_fauna#milk_jellie)牛奶$()$(br)$(o)(下頁續……)$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -108,9 +108,9 @@
 			"type": "patchouli:entity",
 			"entity": "jellies:milk",
 			"scale": 0.6,
-			"name": "乳膠果凍怪",
+			"name": "牛奶果凍怪",
 			"anchor": "milk_jellie",
-			"text": "$(thing)乳膠$()$(l:agriculture/jellies)果凍怪$()只能由$(thing)植物果凍怪$()和$(thing)熔岩果凍怪$()繁殖而來。牠們的黏液球是$(item)乳膠$()的來源。"
+			"text": "$(thing)牛奶$()$(l:agriculture/jellies)果凍怪$()只能由$(thing)植物果凍怪$()和$(thing)熔岩果凍怪$()繁殖而來。牠們的黏液球是$(item)乳製品$()的來源。"
 		},
 		{
 			"type": "patchouli:entity",

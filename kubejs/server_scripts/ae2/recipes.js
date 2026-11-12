@@ -115,7 +115,7 @@ const registerAE2Recipes = (event) => {
 	// Crafting Card
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('tfg:crafting_card')
+	event.recipes.tfg.me_assembler('tfg:crafting_card')
 		.itemInputs('1x ae2:basic_card', '4x ae2:cell_component_16k', '4x #tfc:workbenches')
 		.itemOutputs('ae2:crafting_card')
 		.duration(20*800)
@@ -596,7 +596,7 @@ const registerAE2Recipes = (event) => {
 
 	// Energy Cell
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('tfg:ae2/energy_cell')
+	event.recipes.tfg.me_assembler('tfg:ae2/energy_cell')
 		.itemInputs('gtceu:titanium_frame', '6x gtceu:titanium_plate', '6x gtceu:titanium_screw', 'gtceu:energy_crystal')
 		.itemOutputs('ae2:energy_cell')
 		.duration(20*10)
@@ -607,7 +607,7 @@ const registerAE2Recipes = (event) => {
 
 	// Dense Energy Cell
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('tfg:ae2/dense_energy_cell')
+	event.recipes.tfg.me_assembler('tfg:ae2/dense_energy_cell')
 		.itemInputs('8x ae2:energy_cell', '8x gtceu:silver_quadruple_wire', '4x #gtceu:circuits/ev')
 		.itemOutputs('ae2:dense_energy_cell')
 		.duration(20*250)
@@ -782,7 +782,7 @@ const registerAE2Recipes = (event) => {
 		.EUt(GTValues.VA[GTValues.HV])
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:blank_pattern_pvc')
+	event.recipes.tfg.me_assembler('ae2:blank_pattern_pvc')
 		.itemInputs(
 			'3x #forge:plates/steel',
 			'2x #forge:sheets/polyvinyl_chloride',
@@ -795,7 +795,7 @@ const registerAE2Recipes = (event) => {
 		.circuit(1))
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:blank_pattern_ptfe')
+	event.recipes.tfg.me_assembler('ae2:blank_pattern_ptfe')
 		.itemInputs(
 			'3x #forge:plates/steel',
 			'2x #forge:sheets/polytetrafluoroethylene',
@@ -808,7 +808,7 @@ const registerAE2Recipes = (event) => {
 		.circuit(2))
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:blank_pattern_pbi')
+	event.recipes.tfg.me_assembler('ae2:blank_pattern_pbi')
 		.itemInputs(
 			'3x #forge:plates/steel',
 			'2x #forge:sheets/polybenzimidazole',
@@ -834,7 +834,7 @@ const registerAE2Recipes = (event) => {
 	// Annihilation Core
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:annihilation_core_moon')
+	event.recipes.tfg.me_assembler('ae2:annihilation_core_moon')
 		.itemInputs(
 			'1x #forge:rods/certus_quartz',
 			'1x ae2:engineering_processor',
@@ -848,7 +848,7 @@ const registerAE2Recipes = (event) => {
 		.circuit(1))
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:annihilation_core_moon_bulk')
+	event.recipes.tfg.me_assembler('ae2:annihilation_core_moon_bulk')
 		.itemInputs(
 			'1x #forge:rods/certus_quartz',
 			'1x ae2:engineering_processor',
@@ -863,7 +863,7 @@ const registerAE2Recipes = (event) => {
 	// Formation Core
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:formation_core_moon')
+	event.recipes.tfg.me_assembler('ae2:formation_core_moon')
 		.itemInputs(
 			'1x #forge:rods/nether_quartz',
 			'1x ae2:engineering_processor',
@@ -877,7 +877,7 @@ const registerAE2Recipes = (event) => {
 		.circuit(3))
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:formation_core_moon_bulk')
+	event.recipes.tfg.me_assembler('ae2:formation_core_moon_bulk')
 		.itemInputs(
 			'1x #forge:rods/nether_quartz',
 			'1x ae2:engineering_processor',
@@ -919,7 +919,7 @@ const registerAE2Recipes = (event) => {
 		.circuit(1)
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:cell_component_1k')
+	event.recipes.tfg.me_assembler('ae2:cell_component_1k')
 		.itemInputs(
 			'2x #gtceu:circuits/lv',
 			'4x gtceu:cpu_chip',
@@ -949,7 +949,7 @@ const registerAE2Recipes = (event) => {
 		.circuit(2)
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:cell_component_4k')
+	event.recipes.tfg.me_assembler('ae2:cell_component_4k')
 		.itemInputs(
 			'2x #gtceu:circuits/hv',
 			'8x gtceu:cpu_chip',
@@ -980,7 +980,7 @@ const registerAE2Recipes = (event) => {
 		.circuit(3)
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:cell_component_16k')
+	event.recipes.tfg.me_assembler('ae2:cell_component_16k')
 		.itemInputs(
 			'2x #gtceu:circuits/ev',
 			'16x gtceu:ram_chip',
@@ -997,7 +997,7 @@ const registerAE2Recipes = (event) => {
 	// 64k storage components
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:cell_component_64k')
+	event.recipes.tfg.me_assembler('ae2:cell_component_64k')
 		.itemInputs(
 			'2x #gtceu:circuits/iv',
 			'8x gtceu:nano_cpu_chip',
@@ -1014,7 +1014,7 @@ const registerAE2Recipes = (event) => {
 	// 256k storage components
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:cell_component_256k')
+	event.recipes.tfg.me_assembler('ae2:cell_component_256k')
 		.itemInputs(
 			'2x #gtceu:circuits/luv',
 			'16x gtceu:qbit_cpu_chip',
@@ -1035,7 +1035,7 @@ const registerAE2Recipes = (event) => {
 	//#region Spatial Components
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:spatial_cell_component_2')
+	event.recipes.tfg.me_assembler('ae2:spatial_cell_component_2')
 		.itemInputs(
 			'8x #gtceu:circuits/ev',
 			'18x gtceu:simple_soc',
@@ -1052,7 +1052,7 @@ const registerAE2Recipes = (event) => {
 	// 16³ Spatial Component
 	
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:spatial_cell_component_16')
+	event.recipes.tfg.me_assembler('ae2:spatial_cell_component_16')
 		.itemInputs(
 			'8x #gtceu:circuits/luv',
 			'18x gtceu:soc',
@@ -1069,7 +1069,7 @@ const registerAE2Recipes = (event) => {
 	// 128³ Spatial Component
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:spatial_cell_component_128')
+	event.recipes.tfg.me_assembler('ae2:spatial_cell_component_128')
 		.itemInputs(
 			'8x #gtceu:circuits/zpm',
 			'18x gtceu:advanced_soc',
@@ -1135,7 +1135,7 @@ const registerAE2Recipes = (event) => {
 		.cleanroom(CleanroomType.CLEANROOM)
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:storage_bus')
+	event.recipes.tfg.me_assembler('ae2:storage_bus')
 		.itemInputs(
 			'#ae2:interface',
 			'1x gtceu:mv_electric_piston',
@@ -1148,7 +1148,7 @@ const registerAE2Recipes = (event) => {
 		.circuit(1))
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:storage_bus_moon_bulk')
+	event.recipes.tfg.me_assembler('ae2:storage_bus_moon_bulk')
 		.itemInputs(
 			'#ae2:interface',
 			'1x gtceu:iv_electric_piston',
@@ -1162,7 +1162,7 @@ const registerAE2Recipes = (event) => {
 
 	// Import Bus
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:import_bus')
+	event.recipes.tfg.me_assembler('ae2:import_bus')
 		.itemInputs(
 			'#forge:plates/stainless_steel',
 			'ae2:annihilation_core',
@@ -1178,7 +1178,7 @@ const registerAE2Recipes = (event) => {
 
 	// Export Bus
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:export_bus')
+	event.recipes.tfg.me_assembler('ae2:export_bus')
 		.itemInputs(
 			'#forge:plates/stainless_steel',
 			'ae2:formation_core',
@@ -1194,7 +1194,7 @@ const registerAE2Recipes = (event) => {
 
 	// CPU Crafting Unit
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:crafting_unit')
+	event.recipes.tfg.me_assembler('ae2:crafting_unit')
 		.itemInputs(
 			'ae2:logic_processor',
 			'ae2:engineering_processor',
@@ -1210,7 +1210,7 @@ const registerAE2Recipes = (event) => {
 
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:crafting_unit_bulk')
+	event.recipes.tfg.me_assembler('ae2:crafting_unit_bulk')
 		.itemInputs(
 			'ae2:logic_processor',
 			'ae2:engineering_processor',
@@ -1243,7 +1243,7 @@ const registerAE2Recipes = (event) => {
 
 	// HV Moon
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:molecular_assembler_hv')
+	event.recipes.tfg.me_assembler('ae2:molecular_assembler_hv')
 		.itemInputs(
 			'1x #gtceu:circuits/hv',
 			'ae2:quartz_glass',
@@ -1260,7 +1260,7 @@ const registerAE2Recipes = (event) => {
 
 	// IV Moon
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:molecular_assembler_iv')
+	event.recipes.tfg.me_assembler('ae2:molecular_assembler_iv')
 		.itemInputs(
 			'1x #gtceu:circuits/ev',
 			'ae2:quartz_glass',
@@ -1279,7 +1279,7 @@ const registerAE2Recipes = (event) => {
 
 	// ME Controller
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('tfg:controller')
+	event.recipes.tfg.me_assembler('tfg:controller')
 		.itemInputs(
 			'8x ae2:engineering_processor',
 			'2x #gtceu:circuits/hv',
@@ -1293,7 +1293,7 @@ const registerAE2Recipes = (event) => {
 		.addMaterialInfo(true, true)
 		.circuit(7))
 
-	event.recipes.gtceu.me_assembler('tfg:controller_shulker')
+	event.recipes.tfg.me_assembler('tfg:controller_shulker')
 		.itemInputs(
 			'8x ae2:engineering_processor',
 			'2x #gtceu:circuits/hv',
@@ -1325,7 +1325,7 @@ const registerAE2Recipes = (event) => {
 
 	// MV Moon
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:interface_mv_moon')
+	event.recipes.tfg.me_assembler('ae2:interface_mv_moon')
 		.itemInputs(
 			'gtceu:mv_conveyor_module',
 			'4x #forge:rods/long/aluminium',
@@ -1341,7 +1341,7 @@ const registerAE2Recipes = (event) => {
 
 	// IV Moon
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:interface_iv_moon')
+	event.recipes.tfg.me_assembler('ae2:interface_iv_moon')
 		.itemInputs(
 			'gtceu:iv_conveyor_module',
 			'4x #forge:rods/long/tungsten_steel',
@@ -1375,7 +1375,7 @@ const registerAE2Recipes = (event) => {
 
 	// MV Moon
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:pattern_provider_mv_moon')
+	event.recipes.tfg.me_assembler('ae2:pattern_provider_mv_moon')
 		.itemInputs(
 			'gtceu:mv_robot_arm',
 			'4x #forge:rods/long/aluminium',
@@ -1391,7 +1391,7 @@ const registerAE2Recipes = (event) => {
 
 	// IV Moon
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:pattern_provider_iv_moon')
+	event.recipes.tfg.me_assembler('ae2:pattern_provider_iv_moon')
 		.itemInputs(
 			'gtceu:iv_robot_arm',
 			'4x #forge:rods/long/tungsten_steel',
@@ -1550,7 +1550,7 @@ const registerAE2Recipes = (event) => {
 	// Logic Processor
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:logic_processor')
+	event.recipes.tfg.me_assembler('ae2:logic_processor')
 		.itemInputs(
 			'ae2:printed_silicon',
 			'ae2:printed_logic_processor',
@@ -1565,7 +1565,7 @@ const registerAE2Recipes = (event) => {
 		.circuit(1))
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:logic_processor_bulk')
+	event.recipes.tfg.me_assembler('ae2:logic_processor_bulk')
 		.itemInputs(
 			'2x ae2:printed_silicon',
 			'2x ae2:printed_logic_processor',
@@ -1582,7 +1582,7 @@ const registerAE2Recipes = (event) => {
 	// Calculation Processor
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:calculation_processor')
+	event.recipes.tfg.me_assembler('ae2:calculation_processor')
 		.itemInputs(
 			'ae2:printed_silicon',
 			'ae2:printed_calculation_processor',
@@ -1597,7 +1597,7 @@ const registerAE2Recipes = (event) => {
 		.circuit(3))
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:calculation_processor_bulk')
+	event.recipes.tfg.me_assembler('ae2:calculation_processor_bulk')
 		.itemInputs(
 			'2x ae2:printed_silicon',
 			'2x ae2:printed_calculation_processor',
@@ -1614,7 +1614,7 @@ const registerAE2Recipes = (event) => {
 	// Engineering Processor
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:engineering_processor')
+	event.recipes.tfg.me_assembler('ae2:engineering_processor')
 		.itemInputs(
 			'ae2:printed_silicon',
 			'ae2:printed_engineering_processor',
@@ -1629,7 +1629,7 @@ const registerAE2Recipes = (event) => {
 		.circuit(5))
 		
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:engineering_processor_bulk')
+	event.recipes.tfg.me_assembler('ae2:engineering_processor_bulk')
 		.itemInputs(
 			'2x ae2:printed_silicon',
 			'2x ae2:printed_engineering_processor',
@@ -2203,7 +2203,7 @@ const registerAE2Recipes = (event) => {
 	// Cable Anchor
 	event.recipes.gtceu.extruder('ae2:cable_anchor')
 		.itemInputs('#forge:plates/steel')
-		.notConsumable('gtceu:bolt_extruder_mold')
+		.notConsumable('gtceu:tiny_pipe_extruder_mold')
 		.itemOutputs('8x ae2:cable_anchor')
 		.duration(15)
 		.EUt(120)

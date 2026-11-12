@@ -20,6 +20,7 @@ global.NETHER_HEIGHT = 208;
 global.MOON_PLANET_SIZE = 5000;
 global.MARS_PLANET_SIZE = 10000;
 global.VENUS_PLANET_SIZE = 19000;
+global.MERCURY_PLANET_SIZE = 8000; // is what it would be if it was still intact
 global.EUROPA_PLANET_SIZE = 4500;
 
 global.MARS_MIN_AVG_TEMP = -110;
@@ -176,9 +177,7 @@ TFCEvents.registerClimateModel(event => {
 	})
 
 	event.register('tfg:orbit_climate', builder => {
-		builder.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
-			return -270;
-		})
+		builder.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => -270)
 		builder.setAverageTemperatureCalculation((level, pos) => -270)
 		builder.setAverageRainfallCalculation((level, pos) => 0)
 		builder.setAirFog((level, pos, calendarTicks) => 0)
@@ -250,5 +249,38 @@ TFCEvents.registerClimateModel(event => {
 
 		builder.setAirFog((level, pos, calendarTicks) => 0)
 		builder.setWaterFog((level, pos, calendarTicks) => 1)
+	})
+
+	event.register('tfg:mercury_climate', builder => {
+		// Wikipedia says -173c to 427c at 0 long 0 lat
+		builder.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
+			// There's no "underground" or "surface" so skip the parts of calcCurrentTemp that do that
+			let dayPercent = ((calendarTicks - SIX_TIMES_TICKS_IN_HOUR) % TICKS_IN_DAY) / TICKS_IN_DAY
+			return 127 - (Math.sin(dayPercent * TWO_PI) * 300);
+		})
+
+		builder.setAverageTemperatureCalculation((level, pos) => 167)
+		builder.setAverageRainfallCalculation((level, pos) => 0)
+		builder.setAirFog((level, pos, calendarTicks) => 0)
+		builder.setWaterFog((level, pos, calendarTicks) => 1)
+		builder.setWindVector((level, block, calendarTicks) => builder.vector(0, 0))
+	})
+	
+	// TODO: europa climate stuff
+	event.register('tfg:europa_climate', builder => {
+		// Wikipedia says -223 to -148
+		builder.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
+			//return calcCurrentTemp(-185, 400, pos.y, calendarTicks, 37.5, -50, 0.5)
+
+			// TODO: Figure out how to make surface water freeze but below-surface water stay liquid
+			// (change the number in ad_astra/planets/glacio.json too)
+			return 10;
+		})
+
+		builder.setAverageTemperatureCalculation((level, pos) => 10 /*-171*/)
+		builder.setAverageRainfallCalculation((level, pos) => 0)
+		builder.setAirFog((level, pos, calendarTicks) => 0)
+		builder.setWaterFog((level, pos, calendarTicks) => 1)
+		builder.setWindVector((level, block, calendarTicks) => builder.vector(0, 0))
 	})
 })

@@ -89,7 +89,7 @@ function registerTFGMedicineItemTags(event) {
 	const antipoison_ingredients = [
 		'tfc:plant/blood_lily',
 		'tfc:plant/pistia',
-		'tfc:powder/bismuthinite',
+		'gtceu:small_bismuth_dust',
 		'gtceu:mica_dust',
 		'gtceu:fullers_earth_dust'
 	];
@@ -197,8 +197,8 @@ function registerTFGMedicineItemTags(event) {
 	 * @type {{Item}}
 	 */
 	const water_breathing_ingredients = [
-		'tfc:powder/saltpeter',
-		'tfc:powder/charcoal',
+		'gtceu:small_saltpeter_dust',
+		'gtceu:small_charcoal_dust',
 		'tfg:rapeseed_product'
 	];
 	water_breathing_ingredients.forEach(items => { event.add('tfg:water_breathing_ingredients', items) });
@@ -299,7 +299,7 @@ function registerTFGMedicineItemTags(event) {
 	const strength_ingredients = [
 		'tfg:plant/prickly_pear',
 		'tfg:plant/prickly_pear_purple',
-		'tfc:powder/sulfur'
+		'gtceu:small_sulfur_dust'
 	];
 	strength_ingredients.forEach(items => { event.add('tfg:strength_ingredients', items) });
 

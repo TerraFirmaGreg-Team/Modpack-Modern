@@ -80,27 +80,27 @@ function registerTFGWaxRecipes(event) {
 
 	event.recipes.gtceu.centrifuge('conifer_log_separation')
 		.itemInputs('#tfg:rosin_logs')
-		.chancedOutput('tfg:conifer_rosin', 7500, 0)
-		.chancedOutput('gtceu:plant_ball', 3750, 0)
-		.chancedOutput('gtceu:sticky_resin', 2500, 0)
-		.chancedOutput('gtceu:wood_dust', 2500, 0)
+		.chancedOutput('tfg:conifer_rosin', 7500)
+		.chancedOutput('gtceu:plant_ball', 3750)
+		.chancedOutput('gtceu:sticky_resin', 2500)
+		.chancedOutput('gtceu:wood_dust', 2500)
 		.outputFluids(Fluid.of('gtceu:methane', 60))
 		.duration(20 * 20)
 		.EUt(GTValues.VA[GTValues.MV])
 
 	// Rosin
 	event.recipes.firmalife.vat()
-		.inputs('tfc:powder/charcoal', Fluid.of('tfg:conifer_pitch', 1000))
+		.inputs('gtceu:small_charcoal_dust', Fluid.of('tfg:conifer_pitch', 1000))
 		.outputItem('tfg:conifer_rosin')
 		.id('tfg:vat/conifer_pitch_to_rosin');
 
-	event.recipes.tfc.pot('tfc:powder/charcoal', Fluid.of('tfg:conifer_pitch', 1000), 1200, 300)
+	event.recipes.tfc.pot('gtceu:small_charcoal_dust', Fluid.of('tfg:conifer_pitch', 1000), 1200, 300)
 		.itemOutput('tfg:conifer_rosin')
 		.id('tfg:pot/conifer_pitch_to_rosin')
 
 	event.recipes.gtceu.fluid_solidifier('tfg:pitch_to_rosin')
 		.inputFluids(Fluid.of('tfg:conifer_pitch', 1000))
-		.itemInputs('tfc:powder/charcoal')
+		.itemInputs('gtceu:small_charcoal_dust')
 		.itemOutputs('tfg:conifer_rosin')
 		.duration(20 * 12)
 		.EUt(GTValues.VA[GTValues.LV])

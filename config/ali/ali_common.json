@@ -7,8 +7,6 @@
             "icon": "gtceu:copper_pickaxe",
             "hide": false,
             "blocks": [
-                "#forge:ores",
-                "#forge:raw_ore_blocks",
                 "#tfc:clay_grass",
                 "#tfc:clay",
                 "#tfc:kaolin_clay",
@@ -16,7 +14,6 @@
                 "#tfc:wild_crops",
                 "#tfg:dead_crops",
                 "#minecraft:leaves",
-                "#forge:surface_rocks",
                 "#tfc:rock/raw",
                 "#forge:cobblestone",
                 "#tfc:rock/gravel",
@@ -26,6 +23,7 @@
                 "ad_astra:cheese_block",
                 "ad_astra:moon_cheese_ore",
                 "tfg:huge_quartz",
+                "tfg:huge_salt",
                 "tfg:halite",
                 "minecraft:basalt",
                 "minecraft:fern",
@@ -66,7 +64,8 @@
                 "ae2:flawless_budding_quartz",
                 "ae2:flawed_budding_quartz",
                 "ae2:chipped_budding_quartz",
-                "ae2:damaged_budding_quartz"
+                "ae2:damaged_budding_quartz",
+                "opposing_force:deep_web"
             ]
         }
     ],

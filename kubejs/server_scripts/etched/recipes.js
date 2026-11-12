@@ -60,8 +60,11 @@ const registerEtchedRecipes = (event) => {
 
 	// Etched Blank Disc
 	event.remove('etched:blank_music_disc')
-	event.shapeless('etched:blank_music_disc', ['minecraft:glass_pane', 'tfc:soot'])
+	event.shapeless('etched:blank_music_disc', ['#forge:glass_panes', 'tfc:soot'])
 		.id('tfg:shapeless/blank_music_disc')
+
+	event.shapeless('etched:blank_music_disc', ['#forge:glass_panes', '#forge:dusts/carbon'])
+		.id('tfg:shapeless/blank_music_disc_carbon')
 
 	//vanilla music discs
 	event.replaceInput({ input: 'tfc:blank_disc' }, 'tfc:blank_disc', 'etched:blank_music_disc')

@@ -697,7 +697,16 @@
 			subtitle: "{quests.metal_age.copper_anvil.subtitle}"
 			tasks: [{
 				id: "3F1120F05AD5FB2B"
-				item: "tfc:metal/anvil/copper"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/anvil/copper"
+				}
 				type: "item"
 				weak_nbt_match: true
 			}]
@@ -719,7 +728,16 @@
 			subtitle: "{quests.stone_age.weld_copper_ingots.subtitle}"
 			tasks: [{
 				id: "5A6EF9EBF232601C"
-				item: "gtceu:copper_double_ingot"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "gtceu:copper_double_ingot"
+				}
 				match_nbt: false
 				type: "item"
 				weak_nbt_match: true
@@ -760,7 +778,16 @@
 				}
 				{
 					id: "655B1B05EE4BABF7"
-					item: "tfc:powder/flux"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:powder/flux"
+					}
 					type: "item"
 				}
 			]
@@ -782,7 +809,16 @@
 			subtitle: "{quests.stone_age.copper_for_anvil.subtitle}"
 			tasks: [{
 				id: "302196CB1816F316"
-				item: "minecraft:copper_ingot"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "minecraft:copper_ingot"
+				}
 				type: "item"
 				weak_nbt_match: true
 			}]

@@ -358,6 +358,10 @@
             "text": "$(li)Пчелы могут помогать в удобрении $(l:agriculture/greenhouse#planters)Рассады!$()$(li)Орошённые большие лотки считаются цветами.$(li)Пчелы не атакуют тебя, если ты мокрый.$(li)Некоторые культуры, такие как подсолнухи и лён, считаются цветами.$(li)Радиус действия $(thing)Опыления культур$(), $(thing)Разрастания$() и цветов одинаковы.$(li)Не забудь убедиться, что вход в улей ничем не заблокирован."
         },
         {
+            "type": "patchouli:text",
+            "text": "$(li)Make sure to keep the hive entrance unobstructed. Bees can't do anything if they can't leave their hive!$(li)Bees can live in $(l:agriculture/greenhouse)Greenhouses$()! They will ignore seasonal temperatures when inside, allowing bees to thrive year-round."
+        },
+        {
             "type": "patchouli:relations",
             "title": "Читать далее",
             "anchor": "relations",

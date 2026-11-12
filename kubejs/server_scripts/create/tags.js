@@ -115,8 +115,8 @@ const registerCreateBlockTags = (event) => {
 	
 	event.add('create:non_movable', 'gtceu:wood_crate')
 	event.add('create:non_movable', 'gtceu:bronze_crate')
-	event.add('create:non_movable', 'gtceu:black_bronze_crate')
-	event.add('create:non_movable', 'gtceu:bismuth_bronze_crate')
+	event.add('create:non_movable', 'tfg:black_bronze_crate')
+	event.add('create:non_movable', 'tfg:bismuth_bronze_crate')
 	event.add('create:non_movable', 'gtceu:steel_crate')
 	event.add('create:non_movable', 'gtceu:aluminium_crate')
 	event.add('create:non_movable', 'gtceu:stainless_steel_crate')

@@ -69,10 +69,15 @@ function registerTFGRubberRecipes(event) {
 		.processingTime(75 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
 		.id('tfg:vi/vacuumizing/latex_from_rubber_leaves')
 
-	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:latex', 100), ['#tfg:rubber_plants', 'tfc:powder/soda_ash', Fluid.of('tfc:salt_water', 50)])
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:latex', 100), ['#tfg:rubber_plants', 'gtceu:small_soda_ash_dust', Fluid.of('tfc:salt_water', 50)])
 		.heated()
 		.processingTime(20 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-		.id('tfg:vi/vacuumizing/latex_from_rubber_plants')
+		.id('tfg:vi/vacuumizing/latex_from_rubber_plants_soda_ash')
+
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:latex', 200), ['#tfg:rubber_plants', '#forge:tiny_dusts/sodium_hydroxide', Fluid.of('tfc:salt_water', 50)])
+		.heated()
+		.processingTime(20 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+		.id('tfg:vi/vacuumizing/latex_from_rubber_plants_sodium_hydroxide')
 
 	// Sticky resin
 	event.recipes.tfc.pot('tfc:powder/wood_ash', Fluid.of('tfg:latex', 1000), 1200, 300)
@@ -122,21 +127,14 @@ function registerTFGRubberRecipes(event) {
 		.heated()
 		.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
 		.id('tfg:vi/vacuumizing/rubber')
-
-	// matches the sulfur dust + raw rubber recipe, just an alternative using powder
-	event.recipes.gtceu.alloy_smelter('tfg:rubber_ingot_powder')
-		.itemInputs('4x tfc:powder/sulfur', '3x #forge:dusts/raw_rubber')
-		.itemOutputs('gtceu:rubber_ingot')
-		.duration(5 * 20)
-		.EUt(7)
 	
 	// Rubber Processing Line
-	event.recipes.tfc.pot('tfc:powder/sulfur', Fluid.of('tfg:latex', 1000), 1200, 300)
+	event.recipes.tfc.pot('gtceu:small_sulfur_dust', Fluid.of('tfg:latex', 1000), 1200, 300)
 		.fluidOutput(Fluid.of('tfg:vulcanized_latex', 1000))
 		.id('tfg:pot/vulcanized_latex')
 
 	event.recipes.firmalife.vat()
-		.inputs('tfc:powder/sulfur', Fluid.of('tfg:latex', 1000))
+		.inputs('gtceu:small_sulfur_dust', Fluid.of('tfg:latex', 1000))
 		.outputFluid(Fluid.of('tfg:vulcanized_latex', 1000))
 		.length(300)
 		.temperature(300)
@@ -145,7 +143,7 @@ function registerTFGRubberRecipes(event) {
 	event.recipes.gtceu.chemical_reactor('tfg:latex_to_vulcanized_latex')
 		.duration(100)
 		.EUt(20)
-		.itemInputs('tfc:powder/sulfur')
+		.itemInputs('gtceu:small_sulfur_dust')
 		.inputFluids(Fluid.of('tfg:latex', 1000))
 		.outputFluids(Fluid.of('tfg:vulcanized_latex', 1000))
 
@@ -173,7 +171,7 @@ function registerTFGRubberRecipes(event) {
 		.outputFluids(Fluid.of('gtceu:glue', 50))
 		.itemOutputs('2x #forge:dusts/carbon')
 		.itemOutputs('4x gtceu:plant_ball')
-		.chancedOutput('8x gtceu:plant_ball', 7500, 0)
+		.chancedOutput('8x gtceu:plant_ball', 7500)
 		.duration(20 * 20)
 		.EUt(GTValues.VA[GTValues.LV])
 
@@ -181,11 +179,18 @@ function registerTFGRubberRecipes(event) {
 		.itemInputs('gtceu:sticky_resin')
 		.outputFluids(Fluid.of('gtceu:glue', 100))
 		.itemOutputs('3x #forge:dusts/carbon')
-		.chancedOutput('gtceu:plant_ball', 5000, 0)
+		.chancedOutput('gtceu:plant_ball', 5000)
 		.duration(20 * 20)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	event.recipes.gtceu.chemical_reactor(`tfg:treat_latex_plants_into_latex`)
+	event.recipes.gtceu.chemical_reactor(`tfg:treat_latex_plants_into_latex_soda_ash`)
+		.itemInputs('10x #tfg:rubber_plants', '#forge:small_dusts/soda_ash')
+		.circuit(1)
+		.outputFluids(Fluid.of('tfg:latex', 500))
+		.duration(200)
+		.EUt(20)
+
+	event.recipes.gtceu.chemical_reactor(`tfg:treat_latex_plants_into_latex_sodium_hydroxide`)
 		.itemInputs('10x #tfg:rubber_plants', 'gtceu:tiny_sodium_hydroxide_dust')
 		.circuit(1)
 		.outputFluids(Fluid.of('tfg:latex', 1000))
@@ -194,10 +199,10 @@ function registerTFGRubberRecipes(event) {
 
 	event.recipes.gtceu.centrifuge('rubber_log_separation')
 		.itemInputs('#tfg:latex_logs')
-		.chancedOutput('gtceu:raw_rubber_dust', 5000, 0)
-		.chancedOutput('gtceu:plant_ball', 3750, 0)
-		.chancedOutput('gtceu:sticky_resin', 2500, 0)
-		.chancedOutput('gtceu:wood_dust', 2500, 0)
+		.chancedOutput('gtceu:raw_rubber_dust', 5000)
+		.chancedOutput('gtceu:plant_ball', 3750)
+		.chancedOutput('gtceu:sticky_resin', 2500)
+		.chancedOutput('gtceu:wood_dust', 2500)
 		.outputFluids(Fluid.of('gtceu:methane', 60))
 		.duration(20 * 20)
 		.EUt(GTValues.VA[GTValues.MV])

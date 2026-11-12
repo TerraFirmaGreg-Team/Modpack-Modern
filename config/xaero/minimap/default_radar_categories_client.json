@@ -125,12 +125,11 @@
 						"tfc:wildebeest",
 						"tfc:wolf",
 						"wan_ancient_beasts:eater",
-						"arthropocolypse:platerodrilus",
 						"arthropocolypse:soldier_ant",
 						"arthropocolypse:stag_beetle",
 						"arthropocolypse:millipede_body",
 						"arthropocolypse:millipede_tail",
-						"opposing_force:ladybug"
+						"aliencraft_kepler:tree_mite"
 					],
 					"includeListInSuperCategory": true,
 					"excludeMode": "ONLY",
@@ -195,12 +194,11 @@
 						"tfc:wildebeest",
 						"tfc:wolf",
 						"wan_ancient_beasts:eater",
-						"arthropocolypse:platerodrilus",
 						"arthropocolypse:soldier_ant",
 						"arthropocolypse:stag_beetle",
 						"arthropocolypse:millipede_body",
 						"arthropocolypse:millipede_tail",
-						"opposing_force:ladybug"
+						"aliencraft_kepler:tree_mite"
 					],
 					"name": "gui.xaero_entity_category_friendly",
 					"protection": true,

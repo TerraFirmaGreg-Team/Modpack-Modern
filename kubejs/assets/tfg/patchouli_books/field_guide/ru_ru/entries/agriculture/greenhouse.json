@@ -120,13 +120,20 @@
         },
         {
             "type": "patchouli:spotlight",
-            "anchor": "electric",
-            "item": "tfg:electric_greenhouse",
+            "anchor": "bees_and_taps",
+            "title": "Beehives and Tree Taps",
+            "item": "firmalife:beehive,afc:tree_tap",
             "text": "$(bold)Примечание:$() этот мультиблок может использовать любой подходящий блок теплицы железного тира.$(br2)Загляни во вкладку мультиблочная структура в $(emi) чтобы узнать перечень доступных блоков.$(br2)Электрическую теплицу также можно улучшить нескольким способами, включая $(l:agriculture/fertilizers)удобрение$() или, позднее в $(6)HV$(), $(thing)Аквапонный цикл$()."
         },
         {
-            "type": "patchouli:text",
+            "type": "patchouli:spotlight",
+            "anchor": "electric",
+            "item": "tfg:electric_greenhouse",
             "text": "$(item)Гидропонная установка$() это $(9)IV$() модернизация электрической теплицы, способная выращивать что угодно в любом измерении и поддерживающая $(item)Люки контроля параллелей$()."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)Note:$() This multiblock can have its walls customized to use any valid iron-tier greenhouse block.$(br2)Check the $(emi) multiblock preview for a list of all the different blocks you can use.$(br2)The Electric Greenhouse can also be improved in a few ways, including $(l:agriculture/fertilizers)fertilizer$() or later in $(6)HV$() with the $(thing)Aquaponics Loop$()."
         },
         {
             "type": "patchouli:spotlight",
@@ -136,7 +143,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Читать далее",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_crops",

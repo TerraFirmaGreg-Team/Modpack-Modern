@@ -110,7 +110,7 @@ function registerTFGMVMaterialRecipes(event) {
 
 	//#region Diamond Tipped Tools custom recipes
 
-	event.recipes.gtceu.high_temperature_precision_fabricator('tfg:diamond_tipped_mo_50_re')
+	event.recipes.tfg.high_temperature_precision_fabricator('tfg:diamond_tipped_mo_50_re')
 		.itemInputs('1x tfg:mo_50_re_ingot', 'gtceu:diamond_dust', '#tfg:precision_fabricator_holder_rods')
 		.perTick(true)
 		.inputFluids(Fluid.of('gtceu:methane', 2.5), Fluid.of('gtceu:hydrogen', 10))

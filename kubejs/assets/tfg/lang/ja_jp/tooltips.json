@@ -73,6 +73,7 @@
     "tfg.tooltip.vessel_warning": "§c材料を入れすぎた状態で加熱すると、中身があふれてしまいます！§r",
     "tfg.tooltip.machine.one_energy_hatch": "§6１つ§rのエネルギーハッチを導入可能。",
     "tfg.tooltip.machine.two_energy_hatches": "最大§6２つの§rエネルギーハッチを導入可能。",
+    "tfg.tooltip.machine.no_oc": "このマシンは§6オーバークロックは行われません§r。上位のエネルギーハッチを使うと、上位のレシピが実行できるようになるだけです。",
     "tfg.tooltip.machine.subtick": "§2サブティック§rに対応！",
     "tfg.tooltip.machine.coil_energy_discount": "§6キュプロニッケル§rよりも上位のコイルでは10％ずつ消費電力が軽減されていく。",
     "tfg.tooltip.machine.coil_speed_discount": "§6キュプロニッケル§rコイルだと、処理速度が75％に低下する。カンタルコイルよりも上位のコイルでは処理速度が50％ずつ上昇していく。",
@@ -294,5 +295,6 @@
     "tfg.tooltip.unposter": "堆肥になるアイテムを消費して、付近の花やキノコを増やします。",
     "tfg.tooltip.glassworking.complete": "☆  完了！ ☆",
     "tfg.tooltip.growth_time": "生育期間",
-    "tfg.tooltip.digger_helmet_mining_upgrade": "§c採掘用ハンマーなどの範囲採掘では効果がありません！§r"
+    "tfg.tooltip.digger_helmet_mining_upgrade": "§c採掘用ハンマーなどの範囲採掘では効果がありません！§r",
+    "tfg.tooltip.campfire": "§7装飾用、無限光源またはパーティクルの放出源として使用できます。"
 }

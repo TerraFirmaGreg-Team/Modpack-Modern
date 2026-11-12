@@ -1,0 +1,18 @@
+{
+	"variants": {
+		"": [
+			{
+				"model": "betterend:block/umbrella_tree_membrane_5",
+				"weight": 1
+			},
+			{
+				"model": "betterend:block/umbrella_tree_membrane_6",
+				"weight": 2
+			},
+			{
+				"model": "betterend:block/umbrella_tree_membrane_7",
+				"weight": 1
+			}
+		]
+	}
+}

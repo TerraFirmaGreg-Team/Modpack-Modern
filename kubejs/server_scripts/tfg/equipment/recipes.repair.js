@@ -122,7 +122,9 @@ function registerTFGRepairRecipes(event) {
 
 		{ item: "hangglider:reinforced_hang_glider", material: "sns:reinforced_fabric" },
 		{ item: "minecraft:crossbow", material: "gtceu:repair_kit_wrought_iron" },
-		{ item: "species:crankbow", material: "gtceu:repair_kit_wrought_iron" }
+		{ item: "species:crankbow", material: "gtceu:repair_kit_wrought_iron" },
+
+		{ item: "aliencraft_kepler:alien_goo_gun", material: "gtceu:repair_kit_hsse" }
 	]
 
 	const SPECIAL_TAG_REPAIRS = [

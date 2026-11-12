@@ -1,0 +1,13 @@
+{
+	"variants": {
+		"type=bottom": {
+			"model": "tfg:block/rock/polished_calcite_slab"
+		},
+		"type=double": {
+			"model": "tfg:block/rock/polished_calcite_slab_double"
+		},
+		"type=top": {
+			"model": "tfg:block/rock/polished_calcite_slab_top"
+		}
+	}
+}

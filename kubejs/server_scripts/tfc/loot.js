@@ -442,5 +442,5 @@ function registerTFCLoots(event) {
 	event.addBlockLootModifier('tfc:sea_ice')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
 		.addLoot('firmalife:ice_shavings')
-		.addSequenceLoot(LootEntry.of('tfc:powder/salt').when(c => c.randomChance(0.2)))
+		.addSequenceLoot(LootEntry.of('gtceu:small_salt_dust').when(c => c.randomChance(0.2)))
 }

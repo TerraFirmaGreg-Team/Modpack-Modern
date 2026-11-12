@@ -1580,7 +1580,16 @@
 			subtitle: "{quests.chemical_elements.element} #82"
 			tasks: [{
 				id: "40C5C1A1726CCDBC"
-				item: "gtceu:lead_dust"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "gtceu:lead_dust"
+				}
 				type: "item"
 			}]
 			title: "{material.gtceu.lead}"
@@ -1604,7 +1613,16 @@
 			subtitle: "{quests.chemical_elements.element} #83"
 			tasks: [{
 				id: "141D63D0A43D2470"
-				item: "gtceu:bismuth_dust"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "gtceu:bismuth_dust"
+				}
 				type: "item"
 			}]
 			title: "{material.gtceu.bismuth}"

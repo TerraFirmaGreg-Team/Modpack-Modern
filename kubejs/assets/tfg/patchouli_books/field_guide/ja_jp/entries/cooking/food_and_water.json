@@ -1,31 +1,31 @@
 {
-    "name": "Nutrition & Thirst",
+    "name": "栄養と水分",
     "category": "tfg:cooking",
     "icon": "tfc:textures/item/food/orange.png",
     "pages": [
         {
             "type": "patchouli:text",
-            "title": "Index",
+            "title": "目次",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:cooking/food_and_water#basics)Basics$()$(li)$(bold)$(l:cooking/food_and_water#thirst)Thirst$()$(li)$(bold)$(l:cooking/food_and_water#nutrition_screen)The Nutrition Screen$()$(li)$(bold)$(l:cooking/food_and_water#nutrients)Nutrients$()$(li2)$(l:cooking/food_and_water#fruit)Fruit$()$(li2)$(l:cooking/food_and_water#vegetables)Vegetables$()$(li2)$(l:cooking/food_and_water#protein)Protein$()$(li2)$(l:cooking/food_and_water#grain)Grain$()$(li2)$(l:cooking/food_and_water#dairy)Dairy$()$(li)$(bold)$(l:cooking/food_and_water#contaminants)Contaminants$()$(li2)$(l:cooking/food_and_water#toxins)Toxins$()$(li2)$(l:cooking/food_and_water#parasites)Parasites$()$(li2)$(l:cooking/food_and_water#microplastics)Microplastics$()"
+            "text": "$(li)$(bold)$(l:cooking/food_and_water#basics)基本システム$()$(li)$(bold)$(l:cooking/food_and_water#thirst)喉の渇き$()$(li)$(bold)$(l:cooking/food_and_water#nutrition_screen)栄養画面$()$(li)$(bold)$(l:cooking/food_and_water#nutrients)栄養素$()$(li2)$(l:cooking/food_and_water#fruit)果物$()$(li2)$(l:cooking/food_and_water#vegetables)野菜$()$(li2)$(l:cooking/food_and_water#protein)タンパク質$()$(li2)$(l:cooking/food_and_water#grain)穀物$()$(li2)$(l:cooking/food_and_water#dairy)乳製品$()$(li)$(bold)$(l:cooking/food_and_water#contaminants)汚染物質$()$(li2)$(l:cooking/food_and_water#toxins)毒素$()$(li2)$(l:cooking/food_and_water#parasites)寄生虫$()$(li2)$(l:cooking/food_and_water#microplastics)マイクロプラスチック$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:cooking/food_and_water#transient_effects)Transient Effects$()$(li2)$(l:cooking/food_and_water#cooling_transient_effect)Cooling$()$(li2)$(l:cooking/food_and_water#warming_transient_effect)Warming$()$(li2)$(l:cooking/food_and_water#quenching_transient_effect)Quenching$()$(li2)$(l:cooking/food_and_water#bolstering_transient_effect)Bolstering$()$(li2)$(l:cooking/food_and_water#hearty_transient_effect)Hearty$()$(li2)$(l:cooking/food_and_water#rejuvenating_transient_effect)Rejuvenating$()$(li2)$(l:cooking/food_and_water#freezing_transient_effect)Freezing$()$(li2)$(l:cooking/food_and_water#blazing_transient_effect)Blazing$()$(li2)$(l:cooking/food_and_water#radiating_transient_effect)Radiating$()$(li2)$(l:cooking/food_and_water#nauseating_transient_effect)Nauseating$()$(li2)$(l:cooking/food_and_water#parching_transient_effect)Parching$()$(li2)$(l:cooking/food_and_water#deadly_transient_effect)Deadly$()$(li2)$(l:cooking/food_and_water#fulfilling_transient_effect)Fulfilling$()$(li2)$(l:cooking/food_and_water#sugary_transient_effect)Sugary$()$(li2)$(l:cooking/food_and_water#spicy_transient_effect)Spicy$()"
+            "text": "\n$(li)$(bold)$(l:cooking/food_and_water#transient_effects)効能$()$(li2)$(l:cooking/food_and_water#cooling_transient_effect)体温冷却$()$(li2)$(l:cooking/food_and_water#warming_transient_effect)体温上昇$()$(li2)$(l:cooking/food_and_water#quenching_transient_effect)潤い$()$(li2)$(l:cooking/food_and_water#bolstering_transient_effect)強化$()$(li2)$(l:cooking/food_and_water#hearty_transient_effect)満足感$()$(li2)$(l:cooking/food_and_water#rejuvenating_transient_effect)回復促進$()$(li2)$(l:cooking/food_and_water#freezing_transient_effect)凍結$()$(li2)$(l:cooking/food_and_water#blazing_transient_effect)灼熱$()$(li2)$(l:cooking/food_and_water#radiating_transient_effect)急性被爆$()$(li2)$(l:cooking/food_and_water#nauseating_transient_effect)吐き気$()$(li2)$(l:cooking/food_and_water#parching_transient_effect)脱水$()$(li2)$(l:cooking/food_and_water#deadly_transient_effect)致死$()$(li2)$(l:cooking/food_and_water#fulfilling_transient_effect)満腹$()$(li2)$(l:cooking/food_and_water#sugary_transient_effect)激甘$()$(li2)$(l:cooking/food_and_water#spicy_transient_effect)激辛$()"
         },
         {
             "type": "patchouli:text",
             "title": "基本システム",
             "anchor": "basics",
-            "text": "In $(tfg), not only must you manage your hunger, but you must manage your thirst. Hunger works similar to vanilla. Most pieces of food restore about a fifth of your hunger bar. Some pieces of food may restore a bit less, such as $(thing)Cattail Roots$(). Eating food also restores $(thing)Saturation$(), which can be thought of as how full you are. Depleting food or water results in sluggish movement and taking damage. Dying does not reset your nutrients or contaminants."
+            "text": "$(tfg)では、満腹度だけでなく喉の渇きも管理しなければなりません。空腹システムはバニラと似ており、多くの食べ物は空腹ゲージの約5分の1を回復します。ただし、$(thing)ガマの根$()のように回復量が少ない食べ物もあります。食べ物を食べると$(thing)腹持ち$()も回復します。これは隠し満腹度を表す値です。食料や水分が不足すると、移動速度が低下し、さらにダメージを受けるようになります。死亡しても栄養状態や汚染度はリセットされません。"
         },
         {
             "type": "patchouli:text",
-            "text": "Some foods are very filling, so they keep you from losing hunger for longer, while some foods have a short-lived effect.$(br2)You will lose hunger just from regular gameplay. Hunger drains faster if you do things like sprint, swim, or become $(l:game_mechanics/size_and_weight#overburdening)Overburdened$(). Information about the $(thing)Saturation$(), $(thing)Water$(), as well as $(thing)Nutrients$() available from a food is available by hovering over it in your inventory. Using $(item)$(k:key.sneak)$() reveals the full tooltip."
+            "text": "食べ物によって満腹感の持続時間は異なります。非常に腹持ちの良い食べ物もあれば、効果がすぐに切れてしまう食べ物もあります。$(br2)空腹度は通常のプレイをしているだけでも減少していきます。さらに、ダッシュしたり、泳いだり、$(l:game_mechanics/size_and_weight#overburdening)過労$()状態になったりすると、空腹度の減少が早くなります。食べ物から得られる$(thing)腹持ち$()、$(thing)水分$()、$(thing)栄養素$()の情報は、インベントリ内でそのアイテムにカーソルを合わせることで確認できます。$(item)$(k:key.sneak)$()を押している間は、詳細なツールチップが表示されます。"
         },
         {
             "type": "patchouli:text",
-            "text": "All foods have a tooltip with this information. The tooltip includes the $(l:cooking/decay#decay)Decay Date$() of the food, which may be extended with preservation. When viewing this information, it's important to realize that not all foods have nutritional value. For example, $(l:cooking/bread)Dough$() is a food, but it has no Nutrition, Saturation, or Water value. Eating it would not do much good."
+            "text": "すべての食べ物には、情報が記載されたツールチップがあります。ツールチップには食べ物の$(l:cooking/decay#decay)腐るまでの期限$()も表示されており、保存処理によって期限を延ばすことができます。この情報を見る際に重要なのは、すべての食べ物に栄養価があるわけではないということです。例えば、$(l:cooking/bread)パン生地$()は食べ物ではありますが、栄養素・腹持ち・水分のいずれも持っていません。そのため、食べてもほとんどメリットはありません。"
         },
         {
             "type": "patchouli:text",
@@ -35,7 +35,7 @@
             "type": "patchouli:text",
             "anchor": "thirst",
             "text": "喉の渇きは、体内の水分量を表す値です。減少する速度は空腹度とほぼ同じですが、高温環境にいる場合や空腹度の消費が激しい行動をしている場合は、より速く減少します。幸いにも、$(thing)淡水$()を飲むことで喉の渇きを回復できます。水源に向かって$(item)$(k:key.use)$()を押すことで水を飲めます。なお、海水を飲むと喉の渇きが回復するどころか減少し、さらに$(thing)渇き$()の効果を受けることがあります。この効果は喉の渇きの減少をさらに加速させます。",
-            "title": "Thirst"
+            "title": "渇き"
         },
         {
             "type": "patchouli:multiblock",
@@ -62,20 +62,20 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Drinking Vessels",
+            "title": "飲料容器",
             "item": {
                 "tag": "tfg:drinking_vessels"
             },
-            "text": "$(l:craftsmanship/pottery)Knapping$() and firing a $(l:craftsmanship/pottery#jug)jug$() is an early way to carry water with you. Fill it like a bucket with $(item)$(k:key.use)$(). Holding $(item)$(k:key.use)$() drinks the water.$(br2)You can also drink out of other $(l:cooking/drinking_containers)Containers$() such as $(item)Flasks$() or $(l:craftsmanship/glassworking)Glass Bottles$()."
+            "text": "$(l:craftsmanship/pottery)粘土を成形$() し、$(l:craftsmanship/pottery#jug)水差し$() を焼成することは、水を携帯するための初期の手段です。バケツのように $(item)$(k:key.use)$() で水を満たします。$(item)$(k:key.use)$() を手に持てば、水を飲むことができます。$(br2)また、$(item)水筒$() や $(l:craftsmanship/glassworking)ガラス瓶$() など、他の $(l:cooking/drinking_containers)容器$() から水を飲むこともできます。"
         },
         {
             "type": "patchouli:text",
-            "text": "$(br)Some fluids like $(thing)Milk$() even give $(l:cooking/food_and_water#nutrients)Nutrients$() when consumed.$(br2)The amount of thirst gained by drinking fluids is not standard. However, water and milk both give 10 points of water, indicated by one $(9)💧$() droplet."
+            "text": "$(br)$(thing)牛乳$()のような一部の飲み物は、摂取すると$(l:cooking/food_and_water#nutrients)栄養素$()を補給してくれます。$(br2)飲み物を飲むことで得られる喉の渇きの回復量は一定ではありません。ただし、水と牛乳はどちらも10ポイントの水分を補給し、これは1つの$(9)💧$()水滴アイコンで示されます。"
         },
         {
             "type": "patchouli:text",
             "anchor": "nutrition_screen",
-            "text": "In $(tfg) the nutrition screen displays vast information about your health. $(li)There is a main graph displaying your $(l:cooking/food_and_water#nutrients)Nutrients$().$(li)A side graph showing your $(l:cooking/food_and_water#contaminants)Contaminants$().$(li)A table displaying your health stats.$()$(li)And a toggleable view for checking on your teams nutrition.$()$(br)$(item)Hold-$(k:key.sneak)$() over an element on the screen to view more information.$()",
+            "text": "$(tfg)では、栄養画面に健康状態に関するさまざまな情報が表示されます。$(li)$(l:cooking/food_and_water#nutrients)栄養状態$()を表示するメイングラフ。$()$(li)$(l:cooking/food_and_water#contaminants)汚染状態$()を表示するサイドグラフ。$()$(li)健康状態の各種ステータスを表示する表。$()$(li)チームメンバーの栄養状態を確認できるスイッチ$()$(br)$画面上の要素にカーソルを合わせながら$(item)$(k:key.sneak)を押し続ける$()と、より詳しい情報を確認できます。$()",
             "title": "栄養画面"
         },
         {
@@ -93,96 +93,96 @@
         {
             "type": "patchouli:text",
             "anchor": "nutrients",
-            "text": "There are five nutrients, all obtainable from food: $(l)$(a)Fruit$()$(), $(l)$(2)Vegetables$()$(), $(l)$(c)Protein$()$(), $(l)$(6)Grain$()$(), and $(l)$(5)Dairy$()$(). Eating food gives you its nutrients. Meals such as $(l:cooking/cooking_methods#pot)Soup$() combine more nutrients into one meal. Often meals will borrow the nutrients from their ingredients directly. This is important, because meals you ate a while ago don't count towards your nutrition.",
+            "text": "栄養素には5種類あり、様々な食べ物から摂取できます。$(l)$(a)果物$()$()、$(l)$(2)野菜$()$()、$(l)$(c)タンパク質$()$()、$(l)$(6)穀物$()$()、そして$(l)$(5)乳製品$()$()。食べ物を食べると、その食べ物に含まれる栄養素を得られます。$(l:cooking/cooking_methods#pot)スープ$()のような料理は、複数の栄養素を一度に摂取できる食事です。多くの料理は材料の栄養素をそのまま引き継ぎます。また、食べ飽きのようなシステムがあり、少し前に食べた食事をもう一度食べても栄養素として摂取することができないため、このような料理で栄養素を摂取することが重要になります。",
             "title": "栄養素"
         },
         {
             "type": "patchouli:text",
             "anchor": "average_nutrients",
-            "text": "The total value of your nutrients determines your maximum HP. At max value you can achieve $(l)$(c)30 hearts$()$(), while the lowest is $(l)$(c)3 hearts$()$().$(br)Your average nutrients also effect the following:$()$(li)$(bold)Average >55% ↴$()$()$(italic)$(li2)Increase passive health regen by 50%.$()$()$(italic)$(li2)Decreases $(l:game_mechanics/hazards#medicine)Medical Condition$() progression rate by 25%.$()$()$(italic)$(li2)Increase medical condition passive healing rate by 50%.$()$()"
+            "text": "栄養素の合計値によって、あなたの最大体力が決まります。栄養状態が最高なら$(l)$(c)ハート30個分$()$()まで増加し、最低では$(l)$(c)ハート3個分$()$()まで減少します。$(br)また、栄養素の平均値は以下の効果にも影響します。$()$(li)$(bold)平均値が55%以上 ↴$()$()$(italic)$(li2)自然回復速度が50%上昇。$()$()$(italic)$(li2)$(l:game_mechanics/hazards#medicine)病気$()の進行速度が25%低下。$()$()$(italic)$(li2)病気の自然治癒速度が50%上昇。$()$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)Average >85% ↴$()$()$(italic)$(li2)Increase passive health regen by 100%.$()$()$(italic)$(li2)Decreases $(l:game_mechanics/hazards#medicine)Medical Condition$() progression rate by 50%.$()$()$(italic)$(li2)Increase medical condition passive healing rate by 100%.$()$()"
+            "text": "$(li)$(bold)平均値が85%以上 ↴$()$()$(italic)$(li2)自然回復速度が100%上昇。$()$()$(italic)$(li2)$(l:game_mechanics/hazards#medicine)病気$()の進行速度が50%低下。$()$()$(italic)$(li2)病気の自然治癒速度が100%上昇。$()$()"
         },
         {
-            "title": "Fruit",
+            "title": "果物",
             "type": "patchouli:text",
             "anchor": "fruit",
-            "text": "$(l)$(a)Fruit$()$() nutrients are mostly found from $(l:the_world/wild_fruits)Fruiting Plants$(), like berry bushes, and fruit trees. A notable exception to this is $(l:the_world/wild_crops#pumpkin)Pumpkins$() and $(l:the_world/wild_crops#melon)Melons$(), which nutritionally are fruits.$(br2)Increasing your fruit value gives the following effects:$()$(li)$(bold)Average >55% → $()$()$(italic)Decreases thirst usage by 25%.$()$(li)$(bold)Average >85% → $()$()$(italic)Increases mining speed by 30%.$()"
+            "text": "$(l)$(a)果物$()$()の栄養素は、主にベリーの茂みや果樹などの$(l:the_world/wild_fruits)果実植物$()から得られます。例外として、$(l:the_world/wild_crops#pumpkin)カボチャ$()と$(l:the_world/wild_crops#melon)スイカ$()は畑で育てられますが、果物の栄養素を含んでいます。$(br2)果物の栄養素を上げると、次の効果を得られます。$()$(li)$(bold)55％以上 → $()$()$(italic)喉が渇く速度が25％低下。$()$(li)$(bold)85％以上 → $()$()$(italic)採掘速度が30％上昇。$()"
         },
         {
-            "title": "Vegetables",
+            "title": "野菜",
             "type": "patchouli:text",
             "anchor": "vegetables",
-            "text": "$(l)$(2)Vegetables$()$() are found in nearly every $(l:agriculture/growing_crops)Crop$().$(br2)Increasing your vegetable value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Removes under-water mining penalty.$()$(li)$(bold)Value >85% → $()$()$(italic)Gives the respiration effect.$()"
+            "text": "$(l)$(2)野菜$()$()の栄養素は、ほぼすべての$(l:agriculture/growing_crops)作物$()に含まれています。$(br2)野菜の栄養値を上げると、次の効果を得られます。$()$(li)$(bold)55%以上 → $()$()$(italic)水中での採掘速度低下ペナルティを無効化。$()$(li)$(bold)85%以上 → $()$()$(italic)水中呼吸効果を得る。$()"
         },
         {
-            "title": "Protein",
+            "title": "タンパク質",
             "type": "patchouli:text",
             "anchor": "protein",
-            "text": "$(l)$(c)Protein$()$() can be sourced from the meat of $(l:the_world/wild_animals)Animals$(). It can also be obtained from some crops like $(thing)legumes$().$(br2)Increasing your protein value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Decrease exhaustion multiplier by 25%.$()$(li)$(bold)Value >85% → $()$()$(italic)Allows you to carry an additional huge & heavy item without being $(l:game_mechanics/size_and_weight#overburdening)Overburdened$() (like a sealed barrel).$()"
+            "text": "$(l)$(c)タンパク質$()$()は、$(l:the_world/wild_animals)動物$()の肉から摂取できます。また、$(thing)豆類$()などの一部の作物にも含まれています。$(br2)タンパク質の栄養値を上げると、次の効果を得られます。$()$(li)$(bold)55%以上 → $()$()$(italic)空腹速度が25%減少。$()$(li)$(bold)85%以上 → $()$()$(italic)いつもより１つ多く、とても重い・巨大なアイテム（密封した樽など）を$(l:game_mechanics/size_and_weight#overburdening)過労$()状態になることなく運べるようになる。$()"
         },
         {
-            "title": "Grain",
+            "title": "穀物",
             "type": "patchouli:text",
             "anchor": "grain",
-            "text": "$(l)$(6)Grain$()$() is found in cereal crops, such as $(l:the_world/wild_crops#barley)Barley$(). The processing of grain is on the $(l:cooking/bread)Bread$() page. Some root crops also count as grains.$(br2)Increasing your grain value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Gives a 5% speed buff.$()$(li)$(bold)Value >85% → $()$()$(italic)Gives a 15% speed buff.$()"
+            "text": "$(l)$(6)穀物$()$()は、$(l:the_world/wild_crops#barley)大麦$()のような麦などの穀物から得られます。穀物の加工については$(l:cooking/bread)パン$()のページを参照してください。また、一部の根菜類も穀物として扱われます。$(br2)穀物の栄養値を上げると、次の効果が得られます。$()$(li)$(bold)55%以上 → $()$()$(italic)移動速度が5%上昇。$()$(li)$(bold)85%以上 → $()$()$(italic)移動速度が15%上昇。$()"
         },
         {
-            "title": "Dairy",
+            "title": "乳製品",
             "type": "patchouli:text",
             "anchor": "dairy",
-            "text": "$(l)$(5)Dairy$()$() comes from $(thing)Milk$(), which is derived from $(l:agriculture/animal_husbandry#dairy_animals)Dairy Animals$(). Processing and drinking milk is covered on the $(l:cooking/cheese)Dairy$() page.$(br2)Increasing your dairy value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Gives the $(thing)Feather Falling I$() effect.$()$(li)$(bold)Value >85% → $()$()$(italic)Gives the $(thing)Feather Falling IV$() effect.$()"
+            "text": "$(l)$(5)乳製品$()$()の栄養素は$(thing)ミルク$()から得られます。ミルクは$(l:agriculture/animal_husbandry#dairy_animals)乳用動物$()から採取できます。ミルクの加工や飲用については、$(l:cooking/cheese)乳製品$()のページで詳しく説明されています。$(br2)乳製品の栄養値を上げると、次の効果を得られます。$()$(li)$(bold)55%以上 → $()$()$(italic)$(thing)落下耐性 I$()の効果を得る。$()$(li)$(bold)85%以上 → $()$()$(italic)$(thing)落下耐性 IV$()の効果を得る。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "contaminants",
-            "text": "In addition to nutrients $(tfg) also adds contaminants. There are three contaminants, all obtainable from food: $(l)$(d)Toxins$()$(), $(l)$(4)Parasites$()$(), and $(l)$(3)Microplastics$()$(). Contaminants can be passed into meal items and build up within the player.",
-            "title": "Contaminants"
+            "text": "栄養素に加えて、$(tfg)では汚染物質の要素も追加されています。食べ物に含まれる汚染物質は、$(l)$(d)毒素$()$()、$(l)$(4)寄生虫$()$()、そして$(l)$(3)マイクロプラスチック$()$()の3種類です。これらの汚染物質は調理をしても残り続け、プレイヤーの体内に徐々に蓄積していきます。",
+            "title": "汚染物質"
         },
         {
-            "title": "Toxins",
+            "title": "毒素",
             "type": "patchouli:text",
             "anchor": "toxins",
-            "text": "$(l)$(d)Toxins$() come from specifically dangerous crops and meats. Toxins decrease naturally at a rate of 3%/day. Consume $(item)Detox Capsules$() to actively $(l:game_mechanics/mob_effects#cure_toxins)Cure Toxins$().$(br2)Increasing your toxins value gives the following effects:$()$(li)$(bold)Value >0% → $()$()$(italic)On any new increase: 25% chance to get a random hazardous effect for 10sec.$()$(li)$(bold)Value >99% → $()$()$(italic)$(l:game_mechanics/mob_effects#final_moments)Death.$()"
+            "text": "$(l)$(d)毒素$()$()は、特に有毒な作物や肉に含まれています。毒素は1日ごとに3%ずつ自然に減少します。$(item)デトックスカプセル$()を使用すると、$(l:game_mechanics/mob_effects#cure_toxins)毒素を除去$()できます。$(br2)毒素が蓄積すると、次のようなことが起こります。$()$(li)$(bold)0%以上 → $()$()$(italic)新たに毒素が蓄積するたびに、25%の確率でランダムな病気に10秒間罹る。$()$(li)$(bold)99%以上 → $()$()$(italic)$(l:game_mechanics/mob_effects#final_moments)危篤状態$()。$()"
         },
         {
-            "title": "Parasites",
+            "title": "寄生虫",
             "type": "patchouli:text",
             "anchor": "parasites",
-            "text": "$(l)$(4)Parasites$() come from eating certain raw meats or drinking muddy water. Consume $(item)Parasiticide Capsules$() to actively $(l:game_mechanics/mob_effects#cure_parasites)Cure Parasites$().$(br2)Increasing your parasites value gives the following effects:$()$(li)$(bold)Value >10% → $()$()$(italic)20% chance to increase by 10% each day to a max of 60%.$()$(li)$(bold)Value >33% → $()$()$(italic)Increases passive exhaustion by 25%.$()$(li)$(bold)Value >66% → $()$()$(italic)Increases passive exhaustion by 50%.$()"
+            "text": "$(l)$(4)寄生虫$()$()は、一部の生肉を食べたり泥水を飲んだりすることで感染します。$(item)駆虫薬のカプセル$()を使用すると、$(l:game_mechanics/mob_effects#cure_parasites)寄生虫を除去$()できます。$(br2)寄生虫が蓄積すると、次の効果が発生します。$()$(li)$(bold)10%以上 → $()$()$(italic)毎日20%の確率で寄生虫の蓄積が10%増加し、最大60%まで上昇する。$()$(li)$(bold)33%以上 → $()$()$(italic)空腹速度が25%速くなる。$()$(li)$(bold)66%以上 → $()$()$(italic)空腹速度が50%速くなる。$()"
         },
         {
-            "title": "Microplastics",
+            "title": "マイクロプラスチック",
             "type": "patchouli:text",
             "anchor": "microplastics",
-            "text": "$(l)$(3)Microplastics$() come from consuming food packaged in plastic. Microplastics decrease naturally at a rate of 1%/day. Consume $(item)Nanofiltration Capsules$() to actively $(l:game_mechanics/mob_effects#cure_microplastics)Cure Microplastics$().$(br)Increasing your microplastics value gives the following effects:$(br2)$(o)(Continued on next page...)$()"
+            "text": "$(l)$(3)マイクロプラスチック$()は、プラスチックで包装された食品を摂取することで体内に取り込まれます。マイクロプラスチックは、1日あたり1％の割合で自然に減少します。$(item)ナノろ過カプセル$()を摂取することで、積極的に$(l:game_mechanics/mob_effects#cure_microplastics)マイクロプラスチックを除去$()できます。$(br)マイクロプラスチックの値が高くなると、次の効果が発生します。$(br2)$(o)(次ページに続く...)$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)Value >33% → $()$()$(italic)Increase high-temp thirst decay multiplier by 25%$()$(li)$(bold)Value >66% ↴$()$()$(italic)$(li2)Increase high-temp thirst decay multiplier by 50%.$()$()$(italic)$(li2)On any new increase: 5% chance to get $(l:game_mechanics/hazards#carcinogens)Cancer$()."
+            "text": "$(li)$(bold)33%以上 → $()$()$(italic)高温時の喉の渇き減少倍率が 25% 増加$()$(li)$(bold)66%以上 ↴$()$()$(li2)$(italic)高温時の喉の渇き減少倍率が 50% 増加$()$()$(italic)$(li2)新たに値が増加するたびに、5%の確率で $(l:game_mechanics/hazards#carcinogens)癌$()を発症。"
         },
         {
             "type": "patchouli:text",
             "anchor": "transient_effects",
-            "text": "$(tfg) also adds $(item)Transient Effects$(). Transient effects exist for the purpose of transferring buffs/ debuffs from ingredients into meal items. Transient effects can be combined and consumed. However, they do not accumulate within the player―They are immediately consumed.$(br)The strength of the effect depends on the value of the nutrient. However, the way the strength is determined is not uniform for every type.$()",
+            "text": "$(tfg)では、さらに食材に$(item)効能$()も追加されています。食材が持つ効能は料理へ引き継がれます。つまり、効能を料理によって組み合わせることで、まとめて摂取することもできます。効能は、栄養素や汚染物質とは異なりプレイヤーの体内には蓄積されず、摂取した時点で即座に効果がでます。$(br)効果の強さは対応する栄養値によって決まりますが、その計算方法は効果ごとに異なります。$()",
             "title": "効能"
         },
         {
             "type": "patchouli:text",
             "anchor": "cooling_transient_effect",
-            "text": "$(#12d7ff)❅$()$(bold) Cooling$()$(li)Gives the player the $(l:game_mechanics/mob_effects#cooling)Cooling$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#12d7ff)❅$()$(bold) 体温冷却$()$(li)栄養値1ポイントにつき1分間の$(l:game_mechanics/mob_effects#cooling)冷却$()効果を付与します。効果時間は最大30分です。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "warming_transient_effect",
-            "text": "$(#ff7700)🔆$()$(bold) Warming$()$(li)Gives the player the $(l:game_mechanics/mob_effects#warming)Warming$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#ff7700)🔆$()$(bold) 体温上昇$()$(li)栄養値1ポイントにつき1分間の$(l:game_mechanics/mob_effects#warming)温もり$()効果を付与します。効果時間は最大30分です。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "quenching_transient_effect",
-            "text": "$(#00c792)🍹$()$(bold) Quenching$()$(li)Gives the player the $(l:game_mechanics/mob_effects#quenched)Quenched$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#00c792)🍹$()$(bold) 潤い$()$(li)プレイヤーに $(l:game_mechanics/mob_effects#quenched)潤い$()効果を付与します。持続時間は１栄養ポイントにつき1分です。最大持続時間は30分です。$()"
         },
         {
             "type": "patchouli:text",
@@ -202,17 +202,17 @@
         {
             "type": "patchouli:text",
             "anchor": "freezing_transient_effect",
-            "text": "$(#12d7ff)⛇$()$(bold) Freezing$()$(li)Gives the player the $(l:game_mechanics/mob_effects#freezing)Freezing$() effect with 5 seconds of duration per 1 nutrient point. With a max duration of 30sec.$()"
+            "text": "$(#12d7ff)⛇$()$(bold) 凍結$()$(li)プレイヤーに $(l:game_mechanics/mob_effects#freezing)凍結$()効果を付与します。持続時間は１栄養ポイントにつき5秒です。最大持続時間は30秒です。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "blazing_transient_effect",
-            "text": "$(#ff7700)🔥$()$(bold) Blazing$()$(li)Gives the player the $(l:game_mechanics/mob_effects#blazing)Blazing$() effect with 5 seconds of duration per 1 nutrient point. With a max duration of 30sec.$()"
+            "text": "$(#ff7700)🔥$()$(bold) 灼熱$()$(li)プレイヤーに $(l:game_mechanics/mob_effects#blazing)灼熱$()効果を付与します。持続時間は１栄養ポイントにつき5秒です。最大持続時間は30秒です。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "radiating_transient_effect",
-            "text": "$(#9fc700)☢$()$(bold) Radiating$()$(li)Gives the player the $(n)Glowing$() effect for 24 seconds.$()$(li)Gives the player the $(l:game_mechanics/mob_effects#instant_radiation)Radiation$() effect for 24 seconds. With its amplifier scaled based on the amount of nutrient points with a max amplifier of 5.$()"
+            "text": "$(#9fc700)☢$()$(bold) 急性被曝$()$(li)プレイヤーに24秒間、$(n)発光$()の効果を付与します。$()$(li)プレイヤーに24秒間、$(l:game_mechanics/mob_effects#instant_radiation)急性被曝$() の効果を付与します。そのレベルは栄養ポイントの量に基づいて決定され、最大レベルは5です。$()"
         },
         {
             "type": "patchouli:text",
@@ -227,7 +227,7 @@
         {
             "type": "patchouli:text",
             "anchor": "deadly_transient_effect",
-            "text": "$(#470275)💀$()$(bold) Deadly$()$(li)Gives the player the $(l:game_mechanics/mob_effects#final_moments)Final Moments$() effect for 8min. With every additional nutrient point halving the duration.$()"
+            "text": "$(#470275)💀$()$(bold) 致死$()$(li)プレイヤーに$(l:game_mechanics/mob_effects#final_moments)危篤状態$() 効果を付与します。追加で栄養ポイントを得るたびに効果時間が半減します$()"
         },
         {
             "type": "patchouli:text",
@@ -242,11 +242,11 @@
         {
             "type": "patchouli:text",
             "anchor": "spicy_transient_effect",
-            "text": "$(#8F0000)🌶 $()$(bold) Spicy$()$(li)Gives the player the $(n)Thirsty$() effect with 15 seconds of duration per 1 nutrient point. With a max duration of 5min.$()$(li)Gives the player the $(l:game_mechanics/mob_effects#warming)Warming$() mob effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#8F0000)🌶 $()$(bold) 激辛$()$(li)プレイヤーに $(n)渇き$()効果を付与します。持続時間は１栄養ポイントにつき15秒です。最大持続時間は5分です。$()$(li)プレイヤーに $(l:game_mechanics/mob_effects#warming)温もり$()効果を付与します。持続時間は１栄養ポイントにつき1分です。最大持続時間は30分です。$()"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "関連項目",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/decay",

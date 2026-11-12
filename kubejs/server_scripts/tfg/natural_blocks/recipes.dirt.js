@@ -28,7 +28,7 @@ function registerTFGDirtRecipes(event) {
 
 	// Loam + Salt -> Silt
 	event.recipes.gtceu.mixer('tfg:silty_dirt')
-		.itemInputs('tfc:dirt/loam', 'tfc:powder/salt')
+		.itemInputs('tfc:dirt/loam', 'gtceu:small_salt_dust')
 		.circuit(3)
 		.itemOutputs('tfc:dirt/silt')
 		.duration(200)
@@ -44,7 +44,7 @@ function registerTFGDirtRecipes(event) {
 
 	// Volcanic dirt
 	event.recipes.gtceu.mixer('tfg:mollisol')
-		.itemInputs('tfc:dirt/loam', ['tfc:soot', 'tfc:powder/wood_ash', 'tfc:powder/charcoal'])
+		.itemInputs('tfc:dirt/loam', ['tfc:soot', 'tfc:powder/wood_ash', 'gtceu:small_charcoal_dust', 'gtceu:small_coal_dust'])
 		.circuit(3)
 		.itemOutputs('tfg:dirt/mollisol')
 		.duration(200)
@@ -52,7 +52,7 @@ function registerTFGDirtRecipes(event) {
 
 	// Tropical
 	event.recipes.gtceu.mixer('tfg:oxisol')
-		.itemInputs('tfc:dirt/loam', ['tfc:powder/hematite', 'tfc:powder/limonite', 'tfc:powder/magnetite'])
+		.itemInputs('tfc:dirt/loam', 'gtceu:small_iron_dust')
 		.circuit(3)
 		.itemOutputs('tfg:dirt/oxisol')
 		.duration(200)

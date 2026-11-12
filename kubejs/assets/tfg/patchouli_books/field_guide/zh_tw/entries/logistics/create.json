@@ -251,7 +251,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "在深入$(thing)高階物流$()之前，需要先做一些準備。$(br2)製作這類設備所需的$(item)發訊線圈$()，實際上只能靠高能光線穿過一種非常獨特的礦物折射來生產：$(item)玫瑰石英$()。換句話說，我們需要一台$(item)基礎雷射雕刻機$()，以及取得$(item)玫瑰石英透鏡$()的方法，所以趕快把這些搞定吧！"
+			"text": "在深入$(thing)高階物流$()之前，需要先做一些準備。$(br2)製作這類設備所需的$(item)發訊線圈$()，實際上只能靠高能光線穿過一種非常獨特的礦物折射來生產：$(item)玫瑰石英$()。換句話說，我們需要一台$(7)LV$() $(item)雷射雕刻機$()，以及取得$(item)玫瑰石英透鏡$()的方法，所以趕快把這些搞定吧！"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -398,7 +398,7 @@
 					],
 					"mapping": {
 						"0": "minecraft:air",
-						"V": "gtceu:bismuth_bronze_crate",
+						"V": "tfg:bismuth_bronze_crate",
 						"L": "create:stock_link[face=wall,facing=north]",
 						"P": "create:packager[facing=west,linked=true]",
 						"C": "create_connected:brass_chute",

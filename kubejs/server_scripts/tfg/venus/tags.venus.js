@@ -6,9 +6,17 @@ function registerTFGVenusItemTags(event) {
 	event.add('tfg:venusian_arthropod_foods', 'arthropocolypse:beetle_fragment')
 	event.add('tfg:venusian_arthropod_foods', 'arthropocolypse:gilded_scale')
 
-	event.add('tfg:sulfie_food', 'tfc:powder/sulfur')
 	event.add('tfg:sulfie_food', 'minecraft:gunpowder')
 	event.add('tfg:sulfie_food', '#forge:dusts/sulfur')
+
+	event.add('tfg:venus_plants', 'aliencraft_kepler:small_desert_cactus')
+	event.add('tfg:venus_plants', 'aliencraft_kepler:big_alien_cactus')
+	event.add('tfg:venus_plants', 'aliencraft_kepler:alien_cactus_flower')
+	event.add('tfg:venus_plants', 'aliencraft_kepler:thorn_flower')
+	event.add('tfg:venus_plants', 'aliencraft_kepler:crawling_lily')
+	event.add('tfg:venus_plants', 'aliencraft_kepler:desertgrass_3')
+	event.add('tfg:venus_plants', 'aliencraft_kepler:alien_vines')
+	event.add('tfc:compost_greens_low', '#tfg:venus_plants')
 }
 
 
@@ -124,6 +132,17 @@ function registerTFGVenusBlockTags(event) {
 
 	event.add('minecraft:lava_pool_stone_cannot_replace', 'tfg:venus_hornfels')
 	event.add('minecraft:features_cannot_replace', 'tfg:venus_hornfels')
+
+	event.add('tfg:geyserite_geode_cannot_replace', 'minecraft:air')
+	event.add('tfg:geyserite_geode_cannot_replace', 'minecraft:cave_air')
+	event.add('tfg:geyserite_geode_cannot_replace', 'tfg:fluid/geyser_slurry')
+	event.add('tfg:geyserite_geode_cannot_replace', 'minecraft:lava')
+	event.add('tfg:geyserite_geode_cannot_replace', '#minecraft:mineable/hoe')
+	event.add('tfg:geyserite_geode_cannot_replace', '#minecraft:mineable/axe')
+	event.add('tfg:geyserite_geode_cannot_replace', 'tfg:geyser_source')
+	event.add('tfg:geyserite_geode_cannot_replace', 'betterend:sulphuric_rock')
+	event.add('tfg:geyserite_geode_cannot_replace', 'betterend:hydrothermal_vent')
+	event.add('tfg:geyserite_geode_cannot_replace', '#tfc:loose_rocks')
 }
 
 function registerTFGVenusBiomeTags(event) {

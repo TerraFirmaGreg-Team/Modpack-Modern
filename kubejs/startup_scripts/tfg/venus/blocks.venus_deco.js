@@ -69,7 +69,22 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 			.particle('tfg:noxious_gas')
 			.count(1)
 			.forced(false));
-
+			
+	event.create('betterend:hydrothermal_vent', 'tfg:particle_emitter_decoration')
+		.soundType('dripstone_block')
+		.mapColor('dirt')
+		.requiresTool(true)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.opaque(false)
+		.fullBlock(false)
+		.box(1, 0, 1, 15, 16, 15)
+		.notSolid()
+		.particles(a => a
+			.range(0.3, 1, 0.3)
+			.velocity(0, 0.1, 0)
+			.particle('tfg:large_smoke')
+			.count(2)
+			.forced(false));
 
 	//Geyserite
 
@@ -176,22 +191,6 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.requiresTool(true)
 		.tagBlock('minecraft:mineable/axe')
 
-	event.create('betterend:hydrothermal_vent', 'tfg:particle_emitter_decoration')
-		.soundType('dripstone_block')
-		.mapColor('dirt')
-		.requiresTool(true)
-		.tagBlock('minecraft:mineable/pickaxe')
-		.opaque(false)
-		.fullBlock(false)
-		.box(1, 0, 1, 15, 16, 15)
-		.notSolid()
-		.particles(a => a
-			.range(0.3, 1, 0.3)
-			.velocity(0, 0.1, 0)
-			.particle('tfg:large_smoke')
-			.count(2)
-			.forced(false));
-
 	event.create('betterend:tube_worm', 'tfg:attached_decorative_plant')
 		.soundType('nether_wart')
 		.mapColor('terracotta_white')
@@ -284,6 +283,7 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.height(4)
 		.soundType('nether_wart')
 		.mapColor('green_terracotta')
+		.speedFactor(0.5)
 		.box(3, 0, 3, 13, 16, 13)
 		.tagBoth('tfg:venus_plants')
 		.tagBlock('tfg:do_not_destroy_in_space')
@@ -292,6 +292,7 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.height(4)
 		.soundType('nether_wart')
 		.mapColor('green_terracotta')
+		.speedFactor(0.5)
 		.box(3, 0, 3, 13, 16, 13)
 		.tagBoth('tfg:venus_plants')
 		.tagBlock('tfg:do_not_destroy_in_space')
@@ -303,6 +304,7 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.height(3)
 		.soundType('crop')
 		.mapColor('none')
+		.speedFactor(0.5)
 		.box(3, 0, 3, 13, 16, 13)
 		.tagBoth('tfg:venus_plants')
 		.tagBlock('tfg:do_not_destroy_in_space')
@@ -312,20 +314,40 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.soundType('dripstone_block')
 		.mapColor('yellow_terracotta')
 		.renderType('cutout')
+		.speedFactor(0.5)
 		.box(4, 0, 4, 12, 16, 12);
 
 	event.create('tfg:short_fused_pillar', 'tfg:decorative_plant')
 		.soundType('dripstone_block')
 		.mapColor('yellow_terracotta')
 		.renderType('cutout')
+		.speedFactor(0.5)
 		.box(4, 0, 4, 12, 16, 12);
 
 	event.create('tfg:ink_light', 'tfg:tall_decorative_plant')
 		.height(4)
+		.speedFactor(0.7)
 		.soundType('moss')
 		.mapColor('color_black')
 		.box(3, 0, 3, 13, 16, 13)
 		.tagItem('tfg:venus_plants')
 		.tagBlock('tfg:do_not_destroy_in_space')
 
+	event.create('tfg:slurry_slime_mold', 'tfg:floating_decorative_plant')
+		.soundType('honey_block')
+		.defaultTranslucent()
+		.xz_offset(false)
+		.box(0, 0, 0, 16, 2, 16)
+		.mapColor('color_light_blue')
+		.tagBlock('tfg:do_not_destroy_in_space')
+		.tagBlock('minecraft:replaceable')
+
+	event.create('tfg:floating_fumarole_colony', 'tfg:floating_decorative_plant')
+		.soundType('honey_block')
+		.defaultTranslucent()
+		.xz_offset(false)
+		.box(0, 0, 0, 16, 2, 16)
+		.mapColor('color_light_blue')
+		.tagBlock('tfg:do_not_destroy_in_space')
+		.tagBlock('minecraft:replaceable')
 }

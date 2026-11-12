@@ -144,11 +144,11 @@ function registerTFGBeneathOreProcRecipes(event) {
 			? `tfg:ore_proc_gas/${materialName}`
 			: `tfg:ore_proc_gas/${tier}/${materialName}`;
 
-		let recipe = event.recipes.gtceu.ore_processing_gas(recipeId)
+		let recipe = event.recipes.tfg.ore_processing_gas(recipeId)
 			.itemInputs(inputItem)
 			.perTick(true)
 			.inputFluids(Fluid.of('gtceu:natural_gas', gasAmount))
-			.chancedFluidInput(Fluid.of('gtceu:distilled_water', 5), 1000, 0)
+			.chancedFluidInput(Fluid.of('gtceu:distilled_water', 5), 1000)
 			.perTick(false)
 			.duration(20 * 20)
 			.EUt(GTValues.VA[GTValues.LV])
@@ -162,7 +162,7 @@ function registerTFGBeneathOreProcRecipes(event) {
 	}
 
 	forEachMaterial(material => {
-		if (material === null || material.isNull()) return;
+		if (material == null) return;
 		if (material.hasProperty(PropertyKey.GEM)) return;
 
 		processOreGasTier(material, 'crushed', TagPrefix.crushed, 1);
@@ -215,6 +215,6 @@ function registerTFGBeneathOreProcRecipes(event) {
 		if (split.guaranteed > 0)
 			recipe.itemOutputs(item.copyWithCount(split.guaranteed));
 		if (split.chance > 0)
-			recipe.chancedOutput(item, split.chance, 0);
+			recipe.chancedOutput(item, split.chance);
 	}
 }

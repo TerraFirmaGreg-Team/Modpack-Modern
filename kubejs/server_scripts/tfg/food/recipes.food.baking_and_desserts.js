@@ -124,7 +124,7 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 	});
 
 	// Tirage Mixture
-	event.recipes.gtceu.food_processor('tfg:tirage_mixture')
+	event.recipes.tfg.food_processor('tfg:tirage_mixture')
 		.itemInputs('#tfc:sweetener')
 		.inputFluids(Fluid.of('firmalife:yeast_starter', 100))
 		.itemOutputs('firmalife:tirage_mixture')
@@ -398,7 +398,7 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 	});
 
 	global.processorRecipe(event, "hardtack_dough", 300, 16, {
-		itemInputs: ['tfc:powder/salt', '#tfc:foods/flour'],
+		itemInputs: ['gtceu:small_salt_dust', '#tfc:foods/flour'],
 		fluidInputs: ['#tfg:clean_water 1000'],
 		itemOutputs: ['4x firmalife:food/hardtack_dough'],
 		circuit: 3,
@@ -509,7 +509,7 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 	global.generateOilBoilingFoodRecipes(event, 'tfc:food/maize_grain', 'tfg:food/popcorn', true, true, true, 3);
 
 	global.generateMixingFoodRecipes(event, 
-		['2x tfg:food/popcorn', 'firmalife:food/butter', 'tfc:powder/salt'],
+		['2x tfg:food/popcorn', 'firmalife:food/butter', 'gtceu:small_salt_dust'],
 		null, null, '2x tfg:food/buttered_popcorn'
 	);
 

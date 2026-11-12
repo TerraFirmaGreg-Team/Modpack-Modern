@@ -70,6 +70,20 @@
 			x: 16.0d
 			y: 3.0d
 		}
+		{
+			id: "4F7D0B1EF5D0C828"
+			linked_quest: "557E63D456849EDC"
+			shape: "heart"
+			x: 16.0d
+			y: 0.5d
+		}
+		{
+			id: "3D23BBAF11DDAAAA"
+			linked_quest: "1E0B2A90FA5C71E9"
+			shape: "heart"
+			x: 16.0d
+			y: 1.5d
+		}
 	]
 	quests: [
 		{
@@ -961,7 +975,7 @@
 				}
 			]
 			title: "{quests.extreme_voltage.hexafluorosilic_acid.title}"
-			x: 16.0d
+			x: 19.0d
 			y: 1.0d
 		}
 		{
@@ -2445,7 +2459,16 @@
 			tasks: [
 				{
 					id: "639039222D6F4B30"
-					item: "gtceu:tungsten_carbide_ingot"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:tungsten_carbide_ingot"
+					}
 					type: "item"
 				}
 				{
@@ -2541,7 +2564,16 @@
 			tasks: [
 				{
 					id: "5E09DBF8B5973CA6"
-					item: "gtceu:ostrum_iodide_ingot"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:ostrum_iodide_ingot"
+					}
 					type: "item"
 				}
 				{

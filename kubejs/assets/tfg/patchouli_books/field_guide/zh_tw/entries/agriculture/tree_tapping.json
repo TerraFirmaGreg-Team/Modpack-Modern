@@ -41,6 +41,12 @@
             "border": true
         },
         {
+            "type": "patchouli:text",
+            "title": "樹液採集小技巧",
+            "anchor": "tips",
+            "text": "$(li)氣候不適合採集樹液嗎？試著把樹種在$(l:agriculture/greenhouse)溫室裡！$()溫室內的受控環境讓樹液提取器不論外面多冷都能產出樹液。"
+        },
+        {
             "type": "patchouli:relations",
             "title": "延伸閱讀",
             "anchor": "relations",

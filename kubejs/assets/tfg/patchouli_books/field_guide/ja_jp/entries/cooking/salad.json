@@ -1,23 +1,23 @@
 {
-    "name": "Salad Making",
+    "name": "サラダ作り",
     "category": "tfg:cooking",
     "icon": "tfc:textures/item/food/protein_salad.png",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "salad",
-            "text": "$(thing)Salads$() are a meal prepared in a $(thing)Bowl$() from up to five $(thing)$(n)$(t:#tfc:usable_in_salad)Ingredients$().$(br2)Salads are one of the simplest meals to make, and just require a $(l:cooking/bowls)Bowl$(). First, hold the $(thing)Bowl$() and press $(item)$(k:key.use)$() while holding $(item)$(k:key.sneak)$(). This will open the salad screen.$(br)Place ingredients in the top slots and then remove the salad from the bottom slot when you are done."
+            "text": "$(thing)サラダ$()は、最大5つの$(thing)$(n)$(t:#tfc:usable_in_salad)食材$()を$(thing)ボウル$()に入れて作る料理です。$(br2)サラダは最も簡単に作れる料理の一つで、必要なのは$(l:cooking/bowls)ボウル$()だけです。まず、$(thing)ボウル$()を手に持ち、$(item)$(k:key.sneak)$()を押したまま$(item)$(k:key.use)$()を押します。これにより、サラダ画面が開きます。$(br)上部のスロットに食材を配置し、準備ができたら下部のスロットからサラダを取り出してください。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tag:tfc:salads",
             "title": "サラダ",
             "link_recipes": false,
-            "text": "Salads are dynamic meal items. The ingrediants used will determine what type of salad is made and the $(l:cooking/food_and_water#nutrients)Nutrients$() it contains.$(br2)$(t:§70.75§r§l∑§r§7Ingredients§r)To calculate the nutritional value; take the sum of every ingredient's nutrition and multiply by 0.75"
+            "text": "サラダは動的な料理です。使用する食材によって、どのような種類のサラダになるか、そしてそこに含まれる $(l:cooking/food_and_water#nutrients)栄養素$()が決まります。$(br2)$(t:§70.75§r§l∑§r§7Ingredients§r)栄養価を算出するには、各食材の栄養価を合計し、0.75を掛けます。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "関連項目",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/food_and_water",

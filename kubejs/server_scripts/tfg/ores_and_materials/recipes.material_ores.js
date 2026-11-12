@@ -44,7 +44,8 @@ function processSmallOre(event, material) {
  * The type of ore being smelted, used for recipe IDs
  */
 function smeltOre(event, material, oreProperty, multiplier, oreItem, type) {
-	const smeltingMaterial = oreProperty.getDirectSmeltResult().isNull() ? material : oreProperty.getDirectSmeltResult();
+	const directSmelt = oreProperty.getDirectSmeltResult();
+	const smeltingMaterial = directSmelt == null ? material : directSmelt;
 	if (!material.hasProperty(PropertyKey.BLAST) && !material.hasFlag(MaterialFlags.NO_ORE_SMELTING)) {
 		let ingotItem;
 		if (smeltingMaterial.hasProperty(PropertyKey.INGOT)) {
@@ -106,7 +107,7 @@ function processPoorRawOre(event, material) {
 		}
 		else {
 			const gemItem = ChemicalHelper.get(TagPrefix.gem, material, 1);
-			hammerRecipe.chancedOutput(gemItem, 5000, 0)
+			hammerRecipe.chancedOutput(gemItem, 5000)
 
 			event.recipes.greate.pressing(Item.of(gemItem).withChance(0.50), poorOreItem)
 				.recipeTier(1)
@@ -126,7 +127,7 @@ function processPoorRawOre(event, material) {
 				.id(`greate:pressing/poor_raw_${materialName}_to_crushed_ore`)
 		}
 		else {
-			hammerRecipe.chancedOutput(crushedOreItem, 5000, 0)
+			hammerRecipe.chancedOutput(crushedOreItem, 5000)
 
 			event.recipes.greate.pressing(Item.of(crushedOreItem).withChance(0.50), poorOreItem)
 				.recipeTier(1)
@@ -144,10 +145,10 @@ function processPoorRawOre(event, material) {
 	if (multiplier > 1) {
 		maceratorRecipe.itemOutputs(crushedOreItem.copyWithCount(multiplier / 2))
 	} else {
-		maceratorRecipe.chancedOutput(crushedOreItem, 5000, 0)
+		maceratorRecipe.chancedOutput(crushedOreItem, 5000)
 	}
-	maceratorRecipe.chancedOutput(crushedOreItem.copyWithCount(1), 2500, 0)
-	maceratorRecipe.chancedOutput(crushedOreItem.copyWithCount(1), 1250, 0)
+	maceratorRecipe.chancedOutput(crushedOreItem.copyWithCount(1), 2500)
+	maceratorRecipe.chancedOutput(crushedOreItem.copyWithCount(1), 1250)
 
 	// Quern
 	if (multiplier > 1) {
@@ -238,10 +239,10 @@ function processNormalRawOre(event, material) {
 	event.recipes.gtceu.tfg_ore_macerator(`macerate_raw_${materialName}_ore_to_crushed_ore`)
 		.itemInputs(normalOreItem)
 		.itemOutputs(crushedOreItem)
-		.chancedOutput(crushedOreItem.copyWithCount(1), 5000, 0)
-		.chancedOutput(crushedOreItem.copyWithCount(1), 2500, 0)
-		.chancedOutput(crushedOreItem.copyWithCount(1), 1250, 0)
-		//.category(GTRecipeCategories.ORE_CRUSHING)
+		.chancedOutput(crushedOreItem.copyWithCount(1), 5000)
+		.chancedOutput(crushedOreItem.copyWithCount(1), 2500)
+		.chancedOutput(crushedOreItem.copyWithCount(1), 1250)
+		.category(GTRecipeCategories.ORE_CRUSHING)
 		.duration(40)
 		.EUt(2)
 
@@ -327,10 +328,10 @@ function processRichRawOre(event, material) {
 	event.recipes.gtceu.tfg_ore_macerator(`macerate_rich_raw_${materialName}_ore_to_crushed_ore`)
 		.itemInputs(richOreItem)
 		.itemOutputs(crushedOreItem)
-		.chancedOutput(crushedOreItem.copyWithCount(1), 5000, 0)
-		.chancedOutput(crushedOreItem.copyWithCount(1), 2500, 0)
-		.chancedOutput(crushedOreItem.copyWithCount(1), 1250, 0)
-		//.category(GTRecipeCategories.ORE_CRUSHING)
+		.chancedOutput(crushedOreItem.copyWithCount(1), 5000)
+		.chancedOutput(crushedOreItem.copyWithCount(1), 2500)
+		.chancedOutput(crushedOreItem.copyWithCount(1), 1250)
+		.category(GTRecipeCategories.ORE_CRUSHING)
 		.duration(40)
 		.EUt(2)
 
@@ -389,7 +390,7 @@ function processCrushedOre(event, material) {
 			.itemInputs(crushedOreItem)
 			.inputFluids("gtceu:distilled_water 50")
 			.itemOutputs(pureOreItem, 'gtceu:stone_dust')
-			.chancedOutput(byproductItem, 3333, 0)
+			.chancedOutput(byproductItem, 3333)
 			.duration(20)
 			.EUt(GTValues.VHA[GTValues.LV])
 
@@ -397,7 +398,7 @@ function processCrushedOre(event, material) {
 			.itemInputs(crushedOreItem)
 			.inputFluids("minecraft:water 100")
 			.itemOutputs(pureOreItem, 'gtceu:stone_dust')
-			.chancedOutput(byproductItem, 3333, 0)
+			.chancedOutput(byproductItem, 3333)
 			.circuit(1)
 			.duration(40)
 			.EUt(GTValues.VHA[GTValues.LV])
@@ -405,7 +406,7 @@ function processCrushedOre(event, material) {
 		event.recipes.greate.crushing(`macerate_${materialName}_crushed_ore_to_impure_dust`)
 			.itemInputs(crushedOreItem)
 			.itemOutputs(impureDustItem)
-			.chancedOutput(byproductItem, 1400, 0)
+			.chancedOutput(byproductItem, 1400)
 			.category(GTRecipeCategories.ORE_CRUSHING)
 			.duration(20)
 			.EUt(2)
@@ -484,7 +485,7 @@ function processPurifiedOre(event, material) {
 		event.recipes.gtceu.tfg_ore_macerator(`macerate_${materialName}_crushed_ore_to_dust`)
 			.itemInputs(pureOreItem)
 			.itemOutputs(pureDustItem)
-			.chancedOutput(byproductItem, 1400, 0)
+			.chancedOutput(byproductItem, 1400)
 			//.category(GTRecipeCategories.ORE_CRUSHING)
 			.duration(20)
 			.EUt(GTValues.VHA[GTValues.LV])
@@ -518,7 +519,7 @@ function processRefinedOre(event, material) {
 		event.recipes.gtceu.tfg_ore_macerator(`macerate_${materialName}_refined_ore_to_dust`)
 			.itemInputs(refinedOreItem)
 			.itemOutputs(dustItem)
-			.chancedOutput(byproductItem, 1400, 0)
+			.chancedOutput(byproductItem, 1400)
 			//.category(GTRecipeCategories.ORE_CRUSHING)
 			.duration(20)
 			.EUt(GTValues.VHA[GTValues.LV])

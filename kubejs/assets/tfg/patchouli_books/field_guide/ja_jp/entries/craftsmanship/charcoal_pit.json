@@ -1,5 +1,5 @@
 {
-    "name": "Making Charcoal",
+    "name": "木炭作り",
     "category": "tfg:craftsmanship",
     "icon": "minecraft:charcoal",
     "pages": [
@@ -29,7 +29,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "The charcoal pit is formed by surrounding log piles with solid, non-flammable blocks. The amount of charcoal produced is proportional to the amount of logs contained inside the log piles. To start the burning process, light one of the log piles, and then cover it. If it worked, you should see $(thing)smoke$() particles rise up from the structure.$(br)You can make a charcoal pit any size and shape so long as its fully insulated.$(br)By default the charcoal pit will take $(t:15 minutes)18 in-game hours.$()"
+            "text": "伏せ焼きをするには、丸太の山を、燃えない固体ブロックで囲みます。生産される木炭の量は、丸太の山に含まれる丸太の量に比例します。燃焼を開始するには、丸太の山の一つに火をつけ、その後、それを覆ってください。うまくいけば、構造物から $(thing)煙$()のパーティクルが立ち上るのが見えるはずです。$(br)完全に断熱されていれば、伏せ焼き場はどんな大きさや形でも作ることができます。$(br)デフォルトでは、伏せ焼きの完了には $(t:15 分) ゲーム内で18時間$()かかります。"
         },
         {
             "type": "patchouli:image",
@@ -44,7 +44,7 @@
                 "tfg:textures/gui/field_guide/charcoal_pit/charcoal_pit_3.png",
                 "tfg:textures/gui/field_guide/charcoal_pit/charcoal_pit_4.png"
             ],
-            "text": "$(bold)Tutorial Slideshow:$() Creating a 2x2x2 charcoal pit.",
+            "text": "$(bold)チュートリアル・スライドショー：$() 2×2×2の伏せ焼き場を作る。",
             "border": true
         },
         {
@@ -205,13 +205,13 @@
         {
             "type": "patchouli:text",
             "anchor": "charcoal_pile",
-            "text": "After the charcoal pit burns out and stops smoking, you will be left with $(thing)Charcoal piles$(). The charcoal pile contains up to 8 layers of $(thing)Charcoal$(). Dig it with a shovel to obtain the charcoal items. Charcoal piles can be added to or placed with $(item)$(k:key.use)$().$(br2)$(bold)TIP:$() Do not cover your charcoal pit with a dense material like cobblestone, or it may fall and destroy your charcoal when completed."
+            "text": "伏せ焼き場の火が消え、煙が出なくなると、$(thing)炭の山$()が残ります。炭の山には、最大8層の$(thing)炭$()が含まれています。シャベルで掘ると、炭のアイテムを入手できます。炭の山には、$(item)$(k:key.use)$()で追加したり、配置したりすることができます。$(br2)$(bold)ヒント：$() 炭坑を丸石のような密度の高い素材で覆わないでください。完成した際に崩れて、炭が破壊されてしまう可能性があります。"
         },
         {
             "type": "patchouli:text",
             "anchor": "coke_oven",
-            "title": "Coke Oven",
-            "text": "The $(thing)Coke Oven$() is a multiblock that can automatically convert logs into charcoal and coal into $(item)Coke$() while producing $(thing)Creosote$(). This structure becomes available when you first produce $(l:craftsmanship/bloomery)Wrought Iron$() and it is recommended to make one as soon as possible. Coke ovens are a massive quality of life upgrade for charcoal production, and both coke and creosote will be necessary for progression."
+            "title": "コークス炉",
+            "text": "$(thing)コークス炉$()は、丸太を木炭に、石炭を$(item)コークス$()に自動的に変換し、その過程で$(thing)クレオソート$()を生成するマルチブロックです。この構造物は、初めて$(l:craftsmanship/bloomery)錬鉄$()を生産した時点で利用可能になり、できるだけ早く作成することをお勧めします。コークス炉は木炭の生産において作業効率を大幅に向上させるものであり、ゲームを進める上ではコークスとクレオソートの両方が必要となります。"
         },
         {
             "type": "patchouli:multiblock",
@@ -241,17 +241,17 @@
                     "C": "gtceu:coke_oven[facing=north]"
                 }
             },
-            "text": "An example coke oven with three hatches, suitable for item input, item output, and fluid output.",
+            "text": "原料の投入、製品の取り出し、および流体の排出を行うための、3つのハッチを備えたコークス炉の例。",
             "enable_visualize": true
         },
         {
             "type": "patchouli:text",
-            "title": "Coke Oven Tips",
-            "text": "$(li)Coke ovens can have up to 4 hatches, replacing any coke oven brick.$(li)Coke ovens must be hollow in the center.$(li)The coke oven input hatch may get clogged with the output item. To avoid this, have an item pipe facing the input hatch with its flow direction set. You can use a hopper or chute to push into that pipe.$(li)Crates are able to hold logs, unlike chests.$(li)Save all your creosote!"
+            "title": "コークス炉運用のヒント",
+            "text": "$(li)コークス炉には最大4つのハッチを設置でき、←\nコークス炉用レンガブロックの代わりに設置できます。$(li)コークス炉の中央は中空でなければなりません。$(li)コークス炉のインプットハッチ\nは、排出されるアイテムで詰まることがあります。これを防ぐには、インプットハッチに向かってアイテムパイプを設置し、流れの方向を設定してください。ホッパーやシュートを使えば、そのパイプにアイテムを搬入することができます。$(li)木箱は、チェストとは異なり、丸太を収納することができます。$(li)クレオソートはすべて保管しておきましょう！"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "関連項目",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pit_kiln",

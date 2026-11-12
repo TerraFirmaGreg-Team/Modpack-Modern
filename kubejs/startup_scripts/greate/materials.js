@@ -3,9 +3,9 @@
 
 const registerGreateMaterials = (event) => {
 	// Belt materials should already have an ingot and plate item already
-	const $BeltProperty = Java.loadClass("electrolyte.greate.content.gtceu.material.BeltProperty")
+	const $BeltProperty = Java.loadClass("electrolyte.greate.compat.gtceu.material.BeltProperty")
 	const $GreateMaterials = Java.loadClass("electrolyte.greate.registry.GreateMaterials")
-	const $GreatePropertyKeys = Java.loadClass("electrolyte.greate.content.gtceu.material.GreatePropertyKeys")
+	const $GreatePropertyKeys = Java.loadClass("electrolyte.greate.compat.gtceu.material.GreatePropertyKeys")
 
 	// Wood belt
 	$GreateMaterials.AndesiteAlloy.setProperty(GreatePropertyKeys.BELT, new $BeltProperty([$GreateMaterials.AndesiteAlloy], 5))
@@ -21,13 +21,14 @@ const registerGreateMaterials = (event) => {
 	// Change properties of other rubber belts
 	GTMaterials.Rubber.getProperties().removeProperty(GreatePropertyKeys.BELT);
 	GTMaterials.Rubber.setProperty(GreatePropertyKeys.BELT, new $BeltProperty([GTMaterials.Steel, GTMaterials.Aluminium], 20))
-	
+
 	GTMaterials.SiliconeRubber.getProperties().removeProperty(GreatePropertyKeys.BELT);
 	GTMaterials.SiliconeRubber.setProperty(GreatePropertyKeys.BELT, new $BeltProperty([GTMaterials.Aluminium, GTMaterials.StainlessSteel], 25))
-	
+
 	GTMaterials.StyreneButadieneRubber.setProperty(GreatePropertyKeys.BELT, new $BeltProperty([GTMaterials.StainlessSteel, GTMaterials.Titanium], 30))
 
 	// Change stress levels
+	/*
 	let capacity = 32;
 	$GreateMaterials.AndesiteAlloy.getProperty($GreatePropertyKeys.KINETIC).setMaxCapacity(capacity);
 	GTMaterials.Steel.getProperty($GreatePropertyKeys.KINETIC).setMaxCapacity(capacity *= 4);
@@ -39,4 +40,5 @@ const registerGreateMaterials = (event) => {
 	GTMaterials.NaquadahAlloy.getProperty($GreatePropertyKeys.KINETIC).setMaxCapacity(capacity *= 4);
 	GTMaterials.Darmstadtium.getProperty($GreatePropertyKeys.KINETIC).setMaxCapacity(capacity *= 4);
 	GTMaterials.Neutronium.getProperty($GreatePropertyKeys.KINETIC).setMaxCapacity(capacity *= 4);
+	*/
 }

@@ -176,11 +176,11 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 		//======================== Greenhouse Recipes ========================
 
 		// Base recipe.
-		let a = event.recipes.gtceu.greenhouse(`tfg:${global.linuxUnfucker(input)}${idCircuit}`)
+		let a = event.recipes.tfg.greenhouse(`tfg:${global.linuxUnfucker(input)}${idCircuit}`)
 			.notConsumable(input)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)
-			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance, 0)
+			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance)
 			.perTick(false)
 			.duration(greenhouse_base_duration)
 			.EUt(resolvedEUt)
@@ -191,20 +191,20 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			TFGRecipeSchemaBindings.isOxygenated(a, requiresOxygen)
 		};
 		if (outputs_array[1] !== null) {
-			a.chancedOutput(outputs_array[1], base_chance, 0)
-			a.chancedOutput(outputs_array[2], base_chance, 0)
-			a.chancedOutput(outputs_array[3], base_chance, 0)
+			a.chancedOutput(outputs_array[1], base_chance)
+			a.chancedOutput(outputs_array[2], base_chance)
+			a.chancedOutput(outputs_array[3], base_chance)
 		};
 		if (circuit !== null) {
 			a.circuit(circuit)
 		};
 
 		// Fertilized Recipe.
-		let b = event.recipes.gtceu.greenhouse(`tfg:${global.linuxUnfucker(input)}_fertilized${idCircuit}`)
+		let b = event.recipes.tfg.greenhouse(`tfg:${global.linuxUnfucker(input)}_fertilized${idCircuit}`)
 			.notConsumable(input)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)
-			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance, 0)
+			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance)
 			.perTick(false)
 			.duration(fertilizer_duration)
 			.EUt(resolvedEUt)
@@ -215,9 +215,9 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			TFGRecipeSchemaBindings.isOxygenated(b, requiresOxygen)
 		};
 		if (outputs_array[1] !== null) {
-			b.chancedOutput(outputs_array[1], fertilizer_chance, 0)
-			b.chancedOutput(outputs_array[2], fertilizer_chance, 0)
-			b.chancedOutput(outputs_array[3], fertilizer_chance, 0)
+			b.chancedOutput(outputs_array[1], fertilizer_chance)
+			b.chancedOutput(outputs_array[2], fertilizer_chance)
+			b.chancedOutput(outputs_array[3], fertilizer_chance)
 			b.itemInputs(Item.of(resolvedFertilizer, 8))
 		};
 		if (circuit !== null) {
@@ -225,11 +225,11 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 		};
 
 		// Aquaponics Recipe.
-		let c = event.recipes.gtceu.greenhouse(`tfg:${global.linuxUnfucker(input)}_aquaponic${idCircuit}`)
+		let c = event.recipes.tfg.greenhouse(`tfg:${global.linuxUnfucker(input)}_aquaponic${idCircuit}`)
 			.notConsumable(input)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)
-			.chancedFluidInput(`${resolvedFluidTier2} 1`, resolvedChance, 0)
+			.chancedFluidInput(`${resolvedFluidTier2} 1`, resolvedChance)
 			.perTick(false)
 			.duration(aquaponic_duration)
 			.EUt(resolvedEUt)
@@ -240,9 +240,9 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			TFGRecipeSchemaBindings.isOxygenated(c, requiresOxygen)
 		};
 		if (outputs_array[1] !== null) {
-			c.chancedOutput(outputs_array[1], aquaponic_chance, 0)
-			c.chancedOutput(outputs_array[2], aquaponic_chance, 0)
-			c.chancedOutput(outputs_array[3], aquaponic_chance, 0)
+			c.chancedOutput(outputs_array[1], aquaponic_chance)
+			c.chancedOutput(outputs_array[2], aquaponic_chance)
+			c.chancedOutput(outputs_array[3], aquaponic_chance)
 		};
 		if (circuit !== null) {
 			c.circuit(circuit + 2)
@@ -252,11 +252,11 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 		//======================== Hydroponic Facility Recipes ========================
 
 		// Base recipe.
-		let d = event.recipes.gtceu.hydroponics_facility(`tfg:${global.linuxUnfucker(input)}${idCircuit}`)
+		let d = event.recipes.tfg.hydroponics_facility(`tfg:${global.linuxUnfucker(input)}${idCircuit}`)
 			.notConsumable(input)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)
-			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance, 0)
+			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance)
 			.perTick(false)
 			.duration(greenhouse_base_duration)
 			.EUt(resolvedEUt)
@@ -264,20 +264,20 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			d.dimension(dimension)
 		};
 		if (outputs_array[1] !== null) {
-			d.chancedOutput(outputs_array[1], hydroponics_base_chance, 0)
-			d.chancedOutput(outputs_array[2], hydroponics_base_chance, 0)
-			d.chancedOutput(outputs_array[3], hydroponics_base_chance, 0)
+			d.chancedOutput(outputs_array[1], hydroponics_base_chance)
+			d.chancedOutput(outputs_array[2], hydroponics_base_chance)
+			d.chancedOutput(outputs_array[3], hydroponics_base_chance)
 		};
 		if (circuit !== null) {
 			d.circuit(circuit)
 		};
 
 		// Fertilized Recipe.
-		let e = event.recipes.gtceu.hydroponics_facility(`tfg:${global.linuxUnfucker(input)}_fertilized${idCircuit}`)
+		let e = event.recipes.tfg.hydroponics_facility(`tfg:${global.linuxUnfucker(input)}_fertilized${idCircuit}`)
 			.notConsumable(input)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)
-			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance, 0)
+			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance)
 			.perTick(false)
 			.duration(fertilizer_duration)
 			.EUt(resolvedEUt)
@@ -285,9 +285,9 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			e.dimension(dimension)
 		};
 		if (outputs_array[1] !== null) {
-			e.chancedOutput(outputs_array[1], hydroponics_fertilizer_chance, 0)
-			e.chancedOutput(outputs_array[2], hydroponics_fertilizer_chance, 0)
-			e.chancedOutput(outputs_array[3], hydroponics_fertilizer_chance, 0)
+			e.chancedOutput(outputs_array[1], hydroponics_fertilizer_chance)
+			e.chancedOutput(outputs_array[2], hydroponics_fertilizer_chance)
+			e.chancedOutput(outputs_array[3], hydroponics_fertilizer_chance)
 			e.itemInputs(Item.of(resolvedFertilizer, 8))
 		};
 		if (circuit !== null) {
@@ -295,11 +295,11 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 		};
 
 		// Aquaponics Recipe.
-		let f = event.recipes.gtceu.hydroponics_facility(`tfg:${global.linuxUnfucker(input)}_aquaponic${idCircuit}`)
+		let f = event.recipes.tfg.hydroponics_facility(`tfg:${global.linuxUnfucker(input)}_aquaponic${idCircuit}`)
 			.notConsumable(input)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)
-			.chancedFluidInput(`${resolvedFluidTier2} 1`, resolvedChance, 0)
+			.chancedFluidInput(`${resolvedFluidTier2} 1`, resolvedChance)
 			.perTick(false)
 			.duration(aquaponic_duration)
 			.EUt(resolvedEUt)
@@ -307,9 +307,9 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			f.dimension(dimension)
 		};
 		if (outputs_array[1] !== null) {
-			f.chancedOutput(outputs_array[1], hydroponics_aquaponic_chance, 0)
-			f.chancedOutput(outputs_array[2], hydroponics_aquaponic_chance, 0)
-			f.chancedOutput(outputs_array[3], hydroponics_aquaponic_chance, 0)
+			f.chancedOutput(outputs_array[1], hydroponics_aquaponic_chance)
+			f.chancedOutput(outputs_array[2], hydroponics_aquaponic_chance)
+			f.chancedOutput(outputs_array[3], hydroponics_aquaponic_chance)
 		};
 		if (circuit !== null) {
 			f.circuit(circuit + 2)
@@ -321,11 +321,11 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 
 		//======================== Greenhouse Recipes ========================
 
-		let a = event.recipes.gtceu.greenhouse(`tfg:${global.linuxUnfucker(input)}${idCircuit}`)
+		let a = event.recipes.tfg.greenhouse(`tfg:${global.linuxUnfucker(input)}${idCircuit}`)
 			.notConsumable(input)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)
-			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance, 0)
+			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance)
 			.perTick(false)
 			.duration(fertilizer_duration)
 			.EUt(resolvedEUt)
@@ -336,9 +336,9 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			TFGRecipeSchemaBindings.isOxygenated(a, requiresOxygen)
 		};
 		if (outputs_array[1] !== null) {
-			a.chancedOutput(outputs_array[1], fertilizer_chance, 0)
-			a.chancedOutput(outputs_array[2], fertilizer_chance, 0)
-			a.chancedOutput(outputs_array[3], fertilizer_chance, 0)
+			a.chancedOutput(outputs_array[1], fertilizer_chance)
+			a.chancedOutput(outputs_array[2], fertilizer_chance)
+			a.chancedOutput(outputs_array[3], fertilizer_chance)
 		};
 		if (circuit !== null) {
 			a.circuit(circuit)
@@ -346,11 +346,11 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 		
 		//======================== Hydroponics Facility Recipes ========================
 
-		let b = event.recipes.gtceu.hydroponics_facility(`tfg:${global.linuxUnfucker(input)}${idCircuit}`)
+		let b = event.recipes.tfg.hydroponics_facility(`tfg:${global.linuxUnfucker(input)}${idCircuit}`)
 			.notConsumable(input)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)
-			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance, 0)
+			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance)
 			.perTick(false)
 			.duration(fertilizer_duration)
 			.EUt(resolvedEUt)
@@ -358,9 +358,9 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			b.dimension(dimension)
 		};
 		if (outputs_array[1] !== null) {
-			b.chancedOutput(outputs_array[1], hydroponics_fertilizer_chance, 0)
-			b.chancedOutput(outputs_array[2], hydroponics_fertilizer_chance, 0)
-			b.chancedOutput(outputs_array[3], hydroponics_fertilizer_chance, 0)
+			b.chancedOutput(outputs_array[1], hydroponics_fertilizer_chance)
+			b.chancedOutput(outputs_array[2], hydroponics_fertilizer_chance)
+			b.chancedOutput(outputs_array[3], hydroponics_fertilizer_chance)
 		};
 		if (circuit !== null) {
 			b.circuit(circuit)
@@ -603,6 +603,11 @@ const registerTFGGreenhouseRecipes = (event) => {
 
 	Ingredient.of('#tfg:moon_plants').stacks.forEach(element => {
 		generateGreenHouseRecipe(event, 'ad_astra:moon', `8x ${element.id}`, [element.withCount(24), element.withCount(8)], 1, 1);
+	});
+
+	// Venus Plants
+	Ingredient.of('#tfg:venus_plants').stacks.forEach(element => {
+		generateGreenHouseRecipe(event, 'ad_astra:venus', `8x ${element.id}`, [element.withCount(24), element.withCount(8)], 1, 1);
 	});
 
 	// Custom

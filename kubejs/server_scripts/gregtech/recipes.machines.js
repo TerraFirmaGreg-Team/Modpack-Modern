@@ -688,9 +688,9 @@ function registerGTCEuMachineRecipes(event) {
 	]
 
 	DRUMS_AND_CRATES.forEach(material => {
-		event.shapeless(`gtceu:${material}_drum`, [`gtceu:${material}_drum`]).id(`tfg:shapeless/drum_nbt_${material}`)
+		event.shapeless(`tfg:${material}_drum`, [`tfg:${material}_drum`]).id(`tfg:shapeless/drum_nbt_${material}`)
 
-		event.shaped(`gtceu:${material}_drum`, [
+		event.shaped(`tfg:${material}_drum`, [
 			' A ',
 			'BCB',
 			'BCB'
@@ -700,7 +700,7 @@ function registerGTCEuMachineRecipes(event) {
 			C: `#forge:rods/long/${material}`
 		}).id(`tfg:shaped/${material}_drum`)
 
-		event.shaped(`gtceu:${material}_crate`, [
+		event.shaped(`tfg:${material}_crate`, [
 			'CBC',
 			'BAB',
 			'CBC'
@@ -712,7 +712,7 @@ function registerGTCEuMachineRecipes(event) {
 
 		event.recipes.gtceu.assembler(`gtceu:${material}_drum`)
 			.itemInputs(`4x #forge:plates/${material}`, `2x #forge:rods/long/${material}`)
-			.itemOutputs(`gtceu:${material}_drum`)
+			.itemOutputs(`tfg:${material}_drum`)
 			.duration(200)
 			.EUt(16)
 			.circuit(2)
@@ -720,7 +720,7 @@ function registerGTCEuMachineRecipes(event) {
 
 		event.recipes.gtceu.assembler(`gtceu:${material}_crate`)
 			.itemInputs(`4x #forge:plates/${material}`, `4x #forge:rods/long/${material}`)
-			.itemOutputs(`gtceu:${material}_crate`)
+			.itemOutputs(`tfg:${material}_crate`)
 			.duration(200)
 			.EUt(16)
 			.circuit(1)

@@ -19,7 +19,11 @@ function tierGreateRecipes(event) {
 		"greate:mixing/integration/gtceu/mixer/bronze",
 		"greate:mixing/integration/gtceu/mixer/black_bronze",
 		"greate:mixing/integration/gtceu/mixer/bismuth_bronze",
-		"greate:mixing/integration/gtceu/mixer/black_steel"
+		"greate:mixing/integration/gtceu/mixer/black_steel",
+		"greate:mixing/integration/gtceu/mixer/full_dust_glass_from_quartzite",
+		"greate:mixing/integration/gtceu/mixer/full_dust_glass_from_sand",
+		"greate:mixing/integration/gtceu/mixer/glass_from_quartz_sand",
+		"greate:mixing/integration/gtceu/mixer/glass_from_quartzite"
 	];
 
 	ulsToLsRecipes.forEach(recipeId => {

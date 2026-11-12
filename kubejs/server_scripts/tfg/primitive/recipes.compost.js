@@ -306,12 +306,6 @@ function registerTFGCompostRecipes(event) {
 
 	event.recipes.greate.pressing(
 		['4x tfc:pure_potassium', 'tfc:pure_nitrogen'],
-		['tfc:powder/saltpeter', 'tfc:powder/saltpeter', 'tfc:powder/saltpeter', 'tfc:powder/saltpeter', 'tfc:powder/saltpeter', 
-		'tfc:powder/saltpeter', 'tfc:powder/saltpeter', 'tfc:powder/saltpeter', 'tfc:powder/saltpeter', 'tfc:powder/saltpeter'])
-		.id('tfg:pressing/saltpeter_powder_to_pure')
-
-	event.recipes.greate.pressing(
-		['4x tfc:pure_potassium', 'tfc:pure_nitrogen'],
 		['gtceu:saltpeter_dust', 'gtceu:saltpeter_dust', 'gtceu:saltpeter_dust', 'gtceu:saltpeter_dust', 'gtceu:saltpeter_dust'])
 		.id('tfg:pressing/saltpeter_to_pure')
 
@@ -322,7 +316,7 @@ function registerTFGCompostRecipes(event) {
 
 	event.recipes.greate.pressing(
 		['tfc:pure_potassium'],
-		['tfc:powder/sylvite', 'tfc:powder/sylvite'])
+		['gtceu:rock_salt_dust', 'gtceu:small_rock_salt_dust'])
 		.id('tfg:pressing/sylvite_powder_to_pure')
 		
 	event.recipes.greate.pressing(

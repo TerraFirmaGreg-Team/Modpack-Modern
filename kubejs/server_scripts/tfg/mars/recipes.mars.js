@@ -26,7 +26,7 @@ function registerTFGMarsRecipes(event) {
 		.outputFluids(Fluid.of('gtceu:krypton', 1000))
 		.outputFluids(Fluid.of('gtceu:neon', 1000))
 		.outputFluids(Fluid.of('gtceu:xenon', 1000))
-		.chancedOutput('gtceu:ammonium_chloride_dust', 2250, 0)
+		.chancedOutput('gtceu:ammonium_chloride_dust', 1)
 		.disableDistilleryRecipes(true)
 		.duration(2000)
 		.EUt(GTValues.VA[GTValues.EV])
@@ -171,10 +171,10 @@ function registerTFGMarsRecipes(event) {
 		.id('tfg:vacuumizing/mars_latex')
 
 	event.recipes.tfc.heating('#tfg:charnia', 200)
-		.resultItem('3x tfc:powder/soda_ash')
+		.resultItem('3x gtceu:small_soda_ash_dust')
 		.id('tfg:heating/charnia_to_soda')
 
-	event.smelting('3x tfc:powder/soda_ash', '#tfg:charnia').id('tfg:smelting/charnia_to_soda')
+	event.smelting('3x gtceu:small_soda_ash_dust', '#tfg:charnia').id('tfg:smelting/charnia_to_soda')
 
 	event.recipes.tfc.barrel_instant()
 		.inputs('#forge:dusts/zeolite', Fluid.of('tfg:semiheavy_ammoniacal_water', 1000))

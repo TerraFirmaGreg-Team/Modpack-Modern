@@ -71,6 +71,13 @@
 			x: 7.0d
 			y: -7.5d
 		}
+		{
+			id: "20139B61606D2109"
+			linked_quest: "557E63D456849EDC"
+			shape: "heart"
+			x: 16.0d
+			y: 2.5d
+		}
 	]
 	quests: [
 		{
@@ -1357,6 +1364,10 @@
 								ingredients: [ ]
 								traits: [ ]
 							}
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
 						}
 						id: "tfg:food/meal_bag"
 					}
@@ -2031,6 +2042,34 @@
 			title: "{quests.high_voltage.palladium.title}"
 			x: 21.0d
 			y: 0.75d
+		}
+		{
+			dependencies: [
+				"6A21CCAEB1FDF38E"
+				"236F53188110F6D5"
+			]
+			description: ["{quests.high_voltage.accumulator.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/trains"
+			icon: "createaddition:modular_accumulator"
+			id: "1E0B2A90FA5C71E9"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.high_voltage.accumulator.subtitle}"
+			tasks: [
+				{
+					id: "333D127A99EC2E8B"
+					item: "createaddition:modular_accumulator"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3D012A81B6C14370"
+					item: "createaddition:portable_energy_interface"
+					type: "item"
+				}
+			]
+			x: 16.0d
+			y: 3.5d
 		}
 	]
 	subtitle: ["{quests.high_voltage.subtitle}"]

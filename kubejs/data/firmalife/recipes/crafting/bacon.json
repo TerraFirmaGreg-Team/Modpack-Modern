@@ -1,0 +1,29 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"type": "tfc:damage_inputs_shapeless_crafting",
+	"recipe": {
+		"type": "minecraft:crafting_shapeless",
+		"ingredients": [
+			{
+				"type": "tfc:not_rotten",
+				"ingredient": {
+					"type": "tfc:has_trait",
+					"trait": "firmalife:smoked",
+					"ingredient": {
+						"item": "tfc:food/pork"
+					}
+				}
+			},
+			{
+				"tag": "tfc:knives"
+			},
+			{
+				"item": "gtceu:small_salt_dust"
+			}
+		],
+		"result": {
+			"item": "firmalife:food/bacon",
+			"count": 4
+		}
+	}
+}

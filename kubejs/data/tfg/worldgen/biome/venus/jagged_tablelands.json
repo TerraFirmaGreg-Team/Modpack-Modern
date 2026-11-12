@@ -40,6 +40,8 @@
 		[
 			"tfg:venus/terrain/lava_spring_rare",
 			"tfc:random_empty_hot_spring",
+			"tfg:venus/terrain/magma_rivulet",
+			"tfg:venus/terrain/obsidian_rivulet",
 			"tfg:venus/surface/glauberite_formation",
 			"tfg:venus/surface/aragonite_formation"
 		],
@@ -61,7 +63,8 @@
 			"tfc:cobble_boulder",
 			"tfc:raw_boulder_small_patch",
 			"tfc:cobble_boulder_small_patch",
-			"tfg:venus/surface/stromatolite_column"
+			"tfg:venus/surface/stromatolite_column",
+			"tfg:venus/surface/loose_scorchia"
 		],
 		[
 			"tfg:venus/surface/smoker_source_patch",
@@ -71,7 +74,8 @@
 			"tfg:venus/surface/pile_volcanic_ash",
 			"tfg:venus/surface/loose_scorchia",
 			"tfg:venus/surface/inklight",
-			"tfg:venus/surface/bloodthorn"
+			"tfg:venus/surface/bloodthorn",
+			"tfg:venus/surface/volcano_smoke_random"
 		],
 		"#tfg:venus_top_layer_modification"
 	],
@@ -288,7 +292,7 @@
 				"type": "aliencraft_kepler:tree_mite",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 40
+				"weight": 100
 			}
 		],
 		"underground_water_creature": [],
