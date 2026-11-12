@@ -129,8 +129,8 @@ function registerGTCEUItemTags(event) {
      */
     const drums = [
         'gtceu:bronze_drum',
-        'gtceu:bismuth_bronze_drum',
-        'gtceu:black_bronze_drum',
+        'tfg:bismuth_bronze_drum',
+        'tfg:black_bronze_drum',
         'gtceu:steel_drum',
         'gtceu:aluminium_drum',
         'gtceu:stainless_steel_drum',
@@ -148,8 +148,8 @@ function registerGTCEUItemTags(event) {
     const crates = [
         'gtceu:wood_crate',
         'gtceu:bronze_crate',
-        'gtceu:bismuth_bronze_crate',
-        'gtceu:black_bronze_crate',
+        'tfg:bismuth_bronze_crate',
+        'tfg:black_bronze_crate',
         'gtceu:steel_crate',
         'gtceu:aluminium_crate',
         'gtceu:stainless_steel_crate',
@@ -266,8 +266,8 @@ function registerGTCEUBlockTags(event) {
      */
     const drums = [
         'gtceu:bronze_drum',
-        'gtceu:bismuth_bronze_drum',
-        'gtceu:black_bronze_drum',
+        'tfg:bismuth_bronze_drum',
+        'tfg:black_bronze_drum',
         'gtceu:steel_drum',
         'gtceu:aluminium_drum',
         'gtceu:stainless_steel_drum',
@@ -285,8 +285,8 @@ function registerGTCEUBlockTags(event) {
     const crates = [
         'gtceu:wood_crate',
         'gtceu:bronze_crate',
-        'gtceu:bismuth_bronze_crate',
-        'gtceu:black_bronze_crate',
+        'tfg:bismuth_bronze_crate',
+        'tfg:black_bronze_crate',
         'gtceu:steel_crate',
         'gtceu:aluminium_crate',
         'gtceu:stainless_steel_crate',

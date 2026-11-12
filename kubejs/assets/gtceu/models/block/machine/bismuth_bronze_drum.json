@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/block",
   "loader": "gtceu:machine",
-  "machine": "gtceu:bismuth_bronze_drum",
+  "machine": "tfg:bismuth_bronze_drum",
   "variants": {
     "": {
       "model": "gtceu:block/machine/template/drum/metal_drum"
