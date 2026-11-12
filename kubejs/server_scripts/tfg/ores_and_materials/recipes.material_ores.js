@@ -45,7 +45,7 @@ function processSmallOre(event, material) {
  */
 function smeltOre(event, material, oreProperty, multiplier, oreItem, type) {
 	const directSmelt = oreProperty.getDirectSmeltResult();
-	const smeltingMaterial = (directSmelt === null || directSmelt === undefined) ? material : directSmelt;
+	const smeltingMaterial = directSmelt == null ? material : directSmelt;
 	if (!material.hasProperty(PropertyKey.BLAST) && !material.hasFlag(MaterialFlags.NO_ORE_SMELTING)) {
 		let ingotItem;
 		if (smeltingMaterial.hasProperty(PropertyKey.INGOT)) {
