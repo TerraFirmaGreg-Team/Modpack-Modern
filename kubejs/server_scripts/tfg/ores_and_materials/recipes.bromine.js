@@ -2,8 +2,6 @@
 
 function registerTFGBromineRecipes(event) {
 
-	/*
-
 	event.recipes.gtceu.evaporation_tower('evaporation_brine')
 		.inputFluids(Fluid.of('tfc:salt_water', 20000))
 		.outputFluids(Fluid.of('gtceu:raw_brine', 1000))
