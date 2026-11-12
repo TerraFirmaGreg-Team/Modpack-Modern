@@ -1,6 +1,6 @@
 
 Ponder.registry((event) => {
-    event.create("tfc:blast_furnace").scene("blastfurnace","Using the Blast furnace","kubejs:blastfurnace",(scene, util) => {
+    event.create("tfc:blast_furnace").scene("blastfurnace","Using the Blast furnace","tfg:blastfurnace",(scene, util) => {
                 
         scene.showBasePlate();
         scene.scaleSceneView(1); 
