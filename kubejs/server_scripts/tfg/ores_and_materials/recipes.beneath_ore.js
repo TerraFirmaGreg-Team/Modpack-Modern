@@ -162,7 +162,6 @@ function registerTFGBeneathOreProcRecipes(event) {
 	}
 
 	forEachMaterial(material => {
-		if (material === null || material.isNull()) return;
 		if (material.hasProperty(PropertyKey.GEM)) return;
 
 		processOreGasTier(material, 'crushed', TagPrefix.crushed, 1);

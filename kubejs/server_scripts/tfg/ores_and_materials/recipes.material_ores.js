@@ -44,7 +44,8 @@ function processSmallOre(event, material) {
  * The type of ore being smelted, used for recipe IDs
  */
 function smeltOre(event, material, oreProperty, multiplier, oreItem, type) {
-	const smeltingMaterial = oreProperty.getDirectSmeltResult().isNull() ? material : oreProperty.getDirectSmeltResult();
+	const directSmelt = oreProperty.getDirectSmeltResult();
+	const smeltingMaterial = (directSmelt === null || directSmelt === undefined) ? material : directSmelt;
 	if (!material.hasProperty(PropertyKey.BLAST) && !material.hasFlag(MaterialFlags.NO_ORE_SMELTING)) {
 		let ingotItem;
 		if (smeltingMaterial.hasProperty(PropertyKey.INGOT)) {
