@@ -107,9 +107,11 @@
     "tfg.multiblock.large_boiler.catalyst_module": "Catalyst Module: %s",
     "tfg.multiblock.large_boiler.catalyst_module_missing": "No Catalyst Module",
     "tfg.multiblock.large_boiler.module_tier_mismatch": "All Module blocks must be the same tier (found T%s and T%s)",
-    "tfg.multiblock.large_boiler.booster_module.tooltip": "Booster module: unlocks the ability to use booster, needs its own Fluid Input Hatch",
-    "tfg.multiblock.large_boiler.catalyst_module.tooltip": "Catalyst module: lengthens fuel burn time, needs its own Item Input Bus",
+    "tfg.multiblock.large_boiler.booster_module.tooltip": "Booster module: unlocks the ability to use Booster, needs its own Fluid Input Hatch",
+    "tfg.multiblock.large_boiler.catalyst_module.tooltip": "Catalyst module: unlock the ability to use Catalyst, needs its own Item Input Bus",
     "tfg.multiblock.large_boiler.max_module_tier.tooltip": "Accepts modules up to tier %s",
+    "tfg.multiblock.large_boiler.catalyst_none": "No catalyst",
+    "tfg.multiblock.large_boiler.catalyst_active": "Catalyst: %s %s (%s)",
     "tfg.recipe_type.large_boiler": "Standard",
 
     "fluid.tag.tfg.water_boiler_t2": "Distilled Water",
