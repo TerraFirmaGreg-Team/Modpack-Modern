@@ -102,8 +102,15 @@
     "tfg.multiblock.large_boiler.max_temperature": "Max Pressure: %sPU, Steam Production: %s/t",
     "tfg.multiblock.large_boiler.temperature.tooltip": "Scale with Steam output, 1 PU = 1 mB of Steam",
     "tfg.multiblock.large_boiler.mode": "Boiler Mode: ",
+    "tfg.multiblock.large_boiler.booster_module": "Booster Module: %s",
+    "tfg.multiblock.large_boiler.booster_module_missing": "No Booster Module",
+    "tfg.multiblock.large_boiler.catalyst_module": "Catalyst Module: %s",
+    "tfg.multiblock.large_boiler.catalyst_module_missing": "No Catalyst Module",
+    "tfg.multiblock.large_boiler.module_tier_mismatch": "All Module blocks must be the same tier (found T%s and T%s)",
+    "tfg.multiblock.large_boiler.booster_module.tooltip": "Booster module: unlocks the ability to use booster, needs its own Fluid Input Hatch",
+    "tfg.multiblock.large_boiler.catalyst_module.tooltip": "Catalyst module: lengthens fuel burn time, needs its own Item Input Bus",
+    "tfg.multiblock.large_boiler.max_module_tier.tooltip": "Accepts modules up to tier %s",
     "tfg.recipe_type.large_boiler": "Standard",
-    "tfg.recipe_type.super_boiler": "Advanced",
 
     "fluid.tag.tfg.water_boiler_t2": "Distilled Water",
 

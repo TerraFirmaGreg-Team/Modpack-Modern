@@ -108,7 +108,7 @@ function addCircuitToRecipe(event, recipeId, circuitNumber) {
 		}
 
 		// Cache existing item inputs.
-		const itemEl = inputsObj.has("gtceu:item") ? inputsObj.get("gtceu:item") : inputsObj.get("item");
+		const itemEl = inputsObj.get("gtceu:item");
 		let itemArray;
 		if (itemEl === null || itemEl === undefined || itemEl.isJsonNull()) {
 			itemArray = new JsonArray();
@@ -125,8 +125,7 @@ function addCircuitToRecipe(event, recipeId, circuitNumber) {
 		const circuitElement = JsonParser.parseString(JSON.stringify({
 			content: { type: "gtceu:circuit", configuration: circuitNumber },
 			chance: 0,
-			maxChance: 10000,
-			tierChanceBoost: 0
+			maxChance: 10000
 		}));
 
 		// Dont duplicate circuit if one already exists. 
@@ -151,7 +150,7 @@ function addCircuitToRecipe(event, recipeId, circuitNumber) {
 			addJsonElement(itemArray, circuitElement);
 		}
 
-		inputsObj.add("item", itemArray);
+		inputsObj.add("gtceu:item", itemArray);
 		recipe.json.add("inputs", inputsObj);
 	});
 }

@@ -18,7 +18,7 @@
 	"tfg.multiblock.large_boiler.fuel_efficiency": "Fuel Efficiency: %s",
 	"tfg.emi.bacon_requirement": "Bacon - The Raw Pork must be smoked first",
 	"tfg.emi.large_boiler_booster.temperature_bonus": "Pressure Bonus: %s",
-	"tfg.emi.large_boiler_booster.min_boiler": "Requires: %s boiler",
+	"tfg.emi.large_boiler_booster.min_tier": "Requires Booster Module %s (%s)",
 	"emi.category.tfg.block_interaction": "Block Modifications",
 	"emi.category.tfg.large_boiler_booster": "Large Boiler Booster",
 
