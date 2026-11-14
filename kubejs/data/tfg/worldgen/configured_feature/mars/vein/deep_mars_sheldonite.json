@@ -26,7 +26,7 @@
             "weight": 1
           },
           {
-            "block": "gtceu:red_granite_cooperite_ore",
+            "block": "gtceu:red_granite_ruarsite_ore",
             "weight": 25
           },
           {
@@ -34,7 +34,7 @@
             "weight": 25
           },
           {
-            "block": "gtceu:red_granite_platinum_ore",
+            "block": "gtceu:red_granite_ferhodsite_ore",
             "weight": 15
           }
         ]
@@ -53,7 +53,7 @@
             "weight": 1
           },
           {
-            "block": "gtceu:gabbro_cooperite_ore",
+            "block": "gtceu:gabbro_ruarsite_ore",
             "weight": 25
           },
           {
@@ -61,7 +61,7 @@
             "weight": 25
           },
           {
-            "block": "gtceu:gabbro_platinum_ore",
+            "block": "gtceu:gabbro_ferhodsite_ore",
             "weight": 15
           }
         ]
@@ -80,7 +80,7 @@
             "weight": 1
           },
           {
-            "block": "gtceu:diorite_cooperite_ore",
+            "block": "gtceu:diorite_ruarsite_ore",
             "weight": 25
           },
           {
@@ -88,7 +88,7 @@
             "weight": 25
           },
           {
-            "block": "gtceu:diorite_platinum_ore",
+            "block": "gtceu:diorite_ferhodsite_ore",
             "weight": 15
           }
         ]
@@ -107,7 +107,7 @@
             "weight": 1
           },
           {
-            "block": "gtceu:granite_cooperite_ore",
+            "block": "gtceu:granite_ruarsite_ore",
             "weight": 25
           },
           {
@@ -115,7 +115,7 @@
             "weight": 25
           },
           {
-            "block": "gtceu:granite_platinum_ore",
+            "block": "gtceu:granite_ferhodsite_ore",
             "weight": 15
           }
         ]
@@ -132,7 +132,7 @@
           "weight": 35
         },
         {
-          "block": "gtceu:cooperite_indicator",
+          "block": "gtceu:ruarsite_indicator",
           "weight": 25
         },
         {
@@ -140,7 +140,7 @@
           "weight": 25
         },
         {
-          "block": "gtceu:platinum_indicator",
+          "block": "gtceu:ferhodsite_indicator",
           "weight": 15
         }
       ]
