@@ -1,0 +1,19 @@
+{
+	"type": "tfg:large_lake",
+	"config": {
+		"is_encased": true,
+		"depth": 10,
+		"barrier": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "tfg:venus_hornfels"
+			}
+		},
+		"fluid": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "create:chocolate"
+			}
+		}
+	}
+}

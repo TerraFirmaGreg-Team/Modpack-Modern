@@ -597,8 +597,6 @@ function registerGTCEuMachineRecipes(event) {
 
 	//#region ULV Hatches
 
-	event.replaceInput({ id: 'gtceu:shaped/ulv_machine_hull' }, '#forge:plates/wood', '#forge:plates/lead')
-
 	event.recipes.gtceu.shaped('gtceu:ulv_input_bus', [
 		'CAC',
 		'CBC',
@@ -690,9 +688,9 @@ function registerGTCEuMachineRecipes(event) {
 	]
 
 	DRUMS_AND_CRATES.forEach(material => {
-		event.shapeless(`gtceu:${material}_drum`, [`gtceu:${material}_drum`]).id(`tfg:shapeless/drum_nbt_${material}`)
+		event.shapeless(`tfg:${material}_drum`, [`tfg:${material}_drum`]).id(`tfg:shapeless/drum_nbt_${material}`)
 
-		event.shaped(`gtceu:${material}_drum`, [
+		event.shaped(`tfg:${material}_drum`, [
 			' A ',
 			'BCB',
 			'BCB'
@@ -702,7 +700,7 @@ function registerGTCEuMachineRecipes(event) {
 			C: `#forge:rods/long/${material}`
 		}).id(`tfg:shaped/${material}_drum`)
 
-		event.shaped(`gtceu:${material}_crate`, [
+		event.shaped(`tfg:${material}_crate`, [
 			'CBC',
 			'BAB',
 			'CBC'
@@ -714,7 +712,7 @@ function registerGTCEuMachineRecipes(event) {
 
 		event.recipes.gtceu.assembler(`gtceu:${material}_drum`)
 			.itemInputs(`4x #forge:plates/${material}`, `2x #forge:rods/long/${material}`)
-			.itemOutputs(`gtceu:${material}_drum`)
+			.itemOutputs(`tfg:${material}_drum`)
 			.duration(200)
 			.EUt(16)
 			.circuit(2)
@@ -722,7 +720,7 @@ function registerGTCEuMachineRecipes(event) {
 
 		event.recipes.gtceu.assembler(`gtceu:${material}_crate`)
 			.itemInputs(`4x #forge:plates/${material}`, `4x #forge:rods/long/${material}`)
-			.itemOutputs(`gtceu:${material}_crate`)
+			.itemOutputs(`tfg:${material}_crate`)
 			.duration(200)
 			.EUt(16)
 			.circuit(1)
@@ -954,4 +952,16 @@ function registerGTCEuMachineRecipes(event) {
 		E: 'gtceu:hv_electric_motor',
 		F: '#forge:single_cables/gold'
 	}).addMaterialInfo().id('tfg:shaped/steam_turbine_hv')
+
+	event.recipes.gtceu.shaped('tfg:pyrolyse_oven', [
+		'ABC',
+		'BDB',
+		'AEC'
+	], {
+		A: 'gtceu:mv_electric_piston',
+		B: '#gtceu:circuits/mv',
+		C: 'gtceu:cupronickel_quadruple_wire',
+		D: 'gtceu:mv_machine_hull',
+		E: 'gtceu:mv_electric_pump'
+	}).addMaterialInfo().id('tfg:shaped/pyrolyse_oven');
 }

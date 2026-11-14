@@ -398,7 +398,7 @@
 					],
 					"mapping": {
 						"0": "minecraft:air",
-						"V": "gtceu:bismuth_bronze_crate",
+						"V": "tfg:bismuth_bronze_crate",
 						"L": "create:stock_link[face=wall,facing=north]",
 						"P": "create:packager[facing=west,linked=true]",
 						"C": "create_connected:brass_chute",

@@ -83,7 +83,7 @@ function registerTFGCircuitBoardsRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	function lensPolishing(event, fluid, colour, slurry, temp, energy) {
-		event.recipes.gtceu.high_temperature_precision_fabricator(`tfg:lens_${fluid}_${colour}`)
+		event.recipes.tfg.high_temperature_precision_fabricator(`tfg:lens_${fluid}_${colour}`)
 			.itemInputs('tfg:worked_optical_borosilicate_blank', '#tfg:precision_fabricator_holder_rods')
 			.inputFluids(Fluid.of(`tfg:${slurry}_${fluid}_slurry`, 1000))
 			.itemOutputs(Item.of(`#forge:lenses/${colour}`, 1))

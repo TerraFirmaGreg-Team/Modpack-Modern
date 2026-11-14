@@ -306,22 +306,6 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfc:powder/native_gold",
-					"weight": 100,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 10,
-								"min": 6
-							},
-							"function": "minecraft:set_count"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
 					"name": "gtceu:rose_gold_nugget",
 					"weight": 100,
 					"functions": [
@@ -353,7 +337,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfc:powder/saltpeter",
+					"name": "gtceu:saltpeter_dust",
 					"weight": 100,
 					"functions": [
 						{

@@ -3,7 +3,7 @@
 
 function registerGTCEUTerminalRecipes(event) {
 
-
+/*
     // Gregtech CEu Terminals Integration
 
 	event.remove({ id : 'gtceuterminal:dismantler' })
@@ -47,5 +47,5 @@ function registerGTCEUTerminalRecipes(event) {
 		E: '#gtceu:batteries/iv',
 		F: '#forge:plates/tungsten_steel'
 	}).id(`tfg:shaped/schematic_interface`)
-	
+	*/
     }	

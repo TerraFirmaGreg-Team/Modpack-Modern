@@ -10,6 +10,9 @@
             "category": "minecraft:blasting"
         },
         {
+            "category": "minecraft:smoking"
+        },
+        {
             "category": "emi:anvil_repairing"
         },
         {
@@ -23,6 +26,9 @@
         },
         {
             "category": "create:fan_blasting"
+        },
+        {
+            "category": "create:fan_smoking"
         },
         {
             "category": "jumbofurnace:jumbo_furnace_upgrade"

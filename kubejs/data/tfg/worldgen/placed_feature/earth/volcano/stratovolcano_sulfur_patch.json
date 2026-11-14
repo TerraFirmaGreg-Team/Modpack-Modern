@@ -1,0 +1,20 @@
+{
+    "feature": "tfg:earth/volcano/sulfur_patch",
+    "placement": [
+        {
+            "type": "minecraft:count",
+            "count": 3
+        },
+        {
+            "type": "minecraft:in_square"
+        },
+        {
+            "min_easing": 0.8,
+            "type": "tfc:stratovolcano"
+        },
+        {
+            "type": "minecraft:heightmap",
+            "heightmap": "WORLD_SURFACE"
+        }
+    ]
+}

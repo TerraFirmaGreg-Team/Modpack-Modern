@@ -359,39 +359,6 @@ global.TFC_DOUGHS = /** @type {const} */ ([
     "wheat"
 ]);
 
- global.TFC_BIOMES = /** @type {const} */ ([
-     'tfc:badlands',
-     'tfc:canyons',
-     'tfc:deep_ocean',
-     'tfc:deep_ocean_trench',
-     'tfc:highlands',
-     'tfc:hills',
-     'tfc:inverted_badlands',
-     'tfc:lake',
-     'tfc:low_canyons',
-     'tfc:lowlands',
-     'tfc:mountain_lake',
-     'tfc:mountains',
-     'tfc:ocean',
-     'tfc:ocean_reef',
-     'tfc:oceanic_mountain_lake',
-     'tfc:oceanic_mountains',
-     'tfc:old_mountain_lake',
-     'tfc:old_mountains',
-     'tfc:plains',
-     'tfc:plateau',
-     'tfc:plateau_lake',
-     'tfc:river',
-     'tfc:rolling_hills',
-     'tfc:salt_marsh',
-     'tfc:shore',
-     'tfc:tidal_flats',
-     'tfc:volcanic_mountain_lake',
-     'tfc:volcanic_mountains',
-     'tfc:volcanic_oceanic_mountain_lake',
-     'tfc:volcanic_oceanic_mountains'
- ])
-
 global.NEW_TFC_BIOMES = /** @type {const} */ ([
     'tfg:earth/active_shield_volcano',
     'tfg:earth/ancient_shield_volcano',
@@ -501,5 +468,21 @@ global.NEW_TFC_BIOMES = /** @type {const} */ ([
     'tfg:earth/volcanic_mountains',
     'tfg:earth/volcanic_oceanic_mountain_lake',
     'tfg:earth/volcanic_oceanic_mountains',
-    'tfg:earth/whorled_canyons'
+    'tfg:earth/whorled_canyons',
+    "tfg:earth/oceanic_volcanic_arc",
+    "tfg:earth/ocean_atolls",
+    "tfg:earth/deep_ocean_atolls",
+    "tfg:earth/ocean_ridge",
+    "tfg:earth/rift_lake",
+    "tfg:earth/rift_valley",
+    "tfg:earth/collisional_mountains",
+    "tfg:earth/river_valley",
+    "tfg:earth/volcanic_mountain_islands",
+    "tfg:earth/volcanic_island",
+    "tfg:earth/ice_sheet_volcanic_mountains",
+    "tfg:earth/ice_sheet_volcanic_oceanic_mountains",
+    "tfg:earth/glaciated_volcanic_mountains",
+    "tfg:earth/glaciated_volcanic_oceanic_mountains",
+    "tfg:earth/glacially_carved_volcanic_mountains",
+    "tfg:earth/glacially_carved_volcanic_oceanic_mountains",
 ])

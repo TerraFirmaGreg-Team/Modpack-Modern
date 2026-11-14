@@ -60,7 +60,7 @@ function registerTFGMoSiBRecipes(event) {
 		.duration(82 * 20)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	event.recipes.gtceu.gas_pressurizer('tfg:highly_active_off_gas')
+	event.recipes.tfg.gas_pressurizer('tfg:highly_active_off_gas')
         .inputFluids(Fluid.of('tfg:medium_temperature_off_gas', 100), Fluid.of('tfg:linac_activated_gas', 100), Fluid.of('tfg:hydroxide_decomposition_off_gas', 100))
 		.outputFluids(Fluid.of('tfg:highly_active_off_gas', 100))
 		.duration(37 * 20)
@@ -73,7 +73,7 @@ function registerTFGMoSiBRecipes(event) {
 		.duration(18 * 20)
 		.EUt(GTValues.VA[GTValues.EV])
 
-	event.recipes.gtceu.ostrum_linear_accelerator('tfg:activated_mo_si_b_ingot')
+	event.recipes.tfg.ostrum_linear_accelerator('tfg:activated_mo_si_b_ingot')
 		.perTick(true)
 		.inputFluids(Fluid.of('gtceu:residual_radioactive_concoction', 1))
 		.perTick(false)

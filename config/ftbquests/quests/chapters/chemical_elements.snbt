@@ -1580,7 +1580,16 @@
 			subtitle: "{quests.chemical_elements.element} #82"
 			tasks: [{
 				id: "40C5C1A1726CCDBC"
-				item: "gtceu:lead_dust"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "gtceu:lead_dust"
+				}
 				type: "item"
 			}]
 			title: "{material.gtceu.lead}"
@@ -1604,7 +1613,16 @@
 			subtitle: "{quests.chemical_elements.element} #83"
 			tasks: [{
 				id: "141D63D0A43D2470"
-				item: "gtceu:bismuth_dust"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "gtceu:bismuth_dust"
+				}
 				type: "item"
 			}]
 			title: "{material.gtceu.bismuth}"
@@ -1876,6 +1894,34 @@
 			title: "{material.gtceu.neutronium}"
 			x: 0.0d
 			y: -1.0d
+		}
+		{
+			description: ["{quests.chemical_elements.selenium.desc}"]
+			disable_toast: true
+			id: "539A099E9AFE9A3C"
+			subtitle: "{quests.chemical_elements.element} #34"
+			tasks: [{
+				id: "4F4C254D08158F03"
+				item: "gtceu:selenium_dust"
+				type: "item"
+			}]
+			title: "{material.gtceu.selenium}"
+			x: 15.0d
+			y: 3.0d
+		}
+		{
+			description: ["{quests.chemical_elements.tellurium.desc}"]
+			disable_toast: true
+			id: "4747A6E1F03B49A1"
+			subtitle: "{quests.chemical_elements.element} #52"
+			tasks: [{
+				id: "77279F144E932986"
+				item: "gtceu:tellurium_dust"
+				type: "item"
+			}]
+			title: "{material.gtceu.tellurium}"
+			x: 15.0d
+			y: 4.0d
 		}
 	]
 	title: "{quests.chemical_elements.chapter_title}"

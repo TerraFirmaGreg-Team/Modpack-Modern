@@ -35,7 +35,7 @@ function registerTFGAsphaltRoadRecipes(event) {
 	event.recipes.gtceu.macerator('tfg:asphalt/macerate/tar_to_carbon')
 		.itemInputs('1x #tfg:asphalt_tars')
 		.itemOutputs('1x gtceu:carbon_dust')
-		.chancedOutput('1x #forge:dusts/gilsonite', 2500, 0)
+		.chancedOutput('1x #forge:dusts/gilsonite', 2500)
 		.duration(160)
 		.EUt(2)
 

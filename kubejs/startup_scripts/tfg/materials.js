@@ -6,6 +6,7 @@ const registerTFGMaterials = (event) => {
 	const $BlastProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty")
 
 	//#region placeholder materials
+
 	event.create('unknown')
 		.color('0xFFFFFF')
 		.formula('?')
@@ -61,6 +62,8 @@ const registerTFGMaterials = (event) => {
 	registerTFGAluminaMaterials(event)
 	registerTFGGemSlurryMaterials(event);
 	registerTFGMiscAlloyMaterials(event);
+	registerTFGCasingsMaterials(event);
+	registerTFGPetroChemMaterials(event);
 
 
 	// Crafting components

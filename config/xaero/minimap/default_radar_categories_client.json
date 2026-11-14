@@ -123,7 +123,13 @@
 						"tfc:sabertooth",
 						"tfc:tiger",
 						"tfc:wildebeest",
-						"tfc:wolf"
+						"tfc:wolf",
+						"wan_ancient_beasts:eater",
+						"arthropocolypse:soldier_ant",
+						"arthropocolypse:stag_beetle",
+						"arthropocolypse:millipede_body",
+						"arthropocolypse:millipede_tail",
+						"aliencraft_kepler:tree_mite"
 					],
 					"includeListInSuperCategory": true,
 					"excludeMode": "ONLY",
@@ -186,7 +192,13 @@
 						"tfc:sabertooth",
 						"tfc:tiger",
 						"tfc:wildebeest",
-						"tfc:wolf"
+						"tfc:wolf",
+						"wan_ancient_beasts:eater",
+						"arthropocolypse:soldier_ant",
+						"arthropocolypse:stag_beetle",
+						"arthropocolypse:millipede_body",
+						"arthropocolypse:millipede_tail",
+						"aliencraft_kepler:tree_mite"
 					],
 					"name": "gui.xaero_entity_category_friendly",
 					"protection": true,

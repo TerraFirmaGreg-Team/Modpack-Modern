@@ -233,7 +233,8 @@
   },
   "tfg": {
     "dynamic_age": true,
-    "tier_locked_block_info": true
+    "tier_locked_block_info": true,
+    "tier_locked_block_acid_info": true
   },
   "jadeaddons.lootr": {
     "info": true

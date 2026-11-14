@@ -24,6 +24,7 @@ StartupEvents.registry('block', event => {
 
 BlockEvents.modification(event => {
 	registerAdAstraBlockModifications(event)
+	registerAliencraftBlockModification(event)
 	registerBeneathBlockModifications(event)
 	registerSpeciesBlockModifications(event)
 	registerMinecraftBlockModifications(event)
@@ -59,7 +60,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 })
 
 GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
-	registerAE2TagPrefixes(event)
 	registerGTCEuTagPrefixes(event)
 	registerTFGTagPrefixes(event)
 })

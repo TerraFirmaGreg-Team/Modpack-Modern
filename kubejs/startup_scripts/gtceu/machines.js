@@ -179,7 +179,7 @@ const registerGTCEuMachines = (event) => {
 	event.create('nuclear_fuel_factory', 'multiblock')
 		.machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
 		.rotationState(RotationState.NON_Y_AXIS)
-		.recipeType('nuclear_fuel_factory')
+		.recipeType('tfg:nuclear_fuel_factory')
         .recipeModifiers(
             [
                 GTRecipeModifiers.PARALLEL_HATCH,
@@ -222,7 +222,7 @@ const registerGTCEuMachines = (event) => {
 /*
 	event.create('heat_exchanger', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
-		.recipeType('heat_exchanger')
+		.recipeType('tfg:heat_exchanger')
         .recipeModifiers([GTRecipeModifiers.OC_PERFECT_SUBTICK, GTRecipeModifiers.BATCH_MODE])
 		.appearanceBlock(() => Block.getBlock('gtceu:high_temperature_smelting_casing'))
 		.pattern(definition => FactoryBlockPattern.start()

@@ -5,7 +5,7 @@ function registerTFGBuddingRecipes(event) {
 	}
 
     requiresOxygenation(
-    event.recipes.gtceu.budding_charger('tfg:tier_1')
+    event.recipes.tfg.budding_charger('tfg:tier_1')
         .inputFluids(Fluid.of('minecraft:water', 1000))
         .addData("budding_charge", 1)
         .addData("budding_max_tier", 1)
@@ -13,7 +13,7 @@ function registerTFGBuddingRecipes(event) {
         .duration(20*20))
 
     requiresOxygenation(
-    event.recipes.gtceu.budding_charger('tfg:tier_2')
+    event.recipes.tfg.budding_charger('tfg:tier_2')
         .itemInputs(Item.of('ae2:certus_quartz_dust', 5))
         .addData("budding_charge", 1)
         .addData("budding_max_tier", 2)
@@ -21,7 +21,7 @@ function registerTFGBuddingRecipes(event) {
         .duration(20*5))
 
     requiresOxygenation(
-    event.recipes.gtceu.budding_charger('tfg:tier_3')
+    event.recipes.tfg.budding_charger('tfg:tier_3')
         .itemInputs(Item.of('ae2:charged_certus_quartz_crystal', 5))
         .addData("budding_charge", 1)
         .addData("budding_max_tier", 3)
@@ -29,7 +29,7 @@ function registerTFGBuddingRecipes(event) {
         .duration(20*5))
 
     requiresOxygenation(
-    event.recipes.gtceu.budding_charger('tfg:tier_4')
+    event.recipes.tfg.budding_charger('tfg:tier_4')
         .itemInputs(Item.of('ae2:fluix_crystal', 5))
         .addData("budding_charge", 1)
         .addData("budding_max_tier", 4)

@@ -33,11 +33,11 @@
         },
         {
             "type": "patchouli:spotlight",
-            "item": "tfc:powder/saltpeter",
+            "item": "gtceu:saltpeter_dust",
             "anchor": "saltpeter",
             "title": "Saltpeter",
             "link_recipes": false,
-            "text": "Saltpeter is made from its ore. $(br)$(li)$(b)Nitrogen: 10$()$(li)$(d)Potassium: 40$()"
+            "text": "Saltpeter is made from its ore. $(br)$(li)$(b)Nitrogen: 20$()$(li)$(d)Potassium: 80$()"
         },
         {
             "type": "patchouli:spotlight",
@@ -57,11 +57,11 @@
         },
         {
             "type": "patchouli:spotlight",
-            "item": "tfc:powder/sylvite",
+            "item": "gtceu:rock_salt_dust",
             "anchor": "sylvite",
             "title": "Sylvite",
             "link_recipes": false,
-            "text": "Sylvite is made from its ore. $(br)$(li)$(d)Potassium: 50$()"
+            "text": "Sylvite is made from its ore. $(br)$(li)$(d)Potassium: 80$()"
         },
         {
             "type": "patchouli:spotlight",
@@ -99,7 +99,7 @@
           "tfc:groundcover/guano": 5,
           "firmalife:jar/guano": 5,
           "tfc:powder/wood_ash": 6,
-          "tfc:powder/sylvite": 7,
+          "gtceu:rock_salt_dust": 7,
           "tfc:pure_nitrogen": 8,
           "tfc:pure_potassium": 8,
           "tfc:pure_phosphorus": 8,

@@ -870,13 +870,13 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfc:powder/graphite",
+					"name": "gtceu:graphite_dust",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
-								"min": 4,
-								"max": 16,
+								"min": 1,
+								"max": 4,
 								"type": "minecraft:uniform"
 							}
 						}

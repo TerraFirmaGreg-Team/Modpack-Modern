@@ -76,6 +76,11 @@ function registerTFGRepairRecipes(event) {
 		{ item: "ad_astra:netherite_space_pants", material: "gtceu:repair_kit_tungsten_carbide" },
 		{ item: "ad_astra:netherite_space_boots", material: "gtceu:repair_kit_tungsten_carbide" },
 
+		{ item: "ad_astra:netherite_space_helmet", material: "gtceu:repair_kit_ostrum_iodide" },
+		{ item: "ad_astra:netherite_space_suit", material: "gtceu:repair_kit_ostrum_iodide" },
+		{ item: "ad_astra:netherite_space_pants", material: "gtceu:repair_kit_ostrum_iodide" },
+		{ item: "ad_astra:netherite_space_boots", material: "gtceu:repair_kit_ostrum_iodide" },
+
 		{ item: "tfcambiental:wool_hat", material: "tfc:wool_cloth" },
 		{ item: "tfcambiental:wool_sweater", material: "tfc:wool_cloth" },
 		{ item: "tfcambiental:wool_pants", material: "tfc:wool_cloth" },
@@ -117,7 +122,9 @@ function registerTFGRepairRecipes(event) {
 
 		{ item: "hangglider:reinforced_hang_glider", material: "sns:reinforced_fabric" },
 		{ item: "minecraft:crossbow", material: "gtceu:repair_kit_wrought_iron" },
-		{ item: "species:crankbow", material: "gtceu:repair_kit_wrought_iron" }
+		{ item: "species:crankbow", material: "gtceu:repair_kit_wrought_iron" },
+
+		{ item: "aliencraft_kepler:alien_goo_gun", material: "gtceu:repair_kit_hsse" }
 	]
 
 	const SPECIAL_TAG_REPAIRS = [

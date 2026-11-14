@@ -46,7 +46,7 @@
 				"{@pagebreak}"
 				"{quests.medium_voltage.pyrolyse.desc.4}"
 			]
-			icon: "gtceu:pyrolyse_oven"
+			icon: "tfg:pyrolyse_oven"
 			id: "53DC6E32C41C94C3"
 			optional: true
 			shape: "square"
@@ -54,7 +54,7 @@
 			subtitle: "{quests.medium_voltage.pyrolyse.subtitle}"
 			tasks: [{
 				id: "0FD2962C232149F8"
-				item: "gtceu:pyrolyse_oven"
+				item: "tfg:pyrolyse_oven"
 				type: "item"
 			}]
 			title: "{quests.medium_voltage.pyrolyse.title}"
@@ -455,7 +455,16 @@
 			subtitle: "{quests.medium_voltage.mv_steel_alloy.subtitle}"
 			tasks: [{
 				id: "2E6C71CB2E5EEAC7"
-				item: "gtceu:vanadium_steel_ingot"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "gtceu:vanadium_steel_ingot"
+				}
 				type: "item"
 			}]
 			title: "{quests.medium_voltage.mv_steel_alloy.title}"

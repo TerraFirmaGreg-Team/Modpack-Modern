@@ -17,7 +17,7 @@ const registerMegaCellsRecipes = (event) => {
     // Energy Cell
     
     requiresOxygenation(
-    event.recipes.gtceu.me_assembler('megacells:mega_energy_cell')
+    event.recipes.tfg.me_assembler('megacells:mega_energy_cell')
         .itemInputs('8x ae2:dense_energy_cell', '8x gtceu:nichrome_quadruple_wire', '4x #gtceu:circuits/iv')
         .itemOutputs('megacells:mega_energy_cell')
         .duration(20*240)
@@ -28,7 +28,7 @@ const registerMegaCellsRecipes = (event) => {
 
     // Pattern Provider
     requiresOxygenation(
-    event.recipes.gtceu.me_assembler('tfg:mega_pattern_provider')
+    event.recipes.tfg.me_assembler('tfg:mega_pattern_provider')
 		.itemInputs(
 			'gtceu:ev_robot_arm',
 			'2x #forge:rods/long/titanium',
@@ -60,7 +60,7 @@ const registerMegaCellsRecipes = (event) => {
 	// Accumulation Processor
 
     requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:accumulation_processor')
+	event.recipes.tfg.me_assembler('ae2:accumulation_processor')
 		.itemInputs(
 			'ae2:printed_silicon',
 			'megacells:printed_accumulation_processor',
@@ -75,7 +75,7 @@ const registerMegaCellsRecipes = (event) => {
         .circuit(1))
 
     requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:accumulation_processor_cr')
+	event.recipes.tfg.me_assembler('ae2:accumulation_processor_cr')
 		.itemInputs(
 			'ae2:printed_silicon',
 			'megacells:printed_accumulation_processor',
@@ -110,7 +110,7 @@ const registerMegaCellsRecipes = (event) => {
 
     //Mega Item Cell Housing
     requiresOxygenation(
-    event.recipes.gtceu.me_assembler('megacells:mega_item_cell_housing')
+    event.recipes.tfg.me_assembler('megacells:mega_item_cell_housing')
         .itemInputs(
  			'1x #gtceu:circuits/iv',
 			'2x #forge:fine_wires/niobium_titanium',
@@ -131,7 +131,7 @@ const registerMegaCellsRecipes = (event) => {
     //Mega Fluid Cell Housing
     
     requiresOxygenation(
-    event.recipes.gtceu.me_assembler('megacells:mega_fluid_cell_housing')
+    event.recipes.tfg.me_assembler('megacells:mega_fluid_cell_housing')
         .itemInputs(
  			'1x #gtceu:circuits/iv',
 			'2x #forge:fine_wires/niobium_titanium',
@@ -164,7 +164,7 @@ const registerMegaCellsRecipes = (event) => {
 
     // 1m storage components
     requiresOxygenation(
-    event.recipes.gtceu.me_assembler('megacells:cell_component_1m')
+    event.recipes.tfg.me_assembler('megacells:cell_component_1m')
         .itemInputs(
  			'4x #gtceu:circuits/zpm',
 			'32x gtceu:hpic_chip',
@@ -187,7 +187,7 @@ const registerMegaCellsRecipes = (event) => {
 
     // 4m storage components
     requiresOxygenation(
-    event.recipes.gtceu.me_assembler('megacells:cell_component_4m')
+    event.recipes.tfg.me_assembler('megacells:cell_component_4m')
         .itemInputs(
  			'4x #gtceu:circuits/uv',
 			'64x gtceu:advanced_soc',
@@ -210,7 +210,7 @@ const registerMegaCellsRecipes = (event) => {
 
     // 16m storage components
     requiresOxygenation(
-    event.recipes.gtceu.me_assembler('megacells:cell_component_16m')
+    event.recipes.tfg.me_assembler('megacells:cell_component_16m')
         .itemInputs(
  			'4x #gtceu:circuits/uhv',
 			'64x gtceu:uhpic_chip',
@@ -235,7 +235,7 @@ const registerMegaCellsRecipes = (event) => {
 
     // 64m storage components
     requiresOxygenation(
-    event.recipes.gtceu.me_assembler('megacells:cell_component_64m')
+    event.recipes.tfg.me_assembler('megacells:cell_component_64m')
         .itemInputs(
  			'8x #gtceu:circuits/uhv',
 			'64x gtceu:uhpic_chip',
@@ -417,7 +417,7 @@ const registerMegaCellsRecipes = (event) => {
     //#region Crafting Unit
 
     requiresOxygenation(
-    event.recipes.gtceu.me_assembler('megacells:mega_crafting_unit')
+    event.recipes.tfg.me_assembler('megacells:mega_crafting_unit')
         .itemInputs(
             '4x megacells:accumulation_processor',
             '4x ae2:logic_processor',

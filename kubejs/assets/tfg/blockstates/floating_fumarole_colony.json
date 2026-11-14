@@ -1,0 +1,14 @@
+{
+	"variants": {
+		"": [
+			{
+				"model": "betterend:block/umbrella_tree_cluster",
+				"weight": 1
+			},
+			{
+				"model": "betterend:block/umbrella_tree_cluster_empty",
+				"weight": 3
+			}
+		]
+	}
+}

@@ -18,8 +18,8 @@
 						"hardened": "tfg:rock/hardened_venus_stone",
 						"gravel": "tfg:rock/gravel_venus",
 						"cobble": "ad_astra:venus_cobblestone",
-						"sand": "ad_astra:venus_sand",
-						"sandstone": "ad_astra:venus_sandstone",
+						"sand": "tfc:sand/yellow",
+						"sandstone": "tfc:raw_sandstone/yellow",
 						"spike": "tfg:spike/venus_stone_spike",
 						"mossy": "tfg:rock/mossy_cobble_venus",
 						"loose": "tfg:loose/venus_stone"
@@ -79,8 +79,8 @@
 						"hardened": "tfg:rock/hardened_sandy_jadestone",
 						"gravel": "tfg:rock/gravel_sandy_jadestone",
 						"cobble": "tfg:rock/cobble_sandy_jadestone",
-						"sand": "tfc:sand/green",
-						"sandstone": "tfc:raw_sandstone/green",
+						"sand": "tfc:sand/white",
+						"sandstone": "tfc:raw_sandstone/white",
 						"spike": "tfg:spike/sandy_jadestone_spike",
 						"loose": "tfg:loose/sandy_jadestone"
 					},
@@ -114,6 +114,39 @@
 						"spike": "tfg:spike/scorchia_spike",
 						"loose": "tfg:loose/scorchia"
 					},
+					"blackstone": {
+						"raw": "minecraft:blackstone",
+						"hardened": "tfg:rock/hardened_blackstone",
+						"gravel": "tfg:rock/gravel_blackstone",
+						"cobble": "tfg:rock/cobble_blackstone",
+						"mossy": "tfg:rock/mossy_cobble_blackstone",
+						"sand": "tfc:sand/black",
+						"sandstone": "tfc:raw_sandstone/black",
+						"spike": "tfg:spike/blackstone_spike",
+						"loose": "beneath:blackstone_pebble"
+					},
+					"tuff": {
+						"raw": "minecraft:tuff",
+						"hardened": "tfg:rock/hardened_tuff",
+						"gravel": "tfg:tuff_gravel",
+						"cobble": "tfg:rock/cobble_tuff",
+						"mossy": "tfg:rock/mossy_cobble_tuff",
+						"sand": "tfc:sand/pink",
+						"sandstone": "tfc:raw_sandstone/pink",
+						"spike": "tfg:spike/tuff_spike",
+						"loose": "tfg:loose/tuff"
+					},
+					"geyserite": {
+						"raw": "tfg:rock/raw/geyserite",
+						"hardened": "tfg:rock/raw/geyserite",
+						"gravel": "tfg:rock/raw/geyserite",
+						"cobble": "tfg:rock/raw/geyserite",
+						"mossy": "tfg:rock/raw/geyserite",
+						"sand": "tfc:sand/white",
+						"sandstone": "tfc:raw_sandstone/white",
+						"spike": "tfg:rock/spike/geyserite",
+						"loose": "minecraft:air"
+					},
 					"granite": "tfc:granite",
 					"diorite": "tfc:diorite",
 					"gabbro": "tfc:gabbro",
@@ -146,7 +179,9 @@
 							"schist": "bottom",
 							"gneiss": "bottom",
 							"quartzite": "bottom",
-							"flavolite": "bottom"
+							"flavolite": "bottom",
+							"venus": "bottom",
+							"sandy_jadestone": "bottom"
 						}
 					},
 					{
@@ -162,22 +197,21 @@
 					{
 						"id": "top",
 						"layers": {
-							"venus": "metamorphic",
+							"venus": "middle",
 							"dripstone": "metamorphic",
-							"rhyolite": "middle",
-							"basalt": "middle",
-							"andesite": "middle",
-							"dacite": "middle",
+							"red_granite": "middle",
 							"flavolite": "middle",
-							"sandy_jadestone": "middle"
+							"sandy_jadestone": "middle",
+							"basalt": "middle",
+							"tuff": "metamorphic"
 						}
 					}
 				],
 				"bottom": [
 					"red_granite",
-					"diorite",
 					"gabbro",
 					"norite",
+					"blackstone",
 					"deepslate"
 				],
 				"ocean_floor": [
@@ -208,7 +242,7 @@
 							"continentalness": -1,
 							"erosion": -0.05,
 							"weirdness": -0.2,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"offset": 0
 						}
 					},
@@ -220,7 +254,7 @@
 							"continentalness": -1,
 							"erosion": -0.05,
 							"weirdness": 0,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"offset": 0
 						}
 					},
@@ -232,7 +266,7 @@
 							"continentalness": -1,
 							"erosion": -0.05,
 							"weirdness": 0.2,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"offset": 0
 						}
 					},
@@ -244,7 +278,7 @@
 							"continentalness": -1,
 							"erosion": 0.05,
 							"weirdness": -0.2,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"offset": 0
 						}
 					},
@@ -256,7 +290,7 @@
 							"continentalness": -1,
 							"erosion": 0.05,
 							"weirdness": 0,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"offset": 0
 						}
 					},
@@ -268,7 +302,7 @@
 							"continentalness": -1,
 							"erosion": 0.05,
 							"weirdness": 0.2,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"offset": 0
 						}
 					},
@@ -282,7 +316,7 @@
 							"continentalness": -0.57,
 							"erosion": -0.05,
 							"weirdness": -0.2,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"offset": 0
 						}
 					},
@@ -294,7 +328,7 @@
 							"continentalness": -0.57,
 							"erosion": -0.05,
 							"weirdness": 0,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"offset": 0
 						}
 					},
@@ -306,7 +340,7 @@
 							"continentalness": -0.57,
 							"erosion": -0.05,
 							"weirdness": 0.2,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"offset": 0
 						}
 					},
@@ -318,7 +352,7 @@
 							"continentalness": -0.57,
 							"erosion": 0.05,
 							"weirdness": -0.2,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"offset": 0
 						}
 					},
@@ -330,7 +364,7 @@
 							"continentalness": -0.57,
 							"erosion": 0.05,
 							"weirdness": 0,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"offset": 0
 						}
 					},
@@ -342,7 +376,7 @@
 							"continentalness": -0.57,
 							"erosion": 0.05,
 							"weirdness": 0.2,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"offset": 0
 						}
 					},
@@ -355,7 +389,7 @@
 							"humidity": 0,
 							"continentalness": -0.54,
 							"erosion": -0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": -0.2,
 							"offset": 0
 						}
@@ -367,7 +401,7 @@
 							"humidity": 0,
 							"continentalness": -0.54,
 							"erosion": -0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": 0,
 							"offset": 0
 						}
@@ -379,7 +413,7 @@
 							"humidity": 0,
 							"continentalness": -0.54,
 							"erosion": -0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": 0.2,
 							"offset": 0
 						}
@@ -392,7 +426,7 @@
 							"humidity": 0,
 							"continentalness": -0.54,
 							"erosion": 0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": -0.2,
 							"offset": 0
 						}
@@ -404,7 +438,7 @@
 							"humidity": 0,
 							"continentalness": -0.54,
 							"erosion": 0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": 0,
 							"offset": 0
 						}
@@ -416,7 +450,7 @@
 							"humidity": 0,
 							"continentalness": -0.54,
 							"erosion": 0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": 0.2,
 							"offset": 0
 						}
@@ -430,7 +464,7 @@
 							"humidity": 0,
 							"continentalness": -0.415,
 							"erosion": -0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": -0.2,
 							"offset": 0
 						}
@@ -442,7 +476,7 @@
 							"humidity": 0,
 							"continentalness": -0.415,
 							"erosion": -0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": 0,
 							"offset": 0
 						}
@@ -454,7 +488,7 @@
 							"humidity": 0,
 							"continentalness": -0.415,
 							"erosion": -0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": 0.2,
 							"offset": 0
 						}
@@ -467,7 +501,7 @@
 							"humidity": 0,
 							"continentalness": -0.415,
 							"erosion": 0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": -0.2,
 							"offset": 0
 						}
@@ -479,7 +513,7 @@
 							"humidity": 0,
 							"continentalness": -0.415,
 							"erosion": 0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": 0,
 							"offset": 0
 						}
@@ -491,7 +525,7 @@
 							"humidity": 0,
 							"continentalness": -0.415,
 							"erosion": 0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": 0.2,
 							"offset": 0
 						}
@@ -506,7 +540,7 @@
 							"humidity": 0,
 							"continentalness": -0.39,
 							"erosion": 0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": -0.2,
 							"offset": 0.0
 						}
@@ -518,7 +552,7 @@
 							"humidity": 0,
 							"continentalness": -0.39,
 							"erosion": 0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": 0,
 							"offset": 0.0
 						}
@@ -530,7 +564,7 @@
 							"humidity": 0,
 							"continentalness": -0.39,
 							"erosion": 0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": 0.2,
 							"offset": 0.0
 						}
@@ -543,7 +577,7 @@
 							"humidity": 0,
 							"continentalness": 0.1,
 							"erosion": 0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": -0.2,
 							"offset": 0.0
 						}
@@ -555,7 +589,7 @@
 							"humidity": 0,
 							"continentalness": 0.1,
 							"erosion": 0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": 0,
 							"offset": 0.0
 						}
@@ -567,7 +601,7 @@
 							"humidity": 0,
 							"continentalness": 0.1,
 							"erosion": 0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": 0.2,
 							"offset": 0.0
 						}
@@ -582,7 +616,7 @@
 							"humidity": 0,
 							"continentalness": -0.39,
 							"erosion": -0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": -0.2,
 							"offset": 0.0
 						}
@@ -594,7 +628,7 @@
 							"humidity": 0,
 							"continentalness": -0.39,
 							"erosion": -0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": 0,
 							"offset": 0.0
 						}
@@ -606,7 +640,7 @@
 							"humidity": 0,
 							"continentalness": -0.39,
 							"erosion": -0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": 0.2,
 							"offset": 0.0
 						}
@@ -619,7 +653,7 @@
 							"humidity": 0,
 							"continentalness": 0.1,
 							"erosion": -0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": -0.2,
 							"offset": 0.0
 						}
@@ -631,7 +665,7 @@
 							"humidity": 0,
 							"continentalness": 0.1,
 							"erosion": -0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": 0,
 							"offset": 0.0
 						}
@@ -643,7 +677,7 @@
 							"humidity": 0,
 							"continentalness": 0.1,
 							"erosion": -0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": 0.2,
 							"offset": 0.0
 						}
@@ -657,7 +691,7 @@
 							"humidity": 0,
 							"continentalness": 0.15,
 							"erosion": 0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": -0.2,
 							"offset": 0.0
 						}
@@ -669,7 +703,7 @@
 							"humidity": 0,
 							"continentalness": 0.15,
 							"erosion": 0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": 0,
 							"offset": 0.0
 						}
@@ -681,7 +715,7 @@
 							"humidity": 0,
 							"continentalness": 0.15,
 							"erosion": 0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": 0.2,
 							"offset": 0.0
 						}
@@ -694,7 +728,7 @@
 							"humidity": 0,
 							"continentalness": 0.59,
 							"erosion": 0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": -0.2,
 							"offset": 0.0
 						}
@@ -706,7 +740,7 @@
 							"humidity": 0,
 							"continentalness": 0.59,
 							"erosion": 0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": 0,
 							"offset": 0.0
 						}
@@ -718,7 +752,7 @@
 							"humidity": 0,
 							"continentalness": 0.59,
 							"erosion": 0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": 0.2,
 							"offset": 0.0
 						}
@@ -733,7 +767,7 @@
 							"humidity": 0,
 							"continentalness": 0.15,
 							"erosion": -0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": -0.2,
 							"offset": 0.0
 						}
@@ -745,7 +779,7 @@
 							"humidity": 0,
 							"continentalness": 0.15,
 							"erosion": -0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": 0,
 							"offset": 0.0
 						}
@@ -757,7 +791,7 @@
 							"humidity": 0,
 							"continentalness": 0.15,
 							"erosion": -0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": 0.2,
 							"offset": 0.0
 						}
@@ -771,7 +805,7 @@
 							"humidity": 0,
 							"continentalness": 0.59,
 							"erosion": -0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": -0.2,
 							"offset": 0.0
 						}
@@ -783,7 +817,7 @@
 							"humidity": 0,
 							"continentalness": 0.59,
 							"erosion": -0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": 0,
 							"offset": 0.0
 						}
@@ -795,7 +829,7 @@
 							"humidity": 0,
 							"continentalness": 0.59,
 							"erosion": -0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": 0.2,
 							"offset": 0.0
 						}
@@ -811,7 +845,7 @@
 							"humidity": 0,
 							"continentalness": 0.61,
 							"erosion": 0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": -0.2,
 							"offset": 0.0
 						}
@@ -823,7 +857,7 @@
 							"humidity": 0,
 							"continentalness": 0.61,
 							"erosion": 0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": 0,
 							"offset": 0.0
 						}
@@ -835,7 +869,7 @@
 							"humidity": 0,
 							"continentalness": 0.61,
 							"erosion": 0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": 0.2,
 							"offset": 0.0
 						}
@@ -849,7 +883,7 @@
 							"humidity": 0,
 							"continentalness": 0.61,
 							"erosion": -0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": -0.2,
 							"offset": 0.0
 						}
@@ -861,7 +895,7 @@
 							"humidity": 0,
 							"continentalness": 0.61,
 							"erosion": -0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
 							"weirdness": 0,
 							"offset": 0.0
 						}
@@ -873,7 +907,692 @@
 							"humidity": 0,
 							"continentalness": 0.61,
 							"erosion": -0.05,
-							"depth": 0,
+							"depth": [ -2, 0.2 ],
+							"weirdness": 0.2,
+							"offset": 0.0
+						}
+					},
+
+
+
+
+
+
+
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -1,
+							"erosion": -0.05,
+							"weirdness": -0.2,
+							"depth": [ 0.2, 2.0 ],
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -1,
+							"erosion": -0.05,
+							"weirdness": 0,
+							"depth": [ 0.2, 2.0 ],
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -1,
+							"erosion": -0.05,
+							"weirdness": 0.2,
+							"depth": [ 0.2, 2.0 ],
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -1,
+							"erosion": 0.05,
+							"weirdness": -0.2,
+							"depth": [ 0.2, 2.0 ],
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -1,
+							"erosion": 0.05,
+							"weirdness": 0,
+							"depth": [ 0.2, 2.0 ],
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -1,
+							"erosion": 0.05,
+							"weirdness": 0.2,
+							"depth": [ 0.2, 2.0 ],
+							"offset": 0
+						}
+					},
+
+
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.57,
+							"erosion": -0.05,
+							"weirdness": -0.2,
+							"depth": [ 0.2, 2.0 ],
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.57,
+							"erosion": -0.05,
+							"weirdness": 0,
+							"depth": [ 0.2, 2.0 ],
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.57,
+							"erosion": -0.05,
+							"weirdness": 0.2,
+							"depth": [ 0.2, 2.0 ],
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.57,
+							"erosion": 0.05,
+							"weirdness": -0.2,
+							"depth": [ 0.2, 2.0 ],
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.57,
+							"erosion": 0.05,
+							"weirdness": 0,
+							"depth": [ 0.2, 2.0 ],
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.57,
+							"erosion": 0.05,
+							"weirdness": 0.2,
+							"depth": [ 0.2, 2.0 ],
+							"offset": 0
+						}
+					},
+
+
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.54,
+							"erosion": -0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": -0.2,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.54,
+							"erosion": -0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": 0,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.54,
+							"erosion": -0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": 0.2,
+							"offset": 0
+						}
+					},
+
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.54,
+							"erosion": 0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": -0.2,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.54,
+							"erosion": 0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": 0,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.54,
+							"erosion": 0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": 0.2,
+							"offset": 0
+						}
+					},
+
+
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.415,
+							"erosion": -0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": -0.2,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.415,
+							"erosion": -0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": 0,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.415,
+							"erosion": -0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": 0.2,
+							"offset": 0
+						}
+					},
+
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.415,
+							"erosion": 0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": -0.2,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.415,
+							"erosion": 0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": 0,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.415,
+							"erosion": 0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": 0.2,
+							"offset": 0
+						}
+					},
+
+
+
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.39,
+							"erosion": 0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": -0.2,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.39,
+							"erosion": 0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": 0,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.39,
+							"erosion": 0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": 0.2,
+							"offset": 0.0
+						}
+					},
+
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.1,
+							"erosion": 0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": -0.2,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.1,
+							"erosion": 0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": 0,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.1,
+							"erosion": 0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": 0.2,
+							"offset": 0.0
+						}
+					},
+
+
+
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.39,
+							"erosion": -0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": -0.2,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.39,
+							"erosion": -0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": 0,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.39,
+							"erosion": -0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": 0.2,
+							"offset": 0.0
+						}
+					},
+
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.1,
+							"erosion": -0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": -0.2,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.1,
+							"erosion": -0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": 0,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.1,
+							"erosion": -0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": 0.2,
+							"offset": 0.0
+						}
+					},
+
+
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.15,
+							"erosion": 0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": -0.2,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.15,
+							"erosion": 0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": 0,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.15,
+							"erosion": 0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": 0.2,
+							"offset": 0.0
+						}
+					},
+
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.59,
+							"erosion": 0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": -0.2,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.59,
+							"erosion": 0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": 0,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.59,
+							"erosion": 0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": 0.2,
+							"offset": 0.0
+						}
+					},
+
+
+
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.15,
+							"erosion": -0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": -0.2,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.15,
+							"erosion": -0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": 0,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.15,
+							"erosion": -0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": 0.2,
+							"offset": 0.0
+						}
+					},
+
+
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.59,
+							"erosion": -0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": -0.2,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.59,
+							"erosion": -0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": 0,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.59,
+							"erosion": -0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": 0.2,
+							"offset": 0.0
+						}
+					},
+
+
+
+
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.61,
+							"erosion": 0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": -0.2,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.61,
+							"erosion": 0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": 0,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.61,
+							"erosion": 0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": 0.2,
+							"offset": 0.0
+						}
+					},
+
+
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.61,
+							"erosion": -0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": -0.2,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.61,
+							"erosion": -0.05,
+							"depth": [ 0.2, 2.0 ],
+							"weirdness": 0,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/venus_caves",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.61,
+							"erosion": -0.05,
+							"depth": [ 0.2, 2.0 ],
 							"weirdness": 0.2,
 							"offset": 0.0
 						}

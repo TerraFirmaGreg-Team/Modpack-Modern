@@ -11,7 +11,7 @@ const registerMERequesterRecipes = (event) => {
 
 	// ME Requester
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('tfg:merequester/merequester')
+	event.recipes.tfg.me_assembler('tfg:merequester/merequester')
 		.itemInputs(
 			'expatternprovider:ex_pattern_provider',
 			'#expatternprovider:extended_interface',

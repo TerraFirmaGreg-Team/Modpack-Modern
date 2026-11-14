@@ -49,11 +49,11 @@ const registerTFGItemTags = (event) => {
 
 	//Bronze Crates & Drums
 	event.add('tfg:any_bronze_crate', 'gtceu:bronze_crate')
-	event.add('tfg:any_bronze_crate', 'gtceu:black_bronze_crate')
-	event.add('tfg:any_bronze_crate', 'gtceu:bismuth_bronze_crate')
+	event.add('tfg:any_bronze_crate', 'tfg:black_bronze_crate')
+	event.add('tfg:any_bronze_crate', 'tfg:bismuth_bronze_crate')
 	event.add('tfg:any_bronze_drum', 'gtceu:bronze_drum')
-	event.add('tfg:any_bronze_drum', 'gtceu:black_bronze_drum')
-	event.add('tfg:any_bronze_drum', 'gtceu:bismuth_bronze_drum')
+	event.add('tfg:any_bronze_drum', 'tfg:black_bronze_drum')
+	event.add('tfg:any_bronze_drum', 'tfg:bismuth_bronze_drum')
 
 	//Explosive Tag for the Gas Well
 	event.add('tfg:explosives', 'gtceu:powderbarrel', 'minecraft:tnt', 'gtceu:industrial_tnt', 'gtceu:dynamite')

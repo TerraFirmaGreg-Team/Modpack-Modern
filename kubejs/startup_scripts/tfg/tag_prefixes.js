@@ -152,6 +152,9 @@ function registerTFGTagPrefixes(event) {
 	TagPrefix.dustTiny.setIgnored(GTMaterials.get('tfg:cr_y_residue'))
 
 	TagPrefix.ingot.removeIgnored(GTMaterials.Wax);
+	
+	TagPrefix.dustSmall.setIgnored(GTMaterials.get('tfg:kaolinite'));
+	TagPrefix.dustTiny.setIgnored(GTMaterials.get('tfg:kaolinite'));
 
 	excludeAllButFlawedGem(GTMaterials.get('tfg:garnet_residual_slag'));
 	excludeAllButFlawedGem(GTMaterials.get('tfg:inert_slag'));

@@ -10,7 +10,7 @@ function registerTFGGemSlurriesProcessing(event) {
         event.recipes.gtceu.coal_liquefaction_tower(`tfg:dirty_${output}_slurry_${global.linuxUnfucker(input.getItem())}`)
             .itemInputs(input)
             .perTick(true)
-		    .chancedFluidInput(Fluid.of('gtceu:hydrogen', 10), 1000, 0)
+		    .chancedFluidInput(Fluid.of('gtceu:hydrogen', 10), 1000)
 		    .perTick(false)
             .outputFluids(Fluid.of(`tfg:dirty_${output}_slurry`, amount))
             .duration(20 * 50)
@@ -97,7 +97,7 @@ function registerTFGGemSlurriesProcessing(event) {
         }
         if (chancedOutputs && chancedOutputs.length > 0) {
             chancedOutputs.forEach(([item, chance, tierBoost]) => {
-                recipe.chancedOutput(Item.of(item), chance, tierBoost);
+                recipe.chancedOutput(Item.of(item), chance);
             });
         }
     }
@@ -106,15 +106,15 @@ function registerTFGGemSlurriesProcessing(event) {
         //  name            dirty   filtered  clean(TBD)   itemOutputs                                                                                                               fluidOutputs                                                                             chancedOutputs
         ['diamond',         4000,   2000,     500,   [['gtceu:carbon_dust', 64], ['gtceu:graphite_dust', 1]],                                                                        [],                                                                                      []],
         ['pyrope',          4000,   2000,     500,   [['gtceu:aluminium_dust', 2*1.5], ['gtceu:magnesium_dust', 3*1.5], ['gtceu:silicon_dust', 3*1.5]],                              [['gtceu:oxygen', 12000*1.5]],                                                           []],
-        ['sapphire',        4000,   2000,     500,   [['gtceu:aluminium_dust', 2*6]],                                                                                                [['gtceu:oxygen', 3000*6]],                                                              [['gtceu:ilmenite_dust', 200, 0], ['gtceu:iron_dust', 200, 0], ['gtceu:vanadium_dust', 200, 0]]],
+        ['sapphire',        4000,   2000,     500,   [['gtceu:aluminium_dust', 2*6]],                                                                                                [['gtceu:oxygen', 3000*6]],                                                              [['gtceu:ilmenite_dust', 200], ['gtceu:iron_dust', 200], ['gtceu:vanadium_dust', 200]]],
         ['amethyst',        4000,   2000,     500,   [['gtceu:silicon_dioxide_dust', 4*6], ['gtceu:iron_dust', 1*6]],                                                                [],                                                                                      []],
         ['apatite',         4000,   2000,     500,   [['gtceu:calcium_dust', 5*3], ['gtceu:phosphorus_dust', 3*3]],                                                                  [['gtceu:chlorine', 1000*3]],                                                            []],
         ['almandine',       4000,   2000,     500,   [['gtceu:aluminium_dust', 2*1.5], ['gtceu:iron_dust', 3*1.5], ['gtceu:silicon_dust', 3*1.5]],                                   [['gtceu:oxygen', 12000*1.5]],                                                           []],
-        ['emerald',         4000,   2000,     500,   [['gtceu:beryllium_dust', 3], ['gtceu:aluminium_dust', 2], ['gtceu:silicon_dust', 6]],                                          [['gtceu:oxygen', 18000]],                                                               [['gtceu:ilmenite_dust', 200, 0]]],
+        ['emerald',         4000,   2000,     500,   [['gtceu:beryllium_dust', 3], ['gtceu:aluminium_dust', 2], ['gtceu:silicon_dust', 6]],                                          [['gtceu:oxygen', 18000]],                                                               [['gtceu:ilmenite_dust', 200]]],
         ['sodalite',        4000,   2000,     500,   [['gtceu:aluminium_dust', 3*3], ['gtceu:silicon_dust', 3*3], ['gtceu:sodium_dust', 4*3]],                                       [['gtceu:chlorine', 1000*3]],                                                            []],
         ['rock_salt',       4000,   2000,     500,   [['gtceu:potassium_dust', 1*15]],                                                                                               [['gtceu:chlorine', 1000*15]],                                                           []],
         ['red_garnet',      4000,   2000,     500,   [['gtceu:pyrope_dust', 3*2], ['gtceu:almandine_dust', 5*2], ['gtceu:spessartine_dust', 8*2]],                                   [],                                                                                      []],
-        ['coal',            4000,   2000,     500,   [['gtceu:carbon_dust', 2*30]],                                                                                                  [],                                                                                      [['gtceu:graphite_dust', 2000, 0], ['gtceu:thorium_dust', 200, 0]]],
+        ['coal',            4000,   2000,     500,   [['gtceu:carbon_dust', 2*30]],                                                                                                  [],                                                                                      [['gtceu:graphite_dust', 2000], ['gtceu:thorium_dust', 200]]],
         ['topaz',           4000,   2000,     500,   [['gtceu:aluminium_dust', 2*3], ['gtceu:silicon_dust', 1*3]],                                                                   [['gtceu:oxygen', 5000*3], ['gtceu:fluorine', 1000*3], ['gtceu:hydrogen', 1000*3]],      []],
         ['cinnabar',        4000,   2000,     500,   [['gtceu:sulfur_dust', 1*15]],                                                                                                  [['gtceu:mercury', 1000*15]],                                                            []],
         ['lapis',           4000,   2000,     500,   [['gtceu:lazurite_dust', 12*2], ['gtceu:sodalite_dust', 2*2], ['gtceu:pyrite_dust', 1*2], ['gtceu:calcite_dust', 1*2]],         [],                                                                                      []],

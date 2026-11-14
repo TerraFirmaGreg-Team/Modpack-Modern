@@ -18,7 +18,44 @@
 							"function": "minecraft:set_count"
 						}
 					],
+					"conditions": [
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"dimension": "minecraft:the_nether"
+							}
+						}
+					],
 					"name": "minecraft:magma_cream"
+				}
+			]
+		},
+		{
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 2.0,
+								"min": 1.0
+							},
+							"function": "minecraft:set_count"
+						}
+					],
+					"conditions": [
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"dimension": "ad_astra:venus"
+							}
+						}
+					],
+					"name": "opposing_force:fire_gel"
 				}
 			]
 		}

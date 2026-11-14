@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:lake",
+	"config": {
+		"barrier": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "tfg:rock/aragonite"
+			}
+		},
+		"fluid": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "createaddition:seed_oil"
+			}
+		}
+	}
+}

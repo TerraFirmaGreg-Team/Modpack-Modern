@@ -4,6 +4,7 @@
 		"integrity": 0.6,
 		"block": "tfg:plant/barnacles",
 		"radius": 3,
-		"height": 5
+		"height": 5,
+		"tide_height": 2
 	}
 }

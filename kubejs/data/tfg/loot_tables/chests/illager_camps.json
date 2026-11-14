@@ -84,15 +84,15 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfc:powder/salt",
+					"name": "gtceu:salt_dust",
 					"weight": 100,
 					"functions": [
 						{
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 8,
-								"min": 4
+								"max": 3,
+								"min": 1
 							},
 							"function": "minecraft:set_count"
 						}
@@ -100,15 +100,15 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfc:powder/saltpeter",
+					"name": "gtceu:saltpeter_dust",
 					"weight": 100,
 					"functions": [
 						{
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 6,
-								"min": 3
+								"max": 3,
+								"min": 1
 							},
 							"function": "minecraft:set_count"
 						}
@@ -116,15 +116,15 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfc:powder/sulfur",
-					"weight": 50,
+					"name": "gtceu:sulfur_dust",
+					"weight": 80,
 					"functions": [
 						{
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 6,
-								"min": 3
+								"max": 3,
+								"min": 1
 							},
 							"function": "minecraft:set_count"
 						}

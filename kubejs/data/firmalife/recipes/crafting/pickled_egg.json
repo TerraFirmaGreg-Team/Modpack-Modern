@@ -1,0 +1,21 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:clay_ball"
+		},
+		{
+			"item": "tfc:powder/wood_ash"
+		},
+		{
+			"item": "gtceu:small_salt_dust"
+		},
+		{
+			"item": "tfc:food/boiled_egg"
+		}
+	],
+	"result": {
+		"item": "firmalife:food/pickled_egg"
+	}
+}

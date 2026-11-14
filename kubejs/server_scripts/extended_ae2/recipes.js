@@ -23,7 +23,7 @@ const registerExtendedAE2Recipes = (event) => {
 	// IV
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('tfg:ex_interface_iv_moon')
+	event.recipes.tfg.me_assembler('tfg:ex_interface_iv_moon')
 		.itemInputs(
 			'gtceu:iv_conveyor_module',
 			'4x gtceu:laminated_glass',
@@ -41,7 +41,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	// ZPM CR
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('tfg:ex_interface_zpm_cr')
+	event.recipes.tfg.me_assembler('tfg:ex_interface_zpm_cr')
 		.itemInputs(
 			'gtceu:zpm_conveyor_module',
 			'4x gtceu:laminated_glass',
@@ -62,7 +62,7 @@ const registerExtendedAE2Recipes = (event) => {
 	// IV
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('expatternprovider:interface_upgrade_iv_moon')
+	event.recipes.tfg.me_assembler('expatternprovider:interface_upgrade_iv_moon')
 		.itemInputs(
 			'gtceu:iv_conveyor_module',
 			'4x gtceu:laminated_glass',
@@ -80,7 +80,7 @@ const registerExtendedAE2Recipes = (event) => {
 	// ZPM CR
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('expatternprovider:interface_upgrade_zpm')
+	event.recipes.tfg.me_assembler('expatternprovider:interface_upgrade_zpm')
 		.itemInputs(
 			'gtceu:zpm_conveyor_module',
 			'4x gtceu:laminated_glass',
@@ -102,7 +102,7 @@ const registerExtendedAE2Recipes = (event) => {
 	// LuV
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('expatternprovider:oversize_interface_iv_moon')
+	event.recipes.tfg.me_assembler('expatternprovider:oversize_interface_iv_moon')
 		.itemInputs(
 			'1x #expatternprovider:extended_interface',
 			'4x megacells:accumulation_processor',
@@ -119,7 +119,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	// ZPM CR
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('expatternprovider:oversize_interface_zpm')
+	event.recipes.tfg.me_assembler('expatternprovider:oversize_interface_zpm')
 		.itemInputs(
 			'8x #expatternprovider:extended_interface',
 			'4x megacells:accumulation_processor',
@@ -141,7 +141,7 @@ const registerExtendedAE2Recipes = (event) => {
 	// IV
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('tfg:ex_pattern_provider_iv')
+	event.recipes.tfg.me_assembler('tfg:ex_pattern_provider_iv')
 		.itemInputs(
 			'gtceu:iv_robot_arm',
 			'4x gtceu:laminated_glass',
@@ -160,7 +160,7 @@ const registerExtendedAE2Recipes = (event) => {
 	// ZPM
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('tfg:ex_pattern_provider_zpm')
+	event.recipes.tfg.me_assembler('tfg:ex_pattern_provider_zpm')
 		.itemInputs(
 			'gtceu:zpm_robot_arm',
 			'4x gtceu:laminated_glass',
@@ -180,7 +180,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	// IV
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('expatternprovider:pattern_provider_upgrade_iv_moon')
+	event.recipes.tfg.me_assembler('expatternprovider:pattern_provider_upgrade_iv_moon')
 		.itemInputs(
 			'gtceu:iv_robot_arm',
 			'4x gtceu:laminated_glass',
@@ -197,7 +197,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	// ZPM CR
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('expatternprovider:pattern_provider_upgrade_zpm')
+	event.recipes.tfg.me_assembler('expatternprovider:pattern_provider_upgrade_zpm')
 		.itemInputs(
 			'gtceu:zpm_robot_arm',
 			'4x gtceu:laminated_glass',
@@ -218,7 +218,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	//ex import bus part
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('expatternprovider:ex_import_bus_part')
+	event.recipes.tfg.me_assembler('expatternprovider:ex_import_bus_part')
 		.itemInputs(
 			'1x #forge:plates/titanium',
 			'2x ae2:annihilation_core',
@@ -234,7 +234,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	//ex export bus part
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('expatternprovider:ex_export_bus_part')
+	event.recipes.tfg.me_assembler('expatternprovider:ex_export_bus_part')
 		.itemInputs(
 			'1x #forge:plates/titanium',
 			'2x ae2:formation_core',
@@ -250,7 +250,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	//tag export bus
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('expatternprovider:tag_export_bus')
+	event.recipes.tfg.me_assembler('expatternprovider:tag_export_bus')
 		.itemInputs(
 			'expatternprovider:ex_export_bus_part',
 			'2x ae2:logic_processor',
@@ -264,7 +264,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	//tag storage bus
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('expatternprovider:tag_storage_bus')
+	event.recipes.tfg.me_assembler('expatternprovider:tag_storage_bus')
 		.itemInputs(
 			'ae2:storage_bus',
 			'2x ae2:logic_processor',
@@ -278,7 +278,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	//mod export bus
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('expatternprovider:mod_export_bus')
+	event.recipes.tfg.me_assembler('expatternprovider:mod_export_bus')
 		.itemInputs(
 			'ae2:export_bus',
 			'2x ae2:calculation_processor',
@@ -292,7 +292,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	//mod storage bus
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('expatternprovider:mod_storage_bus')
+	event.recipes.tfg.me_assembler('expatternprovider:mod_storage_bus')
 		.itemInputs(
 			'ae2:storage_bus',
 			'2x ae2:calculation_processor',
@@ -306,7 +306,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	//precise export bus
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('expatternprovider:precise_export_bus')
+	event.recipes.tfg.me_assembler('expatternprovider:precise_export_bus')
 		.itemInputs(
 			'ae2:export_bus',
 			'2x ae2:engineering_processor',
@@ -320,7 +320,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	//precise storage bus
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('expatternprovider:precise_storage_bus')
+	event.recipes.tfg.me_assembler('expatternprovider:precise_storage_bus')
 		.itemInputs(
 			'ae2:storage_bus',
 			'2x ae2:engineering_processor',
@@ -334,7 +334,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	//threshold export bus
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('expatternprovider:threshold_export_bus')
+	event.recipes.tfg.me_assembler('expatternprovider:threshold_export_bus')
 		.itemInputs(
 			'ae2:export_bus',
 			'2x megacells:accumulation_processor',
@@ -350,7 +350,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	//active formation plane
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('expatternprovider:active_formation_plane')
+	event.recipes.tfg.me_assembler('expatternprovider:active_formation_plane')
 		.itemInputs(
 			'ae2:formation_plane',
 			'ae2:export_bus',
@@ -375,7 +375,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	//threshold level emitter
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('expatternprovider:threshold_level_emitter')
+	event.recipes.tfg.me_assembler('expatternprovider:threshold_level_emitter')
 		.itemInputs(
 			'ae2:level_emitter',
 			'2x minecraft:redstone_torch',
@@ -412,7 +412,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	//wireless tool
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('expatternprovider:wireless_connect')
+	event.recipes.tfg.me_assembler('expatternprovider:wireless_connect')
 		.itemInputs(
 			'2x gtceu:iv_machine_casing',
 			'4x #gtceu:circuits/iv',
@@ -489,7 +489,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	// IV
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('expatternprovider:ex_molecular_assembler_iv')
+	event.recipes.tfg.me_assembler('expatternprovider:ex_molecular_assembler_iv')
 		.itemInputs(
 			'2x #gtceu:circuits/iv',
 			'8x gtceu:cleanroom_glass',
@@ -506,7 +506,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	// ZPM CR
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('expatternprovider:ex_molecular_assembler_zpm')
+	event.recipes.tfg.me_assembler('expatternprovider:ex_molecular_assembler_zpm')
 		.itemInputs(
 			'2x #gtceu:circuits/zpm',
 			'8x gtceu:cleanroom_glass',
@@ -525,7 +525,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	//ex io port
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('expatternprovider:ex_io_port')
+	event.recipes.tfg.me_assembler('expatternprovider:ex_io_port')
 		.itemInputs(
 			'gtceu:ev_machine_casing',
 			'ae2:io_port',
@@ -541,7 +541,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.addMaterialInfo(true, true))
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('expatternprovider:ex_drive')
+	event.recipes.tfg.me_assembler('expatternprovider:ex_drive')
 		.itemInputs(
 			'gtceu:ev_machine_casing',
 			'ae2:drive',
@@ -557,7 +557,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.addMaterialInfo(true, true))
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('expatternprovider:drive_upgrade')
+	event.recipes.tfg.me_assembler('expatternprovider:drive_upgrade')
 		.itemInputs(
 			'gtceu:ev_machine_casing',
 			'2x megacells:accumulation_processor',
@@ -572,7 +572,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.addMaterialInfo(true, true))
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('expatternprovider:ingredient_buffer')
+	event.recipes.tfg.me_assembler('expatternprovider:ingredient_buffer')
 		.itemInputs('gtceu:hv_buffer', 'ae2:cell_component_1k')
 		.itemOutputs('expatternprovider:ingredient_buffer')
 		.duration(20*60)
@@ -587,7 +587,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	//Frame
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('expatternprovider:assembler_matrix_frame_moon')
+	event.recipes.tfg.me_assembler('expatternprovider:assembler_matrix_frame_moon')
 		.itemInputs(
 			'8x gtceu:plascrete',
 			'8x gtceu:iv_machine_casing',
@@ -606,7 +606,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	//Matrix Wall
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('expatternprovider:assembler_matrix_wall_luv')
+	event.recipes.tfg.me_assembler('expatternprovider:assembler_matrix_wall_luv')
 		.itemInputs(
 			'#forge:frames/polytetrafluoroethylene',
 			'gtceu:plascrete',
@@ -622,7 +622,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	//Matrix Glass
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler("expatternprovider:assembler_matrix_glass")
+	event.recipes.tfg.me_assembler("expatternprovider:assembler_matrix_glass")
 		.itemInputs(
 			'#forge:frames/polytetrafluoroethylene',
 			'gtceu:cleanroom_glass',
@@ -638,7 +638,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	//Matrix Pattern
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler("expatternprovider:assembler_matrix_pattern")
+	event.recipes.tfg.me_assembler("expatternprovider:assembler_matrix_pattern")
 		.itemInputs(
 			'#expatternprovider:extended_pattern_provider',
 			'8x megacells:accumulation_processor',
@@ -656,7 +656,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	//Matrix Crafter
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler("expatternprovider:assembler_matrix_crafter")
+	event.recipes.tfg.me_assembler("expatternprovider:assembler_matrix_crafter")
 		.itemInputs(
 			"#expatternprovider:oversize_interface",
 			'8x megacells:accumulation_processor',
@@ -674,7 +674,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	//Matrix Speed
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler("expatternprovider:assembler_matrix_speed_luv")
+	event.recipes.tfg.me_assembler("expatternprovider:assembler_matrix_speed_luv")
 		.itemInputs(
 			"megacells:mega_crafting_accelerator",
 			'8x megacells:accumulation_processor',

@@ -1,0 +1,33 @@
+{
+	"feature": {
+		"type": "tfc:multiple",
+		"config": {
+			"features": [
+				{
+					"feature": "tfg:venus/surface/fused_pillar_short",
+					"placement": []
+				},
+				{
+					"feature": "tfg:venus/surface/fused_pillar_tall",
+					"placement": []
+				}
+			]
+		}
+	},
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 1
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "OCEAN_FLOOR_WG"
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

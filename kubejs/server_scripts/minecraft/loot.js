@@ -2,7 +2,6 @@
 "use strict";
 
 function registerMinecraftLoots(event) {
-	event.addEntityLootModifier('minecraft:blaze').removeLoot(ItemFilter.ALWAYS_TRUE)
 	event.addEntityLootModifier('minecraft:cat').removeLoot(ItemFilter.ALWAYS_TRUE)
 	event.addEntityLootModifier('minecraft:chicken').removeLoot(ItemFilter.ALWAYS_TRUE)
 	event.addEntityLootModifier('minecraft:cod').removeLoot(ItemFilter.ALWAYS_TRUE)
@@ -33,7 +32,6 @@ function registerMinecraftLoots(event) {
 	event.addEntityLootModifier('minecraft:sheep').removeLoot(ItemFilter.ALWAYS_TRUE)
 	event.addEntityLootModifier('minecraft:skeleton_horse').removeLoot(ItemFilter.ALWAYS_TRUE)
 	event.addEntityLootModifier('minecraft:snow_golem').removeLoot(ItemFilter.ALWAYS_TRUE)
-	event.addEntityLootModifier('minecraft:strider').removeLoot(ItemFilter.ALWAYS_TRUE)
 	event.addEntityLootModifier('minecraft:squid').removeLoot(ItemFilter.ALWAYS_TRUE)
 	event.addEntityLootModifier('minecraft:trader_llama').removeLoot(ItemFilter.ALWAYS_TRUE)
 	event.addEntityLootModifier('minecraft:tropical_fish').removeLoot(ItemFilter.ALWAYS_TRUE)

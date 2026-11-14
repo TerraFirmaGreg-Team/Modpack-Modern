@@ -2,7 +2,7 @@
 "use strict";
 
 const registerSophisticatedBackpacksRecipes = (event) => {
-
+/*
     event.remove({ mod: 'sophisticatedbackpacks', not: {type: 'sophisticatedbackpacks:backpack_dye'} })
 
 
@@ -444,4 +444,5 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         'sophisticatedbackpacks:feeding_upgrade',
         '#gtceu:circuits/mv'
     ]).id('tfg:sophisticated_backpacks/shapeless/advanced_feeding_upgrade')
+    */
 }

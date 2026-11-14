@@ -198,9 +198,6 @@ function registerTFCItemTags(event) {
 	// Allows TFC stick bundles to be burned in the coke/pyrolyse ovens
 	event.add("minecraft:logs_that_burn", "tfc:stick_bundle");
 
-	// Remove sulfur dust overlap
-	event.remove("forge:dusts/sulfur", "tfc:powder/sulfur");
-
 	// Тэги для возможности использования разных углей в кузне
 	event.add("minecraft:coals", "tfc:ore/bituminous_coal");
 	event.add("minecraft:coals", "tfc:ore/lignite");
@@ -452,25 +449,29 @@ function registerTFCItemTags(event) {
 	event.add('tfc:compost_greens_low', '#minecraft:leaves')
 
     // Powder dyes
-    event.add('forge:dyes/blue', 'tfc:powder/lapis_lazuli')
-    event.add('forge:dyes/blue', 'tfc:powder/graphite')
-    event.add('forge:dyes/black', 'tfc:powder/charcoal')
-    event.add('forge:dyes/black', 'tfc:powder/coke')
+    event.add('forge:dyes/blue', 'gtceu:small_graphite_dust')
+    event.add('forge:dyes/black', 'gtceu:small_charcoal_dust')
+    event.add('forge:dyes/black', 'gtceu:small_coal_dust')
+    event.add('forge:dyes/black', 'gtceu:small_coke_dust')
     event.add('forge:dyes/pink', 'tfc:powder/kaolinite')
-    event.add('forge:dyes/blue', 'tfc:powder/lapis_lazuli')
-    event.add('forge:dyes/orange', 'tfc:powder/sylvite')
-    event.add('forge:dyes/orange', 'tfc:powder/copper')
-    event.add('forge:dyes/blue', 'tfc:powder/lapis_lazuli')
-    event.add('forge:dyes/light_gray', 'tfc:powder/silver')
-    event.add('forge:dyes/gray', 'tfc:powder/cassiterite')
-    event.add('forge:dyes/gray', 'tfc:powder/magnetite')
-    event.add('forge:dyes/gray', 'tfc:powder/sphalerite')
-    event.add('forge:dyes/gray', 'tfc:powder/tetrahedrite')
-    event.add('forge:dyes/green', 'tfc:powder/bismuthinite')
-    event.add('forge:dyes/green', 'tfc:powder/malachite')
-    event.add('forge:dyes/brown', 'tfc:powder/garnierite')
-    event.add('forge:dyes/yellow', 'tfc:powder/limonite')
-    event.add('forge:dyes/yellow', 'tfc:powder/native_gold')
+    event.add('forge:dyes/blue', 'gtceu:small_lapis_dust')
+    event.add('forge:dyes/blue', 'gtceu:small_sodalite_dust')
+    event.add('forge:dyes/blue', 'gtceu:small_lazurite_dust')
+    event.add('forge:dyes/orange', 'gtceu:small_rock_salt_dust')
+    event.add('forge:dyes/orange', 'gtceu:small_copper_dust')
+    event.add('forge:dyes/light_gray', 'gtceu:small_silver_dust')
+    event.add('forge:dyes/gray', 'gtceu:small_cassiterite_dust')
+    event.add('forge:dyes/gray', 'gtceu:small_tin_dust')
+    event.add('forge:dyes/gray', 'gtceu:small_magnetite_dust')
+    event.add('forge:dyes/gray', 'gtceu:small_sphalerite_dust')
+    event.add('forge:dyes/gray', 'gtceu:small_tetrahedrite_dust')
+    event.add('forge:dyes/green', 'gtceu:small_bismuth_dust')
+    event.add('forge:dyes/green', 'gtceu:small_malachite_dust')
+    event.add('forge:dyes/green', 'gtceu:small_chalcopyrite_dust')
+    event.add('forge:dyes/brown', 'gtceu:small_garnierite_dust')
+    event.add('forge:dyes/brown', 'gtceu:small_goethite_dust')
+    event.add('forge:dyes/yellow', 'gtceu:small_limonite_dust')
+    event.add('forge:dyes/yellow', 'gtceu:small_gold_dust')
 
 	//Hanging Signs Soft & Hard Wood
 	global.TFC_EQUIPMENT_METALS.forEach(metal => {
@@ -581,9 +582,6 @@ function registerTFCBlockTags(event) {
 
 	event.add("tfc:glass_basin_blocks", "tfc:white_kaolin_clay");
 	event.add("tfc:glass_pouring_table", "tfc:white_kaolin_clay");
-
-	// Удаление тегов у руд
-	event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/");
 
 	// Lets the basin be put on top of a charcoal forge
 	event.add("tfc:forge_invisible_whitelist", "create:basin");

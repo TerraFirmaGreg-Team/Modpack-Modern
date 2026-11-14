@@ -136,11 +136,11 @@ const registerMinecraftRecipes = (event) => {
 	event.recipes.gtceu.sifter('gravel_sifting')
 		.itemInputs('#tfc:rock/gravel')
 		.itemOutputs('minecraft:flint')
-		.chancedOutput('minecraft:flint', 9000, 0)
-		.chancedOutput('minecraft:flint', 8000, 0)
-		.chancedOutput('minecraft:flint', 6000, 0)
-		.chancedOutput('minecraft:flint', 3300, 0)
-		.chancedOutput('minecraft:flint', 2500, 0)
+		.chancedOutput('minecraft:flint', 9000)
+		.chancedOutput('minecraft:flint', 8000)
+		.chancedOutput('minecraft:flint', 6000)
+		.chancedOutput('minecraft:flint', 3300)
+		.chancedOutput('minecraft:flint', 2500)
 		.duration(100)
 		.EUt(16)
 
@@ -220,7 +220,7 @@ const registerMinecraftRecipes = (event) => {
 	//#region Выход: Тонированное стекло, tinted glass
 
 	event.recipes.gtceu.alloy_smelter('tfg:minecraft/tinted_glass')
-		.itemInputs('#forge:glass', '4x tfc:powder/amethyst')
+		.itemInputs('#forge:glass', 'gtceu:amethyst_dust')
 		.itemOutputs('minecraft:tinted_glass')
 		.duration(260)
 		.EUt(16)
@@ -939,10 +939,6 @@ const registerMinecraftRecipes = (event) => {
 	event.shapeless('10x minecraft:gunpowder',
 		['#forge:tools/mortars', '2x #forge:dusts/saltpeter', '#forge:dusts/sulfur', '3x #forge:dusts/graphite'])
 		.id('tfg:shapeless/gunpowder_graphite')
-
-	event.shapeless('2x minecraft:gunpowder',
-		['#forge:tools/mortars', 'tfc:powder/saltpeter', 'tfc:powder/saltpeter', 'tfc:powder/sulfur', 'tfc:powder/charcoal', 'tfc:powder/charcoal', 'tfc:powder/charcoal'])
-		.id('tfg:shapeless/gunpowder_tfc_style')
 
 	event.shapeless('8x minecraft:bone_meal', ['#forge:tools/mortars', 'minecraft:skeleton_skull'])
 

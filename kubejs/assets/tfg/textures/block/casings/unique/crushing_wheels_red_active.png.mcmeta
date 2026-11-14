@@ -1,0 +1,9 @@
+{
+  "gtceu": {
+    "connection_texture": "tfg:block/casings/unique/crushing_wheels_active_red_ctm"
+  },
+  "animation": {
+    "interpolate": false,
+    "frametime": 2
+  }
+}

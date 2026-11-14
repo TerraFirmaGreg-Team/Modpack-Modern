@@ -245,7 +245,7 @@ event.recipes.gtceu.chemical_reactor('tfg:process_depleted_garnet_liquor_b_low_y
     event.recipes.gtceu.centrifuge('tfg:yttrium_dust_from_raffinate')
             .inputFluids(Fluid.of('tfg:loaded_organic', 1000))
             .outputFluids(Fluid.of('tfg:lean_organic', 1000))
-            .chancedOutput(Item.of('gtceu:yttrium_dust', 1), 1000, 0)
+            .chancedOutput(Item.of('gtceu:yttrium_dust', 1), 1000)
             .duration(20 * 12)
             .EUt(GTValues.VHA[GTValues.MV])
 

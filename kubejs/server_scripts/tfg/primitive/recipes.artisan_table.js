@@ -73,7 +73,7 @@ function registerTFGArtisanTableRecipes(event) {
 			"X    X",
 			"XXXXXX"
 		]},
-		{ name: 'gtceu:gear', genCast: true, genExtrude: true, pattern: [
+		{ name: 'gtceu:gear', genCast: true, genExtrude: false, pattern: [
 			"XX  XX",
 			"X    X",
 			"  XX  ",
@@ -145,7 +145,7 @@ function registerTFGArtisanTableRecipes(event) {
 			"XXXXXX",
 			"XXXXXX"
 		]},
-		{ name: 'gtceu:small_gear', genCast: true, genExtrude: true, pattern: [
+		{ name: 'gtceu:small_gear', genCast: true, genExtrude: false, pattern: [
 			"XXX XX",
 			"XX   X",
 			"X  X  ",
@@ -153,7 +153,7 @@ function registerTFGArtisanTableRecipes(event) {
 			"XXX XX",
 			"XXXXXX"
 		]},
-		{ name: 'gtceu:rotor', genCast: true, genExtrude: true, pattern: [
+		{ name: 'gtceu:rotor', genCast: true, genExtrude: false, pattern: [
 			" XXXX ",
 			"X XX X",
 			"XX  XX",
@@ -207,22 +207,6 @@ function registerTFGArtisanTableRecipes(event) {
 			"XX X X",
 			"XXX XX",
 			"XXXXXX",
-			"XXXXXX"
-		]},
-		{ name: 'gtceu:rod', genCast: false, genExtrude: true, pattern: [
-			"XXXXXX",
-			"XXXXXX",
-			"XX  XX",
-			"XX  XX",
-			"XXXXXX",
-			"XXXXXX"
-		]},
-		{ name: 'gtceu:bolt', genCast: false, genExtrude: true, pattern: [
-			"XXXXXX",
-			"XXXXXX",
-			"XX   X",
-			"XXX XX",
-			"XXX XX",
 			"XXXXXX"
 		]},
 		{ name: 'gtceu:ring', genCast: false, genExtrude: true, pattern: [

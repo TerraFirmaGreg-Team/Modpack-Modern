@@ -11,7 +11,7 @@ function registerTFGMoonRecipes(event) {
 		.EUt(GTValues.VA[GTValues.MV])
 		.dimension('ad_astra:moon')
 
-	event.recipes.gtceu.gas_pressurizer('gtceu:cryo_fluix_low')
+	event.recipes.tfg.gas_pressurizer('gtceu:cryo_fluix_low')
 		.inputFluids(Fluid.of('gtceu:helium_3', 1000))
 		.inputFluids(Fluid.of('tfg:fluix', 144))
 		.outputFluids(Fluid.of('tfg:cryogenized_fluix', 144))

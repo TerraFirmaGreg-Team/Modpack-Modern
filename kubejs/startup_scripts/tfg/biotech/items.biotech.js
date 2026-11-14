@@ -6,6 +6,13 @@ function registerTFGBiotechItems(event) {
 		.unstackable()
 		.maxDamage(9999)
 
+	event.create('betterend:silk_moth_matrix')
+	event.create('betterend:silk_fiber')
+	event.create('tfg:cyanobacteria_sample')
+	event.create('tfg:stromatolite_sample')
+	event.create('tfg:fumarole_sample')
+	event.create('tfg:geyser_slime_mold_sample')
+
 	//#region Lab Equipment
 
 	global.LAB_EQUIPMENT_CONTAINERS.forEach((item) => {

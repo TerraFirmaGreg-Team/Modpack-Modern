@@ -31,6 +31,7 @@ function registerTFGSounds(event) {
     event.create('tfg:ambient.venus_surface.loop')
     event.create('tfg:ambient.venus_surface.additions')
     event.create('tfg:ambient.venus_surface.mood')
+    event.create('tfg:ambient.venus_plode')
     event.create('tfg:music.venus')
 
     event.create('tfg:music.mercury')

@@ -8,24 +8,14 @@
         "stromatolite_beach",
         "fractured_pools",
         "geysers",
-        "salt_flats",
+        "tfg:venus/salt_flats",
         "sulfuric_ravine",
         "fumaroles",
-        "jagged_tablelands"
+        "jagged_tablelands",
+        "scorching_volcanoes"
     ],
-    "bad-biomes": [
-        "sangnum_edge",
-        "sangnum_plains",
-        "sangnum_hills",
-        "rusticus_edge",
-        "rusticus_plains",
-        "rusticus_hills",
-        "amber_edge",
-        "amber_plains",
-        "amber_hills",
-        "martian_river",
-        "martian_mountains",
-        "martian_dune_edge"
+    "bad_biomes": [
+        "venus_caves"
     ],
     "sounds": [
         {
@@ -34,7 +24,10 @@
             "files": [
                 "ambientsounds:animals.cricket",
                 "ambientsounds:animals.cricket2",
-                "ambientsounds:animals.cricket3"
+                "ambientsounds:animals.cricket3",
+                "ambientsounds:animals.cicadas",
+                "ambientsounds:animals.cicadas-desert1",
+                "ambientsounds:animals.cicadas-desert2"
             ],
             "overall-raining": false,
             "length": {
@@ -51,67 +44,8 @@
                 "ambientsounds:animals.cricket-night",
                 "ambientsounds:animals.cricket-night2",
                 "ambientsounds:animals.cricket-night3",
-                "ambientsounds:animals.cricket-night4"
-            ],
-            "overall-raining": false,
-            "length": {
-                "min": 1000,
-                "max": 1500
-            },
-            "transition": 100,
-            "volume": 0.05
-        },
-        {
-            "name": "cicadas",
-            "category": "cicadas",
-            "files": [
-                "ambientsounds:animals.cicadas"
-            ],
-            "overall-raining": false,
-            "day": 0.15,
-            "night": 0.01,
-            "length": {
-                "min": 100,
-                "max": 300
-            },
-            "pause": {
-                "min": 100,
-                "max": 600
-            }
-        },
-        {
-            "name": "cicadas-desert",
-            "category": "cicadas",
-            "files": [
-                "ambientsounds:animals.cicadas-desert1",
-                "ambientsounds:animals.cicadas-desert2"
-            ],
-            "overall-raining": false,
-            "day": 1,
-            "night": 0,
-            "length": {
-                "min": 400,
-                "max": 900
-            },
-            "pause": {
-                "min": 500,
-                "max": 1000
-            }
-        },
-        {
-            "name": "cicadas-night",
-            "category": "cicadas",
-            "files": [
-                "ambientsounds:animals.cicadas-night"
-            ],
-            "overall-raining": false,
-            "day": 0,
-            "night": 1
-        },
-        {
-            "name": "cricket-warm-night",
-            "category": "cricket_night",
-            "files": [
+                "ambientsounds:animals.cricket-night4",
+                "ambientsounds:animals.cicadas-night",
                 "ambientsounds:animals.cricket-warm-night",
                 "ambientsounds:animals.cricket-warm-night2"
             ],
@@ -121,7 +55,38 @@
                 "max": 1500
             },
             "transition": 100,
-            "volume": 0.3
+            "volume": 0.25
+        },
+        {
+            "name": "basalt-deltas",
+            "files": [
+                "minecraft:ambient.basalt_deltas.loop"
+            ],
+            "category": "suspense",
+            "volume": 0.8
+        },
+        {
+            "name": "other-nether",
+            "files": [
+                "minecraft:ambient.nether_wastes.loop",
+                "minecraft:ambient.soul_sand_valley.loop",
+                "minecraft:ambient.crimson_forest.loop"
+            ],
+            "category": "suspense",
+            "transition": 100,
+            "volume": 1.0
+        },
+        {
+            "name": "plode",
+            "files": [
+                "tfg:ambient.venus_plode"
+            ],
+            "category": "weather",
+            "pause": {
+                "min": 200,
+                "max": 1000
+            },
+            "volume": 1.0
         }
     ]
 }

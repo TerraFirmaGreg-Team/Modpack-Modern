@@ -1,0 +1,12 @@
+{
+	"feature": "tfg:venus/terrain/huge_stromatolite_column",
+	"placement": [
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "WORLD_SURFACE"
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

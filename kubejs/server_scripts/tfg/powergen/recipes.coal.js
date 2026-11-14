@@ -69,7 +69,7 @@ function registerTFGCoalRecipes(event) {
 
 	event.recipes.gtceu.pyrolyse_oven("tfg:rich_coal_to_tar")
 		.itemInputs('3x tfc:ore/bituminous_coal')
-		.chancedOutput('gtceu:dark_ash_dust', 5000, 0)
+		.chancedOutput('gtceu:dark_ash_dust', 5000)
 		.outputFluids(Fluid.of('gtceu:coal_tar', 3000))
 		.duration(288)
 		.EUt(96)
@@ -107,7 +107,7 @@ function registerTFGCoalRecipes(event) {
 
 	event.recipes.gtceu.pyrolyse_oven("tfg:raw_coal_to_tar")
 		.itemInputs('6x tfc:ore/lignite')
-		.chancedOutput('gtceu:dark_ash_dust', 5000, 0)
+		.chancedOutput('gtceu:dark_ash_dust', 5000)
 		.outputFluids(Fluid.of('gtceu:coal_tar', 3000))
 		.duration(288)
 		.EUt(96)

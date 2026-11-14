@@ -39,6 +39,13 @@ function registerTFGBiomassRecipes(event) {
 		.duration(100)
 		.EUt(3)
 
+	event.recipes.gtceu.brewery('biomass_from_venus_plants')
+		.itemInputs('#tfg:venus_plants')
+		.inputFluids("#tfc:any_water 20")
+		.outputFluids(Fluid.of('gtceu:biomass', 100))
+		.duration(100)
+		.EUt(3)
+
 	event.recipes.gtceu.brewery('biomass_from_tfc_corals')
 		.itemInputs('#tfc:corals')
 		.inputFluids("#tfc:any_water 20")
@@ -118,6 +125,12 @@ function registerTFGBiomassRecipes(event) {
 
 	event.recipes.gtceu.compressor('plant_ball_from_mars_plants')
 		.itemInputs('4x #tfg:mars_plants')
+		.itemOutputs('gtceu:plant_ball')
+		.duration(300)
+		.EUt(2)
+
+	event.recipes.gtceu.compressor('plant_ball_from_venus_plants')
+		.itemInputs('4x #tfg:venus_plants')
 		.itemOutputs('gtceu:plant_ball')
 		.duration(300)
 		.EUt(2)

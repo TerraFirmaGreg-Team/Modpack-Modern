@@ -60,7 +60,7 @@ global.registerFoodRecipe = (event, type, id, duration, EUt, text, data) => {
 
 	$ISPRecipeLogic.RegisterRecipeData(`${type  }/${  id}`, inputs, (data.itemOutputProvider === undefined) ? null : data.itemOutputProvider.asCanonClass(), data.itemOutputs.slice(outputFirstIndex).map(i => Item.of(i)))
 
-	let r = event.recipes.gtceu[type](id)
+	let r = event.recipes.tfg[type](id)
 	.duration(duration)
 	.EUt(EUt)
 

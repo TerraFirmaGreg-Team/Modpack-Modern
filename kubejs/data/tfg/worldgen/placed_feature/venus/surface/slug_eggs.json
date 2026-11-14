@@ -1,0 +1,68 @@
+{
+	"feature": "tfg:venus/surface/slug_eggs",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 30
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "OCEAN_FLOOR"
+		},
+		{
+			"type": "minecraft:biome"
+		},
+		{
+			"type": "tfc:climate",
+			"max_forest": "edge",
+			"fuzzy": true
+		},
+		{
+			"type": "minecraft:count",
+			"count": {
+				"type": "minecraft:uniform",
+				"value": {
+					"max_inclusive": 12,
+					"min_inclusive": 8
+				}
+			}
+		},
+		{
+			"type": "minecraft:random_offset",
+			"y_spread": {
+				"type": "minecraft:uniform",
+				"value": {
+					"min_inclusive": -2,
+					"max_inclusive": 2
+				}
+			},
+			"xz_spread": {
+				"type": "minecraft:uniform",
+				"value": {
+					"min_inclusive": -4,
+					"max_inclusive": 4
+				}
+			}
+		},
+		{
+			"type": "minecraft:block_predicate_filter",
+			"predicate": {
+				"type": "minecraft:all_of",
+				"predicates": [
+					{
+						"type": "minecraft:matching_blocks",
+						"blocks": "minecraft:air"
+					},
+					{
+						"type": "minecraft:has_sturdy_face",
+						"offset": [ 0, -1, 0 ],
+						"direction": "down"
+					}
+				]
+			}
+		}
+	]
+}

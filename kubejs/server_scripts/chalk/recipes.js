@@ -46,13 +46,13 @@ const registerChalkRecipes = (event) => {
 
 		event.recipes.gtceu.extruder(`tfg:${global.linuxUnfucker(x.rock)}_chalk`)
 			.itemInputs(x.rock)
-			.notConsumable('gtceu:rod_extruder_mold')
+			.notConsumable('gtceu:wire_extruder_mold')
 			.itemOutputs(Item.of(`chalk:${x.color}_chalk`, '{Damage:32}'))
 			.duration(50)
 			.EUt(2)
 
 		event.recipes.vintageimprovements.curving(Item.of(`chalk:${x.color}_chalk`, '{Damage:32}'), x.rock)
-			.head('gtceu:rod_extruder_mold')
+			.head('gtceu:wire_extruder_mold')
 			.id(`tfg:vi/curving/${global.linuxUnfucker(x.rock)}_chalk`)
 	})
 

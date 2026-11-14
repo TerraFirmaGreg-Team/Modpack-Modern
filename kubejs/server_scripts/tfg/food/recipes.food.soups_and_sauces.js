@@ -69,7 +69,7 @@ function registerTFGSoupFoodRecipes(event) {
 			'#tfg:foods/makes_rich_stock',
 			'#tfc:foods/vegetables',
 			'#forge:bones',
-			'tfc:powder/salt',
+			'gtceu:small_salt_dust',
 			'tfg:spice/bay_leaf'
 		], '#tfg:clean_water 1000', 'tfg:rich_stock 1000');
 
@@ -78,7 +78,7 @@ function registerTFGSoupFoodRecipes(event) {
         '#tfg:foods/makes_light_stock',
         '#tfc:foods/vegetables',
         '#forge:bones',
-        'tfc:powder/salt',
+        'gtceu:small_salt_dust',
         'firmalife:spice/basil_leaves'
     ], '#tfg:clean_water 1000', 'tfg:light_stock 1000');
 

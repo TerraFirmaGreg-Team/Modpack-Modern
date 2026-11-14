@@ -41,7 +41,7 @@ function registerTFGTungstenRecipes(event) {
 		.duration(20*16)
 		.EUt(GTValues.VA[GTValues.EV])
 
-	event.recipes.gtceu.evaporation_tower('tfg:ammonium_tungstate_to_apt_h')
+	event.recipes.tfg.evaporation_tower('tfg:ammonium_tungstate_to_apt_h')
 		.itemInputs(Item.of('tfg:ammonium_tungstate_dust', 1))
 		.itemOutputs(Item.of('tfg:apt_gem', 1))
 		.outputFluids(Fluid.of('gtceu:hydrogen', 500))

@@ -33,7 +33,7 @@ const registerBeneathRecipes = (event) => {
 	event.shapeless('beneath:hellbricks', [
 		'minecraft:nether_bricks',
 		['minecraft:magma_cream', 'minecraft:slime_ball'],
-		'tfc:powder/sulfur',
+		'gtceu:small_sulfur_dust',
 		['tfc:soot', 'tfc:powder/wood_ash']
 	]).id('tfg:shapeless/hellbricks')
 

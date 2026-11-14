@@ -8,6 +8,7 @@ ServerEvents.tags('item', event => {
 	registerAdAstraItemTags(event)
 	registerAE2ItemTags(event)
 	registerAFCItemTags(event)
+	registerAliencraftItemTags(event)
 	registerArthropocolypseItemTags(event)
 	registerBeneathItemTags(event)
 	registerComputerCraftItemTags(event)
@@ -96,6 +97,7 @@ ServerEvents.tags('block', event => {
 ServerEvents.tags('fluid', event => {
 	registerAFCFluidTags(event)
 	registerAdAstraFluidTags(event)
+	registerAliencraftFluidTags(event)
 	registerCreateFluidTags(event)
 	registerCreateAdditionsFluidTags(event)
 	registerCreateSteamPoweredFluidTags(event)
@@ -137,6 +139,7 @@ ServerEvents.tags('worldgen/biome', event => {
 ServerEvents.tags('entity_type', event => {
 	registerFowlPlayEntityTags(event)
 	registerJelliesEntityTags(event)
+	registerOpposingForceEntityTags(event);
 	registerTFGEntityTypeTags(event)
 	registerWABEntityTypeTags(event)
 })
@@ -181,6 +184,9 @@ TFCEvents.data(event => {
 	registerJelliesData(event)
 	registerWABData(event)
 	registerSpeciesData(event)
+	registerArthropocolypseTFCData(event)
+	registerAliencraftTFCData(event)
+	registerOpposingForceTFCData(event)
 })
 
 /**
@@ -189,7 +195,10 @@ TFCEvents.data(event => {
  */
 LootJS.modifiers((event) => {
 	registerAdAstraLoots(event)
+	registerAliencraftLoots(event)
+	registerArthropocolypseLoots(event)
 	registerBeneathLoots(event)
+	registerOpposingForceLoots(event)
 	registerTFGRockLoots(event)
 	registerTFGOreLoots(event)
 	registerMinecraftLoots(event)
@@ -222,6 +231,7 @@ ServerEvents.recipes(event => {
 	registerAdAstraRecipes(event)
 	registerAdvancedPeripheralsRecipes(event)
 	registerAlekishipsRecipes(event)
+	registerAliencraftRecipes(event)
 	registerAE2Recipes(event)
 	registerAFCRecipes(event)
 	registerArthropocolypseRecipes(event)
@@ -282,6 +292,7 @@ ServerEvents.recipes(event => {
 	registerMoreRedRecipes(event)
 	registerMTSRecipes(event)
 	registerMTSOCPRecipes(event)
+	registerOpposingForceRecipes(event)
 	registerPrimitiveCreaturesRecipes(event)
 	registerRailWaysRecipes(event)
 	registerRailwaysNavigatorRecipes(event)

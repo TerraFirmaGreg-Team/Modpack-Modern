@@ -1343,7 +1343,7 @@ const registerCreateRecipes = (event) => {
 				.outputItem(TFC.isp.of(`create:${dye}_toolbox`).simpleModifier('tfg:copy_nbt').asCanonClass())
 				.id(`barrel/create/${dye}_toolbox`)
 
-			event.recipes.gtceu.food_processor(`create/${dye}_toolbox`)
+			event.recipes.tfg.food_processor(`create/${dye}_toolbox`)
 				.itemInputs('#create:toolboxes')
 				.inputFluids(Fluid.of(`tfc:${dye}_dye`, 288))
 				.itemOutputs(`create:${dye}_toolbox`)

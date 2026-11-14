@@ -2,7 +2,9 @@
     "name": "ocean",
     "biomes": [
         "deep_ocean",
-        "deep_ocean_trench"
+        "deep_ocean_trench",
+        "deep_ocean_atolls",
+        "ocean_ridge"
     ],
     "features": [
         "ocean"

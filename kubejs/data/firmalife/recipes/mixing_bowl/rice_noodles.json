@@ -1,0 +1,31 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"type": "firmalife:mixing_bowl",
+	"ingredients": [
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"item": "tfc:food/rice_flour"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"item": "tfc:food/maize_flour"
+			}
+		},
+		{
+			"item": "gtceu:small_salt_dust"
+		}
+	],
+	"fluid_ingredient": {
+		"ingredient": {
+			"tag": "tfc:milks"
+		},
+		"amount": 1000
+	},
+	"output_item": {
+		"item": "firmalife:food/raw_rice_noodles",
+		"count": 2
+	}
+}

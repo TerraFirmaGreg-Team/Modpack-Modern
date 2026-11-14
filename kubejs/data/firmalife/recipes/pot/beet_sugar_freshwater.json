@@ -1,0 +1,47 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"type": "tfc:pot",
+	"ingredients": [
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"item": "tfc:food/beet"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"item": "tfc:food/beet"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"item": "tfc:food/beet"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"item": "tfc:food/beet"
+			}
+		},
+		{
+			"item": "gtceu:small_salt_dust"
+		}
+	],
+	"fluid_ingredient": {
+		"ingredient": "minecraft:water",
+		"amount": 100
+	},
+	"duration": 2000,
+	"temperature": 300,
+	"item_output": [
+		{
+			"item": "minecraft:sugar"
+		},
+		{
+			"item": "minecraft:sugar"
+		}
+	]
+}

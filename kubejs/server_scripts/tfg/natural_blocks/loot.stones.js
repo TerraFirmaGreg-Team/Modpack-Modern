@@ -95,6 +95,6 @@ function registerTFGRockLoots(event) {
 		.addWeightedLoot([
 			Item.of('gtceu:poor_raw_salt').withChance(40),
 			Item.of('gtceu:poor_raw_rock_salt').withChance(10),
-			Item.of('tfc:powder/salt').withChance(50)
+			Item.of('gtceu:small_salt_dust').withChance(50)
 		])
 }

@@ -1,0 +1,19 @@
+{
+	"feature": "tfg:venus/surface/slurry_slime_mold",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 2
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "WORLD_SURFACE"
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

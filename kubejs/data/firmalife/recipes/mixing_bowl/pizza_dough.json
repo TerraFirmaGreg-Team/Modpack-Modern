@@ -1,0 +1,28 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"type": "firmalife:mixing_bowl",
+	"ingredients": [
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "tfc:foods/dough"
+			}
+		},
+		{
+			"item": "gtceu:small_salt_dust"
+		},
+		{
+			"item": "firmalife:spice/basil_leaves"
+		}
+	],
+	"fluid_ingredient": {
+		"ingredient": {
+			"tag": "firmalife:oils"
+		},
+		"amount": 100
+	},
+	"output_item": {
+		"item": "firmalife:food/pizza_dough",
+		"count": 4
+	}
+}

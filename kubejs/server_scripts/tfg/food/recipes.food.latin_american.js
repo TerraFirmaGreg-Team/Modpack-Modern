@@ -47,7 +47,7 @@ function registerTFGLatinAmericanFoodRecipes(event) {
 	});
 
 	global.processorRecipe(event, 'tortilla_chips', 40, 16, {
-		itemInputs: ['firmalife:food/taco_shell', 'tfc:powder/salt'],
+		itemInputs: ['firmalife:food/taco_shell', 'gtceu:small_salt_dust'],
 		itemOutputs: ['firmalife:food/tortilla_chips'],
 		itemOutputProvider: TFC.isp.of('firmalife:food/tortilla_chips').copyFood()
 	});
@@ -55,7 +55,7 @@ function registerTFGLatinAmericanFoodRecipes(event) {
 	// Salsa. Wouldnt Pico De Gallo make more sense? smh.
 	global.processorRecipe(event, 'salsa', 300, 8, {
 		circuit: 1,
-		itemInputs: ['tfc:food/tomato', 'tfc:powder/salt', 'tfg:spice/cilantro_leaves'],
+		itemInputs: ['tfc:food/tomato', 'gtceu:small_salt_dust', 'tfg:spice/cilantro_leaves'],
 		itemOutputs: ['5x firmalife:food/salsa'],
 		itemOutputProvider: TFC.isp.of('5x firmalife:food/salsa').copyFood()
 	});
@@ -67,7 +67,7 @@ function registerTFGLatinAmericanFoodRecipes(event) {
 		[
 			'tfg:spice/cilantro_leaves',
 			'tfc:food/tomato',
-			'tfc:powder/salt',
+			'gtceu:small_salt_dust',
 			'#forge:tools/knives'
 		]
 	).id('tfg:crafting/salsa');

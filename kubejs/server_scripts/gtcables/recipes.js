@@ -2,7 +2,7 @@
 "use strict";
 
 function registerGTCablesRecipes(event) {
-	
+	/*
 	event.remove({ mod: 'gtcables' })
 
 	event.shapeless('gtcables:spool', 'gtcables:spool')
@@ -125,4 +125,5 @@ function registerGTCablesRecipes(event) {
 		.itemOutputs('tfg:electrical_insulator')
 		.duration(100)
 		.EUt(GTValues.VHA[GTValues.LV])
+		*/
 }

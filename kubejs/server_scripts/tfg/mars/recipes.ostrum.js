@@ -19,18 +19,18 @@ function registerTFGMarsOstrumRecipes(event) {
 
 	// Ostrum Linear Accelerator Recipes
 /*
-	event.recipes.gtceu.ostrum_linear_accelerator('tfg:ostrum_transformation')
+	event.recipes.tfg.ostrum_linear_accelerator('tfg:ostrum_transformation')
 		.inputFluids('gtceu:residual_radioactive_concoction 100')
 		.itemInputs('32x #forge:dusts/ostrum')
 		.chancedFluidOutputLogic($ChanceLogic.XOR)
-		.chancedFluidOutput('gtceu:lightweight_ostrum_vapor', 6000, 0)
-		.chancedFluidOutput('gtceu:ostrum_vapor', 3000, 0)
-		.chancedFluidOutput('gtceu:dense_ostrum_vapor', 1000, 0)
+		.chancedFluidOutput('gtceu:lightweight_ostrum_vapor', 6000)
+		.chancedFluidOutput('gtceu:ostrum_vapor', 3000)
+		.chancedFluidOutput('gtceu:dense_ostrum_vapor', 1000)
 		.dimension('ad_astra:mars')
 		.duration(20 * 5)
 		.EUt(GTValues.VA[GTValues.EV]);
 
-	event.recipes.gtceu.ostrum_linear_accelerator('tfg:lightweight_ostrum')
+	event.recipes.tfg.ostrum_linear_accelerator('tfg:lightweight_ostrum')
 		.inputFluids('gtceu:lightweight_ostrum_vapor 1000')
 		.inputFluids('gtceu:residual_radioactive_concoction 100')
 		.inputFluids(Fluid.of('tfg:heavy_water', 1000))
@@ -41,7 +41,7 @@ function registerTFGMarsOstrumRecipes(event) {
 		.duration(20 * 5)
 		.EUt(GTValues.VA[GTValues.IV]);
 
-	event.recipes.gtceu.ostrum_linear_accelerator('tfg:ostrum')
+	event.recipes.tfg.ostrum_linear_accelerator('tfg:ostrum')
 		.inputFluids('gtceu:ostrum_vapor 1000')
 		.inputFluids('gtceu:residual_radioactive_concoction 100')
 		.inputFluids(Fluid.of('gtceu:radon', 100))
@@ -52,7 +52,7 @@ function registerTFGMarsOstrumRecipes(event) {
 		.duration(20 * 5)
 		.EUt(GTValues.VA[GTValues.IV]);
 
-	event.recipes.gtceu.ostrum_linear_accelerator('tfg:dense_ostrum')
+	event.recipes.tfg.ostrum_linear_accelerator('tfg:dense_ostrum')
 		.inputFluids('gtceu:dense_ostrum_vapor 1000')
 		.inputFluids('gtceu:residual_radioactive_concoction 100')
 		.inputFluids(Fluid.of('gtceu:tritiated_water', 500))
@@ -67,20 +67,20 @@ function registerTFGMarsOstrumRecipes(event) {
 
 	// .input($HeatRecipeCapability.CAP, new $HeatIngredient(X, Y)) where X is Minimal Temperature to run and where Y is HU consummed per craft
 	
-		event.recipes.gtceu.ostrum_linear_accelerator('tfg:ostrum_transformation')
+		event.recipes.tfg.ostrum_linear_accelerator('tfg:ostrum_transformation')
 			.inputFluids(Fluid.of('gtceu:residual_radioactive_concoction', 1000))
 			.itemInputs('32x #forge:dusts/ostrum')
 			.chancedFluidOutputLogic($ChanceLogic.XOR)
-			.chancedFluidOutput('gtceu:lightweight_ostrum_vapor', 6000, 0)
-			.chancedFluidOutput('gtceu:ostrum_vapor', 3000, 0)
-			.chancedFluidOutput('gtceu:dense_ostrum_vapor', 1000, 0)
+			.chancedFluidOutput('gtceu:lightweight_ostrum_vapor', 6000)
+			.chancedFluidOutput('gtceu:ostrum_vapor', 3000)
+			.chancedFluidOutput('gtceu:dense_ostrum_vapor', 1000)
 			.dimension('ad_astra:mars')
 			.duration(20 * 5)
 			.EUt(GTValues.VA[GTValues.EV]);
 
 	//#region Light Ostrum Vapor
 	
-		event.recipes.gtceu.ostrum_linear_accelerator('tfg:lightweight_ostrum_vapor_t1')
+		event.recipes.tfg.ostrum_linear_accelerator('tfg:lightweight_ostrum_vapor_t1')
 			.perTick(true)
 			.inputFluids(Fluid.of('gtceu:residual_radioactive_concoction', 1))
 			.perTick(false)
@@ -97,7 +97,7 @@ function registerTFGMarsOstrumRecipes(event) {
 			.EUt(GTValues.VA[GTValues.EV])
 			.circuit(1);
 	
-		event.recipes.gtceu.ostrum_linear_accelerator('tfg:lightweight_ostrum_vapor_t2')
+		event.recipes.tfg.ostrum_linear_accelerator('tfg:lightweight_ostrum_vapor_t2')
 			.perTick(true)
 			.inputFluids(Fluid.of('gtceu:residual_radioactive_concoction', 1))
 			.inputFluids(Fluid.of('tfg:semiheavy_water', 1))
@@ -117,7 +117,7 @@ function registerTFGMarsOstrumRecipes(event) {
 			.EUt(GTValues.VA[GTValues.EV])
 			.circuit(2);
 	
-		event.recipes.gtceu.ostrum_linear_accelerator('tfg:lightweight_ostrum_vapor_t3')
+		event.recipes.tfg.ostrum_linear_accelerator('tfg:lightweight_ostrum_vapor_t3')
 			.perTick(true)
 			.inputFluids(Fluid.of('gtceu:residual_radioactive_concoction', 1))
 			.inputFluids(Fluid.of('tfg:semiheavy_water', 1))
@@ -142,7 +142,7 @@ function registerTFGMarsOstrumRecipes(event) {
 
 	//#region Ostrum Vapor
 
-		event.recipes.gtceu.ostrum_linear_accelerator('tfg:polyalkylene_lubricant')
+		event.recipes.tfg.ostrum_linear_accelerator('tfg:polyalkylene_lubricant')
 			.perTick(true)
 			.inputFluids(Fluid.of('gtceu:residual_radioactive_concoction', 1))
 			.perTick(false)
@@ -156,7 +156,7 @@ function registerTFGMarsOstrumRecipes(event) {
 			.EUt(GTValues.VA[GTValues.IV])
 			//.circuit(3);
 
-		event.recipes.gtceu.ostrum_linear_accelerator('tfg:caesium_137')
+		event.recipes.tfg.ostrum_linear_accelerator('tfg:caesium_137')
 			.perTick(true)
 			.inputFluids(Fluid.of('gtceu:residual_radioactive_concoction', 1))
 			.perTick(false)
@@ -169,7 +169,7 @@ function registerTFGMarsOstrumRecipes(event) {
 			.duration(20 * 150)
 			.EUt(GTValues.VA[GTValues.IV])
 
-		event.recipes.gtceu.ostrum_linear_accelerator('tfg:terrafirmaguard_pa6')
+		event.recipes.tfg.ostrum_linear_accelerator('tfg:terrafirmaguard_pa6')
 			.perTick(true)
 			.inputFluids(Fluid.of('gtceu:residual_radioactive_concoction', 1))
 			.perTick(false)
@@ -187,7 +187,7 @@ function registerTFGMarsOstrumRecipes(event) {
 
 	//#region Dense Ostrum Vapor
 
-		event.recipes.gtceu.ostrum_linear_accelerator('tfg:radioactive_effluent')
+		event.recipes.tfg.ostrum_linear_accelerator('tfg:radioactive_effluent')
 			.perTick(true)
 			.inputFluids(Fluid.of('gtceu:residual_radioactive_concoction', 1))
 			.perTick(false)
@@ -200,7 +200,7 @@ function registerTFGMarsOstrumRecipes(event) {
 			.duration(20 * 240)
 			.EUt(GTValues.VA[GTValues.LuV])
 
-		event.recipes.gtceu.ostrum_linear_accelerator('tfg:naquadah')
+		event.recipes.tfg.ostrum_linear_accelerator('tfg:naquadah')
 			.perTick(true)
 			.inputFluids(Fluid.of('gtceu:residual_radioactive_concoction', 1))
 			.perTick(false)
@@ -214,7 +214,7 @@ function registerTFGMarsOstrumRecipes(event) {
 			.duration(20 * 300)
 			.EUt(GTValues.VA[GTValues.IV])
 
-		event.recipes.gtceu.ostrum_linear_accelerator('tfg:lorandite_ola')
+		event.recipes.tfg.ostrum_linear_accelerator('tfg:lorandite_ola')
 			.perTick(true)
 			.inputFluids(Fluid.of('gtceu:residual_radioactive_concoction', 1))
 			.perTick(false)
@@ -225,7 +225,7 @@ function registerTFGMarsOstrumRecipes(event) {
 			.duration(20 * 300)
 			.EUt(GTValues.VA[GTValues.IV])
 
-		event.recipes.gtceu.ostrum_linear_accelerator('tfg:tbu_232_rod_ola')
+		event.recipes.tfg.ostrum_linear_accelerator('tfg:tbu_232_rod_ola')
 			.perTick(true)
 			.inputFluids(Fluid.of('gtceu:residual_radioactive_concoction', 1))
 			.perTick(false)
@@ -244,7 +244,7 @@ function registerTFGMarsOstrumRecipes(event) {
 			.duration(20 * 640)
 			.EUt(GTValues.VA[GTValues.IV])
 
-		event.recipes.gtceu.ostrum_linear_accelerator('tfg:dense_to_light')
+		event.recipes.tfg.ostrum_linear_accelerator('tfg:dense_to_light')
 			.perTick(true)
 			.inputFluids(Fluid.of('gtceu:residual_radioactive_concoction', 1))
 			.perTick(false)

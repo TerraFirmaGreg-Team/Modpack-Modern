@@ -13,8 +13,8 @@ global.CF_WHITELISTED_STORAGES = [
     // GTceu
     'gtceu:wood_crate',
     'gtceu:bronze_crate',
-    'gtceu:bismuth_bronze_crate',
-    'gtceu:black_bronze_crate',
+    'tfg:bismuth_bronze_crate',
+    'tfg:black_bronze_crate',
     'gtceu:steel_crate',
     'gtceu:aluminium_crate',
     'gtceu:stainless_steel_crate',

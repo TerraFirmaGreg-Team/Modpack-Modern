@@ -4,6 +4,7 @@
 		"block": "tfc:plant/moss",
 		"height": 6,
 		"radius": 4,
-		"integrity": 0.2
+		"integrity": 0.2,
+		"tide_height": 2
 	}
 }

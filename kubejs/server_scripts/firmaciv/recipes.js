@@ -5,12 +5,11 @@ const registerFirmaCivRecipes = (event) => {
 
 	//#region Удаление рецептов
 
-	event.remove({ id: '/firmaciv:quern/' })
 	event.remove({ id: 'firmaciv:anvil/copper_bolt' })
 	event.remove({ id: 'firmaciv:crafting/watercraft_frame_angled_2' }) // Как же меня заебал разраб со своими кривыми руками
-	event.remove("firmaciv:heating/cleat")
-	event.remove("firmaciv:heating/oarlock")
-	event.remove("firmaciv:heating/cannonball")
+	event.remove({ id: "firmaciv:heating/cleat" });
+	event.remove({ id: "firmaciv:heating/oarlock" });
+	event.remove({ id: "firmaciv:heating/cannonball" });
 
 	//#endregion
 

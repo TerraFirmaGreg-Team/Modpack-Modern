@@ -1,0 +1,25 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"item": "tfc:food/tomato"
+			}
+		},
+		{
+			"item": "gtceu:small_salt_dust"
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"item": "tfc:food/garlic"
+			}
+		}
+	],
+	"result": {
+		"item": "firmalife:food/tomato_sauce_mix",
+		"count": 5
+	}
+}

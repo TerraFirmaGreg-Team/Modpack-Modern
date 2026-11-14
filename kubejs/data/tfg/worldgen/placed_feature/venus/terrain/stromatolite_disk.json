@@ -21,11 +21,11 @@
 			"type": "minecraft:in_square"
 		},
 		{
-			"type": "minecraft:biome"
-		},
-		{
 			"type": "minecraft:heightmap",
 			"heightmap": "WORLD_SURFACE"
+		},
+		{
+			"type": "minecraft:biome"
 		}
 	]
 }

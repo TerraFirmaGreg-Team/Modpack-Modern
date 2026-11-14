@@ -37,7 +37,7 @@ function registerTFGBouleRecipes(event) {
 	event.recipes.gtceu.autoclave('tfg:silicon_seed_crystal')
 		.itemInputs('#forge:dusts/polysilicon')
 		.inputFluids('minecraft:water 250')
-		.chancedOutput('tfg:silicon_seed_crystal', 7500, 0)
+		.chancedOutput('tfg:silicon_seed_crystal', 7500)
 		.duration(30 * 20)
 		.EUt(24)
 
@@ -66,8 +66,8 @@ function registerTFGBouleRecipes(event) {
 
 	// Boules
 
-	event.recipes.gtceu.high_temperature_precision_fabricator('tfg:silicon_boule')
-		.chancedInput('tfg:quartz_crucible', 500, 0) // 5% chance
+	event.recipes.tfg.high_temperature_precision_fabricator('tfg:silicon_boule')
+		.chancedInput('tfg:quartz_crucible', 500) // 5% chance
 		.itemInputs('1x tfg:silicon_seed_crystal', '#forge:small_dusts/gallium_arsenide', '#tfg:precision_fabricator_holder_rods')
 		.inputFluids(Fluid.of('tfg:polysilicon', 32 * 144))
 		.itemOutputs('gtceu:silicon_boule')
@@ -76,8 +76,8 @@ function registerTFGBouleRecipes(event) {
 		.addData("ebf_temp", 1784)
 		.EUt(GTValues.VA[GTValues.MV])
 
-	event.recipes.gtceu.high_temperature_precision_fabricator('tfg:silicon_boule_cleanroom')
-		.chancedInput('tfg:quartz_crucible', 500, 0) // 5% chance
+	event.recipes.tfg.high_temperature_precision_fabricator('tfg:silicon_boule_cleanroom')
+		.chancedInput('tfg:quartz_crucible', 500) // 5% chance
 		.itemInputs('1x tfg:silicon_seed_crystal', '#forge:small_dusts/gallium_arsenide', '#tfg:precision_fabricator_holder_rods')
 		.inputFluids(Fluid.of('tfg:polysilicon', 32 * 144))
 		.itemOutputs('gtceu:silicon_boule')
@@ -88,8 +88,8 @@ function registerTFGBouleRecipes(event) {
 		.addData("ebf_temp", 1784)
 		.EUt(GTValues.VA[GTValues.MV])
 			
-	event.recipes.gtceu.high_temperature_precision_fabricator('tfg:phosphorus_boule')
-		.chancedInput('tfg:quartz_crucible', 2000, 0) // 20% chance
+	event.recipes.tfg.high_temperature_precision_fabricator('tfg:phosphorus_boule')
+		.chancedInput('tfg:quartz_crucible', 2000) // 20% chance
 		.itemInputs('4x tfg:silicon_seed_crystal', '8x #forge:dusts/phosphorus', '2x #forge:small_dusts/gallium_arsenide', '#tfg:precision_fabricator_holder_rods')
 		.inputFluids(Fluid.of('tfg:polysilicon', 64 * 144), 'gtceu:nitrogen 8000')
 		.itemOutputs('gtceu:phosphorus_boule')
@@ -99,8 +99,8 @@ function registerTFGBouleRecipes(event) {
 		.addData("ebf_temp", 2484)
 		.EUt(GTValues.VA[GTValues.HV])
 
-	event.recipes.gtceu.high_temperature_precision_fabricator('tfg:naquadah_boule')
-		.chancedInput('tfg:quartz_crucible', 5000, 0) // 50% chance
+	event.recipes.tfg.high_temperature_precision_fabricator('tfg:naquadah_boule')
+		.chancedInput('tfg:quartz_crucible', 5000) // 50% chance
 		.itemInputs('8x tfg:silicon_seed_crystal', '#forge:dusts/gallium_arsenide', '#tfg:precision_fabricator_holder_rods')
 		.inputFluids(Fluid.of('tfg:polysilicon', 128 * 144), 'gtceu:naquadah 144', 'gtceu:argon 8000')
 		.itemOutputs('gtceu:naquadah_boule')
@@ -110,8 +110,8 @@ function registerTFGBouleRecipes(event) {
 		.addData("ebf_temp", 5400)
 		.EUt(GTValues.VA[GTValues.EV])
 
-	event.recipes.gtceu.high_temperature_precision_fabricator('tfg:neutronium_boule')
-		.chancedInput('tfg:quartz_crucible', 9900, 0) // 99% chance
+	event.recipes.tfg.high_temperature_precision_fabricator('tfg:neutronium_boule')
+		.chancedInput('tfg:quartz_crucible', 9900) // 99% chance
 		.itemInputs('tfg:silicon_seed_crystal', '2x #forge:dusts/gallium_arsenide', '#tfg:precision_fabricator_holder_rods')
 		.inputFluids(Fluid.of('tfg:polysilicon', 256 * 144), Fluid.of('gtceu:neutronium', 144 * 4), 'gtceu:xenon 8000')
 		.itemOutputs('gtceu:neutronium_boule')
