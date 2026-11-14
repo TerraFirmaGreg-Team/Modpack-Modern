@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "text": "Every item has a $(thing)Size ⇲$() and $(thing)Weight ⚖$(). An item's size and weight is shown on the $(thing)tooltip$(), which appears when you hover over it with your mouse."
+            "text": "Igal esemel on $(thing)Size ⇲$() ja $(thing)Weight ⚖$(). Eseme suurus ja kaal kuvatakse $(thing)tooltip$() abil, mis ilmub, kui viid hiirekursori eseme kohale."
         },
         {
             "type": "patchouli:text",

@@ -1,5 +1,5 @@
 {
-    "name": "Beneath Fruits",
+    "name": "Фрукты Бездны",
     "category": "tfg:beneath",
     "icon": "tfg:textures/item/fruit_trees/magmango_sapling.png",
     "pages": [
@@ -7,10 +7,10 @@
             "type": "patchouli:text",
             "anchor": "index",
             "title": "Каталог",
-            "text": "$(bold)$(li)$(l:beneath/beneath_wild_fruits#fruit_trees)Fruit Trees$()$(li2)$(l:beneath/beneath_wild_fruits#lavacado)Lavacado$()$(li2)$(l:beneath/beneath_wild_fruits#magmango)Magmango$()$(bold)$(li)$(l:beneath/beneath_wild_fruits#palm_fruit_trees)Palm Fruit Trees$()$(li2)$(l:beneath/beneath_wild_fruits#oil_palm)Oil Palm$()$(li2)$(l:beneath/beneath_wild_fruits#acai)Açaí$()"
+            "text": "$(bold)$(li)$(l:beneath/beneath_wild_fruits#fruit_trees) Фруктовые Деревья$()$(li2)$(l:beneath/beneath_wild_fruits#lavacado)Лавакадо$()$(li2)$(l:beneath/beneath_wild_fruits#magmango)Магманго$()$(bold)$(li)$(l:beneath/beneath_wild_fruits#palm_fruit_trees)Пальмовые деревья$()$(li2) $(l:beneath/beneath_wild_fruits#oil_palm) Пальмовое масло$()$(li2)$(l:beneath/beneath_wild_fruits#acai)Асаи$()"
         },
         {
-            "title": "Introduction",
+            "title": "Введение",
             "anchor": "into",
             "type": "patchouli:text",
             "text": "$(l:beneath)Бездна$() предлагает тебе уникальный набор диких фруктов, которые адаптировались к экстремальным условиям подземелья. Фрукты могут быть выращены тем же способом, что и обычные $(l:the_world/wild_fruits)Дикие фрукты$()  верхнего мира"
@@ -59,7 +59,7 @@
                     "text": "Дек"
                 },
                 {
-                    "text": "Lavacado"
+                    "text": "Лавакадо"
                 },
                 {
                     "fill": "0x6ab553"
@@ -98,7 +98,7 @@
                     "fill": "0x6ab553"
                 },
                 {
-                    "text": "Magmango"
+                    "text": "Магманго"
                 },
                 {
                     "fill": "0x6ab553"
@@ -172,8 +172,8 @@
         {
             "type": "patchouli:text",
             "anchor": "lavacado",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 100 %$(br2)Lavacado trees grow in the months of December through April, start flowering in May and June, and bear fruit in July.",
-            "title": "Lavacado"
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 8–80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 20–100 %$(br2)Деревья Лавакадо растут с декабря по апрель, цветут в мае и июне, а плодоносят в июле.",
+            "title": "Лавакадо"
         },
         {
             "type": "tfg:multimultiblock",
@@ -237,8 +237,8 @@
         {
             "type": "patchouli:text",
             "anchor": "magmango",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 30 - 100 %$(br2)Magmango trees grow in the months of October through February, start flowering in March and April, and bear fruit in May.",
-            "title": "Magmango"
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 8–80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 30–100 %$(br2)Магманговые деревья растут с октября по февраль, зацветают в марте и апреле, а плодоносят в мае.",
+            "title": "Магманго"
         },
         {
             "type": "tfg:multimultiblock",
@@ -343,7 +343,7 @@
                     "text": "Дек"
                 },
                 {
-                    "text": "Oil Palm"
+                    "text": "Масличная пальма"
                 },
                 {
                     "fill": "0xa217ff"
@@ -382,7 +382,7 @@
                     "fill": "0xa217ff"
                 },
                 {
-                    "text": "Açaí"
+                    "text": "Асаи"
                 },
                 {
                     "fill": "0xa217ff"
@@ -421,15 +421,15 @@
                     "fill": "0xa8986a"
                 }
             ],
-            "text": "The fruiting calendar for palm fruit trees.",
-            "title": "Palm Fruit Trees",
+            "text": "Календарь плодоношения для пальмовых фруктовых деревьев.",
+            "title": "Пальмовые фруктовые деревья",
             "legend": [
                 {
-                    "text": "Dormant",
+                    "text": "Спящее",
                     "color": "0xa8986a"
                 },
                 {
-                    "text": "Fruiting",
+                    "text": "Плодоносящее",
                     "color": "0xa217ff"
                 }
             ],
@@ -448,12 +448,12 @@
         {
             "type": "patchouli:text",
             "anchor": "oil_palm",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 19 - 62 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 10 - 100 %$(br2)Oil Palm trees are harvested for their fruits which can be processed into Palm Oil and a source of burlap fiber. Oil palm clusters grow in 4 stages and yield 3-6 items when harvested.",
-            "title": "Oil Palm Tree"
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 19 - 62 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 10 - 100 %$(br2) Из плодов масличной пальмы получают пальмовое масло и мешковину. Гроздья масличной пальмы созревают в четыре этапа, и с одной пальмы можно собрать 3-6 плодов.",
+            "title": "Масляничная Пальма"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Oil palm trees can be found in $(l:beneath/beneath#salt_caves)Salt Caves$() and $(l:beneath/beneath#tar_pools)Tar Pools$() biomes between Y=50 and Y=190",
+            "text": "Масличные пальмы можно найти в биомах $(l:beneath/beneath#salt_caves)Соляных пещер$() и $(l:beneath/beneath#tar_pools)Смоляных ям$() между Y=50 и Y=190",
             "multiblocks": [
                 {
                     "pattern": [
@@ -1076,12 +1076,12 @@
         {
             "type": "patchouli:text",
             "anchor": "acai",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 24 - 70 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 10 - 100 %$(br2)Açaí tree clusters grow in 5 stages and yield 4-8 fruits when harvested.",
-            "title": "Açaí Tree"
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 24–70 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Влажность$(): 10–100 %$(br2)Гроздья асаи растут в 5 этапов и дают 4–8 плодов при сборе урожая.",
+            "title": "Дерево Асаи"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Açaí trees can be found in $(l:beneath/beneath#salt_caves)Salt Caves$() and $(l:beneath/beneath#tar_pools)Tar Pools$() biomes between Y=50 and Y=190",
+            "text": "Деревья асаи можно найти в биомах $(l:beneath/beneath#salt_caves)Соляные пещеры$() и $(l:beneath/beneath#tar_pools)Смоляные ямы$() между Y=50 и Y=190",
             "multiblocks": [
                 {
                     "pattern": [
@@ -1827,7 +1827,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Читать далее",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/climate",

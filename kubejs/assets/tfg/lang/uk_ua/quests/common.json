@@ -8,5 +8,9 @@
     "quests.groups.space_age": "Космічна епоха",
     "quests.groups.interstellar": "Міжзоряна епоха",
     "quests.groups.technological_help": "Технологічна допомога",
-    "quests.groups.tips": "Поради"
+    "quests.groups.tips": "Поради",
+    "quests.player_completed_quest": "&e%s&r виконав завдання: ",
+    "quests.team_completed_quest": "&e%s&7 [%s]&r виконав завдання: ",
+    "quests.player_completed_chapter": "&e%s&r завершив розділ завдань: ",
+    "quests.team_completed_chapter": "&e%s&7 [%s]&r завершив розділ завдань: "
 }

@@ -1,0 +1,119 @@
+{
+	"name": "Building Tools",
+	"icon": "tfg:trowel",
+	"category": "tfg:craftsmanship",
+	"pages": [
+        {
+            "type": "patchouli:text",
+            "text": "The factory can't grow on an open field! This entry lists some tools that can help you pave over the beautiful landscape and build the warehouses of your dreams.$(br2)$(bold)Tip:$() Vertical slabs getting in the way? You can toggle $(thing)Additional Placements$() by pressing $(item)$(k:key.additionalplacements.placement_toggle)$()."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "title": "Contents",
+            "text": "$(li)$(bold)$(l:craftsmanship/building_tools#trowel)Trowel$()$(li)$(bold)$(l:craftsmanship/building_tools#stonecutter)Stonecutter$()$(li)$(bold)$(l:craftsmanship/building_tools#copycats)Copycats$()$(li)$(bold)$(l:craftsmanship/building_tools#framing_saw)Framing Saw$()$(li)$(bold)$(l:craftsmanship/building_tools#architects_cutter)Architect's Cutter$()$(li)$(bold)$(l:craftsmanship/building_tools#wands)Construction Wands$()$(li)$(bold)$(l:craftsmanship/building_tools#schematicannon)Schematicannon$()$(li)$(bold)$(l:craftsmanship/building_tools#terminals)GregTech Terminals$()$(li)$(bold)$(l:craftsmanship/building_tools#gadgets)Building Gadgets$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Trowel",
+            "item": "tfg:trowel",
+            "text": "A $(item)Trowel$() allows a builder to place random blocks from their hotbar when $(item)$(k:key.use)$() a surface.$(br)Trowels also have built-in functionality with the $(item)Roads and Roofs$() mod, meaning that they can place filler items like bricks or flagstones randomly as well.$(br)Inspired by the trowel tool from $(item)Quark$()―A mod by Vazkii."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "stonecutter",
+            "item": "minecraft:stonecutter",
+            "title": "Customizable Blocks",
+            "text": "$(tfg_short) has a few mods dedicated to adding customizable blocks for very intricate building.$(br2)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "copycats:copycat_block",
+            "title": "Copycats",
+            "anchor": "copycats",
+            "text": "$(bold)Create: Copycats+$() adds many blocks that can be $(item)$(k:key.use)$() with another block to copy its appearance. They can be made with a $(thing)Stonecutter$().$(br2)You can check out its blocks by searching for $(6)@copycats$() in $(emi)."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "framing_saw",
+            "item": "framedblocks:framing_saw,framedblocks:powered_framing_saw",
+            "text": "$(bold)Framed Blocks$() adds many blocks that can be $(item)$(k:key.use)$() with another block to copy its appearance. Mostly made with a $(thing)Framing Saw$().$(br2)You can check out its blocks by searching for $(6)@framedblocks$() in $(emi)."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "architects_cutter",
+            "item": "domum_ornamentum:architectscutter",
+            "text": "$(bold)Domum Ornamentum$() adds blocks that can copy the appearance of others and even combine multiple blocks together. Made with an $(thing)Architect's Cutter$().$(br2)You can check out its blocks by searching for $(6)@domum_ornamentum$() in $(emi)."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "constructionwand:stone_wand,constructionwand:iron_wand,constructionwand:diamond_wand,constructionwand:infinity_wand",
+            "title": "Construction Wands",
+            "anchor": "wands",
+            "text": "Construction Wands are an easy way to place many blocks at the same time. Simply right-click a block while holding the wand and it will place more of that block all at once, making it great for floors, walls, and so on.$(br2)Press $(item)U$() on the construction wand to bring up a page detailing its instructions."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "constructionwand:core_destruction,constructionwand:core_angel",
+            "title": "Wand Upgrades",
+            "text": "There are also some wand upgrades to provide even more functionality.$(br2)Wands have durability but can be repaired with $(item)Repair Kits$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "create:schematicannon,create:schematic_table",
+            "anchor": "schematicannon",
+            "text": "The $(item)Schematicannon$() is an automatic building machine that will place blocks according to a given schematic. You can use it to transfer buildings made in a creative world, or to copy and paste segments of your structures."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "gtceu:terminal,gtceuterminal:schematic_interface,gtceuterminal:dismantler",
+            "title": "GregTech Terminals",
+            "anchor": "terminals",
+            "text": "The $(item)Terminal$() will automatically build a $(thing)GregTech multiblock$() using items from your inventory.$(br2)The $(item)Schematic Interface$() lets you copy and paste $(thing)multiblocks$(), while the $(item)Dismantler$() lets you disassemble them entirely in one click."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "buildinggadgets2:gadget_building,buildinggadgets2:gadget_exchanging,buildinggadgets2:gadget_copy_paste,buildinggadgets2:gadget_cut_paste,buildinggadgets2:gadget_destruction",
+            "anchor": "gadgets",
+            "title": "Building Gadgets",
+            "text": "Unlocked in $(5)EV$(), $(thing)Building Gadgets$() are powerful tools that let you cut, copy, paste, and otherwise do large operations for building."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "buildinggadgets2:shapeless/guide_book",
+            "title": "Another Book",
+            "text": "Building Gadgets has its own $(thing)guide book$(). You can craft one like this."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/anvils",
+                "tfg:craftsmanship/chisel",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/building_materials"
+            ]
+        }
+	],
+	"read_by_default": true,
+	"sortnum": 21,
+	"extra_recipe_mappings": {
+        "tfg:trowel": 1,
+        "domum_ornamentum:architectscutter": 5,
+        "framedblocks:framing_saw": 4,
+        "framedblocks:powered_framing_saw": 4,
+        "minecraft:stonecutter": 2,
+        "constructionwand:stone_wand": 6,
+        "constructionwand:iron_wand": 6,
+        "constructionwand:diamond_wand": 6,
+        "constructionwand:infinity_wand": 6,
+        "constructionwand:core_destruction": 7,
+        "constructionwand:core_angel": 7,
+        "create:schematicannon": 8,
+        "create:schematic_table": 8,
+        "gtceu:terminal": 9,
+        "gtceuterminal:schematic_interface": 9,
+        "gtceuterminal:dismantler": 9
+	}
+}

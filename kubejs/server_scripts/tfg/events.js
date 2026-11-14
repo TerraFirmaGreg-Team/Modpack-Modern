@@ -1,50 +1,58 @@
 "use strict";
 
 TFGServerEvents.dimensionalPowerConsumption(event => {
-    event.add("minecraft:overworld",   10000);
-    event.add("minecraft:the_nether",  20000);
-    event.add("ad_astra:earth_orbit",  20000);
-    event.add("ad_astra:moon",         50000);
-    event.add("ad_astra:moon_orbit",   50000);
-    event.add("ad_astra:mars",        100000);
-    event.add("ad_astra:mars_orbit",  100000);
-    event.add("ad_astra:venus",       200000);
-    event.add("ad_astra:venus_orbit", 200000);
+	event.add("minecraft:overworld", 10000);
+	event.add("minecraft:the_nether", 20000);
+	event.add("ad_astra:earth_orbit", 20000);
+	event.add("ad_astra:moon", 50000);
+	event.add("ad_astra:moon_orbit", 50000);
+	event.add("ad_astra:mars", 100000);
+	event.add("ad_astra:mars_orbit", 100000);
+	event.add("ad_astra:venus", 200000);
+	event.add("ad_astra:venus_orbit", 200000);
 });
 
 // LLM Google Gemini search tool was used to find these because Kubsejs docs sux hard
 
 function linkOf(key, url) {
-  return Text.translate(key)
-    .aqua()
-    .underlined()
-    .click(url)
-    .hover(Text.translate('tfg.clientmessage.welcome.3'))
+	return Text.translate(key)
+		.aqua()
+		.underlined()
+		.click(url)
+		.hover(Text.translate('tfg.clientmessage.welcome.3'))
 }
 
 PlayerEvents.loggedIn(event => {
-    event.player.tell(Text.translate('tfg.clientmessage.welcome.1'))
-    event.player.tell(Text.translate('tfg.clientmessage.welcome.2',
-      linkOf('tfg.clientmessage.link.website', 'https://terrafirmagreg.team'),
-      linkOf('tfg.clientmessage.link.field_guide', 'https://wiki.terrafirmagreg.team/modern/field-guide'),
-      linkOf('tfg.clientmessage.link.recipe_book', 'https://wiki.terrafirmagreg.team/modern/recipe-book'),
-      linkOf('tfg.clientmessage.link.quest_book', 'https://wiki.terrafirmagreg.team/modern/quest-book')
-    ))
+	event.player.tell(Text.translate('tfg.clientmessage.welcome.1'))
+	event.player.tell(Text.translate('tfg.clientmessage.welcome.2',
+		linkOf('tfg.clientmessage.link.website', 'https://terrafirmagreg.team'),
+		linkOf('tfg.clientmessage.link.field_guide', 'https://wiki.terrafirmagreg.team/modern/field-guide'),
+		linkOf('tfg.clientmessage.link.recipe_book', 'https://wiki.terrafirmagreg.team/modern/recipe-book'),
+		linkOf('tfg.clientmessage.link.quest_book', 'https://wiki.terrafirmagreg.team/modern/quest-book')
+	))
+
+	if (Platform.isLoaded("essentials") || Platform.isLoaded("essential")) {
+		event.player.tell(Text.translate('tfg.clientmessage.welcome.essentials.1',
+			linkOf('tfg.clientmessage.link.e4mc', 'https://e4mc.link/'),
+		))
+		event.player.tell(Text.translate('tfg.clientmessage.welcome.essentials.2'));
+	}
 })
 
 // Vase Sounds
 global.MINECRAFT_DYE_NAMES.forEach(color => {
 	BlockEvents.rightClicked(event => {
 		const { block, server, player } = event
-		if (block.id !== `tfg:decorative_vase/${color}`) return
+		if (block.id !== `tfg:decorative_vase/${color}`)
+			return
 		server.runCommandSilent(`playsound tfc:block.quern.drag block ${player.username} ${block.x} ${block.y} ${block.z} 0.3 2.0 0.1`)
-
 	})
 });
 
 BlockEvents.rightClicked(event => {
 	const { block, server, player } = event
-	if (block.id !== 'tfg:decorative_vase') return
+	if (block.id !== 'tfg:decorative_vase')
+		return
 	server.runCommandSilent(`playsound tfc:block.quern.drag block ${player.username} ${block.x} ${block.y} ${block.z} 0.3 2.0 0.1`)
 });
 //#endregion
@@ -54,7 +62,9 @@ BlockEvents.rightClicked(event => {
 
 BlockEvents.rightClicked(event => {
 	let item = event.item
-	if (item.id !== 'tfg:armor_stand_arms') return
+	if (item.id !== 'tfg:armor_stand_arms')
+		return
+
 	let mob = event.block[event.facing].createEntity('minecraft:armor_stand')
 	mob.mergeNbt('{ShowArms:1b}')
 	mob.setPos(mob.x + 0.5, mob.y, mob.z + 0.5)
@@ -94,13 +104,11 @@ miners.forEach(miner => {
 		if (!player || !level)
 			return;
 
-		if (level.dimension === "minecraft:the_nether" && TFGConfig.SERVER.enableBeneathMiningRestrictions.get())
-		{
+		if (level.dimension === "minecraft:the_nether" && TFGConfig.SERVER.enableBeneathMiningRestrictions.get()) {
 			player.tell(Text.translate("tfg.clientmessage.nether_miner_placed", TFGConfig.SERVER.disabledBeneathMiningYLevel.get()));
 		}
 		else if ((level.dimension === "ad_astra:venus" || level.dimension === "ad_astra:mercury")
-			&& TFGConfig.SERVER.enableHotPlanetMiningRestrictions.get())
-		{
+			&& TFGConfig.SERVER.enableHotPlanetMiningRestrictions.get()) {
 			player.tell(Text.translate("tfg.clientmessage.hot_planet_miner_placed"));
 		}
 	})
@@ -119,7 +127,8 @@ BlockEvents.broken("tfg:spider_sac", event => {
 
 BlockEvents.rightClicked(event => {
 	const { server, item, player, block } = event
-	if (!item.hasTag('forge:tools/hammers')) return;
+	if (!item.hasTag('forge:tools/hammers'))
+		return;
 	if (block.id === 'beneath:crackrack') {
 		player.swing()
 		const dim = block.level.name.getString();

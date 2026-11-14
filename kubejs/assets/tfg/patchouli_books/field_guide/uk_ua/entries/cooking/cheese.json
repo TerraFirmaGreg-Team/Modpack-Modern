@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Щоб виготовити сир, молоко спочатку має $(thing)згорнутися$(). Для згортання молока потрібен $(thing)сичуг$(). Сичуг отримують зі шлунка тварин $(thing)жуйних$(). До них належать $(l:the_world/wild_animals#yak)яки$(), $(l:the_world/wild_animals#cow)корови$(), $(l:the_world/wild_animals#sheep)вівці$(), $(l:the_world/wild_animals#goat)кози$() та $(l:the_world/wild_animals#musk_ox)вівцебики$(). Щоб згорнути молоко, запечатай його в $(item)діжці$() разом із сичугом на 4 години."
+      "text": "Щоб виготовити сир, молоко спочатку має $(thing)згорнутися$(). Для згортання молока потрібен $(thing)сичуг$(). Сичуг отримують зі шлунка тварин $(thing)жуйних$(). До них належать $(l:the_world/wild_animals#yak)яки$(), $(l:the_world/wild_animals#cow)корови$(), $(l:the_world/wild_animals#sheep)вівці$(), $(l:the_world/wild_animals#goat)кози$() та $(l:the_world/wild_animals#musk_ox)мускусні корови$(). Щоб згорнути молоко, запечатай його в $(item)діжці$() разом із сичугом на 4 години."
     },
     {
       "type": "patchouli:spotlight",

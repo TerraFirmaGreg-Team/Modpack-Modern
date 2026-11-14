@@ -14,6 +14,7 @@ function registerTFGMoonBlockTags(event) {
 
 	event.add('buildinggadgets2:deny', '#forge:budding')
 	event.add('create:non_movable', '#forge:budding')
+	event.add('matter_manipulator:immovable', '#forge:budding')
 
 	event.add('create:non_movable', 'tfg:budding_charge')
 	event.add('create:non_movable', 'tfg:me_assembler')

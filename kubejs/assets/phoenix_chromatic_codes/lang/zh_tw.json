@@ -1,3 +1,7 @@
 {
-	"block.phoenix_chromatic_codes.phoenix_enriched_tritanium_casing": "§w極度耐熱機械方塊"
+	"block.phoenix_chromatic_codes.phoenix_enriched_tritanium_casing": "§w極度耐熱機械方塊",
+	"phoenix_chromatic_codes.test.wave": "§w這是使用分節符號的波浪效果。\n 你好",
+	"phoenix_chromatic_codes.test.pulse": "&p這是使用 & 符號的脈動效果。",
+	"phoenix_chromatic_codes.test.rainbow": "§[rainbow]這是具名的彩虹效果。",
+	"phoenix_chromatic_codes.test.sunset": "&[sunset]這是具名的夕陽效果。"
 }

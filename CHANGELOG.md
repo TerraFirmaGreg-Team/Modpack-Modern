@@ -1,8 +1,208 @@
 # Changelog
 
-## Unreleased
 ### Changes
+- Added a new terminal (and wireless terminal): the Order Terminal. This works with the new Storage Provider, essentially working like create logistics' stock keeper and package system, cutting down on patternslop for crafts you only need a small number of times. Read the new quest in the AE2 chapter for more information! @ko-lja
+- Barrels storing food sealed in vinegar now gain an additional preservation bonus when inside a cellar @Zippity
 ### Bug fixes
+- Fixed Create Deco's shipping containers voiding/duping items @Pyritie
+- Fixed firmalife bees never getting diseases @Zippity
+- Fixed a crash when respawning on servers (#5119, #5318) @Pyritie
+- Fixed a crash when opening a barrel GUI while it's placed in a sloop and is raining (#5206) @Pyritie
+### Mods
+#### TerraFirmaCraft
+- Fix some incompatibilities with Create and other mods that take drops from our block entities.
+- Fixed an issue with patchouli tables.
+- Increased minimum depth of Octopoteuthis spawns.
+- Fixed a bug where Octopoteuthis didn't glow.
+- Made a performance improvement to oceans.
+- Fixed a bug with stick drops from double crops.
+- Backported a number of minor fixes to entities, worldgen, and plant behavior.
+
+## [0.13.18] - 07-11-2026
+#### CC-Tweaked
+- Fixes a [severe security vulnerability](https://github.com/cc-tweaked/CC-Tweaked/security/advisories/GHSA-g5h5-fp5g-fmx4)
+#### Hypoxia
+- Added a new hypoxia system to discourage you from taking your space suit off while on other planets, outside of an oxygenated area. Works in tandem with the recent changes to the heat/oxygenation system. @TomPlop
+- Experiencing hypoxia will cause breath "debt" which can only be slowly recovered while in an oxygenated area.
+- Removed the ugly Ad Astra oxygen meter and replaced it with a new bar where the vanilla breath meter goes. You can check your space suit item if you still want to know exactly how much air you have left.
+- Note that this system only affects non-Earth dimensions. Swimming underwater works as it does in vanilla.
+#### Oxygen Rework
+- The higgs emitter now scales less extremely (16 blocks of extra radius per tier) @ashleney
+- Removed the barely noticeable mechanic where the Heat Pump made a small area around its back part slightly less hospitable. @ashleney
+- The Heat Pump now uses half the energy compared to the Oxygen Distributor. @ashleney
+- Fixed the lag caused by Ad Astra checking if it should freeze water on the moon and mars. @ashleney
+- Fixed ae2 facades not blocking the Oxygen Distributor's floodfill properly. (#5271) @ashleney
+#### Greenhouses
+- Planters now work with any light source instead of exclusively sky light, so you can have a greenhouse underground or in the Beneath now @Zippity
+- Greenhouses now also affect tree taps and bees, so you don't need a bedrock farm to get latex all year round
+- Mechanical arms now work with planters for automatic seed planting (and work correctly with quad and hydroponic planters too)
+#### Other changes
+- Ceramic Circuit Board have different tiers so player can understand easily which one they can craft @TomPlop
+- Change Butraldehyde circuit to 5 @TomPlop
+- Lower the energy cost of Garnet-Yttrium Line @TomPlop
+- Added a calcite + clay dust recipe for liquid concrete (#5238) @lysteryale
+- Backported vanilla's new snow bricks, ice bricks, and calcite bricks (#5235) @Pyritie
+- Added craftable powder snow @Pyritie
+- Added heating and casting for wax, and another way to make medicine powders that's possible in the Beneath (#5268) @Pyritie
+- Also added heating and casting for electrum, cupronickel, and battery alloy @Pyritie
+- Added the Basic Mechanical Mixer. It doesn't do a whole lot right now, but we have more uses planned for it @Pyritie
+- Mechanical pumps can now pull fluids from aqueducts, except for lava @Allmoz @Pyritie
+- Increased the damage the sandworm deals @Pyritie
+- Blue and red steel tongs now have infinite durability (#4665) @Pyritie
+- Buzzsaws now also work as glass saws for safely breaking all glass-type blocks (#4957, #5285) @strangelyng
+- The Thermometer, Anemometer, Precision Clock, Oxygen Sensor, and AE2 Controller are now valid sources for Display Links to display various climate, time, oxygenation, and AE2 data on Display Boards @Redeix
+- Concrete powder recipes in a chem bath now only use 100mB water to match barrels (#5265) @strangelyng
+- Electrum, cupronickel, and battery alloy can now be melted and alloyed the TFC way too @Pyritie
+### Bug fixes
+- Fixed mineshafts sticking out of the sides of mountains @Pyritie
+- Fixed some plants and flowers growing in the wrong elevations (#4994) @Pyritie
+- Fixed another crash when generating chunks that contain a sealed barrel in a structure @Pyritie
+- Fixed an issue with painted firmalife boats allocating a large amount of VRAM @Zippity
+- Fixed duplicate tallow gas burner fuel @Redeix
+- Quest fixes (#5192) @TomPlop
+- Fixed hose pulleys not being able to drain/fill TFC fluid-logged blocks such as plants, loose rocks, stone spikes, etc (#3428) @Allmoz
+- Fixed being able to move water sources via waterlogged plants and a schematicannon @Allmoz
+- Fixed right-clicking wood turning into stripped logs instead of stripped wood (#5272) @strangelyng
+- Fixed locometal glass blocks not being breakable with wrenches @strangelyng
+- The grappling hook now properly works with different gravity environments. (#4346) @ashleney
+- Fixed automatic drinking from the electric flask cancelling sprinting @Thomasx0
+### Mods
+#### Jellies
+- Plant and Phosphorum Jellies now give 4x the items, since they're only useful for compost generation
+- Certus Jellies now give certus gems instead of the large bud clusters
+- Latex Jellies are renamed to Milk Jellies and their slime ball can be heated and drank as a Beneath source of dairy
+- Feeding troughs can be used to feed and breed Jellies, and deployers can be used to automate their products. They still only produce in their home dimension, though
+#### Create: Fluid Logistics
+- Add Package list filter
+- Add Storage Basket, sort of like a cheaper but more limited GT Buffer Block
+- The Hand Pointer now also shows unloaded stock link locations
+- Changed copper frogport connection rules
+- Increased the limit of fluid factory gauge restock targets
+- Fixed fluid gauges turning into item gauges when placing them into the same block as other item gauges
+#### GregTech Terminals
+- You can now expand multiblocks vertically and horizontally (such as distillation towers and cleanrooms)
+- Schematics are now able to place liquids from AE2
+- Dismantler is now able to pick up fluids into AE2 or tanks/drums in your inventory
+- Added a clear button to remove the current copied multiblock
+- Added a ghost preview to the multi-structure manager
+- Fixed connected textures in the previews
+#### AE2
+- Fixed spatial IO causing full chunk reloads (and causing crashes) (#5146)
+- Added the sticky card! It works like the one from GTNH, read the GuideME for more information
+#### GregTech Cables
+- A new mod which lets you have long dangling cables. Check the new quest in LV for more information!
+
+## [0.13.17] - 26-10-2026
+### Bug fixes
+- Fixed the tar pools beneath biome never spawning raw oil, only the other three @Pyritie
+- Fixed the Auto-Complete Card recipe so it's actually visible @TomPlop
+- Fixed the firepot pot turning everything into rice (#5221) @Pyritie
+- Fixed not being able to hold rclick to put straw on a pit kiln (#5223) @Pyritie
+- Fix brioche dough coming out rotten when using the yeast-based processor recipe @Redeix
+
+## [0.13.16] - 25-10-2026
+### Changes
+- Add recipes to start the Garnet-Yttrium line with Crushed Ores in a CR @TomPlop
+- Auto-Complete Card now requires Paper rather than a Crafting Card @TomPlop
+- Updated the Preservation entry of the field guide with more info about Smoking (#5188) @WiseMack
+- Astikor Carts and the Paving Cart are now immune to cacti (#5189) @Pyritie
+- Added a config option (tfg-server.toml) to enable announcing quests in chat, off by default (#5203) @Pyritie
+- Drastically improved chunk generation speed in the Beneath, Moon, and Mars @Mqrius @Pyritie
+- Camels can now be used with the animal crank and count as a large animal @Pyritie
+- Added repair recipes for bows, crossbows, and crankbows @Pyritie
+- Changed all spawn conditions and growing climates of fruit trees and berry bushes. Small bushes are a little more common, cranberries should be actually findable (and are no longer destroyed by ice), and generally everything is a little more cold tolerant. Check the field guide for more details. If you live somewhere cold, now you have no excuses for bad fruit nutrition! (#5210) @Pyritie
+- Changed many smoke-emitting particle effects to follow the wind direction @Pyritie
+- Added block modification recipes to work with Additional Placements (so now you can rclick your vertical slabs of stone bricks to make them cracked, for example) (#5168) @Redeix
+### Bug fixes
+- Only Turbine Rotors can be inserted in Exhaust Vent @TomPlop
+- Fixed Large Turbine efficiency having a minimum of 100%, sorry SiC-SiC you were goated and no one knew @TomPlop 
+- Fixed firestarters not working when Vivecraft is installed (backport of a TFC fix) (#5113)
+- Fixed being able to cast vanadium steel, ultimet, boron carbide, and tungsten carbide tools and items with TFC molds @Pyritie
+- Fixed not being able to use GT concrete in Domum Ornamentum recipes @Pyritie
+- Fixed some recipes missing from EMI (#5181) @evanbones
+- Fixed not being able to take fluids out of combustion engines using a bucket/drum etc (#5143) @Pyritie
+- Fixed air vortexes not behaving properly with redstone-activated doors @ashleney
+- Fixed being able to move lootr chests with spatial storage/building gadgets @Pyritie
+- Fixed being able to move immovable things with the new matter manipulator @Pyritie
+- Mixing Bio-Diesel with 2-EHN now gives the proper amount of Biodisel @Jeuvke
+- Crafting the SiC-SiC Turbine Rotor is now three times cheaper @TomPlop
+### Mods
+#### TerraFirmaCraft
+- Prevent double high blocks from breaking bedrock.
+- Fix an issue with squid spawning.
+- Fix issues with berry bushes.
+- Fix a rare crash with chunk data.
+- Skip knife damage when scraping makes no progress.
+- Add Jade tooltip for scraping recipes.
+- Fix client desync for loom progress.
+- Misc Entity and AI fixes.
+
+## [0.13.15] - 20-10-2026
+Be sure to check the previous alpha changelogs, as there are a lot of changes: [0.13.11](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.11), [0.13.12](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.12), [0.13.13](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.13)
+### Changes
+- Rotten flesh, spider eyes, and rabbit feet are now compost poisons, and added a stomping barrel/compressor recipe to turn any compost poisons into rotten flesh directly instead of breaking and placing composters @Pyritie
+- Snow layers can no longer form on windmill bearings @Pyritie
+- Vexxed TFG resource pack now also includes an anvil helper texture (#5155) @Patchack
+- Forgot to add this in previous patch notes but Sterling Silver Turbine Rotors have been removed, while Vanadium Turbine Rotors have been added. The recipes for turbine rotors is also simpler, no longer needing screws if you use a forming press. @TomPlop
+- Increased the amount of chorus flowers you get from the electric greenhouse @Pyritie
+- Uncraftable workstations are no longer visible in EMI @evanbones
+### Bug fixes
+- Fixed TFC melting sometimes resulting in 1mB of unknown @TomPlop
+- Possibly fixed slimes spawning on the surface when TFC Caelum is installed @Pyritie
+- Fixed GT machines crafting removed removed vanilla items @evanbones
+
+## [0.13.14] - 19-10-2026
+Be sure to check the previous alpha changelogs, as there are a lot of changes: [0.13.11](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.11), [0.13.12](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.12), [0.13.13](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.13)
+### Changes
+- Added another way to craft sodium hydroxide instead of just the TFC way @TomPlop
+### Bug fixes
+- Fixed players and mobs on the moon catching fire during the daytime (#5156) @TomPlop
+- Red and Blue Steel non-electric scythes are back, sorry @TomPlop
+- Fixed crucibles sometimes turning single metals into 1mB of unknown
+- Added a circuit to the heat pump recipe to avoid a collision with fluid regulators (#5157) @TomPlop
+
+## [0.13.13] - 18-10-2026
+Be sure to check the changelog of the previous two [alpha](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.11) [releases](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.12) too! 
+### Changes
+- The Oxygen Distributor and Heat Pump now require a rotor. Rotor stats can reduce breathable gas and energy usage. @TomPlop
+- The Heat Pump now allows you to select a temperature. @ashleney
+- The Higgs Emitter now allows you to change gravity. @ashleney
+- When in a Zero-G environment, your camera will no longer be locked to just pitch and yaw. @ashleney
+- Increased the step height of the Rover from 1.2 to 1.5 (#5137) @Pyritie
+- Tweaked some recipe durations on the MERF (#5013) @TomPlop
+- Added a new Piglin Outpost structure to the upper and middle layers of the Beneath (#5127) @Filiipa
+- Rearranged some of InventoryHUD to be less intrusive and fixed some overlaps @Pyritie
+- Added 2-Ethylhexyl Nitrate, a new cetane booster (#5129) @Jeuvke
+- Added new EMI screens for TFC anvils, TFC welding, and firmalife greenhouse planters @Redeix
+- GT fluid containers (drums, cells, super tanks) can now be used in crafting table recipes that use fluids (#5105) @Redeix
+- Added electric scythes with even bigger AoE sizes for clearing away all that pesky grass (#5150) @TomPlop @ArkeHD @Pyritie
+- Added electric flask, which will automatically drink anything for you, unlike the digger helmet which only works with water @TomPlop @ArkeHD
+- Added a recipe to craft quartz crystal blocks (#4990) @Pyritie
+### Bug fixes
+- Fixed missing crafting recipes for the composter, windows, create deco supports, and more (#5128, #5134)
+- Fixed blast furnace not being able to automatically drip into a crucible, vessels not emptying into a crucible, and sometimes crucibles containing "unknown" with only one fluid (#5094, #5096) @Redeix
+- The Heat Pump now properly prevents water from freezing and heats up players standing inside transparent blocks. @ashleney
+- The zip gun now properly works for vertical movement. @ashleney
+- Heatstroke and frostbite no longer damage armor or reduce hunger. @ashleney
+- Allowed the Oxygen Distributor and Heat Pump bubbles to pass through the cleanroom filters. @ashleney
+- Fixed not being able to craft trachyte sandstone bricks (#4914) @Pyritie
+- Fixed flux quest field guide link (#5125) @Pyritie
+- Fixed alloy smelter crafting the wrong rubber ingot when crafted with sulfur powder (#5110) @Pyritie
+- Fixed trowel using double items (#5106) @Redeix
+- Fixed Beneath start (#5102) @Pyritie
+- Fixed mobs being able to spawn on concrete @Pyritie
+- Fixed some blocks being collapsible which shouldnt've been (#5112, #5098) @Pyritie
+- Fixed brioche and pie dough sometimes being immediately rotten when crafted (#4750) @Redeix
+- Fixed jar of compost having the wrong size/weight (#4780) @Redeix
+- Fixed non-earth eggs not being able to be used in firepits, forges, or ovens (#4867) @Redeix
+- Fixed AE2 blank pattern recipes having wrong voltage tiers (#5093) @NeonNoise
+- Fixed High Temperature Precision Fabricator ignoring coil requirement (#4983) @TomPlop
+- Fixed issues with the chromium-yttrium line in single block machines (#4939) @TomPlop
+- Fixed earth jellies spawning over oceans @Pyritie
+- Fixed towers sometimes spawning with only floating chests and nothing else (#5127) @Filiipa
+- Fixed the overworld having two suns with shaders @Pyritie
+- Fixed the combustion engine sound effect looping @polluxe-1
+- Fixed naquadah alloy and duranium tools being at IV level instead of LuV @TomPlop
 
 ## [0.13.12] - 06-10-2026
 This is a hotfix release, check the [0.13.11 changelog](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.11) for the full list of changes!

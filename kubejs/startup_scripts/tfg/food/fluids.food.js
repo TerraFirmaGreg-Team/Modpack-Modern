@@ -30,4 +30,11 @@ const registerTFGFoodFluids = (event) => {
 			createAlcohol(alcohol.vintageId, alcohol.color);
 		}
 	});
+
+	// Jellie milk
+
+	event.create('tfg:jellie_milk')
+		.thinTexture(0xFFFFFF)
+		.bucketColor(0xFFFFFF)
+		.noBlock()
 };

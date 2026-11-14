@@ -106,4 +106,5 @@ function registerTFGRailgunItemTags(event) {
 	event.add('tfg:cannot_launch_in_railgun', '#tfc:barrels')
 	event.add('tfg:cannot_launch_in_railgun', '#tfc:vessels')
 	event.add('tfg:cannot_launch_in_railgun', '#tfc:large_vessels')
+	event.add('tfg:cannot_launch_in_railgun', 'expatternprovider:package')
 }

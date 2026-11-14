@@ -67,7 +67,7 @@ function registerTFGStoneItemTags(event) {
 			material = rock.material.replace(/tfg:/g, '');
 
 		if (rock.raw != null) {
-			if (rock.collapsible && rock.cobble != null) {
+			if (rock.collapsible && rock.cobble != null && rock.isStone) {
 				event.add('tfc:rock/raw', rock.raw.block);
 				event.add('forge:stone', rock.raw.block);
 			}
@@ -81,7 +81,7 @@ function registerTFGStoneItemTags(event) {
 
 			SHAPES.forEach(shape => {
 				if (rock.raw[shape] != null) {
-					if (rock.collapsible && rock.cobble != null) {
+					if (rock.collapsible && rock.cobble != null && rock.isStone) {
 						event.add(`tfg:rock_${shape}s`, rock.raw[shape]);
 					}
 					addToTfcTag(rock.raw[shape]);
@@ -100,7 +100,9 @@ function registerTFGStoneItemTags(event) {
 			SHAPES.forEach(shape => {
 				if (rock.cobble[shape] != null) {
 					event.add(`tfg:interaction/cobble_${shape.replace(/stair/g, 'stairs')}`, rock.cobble[shape]);
-					event.add(`tfg:rock_${shape}s`, rock.cobble[shape]);
+					if (rock.isStone) {
+						event.add(`tfg:rock_${shape}s`, rock.cobble[shape]);
+					}
 					addToTfcTag(rock.cobble[shape]);
 					addToMaterialTag(material, rock.cobble[shape]);
 				}
@@ -116,7 +118,9 @@ function registerTFGStoneItemTags(event) {
 				SHAPES.forEach(shape => {
 					if (rock.cobble.mossy[shape] != null) {
 						event.add(`tfg:interaction/mossy_cobble_${shape.replace(/stair/g, 'stairs')}`, rock.cobble.mossy[shape]);
-						event.add(`tfg:rock_${shape}s`, rock.cobble.mossy[shape]);
+						if (rock.isStone) {
+							event.add(`tfg:rock_${shape}s`, rock.cobble.mossy[shape]);
+						}
 						addToTfcTag(rock.cobble.mossy[shape]);
 						addToMaterialTag(material, rock.cobble.mossy[shape]);
 					}
@@ -127,8 +131,10 @@ function registerTFGStoneItemTags(event) {
 		if (rock.bricks != null) {
 			event.add('tfg:brick_index', rock.bricks.block);
 			event.add('tfg:interaction/brick', rock.bricks.block);
-			event.add('minecraft:stone_bricks', rock.bricks.block);
-			event.add('forge:stone_bricks', rock.bricks.block);
+			if (rock.isStone) {
+				event.add('minecraft:stone_bricks', rock.bricks.block);
+				event.add('forge:stone_bricks', rock.bricks.block);
+			}
 			event.add('tfc:rock/bricks', rock.bricks.block);
 			addToTfcTag(rock.bricks.block);
 			addToMaterialTag(material, rock.bricks.block);
@@ -321,12 +327,14 @@ function registerTFGStoneBlockTags(event) {
 	for (let [rockId, rock] of Object.entries(global.BIG_ROCK_TABLE)) {
 
 		if (rock.raw != null) {
-			event.add('minecraft:mineable/pickaxe', rock.raw.block)
 			event.add('tfc:can_carve', rock.raw.block)
 			event.add('tfc:powderkeg_breaking_blocks', rock.raw.block)
-			event.add('tfc:bloomery_insulation', rock.raw.block)
-			event.add('firmalife:oven_insulation', rock.raw.block)
-			event.add('tfc:forge_insulation', rock.raw.block)
+			if (rock.isStone) {
+				event.add('minecraft:mineable/pickaxe', rock.raw.block)
+				event.add('tfc:bloomery_insulation', rock.raw.block)
+				event.add('firmalife:oven_insulation', rock.raw.block)
+				event.add('tfc:forge_insulation', rock.raw.block)
+			}
 
 			if (rock.collapsible && rock.cobble != null) {
 				event.add('forge:stone', rock.raw.block)
@@ -356,12 +364,14 @@ function registerTFGStoneBlockTags(event) {
 		}
 
 		if (rock.hardened != null) {
-			event.add('minecraft:mineable/pickaxe', rock.hardened)
 			event.add('tfc:powderkeg_breaking_blocks', rock.hardened)
-			event.add('tfc:bloomery_insulation', rock.hardened)
-			event.add('firmalife:oven_insulation', rock.hardened)
-			event.add('tfc:forge_insulation', rock.hardened)
 			event.add('tfc:can_carve', rock.hardened)
+			if (rock.isStone) {
+				event.add('minecraft:mineable/pickaxe', rock.hardened)
+				event.add('tfc:bloomery_insulation', rock.hardened)
+				event.add('firmalife:oven_insulation', rock.hardened)
+				event.add('tfc:forge_insulation', rock.hardened)
+			}
 			// hardened stone always collapses, but never starts them
 			if (rock.collapsible) {
 				event.add('tfc:can_collapse', rock.hardened)
@@ -386,9 +396,11 @@ function registerTFGStoneBlockTags(event) {
 		}
 
 		if (rock.polished != null) {
-			event.add('tfc:bloomery_insulation', rock.polished.block);
-			event.add('tfc:forge_insulation', rock.polished.block);
-			event.add('firmalife:oven_insulation', rock.polished.block);
+			if (rock.isStone) {
+				event.add('tfc:bloomery_insulation', rock.polished.block);
+				event.add('tfc:forge_insulation', rock.polished.block);
+				event.add('firmalife:oven_insulation', rock.polished.block);
+			}
 
 			if (rock.collapsible && rock.cobble != null) {
 				event.add('tfc:can_collapse', rock.polished.block)
@@ -408,14 +420,14 @@ function registerTFGStoneBlockTags(event) {
 			})
 		}
 
-		if (rock.chiseled != null) {
+		if (rock.chiseled != null && rock.isStone) {
 			event.add('tfc:bloomery_insulation', rock.chiseled.block);
 			event.add('tfc:forge_insulation', rock.chiseled.block);
 			event.add('firmalife:oven_insulation', rock.chiseled.block);
 			event.add('minecraft:stone_bricks', rock.chiseled.block);
 		}
 
-		if (rock.bricks != null) {
+		if (rock.bricks != null && rock.isStone) {
 			event.add('tfc:bloomery_insulation', rock.bricks.block);
 			event.add('tfc:forge_insulation', rock.bricks.block);
 			event.add('firmalife:oven_insulation', rock.bricks.block);
@@ -436,7 +448,7 @@ function registerTFGStoneBlockTags(event) {
 			}
 		}
 
-		if (rock.stonecutting != null) {
+		if (rock.stonecutting != null && rock.isStone) {
 			rock.stonecutting.forEach(blockForms => {
 				event.add('tfc:bloomery_insulation', blockForms.block);
 				event.add('tfc:forge_insulation', blockForms.block);

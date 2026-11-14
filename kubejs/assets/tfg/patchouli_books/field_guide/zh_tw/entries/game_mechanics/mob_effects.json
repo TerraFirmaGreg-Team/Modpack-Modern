@@ -26,25 +26,25 @@
             "type": "patchouli:text",
             "anchor": "quenched",
             "title": "解渴",
-            "text": "生效期間，此效果會防止$(l:cooking/food_and_water#thirst)口渴$()值自然消耗。不過，它無法阻止口渴效果降低你的水分條。$()"
+            "text": "生效期間，此效果會防止$(l:cooking/food_and_water#thirst)口渴$()值自然消耗，但無法阻止口渴效果降低水分條。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "cure_parasites",
             "title": "驅蟲",
-            "text": "生效期間，此效果會逐漸清除$(l:cooking/food_and_water#parasites)寄生蟲污染$()，基礎速度約每 10 秒 1%。$()"
+            "text": "生效期間，此效果會逐漸清除$(l:cooking/food_and_water#parasites)寄生蟲汙染$()，基礎速度約每 10 秒 1%。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "cure_toxins",
             "title": "排毒",
-            "text": "生效期間，此效果會逐漸清除$(l:cooking/food_and_water#toxins)毒素污染$()，基礎速度約每 10 秒 1%。$()"
+            "text": "生效期間，此效果會逐漸清除$(l:cooking/food_and_water#toxins)毒素汙染$()，基礎速度約每 10 秒 1%。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "cure_microplastics",
             "title": "過濾微塑膠",
-            "text": "生效期間，此效果會逐漸清除$(l:cooking/food_and_water#microplastics)微塑膠污染$()，基礎速度約每 10 秒 1%。$()"
+            "text": "生效期間，此效果會逐漸清除$(l:cooking/food_and_water#microplastics)微塑膠汙染$()，基礎速度約每 10 秒 1%。$()"
         },
         {
             "type": "patchouli:text",

@@ -61,7 +61,7 @@ function addToolExtruderRecipe(event, material, outputItem, inputItem, mold, id)
 		.notConsumable(mold)
 		.itemOutputs(outputItem)
 		.duration(material.getMass() * 6)
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VHA[GTValues.LV])
 }
 
 /**

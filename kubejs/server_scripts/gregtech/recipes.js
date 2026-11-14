@@ -15,7 +15,7 @@ const registerGTCEURecipes = (event) => {
 
 	// Drilling fluid from all stone dusts
 	generateMixerRecipe(event, ['2x #tfg:stone_dusts'], ['gtceu:lubricant 20', "#tfg:clean_water 4000"],
-		[], null, Fluid.of('gtceu:drilling_fluid', 5000), 40, 16, 64, 'drilling_fluid')
+		[], null, Fluid.of('gtceu:drilling_fluid', 5000), 40, GTValues.VHA[GTValues.LV], 64, 'drilling_fluid')
 
 	// #region Move MV superconductor to mid-late MV instead of post-vac freezer
 
@@ -702,7 +702,9 @@ const registerGTCEURecipes = (event) => {
 	global.modifyRecipe(event, "gtceu:chemical_reactor/butraldehyde", {
         newId: "tfg:butraldehyde",
         duration: 20 * 30,
-        eut: GTValues.VA[GTValues.MV]
+        eut: GTValues.VA[GTValues.MV],
+		circuit: 5
+
     })
 
 	// Change Cracker to require Cleanroom

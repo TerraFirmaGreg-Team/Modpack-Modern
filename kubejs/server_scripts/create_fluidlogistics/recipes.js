@@ -205,4 +205,17 @@ function registerCreateFluidLogisticsRecipes(event) {
 		C: '#forge:small_gears/red_alloy',
 		D: 'create:electron_tube'
 	}).id('tfg:shaped/potato_server')
+
+	event.shaped('fluidlogistics:package_list_filter', [
+		'ABA'
+	], {
+		A: '#forge:bolts/copper',
+		B: '#forge:cloth'
+	}).id('tfg:shaped/package_list_filter')
+
+	event.shapeless('fluidlogistics:package_list_filter', 'fluidlogistics:package_list_filter')
+		.id('tfg:shapeless/package_list_filter_clear')
+
+	event.shapeless('fluidlogistics:copper_basket', ['gtceu:wood_crate', 'create:copper_casing'])
+		.id('tfg:shaped/copper_basket_barrel')
 }

@@ -10,7 +10,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)Пасивні$()$(li2)$(l:beneath/beneath_fauna#axolotl)Аксолотль$()$(li2)$(l:beneath/beneath_fauna#frog)Жаба$()$(li2)$(l:beneath/beneath_fauna#mammutilation)Мамутиляція$()$(li2)$(l:beneath/beneath_fauna#red_elk)Червоний лось$()$(li2)$(l:beneath/beneath_fauna#zombie_horse)Зомбі-кінь$()$(li)$(bold)$(l:agriculture/jellies)Джеллі$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)Крижаний$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)Рослинний$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)Світлоягідний$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)Джерельний$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)Лавовий$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)Біотитовий$()$(li2)$(l:beneath/beneath_fauna#latex_jellie)Латексний$()$(br)$(o)(Продовження на наступній сторінці...)$()"
+			"text": "$(li)$(bold)Пасивні$()$(li2)$(l:beneath/beneath_fauna#axolotl)Аксолотль$()$(li2)$(l:beneath/beneath_fauna#frog)Жаба$()$(li2)$(l:beneath/beneath_fauna#mammutilation)Мамутиляція$()$(li2)$(l:beneath/beneath_fauna#red_elk)Червоний лось$()$(li2)$(l:beneath/beneath_fauna#zombie_horse)Зомбі-кінь$()$(li)$(bold)$(l:agriculture/jellies)Джеллі$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)Крижаний$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)Рослинний$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)Світлоягідний$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)Джерельний$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)Лавовий$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)Біотитовий$()$(li2)$(l:beneath/beneath_fauna#milk_jellie)Молочний$()$(br)$(o)(Продовження на наступній сторінці...)$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -106,11 +106,11 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "jellies:latex",
+			"entity": "jellies:milk",
 			"scale": 0.6,
-			"name": "Латексний джеллі",
-			"anchor": "latex_jellie",
-			"text": "$(thing)Латексні$() $(l:agriculture/jellies)джеллі$() можуть розмножуватися лише від $(thing)рослинної джеллі$() та $(thing)лавової джеллі$(). Їхні слизові кульки є джерелом $(item)латексу$()."
+			"name": "Молочний джеллі",
+			"anchor": "milk_jellie",
+			"text": "$(thing)Молочний$() $(l:agriculture/jellies)джеллі$() можна розводити лише схрещуючи $(thing)Рослинну джеллі$() та $(thing)Лавову джеллі$(). Їхні слизові кульки є джерелом $(item)молочних продуктів$()."
 		},
 		{
 			"type": "patchouli:entity",

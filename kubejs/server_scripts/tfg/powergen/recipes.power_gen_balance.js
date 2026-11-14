@@ -133,7 +133,7 @@ function registerTFGPowerGenBalance(event) {
 
     event.recipes.gtceu.mixer('tfg:cetane_diesel_from_bio_diesel_ehn')
         .inputFluids(Fluid.of('gtceu:bio_diesel', 1000), Fluid.of('tfg:ethylhexyl_nitrate', 20))
-        .outputFluids(Fluid.of('gtceu:cetane_boosted_diesel', 7500))
+        .outputFluids(Fluid.of('gtceu:cetane_boosted_diesel', 750))
         .duration(20 * 1)
         .EUt(GTValues.VA[GTValues.HV])
 	

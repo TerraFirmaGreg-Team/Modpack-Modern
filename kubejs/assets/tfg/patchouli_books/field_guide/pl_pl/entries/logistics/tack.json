@@ -77,7 +77,7 @@
             "title": "Wóz brukarski",
             "anchor": "paving_cart",
             "item": "tfg:rnr_plow",
-            "text": "The $(thing)Paving Cart$() is a specialized cart used for laying down road surfaces quickly and efficiently. Read more about them in the entry for $(l:logistics/roads#paving_cart)Roads$()."
+            "text": "$(thing)Wóz brukarski$() to specjalistyczny wóz do szybkiego i sprawnego układania nawierzchni dróg. Przeczytasz o nim we wpisie dotyczącym $(l:logistics/roads#paving_cart)dróg$()."
         },
         {
             "type": "patchouli:entity",

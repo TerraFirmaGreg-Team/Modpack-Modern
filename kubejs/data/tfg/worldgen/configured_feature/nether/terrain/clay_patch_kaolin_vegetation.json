@@ -78,6 +78,16 @@
 					},
 					"placement": []
 				}
+			},
+			{
+				"chance": 0.05,
+				"feature": {
+					"feature": {
+						"type": "tfc:tall_plant",
+						"config": { "block": "tfc:plant/king_fern" }
+					},
+					"placement": []
+				}
 			}
 		]
 	}

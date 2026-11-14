@@ -163,6 +163,7 @@ const registerCreateBlockTags = (event) => {
 
 	event.add('minecraft:snow_layer_cannot_survive_on', 'create:water_wheel')
 	event.add('minecraft:snow_layer_cannot_survive_on', 'create:large_water_wheel')
+	event.add('minecraft:snow_layer_cannot_survive_on', 'create:windmill_bearing')
 
     event.add('tfg:track_replaceable', '#tfc:can_be_snow_piled')
 

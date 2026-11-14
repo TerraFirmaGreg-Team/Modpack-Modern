@@ -327,5 +327,9 @@
   "gui.xaero_pac_requested_large_claim": "开始认领大片区域……使用右键选项 %1$s 取消。",
   "gui.xaero_pac_requested_large_unclaim": "开始解除认领大片区域……使用右键选项 %1$s 取消。",
   "gui.xaero_pac_requested_large_forceload": "开始标记大片区域为强制加载……使用右键选项 %1$s 取消。",
-  "gui.xaero_pac_requested_large_unforceload": "开始取消标记大片区域为强制加载……使用右键选项 %1$s 取消。"
+  "gui.xaero_pac_requested_large_unforceload": "开始取消标记大片区域为强制加载……使用右键选项 %1$s 取消。",
+  "gui.xaero_pac_add_claiming_anchor": "添加领地锚点",
+  "gui.xaero_pac_remove_claiming_anchor": "移除领地锚点",
+  "gui.xaero_pac_remove_claiming_anchor_confirm_line1": "移除以下领地锚点及其范围内的所有领地？",
+  "gui.xaero_pac_remove_claiming_anchor_confirm_line2": "此操作无法撤销！锚点区块：%1$s"
 }

@@ -42,7 +42,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/moon/asurine.png"
 			],
-			"text": "$(thing)皓藍石富集原$()經常出現$(item)皓藍石$()構造。它不會在$(l:the_moon/moon_biomes#forest)歌萊$()生態域附近生成。"
+			"text": "$(thing)皓藍石富集原$()常有$(item)皓藍石$()構造，不會在$(l:the_moon/moon_biomes#forest)歌萊$()生態域附近生成。"
 		},
 		{
 			"type": "patchouli:image",
@@ -52,7 +52,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/moon/certus.png"
 			],
-			"text": "$(thing)賽特斯石英富集原$()有更大型的$(item)皓藍石$()構造，其中也含有大量的$(item)賽特斯石英$()。"
+			"text": "$(thing)賽特斯石英富集原$()的$(item)皓藍石$()構造更大，且含有大量$(item)賽特斯石英$()。"
 		},
 		{
 			"type": "patchouli:image",
@@ -62,7 +62,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/moon/forest.png"
 			],
-			"text": "$(thing)歌萊森林$()是唯一能找到$(l:the_moon/moon_crops)歌萊果$()的地方。它不會在$(l:the_moon/moon_biomes#asurine)皓藍石$()生態域附近生成。"
+			"text": "$(thing)歌萊森林$()是唯一能找到$(l:the_moon/moon_crops)歌萊果$()的地方，不會在$(l:the_moon/moon_biomes#asurine)皓藍石$()生態域附近生成。"
 		},
 		{
 			"type": "patchouli:image",
@@ -92,7 +92,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/moon/reef.png"
 			],
-			"text": "$(thing)月表珊瑚$()有許多大型的死亡珊瑚構造。月球在遙遠的過去曾經有過海洋嗎？"
+			"text": "$(thing)月表珊瑚$()有許多大型的死珊瑚構造。月球在遠古時期曾有海洋嗎？"
 		},
 		{
 			"type": "patchouli:image",
@@ -118,7 +118,7 @@
 			"type": "patchouli:spotlight",
 			"item": "gtceu:moon_dust_harvester",
 			"anchor": "harvester",
-			"text": "$(item)月塵採收機$()是一種可選的多方塊結構，能採集$(thing)月球風化土$()。這些風化土可以加工成$(thing)特定礦石的無限來源$()！$(br)缺點呢？風化土共有四種，每一種都只能在特定的生態域採集，所以如果你想全部取得，就得建立一些$(l:logistics/trains)基礎設施$()。"
+			"text": "$(item)月塵採收機$()是可選的多方塊結構，能採集$(thing)月球風化土$()，再加工成$(thing)特定礦石的無限來源$()！$(br)缺點呢？風化土共有四種，各自只能在特定生態域採集，想全部取得就得建立一些$(l:logistics/trains)基礎設施$()。"
 		},
 		{
 			"type": "patchouli:multiblock",
@@ -210,7 +210,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "這些$(thing)風化土粉$()在處理過程中都會變成$(item)積塵礦石$()。目前只能用離心機提取資源，更進一步的提取則需要在$(l:venus)金星$()進行後期的礦石處理。$(br2)記得使用$(item)大型化學反應器$()，讓這些配方獲得無損超頻！如果你想為$(thing)AE2 組件$()或$(l:logistics/railgun)軌道炮彈藥$()建立更被動的自動化，這些月塵採收機是不可或缺的！"
+			"text": "這些$(thing)風化土粉$()在處理過程中都會變成$(item)積塵礦石$()，目前只能用離心機提取資源，進一步提取需要在$(l:venus)金星$()進行後期礦石處理。$(br2)記得用$(item)大型化學反應器$()讓這些配方無損超頻！想為$(thing)AE2 組件$()或$(l:logistics/railgun)軌道炮彈藥$()建立更被動的自動化，這些月塵採收機不可或缺！"
 		},
 		{
 			"type": "patchouli:relations",

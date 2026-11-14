@@ -340,5 +340,6 @@
   "tooltip.framedblocks.y_slope": "Блок использует %s грани для вертикальных наклонных граней.",
   "tooltip.framedblocks.y_slope.horizontal": "горизонтальную",
   "tooltip.framedblocks.y_slope.toggle": "Ударьте рамным ключом, чтобы переключиться на %s грани",
-  "tooltip.framedblocks.y_slope.vertical": "вертикальную"
+  "tooltip.framedblocks.y_slope.vertical": "вертикальную",
+  "block.framedblocks.framed_torch": "Рамный факел"
 }

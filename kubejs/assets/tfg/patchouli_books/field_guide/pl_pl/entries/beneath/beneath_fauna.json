@@ -10,7 +10,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)Passive$()$(li2)$(l:beneath/beneath_fauna#axolotl)Axolotl$()$(li2)$(l:beneath/beneath_fauna#frog)Frog$()$(li2)$(l:beneath/beneath_fauna#mammutilation)Mammutilation$()$(li2)$(l:beneath/beneath_fauna#red_elk)Red Elk$()$(li2)$(l:beneath/beneath_fauna#zombie_horse)Zombie Horse$()$(li)$(bold)$(l:agriculture/jellies)Jellies$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)Ice$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)Plant$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)Glowberry$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)Spring$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)Lava$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)Biotite$()$(li2)$(l:beneath/beneath_fauna#latex_jellie)Latex$()$(br)$(o)(Continued on next page...)$()"
+			"text": "$(li)$(bold)Passive$()$(li2)$(l:beneath/beneath_fauna#axolotl)Axolotl$()$(li2)$(l:beneath/beneath_fauna#frog)Frog$()$(li2)$(l:beneath/beneath_fauna#mammutilation)Mammutilation$()$(li2)$(l:beneath/beneath_fauna#red_elk)Red Elk$()$(li2)$(l:beneath/beneath_fauna#zombie_horse)Zombie Horse$()$(li)$(bold)$(l:agriculture/jellies)Jellies$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)Ice$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)Plant$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)Glowberry$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)Spring$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)Lava$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)Biotite$()$(li2)$(l:beneath/beneath_fauna#milk_jellie)Milk$()$(br)$(o)(Continued on next page...)$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -60,7 +60,7 @@
 			"type": "patchouli:entity",
 			"entity": "jellies:ice",
 			"scale": 0.6,
-			"name": "Żelek lodowy",
+			"name": "Lodowy żelek",
 			"anchor": "ice_jellie",
 			"text": "$(thing)Lodowe$() $(l:agriculture/jellies)żelki$() występują w $(thing)jaskiniach solnych$(). Ochładzają pobliskich graczy."
 		},
@@ -68,7 +68,7 @@
 			"type": "patchouli:entity",
 			"entity": "jellies:plant",
 			"scale": 0.6,
-			"name": "Żelek roślinny",
+			"name": "Roślinny żelek",
 			"anchor": "plant_jellie",
 			"text": "$(thing)Roślinne$() $(l:agriculture/jellies)żelki$() występują w biomach $(thing)duszne bagno$() i $(thing)cierniowy gaj$(). Ich kule szlamu można używać jako $(thing)zielony$() kompost."
 		},
@@ -78,7 +78,7 @@
 			"scale": 0.6,
 			"name": "Świecąco-jagodowy żelek",
 			"anchor": "glowberry_jellie",
-			"text": "$(l:agriculture/jellies)Żelki$() $(thing)ze świecących jagód$() można spotkać w $(thing)bujnych jaskiniach$(). Gotując ich kule szlamu, można uzyskać $(item)cukier$()."
+			"text": "$(thing)Świecąco-jagodowe$() $(l:agriculture/jellies)żelki$() można spotkać w $(thing)bujnych jaskiniach$(). Gotując ich kule szlamu, można uzyskać $(item)cukier$()."
 		},
 		{
 			"type": "patchouli:entity",
@@ -100,17 +100,17 @@
 			"type": "patchouli:entity",
 			"entity": "jellies:lava",
 			"scale": 0.6,
-			"name": "Żelek lawowy",
+			"name": "Lawowy żelek",
 			"anchor": "lava_jellie",
 			"text": "$(thing)Lawowe$() $(l:agriculture/jellies)żelki$() występują w dolnej warstwie. Ogrzewają pobliskich graczy, co może się przydać, jeśli mieszkasz w chłodnym miejscu."
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "jellies:latex",
+			"entity": "jellies:milk",
 			"scale": 0.6,
-			"name": "Żelek lateksowy",
-			"anchor": "latex_jellie",
-			"text": "$(thing)Lateksowe$() $(l:agriculture/jellies)żelki$() można uzyskać wyłącznie przez skrzyżowanie $(thing)roślinnego żelka$() i $(thing)lawowego żelka$(). Ich kule szlamu są źródłem $(item)lateksu$()."
+			"name": "Mleczny żelek",
+			"anchor": "milk_jellie",
+			"text": "$(thing)Mleczne$() $(l:agriculture/jellies)żelki$() można uzyskać wyłącznie przez skrzyżowanie $(thing)roślinnego żelka$() i $(thing)lawowego żelka$(). Ich kule szlamu są źródłem $(item)nabiału$()."
 		},
 		{
 			"type": "patchouli:entity",

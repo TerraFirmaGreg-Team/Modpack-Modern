@@ -6,8 +6,8 @@ function registerTFGQuartzRecipes(event) {
 	event.remove({ id: 'gtceu:autoclave/autoclave_dust_rose_quartz_water' })
 	event.remove({ id: 'gtceu:autoclave/autoclave_dust_rose_quartz_distilled' })
 
-	generateMixerRecipe(event, ['gtceu:nether_quartz_dust', '8x minecraft:redstone'], [], '9x #forge:dusts/rose_quartz', 2, [], 180, 60, 64, 'rose_quartz_dust_mixing')
-	generateMixerRecipe(event, ['gtceu:tiny_nether_quartz_dust', '8x gtceu:tiny_redstone_dust'], [], '#forge:dusts/rose_quartz', 2, [], 20, 60, 64, 'tiny_rose_quartz_dust_mixing')
+	generateMixerRecipe(event, ['gtceu:nether_quartz_dust', '8x minecraft:redstone'], [], '9x #forge:dusts/rose_quartz', 2, [], 180, GTValues.VHA[GTValues.LV], 64, 'rose_quartz_dust_mixing')
+	generateMixerRecipe(event, ['gtceu:tiny_nether_quartz_dust', '8x gtceu:tiny_redstone_dust'], [], '#forge:dusts/rose_quartz', 2, [], 20, GTValues.VHA[GTValues.LV], 64, 'tiny_rose_quartz_dust_mixing')
 
 	event.recipes.gtceu.autoclave("autoclave_dust_rose_quartz_ice")
 		.itemInputs('#forge:dusts/rose_quartz')
@@ -227,4 +227,20 @@ function registerTFGQuartzRecipes(event) {
 		.recipeTier(1)
 		.id(`tfg:pressing/small_rose_quartz_tiles_to_blocks`)
 	//#endregion
+
+	// Huge quartz
+	event.recipes.gtceu.laser_engraver('tfg:huge_quartz_from_flawless')
+		.itemInputs('gtceu:flawless_nether_quartz_gem', '20x minecraft:quartz')
+		.notConsumable('tfc:lens')
+		.itemOutputs('20x tfg:huge_quartz')
+		.duration(100)
+		.EUt(GTValues.VHA[GTValues.LV])
+		
+	event.recipes.gtceu.laser_engraver('tfg:huge_quartz_from_exquisite')
+		.chancedInput('gtceu:exquisite_nether_quartz_gem', 2000, 0)
+		.itemInputs('20x minecraft:quartz')
+		.notConsumable('tfc:lens')
+		.itemOutputs('20x tfg:huge_quartz')
+		.duration(100)
+		.EUt(GTValues.VHA[GTValues.LV])
 }

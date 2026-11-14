@@ -1,0 +1,24 @@
+// Dungeon Config configuration
+// This file uses JSON5 syntax (https://json5.org/)
+{
+  // Show the Dungeon Configs button next to Singleplayer on the title screen
+  "titleScreenButton": false,
+
+  // Picture, animated GIF or video behind this settings menu: a file in config/dungeonconfig/bg, a link, a link to a .txt list of links, or empty for a random one from that folder (none turns it off). Videos need FFmpeg
+  "menuBackground": "",
+
+  // How strongly the menu background is blurred, 0 for sharp
+  "menuBackgroundBlurPercent": 0,
+
+  // How much the menu background picture is darkened
+  "menuBackgroundDimPercent": 55,
+
+  // Frame rate for video and animated GIF menu backgrounds
+  "menuBackgroundFps": 30,
+
+  // Music while this settings menu is open: a file in config/dungeonconfig/bgmusic, a link, or empty for random tracks from that folder (none turns it off). Formats other than ogg and wav need FFmpeg
+  "menuMusic": "",
+
+  // Volume of the settings menu music
+  "menuMusicVolumePercent": 30
+}

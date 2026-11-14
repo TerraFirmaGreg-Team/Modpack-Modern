@@ -15,7 +15,7 @@
             "item": {
                 "tag": "tfc:plants"
             },
-            "text": "Earth is an incredibly diverse planet when it comes to flora. Unlike in vanilla $(thing)Minecraft$()--Plants in $(tfg) spawn based on local $(l:the_world/climate#climate)Climate Conditions$()."
+            "text": "Ziemia to niezwykle różnorodna planeta pod względem flory. W przeciwieństwie do zwykłego $(thing)Minecrafta$() rośliny w $(tfg) pojawiają się w zależności od lokalnych $(l:the_world/climate#climate)warunków klimatycznych$()."
         },
         {
             "type": "patchouli:text",

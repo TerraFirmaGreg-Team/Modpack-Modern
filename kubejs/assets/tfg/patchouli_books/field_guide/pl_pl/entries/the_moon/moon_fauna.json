@@ -14,7 +14,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)Domesticatable$()$(li2)$(l:the_moon/moon_fauna#moon_rabbit)Moon Rabbit$()$(li2)$(l:the_moon/moon_fauna#birt)Birt$()$(li2)$(l:the_moon/moon_fauna#certus_jellie)Certus Jellie$()$(li)$(bold)Wild$()$(li2)$(l:the_moon/moon_fauna#limpet)Limpet$()$(li2)$(l:the_moon/moon_fauna#star_crawler)Star Crawler$()$(li2)$(l:the_moon/moon_fauna#endermen)Endermen$()$(li2)$(l:the_moon/moon_fauna#shulker)Shulker$()"
+			"text": "$(li)$(bold)Oswajalne$()$(li2)$(l:the_moon/moon_fauna#moon_rabbit)Królik księżycowy$()$(li2)$(l:the_moon/moon_fauna#birt)Ptok$()$(li2)$(l:the_moon/moon_fauna#certus_jellie)Certusowy żelek$()$(li)$(bold)Dzikie$()$(li2)$(l:the_moon/moon_fauna#limpet)Skałoczep$()$(li2)$(l:the_moon/moon_fauna#star_crawler)Gwiezdny pełzacz$()$(li2)$(l:the_moon/moon_fauna#endermen)Endermany$()$(li2)$(l:the_moon/moon_fauna#shulker)Shulker$()"
 		},
 		{
 			"type": "patchouli:entity",
@@ -31,7 +31,7 @@
 			"anchor": "birt",
 			"scale": 0.9,
 			"name": "Ptok",
-			"text": "$(thing)Birts$() are a type of bird? They lay eggs in their nests, are passive unless attacked, and can be eaten. Their eggs can be thrown to stun targets."
+			"text": "Czy $(thing)ptoki$() są rodzajem ptaków? Składają jajka w gniazdach, są pasywne, chyba, że je zaatakowano i można je zjeść. Ich jajka mogą ogłuszyć wrogów, gdy w nich trafisz."
 		},
 		{
 			"type": "patchouli:entity",
@@ -39,7 +39,7 @@
 			"scale": 0.6,
 			"name": "Certusowy żelek",
 			"anchor": "certus_jellie",
-			"text": "$(thing)Certusowe$() $(l:agriculture/jellies)żelki$() pojawiają się na $(item)azurynowych$() biomach Księżyca. Wytwarzają $(thing)duże zarodki certusowego kwarcu$()."
+			"text": "$(thing)Certusowe$() $(l:agriculture/jellies)żelki$() pojawiają się na $(item)azurynowych$() biomach Księżyca. Wytwarzają $(thing)kryształy certusowego kwarcu$()."
 		},
 		{
 			"type": "patchouli:entity",

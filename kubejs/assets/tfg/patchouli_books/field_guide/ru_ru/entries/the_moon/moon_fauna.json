@@ -39,7 +39,7 @@
 			"scale": 0.6,
 			"name": "Certus Jellie",
 			"anchor": "certus_jellie",
-			"text": "$(thing)Certus$() $(l:agriculture/jellies)Jellies$() spawn in Moon's $(item)Asurine$() biomes. They produce $(thing)Large Certus Quartz Buds$()."
+			"text": "$(thing)Certus$() $(l:agriculture/jellies)Jellies$() spawn in Moon's $(item)Asurine$() biomes. They produce $(thing)Certus Quartz Crystals$()."
 		},
 		{
 			"type": "patchouli:entity",
@@ -81,7 +81,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Читать далее",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_moon/the_moon",

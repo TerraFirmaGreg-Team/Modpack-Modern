@@ -70,6 +70,20 @@
 			x: 16.0d
 			y: 3.0d
 		}
+		{
+			id: "4F7D0B1EF5D0C828"
+			linked_quest: "557E63D456849EDC"
+			shape: "heart"
+			x: 16.0d
+			y: 0.5d
+		}
+		{
+			id: "3D23BBAF11DDAAAA"
+			linked_quest: "1E0B2A90FA5C71E9"
+			shape: "heart"
+			x: 16.0d
+			y: 1.5d
+		}
 	]
 	quests: [
 		{
@@ -570,11 +584,18 @@
 			guide_page: "tfg:field_guide tfg:mars/mars_fauna"
 			id: "51BEA1053F203050"
 			subtitle: "{quests.space_survival.mineral_rich_wool.subtitle}"
-			tasks: [{
-				id: "03F10750FD9BBAA6"
-				item: "tfg:sniffer_wool"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "03F10750FD9BBAA6"
+					item: "tfg:sniffer_wool"
+					type: "item"
+				}
+				{
+					id: "00D7F21BFEE80F30"
+					item: "tfg:wraptor_wool"
+					type: "item"
+				}
+			]
 			title: "{quests.space_survival.mineral_rich_wool.title}"
 			x: -5.5d
 			y: 5.5d
@@ -954,7 +975,7 @@
 				}
 			]
 			title: "{quests.extreme_voltage.hexafluorosilic_acid.title}"
-			x: 16.0d
+			x: 19.0d
 			y: 1.0d
 		}
 		{
@@ -1041,6 +1062,8 @@
 			description: ["{quests.extreme_voltage.tritiated_water.desc}"]
 			icon: "gtceu:tritiated_water_bucket"
 			id: "3E0ABDFCC0FC6928"
+			shape: "octagon"
+			size: 2.0d
 			subtitle: "{quests.extreme_voltage.tritiated_water.subtitle}"
 			tasks: [
 				{
@@ -1063,8 +1086,6 @@
 			dependencies: ["3E0ABDFCC0FC6928"]
 			description: ["{quests.extreme_voltage.nano_cpu_wafer.desc}"]
 			id: "61E3352A78B3EAA1"
-			shape: "octagon"
-			size: 2.0d
 			subtitle: "{quests.extreme_voltage.nano_cpu_wafer.subtitle}"
 			tasks: [
 				{
@@ -1550,11 +1571,24 @@
 			}]
 			shape: "heart"
 			subtitle: "{quests.extreme_voltage.building_gadgets.subtitle}"
-			tasks: [{
-				id: "621C750FCD93D1BC"
-				item: "buildinggadgets2:gadget_building"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "621C750FCD93D1BC"
+					item: "buildinggadgets2:gadget_building"
+					type: "item"
+				}
+				{
+					id: "3EA2E989F820876A"
+					item: {
+						Count: 1
+						id: "matter_manipulator:matter_manipulator_mki"
+						tag: {
+							MatterManipulator: { }
+						}
+					}
+					type: "item"
+				}
+			]
 			title: "{quests.extreme_voltage.building_gadgets.title}"
 			x: 1.5d
 			y: 1.0d
@@ -2426,22 +2460,21 @@
 					type: "item"
 				}
 				{
-					id: "3B578E54D11D2CA5"
+					id: "0AED12CA65C4ABE7"
+					item: "tfg:tungsten_anvil"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "60C20FCE157FC44F"
 					item: {
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(gtceu:ev_tungsten_carbide_drill)item(gtceu:ev_tungsten_carbide_screwdriver)item(gtceu:ev_tungsten_carbide_wrench)item(gtceu:ev_tungsten_carbide_chainsaw)item(gtceu:ev_tungsten_carbide_buzzsaw)item(gtceu:ev_tungsten_carbide_wire_cutter))"
+							"ftbfiltersystem:filter": "or(item(gtceu:ev_tungsten_carbide_drill)item(gtceu:ev_tungsten_carbide_screwdriver)item(gtceu:ev_tungsten_carbide_wrench)item(gtceu:ev_tungsten_carbide_chainsaw)item(gtceu:ev_tungsten_carbide_buzzsaw)item(gtceu:ev_tungsten_carbide_wire_cutter)item(gtceu:ev_tungsten_carbide_scythe))"
 						}
 					}
-					optional_task: true
 					title: "{quests.extreme_voltage.tungsten_carbide_tools.task}"
-					type: "item"
-				}
-				{
-					id: "0AED12CA65C4ABE7"
-					item: "tfg:tungsten_anvil"
-					optional_task: true
 					type: "item"
 				}
 			]
@@ -2523,21 +2556,21 @@
 					type: "item"
 				}
 				{
-					id: "318864D5687CE68B"
+					id: "2F68B01564BA75F3"
+					item: "tfg:tungsten_anvil"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5C9A692D259A2652"
 					item: {
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(gtceu:ev_ostrum_iodide_drill)item(gtceu:ev_ostrum_iodide_screwdriver)item(gtceu:ev_ostrum_iodide_wrench)item(gtceu:ev_ostrum_iodide_chainsaw)item(gtceu:ev_ostrum_iodide_buzzsaw)item(gtceu:ev_ostrum_iodide_wire_cutter))"
+							"ftbfiltersystem:filter": "or(item(gtceu:ev_ostrum_iodide_drill)item(gtceu:ev_ostrum_iodide_screwdriver)item(gtceu:ev_ostrum_iodide_wrench)item(gtceu:ev_ostrum_iodide_chainsaw)item(gtceu:ev_ostrum_iodide_buzzsaw)item(gtceu:ev_ostrum_iodide_wire_cutter)item(gtceu:ev_ostrum_iodide_scythe))"
 						}
 					}
 					title: "{quests.extreme_voltage.ostrum_tools.task}"
-					type: "item"
-				}
-				{
-					id: "2F68B01564BA75F3"
-					item: "tfg:tungsten_anvil"
-					optional_task: true
 					type: "item"
 				}
 			]
@@ -2592,6 +2625,40 @@
 			}]
 			x: 23.5d
 			y: 4.5d
+		}
+		{
+			dependencies: ["236F53188110F6D5"]
+			id: "321F8E326EDF54F6"
+			optional: true
+			shape: "heart"
+			tasks: [{
+				id: "28C4FF2914499A02"
+				item: {
+					Count: 1
+					id: "matter_manipulator:matter_manipulator_mkii"
+					tag: {
+						MatterManipulator: { }
+					}
+				}
+				type: "item"
+			}]
+			x: 13.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["70ABD1E3FC1CA672"]
+			description: ["{quests.extreme_voltage.higgs_emitter.desc}"]
+			guide_page: "tfg:field_guide tfg:the_moon/the_moon 21"
+			id: "2FFC51987440B656"
+			shape: "heart"
+			subtitle: "{quests.extreme_voltage.higgs_emitter.subtitle}"
+			tasks: [{
+				id: "576DAEECD1EA938D"
+				item: "tfg:higgs_emitter"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.0d
 		}
 	]
 	subtitle: ["{quests.extreme_voltage.subtitle}"]

@@ -133,6 +133,8 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('tfg:ad_astra_etrium_block', 'ad_astra:etrium_plateblock')
 	event.add('tfg:ad_astra_etrium_block', 'ad_astra:etrium_panel')
 	event.add('tfg:ad_astra_etrium_block', 'ad_astra:etrium_block')
+	
+	event.add('minecraft:snow_layer_cannot_survive_on', 'ad_astra:vent')
 }
 
 const registerAdAstraBiomeTags = (event) => {

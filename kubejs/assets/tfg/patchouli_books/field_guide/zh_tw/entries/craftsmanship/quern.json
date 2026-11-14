@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(thing)手推磨$()是用來研磨物品的裝置。它可以粉碎原礦以進行$(l:game_mechanics/mining#processing)加工$()，也能製作粉末、$(thing)染料$()和其他一些物品。它由$(thing)底座$()和$(thing)手磨石$()組成。$(br)從頂面提供 <32RPM 的$(thing)機械動力$()即可自動化手推磨。"
+            "text": "$(thing)手推磨$()是研磨物品的裝置，可以粉碎原礦以便$(l:game_mechanics/mining#processing)加工$()，也能製作粉末、$(thing)染料$()等物品，由$(thing)底座$()和$(thing)磨盤$()組成。$(br)從頂面提供 <32RPM 的$(thing)機械動力$()即可自動化手推磨。"
         },
         {
             "type": "patchouli:crafting",
@@ -46,7 +46,7 @@
             "images": [
                 "tfc:textures/gui/book/tutorial/quern_result.png"
             ],
-            "text": "處理完成後會在底座的周圍輸出。$(item)$(k:key.use)$()底座就能取出。",
+            "text": "產物會出現在手推磨底座上。對底座任意位置按下$(item)$(k:key.use)$()即可取出。",
             "border": true
         },
         {
@@ -58,7 +58,7 @@
         {
             "type": "tfg:quern_recipe",
             "recipe": "tfg:quern/sulfur",
-            "text": "手推磨可以將礦粉磨製各式各樣的$(thing)粉末$()，如$(thing)硫磺$()。$(thing)寶石$()也可研磨成粉末。",
+            "text": "手推磨可以將礦粉磨成各式各樣的$(thing)粉末$()，如$(thing)硫磺$()。$(thing)寶石$()也可研磨成粉末。",
             "title": "粉末"
         },
         {

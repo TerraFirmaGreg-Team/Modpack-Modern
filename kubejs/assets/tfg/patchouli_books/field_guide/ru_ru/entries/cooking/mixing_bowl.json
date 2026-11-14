@@ -1,19 +1,19 @@
 {
-    "name": "Mixing Bowl",
+    "name": "Миска для смешивания",
     "category": "tfg:cooking",
     "icon": "firmalife:mixing_bowl",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "The mixing bowl is a way of mixing items and fluids together in a friendly way. In order to operate a mixing bowl $(item)$(k:key.use)$() on one with a $(thing)Spoon$() to add it to the bowl. The spoon will remain in the bowl and not degrade in durability."
+            "text": "Миска для смешивания — это удобный способ соединять ингредиенты и жидкости.  Чтобы использовать миску для смешивания, поместите в нее $(item)$(k:key.use)$() и добавьте $(thing)Ложку$().  Ложка останется в миске и не потеряет прочности."
         },
         {
             "type": "patchouli:text",
-            "text": "To use a mixing bowl add in your ingredients and $(item)$(k:key.use)$() it to begin mixing. Mixing bowls can take up to $(6)5 item inputs$() and $(3)1 fluid input$(). Recipes need $(n)exact quantities$() of items to be performed. If a recipe outputs a fluid any excess input fluids will be voided, so be careful!"
+            "text": "Чтобы использовать чашу для смешивания, добавьте в нее ингредиенты и $(item)$(k:key.use)$() нажмите, чтобы начать смешивание. В чаши для смешивания можно поместить до $(6)5 ингредиентов$() и $(3)1 жидкую субстанцию$(). Для выполнения рецептов требуется $(n)точное количество$() ингредиентов. Если в результате приготовления блюда получается жидкость, ее излишки будут потеряны, так что будьте осторожны!"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Читать далее",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/decay",

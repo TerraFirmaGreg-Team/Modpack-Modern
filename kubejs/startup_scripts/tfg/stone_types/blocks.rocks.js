@@ -242,7 +242,8 @@ function registerTFGRockBlocks(event) {
 		// Pillar
 		if (rock.pillar != null && rock.pillar.startsWith('tfg:rock/')) {
 			let block = event.create(rock.pillar)
-				.textureAll(rock.pillar.replace(/:/g, ":block/"))
+				.property(BlockProperties.AXIS)
+				.placementState((event) => event.set(BlockProperties.AXIS, event.clickedFace.axis))
 				.soundType(rock.sound ?? 'stone')
 				.mapColor(rock.mapColor)
 				.tagBlock('minecraft:mineable/pickaxe')

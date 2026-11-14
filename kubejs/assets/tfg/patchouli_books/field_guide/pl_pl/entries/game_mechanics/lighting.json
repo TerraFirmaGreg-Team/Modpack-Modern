@@ -6,7 +6,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:game_mechanics/lighting#torches)Torches$()$(li)$(bold)$(l:game_mechanics/lighting#candles)Candles$()$(li)$(bold)$(l:game_mechanics/lighting#jack_o_lanterns)Jack 'o Lanterns$()$(li)$(bold)$(l:game_mechanics/lighting#lamps)Lamps$()$(li)$(bold)$(l:game_mechanics/lighting#portable_light)Portable Lights$()$(li)$(bold)$(l:game_mechanics/lighting#permanent_light)Permanent Light$()",
+            "text": "$(li)$(bold)$(l:game_mechanics/lighting#torches)Pochodnie$()$(li)$(bold)$(l:game_mechanics/lighting#candles)Świece$()$(li)$(bold)$(l:game_mechanics/lighting#jack_o_lanterns)Latarnie dyniowe$()$(li)$(bold)$(l:game_mechanics/lighting#lamps)Lampy$()$(li)$(bold)$(l:game_mechanics/lighting#portable_light)Przenośne oświetlenie$()$(li)$(bold)$(l:game_mechanics/lighting#permanent_light)Stałe oświetlenie$()",
             "title": "Indeks",
             "anchor": "index"
         },

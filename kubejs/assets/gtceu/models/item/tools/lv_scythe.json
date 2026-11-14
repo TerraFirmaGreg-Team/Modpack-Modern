@@ -1,0 +1,7 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "tfg:item/tools/handle_scythe_lv",
+    "layer1": "tfg:item/tools/scythe_tool"
+  }
+}

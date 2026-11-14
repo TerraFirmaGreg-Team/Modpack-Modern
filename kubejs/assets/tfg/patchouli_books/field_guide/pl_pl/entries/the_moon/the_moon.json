@@ -414,8 +414,8 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:ultimet\"}},gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:vanadium\"}},gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:rocket_alloy_t1\"}},gtceu:turbine_rotor{GT.PartStats:{Material:\"tfg:rene_41\"}}",
-			"title": "Turbine Rotor",
-			"text": "$(item)Kratka wentylacyjna$() jest traktowana jak pełny blok, ale przepuszcza powietrze zdatne do oddychania, nie powodując zaburzeń."
+			"title": "Wirnik turbiny",
+			"text": "Like the $(item)Heat Pump$(), you will need a $(item)Turbine Rotor$() so your Oxygen Distributor can run. The Turbine Rotor will lower the consumption of both EU/t and Breathable Gas mB/t.$(br2)$(italic)If $(thing)Efficiency$() or $(thing)Power$() are under 100%, the Rotor will have no benefits.$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -424,31 +424,31 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "ad_astra:vent",
-			"text": "The $(item)Vent$() is a solid block that can also let breathable air through without causing a vortex."
+			"text": "$(item)Kratka wentylacyjna$() jest traktowana jak pełny blok, ale przepuszcza powietrze zdatne do oddychania, nie powodując zaburzeń."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:ad_astra:sliding_doors",
-			"title": "Sliding Doors",
-			"text": "$(item)Kosmiczne obrazy$() świetnie nadają się do ozdobienia bazy motywami kosmicznymi. A jeśli tęsknisz za domem, możesz powiesić sobie wielki obraz Ziemi."
+			"title": "Drzwi przesuwne",
+			"text": "You will want to set up a proper $(thing)airlock system$() between your base's insides and the vacuum of space. Other normal doors will work, but these 3x3 doors are very thematically appropriate for a high-tech moon base. They can be automated with a $(item)pressure plate$() as usual.$(br2)$(bold)Tip:$() You can also use these doors for cleanrooms!"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:higgs_emitter",
 			"anchor": "higgs",
-			"text": "The $(item)Higgs Emitter$() allows you to create artificial gravity, filling a sealed area like with a $(item)Heat Pump$() or $(l:the_moon/the_moon#distributor)Oxygen Distributor$(). The area size scales off of the multiblock's energy hatch tier."
+			"text": "The $(item)Higgs Emitter$() allows you to create artificial gravity, filling a sealed area like with a $(item)Heat Pump$() or $(l:the_moon/the_moon#distributor)Oxygen Distributor$(). The area size scales off of the multiblock's energy hatch tier. Make sure to have a $(item)Zip Gun$() on you if you want to create a Zero-G environment."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "ad_astra:space_painting",
 			"anchor": "painting",
-			"text": "$(item)Space Paintings$() can provide some cool space-themed decoration in your base, or if you're homesick and just really want a big painting of Earth."
+			"text": "$(item)Kosmiczne obrazy$() świetnie nadają się do ozdobienia bazy motywami kosmicznymi. A jeśli tęsknisz za domem, możesz powiesić sobie wielki obraz Ziemi."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "death",
 			"item": "tag:minecraft:beds",
-			"title": "Extraterrestrial Death",
+			"title": "Śmierć poza ziemią",
 			"text": "In $(tfg_short), you can set your spawn on any dimension with a bed (even $(l:beneath/beneath)The Beneath$()!), but unless you've got a bunch of extra space suits lying around, respawning on the Moon might complicate things."
 		},
 		{
@@ -462,7 +462,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Czytaj dalej",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_moon/preparations",

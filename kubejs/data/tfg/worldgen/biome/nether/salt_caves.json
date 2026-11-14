@@ -47,7 +47,8 @@
 		],
 		"#tfg:nether_underground_decoration",
 		[
-			"tfg:nether/terrain/spring_lava"
+			"tfg:nether/terrain/spring_lava",
+			"tfg:nether/structure/outpost"
 		],
 		[
 			"tfc:erosion"
@@ -139,6 +140,12 @@
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 100
+			},
+			{
+				"type": "beneath:red_elk",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 50
 			}
 		],
 		"misc": [],

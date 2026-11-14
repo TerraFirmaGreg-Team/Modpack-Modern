@@ -1,31 +1,31 @@
 {
-    "name": "Sandwich Making",
+    "name": "Готовка бутерброда",
     "category": "tfg:cooking",
     "icon": "tfc:textures/item/food/barley_bread_sandwich.png",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "sandwich",
-            "text": "$(thing)Sandwiches$() are a meal allowing the combination of two $(thing)$(n)$(t:Bread, Flat Bread, or Bread Slice)Bread$() items and three $(n)$(thing)$(t:tfc:#usable_in_sandwich)Sandwich Ingredients$().$(br2)Sandwich ingredients must not be rotten, but once the sandwich is created, it is considered fresh, and decays like it is new."
+            "text": "$(thing) Бутерброды$() — это блюдо, позволяющее сочетать два предмета $(thing)$(n)$(t:Bread, Flat Bread, or Bread Slice)хлеба$() и три $(n)$(thing)$(t:tfc:#usable_in_sandwich)ингредиента для сэндвича$().$(br2)Ингредиенты для сэндвича не должны быть испорченными. Однако после приготовления сэндвич считается свежим, и его порча начинается так же, как у только что приготовленной еды."
         },
         {
             "type": "patchouli:spotlight",
             "item": "tfc:food/barley_bread_sandwich",
-            "title": "Sandwich",
+            "title": "Бутерброд ",
             "link_recipes": false,
-            "text": "Sandwiches are dynamic meal items. The ingrediants used will determine the $(l:cooking/food_and_water#nutrients)Nutrients$() it contains.$(br2)$(t:§70.8§r§l∑§r§7Ingredients §r+ §70.5§r§l∑§r§7Bread§r)To calculate the nutritional value; take the sum of each ingredient's nutrition and multiply by 0.8 except the bread which is multiplied by 0.5$()."
+            "text": "Сэндвичи — это блюда с изменяемым составом. Использованные ингредиенты определяют содержащиеся в них $(l:cooking/food_and_water#nutrients)Нутриенты $().$(br2) $(t:§70.8§r§l∑§r§7Ingredients §r+ §70.5§r§l∑§r§7Bread§r) Чтобы рассчитать пищевую ценность, сложи показатели питательности всех ингредиентов и умножь полученную сумму на 0,8. Для хлеба используется множитель 0,5$()."
         },
         {
             "type": "patchouli:spotlight",
             "item": "tfc:food/barley_bread_jam_sandwich",
             "anchor": "jam_sandwich",
-            "title": "Jam Sandwich",
+            "title": "Бутерброд с джемом.",
             "link_recipes": false,
-            "text": "Jam Sandwiches are also dynamic meal items that use the same calculation as regular sandwiches.$(br)Crafting a jam sandwich will leave an empty jar behind.$(br2)Jam can only be combined with $(thing)cooked meat and fish$() or $(thing)cheese$() to make a jam sandwich."
+            "text": "Сэндвичи с джемом — это также блюда с изменяемым составом, для которых используется тот же расчёт пищевой ценности, что и для обычных сэндвичей.$(br)При создании сэндвича с джемом остаётся пустая банка.$(br2)Джем можно сочетать только с $(thing)приготовленными мясом и рыбой$() или $(thing)сыром$(), чтобы приготовить сэндвич с джемом."
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Читать далее",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/food_and_water",

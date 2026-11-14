@@ -123,7 +123,7 @@
             "type": "patchouli:text",
             "title": "航行",
             "anchor": "sailing",
-            "text": "和你印象中的那些船不同，在“群峦传说：航海文明”里航行是一门技术。当你驾驶帆船时，屏幕上会出现一个新的 UI 元素，显示风速、风向以及船速。风箭头的颜色表示朝该方向航行的难易程度。使用前进和后退移动键来调整船帆角度，多加尝试，找出最适合当前风向的角度。"
+            "text": "和你印象中的那些船不同，在“群峦传说：航海文明”里航行是一门技术。当你驾驶帆船时，屏幕上会出现一个新的 UI 元素，显示风速、风向以及船速。风箭头的颜色表示朝该方向航行的难易程度。使用$(item)$(k:key.forward)$()和$(item)$(k:key.back)$()移动键来松开或拉紧$(thing)船帆$()，同时用$(item)$(k:key.left)$()和$(item)$(k:key.right)$()控制$(thing)舵$()。"
         },
         {
             "type": "patchouli:image",
@@ -576,6 +576,10 @@
         {
             "type": "patchouli:text",
             "text": "建造船体只是第一步。接下来，找到蓝色的锤子图标并按$(item)$(k:key.use)$()，把准星旁显示的物品加到船上。$(br)完整材料清单如下：$(li)脚手架台阶 x6$(li)脚手架楼梯 x18$(li)硬木木板方块 x116$(li)铜螺栓 x96$(li)缆桩 x4$(li)硬木去皮原木 x34$(li)中型风帆 x1$(li)小型风帆 x1$(li)木材 x16$(li)船锚 x1$(li)绳子 x8"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "由于单桅帆船由风力而非人力驱动，其操控方式与其他船只不同。$(br2)你需要学习如何$(l:logistics/boats#sailing)航行$()以及如何逆风$(l:https://w.wiki/dVq$)换舷$()，如何使用$(l:logistics/boats#anchors)锚$()，以及如何升降$(l:logistics/boats#sails)帆$()。"
         },
         {
             "type": "patchouli:spotlight",

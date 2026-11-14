@@ -236,7 +236,7 @@
             "type": "patchouli:spotlight",
             "item": "tfc:alabaster_brick,tfc:alabaster/raw,tfc:alabaster/bricks,tfc:alabaster/polished",
             "anchor": "alabaster",
-            "text": "Алебастр — це будівельний блок, виготовлений із $(thing)гіпсу$(). Алебастр можна отримати безпосередньо шляхом створення з гіпсу, але ефективніше виготовляти його, запечатавши трохи гіпсу зі 100 mB $(thing)вапняної води$() у $(l:craftsmanship/barrels#limewater)діжці$().",
+            "text": "Алебастр — це будівельний блок, виготовлений із $(thing)гіпсу$(). Алебастр можна отримати безпосередньо шляхом створення з гіпсу, але ефективніше виготовляти його, запечатавши трохи гіпсу зі 100 мВ $(thing)вапняної води$() у $(l:craftsmanship/barrels#limewater)діжці$().",
             "title": "Алебастр"
         },
         {

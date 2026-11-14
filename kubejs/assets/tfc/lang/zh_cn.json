@@ -3068,6 +3068,7 @@
 	"config.jade.plugin_tfc.quern": "手推磨",
 	"config.jade.plugin_tfc.rabbit": "兔",
 	"config.jade.plugin_tfc.sapling": "幼树",
+	"config.jade.plugin_tfc.scraping": "刮削",
 	"config.jade.plugin_tfc.sheet_pile": "钢板堆",
 	"config.jade.plugin_tfc.squid": "鱿鱼",
 	"config.jade.plugin_tfc.torch": "火把",
@@ -5593,5 +5594,6 @@
 	"trim_material.tfc.topaz": "黄宝石材质",
 	"trim_material.tfc.topaz_tfc": "黄玉",
 	"trim_material.tfc.uvarovite_tfc": "钙铬榴石",
-	"trim_material.tfc.yellow_garnet_tfc": "黄色石榴石"
+	"trim_material.tfc.yellow_garnet_tfc": "黄色石榴石",
+	"item.tfc.bucket.metal.pig_iron": "熔融生铁桶"
 }

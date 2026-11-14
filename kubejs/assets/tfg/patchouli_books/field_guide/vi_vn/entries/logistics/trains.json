@@ -1,0 +1,223 @@
+{
+	"name": "Trains",
+	"category": "tfg:logistics",
+	"icon": "minecraft:rail",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"text": "$(li)$(bold)$(l:logistics/trains#tracks)Tracks and Stations$()$(li2)$(l:logistics/trains#station)Creating your first train$()$(li2)$(l:logistics/trains#handcar)The Handcar$()$(li)$(bold)$(l:logistics/trains#cargo)Train Cargo$()$(li2)$(l:logistics/trains#loading)Loading & Unloading$()$(li2)$(l:logistics/trains#detecting)Detecting Cargo$()$(li)$(bold)$(l:logistics/trains#conductors)Conductors$()$(li2)$(l:logistics/trains#schedule)Automated Deliveries$()$(li2)$(l:logistics/trains#whistle)Conductor Whistle$()$(li2)$(l:logistics/trains#remote_lens)Remote Lens$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(bold)Fuel$()$(li2)$(l:logistics/trains#solid_fuel)Solid Fuel$()$(li2)$(l:logistics/trains#liquid_fuel)Liquid Fuel$()$(li)$(bold)$(l:logistics/trains#loco)Decorative Blocks$()$(li)$(bold)$(l:logistics/trains#seat)Seats$()$(li)$(bold)$(l:logistics/trains#signals)Train Signals$()$(li2)$(l:logistics/trains#semaphore)Semaphore$()$(li2)$(l:logistics/trains#switches)Track Switches$()$(li)$(bold)$(l:logistics/trains#coupler)Splitting Carriages$()$(li)$(bold)$(l:logistics/trains#buffer)Derailing$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)Create$() has a powerful $(item)Train$() system for long distance transport of players, items, fluids, and everything else. These can be handy for across the wastelands or help you transport enormous amounts of materials, and most importantly, $(thing)can move through unloaded chunks$().$(br2)$(bold)Tip:$() If something is confusing, you can always hold $(thing)W$() while hovering over an item to view its $(thing)Ponder$()!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tag:create:tracks",
+			"title": "Train Tracks",
+			"anchor": "tracks",
+			"text": "Laying paths to different locations will allow you to relocate your trains.$(br)Placing a track and $(item)$(k:key.use)$() it with $(item)Tracks$() in your hand allows you to place tracks quickly and create curved shapes.$(br)If you hold blocks (or Girders) in your off-hand, these will automatically be placed below any tracks."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:track_station",
+			"title": "Your First Train",
+			"anchor": "station",
+			"text": "First, $(item)$(k:key.use)$() tracks with a $(item)Train Station$() to create an arrow on the tracks, which indicate the forward direction of the $(thing)Train$().$(br2)Next, place the $(item)Train Station$() beside the tracks to start creating your own $(thing)Trains$()!"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "In the $(thing)Train Station$() interface, press $(thing)Create new Train$() - this will project light blue spots on the tracks next to it.$(br2)Placing $(item)Train Casings$() on those spots will create a $(thing)Bogey$(). You can connect up to two bogeys with building blocks to form a $(thing)Carriage$(). Remember to use $(item)Superglue$()!"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Place $(item)Train Controls$() facing in the forwards direction of your train.$(br2)When you're finished, press $(thing)Assemble Train$() inside the station's interface, and your $(thing)Train$() is now functional! $(item)$(k:key.use)$() on the $(item)Train Controls$() and use your normal forwards and backwards movement keys to drive the train."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Sadly, trains have some limitations. A single train contraption $(bold)cannot$() exceed $(thing)20 bogeys$() or be longer than $(thing)128 blocks$() - keep this in mind while designing your trains.$(br2)$(bold)Note:$() You can always change the limits in Create's config file, but remember that increasing the limit will use $(thing)more$() server resources."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "railways:handcar",
+			"anchor": "handcar",
+			"text": "The $(item)Handcar$() is a deployable train that allows you to move over rails! You can pick it up with a $(item)Wrench$() and move on. This can be a cheap and great way to quickly move around without building a full train."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:fluid_tank,create_connected:fluid_vessel,create:item_vault,create_connected:item_silo,createaddition:modular_accumulator,fluidlogistics:multi_fluid_tank,fluidlogistics:horizontal_multi_fluid_tank",
+			"title": "Train Cargo",
+			"anchor": "cargo",
+			"text": "$(item)Fluid Tanks$(), $(item)Item Vaults$(), and $(item)Accumulators$() can be placed on a $(thing)Train$() to transport items, fluids, and energy.$(br2)You will need to use their respective Interfaces in order to interact with the train, just like on other contraptions."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:portable_fluid_interface,create:portable_storage_interface,createaddition:portable_energy_interface",
+			"title": "Loading and Unloading",
+			"anchor": "loading",
+			"text": "$(item)Portable interfaces$() allow you to move items between your trains and your storage. Placing a $(item)Portable Interface$() on the train and connecting it to a vault, fluid tank, or accumulator will allow you to move items, fluids, and energy on and off your train! The interfaces require a $(thing)two block gap$() between each other to work."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "When the two interfaces are \"kissing\", they act as one connected interface, so pulling items out of a stationary interface with a chute will pull them out of the train, for example.$(br2)$(bold)Note:$() The Energy Interface will require a $(thing)GregTech Energy Converter$() in order to convert the FE to EU."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:track_observer",
+			"title": "Detecting Cargo",
+			"anchor": "detecting",
+			"text": "$(item)Train Observers$() can be used to detect the cargo transported by the $(thing)Train$(). By $(item)$(k:key.use)$() the $(item)Train Observer$() and placing it next to the tracks, you can filter the train cargo by placing an item on top of the block."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Once a train with the filtered cargo passes over the $(item)Train Observer$(), a redstone signal will be sent from the block!$(br2)$(bold)Tip:$() You can use filters to filter multiple items or fluids at once!"
+		},
+		{
+			"title": "Conductors",
+			"anchor": "conductors",
+			"type": "patchouli:spotlight",
+			"item": "tag:railways:conductor_caps",
+			"text": "It's time to automate your railway system! Placing a $(item)Metal Casing$() and $(item)$(k:key.use)$() it with a $(item)Conductor's Cap$() will spawn your own $(thing)Conductor$(). Cute, isn't it? You can move it around with a $(item)Lead$()."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Placing it next to a $(thing)Lever$() and looking at it will make it pull the lever, which is useful for $(l:logistics/trains#switches)Track Switches$().$(br2)You can also place it on a $(l:logistics/trains#seat)Seat$() in your train to use it as a driver.$(br2)Train drivers are not limited to Conductors! You can use any mob (such as an animal) on a seat or a $(item)Blaze Burner$() as a train driver."
+		},
+		{
+			"title": "Automated Deliveries",
+			"anchor": "schedule",
+			"type": "patchouli:spotlight",
+			"item": "create:schedule",
+			"text": "$(item)$(k:key.use)$() a $(item)Train Schedule$() in the air allows you to select the $(l:logistics/trains#station)Train Station$() to which the $(thing)Train$() should go and how long it needs to wait at a specific station."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "You can also select if the $(thing)Train$() should loop the route or stop at a specific point.$(br2)Giving your $(l:logistics/trains#conductors)Conductor$() a $(item)Train Schedule$() will turn it into a driver and make it ride your train between your $(thing)Train Stations$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "railways:conductor_whistle",
+			"anchor": "whistle",
+			"text": "The $(item)Conductor Whistle$() can be used to make a $(l:logistics/trains#conductors)Train Conductor$() move to a specific place on the tracks, ideal if you want to modify a working $(thing)Train$().$(br2)$(item)$(k:key.use)$() it on a $(thing)Conductor$() will bind the item to the conductor, and using $(item)$(k:key.use)$() on the tracks will move the $(thing)Train$() towards your selected spot."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "If the $(thing)Train$() is not able to access the specified location, it will tell you so in the game chat.$(br2)Note: The $(item)Conductor Whistle$() will $(bold)override$() the $(l:logistics/trains#schedule)Train Schedule$() - if you wish for your $(thing)Conductor$() to continue its journey, you have to re-give it the $(item)Train Schedule$() by $(item)$(k:key.use)$() it $(thing)twice$() with an empty hand."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "railways:remote_lens",
+			"anchor": "remote_lens",
+			"text": "Ever wondered where your $(thing)Train$() goes? Or did you lose it and cannot find it? Fear not!$(br)By giving your $(l:logistics/trains#conductors)Train Conductor$() $(item)Engineer's Goggles$() and a $(item)Remote Lens$(), you can now look from the perspective of the $(thing)Train Conductor$().$(br)$(item)$(k:key.use)$() the item on the $(thing)Train Conductor$() to bind it, and use the lens whenever you want to inspect your $(thing)Train$()!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "minecraft:charcoal",
+			"title": "Fueling Your Train",
+			"anchor": "solid_fuel",
+			"text": "Your $(thing)Train$() can use Solid fuels to accelerate the train up to 50% faster! By supplying the $(thing)Train$() with any kind of $(item)burnable fuel$(), your train's speed will increase for 5 min per item."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Liquid Train Fuel",
+			"item": "railways:fuel_tank,railways:portable_fuel_interface",
+			"anchor": "liquid_fuel",
+			"text": "$(thing)Liquid fuels$() are way more energy dense compared to Solid fuels, but they require a bit more infrastructure. By placing a $(item)Fuel Tank$() on the Train and supplying it using the $(item)Fuel Interface$(), your $(thing)Train$() will consume 100mB of fuel and accelerate by 50%. Liquid fuels last $(thing)a lot$() longer compared to $(thing)items$()."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "For example, 100mB of Rocket Fuel lasts for $(thing)6 hours$(), which is $(thing)60 HOURS$() per bucket.$(br2)You can use $(item)Creosote$(), $(item)Syngas$(), $(item)Diesel$() and much more as fuel in your train. Are you unsure if your liquid classifies as a fuel? Try pumping it into a $(item)Fuel Tank$() - if the tank accepts the liquid, it can be used as fuel!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Steam Immersion",
+			"anchor": "loco",
+			"item": "tag:tfg:smokestacks,tag:railways:palettes/dye_groups/boiler",
+			"text": "Is your $(thing)Locomotive$() out of style? Fear Not! $(item)Locoboilers$() and $(item)Smokestacks$() are here to bring immersion to your railway system.$(br)$(item)Smokestacks$() create smoke particles indefinitely, while $(item)Locoboilers$() give you the possibility to build using $(item)round$() shapes.$(br)Both blocks are purely decorative."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Seats",
+			"anchor": "seat",
+			"item": "tag:create:seats",
+			"text": "$(item)Seats$() allow you to sit down while operating your train.$(br2)To prevent flying off the train while it's in motion, place a $(item)Seat$() on your $(thing)Train$() and remember to secure it with $(item)Superglue$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:track_signal",
+			"anchor": "signals",
+			"title": "Collision Prevention",
+			"text": "$(thing)Train crashes$() are a serious problem while automating your railway system. A crash will derail a $(thing)Train$(), making it $(bold)Inoperable$(). Luckily you can prevent most crashes with a bit of infrastructure."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "railways:semaphore",
+			"anchor": "semaphore",
+			"text": "$(item)$(k:key.use)$() the $(item)Train Signal$() on the tracks before an intersection and place it down next to them, then you can detect when a $(thing)Train$() is moving over them!$(br2)You can place a $(item)Semaphore$() on top of a $(item)Train Signal$() facing the other track."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Now when a $(thing)Train$() is moving over the intersection, the other track will be blocked and $(thing)Trains$() won't be able to pass, preventing a crash.$(br2)$(bold)Note:$() You can stack multiple $(item)Semaphores$() on top of each other and connect them to multiple $(thing)Train Signals$(), but this gets pretty complex. For more information, hold $(item)W$() while hovering over the $(item)Semaphore$() for a visualization of the functionality."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "railways:track_switch_andesite,railways:track_switch_brass",
+			"title": "Track Switches",
+			"anchor": "switches",
+			"text": "$(item)Track Switches$() can be used to switch tracks. $(item)$(k:key.use)$() the $(item)Track Switch$() on somea track and placing it next to it will allow you to switch Tracks!$(br2)$(item)$(k:key.use)$() the $(item)Track Switch$() switches the track towards the right side, while holding $(item)$(k:key.sneak)$() switches the $(item)Track Switch$() switches them towards the left side."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "You can automate the process of switching tracks with Redstone. Supplying a redstone signal to the sides of the $(item)Track Switch$() will make it change the track direction depending on the side from where the signal was received."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(bold)Note:$() $(item)Track Switches$() change their orientation depending on their position to the track and the orientation of the player that placed it. Placing the $(item)Track Switch$() on the right-hand-side of the tracks while $(thing)FACING$() the tracks themselves will align them so the switch is aligned parallel with the tracks."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "railways:track_coupler",
+			"anchor": "coupler",
+			"title": "Splitting Carriages",
+			"text": "Does loading your goods take too much time? Did you ever just want to leave the empty $(thing)Carriage$() behind? Now you can! $(item)$(k:key.use)$() a $(item)Train Coupler$() on the tracks and place it next to them to spawn two $(thing)Nodes$() 5 blocks apart from each other."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "You can change the distance of the nodes by holding a wrench and hold-$(item)$(k:key.use)$() on the $(item)Train Coupler's$() top-side. Powering the $(item)Train Coupler$() with a redstone signal while two separate $(thing)Carriages$() are above the Nodes will cause the carriages to split! They won't be connected any more and your $(thing)Train$() is free to go wherever it wants. Do you want to connect them back? You can do it by repeating the same steps!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "railways:buffer",
+			"anchor": "buffer",
+			"title": "Track Buffers",
+			"text": "Using $(item)Track Buffers$() can prevent derailing of your $(thing)Trains$()! Placing them on the end of an unfinished track or at the outer-ends of your track will remove the possibility for your $(thing)Train$() to derail."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "It happens to the best of us. You accidentally break the tracks or your $(thing)Train$() somehow escaped your tracks, or two trains collided with each other. And now it's $(bold)Derailed$().$(br2)Luckily there is an easy fix for that! $(item)$(k:key.use)$() your train with a $(item)Create Wrench$() to select it and then $(item)$(k:key.use)$() on the tracks to place it back."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Did you place the train facing the wrong direction? You can select it again and place it down while facing the other direction, which will make it flip around!"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Further Reading",
+			"anchor": "relations",
+			"entries": [
+				"tfg:logistics/tack",
+				"tfg:logistics/roads",
+				"tfg:logistics/boats",
+				"tfg:logistics/exploration_gear",
+				"tfg:logistics/create",
+				"tfg:the_world/earth_tree_index"
+			]
+		}
+	]
+}

@@ -9,14 +9,14 @@ function registerTFGLeatherRecipes(event) {
 		.inputFluids(Fluid.of('water', 500))
 		.outputFluids(Fluid.of('tfc:limewater', 500))
 		.duration(20)
-		.EUt(16)
+		.EUt(GTValues.VHA[GTValues.LV])
 
 	event.recipes.gtceu.mixer('tfg:limewater_from_flux')
 		.itemInputs('tfc:powder/flux')
 		.inputFluids(Fluid.of('water', 500))
 		.outputFluids(Fluid.of('tfc:limewater', 500))
 		.duration(20)
-		.EUt(16)
+		.EUt(GTValues.VHA[GTValues.LV])
 
 	// Tannin
 	event.recipes.gtceu.chemical_bath('tfg:tannin')

@@ -16,7 +16,7 @@ function registerTFGDirtRecipes(event) {
 		.itemInputs('tfc:dirt/loam', 'tfc:dirt/silt')
 		.itemOutputs('2x tfc:dirt/silty_loam')
 		.duration(200)
-		.EUt(16)
+		.EUt(7)
 
 	// Loam + Sand -> Sandy Loam (Миксер)
 	event.recipes.gtceu.mixer('tfg:sandy_loam_dirt')
@@ -24,7 +24,7 @@ function registerTFGDirtRecipes(event) {
 		.circuit(3)
 		.itemOutputs('tfc:dirt/sandy_loam')
 		.duration(200)
-		.EUt(16)
+		.EUt(7)
 
 	// Loam + Salt -> Silt
 	event.recipes.gtceu.mixer('tfg:silty_dirt')
@@ -32,7 +32,7 @@ function registerTFGDirtRecipes(event) {
 		.circuit(3)
 		.itemOutputs('tfc:dirt/silt')
 		.duration(200)
-		.EUt(16)
+		.EUt(7)
 
 	// Alkaline dirt
 	event.recipes.gtceu.mixer('tfg:alfisol')
@@ -40,7 +40,7 @@ function registerTFGDirtRecipes(event) {
 		.circuit(3)
 		.itemOutputs('tfg:dirt/alfisol')
 		.duration(200)
-		.EUt(16)
+		.EUt(7)
 
 	// Volcanic dirt
 	event.recipes.gtceu.mixer('tfg:mollisol')
@@ -48,7 +48,7 @@ function registerTFGDirtRecipes(event) {
 		.circuit(3)
 		.itemOutputs('tfg:dirt/mollisol')
 		.duration(200)
-		.EUt(16)
+		.EUt(7)
 
 	// Tropical
 	event.recipes.gtceu.mixer('tfg:oxisol')
@@ -56,7 +56,7 @@ function registerTFGDirtRecipes(event) {
 		.circuit(3)
 		.itemOutputs('tfg:dirt/oxisol')
 		.duration(200)
-		.EUt(16)
+		.EUt(7)
 
 	// Layered
 	event.recipes.gtceu.mixer('tfg:podzol')
@@ -64,7 +64,7 @@ function registerTFGDirtRecipes(event) {
 		.circuit(3)
 		.itemOutputs('tfg:dirt/podzol')
 		.duration(200)
-		.EUt(16)
+		.EUt(7)
 
 	// Mars dirt
 	event.recipes.gtceu.mixer('tfg:mars_dirt')
@@ -73,7 +73,7 @@ function registerTFGDirtRecipes(event) {
 		.circuit(3)
 		.itemOutputs('tfg:grass/mars_dirt')
 		.duration(200)
-		.EUt(16)
+		.EUt(7)
 
 	function buildDirtRecipes(namespace, dirtType) {
 		// Dirt + Sticks -> Rooted Dirt
@@ -81,7 +81,7 @@ function registerTFGDirtRecipes(event) {
 			.itemInputs(`${namespace}:dirt/${dirtType}`, "#forge:rods/wooden")
 			.itemOutputs(`${namespace}:rooted_dirt/${dirtType}`)
 			.duration(200)
-			.EUt(16)
+			.EUt(7)
 
 		event.smelting(`${namespace}:dirt/${dirtType}`, `${namespace}:mud/${dirtType}`)
 			.id(`tfg:smelting/${dirtType}_mud_to_grass`)
@@ -94,7 +94,7 @@ function registerTFGDirtRecipes(event) {
 			.circuit(2)
 			.itemOutputs(`${namespace}:mud/${dirtType}`)
 			.duration(200)
-			.EUt(16)
+			.EUt(7)
 
 		//AE Transform Mud
 		event.custom({

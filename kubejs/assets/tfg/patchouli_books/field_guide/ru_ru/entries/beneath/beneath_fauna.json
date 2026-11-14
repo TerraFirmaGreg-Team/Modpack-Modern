@@ -6,31 +6,31 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "Эта жизнь существует глубоко под землёй. На самом деле её здесь довольно много. Некоторые из этих животных дружелюбные, но большинство жаждет твоей смерти.\n$(br2)Эти записи расскажут о интересных сущест которых ты можешь найти в Бездне. $(br)"
+			"text": "Жизнь существует и глубоко под землёй! На самом деле её в Бездне довольно много, некоторая дружелюбная, некоторая не очень...\n$(br2)Эти записи расскажут об интересных существах которых ты можешь найти в Бездне. $(br)"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)Passive$()$(li2)$(l:beneath/beneath_fauna#axolotl)Axolotl$()$(li2)$(l:beneath/beneath_fauna#frog)Frog$()$(li2)$(l:beneath/beneath_fauna#mammutilation)Mammutilation$()$(li2)$(l:beneath/beneath_fauna#red_elk)Red Elk$()$(li2)$(l:beneath/beneath_fauna#zombie_horse)Zombie Horse$()$(li)$(bold)$(l:agriculture/jellies)Jellies$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)Ice$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)Plant$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)Glowberry$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)Spring$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)Lava$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)Biotite$()$(li2)$(l:beneath/beneath_fauna#latex_jellie)Latex$()$(br)$(o)(Continued on next page...)$()"
+			"text": "$(li)$(bold)Пассивные$()$(li2)$(l:beneath/beneath_fauna#axolotl)Аксолотль$()$(li2)$(l:beneath/beneath_fauna#frog)Лягушка$()$(li2)$(l:beneath/beneath_fauna#mammutilation)Мамонтродье$()$(li2)$(l:beneath/beneath_fauna#red_elk)Красный лось$()$(li2)$(l:beneath/beneath_fauna#zombie_horse)Зомби Лошадь$()$(li)$(bold)$(l:agriculture/jellies)Джелли$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)Ледяные$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)Природные$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)Светящиеся$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)Родниковая$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)Лавовые$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)Биотитовые$()$(li2)$(l:beneath/beneath_fauna#latex_jellie)Латексные$()$(br)$(o)(Продолжение на следующей странице...)$()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)Hostile$()$(li2)$(l:beneath/beneath_fauna#crocodile)Crocodile$()$(li2)$(l:beneath/beneath_fauna#piglin)Piglin$()$(li2)$(l:beneath/beneath_fauna#phantom)Phantom$()$(li2)$(l:beneath/beneath_fauna#kaolin_klayze)Kaolin Klayze$()$(li2)$(l:beneath/beneath_fauna#graphite_glayze)Graphite Glayze$()$(li2)$(l:beneath/beneath_fauna#cliff_hanger)Cliff Hanger$()$(li2)$(l:beneath/beneath_fauna#leaf_hanger)Leaf Hanger$()$(li2)$(l:beneath/beneath_fauna#endermen)Endermen$()$(li2)$(l:beneath/beneath_fauna#spectre)Spectre$()$(li2)$(l:beneath/beneath_fauna#wicked)Wicked$()$(li2)$(l:beneath/beneath_fauna#ghoul)Ghoul$()$(li2)$(l:beneath/beneath_fauna#bewereager)Bewereager$()"
+			"text": "$(li)$(bold)Враждебные$()$(li2)$(l:beneath/beneath_fauna#crocodile)Крокодил$()$(li2)$(l:beneath/beneath_fauna#piglin)Пиглин$()$(li2)$(l:beneath/beneath_fauna#phantom)Фантом$()$(li2)$(l:beneath/beneath_fauna#kaolin_klayze)Каолинитовый Клейз$()$(li2)$(l:beneath/beneath_fauna#graphite_glayze)Графитовый Глейз$()$(li2)$(l:beneath/beneath_fauna#cliff_hanger)Скалистый подвесник$()$(li2)$(l:beneath/beneath_fauna#leaf_hanger)Лиственный подвесник$()$(li2)$(l:beneath/beneath_fauna#endermen)Эндермен$()$(li2)$(l:beneath/beneath_fauna#spectre)Спектр$()$(li2)$(l:beneath/beneath_fauna#wicked)Озорник$()$(li2)$(l:beneath/beneath_fauna#ghoul)Гуль$()$(li2)$(l:beneath/beneath_fauna#bewereager)Волколак$()"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "minecraft:axolotl",
 			"scale": 0.5,
-			"name": "Axolotl",
+			"name": "Аксолотль",
 			"anchor": "axolotl",
-			"text": "$(thing)Axolotls$() can be found in the top and middle layers, usually swimming around in pools of water."
+			"text": "$(thing)Аксолотлей$() можно найти в верхних и средних слоях, обычно купающихся в небольших источниках воды"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:frog",
 			"scale": 1,
-			"name": "Frog",
+			"name": "Лягушка",
 			"anchor": "frog",
-			"text": "$(thing)Frogs$() can be found in the top and middle layers. They can be tamed and eaten."
+			"text": "$(thing)Лягушек$() можно найти в верхних и средних слоях. Их можно приручить или съесть"
 		},
 		{
 			"type": "patchouli:entity",
@@ -62,7 +62,7 @@
 			"scale": 0.6,
 			"name": "Ice Jellie",
 			"anchor": "ice_jellie",
-			"text": "$(thing)Ice$() $(l:agriculture/jellies)Jellies$() are found in the $(thing)Salt Caves$() biome. They cool down nearby players."
+			"text": "$(thing)Ледяной$() $(l:agriculture/jellies)Джелли$() можно найти в биоме $(thing)Cоляных пещер$(). Они пассивно охлаждают всех игроков в небольшом радиусе."
 		},
 		{
 			"type": "patchouli:entity",
@@ -78,7 +78,7 @@
 			"scale": 0.6,
 			"name": "Glowberry Jellie",
 			"anchor": "glowberry_jellie",
-			"text": "$(thing)Glowberry$() $(l:agriculture/jellies)Jellies$() are found in the $(thing)Lush Hollow$() biome. Their slime balls can be boiled into $(item)Sugar$()."
+			"text": "$(thing)Светящийся$() $(l:agriculture/jellies)Джелли$() можно найти в биоме $(thing)Пышных лощин$(). Их слизь можно переработать в $(thing)Сахар$()"
 		},
 		{
 			"type": "patchouli:entity",
@@ -106,11 +106,11 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "jellies:latex",
+			"entity": "jellies:milk",
 			"scale": 0.6,
-			"name": "Latex Jellie",
-			"anchor": "latex_jellie",
-			"text": "$(thing)Latex$() $(l:agriculture/jellies)Jellies$() can only be bred from a $(thing)Plant Jellie$() and $(thing)Lava Jellie$(). Their slime balls are a source of $(item)Latex$()."
+			"name": "Milk Jellie",
+			"anchor": "milk_jellie",
+			"text": "$(thing)Milk$() $(l:agriculture/jellies)Jellies$() can only be bred from a $(thing)Plant Jellie$() and $(thing)Lava Jellie$(). Their slime balls are a source of $(item)Dairy$()."
 		},
 		{
 			"type": "patchouli:entity",
@@ -150,7 +150,7 @@
 			"scale": 1,
 			"name": "Graphite Glayze",
 			"anchor": "graphite_glayze",
-			"text": "$(thing)Graphite Glayzes$() can be found in the bottom layers. Careful they don't knock you into lava!"
+			"text": "$(thing)Графитовых Глейзов$() можно найти на нижнем слое бездны. Будь осторожен, ведь он 100% скинет тебя в лаву!"
 		},
 		{
 			"type": "patchouli:entity",
@@ -210,7 +210,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Читать далее",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/wild_animals",

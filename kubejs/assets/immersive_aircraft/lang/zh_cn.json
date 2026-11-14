@@ -123,5 +123,6 @@
 	"option.immersive_aircraft.weaponsAreDestructive": "允许某些武器摧毁方块。",
 	"option.immersive_aircraft.windClearWeather": "晴朗天气时的风效应。",
 	"option.immersive_aircraft.windRainWeather": "雨天时的风效应。",
-	"option.immersive_aircraft.windThunderWeather": "雷雨时的风效应。"
+	"option.immersive_aircraft.windThunderWeather": "雷雨时的风效应。",
+	"option.immersive_aircraft.defaultCanEnter": "默认情况下允许生物自动登上飞机。"
 }

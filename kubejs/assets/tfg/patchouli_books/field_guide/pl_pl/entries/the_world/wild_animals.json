@@ -288,7 +288,7 @@
             "scale": 0.55,
             "name": "Lew",
             "anchor": "lion",
-            "text": "The lion spawns in plains with an average $(l:the_world/climate#temperature)temperature$() of at least 16°C, and $(l:the_world/climate#rainfall)rainfall$() between 50 and 300mm."
+            "text": "Lew pojawia się na równinach przy średniej $(l:the_world/climate#temperature)temperaturze$() powyżej 16°C oraz $(l:the_world/climate#rainfall)opadach$() między 50 a 300 mm."
         },
         {
             "type": "patchouli:entity",
@@ -318,7 +318,7 @@
             "entity": "tfc:direwolf",
             "anchor": "direwolf",
             "scale": 0.7,
-            "text": "The direwolf spawns at any $(l:the_world/climate#temperature)temperature$() below freezing, and $(l:the_world/climate#rainfall)rainfall$() between 150 and 420mm. They hunt in packs. They are larger than regular wolves, and are not tamable."
+            "text": "Wilk straszny pojawia się przy dowolnej $(l:the_world/climate#temperature)temperaturze$() powyżej 0°C oraz $(l:the_world/climate#rainfall)opadach$() między 150 a 420 mm. Wilki straszne są większe od normalnych wilków, polują w grupach i nie da się ich oswoić."
         },
         {
             "type": "patchouli:entity",
@@ -362,7 +362,7 @@
             "anchor": "moose",
             "scale": 0.7,
             "name": "Łoś",
-            "text": "The moose spawns in forests at $(l:the_world/climate#temperature)temperature$() below 10°C and above -15°C, and $(l:the_world/climate#rainfall)rainfall$() between 150 and 300mm."
+            "text": "Łoś pojawia się w lasach przy $(l:the_world/climate#temperature)temperaturze$() poniżej 10°C i powyżej -15°C oraz $(l:the_world/climate#rainfall)opadach$() od 150 do 300 mm."
         },
         {
             "type": "patchouli:entity",
@@ -370,7 +370,7 @@
             "anchor": "wildebeest",
             "scale": 0.7,
             "name": "Gnu",
-            "text": "The wildebeest spawns in open plains at any $(l:the_world/climate#temperature)temperature$() above 13°C, and $(l:the_world/climate#rainfall)rainfall$() between 90 and 380mm."
+            "text": "Gnu pojawia się na równinach przy dowolnej $(l:the_world/climate#temperature)temperaturze$() powyżej 13°C oraz $(l:the_world/climate#rainfall)opadach$() między 90 a 380 mm."
         },
         {
             "type": "patchouli:entity",
@@ -468,7 +468,7 @@
             "offset": -0.2,
             "name": "Leming",
             "anchor": "lemming",
-            "text": "The lemming spawns at any $(l:the_world/climate#temperature)temperature$() below -3°C and above -12°C, and $(l:the_world/climate#rainfall)rainfall$() between 160 and 500mm."
+            "text": "Leming pojawia się przy dowolnej $(l:the_world/climate#temperature)temperaturze$() poniżej -3°C i powyżej -12°C oraz $(l:the_world/climate#rainfall)opadach$() od 160 do 500 mm."
         },
         {
             "type": "patchouli:entity",
@@ -510,7 +510,7 @@
             "scale": 0.7,
             "name": "Żółw morski",
             "anchor": "turtle",
-            "text": "The sea turtle likes warm water. It spawns in $(l:the_world/climate#temperature)temperature$() of at least 21°C and $(l:the_world/climate#rainfall)rainfall$() of at least 250mm."
+            "text": "Żółwie morskie lubią ciepłą wodę. Pojawiają się przy $(l:the_world/climate#temperature)temperaturze$() co najmniej 21°C oraz $(l:the_world/climate#rainfall)opadach$() co najmniej 250 mm."
         },
         {
             "type": "patchouli:text",
@@ -594,7 +594,7 @@
             "scale": 0.7,
             "name": "Rak",
             "anchor": "crayfish",
-            "text": "Crayfish are like lobster, but spawn in rivers and lakes. They need a $(l:the_world/climate#temperature)temperature$() of at least 5°C and a $(l:the_world/climate#rainfall)rainfall$() of at least 125mm."
+            "text": "Raki są jak homary, ale pojawiają się w rzekach i jeziorach. Potrzebują $(l:the_world/climate#temperature)temperatury$() co najmniej 5°C oraz $(l:the_world/climate#rainfall)opadów$() co najmniej 125 mm."
         },
         {
             "type": "patchouli:entity",
@@ -602,12 +602,12 @@
             "scale": 0.7,
             "name": "Skrzypłocz",
             "anchor": "horseshoe_crab",
-            "text": "Horseshoe crabs spawn in oceans of moderate climate, $(l:the_world/climate#temperature)temperature$() between 10 and 21°C and with a $(l:the_world/climate#rainfall)rainfall$() of at most 400mm."
+            "text": "Skrzypłocze pojawiają się w oceanach o umiarkowanym klimacie, przy $(l:the_world/climate#temperature)temperaturze$() między 10 a 21°C oraz $(l:the_world/climate#rainfall)opadach$() co najwyżej 400 mm."
         },
         {
             "type": "patchouli:text",
             "anchor": "large_aquatic_animals",
-            "text": "$(thing)Large Water Creatures$() are larger animals that live in the bigger bodies of water. Some of them hunt fish. They drop $(l:game_mechanics/lighting)blubber$(), which can be made into lamp fuel.",
+            "text": "$(thing)Duże zwierzęta wodne$() żyją w większych zbiornikach wodnych. Niektóre z nich polują na ryby. Można z nich pozyskać $(l:game_mechanics/lighting)sadło$(), który można wykorzystać jako paliwo do lampy.",
             "title": "Duże zwierzęta wodne"
         },
         {

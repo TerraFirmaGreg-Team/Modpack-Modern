@@ -83,6 +83,10 @@ function registerTFGFlagsMaterialModification(event) {
 	GTMaterials.Lead.addFlags(CAN_BE_UNMOLDED);
 	GTMaterials.Potin.addFlags(CAN_BE_UNMOLDED);
 	GTMaterials.Iron.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.Wax.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.Electrum.addFlags(CAN_BE_UNMOLDED, GENERATE_DOUBLE_INGOTS);
+	GTMaterials.BatteryAlloy.addFlags(CAN_BE_UNMOLDED, GENERATE_DOUBLE_INGOTS);
+	GTMaterials.Cupronickel.addFlags(CAN_BE_UNMOLDED, GENERATE_DOUBLE_INGOTS);
 
 	// TFC tool tiers
 	GTMaterials.Copper.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
@@ -189,9 +193,9 @@ function registerTFGFlagsMaterialModification(event) {
 	GTMaterials.VanadiumSteel.addFlags(GENERATE_ROTOR)
 
 	// electric tools
-	GTMaterials.VanadiumSteel.addFlags(HAS_GT_TOOL, GENERATE_DOUBLE_INGOTS, CAN_BE_UNMOLDED)
-	GTMaterials.Ultimet.addFlags(HAS_GT_TOOL, GENERATE_DOUBLE_INGOTS, CAN_BE_UNMOLDED)
-	GTMaterials.TungstenCarbide.addFlags(HAS_GT_TOOL, GENERATE_DOUBLE_INGOTS, CAN_BE_UNMOLDED)
+	GTMaterials.VanadiumSteel.addFlags(HAS_GT_TOOL, GENERATE_DOUBLE_INGOTS)
+	GTMaterials.Ultimet.addFlags(HAS_GT_TOOL, GENERATE_DOUBLE_INGOTS)
+	GTMaterials.TungstenCarbide.addFlags(HAS_GT_TOOL, GENERATE_DOUBLE_INGOTS)
 
 	GTMaterials.HSLASteel.addFlags(GENERATE_BOLT_SCREW, GENERATE_DENSE)
 

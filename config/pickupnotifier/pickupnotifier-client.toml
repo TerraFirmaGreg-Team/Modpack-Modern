@@ -27,7 +27,7 @@
 	offset_x = 8
 	#Offset on y-axis from screen border.
 	#Range: > 0
-	offset_y = 4
+	offset_y = 20
 	#Percentage of relative screen height entries are allowed to fill at max.
 	#Range: 0.0 ~ 1.0
 	max_height = 0.5

@@ -39,6 +39,14 @@
     "item.tfg.polycaprolactam_string": "Polycaprolactam String",
     "item.tfg.copper_spindle": "Copper Spindle",
     "item.tfg.copper_spindle_head": "Copper Spindle Head",
+    "item.tfg.bronze_spindle": "Bronze Spindle",
+    "item.tfg.bronze_spindle_head": "Bronze Spindle Head",
+    "item.tfg.black_bronze_spindle": "Black Bronze Spindle",
+    "item.tfg.black_bronze_spindle_head": "Black Bronze Spindle Head",
+    "item.tfg.bismuth_bronze_spindle": "Bismuth Bronze Spindle",
+    "item.tfg.bismuth_bronze_spindle_head": "Bismuth Bronze Spindle Head",
+    "item.tfg.wrought_iron_spindle": "Wrought Iron Spindle",
+    "item.tfg.wrought_iron_spindle_head": "Wrought Iron Spindle Head",
     "item.tfg.silk_fibers": "Silk Fibers",
 
     "item.tfg.space_suit_fabric": "Space Suit Fabric",
@@ -66,6 +74,7 @@
     "item.tfg.unfinished_good_electronic_circuit": "Unfinished Good Electronic Circuit",
     "item.tfg.unfinished_inscriber_accumulation_press": "Unfinished Inscriber Accumulation Press",
     "item.tfg.steel_drill_head": "Steel Drill Head",
+    "item.tfg.electrical_insulator": "Ceramic Electrical Insulator",
 
     "item.tfg.brick.deepslate": "Migmatite Brick",
     "item.tfg.brick.dripstone": "Travertine Brick",
@@ -558,5 +567,8 @@
     "item.tfg.food.opened_green_coconut": "Opened Young Coconut",
     "item.tfg.oil_palm_paste": "Oil Palm Paste",
     "item.tfg.oil_palm_debris": "Oil Palm Debris",
-    "item.tfg.oil_palm_fiber": "Oil Palm Fiber"
+    "item.tfg.oil_palm_fiber": "Oil Palm Fiber",
+
+    "item.tfg.electric_flask": "Electric Flask",
+    "item.tfg.electric_flask.filled": "%s Electric Flask"
 }

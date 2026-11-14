@@ -19,7 +19,7 @@
             "anchor": "papyrus",
             "title": "Папір із папірусу",
             "recipe": "tfc:crafting/papyrus_strips",
-            "text": "Папір можна безпосередньо виготовляти з культури $(l:https://en.wikipedia.org/wiki/Papyrus)папірусу$(). Спочатку папірус потрібно нарізати на смужки за допомогою $(thing)ножа$()..."
+            "text": "Папір можна безпосередньо виготовляти з культури $(l:the_world/wild_crops#papyrus)папірусу$(). Спочатку папірус потрібно нарізати на смужки за допомогою $(thing)ножа$()..."
         },
         {
             "type": "tfg:sealed_barrel_recipe",

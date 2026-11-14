@@ -23,6 +23,8 @@ function registerTFCItemTags(event) {
 	// Add chainsaws to #tfc:axes so they drop fruit tree saplings
 	event.add("tfc:axes", "#forge:tools/chainsaws");
 
+	event.add("tfc:scythes", "#forge:tools/scythes");
+
 	/**
 	 * @type {string[]} - Item IDs and tags usable on tfc tool racks.
 	 */
@@ -744,6 +746,9 @@ function registerTFCFluidTags(event) {
 	event.add("tfc:usable_in_ingot_mold", "gtceu:cobalt");
 	event.add("tfc:usable_in_ingot_mold", "gtceu:cobalt_brass");
 	event.add("tfc:usable_in_ingot_mold", "gtceu:aluminium_silicate");
+	event.add("tfc:usable_in_ingot_mold", "gtceu:electrum");
+
+	event.add("tfc:usable_in_ingot_mold", "gtceu:wax");
 
 	event.add("tfc:usable_in_bell_mold", "gtceu:bronze");
 	event.add("tfc:usable_in_bell_mold", "gtceu:gold");

@@ -12,7 +12,7 @@
 			"type": "patchouli:text",
 			"anchor": "index",
 			"title": "目录",
-			"text": "$(li)$(bold)$(l:mars/mars_fauna#sandworm)沙虫$()$(li)$(bold)可驯养$()$(li2)$(l:mars/mars_fauna#sniffer)嗅探兽$()$(li2)$(l:mars/mars_fauna#wraptor)诡恐鸟$()$(li2)$(l:mars/mars_fauna#glacian_sheep)霜原羊$()$(li2)$(l:mars/mars_fauna#snatcher)夺掠兽$()$(li2)$(l:mars/mars_fauna#charger)驰击兽$()$(li2)$(l:mars/mars_fauna#soarer)翱翔鸟$()$(li2)$(l:mars/mars_fauna#pentetic_jellie)五乙酸黏液灵$()$(br2)$(o)（接下页……）$()"
+			"text": "$(li)$(bold)$(l:mars/mars_fauna#sandworm)沙虫$()$(li)$(bold)可驯养$()$(li2)$(l:mars/mars_fauna#sniffer)嗅探兽$()$(li2)$(l:mars/mars_fauna#wraptor)诡恐鸟$()$(li2)$(l:mars/mars_fauna#glacian_sheep)霜原羊$()$(li2)$(l:mars/mars_fauna#snatcher)夺掠兽$()$(li2)$(l:mars/mars_fauna#charger)驰击兽$()$(li2)$(l:mars/mars_fauna#soarer)翱翔鸟$()$(li2)$(l:mars/mars_fauna#pentetic_jellie)喷替黏液灵$()$(br2)$(o)（接下页……）$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -134,9 +134,9 @@
 			"type": "patchouli:entity",
 			"entity": "jellies:pentetic{NoAI:1b}",
 			"scale": 0.6,
-			"name": "五乙酸黏液灵",
+			"name": "喷替黏液灵",
 			"anchor": "pentetic_jellie",
-			"text": "$(thing)五乙酸$()$(l:agriculture/jellies)黏液灵$()会生成在$(item)火星深层沙丘$()和$(item)死寂火星火山$()生物群系中。它们会被动吸收玩家的辐射。"
+			"text": "$(thing)喷替$()$(l:agriculture/jellies)黏液灵$()会生成在$(item)火星深层沙丘$()和$(item)死寂火星火山$()生物群系中。它们会被动吸收玩家的辐射。"
 		},
 		{
 			"type": "patchouli:entity",

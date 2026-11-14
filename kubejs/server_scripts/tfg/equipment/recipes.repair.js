@@ -2,9 +2,9 @@
 "use strict";
 
 function registerTFGRepairRecipes(event) {
-	const ELECTRIC_TOOLS = ['drill', 'buzzsaw', 'wrench', 'chainsaw', 'wire_cutter', 'screwdriver']
-	const MANUAL_TOOLS = ['knife', 'hoe', 'scythe', 'hammer', 'file', 'sword', 'butchery_knife', 'crowbar']
-	const ONLY_MANUAL_TOOLS = ['spade', 'pickaxe', 'shovel', 'axe', 'wrench', 'mortar', 'saw', 'screwdriver', 'wire_cutter', 'mining_hammer']
+	const ELECTRIC_TOOLS = ['drill', 'buzzsaw', 'wrench', 'chainsaw', 'wire_cutter', 'screwdriver', 'scythe']
+	const MANUAL_TOOLS = ['knife', 'hoe', 'hammer', 'file', 'sword', 'butchery_knife', 'crowbar']
+	const ONLY_MANUAL_TOOLS = ['spade', 'pickaxe', 'shovel', 'axe', 'wrench', 'mortar', 'saw', 'screwdriver', 'scythe', 'wire_cutter', 'mining_hammer']
 	const ONLY_COLORED_TOOLS = ['buzzsaw']
 	const TFC_EQUIPMENT_METAL_GEAR = ['propick', 'chisel', 'mace', 'fishing_rod', 'shears', 'helmet', 'chestplate', 'greaves', 'boots', 'shield', 'javelin']
 	const SNS_METALS = ['steel', 'black_steel', 'blue_steel', "red_steel"]
@@ -115,12 +115,15 @@ function registerTFGRepairRecipes(event) {
 		{ item: "tfc_textile:red_elk_pants", material: "species:ghoul_tongue" },
 		{ item: "tfc_textile:red_elk_boots", material: "species:ghoul_tongue" },
 
-		{ item: "hangglider:reinforced_hang_glider", material: "sns:reinforced_fabric" }
+		{ item: "hangglider:reinforced_hang_glider", material: "sns:reinforced_fabric" },
+		{ item: "minecraft:crossbow", material: "gtceu:repair_kit_wrought_iron" },
+		{ item: "species:crankbow", material: "gtceu:repair_kit_wrought_iron" }
 	]
 
 	const SPECIAL_TAG_REPAIRS = [
 		{ item: "hangglider:hang_glider", tag: "forge:cloth" },
-		{ item: "hangglider:reinforced_hang_glider", tag: "tfg:lightweight_cloth" }
+		{ item: "hangglider:reinforced_hang_glider", tag: "tfg:lightweight_cloth" },
+		{ item: "minecraft:bow", tag: "forge:string" }
 	]
 
 	repairColoredSteel('gtceu', 'red_steel');
@@ -129,8 +132,8 @@ function registerTFGRepairRecipes(event) {
 	repairElectricTools('tfg', 'hv', 'boron_carbide');
 	repairElectricTools('tfg', 'mv', 'diamond_tipped_mo_50_re');
 	repairElectricTools('gtceu', 'iv', 'hsse');
-	repairElectricTools('gtceu', 'iv', 'naquadah_alloy');
-	repairElectricTools('gtceu', 'iv', 'duranium');
+	repairElectricTools('gtceu', 'luv', 'naquadah_alloy');
+	repairElectricTools('gtceu', 'luv', 'duranium');
 	repairElectricTools('gtceu', 'ev', 'ostrum_iodide');
 	repairElectricTools('gtceu', 'ev', 'tungsten_carbide');
 	repairElectricTools('gtceu', 'hv', 'ultimet');
@@ -309,7 +312,7 @@ function registerTFGRepairRecipes(event) {
 
 	// Tongs
 	global.TFC_METALS.forEach(metal => {
-		if (metal === "cast_iron")
+		if (metal === "cast_iron" || metal === "red_steel" || metal === "blue_steel")
 			return;
 
 		event.custom({

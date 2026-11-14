@@ -183,6 +183,9 @@ const registerFirmaLifeRecipes = (event) => {
 		.itemOutputs('8x firmalife:cork')
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.ULV])
+		
+	event.shapeless('16x firmalife:bottle_label', ['minecraft:paper', '#forge:tools/knives', '#forge:wax'])
+		.id('firmalife:crafting/bottle_label')
 
 	event.recipes.gtceu.assembler('firmalife:bottle_label')
 		.itemInputs('#forge:wax', 'minecraft:paper')
@@ -197,8 +200,6 @@ const registerFirmaLifeRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 		.duration(100)
 		.category(GTRecipeCategories.INGOT_MOLDING)
-
-	event.replaceInput({ id: 'firmalife:crafting/bottle_label' }, 'firmalife:beeswax', '#forge:wax')
 	
 	event.shapeless('firmalife:fruit_leaf', ['#tfc:fruit_tree_leaves']).id('tfg:shapeless/firmalife/fruit_leaf_from_fruit_leaves');
 

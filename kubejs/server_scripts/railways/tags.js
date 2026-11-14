@@ -38,4 +38,23 @@ const registerRailWaysItemTags = (event) => {
 const registerRailWaysBlockTags = (event) => {
 
 	event.add('tfc:no_icicle_generation', 'railways:track_monorail')
+
+	const LOCO_GLASSES = [
+		'round_pane_locometal_window',
+		'single_pane_locometal_window',
+		'two_pane_locometal_window',
+		'four_pane_locometal_window'
+	]
+
+	LOCO_GLASSES.forEach(glass => {
+		const loco_glass = `railways:${glass}`
+		event.add('forge:mineable/wrench', loco_glass)
+
+		global.LOCOMETAL_COLORS.forEach(tfc_dye => {
+			tfc_dye.colors.forEach(color => {
+				const loco_glass_dyed = `railways:${color}_${glass}`
+				event.add('forge:mineable/wrench', loco_glass_dyed)
+			})
+		})
+	})
 }

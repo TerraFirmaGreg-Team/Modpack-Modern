@@ -1,0 +1,108 @@
+{
+    "name": "Fertilizers",
+    "category": "tfg:agriculture",
+    "icon": "tfc:groundcover/guano",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "Index",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:agriculture/fertilizers#compost)Compost$()$(li)$(bold)$(l:agriculture/fertilizers#bone_meal)Bone Meal$()$(li)$(bold)$(l:agriculture/fertilizers#saltpeter)Salt Peter$()$(li)$(bold)$(l:agriculture/fertilizers#guano)Guano$()$(li)$(bold)$(l:agriculture/fertilizers#wood_ash)Wood Ash$()$(li)$(bold)$(l:agriculture/fertilizers#sylvite)Sylvite$()$(li)$(bold)$(l:agriculture/fertilizers#pure_fertilizers)Pure Fertilizers$()$(li)$(bold)$(l:agriculture/fertilizers#fertilizer)Fertilizer$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "text": "Fertilizers are used to add nutrients to $(l:agriculture/growing_crops)crops$(). $(item)$(k:key.use)$() with a fertilizer in your hand on some $(thing)Farmland$(), $(l:agriculture/greenhouse#planters)Planter$() or a $(thing)Crop$() to add the nutrients. Particles should appear, indicating the fertilizer was added.$(br)You can find nutrient information in a fertilizers' tooltip. The next few pages list some available fertilizers.",
+            "title": "Fertilization"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "compost",
+            "title": "Compost",
+            "item": "tfc:compost",
+            "link_recipes": false,
+            "text": "Compost is the product of the $(l:agriculture/composting)Composter$(). $(br)$(li)$(b)Nitrogen: 40$()$(li)$(6)Phosphorous: 20$()$(li)$(d)Potassium: 40$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "minecraft:bone_meal",
+            "anchor": "bone_meal",
+            "title": "Bone Meal",
+            "link_recipes": false,
+            "text": "Bonemeal is made of crushed bones. $(br)$(li)$(6)Phosphorous: 10$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:powder/saltpeter",
+            "anchor": "saltpeter",
+            "title": "Saltpeter",
+            "link_recipes": false,
+            "text": "Saltpeter is made from its ore. $(br)$(li)$(b)Nitrogen: 10$()$(li)$(d)Potassium: 40$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:groundcover/guano",
+            "anchor": "guano",
+            "title": "Guano",
+            "link_recipes": false,
+            "text": "Guano is found deep underground and on gravelly shores. $(br)$(li)$(b)Nitrogen: 80$()$(li)$(6)Phosphorous: 50$()$(li)$(d)Potassium: 10$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:powder/wood_ash",
+            "anchor": "wood_ash",
+            "title": "Wood Ash",
+            "link_recipes": false,
+            "text": "Wood ash is produced by breaking firepits. Throwing a torch item into water also has a chance to produce ash. $(br)$(li)$(6)Phosphorous: 10$()$(li)$(d)Potassium: 30$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:powder/sylvite",
+            "anchor": "sylvite",
+            "title": "Sylvite",
+            "link_recipes": false,
+            "text": "Sylvite is made from its ore. $(br)$(li)$(d)Potassium: 50$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:pure_nitrogen,tfc:pure_potassium,tfc:pure_phosphorus",
+            "anchor": "pure_fertilizers",
+            "title": "Pure Fertilizers",
+            "link_recipes": false,
+            "text": "Different methods are available for creating or extracting pure fertilizers. These fertilizers can serve as a condensed method of raising farmland nutrients. $(br)$(li)$(d)Potassium: 100$()$(br)Or$(li)$(b)Nitrogen: 100$()$(br)Or$(li)$(6)Phosphorous: 100$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "gtceu:fertilizer",
+            "anchor": "fertilizer",
+            "title": "Fertilizer",
+            "link_recipes": false,
+            "text": "Fertilizer contains an even spread of nutrient types. Crafting it from compost will give an overall higher yield in nutrients. $(br)$(li)$(d)Potassium: 15$()$(li)$(b)Nitrogen: 15$()$(li)$(6)Phosphorous: 15$()"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfg:agriculture/growing_crops",
+                "tfg:agriculture/greenhouse",
+                "tfg:agriculture/composting",
+                "tfg:the_world/wild_crops"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 6,
+    "extra_recipe_mappings": {
+        "tfc:compost": 2,
+        "minecraft:bone_meal": 3,
+        "tfc:groundcover/guano": 5,
+        "firmalife:jar/guano": 5,
+        "tfc:powder/wood_ash": 6,
+        "tfc:powder/sylvite": 7,
+        "tfc:pure_nitrogen": 8,
+        "tfc:pure_potassium": 8,
+        "tfc:pure_phosphorus": 8,
+        "gtceu:fertilizer": 9
+    }
+}

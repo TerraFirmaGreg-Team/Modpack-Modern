@@ -10,10 +10,17 @@ function registerMacawsForTFCRecipes(event) {
 	event.replaceInput({ mod: 'mcw_tfc_aio' }, 'minecraft:string', '#forge:string')
 	event.replaceInput({ mod: 'mcw_tfc_aio' }, 'minecraft:glass', '#forge:glass')
 	event.replaceInput({ mod: 'mcw_tfc_aio' }, 'minecraft:glass_pane', '#forge:glass_panes')
-	event.replaceInput({ mod: 'mcw_tfc_aio' }, 'tfc:metal/rod/wrought_iron', '#forge:rods/wrought_iron')
-	event.replaceInput({ mod: 'mcw_tfc_aio' }, 'tfc:metal/ingot/wrought_iron', '#forge:ingots/wrought_iron')
 	event.remove({ input: '@mcw_tfc_aio', type: 'gtceu:steam_boiler' })
 	event.remove({ input: '@mcw_tfc_aio', type: 'gtceu:large_boiler' })
+
+	event.replaceInput({ id: 'mcw_tfc_aio:roofs/roofing_hammer' }, 'tfc:metal/ingot/wrought_iron', '#forge:ingots/wrought_iron')
+	event.replaceInput({ id: 'mcw_tfc_aio:bridges/iron_bridges/iron_bridge_pier' }, 'tfc:metal/ingot/wrought_iron', '#forge:ingots/wrought_iron')
+	event.replaceInput({ id: 'mcw_tfc_aio:bridges/iron_bridges/iron_bridge_middle' }, 'tfc:metal/ingot/wrought_iron', '#forge:ingots/wrought_iron')
+	event.replaceInput({ id: 'mcw_tfc_aio:bridges/iron_bridges/iron_bridge_middle' }, 'tfc:metal/rod/wrought_iron', '#forge:rods/wrought_iron')
+
+	event.stonecutting('mcw_tfc_aio:bridges/iron_bridges/iron_bridge_pier', '#forge:ingots/wrought_iron')
+	event.stonecutting('mcw_tfc_aio:bridges/iron_bridges/iron_bridge', '#forge:ingots/wrought_iron')
+	event.stonecutting('mcw_tfc_aio:bridges/iron_bridges/iron_bridge_stair', '#forge:ingots/wrought_iron')
 
 	global.TFC_WOOD_TYPES.forEach(wood => {
 		event.shaped(`8x mcw_tfc_aio:fences/${wood}_fences/${wood}_wired_fence`, [

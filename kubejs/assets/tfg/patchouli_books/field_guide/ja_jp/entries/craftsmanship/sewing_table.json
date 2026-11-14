@@ -1,5 +1,5 @@
 {
-    "name": "Sewing Table",
+    "name": "裁縫テーブル",
     "category": "tfg:craftsmanship",
     "icon": "tfc:wood/sewing_table/oak",
     "pages": [
@@ -50,7 +50,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "関連項目",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/anvils",

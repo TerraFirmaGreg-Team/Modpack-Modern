@@ -14,7 +14,7 @@
 	health = 3
 	#Value the damage dealt by the worm is scaled by. Default 1.0.
 	#Range: 0.01 ~ 100.0
-	damage_multiplier = 1.0
+	damage_multiplier = 2.0
 	#Multiplier for damage dealt by the head of the worm compared to a body segment. Default 2.0 (head deals double damage).
 	#Range: 0.01 ~ 100.0
 	head_multiplier = 2.0
@@ -47,7 +47,7 @@
 	#List of vehicles that will NOT trigger sandworms. Format: ["modid:*", "modid:entity_name", "*horse", "*car*"]. Default: empty.
 	vehicle_blacklist = ["wan_ancient_beasts:soarer", "wan_ancient_beasts:surfer", "tfg:surfer"]
 	#List of vehicles that WILL trigger sandworms. Format: ["modid:*", "modid:entity_name", "*horse", "*car*"]. Default: empty.
-	vehicle_whitelist = ["ad_astra:tier_1_rover"]
+	vehicle_whitelist = ["ad_astra:tier_1_rover", "mts:*"]
 	#Enable warning messages when sandworm is approaching (messages to nearby players)
 	enable_warning_messages = false
 

@@ -157,10 +157,14 @@ function registerTFGLoots(event) {
 
 	GLASSES.forEach(glass => {
 		event.addBlockLootModifier(glass)
-			.matchMainHand(Item.of('tfc:gem_saw'))
+			.or((or) => {
+            	or.matchMainHand("#forge:tools/buzzsaws").matchMainHand(Item.of('tfc:gem_saw'))
+        	})
 			.addLoot(glass)
 		event.addBlockLootModifier(`${glass}_pane`)
-			.matchMainHand(Item.of('tfc:gem_saw'))
+			.or((or) => {
+            	or.matchMainHand("#forge:tools/buzzsaws").matchMainHand(Item.of('tfc:gem_saw'))
+        	})
 			.addLoot(`${glass}_pane`)
 
 	})
@@ -178,7 +182,7 @@ function registerTFGLoots(event) {
 		event.addBlockLootModifier(loco_glass)
 			.removeLoot(Ingredient.all)
 			.or((or) => {
-            	or.matchMainHand("#forge:tools/wrench").matchMainHand(Item.of('tfc:gem_saw'))
+            	or.matchMainHand("#forge:tools/wrench").matchMainHand(Item.of('tfc:gem_saw')).matchMainHand("#forge:tools/buzzsaws")
         	})
 			.addLoot(loco_glass)
 
@@ -188,7 +192,7 @@ function registerTFGLoots(event) {
 				event.addBlockLootModifier(loco_glass_dyed)
 					.removeLoot(Ingredient.all)
 					.or((or) => {
-						or.matchMainHand("#forge:tools/wrench").matchMainHand(Item.of('tfc:gem_saw'))
+						or.matchMainHand("#forge:tools/wrench").matchMainHand(Item.of('tfc:gem_saw')).matchMainHand("#forge:tools/buzzsaws")
 					})
 					.addLoot(loco_glass_dyed)
 			})

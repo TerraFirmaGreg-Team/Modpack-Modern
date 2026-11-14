@@ -173,7 +173,7 @@
         {
             "type": "patchouli:text",
             "anchor": "cooking",
-            "text": "另一种轻松保存某些食物的方法是烹饪。$(thing)肉类$()煮熟后都比生的时候腐坏得慢。$(br2)某些加热温度极高的设备，比如$(l:craftsmanship/charcoal_forge)木炭炉$()或$(l:craftsmanship/crucible)坩埚$()，$(bold)不适合$()用来烹饪食物，反而会让食物更快变质！$(br)它们会给予$(c)$(bold)一堆黑灰，恶心死了！$()特性，修正值为 2.5。",
+            "text": "另一种轻松保存某些食物的方法是烹饪。$(thing)肉类$()煮熟后都比生的时候腐坏得慢。$(br2)某些加热温度极高的设备，比如$(l:craftsmanship/charcoal_forge)木炭炉$()或$(l:craftsmanship/crucible)坩埚$()，$(bold)不适合$()用来烹饪食物，反而会让食物更快变质！$(br)它们会给予$(c)$(bold)一堆黑灰，恶心死了！$()特性，修正值为 2.5。$(br2)记得在烹饪$(thing)肉类$()前先进行 $(l:cooking/decay#smoking)烟熏$()！",
             "title": "烹饪"
         },
         {

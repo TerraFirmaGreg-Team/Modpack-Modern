@@ -11,13 +11,9 @@
 	"block.greate.aluminium_millstone": "Жёрнов (Алюминий)",
 	"block.greate.aluminium_shaft": "Вал (Алюминий)",
 	"block.greate.andesite_alloy_cogwheel": "Шестерня",
-	"block.greate.andesite_alloy_crushing_wheel": "Дробильное колесо",
 	"block.greate.andesite_alloy_crushing_wheel_controller": "Контроллер дробильного колеса",
-	"block.greate.andesite_alloy_encased_fan": "Вентилятор в корпусе",
 	"block.greate.andesite_alloy_gearbox": "Коробка передач",
-	"block.greate.andesite_alloy_mechanical_mixer": "Механический смешиватель",
 	"block.greate.andesite_alloy_mechanical_press": "Механический пресс",
-	"block.greate.andesite_alloy_mechanical_pump": "Механическая помпа",
 	"block.greate.andesite_alloy_mechanical_saw": "Механическая пила",
 	"block.greate.andesite_alloy_millstone": "Жёрнов",
 	"block.greate.andesite_alloy_shaft": "Вал",
@@ -318,5 +314,10 @@
 	"material.greate.rose_quartz": "Розовый кварц",
 	"material.greate.shadow_steel": "Теневая сталь",
 	"tagprefix.alloy": "%s (Сплав)",
-	"tagprefix.whisk": "Венчик (%s)"
+	"tagprefix.whisk": "Венчик (%s)",
+	"greate.tooltip.network_statistics": "Статистика сети: ",
+	"greate.tooltip.saw.active_recipe_type": "Доступные рецепты: %s",
+	"item.greate.polybenzimidazole_belt_connector": "Ремень (Полибензимидазол (ПБИ))",
+	"item.greate.polyethylene_belt_connector": "Ремень (Стирол-бутадиеновая резина)",
+	"item.greate.polytetrafluoroethylene_belt_connector": "Ремень (Политетрафторэтилен)"
 }

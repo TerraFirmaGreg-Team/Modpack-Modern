@@ -1,23 +1,23 @@
 {
-    "name": "Salad Making",
+    "name": "Приготовление Салата",
     "category": "tfg:cooking",
     "icon": "tfc:textures/item/food/protein_salad.png",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "salad",
-            "text": "$(thing)Salads$() are a meal prepared in a $(thing)Bowl$() from up to five $(thing)$(n)$(t:#tfc:usable_in_salad)Ingredients$().$(br2)Salads are one of the simplest meals to make, and just require a $(l:cooking/bowls)Bowl$(). First, hold the $(thing)Bowl$() and press $(item)$(k:key.use)$() while holding $(item)$(k:key.sneak)$(). This will open the salad screen.$(br)Place ingredients in the top slots and then remove the salad from the bottom slot when you are done."
+            "text": "$(thing)Салаты$() — это блюда, которые готовятся в $(thing)миске$() из пяти $(thing)$(n)$(t:#tfc:usable_in_salad)ингредиентов$().$(br2)Салаты — одни из самых простых в приготовлении блюд, для них нужна только $(l:cooking/bowls)миска$(). Сначала возьмите $(thing)миску$() и нажмите $(item)$(k:key.use)$(), удерживая $(item)$(k:key.sneak)$(). Откроется экран для приготовления салата.$(br)Положите ингредиенты в верхние ячейки, а когда закончите, достаньте салат из нижней ячейки."
         },
         {
             "type": "patchouli:spotlight",
             "item": "tag:tfc:salads",
             "title": "Салаты",
             "link_recipes": false,
-            "text": "Salads are dynamic meal items. The ingrediants used will determine what type of salad is made and the $(l:cooking/food_and_water#nutrients)Nutrients$() it contains.$(br2)$(t:§70.75§r§l∑§r§7Ingredients§r)To calculate the nutritional value; take the sum of every ingredient's nutrition and multiply by 0.75"
+            "text": "Салаты — это динамичные блюда.  От используемых ингредиентов зависит, какой именно салат получится и сколько в нем будет $(l:cooking/food_and_water#nutrients)питательных веществ$().$(br2)$(t:§70.75§r§l∑§r§7Ingredients§r)Чтобы рассчитать пищевую ценность, сложите количество питательных веществ в каждом ингредиенте и умножьте на 0,75"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Читать далее",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/food_and_water",

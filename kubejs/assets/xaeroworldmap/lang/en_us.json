@@ -327,5 +327,9 @@
   "gui.xaero_pac_requested_large_claim": "Began claiming a large area... Use right-click option %1$s to cancel.",
   "gui.xaero_pac_requested_large_unclaim": "Began unclaiming a large area... Use right-click option %1$s to cancel.",
   "gui.xaero_pac_requested_large_forceload": "Began marking a large area for forceloading... Use right-click option %1$s to cancel.",
-  "gui.xaero_pac_requested_large_unforceload": "Began unmarking a large area for forceloading... Use right-click option %1$s to cancel."
+  "gui.xaero_pac_requested_large_unforceload": "Began unmarking a large area for forceloading... Use right-click option %1$s to cancel.",
+  "gui.xaero_pac_add_claiming_anchor": "Add Claiming Anchor",
+  "gui.xaero_pac_remove_claiming_anchor": "Remove Claiming Anchor",
+  "gui.xaero_pac_remove_claiming_anchor_confirm_line1": "Remove the following claiming anchor and all claims only in its range?",
+  "gui.xaero_pac_remove_claiming_anchor_confirm_line2": "This action cannot be undone! Anchor chunk: %1$s"
 }

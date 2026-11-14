@@ -7,7 +7,7 @@
             "type": "patchouli:text",
             "anchor": "panning",
             "title": "淘金",
-            "text": "$(thing)淘金$()是在河流和其他水道中搜尋，以取得某些原生礦石之礦粉的方法。$(br2)淘金要利用$(t:#tfc:ore_deposits)$(6)礦床$()，它們分布在湖泊和河流底部的礫石區域中。$(br2)要開始淘金，你需要一個$(item)空淘盤$()。"
+            "text": "$(thing)淘金$()是在河流等水道中搜尋，以取得某些原生礦石礦粉的方法。$(br2)淘金需要$(t:#tfc:ore_deposits)$(6)礦床$()，分布在湖泊和河流底部的礫石區。$(br2)要開始淘金，需要一個$(item)空淘盤$()。"
         },
         {
             "type": "tfg:knapping_recipe",
@@ -17,7 +17,7 @@
         {
             "type": "tfg:heat_recipe",
             "recipe": "tfc:heating/ceramic_pan",
-            "text": "淘盤$(thing)塑形$()完成後，需要經過$(l:game_mechanics/heating)燒製$()才能做成$(thing)陶瓷淘盤$()。$(br2)接下來你需要找到某種$(t:#tfc:ore_deposits)$(6)礦床$()。礦床有幾種不同的礦石：原生銅、原生銀、原生金和錫石。"
+            "text": "淘盤$(thing)塑形$()後，需要$(l:game_mechanics/heating)燒製$()成$(thing)陶瓷淘盤$()。$(br2)接著要找到$(t:#tfc:ore_deposits)$(6)礦床$()，礦床的礦石有幾種：原生銅、原生銀、原生金和錫石。"
         },
         {
             "type": "patchouli:multiblock",
@@ -40,7 +40,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "現在你可以開始淘金了！$(br2)$(bold)1.$() 手持淘盤，對礦床方塊按下$(item)$(k:key.use)$()。$(br2)$(bold)2.$() 站在水中並手持淘盤，按住$(item)$(k:key.use)$()就會開始淘金。$(br2)$(bold)3.$() 過一會兒，如果運氣好，你的物品欄中可能會出現一些礦粉作為獎勵。"
+            "text": "現在可以開始淘金了！$(br2)$(bold)1.$() 手持淘盤對礦床方塊按 $(item)$(k:key.use)$()。$(br2)$(bold)2.$() 站在水中手持淘盤，按住 $(item)$(k:key.use)$() 即開始淘金。$(br2)$(bold)3.$() 過一會兒，運氣好的話，物品欄中會出現一些礦粉。"
         },
         {
             "type": "patchouli:image",
@@ -54,30 +54,30 @@
             "anchor": "sluice",
             "title": "溜槽",
             "item": "tag:tfc:sluices",
-            "text": "$(thing)溜槽$()是一種自動處理$(thing)礦床$()的裝置，產出的結果與$(l:craftsmanship/panning#panning)淘金$()相同，機率還稍微高一些。"
+            "text": "$(thing)溜槽$()能自動處理$(thing)礦床$()，產物與$(l:craftsmanship/panning#panning)淘金$()相同，機率還稍高一些。"
         },
         {
             "type": "patchouli:text",
-            "text": "溜槽被放置後會佔據兩個方塊。為了讓它正常工作，水必須流過溜槽的頂部並從底部流出。如果水看起來流過了整個溜槽，就表示它在正常工作。流進溜槽的水必須是水流的最後一格水，且在溜槽的出口處必須有一個空方塊讓水能夠流進去。"
+            "text": "溜槽放置後佔兩格。水必須從溜槽頂部流入、底部流出才能運作；看到水流過溜槽，就表示正在運作。流進溜槽的水必須是水流的最後一格，且溜槽底部下方必須有一格空方塊讓水流入。"
         },
         {
             "type": "patchouli:image",
             "images": [
                 "tfc:textures/gui/book/tutorial/sluice_cross.png"
             ],
-            "text": "一個正確安裝的溜槽。",
+            "text": "水流配置正確的溜槽。",
             "border": true
         },
         {
             "type": "patchouli:text",
-            "text": "要使用溜槽，只需要把礦石沉積物方塊以物品形式丟到上游水流中，讓水流把物品衝進溜槽，沉積物會出現在溜槽中。一段時間之後，溜槽的產物就有可能從下游吐出。"
+            "text": "使用時，把礦床物品丟進水流，讓水把它們沖進溜槽。物品會出現在溜槽上，一段時間後，處理過的產物有機率從底部吐出。"
         },
         {
             "type": "patchouli:image",
             "images": [
                 "tfc:textures/gui/book/tutorial/sluice_in_use.png"
             ],
-            "text": "一個正常工作的、裡面有沉積物的溜槽。",
+            "text": "裡面有礦床物品、正在運作的溜槽。",
             "border": true
         },
         {

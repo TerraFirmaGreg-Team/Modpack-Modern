@@ -1,6 +1,7 @@
 {
     "tfg.tooltip.food_trait.refrigerating": "§bRefrigerating",
-    "tfg.tooltip.foodtrait.freeze_dried": "Cryodesiccated",
+    "tfg.tooltip.food_trait.freeze_dried": "Cryodesiccated",
+    "tfg.tooltip.food_trait.cellared": "Cellared",
     "tfg.tooltip.extraterrestrial_farming": "§4Temperature:§r An oxygenated environment provides 15°C",
 
     "tfg.tooltip.moon_rabbit_variant.pink": "Pink Fur",
@@ -78,6 +79,7 @@
 
     "tfg.tooltip.machine.one_energy_hatch": "Accepts exactly §6One§r Energy Hatch.",
     "tfg.tooltip.machine.two_energy_hatches": "Accepts up to §6Two§r Energy Hatches.",
+    "tfg.tooltip.machine.no_oc": "This machine §6does not Overclock§r. Higher tier Energy Hatches only allows it to run higher tier recipes.",
     "tfg.tooltip.machine.subtick": "This machine supports §2Subticking§r!",
     "tfg.tooltip.machine.coil_energy_discount": "Every coil after §6Cupronickel§r reduces energy usage by 10%.",
     "tfg.tooltip.machine.coil_speed_discount": "§6Cupronickel§r coils process 25% slower. Every coil after §3Kanthal§r increases processing speed by 50%.",
@@ -132,7 +134,7 @@
     "tfg.tooltip.machine.pastoral_engine_2": "§7Automatically milks and shears any animals within the area indicated by the metal casings.§r",
     "tfg.tooltip.machine.oxygen_distributor_1": "§7Oxygenates a large sealed area. The bigger the area, the more power and gas it needs.",
     "tfg.tooltip.machine.oxygen_distributor_2": "§7Use an airlock to avoid air vortexes. Does not affect temperature.",
-    "tfg.tooltip.machine.heat_pump_1": "§7Sets the temperature of a large mostly-sealed area to 15°C.",
+    "tfg.tooltip.machine.heat_pump_1": "§7Sets the temperature of a large mostly-sealed area to a specifc value between -50°C and 70°C.",
     "tfg.tooltip.machine.heat_pump_2": "§7The bigger the area, the more power it needs. Is lenient on what counts as 'sealed'.",
     "tfg.tooltip.machine.heat_pump_3": "§7The side with the controller should face indoors, while the Exhaust should face outdoors and be filled with a Turbine Rotor.",
     "tfg.tooltip.machine.rotor_vent": "Requires a Turbine Rotor but doesn't wear down its Durability. Efficiency lowers the input mB/t and Power reduces the EU/t cost.",
@@ -355,6 +357,35 @@
     "tfg.tooltip.fuel_burning.days": "%s Days / %s mB (Full Tank)",
 
     "tfg.tooltip.planter.fertilizer_info": "Fertilizers are optional. Crops will grow faster and produce other fertilizer types when consuming their preferred fertilizer.",
-    "tfg.tooltip.greenhouse.minimum_tier": "Min. Tier: "
+    "tfg.tooltip.greenhouse.minimum_tier": "Min. Tier: ",
+
+    "tfg.item.electric_flask.tooltip_1": "An electrical flask that will automatically drink when needed.",
+    "tfg.item.electric_flask.tooltip_2": "§9Consumes: §f1000 EU per drink",
+
+    "tfg.tooltip.campfire": "§7Cosmetic only, usable as an infinite light source or particle emitter.",
+
+    "tfg.tooltip.calendar_weekday_month_day_year": "%s-%s %d, %04d",
+    "tfg.tooltip.calendar_standard_date": "%s/%s/%04d",
+    "tfg.tooltip.calendar_iso_date": "%04d-%s-%s",
+    "tfg.tooltip.calendar_month_and_day": "%d-%s",
+    "tfg.tooltip.climate_precipitation.chance": "Precipitation: %s%% ",
+    "tfg.tooltip.climate_precipitation.mm": "%smm",
+    "tfg.tooltip.climate_wind.speed_ms": "%s m/s",
+    "tfg.tooltip.climate_wind.speed_bs": "%s block/s",
+    "tfg.tooltip.climate_wind.speed_knots": "%s Knots",
+    "tfg.tooltip.climate_wind.angl_n": "%s°N",
+    "tfg.tooltip.climate_wind.angl_ne": "%s°NE",
+    "tfg.tooltip.climate_wind.angl_nw": "%s°NW",
+    "tfg.tooltip.climate_wind.angl_e": "%s°E",
+    "tfg.tooltip.climate_wind.angl_s": "%s°S",
+    "tfg.tooltip.climate_wind.angl_se": "%s°SE",
+    "tfg.tooltip.climate_wind.angl_sw": "%s°SW",
+    "tfg.tooltip.climate_wind.angl_w": "%s°W",
+    "tfg.tooltip.environment.pressure_atm": "%s atm",
+    "tfg.tooltip.environment.pressure_pascal": "%s kPa",
+    "tfg.tooltip.environment.pressure_bar": "%s bar",
+    "tfg.tooltip.environment.gravity_mss": "%s m/s²",
+    "tfg.tooltip.environment.gravity_bss": "%s block/s²",
+    "tfg.tooltip.me_network.channels": "%s Exposed Channels"
 
 }

@@ -26,6 +26,7 @@
   "gui.xaero_box_controls_pac": "§2%s§r, aby otworzyć menu Parties and Claims. \n \n ",
   "gui.xaero_box_export": "Eksportuj mapę jako plik PNG.",
   "gui.xaero_box_export_option_full": "Eksportuj całą mapę, nawet jeśli dokonałeś wyboru mapy.",
+  "gui.xaero_box_export_option_highlights": "Eksportuj mapę ze wszystkimi aktualnie włączonymi zaznaczeniami (np. zajętymi chunkami) nałożonymi na mapę. Przy eksporcie całej mapy zaznaczenia bardzo daleko od odkrytego terenu nie zostaną uwzględnione.",
   "gui.xaero_box_export_option_multiple_images": "Eksportuj mapę w postaci wielu obrazów w oryginalnej skali, niezależnie od jej rozmiaru. Ten sposób nie podlega takim samym ograniczeniom pamięci jak eksport do pojedynczego obrazu.",
   "gui.xaero_box_export_option_nighttime": "Eksportuj mapę z nocnym oświetleniem. Nie ma to wpływu na mapy w trybie jaskiń.",
   "gui.xaero_box_full_reload": "Odśwież wszystkie rejony mapy bez konieczności ich ręcznego wyświetlenia. Proces odświeżenia będzie odbywać się w tle, i wyłączy się po jego zakończeniu. Warto zaznaczyć, że przejście do innego wymiaru spowoduję wstrzymanie procesu do czasu powrotu, a zmiana mapy całkowicie go anuluje.",
@@ -306,5 +307,9 @@
   "gui.xaero_pac_requested_large_claim": "Rozpoczęto zajmowanie dużego obszaru... Użyj opcji %1$s dostępnej pod PPM, aby anulować.",
   "gui.xaero_pac_requested_large_unclaim": "Rozpoczęto zwalnianie dużego obszaru... Użyj opcji %1$s dostępnej pod PPM, aby anulować.",
   "gui.xaero_pac_requested_large_forceload": "Rozpoczęto zaznaczanie dużego obszaru do ciągłego ładowania... Użyj opcji %1$s dostępnej pod PPM, aby anulować.",
-  "gui.xaero_pac_requested_large_unforceload": "Rozpoczęto odznaczanie dużego obszaru do ciągłego ładowania... Użyj opcji %1$s dostępnej pod PPM, aby anulować."
+  "gui.xaero_pac_requested_large_unforceload": "Rozpoczęto odznaczanie dużego obszaru do ciągłego ładowania... Użyj opcji %1$s dostępnej pod PPM, aby anulować.",
+  "gui.xaero_pac_add_claiming_anchor": "Dodaj kotwicę zajmowania",
+  "gui.xaero_pac_remove_claiming_anchor": "Usuń kotwicę zajmowania",
+  "gui.xaero_pac_remove_claiming_anchor_confirm_line1": "Czy usunąć poniższą kotwicę zajmowania i wszystkie zajęte tereny leżące wyłącznie w jej zasięgu?",
+  "gui.xaero_pac_remove_claiming_anchor_confirm_line2": "Tej czynności nie można cofnąć! Chunk kotwicy: %1$s"
 }

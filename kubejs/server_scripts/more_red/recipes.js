@@ -96,7 +96,7 @@ const registerMoreRedRecipes = (event) => {
 		'AAA'
 	], {
 		A: 'morered:red_alloy_wire',
-		B: '#forge:rods/wrought_iron'
+		B: 'gtcables:spool'
 	}).id('tfg:crafting/redwire_spool')
 
 	// Bundled Cable Spool
@@ -106,7 +106,7 @@ const registerMoreRedRecipes = (event) => {
 		'AAA'
 	], {
 		A: 'morered:bundled_network_cable',
-		B: '#forge:rods/wrought_iron'
+		B: 'gtcables:spool'
 	}).id('tfg:crafting/bundled_cable_spool')
 
 	// Devices

@@ -54,7 +54,7 @@ function registerTFGPrimitiveItemTags(event) {
 	event.add('tfg:small_wood_dusts', 'gtceu:small_wood_dust')
 
 	// Waxe
-    event.add('forge:wax', 'gtceu:wax_dust');
+    event.add('forge:wax', 'gtceu:wax_ingot');
 	event.add('forge:wax', 'tfg:paraffin_wax')
 	event.add('forge:wax', 'firmalife:beeswax')
 	event.add('forge:wax', 'tfg:conifer_rosin')

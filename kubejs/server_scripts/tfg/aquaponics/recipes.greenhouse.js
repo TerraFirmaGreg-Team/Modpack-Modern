@@ -595,7 +595,7 @@ const registerTFGGreenhouseRecipes = (event) => {
 
 	// Moon Plants
 	generateGreenHouseRecipe(event, 'ad_astra:moon', '16x tfg:lunar_chorus_flower', [
-		'64x minecraft:chorus_fruit', '8x minecraft:chorus_fruit', '4x tfg:lunar_chorus_flower', '4x tfg:lunar_chorus_flower'
+		'64x minecraft:chorus_fruit', '8x minecraft:chorus_fruit', '16x tfg:lunar_chorus_flower', '16x tfg:lunar_chorus_flower'
 	], 1, 1);
 	generateGreenHouseRecipe(event, 'ad_astra:moon', '8x minecraft:twisting_vines', [
 		'16x minecraft:twisting_vines', '8x minecraft:pearlescent_froglight', '8x minecraft:verdant_froglight', '8x minecraft:ochre_froglight'

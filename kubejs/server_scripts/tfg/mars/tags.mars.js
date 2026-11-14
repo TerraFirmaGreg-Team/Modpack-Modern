@@ -60,6 +60,7 @@ function registerTFGMarsBlockTags(event) {
 	event.add('create:non_movable', 'tfg:spice')
 	event.add('buildinggadgets2:deny', 'tfg:spice')
 	event.add('ae2:blacklisted/spatial', 'tfg:spice')
+	event.add('matter_manipulator:immovable', 'tfg:spice')
 
 	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/raw/dacite')
 	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/hardened/dacite')

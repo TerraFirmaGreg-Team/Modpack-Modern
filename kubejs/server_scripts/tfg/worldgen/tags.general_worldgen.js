@@ -141,4 +141,9 @@ function registerTFGGeneralWorldgenBlockTags(event) {
 	event.add('minecraft:replaceable', 'tfg:pile/volcanic_ash')
 
 	event.add('minecraft:replaceable', '#tfc:loose_rocks')
+	
+	event.add('create:non_movable', 'lootr:lootr_chest')
+	event.add('buildinggadgets2:deny', 'lootr:lootr_chest')
+	event.add('ae2:blacklisted/spatial', 'lootr:lootr_chest')
+	event.add('matter_manipulator:immovable', 'lootr:lootr_chest')
 }

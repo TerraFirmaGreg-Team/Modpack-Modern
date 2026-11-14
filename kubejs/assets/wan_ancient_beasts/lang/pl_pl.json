@@ -165,7 +165,7 @@
 	"item.wan_ancient_beasts.soarer_spawn_egg": "Jajo przyzywające lotnika",
 	"item.wan_ancient_beasts.surfer_armor": "Zbroja surfera",
 	"item.wan_ancient_beasts.surfer_spawn_egg": "Jajo przyzywające surfera",
-	"item.wan_ancient_beasts.tamer_spawn_egg": "Jajo przyzywające poskramiacza",
+	"item.wan_ancient_beasts.tamer_spawn_egg": "Jajo przyzywające poskramiacza bestii",
 	"item.wan_ancient_beasts.toxlacanth": "Surowy tokslakant",
 	"item.wan_ancient_beasts.toxlacanth_bucket": "Wiadro z tokslakantem",
 	"item.wan_ancient_beasts.toxlacanth_spawn_egg": "Jajo przyzywające tokslakanta",
@@ -279,5 +279,8 @@
 	"trim_pattern.wan_ancient_beasts.ancient_upgrade_smithing_template": "Szablon kowalski starożytnego ulepszenia",
 	"trim_pattern.wan_ancient_beasts.sniff": "Niuch",
 	"trim_pattern.wan_ancient_beasts.spike": "Kolec",
-	"upgrade.wan_ancient_beasts.ancient_upgrade": "Starożytne ulepszenie"
+	"upgrade.wan_ancient_beasts.ancient_upgrade": "Starożytne ulepszenie",
+	"enchantment.wan_ancient_beasts.egg_thief.desc": "Większa szansa na znalezienie jaj podczas oczyszczania",
+	"enchantment.wan_ancient_beasts.preservation.desc": "Podejrzany blok wymaga mniejszej liczby ruchów, aby odsłonić łup",
+	"enchantment.wan_ancient_beasts.treasure_hunter.desc": "Lepszy łup podczas oczyszczania podejrzanych bloków"
 }

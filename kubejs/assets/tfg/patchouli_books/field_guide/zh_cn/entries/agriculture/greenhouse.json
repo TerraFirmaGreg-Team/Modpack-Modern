@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:agriculture/greenhouse#types)温室类型$()$(li)$(bold)$(l:agriculture/greenhouse#planters)种植盆$()$(li2)$(l:agriculture/greenhouse#large_planter)大型种植盆$()$(li2)$(l:agriculture/greenhouse#quad_planter)四槽种植盆$()$(li2)$(l:agriculture/greenhouse#bonsai_planter)盆栽种植盆$()$(li2)$(l:agriculture/greenhouse#hanging_planter)悬挂种植盆$()$(li2)$(l:agriculture/greenhouse#trellis_planter)格子种植架$()$(li2)$(l:agriculture/greenhouse#hydroponic_planter)水培种植盆$()$(li)$(bold)$(l:agriculture/greenhouse#irrigation)灌溉$()$(li)$(bold)$(l:agriculture/greenhouse#auto_harvesting)自动收获$()$(li)$(bold)$(l:agriculture/greenhouse#electric)电力温室$()$(li)$(bold)$(l:agriculture/greenhouse#hydroponics)水培设施$()"
+            "text": "$(li)$(bold)$(l:agriculture/greenhouse#types)温室类型$()$(li)$(bold)$(l:agriculture/greenhouse#planters)种植盆$()$(li2)$(l:agriculture/greenhouse#large_planter)大型种植盆$()$(li2)$(l:agriculture/greenhouse#quad_planter)四槽种植盆$()$(li2)$(l:agriculture/greenhouse#bonsai_planter)盆栽种植盆$()$(li2)$(l:agriculture/greenhouse#hanging_planter)悬挂种植盆$()$(li2)$(l:agriculture/greenhouse#trellis_planter)格子种植架$()$(li2)$(l:agriculture/greenhouse#hydroponic_planter)水培种植盆$()$(li)$(bold)$(l:agriculture/greenhouse#irrigation)灌溉$()$(li)$(bold)$(l:agriculture/greenhouse#auto_planting)自动种植$()$(li)$(bold)$(l:agriculture/greenhouse#auto_harvesting)自动收获$()$(li)$(bold)$(l:agriculture/greenhouse#electric)电力温室$()$(li)$(bold)$(l:agriculture/greenhouse#hydroponics)水培设施$()"
         },
         {
             "type": "patchouli:text",
@@ -45,7 +45,7 @@
             "type": "patchouli:text",
             "anchor": "planters",
             "title": "种植盆",
-            "text": "$(thing)种植盆$()用于在温室里种植作物。种植盆里的作物和普通作物一样会消耗 $(l:agriculture/growing_crops#intro)营养$()。种植盆应放置在有效的温室内，并用 $(item)气象站$() 激活。种植盆需要一定的自然阳光才能工作。"
+            "text": "$(thing)种植盆$()用于在温室里种植作物。种植盆里的作物和普通作物一样会消耗 $(l:agriculture/growing_crops#intro)营养$()。种植盆应放置在有效的温室内，并用 $(item)气象站$() 激活。种植盆需要一定的光照才能工作。"
         },
         {
             "type": "patchouli:spotlight",
@@ -102,6 +102,13 @@
         },
         {
             "type": "patchouli:spotlight",
+            "anchor": "auto_planting",
+            "title": "自动种植",
+            "item": "create:mechanical_arm",
+            "text": "$(li)$(thing)动力臂$()可用于在种植盆中种植作物。将种植盆设为动力臂的目标后，动力臂会自动从指定的置物台中取出种子，并根据每种种子类型将其种入相应的种植盆中。"
+        },
+        {
+            "type": "patchouli:spotlight",
             "anchor": "auto_harvesting",
             "title": "自动收获",
             "item": "firmalife:sweeper,firmalife:picker",
@@ -113,13 +120,20 @@
         },
         {
             "type": "patchouli:spotlight",
-            "anchor": "electric",
-            "item": "tfg:electric_greenhouse",
+            "anchor": "bees_and_taps",
+            "title": "Beehives and Tree Taps",
+            "item": "firmalife:beehive,afc:tree_tap",
             "text": "如果你更喜欢造格雷机器而不是机械动力装置，多方块结构 $(item)电力温室$() 可以成为你的 $(thing)原木$() 和其他植物的来源。它还有一项独特之处：能种植更多群峦传说的装饰性植物！$(br2)你可以在 $(7)LV$() 末期造一台。"
         },
         {
-            "type": "patchouli:text",
+            "type": "patchouli:spotlight",
+            "anchor": "electric",
+            "item": "tfg:electric_greenhouse",
             "text": "$(bold)注意：$()这个多方块结构的墙体可以自定义，使用任意有效的铁级温室方块。$(br2)查看 $(emi)多方块预览，即可了解所有可用的方块。$(br2)电力温室还能通过多种方式强化，包括 $(l:agriculture/fertilizers)肥料$()，以及在更后面的 $(6)HV$() 阶段加装 $(thing)鱼菜共生回路$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(item)水培设施$()是电力温室的 $(9)IV$() 升级版，可以在任何维度种植任何作物，还支持 $(item)并行控制仓$()。"
         },
         {
             "type": "patchouli:spotlight",

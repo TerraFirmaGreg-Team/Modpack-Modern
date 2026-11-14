@@ -1,0 +1,17 @@
+{
+	"block.tfg.storage_provider": "ME存储供应器",
+	"item.tfg.cable_storage_provider": "ME存储供应器",
+	"item.tfg.order_terminal": "ME命令终端",
+	"item.tfg.wireless_order_terminal": "无限命令终端",
+	"key.ae2.wireless_order_terminal": "打开无限命令终端",
+	"gui.tfg.order_terminal.confirm": "确定",
+	"gui.tfg.order_terminal.craft": "合成",
+	"gui.tfg.order_terminal.more": "...以及其他 %s 个",
+	"gui.tfg.order_terminal.no_destinations": "没有存储供应器",
+	"gui.tfg.order_terminal.send": "发送",
+	"gui.tfg.order_terminal.set": "设置",
+	"gui.tfg.order_terminal.stage": "阶段",
+	"gui.tfg.order_terminal.status.idle": "空闲",
+	"gui.tfg.order_terminal.status.offline": "离线",
+	"gui.tfg.order_terminal.status.waiting_for_cpu": "等待处理器"
+}
