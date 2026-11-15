@@ -180,8 +180,8 @@ event.recipes.gtceu.chemical_reactor('tfg:process_depleted_garnet_liquor_b_low_y
 
     event.recipes.gtceu.mixer('tfg:enriched_cr_y_residue_a_both')
             .itemInputs(Item.of('tfg:cr_y_residue_dust', 1))
-            .inputFluids('#tfg:dirty_garnet_slurry 1000')
-            .inputFluids(Fluid.of('tfg:dirty_ruby_slurry', 1000))
+            .inputFluids('#tfg:dirty_garnet_slurry 300')
+            .inputFluids(Fluid.of('tfg:dirty_ruby_slurry', 300))
             .itemOutputs(Item.of('tfg:enriched_cr_y_residue_dust', 2))
             .duration(20 * 18)
             .circuit(2)
@@ -189,8 +189,8 @@ event.recipes.gtceu.chemical_reactor('tfg:process_depleted_garnet_liquor_b_low_y
 
     event.recipes.gtceu.mixer('tfg:enriched_cr_y_residue_b_both')
             .itemInputs(Item.of('tfg:cr_y_residue_dust', 1))
-            .inputFluids('#tfg:filtered_garnet_slurry 500')
-            .inputFluids(Fluid.of('tfg:filtered_ruby_slurry', 500))
+            .inputFluids('#tfg:filtered_garnet_slurry 150')
+            .inputFluids(Fluid.of('tfg:filtered_ruby_slurry', 150))
             .itemOutputs(Item.of('tfg:enriched_cr_y_residue_dust', 2))
             .duration(20 * 9)
             .circuit(2)
@@ -198,8 +198,8 @@ event.recipes.gtceu.chemical_reactor('tfg:process_depleted_garnet_liquor_b_low_y
 
     event.recipes.gtceu.mixer('tfg:enriched_cr_y_residue_c_both')
             .itemInputs(Item.of('tfg:cr_y_residue_dust', 1))
-            .inputFluids('#tfg:clean_garnet_slurry 100')
-            .inputFluids(Fluid.of('tfg:clean_ruby_slurry', 100))
+            .inputFluids('#tfg:clean_garnet_slurry 30')
+            .inputFluids(Fluid.of('tfg:clean_ruby_slurry', 30))
             .itemOutputs(Item.of('tfg:enriched_cr_y_residue_dust', 2))
             .duration(20 * 4)
             .circuit(2)
