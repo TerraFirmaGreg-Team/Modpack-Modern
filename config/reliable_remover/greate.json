@@ -20,9 +20,17 @@
 			"greate:andesite_alloy_crushing_wheel",
 			"greate:andesite_alloy_encased_fan",
 			"greate:andesite_alloy_mechanical_pump",
+			"greate:andesite_alloy_chain_conveyor",
+
+			"greate:steel_chain_conveyor",
+
+			"greate:aluminium_chain_conveyor",
 
 			"greate:stainless_steel_mechanical_saw",
+			"greate:stainless_steel_chain_conveyor",
+
 			"greate:titanium_mechanical_saw",
+			"greate:titanium_chain_conveyor",
 
 			"greate:tungsten_steel_shaft",
 			"greate:tungsten_steel_cogwheel",
@@ -36,6 +44,7 @@
 			"greate:tungsten_steel_mechanical_saw",
 			"greate:tungsten_steel_mechanical_pump",
 			"greate:tungsten_steel_vertical_gearbox",
+			"greate:tungsten_steel_chain_conveyor",
 
 			"greate:rhodium_plated_palladium_shaft",
 			"greate:rhodium_plated_palladium_cogwheel",
@@ -49,6 +58,7 @@
 			"greate:rhodium_plated_palladium_mechanical_saw",
 			"greate:rhodium_plated_palladium_mechanical_pump",
 			"greate:rhodium_plated_palladium_vertical_gearbox",
+			"greate:rhodium_plated_palladium_chain_conveyor",
 
 			"greate:naquadah_alloy_shaft",
 			"greate:naquadah_alloy_cogwheel",
@@ -62,6 +72,7 @@
 			"greate:naquadah_alloy_mechanical_saw",
 			"greate:naquadah_alloy_mechanical_pump",
 			"greate:naquadah_alloy_vertical_gearbox",
+			"greate:naquadah_alloy_chain_conveyor",
 
 			"greate:darmstadtium_shaft",
 			"greate:darmstadtium_cogwheel",
@@ -75,6 +86,7 @@
 			"greate:darmstadtium_mechanical_saw",
 			"greate:darmstadtium_mechanical_pump",
 			"greate:darmstadtium_vertical_gearbox",
+			"greate:darmstadtium_chain_conveyor",
 
 			"greate:neutronium_shaft",
 			"greate:neutronium_cogwheel",
@@ -88,6 +100,7 @@
 			"greate:neutronium_mechanical_saw",
 			"greate:neutronium_mechanical_pump",
 			"greate:neutronium_vertical_gearbox",
+			"greate:neutronium_chain_conveyor",
 
 			"create:andesite_alloy",
 			"create:andesite_alloy_block",

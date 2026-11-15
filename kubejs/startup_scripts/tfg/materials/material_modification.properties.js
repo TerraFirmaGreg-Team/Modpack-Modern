@@ -76,5 +76,6 @@ function registerTFGPropertyMaterialModification(event) {
 	GTMaterials.Thorium.getProperties().removeProperty(PropertyKey.INGOT)
 	GTMaterials.Thorium.getProperties().removeProperty(PropertyKey.FLUID)
 	GTMaterials.Plutonium239.getProperties().removeProperty(PropertyKey.ORE)
+	// TODO: remove platinum and cooperite ores?
 	GTMaterials.Molybdenite.getProperty(PropertyKey.ORE).setDirectSmeltResult(null);
 }

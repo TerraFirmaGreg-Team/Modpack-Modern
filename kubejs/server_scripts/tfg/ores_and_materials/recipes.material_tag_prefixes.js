@@ -173,7 +173,7 @@ function processPlate(event, material) {
 			type: "createaddition:rolling",
 			input: ingotItem,
 			result: plateItem,
-			//processingTime: material.getMass() // TODO - controlled by a global config argh
+			processingTime: material.getMass() / 2
 		}).id(`tfg:rolling/${materialName}_plate`)
 	}
 }
@@ -227,8 +227,7 @@ function processFoil(event, material) {
 		type: "createaddition:rolling",
 		input: plateItem,
 		result: foilItem,
-		// TODO - processing time is controlled by a global config instead of setting it per-recipe...
-		//processingTime: material.getMass()
+		processingTime: material.getMass() / 2
 	}).id(`tfg:rolling/${material.getName()}_foil`)
 }
 

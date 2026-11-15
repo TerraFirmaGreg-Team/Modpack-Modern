@@ -78,14 +78,11 @@ function registerTFGWoodenRecipes(event) {
 
 		if (plank && lumber && name) {
 			// Lumber from plank
-			event.shapeless(`4x ${lumber}`,
-				[plank, '#forge:tools/saws']
-			)
+			event.shapeless(`4x ${lumber}`, [plank, '#forge:tools/saws'])
 				.id(`tfg:shapeless/${name}_lumber_from_plank`)
 
 			event.recipes.gtceu.packer(`tfg:${name}_lumber_from_plank`)
-				.itemInputs(`${plank}`)
-				.circuit(1)
+				.itemInputs(plank)
 				.itemOutputs(`4x ${lumber}`)
 				.duration(50)
 				.EUt(GTValues.VA[GTValues.ULV])	
@@ -96,8 +93,13 @@ function registerTFGWoodenRecipes(event) {
 				'AA'
 			], {
 				A: lumber
-			})
-				.id(`tfg:shaped/${name}_plank_from_lumber`)
+			}).id(`tfg:shaped/${name}_plank_from_lumber`)
+
+			event.recipes.gtceu.packer(`tfg:${name}_plank_from_lumber`)
+				.itemInputs(`4x ${lumber}`)
+				.itemOutputs(plank)
+				.duration(50)
+				.EUt(GTValues.VA[GTValues.ULV])	
 		};
 
 		// Lumber from slab

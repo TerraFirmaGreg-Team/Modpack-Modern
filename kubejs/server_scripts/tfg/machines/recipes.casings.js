@@ -114,7 +114,7 @@ function registerTFGCasingRecipes(event) {
 			'24x gtceu:glass_lens',
 			ChemicalHelper.get(TagPrefix.frameGt, GTMaterials.BlackSteel, 1)
 		)
-		.inputFluids(Fluid.of('gtceu:silver', 1296))
+		.inputFluids(Fluid.of('gtceu:silver', 144 * 4))
 		.itemOutputs('1x tfg:reflector')
 		.circuit(6)
 		.duration(20 * (60))
@@ -125,7 +125,7 @@ function registerTFGCasingRecipes(event) {
 			ChemicalHelper.get(TagPrefix.plate, GTMaterials.CertusQuartz, 12),
 			ChemicalHelper.get(TagPrefix.frameGt, GTMaterials.BlackSteel, 1)
 		)
-		.inputFluids(Fluid.of('gtceu:silver', 488))
+		.inputFluids(Fluid.of('gtceu:silver', 144 * 4))
 		.itemOutputs('1x tfg:reflector')
 		.circuit(6)
 		.dimension('ad_astra:moon')
