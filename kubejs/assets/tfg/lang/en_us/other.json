@@ -91,6 +91,8 @@
     "tfg.machine.aux_exchanger.heat_unavailable": "Heat information unavailable",
     "tfg.machine.aux_echanger.output.title": "=== Output ===",
 
+    "tfg.machine.battery_dynamo_hatch.tooltip": "Stores energy in up to %s batteries (%s or lower)",
+
     "tfg.multiblock.large_boiler.booster_active": "Booster: %s (%sK)",
     "tfg.multiblock.large_boiler.booster_none": "Booster: None",
     "tfg.multiblock.large_boiler.water_boosted": "Water: %s (%s)",
