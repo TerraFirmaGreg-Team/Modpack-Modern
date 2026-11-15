@@ -55,11 +55,12 @@ function registerVintageImprovementsRecipes(event) {
 	event.recipes.gtceu.shaped('vintageimprovements:centrifuge', [
 		'BAB',
 		'ACA',
-		'EAE'
+		'DAE'
 	], {
 		A: 'gtceu:treated_wood_planks',
 		B: '#forge:rods/black_steel',
 		C: 'create:andesite_casing',
+		D: 'create:electron_tube',
 		E: 'greate:steel_cogwheel'
 	}).addMaterialInfo().id('tfg:vi/mechanical_crafting/centrifuge')
 
@@ -106,10 +107,10 @@ function registerVintageImprovementsRecipes(event) {
 		'FAF',
 		'DCD'
 	], {
-		A: 'gtceu:ulv_machine_hull',
+		A: 'gtceu:ulv_machine_casing',
 		B: 'vintageimprovements:grinder_belt',
 		C: 'greate:steel_cogwheel',
-		D: '#gtceu:circuits/ulv',
+		D: 'create:electron_tube',
 		F: 'minecraft:diamond',
 		G: '#forge:rods/black_steel'
 	}).addMaterialInfo().id('tfg:vi/shaped/belt_grinder')
