@@ -83,9 +83,9 @@ function forEachMaterial(iterator) {
 //#region Add Circuit
 /**
  * Function for adding circuit numbers for existing recipes
- * 1) Preserves existing `inputs.item` entries.
- * 2) Adds a circuit entry to the `inputs.item` array.
- * 3) If `inputs.item` is missing, create it.
+ * 1) Preserves existing `inputs["gtceu:item"]` entries.
+ * 2) Adds a circuit entry to the `inputs["gtceu:item"]` array.
+ * 3) If `inputs["gtceu:item"]` is missing, create it.
  * 4) If a circuit already exists, update its number.
  * 
  * Constants {@link global.ADD_CIRCUIT}
@@ -108,7 +108,7 @@ function addCircuitToRecipe(event, recipeId, circuitNumber) {
 		}
 
 		// Cache existing item inputs.
-		const itemEl = inputsObj.has("gtceu:item") ? inputsObj.get("gtceu:item") : inputsObj.get("item");
+		const itemEl = inputsObj.get("gtceu:item");
 		let itemArray;
 		if (itemEl === null || itemEl === undefined || itemEl.isJsonNull()) {
 			itemArray = new JsonArray();
@@ -125,8 +125,7 @@ function addCircuitToRecipe(event, recipeId, circuitNumber) {
 		const circuitElement = JsonParser.parseString(JSON.stringify({
 			content: { type: "gtceu:circuit", configuration: circuitNumber },
 			chance: 0,
-			maxChance: 10000,
-			tierChanceBoost: 0
+			maxChance: 10000
 		}));
 
 		// Dont duplicate circuit if one already exists. 
@@ -151,7 +150,7 @@ function addCircuitToRecipe(event, recipeId, circuitNumber) {
 			addJsonElement(itemArray, circuitElement);
 		}
 
-		inputsObj.add("item", itemArray);
+		inputsObj.add("gtceu:item", itemArray);
 		recipe.json.add("inputs", inputsObj);
 	});
 }
