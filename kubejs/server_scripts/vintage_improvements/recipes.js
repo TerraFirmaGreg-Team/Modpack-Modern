@@ -412,7 +412,9 @@ function registerVintageImprovementsRecipes(event) {
 				: ChemicalHelper.get(TagPrefix.ingot, material, 1)
 
 			if (latheInput !== null) {
-				event.recipes.vintageimprovements.polishing(ChemicalHelper.get(TagPrefix.rod, material, 2), latheInput)
+				event.recipes.vintageimprovements.polishing(
+					[ChemicalHelper.get(TagPrefix.rod, material, 1), ChemicalHelper.get(TagPrefix.dustSmall, material, 2)],
+					latheInput)
 					.speedLimits(3)
 					.processingTime(material.getMass() * 4 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
 					.id(`tfg:vi/lathe/${material.getName()}_to_rod`)

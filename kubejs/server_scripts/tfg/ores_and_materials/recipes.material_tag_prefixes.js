@@ -258,6 +258,12 @@ function processRod(event, material) {
 		}
 	}
 
+	event.recipes.greate.saw(`tfg:greate_saw/${materialName}_rod`)
+		.itemInputs(ingotItem)
+		.itemOutputs(shortRodItem.withCount(2))
+		.duration(material.getMass() * 2)
+		.addData("minRPM", 64)
+
 	// Every material with a short rod also has a long rod
 	const longRodItem = ChemicalHelper.get(TagPrefix.rodLong, material, 1)
 	if (longRodItem.isEmpty() || longRodItem.hasTag('c:hidden_from_recipe_viewers'))
