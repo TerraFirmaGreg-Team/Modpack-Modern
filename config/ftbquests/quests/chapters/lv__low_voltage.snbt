@@ -2138,7 +2138,7 @@
 		{
 			dependencies: ["3E6DC423FE4A99F7"]
 			description: ["{quests.low_voltage.electric_lunchbox.desc}"]
-			guide_page: "tfg:field_guide tfg:cooking/decay 24"
+			guide_page: "tfg:field_guide tfg:cooking/decay 25"
 			id: "37F316C0599B52DE"
 			optional: true
 			shape: "heart"
