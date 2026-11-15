@@ -19,7 +19,7 @@ function registerVintageImprovementsRecipes(event) {
 		'EBE'
 	], {
 		A: 'gtceu:ulv_machine_hull',
-		B: 'greate:steel_cogwheel',
+		B: 'create:precision_mechanism',
 		C: '#forge:rods/steel',
 		D: '#forge:double_ingots/black_steel',
 		E: '#forge:small_gears/blue_steel',
@@ -52,21 +52,16 @@ function registerVintageImprovementsRecipes(event) {
 		E: 'greate:steel_cogwheel'
 	}).addMaterialInfo().id('tfg:vi/shaped/vibrating_table')
 
-	event.recipes.create.mechanical_crafting('vintageimprovements:centrifuge', [
-		'   A   ',
-		'   B   ',
-		'  DAD  ',
-		'ABACABA',
-		'  EAE  ',
-		'   B   ',
-		'   A   '
+	event.recipes.gtceu.shaped('vintageimprovements:centrifuge', [
+		'BAB',
+		'ACA',
+		'EAE'
 	], {
-		A: '#forge:plates/treated_wood',
+		A: 'gtceu:treated_wood_planks',
 		B: '#forge:rods/black_steel',
 		C: 'create:andesite_casing',
-		D: '#forge:frames/treated_wood',
 		E: 'greate:steel_cogwheel'
-	}).id('tfg:vi/mechanical_crafting/centrifuge')
+	}).addMaterialInfo().id('tfg:vi/mechanical_crafting/centrifuge')
 
 	TFGHelpers.registerMaterialInfo('vintageimprovements:centrifuge', [GTMaterials.WroughtIron, 3, GTMaterials.BlackSteel, 2]);
 
@@ -100,23 +95,21 @@ function registerVintageImprovementsRecipes(event) {
 
 	event.shaped('vintageimprovements:grinder_belt', [
 		'AAA',
-		'CBC'
+		'CCC'
 	], {
 		A: 'createaddition:diamond_grit_sandpaper',
-		B: 'greate:rubber_belt_connector',
 		C: 'tfc:glue'
 	}).id('tfg:vi/shaped/grinder_belt')
 
 	event.recipes.gtceu.shaped('vintageimprovements:belt_grinder', [
 		'GBG',
-		'EAF',
+		'FAF',
 		'DCD'
 	], {
 		A: 'gtceu:ulv_machine_hull',
 		B: 'vintageimprovements:grinder_belt',
 		C: 'greate:steel_cogwheel',
 		D: '#gtceu:circuits/ulv',
-		E: 'create:precision_mechanism',
 		F: 'minecraft:diamond',
 		G: '#forge:rods/black_steel'
 	}).addMaterialInfo().id('tfg:vi/shaped/belt_grinder')
@@ -399,40 +392,6 @@ function registerVintageImprovementsRecipes(event) {
 				ChemicalHelper.get(TagPrefix.crushedPurified, material, 1))
 					.processingTime(500 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
 					.id(`tfg:vi/vibrating/${material.getName()}`)
-		}
-
-		// #endregion
-
-		// #region Lathe
-
-		if (material.hasFlag(MaterialFlags.GENERATE_ROD) && !material.hasFlag(MaterialFlags.IS_MAGNETIC)) {
-
-			let latheInput = material.hasProperty(PropertyKey.GEM)
-				? ChemicalHelper.get(TagPrefix.gem, material, 1)
-				: ChemicalHelper.get(TagPrefix.ingot, material, 1)
-
-			if (latheInput !== null) {
-				event.recipes.vintageimprovements.polishing(
-					[ChemicalHelper.get(TagPrefix.rod, material, 1), ChemicalHelper.get(TagPrefix.dustSmall, material, 2)],
-					latheInput)
-					.speedLimits(3)
-					.processingTime(material.getMass() * 4 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-					.id(`tfg:vi/lathe/${material.getName()}_to_rod`)
-			}
-
-			if (material.hasProperty(PropertyKey.GEM)) {
-				event.recipes.create.sandpaper_polishing(ChemicalHelper.get(TagPrefix.rod, material, 1), latheInput)
-					.id(`tfg:polishing/${material.getName()}_rod`)
-			}
-		}
-
-		if (material.hasFlag(MaterialFlags.GENERATE_BOLT_SCREW)) {
-			event.recipes.vintageimprovements.polishing(
-				ChemicalHelper.get(TagPrefix.screw, material, 1),
-				ChemicalHelper.get(TagPrefix.bolt, material, 1))
-				.speedLimits(2)
-				.processingTime(Math.max(1, material.getMass() / 8) * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-				.id(`tfg:vi/lathe/${material.getName()}_bolt_to_screw`)
 		}
 
 		// #endregion

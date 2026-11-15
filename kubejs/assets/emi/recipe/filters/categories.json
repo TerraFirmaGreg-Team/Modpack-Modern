@@ -64,6 +64,9 @@
             "category": "gtceu:air_scrubber"
         },
         {
+            "category": "gtceu:ore_processing_diagram"
+        },
+        {
             "id": "/emi:/crafting/repairing/[^*]+/"
         },
         {
