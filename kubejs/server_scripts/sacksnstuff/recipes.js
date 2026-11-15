@@ -256,7 +256,8 @@ const registerSNSRecipes = (event) => {
 	event.custom({
 		type: "createaddition:rolling",
 		input: ChemicalHelper.get(TagPrefix.rod, GTMaterials.Steel, 1),
-		result: { item: 'sns:metal/horseshoe/steel' }
+		result: { item: 'sns:metal/horseshoe/steel' },
+		processingTime: GTMaterials.Steel.getMass() / 2
 	}).id(`tfg:rolling/steel_horseshoe`)
 
 	event.recipes.gtceu.bender('sns:horseshoe_black_steel_electric_only')
@@ -268,7 +269,8 @@ const registerSNSRecipes = (event) => {
 	event.custom({
 		type: "createaddition:rolling",
 		input: ChemicalHelper.get(TagPrefix.rod, GTMaterials.BlackSteel, 1),
-		result: { item: 'sns:metal/horseshoe/black_steel' }
+		result: { item: 'sns:metal/horseshoe/black_steel' },
+		processingTime: GTMaterials.BlackSteel.getMass() / 2
 	}).id(`tfg:rolling/black_steel_horseshoe`)
 
 	event.recipes.gtceu.bender('sns:horseshoe_blue_steel_electric_only')
@@ -280,7 +282,8 @@ const registerSNSRecipes = (event) => {
 	event.custom({
 		type: "createaddition:rolling",
 		input: ChemicalHelper.get(TagPrefix.rod, GTMaterials.BlueSteel, 1),
-		result: { item: 'sns:metal/horseshoe/blue_steel' }
+		result: { item: 'sns:metal/horseshoe/blue_steel' },
+		processingTime: GTMaterials.BlueSteel.getMass() / 2
 	}).id(`tfg:rolling/blue_steel_horseshoe`)
 
 	event.recipes.gtceu.bender('sns:horseshoe_red_steel_electric_only')
@@ -292,7 +295,8 @@ const registerSNSRecipes = (event) => {
 	event.custom({
 		type: "createaddition:rolling",
 		input: ChemicalHelper.get(TagPrefix.rod, GTMaterials.RedSteel, 1),
-		result: { item: 'sns:metal/horseshoe/red_steel' }
+		result: { item: 'sns:metal/horseshoe/red_steel' },
+		processingTime: GTMaterials.RedSteel.getMass() / 2
 	}).id(`tfg:rolling/red_steel_horseshoe`)
 
 	const BOOT_TIERS = [
