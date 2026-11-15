@@ -117,6 +117,16 @@ const registerFirmaLifeBlockTags = (event) => {
 
     event.add('tfg:carved_pumpkins', 'minecraft:carved_pumpkin');
     event.add('tfg:carved_pumpkins/lit', 'tfc:jack_o_lantern');
+
+    event.add('minecraft:trapdoors', 'firmalife:rusted_iron_greenhouse_trapdoor')
+    event.add('minecraft:trapdoors', 'firmalife:iron_greenhouse_trapdoor')
+    event.add('minecraft:trapdoors', 'firmalife:oxidized_copper_greenhouse_trapdoor')
+    event.add('minecraft:trapdoors', 'firmalife:weathered_copper_greenhouse_trapdoor')
+    event.add('minecraft:trapdoors', 'firmalife:exposed_copper_greenhouse_trapdoor')
+    event.add('minecraft:trapdoors', 'firmalife:copper_greenhouse_trapdoor')
+    event.add('minecraft:trapdoors', 'firmalife:weathered_treated_wood_greenhouse_trapdoor')
+    event.add('minecraft:trapdoors', 'firmalife:treated_wood_greenhouse_trapdoor')
+    event.add('minecraft:trapdoors', 'firmalife:stainless_steel_greenhouse_trapdoor')
 }
 
 const registerFirmaLifeFluidTags = (event) => {

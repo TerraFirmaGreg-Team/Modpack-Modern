@@ -528,6 +528,7 @@ function registerTFCItemTags(event) {
 
 	// TFC's fence gates are in the wrong tag
 	event.add('minecraft:fence_gates', '#forge:fence_gates')
+	event.add('minecraft:trapdoors', '#tfc:trapdoors')
 }
 
 /** @param {TagEvent.Block} event */
