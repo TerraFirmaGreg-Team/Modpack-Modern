@@ -253,13 +253,10 @@ const registerTooltips = (event) => {
 	})
 
 	// Insulation
-	event.addAdvanced(['gtceu:nanomuscle_helmet', 'gtceu:nanomuscle_chestplate', 'gtceu:nanomuscle_leggings', 'gtceu:nanomuscle_boots', 'gtceu:advanced_nanomuscle_chestplate'], (item, advanced, text) => {
+	event.addAdvanced(['gtceu:nano_fiber_helmet', 'gtceu:nano_fiber_chestplate', 'gtceu:nano_fiber_leggings', 'gtceu:nano_fiber_boots'], (item, advanced, text) => {
 		text.add(3, Text.translate('tfg.tooltip.armor.nanomuscle_set'));
-		if (item === 'gtceu:nanomuscle_leggings') {
-			text.add(4, Text.translate('tfg.tooltip.armor.nanomuscle_legs_buff'));
-		}
 	})
-	event.addAdvanced(['gtceu:quarktech_helmet', 'gtceu:quarktech_chestplate', 'gtceu:quarktech_leggings', 'gtceu:quarktech_boots', 'gtceu:advanced_quarktech_chestplate'], (item, advanced, text) => {
+	event.addAdvanced(['gtceu:quark_matter_helmet', 'gtceu:quark_matter_chestplate', 'gtceu:quark_matter_leggings', 'gtceu:quark_matter_boots'], (item, advanced, text) => {
 		text.add(3, Text.translate('tfg.tooltip.armor.quarktech_set'));
 	})
 	event.addAdvanced([

@@ -26,20 +26,22 @@ global.GTCEU_HIDED_ITEMS = /** @type {const} */ ([
 //#region Armor
 /** @global */
 global.GTCEU_ARMORS = /** @type {const} */ ([
+	"gtceu:hydraulic_helmet",
+	"gtceu:hydraulic_chestplate",
+	"gtceu:hydraulic_leggings",
+	"gtceu:hydraulic_boots",
 	"gtceu:hazmat_chestpiece",
 	"gtceu:hazmat_leggings",
 	"gtceu:hazmat_boots",
 	"gtceu:hazmat_headpiece",
-	"gtceu:nanomuscle_chestplate",
-	"gtceu:nanomuscle_leggings",
-	"gtceu:nanomuscle_boots",
-	"gtceu:nanomuscle_helmet",
-	"gtceu:advanced_nanomuscle_chestplate",
-	"gtceu:quarktech_chestplate",
-	"gtceu:quarktech_leggings",
-	"gtceu:quarktech_boots",
-	"gtceu:quarktech_helmet",
-	"gtceu:advanced_quarktech_chestplate"
+	"gtceu:nano_fiber_chestplate",
+	"gtceu:nano_fiber_leggings",
+	"gtceu:nano_fiber_boots",
+	"gtceu:nano_fiber_helmet",
+	"gtceu:quark_matter_chestplate",
+	"gtceu:quark_matter_leggings",
+	"gtceu:quark_matter_boots",
+	"gtceu:quark_matter_helmet"
 ]);
 //#endregion
 

@@ -32,9 +32,8 @@ const registerHotOrNotItemTags = (event) => {
     event.add('tfg:hot_protection_equipment', 'ad_astra:netherite_space_boots')
     event.add('tfg:hot_protection_equipment', 'gtceu:hazmat_chestpiece')
     event.add('tfg:hot_protection_equipment', 'gtceu:hazmat_boots')
-    event.add('tfg:hot_protection_equipment', 'gtceu:quarktech_chestplate')
-    event.add('tfg:hot_protection_equipment', 'gtceu:advanced_quarktech_chestplate')
-	event.add('tfg:hot_protection_equipment', 'gtceu:quarktech_boots')
+    event.add('tfg:hot_protection_equipment', 'gtceu:quark_matter_chestplate')
+	event.add('tfg:hot_protection_equipment', 'gtceu:quark_matter_boots')
 
     event.add('tfg:cold_protection_equipment', 'tfc:metal/chestplate/red_steel')
     event.add('tfg:cold_protection_equipment', 'tfc:metal/boots/red_steel')
@@ -45,16 +44,15 @@ const registerHotOrNotItemTags = (event) => {
     event.add('tfg:cold_protection_equipment', 'ad_astra:netherite_space_boots')
     event.add('tfg:cold_protection_equipment', 'gtceu:hazmat_chestpiece')
     event.add('tfg:cold_protection_equipment', 'gtceu:hazmat_boots')
-    event.add('tfg:cold_protection_equipment', 'gtceu:quarktech_chestplate')
-    event.add('tfg:cold_protection_equipment', 'gtceu:advanced_quarktech_chestplate')
-	event.add('tfg:cold_protection_equipment', 'gtceu:quarktech_boots')
+    event.add('tfg:cold_protection_equipment', 'gtceu:quark_matter_chestplate')
+	event.add('tfg:cold_protection_equipment', 'gtceu:quark_matter_boots')
 
     event.add('tfg:floating_protection_equipment', 'create:copper_diving_boots')
     event.add('tfg:floating_protection_equipment', 'create:netherite_diving_boots')
     event.add('tfg:floating_protection_equipment', 'ad_astra:space_boots')
     event.add('tfg:floating_protection_equipment', 'ad_astra:netherite_space_boots')
     event.add('tfg:floating_protection_equipment', 'gtceu:hazmat_boots')
-	event.add('tfg:floating_protection_equipment', 'gtceu:quarktech_boots')
+	event.add('tfg:floating_protection_equipment', 'gtceu:quark_matter_boots')
 }
 
 const registerHotOrNotFluidTags = (event) => {

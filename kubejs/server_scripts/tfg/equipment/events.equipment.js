@@ -14,9 +14,5 @@ PlayerEvents.tick((event) => {
 				|| player.feetArmorItem === 'ad_astra:netherite_space_boots')) {
 			player.potionEffects.add("minecraft:fire_resistance", 350, 0, true, false);
 		}
-
-		if (player.legsArmorItem === 'gtceu:nanomuscle_leggings') {
-			player.potionEffects.add("minecraft:speed", 350, 0, true, false);
-		}
 	}
 });
