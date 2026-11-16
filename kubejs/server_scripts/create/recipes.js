@@ -234,7 +234,7 @@ const registerCreateRecipes = (event) => {
 		D: '#forge:tools/files'
 	}).id('tfg:create/shaped/copper_valve_handle')
 
-	event.recipes.gtceu.welder('tfg:create/copper_valve_handle')
+	event.recipes.gtceu.assembler('tfg:create/copper_valve_handle')
 		.itemInputs('#forge:plates/copper', '#forge:small_gears/wrought_iron')
 		.circuit(6)
 		.itemOutputs('create:copper_valve_handle')
@@ -759,7 +759,7 @@ const registerCreateRecipes = (event) => {
 		D: '#forge:tools/screwdrivers'
 	}).id('tfg:create/shaped/item_vault')
 
-	event.recipes.gtceu.welder('tfg:create/item_vault')
+	event.recipes.gtceu.assembler('tfg:create/item_vault')
 		.itemInputs('#forge:chests/wooden', '#forge:sheets/wrought_iron', '2x #forge:screws/wrought_iron')
 		.circuit(3)
 		.itemOutputs('create:item_vault')
@@ -778,14 +778,14 @@ const registerCreateRecipes = (event) => {
 		D: '#forge:tools/knives'
 	}).id('tfg:create/shaped/andesite_funnel')
 
-	event.recipes.gtceu.welder('create:andesite_funnel')
+	event.recipes.gtceu.assembler('create:andesite_funnel')
 		.itemInputs('#forge:plates/wrought_iron', '#tfg:rubber_foils')
 		.itemOutputs('create:andesite_funnel')
 		.circuit(6)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	event.recipes.gtceu.welder('create:andesite_funnel_leather')
+	event.recipes.gtceu.assembler('create:andesite_funnel_leather')
 		.itemInputs('#forge:plates/wrought_iron', '#forge:leather')
 		.itemOutputs('create:andesite_funnel')
 		.circuit(7)
@@ -807,14 +807,14 @@ const registerCreateRecipes = (event) => {
 		E: 'create:electron_tube'
 	}).id('tfg:create/shaped/brass_funnel')
 
-	event.recipes.gtceu.welder('create:brass_funnel')
+	event.recipes.gtceu.assembler('create:brass_funnel')
 		.itemInputs('#forge:plates/brass', '#tfg:rubber_foils', 'create:electron_tube')
 		.itemOutputs('create:brass_funnel')
 		.circuit(8)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	event.recipes.gtceu.welder('create:brass_funnel_leather')
+	event.recipes.gtceu.assembler('create:brass_funnel_leather')
 		.itemInputs('#forge:plates/brass', '#forge:leather', 'create:electron_tube')
 		.itemOutputs('create:brass_funnel')
 		.circuit(9)
@@ -833,14 +833,14 @@ const registerCreateRecipes = (event) => {
 		D: '#forge:tools/wrenches'
 	}).id('tfg:create/shaped/andesite_tunnel')
 
-	event.recipes.gtceu.welder('create:andesite_tunnel')
+	event.recipes.gtceu.assembler('create:andesite_tunnel')
 		.itemInputs('#forge:plates/wrought_iron', '#tfg:rubber_foils')
 		.itemOutputs('create:andesite_tunnel')
 		.circuit(10)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	event.recipes.gtceu.welder('create:andesite_tunnel_leather')
+	event.recipes.gtceu.assembler('create:andesite_tunnel_leather')
 		.itemInputs('#forge:plates/wrought_iron', '#forge:leather')
 		.itemOutputs('create:andesite_tunnel')
 		.circuit(11)
@@ -860,14 +860,14 @@ const registerCreateRecipes = (event) => {
 		D: '#forge:tools/wrenches'
 	}).id('tfg:create/shaped/brass_tunnel')
 
-	event.recipes.gtceu.welder('create:brass_tunnel')
+	event.recipes.gtceu.assembler('create:brass_tunnel')
 		.itemInputs('#forge:plates/brass', '#tfg:rubber_foils', 'create:electron_tube')
 		.itemOutputs('create:brass_tunnel')
 		.circuit(12)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	event.recipes.gtceu.welder('create:brass_tunnel_leather')
+	event.recipes.gtceu.assembler('create:brass_tunnel_leather')
 		.itemInputs('#forge:plates/brass', '#forge:leather', 'create:electron_tube')
 		.itemOutputs('create:brass_tunnel')
 		.circuit(13)
@@ -907,7 +907,7 @@ const registerCreateRecipes = (event) => {
 		D: '#forge:tools/files'
 	}).addMaterialInfo().id('tfg:create/shaped/brass_hand')
 
-	event.recipes.gtceu.welder('tfg:create/brass_hand')
+	event.recipes.gtceu.assembler('tfg:create/brass_hand')
 		.itemInputs('3x #forge:bolts/brass', '#forge:plates/brass')
 		.circuit(3)
 		.itemOutputs('create:brass_hand')
@@ -1721,14 +1721,14 @@ const registerCreateRecipes = (event) => {
 		C: 'create:chute',
 	}).id('tfg:create/shaped/item_hatch_deco')
 
-	event.recipes.gtceu.welder('tfg:create/item_hatch_tfc')
+	event.recipes.gtceu.assembler('tfg:create/item_hatch_tfc')
 		.itemInputs('3x #forge:plates/wrought_iron', '#tfc:trapdoors')
 		.circuit(19)
 		.itemOutputs('create:item_hatch')
 		.duration(200)
 		.EUt(20)
 
-	event.recipes.gtceu.welder('tfg:create/item_hatch_deco')
+	event.recipes.gtceu.assembler('tfg:create/item_hatch_deco')
 		.itemInputs('3x #forge:plates/wrought_iron', '#createdeco:metal_trapdoors')
 		.circuit(19)
 		.itemOutputs('create:item_hatch')
