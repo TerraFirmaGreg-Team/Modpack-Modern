@@ -15,6 +15,9 @@ To run the Server Pack:
 
 The config files shipped with the server pack should be a good starting point for bigger servers, however there's a few settings you may want to tweak:
 
+* defaultconfigs/tfg-server.toml
+   * `enableQuestBroadcasts` - If you're hosting a large server where everyone's going at their own pace, this option will announce players' quest progress in chat
+
 * defaultconfigs/tfc-server.toml
    * `torchTicks` and `candleTicks` - This controls how fast torches and candles burn out. By default, torches last for two days and candles last for eight. You may want to increase this if your server players are spread out and have different bases. (You'll be able to craft permanent light sources once you enter LV)
    * `foodDecayModifier` - This controls how fast food decays. For single player worlds or small groups that share a base, we recommend changing this to `1.0`, the TFC default. For larger servers with players in many time zones, `0.25` should work fine.
@@ -26,3 +29,10 @@ The config files shipped with the server pack should be a good starting point fo
    * Backup frequency is set with cron time info.
    * By default for servers this is every morning at 10:15AM: `"backup_cron": "0 15 10 * * ? *"`
    * If you want it hourly like singleplayer worlds, use `"backup_cron": "0 0 0/1 1/1 * ? *"`
+
+* config/tfg-common.toml
+   * `worldSpawn.id` - If you want to set a custom spawn climate for your server, you can do so here. This has the same effect as the button when creating a single player world.
+ 
+# Commands
+
+* `/time set monthlength` - By default, months in TFC are 8 days long. You can use this command to change their length, which will also change the length of seasons and so on.
