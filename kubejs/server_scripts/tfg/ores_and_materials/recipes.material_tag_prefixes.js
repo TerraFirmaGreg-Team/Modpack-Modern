@@ -82,7 +82,7 @@ function processIngotDouble(event, material) {
 	const doubleIngotItem = ChemicalHelper.get(TFGTagPrefix.ingotDouble, material, 1);
 
 	addMaterialRecycling(event, doubleIngotItem, material, "double_ingot", TFGTagPrefix.ingotDouble);
-	addMaterialWelding(event, doubleIngotItem, ingotItem, ingotItem, material, 5, 1, TFGTagPrefix.ingotDouble, 0);
+	addMaterialWelding(event, doubleIngotItem, ingotItem, ingotItem, material, 5, 1, TFGTagPrefix.ingotDouble, false, 0);
 
 	event.recipes.gtceu.bender(`tfg:bend_${material.getName()}_double_ingot_electric_only`)
 		.itemInputs(ingotItem.withCount(2))
@@ -209,7 +209,7 @@ function processPlateDouble(event, material) {
 	if (material === GTMaterials.Aluminium)
 		tier = 1;
 
-	addMaterialWelding(event, doublePlateItem, plateItem, plateItem, material, 4, tier, TagPrefix.plateDouble, 0);
+	addMaterialWelding(event, doublePlateItem, plateItem, plateItem, material, 4, tier, TagPrefix.plateDouble, false, 0);
 }
 
 /**
@@ -296,7 +296,7 @@ function processRod(event, material) {
 		addTFCMelting(event, longRodItem, material, 144, 'long_rod');
 	}
 
-	addMaterialWelding(event, longRodItem, shortRodItem, shortRodItem, material, 4, 1, TagPrefix.rodLong, 0);
+	addMaterialWelding(event, longRodItem, shortRodItem, shortRodItem, material, 4, 1, TagPrefix.rodLong, false, 0);
 }
 
 
@@ -600,7 +600,7 @@ function processLargeGear(event, material) {
 		addTFCMelting(event, gearItem, material, 144 * 4, 'gear');
 
 		let doublePlateItem = ChemicalHelper.get(TagPrefix.plateDouble, material, 1)
-		addMaterialWelding(event, gearItem, doublePlateItem, doublePlateItem, material, 4, 1, TagPrefix.gear, 1);
+		addMaterialWelding(event, gearItem, doublePlateItem, doublePlateItem, material, 4, 1, TagPrefix.gear, false, 1);
 	}
 }
 
