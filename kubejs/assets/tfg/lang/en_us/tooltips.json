@@ -202,6 +202,13 @@
 
     "tfg.tooltip.machine.smr_fluid_import_hatch": "§7Can only be used in a Small Modular Turbine§r",
 
+    "tfg.tooltip.machine.large_combustion_generator": "A simple Combustion Generator but able to output four times more energy that a single Generator",
+    "tfg.tooltip.machine.large_gas_generator": "A simple Gas Generator but able to output four times more energy that a single Generator",
+    "tfg.tooltip.machine.large_steam_generator_1": "A simple Steam Generator but able to output four times more energy that a single Generator",
+    "tfg.tooltip.machine.large_steam_generator_2": "Only the Large Steam Turbine can output §6Distilled Water§r.",
+    "tfg.tooltip.machine.large_generator_1": "§aMax Voltage OUT:§r Scale with the §bBattery Dynamo Hatch§r",
+    "tfg.tooltip.machine.large_generator_2": "The Large Generator does not have a better efficiency but is cheaper that crafting four single Generators. It will always output 4A in the §bBattery Dynamo Hatch§r.",
+
     "tfg.tooltip.component.blue_ice": "Can be placed inside a Fission Reactor to increase the maximum heat by §90.5§r",
     "tfg.tooltip.component.aes_insulation_frame": "Can be placed inside a Fission Reactor to increase the maximum heat by §91§r",
     "tfg.tooltip.component.glacian_fur": "Can be placed inside a Fission Reactor to increase the maximum heat by §92§r",
