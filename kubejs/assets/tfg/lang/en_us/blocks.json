@@ -1094,6 +1094,20 @@
 	"block.tfg.me_assembler": "ME Resonance Fabricator",
 	"block.tfg.budding_charge": "ME Resonance Charger",
 	"block.tfg.me_assembler_redstone_port": "ME Redstone Port",
+	"block.tfg.large_combustion_generator": "Large Combustion Generator",
+	"block.tfg.large_gas_generator": "Large Gas Generator",
+	"block.tfg.large_steam_generator": "Large Steam Generator",
+
+	"block.tfg.casings.gas_exhaust_lv": "§7LV Gas Exhaust§r",
+	"block.tfg.casings.gas_exhaust_mv": "§bMV Gas Exhaust§r",
+	"block.tfg.casings.gas_exhaust_hv": "§6HV Gas Exhaust§r",
+
+	"block.tfg.casings.combustion_exhaust_lv": "§7LV Combustion Exhaust§r",
+	"block.tfg.casings.combustion_exhaust_mv": "§bMV Combustion Exhaust§r",
+	"block.tfg.casings.combustion_exhaust_hv": "§6HV Combustion Exhaust§r",
+
+	"block.tfg.casings.steam_exhaust_lv": "§7LV Steam Exhaust§r",
+	"block.tfg.casings.steam_exhaust_mv": "§bMV Steam Exhaust§r",
 
 	"block.tfg.bioreactor": "Bioreactor",
 	"block.tfg.growth_chamber": "Growth Chamber",
