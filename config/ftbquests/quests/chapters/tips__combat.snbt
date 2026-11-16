@@ -39,26 +39,10 @@
 			y: -1.5d
 		}
 		{
-			id: "0C7E9422BF567F2C"
-			linked_quest: "4C37DAD7C66523CC"
-			shape: "gear"
-			size: 1.5d
-			x: 16.5d
-			y: -3.0d
-		}
-		{
 			id: "6DB21C9A32CCA1C2"
 			linked_quest: "4D5B75F5270CCBD3"
 			x: 25.0d
 			y: -1.5d
-		}
-		{
-			id: "67F9A71A21D9C7C1"
-			linked_quest: "035B0FDD90E51C0C"
-			shape: "gear"
-			size: 2.0d
-			x: 25.0d
-			y: -3.0d
 		}
 		{
 			id: "5A0155B06CF04C97"

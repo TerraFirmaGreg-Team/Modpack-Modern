@@ -83,7 +83,7 @@ const registerFirmaCivRecipes = (event) => {
 	//#endregion
 
 	//#region Cannon Barrel
-	event.recipes.gtceu.assembler('tfg:firmaciv/cannon_barrel')
+	event.recipes.gtceu.welder('tfg:firmaciv/cannon_barrel')
 		.itemInputs('#forge:double_plates/wrought_iron')
 		.circuit(11)
 		.itemOutputs('firmaciv:cannon_barrel')

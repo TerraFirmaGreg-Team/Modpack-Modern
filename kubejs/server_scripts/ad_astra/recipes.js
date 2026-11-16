@@ -308,7 +308,7 @@ const registerAdAstraRecipes = (event) => {
 
 	DECO_BLOCKS.forEach(x => {
 
-		event.recipes.gtceu.assembler(`tfg:ad_astra_${x.type}_plating`)
+		event.recipes.gtceu.welder(`tfg:ad_astra_${x.type}_plating`)
 			.itemInputs(`#forge:storage_blocks/${x.material}`)
 			.inputFluids(Fluid.of('gtceu:polyethylene', 36))
 			.itemOutputs(`16x ad_astra:${x.type}_plating`)
@@ -323,7 +323,7 @@ const registerAdAstraRecipes = (event) => {
 			.duration(100)
 			.EUt(GTValues.VA[GTValues.LV])
 
-		event.recipes.gtceu.assembler(`tfg:ad_astra_${x.type}_factory_block`)
+		event.recipes.gtceu.welder(`tfg:ad_astra_${x.type}_factory_block`)
 			.itemInputs(`#forge:storage_blocks/${x.material}`)
 			.inputFluids(Fluid.of('gtceu:polyethylene', 36))
 			.itemOutputs(`16x ad_astra:${x.type}_factory_block`)
@@ -331,7 +331,7 @@ const registerAdAstraRecipes = (event) => {
 			.EUt(GTValues.VA[GTValues.LV])
 			.circuit(2)
 
-		event.recipes.gtceu.assembler(`tfg:ad_astra_${x.type}_panel`)
+		event.recipes.gtceu.welder(`tfg:ad_astra_${x.type}_panel`)
 			.itemInputs(`#forge:storage_blocks/${x.material}`)
 			.inputFluids(Fluid.of('gtceu:polyethylene', 36))
 			.itemOutputs(`16x ad_astra:${x.type}_panel`)
@@ -339,7 +339,7 @@ const registerAdAstraRecipes = (event) => {
 			.EUt(GTValues.VA[GTValues.LV])
 			.circuit(3)
 
-		event.recipes.gtceu.assembler(`tfg:ad_astra_${x.type}_pillar`)
+		event.recipes.gtceu.welder(`tfg:ad_astra_${x.type}_pillar`)
 			.itemInputs(`#forge:storage_blocks/${x.material}`)
 			.inputFluids(Fluid.of('gtceu:polyethylene', 36))
 			.itemOutputs(`16x ad_astra:${x.type}_pillar`)
@@ -347,7 +347,7 @@ const registerAdAstraRecipes = (event) => {
 			.EUt(GTValues.VA[GTValues.LV])
 			.circuit(4)
 
-		event.recipes.gtceu.assembler(`tfg:ad_astra_${x.type}_plateblock`)
+		event.recipes.gtceu.welder(`tfg:ad_astra_${x.type}_plateblock`)
 			.itemInputs(`#forge:storage_blocks/${x.material}`)
 			.inputFluids(Fluid.of('gtceu:polyethylene', 36))
 			.itemOutputs(`16x ad_astra:${x.type}_plateblock`)
@@ -355,7 +355,7 @@ const registerAdAstraRecipes = (event) => {
 			.EUt(GTValues.VA[GTValues.LV])
 			.circuit(5)
 
-		event.recipes.gtceu.assembler(`tfg:ad_astra_encased_${x.type}_block`)
+		event.recipes.gtceu.welder(`tfg:ad_astra_encased_${x.type}_block`)
 			.itemInputs(`#forge:storage_blocks/${x.material}`)
 			.inputFluids(Fluid.of('gtceu:polyethylene', 36))
 			.itemOutputs(`16x ad_astra:encased_${x.type}_block`)
@@ -401,7 +401,7 @@ const registerAdAstraRecipes = (event) => {
 		generateCutterRecipe(event, `ad_astra:${x.type}_plating_pressure_plate`, `6x ad_astra:${x.type}_plating_button`, 50, 7, `ad_astra_${x.type}_button`)
 
 		// Doors
-		event.recipes.gtceu.assembler(`tfg:ad_astra_${x.type}_sliding_door`)
+		event.recipes.gtceu.welder(`tfg:ad_astra_${x.type}_sliding_door`)
 			.itemInputs(`9x #forge:plates/${x.material}`, '2x #forge:glass_panes')
 			.inputFluids(Fluid.of('gtceu:polyethylene', 36))
 			.itemOutputs(`ad_astra:${x.type}_sliding_door`)
@@ -414,7 +414,7 @@ const registerAdAstraRecipes = (event) => {
 	event.shapeless('ad_astra:marked_iron_pillar', ['ad_astra:iron_pillar', '#forge:dyes/yellow', '#forge:dyes/black'])
 		.id('tfg:shapeless/marked_iron_pillar')
 
-	event.recipes.gtceu.assembler(`tfg:ad_astra_reinforced_door`)
+	event.recipes.gtceu.welder(`tfg:ad_astra_reinforced_door`)
 		.itemInputs(`9x #forge:plates/steel`, '2x #forge:glass_panes')
 		.inputFluids(Fluid.of('gtceu:polyethylene', 36))
 		.itemOutputs(`ad_astra:reinforced_door`)
@@ -423,7 +423,7 @@ const registerAdAstraRecipes = (event) => {
 		.circuit(21)
 		.addMaterialInfo(true, true)
 
-	event.recipes.gtceu.assembler(`tfg:ad_astra_airlock`)
+	event.recipes.gtceu.welder(`tfg:ad_astra_airlock`)
 		.itemInputs(`9x #forge:plates/steel`)
 		.inputFluids(Fluid.of('gtceu:polyethylene', 36))
 		.itemOutputs(`ad_astra:airlock`)
@@ -432,7 +432,7 @@ const registerAdAstraRecipes = (event) => {
 		.circuit(22)
 		.addMaterialInfo(true, true)
 
-	event.recipes.gtceu.assembler(`tfg:ad_astra_steel_door`)
+	event.recipes.gtceu.welder(`tfg:ad_astra_steel_door`)
 		.itemInputs('createdeco:industrial_iron_door', '#forge:glass_panes')
 		.inputFluids(Fluid.of('gtceu:polyethylene', 36))
 		.itemOutputs('ad_astra:steel_door')
@@ -440,7 +440,7 @@ const registerAdAstraRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.LV])
 	TFGHelpers.registerMaterialInfo('ad_astra:steel_door', [GTMaterials.Steel, 2, GTMaterials.Glass, 3/4, GTMaterials.Polyethylene, 1/4])
 
-	event.recipes.gtceu.assembler(`tfg:ad_astra_steel_trapdoor`)
+	event.recipes.gtceu.welder(`tfg:ad_astra_steel_trapdoor`)
 		.itemInputs('tfc:metal/trapdoor/steel', '#forge:glass_panes')
 		.inputFluids(Fluid.of('gtceu:polyethylene', 36))
 		.itemOutputs('ad_astra:steel_trapdoor')
@@ -450,7 +450,7 @@ const registerAdAstraRecipes = (event) => {
 
 	// Etrium only has factory block, encased block, plateblock, panel, and (storage) block
 
-	event.recipes.gtceu.assembler(`tfg:ad_astra_etrium_panel`)
+	event.recipes.gtceu.welder(`tfg:ad_astra_etrium_panel`)
 		.itemInputs(`#forge:storage_blocks/etrium`)
 		.inputFluids(Fluid.of('gtceu:polyethylene', 36))
 		.itemOutputs(`16x ad_astra:etrium_panel`)
@@ -458,7 +458,7 @@ const registerAdAstraRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.LV])
 		.circuit(3)
 
-	event.recipes.gtceu.assembler(`tfg:ad_astra_etrium_factory_block`)
+	event.recipes.gtceu.welder(`tfg:ad_astra_etrium_factory_block`)
 		.itemInputs(`#forge:storage_blocks/etrium`)
 		.inputFluids(Fluid.of('gtceu:polyethylene', 36))
 		.itemOutputs(`16x ad_astra:etrium_factory_block`)
@@ -466,7 +466,7 @@ const registerAdAstraRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.LV])
 		.circuit(2)
 
-	event.recipes.gtceu.assembler(`tfg:ad_astra_etrium_plateblock`)
+	event.recipes.gtceu.welder(`tfg:ad_astra_etrium_plateblock`)
 		.itemInputs(`#forge:storage_blocks/etrium`)
 		.inputFluids(Fluid.of('gtceu:polyethylene', 36))
 		.itemOutputs(`16x ad_astra:etrium_plateblock`)
@@ -474,7 +474,7 @@ const registerAdAstraRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.LV])
 		.circuit(5)
 
-	event.recipes.gtceu.assembler(`tfg:ad_astra_encased_etrium_block`)
+	event.recipes.gtceu.welder(`tfg:ad_astra_encased_etrium_block`)
 		.itemInputs(`#forge:storage_blocks/etrium`)
 		.inputFluids(Fluid.of('gtceu:polyethylene', 36))
 		.itemOutputs(`16x ad_astra:encased_etrium_block`)

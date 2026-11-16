@@ -24,6 +24,10 @@ function registerTFGEquipmentItemTags(event) {
     event.add('minecraft:trimmable_armor', 'tfcambiental:insulated_leather_boots')
     event.add('minecraft:trimmable_armor', '#firmalife:beekeeper_armor')
 
+	global.GTCEU_ARMORS.forEach(armor => {
+		event.add('minecraft:trimmable_armor', armor);
+	})
+
 	const textiles = [
 		"crocodile",
 		"caribou",
@@ -103,11 +107,10 @@ function registerTFGEquipmentItemTags(event) {
 	event.add('gtceu:ppe_armor', '#ad_astra:space_suit_items')
 	event.add('minecraft:trimmable_armor', '#ad_astra:space_suit_items')
 
-	event.add('ad_astra:space_resistant_armor', 'gtceu:quarktech_helmet')
-	event.add('ad_astra:space_resistant_armor', 'gtceu:quarktech_chestplate')
-	event.add('ad_astra:space_resistant_armor', 'gtceu:advanced_quarktech_chestplate')
-	event.add('ad_astra:space_resistant_armor', 'gtceu:quarktech_leggings')
-	event.add('ad_astra:space_resistant_armor', 'gtceu:quarktech_boots')
+	event.add('ad_astra:space_resistant_armor', 'gtceu:quark_matter_helmet')
+	event.add('ad_astra:space_resistant_armor', 'gtceu:quark_matter_chestplate')
+	event.add('ad_astra:space_resistant_armor', 'gtceu:quark_matter_leggings')
+	event.add('ad_astra:space_resistant_armor', 'gtceu:quark_matter_boots')
 
 	event.add('tfc:deals_crushing_damage', '#forge:tools/mining_hammers')
 	event.add('tfc:deals_crushing_damage', '#minecraft:shovels')

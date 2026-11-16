@@ -70,7 +70,7 @@ function registerTFGEquipmentData(event) {
 		13,
 		15
 	)
-		event.itemDamageResistance(
+	event.itemDamageResistance(
 		'minecraft:netherite_boots',
 		13,
 		13,
@@ -83,61 +83,73 @@ function registerTFGEquipmentData(event) {
 		15
 	)
 	event.itemDamageResistance(
-		'gtceu:nanomuscle_helmet',
+		'gtceu:hydraulic_helmet',
+		13,
+		13,
+		15
+	)
+	event.itemDamageResistance(
+		'gtceu:hydraulic_chestplate',
+		13,
+		13,
+		15
+	)
+	event.itemDamageResistance(
+		'gtceu:hydraulic_leggings',
+		13,
+		13,
+		15
+	)
+	event.itemDamageResistance(
+		'gtceu:hydraulic_boots',
+		13,
+		13,
+		15
+	)
+	event.itemDamageResistance(
+		'gtceu:nano_fiber_helmet',
 		16,
 		16,
 		16
 	)
 	event.itemDamageResistance(
-		'gtceu:nanomuscle_chestplate',
+		'gtceu:nano_fiber_chestplate',
 		16,
 		16,
 		16
 	)
 	event.itemDamageResistance(
-		'gtceu:advanced_nanomuscle_chestplate',
+		'gtceu:nano_fiber_leggings',
 		16,
 		16,
 		16
 	)
 	event.itemDamageResistance(
-		'gtceu:nanomuscle_leggings',
+		'gtceu:nano_fiber_boots',
 		16,
 		16,
 		16
 	)
 	event.itemDamageResistance(
-		'gtceu:nanomuscle_boots',
-		16,
-		16,
-		16
-	)
-	event.itemDamageResistance(
-		'gtceu:quarktech_helmet',
+		'gtceu:quark_matter_helmet',
 		24,
 		24,
 		24
 	)
 	event.itemDamageResistance(
-		'gtceu:quarktech_chestplate',
+		'gtceu:quark_matter_chestplate',
 		24,
 		24,
 		24
 	)
 	event.itemDamageResistance(
-		'gtceu:advanced_quarktech_chestplate',
+		'gtceu:quark_matter_leggings',
 		24,
 		24,
 		24
 	)
 	event.itemDamageResistance(
-		'gtceu:quarktech_leggings',
-		24,
-		24,
-		24
-	)
-	event.itemDamageResistance(
-		'gtceu:quarktech_boots',
+		'gtceu:quark_matter_boots',
 		24,
 		24,
 		24

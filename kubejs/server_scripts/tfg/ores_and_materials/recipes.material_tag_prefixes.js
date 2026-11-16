@@ -173,7 +173,7 @@ function processPlate(event, material) {
 			type: "createaddition:rolling",
 			input: ingotItem,
 			result: plateItem,
-			//processingTime: material.getMass() // TODO - controlled by a global config argh
+			processingTime: material.getMass() / 2
 		}).id(`tfg:rolling/${materialName}_plate`)
 	}
 }
@@ -227,8 +227,7 @@ function processFoil(event, material) {
 		type: "createaddition:rolling",
 		input: plateItem,
 		result: foilItem,
-		// TODO - processing time is controlled by a global config instead of setting it per-recipe...
-		//processingTime: material.getMass()
+		processingTime: material.getMass() / 2
 	}).id(`tfg:rolling/${material.getName()}_foil`)
 }
 
@@ -256,6 +255,33 @@ function processRod(event, material) {
 		const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
 		if (!ingotItem.isEmpty()) {
 			addAnvilRecipe(event, shortRodItem.withCount(2), ingotItem, ['draw_last'], false, material, 'rod');
+		}
+	}
+	
+	if (!material.hasFlag(MaterialFlags.IS_MAGNETIC)) {
+		let latheInput = material.hasProperty(PropertyKey.GEM)
+			? ChemicalHelper.get(TagPrefix.gem, material, 1)
+			: ChemicalHelper.get(TagPrefix.ingot, material, 1)
+		if (latheInput != null) {
+			event.recipes.vintageimprovements.polishing(
+				[shortRodItem, ChemicalHelper.get(TagPrefix.dustSmall, material, 2)], latheInput)
+				.speedLimits(3)
+				.processingTime(material.getMass() * 4 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+				.id(`tfg:vi/lathe/${materialName}_to_rod`)
+
+			event.recipes.greate.saw(`tfg:greate_saw/${materialName}_rod`)
+				.itemInputs(latheInput)
+				.inputFluids(Fluid.of('gtceu:lubricant', 25))
+				.itemOutputs(shortRodItem.withCount(2))
+				.duration(material.getMass() * 2)
+				.perTick(true)
+				.input(StressRecipeCapability.STRESS_CAPABILITY, 32.0)
+				.perTick(false)
+
+			if (material.hasProperty(PropertyKey.GEM)) {
+				event.recipes.create.sandpaper_polishing(shortRodItem, latheInput)
+					.id(`tfg:polishing/${materialName}_rod`)
+			}
 		}
 	}
 
@@ -313,6 +339,14 @@ function processScrew(event, material) {
 
 		addAnvilRecipe(event, screwItem.withCount(4), ChemicalHelper.get(TagPrefix.rod, material, 1), ['punch_last', 'punch_second_last', 'shrink_third_last'], false, material, 'screw_from_rod');
 		addAnvilRecipe(event, screwItem.withCount(8), ChemicalHelper.get(TagPrefix.ingot, material, 1), ['punch_last', 'punch_second_last', 'shrink_third_last'], false, material, 'screw_from_ingot');
+	}
+
+	const boltItem = ChemicalHelper.get(TagPrefix.bolt, material, 1);
+	if (!boltItem.isEmpty()) {
+		event.recipes.vintageimprovements.polishing(screwItem, boltItem)
+			.speedLimits(2)
+			.processingTime(Math.max(1, material.getMass() / 8) * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+			.id(`tfg:vi/lathe/${material.getName()}_bolt_to_screw`)
 	}
 }
 

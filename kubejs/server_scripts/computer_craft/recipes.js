@@ -12,11 +12,11 @@ const registerComputerCraftRecipes = (event) => {
 	});
 
 	// Networking Cable
-	event.recipes.gtceu.assembler('computercraft:cable')
-		.itemInputs('2x #forge:rods/quartzite', '2x ae2:quartz_fiber')
-		.inputFluids(Fluid.of('gtceu:redstone', 288))
-		.itemOutputs('2x computercraft:cable')
-		.duration(80)
+	event.recipes.gtceu.spooling('computercraft:cable')
+		.itemInputs('#forge:rods/quartzite', 'ae2:quartz_fiber')
+		.inputFluids(Fluid.of('gtceu:redstone', 144))
+		.itemOutputs('computercraft:cable')
+		.duration(40)
 		.EUt(120)
 		.addMaterialInfo(true)
 

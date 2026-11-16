@@ -74,7 +74,7 @@
 	#[in Revolutions per Minute]
 	#Maximum allowed rotation speed for any Kinetic Block.
 	#Range: > 64
-	maxRotationSpeed = 256
+	maxRotationSpeed = 512
 	#.
 	#Select what mobs should ignore Deployers when attacked by them.
 	#Allowed Values: ALL, CREEPERS, NONE
@@ -214,12 +214,12 @@
 		#[in Revolutions per Minute]
 		#Minimum speed of rotation to be considered 'medium'
 		#Range: 0.0 ~ 4096.0
-		mediumSpeed = 30.0
+		mediumSpeed = 32.0
 		#.
 		#[in Revolutions per Minute]
 		#Minimum speed of rotation to be considered 'fast'
 		#Range: 0.0 ~ 65535.0
-		fastSpeed = 100.0
+		fastSpeed = 64.0
 		#.
 		#[in Stress Units]
 		#Minimum stress impact to be considered 'medium'
