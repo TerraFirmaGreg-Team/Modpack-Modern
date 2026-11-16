@@ -771,7 +771,7 @@ function registerTFGNuclearRecipes(event) {
 	
 	//#region Cooling Tower
 
-	event.recipes.gtceu.assembler('tfg:ostrum_carbon_casing')
+	event.recipes.gtceu.welder('tfg:ostrum_carbon_casing')
 		.itemInputs('2x #forge:plates/ostrum', '2x #forge:plates/titanium_carbide', '#forge:dense_plates/hsla_steel', '#forge:frames/black_steel')
 		.itemOutputs('2x tfg:casings/machine_casing_ostrum_carbon')
 		.circuit(6)
@@ -786,7 +786,7 @@ function registerTFGNuclearRecipes(event) {
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(20*20)
 	
-	event.recipes.gtceu.assembler('tfg:heat_pipe_casing')
+	event.recipes.gtceu.welder('tfg:heat_pipe_casing')
 		.itemInputs('4x gtceu:copper_large_fluid_pipe', '4x gtceu:copper_normal_fluid_pipe', '4x #forge:plates/hsla_steel')
 		.inputFluids(Fluid.of('tfg:thermally_conductive_fluid', 1000))
 		.itemOutputs('tfg:casings/heat_pipe_casing')
@@ -794,7 +794,7 @@ function registerTFGNuclearRecipes(event) {
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(20*4)
 
-	event.recipes.gtceu.assembler('tfg:titanium_exhaust_vent')
+	event.recipes.gtceu.welder('tfg:titanium_exhaust_vent')
 		.itemInputs(Item.of('gtceu:double_titanium_plate', 6), Item.of('gtceu:double_magnalium_plate', 2), Item.of('gtceu:titanium_rotor', 1))
 		.itemOutputs(Item.of('tfg:titanium_exhaust_vent', 1))
 		.circuit(6)

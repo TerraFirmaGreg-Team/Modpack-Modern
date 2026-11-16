@@ -38,7 +38,7 @@ function registerCreateSteamPoweredRecipes(event) {
 		C: 'greate:steel_shaft'
 	}).id('tfg:shaped/bronze_flywheel')
 
-	event.recipes.gtceu.assembler('tfg:bronze_flywheel')
+	event.recipes.gtceu.welder('tfg:bronze_flywheel')
 		.itemInputs('greate:steel_shaft', '4x #forge:rods/steel', '4x #forge:rods/wrought_iron')
 		.itemOutputs('steampowered:bronze_flywheel')
 		.circuit(3)
@@ -80,7 +80,7 @@ function registerCreateSteamPoweredRecipes(event) {
 		C: 'greate:aluminium_shaft'
 	}).id('tfg:shaped/cast_iron_flywheel')
 
-	event.recipes.gtceu.assembler('tfg:cast_iron_flywheel')
+	event.recipes.gtceu.welder('tfg:cast_iron_flywheel')
 		.itemInputs('greate:aluminium_shaft', '4x #forge:rods/aluminium', '4x #forge:rods/steel')
 		.itemOutputs('steampowered:cast_iron_flywheel')
 		.circuit(3)
@@ -122,7 +122,7 @@ function registerCreateSteamPoweredRecipes(event) {
 		C: 'greate:stainless_steel_shaft'
 	}).id('tfg:shaped/steel_flywheel')
 
-	event.recipes.gtceu.assembler('tfg:steel_flywheel')
+	event.recipes.gtceu.welder('tfg:steel_flywheel')
 		.itemInputs('greate:stainless_steel_shaft', '4x #forge:rods/stainless_steel', '4x #forge:rods/aluminium')
 		.itemOutputs('steampowered:steel_flywheel')
 		.circuit(3)
@@ -164,7 +164,7 @@ function registerCreateSteamPoweredRecipes(event) {
 		C: 'greate:titanium_shaft'
 	}).id('tfg:shaped/titanium_flywheel')
 
-	event.recipes.gtceu.assembler('tfg:titanium_flywheel')
+	event.recipes.gtceu.welder('tfg:titanium_flywheel')
 		.itemInputs('greate:titanium_shaft', '4x #forge:rods/titanium', '4x #forge:rods/stainless_steel')
 		.itemOutputs('tfg:titanium_flywheel')
 		.circuit(3)

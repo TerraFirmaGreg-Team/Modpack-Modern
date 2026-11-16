@@ -278,7 +278,7 @@ function processPlatedBlock(event, material) {
 
 	event.shapeless(platedBlock, ['#forge:stone_bricks', plateItem, '#forge:tools/hammers'])
 		.id(`tfg:shapeless/${materialName}_plated_block`)
-	event.recipes.gtceu.assembler(`tfg:${materialName}_plated_block`)
+	event.recipes.gtceu.welder(`tfg:${materialName}_plated_block`)
 		.itemInputs('#forge:stone_bricks', plateItem)
 		.itemOutputs(platedBlock)
 		.circuit(10)
@@ -290,7 +290,7 @@ function processPlatedBlock(event, material) {
 
 	event.shapeless(platedSlab.withCount(2), ['2x #tfg:brick_slabs', plateItem, '#forge:tools/hammers'])
 		.id(`tfg:item_application/${materialName}_plated_slab`)
-	event.recipes.gtceu.assembler(`tfg:${materialName}_plated_slab`)
+	event.recipes.gtceu.welder(`tfg:${materialName}_plated_slab`)
 		.itemInputs('2x #tfg:brick_slabs', plateItem)
 		.itemOutputs(platedSlab.withCount(2))
 		.circuit(10)
@@ -302,7 +302,7 @@ function processPlatedBlock(event, material) {
 
 	event.shapeless(platedStair, ['#tfg:brick_stairs', plateItem, '#forge:tools/hammers'])
 		.id(`tfg:item_application/${materialName}_plated_stair`)
-	event.recipes.gtceu.assembler(`tfg:${materialName}_plated_stair`)
+	event.recipes.gtceu.welder(`tfg:${materialName}_plated_stair`)
 		.itemInputs('#tfg:brick_stairs', plateItem)
 		.itemOutputs(platedStair)
 		.circuit(10)

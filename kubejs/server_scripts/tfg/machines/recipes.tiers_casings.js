@@ -48,7 +48,7 @@ function registerTFGTierCasingRecipes(event) {
 		D: '#forge:tools/wrenches'
 	});
 
-	event.recipes.gtceu.assembler('machine_casing_maldonite')
+	event.recipes.gtceu.welder('tfg:machine_casing_maldonite')
 		.itemInputs('6x #forge:plates/maldonite', 'gtceu:coke_oven_bricks')
 		.itemOutputs('tfg:casings/machine_casing_maldonite')
 		.circuit(6)
@@ -313,7 +313,7 @@ function registerTFGTierCasingRecipes(event) {
 			C: '#forge:tools/wrenches'
 		}).addMaterialInfo().id(`tfg:shaped/${tier}_machine_casing`)
 
-		global.modifyRecipe(event, `gtceu:assembler/casing_${tier}`, {
+		global.modifyRecipe(event, `gtceu:welder/casing_${tier}`, {
 			newId: `tfg:casing_${tier}`,
 			removeItemInputs: [originalPlate],
 			addItemInputs: [`4x ${basePlate}`, `4x ${addedPlate}`]

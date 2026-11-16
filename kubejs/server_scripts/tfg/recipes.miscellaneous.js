@@ -244,7 +244,7 @@ function registerTFGMiscellaneousRecipes(event) {
 
 	// Prismatic Spray Can
 
-	event.recipes.gtceu.assembler('tfg:chemical_prismatic_die')
+	event.recipes.gtceu.mixer('tfg:chemical_prismatic_dye')
 		.itemInputs(
 			Item.of('gtceu:chemical_red_dye',16),
 			Item.of('gtceu:chemical_yellow_dye',16),

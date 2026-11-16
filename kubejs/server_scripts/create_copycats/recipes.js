@@ -139,7 +139,7 @@ const registerCreateCopycatsRecipes = (event) => {
 	})
 
 	// Copycat Fluid Pipe Assembler
-	event.recipes.gtceu.assembler('tfg:copycats/copycat_fluid_pipe')
+	event.recipes.gtceu.welder('tfg:copycats/copycat_fluid_pipe')
 		.itemInputs('2x #forge:plates/zinc')
 		.circuit(3)
 		.itemOutputs('copycats:copycat_fluid_pipe')

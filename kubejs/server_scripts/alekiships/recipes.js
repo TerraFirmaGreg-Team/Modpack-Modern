@@ -46,21 +46,21 @@ const registerAlekishipsRecipes = (event) => {
 		]
 	).tier(2).id('tfg:anvil/alekiships/oarlock/black_bronze')
 
-	event.recipes.gtceu.assembler('tfg:alekiships/oarlock/bronze')
+	event.recipes.gtceu.welder('tfg:alekiships/oarlock/bronze')
 		.itemInputs('2x #forge:ingots/bronze')
 		.circuit(13)
 		.itemOutputs('alekiships:oarlock')
 		.duration(75)
 		.EUt(4)
 
-	event.recipes.gtceu.assembler('tfg:alekiships/oarlock/bismuth_bronze')
+	event.recipes.gtceu.welder('tfg:alekiships/oarlock/bismuth_bronze')
 		.itemInputs('2x #forge:ingots/bismuth_bronze')
 		.circuit(13)
 		.itemOutputs('alekiships:oarlock')
 		.duration(75)
 		.EUt(4)
 
-	event.recipes.gtceu.assembler('tfg:alekiships/oarlock/black_bronze')
+	event.recipes.gtceu.welder('tfg:alekiships/oarlock/black_bronze')
 		.itemInputs('2x #forge:ingots/black_bronze')
 		.circuit(13)
 		.itemOutputs('alekiships:oarlock')
@@ -79,7 +79,7 @@ const registerAlekishipsRecipes = (event) => {
 		]
 	).tier(3).id('tfg:anvil/alekiships/cleat')
 
-	event.recipes.gtceu.assembler('tfg:firmaciv/cleat')
+	event.recipes.gtceu.welder('tfg:firmaciv/cleat')
 		.itemInputs('2x #forge:ingots/wrought_iron')
 		.circuit(14)
 		.itemOutputs('alekiships:cleat')
@@ -103,7 +103,7 @@ const registerAlekishipsRecipes = (event) => {
 		]
 	).tier(3).id('tfg:anvil/alekiships/anchor')
 
-	event.recipes.gtceu.assembler('tfg:alekiships/anchor')
+	event.recipes.gtceu.welder('tfg:alekiships/anchor')
 		.itemInputs('2x #forge:plates/wrought_iron')
 		.circuit(25)
 		.itemOutputs('alekiships:anchor')

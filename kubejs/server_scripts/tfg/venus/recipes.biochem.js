@@ -150,7 +150,7 @@ function registerTFGBiochemRecipes(event) {
 		.circuit(4)
 		.EUt(GTValues.VA[GTValues.IV]);
 
-	event.recipes.gtceu.assembler('tfg:uv_casing')
+	event.recipes.gtceu.welder('tfg:uv_casing')
 		.itemInputs('gtceu:inert_machine_casing', '16x #tfg:components/uv_leds', '#gtceu:circuits/mv')
 		.inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
 		.itemOutputs('tfg:casings/machine_casing_ultraviolet')
@@ -159,7 +159,7 @@ function registerTFGBiochemRecipes(event) {
 		.EUt(GTValues.VA[GTValues.EV])
 		.addMaterialInfo(true);
 
-	event.recipes.gtceu.assembler('tfg:bioculture_casing')
+	event.recipes.gtceu.welder('tfg:bioculture_casing')
 		.itemInputs('gtceu:plascrete', '#forge:frames/desh')
 		.inputFluids(Fluid.of('gtceu:hastelloy_c_276', 288))
 		.itemOutputs('tfg:casings/machine_casing_bioculture')
@@ -168,7 +168,7 @@ function registerTFGBiochemRecipes(event) {
 		.EUt(GTValues.VA[GTValues.HV])
 		.addMaterialInfo(true);
 
-	event.recipes.gtceu.assembler('tfg:bioculture_glass')
+	event.recipes.gtceu.welder('tfg:bioculture_glass')
 		.itemInputs('#forge:frames/desh', ChemicalHelper.get(TagPrefix.dust, GTMaterials.Iron, 1), ChemicalHelper.get(TagPrefix.dust, GTMaterials.Bismuth, 1))
 		.inputFluids(Fluid.of('gtceu:glass', 144))
 		.itemOutputs('tfg:casings/machine_casing_bioculture_glass')

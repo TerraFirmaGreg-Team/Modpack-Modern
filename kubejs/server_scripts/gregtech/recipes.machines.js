@@ -645,7 +645,12 @@ function registerGTCEuMachineRecipes(event) {
 
 	//#region Long distance pipes
 
-	event.recipes.gtceu.assembler('long_distance_item_pipe')
+	event.remove({ id: 'gtceu:assembler/long_distance_item_pipe' })
+	event.remove({ id: 'gtceu:assembler/long_distance_fluid_pipe' })
+	event.remove({ id: 'gtceu:assembler/long_distance_item_endpoint' })
+	event.remove({ id: 'gtceu:assembler/long_distance_fluid_endpoint' })
+
+	event.recipes.gtceu.welder('long_distance_item_pipe')
 		.itemInputs('1x #forge:large_item_pipes/polyvinyl_chloride', '4x #forge:plates/stainless_steel')
 		.inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
 		.itemOutputs('32x gtceu:long_distance_item_pipeline')
@@ -653,7 +658,7 @@ function registerGTCEuMachineRecipes(event) {
 		.circuit(2)
 		.duration(300)
 
-	event.recipes.gtceu.assembler('long_distance_fluid_pipe')
+	event.recipes.gtceu.welder('long_distance_fluid_pipe')
 		.itemInputs('1x #forge:large_fluid_pipes/stainless_steel', '4x #forge:plates/polyvinyl_chloride')
 		.inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
 		.itemOutputs('32x gtceu:long_distance_fluid_pipeline')
@@ -661,7 +666,7 @@ function registerGTCEuMachineRecipes(event) {
 		.circuit(2)
 		.duration(300)
 
-	event.recipes.gtceu.assembler('long_distance_item_endpoint')
+	event.recipes.gtceu.welder('long_distance_item_endpoint')
 		.itemInputs('2x #forge:large_item_pipes/polyvinyl_chloride', '8x #forge:plates/stainless_steel', '2x #forge:gears/stainless_steel')
 		.inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
 		.itemOutputs('2x gtceu:long_distance_item_pipeline_endpoint')
@@ -670,7 +675,7 @@ function registerGTCEuMachineRecipes(event) {
 		.duration(400)
 		.addMaterialInfo(true, true)
 
-	event.recipes.gtceu.assembler('long_distance_fluid_endpoint')
+	event.recipes.gtceu.welder('long_distance_fluid_endpoint')
 		.itemInputs('2x #forge:large_fluid_pipes/stainless_steel', '8x #forge:plates/polyvinyl_chloride', '2x #forge:gears/stainless_steel')
 		.inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
 		.itemOutputs('2x gtceu:long_distance_fluid_pipeline_endpoint')

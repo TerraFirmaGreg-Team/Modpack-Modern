@@ -79,7 +79,7 @@ function registerTFGCoilRecipes(event) {
 		.duration(4 * 20)
 		.EUt(GTValues.VHA[GTValues.LV])
 
-	event.recipes.gtceu.assembler('gtceu:coil_cupronickel')
+	event.recipes.gtceu.spooling('gtceu:coil_cupronickel')
 		.itemInputs('8x #forge:double_wires/cupronickel', '8x #forge:foils/blue_steel', '4x #forge:ingots/magnesia_refractory_brick')
 		.inputFluids('gtceu:tin_alloy 144')
 		.itemOutputs('gtceu:cupronickel_coil_block')
@@ -91,8 +91,7 @@ function registerTFGCoilRecipes(event) {
 
 	// #region Kanthal Coil
 
-	event.remove({ id: 'gtceu:assembler/coil_kanthal' })
-	event.recipes.gtceu.assembler('tfg:coil_kanthal')
+	event.recipes.gtceu.spooling('gtceu:coil_kanthal')
 		.itemInputs('8x #forge:double_wires/kanthal', '16x #forge:foils/rene_41', '1x #forge:ingots/silicon_carbide')
 		.inputFluids('gtceu:cobalt 144')
 		.itemOutputs('gtceu:kanthal_coil_block')
@@ -144,8 +143,7 @@ function registerTFGCoilRecipes(event) {
 	event.smelting('tfg:fired_chorus_ceramic_insulation', 'tfg:chorus_ceramic_insulation')
 		.id('tfg:smelting/chorus_ceramic_insulation')
 	
-	event.remove({ id: 'gtceu:assembler/coil_nichrome' })
-	event.recipes.gtceu.assembler('tfg:coil_nichrome')
+	event.recipes.gtceu.spooling('gtceu:coil_nichrome')
 		.itemInputs('8x #forge:double_wires/nichrome', '8x tfg:blue_alloy_desh_foil', '4x tfg:fired_chorus_ceramic_insulation')
 		.inputFluids(Fluid.of('gtceu:magnalium', 144 * 4))
 		.itemOutputs('gtceu:nichrome_coil_block')
@@ -157,8 +155,7 @@ function registerTFGCoilRecipes(event) {
 
 	// #region RTM Coil
 
-	event.remove({ id : 'gtceu:assembler/coil_rtm_alloy' })
-	event.recipes.gtceu.assembler('tfg:coil_rtm_alloy')
+	event.recipes.gtceu.spooling('gtceu:coil_rtm_alloy')
 		.itemInputs('8x #forge:double_wires/rtm_alloy', '8x #forge:foils/palladium', '4x #forge:insulation_t2/sheet')
 		.inputFluids('tfg:nichromium_iodomethylate 244')
 		.itemOutputs('gtceu:rtm_alloy_coil_block')
@@ -176,10 +173,8 @@ function registerTFGCoilRecipes(event) {
 
 	// #region HSS-G
 
-	event.remove({ id : 'gtceu:assembler/coil_hssg' })
-	event.recipes.gtceu.assembler('tfg:coil_hssg')
-		// TODO: Replace the tungsten carbide foil with zirconium diboride
-		.itemInputs('8x #forge:double_wires/hssg', '8x #forge:foils/tungsten_carbide', '#forge:insulation_t3/sheet')
+	event.recipes.gtceu.spooling('gtceu:coil_hssg')
+		.itemInputs('8x #forge:double_wires/hssg', '8x #forge:foils/zirconium_diboride', '#forge:insulation_t3/sheet')
 		// TODO: Replace tungsten liquid with something else from venus
 		.inputFluids('gtceu:tungsten 144')
 		.itemOutputs('gtceu:hssg_coil_block')
