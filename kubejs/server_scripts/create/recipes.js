@@ -148,7 +148,7 @@ const registerCreateRecipes = (event) => {
 		B: '#forge:tools/hammers'
 	}).id('tfg:create/shaped/basin')
 
-	event.recipes.gtceu.welder('tfg:create/basin')
+	event.recipes.gtceu.assembler('tfg:create/basin')
 		.itemInputs('3x #forge:ingots/iron')
 		.circuit(3)
 		.itemOutputs('create:basin')
@@ -175,7 +175,7 @@ const registerCreateRecipes = (event) => {
 		B: '#forge:tools/hammers'
 	}).id('tfg:create/shaped/chute')
 
-	event.recipes.gtceu.welder('tfg:create/chute')
+	event.recipes.gtceu.assembler('tfg:create/chute')
 		.itemInputs('3x #forge:plates/wrought_iron')
 		.circuit(4)
 		.itemOutputs('create:chute')
@@ -255,7 +255,7 @@ const registerCreateRecipes = (event) => {
 		E: '#forge:tools/wrenches'
 	}).id('tfg:create/shaped/fluid_tank')
 
-	event.recipes.gtceu.welder('create:fluid_tank')
+	event.recipes.gtceu.assembler('create:fluid_tank')
 		.itemInputs('2x #forge:bolts/copper', '2x #forge:plates/copper', '#forge:glass_panes')
 		.itemOutputs('create:fluid_tank')
 		.circuit(4)
@@ -1235,7 +1235,7 @@ const registerCreateRecipes = (event) => {
 			B: `#forge:bolts/${material.metal}`
 		}).id(`tfg:create/shaped/metal_girder_from_${material.metal}`)
 
-		event.recipes.gtceu.welder(`tfg:create/metal_girder_from_${material.metal}`)
+		event.recipes.gtceu.assembler(`tfg:create/metal_girder_from_${material.metal}`)
 			.itemInputs(`3x #forge:plates/${material.metal}`, `3x #forge:bolts/${material.metal}`)
 			.itemOutputs(`${material.amount}x create:metal_girder`)
 			.duration(100)

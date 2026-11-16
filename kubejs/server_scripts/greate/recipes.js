@@ -490,14 +490,14 @@ function registerGreateRecipes(event) {
 	], {
 		A: '#gtceu:circuits/ulv',
 		B: 'gtceu:cobalt_brass_buzz_saw_blade',
-		C: 'gtceu:lv_electric_motor',
+		C: 'create:precision_mechanism',
 		D: 'gtceu:ulv_machine_hull',
 		E: 'greate:steel_shaft',
 		F: '#forge:tools/wrenches'
 	}).id('greate:shaped/steel_mechanical_saw')
 
 	event.recipes.gtceu.assembler('greate:steel_mechanical_saw')
-		.itemInputs('gtceu:ulv_machine_hull', 'greate:steel_shaft', '2x #gtceu:circuits/ulv', 'gtceu:cobalt_brass_buzz_saw_blade', '2x gtceu:lv_electric_motor')
+		.itemInputs('gtceu:ulv_machine_hull', 'greate:steel_shaft', '2x #gtceu:circuits/ulv', 'gtceu:cobalt_brass_buzz_saw_blade', '2x create:precision_mechanism')
 		.itemOutputs('greate:steel_mechanical_saw')
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.ULV])
