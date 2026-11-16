@@ -576,6 +576,8 @@ function processSmallGear(event, material) {
 	if (smallGearItem.isEmpty())
 		return;
 
+	event.remove({ id: `gtceu:shaped/small_gear_${material.getName()}` })
+
 	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
 	if (tfcProperty !== null) {
 		addTFCMelting(event, smallGearItem, material, 144, 'small_gear');

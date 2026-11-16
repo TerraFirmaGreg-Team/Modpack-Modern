@@ -76,7 +76,7 @@
             "id": "/emi:/crafting/shulker_box_dying/minecraft/[^*]+/"
         },
         {
-            "id": "/create:create.toolbox.color.block.create.[^*]+/"
+            "id": "/.+create.toolbox.color.+/"
         },
         {
             "id": "/sophisticatedbackpacks:single_color_[^*]+/"
