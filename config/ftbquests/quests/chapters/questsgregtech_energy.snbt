@@ -77,6 +77,9 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["557AE858C52DA4CE"]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
 			id: "209534D6A044F941"
 			tasks: [{
 				id: "70125EC6A1C5800C"
@@ -87,16 +90,31 @@
 			y: 2.0d
 		}
 		{
+			dependencies: [
+				"1A37EA02D048A34E"
+				"209534D6A044F941"
+			]
 			id: "46DD45EC8E23E463"
-			tasks: [{
-				id: "29CE9110F18093CE"
-				item: "gtceu:lpg_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "29CE9110F18093CE"
+					item: "gtceu:lpg_bucket"
+					type: "item"
+				}
+				{
+					id: "0BC37CA4FEA11FA7"
+					item: "tfg:gas_well"
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: -10.5d
 			y: 3.0d
 		}
 		{
+			dependencies: ["557AE858C52DA4CE"]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
 			id: "1A37EA02D048A34E"
 			tasks: [{
 				id: "316CAC4D976056A1"
@@ -107,6 +125,11 @@
 			y: 4.0d
 		}
 		{
+			dependencies: [
+				"209534D6A044F941"
+				"1A37EA02D048A34E"
+			]
+			dependency_requirement: "one_completed"
 			id: "46D0AE2B2F10BD50"
 			tasks: [{
 				id: "2DCE6D021F9D08F1"
@@ -147,6 +170,8 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["557AE858C52DA4CE"]
+			hide_dependency_lines: true
 			id: "53E277FD1D0BC3FD"
 			tasks: [{
 				id: "089466805B42B29B"
@@ -157,6 +182,8 @@
 			y: 6.0d
 		}
 		{
+			dependencies: ["557AE858C52DA4CE"]
+			hide_dependency_lines: true
 			id: "4201385A6C2D8E1C"
 			tasks: [{
 				id: "4FAAF27BE204293F"
@@ -207,6 +234,11 @@
 			y: 10.0d
 		}
 		{
+			dependencies: [
+				"283B1303732EEF65"
+				"657B5D1787CA090B"
+			]
+			dependency_requirement: "one_completed"
 			id: "2087DDA548CBB1F1"
 			tasks: [{
 				id: "0C7802BDB4C719C7"
@@ -239,6 +271,11 @@
 			y: 11.0d
 		}
 		{
+			dependencies: [
+				"283B1303732EEF65"
+				"657B5D1787CA090B"
+			]
+			dependency_requirement: "one_completed"
 			id: "11357EA46374EF9D"
 			tasks: [{
 				id: "7CB6FC18DC33B133"
@@ -880,20 +917,63 @@
 			y: -4.0d
 		}
 		{
-			description: ["{quests.gregtech_energy.start.desc}"]
+			description: [
+				"In &2GregTech&r, the ways to produce power are quite different from each other, and each of them has its own progression. Each new tier usually brings a way to enhance your power production along a certain path. In &2TerraFirmaGreg&r, you have three main paths of progression: &dSteam,&r &9Combustion&r and &bGas,&r each with its own &apros&r and &ccons&r.\\n\\nDon't try to look for the best one, because &6it does not exist&r. Some will be &6cheaper&r material-wise, while others will require &6complex processing&r to make their fuels but can be easy to expand.\\n\\nIn this chapter, you will find all the information you need about the &6advantages&r and &6disadvantages&r of each path. It is also important to remember that nothing is set in stone: you could switch to a different power generation method, or even use a bit of all of them.\\n\\nBut it does not stop here: on every new &2celestial body&r you explore, you will discover a local way to produce power."
+				"{@pagebreak}"
+			]
 			icon: "gtceu:uhv_ultimate_battery"
 			id: "2F0CD42A688917F1"
 			shape: "gear"
 			size: 3.0d
-			subtitle: "{quests.gregtech_energy.start.subtitle}"
+			subtitle: "Choosing a Path"
 			tasks: [{
 				id: "5BAE421E4F265D4F"
 				title: "{quests.gregtech_energy.start.task}"
 				type: "checkmark"
 			}]
-			title: "{quests.gregtech_energy.start.title}"
+			title: "The Energy Progression in Gregtech"
 			x: -15.0d
 			y: 0.0d
+		}
+		{
+			id: "5FD9C677998F88B7"
+			tasks: [{
+				id: "28B880A49BA501F3"
+				title: "The Gas Path"
+				type: "checkmark"
+			}]
+			x: -12.5d
+			y: 3.0d
+		}
+		{
+			id: "0D8C2C1F7C94DFDC"
+			tasks: [{
+				id: "359BF16DD12E8C66"
+				title: "The Combustion Path"
+				type: "checkmark"
+			}]
+			x: -12.5d
+			y: 7.0d
+		}
+		{
+			id: "1321B90A468FE1CA"
+			tasks: [{
+				id: "480E61B08B9F629F"
+				title: "The Steam Path"
+				type: "checkmark"
+			}]
+			x: -12.5d
+			y: 11.0d
+		}
+		{
+			id: "1F2AC774D587326B"
+			tasks: [{
+				id: "4A213DF1DE9BD8AC"
+				title: "The Extraterestrial Pathes"
+				type: "checkmark"
+			}]
+			x: -12.5d
+			y: -2.0d
 		}
 	]
 	title: "{quests.gregtech_energy}"

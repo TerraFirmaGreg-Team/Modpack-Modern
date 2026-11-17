@@ -279,7 +279,7 @@ function registerTFGCasingRecipes(event) {
 		.addMaterialInfo(true)
 
 	event.recipes.gtceu.welder('machine_casing_black_steel')
-		.itemInputs('1x #forge:plates/black_steel', '#forge:frames/bronze')
+		.itemInputs('2x #forge:plates/black_steel', '#forge:frames/bronze')
 		.itemOutputs('2x tfg:casings/machine_casing_black_steel')
 		.circuit(6)
 		.duration(2.5 * 20)
@@ -288,7 +288,7 @@ function registerTFGCasingRecipes(event) {
 
 	event.shaped('2x tfg:casings/machine_casing_black_steel', [
 		' B ',
-		'AC ',
+		'ACA',
 		' D '
 	], {
 		A: '#forge:plates/black_steel',
