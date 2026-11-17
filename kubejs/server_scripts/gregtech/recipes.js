@@ -833,9 +833,9 @@ const registerGTCEURecipes = (event) => {
 	// Add a shaped recipe to the Low Voltage Coil so they can be craft pre Assembler
 
 	event.recipes.create.sequenced_assembly(['gtceu:lv_voltage_coil'], 'gtceu:magnetic_iron_rod', [
-	event.recipes.create.deploying('tfg:incomplete_lv_voltage_coil', ['tfg:incomplete_lv_voltage_coil', 'gtceu:fine_steel_wire'])
+	event.recipes.create.deploying('gtceu:magnetic_iron_rod', ['gtceu:magnetic_iron_rod', 'gtceu:fine_steel_wire'])
 	])
-		.transitionalItem('tfg:incomplete_lv_voltage_coil')
+		.transitionalItem('gtceu:magnetic_iron_rod')
 		.loops(16)
 		.id('tfg:sequenced_assembly/lv_voltage_coil');
 
