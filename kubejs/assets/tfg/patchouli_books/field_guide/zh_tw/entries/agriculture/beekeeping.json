@@ -333,7 +333,7 @@
             "anchor": "honey_and_wax",
             "type": "patchouli:spotlight",
             "item": "firmalife:jar/honey,firmalife:raw_honey,firmalife:beeswax",
-            "text": "蜜蜂會生產$(thing)蜂蜜$()。手持空罐對有蜂蜜的蜂箱按 $(item)$(k:key.use)$()，可獲得$(thing)蜂蜜罐$()；打開後得到$(thing)生蜂蜜$()，可代替$(thing)糖$()。$(br2)手持$(thing)刀$()對填滿的巢框按 $(item)$(k:key.use)$()，可獲得用途廣泛的$(thing)蜂蠟$()，但會殺死巢框中的蜂后！"
+            "text": "蜜蜂會產$(thing)蜂蜜$()。拿著空罐對有蜂蜜的蜂箱按 $(item)$(k:key.use)$()，可獲得$(thing)蜂蜜罐$()；開罐後得到$(thing)生蜂蜜$()，可代替$(thing)糖$()。$(br2)拿著$(thing)刀$()對填滿的巢框按 $(item)$(k:key.use)$()，可獲得用途廣泛的$(thing)蜂蠟$()，但會殺死巢框中裡的蜂后！"
         },
         {
             "type": "patchouli:text",

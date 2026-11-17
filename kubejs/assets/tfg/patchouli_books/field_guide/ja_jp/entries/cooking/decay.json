@@ -271,8 +271,12 @@
             "text": "貯蔵庫は、食品の保存や$(l:cooking/cheese#cheese_wheel)チーズの熟成$()に利用されます。食品を収納するには、$(l:cooking/decay#shelf)食品棚$()や$(l:cooking/decay#shelf)吊り下げ棚$()を使用するか、チーズを床や$(thing)バレルラック$()の上に置くことで行います。$(br2)貯蔵庫は、$(l:the_world/climate#temperature)低温環境$()においてより高い性能を発揮します。$(li)$(2)0°C以上：$() 棚 0.4、吊り下げ 0.35$(li)$(2)0°C以下：$() 棚 0.35、吊り下げ 0.3$(li)$(2)-12°C以下：$() 棚 0.25、吊り下げ 0.25"
         },
         {
+            "type": "patchouli:text",
+            "text": "貯蔵庫の構造例。"
+        },
+        {
             "type": "tfg:multimultiblock",
-            "text": "貯蔵庫の構造例。",
+            "text": "$(item)食料棚$() および $(item)吊り下げ棚$() には、1種類の食料アイテムを1スタック分収納できます。アイテムの追加や取り出しは、$(item)$(k:key.use)$() または、フルスタックの場合は $(item)$(k:key.sneak) + $(k:key.use)$() で行えます。有効な食料棚や吊り下げ棚に収納されたアイテムには、壺よりも優れた劣化補正値が適用され、$(thing)平均温度$() が低下するにつれてその値は増加します。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -325,7 +329,7 @@
                             "AEEEEEEEA",
                             "A       A",
                             "A       A",
-                            "AC      B",
+                            "AC  F   B",
                             "A       A",
                             "A       A",
                             "AWWWWWWWA",
@@ -350,7 +354,8 @@
                         "W": "firmalife:wood/food_shelf/pine[facing=west]",
                         "B": "firmalife:sealed_door[facing=north,half=lower,hinge=right]",
                         "T": "firmalife:sealed_door[facing=north,half=upper,hinge=right]",
-                        "H": "firmalife:wood/hanger/pine"
+                        "H": "firmalife:wood/hanger/pine",
+                        "F": "tfc:wood/barrel/pine[sealed=true]"
                     }
                 },
                 {
@@ -404,7 +409,7 @@
                             "AEEEEEEE ",
                             "A        ",
                             "A        ",
-                            "AC       ",
+                            "AC  F    ",
                             "A        ",
                             "A        ",
                             "AWWWWWWW ",
@@ -429,7 +434,8 @@
                         "W": "firmalife:wood/food_shelf/pine[facing=west]",
                         "B": "firmalife:sealed_door[facing=north,half=lower,hinge=right]",
                         "T": "firmalife:sealed_door[facing=north,half=upper,hinge=right]",
-                        "H": "firmalife:wood/hanger/pine"
+                        "H": "firmalife:wood/hanger/pine",
+                        "F": "tfc:wood/barrel/pine[sealed=true]"
                     }
                 }
             ]
@@ -437,46 +443,46 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "shelf",
-            "title": "貯蔵庫での保管方法",
-            "item": "tag:firmalife:food_shelves,tag:firmalife:hangers",
-            "text": "$(item)食料棚$() および $(item)吊り下げ棚$() には、1種類の食料アイテムを1スタック分収納できます。アイテムの追加や取り出しは、$(item)$(k:key.use)$() または、フルスタックの場合は $(item)$(k:key.sneak) + $(k:key.use)$() で行えます。有効な食料棚や吊り下げ棚に収納されたアイテムには、壺よりも優れた劣化補正値が適用され、$(thing)平均温度$() が低下するにつれてその値は増加します。"
-        },
-        {
-            "type": "patchouli:spotlight",
-            "anchor": "lunch_box",
             "title": "ランチボックス",
-            "item": "tfclunchbox:lunchbox,tfclunchbox:cooling_lunchbox,tfclunchbox:electric_lunchbox",
+            "item": "tag:firmalife:food_shelves,tag:firmalife:hangers,tag:tfc:barrels",
             "text": "ランチボックスは、食べ物を持ち運び、食べるための便利な手段です。基本的なお弁当箱は、$(5)$(bold)保存済み$()という特性を与え、一方、$(item)冷却$()および$(item)電動ランチボックス$()は、補正値0.3を持つ$(9)$(bold)冷却$()という特性を備えています。$(br2)冷却ランチボックスは、食品を保存するために$(item)氷$()を消費し、電動ランチボックスは$(2)EU$()エネルギーを消費します。"
         },
         {
             "type": "patchouli:spotlight",
-            "anchor": "refrigerator",
+            "anchor": "lunch_box",
             "title": "冷蔵庫",
-            "item": "tfg:mv_food_refrigerator,tfg:hv_food_refrigerator,tfg:ev_food_refrigerator,tfg:iv_food_refrigerator",
+            "item": "tfclunchbox:lunchbox,tfclunchbox:cooling_lunchbox,tfclunchbox:electric_lunchbox",
             "text": "冷蔵庫は $(tfg_short)で追加され、$(2)EU$() を消費して、補正値0.125 の$(3)$(bold)冷蔵保存$() 特性を与えます。$(br)より高いティアの冷蔵庫は、保存効果が強くなったりはせず、利用可能な収納スペースにのみ影響します。また、冷蔵庫は賞味期限の異なる食品を自動的に１つのスタックにまとめることもできます。"
         },
         {
             "type": "patchouli:spotlight",
-            "anchor": "freeze_dry",
+            "anchor": "refrigerator",
             "title": "フリーズドライ",
-            "item": "tfg:food/meal_bag,tfg:food/freeze_dried_fruit,tfg:food/calorie_paste",
+            "item": "tfg:mv_food_refrigerator,tfg:hv_food_refrigerator,tfg:ev_food_refrigerator,tfg:iv_food_refrigerator",
             "text": "$(tfg_short) により、$(item)自動調理機$() 内で特定の食品を凍結乾燥させ、保存期間を大幅に延長できるようになります。凍結乾燥を行うと、$(7)$(bold)フリーズドライ$() という特性が付与され、補正値は 0.02 となります。"
         },
         {
-            "type": "patchouli:text",
-            "anchor": "pest",
+            "type": "patchouli:spotlight",
+            "anchor": "freeze_dry",
             "title": "ネズミ",
+            "item": "tfg:food/meal_bag,tfg:food/freeze_dried_fruit,tfg:food/calorie_paste",
             "text": "チェストの中に放置された食べ物は $(thing)ネズミ$() を引き寄せる可能性があるため、食べ物は容器や地下室、冷蔵庫などに適切に保管するようにしてください。ネズミは容器を開けて中の食べ物を食べてしまうことがあります。ネズミが近づくと、「$(thing)この容器から悪臭がする$()」というメッセージが表示されます。なお、画面を離れる前に大きな壺の蓋を開けてから再び閉めても、ネズミを引き寄せることは決してないという点に注意してください。"
         },
         {
             "type": "patchouli:text",
-            "anchor": "cutting",
+            "anchor": "pest",
             "title": "切り落とし",
             "text": "最後に、マウスカーソルで $(item)ナイフ$() を持ち、インベントリ内にある部分的に劣化した食料のスタックを $(item)右クリック$() することで、劣化した部分を切り取ることができます。$(br2)これにより、劣化具合に比例してアイテムの量が減少する一方で、劣化はリセットされます。"
         },
         {
-            "type": "patchouli:relations",
+            "type": "patchouli:text",
+            "anchor": "cutting",
             "title": "関連項目",
+            "text": "Lastly, you can cut off the decayed part of food by picking up a $(item)knife$() with your cursor and $(item)right-clicking$() a partially decayed food item stack in your inventory.$(br2)This will reset the decay while losing some of the item stack, proportional to how decayed it was."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/food_and_water",
@@ -494,19 +500,19 @@
         "tfc:powder/salt": 14,
         "firmalife:drying_mat": 17,
         "firmalife:solar_drier": 18,
-        "tag:firmalife:food_shelves": 23,
-        "tag:firmalife:hangers": 23,
-        "tfclunchbox:lunchbox": 24,
-        "tfclunchbox:cooling_lunchbox": 24,
-        "tfclunchbox:electric_lunchbox": 24,
-        "tfg:mv_food_refrigerator": 25,
-        "tfg:hv_food_refrigerator": 25,
-        "tfg:ev_food_refrigerator": 25,
-        "tfg:iv_food_refrigerator": 25,
-        "tfg:food/meal_bag": 26,
-        "tfg:food/freeze_dried_fruit": 26,
-        "tfg:food/calorie_paste": 26,
-        "tfg:dry_ice": 26,
-        "tfg:foil_pack": 26
+        "tag:firmalife:food_shelves": 24,
+        "tag:firmalife:hangers": 24,
+        "tfclunchbox:lunchbox": 25,
+        "tfclunchbox:cooling_lunchbox": 25,
+        "tfclunchbox:electric_lunchbox": 25,
+        "tfg:mv_food_refrigerator": 26,
+        "tfg:hv_food_refrigerator": 26,
+        "tfg:ev_food_refrigerator": 26,
+        "tfg:iv_food_refrigerator": 26,
+        "tfg:food/meal_bag": 27,
+        "tfg:food/freeze_dried_fruit": 27,
+        "tfg:food/calorie_paste": 27,
+        "tfg:dry_ice": 27,
+        "tfg:foil_pack": 27
     }
 }
