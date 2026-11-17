@@ -49,7 +49,7 @@
             "anchor": "plow",
             "title": "犁地車",
             "item": "tag:tfcastikorcarts:plow",
-            "text": "$(item)犁地車$()可按$(item)$(k:key.astikorcarts.desc)$()套在騎乘的動物身上，也可手動拉。犁地車可放 3 個工具，按$(item)$(k:key.sneak)-$(k:key.use)$()開啟。按$(item)$(k:key.use)$()啟用後，犁地車會對下方方塊使用這些工具，也就是能用$(thing)鋤頭和鐮刀$()耕地、用$(thing)鏟子和鍬$()鋪路，甚至用$(thing)斧頭$()為原木剝皮。"
+            "text": "$(item)犁地車$()可按$(item)$(k:key.astikorcarts.desc)$()套在騎乘的動物身上，也可手動拉。犁地車可放 3 個工具，按$(item)$(k:key.sneak)-$(k:key.use)$()開啟。按$(item)$(k:key.use)$()啟用後，犁地車會對下方方塊使用這些工具，也就是能用$(thing)鋤頭和鐮刀$()耕地、用$(thing)鏟和鍬$()鋪路，甚至用$(thing)斧頭$()為原木剝皮。"
         },
         {
             "type": "patchouli:entity",
