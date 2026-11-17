@@ -209,6 +209,9 @@
     "tfg.tooltip.machine.large_generator_1": "§aMax Voltage OUT:§r Scale with the §bBattery Dynamo Hatch§r",
     "tfg.tooltip.machine.large_generator_2": "The Large Generator does not have a better efficiency but is cheaper that crafting four single Generators. It will always output 4A in the §bBattery Dynamo Hatch§r.",
 
+    "tfg.tooltip.generator_exhaust.generator": "§7Exhaust for the §f%s§7.",
+    "tfg.tooltip.generator_exhaust.tier": "§7Sets the Large Generator to %1$s§7, requires a %1$s §fBattery Dynamo Hatch§7.",
+
     "tfg.tooltip.component.blue_ice": "Can be placed inside a Fission Reactor to increase the maximum heat by §90.5§r",
     "tfg.tooltip.component.aes_insulation_frame": "Can be placed inside a Fission Reactor to increase the maximum heat by §91§r",
     "tfg.tooltip.component.glacian_fur": "Can be placed inside a Fission Reactor to increase the maximum heat by §92§r",

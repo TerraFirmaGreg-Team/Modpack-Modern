@@ -474,6 +474,8 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["69A1834DBD52D1BC"]
+			hide_dependency_lines: true
 			id: "4BDF344CD7E7C885"
 			tasks: [{
 				id: "3CBBD93AC5A49994"
@@ -484,6 +486,8 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["69A1834DBD52D1BC"]
+			hide_dependency_lines: true
 			id: "37328927206DDD9C"
 			tasks: [{
 				id: "5CBF335AF254E6B7"
@@ -514,6 +518,8 @@
 			y: 7.0d
 		}
 		{
+			dependencies: ["44B9B4A30BFB2CA6"]
+			hide_dependency_lines: true
 			id: "2A44178E39B92518"
 			tasks: [{
 				id: "34A7B232B41B32C6"
@@ -524,6 +530,8 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["69A1834DBD52D1BC"]
+			hide_dependency_lines: true
 			id: "30144ACC662A08C9"
 			tasks: [{
 				id: "6E9636F50C98B28B"
@@ -534,6 +542,8 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["1BC91EA8CEECCE85"]
+			hide_dependency_lines: true
 			id: "0B0A844DAF3DFBC9"
 			tasks: [{
 				id: "29A00EFCA0F3C626"
@@ -604,6 +614,8 @@
 			y: 12.0d
 		}
 		{
+			dependencies: ["69A1834DBD52D1BC"]
+			hide_dependency_lines: true
 			id: "5DE2F226D7FFF6FA"
 			tasks: [{
 				id: "44D49A3989EE16CE"
@@ -631,11 +643,13 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["3E180A97A1B48FD1"]
 			description: [
 				"{quests.gregtech_energy.lce.desc.1}"
 				"{@pagebreak}"
 				"{quests.gregtech_energy.lce.desc.2}"
 			]
+			hide_dependency_lines: true
 			id: "70D0BD23F5DC99D7"
 			subtitle: "{quests.gregtech_energy.lce.subtitle}"
 			tasks: [{
@@ -661,7 +675,9 @@
 			y: 7.0d
 		}
 		{
+			dependencies: ["3E180A97A1B48FD1"]
 			description: ["{quests.gregtech_energy.large_solar_t3.desc}"]
+			hide_dependency_lines: true
 			id: "7DB3EC7D1FD4CFE3"
 			optional: true
 			subtitle: "{quests.gregtech_energy.large_solar_t3.subtitle}"
@@ -674,11 +690,13 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["3E180A97A1B48FD1"]
 			description: [
 				"{quests.gregtech_energy.cooling_tower.desc.1}"
 				"{@pagebreak}"
 				"{quests.gregtech_energy.cooling_tower.desc.2}"
 			]
+			hide_dependency_lines: true
 			icon: "tfg:cooling_tower"
 			id: "2C90574127589324"
 			subtitle: "{quests.gregtech_energy.cooling_tower.subtitle}"
@@ -764,6 +782,7 @@
 			y: 11.0d
 		}
 		{
+			dependencies: ["3E180A97A1B48FD1"]
 			description: [
 				"{quests.gregtech_energy.smr.desc.1}"
 				"{@pagebreak}"
@@ -771,6 +790,7 @@
 				"{@pagebreak}"
 				"{quests.gregtech_energy.smr.desc.3}"
 			]
+			hide_dependency_lines: true
 			icon: "tfg:smr_generator"
 			id: "76915C9B03238E6F"
 			subtitle: "{quests.gregtech_energy.smr.subtitle}"
@@ -826,6 +846,7 @@
 			y: 12.0d
 		}
 		{
+			dependencies: ["69A1834DBD52D1BC"]
 			description: [
 				"{quests.gregtech_energy.fission_reactor.desc.1}"
 				"{@pagebreak}"
@@ -843,6 +864,7 @@
 				"{@pagebreak}"
 				"{quests.gregtech_energy.fission_reactor.desc.8}"
 			]
+			hide_dependency_lines: true
 			icon: "deafission:fission_reactor_mk1"
 			id: "6D0D2C3B9B83ABFB"
 			subtitle: "{quests.gregtech_energy.fission_reactor.subtitle}"
@@ -893,6 +915,8 @@
 			y: 7.0d
 		}
 		{
+			dependencies: ["3E180A97A1B48FD1"]
+			hide_dependency_lines: true
 			id: "2592B1C375AE8F2E"
 			tasks: [{
 				id: "4805D53D3059C19C"
@@ -903,6 +927,8 @@
 			y: 8.0d
 		}
 		{
+			dependencies: ["69A1834DBD52D1BC"]
+			hide_dependency_lines: true
 			id: "5EB42B00702FBB61"
 			tasks: [{
 				id: "4B82F4263BABFBE1"
@@ -921,6 +947,8 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["69A1834DBD52D1BC"]
+			hide_dependency_lines: true
 			id: "1B211CE500AC2B5C"
 			tasks: [{
 				id: "7B9653E5310DAA9A"
@@ -931,6 +959,8 @@
 			y: 10.0d
 		}
 		{
+			dependencies: ["69A1834DBD52D1BC"]
+			hide_dependency_lines: true
 			id: "60C1FD60F887745C"
 			tasks: [{
 				id: "34782C91F371DB91"
@@ -969,6 +999,8 @@
 			y: 11.0d
 		}
 		{
+			dependencies: ["3E180A97A1B48FD1"]
+			hide_dependency_lines: true
 			id: "26D231383B6FA577"
 			tasks: [{
 				id: "4F1B21BE9C48E4C8"
@@ -979,6 +1011,8 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["3E180A97A1B48FD1"]
+			hide_dependency_lines: true
 			id: "23551554394FB5A6"
 			tasks: [{
 				id: "632B587D57CA0D7E"
@@ -997,6 +1031,8 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["3E180A97A1B48FD1"]
+			hide_dependency_lines: true
 			id: "1618928C0367A21D"
 			tasks: [{
 				id: "1486BEE23863F20B"

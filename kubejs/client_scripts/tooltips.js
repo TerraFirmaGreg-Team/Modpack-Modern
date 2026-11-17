@@ -607,4 +607,23 @@ const registerTooltips = (event) => {
 			}
 		} catch (e) {/** */}
 	})
+
+	//#region Generator Exhausts
+
+	const GENERATOR_EXHAUST_TIERS = { lv: '§7LV', mv: '§bMV', hv: '§6HV' };
+	const GENERATOR_EXHAUSTS = [
+		{ name: 'gas_exhaust', generator: 'block.tfg.large_gas_generator', tiers: ['lv', 'mv', 'hv'] },
+		{ name: 'combustion_exhaust', generator: 'block.tfg.large_combustion_generator', tiers: ['lv', 'mv', 'hv'] },
+		{ name: 'steam_exhaust', generator: 'block.tfg.large_steam_generator', tiers: ['lv', 'mv'] }
+	];
+	GENERATOR_EXHAUSTS.forEach(exhaust => {
+		exhaust.tiers.forEach(tier => {
+			event.addAdvanced([`tfg:casings/${exhaust.name}_${tier}`], (item, advanced, text) => {
+				text.add(1, Text.translate('tfg.tooltip.generator_exhaust.generator', Text.translate(exhaust.generator)));
+				text.add(2, Text.translate('tfg.tooltip.generator_exhaust.tier', GENERATOR_EXHAUST_TIERS[tier]));
+			})
+		})
+	})
+
+	//#endregion
 }
