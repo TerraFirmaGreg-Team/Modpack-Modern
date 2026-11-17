@@ -299,7 +299,7 @@
 	"quests.low_voltage.bakelite.desc.1": "你的第一種聚合物！將酚醛樹脂與石綿或防腐塑合板混合即可。\n\n酚醛樹脂將用來製作酚醛電路板與 &bMV&r 機器外殼，建議大量生產，不過到了 &bMV&r 階段就會改用聚乙烯。\n\n現在 &8ULV&r 與 &7LV&r 機器外殼也有更便宜的配方了！",
 	"quests.low_voltage.bakelite.desc.2": "&l&3背景知識：&r&o酚醛樹脂是第一種以合成原料製成的塑膠。史上第一種塑膠是帕克辛，但它需要硝化纖維素，而硝化纖維素的配方鏈非常長，對 &7&oLV&r&o 階段來說太長了。\n\n史上第二種塑膠是酪素塑膠，以牛奶蛋白和甲醛製成，但牛奶很難自動化生產。",
 	"quests.low_voltage.lv_forming_press.subtitle": "沖壓機床會沖壓……",
-	"quests.low_voltage.lv_forming_press.desc": "這台機器通常用途不多，但在 TFG 中，若仍因故需要 TFC 的焊接配方，它可以執行，也能輕鬆複製任何擠出模具或鑄模。\n\n更緊迫的是(沒錯，雙關)，你需要它來製作下一批電路的必要組件：&a酚醛電路基板&r。\n\n到了 &bMV&r 就能使用更便宜的配方。",
+	"quests.low_voltage.lv_forming_press.desc": "這台機器通常用途不多，但在 TFG 中，若仍因故需要 TFC 的焊接配方，它可以執行，也能輕鬆複製任何擠出模具或鑄模。\n\n最「壓」軸的是(沒錯，雙關)，你需要它來製作下一批電路的必要組件：&a酚醛電路基板&r。\n\n到了 &bMV&r 就能使用更便宜的配方。",
 	"quests.low_voltage.lv_laser_engraver.subtitle": "咻咻！",
 	"quests.low_voltage.lv_laser_engraver.desc": "製作機械動力物流系統的發訊線圈需要&7LV&r 雷射雕刻機。除此之外，可惜它只能做磨製石頭。\n\n到了 &bMV&r，你會更常和雷射打交道。",
 	"quests.low_voltage.geologic_vulcanizer.subtitle": "一應俱全",
