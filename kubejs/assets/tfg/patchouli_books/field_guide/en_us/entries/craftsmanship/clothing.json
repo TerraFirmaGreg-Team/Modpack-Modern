@@ -120,7 +120,7 @@
 			"type": "patchouli:spotlight",
 			"anchor": "fully_insulated",
 			"title": "Fully Insulating",
-			"item": "gtceu:nanomuscle_chestplate,ad_astra:space_suit",
+			"item": "gtceu:nano_fiber_chestplate,ad_astra:space_suit",
 			"text": "Lastly, some advanced armors will also provide $(thing)full insulation$() from the outside world, preventing your $(l:game_mechanics/player_temperature)player temperature$() from going lower than 5°C or above 25°C."
 		},
 		{

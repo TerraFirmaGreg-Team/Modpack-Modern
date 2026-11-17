@@ -137,7 +137,7 @@
 				}
 			]
 			title: "{quests.steam_age.miner.title}"
-			x: -8.5d
+			x: -8.0d
 			y: 18.0d
 		}
 		{
@@ -431,11 +431,11 @@
 			y: 14.75d
 		}
 		{
-			dependencies: ["2C35D4E01AEC02AA"]
+			dependencies: ["033E74BC588E7EAD"]
 			description: ["{quests.steam_age.lathe.desc}"]
 			id: "6A92E8396DE40577"
 			optional: true
-			size: 1.25d
+			shape: "heart"
 			subtitle: "{quests.steam_age.lathe.subtitle}"
 			tasks: [{
 				id: "23961EE69549B16E"
@@ -443,13 +443,13 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.lathe.title}"
-			x: -4.0d
-			y: 17.25d
+			x: -18.0d
+			y: 16.5d
 		}
 		{
 			dependencies: [
-				"5917B0D4708BF534"
 				"6100B3C732E379AA"
+				"033E74BC588E7EAD"
 			]
 			description: ["{quests.steam_age.centrifuge.desc}"]
 			id: "19A1D52A7F550478"
@@ -462,8 +462,8 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.centrifuge.title}"
-			x: -19.5d
-			y: 11.5d
+			x: -21.0d
+			y: 16.5d
 		}
 		{
 			dependencies: [
@@ -480,7 +480,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.vibrating_table.title}"
-			x: -6.5d
+			x: -6.0d
 			y: 18.0d
 		}
 		{
@@ -508,6 +508,7 @@
 			description: ["{quests.steam_age.steel_saw.desc}"]
 			id: "0078B9234C554C6E"
 			optional: true
+			size: 1.25d
 			subtitle: "{quests.steam_age.steel_saw.subtitle}"
 			tasks: [{
 				id: "40E3951B8862B9A4"
@@ -515,8 +516,8 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.steel_saw.title}"
-			x: -5.5d
-			y: 18.0d
+			x: -4.0d
+			y: 17.25d
 		}
 		{
 			dependencies: ["2C35D4E01AEC02AA"]
@@ -530,7 +531,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.curving_press.title}"
-			x: -7.5d
+			x: -7.0d
 			y: 18.0d
 		}
 		{
@@ -915,16 +916,16 @@
 			dependencies: ["2C35D4E01AEC02AA"]
 			description: ["{quests.steam_age.supers.desc}"]
 			guide_page: "tfg:field_guide tfg:logistics/storage 8"
-			icon: "gtceu:ulv_super_chest"
+			icon: "tfg:ulv_super_chest"
 			id: "671405A9F3A8DFDB"
 			subtitle: "{quests.steam_age.supers.subtitle}"
 			tasks: [{
-				id: "5F5A6967B674C05A"
+				id: "61F4434EEBC33F7E"
 				item: {
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:ulv_super_chest)item(gtceu:lv_super_chest)item(gtceu:mv_super_chest)item(gtceu:hv_super_chest)item(gtceu:ev_super_chest)item(gtceu:iv_quantum_chest)item(gtceu:luv_quantum_chest)item(gtceu:zpm_quantum_chest)item(gtceu:uv_quantum_chest)item(gtceu:uhv_quantum_chest)item(gtceu:ulv_super_tank)item(gtceu:lv_super_tank)item(gtceu:mv_super_tank)item(gtceu:hv_super_tank)item(gtceu:ev_super_tank)item(gtceu:iv_quantum_tank)item(gtceu:luv_quantum_tank)item(gtceu:zpm_quantum_tank)item(gtceu:uv_quantum_tank)item(gtceu:uhv_quantum_tank))"
+						"ftbfiltersystem:filter": "or(item(tfg:ulv_super_chest)item(tfg:ulv_super_tank))"
 					}
 				}
 				title: "{quests.steam_age.supers.task}"

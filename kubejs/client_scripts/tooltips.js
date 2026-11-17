@@ -253,13 +253,10 @@ const registerTooltips = (event) => {
 	})
 
 	// Insulation
-	event.addAdvanced(['gtceu:nanomuscle_helmet', 'gtceu:nanomuscle_chestplate', 'gtceu:nanomuscle_leggings', 'gtceu:nanomuscle_boots', 'gtceu:advanced_nanomuscle_chestplate'], (item, advanced, text) => {
+	event.addAdvanced(['gtceu:nano_fiber_helmet', 'gtceu:nano_fiber_chestplate', 'gtceu:nano_fiber_leggings', 'gtceu:nano_fiber_boots'], (item, advanced, text) => {
 		text.add(3, Text.translate('tfg.tooltip.armor.nanomuscle_set'));
-		if (item === 'gtceu:nanomuscle_leggings') {
-			text.add(4, Text.translate('tfg.tooltip.armor.nanomuscle_legs_buff'));
-		}
 	})
-	event.addAdvanced(['gtceu:quarktech_helmet', 'gtceu:quarktech_chestplate', 'gtceu:quarktech_leggings', 'gtceu:quarktech_boots', 'gtceu:advanced_quarktech_chestplate'], (item, advanced, text) => {
+	event.addAdvanced(['gtceu:quark_matter_helmet', 'gtceu:quark_matter_chestplate', 'gtceu:quark_matter_leggings', 'gtceu:quark_matter_boots'], (item, advanced, text) => {
 		text.add(3, Text.translate('tfg.tooltip.armor.quarktech_set'));
 	})
 	event.addAdvanced([
@@ -381,41 +378,52 @@ const registerTooltips = (event) => {
 
 	// Greate tooltips on Create things
 	event.addAdvanced(['create:water_wheel'], (item, advanced, text) => {
-		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.uls_limit")))
+		text.add(1, Text.translate("greate.tooltip.max_speed").append(Text.translate("tfg.greate.uls_limit")))
 	})
-	event.addAdvanced(['create:large_water_wheel', 'create:windmill_bearing'], (item, advanced, text) => {
-		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.ls_limit")))
+	event.addAdvanced([
+		'create:large_water_wheel',
+		'create:windmill_bearing', 
+		'vintageimprovements:belt_grinder',
+		'vintageimprovements:spring_coiling_machine',
+		'vintageimprovements:vacuum_chamber',
+		'vintageimprovements:vibrating_table',
+		'vintageimprovements:centrifuge',
+		'vintageimprovements:curving_press',
+		'vintageimprovements:helve_hammer',
+		'createaddition:rolling_mill'
+	], (item, advanced, text) => {
+		text.add(1, Text.translate("greate.tooltip.max_speed").append(Text.translate("tfg.greate.ls_limit")))
 	})
 	event.addAdvanced(['steampowered:bronze_steam_engine', 'steampowered:bronze_flywheel'], (item, advanced, text) => {
-		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.ls_limit")))
+		text.add(1, Text.translate("greate.tooltip.max_speed").append(Text.translate("tfg.greate.ls_limit")))
 		text.add(2, Text.translate("tfg.gui.consumes").append(Text.translate("tooltip.ad_astra.fluid_per_tick", "16")).append(" ").append(Text.translate("material.gtceu.steam")))
 	})
 	event.addAdvanced(['steampowered:cast_iron_steam_engine', 'steampowered:cast_iron_flywheel'], (item, advanced, text) => {
-		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.ms_limit")))
+		text.add(1, Text.translate("greate.tooltip.max_speed").append(Text.translate("tfg.greate.ms_limit")))
 		text.add(2, Text.translate("tfg.gui.consumes").append(Text.translate("tooltip.ad_astra.fluid_per_tick", "64")).append(" ").append(Text.translate("material.gtceu.steam")))
 	})
 	event.addAdvanced(['steampowered:steel_steam_engine', 'steampowered:steel_flywheel'], (item, advanced, text) => {
-		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.hs_limit")))
+		text.add(1, Text.translate("greate.tooltip.max_speed").append(Text.translate("tfg.greate.hs_limit")))
 		text.add(2, Text.translate("tfg.gui.consumes").append(Text.translate("tooltip.ad_astra.fluid_per_tick", "256")).append(" ").append(Text.translate("material.gtceu.steam")))
 	})
 	event.addAdvanced(['tfg:titanium_steam_engine', 'tfg:titanium_flywheel'], (item, advanced, text) => {
-		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.es_limit")))
+		text.add(1, Text.translate("greate.tooltip.max_speed").append(Text.translate("tfg.greate.es_limit")))
 		text.add(2, Text.translate("tfg.gui.consumes").append(Text.translate("tooltip.ad_astra.fluid_per_tick", "1024")).append(" ").append(Text.translate("material.gtceu.steam")))
 	})
 	event.addAdvanced(['tfg:generators/steel_combustion_engine'], (item, advanced, text) => {
-		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.ls_limit")))
+		text.add(1, Text.translate("greate.tooltip.max_speed").append(Text.translate("tfg.greate.ls_limit")))
 		text.add(2, Text.translate("tfg.tooltip.attribution.diesel_generators"))
 	})
 	event.addAdvanced(['tfg:generators/aluminium_combustion_engine'], (item, advanced, text) => {
-		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.ms_limit")))
+		text.add(1, Text.translate("greate.tooltip.max_speed").append(Text.translate("tfg.greate.ms_limit")))
 		text.add(2, Text.translate("tfg.tooltip.attribution.diesel_generators"))
 	})
 	event.addAdvanced(['tfg:generators/stainless_steel_combustion_engine'], (item, advanced, text) => {
-		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.hs_limit")))
+		text.add(1, Text.translate("greate.tooltip.max_speed").append(Text.translate("tfg.greate.hs_limit")))
 		text.add(2, Text.translate("tfg.tooltip.attribution.diesel_generators"))
 	})
 	event.addAdvanced(['tfg:generators/titanium_combustion_engine'], (item, advanced, text) => {
-		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.es_limit")))
+		text.add(1, Text.translate("greate.tooltip.max_speed").append(Text.translate("tfg.greate.es_limit")))
 		text.add(2, Text.translate("tfg.tooltip.attribution.diesel_generators"))
 	})
 

@@ -48,7 +48,7 @@ function registerTFGMarsRecipes(event) {
 		.EUt(GTValues.VHA[GTValues.ULV])
 
 	event.recipes.vintageimprovements.centrifugation([Fluid.of('tfg:semiheavy_water', 500), '2x #forge:tiny_dusts/ammonium_chloride'], Fluid.of('tfg:semiheavy_ammoniacal_water', 1000))
-		.processingTime(200 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+		.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
 		.minimalRPM(32)
 		.id('tfg:vi/centrifuge_mars_semiheavy_water')
 

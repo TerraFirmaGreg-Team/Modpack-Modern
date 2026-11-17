@@ -215,9 +215,10 @@ function addMaterialCasting(event, outputItem, ceramicMold, isFireMold, gtMold, 
  * @param {number} nonTfcTier
  * GregTech voltage tier. What recipe tier should non-tfc materials use? 0 for ulv, 1 for lv, etc
  * @param {String} recipeIdSuffix
+ * @param {Boolean} machine Whether or not to generate GT welder recipes
  * @param {number} circuit
  */
-function addMaterialWelding(event, outputItem, inputItem1, inputItem2, material, tierThreshold, nonTfcTier, recipeIdSuffix, circuit) {
+function addMaterialWelding(event, outputItem, inputItem1, inputItem2, material, tierThreshold, nonTfcTier, recipeIdSuffix, machine, circuit) {
 	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY);
 	const id = global.linuxUnfucker(`${material.getName()}_${recipeIdSuffix}`);
 	let compactingTier = nonTfcTier;
@@ -236,12 +237,14 @@ function addMaterialWelding(event, outputItem, inputItem1, inputItem2, material,
 		.recipeTier(compactingTier)
 		.circuitNumber(circuit)
 		.id(`tfg:compacting/${id}`);
-
-	event.recipes.gtceu.forming_press(`tfg:${id}`)
-		.itemInputs(inputItem1, inputItem2, 'tfc:powder/flux')
-		.itemOutputs(outputItem)
-		.duration(material.getMass() * 2)
-		.EUt(GTValues.VA[compactingTier]);
+			
+	if (machine) {
+		event.recipes.gtceu.welder(`tfg:${id}`)
+			.itemInputs(inputItem1, inputItem2, 'tfc:powder/flux')
+			.itemOutputs(outputItem)
+			.duration(material.getMass() * 2)
+			.EUt(GTValues.VA[compactingTier]);
+	}
 }
 
 /**

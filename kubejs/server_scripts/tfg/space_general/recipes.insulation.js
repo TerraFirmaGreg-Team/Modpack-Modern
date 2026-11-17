@@ -74,10 +74,9 @@ function registerTFGInsulationRecipes(event) {
 		.duration(400)
 		.EUt(GTValues.VA[GTValues.EV])
 
-	event.recipes.gtceu.assembler('tfg:aes_insulation_roll')
+	event.recipes.gtceu.spooling('tfg:aes_insulation_roll')
 		.itemInputs('9x tfg:aes_insulation_sheet')
 		.itemOutputs('tfg:aes_insulation_roll')
-		.circuit(0)
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.LV])
 
@@ -89,10 +88,9 @@ function registerTFGInsulationRecipes(event) {
 		A: 'tfg:aes_insulation_sheet'
 	}).id('tfg:shaped/aes_insulation_roll')
 
-	event.recipes.gtceu.assembler('tfg:aes_insulation_sheet')
+	event.recipes.gtceu.spooling('tfg:aes_insulation_sheet')
 		.itemInputs('tfg:aes_insulation_roll')
 	    .itemOutputs('9x tfg:aes_insulation_sheet')
-		.circuit(1)
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.LV])
 

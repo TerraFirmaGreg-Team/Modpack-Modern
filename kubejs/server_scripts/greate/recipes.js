@@ -490,14 +490,14 @@ function registerGreateRecipes(event) {
 	], {
 		A: '#gtceu:circuits/ulv',
 		B: 'gtceu:cobalt_brass_buzz_saw_blade',
-		C: 'greate:steel_cogwheel',
+		C: 'create:precision_mechanism',
 		D: 'gtceu:ulv_machine_hull',
 		E: 'greate:steel_shaft',
 		F: '#forge:tools/wrenches'
 	}).id('greate:shaped/steel_mechanical_saw')
 
 	event.recipes.gtceu.assembler('greate:steel_mechanical_saw')
-		.itemInputs('gtceu:ulv_machine_hull', 'greate:steel_shaft', '2x #gtceu:circuits/ulv', 'gtceu:cobalt_brass_buzz_saw_blade', '2x greate:steel_cogwheel')
+		.itemInputs('gtceu:ulv_machine_hull', 'greate:steel_shaft', '2x #gtceu:circuits/ulv', 'gtceu:cobalt_brass_buzz_saw_blade', '2x create:precision_mechanism')
 		.itemOutputs('greate:steel_mechanical_saw')
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -522,34 +522,46 @@ function registerGreateRecipes(event) {
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.ULV])
 		.removePreviousMaterialInfo().addMaterialInfo(true)
+			
+	 event.shaped('greate:stainless_steel_mechanical_saw', [
+		'ABA',
+		'CDC',
+		'FE '
+	 ], {
+		A: '#gtceu:circuits/hv',
+		B: 'gtceu:ultimet_buzz_saw_blade',
+		C: 'gtceu:hv_electric_motor',
+		D: 'gtceu:hv_machine_hull',
+		E: 'greate:stainless_steel_shaft',
+		F: '#forge:tools/wrenches'
+	 }).id('greate:shaped/stainless_steel_mechanical_saw')
 
-	// Removed while we wait for a fix so recipes don't work without being in a Cleanroom - Important for Wafer
-	
-	// event.shaped('greate:stainless_steel_mechanical_saw', [
-	//	'ABA',
-	//	'CDC',
-	//	'FE '
-	// ], {
-	//	A: '#gtceu:circuits/hv',
-	//	B: 'gtceu:diamond_buzz_saw_blade',
-	//	C: 'gtceu:hv_electric_motor',
-	//	D: 'gtceu:hv_machine_hull',
-	//	E: 'greate:stainless_steel_shaft',
-	//	F: '#forge:tools/wrenches'
-	// }).id('greate:shaped/stainless_steel_mechanical_saw')
+	 event.recipes.gtceu.assembler('greate:stainless_steel_mechanical_saw')
+		.itemInputs('gtceu:hv_machine_hull', '2x #gtceu:circuits/hv', 'gtceu:ultimet_buzz_saw_blade', '2x gtceu:hv_electric_motor', 'greate:stainless_steel_shaft')
+		.itemOutputs('greate:stainless_steel_mechanical_saw')
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.ULV])
+		.removePreviousMaterialInfo().addMaterialInfo(true)
 
-	// event.shaped('greate:titanium_mechanical_saw', [
-	//	'ABA',
-	//	'CDC',
-	//	'FE '
-	//], {
-	//	A: '#gtceu:circuits/ev',
-	//	B: 'gtceu:ultimet_buzz_saw_blade',
-	//	C: 'gtceu:ev_electric_motor',
-	//	D: 'gtceu:ev_machine_hull',
-	//	E: 'greate:titanium_shaft',
-	//	F: '#forge:tools/wrenches'
-	//}).id('greate:shaped/titanium_mechanical_saw')
+	 event.shaped('greate:titanium_mechanical_saw', [
+		'ABA',
+		'CDC',
+		'FE '
+	], {
+		A: '#gtceu:circuits/ev',
+		B: 'gtceu:ultimet_buzz_saw_blade',
+		C: 'gtceu:ev_electric_motor',
+		D: 'gtceu:ev_machine_hull',
+		E: 'greate:titanium_shaft',
+		F: '#forge:tools/wrenches'
+	}).id('greate:shaped/titanium_mechanical_saw')
+
+	 event.recipes.gtceu.assembler('greate:titanium_mechanical_saw')
+		.itemInputs('gtceu:ev_machine_hull', '2x #gtceu:circuits/ev', 'gtceu:ultimet_buzz_saw_blade', '2x gtceu:ev_electric_motor', 'greate:titanium_shaft')
+		.itemOutputs('greate:titanium_mechanical_saw')
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.ULV])
+		.removePreviousMaterialInfo().addMaterialInfo(true)
 
 	// #endregion
 

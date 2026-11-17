@@ -209,7 +209,7 @@ const registerCreateRecipes = (event) => {
 		B: '#forge:plates/copper'
 	}).id('tfg:create/shaped/fluid_pipe')
 
-	event.recipes.gtceu.assembler('tfg:create/fluid_pipe')
+	event.recipes.gtceu.welder('tfg:create/fluid_pipe')
 		.itemInputs('2x #forge:plates/copper')
 		.circuit(3)
 		.itemOutputs('create:fluid_pipe')
@@ -621,7 +621,7 @@ const registerCreateRecipes = (event) => {
 	event.recipes.createItemApplication(['create:andesite_casing'], ['#forge:stripped_logs', '#forge:plates/wrought_iron'])
 		.id('tfg:create/item_application/andesite_casing')
 
-	event.recipes.gtceu.assembler('tfg:create/andesite_casing')
+	event.recipes.gtceu.welder('tfg:create/andesite_casing')
 		.itemInputs('#forge:stripped_logs', '#forge:plates/wrought_iron')
 		.circuit(10)
 		.itemOutputs('create:andesite_casing')
@@ -633,7 +633,7 @@ const registerCreateRecipes = (event) => {
 	event.recipes.createItemApplication(['create:brass_casing'], ['#forge:stripped_logs', '#forge:plates/brass'])
 		.id('tfg:create/item_application/brass_casing')
 
-	event.recipes.gtceu.assembler('tfg:create/brass_casing')
+	event.recipes.gtceu.welder('tfg:create/brass_casing')
 		.itemInputs('#forge:stripped_logs', '#forge:plates/brass')
 		.circuit(10)
 		.itemOutputs('create:brass_casing')
@@ -645,7 +645,7 @@ const registerCreateRecipes = (event) => {
 	event.recipes.createItemApplication(['create:copper_casing'], ['#forge:stripped_logs', '#forge:plates/copper'])
 		.id('tfg:create/item_application/copper_casing')
 
-	event.recipes.gtceu.assembler('tfg:create/copper_casing')
+	event.recipes.gtceu.welder('tfg:create/copper_casing')
 		.itemInputs('#forge:stripped_logs', '#forge:plates/copper')
 		.circuit(11)
 		.itemOutputs('create:copper_casing')
@@ -657,7 +657,7 @@ const registerCreateRecipes = (event) => {
     event.recipes.createItemApplication(['create:shadow_steel_casing'], ['#forge:stripped_logs', '#forge:plates/black_steel'])
     		.id('tfg:create/item_application/shadow_steel_casing')
 
-    event.recipes.gtceu.assembler('tfg:create/shadow_steel_casing')
+    event.recipes.gtceu.welder('tfg:create/shadow_steel_casing')
         .itemInputs('#forge:stripped_logs', '#forge:plates/black_steel')
         .circuit(11)
         .itemOutputs('create:shadow_steel_casing')
@@ -669,7 +669,7 @@ const registerCreateRecipes = (event) => {
     event.recipes.createItemApplication(['create:refined_radiance_casing'], ['#forge:stripped_logs', 'gtceu:glowstone_plate'])
             .id('tfg:create/item_application/refined_radiance_casing')
 
-    event.recipes.gtceu.assembler('tfg:create/refined_radiance_casing')
+    event.recipes.gtceu.welder('tfg:create/refined_radiance_casing')
         .itemInputs('#forge:stripped_logs', 'gtceu:glowstone_plate')
         .circuit(11)
         .itemOutputs('create:refined_radiance_casing')
@@ -681,7 +681,7 @@ const registerCreateRecipes = (event) => {
 	event.recipes.createItemApplication(['create:railway_casing'], ['#forge:stripped_logs', '#forge:plates/steel'])
 		.id('tfg:create/item_application/railway_casing')
 
-	event.recipes.gtceu.assembler('tfg:create/railway_casing')
+	event.recipes.gtceu.welder('tfg:create/railway_casing')
 		.itemInputs('#forge:stripped_logs', '#forge:plates/steel')
 		.circuit(10)
 		.itemOutputs('create:railway_casing')
@@ -1236,11 +1236,11 @@ const registerCreateRecipes = (event) => {
 		}).id(`tfg:create/shaped/metal_girder_from_${material.metal}`)
 
 		event.recipes.gtceu.assembler(`tfg:create/metal_girder_from_${material.metal}`)
-		.itemInputs(`3x #forge:plates/${material.metal}`, `3x #forge:bolts/${material.metal}`)
-		.itemOutputs(`${material.amount}x create:metal_girder`)
-		.duration(100)
-		.EUt(20)
-		.circuit(6)
+			.itemInputs(`3x #forge:plates/${material.metal}`, `3x #forge:bolts/${material.metal}`)
+			.itemOutputs(`${material.amount}x create:metal_girder`)
+			.duration(100)
+			.EUt(20)
+			.circuit(6)
 	})
 
 	// Стеклянная дверь

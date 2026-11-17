@@ -64,6 +64,9 @@
             "category": "gtceu:air_scrubber"
         },
         {
+            "category": "gtceu:ore_processing_diagram"
+        },
+        {
             "id": "/emi:/crafting/repairing/[^*]+/"
         },
         {
@@ -73,7 +76,7 @@
             "id": "/emi:/crafting/shulker_box_dying/minecraft/[^*]+/"
         },
         {
-            "id": "/create:create.toolbox.color.block.create.[^*]+/"
+            "id": "/.+create.toolbox.color.+/"
         },
         {
             "id": "/sophisticatedbackpacks:single_color_[^*]+/"

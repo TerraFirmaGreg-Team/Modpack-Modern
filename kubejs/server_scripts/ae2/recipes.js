@@ -626,7 +626,7 @@ const registerAE2Recipes = (event) => {
 		.addMaterialInfo(true)
 
 	// Glass Cable
-	event.recipes.gtceu.assembler('fluix_glass_cable')
+	event.recipes.gtceu.spooling('tfg:fluix_glass_cable')
 		.itemInputs(
 			'2x #forge:rods/quartzite',
 			'3x ae2:quartz_fiber',
@@ -639,35 +639,32 @@ const registerAE2Recipes = (event) => {
 		.addMaterialInfo(true)
 
 	// Covered Cable
-	event.recipes.gtceu.assembler('fluix_covered_cable_rubber')
-		.itemInputs(
-			'ae2:fluix_glass_cable')
+	event.recipes.gtceu.spooling('tfg:fluix_covered_cable_rubber')
+		.itemInputs('ae2:fluix_glass_cable')
 		.inputFluids(Fluid.of('gtceu:rubber', 144))
 		.itemOutputs('ae2:fluix_covered_cable')
 		.circuit(2)
 		.duration(10)
 		.EUt(GTValues.VA[GTValues.HV])
 
-	event.recipes.gtceu.assembler('fluix_covered_cable_silicone_rubber')
-		.itemInputs(
-			'ae2:fluix_glass_cable')
+	event.recipes.gtceu.spooling('tfg:fluix_covered_cable_silicone_rubber')
+		.itemInputs('ae2:fluix_glass_cable')
 		.inputFluids(Fluid.of('gtceu:silicone_rubber', 144 / 2))
 		.itemOutputs('ae2:fluix_covered_cable')
 		.circuit(2)
 		.duration(10)
 		.EUt(GTValues.VA[GTValues.HV])
 
-	event.recipes.gtceu.assembler('fluix_covered_cable_styrene_butadiene_rubber')
-		.itemInputs(
-			'4x ae2:fluix_glass_cable')
+	event.recipes.gtceu.spooling('tfg:fluix_covered_cable_styrene_butadiene_rubber')
+		.itemInputs('ae2:fluix_glass_cable')
 		.inputFluids(Fluid.of('gtceu:styrene_butadiene_rubber', 144 / 4))
-		.itemOutputs('4x ae2:fluix_covered_cable')
+		.itemOutputs('ae2:fluix_covered_cable')
 		.circuit(2)
 		.duration(10)
 		.EUt(GTValues.VA[GTValues.HV])
 
 	// Smart Cable
-	event.recipes.gtceu.assembler('fluix_smart_cable_rubber')
+	event.recipes.gtceu.spooling('tfg:fluix_smart_cable_rubber')
 		.itemInputs(
 			'2x #forge:rods/quartzite',
 			'3x ae2:quartz_fiber',
@@ -680,7 +677,7 @@ const registerAE2Recipes = (event) => {
 		.duration(10)
 		.EUt(GTValues.VA[GTValues.HV])
 
-	event.recipes.gtceu.assembler('fluix_smart_cable_silicone_rubber')
+	event.recipes.gtceu.spooling('fluix_smart_cable_silicone_rubber')
 		.itemInputs(
 			'2x #forge:rods/quartzite',
 			'3x ae2:quartz_fiber',
@@ -693,7 +690,7 @@ const registerAE2Recipes = (event) => {
 		.duration(10)
 		.EUt(GTValues.VA[GTValues.HV])
 
-	event.recipes.gtceu.assembler('fluix_smart_cable_styrene_butadiene_rubber')
+	event.recipes.gtceu.spooling('fluix_smart_cable_styrene_butadiene_rubber')
 		.itemInputs(
 			'2x #forge:rods/quartzite',
 			'3x ae2:quartz_fiber',
@@ -706,12 +703,11 @@ const registerAE2Recipes = (event) => {
 		.duration(10)
 		.EUt(GTValues.VA[GTValues.HV])
 	
-	event.recipes.gtceu.assembler('fluix_smart_cable_from_covered')
+	event.recipes.gtceu.spooling('fluix_smart_cable_from_covered')
 		.itemInputs(
 			'4x ae2:fluix_covered_cable',
 			'#forge:dusts/redstone')
 		.itemOutputs('4x ae2:fluix_smart_cable')
-		.circuit(1)
 		.duration(10)
 		.EUt(GTValues.VA[GTValues.HV])
 

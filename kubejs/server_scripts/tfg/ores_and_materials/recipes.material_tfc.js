@@ -20,7 +20,7 @@ function processTFCArmor(event, material) {
 	addAnvilRecipe(event, unfinishedHelmet, doublePlateItem, ['hit_last', 'bend_second_last', 'bend_third_last'], true, material, 'unfinished_helmet');
 	addTFCMelting(event, unfinishedHelmet, material, 144 * 2, 'unfinished_helmet');
 	addTFCMelting(event, finishedHelmet, material, 144 * 3, 'helmet');
-	addMaterialWelding(event, finishedHelmet, unfinishedHelmet, plateItem, material, 4, 0, "helmet", 2);
+	addMaterialWelding(event, finishedHelmet, unfinishedHelmet, plateItem, material, 4, 0, "helmet", true, 2);
 
 	// Chestplate
 	const unfinishedChestplate = `tfc:metal/unfinished_chestplate/${materialName}`;
@@ -29,7 +29,7 @@ function processTFCArmor(event, material) {
 	addAnvilRecipe(event, unfinishedChestplate, doublePlateItem, ['hit_last', 'hit_second_last', 'upset_third_last'], true, material, 'unfinished_chestplate');
 	addTFCMelting(event, unfinishedChestplate, material, 144 * 2, 'unfinished_chestplate');
 	addTFCMelting(event, finishedChestplate, material, 144 * 4, 'chestplate');
-	addMaterialWelding(event, finishedChestplate, unfinishedChestplate, doublePlateItem, material, 4, 0, "chestplate", 2);
+	addMaterialWelding(event, finishedChestplate, unfinishedChestplate, doublePlateItem, material, 4, 0, "chestplate", true, 2);
 
 	// Greaves
 	const unfinishedGreaves = `tfc:metal/unfinished_greaves/${materialName}`;
@@ -38,7 +38,7 @@ function processTFCArmor(event, material) {
 	addAnvilRecipe(event, unfinishedGreaves, doublePlateItem, ['bend_any', 'draw_any', 'hit_any'], true, material, 'unfinished_greaves');
 	addTFCMelting(event, unfinishedGreaves, material, 144 * 2, 'unfinished_greaves');
 	addTFCMelting(event, finishedGreaves, material, 144 * 3, 'greaves');
-	addMaterialWelding(event, finishedGreaves, unfinishedGreaves, plateItem, material, 4, 0, "greaves", 2);
+	addMaterialWelding(event, finishedGreaves, unfinishedGreaves, plateItem, material, 4, 0, "greaves", true, 2);
 
 	// Boots
 	const unfinishedBoots = `tfc:metal/unfinished_boots/${materialName}`;
@@ -47,7 +47,7 @@ function processTFCArmor(event, material) {
 	addAnvilRecipe(event, unfinishedBoots, plateItem, ['bend_last', 'bend_second_last', 'shrink_third_last'], true, material, 'unfinished_boots');
 	addTFCMelting(event, unfinishedBoots, material, 144, 'unfinished_boots');
 	addTFCMelting(event, finishedBoots, material, 144 * 2, 'boots');
-	addMaterialWelding(event, finishedBoots, unfinishedBoots, plateItem, material, 4, 0, "boots", 2);
+	addMaterialWelding(event, finishedBoots, unfinishedBoots, plateItem, material, 4, 0, "boots", true, 2);
 }
 
 // Helper methods
@@ -115,7 +115,7 @@ function processTFCTool(event, material) {
 
 		// Shears
 		let shears = `tfc:metal/shears/${materialName}`;
-		addMaterialWelding(event, shears, knifeHead, knifeHead, material, 4, 1, "shears", 0);
+		addMaterialWelding(event, shears, knifeHead, knifeHead, material, 4, 1, "shears", true, 0);
 		addTFCMelting(event, shears, material, 144 * 2, 'shears');
 
 		event.recipes.gtceu.forge_hammer(`tfg:shears/${materialName}`)
@@ -278,7 +278,7 @@ function processPlatedBlock(event, material) {
 
 	event.shapeless(platedBlock, ['#forge:stone_bricks', plateItem, '#forge:tools/hammers'])
 		.id(`tfg:shapeless/${materialName}_plated_block`)
-	event.recipes.gtceu.assembler(`tfg:${materialName}_plated_block`)
+	event.recipes.gtceu.welder(`tfg:${materialName}_plated_block`)
 		.itemInputs('#forge:stone_bricks', plateItem)
 		.itemOutputs(platedBlock)
 		.circuit(10)
@@ -290,7 +290,7 @@ function processPlatedBlock(event, material) {
 
 	event.shapeless(platedSlab.withCount(2), ['2x #tfg:brick_slabs', plateItem, '#forge:tools/hammers'])
 		.id(`tfg:item_application/${materialName}_plated_slab`)
-	event.recipes.gtceu.assembler(`tfg:${materialName}_plated_slab`)
+	event.recipes.gtceu.welder(`tfg:${materialName}_plated_slab`)
 		.itemInputs('2x #tfg:brick_slabs', plateItem)
 		.itemOutputs(platedSlab.withCount(2))
 		.circuit(10)
@@ -302,7 +302,7 @@ function processPlatedBlock(event, material) {
 
 	event.shapeless(platedStair, ['#tfg:brick_stairs', plateItem, '#forge:tools/hammers'])
 		.id(`tfg:item_application/${materialName}_plated_stair`)
-	event.recipes.gtceu.assembler(`tfg:${materialName}_plated_stair`)
+	event.recipes.gtceu.welder(`tfg:${materialName}_plated_stair`)
 		.itemInputs('#tfg:brick_stairs', plateItem)
 		.itemOutputs(platedStair)
 		.circuit(10)

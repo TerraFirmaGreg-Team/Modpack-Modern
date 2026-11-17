@@ -19,7 +19,6 @@ const registerGTCEURecipes = (event) => {
 
 	// #region Move MV superconductor to mid-late MV instead of post-vac freezer
 
-	event.remove({ id: 'gtceu:shaped/mv_chemical_bath' })
 	event.shaped('gtceu:mv_chemical_bath', [
 		'ABC',
 		'DEA',
@@ -51,8 +50,6 @@ const registerGTCEURecipes = (event) => {
 
 	// Move EV to after Uranium Reactor
 
-	event.remove({ id: 'gtceu:mixer/uranium_triplatinum' })
-	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/uranium_triplatinum' })
 	event.recipes.gtceu.mixer('tfg:uranium_triplatinum')
 		.itemInputs(Item.of('gtceu:uranium_dust', 1), Item.of('gtceu:platinum_dust', 3))
 		.inputFluids(Fluid.of('gtceu:radon', 10))
@@ -60,9 +57,6 @@ const registerGTCEURecipes = (event) => {
 		.duration(20*10)
 		.EUt(GTValues.VA[GTValues.EV])
 		.circuit(4)
-
-	event.remove({ id: 'gtceu:alloy_blast_smelter/uranium_triplatinum' })
-	event.remove({ id: 'gtceu:alloy_blast_smelter/uranium_triplatinum_gas' })
 
 	event.recipes.gtceu.alloy_blast_smelter('tfg:uranium_triplatinum')
 		.itemInputs(Item.of('gtceu:uranium_dust', 1), Item.of('gtceu:platinum_dust', 3))
@@ -84,8 +78,7 @@ const registerGTCEURecipes = (event) => {
 
 	// Move Superconductor to EV and make them cheap
 
-	event.remove({ id: 'gtceu:assembler/laser_cable' })
-	event.recipes.gtceu.assembler('tfg:laser_cable')
+	event.recipes.gtceu.spooling('tfg:laser_cable')
 		.itemInputs(Item.of('gtceu:laminated_glass', 1), Item.of('2x #forge:foils/ostrum_iodide', 2))
 		.itemOutputs(Item.of('gtceu:normal_laser_pipe', 16))
 		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 144))
@@ -94,44 +87,33 @@ const registerGTCEURecipes = (event) => {
 		.cleanroom(CleanroomType.CLEANROOM)
 
 	TFGHelpers.registerMaterialInfo('gtceu:normal_laser_pipe', [GTMaterials.Air, 1])
-	event.remove({ id: 'gtceu:arc_furnace/arc_normal_laser_pipe' })
 	removeMaceratorRecipe(event, 'macerate_normal_laser_pipe')
 
 	// #endregion
 
 	//#region Machine covers
 
-	event.remove({ id: 'gtceu:shaped/cover_fluid_voiding' })
-	event.remove({ id: 'gtceu:assembler/cover_fluid_voiding' })
 	event.shapeless('gtceu:fluid_voiding_cover', ['gtceu:fluid_detector_cover', 'gtceu:bronze_normal_fluid_pipe'])
 		.id('tfg:shapeless/cover_fluid_voiding')
 
-	event.remove({ id: 'gtceu:shaped/cover_item_voiding' })
-	event.remove({ id: 'gtceu:assembler/cover_item_voiding' })
 	event.shapeless('gtceu:item_voiding_cover', ['gtceu:item_detector_cover', 'gtceu:brass_normal_item_pipe'])
 		.id('tfg:shapeless/cover_item_voiding')
 
-	event.remove({ id: 'gtceu:assembler/cover_fluid_voiding_advanced' })
 	event.shapeless('gtceu:advanced_fluid_voiding_cover', ['gtceu:fluid_voiding_cover', '#gtceu:circuits/mv'])
 		.id('tfg:shapeless/cover_fluid_voiding_advanced')
 
-	event.remove({ id: 'gtceu:assembler/cover_item_voiding_advanced' })
 	event.shapeless('gtceu:advanced_item_voiding_cover', ['gtceu:item_voiding_cover', '#gtceu:circuits/mv'])
 		.id('tfg:shapeless/cover_item_voiding_advanced')
 
-	event.remove({ id: 'gtceu:assembler/cover_advanced_energy_detector' })
 	event.shapeless('gtceu:advanced_energy_detector_cover', ['gtceu:energy_detector_cover', 'gtceu:hv_sensor'])
 		.id('tfg:shapeless/advanced_energy_detector_cover')
 
-	event.remove({ id: 'gtceu:assembler/cover_advanced_fluid_detector' })
 	event.shapeless('gtceu:advanced_fluid_detector_cover', ['gtceu:fluid_detector_cover', 'gtceu:hv_sensor'])
 		.id('tfg:shapeless/advanced_fluid_detector_cover')
 
-	event.remove({ id: 'gtceu:assembler/cover_advanced_item_detector' })
 	event.shapeless('gtceu:advanced_item_detector_cover', ['gtceu:item_detector_cover', 'gtceu:hv_sensor'])
 		.id('tfg:shapeless/advanced_item_detector_cover')
 
-	event.remove({ id: 'gtceu:assembler/cover_machine_controller' })
 	event.recipes.gtceu.assembler('gtceu:assembler/cover_machine_controller')
 		.itemInputs('minecraft:lever', '#forge:plates/iron')
 		.itemOutputs('gtceu:machine_controller_cover')
@@ -149,7 +131,6 @@ const registerGTCEURecipes = (event) => {
 	})
 		.id('tfg:shaped/cover_machine_controller')
 
-	event.remove({ id: 'gtceu:assembler/cover_energy_detector' })
 	event.recipes.gtceu.assembler('gtceu:assembler/cover_energy_detector')
 		.itemInputs('4x gtceu:copper_single_cable', '#gtceu:circuits/lv', '#forge:plates/iron')
 		.itemOutputs('gtceu:energy_detector_cover')
@@ -168,7 +149,6 @@ const registerGTCEURecipes = (event) => {
 	})
 		.id('tfg:shaped/cover_energy_detector')
 
-	event.remove({ id: 'gtceu:assembler/cover_activity_detector' })
 	event.recipes.gtceu.assembler('gtceu:assembler/cover_activity_detector')
 		.itemInputs('minecraft:redstone_torch', '#forge:plates/iron')
 		.itemOutputs('gtceu:activity_detector_cover')
@@ -186,7 +166,6 @@ const registerGTCEURecipes = (event) => {
 	})
 		.id('tfg:shaped/cover_activity_detector')
 
-	event.remove({ id: 'gtceu:assembler/cover_fluid_detector' })
 	event.recipes.gtceu.assembler('gtceu:assembler/cover_fluid_detector')
 		.itemInputs('minecraft:heavy_weighted_pressure_plate', '#forge:plates/iron')
 		.itemOutputs('gtceu:fluid_detector_cover')
@@ -204,7 +183,6 @@ const registerGTCEURecipes = (event) => {
 	})
 		.id('tfg:shaped/cover_fluid_detector')
 
-	event.remove({ id: 'gtceu:assembler/cover_item_detector' })
 	event.recipes.gtceu.assembler('gtceu:assembler/cover_item_detector')
 		.itemInputs('minecraft:light_weighted_pressure_plate', '#forge:plates/iron')
 		.itemOutputs('gtceu:item_detector_cover')
@@ -222,7 +200,6 @@ const registerGTCEURecipes = (event) => {
 	})
 		.id('tfg:shaped/cover_item_detector')
 
-	event.remove({ id: 'gtceu:assembler/cover_maintenance_detector' })
 	event.recipes.gtceu.assembler('gtceu:assembler/cover_maintenance_detector')
 		.itemInputs('gtceu:lv_emitter', '#forge:plates/steel')
 		.itemOutputs('gtceu:maintenance_detector_cover')
@@ -240,7 +217,6 @@ const registerGTCEURecipes = (event) => {
 	})
 		.id('tfg:shaped/cover_maintenance_detector')
 
-	event.remove({ id: 'gtceu:assembler/cover_storage' })
 	event.recipes.gtceu.assembler('gtceu:assembler/cover_storage')
 		.itemInputs('#forge:chests/wooden', 'gtceu:lv_electric_piston', '#forge:plates/iron')
 		.itemOutputs('gtceu:storage_cover')
@@ -259,7 +235,6 @@ const registerGTCEURecipes = (event) => {
 	})
 		.id('tfg:shaped/cover_storage')
 
-	event.remove({ id: 'gtceu:assembler/wireless_transmitter_cover' })
 	event.recipes.gtceu.assembler('gtceu:assembler/wireless_transmitter_cover')
 		.itemInputs('#forge:plates/ender_pearl', '#forge:foils/annealed_copper', 'gtceu:mv_emitter', '#forge:fine_wires/platinum')
 		.itemOutputs('gtceu:wireless_transmitter_cover')
@@ -279,7 +254,6 @@ const registerGTCEURecipes = (event) => {
 	})
 		.id('tfg:shaped/wireless_transmitter_cover')
 
-	event.remove({ id: 'gtceu:assembler/cover_ender_redstone_link' })
 	event.recipes.gtceu.assembler('gtceu:assembler/cover_ender_redstone_link')
 		.itemInputs('4x #forge:plates/ender_pearl', 'gtceu:mv_sensor', 'gtceu:mv_emitter', '#gtceu:circuits/mv')
 		.itemOutputs('gtceu:ender_redstone_link_cover')
@@ -299,7 +273,6 @@ const registerGTCEURecipes = (event) => {
 	})
 		.id('tfg:shaped/cover_ender_redstone_link')
 
-	event.remove({ id: 'gtceu:assembler/cover_advanced_activity_cover' })
 	event.recipes.gtceu.assembler('gtceu:assembler/cover_advanced_activity_cover')
 		.itemInputs('4x #forge:fine_wires/gold', '#gtceu:circuits/hv', '#forge:plates/aluminium')
 		.itemOutputs('gtceu:advanced_activity_detector_cover')
@@ -318,7 +291,6 @@ const registerGTCEURecipes = (event) => {
 	})
 		.id('tfg:shaped/cover_advanced_activity_detector')
 
-	event.remove({ id: 'gtceu:assembler/cover_shutter' })
 	event.recipes.gtceu.assembler('gtceu:assembler/cover_shutter')
 		.itemInputs('#minecraft:doors', '2x #forge:plates/iron')
 		.itemOutputs('2x gtceu:shutter_module_cover')
@@ -368,7 +340,6 @@ const registerGTCEURecipes = (event) => {
 
 	// Fix Snow in Compressor
 
-	event.remove({ id: 'gtceu:compressor/snowballs_to_snow' })
 	event.recipes.gtceu.compressor('gtceu:compressor/snowballs_to_snow_fixed')
 		.itemInputs('8x minecraft:snowball')
 		.itemOutputs('minecraft:snow_block')
@@ -393,8 +364,6 @@ const registerGTCEURecipes = (event) => {
 
 
 	// GT Facades
-	event.remove({ id: 'gtceu:crafting/facade_cover' })
-
 	event.shapeless(Item.of('gtceu:facade_cover', 8, '{Facade: {Count:1b,id:"minecraft:stone"}}'), ['3x #forge:plates/iron', "#tfg:whitelisted/facades"])
 		.modifyResult((craftingGrid, result) => {
 			let blockID = craftingGrid.find(Ingredient.of("#tfg:whitelisted/facades")).id
@@ -495,8 +464,6 @@ const registerGTCEURecipes = (event) => {
 	
 	// Remove Plutonium from centrifuging Uranium dust
 	
-	event.remove({ id: 'gtceu:centrifuge/uranium_238_separation' })
-	
 	event.recipes.gtceu.centrifuge('tfg:uranium_238_separation')
 		.itemInputs('#forge:dusts/uranium')
 		.chancedOutput('#forge:tiny_dusts/uranium_235', 2300)
@@ -504,8 +471,6 @@ const registerGTCEURecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.HV])
 	
 	// Change the Large Centrifugal Unit to be craftable at EV
-
-	event.remove({ id: 'gtceu:shaped/large_centrifuge' })
 
 	event.shaped('gtceu:large_centrifuge', [
 		'EFE',
@@ -521,7 +486,6 @@ const registerGTCEURecipes = (event) => {
 	}).id('tfg:shaped/large_centrifuge')
 
 	// ME Pattern Buffer
-	event.remove({ id: 'gtceu:assembly_line/me_pattern_buffer_proxy' })
 	event.recipes.tfg.me_assembler('tfg:me_pattern_buffer_proxy')
 		.itemInputs(
 			'gtceu:luv_machine_hull',
@@ -546,12 +510,7 @@ const registerGTCEURecipes = (event) => {
 
 	// Modify Rotor Holder to require an Assembler
 
-	//event.remove({ id: 'gtceu:shaped/rotor_holder_hv' }) Keep it craftable before the Assembler
-	event.remove({ id: 'gtceu:shaped/rotor_holder_ev' })
-	event.remove({ id: 'gtceu:shaped/rotor_holder_iv' })
-	event.remove({ id: 'gtceu:shaped/rotor_holder_luv' })
-	event.remove({ id: 'gtceu:shaped/rotor_holder_zpm' })
-	event.remove({ id: 'gtceu:shaped/rotor_holder_uv' })
+	// Keep the HV one craftable in a crafting table
 
 	event.recipes.gtceu.assembler('tfg:rotor_holder_hv')
 		.itemInputs('4x #forge:gears/black_steel', '4x #forge:small_gears/stainless_steel', 'gtceu:hv_machine_hull')
@@ -606,9 +565,6 @@ const registerGTCEURecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	// Pills
-	event.remove({ id: 'gtceu:canner/pack_paracetamol' })
-	event.remove({ id: 'gtceu:canner/pack_rad_away' })
-
 	event.recipes.gtceu.forming_press('tfg:pack_rad_away')
 		.itemInputs('16x #forge:dusts/rad_away')
 		.notConsumable('gtceu:pill_casting_mold')
@@ -643,19 +599,12 @@ const registerGTCEURecipes = (event) => {
 
 	// Heavy Oil at LV
 
-	event.remove({ id: 'gtceu:distillery/distill_heavy_oil_to_sulfuric_heavy_fuel' })
-
 	event.recipes.gtceu.distillery('tfg:sulfuric_heavy_fuel')
 		.inputFluids(Fluid.of('gtceu:oil_heavy', 50))
 		.outputFluids(Fluid.of('gtceu:sulfuric_heavy_fuel', 125))
 		.duration(20*2)
 		.EUt(GTValues.VA[GTValues.LV])
 		.circuit(1)
-
-	// Increase casing costs
-
-	event.replaceInput({ id: 'gtceu:shaped/casing_steel_pipe' }, '#forge:normal_fluid_pipes/steel', '#forge:huge_fluid_pipes/steel')
-	event.replaceInput({ id: 'gtceu:shaped/casing_steel_pipe' }, '#forge:plates/steel', '#forge:double_plates/steel')
 
 	// Modify HV Dynamo Hatch to be craftable before Cleanroom
 
@@ -682,7 +631,6 @@ const registerGTCEURecipes = (event) => {
 		.duration(10*20)
 		.EUt(GTValues.VA[GTValues.MV])
 
-	event.remove({ id: 'gtceu:assembler/assemble_vanadium_turbine_blade' })
 	event.recipes.gtceu.assembler('tfg:assemble_vanadium_turbine_blade')
 		.itemInputs('8x #forge:turbine_blades/vanadium', '#forge:rods/long/magnalium')
 		.itemOutputs(Item.of('gtceu:turbine_rotor', '{GT.PartStats:{Material:"gtceu:vanadium"}}'))
@@ -698,7 +646,6 @@ const registerGTCEURecipes = (event) => {
 
 	// Change Butraldehyde to be craftable at MV
 
-	event.remove({ id: 'gtceu:large_chemical_reactor/butraldehyde' })
 	global.modifyRecipe(event, "gtceu:chemical_reactor/butraldehyde", {
         newId: "tfg:butraldehyde",
         duration: 20 * 30,
@@ -736,8 +683,6 @@ const registerGTCEURecipes = (event) => {
         itemInputs: { "forge:crushed_ores/bauxite": 24 },
     	fluidReplacements: { "forge:water": "minecraft:water" }
     })
-
-	event.remove({ id: 'gtceu:electromagnetic_separator/bauxite_slag_separation' })
 
 	event.recipes.gtceu.electromagnetic_separator('tfg:bauxite_slag_separation')
 		.itemInputs(Item.of('gtceu:bauxite_slag_dust', 1))
@@ -873,7 +818,6 @@ const registerGTCEURecipes = (event) => {
 
 	// Change Basic Data Access Hatch so it doesn't require Cleanroom
 
-	event.remove({ id: 'gtceu:assembler/basic_data_access_hatch' })
 	event.recipes.gtceu.assembler('tfg:basic_data_access_hatch')
 		.itemInputs(Item.of('gtceu:hv_input_bus', 1), '4x #gtceu:circuits/hv', Item.of('gtceu:cpu_chip', 8), Item.of('gtceu:ram_chip', 32), Item.of('gtceu:fine_red_alloy_wire', 16))
 		.inputFluids(Fluid.of('gtceu:polyethylene', 288))

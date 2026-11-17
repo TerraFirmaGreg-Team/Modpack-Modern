@@ -5,7 +5,6 @@ const registerGreateMaterials = (event) => {
 	// Belt materials should already have an ingot and plate item already
 	const $BeltProperty = Java.loadClass("electrolyte.greate.compat.gtceu.material.BeltProperty")
 	const $GreateMaterials = Java.loadClass("electrolyte.greate.registry.GreateMaterials")
-	const $GreatePropertyKeys = Java.loadClass("electrolyte.greate.compat.gtceu.material.GreatePropertyKeys")
 
 	// Wood belt
 	$GreateMaterials.AndesiteAlloy.setProperty(GreatePropertyKeys.BELT, new $BeltProperty([$GreateMaterials.AndesiteAlloy], 5))
@@ -27,18 +26,18 @@ const registerGreateMaterials = (event) => {
 
 	GTMaterials.StyreneButadieneRubber.setProperty(GreatePropertyKeys.BELT, new $BeltProperty([GTMaterials.StainlessSteel, GTMaterials.Titanium], 30))
 
-	// Change stress levels
-	/*
-	let capacity = 32;
-	$GreateMaterials.AndesiteAlloy.getProperty($GreatePropertyKeys.KINETIC).setMaxCapacity(capacity);
-	GTMaterials.Steel.getProperty($GreatePropertyKeys.KINETIC).setMaxCapacity(capacity *= 4);
-	GTMaterials.Aluminium.getProperty($GreatePropertyKeys.KINETIC).setMaxCapacity(capacity *= 4);
-	GTMaterials.StainlessSteel.getProperty($GreatePropertyKeys.KINETIC).setMaxCapacity(capacity *= 4);
-	GTMaterials.Titanium.getProperty($GreatePropertyKeys.KINETIC).setMaxCapacity(capacity *= 4);
-	GTMaterials.TungstenSteel.getProperty($GreatePropertyKeys.KINETIC).setMaxCapacity(capacity *= 4);
-	GTMaterials.RhodiumPlatedPalladium.getProperty($GreatePropertyKeys.KINETIC).setMaxCapacity(capacity *= 4);
-	GTMaterials.NaquadahAlloy.getProperty($GreatePropertyKeys.KINETIC).setMaxCapacity(capacity *= 4);
-	GTMaterials.Darmstadtium.getProperty($GreatePropertyKeys.KINETIC).setMaxCapacity(capacity *= 4);
-	GTMaterials.Neutronium.getProperty($GreatePropertyKeys.KINETIC).setMaxCapacity(capacity *= 4);
-	*/
+	// Change RPM limits	
+	let rpm = 32;
+	$GreateMaterials.AndesiteAlloy.getProperty(GreatePropertyKeys.KINETIC).setMaxSpeed(rpm);
+	GTMaterials.Steel.getProperty(GreatePropertyKeys.KINETIC).setMaxSpeed(rpm *= 2);
+	GTMaterials.Aluminium.getProperty(GreatePropertyKeys.KINETIC).setMaxSpeed(rpm *= 2);
+	GTMaterials.StainlessSteel.getProperty(GreatePropertyKeys.KINETIC).setMaxSpeed(rpm *= 2);
+	GTMaterials.Titanium.getProperty(GreatePropertyKeys.KINETIC).setMaxSpeed(rpm *= 2);
+	// unused, but here for completion
+	GTMaterials.TungstenSteel.getProperty(GreatePropertyKeys.KINETIC).setMaxSpeed(rpm);
+	GTMaterials.RhodiumPlatedPalladium.getProperty(GreatePropertyKeys.KINETIC).setMaxSpeed(rpm);
+	GTMaterials.NaquadahAlloy.getProperty(GreatePropertyKeys.KINETIC).setMaxSpeed(rpm);
+	GTMaterials.Darmstadtium.getProperty(GreatePropertyKeys.KINETIC).setMaxSpeed(rpm);
+	GTMaterials.Neutronium.getProperty(GreatePropertyKeys.KINETIC).setMaxSpeed(rpm);
+	
 }
