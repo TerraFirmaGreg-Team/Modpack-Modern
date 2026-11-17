@@ -5,6 +5,40 @@
 	group: "31B01EAD21CA863A"
 	icon: "gtceu:uhv_ultimate_battery"
 	id: "6A9765FB6CDF16D0"
+	images: [
+		{
+			height: 2.5d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 2.5d
+			x: -13.0d
+			y: 3.0d
+		}
+		{
+			height: 2.5d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 2.5d
+			x: -13.0d
+			y: 7.0d
+		}
+		{
+			height: 2.5d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 2.5d
+			x: -13.0d
+			y: 11.0d
+		}
+		{
+			height: 2.5d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 2.5d
+			x: -12.5d
+			y: -2.0d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -80,12 +114,27 @@
 			dependencies: ["557AE858C52DA4CE"]
 			dependency_requirement: "one_completed"
 			hide_dependency_lines: true
+			icon: "tfg:large_gas_generator"
 			id: "209534D6A044F941"
-			tasks: [{
-				id: "70125EC6A1C5800C"
-				item: "tfg:large_gas_generator"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "70125EC6A1C5800C"
+					item: "tfg:large_gas_generator"
+					type: "item"
+				}
+				{
+					id: "5A0295C94C579C14"
+					item: "tfg:casings/gas_exhaust_lv"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "115EAB53AA1603CE"
+					item: "tfg:lv_battery_dynamo_hatch"
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: -10.0d
 			y: 2.0d
 		}
@@ -94,6 +143,7 @@
 				"1A37EA02D048A34E"
 				"209534D6A044F941"
 			]
+			icon: "gtceu:lpg_bucket"
 			id: "46DD45EC8E23E463"
 			tasks: [
 				{
@@ -140,6 +190,8 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["1BC91EA8CEECCE85"]
+			hide_dependency_lines: true
 			id: "15EC092ADCC2EEDE"
 			tasks: [{
 				id: "01355AE95B685572"
@@ -150,16 +202,33 @@
 			y: 2.0d
 		}
 		{
+			icon: "tfg:reformate_gas_bucket"
 			id: "5AD4AB0B930FE6E2"
-			tasks: [{
-				id: "23B678CB4EE4D2E6"
-				item: "tfg:reformate_gas_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "23B678CB4EE4D2E6"
+					item: "tfg:reformate_gas_bucket"
+					type: "item"
+				}
+				{
+					id: "6B38447D6269199E"
+					item: "tfg:pyrolyse_oven"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "112BFFB80D7CF7C6"
+					item: "gtceu:coal_liquefaction_tower"
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: -5.0d
 			y: 3.0d
 		}
 		{
+			dependencies: ["1BC91EA8CEECCE85"]
+			hide_dependency_lines: true
 			id: "682BE44C21B1B527"
 			tasks: [{
 				id: "459ACE48192D17FE"
@@ -194,6 +263,10 @@
 			y: 8.0d
 		}
 		{
+			dependencies: [
+				"53E277FD1D0BC3FD"
+				"4201385A6C2D8E1C"
+			]
 			id: "118155C644A82ED8"
 			tasks: [{
 				id: "709407817DF47EA5"
@@ -204,6 +277,10 @@
 			y: 7.0d
 		}
 		{
+			dependencies: [
+				"53E277FD1D0BC3FD"
+				"4201385A6C2D8E1C"
+			]
 			id: "25531E27AABD3EFF"
 			tasks: [{
 				id: "2109BB5C2E40754F"
@@ -214,6 +291,8 @@
 			y: 7.0d
 		}
 		{
+			dependencies: ["1BC91EA8CEECCE85"]
+			hide_dependency_lines: true
 			id: "7F3990212D21D064"
 			tasks: [{
 				id: "1500F8D708CBE4A9"
@@ -224,6 +303,8 @@
 			y: 6.0d
 		}
 		{
+			dependencies: ["1BC91EA8CEECCE85"]
+			hide_dependency_lines: true
 			id: "3780BD591512CF4A"
 			tasks: [{
 				id: "3D39F619DB3200C0"
@@ -234,11 +315,9 @@
 			y: 10.0d
 		}
 		{
-			dependencies: [
-				"283B1303732EEF65"
-				"657B5D1787CA090B"
-			]
+			dependencies: ["557AE858C52DA4CE"]
 			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
 			id: "2087DDA548CBB1F1"
 			tasks: [{
 				id: "0C7802BDB4C719C7"
@@ -249,6 +328,10 @@
 			y: 10.0d
 		}
 		{
+			dependencies: [
+				"11357EA46374EF9D"
+				"2087DDA548CBB1F1"
+			]
 			id: "283B1303732EEF65"
 			tasks: [
 				{
@@ -271,11 +354,8 @@
 			y: 11.0d
 		}
 		{
-			dependencies: [
-				"283B1303732EEF65"
-				"657B5D1787CA090B"
-			]
-			dependency_requirement: "one_completed"
+			dependencies: ["557AE858C52DA4CE"]
+			hide_dependency_lines: true
 			id: "11357EA46374EF9D"
 			tasks: [{
 				id: "7CB6FC18DC33B133"
@@ -286,6 +366,10 @@
 			y: 12.0d
 		}
 		{
+			dependencies: [
+				"2087DDA548CBB1F1"
+				"11357EA46374EF9D"
+			]
 			id: "657B5D1787CA090B"
 			tasks: [{
 				id: "24CB3EF8F1043A23"
@@ -296,6 +380,8 @@
 			y: 11.0d
 		}
 		{
+			dependencies: ["1BC91EA8CEECCE85"]
+			hide_dependency_lines: true
 			id: "3FAF2F8989E84A38"
 			tasks: [{
 				id: "205B731B50C9DE0F"
@@ -306,6 +392,8 @@
 			y: 12.0d
 		}
 		{
+			dependencies: ["44B9B4A30BFB2CA6"]
+			hide_dependency_lines: true
 			id: "03C248D5E54CB7FF"
 			tasks: [{
 				id: "27631905C73570AC"
@@ -316,6 +404,8 @@
 			y: 10.0d
 		}
 		{
+			dependencies: ["44B9B4A30BFB2CA6"]
+			hide_dependency_lines: true
 			id: "6826901B94527AFA"
 			tasks: [{
 				id: "4014E89A370113DB"
@@ -326,6 +416,8 @@
 			y: 6.0d
 		}
 		{
+			dependencies: ["44B9B4A30BFB2CA6"]
+			hide_dependency_lines: true
 			id: "4196C0E1EF90C927"
 			tasks: [{
 				id: "005B335BB346DBF6"
@@ -336,6 +428,8 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["44B9B4A30BFB2CA6"]
+			hide_dependency_lines: true
 			id: "1781D4BB8DDBAE1C"
 			tasks: [{
 				id: "448A44926538AB2C"
@@ -346,6 +440,8 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["44B9B4A30BFB2CA6"]
+			hide_dependency_lines: true
 			id: "324CC97F95771F68"
 			tasks: [{
 				id: "56E79421A0182EE6"
@@ -356,6 +452,8 @@
 			y: 8.0d
 		}
 		{
+			dependencies: ["1BC91EA8CEECCE85"]
+			hide_dependency_lines: true
 			id: "40FDD2F304558EFD"
 			tasks: [{
 				id: "0F58170B230AEABC"
@@ -364,16 +462,6 @@
 			}]
 			x: -5.0d
 			y: 8.0d
-		}
-		{
-			id: "411A5F099A274C3C"
-			tasks: [{
-				id: "266F78E7555D0C15"
-				item: "tfg:reformate_gas_bucket"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 3.0d
 		}
 		{
 			id: "27309E1A6DED06DB"
@@ -496,6 +584,8 @@
 			y: 11.0d
 		}
 		{
+			dependencies: ["44B9B4A30BFB2CA6"]
+			hide_dependency_lines: true
 			id: "1F068C0AB6156C1D"
 			tasks: [{
 				id: "5186BE539FBF49EB"
@@ -920,6 +1010,7 @@
 			description: [
 				"In &2GregTech&r, the ways to produce power are quite different from each other, and each of them has its own progression. Each new tier usually brings a way to enhance your power production along a certain path. In &2TerraFirmaGreg&r, you have three main paths of progression: &dSteam,&r &9Combustion&r and &bGas,&r each with its own &apros&r and &ccons&r.\\n\\nDon't try to look for the best one, because &6it does not exist&r. Some will be &6cheaper&r material-wise, while others will require &6complex processing&r to make their fuels but can be easy to expand.\\n\\nIn this chapter, you will find all the information you need about the &6advantages&r and &6disadvantages&r of each path. It is also important to remember that nothing is set in stone: you could switch to a different power generation method, or even use a bit of all of them.\\n\\nBut it does not stop here: on every new &2celestial body&r you explore, you will discover a local way to produce power."
 				"{@pagebreak}"
+				"This chapter has a pretty linear progression. Every times you unlock a new Machine Hull, youl will unlock the new quests showing you which new methods you unlocked to upgrade your Power Production.\\n\\nOn the bottom part of this Chapter, you can see all the methods to produce power that is mostly limited to Earth dimension (most of them won't work in other dimensions) while on the top part, you can see every methods that are locked to other dimensions.\\n\\nIn TerraFirmaGreg you will need to use these alternatives on every new Planets, do not expect to use Combustion or Gas on the Moon, it is intended for you to be versatile."
 			]
 			icon: "gtceu:uhv_ultimate_battery"
 			id: "2F0CD42A688917F1"
@@ -936,37 +1027,49 @@
 			y: 0.0d
 		}
 		{
+			icon: "gtceu:refinery_gas_bucket"
 			id: "5FD9C677998F88B7"
+			shape: "none"
+			size: 2.0d
 			tasks: [{
 				id: "28B880A49BA501F3"
 				title: "The Gas Path"
 				type: "checkmark"
 			}]
-			x: -12.5d
+			x: -13.0d
 			y: 3.0d
 		}
 		{
+			icon: "gtceu:oil_bucket"
 			id: "0D8C2C1F7C94DFDC"
+			shape: "none"
+			size: 2.0d
 			tasks: [{
 				id: "359BF16DD12E8C66"
 				title: "The Combustion Path"
 				type: "checkmark"
 			}]
-			x: -12.5d
+			x: -13.0d
 			y: 7.0d
 		}
 		{
+			icon: "gtceu:dense_steam_bucket"
+			icon_scale: 2.0d
 			id: "1321B90A468FE1CA"
+			shape: "none"
 			tasks: [{
 				id: "480E61B08B9F629F"
 				title: "The Steam Path"
 				type: "checkmark"
 			}]
-			x: -12.5d
+			x: -13.0d
 			y: 11.0d
 		}
 		{
+			icon: "ad_astra:moon_globe"
 			id: "1F2AC774D587326B"
+			shape: "none"
+			size: 2.0d
 			tasks: [{
 				id: "4A213DF1DE9BD8AC"
 				title: "The Extraterestrial Pathes"
@@ -974,6 +1077,33 @@
 			}]
 			x: -12.5d
 			y: -2.0d
+		}
+		{
+			id: "731C618ECD09562F"
+			tasks: [{
+				id: "524BD516D10CFB41"
+				item: "gtceu:cracker"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3E180A97A1B48FD1"]
+			disable_toast: true
+			icon: "tfg:luv_universal_circuit"
+			id: "3F1943D0E0CE0E38"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				disable_toast: true
+				id: "3DE980935357D435"
+				item: "gtceu:luv_machine_hull"
+				type: "item"
+			}]
+			title: "Ludicrous Voltage Tier"
+			x: 15.0d
+			y: 0.0d
 		}
 	]
 	title: "{quests.gregtech_energy}"
