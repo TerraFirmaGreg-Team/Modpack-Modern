@@ -164,15 +164,29 @@
 		{
 			dependencies: ["7FA1525D681C4B4A"]
 			description: ["{quests.low_voltage.lv_steam_turbine.desc}"]
+			icon: "gtceu:lv_steam_turbine"
 			id: "6E186F9C57155BFA"
 			optional: true
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_steam_turbine.subtitle}"
-			tasks: [{
-				id: "155BC745245BCBAF"
-				item: "gtceu:lv_steam_turbine"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "49ECD2FA1FA7748B"
+					type: "checkmark"
+				}
+				{
+					id: "155BC745245BCBAF"
+					item: "gtceu:lv_steam_turbine"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "060B44B19CA14D07"
+					item: "tfg:large_steam_generator"
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "{quests.low_voltage.lv_steam_turbine.title}"
 			x: 0.0d
 			y: -6.0d
@@ -1504,14 +1518,28 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.low_voltage.lv_combuston_gen.desc}"]
+			icon: "gtceu:lv_combustion"
 			id: "170B544373A16112"
 			optional: true
 			subtitle: "{quests.low_voltage.lv_combuston_gen.subtitle}"
-			tasks: [{
-				id: "2B36CA88F25D5449"
-				item: "gtceu:lv_combustion"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7D43E18F94821934"
+					type: "checkmark"
+				}
+				{
+					id: "2B36CA88F25D5449"
+					item: "gtceu:lv_combustion"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "399CF2BE55B361D0"
+					item: "tfg:large_combustion_generator"
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "{quests.low_voltage.lv_combuston_gen.title}"
 			x: -3.0d
 			y: -6.0d
