@@ -270,7 +270,7 @@ function registerTFGCasingRecipes(event) {
 		D: '#forge:tools/wrenches'
 	});
 
-	event.recipes.gtceu.welder('machine_casing_pressure_dark')
+	event.recipes.gtceu.welder('tfg:machine_casing_pressure_dark')
 		.itemInputs('6x #forge:plates/black_steel', '#forge:frames/aluminium')
 		.itemOutputs('2x tfg:casings/machine_casing_pressure_dark')
 		.circuit(6)
@@ -278,13 +278,14 @@ function registerTFGCasingRecipes(event) {
 		.EUt(16)
 		.addMaterialInfo(true)
 
-	event.recipes.gtceu.welder('machine_casing_black_steel')
-		.itemInputs('2x #forge:plates/black_steel', '#forge:frames/bronze')
+	event.recipes.gtceu.welder('tfg:machine_casing_black_steel')
+		.itemInputs('2x #forge:plates/black_steel', '#tfg:any_bronze_frame')
 		.itemOutputs('2x tfg:casings/machine_casing_black_steel')
 		.circuit(6)
 		.duration(2.5 * 20)
 		.EUt(16)
-		.addMaterialInfo(true)
+
+	TFGHelpers.registerMaterialInfo('tfg:casings/machine_casing_black_steel', [GTMaterials.BlackSteel, 1])
 
 	event.shaped('2x tfg:casings/machine_casing_black_steel', [
 		' B ',
@@ -293,7 +294,7 @@ function registerTFGCasingRecipes(event) {
 	], {
 		A: '#forge:plates/black_steel',
 		B: '#forge:tools/hammers',
-		C: '#forge:frames/bronze',
+		C: '#tfg:any_bronze_frame',
 		D: '#forge:tools/wrenches'
 	}).id('tfg:shaped/machine_casing_black_steel')
 
