@@ -20,7 +20,7 @@
 - Fixed a crash when opening a barrel GUI while it's placed in a sloop and is raining (#5206) @Pyritie
 - Fixed a rare crash when generating a mineshaft (#5332) @Pyritie
 - Fixed a crash when "creeping" plants tried to spread into a fluid block (#5330) @Pyritie
-- Fixed canoes starting to burn as soon as you finished carving them (#5138) @Pyritie
+- Fixed canoes starting to burn as soon as you finished carving them (#5139) @Pyritie
 - Fixed beneath's large stone pillars not being properly hardened @Egogorka
 ### Mods
 #### Optional Mods
