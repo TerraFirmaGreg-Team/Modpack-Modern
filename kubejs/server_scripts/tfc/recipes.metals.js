@@ -56,11 +56,6 @@ function registerTFCMetalsRecipes(event) {
 		TFC.alloyPart('tfc:nickel', 0.45, 0.55)
 	]).id('tfg:alloy/cupronickel')
 
-	event.recipes.tfc.alloy('tfg:battery_alloy', [
-		TFC.alloyPart('tfg:lead', 0.75, 0.85),
-		TFC.alloyPart('tfc:tin', 0.15, 0.25)
-	]).id('tfg:alloy/battery_alloy')
-
 	//#endregion
 
 	//#region Рецепты ковки TFC слитков в GT машинах

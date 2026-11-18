@@ -164,8 +164,7 @@ function registerVintageImprovementsRecipes(event) {
 		{ material: GTMaterials.Tin, blows: STARTING_BLOWS },
 		{ material: GTMaterials.Lead, blows: STARTING_BLOWS },
 		{ material: GTMaterials.Electrum, blows: STARTING_BLOWS },
-		{ material: GTMaterials.Cupronickel, blows: STARTING_BLOWS },
-		{ material: GTMaterials.BatteryAlloy, blows: STARTING_BLOWS }
+		{ material: GTMaterials.Cupronickel, blows: STARTING_BLOWS }
 	]
 
 	let HAMMERING_ITEMS = [

@@ -133,7 +133,6 @@ const registerGTCEUMetals = (event) => {
 	event.metal('gtceu:nickel', 1453, 0.00625, '#forge:ingots/nickel', '#forge:double_ingots/nickel', '#forge:plates/nickel', 1, 'tfc:nickel')
 	event.metal('gtceu:brass', 930, 0.00857, '#forge:ingots/brass', '#forge:double_ingots/brass', '#forge:plates/brass', 2, 'tfc:brass')
 	event.metal('gtceu:electrum', 1010, 0.00562, '#forge:ingots/electrum', '#forge:double_ingots/electrum', '#forge:plates/electrum', 1, 'tfg:electrum')
-	event.metal('gtceu:battery_alloy', 330, 0.01729, '#forge:ingots/battery_alloy', '#forge:double_ingots/battery_alloy', '#forge:plates/battery_alloy', 1, 'tfg:battery_alloy')
 	event.metal('gtceu:cupronickel', 1266, 0.00741, '#forge:ingots/cupronickel', '#forge:double_ingots/cupronickel', '#forge:plates/cupronickel', 1, 'tfg:cupronickel')
 
 	event.metal('gtceu:redstone', 460, 0.01729, null, null, null, 1, 'tfg:redstone')
