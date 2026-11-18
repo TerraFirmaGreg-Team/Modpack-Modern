@@ -1436,7 +1436,11 @@
 		}
 		{
 			dependencies: ["0DDA9B67B59A9481"]
-			description: ["{quests.ae2.storage_provider.desc}"]
+			description: [
+				"{quests.ae2.storage_provider.desc.1}"
+				"{@pagebreak}"
+				"{quests.ae2.storage_provider.desc.2}"
+			]
 			icon: "tfg:storage_provider"
 			id: "3988DC7E8B178C17"
 			subtitle: "{quests.ae2.storage_provider.subtitle}"
