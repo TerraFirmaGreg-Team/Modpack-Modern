@@ -202,12 +202,12 @@
 
     "tfg.tooltip.machine.smr_fluid_import_hatch": "§7Can only be used in a Small Modular Turbine§r",
 
-    "tfg.tooltip.machine.large_combustion_generator": "A simple Combustion Generator but able to output four times more energy that a single Generator",
-    "tfg.tooltip.machine.large_gas_generator": "A simple Gas Generator but able to output four times more energy that a single Generator",
-    "tfg.tooltip.machine.large_steam_generator_1": "A simple Steam Generator but able to output four times more energy that a single Generator",
+    "tfg.tooltip.machine.large_combustion_generator": "A Combustion Generator that's able to output four times the energy of a single-block Generator",
+    "tfg.tooltip.machine.large_gas_generator": "A Gas Generator that's able to output four times the energy of a single-block Generator",
+    "tfg.tooltip.machine.large_steam_generator_1": "A Steam Generator that's able to output four times the energy of a single-block Generator",
     "tfg.tooltip.machine.large_steam_generator_2": "Only the Large Steam Turbine can output §6Distilled Water§r.",
-    "tfg.tooltip.machine.large_generator_1": "§aMax Voltage OUT:§r Scale with the §bBattery Dynamo Hatch§r",
-    "tfg.tooltip.machine.large_generator_2": "The Large Generator does not have a better efficiency but is cheaper that crafting four single Generators. It will always output 4A in the §bBattery Dynamo Hatch§r.",
+    "tfg.tooltip.machine.large_generator_1": "§aMax Voltage OUT:§r Scales with the §bBattery Dynamo Hatch§r",
+    "tfg.tooltip.machine.large_generator_2": "Does not have a better fuel efficiency, but is cheaper than crafting four single-block Generators. It will always output 4A in the §bBattery Dynamo Hatch§r.",
 
     "tfg.tooltip.generator_exhaust.generator": "§7Exhaust for the §f%s§7.",
     "tfg.tooltip.generator_exhaust.tier": "§7Sets the Large Generator to %1$s§7, requires a %1$s §fBattery Dynamo Hatch§7.",
