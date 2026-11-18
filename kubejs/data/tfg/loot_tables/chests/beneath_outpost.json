@@ -836,22 +836,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "createdeco:zinc_coinstack",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 2,
-								"max": 8,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 50
-				},
-				{
-					"type": "minecraft:item",
-					"name": "createdeco:brass_coinstack",
+					"name": "createdeco:copper_coinstack",
 					"functions": [
 						{
 							"function": "minecraft:set_count",

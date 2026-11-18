@@ -350,13 +350,16 @@ const registerCreatedecoRecipes = (event) => {
 			.duration(20)
 			.EUt(4)
 
+		let tfcProperty = coin.material.getProperty(TFGPropertyKey.TFC_PROPERTY);
+
 		event.recipes.tfc.anvil(coin.coin, ChemicalHelper.get(TagPrefix.nugget, coin.material, 1), ['shrink_last'])
+			.tier(tfcProperty.getTier())
 			.id(`tfg:anvil/${coin.material.getName()}_nugget_to_coin`)
 
-		event.recipes.tfc.anvil(`9x coin.coin`, ChemicalHelper.get(TagPrefix.ingot, coin.material, 1), ['shrink_last'])
+		event.recipes.tfc.anvil(`9x ${coin.coin}`, ChemicalHelper.get(TagPrefix.ingot, coin.material, 1), ['shrink_last'])
+			.tier(tfcProperty.getTier())
 			.id(`tfg:anvil/${coin.material.getName()}_ingot_to_coin`)
 			
-		let tfcProperty = coin.material.getProperty(TFGPropertyKey.TFC_PROPERTY);
 		let meltMaterial = (tfcProperty.getOutputMaterial() === null) ? coin.material : tfcProperty.getOutputMaterial();
 
 		event.recipes.tfc.heating(coin.coin, tfcProperty.getMeltTemp())
