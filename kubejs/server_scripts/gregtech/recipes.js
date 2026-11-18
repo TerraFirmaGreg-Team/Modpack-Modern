@@ -825,6 +825,15 @@ const registerGTCEURecipes = (event) => {
 		.duration(20*10)
 		.EUt(GTValues.VA[GTValues.HV]);
 
+	// Add a shaped recipe to the Low Voltage Coil so they can be craft pre Assembler
+
+	event.recipes.create.sequenced_assembly(['gtceu:lv_voltage_coil'], 'gtceu:magnetic_iron_rod', [
+	event.recipes.create.deploying('gtceu:magnetic_iron_rod', ['gtceu:magnetic_iron_rod', 'gtceu:fine_steel_wire'])
+	])
+		.transitionalItem('gtceu:magnetic_iron_rod')
+		.loops(16)
+		.id('tfg:sequenced_assembly/lv_voltage_coil');
+
     // Make the laser hatches use lenses that can be easily automated
 
     ['ev', 'iv', 'luv', 'zpm', 'uv', 'uhv'].forEach(tier => {
@@ -833,7 +842,7 @@ const registerGTCEURecipes = (event) => {
                 event.replaceInput({ id: `gtceu:assembler/${tier}_${amperage}a_laser_${kind}_hatch` }, 'gtceu:diamond_lens', 'gtceu:glass_lens')
             })
         })
-    })
+    });
 
 	event.recipes.tfc.glassworking(
 		'4x gtceu:glass_vial',

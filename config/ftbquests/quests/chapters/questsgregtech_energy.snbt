@@ -1,0 +1,1146 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "questsgregtech_energy"
+	group: "31B01EAD21CA863A"
+	icon: "gtceu:uhv_ultimate_battery"
+	id: "6A9765FB6CDF16D0"
+	images: [
+		{
+			height: 2.5d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 2.5d
+			x: -13.0d
+			y: 3.0d
+		}
+		{
+			height: 2.5d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 2.5d
+			x: -13.0d
+			y: 7.0d
+		}
+		{
+			height: 2.5d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 2.5d
+			x: -13.0d
+			y: 11.0d
+		}
+		{
+			height: 2.5d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 2.5d
+			x: -12.5d
+			y: -2.0d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2F0CD42A688917F1"]
+			disable_toast: true
+			icon: "tfg:lv_universal_circuit"
+			id: "557AE858C52DA4CE"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				disable_toast: true
+				id: "6EBCAFA4B7ED5677"
+				item: "gtceu:lv_machine_hull"
+				type: "item"
+			}]
+			title: "Low Voltage Tier"
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["557AE858C52DA4CE"]
+			disable_toast: true
+			icon: "tfg:mv_universal_circuit"
+			id: "1BC91EA8CEECCE85"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				disable_toast: true
+				id: "485CD708B699C938"
+				item: "gtceu:mv_machine_hull"
+				type: "item"
+			}]
+			title: "Medium Voltage Tier"
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1BC91EA8CEECCE85"]
+			disable_toast: true
+			icon: "tfg:hv_universal_circuit"
+			id: "44B9B4A30BFB2CA6"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				disable_toast: true
+				id: "34361F6D4337604F"
+				item: "gtceu:hv_machine_hull"
+				type: "item"
+			}]
+			title: "High Voltage Tier"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["44B9B4A30BFB2CA6"]
+			disable_toast: true
+			icon: "tfg:ev_universal_circuit"
+			id: "69A1834DBD52D1BC"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				disable_toast: true
+				id: "339A2F0A0E9C1955"
+				item: "gtceu:ev_machine_hull"
+				type: "item"
+			}]
+			title: "Extreme Voltage Tier"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["557AE858C52DA4CE"]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			icon: "tfg:large_gas_generator"
+			id: "209534D6A044F941"
+			tasks: [
+				{
+					id: "70125EC6A1C5800C"
+					item: "tfg:large_gas_generator"
+					type: "item"
+				}
+				{
+					id: "5A0295C94C579C14"
+					item: "tfg:casings/gas_exhaust_lv"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "115EAB53AA1603CE"
+					item: "tfg:lv_battery_dynamo_hatch"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"1A37EA02D048A34E"
+				"209534D6A044F941"
+			]
+			icon: "gtceu:lpg_bucket"
+			id: "46DD45EC8E23E463"
+			tasks: [
+				{
+					id: "29CE9110F18093CE"
+					item: "gtceu:lpg_bucket"
+					type: "item"
+				}
+				{
+					id: "0BC37CA4FEA11FA7"
+					item: "tfg:gas_well"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -10.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["557AE858C52DA4CE"]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			id: "1A37EA02D048A34E"
+			tasks: [{
+				id: "316CAC4D976056A1"
+				item: "gtceu:lv_gas_turbine"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"209534D6A044F941"
+				"1A37EA02D048A34E"
+			]
+			dependency_requirement: "one_completed"
+			id: "46D0AE2B2F10BD50"
+			tasks: [{
+				id: "2DCE6D021F9D08F1"
+				item: "tfg:syngas_bucket"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1BC91EA8CEECCE85"]
+			hide_dependency_lines: true
+			id: "15EC092ADCC2EEDE"
+			tasks: [{
+				id: "01355AE95B685572"
+				item: "tfg:mv_battery_dynamo_hatch"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			icon: "tfg:reformate_gas_bucket"
+			id: "5AD4AB0B930FE6E2"
+			tasks: [
+				{
+					id: "23B678CB4EE4D2E6"
+					item: "tfg:reformate_gas_bucket"
+					type: "item"
+				}
+				{
+					id: "6B38447D6269199E"
+					item: "tfg:pyrolyse_oven"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "112BFFB80D7CF7C6"
+					item: "gtceu:coal_liquefaction_tower"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1BC91EA8CEECCE85"]
+			hide_dependency_lines: true
+			id: "682BE44C21B1B527"
+			tasks: [{
+				id: "459ACE48192D17FE"
+				item: "gtceu:mv_gas_turbine"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["557AE858C52DA4CE"]
+			hide_dependency_lines: true
+			id: "53E277FD1D0BC3FD"
+			tasks: [{
+				id: "089466805B42B29B"
+				item: "tfg:large_combustion_generator"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["557AE858C52DA4CE"]
+			hide_dependency_lines: true
+			id: "4201385A6C2D8E1C"
+			tasks: [{
+				id: "4FAAF27BE204293F"
+				item: "gtceu:lv_combustion"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"53E277FD1D0BC3FD"
+				"4201385A6C2D8E1C"
+			]
+			id: "118155C644A82ED8"
+			tasks: [{
+				id: "709407817DF47EA5"
+				item: "gtceu:diesel_bucket"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"53E277FD1D0BC3FD"
+				"4201385A6C2D8E1C"
+			]
+			id: "25531E27AABD3EFF"
+			tasks: [{
+				id: "2109BB5C2E40754F"
+				item: "gtceu:bio_diesel_bucket"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["1BC91EA8CEECCE85"]
+			hide_dependency_lines: true
+			id: "7F3990212D21D064"
+			tasks: [{
+				id: "1500F8D708CBE4A9"
+				item: "tfg:mv_battery_dynamo_hatch"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1BC91EA8CEECCE85"]
+			hide_dependency_lines: true
+			id: "3780BD591512CF4A"
+			tasks: [{
+				id: "3D39F619DB3200C0"
+				item: "tfg:mv_battery_dynamo_hatch"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["557AE858C52DA4CE"]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			id: "2087DDA548CBB1F1"
+			tasks: [{
+				id: "0C7802BDB4C719C7"
+				item: "tfg:large_steam_generator"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"11357EA46374EF9D"
+				"2087DDA548CBB1F1"
+			]
+			id: "283B1303732EEF65"
+			tasks: [
+				{
+					id: "0878DC4496CBDD5F"
+					item: "gtceu:hp_steam_solar_boiler"
+					type: "item"
+				}
+				{
+					id: "1242EF05B3DF36A9"
+					item: "gtceu:hp_steam_solid_boiler"
+					type: "item"
+				}
+				{
+					id: "760560CED71B3670"
+					item: "gtceu:hp_steam_liquid_boiler"
+					type: "item"
+				}
+			]
+			x: -10.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["557AE858C52DA4CE"]
+			hide_dependency_lines: true
+			id: "11357EA46374EF9D"
+			tasks: [{
+				id: "7CB6FC18DC33B133"
+				item: "gtceu:lv_steam_turbine"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"2087DDA548CBB1F1"
+				"11357EA46374EF9D"
+			]
+			id: "657B5D1787CA090B"
+			tasks: [{
+				id: "24CB3EF8F1043A23"
+				item: "tfg:large_bronze_boiler"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["1BC91EA8CEECCE85"]
+			hide_dependency_lines: true
+			id: "3FAF2F8989E84A38"
+			tasks: [{
+				id: "205B731B50C9DE0F"
+				item: "gtceu:mv_steam_turbine"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["44B9B4A30BFB2CA6"]
+			hide_dependency_lines: true
+			id: "03C248D5E54CB7FF"
+			tasks: [{
+				id: "27631905C73570AC"
+				item: "tfg:large_steam_turbine"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["44B9B4A30BFB2CA6"]
+			hide_dependency_lines: true
+			id: "6826901B94527AFA"
+			tasks: [{
+				id: "4014E89A370113DB"
+				item: "tfg:hv_battery_dynamo_hatch"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["44B9B4A30BFB2CA6"]
+			hide_dependency_lines: true
+			id: "4196C0E1EF90C927"
+			tasks: [{
+				id: "005B335BB346DBF6"
+				item: "tfg:hv_battery_dynamo_hatch"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["44B9B4A30BFB2CA6"]
+			hide_dependency_lines: true
+			id: "1781D4BB8DDBAE1C"
+			tasks: [{
+				id: "448A44926538AB2C"
+				item: "gtceu:hv_gas_turbine"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["44B9B4A30BFB2CA6"]
+			hide_dependency_lines: true
+			id: "324CC97F95771F68"
+			tasks: [{
+				id: "56E79421A0182EE6"
+				item: "gtceu:hv_combustion"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["1BC91EA8CEECCE85"]
+			hide_dependency_lines: true
+			id: "40FDD2F304558EFD"
+			tasks: [{
+				id: "0F58170B230AEABC"
+				item: "gtceu:mv_combustion"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 8.0d
+		}
+		{
+			id: "27309E1A6DED06DB"
+			tasks: [{
+				id: "7F44429919216D26"
+				item: "tfg:btx_fuel_bucket"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["69A1834DBD52D1BC"]
+			hide_dependency_lines: true
+			id: "4BDF344CD7E7C885"
+			tasks: [{
+				id: "3CBBD93AC5A49994"
+				item: "gtceu:gas_large_turbine"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["69A1834DBD52D1BC"]
+			hide_dependency_lines: true
+			id: "37328927206DDD9C"
+			tasks: [{
+				id: "5CBF335AF254E6B7"
+				item: "gtceu:large_combustion_engine"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 6.0d
+		}
+		{
+			id: "348E72F71CDA02FA"
+			tasks: [{
+				id: "66224D7AF80F9C38"
+				item: "gtceu:cetane_boosted_diesel_bucket"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 7.0d
+		}
+		{
+			id: "3CB3327452540085"
+			tasks: [{
+				id: "21CA1C175EC81938"
+				item: "gtceu:gasoline_bucket"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["44B9B4A30BFB2CA6"]
+			hide_dependency_lines: true
+			id: "2A44178E39B92518"
+			tasks: [{
+				id: "34A7B232B41B32C6"
+				item: "gtceu:large_solar_panel"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["69A1834DBD52D1BC"]
+			hide_dependency_lines: true
+			id: "30144ACC662A08C9"
+			tasks: [{
+				id: "6E9636F50C98B28B"
+				item: "gtceu:large_solar_panel_tier2"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1BC91EA8CEECCE85"]
+			hide_dependency_lines: true
+			id: "0B0A844DAF3DFBC9"
+			tasks: [{
+				id: "29A00EFCA0F3C626"
+				item: "ad_astra:solar_panel"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -2.0d
+		}
+		{
+			id: "32B0DAF1241DFDDD"
+			tasks: [{
+				id: "0AB79AADD635233C"
+				item: "gtceu:wood_gas_bucket"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 11.0d
+		}
+		{
+			id: "2E7F7C6382498463"
+			tasks: [{
+				id: "0F17EE6E03DD9F39"
+				item: "tfg:bismuth_molybdate_catalyst_dust"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 11.0d
+		}
+		{
+			id: "67D1EE54F09941EC"
+			tasks: [{
+				id: "57D5FF36EE766235"
+				item: "tfg:platinum_tin_alumina_catalyst_dust"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 11.0d
+		}
+		{
+			id: "64CEC4E4CEFFE740"
+			tasks: [{
+				id: "5E9DF8E24CDE7222"
+				item: "gtceu:rocket_fuel_bucket"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["44B9B4A30BFB2CA6"]
+			hide_dependency_lines: true
+			id: "1F068C0AB6156C1D"
+			tasks: [{
+				id: "5186BE539FBF49EB"
+				item: {
+					Count: 1
+					id: "gtceu:turbine_rotor"
+					tag: {
+						GT.PartStats: {
+							Material: "gtceu:ultimet"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["69A1834DBD52D1BC"]
+			hide_dependency_lines: true
+			id: "5DE2F226D7FFF6FA"
+			tasks: [{
+				id: "44D49A3989EE16CE"
+				item: "gtceu:oxygen_bucket"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["69A1834DBD52D1BC"]
+			disable_toast: true
+			icon: "tfg:iv_universal_circuit"
+			id: "3E180A97A1B48FD1"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				disable_toast: true
+				id: "7FBE193BD3BB69F6"
+				item: "gtceu:iv_machine_hull"
+				type: "item"
+			}]
+			title: "Insane Voltage Tier"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3E180A97A1B48FD1"]
+			description: [
+				"{quests.gregtech_energy.lce.desc.1}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.lce.desc.2}"
+			]
+			hide_dependency_lines: true
+			id: "70D0BD23F5DC99D7"
+			subtitle: "{quests.gregtech_energy.lce.subtitle}"
+			tasks: [{
+				id: "26C95B8A56E92E7D"
+				item: "gtceu:extreme_combustion_engine"
+				type: "item"
+			}]
+			title: "{quests.gregtech_energy.lce.title}"
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			description: ["{quests.gregtech_energy.high_gasoline.desc}"]
+			id: "4A716E3AD0382CDE"
+			subtitle: "{quests.gregtech_energy.high_gasoline.subtitle}"
+			tasks: [{
+				id: "67E6AB1A6F74D44B"
+				item: "gtceu:high_octane_gasoline_bucket"
+				type: "item"
+			}]
+			title: "{quests.gregtech_energy.high_gasoline.title}"
+			x: 10.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["3E180A97A1B48FD1"]
+			description: ["{quests.gregtech_energy.large_solar_t3.desc}"]
+			hide_dependency_lines: true
+			id: "7DB3EC7D1FD4CFE3"
+			optional: true
+			subtitle: "{quests.gregtech_energy.large_solar_t3.subtitle}"
+			tasks: [{
+				id: "3CC94F902F037357"
+				item: "gtceu:large_solar_panel_tier3"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3E180A97A1B48FD1"]
+			description: [
+				"{quests.gregtech_energy.cooling_tower.desc.1}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.cooling_tower.desc.2}"
+			]
+			hide_dependency_lines: true
+			icon: "tfg:cooling_tower"
+			id: "2C90574127589324"
+			subtitle: "{quests.gregtech_energy.cooling_tower.subtitle}"
+			tasks: [
+				{
+					id: "765354F356174DFE"
+					item: "tfg:cooling_tower"
+					type: "item"
+				}
+				{
+					id: "6552569BEE10C6C4"
+					item: "tfg:boron_enriched_coolant_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0D59FBC3F84A1F25"
+					item: "tfg:warm_water_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 10.0d
+		}
+		{
+			dependency_requirement: "one_completed"
+			description: [
+				"{quests.gregtech_energy.fission_rod.desc.1}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.fission_rod.desc.2}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.fission_rod.desc.3}"
+			]
+			icon: {
+				Count: 1
+				id: "tfg:tbu_232_rod"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "00C6DBA28F1E7CB8"
+			subtitle: "{quests.gregtech_energy.fission_rod.subtitle}"
+			tasks: [
+				{
+					id: "022482AF45B5ADC8"
+					item: {
+						Count: 1
+						id: "tfg:tbu_232_rod"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "69C8F7BA1BEC7C22"
+					item: {
+						Count: 1
+						id: "tfg:americium_241_rod"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3353AE1CBDC29419"
+					item: {
+						Count: 1
+						id: "tfg:neptunium_237_rod"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{quests.gregtech_energy.fission_rod.title}"
+			x: 10.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["3E180A97A1B48FD1"]
+			description: [
+				"{quests.gregtech_energy.smr.desc.1}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.smr.desc.2}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.smr.desc.3}"
+			]
+			hide_dependency_lines: true
+			icon: "tfg:smr_generator"
+			id: "76915C9B03238E6F"
+			subtitle: "{quests.gregtech_energy.smr.subtitle}"
+			tasks: [
+				{
+					id: "38932DA99776C2A0"
+					item: "deafission:fission_reactor_smr1"
+					type: "item"
+				}
+				{
+					id: "126DAEDB2BAEFDD1"
+					item: "tfg:smr_generator"
+					type: "item"
+				}
+				{
+					id: "736F9F975AA03D2F"
+					item: "tfg:uv_smr_fluid_import_hatch"
+					type: "item"
+				}
+				{
+					id: "2105591635AB0049"
+					item: "gtceu:lubricant_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0753FC1F43794526"
+					item: "tfg:polyalkylene_lubricant_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7796FC76FCEC0B78"
+					item: "tfg:ozone_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "297124FDD59CEAD4"
+					item: "tfg:cyclohex_diperoxide_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "52715860DE00D21D"
+					item: "tfg:ticl4_doped_supercritical_co2_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{quests.gregtech_energy.smr.title}"
+			x: 10.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["69A1834DBD52D1BC"]
+			description: [
+				"{quests.gregtech_energy.fission_reactor.desc.1}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.fission_reactor.desc.2}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.fission_reactor.desc.3}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.fission_reactor.desc.4}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.fission_reactor.desc.5}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.fission_reactor.desc.6}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.fission_reactor.desc.7}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.fission_reactor.desc.8}"
+			]
+			hide_dependency_lines: true
+			icon: "deafission:fission_reactor_mk1"
+			id: "6D0D2C3B9B83ABFB"
+			subtitle: "{quests.gregtech_energy.fission_reactor.subtitle}"
+			tasks: [
+				{
+					id: "5903E913FFA91A68"
+					item: "deafission:fission_reactor_mk1"
+					type: "item"
+				}
+				{
+					id: "42653A082F267BE2"
+					item: "tfg:nuclear_turbine"
+					type: "item"
+				}
+			]
+			title: "{quests.gregtech_energy.fission_reactor.title}"
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			id: "46D4755AED8278CA"
+			tasks: [{
+				id: "08300771B932A7C6"
+				item: "gtceu:mv_fluid_drilling_rig"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 7.0d
+		}
+		{
+			id: "7E6536519AAEDF3C"
+			tasks: [{
+				id: "1581842AA9598C69"
+				item: "tfg:electric_greenhouse"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 7.0d
+		}
+		{
+			id: "2C92D1C136F31000"
+			tasks: [{
+				id: "667056641931E612"
+				item: "gtceu:hv_fluid_drilling_rig"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["3E180A97A1B48FD1"]
+			hide_dependency_lines: true
+			id: "2592B1C375AE8F2E"
+			tasks: [{
+				id: "4805D53D3059C19C"
+				item: "gtceu:liquid_oxygen_bucket"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["69A1834DBD52D1BC"]
+			hide_dependency_lines: true
+			id: "5EB42B00702FBB61"
+			tasks: [{
+				id: "4B82F4263BABFBE1"
+				item: {
+					Count: 1
+					id: "gtceu:turbine_rotor"
+					tag: {
+						GT.PartStats: {
+							Material: "tfg:mo_si_b"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["69A1834DBD52D1BC"]
+			hide_dependency_lines: true
+			id: "1B211CE500AC2B5C"
+			tasks: [{
+				id: "7B9653E5310DAA9A"
+				item: "gtceu:ev_energy_output_hatch_4a"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["69A1834DBD52D1BC"]
+			hide_dependency_lines: true
+			id: "60C1FD60F887745C"
+			tasks: [{
+				id: "34782C91F371DB91"
+				item: {
+					Count: 1
+					id: "gtceu:turbine_rotor"
+					tag: {
+						GT.PartStats: {
+							Material: "tfg:mo_si_b"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 12.0d
+		}
+		{
+			id: "0871CB4C4EE24E00"
+			tasks: [{
+				id: "2CF83820EC71AF47"
+				item: "tfg:gallium_zsm5_catalyst_dust"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 11.0d
+		}
+		{
+			id: "0153ECA504C449A7"
+			tasks: [{
+				id: "43EDEAF6D85967F2"
+				item: "tfg:radioactive_effluent_bucket"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["3E180A97A1B48FD1"]
+			hide_dependency_lines: true
+			id: "26D231383B6FA577"
+			tasks: [{
+				id: "4F1B21BE9C48E4C8"
+				item: "gtceu:iv_rotor_holder"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3E180A97A1B48FD1"]
+			hide_dependency_lines: true
+			id: "23551554394FB5A6"
+			tasks: [{
+				id: "632B587D57CA0D7E"
+				item: {
+					Count: 1
+					id: "gtceu:turbine_rotor"
+					tag: {
+						GT.PartStats: {
+							Material: "gtceu:hsss"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3E180A97A1B48FD1"]
+			hide_dependency_lines: true
+			id: "1618928C0367A21D"
+			tasks: [{
+				id: "1486BEE23863F20B"
+				item: "ad_astra:venus_globe"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -4.0d
+		}
+		{
+			description: [
+				"In &2GregTech&r, the ways to produce power are quite different from each other, and each of them has its own progression. Each new tier usually brings a way to enhance your power production along a certain path. In &2TerraFirmaGreg&r, you have three main paths of progression: &dSteam,&r &9Combustion&r and &bGas,&r each with its own &apros&r and &ccons&r.\\n\\nDon't try to look for the best one, because &6it does not exist&r. Some will be &6cheaper&r material-wise, while others will require &6complex processing&r to make their fuels but can be easy to expand.\\n\\nIn this chapter, you will find all the information you need about the &6advantages&r and &6disadvantages&r of each path. It is also important to remember that nothing is set in stone: you could switch to a different power generation method, or even use a bit of all of them.\\n\\nBut it does not stop here: on every new &2celestial body&r you explore, you will discover a local way to produce power."
+				"{@pagebreak}"
+				"This chapter has a pretty linear progression. Every times you unlock a new Machine Hull, youl will unlock the new quests showing you which new methods you unlocked to upgrade your Power Production.\\n\\nOn the bottom part of this Chapter, you can see all the methods to produce power that is mostly limited to Earth dimension (most of them won't work in other dimensions) while on the top part, you can see every methods that are locked to other dimensions.\\n\\nIn TerraFirmaGreg you will need to use these alternatives on every new Planets, do not expect to use Combustion or Gas on the Moon, it is intended for you to be versatile."
+			]
+			icon: "gtceu:uhv_ultimate_battery"
+			id: "2F0CD42A688917F1"
+			shape: "gear"
+			size: 3.0d
+			subtitle: "Choosing a Path"
+			tasks: [{
+				id: "5BAE421E4F265D4F"
+				title: "{quests.gregtech_energy.start.task}"
+				type: "checkmark"
+			}]
+			title: "The Energy Progression in Gregtech"
+			x: -15.0d
+			y: 0.0d
+		}
+		{
+			icon: "gtceu:refinery_gas_bucket"
+			id: "5FD9C677998F88B7"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				id: "28B880A49BA501F3"
+				title: "The Gas Path"
+				type: "checkmark"
+			}]
+			x: -13.0d
+			y: 3.0d
+		}
+		{
+			icon: "gtceu:oil_bucket"
+			id: "0D8C2C1F7C94DFDC"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				id: "359BF16DD12E8C66"
+				title: "The Combustion Path"
+				type: "checkmark"
+			}]
+			x: -13.0d
+			y: 7.0d
+		}
+		{
+			icon: "gtceu:dense_steam_bucket"
+			icon_scale: 2.0d
+			id: "1321B90A468FE1CA"
+			shape: "none"
+			tasks: [{
+				id: "480E61B08B9F629F"
+				title: "The Steam Path"
+				type: "checkmark"
+			}]
+			x: -13.0d
+			y: 11.0d
+		}
+		{
+			icon: "ad_astra:moon_globe"
+			id: "1F2AC774D587326B"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				id: "4A213DF1DE9BD8AC"
+				title: "The Extraterestrial Pathes"
+				type: "checkmark"
+			}]
+			x: -12.5d
+			y: -2.0d
+		}
+		{
+			id: "731C618ECD09562F"
+			tasks: [{
+				id: "524BD516D10CFB41"
+				item: "gtceu:cracker"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3E180A97A1B48FD1"]
+			disable_toast: true
+			icon: "tfg:luv_universal_circuit"
+			id: "3F1943D0E0CE0E38"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				disable_toast: true
+				id: "3DE980935357D435"
+				item: "gtceu:luv_machine_hull"
+				type: "item"
+			}]
+			title: "Ludicrous Voltage Tier"
+			x: 15.0d
+			y: 0.0d
+		}
+	]
+	title: "{quests.gregtech_energy}"
+}
