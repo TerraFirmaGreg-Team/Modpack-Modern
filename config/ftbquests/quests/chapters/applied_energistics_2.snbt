@@ -1455,6 +1455,12 @@
 					item: "tfg:order_terminal"
 					type: "item"
 				}
+				{
+					id: "1E840E31A8E538EB"
+					item: "tfg:wireless_order_terminal"
+					optional_task: true
+					type: "item"
+				}
 			]
 			x: 1.5d
 			y: -7.5d

@@ -1,11 +1,18 @@
 # Changelog
 
 ### Changes
-- Added a new terminal (and wireless terminal): the Order Terminal. This works with the new Storage Provider, essentially working like create logistics' stock keeper and package system, cutting down on patternslop for crafts you only need a small number of times. Read the new quest in the AE2 chapter for more information! @ko-lja
+### Bug fixes
+
+## [0.13.19] - 18-11-2026
+### Java security vulnerability
+- Java recently announced a [new security vulnerability](https://calif.io/java4shell/). You should [update](https://www.oracle.com/anz/java/technologies/downloads/) your version of java as soon as possible. You don't have to change versions.
+### Changes
+- Added a new terminal (and wireless terminal): the **Order Terminal**. This works with the new **Storage Provider**, essentially working like create logistics' stock keeper and package system, cutting down on patternslop for crafts you only need a small number of times. Read the new quest in the AE2 chapter for more information! @ko-lja
 - Barrels storing food sealed in vinegar now gain an additional preservation bonus when inside a cellar @Zippity
 - Hoes and scythes should now also work on herbs and spices @Pyritie
 - Removed battery alloy from TFC heating (#5334) @Pyritie
-- Added some proper trades for the wandering trader if you turn him on via /gamerule. He is still off by default @Pyritie
+- Added some proper trades for the wandering trader if you turn him on via `/gamerule doTraderSpawning`. He is still off by default. @Pyritie
+- Spring water no longer heals on Hard difficulty @Pyritie
 ### Bug fixes
 - Fixed Create Deco's shipping containers voiding/duping items @Pyritie
 - Fixed firmalife bees never getting diseases @Zippity
@@ -13,8 +20,12 @@
 - Fixed a crash when opening a barrel GUI while it's placed in a sloop and is raining (#5206) @Pyritie
 - Fixed a rare crash when generating a mineshaft (#5332) @Pyritie
 - Fixed a crash when "creeping" plants tried to spread into a fluid block (#5330) @Pyritie
+- Fixed canoes starting to burn as soon as you finished carving them (#5138) @Pyritie
 - Fixed beneath's large stone pillars not being properly hardened @Egogorka
 ### Mods
+#### Optional Mods
+- Added **Clockwork (Valkyrian Skies)**, check the [optional mods](https://wiki.terrafirmagreg.team/modern/en_us/modpack/optional-mods) page for installation instructions.
+- Added **Create: Return Ticket**.
 #### TerraFirmaCraft
 - Fix some incompatibilities with Create and other mods that take drops from our block entities.
 - Fixed an issue with patchouli tables.
