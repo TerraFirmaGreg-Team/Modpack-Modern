@@ -735,7 +735,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "createdeco:brass_coinstack",
+					"name": "createdeco:iron_coinstack",
 					"functions": [
 						{
 							"function": "minecraft:set_count",

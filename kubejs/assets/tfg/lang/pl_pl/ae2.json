@@ -7,6 +7,7 @@
 	"gui.tfg.order_terminal.craft": "Wytwórz",
 	"gui.tfg.order_terminal.more": "...i jeszcze %s",
 	"gui.tfg.order_terminal.return": "Zwróć oczekujące elementy do sieci i anuluj wytwarzanie",
+	"gui.tfg.order_terminal.search_destinations": "Szukaj celów",
 	"gui.tfg.order_terminal.send": "Wyślij",
 	"gui.tfg.order_terminal.set": "Ustaw",
 	"gui.tfg.order_terminal.stage": "Przygotuj",
@@ -21,5 +22,6 @@
 	"gui.tfg.order_terminal.status.idle": "Bezczynny",
 	"gui.tfg.order_terminal.status.missing_ingredients": "Brakujące składniki",
 	"gui.tfg.order_terminal.status.offline": "Offline",
+	"gui.tfg.order_terminal.status.waiting": "Oczekujące stosy: %s",
 	"gui.tfg.order_terminal.status.waiting_for_cpu": "Oczekiwanie na procesor"
 }

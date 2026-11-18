@@ -1,6 +1,7 @@
 {
 	"text.trender.name": "Trender",
-	"text.trender.sendstacktraces": "Wyślij zrzuty stosów",
+	"text.trender.sendstacktraces": "Wysyłaj zrzuty stosu",
+	"text.trender.sendstacktraces.tooltip": "Gdy opcja jest włączona, zrzuty stosu z logu lub z awarii gry zawierające odwołania do modów tr7zw są wysyłane do autora modów przez Sentry (Sentry.io), co pomaga szybciej naprawiać błędy. Żadne dane osobowe nie są zbierane ani wysyłane. (Po włączeniu uruchom grę ponownie)",
 	"text.trender.style": "Styl interfejsu",
 	"text.trender.style.MODERN": "Nowoczesny",
 	"text.trender.style.MODERN_DARK": "Nowoczesny ciemny",

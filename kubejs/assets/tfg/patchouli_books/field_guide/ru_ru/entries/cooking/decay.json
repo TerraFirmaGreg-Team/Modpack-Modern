@@ -271,8 +271,12 @@
             "text": "Подвал используется для хранения продуктов и $(l:cooking/cheese#cheese_wheel)вызревания сыра$() с помощью $(l:cooking/decay#shelf)полок для продуктов$() и $(l:cooking/decay#shelf)вешалок$() для хранения продуктов, а также путем размещения сыра на полу или на $(thing)стеллажах для бочек$().$(br2)Погреб лучше работает в $(l:the_world/climate#temperature)более холодных регионах$().$(li)$(2)Температура >= 0 °C:$() полки 0,4, вешалки 0,35$(li)$(2)Температура < 0 °C:$() полки 0,35, вешалки 0,3$(li)$(2)Температура < -12 °C:$() полки 0,25, вешалки 0,25"
         },
         {
+            "type": "patchouli:text",
+            "text": "Пример конструкции подвала."
+        },
+        {
             "type": "tfg:multimultiblock",
-            "text": "Пример конструкции подвала.",
+            "text": "$(item)Полки для продуктов$() и $(item)вешалки$() могут вмещать полный набор одного продукта. Добавить или убрать продукт можно с помощью $(item)$(k:key.use)$() или $(item)$(k:key.sneak) + $(k:key.use)$() для полных наборов. Продукты на полках и вешалках получают модификатор сохранности, который лучше, чем у сосудов, и увеличивается при снижении $(thing)средней температуры$().",
             "multiblocks": [
                 {
                     "pattern": [
@@ -325,7 +329,7 @@
                             "AEEEEEEEA",
                             "A       A",
                             "A       A",
-                            "AC      B",
+                            "AC  F   B",
                             "A       A",
                             "A       A",
                             "AWWWWWWWA",
@@ -350,7 +354,8 @@
                         "W": "firmalife:wood/food_shelf/pine[facing=west]",
                         "B": "firmalife:sealed_door[facing=north,half=lower,hinge=right]",
                         "T": "firmalife:sealed_door[facing=north,half=upper,hinge=right]",
-                        "H": "firmalife:wood/hanger/pine"
+                        "H": "firmalife:wood/hanger/pine",
+                        "F": "tfc:wood/barrel/pine[sealed=true]"
                     }
                 },
                 {
@@ -404,7 +409,7 @@
                             "AEEEEEEE ",
                             "A        ",
                             "A        ",
-                            "AC       ",
+                            "AC  F    ",
                             "A        ",
                             "A        ",
                             "AWWWWWWW ",
@@ -429,7 +434,8 @@
                         "W": "firmalife:wood/food_shelf/pine[facing=west]",
                         "B": "firmalife:sealed_door[facing=north,half=lower,hinge=right]",
                         "T": "firmalife:sealed_door[facing=north,half=upper,hinge=right]",
-                        "H": "firmalife:wood/hanger/pine"
+                        "H": "firmalife:wood/hanger/pine",
+                        "F": "tfc:wood/barrel/pine[sealed=true]"
                     }
                 }
             ]
@@ -437,46 +443,46 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "shelf",
-            "title": "Хранилища для подвала",
-            "item": "tag:firmalife:food_shelves,tag:firmalife:hangers",
-            "text": "$(item)Полки для продуктов$() и $(item)вешалки$() могут вмещать полный набор одного продукта. Добавить или убрать продукт можно с помощью $(item)$(k:key.use)$() или $(item)$(k:key.sneak) + $(k:key.use)$() для полных наборов. Продукты на полках и вешалках получают модификатор сохранности, который лучше, чем у сосудов, и увеличивается при снижении $(thing)средней температуры$()."
-        },
-        {
-            "type": "patchouli:spotlight",
-            "anchor": "lunch_box",
             "title": "Коробки для завтрака",
-            "item": "tfclunchbox:lunchbox,tfclunchbox:cooling_lunchbox,tfclunchbox:electric_lunchbox",
+            "item": "tag:firmalife:food_shelves,tag:firmalife:hangers,tag:tfc:barrels",
             "text": "Ланч-боксы — удобный способ транспортировки и употребления продуктов питания. Обычный ланч-бокс обладает свойством $(5)$(bold)сохранности$(), а $(item)охлаждающие$() и $(item)электрические ланч-боксы$() дают свойство $(9)$(bold)охлаждения$() с модификатором 0,3.$(br2)Охлаждающие ланч-боксы расходуют $(item)лед$() для сохранения продуктов, а электрический ланч-бокс расходует $(2)электроэнергии$()."
         },
         {
             "type": "patchouli:spotlight",
-            "anchor": "refrigerator",
+            "anchor": "lunch_box",
             "title": "Холодильник",
-            "item": "tfg:mv_food_refrigerator,tfg:hv_food_refrigerator,tfg:ev_food_refrigerator,tfg:iv_food_refrigerator",
+            "item": "tfclunchbox:lunchbox,tfclunchbox:cooling_lunchbox,tfclunchbox:electric_lunchbox",
             "text": "Холодильники добавляются с помощью $(tfg_short) и потребляют $(2)EU$(), чтобы обеспечить свойство $(3)$(bold)Охлаждение$() с модификатором 0,125.$(br) Более высокие уровни холодильника не влияют на бонус к сроку хранения, а только на объем доступного места для хранения. Холодильники также могут объединять запасы продуктов, сопоставляя сроки годности."
         },
         {
             "type": "patchouli:spotlight",
-            "anchor": "freeze_dry",
+            "anchor": "refrigerator",
             "title": "Сублимационная сушка",
-            "item": "tfg:food/meal_bag,tfg:food/freeze_dried_fruit,tfg:food/calorie_paste",
+            "item": "tfg:mv_food_refrigerator,tfg:hv_food_refrigerator,tfg:ev_food_refrigerator,tfg:iv_food_refrigerator",
             "text": "$(tfg_short) Добавляет возможность сублимационной сушки некоторых продуктов в $(item)Food Processors$(), что значительно увеличивает срок их хранения. Сублимационная сушка дает свойство $(7)$(bold)Cryodessicated$() с модификатором 0,02."
         },
         {
-            "type": "patchouli:text",
-            "anchor": "pest",
+            "type": "patchouli:spotlight",
+            "anchor": "freeze_dry",
             "title": "Вредители",
+            "item": "tfg:food/meal_bag,tfg:food/freeze_dried_fruit,tfg:food/calorie_paste",
             "text": "Еда, оставленная в сундуках, может привлечь $(thing)крыс$(), поэтому не забывайте правильно хранить продукты в сосудах, подвалах или холодильниках. Крысы могут открывать контейнеры и поедать их содержимое. О присутствии крыс вас предупредит сообщение $(thing)'В этом контейнере неприятный запах'$(). Важно отметить, что если вы распечатаете и снова запечатаете большой сосуд перед тем, как выйти из игры, это не привлечёт вредителей."
         },
         {
             "type": "patchouli:text",
-            "anchor": "cutting",
+            "anchor": "pest",
             "title": "Убрать лишнее",
             "text": "Наконец, вы можете отрезать подгнившую часть продукта, взяв в руки $(item)knife$() и $(item)щелкнув правой кнопкой мыши$() по частично подгнившему продукту в инвентаре. $(br2) Это остановит процесс гниения, но вы потеряете часть продукта, пропорционально степени его разложения."
         },
         {
-            "type": "patchouli:relations",
+            "type": "patchouli:text",
+            "anchor": "cutting",
             "title": "Читать далее",
+            "text": "Lastly, you can cut off the decayed part of food by picking up a $(item)knife$() with your cursor and $(item)right-clicking$() a partially decayed food item stack in your inventory.$(br2)This will reset the decay while losing some of the item stack, proportional to how decayed it was."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/food_and_water",
@@ -494,19 +500,19 @@
         "tfc:powder/salt": 14,
         "firmalife:drying_mat": 17,
         "firmalife:solar_drier": 18,
-        "tag:firmalife:food_shelves": 23,
-        "tag:firmalife:hangers": 23,
-        "tfclunchbox:lunchbox": 24,
-        "tfclunchbox:cooling_lunchbox": 24,
-        "tfclunchbox:electric_lunchbox": 24,
-        "tfg:mv_food_refrigerator": 25,
-        "tfg:hv_food_refrigerator": 25,
-        "tfg:ev_food_refrigerator": 25,
-        "tfg:iv_food_refrigerator": 25,
-        "tfg:food/meal_bag": 26,
-        "tfg:food/freeze_dried_fruit": 26,
-        "tfg:food/calorie_paste": 26,
-        "tfg:dry_ice": 26,
-        "tfg:foil_pack": 26
+        "tag:firmalife:food_shelves": 24,
+        "tag:firmalife:hangers": 24,
+        "tfclunchbox:lunchbox": 25,
+        "tfclunchbox:cooling_lunchbox": 25,
+        "tfclunchbox:electric_lunchbox": 25,
+        "tfg:mv_food_refrigerator": 26,
+        "tfg:hv_food_refrigerator": 26,
+        "tfg:ev_food_refrigerator": 26,
+        "tfg:iv_food_refrigerator": 26,
+        "tfg:food/meal_bag": 27,
+        "tfg:food/freeze_dried_fruit": 27,
+        "tfg:food/calorie_paste": 27,
+        "tfg:dry_ice": 27,
+        "tfg:foil_pack": 27
     }
 }

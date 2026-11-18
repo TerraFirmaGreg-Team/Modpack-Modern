@@ -67,7 +67,6 @@ function registerTFCMaterialModification(event) {
 	GTMaterials.Cobaltite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1495 * 0.6, 1495 * 0.8, 1495, GTMaterials.Cobalt, 3, 85));
 	GTMaterials.CobaltBrass.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1060 * 0.6, 1060 * 0.8, 1060, 3));
 	GTMaterials.Electrum.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(606, 808, 1010, 1));
-	GTMaterials.BatteryAlloy.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(330 * 0.6, 330 * 0.8, 330, 1));
 	GTMaterials.Cupronickel.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(760, 1013, 1266, 1));
 
 	let AlSi = GTMaterials.get('aluminium_silicate')

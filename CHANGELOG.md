@@ -1,7 +1,28 @@
 # Changelog
 
 ### Changes
+- Added a new terminal (and wireless terminal): the Order Terminal. This works with the new Storage Provider, essentially working like create logistics' stock keeper and package system, cutting down on patternslop for crafts you only need a small number of times. Read the new quest in the AE2 chapter for more information! @ko-lja
+- Barrels storing food sealed in vinegar now gain an additional preservation bonus when inside a cellar @Zippity
+- Hoes and scythes should now also work on herbs and spices @Pyritie
+- Removed battery alloy from TFC heating (#5334) @Pyritie
+- Added some proper trades for the wandering trader if you turn him on via /gamerule. He is still off by default @Pyritie
 ### Bug fixes
+- Fixed Create Deco's shipping containers voiding/duping items @Pyritie
+- Fixed firmalife bees never getting diseases @Zippity
+- Fixed a crash when respawning on servers (#5119, #5318) @Pyritie
+- Fixed a crash when opening a barrel GUI while it's placed in a sloop and is raining (#5206) @Pyritie
+- Fixed a rare crash when generating a mineshaft (#5332) @Pyritie
+- Fixed a crash when "creeping" plants tried to spread into a fluid block (#5330) @Pyritie
+- Fixed beneath's large stone pillars not being properly hardened @Egogorka
+### Mods
+#### TerraFirmaCraft
+- Fix some incompatibilities with Create and other mods that take drops from our block entities.
+- Fixed an issue with patchouli tables.
+- Increased minimum depth of Octopoteuthis spawns.
+- Fixed a bug where Octopoteuthis didn't glow.
+- Made a performance improvement to oceans.
+- Fixed a bug with stick drops from double crops.
+- Backported a number of minor fixes to entities, worldgen, and plant behavior.
 
 ## [0.13.18] - 07-11-2026
 #### CC-Tweaked
