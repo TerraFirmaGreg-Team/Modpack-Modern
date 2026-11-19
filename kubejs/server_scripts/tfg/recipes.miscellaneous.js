@@ -328,7 +328,7 @@ function registerTFGMiscellaneousRecipes(event) {
 	function requiresOxygenation(recipe) { TFGRecipeSchemaBindings.isOxygenated(recipe, true) }
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('tfg:storage_provider_mv_moon')
+	event.recipes.tfg.me_assembler('tfg:storage_provider_mv_moon')
 		.itemInputs(
 			'gtceu:mv_electric_motor',
 			'4x #forge:rods/long/aluminium',
@@ -344,7 +344,7 @@ function registerTFGMiscellaneousRecipes(event) {
 
 	// IV Moon
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('tfg:storage_provider_iv_moon')
+	event.recipes.tfg.me_assembler('tfg:storage_provider_iv_moon')
 		.itemInputs(
 			'gtceu:iv_electric_motor',
 			'4x #forge:rods/long/tungsten_steel',
