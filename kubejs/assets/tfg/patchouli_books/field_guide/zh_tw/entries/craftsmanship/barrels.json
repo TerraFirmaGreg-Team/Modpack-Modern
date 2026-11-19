@@ -67,7 +67,7 @@
             "type": "patchouli:text",
             "title": "保存",
             "anchor": "preservation",
-            "text": "大桶可以用$(thing)醋$()保存物品。醋是將$(thing)水果$()密封在裝有$(thing)酒$()的大桶中製成，詳見相關$(l:cooking/decay#vinegar)頁面$()。"
+            "text": "用大桶將物品浸$(thing)醋$()可以延長保存。醋的做法是將$(thing)水果$()密封進裝有$(thing)酒精$()大桶釀製，詳見相關$(l:cooking/decay#vinegar)頁面$()。$(br2)提示：大桶放進$(l:cooking/decay#cellar)地窖$()能獲得保存紅利，如同其他地窖容器一樣！"
         },
         {
             "type": "patchouli:crafting",
