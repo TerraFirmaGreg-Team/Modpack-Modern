@@ -268,7 +268,11 @@
         },
         {
             "type": "patchouli:text",
-            "text": "地窖用于保存食物，也用于$(l:cooking/cheese#cheese_wheel)陈化奶酪$()——把食物放在$(l:cooking/decay#shelf)食物架$()和$(l:cooking/decay#shelf)悬挂架$()上，或把奶酪放在地上或$(thing)桶架$()上。$(br2)地窖在$(l:the_world/climate#temperature)更寒冷的环境$()中表现更好。$(li)$(2)温度 >= 0°C：$()食物架 0.4，悬挂架 0.35$(li)$(2)温度 < 0°C：$()食物架 0.35，悬挂架 0.3$(li)$(2)温度 < -12°C：$()食物架 0.25，悬挂架 0.25"
+            "text": "地窖用于保存食物，也用于$(l:cooking/cheese#cheese_wheel)陈化奶酪$()——把食物放在$(l:cooking/decay#shelf)食物架$()和$(l:cooking/decay#shelf)悬挂架$()上，或把奶酪放在地上或$(thing)桶架$()上。酸浸用的$(l:craftsmanship/barrels)木桶$()放在地窖中也能受益。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br2)地窖在$(l:the_world/climate#temperature)更寒冷的环境$()中表现更好。$(li)$(2)温度 >= 0°C：$()食物架 0.4，悬挂架 0.35$(li)$(2)温度 < 0°C：$()食物架 0.35，悬挂架 0.3$(li)$(2)温度 < -12°C：$()食物架 0.25，悬挂架 0.25$(br2)无论温度如何，醋桶都会获得 0.35 的固定腐败系数。"
         },
         {
             "type": "tfg:multimultiblock",
@@ -325,7 +329,7 @@
                             "AEEEEEEEA",
                             "A       A",
                             "A       A",
-                            "AC      B",
+                            "AC  F   B",
                             "A       A",
                             "A       A",
                             "AWWWWWWWA",
@@ -350,7 +354,8 @@
                         "W": "firmalife:wood/food_shelf/pine[facing=west]",
                         "B": "firmalife:sealed_door[facing=north,half=lower,hinge=right]",
                         "T": "firmalife:sealed_door[facing=north,half=upper,hinge=right]",
-                        "H": "firmalife:wood/hanger/pine"
+                        "H": "firmalife:wood/hanger/pine",
+                        "F": "tfc:wood/barrel/pine[sealed=true]"
                     }
                 },
                 {
@@ -404,7 +409,7 @@
                             "AEEEEEEE ",
                             "A        ",
                             "A        ",
-                            "AC       ",
+                            "AC  F    ",
                             "A        ",
                             "A        ",
                             "AWWWWWWW ",
@@ -429,7 +434,8 @@
                         "W": "firmalife:wood/food_shelf/pine[facing=west]",
                         "B": "firmalife:sealed_door[facing=north,half=lower,hinge=right]",
                         "T": "firmalife:sealed_door[facing=north,half=upper,hinge=right]",
-                        "H": "firmalife:wood/hanger/pine"
+                        "H": "firmalife:wood/hanger/pine",
+                        "F": "tfc:wood/barrel/pine[sealed=true]"
                     }
                 }
             ]
@@ -438,7 +444,7 @@
             "type": "patchouli:spotlight",
             "anchor": "shelf",
             "title": "地窖存储",
-            "item": "tag:firmalife:food_shelves,tag:firmalife:hangers",
+            "item": "tag:firmalife:food_shelves,tag:firmalife:hangers,tag:tfc:barrels",
             "text": "$(item)食物架$()和$(item)悬挂架$()各自能存放一整组同种食物。放入和取出物品可用$(item)$(k:key.use)$()，整组存取则用$(item)$(k:key.sneak) + $(k:key.use)$()。放在有效的食物架和悬挂架上的物品会获得比陶缸更好的腐坏修正值，且随着$(thing)平均温度$()的降低而进一步提升。"
         },
         {
@@ -494,19 +500,19 @@
         "tfc:powder/salt": 14,
         "firmalife:drying_mat": 17,
         "firmalife:solar_drier": 18,
-        "tag:firmalife:food_shelves": 23,
-        "tag:firmalife:hangers": 23,
-        "tfclunchbox:lunchbox": 24,
-        "tfclunchbox:cooling_lunchbox": 24,
-        "tfclunchbox:electric_lunchbox": 24,
-        "tfg:mv_food_refrigerator": 25,
-        "tfg:hv_food_refrigerator": 25,
-        "tfg:ev_food_refrigerator": 25,
-        "tfg:iv_food_refrigerator": 25,
-        "tfg:food/meal_bag": 26,
-        "tfg:food/freeze_dried_fruit": 26,
-        "tfg:food/calorie_paste": 26,
-        "tfg:dry_ice": 26,
-        "tfg:foil_pack": 26
+        "tag:firmalife:food_shelves": 24,
+        "tag:firmalife:hangers": 24,
+        "tfclunchbox:lunchbox": 25,
+        "tfclunchbox:cooling_lunchbox": 25,
+        "tfclunchbox:electric_lunchbox": 25,
+        "tfg:mv_food_refrigerator": 26,
+        "tfg:hv_food_refrigerator": 26,
+        "tfg:ev_food_refrigerator": 26,
+        "tfg:iv_food_refrigerator": 26,
+        "tfg:food/meal_bag": 27,
+        "tfg:food/freeze_dried_fruit": 27,
+        "tfg:food/calorie_paste": 27,
+        "tfg:dry_ice": 27,
+        "tfg:foil_pack": 27
     }
 }

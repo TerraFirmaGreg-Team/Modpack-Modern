@@ -95,7 +95,7 @@
                 "tag": "tfg:raw_stone/metamorphic"
             },
             "anchor": "metamorphic",
-            "text": "Skały https://en.wikipedia.org/wiki/Metamorphic_rock)metamorficzne$() powstają w procesie zwanym metamorfizmem. Można je znaleźć pod odpowiadającymi im skałami osadowymi lub magmowymi albo w obszarach wypiętrzenia."
+            "text": "Skały $(l:https://en.wikipedia.org/wiki/Metamorphic_rock)metamorficzne$() powstają w procesie zwanym metamorfizmem. Można je znaleźć pod odpowiadającymi im skałami osadowymi lub magmowymi albo w obszarach wypiętrzenia."
         },
         {
             "title": "Skała magmowa wylewna",
@@ -104,7 +104,7 @@
                 "tag": "tfg:raw_stone/igneous_extrusive"
             },
             "anchor": "igneous_extrusive",
-            "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Extrusive)Igneous Extrusive$() rocks are formed from magma cooling on the Earth's surface. They can be found on the top layer of rock in continental areas, or on the floor of oceans."
+            "text": "Skały $(l:https://en.wikipedia.org/wiki/Igneous_rock#Extrusive)magmowe wylewne$() powstają z magmy, która ostygła na powierzchni Ziemi. Można je znaleźć w najwyższej warstwie skał na obszarach kontynentalnych lub na dnie oceanów."
         },
         {
             "title": "Skała magmowa głębinowa",
@@ -113,7 +113,7 @@
                 "tag": "tfg:raw_stone/igneous_intrusive"
             },
             "anchor": "igneous_intrusive",
-            "text": "Skały $(l:https://en.wikipedia.org/wiki/Igneous_rock#Intrusive)magmowe głębinowe$() powstają z magmy, która ostygła pod skorupą ziemską. Można je znaleźć głęboko pod ziemią, a rzadziej w dajkach lub obszarach wypiętrzenia.\n"
+            "text": "Skały $(l:https://en.wikipedia.org/wiki/Igneous_rock#Intrusive)magmowe głębinowe$() powstają z magmy, która ostygła pod skorupą ziemską. Można je znaleźć głęboko pod ziemią, a rzadziej w dajkach lub obszarach wypiętrzenia."
         },
         {
             "type": "patchouli:text",
@@ -182,7 +182,7 @@
                 "tag": "tfg:stone_composition/raw/igneous_ultramafic"
             },
             "anchor": "igneous_ultramafic",
-            "text": "Skały $(l:https://en.wikipedia.org/wiki/Ultramafic_rock)magmowe ultramaficzne$() zawierają bardzo mało krzemionki."
+            "text": "Skały $(l:https://en.wikipedia.org/wiki/Mafic)magmowe ultramaficzne$() zawierają bardzo mało krzemionki."
         },
         {
             "type": "patchouli:relations",

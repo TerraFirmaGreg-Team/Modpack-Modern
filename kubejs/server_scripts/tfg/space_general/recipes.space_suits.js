@@ -75,7 +75,7 @@ function registerTFGSpaceSuitRecipes(event) {
 		.EUt(GTValues.VA[GTValues.IV])
 		.addMaterialInfo(true)
 
-	event.recipes.gtceu.shaped('ad_astra:space_helmet', [
+	event.shaped('ad_astra:space_helmet', [
 		'AAA',
 		'ADA',
 		'BBB'
@@ -83,7 +83,7 @@ function registerTFGSpaceSuitRecipes(event) {
 		A: 'gtceu:tempered_glass',
 		B: 'tfg:space_suit_fabric',
 		D: '#forge:small_fluid_pipes/polyethylene'
-	}).addMaterialInfo().id('tfg:space_helmet')
+	}).id('tfg:space_helmet')
 
 	event.recipes.gtceu.assembler('ad_astra:netherite_space_helmet')
 		.itemInputs(
@@ -96,16 +96,15 @@ function registerTFGSpaceSuitRecipes(event) {
 		.itemOutputs('ad_astra:netherite_space_helmet')
 		.duration(400)
 		.EUt(GTValues.VA[GTValues.IV])
-		.addMaterialInfo(true)
 
-	event.recipes.gtceu.shaped('ad_astra:space_suit', [
+	event.shaped('ad_astra:space_suit', [
 		'B B',
 		'BDB',
 		'BBB'
 	], {
 		B: 'tfg:space_suit_fabric',
 		D: 'ad_astra:oxygen_gear'
-	}).addMaterialInfo().id('tfg:space_suit')
+	}).id('tfg:space_suit')
 
 	event.shapeless('ad_astra:space_suit', ['ad_astra:space_suit'])
 		.id('tfg:empty_space_suit')
@@ -129,7 +128,6 @@ function registerTFGSpaceSuitRecipes(event) {
 		.itemOutputs('ad_astra:netherite_space_suit')
 		.duration(400)
 		.EUt(GTValues.VA[GTValues.IV])
-		.addMaterialInfo(true)
 
 	event.shapeless('ad_astra:netherite_space_suit', ['ad_astra:netherite_space_suit'])
 		.id('tfg:empty_netherite_space_suit')
@@ -143,14 +141,14 @@ function registerTFGSpaceSuitRecipes(event) {
 			return result;
 		})
 
-	event.recipes.gtceu.shaped('ad_astra:space_pants', [
+	event.shaped('ad_astra:space_pants', [
 		'BAB',
 		'B B',
 		'B B'
 	], {
 		A: 'gtceu:hv_electric_motor',
 		B: 'tfg:space_suit_fabric',
-	}).addMaterialInfo().id('tfg:space_pants')
+	}).id('tfg:space_pants')
 
 	event.recipes.gtceu.assembler('ad_astra:netherite_space_pants')
 		.itemInputs(
@@ -162,15 +160,14 @@ function registerTFGSpaceSuitRecipes(event) {
 		.itemOutputs('ad_astra:netherite_space_pants')
 		.duration(400)
 		.EUt(GTValues.VA[GTValues.IV])
-		.addMaterialInfo(true)
 
-	event.recipes.gtceu.shaped('ad_astra:space_boots', [
+	event.shaped('ad_astra:space_boots', [
 		'B B',
 		'A A'
 	], {
 		A: '#forge:plates/polyphenylene_sulfide',
 		B: 'tfg:space_suit_fabric'
-	}).addMaterialInfo().id('tfg:space_boots')
+	}).id('tfg:space_boots')
 
 	event.recipes.gtceu.assembler('ad_astra:netherite_space_boots')
 		.itemInputs(
@@ -182,9 +179,8 @@ function registerTFGSpaceSuitRecipes(event) {
 		.itemOutputs('ad_astra:netherite_space_boots')
 		.duration(400)
 		.EUt(GTValues.VA[GTValues.IV])
-		.addMaterialInfo(true)
 
-	event.recipes.gtceu.shaped('ad_astra:oxygen_gear', [
+	event.shaped('ad_astra:oxygen_gear', [
 		'BAB',
 		'ECE',
 		'BDB'
@@ -194,7 +190,7 @@ function registerTFGSpaceSuitRecipes(event) {
 		C: 'gtceu:hv_electric_pump',
 		D: 'gtceu:fluid_detector_cover',
 		E: 'ad_astra:gas_tank'
-	}).addMaterialInfo().id('tfg:oxygen_gear')
+	}).id('tfg:oxygen_gear')
 
 	//#endregion
 }

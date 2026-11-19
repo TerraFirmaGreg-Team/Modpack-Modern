@@ -753,7 +753,7 @@
 	"block.tfg.fluid.semiheavy_ammoniacal_water": "Semiheavy Ammoniacal Water",
 	"block.tfg.fluid.sulfur_fumes": "Dense Sulfuric Fumes",
 	"block.tfg.fluid.geyser_slurry": "Super Heated Slurry",
-	"block.tfg.fluid.muddy_water": "Muddy Water",
+	"block.tfg.fluid.muddy_water": "Stagnant Water",
 
 	"block.tfg.grass.mars_dirt": "Martian Dirt",
 	"block.tfg.grass.mars_clay_dirt": "Martian Clay Dirt",
@@ -1094,6 +1094,29 @@
 	"block.tfg.me_assembler": "ME Resonance Fabricator",
 	"block.tfg.budding_charge": "ME Resonance Charger",
 	"block.tfg.me_assembler_redstone_port": "ME Redstone Port",
+	"block.tfg.large_combustion_generator": "Large Combustion Generator",
+	"block.tfg.large_gas_generator": "Large Gas Generator",
+	"block.tfg.large_steam_generator": "Large Steam Generator",
+
+	"block.tfg.casings.gas_exhaust_lv": "§7LV Gas Exhaust§r",
+	"block.tfg.casings.gas_exhaust_mv": "§bMV Gas Exhaust§r",
+	"block.tfg.casings.gas_exhaust_hv": "§6HV Gas Exhaust§r",
+
+	"block.tfg.casings.combustion_exhaust_lv": "§7LV Combustion Exhaust§r",
+	"block.tfg.casings.combustion_exhaust_mv": "§bMV Combustion Exhaust§r",
+	"block.tfg.casings.combustion_exhaust_hv": "§6HV Combustion Exhaust§r",
+
+	"block.tfg.casings.steam_exhaust_lv": "§7LV Steam Exhaust§r",
+	"block.tfg.casings.steam_exhaust_mv": "§bMV Steam Exhaust§r",
+
+	"block.tfg.lv_battery_dynamo_hatch": "§7LV Battery Dynamo Hatch§r",
+	"block.tfg.mv_battery_dynamo_hatch": "§bMV Battery Dynamo Hatch§r",
+	"block.tfg.hv_battery_dynamo_hatch": "§6HV Battery Dynamo Hatch§r",
+	"block.tfg.ev_battery_dynamo_hatch": "§5EV Battery Dynamo Hatch§r",
+	"block.tfg.iv_battery_dynamo_hatch": "§9IV Battery Dynamo Hatch§r",
+	"block.tfg.luv_battery_dynamo_hatch": "§dLuV Battery Dynamo Hatch§r",
+	"block.tfg.zpm_battery_dynamo_hatch": "§cZPM Battery Dynamo Hatch§r",
+	"block.tfg.uv_battery_dynamo_hatch": "§3UV Battery Dynamo Hatch§r",
 
 	"block.tfg.bioreactor": "Bioreactor",
 	"block.tfg.growth_chamber": "Growth Chamber",

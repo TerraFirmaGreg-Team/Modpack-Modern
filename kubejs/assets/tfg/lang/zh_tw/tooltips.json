@@ -1,6 +1,7 @@
 {
     "tfg.tooltip.food_trait.refrigerating": "§b冷藏中",
-    "tfg.tooltip.foodtrait.freeze_dried": "冷凍乾燥",
+    "tfg.tooltip.food_trait.freeze_dried": "冷凍乾燥",
+    "tfg.tooltip.food_trait.cellared": "地窖",
     "tfg.tooltip.extraterrestrial_farming": "§4溫度：§r有供氧的環境提供 15°C",
     "tfg.tooltip.moon_rabbit_variant.pink": "粉紅色毛皮",
     "tfg.tooltip.moon_rabbit_variant.white": "白色毛皮",
@@ -203,7 +204,6 @@
     "tfg.tooltip.recipe_condition.animal_present.entity": "需要：%s",
     "tfg.tooltip.firmalife_greenhouse.oxygen_required": "§c需要有供氧的環境！",
     "tfg.tooltip.firmalife_greenhouse.oxygen_required.block": "§7在太空中需要有供氧的環境才能作為溫室運作。",
-    "tfg.tooltip.firmalife_inside_valid_greenhouse": "位於有效的溫室內",
     "tfg.tooltip.grow_light_disapointment": "§7不，這不會加快你的作物生長速度……",
     "tfg.tooltip.rotten_voiding_cover": "§7腐爛銷毀覆蓋板和物品銷毀覆蓋板一樣，但只會鎖定並銷毀§c腐爛的物品。",
     "tfg.tooltip.fertilizer.nitrogen": "§b(N)氮",

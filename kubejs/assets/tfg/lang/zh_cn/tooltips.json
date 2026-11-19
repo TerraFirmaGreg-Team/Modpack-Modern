@@ -1,6 +1,7 @@
 {
     "tfg.tooltip.food_trait.refrigerating": "§b冷藏保鲜",
-    "tfg.tooltip.foodtrait.freeze_dried": "冻干",
+    "tfg.tooltip.food_trait.freeze_dried": "冻干",
+    "tfg.tooltip.food_trait.cellared": "窖藏",
     "tfg.tooltip.extraterrestrial_farming": "§4温度：§r富氧环境可提供15°C",
     "tfg.tooltip.moon_rabbit_variant.pink": "粉彩绒毛",
     "tfg.tooltip.moon_rabbit_variant.white": "雪白绒毛",
@@ -199,7 +200,6 @@
     "tfg.tooltip.recipe_condition.animal_present.entity": "需要: %s",
     "tfg.tooltip.firmalife_greenhouse.oxygen_required": "§c需要处于有氧环境！",
     "tfg.tooltip.firmalife_greenhouse.oxygen_required.block": "§7在太空中，必须处于有氧环境才能作为温室运作。",
-    "tfg.tooltip.firmalife_inside_valid_greenhouse": "在有效的温室中",
     "tfg.tooltip.grow_light_disapointment": "§7不，这玩意儿并不能加快你的作物生长速度……",
     "tfg.tooltip.rotten_voiding_cover": "§7腐烂物销毁覆盖板的功能与普通物品销毁覆盖板类似，但它只会针对并销毁§c腐烂的物品。",
     "tfg.tooltip.fertilizer.nitrogen": "§b(N) 氮",

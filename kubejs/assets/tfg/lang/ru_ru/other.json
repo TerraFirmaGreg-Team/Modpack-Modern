@@ -189,6 +189,8 @@
     "tfg.wireless_charger.mode.1": "§eРежим: Дальний - медленная зарядка §7(Радиус: §f%s§7 блоков, 1A)",
     "tfg.field_guide.name": "Полевое руководство",
     "tfg.field_guide.read_me": "§8§oПрочитай меня! ☺§r",
+    "death.attack.tfg.hypoxia": "%1$s испытал удушье",
+    "death.attack.tfg.hypoxia.player": "%1$s испытал удушье при попытке сбежать от %2$s",
     "tfg.display_source.thermometer": "Термометр",
     "tfg.display_source.calendar_clock": "Термометр",
     "tfg.display_source.anemometer": "Анемометр",

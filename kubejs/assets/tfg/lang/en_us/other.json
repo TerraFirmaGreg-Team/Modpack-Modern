@@ -91,6 +91,8 @@
     "tfg.machine.aux_exchanger.heat_unavailable": "Heat information unavailable",
     "tfg.machine.aux_echanger.output.title": "=== Output ===",
 
+    "tfg.machine.battery_dynamo_hatch.tooltip": "Stores energy in up to %s batteries (%s or lower)",
+
     "tfg.multiblock.large_boiler.booster_active": "Booster: %s (%sK)",
     "tfg.multiblock.large_boiler.booster_none": "Booster: None",
     "tfg.multiblock.large_boiler.water_boosted": "Water: %s (%s)",
@@ -165,6 +167,9 @@
     "tfg.machine.higgs_emitter.radius": "Radius: %s",
     "tfg.machine.higgs_emitter.gravity": "Gravity (m/s²):",
     "tfg.machine.higgs_emitter.gravity.tooltip": "Target gravity in m/s² (Earth = %s)",
+
+    "tfg.multiblock.pattern.error.mixed_casing_tiers": "All generator Exhaust must be the same tier",
+    "tfg.multiblock.pattern.error.battery_dynamo_tier": "The Battery Dynamo Hatch must be %s",
 
     "tfg.machine.pastoral_engine.animals_total": "Animals in zone: %s",
     "tfg.machine.pastoral_engine.animals_ready": "Ready to harvest: %s",

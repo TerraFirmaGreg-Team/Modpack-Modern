@@ -484,5 +484,95 @@ function registerTFGMultiblockRecipes(event) {
 		D: Item.of('gtceu:lv_machine_hull'),
 		E: Item.of('gtceu:tin_single_cable')
 	}).addMaterialInfo().id('tfg:shaped/ore_thermal_centrifuge')
+
+	// Multi Generators
+
+	event.recipes.gtceu.shaped(Item.of('tfg:large_steam_generator'), [
+		'BEB',
+		'CDC',
+		'ABA'
+	], {
+		A: Item.of('gtceu:lv_robot_arm'),
+		B: Item.of('gtceu:steel_huge_fluid_pipe'),
+		C: Item.of('gtceu:cobalt_brass_rotor'),
+		D: Item.of('gtceu:lv_machine_hull'),
+		E: '#gtceu:circuits/lv',
+	}).addMaterialInfo().id('tfg:shaped/large_steam_generator')
+
+	event.recipes.gtceu.shaped(Item.of('tfg:large_combustion_generator'), [
+		'BEB',
+		'ADA',
+		'CCC'
+	], {
+		A: Item.of('gtceu:lv_robot_arm'),
+		B: Item.of('gtceu:lv_electric_piston'),
+		C: Item.of('gtceu:steel_gear'),
+		D: Item.of('gtceu:lv_machine_hull'),
+		E: '#gtceu:circuits/lv',
+	}).addMaterialInfo().id('tfg:shaped/large_combustion_generator')
+
+	event.recipes.gtceu.shaped(Item.of('tfg:large_gas_generator'), [
+		'DBD',
+		'BCB',
+		'DAD'
+	], {
+		A: Item.of('gtceu:lv_robot_arm'),
+		B: Item.of('gtceu:tin_rotor'),
+		C: Item.of('gtceu:lv_machine_hull'),
+		D: '#gtceu:circuits/lv',
+	}).addMaterialInfo().id('tfg:shaped/large_gas_generator')
+
+	// Exhaust Vent
+
+	const EXHAUST_TIERS = {
+		lv: { hugePipe: 'steel',           steamRotor: 'cobalt_brass',   gasRotor: 'tin',    gear: 'steel' },
+		mv: { hugePipe: 'aluminium',	   steamRotor: 'magnalium',      gasRotor: 'bronze', gear: 'aluminium' },
+		hv: { hugePipe: 'stainless_steel', steamRotor: 'vanadium_steel', gasRotor: 'steel',  gear: 'stainless_steel' }
+	}
+
+	const STEAM_EXHAUST_TIERS = ['lv', 'mv']
+	const COMBUSTION_EXHAUST_TIERS = ['lv', 'mv', 'hv']
+	const GAS_EXHAUST_TIERS = ['lv', 'mv', 'hv']
+
+		STEAM_EXHAUST_TIERS.forEach(tier => {
+			const m = EXHAUST_TIERS[tier]
+			event.recipes.gtceu.shaped(`tfg:casings/steam_exhaust_${tier}`, [
+				'ABA',
+				'BCB',
+				'ABA'
+			], {
+				A: `gtceu:${m.hugePipe}_huge_fluid_pipe`,
+				B: `gtceu:${m.steamRotor}_rotor`,
+				C: `gtceu:${tier}_machine_hull`
+			}).addMaterialInfo().id(`tfg:shaped/casings/steam_exhaust_${tier}`)
+		})
+
+		COMBUSTION_EXHAUST_TIERS.forEach(tier => {
+			const m = EXHAUST_TIERS[tier]
+			event.recipes.gtceu.shaped(`tfg:casings/combustion_exhaust_${tier}`, [
+				'ACA',
+				'BDB',
+				'ACA'
+			], {
+				A: `gtceu:${tier}_electric_motor`,
+				B: `gtceu:${tier}_electric_piston`,
+				C: `gtceu:${m.gear}_gear`,
+				D: `gtceu:${tier}_machine_hull`
+			}).addMaterialInfo().id(`tfg:shaped/casings/combustion_exhaust_${tier}`)
+		})
+
+		GAS_EXHAUST_TIERS.forEach(tier => {
+			const m = EXHAUST_TIERS[tier]
+			event.recipes.gtceu.shaped(`tfg:casings/gas_exhaust_${tier}`, [
+				'BDB',
+				'DCD',
+				'BDB'
+			], {
+				//A: `gtceu:${tier}_robot_arm`,
+				B: `gtceu:${m.gasRotor}_rotor`,
+				C: `gtceu:${tier}_machine_hull`,
+				D: `gtceu:${tier}_electric_motor`
+			}).addMaterialInfo().id(`tfg:shaped/casings/gas_exhaust_${tier}`)
+		})
 	
 }
