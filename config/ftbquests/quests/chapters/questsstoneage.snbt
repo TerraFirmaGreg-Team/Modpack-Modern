@@ -2570,6 +2570,22 @@
 			x: 9.5d
 			y: 9.0d
 		}
+		{
+			dependencies: ["669F84C6A2A64145"]
+			description: ["{quests.stone_age.ores_emi.desc}"]
+			icon: "firmaciv:firmaciv_compass"
+			id: "04956BC1D18AE362"
+			shape: "circle"
+			subtitle: "{quests.stone_age.ores_emi.subtitle}"
+			tasks: [{
+				id: "0C844D73F506F9A1"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "{quests.stone_age.ores_emi.title}"
+			x: 15.5d
+			y: 7.5d
+		}
 	]
 	subtitle: ["{quests.stone_age.subtitle}"]
 	title: "{quests.stone_age}"

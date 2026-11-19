@@ -197,6 +197,21 @@
 			x: -3.5d
 			y: 0.0d
 		}
+		{
+			dependencies: ["427814F6E9386772"]
+			description: ["{quests.tfg.reading.desc}"]
+			icon: "ftbquests:book"
+			id: "1B3416C18689F463"
+			subtitle: "{quests.tfg.reading.subtitle}"
+			tasks: [{
+				id: "5773F86D44ADC1B9"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "{quests.tfg.reading.title}"
+			x: 3.5d
+			y: 0.0d
+		}
 	]
 	subtitle: ["{quests.tfg.subtitle}"]
 	title: "{quests.tfg}"

@@ -34,6 +34,8 @@
 - Made a performance improvement to oceans.
 - Fixed a bug with stick drops from double crops.
 - Backported a number of minor fixes to entities, worldgen, and plant behavior.
+#### No Crash Reports
+- Was unfortunately taken down from CurseForge by Microsoft.
 
 ## [0.13.18] - 07-11-2026
 #### CC-Tweaked
