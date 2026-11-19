@@ -165,7 +165,6 @@ function registerVintageImprovementsRecipes(event) {
 		{ material: GTMaterials.Lead, blows: STARTING_BLOWS },
 		{ material: GTMaterials.Electrum, blows: STARTING_BLOWS },
 		{ material: GTMaterials.Cupronickel, blows: STARTING_BLOWS },
-		{ material: GTMaterials.BatteryAlloy, blows: STARTING_BLOWS },
 		{ material: GTMaterials.get('tfg:maldonite'), blows: STARTING_BLOWS }
 	]
 

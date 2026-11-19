@@ -54,6 +54,9 @@ function registerTFGLoots(event) {
 			.pool((pool) => {
 				pool.rolls([0, 3]);
 				pool.addAlternativesLoot(
+					LootEntry.of('createdeco:copper_coinstack').when((c) => c.randomChance(0.1)),
+					LootEntry.of('createdeco:gold_coinstack').when((c) => c.randomChance(0.1)),
+					LootEntry.of('createdeco:iron_coin').when((c) => c.randomChance(0.1)),
 					LootEntry.of('tfc:wool_yarn').when((c) => c.randomChance(0.1)),
 					LootEntry.of('tfc:blubber').when((c) => c.randomChance(0.1)),
 					LootEntry.of('minecraft:bone').when((c) => c.randomChance(0.1)),

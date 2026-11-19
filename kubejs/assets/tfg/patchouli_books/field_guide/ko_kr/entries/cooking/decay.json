@@ -268,7 +268,11 @@
         },
         {
             "type": "patchouli:text",
-            "text": "The cellar is used for food preservation and $(l:cooking/cheese#cheese_wheel)Aging Cheese$() by using $(l:cooking/decay#shelf)Food Shelves$() and $(l:cooking/decay#shelf)Hangers$() to hold food items or by placing cheese on the ground or $(thing)Barrel Racks$().$(br2)The cellar performs better in $(l:the_world/climate#temperature)Colder Environments$().$(li)$(2)Temp >= 0°C:$() Shelves 0.4, Hangers 0.35$(li)$(2)Temp < 0°C:$() Shelves 0.35, Hangers 0.3$(li)$(2)Temp < -12°C:$() Shelves 0.25, Hangers 0.25"
+            "text": "The cellar is used for food preservation and $(l:cooking/cheese#cheese_wheel)Aging Cheese$() by using $(l:cooking/decay#shelf)Food Shelves$() and $(l:cooking/decay#shelf)Hangers$() to hold food items or by placing cheese on the ground or in $(thing)Barrel Racks$(). $(l:craftsmanship/barrels)Barrels$() used for vinegar preservation also benefit from being placed in a cellar."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br2)The cellar performs better in $(l:the_world/climate#temperature)Colder Environments$().$(li)$(2)Temp >= 0°C:$() Shelves 0.4, Hangers 0.35$(li)$(2)Temp < 0°C:$() Shelves 0.35, Hangers 0.3$(li)$(2)Temp < -12°C:$() Shelves 0.25, Hangers 0.25$(br2)Vinegar barrels receive a flat 0.35 decay modifier regardless of temperature."
         },
         {
             "type": "tfg:multimultiblock",
@@ -325,7 +329,7 @@
                             "AEEEEEEEA",
                             "A       A",
                             "A       A",
-                            "AC      B",
+                            "AC  F   B",
                             "A       A",
                             "A       A",
                             "AWWWWWWWA",
@@ -350,7 +354,8 @@
                         "W": "firmalife:wood/food_shelf/pine[facing=west]",
                         "B": "firmalife:sealed_door[facing=north,half=lower,hinge=right]",
                         "T": "firmalife:sealed_door[facing=north,half=upper,hinge=right]",
-                        "H": "firmalife:wood/hanger/pine"
+                        "H": "firmalife:wood/hanger/pine",
+                        "F": "tfc:wood/barrel/pine[sealed=true]"
                     }
                 },
                 {
@@ -404,7 +409,7 @@
                             "AEEEEEEE ",
                             "A        ",
                             "A        ",
-                            "AC       ",
+                            "AC  F    ",
                             "A        ",
                             "A        ",
                             "AWWWWWWW ",
@@ -429,7 +434,8 @@
                         "W": "firmalife:wood/food_shelf/pine[facing=west]",
                         "B": "firmalife:sealed_door[facing=north,half=lower,hinge=right]",
                         "T": "firmalife:sealed_door[facing=north,half=upper,hinge=right]",
-                        "H": "firmalife:wood/hanger/pine"
+                        "H": "firmalife:wood/hanger/pine",
+                        "F": "tfc:wood/barrel/pine[sealed=true]"
                     }
                 }
             ]
@@ -438,7 +444,7 @@
             "type": "patchouli:spotlight",
             "anchor": "shelf",
             "title": "Cellar Storage",
-            "item": "tag:firmalife:food_shelves,tag:firmalife:hangers",
+            "item": "tag:firmalife:food_shelves,tag:firmalife:hangers,tag:tfc:barrels",
             "text": "$(item)Food shelves$() and $(item)Hangers$() can contain a full stack of one food item. Adding and removing the item can be done with $(item)$(k:key.use)$() or $(item)$(k:key.sneak) + $(k:key.use)$() for full stacks. Items in valid food shelves and hangers receive a decay modifier that is better than vessels and increases with declining $(thing)Average Temperature$()."
         },
         {
@@ -494,19 +500,19 @@
         "tfc:powder/salt": 14,
         "firmalife:drying_mat": 17,
         "firmalife:solar_drier": 18,
-        "tag:firmalife:food_shelves": 23,
-        "tag:firmalife:hangers": 23,
-        "tfclunchbox:lunchbox": 24,
-        "tfclunchbox:cooling_lunchbox": 24,
-        "tfclunchbox:electric_lunchbox": 24,
-        "tfg:mv_food_refrigerator": 25,
-        "tfg:hv_food_refrigerator": 25,
-        "tfg:ev_food_refrigerator": 25,
-        "tfg:iv_food_refrigerator": 25,
-        "tfg:food/meal_bag": 26,
-        "tfg:food/freeze_dried_fruit": 26,
-        "tfg:food/calorie_paste": 26,
-        "tfg:dry_ice": 26,
-        "tfg:foil_pack": 26
+        "tag:firmalife:food_shelves": 24,
+        "tag:firmalife:hangers": 24,
+        "tfclunchbox:lunchbox": 25,
+        "tfclunchbox:cooling_lunchbox": 25,
+        "tfclunchbox:electric_lunchbox": 25,
+        "tfg:mv_food_refrigerator": 26,
+        "tfg:hv_food_refrigerator": 26,
+        "tfg:ev_food_refrigerator": 26,
+        "tfg:iv_food_refrigerator": 26,
+        "tfg:food/meal_bag": 27,
+        "tfg:food/freeze_dried_fruit": 27,
+        "tfg:food/calorie_paste": 27,
+        "tfg:dry_ice": 27,
+        "tfg:foil_pack": 27
     }
 }

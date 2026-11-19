@@ -3350,5 +3350,18 @@
 	"tag.item.forge.stripped_logs": "Обтёсанные брёвна",
 	"tag.item.forge.stripped_wood": "Обтёсанная древесина",
 	"tag.item.forge.tools.wrench": "Гаечные ключи",
-	"tag.recipe_serializer.create.automation_ignore": "Неавтоматизируемые"
+	"tag.recipe_serializer.create.automation_ignore": "Неавтоматизируемые",
+	"create.display_source.thermometer.unit_temperature": "Тек. температура в блоке",
+	"create.display_source.thermometer.avg_temperature": "Ср. температура в блоке",
+	"create.display_source.thermometer.annual_rainfall": "Годовое количество осадков в мм",
+	"create.display_source.thermometer.precipitation": "Вероятность осадков",
+	"create.display_source.calendar_clock.date_us": "мм/дд/гггг",
+	"create.display_source.calendar_clock.date_eu": "дд/мм/гггг",
+	"create.display_source.calendar_clock.date_iso": "гггг-мм-дд",
+	"create.display_source.calendar_clock.month_and_day": "месяц-дд",
+	"create.display_source.calendar_clock.season": "Сезон",
+	"create.display_source.anemometer.wind_angle": "Направление ветра",
+	"create.display_source.anemometer.wind_speed_ms": "Скорость ветра (м/с)",
+	"create.display_source.anemometer.wind_speed_bs": "Скорость ветра (блок/с)",
+	"create.display_source.anemometer.wind_speed_knots": "Скорость ветра (узлы)"
 }

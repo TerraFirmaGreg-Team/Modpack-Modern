@@ -3,7 +3,14 @@ run-name: "[🔀]: Automerge #${{ github.run_number }}"
 
 on:
   pull_request:
-    types: [ready_for_review, synchronize]
+    types: [opened, ready_for_review, synchronize, reopened]
+    branches: [main]
+  pull_request_review:
+    types: [submitted]
+  workflow_run:
+    workflows: ["Build"]
+    types: [completed]
+    branches: [dev]
   workflow_dispatch:
     inputs:
       pull_request:
@@ -23,6 +30,7 @@ jobs:
       github.event_name == 'workflow_dispatch' ||
       (github.event.pull_request.head.ref == 'dev' &&
        github.event.pull_request.base.ref == 'main' &&
+       github.event.pull_request.draft == false &&
        github.event.pull_request.head.repo.full_name == github.repository)
     steps:
       - uses: TerraFirmaGreg-Team/Actions/pull-request/automerge@main

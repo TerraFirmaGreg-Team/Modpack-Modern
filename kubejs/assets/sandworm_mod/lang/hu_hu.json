@@ -4,5 +4,8 @@
 	"entity.sandworm_mod.worm_chain": "Homokféreg",
 	"entity.sandworm_mod.worm_head_segment": "Homokféreg Feje",
 	"entity.sandworm_mod.worm_segment": "Homokféreg Teste",
-	"item.sandworm_mod.sandworm_tooth": "Homokféreg Foga"
+	"item.sandworm_mod.sandworm_tooth": "Homokféreg Foga",
+	"msg.sandworm_mod.spawn": "§4JÖN!!!",
+	"msg.sandworm_mod.stage_1": "§eA homokféreg érez téged...",
+	"msg.sandworm_mod.stage_2": "§cA homokféreg hamarosan felébred!"
 }

@@ -72,7 +72,7 @@
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/soil/loam_mud_bricks",
             "title": "泥磚方塊",
-            "text": "乾燥的泥磚可以合成$(thing)泥磚方塊$()，也可以視需要做成$(thing)階梯$()、$(thing)半磚$()或$(thing)牆$()。泥磚方塊可以用鏟子挖掘。"
+            "text": "乾燥的泥磚可以合成$(thing)泥磚方塊$()，也可以視需要做成$(thing)階梯$()、$(thing)半磚$()或$(thing)牆$()。泥磚方塊可以用鏟挖掘。"
         },
         {
             "type": "patchouli:text",
