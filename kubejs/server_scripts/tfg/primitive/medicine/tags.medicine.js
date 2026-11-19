@@ -91,7 +91,9 @@ function registerTFGMedicineItemTags(event) {
 		'tfc:plant/pistia',
 		'tfc:powder/bismuthinite',
 		'gtceu:mica_dust',
-		'gtceu:fullers_earth_dust'
+		'gtceu:fullers_earth_dust',
+		'minecraft:big_dripleaf',
+		'minecraft:small_dripleaf'
 	];
 	antipoison_ingredients.forEach(items => { event.add('tfg:antipoison_ingredients', items) });
 
@@ -125,7 +127,8 @@ function registerTFGMedicineItemTags(event) {
 		'tfc:plant/lilac',
 		'tfc:plant/field_horsetail',
 		'tfc:plant/licorice_fern',
-		'tfc:plant/sacred_datura'
+		'tfc:plant/sacred_datura',
+		'wan_ancient_beasts:equisetum'
 	];
 	regeneration_ingredients.forEach(items => { event.add('tfg:regeneration_ingredients', items) });
 
@@ -138,7 +141,8 @@ function registerTFGMedicineItemTags(event) {
 	 */
 	const speed_ingredients = [
 		'tfc:plant/labrador_tea',
-		'firmalife:raw_honey'
+		'firmalife:raw_honey',
+		'tfg:plant/pale_hanging_moss'
 	];
 	speed_ingredients.forEach(items => { event.add('tfg:speed_ingredients', items) });
 
@@ -155,7 +159,8 @@ function registerTFGMedicineItemTags(event) {
 		'tfc:plant/snapdragon_red',
 		'tfc:plant/snapdragon_white',
 		'tfc:plant/snapdragon_yellow',
-		'tfg:plant/needlegrass'
+		'betterend:needlegrass',
+		'tfg:plant/blackthorn'
 	];
 	slowness_ingredients.forEach(items => { event.add('tfg:slowness_ingredients', items) });
 
@@ -172,7 +177,7 @@ function registerTFGMedicineItemTags(event) {
 		'tfc:plant/sea_lavender',
 		'tfc:plant/canna',
 		'tfc:plant/water_canna',
-		'tfg:plant/murkweed'
+		'betterend:murkweed'
 	];
 	weakness_ingredients.forEach(items => { event.add('tfg:weakness_ingredients', items) });
 
@@ -241,7 +246,8 @@ function registerTFGMedicineItemTags(event) {
 	const absorption_ingredients = [
 		'tfc:plant/poppy',
 		'tfg:plant/silver_bromeliad',
-		'tfg:plant/tank_bromeliad'
+		'tfg:plant/tank_bromeliad',
+		'betterend:nightshade_moss'
 	];
 	absorption_ingredients.forEach(items => { event.add('tfg:absorption_ingredients', items) });
 
@@ -271,7 +277,8 @@ function registerTFGMedicineItemTags(event) {
 	const resistance_ingredients = [
 		'tfc:plant/hibiscus',
 		'tfg:plant/palash',
-		'gtceu:calcium_dust'
+		'gtceu:calcium_dust',
+		'wan_ancient_beasts:rafflesia'
 	];
 	resistance_ingredients.forEach(items => { event.add('tfg:resistance_ingredients', items) });
 
@@ -285,7 +292,8 @@ function registerTFGMedicineItemTags(event) {
 	const instant_health_ingredients = [
 		'tfc:plant/foxglove',
 		'tfc:plant/artists_conk',
-		'beneath:food/shiitake'
+		'beneath:food/shittake',
+		'wan_ancient_beasts:bellflower'
 	];
 	instant_health_ingredients.forEach(items => { event.add('tfg:instant_health_ingredients', items) });
 
@@ -355,6 +363,7 @@ function registerTFGMedicineItemTags(event) {
 		'tfg:spice/oregano_leaves',
 		'tfc:food/garlic',
 		'tfc:seeds/pumpkin',
+		'wan_ancient_beasts:sundew',
 		'betterend:cave_pumpkin_plant_seeds'
 	];
 	antiparasitic_ingredients.forEach(items => { event.add('tfg:antiparasitic_ingredients', items) });
@@ -370,6 +379,7 @@ function registerTFGMedicineItemTags(event) {
 		'tfc:food/onion',
 		'tfc:plant/dandelion',
 		'tfc:plant/green_algae',
+		'minecraft:spore_blossom',
 		'betterend:lacugrove',
 		'tfg:citric_acid_dust'
 	];

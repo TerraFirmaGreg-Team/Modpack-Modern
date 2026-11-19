@@ -23,7 +23,7 @@
 	"msg.additionalplacements.placement_enable": "Lógica de colocación de Colocaciones Adicionales habilitada",
 	"msg.additionalplacements.stairs.connections_type_not_found": "Conexiones de escaleras de tipo %s desconocidas",
 	"msg.additionalplacements.stairs.data_not_found": "No se recibieron datos sobre la configuración de conexiones de escaleras del cliente",
-	"msg.additionalplacements.stairs.mismatched.footer": "Para conectarse a este servidor, corrige las entradas en config/additionalplacements-bootup.toml y relance el juego.",
+	"msg.additionalplacements.stairs.mismatched.footer": "Para conectarse a este servidor, corrige las entradas en config/additionalplacements-bootup.toml y reinicia el juego.",
 	"msg.additionalplacements.stairs.mismatched.header": "Las siguientes escaleras tienen un tipo de conexión incorrecto. Necesitan ser:",
 	"tooltip.additionalplacements.ceiling_placement": "Pueden ser colocados en techos",
 	"tooltip.additionalplacements.stair_connections.all_connections": "Permite conexiones mezcladas de manera vertical u horizontal (relativas a la colocación)",
