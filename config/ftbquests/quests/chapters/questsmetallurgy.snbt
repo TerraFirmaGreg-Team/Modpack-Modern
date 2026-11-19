@@ -2901,7 +2901,7 @@
 		{
 			dependencies: ["76F88CCE8FEF27B4"]
 			description: ["{quests.metal_age.lunchbox.desc}"]
-			guide_page: "tfg:field_guide tfg:cooking/decay 24"
+			guide_page: "tfg:field_guide tfg:cooking/decay 25"
 			id: "3A9289CF6C833E00"
 			optional: true
 			shape: "heart"
@@ -3098,7 +3098,7 @@
 		{
 			dependencies: ["56CA2EB7812529C5"]
 			description: ["{quests.tfg_tips.lunchbox.desc}"]
-			guide_page: "tfg:field_guide tfg:cooking/decay 24"
+			guide_page: "tfg:field_guide tfg:cooking/decay 25"
 			icon: {
 				Count: 1
 				id: "tfclunchbox:cooling_lunchbox"

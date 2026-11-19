@@ -103,7 +103,7 @@
             "item": "gtceu:thermochemically_treated_hardwood_dust",
             "title": "Rozdrabianie pulpy",
             "anchor": "breaking_down_the_pulp",
-            "text": "Before the pulp can be processed further into paper, it needs to be broken down further by $(thing)Boiling it with Lye$() in a $(l:cooking/cooking_methods#vat)Vat$() or a $(l:cooking/cooking_methods#pot)Pot$()."
+            "text": "Zanim pulpę da się przerobić na papier, trzeba ją jeszcze rozdrobnić przez $(thing)gotowanie w ługu$() w $(l:cooking/cooking_methods#vat)kadzi$() lub $(l:cooking/cooking_methods#pot)garnku$()."
         },
         {
             "type": "patchouli:spotlight",

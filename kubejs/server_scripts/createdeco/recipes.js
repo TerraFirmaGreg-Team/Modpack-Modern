@@ -336,15 +336,30 @@ const registerCreatedecoRecipes = (event) => {
 	];
 
 	coins.forEach(coin => {
-		let tfcProperty = coin.material.getProperty(TFGPropertyKey.TFC_PROPERTY);
-
 		event.recipes.gtceu.forming_press(coin.coin)
 			.itemInputs(ChemicalHelper.get(TagPrefix.nugget, coin.material, 1))
 			.notConsumable('gtceu:cylinder_casting_mold')
 			.itemOutputs(coin.coin)
-			.duration(50)
-			.EUt(16)
+			.duration(20)
+			.EUt(4)
 
+		event.recipes.gtceu.alloy_smelter(coin.coin)
+			.itemInputs(ChemicalHelper.get(TagPrefix.nugget, coin.material, 2))
+			.notConsumable('gtceu:cylinder_casting_mold')
+			.itemOutputs(coin.coin)
+			.duration(20)
+			.EUt(4)
+
+		let tfcProperty = coin.material.getProperty(TFGPropertyKey.TFC_PROPERTY);
+
+		event.recipes.tfc.anvil(coin.coin, ChemicalHelper.get(TagPrefix.nugget, coin.material, 1), ['shrink_last'])
+			.tier(tfcProperty.getTier())
+			.id(`tfg:anvil/${coin.material.getName()}_nugget_to_coin`)
+
+		event.recipes.tfc.anvil(`9x ${coin.coin}`, ChemicalHelper.get(TagPrefix.ingot, coin.material, 1), ['shrink_last'])
+			.tier(tfcProperty.getTier())
+			.id(`tfg:anvil/${coin.material.getName()}_ingot_to_coin`)
+			
 		let meltMaterial = (tfcProperty.getOutputMaterial() === null) ? coin.material : tfcProperty.getOutputMaterial();
 
 		event.recipes.tfc.heating(coin.coin, tfcProperty.getMeltTemp())

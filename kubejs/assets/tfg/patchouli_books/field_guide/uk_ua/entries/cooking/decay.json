@@ -271,8 +271,12 @@
             "text": "Льох використовується для зберігання їжі та $(l:cooking/cheese#cheese_wheel)витримки сиру$() за допомогою $(l:cooking/decay#shelf)полиць для їжі$() і $(l:cooking/decay#shelf)вішаків$() для розміщення харчових продуктів, а також для витримки сиру на землі або на $(thing)стійці для діжок$().$(br2)Льох працює ефективніше в $(l:the_world/climate#temperature)холоднішому середовищі$().$(li)$(2)Темп. >= 0 °C:$() Полиці 0,4, Вішаки 0,35$(li)$(2)Темп. < 0 °C:$() Полиці 0,35, Вішаки 0,3$(li)$(2)Темп. < -12 °C:$() Полиці 0,25, Вішаки 0,25"
         },
         {
+            "type": "patchouli:text",
+            "text": "Приклад конструкції льоху"
+        },
+        {
             "type": "tfg:multimultiblock",
-            "text": "Приклад конструкції льоху",
+            "text": "$(item)Полиці для їжі$() та $(item)вішаки$() можуть містити повний стос одного виду їжі. Додавати та забирати предмети можна за допомогою $(item)$(k:key.use)$(), а для повних стосів — $(item)$(k:key.sneak) + $(k:key.use)$(). Предмети на правильно встановлених полиці для їжі і вішаках отримують модифікатор псування, кращий, ніж у посудин, і він покращується зі зниженням $(thing)середньої температури$().",
             "multiblocks": [
                 {
                     "pattern": [
@@ -325,7 +329,7 @@
                             "AEEEEEEEA",
                             "A       A",
                             "A       A",
-                            "AC      B",
+                            "AC  F   B",
                             "A       A",
                             "A       A",
                             "AWWWWWWWA",
@@ -350,7 +354,8 @@
                         "W": "firmalife:wood/food_shelf/pine[facing=west]",
                         "B": "firmalife:sealed_door[facing=north,half=lower,hinge=right]",
                         "T": "firmalife:sealed_door[facing=north,half=upper,hinge=right]",
-                        "H": "firmalife:wood/hanger/pine"
+                        "H": "firmalife:wood/hanger/pine",
+                        "F": "tfc:wood/barrel/pine[sealed=true]"
                     }
                 },
                 {
@@ -404,7 +409,7 @@
                             "AEEEEEEE ",
                             "A        ",
                             "A        ",
-                            "AC       ",
+                            "AC  F    ",
                             "A        ",
                             "A        ",
                             "AWWWWWWW ",
@@ -429,7 +434,8 @@
                         "W": "firmalife:wood/food_shelf/pine[facing=west]",
                         "B": "firmalife:sealed_door[facing=north,half=lower,hinge=right]",
                         "T": "firmalife:sealed_door[facing=north,half=upper,hinge=right]",
-                        "H": "firmalife:wood/hanger/pine"
+                        "H": "firmalife:wood/hanger/pine",
+                        "F": "tfc:wood/barrel/pine[sealed=true]"
                     }
                 }
             ]
@@ -437,41 +443,41 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "shelf",
-            "title": "Зберігання в льосі",
-            "item": "tag:firmalife:food_shelves,tag:firmalife:hangers",
-            "text": "$(item)Полиці для їжі$() та $(item)вішаки$() можуть містити повний стос одного виду їжі. Додавати та забирати предмети можна за допомогою $(item)$(k:key.use)$(), а для повних стосів — $(item)$(k:key.sneak) + $(k:key.use)$(). Предмети на правильно встановлених полиці для їжі і вішаках отримують модифікатор псування, кращий, ніж у посудин, і він покращується зі зниженням $(thing)середньої температури$()."
-        },
-        {
-            "type": "patchouli:spotlight",
-            "anchor": "lunch_box",
             "title": "Ланч-бокси",
-            "item": "tfclunchbox:lunchbox,tfclunchbox:cooling_lunchbox,tfclunchbox:electric_lunchbox",
+            "item": "tag:firmalife:food_shelves,tag:firmalife:hangers,tag:tfc:barrels",
             "text": "Ланч-бокси — це зручний спосіб переносити та споживати їжу. Звичайний ланч-бокс надає властивість $(5)$(bold)консервований$(), тоді як $(item)охолоджуваний$() та $(item)електричний ланч-бокси$() надають властивість $(9)$(bold)охолоджений$() з модифікатором 0,3.$(br2)Охолоджувальний ланч-бокс використовує $(item)лід$() для збереження їжі, а електричний ланч-бокс споживає $(2)EU$() енергію."
         },
         {
             "type": "patchouli:spotlight",
-            "anchor": "refrigerator",
+            "anchor": "lunch_box",
             "title": "Холодильник",
-            "item": "tfg:mv_food_refrigerator,tfg:hv_food_refrigerator,tfg:ev_food_refrigerator,tfg:iv_food_refrigerator",
+            "item": "tfclunchbox:lunchbox,tfclunchbox:cooling_lunchbox,tfclunchbox:electric_lunchbox",
             "text": "Холодильники додані $(tfg_short) і споживають $(2)EU$(), щоб надавати властивість $(3)$(bold)охолоджений$() з модифікатором 0,125.$(br)Вищі рівні холодильника не впливають на бонус до збереження — лише на доступний простір для зберігання. Холодильники також можуть об’єднувати стоси їжі, об’єднуючи дати псування."
         },
         {
             "type": "patchouli:spotlight",
-            "anchor": "freeze_dry",
+            "anchor": "refrigerator",
             "title": "Сублімаційне сушіння",
-            "item": "tfg:food/meal_bag,tfg:food/freeze_dried_fruit,tfg:food/calorie_paste",
+            "item": "tfg:mv_food_refrigerator,tfg:hv_food_refrigerator,tfg:ev_food_refrigerator,tfg:iv_food_refrigerator",
             "text": "$(tfg_short) додає можливість висушувати певні види їжі методом сублімаційного сушіння в $(item)кухонних комбайнах$(), що значно збільшує термін її зберігання. Сублімаційне сушіння надає властивість $(7)$(bold)кріовисушений$() з модифікатором 0,02."
         },
         {
-            "type": "patchouli:text",
-            "anchor": "pest",
+            "type": "patchouli:spotlight",
+            "anchor": "freeze_dry",
             "title": "Шкідники",
+            "item": "tfg:food/meal_bag,tfg:food/freeze_dried_fruit,tfg:food/calorie_paste",
             "text": "Їжа, залишена в скринях, може приваблювати $(thing)щурів$(), тож не забувай правильно зберігати їжу в посудинах, льохах або холодильниках. Щури можуть відкривати ємності та їсти з них їжу. Про присутність щура тебе повідомить повідомлення $(thing)«Цей контейнер погано пахне»$(). Важливо зазначити, що якщо ти відкриєш і знову запечатаєш корчагу, перш ніж вийти з екрана, це ніколи не привабить шкідників."
         },
         {
             "type": "patchouli:text",
-            "anchor": "cutting",
+            "anchor": "pest",
             "title": "Зрізання",
+            "text": "Насамкінець ти можеш зрізати зіпсовану частину їжі, взявши $(item)ніж$() курсором і $(item)натиснувши правою кнопкою миші$() по частково зіпсованому стосу їжі у своєму інвентарі.$(br2)Це скине ступінь псування, але ти втратиш частину стосу предметів пропорційно до того, наскільки сильно він зіпсувався."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cutting",
+            "title": "Докладніше",
             "text": "Насамкінець ти можеш зрізати зіпсовану частину їжі, взявши $(item)ніж$() курсором і $(item)натиснувши правою кнопкою миші$() по частково зіпсованому стосу їжі у своєму інвентарі.$(br2)Це скине ступінь псування, але ти втратиш частину стосу предметів пропорційно до того, наскільки сильно він зіпсувався."
         },
         {
@@ -494,19 +500,19 @@
         "tfc:powder/salt": 14,
         "firmalife:drying_mat": 17,
         "firmalife:solar_drier": 18,
-        "tag:firmalife:food_shelves": 23,
-        "tag:firmalife:hangers": 23,
-        "tfclunchbox:lunchbox": 24,
-        "tfclunchbox:cooling_lunchbox": 24,
-        "tfclunchbox:electric_lunchbox": 24,
-        "tfg:mv_food_refrigerator": 25,
-        "tfg:hv_food_refrigerator": 25,
-        "tfg:ev_food_refrigerator": 25,
-        "tfg:iv_food_refrigerator": 25,
-        "tfg:food/meal_bag": 26,
-        "tfg:food/freeze_dried_fruit": 26,
-        "tfg:food/calorie_paste": 26,
-        "tfg:dry_ice": 26,
-        "tfg:foil_pack": 26
+        "tag:firmalife:food_shelves": 24,
+        "tag:firmalife:hangers": 24,
+        "tfclunchbox:lunchbox": 25,
+        "tfclunchbox:cooling_lunchbox": 25,
+        "tfclunchbox:electric_lunchbox": 25,
+        "tfg:mv_food_refrigerator": 26,
+        "tfg:hv_food_refrigerator": 26,
+        "tfg:ev_food_refrigerator": 26,
+        "tfg:iv_food_refrigerator": 26,
+        "tfg:food/meal_bag": 27,
+        "tfg:food/freeze_dried_fruit": 27,
+        "tfg:food/calorie_paste": 27,
+        "tfg:dry_ice": 27,
+        "tfg:foil_pack": 27
     }
 }

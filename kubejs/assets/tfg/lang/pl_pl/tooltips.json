@@ -1,6 +1,7 @@
 {
     "tfg.tooltip.food_trait.refrigerating": "§bSchłodzone",
-    "tfg.tooltip.foodtrait.freeze_dried": "Liofilizowane",
+    "tfg.tooltip.food_trait.freeze_dried": "Liofilizowane",
+    "tfg.tooltip.food_trait.cellared": "W piwnicy",
     "tfg.tooltip.extraterrestrial_farming": "§4Temperatura:§r Środowisko utlenione zapewnia 15°C",
     "tfg.tooltip.moon_rabbit_variant.pink": "Różowe futro",
     "tfg.tooltip.moon_rabbit_variant.white": "Białe futro",
@@ -200,7 +201,6 @@
     "tfg.tooltip.recipe_condition.animal_present.entity": "Wymaga: %s",
     "tfg.tooltip.firmalife_greenhouse.oxygen_required": "§cWymaga środowiska zawierającego tlen!",
     "tfg.tooltip.firmalife_greenhouse.oxygen_required.block": "§7Do działania szklarni w kosmosie wymagane jest środowisko zawierające tlen.",
-    "tfg.tooltip.firmalife_inside_valid_greenhouse": "W poprawnej szklarni",
     "tfg.tooltip.grow_light_disapointment": "§7Nie. To nie zwiększy szybkości wzrostu upraw...",
     "tfg.tooltip.rotten_voiding_cover": "§7Osłona usuwająca zepsutą żywność działa jak zwykła osłona usuwania przedmiotów, lecz wykrywa i niszczy wyłącznie §czepsutą żywność§7.",
     "tfg.tooltip.fertilizer.nitrogen": "§b(N) Azot",
@@ -283,7 +283,7 @@
     "tooltip.tfg.chameleon_spray_can.features.header": "§bFunkcje:",
     "tooltip.tfg.chameleon_spray_can.features.mass_paint_line1": " §7• §fMasowe malowanie §7- Przytrzymaj §eShift§7 podczas malowania bloków, aby",
     "tooltip.tfg.chameleon_spray_can.features.mass_paint_line2": "  §7malować połączone powierzchnie tego samego typu ciągiem.",
-    "tooltip.tfg.chameleon_spray_can.features.discount": "§aPrzy operacjach masowych zużywa o %1$d%% mniej płynu.",
+    "tooltip.tfg.chameleon_spray_can.features.discount": "   §aPrzy operacjach masowych zużywa o %1$d%% mniej płynu.",
     "tfg.tooltip.machine.wireless_charger.short_range": "§7Tryb superładowania: §f%s§7 bloków (promień), 4A",
     "tfg.tooltip.machine.wireless_charger.long_range": "§7Tryb dalekiego zasięgu: §f%s§7 bloków (promień), 1A",
     "tfg.tooltip.machine.wireless_charger.usage": "§7Użyj §bśrubokręta§7, aby zmieniać tryby",
@@ -309,6 +309,7 @@
     "tfg.tooltip.greenhouse.minimum_tier": "Min. poziom: ",
     "tfg.item.electric_flask.tooltip_1": "Elektryczna manierka, która będzie automatycznie cię poiła w razie potrzeby.",
     "tfg.item.electric_flask.tooltip_2": "§9Zużywa: §f1000 EU na łyk",
+    "tfg.tooltip.campfire": "§7Dekoracja; może służyć jako nieskończone źródło światła lub emiter cząsteczek.",
     "tfg.tooltip.calendar_weekday_month_day_year": "%s-%s %d, %04d",
     "tfg.tooltip.calendar_standard_date": "%s/%s/%04d",
     "tfg.tooltip.calendar_iso_date": "%04d-%s-%s",
@@ -330,5 +331,6 @@
     "tfg.tooltip.environment.pressure_pascal": "%s kPa",
     "tfg.tooltip.environment.pressure_bar": "%s bar",
     "tfg.tooltip.environment.gravity_mss": "%s m/s²",
-    "tfg.tooltip.environment.gravity_bss": "%s blok(ów)/s²"
+    "tfg.tooltip.environment.gravity_bss": "%s blok(ów)/s²",
+    "tfg.tooltip.me_network.channels": "Udostępnione kanały: %s"
 }

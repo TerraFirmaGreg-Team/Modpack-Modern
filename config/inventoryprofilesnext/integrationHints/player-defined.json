@@ -37,6 +37,9 @@
     "su.terrafirmagreg.core.client.screen.TFGNutritionScreen": {
         "ignore": true
     },
+    "su.terrafirmagreg.core.client.screen.ae2.OrderTerminalScreen": {
+        "ignore": true
+    },
     "com.simibubi.create.content.logistics.factoryBoard.FactoryPanelSetItemScreen": {
         "ignore": true
     },
