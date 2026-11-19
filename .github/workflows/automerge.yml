@@ -3,8 +3,14 @@ run-name: "[🔀]: Automerge #${{ github.run_number }}"
 
 on:
   pull_request:
-    types: [ready_for_review, synchronize]
+    types: [opened, ready_for_review, synchronize, reopened]
     branches: [main]
+  pull_request_review:
+    types: [submitted]
+  workflow_run:
+    workflows: ["Build"]
+    types: [completed]
+    branches: [dev]
   workflow_dispatch:
     inputs:
       pull_request:
