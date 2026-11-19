@@ -222,16 +222,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.low_voltage.lv_battery_preparation.desc}"]
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "gtceu:battery_alloy_ingot"
-			}
+			icon: "gtceu:battery_alloy_ingot"
 			id: "6D9D54FAB21EC086"
 			subtitle: "{quests.low_voltage.lv_battery_preparation.subtitle}"
 			tasks: [
@@ -2138,7 +2129,7 @@
 		{
 			dependencies: ["3E6DC423FE4A99F7"]
 			description: ["{quests.low_voltage.electric_lunchbox.desc}"]
-			guide_page: "tfg:field_guide tfg:cooking/decay 24"
+			guide_page: "tfg:field_guide tfg:cooking/decay 25"
 			id: "37F316C0599B52DE"
 			optional: true
 			shape: "heart"

@@ -61,7 +61,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "隨時可以對篝火使用$(thing)鏟子$()將它熄滅。$(br2)篝火也可以加裝其他裝置擴充功能：使用$(thing)鍛鐵烤架$()會將篝火轉換為$(l:cooking/cooking_methods#grill)烤架$()，使用$(thing)陶瓷鍋$()則轉換為$(l:cooking/cooking_methods#pot)陶鍋$()。按住 $(item)$(k:key.sneak)$() 並按 $(item)$(k:key.use)$() 即可拆下。小心別去拆高溫的烤架或陶鍋！"
+      "text": "隨時可以對篝火使用$(thing)鏟$()將它熄滅。$(br2)篝火也可以加裝其他裝置擴充功能：使用$(thing)鍛鐵烤架$()會將篝火轉換為$(l:cooking/cooking_methods#grill)烤架$()，使用$(thing)陶瓷鍋$()則轉換為$(l:cooking/cooking_methods#pot)陶鍋$()。按住 $(item)$(k:key.sneak)$() 並按 $(item)$(k:key.use)$() 即可拆下。小心別去拆高溫的烤架或陶鍋！"
     },
     {
       "type": "tfg:multimultiblock",

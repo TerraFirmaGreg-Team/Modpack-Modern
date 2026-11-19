@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:agriculture/greenhouse#types)Типи теплиць$()$(li)$(bold)$(l:agriculture/greenhouse#planters)Лотки для рослин$()$(li2)$(l:agriculture/greenhouse#large_planter)Великий лоток для рослин$()$(li2)$(l:agriculture/greenhouse#quad_planter)Подвійний лоток для рослин$()$(li2)$(l:agriculture/greenhouse#bonsai_planter)Лоток для бонсаю$()$(li2)$(l:agriculture/greenhouse#hanging_planter)Підвісний лоток для рослин$()$(li2)$(l:agriculture/greenhouse#trellis_planter)Жардиньєрка для кущів$()$(li2)$(l:agriculture/greenhouse#hydroponic_planter)Гідропонний лоток для рослин$()$(li)$(bold)$(l:agriculture/greenhouse#irrigation)Зрошення$()$(li)$(bold)$(l:agriculture/greenhouse#auto_planting)Автоматичне висаджування$()$(li)$(bold)$(l:agriculture/greenhouse#auto_harvesting)Автоматичний збір урожаю$()$(li)$(bold)$(l:agriculture/greenhouse#electric)Електрична теплиця$()$(li)$(bold)$(l:agriculture/greenhouse#hydroponics)Гідропонний комплекс$()"
+            "text": "$(bold)$(l:agriculture/greenhouse#types)Типи теплиць$()$(li)$(bold)$(l:agriculture/greenhouse#planters)Лотки для рослин$()$(li2)$(l:agriculture/greenhouse#large_planter)Великий лоток для рослин$()$(li2)$(l:agriculture/greenhouse#quad_planter)Подвійний лоток для рослин$()$(li2)$(l:agriculture/greenhouse#bonsai_planter)Лоток для бонсаю$()$(li2)$(l:agriculture/greenhouse#hanging_planter)Підвісний лоток для рослин$()$(li2)$(l:agriculture/greenhouse#trellis_planter)Жардиньєрка для кущів$()$(li2)$(l:agriculture/greenhouse#hydroponic_planter)Гідропонний лоток для рослин$()$(li)$(bold)$(l:agriculture/greenhouse#irrigation)Зрошення$()$(li)$(bold)$(l:agriculture/greenhouse#auto_planting)Автоматичне висаджування$()$(li)$(bold)$(l:agriculture/greenhouse#auto_harvesting)Автоматичний збір урожаю$()$(li)$(bold)$(l:agriculture/greenhouse#bees_and_taps)Вулики та сокозбірники$()$(li)$(bold)$(l:agriculture/greenhouse#electric)Електрична теплиця$()$(li)$(bold)$(l:agriculture/greenhouse#hydroponics)Гідропонний комплекс$()"
         },
         {
             "type": "patchouli:text",
@@ -105,14 +105,14 @@
             "anchor": "auto_planting",
             "title": "Автоматичне висаджування",
             "item": "create:mechanical_arm",
-            "text": "$(li)$(thing)Механічні руки$() можна використовувати для висаджування культур у грядки. Якщо призначити грядку ціллю механічної руки, вона автоматично братиме насіння з призначених складів і висаджуватиме його у відповідну грядку залежно від типу насіння."
+            "text": "$(thing)Механічні руки$() можна використовувати для висаджування культур у грядки. Якщо призначити грядку ціллю механічної руки, вона автоматично братиме насіння з призначених складів і висаджуватиме його у відповідну грядку залежно від типу насіння."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "auto_harvesting",
             "title": "Автоматичний збір врожаю",
             "item": "firmalife:sweeper,firmalife:picker",
-            "text": "$(li)Додатково, $(item)кошики для збору врожаю$() можна використовувати для збору врожаю з більшості типів саджалок.$(li)Щоб збирати предмети, які викидають $(thing)підмітальники$() та $(thing)збирачі$(), ти можеш використати $(item)вагонетку з лійкою$(), $(thing)контрапцію$() з $(item)лійками$() або GregTech $(item)збирач предметів$()."
+            "text": "$(thing)Підмітальники$() використовуються для збирання врожаю з грядок, окрім подвійних та гідропонних лотків. Вони можуть працювати від сигналу редстоуну.$(li)$(thing)Збирачі$() можна активувати сигналом редстоуну зверху. Вони висуваються вниз, щоб збирати врожай із подвійних та гідропонних лотків."
         },
         {
             "type": "patchouli:text",
@@ -120,13 +120,20 @@
         },
         {
             "type": "patchouli:spotlight",
+            "anchor": "bees_and_taps",
+            "title": "Вулики та сокозбірники",
+            "item": "firmalife:beehive,afc:tree_tap",
+            "text": "$(l:agriculture/beekeeping)Вулики$() та $(l:agriculture/tree_tapping)сокозбирачі$() працюють ефективніше, якщо розміщені в теплиці! Контролер теплиці забезпечує їхню продуктивність протягом усього року, незалежно від сезонних змін температури."
+        },
+        {
+            "type": "patchouli:spotlight",
             "anchor": "electric",
             "item": "tfg:electric_greenhouse",
-            "text": "Багатоблокова конструкція $(item)Електричної теплиці$() може стати твоїм джерелом $(thing)колод$() та інших рослин, якщо ти віддаєш перевагу виготовленню машин GregTech замість механізмів Create. Вона також має унікальну властивість вирощувати більше декоративних рослин TFC!$(br2)Ти можеш виготовити її наприкінці етапу $(7)LV$()."
+            "text": "Багатоблокова конструкція $(item)електричної теплиці$() може стати твоїм джерелом $(thing)колод$() та інших рослин, якщо ти віддаєш перевагу виготовленню машин GregTech замість механізмів Create. Вона також має унікальну властивість вирощувати більше декоративних рослин TFC!$(br2)Ти можеш виготовити її наприкінці етапу $(7)LV$()."
         },
         {
             "type": "patchouli:text",
-            "text": "$(bold)Примітка:$() Стіни цієї багатоблокової конструкції можна налаштувати, використовуючи будь-який допустимий блок теплиці рівня заліза.$(br2)Переглянь $(emi)попередній перегляд багатоблокової конструкції, щоб побачити список усіх блоків, які можна використовувати.$(br2)Електричну теплицю також можна покращити кількома способами, зокрема за допомогою $(l:agriculture/fertilizers)добрив$() або пізніше, на етапі $(6)HV$(), за допомогою $(thing)Аквапонічного циклу$()."
+            "text": "$(bold)Примітка:$() Стіни цієї багатоблокової конструкції можна налаштувати, використовуючи будь-який допустимий блок теплиці рівня заліза.$(br2)Переглянь $(emi)попередній перегляд багатоблокової конструкції, щоб побачити список усіх блоків, які можна використовувати.$(br2)Електричну теплицю також можна покращити кількома способами, зокрема за допомогою $(l:agriculture/fertilizers)добрив$() або пізніше, на етапі $(6)HV$(), за допомогою $(thing)аквапонічного циклу$()."
         },
         {
             "type": "patchouli:spotlight",

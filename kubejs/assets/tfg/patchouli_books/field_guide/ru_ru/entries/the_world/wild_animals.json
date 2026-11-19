@@ -304,7 +304,7 @@
             "scale": 0.6,
             "name": "Sabertooth",
             "anchor": "sabertooth",
-            "text": "Саблезубый тигр появляется при любой $(l:the_world/climate#temperature)температуре$() выше 0°C и любом $(l:the_world/climate#rainfall)количестве осадков$() выше 250 мм."
+            "text": "Саблезубый тигр появляется при любой $(l:the_world/climate#temperature)температуре$() ниже 0°C и любом $(l:the_world/climate#rainfall)количестве осадков$() выше 250 мм."
         },
         {
             "type": "patchouli:entity",

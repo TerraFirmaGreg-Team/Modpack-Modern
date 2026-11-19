@@ -1,11 +1,11 @@
 {
-    "name": "Chisels",
+    "name": "ノミ",
     "category": "tfg:craftsmanship",
     "icon": "tfc:metal/chisel/wrought_iron",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "Chisels are a tool for creating decorative forms of other blocks, including slabs and stairs. In order to get started, you will need a $(thing)Chisel$() and any type of $(thing)Hammer$(). Chisels must be cast in molds or forged on an $(l:craftsmanship/anvils)Anvil$(). In order to start chiseling, hold the chisel in your main hand and a hammer in your offhand, and target a block in the world."
+            "text": "ノミは、ハーフブロックや階段など、他のブロックの装飾を作成するためのツールです。彫刻を始めるには、$(thing)ノミ$()と$(thing)ハンマー$()が必要です。ノミは金属を鋳造するか、$(l:craftsmanship/anvils)金床$()で鍛造して入手できます。彫刻を行うには右手にノミを、左手にハンマーを持ち、ワールド内のブロックをターゲットにします。"
         },
         {
             "type": "patchouli:text",
@@ -22,7 +22,7 @@
                 "tfc:textures/gui/book/tutorial/chisel_stair.png",
                 "tfc:textures/gui/book/tutorial/chisel_slab.png"
             ],
-            "text": "$(bold)Tutorial Slideshow:$() The three chisel modes usable on a $(thing)Raw Limestone$() block.",
+            "text": "$(bold)チュートリアル・スライドショー：$() $(thing)未加工の石灰岩$() ブロックで使用できる3つのチゼルモード。",
             "border": true
         },
         {
@@ -36,7 +36,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "関連項目",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",

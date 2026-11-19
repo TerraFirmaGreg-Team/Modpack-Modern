@@ -256,5 +256,9 @@
 	"resourcepack.fluidlogistics.cu_again_for_fluidlogistics": "Старые медные текстуры для Fluid Logistics",
 	"fluidlogistics.configuration.advancedLogisticsNetworkEnabled": "Система упаковки жидкостей",
 	"fluidlogistics.configuration.section.fluidlogistics.common.toml": "Конфигурация банок для жидкостей",
-	"fluidlogistics.configuration.section.fluidlogistics.common.toml.title": "Конфигурация банок для жидкостей"
+	"fluidlogistics.configuration.section.fluidlogistics.common.toml.title": "Конфигурация банок для жидкостей",
+	"block.fluidlogistics.flow_meter": "Расходомер",
+	"fluidlogistics.display_source.flow_rate": "Пропускная способность (mB/t)",
+	"fluidlogistics.gui.flow_meter.title": "Пропускная способность",
+	"fluidlogistics.fluid_pump.direction.up": "Вывод вверх"
 }

@@ -41,6 +41,12 @@
             "border": true
         },
         {
+            "type": "patchouli:text",
+            "title": "Читать далее",
+            "anchor": "tips",
+            "text": "$(li)Unsuitable climate for tapping? Try placing your tree in a $(l:agriculture/greenhouse)Greenhouse!$() The controlled environment inside lets the tree tap produce sap no matter how cold it is outside."
+        },
+        {
             "type": "patchouli:relations",
             "title": "Читать далее",
             "anchor": "relations",

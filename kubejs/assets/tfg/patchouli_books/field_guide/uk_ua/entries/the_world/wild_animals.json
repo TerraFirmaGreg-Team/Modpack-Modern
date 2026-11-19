@@ -23,7 +23,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(bold)$(li)$(l:the_world/wild_animals#fish)Риба$()$(li2)$(l:the_world/wild_animals#cod)Тріска$()$(li2)$(l:the_world/wild_animals#pufferfish)Риба фугу$()$(li2)$(l:the_world/wild_animals#jellyfish)Медуза$()$(li2)$(l:the_world/wild_animals#tropical_fish)Тропічна риба$()$(li2)$(l:the_world/wild_animals#salmon)Лосось$()$(li2)$(l:the_world/wild_animals#bluegill)Синьозябровий окунь$()$(bold)$(li)$(l:the_world/wild_animals#shellfish)Молюски$()$(li2)$(l:the_world/wild_animals#isopod)Рівноніг$()$(li2)$(l:the_world/wild_animals#lobster)Лобстер$()$(li2)$(l:the_world/wild_animals#crayfish)Річковий рак$()$(li2)$(l:the_world/wild_animals#horseshoe_crab)Мечехвіст$()"
+            "text": "$(bold)$(li)$(l:the_world/wild_animals#fish)Риба$()$(li2)$(l:the_world/wild_animals#cod)Тріска$()$(li2)$(l:the_world/wild_animals#pufferfish)Риба фугу$()$(li2)$(l:the_world/wild_animals#jellyfish)Медуза$()$(li2)$(l:the_world/wild_animals#tropical_fish)Тропічна риба$()$(li2)$(l:the_world/wild_animals#salmon)Лосось$()$(li2)$(l:the_world/wild_animals#bluegill)Синьозябровий окунь$()$(bold)$(li)$(l:the_world/wild_animals#shellfish)Молюски$()$(li2)$(l:the_world/wild_animals#isopod)Ізопод$()$(li2)$(l:the_world/wild_animals#lobster)Лобстер$()$(li2)$(l:the_world/wild_animals#crayfish)Річковий рак$()$(li2)$(l:the_world/wild_animals#horseshoe_crab)Мечехвіст$()"
         },
         {
             "type": "patchouli:text",
@@ -576,7 +576,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:isopod",
             "scale": 0.7,
-            "name": "Рівноніг",
+            "name": "Ізопод",
             "anchor": "isopod",
             "text": "Ізоподи з'являються в глибоководних частинах океанів із $(l:the_world/climate#temperature)температурою$() не вище 14°C."
         },

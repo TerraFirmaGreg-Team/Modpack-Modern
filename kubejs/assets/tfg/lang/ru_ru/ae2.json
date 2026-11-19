@@ -1,0 +1,19 @@
+{
+	"block.tfg.storage_provider": "МЭ Поставщик хранилища",
+	"item.tfg.cable_storage_provider": "МЭ Поставщик хранилища",
+	"item.tfg.order_terminal": "Терминал МЭ Заказчика",
+	"item.tfg.wireless_order_terminal": "Беспроводной терминал заказов",
+	"key.ae2.wireless_order_terminal": "Открыть беспроводной терминал заказов",
+	"gui.tfg.order_terminal.amount": "Сумма к отправке",
+	"gui.tfg.order_terminal.confirm": "Подтвердить",
+	"gui.tfg.order_terminal.craft": "Крафт",
+	"gui.tfg.order_terminal.more": "...и ещё %s",
+	"gui.tfg.order_terminal.no_destinations": "Нет поставщиков хранилища",
+	"gui.tfg.order_terminal.return": "Вернуть ожидающие предметы в сеть и отменить крафты",
+	"gui.tfg.order_terminal.search_destinations": "Поиск по направлениям",
+	"gui.tfg.order_terminal.send": "Отправить",
+	"gui.tfg.order_terminal.set": "Задать",
+	"gui.tfg.order_terminal.stage": "Этап",
+	"gui.tfg.order_terminal.status.idle": "Простаивает",
+	"gui.tfg.order_terminal.status.offline": "Офлайн"
+}

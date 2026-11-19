@@ -244,7 +244,7 @@ function registerTFGMiscellaneousRecipes(event) {
 
 	// Prismatic Spray Can
 
-	event.recipes.gtceu.assembler('tfg:chemical_prismatic_die')
+	event.recipes.gtceu.assembler('tfg:chemical_prismatic_dye')
 		.itemInputs(
 			Item.of('gtceu:chemical_red_dye',16),
 			Item.of('gtceu:chemical_yellow_dye',16),
@@ -276,5 +276,86 @@ function registerTFGMiscellaneousRecipes(event) {
     )
     .duration(20 * 30)
     .EUt(GTValues.VA[GTValues.MV])
+
+	// AE2 Storage Provider Items
+
+	event.shapeless('tfg:storage_provider', ['tfg:cable_storage_provider'])
+		.id('tfg:shapeless/storage_provider')
+
+	event.shapeless('tfg:cable_storage_provider', ['tfg:storage_provider'])
+		.id('tfg:shapeless/cable_storage_provider')
+
+	event.recipes.gtceu.assembler('tfg:order_terminal')
+    .itemInputs(
+        Ingredient.of('#ae2:illuminated_panel', 1),
+        Item.of('gtceu:steel_rod', 2),
+        Ingredient.of('#gtceu:circuits/hv', 1),
+		Item.of('gtceu:steel_plate', 2),
+		Item.of('tfg:storage_provider')
+    )
+    .itemOutputs(
+        Item.of('tfg:order_terminal')
+    )
+    .duration(20 * 5)
+    .EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.assembler('tfg:wireless_order_terminal')
+        .itemInputs(
+            '2x #gtceu:batteries/ev',
+            'ae2:wireless_terminal',
+            'tfg:order_terminal',
+            '2x gtceu:ev_sensor',
+            'gtceu:ev_emitter',
+            '2x #forge:rods/ultimet')
+        .itemOutputs('tfg:wireless_order_terminal')
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.EV])
+		.addMaterialInfo(true)
+
+	event.recipes.gtceu.assembler('tfg:storage_provider_earth')
+		.itemInputs(
+			'gtceu:hv_electric_motor',
+			'4x #forge:rods/long/stainless_steel',
+			'6x #forge:plates/stainless_steel',
+			'4x ae2:annihilation_core',
+			'4x ae2:formation_core')
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
+		.itemOutputs('tfg:storage_provider')
+		.duration(20 * 30)
+		.EUt(GTValues.VA[GTValues.HV])
+		.cleanroom(CleanroomType.CLEANROOM)
+
+	function requiresOxygenation(recipe) { TFGRecipeSchemaBindings.isOxygenated(recipe, true) }
+
+	requiresOxygenation(
+	event.recipes.gtceu.me_assembler('tfg:storage_provider_mv_moon')
+		.itemInputs(
+			'gtceu:mv_electric_motor',
+			'4x #forge:rods/long/aluminium',
+			'4x #forge:plates/aluminium',
+			'1x ae2:annihilation_core',
+			'1x ae2:formation_core')
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
+		.itemOutputs('1x tfg:storage_provider')
+		.duration(20 * 10)
+		.EUt(GTValues.VA[GTValues.MV])
+		.dimension('ad_astra:moon')
+		.circuit(3))
+
+	// IV Moon
+	requiresOxygenation(
+	event.recipes.gtceu.me_assembler('tfg:storage_provider_iv_moon')
+		.itemInputs(
+			'gtceu:iv_electric_motor',
+			'4x #forge:rods/long/tungsten_steel',
+			'4x #forge:plates/tungsten_steel',
+			'1x ae2:annihilation_core',
+			'1x ae2:formation_core')
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 8), Fluid.of('gtceu:argon', 144))
+		.itemOutputs('8x tfg:storage_provider')
+		.duration(20 * 900)
+		.EUt(GTValues.VA[GTValues.IV])
+		.dimension('ad_astra:moon')
+		.circuit(3))
 	
 }

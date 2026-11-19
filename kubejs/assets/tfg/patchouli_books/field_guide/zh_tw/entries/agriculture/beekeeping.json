@@ -333,7 +333,7 @@
             "anchor": "honey_and_wax",
             "type": "patchouli:spotlight",
             "item": "firmalife:jar/honey,firmalife:raw_honey,firmalife:beeswax",
-            "text": "蜜蜂會生產$(thing)蜂蜜$()。手持空罐對有蜂蜜的蜂箱按 $(item)$(k:key.use)$()，可獲得$(thing)蜂蜜罐$()；打開後得到$(thing)生蜂蜜$()，可代替$(thing)糖$()。$(br2)手持$(thing)刀$()對填滿的巢框按 $(item)$(k:key.use)$()，可獲得用途廣泛的$(thing)蜂蠟$()，但會殺死巢框中的蜂后！"
+            "text": "蜜蜂會產$(thing)蜂蜜$()。拿著空罐對有蜂蜜的蜂箱按 $(item)$(k:key.use)$()，可獲得$(thing)蜂蜜罐$()；開罐後得到$(thing)生蜂蜜$()，可代替$(thing)糖$()。$(br2)拿著$(thing)刀$()對填滿的巢框按 $(item)$(k:key.use)$()，可獲得用途廣泛的$(thing)蜂蠟$()，但會殺死巢框中裡的蜂后！"
         },
         {
             "type": "patchouli:text",
@@ -355,7 +355,11 @@
             "type": "patchouli:text",
             "title": "養蜂提示",
             "anchor": "tips",
-            "text": "$(li)蜜蜂可以幫$(l:agriculture/greenhouse#planters)種植盆$()施肥！$(li)含水的大型種植盆視為花朵。$(li)身體潮濕時不會被蜜蜂攻擊。$(li)向日葵和亞麻等部分作物視為花朵。$(li)$(thing)作物親和$()、$(thing)自然復育$()與花朵的作用範圍相同。$(li)蜂箱出入口不要被擋住。"
+            "text": "$(li)蜜蜂可以幫$(l:agriculture/greenhouse#planters)種植盆$()施肥！$(li)含水的大型種植盆視為花朵。$(li)身體潮濕時不會被蜜蜂攻擊。$(li)向日葵和亞麻等部分作物視為花朵。$(li)$(thing)作物親和$()、$(thing)自然復育$()與花朵的作用範圍相同。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)蜂箱出入口不要被擋住，蜜蜂出不了蜂箱就什麼也做不了！$(li)蜜蜂可以住在$(l:agriculture/greenhouse)溫室$()裡！在溫室內會無視季節溫度，全年都能活躍。"
         },
         {
             "type": "patchouli:relations",

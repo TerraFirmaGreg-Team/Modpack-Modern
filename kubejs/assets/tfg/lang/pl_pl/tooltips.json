@@ -1,6 +1,7 @@
 {
     "tfg.tooltip.food_trait.refrigerating": "§bSchłodzone",
-    "tfg.tooltip.foodtrait.freeze_dried": "Liofilizowane",
+    "tfg.tooltip.food_trait.freeze_dried": "Liofilizowane",
+    "tfg.tooltip.food_trait.cellared": "W piwnicy",
     "tfg.tooltip.extraterrestrial_farming": "§4Temperatura:§r Środowisko utlenione zapewnia 15°C",
     "tfg.tooltip.moon_rabbit_variant.pink": "Różowe futro",
     "tfg.tooltip.moon_rabbit_variant.white": "Białe futro",
@@ -91,6 +92,7 @@
     "tfg.tooltip.machine.cooling_tower_2": "§7Chłodzi gorący czynnik chłodniczy, rozpraszając nadmiar ciepła w atmosferze.§r",
     "tfg.tooltip.machine.hydroponics_facility_2": "§7Ulepszona wersja EGH! Instalacja hydroponiczna zwiększa szanse na dodatkową produkcję ze szklarni i nie wymaga natlenionego środowiska.§r",
     "tfg.tooltip.machine.pisciculture_fishery_1": "§7§o1 ryba, 2 ryby...§r",
+    "tfg.tooltip.machine.pisciculture_fishery_2": "§7Hodowle ryb są nie tylko źródłem świeżych ryb, ale też odgrywają kluczową rolę w zwiększaniu wydajności szklarni dzięki §3akwaponice.§7 Konstrukcję można wypełnić dowolnym płynem z tagiem §o#tfg:pisciculture_fishery_fluids§r",
     "tfg.tooltip.machine.high_temp_precision_fabricator_1": "§7Ekstremalna maszyna do waty cukrowej§r",
     "tfg.tooltip.machine.high_temp_precision_fabricator_2": "§7Wytwarza monokryształy krzemu i inne materiały w czysty sposób, który nie zakłóci pracy twojego pomieszczenia czystego!§r",
     "tfg.tooltip.machine.gas_well_1": "§7Wydobywaj gaz ziemny z ziemi przez szczelinowanie hydrauliczne!§r",
@@ -281,7 +283,7 @@
     "tooltip.tfg.chameleon_spray_can.features.header": "§bFunkcje:",
     "tooltip.tfg.chameleon_spray_can.features.mass_paint_line1": " §7• §fMasowe malowanie §7- Przytrzymaj §eShift§7 podczas malowania bloków, aby",
     "tooltip.tfg.chameleon_spray_can.features.mass_paint_line2": "  §7malować połączone powierzchnie tego samego typu ciągiem.",
-    "tooltip.tfg.chameleon_spray_can.features.discount": "§aPrzy operacjach masowych zużywa o %1$d%% mniej płynu.",
+    "tooltip.tfg.chameleon_spray_can.features.discount": "   §aPrzy operacjach masowych zużywa o %1$d%% mniej płynu.",
     "tfg.tooltip.machine.wireless_charger.short_range": "§7Tryb superładowania: §f%s§7 bloków (promień), 4A",
     "tfg.tooltip.machine.wireless_charger.long_range": "§7Tryb dalekiego zasięgu: §f%s§7 bloków (promień), 1A",
     "tfg.tooltip.machine.wireless_charger.usage": "§7Użyj §bśrubokręta§7, aby zmieniać tryby",
@@ -307,9 +309,12 @@
     "tfg.tooltip.greenhouse.minimum_tier": "Min. poziom: ",
     "tfg.item.electric_flask.tooltip_1": "Elektryczna manierka, która będzie automatycznie cię poiła w razie potrzeby.",
     "tfg.item.electric_flask.tooltip_2": "§9Zużywa: §f1000 EU na łyk",
+    "tfg.tooltip.campfire": "§7Dekoracja; może służyć jako nieskończone źródło światła lub emiter cząsteczek.",
+    "tfg.tooltip.calendar_weekday_month_day_year": "%s-%s %d, %04d",
     "tfg.tooltip.calendar_standard_date": "%s/%s/%04d",
     "tfg.tooltip.calendar_iso_date": "%04d-%s-%s",
     "tfg.tooltip.calendar_month_and_day": "%d-%s",
+    "tfg.tooltip.climate_precipitation.chance": "Opady: %s%% ",
     "tfg.tooltip.climate_precipitation.mm": "%s mm",
     "tfg.tooltip.climate_wind.speed_ms": "%s m/s",
     "tfg.tooltip.climate_wind.speed_bs": "%s bloków/s",
@@ -326,5 +331,6 @@
     "tfg.tooltip.environment.pressure_pascal": "%s kPa",
     "tfg.tooltip.environment.pressure_bar": "%s bar",
     "tfg.tooltip.environment.gravity_mss": "%s m/s²",
-    "tfg.tooltip.environment.gravity_bss": "%s blok(ów)/s²"
+    "tfg.tooltip.environment.gravity_bss": "%s blok(ów)/s²",
+    "tfg.tooltip.me_network.channels": "Udostępnione kanały: %s"
 }

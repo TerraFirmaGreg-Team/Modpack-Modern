@@ -256,7 +256,7 @@
             "scale": 0.55,
             "name": "Niedźwiedź grizzly",
             "anchor": "grizzly_bear",
-            "text": "The grizzly bear spawns in forests of moderate climates, with a $(l:the_world/climate#temperature)temperature$() range of -15 to 15°C and at least 200mm of $(l:the_world/climate#rainfall)rainfall$()."
+            "text": "Niedźwiedź grizzly pojawia się w lasach o klimacie umiarkowanym z $(l:the_world/climate#temperature)temperaturą$() od -15 do 15°C oraz $(l:the_world/climate#rainfall)opadami$() co najmniej 200 mm."
         },
         {
             "type": "patchouli:entity",
@@ -264,7 +264,7 @@
             "scale": 0.55,
             "name": "Niedźwiedź czarny",
             "anchor": "black_bear",
-            "text": "The black bear spawns in forests of warmer, wetter climates, of $(l:the_world/climate#temperature)temperature$() 5 to 20°C and at least 250mm of $(l:the_world/climate#rainfall)rainfall$()."
+            "text": "Niedźwiedź czarny pojawia się w lasach o cieplejszym i wilgotniejszym klimacie, przy $(l:the_world/climate#temperature)temperaturze$() od 5 do 20°C oraz $(l:the_world/climate#rainfall)opadach$() co najmniej 250 mm."
         },
         {
             "type": "patchouli:entity",
@@ -444,7 +444,7 @@
             "entity": "tfc:pheasant",
             "scale": 0.7,
             "anchor": "pheasant",
-            "text": "The pheasant spawns in forests at any $(l:the_world/climate#temperature)temperature$() below 17°C and above -5°C, and $(l:the_world/climate#rainfall)rainfall$() between 100 and 300mm."
+            "text": "Bażant pojawia się w lasach przy dowolnej $(l:the_world/climate#temperature)temperaturze$() poniżej 17°C i powyżej -5°C oraz $(l:the_world/climate#rainfall)opadach$() od 100 do 300 mm."
         },
         {
             "type": "patchouli:entity",
@@ -476,7 +476,7 @@
             "scale": 1.2,
             "name": "Skoczek pustynny",
             "anchor": "jerboa",
-            "text": "Skoczek pustynny pojawia się przy dowolnej $(l:the_world/climate#temperature)temperaturze$() poniżej 25°C i powyżej -3°C oraz $(l:the_world/climate#rainfall)opadach$()  poniżej 160 mm."
+            "text": "Skoczek pustynny pojawia się przy dowolnej $(l:the_world/climate#temperature)temperaturze$() poniżej 25°C i powyżej -3°C oraz $(l:the_world/climate#rainfall)opadach$() poniżej 160 mm."
         },
         {
             "type": "patchouli:entity",
@@ -494,7 +494,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(thing)Shore Animals$() only spawn on sea shores and spend some of their day swimming, and some walking on the beach. They are curious creatures, and will follow the player around, but cannot be tamed."
+            "text": "$(thing)Mieszkańcy wybrzeży$() pojawiają się wyłącznie na brzegach mórz i część dnia spędzają na pływaniu, a część na spacerach po plaży. To ciekawskie stworzenia, które chodzą za graczem, ale nie da się ich oswoić."
         },
         {
             "type": "patchouli:entity",

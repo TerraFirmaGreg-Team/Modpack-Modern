@@ -39,7 +39,7 @@
 			"scale": 0.6,
 			"name": "賽特斯果凍怪",
 			"anchor": "certus_jellie",
-			"text": "$(thing)賽特斯$()$(l:agriculture/jellies)果凍怪$()生成於月球的$(item)皓藍石$()生態域。牠們會產出$(thing)大型賽特斯石英芽$()。"
+			"text": "$(thing)賽特斯$()$(l:agriculture/jellies)果凍怪$()生成於月球的$(item)皓藍石$()生態域。牠們會產出$(thing)賽特斯石英水晶$()。"
 		},
 		{
 			"type": "patchouli:entity",

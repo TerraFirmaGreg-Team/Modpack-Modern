@@ -62,7 +62,7 @@
             "type": "patchouli:spotlight",
             "item": "create:schematicannon,create:schematic_table",
             "anchor": "schematicannon",
-            "text": "The $(item)Schematicannon$() is an automatic building machine that will place blocks according to a given schematic. You can use it to transfer buildings made in a creative world, or to copy and paste segments of your structures."
+            "text": "$(item)Schematoarmata$() to automatyczna maszyna budowlana, która umieszcza bloki zgodnie z wybranym schematem. Możesz jej używać do przenoszenia budowli utworzonych w świecie w trybie kreatywnym albo do kopiowania i wklejania fragmentów swoich konstrukcji."
         },
         {
             "type": "patchouli:spotlight",

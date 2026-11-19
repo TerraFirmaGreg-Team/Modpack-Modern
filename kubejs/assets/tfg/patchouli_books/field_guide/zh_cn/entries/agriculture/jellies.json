@@ -82,5 +82,8 @@
 		}
 	],
 	"read_by_default": true,
-	"sortnum": 7
+	"sortnum": 7,
+	"extra_recipe_mappings": {
+		"tag:jellies:slime_ball": 0
+	}
 }

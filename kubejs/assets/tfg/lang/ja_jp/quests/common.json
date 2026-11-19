@@ -8,5 +8,9 @@
     "quests.groups.space_age": "宇宙時代",
     "quests.groups.interstellar": "恒星間時代",
     "quests.groups.technological_help": "攻略のための知識",
-    "quests.groups.tips": "Tips"
+    "quests.groups.tips": "Tips",
+    "quests.player_completed_quest": "&e%s&r がクエストを完了しました: ",
+    "quests.team_completed_quest": "&e%s&7 [%s]&r がクエストを完了しました: ",
+    "quests.player_completed_chapter": "&e%s&r がクエストチャプターを完了しました: ",
+    "quests.team_completed_chapter": "&e%s&7 [%s]&r がクエストチャプターを完了しました: "
 }

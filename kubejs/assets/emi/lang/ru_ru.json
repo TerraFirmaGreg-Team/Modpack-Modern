@@ -717,7 +717,7 @@
 	"tooltip.emi.bom.mode.view": "§6Просматриваете§r дерево рецептов",
 	"tooltip.emi.chance.consume": "Шанс потребления: %s%%",
 	"tooltip.emi.chance.produce": "Шанс производства: %s%%",
-	"tooltip.emi.clear_resolution": "Нажмите §6сюда§r, чтобы §cочистить§r выбор для этого рецепта",
+	"tooltip.emi.clear_resolution": "Нажми §6сюда§r, чтобы §cочистить§r выбор для этого рецепта",
 	"tooltip.emi.config": "Конфигурация %s",
 	"tooltip.emi.config.global": "Использовать глобальную настройку EMI между всеми копиями игры вместо собственной для каждой копии",
 	"tooltip.emi.current_defaults": "Сейчас является стандартным рецептом для:",

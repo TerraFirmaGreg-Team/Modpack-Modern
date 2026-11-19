@@ -85,7 +85,6 @@ function registerTFGFlagsMaterialModification(event) {
 	GTMaterials.Iron.addFlags(CAN_BE_UNMOLDED);
 	GTMaterials.Wax.addFlags(CAN_BE_UNMOLDED);
 	GTMaterials.Electrum.addFlags(CAN_BE_UNMOLDED, GENERATE_DOUBLE_INGOTS);
-	GTMaterials.BatteryAlloy.addFlags(CAN_BE_UNMOLDED, GENERATE_DOUBLE_INGOTS);
 	GTMaterials.Cupronickel.addFlags(CAN_BE_UNMOLDED, GENERATE_DOUBLE_INGOTS);
 
 	// TFC tool tiers

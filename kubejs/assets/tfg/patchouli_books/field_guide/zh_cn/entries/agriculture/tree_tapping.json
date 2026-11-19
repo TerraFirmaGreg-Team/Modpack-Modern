@@ -41,6 +41,12 @@
             "border": true
         },
         {
+            "type": "patchouli:text",
+            "title": "树汁采集提示",
+            "anchor": "tips",
+            "text": "$(li)气候不适合采集树汁？试试把你的树种到 $(l:agriculture/greenhouse)温室$()里！受控的内部环境能让树汁导管无论外面多冷都能产出树液。"
+        },
+        {
             "type": "patchouli:relations",
             "title": "延伸阅读",
             "anchor": "relations",

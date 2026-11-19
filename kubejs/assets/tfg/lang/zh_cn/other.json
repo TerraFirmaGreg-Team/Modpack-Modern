@@ -191,6 +191,8 @@
     "tfg.wireless_charger.mode.1": "§e模式：远程 §7(半径§f%s§7格，1A)",
     "tfg.field_guide.name": "野外指南",
     "tfg.field_guide.read_me": "§8§o读我! ☺️§r",
+    "death.attack.tfg.hypoxia": "%1$s因缺氧而死亡",
+    "death.attack.tfg.hypoxia.player": "%1$s在试图逃离%2$s时因缺氧而死亡",
     "tfg.display_source.thermometer": "温度计",
     "tfg.display_source.thermometer.display_mode": "温度计显示模式",
     "tfg.display_source.calendar_clock": "精密时钟",

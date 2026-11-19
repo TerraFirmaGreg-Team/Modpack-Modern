@@ -735,7 +735,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "createdeco:zinc_coinstack",
+					"name": "createdeco:copper_coinstack",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
