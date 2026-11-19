@@ -234,7 +234,7 @@ function registerTFGAlloyingRecipes(event) {
 
 	event.remove({ id: 'gtceu:mixer/red_alloy' })
 	// incorrect on purpose to prevent a greate duplicate recipe (the id becomes mixer/mixer/red_alloy)
-	event.recipes.gtceu.mixer('gtceu:red_alloy')
+	event.recipes.gtceu.mixer('gtceu:mixer/red_alloy')
 		.itemInputs('1x gtceu:copper_dust', '4x minecraft:redstone')
 		.itemOutputs('5x gtceu:red_alloy_dust')
 		.circuit(2)
