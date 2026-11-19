@@ -6,14 +6,14 @@ on:
       - dev
       - main
     paths:
-      - '.pakku/'
-      - 'config/'
-      - 'defaultconfigs/'
-      - 'kubejs/'
+      - '.pakku/**'
+      - 'config/**'
+      - 'defaultconfigs/**'
+      - 'kubejs/**'
       - 'CHANGELOG.md'
       - 'pakku-lock.json'
       - 'pakku.json'
-      - '.github/workflows/build.yml'
+      - '.github/workflows/**'
   workflow_dispatch:
     inputs:
       version:
@@ -237,7 +237,7 @@ jobs:
           pack: ${{ env.PREFIX }}
           repo: ${{ github.repository }}
           tag: ${{ needs.release.outputs.github-tag }}
-          app_id: ${{ secrets.APP_ID }}
+          app_id: ${{ vars.APP_ID }}
           app_private_key: ${{ secrets.APP_PRIVATE_KEY }}
 
 

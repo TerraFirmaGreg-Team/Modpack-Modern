@@ -82,7 +82,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/moon/maria.png"
 			],
-			"text": "$(thing)Morza księżycowe$() zawierają trochę $(item)martwego koralu$() i piasku. Nie mogą sąsiadować z biomami $(l:the_moon/moon_biomes#scrubland)rozbłyskowymi$()."
+			"text": "$(thing)Morza księżycowe$() zawierają trochę $(item)martwego koralu$() i piasku. Nie mogą sąsiadować z biomami $(l:the_moon/moon_biomes#lightbloom)rozbłyskowymi$()."
 		},
 		{
 			"type": "patchouli:image",

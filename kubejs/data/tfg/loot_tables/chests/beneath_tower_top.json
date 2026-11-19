@@ -784,22 +784,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "createdeco:zinc_coin",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 2,
-								"max": 8,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 50
-				},
-				{
-					"type": "minecraft:item",
-					"name": "createdeco:brass_coin",
+					"name": "createdeco:copper_coin",
 					"functions": [
 						{
 							"function": "minecraft:set_count",

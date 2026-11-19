@@ -1664,7 +1664,7 @@
 	"block.tfc.rock.raw.andesite_slab": "Surowa andezytowa płyta",
 	"block.tfc.rock.raw.andesite_stairs": "Surowe andezytowe schody",
 	"block.tfc.rock.raw.andesite_wall": "Surowy andezytowy murek",
-	"block.tfc.rock.raw.basalt": "Surowy basalt",
+	"block.tfc.rock.raw.basalt": "Surowy bazalt",
 	"block.tfc.rock.raw.basalt_slab": "Surowa bazaltowa płyta",
 	"block.tfc.rock.raw.basalt_stairs": "Surowe bazaltowe schody",
 	"block.tfc.rock.raw.basalt_wall": "Surowy bazaltowy murek",
@@ -1728,7 +1728,7 @@
 	"block.tfc.rock.raw.rhyolite_slab": "Surowa ryolitowa płyta",
 	"block.tfc.rock.raw.rhyolite_stairs": "Surowe ryolitowe schody",
 	"block.tfc.rock.raw.rhyolite_wall": "Surowy ryolitowy murek",
-	"block.tfc.rock.raw.schist": "Łupek metamorficzny",
+	"block.tfc.rock.raw.schist": "Surowy łupek metamorficzny",
 	"block.tfc.rock.raw.schist_slab": "Surowa metamorficzno-łupkowa płyta",
 	"block.tfc.rock.raw.schist_stairs": "Surowe metamorficzno-łupkowe schody",
 	"block.tfc.rock.raw.schist_wall": "Surowy metamorficzno-łupkowy murek",
@@ -5050,7 +5050,7 @@
 	"tfc.jei.transfer.error.pot_started": "Przepis jest już w trakcie realizacji",
 	"tfc.jei.transfer.error.pot_wrong_fluid": "Niewłaściwy płyn: %s",
 	"tfc.jei.welding": "Spawanie",
-	"tfc.key.cycle_chisel_mode": "Zmiana trybu rzeźbienia",
+	"tfc.key.cycle_chisel_mode": "Przełącz tryb rzeźbienia",
 	"tfc.key.place_block": "Połóż blok",
 	"tfc.key.stack_food": "Połącz żywność tego samego rodzaju",
 	"tfc.pet.not_owner": "To zwierzę nie rozpoznaje cię jako właściciela, nie wykona twoich rozkazów!",
@@ -5422,7 +5422,7 @@
 	"tfc.tooltip.farmland.just_right": " - §2odpowiednie§r",
 	"tfc.tooltip.farmland.mature": "§aDojrzałe",
 	"tfc.tooltip.farmland.nutrients": "§b(N) azot: §r%s%%, §6(P) fosfor: §r%s%%, §d(K) potas: §r%s%%",
-	"tfc.tooltip.farmland.temperature": " §4Temperatura: §r%s°C",
+	"tfc.tooltip.farmland.temperature": "§4Temperatura: §r%s°C",
 	"tfc.tooltip.farmland.temperature_too_high": " - §4za wysoka! §r(<%s°C)",
 	"tfc.tooltip.farmland.temperature_too_low": " - §4za niska! §r(>%s°C)",
 	"tfc.tooltip.fertilized": "§6Zapłodnione",
@@ -5595,5 +5595,5 @@
 	"trim_material.tfc.topaz_tfc": "Topaz",
 	"trim_material.tfc.uvarovite_tfc": "Uwarowit",
 	"trim_material.tfc.yellow_garnet_tfc": "Żółty granat",
-	"item.tfc.bucket.metal.pig_iron": "Wiadro roztopionej surówki stalowej"
+	"item.tfc.bucket.metal.pig_iron": "Wiadro roztopionej surówki hutniczej"
 }

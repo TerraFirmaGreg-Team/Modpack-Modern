@@ -10,7 +10,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:agriculture/jellies#produce)產物$()$(li)$(bold)$(l:agriculture/jellies#feeding)餵食$()$(li)$(bold)地球物種$()$(li2)$(l:agriculture/jellies#herbal)草本$()$(li2)$(l:agriculture/jellies#phosphorum)磷光$()$(li2)$(l:agriculture/jellies#rock)岩石$()$(li)$(bold)地底物種$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)冰$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)植物$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)發光莓$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)溫泉$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)熔岩$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)黑雲母$()$(li2)$(l:beneath/beneath_fauna#latex_jellie)乳膠$()$(br2)$(o)(下頁續……)$()"
+			"text": "$(li)$(bold)$(l:agriculture/jellies#produce)產物$()$(li)$(bold)$(l:agriculture/jellies#feeding)餵食$()$(li)$(bold)地球物種$()$(li2)$(l:agriculture/jellies#herbal)草本$()$(li2)$(l:agriculture/jellies#phosphorum)磷光$()$(li2)$(l:agriculture/jellies#rock)岩石$()$(li)$(bold)地底物種$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)冰$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)植物$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)發光莓$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)溫泉$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)熔岩$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)黑雲母$()$(li2)$(l:beneath/beneath_fauna#milk_jellie)牛奶$()$(br2)$(o)(下頁續……)$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -28,14 +28,14 @@
 			"type": "patchouli:text",
 			"title": "產物",
 			"anchor": "produce",
-			"text": "$(thing)果凍怪$()相當挑剔，離開自然棲息地就拒絕生產任何東西，但在任何環境都能正常繁殖。$(br2)牠們也不喜歡機器，只有在玩家親手餵食時才會給出產物。$(br2)$(#B0B0B0)$(o)也可能牠們只是想要被關注……"
+			"text": "$(thing)果凍怪$()相當挑剔，離開自然棲息地就拒絕生產任何東西，但在任何環境都能正常繁殖。$(br2)可以用$(l:agriculture/animal_husbandry#feeding_trough)飼料槽$()餵食和繁殖牠們，但要取得產物必須親手餵食(玩家或機械手皆可)。$(br2)$(#B0B0B0)$(o)也可能牠們只是想要被關注……"
 		},
 		{
 			"type": "patchouli:crafting",
 			"title": "餵食",
 			"recipe": "tfg:shaped/jellies_nutritional_mash",
 			"anchor": "feeding",
-			"text": "$(thing)營養糊$()是所有$(thing)果凍怪$()的主食，主要由穀物、水果和一些特定維度的材料製成。$(br2)遺憾的是，牠們相當挑剔，只能由$(thing)玩家$()親手餵食，無法使用$(l:agriculture/animal_husbandry#feeding_trough)飼料槽$()。$(br)$(#B0B0B0)$(o)它為什麼在動……"
+			"text": "$(thing)營養糊$()是所有$(thing)果凍怪$()的主食，主要由水果、蘑菇和一些特定維度的材料製成。"
 		},
 		{
 			"type": "patchouli:entity",
@@ -82,5 +82,8 @@
 		}
 	],
 	"read_by_default": true,
-	"sortnum": 7
+	"sortnum": 7,
+	"extra_recipe_mappings": {
+		"tag:jellies:slime_ball": 0
+	}
 }

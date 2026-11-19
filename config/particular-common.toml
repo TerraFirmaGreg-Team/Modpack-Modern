@@ -34,6 +34,28 @@
 		emissiveLavaDrips = true
 		#Enable lava splash particles when entities hit lava
 		lavaSplash = true
+		#Enable the translucent mist that drifts off cascades
+		cascadeMist = true
+		#Enable camera shake for loud nearby sounds such as explosions and Warden roars
+		screenShake = true
+		#Enable snow falling off leaves that have snow on top or while it is snowing
+		leafSnow = true
+		#Enable visible breath from players and mobs in cold places
+		coldBreath = false
+		#Enable dust kicked up when running or landing on loose ground such as sand, dirt, gravel and snow
+		footstepDust = true
+		#Enable pollen drifting off flowers during the day
+		pollen = true
+		#Enable spores drifting off moss and mushrooms
+		spores = false
+		#Enable glowing embers rising from campfires and spitting from lit furnaces
+		embers = true
+		#Enable bushes tumbling across dry sandy biomes
+		tumbleweeds = false
+		#Enable a rainbow in the sky after it stops raining during the day
+		rainbows = true
+		#Show a one-time chat message listing the effects added by an update when you open a world that existed before it
+		updateNotice = false
 
 	#Advanced Particle Settings
 	[general.advancedSettings]
@@ -144,3 +166,107 @@
 			#Flowing,source fluid pairs that produce cascade waterfalls. Example: "mymod:flowing_water,mymod:water". TFC fluids do not produce cascades because they have no flowing variant.
 			cascadeFluidPairs = ["minecraft:flowing_water,tfc:river_water", "tfc:flowing_salt_water,tfc:salt_water", "tfc:flowing_spring_water,tfc:spring_water", "tfg:flowing_muddy_water,tfg:muddy_water", "tfg:flowing_semiheavy_ammoniacal_water,tfg:semiheavy_ammoniacal_water", "tfg:flowing_geyser_slurry,tfg:geyser_slurry"]
 
+		[general.advancedSettings.cascadeSettings]
+			#Whether cascades get stronger the further the water falls
+			heightScaling = true
+			#Cascade intensity for a 1 block fall (1.0 = normal)
+			#Range: 0.0 ~ 5.0
+			minIntensity = 0.4
+			#Cascade intensity for a fall of maxFallHeight blocks or more (1.0 = normal)
+			#Range: 0.0 ~ 5.0
+			maxIntensity = 1.6
+			#Fall height (in blocks) at which a cascade reaches its maximum intensity
+			#Range: 1 ~ 64
+			maxFallHeight = 16
+			#Multiplier for the amount of cascade foam
+			#Range: 0.1 ~ 4.0
+			foamDensity = 1.0
+			#Multiplier for the size of cascade foam puffs
+			#Range: 0.25 ~ 4.0
+			puffSize = 1.0
+			#Multiplier for the amount of cascade mist
+			#Range: 0.0 ~ 2.0
+			mistDensity = 1.0
+
+		[general.advancedSettings.leafSnowSettings]
+			#Chance of snow falling off a leaf block (higher = less frequent). Twice as frequent while it is snowing
+			#Range: > 1
+			spawnChance = 30
+
+		[general.advancedSettings.coldBreathSettings]
+			#Whether you see your own breath in first person
+			firstPersonBreath = true
+			#Whether mobs breathe visibly as well as players
+			mobBreath = true
+
+		[general.advancedSettings.pollenAndSporeSettings]
+			#Chance for a flower to release pollen each time it is ticked (0 = never, 1 = always)
+			#Range: 0.0 ~ 1.0
+			pollenFrequency = 0.05
+			#Chance for a moss block to release a spore each time it is ticked (0 = never, 1 = always)
+			#Range: 0.0 ~ 1.0
+			sporeFrequency = 0.03
+			#Chance for a mushroom to release a spore each time it is ticked (0 = never, 1 = always)
+			#Range: 0.0 ~ 1.0
+			mushroomSporeFrequency = 0.2
+			#Chance of a spore appearing in open air in lush caves (higher = less frequent)
+			#Range: > 1
+			lushCaveSporeChance = 150
+
+		[general.advancedSettings.emberSettings]
+			#Whether lit campfires and soul campfires give off embers
+			campfireEmbers = true
+			#Whether lit furnaces, blast furnaces and smokers spit embers
+			furnaceEmbers = true
+			#Multiplier for the number of embers
+			#Range: 0.0 ~ 3.0
+			emberAmount = 1.0
+
+		[general.advancedSettings.rainbowSettings]
+			#How long a rainbow stays in the sky, in seconds
+			#Range: 10 ~ 3600
+			rainbowDuration = 240
+			#Chance for a rainbow to appear when rain stops (0 = never, 1 = always)
+			#Range: 0.0 ~ 1.0
+			rainbowChance = 1.0
+			#Opacity of the rainbow
+			#Range: 0.0 ~ 1.0
+			rainbowOpacity = 0.55
+
+		[general.advancedSettings.tumbleweedSettings]
+			#Chance per tick for a tumbling bush to appear near you in a dry sandy biome
+			#Range: 0.0 ~ 1.0
+			tumbleweedFrequency = 0.25
+			#Multiplier for the chance while the weather is stormy
+			#Range: 1.0 ~ 50.0
+			stormBoost = 4.0
+			#Whether tumbling bushes only appear while the weather is stormy
+			stormsOnly = false
+			#Block tag the ground must have for tumbling bushes to appear
+			groundTag = "minecraft:sand"
+			#Gravity of tumbling bushes
+			#Range: 0.0 ~ 10.0
+			tumbleweedGravity = 0.2
+			#How fast tumbling bushes roll
+			#Range: 0.0 ~ 10.0
+			rotationAmount = 0.2
+			#How high tumbling bushes bounce off the ground
+			#Range: 0.0 ~ 10.0
+			bounciness = 0.2
+
+		[general.advancedSettings.footstepDustSettings]
+			#Whether mobs kick up dust as well as players
+			mobDust = true
+			#Whether dust replaces the vanilla block chips thrown up when sprinting on dusty blocks
+			replaceSprintParticles = true
+			#Whether dust replaces the vanilla block chips thrown up when landing from a fall on dusty blocks
+			replaceLandingParticles = true
+			#Blocks that produce footstep dust. Use a block id or a #tag. Example: "minecraft:gravel", "#minecraft:sand"
+			dustBlocks = ["#minecraft:sand", "#minecraft:snow", "#minecraft:concrete_powder", "#tfc:rock/gravel", "#minecraft:dirt", "#tfc:farmland"]
+
+		[general.advancedSettings.screenShakeSettings]
+			#Multiplier for the strength of all camera shake
+			#Range: 0.0 ~ 3.0
+			shakeIntensity = 1.0
+			#Sounds that shake the camera. Format: "soundId|intensity|durationTicks|radius". Example: "minecraft:entity.generic.explode|0.8|12|16"
+			shakeSounds = ["minecraft:entity.warden.roar|0.6|70|24", "minecraft:entity.warden.sonic_boom|1.0|15|24", "minecraft:entity.ravager.roar|0.5|25|12", "minecraft:entity.ender_dragon.growl|0.4|40|48", "minecraft:entity.generic.explode|0.8|12|16", "minecraft:entity.dragon_fireball.explode|0.5|12|16"]

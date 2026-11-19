@@ -1,23 +1,23 @@
 {
-    "name": "Blast Furnace",
+    "name": "高炉",
     "category": "tfg:craftsmanship",
     "icon": "tfc:blast_furnace",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "A $(thing)Blast Furnace$() is an advanced device which is used in the creation of $(thing)Steel$(). By mixing $(l:craftsmanship/metallurgy)Iron Ores$(), $(l:craftsmanship/charcoal_pit#coke_oven)Coke$() or $(thing)Anthracite$(), and $(item)Flux$() in a controlled, hot environment, you can create a stronger metal than cast or wrought iron.$(br2)To obtain a blast furnace, you will first need a $(l:craftsmanship/crucible)Crucible$() and a lot of $(l:craftsmanship/bloomery)Wrought Iron Plates$()."
+            "text": "$(thing)高炉$()は、$(thing)鋼$()を生産するための高度な装置です。$(l:craftsmanship/metallurgy)鉄$()と$(item)融剤$()に加えて、$(l:craftsmanship/charcoal_pit#coke_oven)コークス$()または$(thing)無煙炭$()を投入することで、鋳鉄や錬鉄よりも強力な金属である$(thing)鋼$()を作り出すことができます。$(br2)高炉を建造するためには、まず$(l:craftsmanship/crucible)るつぼ$()と大量の$(l:craftsmanship/bloomery)錬鉄プレート$()が必要になります。"
         },
         {
             "type": "patchouli:text",
-            "text": "Crafting a blast furnace itself requires a $(thing)Crucible$(), along with some of the $(thing)Double Wrought Iron Plates$() you will need.$(br)You will then need to construct the blast furnace, along with its $(thing)Chimney$(). The chimney must be composed out of $(l:craftsmanship/pottery#fire_clay)Fire Bricks$(), as they are strong enough to withstand the intense heat."
+            "text": "高炉本体を製作するには、$(thing)るつぼ$()に加え、必要となる$(thing)二重錬鉄プレート$()もいくつか必要になります。$(br)次に、高炉とその $(thing)煙突$() を組み立てる必要があります。煙突は、激しい熱に耐えられる十分な強度を持つ $(l:craftsmanship/pottery#fire_clay)耐火レンガ$() で構成されている必要があります。"
         },
         {
             "type": "patchouli:text",
-            "text": "The fire brick blocks, must be surrounded by either $(item)$(italic)cast iron or wrought iron plates$(). The plates can be applied to each exposed face of the bricks by $(item)$(k:key.sneak)-$(k:key.use)$() with the plate in hand$(br2)$(item)Blast Furnace Insulation$() may be applied instead of physical plates for a more compact structure."
+            "text": "耐火レンガのブロックは、$(item)$(italic)鋳鉄または錬鉄のプレート$()のいずれかで囲まれている必要があります。プレートは、$(item)$(k:key.sneak)-$(k:key.use)$() を使用して、手に持ったプレートをレンガの露出している各面に貼り付けることができます。$(br2)プレートを物理的に貼り付ける代わりに、$(item)高炉用断熱材$() を使用すれば、よりコンパクトな構造を実現できます。"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Blast furnace structure from sizes 1-5 using $(item)Insulated Fire Bricks$()",
+            "text": "$(item)断熱耐火レンガ$()を使用した、サイズ1-5の高炉構造",
             "multiblocks": [
                 {
                     "pattern": [
@@ -213,15 +213,15 @@
         },
         {
             "type": "patchouli:text",
-            "text": "The blast furnace's chimney can be up to $(italic)five layers$(). Each layer requiring $(thing)4 $(item)Fire Bricks and $(thing)12 $(item)Wrought/Cast Iron Plates$() to complete. Having more layers increases the total capacity of the blast furnace by 4 steel per-layer.$(br)In order to use the blast furnace, you must drop items in the top of the chimney. For steel production, you must add an equal number of items of $(l:craftsmanship/metallurgy)Iron Ores$() and $(item)Flux$()."
+            "text": "高炉の煙突は、最大で $(italic)5層$() まで積み上げることができます。各層を完成させるには、$(thing)4つ$(item)の耐火レンガと $(thing)12枚$(item)の錬鉄／鋳鉄プレート$() が必要です。層数を増やすと、高炉の総容量は1層につき鋼4増加します。$(br)高炉を使用するには、煙突の上部にアイテムをドロップする必要があります。鋼を生産するには、$(l:craftsmanship/metallurgy)鉄鉱石$()と$(item)融剤$()を同数ずつ投入する必要があります。"
         },
         {
             "type": "patchouli:text",
-            "text": "For every 144mB of iron added, 1 flux must pair with it. Any iron ores or items that are able to melt into $(thing)Cast Iron$() will do. You will also need to add $(l:craftsmanship/charcoal_pit#coke_oven)Coke$() or $(thing)Anthracite$(), which will be consumed as the blast furnace works.$(br2)As a basic guide, you will need $(t:144 x 4)$(6)576mB$() of iron and 4 flux per layer, and about 4-8 coke. Fuel usage does not increase with layers."
+            "text": "鉄を144mB追加するごとに、1つの融剤を組み合わせる必要があります。$(thing)鋳鉄$()として溶ける鉄鉱石やアイテムであれば何でも構いません。また、$(l:craftsmanship/charcoal_pit#coke_oven)コークス$()または$(thing)無煙炭$()を追加する必要があり、これらは高炉の稼働中に消費されます。$(br2)大まかな目安として、1層あたり$(t:144 x 4)$(6)576mB$()の鉄と4つの融剤、および約4～8個のコークスが必要です。燃料の消費量は層数が増えても増加しません。"
         },
         {
             "type": "patchouli:text",
-            "text": "$(item)$(k:key.use)$() the blast furnace to open the blast furnace interface, seen in the next image. In this interface, you will see meters for both ore and fuel contents of the blast furnace. The top right slot must have a $(thing)Tuyere$(), which is a metal pipe used to funnel air into the blast furnace, required to reach the hottest temperatures to smelt steel. A tuyere can be smithed on an $(l:craftsmanship/anvils)Anvil$()."
+            "text": "高炉を$(item)$(k:key.use)$()すると、高炉GUIが開きます。この画面では、左から高炉内の温度、投入された鉄の量、燃料の量がそれぞれメーターで確認できます。右上のスロットには$(thing)羽口$()を設置する必要があります。これが無いとふいごを吹かしても高炉内に空気が入らず、高炉の温度を上げることができません。羽口は$(l:craftsmanship/anvils)金床$()で鍛造できます。"
         },
         {
             "type": "patchouli:image",
@@ -233,12 +233,12 @@
         },
         {
             "type": "patchouli:text",
-            "text": "You will also need a $(l:craftsmanship/charcoal_forge#bellows)Bellows$() in order for the Blast Furnace to reach a temperature which will melt iron (unless using anthracite as fuel). This can be placed on any of the four sides of the blast furnace.$(br)Using the bellows will degrade the durability of your Tuyere, so it is recommended to only activate it every minute or so."
+            "text": "また、高炉が鉄を溶かすのに十分な温度に達するためには、$(l:craftsmanship/charcoal_forge#bellows)ふいご$()が必要となります（燃料として無煙炭を使用する場合を除く）。これは高炉の4つの側面いずれかに設置できます。$(br)ふいごを使用すると、羽口の耐久度が低下するため、1分おき程度に作動させることをお勧めします。"
         },
         {
             "type": "patchouli:multiblock",
             "enable_visualize": true,
-            "text": "A full size blast furnace with bellows and a mold table.",
+            "text": "ふいごとるつぼを取り付けた最大サイズの高炉。",
             "multiblock": {
                 "pattern": [
                     [
@@ -287,43 +287,43 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Finally, to get started, light the blast furnace with a $(l:craftsmanship/firepit#firestarter)Fire Starter$() or a $(item)Flint and Steel$(). It will begin to heat the ores inside. Make sure that the blast furnace continues to have fuel, and use the bellows to add air to the blast furnace until its internal temperature has reached the melting point for steel. After the ores inside heat up, they will melt and convert into liquid $(item)Pig Iron$()."
+            "text": "製錬を開始するには燃料が入っている状態で$(l:craftsmanship/firepit#firestarter)火起こし器$()または$(item)火打石と打ち金$()を高炉に使用して点火します。すると高炉が稼働し内部の鉱石が加熱され始めます。燃料が切れないよう注意しつつ、温度が高まってきたら、ふいごで空気を送り込んでさらに温度を上げます。投入した鉄が十分に加熱されると溶解し、溶融$(item)銑鉄$()へと変化します。"
         },
         {
             "type": "patchouli:text",
-            "text": "This liquid metal will drip into any metal fluid container placed immediately below the blast furnace, such as a $(item)Drum$(), $(l:craftsmanship/crucible)Crucible$() or $(l:craftsmanship/crucible#channel_casting)Mold Table$(). Once cooled, the pig iron ingots must be worked on an anvil or $(l:craftsmanship/anvils#helve_hammer)Helve Hammer$() into $(item)High Carbon Steel$() and then again into $(item)Steel$()."
+            "text": "この溶融金属は、高炉の真下に置かれた金属用容器（$(item)ドラム$()、$(l:craftsmanship/crucible)るつぼ$()、$(l:craftsmanship/crucible#channel_casting)鋳型台$()など）に滴り落ちます。冷却された銑鉄のインゴットは、金床または$(l:craftsmanship/anvils#helve_hammer) 動力鍛造ハンマー$() を使って $(item)高炭素鋼$() に鍛造し、さらに $(item)鋼$()へと鍛造する必要があります。"
         },
         {
             "type": "patchouli:text",
             "anchor": "tips",
             "title": "高炉について",
-            "text": "Before you use all your fire clay on 20 fire bricks, note that once you get into the steam age, you can craft it for significantly cheaper. A full-size blast furnace is not required to get started. In fact, a 4-layer tall blast furnace uses better ratios of materials, as it uses 16 flux and 16 iron per run."
+            "text": "耐火粘土をすべて20個の耐火レンガの製作に使い切るのは待ってください。蒸気時代になれば、はるかに安く耐火レンガをクラフトできるようになることを考慮しましょう。最初の時点ではフルサイズの高炉は必要ありません。実際、高さ4層の高炉の方が材料の比率に優れており、1回の稼働につき融剤16個と鉄16個を使用します。"
         },
         {
             "type": "patchouli:spotlight",
             "title": "鉄の予熱",
             "anchor": "preheating",
             "item": "tfc:firepit",
-            "text": "To convert the iron to steel, the blast furnace must heat the iron inside to $(d)$(bold)Brilliant White$(). On the first operation, the metal warms up along with the blast furnace. However, subsequent operations will take a similar amount of time despite the furnace being at temp already, as it needs to heat the metal from cold."
+            "text": "鉄を鋼鉄にするには、高炉の中で鉄を$(d)$(bold)眩しい白色$()の温度まで加熱する必要があります。高炉を点火してからしばらくは、高炉自体が温まるために時間がかかります。しかしその後は、燃料が供給されていれば、高炉は高温が維持されるため、冷えた鉄を投入してしまうと、高炉内で鉄が温まるまでの時間が無駄になってしまいます。"
         },
         {
             "type": "patchouli:text",
-            "text": "If the metal is hot when added into the blast furnace, it will take less time to reach brilliant white. Consider heating your metal in a $(l:craftsmanship/charcoal_forge)Charcoal Forge$() before putting it into an already-hot furnace to save time, especially with smaller blast furnaces that process less at a time."
+            "text": "鉄を$(l:craftsmanship/charcoal_forge)炉$()やるつぼで余熱し、熱い状態で高炉に投入すれば、鉄が$(d)$(bold)眩しい白色$()の温度に到達するまでの時間を短縮できます。特に小規模な高炉だと、一度に高炉内で加熱できる鉄の量が少ないため、鉄を余熱しておくことの恩恵が大きいです。"
         },
         {
             "type": "patchouli:spotlight",
             "title": "高炉の自動化",
             "item": "greate:steel_mechanical_pump",
-            "text": "You'll need lots of $(item)Steel$() for the $(thing)Steam$() and $(thing)LV$() ages. Lots of steel. The $(thing)Electric Blast Furnace$() is far off, so maybe think about optimizing your steel production.$(br2)You can automate the $(l:craftsmanship/charcoal_forge#bellows)Bellows$() by supplying mechanical power to their back. Just be careful, as using the bellows consumes more fuel and breaks your $(thing)tuyere$() faster."
+            "text": "$(thing)蒸気$()時代や$(thing)LV$()時代には、大量の$(item)鋼$()が必要になります。大量の鋼です。$(thing)工業用電気炉$()はまだ先の話なので、鋼の生産を最適化することを検討してみてください。$(br2)$(l:craftsmanship/charcoal_forge#bellows)ふいご$()は、背面に回転動力を供給することで自動化できます。ただし、ふいごを使用すると燃料の消費量が増え、$(thing)羽口$()の損耗が早くなるため、注意が必要です。"
         },
         {
             "type": "patchouli:text",
-            "text": "You can automatically replace broken tuyeres with a hopper or item pipe facing into the blast furnace.$(br2)You can pump liquid incredibly quickly out of the blast furnace using a Create $(item)Mechanical Pump$(). Pump into a $(l:craftsmanship/crucible#channel_casting)Mold Table$() and extract the ingots with a hopper or chute: Easy automation!$(br2)You can process the resulting $(item)Pig Iron$() and $(item)High Carbon Steel$() in a $(thing)Forge Hammer$() or $(l:craftsmanship/anvils#helve_hammer)Helve Hammer$()."
+            "text": "破損した羽口は、高炉に向いたホッパーやアイテムパイプで自動的に置き換えることができます。$(br2)$(item)メカニカルポンプ$() を使用すると、高炉から液体を驚くほど素早く汲み出すことができます。$(l:craftsmanship/crucible#channel_casting)鋳型台$() に流し込み、ホッパーやシュートを使ってインゴットを取り出しましょう。簡単な自動化です！$(br2)得られた $(item)銑鉄$() や $(item)高炭素鋼$() は、$(thing)鍛造機$() や $(l:craftsmanship/anvils#helve_hammer)動力鍛造ハンマー$() で加工できます。"
         },
         {
             "type": "patchouli:multiblock",
             "enable_visualize": true,
-            "text": "For a very cheap and fast setup; place a drum below the blast furnace with it auto-outputting into a mold table below it.",
+            "text": "非常に安価かつ迅速なセットアップとして、高炉の下にドラムを配置し、そこから下の鋳型台へ自動的に排出されるように設定するといいでしょう。",
             "multiblock": {
                 "pattern": [
                     [
@@ -373,7 +373,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "関連項目",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pottery",

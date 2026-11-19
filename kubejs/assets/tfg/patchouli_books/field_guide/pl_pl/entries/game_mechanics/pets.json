@@ -176,7 +176,7 @@
             "anchor": "treat",
             "title": "Smaczek",
             "item": "species:wicked_treat",
-            "text": "$(thing)Smaczki$() są wytwarzane mieszając leki z mączką kostną.$(br)Smaczki na chwilę dają twoim zwierzętom $(bold)ogromne$() bonusy do statystyk.\n"
+            "text": "$(thing)Smaczki$() są wytwarzane mieszając leki z mączką kostną.$(br)Smaczki na chwilę dają twoim zwierzętom $(bold)ogromne$() bonusy do statystyk."
         },
         {
             "type": "patchouli:spotlight",

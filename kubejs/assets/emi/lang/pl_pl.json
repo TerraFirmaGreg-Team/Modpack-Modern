@@ -142,7 +142,7 @@
 	"emi.delete_stack": "§cUsuń trzymany stos",
 	"emi.dev.duplicate_recipe_id": "Ten identyfikator przepisu jest już używany przez inny przepis\n§7%s§r\nPrzepisy muszą mieć unikalne ID, aby można było je serializować\nSpowoduje to błędne działanie innych przepisów o tym samym ID",
 	"emi.dev.duplicate_vanilla_recipe_id": "Ten identyfikator przepisu jest już używany przez przepis vanilla\n§7%s§r\nPrzepisy muszą mieć unikalne ID, aby można było je serializować\nSpowoduje to błędne działanie przepisu vanilla o tym samym ID",
-	"emi.dev.no_output_slots": "Sloty przepisu nie zawierają żadnych wyjść\\nWywołaj §7SlotWidget.recipeContext(this)§r dla slotów wyjściowych§r",
+	"emi.dev.no_output_slots": "Sloty przepisu nie zawierają żadnych wyjść\nWywołaj §7SlotWidget.recipeContext(this)§r dla slotów wyjściowych§r",
 	"emi.dev.null_input_or_output": "Wejścia lub wyjścia przepisu mają wartość §7null§r\nUżyj pustej listy, jeśli przepis nie ma wejść ani wyjść\nUżyj §7EmiStack.EMPTY§r, aby reprezentować pusty stos",
 	"emi.dev.null_recipe_id": "ID przepisu to §7null§r\nPrzepisy muszą mieć unikalne identyfikatory, aby można było je serializować\nWpłynie to tylko na ten przepis",
 	"emi.dev.severity.error": "Błąd",

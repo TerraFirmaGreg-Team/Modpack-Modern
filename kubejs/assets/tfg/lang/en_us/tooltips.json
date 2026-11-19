@@ -1,6 +1,7 @@
 {
     "tfg.tooltip.food_trait.refrigerating": "§bRefrigerating",
-    "tfg.tooltip.foodtrait.freeze_dried": "Cryodesiccated",
+    "tfg.tooltip.food_trait.freeze_dried": "Cryodesiccated",
+    "tfg.tooltip.food_trait.cellared": "Cellared",
     "tfg.tooltip.extraterrestrial_farming": "§4Temperature:§r An oxygenated environment provides 15°C",
 
     "tfg.tooltip.moon_rabbit_variant.pink": "Pink Fur",
@@ -78,6 +79,7 @@
 
     "tfg.tooltip.machine.one_energy_hatch": "Accepts exactly §6One§r Energy Hatch.",
     "tfg.tooltip.machine.two_energy_hatches": "Accepts up to §6Two§r Energy Hatches.",
+    "tfg.tooltip.machine.no_oc": "This machine §6does not Overclock§r. Higher tier Energy Hatches only allows it to run higher tier recipes.",
     "tfg.tooltip.machine.subtick": "This machine supports §2Subticking§r!",
     "tfg.tooltip.machine.coil_energy_discount": "Every coil after §6Cupronickel§r reduces energy usage by 10%.",
     "tfg.tooltip.machine.coil_speed_discount": "§6Cupronickel§r coils process 25% slower. Every coil after §3Kanthal§r increases processing speed by 50%.",
@@ -231,7 +233,6 @@
 
     "tfg.tooltip.firmalife_greenhouse.oxygen_required": "§cAn oxygenated environment is required!",
     "tfg.tooltip.firmalife_greenhouse.oxygen_required.block": "§7An oxygenated environment is required to function as a greenhouse in space.",
-    "tfg.tooltip.firmalife_inside_valid_greenhouse": "Inside a valid greenhouse",
 
     "tfg.tooltip.grow_light_disapointment": "§7No. This will not increase your crop growth speed...",
     "tfg.tooltip.rotten_voiding_cover": "§7The Rotten Voiding Cover works just like an Item Voiding Cover but only targets and destroys §cRotten Items.",

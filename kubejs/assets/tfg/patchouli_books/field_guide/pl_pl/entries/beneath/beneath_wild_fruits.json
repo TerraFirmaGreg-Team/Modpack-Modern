@@ -13,7 +13,7 @@
             "title": "Wprowadzenie",
             "anchor": "into",
             "type": "patchouli:text",
-            "text": "W $(l:beneath/beneath)Głębinach$() występuje wyjątkowy zestaw dzikich owoców, przystosowanych do skrajnych warunków panujących pod ziemią. Można je uprawiać tak samo jak zwykłe $(l:the_world/wild_fruits)dzikie owoce$()."
+            "text": "W $(l:beneath)Głębinach$() występuje wyjątkowy zestaw dzikich owoców, przystosowanych do skrajnych warunków panujących pod ziemią. Można je uprawiać tak samo jak zwykłe $(l:the_world/wild_fruits)dzikie owoce$()."
         },
         {
             "type": "tfg:table",
