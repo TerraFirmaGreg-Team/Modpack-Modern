@@ -13,6 +13,7 @@
 - Removed battery alloy from TFC heating (#5334) @Pyritie
 - Added some proper trades for the wandering trader if you turn him on via `/gamerule doTraderSpawning`. He is still off by default. @Pyritie
 - Spring water no longer heals on Hard difficulty @Pyritie
+- Added some more plants to the medicine tags @Pyritie
 ### Bug fixes
 - Fixed Create Deco's shipping containers voiding/duping items @Pyritie
 - Fixed firmalife bees never getting diseases @Zippity
