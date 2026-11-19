@@ -268,15 +268,15 @@
         },
         {
             "type": "patchouli:text",
-            "text": "地窖用於保存食物和$(l:cooking/cheese#cheese_wheel)熟成起司$()：用$(l:cooking/decay#shelf)食物架$()和$(l:cooking/decay#shelf)吊架$()放置食物，或將起司放在地上或$(thing)桶架$()上。$(br2)地窖在$(l:the_world/climate#temperature)較寒冷的環境$()中效果更好。$(li)$(2)溫度 >= 0°C：$()食物架 0.4，吊架 0.35$(li)$(2)溫度 < 0°C：$()食物架 0.35，吊架 0.3$(li)$(2)溫度 < -12°C：$()食物架 0.25，吊架 0.25"
+            "text": "地窖被用於保存食物與$(l:cooking/cheese#cheese_wheel)熟成起司$()、用$(l:cooking/decay#shelf)食物架$()與$(l:cooking/decay#shelf)吊繩$()來保存食物，也能將起司放在地上或$(thing)桶架$()。用於醋漬保存的$(l:craftsmanship/barrels)大桶$()放在地窖內也能獲得好處。"
         },
         {
             "type": "patchouli:text",
-            "text": "地窖結構範例。"
+            "text": "$(br2)地窖在$(l:the_world/climate#temperature)低溫環境$()的表現更好。\n$(li)$(2)溫度 >= 0°C$()修正值：食物架 0.4、吊架 0.35\n$(li)$(2)溫度 < 0°C$()修正值：食物架 0.35、吊架 0.3\n$(li)$(2)溫度 < 12°C$()修正值：食物架 0.25、吊架 0.25$(br2)\n醋桶配方固定 0.35 不受溫度影響。\n"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "$(item)食物架$()和$(item)吊架$()可以放一整組同一種食物。按 $(item)$(k:key.use)$() 可放入或取出物品，按 $(item)$(k:key.sneak) + $(k:key.use)$() 則一次放入或取出一整組。放在有效食物架和吊架上的物品，腐壞修正值比缸更好，且$(thing)平均溫度$()越低效果越好。",
+            "text": "地窖結構範例",
             "multiblocks": [
                 {
                     "pattern": [
@@ -450,39 +450,39 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "lunch_box",
-            "title": "冰箱",
+            "title": "午餐盒",
             "item": "tfclunchbox:lunchbox,tfclunchbox:cooling_lunchbox,tfclunchbox:electric_lunchbox",
-            "text": "冰箱由$(tfg_short)新增，消耗$(2)EU$()提供修正值 0.125 的$(3)$(bold)冷藏中$()特性。$(br)更高等級的冰箱不影響保存效果，只會增加儲存空間。冰箱也能合併過期日期，把食物堆疊在一起。"
+            "text": "午餐盒讓攜帶與食用食物更加便利。基礎午餐盒給予$(5)$(bold)妥善保存$()特性，而$(item)冷藏午餐盒$()與$(item)電子午餐盒$()給予修正值 0.3 的$(9)$(bold)冷藏$()特性。$(br2)冷藏午餐盒消耗$(item)冰$()來保存食物，而電子午餐盒則是消耗 $(2) EU $()。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "refrigerator",
-            "title": "冷凍乾燥",
+            "title": "冰箱",
             "item": "tfg:mv_food_refrigerator,tfg:hv_food_refrigerator,tfg:ev_food_refrigerator,tfg:iv_food_refrigerator",
-            "text": "$(tfg_short)新增了冷凍乾燥功能，可在$(item)食物調理機$()中冷凍乾燥特定食物，大幅延長保存期限，並給予修正值 0.02 的$(7)$(bold)冷凍乾燥$()特性。"
+            "text": "$(tfg_short)新增了消耗 $(2)EU$() 的冰箱，冰箱提供修正值 0.125 的$(3)$(bold)保鮮$()特性。$(br)高階冰箱不會為特性加強增益―只增加可保存的空間。冰箱也能經由合併保存期限將食物堆疊。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "freeze_dry",
-            "title": "害蟲",
+            "title": "冷凍乾燥",
             "item": "tfg:food/meal_bag,tfg:food/freeze_dried_fruit,tfg:food/calorie_paste",
-            "text": "放在箱子裡的食物會引來$(thing)老鼠$()，記得把食物妥善存放在缸、地窖或冰箱中。老鼠會打開容器吃掉裡面的食物。出現$(thing)「這個容器散發出難聞的氣味」$()訊息時，就表示有老鼠出沒。注意，離開介面前先解封再重新密封大缸，就絕不會引來害蟲。"
+            "text": "$(tfg_short)$(item)食物調理機$()新增了冷凍乾燥功能，讓特定食物大幅延長保存期限，並給予修正值 0.02 的$(7)$(bold)冷凍乾燥$()特性。"
         },
         {
             "type": "patchouli:text",
             "anchor": "pest",
-            "title": "切除",
-            "text": "最後，用游標拿起$(item)刀$()，對物品欄中部分腐壞的食物堆疊按$(item)右鍵$()，即可切除腐壞的部分。$(br2)這會重置腐壞進度，但會依腐壞程度按比例損失部分物品。"
+            "title": "害蟲",
+            "text": "儲物箱內的食物會引來$(thing)老鼠$()，記得將食物妥善保存到大缸、地窖或者視冰箱。老鼠能夠打開容器拿走並吃掉食物。附近有老鼠時會收到警告訊息$(thing)「容器散發出一股惡臭」$()。這是個重要提醒，關閉介面前開啟並重新密封大缸就不會引來害蟲。"
         },
         {
             "type": "patchouli:text",
             "anchor": "cutting",
-            "title": "延伸閱讀",
-            "text": "Lastly, you can cut off the decayed part of food by picking up a $(item)knife$() with your cursor and $(item)right-clicking$() a partially decayed food item stack in your inventory.$(br2)This will reset the decay while losing some of the item stack, proportional to how decayed it was."
+            "title": "切除",
+            "text": "最後，可以用$(item)小刀$()滑鼠$(item)右鍵$()切除食物腐爛的部分，切除的部分會堆疊到物品欄。$(br2)切除會重置保存期限，並損失一些食物。損失量與腐爛度成正比。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸閱讀",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/food_and_water",
