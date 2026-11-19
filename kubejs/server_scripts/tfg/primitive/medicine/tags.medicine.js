@@ -159,7 +159,7 @@ function registerTFGMedicineItemTags(event) {
 		'tfc:plant/snapdragon_red',
 		'tfc:plant/snapdragon_white',
 		'tfc:plant/snapdragon_yellow',
-		'tfg:plant/needlegrass',
+		'betterend:needlegrass',
 		'tfg:plant/blackthorn'
 	];
 	slowness_ingredients.forEach(items => { event.add('tfg:slowness_ingredients', items) });
@@ -177,7 +177,7 @@ function registerTFGMedicineItemTags(event) {
 		'tfc:plant/sea_lavender',
 		'tfc:plant/canna',
 		'tfc:plant/water_canna',
-		'tfg:plant/murkweed'
+		'betterend:murkweed'
 	];
 	weakness_ingredients.forEach(items => { event.add('tfg:weakness_ingredients', items) });
 
@@ -292,7 +292,7 @@ function registerTFGMedicineItemTags(event) {
 	const instant_health_ingredients = [
 		'tfc:plant/foxglove',
 		'tfc:plant/artists_conk',
-		'beneath:food/shiitake',
+		'beneath:food/shittake',
 		'wan_ancient_beasts:bellflower'
 	];
 	instant_health_ingredients.forEach(items => { event.add('tfg:instant_health_ingredients', items) });
