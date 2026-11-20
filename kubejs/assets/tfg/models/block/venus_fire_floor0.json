@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_fire_floor",
+  "textures": {
+    "fire": "tfg:block/planets/venus/venus_fire_0"
+  }
+}

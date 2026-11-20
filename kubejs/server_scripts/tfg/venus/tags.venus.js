@@ -143,6 +143,28 @@ function registerTFGVenusBlockTags(event) {
 	event.add('tfg:geyserite_geode_cannot_replace', 'betterend:sulphuric_rock')
 	event.add('tfg:geyserite_geode_cannot_replace', 'betterend:hydrothermal_vent')
 	event.add('tfg:geyserite_geode_cannot_replace', '#tfc:loose_rocks')
+
+	// Blocks that won't burn due to Venus Fire
+	event.add('tfg:venus_fire_immune', '#ad_astra:venus_stone_replaceables')
+	event.add('tfg:venus_fire_immune', '#tfc:loose_rocks')
+	event.add('tfg:venus_fire_immune', '#forge:ores')
+	event.add('tfg:venus_fire_immune', '#ad_astra:venus_carver_replaceables')
+	event.add('tfg:venus_fire_immune', 'tfg:venus_hornfels')
+	event.add('tfg:venus_fire_immune', 'ad_astra:venus_sand')
+	event.add('tfg:venus_fire_immune', 'ad_astra:venus_sandstone')
+	event.add('tfg:venus_fire_immune', 'ad_astra:venus_cobblestone')
+	event.add('tfg:venus_fire_immune', 'tfg:halite')
+	event.add('tfg:venus_fire_immune', 'betterend:hydrothermal_vent')
+	event.add('tfg:venus_fire_immune', 'tfc:groundcover/salt_lick')
+	event.add('tfg:venus_fire_immune', 'beneath:sulfur')
+	event.add('tfg:venus_fire_immune', '#tfg:do_not_destroy_in_space')
+	event.add('tfg:venus_fire_immune', '#forge:surface_rocks')
+	event.add('tfg:venus_fire_immune', 'tfg:huge_salt')
+	event.add('tfg:venus_fire_immune', 'tfg:tall_fused_pillar')
+	event.add('tfg:venus_fire_immune', 'tfg:rock/raw/stromatolite')
+	event.add('tfg:venus_fire_immune', 'tfg:rock/spike/stromatolite')
+	event.add('tfg:venus_fire_immune', '#forge:bud_indicators')
+	//event.add('tfg:venus_fire_immune', '')
 }
 
 function registerTFGVenusBiomeTags(event) {
