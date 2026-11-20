@@ -272,6 +272,11 @@ const registerTFGItemTags = (event) => {
 	event.add('tfc:usable_on_tool_rack', '#tfg:asphalt_road_stencils')
 	event.add('tfg:cloth_blocks', 'minecraft:white_wool')
 	event.add('minecraft:brick', 'tfg:stone_brick')
+
+	// Wireless Charger Booster
+
+	event.add('tfg:wireless_charger/boosted', 'gtceu:nano_fiber_chestplate')
+
 }
 
 //#region Blocks

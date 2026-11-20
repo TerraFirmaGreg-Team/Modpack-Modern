@@ -7,8 +7,7 @@
 	"tfg.gui.menu.ram_usage": "RAM:",
 	"tfg.gui.menu.official_server": "Official Server",
 	"tfg.gui.per_cycle": "per cycle",
-	"tfg.gui.refrigerator.unify_dates.disabled": "Expiration Date Unification is: §cOff",
-	"tfg.gui.refrigerator.unify_dates.enabled": "Expiration Date Unification is: §aOn",
+	"tfg.gui.refrigerator.unify_dates": "Expiration Date Unification: §aOn§r/§cOff§r",
 	"tfg.gui.rnr_plow.empty_crushed_base_course": "§cMissing Crushed Base Course!!",
 	"tfg.gui.rnr_plow.random_mode": "Randomize Materials",
 	"tfg.gui.rnr_plow.width": "Path Width: %d Blocks",
@@ -21,6 +20,14 @@
 	"tfg.emi.large_boiler_booster.min_boiler": "Requires: %s boiler",
 	"emi.category.tfg.block_interaction": "Block Modifications",
 	"emi.category.tfg.large_boiler_booster": "Large Boiler Booster",
+
+	"emi.category.tfg.smr_additives": "SMR Lubricants & Boosters",
+	"tfg.emi.smr.lubricant": "Lubricant",
+	"tfg.emi.smr.booster": "Booster",
+	"tfg.emi.smr.lubricant_effect": "Cycle duration: x%s",
+	"tfg.emi.smr.booster_effect": "Energy output: x%s",
+	"tfg.emi.smr.consumption": "1 mB every %s s (%s mB/h)",
+	"tfg.emi.smr.lubricant_required": "Required to run",
 
 	"emi.category.deafission.fission_reactor_coolant": "Fission Reactor Cooling",
 	"emi.category.deafission.fission_reactor_processing": "Fission Reactor Material Holder",
@@ -82,5 +89,22 @@
 	"gui.tfg.color_select.chromatic_btn": "§bChromatic Effects",
 
 	"tfg.gui.ore_processing_gas.optimal_ratio.1": "Best yield when fluid hatch",
-	"tfg.gui.ore_processing_gas.optimal_ratio.2": "filled to half capacity with gas"
+	"tfg.gui.ore_processing_gas.optimal_ratio.2": "filled to half capacity with gas",
+
+	"tfg.gui.wireless_charger.mode": "Mode: %s",
+	"tfg.gui.wireless_charger.mode.super_charged": "Super Charged",
+	"tfg.gui.wireless_charger.mode.super_charged.desc": "Short range, high power. Boosted items can charge up to 8A.",
+	"tfg.gui.wireless_charger.mode.mixed": "Long Range",
+	"tfg.gui.wireless_charger.mode.mixed.desc": "Long range, 1A shared between every item in range, boosted items first.",
+	"tfg.gui.wireless_charger.mode.switch": "Click to switch mode",
+	"tfg.gui.wireless_charger.messages.shown": "Range messages: shown",
+	"tfg.gui.wireless_charger.messages.muted": "Range messages: muted",
+	"tfg.gui.wireless_charger.range": "Range: %s blocks",
+	"tfg.gui.wireless_charger.input": "Input: %sA (%s EU/t)",
+	"tfg.gui.wireless_charger.per_item": "Per item: up to %s EU/t",
+	"tfg.gui.wireless_charger.boosted": "Boosted items: up to %s EU/t",
+	"tfg.gui.wireless_charger.stored": "Energy: %s / %s EU",
+	"tfg.gui.wireless_charger.players": "Players in range: %s",
+	"tfg.gui.wireless_charger.status.charging": "Charging",
+	"tfg.gui.wireless_charger.status.idle": "Idle"
 }

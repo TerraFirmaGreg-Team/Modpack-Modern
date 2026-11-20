@@ -181,8 +181,8 @@
 
     "tfg.machine.ore_processing_beneath.no_gas": "No Natural Gas detected",
     "tfg.machine.ore_processing_beneath.gas_critical": "Natural Gas level critical: %s%%",
-    "tfg.machine.ore_processing_beneath.gas_level": "Natural Gas level: %s",
-    "tfg.machine.ore_processing_beneath.output_modifier": "Output efficiency: %s",
+    "tfg.machine.ore_processing_beneath.gas_level": "Natural Gas level: %s%%",
+    "tfg.machine.ore_processing_beneath.output_modifier": "Output efficiency: %s%%",
     "tfg.machine.ore_processing_beneath.output_modifier.tooltip": "Byproduct chances scale with the gas level in the hatch, optimal at half capacity",
     "tfg.machine.ore_processing_beneath.parallel_info": "Running Parallels: %s",
     "tfg.machine.ore_processing_beneath.parallel_info.tooltip": "This machine can run up to %d recipes in parallel",
