@@ -1,18 +1,18 @@
 
 Ponder.registry((event) => {
-    event.create("tfc:blast_furnace").scene("blastfurnace","Using the Blast furnace","tfg:blastfurnace",(scene, util) => {
+    event.create("tfc:blast_furnace").scene("blastfurnace", "Using the Blast Furnace", "tfg:blastfurnace", (scene, util) => {
                 
         scene.showBasePlate();
         scene.scaleSceneView(1); 
         scene.world.showSection([3, 2, 3], Facing.DOWN)
         scene.idle(10);
         scene
-            .text(100, "The blast furnace is a multiblock used to produce pig iron, which is vital in steelmaking", [3,4,3])
+            .text(100, "The blast furnace is a multiblock used to produce Pig Iron, a precursor to Steel", [3,4,3])
             .placeNearTarget()
             .attachKeyFrame();
         scene.idle(110);
         scene
-            .text(90, "The blast furnace must be constructed with insulated firebricks", [3,4,3])
+            .text(90, "The blast furnace must be constructed with Insulated Fire Bricks, or with iron plates on the outside of regular Fire Bricks", [3,4,3])
             .placeNearTarget()
             .attachKeyFrame();
         scene.idle(40);
@@ -38,7 +38,7 @@ Ponder.registry((event) => {
             .attachKeyFrame();
         scene.idle(115)
         scene
-            .text(90, "Up to a max of 5 layers and 20 items of each type", [3,4,3])
+            .text(90, "Up to a maximum of 5 layers and 20 items of each type", [3,4,3])
             .placeNearTarget()
             .attachKeyFrame();
         
@@ -57,7 +57,7 @@ Ponder.registry((event) => {
             .attachKeyFrame();
         scene.idle(110);
         scene
-            .text(90, "To insert items drop them down through the top of the blast furnace", [3,7,3])
+            .text(90, "To insert items, drop them into the top of the blast furnace", [3,7,3])
             .placeNearTarget()
             .attachKeyFrame();
         const centerBlockPos = util.grid.at(3, 8, 3);
@@ -79,10 +79,10 @@ Ponder.registry((event) => {
         scene.world.modifyBlock([3,2,3],(curState) => curState.with("lit", "true"), false);
         scene.idle(40);
         scene
-            .text(110, "If you use coke, you must use a bellows and tuyere", [3,2.5,3])
+            .text(110, "If you use Coke, you must use a Bellows and Tuyere. The Bellows can be automated with kinetic input.", [3,2.5,3])
             .placeNearTarget()
             .attachKeyFrame();
-        scene.idle(70);
+        scene.idle(100);
         scene.world.setBlock([2,2,3], "tfc:bellows", true);
         scene.world.modifyBlock([2,2,3],(curState) => curState.with("facing", "east"), false);
         scene.world.showSection([2, 2, 3], Facing.NORTH);
@@ -91,12 +91,12 @@ Ponder.registry((event) => {
             .withItem("tfc:metal/tuyere/wrought_iron")
         scene.idle(80);
         scene
-            .text(100, "If you decide to use anthracite, then it's not required", [3,2.5,3])
+            .text(100, "If you decide to use Anthracite, then they are not required", [3,2.5,3])
             .placeNearTarget()
             .attachKeyFrame();
         scene.idle(120);
         scene
-            .text(115, "Once the contents get hot enough, they will melt into molten pig iron inside the blast furnace", [3,2.5,3])
+            .text(115, "Once the iron is hot enough, they will melt into molten pig iron inside the blast furnace", [3,2.5,3])
             .placeNearTarget()
             .attachKeyFrame();
         scene.idle(130);
@@ -118,7 +118,7 @@ Ponder.registry((event) => {
         scene.world.modifyBlock([3,0,3],(curState) => curState.with("lit", "true"), false);
         scene.world.showSection([2, 1, 3], Facing.NORTH);
         scene
-            .text(110, "The molten pig iron will begin to cool inside the crucible, so you must remember to keep it hot", [3,1.5,3])
+            .text(110, "The molten pig iron will begin to cool inside the Crucible, so you must remember to keep it hot", [3,1.5,3])
             .placeNearTarget()
             .attachKeyFrame();
         scene.idle(130)
