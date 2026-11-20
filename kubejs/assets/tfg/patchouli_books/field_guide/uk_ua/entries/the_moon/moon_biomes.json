@@ -12,7 +12,7 @@
 			"type": "patchouli:text",
 			"anchor": "index",
 			"title": "Зміст",
-			"text": "$(li)$(bold)Біоми$()$(li2)$(l:the_moon/moon_biomes#plains)Місячні рівнини$()$(li2)$(l:the_moon/moon_biomes#sands)Місячні піски$()$(li2)$(l:the_moon/moon_biomes#asurine)Азуринові поля$()$(li2)$(l:the_moon/moon_biomes#certus)Поля істинного кварцу$()$(li2)$(l:the_moon/moon_biomes#forest)Хорусний ліс$()$(li2)$(l:the_moon/moon_biomes#thicket)Хорусні хащі$()$(li2)$(l:the_moon/moon_biomes#maria)Місячне море$()$(li2)$(l:the_moon/moon_biomes#reef)Місячний риф$()$(li2)$(l:the_moon/moon_biomes#scrubland)Світлоквітний чагарник$()$(li2)$(l:the_moon/moon_biomes#stargazers)Світлоквітні зоряні гейзери$()$(li)$(bold)$(l:the_moon/moon_biomes#harvester)Збирач місячного пилу$()$(li2)$(l:the_moon/moon_biomes#regolith)Список реголіту$()"
+			"text": "$(li)$(bold)Біоми$()$(li2)$(l:the_moon/moon_biomes#plains)Місячні рівнини$()$(li2)$(l:the_moon/moon_biomes#sands)Місячні піски$()$(li2)$(l:the_moon/moon_biomes#asurine)Азуринові поля$()$(li2)$(l:the_moon/moon_biomes#certus)Поля істинного кварцу$()$(li2)$(l:the_moon/moon_biomes#forest)Хорусовий ліс$()$(li2)$(l:the_moon/moon_biomes#thicket)Хорусові хащі$()$(li2)$(l:the_moon/moon_biomes#maria)Місячне море$()$(li2)$(l:the_moon/moon_biomes#reef)Місячний риф$()$(li2)$(l:the_moon/moon_biomes#scrubland)Світлоквітний чагарник$()$(li2)$(l:the_moon/moon_biomes#stargazers)Світлоквітні зоряні гейзери$()$(li)$(bold)$(l:the_moon/moon_biomes#harvester)Збирач місячного пилу$()$(li2)$(l:the_moon/moon_biomes#regolith)Список реголіту$()"
 		},
 		{
 			"type": "patchouli:image",
@@ -42,7 +42,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/moon/asurine.png"
 			],
-			"text": "$(thing)Азуринові поля$() часто мають поклади $(item)Азурину$(). Вони не можуть генеруватися поблизу біомів $(l:the_moon/moon_biomes#forest)Хорусних лісів$()."
+			"text": "$(thing)Азуринові поля$() часто мають поклади $(item)азурину$(). Вони не можуть генеруватися поблизу біомів $(l:the_moon/moon_biomes#forest)хорусових лісів$()."
 		},
 		{
 			"type": "patchouli:image",
@@ -52,7 +52,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/moon/certus.png"
 			],
-			"text": "$(thing)Поля істинного кварцу$() — це більші поклади $(item)Азурину$(), які також містять велику кількість $(item)Істинного кварцу$()."
+			"text": "$(thing)Поля істинного кварцу$() — це більші поклади $(item)азурину$(), які також містять велику кількість $(item)істинного кварцу$()."
 		},
 		{
 			"type": "patchouli:image",
@@ -62,7 +62,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/moon/forest.png"
 			],
-			"text": "$(thing)Хорусний ліс$() — єдине місце, де можна знайти $(l:the_moon/moon_crops)хорусові плоди$(). Він не може генеруватися поблизу біомів $(l:the_moon/moon_biomes#asurine)Азурину$()."
+			"text": "$(thing)Хорусовий ліс$() — єдине місце, де можна знайти $(l:the_moon/moon_crops)хорусові плоди$(). Він не може генеруватися поблизу біомів $(l:the_moon/moon_biomes#asurine)азурину$()."
 		},
 		{
 			"type": "patchouli:image",
@@ -72,7 +72,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/moon/thicket.png"
 			],
-			"text": "$(thing)Хорусні хащі$() — це густі зарості $(l:the_moon/moon_crops)хорусових плодів$(). Це небезпечний біом із ворожими $(l:the_moon/moon_fauna#endermen)ендерменами$()."
+			"text": "$(thing)Хорусові хащі$() — це густі зарості $(l:the_moon/moon_crops)хорусових плодів$(). Це небезпечний біом із ворожими $(l:the_moon/moon_fauna#endermen)ендерменами$()."
 		},
 		{
 			"type": "patchouli:image",
@@ -82,7 +82,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/moon/maria.png"
 			],
-			"text": "$(thing)Місячні моря$() містять трохи $(item)мертвих коралів$() та піску. Вони не можуть генеруватися поблизу біомів $(l:the_moon/moon_biomes#lightbloom)Світлоквітнкових чагарників$()."
+			"text": "$(thing)Місячні моря$() містять трохи $(item)мертвих коралів$() та піску. Вони не можуть генеруватися поблизу біомів $(l:the_moon/moon_biomes#lightbloom)світлоквітнкових чагарників$()."
 		},
 		{
 			"type": "patchouli:image",
@@ -102,7 +102,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/moon/scrubland.png"
 			],
-			"text": "$(thing)Світлоквіткові чагарники$() мають рідкі зарості $(item)Світлоквіт$(). Вони не можуть генеруватися поблизу $(l:the_moon/moon_biomes#maria)Коралових$() біомів."
+			"text": "$(thing)Світлоквіткові чагарники$() мають рідкі зарості $(item)світлоквіт$(). Вони не можуть генеруватися поблизу $(l:the_moon/moon_biomes#maria)коралових$() біомів."
 		},
 		{
 			"type": "patchouli:image",
@@ -112,7 +112,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/moon/stargazers.png"
 			],
-			"text": "Тут росте багато $(item)Світлоквітів$(). $(bold)Порада:$() Цей біом чудово виглядає вночі з увімкненими шейдерами!"
+			"text": "Тут росте багато $(item)світлоквітів$(). $(bold)Порада:$() Цей біом чудово виглядає вночі з увімкненими шейдерами!"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -191,26 +191,26 @@
 			"type": "patchouli:spotlight",
 			"item": "tfg:certus_regolith_dust",
 			"anchor": "regolith",
-			"text": "$(item)Реголітовий пил істинного кварцу$() можна збирати лише в біомі $(l:the_moon/moon_biomes#certus)Поля істинного кварцу$().$(br2)Його можна переробити на $(item)Істинний кварц$() та $(item)Цинк$()."
+			"text": "$(item)Реголітовий пил істинного кварцу$() можна збирати лише в біомі $(l:the_moon/moon_biomes#certus)Поля істинного кварцу$().$(br2)Його можна переробити на $(item)істинний кварц$() та $(item)цинк$()."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:cassiterite_regolith_dust",
-			"text": "$(item)Реголітовий пил каситериту$() можна збирати лише в біомі $(l:the_moon/moon_biomes#stargazers)Світлоквітні зоряні гейзери$().$(br2)Він є джерелом $(item)Олова$()."
+			"text": "$(item)Реголітовий пил каситериту$() можна збирати лише в біомі $(l:the_moon/moon_biomes#stargazers)Світлоквітні зоряні гейзери$().$(br2)Він є джерелом $(item)олова$()."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:goethe_regolith_dust",
-			"text": "$(item)Реголітовий пил ґете$() збирають у біомі $(l:the_moon/moon_biomes#thicket)Хорусні хащі$().$(br2)Його можна переробити на $(item)Мідь$() та $(item)Залізо$()."
+			"text": "$(item)Реголітовий пил ґете$() збирають у біомі $(l:the_moon/moon_biomes#thicket)Хорусні хащі$().$(br2)Його можна переробити на $(item)мідь$() та $(item)залізо$()."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:bright_regolith_dust",
-			"text": "$(item)Яскравий пил реголіту$() походить із біому $(l:the_moon/moon_biomes#reef)Місячний риф$().$(br2)Він є джерелом $(item)Алмазів$() та $(item)Золота$()."
+			"text": "$(item)Яскравий пил реголіту$() походить із біому $(l:the_moon/moon_biomes#reef)Місячний риф$().$(br2)Він є джерелом $(item)алмазів$() та $(item)золота$()."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "У процесі переробки всі ці $(thing)Реголітові пили$() перетворюються на $(item)Руди з пилу$(). Наразі з них можна отримувати ресурси лише за допомогою центрифугування — для подальшого видобування знадобиться пізньоігрова переробка руд на $(l:venus)Венері$().$(br2)Обов'язково використовуй $(item)Великий хімічний реактор$(), щоб отримати ідеальне прискорення цих рецептів! Якщо ти хочеш налаштувати більш пасивну автоматизацію $(thing)компонентів AE2$() або $(l:logistics/railgun)боєприпасів для рейкотрона$(), ці збирачі реголіту просто незамінні!"
+			"text": "У процесі переробки всі ці $(thing)реголітові пили$() перетворюються на $(item)руди з пилу$(). Наразі з них можна отримувати ресурси лише за допомогою центрифугування — для подальшого видобування знадобиться пізньоігрова переробка руд на $(l:venus)Венері$().$(br2)Обов'язково використовуй $(item)великий хімічний реактор$(), щоб отримати ідеальне прискорення цих рецептів! Якщо ти хочеш налаштувати більш пасивну автоматизацію $(thing)компонентів AE2$() або $(l:logistics/railgun)боєприпасів для рейкотрона$(), ці збирачі реголіту просто незамінні!"
 		},
 		{
 			"type": "patchouli:relations",

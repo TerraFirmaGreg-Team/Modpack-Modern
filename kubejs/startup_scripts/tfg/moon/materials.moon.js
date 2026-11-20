@@ -17,7 +17,7 @@ function registerTFGMoonMaterials(event) {
 
 	event.create('tfg:solar_coolant')
         .gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(163))
-		.components('8x helium_3', '11x oxygen', '11x hydrogen')
+		.components('8x helium_3', '11x oxygen', '10x hydrogen')
 		.color(0xEDFFB3)
 
 	event.create('tfg:solar_coolant_tier2')

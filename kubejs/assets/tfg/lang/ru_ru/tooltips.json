@@ -1,6 +1,6 @@
 {
     "tfg.tooltip.food_trait.refrigerating": "§bОхлаждающий",
-    "tfg.tooltip.foodtrait.freeze_dried": "Лиофилизация",
+    "tfg.tooltip.food_trait.freeze_dried": "Лиофилизирован",
     "tfg.tooltip.extraterrestrial_farming": "§4Температура:§r Кислородная среда обеспечивает 15°C",
     "tfg.tooltip.moon_rabbit_variant.pink": "Розовая шкурка",
     "tfg.tooltip.moon_rabbit_variant.white": "Белая шкурка",
@@ -318,12 +318,23 @@
     "tfg.tooltip.calendar_standard_date": "%s/%s/%04d",
     "tfg.tooltip.calendar_iso_date": "%04d-%s-%s",
     "tfg.tooltip.calendar_month_and_day": "%d-%s",
+    "tfg.tooltip.climate_precipitation.chance": "Вероятность осадков: %s%% ",
     "tfg.tooltip.climate_precipitation.mm": "%smm",
     "tfg.tooltip.climate_wind.speed_ms": "%s m/s",
     "tfg.tooltip.climate_wind.speed_bs": "%s блоков/s",
+    "tfg.tooltip.climate_wind.speed_knots": "%sУзлы",
+    "tfg.tooltip.climate_wind.angl_n": "%s°N",
+    "tfg.tooltip.climate_wind.angl_ne": "%s°NE",
+    "tfg.tooltip.climate_wind.angl_nw": "%s°NW",
+    "tfg.tooltip.climate_wind.angl_e": "%s°E",
+    "tfg.tooltip.climate_wind.angl_s": "%s°S",
+    "tfg.tooltip.climate_wind.angl_se": "%s°SE",
+    "tfg.tooltip.climate_wind.angl_sw": "%s°SW",
+    "tfg.tooltip.climate_wind.angl_w": "%s°W",
     "tfg.tooltip.environment.pressure_atm": "%s atm",
     "tfg.tooltip.environment.pressure_pascal": "%s kPa",
     "tfg.tooltip.environment.pressure_bar": "%s bar",
     "tfg.tooltip.environment.gravity_mss": "%s m/s²",
-    "tfg.tooltip.environment.gravity_bss": "%s блоков/s²"
+    "tfg.tooltip.environment.gravity_bss": "%s блоков/s²",
+    "tfg.tooltip.me_network.channels": ""
 }

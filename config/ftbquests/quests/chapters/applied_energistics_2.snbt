@@ -1088,8 +1088,8 @@
 				}
 			]
 			title: "{quests.ae2.p2p.title}"
-			x: 2.0d
-			y: -7.5d
+			x: -2.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["4F719A457E0C0AFB"]
@@ -1221,7 +1221,7 @@
 					type: "item"
 				}
 			]
-			x: -1.0d
+			x: -0.5d
 			y: -7.5d
 		}
 		{
@@ -1433,6 +1433,37 @@
 			title: "{quests.ae2.pattern_upgrade.title}"
 			x: -2.0d
 			y: -10.5d
+		}
+		{
+			dependencies: ["0DDA9B67B59A9481"]
+			description: [
+				"{quests.ae2.storage_provider.desc.1}"
+				"{@pagebreak}"
+				"{quests.ae2.storage_provider.desc.2}"
+			]
+			icon: "tfg:storage_provider"
+			id: "3988DC7E8B178C17"
+			subtitle: "{quests.ae2.storage_provider.subtitle}"
+			tasks: [
+				{
+					id: "7C5C375C75DE7571"
+					item: "tfg:storage_provider"
+					type: "item"
+				}
+				{
+					id: "2F11623E72769A3D"
+					item: "tfg:order_terminal"
+					type: "item"
+				}
+				{
+					id: "1E840E31A8E538EB"
+					item: "tfg:wireless_order_terminal"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -7.5d
 		}
 	]
 	subtitle: ["{quests.ae2.subtitle}"]
