@@ -10,7 +10,7 @@ Ponder.registry((event) => {
             .attachKeyFrame();
         scene.idle(120);  
         scene
-            .text(60, "The bloomery can have a minimum of 1 layer..", [3,2,3])
+            .text(60, "The bloomery can have a minimum of 1 layer...", [3,2,3])
             .placeNearTarget()
             .attachKeyFrame();
         scene.idle(65);
@@ -24,7 +24,7 @@ Ponder.registry((event) => {
             .attachKeyFrame();
         scene.idle(70);
         scene
-            .text(120, "The bloomery accepts 16 items per layer (8 charcoal and 8 Iron bearing items) up to a max of 48 items total", [3,5,4])
+            .text(120, "The bloomery accepts 16 items per layer (such as 8 charcoal and 8 Iron bearing items) up to a max of 48 items total", [3,5,4])
             .placeNearTarget()
             .attachKeyFrame();
         scene.idle(130);
@@ -79,7 +79,7 @@ Ponder.registry((event) => {
         scene.world.setBlocks([4,3,4,4,5,4], Brick, true);
         scene.idle(40);
         scene
-            .text(125,"drop the required ratio of iron to charcoal into it (25 ore dust and 22 charcoal is recommended)", [3,5,4])
+            .text(125,"Only drop the correct ratio of iron to charcoal into it (25 iron ore dust and 22 charcoal is recommended)", [3,5,4])
             .placeNearTarget()
             .attachKeyFrame();
         const centerBlockPos = util.grid.at(3, 5.5, 4);
