@@ -422,5 +422,8 @@
 	"screen.matter_manipulator.tooltip.stack_plus": "Increase the number of additional stacked copies.",
 	"screen.matter_manipulator.tooltip.start_operation": "Start the configured Matter Manipulator operation.",
 	"screen.matter_manipulator.tooltip.unload_blueprint": "Unload the blueprint from this manipulator. The file stays in your library.",
-	"screen.matter_manipulator.transform": "Transform"
+	"screen.matter_manipulator.transform": "Transform",
+	"matter_manipulator.block_cost.mekanism.bounding": "the Mekanism machine it belongs to places it",
+	"matter_manipulator.refusal.mekanism.bounding": "part of a larger Mekanism machine, remove the machine itself",
+	"matter_manipulator.skip.mekanism.bounding_obstructed": "the space the rest of the machine takes up is occupied"
 }
