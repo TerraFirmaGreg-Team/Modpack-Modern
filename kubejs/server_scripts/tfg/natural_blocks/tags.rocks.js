@@ -425,6 +425,7 @@ function registerTFGStoneBlockTags(event) {
 			event.add('tfc:forge_insulation', rock.chiseled.block);
 			event.add('firmalife:oven_insulation', rock.chiseled.block);
 			event.add('minecraft:stone_bricks', rock.chiseled.block);
+			event.add('forge:stone_bricks', rock.chiseled.block);
 		}
 
 		if (rock.bricks != null && rock.isStone) {
@@ -432,12 +433,14 @@ function registerTFGStoneBlockTags(event) {
 			event.add('tfc:forge_insulation', rock.bricks.block);
 			event.add('firmalife:oven_insulation', rock.bricks.block);
 			event.add('minecraft:stone_bricks', rock.bricks.block);
+			event.add('forge:stone_bricks', rock.bricks.block);
 
 			if (rock.bricks.mossy != null) {
 				event.add('tfc:bloomery_insulation', rock.bricks.mossy.block);
 				event.add('tfc:forge_insulation', rock.bricks.mossy.block);
 				event.add('firmalife:oven_insulation', rock.bricks.mossy.block);
 				event.add('minecraft:stone_bricks', rock.bricks.mossy.block);
+				event.add('forge:stone_bricks', rock.bricks.mossy.block);
 			}
 
 			if (rock.bricks.cracked != null) {
@@ -445,6 +448,7 @@ function registerTFGStoneBlockTags(event) {
 				event.add('tfc:forge_insulation', rock.bricks.cracked.block);
 				event.add('firmalife:oven_insulation', rock.bricks.cracked.block);
 				event.add('minecraft:stone_bricks', rock.bricks.cracked.block);
+				event.add('forge:stone_bricks', rock.bricks.cracked.block);
 			}
 		}
 

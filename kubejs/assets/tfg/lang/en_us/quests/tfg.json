@@ -8,7 +8,7 @@
 
     "quests.tfg.create_team.title": "How to create a team?",
     "quests.tfg.create_team.subtitle": "Do you play with friends?",
-    "quests.tfg.create_team.desc": "You can create a team to complete quests together. To do this, open your inventory, then in the upper left corner select the button where 3 colorful people are drawn, then an interface will open in which you can create a team. Click the §aCreate a team§r button, then give it a name and possibly some other parameters, and after successfully creating a team, you can invite other players to it using the plus button in the green circle in the upper right corner. From this point onwards, your quests will be synchronized and any team member will be able to complete them. Good luck!",
+    "quests.tfg.create_team.desc": "You can create a team to complete quests together. To do this, open your inventory, then in the upper left corner select the button where 3 colorful people are drawn, then an interface will open in which you can create a team.\n\nClick the §aCreate a team§r button, then give it a name and possibly some other parameters, and after successfully creating a team, you can invite other players to it using the plus button in the green circle in the upper right corner.\n\nFrom this point onwards, your quests will be synchronized and any team member will be able to complete them. Good luck!",
 
     "quests.tfg.capture_territory.title": "How to capture territory?",
     "quests.tfg.capture_territory.subtitle": "And how to load chunks in your territory",
@@ -26,5 +26,9 @@
 
     "quests.tfg.optional_mods.title": "Optional Mods",
     "quests.tfg.optional_mods.subtitle": "Customize your experience",
-    "quests.tfg.optional_mods.desc": "If you want to add more content to your modpack, you may be interested in our list of &doptional mods&r!\n\nThese are either mods that only work for certain PC setups, would add too much bloat if they were added for everyone, or are too niche to include by default.\n\nPlease note that these mods or their compatibility is not ensured by the TFG dev team, so they may stop functioning at any point in the future.\n\nClick the globe image next to the quest to open the mod list."
+    "quests.tfg.optional_mods.desc": "If you want to add more content to your modpack, you may be interested in our list of &doptional mods&r!\n\nThese are either mods that only work for certain PC setups, would add too much bloat if they were added for everyone, or are too niche to include by default.\n\nPlease note that these mods or their compatibility is not ensured by the TFG dev team, so they may stop functioning at any point in the future.\n\nClick the globe image next to the quest to open the mod list.",
+
+    "quests.tfg.reading.title": "Where do I find information?",
+    "quests.tfg.reading.subtitle": "This isn't Terraria",
+    "quests.tfg.reading.desc": "Everything you need to play TerraFirmaGreg is inside the modpack itself. There are three main sources of information:\n\n- &dE&aM&bI&r, the recipe viewer. Left-clicking or pressing &9R&r on an item will show you all the recipes to acquire it, while pressing &9U&r will show you all the recipes that use it.\n\n- The &6Field Guide&r is accessible via the book tab on the right of your inventory. It's the first place to look if you want to know &ohow&r to do something. It's sorted into categories, and you can search it by clicking on the &oEntry Index&r and &9typing&r.\n\n- The &eQuest Book&r is what you're reading right now, and is primarily to guide you on what to do next. It's accessible via the book icon at the very top left of the screen when your inventory is open. You can press &9Ctrl+F&r to search.\n\nAll of these are also available on our website, &bwiki.terrafirmagreg.team&r, which also has a more powerful search tool."
 }
