@@ -268,15 +268,15 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Piwnica służy do przechowywania żywności i $(l:cooking/cheese#cheese_wheel)dojrzewania serów$(). Żywność umieszcza się na $(l:cooking/decay#shelf)półkach na żywność$() i $(l:cooking/decay#shelf)wieszakach$(), a sery można również kłaść na ziemi lub $(thing)półkach na beczkę$().$(br2)Piwnica działa skuteczniej w $(l:the_world/climate#temperature)chłodniejszym otoczeniu$().$(li)$(2)Temp. >= 0°C:$() półki 0,4, wieszaki 0,35$(li)$(2)Temp. < 0°C:$() półki 0,35, wieszaki 0,3$(li)$(2)Temp. < -12°C:$() półki 0,25, wieszaki 0,25"
+            "text": "The cellar is used for food preservation and $(l:cooking/cheese#cheese_wheel)Aging Cheese$() by using $(l:cooking/decay#shelf)Food Shelves$() and $(l:cooking/decay#shelf)Hangers$() to hold food items or by placing cheese on the ground or in $(thing)Barrel Racks$(). $(l:craftsmanship/barrels)Barrels$() used for vinegar preservation also benefit from being placed in a cellar."
         },
         {
             "type": "patchouli:text",
-            "text": "Przykładowa wybudowana piwnica."
+            "text": "$(br2)Piwnica działa lepiej w $(l:the_world/climate#temperature)zimniejszym klimacie$().$(li)$(2)Temp >= 0°C:$() półki 0.4, wieszaki 0.35$(li)$(2)Temp < 0°C:$() półki 0.35, wieszaki 0.3$(li)$(2)Temp < -12°C:$() półki 0.25, wieszaki 0.25$(br2)Beczki z octem mają stały modyfikator 0.35 bez względu na temperaturę."
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "An example cellar structure.",
+            "text": "Przykładowa piwnica.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -443,46 +443,46 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "shelf",
-            "title": "Śniadaniówki",
+            "title": "Magazyn w piwnicy",
             "item": "tag:firmalife:food_shelves,tag:firmalife:hangers,tag:tfc:barrels",
             "text": "$(item)Food shelves$() and $(item)Hangers$() can contain a full stack of one food item. Adding and removing the item can be done with $(item)$(k:key.use)$() or $(item)$(k:key.sneak) + $(k:key.use)$() for full stacks. Items in valid food shelves and hangers receive a decay modifier that is better than vessels and increases with declining $(thing)Average Temperature$()."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "lunch_box",
-            "title": "Lodówki",
+            "title": "Śniadaniówki",
             "item": "tfclunchbox:lunchbox,tfclunchbox:cooling_lunchbox,tfclunchbox:electric_lunchbox",
             "text": "Lunch boxes provide a convenient method to transport and consume food items. The basic lunchbox provides the $(5)$(bold)Preserved$() trait while the $(item)Cooling$() and $(item)Electric Lunchboxes$() give the $(9)$(bold)Cooled$() trait with a modifier of 0.3.$(br2)Cooling lunchboxes consume $(item)Ice$() to preserve food, while the electric lunchbox consumes $(2)EU$() energy."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "refrigerator",
-            "title": "Liofilizacja",
+            "title": "Lodówki",
             "item": "tfg:mv_food_refrigerator,tfg:hv_food_refrigerator,tfg:ev_food_refrigerator,tfg:iv_food_refrigerator",
-            "text": "$(tfg_short) umożliwia liofilizowanie wybranych produktów spożywczych w $(item)robotach kuchennych$(), co znacznie wydłuża ich trwałość. Liofilizacja nadaje cechę $(7)$(bold)liofilizowane$() z modyfikatorem 0,02."
+            "text": "Refrigerators are added by $(tfg_short) and consume $(2)EU$() to provide the $(3)$(bold)Refrigerating$() trait with a modifier of 0.125.$(br)Higher tiers of the fridge do not affect the preservation buff―only the storage space available. Fridges can also combine food stacks by merging expiration dates."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "freeze_dry",
-            "title": "Szkodniki",
+            "title": "Liofilizacja",
             "item": "tfg:food/meal_bag,tfg:food/freeze_dried_fruit,tfg:food/calorie_paste",
             "text": "$(tfg_short) adds the ability to freeze-dry select food items in $(item)Food Processors$() to greatly increase shelf life. Freeze drying gives the $(7)$(bold)Cryodessicated$() trait with a modifier of 0.02."
         },
         {
             "type": "patchouli:text",
             "anchor": "pest",
-            "title": "Odcinanie",
+            "title": "Szkodniki",
             "text": "Food that is left sitting in chests can attract $(thing)Rats$(), so remember to store food properly in vessels, cellars, or fridges. Rats are able to open containers and eat the food out of them. You will be alerted to a rat's presence by the message $(thing)'This container has a foul smell'$(). It is important to note that unsealing and resealing a large vessel before you leave the screen will never attract pests."
         },
         {
             "type": "patchouli:text",
             "anchor": "cutting",
-            "title": "Czytaj dalej",
+            "title": "Odcinanie",
             "text": "Lastly, you can cut off the decayed part of food by picking up a $(item)knife$() with your cursor and $(item)right-clicking$() a partially decayed food item stack in your inventory.$(br2)This will reset the decay while losing some of the item stack, proportional to how decayed it was."
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/food_and_water",

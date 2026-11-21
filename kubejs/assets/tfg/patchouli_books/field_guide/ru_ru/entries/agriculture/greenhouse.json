@@ -45,7 +45,7 @@
             "type": "patchouli:text",
             "anchor": "planters",
             "title": "Лотки для рассады",
-            "text": "$(thing)Лотки для рассады$() используются для выращивания посевов в теплице. Посевы в лотках потребляют $(l:agriculture/growing_crops#intro)Питательные вещества$() наподобие обычным. Лотки должны быть расположены внутри правильно построенной теплицы и активированы при помощи $(item)Климатической станции$(). Лоткам нужно хотя бы небольшое количество естественного солнечного света."
+            "text": "$(thing)Planters$() are used to grow crops inside a Greenhouse. Crops in planters consume $(l:agriculture/growing_crops#intro)Nutrients$() similarly to crops. Planters should be placed inside a valid Greenhouse and activated with a $(item)Climate Station$(). Planters need at least some light to work."
         },
         {
             "type": "patchouli:spotlight",
@@ -105,31 +105,31 @@
             "anchor": "auto_planting",
             "title": "Автоматический сбор",
             "item": "create:mechanical_arm",
-            "text": "$(li)$(thing)Уборщики$() используются для сбора урожая с лотков, кроме лотков для небольших растений и гидропонных лотков. Их можно запитать редстоуном. $(li)$(thing)Сборщики$() можно запитать сигналом редстоуна сверху. Они протягиваются вниз для сбора урожая с лотков для небольших растений и гидропонных лотков."
+            "text": "$(thing)Mechanical Arms$() can be used to plant crops in planters. By setting a planter as an arm's target, the arm will automatically take seeds from assigned depots and plant them in the appropriate planter for each seed type."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "auto_harvesting",
             "title": "Auto-Harvesting",
             "item": "firmalife:sweeper,firmalife:picker",
-            "text": "$(li)Также можно использовать $(item)Лукошко$() для сбора урожая с большинства типов лотков.$(li)Для подбора валяющихся предметов выбрасываемых $(thing)Уборщиками$() и $(thing)Сборщиками$() ты можешь использовать $(item)Вагонетку с воронкой$(), $(thing)Приспособление$() из $(item)Шлюзов$(), или $(item)Собиратель предметов$() из GregTech."
+            "text": "$(thing)Sweepers$() are used to harvest planters other than Quad and Hydroponic planters. They can be powered by redstone.$(li)$(thing)Pickers$() can be powered via redstone signal from above. They extend down to pick the crops from Quad and Hydroponic planters."
         },
         {
             "type": "patchouli:text",
-            "text": "$(item)Электрическая теплица$() может быть твоим источником $(thing)Брёвен$() и других растений, если ты предпочитаешь машины из GregTech приспособлениям из Create. У неё также есть уникальная способность выращивать больше декоративных растений из TFC!$(br2)Ты сможешь построить её в конце $(7)LV$()."
+            "text": "$(li)Additionally, $(item)Harvest Baskets$() can be used to harvest most planter types.$(li)To collect the loose items that the $(thing)Sweepers$() and $(thing)Pickers$() drop, you can use a $(item)Hopper Minecart$(), a $(thing)Contraption$() with $(item)Funnels$(), or a GregTech $(item)Item Collector$()."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "bees_and_taps",
             "title": "Beehives and Tree Taps",
             "item": "firmalife:beehive,afc:tree_tap",
-            "text": "$(bold)Примечание:$() этот мультиблок может использовать любой подходящий блок теплицы железного тира.$(br2)Загляни во вкладку мультиблочная структура в $(emi) чтобы узнать перечень доступных блоков.$(br2)Электрическую теплицу также можно улучшить нескольким способами, включая $(l:agriculture/fertilizers)удобрение$() или, позднее в $(6)HV$(), $(thing)Аквапонный цикл$()."
+            "text": "$(l:agriculture/beekeeping)Beehives$() and $(l:agriculture/tree_tapping)Tree Taps$() both benefit from being placed inside a greenhouse! The greenhouse's controlled climate ensures year-round productivity, ignoring seasonal changes in temperature."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "electric",
             "item": "tfg:electric_greenhouse",
-            "text": "$(item)Гидропонная установка$() это $(9)IV$() модернизация электрической теплицы, способная выращивать что угодно в любом измерении и поддерживающая $(item)Люки контроля параллелей$()."
+            "text": "The multiblock $(item)Electric Greenhouse$() can be your source of $(thing)Logs$() and other plants if you prefer making GregTech machines over Create contraptions. It also has the unique property of being able to grow more of TFC's decorative plants!$(br2)You can make one at the end of $(7)LV$()."
         },
         {
             "type": "patchouli:text",
