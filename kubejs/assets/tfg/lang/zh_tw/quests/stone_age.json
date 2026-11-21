@@ -111,7 +111,7 @@
     "quests.stone_age.make_vessel.desc": "小缸可以像束口袋一樣，在一個欄位中攜帶多個物品，但更重要的是，它是你加工金屬的第一個工具。\n\n與小缸互動會打開它的小物品欄，可在裡面放礦石。小缸的提示框還會顯示礦石會熔化成什麼，製作合金時特別有用！\n\n把小缸放進坑窯加熱，就能&l熔化&r裡面的金屬。\n\n想冒險一點的話，可以混合不同金屬來製作合金。合金需要以特定百分比混合金屬。銅馬上就能用，但第一批金屬工具也可以改用青銅製作。",
     "quests.stone_age.native_ores.title": "含有礦石的小石子？",
     "quests.stone_age.native_ores.subtitle": "只要去找，你的第一種金屬其實已經觸手可及。",
-    "quests.stone_age.native_ores.desc.1": "礦脈的生成方式可能和你習慣的不同：不能隨便走進洞穴就找到，而是要在地表找「指示物」。它們可能像小石頭、粉堆，甚至是小水晶芽。\n\n找不到能熔化成銅的東西？試著找另一種石頭：不同礦石會在不同岩石中生成。完整清單請見野外指南的 TFG 礦石分類。",
+    "quests.stone_age.native_ores.desc.1": "礦脈的形成方式可能與你以往所見不同 － 不能只是隨便走進洞穴去尋找，而是要在地表找「指示物」。它們看起來像小石頭、粉堆，甚至是小晶芽。\n\n找不到能熔化成銅的東西？試著找另一種石頭－不同礦石會在不同岩石中生成。",
     "quests.stone_age.native_ores.desc.2": "為什麼叫指示物？因為它的正下方有一條巨大的礦脈，裡面是你在地表找到的同一種礦石。你還沒有鎬子，所以記下找到礦石的地點！之後會非常有用。\n\n每個大約相當於一顆粒，盡量多收集一些，但一定要記下在哪裡找到！",
     "quests.stone_age.first_saw.title": "金屬鋸子",
     "quests.stone_age.first_saw.subtitle": "來做第一把金屬工具吧",
@@ -200,5 +200,8 @@
     "quests.stone_age.fuel_temperatures.desc.2": "也不只能用木炭爐：看起來有點蠢，但陶鍋、烤架、烤箱……任何適用 TFC 加熱系統的裝置都能加熱錠。\n\n&9注意&r：在木炭爐介面右側放一個模具或小缸，就能接住熔化的金屬。",
     "quests.tfg_tips.juicer.title": "榨汁器",
     "quests.tfg_tips.juicer.subtitle": "緊急補水",
-    "quests.tfg_tips.juicer.desc": "&3榨汁器&r是特殊物品，能把&a水果&r、&a蘑菇&r和&a仙人掌&r中的水分萃取成可飲用的&d水&r。"
+    "quests.tfg_tips.juicer.desc": "&3榨汁器&r是特殊物品，能把&a水果&r、&a蘑菇&r和&a仙人掌&r中的水分萃取成可飲用的&d水&r。",
+    "quests.stone_age.ores_emi.title": "怎麼找到礦物?",
+    "quests.stone_age.ores_emi.subtitle": "只靠瞎找可不能找到所有東西",
+    "quests.stone_age.ores_emi.desc": "漫無目的地閒逛可不是找礦石的好方法——有些礦石只在特定生物群系或石頭類型生成。\n\n某些金屬含有多種礦石，每種礦石都有其獨有特徵。搜尋「熔煉成銅」來找到這些礦石。\n\n在 EMI &9左鍵點擊&r（或按 &9R 鍵&r）任何&a原礦&r取得每種礦石的準確位置。\n\n簡單來說，看看所有能熔化成錫的礦石。&e錫石沙&r）位於沙層下方（所以&2海灘&r是個不錯的選擇），而&e錫原礦&r產於&2山地&r生物群系。將滑鼠懸停在生物群系上查看完整清單。"
 }

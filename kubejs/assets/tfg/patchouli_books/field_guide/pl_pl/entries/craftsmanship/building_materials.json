@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:craftsmanship/building_materials#primitive_materials)Primitive Materials$()$(li2)$(l:craftsmanship/building_materials#thatch)Thatch$()$(li2)$(l:craftsmanship/building_materials#mud_bricks)Mud Bricks$()$(li2)$(l:craftsmanship/building_materials#wattle_and_daub)Wattle and Daub$()$(li)$(bold)$(l:craftsmanship/building_materials#advanced_materials)Advanced Materials$()$(li2)$(l:craftsmanship/building_materials#alabaster)Alabaster$()$(li2)$(l:craftsmanship/building_materials#bricks_and_mortar)Bricks and Mortar$()$(li)$(bold)$(l:craftsmanship/building_materials#block_interactions)Block Interactions$()$(li)$(bold)$(l:craftsmanship/building_materials#roof_building)Roof Building$()$(li)$(bold)$(l:craftsmanship/building_materials#modern)Modern Materials$()",
+            "text": "$(li)$(bold)$(l:craftsmanship/building_materials#primitive_materials)Prymitywne materiały$()$(li2)$(l:craftsmanship/building_materials#thatch)Strzecha$()$(li2)$(l:craftsmanship/building_materials#mud_bricks)Cegły błotne$()$(li2)$(l:craftsmanship/building_materials#wattle_and_daub)Szachulec$()$(li)$(bold)$(l:craftsmanship/building_materials#advanced_materials)Zaawansowane materiały$()$(li2)$(l:craftsmanship/building_materials#alabaster)Alabaster$()$(li2)$(l:craftsmanship/building_materials#bricks_and_mortar)Cegły i zaprawa$()$(li)$(bold)$(l:craftsmanship/building_materials#block_interactions)Interakcje z blokami$()$(li)$(bold)$(l:craftsmanship/building_materials#roof_building)Budowanie dachów$()$(li)$(bold)$(l:craftsmanship/building_materials#modern)Nowoczesne materiały$()",
             "title": "Indeks",
             "anchor": "index"
         },
