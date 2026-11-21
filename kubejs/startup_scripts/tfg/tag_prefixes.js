@@ -158,6 +158,11 @@ function registerTFGTagPrefixes(event) {
 
 	excludeAllButFlawedGem(GTMaterials.get('tfg:garnet_residual_slag'));
 	excludeAllButFlawedGem(GTMaterials.get('tfg:inert_slag'));
+	excludeAllButFlawedGem(GTMaterials.get('tfg:fayalite_slag'));
+	excludeAllButFlawedGem(GTMaterials.get('tfg:pgm_converter_matte'));
+	excludeAllButFlawedGem(GTMaterials.get('tfg:pgm_crystallized_matte'));
+	excludeAllButFlawedGem(GTMaterials.get('tfg:heavy_metal_sludge'));
+	excludeAllButFlawedGem(GTMaterials.get('tfg:fused_pgm_mass'));
 
 	function excludeAllButFlawedGem(material) {
 		TagPrefix.dustTiny.setIgnored(material)
