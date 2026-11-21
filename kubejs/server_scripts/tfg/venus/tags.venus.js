@@ -145,26 +145,70 @@ function registerTFGVenusBlockTags(event) {
 	event.add('tfg:geyserite_geode_cannot_replace', '#tfc:loose_rocks')
 
 	// Blocks that won't burn due to Venus Fire
+	
+	// Terrain
+
 	event.add('tfg:venus_fire_immune', '#ad_astra:venus_stone_replaceables')
 	event.add('tfg:venus_fire_immune', '#tfc:loose_rocks')
 	event.add('tfg:venus_fire_immune', '#forge:ores')
-	event.add('tfg:venus_fire_immune', '#ad_astra:venus_carver_replaceables')
+	event.add('tfg:venus_fire_immune', '#forge:surface_rocks')
+	event.add('tfg:venus_fire_immune', '#forge:bud_indicators')
+	event.add('tfg:venus_fire_immune', /^tfc:rock\/spike\//)
 	event.add('tfg:venus_fire_immune', 'tfg:venus_hornfels')
 	event.add('tfg:venus_fire_immune', 'ad_astra:venus_sand')
 	event.add('tfg:venus_fire_immune', 'ad_astra:venus_sandstone')
 	event.add('tfg:venus_fire_immune', 'ad_astra:venus_cobblestone')
 	event.add('tfg:venus_fire_immune', 'tfg:halite')
-	event.add('tfg:venus_fire_immune', 'betterend:hydrothermal_vent')
+	event.add('tfg:venus_fire_immune', 'tfg:huge_salt')
 	event.add('tfg:venus_fire_immune', 'tfc:groundcover/salt_lick')
 	event.add('tfg:venus_fire_immune', 'beneath:sulfur')
-	event.add('tfg:venus_fire_immune', '#tfg:do_not_destroy_in_space')
-	event.add('tfg:venus_fire_immune', '#forge:surface_rocks')
-	event.add('tfg:venus_fire_immune', 'tfg:huge_salt')
-	event.add('tfg:venus_fire_immune', 'tfg:tall_fused_pillar')
+	event.add('tfg:venus_fire_immune', 'tfg:rock/raw/geyserite')
+	event.add('tfg:venus_fire_immune', 'tfg:rock/spike/geyserite')
 	event.add('tfg:venus_fire_immune', 'tfg:rock/raw/stromatolite')
 	event.add('tfg:venus_fire_immune', 'tfg:rock/spike/stromatolite')
-	event.add('tfg:venus_fire_immune', '#forge:bud_indicators')
-	//event.add('tfg:venus_fire_immune', '')
+
+	// Venus rocks: raw, bricks, polished and chiseled with their stairs/slabs/walls, plus pillar and spike
+
+	for (let rockId of ['flavolite', 'sandy_jadestone', 'sulphuric_rock']) {
+		let rock = global.BIG_ROCK_TABLE[rockId]
+		for (let type of ['raw', 'bricks', 'polished', 'chiseled']) {
+			let forms = rock[type]
+			if (!forms) continue
+			for (let form of ['block', 'stair', 'slab', 'wall']) {
+				if (forms[form]) event.add('tfg:venus_fire_immune', forms[form])
+			}
+		}
+		if (rock.pillar) event.add('tfg:venus_fire_immune', rock.pillar)
+		if (rock.spike) event.add('tfg:venus_fire_immune', rock.spike)
+	}
+
+	// Geysers and sources
+
+	event.add('tfg:venus_fire_immune', 'tfg:geyser_source')
+	event.add('tfg:venus_fire_immune', 'tfg:geyser_source_small')
+	event.add('tfg:venus_fire_immune', 'tfg:smoker_source')
+	event.add('tfg:venus_fire_immune', 'tfg:lava_source')
+	event.add('tfg:venus_fire_immune', 'betterend:hydrothermal_vent')
+	event.add('tfg:venus_fire_immune', 'betterend:sulphur_crystal')
+	event.add('tfg:venus_fire_immune', 'betterend:tube_worm')
+
+	event.add('tfg:venus_fire_immune', 'tfg:stromatolite_cluster_small')
+	event.add('tfg:venus_fire_immune', 'tfg:stromatolite_cluster_medium')
+	event.add('tfg:venus_fire_immune', 'tfg:tall_stromatolite')
+	event.add('tfg:venus_fire_immune', 'tfg:tall_stromatolite_cyanobacteria')
+
+	// Flora and decoration
+	event.add('tfg:venus_fire_immune', '#tfg:venus_plants')
+	event.add('tfg:venus_fire_immune', '#tfg:silk_moth_blocks')
+	event.add('tfg:venus_fire_immune', 'betterend:hydralux_sapling')
+	event.add('tfg:venus_fire_immune', 'betterend:shadow_plant')
+	event.add('tfg:venus_fire_immune', 'tfg:tall_fused_pillar')
+	event.add('tfg:venus_fire_immune', 'tfg:short_fused_pillar')
+	event.add('tfg:venus_fire_immune', 'tfg:ink_light')
+	event.add('tfg:venus_fire_immune', 'tfg:slurry_slime_mold')
+	event.add('tfg:venus_fire_immune', 'tfg:floating_fumarole_colony')
+	event.add('tfg:venus_fire_immune', 'aliencraft_kepler:alien_vines')
+	event.add('tfg:venus_fire_immune', 'aliencraft_kepler:vines_tip')
 }
 
 function registerTFGVenusBiomeTags(event) {
