@@ -7,6 +7,7 @@
 	"dungeonconfig.config.category.appearance": "Wygląd",
 	"dungeonconfig.config.option.titleScreenButton": "Przycisk w menu głównym",
 	"dungeonconfig.config.option.menuBackground": "Tło menu",
+	"dungeonconfig.config.option.menuBackground.desc": "Obraz, animowany GIF lub film w tle menu: podaj plik z %s/bg, link lub pozostaw puste, aby losować z tego folderu. Ustaw none, aby wyłączyć. Filmy wymagają FFmpeg zainstalowanego w systemie lub umieszczonego w config/dungeonconfig/bin.",
 	"dungeonconfig.config.option.menuBackgroundBlurPercent": "Rozmycie tła",
 	"dungeonconfig.config.option.menuBackgroundBlurPercent.desc": "Jak mocno rozmyte jest tło menu, aby menu było czytelne. 0 oznacza brak rozmycia.",
 	"dungeonconfig.config.option.menuBackgroundDimPercent": "Przyciemnienie tła",
