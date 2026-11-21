@@ -130,6 +130,9 @@ const registerFirmaLifeBlockTags = (event) => {
 }
 
 const registerFirmaLifeFluidTags = (event) => {
+
+    event.removeAllTagsFrom('firmalife:coconut_milk');
+    event.removeAllTagsFrom('firmalife:pina_colada');
     
     // Добавляем тег для скрытия в EMI
     event.add('c:hidden_from_recipe_viewers', 'firmalife:metal/chromium')
@@ -153,7 +156,4 @@ const registerFirmaLifeFluidTags = (event) => {
     event.add('firmalife:oils', 'tfg:triglyceride_oil')
     event.add('firmalife:oils', 'tfg:peanut_oil')
     event.add('firmalife:oils', 'tfg:palm_oil');
-
-    event.removeAllTagsFrom('firmalife:coconut_milk');
-    event.removeAllTagsFrom('firmalife:pina_colada');
 }

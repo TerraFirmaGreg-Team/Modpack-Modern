@@ -144,7 +144,7 @@
 
     "quests.stone_age.native_ores.title": "Pebbles with ore?",
     "quests.stone_age.native_ores.subtitle": "Your first metal is already available if you look for it.",
-    "quests.stone_age.native_ores.desc.1": "Ore veins generate differently than what you might be used to - you can't just wander into a random cave, instead you'll need to find \"Indicators\" on the surface. These can look like small rocks, dust piles, or even small crystal buds.\n\nCan't find anything that melts into Copper? Try looking for a another stone type -- different ores spawn in different rock types. Check the TFG Ores category of your Field Guide for a full list.",
+    "quests.stone_age.native_ores.desc.1": "Ore veins generate differently than what you might be used to - you can't just wander into a random cave, instead you'll need to find \"Indicators\" on the surface. These can look like small rocks, dust piles, or even small crystal buds.\n\nCan't find anything that melts into Copper? Try looking for a another stone type -- different ores spawn in different rock types.",
     "quests.stone_age.native_ores.desc.2": "Why are they called Indicators? This means that directly below, there is a big, HUGE vein with the same ore that you found on the surface. You don't have a pickaxe yet, so take note of the place where you found the Ore! It'll be very useful later on.\n\nEach one is worth about as much as a nugget, so collect as many as you can, but make sure you make a note of where you found them!",
 
     "quests.stone_age.first_saw.title": "Metallic Saw",
@@ -259,5 +259,9 @@
 
     "quests.tfg_tips.juicer.title": "Juicer",
     "quests.tfg_tips.juicer.subtitle": "Hydration in a Pinch",
-    "quests.tfg_tips.juicer.desc": "The &3Juicer&r is a special item that can extract the water contained in &aFruits&r, &aMushrooms&r, and &aCacti&r into drinkable &dWater&r."
+    "quests.tfg_tips.juicer.desc": "The &3Juicer&r is a special item that can extract the water contained in &aFruits&r, &aMushrooms&r, and &aCacti&r into drinkable &dWater&r.",
+
+    "quests.stone_age.ores_emi.title": "How do I find ores?",
+    "quests.stone_age.ores_emi.subtitle": "You can't just blindly search for everything!",
+    "quests.stone_age.ores_emi.desc": "Aimlessly wandering is not a good way to find all the ores you need - some of them only spawn in certain biomes or stone types.\n\nCertain metals also have multiple ores with their own differences. You can find these by searching for \"melts into copper\", for example.\n\nEMI will show you exactly where to find each ore by &9Left Clicking&r (or pressing &9R&r) on any &aRaw Ore&r.\n\nAs a quick tutorial, look at all the ores that melt into Tin. &eCassiterite Sand&r says it's found just below the surface within sand (so &2Beaches&r are a good place to look), while &eRaw Tin&r is found in &2Mountain&r biomes. You can hover over the biomes to get a full list."
 }
