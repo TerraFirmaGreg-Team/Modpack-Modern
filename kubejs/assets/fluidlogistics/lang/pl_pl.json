@@ -337,6 +337,7 @@
 	"fluidlogistics.ponder.multi_fluid_access_port/multi_fluid_access_port.header": "Dostęp do płynów przez port dostępu do zbiornika",
 	"fluidlogistics.ponder.multi_fluid_access_port/multi_fluid_access_port.text_1": "Dostęp do pojemników na płyny bywa kłopotliwy",
 	"fluidlogistics.ponder.multi_fluid_access_port/multi_fluid_access_port.text_2": "Porty dostępu do zbiorników mogą je rozszerzać, aby ułatwić dostęp",
+	"fluidlogistics.ponder.multi_fluid_access_port/multi_fluid_access_port.text_3": "Porty dostępu do zbiornika zapewniają dostęp do płynów w maksymalnie trzech kierunkach jednocześnie.",
 	"fluidlogistics.ponder.multi_fluid_access_port/multi_fluid_access_port.text_4": "Filtry można konfigurować osobno dla każdego z trzech kierunków",
 	"fluidlogistics.ponder.multi_fluid_access_port/multi_fluid_access_port.text_5": "Porty dostępu do zbiorników można również wyłączać sygnałami redstone",
 	"fluidlogistics.ponder.multi_fluid_access_port/multi_fluid_access_port.text_6": "Zauważ, że porty dostępu do zbiornika nie mogą być łączone w łańcuch.",
