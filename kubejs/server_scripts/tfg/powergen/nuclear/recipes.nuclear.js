@@ -763,9 +763,6 @@ function registerTFGNuclearRecipes(event) {
 		.outputFluids(Fluid.of('tfg:ticl4_doped_supercritical_co2', 50))
 		.EUt(-(32))
 		.duration(20)
-		.dimension('minecraft:overworld')
-		.dimension('ad_astra:mars')
-		//.dimension('ad_astra:glacio')
 
 	//#endregion
 	

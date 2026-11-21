@@ -116,61 +116,6 @@ function registerTFGBeneathOreProcRecipes(event) {
 
 	// Ore processing recipes in the Ore Processing Multiblock
 
-	// Byproduct chances per crushed ore (from the standard processing chain)
-	const BYPRODUCT0_RATE = 0.3333;
-	const BYPRODUCT1_RATE = 0.3333;
-	const BYPRODUCT2_RATE = 0.14;
-
-	function processOreGasTier(material, tier, inputTagPrefix, gasAmount) {
-		if (!material.hasProperty(PropertyKey.ORE)) return;
-
-		const oreProperty = material.getProperty(PropertyKey.ORE);
-		const multiplier = oreProperty.getOreMultiplier();
-		const materialName = material.getName();
-
-		const inputItem = ChemicalHelper.get(inputTagPrefix, material, 1);
-		if (inputItem === null || inputItem.isEmpty()) return;
-
-		const dust = ChemicalHelper.get(TagPrefix.dust, material, 1);
-		if (dust === null || dust.isEmpty()) return;
-
-		const byproduct0 = ChemicalHelper.get(TagPrefix.dust, oreProperty.getOreByProduct(0, material), 1);
-		const byproduct1 = ChemicalHelper.get(TagPrefix.dust, oreProperty.getOreByProduct(1, material), 1);
-		const byproduct2 = ChemicalHelper.get(TagPrefix.dust, oreProperty.getOreByProduct(2, material), 1);
-
-		const crushedExpectation = getCrushedExpectation(tier, multiplier);
-
-		const recipeId = tier === 'crushed'
-			? `tfg:ore_proc_gas/${materialName}`
-			: `tfg:ore_proc_gas/${tier}/${materialName}`;
-
-		let recipe = event.recipes.tfg.ore_processing_gas(recipeId)
-			.itemInputs(inputItem)
-			.perTick(true)
-			.inputFluids(Fluid.of('gtceu:natural_gas', gasAmount))
-			.chancedFluidInput(Fluid.of('gtceu:distilled_water', 5), 1000)
-			.perTick(false)
-			.duration(20 * 20)
-			.EUt(GTValues.VA[GTValues.LV])
-			.dimension("minecraft:the_nether")
-			.posY(0, 40);
-
-		addExpectedOutput(recipe, dust, crushedExpectation);
-		addExpectedOutput(recipe, byproduct0, crushedExpectation * BYPRODUCT0_RATE);
-		addExpectedOutput(recipe, byproduct1, crushedExpectation * BYPRODUCT1_RATE);
-		addExpectedOutput(recipe, byproduct2, crushedExpectation * BYPRODUCT2_RATE);
-	}
-
-	forEachMaterial(material => {
-		if (material == null) return;
-		if (material.hasProperty(PropertyKey.GEM)) return;
-
-		processOreGasTier(material, 'crushed', TagPrefix.crushed, 1);
-		processOreGasTier(material, 'poor', TFGTagPrefix.poorRawOre, 5);
-		processOreGasTier(material, 'normal', TagPrefix.rawOre, 5);
-		processOreGasTier(material, 'rich', TFGTagPrefix.richRawOre, 5);
-	});
-
 	// Ore Processing Gas — Helpers
 
 	/*
@@ -217,4 +162,100 @@ function registerTFGBeneathOreProcRecipes(event) {
 		if (split.chance > 0)
 			recipe.chancedOutput(item, split.chance);
 	}
+
+	function createOreGasRecipe(material, tier, inputItem, gasAmount) {
+		const materialName = material.getName();
+		const recipeId = tier === 'crushed'
+			? `tfg:ore_proc_gas/${materialName}`
+			: `tfg:ore_proc_gas/${tier}/${materialName}`;
+
+		return event.recipes.tfg.ore_processing_gas(recipeId)
+			.itemInputs(inputItem)
+			.perTick(true)
+			.inputFluids(Fluid.of('gtceu:natural_gas', gasAmount))
+			.chancedFluidInput(Fluid.of('gtceu:distilled_water', 5), 1000)
+			.perTick(false)
+			.duration(20 * 20)
+			.EUt(GTValues.VA[GTValues.LV])
+			.dimension("minecraft:the_nether")
+			.posY(0, 40);
+	}
+
+	// Byproduct chances per crushed ore (from the standard processing chain)
+
+	const BYPRODUCT0_RATE = 0.3333;
+	const BYPRODUCT1_RATE = 0.3333;
+	const BYPRODUCT2_RATE = 0.14;
+
+	const GEM_WASH_BYPRODUCT_RATE = 0.3333;
+
+	const GEM_SIFTER_RATES = {
+		high: { exquisite: 0.05, flawless: 0.15, gem: 0.50, flawed: 0.20, chipped: 0.30, dust: 0.25 },
+		normal: { exquisite: 0.03, flawless: 0.10, gem: 0.35, flawed: 0.25, chipped: 0.35, dust: 0.50 }
+	};
+
+	function processOreGasTier(material, tier, inputTagPrefix, gasAmount) {
+		if (!material.hasProperty(PropertyKey.ORE)) return;
+
+		const oreProperty = material.getProperty(PropertyKey.ORE);
+		const multiplier = oreProperty.getOreMultiplier();
+
+		const inputItem = ChemicalHelper.get(inputTagPrefix, material, 1);
+		if (inputItem === null || inputItem.isEmpty()) return;
+
+		const dust = ChemicalHelper.get(TagPrefix.dust, material, 1);
+		if (dust === null || dust.isEmpty()) return;
+
+		const byproduct0 = ChemicalHelper.get(TagPrefix.dust, oreProperty.getOreByProduct(0, material), 1);
+		const byproduct1 = ChemicalHelper.get(TagPrefix.dust, oreProperty.getOreByProduct(1, material), 1);
+		const byproduct2 = ChemicalHelper.get(TagPrefix.dust, oreProperty.getOreByProduct(2, material), 1);
+
+		const crushedExpectation = getCrushedExpectation(tier, multiplier);
+
+		let recipe = createOreGasRecipe(material, tier, inputItem, gasAmount);
+
+		addExpectedOutput(recipe, dust, crushedExpectation);
+		addExpectedOutput(recipe, byproduct0, crushedExpectation * BYPRODUCT0_RATE);
+		addExpectedOutput(recipe, byproduct1, crushedExpectation * BYPRODUCT1_RATE);
+		addExpectedOutput(recipe, byproduct2, crushedExpectation * BYPRODUCT2_RATE);
+	}
+
+	function processGemOreGasTier(material, tier, inputTagPrefix, gasAmount) {
+		if (!material.hasProperty(PropertyKey.ORE)) return;
+
+		const oreProperty = material.getProperty(PropertyKey.ORE);
+		const multiplier = oreProperty.getOreMultiplier();
+
+		const inputItem = ChemicalHelper.get(inputTagPrefix, material, 1);
+		if (inputItem === null || inputItem.isEmpty()) return;
+
+		const gem = ChemicalHelper.get(TagPrefix.gem, material, 1);
+		if (gem === null || gem.isEmpty()) return;
+
+		const rates = material.hasFlag(MaterialFlags.HIGH_SIFTER_OUTPUT) ? GEM_SIFTER_RATES.high : GEM_SIFTER_RATES.normal;
+		const byproduct0 = ChemicalHelper.get(TagPrefix.dust, oreProperty.getOreByProduct(0, material), 1);
+
+		const crushedExpectation = getCrushedExpectation(tier, multiplier);
+
+		let recipe = createOreGasRecipe(material, tier, inputItem, gasAmount);
+
+		addExpectedOutput(recipe, ChemicalHelper.get(TagPrefix.gemExquisite, material, 1), crushedExpectation * rates.exquisite);
+		addExpectedOutput(recipe, ChemicalHelper.get(TagPrefix.gemFlawless, material, 1), crushedExpectation * rates.flawless);
+		addExpectedOutput(recipe, gem, crushedExpectation * rates.gem);
+		addExpectedOutput(recipe, ChemicalHelper.get(TagPrefix.gemFlawed, material, 1), crushedExpectation * rates.flawed);
+		addExpectedOutput(recipe, ChemicalHelper.get(TagPrefix.gemChipped, material, 1), crushedExpectation * rates.chipped);
+		addExpectedOutput(recipe, ChemicalHelper.get(TagPrefix.dust, material, 1), crushedExpectation * rates.dust);
+		addExpectedOutput(recipe, byproduct0, crushedExpectation * GEM_WASH_BYPRODUCT_RATE);
+	}
+
+	forEachMaterial(material => {
+		if (material == null) return;
+
+		const processTier = material.hasProperty(PropertyKey.GEM) ? processGemOreGasTier : processOreGasTier;
+
+		processTier(material, 'crushed', TagPrefix.crushed, 1);
+		processTier(material, 'poor', TFGTagPrefix.poorRawOre, 5);
+		processTier(material, 'normal', TagPrefix.rawOre, 5);
+		processTier(material, 'rich', TFGTagPrefix.richRawOre, 5);
+	});
 }
