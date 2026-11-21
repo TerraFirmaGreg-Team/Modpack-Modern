@@ -167,7 +167,7 @@ function registerTFGVenusBlockTags(event) {
 	event.add('tfg:venus_fire_immune', 'tfg:rock/raw/stromatolite')
 	event.add('tfg:venus_fire_immune', 'tfg:rock/spike/stromatolite')
 
-	// Venus rocks: raw, bricks, polished and chiseled with their stairs/slabs/walls, plus pillar and spike
+	// Venus rocks - But we are missing common ones
 
 	for (let rockId of ['flavolite', 'sandy_jadestone', 'sulphuric_rock']) {
 		let rock = global.BIG_ROCK_TABLE[rockId]
