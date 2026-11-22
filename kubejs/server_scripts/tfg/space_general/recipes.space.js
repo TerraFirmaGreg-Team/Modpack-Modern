@@ -46,12 +46,25 @@ function registerTFGSpaceRecipes(event) {
 		.duration(20*60*30)
 		.EUt(16)
 
+	function requiresNotOxygenation(recipe) {
+		TFGRecipeSchemaBindings.isNotOxygenated(recipe, true)
+	}
+
+	requiresNotOxygenation(
 	event.recipes.gtceu.gas_collector('tfg:mars')
 		.circuit(4)
 		.outputFluids(Fluid.of('tfg:mars_air', 10000))
 		.dimension('ad_astra:mars')
-		.duration(20*10)
-		.EUt(16)
+		.duration(2000)
+		.EUt(16))
+
+	requiresNotOxygenation(
+	event.recipes.gtceu.gas_collector('tfg:venus')
+		.circuit(5)
+		.outputFluids(Fluid.of('tfg:venus_air', 10000))
+		.dimension('ad_astra:venus')
+		.duration(200)
+		.EUt(16))
 
 
 	// Aqueous accumulator -- use adjacentFluids (plural) to avoid rhino ambiguous method issues

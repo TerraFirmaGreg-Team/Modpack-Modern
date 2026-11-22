@@ -178,8 +178,7 @@ function registerTFGCoilRecipes(event) {
 
 	event.remove({ id : 'gtceu:assembler/coil_hssg' })
 	event.recipes.gtceu.assembler('tfg:coil_hssg')
-		// TODO: Replace the tungsten carbide foil with zirconium diboride
-		.itemInputs('8x #forge:double_wires/hssg', '8x #forge:foils/tungsten_carbide', '#forge:insulation_t3/sheet')
+		.itemInputs('8x #forge:double_wires/hssg', '8x #forge:foils/zirconium_diboride', '#forge:insulation_t3/sheet')
 		// TODO: Replace tungsten liquid with something else from venus
 		.inputFluids('gtceu:tungsten 144')
 		.itemOutputs('gtceu:hssg_coil_block')

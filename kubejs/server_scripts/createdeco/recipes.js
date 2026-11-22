@@ -259,8 +259,6 @@ const registerCreatedecoRecipes = (event) => {
 	event.shapeless(`tfc:metal/trapdoor/steel`, `createdeco:industrial_iron_trapdoor`)
 	TFGHelpers.registerMaterialInfo('createdeco:industrial_iron_trapdoor', [GTMaterials.Steel, 1])
 
-	// TODO: move these two into the tag prefixes in tfg-core, then remove these recipes
-
 	event.recipes.tfc.anvil(`createdeco:brass_trapdoor`, `#forge:ingots/brass`, ['shrink_last', 'draw_second_last', 'draw_third_last'])
 		.tier(2).id(`createdeco:anvil/brass_trapdoor`)
 

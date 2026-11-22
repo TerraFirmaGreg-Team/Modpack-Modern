@@ -1,8 +1,6 @@
 // priority: 0
 "use strict";
 
-// TODO: merge these two tag prefixes
-
 /**
  * @param {Internal.RecipesEventJS} event 
  * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
