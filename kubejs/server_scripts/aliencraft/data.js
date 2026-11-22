@@ -32,5 +32,14 @@ function registerAliencraftTFCData(event) {
 		food.decayModifier(2.25);
 	})
 
+	event.foodItem("aliencraft_kepler:luminodendron_fruit", food => {
+		food.hunger(4)
+		food.saturation(1)
+		food.fruit(1.0)
+		food.toxins(1.0)
+		food.water(10)
+		food.decayModifier(2.25);
+	})
+
 	event.itemSize('aliencraft_kepler:alien_goo_gun', 'large', 'heavy')
 }

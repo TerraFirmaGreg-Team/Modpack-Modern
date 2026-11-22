@@ -945,29 +945,8 @@
             "redistributable": false,
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "aliencraft_kepler-1.0.5-forge-1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8896/274/aliencraft_kepler-1.0.5-forge-1.20.1.jar",
-                    "id": "8896274",
-                    "parent_id": "1444616",
-                    "hashes": {
-                        "sha1": "dcda699c57766d037b8e831fd330465e34a8c289",
-                        "md5": "59870208a70121fc29ec8372be556b43"
-                    },
-                    "required_dependencies": [],
-                    "size": 19831897,
-                    "date_published": "2026-09-16T15:28:50.247Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "aliencraft_kepler-1.0.5-forge-1.20.1.jar",
+                    "file_name": "aliencraft_kepler-1.0.6-forge-1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -975,16 +954,37 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/NdBIIV2R/versions/W9sCIwXK/aliencraft_kepler-1.0.5-forge-1.20.1.jar",
-                    "id": "W9sCIwXK",
+                    "url": "https://cdn.modrinth.com/data/NdBIIV2R/versions/gwK1nM11/aliencraft_kepler-1.0.6-forge-1.20.1.jar",
+                    "id": "gwK1nM11",
                     "parent_id": "NdBIIV2R",
                     "hashes": {
-                        "sha512": "de6eae687e25a6a463c845fae90421716b17b0c18c2a8b49671a9da42e5a6001bbfc6f54b9b4c3c2ef0edd627de1d5600d66a3f9a5ad26002a1569e69848f5e1",
-                        "sha1": "dcda699c57766d037b8e831fd330465e34a8c289"
+                        "sha512": "8fe9f98b47e482e176157101de44ccc9f9f04e7321ecf573ee3e34b8285f886b3ea3b60a8adf3b4882819c1a704a17fea8265e5b06605e550d40ff42a179c39a",
+                        "sha1": "8d6ed7176c6b391de4c70d821755a3305f984fce"
                     },
                     "required_dependencies": [],
-                    "size": 19831897,
-                    "date_published": "2026-09-16T15:39:36.125142Z"
+                    "size": 27216238,
+                    "date_published": "2026-10-27T14:32:58.726138Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "aliencraft_kepler-1.0.6-forge-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9336/309/aliencraft_kepler-1.0.6-forge-1.20.1.jar",
+                    "id": "9336309",
+                    "parent_id": "1444616",
+                    "hashes": {
+                        "sha1": "8d6ed7176c6b391de4c70d821755a3305f984fce",
+                        "md5": "95312134a6401c06a7e76b8819d4165d"
+                    },
+                    "required_dependencies": [],
+                    "size": 27216238,
+                    "date_published": "2026-10-26T19:07:57.557Z"
                 }
             ]
         },

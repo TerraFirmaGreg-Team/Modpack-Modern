@@ -2136,7 +2136,7 @@
 			subtitle: "{quests.medium_voltage.large_steel_boiler.subtitle}"
 			tasks: [{
 				id: "1041BC3BF3B54F2E"
-				item: "tfg:large_steel_boiler"
+				item: "tfg:large_bronze_boiler"
 				type: "item"
 			}]
 			x: 3.0d
