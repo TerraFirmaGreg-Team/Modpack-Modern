@@ -271,14 +271,13 @@ function processTurbineBlade(event, material) {
  * @param {Internal.RecipesEventJS} event 
  */
 function registerTFGMaterialRecipes(event) {
-	const $GreateMaterials = Java.loadClass("electrolyte.greate.registry.GreateMaterials");
 
 	forEachMaterial(material => {
 		// greate moment
-		if (material === $GreateMaterials.AndesiteAlloy
-			|| material === $GreateMaterials.RefinedRadiance
-			|| material === $GreateMaterials.ShadowSteel
-			|| material === $GreateMaterials.ChromaticCompound
+		if (material === GreateMaterials.AndesiteAlloy
+			|| material === GreateMaterials.RefinedRadiance
+			|| material === GreateMaterials.ShadowSteel
+			|| material === GreateMaterials.ChromaticCompound
 			|| material === GTMaterials.DamascusSteel) { return; }
 
 		if (material.hasProperty(PropertyKey.DUST)) {

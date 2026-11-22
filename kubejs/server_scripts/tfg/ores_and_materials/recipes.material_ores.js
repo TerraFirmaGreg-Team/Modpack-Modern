@@ -577,8 +577,8 @@ function processImpureDust(event, material) {
 		event.recipes.vintageimprovements.centrifugation(
 			[dustItem, Item.of(ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1)).withChance(0.111)],
 			impureDustItem)
-			.processingTime(material.getMass() * 3 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-			.minimalRPM(32)
+			.processingTime(material.getMass() * global.VINTAGE_IMPROVEMENTS_CENTRIFUGE_MULTIPLIER)
+			.minimalRPM(64)
 			.id(`tfg:vi/centrifuge/${materialName}_dust_from_impure`)
 
 		// Dropping in water
@@ -642,8 +642,8 @@ function processPureDust(event, material) {
 		event.recipes.vintageimprovements.centrifugation(
 			[dustItem, Item.of(ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1)).withChance(0.111)],
 			pureDustItem)
-			.processingTime(material.getMass() * 3 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-			.minimalRPM(32)
+			.processingTime(material.getMass() * global.VINTAGE_IMPROVEMENTS_CENTRIFUGE_MULTIPLIER)
+			.minimalRPM(64)
 			.id(`tfg:vi/centrifuge/${materialName}_dust_from_pure`)
 
 		// Dropping in water

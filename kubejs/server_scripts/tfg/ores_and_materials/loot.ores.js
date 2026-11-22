@@ -4,8 +4,6 @@
 const registerTFGOreLoots = (event) => {
 	
 	// Go through all materials
-	const $GreateMaterials = Java.loadClass("electrolyte.greate.registry.GreateMaterials")
-
 	forEachMaterial(material => {
 		if (material.hasProperty(PropertyKey.ORE)) {
 			// Indicator buds
@@ -70,7 +68,7 @@ const registerTFGOreLoots = (event) => {
 				let stoneTypeMaterial = GTMaterials.get(global.BIG_ROCK_TABLE[stoneType === "pyroxenite" ? "blackstone" : stoneType].material);
 				
 				let stoneTypeDust = ChemicalHelper.get(TagPrefix.dust, stoneTypeMaterial, 1)
-				let namespace = material === $GreateMaterials.RoseQuartz ? 'greate' : 'gtceu';
+				let namespace = material === GreateMaterials.RoseQuartz ? 'greate' : 'gtceu';
 
 				event.addBlockLootModifier(`${namespace}:${stoneType}_${material.getName()}_ore`)
 					.removeLoot(Ingredient.all)

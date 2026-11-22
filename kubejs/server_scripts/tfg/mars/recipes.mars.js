@@ -41,14 +41,14 @@ function registerTFGMarsRecipes(event) {
 		.EUt(GTValues.VHA[GTValues.ULV])
 
 	event.recipes.gtceu.centrifuge('mars_semiheavy_water')
-		.inputFluids(Fluid.of('tfg:semiheavy_ammoniacal_water', 1000))
-		.outputFluids(Fluid.of('tfg:semiheavy_water', 500))
-		.itemOutputs('2x #forge:tiny_dusts/ammonium_chloride')
-		.duration(20*9)
+		.inputFluids(Fluid.of('tfg:semiheavy_ammoniacal_water', 500))
+		.outputFluids(Fluid.of('tfg:semiheavy_water', 250))
+		.itemOutputs('#forge:tiny_dusts/ammonium_chloride')
+		.duration(20*4.5)
 		.EUt(GTValues.VHA[GTValues.ULV])
 
-	event.recipes.vintageimprovements.centrifugation([Fluid.of('tfg:semiheavy_water', 500), '2x #forge:tiny_dusts/ammonium_chloride'], Fluid.of('tfg:semiheavy_ammoniacal_water', 1000))
-		.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+	event.recipes.vintageimprovements.centrifugation([Fluid.of('tfg:semiheavy_water', 250), '#forge:tiny_dusts/ammonium_chloride'], Fluid.of('tfg:semiheavy_ammoniacal_water', 500))
+		.processingTime(100 * global.VINTAGE_IMPROVEMENTS_CENTRIFUGE_MULTIPLIER)
 		.minimalRPM(32)
 		.id('tfg:vi/centrifuge_mars_semiheavy_water')
 

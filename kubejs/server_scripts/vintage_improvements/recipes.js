@@ -306,9 +306,8 @@ function registerVintageImprovementsRecipes(event) {
 	})
 	// #endregion
 
-	const $GreateMaterials = Java.loadClass("electrolyte.greate.registry.GreateMaterials")
 	forEachMaterial(material => {
-		if (material == $GreateMaterials.AndesiteAlloy)
+		if (material == GreateMaterials.AndesiteAlloy)
 			return;
 
 		const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
@@ -390,7 +389,7 @@ function registerVintageImprovementsRecipes(event) {
 					Item.of(ChemicalHelper.get(TagPrefix.gemChipped, material, 1)).withChance(highYield ? 0.30 : 0.35)
 				], 
 				ChemicalHelper.get(TagPrefix.crushedPurified, material, 1))
-					.processingTime(500 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+					.processingTime(250 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
 					.id(`tfg:vi/vibrating/${material.getName()}`)
 		}
 

@@ -3,15 +3,13 @@
 
 function registerTFGOresMaterialModification(event) {
 	const $ORE_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.OreProperty');
-	const $GreateMaterials = Java.loadClass("electrolyte.greate.registry.GreateMaterials");
 	
 	// Ores
 	GTMaterials.Bismuth.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
 	GTMaterials.Borax.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
 
-	let rose_quartz = $GreateMaterials.RoseQuartz;
-	rose_quartz.setProperty(PropertyKey.ORE, new $ORE_PROPERTY(6, 1, true));
-	rose_quartz.getProperty(PropertyKey.ORE).setOreByProducts(rose_quartz, GTMaterials.Redstone, rose_quartz);
+	GreateMaterials.RoseQuartz.setProperty(PropertyKey.ORE, new $ORE_PROPERTY(6, 1, true));
+	GreateMaterials.RoseQuartz.getProperty(PropertyKey.ORE).setOreByProducts(GreateMaterials.RoseQuartz, GTMaterials.Redstone, GreateMaterials.RoseQuartz);
 
 	// Change byproducts so you can't get certus from normal quartzite
 	GTMaterials.Quartzite.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.NetherQuartz, GTMaterials.Barite, GTMaterials.NetherQuartz);

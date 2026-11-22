@@ -65,9 +65,11 @@
 			"create:encased_fan",
 			"create:millstone",
 			"create:crushing_wheel",
+			"create:mechanical_saw",
 			"create:mechanical_press",
 			"create:mechanical_mixer",
-			"create:steam_engine"
+			"create:steam_engine",
+			"create:chain_conveyor"
 		]
 	}
 ]

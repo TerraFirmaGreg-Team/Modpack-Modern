@@ -219,6 +219,5 @@ function modifyTFGIconSets(event) {
 
     GTMaterials.Zirconium.setMaterialIconSet(GTMaterialIconSet.getByName('chonky'))
 
-    const $GreateMaterials = Java.loadClass("electrolyte.greate.registry.GreateMaterials")
-	$GreateMaterials.RoseQuartz.setMaterialIconSet(GTMaterialIconSet.getByName('nether_quartz'))
+	GreateMaterials.RoseQuartz.setMaterialIconSet(GTMaterialIconSet.getByName('nether_quartz'))
 }

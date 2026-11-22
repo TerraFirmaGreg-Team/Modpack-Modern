@@ -81,16 +81,16 @@
 			#[in Stress Units]
 			#Configure the individual stress impact of mechanical blocks. Note that this cost is doubled for every speed increase it receives.
 			[kinetics.stressValues.v2.impact]
-				laser = 0.25
-				belt_grinder = 0.25
-				vacuum_chamber = 0.5
-				lathe = 0.25
-				lathe_moving = 0.25
-				vibrating_table = 0.5
-				helve_kinetic = 0.5
-				curving_press = 0.5
-				spring_coiling_machine = 0.5
-				centrifuge = 0.5
+				laser = 1.0
+				belt_grinder = 2.0
+				vacuum_chamber = 2.0
+				lathe = 2.0
+				lathe_moving = 2.0
+				vibrating_table = 2.0
+				helve_kinetic = 1.0
+				curving_press = 2.0
+				spring_coiling_machine = 2.0
+				centrifuge = 2.0
 
 #.
 #Parameters and abilities of Vintage Improvements's energy mechanisms

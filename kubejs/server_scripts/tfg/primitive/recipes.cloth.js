@@ -419,12 +419,12 @@ function registerTFGClothRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.vintageimprovements.centrifugation(['2x tfg:flax_line', 'tfg:flax_tow', 'tfc:groundcover/humus'], 'tfg:flax_product')
-		.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+		.processingTime(25 * global.VINTAGE_IMPROVEMENTS_CENTRIFUGE_MULTIPLIER)
 		.minimalRPM(32)
 		.id('tfg:vi_seperate_flax')
 		
 	event.recipes.vintageimprovements.centrifugation(['18x tfg:flax_line', '9x tfg:flax_tow', '9x tfc:groundcover/humus'], 'tfg:flax_bundle')
-		.processingTime(450 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+		.processingTime(25 * 9 * global.VINTAGE_IMPROVEMENTS_CENTRIFUGE_MULTIPLIER)
 		.minimalRPM(32)
 		.id('tfg:vi_seperate_flax_from_bundle')
 
