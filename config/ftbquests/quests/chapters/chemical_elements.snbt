@@ -43,14 +43,6 @@
 			image: "ftbquests:textures/shapes/square/outline.png"
 			rotation: 0.0d
 			width: 1.0d
-			x: 1.0d
-			y: 4.0d
-		}
-		{
-			height: 1.0d
-			image: "ftbquests:textures/shapes/square/outline.png"
-			rotation: 0.0d
-			width: 1.0d
 			x: 6.0d
 			y: 4.0d
 		}
@@ -1903,6 +1895,20 @@
 			}]
 			title: "{material.gtceu.tellurium}"
 			x: 15.0d
+			y: 4.0d
+		}
+		{
+			description: ["{quests.chemical_elements.strontium.desc}"]
+			disable_toast: true
+			id: "49B1030C5BF29C60"
+			subtitle: "{quests.chemical_elements.element} #38"
+			tasks: [{
+				id: "248FC3C87C234BBA"
+				item: "gtceu:strontium_dust"
+				type: "item"
+			}]
+			title: "{material.gtceu.strontium}"
+			x: 1.0d
 			y: 4.0d
 		}
 	]

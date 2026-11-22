@@ -22,4 +22,67 @@ function registerTFGVenusRecipes(event) {
 		['tfg:fumarole_sample'],
 		['tfg:floating_fumarole_colony', 'gtceu:petri_dish'])
 		.id('tfg:item_application/fumarole_manual_only')
+
+	event.custom({
+		type: "ae2:transform",
+		circumstance: {
+			type: "fluid",
+			// TODO: Change to the fluid inside the alkaline hornfels geodes
+			tag: "tfcchannelcasting:mixable"
+		},
+		ingredients: [
+			{
+				item: 'arthropocolypse:beetle_fragment'
+			},
+			{
+				item: 'tfg:boron_carbide_dust'
+			}
+		],
+		result: {
+			item: 'ad_astra:raw_calorite'
+		}
+	}).id('tfg:ae2_transform/raw_calorite')
+
+	event.custom({
+		type: "ae2:transform",
+		circumstance: {
+			type: "fluid",
+			// TODO: Change to the fluid inside the alkaline hornfels geodes
+			tag: "tfcchannelcasting:mixable"
+		},
+		ingredients: [
+			{
+				item: 'tfg:tall_stromatolite'
+			},
+			{
+				item: 'tfg:tiny_boron_carbide_dust'
+			}
+		],
+		result: {
+			item: 'ad_astra:calorite_nugget'
+		}
+	}).id('tfg:ae2_transform/tall_stromatolite')
+
+	event.custom({
+		type: "ae2:transform",
+		circumstance: {
+			type: "fluid",
+			// TODO: Change to the fluid inside the alkaline hornfels geodes
+			tag: "tfcchannelcasting:mixable"
+		},
+		ingredients: [
+			{
+				item: 'tfg:rock/raw/stromatolite'
+			},
+			{
+				item: 'tfg:tiny_boron_carbide_dust'
+			}
+		],
+		result: {
+			item: 'ad_astra:calorite_nugget'
+		}
+	}).id('tfg:ae2_transform/raw_stromatolite')
+
+	event.smelting('ad_astra:calorite_ingot', 'ad_astra:raw_calorite')
+		.id('tfg:smelting/calorite')
 }

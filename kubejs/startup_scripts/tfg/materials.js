@@ -39,6 +39,7 @@ const registerTFGMaterials = (event) => {
 	registerTFGPrimitiveMaterials(event);
 	registerTFGFoodMaterials(event)
 	registerTFGRockMaterials(event);
+	registerTFGMiscAlloyMaterials(event);
 
 	registerTFGRocketMaterials(event);
 	registerTFGMoonMaterials(event);
@@ -60,7 +61,6 @@ const registerTFGMaterials = (event) => {
 	registerTFGZirconiumMaterials(event);
 	registerTFGAluminaMaterials(event)
 	registerTFGGemSlurryMaterials(event);
-	registerTFGMiscAlloyMaterials(event);
 	registerTFGCasingsMaterials(event);
 	registerTFGPetroChemMaterials(event);
 

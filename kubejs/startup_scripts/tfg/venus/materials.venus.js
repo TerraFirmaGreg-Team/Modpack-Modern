@@ -5,7 +5,7 @@ function registerTFGVenusMaterials(event) {
 	// Ores
 
 	event.create('tfg:calorite')
-		//.components('2x mercury', '1x tungsten', '1x rhodium', '2x sulfur')
+		.components('8x silicon', '2x strontium', '1x tfg:boron_carbide')
 		.color(0xC94D4E)
 		.secondaryColor(0x9A296A)
 		.iconSet(GTMaterialIconSet.getByName('botryoidal'))
@@ -14,7 +14,8 @@ function registerTFGVenusMaterials(event) {
 			GTMaterialFlags.FORCE_GENERATE_BLOCK,
 			GTMaterialFlags.GENERATE_PLATE,
 			GTMaterialFlags.GENERATE_ROD,
-			GTMaterialFlags.GENERATE_FRAME
+			GTMaterialFlags.GENERATE_FRAME,
+			GTMaterialFlags.DISABLE_DECOMPOSITION
 		)
 
 	//#region Bromine Line
