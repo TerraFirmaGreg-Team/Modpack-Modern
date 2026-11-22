@@ -1,0 +1,23 @@
+{
+	"tfg.machine.oxygen_distributor.status.restoring": "Відновлення...",
+	"tfg.machine.oxygen_distributor.status.too_wide": "Приміщення надто широке",
+	"tfg.machine.oxygen_distributor.energy": "Використовує %s EU/t",
+	"tfg.machine.oxygen_distributor.idle": "Неактивний",
+	"tfg.machine.oxygen_distributor.status.chunk_unloaded": "Приміщення не завантажене",
+	"tfg.machine.oxygen_distributor.active": "Активний",
+	"tfg.machine.oxygen_distributor.status.breached": "Порушено",
+	"tfg.machine.oxygen_distributor.status.scanning": "Сканування...",
+	"tfg.machine.oxygen_distributor.status.no_energy": "Очікування живлення",
+	"block.tfg.oxygen_distributor": "Розподільник кисню",
+	"tfg.machine.oxygen_distributor.status.scan_limit": "Приміщення надто велике для сканування",
+	"tfg.machine.oxygen_distributor.find_leak": "Відстежити витік",
+	"block.tfg.higgs_emitter": "Випромінювач Хіггса",
+	"tfg.machine.oxygen_distributor.size": "Розмір приміщення: %s блоків",
+	"tfg.machine.oxygen_distributor.fill_suit": "Поповнити запас кисню в костюмі",
+	"tfg.machine.higgs_emitter.radius": "Радіус: %s",
+	"tfg.machine.oxygen_distributor.status.sealed": "Запечатано",
+	"tfg.machine.oxygen_distributor.consumption": "Споживання %s",
+	"tfg.machine.oxygen_distributor.status": "Статус: ",
+	"tfg.machine.heat_pump.status.blocked": "Вихлоп заблоковано — задня сторона теплової помпи має виходити у відкритий простір",
+	"block.tfg.heat_pump": "Теплова помпа"
+}
