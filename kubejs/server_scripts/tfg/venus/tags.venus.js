@@ -135,6 +135,7 @@ function registerTFGVenusBlockTags(event) {
 
 	event.add('tfg:geyserite_geode_cannot_replace', 'minecraft:air')
 	event.add('tfg:geyserite_geode_cannot_replace', 'minecraft:cave_air')
+	event.add('tfg:geyserite_geode_cannot_replace', 'tfg:fluid/sulfur_fumes')
 	event.add('tfg:geyserite_geode_cannot_replace', 'tfg:fluid/geyser_slurry')
 	event.add('tfg:geyserite_geode_cannot_replace', 'minecraft:lava')
 	event.add('tfg:geyserite_geode_cannot_replace', '#minecraft:mineable/hoe')
