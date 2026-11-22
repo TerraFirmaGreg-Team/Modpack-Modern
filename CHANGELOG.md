@@ -1,6 +1,7 @@
 # Changelog
 
 ### Changes
+- Added watercraft for Araucaria, Ginkgo, Mahoe, Beech, and Glacian woods. (#5370) @Nebby1999
 ### Bug fixes
 
 ## [0.13.19] - 18-11-2026
