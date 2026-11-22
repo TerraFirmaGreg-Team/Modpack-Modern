@@ -82,24 +82,24 @@
 	"has_precipitation": true,
 	"spawn_costs": {
 		"endermanoverhaul:desert_enderman": {
-			"energy_budget": 0.05,
-			"charge": 0.9
+			"energy_budget": 0.15,
+			"charge": 0.7
 		},
 		"endermanoverhaul:savanna_enderman": {
-			"energy_budget": 0.05,
-			"charge": 0.9
+			"energy_budget": 0.15,
+			"charge": 0.7
 		},
 		"endermanoverhaul:nether_wastes_enderman": {
-			"energy_budget": 0.05,
-			"charge": 0.9
+			"energy_budget": 0.15,
+			"charge": 0.7
 		},
 		"minecraft:enderman": {
-			"energy_budget": 0.05,
-			"charge": 0.9
+			"energy_budget": 0.15,
+			"charge": 0.7
 		},
 		"ad_astra:sulfur_creeper": {
-			"energy_budget": 0.05,
-			"charge": 0.9
+			"energy_budget": 0.15,
+			"charge": 0.7
 		},
 		"primitive_creatures:golem_2": {
 			"energy_budget": 0.15,
@@ -114,12 +114,12 @@
 			"charge": 0.10
 		},
 		"arthropocolypse:millipede_head": {
-			"energy_budget": 0.05,
-			"charge": 0.9
+			"energy_budget": 0.15,
+			"charge": 0.7
 		},
 		"aliencraft_kepler:ancient_beetle": {
-			"energy_budget": 0.05,
-			"charge": 0.9
+			"energy_budget": 0.15,
+			"charge": 0.7
 		},
 		"opposing_force:slug": {
 			"energy_budget": 0.15,
@@ -194,12 +194,6 @@
 				"maxCount": 4,
 				"minCount": 2,
 				"weight": 30
-			},
-			{
-				"type": "aliencraft_kepler:ancient_beetle",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 20
 			}
 		],
 		"misc": [],
