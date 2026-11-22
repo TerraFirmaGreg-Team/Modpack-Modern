@@ -32,11 +32,12 @@ function registerTFGWoodenRecipes(event) {
 	 * @param {string} button -ID for the button.
 	 * @param {string} log_wood -ID for the log wood.
 	 * @param {string} stripped_wood -ID for the stripped wood.
+	 * @param {string} roofing -ID for the roofing
 	 */
 	function TFGWoodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair, slab, door, trapdoor, fence, log_fence,
 		fence_gate, support, pressure_plate, button, log_wood, stripped_wood, tool_rack, workbench, bookshelf, chest, trapped_chest,
 		loom, sluice, barrel, lectern, scribing_table, sewing_table, jar_shelf, food_shelf, hanger, jarbnet, big_barrel,
-		stomping_barrel, barrel_press, wine_shelf, sign, hanging_sign, crafting_station, workbench_as_material, rope_ladder) {
+		stomping_barrel, barrel_press, wine_shelf, sign, hanging_sign, crafting_station, workbench_as_material, rope_ladder, roofing) {
 
 		// Stripped log from log
 		if (log && stripped_log && name) {
@@ -583,6 +584,24 @@ function registerTFGWoodenRecipes(event) {
 				L: lumber
 			}).id(`tfg:shaped/${name}_rope_ladder_coil`);
 		}
+
+		//Roofing from Planks
+		if(plank && roofing && name)
+		{
+			event.shaped(`6x ${roofing}`, [
+				'  P',
+				' P ',
+				'P  '
+			], {
+				P: plank
+			}).id(`tfg:shaped/${name}_roofing`);
+		}
+
+		//Lumber from Roofing
+		if(lumber && roofing && name)
+		{
+			event.shapeless(`2x ${lumber}`, [roofing, '#tfc:saws']).id(`tfg:shapeless/${name}_lumber_from_roofing`);
+		}
 	}
 
 	// #endregion
@@ -799,7 +818,8 @@ function registerTFGWoodenRecipes(event) {
 			`tfg:wood/hanging_sign/${wood.name}`,
 			`tfg:wood/crafting_station/${wood.name}`,
 			`tfg:wood/workbench/${wood.name}`,
-			`tfg:wood/rope_ladder/${wood.name}`
+			`tfg:wood/rope_ladder/${wood.name}`,
+			`tfg:wood/${wood.name}_roofing`
 		)
 
 		TFGLogToWoodBuilder(event, wood.name, 
@@ -855,7 +875,8 @@ function registerTFGWoodenRecipes(event) {
 			`wan_ancient_beasts:${wood.name}_hanging_sign`,
 			`tfg:wood/crafting_station/${wood.name}`,
 			`tfg:wood/workbench/${wood.name}`,
-			`tfg:wood/rope_ladder/${wood.name}`
+			`tfg:wood/rope_ladder/${wood.name}`,
+			`tfg:wood/${wood.name}_roofing`
 		)
 
 		TFGLogToWoodBuilder(event, wood.name, 
@@ -912,7 +933,8 @@ function registerTFGWoodenRecipes(event) {
 			`tfg:wood/hanging_sign/${wood.name}`,
 			`tfg:wood/crafting_station/${wood.name}`,
 			`tfg:wood/workbench/${wood.name}`,
-			`tfg:wood/rope_ladder/${wood.name}`
+			`tfg:wood/rope_ladder/${wood.name}`,
+			`tfg:wood/${wood.name}_roofing`,
 		);
 	});
 
@@ -997,7 +1019,8 @@ function registerTFGWoodenRecipes(event) {
 			null,
 			`tfg:wood/crafting_station/${wood}`,
 			`beneath:wood/planks/${wood}_workbench`,
-			`tfg:wood/rope_ladder/${wood}`
+			`tfg:wood/rope_ladder/${wood}`,
+			null
 		);
 	});
 
@@ -1073,7 +1096,8 @@ function registerTFGWoodenRecipes(event) {
 			null,
 			`tfg:wood/crafting_station/${wood}`,
 			`afc:wood/planks/${wood}_workbench`,
-			`tfg:wood/rope_ladder/${wood}`
+			`tfg:wood/rope_ladder/${wood}`,
+			null
 		);
 	});
 
@@ -1260,7 +1284,8 @@ function registerTFGWoodenRecipes(event) {
 			null,
 			`tfg:wood/crafting_station/${wood}`,
 			`tfc:wood/planks/${wood}_workbench`,
-			`tfg:wood/rope_ladder/${wood}`
+			`tfg:wood/rope_ladder/${wood}`,
+			null
 		);
 	});
 
@@ -1351,6 +1376,7 @@ function registerTFGWoodenRecipes(event) {
 		null,
 		null,
 		null,
+		null,
 		null
 	);
 
@@ -1399,6 +1425,7 @@ function registerTFGWoodenRecipes(event) {
 		null,
 		'gtceu:treated_wood_pressure_plate',
 		'gtceu:treated_wood_button',
+		null,
 		null,
 		null,
 		null,
