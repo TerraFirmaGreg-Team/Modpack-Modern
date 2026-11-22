@@ -57,7 +57,7 @@ global.AD_ASTRA_WOOD = [
 		door: 'ad_astra:aeronos_door', trapdoor: 'ad_astra:aeronos_trapdoor',
 		button: null, pressure_plate: null,
 		support: 'tfg:aeronos_support',
-		isHardwood: false
+		woodKind: "NONE"
 	},
 	{
 		name: 'strophar',
@@ -69,7 +69,7 @@ global.AD_ASTRA_WOOD = [
 		door:'ad_astra:strophar_door', trapdoor: 'ad_astra:strophar_trapdoor',
 		button: null, pressure_plate: null,
 		support: 'tfg:strophar_support',
-		isHardwood: false
+		woodKind: "NONE"
 	},
 	{
 		name: 'glacian',
@@ -81,6 +81,6 @@ global.AD_ASTRA_WOOD = [
 		door: 'ad_astra:glacian_door', trapdoor: 'ad_astra:glacian_trapdoor',
 		button: 'ad_astra:glacian_button', pressure_plate: 'ad_astra:glacian_pressure_plate',
 		support: 'tfg:glacian_support',
-		isHardwood: true
+		woodKind: "HARD"
 	}
 ]
