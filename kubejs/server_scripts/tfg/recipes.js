@@ -69,6 +69,7 @@ const registerTFGRecipes = (event) => {
 	registerTFGCoilRecipes(event)
 	registerTFGBouleRecipes(event)
 
+	registerTFGMicrobialCultivatorBacteria()
 	registerTFGMicrobialCultivatorRecipes(event)
 	registerTFGEarlyGasRecipes(event)
 	registerTFGBoilerRecipes(event)
