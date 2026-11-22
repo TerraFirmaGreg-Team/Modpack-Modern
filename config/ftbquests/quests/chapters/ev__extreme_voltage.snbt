@@ -1484,29 +1484,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["3A2E442E4D84C891"]
-			description: ["{quests.extreme_voltage.liquid_mars_air.desc}"]
-			icon: "tfg:liquid_mars_air_bucket"
-			id: "3A46387D683ADC58"
-			subtitle: "{quests.extreme_voltage.liquid_mars_air.subtitle}"
-			tasks: [
-				{
-					id: "60D5C9CC89134D1E"
-					item: "tfg:liquid_mars_air_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "7679D78CE272C509"
-					title: "{quests.tasktype.checkmark}"
-					type: "checkmark"
-				}
-			]
-			title: "{quests.extreme_voltage.liquid_mars_air.title}"
-			x: -9.5d
-			y: 1.0d
-		}
-		{
 			dependencies: [
 				"29E0829816B9DBA0"
 				"1655573AE1C8484B"

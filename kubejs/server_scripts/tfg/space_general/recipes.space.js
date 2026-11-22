@@ -39,16 +39,17 @@ function registerTFGSpaceRecipes(event) {
 		.duration(200)
 		.EUt(16)
 
+	function requiresNotOxygenation(recipe) {
+		TFGRecipeSchemaBindings.isOxygenated(recipe, false)
+	}
+	
+	requiresNotOxygenation(
 	event.recipes.gtceu.gas_collector('tfg:moon')
 		.circuit(3)
 		.outputFluids(Fluid.of('gtceu:argon', 1))
 		.dimension('ad_astra:moon')
 		.duration(20*60*30)
-		.EUt(16)
-
-	function requiresNotOxygenation(recipe) {
-		TFGRecipeSchemaBindings.isNotOxygenated(recipe, true)
-	}
+		.EUt(16))
 
 	requiresNotOxygenation(
 	event.recipes.gtceu.gas_collector('tfg:mars')

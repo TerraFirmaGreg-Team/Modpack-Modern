@@ -65,7 +65,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Mix together the Crimsene and Warpane, along with some Krypton from Mars Air Distillation (it's looped) and the heat from your $(l:mars/fission)Fission Reactor$(), and you'll get $(item)Iodine$()!$(br2)This process is slow, but you shouldn't need a lot of it for now, and there will be better methods of obtaining Iodine on further planets."
+			"text": "Mix together the Crimsene and Warpane, along with some Hydrogen, and you'll get $(item)Iodine$()!$(br2)This process is slow, but you shouldn't need a lot of it for now, and there will be better methods of obtaining Iodine on further planets."
 		},
 		{
 			"type": "patchouli:relations",

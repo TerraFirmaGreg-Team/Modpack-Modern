@@ -4,29 +4,16 @@ function registerTFGMarsRecipes(event) {
 
 	// Mars air
 
-	event.recipes.gtceu.vacuum_freezer('tfg:liquid_mars_air')
-		.inputFluids(Fluid.of('tfg:mars_air', 4000))
-		.outputFluids(Fluid.of('tfg:liquid_mars_air', 4000))
-		.duration(80)
-		.EUt(GTValues.VA[GTValues.EV])
-
 	event.recipes.gtceu.centrifuge('tfg:centrifuge_mars_air')
 		.inputFluids(Fluid.of('tfg:mars_air', 10000))
-		.outputFluids(Fluid.of('gtceu:carbon_dioxide', 3900), Fluid.of('gtceu:nitrogen', 1000), Fluid.of('gtceu:argon', 500))
+		.outputFluids(
+			Fluid.of('gtceu:carbon_dioxide', 8000),
+			Fluid.of('gtceu:nitrogen', 1000),
+			Fluid.of('gtceu:argon', 500),
+			Fluid.of('gtceu:oxygen', 500))
+		.itemOutputs('gtceu:tiny_ammonium_chloride_dust')
 		.duration(1600)
 		.EUt(GTValues.VA[GTValues.LV])
-
-	event.recipes.gtceu.distillation_tower('tfg:distill_liquid_mars_air')
-		.inputFluids(Fluid.of('tfg:liquid_mars_air', 100000))
-		.outputFluids(Fluid.of('gtceu:carbon_dioxide', 80000))
-		.outputFluids(Fluid.of('gtceu:nitrogen', 9000))
-		.outputFluids(Fluid.of('gtceu:argon', 5000))
-		.outputFluids(Fluid.of('gtceu:oxygen', 3000))
-		.outputFluids(Fluid.of('gtceu:krypton', 1000))
-		.chancedOutput('gtceu:ammonium_chloride_dust', 2250, 0)
-		.disableDistilleryRecipes(true)
-		.duration(2000)
-		.EUt(GTValues.VA[GTValues.EV])
 
 	//#region Mars Water
 

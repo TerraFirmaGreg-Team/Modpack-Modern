@@ -75,24 +75,19 @@ function registerTFGMarsIodineRecipes(event) {
 
 	event.recipes.gtceu.mixer('tfg:mars_sap')
 		.itemInputs('#forge:dusts/warpane', '#forge:dusts/crimsene')
-		.inputFluids(Fluid.of('gtceu:hydrochloric_acid', 1000), Fluid.of('gtceu:krypton', 500))
-		.itemOutputs('#forge:dusts/mycelienzene')
+		.inputFluids(Fluid.of('gtceu:hydrochloric_acid', 1000), Fluid.of('gtceu:hydrogen', 500))
+		.outputFluids(Fluid.of('tfg:mycelienzene', 1000))
 		.duration(30 * 20)
 		.EUt(GTValues.VA[GTValues.EV])
 
-	event.recipes.deafission.fission_reactor_processing('tfg:mars_sap')
-		.itemInputs('#forge:dusts/mycelienzene')
-		.outputFluids(Fluid.of('tfg:cooked_mycelienzane', 1000))
-		.blastFurnaceTemp(100)
-		.duration(30 * 10)
-
-	event.recipes.gtceu.centrifuge('mars_sap_separation')
-		.inputFluids(Fluid.of('tfg:cooked_mycelienzane', 2000))
+	event.recipes.gtceu.distillation_tower('mars_sap_separation')
+		.inputFluids(Fluid.of('tfg:mycelienzene', 2000))
 		.outputFluids(
 			Fluid.of('tfg:iodomethane', 1000),
 			Fluid.of('tfg:trideuteroiodomethane', 1000),
-			Fluid.of('gtceu:krypton', 1000),
-			Fluid.of('gtceu:diluted_hydrochloric_acid', 4000))
+			Fluid.of('gtceu:diluted_hydrochloric_acid', 4000),
+			Fluid.of('gtceu:deuterium', 1000))
+		.disableDistilleryRecipes(true)
 		.duration(20 * 20)
 		.EUt(GTValues.VA[GTValues.EV])
 

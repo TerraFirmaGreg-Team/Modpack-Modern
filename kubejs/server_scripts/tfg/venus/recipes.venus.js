@@ -105,4 +105,20 @@ function registerTFGVenusRecipes(event) {
 			Fluid.of('gtceu:carbon_monoxide', 1000))
 		.duration(1600)
 		.EUt(GTValues.VA[GTValues.LV])
+
+		
+	// Temporary place to put these lategame gases
+	event.recipes.gtceu.distillation_tower('tfg:distill_venus_air')
+		.inputFluids(Fluid.of('tfg:venus_air', 100000))
+		.outputFluids(Fluid.of('gtceu:carbon_dioxide', 80000))
+		.outputFluids(Fluid.of('gtceu:nitrogen', 6000))
+		.outputFluids(Fluid.of('gtceu:sulfur_dioxide', 5000))
+		.outputFluids(Fluid.of('gtceu:neon', 3000))
+		.outputFluids(Fluid.of('gtceu:steam', 2000))
+		.outputFluids(Fluid.of('gtceu:carbon_monoxide', 2000))
+		.outputFluids(Fluid.of('gtceu:krypton', 1000))
+		.outputFluids(Fluid.of('gtceu:xenon', 1000))
+		.disableDistilleryRecipes(true)
+		.duration(2000)
+		.EUt(GTValues.VA[GTValues.ZPM])
 }
