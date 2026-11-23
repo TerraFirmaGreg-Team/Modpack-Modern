@@ -82,36 +82,28 @@
         {
             "title": "Sedimentary",
 			"type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:raw_stone/sedimentary"
-            },
+            "item": "tag:tfg:raw_stone/sedimentary",
             "anchor": "sedimentary",
             "text": "$(l:https://en.wikipedia.org/wiki/Sedimentary_rock)Sedimentary$() rocks are formed by the accumulation or deposition of mineral or organic particles. They are typically found on the top layers of rock in continental areas."
         },
         {
             "title": "Metamorphic",
 			"type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:raw_stone/metamorphic"
-            },
+            "item": "tag:tfg:raw_stone/metamorphic",
             "anchor": "metamorphic",
             "text": "$(l:https://en.wikipedia.org/wiki/Metamorphic_rock)Metamorphic$() rocks are created by a process called metamorphism. They can be found underneath corresponding sedimentary or igneous rock, or in uplift areas."
         },
         {
             "title": "Igneous Extrusive",
 			"type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:raw_stone/igneous_extrusive"
-            },
+            "item": "tag:tfg:raw_stone/igneous_extrusive",
             "anchor": "igneous_extrusive",
             "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Extrusive)Igneous Extrusive$() rocks are formed from magma cooling on the Earth's surface. They can be found on the top layer of rock in continental areas, or on the floor of oceans."
         },
         {
             "title": "Igneous Intrusive",
 			"type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:raw_stone/igneous_intrusive"
-            },
+            "item": "tag:tfg:raw_stone/igneous_intrusive",
             "anchor": "igneous_intrusive",
             "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Intrusive)Igneous Intrusive$() rocks are formed from magma which cooled under the Earth's crust. They can be found deep underground, or rarely in dikes or uplift areas."
         },
@@ -124,63 +116,49 @@
         {
             "title": "Sedimentary-Carbonate",
 			"type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:stone_composition/raw/sedimentary_carbonate"
-            },
+            "item": "tag:tfg:stone_composition/raw/sedimentary_carbonate",
             "anchor": "sedimentary_carbonate",
             "text": "$(l:https://en.wikipedia.org/wiki/Carbonate_rock)Sedimentary-Carbonate$() rocks are composed primarily of carbonate minerals like calcite."
         },
         {
             "title": "Sedimentary-Clastic",
 			"type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:stone_composition/raw/sedimentary_clastic"
-            },
+            "item": "tag:tfg:stone_composition/raw/sedimentary_clastic",
             "anchor": "sedimentary_clastic",
             "text": "$(l:https://en.wikipedia.org/wiki/Clastic_rock)Sedimentary-Clastic$() rocks are composed of fragmants (clasts) of pre-existing minerals or rocks."
         },
         {
             "title": "Sedimentary-Organic",
 			"type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:stone_composition/raw/sedimentary_organic"
-            },
+            "item": "tag:tfg:stone_composition/raw/sedimentary_organic",
             "anchor": "sedimentary_organic",
             "text": "$(l:https://en.wikipedia.org/wiki/Organic-rich_sedimentary_rocks)Sedimentary-Organic$() rocks are formed from the breakdown or fossilization of organic matter like shells or bacteria."
         },
         {
             "title": "Igneous-Felsic",
 			"type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:stone_composition/raw/igneous_felsic"
-            },
+            "item": "tag:tfg:stone_composition/raw/igneous_felsic",
             "anchor": "igneous_felsic",
             "text": "$(l:https://en.wikipedia.org/wiki/Felsic)Igneous-Felsic$() rocks contain a rich presence of elements that form feldspar and quartz. Generally a rock must contain more than 75% of felsic minerals to be classified as $(thing)Felsic$()."
         },
         {
             "title": "Igneous-Intermediate",
 			"type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:stone_composition/raw/igneous_intermediate"
-            },
+            "item": "tag:tfg:stone_composition/raw/igneous_intermediate",
             "anchor": "igneous_intermediate",
             "text": "$(l:https://en.wikipedia.org/wiki/Intermediate_composition)Igneous-Intermediate$() rocks contain 51.5 - 63.0 wt% SiO₂, putting them in between $(l:the_world/geology#igneous_felsic)Felsic$() and $(l:the_world/geology#igneous_mafic)Mafic$() compositions."
         },
         {
             "title": "Igneous-Mafic",
 			"type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:stone_composition/raw/igneous_mafic"
-            },
+            "item": "tag:tfg:stone_composition/raw/igneous_mafic",
             "anchor": "igneous_mafic",
             "text": "$(l:https://en.wikipedia.org/wiki/Mafic)Igneous-Mafic$() rocks contain a rich presence of magnesium and iron minerals."
         },
         {
             "title": "Igneous-Ultramafic",
 			"type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:stone_composition/raw/igneous_ultramafic"
-            },
+            "item": "tag:tfg:stone_composition/raw/igneous_ultramafic",
             "anchor": "igneous_ultramafic",
             "text": "$(l:https://en.wikipedia.org/wiki/Mafic)Igneous-Ultramafic$() rocks contain a very low concentration of silica."
         },
