@@ -295,5 +295,8 @@
 	"item.sophisticatedcore.storage.tooltip.linked_storage_group": "Linked Storage Group: %s",
 	"item.sophisticatedcore.storage.tooltip.linked_storage_endpoint": "Linked Storage Endpoint: %s",
 	"tooltip.sophisticatedcore.linked_storage.primary": "Main Linked",
-	"tooltip.sophisticatedcore.linked_storage.secondary": "Linked"
+	"tooltip.sophisticatedcore.linked_storage.secondary": "Linked",
+	"item.sophisticatedcore.storage.tooltip.fluid_xp": "%s xp levels %s",
+	"item.sophisticatedcore.storage.tooltip.fluid_with_capacity": "%s / %s mB %s",
+	"item.sophisticatedcore.storage.tooltip.fluid_xp_with_capacity": "%s / %s xp levels %s"
 }

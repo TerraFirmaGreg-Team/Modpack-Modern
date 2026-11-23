@@ -469,7 +469,7 @@
 	"gui.ae2.units.rf": "RF",
 	"gui.ae2.Unlinked": "Unlinked",
 	"gui.ae2.UpgradeToolbelt": "Upgrade Toolbelt",
-	"gui.ae2.UsedAmount": "Used: ",
+	"gui.ae2.UsedAmount": "Used: %s",
 	"gui.ae2.VibrationChamber": "Vibration Chamber",
 	"gui.ae2.White": "White",
 	"gui.ae2.Wireless": "Wireless Access Point",
@@ -990,5 +990,14 @@
 	"gui.tooltips.ae2.PatternProviderDisplayMode": "Display Mode",
 	"item.ae2.filter_terminal": "ME Filter Terminal",
 	"key.ae2.cycle_controller_animation": "Cycle Controller Animation",
-	"key.ae2.pin_entry": "Pin/Unpin Entry"
+	"key.ae2.pin_entry": "Pin/Unpin Entry",
+	"gui.ae2.CraftingPlanSaveFailed": "Failed to save crafting plan image: %s",
+	"gui.ae2.CraftingPlanSaved": "Saved crafting plan as %s",
+	"gui.ae2.CraftingPlanTooLarge": "The crafting plan is too large to save as an image",
+	"gui.tooltips.ae2.AddFavorite": "Add to Favorites",
+	"gui.tooltips.ae2.ExportCraftingPlan": "Save as Image",
+	"gui.tooltips.ae2.ExportCraftingPlanHint": "Saves the entire crafting plan as a PNG image.",
+	"gui.tooltips.ae2.FavoriteHint": "Favorites are listed first.",
+	"gui.tooltips.ae2.RemoveFavorite": "Remove from Favorites",
+	"item.ae2.sticky_card": "Sticky Card"
 }
