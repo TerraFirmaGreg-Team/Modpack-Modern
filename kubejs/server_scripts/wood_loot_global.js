@@ -3,6 +3,7 @@ const registerWoodStructLoot = (event) =>
 {
     global.TFC_WOOD_STRUCT.forEach(woodType =>
     {
+        console.log("Generating Wood Struct Loot for " + woodType.modName + ":" + woodType.name);
         global.invokeIfNotNull(woodType.window_pane, () =>
         {
             event.addBlockLootModifier(woodType.window_pane)

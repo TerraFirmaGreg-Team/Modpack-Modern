@@ -331,7 +331,7 @@ const registerWoodStructRecipes = (event) =>
                 });
                 registerTFGWoodRecycling(woodType.modName, [woodType.name], GTMaterials.get('hardwood'));
             }
-            else if(woodType.woodKind == global.WOODK_KIND.SOFT)
+            else if(woodType.woodKind == global.WOOD_KIND.SOFT)
             {
                 global.invokeIfNotNull(woodType.astikor_data, () =>
                 {

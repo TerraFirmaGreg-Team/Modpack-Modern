@@ -596,7 +596,43 @@ function TFGWoodBuilder(event, name, lumber, logs, log, stripped_log, plank, sta
 	}
 }
 
+
+/**
+ * @property {Array} TFGWoodRecyclingIndex - TFG Wood recycling material index. 2 Lumber -> 1 Wood dust
+ */
+const TFGWoodRecyclingIndex = [
+	['{mod}:wood/chest_minecart/{type}', ['{wood}', 4, GTMaterials.WroughtIron, 5]],
+	['{mod}:wood/planks/{type}', ['{wood}', 2]],
+	['{mod}:wood/planks/{type}_workbench', ['{wood}', 8]],
+	['{mod}:wood/planks/{type}_loom', ['{wood}', 7 / 2]],
+	['{mod}:wood/planks/{type}_door', ['{wood}', 3 / 2]],
+	['{mod}:wood/planks/{type}_trapdoor', ['{wood}', 1]],
+	['{mod}:wood/planks/{type}_fence', ['{wood}', 4]],
+	['{mod}:wood/planks/{type}_log_fence', ['{wood}', 8]],
+	['{mod}:wood/planks/{type}_fence_gate', ['{wood}', 8]],
+	['{mod}:wood/planks/{type}_slab', ['{wood}', 1]],
+	['{mod}:wood/planks/{type}_stairs', ['{wood}', 3 / 2]],
+	['{mod}:wood/planks/{type}_pressure_plate', ['{wood}', 2]],
+	['{mod}:wood/planks/{type}_button', ['{wood}', 1 / 4]],
+	['{mod}:wood/chest/{type}', ['{wood}', 4]],
+	['{mod}:wood/trapped_chest/{type}', ['{wood}', 4, GTMaterials.WroughtIron, 4 / 9, GTMaterials.Wood, 1]],
+	['{mod}:wood/sluice/{type}', ['{wood}', 3 / 2]],
+	['{mod}:wood/barrel/{type}', ['{wood}', 7 / 2]],
+	['{mod}:wood/sign/{type}', ['{wood}', 1]],
+	['{mod}:wood/lectern/{type}', ['{wood}', 5]],
+	['{mod}:wood/planks/{type}_bookshelf', ['{wood}', 3]],
+	['{mod}:wood/planks/{type}_tool_rack', ['{wood}', 3]],
+	['{mod}:wood/jar_shelf/{type}', ['{wood}', 7 / 2]],
+	['{mod}:wood/scribing_table/{type}', ['{wood}', 7]],
+	['{mod}:wood/sewing_table/{type}', ['{wood}', 14]]
+];
+
 function registerTFGWoodRecycling(mod, woodname, woodMaterial) {
+	
+	function resolveArgs(materials, woodMaterial) {
+		return materials.map(mats => mats === '{wood}' ? woodMaterial : mats);
+	};
+
 	woodname.forEach(name => {
 		TFGWoodRecyclingIndex.forEach(([template, args]) => {
 			const item = template
@@ -730,45 +766,6 @@ function registerTFGWoodenRecipes(event) {
 	// #endregion
 
 	// #region TFG Wood Recycling
-
-	/**
-	 * @property {Array} TFGWoodRecyclingIndex - TFG Wood recycling material index. 2 Lumber -> 1 Wood dust
-	 */
-	const TFGWoodRecyclingIndex = [
-		['{mod}:wood/chest_minecart/{type}', ['{wood}', 4, GTMaterials.WroughtIron, 5]],
-		['{mod}:wood/planks/{type}', ['{wood}', 2]],
-		['{mod}:wood/planks/{type}_workbench', ['{wood}', 8]],
-		['{mod}:wood/planks/{type}_loom', ['{wood}', 7 / 2]],
-		['{mod}:wood/planks/{type}_door', ['{wood}', 3 / 2]],
-		['{mod}:wood/planks/{type}_trapdoor', ['{wood}', 1]],
-		['{mod}:wood/planks/{type}_fence', ['{wood}', 4]],
-		['{mod}:wood/planks/{type}_log_fence', ['{wood}', 8]],
-		['{mod}:wood/planks/{type}_fence_gate', ['{wood}', 8]],
-		['{mod}:wood/planks/{type}_slab', ['{wood}', 1]],
-		['{mod}:wood/planks/{type}_stairs', ['{wood}', 3 / 2]],
-		['{mod}:wood/planks/{type}_pressure_plate', ['{wood}', 2]],
-		['{mod}:wood/planks/{type}_button', ['{wood}', 1 / 4]],
-		['{mod}:wood/chest/{type}', ['{wood}', 4]],
-		['{mod}:wood/trapped_chest/{type}', ['{wood}', 4, GTMaterials.WroughtIron, 4 / 9, GTMaterials.Wood, 1]],
-		['{mod}:wood/sluice/{type}', ['{wood}', 3 / 2]],
-		['{mod}:wood/barrel/{type}', ['{wood}', 7 / 2]],
-		['{mod}:wood/sign/{type}', ['{wood}', 1]],
-		['{mod}:wood/lectern/{type}', ['{wood}', 5]],
-		['{mod}:wood/planks/{type}_bookshelf', ['{wood}', 3]],
-		['{mod}:wood/planks/{type}_tool_rack', ['{wood}', 3]],
-		['{mod}:wood/jar_shelf/{type}', ['{wood}', 7 / 2]],
-		['{mod}:wood/scribing_table/{type}', ['{wood}', 7]],
-		['{mod}:wood/sewing_table/{type}', ['{wood}', 14]]
-	];
-
-	/**
-	 * @param {Array} materials
-	 * @param {string} woodMaterial
-	 * @return {Array}
-	 */
-	function resolveArgs(materials, woodMaterial) {
-		return materials.map(mats => mats === '{wood}' ? woodMaterial : mats);
-	};
 
 	// #endregion
 

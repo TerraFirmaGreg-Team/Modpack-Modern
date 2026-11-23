@@ -1,6 +1,39 @@
 // priority: -100
 "use strict";
 
+/**
+ * @type {WoodStruct[]}
+ * An array of WoodStruct that represents the AFC woods
+ */
+global.AFC_WOOD_STRUCT = ([
+	{
+        modName: 'afc',
+        name: 'baobab',
+        logs: '#afc:baobab_logs', log: 'afc:wood/log/baobab', stripped_log: 'afc:wood/stripped_log/baobab',
+        log_wood: 'afc:wood/wood/baobab', stripped_wood: "afc:wood/stripped_wood/baobab",
+        tree_data: global.woodStructHelpers.treeData(1, ["afc"], ["baobab"], ["baobab"]),
+        lumber: 'afc:wood/lumber/baobab', plank: 'afc:wood/planks/baobab',
+        stair: 'afc:wood/planks/baobab_stairs', slab: 'afc:wood/planks/baobab_slab',
+        fence: 'afc:wood/planks/baobab_fence', fence_gate: 'afc:wood/planks/baobab_fence_gate',
+        door: 'afc:wood/planks/baobab_door', trapdoor: 'afc:wood/planks/baobab_trapdoor',
+        button: 'afc:wood/planks/baobab_button', pressure_plate: 'afc:wood/planks/baobab_pressure_plate',
+        chest: 'afc:wood/chest/baobab', trapped_chest: 'afc:wood/trapped_chest/baobab',
+        workbench: 'afc:wood/planks/baobab_workbench', crafting_station: 'tfg:wood/crafting_station/baobab', crafting_station_slab: 'tfg:wood/crafting_station/baobab_slab',
+        rope_ladder: 'tfg:wood/rope_ladder/baobab',
+        shingle: 'rnr:wood/shingle/baobab', shingle_roof: 'rnr:wood/shingles/baobab', shingle_slab: 'rnr:wood/shingles/baobab_slab', shingle_stair: 'rnr:wood/shingles/baobab_stairs',
+        astikor_data: null,//global.woodStructHelpers.astikorData("afcastikorcarts", "baobab"),
+        support: 'afc:wood/support/baobab',
+        track: 'railways:track_acacia', track_wide: 'railways:track_acacia_wide', track_narrow: 'railways:track_acacia_narrow', //Baobab is meant to represent vanilla acacia, so this track is correct
+        window: 'everycomp:c/afc/baobab_window', window_pane: 'everycomp:c/afc/baobab_window_pane',
+        macaw_bridges: null, //global.woodStructHelpers.macawBridges("mcw_afc_aio", "baobab"),
+        macaw_fences: null,//global.woodStructHelpers.macawFences("mcw_afc_aio", "baobab"),
+        macaw_roofs: null, //global.woodStructHelpers.macawRoofs("mcw_afc_aio", "baobab"),
+        macaw_furniture: null, //global.woodStructHelpers.macawFurniture("mcw_afc_aio", "baobab"),
+        macaw_furniture_stripped: null, //global.woodStructHelpers.macawStrippedFurniture("mcw_afc_aio", "baobab"),
+        woodKind: global.WOOD_KIND.HARD,
+	}
+]);
+
 global.AFC_WOOD_TYPES =
 [
     'baobab',

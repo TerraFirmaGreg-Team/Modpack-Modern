@@ -57,20 +57,6 @@ global.TFC_STONE_TYPES = /** @type {const} */ ([
 ]);
 
 /**
- * @typedef {Object} WoodKindEnum
- * @property {"HARD"} HARD
- * @property {"SOFT"} SOFT
- * @property {"NONE"} NONE
- */
-
-/** @type {WoodKindEnum} */
-global.WOOD_KIND = ({
-    HARD: "HARD",
-    SOFT: "SOFT",
-    NONE: "NONE"
-});
-
-/**
  * @typedef {Object} WoodStruct - An object that represents common blocks for wood sets
  * @property {string} modName - Name of the mod that adds the wood.
  * @property {string} name - Name of the wood itself
@@ -125,7 +111,7 @@ global.TFC_WOOD_STRUCT = ([
         name: 'acacia',
         logs: '#tfc:acacia_logs', log: 'tfc:wood/log/acacia', stripped_log: 'tfc:wood/stripped_log/acacia',
         log_wood: 'tfc:wood/wood/acacia', stripped_wood: "tfc:wood/stripped_wood/acacia",
-        tree_data: treeData(2, ["tfc", "afc"], ["acacia", "acacia_koa"], ["acacia", "acacia_koa"]),
+        tree_data: global.woodStructHelpers.treeData(2, ["tfc", "afc"], ["acacia", "acacia_koa"], ["acacia", "acacia_koa"]),
         lumber: 'tfc:wood/lumber/acacia', plank: 'tfc:wood/planks/acacia',
         stair: 'tfc:wood/planks/acacia_stairs', slab: 'tfc:wood/planks/acacia_slab',
         fence: 'tfc:wood/planks/acacia_fence', fence_gate: 'tfc:wood/planks/acacia_fence_gate',
@@ -135,15 +121,15 @@ global.TFC_WOOD_STRUCT = ([
         workbench: 'tfc:wood/planks/acacia_workbench', crafting_station: 'tfg:wood/crafting_station/acacia', crafting_station_slab: 'tfg:wood/crafting_station/acacia_slab',
         rope_ladder: 'tfg:wood/rope_ladder/acacia',
         shingle: 'rnr:wood/shingle/acacia', shingle_roof: 'rnr:wood/shingles/acacia', shingle_slab: 'rnr:wood/shingles/acacia_slab', shingle_stair: 'rnr:wood/shingles/acacia_stairs',
-        astikor_data: astikorData("tfcastikorcarts", "acacia"),
+        astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "acacia"),
         support: 'tfc:wood/support/acacia',
         track: 'railways:track_tfc_acacia', track_wide: 'railways:track_tfc_acacia_wide', track_narrow: 'railways:track_tfc_acacia_narrow',
         window: 'everycomp:c/tfc/acacia_window', window_pane: 'everycomp:c/tfc/acacia_window_pane',
-        macaw_bridges: macawBridges("mcw_tfc_aio", "acacia"),
-        macaw_fences: macawFences("mcw_tfc_aio", "acacia"),
-        macaw_roofs: macawRoofs("mcw_tfc_aio", "acacia"),
-        macaw_furniture: macawFurniture("mcw_tfc_aio", "acacia"),
-        macaw_furniture_stripped: macawStrippedFurniture("mcw_tfc_aio", "acacia"),
+        macaw_bridges: global.woodStructHelpers.macawBridges("mcw_tfc_aio", "acacia"),
+        macaw_fences: global.woodStructHelpers.macawFences("mcw_tfc_aio", "acacia"),
+        macaw_roofs: global.woodStructHelpers.macawRoofs("mcw_tfc_aio", "acacia"),
+        macaw_furniture: global.woodStructHelpers.macawFurniture("mcw_tfc_aio", "acacia"),
+        macaw_furniture_stripped: global.woodStructHelpers.macawStrippedFurniture("mcw_tfc_aio", "acacia"),
         woodKind: global.WOOD_KIND.HARD,
     },
     {
@@ -151,7 +137,7 @@ global.TFC_WOOD_STRUCT = ([
         name: 'ash',
         logs: '#tfc:ash_logs', log: 'tfc:wood/log/ash', stripped_log: 'tfc:wood/stripped_log/ash',
         log_wood: 'tfc:wood/wood/ash', stripped_wood: "tfc:wood/stripped_wood/ash",
-        tree_data: treeData(2, ["tfc", "afc"], ["ash", "mountain_ash"], ["ash", "mountain_ash"]),
+        tree_data: global.woodStructHelpers.treeData(2, ["tfc", "afc"], ["ash", "mountain_ash"], ["ash", "mountain_ash"]),
         lumber: 'tfc:wood/lumber/ash', plank: 'tfc:wood/planks/ash',
         stair: 'tfc:wood/planks/ash_stairs', slab: 'tfc:wood/planks/ash_slab',
         fence: 'tfc:wood/planks/ash_fence', fence_gate: 'tfc:wood/planks/ash_fence_gate',
@@ -161,15 +147,15 @@ global.TFC_WOOD_STRUCT = ([
         workbench: 'tfc:wood/planks/ash_workbench', crafting_station: 'tfg:wood/crafting_station/ash', crafting_station_slab: 'tfg:wood/crafting_station/ash_slab',
         rope_ladder: 'tfg:wood/rope_ladder/ash',
         shingle: 'rnr:wood/shingle/ash', shingle_roof: 'rnr:wood/shingles/ash', shingle_slab: 'rnr:wood/shingles/ash_slab', shingle_stair: 'rnr:wood/shingles/ash_stairs',
-        astikor_data: astikorData("tfcastikorcarts", "ash"),
+        astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "ash"),
         support: 'tfc:wood/support/ash',
         track: 'railways:track_tfc_ash', track_wide: 'railways:track_tfc_ash_wide', track_narrow: 'railways:track_tfc_ash_narrow',
         window: 'everycomp:c/tfc/ash_window', window_pane: 'everycomp:c/tfc/ash_window_pane',
-        macaw_bridges: macawBridges("mcw_tfc_aio", "ash"),
-        macaw_fences: macawFences("mcw_tfc_aio", "ash"),
-        macaw_roofs: macawRoofs("mcw_tfc_aio", "ash"),
-        macaw_furniture: macawFurniture("mcw_tfc_aio", "ash"),
-        macaw_furniture_stripped: macawStrippedFurniture("mcw_tfc_aio", "ash"),
+        macaw_bridges: global.woodStructHelpers.macawBridges("mcw_tfc_aio", "ash"),
+        macaw_fences: global.woodStructHelpers.macawFences("mcw_tfc_aio", "ash"),
+        macaw_roofs: global.woodStructHelpers.macawRoofs("mcw_tfc_aio", "ash"),
+        macaw_furniture: global.woodStructHelpers.macawFurniture("mcw_tfc_aio", "ash"),
+        macaw_furniture_stripped: global.woodStructHelpers.macawStrippedFurniture("mcw_tfc_aio", "ash"),
         woodKind: global.WOOD_KIND.HARD,
     },
     {
@@ -177,7 +163,7 @@ global.TFC_WOOD_STRUCT = ([
         name: 'aspen',
         logs: '#tfc:aspen_logs', log: 'tfc:wood/log/aspen', stripped_log: 'tfc:wood/stripped_log/aspen',
         log_wood: 'tfc:wood/wood/aspen', stripped_wood: "tfc:wood/stripped_wood/aspen",
-        tree_data: treeData(1, ["tfc"], ["aspen"], ["aspen"]),
+        tree_data: global.woodStructHelpers.treeData(1, ["tfc"], ["aspen"], ["aspen"]),
         lumber: 'tfc:wood/lumber/aspen', plank: 'tfc:wood/planks/aspen',
         stair: 'tfc:wood/planks/aspen_stairs', slab: 'tfc:wood/planks/aspen_slab',
         fence: 'tfc:wood/planks/aspen_fence', fence_gate: 'tfc:wood/planks/aspen_fence_gate',
@@ -187,15 +173,15 @@ global.TFC_WOOD_STRUCT = ([
         workbench: 'tfc:wood/planks/aspen_workbench', crafting_station: 'tfg:wood/crafting_station/aspen', crafting_station_slab: 'tfg:wood/crafting_station/aspen_slab',
         rope_ladder: 'tfg:wood/rope_ladder/aspen',
         shingle: 'rnr:wood/shingle/aspen', shingle_roof: 'rnr:wood/shingles/aspen', shingle_slab: 'rnr:wood/shingles/aspen_slab', shingle_stair: 'rnr:wood/shingles/aspen_stairs',
-        astikor_data: astikorData("tfcastikorcarts", "aspen"),
+        astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "aspen"),
         support: 'tfc:wood/support/aspen',
         track: 'railways:track_tfc_aspen', track_wide: 'railways:track_tfc_aspen_wide', track_narrow: 'railways:track_tfc_aspen_narrow',
         window: 'everycomp:c/tfc/aspen_window', window_pane: 'everycomp:c/tfc/aspen_window_pane',
-        macaw_bridges: macawBridges("mcw_tfc_aio", "aspen"),
-        macaw_fences: macawFences("mcw_tfc_aio", "aspen"),
-        macaw_roofs: macawRoofs("mcw_tfc_aio", "aspen"),
-        macaw_furniture: macawFurniture("mcw_tfc_aio", "aspen"),
-        macaw_furniture_stripped: macawStrippedFurniture("mcw_tfc_aio", "aspen"),
+        macaw_bridges: global.woodStructHelpers.macawBridges("mcw_tfc_aio", "aspen"),
+        macaw_fences: global.woodStructHelpers.macawFences("mcw_tfc_aio", "aspen"),
+        macaw_roofs: global.woodStructHelpers.macawRoofs("mcw_tfc_aio", "aspen"),
+        macaw_furniture: global.woodStructHelpers.macawFurniture("mcw_tfc_aio", "aspen"),
+        macaw_furniture_stripped: global.woodStructHelpers.macawStrippedFurniture("mcw_tfc_aio", "aspen"),
         woodKind: global.WOOD_KIND.HARD,
     },
     {
@@ -203,7 +189,7 @@ global.TFC_WOOD_STRUCT = ([
         name: 'birch',
         logs: '#tfc:birch_logs', log: 'tfc:wood/log/birch', stripped_log: 'tfc:wood/stripped_log/birch',
         log_wood: 'tfc:wood/wood/birch', stripped_wood: "tfc:wood/stripped_wood/birch",
-        tree_data: treeData(1, ["tfc"], ["birch"], ["birch"]),
+        tree_data: global.woodStructHelpers.treeData(1, ["tfc"], ["birch"], ["birch"]),
         lumber: 'tfc:wood/lumber/birch', plank: 'tfc:wood/planks/birch',
         stair: 'tfc:wood/planks/birch_stairs', slab: 'tfc:wood/planks/birch_slab',
         fence: 'tfc:wood/planks/birch_fence', fence_gate: 'tfc:wood/planks/birch_fence_gate',
@@ -213,15 +199,15 @@ global.TFC_WOOD_STRUCT = ([
         workbench: 'tfc:wood/planks/birch_workbench', crafting_station: 'tfg:wood/crafting_station/birch', crafting_station_slab: 'tfg:wood/crafting_station/birch_slab',
         rope_ladder: 'tfg:wood/rope_ladder/birch',
         shingle: 'rnr:wood/shingle/birch', shingle_roof: 'rnr:wood/shingles/birch', shingle_slab: 'rnr:wood/shingles/birch_slab', shingle_stair: 'rnr:wood/shingles/birch_stairs',
-        astikor_data: astikorData("tfcastikorcarts", "birch"),
+        astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "birch"),
         support: 'tfc:wood/support/birch',
         track: 'railways:track_tfc_birch', track_wide: 'railways:track_tfc_birch_wide', track_narrow: 'railways:track_tfc_birch_narrow',
         window: 'everycomp:c/tfc/birch_window', window_pane: 'everycomp:c/tfc/birch_window_pane',
-        macaw_bridges: macawBridges("mcw_tfc_aio", "birch"),
-        macaw_fences: macawFences("mcw_tfc_aio", "birch"),
-        macaw_roofs: macawRoofs("mcw_tfc_aio", "birch"),
-        macaw_furniture: macawFurniture("mcw_tfc_aio", "birch"),
-        macaw_furniture_stripped: macawStrippedFurniture("mcw_tfc_aio", "birch"),
+        macaw_bridges: global.woodStructHelpers.macawBridges("mcw_tfc_aio", "birch"),
+        macaw_fences: global.woodStructHelpers.macawFences("mcw_tfc_aio", "birch"),
+        macaw_roofs: global.woodStructHelpers.macawRoofs("mcw_tfc_aio", "birch"),
+        macaw_furniture: global.woodStructHelpers.macawFurniture("mcw_tfc_aio", "birch"),
+        macaw_furniture_stripped: global.woodStructHelpers.macawStrippedFurniture("mcw_tfc_aio", "birch"),
         woodKind: global.WOOD_KIND.HARD,
     },
     {
@@ -229,7 +215,7 @@ global.TFC_WOOD_STRUCT = ([
         name: 'blackwood',
         logs: '#tfc:blackwood_logs', log: 'tfc:wood/log/blackwood', stripped_log: 'tfc:wood/stripped_log/blackwood',
         log_wood: 'tfc:wood/wood/blackwood', stripped_wood: "tfc:wood/stripped_wood/blackwood",
-        tree_data: treeData(2, ["tfc", "afc"], ["blackwood", "mpingo_blackwood"], ["blackwood", "mpingo_blackwood"]),
+        tree_data: global.woodStructHelpers.treeData(2, ["tfc", "afc"], ["blackwood", "mpingo_blackwood"], ["blackwood", "mpingo_blackwood"]),
         lumber: 'tfc:wood/lumber/blackwood', plank: 'tfc:wood/planks/blackwood',
         stair: 'tfc:wood/planks/blackwood_stairs', slab: 'tfc:wood/planks/blackwood_slab',
         fence: 'tfc:wood/planks/blackwood_fence', fence_gate: 'tfc:wood/planks/blackwood_fence_gate',
@@ -239,15 +225,15 @@ global.TFC_WOOD_STRUCT = ([
         workbench: 'tfc:wood/planks/blackwood_workbench', crafting_station: 'tfg:wood/crafting_station/blackwood', crafting_station_slab: 'tfg:wood/crafting_station/blackwood_slab',
         rope_ladder: 'tfg:wood/rope_ladder/blackwood',
         shingle: 'rnr:wood/shingle/blackwood', shingle_roof: 'rnr:wood/shingles/blackwood', shingle_slab: 'rnr:wood/shingles/blackwood_slab', shingle_stair: 'rnr:wood/shingles/blackwood_stairs',
-        astikor_data: astikorData("tfcastikorcarts", "blackwood"),
+        astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "blackwood"),
         support: 'tfc:wood/support/blackwood',
         track: 'railways:track_tfc_blackwood', track_wide: 'railways:track_tfc_blackwood_wide', track_narrow: 'railways:track_tfc_blackwood_narrow',
         window: 'everycomp:c/tfc/blackwood_window', window_pane: 'everycomp:c/tfc/blackwood_window_pane',
-        macaw_bridges: macawBridges("mcw_tfc_aio", "blackwood"),
-        macaw_fences: macawFences("mcw_tfc_aio", "blackwood"),
-        macaw_roofs: macawRoofs("mcw_tfc_aio", "blackwood"),
-        macaw_furniture: macawFurniture("mcw_tfc_aio", "blackwood"),
-        macaw_furniture_stripped: macawStrippedFurniture("mcw_tfc_aio", "blackwood"),
+        macaw_bridges: global.woodStructHelpers.macawBridges("mcw_tfc_aio", "blackwood"),
+        macaw_fences: global.woodStructHelpers.macawFences("mcw_tfc_aio", "blackwood"),
+        macaw_roofs: global.woodStructHelpers.macawRoofs("mcw_tfc_aio", "blackwood"),
+        macaw_furniture: global.woodStructHelpers.macawFurniture("mcw_tfc_aio", "blackwood"),
+        macaw_furniture_stripped: global.woodStructHelpers.macawStrippedFurniture("mcw_tfc_aio", "blackwood"),
         woodKind: global.WOOD_KIND.HARD,
     },
     {
@@ -255,7 +241,7 @@ global.TFC_WOOD_STRUCT = ([
         name: 'chestnut',
         logs: '#tfc:chestnut_logs', log: 'tfc:wood/log/chestnut', stripped_log: 'tfc:wood/stripped_log/chestnut',
         log_wood: 'tfc:wood/wood/chestnut', stripped_wood: "tfc:wood/stripped_wood/chestnut",
-        tree_data: treeData(1, ["tfc"], ["chestnut"], ["chestnut"]),
+        tree_data: global.woodStructHelpers.treeData(1, ["tfc"], ["chestnut"], ["chestnut"]),
         lumber: 'tfc:wood/lumber/chestnut', plank: 'tfc:wood/planks/chestnut',
         stair: 'tfc:wood/planks/chestnut_stairs', slab: 'tfc:wood/planks/chestnut_slab',
         fence: 'tfc:wood/planks/chestnut_fence', fence_gate: 'tfc:wood/planks/chestnut_fence_gate',
@@ -265,15 +251,15 @@ global.TFC_WOOD_STRUCT = ([
         workbench: 'tfc:wood/planks/chestnut_workbench', crafting_station: 'tfg:wood/crafting_station/chestnut', crafting_station_slab: 'tfg:wood/crafting_station/chestnut_slab',
         rope_ladder: 'tfg:wood/rope_ladder/chestnut',
         shingle: 'rnr:wood/shingle/chestnut', shingle_roof: 'rnr:wood/shingles/chestnut', shingle_slab: 'rnr:wood/shingles/chestnut_slab', shingle_stair: 'rnr:wood/shingles/chestnut_stairs',
-        astikor_data: astikorData("tfcastikorcarts", "chestnut"),
+        astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "chestnut"),
         support: 'tfc:wood/support/chestnut',
         track: 'railways:track_tfc_chestnut', track_wide: 'railways:track_tfc_chestnut_wide', track_narrow: 'railways:track_tfc_chestnut_narrow',
         window: 'everycomp:c/tfc/chestnut_window', window_pane: 'everycomp:c/tfc/chestnut_window_pane',
-        macaw_bridges: macawBridges("mcw_tfc_aio", "chestnut"),
-        macaw_fences: macawFences("mcw_tfc_aio", "chestnut"),
-        macaw_roofs: macawRoofs("mcw_tfc_aio", "chestnut"),
-        macaw_furniture: macawFurniture("mcw_tfc_aio", "chestnut"),
-        macaw_furniture_stripped: macawStrippedFurniture("mcw_tfc_aio", "chestnut"),
+        macaw_bridges: global.woodStructHelpers.macawBridges("mcw_tfc_aio", "chestnut"),
+        macaw_fences: global.woodStructHelpers.macawFences("mcw_tfc_aio", "chestnut"),
+        macaw_roofs: global.woodStructHelpers.macawRoofs("mcw_tfc_aio", "chestnut"),
+        macaw_furniture: global.woodStructHelpers.macawFurniture("mcw_tfc_aio", "chestnut"),
+        macaw_furniture_stripped: global.woodStructHelpers.macawStrippedFurniture("mcw_tfc_aio", "chestnut"),
         woodKind: global.WOOD_KIND.HARD,
     },
     {
@@ -281,7 +267,7 @@ global.TFC_WOOD_STRUCT = ([
         name: 'douglas_fir',
         logs: '#tfc:douglas_fir_logs', log: 'tfc:wood/log/douglas_fir', stripped_log: 'tfc:wood/stripped_log/douglas_fir',
         log_wood: 'tfc:wood/wood/douglas_fir', stripped_wood: "tfc:wood/stripped_wood/douglas_fir",
-        tree_data: treeData(1, ["tfc"], ["douglas_fir"], ["douglas_fir"]),
+        tree_data: global.woodStructHelpers.treeData(1, ["tfc"], ["douglas_fir"], ["douglas_fir"]),
         lumber: 'tfc:wood/lumber/douglas_fir', plank: 'tfc:wood/planks/douglas_fir',
         stair: 'tfc:wood/planks/douglas_fir_stairs', slab: 'tfc:wood/planks/douglas_fir_slab',
         fence: 'tfc:wood/planks/douglas_fir_fence', fence_gate: 'tfc:wood/planks/douglas_fir_fence_gate',
@@ -291,15 +277,15 @@ global.TFC_WOOD_STRUCT = ([
         workbench: 'tfc:wood/planks/douglas_fir_workbench', crafting_station: 'tfg:wood/crafting_station/douglas_fir', crafting_station_slab: 'tfg:wood/crafting_station/douglas_fir_slab',
         rope_ladder: 'tfg:wood/rope_ladder/douglas_fir',
         shingle: 'rnr:wood/shingle/douglas_fir', shingle_roof: 'rnr:wood/shingles/douglas_fir', shingle_slab: 'rnr:wood/shingles/douglas_fir_slab', shingle_stair: 'rnr:wood/shingles/douglas_fir_stairs',
-        astikor_data: astikorData("tfcastikorcarts", "douglas_fir"),
+        astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "douglas_fir"),
         support: 'tfc:wood/support/douglas_fir',
         track: 'railways:track_tfc_douglas_fir', track_wide: 'railways:track_tfc_douglas_fir_wide', track_narrow: 'railways:track_tfc_douglas_fir_narrow',
         window: 'everycomp:c/tfc/douglas_fir_window', window_pane: 'everycomp:c/tfc/douglas_fir_window_pane',
-        macaw_bridges: macawBridges("mcw_tfc_aio", "douglas_fir"),
-        macaw_fences: macawFences("mcw_tfc_aio", "douglas_fir"),
-        macaw_roofs: macawRoofs("mcw_tfc_aio", "douglas_fir"),
-        macaw_furniture: macawFurniture("mcw_tfc_aio", "douglas_fir"),
-        macaw_furniture_stripped: macawStrippedFurniture("mcw_tfc_aio", "douglas_fir"),
+        macaw_bridges: global.woodStructHelpers.macawBridges("mcw_tfc_aio", "douglas_fir"),
+        macaw_fences: global.woodStructHelpers.macawFences("mcw_tfc_aio", "douglas_fir"),
+        macaw_roofs: global.woodStructHelpers.macawRoofs("mcw_tfc_aio", "douglas_fir"),
+        macaw_furniture: global.woodStructHelpers.macawFurniture("mcw_tfc_aio", "douglas_fir"),
+        macaw_furniture_stripped: global.woodStructHelpers.macawStrippedFurniture("mcw_tfc_aio", "douglas_fir"),
         woodKind: global.WOOD_KIND.SOFT,
     },
     {
@@ -307,7 +293,7 @@ global.TFC_WOOD_STRUCT = ([
         name: 'hickory',
         logs: '#tfc:hickory_logs', log: 'tfc:wood/log/hickory', stripped_log: 'tfc:wood/stripped_log/hickory',
         log_wood: 'tfc:wood/wood/hickory', stripped_wood: "tfc:wood/stripped_wood/hickory",
-        tree_data: treeData(2, ["tfc", "afc"], ["hickory", "scrub_hickory"], ["hickory", "scrub_hickory"]),
+        tree_data: global.woodStructHelpers.treeData(2, ["tfc", "afc"], ["hickory", "scrub_hickory"], ["hickory", "scrub_hickory"]),
         lumber: 'tfc:wood/lumber/hickory', plank: 'tfc:wood/planks/hickory',
         stair: 'tfc:wood/planks/hickory_stairs', slab: 'tfc:wood/planks/hickory_slab',
         fence: 'tfc:wood/planks/hickory_fence', fence_gate: 'tfc:wood/planks/hickory_fence_gate',
@@ -317,15 +303,15 @@ global.TFC_WOOD_STRUCT = ([
         workbench: 'tfc:wood/planks/hickory_workbench', crafting_station: 'tfg:wood/crafting_station/hickory', crafting_station_slab: 'tfg:wood/crafting_station/hickory_slab',
         rope_ladder: 'tfg:wood/rope_ladder/hickory',
         shingle: 'rnr:wood/shingle/hickory', shingle_roof: 'rnr:wood/shingles/hickory', shingle_slab: 'rnr:wood/shingles/hickory_slab', shingle_stair: 'rnr:wood/shingles/hickory_stairs',
-        astikor_data: astikorData("tfcastikorcarts", "hickory"),
+        astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "hickory"),
         support: 'tfc:wood/support/hickory',
         track: 'railways:track_tfc_hickory', track_wide: 'railways:track_tfc_hickory_wide', track_narrow: 'railways:track_tfc_hickory_narrow',
         window: 'everycomp:c/tfc/hickory_window', window_pane: 'everycomp:c/tfc/hickory_window_pane',
-        macaw_bridges: macawBridges("mcw_tfc_aio", "hickory"),
-        macaw_fences: macawFences("mcw_tfc_aio", "hickory"),
-        macaw_roofs: macawRoofs("mcw_tfc_aio", "hickory"),
-        macaw_furniture: macawFurniture("mcw_tfc_aio", "hickory"),
-        macaw_furniture_stripped: macawStrippedFurniture("mcw_tfc_aio", "hickory"),
+        macaw_bridges: global.woodStructHelpers.macawBridges("mcw_tfc_aio", "hickory"),
+        macaw_fences: global.woodStructHelpers.macawFences("mcw_tfc_aio", "hickory"),
+        macaw_roofs: global.woodStructHelpers.macawRoofs("mcw_tfc_aio", "hickory"),
+        macaw_furniture: global.woodStructHelpers.macawFurniture("mcw_tfc_aio", "hickory"),
+        macaw_furniture_stripped: global.woodStructHelpers.macawStrippedFurniture("mcw_tfc_aio", "hickory"),
         woodKind: global.WOOD_KIND.HARD,
     },
     {
@@ -333,7 +319,7 @@ global.TFC_WOOD_STRUCT = ([
         name: 'kapok',
         logs: '#tfc:kapok_logs', log: 'tfc:wood/log/kapok', stripped_log: 'tfc:wood/stripped_log/kapok',
         log_wood: 'tfc:wood/wood/kapok', stripped_wood: "tfc:wood/stripped_wood/kapok",
-        tree_data: treeData(1, ["tfc"], ["kapok"], ["kapok"]),
+        tree_data: global.woodStructHelpers.treeData(1, ["tfc"], ["kapok"], ["kapok"]),
         lumber: 'tfc:wood/lumber/kapok', plank: 'tfc:wood/planks/kapok',
         stair: 'tfc:wood/planks/kapok_stairs', slab: 'tfc:wood/planks/kapok_slab',
         fence: 'tfc:wood/planks/kapok_fence', fence_gate: 'tfc:wood/planks/kapok_fence_gate',
@@ -343,15 +329,15 @@ global.TFC_WOOD_STRUCT = ([
         workbench: 'tfc:wood/planks/kapok_workbench', crafting_station: 'tfg:wood/crafting_station/kapok', crafting_station_slab: 'tfg:wood/crafting_station/kapok_slab',
         rope_ladder: 'tfg:wood/rope_ladder/kapok',
         shingle: 'rnr:wood/shingle/kapok', shingle_roof: 'rnr:wood/shingles/kapok', shingle_slab: 'rnr:wood/shingles/kapok_slab', shingle_stair: 'rnr:wood/shingles/kapok_stairs',
-        astikor_data: astikorData("tfcastikorcarts", "kapok"),
+        astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "kapok"),
         support: 'tfc:wood/support/kapok',
         track: 'railways:track_tfc_kapok', track_wide: 'railways:track_tfc_kapok_wide', track_narrow: 'railways:track_tfc_kapok_narrow',
         window: 'everycomp:c/tfc/kapok_window', window_pane: 'everycomp:c/tfc/kapok_window_pane',
-        macaw_bridges: macawBridges("mcw_tfc_aio", "kapok"),
-        macaw_fences: macawFences("mcw_tfc_aio", "kapok"),
-        macaw_roofs: macawRoofs("mcw_tfc_aio", "kapok"),
-        macaw_furniture: macawFurniture("mcw_tfc_aio", "kapok"),
-        macaw_furniture_stripped: macawStrippedFurniture("mcw_tfc_aio", "kapok"),
+        macaw_bridges: global.woodStructHelpers.macawBridges("mcw_tfc_aio", "kapok"),
+        macaw_fences: global.woodStructHelpers.macawFences("mcw_tfc_aio", "kapok"),
+        macaw_roofs: global.woodStructHelpers.macawRoofs("mcw_tfc_aio", "kapok"),
+        macaw_furniture: global.woodStructHelpers.macawFurniture("mcw_tfc_aio", "kapok"),
+        macaw_furniture_stripped: global.woodStructHelpers.macawStrippedFurniture("mcw_tfc_aio", "kapok"),
         woodKind: global.WOOD_KIND.SOFT,
     },
     {
@@ -359,7 +345,7 @@ global.TFC_WOOD_STRUCT = ([
         name: 'mangrove',
         logs: '#tfc:mangrove_logs', log: 'tfc:wood/log/mangrove', stripped_log: 'tfc:wood/stripped_log/mangrove',
         log_wood: 'tfc:wood/wood/mangrove', stripped_wood: "tfc:wood/stripped_wood/mangrove",
-        tree_data: treeData(1, ["tfc"], ["mangrove"], ["mangrove"]),
+        tree_data: global.woodStructHelpers.treeData(1, ["tfc"], ["mangrove"], ["mangrove"]),
         lumber: 'tfc:wood/lumber/mangrove', plank: 'tfc:wood/planks/mangrove',
         stair: 'tfc:wood/planks/mangrove_stairs', slab: 'tfc:wood/planks/mangrove_slab',
         fence: 'tfc:wood/planks/mangrove_fence', fence_gate: 'tfc:wood/planks/mangrove_fence_gate',
@@ -369,15 +355,15 @@ global.TFC_WOOD_STRUCT = ([
         workbench: 'tfc:wood/planks/mangrove_workbench', crafting_station: 'tfg:wood/crafting_station/mangrove', crafting_station_slab: 'tfg:wood/crafting_station/mangrove_slab',
         rope_ladder: 'tfg:wood/rope_ladder/mangrove',
         shingle: 'rnr:wood/shingle/mangrove', shingle_roof: 'rnr:wood/shingles/mangrove', shingle_slab: 'rnr:wood/shingles/mangrove_slab', shingle_stair: 'rnr:wood/shingles/mangrove_stairs',
-        astikor_data: astikorData("tfcastikorcarts", "mangrove"),
+        astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "mangrove"),
         support: 'tfc:wood/support/mangrove',
         track: 'railways:track_tfc_mangrove', track_wide: 'railways:track_tfc_mangrove_wide', track_narrow: 'railways:track_tfc_mangrove_narrow',
         window: 'everycomp:c/tfc/mangrove_window', window_pane: 'everycomp:c/tfc/mangrove_window_pane',        
-        macaw_bridges: macawBridges("mcw_tfc_aio", "mangrove"),
-        macaw_fences: macawFences("mcw_tfc_aio", "mangrove"),
-        macaw_roofs: macawRoofs("mcw_tfc_aio", "mangrove"),
-        macaw_furniture: macawFurniture("mcw_tfc_aio", "mangrove"),
-        macaw_furniture_stripped: macawStrippedFurniture("mcw_tfc_aio", "mangrove"),
+        macaw_bridges: global.woodStructHelpers.macawBridges("mcw_tfc_aio", "mangrove"),
+        macaw_fences: global.woodStructHelpers.macawFences("mcw_tfc_aio", "mangrove"),
+        macaw_roofs: global.woodStructHelpers.macawRoofs("mcw_tfc_aio", "mangrove"),
+        macaw_furniture: global.woodStructHelpers.macawFurniture("mcw_tfc_aio", "mangrove"),
+        macaw_furniture_stripped: global.woodStructHelpers.macawStrippedFurniture("mcw_tfc_aio", "mangrove"),
         woodKind: global.WOOD_KIND.SOFT,
     },
     {
@@ -385,7 +371,7 @@ global.TFC_WOOD_STRUCT = ([
         name: 'maple',
         logs: '#tfc:maple_logs', log: 'tfc:wood/log/maple', stripped_log: 'tfc:wood/stripped_log/maple',
         log_wood: 'tfc:wood/wood/maple', stripped_wood: "tfc:wood/stripped_wood/maple",
-        tree_data: treeData(3, ["tfc", "afc", "afc"], ["maple", "bigleaf_maple", "weeping_maple"], ["maple", "bigleaf_maple", "weeping_maple"]),
+        tree_data: global.woodStructHelpers.treeData(3, ["tfc", "afc", "afc"], ["maple", "bigleaf_maple", "weeping_maple"], ["maple", "bigleaf_maple", "weeping_maple"]),
         lumber: 'tfc:wood/lumber/maple', plank: 'tfc:wood/planks/maple',
         stair: 'tfc:wood/planks/maple_stairs', slab: 'tfc:wood/planks/maple_slab',
         fence: 'tfc:wood/planks/maple_fence', fence_gate: 'tfc:wood/planks/maple_fence_gate',
@@ -395,15 +381,15 @@ global.TFC_WOOD_STRUCT = ([
         workbench: 'tfc:wood/planks/maple_workbench', crafting_station: 'tfg:wood/crafting_station/maple', crafting_station_slab: 'tfg:wood/crafting_station/maple_slab',
         rope_ladder: 'tfg:wood/rope_ladder/maple',
         shingle: 'rnr:wood/shingle/maple', shingle_roof: 'rnr:wood/shingles/maple', shingle_slab: 'rnr:wood/shingles/maple_slab', shingle_stair: 'rnr:wood/shingles/maple_stairs',
-        astikor_data: astikorData("tfcastikorcarts", "maple"),
+        astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "maple"),
         support: 'tfc:wood/support/maple',
         track: 'railways:track_tfc_maple', track_wide: 'railways:track_tfc_maple_wide', track_narrow: 'railways:track_tfc_maple_narrow',
         window: 'everycomp:c/tfc/maple_window', window_pane: 'everycomp:c/tfc/maple_window_pane',
-        macaw_bridges: macawBridges("mcw_tfc_aio", "maple"),
-        macaw_fences: macawFences("mcw_tfc_aio", "maple"),
-        macaw_roofs: macawRoofs("mcw_tfc_aio", "maple"),
-        macaw_furniture: macawFurniture("mcw_tfc_aio", "maple"),
-        macaw_furniture_stripped: macawStrippedFurniture("mcw_tfc_aio", "maple"),
+        macaw_bridges: global.woodStructHelpers.macawBridges("mcw_tfc_aio", "maple"),
+        macaw_fences: global.woodStructHelpers.macawFences("mcw_tfc_aio", "maple"),
+        macaw_roofs: global.woodStructHelpers.macawRoofs("mcw_tfc_aio", "maple"),
+        macaw_furniture: global.woodStructHelpers.macawFurniture("mcw_tfc_aio", "maple"),
+        macaw_furniture_stripped: global.woodStructHelpers.macawStrippedFurniture("mcw_tfc_aio", "maple"),
         woodKind: global.WOOD_KIND.HARD,
     },
     {
@@ -411,7 +397,7 @@ global.TFC_WOOD_STRUCT = ([
         name: 'oak',
         logs: '#tfc:oak_logs', log: 'tfc:wood/log/oak', stripped_log: 'tfc:wood/stripped_log/oak',
         log_wood: 'tfc:wood/wood/oak', stripped_wood: "tfc:wood/stripped_wood/oak",
-        tree_data: treeData(3, ["tfc", "afc", "afc"], ["oak", "black_oak", "live_oak"], ["oak", "black_oak", "live_oak"]),
+        tree_data: global.woodStructHelpers.treeData(3, ["tfc", "afc", "afc"], ["oak", "black_oak", "live_oak"], ["oak", "black_oak", "live_oak"]),
         lumber: 'tfc:wood/lumber/oak', plank: 'tfc:wood/planks/oak',
         stair: 'tfc:wood/planks/oak_stairs', slab: 'tfc:wood/planks/oak_slab',
         fence: 'tfc:wood/planks/oak_fence', fence_gate: 'tfc:wood/planks/oak_fence_gate',
@@ -421,15 +407,15 @@ global.TFC_WOOD_STRUCT = ([
         workbench: 'tfc:wood/planks/oak_workbench', crafting_station: 'tfg:wood/crafting_station/oak', crafting_station_slab: 'tfg:wood/crafting_station/oak_slab',
         rope_ladder: 'tfg:wood/rope_ladder/oak',
         shingle: 'rnr:wood/shingle/oak', shingle_roof: 'rnr:wood/shingles/oak', shingle_slab: 'rnr:wood/shingles/oak_slab', shingle_stair: 'rnr:wood/shingles/oak_stairs',
-        astikor_data: astikorData("tfcastikorcarts", "oak"),
+        astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "oak"),
         support: 'tfc:wood/support/oak',
         track: 'railways:track_tfc_oak', track_wide: 'railways:track_tfc_oak_wide', track_narrow: 'railways:track_tfc_oak_narrow',
         window: 'everycomp:c/tfc/oak_window', window_pane: 'everycomp:c/tfc/oak_window_pane',
-        macaw_bridges: macawBridges("mcw_tfc_aio", "oak"),
-        macaw_fences: macawFences("mcw_tfc_aio", "oak"),
-        macaw_roofs: macawRoofs("mcw_tfc_aio", "oak"),
-        macaw_furniture: macawFurniture("mcw_tfc_aio", "oak"),
-        macaw_furniture_stripped: macawStrippedFurniture("mcw_tfc_aio", "oak"),
+        macaw_bridges: global.woodStructHelpers.macawBridges("mcw_tfc_aio", "oak"),
+        macaw_fences: global.woodStructHelpers.macawFences("mcw_tfc_aio", "oak"),
+        macaw_roofs: global.woodStructHelpers.macawRoofs("mcw_tfc_aio", "oak"),
+        macaw_furniture: global.woodStructHelpers.macawFurniture("mcw_tfc_aio", "oak"),
+        macaw_furniture_stripped: global.woodStructHelpers.macawStrippedFurniture("mcw_tfc_aio", "oak"),
         woodKind: global.WOOD_KIND.HARD,
     },
     {
@@ -437,7 +423,7 @@ global.TFC_WOOD_STRUCT = ([
         name: 'palm',
         logs: '#tfc:palm_logs', log: 'tfc:wood/log/palm', stripped_log: 'tfc:wood/stripped_log/palm',
         log_wood: 'tfc:wood/wood/palm', stripped_wood: "tfc:wood/stripped_wood/palm",
-        tree_data: treeData(2, ["tfc", "afc"], ["palm", "jaggery_palm"], ["palm", "jaggery_palm"]),
+        tree_data: global.woodStructHelpers.treeData(2, ["tfc", "afc"], ["palm", "jaggery_palm"], ["palm", "jaggery_palm"]),
         lumber: 'tfc:wood/lumber/palm', plank: 'tfc:wood/planks/palm',
         stair: 'tfc:wood/planks/palm_stairs', slab: 'tfc:wood/planks/palm_slab',
         fence: 'tfc:wood/planks/palm_fence', fence_gate: 'tfc:wood/planks/palm_fence_gate',
@@ -447,15 +433,15 @@ global.TFC_WOOD_STRUCT = ([
         workbench: 'tfc:wood/planks/palm_workbench', crafting_station: 'tfg:wood/crafting_station/palm', crafting_station_slab: 'tfg:wood/crafting_station/palm_slab',
         rope_ladder: 'tfg:wood/rope_ladder/palm',
         shingle: 'rnr:wood/shingle/palm', shingle_roof: 'rnr:wood/shingles/palm', shingle_slab: 'rnr:wood/shingles/palm_slab', shingle_stair: 'rnr:wood/shingles/palm_stairs',
-        astikor_data: astikorData("tfcastikorcarts", "palm"),
+        astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "palm"),
         support: 'tfc:wood/support/palm',
         track: 'railways:track_tfc_palm', track_wide: 'railways:track_tfc_palm_wide', track_narrow: 'railways:track_tfc_palm_narrow',
         window: 'everycomp:c/tfc/palm_window', window_pane: 'everycomp:c/tfc/palm_window_pane',
-        macaw_bridges: macawBridges("mcw_tfc_aio", "palm"),
-        macaw_fences: macawFences("mcw_tfc_aio", "palm"),
-        macaw_roofs: macawRoofs("mcw_tfc_aio", "palm"),
-        macaw_furniture: macawFurniture("mcw_tfc_aio", "palm"),
-        macaw_furniture_stripped: macawStrippedFurniture("mcw_tfc_aio", "palm"),
+        macaw_bridges: global.woodStructHelpers.macawBridges("mcw_tfc_aio", "palm"),
+        macaw_fences: global.woodStructHelpers.macawFences("mcw_tfc_aio", "palm"),
+        macaw_roofs: global.woodStructHelpers.macawRoofs("mcw_tfc_aio", "palm"),
+        macaw_furniture: global.woodStructHelpers.macawFurniture("mcw_tfc_aio", "palm"),
+        macaw_furniture_stripped: global.woodStructHelpers.macawStrippedFurniture("mcw_tfc_aio", "palm"),
         woodKind: global.WOOD_KIND.SOFT,
     },
     {
@@ -463,7 +449,7 @@ global.TFC_WOOD_STRUCT = ([
         name: 'pine',
         logs: '#tfc:pine_logs', log: 'tfc:wood/log/pine', stripped_log: 'tfc:wood/stripped_log/pine',
         log_wood: 'tfc:wood/wood/pine', stripped_wood: "tfc:wood/stripped_wood/pine",
-        tree_data: treeData(3, ["tfc", "afc", "afc"], ["pine", "stone_pine", "red_pine"], ["pine", "stone_pine", "red_pine"]),
+        tree_data: global.woodStructHelpers.treeData(3, ["tfc", "afc", "afc"], ["pine", "stone_pine", "red_pine"], ["pine", "stone_pine", "red_pine"]),
         lumber: 'tfc:wood/lumber/pine', plank: 'tfc:wood/planks/pine',
         stair: 'tfc:wood/planks/pine_stairs', slab: 'tfc:wood/planks/pine_slab',
         fence: 'tfc:wood/planks/pine_fence', fence_gate: 'tfc:wood/planks/pine_fence_gate',
@@ -473,15 +459,15 @@ global.TFC_WOOD_STRUCT = ([
         workbench: 'tfc:wood/planks/pine_workbench', crafting_station: 'tfg:wood/crafting_station/pine', crafting_station_slab: 'tfg:wood/crafting_station/pine_slab',
         rope_ladder: 'tfg:wood/rope_ladder/pine',
         shingle: 'rnr:wood/shingle/pine', shingle_roof: 'rnr:wood/shingles/pine', shingle_slab: 'rnr:wood/shingles/pine_slab', shingle_stair: 'rnr:wood/shingles/pine_stairs',
-        astikor_data: astikorData("tfcastikorcarts", "pine"),
+        astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "pine"),
         support: 'tfc:wood/support/pine',
         track: 'railways:track_tfc_pine', track_wide: 'railways:track_tfc_pine_wide', track_narrow: 'railways:track_tfc_pine_narrow',
         window: 'everycomp:c/tfc/pine_window', window_pane: 'everycomp:c/tfc/pine_window_pane',
-        macaw_bridges: macawBridges("mcw_tfc_aio", "pine"),
-        macaw_fences: macawFences("mcw_tfc_aio", "pine"),
-        macaw_roofs: macawRoofs("mcw_tfc_aio", "pine"),
-        macaw_furniture: macawFurniture("mcw_tfc_aio", "pine"),
-        macaw_furniture_stripped: macawStrippedFurniture("mcw_tfc_aio", "pine"),
+        macaw_bridges: global.woodStructHelpers.macawBridges("mcw_tfc_aio", "pine"),
+        macaw_fences: global.woodStructHelpers.macawFences("mcw_tfc_aio", "pine"),
+        macaw_roofs: global.woodStructHelpers.macawRoofs("mcw_tfc_aio", "pine"),
+        macaw_furniture: global.woodStructHelpers.macawFurniture("mcw_tfc_aio", "pine"),
+        macaw_furniture_stripped: global.woodStructHelpers.macawStrippedFurniture("mcw_tfc_aio", "pine"),
         woodKind: global.WOOD_KIND.SOFT,
     },
     {
@@ -489,7 +475,7 @@ global.TFC_WOOD_STRUCT = ([
         name: 'rosewood',
         logs: '#tfc:rosewood_logs', log: 'tfc:wood/log/rosewood', stripped_log: 'tfc:wood/stripped_log/rosewood',
         log_wood: 'tfc:wood/wood/rosewood', stripped_wood: "tfc:wood/stripped_wood/rosewood",
-        tree_data: treeData(2, ["tfc", "afc"], ["rosewood", "giant_rosewood"], ["rosewood", "giant_rosewood"]),
+        tree_data: global.woodStructHelpers.treeData(2, ["tfc", "afc"], ["rosewood", "giant_rosewood"], ["rosewood", "giant_rosewood"]),
         lumber: 'tfc:wood/lumber/rosewood', plank: 'tfc:wood/planks/rosewood',
         stair: 'tfc:wood/planks/rosewood_stairs', slab: 'tfc:wood/planks/rosewood_slab',
         fence: 'tfc:wood/planks/rosewood_fence', fence_gate: 'tfc:wood/planks/rosewood_fence_gate',
@@ -499,15 +485,15 @@ global.TFC_WOOD_STRUCT = ([
         workbench: 'tfc:wood/planks/rosewood_workbench', crafting_station: 'tfg:wood/crafting_station/rosewood', crafting_station_slab: 'tfg:wood/crafting_station/rosewood_slab',
         rope_ladder: 'tfg:wood/rope_ladder/rosewood',
         shingle: 'rnr:wood/shingle/rosewood', shingle_roof: 'rnr:wood/shingles/rosewood', shingle_slab: 'rnr:wood/shingles/rosewood_slab', shingle_stair: 'rnr:wood/shingles/rosewood_stairs',
-        astikor_data: astikorData("tfcastikorcarts", "rosewood"),
+        astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "rosewood"),
         support: 'tfc:wood/support/rosewood',
         track: 'railways:track_tfc_rosewood', track_wide: 'railways:track_tfc_rosewood_wide', track_narrow: 'railways:track_tfc_rosewood_narrow',
         window: 'everycomp:c/tfc/rosewood_window', window_pane: 'everycomp:c/tfc/rosewood_window_pane',
-        macaw_bridges: macawBridges("mcw_tfc_aio", "rosewood"),
-        macaw_fences: macawFences("mcw_tfc_aio", "rosewood"),
-        macaw_roofs: macawRoofs("mcw_tfc_aio", "rosewood"),
-        macaw_furniture: macawFurniture("mcw_tfc_aio", "rosewood"),
-        macaw_furniture_stripped: macawStrippedFurniture("mcw_tfc_aio", "rosewood"),
+        macaw_bridges: global.woodStructHelpers.macawBridges("mcw_tfc_aio", "rosewood"),
+        macaw_fences: global.woodStructHelpers.macawFences("mcw_tfc_aio", "rosewood"),
+        macaw_roofs: global.woodStructHelpers.macawRoofs("mcw_tfc_aio", "rosewood"),
+        macaw_furniture: global.woodStructHelpers.macawFurniture("mcw_tfc_aio", "rosewood"),
+        macaw_furniture_stripped: global.woodStructHelpers.macawStrippedFurniture("mcw_tfc_aio", "rosewood"),
         woodKind: global.WOOD_KIND.HARD,
     },
     {
@@ -515,7 +501,7 @@ global.TFC_WOOD_STRUCT = ([
         name: 'sequoia',
         logs: '#tfc:sequoia_logs', log: 'tfc:wood/log/sequoia', stripped_log: 'tfc:wood/stripped_log/sequoia',
         log_wood: 'tfc:wood/wood/sequoia', stripped_wood: "tfc:wood/stripped_wood/sequoia",
-        tree_data: treeData(1, ["tfc"], ["sequoia"], ["sequoia"]),
+        tree_data: global.woodStructHelpers.treeData(1, ["tfc"], ["sequoia"], ["sequoia"]),
         lumber: 'tfc:wood/lumber/sequoia', plank: 'tfc:wood/planks/sequoia',
         stair: 'tfc:wood/planks/sequoia_stairs', slab: 'tfc:wood/planks/sequoia_slab',
         fence: 'tfc:wood/planks/sequoia_fence', fence_gate: 'tfc:wood/planks/sequoia_fence_gate',
@@ -525,15 +511,15 @@ global.TFC_WOOD_STRUCT = ([
         workbench: 'tfc:wood/planks/sequoia_workbench', crafting_station: 'tfg:wood/crafting_station/sequoia', crafting_station_slab: 'tfg:wood/crafting_station/sequoia_slab',
         rope_ladder: 'tfg:wood/rope_ladder/sequoia',
         shingle: 'rnr:wood/shingle/sequoia', shingle_roof: 'rnr:wood/shingles/sequoia', shingle_slab: 'rnr:wood/shingles/sequoia_slab', shingle_stair: 'rnr:wood/shingles/sequoia_stairs',
-        astikor_data: astikorData("tfcastikorcarts", "sequoia"),
+        astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "sequoia"),
         support: 'tfc:wood/support/sequoia',
         track: 'railways:track_tfc_sequoia', track_wide: 'railways:track_tfc_sequoia_wide', track_narrow: 'railways:track_tfc_sequoia_narrow',
         window: 'everycomp:c/tfc/sequoia_window', window_pane: 'everycomp:c/tfc/sequoia_window_pane',
-        macaw_bridges: macawBridges("mcw_tfc_aio", "sequoia"),
-        macaw_fences: macawFences("mcw_tfc_aio", "sequoia"),
-        macaw_roofs: macawRoofs("mcw_tfc_aio", "sequoia"),
-        macaw_furniture: macawFurniture("mcw_tfc_aio", "sequoia"),
-        macaw_furniture_stripped: macawStrippedFurniture("mcw_tfc_aio", "sequoia"),
+        macaw_bridges: global.woodStructHelpers.macawBridges("mcw_tfc_aio", "sequoia"),
+        macaw_fences: global.woodStructHelpers.macawFences("mcw_tfc_aio", "sequoia"),
+        macaw_roofs: global.woodStructHelpers.macawRoofs("mcw_tfc_aio", "sequoia"),
+        macaw_furniture: global.woodStructHelpers.macawFurniture("mcw_tfc_aio", "sequoia"),
+        macaw_furniture_stripped: global.woodStructHelpers.macawStrippedFurniture("mcw_tfc_aio", "sequoia"),
         woodKind: global.WOOD_KIND.SOFT,
     },
     {
@@ -541,7 +527,7 @@ global.TFC_WOOD_STRUCT = ([
         name: 'spruce',
         logs: '#tfc:spruce_logs', log: 'tfc:wood/log/spruce', stripped_log: 'tfc:wood/stripped_log/spruce',
         log_wood: 'tfc:wood/wood/spruce', stripped_wood: "tfc:wood/stripped_wood/spruce",
-        tree_data: treeData(4, ["tfc", "afc", "afc", "afc"], ["spruce", "coast_spruce", "sitka_spruce", "black_spruce"], ["spruce", "coast_spruce", "sitka_spruce", "black_spruce"]),
+        tree_data: global.woodStructHelpers.treeData(4, ["tfc", "afc", "afc", "afc"], ["spruce", "coast_spruce", "sitka_spruce", "black_spruce"], ["spruce", "coast_spruce", "sitka_spruce", "black_spruce"]),
         lumber: 'tfc:wood/lumber/spruce', plank: 'tfc:wood/planks/spruce',
         stair: 'tfc:wood/planks/spruce_stairs', slab: 'tfc:wood/planks/spruce_slab',
         fence: 'tfc:wood/planks/spruce_fence', fence_gate: 'tfc:wood/planks/spruce_fence_gate',
@@ -551,15 +537,15 @@ global.TFC_WOOD_STRUCT = ([
         workbench: 'tfc:wood/planks/spruce_workbench', crafting_station: 'tfg:wood/crafting_station/spruce', crafting_station_slab: 'tfg:wood/crafting_station/spruce_slab',
         rope_ladder: 'tfg:wood/rope_ladder/spruce',
         shingle: 'rnr:wood/shingle/spruce', shingle_roof: 'rnr:wood/shingles/spruce', shingle_slab: 'rnr:wood/shingles/spruce_slab', shingle_stair: 'rnr:wood/shingles/spruce_stairs',
-        astikor_data: astikorData("tfcastikorcarts", "spruce"),
+        astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "spruce"),
         support: 'tfc:wood/support/spruce',
         track: 'railways:track_tfc_spruce', track_wide: 'railways:track_tfc_spruce_wide', track_narrow: 'railways:track_tfc_spruce_narrow',
         window: 'everycomp:c/tfc/spruce_window', window_pane: 'everycomp:c/tfc/spruce_window_pane',
-        macaw_bridges: macawBridges("mcw_tfc_aio", "spruce"),
-        macaw_fences: macawFences("mcw_tfc_aio", "spruce"),
-        macaw_roofs: macawRoofs("mcw_tfc_aio", "spruce"),
-        macaw_furniture: macawFurniture("mcw_tfc_aio", "spruce"),
-        macaw_furniture_stripped: macawStrippedFurniture("mcw_tfc_aio", "spruce"),
+        macaw_bridges: global.woodStructHelpers.macawBridges("mcw_tfc_aio", "spruce"),
+        macaw_fences: global.woodStructHelpers.macawFences("mcw_tfc_aio", "spruce"),
+        macaw_roofs: global.woodStructHelpers.macawRoofs("mcw_tfc_aio", "spruce"),
+        macaw_furniture: global.woodStructHelpers.macawFurniture("mcw_tfc_aio", "spruce"),
+        macaw_furniture_stripped: global.woodStructHelpers.macawStrippedFurniture("mcw_tfc_aio", "spruce"),
         woodKind: global.WOOD_KIND.SOFT,
     },
     {
@@ -567,7 +553,7 @@ global.TFC_WOOD_STRUCT = ([
         name: 'sycamore',
         logs: '#tfc:sycamore_logs', log: 'tfc:wood/log/sycamore', stripped_log: 'tfc:wood/stripped_log/sycamore',
         log_wood: 'tfc:wood/wood/sycamore', stripped_wood: "tfc:wood/stripped_wood/sycamore",
-        tree_data: treeData(1, ["tfc"], ["sycamore"], ["sycamore"]),
+        tree_data: global.woodStructHelpers.treeData(1, ["tfc"], ["sycamore"], ["sycamore"]),
         lumber: 'tfc:wood/lumber/sycamore', plank: 'tfc:wood/planks/sycamore',
         stair: 'tfc:wood/planks/sycamore_stairs', slab: 'tfc:wood/planks/sycamore_slab',
         fence: 'tfc:wood/planks/sycamore_fence', fence_gate: 'tfc:wood/planks/sycamore_fence_gate',
@@ -577,15 +563,15 @@ global.TFC_WOOD_STRUCT = ([
         workbench: 'tfc:wood/planks/sycamore_workbench', crafting_station: 'tfg:wood/crafting_station/sycamore', crafting_station_slab: 'tfg:wood/crafting_station/sycamore_slab',
         rope_ladder: 'tfg:wood/rope_ladder/sycamore',
         shingle: 'rnr:wood/shingle/sycamore', shingle_roof: 'rnr:wood/shingles/sycamore', shingle_slab: 'rnr:wood/shingles/sycamore_slab', shingle_stair: 'rnr:wood/shingles/sycamore_stairs',
-        astikor_data: astikorData("tfcastikorcarts", "sycamore"),
+        astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "sycamore"),
         support: 'tfc:wood/support/sycamore',
         track: 'railways:track_tfc_sycamore', track_wide: 'railways:track_tfc_sycamore_wide', track_narrow: 'railways:track_tfc_sycamore_narrow',
         window: 'everycomp:c/tfc/sycamore_window', window_pane: 'everycomp:c/tfc/sycamore_window_pane',
-        macaw_bridges: macawBridges("mcw_tfc_aio", "sycamore"),
-        macaw_fences: macawFences("mcw_tfc_aio", "sycamore"),
-        macaw_roofs: macawRoofs("mcw_tfc_aio", "sycamore"),
-        macaw_furniture: macawFurniture("mcw_tfc_aio", "sycamore"),
-        macaw_furniture_stripped: macawStrippedFurniture("mcw_tfc_aio", "sycamore"),
+        macaw_bridges: global.woodStructHelpers.macawBridges("mcw_tfc_aio", "sycamore"),
+        macaw_fences: global.woodStructHelpers.macawFences("mcw_tfc_aio", "sycamore"),
+        macaw_roofs: global.woodStructHelpers.macawRoofs("mcw_tfc_aio", "sycamore"),
+        macaw_furniture: global.woodStructHelpers.macawFurniture("mcw_tfc_aio", "sycamore"),
+        macaw_furniture_stripped: global.woodStructHelpers.macawStrippedFurniture("mcw_tfc_aio", "sycamore"),
         woodKind: global.WOOD_KIND.HARD,
     },
     {
@@ -593,7 +579,7 @@ global.TFC_WOOD_STRUCT = ([
         name: 'white_cedar',
         logs: '#tfc:white_cedar_logs', log: 'tfc:wood/log/white_cedar', stripped_log: 'tfc:wood/stripped_log/white_cedar',
         log_wood: 'tfc:wood/wood/white_cedar', stripped_wood: "tfc:wood/stripped_wood/white_cedar",
-        tree_data: treeData(1, ["tfc"], ["white_cedar"], ["white_cedar"]),
+        tree_data: global.woodStructHelpers.treeData(1, ["tfc"], ["white_cedar"], ["white_cedar"]),
         lumber: 'tfc:wood/lumber/white_cedar', plank: 'tfc:wood/planks/white_cedar',
         stair: 'tfc:wood/planks/white_cedar_stairs', slab: 'tfc:wood/planks/white_cedar_slab',
         fence: 'tfc:wood/planks/white_cedar_fence', fence_gate: 'tfc:wood/planks/white_cedar_fence_gate',
@@ -603,15 +589,15 @@ global.TFC_WOOD_STRUCT = ([
         workbench: 'tfc:wood/planks/white_cedar_workbench', crafting_station: 'tfg:wood/crafting_station/white_cedar', crafting_station_slab: 'tfg:wood/crafting_station/white_cedar_slab',
         rope_ladder: 'tfg:wood/rope_ladder/white_cedar',
         shingle: 'rnr:wood/shingle/white_cedar', shingle_roof: 'rnr:wood/shingles/white_cedar', shingle_slab: 'rnr:wood/shingles/white_cedar_slab', shingle_stair: 'rnr:wood/shingles/white_cedar_stairs',
-        astikor_data: astikorData("tfcastikorcarts", "white_cedar"),
+        astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "white_cedar"),
         support: 'tfc:wood/support/white_cedar',
         track: 'railways:track_tfc_white_cedar', track_wide: 'railways:track_tfc_white_cedar_wide', track_narrow: 'railways:track_tfc_white_cedar_narrow',
         window: 'everycomp:c/tfc/white_cedar_window', window_pane: 'everycomp:c/tfc/white_cedar_window_pane',
-        macaw_bridges: macawBridges("mcw_tfc_aio", "white_cedar"),
-        macaw_fences: macawFences("mcw_tfc_aio", "white_cedar"),
-        macaw_roofs: macawRoofs("mcw_tfc_aio", "white_cedar"),
-        macaw_furniture: macawFurniture("mcw_tfc_aio", "white_cedar"),
-        macaw_furniture_stripped: macawStrippedFurniture("mcw_tfc_aio", "white_cedar"),
+        macaw_bridges: global.woodStructHelpers.macawBridges("mcw_tfc_aio", "white_cedar"),
+        macaw_fences: global.woodStructHelpers.macawFences("mcw_tfc_aio", "white_cedar"),
+        macaw_roofs: global.woodStructHelpers.macawRoofs("mcw_tfc_aio", "white_cedar"),
+        macaw_furniture: global.woodStructHelpers.macawFurniture("mcw_tfc_aio", "white_cedar"),
+        macaw_furniture_stripped: global.woodStructHelpers.macawStrippedFurniture("mcw_tfc_aio", "white_cedar"),
         woodKind: global.WOOD_KIND.SOFT,
     },
     {
@@ -619,7 +605,7 @@ global.TFC_WOOD_STRUCT = ([
         name: 'willow',
         logs: '#tfc:willow_logs', log: 'tfc:wood/log/willow', stripped_log: 'tfc:wood/stripped_log/willow',
         log_wood: 'tfc:wood/wood/willow', stripped_wood: "tfc:wood/stripped_wood/willow",
-        tree_data: treeData(2, ["tfc", "afc"], ["willow", "weeping_willow"], ["willow", "weeping_willow"]),
+        tree_data: global.woodStructHelpers.treeData(2, ["tfc", "afc"], ["willow", "weeping_willow"], ["willow", "weeping_willow"]),
         lumber: 'tfc:wood/lumber/willow', plank: 'tfc:wood/planks/willow',
         stair: 'tfc:wood/planks/willow_stairs', slab: 'tfc:wood/planks/willow_slab',
         fence: 'tfc:wood/planks/willow_fence', fence_gate: 'tfc:wood/planks/willow_fence_gate',
@@ -629,211 +615,17 @@ global.TFC_WOOD_STRUCT = ([
         workbench: 'tfc:wood/planks/willow_workbench', crafting_station: 'tfg:wood/crafting_station/willow', crafting_station_slab: 'tfg:wood/crafting_station/willow_slab',
         rope_ladder: 'tfg:wood/rope_ladder/willow',
         shingle: 'rnr:wood/shingle/willow', shingle_roof: 'rnr:wood/shingles/willow', shingle_slab: 'rnr:wood/shingles/willow_slab', shingle_stair: 'rnr:wood/shingles/willow_stairs',
-        astikor_data: astikorData("tfcastikorcarts", "willow"),
+        astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "willow"),
         support: 'tfc:wood/support/willow',
         track: 'railways:track_tfc_willow', track_wide: 'railways:track_tfc_willow_wide', track_narrow: 'railways:track_tfc_willow_narrow',
         window: 'everycomp:c/tfc/willow_window', window_pane: 'everycomp:c/tfc/willow_window_pane',
-        macaw_bridges: macawBridges("mcw_tfc_aio", "willow"),
-        macaw_fences: macawFences("mcw_tfc_aio", "willow"),
-        macaw_roofs: macawRoofs("mcw_tfc_aio", "willow"),
-        macaw_furniture: macawFurniture("mcw_tfc_aio", "willow"),
-        macaw_furniture_stripped: macawStrippedFurniture("mcw_tfc_aio", "willow"),
+        macaw_bridges: global.woodStructHelpers.macawBridges("mcw_tfc_aio", "willow"),
+        macaw_fences: global.woodStructHelpers.macawFences("mcw_tfc_aio", "willow"),
+        macaw_roofs: global.woodStructHelpers.macawRoofs("mcw_tfc_aio", "willow"),
+        macaw_furniture: global.woodStructHelpers.macawFurniture("mcw_tfc_aio", "willow"),
+        macaw_furniture_stripped: global.woodStructHelpers.macawStrippedFurniture("mcw_tfc_aio", "willow"),
         woodKind: global.WOOD_KIND.SOFT,
     },
-]);
-
-function astikorData(nameSpace, woodName)
-{
-    return {
-        wheel: `${nameSpace}:wheel/${woodName}`,
-        supply_cart: `${nameSpace}:supply_cart/${woodName}`,
-        plow: `${nameSpace}:plow/${woodName}`,
-        animal_cart: `${nameSpace}:animal_cart/${woodName}`
-    };
-}
-function treeData(arrayLen, nameSpaces, leafNames, saplingNames)
-{
-    let result = [];
-    for (let index = 0; index < arrayLen; index++) {
-        result.push({ 
-            tree_name: leafNames[index],
-            leaf_block: `${nameSpaces[index]}:wood/leaves/${leafNames[index]}`, 
-            fallen_leaves: `${nameSpaces[index]}:wood/fallen_leaves/${leafNames[index]}`, 
-            sapling: `${nameSpaces[index]}:wood/sapling/${saplingNames[index]}` 
-        });
-    }
-    return result;
-}
-
-function macawBridges(nameSpace, input)
-{
-    return [
-        `${nameSpace}:bridges/${input}_bridges/${input}_bridge_pier`,
-        `${nameSpace}:bridges/${input}_bridges/${input}_log_bridge_middle`,
-        `${nameSpace}:bridges/${input}_bridges/${input}_log_bridge_stair`,
-        `${nameSpace}:bridges/${input}_bridges/${input}_rail_bridge`,
-        `${nameSpace}:bridges/${input}_bridges/rope_${input}_bridge`,
-        `${nameSpace}:bridges/${input}_bridges/${input}_rope_bridge_stair`,
-    ]
-}
-
-function macawFences(nameSpace, input)
-{
-    return [
-        `${nameSpace}:fences/${input}_fences/${input}_highley_gate`,
-		`${nameSpace}:fences/${input}_fences/${input}_pyramid_gate`
-    ]
-}
-
-function macawRoofs(nameSpace, input)
-{
-    const ROOF_TYPES = [
-		'_attic_roof',
-		'_lower_roof',
-		'_roof',
-		'_steep_roof',
-		'_top_roof',
-		'_upper_lower_roof',
-		'_upper_steep_roof'
-	]
-
-    let result = [];
-    ROOF_TYPES.forEach(roofType =>
-    {
-        result.push(`${nameSpace}:roof/${input}_roofs/${input}_planks${roofType}`);
-        result.push(`${nameSpace}:roof/${input}_roofs/${input}${roofType}`);
-    });
-
-    return result;
-}
-
-function macawFurniture(nameSpace, input)
-{
-    const FURNITURE_TYPES = [
-    '_wardrobe',
-    '_chair',
-    '_modern_wardrobe',
-    '_double_wardrobe',
-    '_bookshelf',
-    '_bookshelf_cupboard',
-    '_drawer',
-    '_double_drawer',
-    '_bookshelf_drawer',
-    '_lower_bookshelf_drawer',
-    '_large_drawer',
-    '_lower_triple_drawer',
-    '_triple_drawer',
-    '_desk',
-    '_covered_desk',
-    '_modern_desk',
-    '_table',
-    '_end_table',
-    '_coffee_table',
-    '_glass_table',
-    '_modern_chair',
-    '_striped_chair',
-    '_stool_chair',
-    '_counter',
-    '_drawer_counter',
-    '_double_drawer_counter',
-    '_cupboard_counter'
-    ]
-
-    let result = []
-    FURNITURE_TYPES.forEach(furnitureType =>
-    {
-        result.push(`${nameSpace}:furniture/${input}_furniture/${input}${furnitureType}`);
-    })
-    return result;
-}
-
-function macawStrippedFurniture(nameSpace, input)
-{
-    const FURNITURE_TYPES = [
-    '_wardrobe',
-    '_chair',
-    '_modern_wardrobe',
-    '_double_wardrobe',
-    '_bookshelf',
-    '_bookshelf_cupboard',
-    '_drawer',
-    '_double_drawer',
-    '_bookshelf_drawer',
-    '_lower_bookshelf_drawer',
-    '_large_drawer',
-    '_lower_triple_drawer',
-    '_triple_drawer',
-    '_desk',
-    '_covered_desk',
-    '_modern_desk',
-    '_table',
-    '_end_table',
-    '_coffee_table',
-    '_glass_table',
-    '_modern_chair',
-    '_striped_chair',
-    '_stool_chair',
-    '_counter',
-    '_drawer_counter',
-    '_double_drawer_counter',
-    '_cupboard_counter'
-    ]
-
-    let result = []
-    FURNITURE_TYPES.forEach(furnitureType =>
-    {
-        result.push(`${nameSpace}:furniture/${input}_furniture/stripped_${input}${furnitureType}`);
-    })
-    return result;
-}
-
-global.TFC_WOOD_TYPES = /** @type {const} */ ([
-    "acacia", // Exists in Minecraft
-    "ash",
-    "aspen",
-    "birch", // Exists in Minecraft
-    "blackwood",
-    "chestnut",
-    "douglas_fir",
-    "hickory",
-    "kapok",
-    "mangrove",
-    "maple",
-    "oak", // Exists in Minecraft
-    "palm",
-    "pine",
-    "rosewood",
-    "sequoia",
-    "spruce",
-    "sycamore",
-    "white_cedar",
-    "willow"
-]);
-
-global.TFC_HARDWOOD_TYPES = /** @type {const} */ ([
-    "acacia",
-    "ash",
-    "aspen",
-    "birch",
-    "blackwood",
-    "chestnut",
-    "hickory",
-    "maple",
-    "oak",
-    "rosewood",
-    "sycamore"
-]);
-
-global.TFC_SOFTWOOD_TYPES = /** @type {const} */ ([
-    "douglas_fir",
-    "kapok",
-    "mangrove",
-    "palm",
-    "pine",
-    "sequoia",
-    "spruce",
-    "white_cedar",
-    "willow"
 ]);
 
 global.TFC_MUD_TYPES = /** @type {const} */ (["silt", "loam", "sandy_loam", "silty_loam"]);

@@ -14,6 +14,137 @@ global.linuxUnfucker = function(value) {
 	return str.toLocaleLowerCase('en-US').replace(/[^0-9_a-z]+/g, "_").replace(/^_+|_+$/g, "");
 };
 
+//We put this here so the other constant javascript files can reference them properly
+/**
+ * @typedef {Object} WoodKindEnum
+ * @property {"HARD"} HARD
+ * @property {"SOFT"} SOFT
+ * @property {"NONE"} NONE
+ */
+
+/** @type {WoodKindEnum} */
+global.WOOD_KIND = ({
+    HARD: "HARD",
+    SOFT: "SOFT",
+    NONE: "NONE"
+});
+
+global.woodStructHelpers =
+{
+    astikorData: function (nameSpace, woodName)
+    {
+        return {
+            wheel: `${nameSpace}:wheel/${woodName}`,
+            supply_cart: `${nameSpace}:supply_cart/${woodName}`,
+            plow: `${nameSpace}:plow/${woodName}`,
+            animal_cart: `${nameSpace}:animal_cart/${woodName}`
+        };
+    },
+    treeData: function(arrayLen, nameSpaces, leafNames, saplingNames)
+    {
+        let result = [];
+        for (let index = 0; index < arrayLen; index++) {
+            result.push({ 
+                tree_name: leafNames[index],
+                leaf_block: `${nameSpaces[index]}:wood/leaves/${leafNames[index]}`, 
+                fallen_leaves: `${nameSpaces[index]}:wood/fallen_leaves/${leafNames[index]}`, 
+                sapling: `${nameSpaces[index]}:wood/sapling/${saplingNames[index]}` 
+            });
+        }
+        return result;
+    },
+    macawBridges: function(nameSpace, input)
+    {
+        return [
+            `${nameSpace}:bridges/${input}_bridges/${input}_bridge_pier`,
+            `${nameSpace}:bridges/${input}_bridges/${input}_log_bridge_middle`,
+            `${nameSpace}:bridges/${input}_bridges/${input}_log_bridge_stair`,
+            `${nameSpace}:bridges/${input}_bridges/${input}_rail_bridge`,
+            `${nameSpace}:bridges/${input}_bridges/rope_${input}_bridge`,
+            `${nameSpace}:bridges/${input}_bridges/${input}_rope_bridge_stair`,
+        ]
+    },
+    macawFences: function(nameSpace, input)
+    {
+        return [
+            `${nameSpace}:bridges/${input}_bridges/${input}_bridge_pier`,
+            `${nameSpace}:bridges/${input}_bridges/${input}_log_bridge_middle`,
+            `${nameSpace}:bridges/${input}_bridges/${input}_log_bridge_stair`,
+            `${nameSpace}:bridges/${input}_bridges/${input}_rail_bridge`,
+            `${nameSpace}:bridges/${input}_bridges/rope_${input}_bridge`,
+            `${nameSpace}:bridges/${input}_bridges/${input}_rope_bridge_stair`,
+        ]
+    },
+    macawRoofs: function(nameSpace, input)
+    {
+        const ROOF_TYPES = [
+            '_attic_roof',
+            '_lower_roof',
+            '_roof',
+            '_steep_roof',
+            '_top_roof',
+            '_upper_lower_roof',
+            '_upper_steep_roof'
+        ]
+
+        let result = [];
+        ROOF_TYPES.forEach(roofType =>
+        {
+            result.push(`${nameSpace}:roof/${input}_roofs/${input}_planks${roofType}`);
+            result.push(`${nameSpace}:roof/${input}_roofs/${input}${roofType}`);
+        });
+
+        return result;
+    },
+    MACAW_FURNITURE_TYPES: [
+        '_wardrobe',
+        '_chair',
+        '_modern_wardrobe',
+        '_double_wardrobe',
+        '_bookshelf',
+        '_bookshelf_cupboard',
+        '_drawer',
+        '_double_drawer',
+        '_bookshelf_drawer',
+        '_lower_bookshelf_drawer',
+        '_large_drawer',
+        '_lower_triple_drawer',
+        '_triple_drawer',
+        '_desk',
+        '_covered_desk',
+        '_modern_desk',
+        '_table',
+        '_end_table',
+        '_coffee_table',
+        '_glass_table',
+        '_modern_chair',
+        '_striped_chair',
+        '_stool_chair',
+        '_counter',
+        '_drawer_counter',
+        '_double_drawer_counter',
+        '_cupboard_counter'
+    ],
+    macawFurniture: function(nameSpace, input)
+    {
+        let result = []
+        global.woodStructHelpers.MACAW_FURNITURE_TYPES.forEach(furnitureType =>
+        {
+            result.push(`${nameSpace}:furniture/${input}_furniture/${input}${furnitureType}`);
+        })
+        return result;
+    },
+    macawStrippedFurniture: function(nameSpace, input)
+    {
+        let result = []
+        global.woodStructHelpers.MACAW_FURNITURE_TYPES.forEach(furnitureType =>
+        {
+            result.push(`${nameSpace}:furniture/${input}_furniture/stripped_${input}${furnitureType}`);
+        })
+        return result;
+    }
+}
+
 StartupEvents.registry('item', event => {
     registerTFGItems(event)
 })
