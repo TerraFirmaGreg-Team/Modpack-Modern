@@ -1,5 +1,81 @@
 "use strict";
 
+// #region Venus fire
+const VENUS_FIRE_IMMUNE_TAG = 'tfg:venus_fire_immune'
+
+/**
+ * @param {Internal.TagEventJS} event
+ * @param {*} forms
+ */
+function addVenusFireImmuneForms(event, forms) {
+	if (!forms) return
+	for (let form of ['block', 'stair', 'slab', 'wall']) {
+		if (forms[form]) event.add(VENUS_FIRE_IMMUNE_TAG, forms[form])
+	}
+	addVenusFireImmuneForms(event, forms.mossy)
+	addVenusFireImmuneForms(event, forms.cracked)
+}
+
+/**
+ * @param {Internal.TagEventJS} event
+ * @param {String} rockId Key in global.BIG_ROCK_TABLE, e.g. 'basalt'
+ * @param {Boolean} buildingBlocks Also adds crafted blocks: stairs, slabs, walls, bricks, polished, chiseled, pillars
+ */
+
+function addVenusFireImmuneRock(event, rockId, buildingBlocks) {
+	const rock = global.BIG_ROCK_TABLE[rockId]
+	if (!rock) {
+		console.warn(`[TFG] Venus Fire unknown rock '${rockId}'`)
+		return
+	}
+
+	for (let id of [rock.hardened, rock.gravel, rock.spike, rock.loose, rock.mossyLoose]) {
+		if (id) event.add(VENUS_FIRE_IMMUNE_TAG, id)
+	}
+	if (rock.raw && rock.raw.block) event.add(VENUS_FIRE_IMMUNE_TAG, rock.raw.block)
+	if (rock.cobble && rock.cobble.block) event.add(VENUS_FIRE_IMMUNE_TAG, rock.cobble.block)
+
+	if (!buildingBlocks) return
+
+	for (let type of ['raw', 'cobble', 'bricks', 'polished', 'chiseled']) {
+		addVenusFireImmuneForms(event, rock[type])
+	}
+	if (rock.stonecutting) {
+		for (let forms of rock.stonecutting) addVenusFireImmuneForms(event, forms)
+	}
+	if (rock.pillar) event.add(VENUS_FIRE_IMMUNE_TAG, rock.pillar)
+	if (rock.pillar2) event.add(VENUS_FIRE_IMMUNE_TAG, rock.pillar2)
+}
+
+/**
+ * @param {Internal.TagEventJS} event
+ * @param {String} materialId e.g. 'gold', 'stainless_steel'
+ */
+function addVenusFireImmuneMaterial(event, materialId) {
+	const material = TFGHelpers.getMaterial(materialId)
+	if (material == null) {
+		console.warn(`[TFG] Venus Fire unknown material '${materialId}'`)
+		return
+	}
+
+	const prefixes = [
+		TagPrefix.block,
+		TagPrefix.frameGt,
+		TFGTagPrefix.blockPlated,
+		TFGTagPrefix.stairPlated,
+		TFGTagPrefix.slabPlated,
+		TFGTagPrefix.bars,
+		TFGTagPrefix.trapdoor,
+		TFGTagPrefix.chain
+	]
+	for (let prefix of prefixes) {
+		let stack = ChemicalHelper.get(prefix, material, 1)
+		if (!stack.isEmpty()) event.add(VENUS_FIRE_IMMUNE_TAG, stack.id)
+	}
+}
+// #endregion
+
+
 function registerTFGVenusItemTags(event) {
 
 	// TODO: foods for bugs with tfg:venusian_arthropod_foods
@@ -153,7 +229,7 @@ function registerTFGVenusBlockTags(event) {
 	event.add('tfg:venus_fire_immune', '#forge:ores')
 	event.add('tfg:venus_fire_immune', '#forge:surface_rocks')
 	event.add('tfg:venus_fire_immune', '#forge:bud_indicators')
-	event.add('tfg:venus_fire_immune', /^tfc:rock\/spike\//)
+	//event.add('tfg:venus_fire_immune', /^tfc:rock\/spike\//)
 	event.add('tfg:venus_fire_immune', 'tfg:venus_hornfels')
 	event.add('tfg:venus_fire_immune', 'ad_astra:venus_sand')
 	event.add('tfg:venus_fire_immune', 'ad_astra:venus_sandstone')
@@ -166,21 +242,38 @@ function registerTFGVenusBlockTags(event) {
 	event.add('tfg:venus_fire_immune', 'tfg:rock/spike/geyserite')
 	event.add('tfg:venus_fire_immune', 'tfg:rock/raw/stromatolite')
 	event.add('tfg:venus_fire_immune', 'tfg:rock/spike/stromatolite')
+	event.add('tfg:venus_fire_immune', 'tfg:big_volcano_smoke_emitter')
+	event.add('tfg:venus_fire_immune', 'aliencraft_kepler:crawling_lily')
+	event.add('tfg:venus_fire_immune', 'aliencraft_kepler:alien_cactus_flower')
+	event.add('tfg:venus_fire_immune', 'opposing_force:slug_eggs')
+	event.add('tfg:venus_fire_immune', 'aliencraft_kepler:big_alien_cactus')
+	event.add('tfg:venus_fire_immune', 'aliencraft_kepler:small_desert_cactus')
+	event.add('tfg:venus_fire_immune', 'aliencraft_kepler:thorn_flower')
+	event.add('tfg:venus_fire_immune', 'tfg:pile/volcanic_ash')
+	event.add('tfg:venus_fire_immune', '')
+	event.add('tfg:venus_fire_immune', '')
+	event.add('tfg:venus_fire_immune', '')
+	event.add('tfg:venus_fire_immune', '')
+	event.add('tfg:venus_fire_immune', '')
+	event.add('tfg:venus_fire_immune', '')
+	event.add('tfg:venus_fire_immune', '')
 
-	// Venus rocks - But we are missing common ones
+	// Rocks - Venus only (Crafted+Natural) - Others (Only Natural)
 
-	for (let rockId of ['flavolite', 'sandy_jadestone', 'sulphuric_rock']) {
-		let rock = global.BIG_ROCK_TABLE[rockId]
-		for (let type of ['raw', 'bricks', 'polished', 'chiseled']) {
-			let forms = rock[type]
-			if (!forms) continue
-			for (let form of ['block', 'stair', 'slab', 'wall']) {
-				if (forms[form]) event.add('tfg:venus_fire_immune', forms[form])
-			}
-		}
-		if (rock.pillar) event.add('tfg:venus_fire_immune', rock.pillar)
-		if (rock.spike) event.add('tfg:venus_fire_immune', rock.spike)
+	// Common Rocks: Natural only
+	for (let rockId of ['andesite', 'basalt', 'blackstone', 'crackrack', 'dacite', 'deepslate', 'diorite', 'dripstone', 'gabbro', 'gneiss', 'granite', 'moon_deepslate', 'phyllite', 'quartzite', 'red_granite', 'rhyolite', 'schist', 'scorchia', 'scoria', 'slate', 'tuff']) {
+		addVenusFireImmuneRock(event, rockId, false)
 	}
+
+	// Venus rocks: Natural and Crafted
+	for (let rockId of ['venus_stone', 'flavolite', 'sandy_jadestone', 'sulphuric_rock']) {
+		addVenusFireImmuneRock(event, rockId, true)
+	}
+
+	// Acid-resistant GregTech materials
+
+	addVenusFireImmuneMaterial(event, 'gold')
+	addVenusFireImmuneMaterial(event, 'stainless_steel')
 
 	// Geysers and sources
 
