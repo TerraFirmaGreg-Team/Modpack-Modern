@@ -276,7 +276,7 @@ function registerTFGFacadeWhitelistItemTags(event) {
 	});
 	
 	//rnr shingles
-	global.TFC_WOOD_TYPES.concat(global.AFC_WOOD_TYPES).forEach(facade_material => {
+	global.AFC_WOOD_TYPES.forEach(facade_material => {
 		event.add('tfg:whitelisted/facades', `rnr:wood/shingles/${  facade_material}`)
 	});
 	
@@ -299,9 +299,6 @@ function registerTFGFacadeWhitelistItemTags(event) {
 	})
 	
 	//everycomp windows
-	global.TFC_WOOD_TYPES.forEach(facade_material => {
-		event.add('tfg:whitelisted/facades', `everycomp:c/tfc/${  facade_material  }_window`)
-	});
 	global.AFC_WOOD_TYPES.forEach(facade_material => {
 		event.add('tfg:whitelisted/facades', `everycomp:c/afc/${  facade_material  }_window`)
 	});

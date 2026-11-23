@@ -2,13 +2,6 @@
 
 const registerRnrItemTags = (event) => {
 
-	global.TFC_WOOD_TYPES.forEach(wood => {
-		event.add('rnr:shingles', `rnr:wood/shingle/${wood}`)
-		event.add('rnr:roof_blocks', `rnr:wood/shingles/${wood}`)
-		event.add('rnr:roof_blocks', `rnr:wood/shingles/${wood}_stairs`)
-		event.add('rnr:roof_blocks', `rnr:wood/shingles/${wood}_slab`)
-	})
-
 	global.AFC_WOOD_TYPES.forEach(wood => {
 		event.add('rnr:shingles', `rnr:wood/shingle/${wood}`)
 		event.add('rnr:roof_blocks', `rnr:wood/shingles/${wood}`)
@@ -101,12 +94,6 @@ const registerRnrItemTags = (event) => {
 };
 
 function registerRnrBlockTags(event) {
-	
-	global.TFC_WOOD_TYPES.forEach(wood => {
-		event.add('minecraft:mineable/axe', `rnr:wood/shingles/${wood}`)
-		event.add('minecraft:mineable/axe', `rnr:wood/shingles/${wood}_stairs`)
-		event.add('minecraft:mineable/axe', `rnr:wood/shingles/${wood}_slab`)
-	});
 
 	global.AFC_WOOD_TYPES.forEach(wood => {
 		event.add('minecraft:mineable/axe', `rnr:wood/shingles/${wood}`)

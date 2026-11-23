@@ -202,11 +202,6 @@ function registerTFGLoots(event) {
 		})
 	})
 
-	global.TFC_WOOD_TYPES.forEach(wood => {
-		const id = `everycomp:c/tfc/${wood}_window_pane`
-		event.addBlockLootModifier(id)
-			.addLoot(id)
-	})
 	global.AFC_WOOD_TYPES.forEach(wood => {
 		const id = `everycomp:c/afc/${wood}_window_pane`
 		event.addBlockLootModifier(id)

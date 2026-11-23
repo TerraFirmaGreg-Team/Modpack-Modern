@@ -2,607 +2,619 @@
 "use strict";
 
 /**
+ * Generates most basic wooden recipes. 
+ * 
+ * All parameters are optional. Name is used for the ID.
+ *
+ * @param {*} event 
+ * @param {string} name -Name of the wood.
+ * @param {string} lumber -ID for the lumber.
+ * @param {string} logs -Tag or ID for all the logs.
+ * @param {string} log -ID for the regular log.
+ * @param {string} stripped_log -ID for the stripped log.
+ * @param {string} plank -ID for planks.
+ * @param {string} stair -ID for stairs.
+ * @param {string} slab -ID for slabs.
+ * @param {string} door -ID for the door.
+ * @param {string} trapdoor -ID for the trapdoor.
+ * @param {string} fence -ID for the fence.
+ * @param {string} fence_gate -ID for the fence gate.
+ * @param {string} support -ID for the support.
+ * @param {string} pressure_plate -ID for the pressure plate.
+ * @param {string} button -ID for the button.
+ * @param {string} log_wood -ID for the log wood.
+ * @param {string} stripped_wood -ID for the stripped wood.
+ * @param {string} roofing -ID for the roofing
+ */
+function TFGWoodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair, slab, door, trapdoor, fence, log_fence,
+	fence_gate, support, pressure_plate, button, log_wood, stripped_wood, tool_rack, workbench, bookshelf, chest, trapped_chest,
+	loom, sluice, barrel, lectern, scribing_table, sewing_table, jar_shelf, food_shelf, hanger, jarbnet, big_barrel,
+	stomping_barrel, barrel_press, wine_shelf, sign, hanging_sign, crafting_station, workbench_as_material, rope_ladder, roofing) {
+
+	// Stripped log from log
+	if (log && stripped_log && name) {
+		event.recipes.gtceu.lathe(`tfg:${name}_stripped_log_from_log`)
+			.itemInputs(log)
+			.itemOutputs(stripped_log)
+			.duration(50)
+			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.recipes.vintageimprovements.polishing(stripped_log, log)
+			.speedLimits(0)
+			.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+			.id(`tfg:vi/lathe/${name}_stripped_log_from_log`)
+	};
+
+	// Stripped wood from log wood
+	if (log_wood && stripped_wood && name) {
+		event.recipes.gtceu.lathe(`tfg:${name}_stripped_wood_from_log_wood`)
+			.itemInputs(log_wood)
+			.itemOutputs(stripped_wood)
+			.duration(50)
+			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.recipes.vintageimprovements.polishing(stripped_wood, log_wood)
+			.speedLimits(0)
+			.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+			.id(`tfg:vi/lathe/${name}_stripped_wood_from_log_wood`)
+	};
+
+	// Lumber from log
+	if (logs && lumber && name) {
+		event.shapeless(`8x ${lumber}`,
+			[logs, '#forge:tools/saws']
+		)
+			.id(`tfg:shapeless/${name}_lumber_from_log`)
+
+		generateCutterRecipe(event, logs, `16x ${lumber}`, 50, 7, `${name}_lumber_from_log`)
+	};
+
+	if (plank && lumber && name) {
+		// Lumber from plank
+		event.shapeless(`4x ${lumber}`,
+			[plank, '#forge:tools/saws']
+		)
+			.id(`tfg:shapeless/${name}_lumber_from_plank`)
+
+		event.recipes.gtceu.packer(`tfg:${name}_lumber_from_plank`)
+			.itemInputs(`${plank}`)
+			.circuit(1)
+			.itemOutputs(`4x ${lumber}`)
+			.duration(50)
+			.EUt(GTValues.VA[GTValues.ULV])	
+
+		// Plank from lumber
+		event.shaped(plank, [
+			'AA',
+			'AA'
+		], {
+			A: lumber
+		})
+			.id(`tfg:shaped/${name}_plank_from_lumber`)
+	};
+
+	// Lumber from slab
+	if (slab && lumber && name) {
+		event.shapeless(`2x ${lumber}`,
+			[slab, '#forge:tools/saws']
+		)
+			.id(`tfg:shapeless/${name}_lumber_from_slab`)
+
+		generateCutterRecipe(event, slab, `2x ${lumber}`, 50, 7, `${name}_lumber_from_slab`)
+	};
+
+	// Slab from lumber
+	if (slab && lumber && name) {
+		event.shaped(slab, [
+			'AA'
+		], {
+			A: lumber
+		})
+			.id(`tfg:shaped/${name}_slab_from_lumber`)
+	};
+
+	// Slab from plank
+	if (slab && plank && name) {
+		event.shaped(`6x ${slab}`, [
+			'AAA'
+		], {
+			A: plank
+		})
+			.id(`tfg:shaped/${name}_slab_from_plank`)
+
+		generateCutterRecipe(event, plank, `2x ${slab}`, 50, 7 , `${name}_slab_from_plank`)
+	}
+
+	// Lumber from stair
+	if (stair && lumber && name) {
+		event.shapeless(`3x ${lumber}`,
+			[stair, '#forge:tools/saws']
+		)
+			.id(`tfg:shapeless/${name}_lumber_from_stair`)
+
+		generateCutterRecipe(event, stair, `3x ${lumber}`, 50, 7, `${name}_lumber_from_stair`)
+	};
+
+	// Stair from lumber
+	if (stair && lumber && name) {
+		event.shaped(stair, [
+			'A ',
+			'AA'
+		], {
+			A: lumber
+		})
+			.id(`tfg:shaped/${name}_stair_from_lumber`)
+	};
+
+	// Stair from plank
+	if (stair && plank && name) {
+		event.shaped(`8x ${stair}`, [
+			'A  ',
+			'AA ',
+			'AAA'
+		], {
+			A: plank
+		})
+			.id(`tfg:shaped/${name}_stair_from_plank`)
+	};
+
+	// Door from lumber
+	if (door && lumber && name) {
+		event.shaped(`2x ${door}`, [
+			'AA',
+			'AA',
+			'AA'
+		], {
+			A: lumber
+		})
+			.id(`tfg:shaped/${name}_door_from_lumber`)
+	};
+
+	// Trapdoor from lumber
+	if (trapdoor && lumber && name) {
+		event.shaped(`3x ${trapdoor}`, [
+			'AAA',
+			'AAA'
+		], {
+			A: lumber
+		})
+			.id(`tfg:shaped/${name}_trapdoor_from_lumber`)
+	};
+
+	// Fence from lumber & plank
+	if (fence && lumber && plank && name) {
+		event.shaped(`8x ${fence}`, [
+			'ABA',
+			'ABA'
+		], {
+			A: plank,
+			B: lumber
+		})
+			.id(`tfg:shaped/${name}_fence_from_lumber_and_plank`)
+	};
+
+	// Log Fence from log and lumber
+	if (log_fence && log && lumber && name) {
+		event.shaped(`8x ${log_fence}`, [
+			'ABA',
+			'ABA'
+		], {
+			A: log,
+			B: lumber
+		})
+			.id(`tfg:shaped/${name}_log_fence_from_log_and_lumber`)
+	};
+
+	// Fence gate from lumber and plank
+	if (fence_gate && lumber && plank && name) {
+		event.shaped(`2x ${fence_gate}`, [
+			'ABA',
+			'ABA'
+		], {
+			A: lumber,
+			B: plank
+		})
+			.id(`tfg:shaped/${name}_fence_gate_from_lumber_and_plank`)
+	};
+
+	// Support from logs
+	if (support && logs && name) {
+		event.shapeless(`8x ${support}`,
+			[`2x ${logs}`, '#forge:tools/saws']
+		)
+			.id(`tfg:shapeless/${name}_support_from_logs`)
+
+		event.recipes.gtceu.assembler(`tfg:${name}_support_from_logs`)
+			.itemInputs(`2x ${logs}`)
+			.itemOutputs(`8x ${support}`)
+			.duration(50)
+			.circuit(4)
+			.EUt(GTValues.VA[GTValues.ULV])
+	};
+
+	// Pressure plate
+	if (pressure_plate && slab && name) {
+		event.shaped(pressure_plate, [
+			' B ',
+			'ACA',
+			' D '
+		], {
+			A: slab,
+			B: '#forge:tools/hammers',
+			C: '#forge:small_springs',
+			D: '#forge:tools/screwdrivers'
+		})
+			.id(`tfg:shaped/${name}_pressure_plate`)
+
+		event.recipes.gtceu.assembler(`tfg:${name}_pressure_plate`)
+			.itemInputs(`2x ${slab}`, '#forge:small_springs')
+			.itemOutputs(`${pressure_plate}`)
+			.duration(50)
+			.circuit(3)
+			.EUt(GTValues.VA[GTValues.ULV])
+	};
+
+	// Button from pressure plate
+	if (button && pressure_plate && name) {
+		event.recipes.gtceu.cutter(`tfg:${name}_button_from_pressure_plate`)
+			.itemInputs(pressure_plate)
+			.itemOutputs(`6x ${button}`)
+			.duration(50)
+			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.shapeless(`3x ${button}`, [pressure_plate, '#forge:tools/saws'])
+			.id(`tfg:shapeless/saw_${name}_pressure_plate_to_button`)
+	};
+
+	// Tool Rack
+	if (tool_rack && lumber && name) {
+		event.shaped(tool_rack, [
+			'AAA',
+			'   ',
+			'AAA'
+		], {
+			A: lumber
+		})
+			.id(`tfg:shaped/${name}_tool_rack`)
+	};
+
+	// Workbench
+	if (workbench && plank && name) {
+		event.shaped(workbench, [
+			'AA',
+			'AA'
+		], {
+			A: plank
+		})
+			.id(`tfg:shaped/${name}_workbench`)
+	};
+
+	// Bookshelf
+	if (bookshelf && lumber && name) {
+		event.shaped(bookshelf, [
+			'AAA',
+			'BBB',
+			'AAA'
+		], {
+			A: lumber,
+			B: '#forge:rods/wooden'
+		})
+			.id(`tfg:shaped/${name}_bookshelf`)
+	};
+
+	// Chest
+	if (chest && lumber && name) {
+		event.shaped(chest, [
+			'AAA',
+			'A A',
+			'AAA'
+		], {
+			A: lumber
+		})
+			.id(`tfg:shaped/${name}_chest`)
+	};
+
+	// Trapped Chest from Chest
+	if (trapped_chest && chest && name) {
+		event.shapeless(trapped_chest, [chest, 'minecraft:tripwire_hook'])
+			.id(`tfg:shapeless/${name}_trapped_chest`)
+	};
+
+	// Loom
+	if (loom && lumber && name) {
+		event.shaped(loom, [
+			'AAA',
+			'ABA',
+			'A A'
+		], {
+			A: lumber,
+			B: '#forge:rods/wooden'
+		})
+			.id(`tfg:shaped/${name}_loom`)
+	};
+
+	// Sluice
+	if (sluice && lumber && name) {
+		event.shaped(sluice, [
+			'  A',
+			' AB',
+			'ABB'
+		], {
+			A: '#forge:rods/wooden',
+			B: lumber
+		})
+			.id(`tfg:shaped/${name}_sluice`)
+	};
+
+	// Barrel
+	if (barrel && lumber && name) {
+		event.shaped(barrel, [
+			'A A',
+			'A A',
+			'AAA'
+		], {
+			A: lumber
+		})
+			.id(`tfg:shaped/${name}_barrel`)
+	};
+
+	// Lectern
+	if (lectern && lumber && bookshelf && name) {
+		event.shaped(lectern, [
+			'AAA',
+			' B ',
+			' A '
+		], {
+			A: lumber,
+			B: bookshelf
+		})
+			.id(`tfg:shaped/${name}_lectern`)
+	};
+
+	// Scribing Table
+	if (scribing_table && plank && slab && name) {
+		event.shaped(scribing_table, [
+			'A B',
+			'CCC',
+			'D D'
+		], {
+			A: '#tfg:feathers',
+			B: 'minecraft:black_dye',
+			C: slab,
+			D: plank
+		})
+			.id(`tfg:shaped/${name}_scribing_table`)
+	};
+
+	// Sewing Table
+	if (sewing_table && log && plank && name) {
+		event.shaped(sewing_table, [
+			' AB',
+			'CCC',
+			'D D'
+		], {
+			A: '#forge:leather',
+			B: '#forge:tools/knives',
+			C: plank,
+			D: log
+		})
+			.id(`tfg:shaped/${name}_sewing_table`)
+	};
+
+	// Jar Shelf
+	if (jar_shelf && lumber && plank && name) {
+		event.shaped(`2x ${jar_shelf}`, [
+			'AAA',
+			'B B',
+			'C C'
+		], {
+			A: plank,
+			B: lumber,
+			C: '#forge:rods/wooden'
+		})
+			.id(`tfg:shaped/${name}_jar_shelf`)
+	};
+
+	// Food Shelf
+	if (food_shelf && lumber && plank && name) {
+		event.shaped(food_shelf, [
+			'AAA',
+			'BBB',
+			'AAA'
+		], {
+			A: plank,
+			B: lumber
+		})
+			.id(`tfg:shaped/${name}_food_shelf`)
+	};
+
+	// Hanger
+	if (hanger && plank && name) {
+		event.shaped(hanger, [
+			'AAA',
+			' B ',
+			' B '
+		], {
+			A: plank,
+			B: '#forge:string'
+		})
+			.id(`tfg:shaped/${name}_hanger`)
+	};
+
+	// Jarbnet
+	if (jarbnet && lumber && log && name) {
+		event.shaped(`2x ${jarbnet}`, [
+			'A  ',
+			'BCC',
+			'A  '
+		], {
+			A: log,
+			B: '#forge:rods/brass',
+			C: lumber
+		})
+			.id(`tfg:shaped/${name}_jarbnet`)
+	};
+
+	// Keg
+	if (big_barrel && log && name) {
+		event.shaped(big_barrel, [
+			'ABA',
+			'BCB',
+			'ABA'
+		], {
+			A: log,
+			B: 'firmalife:barrel_stave',
+			C: 'tfc:glue'
+		})
+			.id(`tfg:shaped/${name}_big_barrel`)
+	};
+
+	// Stomping Barrel
+	if (stomping_barrel && lumber && name) {
+		event.shaped(stomping_barrel, [
+			'ABA',
+			'AAA',
+			'BBB'
+		], {
+			A: lumber,
+			B: 'tfc:glue'
+		})
+			.id(`tfg:shaped/${name}_stomping_barrel`)
+	};
+
+	// Barrel Press from Stomping Barrel
+	if (barrel_press && stomping_barrel && name) {
+		event.shapeless(barrel_press, [
+			stomping_barrel,
+			'#forge:rods/wrought_iron',
+			'#forge:plates/wrought_iron',
+			'#forge:small_gears/brass'
+		])
+			.id(`tfg:shaped/${name}_barrel_press`)
+	};
+
+	// Wine Shelf
+	if (wine_shelf && log && name) {
+		event.shaped(`4x ${wine_shelf}`, [
+			'ABA',
+			'ABA',
+			'ABA'
+		], {
+			A: log,
+			B: 'firmalife:treated_lumber'
+		})
+			.id(`tfg:shaped/${name}_wine_shelf`)
+	};
+
+	// Sign
+	if (sign && lumber && name) {
+		event.shaped(`3x ${sign}`, [
+			'AAA',
+			'AAA',
+			' B '
+		], {
+			A: lumber,
+			B: '#forge:rods/wooden'
+		})
+			.id(`tfg:shaped/${name}_sign`)
+	};
+
+	// Hanging Sign
+	if (hanging_sign && lumber && name) {
+		event.shaped(`3x ${hanging_sign}`, [
+			'A A',
+			'BBB',
+			'BBB'
+		], {
+			A: '#forge:chains',
+			B: lumber
+		})
+			.id(`tfg:shaped/${name}_hanging_sign`)
+	};
+
+	// Crafting Station
+	if (crafting_station && lumber && workbench_as_material && name) {
+		event.shaped(crafting_station, [
+			'BCB',
+			'ADA',
+			'AEA'
+		], {
+			A: lumber,
+			B: '#forge:screws/any_bronze',
+			C: workbench_as_material,
+			D: '#forge:tools/saws',
+			E: '#forge:tools/hammers'
+		}).id(`tfg:shaped/${name}_crafting_station`)
+
+		event.shapeless(`2x ${crafting_station}_slab`, [crafting_station]).id(`tfg:shapeless/${name}_crafting_station_slab`)
+
+		event.recipes.gtceu.assembler(`tfg:${name}_crafting_station`)
+			.itemInputs(`4x ${lumber}`, '2x #forge:screws/any_bronze', workbench_as_material)
+			.itemOutputs(crafting_station)
+			.duration(20)
+			.circuit(10)
+			.EUt(GTValues.VA[GTValues.LV])
+	};
+
+	// Rope ladder
+	if (lumber && rope_ladder && name) {
+		event.shaped(`8x ${rope_ladder}`, [
+			'RLR',
+			'RLR',
+			'RLR'
+		], {
+			R: '#tfg:burlap_fiber',
+			L: lumber
+		}).id(`tfg:shaped/${name}_rope_ladder`);
+
+		event.shaped(`16x ${rope_ladder}`, [
+			' L ',
+			'RL ',
+			' L '
+		], {
+			R: 'firmaciv:rope_coil',
+			L: lumber
+		}).id(`tfg:shaped/${name}_rope_ladder_coil`);
+	}
+
+	//Roofing from Planks
+	if(plank && roofing && name)
+	{
+		event.shaped(`6x ${roofing}`, [
+			'  P',
+			' P ',
+			'P  '
+		], {
+			P: plank
+		}).id(`tfg:shaped/${name}_roofing`);
+	}
+
+	//Lumber from Roofing
+	if(lumber && roofing && name)
+	{
+		event.shapeless(`2x ${lumber}`, [roofing, '#tfc:saws']).id(`tfg:shapeless/${name}_lumber_from_roofing`);
+	}
+}
+
+function registerTFGWoodRecycling(mod, woodname, woodMaterial) {
+	woodname.forEach(name => {
+		TFGWoodRecyclingIndex.forEach(([template, args]) => {
+			const item = template
+				.replace('{mod}', mod)
+				.replace('{type}', name);
+			const resolvedArgs = resolveArgs(args, woodMaterial);
+			TFGHelpers.registerMaterialInfo(item, resolvedArgs);
+		});
+	});
+};
+
+/**
  * 
  * @param {Internal.RecipesEventJS} event 
  */
 function registerTFGWoodenRecipes(event) {
 
 	// #region TFG Wood Builder
-
-	/**
-	 * Generates most basic wooden recipes. 
-	 * 
-	 * All parameters are optional. Name is used for the ID.
-	 *
-	 * @param {*} event 
-	 * @param {string} name -Name of the wood.
-	 * @param {string} lumber -ID for the lumber.
-	 * @param {string} logs -Tag or ID for all the logs.
-	 * @param {string} log -ID for the regular log.
-	 * @param {string} stripped_log -ID for the stripped log.
-	 * @param {string} plank -ID for planks.
-	 * @param {string} stair -ID for stairs.
-	 * @param {string} slab -ID for slabs.
-	 * @param {string} door -ID for the door.
-	 * @param {string} trapdoor -ID for the trapdoor.
-	 * @param {string} fence -ID for the fence.
-	 * @param {string} fence_gate -ID for the fence gate.
-	 * @param {string} support -ID for the support.
-	 * @param {string} pressure_plate -ID for the pressure plate.
-	 * @param {string} button -ID for the button.
-	 * @param {string} log_wood -ID for the log wood.
-	 * @param {string} stripped_wood -ID for the stripped wood.
-	 * @param {string} roofing -ID for the roofing
-	 */
-	function TFGWoodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair, slab, door, trapdoor, fence, log_fence,
-		fence_gate, support, pressure_plate, button, log_wood, stripped_wood, tool_rack, workbench, bookshelf, chest, trapped_chest,
-		loom, sluice, barrel, lectern, scribing_table, sewing_table, jar_shelf, food_shelf, hanger, jarbnet, big_barrel,
-		stomping_barrel, barrel_press, wine_shelf, sign, hanging_sign, crafting_station, workbench_as_material, rope_ladder, roofing) {
-
-		// Stripped log from log
-		if (log && stripped_log && name) {
-			event.recipes.gtceu.lathe(`tfg:${name}_stripped_log_from_log`)
-				.itemInputs(log)
-				.itemOutputs(stripped_log)
-				.duration(50)
-				.EUt(GTValues.VA[GTValues.ULV])
-
-			event.recipes.vintageimprovements.polishing(stripped_log, log)
-				.speedLimits(0)
-				.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-				.id(`tfg:vi/lathe/${name}_stripped_log_from_log`)
-		};
-
-		// Stripped wood from log wood
-		if (log_wood && stripped_wood && name) {
-			event.recipes.gtceu.lathe(`tfg:${name}_stripped_wood_from_log_wood`)
-				.itemInputs(log_wood)
-				.itemOutputs(stripped_wood)
-				.duration(50)
-				.EUt(GTValues.VA[GTValues.ULV])
-
-			event.recipes.vintageimprovements.polishing(stripped_wood, log_wood)
-				.speedLimits(0)
-				.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-				.id(`tfg:vi/lathe/${name}_stripped_wood_from_log_wood`)
-		};
-
-		// Lumber from log
-		if (logs && lumber && name) {
-			event.shapeless(`8x ${lumber}`,
-				[logs, '#forge:tools/saws']
-			)
-				.id(`tfg:shapeless/${name}_lumber_from_log`)
-
-			generateCutterRecipe(event, logs, `16x ${lumber}`, 50, 7, `${name}_lumber_from_log`)
-		};
-
-		if (plank && lumber && name) {
-			// Lumber from plank
-			event.shapeless(`4x ${lumber}`,
-				[plank, '#forge:tools/saws']
-			)
-				.id(`tfg:shapeless/${name}_lumber_from_plank`)
-
-			event.recipes.gtceu.packer(`tfg:${name}_lumber_from_plank`)
-				.itemInputs(`${plank}`)
-				.circuit(1)
-				.itemOutputs(`4x ${lumber}`)
-				.duration(50)
-				.EUt(GTValues.VA[GTValues.ULV])	
-
-			// Plank from lumber
-			event.shaped(plank, [
-				'AA',
-				'AA'
-			], {
-				A: lumber
-			})
-				.id(`tfg:shaped/${name}_plank_from_lumber`)
-		};
-
-		// Lumber from slab
-		if (slab && lumber && name) {
-			event.shapeless(`2x ${lumber}`,
-				[slab, '#forge:tools/saws']
-			)
-				.id(`tfg:shapeless/${name}_lumber_from_slab`)
-
-			generateCutterRecipe(event, slab, `2x ${lumber}`, 50, 7, `${name}_lumber_from_slab`)
-		};
-
-		// Slab from lumber
-		if (slab && lumber && name) {
-			event.shaped(slab, [
-				'AA'
-			], {
-				A: lumber
-			})
-				.id(`tfg:shaped/${name}_slab_from_lumber`)
-		};
-
-		// Slab from plank
-		if (slab && plank && name) {
-			event.shaped(`6x ${slab}`, [
-				'AAA'
-			], {
-				A: plank
-			})
-				.id(`tfg:shaped/${name}_slab_from_plank`)
-
-			generateCutterRecipe(event, plank, `2x ${slab}`, 50, 7 , `${name}_slab_from_plank`)
-		}
-
-		// Lumber from stair
-		if (stair && lumber && name) {
-			event.shapeless(`3x ${lumber}`,
-				[stair, '#forge:tools/saws']
-			)
-				.id(`tfg:shapeless/${name}_lumber_from_stair`)
-
-			generateCutterRecipe(event, stair, `3x ${lumber}`, 50, 7, `${name}_lumber_from_stair`)
-		};
-
-		// Stair from lumber
-		if (stair && lumber && name) {
-			event.shaped(stair, [
-				'A ',
-				'AA'
-			], {
-				A: lumber
-			})
-				.id(`tfg:shaped/${name}_stair_from_lumber`)
-		};
-
-		// Stair from plank
-		if (stair && plank && name) {
-			event.shaped(`8x ${stair}`, [
-				'A  ',
-				'AA ',
-				'AAA'
-			], {
-				A: plank
-			})
-				.id(`tfg:shaped/${name}_stair_from_plank`)
-		};
-
-		// Door from lumber
-		if (door && lumber && name) {
-			event.shaped(`2x ${door}`, [
-				'AA',
-				'AA',
-				'AA'
-			], {
-				A: lumber
-			})
-				.id(`tfg:shaped/${name}_door_from_lumber`)
-		};
-
-		// Trapdoor from lumber
-		if (trapdoor && lumber && name) {
-			event.shaped(`3x ${trapdoor}`, [
-				'AAA',
-				'AAA'
-			], {
-				A: lumber
-			})
-				.id(`tfg:shaped/${name}_trapdoor_from_lumber`)
-		};
-
-		// Fence from lumber & plank
-		if (fence && lumber && plank && name) {
-			event.shaped(`8x ${fence}`, [
-				'ABA',
-				'ABA'
-			], {
-				A: plank,
-				B: lumber
-			})
-				.id(`tfg:shaped/${name}_fence_from_lumber_and_plank`)
-		};
-
-		// Log Fence from log and lumber
-		if (log_fence && log && lumber && name) {
-			event.shaped(`8x ${log_fence}`, [
-				'ABA',
-				'ABA'
-			], {
-				A: log,
-				B: lumber
-			})
-				.id(`tfg:shaped/${name}_log_fence_from_log_and_lumber`)
-		};
-
-		// Fence gate from lumber and plank
-		if (fence_gate && lumber && plank && name) {
-			event.shaped(`2x ${fence_gate}`, [
-				'ABA',
-				'ABA'
-			], {
-				A: lumber,
-				B: plank
-			})
-				.id(`tfg:shaped/${name}_fence_gate_from_lumber_and_plank`)
-		};
-
-		// Support from logs
-		if (support && logs && name) {
-			event.shapeless(`8x ${support}`,
-				[`2x ${logs}`, '#forge:tools/saws']
-			)
-				.id(`tfg:shapeless/${name}_support_from_logs`)
-
-			event.recipes.gtceu.assembler(`tfg:${name}_support_from_logs`)
-				.itemInputs(`2x ${logs}`)
-				.itemOutputs(`8x ${support}`)
-				.duration(50)
-				.circuit(4)
-				.EUt(GTValues.VA[GTValues.ULV])
-		};
-
-		// Pressure plate
-		if (pressure_plate && slab && name) {
-			event.shaped(pressure_plate, [
-				' B ',
-				'ACA',
-				' D '
-			], {
-				A: slab,
-				B: '#forge:tools/hammers',
-				C: '#forge:small_springs',
-				D: '#forge:tools/screwdrivers'
-			})
-				.id(`tfg:shaped/${name}_pressure_plate`)
-
-			event.recipes.gtceu.assembler(`tfg:${name}_pressure_plate`)
-				.itemInputs(`2x ${slab}`, '#forge:small_springs')
-				.itemOutputs(`${pressure_plate}`)
-				.duration(50)
-				.circuit(3)
-				.EUt(GTValues.VA[GTValues.ULV])
-		};
-
-		// Button from pressure plate
-		if (button && pressure_plate && name) {
-			event.recipes.gtceu.cutter(`tfg:${name}_button_from_pressure_plate`)
-				.itemInputs(pressure_plate)
-				.itemOutputs(`6x ${button}`)
-				.duration(50)
-				.EUt(GTValues.VA[GTValues.ULV])
-
-			event.shapeless(`3x ${button}`, [pressure_plate, '#forge:tools/saws'])
-				.id(`tfg:shapeless/saw_${name}_pressure_plate_to_button`)
-		};
-
-		// Tool Rack
-		if (tool_rack && lumber && name) {
-			event.shaped(tool_rack, [
-				'AAA',
-				'   ',
-				'AAA'
-			], {
-				A: lumber
-			})
-				.id(`tfg:shaped/${name}_tool_rack`)
-		};
-
-		// Workbench
-		if (workbench && plank && name) {
-			event.shaped(workbench, [
-				'AA',
-				'AA'
-			], {
-				A: plank
-			})
-				.id(`tfg:shaped/${name}_workbench`)
-		};
-
-		// Bookshelf
-		if (bookshelf && lumber && name) {
-			event.shaped(bookshelf, [
-				'AAA',
-				'BBB',
-				'AAA'
-			], {
-				A: lumber,
-				B: '#forge:rods/wooden'
-			})
-				.id(`tfg:shaped/${name}_bookshelf`)
-		};
-
-		// Chest
-		if (chest && lumber && name) {
-			event.shaped(chest, [
-				'AAA',
-				'A A',
-				'AAA'
-			], {
-				A: lumber
-			})
-				.id(`tfg:shaped/${name}_chest`)
-		};
-
-		// Trapped Chest from Chest
-		if (trapped_chest && chest && name) {
-			event.shapeless(trapped_chest, [chest, 'minecraft:tripwire_hook'])
-				.id(`tfg:shapeless/${name}_trapped_chest`)
-		};
-
-		// Loom
-		if (loom && lumber && name) {
-			event.shaped(loom, [
-				'AAA',
-				'ABA',
-				'A A'
-			], {
-				A: lumber,
-				B: '#forge:rods/wooden'
-			})
-				.id(`tfg:shaped/${name}_loom`)
-		};
-
-		// Sluice
-		if (sluice && lumber && name) {
-			event.shaped(sluice, [
-				'  A',
-				' AB',
-				'ABB'
-			], {
-				A: '#forge:rods/wooden',
-				B: lumber
-			})
-				.id(`tfg:shaped/${name}_sluice`)
-		};
-
-		// Barrel
-		if (barrel && lumber && name) {
-			event.shaped(barrel, [
-				'A A',
-				'A A',
-				'AAA'
-			], {
-				A: lumber
-			})
-				.id(`tfg:shaped/${name}_barrel`)
-		};
-
-		// Lectern
-		if (lectern && lumber && bookshelf && name) {
-			event.shaped(lectern, [
-				'AAA',
-				' B ',
-				' A '
-			], {
-				A: lumber,
-				B: bookshelf
-			})
-				.id(`tfg:shaped/${name}_lectern`)
-		};
-
-		// Scribing Table
-		if (scribing_table && plank && slab && name) {
-			event.shaped(scribing_table, [
-				'A B',
-				'CCC',
-				'D D'
-			], {
-				A: '#tfg:feathers',
-				B: 'minecraft:black_dye',
-				C: slab,
-				D: plank
-			})
-				.id(`tfg:shaped/${name}_scribing_table`)
-		};
-
-		// Sewing Table
-		if (sewing_table && log && plank && name) {
-			event.shaped(sewing_table, [
-				' AB',
-				'CCC',
-				'D D'
-			], {
-				A: '#forge:leather',
-				B: '#forge:tools/knives',
-				C: plank,
-				D: log
-			})
-				.id(`tfg:shaped/${name}_sewing_table`)
-		};
-
-		// Jar Shelf
-		if (jar_shelf && lumber && plank && name) {
-			event.shaped(`2x ${jar_shelf}`, [
-				'AAA',
-				'B B',
-				'C C'
-			], {
-				A: plank,
-				B: lumber,
-				C: '#forge:rods/wooden'
-			})
-				.id(`tfg:shaped/${name}_jar_shelf`)
-		};
-
-		// Food Shelf
-		if (food_shelf && lumber && plank && name) {
-			event.shaped(food_shelf, [
-				'AAA',
-				'BBB',
-				'AAA'
-			], {
-				A: plank,
-				B: lumber
-			})
-				.id(`tfg:shaped/${name}_food_shelf`)
-		};
-
-		// Hanger
-		if (hanger && plank && name) {
-			event.shaped(hanger, [
-				'AAA',
-				' B ',
-				' B '
-			], {
-				A: plank,
-				B: '#forge:string'
-			})
-				.id(`tfg:shaped/${name}_hanger`)
-		};
-
-		// Jarbnet
-		if (jarbnet && lumber && log && name) {
-			event.shaped(`2x ${jarbnet}`, [
-				'A  ',
-				'BCC',
-				'A  '
-			], {
-				A: log,
-				B: '#forge:rods/brass',
-				C: lumber
-			})
-				.id(`tfg:shaped/${name}_jarbnet`)
-		};
-
-		// Keg
-		if (big_barrel && log && name) {
-			event.shaped(big_barrel, [
-				'ABA',
-				'BCB',
-				'ABA'
-			], {
-				A: log,
-				B: 'firmalife:barrel_stave',
-				C: 'tfc:glue'
-			})
-				.id(`tfg:shaped/${name}_big_barrel`)
-		};
-
-		// Stomping Barrel
-		if (stomping_barrel && lumber && name) {
-			event.shaped(stomping_barrel, [
-				'ABA',
-				'AAA',
-				'BBB'
-			], {
-				A: lumber,
-				B: 'tfc:glue'
-			})
-				.id(`tfg:shaped/${name}_stomping_barrel`)
-		};
-
-		// Barrel Press from Stomping Barrel
-		if (barrel_press && stomping_barrel && name) {
-			event.shapeless(barrel_press, [
-				stomping_barrel,
-				'#forge:rods/wrought_iron',
-				'#forge:plates/wrought_iron',
-				'#forge:small_gears/brass'
-			])
-				.id(`tfg:shaped/${name}_barrel_press`)
-		};
-
-		// Wine Shelf
-		if (wine_shelf && log && name) {
-			event.shaped(`4x ${wine_shelf}`, [
-				'ABA',
-				'ABA',
-				'ABA'
-			], {
-				A: log,
-				B: 'firmalife:treated_lumber'
-			})
-				.id(`tfg:shaped/${name}_wine_shelf`)
-		};
-
-		// Sign
-		if (sign && lumber && name) {
-			event.shaped(`3x ${sign}`, [
-				'AAA',
-				'AAA',
-				' B '
-			], {
-				A: lumber,
-				B: '#forge:rods/wooden'
-			})
-				.id(`tfg:shaped/${name}_sign`)
-		};
-
-		// Hanging Sign
-		if (hanging_sign && lumber && name) {
-			event.shaped(`3x ${hanging_sign}`, [
-				'A A',
-				'BBB',
-				'BBB'
-			], {
-				A: '#forge:chains',
-				B: lumber
-			})
-				.id(`tfg:shaped/${name}_hanging_sign`)
-		};
-
-		// Crafting Station
-		if (crafting_station && lumber && workbench_as_material && name) {
-			event.shaped(crafting_station, [
-				'BCB',
-				'ADA',
-				'AEA'
-			], {
-				A: lumber,
-				B: '#forge:screws/any_bronze',
-				C: workbench_as_material,
-				D: '#forge:tools/saws',
-				E: '#forge:tools/hammers'
-			}).id(`tfg:shaped/${name}_crafting_station`)
-
-			event.shapeless(`2x ${crafting_station}_slab`, [crafting_station]).id(`tfg:shapeless/${name}_crafting_station_slab`)
-
-			event.recipes.gtceu.assembler(`tfg:${name}_crafting_station`)
-				.itemInputs(`4x ${lumber}`, '2x #forge:screws/any_bronze', workbench_as_material)
-				.itemOutputs(crafting_station)
-				.duration(20)
-				.circuit(10)
-				.EUt(GTValues.VA[GTValues.LV])
-		};
-
-		// Rope ladder
-		if (lumber && rope_ladder && name) {
-			event.shaped(`8x ${rope_ladder}`, [
-				'RLR',
-				'RLR',
-				'RLR'
-			], {
-				R: '#tfg:burlap_fiber',
-				L: lumber
-			}).id(`tfg:shaped/${name}_rope_ladder`);
-
-			event.shaped(`16x ${rope_ladder}`, [
-				' L ',
-				'RL ',
-				' L '
-			], {
-				R: 'firmaciv:rope_coil',
-				L: lumber
-			}).id(`tfg:shaped/${name}_rope_ladder_coil`);
-		}
-
-		//Roofing from Planks
-		if(plank && roofing && name)
-		{
-			event.shaped(`6x ${roofing}`, [
-				'  P',
-				' P ',
-				'P  '
-			], {
-				P: plank
-			}).id(`tfg:shaped/${name}_roofing`);
-		}
-
-		//Lumber from Roofing
-		if(lumber && roofing && name)
-		{
-			event.shapeless(`2x ${lumber}`, [roofing, '#tfc:saws']).id(`tfg:shapeless/${name}_lumber_from_roofing`);
-		}
-	}
 
 	// #endregion
 
@@ -756,18 +768,6 @@ function registerTFGWoodenRecipes(event) {
 	 */
 	function resolveArgs(materials, woodMaterial) {
 		return materials.map(mats => mats === '{wood}' ? woodMaterial : mats);
-	};
-
-	function registerTFGWoodRecycling(mod, woodname, woodMaterial) {
-		woodname.forEach(name => {
-			TFGWoodRecyclingIndex.forEach(([template, args]) => {
-				const item = template
-					.replace('{mod}', mod)
-					.replace('{type}', name);
-				const resolvedArgs = resolveArgs(args, woodMaterial);
-				TFGHelpers.registerMaterialInfo(item, resolvedArgs);
-			});
-		});
 	};
 
 	// #endregion
@@ -1217,80 +1217,6 @@ function registerTFGWoodenRecipes(event) {
 		.id('tfg:pressing/stick_bundle')
 
 	// #endregion
-
-	// #region TFC
-
-	global.TFC_WOOD_TYPES.forEach(wood => {
-
-		// Removed unused assets
-		event.remove({ id: `tfc:crafting/wood/${wood}_axle` });
-		event.remove({ id: `tfc:crafting/wood/${wood}_bladed_axle` });
-		event.remove({ id: `tfc:crafting/wood/${wood}_encased_axle` });
-		event.remove({ id: `tfc:crafting/wood/${wood}_clutch` });
-		event.remove({ id: `tfc:crafting/wood/${wood}_gear_box` });
-		event.remove({ id: `tfc:crafting/wood/${wood}_water_wheel` });
-
-		// Removed recipe changes
-		event.remove({ id: `tfc:crafting/wood/${wood}_planks` });
-		event.remove({ id: `tfc:crafting/wood/${wood}_pressure_plate` });
-		event.remove({ id: `tfc:crafting/wood/${wood}_lumber_log` });
-		event.remove({ id: `tfc:crafting/wood/${wood}_button` });
-		event.remove({ id: `tfc:crafting/wood/${wood}_slab` });
-		event.remove({ id: `tfc:crafting/wood/${wood}_slab_undo` });
-		event.remove({ id: `tfc:crafting/wood/${wood}_lumber_planks` });
-		event.remove({ id: `tfc:crafting/wood/${wood}_stairs` });
-		event.remove({ id: `tfc:crafting/wood/${wood}_stairs_undo` });
-
-		TFGWoodBuilder(
-			event,
-			`${wood}`,
-			`tfc:wood/lumber/${wood}`,
-			`#tfc:${wood}_logs`,
-			`tfc:wood/log/${wood}`,
-			`tfc:wood/stripped_log/${wood}`,
-			`tfc:wood/planks/${wood}`,
-			`tfc:wood/planks/${wood}_stairs`,
-			`tfc:wood/planks/${wood}_slab`,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			`tfc:wood/planks/${wood}_pressure_plate`,
-			`tfc:wood/planks/${wood}_button`,
-			`tfc:wood/wood/${wood}`,
-			`tfc:wood/stripped_wood/${wood}`,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			null,
-			`tfg:wood/crafting_station/${wood}`,
-			`tfc:wood/planks/${wood}_workbench`,
-			`tfg:wood/rope_ladder/${wood}`,
-			null
-		);
-	});
-
-	registerTFGWoodRecycling('tfc', global.TFC_HARDWOOD_TYPES, GTMaterials.get('hardwood'));
-	registerTFGWoodRecycling('tfc', global.TFC_SOFTWOOD_TYPES, GTMaterials.Wood);
 
 	// Special handling for the palm mosaics
 

@@ -2,7 +2,7 @@
 "use strict";
 
 /**
- * Событие регистрации предмет-тэгов.
+ * @param {TagEvent.Item} item
  */
 ServerEvents.tags('item', event => {
 	registerAdAstraItemTags(event)
@@ -63,6 +63,7 @@ ServerEvents.tags('item', event => {
  * Событие регистрации блок-тэгов.
  */
 ServerEvents.tags('block', event => {
+	registerWoodStructBlockTags(event);
 	registerAdAstraBlockTags(event)
 	registerAE2BlockTags(event)
 	registerAFCBlockTags(event)
@@ -137,6 +138,7 @@ ServerEvents.tags('worldgen/biome', event => {
 })
 
 ServerEvents.tags('entity_type', event => {
+	registerWoodStructEntityTags(event);
 	registerFowlPlayEntityTags(event)
 	registerJelliesEntityTags(event)
 	registerOpposingForceEntityTags(event);
@@ -207,6 +209,7 @@ LootJS.modifiers((event) => {
 	registerSpeciesLoots(event)
 	registerTFCLoots(event)
 	registerTFGLoots(event)
+	registerWoodStructLoot(event)
 	registerWansAncientBeastsLoots(event)
 });
 

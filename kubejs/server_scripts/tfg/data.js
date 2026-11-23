@@ -3,6 +3,7 @@
 
 /** @param {Internal.TFCDataEventJS} event */
 function registerTFCDataForTFG(event) {
+	registerWoodStructData(event);
 	registerTFGHeatData(event);
 	registerTFGItemSize(event);
 	registerTFGSupportData(event);
@@ -353,10 +354,6 @@ function registerTFGItemSize(event) {
 	})
 
 	global.AFC_WOOD_TYPES.forEach(wood => { 
-		event.itemSize(`tfg:wood/crafting_station/${wood.name}`, "large", "heavy", `${wood.name}_crafting_station`);
-	})
-
-	global.TFC_WOOD_TYPES.forEach(wood => { 
 		event.itemSize(`tfg:wood/crafting_station/${wood.name}`, "large", "heavy", `${wood.name}_crafting_station`);
 	})
 

@@ -5,6 +5,7 @@
  */
 const registerTooltips = (event) => {
 
+	registerWoodStructTooltips(event);
 	registerCropTooltips(event);
 
 	//Your IDE may say that "item" and "advanced" are never used, but they are required! So dont remove them <3
@@ -279,11 +280,6 @@ const registerTooltips = (event) => {
 	})
 
 	// Supports
-	global.TFC_WOOD_TYPES.forEach(wood => {
-		event.addAdvanced([`tfc:wood/support/${wood}`], (item, advanced, text) => {
-			text.add(1, Text.translate('tfg.tooltip.support.tier1'))
-		})
-	})
 	global.AFC_WOOD_TYPES.forEach(wood => {
 		event.addAdvanced([`afc:wood/support/${wood}`], (item, advanced, text) => {
 			text.add(1, Text.translate('tfg.tooltip.support.tier1'))

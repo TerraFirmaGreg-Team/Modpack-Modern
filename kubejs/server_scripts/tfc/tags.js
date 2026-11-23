@@ -189,12 +189,6 @@ function registerTFCItemTags(event) {
 	event.add("tfc:foods/grains", "firmalife:food/cooked_pasta");
 	event.add("tfc:foods/grains", "firmalife:food/toast");
 
-	// Чтобы жарились бревна из TFC в пиролиз. печке
-	// Почему нельзя просто добавить тег в тег? (допустим minecraft:logs), потому что из-за этого ломаются все рецепты minecraft:logs, магия...
-	global.TFC_WOOD_TYPES.forEach((woodType) => {
-		event.add("minecraft:logs_that_burn", `#tfc:${woodType}_logs`);
-	});
-
 	// Allows TFC stick bundles to be burned in the coke/pyrolyse ovens
 	event.add("minecraft:logs_that_burn", "tfc:stick_bundle");
 
@@ -227,28 +221,6 @@ function registerTFCItemTags(event) {
 	event.remove("tfc:blast_furnace_fuel", "minecraft:charcoal");
 	event.add("tfc:blast_furnace_fuel", "gtceu:coke_gem");
 	event.add("tfc:blast_furnace_fuel", "beneath:cursecoal");
-
-	// Тэги для сундуков, чтобы отличать их виды
-	global.TFC_WOOD_TYPES.forEach((woodType) => {
-		event.add("tfg:default_chests", `tfc:wood/chest/${woodType}`);
-		event.add("tfg:trapped_chests", `tfc:wood/trapped_chest/${woodType}`);
-	});
-
-	//Hardwood Tags
-	global.TFC_HARDWOOD_TYPES.forEach((woodType) => {
-		event.add("tfg:hardwood", `#tfc:${woodType}_logs`);
-		event.add("tfg:stripped_hardwood", `tfc:wood/stripped_log/${woodType}`);
-		event.add("tfg:stripped_hardwood", `tfc:wood/stripped_wood/${woodType}`);
-		event.add("tfg:hardwood_supports", `tfc:wood/support/${woodType}`);
-	});
-
-	//Softwood Tags
-	global.TFC_SOFTWOOD_TYPES.forEach((woodType) => {
-		event.add("tfg:softwood", `#tfc:${woodType}_logs`);
-		event.add("tfg:stripped_softwood", `tfc:wood/stripped_log/${woodType}`);
-		event.add("tfg:stripped_softwood", `tfc:wood/stripped_wood/${woodType}`);
-		event.add("tfg:softwood_supports", `tfc:wood/support/${woodType}`);
-	});
 
 	// Теги для сосудов по цветам
 	global.MINECRAFT_DYE_NAMES.forEach((dye) => {
@@ -475,8 +447,6 @@ function registerTFCItemTags(event) {
 
 	//Hanging Signs Soft & Hard Wood
 	global.TFC_EQUIPMENT_METALS.forEach(metal => {
-		event.add(`tfg:hanging_sign/${metal}/hardwood`, global.TFC_HARDWOOD_TYPES.map(wood => `tfc:wood/hanging_sign/${metal}/${wood}`))
-		event.add(`tfg:hanging_sign/${metal}/softwood`, global.TFC_SOFTWOOD_TYPES.map(wood => `tfc:wood/hanging_sign/${metal}/${wood}`))
 		event.add(`tfg:hanging_sign/${metal}/hardwood`, global.AFC_HARDWOOD_TYPES.map(wood => `afc:wood/hanging_sign/${metal}/${wood}`))
 		event.add(`tfg:hanging_sign/${metal}/softwood`, global.AFC_SOFTWOOD_TYPES.map(wood => `afc:wood/hanging_sign/${metal}/${wood}`))
 		event.add(`tfg:hanging_sign/${metal}/hardwood`, `beneath:wood/hanging_sign/${metal}/warped`)

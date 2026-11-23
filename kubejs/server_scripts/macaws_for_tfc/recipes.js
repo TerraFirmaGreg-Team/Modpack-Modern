@@ -21,18 +21,7 @@ function registerMacawsForTFCRecipes(event) {
 	event.stonecutting('mcw_tfc_aio:bridges/iron_bridges/iron_bridge_pier', '#forge:ingots/wrought_iron')
 	event.stonecutting('mcw_tfc_aio:bridges/iron_bridges/iron_bridge', '#forge:ingots/wrought_iron')
 	event.stonecutting('mcw_tfc_aio:bridges/iron_bridges/iron_bridge_stair', '#forge:ingots/wrought_iron')
-
-	global.TFC_WOOD_TYPES.forEach(wood => {
-		event.shaped(`8x mcw_tfc_aio:fences/${wood}_fences/${wood}_wired_fence`, [
-			'ABA',
-			'C C'
-		], {
-			A: '#forge:rods/wooden',
-			B: 'createaddition:barbed_wire',
-			C: `tfc:wood/log/${wood}`
-		}).id(`tfg:shaped/${wood}_wired_fence`)
-	})
-
+	
 	event.shaped(`4x mcw_tfc_aio:fences/other_fences/hedge`, [
 		'BAB',
 		'BAB'

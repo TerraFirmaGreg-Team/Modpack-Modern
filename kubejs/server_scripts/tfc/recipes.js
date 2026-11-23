@@ -287,15 +287,6 @@ const registerTFCRecipes = (event) => {
 	event.shapeless('4x tfc:kaolin_clay', ['tfc:white_kaolin_clay'])
 	event.shapeless('4x tfc:kaolin_clay', ['tfc:pink_kaolin_clay'])
 	event.shapeless('4x tfc:kaolin_clay', ['tfc:red_kaolin_clay'])
-
-	global.TFC_WOOD_TYPES.forEach(element => {
-		event.shaped(`4x tfc:wood/fallen_leaves/${element}`,[
-			'AA',
-			'AA'
-		], {
-			A: `tfc:wood/leaves/${element}`
-		}).id(`tfg:shaped/tfc/${element}_leaves_to_fallen_leaves`);
-	});
 	
 	/**
 	 * @property {string[]} krummholz_types - List of krummholz wood types.

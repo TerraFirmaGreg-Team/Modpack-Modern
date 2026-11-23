@@ -6,11 +6,10 @@ const forEachTFGRopeLadderVariant = (callback) => {
 	global.AD_ASTRA_WOOD.forEach(wood => callback(`tfg:wood/rope_ladder/${wood.name}`))
 	global.BENEATH_WOOD_TYPES.forEach(wood => callback(`tfg:wood/rope_ladder/${wood}`))
 	global.AFC_WOOD_TYPES.forEach(wood => callback(`tfg:wood/rope_ladder/${wood}`))
-	global.TFC_WOOD_TYPES.forEach(wood => callback(`tfg:wood/rope_ladder/${wood}`))
 }
 
 const registerTFGItemTags = (event) => {
-
+	registerWoodStructItemTags(event);
 	registerTFGTrimItemTags(event)
 	registerTFGFacadeWhitelistItemTags(event)
 	registerTFGStoneItemTags(event)
@@ -166,12 +165,6 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:track_rods', '#forge:rods/steel')
 
 	event.add('forge:torches', 'tfc:torch')
-	
-	global.TFC_WOOD_TYPES.forEach(wood => {
-		event.add('c:hidden_from_recipe_viewers', `railways:track_incomplete_tfc_${wood}`)
-		event.add('c:hidden_from_recipe_viewers', `railways:track_incomplete_tfc_${wood}_narrow`)
-		event.add('c:hidden_from_recipe_viewers', `railways:track_incomplete_tfc_${wood}_wide`)	
-	})
 	
 	const OTHER_TRACKS = [
 		"blackstone", "tieless", "acacia",
