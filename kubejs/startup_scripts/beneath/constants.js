@@ -1,7 +1,66 @@
 // priority: -100
 "use strict";
 
-global.BENEATH_WOOD_TYPES = /** @type {const} */ ([
-    "crimson", 
-	"warped"
-]);
+/**
+ * @type {WoodStruct[]}
+ */
+global.BENEATH_WOOD_STRUCT = ([
+    {
+        modName: 'beneath',
+        name: 'crimson',
+        logsTag: '#beneath:crimson_logs',
+        tree_data: global.woodStructHelpers.treeData(1, 
+            ["beneath"],  
+            [global.woodStructHelpers.logDataFull("beneath", "crimson", 1)], 
+            ["crimson"],
+            ["crimson"], //TODO: leaves also includes the cap, fucked up. 
+            global.woodStructHelpers.twigArray("beneath", "crimson", 1), 
+            global.woodStructHelpers.tapperOutput("crimsine", 1)), //TODO: Crimsine can only be obtained via tapping, refactor to allow this
+        lumber: 'beneath:wood/lumber/crimson', plank: 'beneath:wood/planks/crimson', 
+        stair: 'beneath:wood/planks/crimson_stairs', slab: 'beneath:wood/planks/crimson_slab',
+        fence: 'beneath:wood/planks/crimson_fence', fence_gate: 'beneath:wood/planks/crimson_fence_gate',
+        door: 'beneath:wood/planks/crimson_door', trapdoor: 'beneath:wood/planks/crimson_trapdoor',
+        button: 'beneath:wood/planks/crimson_button', pressure_plate: 'beneath:wood/planks/crimson_pressure_plate',
+        chest: 'beneath:wood/chest/crimson', trapped_chest: 'beneath:wood/trapped_chest/crimson',
+        workbench: 'beneath:wood/planks/crimson_workbench', crafting_station: 'tfg:wood/crafting_station/crimson', crafting_station_slab: 'tfg:wood/crafting_station/crimson_slab',
+        rope_ladder: 'tfg:wood/rope_ladder/crimson',
+        support: 'beneath:wood/support/crimson',
+        window: 'create:crimson_window', window_pane: 'create:crimson_window_pane',
+        rnr_data: null,
+        astikor_data: null,
+        railways_data: global.woodStructHelpers.railwaysData("railways", "crimson"),
+        macaw_data: null,
+        firmalife_data: null,
+        tfc_data: global.woodStructHelpers.tfcData("beneath", "crimson"),
+        woodKind: global.WOOD_KIND.SOFT,
+    },
+    {
+        modName: 'beneath',
+        name: 'warped',
+        logsTag: '#beneath:warped_logs',
+        tree_data: global.woodStructHelpers.treeData(1, 
+            ["beneath"],  
+            [global.woodStructHelpers.logDataFull("beneath", "warped", 1)], 
+            ["warped"],
+            ["warped"], //TODO: leaves also includes the cap, fucked up. 
+            global.woodStructHelpers.twigArray("beneath", "warped", 1), 
+            global.woodStructHelpers.tapperOutput("crimsine", 1)), //TODO: Crimsine can only be obtained via tapping, refactor to allow this
+        lumber: 'beneath:wood/lumber/warped', plank: 'beneath:wood/planks/warped', 
+        stair: 'beneath:wood/planks/warped_stairs', slab: 'beneath:wood/planks/warped_slab',
+        fence: 'beneath:wood/planks/warped_fence', fence_gate: 'beneath:wood/planks/warped_fence_gate',
+        door: 'beneath:wood/planks/warped_door', trapdoor: 'beneath:wood/planks/warped_trapdoor',
+        button: 'beneath:wood/planks/warped_button', pressure_plate: 'beneath:wood/planks/warped_pressure_plate',
+        chest: 'beneath:wood/chest/warped', trapped_chest: 'beneath:wood/trapped_chest/warped',
+        workbench: 'beneath:wood/planks/warped_workbench', crafting_station: 'tfg:wood/crafting_station/warped', crafting_station_slab: 'tfg:wood/crafting_station/warped_slab',
+        rope_ladder: 'tfg:wood/rope_ladder/warped',
+        support: 'beneath:wood/support/warped',
+        window: 'create:warped_window', window_pane: 'create:warped_window_pane',
+        rnr_data: null,
+        astikor_data: null,
+        railways_data: global.woodStructHelpers.railwaysData("railways", "warped"),
+        macaw_data: null,
+        firmalife_data: null,
+        tfc_data: global.woodStructHelpers.tfcData("beneath", "warped"),
+        woodKind: global.WOOD_KIND.HARD,
+    },
+])

@@ -44,10 +44,13 @@ const registerWoodStructItemTags = (event) =>{
         
 
         //rnr
-        global.invokeIfNotNull(woodType.shingle, () => event.add('rnr:shingles', woodType.shingle));
-        global.invokeIfNotNull(woodType.shingle_roof, () => event.add('rnr:roof_blocks', woodType.shingle_roof));
-        global.invokeIfNotNull(woodType.shingle_slab, () => event.add('rnr:roof_blocks', woodType.shingle_slab));
-        global.invokeIfNotNull(woodType.shingle_stair, () => event.add('rnr:roof_blocks', woodType.shingle_stair));
+        global.invokeIfNotNull(woodType.rnr_data, () =>
+        {
+            event.add('rnr:shingles', woodType.rnr_data.shingle);
+            event.add('rnr:roof_blocks', woodType.rnr_data.shingle_block);
+            event.add('rnr:roof_blocks', woodType.rnr_data.shingle_slab);
+            event.add('rnr:roof_blocks', woodType.rnr_data.shingle_stair);
+        })
 
         //goog translated:
         // To roast TFC logs in pyrolysis. stove Why can't you just add a tag to a tag? (let's say minecraft:logs), because that breaks all minecraft:logs recipes, magic...
@@ -69,8 +72,11 @@ const registerWoodStructItemTags = (event) =>{
             event.add('c:hidden_from_recipe_viewers', woodType.railways_data.incomplete)	
         });
 
-        global.invokeIfNotNull(woodType.shingle_roof, () => event.add('tfg:whitelisted/facades', woodType.shingle_roof));
-        global.invokeIfNotNull(woodType.window, () => event.add('tfg:whitelisted/facades', woodType.window));
+        global.invokeIfNotNull(woodType.rnr_data, () =>
+        {
+            event.add('tfg:whitelisted/facades', woodType.rnr_data.shingle_block);
+            event.add('tfg:whitelisted/facades', woodType.rnr_data.window);
+        });
 
         global.invokeIfNotNull(woodType.woodKind, () =>
         {
@@ -122,15 +128,31 @@ const registerWoodStructItemTags = (event) =>{
             {
                 //Ensure the sapling is in the sapling tag.
                 event.add('minecraft:saplings', treeData.sapling);
-                
-                //Dont do tapping related tags if the tree doesnt have any tappable liquids
-                global.invokeIfNotNull((treeData.tapper_output && treeData.log_data), () =>
+                if(!treeData.log_data)
                 {
-                    let logData = treeData.log_data;
-                    let log = logData.log;
-                    let strippedLog = logData.stripped_log;
-                    let wood = logData.wood;
-                    let strippedWood = logData.stripped_wood;
+                    return;
+                }
+                let logData = treeData.log_data;
+                let log = logData.log;
+                let strippedLog = logData.stripped_log;
+                let wood = logData.wood;
+                let strippedWood = logData.stripped_wood;
+
+                let tagWithoutHashtag = woodType.logsTag;
+                tagWithoutHashtag = tagWithoutHashtag.replace("#", "");
+                //Ensure the logs are inside the logs tag
+                if(log)
+                    event.add(tagWithoutHashtag, log);
+                if(strippedLog)
+                    event.add(tagWithoutHashtag, strippedLog);
+                if(wood)
+                    event.add(tagWithoutHashtag, wood);
+                if(strippedWood)
+                    event.add(tagWithoutHashtag, strippedWood); 
+
+                //Dont do tapping related tags if the tree doesnt have any tappable liquids
+                global.invokeIfNotNull(treeData.tapper_output, () =>
+                {
                     
                     if(log)
                         event.add(`tfg:${treeData.tapper_output}_logs`, log);
@@ -184,9 +206,12 @@ const registerWoodStructBlockTags = (event) =>
         global.invokeIfNotNull(woodType.window_pane, () => event.add('forge:glass_panes', woodType.window_pane));
 
         //rnr
-        global.invokeIfNotNull(woodType.shingle_roof, () => event.add('minecraft:mineable/axe', woodType.shingle_roof));
-        global.invokeIfNotNull(woodType.shingle_slab, () => event.add('minecraft:mineable/axe', woodType.shingle_slab));
-        global.invokeIfNotNull(woodType.shingle_stair, () => event.add('minecraft:mineable/axe', woodType.shingle_stair));
+        global.invokeIfNotNull(woodType.rnr_data, () =>
+        {
+            event.add('minecraft:mineable/axe', woodType.rnr_data.shingle_block);
+            event.add('minecraft:mineable/axe', woodType.rnr_data.shingle_slab);
+            event.add('minecraft:mineable/axe', woodType.rnr_data.shingle_stair);
+        });
 
         //Ensure the firmalife things can be broken with an axe
         global.invokeIfNotNull(woodType.firmalife_data, () =>

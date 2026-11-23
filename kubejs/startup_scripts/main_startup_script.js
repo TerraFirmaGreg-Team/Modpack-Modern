@@ -17,7 +17,8 @@ global.linuxUnfucker = function(value) {
 //We put this here so the other constant javascript files can reference them properly
 global.getWoodStructArray = function(){
     return global.TFC_WOOD_STRUCT
-    .concat(global.AFC_WOOD_STRUCT);
+    .concat(global.AFC_WOOD_STRUCT)
+    .concat(global.BENEATH_WOOD_STRUCT);
 }
 /**
  * @typedef {Object} WoodKindEnum
@@ -268,6 +269,15 @@ global.woodStructHelpers =
             roofs: roofs(nameSpace, input),
             furniture: furniture(nameSpace, input)
         };
+    },
+    rnrData: function(nameSpace, input)
+    {
+        return{
+            shingle: `${nameSpace}:wood/shingle/${input}`,
+            shingle_block: `${nameSpace}:wood/shingles/${input}`,
+            shingle_stair: `${nameSpace}:wood/shingles/${input}_stairs`,
+            shingle_slab: `${nameSpace}:wood/shingles/${input}_slab`,
+        }
     },
     railwaysData: function(nameSpace, input)
     {

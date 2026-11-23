@@ -349,10 +349,6 @@ function registerTFGItemSize(event) {
 		event.itemSize(`tfg:wood/crafting_station/${wood.name}`, "large", "heavy", `${wood.name}_crafting_station`);
 	})
 
-	global.BENEATH_WOOD_TYPES.forEach(wood => { 
-		event.itemSize(`tfg:wood/crafting_station/${wood.name}`, "large", "heavy", `${wood.name}_crafting_station`);
-	})
-
 	event.itemSize('tfc:anemometer', "normal", "medium", "tfc_anemometer");
 	event.itemSize('tfc:calendar_clock', "normal", "medium", "tfc_calendar_clock");
 	event.itemSize('tfc:thermometer', "small", "light", "tfc_thermometer");

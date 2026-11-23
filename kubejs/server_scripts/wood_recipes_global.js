@@ -68,10 +68,10 @@ const registerWoodStructRecipes = (event) =>
             event.recipes.createSequencedAssembly([
                 `32x ${woodType.railways_data.track}`,
                 ], woodType.slab, [
-                    event.recipes.createDeploying(`railways:track_incomplete_tfc_${woodType.name}`, [woodType.railways_data.incomplete_track, woodType.slab]),
-                    event.recipes.createDeploying(`railways:track_incomplete_tfc_${woodType.name}`, [woodType.railways_data.incomplete_track, '#tfg:track_rods']),
-                    event.recipes.createDeploying(`railways:track_incomplete_tfc_${woodType.name}`, [woodType.railways_data.incomplete_track, '#tfc:mortar']),
-                    event.recipes.greate.pressing(`railways:track_incomplete_tfc_${woodType.name}`, woodType.railways_data.incomplete_track),
+                    event.recipes.createDeploying(woodType.railways_data.incomplete_track, [woodType.railways_data.incomplete_track, woodType.slab]),
+                    event.recipes.createDeploying(woodType.railways_data.incomplete_track, [woodType.railways_data.incomplete_track, '#tfg:track_rods']),
+                    event.recipes.createDeploying(woodType.railways_data.incomplete_track, [woodType.railways_data.incomplete_track, '#tfc:mortar']),
+                    event.recipes.greate.pressing(woodType.railways_data.incomplete_track, woodType.railways_data.incomplete_track),
                 ]).transitionalItem(woodType.railways_data.incomplete_track).loops(2).id(`tfg:railways/sequenced_assembly/track_create_${woodType.name}`)
 
                 event.recipes.gtceu.assembler(`railways/track_${woodType.name}`)
@@ -97,9 +97,9 @@ const registerWoodStructRecipes = (event) =>
             event.recipes.createSequencedAssembly([
                     `32x ${woodType.railways_data.track_narrow}`,
                 ], woodType.slab, [
-                    event.recipes.createDeploying(`railways:track_incomplete_tfc_${woodType.name}_narrow`, [woodType.railways_data.incomplete_track_narrow, '#tfg:track_rods']),
-                    event.recipes.createDeploying(`railways:track_incomplete_tfc_${woodType.name}_narrow`, [woodType.railways_data.incomplete_track_narrow, '#tfc:mortar']),
-                    event.recipes.greate.pressing(`railways:track_incomplete_tfc_${woodType.name}_narrow`, woodType.railways_data.incomplete_track_narrow),
+                    event.recipes.createDeploying(woodType.railways_data.incomplete_track_narrow, [woodType.railways_data.incomplete_track_narrow, '#tfg:track_rods']),
+                    event.recipes.createDeploying(woodType.railways_data.incomplete_track_narrow, [woodType.railways_data.incomplete_track_narrow, '#tfc:mortar']),
+                    event.recipes.greate.pressing(woodType.railways_data.incomplete_track_narrow, woodType.railways_data.incomplete_track_narrow),
                 ]).transitionalItem(woodType.railways_data.incomplete_track_narrow).loops(2).id(`tfg:railways/sequenced_assembly/track_create_${woodType.name}_narrow`)
 
                 event.recipes.gtceu.assembler(`railways/track_create_${woodType.name}_narrow`)
@@ -125,10 +125,10 @@ const registerWoodStructRecipes = (event) =>
             event.recipes.createSequencedAssembly([
 			`32x ${woodType.railways_data.track_wide}`,
             ], woodType.slab, [
-                event.recipes.createDeploying(`railways:track_incomplete_tfc_${woodType.name}_wide`, [woodType.railways_data.incomplete_track_wide, woodType.plank]),
-                event.recipes.createDeploying(`railways:track_incomplete_tfc_${woodType.name}_wide`, [woodType.railways_data.incomplete_track_wide, `#tfg:track_rods`]),
-                event.recipes.createDeploying(`railways:track_incomplete_tfc_${woodType.name}_wide`, [woodType.railways_data.incomplete_track_wide, '#tfc:mortar']),
-                event.recipes.greate.pressing(`railways:track_incomplete_tfc_${woodType.name}_wide`, woodType.railways_data.incomplete_track_wide)
+                event.recipes.createDeploying(woodType.railways_data.incomplete_track_wide, [woodType.railways_data.incomplete_track_wide, woodType.plank]),
+                event.recipes.createDeploying(woodType.railways_data.incomplete_track_wide, [woodType.railways_data.incomplete_track_wide, `#tfg:track_rods`]),
+                event.recipes.createDeploying(woodType.railways_data.incomplete_track_wide, [woodType.railways_data.incomplete_track_wide, '#tfc:mortar']),
+                event.recipes.greate.pressing(woodType.railways_data.incomplete_track_wide, woodType.railways_data.incomplete_track_wide)
             ]).transitionalItem(woodType.railways_data.incomplete_track_wide).loops(2).id(`tfg:railways/sequenced_assembly/track_create_${woodType.name}_wide`)
 
             event.recipes.gtceu.assembler(`railways/track_${woodType.name}_wide`)
@@ -153,58 +153,46 @@ const registerWoodStructRecipes = (event) =>
         })
 
         //shingle assembling recipe
-        global.invokeIfNotNull(woodType.shingle, () =>
+        global.invokeIfNotNull(woodType.rnr_data, () =>
         {
             //Replace it so it accepts any log of the wood type
             event.replaceInput({ id: `rnr:crafting/shingle/${woodType.name}`}, `tfc:wood/log/${woodType.name}`, woodType.logsTag);
             
             event.recipes.gtceu.assembler(`tfg:wood/shingle/${woodType.name}`)
                 .itemInputs(woodType.logsTag)
-                .itemOutputs(`4x ${woodType.shingle}`)
+                .itemOutputs(`4x ${woodType.rnr_data.shingle}`)
                 .circuit(3)
                 .duration(20)
                 .EUt(30);
-        });
 
-        //shingle roof assembling recipe
-        global.invokeIfNotNull(woodType.shingle_roof, () =>
-        {
             event.recipes.gtceu.assembler(`tfg:wood/shingles/${woodType.name}`)
-                .itemInputs(woodType.shingle, 'rnr:roof_frame')
-                .itemOutputs(woodType.shingle_roof)
+                .itemInputs(woodType.rnr_data.shingle, 'rnr:roof_frame')
+                .itemOutputs(woodType.rnr_data.shingle_block)
                 .duration(20)
                 .EUt(30)
-        });
 
-        //shingle slab recipes
-        global.invokeIfNotNull(woodType.shingle_slab, () =>
-        {
             event.recipes.gtceu.assembler(`tfg:wood/shingles/${woodType.name}_slab_from_framing`)
-                .itemInputs(woodType.shingle, 'rnr:roof_frame_slab')
-                .itemOutputs(woodType.shingle_slab)
+                .itemInputs(woodType.rnr_data.shingle, 'rnr:roof_frame_slab')
+                .itemOutputs(woodType.rnr_data.shingle_slab)
                 .duration(20)
                 .EUt(30);
-
+    
             event.recipes.gtceu.assembler(`tfg:wood/shingles/${woodType.name}_slab`)
-                .itemInputs(woodType.shingle_roof)
-                .itemOutputs(woodType.shingle_slab)
+                .itemInputs(woodType.rnr_data.shingle_block)
+                .itemOutputs(woodType.rnr_data.shingle_slab)
                 .circuit(3)
                 .duration(20)
                 .EUt(30)
-        });
 
-        //shingle stair recipes
-        global.invokeIfNotNull(woodType.shingle_stair, () =>
-        {
             event.recipes.gtceu.assembler(`tfg:wood/shingles/${woodType.name}_stairs_from_framing`)
-                .itemInputs(woodType.shingle, 'rnr:roof_frame_stairs')
-                .itemOutputs(woodType.shingle_stair)
+                .itemInputs(woodType.rnr_data.shingle, 'rnr:roof_frame_stairs')
+                .itemOutputs(woodType.rnr_data.shingle_stair)
                 .duration(20)
                 .EUt(30)
-
+    
             event.recipes.gtceu.assembler(`tfg:wood/shingles/${woodType.name}_stairs`)
-                .itemInputs(woodType.shingle_roof)
-                .itemOutputs(woodType.shingle_stair)
+                .itemInputs(woodType.rnr_data.shingle_block)
+                .itemOutputs(woodType.rnr_data.shingle_stair)
                 .circuit(2)
                 .duration(20)
                 .EUt(30)
@@ -231,6 +219,10 @@ const registerWoodStructRecipes = (event) =>
         else if(woodType.modName == "afc")
         {
             handleAFCRecipeRegistration(woodType);
+        }
+        else if(woodType.modName == "beneath")
+        {
+            handleBeneathRecipeRegistration(woodType);
         }
 
         global.invokeIfNotNull(woodType.tree_data, () =>
@@ -430,6 +422,68 @@ const registerWoodStructRecipes = (event) =>
 			null,
 			null,
 			woodType.firmalife_data.stomping_barrel,
+			null,
+			null,
+			null,
+			null,
+			woodType.crafting_station,
+			woodType.workbench,
+			woodType.rope_ladder,
+			null
+		);
+    }
+
+    function handleBeneathRecipeRegistration(woodType)
+    {
+        // Removed recipe changes
+		event.remove({ id: `beneath:crafting/wood/${woodType.name}_planks` });
+		event.remove({ id: `beneath:crafting/wood/${woodType.name}_slab` });
+		event.remove({ id: `beneath:crafting/wood/${woodType.name}_button` });
+		event.remove({ id: `beneath:crafting/wood/${woodType.name}_pressure_plate` });
+		event.remove({ id: `beneath:crafting/wood/${woodType.name}_lumber_log` });
+		event.remove({ id: `beneath:crafting/wood/${woodType.name}_lumber_planks` });
+		event.remove({ id: `beneath:crafting/wood/${woodType.name}_slab_undo` });
+		event.remove({ id: `beneath:crafting/wood/${woodType.name}_trapdoor` });
+		event.remove({ id: `beneath:crafting/wood/${woodType.name}_door` });
+		event.remove({ id: `beneath:crafting/wood/${woodType.name}_stairs` });
+
+		TFGWoodBuilder(
+			event,
+			woodType.name,
+			woodType.lumber,
+			woodType.logsTag,
+			woodType.tree_data[0].log_data.log,
+			woodType.tree_data[0].log_data.stripped_log,
+			woodType.plank,
+			woodType.stair,
+			woodType.slab,
+            woodType.door,
+            woodType.trapdoor,
+			null,
+			null,
+			null,
+			null,
+			woodType.pressure_plate,
+			woodType.button,
+			woodType.tree_data[0].log_data.wood,
+			woodType.tree_data[0].log_data.stripped_wood,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
 			null,
 			null,
 			null,

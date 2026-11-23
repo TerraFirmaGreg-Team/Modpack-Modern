@@ -280,11 +280,6 @@ const registerTooltips = (event) => {
 	})
 
 	// Supports
-	global.BENEATH_WOOD_TYPES.forEach(wood => {
-		event.addAdvanced([`beneath:wood/support/${wood}`], (item, advanced, text) => {
-			text.add(1, Text.translate('tfg.tooltip.support.tier1'))
-		})
-	})
 	global.AD_ASTRA_WOOD.forEach(wood => {
 		event.addAdvanced([`tfg:${wood.name}_support`], (item, advanced, text) => {
 			text.add(1, Text.translate('tfg.tooltip.support.tier1'))
