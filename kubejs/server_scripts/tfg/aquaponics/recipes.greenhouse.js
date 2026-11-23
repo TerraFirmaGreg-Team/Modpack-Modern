@@ -534,10 +534,6 @@ const registerTFGGreenhouseRecipes = (event) => {
 	});
 
 	// Wood
-	//TODO: Remove once AFC is moved into WoodType struct
-	global.AFC_SAPLINGS.forEach(element => {
-		generateTreeGreenHouseRecipe(event, null, `afc:wood/sapling/${element.sapling}`, element.log, `afc:wood/leaves/${element.sapling}`, 1);
-	});
 	global.WAB_WOOD.forEach(element => {
 		generateTreeGreenHouseRecipe(event, null, `tfg:wood/sapling/${element.name}`, `wan_ancient_beasts:${element.name}_log`, `tfg:wood/leaves/${element.name}`, 1);
 	});

@@ -254,13 +254,4 @@ const registerAFCRecipes = (event) => {
 		.inputFluid(Fluid.of('afc:birch_syrup', 100))
 		.outputItem('afc:birch_sugar')
 		.id('tfg:barrel/birch_syrup_to_sugar')
-
-	global.AFC_SAPLINGS.forEach(wood => {
-		event.shaped(`4x afc:wood/fallen_leaves/${wood.sapling}`,[
-			'AA',
-			'AA'
-		], {
-			A: `afc:wood/leaves/${wood.sapling}`
-		}).id(`tfg:shaped/afc/${wood.sapling}_leaves_to_fallen_leaves`);
-	});
 }

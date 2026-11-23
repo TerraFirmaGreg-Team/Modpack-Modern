@@ -21,7 +21,7 @@ const registerWoodStructRecipes = (event) =>
         });
     });
 
-    global.TFC_WOOD_STRUCT.forEach(woodType =>
+    global.getWoodStructArray().forEach(woodType =>
     {
         console.log("Generating wood struct recipes for " + woodType.modName + ":" + woodType.name);
 
@@ -46,16 +46,19 @@ const registerWoodStructRecipes = (event) =>
         });
 
         //wired macaw fence recipe
-        global.invokeIfNotNull(woodType.macaw_data, () =>
+        global.invokeIfNotNull((woodType.macaw_data && woodType.tree_data), () =>
         {
+            let treeData = woodType.tree_data[0];
+            let logData = treeData.log_data;
+
             event.shaped(`8x mcw_tfc_aio:fences/${woodType.name}_fences/${woodType.name}_wired_fence`, [
 			'ABA',
 			'C C'
             ], {
                 A: '#forge:rods/wooden',
                 B: 'createaddition:barbed_wire',
-                C: woodType.log
-            }).id(`tfg:shaped/${woodType.name}_wired_fence`)
+                C: logData.log
+            }).id(`tfg:shaped/${woodType.name}_wired_fence`);
         });
 
         //train track recipes
@@ -152,8 +155,11 @@ const registerWoodStructRecipes = (event) =>
         //shingle assembling recipe
         global.invokeIfNotNull(woodType.shingle, () =>
         {
+            //Replace it so it accepts any log of the wood type
+            event.replaceInput({ id: `rnr:crafting/shingle/${woodType.name}`}, `tfc:wood/log/${woodType.name}`, woodType.logsTag);
+            
             event.recipes.gtceu.assembler(`tfg:wood/shingle/${woodType.name}`)
-                .itemInputs(woodType.log)
+                .itemInputs(woodType.logsTag)
                 .itemOutputs(`4x ${woodType.shingle}`)
                 .circuit(3)
                 .duration(20)
@@ -220,84 +226,32 @@ const registerWoodStructRecipes = (event) =>
         
         if(woodType.modName == "tfc")
         {
-            // Removed unused assets
-            event.remove({ id: `tfc:crafting/wood/${woodType.name}_axle` });
-            event.remove({ id: `tfc:crafting/wood/${woodType.name}_bladed_axle` });
-            event.remove({ id: `tfc:crafting/wood/${woodType.name}_encased_axle` });
-            event.remove({ id: `tfc:crafting/wood/${woodType.name}_clutch` });
-            event.remove({ id: `tfc:crafting/wood/${woodType.name}_gear_box` });
-            event.remove({ id: `tfc:crafting/wood/${woodType.name}_water_wheel` });
-    
-            // Removed recipe changes
-            event.remove({ id: `tfc:crafting/wood/${woodType.name}_planks` });
-            event.remove({ id: `tfc:crafting/wood/${woodType.name}_pressure_plate` });
-            event.remove({ id: `tfc:crafting/wood/${woodType.name}_lumber_log` });
-            event.remove({ id: `tfc:crafting/wood/${woodType.name}_button` });
-            event.remove({ id: `tfc:crafting/wood/${woodType.name}_slab` });
-            event.remove({ id: `tfc:crafting/wood/${woodType.name}_slab_undo` });
-            event.remove({ id: `tfc:crafting/wood/${woodType.name}_lumber_planks` });
-            event.remove({ id: `tfc:crafting/wood/${woodType.name}_stairs` });
-            event.remove({ id: `tfc:crafting/wood/${woodType.name}_stairs_undo` });
-    
-            TFGWoodBuilder(
-                event,
-                woodType.name,
-                woodType.lumber,
-                woodType.logs,
-                woodType.log,
-                woodType.stripped_log,
-                woodType.plank,
-                woodType.stair,
-                woodType.slab,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                woodType.pressure_plate,
-                woodType.button,
-                woodType.wood,
-                woodType.stripped_wood,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                woodType.crafting_station,
-                woodType.workbench,
-                woodType.rope_ladder,
-                null
-            );
+            handleTFCRecipeRefistration(woodType);
+        }
+        else if(woodType.modName == "afc")
+        {
+            handleAFCRecipeRegistration(woodType);
         }
 
-        //TODO: Uncomment once AFC has it's own WoodType struct array.
-        /*global.invokeIfNotNull(woodType.tree_data && woodType.log, () =>
+        global.invokeIfNotNull(woodType.tree_data, () =>
         {
             woodType.tree_data.forEach(treeData =>
             {
+                if(!treeData.log_data)
+                {
+                    return;
+                }
+
                 let sapling = treeData.sapling;
                 let leafBlock = treeData.leaf_block;
-
-                generateTreeGreenHouseRecipe(event, null, sapling, woodType.log, leafBlock, 1);
+                let log = treeData.log_data.log;
+                console.log("Name:" + treeData.tree_name + "\r\nSapling:" + sapling + "\r\nLeafBlock:" + leafBlock + "\r\nLog:" + log);
+                console.log("Log Data:" + treeData.log_data);
+                
+                if(sapling && leafBlock && log)
+                    generateTreeGreenHouseRecipe(event, null, sapling, log, leafBlock, 1);
             });
-        });*/
+        });
 
         global.invokeIfNotNull(woodType.woodKind, () =>
         {
@@ -348,4 +302,142 @@ const registerWoodStructRecipes = (event) =>
             }
         });
     })
+
+    function handleTFCRecipeRefistration(woodType)
+    {
+        // Removed unused assets
+        event.remove({ id: `tfc:crafting/wood/${woodType.name}_axle` });
+        event.remove({ id: `tfc:crafting/wood/${woodType.name}_bladed_axle` });
+        event.remove({ id: `tfc:crafting/wood/${woodType.name}_encased_axle` });
+        event.remove({ id: `tfc:crafting/wood/${woodType.name}_clutch` });
+        event.remove({ id: `tfc:crafting/wood/${woodType.name}_gear_box` });
+        event.remove({ id: `tfc:crafting/wood/${woodType.name}_water_wheel` });
+
+        // Removed recipe changes
+        event.remove({ id: `tfc:crafting/wood/${woodType.name}_planks` });
+        event.remove({ id: `tfc:crafting/wood/${woodType.name}_pressure_plate` });
+        event.remove({ id: `tfc:crafting/wood/${woodType.name}_lumber_log` });
+        event.remove({ id: `tfc:crafting/wood/${woodType.name}_button` });
+        event.remove({ id: `tfc:crafting/wood/${woodType.name}_slab` });
+        event.remove({ id: `tfc:crafting/wood/${woodType.name}_slab_undo` });
+        event.remove({ id: `tfc:crafting/wood/${woodType.name}_lumber_planks` });
+        event.remove({ id: `tfc:crafting/wood/${woodType.name}_stairs` });
+        event.remove({ id: `tfc:crafting/wood/${woodType.name}_stairs_undo` });
+
+        TFGWoodBuilder(
+            event,
+            woodType.name,
+            woodType.lumber,
+            woodType.logsTag,
+            woodType.tree_data[0].log_data.log,
+            woodType.tree_data[0].log_data.stripped_log,
+            woodType.plank,
+            woodType.stair,
+            woodType.slab,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            woodType.pressure_plate,
+            woodType.button,
+            woodType.tree_data[0].log_data.wood,
+            woodType.tree_data[0].log_data.stripped_wood,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            woodType.crafting_station,
+            woodType.workbench,
+            woodType.rope_ladder,
+            null
+        );
+    }
+    function handleAFCRecipeRegistration(woodType)
+    {
+        // Removed unused assets
+		event.remove({ id: `afc:crafting/wood/${woodType.name}_axle` });
+		event.remove({ id: `afc:crafting/wood/${woodType.name}_bladed_axle` });
+		event.remove({ id: `afc:crafting/wood/${woodType.name}_encased_axle` });
+		event.remove({ id: `afc:crafting/wood/${woodType.name}_clutch` });
+		event.remove({ id: `afc:crafting/wood/${woodType.name}_gear_box` });
+		event.remove({ id: `afc:crafting/wood/${woodType.name}_water_wheel` });
+
+		// Removed recipe changes
+		event.remove({ id: `afc:crafting/wood/${woodType.name}_planks` });
+		event.remove({ id: `afc:crafting/wood/${woodType.name}_pressure_plate` });
+		event.remove({ id: `afc:crafting/wood/${woodType.name}_lumber_log` });
+		event.remove({ id: `afc:crafting/wood/${woodType.name}_stairs` });
+		event.remove({ id: `afc:crafting/wood/${woodType.name}_stairs_undo` });
+		event.remove({ id: `afc:crafting/wood/${woodType.name}_slab` });
+		event.remove({ id: `afc:crafting/wood/${woodType.name}_button` });
+		event.remove({ id: `afc:crafting/wood/${woodType.name}_stomping_barrel` });
+		event.remove({ id: `afc:crafting/wood/${woodType.name}_lumber_planks` });
+		event.remove({ id: `afc:crafting/wood/${woodType.name}_slab_undo` });
+
+		TFGWoodBuilder(
+			event,
+			woodType.name,
+			woodType.lumber,
+			woodType.logsTag,
+			woodType.tree_data[0].log_data.log,
+			woodType.tree_data[0].log_data.stripped_log,
+			woodType.plank,
+			woodType.stair,
+			woodType.slab,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			woodType.pressure_plate,
+			woodType.button,
+			woodType.tree_data[0].log_data.wood,
+			woodType.tree_data[0].log_data.stripped_wood,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			woodType.firmalife_data.stomping_barrel,
+			null,
+			null,
+			null,
+			null,
+			woodType.crafting_station,
+			woodType.workbench,
+			woodType.rope_ladder,
+			null
+		);
+    }
 }

@@ -51,7 +51,7 @@ const registerWoodStructItemTags = (event) =>{
 
         //goog translated:
         // To roast TFC logs in pyrolysis. stove Why can't you just add a tag to a tag? (let's say minecraft:logs), because that breaks all minecraft:logs recipes, magic...
-        global.invokeIfNotNull(woodType.logs, () => event.add('minecraft:logs_that_burn', woodType.logs));
+        global.invokeIfNotNull(woodType.logsTag, () => event.add('minecraft:logs_that_burn', woodType.logsTag));
 
         //goog translated:
         //Chest tags to distinguish their types
@@ -89,10 +89,26 @@ const registerWoodStructItemTags = (event) =>{
                 return;
             }
             
-            event.add(`tfg:${tagSuffix}`, woodType.logs);
-            event.add(`tfg:stripped_${tagSuffix}`, woodType.stripped_log);
-            event.add(`tfg:stripped_${tagSuffix}`, woodType.stripped_wood);
+            //Add all the logs to the "wood type" tag
+            event.add(`tfg:${tagSuffix}`, woodType.logsTag);
             event.add(`tfg:${tagSuffix}_supports`, woodType.support);
+
+            //If we have tree data
+            global.invokeIfNotNull(woodType.tree_data, () =>
+            {
+                woodType.tree_data.forEach(treeData =>
+                {
+                    //And the tree data has log data
+                    if(treeData.logData)
+                    {
+                        //Add to respective tags if entry exists
+                        let logData = treeData.logData;
+                        global.invokeIfNotNull(logData.stripped_log, () => event.add(`tfg:stripped_${tagSuffix}`, logData.stripped_log));
+                        global.invokeIfNotNull(logData.stripped_wood, () => event.add(`tfg:stripped_${tagSuffix}`, logData.stripped_wood));
+                    }
+                })
+            });
+
 
             global.TFC_EQUIPMENT_METALS.forEach(metal =>
             {
@@ -102,20 +118,33 @@ const registerWoodStructItemTags = (event) =>{
 
         global.invokeIfNotNull(woodType.tree_data, () =>
         {
-            woodType.tree_data.forEach(treeData =>{
+            woodType.tree_data.forEach(treeData =>
+            {
                 //Ensure the sapling is in the sapling tag.
                 event.add('minecraft:saplings', treeData.sapling);
-
-                global.invokeIfNotNull(treeData.tapper_output, () =>
+                
+                //Dont do tapping related tags if the tree doesnt have any tappable liquids
+                global.invokeIfNotNull((treeData.tapper_output && treeData.log_data), () =>
                 {
-                    event.add(`tfg:${treeData.tapper_output}_logs`, woodType.logs);
+                    let logData = treeData.log_data;
+                    let log = logData.log;
+                    let strippedLog = logData.stripped_log;
+                    let wood = logData.wood;
+                    let strippedWood = logData.stripped_wood;
+                    
+                    if(log)
+                        event.add(`tfg:${treeData.tapper_output}_logs`, log);
+                    if(strippedLog)
+                        event.add(`tfg:${treeData.tapper_output}_logs`, strippedLog);
+                    if(wood)
+                        event.add(`tfg:${treeData.tapper_output}_logs`, wood);
+                    if(strippedWood)
+                        event.add(`tfg:${treeData.tapper_output}_logs`, strippedWood);
+                    
                     event.add(`tfg:${treeData.tapper_output}_saplings`, treeData.sapling),
                     event.add(`tfg:${treeData.tapper_output}_leaves`, treeData.leaf_block),
                     event.add(`tfg:${treeData.tapper_output}_fallen_leaves`, treeData.fallen_leaves);
-                    if(woodType.twig)
-                    {
-                        event.add(`tfg:${treeData.tapper_output}_twigs`, woodType.twig);
-                    }
+                    event.add(`tfg:${treeData.tapper_output}_twigs`, treeData.twig);
                 });
             });
         });
@@ -147,7 +176,7 @@ const registerWoodStructItemTags = (event) =>{
  */
 const registerWoodStructBlockTags = (event) =>
 {
-    global.TFC_WOOD_STRUCT.forEach(woodType =>
+    global.getWoodStructArray().forEach(woodType =>
     {
         console.log("Generating Wood Struct Block Tags for " + woodType.modName + ":" + woodType.name);
         //everycompat
@@ -171,20 +200,27 @@ const registerWoodStructBlockTags = (event) =>
             event.add('minecraft:mineable/axe', woodType.firmalife_data.barrel_press)
         });
 
-        global.invokeIfNotNull(woodType.twig, () => event.add("tfc:can_be_snow_piled", woodType.twig));
-
         global.invokeIfNotNull(woodType.tree_data, () =>
         {
             woodType.tree_data.forEach(treeData =>
             {
-                global.invokeIfNotNull(treeData.tapper_output, () =>
+                if(treeData.twig)
+                {
+                    event.add("tfc:can_be_snow_piled", treeData.twig);
+                }
+
+                global.invokeIfNotNull((treeData.tapper_output && treeData.logData), () =>
                 {
                     //If it has a tapping output, mark it as tappable
-                    event.add("afc:tappable_logs", woodType.log);
+                    let logData = treeData.logData;
+                    if(logData.log)
+                    {
+                        event.add("afc:tappable_logs", woodType.log);
+                    }
                     
                     //This will not scale, but maple and birch have "syrup logs tags."
                     var tapperLogTag = (treeData.tapper_output == "maple" || treeData.tapper_output == "birch") ? "tfg:syrup_logs" : `tfg:${treeData.tapper_output}_logs`;
-                    event.add(tapperLogTag, woodType.logs);
+                    event.add(tapperLogTag, logData.funcGetAllNonNullLogs());
                 })
             })
         });
@@ -197,7 +233,7 @@ const registerWoodStructBlockTags = (event) =>
  */
 const registerWoodStructEntityTags = (event) =>
 {
-    global.TFC_WOOD_STRUCT.forEach(woodType =>
+    global.getWoodStructArray().forEach(woodType =>
     {
         console.log("Generating Wood Struct Entity Tags for " + woodType.modName + ":" + woodType.name);
         global.invokeIfNotNull(woodType.astikor_data, () =>

@@ -238,7 +238,6 @@ ServerEvents.recipes(event => {
 	registerAE2Recipes(event)
 	registerAFCRecipes(event)
 	registerArthropocolypseRecipes(event)
-	registerAsticorCartsRecipes(event)
 	registerAE2InsertExportCardRecipes(event)
 	registerAE2NetworkAnalyzerRecipes(event)
 	registerAE2WTLibRecipes(event)

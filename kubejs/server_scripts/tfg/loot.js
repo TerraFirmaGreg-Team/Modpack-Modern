@@ -202,11 +202,6 @@ function registerTFGLoots(event) {
 		})
 	})
 
-	global.AFC_WOOD_TYPES.forEach(wood => {
-		const id = `everycomp:c/afc/${wood}_window_pane`
-		event.addBlockLootModifier(id)
-			.addLoot(id)
-	})
 	global.AD_ASTRA_WOOD.forEach(wood => {
 		const id = `everycomp:c/ad_astra/${wood.name}_window_pane`
 		event.addBlockLootModifier(id)

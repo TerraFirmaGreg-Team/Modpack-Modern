@@ -44,6 +44,14 @@ global.woodStructHelpers =
             animal_cart: `${nameSpace}:animal_cart/${woodName}`
         };
     },
+    logDataUnstripped: function(nameSpace, woodName, count)
+    {
+        return this.logData(nameSpace, woodName, true, false, true, false, count);
+    },
+    logDataStripped: function(nameSpace, woodName, count)
+    {
+        return this.logData(nameSpace, woodName, false, true, false, true, count);
+    },
     logDataLogs: function(nameSpace, woodName, count)
     {
         return this.logData(nameSpace, woodName, true, true, false, false, count)
@@ -56,9 +64,32 @@ global.woodStructHelpers =
     {
         return this.logData(nameSpace, woodName, true, true, true, true, count);
     },
+    tapperOutput: function(tapperOutput, count)
+    {
+        let result = [];
+        for(let index = 0; index < count; index++)
+        {
+            result.push(tapperOutput);
+        }
+        return result;
+    },
+    treeTwig: function(nameSpace, woodName)
+    {
+        return `${nameSpace}:wood/twig/${woodName}`;
+    },
+    twigArray: function(nameSpace, woodName, count)
+    {        
+        let result = [];
+        for(let index = 0; index < count; index++)
+        {
+            result.push(this.treeTwig(nameSpace, woodName));
+        }
+        return result;
+    },
     logData: function(nameSpace, woodName, hasLog, hasStrippedLog, hasWood, hasStrippedWood, count)
     {
-        let logData = {
+        let logData = 
+        {
             log: hasLog ? `${nameSpace}:wood/log/${woodName}` : null,
             stripped_log: hasStrippedLog ? `${nameSpace}:wood/stripped_log/${woodName}` : null,
             wood: hasWood ? `${nameSpace}:wood/wood/${woodName}` : null,
@@ -77,21 +108,29 @@ global.woodStructHelpers =
             return result;
         }
     },
-    treeData: function(arrayLen, nameSpaces, logDatas, leafNames, saplingNames, tapperOutputs)
+    treeData: function(arrayLen, nameSpaces, logDatas, leafNames, saplingNames, twigs, tapperOutputs)
     {
         let result = [];
         for (let index = 0; index < arrayLen; index++) {
+
+            let treeName = leafNames[index];
+            let nameSpace = nameSpaces[index];
+            let logData = logDatas[index];
+            let leafBlock = `${nameSpaces[index]}:wood/leaves/${leafNames[index]}`;
+            let fallenLeaves = `${nameSpaces[index]}:wood/fallen_leaves/${leafNames[index]}`;
+            let sapling = `${nameSpaces[index]}:wood/sapling/${saplingNames[index]}`;
+            let twig = twigs[index];
+            let tapperOutput = tapperOutputs[index];
+
             result.push({ 
-                tree_name: leafNames[index],
-                nameSpace: nameSpaces[index],
-                log: logNames[index],
-                stripped_log: strippedLogNames[index],
-                wood: woodNames[index],
-                stripped_wood: strippedWoodNames[index],
-                leaf_block: `${nameSpaces[index]}:wood/leaves/${leafNames[index]}`, 
-                fallen_leaves: `${nameSpaces[index]}:wood/fallen_leaves/${leafNames[index]}`, 
-                sapling: `${nameSpaces[index]}:wood/sapling/${saplingNames[index]}`,
-                tapper_output: tapperOutputs[index], 
+                tree_name: treeName,
+                nameSpace: nameSpace,
+                log_data: logData,
+                leaf_block: leafBlock,
+                fallen_leaves: fallenLeaves,
+                sapling: sapling,
+                twig: twig,
+                tapper_output: tapperOutput
             });
         }
         return result;
