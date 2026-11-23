@@ -15,6 +15,10 @@ global.linuxUnfucker = function(value) {
 };
 
 //We put this here so the other constant javascript files can reference them properly
+global.getWoodStructArray = function(){
+    return global.TFC_WOOD_STRUCT
+    .concat(global.AFC_WOOD_STRUCT);
+}
 /**
  * @typedef {Object} WoodKindEnum
  * @property {"HARD"} HARD
@@ -40,108 +44,202 @@ global.woodStructHelpers =
             animal_cart: `${nameSpace}:animal_cart/${woodName}`
         };
     },
-    treeData: function(arrayLen, nameSpaces, leafNames, saplingNames)
+    logDataLogs: function(nameSpace, woodName, count)
+    {
+        return this.logData(nameSpace, woodName, true, true, false, false, count)
+    },
+    logDataWoods: function(namespace, woodName, count)
+    {
+        return this.logData(namespace, woodName, false, false, true, true, count);
+    },
+    logDataFull: function(nameSpace, woodName, count)
+    {
+        return this.logData(nameSpace, woodName, true, true, true, true, count);
+    },
+    logData: function(nameSpace, woodName, hasLog, hasStrippedLog, hasWood, hasStrippedWood, count)
+    {
+        let logData = {
+            log: hasLog ? `${nameSpace}:wood/log/${woodName}` : null,
+            stripped_log: hasStrippedLog ? `${nameSpace}:wood/stripped_log/${woodName}` : null,
+            wood: hasWood ? `${nameSpace}:wood/wood/${woodName}` : null,
+            stripped_wood: hasStrippedWood ? `${nameSpace}:wood/stripped_wood/${woodName}` : null,
+        };
+
+        if(count == 1)
+        {
+            return logData;
+        }
+        else{
+            let result = [];
+            for (let index = 0; index < count; index++) {
+                result.push(logData);
+            }
+            return result;
+        }
+    },
+    treeData: function(arrayLen, nameSpaces, logDatas, leafNames, saplingNames, tapperOutputs)
     {
         let result = [];
         for (let index = 0; index < arrayLen; index++) {
             result.push({ 
                 tree_name: leafNames[index],
+                nameSpace: nameSpaces[index],
+                log: logNames[index],
+                stripped_log: strippedLogNames[index],
+                wood: woodNames[index],
+                stripped_wood: strippedWoodNames[index],
                 leaf_block: `${nameSpaces[index]}:wood/leaves/${leafNames[index]}`, 
                 fallen_leaves: `${nameSpaces[index]}:wood/fallen_leaves/${leafNames[index]}`, 
-                sapling: `${nameSpaces[index]}:wood/sapling/${saplingNames[index]}` 
+                sapling: `${nameSpaces[index]}:wood/sapling/${saplingNames[index]}`,
+                tapper_output: tapperOutputs[index], 
             });
         }
         return result;
     },
-    macawBridges: function(nameSpace, input)
+    firmalifeData: function(nameSpace, input)
     {
-        return [
-            `${nameSpace}:bridges/${input}_bridges/${input}_bridge_pier`,
-            `${nameSpace}:bridges/${input}_bridges/${input}_log_bridge_middle`,
-            `${nameSpace}:bridges/${input}_bridges/${input}_log_bridge_stair`,
-            `${nameSpace}:bridges/${input}_bridges/${input}_rail_bridge`,
-            `${nameSpace}:bridges/${input}_bridges/rope_${input}_bridge`,
-            `${nameSpace}:bridges/${input}_bridges/${input}_rope_bridge_stair`,
-        ]
+        return{
+            foodShelf: `${nameSpace}:wood/food_shelf/${input}`,
+            hanger: `${nameSpace}:wood/hanger/${input}`,
+            jarbnet: `${nameSpace}:wood/jarbnet/${input}`,
+            big_barrel: `${nameSpace}:wood/big_barrel/${input}`,
+            wine_shelf: `${nameSpace}:wood/wine_shelf/${input}`,
+            stomping_barrel: `${nameSpace}:wood/stomping_barrel/${input}`,
+            barrel_press: `${nameSpace}:wood/barrel_press/${input}`,
+        }
     },
-    macawFences: function(nameSpace, input)
+    tfcData: function(nameSpace, input)
     {
-        return [
-            `${nameSpace}:bridges/${input}_bridges/${input}_bridge_pier`,
-            `${nameSpace}:bridges/${input}_bridges/${input}_log_bridge_middle`,
-            `${nameSpace}:bridges/${input}_bridges/${input}_log_bridge_stair`,
-            `${nameSpace}:bridges/${input}_bridges/${input}_rail_bridge`,
-            `${nameSpace}:bridges/${input}_bridges/rope_${input}_bridge`,
-            `${nameSpace}:bridges/${input}_bridges/${input}_rope_bridge_stair`,
-        ]
+        return{
+            sewing_table: `${nameSpace}:wood/sewing_table/${input}`,
+            scribing_table: `${nameSpace}:wood/scribing_table/${input}`,
+            jar_shelf: `${nameSpace}:wood/jar_shelf/${input}`,
+            chest_minecart: `${nameSpace}:wood/chest_minecart`,
+        }
     },
-    macawRoofs: function(nameSpace, input)
+    macawAIO: function(nameSpace, input)
     {
-        const ROOF_TYPES = [
-            '_attic_roof',
-            '_lower_roof',
-            '_roof',
-            '_steep_roof',
-            '_top_roof',
-            '_upper_lower_roof',
-            '_upper_steep_roof'
-        ]
+        function bridges(nameSpace, input)
+        {
+                return [
+                `${nameSpace}:bridges/${input}_bridges/${input}_bridge_pier`,
+                `${nameSpace}:bridges/${input}_bridges/${input}_log_bridge_middle`,
+                `${nameSpace}:bridges/${input}_bridges/${input}_log_bridge_stair`,
+                `${nameSpace}:bridges/${input}_bridges/${input}_rail_bridge`,
+                `${nameSpace}:bridges/${input}_bridges/rope_${input}_bridge`,
+                `${nameSpace}:bridges/${input}_bridges/${input}_rope_bridge_stair`,
+            ]
+        }
 
-        let result = [];
-        ROOF_TYPES.forEach(roofType =>
+        function fences(nameSpace, input)
         {
-            result.push(`${nameSpace}:roof/${input}_roofs/${input}_planks${roofType}`);
-            result.push(`${nameSpace}:roof/${input}_roofs/${input}${roofType}`);
-        });
+            return [
+                `${nameSpace}:bridges/${input}_bridges/${input}_bridge_pier`,
+                `${nameSpace}:bridges/${input}_bridges/${input}_log_bridge_middle`,
+                `${nameSpace}:bridges/${input}_bridges/${input}_log_bridge_stair`,
+                `${nameSpace}:bridges/${input}_bridges/${input}_rail_bridge`,
+                `${nameSpace}:bridges/${input}_bridges/rope_${input}_bridge`,
+                `${nameSpace}:bridges/${input}_bridges/${input}_rope_bridge_stair`,
+            ];
+        }
 
-        return result;
-    },
-    MACAW_FURNITURE_TYPES: [
-        '_wardrobe',
-        '_chair',
-        '_modern_wardrobe',
-        '_double_wardrobe',
-        '_bookshelf',
-        '_bookshelf_cupboard',
-        '_drawer',
-        '_double_drawer',
-        '_bookshelf_drawer',
-        '_lower_bookshelf_drawer',
-        '_large_drawer',
-        '_lower_triple_drawer',
-        '_triple_drawer',
-        '_desk',
-        '_covered_desk',
-        '_modern_desk',
-        '_table',
-        '_end_table',
-        '_coffee_table',
-        '_glass_table',
-        '_modern_chair',
-        '_striped_chair',
-        '_stool_chair',
-        '_counter',
-        '_drawer_counter',
-        '_double_drawer_counter',
-        '_cupboard_counter'
-    ],
-    macawFurniture: function(nameSpace, input)
-    {
-        let result = []
-        global.woodStructHelpers.MACAW_FURNITURE_TYPES.forEach(furnitureType =>
+        function roofs(nameSpace, input)
         {
-            result.push(`${nameSpace}:furniture/${input}_furniture/${input}${furnitureType}`);
-        })
-        return result;
-    },
-    macawStrippedFurniture: function(nameSpace, input)
-    {
-        let result = []
-        global.woodStructHelpers.MACAW_FURNITURE_TYPES.forEach(furnitureType =>
+            const ROOF_TYPES = [
+                '_attic_roof',
+                '_lower_roof',
+                '_roof',
+                '_steep_roof',
+                '_top_roof',
+                '_upper_lower_roof',
+                '_upper_steep_roof'
+            ]
+
+            let result = [];
+            ROOF_TYPES.forEach(roofType =>
+            {
+                result.push(`${nameSpace}:roof/${input}_roofs/${input}_planks${roofType}`);
+                result.push(`${nameSpace}:roof/${input}_roofs/${input}${roofType}`);
+            });
+
+            return result;
+        }
+
+        function furniture(nameSpace, input)
         {
-            result.push(`${nameSpace}:furniture/${input}_furniture/stripped_${input}${furnitureType}`);
-        })
-        return result;
+            const MACAW_FURNITURE_TYPES = [
+                '_wardrobe',
+                '_chair',
+                '_modern_wardrobe',
+                '_double_wardrobe',
+                '_bookshelf',
+                '_bookshelf_cupboard',
+                '_drawer',
+                '_double_drawer',
+                '_bookshelf_drawer',
+                '_lower_bookshelf_drawer',
+                '_large_drawer',
+                '_lower_triple_drawer',
+                '_triple_drawer',
+                '_desk',
+                '_covered_desk',
+                '_modern_desk',
+                '_table',
+                '_end_table',
+                '_coffee_table',
+                '_glass_table',
+                '_modern_chair',
+                '_striped_chair',
+                '_stool_chair',
+                '_counter',
+                '_drawer_counter',
+                '_double_drawer_counter',
+                '_cupboard_counter'
+            ];
+
+            const regular = () =>
+            {
+                let result = []
+                MACAW_FURNITURE_TYPES.forEach(furnitureType =>
+                {
+                    result.push(`${nameSpace}:furniture/${input}_furniture/${input}${furnitureType}`);
+                })
+                return result;
+            }
+
+            const stripped = () =>
+            {
+                let result = []
+                MACAW_FURNITURE_TYPES.forEach(furnitureType =>
+                {
+                    result.push(`${nameSpace}:furniture/${input}_furniture/stripped_${input}${furnitureType}`);
+                })
+                return result;
+            }
+
+            return{
+                regular: regular(),
+                stripped: stripped()
+            };
+        }
+
+        return{
+            bridges: bridges(nameSpace, input),
+            fences: fences(nameSpace, input),
+            roofs: roofs(nameSpace, input),
+            furniture: furniture(nameSpace, input)
+        };
+    },
+    railwaysData: function(nameSpace, input)
+    {
+        return {
+            track: `${nameSpace}:track_${input}`,
+            incomplete_track: `${nameSpace}:track_incomplete_${input}`,
+            track_wide: `${nameSpace}:track_${input}_wide`,
+            incomplete_track_wide: `${nameSpace}:track_incomplete_${input}_wide`,
+            track_narrow: `${nameSpace}:track_${input}_narrow`,
+            incomplete_track_narrow: `${nameSpace}:track_incomplete_${input}_narrow`
+        };
     }
 }
 

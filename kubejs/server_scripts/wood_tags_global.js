@@ -2,53 +2,46 @@
  * @param {TagEvent.Item} event
  */
 const registerWoodStructItemTags = (event) =>{
-    global.TFC_WOOD_STRUCT.forEach(woodType => {
+    global.getWoodStructArray().forEach(woodType => {
         console.log("Generating Wood Struct Item Tags for " + woodType.modName + ":" + woodType.name);
         //Add track to track tag
-        global.invokeIfNotNull(woodType.track, () => event.add('create:tracks', woodType.track));
-        global.invokeIfNotNull(woodType.track_narrow, () => event.add('create:tracks', woodType.track_narrow));
-        global.invokeIfNotNull(woodType.track_wide, () => event.add('create:tracks', woodType.track_wide));
+        global.invokeIfNotNull(woodType.railways_data, () =>
+        {        
+            event.add('create:tracks', woodType.railways_data.track);
+            event.add('create:tracks', woodType.railways_data.track_narrow);
+            event.add('create:tracks', woodType.railways_data.track_wide);
+        });
 
         //Add everycomp window tags
         global.invokeIfNotNull(woodType.window, () => event.add('forge:glass', woodType.window));
         global.invokeIfNotNull(woodType.window_pane, () => event.add('forge:glass_panes', woodType.window_pane));
 
         //macaw
-        global.invokeIfNotNull(woodType.macaw_bridges, () =>
+        global.invokeIfNotNull(woodType.macaw_data, () =>
         {
-            woodType.macaw_bridges.forEach(macawBridge =>
+
+            woodType.macaw_data.bridges.forEach(macawBridge =>
             {
                 event.add('mcw_tfc_aio:bridges', macawBridge);
             });
-        });
-        global.invokeIfNotNull(woodType.macaw_fences, () =>
-        {
-            woodType.macaw_fences.forEach(macawFence =>
+            woodType.macaw_data.fences.forEach(macawFence =>
             {
                 event.add('minecraft:fence_gates', macawFence);
             });
-        });
-        global.invokeIfNotNull(woodType.macaw_roofs, () =>
-        {
-            woodType.macaw_roofs.forEach(macawRoof =>
+            woodType.macaw_data.roofs.forEach(macawRoof =>
             {
                 event.add('mcw_tfc_aio:roofs', macawRoof);
             });
-        });
-        global.invokeIfNotNull(woodType.macaw_furniture, () =>
-        {
-            woodType.macaw_furniture.forEach(macawFurniture =>
+            woodType.macaw_data.furniture.regular.forEach(macawFurniture =>
             {
                 event.add('mcw_tfc_aio:furniture', macawFurniture);
             });
-        });
-        global.invokeIfNotNull(woodType.macaw_furniture_stripped, () =>
-        {
-            woodType.macaw_furniture_stripped.forEach(macawFurnitureStripped =>
+            woodType.macaw_data.furniture.stripped.forEach(macawFurnitureStripped =>
             {
                 event.add('mcw_tfc_aio:stripped_furniture', macawFurnitureStripped);
             });
         });
+        
 
         //rnr
         global.invokeIfNotNull(woodType.shingle, () => event.add('rnr:shingles', woodType.shingle));
@@ -67,11 +60,13 @@ const registerWoodStructItemTags = (event) =>{
 
         global.invokeIfNotNull(woodType.rope_ladder, () => event.add("tfg:rope_ladders", woodType.rope_ladder));
 
-        global.invokeIfNotNull(woodType.name, () =>
+        global.invokeIfNotNull(woodType.sign, () => event.add("minecraft:signs", woodType.sign));
+
+        global.invokeIfNotNull(woodType.railways_data, () =>
         {
-            event.add('c:hidden_from_recipe_viewers', `railways:track_incomplete_tfc_${woodType.name}`)
-            event.add('c:hidden_from_recipe_viewers', `railways:track_incomplete_tfc_${woodType.name}_narrow`)
-            event.add('c:hidden_from_recipe_viewers', `railways:track_incomplete_tfc_${woodType.name}_wide`)	
+            event.add('c:hidden_from_recipe_viewers', woodType.railways_data.incomplete_track)
+            event.add('c:hidden_from_recipe_viewers', woodType.railways_data.incomplete_track_narrow)
+            event.add('c:hidden_from_recipe_viewers', woodType.railways_data.incomplete)	
         });
 
         global.invokeIfNotNull(woodType.shingle_roof, () => event.add('tfg:whitelisted/facades', woodType.shingle_roof));
@@ -101,10 +96,50 @@ const registerWoodStructItemTags = (event) =>{
 
             global.TFC_EQUIPMENT_METALS.forEach(metal =>
             {
-                event.add(`tfg:hanging_sign/${metal}/${tagSuffix}`, `tfc:wood/hanging_sign/${metal}/${woodType.name}`);
+                event.add(`tfg:hanging_sign/${metal}/${tagSuffix}`, `${woodType.modName}:wood/hanging_sign/${metal}/${woodType.name}`);
             })
         })
+
+        global.invokeIfNotNull(woodType.tree_data, () =>
+        {
+            woodType.tree_data.forEach(treeData =>{
+                //Ensure the sapling is in the sapling tag.
+                event.add('minecraft:saplings', treeData.sapling);
+
+                global.invokeIfNotNull(treeData.tapper_output, () =>
+                {
+                    event.add(`tfg:${treeData.tapper_output}_logs`, woodType.logs);
+                    event.add(`tfg:${treeData.tapper_output}_saplings`, treeData.sapling),
+                    event.add(`tfg:${treeData.tapper_output}_leaves`, treeData.leaf_block),
+                    event.add(`tfg:${treeData.tapper_output}_fallen_leaves`, treeData.fallen_leaves);
+                    if(woodType.twig)
+                    {
+                        event.add(`tfg:${treeData.tapper_output}_twigs`, woodType.twig);
+                    }
+                });
+            });
+        });
+
+        global.invokeIfNotNull(woodType.firmalife_data, () =>
+        {
+            event.add('firmalife:food_shelves', woodType.food_shelf)
+            event.add('firmalife:hangers', woodType.firmalife_data.hanger)
+            event.add('firmalife:jarbnets', woodType.firmalife_data.jarbnet)
+            event.add('firmalife:big_barrels', woodType.firmalife_data.big_barrel)
+            event.add('firmalife:wine_shelves', woodType.firmalife_data.wine_shelf)
+            event.add('firmalife:stomping_barrels', woodType.firmalife_data.stomping_barrel)
+            event.add('firmalife:barrel_presses', woodType.firmalife_data.barrel_press)
+        });
+
+        global.invokeIfNotNull(woodType.tfc_data, () =>
+        {
+            event.add('tfc:sewing_tables', woodType.tfc_data.sewing_table)
+            event.add('tfc:scribing_tables', woodType.tfc_data.scribing_table)
+            event.add('tfc:jar_shelves', woodType.tfc_data.jar_shelf)
+            event.add('tfc:minecarts', woodType.tfc_data.chest_minecart)
+        });
     });
+
 }
 
 /**
@@ -123,6 +158,36 @@ const registerWoodStructBlockTags = (event) =>
         global.invokeIfNotNull(woodType.shingle_roof, () => event.add('minecraft:mineable/axe', woodType.shingle_roof));
         global.invokeIfNotNull(woodType.shingle_slab, () => event.add('minecraft:mineable/axe', woodType.shingle_slab));
         global.invokeIfNotNull(woodType.shingle_stair, () => event.add('minecraft:mineable/axe', woodType.shingle_stair));
+
+        //Ensure the firmalife things can be broken with an axe
+        global.invokeIfNotNull(woodType.firmalife_data, () =>
+        {
+            event.add('minecraft:mineable/axe', woodType.food_shelf)
+            event.add('minecraft:mineable/axe', woodType.firmalife_data.hanger)
+            event.add('minecraft:mineable/axe', woodType.firmalife_data.jarbnet)
+            event.add('minecraft:mineable/axe', woodType.firmalife_data.big_barrel)
+            event.add('minecraft:mineable/axe', woodType.firmalife_data.wine_shelf)
+            event.add('minecraft:mineable/axe', woodType.firmalife_data.stomping_barrel)
+            event.add('minecraft:mineable/axe', woodType.firmalife_data.barrel_press)
+        });
+
+        global.invokeIfNotNull(woodType.twig, () => event.add("tfc:can_be_snow_piled", woodType.twig));
+
+        global.invokeIfNotNull(woodType.tree_data, () =>
+        {
+            woodType.tree_data.forEach(treeData =>
+            {
+                global.invokeIfNotNull(treeData.tapper_output, () =>
+                {
+                    //If it has a tapping output, mark it as tappable
+                    event.add("afc:tappable_logs", woodType.log);
+                    
+                    //This will not scale, but maple and birch have "syrup logs tags."
+                    var tapperLogTag = (treeData.tapper_output == "maple" || treeData.tapper_output == "birch") ? "tfg:syrup_logs" : `tfg:${treeData.tapper_output}_logs`;
+                    event.add(tapperLogTag, woodType.logs);
+                })
+            })
+        });
     })
 }
 
