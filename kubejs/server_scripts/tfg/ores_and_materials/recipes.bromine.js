@@ -2,8 +2,6 @@
 
 function registerTFGBromineRecipes(event) {
 
-	/*
-
 	event.recipes.tfg.evaporation_tower('evaporation_brine')
 		.inputFluids(Fluid.of('tfc:salt_water', 20000))
 		.outputFluids(Fluid.of('gtceu:raw_brine', 1000))
@@ -71,7 +69,7 @@ function registerTFGBromineRecipes(event) {
 
 	event.recipes.gtceu.centrifuge('debrominated_brine_decomposition')
 		.inputFluids(Fluid.of('gtceu:debrominated_brine', 2000))
-		.outputFluids(Fluid.of('tfc:salt_water'), 1000)
+		.outputFluids(Fluid.of('gtceu:hydrogen', 1000))
 		.duration(20*3)
 		.EUt(GTValues.VA[GTValues.MV])
 
@@ -120,7 +118,5 @@ function registerTFGBromineRecipes(event) {
 		.outputFluids(Fluid.of('gtceu:bromine', 1000))
 		.duration(20*25)
 		.EUt(GTValues.VA[GTValues.HV])
-
-	*/
 
 }

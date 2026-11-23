@@ -27,11 +27,11 @@
             "weight": 1
           },
           {
-            "block": "gtceu:basalt_cooperite_ore",
+            "block": "gtceu:basalt_ferhodsite_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:basalt_platinum_ore",
+            "block": "gtceu:basalt_irarsite_ore",
             "weight": 15
           },
           {
@@ -54,11 +54,11 @@
             "weight": 1
           },
           {
-            "block": "gtceu:andesite_cooperite_ore",
+            "block": "gtceu:andesite_ferhodsite_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:andesite_platinum_ore",
+            "block": "gtceu:andesite_irarsite_ore",
             "weight": 15
           },
           {
@@ -81,11 +81,11 @@
             "weight": 1
           },
           {
-            "block": "gtceu:glacio_stone_cooperite_ore",
+            "block": "gtceu:glacio_stone_ferhodsite_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:glacio_stone_platinum_ore",
+            "block": "gtceu:glacio_stone_irarsite_ore",
             "weight": 15
           },
           {
@@ -106,11 +106,11 @@
           "weight": 35
         },
         {
-          "block": "gtceu:cooperite_indicator",
+          "block": "gtceu:ferhodsite_indicator",
           "weight": 25
         },
         {
-          "block": "gtceu:platinum_indicator",
+          "block": "gtceu:irarsite_indicator",
           "weight": 15
         },
         {
