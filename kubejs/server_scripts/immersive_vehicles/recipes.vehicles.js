@@ -585,13 +585,15 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 		{ suffix: 'white', dye: 'white', alt: 0 },
 		{ suffix: 'yellow', dye: 'yellow', alt: 0 },
 		{ suffix: 'yellowwhite', dye: 'yellow', alt: 1 },
+		{ suffix: 'american', dye: 'white', alt: 1 },
+		{ suffix: 'purple', dye: 'purple', alt: 0 },
 	];
 	scouts.forEach(scout => {
 		event.recipes.gtceu.automotive_workshop(`mts:mtsofficialpack.scout_${scout.suffix}`)
 			.itemInputs(
 				'mts:mtsofficialpack.engineamci4', '#create:valve_handles', '6x #forge:glass',
 				'2x #gtceu:circuits/lv', '2x create:precision_mechanism', '2x #gtceu:batteries/lv',
-				'8x #forge:plates/invar', '2x #forge:frames/invar', 'gtceu:lv_machine_hull',
+				'8x #forge:plates/invar', 'mts:mtsofficialpack.scoutbedpickup', 'gtceu:lv_machine_hull',
 				'4x mts:mtsofficialpack.headlight', '4x #forge:springs/steel')
 			.inputFluids(
 				Fluid.of('gtceu:soldering_alloy', 8 * 144),
@@ -851,11 +853,17 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 		{ suffix: 'brown', dye: 'brown', alt: 0 },
 		{ suffix: 'gray', dye: 'gray', alt: 0 },
 		{ suffix: 'maroon', dye: 'red', alt: 1 },
-		{ suffix: 'police', dye: 'green', alt: 1 },
+		{ suffix: 'police', dye: 'lime', alt: 1 },
 		{ suffix: 'police2', dye: 'black', alt: 1 },
 		{ suffix: 'red', dye: 'red', alt: 0 },
 		{ suffix: 'seagreen', dye: 'cyan', alt: 0 },
-		{ suffix: 'white', dye: 'white', alt: 0 }
+		{ suffix: 'white', dye: 'white', alt: 0 },
+		{ suffix: 'beige', dye: 'brown', alt: 1 },
+		{ suffix: 'green', dye: 'lime', alt: 0 },
+		{ suffix: 'olive', dye: 'green', alt: 1 },
+		{ suffix: 'salmon', dye: 'orange', alt: 0 },
+		{ suffix: 'silver', dye: 'light_gray', alt: 0 },
+		{ suffix: 'yellow', dye: 'yellow', alt: 0 }
 	];
 	mercedeses.forEach(merc => {
 		event.recipes.gtceu.automotive_workshop(`mts:mtsofficialpack.merc230_${merc.suffix}`)

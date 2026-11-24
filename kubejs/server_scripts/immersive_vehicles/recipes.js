@@ -64,7 +64,7 @@ function registerImmersiveVehiclesRecipes(event) {
 			.inputFluids(Fluid.of(fuel.fluid, 100))
 			.outputFluids(Fluid.of('tfg:universal_vehicle_fuel', fuel.eut * 2))
 			.duration(50)
-			.EUt(16)
+			.EUt(GTValues.VA[GTValues.ULV])
 
 		//if (fuel.makes_boosted) {
 		//	event.recipes.gtceu.brewery(`tfg:${fuel.name}_to_boosted_vehicle_fuel`)
@@ -379,14 +379,14 @@ function registerImmersiveVehiclesRecipes(event) {
 		.EUt(GTValues.VHA[GTValues.HV])
 
 	event.recipes.gtceu.alloy_smelter('tfg:spark_plug_casing_fireclay')
-		.itemInputs('tfc:fire_clay')
+		.itemInputs('5x tfc:fire_clay')
 		.notConsumable('gtceu:tiny_pipe_casting_mold')
 		.itemOutputs('tfg:spark_plug_casing')
 		.duration(100)
 		.EUt(GTValues.VHA[GTValues.LV])
 
 	event.recipes.gtceu.alloy_smelter('tfg:spark_plug_casing_alumina')
-		.itemInputs('#tfg:aluminium_oxide')
+		.itemInputs('5x #tfg:aluminium_oxide')
 		.notConsumable('gtceu:tiny_pipe_casting_mold')
 		.itemOutputs('tfg:spark_plug_casing')
 		.duration(100)

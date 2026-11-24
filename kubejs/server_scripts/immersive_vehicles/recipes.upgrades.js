@@ -228,7 +228,7 @@ function registerImmersiveVehiclesUpgradeRecipes(event) {
 		'DCD'
 	], {
 		A: '#forge:rods/steel',
-		B: '#forge:plates/steel',
+		B: '#forge:double_plates/steel',
 		C: '#forge:tools/screwdrivers',
 		D: '#forge:screws/steel'
 	}).id('mts:mtsofficialpack.scoutbedpickup')
@@ -402,8 +402,7 @@ function registerImmersiveVehiclesUpgradeRecipes(event) {
 	}).id('mts:belroftmotors.keeperroofrack')
 
 	event.shaped('mts:belroftmotors.keeper_sidestep', [
-		'A A',
-		'BBB',
+		'ABA',
 		'C  '
 	], {
 		A: '#forge:bolts/steel',
@@ -412,8 +411,7 @@ function registerImmersiveVehiclesUpgradeRecipes(event) {
 	}).id('mts:belroftmotors.keeper_sidestep')
 
 	event.shaped('mts:belroftmotors.adventure_sidestep', [
-		'A A',
-		'BBB',
+		'ABA',
 		'  C'
 	], {
 		A: '#forge:bolts/steel',

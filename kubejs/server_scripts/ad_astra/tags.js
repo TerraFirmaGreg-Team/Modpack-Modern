@@ -26,6 +26,7 @@ const registerAdAstraFluidTags = (event) => {
 	event.add('ad_astra:tier_1_rover_fuel', 'gtceu:cetane_boosted_diesel')
 	event.add('ad_astra:tier_1_rover_fuel', 'gtceu:gasoline')
 	event.add('ad_astra:tier_1_rover_fuel', 'gtceu:high_octane_gasoline')
+	event.add('ad_astra:tier_1_rover_fuel', 'tfg:universal_vehicle_fuel')
 
 	event.add('ad_astra:freezes_in_space', 'tfc:salt_water')
 	event.add('ad_astra:freezes_in_space', 'tfc:spring_water')

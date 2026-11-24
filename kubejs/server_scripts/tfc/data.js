@@ -58,6 +58,8 @@ const registerTFCFuels = (event) => {
 	event.fuel('gtceu:charcoal_dust', 1350, 600, 1.0)
 
 	event.fuel('minecraft:coal_block', 1415, 2200 * 9, 1.0)
+	event.fuel('gtceu:flawless_coal_gem', 1415, 1900 * 2, 1.0)
+	event.fuel('gtceu:exquisite_coal_gem', 1415, 1900 * 4, 1.0)
 
 	event.fuel('gtceu:coal_dust', 1415, 600, 0.85)
 	event.fuel('gtceu:small_coal_dust', 1415, 600 / 4, 0.85)

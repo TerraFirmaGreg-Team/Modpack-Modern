@@ -85,7 +85,13 @@ function registerImmersiveVehiclesItemTags(event) {
 		'mts:mtsofficialpack.merc230_police',
 		'mts:mtsofficialpack.merc230_police2',
 		'mts:mtsofficialpack.merc230_red',
-		'mts:mtsofficialpack.merc230_seagreen'
+		'mts:mtsofficialpack.merc230_seagreen',
+		'mts:mtsofficialpack.merc230_beige',
+		'mts:mtsofficialpack.merc230_green',
+		'mts:mtsofficialpack.merc230_olive',
+		'mts:mtsofficialpack.merc230_salmon',
+		'mts:mtsofficialpack.merc230_silver',
+		'mts:mtsofficialpack.merc230_yellow'
 	]);
 	event.add('mts:pzl37los', [
 		'mts:mtsofficialpack.pzl37los',
@@ -123,7 +129,9 @@ function registerImmersiveVehiclesItemTags(event) {
 		'mts:mtsofficialpack.scout_olive',
 		'mts:mtsofficialpack.scout_orange',
 		'mts:mtsofficialpack.scout_red',
-		'mts:mtsofficialpack.scout_seagreen'
+		'mts:mtsofficialpack.scout_seagreen',
+		'mts:mtsofficialpack.scout_american',
+		'mts:mtsofficialpack.scout_purple'
 	]);
 	event.add('mts:skyhawk', [
 		'mts:mtsofficialpack.skyhawk_green',
@@ -227,6 +235,13 @@ function registerImmersiveVehiclesItemTags(event) {
 		'mts:mtsofficialpack.watercannon',
 		'mts:mtsofficialpack.watercannon_proj',
 		'mts:mtsofficialpack.grilleornament_cowskull',
+		'mts:mtsofficialpack.basicbomb_hardpoint',
+		'mts:mtsofficialpack.bomblet_bombrack',
+		'mts:mtsofficialpack.double_bombrack',
+		'mts:mtsofficialpack.gunm1919',
+		'mts:mtsofficialpack.gunobserver',
+		'mts:mtsofficialpack.gunrocketpod',
+		'mts:mtsofficialpack.heavy_bombrack',
 		'mts:belroftmotors.boat_trailer',
 		'mts:belroftmotors.boat_trailer_tow_hitch',
 		'mts:belroftmotors.fifthwheel_brig',

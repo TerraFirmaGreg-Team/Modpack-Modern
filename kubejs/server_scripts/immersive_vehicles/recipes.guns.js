@@ -16,7 +16,7 @@ function registerImmersiveVehiclesGunsRecipes(event) {
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.watercannon_proj')
 		.itemInputs('gtceu:fluid_cell', '#tfg:rubber_rings')
 		.inputFluids(Fluid.of('minecraft:water', 4000))
-		.itemOutputs('mts:mtsofficialpack.watercannon_proj')
+		.itemOutputs('4x mts:mtsofficialpack.watercannon_proj')
 		.EUt(GTValues.VHA[GTValues.ULV])
 		.duration(100)
 
@@ -256,6 +256,12 @@ function registerImmersiveVehiclesGunsRecipes(event) {
 		.EUt(GTValues.VHA[GTValues.LV])
 		.circuit(11)
 		.duration(500)
+	event.recipes.gtceu.assembler('mts:mtsofficialpack.gunrocketpod')
+		.itemInputs('6x #forge:plates/steel', '6x #forge:rods/steel', '18x #forge:bolts/steel', '4x #forge:fine_wires/red_alloy')
+		.itemOutputs('mts:mtsofficialpack.gunrocketpod')
+		.EUt(GTValues.VHA[GTValues.LV])
+		.circuit(12)
+		.duration(200)
 	
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.bombletrack')
 		.itemInputs('8x #forge:plates/aluminium', '12x #forge:rods/aluminium', '36x #forge:bolts/aluminium', '12x #forge:fine_wires/red_alloy')

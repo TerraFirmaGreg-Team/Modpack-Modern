@@ -56,13 +56,24 @@ const registerWABRecipes = (event) => {
 		'endermanoverhaul:enderman_tooth'
 	]).id('tfg:shapeless/fearsome_horn')
 
+	event.shaped('wan_ancient_beasts:surfer_armor', [
+		'CCC',
+		'ABA',
+		'AAA'
+	], {
+		A: '#tfg:charnia',
+		B: 'minecraft:leather_horse_armor',
+		C: '#forge:double_plates/wrought_iron'
+	}).id('tfg:shaped/surfer_armor')
+
 	event.shaped('wan_ancient_beasts:white_charger_armor', [
+		'AAA',
 		'ABA',
 		'CCC'
 	], {
-		A: 'firmaciv:rope_coil',
+		A: '#tfg:charnia',
 		B: 'minecraft:leather_horse_armor',
-		C: '#forge:double_plates/steel'
+		C: '#forge:double_plates/wrought_iron'
 	}).id('tfg:shaped/white_charger_armor')
 
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {

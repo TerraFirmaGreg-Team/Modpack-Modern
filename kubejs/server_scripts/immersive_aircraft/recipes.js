@@ -30,6 +30,12 @@ function registerImmersiveAircraftRecipes(event) {
 		E: 'create:andesite_casing'
 	}).id('tfg:immersive_aircraft/shaped/engine');
 
+	event.recipes.gtceu.assembler('tfg:immersive_aircraft/assembler/engine')
+		.itemInputs('gtceu:tin_alloy_small_fluid_pipe', 'create:andesite_casing', '2x #tfg:metal_bars')
+		.itemOutputs('immersive_aircraft:engine')
+		.duration(5 * 20)
+		.EUt(GTValues.VA[GTValues.LV])
+
 	event.shaped('immersive_aircraft:sail', [
 		'ABA',
 		'BCB',
@@ -91,14 +97,9 @@ function registerImmersiveAircraftRecipes(event) {
 	TFGHelpers.registerMaterialInfo('immersive_aircraft:airship', [GTMaterials.WroughtIron, 6])
 	TFGHelpers.registerMaterialInfo('immersive_aircraft:cargo_airship', [GTMaterials.WroughtIron, 8])
 
-	if (!Platform.isLoaded("immersive_aircraft"))
+	// TODO: NEGATE THIS WHEN IA IS REMOVED
+	if (Platform.isLoaded("immersive_aircraft"))
 		return;
-
-	event.recipes.gtceu.assembler('tfg:immersive_aircraft/assembler/engine')
-		.itemInputs('gtceu:tin_alloy_small_fluid_pipe', 'create:andesite_casing', '2x #tfg:metal_bars')
-		.itemOutputs('immersive_aircraft:engine')
-		.duration(5 * 20)
-		.EUt(GTValues.VA[GTValues.LV])
 
 	event.shaped('immersive_aircraft:rotary_cannon', [
 		'ABA',
