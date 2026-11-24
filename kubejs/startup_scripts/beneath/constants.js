@@ -16,7 +16,7 @@ global.BENEATH_WOOD_STRUCT = ([
             [global.woodStructHelpers.resLocFormat("minecraft", "{0}", "nether_wart_block")],
             [null],
             [global.woodStructHelpers.resLocFormat("tfg", "saplings/{0}", "crimson")],
-            global.woodStructHelpers.tfcTwigArray("beneath", "crimson", 1), 
+            global.woodStructHelpers.arrayAll(global.woodStructHelper.tfcTreeTwig("beneath", "crimson"), 1), 
             global.woodStructHelpers.arrayAll("crimsine", 1),
             global.woodStructHelpers.arrayAll("ad_astra:mars", 1)), //TODO: Crimsine can only be obtained via tapping, refactor to allow this
         lumber: 'beneath:wood/lumber/crimson', plank: 'beneath:wood/planks/crimson', 
@@ -48,7 +48,7 @@ global.BENEATH_WOOD_STRUCT = ([
             [global.woodStructHelpers.resLocFormat("minecraft", "{0}", "warped_wart_block")],
             [null],
             [global.woodStructHelpers.resLocFormat("tfg", "saplings/{0}", "warped")],
-            global.woodStructHelpers.tfcTwigArray("beneath", "warped", 1), 
+            global.woodStructHelpers.arrayAll(global.woodStructHelper.tfcTreeTwig("beneath", "warped"), 1), 
             global.woodStructHelpers.arrayAll("warpane", 1),
             global.woodStructHelpers.arrayAll("ad_astra:mars", 1)), //TODO: Crimsine can only be obtained via tapping, refactor to allow this
         lumber: 'beneath:wood/lumber/warped', plank: 'beneath:wood/planks/warped', 
