@@ -18,7 +18,7 @@
 		{
 			alpha: 150
 			height: 3.5d
-			image: "minecraft:textures/particle/big_smoke_2.png"
+			image: "steampowered:textures/particle/steam_2.png"
 			rotation: 0.0d
 			width: 7.0d
 			x: 11.5d
@@ -27,7 +27,7 @@
 		{
 			alpha: 150
 			height: 3.0d
-			image: "minecraft:textures/particle/big_smoke_4.png"
+			image: "steampowered:textures/particle/steam_0.png"
 			rotation: 0.0d
 			width: 7.0d
 			x: -1.5d
@@ -256,7 +256,7 @@
 		{
 			alpha: 150
 			height: 3.5d
-			image: "minecraft:textures/particle/big_smoke_3.png"
+			image: "steampowered:textures/particle/steam_3.png"
 			rotation: 0.0d
 			width: 7.0d
 			x: 3.5d
@@ -805,7 +805,7 @@
 		{
 			alpha: 150
 			height: 3.0d
-			image: "minecraft:textures/particle/big_smoke_4.png"
+			image: "steampowered:textures/particle/steam_0.png"
 			rotation: 0.0d
 			width: 7.0d
 			x: 14.0d
@@ -814,7 +814,7 @@
 		{
 			alpha: 150
 			height: 3.0d
-			image: "minecraft:textures/particle/big_smoke_4.png"
+			image: "steampowered:textures/particle/steam_1.png"
 			rotation: 0.0d
 			width: 7.0d
 			x: 26.5d
@@ -823,7 +823,7 @@
 		{
 			alpha: 150
 			height: 3.5d
-			image: "minecraft:textures/particle/big_smoke_2.png"
+			image: "steampowered:textures/particle/steam_1.png"
 			rotation: 0.0d
 			width: 7.0d
 			x: 17.0d
@@ -832,7 +832,7 @@
 		{
 			alpha: 150
 			height: 3.5d
-			image: "minecraft:textures/particle/big_smoke_3.png"
+			image: "steampowered:textures/particle/steam_0.png"
 			rotation: 0.0d
 			width: 7.0d
 			x: 22.5d
@@ -841,7 +841,7 @@
 		{
 			alpha: 150
 			height: 3.5d
-			image: "minecraft:textures/particle/big_smoke_2.png"
+			image: "steampowered:textures/particle/steam_3.png"
 			rotation: 0.0d
 			width: 7.0d
 			x: 22.5d
@@ -918,7 +918,7 @@
 		{
 			alpha: 150
 			height: 3.5d
-			image: "minecraft:textures/particle/big_smoke_2.png"
+			image: "steampowered:textures/particle/steam_2.png"
 			rotation: 0.0d
 			width: 7.0d
 			x: 29.5d
@@ -927,7 +927,7 @@
 		{
 			alpha: 150
 			height: 3.5d
-			image: "minecraft:textures/particle/big_smoke_3.png"
+			image: "steampowered:textures/particle/steam_3.png"
 			rotation: 0.0d
 			width: 7.0d
 			x: 33.0d
