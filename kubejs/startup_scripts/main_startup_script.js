@@ -174,6 +174,30 @@ global.woodStructHelpers =
             return result;
         }
     },
+    logDataNamespaceFormat: function(woodFormatsWithNamespaces, woodName, count)
+    {
+        let logData = 
+        {
+            log: woodFormatsWithNamespaces[0] ? global.stringFormat(woodFormatsWithNamespaces[0], woodName) : null,
+            stripped_log: woodFormatsWithNamespaces[1] ? global.stringFormat(woodFormatsWithNamespaces[1], woodName) : null,
+            wood: woodFormatsWithNamespaces[2] ? global.stringFormat(woodFormatsWithNamespaces[2], woodName) : null,
+            stripped_wood: woodFormatsWithNamespaces[3] ? global.stringFormat(woodFormatsWithNamespaces[3], woodName) : null,
+        };
+
+        if(count == 1)
+        {
+            return logData;
+        }
+        else
+        {
+            let result = [];
+            for(let index = 0; index < count; index++)
+            {
+                result.push(logData);
+            }
+            return result;
+        }
+    },
     treeData2: function(arrayLen, nameSpaces, treeNames, logDatas, leafBlocks, fallenLeafBlocks, saplings, twigs, tapperOutputs, dimensions)
     {
         let result = [];

@@ -49,8 +49,18 @@ ServerEvents.customCommand('verify_woodstruct_data', evt =>
         
         //This step checks if the woodType has the necessary properties.
         let keys = Object.keys(woodType);
-        verifyPropertyIntegrity(messageData, keys);
-        verifyPropertyValues(messageData, woodType);
+        verifyPropertyIntegrity(messageData, keys, Object.keys(global.WOOD_STRUCT_NONE), (msgType, msgData, value) =>
+        {
+            if(msgType === "MALFORMED")
+            {
+                msgData.warnings.push(`Property ${value} doesnt match the required property names, it's either malformed or it straight up doesnt exist!`);
+            }
+            else if(msgType === "MISSING")
+            {
+                msgData.warnings.push(`This wood entry is not providing a property with name ${value}! Said property is required.`);
+            }
+        });
+        verifyWoodStructPropertyValues(messageData, woodType);
 
         if(messageData.warnings.length > 0 || messageData.errors.length > 0)
         {
@@ -64,34 +74,29 @@ ServerEvents.customCommand('verify_woodstruct_data', evt =>
         }
     }
 
-    function verifyPropertyIntegrity(messageData, keys)
+    function verifyPropertyIntegrity(messageData, keysToVerify, templateKeys, msgHandler)
     {
-        let goodKeys = Object.keys(global.WOOD_STRUCT_NONE);
-
-        //First, iterate thru the wood struct's key, check if its in the "None" struct. If it isnt, it means that the wood struct doesnt define a required property
-        keys.forEach(key =>
+        keysToVerify.forEach(key =>
         {
-            if(goodKeys.includes(key))
+            if(templateKeys.includes(key))
             {
-                goodKeys.splice(goodKeys.indexOf(key), 1);
+                templateKeys.splice(templateKeys.indexOf(key), 1);
                 return;
             }
 
-            //This key either isnt supported or its malformed
-            messageData.warnings.push(`Property ${key} doesnt match the required property names, it's either malformed or it straight up doesnt exist!`);
-        })
+            msgHandler("MALFORMED", messageData, key);
+        });
 
-        //Second, if there are keys from the "None" struct left, write them down, it means that 
-        if(goodKeys.length > 0)
+        if(templateKeys.length > 0)
         {
-            goodKeys.forEach(missingKey =>
+            templateKeys.forEach(missingKey =>
             {
-                messageData.warnings.push(`This wood entry is not providing a property with name ${missingKey}! Said property is required.`);
+                msgHandler("MISSING", messageData, missingKey);
             });
         }
     }
 
-    function verifyPropertyValues(messageData, woodType)
+    function verifyWoodStructPropertyValues(messageData, woodType)
     {
         const propertyKeyFunctionMap = new Map();
         propertyKeyFunctionMap.set("logsTag", verifyLogsTag);
@@ -111,7 +116,7 @@ ServerEvents.customCommand('verify_woodstruct_data', evt =>
             //Dont check property if its not a registry object.
             if(nonNullProperties.includes(key))
             {
-                if(value === null || value === undefined)
+                if(isNullOrUndefined(value))
                 {
                     messageData.warnings.push(`${key} cannot have a null/undefined value!`);
                 }
@@ -127,61 +132,164 @@ ServerEvents.customCommand('verify_woodstruct_data', evt =>
             const functionHandlerForKey = propertyKeyFunctionMap.get(key);
             if(functionHandlerForKey)
             {
-                functionHandlerForKey(value);
+                functionHandlerForKey(key, value);
                 return;
             }
 
-            let resourceLocation = ResourceLocation.tryParse(value);
-            if(resourceLocation == null)
+            if(!verifyItemExists(value))
             {
-                messageData.errors.push(`${key} is a Resource Location property but it failed to parse!`);
-                return;
-            }
-            //Registry Check, most if not all of these have item values.
-            if(!ForgeRegistries.ITEMS.containsKey(resourceLocation))
-            {
-                messageData.errors.push(`${key}'s ResourceLocation value is not in the ForgeRegistries Items! (${value})`);
+                messageData.errors.push(`${key} is a Resource Location Property but it either failed to parse or does not point to a real item in the Forge Registries.`);
                 return;
             }
         });
 
-        function verifyLogsTag(value)
+        function verifyItemExists(resLocString)
         {
+            let resourceLocation = ResourceLocation.tryParse(resLocString);
+            if(resourceLocation === null)
+            {
+                return false;
+            }
 
+            if(!Item.exists(resourceLocation))
+            {
+                return false;
+            }
+            return true;
         }
-        function verifyTreeData(value)
-        {
+        function isNullOrUndefined(obj) { return isNull(obj) || isUndefined(obj) }
+        function isNull(obj) { return obj === null; }
+        function isUndefined(obj) {return obj === undefined; }
 
-        }
-        function verifyRnRData(value)
+        function verifyLogsTag(key, value)
         {
-
-        }
-        function verifyAstikorData(value)
-        {
-
-        }
-        function verifyRailwaysData(value)
-        {
-
-        }
-        function verifyMacawData(value)
-        {
-
-        }
-        function verifyTFCData(value)
-        {
-
-        }
-        function verifyFirmalifeData(value)
-        {
-
-        }
-        function verifyWoodKind(value)
-        {
-            if(!value)
+            return;
+            if(isNullOrUndefined(value))
+            {
+                messageData.warnings.push(`${key}'s value is null or undefined!`);
                 return;
+            }
 
+            let resourceLocation = ResourceLocation.tryParse(value);
+            if(resourceLocation === null)
+            {
+                messageData.errors.push(`${key} has a ResourceLocation that failed to parse! (${value})`);
+            }
+        }
+        function verifyTreeData(key, value)
+        {
+            if(isUndefined(value))
+            {
+                messageData.warnings.push(`${key}'s value is undefined!`)
+                return;
+            }
+
+            if(!Array.isArray(value))
+            {
+                messageData.warnings.push(`${key}'s value is not an array!`);
+                return;
+            }
+
+            for (let index = 0; index < value.length; index++) {
+                let treeData = value[index];
+                verifyPropertyIntegrity(messageData, Object.keys(treeData), Object.keys(global.woodStructHelpers.treeData2(1, [null], [null], [null], [null], [null], [null], [null], [null], [null])[0]), (msgType, msgData, value) =>
+                {
+                    if(msgType === "MALFORMED")
+                    {
+                        msgData.warnings.push(`Property ${value} at index ${index} of tree_data doesnt match the required tree_data property names, it's either malformed or it straight up doesnt exist!`);
+                    }
+                    else if(msgType === "MISSING")
+                    {
+                        msgData.warnings.push(`Tree data entry at index ${index} is not providing a property with name ${value}! Said property is required.`);
+                    }
+                });
+
+                let keyValuePairs = Object.entries(treeData);
+                let nonNullProperties = ["tree_name", "nameSpace"]
+                keyValuePairs.forEach(([key, value]) =>
+                {
+                    if(key === "tapper_output")
+                        return;
+
+                    if(nonNullProperties.includes(key))
+                    {
+                        if(isNullOrUndefined(value))
+                        {
+                            messageData.warnings.push(`TreeData: ${key} cannot have a null/undefined value!`);
+                        }
+                        return;
+                    }
+
+                    if(key === "log_data")
+                    {
+                        console.error(value);
+                        let logItems = [value.log, value.stripped_log, value.wood, value.stripped_wood];
+                        
+                        if(logItems.some(isUndefined))
+                        {
+                            messageData.errors.push(`LogData: ${key}'s log data has a property thats undefined! (${value})`);
+                        }
+
+                        logItems.forEach(logItem =>
+                        {
+                            if(isNullOrUndefined(logItem))
+                                return;
+
+                            if(!verifyItemExists(logItem))
+                            {
+                                messageData.errors.push(`LogData: ${logItem} is a ResourceLocation but it either failed to parse or does not point to a real item in the Forge Registries.`);
+                            }
+                        })
+                        return;
+                    }
+                    
+                    if(isNull(value))
+                        return;
+
+                    if(key === "dimension")
+                    {
+                        let resourceLocation = ResourceLocation.tryParse(value);
+                        if(resourceLocation === null)
+                        {
+                            messageData.errors.push(`TreeData: ${key} has a ResourceLocation that failed to parse! (${value})`);
+                        }
+                        //I'd like to check the registry, but idk where that is.
+                        return;
+                    }
+
+                    if(!verifyItemExists(value))
+                    {
+                        messageData.errors.push(`LogData: ${key} is a ResourceLocation but it either failed to parse or does not point to a real item in the Forge Registries. (${value})`)
+                    }
+                });
+            }
+        }
+        function verifyRnRData(key, value)
+        {
+            
+        }
+        function verifyAstikorData(key, value)
+        {
+
+        }
+        function verifyRailwaysData(key, value)
+        {
+
+        }
+        function verifyMacawData(key, value)
+        {
+
+        }
+        function verifyTFCData(key, value)
+        {
+
+        }
+        function verifyFirmalifeData(key, value)
+        {
+
+        }
+        function verifyWoodKind(key, value)
+        {
             if(value != global.WOOD_KIND.HARD && value != global.WOOD_KIND.SOFT && value != global.WOOD_KIND.NONE)
             {
                 messageData.errors.push(`WoodKind value is outside valid values. (${value}) Check WOOD_KIND for valid values.`);

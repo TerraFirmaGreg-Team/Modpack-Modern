@@ -136,7 +136,7 @@ global.AD_ASTRA_WOOD_STRUCT = ([
 		tree_data: global.woodStructHelpers.treeData2(1,
 			["ad_astra"],
 			["glacian"],
-			[global.woodStructHelpers.logDataFormat("ad_astra", ["{0}_log", "stripped_{0}_log", "{0}_wood", "stripped_{0}_wood"], "glacian", 1)],
+			[global.woodStructHelpers.logDataNamespaceFormat(["ad_astra:{0}_log", "ad_astra:stripped_{0}_log", "tfg:{0}_wood", "tfg:{0}_wood_stripped"], "glacian", 1)],
 			["species:alphacene_moss_block"],
 			[null],
 			[global.woodStructHelpers.resLocFormat("tfg", "saplings/{0}", "glacian")],
