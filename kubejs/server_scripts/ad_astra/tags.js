@@ -91,10 +91,26 @@ const registerAdAstraItemTags = (event) => {
 			event.add('minecraft:logs_that_burn', wood.stripped_log)
 		}
 
-		if (wood.isHardwood === true) {
-			event.add('tfg:hardwood', wood.logs)
-		} else {
-			event.add('tfg:softwood', wood.logs)
+		if(wood.woodKind != "NONE")
+		{
+			var woodTag = null;
+			var strippedLogTag = null;
+			if(wood.woodKind == "HARD")
+			{
+				woodTag = "tfg:hardwood";
+				strippedLogTag = "tfg:stripped_hardwood";
+			}
+			else if(wood.woodKind == "SOFT")
+			{
+				woodTag = "tfg:softwood";
+				strippedLogTag = "tfg:stripped_softwood";
+			}
+
+			event.add(woodTag, wood.logs);
+			if(wood.stripped_log)
+			{
+				event.add(strippedLogTag, wood.stripped_log);
+			}
 		}
 	})
 }

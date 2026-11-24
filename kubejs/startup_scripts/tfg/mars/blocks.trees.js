@@ -109,16 +109,19 @@ function registerTFGMarsTrees(event) {
 			stripped.soundType('wood')
 		})
 
+	//We don't want these as items since these blocks are only used on worldgen, they drop their ad-astra equivalent
 	event.create('tfg:glacian_log', 'tfc:log')
 		.tagBoth('minecraft:logs')
 		.tagBoth('c:hidden_from_recipe_viewers')
 		.soundType('wood')
 		.mapColor('ice')
+		.noItem()
 		.stripped(stripped => {
 			stripped.tagBoth('minecraft:logs')
 			stripped.tagBoth('c:hidden_from_recipe_viewers')
 			stripped.soundType('wood')
-		})
+			stripped.noItem();
+		});
 
 	// Mars leaves
 
