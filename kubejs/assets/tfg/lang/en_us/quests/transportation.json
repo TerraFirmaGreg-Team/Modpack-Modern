@@ -14,6 +14,9 @@
 	"quests.tfg_tips.reinforced_glider.subtitle": "Light as a feather!",
 	"quests.tfg_tips.reinforced_glider.desc": "A &dReinforced Hang Glider&r is the improved version of a &aHang Glider&r. With an upgraded &aSteel&r frame and a fabric made of either &aReinforced Fabric&r or &aLightweight Cloth&r, you can now soar through the skies at &cdouble the speed&r!\nIt also has &cmore durability&r than the normal hang glider, and can be &crepaired&r in a similar way.\n\n&3Pro tip:&r\nUsing either &aSilk Cloth&r or &aPhantom Silk&r obtained in &4The Beneath&r reduces the fabric cost by &e2/3rds&r for both crafting and repairing!",
 
+	"quests.transport.elytra.subtitle": "No End required!",
+	"quests.transport.elytra.desc": "The Elytra works the same way as it does in vanilla. The only real difference is that you can easily repair it.",
+
 	"quests.tfg_tips.warfare.title": "Sea Warfare",
 	"quests.tfg_tips.warfare.subtitle": "FIRE ALL CANNONS!",
 	"quests.tfg_tips.warfare.desc": "You can outfit your &bSloop&r with firepower via the &dCannon&r and cannon balls, in case you want to blow something to smithereens.\nTo fire a cannon, you'll need to load it with some &aGunpowder&r, &aUnrefined Paper&r and your &aCannon Ball&r. Then light the wick with &cFlint and Steel.&r\n\nDon't have a &bSloop&r? Don't worry! Cannons can be placed and fired on the ground the same way you would fire one on a &bSloop&r.",
@@ -55,7 +58,7 @@
 
 	"quests.tfg_tips.equines.title": "Horse Riding",
 	"quests.tfg_tips.equines.subtitle": "Stallion of the Cimarron",
-	"quests.tfg_tips.equines.desc": "Find yourself either a &bHorse&r, &bDonkey&r, or &bCamel&r and build up enough &afamiliarity&r to let them ride you with your trusty &aSaddle&r, knapped from leather.\nIn addition, they can pull &dCarts&r without speed penalties!\n\n&bHorses&r are great for exploring the interior of continents effortlessly in the early game, and can be bred for better stats.\n\n&bDonkeys&r and &bMules&r can carry an extra chest or even a barrel without a &2Supply Cart&r, while &bCamels&r can carry two players, walk faster on sand, and have a long jump.\n\nAs always, more information (such as spawning conditions) is in the &2Field Guide.&r\n\n&3&lTip:&r&o Want to horse-ride on a different continent across the ocean? Don't worry, you can bring along your trusty ride on certain boats!",
+	"quests.tfg_tips.equines.desc": "Find yourself either a &bHorse&r, &bDonkey&r, or &bCamel&r and build up enough &afamiliarity&r to let you ride them with your trusty &aSaddle&r, knapped from leather.\nIn addition, they can pull &dCarts&r without speed penalties!\n\n&bHorses&r are great for exploring the interior of continents effortlessly in the early game, and can be bred for better stats.\n\n&bDonkeys&r and &bMules&r can carry an extra chest or even a barrel without a &2Supply Cart&r, while &bCamels&r can carry two players, walk faster on sand, and have a long jump.\n\nAs always, more information (such as spawning conditions) is in the &2Field Guide.&r\n\n&3&lTip:&r&o Want to horse-ride on a different continent across the ocean? Don't worry, you can bring along your trusty ride on certain boats!",
 
 	"quests.tfg_tips.supply_cart.title": "Supply Cart",
 	"quests.tfg_tips.supply_cart.subtitle": "Carry All",

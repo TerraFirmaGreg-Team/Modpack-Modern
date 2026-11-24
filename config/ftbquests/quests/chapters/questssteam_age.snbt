@@ -44,6 +44,26 @@
 			x: -11.5d
 			y: 8.0d
 		}
+		{
+			id: "7A198EDAF18C88BF"
+			linked_quest: "3BE985DAF516E42D"
+			shape: "gear"
+			size: 1.5d
+			x: -19.5d
+			y: 19.0d
+		}
+		{
+			id: "5C0CFC07AEA237F4"
+			linked_quest: "12000ED8E9172390"
+			x: -21.0d
+			y: 19.0d
+		}
+		{
+			id: "4A4FE5F9D4B53A46"
+			linked_quest: "3C452F4E743E06B2"
+			x: -18.0d
+			y: 19.0d
+		}
 	]
 	quests: [
 		{
@@ -91,7 +111,7 @@
 			}]
 			title: "{quests.steam_age.crushing_wheel.title}"
 			x: -20.5d
-			y: 12.5d
+			y: 16.5d
 		}
 		{
 			dependencies: [
@@ -217,7 +237,7 @@
 			}]
 			title: "{quests.steam_age.mech_crafter.title}"
 			x: -19.5d
-			y: 12.5d
+			y: 17.0d
 		}
 		{
 			dependencies: ["46FA9DD4755A5548"]
@@ -462,8 +482,8 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.centrifuge.title}"
-			x: -19.5d
-			y: 11.5d
+			x: -20.5d
+			y: 17.5d
 		}
 		{
 			dependencies: [
@@ -901,7 +921,7 @@
 			}]
 			title: "{quests.steam_age.packager.title}"
 			x: -19.5d
-			y: 17.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["2C35D4E01AEC02AA"]
@@ -1305,7 +1325,7 @@
 			}]
 			title: "{quests.tfg_tips.transportation_tips.rnr_plow.title}"
 			x: -18.5d
-			y: 12.5d
+			y: 17.0d
 		}
 		{
 			dependencies: [

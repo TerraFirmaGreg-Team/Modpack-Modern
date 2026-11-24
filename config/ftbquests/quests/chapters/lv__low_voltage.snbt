@@ -72,6 +72,14 @@
 			x: 1.5d
 			y: 13.0d
 		}
+		{
+			id: "1D20A82AC5FA2765"
+			linked_quest: "5BD8697CD77C4FC1"
+			shape: "heart"
+			size: 1.5d
+			x: 1.0d
+			y: 10.0d
+		}
 	]
 	quests: [
 		{

@@ -1524,10 +1524,14 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["5903C9AE3493EEED"]
+			dependencies: [
+				"5903C9AE3493EEED"
+				"63CD0236B337EAAD"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.transport.workshop.desc}"]
 			disable_toast: true
-			icon: "tfg:lv_universal_circuit"
+			icon: "tfg:automotive_workshop"
 			id: "5BD8697CD77C4FC1"
 			shape: "octagon"
 			size: 1.5d
@@ -1746,7 +1750,11 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["5903C9AE3493EEED"]
+			dependencies: [
+				"5903C9AE3493EEED"
+				"5917B0D4708BF534"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.transport.immersive_vehicles.desc}"]
 			guide_page: "tfg:field_guide tfg:logistics/vehicles"
 			icon: "mts:automotives.ratchet"
@@ -2596,7 +2604,7 @@
 			}]
 			title: "{quests.space_survival.soarer.title}"
 			x: 26.5d
-			y: -8.0d
+			y: -12.5d
 		}
 		{
 			dependencies: ["1065E6CE51C7F883"]
@@ -2849,6 +2857,25 @@
 			title: "{quests.combat_tips.luv_main.title}"
 			x: 34.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["5BD8697CD77C4FC1"]
+			description: ["{quests.transport.elytra.desc}"]
+			id: "0E71373824D3A875"
+			subtitle: "{quests.transport.elytra.subtitle}"
+			tasks: [{
+				id: "65E3D922B7EFFD21"
+				item: {
+					Count: 1
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 13.0d
+			y: -8.0d
 		}
 	]
 	subtitle: ["{quests.transport.subtitle}"]

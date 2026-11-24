@@ -704,42 +704,18 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Элитра, elytra
+	//#region elytra
 
-	event.recipes.gtceu.assembler('tfg:minecraft/elytra')
-		.itemInputs('16x tfg:polycaprolactam_fabric', '16x #forge:foils/aluminium', '8x tfg:phantom_silk', '4x #forge:rings/aluminium', '2x #forge:rods/long/vanadium_steel', '2x #forge:small_springs/aluminium', '1x #forge:small_gears/aluminium')
-		.circuit(4)
-		.itemOutputs(Item.of('minecraft:elytra', "{Damage:0}"))
-		.duration(1600)
-		.EUt(420)
-
-	event.recipes.gtceu.assembler('tfg:minecraft/elytra2')
-		.itemInputs('16x tfg:polycaprolactam_fabric', '16x #forge:foils/aluminium', '8x #forge:plates/ender_pearl', '4x #forge:rings/aluminium', '2x #forge:rods/long/vanadium_steel', '2x #forge:small_springs/aluminium', '1x #forge:small_gears/aluminium')
-		.circuit(4)
-		.itemOutputs(Item.of('minecraft:elytra', "{Damage:0}"))
-		.duration(1600)
-		.EUt(420)
-
-	event.recipes.gtceu.assembler('tfg:minecraft/elytra_repairing')
-		.itemInputs('6x tfg:polycaprolactam_fabric', 'minecraft:elytra')
-		.circuit(4)
-		.itemOutputs(Item.of('minecraft:elytra', "{Damage:0}"))
-		.duration(800)
-		.EUt(120)
-
-	event.recipes.gtceu.arc_furnace('tfg:minecraft/arc_furnace/recycling/elytra')
-		.itemInputs(Item.of('minecraft:elytra', '{Damage:0}').strongNBT())
-		.itemOutputs('4x gtceu:aluminium_ingot', '4x gtceu:tiny_ash_dust')
-		.duration(224)
-		.EUt(GTValues.VA[GTValues.LV])
-		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-
-	event.recipes.gtceu.macerator('tfg:minecraft/macerator/recycling/elytra')
-		.itemInputs(Item.of('minecraft:elytra', '{Damage:0}').strongNBT())
-		.itemOutputs('4x gtceu:aluminium_dust', '4x gtceu:polycaprolactam_dust')
-		.duration(224)
-		.EUt(GTValues.VA[GTValues.ULV])
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
+	event.shaped('minecraft:elytra', [
+		'DAD',
+		'ABA',
+		'DCD'
+	], {
+		A: ['tfg:polycaprolactam_fabric', 'tfg:phantom_silk'],
+		B: 'hangglider:reinforced_hang_glider',
+		C: '#forge:rods/long/aluminium',
+		D: '#forge:foils/aluminium'
+	}).id('tfg:shaped/elytra')
 
 	//#endregion
 

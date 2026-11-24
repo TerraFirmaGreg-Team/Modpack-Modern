@@ -123,6 +123,7 @@ function registerTFGRepairRecipes(event) {
 	const SPECIAL_TAG_REPAIRS = [
 		{ item: "hangglider:hang_glider", tag: "forge:cloth" },
 		{ item: "hangglider:reinforced_hang_glider", tag: "tfg:lightweight_cloth" },
+		{ item: "minecraft:elytra", tag: "tfg:lightweight_cloth" },
 		{ item: "minecraft:bow", tag: "forge:string" }
 	]
 
