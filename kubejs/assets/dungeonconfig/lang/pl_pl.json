@@ -7,6 +7,7 @@
 	"dungeonconfig.config.category.appearance": "Wygląd",
 	"dungeonconfig.config.option.titleScreenButton": "Przycisk w menu głównym",
 	"dungeonconfig.config.option.menuBackground": "Tło menu",
+	"dungeonconfig.config.option.menuBackground.desc": "Obraz, animowany GIF lub film w tle menu: podaj plik z %s/bg, link lub pozostaw puste, aby losować z tego folderu. Ustaw none, aby wyłączyć. Filmy wymagają FFmpeg zainstalowanego w systemie lub umieszczonego w config/dungeonconfig/bin.",
 	"dungeonconfig.config.option.menuBackgroundBlurPercent": "Rozmycie tła",
 	"dungeonconfig.config.option.menuBackgroundBlurPercent.desc": "Jak mocno rozmyte jest tło menu, aby menu było czytelne. 0 oznacza brak rozmycia.",
 	"dungeonconfig.config.option.menuBackgroundDimPercent": "Przyciemnienie tła",
@@ -50,6 +51,7 @@
 	"dungeonconfig.screen.key.backspace": "Backspace",
 	"dungeonconfig.screen.unsaved": "Niezapisane zmiany",
 	"dungeonconfig.screen.saved": "Ustawienia zapisane",
+	"dungeonconfig.screen.save_failed": "Nie można zapisać ustawień, zobacz dziennik",
 	"dungeonconfig.screen.confirm.title": "Niezapisane zmiany",
 	"dungeonconfig.screen.confirm.body": "Niektóre ustawienia zostały zmienione od ostatniego zapisu. Co chcesz zrobić?",
 	"dungeonconfig.screen.confirm.save": "Zapisz i wyjdź",
@@ -70,5 +72,7 @@
 	"dungeonconfig.screen.restart.title": "Wymagane ponowne uruchomienie",
 	"dungeonconfig.screen.restart.ok": "Zrozumiano",
 	"dungeonconfig.screen.restart.pending.world": "Zapisano. Zadziała po ponownym dołączeniu do świata.",
-	"dungeonconfig.screen.restart.pending.game": "Zapisano. Zadziała po ponownym uruchomieniu gry."
+	"dungeonconfig.screen.restart.pending.game": "Zapisano. Zadziała po ponownym uruchomieniu gry.",
+	"dungeonconfig.screen.restart.needs.world": "Zmiany zadziałają po ponownym dołączeniu do świata.",
+	"dungeonconfig.screen.restart.needs.game": "Zmiany zadziałają po ponownym uruchomieniu gry."
 }

@@ -1,4 +1,6 @@
 {
+	"block.tfg.storage_provider": "Dostawca magazynu ME",
+	"item.tfg.cable_storage_provider": "Dostawca magazynu ME",
 	"item.tfg.order_terminal": "Terminal ME do zamówień",
 	"item.tfg.wireless_order_terminal": "Bezprzewodowy terminal do zamówień",
 	"key.ae2.wireless_order_terminal": "Otwórz bezprzewodowy terminal do zamówień",
@@ -6,6 +8,7 @@
 	"gui.tfg.order_terminal.confirm": "Potwierdź",
 	"gui.tfg.order_terminal.craft": "Wytwórz",
 	"gui.tfg.order_terminal.more": "...i jeszcze %s",
+	"gui.tfg.order_terminal.no_destinations": "Brak dostawców magazynu",
 	"gui.tfg.order_terminal.return": "Zwróć oczekujące elementy do sieci i anuluj wytwarzanie",
 	"gui.tfg.order_terminal.search_destinations": "Szukaj celów",
 	"gui.tfg.order_terminal.send": "Wyślij",

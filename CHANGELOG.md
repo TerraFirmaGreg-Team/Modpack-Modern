@@ -13,6 +13,7 @@
 - Removed battery alloy from TFC heating (#5334) @Pyritie
 - Added some proper trades for the wandering trader if you turn him on via `/gamerule doTraderSpawning`. He is still off by default. @Pyritie
 - Spring water no longer heals on Hard difficulty @Pyritie
+- Added some more plants to the medicine tags @Pyritie
 ### Bug fixes
 - Fixed Create Deco's shipping containers voiding/duping items @Pyritie
 - Fixed firmalife bees never getting diseases @Zippity
@@ -34,6 +35,8 @@
 - Made a performance improvement to oceans.
 - Fixed a bug with stick drops from double crops.
 - Backported a number of minor fixes to entities, worldgen, and plant behavior.
+#### No Crash Reports
+- Was unfortunately taken down from CurseForge by Microsoft.
 
 ## [0.13.18] - 07-11-2026
 #### CC-Tweaked

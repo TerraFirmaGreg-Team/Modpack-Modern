@@ -42,5 +42,8 @@
 	"key.ae2.wireless_pattern_access_terminal": "Open Wireless Pattern Access Terminal",
 	"key.ae2.wireless_pattern_encoding_terminal": "Open Wireless Pattern Encoding Terminal",
 	"text.autoconfig.de/mari_023/ae2wtlib.option.magnetCardRange": "Magnet Card Range",
-	"text.autoconfig.de/mari_023/ae2wtlib.title": "AE2 Wireless Terminals"
+	"text.autoconfig.de/mari_023/ae2wtlib.title": "AE2 Wireless Terminals",
+	"gui.ae2wtlib.current_terminal": "Current Terminal: %s",
+	"item.ae2wtlib.wireless_filter_terminal": "Wireless Filter Terminal",
+	"key.ae2.wireless_filter_terminal": "Open Wireless Filter Terminal"
 }

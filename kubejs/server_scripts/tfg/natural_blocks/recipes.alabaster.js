@@ -108,4 +108,65 @@ function registerTFGAlabasterRecipes(event) {
 			.EUt(7)
 			.category(GTRecipeCategories.CHEM_DYES)
 	}
-}
+
+	//Polished Alabaster Shapeless
+
+  global.MINECRAFT_DYE_NAMES.forEach(color => 
+	{event.recipes.tfc.damage_inputs_shapeless_crafting
+		(event.shapeless(`tfc:alabaster/polished/${color}`, [`tfc:alabaster/raw/${color}`, '#tfc:chisels']))
+		.id(`tfg:shapeless/polished_alabaster_${color}`)
+     });
+
+	event.recipes.tfc.damage_inputs_shapeless_crafting(
+        event.shapeless('tfc:alabaster/polished', ['tfc:alabaster/raw', '#tfc:chisels']))
+		.id('tfg:shapeless/polished_alabaster_shapeless');
+
+	//Polished Alabaster Sandpaper
+
+   event.recipes.create.sandpaper_polishing('tfc:alabaster/polished', 'tfc:alabaster/raw')
+    .id('tfg:polishing/polished_alabaster');
+
+	global.MINECRAFT_DYE_NAMES.forEach(color =>
+event.recipes.create.sandpaper_polishing(`tfc:alabaster/polished/${color}`, `tfc:alabaster/raw/${color}`)
+    .id(`tfg:polishing/polished_alabaster_${color}`));
+
+	//Polished Alabaster GT
+
+	global.MINECRAFT_DYE_NAMES.forEach(color =>
+	event.recipes.gtceu.assembler(`tfc:alabaster/polished/${color}`)
+	.itemInputs(`8x tfc:alabaster/raw/${color}`)
+		.inputFluids(Fluid.of('gtceu:concrete', 72))
+		.itemOutputs(`8x tfc:alabaster/polished/${color}`)
+		.duration(250)
+		.EUt(8)
+	);
+
+	event.recipes.gtceu.assembler('tfc:alabaster/polished')
+	.itemInputs('8x tfc:alabaster/raw')
+		.inputFluids(Fluid.of('gtceu:concrete', 72))
+		.itemOutputs('8x tfc:alabaster/polished')
+		.duration(250)
+		.EUt(8);
+
+global.MINECRAFT_DYE_NAMES.forEach(color =>
+	event.recipes.gtceu.laser_engraver(`tfc:alabaster/polished/${color}`)
+	.itemInputs(`1x tfc:alabaster/raw/${color}`)
+		.notConsumable('tfc:lens')
+		.itemOutputs(`1x tfc:alabaster/polished/${color}`)
+		.duration(30)
+		.EUt(7)
+	);
+
+	event.recipes.gtceu.laser_engraver('tfc:alabaster/polished')
+	.itemInputs('1x tfc:alabaster/raw')
+		.notConsumable('tfc:lens')
+		.itemOutputs('1x tfc:alabaster/polished')
+		.duration(30)
+		.EUt(7);
+	
+};
+	
+
+
+
+

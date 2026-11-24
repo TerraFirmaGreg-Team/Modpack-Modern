@@ -61,7 +61,6 @@ function registerTFGSpaceSuitRecipes(event) {
 		.itemOutputs('4x tfg:space_suit_fabric')
 		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.HV])
-		.addMaterialInfo(true)
 
 	event.recipes.gtceu.forming_press('better_space_suit_fabric')
 		.itemInputs(
@@ -73,7 +72,6 @@ function registerTFGSpaceSuitRecipes(event) {
 		.itemOutputs('2x tfg:better_space_suit_fabric')
 		.duration(20 * 5)
 		.EUt(GTValues.VA[GTValues.IV])
-		.addMaterialInfo(true)
 
 	event.shaped('ad_astra:space_helmet', [
 		'AAA',

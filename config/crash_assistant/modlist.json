@@ -597,13 +597,13 @@
     "curseForgeHash": 3634843269,
     "modrinthHash": "83e84cc50c85c94c187f9e2019ab43f2478fd4e0"
   },
-  "CreativeCore_FORGE_v2.12.40_mc1.20.1.jar": {
-    "jarName": "CreativeCore_FORGE_v2.12.40_mc1.20.1.jar",
+  "CreativeCore_FORGE_v2.12.42_mc1.20.1.jar": {
+    "jarName": "CreativeCore_FORGE_v2.12.42_mc1.20.1.jar",
     "modId": "creativecore",
     "name": "CreativeCore",
-    "version": "2.12.40",
-    "curseForgeHash": 3422940614,
-    "modrinthHash": "f8b65310e0183630dd00c1ade12f9b6ecd243287"
+    "version": "2.12.42",
+    "curseForgeHash": 898927624,
+    "modrinthHash": "1df289c0ac3ffb4b924eb73dc3d673af961479a8"
   },
   "Cucumber-1.20.1-7.0.16.jar": {
     "jarName": "Cucumber-1.20.1-7.0.16.jar",
@@ -741,13 +741,13 @@
     "curseForgeHash": 1564210994,
     "modrinthHash": "4f440ac41309993a46e0ffcb2dd6106d7b92b3e2"
   },
-  "EuphoriaPatcher-1.11.0-r5.10-forge.jar": {
-    "jarName": "EuphoriaPatcher-1.11.0-r5.10-forge.jar",
+  "EuphoriaPatcher-1.11.1-r5.10-forge.jar": {
+    "jarName": "EuphoriaPatcher-1.11.1-r5.10-forge.jar",
     "modId": "euphoria_patcher",
     "name": "Euphoria Patcher",
-    "version": "1.11.0-r5.10-forge",
-    "curseForgeHash": 2606791041,
-    "modrinthHash": "d99eff92b51bae0a2cb353013ec34e221b20b8f9"
+    "version": "1.11.1-r5.10-forge",
+    "curseForgeHash": 662237330,
+    "modrinthHash": "af13a9c51a48895873fbeeef8de59d7931859f73"
   },
   "everycomp-1.20-2.9.29-forge.jar": {
     "jarName": "everycomp-1.20-2.9.29-forge.jar",
@@ -1434,14 +1434,6 @@
     "curseForgeHash": 2148475912,
     "modrinthHash": "2e36f4c6311230f76459000161d3429be723b19d"
   },
-  "NoChatReports-FORGE-1.20.1-v2.2.3.jar": {
-    "jarName": "NoChatReports-FORGE-1.20.1-v2.2.3.jar",
-    "modId": "nochatreports",
-    "name": "No Chat Reports",
-    "version": "1.20.1-v2.2.3",
-    "curseForgeHash": 2353634613,
-    "modrinthHash": "fa524b8f5475aef5d09b2787e553c903e4e3fe94"
-  },
   "Not Enough Recipe Book-FORGE-0.4.1+1.20.1.jar": {
     "jarName": "Not Enough Recipe Book-FORGE-0.4.1+1.20.1.jar",
     "modId": "nerb",
@@ -1754,21 +1746,21 @@
     "curseForgeHash": 2197810606,
     "modrinthHash": "7529fbf938787ed13a251cbf40936f8c29ec4b6c"
   },
-  "sophisticatedbackpacks-1.20.1-3.26.20.2248.jar": {
-    "jarName": "sophisticatedbackpacks-1.20.1-3.26.20.2248.jar",
+  "sophisticatedbackpacks-1.20.1-3.26.21.2256.jar": {
+    "jarName": "sophisticatedbackpacks-1.20.1-3.26.21.2256.jar",
     "modId": "sophisticatedbackpacks",
     "name": "Sophisticated Backpacks",
-    "version": "3.26.20.2248",
-    "curseForgeHash": 1810822791,
-    "modrinthHash": "92c2b47caf4dd14c6cf971b0463b10c236be7934"
+    "version": "3.26.21.2256",
+    "curseForgeHash": 3555779965,
+    "modrinthHash": "4482cc76c4eb1534117f76902ce00fbfd350a52b"
   },
-  "sophisticatedcore-1.20.1-1.5.36.2483.jar": {
-    "jarName": "sophisticatedcore-1.20.1-1.5.36.2483.jar",
+  "sophisticatedcore-1.20.1-1.5.37.2488.jar": {
+    "jarName": "sophisticatedcore-1.20.1-1.5.37.2488.jar",
     "modId": "sophisticatedcore",
     "name": "Sophisticated Core",
-    "version": "1.5.36.2483",
-    "curseForgeHash": 3003454867,
-    "modrinthHash": "9bb78131d94cc9e1d1a65d9c277a10084572485b"
+    "version": "1.5.37.2488",
+    "curseForgeHash": 4294373099,
+    "modrinthHash": "b263c833b7b8647643583d76a8323cd2e0a720cd"
   },
   "SoulBinding1.20.1(Forge)vs1.0.2.jar": {
     "jarName": "SoulBinding1.20.1(Forge)vs1.0.2.jar",
@@ -1874,13 +1866,13 @@
     "curseForgeHash": 2389009831,
     "modrinthHash": "a88747278d2dc39ef9061f414865bfdb694276d3"
   },
-  "TerraFirmaGreg-Core-Modern-0.9.35.jar": {
-    "jarName": "TerraFirmaGreg-Core-Modern-0.9.35.jar",
+  "TerraFirmaGreg-Core-Modern-0.9.36.jar": {
+    "jarName": "TerraFirmaGreg-Core-Modern-0.9.36.jar",
     "modId": "tfc",
     "name": "TerraFirmaCraft",
     "version": "3.2.28",
-    "curseForgeHash": 711703942,
-    "modrinthHash": "41cf885578865790b6e0f348a365f49627271036"
+    "curseForgeHash": 1756090543,
+    "modrinthHash": "8c2db0bb38c7350e5b7fd615bc79fb54349b71ac"
   },
   "TFC_punishment_for_death-1.20.1-1.0.0.16.jar": {
     "jarName": "TFC_punishment_for_death-1.20.1-1.0.0.16.jar",

@@ -225,6 +225,34 @@ function registerTFGMiscellaneousRecipes(event) {
 		// Truss Strut
 		event.stonecutting(`${material.amount}x tfg:strut/truss/${material.metal}`, `#forge:ingots/${material.metal}`)
 		TFGHelpers.registerMaterialInfo(`tfg:strut/truss/${material.metal}`, [material.recycle, material.yield])
+		
+		// Wood
+		if (material.metal != 'steel') {
+		const braceName = material.metal === 'wrought_iron' ? 'metal' : material.metal
+		event.shaped(`4x tfg:girder/wood/${braceName}_brace`, [
+			'ABA',
+			' B ',
+			'ABA'
+		], {
+				A: `#forge:bolts/${material.metal}`,
+				B: '#tfc:lumber'
+		}).id(`tfg:shaped/girder/wood/${braceName}_brace`)
+		TFGHelpers.registerMaterialInfo(`tfg:girder/wood/${braceName}_brace`, [material.recycle, 0.125, GTMaterials.Wood, 0.125])			
+		}
+
+		// Wood Strut
+		if (material.metal != 'steel') {
+		const braceName = material.metal === 'wrought_iron' ? 'metal' : material.metal
+		event.shaped(`4x tfg:strut/wood/${braceName}_brace`, [
+			'BA ',
+			'ABA',
+			' AB'
+		], {
+				A: `#forge:bolts/${material.metal}`,
+				B: '#tfc:lumber'
+		}).id(`tfg:shaped/strut/wood/${braceName}_brace`)
+		TFGHelpers.registerMaterialInfo(`tfg:strut/wood/${braceName}_brace`, [material.recycle, 0.125, GTMaterials.Wood, 0.125])			
+		}
 	})
 
 	//#endregion

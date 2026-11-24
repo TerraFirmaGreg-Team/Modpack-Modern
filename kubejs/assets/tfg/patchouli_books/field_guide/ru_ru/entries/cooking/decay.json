@@ -268,15 +268,15 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Подвал используется для хранения продуктов и $(l:cooking/cheese#cheese_wheel)вызревания сыра$() с помощью $(l:cooking/decay#shelf)полок для продуктов$() и $(l:cooking/decay#shelf)вешалок$() для хранения продуктов, а также путем размещения сыра на полу или на $(thing)стеллажах для бочек$().$(br2)Погреб лучше работает в $(l:the_world/climate#temperature)более холодных регионах$().$(li)$(2)Температура >= 0 °C:$() полки 0,4, вешалки 0,35$(li)$(2)Температура < 0 °C:$() полки 0,35, вешалки 0,3$(li)$(2)Температура < -12 °C:$() полки 0,25, вешалки 0,25"
+            "text": "The cellar is used for food preservation and $(l:cooking/cheese#cheese_wheel)Aging Cheese$() by using $(l:cooking/decay#shelf)Food Shelves$() and $(l:cooking/decay#shelf)Hangers$() to hold food items or by placing cheese on the ground or in $(thing)Barrel Racks$(). $(l:craftsmanship/barrels)Barrels$() used for vinegar preservation also benefit from being placed in a cellar."
         },
         {
             "type": "patchouli:text",
-            "text": "Пример конструкции подвала."
+            "text": "$(br2)The cellar performs better in $(l:the_world/climate#temperature)Colder Environments$().$(li)$(2)Temp >= 0°C:$() Shelves 0.4, Hangers 0.35$(li)$(2)Temp < 0°C:$() Shelves 0.35, Hangers 0.3$(li)$(2)Temp < -12°C:$() Shelves 0.25, Hangers 0.25$(br2)Vinegar barrels receive a flat 0.35 decay modifier regardless of temperature."
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "$(item)Полки для продуктов$() и $(item)вешалки$() могут вмещать полный набор одного продукта. Добавить или убрать продукт можно с помощью $(item)$(k:key.use)$() или $(item)$(k:key.sneak) + $(k:key.use)$() для полных наборов. Продукты на полках и вешалках получают модификатор сохранности, который лучше, чем у сосудов, и увеличивается при снижении $(thing)средней температуры$().",
+            "text": "An example cellar structure.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -443,46 +443,46 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "shelf",
-            "title": "Коробки для завтрака",
+            "title": "Cellar Storage",
             "item": "tag:firmalife:food_shelves,tag:firmalife:hangers,tag:tfc:barrels",
-            "text": "Ланч-боксы — удобный способ транспортировки и употребления продуктов питания. Обычный ланч-бокс обладает свойством $(5)$(bold)сохранности$(), а $(item)охлаждающие$() и $(item)электрические ланч-боксы$() дают свойство $(9)$(bold)охлаждения$() с модификатором 0,3.$(br2)Охлаждающие ланч-боксы расходуют $(item)лед$() для сохранения продуктов, а электрический ланч-бокс расходует $(2)электроэнергии$()."
+            "text": "$(item)Food shelves$() and $(item)Hangers$() can contain a full stack of one food item. Adding and removing the item can be done with $(item)$(k:key.use)$() or $(item)$(k:key.sneak) + $(k:key.use)$() for full stacks. Items in valid food shelves and hangers receive a decay modifier that is better than vessels and increases with declining $(thing)Average Temperature$()."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "lunch_box",
-            "title": "Холодильник",
+            "title": "Lunch Boxes",
             "item": "tfclunchbox:lunchbox,tfclunchbox:cooling_lunchbox,tfclunchbox:electric_lunchbox",
-            "text": "Холодильники добавляются с помощью $(tfg_short) и потребляют $(2)EU$(), чтобы обеспечить свойство $(3)$(bold)Охлаждение$() с модификатором 0,125.$(br) Более высокие уровни холодильника не влияют на бонус к сроку хранения, а только на объем доступного места для хранения. Холодильники также могут объединять запасы продуктов, сопоставляя сроки годности."
+            "text": "Lunch boxes provide a convenient method to transport and consume food items. The basic lunchbox provides the $(5)$(bold)Preserved$() trait while the $(item)Cooling$() and $(item)Electric Lunchboxes$() give the $(9)$(bold)Cooled$() trait with a modifier of 0.3.$(br2)Cooling lunchboxes consume $(item)Ice$() to preserve food, while the electric lunchbox consumes $(2)EU$() energy."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "refrigerator",
-            "title": "Сублимационная сушка",
+            "title": "Refrigerators",
             "item": "tfg:mv_food_refrigerator,tfg:hv_food_refrigerator,tfg:ev_food_refrigerator,tfg:iv_food_refrigerator",
-            "text": "$(tfg_short) Добавляет возможность сублимационной сушки некоторых продуктов в $(item)Food Processors$(), что значительно увеличивает срок их хранения. Сублимационная сушка дает свойство $(7)$(bold)Cryodessicated$() с модификатором 0,02."
+            "text": "Refrigerators are added by $(tfg_short) and consume $(2)EU$() to provide the $(3)$(bold)Refrigerating$() trait with a modifier of 0.125.$(br)Higher tiers of the fridge do not affect the preservation buff―only the storage space available. Fridges can also combine food stacks by merging expiration dates."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "freeze_dry",
-            "title": "Вредители",
+            "title": "Freeze Drying",
             "item": "tfg:food/meal_bag,tfg:food/freeze_dried_fruit,tfg:food/calorie_paste",
-            "text": "Еда, оставленная в сундуках, может привлечь $(thing)крыс$(), поэтому не забывайте правильно хранить продукты в сосудах, подвалах или холодильниках. Крысы могут открывать контейнеры и поедать их содержимое. О присутствии крыс вас предупредит сообщение $(thing)'В этом контейнере неприятный запах'$(). Важно отметить, что если вы распечатаете и снова запечатаете большой сосуд перед тем, как выйти из игры, это не привлечёт вредителей."
+            "text": "$(tfg_short) adds the ability to freeze-dry select food items in $(item)Food Processors$() to greatly increase shelf life. Freeze drying gives the $(7)$(bold)Cryodessicated$() trait with a modifier of 0.02."
         },
         {
             "type": "patchouli:text",
             "anchor": "pest",
-            "title": "Убрать лишнее",
-            "text": "Наконец, вы можете отрезать подгнившую часть продукта, взяв в руки $(item)knife$() и $(item)щелкнув правой кнопкой мыши$() по частично подгнившему продукту в инвентаре. $(br2) Это остановит процесс гниения, но вы потеряете часть продукта, пропорционально степени его разложения."
+            "title": "Pests",
+            "text": "Food that is left sitting in chests can attract $(thing)Rats$(), so remember to store food properly in vessels, cellars, or fridges. Rats are able to open containers and eat the food out of them. You will be alerted to a rat's presence by the message $(thing)'This container has a foul smell'$(). It is important to note that unsealing and resealing a large vessel before you leave the screen will never attract pests."
         },
         {
             "type": "patchouli:text",
             "anchor": "cutting",
-            "title": "Читать далее",
+            "title": "Cutting off",
             "text": "Lastly, you can cut off the decayed part of food by picking up a $(item)knife$() with your cursor and $(item)right-clicking$() a partially decayed food item stack in your inventory.$(br2)This will reset the decay while losing some of the item stack, proportional to how decayed it was."
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Читать далее",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/food_and_water",
