@@ -502,3 +502,9 @@ function registerImmersiveVehiclesBlockTags(event) {
 		'mts:mts.fuelpump'
 	]);
 }
+
+function registerImmersiveVehiclesEntityTags(event) {	
+	event.add('tfg:ignores_cacti', 'mts:builder_existing')
+	event.add('tfg:ignores_cacti', 'mts:builder_rendering')
+	event.add('tfg:ignores_cacti', 'mts:builder_seat')
+}

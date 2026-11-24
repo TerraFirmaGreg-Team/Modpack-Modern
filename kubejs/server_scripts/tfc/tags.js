@@ -206,10 +206,6 @@ function registerTFCItemTags(event) {
 	event.add("minecraft:coals", "tfc:ore/lignite");
 
 	event.add("tfc:forge_fuel", "minecraft:coal_block");
-	event.add("tfc:forge_fuel", 'gtceu:flawless_coal_gem');
-	event.add("tfc:forge_fuel", 'gtceu:exquisite_coal_gem');
-	event.add("tfc:forge_fuel", 'gtceu:flawed_coal_gem');
-	event.add("tfc:forge_fuel", 'gtceu:chipped_coal_gem');
 
 	event.add("tfc:forge_fuel", "gtceu:coal_dust");
 	event.add("tfc:forge_fuel", "gtceu:small_coal_dust");

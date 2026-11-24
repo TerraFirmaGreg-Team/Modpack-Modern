@@ -20,6 +20,7 @@ function registerTFGTagPrefixes(event) {
 	TFGTagPrefix.richRawOre.setIgnored(GTMaterials.Coal);
 	TFGTagPrefix.poorRawOre.setIgnored(GTMaterials.Coal);
 	TagPrefix.plate.setIgnored(GTMaterials.Coal);
+	excludeAllGemsButNormal(GTMaterials.Coal)
 
 	TagPrefix.dust.setIgnored(GTMaterials.get('lignite'));
 	TagPrefix.dustSmall.setIgnored(GTMaterials.get('lignite'));

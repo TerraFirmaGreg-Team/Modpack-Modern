@@ -2,6 +2,10 @@
 	"quests.transport": "Travel and Transport",
 	"quests.transport.subtitle": "What ever happened to walking on your own two feet?",
 
+	"quests.transport.steel_main.title": "Steel Age",
+	"quests.transport.mv_main.title": "&bMV&r",
+	"quests.transport.ev_main.title": "&5EV&r",
+
 	"quests.tfg_tips.glider.title": "Hang Glider",
 	"quests.tfg_tips.glider.subtitle": "This is not Breath of the Wild",
 	"quests.tfg_tips.glider.desc": "A &dHang Glider&r can be used to glide along the air. You &ccannot gain altitude&r with this but it can be useful to traverse long distances if you jump from high up.\nGreat synergy with &bJetpacks&r though!",
@@ -28,7 +32,7 @@
 
 	"quests.tfg_tips.sloop_under_construction_materials.title": "The Sloop",
 	"quests.tfg_tips.sloop_under_construction_materials.subtitle": "The Great Pirate Era has begun",
-	"quests.tfg_tips.sloop_under_construction_materials.desc": "The &dSloop&r is the most advanced seaworthy vessel, requiring &aWrought Iron.&r It has ample space for storage, anvils and workbenches! It is incredibly expensive and requires practice to sail. The &2Field Guide&r has all the details for construction and on how to sail.\n\nAgain, do not attempt to mix up different kinds of hardwoods in the same vessel.",
+	"quests.tfg_tips.sloop_under_construction_materials.desc": "The &dSloop&r is the most advanced seaworthy vessel, requiring &aWrought Iron.&r It has ample space for storage, anvils and workbenches! It is incredibly expensive and requires practice to sail, but makes traveling over huge oceans a breeze. Finish it off with a paint job when you're finished, by right-clicking the hull or sails with dye.\n\nThe &2Field Guide&r has all the details for construction and on how to sail.\n\nRemember that the entire boat needs to be constructed from the same wood type, so make sure you have plenty before starting!",
 	"quests.tfg_tips.sloop_under_construction_materials.task": "16x of any Hardwood Lumber",
 
 	"quests.tfg_tips.astikorcarts.title": "TFC Astikor Carts",
@@ -64,7 +68,10 @@
 	"quests.tfg_tips.plow.subtitle": "Large Scale Farming",
 	"quests.tfg_tips.plow.desc": "If there ever comes the need to till large sections of land for some megafarms, the &dPlow&r can come in clutch.",
 
-	"quests.transport.steel_main.title": "Steel Age",
-	"quests.transport.mv_main.title": "&bMV&r",
-	"quests.transport.ev_main.title": "&5EV&r"
+	"quests.transport.airship.subtitle": "How's the weather up there?",
+	"quests.transport.airship.desc": "The Airship is the first proper form of flight you have access to. While it's accessible with Wrought Iron, it will also cost a lot of &dcloth&r, so hopefully you've been working on growing some Flax, Jute, or Cotton, or raising some wooly animals.\n\nThe Airship is slower than traveling on horseback or boat, but has no other limitations like needing to cross rivers or waterways. You can fuel it with any burnable solid fuel, such as charcoal.",
+
+	"quests.transport.immersive_vehicles.title": "Vehicles",
+	"quests.transport.immersive_vehicles.subtitle": "Buckle up!",
+	"quests.transport.immersive_vehicles.desc": "Welcome to &6Immersive Vehicles&r! This mod has a very in-depth modular system for driving, piloting, customizing, and building all sorts of vehicles, but it can be a lot to take in at once. Check the &eField Guide&r to get your drivers' license and learn everything about how vehicles work!"
 }

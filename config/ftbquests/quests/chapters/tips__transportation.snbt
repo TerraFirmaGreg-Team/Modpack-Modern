@@ -1518,13 +1518,14 @@
 		}
 		{
 			dependencies: ["3F4231A5F725DCF1"]
+			description: ["{quests.transport.airship.desc}"]
 			id: "62591B69459A6752"
+			subtitle: "{quests.transport.airship.subtitle}"
 			tasks: [{
-				id: "76D2B2A7D92E7BFE"
-				item: "firmaciv:small_triangular_sail"
+				id: "778FCD5BD5F8D16A"
+				item: "immersive_aircraft:airship"
 				type: "item"
 			}]
-			title: "TODO: new IV airship"
 			x: 3.0d
 			y: -9.0d
 		}
@@ -1583,8 +1584,8 @@
 			y: -4.5d
 		}
 		{
-			can_repeat: true
 			dependencies: ["5903C9AE3493EEED"]
+			description: ["quests.transport.immersive_vehicles.desc}"]
 			icon: "mts:mts.partscanner"
 			id: "3BE985DAF516E42D"
 			rewards: [
@@ -1601,10 +1602,12 @@
 			]
 			shape: "gear"
 			size: 1.5d
+			subtitle: "{quests.transport.immersive_vehicles.subtitle}"
 			tasks: [{
 				id: "5996F24FB3131B94"
 				type: "checkmark"
 			}]
+			title: "{quests.transport.immersive_vehicles.title}"
 			x: 9.0d
 			y: -3.0d
 		}
@@ -2301,14 +2304,27 @@
 			dependencies: ["5CEF31AC98120044"]
 			description: ["soarer, surfer, walker, charger"]
 			guide_page: "tfg:field_guide tfg:mars/mars_fauna"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:food": {
+						creationDate: 78834000L
+						traits: [ ]
+					}
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "wan_ancient_beasts:soarer_egg"
+			}
 			id: "515A863161B1DF3C"
 			tasks: [{
-				id: "5A8C71C6EA2D248D"
-				item: {
+				icon: {
 					Count: 1
 					ForgeCaps: {
 						"tfc:food": {
-							creationDate: 77880000L
+							creationDate: 78834000L
 							traits: [ ]
 						}
 						"tfc:item_heat": {
@@ -2318,10 +2334,14 @@
 					}
 					id: "wan_ancient_beasts:soarer_egg"
 				}
-				type: "item"
+				id: "3BE1445962BA49E8"
+				observe_type: 5
+				timer: 0L
+				to_observe: "wan_ancient_beasts:soarer"
+				type: "observation"
 			}]
-			x: 26.5d
-			y: -3.5d
+			x: 26.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1065E6CE51C7F883"]
@@ -2334,6 +2354,164 @@
 			}]
 			x: 30.5d
 			y: -3.5d
+		}
+		{
+			dependencies: ["5CEF31AC98120044"]
+			description: ["soarer, surfer, walker, charger"]
+			guide_page: "tfg:field_guide tfg:mars/mars_fauna"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:food": {
+						creationDate: 78834000L
+						traits: [ ]
+					}
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "wan_ancient_beasts:charger_egg"
+			}
+			id: "4B908EB671E66C3A"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:food": {
+								creationDate: 78834000L
+								traits: [ ]
+							}
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "wan_ancient_beasts:charger_egg"
+					}
+					id: "0C0122DC75AB6907"
+					observe_type: 5
+					timer: 0L
+					to_observe: "wan_ancient_beasts:charger"
+					type: "observation"
+				}
+				{
+					id: "2B0463FE485EB6B5"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(wan_ancient_beasts:charger_armors)"
+						}
+					}
+					optional_task: true
+					title: "Any #wan_ancient_beasts:charger_armors"
+					type: "item"
+				}
+			]
+			x: 27.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5CEF31AC98120044"]
+			description: ["soarer, surfer, walker, charger"]
+			guide_page: "tfg:field_guide tfg:mars/mars_fauna"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:food": {
+						creationDate: 78834000L
+						traits: [ ]
+					}
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "wan_ancient_beasts:walker_egg"
+			}
+			id: "15E98AE9E028801B"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:food": {
+							creationDate: 78834000L
+							traits: [ ]
+						}
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "wan_ancient_beasts:walker_egg"
+				}
+				id: "382C9136C882E0C7"
+				observe_type: 5
+				timer: 0L
+				to_observe: "wan_ancient_beasts:walker"
+				type: "observation"
+			}]
+			x: 26.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5CEF31AC98120044"]
+			description: ["soarer, surfer, walker, charger"]
+			guide_page: "tfg:field_guide tfg:mars/mars_fauna"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:food": {
+						creationDate: 78834000L
+						traits: [ ]
+					}
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "wan_ancient_beasts:surfer_egg"
+			}
+			id: "1541F0C1C0614AF4"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:food": {
+								creationDate: 78834000L
+								traits: [ ]
+							}
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "wan_ancient_beasts:surfer_egg"
+					}
+					id: "5D8DF0B0A8B77926"
+					observe_type: 5
+					timer: 0L
+					to_observe: "tfg:surfer"
+					type: "observation"
+				}
+				{
+					id: "6D47452E8CD333A3"
+					item: {
+						Count: 1
+						id: "wan_ancient_beasts:surfer_armor"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 27.0d
+			y: -4.0d
 		}
 	]
 	subtitle: ["{quests.transport.subtitle}"]

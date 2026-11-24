@@ -359,8 +359,8 @@ function registerImmersiveAircraftRecipes(event) {
 		' EEEF',
 		' DDD '
 	], {
-		A: 'tfg:redblu_steel_plated_airplane_propeller',
-		B: 'tfg:lv_aircraft_engine',
+		A: 'mts:mtsofficialpack.propellersmall3blade',
+		B: 'immersive_aircraft:eco_engine',
 		C: 'tfg:airship_balloon',
 		D: 'gtceu:wrought_iron_plate',
 		E: 'immersive_aircraft:hull',
@@ -378,7 +378,7 @@ function registerImmersiveAircraftRecipes(event) {
 		'   B   ',
 		'   G   ',
 	], {
-		A: 'tfg:redblu_steel_plated_airplane_propeller',
+		A: 'mts:mtsofficialpack.propellersmall2blade',
 		B: 'gtceu:long_treated_wood_rod',
 		C: 'immersive_aircraft:sail',
 		D: 'immersive_aircraft:hull',
@@ -397,9 +397,9 @@ function registerImmersiveAircraftRecipes(event) {
 		'  BEB  ',
 		'   B   '
 	], {
-		A: 'immersive_aircraft:enhanced_propeller',
+		A: 'mts:mtsofficialpack.propellerlarge2blade',
 		B: 'immersive_aircraft:hull',
-		C: 'tfg:lv_aircraft_engine',
+		C: 'immersive_aircraft:nether_engine',
 		D: 'man_of_many_planes:economy_plane',
 		E: 'gtceu:treated_wood_plate',
 		F: 'gtceu:treated_wood_frame'
@@ -414,7 +414,7 @@ function registerImmersiveAircraftRecipes(event) {
 		' BHBGBHB ',
 		'  B   B  '
 	], {
-		A: 'tfg:stainless_steel_plated_airplane_propeller',
+		A: 'gtceu:stainless_steel_rotor',
 		B: 'immersive_aircraft:hull',
 		C: 'immersive_aircraft:nether_engine',
 		D: 'gtceu:long_aluminium_rod',
@@ -437,7 +437,7 @@ function registerImmersiveAircraftRecipes(event) {
 		], {
 			A: 'immersive_aircraft:sail',
 			B: 'gtceu:blue_steel_plate',
-			C: 'tfg:black_steel_plated_airplane_propeller',
+			C: 'gtceu:black_steel_rotor',
 			D: 'gtceu:long_treated_wood_rod',
 			E: '#create:seats',
 			F: 'gtceu:black_steel_rotor',
@@ -455,7 +455,7 @@ function registerImmersiveAircraftRecipes(event) {
 			'   CHC   ',
 			'    C    '
 		], {
-			A: 'tfg:stainless_steel_plated_airplane_propeller',
+			A: 'gtceu:stainless_steel_rotor',
 			B: 'immersive_aircraft:nether_engine',
 			C: 'immersive_aircraft:hull',
 			D: 'gtceu:red_steel_plate',

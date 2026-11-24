@@ -139,6 +139,7 @@ ServerEvents.tags('worldgen/biome', event => {
 ServerEvents.tags('entity_type', event => {
 	registerFowlPlayEntityTags(event)
 	registerJelliesEntityTags(event)
+	registerImmersiveVehiclesEntityTags(event)
 	registerTFGEntityTypeTags(event)
 	registerWABEntityTypeTags(event)
 })
