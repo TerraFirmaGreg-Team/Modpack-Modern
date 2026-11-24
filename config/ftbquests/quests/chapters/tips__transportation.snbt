@@ -977,6 +977,86 @@
 			x: 33.5d
 			y: -19.5d
 		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 34.5d
+			y: -4.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 34.5d
+			y: -2.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 36.5d
+			y: -4.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 36.5d
+			y: -2.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 34.5d
+			y: 2.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 34.5d
+			y: 4.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 36.5d
+			y: 2.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 36.5d
+			y: 4.5d
+		}
 	]
 	order_index: 1
 	quest_links: [
@@ -1105,6 +1185,12 @@
 			id: "46D55EED89807B09"
 			linked_quest: "18F2D96C0163B974"
 			x: 9.5d
+			y: -8.0d
+		}
+		{
+			id: "03ABA66AFAAFB613"
+			linked_quest: "168251ED221ADBA7"
+			x: 34.5d
 			y: -8.0d
 		}
 	]
@@ -2739,6 +2825,30 @@
 			title: "{quests.transport.ancient_beetle.title}"
 			x: 30.5d
 			y: -8.0d
+		}
+		{
+			dependencies: ["1065E6CE51C7F883"]
+			disable_toast: true
+			icon: "tfg:luv_universal_circuit"
+			id: "4493B00F059EF163"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				disable_toast: true
+				id: "074E6D64813307C1"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/luv)"
+					}
+				}
+				title: "Any #gtceu:circuits/luv"
+				type: "item"
+			}]
+			title: "{quests.combat_tips.luv_main.title}"
+			x: 34.5d
+			y: 0.0d
 		}
 	]
 	subtitle: ["{quests.transport.subtitle}"]

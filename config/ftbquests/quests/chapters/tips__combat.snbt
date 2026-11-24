@@ -1874,10 +1874,10 @@
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/iv)"
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/luv)"
 					}
 				}
-				title: "Any #gtceu:circuits/iv"
+				title: "Any #gtceu:circuits/luv"
 				type: "item"
 			}]
 			title: "{quests.combat_tips.luv_main.title}"
@@ -2136,6 +2136,7 @@
 			dependencies: [
 				"0D8AA8975F136729"
 				"11DE49B8724C2603"
+				"4493B00F059EF163"
 			]
 			description: ["{quests.tfg_tips.adv_quarktech.desc}"]
 			id: "168251ED221ADBA7"
