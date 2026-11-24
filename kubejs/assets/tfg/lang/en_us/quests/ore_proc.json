@@ -49,7 +49,7 @@
     "quests.ore_proc.ev_tier.title": "&5EV&r Ore Processing",
     "quests.ore_proc.ev_tier.desc": "EV is the first tier where you'll need to start splitting up your ore processing into different \"lines\".",
 
-    "quests.ore_proc.iv_tier.title": "&9IV&r Ore Processing",
+    "quests.ore_proc.iv_tier.title": "&1IV&r Ore Processing",
     "quests.ore_proc.iv_tier.desc": "With IV comes the big huge multiblocks to really ramp up your ore processing speeds.",
 
     "quests.ore_proc.luv_tier.title": "&dLuV&r Ore Processing",
@@ -108,7 +108,7 @@
 
     "quests.ore_proc.indium.title": "The Indium Line",
     "quests.ore_proc.indium.subtitle": "We say line, but really it's just a two step process",
-    "quests.ore_proc.indium.desc": "The &6Indium Line&r shouldn't be needed before &9IV&r, but it will require purified &bSphalerite&r and &bGalena&r.",
+    "quests.ore_proc.indium.desc": "The &6Indium Line&r shouldn't be needed before &1IV&r, but it will require purified &bSphalerite&r and &bGalena&r.",
 
     "quests.ore_proc.platline.title": "The Infamous Platline",
     "quests.ore_proc.platline.subtitle": "GregTech players vs Mekanism players when they need Osmium:",

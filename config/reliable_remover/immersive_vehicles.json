@@ -13,6 +13,7 @@
 			"mts:mtsofficialpack.mc172_oak",
 			"mts:mtsofficialpack.mc172_spruce",
 			"mts:mtsofficialpack.mc172_warped",
+			"mts:mtsofficialpack.mc172_poplar",
 
 			"mts:mtsofficialpack.ft17_blue",
 			"mts:mtsofficialpack.ft17_gray",
@@ -265,6 +266,10 @@
 			"mts:belroftmotors.taxi_roof_sign",
 			"mts:belroftmotors.tofu_plate",
 			"mts:belroftmotors.fifthwheel_harpy",
+			"mts:belroftmotors.learner_sign_l",
+			"mts:belroftmotors.learner_sign_l_blue",
+			"mts:belroftmotors.learner_sign_m",
+			"mts:belroftmotors.learner_sign_y",
 			"mts:mts.wheelbench",
 			"mts:mts.instrumentbench",
 			"mts:mts.seatbench",
@@ -275,7 +280,8 @@
 			"mts:mts.custombench",
 			"mts:mts.itembench",
 			"mts:mts.propellerbench",
-			"mts:mts.wrench"
+			"mts:mts.wrench",
+			"mts:mts.screwdriver"
 		]
 	}
 ]

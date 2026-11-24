@@ -1861,9 +1861,9 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["278F18477F9B7E08"]
+			dependencies: ["74C7FE038FDDBBF2"]
 			disable_toast: true
-			icon: "tfg:iv_universal_circuit"
+			icon: "tfg:luv_universal_circuit"
 			id: "11DE49B8724C2603"
 			shape: "octagon"
 			size: 1.5d
@@ -1880,8 +1880,8 @@
 				title: "Any #gtceu:circuits/iv"
 				type: "item"
 			}]
-			title: "{quests.combat_tips.iv_main.title}"
-			x: 25.5d
+			title: "{quests.combat_tips.luv_main.title}"
+			x: 29.5d
 			y: 0.0d
 		}
 		{
@@ -2097,7 +2097,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["11DE49B8724C2603"]
+			dependencies: ["74C7FE038FDDBBF2"]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.quarktech.desc}"]
 			id: "0D8AA8975F136729"
@@ -2130,10 +2130,13 @@
 			]
 			title: "{quests.tfg_tips.quarktech.title}"
 			x: 25.5d
-			y: -1.5d
+			y: -3.0d
 		}
 		{
-			dependencies: ["0D8AA8975F136729"]
+			dependencies: [
+				"0D8AA8975F136729"
+				"11DE49B8724C2603"
+			]
 			description: ["{quests.tfg_tips.adv_quarktech.desc}"]
 			id: "168251ED221ADBA7"
 			shape: "gear"
@@ -2148,7 +2151,7 @@
 				}
 				type: "item"
 			}]
-			x: 25.5d
+			x: 29.5d
 			y: -3.0d
 		}
 		{
@@ -2168,6 +2171,30 @@
 			title: "{quests.tfg_tips.nano_saber.title}"
 			x: 21.5d
 			y: -3.0d
+		}
+		{
+			dependencies: ["278F18477F9B7E08"]
+			disable_toast: true
+			icon: "tfg:iv_universal_circuit"
+			id: "74C7FE038FDDBBF2"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				disable_toast: true
+				id: "277BAB7C30AAABB0"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/iv)"
+					}
+				}
+				title: "Any #gtceu:circuits/iv"
+				type: "item"
+			}]
+			title: "{quests.combat_tips.iv_main.title}"
+			x: 25.5d
+			y: 0.0d
 		}
 	]
 	subtitle: ["{quests.combat.subtitle}"]

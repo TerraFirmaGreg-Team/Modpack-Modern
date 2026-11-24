@@ -1310,8 +1310,7 @@
 		{
 			dependencies: [
 				"6AA07588374B59AB"
-				"165215273D49B85B"
-				"5BD8697CD77C4FC1"
+				"5903C9AE3493EEED"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.medium_voltage.mv_jetpack.desc}"]

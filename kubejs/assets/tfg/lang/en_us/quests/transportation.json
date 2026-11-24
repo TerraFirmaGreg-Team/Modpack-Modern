@@ -51,7 +51,7 @@
 
 	"quests.tfg_tips.firmaciv_info.title": "Voyage Gadgets",
 	"quests.tfg_tips.firmaciv_info.subtitle": "In case you care for realism",
-	"quests.tfg_tips.firmaciv_info.desc": "&3Firma:Civ&r comes with 4 different navigational tools, each giving you important information about your position in the world.\nIncludes the &dSextant&r, &dNavigator's Timepiece&r, &dBarometer&r, and &dCompass&r; more information about the tools in the &2Field Guide.&r\n\n&3&lLore:&r&o Firma:Civ by default removes coordinates to make you use its navigational tools. TFG has that disabled by default, but you can re-enable it in its configs if you'd like.",
+	"quests.tfg_tips.firmaciv_info.desc": "&3Firma:Civ&r comes with 4 different navigational tools, each giving you important information about your position in the world.\nIncludes the &dSextant&r, &dNavigator's Timepiece&r, &dBarometer&r, and &dCompass&r; more information about the tools in the &2Field Guide.&r\n\n&l&3&oLore:&r&o Firma:Civ by default removes coordinates to make you use its navigational tools. TFG has that disabled by default, but you can re-enable it in its configs if you'd like.",
 
 	"quests.tfg_tips.equines.title": "Horse Riding",
 	"quests.tfg_tips.equines.subtitle": "Stallion of the Cimarron",
@@ -69,9 +69,185 @@
 	"quests.tfg_tips.plow.desc": "If there ever comes the need to till large sections of land for some megafarms, the &dPlow&r can come in clutch.",
 
 	"quests.transport.airship.subtitle": "How's the weather up there?",
-	"quests.transport.airship.desc": "The Airship is the first proper form of flight you have access to. While it's accessible with Wrought Iron, it will also cost a lot of &dcloth&r, so hopefully you've been working on growing some Flax, Jute, or Cotton, or raising some wooly animals.\n\nThe Airship is slower than traveling on horseback or boat, but has no other limitations like needing to cross rivers or waterways. You can fuel it with any burnable solid fuel, such as charcoal.",
+	"quests.transport.airship.desc": "The Airship is the first proper form of flight you have access to. While it's accessible with Wrought Iron, it will also cost a lot of &dcloth&r, so hopefully you've been working on growing some Flax, Jute, or Cotton, or raising some wooly animals.\n\nThe Airship is slower than traveling on horseback or boat, but has no other limitations like needing to cross rivers or only being limited to water.\n\nYou can fuel it with any burnable solid fuel, such as charcoal.\n\n&cNote: This airship will be replaced with one from Immersive Vehicles later.&r",
 
 	"quests.transport.immersive_vehicles.title": "Vehicles",
 	"quests.transport.immersive_vehicles.subtitle": "Buckle up!",
-	"quests.transport.immersive_vehicles.desc": "Welcome to &6Immersive Vehicles&r! This mod has a very in-depth modular system for driving, piloting, customizing, and building all sorts of vehicles, but it can be a lot to take in at once. Check the &eField Guide&r to get your drivers' license and learn everything about how vehicles work!"
+	"quests.transport.immersive_vehicles.desc": "Welcome to &6Immersive Vehicles&r! This mod has a very in-depth modular system for driving, piloting, customizing, and building all sorts of vehicles, but it can be a lot to take in at once.\n\nRead the &eField Guide&r with the link below to get your drivers' license and learn everything about how vehicles work!",
+
+	"quests.transport.boilerbox.subtitle": "Honk honk, the circus has arrived",
+	"quests.transport.boilerbox.desc": "The &6Boilerbox&r is your first road vehicle! It comes with a wide variety of upgrades. Normally it only fits one passenger, but you can upgrade it to fit two.\n\nYou can fuel it with Lava, any kind of Oil (cooking oils and petro oils both work), Creosote, and Biomass. Note that creosote and biomass are a bit weaker than the others.",
+	"quests.transport.boilerbox.task": "Any Boilerbox upgrade",
+
+	"quests.transport.biplane.subtitle": "Is it a bird? No, it's a plane!",
+	"quests.transport.biplane.desc": "The &6Biplane&r is your first proper airplane! It comes with a wide variety of upgrades. Normally it only fits one passenger, but you can upgrade it to fit two.\n\nYou can fuel it with Lava, any kind of Oil (cooking oils and petro oils both work), Creosote, and Biomass. Note that creosote and biomass are a bit weaker than the others.",
+	"quests.transport.biplane.task": "Any Biplane upgrade",
+
+	"quests.transport.workshop.subtitle": "All-purpose garage",
+	"quests.transport.workshop.desc": "From here on, all vehicles must be created in the &eAutomotive Workshop&r. This multiblock allows for a large number of item and fluid inputs. Be sure to check the &6Field Guide&r on how to pour the concrete.\n\nAs a lot of vehicles have overlapping colors for their dyes, be sure you set the appropriate circuit number in an Input Bus.",
+
+	"quests.transport.universal_fuel.title": "Universal Vehicle Fuel",
+	"quests.transport.universal_fuel.subtitle": "Leaded or Unleaded?",
+	"quests.transport.universal_fuel.desc": "&eUniversal Vehicle Fuel&r is, well, a fuel that every vehicle accepts. Check EMI for the fuels you can brew into it. Stronger GregTech fuels will brew into more universal vehicle fuel.\n\n&l&3&oLore:&r Vehicles are normally split into categories such as 'gasoline', 'diesel', and so on, but because Gasoline isn't obtainable until &6HV&r, it would effectively block half of the available vehicles until then. Universal Fuel is the compromise, though you can still use the GregTech fuels if you insist on realism.",
+
+	"quests.transport.quad.title": "Quadbikes",
+	"quests.transport.quad.subtitle": "On road! Off road! No road!",
+	"quests.transport.quad.desc": "The Quadbike is a relatively cheap vehicle that's ready to drive as soon as it's finished crafting. It has great step height and is the perfect choice for traveling to new places off-road.",
+	"quests.transport.quad.task": "Any Quadbike",
+
+	"quests.transport.silver.title": "Silver Motorbikes",
+	"quests.transport.silver.subtitle": "Leather jacket not included",
+	"quests.transport.silver.desc": "The Silver Motorbike is a relatively cheap vehicle if you don't want to splurge on anything bigger. Its simplicity also means no upgrades or cargo capacity, unfortunately.",
+	"quests.transport.silver.task": "Any Silver Motorbike",
+
+	"quests.transport.scout.title": "Scout SUVs",
+	"quests.transport.scout.subtitle": "Practical and flexible",
+	"quests.transport.scout.desc": "The Scout is a reliable SUV with a lot of potential. You can fill the back with a load of cargo, two more seats, or if you take the pickup bed off, even a gun turret!",
+	"quests.transport.scout.task": "Any Scout SUV",
+
+	"quests.transport.brotchen.title": "Brotchen Cars",
+	"quests.transport.brotchen.subtitle": "The perfect budget car for getting stuck in traffic.",
+	"quests.transport.brotchen.desc": "Looking for something more straightforward? The Brotchen cars do exactly what they say on the tin.",
+	"quests.transport.brotchen.task": "Any Brotchen Car",
+
+	"quests.transport.bullfrog.title": "Bullfrog Cars",
+	"quests.transport.bullfrog.subtitle": "Compensating for something?",
+	"quests.transport.bullfrog.desc": "The Bullfrog is a muscle car. They're a bit more expensive than a Brotchen, but can go faster.",
+	"quests.transport.bullfrog.task": "Any Bullfrog Car",
+
+	"quests.transport.gmcbrig.title": "Brigadier Trucks",
+	"quests.transport.gmcbrig.subtitle": "Who needs trains anyway!",
+	"quests.transport.gmcbrig.desc": "Want to transport a load of stuff without having to place down an entire railway? The Brigadier is a customizable truck with a variety of different trailers, ranging from items, to fluids, to even passengers.",
+	"quests.transport.gmcbrig.task.1": "Any Brigadier Truck",
+	"quests.transport.gmcbrig.task.2": "Any Brigadier Trailer",
+
+	"quests.transport.fisker.title": "Fisker Boats",
+	"quests.transport.fisker.subtitle": "Gone Fishin'",
+	"quests.transport.fisker.desc": "Tired of your rowboat? Never learnt how to sail? The Fisker is a small fishing boat that's still very capable of travling across oceans without breaking your back.",
+	"quests.transport.fisker.task": "Any Fisker Boat",
+
+	"quests.transport.pzlp11.title": "PZL P11.c Aircraft",
+	"quests.transport.pzlp11.subtitle": "War... war never changes",
+	"quests.transport.pzlp11.desc": "The PZL P11.c is a fast propellor plane that can also be equipped with a machine gun. It can only hold one passenger.",
+	"quests.transport.pzlp11.task": "Any PZL P11.c Aircraft",
+
+	"quests.transport.pzl37b.title": "PZL.37B Los Aircraft",
+	"quests.transport.pzl37b.subtitle": "Starting arguments on internet forums since 1938",
+	"quests.transport.pzl37b.desc": "The PZL.37B Los is a larger bomber plane, capable of being equipped with multiple guns and bomb crates. It can hold up to four passengers.",
+	"quests.transport.pzl37b.task": "Any PZL.37B Los Aircraft",
+
+	"quests.transport.bell47g.title": "Bell 47G Helicopter",
+	"quests.transport.bell47g.subtitle": "Let's hope you aren't in the opening scene of an action movie",
+	"quests.transport.bell47g.desc": "The Bell 47G is a lightweight helicopter that can fit up to two passengers. Helicopters are perfect if you want to fly places with unknown terrain, so you can lift off and land without needing a runway.\n\nIt can also be equipped with guns and a rocket launcher, if you're into that sort of thing.",
+	"quests.transport.bell47g.task.1": "Any Bell 47G Helicopter",
+	"quests.transport.bell47g.task.2": "Any Helicopter Landing Gear",
+
+	"quests.transport.adventure.title": "Adventure Vans",
+	"quests.transport.adventure.subtitle": "Adventure Time",
+	"quests.transport.adventure.desc": "The Adventure Van can hold up to eight passengers, a load of cargo, and you can even attach a trailer to pull around a boat! Perfect for going on a camping trip with your whole server.",
+	"quests.transport.adventure.task": "Any Adventure Van",
+
+	"quests.transport.keeper.title": "Keeper SUVs",
+	"quests.transport.keeper.subtitle": "Those animals are so funny they make me wanna merge without looking!",
+	"quests.transport.keeper.desc": "The Keeper SUV can only hold two passengers but can carry a lot of cargo, and you can even attach a trailer to pull around a boat!",
+	"quests.transport.keeper.task": "Any Keeper SUV",
+
+	"quests.transport.fire_truck.subtitle": "What starts with F and ends with U-C-K?",
+	"quests.transport.fire_truck.desc": "Has your neighbour decided to build their new smithy out of wood and thatch? Pull up to their base and blast them (and their building) with the water cannon on this fire truck!",
+
+	"quests.transport.paragon.title": "Paragon Buses",
+	"quests.transport.paragon.subtitle": "Don't forget to thank your bus driver!",
+	"quests.transport.paragon.desc": "Let's be honest, you're not gonna be making this unless you're on a large server and helping run a big event. But if that's you, then this bus can fit 15, including the driver!",
+	"quests.transport.paragon.task": "Any Paragon Bus",
+
+	"quests.transport.citadel.title": "Citadel Trucks",
+	"quests.transport.citadel.subtitle": "As Seen in Trucker Life Magazine",
+	"quests.transport.citadel.desc": "This behemoth of the road can pull trailers of cargo, fluids, and even other cars or smaller trucks!",
+	"quests.transport.citadel.task.1": "Any Citadel Truck",
+	"quests.transport.citadel.task.2": "Any Citadel Dry Van",
+	"quests.transport.citadel.task.3": "Any Citadel Tanker Trailer",
+
+	"quests.transport.corallum.title": "Corallum Boats",
+	"quests.transport.corallum.subtitle": "Gone Whalin'",
+	"quests.transport.corallum.desc": "Not only is the Corallum faster than the Fisker, but it can also hold up to 9 passengers or crates!",
+	"quests.transport.corallum.task": "Any Corallum",
+
+	"quests.transport.trimotor.title": "Trimotor Aircraft",
+	"quests.transport.trimotor.subtitle": "Sky Whales are real!",
+	"quests.transport.trimotor.desc": "The biggest plane in the modpack, the Trimotor is perfect for hauling around a ton of cargo and/or passengers (up to 16). Just be sure your runway is long enough!",
+	"quests.transport.trimotor.task": "Any Trimotor Aircraft",
+
+	"quests.transport.bell206.title": "Bell 206 Helicopters",
+	"quests.transport.bell206.subtitle": "Get to the choppa!",
+	"quests.transport.bell206.desc": "The Bell 206 is an upgraded helicopter that can also carry up to 5 passengers, a bunch of cargo, and can even be equipped with a searchlight or hoist for rescuing people who forgot to bring ladders to their copper mine.",
+	"quests.transport.bell206.task.1": "Any Bell 206 Helicopter",
+
+	"quests.transport.comanche.title": "Comanche Aircraft",
+	"quests.transport.comanche.subtitle": "Reach for the skies!",
+	"quests.transport.comanche.desc": "The Comanche is a small and fast prop plane that can fit four passengers and some of their cargo. However, because of the lower wings, it might struggle to lift off on rough terrain.",
+	"quests.transport.comanche.task": "Any Comanche Aircraft",
+
+	"quests.transport.skyhawk.title": "Skyhawk Aircraft",
+	"quests.transport.skyhawk.subtitle": "Fly like an eagle",
+	"quests.transport.skyhawk.desc": "The Skyhawk is an easy to fly prop plane that can fit four passengers and some of their cargo. It's not &oquite&r as fast as the Comanche, but it can handle bumpy runways more easily.",
+	"quests.transport.skyhawk.task": "Any Skyhawk Aircraft",
+
+	"quests.transport.mercedes.title": "Mercedes Cars",
+	"quests.transport.mercedes.subtitle": "Did you know each E is pronounced differently?",
+	"quests.transport.mercedes.desc": "Of the two cars available in &6HV&r, the Mercedes is slightly more focused on utility instead of speed. That being said, it's still significantly faster than the earlier cars, so it can be well worth making.",
+	"quests.transport.mercedes.task": "Any Mercedes Car",
+
+	"quests.transport.mustang.title": "Mustang Cars",
+	"quests.transport.mustang.subtitle": "Microplastics last 500 years but a Mercedes lasts forever",
+	"quests.transport.mustang.desc": "If you want to set land speed records against your friends or just get from point A to point B faster, the Mustang is the pinnacle of fast cars.",
+	"quests.transport.mustang.task": "Any Mustang Car",
+
+	"quests.space_survival.rover.title": "Space Rover",
+	"quests.space_survival.rover.subtitle": "Your getaway vehicle",
+	"quests.space_survival.rover.desc": "You had to leave your fancy jetpack at home, there's no atmosphere for normal airplanes or cars, and horses can't survive, so how are you supposed to get around?\n\nThe &bRover&r is a space-capable vehicle that can hold up to two passengers, can run on normal vehicle fuel as well as Rocket Fuel, and even has an inventory and radio that can play real-world radio stations!",
+
+	"quests.transport.starfish.title": "Starfish Boats",
+	"quests.transport.starfish.subtitle": "Gone Jetskiing",
+	"quests.transport.starfish.desc": "Show those losers in the rowboats who's boss with this fast boat that's also capable of carrying seven passengers.",
+	"quests.transport.starfish.task": "Any Starfish Boat",
+
+	"quests.transport.vulcanair.title": "Vulcanair Aircraft",
+	"quests.transport.vulcanair.subtitle": "What's the deal with airline food?",
+	"quests.transport.vulcanair.desc": "The vulcanair can take six passengers along on a fast, easy to pilot ride anywhere in the world!\n\nIf you're a fan of taking photos, this plane also comes with a camera so you can keep an eye on what your neighbour is up to.",
+	"quests.transport.vulcanair.task": "Any Vulcanair Aircraft",
+
+	"quests.transport.e500.title": "Eclipse e500 Aircraft",
+	"quests.transport.e500.subtitle": "Jet Fuel can't melt Steel Mining Supports",
+	"quests.transport.e500.desc": "The Eclipse is TFG's only jet plane, capable of carrying six passengers. Perfect for any modern airport or if you just wanna show off!",
+	"quests.transport.e500.task": "Any Eclipse Aircraft",
+
+	"quests.space_survival.soarer.title": "Soarer",
+	"quests.space_survival.soarer.subtitle": "Need a lift?",
+	"quests.space_survival.soarer.desc": "Airplanes don't work on Mars, and your space suit doesn't have a jetpack, so there's no other way to fly, right?\n\nIf you're able to find an elusive &4Soarer&r, you can tame them with Raw Fish and equip them with a Saddle to glide through the Martian skies with ease.\n\nThey can't fly forever though, indicated by the wing icons on the top left, and will need to land occasionally. (You can feed them more Raw Fish to speed up their recovery.)\n\nStill, they're a great option for long-distance travel, and won't upset the sandworm either!\n\n&9Note&r: Soarers are unable to survive on particularly hot planets such as &6Venus&r.",
+	"quests.space_survival.soarer.task": "Find a Soarer",
+
+	"quests.space_survival.surfer.title": "Surfer",
+	"quests.space_survival.surfer.subtitle": "Need a swim?",
+	"quests.space_survival.surfer.desc": "&bSurfers&r can be found in the small bodies of water on Mars. You can tame them by sneaking up to them while they're lying on the shore, and feeding them raw fish. Once tamed, you can equip them with a saddle to swim quickly underwater too.\n\nThis doesn't sound particularly useful on Mars, but remember that you can transport entities around through AE2's Spatial Storage Disks, and there will be a certain oceanic icy moon in the future...\n\n&9Note&r: Surfers are unable to survive on particularly hot planets such as &6Venus&r.",
+	"quests.space_survival.surfer.task": "Find a Surfer",
+
+	"quests.space_survival.charger.title": "Charger",
+	"quests.space_survival.charger.subtitle": "Chaaaaaaaaarge!",
+	"quests.space_survival.charger.desc": "&bChargers&r are large green herbivores that can be found roaming around on Mars. You can tame them with any Martian crop, but don't feed them &cBeetroot&r...\n\nOnce tamed, you can equip them with a saddle and Armor for some extra defence, hold down Spacebar to charge forward in a straight line (dealing extra damage and knockback), or press the &eSpecial Ability&r keybind (default &9C&r) for a headbutt attack.\n\nFeeding them more Martian crops will restore their health.\n\n&9Note&r: Chargers are unable to survive on particularly hot planets such as &6Venus&r.",
+	"quests.space_survival.charger.task": "Find a Charger",
+
+	"quests.space_survival.walker.title": "Walker",
+	"quests.space_survival.walker.subtitle": "Martian Truck",
+	"quests.space_survival.walker.desc": "Traveled a bit on Mars and want to move your base, or just want to travel around on a collosal mount with your friends? The &bWalker&r is a huge herbivore you can tame with any Martian crop, and when tamed, you can equip them with a saddle and chest to carry up to four passengers and their cargo.\n\n&9Note&r: Walkers are unable to survive on particularly hot planets such as &6Venus&r.",
+	"quests.space_survival.walker.task": "Find a Walker",
+
+	"quests.transport.platerodrilus.title": "Platerodrilus",
+	"quests.transport.platerodrilus.subtitle": "Oversized woodlouse",
+	"quests.transport.platerodrilus.desc": "Tired of running away screaming from all the yucky mean bugs on Venus? The Platerodrilus can be tamed with &bVenus Cacti&r and then ridden like other mounts, moving at a fast speed with a strong jump!\n\nFeeding them more cacti will restore their health.\n\n&9Note&r: Platerodrilus are unable to survive on particularly cold planets such as &cMars&r.",
+	"quests.transport.platerodrilus.task": "Find a Platerodrilus",
+
+	"quests.transport.ancient_beetle.title": "Titan Horned Beetle",
+	"quests.transport.ancient_beetle.subtitle": "Don't get caught in the rain!",
+	"quests.transport.ancient_beetle.desc": "It might be difficult to find one of these massive beetles, but when you do, try to tame them with &bVenus Cacti&r. Raise their familiarity to equip them with a saddle, letting you ride them high into the air. \n\nWhile they move slower than the Platerodrilus, being able to fly above most of Venus' nasties is well worth it. If you decide to fight anyway, the beetle has a barrel roll charge attack that you can activate with &9C&r.\n\nFeeding them more cacti will restore their health.\n\n&9Note&r: Horned Beetles are unable to survive on particularly cold planets such as &cMars&r.",
+	"quests.transport.ancient_beetle.task": "Find a Titan Horned Beetle"
 }

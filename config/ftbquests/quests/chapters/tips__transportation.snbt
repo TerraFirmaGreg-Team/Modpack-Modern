@@ -13,7 +13,7 @@
 			rotation: 0.0d
 			width: 3.0d
 			x: 5.0d
-			y: -13.5d
+			y: -13.0d
 		}
 		{
 			alpha: 150
@@ -22,7 +22,7 @@
 			rotation: 0.0d
 			width: 7.0d
 			x: 11.5d
-			y: -9.0d
+			y: -8.5d
 		}
 		{
 			alpha: 150
@@ -31,7 +31,7 @@
 			rotation: 0.0d
 			width: 7.0d
 			x: -1.5d
-			y: -9.0d
+			y: -8.5d
 		}
 		{
 			alpha: 100
@@ -260,7 +260,7 @@
 			rotation: 0.0d
 			width: 7.0d
 			x: 3.5d
-			y: -12.0d
+			y: -11.5d
 		}
 		{
 			alpha: 100
@@ -809,7 +809,7 @@
 			rotation: 0.0d
 			width: 7.0d
 			x: 14.0d
-			y: -12.5d
+			y: -12.0d
 		}
 		{
 			alpha: 150
@@ -818,7 +818,7 @@
 			rotation: 0.0d
 			width: 7.0d
 			x: 26.5d
-			y: -10.0d
+			y: -9.5d
 		}
 		{
 			alpha: 150
@@ -827,7 +827,7 @@
 			rotation: 0.0d
 			width: 7.0d
 			x: 17.0d
-			y: -11.5d
+			y: -11.0d
 		}
 		{
 			alpha: 150
@@ -836,7 +836,7 @@
 			rotation: 0.0d
 			width: 7.0d
 			x: 22.5d
-			y: -8.0d
+			y: -7.5d
 		}
 		{
 			alpha: 150
@@ -845,7 +845,7 @@
 			rotation: 0.0d
 			width: 7.0d
 			x: 22.5d
-			y: -14.5d
+			y: -14.0d
 		}
 		{
 			height: 1.0d
@@ -853,7 +853,7 @@
 			rotation: 0.0d
 			width: 1.0d
 			x: 20.0d
-			y: -20.5d
+			y: -19.0d
 		}
 		{
 			height: 1.0d
@@ -861,7 +861,7 @@
 			rotation: 0.0d
 			width: 1.0d
 			x: 18.5d
-			y: -18.5d
+			y: -17.0d
 		}
 		{
 			height: 1.0d
@@ -869,7 +869,7 @@
 			rotation: 0.0d
 			width: 1.0d
 			x: 23.0d
-			y: -19.5d
+			y: -18.0d
 		}
 		{
 			height: 1.0d
@@ -877,7 +877,7 @@
 			rotation: 0.0d
 			width: 1.0d
 			x: 25.0d
-			y: -17.5d
+			y: -16.0d
 		}
 		{
 			height: 1.0d
@@ -885,7 +885,7 @@
 			rotation: 0.0d
 			width: 1.0d
 			x: 26.5d
-			y: -21.5d
+			y: -20.0d
 		}
 		{
 			height: 1.0d
@@ -893,6 +893,88 @@
 			rotation: 0.0d
 			width: 1.0d
 			x: 29.0d
+			y: -18.0d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 32.5d
+			y: -4.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 32.5d
+			y: -2.5d
+		}
+		{
+			alpha: 150
+			height: 3.5d
+			image: "minecraft:textures/particle/big_smoke_2.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: 29.5d
+			y: -8.5d
+		}
+		{
+			alpha: 150
+			height: 3.5d
+			image: "minecraft:textures/particle/big_smoke_3.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: 33.0d
+			y: -12.0d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 32.5d
+			y: 2.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 32.5d
+			y: 4.5d
+		}
+		{
+			height: 1.0d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 1.0d
+			x: 30.0d
+			y: -19.0d
+		}
+		{
+			height: 1.0d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 1.0d
+			x: 32.0d
+			y: -15.5d
+		}
+		{
+			height: 1.0d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 1.0d
+			x: 33.5d
 			y: -19.5d
 		}
 	]
@@ -901,7 +983,6 @@
 		{
 			id: "4C2F62D5F7254F2E"
 			linked_quest: "159A0DAEE55DCAC0"
-			shape: "heart"
 			x: 23.0d
 			y: -1.0d
 		}
@@ -927,13 +1008,13 @@
 			id: "39C9C56605F27BC1"
 			linked_quest: "36F08D50D4363A7B"
 			x: 0.0d
-			y: -3.5d
+			y: -2.5d
 		}
 		{
 			id: "5AE5B6CD78E73833"
 			linked_quest: "669A31E7B085A3DB"
 			x: 0.0d
-			y: -9.0d
+			y: -8.0d
 		}
 		{
 			id: "7F53254008E03641"
@@ -970,7 +1051,7 @@
 			id: "3972FA9B1C2C6E60"
 			linked_quest: "685E1C207FCAFECE"
 			x: 6.0d
-			y: -9.0d
+			y: -8.0d
 		}
 		{
 			id: "3D8885B8803E2BD9"
@@ -982,25 +1063,25 @@
 			id: "07133BFEDE8782F9"
 			linked_quest: "21F70EACF6D81E6A"
 			x: 17.5d
-			y: -9.0d
+			y: -8.0d
 		}
 		{
 			id: "6762C009627A248B"
 			linked_quest: "56F3FEDDF440C8C5"
 			x: 23.0d
-			y: -9.0d
+			y: -8.0d
 		}
 		{
 			id: "56F1100069819EF0"
 			linked_quest: "3FBDC8552F7D8008"
 			x: 22.0d
-			y: -18.5d
+			y: -17.0d
 		}
 		{
 			id: "42CD8DDD96511F42"
 			linked_quest: "52AB0BDC64293253"
 			x: 26.5d
-			y: -18.5d
+			y: -17.0d
 		}
 		{
 			id: "6B6AF968658E37BD"
@@ -1019,6 +1100,12 @@
 			linked_quest: "379F434116632A89"
 			x: -3.0d
 			y: -1.0d
+		}
+		{
+			id: "46D55EED89807B09"
+			linked_quest: "18F2D96C0163B974"
+			x: 9.5d
+			y: -8.0d
 		}
 	]
 	quests: [
@@ -1101,7 +1188,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.supply_cart.title}"
-			x: -1.5d
+			x: -1.0d
 			y: -3.5d
 		}
 		{
@@ -1167,8 +1254,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.animal_cart.title}"
-			x: -1.5d
-			y: -4.5d
+			x: 0.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["36F08D50D4363A7B"]
@@ -1189,8 +1276,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.plow.title}"
-			x: -1.5d
-			y: -2.5d
+			x: 1.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -1352,33 +1439,18 @@
 		}
 		{
 			dependencies: ["5903C9AE3493EEED"]
-			description: [""]
+			description: ["{quests.transport.workshop.desc}"]
 			disable_toast: true
 			icon: "tfg:lv_universal_circuit"
 			id: "5BD8697CD77C4FC1"
 			shape: "octagon"
 			size: 1.5d
-			tasks: [
-				{
-					disable_toast: true
-					id: "1D9D345E47E88A76"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/lv)"
-						}
-					}
-					title: "Any #gtceu:circuits/lv"
-					type: "item"
-				}
-				{
-					id: "777E8690F984B469"
-					item: "tfg:automotive_workshop"
-					type: "item"
-				}
-			]
-			title: "{quests.combat_tips.lv_main.title}"
+			subtitle: "{quests.transport.workshop.subtitle}"
+			tasks: [{
+				id: "777E8690F984B469"
+				item: "tfg:automotive_workshop"
+				type: "item"
+			}]
 			x: 13.0d
 			y: 0.0d
 		}
@@ -1527,12 +1599,14 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: -9.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["3BE985DAF516E42D"]
+			description: ["{quests.transport.biplane.desc}"]
 			icon: "mts:automotives.biplane"
 			id: "3C452F4E743E06B2"
+			subtitle: "{quests.transport.biplane.subtitle}"
 			tasks: [
 				{
 					id: "082E183237537F26"
@@ -1549,17 +1623,19 @@
 						}
 					}
 					optional_task: true
-					title: "Any #mts:buzzard_upgrades"
+					title: "{quests.transport.biplane.task}"
 					type: "item"
 				}
 			]
 			x: 9.0d
-			y: -13.5d
+			y: -12.5d
 		}
 		{
 			dependencies: ["3BE985DAF516E42D"]
+			description: ["{quests.transport.boilerbox.desc}"]
 			icon: "mts:automotives.boilerbox"
 			id: "12000ED8E9172390"
+			subtitle: "{quests.transport.boilerbox.subtitle}"
 			tasks: [
 				{
 					id: "36B239D50F5B5BE7"
@@ -1576,7 +1652,7 @@
 						}
 					}
 					optional_task: true
-					title: "Any #mts:boilerbox_upgrades"
+					title: "{quests.transport.boilerbox.task}"
 					type: "item"
 				}
 			]
@@ -1585,8 +1661,9 @@
 		}
 		{
 			dependencies: ["5903C9AE3493EEED"]
-			description: ["quests.transport.immersive_vehicles.desc}"]
-			icon: "mts:mts.partscanner"
+			description: ["{quests.transport.immersive_vehicles.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/vehicles"
+			icon: "mts:automotives.ratchet"
 			id: "3BE985DAF516E42D"
 			rewards: [
 				{
@@ -1613,7 +1690,9 @@
 		}
 		{
 			dependencies: ["5BD8697CD77C4FC1"]
+			description: ["{quests.transport.pzl37b.desc}"]
 			id: "4103264B6392FBFB"
+			subtitle: "{quests.transport.pzl37b.subtitle}"
 			tasks: [{
 				id: "62CF6C9AA8AC8C1E"
 				item: {
@@ -1623,15 +1702,18 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:pzl37los)"
 					}
 				}
-				title: "Any #mts:pzl37los"
+				title: "{quests.transport.pzl37b.task}"
 				type: "item"
 			}]
+			title: "{quests.transport.pzl37b.title}"
 			x: 14.0d
-			y: -13.5d
+			y: -12.5d
 		}
 		{
 			dependencies: ["5BD8697CD77C4FC1"]
+			description: ["{quests.transport.pzlp11.desc}"]
 			id: "55EED06539EF03FC"
+			subtitle: "{quests.transport.pzlp11.subtitle}"
 			tasks: [{
 				id: "654C48D19AD83499"
 				item: {
@@ -1641,15 +1723,18 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:pzlp11)"
 					}
 				}
-				title: "Any #mts:pzlp11"
+				title: "{quests.transport.pzlp11.task}"
 				type: "item"
 			}]
+			title: "{quests.transport.pzlp11.title}"
 			x: 12.0d
-			y: -13.5d
+			y: -12.5d
 		}
 		{
 			dependencies: ["258335BDE0B7E1E7"]
+			description: ["{quests.transport.trimotor.desc}"]
 			id: "6409B86377BAB568"
+			subtitle: "{quests.transport.trimotor.subtitle}"
 			tasks: [{
 				id: "6057662B5EADE764"
 				item: {
@@ -1659,15 +1744,18 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:trimotor)"
 					}
 				}
-				title: "Any #mts:trimotor"
+				title: "{quests.transport.trimotor.task}"
 				type: "item"
 			}]
+			title: "{quests.transport.trimotor.title}"
 			x: 17.0d
-			y: -14.0d
+			y: -13.0d
 		}
 		{
 			dependencies: ["258335BDE0B7E1E7"]
+			description: ["{quests.transport.comanche.desc}"]
 			id: "41C562B02DBD9FDA"
+			subtitle: "{quests.transport.comanche.subtitle}"
 			tasks: [{
 				id: "7569D41895C4C916"
 				item: {
@@ -1677,15 +1765,18 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:comanche)"
 					}
 				}
-				title: "Any #mts:comanche"
+				title: "{quests.transport.comanche.task}"
 				type: "item"
 			}]
+			title: "{quests.transport.comanche.title}"
 			x: 17.0d
-			y: -13.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["258335BDE0B7E1E7"]
+			description: ["{quests.transport.skyhawk.desc}"]
 			id: "41D6C1D0DBE8A57E"
+			subtitle: "{quests.transport.skyhawk.subtitle}"
 			tasks: [{
 				id: "5162D01C44741984"
 				item: {
@@ -1695,15 +1786,18 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:skyhawk)"
 					}
 				}
-				title: "Any #mts:skyhawk"
+				title: "{quests.transport.skyhawk.task}"
 				type: "item"
 			}]
+			title: "{quests.transport.skyhawk.title}"
 			x: 18.0d
-			y: -13.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["5BD8697CD77C4FC1"]
+			description: ["{quests.transport.brotchen.desc}"]
 			id: "228F05F040AD6EEA"
+			subtitle: "{quests.transport.brotchen.subtitle}"
 			tasks: [
 				{
 					id: "3444C09A794FC161"
@@ -1714,7 +1808,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:brotchen)"
 						}
 					}
-					title: "Any #mts:brotchen"
+					title: "{quests.transport.brotchen.task}"
 					type: "item"
 				}
 				{
@@ -1724,12 +1818,15 @@
 					type: "item"
 				}
 			]
+			title: "{quests.transport.brotchen.title}"
 			x: 12.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["5BD8697CD77C4FC1"]
+			description: ["{quests.transport.bullfrog.desc}"]
 			id: "1F9033F99BE87B3C"
+			subtitle: "{quests.transport.bullfrog.subtitle}"
 			tasks: [{
 				id: "11C6A5EEE0EED56B"
 				item: {
@@ -1739,15 +1836,18 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:bullfrog)"
 					}
 				}
-				title: "Any #mts:bullfrog"
+				title: "{quests.transport.bullfrog.task}"
 				type: "item"
 			}]
+			title: "{quests.transport.bullfrog.title}"
 			x: 13.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["5BD8697CD77C4FC1"]
+			description: ["{quests.transport.scout.desc}"]
 			id: "1872CFB74565EFAE"
+			subtitle: "{quests.transport.scout.subtitle}"
 			tasks: [
 				{
 					id: "3F9EB44139D606A2"
@@ -1758,13 +1858,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:scout)"
 						}
 					}
-					title: "Any #mts:scout"
-					type: "item"
-				}
-				{
-					id: "3954ABA388492B83"
-					item: "mts:mtsofficialpack.scoutbedpickup"
-					optional_task: true
+					title: "{quests.transport.scout.task}"
 					type: "item"
 				}
 				{
@@ -1785,13 +1879,28 @@
 					optional_task: true
 					type: "item"
 				}
+				{
+					id: "0AF3450063122A1B"
+					item: "mts:mtsofficialpack.aa_turret_762"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3BF15409F1856803"
+					item: "mts:mtsofficialpack.spotlight"
+					optional_task: true
+					type: "item"
+				}
 			]
+			title: "{quests.transport.scout.title}"
 			x: 14.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["5BD8697CD77C4FC1"]
+			description: ["{quests.transport.gmcbrig.desc}"]
 			id: "1932CC4C464454A7"
+			subtitle: "{quests.transport.gmcbrig.subtitle}"
 			tasks: [
 				{
 					id: "692D5B2BBFD5EEF3"
@@ -1802,7 +1911,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:gmcbrig)"
 						}
 					}
-					title: "Any #mts:gmcbrig"
+					title: "{quests.transport.gmcbrig.task.1}"
 					type: "item"
 				}
 				{
@@ -1814,7 +1923,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:brigtrailers)"
 						}
 					}
-					title: "Any #mts:brigtrailers"
+					title: "{quests.transport.gmcbrig.task.2}"
 					type: "item"
 				}
 				{
@@ -1824,12 +1933,15 @@
 					type: "item"
 				}
 			]
+			title: "{quests.transport.gmcbrig.title}"
 			x: 14.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["5BD8697CD77C4FC1"]
+			description: ["{quests.transport.fisker.desc}"]
 			id: "26EC654768FAB9DA"
+			subtitle: "{quests.transport.fisker.subtitle}"
 			tasks: [
 				{
 					id: "23024AAC3E7C90C9"
@@ -1840,7 +1952,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:fisker)"
 						}
 					}
-					title: "Any #mts:fisker"
+					title: "{quests.transport.fisker.task}"
 					type: "item"
 				}
 				{
@@ -1856,12 +1968,15 @@
 					type: "item"
 				}
 			]
+			title: "{quests.transport.fisker.title}"
 			x: 13.0d
 			y: 3.5d
 		}
 		{
 			dependencies: ["5BD8697CD77C4FC1"]
+			description: ["{quests.transport.quad.desc}"]
 			id: "4AAD388D98AA6443"
+			subtitle: "{quests.transport.quad.subtitle}"
 			tasks: [{
 				id: "6F628830817FABC3"
 				item: {
@@ -1871,15 +1986,18 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:quad)"
 					}
 				}
-				title: "Any #mts:quad"
+				title: "{quests.transport.quad.task}"
 				type: "item"
 			}]
+			title: "{quests.transport.quad.title}"
 			x: 12.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["5BD8697CD77C4FC1"]
+			description: ["{quests.transport.silver.desc}"]
 			id: "20B0FA8A80AFDB2E"
+			subtitle: "{quests.transport.silver.subtitle}"
 			tasks: [{
 				id: "0D0DCF102AC36666"
 				item: {
@@ -1889,15 +2007,18 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:silver)"
 					}
 				}
-				title: "Any #mts:silver"
+				title: "{quests.transport.silver.task}"
 				type: "item"
 			}]
+			title: "{quests.transport.silver.title}"
 			x: 13.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["258335BDE0B7E1E7"]
+			description: ["{quests.transport.bell206.desc}"]
 			id: "19798B9E0E1B1052"
+			subtitle: "{quests.transport.bell206.subtitle}"
 			tasks: [
 				{
 					id: "478B79FEA51CE0E1"
@@ -1908,7 +2029,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:bell206)"
 						}
 					}
-					title: "Any #mts:bell206"
+					title: "{quests.transport.bell206.task.1}"
 					type: "item"
 				}
 				{
@@ -1921,7 +2042,7 @@
 						}
 					}
 					optional_task: true
-					title: "Any #mts:helicopter_attachments"
+					title: "{quests.transport.bell47g.task.2}"
 					type: "item"
 				}
 				{
@@ -1943,12 +2064,15 @@
 					type: "item"
 				}
 			]
+			title: "{quests.transport.bell206.title}"
 			x: 18.0d
-			y: -14.0d
+			y: -13.0d
 		}
 		{
 			dependencies: ["5BD8697CD77C4FC1"]
+			description: ["{quests.transport.bell47g.desc}"]
 			id: "73E82DC2500DC417"
+			subtitle: "{quests.transport.bell47g.subtitle}"
 			tasks: [
 				{
 					id: "01AA537FA8AAF380"
@@ -1959,7 +2083,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:bell47g)"
 						}
 					}
-					title: "Any #mts:bell47g"
+					title: "{quests.transport.bell47g.task.1}"
 					type: "item"
 				}
 				{
@@ -1972,7 +2096,7 @@
 						}
 					}
 					optional_task: true
-					title: "Any #mts:helicopter_attachments"
+					title: "{quests.transport.bell47g.task.2}"
 					type: "item"
 				}
 				{
@@ -1988,12 +2112,15 @@
 					type: "item"
 				}
 			]
+			title: "{quests.transport.bell47g.title}"
 			x: 13.0d
-			y: -13.5d
+			y: -12.5d
 		}
 		{
 			dependencies: ["258335BDE0B7E1E7"]
+			description: ["{quests.transport.corallum.desc}"]
 			id: "6184F38C7F7F51D0"
+			subtitle: "{quests.transport.corallum.subtitle}"
 			tasks: [
 				{
 					id: "4605580A40F25A17"
@@ -2004,7 +2131,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:corallum)"
 						}
 					}
-					title: "Any #mts:corallum"
+					title: "{quests.transport.corallum.task}"
 					type: "item"
 				}
 				{
@@ -2020,12 +2147,15 @@
 					type: "item"
 				}
 			]
+			title: "{quests.transport.corallum.title}"
 			x: 17.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["258335BDE0B7E1E7"]
+			description: ["{quests.transport.adventure.desc}"]
 			id: "760CC436900B7FE5"
+			subtitle: "{quests.transport.adventure.subtitle}"
 			tasks: [
 				{
 					id: "4CBCCA855A1E1CF9"
@@ -2036,7 +2166,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:adventure)"
 						}
 					}
-					title: "Any #mts:adventure"
+					title: "{quests.transport.adventure.task}"
 					type: "item"
 				}
 				{
@@ -2052,12 +2182,15 @@
 					type: "item"
 				}
 			]
+			title: "{quests.transport.adventure.title}"
 			x: 17.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["258335BDE0B7E1E7"]
+			description: ["{quests.transport.keeper.desc}"]
 			id: "209602057E3C7A42"
+			subtitle: "{quests.transport.keeper.subtitle}"
 			tasks: [
 				{
 					id: "37D9FB1F1F4B05C9"
@@ -2068,7 +2201,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:keeper)"
 						}
 					}
-					title: "Any #mts:keeper"
+					title: "{quests.transport.keeper.task}"
 					type: "item"
 				}
 				{
@@ -2096,12 +2229,15 @@
 					type: "item"
 				}
 			]
+			title: "{quests.transport.keeper.title}"
 			x: 18.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["258335BDE0B7E1E7"]
+			description: ["{quests.transport.paragon.desc}"]
 			id: "7B608C8D0ED21E9F"
+			subtitle: "{quests.transport.paragon.subtitle}"
 			tasks: [{
 				id: "5FE722B459CBAB22"
 				item: {
@@ -2111,15 +2247,18 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:paragon)"
 					}
 				}
-				title: "Any #mts:paragon"
+				title: "{quests.transport.paragon.task}"
 				type: "item"
 			}]
+			title: "{quests.transport.paragon.title}"
 			x: 17.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["258335BDE0B7E1E7"]
+			description: ["{quests.transport.citadel.desc}"]
 			id: "50086AEB63645287"
+			subtitle: "{quests.transport.citadel.subtitle}"
 			tasks: [
 				{
 					id: "4C6FD1A9A6188B67"
@@ -2130,7 +2269,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:citadel)"
 						}
 					}
-					title: "Any #mts:citadel"
+					title: "{quests.transport.citadel.task.1}"
 					type: "item"
 				}
 				{
@@ -2143,7 +2282,7 @@
 						}
 					}
 					optional_task: true
-					title: "Any #mts:dry_van"
+					title: "{quests.transport.citadel.task.2}"
 					type: "item"
 				}
 				{
@@ -2156,7 +2295,7 @@
 						}
 					}
 					optional_task: true
-					title: "Any #mts:tanker"
+					title: "{quests.transport.citadel.task.3}"
 					type: "item"
 				}
 				{
@@ -2172,23 +2311,37 @@
 					type: "item"
 				}
 			]
+			title: "{quests.transport.citadel.title}"
 			x: 18.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["258335BDE0B7E1E7"]
+			description: ["{quests.transport.fire_truck.desc}"]
+			icon: "mts:mtsofficialpack.firetruck"
 			id: "58F11110F0659190"
-			tasks: [{
-				id: "0206F95CCBC235CF"
-				item: "mts:mtsofficialpack.firetruck"
-				type: "item"
-			}]
+			subtitle: "{quests.transport.fire_truck.subtitle}"
+			tasks: [
+				{
+					id: "0206F95CCBC235CF"
+					item: "mts:mtsofficialpack.firetruck"
+					type: "item"
+				}
+				{
+					id: "6849F550FED57FB0"
+					item: "mts:mtsofficialpack.watercannon_proj"
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: 16.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["02349F377C6B2475"]
+			description: ["{quests.transport.e500.desc}"]
 			id: "031841EA4D914926"
+			subtitle: "{quests.transport.e500.subtitle}"
 			tasks: [{
 				id: "194DFB721876D211"
 				item: {
@@ -2198,15 +2351,18 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:e500)"
 					}
 				}
-				title: "Any #mts:e500"
+				title: "{quests.transport.e500.task}"
 				type: "item"
 			}]
+			title: "{quests.transport.e500.title}"
 			x: 22.5d
-			y: -13.5d
+			y: -12.5d
 		}
 		{
 			dependencies: ["02349F377C6B2475"]
+			description: ["{quests.transport.vulcanair.desc}"]
 			id: "4652B6FB10B34F6C"
+			subtitle: "{quests.transport.vulcanair.subtitle}"
 			tasks: [
 				{
 					id: "542CDC7EDBB9D8CB"
@@ -2217,7 +2373,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:vulcanair)"
 						}
 					}
-					title: "Any #mts:vulcanair"
+					title: "{quests.transport.vulcanair.task}"
 					type: "item"
 				}
 				{
@@ -2227,12 +2383,15 @@
 					type: "item"
 				}
 			]
+			title: "{quests.transport.vulcanair.title}"
 			x: 21.5d
-			y: -13.5d
+			y: -12.5d
 		}
 		{
 			dependencies: ["02349F377C6B2475"]
+			description: ["{quests.transport.starfish.desc}"]
 			id: "48F3C4EF4EEB6C02"
+			subtitle: "{quests.transport.starfish.subtitle}"
 			tasks: [{
 				id: "601C1914FDC1C89E"
 				item: {
@@ -2242,15 +2401,18 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:starfish)"
 					}
 				}
-				title: "Any #mts:starfish"
+				title: "{quests.transport.starfish.task}"
 				type: "item"
 			}]
+			title: "{quests.transport.starfish.title}"
 			x: 22.0d
 			y: 3.5d
 		}
 		{
 			dependencies: ["02349F377C6B2475"]
+			description: ["{quests.transport.mustang.desc}"]
 			id: "4A309335F188BE34"
+			subtitle: "{quests.transport.mustang.subtitle}"
 			tasks: [{
 				id: "3032299CFC5B5253"
 				item: {
@@ -2260,15 +2422,18 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:fordmustang69)"
 					}
 				}
-				title: "Any #mts:fordmustang69"
+				title: "{quests.transport.mustang.task}"
 				type: "item"
 			}]
+			title: "{quests.transport.mustang.title}"
 			x: 23.0d
 			y: -3.5d
 		}
 		{
 			dependencies: ["02349F377C6B2475"]
+			description: ["{quests.transport.mercedes.desc}"]
 			id: "319EE508746310D8"
+			subtitle: "{quests.transport.mercedes.subtitle}"
 			tasks: [{
 				id: "663D24DD8072DBBA"
 				item: {
@@ -2278,9 +2443,10 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(mts:merc230)"
 					}
 				}
-				title: "Any #mts:merc230"
+				title: "{quests.transport.mercedes.task}"
 				type: "item"
 			}]
+			title: "{quests.transport.mercedes.title}"
 			x: 22.0d
 			y: -3.5d
 		}
@@ -2298,11 +2464,11 @@
 				type: "item"
 			}]
 			x: 22.0d
-			y: -9.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["5CEF31AC98120044"]
-			description: ["soarer, surfer, walker, charger"]
+			description: ["{quests.space_survival.soarer.desc}"]
 			guide_page: "tfg:field_guide tfg:mars/mars_fauna"
 			icon: {
 				Count: 1
@@ -2319,6 +2485,7 @@
 				id: "wan_ancient_beasts:soarer_egg"
 			}
 			id: "515A863161B1DF3C"
+			subtitle: "{quests.space_survival.soarer.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -2337,27 +2504,36 @@
 				id: "3BE1445962BA49E8"
 				observe_type: 5
 				timer: 0L
+				title: "{quests.space_survival.soarer.task}"
 				to_observe: "wan_ancient_beasts:soarer"
 				type: "observation"
 			}]
-			x: 26.0d
-			y: -3.0d
+			title: "{quests.space_survival.soarer.title}"
+			x: 26.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["1065E6CE51C7F883"]
-			description: ["the two bugs"]
+			description: ["{quests.transport.platerodrilus.desc}"]
+			guide_page: "tfg:field_guide tfg:venus/venus_fauna"
 			id: "2DE6BFD305F5FBF7"
+			subtitle: "{quests.transport.platerodrilus.subtitle}"
 			tasks: [{
-				id: "25E3412A502D5D55"
-				item: "arthropocolypse:platerodrilus_spawn_egg"
-				type: "item"
+				icon: "arthropocolypse:platerodrilus_spawn_egg"
+				id: "74EACD957D56B982"
+				observe_type: 5
+				timer: 0L
+				title: "{quests.transport.platerodrilus.task}"
+				to_observe: "arthropocolypse:platerodrilus"
+				type: "observation"
 			}]
+			title: "{quests.transport.platerodrilus.title}"
 			x: 30.5d
 			y: -3.5d
 		}
 		{
 			dependencies: ["5CEF31AC98120044"]
-			description: ["soarer, surfer, walker, charger"]
+			description: ["{quests.space_survival.charger.desc}"]
 			guide_page: "tfg:field_guide tfg:mars/mars_fauna"
 			icon: {
 				Count: 1
@@ -2374,6 +2550,7 @@
 				id: "wan_ancient_beasts:charger_egg"
 			}
 			id: "4B908EB671E66C3A"
+			subtitle: "{quests.space_survival.charger.subtitle}"
 			tasks: [
 				{
 					icon: {
@@ -2393,6 +2570,7 @@
 					id: "0C0122DC75AB6907"
 					observe_type: 5
 					timer: 0L
+					title: "{quests.space_survival.charger.task}"
 					to_observe: "wan_ancient_beasts:charger"
 					type: "observation"
 				}
@@ -2410,12 +2588,13 @@
 					type: "item"
 				}
 			]
+			title: "{quests.space_survival.charger.title}"
 			x: 27.0d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["5CEF31AC98120044"]
-			description: ["soarer, surfer, walker, charger"]
+			description: ["{quests.space_survival.walker.desc}"]
 			guide_page: "tfg:field_guide tfg:mars/mars_fauna"
 			icon: {
 				Count: 1
@@ -2432,6 +2611,7 @@
 				id: "wan_ancient_beasts:walker_egg"
 			}
 			id: "15E98AE9E028801B"
+			subtitle: "{quests.space_survival.walker.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -2450,15 +2630,17 @@
 				id: "382C9136C882E0C7"
 				observe_type: 5
 				timer: 0L
+				title: "{quests.space_survival.walker.task}"
 				to_observe: "wan_ancient_beasts:walker"
 				type: "observation"
 			}]
+			title: "{quests.space_survival.walker.title}"
 			x: 26.0d
-			y: -4.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["5CEF31AC98120044"]
-			description: ["soarer, surfer, walker, charger"]
+			description: ["{quests.space_survival.surfer.desc}"]
 			guide_page: "tfg:field_guide tfg:mars/mars_fauna"
 			icon: {
 				Count: 1
@@ -2475,6 +2657,7 @@
 				id: "wan_ancient_beasts:surfer_egg"
 			}
 			id: "1541F0C1C0614AF4"
+			subtitle: "{quests.space_survival.surfer.subtitle}"
 			tasks: [
 				{
 					icon: {
@@ -2494,6 +2677,7 @@
 					id: "5D8DF0B0A8B77926"
 					observe_type: 5
 					timer: 0L
+					title: "{quests.space_survival.surfer.task}"
 					to_observe: "tfg:surfer"
 					type: "observation"
 				}
@@ -2510,8 +2694,51 @@
 					type: "item"
 				}
 			]
-			x: 27.0d
-			y: -4.0d
+			title: "{quests.space_survival.surfer.title}"
+			x: 26.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5BD8697CD77C4FC1"]
+			description: ["{quests.transport.universal_fuel.desc}"]
+			icon: "tfg:universal_vehicle_fuel_bucket"
+			id: "7DDC516E3CDFFC1B"
+			subtitle: "{quests.transport.universal_fuel.subtitle}"
+			tasks: [
+				{
+					id: "74D731A56CD27F70"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+				{
+					id: "1B54508775E939AF"
+					item: "tfg:universal_vehicle_fuel_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{quests.transport.universal_fuel.title}"
+			x: 14.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1065E6CE51C7F883"]
+			description: ["{quests.transport.ancient_beetle.desc}"]
+			guide_page: "tfg:field_guide tfg:venus/venus_fauna"
+			id: "210664E49DC2A80B"
+			subtitle: "{quests.transport.ancient_beetle.subtitle}"
+			tasks: [{
+				icon: "arthropocolypse:scarab_spawn_egg"
+				id: "5BD1FBFEA429D6A9"
+				observe_type: 5
+				timer: 0L
+				title: "{quests.transport.ancient_beetle.task}"
+				to_observe: "aliencraft_kepler:ancient_beetle"
+				type: "observation"
+			}]
+			title: "{quests.transport.ancient_beetle.title}"
+			x: 30.5d
+			y: -8.0d
 		}
 	]
 	subtitle: ["{quests.transport.subtitle}"]

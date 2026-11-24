@@ -9,12 +9,16 @@
 			"comment": "If true, only OPs will be able to edit signs on servers.  Does not affect client worlds."
 		},
 		"opPickupVehiclesOnly": {
-			"value": true,
+			"value": false,
 			"comment": "If true, only OPs will be able to pick up vehicles with wrenches.  Does not affect client worlds."
 		},
 		"creativePickupVehiclesOnly": {
 			"value": true,
 			"comment": "If true, vehicles can only be picked up in creative mode."
+		},
+		"preventBlockBreakingWhileRiding": {
+			"value": false,
+			"comment": "If true, players seated in vehicles or mounted parts cannot break blocks by hand or with held tools."
 		},
 		"keyRequiredToStartVehicles": {
 			"value": false,
@@ -29,7 +33,7 @@
 			"comment": "If true, vehicles will be chunkloaded when on roads/tracks.  This allows them to travel into unloaded chunks."
 		},
 		"doLegacyLightCompats": {
-			"value": true,
+			"value": false,
 			"comment": "If true, legacy compatibility code will be performed on all models to make their lights work with newer versions.  This code will significantly slow down boot times due to needing to parse all models on boot, however, packs may not have functional lights without it.  Choose wisely if you want speed or features."
 		},
 		"useHSV": {
@@ -133,7 +137,9 @@
 		},
 		"engineDimensionWhitelist": {
 			"value": [
-				"overworld"
+				"minecraft:overworld",
+				"minecraft:the_nether",
+				"ad_astra:venus"
 			],
 			"comment": "Whitelist of dimension names where engines will only be alowed to work.  Overrides the blacklist if this exists."
 		},
@@ -179,7 +185,7 @@
 			"comment": "Whether or not bullets/bombs can break blocks when they hit them.  This will also disable explosive block breakage (though not explosions themselves) and prevent incendiary bullets from setting blocks on fire."
 		},
 		"bulletExplosions": {
-			"value": false,
+			"value": true,
 			"comment": "Whether or not bullets/bombs will blow up.  This does not disable block breakage, but it will pretty much nerf all block mass-destruction weapons."
 		},
 		"vehicleBlockBreaking": {
@@ -187,11 +193,11 @@
 			"comment": "Whether or not vehicles can break blocks when they run into them or blow up.  If false, vehicles will simply stop when they hit blocks."
 		},
 		"vehicleDestruction": {
-			"value": false,
+			"value": true,
 			"comment": "Whether or not vehicles can be destroyed by ramming into blocks at high speeds.  Set this to false if you don't like loosing vehicles to badly-placed walls."
 		},
 		"vehicleExplosions": {
-			"value": false,
+			"value": true,
 			"comment": "Whether or not vehicles explode when crashed or shot down.  If this is false, vehicles will simply poof when they crash."
 		},
 		"creativePlayerDamage": {
@@ -207,7 +213,7 @@
 			"comment": "Whether or not velocity is ignored when calculating wheel damage."
 		},
 		"allowExternalDamage": {
-			"value": false,
+			"value": true,
 			"comment": "Whether or not non-IV things can damage vehicles.  This is normally false, as external damage is a hassle for most people, but can be true if you want other mod's guns to be able to attack vehicles in addition to IV's."
 		},
 		"propellerDamageFactor": {
@@ -222,6 +228,10 @@
 			"value": 1.0,
 			"comment": "Factor for damage caused by wheels on vehicles."
 		},
+		"blockCrashDamageFactor": {
+			"value": 1.0,
+			"comment": "Factor for damage received by vehicles when they crash into blocks and use crash speed thresholds."
+		},
 		"crashDamageFactor": {
 			"value": 1.0,
 			"comment": "Factor for damage caused by crashes."
@@ -229,6 +239,14 @@
 		"bulletDamageFactor": {
 			"value": 1.0,
 			"comment": "Factor for damage caused by bullets on vehicles."
+		},
+		"cameraShakeFactor": {
+			"value": 1.0,
+			"comment": "Factor applied to camera shake from nearby bullet explosions.  Set this to 0 to disable explosion camera shake."
+		},
+		"gunCameraShakeFactor": {
+			"value": 0.25,
+			"comment": "Factor applied to camera shake from nearby gunshots.  Set this to 0 to disable gunshot camera shake."
 		},
 		"wheelDamageMinimumVelocity": {
 			"value": 0.2,
@@ -246,14 +264,31 @@
 		}
 	},
 	"fuel": {
-		"comment1": "The following section is used for fuel configs for engines.  Each entry here is a single fuel type for engines.",
-		"comment2": "Inside each entry exist values for the potency of the fluids that can be considered to be that fuel type.",
-		"comment3": "You can make engines take different types of fluids for their fuels by editing these values.  See the in-game handbook for more information.",
-		"comment4": "If you are having troubles getting the name for a particular fluid, run the game with the mods you want and check the 'lastLoadedFluids' list.  This contains all the fluids that were present during the last run of the game.",
-		"comment5": "The first entry in the list is the registered fluid name, while the second entry will be the displayed name.  Only use the first name, as the second name changes based on game language settings.",
+		"_comment": [
+			"The following section is used for fuel configs for engines.",
+			"Each entry here is a single fuel type / fuel category for engines.",
+			"",
+			"Example: Avgas is not a real fluid. It is a category. An engine can use the avgas category for fuel.",
+			"In the avgas category, there is lava and gasoline. This means an avgas-type engine can use lava and gasoline fluids.",
+			"",
+			"You can make engines take different types of fluids for their fuels by editing these values.",
+			"For example, you can add 'creosote' to 'avgas', and now any avgas engine can also use creosote oil for fuel.",
+			"",
+			"The number is the potency of the fuel.",
+			"Higher potency reduces consumption, but does not affect engine power.",
+			"This means a fluid with potency 2.0 lasts twice as long / the engine consumes only half its fuel rate for the same performance.",
+			"",
+			"If you want to add a fluid as fuel but do not know the correct name, run the game with the mods you want and check the 'lastLoadedFluids' list.",
+			"This contains all the fluids that were present during the last run of the game.",
+			"The first entry in the list is the registered fluid name, while the second entry will be the displayed name.",
+			"Only use the first name, as the second name changes based on game language settings!"
+		],
 		"fuels": {
 			"diesel": {
-				"universal_vehicle_fuel": 1.0
+				"universal_vehicle_fuel": 1.0,
+				"diesel": 1.0,
+				"bio_diesel": 1.0,
+				"cetane_boosted_diesel": 1.2
 			},
 			"furnace": {
 				"lava": 1.0
@@ -262,28 +297,35 @@
 				"lava": 1.0
 			},
 			"avgas": {
-				"universal_vehicle_fuel": 1.0
+				"universal_vehicle_fuel": 1.0,
+				"diesel": 1.0,
+				"bio_diesel": 1.0,
+				"cetane_boosted_diesel": 1.2,
+				"gasoline": 1.0,
+				"high_octane_gasoline": 1.2
 			},
 			"gasoline": {
-				"universal_vehicle_fuel": 1.0
+				"universal_vehicle_fuel": 1.0,
+				"gasoline": 1.0,
+				"high_octane_gasoline": 1.2
 			},
 			"lava": {
 				"lava": 1.0,
 				"creosote": 0.8,
-				"tallow": 0.8,
-				"seed_oil": 0.8,
-				"peanut_oil": 0.8,
-				"olive_oil": 0.8,
-				"soybean_oil": 0.8,
-				"fish_oil": 0.8,
-				"palm_oil": 0.8,
+				"tallow": 1.0,
+				"seed_oil": 1.0,
+				"peanut_oil": 1.0,
+				"olive_oil": 1.0,
+				"soybean_oil": 1.0,
+				"fish_oil": 1.0,
+				"palm_oil": 1.0,
 				"biomass": 0.8,
 				"oil": 1.0,
 				"oil_light": 1.0,
 				"oil_medium": 1.0,
-				"oil_heavy": 1.0
+				"oil_heavy": 1.0,
+				"universal_vehicle_fuel": 1.0
 			}
-		},
-		"lastLoadedFluids": {}
+		}
 	}
 }

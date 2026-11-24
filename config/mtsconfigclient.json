@@ -1,360 +1,1166 @@
 {
-  "renderingSettings": {
-    "renderHUD_1P": {
-      "value": true,
-      "comment": "If false, the HUD in vehicles will not render in 1st-person mode."
+    "renderingSettings": {
+        "renderHUD_1P": {
+            "value": true,
+            "comment": "If false, the HUD in vehicles will not render in 1st-person mode."
+        },
+        "renderHUD_3P": {
+            "value": true,
+            "comment": "If false, the HUD in vehicles will not render in 3rd-person mode."
+        },
+        "fullHUD_1P": {
+            "value": false,
+            "comment": "If true, the full-size HUD will render in 1st-person rather than the half-size HUD."
+        },
+        "fullHUD_3P": {
+            "value": false,
+            "comment": "If true, the full-size HUD will render in 3rd-person rather than the half-size HUD."
+        },
+        "transpHUD_1P": {
+            "value": false,
+            "comment": "If true, the background textures for the HUD will not be rendered in 1st-person."
+        },
+        "transpHUD_3P": {
+            "value": false,
+            "comment": "If true, the background textures for the HUD will not be rendered in 1st-person."
+        },
+        "renderWindows": {
+            "value": true,
+            "comment": "Should the glass on windows be rendered on vehicles?"
+        },
+        "innerWindows": {
+            "value": false,
+            "comment": "Should the glass on windows be rendered on the inside of the vehicle?  Note: if renderWindows is false, this config has no effect."
+        },
+        "freecam_3P": {
+            "value": false,
+            "comment": "If true, third-person camera rotation in vehicles is disconnected from vehicle rotation and uses only rider look rotation."
+        },
+        "renderFlares": {
+            "value": true,
+            "comment": "If false, flares on lights will not render."
+        },
+        "renderBeams": {
+            "value": true,
+            "comment": "If false, beams on lights will not render."
+        },
+        "dynamicLights": {
+            "value": true,
+            "comment": "If true, light components marked isDynamicLight light up the world around them, cast shadows and draw a volumetric beam and corona.  If false, they render as regular beams and flares."
+        },
+        "DynL_shadows": {
+            "value": true,
+            "comment": "If true, dynamic lights cast shadows from blocks, vehicles and mobs.  Turn off to save GPU time."
+        },
+        "DynL_MaxLights": {
+            "value": 48,
+            "comment": "How many dynamic lights may light the world at once, 0 to 256, and how many beams and coronas are drawn.  The strongest and closest are kept.  Fewer lights cost less GPU time; raise it on a powerful machine."
+        },
+        "DynL_ShaderFB": {
+            "value": false,
+            "comment": "If true, a shader pack (Iris, Oculus, OptiFine) gets the simple fallback instead of the light pass: dynamic lights raise block light and draw a simple beam cone and flare.  If false, an Iris or Oculus pack gets the full light pass (shadows, beams, coronas) drawn after the pack's final pass, and an OptiFine pack gets regular beams and flares."
+        },
+        "brightLights": {
+            "value": true,
+            "comment": "If false, lights from vehicles and blocks will not make themselves bright and instead will render as if they were part of the model at that same brightness.  Useful if you have shaders and this is causing troubles."
+        },
+        "blendedLights": {
+            "value": true,
+            "comment": "If false, beam-based lights from vehicles and blocks will not do brightness blending.  This is different from the general brightness setting as this will do OpenGL blending on the world to make it brighter, not just the beams themselves."
+        },
+        "lightsTransp": {
+            "value": true,
+            "comment": "If true, textures that light up will be rendered on the transperent pass.  This is required for some shaders to prevent lit textures without alpha channels from becoming invible, but it may break rendering on non-shader builds."
+        },
+        "playerTweaks": {
+            "value": true,
+            "comment": "If true, player hands will be modified when holding guns, and hands and legs will be modified when riding in vehicles.  Set this to false (and restart the game) if mods cause issues, like two-hand rendering or player model issues.  Automatically set to false if some mods are detected."
+        },
+        "gunCrosshair": {
+            "value": true,
+            "comment": "If false, the aiming crosshair for active guns will not be rendered."
+        },
+        "customInventoryTabs": {
+            "value": true,
+            "comment": "If false, pack-authored creative-inventory side tabs are disabled and every pack item is shown together in the normal pack tab.  Disable this if another mod's creative inventory is incompatible with the side-tab UI."
+        },
+        "renderingMode": {
+            "value": 1,
+            "comment": "Internal rendering mode value, don't touch!"
+        }
     },
-    "renderHUD_3P": {
-      "value": true,
-      "comment": "If false, the HUD in vehicles will not render in 3rd-person mode."
+    "controlSettings": {
+        "kbOverride": {
+            "value": true,
+            "comment": "Should keyboard controls be ignored when a joystick control is mapped?  Leave true to free up the keyboard while using a joysick."
+        },
+        "north360": {
+            "value": false,
+            "comment": "If true, instruments will represent North as 360 degrees, instead of the Minecraft default of 180. Allows using the heading system that real-world pilots and militaries do."
+        },
+        "simpleThrottle": {
+            "value": true,
+            "comment": "If true, then vehicles will automatically go into reverse after stopped with the brake rather than staying stopped and waiting for you to shift.  When going in reverse, the opposite is true: the vehicle will shift into forwards when pressing forwards when stopped.  Additionally, the parking brake will automatically be set when leaving the vehicle."
+        },
+        "halfThrottle": {
+            "value": false,
+            "comment": "If true, then the gas key will only be a half-throttle, with the MOD+Throttle key becoming the full-speed control.  Useful if you want a more controlled vehicle experience.  Only valid on car/boat types with on-off throttles, and does not work in conjunction with simpleThrottle as that changes how the MOD key works with gas and brake keys."
+        },
+        "autostartEng": {
+            "value": true,
+            "comment": "If true, engines will automatically start when a driver enters a vehicle, and will turn off when they leave.  The parking brake will also be applied when leaving the vehicle.  Note: this does not bypass the fuel or electrical system."
+        },
+        "autoTrnSignals": {
+            "value": true,
+            "comment": "If true, turns signals will come on automatically when you start a turn, and will turn off when the turn completes.  If this is false, then they will only be able to be activated with the keybinds or via the panel."
+        },
+        "useShifter": {
+            "value": false,
+            "comment": "Set to true if you are using a physical shifter controller for shifting gears.  Required since IV doesn't know this automatically since a shifter in neutral won't press any buttons."
+        },
+        "heliAutoLevel": {
+            "value": true,
+            "comment": "If true, helicopters will automatically return to level flight when you let off the control stick.  However, this will prevent them from doing loops.  The realistic value for this config is false, but the one that's more player-freindly is true."
+        },
+        "mouseYoke": {
+            "value": false,
+            "comment": "If true, aircraft pitch and roll are controlled by an invisible on-screen mouse yoke.  Cursor center is neutral; window edges are full input."
+        },
+        "arcadeMode": {
+            "value": false,
+            "comment": "If true, arcade-style flight and mouse aiming will be enabled. This allows the mouse cursor to control aircraft/helicopter steering systems."
+        },
+        "showTutorial": {
+            "value": true,
+            "comment": "If true, tutorial and onboarding overlays may be shown.  Set this to false to hide those prompts."
+        },
+        "ShowDfCtrl": {
+            "value": true,
+            "comment": "If true, the message telling you which controls an aircraft defaults to will show every time you get into the pilot seat of an aircraft that sets its own default.  If false, it only shows the first time you fly each aircraft in each mode."
+        },
+        "showHoverTxt": {
+            "value": true,
+            "comment": "If true, hover text helpers may be shown when looking at supported vehicle elements.  Set this to false to hide those prompts."
+        },
+        "IconRange": {
+            "value": 4,
+            "comment": "How far away, in blocks, the part slot icons are drawn while holding a part, scanner, wrench or screwdriver, 0 to 32.  They shrink and fade with distance, and a slot whose icon is not drawn cannot be targeted by the scanner.  0 hides the icons.  This only changes the icons: clicking a slot still follows its hitbox."
+        },
+        "cullingWarn": {
+            "value": true,
+            "comment": "If true, IV will show a one-time startup warning when Entity Culling is detected."
+        },
+        "classicJystk": {
+            "value": false,
+            "comment": "If true, the classic controller code will be used.  Note: THIS CODE MAY CRASH MOBILE DEVICES!  Also note that switching will probably mess up your keybinds.  Only do this if you are having issues with a joystick or controller not being recognized.  After changing this setting, reboot the game to make it take effect."
+        },
+        "steeringControlRate": {
+            "value": 2.0,
+            "comment": "How many degrees to turn the wheels on vehicles for every tick the button is held down.  This is not used when using a joystick."
+        },
+        "steeringReturnRate": {
+            "value": 4.0,
+            "comment": "How many degrees to turn the wheels on vehicles for every tick the button is NOT held down.  This is not used when using a joystick."
+        },
+        "flightControlRate": {
+            "value": 0.6,
+            "comment": "How many degrees to move the elevators and ailerons on aircraft for every tick the button is held down.  This is not used when using a joystick."
+        },
+        "mouseYokeRate": {
+            "value": 0.1,
+            "comment": "How many degrees to move control surfaces for every 1 mouse unit change.  Used for mouse yoke controls."
+        },
+        "DismountSafteySpeed": {
+            "value": 8.0,
+            "comment": "Speed, in m/s, above which vehicle dismounting requires pressing Shift twice within 3 seconds.  Set to 0 to always prompt, or a very high value to effectively keep classic instant dismounts."
+        },
+        "joystickDeadZone": {
+            "value": 0.03,
+            "comment": "Dead zone for joystick axis.  This is NOT joystick specific."
+        },
+        "soundVolume": {
+            "value": 0.8,
+            "comment": "Volume for all sounds in the mod.  This is used instead of the game's master volume."
+        },
+        "radioVolume": {
+            "value": 1.0,
+            "comment": "Volume for radios in the mod.  This is used instead of the game's master volume."
+        },
+        "arcadeFlightOverrides": {}
     },
-    "fullHUD_1P": {
-      "value": false,
-      "comment": "If true, the full-size HUD will render in 1st-person rather than the half-size HUD."
-    },
-    "fullHUD_3P": {
-      "value": false,
-      "comment": "If true, the full-size HUD will render in 3rd-person rather than the half-size HUD."
-    },
-    "transpHUD_1P": {
-      "value": false,
-      "comment": "If true, the background textures for the HUD will not be rendered in 1st-person."
-    },
-    "transpHUD_3P": {
-      "value": false,
-      "comment": "If true, the background textures for the HUD will not be rendered in 1st-person."
-    },
-    "renderWindows": {
-      "value": true,
-      "comment": "Should the glass on windows be rendered on vehicles?"
-    },
-    "innerWindows": {
-      "value": false,
-      "comment": "Should the glass on windows be rendered on the inside of the vehicle?  Note: if renderWindows is false, this config has no effect."
-    },
-    "freecam_3P": {
-      "value": false,
-      "comment": "If true, third-person camera rotation in vehicles is disconnected from vehicle rotation and uses only rider look rotation."
-    },
-    "renderFlares": {
-      "value": true,
-      "comment": "If false, flares on lights will not render."
-    },
-    "renderBeams": {
-      "value": true,
-      "comment": "If false, beams on lights will not render."
-    },
-    "brightLights": {
-      "value": true,
-      "comment": "If false, lights from vehicles and blocks will not make themselves bright and instead will render as if they were part of the model at that same brightness.  Useful if you have shaders and this is causing troubles."
-    },
-    "blendedLights": {
-      "value": true,
-      "comment": "If false, beam-based lights from vehicles and blocks will not do brightness blending.  This is different from the general brightness setting as this will do OpenGL blending on the world to make it brighter, not just the beams themselves."
-    },
-    "lightsTransp": {
-      "value": true,
-      "comment": "If true, textures that light up will be rendered on the transperent pass.  This is required for some shaders to prevent lit textures without alpha channels from becoming invible, but it may break rendering on non-shader builds."
-    },
-    "playerTweaks": {
-      "value": true,
-      "comment": "If true, player hands will be modified when holding guns, and hands and legs will be modified when riding in vehicles.  Set this to false (and restart the game) if mods cause issues, like two-hand rendering or player model issues.  Automatically set to false if some mods are detected."
-    },
-    "renderingMode": {
-      "value": 1,
-      "comment": "Internal rendering mode value, don't touch!"
+    "controls": {
+        "keysetID": 16,
+        "keyboard": {
+            "general.custom9": {
+                "keyCode": 328,
+                "isMouseButton": false
+            },
+            "car.mod": {
+                "keyCode": 344,
+                "isMouseButton": false
+            },
+            "general.custom7": {
+                "keyCode": 326,
+                "isMouseButton": false
+            },
+            "general.custom8": {
+                "keyCode": 327,
+                "isMouseButton": false
+            },
+            "aircraft.js_inhibit": {
+                "keyCode": 281,
+                "isMouseButton": false
+            },
+            "aircraft.yaw_l": {
+                "keyCode": 74,
+                "isMouseButton": false
+            },
+            "car.turn_l": {
+                "keyCode": 65,
+                "isMouseButton": false
+            },
+            "aircraft.gun_switch": {
+                "keyCode": 86,
+                "isMouseButton": false
+            },
+            "car.camlock": {
+                "keyCode": 342,
+                "isMouseButton": false
+            },
+            "general.reload": {
+                "keyCode": 82,
+                "isMouseButton": false
+            },
+            "car.turn_r": {
+                "keyCode": 68,
+                "isMouseButton": false
+            },
+            "aircraft.yaw_r": {
+                "keyCode": 76,
+                "isMouseButton": false
+            },
+            "car.radio": {
+                "keyCode": 45,
+                "isMouseButton": false
+            },
+            "car.zoom_o": {
+                "keyCode": 267,
+                "isMouseButton": false
+            },
+            "aircraft.zoom_o": {
+                "keyCode": 267,
+                "isMouseButton": false
+            },
+            "aircraft.zoom_i": {
+                "keyCode": 266,
+                "isMouseButton": false
+            },
+            "car.js_inhibit": {
+                "keyCode": 281,
+                "isMouseButton": false
+            },
+            "car.zoom_i": {
+                "keyCode": 266,
+                "isMouseButton": false
+            },
+            "aircraft.park": {
+                "keyCode": 78,
+                "isMouseButton": false
+            },
+            "car.changeview": {
+                "keyCode": 88,
+                "isMouseButton": false
+            },
+            "general.custom5": {
+                "keyCode": 324,
+                "isMouseButton": false
+            },
+            "general.custom6": {
+                "keyCode": 325,
+                "isMouseButton": false
+            },
+            "general.custom3": {
+                "keyCode": 322,
+                "isMouseButton": false
+            },
+            "general.custom4": {
+                "keyCode": 323,
+                "isMouseButton": false
+            },
+            "general.custom1": {
+                "keyCode": 320,
+                "isMouseButton": false
+            },
+            "general.custom2": {
+                "keyCode": 321,
+                "isMouseButton": false
+            },
+            "aircraft.brake": {
+                "keyCode": 66,
+                "isMouseButton": false
+            },
+            "aircraft.throttle_u": {
+                "keyCode": 73,
+                "isMouseButton": false
+            },
+            "car.lights": {
+                "keyCode": 71,
+                "isMouseButton": false
+            },
+            "car.panel": {
+                "keyCode": 85,
+                "isMouseButton": false
+            },
+            "car.shift_u": {
+                "keyCode": 82,
+                "isMouseButton": false
+            },
+            "car.horn": {
+                "keyCode": 67,
+                "isMouseButton": false
+            },
+            "aircraft.radio": {
+                "keyCode": 45,
+                "isMouseButton": false
+            },
+            "aircraft.camlock": {
+                "keyCode": 342,
+                "isMouseButton": false
+            },
+            "car.park": {
+                "keyCode": 78,
+                "isMouseButton": false
+            },
+            "aircraft.changeview": {
+                "keyCode": 88,
+                "isMouseButton": false
+            },
+            "car.gas": {
+                "keyCode": 87,
+                "isMouseButton": false
+            },
+            "aircraft.throttle_d": {
+                "keyCode": 75,
+                "isMouseButton": false
+            },
+            "aircraft.gun_fire": {
+                "keyCode": 32,
+                "isMouseButton": false
+            },
+            "aircraft.roll_l": {
+                "keyCode": 65,
+                "isMouseButton": false
+            },
+            "aircraft.roll_r": {
+                "keyCode": 68,
+                "isMouseButton": false
+            },
+            "car.shift_d": {
+                "keyCode": 70,
+                "isMouseButton": false
+            },
+            "car.turnsignal_r": {
+                "keyCode": 46,
+                "isMouseButton": false
+            },
+            "car.gun_fire": {
+                "keyCode": 32,
+                "isMouseButton": false
+            },
+            "aircraft.pitch_d": {
+                "keyCode": 87,
+                "isMouseButton": false
+            },
+            "aircraft.flaps_d": {
+                "keyCode": 72,
+                "isMouseButton": false
+            },
+            "car.gun_switch": {
+                "keyCode": 86,
+                "isMouseButton": false
+            },
+            "aircraft.pitch_u": {
+                "keyCode": 83,
+                "isMouseButton": false
+            },
+            "aircraft.mouseyoke": {
+                "keyCode": 67,
+                "isMouseButton": false
+            },
+            "aircraft.flaps_u": {
+                "keyCode": 89,
+                "isMouseButton": false
+            },
+            "car.brake": {
+                "keyCode": 83,
+                "isMouseButton": false
+            },
+            "aircraft.panel": {
+                "keyCode": 85,
+                "isMouseButton": false
+            },
+            "car.turnsignal_l": {
+                "keyCode": 44,
+                "isMouseButton": false
+            },
+            "general.custom10": {
+                "keyCode": 329,
+                "isMouseButton": false
+            },
+            "aircraft.arcade": {
+                "keyCode": 67,
+                "isMouseButton": false
+            },
+            "airship.turn_r": {
+                "keyCode": 68,
+                "isMouseButton": false
+            },
+            "airship.turn_l": {
+                "keyCode": 65,
+                "isMouseButton": false
+            },
+            "airship.forward": {
+                "keyCode": 87,
+                "isMouseButton": false
+            },
+            "airship.brake": {
+                "keyCode": 83,
+                "isMouseButton": false
+            },
+            "airship.height_u": {
+                "keyCode": 73,
+                "isMouseButton": false
+            },
+            "airship.height_d": {
+                "keyCode": 75,
+                "isMouseButton": false
+            },
+            "airship.park": {
+                "keyCode": 78,
+                "isMouseButton": false
+            },
+            "airship.panel": {
+                "keyCode": 85,
+                "isMouseButton": false
+            },
+            "airship.radio": {
+                "keyCode": 45,
+                "isMouseButton": false
+            },
+            "airship.gun_fire": {
+                "keyCode": 32,
+                "isMouseButton": false
+            },
+            "airship.gun_switch": {
+                "keyCode": 86,
+                "isMouseButton": false
+            },
+            "airship.zoom_i": {
+                "keyCode": 266,
+                "isMouseButton": false
+            },
+            "airship.zoom_o": {
+                "keyCode": 267,
+                "isMouseButton": false
+            },
+            "airship.changeview": {
+                "keyCode": 88,
+                "isMouseButton": false
+            },
+            "airship.camlock": {
+                "keyCode": 342,
+                "isMouseButton": false
+            },
+            "airship.js_inhibit": {
+                "keyCode": 281,
+                "isMouseButton": false
+            }
+        },
+        "joystick": {
+            "general.custom1": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "general.custom2": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "general.custom3": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "general.custom4": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "general.custom5": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "general.custom6": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "general.custom7": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "general.custom8": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "general.custom9": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "general.custom10": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "general.reload": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.camlock": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.yaw": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.pitch": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.roll": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.throttle": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.brake": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.brake_digital": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.gear": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.flaps_u": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.flaps_d": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.mouseyoke": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.panel": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.park": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.radio": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.gun_fire": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.gun_switch": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.zoom_i": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.zoom_o": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.changeview": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.look_ud": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.look_lr": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.look_l": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.look_r": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.look_u": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.look_d": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.look_a": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.trim_yaw_r": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.trim_yaw_l": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.trim_pitch_u": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.trim_pitch_d": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.trim_roll_r": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.trim_roll_l": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.reverse": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.js_inhibit": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.mod": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.camlock": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.turn": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.gas": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.brake": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.brake_digital": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.panel": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.shift_u": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.shift_d": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.shift_1": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.shift_2": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.shift_3": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.shift_4": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.shift_5": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.shift_6": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.shift_7": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.shift_8": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.shift_9": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.shift_r": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.horn": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.park": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.radio": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.gun_fire": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.gun_switch": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.zoom_i": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.zoom_o": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.changeview": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.look_ud": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.look_lr": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.look_l": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.look_r": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.look_u": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.look_d": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.look_a": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.lights": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.turnsignal_l": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.turnsignal_r": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "car.js_inhibit": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "aircraft.arcade": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "airship.camlock": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "airship.turn": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "airship.height": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "airship.throttle": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "airship.brake": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "airship.brake_digital": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "airship.gear": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "airship.panel": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "airship.park": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "airship.radio": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "airship.gun_fire": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "airship.gun_switch": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "airship.zoom_i": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "airship.zoom_o": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "airship.changeview": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "airship.look_ud": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "airship.look_lr": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "airship.look_l": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "airship.look_r": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "airship.look_u": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "airship.look_d": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "airship.look_a": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "airship.trim_yaw_r": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "airship.trim_yaw_l": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "airship.trim_pitch_u": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "airship.trim_pitch_d": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "airship.trim_roll_r": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "airship.trim_roll_l": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "airship.reverse": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            },
+            "airship.js_inhibit": {
+                "buttonIndex": 0,
+                "invertedAxis": false,
+                "axisMinTravel": 0.0,
+                "axisMaxTravel": 0.0
+            }
+        }
     }
-  },
-  "controlSettings": {
-    "kbOverride": {
-      "value": true,
-      "comment": "Should keyboard controls be ignored when a joystick control is mapped?  Leave true to free up the keyboard while using a joysick."
-    },
-    "north360": {
-      "value": false,
-      "comment": "If true, instruments will represent North as 360 degrees, instead of the Minecraft default of 180. Allows using the heading system that real-world pilots and militaries do."
-    },
-    "simpleThrottle": {
-      "value": true,
-      "comment": "If true, then vehicles will automatically go into reverse after stopped with the brake rather than staying stopped and waiting for you to shift.  When going in reverse, the opposite is true: the vehicle will shift into forwards when pressing forwards when stopped.  Additionally, the parking brake will automatically be set when leaving the vehicle."
-    },
-    "halfThrottle": {
-      "value": false,
-      "comment": "If true, then the gas key will only be a half-throttle, with the MOD+Throttle key becoming the full-speed control.  Useful if you want a more controlled vehicle experience.  Only valid on car/boat types with on-off throttles, and does not work in conjunction with simpleThrottle as that changes how the MOD key works with gas and brake keys."
-    },
-    "autostartEng": {
-      "value": true,
-      "comment": "If true, engines will automatically start when a driver enters a vehicle, and will turn off when they leave.  The parking brake will also be applied when leaving the vehicle.  Note: this does not bypass the fuel or electrical system."
-    },
-    "autoTrnSignals": {
-      "value": true,
-      "comment": "If true, turns signals will come on automatically when you start a turn, and will turn off when the turn completes.  If this is false, then they will only be able to be activated with the keybinds or via the panel."
-    },
-    "useShifter": {
-      "value": false,
-      "comment": "Set to true if you are using a physical shifter controller for shifting gears.  Required since IV doesn't know this automatically since a shifter in neutral won't press any buttons."
-    },
-    "heliAutoLevel": {
-      "value": false,
-      "comment": "If true, helicopters will automatically return to level flight when you let off the control stick.  However, this will prevent them from doing loops.  The realistic value for this config is false, but the one that's more player-freindly is true."
-    },
-    "mouseYoke": {
-      "value": false,
-      "comment": "If true, aircraft pitch and roll are controlled by an invisible on-screen mouse yoke.  Cursor center is neutral; window edges are full input."
-    },
-    "classicJystk": {
-      "value": false,
-      "comment": "If true, the classic controller code will be used.  Note: THIS CODE MAY CRASH MOBILE DEVICES!  Also note that switching will probably mess up your keybinds.  Only do this if you are having issues with a joystick or controller not being recognized.  After changing this setting, reboot the game to make it take effect."
-    },
-    "steeringControlRate": {
-      "value": 2.0,
-      "comment": "How many degrees to turn the wheels on vehicles for every tick the button is held down.  This is not used when using a joystick."
-    },
-    "steeringReturnRate": {
-      "value": 4.0,
-      "comment": "How many degrees to turn the wheels on vehicles for every tick the button is NOT held down.  This is not used when using a joystick."
-    },
-    "flightControlRate": {
-      "value": 0.6,
-      "comment": "How many degrees to move the elevators and ailerons on aircraft for every tick the button is held down.  This is not used when using a joystick."
-    },
-    "mouseYokeRate": {
-      "value": 0.1,
-      "comment": "How many degrees to move control surfaces for every 1 mouse unit change.  Used for mouse yoke controls."
-    },
-    "joystickDeadZone": {
-      "value": 0.03,
-      "comment": "Dead zone for joystick axis.  This is NOT joystick specific."
-    },
-    "soundVolume": {
-      "value": 0.8,
-      "comment": "Volume for all sounds in the mod.  This is used instead of the game's master volume."
-    },
-    "radioVolume": {
-      "value": 1.0,
-      "comment": "Volume for radios in the mod.  This is used instead of the game's master volume."
-    }
-  },
-  "controls": {
-    "keysetID": 16,
-    "keyboard": {
-      "general.custom9": {
-        "keyCode": 328,
-        "isMouseButton": false
-      },
-      "car.mod": {
-        "keyCode": 344,
-        "isMouseButton": false
-      },
-      "general.custom7": {
-        "keyCode": 326,
-        "isMouseButton": false
-      },
-      "general.custom8": {
-        "keyCode": 327,
-        "isMouseButton": false
-      },
-      "aircraft.js_inhibit": {
-        "keyCode": 281,
-        "isMouseButton": false
-      },
-      "aircraft.yaw_l": {
-        "keyCode": 74,
-        "isMouseButton": false
-      },
-      "car.turn_l": {
-        "keyCode": 65,
-        "isMouseButton": false
-      },
-      "aircraft.gun_switch": {
-        "keyCode": 86,
-        "isMouseButton": false
-      },
-      "car.camlock": {
-        "keyCode": 342,
-        "isMouseButton": false
-      },
-      "general.reload": {
-        "keyCode": 82,
-        "isMouseButton": false
-      },
-      "car.turn_r": {
-        "keyCode": 68,
-        "isMouseButton": false
-      },
-      "aircraft.yaw_r": {
-        "keyCode": 76,
-        "isMouseButton": false
-      },
-      "car.radio": {
-        "keyCode": 45,
-        "isMouseButton": false
-      },
-      "car.zoom_o": {
-        "keyCode": 267,
-        "isMouseButton": false
-      },
-      "aircraft.zoom_o": {
-        "keyCode": 267,
-        "isMouseButton": false
-      },
-      "aircraft.zoom_i": {
-        "keyCode": 266,
-        "isMouseButton": false
-      },
-      "car.js_inhibit": {
-        "keyCode": 281,
-        "isMouseButton": false
-      },
-      "car.zoom_i": {
-        "keyCode": 266,
-        "isMouseButton": false
-      },
-      "aircraft.park": {
-        "keyCode": 78,
-        "isMouseButton": false
-      },
-      "car.changeview": {
-        "keyCode": 88,
-        "isMouseButton": false
-      },
-      "general.custom5": {
-        "keyCode": 324,
-        "isMouseButton": false
-      },
-      "general.custom6": {
-        "keyCode": 325,
-        "isMouseButton": false
-      },
-      "general.custom3": {
-        "keyCode": 322,
-        "isMouseButton": false
-      },
-      "general.custom4": {
-        "keyCode": 323,
-        "isMouseButton": false
-      },
-      "general.custom1": {
-        "keyCode": 320,
-        "isMouseButton": false
-      },
-      "general.custom2": {
-        "keyCode": 321,
-        "isMouseButton": false
-      },
-      "aircraft.brake": {
-        "keyCode": 66,
-        "isMouseButton": false
-      },
-      "aircraft.throttle_u": {
-        "keyCode": 73,
-        "isMouseButton": false
-      },
-      "car.lights": {
-        "keyCode": 71,
-        "isMouseButton": false
-      },
-      "car.panel": {
-        "keyCode": 85,
-        "isMouseButton": false
-      },
-      "car.shift_u": {
-        "keyCode": 82,
-        "isMouseButton": false
-      },
-      "car.horn": {
-        "keyCode": 67,
-        "isMouseButton": false
-      },
-      "aircraft.radio": {
-        "keyCode": 45,
-        "isMouseButton": false
-      },
-      "aircraft.camlock": {
-        "keyCode": 342,
-        "isMouseButton": false
-      },
-      "car.park": {
-        "keyCode": 78,
-        "isMouseButton": false
-      },
-      "aircraft.changeview": {
-        "keyCode": 88,
-        "isMouseButton": false
-      },
-      "car.gas": {
-        "keyCode": 87,
-        "isMouseButton": false
-      },
-      "aircraft.throttle_d": {
-        "keyCode": 75,
-        "isMouseButton": false
-      },
-      "aircraft.gun_fire": {
-        "keyCode": 32,
-        "isMouseButton": false
-      },
-      "aircraft.roll_l": {
-        "keyCode": 65,
-        "isMouseButton": false
-      },
-      "aircraft.roll_r": {
-        "keyCode": 68,
-        "isMouseButton": false
-      },
-      "car.shift_d": {
-        "keyCode": 70,
-        "isMouseButton": false
-      },
-      "car.turnsignal_r": {
-        "keyCode": 46,
-        "isMouseButton": false
-      },
-      "car.gun_fire": {
-        "keyCode": 32,
-        "isMouseButton": false
-      },
-      "aircraft.pitch_d": {
-        "keyCode": 87,
-        "isMouseButton": false
-      },
-      "aircraft.flaps_d": {
-        "keyCode": 72,
-        "isMouseButton": false
-      },
-      "car.gun_switch": {
-        "keyCode": 86,
-        "isMouseButton": false
-      },
-      "aircraft.pitch_u": {
-        "keyCode": 83,
-        "isMouseButton": false
-      },
-      "aircraft.mouseyoke": {
-        "keyCode": 67,
-        "isMouseButton": false
-      },
-      "aircraft.flaps_u": {
-        "keyCode": 89,
-        "isMouseButton": false
-      },
-      "car.brake": {
-        "keyCode": 83,
-        "isMouseButton": false
-      },
-      "aircraft.panel": {
-        "keyCode": 85,
-        "isMouseButton": false
-      },
-      "car.turnsignal_l": {
-        "keyCode": 44,
-        "isMouseButton": false
-      },
-      "general.custom10": {
-        "keyCode": 329,
-        "isMouseButton": false
-      }
-    },
-    "joystick": {}
-  }
 }
