@@ -243,8 +243,7 @@ const registerWoodStructRecipes = (event) =>
                 let leafBlock = treeData.leaf_block;
                 let log = treeData.log_data.log;
                 let dimension = treeData.dimension;
-                console.log("Greenhouse Data:\r\n" + "Sapling:" + sapling + "\r\nLeaf Block:" + leafBlock + "\r\nLog:" + log + "\r\nDimension:" + dimension);
-                
+
                 if(sapling && leafBlock && log)
                     generateTreeGreenHouseRecipe(event, dimension, sapling, log, leafBlock, 1);
             });
@@ -498,5 +497,59 @@ const registerWoodStructRecipes = (event) =>
 			woodType.rope_ladder,
 			null
 		);
+    }
+
+    /**
+     * 
+     * @param {WoodStruct} woodType 
+     */
+    function handleAdAstraRecipeRegistration(woodType)
+    {
+        TFGWoodBuilder(
+                event,
+                woodType.name,
+                woodType.lumber,
+                woodType.logs,
+                woodType.log,
+                woodType.stripped_log,
+                woodType.plank,
+                woodType.stair,
+                woodType.slab,
+                woodType.door,
+                woodType.trapdoor,
+                woodType.fence,
+                woodType.log_fence,
+                woodType.fence_gate,
+                woodType.support,
+                woodType.pressure_plate,
+                woodType.button,
+                woodType.log_wood,
+                woodType.stripped_wood,
+                woodType.tool_rack,
+                woodType.workbench,
+                woodType.bookshelf,
+                woodType.chest,
+                woodType.trapped_chest,
+                woodType.loom,
+                woodType.sluice,
+                woodType.barrel,
+                woodType.lectern,
+                woodType.scribing_table,
+                woodType.sewing_table,
+                woodType.jar_shelf,
+                woodType.food_shelf,
+                woodType.hanger,
+                woodType.jarbnet,
+                woodType.big_barrel,
+                woodType.stomping_barrel,
+                woodType.barrel_press,
+                woodType.wine_shelf,
+                woodType.sign,
+                woodType.hanging_sign,
+                woodType.crafting_station,
+                woodType.workbench,
+                woodType.rope_ladder,
+                woodType.roof,
+            );
     }
 }

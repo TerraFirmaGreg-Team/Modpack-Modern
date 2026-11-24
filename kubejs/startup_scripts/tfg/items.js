@@ -10,6 +10,7 @@ const registerTFGItems = (event) => {
 	registerTFGFoodItems(event)
 	registerTFGPrimitiveItems(event);
 	registerTFGNuclearItems(event);
+	registerWoodStructItems(event);
 	registerTFGWoodItems(event);
 	registerTFGAircraftItems(event);
 	registerTFGSpaceItems(event);

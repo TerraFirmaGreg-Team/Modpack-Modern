@@ -15,16 +15,57 @@ global.linuxUnfucker = function(value) {
 };
 
 //We put this here so the other constant javascript files can reference them properly
+/**
+ * Returns an array of WoodStruct containing all the wood structure data from TFC, AFC, and Beneath mods.
+ * @returns {WoodStruct[]}
+ */
 global.getWoodStructArray = function(){
     return global.TFC_WOOD_STRUCT
     .concat(global.AFC_WOOD_STRUCT)
     .concat(global.BENEATH_WOOD_STRUCT);
 }
+
+/**
+ * A Wood Struct that has all propertie set to null. This is to verify that other wood struct have the properties in here.
+ * @type {WoodStruct}
+ */
+global.WOOD_STRUCT_NONE =
+{
+    tfgCore: null,
+    modName: null,
+    name: null,
+    logsTag: null,
+    tree_data: null,
+    lumber: null, plank: null,
+    stair: null, slab: null,
+    fence: null, fence_gate: null, log_fence: null,
+    door: null, trapdoor: null,
+    button: null, pressure_plate: null, //FIXME: Core doesnt generate buttons or pressure plates
+    chest: null, trapped_chest: null, chest_minecart: null,
+    sign: null, hanging_sign: null,
+    workbench: null, crafting_station: null, crafting_station_slab: null, loom: null, sewing_table: null, scribing_table: null,
+    big_barrel: null, stomping_barrel: null, barrel: null, barrel_press: null,
+    sluice: null, tool_rack: null, lectern: null,
+    jar_shelf: null, food_shelf: null, bookshelf: null, jarbnet: null, wine_shelf: null,
+    support: null,
+    window: null, window_pane: null,
+    roof: null,
+    hanger: null,
+    rope_ladder: null,
+    rnr_data: null,
+    astikor_data: null,
+    railways_data: null,
+    macaw_data: null,
+    tfc_data: null,
+    firmalife_data: null,
+    woodKind: null,
+}
+
 /**
  * @typedef {Object} WoodKindEnum
- * @property {"HARD"} HARD
- * @property {"SOFT"} SOFT
- * @property {"NONE"} NONE
+ * @property {"HARD"} HARD Rerpresents a Hard Wood, used to make Rowboats, Sloops, can be used for paper making
+ * @property {"SOFT"} SOFT Represents a Soft Wood, used to make Canoes, cannot be used for paper making
+ * @property {"NONE"} NONE Represents a wood that is not a Hard or Soft wood, cannot be used to make Rowboats, Sloops, Canoes, or paper
  */
 
 /** @type {WoodKindEnum} */
@@ -36,7 +77,7 @@ global.WOOD_KIND = ({
 
 /**
  * Implementation of a string.format method akin to C#'s string.format
- * @param {string} format The string format, example: "string formatting is {0}",
+ * @param {String} format The string format, example: "string formatting is {0}",
  * @param  {...any} args The arguments for the formatting
  * @returns The formatted string.
  */
@@ -181,6 +222,15 @@ global.woodStructHelpers =
             scribing_table: `${nameSpace}:wood/scribing_table/${input}`,
             jar_shelf: `${nameSpace}:wood/jar_shelf/${input}`,
             chest_minecart: `${nameSpace}:wood/chest_minecart`,
+        }
+    },
+    tfcDataTFG: function(nameSpace, input)
+    {
+        return{
+            sewing_table: `${nameSpace}:wood/sewing_table/${input}`,
+            scribing_table: `${nameSpace}:wood/scribing_table/${input}`,
+            jar_shelf: `${nameSpace}:wood/jar_shelf/${input}`,
+            chest_minecart: null,
         }
     },
     macawAIO: function(nameSpace, input)

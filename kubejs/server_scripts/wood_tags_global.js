@@ -56,7 +56,11 @@ const registerWoodStructItemTags = (event) =>{
 
         //goog translated:
         // To roast TFC logs in pyrolysis. stove Why can't you just add a tag to a tag? (let's say minecraft:logs), because that breaks all minecraft:logs recipes, magic...
-        global.invokeIfNotNull(woodType.logsTag, () => event.add('minecraft:logs_that_burn', woodType.logsTag));
+        global.invokeIfNotNull(woodType.logsTag, () =>
+        {
+            event.add("minecraft:logs_that_burn", woodType.logsTag);
+            event.add("minecraft:logs", woodType.logsTag);
+        })
 
         //goog translated:
         //Chest tags to distinguish their types
@@ -73,11 +77,6 @@ const registerWoodStructItemTags = (event) =>{
             event.add('c:hidden_from_recipe_viewers', woodType.railways_data.incomplete_track)
             event.add('c:hidden_from_recipe_viewers', woodType.railways_data.incomplete_track_narrow)
             event.add('c:hidden_from_recipe_viewers', woodType.railways_data.incomplete)	
-        });
-
-        global.invokeIfNotNull(woodType.rnr_data, () =>
-        {
-
         });
 
         global.invokeIfNotNull(woodType.woodKind, () =>
