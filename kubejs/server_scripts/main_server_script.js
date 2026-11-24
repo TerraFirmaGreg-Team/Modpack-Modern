@@ -66,7 +66,6 @@ ServerEvents.tags('block', event => {
 	registerWoodStructBlockTags(event);
 	registerAdAstraBlockTags(event)
 	registerAE2BlockTags(event)
-	registerAFCBlockTags(event)
 	registerBeneathBlockTags(event)
 	registerBlockRunnerBlockTags(event)
 	registerComputerCraftBlockTags(event)

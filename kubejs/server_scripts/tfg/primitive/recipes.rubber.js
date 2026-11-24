@@ -38,7 +38,7 @@ function registerTFGRubberRecipes(event) {
 
 	// Latex
 	event.recipes.gtceu.extractor('latex_from_log')
-		.itemInputs('#tfg:latex_logs')
+		.itemInputs('#tfg:rubber_logs')
 		.outputFluids(Fluid.of('tfg:latex', 250))
 		.duration(600)
 		.EUt(20)
@@ -57,7 +57,7 @@ function registerTFGRubberRecipes(event) {
 
 	
 	// Vaccuming rubber wood stuff for latex
-	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:latex', 100), '#tfg:latex_logs')
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:latex', 100), '#tfg:rubber_logs')
 		.processingTime(300 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
 		.id('tfg:vi/vacuumizing/latex_from_rubber_logs')
 
@@ -198,7 +198,7 @@ function registerTFGRubberRecipes(event) {
 		.EUt(20)
 
 	event.recipes.gtceu.centrifuge('rubber_log_separation')
-		.itemInputs('#tfg:latex_logs')
+		.itemInputs('#tfg:rubber_logs')
 		.chancedOutput('gtceu:raw_rubber_dust', 5000, 0)
 		.chancedOutput('gtceu:plant_ball', 3750, 0)
 		.chancedOutput('gtceu:sticky_resin', 2500, 0)

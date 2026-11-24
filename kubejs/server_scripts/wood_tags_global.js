@@ -50,6 +50,8 @@ const registerWoodStructItemTags = (event) =>{
             event.add('rnr:roof_blocks', woodType.rnr_data.shingle_block);
             event.add('rnr:roof_blocks', woodType.rnr_data.shingle_slab);
             event.add('rnr:roof_blocks', woodType.rnr_data.shingle_stair);
+            event.add('tfg:whitelisted/facades', woodType.rnr_data.shingle_block);
+            event.add('tfg:whitelisted/facades', woodType.rnr_data.window);
         })
 
         //goog translated:
@@ -65,6 +67,7 @@ const registerWoodStructItemTags = (event) =>{
 
         global.invokeIfNotNull(woodType.sign, () => event.add("minecraft:signs", woodType.sign));
 
+        console.log("railways");
         global.invokeIfNotNull(woodType.railways_data, () =>
         {
             event.add('c:hidden_from_recipe_viewers', woodType.railways_data.incomplete_track)
@@ -74,8 +77,7 @@ const registerWoodStructItemTags = (event) =>{
 
         global.invokeIfNotNull(woodType.rnr_data, () =>
         {
-            event.add('tfg:whitelisted/facades', woodType.rnr_data.shingle_block);
-            event.add('tfg:whitelisted/facades', woodType.rnr_data.window);
+
         });
 
         global.invokeIfNotNull(woodType.woodKind, () =>
@@ -105,10 +107,10 @@ const registerWoodStructItemTags = (event) =>{
                 woodType.tree_data.forEach(treeData =>
                 {
                     //And the tree data has log data
-                    if(treeData.logData)
+                    if(treeData.log_data)
                     {
                         //Add to respective tags if entry exists
-                        let logData = treeData.logData;
+                        let logData = treeData.log_data;
                         global.invokeIfNotNull(logData.stripped_log, () => event.add(`tfg:stripped_${tagSuffix}`, logData.stripped_log));
                         global.invokeIfNotNull(logData.stripped_wood, () => event.add(`tfg:stripped_${tagSuffix}`, logData.stripped_wood));
                     }
@@ -132,6 +134,7 @@ const registerWoodStructItemTags = (event) =>{
                 {
                     return;
                 }
+
                 let logData = treeData.log_data;
                 let log = logData.log;
                 let strippedLog = logData.stripped_log;
@@ -153,7 +156,6 @@ const registerWoodStructItemTags = (event) =>{
                 //Dont do tapping related tags if the tree doesnt have any tappable liquids
                 global.invokeIfNotNull(treeData.tapper_output, () =>
                 {
-                    
                     if(log)
                         event.add(`tfg:${treeData.tapper_output}_logs`, log);
                     if(strippedLog)
@@ -163,10 +165,14 @@ const registerWoodStructItemTags = (event) =>{
                     if(strippedWood)
                         event.add(`tfg:${treeData.tapper_output}_logs`, strippedWood);
                     
-                    event.add(`tfg:${treeData.tapper_output}_saplings`, treeData.sapling),
-                    event.add(`tfg:${treeData.tapper_output}_leaves`, treeData.leaf_block),
-                    event.add(`tfg:${treeData.tapper_output}_fallen_leaves`, treeData.fallen_leaves);
-                    event.add(`tfg:${treeData.tapper_output}_twigs`, treeData.twig);
+                    if(treeData.sapling)
+                        event.add(`tfg:${treeData.tapper_output}_saplings`, treeData.sapling);
+                    if(treeData.leaf_block)
+                        event.add(`tfg:${treeData.tapper_output}_leaves`, treeData.leaf_block);
+                    if(treeData.fallen_leaves)
+                        event.add(`tfg:${treeData.tapper_output}_fallen_leaves`, treeData.fallen_leaves);
+                    if(treeData.twig)
+                        event.add(`tfg:${treeData.tapper_output}_twigs`, treeData.twig);
                 });
             });
         });
@@ -234,10 +240,10 @@ const registerWoodStructBlockTags = (event) =>
                     event.add("tfc:can_be_snow_piled", treeData.twig);
                 }
 
-                global.invokeIfNotNull((treeData.tapper_output && treeData.logData), () =>
+                global.invokeIfNotNull((treeData.tapper_output && treeData.log_data), () =>
                 {
                     //If it has a tapping output, mark it as tappable
-                    let logData = treeData.logData;
+                    let logData = treeData.log_data;
                     if(logData.log)
                     {
                         event.add("afc:tappable_logs", woodType.log);
@@ -245,7 +251,14 @@ const registerWoodStructBlockTags = (event) =>
                     
                     //This will not scale, but maple and birch have "syrup logs tags."
                     var tapperLogTag = (treeData.tapper_output == "maple" || treeData.tapper_output == "birch") ? "tfg:syrup_logs" : `tfg:${treeData.tapper_output}_logs`;
-                    event.add(tapperLogTag, logData.funcGetAllNonNullLogs());
+                    if(logData.log)
+                        event.add(tapperLogTag, logData.log);
+                    if(logData.stripped_log)
+                        event.add(tapperLogTag, logData.stripped_log);
+                    if(logData.wood)
+                        event.add(tapperLogTag, logData.wood);
+                    if(logData.stripped_wood)
+                        event.add(tapperLogTag, logData.stripped_wood);
                 })
             })
         });

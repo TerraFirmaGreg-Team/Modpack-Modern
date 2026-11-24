@@ -34,6 +34,26 @@ global.WOOD_KIND = ({
     NONE: "NONE"
 });
 
+/**
+ * Implementation of a string.format method akin to C#'s string.format
+ * @param {string} format The string format, example: "string formatting is {0}",
+ * @param  {...any} args The arguments for the formatting
+ * @returns The formatted string.
+ */
+global.stringFormat = function(format, args) {
+    // If args is not an array, treat it as a single argument.
+    if (Object.prototype.toString.call(args) !== "[object Array]") {
+        args = Array.prototype.slice.call(arguments, 1);
+    }
+
+    return String(format).replace(/\{(\d+)\}/g, function(match, index) {
+        var i = Number(index);
+        return i < args.length && args[i] !== undefined
+            ? String(args[i])
+            : match;
+    });
+};
+
 global.woodStructHelpers =
 {
     astikorData: function (nameSpace, woodName)
@@ -65,27 +85,82 @@ global.woodStructHelpers =
     {
         return this.logData(nameSpace, woodName, true, true, true, true, count);
     },
-    tapperOutput: function(tapperOutput, count)
+    arrayAll: function(value, count)
     {
         let result = [];
         for(let index = 0; index < count; index++)
         {
-            result.push(tapperOutput);
+            result.push(value);
         }
         return result;
     },
-    treeTwig: function(nameSpace, woodName)
+    tfcTreeTwig: function(nameSpace, woodName)
     {
-        return `${nameSpace}:wood/twig/${woodName}`;
+        return this.resLocFormat(nameSpace, "wood/twig/{0}", woodName);
     },
-    twigArray: function(nameSpace, woodName, count)
+    tfcTwigArray: function(nameSpace, woodName, count)
     {        
         let result = [];
         for(let index = 0; index < count; index++)
         {
-            result.push(this.treeTwig(nameSpace, woodName));
+            result.push(this.tfcTreeTwig(nameSpace, woodName));
         }
         return result;
+    },
+    tfcSapling: function(namespace, woodName)
+    {
+        return this.resLocFormat(namespace, "wood/sapling/{0}", woodName);
+    },
+    tfcLeaves: function(nameSpace, woodName)
+    {
+        return this.resLocFormat(nameSpace, "wood/leaves/{0}", woodName);
+    },
+    tfcFallenLeaves: function(nameSpace, woodName)
+    {
+        return this.resLocFormat(nameSpace, "wood/fallen_leaves/{0}", woodName)
+    },
+    tfcWoodFormatArray()
+    {
+        return [
+            "wood/log/{0}",
+            "wood/stripped_log/{0}",
+            "wood/wood/{0}",
+            "wood/stripped_wood/{0}"
+        ];
+    },
+    tfcUnstrippedWoodFormatArray()
+    {
+        let result = this.tfcWoodFormatArray();
+        result[1] = null;
+        result[3] = null;
+        return result;
+    },
+    resLocFormat: function(nameSpace, format, value)
+    {
+        return global.stringFormat(`${nameSpace}:${format}`, value);
+    },
+    logDataFormat: function(nameSpace, woodFormats, woodName, count)
+    {
+        let logData =
+        {
+            log: woodFormats[0] ? this.resLocFormat(nameSpace, woodFormats[0], woodName) : null,
+            stripped_log: woodFormats[1] ? this.resLocFormat(nameSpace, woodFormats[1], woodName) : null,
+            wood: woodFormats[2] ? this.resLocFormat(nameSpace, woodFormats[2], woodName) : null,
+            stripped_wood: woodFormats[3] ? this.resLocFormat(nameSpace, woodFormats[3], woodName) : null
+        };
+
+        if(count == 1)
+        {
+            return logData;
+        }
+        else
+        {
+            let result = [];
+            for (let index = 0; index < count; index++) {
+                result.push(logData);
+            }
+            return result;
+        }
     },
     logData: function(nameSpace, woodName, hasLog, hasStrippedLog, hasWood, hasStrippedWood, count)
     {
@@ -108,6 +183,35 @@ global.woodStructHelpers =
             }
             return result;
         }
+    },
+    treeData2: function(arrayLen, nameSpaces, treeNames, logDatas, leafBlocks, fallenLeafBlocks, saplings, twigs, tapperOutputs, dimensions)
+    {
+        let result = [];
+        for (let index = 0; index < arrayLen; index++) {
+
+            let treeName = treeNames[index];
+            let nameSpace = nameSpaces[index];
+            let logData = logDatas[index];
+            let leafBlock = leafBlocks[index];
+            let fallenLeaves = fallenLeafBlocks[index];
+            let sapling = saplings[index];
+            let twig = twigs[index];
+            let tapperOutput = tapperOutputs[index];
+            let dimension = dimensions[index];
+
+            result.push({ 
+                tree_name: treeName,
+                nameSpace: nameSpace,
+                log_data: logData,
+                leaf_block: leafBlock,
+                fallen_leaves: fallenLeaves,
+                sapling: sapling,
+                twig: twig,
+                tapper_output: tapperOutput,
+                dimension: dimension,
+            });
+        }
+        return result;
     },
     treeData: function(arrayLen, nameSpaces, logDatas, leafNames, saplingNames, twigs, tapperOutputs)
     {

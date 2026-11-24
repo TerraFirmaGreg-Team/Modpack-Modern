@@ -569,11 +569,7 @@ const registerTFGGreenhouseRecipes = (event) => {
 	generateTreeGreenHouseRecipe(event, 'ad_astra:mars', `tfg:saplings/glacian`, `ad_astra:glacian_log`, `species:alphacene_moss_block`, 1);
 
 	generateTreeGreenHouseRecipe(event, 'ad_astra:mars', `tfg:saplings/alphacene`, `species:alphacene_mushroom_block`, `minecraft:mushroom_stem`, 1);
-
-	generateTreeGreenHouseRecipe(event, 'ad_astra:mars', `tfg:saplings/warped`, `beneath:wood/log/warped`, `minecraft:warped_wart_block`, 1);
-
-	generateTreeGreenHouseRecipe(event, 'ad_astra:mars', `tfg:saplings/crimson`, `beneath:wood/log/crimson`, `minecraft:nether_wart_block`, 1);
-
+	
 	// Mars Plants
 	Ingredient.of('#tfg:mars_plants').stacks.forEach(element => {
 		generateGreenHouseRecipe(event, 'ad_astra:mars', `8x ${element.id}`, [element.withCount(24), element.withCount(8)], 1, 1);

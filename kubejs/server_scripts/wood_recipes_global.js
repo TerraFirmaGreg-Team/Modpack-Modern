@@ -203,6 +203,11 @@ const registerWoodStructRecipes = (event) =>
         {
             woodType.tree_data.forEach(tree =>
             {
+                if(!tree.fallen_leaves)
+                {
+                    return;
+                }
+
                 event.shaped(`4x ${tree.fallen_leaves}`,[
                     'AA',
                     'AA'
@@ -237,11 +242,11 @@ const registerWoodStructRecipes = (event) =>
                 let sapling = treeData.sapling;
                 let leafBlock = treeData.leaf_block;
                 let log = treeData.log_data.log;
-                console.log("Name:" + treeData.tree_name + "\r\nSapling:" + sapling + "\r\nLeafBlock:" + leafBlock + "\r\nLog:" + log);
-                console.log("Log Data:" + treeData.log_data);
+                let dimension = treeData.dimension;
+                console.log("Greenhouse Data:\r\n" + "Sapling:" + sapling + "\r\nLeaf Block:" + leafBlock + "\r\nLog:" + log + "\r\nDimension:" + dimension);
                 
                 if(sapling && leafBlock && log)
-                    generateTreeGreenHouseRecipe(event, null, sapling, log, leafBlock, 1);
+                    generateTreeGreenHouseRecipe(event, dimension, sapling, log, leafBlock, 1);
             });
         });
 
