@@ -81,7 +81,7 @@
             "comment": "If false, the aiming crosshair for active guns will not be rendered."
         },
         "customInventoryTabs": {
-            "value": true,
+            "value": false,
             "comment": "If false, pack-authored creative-inventory side tabs are disabled and every pack item is shown together in the normal pack tab.  Disable this if another mod's creative inventory is incompatible with the side-tab UI."
         },
         "renderingMode": {
@@ -95,7 +95,7 @@
             "comment": "Should keyboard controls be ignored when a joystick control is mapped?  Leave true to free up the keyboard while using a joysick."
         },
         "north360": {
-            "value": false,
+            "value": true,
             "comment": "If true, instruments will represent North as 360 degrees, instead of the Minecraft default of 180. Allows using the heading system that real-world pilots and militaries do."
         },
         "simpleThrottle": {

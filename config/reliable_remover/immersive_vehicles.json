@@ -241,7 +241,6 @@
 			"mts:mtsofficialpack.fuzeimpact",
 			"mts:mtsofficialpack.fuzeproxy",
 			"mts:mtsofficialpack.hydraulics",
-			"mts:mtsofficialpack.infrared_sensor",
 			"mts:mtsofficialpack.metaltube",
 			"mts:mtsofficialpack.mre",
 			"mts:mtsofficialpack.nuts",
@@ -270,6 +269,7 @@
 			"mts:belroftmotors.learner_sign_l_blue",
 			"mts:belroftmotors.learner_sign_m",
 			"mts:belroftmotors.learner_sign_y",
+
 			"mts:mts.wheelbench",
 			"mts:mts.instrumentbench",
 			"mts:mts.seatbench",
@@ -281,7 +281,9 @@
 			"mts:mts.itembench",
 			"mts:mts.propellerbench",
 			"mts:mts.wrench",
-			"mts:mts.screwdriver"
+			"mts:mts.screwdriver",
+			"mts:mts.handbook_car",
+			"mts:mts.handbook_plane"
 		]
 	}
 ]
