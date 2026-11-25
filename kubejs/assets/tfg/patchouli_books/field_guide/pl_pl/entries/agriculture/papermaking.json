@@ -65,9 +65,7 @@
             "type": "patchouli:spotlight",
             "title": "Ociosane twarde drewno",
             "anchor": "stripped_hardwood",
-            "item": {
-                "tag": "tfg:stripped_hardwood"
-            },
+            "item": "tag:tfg:stripped_hardwood",
             "text": "Proces rozpoczyna się od usunięcia kory z $(t:#tfg:hardwood)$(6)twardego drewna$(), aby odsłonić włókna wewnątrz kłody. W tym celu postaw kłodę i użyj na niej siekiery za pomocą $(item)$(k:key.use)$()."
         },
         {
@@ -109,9 +107,7 @@
             "type": "patchouli:spotlight",
             "title": "Wyciskanie pulpy",
             "anchor": "pressing_the_pulp",
-            "item": {
-                "tag": "firmalife:stomping_barrels"
-            },
+            "item": "tag:firmalife:stomping_barrels",
             "text": "After broken down by boiling it with Lye, the $(item)Thermochemically Treated Hardwood Pulp$() can be pressed down into a sheet of $(item)Soaked Unrefined Paper$(). You can stomp the treated hardwood pulp in a $(l:cooking/alcohol#grape_smashing)Stomping Barrel$() into sheets, or you can use an $(l:craftsmanship/anvils)Anvil$()."
         },
         {

@@ -42,5 +42,8 @@
 	"key.ae2.wireless_pattern_access_terminal": "Otwórz bezprzewodowy terminal dostępu do wzorców",
 	"key.ae2.wireless_pattern_encoding_terminal": "Otwórz bezprzewodowy terminal kodowania wzorców",
 	"text.autoconfig.de/mari_023/ae2wtlib.option.magnetCardRange": "Zasięg karty magnetycznej",
-	"text.autoconfig.de/mari_023/ae2wtlib.title": "Terminale bezprzewodowe AE2"
+	"text.autoconfig.de/mari_023/ae2wtlib.title": "Terminale bezprzewodowe AE2",
+	"gui.ae2wtlib.current_terminal": "Obecny terminal: %s",
+	"item.ae2wtlib.wireless_filter_terminal": "Bezprzewodowy filtrowany terminal",
+	"key.ae2.wireless_filter_terminal": "Otwórz bezprzewodowy filtrowany terminal"
 }

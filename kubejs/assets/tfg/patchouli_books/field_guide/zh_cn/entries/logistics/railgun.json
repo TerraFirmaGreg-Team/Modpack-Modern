@@ -35,7 +35,7 @@
 		{
 			"type": "patchouli:multiblock",
 			"name": " ",
-			"enable_visualize": "true",
+			"enable_visualize": true,
 			"text": "使用$(l:craftsmanship/building_tools#terminals)终端$()即可轻松搭起这个多方块结构。",
 			"multiblock": {
 				"pattern": [
@@ -248,7 +248,7 @@
 		{
 			"type": "patchouli:multiblock",
 			"name": " ",
-			"enable_visualize": "true",
+			"enable_visualize": true,
 			"text": "使用$(l:craftsmanship/building_tools#terminals)终端$()即可轻松搭起这个多方块结构。",
 			"multiblock": {
 				"pattern": [

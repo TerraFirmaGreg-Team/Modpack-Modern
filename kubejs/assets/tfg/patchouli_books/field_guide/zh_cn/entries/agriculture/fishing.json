@@ -39,9 +39,7 @@
             "type": "patchouli:spotlight",
             "anchor": "fishing_net",
             "title": "渔网",
-            "item": {
-                "tag": "forge:tools/fishing_nets"
-            },
+            "item": "tag:forge:tools/fishing_nets",
             "text": "厌倦了拿着矛追着鱼跑？或者钓鱼时让上钩的猎物挣脱跑掉？做一个 $(thing)渔网$() 把晚餐捞上来吧。$(br)渔网的用法：对鱼类实体 $(item)$(k:key.use)$()，即可把鱼捕获进物品栏。不同等级的渔网功能完全相同，只是耐久度不同。"
         },
         {

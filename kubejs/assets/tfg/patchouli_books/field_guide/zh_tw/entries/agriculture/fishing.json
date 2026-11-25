@@ -39,9 +39,7 @@
             "type": "patchouli:spotlight",
             "anchor": "fishing_net",
             "title": "漁網",
-            "item": {
-                "tag": "forge:tools/fishing_nets"
-            },
+            "item": "tag:forge:tools/fishing_nets",
             "text": "厭倦了拿著魚叉追捕魚類？還是釣魚時總讓活蹦亂跳的漁獲溜走？做一張$(thing)漁網$()來撈晚餐吧。$(br)對魚類實體按 $(item)$(k:key.use)$() 即可將魚收進物品欄。不同等級的漁網效果相同，只差在耐久度。"
         },
         {

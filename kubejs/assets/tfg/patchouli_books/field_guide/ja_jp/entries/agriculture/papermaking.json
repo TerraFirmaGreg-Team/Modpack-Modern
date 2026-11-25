@@ -65,9 +65,7 @@
             "type": "patchouli:spotlight",
             "title": "樹皮を剥いだ堅木",
             "anchor": "stripped_hardwood",
-            "item": {
-                "tag": "tfg:stripped_hardwood"
-            },
+            "item": "tag:tfg:stripped_hardwood",
             "text": "この工程はまず、$(t:#tfg:hardwood)$(6)堅木$()の丸太から樹皮を取り除き、内部の繊維質を露出させるところから始まります。丸太を設置して斧を$(item)$(k:key.use)$()で使うことで、樹皮を剥ぐことができます。"
         },
         {
@@ -109,9 +107,7 @@
             "type": "patchouli:spotlight",
             "title": "パルプを潰す",
             "anchor": "pressing_the_pulp",
-            "item": {
-                "tag": "firmalife:stomping_barrels"
-            },
+            "item": "tag:firmalife:stomping_barrels",
             "text": "灰汁で煮沸して分解した後、$(item)熱処理済み堅木のパルプ$()を圧搾して、$(item)濡れた未精製の紙$()のシートにすることができます。$(l:cooking/alcohol#grape_smashing)踏み桶$()の中で、処理済みの広葉樹パルプを踏み潰してシート状にするか、$(l:craftsmanship/anvils)金床$()を使用することができます。"
         },
         {

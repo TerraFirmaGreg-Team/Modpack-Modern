@@ -427,9 +427,7 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "road_marking_stencils",
-            "item": {
-                "tag": "tfg:road_marking_stencils"
-            },
+            "item": "tag:tfg:road_marking_stencils",
             "title": "道路標線模板",
             "text": "瀝青路最具特色的自訂功能是道路標線：在完成的路面上噴上顏色和圖案，規劃車道、路口和警示線。$(br2)各種模板可以在$(thing)工匠桌$()上合成。"
         },

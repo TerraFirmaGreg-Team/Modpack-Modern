@@ -65,9 +65,7 @@
             "type": "patchouli:spotlight",
             "title": "Обтёсанное твёрдое дерево",
             "anchor": "stripped_hardwood",
-            "item": {
-                "tag": "tfg:stripped_hardwood"
-            },
+            "item": "tag:tfg:stripped_hardwood",
             "text": "Процесс начинается с обтесывания коры $(t:#tfg:hardwood)$(6)Твердого дерева$() для оголения внутренних волокон бревна. Ты можешь обтесать бревно поставив его и нажав $(item)$(k:key.use)$() с топором в руке."
         },
         {
@@ -109,9 +107,7 @@
             "type": "patchouli:spotlight",
             "title": "Пропитанная необработанная бумага",
             "anchor": "pressing_the_pulp",
-            "item": {
-                "tag": "firmalife:stomping_barrels"
-            },
+            "item": "tag:firmalife:stomping_barrels",
             "text": "После варки в щелочи, $(item)Обработанная масса из твердого дерева$() должна быть спрессована в лист $(item)Пропитанной необработанной бумаги$(). Ты можешь топтать обработанную массу из твердого дерева в $(l:cooking/alcohol#grape_smashing)Бочке для топки$(), либо использовать $(l:craftsmanship/anvils)Наковальню$()."
         },
         {

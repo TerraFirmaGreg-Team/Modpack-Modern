@@ -1,0 +1,19 @@
+{
+	"modmenu.nameTranslation.cwb": "Cubes Without Borders",
+	"modmenu.descriptionTranslation.cwb": "Pozwala grać w Minecraft w trybie pełnoekranowym bez ramek.",
+	"neoforge.screen.mods.info.description.cwb": "Pozwala grać w Minecraft w trybie pełnoekranowym bez ramek.",
+	"cwb.fullscreenMode.off": "Wyłączony",
+	"cwb.fullscreenMode.exclusive": "Wyłączny",
+	"cwb.fullscreenMode.borderless": "Okno bez ramek",
+	"cwb.fullscreenMode.windowed": "W oknie",
+	"cwb.options.fullscreenMode": "Tryb pełnoekranowy",
+	"cwb.options.exclusiveFullscreenType": "Rodzaj pełnego ekranu: wyłączny",
+	"cwb.options.borderlessFullscreenType": "Rodzaj pełnego ekranu: bez ramek",
+	"cwb.options.windowedFullscreenType": "Rodzaj pełnego ekranu: w oknie",
+	"cwb.options.useDelayedFullscreen": "Opóźnij włączenie pełnego ekranu",
+	"cwb.options.useScaledFramebuffer": "Użyj skalowanego bufora ramek",
+	"cwb.options.autoHideDock": "Automatyczne ukrywanie",
+	"cwb.options.autoHideMenuBar": "Automatycznie ukrywaj pasek menu",
+	"cwb.options.pauseOnLostFocus": "Pauza po opuszczeniu okna gry",
+	"cwb.options.pauseOnLostFocusDuringMultiplayer": "Pauza po opuszczeniu okna gry (tryb wieloosobowy)"
+}

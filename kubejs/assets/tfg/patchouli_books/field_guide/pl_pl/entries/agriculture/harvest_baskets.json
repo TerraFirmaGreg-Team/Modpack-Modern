@@ -6,9 +6,7 @@
         {
             "type": "patchouli:spotlight",
             "title": "Koszyki zbieracza",
-            "item": {
-                "tag": "tfg:harvester"
-            },
+            "item": "tag:tfg:harvester",
             "text": "Made for those with a short stature―$(thing)Harvest Baskets$() are just the tool needed for plucking trees and bushes of fruit.$(br)To use a harvest basket, $(item)$(k:key.use)$() on a $(l:the_world/wild_fruits#fruit_trees)Fruit Tree$(), $(l:the_world/wild_fruits#tall_bushes)Fruit Bush$(), $(l:agriculture/growing_crops#growing_grapes)Grape Trellis$(), $(l:agriculture/greenhouse#bonsai_planter)Bonsai Planter$(), $(l:agriculture/greenhouse#trellis_planter)Trellis Planter$(), or $(l:agriculture/greenhouse#hanging_planter)Hanging Planter$() and all blocks within a $(thing)7-block radius$() will be picked."
         },
         {

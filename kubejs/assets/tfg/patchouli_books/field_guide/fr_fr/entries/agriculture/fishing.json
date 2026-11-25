@@ -39,9 +39,7 @@
             "type": "patchouli:spotlight",
             "anchor": "fishing_net",
             "title": "Fishing Nets",
-            "item": {
-                "tag": "forge:tools/fishing_nets"
-            },
+            "item": "tag:forge:tools/fishing_nets",
             "text": "Tired of hunting down fish with spears? Or losing a floppy catch while fishing? Craft a $(thing)Fishing Net$() to scoop up your dinner.$(br)To use a fishing net; $(item)$(k:key.use)$() on a fish entity to capture the fish into your inventory. Different tier fishing nets all act the same, but have different durability."
         },
         {

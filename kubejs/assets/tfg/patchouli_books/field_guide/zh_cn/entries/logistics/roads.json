@@ -427,9 +427,7 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "road_marking_stencils",
-            "item": {
-                "tag": "tfg:road_marking_stencils"
-            },
+            "item": "tag:tfg:road_marking_stencils",
             "title": "道路标线板",
             "text": "沥青路最具特色的定制功能就是路面标线：在完工的路面上喷涂颜色和图案，用以规划车道、路口和警示线。$(br2)各种道路标线板都可以在$(thing)工匠台$()上制作。"
         },

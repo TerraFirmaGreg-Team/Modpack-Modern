@@ -149,6 +149,7 @@
 	"emi.dev.severity.warning": "Aviso",
 	"emi.dev.suggest_id": "Usa un ID sintético §7[namespace]§b:/§7[path]§r como\n§7%s§b:/§7%s§r",
 	"emi.dev.synthetic_id": "Usa un ID sintético §7[namespace]§b:/§7[path]§r",
+	"emi.dev.synthetic_nag_explanation": "El ID de la receta no se pudo encontrar en el administrador de la receta, pero no es sintético\n§7%s§r\nSi una receta no corresponde a una receta JSON impulsada por datos, debe usar un ID sintético",
 	"emi.disabled": "EMI desactivado! Actívalo con",
 	"emi.edit_mode.hide_all": "Pulsa %s para ocultar stacks por ID",
 	"emi.edit_mode.hide_one": "Pulsa %s para ocultar el stack",

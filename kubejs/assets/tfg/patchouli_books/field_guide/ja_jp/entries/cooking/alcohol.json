@@ -1,88 +1,86 @@
 {
-  "name": "酒類の生産",
-  "category": "tfg:cooking",
-  "icon": "firmalife:textures/item/hematitic_wine_bottle.png",
-  "pages": [
-    {
-        "type": "patchouli:text",
-        "title": "目次",
-        "anchor": "index",
-        "text": "$(li)$(bold)$(l:cooking/drinks#alcohol)酒類$()$(li)$(bold)$(l:cooking/drinks#aged_alcohol)酒類の熟成$()$(li)$(bold)$(l:cooking/drinks#vintage_alcohol)年代物の酒類$()$(li)$(bold)$(l:cooking/alcohol#wine_making)ワイン作り$()$(li2)$(l:cooking/alcohol#wine_properties)ワインの特徴$()$(li)$(bold)$(l:cooking/alcohol#wine_shelf)ワイン棚$()"
-    },
-    {
-        "type": "patchouli:text",
-        "title": "ワイン作り",
-        "anchor": "wine_making",
-        "text": "$(thing)ワイン作り$()とは、$(thing)ブドウ$()をアルコールに変える科学のことです。まず、$(l:the_world/wild_fruits#red_grapes) 赤ブドウ$() または $(l:the_world/wild_fruits#white_grapes)白ブドウ$() を野生の状態で見つけ、その種を $(thing)ブドウ棚$() で育てて $(item)ブドウ$() を入手する必要があります。ワインの効果については $(l:cooking/drinks#wine)こちら$() で確認できます。"
-    },
-    {
-        "type": "patchouli:spotlight",
-        "anchor": "grape_smashing",
-        "title": "ブドウをつぶす",
-        "item": {
-        "tag": "firmalife:stomping_barrels"
-        },
-        "text": "その後、ブドウを $(thing)踏み桶$()、$(thing)石臼$()、または $(l:cooking/cooking_methods#food_processor)自動調理機$() で潰し、潰れたブドウを作ります。\n潰れた赤いブドウを使用するには、新鮮なブドウを $(item)$(k:key.use)$() で投入します。その後、踏み桶の上で16回ジャンプします。手に何も持たず $(item)$(k:key.use)$() を実行して、アイテムを取り出します。$(br2)次に、潰れたブドウを樽に密封し、5日間 $(thing)発酵$() させます。"
-    },
-    {
-        "type": "patchouli:crafting",
-        "anchor": "barrel_press",
-        "title": "圧搾機",
-        "recipe": "firmalife:crafting/wood/acacia_barrel_press",
-        "text": "圧搾機はブドウ加工の最終段階です。"
-    },
-    {
-        "type": "patchouli:text",
-        "text": "一番左のスロットには、最大16個のブドウを入れることができます。ワイン1本を作るには、ブドウが4個必要です。中央の4つのスロットは、ブドウを他の材料と混ぜ合わせるためのものですが、これは任意です。赤ブドウまたは白ブドウのみを使用すると、赤ワインまたは白ワインができます。白ワインに赤ブドウを少なくとも1個加えると、ロゼワインになります。白ワインに砂糖を加えると、デザートワインになります。 Tirage mixture（イーストスターターと甘味料を樽に入れると作れる）を加えると、スパークリングワインになります。"
-    },
-    {
-        "type": "tfg:glassworking_recipe",
-        "recipe": "firmalife:glassworking/olivine_wine_bottle",
-        "text": "ワインは非シリカガラス製の適切なワインボトルに詰める必要があります。"
-    },
-    {
-        "type": "patchouli:crafting",
-        "anchor": "bottle_label",
-        "title": "ボトルラベル",
-        "recipe": "firmalife:crafting/bottle_label",
-        "text": "$(thing)ボトルラベル$()は筆記台で名前を変更でき、その名前がワインのツールチップに追加されます。"
-    },
-    {
-        "type": "patchouli:text",
-        "text": "ワインには$(thing)コルク$()が必要です。$(br2)$(thing)加工木材$()を$(thing)石灰水$()に1日浸けることで作成できます。$(br2)すべてが完了したら、ボトルスロットを使用してワインを詰めるか、ボトルを手に持って$(item)$(k:key.use)$()を押して詰めてください。"
-    },
-    {
-        "type": "patchouli:text",
-        "anchor": "wine_properties",
-        "title": "ワインを飲む",
-        "text": "目の肥えたソムリエは、異なる条件下で生産されたワインの微妙な違いを見分けることができます。$(tfg_short)の世界でも同様です。それは、ブドウが育った畑から始まります。ブドウ棚は、周囲の環境や土壌の影響を大きく受けます。"
-    },
-    {
-        "type": "patchouli:text",
-        "text": "ブドウには、周囲の環境に基づいて「砂利栽培」、「傾斜地栽培」、「土壌栽培」という3つの地形関連の特性があります。ワインには、ボトル詰めされた地域の気候区分も記録されます。ミツバチの近くで育ったブドウには「ミツバチ受粉」という特性があります。"
-    },
-    {
-        "type": "patchouli:text",
-        "text": "ワインは瓶詰めされるとすぐに熟成が始まり、コルクを外すと熟成が止まります。$(item)$(k:key.use)$()を押してナイフを使うことで、ボトルのコルクを取り外すことができます。それ以外の場合、ワインボトルはバケツのように機能し、樽や他の装置に中身を移すことができます。"
-    },
-    {
-        "type": "patchouli:crafting",
-        "title": "ワイン棚",
-        "anchor": "wine_shelf",
-        "recipe": "firmalife:crafting/wood/hickory_wine_shelf",
-        "text": "$(thing)ワイン棚$()は、ワイナリーに最適なアクセサリーで、ワインボトルをスタイリッシュに展示・保管できます。"
-    },
-    {
-        "type": "patchouli:relations",
-        "title": "関連項目",
-        "anchor": "relations",
-        "entries": [
-        "tfg:cooking/food_and_water",
-        "tfg:the_world/wild_crops",
-        "tfg:the_world/wild_fruits"
-        ]
-    }
-  ],
-  "read_by_default": true,
-  "sortnum": 6
+	"name": "酒類の生産",
+	"category": "tfg:cooking",
+	"icon": "firmalife:textures/item/hematitic_wine_bottle.png",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "目次",
+			"anchor": "index",
+			"text": "$(li)$(bold)$(l:cooking/drinks#alcohol)酒類$()$(li)$(bold)$(l:cooking/drinks#aged_alcohol)酒類の熟成$()$(li)$(bold)$(l:cooking/drinks#vintage_alcohol)年代物の酒類$()$(li)$(bold)$(l:cooking/alcohol#wine_making)ワイン作り$()$(li2)$(l:cooking/alcohol#wine_properties)ワインの特徴$()$(li)$(bold)$(l:cooking/alcohol#wine_shelf)ワイン棚$()"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "ワイン作り",
+			"anchor": "wine_making",
+			"text": "$(thing)ワイン作り$()とは、$(thing)ブドウ$()をアルコールに変える科学のことです。まず、$(l:the_world/wild_fruits#red_grapes) 赤ブドウ$() または $(l:the_world/wild_fruits#white_grapes)白ブドウ$() を野生の状態で見つけ、その種を $(thing)ブドウ棚$() で育てて $(item)ブドウ$() を入手する必要があります。ワインの効果については $(l:cooking/drinks#wine)こちら$() で確認できます。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "grape_smashing",
+			"title": "ブドウをつぶす",
+			"item": "tag:firmalife:stomping_barrels",
+			"text": "その後、ブドウを $(thing)踏み桶$()、$(thing)石臼$()、または $(l:cooking/cooking_methods#food_processor)自動調理機$() で潰し、潰れたブドウを作ります。\n潰れた赤いブドウを使用するには、新鮮なブドウを $(item)$(k:key.use)$() で投入します。その後、踏み桶の上で16回ジャンプします。手に何も持たず $(item)$(k:key.use)$() を実行して、アイテムを取り出します。$(br2)次に、潰れたブドウを樽に密封し、5日間 $(thing)発酵$() させます。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "barrel_press",
+			"title": "圧搾機",
+			"recipe": "firmalife:crafting/wood/acacia_barrel_press",
+			"text": "圧搾機はブドウ加工の最終段階です。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "一番左のスロットには、最大16個のブドウを入れることができます。ワイン1本を作るには、ブドウが4個必要です。中央の4つのスロットは、ブドウを他の材料と混ぜ合わせるためのものですが、これは任意です。赤ブドウまたは白ブドウのみを使用すると、赤ワインまたは白ワインができます。白ワインに赤ブドウを少なくとも1個加えると、ロゼワインになります。白ワインに砂糖を加えると、デザートワインになります。 Tirage mixture（イーストスターターと甘味料を樽に入れると作れる）を加えると、スパークリングワインになります。"
+		},
+		{
+			"type": "tfg:glassworking_recipe",
+			"recipe": "firmalife:glassworking/olivine_wine_bottle",
+			"text": "ワインは非シリカガラス製の適切なワインボトルに詰める必要があります。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "bottle_label",
+			"title": "ボトルラベル",
+			"recipe": "firmalife:crafting/bottle_label",
+			"text": "$(thing)ボトルラベル$()は筆記台で名前を変更でき、その名前がワインのツールチップに追加されます。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "ワインには$(thing)コルク$()が必要です。$(br2)$(thing)加工木材$()を$(thing)石灰水$()に1日浸けることで作成できます。$(br2)すべてが完了したら、ボトルスロットを使用してワインを詰めるか、ボトルを手に持って$(item)$(k:key.use)$()を押して詰めてください。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wine_properties",
+			"title": "ワインを飲む",
+			"text": "目の肥えたソムリエは、異なる条件下で生産されたワインの微妙な違いを見分けることができます。$(tfg_short)の世界でも同様です。それは、ブドウが育った畑から始まります。ブドウ棚は、周囲の環境や土壌の影響を大きく受けます。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "ブドウには、周囲の環境に基づいて「砂利栽培」、「傾斜地栽培」、「土壌栽培」という3つの地形関連の特性があります。ワインには、ボトル詰めされた地域の気候区分も記録されます。ミツバチの近くで育ったブドウには「ミツバチ受粉」という特性があります。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "ワインは瓶詰めされるとすぐに熟成が始まり、コルクを外すと熟成が止まります。$(item)$(k:key.use)$()を押してナイフを使うことで、ボトルのコルクを取り外すことができます。それ以外の場合、ワインボトルはバケツのように機能し、樽や他の装置に中身を移すことができます。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": "ワイン棚",
+			"anchor": "wine_shelf",
+			"recipe": "firmalife:crafting/wood/hickory_wine_shelf",
+			"text": "$(thing)ワイン棚$()は、ワイナリーに最適なアクセサリーで、ワインボトルをスタイリッシュに展示・保管できます。"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "関連項目",
+			"anchor": "relations",
+			"entries": [
+				"tfg:cooking/food_and_water",
+				"tfg:the_world/wild_crops",
+				"tfg:the_world/wild_fruits"
+			]
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 6
 }
