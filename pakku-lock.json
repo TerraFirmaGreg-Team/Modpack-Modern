@@ -14652,51 +14652,50 @@
                 "curseforge": "857737",
                 "modrinth": "s5d4P01r"
             },
-            "redistributable": false,
             "files": [
                 {
-                    "type": "modrinth",
-                    "file_name": "species-4.1_1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/s5d4P01r/versions/nX7PU7T1/species-4.1_1.20.1.jar",
-                    "id": "nX7PU7T1",
-                    "parent_id": "s5d4P01r",
-                    "hashes": {
-                        "sha512": "097b4e60b209fcbba454287acf6e096561b89049b770990654f0c268b72b040c04923d85f04e646bcf60f69a086190acc84888305f183640f84cd8629c03b1ed",
-                        "sha1": "81d25af795d23856070189a81148b5d6681005c4"
-                    },
-                    "required_dependencies": [],
-                    "size": 55821689,
-                    "date_published": "2026-11-24T16:44:14.137733Z"
-                },
-                {
                     "type": "curseforge",
-                    "file_name": "species-4.1_1.20.1.jar",
+                    "file_name": "species-3.5.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "forge",
-                        "neoforge"
+                        "neoforge",
+                        "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9794/548/species-4.1_1.20.1.jar",
-                    "id": "9794548",
+                    "url": "https://edge.forgecdn.net/files/6886/321/species-3.5.jar",
+                    "id": "6886321",
                     "parent_id": "857737",
                     "hashes": {
-                        "sha1": "81d25af795d23856070189a81148b5d6681005c4",
-                        "md5": "babeca318c478c716008efca5427f278"
+                        "sha1": "b4d924f4faf6eb201db04205b61fa1524a8b0178",
+                        "md5": "3fb4bc2ee270255038b08971dec18243"
                     },
                     "required_dependencies": [],
-                    "size": 55821689,
-                    "date_published": "2026-11-24T16:45:37.313Z"
+                    "size": 42114388,
+                    "date_published": "2025-08-14T16:26:07.777Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "species-3.5.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/s5d4P01r/versions/KwPDNMjG/species-3.5.jar",
+                    "id": "KwPDNMjG",
+                    "parent_id": "s5d4P01r",
+                    "hashes": {
+                        "sha512": "9ff8a488d3eed6950fe8eb09e3ab55e7fe65ee3340c212067e46bf98054330658e6406ad72388054f9ce00921b8d8fdeb5f28e09058c800bdf46e2e47a754a64",
+                        "sha1": "b4d924f4faf6eb201db04205b61fa1524a8b0178"
+                    },
+                    "required_dependencies": [],
+                    "size": 42114388,
+                    "date_published": "2025-08-14T16:26:28.693413Z"
                 }
             ]
         },
