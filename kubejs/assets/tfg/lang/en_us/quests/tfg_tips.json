@@ -538,8 +538,8 @@
 
     "quests.tfg_tips.tools_tips.markings.title": "Markings",
     "quests.tfg_tips.tools_tips.markings.subtitle": "Comply with OSHA standard 1910.303",
-    "quests.tfg_tips.tools_tips.markings.desc": "Similar to &2chalk&r--&d&lMarkings&r&r can be used to decorate your surfaces for a more immersive base. You can craft markings by first making a &bHazard Diamond Wall Marking&r and using a stonecutter to get the rest.",
-    "quests.tfg_tips.tools_tips.markings.task": "Any #ags_modernmarkings:markings",
+    "quests.tfg_tips.tools_tips.markings.desc": "Similar to &2chalk&r--&d&lMarkings&r&r can be used to decorate your surfaces for a more immersive base. You can craft markings by putting dyes in a stonecutter.",
+    "quests.tfg_tips.tools_tips.markings.task": "Any Marking",
 
     "quests.tfg_tips.tools_tips.harvest_basket.title": "Harvest Baskets",
     "quests.tfg_tips.tools_tips.harvest_basket.subtitle": "For competitive pie bakers.",
@@ -583,6 +583,14 @@
     "quests.tfg_tips.tools_tips.swim_gear.desc": "The &6Snorkel&r provides you with an extra 15 seconds of \"breath\" underwater, while the &aFlippers&r substantially increase your swim speed.",
 
     "quests.tfg_tips.compost_tumbler.subtitle": "Uh oh, stinky!",
-    "quests.tfg_tips.compost_tumbler.desc": "The &dCompost Tumbler&r is a faster and automated way of making &aCompost&r. Unlike the regular Composter, it can accept additional ingredients such as pottery sherds, fish, and bones.\n\nThe Compost Tumbler needs to be connected to Create's mechanical power to work, but it only runs at a certain speed."
+    "quests.tfg_tips.compost_tumbler.desc": "The &dCompost Tumbler&r is a faster and automated way of making &aCompost&r. Unlike the regular Composter, it can accept additional ingredients such as pottery sherds, fish, and bones.\n\nThe Compost Tumbler needs to be connected to Create's mechanical power to work, but it only runs at a certain speed.",
 
+    "quests.tfg_tips.flare_gun.title": "Flare Gun",
+    "quests.tfg_tips.flare_gun.subtitle": "Help, I'm lost!",
+    "quests.tfg_tips.flare_gun.desc": "The &cFlare Gun&r can fire extremely bright &eCartriges&r into the sky, letting everyone know just how lost you are. If you play on a server that turns off the minimap, this could actually be useful! Otherwise, it's great at flash banging your friends who are trying to focus on something.",
+    "quests.tfg_tips.flare_gun.task": "Any Flare Cartridge",
+
+    "quests.tfg_tips.confetti_gun.title": "Confetti Gun",
+    "quests.tfg_tips.confetti_gun.subtitle": "Congratulations!",
+    "quests.tfg_tips.confetti_gun.desc": "Celebrate your achievements with this confetti gun."
 }

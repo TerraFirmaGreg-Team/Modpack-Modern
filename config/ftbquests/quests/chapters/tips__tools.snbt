@@ -17,7 +17,7 @@
 			id: "338395C5F9B3A67D"
 			linked_quest: "044DD42F4F1E900F"
 			x: 2.5d
-			y: 3.5d
+			y: 4.0d
 		}
 	]
 	quests: [
@@ -2759,6 +2759,49 @@
 			title: "{quests.tfg_tips.tools_tips.asphalt_roads.title}"
 			x: 1.5d
 			y: -8.5d
+		}
+		{
+			dependencies: ["72B3EA6588E18CCC"]
+			description: ["{quests.tfg_tips.flare_gun.desc}"]
+			icon: "mts:mtsofficialpack.gunflaregun"
+			id: "06F4C692ED412A5A"
+			subtitle: "{quests.tfg_tips.flare_gun.subtitle}"
+			tasks: [
+				{
+					id: "36E4096866FBF84F"
+					item: "mts:mtsofficialpack.gunflaregun"
+					type: "item"
+				}
+				{
+					id: "10670C6A5DD69F2B"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(mts:mtsofficialpack.bulletflare_blue)item(mts:mtsofficialpack.bulletflare_green)item(mts:mtsofficialpack.bulletflare_rainbow)item(mts:mtsofficialpack.bulletflare_red)item(mts:mtsofficialpack.bulletflare_white)item(mts:mtsofficialpack.bulletflare_yellow))"
+						}
+					}
+					title: "{quests.tfg_tips.flare_gun.task}"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.flare_gun.title}"
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["72B3EA6588E18CCC"]
+			description: ["{quests.tfg_tips.confetti_gun.desc}"]
+			id: "6D50AF0594FB6FD8"
+			subtitle: "{quests.tfg_tips.confetti_gun.subtitle}"
+			tasks: [{
+				id: "7770BE795A08D1AF"
+				item: "mts:mtsofficialpack.gunconfetti"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.confetti_gun.title}"
+			x: 1.5d
+			y: -0.5d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.tools_tips.subtitle}"]
