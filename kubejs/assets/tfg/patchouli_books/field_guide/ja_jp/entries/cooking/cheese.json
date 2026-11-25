@@ -1,92 +1,88 @@
 {
-  "name": "チーズ作り",
-  "category": "tfg:cooking",
-  "icon": "firmalife:textures/item/food/gouda.png",
-  "pages": [
-    {
-      "type": "patchouli:text",
-      "text": "チーズを作るには、まずミルクを $(thing)凝乳$() させる必要があります。凝乳させるには、$(thing)レンネット$()が必要です。レンネットは、$(thing)反芻動物$()の胃から採取されます。反芻動物には、$(l:the_world/wild_animals#yak)ヤク$()、$(l:the_world/wild_animals#cow)牛$()、$(l:the_world/wild_animals#sheep)ヒツジ$()、$(l:the_world/wild_animals#goat)ヤギ$()、および$(l:the_world/wild_animals#musk_ox)ジャコウウシ$()が含まれます。凝乳させるには、レンネットを入れた$(item)樽$()にミルクを入れ、4時間密封してください。"
-    },
-    {
-      "type": "patchouli:spotlight",
-      "anchor": "curd",
-      "title": "チーズカード",
-      "item": {
-        "tag": "tfg:foods/cheese_curds"
-      },
-      "text": "凝乳したミルクは、$(thing)チーズクロス$() と一緒に樽に密封することで、$(thing)チーズカード$() に変えることができます。$(l)チーズクロスは再利用できません$()。$(br)チーズカードは、いくつかの材料と混ぜて揚げることで $(item)チーズカードのビール衣揚げ$() にしたり、ウェットチーズやドライチーズにして熟成させることができます。"
-    },
-    {
-      "type": "patchouli:spotlight",
-      "anchor": "cheese_wheel",
-      "title": "チーズホイール",
-      "item": {
-        "tag": "firmalife:cheese_wheels"
-      },
-      "text": "チーズホイールは、$(item)チーズカード$()から作られたブロックです。保存期間を延ばすには、$(thing)熟成$()を行い、$(l:cooking/decay#cellar)貯蔵庫$()で保管する必要があります。チーズホイールから食べられるチーズを得るには、$(thing)ナイフ$()を使って、$(item)$(k:key.use)$()でホイールからスライスする必要があります。ホイールをスライスしたり割ったりすると、熟成状態が失われてしまいます！$(br)$(thing)ドライチーズ$()はカードと塩で作れますが、$(thing)ウェットチーズ$()は海水に漬けることで作れます。"
-    },
-    {
-      "type": "tfg:multimultiblock",
-      "text": "チーズホイールの熟成段階：$(thing)新鮮$() + 28日 → $(thing)熟成$() + 112日 → $(thing)年代物$()。",
-      "multiblocks": [
-        {
-          "pattern": [
-            [
-              "X"
-            ],
-            [
-              "0"
-            ]
-          ],
-          "mapping": {
-            "X": "firmalife:gouda_wheel[age=fresh]"
-          }
-        },
-        {
-          "pattern": [
-            [
-              "X"
-            ],
-            [
-              "0"
-            ]
-          ],
-          "mapping": {
-            "X": "firmalife:gouda_wheel[age=aged]"
-          }
-        },
-        {
-          "pattern": [
-            [
-              "X"
-            ],
-            [
-              "0"
-            ]
-          ],
-          "mapping": {
-            "X": "firmalife:gouda_wheel[age=vintage]"
-          }
-        }
-      ]
-    },
-    {
-      "type": "patchouli:relations",
-      "title": "関連項目",
-      "anchor": "relations",
-      "entries": [
-        "tfg:cooking/food_and_water",
-        "tfg:cooking/decay",
-        "tfg:the_world/wild_animals"
-      ]
-    }
-  ],
-  "read_by_default": true,
-  "sortnum": 5,
-  "extra_recipe_mappings": {
-    "firmalife:rennet": 0,
-    "tag:tfg:foods/cheese_curds": 1,
-    "firmalife:cheesecloth": 1,
-    "tag:firmalife:cheese_wheels": 2
-  }
+	"name": "チーズ作り",
+	"category": "tfg:cooking",
+	"icon": "firmalife:textures/item/food/gouda.png",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "チーズを作るには、まずミルクを $(thing)凝乳$() させる必要があります。凝乳させるには、$(thing)レンネット$()が必要です。レンネットは、$(thing)反芻動物$()の胃から採取されます。反芻動物には、$(l:the_world/wild_animals#yak)ヤク$()、$(l:the_world/wild_animals#cow)牛$()、$(l:the_world/wild_animals#sheep)ヒツジ$()、$(l:the_world/wild_animals#goat)ヤギ$()、および$(l:the_world/wild_animals#musk_ox)ジャコウウシ$()が含まれます。凝乳させるには、レンネットを入れた$(item)樽$()にミルクを入れ、4時間密封してください。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "curd",
+			"title": "チーズカード",
+			"item": "tag:tfg:foods/cheese_curds",
+			"text": "凝乳したミルクは、$(thing)チーズクロス$() と一緒に樽に密封することで、$(thing)チーズカード$() に変えることができます。$(l)チーズクロスは再利用できません$()。$(br)チーズカードは、いくつかの材料と混ぜて揚げることで $(item)チーズカードのビール衣揚げ$() にしたり、ウェットチーズやドライチーズにして熟成させることができます。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "cheese_wheel",
+			"title": "チーズホイール",
+			"item": "tag:firmalife:cheese_wheels",
+			"text": "チーズホイールは、$(item)チーズカード$()から作られたブロックです。保存期間を延ばすには、$(thing)熟成$()を行い、$(l:cooking/decay#cellar)貯蔵庫$()で保管する必要があります。チーズホイールから食べられるチーズを得るには、$(thing)ナイフ$()を使って、$(item)$(k:key.use)$()でホイールからスライスする必要があります。ホイールをスライスしたり割ったりすると、熟成状態が失われてしまいます！$(br)$(thing)ドライチーズ$()はカードと塩で作れますが、$(thing)ウェットチーズ$()は海水に漬けることで作れます。"
+		},
+		{
+			"type": "tfg:multimultiblock",
+			"text": "チーズホイールの熟成段階：$(thing)新鮮$() + 28日 → $(thing)熟成$() + 112日 → $(thing)年代物$()。",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:gouda_wheel[age=fresh]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:gouda_wheel[age=aged]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:gouda_wheel[age=vintage]"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "関連項目",
+			"anchor": "relations",
+			"entries": [
+				"tfg:cooking/food_and_water",
+				"tfg:cooking/decay",
+				"tfg:the_world/wild_animals"
+			]
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 5,
+	"extra_recipe_mappings": {
+		"firmalife:rennet": 0,
+		"tag:tfg:foods/cheese_curds": 1,
+		"firmalife:cheesecloth": 1,
+		"tag:firmalife:cheese_wheels": 2
+	}
 }

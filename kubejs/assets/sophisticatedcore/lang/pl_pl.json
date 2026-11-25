@@ -295,5 +295,8 @@
 	"item.sophisticatedcore.storage.tooltip.linked_storage_group": "Grupa połączonych magazynów: %s",
 	"item.sophisticatedcore.storage.tooltip.linked_storage_endpoint": "Połączony punkt końcowy magazynu: %s",
 	"tooltip.sophisticatedcore.linked_storage.primary": "Główny połączony",
-	"tooltip.sophisticatedcore.linked_storage.secondary": "Połączony"
+	"tooltip.sophisticatedcore.linked_storage.secondary": "Połączony",
+	"item.sophisticatedcore.storage.tooltip.fluid_xp": "%s poz. doświadczenia %s",
+	"item.sophisticatedcore.storage.tooltip.fluid_with_capacity": "%s / %s mB %s",
+	"item.sophisticatedcore.storage.tooltip.fluid_xp_with_capacity": "%s / %s poz. doświadczenia %s"
 }

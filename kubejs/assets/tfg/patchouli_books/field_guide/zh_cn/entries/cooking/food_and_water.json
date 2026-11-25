@@ -63,9 +63,7 @@
         {
             "type": "patchouli:spotlight",
             "title": "饮水容器",
-            "item": {
-                "tag": "tfg:drinking_vessels"
-            },
+            "item": "tag:tfg:drinking_vessels",
             "text": "通过$(l:craftsmanship/pottery)黏土塑形$()并烧制$(l:craftsmanship/pottery#jug)陶壶$()，是早期随身携带水的方法。像用桶一样按$(item)$(k:key.use)$()装水。按住$(item)$(k:key.use)$()即可喝水。$(br2)你也可以用其他$(l:cooking/drinking_containers)容器$()喝水，比如$(item)水壶$()或$(l:craftsmanship/glassworking)玻璃瓶$()。"
         },
         {

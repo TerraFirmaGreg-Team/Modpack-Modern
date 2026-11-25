@@ -1,3 +1,12 @@
 {
-	"text.trender.style.MODERN": "Modernizado"
+	"text.trender.name": "Trender",
+	"text.trender.sendstacktraces": "Enviar seguimientos de pila",
+	"text.trender.sendstacktraces.tooltip": "Si esta opción está activada, los seguimientos de pila en el registro o los crash del juego que contengan referencias a los mods creados por tr7zw se enviarán al autor de las estos a través de (Sentry.io) para ayudar a corregir errores con mayor rapidez. No se recopila ni se envía información personal. (Reinicia el juego después de activar esta opción)",
+	"text.trender.style": "Estilo de la Interfaz",
+	"text.trender.style.MODERN": "Moderno",
+	"text.trender.style.MODERN_DARK": "Moderno Oscuro",
+	"text.trender.style.VANILLA_MODERN": "Moderno Original",
+	"text.trender.style.VANILLA_OLD": "Clásico Original",
+	"text.trender.style.tooltip": "Cambia el estilo de la interfaz de usuario de todos las mods creados por tr7zw.",
+	"text.trender.tab.general_options": "Opciones"
 }

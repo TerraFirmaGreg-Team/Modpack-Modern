@@ -42,5 +42,8 @@
 	"key.ae2.wireless_pattern_access_terminal": "開啟無線樣板存取終端機",
 	"key.ae2.wireless_pattern_encoding_terminal": "開啟無線樣板編碼終端機",
 	"text.autoconfig.de/mari_023/ae2wtlib.option.magnetCardRange": "磁鐵卡範圍",
-	"text.autoconfig.de/mari_023/ae2wtlib.title": "AE2 無線終端機"
+	"text.autoconfig.de/mari_023/ae2wtlib.title": "AE2 無線終端機",
+	"gui.ae2wtlib.current_terminal": "目前終端機：%s",
+	"item.ae2wtlib.wireless_filter_terminal": "無線過濾終端機",
+	"key.ae2.wireless_filter_terminal": "開啟無線過濾終端機"
 }

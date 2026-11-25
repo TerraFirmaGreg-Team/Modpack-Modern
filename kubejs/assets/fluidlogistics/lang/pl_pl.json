@@ -397,5 +397,16 @@
 	"fluidlogistics.ponder.potato_server/potato_server.header": "Odczytywanie informacji o grze za pomocą ziemniaczanego serwera",
 	"fluidlogistics.ponder.potato_server/potato_server.text_1": "Ziemniaczany serwer może odczytywać informacje o grze",
 	"fluidlogistics.ponder.potato_server/potato_server.text_2": "Połącz go z łączami wyświetlacza",
-	"fluidlogistics.ponder.potato_server/potato_server.text_3": "Wizualizuj dynamicznie więcej informacji"
+	"fluidlogistics.ponder.potato_server/potato_server.text_3": "Wizualizuj dynamicznie więcej informacji",
+	"config.jade.plugin_fluidlogistics.snow_golem_freezer_icon": "Ikona bałwanowej zamrażarki",
+	"fluidlogistics.ponder.oscillating_steam_engine/setup.text_10": "Stopień mocy: 4",
+	"fluidlogistics.ponder.oscillating_steam_engine/setup.text_11": "4 silniki",
+	"fluidlogistics.ponder.oscillating_steam_engine/setup.text_12": "Stopień mocy: 8",
+	"fluidlogistics.ponder.oscillating_steam_engine/setup.text_13": "8 silników",
+	"fluidlogistics.ponder.oscillating_steam_engine/setup.text_3": "Z wystarczającym ciepłem, wodą i miejscem w boilerze...",
+	"fluidlogistics.ponder.snow_golem_freezer/capturing.header": "Używanie pustych bałwanowych zamrażarek",
+	"fluidlogistics.ponder.snow_golem_freezer/fueling.header": "Karmienie bałwanowych zamrażarek",
+	"item.fluidlogistics.package_list_filter": "Kartonikowy filtr listowy",
+	"item.fluidlogistics.package_list_filter.tooltip.condition1": "Kiedy kliknięto PPM",
+	"item.fluidlogistics.package_list_filter.tooltip.behaviour1": "Otwiera _interfejs konfiguracyjny_."
 }

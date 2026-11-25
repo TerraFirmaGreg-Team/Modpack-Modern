@@ -469,7 +469,7 @@
 	"gui.ae2.units.rf": "RF",
 	"gui.ae2.Unlinked": "Розірвано зв'язок",
 	"gui.ae2.UpgradeToolbelt": "Ремінь інструментів для покращення",
-	"gui.ae2.UsedAmount": "Використано: ",
+	"gui.ae2.UsedAmount": "Використано: %s",
 	"gui.ae2.VibrationChamber": "Вібраційна камера",
 	"gui.ae2.White": "Білий",
 	"gui.ae2.Wireless": "Бездротова точка доступу",
@@ -990,5 +990,14 @@
 	"gui.tooltips.ae2.PatternProviderDisplayMode": "Режим зображення",
 	"item.ae2.filter_terminal": "Термінал фільтрів ME",
 	"key.ae2.cycle_controller_animation": "Перемикати анімацію контролера",
-	"key.ae2.pin_entry": "Закріпити/відкріпити запис"
+	"key.ae2.pin_entry": "Закріпити/відкріпити запис",
+	"gui.ae2.CraftingPlanSaveFailed": "Не вдалося зберегти зображення плану створення: %s",
+	"gui.ae2.CraftingPlanSaved": "План створення збережено як %s",
+	"gui.ae2.CraftingPlanTooLarge": "План створення завеликий, щоб зберегти його як зображення",
+	"gui.tooltips.ae2.AddFavorite": "Додати до обраного",
+	"gui.tooltips.ae2.ExportCraftingPlan": "Зберегти як зображення",
+	"gui.tooltips.ae2.ExportCraftingPlanHint": "Зберігає весь план створення у форматі зображення PNG.",
+	"gui.tooltips.ae2.FavoriteHint": "Обране відображається першим.",
+	"gui.tooltips.ae2.RemoveFavorite": "Видалити з обраних",
+	"item.ae2.sticky_card": "Закріплена картка"
 }

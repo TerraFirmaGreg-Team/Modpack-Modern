@@ -82,36 +82,28 @@
         {
             "title": "沉積岩",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:raw_stone/sedimentary"
-            },
+            "item": "tag:tfg:raw_stone/sedimentary",
             "anchor": "sedimentary",
             "text": "$(l:https://en.wikipedia.org/wiki/Sedimentary_rock)沉積岩$()是由礦物或有機顆粒堆積、沉澱而成，通常位於大陸地區岩層的最上層。"
         },
         {
             "title": "變質岩",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:raw_stone/metamorphic"
-            },
+            "item": "tag:tfg:raw_stone/metamorphic",
             "anchor": "metamorphic",
             "text": "$(l:https://en.wikipedia.org/wiki/Metamorphic_rock)變質岩$()是經由變質作用形成的岩石，位於對應的沉積岩或火成岩下方，或出現在隆起區域。"
         },
         {
             "title": "噴出岩",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:raw_stone/igneous_extrusive"
-            },
+            "item": "tag:tfg:raw_stone/igneous_extrusive",
             "anchor": "igneous_extrusive",
             "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Extrusive)噴出岩$()是岩漿在地表冷卻形成的岩石，位於大陸地區岩層的最上層或海底。"
         },
         {
             "title": "侵入岩",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:raw_stone/igneous_intrusive"
-            },
+            "item": "tag:tfg:raw_stone/igneous_intrusive",
             "anchor": "igneous_intrusive",
             "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Intrusive)侵入岩$()是岩漿在地殼下方冷卻形成的岩石，位於地底深處，少數出現在岩脈或隆起區域。"
         },
@@ -124,63 +116,49 @@
         {
             "title": "沉積岩－碳酸鹽質",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:stone_composition/raw/sedimentary_carbonate"
-            },
+            "item": "tag:tfg:stone_composition/raw/sedimentary_carbonate",
             "anchor": "sedimentary_carbonate",
             "text": "$(l:https://en.wikipedia.org/wiki/Carbonate_rock)碳酸鹽質沉積岩$()主要由方解石等碳酸鹽礦物組成。"
         },
         {
             "title": "沉積岩－碎屑質",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:stone_composition/raw/sedimentary_clastic"
-            },
+            "item": "tag:tfg:stone_composition/raw/sedimentary_clastic",
             "anchor": "sedimentary_clastic",
             "text": "$(l:https://en.wikipedia.org/wiki/Clastic_rock)碎屑質沉積岩$()由既有礦物或岩石的碎片(碎屑)組成。"
         },
         {
             "title": "沉積岩－有機質",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:stone_composition/raw/sedimentary_organic"
-            },
+            "item": "tag:tfg:stone_composition/raw/sedimentary_organic",
             "anchor": "sedimentary_organic",
             "text": "$(l:https://en.wikipedia.org/wiki/Organic-rich_sedimentary_rocks)有機質沉積岩$()是由貝殼、細菌等有機物分解或化石化而形成的。"
         },
         {
             "title": "火成岩－長英質",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:stone_composition/raw/igneous_felsic"
-            },
+            "item": "tag:tfg:stone_composition/raw/igneous_felsic",
             "anchor": "igneous_felsic",
             "text": "$(l:https://en.wikipedia.org/wiki/Felsic)長英質火成岩$()含有大量形成長石和石英的元素。一般來說，岩石須含 75% 以上的長英質礦物，才歸類為$(thing)長英質$()。"
         },
         {
             "title": "火成岩－中性",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:stone_composition/raw/igneous_intermediate"
-            },
+            "item": "tag:tfg:stone_composition/raw/igneous_intermediate",
             "anchor": "igneous_intermediate",
             "text": "$(l:https://en.wikipedia.org/wiki/Intermediate_composition)中性火成岩$()含有 51.5 — 63.0 wt% 的 SiO₂，成分介於$(l:the_world/geology#igneous_felsic)長英質$()和$(l:the_world/geology#igneous_mafic)鎂鐵質$()之間。"
         },
         {
             "title": "火成岩－鎂鐵質",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:stone_composition/raw/igneous_mafic"
-            },
+            "item": "tag:tfg:stone_composition/raw/igneous_mafic",
             "anchor": "igneous_mafic",
             "text": "$(l:https://en.wikipedia.org/wiki/Mafic)鎂鐵質火成岩$()含有大量的鎂、鐵礦物。"
         },
         {
             "title": "火成岩－超鎂鐵質",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:stone_composition/raw/igneous_ultramafic"
-            },
+            "item": "tag:tfg:stone_composition/raw/igneous_ultramafic",
             "anchor": "igneous_ultramafic",
             "text": "$(l:https://en.wikipedia.org/wiki/Mafic)超鎂鐵質火成岩$()的二氧化矽含量非常低。"
         },

@@ -42,5 +42,8 @@
 	"key.ae2.wireless_pattern_access_terminal": "打开样板管理终端",
 	"key.ae2.wireless_pattern_encoding_terminal": "打开无线样板终端",
 	"text.autoconfig.de/mari_023/ae2wtlib.option.magnetCardRange": "磁卡范围",
-	"text.autoconfig.de/mari_023/ae2wtlib.title": "AE2 无线终端"
+	"text.autoconfig.de/mari_023/ae2wtlib.title": "AE2 无线终端",
+	"gui.ae2wtlib.current_terminal": "当前终端： %s",
+	"item.ae2wtlib.wireless_filter_terminal": "无线过滤终端",
+	"key.ae2.wireless_filter_terminal": "打开无线过滤终端"
 }

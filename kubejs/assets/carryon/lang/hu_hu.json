@@ -1,4 +1,14 @@
 {
 	"carryon.category.blacklist": "Feketelista",
-	"carryon.category.whitelist": "Fehérlista"
+	"carryon.category.custompickupconditions": "Egyedi felvevési feltételek (fejlett)",
+	"carryon.category.custompickupconditions.custompickupconditionsblocks": "Egyedi blokk felvevési feltételek",
+	"carryon.category.custompickupconditions.custompickupconditionsentities": "Egyedi entitás felvevési feltételek",
+	"carryon.category.modeloverrides": "Modell felülírása (fejlett)",
+	"carryon.category.settings": "Beállítások",
+	"carryon.category.whitelist": "Fehérlista",
+	"carryon.general.blacklist.forbiddenentities": "Entitások amiket a játékos nem vehet fel",
+	"carryon.general.blacklist.forbiddentiles": "Blokkok amiket a játékos nem vehet fel",
+	"carryon.general.modeloverrides.modeloverrides": "Modell felülírása",
+	"key.carry.category": "Carry On",
+	"key.carry.desc": "Felvevés"
 }

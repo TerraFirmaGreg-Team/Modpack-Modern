@@ -19,14 +19,14 @@
 		{
 			"type": "patchouli:spotlight",
 			"title": "陳年酒",
-			"text": "$(thing)陳年酒$()是將一般酒類在密封大桶中熟成 3 個月製成，飲用時會提供效果。",
+			"text": "$(thing)陳年酒$()是將一般酒類在密封大桶中陳釀 3 個月製成，飲用時會提供效果。",
 			"item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey,tfcagedalcohol:bucket/aged_mead",
 			"anchor": "aged_alcohol"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "年份酒",
-			"text": "$(thing)年份酒類$()是將酒在密封大桶中再熟成 3 個月製成，效果更強、持續更久。",
+			"text": "$(thing)年份酒類$()是將酒在密封大桶中再陳釀 3 個月製成，效果更強、持續更久。",
 			"item": "tfg:vintage_beer_bucket,tfg:vintage_cider_bucket,tfg:vintage_rum_bucket,tfg:vintage_sake_bucket,tfg:vintage_vodka_bucket,tfg:vintage_whiskey_bucket,tfg:vintage_corn_whiskey_bucket,tfg:vintage_rye_whiskey_bucket,tfg:vintage_mead_bucket",
 			"anchor": "vintage_alcohol"
 		},

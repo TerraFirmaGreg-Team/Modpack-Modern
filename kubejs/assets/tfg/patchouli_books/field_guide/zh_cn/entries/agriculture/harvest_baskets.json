@@ -6,9 +6,7 @@
         {
             "type": "patchouli:spotlight",
             "title": "收获篮",
-            "item": {
-                "tag": "tfg:harvester"
-            },
+            "item": "tag:tfg:harvester",
             "text": "为身材矮小的人量身打造——$(thing)收获篮$()正是从树上和灌木上摘果子所需的工具。$(br)要使用收获篮，$(item)$(k:key.use)$() 一棵 $(l:the_world/wild_fruits#fruit_trees)果树$()、一丛 $(l:the_world/wild_fruits#tall_bushes)浆果丛$()、一个 $(l:agriculture/growing_crops#growing_grapes)葡萄棚架$()、$(l:agriculture/greenhouse#bonsai_planter)盆栽种植盆$()、$(l:agriculture/greenhouse#trellis_planter)格子种植架$() 或 $(l:agriculture/greenhouse#hanging_planter)悬挂种植盆$()，$(thing)7 格半径$() 内所有方块上的果实都会被采摘。"
         },
         {

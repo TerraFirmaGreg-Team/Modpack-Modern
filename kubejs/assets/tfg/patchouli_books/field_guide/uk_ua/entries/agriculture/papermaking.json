@@ -65,9 +65,7 @@
             "type": "patchouli:spotlight",
             "title": "Очищена тверда деревина",
             "anchor": "stripped_hardwood",
-            "item": {
-                "tag": "tfg:stripped_hardwood"
-            },
+            "item": "tag:tfg:stripped_hardwood",
             "text": "Процес починається зі зняття кори з $(t:#tfg:hardwood)$(6)твердої деревини$(), щоб оголити внутрішні волокна колоди. Щоб зняти кору з колоди, встанови її та натисни $(item)$(k:key.use)$(), тримаючи сокиру."
         },
         {
@@ -109,9 +107,7 @@
             "type": "patchouli:spotlight",
             "title": "Пресування целюлози",
             "anchor": "pressing_the_pulp",
-            "item": {
-                "tag": "firmalife:stomping_barrels"
-            },
+            "item": "tag:firmalife:stomping_barrels",
             "text": "Після виварювання з лугом $(item)термохімічно оброблену целюлозу з твердої деревини$() можна спресувати в лист $(item)вимоченого необробленого паперу$(). Ти можеш утрамбувати оброблену целюлозу в $(l:cooking/alcohol#grape_smashing)чавільній діжці$(), щоб отримати листи, або використати $(l:craftsmanship/anvils)ковадло$()."
         },
         {

@@ -82,36 +82,28 @@
         {
             "title": "Осадові",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:raw_stone/sedimentary"
-            },
+            "item": "tag:tfg:raw_stone/sedimentary",
             "anchor": "sedimentary",
             "text": "$(l:https://en.wikipedia.org/wiki/Sedimentary_rock)Осадові$() породи утворюються внаслідок накопичення або осадження мінеральних чи органічних частинок. Зазвичай вони залягають у верхніх шарах порід на континентальних територіях."
         },
         {
             "title": "Метаморфічні",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:raw_stone/metamorphic"
-            },
+            "item": "tag:tfg:raw_stone/metamorphic",
             "anchor": "metamorphic",
             "text": "$(l:https://en.wikipedia.org/wiki/Metamorphic_rock)Метаморфічні$() породи утворюються внаслідок процесу, який називається метаморфізмом. Їх можна знайти під відповідними осадовими або магматичними породами, а також у зонах підняття земної кори."
         },
         {
             "title": "Інфузивні",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:raw_stone/igneous_extrusive"
-            },
+            "item": "tag:tfg:raw_stone/igneous_extrusive",
             "anchor": "igneous_extrusive",
             "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Extrusive)Екструзивні$() породи утворюються внаслідок охолодження магми на поверхні Землі. Їх можна знайти у верхньому шарі гірських порід на континентальних територіях або на дні океанів."
         },
         {
             "title": "Інтрузивні",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:raw_stone/igneous_intrusive"
-            },
+            "item": "tag:tfg:raw_stone/igneous_intrusive",
             "anchor": "igneous_intrusive",
             "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Intrusive)Інтрузивні$() породи утворюються з магми, яка охолола під земною корою. Їх можна знайти глибоко під землею або, рідше, у дайках чи зонах підняття."
         },
@@ -124,63 +116,49 @@
         {
             "title": "Осадово-карбонатні",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:stone_composition/raw/sedimentary_carbonate"
-            },
+            "item": "tag:tfg:stone_composition/raw/sedimentary_carbonate",
             "anchor": "sedimentary_carbonate",
             "text": "$(l:https://en.wikipedia.org/wiki/Carbonate_rock)Осадово-карбонатні$() породи складаються переважно з карбонатних мінералів, таких як кальцит."
         },
         {
             "title": "Осадово-уламкові",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:stone_composition/raw/sedimentary_clastic"
-            },
+            "item": "tag:tfg:stone_composition/raw/sedimentary_clastic",
             "anchor": "sedimentary_clastic",
             "text": "$(l:https://en.wikipedia.org/wiki/Clastic_rock)Осадово-уламкові$() породи складаються з уламків (кластів) мінералів або порід, що існували раніше."
         },
         {
             "title": "Осадово-органічні",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:stone_composition/raw/sedimentary_organic"
-            },
+            "item": "tag:tfg:stone_composition/raw/sedimentary_organic",
             "anchor": "sedimentary_organic",
             "text": "$(l:https://en.wikipedia.org/wiki/Organic-rich_sedimentary_rocks)Осадово-органічні$() породи утворюються внаслідок розкладання або скам’яніння органічних речовин, таких як мушлі чи бактерії."
         },
         {
             "title": "Магматичні-кислі",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:stone_composition/raw/igneous_felsic"
-            },
+            "item": "tag:tfg:stone_composition/raw/igneous_felsic",
             "anchor": "igneous_felsic",
             "text": "$(l:https://en.wikipedia.org/wiki/Felsic)Магматичні-кислі$() містять значну кількість елементів, з яких утворюються польові шпати та кварц. Загалом порода має містити понад 75% фельзитових мінералів, щоб класифікуватися як $(thing)кислі()$."
         },
         {
             "title": "Магматичні-середні",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:stone_composition/raw/igneous_intermediate"
-            },
+            "item": "tag:tfg:stone_composition/raw/igneous_intermediate",
             "anchor": "igneous_intermediate",
             "text": "$(l:https://en.wikipedia.org/wiki/Intermediate_composition)Магматичні-середні$() породи містять 51,5–63,0 % мас. SiO₂, що ставить їх між породами $(l:the_world/geology#igneous_felsic)кислого$() та $(l:the_world/geology#igneous_mafic)основного$() складу."
         },
         {
             "title": "Магматичні-основні",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:stone_composition/raw/igneous_mafic"
-            },
+            "item": "tag:tfg:stone_composition/raw/igneous_mafic",
             "anchor": "igneous_mafic",
             "text": "$(l:https://en.wikipedia.org/wiki/Mafic)Магматичні-основні$() породи містять значну кількість мінералів магнію та заліза."
         },
         {
             "title": "Магматичні-ультраосновні",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:stone_composition/raw/igneous_ultramafic"
-            },
+            "item": "tag:tfg:stone_composition/raw/igneous_ultramafic",
             "anchor": "igneous_ultramafic",
             "text": "$(l:https://en.wikipedia.org/wiki/Mafic)Магматичні-ультраосновні$() породи містять дуже низьку концентрацію кремнезему."
         },

@@ -42,5 +42,8 @@
 	"key.ae2.wireless_pattern_access_terminal": "Відкрити бездротовий термінал доступу до шаблонів",
 	"key.ae2.wireless_pattern_encoding_terminal": "Відкрити бездротовий термінал кодування шаблонів",
 	"text.autoconfig.de/mari_023/ae2wtlib.option.magnetCardRange": "Досяжність магнітної картки",
-	"text.autoconfig.de/mari_023/ae2wtlib.title": "AE2 бездротові термінали"
+	"text.autoconfig.de/mari_023/ae2wtlib.title": "AE2 бездротові термінали",
+	"gui.ae2wtlib.current_terminal": "Поточний термінал: %s",
+	"item.ae2wtlib.wireless_filter_terminal": "Бездротовий термінал фільтрації",
+	"key.ae2.wireless_filter_terminal": "Відкрити бездротовий термінал фільтрації"
 }

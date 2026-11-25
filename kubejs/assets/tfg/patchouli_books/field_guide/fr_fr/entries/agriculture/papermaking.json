@@ -65,9 +65,7 @@
             "type": "patchouli:spotlight",
             "title": "Bois dur écorcé",
             "anchor": "stripped_hardwood",
-            "item": {
-                "tag": "tfg:stripped_hardwood"
-            },
+            "item": "tag:tfg:stripped_hardwood",
             "text": "The process begins by stripping the $(t:#tfg:hardwood)$(6)Hardwood's$() bark off to expose the internal fibers of the log, You can strip the log by placing it down and $(item)$(k:key.use)$() it with an axe."
         },
         {
@@ -109,9 +107,7 @@
             "type": "patchouli:spotlight",
             "title": "Presser la pulpe",
             "anchor": "pressing_the_pulp",
-            "item": {
-                "tag": "firmalife:stomping_barrels"
-            },
+            "item": "tag:firmalife:stomping_barrels",
             "text": "After broken down by boiling it with Lye, the $(item)Thermochemically Treated Hardwood Pulp$() can be pressed down into a sheet of $(item)Soaked Unrefined Paper$(). You can stomp the treated hardwood pulp in a $(l:cooking/alcohol#grape_smashing)Stomping Barrel$() into sheets, or you can use an $(l:craftsmanship/anvils)Anvil$()."
         },
         {
