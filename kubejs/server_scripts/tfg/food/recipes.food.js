@@ -6,6 +6,7 @@
  */
 function registerTFGFoodRecipes(event) {
 
+	registerTFGAppliancesRecipes(event)
 	registerTFGBasicProcessingFoodRecipes(event);
 	registerTFGPreservationFoodRecipes(event);
 	registerTFGMealBagRecipes(event);

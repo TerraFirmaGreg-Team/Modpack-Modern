@@ -24,8 +24,10 @@ function registerTFGHeatData(event) {
 
 	global.MINECRAFT_DYE_NAMES.forEach((color) => {
 		event.itemHeat(`tfg:decorative_vase/unfired/${color}`, 1, null, null);
+		event.itemHeat(`tfg:baking_dish_${color}_unfired`, 1, null, null);
 	});
 	event.itemHeat("tfg:decorative_vase/unfired", 1, null, null);
+	event.itemHeat('tfg:baking_dish_unfired', 1, null, null);
 
 	event.itemHeat('tfg:unfired_rod_mold', 1.0, null, null);
 	event.itemHeat('tfg:unfired_spindle_head_mold', 1.0, null, null);
@@ -74,9 +76,11 @@ function registerTFGItemSize(event) {
 	global.MINECRAFT_DYE_NAMES.forEach((color) => {
 		event.itemSize(`tfg:decorative_vase/${color}`, "normal", "medium", `decorative_vase/${color}`);
 		event.itemSize(`tfg:decorative_vase/unfired/${color}`, "normal", "medium", `decorative_vase/unfired/${color}`);
+		event.itemSize(`tfg:baking_dish_${color}_unfired`, 'huge', 'heavy', `baking_dish_${color}_unfired`);
 	});
 	event.itemSize("tfg:decorative_vase", "normal", "medium", "decorative_vase");
 	event.itemSize("tfg:decorative_vase/unfired", "normal", "medium", "decorative_vase/unfired");
+	event.itemSize('tfg:baking_dish_unfired', 'huge', 'heavy', 'baking_dish_unfired');
 	event.itemSize("#tfg:rope_ladders", "normal", "light", "rope_ladders");
 
 	event.itemSize("tfg:fishing_net/wood", "large", "medium", "wood_fishing_net");
