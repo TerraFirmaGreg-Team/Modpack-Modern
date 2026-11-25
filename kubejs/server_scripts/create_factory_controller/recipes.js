@@ -19,13 +19,21 @@ const registerCreateFactoryControllerRecipes = (event) => {
 
 	event.shaped('createfactorycontroller:controller_remote', [
 		' A ',
-		'BCB',
-		'DED'
+		'CDE',
+		'BFB'
 	], {
 		A: 'create:transmitter',
 		B: '#forge:plates/rose_quartz',
-		C: '#gtceu:transistors',
-		D: 'create:precision_mechanism',
-		E: 'create:linked_controller'
+		C: 'gtceu:mv_sensor',
+		D: '#gtceu:transistors',
+		E: 'gtceu:mv_emitter',
+		F: 'create:linked_controller'
+	})
+
+	event.shaped('createfactorycontroller:arithmetic_tube', [
+		'RER'
+	], {
+		R: 'minecraft:redstone_torch',
+		E: 'create:electron_tube'
 	})
 }

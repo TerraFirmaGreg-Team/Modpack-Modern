@@ -2273,6 +2273,21 @@
 			x: -2.0d
 			y: -8.0d
 		}
+		{
+			dependencies: ["36BF3283BEBCCEBF"]
+			description: ["{quests.low_voltage.factory_controller.desc}"]
+			id: "599DD572ED7182BF"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.low_voltage.factory_controller.subtitle}"
+			tasks: [{
+				id: "2ECA23C18B455798"
+				item: "createfactorycontroller:factory_controller"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 15.5d
+		}
 	]
 	subtitle: ["{quests.low_voltage.subtitle}"]
 	title: "{quests.low_voltage}"
