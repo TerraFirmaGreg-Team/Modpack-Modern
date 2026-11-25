@@ -30,7 +30,9 @@
     "fallbackDimensionIcon": "tfg-icon",
     "dimensionData": {
       "default": {
-        "textOverride": "In the {dimension.name}"
+        "textOverride": "In the {dimension.name}",
+      "the_nether": {
+        "textOverride": "In the Beneath"
       }
     }
   },
