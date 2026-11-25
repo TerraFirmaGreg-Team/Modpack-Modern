@@ -11,7 +11,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:logistics/boats#watercraft)Watercraft$()$(li2)$(l:logistics/boats#kayak)Kayak$()$(li2)$(l:logistics/boats#canoe)Dugout Canoe$()$(li2)$(l:logistics/boats#rowboat)Rowboat$()$(li2)$(l:logistics/boats#sloop)Sloop$()"
+            "text": "$(li)$(bold)$(l:logistics/boats#watercraft)Watercraft$()$(li2)$(l:logistics/boats#kayak)Kayak$()$(li2)$(l:logistics/boats#canoe)Dugout Canoe$()$(li2)$(l:logistics/boats#rowboat)Rowboat$()$(li2)$(l:logistics/boats#sloop)Sloop$()$(li2)$(l:logistics/boats#vehicles)Motorboats$()"
         },
         {
             "type": "patchouli:text",
@@ -599,6 +599,13 @@
             "text": "You'll also need cannonballs, smithed from Wrought Iron Double Ingots, as well as Gunpowder, Unrefined Paper and a Flint and Steel in order to fire a cannon. A UI element will indicate the status of the cannon. You can angle a cannon up by pressing $(item)$(k:key.use)$() and down by crouching and pressing $(item)$(k:key.use)$()."
         },
         {
+            "type": "patchouli:spotlight",
+            "anchor": "vehicles",
+            "title": "Motorboats",
+            "item": "tag:mts:fisker,tag:mts:corallum,tag:mts:starfish",
+            "text": "After you reach $(7)LV$(), you'll be able to craft $(thing)Motorboats$(). These boats are powered with $(item)Fuel$() and can carry multiple passengers and cargo. Check the $(l:logistics/vehicles)Vehicles$() entry to learn more about them."
+        },
+        {
             "type": "patchouli:relations",
             "title": "Further Reading",
             "anchor": "relations",
@@ -608,7 +615,8 @@
                 "tfg:logistics/exploration_gear",
                 "tfg:logistics/navigation",
                 "tfg:the_world/earth_tree_index",
-                "tfg:logistics/trains"
+                "tfg:logistics/trains",
+                "tfg:logistics/vehicles"
             ]
         }
     ],

@@ -1,0 +1,244 @@
+{
+	"name": "Vehicles",
+	"category": "tfg:logistics",
+	"icon": "mts:mtsofficialpack.repairkit",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "You've travelled through the plains on horseback, sailed the seven seas on a sloop, and flown through the air on a glider... now it's time for real motor vehicles!$(br2)This entry is a guide to $(italic)$(9)Immersive Vehicles$() and how it all works.$(br2)$(bold)Contents$(li)$(bold)$(l:logistics/vehicles#tools)Getting Started$()$(li)$(bold)$(l:logistics/vehicles#fuel)Fuel$() and $(bold)$(l:logistics/vehicles#refueling)Refueling$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"text": "$(li)$(bold)$(l:logistics/vehicles#repairing)Repairing$()$(li2)$(l:logistics/vehicles#engines)Engine Care$()$(li)$(bold)$(l:logistics/vehicles#recharging)Recharging$()$(li)$(bold)$(l:logistics/vehicles#instruments)Instruments$()$(li)$(bold)$(l:logistics/vehicles#paintgun)Repainting$()$(li)$(bold)$(l:logistics/vehicles#key)Locking your Vehicle$()$(li)$(bold)$(l:logistics/vehicles#ticket)Loading Passengers$()$(li)$(bold)$(l:logistics/vehicles#automation)Vehicle Automation$()$(li)$(bold)$(l:logistics/vehicles#controls)Controls$()$(li2)$(l:logistics/vehicles#joystick)Joystick Controls$()$(li)$(bold)Aircraft$()$(li2)$(l:logistics/vehicles#piloting)Time to Fly!$()$(li2)$(l:logistics/vehicles#in_flight)In-Flight$() and $(l:logistics/vehicles#trim)Trim$()$(li2)$(l:logistics/vehicles#landing)Landing$()$(li2)$(l:logistics/vehicles#beacons)Using Beacons$()$(li)$(bold)$(l:logistics/vehicles#notes)Final Notes$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Tools of the Trade",
+			"anchor": "tools",
+			"item": "mts:automotives.ratchet,mts:mts.partscanner",
+			"text": "Before you start crafting a vehicle, you will need to make these two essential tools: the $(item)Ratchet$(), which is sort of like the \"wrench\" of this mod, used to modify your vehicle and pick it up, and a $(item)Part Scanner$(), which will tell you about all the different parts of your vehicle and what you can add and remove from it."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "While holding the $(item)Part Scanner$(), you will see a number of indicators floating above your vehicle.$(br2)Move close to these indicators and look at them, and you will see an interface showing what $(thing)parts$() are allowed to be placed in that spot. For example, anything marked as a $(thing)Seat$() can only have seats placed in it."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Part Scanner",
+			"images": [
+				"tfg:textures/gui/field_guide/part_scanner.png"
+			],
+			"text": "An example of a car interior with the $(item)Part Scanner$() held.",
+			"border": true
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Vehicles do not always come entirely pre-assembled! Most will just have a chassis and engine, and you will have to add parts like wheels and seats yourself.$(br2)After placing the $(thing)part$() in your vehicle, $(item)$(k:key.attack)$() it with your $(item)Ratchet$() to remove it. You can also $(item)$(k:key.sneak) + $(k:key.attack)$() the vehicle to \"break\" it into an item and pick it up."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:universal_vehicle_fuel_bucket",
+			"anchor": "fuel",
+			"title": "Vehicle Fuel",
+			"text": "$(item)Universal Vehicle Fuel$() is, well, a fuel that every vehicle accepts. Check $(emi) for the fuels you can brew into it. Stronger GregTech fuels will brew into more universal vehicle fuel. You can also use more \"traditional\" fuels like Diesel or Gasoline directly if you'd like, and the two Steam-age vehicles can accept fuels such as Lava or Oils too."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "mts:mts.jerrycan,mts:mts.fuelpump,mts:mtsofficialpack.fuelpump",
+			"anchor": "refueling",
+			"title": "Refueling",
+			"text": "You can't bucket fuel directly into your vehicle! Place a $(item)Fuel Pump$() in your world and either $(item)$(k:key.use)$() it with a fluid container or pump the fuel into its bottom face, then $(item)$(k:key.use)$() the Fuel Pump with an empty hand to refuel any nearby vehicles. The $(item)Jerrycan$() can also refuel your vehicle, but it can only be filled with $(item)$(k:key.use)$() on a Fuel Pump."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "mts:mtsofficialpack.repairkit,mts:automotives.blowtorch",
+			"anchor": "repairing",
+			"title": "Repairing",
+			"text": "You can wreck your vehicle if you don't take care of it! If a vehicle reaches 0 HP, it will burn into a wreck.$(br2)If this happens, you can recover it with a $(item)Repair Kit$(). The repair kit will also repair 20 HP."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "If your vehicle isn't totaled but still needs some love, the $(item)Blowtorch$() can repair it by 200 HP, but it cannot recover a destroyed vehicle.$(br2)Both items are consumed after use."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tag:mts:engine_big",
+			"anchor": "engines",
+			"title": "Engine Care",
+			"text": "No matter what they are in, $(thing)engines$() form the heart of your vehicle. Engines come in a variety of fuel consumptions and max RPMs, so choose carefully based on your application. Most vehicles will come with an engine pre-installed, but you can always remove it and change it to something else."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Beware: engines will gradually accumulate hours and lose their power, going so far as to start backfiring when really worn out. Over-revving, over-heating, and running the engine too fast before it has warmed up will quicky add hours to an otherwise new engine.$(br2)Engines may also accumulate hours from vehicular damage, and can even spring leaks or lose their electric starters."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "mts:mts.jumperpack,mts:mts.jumpercable",
+			"anchor": "recharging",
+			"title": "Recharging",
+			"text": "If your vehicle's battery is dead, you can use $(item)Jumper Cables$() to get it going again if you've got another vehicle nearby. If you don't, you can use the $(item)Jumper Pack$() to completely charge it, though the jumper pack is consumed in the process."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "instruments",
+			"item": "tag:mts:indicators",
+			"title": "Instruments",
+			"text": "Instruments make piloting a plane and driving a car much more immersive. They are also useful for monitoring key properties like fuel levels, RPM, and engine temps, and make flying in the dark less hazardous. While most vehicles will come with instruments when first crafted, some do not."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Instruments are added to vehicles by $(item)$(k:key.use)$() them with a $(item)Ratchet$(). The resulting GUI shows a view of the HUD and all instruments on your possession that work on that vehicle. Simply $(item)$(k:key.attack)$() the slot you want to put the instrument in, and $(item)$(k:key.attack)$() that instrument.$(br2)They are cheap to craft and can be exchanged in a $(item)Stonecutter$() if you want to experiment with different combinations."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "mts:mts.paintgun",
+			"anchor": "paintgun",
+			"title": "Repainting",
+			"text": "Changed your mind about your vehicle's color? You can use the $(item)Paint Gun$() to recolor vehicles any time you want.$(br2)You can also use it to change the appearance of various parts, such as wheels or mirror ornaments! Some vehicle skins are only obtainable through the $(item)Paint Gun$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "mts:mts.key",
+			"anchor": "key",
+			"title": "Locking your Vehicle",
+			"text": "The only thing worse than getting your nice car blown up by a creeper is having it (or parts of it) stolen by other players. Normally, vehicles may only be modified by their owners (the person who last placed them), but can be driven by anyone. By using a $(item)Key$(), you can lock vehicles, ensuring nobody can drive off with or take things out of them."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Locked vehicles may not be entered, and their inventories may not be accessed, except by players inside them. This allows you to lock yourself into vehicles to prevent unwanted passengers. If a player that isn't the vehicle's owner has a key, they may enter and drive it, but they still cannot modify it.$(br2)You can also tow vehicles you're not the owner of, wink wink."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "mts:mts.ticket",
+			"anchor": "ticket",
+			"title": "Loading Passengers",
+			"text": "So now you know to keep other passengers out of your car, but what if you $(italic)want$() them to get in?$(br)$(item)$(k:key.use)$() your vehicle with a $(item)Ticket$() to load all nearby entities into it, or $(item)$(k:key.use)$() a seat to load just that seat. $(item)$(k:key.sneak) + $(k:key.use)$() the vehicle to unload all entities. Tickets have no effect on players."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "mts:mtsofficialpack.fluidloader,mts:mtsofficialpack.fluidunloader,mts:mtsofficialpack.itemloader,mts:mtsofficialpack.itemunloader",
+			"anchor": "automation",
+			"title": "Vehicle Automation",
+			"text": "To automate the loading and unloading of your vehicles, use these item/fluid $(item)Loaders$() and $(item)Unloaders$(). They will automatically fill or empty various Crate and Barrel $(thing)parts$() you've attached to your vehicle."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "controls",
+			"title": "Keyboard Controls",
+			"text": "This mod has multiple control schemes. The standard scheme is the $(thing)keyboard controls$(). To avoid a ton of overlapping keybinds, a no-bind system is used instead - you can access this Key Configuration menu by pressing $(item)$(k:Open configuration screen)$().$(br2)Take a look through the different key controls before trying to drive a vehicle!$(br2)Piloting a plane is covered in $(l:logistics/vehicles#piloting)its own section$()."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Driving a car (or boat) is so simple, even a caveman could do it. The default controls use the simple throttle setup, where $(item)W$() makes the vehicle go forwards, and $(item)S$() stops it and then reverses. $(item)A$() and $(item)D$() steer left and right. Some vehicles are equipped with lights, horns, sirens, etc, so check your controls and the $(thing)panel$() ($(item)U$()) for details.$(br2)Note that some vehicles (such as $(thing)boats$()) require you to use $(item)R$() and $(item)F$() to shift up and down gears, respectively."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Some vehicles have extra controls, such as being able to toggle headlights or landing gear. You can either $(item)$(k:key.use)$() the physical button in-world, or press $(item)U$() to display a $(thing)panel$() at the bottom of your screen.$(br2)If you want a more realistic driving experience, you can turn off simple throttle. This will make all cars start in neutral, and pressing $(item)R$() puts them into forwards."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Pressing $(item)F$() will shift back into neutral, and $(item)F$() again will shift into reverse. In this mode, $(item)W$() is the gas, and $(item)S$() is the brake.$(br2)Shifting should be done while stopped to avoid scary transmission noises. The only exception are engines with manual transmissions, which have multiple forwards gears. All $(thing)boats$() fall into this category."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Joystick Controls",
+			"anchor": "joystick",
+			"text": "The second control scheme is a Joystick-Keyboard hybrid. This controller $(italic)must$() be connected at the time you start Minecraft. Configuration is done through the JOYSTICK section of the $(l:logistics/vehicles#controls)Key Configuration$() menu."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "When an axis such as yaw or pitch is being controlled by a joystick, it will be unavailable on the keyboard. This is the case even if you unplug the joystick, so un-bind it before you do."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "The final method of control available is a mouse-yoke system similar to both Flan's and MCHeli.$(br2)For all of these controls, there are a few extra settings in the $(l:logistics/vehicles#controls)Key Configuration$() menu. These can be used to control joystick dead-zone, sensitivity, keyboard cooldown, as well as other general control settings."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "piloting",
+			"title": "Time to Fly!",
+			"text": "Before your first flight you should be aware of a few key facts.$(br2)First, planes do not go up when you pull up. We repeat: $(bold)PLANES DO NOT GO UP WHEN YOU PULL UP!$()$(br2)This is the #1 cause of crashes for new pilots. In this mod, and in real life, planes gain air lift through moving air over the wings."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Therefore, the proper way to lift off the ground is to go fast so lots of air moves over the wings and makes lots of lift. This means that you will need a decent runway for takeoff, and it is highly recommended you avoid taking off towards tall things like trees and mountains."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "If you are piloting a plane equipped with flaps, you can set a few notches to increase the lifting power of the plane.$(br2)Note that this will cause a loss in fuel efficiency and slow you down, so only use flaps when performing takeoffs and landings.$(br2)Also note that the number of items in your plane's cargo is a factor in plane handling, so make sure not to overload your plane."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "in_flight",
+			"title": "In-Flight",
+			"text": "Once your plane is up in the air, flying just becomes a matter of two things: not crashing into wild mountains, and not crashing into the ground.$(br2)The former can simply be dodged by banking the plane into a turn by rolling the airplane ($(item)A$() and $(item)D$()), or simply flying above build height."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Turns will slowly decrease your altitude, so watch that if you're close to terrain.$(br2)While flying, you may have to keep holding inputs to make your plane behave the way you want. If you keep climbing, it's because you have too much $(thing)thrust$() and should let off the $(thing)throttle$(). You can also add some $(l:logistics/vehicles#trim)trim$() and keep the throttle up to get a bit more speed at the cost of fuel economy."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "trim",
+			"text": "You may also move to other seats while flying by using $(item)$(k:key.use)$() on them, and some planes even allow for multiple pilots.$(br2)$(thing)Trim$() is normally overlooked by most pilots, but is a useful tool to make flying much easier. Trim can be adjusted in the $(item)U$() panel (as in, press $(item)U$() to open the panel), with each trim doing different things."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)Elevator Trim$() makes for a constant pitch, which is useful if you keep climbing because you want to go faster.$(br2)$(thing)Yaw Trim$() is useful if you lose an engine and want to keep yawing.$(br2)$(thing)Aileron Trim$() is useful to keep the plane from rolling."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "While you can manually apply trim, you can also let the autopilot do it for you, if your plane is equipped with it.$(br2)Autopilot will apply elevator trim to keep the altitude the same, and will apply aileron trim to keep the aircraft level.$(br2)For $(thing)helicopters$(), it will function as an auto-hover, keeping it in the same place and same altitude."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "landing",
+			"title": "Landing",
+			"text": "There is a fine line between successfully landing a plane and a controlled crash. To avoid that second category, it is important to remember the saying \"to go down, you need to slow down.\"$(br2)Speed is what keeps your plane aloft, so a reduction in speed is needed to land. "
+		},
+		{
+			"type": "patchouli:text",
+			"text": "This can be as simple as lowering the throttle and applying the flaps.$(br2)Sometimes, however, you end up in that second category. Running out of fuel is the most common way to get down quickly, but it is not necessarily deadly.$(br2)Planes can glide without engines, giving you a short amount of time to pick a flat spot to become an impromptu runway."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Should one not be available, a body of water is also a good choice as it will prevent explosions on a hard crash and will allow you to bail while in mid-air. Anything hilly should be avoided at all costs.$(br2)Lastly, it never hurts to pack a few $(l:logistics/repairing)repair kits$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "mts:mtsofficialpack.beacon_top,mts:mtsofficialpack.beacon_tower_standard,mts:mtsofficialpack.beacon_tower_inverted",
+			"anchor": "beacons",
+			"title": "Using Beacons",
+			"text": "$(item)Beacons$() (from $(9)$(italic)Immersive Vehicles$(), not the vanilla ones) are used to define waypoints that can be used with the instruments on some planes.$(br2)Placing down a beacon and $(l:craftsmanship/scribing_table)naming it$() will let you select it in the $(item)U$() $(thing)panel$(). A selected beacon is valid if it is green, and red if it doesn't exist."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Once a beacon is selected, all instruments will perform their functions using it.$(br2)There are two instruments that use beacons. The $(thing)ADF$() simply points towards the selected beacon, but the $(thing)ILS$() is a bit different.$(br2)The $(thing)ILS$() uses the beacon's $(thing)bearing$() and $(thing)glideslope$() to help you line up landing."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)Glideslope$() is the landing angle, and $(thing)bearing$() is the landing heading.$(br2)The two bars move in the ILS depending on how far you are \"off\" from the beacon, with centered bars meaning you're on the landing beam."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "notes",
+			"title": "Final Notes",
+			"text": "If you want to get a feel for how a car handles before crafting it, or want to practice your airplane piloting so you don't immediately crash, it's always a good idea to test in a creative world first!$(br2)Lastly, most settings, such as fuel usage, vehicles taking damage, and whether vehicles can be picked up, can all be changed in the $(item)mtsconfig.json$() config file."
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Further Reading",
+			"anchor": "relations",
+			"entries": [
+				"tfg:logistics/boats",
+				"tfg:logistics/navigation",
+				"tfg:logistics/roads",
+				"tfg:logistics/trains"
+			]
+		}
+	],
+	"read_by_default": true,
+	"extra_recipe_mappings": {
+	}
+}
