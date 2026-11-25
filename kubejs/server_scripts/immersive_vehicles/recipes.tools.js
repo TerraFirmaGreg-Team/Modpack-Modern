@@ -4,6 +4,18 @@
 function registerImmersiveVehiclesToolsRecipes(event) {
 	
 	// TODO: remove ratchet
+	event.shaped('mts:automotives.ratchet', [
+		'ABD',
+		'EC ',
+		' C '
+	], {
+		A: '#forge:rings/wrought_iron',
+		B: '#forge:gears/wrought_iron',
+		C: '#forge:rods/wooden',
+		D: '#forge:tools/screwdrivers',
+		E: '#forge:tools/files'
+	}).id('mts:shaped/ratchet')
+
 	event.shaped('mts:mts.partscanner', [
 		' C ',
 		'BAB',
@@ -86,11 +98,17 @@ function registerImmersiveVehiclesToolsRecipes(event) {
 		B: '#forge:plates/bakelite'
 	}).id('mts:mts.jerrycan_bakelite')
 
-	event.recipes.gtceu.assembler('mts:mts.jumperpack')
-		.itemInputs('2x #forge:plates/wrought_iron', '1x #gtceu:circuits/lv', '1x mts:mts.jumpercable', '1x gtceu:lv_lithium_battery', '4x #forge:plates/rubber')
-		.itemOutputs('mts:mts.jumperpack')
-		.duration(200)
-		.EUt(16);
+	event.shaped('mts:mts.jumperpack', [
+		'BAB',
+		'CDE',
+		'AAA'
+	], {
+		A: '#tfg:rubber_plates',
+		B: '#forge:plates/potin',
+		C: '#gtceu:circuits/lv',
+		D: 'mts:mts.jumpercable',
+		E: '#gtceu:batteries/lv'
+	}).id('mts:mts/jumperpack')
 
 	event.shaped('mts:mtsofficialpack.repairkit', [
 		'DED',

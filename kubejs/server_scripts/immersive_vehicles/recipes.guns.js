@@ -29,10 +29,38 @@ function registerImmersiveVehiclesGunsRecipes(event) {
 		B: '#forge:dyes/yellow',
 		C: '#forge:dyes/lime',
 		D: '#forge:dyes/blue',
-		E: '#forge:small_fluid_pipes/polyethylene',
+		E: '#forge:plates/polyethylene',
 		F: '#forge:ingots/polyethylene',
 		G: 'minecraft:paper'
-	}).id('mts:mtsofficialpack.gunconfetti')
+	}).id('mts:mtsofficialpack.gunconfetti_pe')
+
+	event.shaped('mts:mtsofficialpack.gunconfetti', [
+		'ABG',
+		'CDG',
+		'EEF'
+	], {
+		A: '#forge:dyes/red',
+		B: '#forge:dyes/yellow',
+		C: '#forge:dyes/lime',
+		D: '#forge:dyes/blue',
+		E: '#forge:plates/bakelite',
+		F: '#forge:ingots/bakelite',
+		G: 'minecraft:paper'
+	}).id('mts:mtsofficialpack.gunconfetti_bk')
+	
+	event.shaped('mts:mtsofficialpack.gunconfetti', [
+		'ABG',
+		'CDG',
+		'EEF'
+	], {
+		A: '#forge:dyes/red',
+		B: '#forge:dyes/yellow',
+		C: '#forge:dyes/lime',
+		D: '#forge:dyes/blue',
+		E: 'gtceu:wood_normal_fluid_pipe',
+		F: 'gtceu:treated_wood_planks',
+		G: 'minecraft:paper'
+	}).id('mts:mtsofficialpack.gunconfetti_wood')
 
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.gunfireextinguisher')
 		.itemInputs('gtceu:fluid_cell', '2x #forge:rods/steel', '#forge:dyes/red', '3x #tfg:rubber_foils', '#tfg:rubber_rings')
@@ -236,7 +264,7 @@ function registerImmersiveVehiclesGunsRecipes(event) {
 	event.recipes.gtceu.automotive_workshop('mts:mtsofficialpack.aa_mg')
 		.itemInputs('10x #forge:plates/steel', '3x #forge:small_gears/aluminium', '2x greate:aluminium_shaft', 
 					'greate:large_aluminium_cogwheel', '20x #forge:screws/steel', '8x #forge:fine_wires/red_alloy',
-					'6x #forge:small_fluid_pipes/steel', '8x #forge:tiny_fluid_pipes/steel')
+					'4x firmaciv:cannon_barrel', '8x #forge:tiny_fluid_pipes/steel')
 		.itemOutputs('mts:mtsofficialpack.aa_turret_762')
 		.EUt(GTValues.VHA[GTValues.MV])
 		.circuit(12)

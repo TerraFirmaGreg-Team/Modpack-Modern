@@ -169,7 +169,21 @@ function registerSpeciesRecipes(event) {
 		.id("tfg:quern/werefang")
 
 	event.recipes.gtceu.macerator('tfg:bone_spike')
-		.itemInputs(["species:bone_spike", "species:bone_vertebra", "species:bone_bark"])
+		.itemInputs("species:bone_spike")
+		.itemOutputs("9x minecraft:bone_meal")
+		.duration(50)
+		.EUt(2)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING);
+
+	event.recipes.gtceu.macerator('tfg:bone_vertebra')
+		.itemInputs("species:bone_vertebra")
+		.itemOutputs("9x minecraft:bone_meal")
+		.duration(50)
+		.EUt(2)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING);
+
+	event.recipes.gtceu.macerator('tfg:bone_bark')
+		.itemInputs("species:bone_bark")
 		.itemOutputs("9x minecraft:bone_meal")
 		.duration(50)
 		.EUt(2)

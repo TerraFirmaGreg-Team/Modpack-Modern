@@ -133,22 +133,33 @@ function registerTFCDyeRecipes(event) {
 				inputArray.push(`#forge:dyes/${dyeName}`);
 			}
 
-			event.recipes.tfc.pot(inputArray, Fluid.of('tfc:vinegar', 144 * i), 200, 200)
+			event.recipes.tfc.pot(inputArray, Fluid.of('tfc:lye', 100 * i), 200, 200)
+				.fluidOutput(Fluid.of(`tfc:${dyeName}_dye`, 144 * i))
+				.id(`tfc:pot/${i}x_${dyeName}_dye_lye`)
+
+			event.recipes.tfc.pot(inputArray, Fluid.of('tfc:vinegar', 100 * i), 200, 200)
 				.fluidOutput(Fluid.of(`tfc:${dyeName}_dye`, 288 * i))
-				.id(`tfc:pot/${i}x_${dyeName}_dye`)
+				.id(`tfc:pot/${i}x_${dyeName}_dye_vinegar`)
 		}
 
 		event.recipes.gtceu.chemical_reactor(`chemical_dye_${dyeName}_acetic`)
 			.itemInputs(`#forge:dyes/${dyeName}`)
 			.inputFluids('gtceu:acetic_acid 25', "#tfg:clean_water 475")
-			.outputFluids(Fluid.of(`tfc:${dyeName}_dye`, 7 * 144))
+			.outputFluids(Fluid.of(`tfc:${dyeName}_dye`, 288 * 5))
 			.duration(15 * 20)
 			.EUt(24)
 
 		event.recipes.gtceu.chemical_reactor(`chemical_dye_${dyeName}_vinegar`)
 			.itemInputs(`#forge:dyes/${dyeName}`)
-			.inputFluids(Fluid.of('tfc:vinegar', 144))
+			.inputFluids(Fluid.of('tfc:vinegar', 100))
 			.outputFluids(Fluid.of(`tfc:${dyeName}_dye`, 288))
+			.duration(15 * 20)
+			.EUt(24)
+
+		event.recipes.gtceu.chemical_reactor(`chemical_dye_${dyeName}_lye`)
+			.itemInputs(`#forge:dyes/${dyeName}`)
+			.inputFluids(Fluid.of('tfc:lye', 100))
+			.outputFluids(Fluid.of(`tfc:${dyeName}_dye`, 144))
 			.duration(15 * 20)
 			.EUt(24)
 	})

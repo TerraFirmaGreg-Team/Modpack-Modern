@@ -130,7 +130,7 @@ function registerTFGFlagsMaterialModification(event) {
 	GTMaterials.TinAlloy.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.Lead.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.Invar.addFlags(GENERATE_DOUBLE_INGOTS);
-	GTMaterials.Potin.addFlags(GENERATE_DOUBLE_INGOTS);
+	GTMaterials.Potin.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_FOIL);
 	GTMaterials.Cobalt.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.CobaltBrass.addFlags(GENERATE_DOUBLE_INGOTS);
 

@@ -53,7 +53,7 @@ function registerImmersiveVehiclesUpgradeRecipes(event) {
 			' C ',
 			'ABA'
 		], {
-			A: '#forge:plates/potin',
+			A: '#forge:foils/potin',
 			B: '#tfc:barrels',
 			C: '#forge:dyes/red'
 		})).id('mts:mtsofficialpack.barrel')
@@ -63,7 +63,7 @@ function registerImmersiveVehiclesUpgradeRecipes(event) {
 			' C ',
 			'ABA'
 		], {
-			A: '#forge:plates/potin',
+			A: '#forge:foils/potin',
 			B: '#tfc:barrels',
 			C: '#forge:dyes/black'
 		})).id('mts:mtsofficialpack.barrel_black')
@@ -73,7 +73,7 @@ function registerImmersiveVehiclesUpgradeRecipes(event) {
 			' C ',
 			'ABA'
 		], {
-			A: '#forge:plates/potin',
+			A: '#forge:foils/potin',
 			B: '#tfc:barrels',
 			C: '#forge:dyes/white'
 		})).id('mts:mtsofficialpack.barrel_blank')
@@ -83,7 +83,7 @@ function registerImmersiveVehiclesUpgradeRecipes(event) {
 			' C ',
 			'ABA'
 		], {
-			A: '#forge:plates/potin',
+			A: '#forge:foils/potin',
 			B: '#tfc:barrels',
 			C: '#forge:dyes/blue'
 		})).id('mts:mtsofficialpack.barrel_blue')
@@ -93,7 +93,7 @@ function registerImmersiveVehiclesUpgradeRecipes(event) {
 			' C ',
 			'ABA'
 		], {
-			A: '#forge:plates/potin',
+			A: '#forge:foils/potin',
 			B: '#tfc:barrels',
 			C: '#forge:dyes/yellow'
 		})).id('mts:mtsofficialpack.barrel_yellow')
@@ -102,7 +102,7 @@ function registerImmersiveVehiclesUpgradeRecipes(event) {
 		event.shaped('mts:mtsofficialpack.auxiliary_tank', [
 			'ABA'
 		], {
-			A: '#forge:plates/tin',
+			A: '#forge:foils/tin',
 			B: '#tfc:barrels',
 		})).id('mts:mtsofficialpack.auxiliary_tank')
 
@@ -110,7 +110,7 @@ function registerImmersiveVehiclesUpgradeRecipes(event) {
 		event.shaped('mts:mtsofficialpack.barrelbell47g', [
 			'ABA'
 		], {
-			A: '#forge:plates/potin',
+			A: '#forge:foils/potin',
 			B: '#tfc:barrels',
 		})).id('mts:mtsofficialpack.barrelbell47g')
 

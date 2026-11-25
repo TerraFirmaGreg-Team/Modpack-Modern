@@ -4,7 +4,8 @@ function registerImmersiveVehiclesItemTags(event) {
 	event.add('c:hidden_from_recipe_viewers', 'mts:mts.y2kbutton')
 
 	event.add('automotives:dashornaments', 'mts:mtsofficialpack.mirrorornament')
-
+	event.add('tfc:usable_on_tool_rack', 'mts:automotives.ratches')
+	event.add('tfc:usable_on_tool_rack', 'mts:mts.partscanner')
 
 	// Taken from the old optional IV compat
 	event.add('mts:bell206', [
@@ -238,6 +239,8 @@ function registerImmersiveVehiclesItemTags(event) {
 		'mts:mtsofficialpack.basicbomb_hardpoint',
 		'mts:mtsofficialpack.bomblet_bombrack',
 		'mts:mtsofficialpack.double_bombrack',
+		'mts:mtsofficialpack.ammocrate_bomb_250',
+		'mts:mtsofficialpack.ammocrate_rocket',
 		'mts:mtsofficialpack.gunm1919',
 		'mts:mtsofficialpack.gunobserver',
 		'mts:mtsofficialpack.gunrocketpod',
