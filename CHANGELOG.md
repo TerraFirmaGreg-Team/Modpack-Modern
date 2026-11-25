@@ -2,6 +2,13 @@
 
 ### Changes
 ### Bug fixes
+### Mods
+#### ArborFirmaCraft + Roads and Roofs
+- Fixed a rare crash involving liquid concrete and syrups and AE2
+#### Create: Fluid Logistics
+- Fixed the repackager not combining fluid and item packages into one
+- Fixed the package list filter not matching fluids inside packages
+- Fixed missing sounds
 
 ## [0.13.19] - 18-11-2026
 ### Java security vulnerability
