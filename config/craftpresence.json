@@ -31,6 +31,7 @@
     "dimensionData": {
       "default": {
         "textOverride": "In the {dimension.name}",
+      },
       "the_nether": {
         "textOverride": "In the Beneath"
       }
