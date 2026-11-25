@@ -1,7 +1,12 @@
 # Changelog
 
 ### Changes
+- Jade will now show a crop's preferred nutrient when looking at a crop or a planter (#5326) @danshat
+- Added braced wood girders and struts (#5369) @blackheart612
+- Added alloy smelter recipes for black bronze and bismuth bronze @Pyritie
 ### Bug fixes
+- Fixed coconuts not working @Redeix
+- Fixed alabaster polishing and other alabaster-related recipes (#5364) @ATXss
 ### Mods
 #### ArborFirmaCraft + Roads and Roofs
 - Fixed a rare crash involving liquid concrete and syrups and AE2
