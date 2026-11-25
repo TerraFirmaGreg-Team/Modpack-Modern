@@ -2256,6 +2256,21 @@
 			x: 4.5d
 			y: 5.0d
 		}
+		{
+			dependencies: ["5DD01CBADFFF3571"]
+			description: ["{quests.medium_voltage.controller_remote.desc}"]
+			id: "159A06C18A448071"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.medium_voltage.controller_remote.subtitle}"
+			tasks: [{
+				id: "31DA976C3DF84D1E"
+				item: "createfactorycontroller:controller_remote"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 14.5d
+		}
 	]
 	subtitle: ["{quests.medium_voltage.subtitle}"]
 	title: "{quests.medium_voltage}"
