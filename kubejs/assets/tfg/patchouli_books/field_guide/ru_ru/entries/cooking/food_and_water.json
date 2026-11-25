@@ -63,9 +63,7 @@
         {
             "type": "patchouli:spotlight",
             "title": "Сосуды для питья",
-            "item": {
-                "tag": "tfg:drinking_vessels"
-            },
+            "item": "tag:tfg:drinking_vessels",
             "text": "$(l:craftsmanship/pottery)Лепка$() и обжиг $(l:craftsmanship/pottery#jug)кувшина$() — один из первых способов носить с собой воду. Наполните его, как ведро, $(item)$(k:key.use)$(). Если держать $(item)$(k:key.use)$() в руке, воду можно будет пить.$(br2)Можно также пить из других $(l:cooking/drinking_containers)сосудов$(), таких как $(item)фляги$() или $(l:craftsmanship/glassworking)стеклянные бутылки$()."
         },
         {

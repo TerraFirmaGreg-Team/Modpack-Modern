@@ -53,9 +53,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"title": "Medicina",
-			"item": {
-				"tag": "tfg:medicine"
-			},
+			"item": "tag:tfg:medicine",
 			"anchor": "medicine",
 			"text": "In case you do get heavily exposed to a hazard, there are some $(item)Medicines$() that can help you recover.$(br2)Basic $(item)Pills$() are the most primitive and easy to make, but most come with $(thing)Negative Side Effects$(). $(item)Tablets$() and $(item)Salvos$() are more effective and have less side effects, but they require $(thing)LV equipment$() and more advanced resources to make."
 		},
@@ -69,9 +67,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"title": "Nesėkmė...",
-			"item": {
-				"tag": "minecraft:beds"
-			},
+			"item": "tag:minecraft:beds",
 			"anchor": "respawn",
 			"text": "If all else fails, bringing along a bed to respawn is a good idea.$(br2)If you don't have access to $(item)Wool$() or $(item)String$(), you can also make a $(thing)Thatch Bed$()."
 		},

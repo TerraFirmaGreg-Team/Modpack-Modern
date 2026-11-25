@@ -427,9 +427,7 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "road_marking_stencils",
-            "item": {
-                "tag": "tfg:road_marking_stencils"
-            },
+            "item": "tag:tfg:road_marking_stencils",
             "title": "Трафареты для разметки",
             "text": "The most distinctive customization feature of asphalt roads is road marking: Spray colors and patterns on the finished surface to plan lanes, intersections, and warning lines.$(br2)Various stencils can be crafted at an $(thing)Artisan Table$()."
         },

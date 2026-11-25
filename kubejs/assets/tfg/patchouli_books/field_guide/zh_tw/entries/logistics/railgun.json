@@ -35,7 +35,7 @@
 		{
 			"type": "patchouli:multiblock",
 			"name": " ",
-			"enable_visualize": "true",
+			"enable_visualize": true,
 			"text": "使用$(l:craftsmanship/building_tools#terminals)終端機$()可以輕鬆建造這個多方塊結構。",
 			"multiblock": {
 				"pattern": [
@@ -248,7 +248,7 @@
 		{
 			"type": "patchouli:multiblock",
 			"name": " ",
-			"enable_visualize": "true",
+			"enable_visualize": true,
 			"text": "使用$(l:craftsmanship/building_tools#terminals)終端機$()可以輕鬆建造這個多方塊結構。",
 			"multiblock": {
 				"pattern": [

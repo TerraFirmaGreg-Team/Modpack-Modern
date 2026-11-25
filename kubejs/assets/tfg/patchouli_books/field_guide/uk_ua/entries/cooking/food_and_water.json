@@ -63,9 +63,7 @@
         {
             "type": "patchouli:spotlight",
             "title": "Місткості для пиття",
-            "item": {
-                "tag": "tfg:drinking_vessels"
-            },
+            "item": "tag:tfg:drinking_vessels",
             "text": "$(l:craftsmanship/pottery)Обтісування$() та випалювання $(l:craftsmanship/pottery#jug)глечика$() — ранній спосіб носити воду із собою. Наповнюй його, як відро, за допомогою $(item)$(k:key.use)$(). Утримуй $(item)$(k:key.use)$(), щоб пити воду.$(br2)Ти також можеш пити з інших $(l:cooking/drinking_containers)ємностей$(), як-от $(item)колби$() або $(l:craftsmanship/glassworking)скляні пляшки$()."
         },
         {

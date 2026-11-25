@@ -53,9 +53,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"title": "藥物",
-			"item": {
-				"tag": "tfg:medicine"
-			},
+			"item": "tag:tfg:medicine",
 			"anchor": "medicine",
 			"text": "萬一嚴重暴露於危害，有些$(item)藥物$()能幫助康復。$(br2)基本的$(item)藥丸$()最原始也最容易製作，但多半有$(thing)負面副作用$()。$(item)藥片$()和$(item)藥膏$()效果更好、副作用較少，但需要$(7)LV$()$(thing) 設備$()和更進階的資源才能製作。"
 		},
@@ -69,9 +67,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"title": "失敗……",
-			"item": {
-				"tag": "minecraft:beds"
-			},
+			"item": "tag:minecraft:beds",
 			"anchor": "respawn",
 			"text": "萬一都不管用，記得帶張床好重生。$(br2)沒有$(item)羊毛$()或$(item)線$()的話，也可以製作$(thing)乾草床$()。"
 		},

@@ -6,9 +6,7 @@
         {
             "type": "patchouli:spotlight",
             "title": "収穫かご",
-            "item": {
-                "tag": "tfg:harvester"
-            },
+            "item": "tag:tfg:harvester",
             "text": "背の低い人向けに作られた$(thing)収穫かご$()は、果樹や茂みの果実を摘むのにぴったりの道具です。$(br)収穫かごを使用するには、$(l:the_world/wild_fruits#fruit_trees) 果樹$()、$(l:the_world/wild_fruits#tall_bushes)ベリーの茂み$()、$(l:agriculture/growing_crops#growing_grapes) ブドウ棚$()、$(l:agriculture/greenhouse#bonsai_planter)果樹用プランター$()、$(l:agriculture/greenhouse#trellis_planter)支柱プランター$()、または$(l:agriculture/greenhouse#hanging_planter)吊り下げプランター$()に対して$(item)$(k:key.use)$()を押すと、$(thing)半径7ブロック$()以内のすべてのブロックが収穫されます。"
         },
         {

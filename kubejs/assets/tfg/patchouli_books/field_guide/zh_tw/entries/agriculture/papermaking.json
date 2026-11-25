@@ -65,9 +65,7 @@
             "type": "patchouli:spotlight",
             "title": "剝皮硬木",
             "anchor": "stripped_hardwood",
-            "item": {
-                "tag": "tfg:stripped_hardwood"
-            },
+            "item": "tag:tfg:stripped_hardwood",
             "text": "首先要剝除$(t:#tfg:hardwood)$(6)硬木$()的樹皮，露出原木內部的纖維：將原木放在地上，手持斧頭按 $(item)$(k:key.use)$() 即可剝皮。"
         },
         {
@@ -109,9 +107,7 @@
             "type": "patchouli:spotlight",
             "title": "壓製紙漿",
             "anchor": "pressing_the_pulp",
-            "item": {
-                "tag": "firmalife:stomping_barrels"
-            },
+            "item": "tag:firmalife:stomping_barrels",
             "text": "用鹼液煮沸分解後，$(item)熱化學處理硬木木漿$()可壓成一張$(item)浸濕的粗紙$()：在$(l:cooking/alcohol#grape_smashing)踩踏木桶$()中踩成薄片，或使用$(l:craftsmanship/anvils)砧$()。"
         },
         {
