@@ -385,6 +385,8 @@
 	"tfg.tooltip.condenser.coolant_temp": "§3❄ Max Coolant Fluid Temp§r: %s K",
 	"tfg.tooltip.condenser.condensate_info": "§6[Info]:§r Condensers drip condensate from their spigot face into containers. Condensate will be void if a container is not present!",
 	"tfg.tooltip.foodtrait.fire_box_baked": "Fire Box Baked",
+    "tfg.tooltip.baking_dish.bakes_into": "Bakes into [%s] at %s in a §3Fire Box Top Oven§r.",
+    "tfg.tooltip.baking_dish.flavor_text": "§6Seal ingredients§r in a baking dish and place it inside a §3Fire Box Top Oven§r to cook delicious baked goods!",
 
     "tfg.tooltip.planter.fertilizer_info": "Fertilizers are optional. Crops will grow faster and produce other fertilizer types when consuming their preferred fertilizer.",
     "tfg.tooltip.greenhouse.minimum_tier": "Min. Tier: ",
