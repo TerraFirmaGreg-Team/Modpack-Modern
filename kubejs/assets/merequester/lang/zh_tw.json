@@ -1,9 +1,9 @@
 {
-  "block.merequester.requester": "ME 請求器",
+  "block.merequester.requester": "ME請求器",
   "gui.merequester.no_requesters": "找不到 ME 請求器",
   "gui.merequester.requester_terminal": "ME 請求終端",
-  "item.merequester.requester_terminal": "ME 請求器終端",
-  "itemGroup.merequester.tab": "ME 請求器",
+  "item.merequester.requester_terminal": "ME請求器終端",
+  "itemGroup.merequester.tab": "ME請求器",
   "tooltip.merequester.amount": "庫存量",
   "tooltip.merequester.batch": "批量大小",
   "tooltip.merequester.enter_to_submit": "%s 送出",

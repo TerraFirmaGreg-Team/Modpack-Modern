@@ -1,9 +1,9 @@
 {
 	"item.matter_manipulator.blueprint": "藍圖",
 	"item.matter_manipulator.blueprint.written": "藍圖：%s",
-	"item.matter_manipulator.matter_manipulator_mki": "物質操縱器 MKI",
-	"item.matter_manipulator.matter_manipulator_mkii": "物質操縱器 MKII",
-	"item.matter_manipulator.matter_manipulator_mkiii": "物質操縱器 MKIII",
+	"item.matter_manipulator.matter_manipulator_mki": "物質操縱器MKI",
+	"item.matter_manipulator.matter_manipulator_mkii": "物質操縱器MKII",
+	"item.matter_manipulator.matter_manipulator_mkiii": "物質操縱器MKIII",
 	"item.matter_manipulator.prototype_matter_manipulator": "物質操縱器原型",
 	"itemGroup.matter_manipulator": "物質操縱器",
 	"key.categories.matter_manipulator": "物質操縱器",
@@ -422,5 +422,8 @@
 	"screen.matter_manipulator.tooltip.stack_plus": "增加額外堆疊的複製數量。",
 	"screen.matter_manipulator.tooltip.start_operation": "開始設定好的物質操縱器操作。",
 	"screen.matter_manipulator.tooltip.unload_blueprint": "從這個操縱器卸下藍圖。檔案仍保留在你的藍圖庫中。",
-	"screen.matter_manipulator.transform": "變換"
+	"screen.matter_manipulator.transform": "變換",
+	"matter_manipulator.block_cost.mekanism.bounding": "由所屬的通用機械放置",
+	"matter_manipulator.refusal.mekanism.bounding": "屬於大型通用機械的一部分，請移除機械本體",
+	"matter_manipulator.skip.mekanism.bounding_obstructed": "機械其餘部分所需的空間已被佔用"
 }

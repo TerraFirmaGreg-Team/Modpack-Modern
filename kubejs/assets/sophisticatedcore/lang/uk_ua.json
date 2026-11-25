@@ -295,5 +295,8 @@
 	"item.sophisticatedcore.storage.tooltip.linked_storage_group": "Група з'єднаних сховищ: %s",
 	"item.sophisticatedcore.storage.tooltip.linked_storage_endpoint": "Кінцева точка з'єднаного сховища: %s",
 	"tooltip.sophisticatedcore.linked_storage.primary": "Основне з'єднання",
-	"tooltip.sophisticatedcore.linked_storage.secondary": "З'єднано"
+	"tooltip.sophisticatedcore.linked_storage.secondary": "З'єднано",
+	"item.sophisticatedcore.storage.tooltip.fluid_xp": "%s рівнів досвіду %s",
+	"item.sophisticatedcore.storage.tooltip.fluid_with_capacity": "%s / %s mB %s",
+	"item.sophisticatedcore.storage.tooltip.fluid_xp_with_capacity": "%s / %s рівнів досвіду %s"
 }

@@ -123,5 +123,6 @@
 	"option.immersive_aircraft.weaponsAreDestructive": "Permite que algunas armas destruyan bloques.",
 	"option.immersive_aircraft.windClearWeather": "Efecto del viento base.",
 	"option.immersive_aircraft.windRainWeather": "Viento en la precipitación.",
-	"option.immersive_aircraft.windThunderWeather": "Viento extra en los truenos."
+	"option.immersive_aircraft.windThunderWeather": "Viento extra en los truenos.",
+	"option.immersive_aircraft.defaultCanEnter": "Permitir a los mobs subir automáticamente a la aeronave de forma predeterminada."
 }

@@ -74,5 +74,20 @@
 	"dungeonconfig.screen.restart.pending.world": "Zapisano. Zadziała po ponownym dołączeniu do świata.",
 	"dungeonconfig.screen.restart.pending.game": "Zapisano. Zadziała po ponownym uruchomieniu gry.",
 	"dungeonconfig.screen.restart.needs.world": "Zmiany zadziałają po ponownym dołączeniu do świata.",
-	"dungeonconfig.screen.restart.needs.game": "Zmiany zadziałają po ponownym uruchomieniu gry."
+	"dungeonconfig.screen.restart.needs.game": "Zmiany zadziałają po ponownym uruchomieniu gry.",
+	"dungeonconfig.screen.own_screen": "Własny ekran ustawień",
+	"dungeonconfig.screen.action.run": "Uruchom",
+	"dungeonconfig.screen.action.confirm": "Potwierdź",
+	"dungeonconfig.screen.action.cancel": "Anuluj",
+	"dungeonconfig.screen.key.press": "Naciśnij klawisz...",
+	"dungeonconfig.screen.key.none": "Brak",
+	"dungeonconfig.screen.key.ctrl": "Ctrl",
+	"dungeonconfig.screen.key.shift": "Shift",
+	"dungeonconfig.screen.key.alt": "Alt",
+	"dungeonconfig.screen.key.super": "Super",
+	"dungeonconfig.oneconfig.open": "Otwórz w OneConfig",
+	"dungeonconfig.oneconfig.enabled": "Włączone",
+	"dungeonconfig.oneconfig.original": "Oryginalny ekran ustawień",
+	"dungeonconfig.oneconfig.original.open": "Otwórz",
+	"dungeonconfig.neoforge.notloaded": "Te ustawienia nie zostały jeszcze załadowane."
 }

@@ -295,5 +295,8 @@
 	"item.sophisticatedcore.storage.tooltip.linked_storage_group": "已链接存储组：%s",
 	"item.sophisticatedcore.storage.tooltip.linked_storage_endpoint": "已链接存储端点：%s",
 	"tooltip.sophisticatedcore.linked_storage.primary": "主链接",
-	"tooltip.sophisticatedcore.linked_storage.secondary": "已链接"
+	"tooltip.sophisticatedcore.linked_storage.secondary": "已链接",
+	"item.sophisticatedcore.storage.tooltip.fluid_xp": "%s 经验等级 %s",
+	"item.sophisticatedcore.storage.tooltip.fluid_with_capacity": "%s / %s mB %s",
+	"item.sophisticatedcore.storage.tooltip.fluid_xp_with_capacity": "%s / %s 经验等级 %s"
 }
