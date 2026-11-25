@@ -35,7 +35,7 @@
 		{
 			"type": "patchouli:multiblock",
 			"name": " ",
-			"enable_visualize": "true",
+			"enable_visualize": true,
 			"text": "Użyj $(l:craftsmanship/building_tools#terminals)terminalu$(), aby łatwo zbudować multiblok.",
 			"multiblock": {
 				"pattern": [
@@ -248,7 +248,7 @@
 		{
 			"type": "patchouli:multiblock",
 			"name": " ",
-			"enable_visualize": "true",
+			"enable_visualize": true,
 			"text": "Użyj $(l:craftsmanship/building_tools#terminals)terminalu$(), aby łatwo zbudować multiblok.",
 			"multiblock": {
 				"pattern": [

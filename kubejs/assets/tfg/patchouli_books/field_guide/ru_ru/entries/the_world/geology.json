@@ -82,36 +82,28 @@
         {
             "title": "Осадочные",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:raw_stone/sedimentary"
-            },
+            "item": "tag:tfg:raw_stone/sedimentary",
             "anchor": "sedimentary",
             "text": "$(l:https://en.wikipedia.org/wiki/Sedimentary_rock)Осадочные$()  породы образуются в результате накопления или осаждения минеральных, или органических частиц. Как правило, они встречаются в верхних слоях горных пород в континентальных районах."
         },
         {
             "title": "Метаморфические",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:raw_stone/metamorphic"
-            },
+            "item": "tag:tfg:raw_stone/metamorphic",
             "anchor": "metamorphic",
             "text": "$(l:https://en.wikipedia.org/wiki/Metamorphic_rock)Метаморфические$() породы образуются в результате процесса, называемого метаморфизмом. Их можно найти под соответствующими осадочными или магматическими породами, а также в районах поднятия земной коры."
         },
         {
             "title": "Магматические экструзивные\n",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:raw_stone/igneous_extrusive"
-            },
+            "item": "tag:tfg:raw_stone/igneous_extrusive",
             "anchor": "igneous_extrusive",
             "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Extrusive)Этрузивные магматические$() породы образуются в результате остывания магмы на поверхности Земли. Их можно встретить в верхнем слое горных пород в континентальных районах или на дне океанов."
         },
         {
             "title": "Igneous Intrusive",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:raw_stone/igneous_intrusive"
-            },
+            "item": "tag:tfg:raw_stone/igneous_intrusive",
             "anchor": "igneous_intrusive",
             "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Intrusive)Магматические интрузивные$() породы образуются из магмы, остывшей под земной корой. Они встречаются глубоко под землей или, в редких случаях, в дайках и в районах поднятия."
         },
@@ -124,63 +116,49 @@
         {
             "title": "Осадочно-карбонатные",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:stone_composition/raw/sedimentary_carbonate"
-            },
+            "item": "tag:tfg:stone_composition/raw/sedimentary_carbonate",
             "anchor": "sedimentary_carbonate",
             "text": "$(l:https://en.wikipedia.org/wiki/Carbonate_rock)Осадочно-карбонатные$() породы состоят преимущественно из карбонатных минералов, таких как кальцит."
         },
         {
             "title": "Осадочно-кластические",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:stone_composition/raw/sedimentary_clastic"
-            },
+            "item": "tag:tfg:stone_composition/raw/sedimentary_clastic",
             "anchor": "sedimentary_clastic",
             "text": "$(l:https://en.wikipedia.org/wiki/Clastic_rock)Осадочно-кластические$() породы состоят из обломков(кластолитов) ранее существовавших минералов или пород."
         },
         {
             "title": "Осадочно-органический",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:stone_composition/raw/sedimentary_organic"
-            },
+            "item": "tag:tfg:stone_composition/raw/sedimentary_organic",
             "anchor": "sedimentary_organic",
             "text": "$(l:https://en.wikipedia.org/wiki/Organic-rich_sedimentary_rocks)Осадочно-органические$() породы образуются в результате разложения или окаменения органического вещества, такого как раковин или бактерий."
         },
         {
             "title": "Магматические фельзитовые",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:stone_composition/raw/igneous_felsic"
-            },
+            "item": "tag:tfg:stone_composition/raw/igneous_felsic",
             "anchor": "igneous_felsic",
             "text": "$(l:https://en.wikipedia.org/wiki/Felsic)Магматические фельзитовые$() породы содержат большое количество элементов, входящих в состав полевого шпата и кварца. Как правило, для отнесения породы к категории $(thing)фельзитовых$() необходимо, чтобы она содержала более 75 % фельзитовых минералов."
         },
         {
             "title": "Магматические породы промежуточного типа",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:stone_composition/raw/igneous_intermediate"
-            },
+            "item": "tag:tfg:stone_composition/raw/igneous_intermediate",
             "anchor": "igneous_intermediate",
             "text": "$(l:https://en.wikipedia.org/wiki/Intermediate_composition)Магматические породы промежуточного типа$() содержат 51,5–63,0 мас. % SiO₂, что позволяет отнести их к промежуточному типу между $(l:the_world/geology#igneous_felsic)фельзическими$() и $(l:the_world/geology#igneous_mafic)мафическими$() по составу."
         },
         {
             "title": "Магматические горные породы",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:stone_composition/raw/igneous_mafic"
-            },
+            "item": "tag:tfg:stone_composition/raw/igneous_mafic",
             "anchor": "igneous_mafic",
             "text": "$(l:https://en.wikipedia.org/wiki/Mafic)Магматические $() породы содержат большое количество минералов магния и железа."
         },
         {
             "title": "Ультраосновные магматические горные породы",
             "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfg:stone_composition/raw/igneous_ultramafic"
-            },
+            "item": "tag:tfg:stone_composition/raw/igneous_ultramafic",
             "anchor": "igneous_ultramafic",
             "text": "$(l:https://en.wikipedia.org/wiki/Mafic)Ультраосновные магматические $() породы содержат очень низкую концентрацию кремнезема."
         },

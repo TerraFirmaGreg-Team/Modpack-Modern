@@ -65,9 +65,7 @@
             "type": "patchouli:spotlight",
             "title": "去皮硬木",
             "anchor": "stripped_hardwood",
-            "item": {
-                "tag": "tfg:stripped_hardwood"
-            },
+            "item": "tag:tfg:stripped_hardwood",
             "text": "这道工序从剥去$(t:#tfg:hardwood)$(6)硬木$()的树皮开始，露出原木内部的纤维。把原木放置后，用斧头对它$(item)$(k:key.use)$()即可剥皮。"
         },
         {
@@ -109,9 +107,7 @@
             "type": "patchouli:spotlight",
             "title": "纸浆压制",
             "anchor": "pressing_the_pulp",
-            "item": {
-                "tag": "firmalife:stomping_barrels"
-            },
+            "item": "tag:firmalife:stomping_barrels",
             "text": "加碱液煮沸分解之后，$(item)热化学处理硬木浆$()就可以压成一张$(item)浸泡粗制纸$()。你可以把处理好的硬木浆放进$(l:cooking/alcohol#grape_smashing)踩踏盆$()里踩成薄片，也可以用$(l:craftsmanship/anvils)砧$()来压。"
         },
         {

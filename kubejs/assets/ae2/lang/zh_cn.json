@@ -469,7 +469,7 @@
 	"gui.ae2.units.rf": "RF",
 	"gui.ae2.Unlinked": "未链接",
 	"gui.ae2.UpgradeToolbelt": "升级卡槽",
-	"gui.ae2.UsedAmount": "已使用：",
+	"gui.ae2.UsedAmount": "已使用：%s",
 	"gui.ae2.VibrationChamber": "谐振仓",
 	"gui.ae2.White": "白色",
 	"gui.ae2.Wireless": "无线访问点",
@@ -990,5 +990,7 @@
 	"gui.tooltips.ae2.PatternProviderDisplayMode": "显示模式",
 	"item.ae2.filter_terminal": "ME过滤终端",
 	"key.ae2.cycle_controller_animation": "切换控制器动画",
-	"key.ae2.pin_entry": "固定/取消置顶条目"
+	"key.ae2.pin_entry": "固定/取消置顶条目",
+	"gui.tooltips.ae2.AddFavorite": "添加至收藏",
+	"gui.tooltips.ae2.ExportCraftingPlan": "保存为图片"
 }

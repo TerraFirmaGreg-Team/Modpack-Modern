@@ -15,5 +15,9 @@
 	"euphoria_patcher.donation.line5": "感謝你使用 Euphoria 補丁<3",
 	"euphoria_patcher.donation.button": "支持專案",
 	"fml.menu.mods.info.description.euphoria_patcher": "將 Euphoria 補丁附加元件套用到互補光影的模組。\n請在光影包設定選單中啟用並調整 Euphoria 補丁設定。\n有問題請到 Discord 回報！",
-	"modmenu.descriptionTranslation.euphoria_patcher": "將 Euphoria 補丁附加元件套用到互補光影的模組。\n請在光影包設定選單中啟用並調整 Euphoria 補丁設定。\n有問題請到 Discord 回報！"
+	"modmenu.descriptionTranslation.euphoria_patcher": "將 Euphoria 補丁附加元件套用到互補光影的模組。\n請在光影包設定選單中啟用並調整 Euphoria 補丁設定。\n有問題請到 Discord 回報！",
+	"euphoria_patcher.shader_error.failed": "光影包編譯失敗！請將錯誤回報給光影開發者。%s",
+	"euphoria_patcher.shader_error.copy": "複製資訊",
+	"euphoria_patcher.shader_error.report": "在這裡回報給光影開發者：%s",
+	"euphoria_patcher.shader_error.report.link": "到 Discord 回報"
 }

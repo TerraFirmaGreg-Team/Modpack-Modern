@@ -422,5 +422,8 @@
 	"screen.matter_manipulator.tooltip.stack_plus": "Збільшити кількість додаткових копій у стосі.",
 	"screen.matter_manipulator.tooltip.start_operation": "Запустити налаштовану операцію маніпулятора матерії.",
 	"screen.matter_manipulator.tooltip.unload_blueprint": "Вивантажити креслення з цього маніпулятора. Файл залишиться у твоїй бібліотеці.",
-	"screen.matter_manipulator.transform": "Трансформувати"
+	"screen.matter_manipulator.transform": "Трансформувати",
+	"matter_manipulator.block_cost.mekanism.bounding": "машина Mekanism, до якої він належить, розміщує його",
+	"matter_manipulator.refusal.mekanism.bounding": "є частиною більшої машини Mekanism. Розбери саму машину",
+	"matter_manipulator.skip.mekanism.bounding_obstructed": "простір, який займає решта машини, уже зайнятий"
 }

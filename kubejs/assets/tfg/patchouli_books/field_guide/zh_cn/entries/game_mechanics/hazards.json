@@ -53,9 +53,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"title": "药品",
-			"item": {
-				"tag": "tfg:medicine"
-			},
+			"item": "tag:tfg:medicine",
 			"anchor": "medicine",
 			"text": "如果你确实严重暴露于某种危害，有一些$(item)药品$()可以帮助你恢复。$(br2)基础的$(item)药丸$()最原始也最容易制作，但大多带有$(thing)负面副作用$()。$(item)药片$()和$(item)药膏$()更有效、副作用更少，但需要$(thing)LV 设备$()和更先进的资源才能制作。"
 		},
@@ -69,9 +67,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"title": "失败……",
-			"item": {
-				"tag": "minecraft:beds"
-			},
+			"item": "tag:minecraft:beds",
 			"anchor": "respawn",
 			"text": "如果以上方法都行不通，随身带张床来重生是个好主意。$(br2)如果你没有$(item)羊毛$()或$(item)线$()，也可以做一张$(thing)干草床$()。"
 		},

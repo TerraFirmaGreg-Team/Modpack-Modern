@@ -63,9 +63,7 @@
         {
             "type": "patchouli:spotlight",
             "title": "飲料容器",
-            "item": {
-                "tag": "tfg:drinking_vessels"
-            },
+            "item": "tag:tfg:drinking_vessels",
             "text": "$(l:craftsmanship/pottery)粘土を成形$() し、$(l:craftsmanship/pottery#jug)水差し$() を焼成することは、水を携帯するための初期の手段です。バケツのように $(item)$(k:key.use)$() で水を満たします。$(item)$(k:key.use)$() を手に持てば、水を飲むことができます。$(br2)また、$(item)水筒$() や $(l:craftsmanship/glassworking)ガラス瓶$() など、他の $(l:cooking/drinking_containers)容器$() から水を飲むこともできます。"
         },
         {

@@ -15,5 +15,9 @@
 	"euphoria_patcher.donation.line5": "感谢使用 Euphoria Patches <3",
 	"euphoria_patcher.donation.button": "赞助项目",
 	"fml.menu.mods.info.description.euphoria_patcher": "一个对 Complementary 光影应用 Euphoria Patches 附加的模组。\n在光影包设置菜单启用或者调节 Euphoria Patches 设置\n请在 Discord 反馈问题！",
-	"modmenu.descriptionTranslation.euphoria_patcher": "一个对 Complementary 光影应用 Euphoria Patches 附加的模组。\n在光影包设置菜单启用或者调节 Euphoria Patches 设置\n请在 Discord 反馈问题！"
+	"modmenu.descriptionTranslation.euphoria_patcher": "一个对 Complementary 光影应用 Euphoria Patches 附加的模组。\n在光影包设置菜单启用或者调节 Euphoria Patches 设置\n请在 Discord 反馈问题！",
+	"euphoria_patcher.shader_error.failed": "着色器包编译失败！请将错误反馈给着色器开发者。%s",
+	"euphoria_patcher.shader_error.copy": "复制信息",
+	"euphoria_patcher.shader_error.report": "反馈给着色器开发者： %s",
+	"euphoria_patcher.shader_error.report.link": "在Discord上反馈"
 }

@@ -1,4 +1,10 @@
 {
+	"block.sophisticatedbackpacks.backpack": "Hátizsák",
+	"block.sophisticatedbackpacks.diamond_backpack": "Titán hátizsák",
+	"block.sophisticatedbackpacks.gold_backpack": "Alumínium hátizsák",
+	"block.sophisticatedbackpacks.iron_backpack": "Vörös acél hátizsák",
+	"block.sophisticatedbackpacks.netherite_backpack": "Volfrámacél hátizsák",
+	"gui.sophisticatedbackpacks.settings.backpack": "Hátizsák",
 	"gui.sophisticatedbackpacks.upgrades.anvil": "Üllő",
 	"gui.sophisticatedbackpacks.upgrades.anvil.tooltip": "Üllő"
 }
