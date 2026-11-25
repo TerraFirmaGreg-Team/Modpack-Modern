@@ -253,6 +253,7 @@ ServerEvents.recipes(event => {
 	registerCreateCopycatsRecipes(event)
 	registerCreatedecoRecipes(event)
 	registerCreateExtraGaugesRecipes(event)
+	registerCreateFactoryControllerRecipes(event)
 	registerCreateFluidLogisticsRecipes(event)
 	registerCreateHorsePowerBlockRecipes(event)
 	registerCreateHypertubeRecipes(event)
