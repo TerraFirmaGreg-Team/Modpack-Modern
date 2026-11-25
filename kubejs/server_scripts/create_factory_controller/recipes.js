@@ -15,7 +15,7 @@ const registerCreateFactoryControllerRecipes = (event) => {
 		D: 'fluidlogistics:fluid_factory_gauge',
 		E: '#forge:plates/rose_quartz',
 		F: 'create:brass_casing'
-	})
+	}).id('tfg:shaped/factory_controller')
 
 	event.shaped('createfactorycontroller:controller_remote', [
 		' A ',
@@ -28,12 +28,12 @@ const registerCreateFactoryControllerRecipes = (event) => {
 		D: '#gtceu:transistors',
 		E: 'gtceu:mv_emitter',
 		F: 'create:linked_controller'
-	})
+	}).id('tfg:shaped/controller_remote')
 
 	event.shaped('createfactorycontroller:arithmetic_tube', [
 		'RER'
 	], {
 		R: 'minecraft:redstone_torch',
 		E: 'create:electron_tube'
-	})
+	}).id('tfg:shaped/arithmetic_tube')
 }
