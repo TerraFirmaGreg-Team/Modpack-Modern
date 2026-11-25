@@ -7989,33 +7989,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "fowlplay-1.2.3+1.20.1-forge.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8578/733/fowlplay-1.2.3+1.20.1-forge.jar",
-                    "id": "8578733",
-                    "parent_id": "1246320",
-                    "hashes": {
-                        "sha1": "dcafd69f5199b73078213fff06786b08c5307a43",
-                        "md5": "9e33c161f4214777be83b98e5ec5a545"
-                    },
-                    "required_dependencies": [
-                        "419699",
-                        "661293",
-                        "667299"
-                    ],
-                    "size": 3299170,
-                    "date_published": "2026-08-04T22:13:37.913Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "fowlplay-1.2.3+1.20.1-forge.jar",
+                    "file_name": "fowlplay-1.2.4+1.20.1-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -8023,20 +7998,45 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/WpXfePbg/versions/R0J5mu1D/fowlplay-1.2.3+1.20.1-forge.jar",
-                    "id": "R0J5mu1D",
+                    "url": "https://cdn.modrinth.com/data/WpXfePbg/versions/IPhUUVmH/fowlplay-1.2.4+1.20.1-forge.jar",
+                    "id": "IPhUUVmH",
                     "parent_id": "WpXfePbg",
                     "hashes": {
-                        "sha512": "dfb5b1f2cfc7412e0e4c36e5e7802fb1730d97123d0f4337951217a071ed72cccc3fcf73172a8ef0dcc35254c5bcf61cd27e92ef036a146dcee3149b566b3498",
-                        "sha1": "dcafd69f5199b73078213fff06786b08c5307a43"
+                        "sha512": "33fd71fcee740b05dbc7c2a697ef286ea883f39bf1c1300b787f5b34598d85d6dfa5ef6aa7c77881f5ed4129af60b2aac99e84726e7cddf25acd015c2480d5f6",
+                        "sha1": "e6167e2e3e2ee01542ef3f1bac52561b0b7aa3f4"
                     },
                     "required_dependencies": [
-                        "1eAoo2KR",
                         "PuyPazRT",
+                        "1eAoo2KR",
                         "lhGA9TYQ"
                     ],
-                    "size": 3299170,
-                    "date_published": "2026-08-04T22:13:38.152843Z"
+                    "size": 3297468,
+                    "date_published": "2026-11-24T19:29:33.661689Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "fowlplay-1.2.4-1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9797/328/fowlplay-1.2.4-1.20.1-forge.jar",
+                    "id": "9797328",
+                    "parent_id": "1246320",
+                    "hashes": {
+                        "sha1": "e6167e2e3e2ee01542ef3f1bac52561b0b7aa3f4",
+                        "md5": "28a22d220cdbfa7095e62c04c23b7ddc"
+                    },
+                    "required_dependencies": [
+                        "667299",
+                        "661293",
+                        "419699"
+                    ],
+                    "size": 3297468,
+                    "date_published": "2026-11-24T19:29:32.913Z"
                 }
             ]
         },
