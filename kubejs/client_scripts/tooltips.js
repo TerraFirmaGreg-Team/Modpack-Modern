@@ -280,11 +280,6 @@ const registerTooltips = (event) => {
 	})
 
 	// Supports
-	global.TFG_NEW_WOOD_TYPES.forEach(wood => {
-		event.addAdvanced([`tfg:wood/support/${wood.name}`], (item, advanced, text) => {
-			text.add(1, Text.translate('tfg.tooltip.support.tier1'))
-		})
-	})
 	event.addAdvanced(['tfg:light_concrete_support', 'tfg:dark_concrete_support', 'tfg:rebar_support'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.support.tier2'))
 	})

@@ -533,11 +533,6 @@ const registerTFGGreenhouseRecipes = (event) => {
 		};
 	});
 
-	// Wood
-	global.TFG_NEW_WOOD_TYPES.forEach(element => {
-		generateTreeGreenHouseRecipe(event, null, `tfg:wood/sapling/${element.name}`, `tfg:wood/log/${element.name}`, `tfg:wood/leaves/${element.name}`, 1);
-	});
-
 	// Plants
 	Ingredient.of('#tfc:plants').subtract('#tfc:wild_fruits').stacks.forEach(element => {
 		generateGreenHouseRecipe(event, null, `8x ${element.id}`, [element.withCount(24), element.withCount(8)], 1, 1);

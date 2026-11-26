@@ -1,5 +1,8 @@
 {
     //Keep these in this file scope, we dont want them in other places.
+    /**
+     * @type {WoodStruct}
+     */
     let WOOD_STRUCT_LAYOUT =
     {
         tfgCore: null,
@@ -11,7 +14,7 @@
         stair: null, slab: null,
         fence: null, fence_gate: null, log_fence: null,
         door: null, trapdoor: null,
-        button: null, pressure_plate: null, //FIXME: Core doesnt generate buttons or pressure plates
+        button: null, pressure_plate: null,
         chest: null, trapped_chest: null, chest_minecart: null,
         sign: null, hanging_sign: null,
         workbench: null, crafting_station: null, crafting_station_slab: null, loom: null, sewing_table: null, scribing_table: null,
@@ -31,6 +34,9 @@
         woodKind: null,
     };
 
+    /**
+     * @type {TreeData}
+     */
     let TREE_DATA_LAYOUT =
     {
         tree_name: null,
@@ -91,6 +97,24 @@
         track_narrow: null,
         incomplete_track_narrow: null
     };
+
+    let TFG_DATA_LAYOUT =
+    {
+        barkColor: null,
+        woodColor: null,
+        leafColor: null,
+        woodSound: null,
+        leafSound: null,
+        daysToGrow: null,
+        location: null
+    }
+
+    let TFC_FUEL_DATA_LAYOUT =
+    {
+        temperature: null,
+        duration: null,
+        purity: null
+    }
 
     ServerEvents.customCommand('verify_woodstruct_data', evt =>
     {
@@ -194,6 +218,7 @@
             propertyKeyFunctionMap.set("astikor_data", verifyAstikorData);
             propertyKeyFunctionMap.set("railways_data", verifyRailwaysData);
             propertyKeyFunctionMap.set("macaw_data", verifyMacawData);
+            propertyKeyFunctionMap.set("tfg_data", verifyTFGData);
             propertyKeyFunctionMap.set("woodKind", verifyWoodKind);
     
             let nonNullProperties = ["tfgCore", "modName", "name", "logsTag"]
@@ -470,6 +495,10 @@
             function verifyMacawData(key, value)
             {
                 //I cant be bothered man
+            }
+            function verifyTFGData(key, value)
+            {
+
             }
             function verifyWoodKind(key, value)
             {

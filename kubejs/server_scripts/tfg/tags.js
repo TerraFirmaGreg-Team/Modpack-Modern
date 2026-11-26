@@ -1,9 +1,5 @@
 ﻿"use strict";
 
-const forEachTFGRopeLadderVariant = (callback) => {
-	global.TFG_NEW_WOOD_TYPES.forEach(wood => callback(`tfg:wood/rope_ladder/${wood.name}`))
-}
-
 const registerTFGItemTags = (event) => {
 	registerWoodStructItemTags(event);
 	registerTFGTrimItemTags(event)
@@ -29,10 +25,6 @@ const registerTFGItemTags = (event) => {
 	event.add("curios:face", "tfg:snorkel")
 	event.add("curios:clothes_socks", "tfg:flippers")
 	event.add("curios:clothes_socks", "tfg:snowshoes")
-
-	forEachTFGRopeLadderVariant(ropeLadder => {
-		event.add('tfg:rope_ladders', ropeLadder)
-	})
 
 	// Disable auto generation for Vintage Recipes
 
@@ -285,13 +277,6 @@ const registerTFGBlockTags = (event) => {
 	event.add('gtceu:mineable/pickaxe_or_wrench', 'tfg:reflector')
 	event.add('gtceu:mineable/pickaxe_or_wrench', 'tfg:machine_casing_aluminium_plated_steel')
 	event.add('gtceu:mineable/pickaxe_or_wrench', 'tfg:machine_casing_power_casing')
-
-	forEachTFGRopeLadderVariant(ropeLadder => {
-		event.add('tfg:rope_ladders', ropeLadder)
-		event.add('create:copycat_deny', ropeLadder)
-		event.add('minecraft:fall_damage_resetting', ropeLadder)
-		event.add('minecraft:climbable', ropeLadder)
-	})
 
 	event.add('minecraft:mineable/pickaxe', 'tfg:mars_ice')
 	event.add('minecraft:ice', 'tfg:mars_ice')

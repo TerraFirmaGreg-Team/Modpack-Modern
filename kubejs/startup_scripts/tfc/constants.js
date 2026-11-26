@@ -57,51 +57,6 @@ global.TFC_STONE_TYPES = /** @type {const} */ ([
 ]);
 
 /**
- * @typedef {Object} WoodStruct - An object that represents common blocks for wood sets
- * @property {string} modName - Name of the mod that adds the wood.
- * @property {string} name - Name of the wood itself
- * @property {string} logs - tag for the logs for this wood
- * @property {string} log - ID for the Log
- * @property {string} stripped_log - ID for the stripped log
- * @property {string} log_wood - ID for the Wood
- * @property {string} stripped_wood - ID for the Stripped Wood
- * @property {Object[]} tree_data - An array of json object that contains Leaves, fallen Leaves and the respective sapling. 
- * @property {string} lumber - Id for the Lumber item
- * @property {string} plank - Id for the Planks block
- * @property {string} stair - Id for the Stair block
- * @property {string} slab - Id for the Slab block
- * @property {string} fence - Id for the Fence block
- * @property {string} fence_gate - Id for the Fence Gate block
- * @property {string} door - Id for the Door block
- * @property {string} trapdoor - Id for the Trap Door block
- * @property {string} button - Id for the button block
- * @property {string} pressure_plate - Id for the pressure plate
- * @property {string} chest - Id for the chest block
- * @property {string} trapped_chest - id for the trapped chest block
- * @property {string} workbench - Id for the Workbench block
- * @property {string} crafting_station - id for the Crafting Station Block
- * @property {string} crafting_station_slab - id for the Crafting Station Slab
- * @property {string} rope_ladder - Id for the rope ladder block
- * @property {string} shingle - Id for the shingle item from rnr
- * @property {string} shingle_roof - id for the shingle block from rnr
- * @property {string} shingle_slab - id for the shingle slab from rnr
- * @property {string} shingle_stair - id for the shingle stair from rnr
- * @property {string} astikor_data - A json object that contains the Astikor Wheel, Supply Cart, Animal Cart and Plow.
- * @property {string} support - Id for the support block
- * @property {string} track - Id for the track from railways
- * @property {string} track_wide - id for the wide track from railways
- * @property {string} track_narrow - id for the narrow track from railways
- * @property {string} window - Id for the window from everycomp
- * @property {string} window_pane - id for the window pane from everycomp
- * @property {string[]} macaw_bridges - An array of block ids for macaw bridges
- * @property {string[]} macaw_fences - An array of block ids for Macaw Fences
- * @property {string[]} macaw_roofs - An array of block ids for Macaw roofs
- * @property {string[]} macaw_furniture - An array of block ids for Macaw Furnitures
- * @property {string[]} macaw_furniture_stripped - An array of block ids for Macaw Stripped Furnitures
- * @property {WoodKindEnum} woodKind - The type of wood, wether its a Soft wood, a Hard wood, or none.
- */
-
-/**
  * @type {WoodStruct[]}
  * An array of WoodStruct that represents the base TFC Woods
  */

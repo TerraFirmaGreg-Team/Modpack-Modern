@@ -85,6 +85,7 @@ global.AD_ASTRA_WOOD_STRUCT = ([
         astikor_data: null,
         railways_data: null,
         macaw_data: null,
+		tfg_data: null,
         woodKind: global.WOOD_KIND.NONE,
 	},
 	{

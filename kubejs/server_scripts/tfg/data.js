@@ -335,12 +335,6 @@ function registerTFGItemSize(event) {
 	event.itemSize("tfg:universal_compost_browns_bag", "tiny", "light");
 	event.itemSize("tfg:universal_compost_greens_bag", "tiny", "light");
 
-
-	//Crafting Station
-	global.TFG_NEW_WOOD_TYPES.forEach(wood => { 
-		event.itemSize(`tfg:wood/crafting_station/${wood.name}`, "large", "heavy", `${wood.name}_crafting_station`);
-	})
-
 	event.itemSize('tfc:anemometer', "normal", "medium", "tfc_anemometer");
 	event.itemSize('tfc:calendar_clock', "normal", "medium", "tfc_calendar_clock");
 	event.itemSize('tfc:thermometer', "small", "light", "tfc_thermometer");
@@ -368,10 +362,6 @@ function registerTFGSupportData(event) {
 			event.support(`${rock.support}_horizontal`, 2, 2, 4, `${rockId}_support`);
 		}
 	}
-
-	global.TFG_NEW_WOOD_TYPES.forEach((wood) => {
-		event.support(`tfg:wood/support/${wood.name}_horizontal`, 2, 2, 4, `${wood.name}_support`);
-	});
 }
 
 //#endregion

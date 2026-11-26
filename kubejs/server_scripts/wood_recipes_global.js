@@ -233,7 +233,7 @@ const registerWoodStructRecipes = (event) =>
         {
             fullRecipeRegistration(woodType);
         }
-        else if(woodType.modName == "wan_ancient_beasts")
+        else if(woodType.modName == "wan_ancient_beasts" || woodType.modName == "tfg")
         {
             fullRecipeRegistration(woodType);
             TFGLogToWoodBuilder(event, woodType.name, woodType.tree_data[0].log_data.log, woodType.tree_data[0].log_data.stripped_log, woodType.tree_data[0].log_data.wood, woodType.tree_data[0].log_data.stripped_wood);

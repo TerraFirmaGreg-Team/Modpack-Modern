@@ -211,6 +211,14 @@ const registerWoodStructBlockTags = (event) =>
             event.add('minecraft:mineable/axe', woodType.rnr_data.shingle_stair);
         });
 
+        if(woodType.rope_ladder)
+        {
+            event.add('tfg:rope_ladders', woodType.rope_ladder)
+            event.add('create:copycat_deny', woodType.rope_ladder)
+            event.add('minecraft:fall_damage_resetting', woodType.rope_ladder)
+            event.add('minecraft:climbable', woodType.rope_ladder)
+        }
+
         //Ensure the firmalife things can be broken with an axe
         global.invokeIfValid(woodType.food_shelf, () => event.add('minecraft:mineable/axe', woodType.food_shelf));
         global.invokeIfValid(woodType.food_shelf, () => event.add('minecraft:mineable/axe', woodType.hanger));
