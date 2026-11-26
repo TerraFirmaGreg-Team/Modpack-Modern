@@ -30,10 +30,52 @@
     "fallbackDimensionIcon": "tfg-icon",
     "dimensionData": {
       "default": {
-        "textOverride": "In the {dimension.name}",
+        "textOverride": "In the {dimension.name}"
+      },
+      "overworld": {
+        "textOverride": "In the {dimension.name}"
+      },
+      "earth_orbit": {
+        "textOverride": "Orbiting Earth"
+      },
+      "glacio": {
+        "textOverride": "Swimming across Glacio"
+      },
+      "glacio_orbit": {
+        "textOverride": "Orbiting Glacio"
+      },
+      "mars": {
+        "textOverride": "On Mars"
+      },
+      "mars_orbit": {
+        "textOverride": "Orbiting Mars"
+      },
+      "mercury": {
+        "textOverride": "On Mercury"
+      },
+      "mercury_orbit": {
+        "textOverride": "Orbiting Mercury"
+      },
+      "moon": {
+        "textOverride": "On the Moon"
+      },
+      "moon_orbit": {
+        "textOverride": "Orbiting the Moon"
+      },
+      "spatial_storage": {
+        "textOverride": "In a high-tech box"
+      },
+      "the_end": {
+        "textOverride": "In the {dimension.name}"
       },
       "the_nether": {
-        "textOverride": "In the Beneath"
+        "textOverride": "Exploring the Beneath"
+      },
+      "venus": {
+        "textOverride": "On Venus"
+      },
+      "venus_orbit": {
+        "textOverride": "Orbiting Venus"
       }
     }
   },
