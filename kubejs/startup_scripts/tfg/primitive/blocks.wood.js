@@ -7,12 +7,6 @@ function registerTFGNewWoodBlocks(event) {
 		TFGWoodSupportRegistry(event, wood, `tfg:block/wood/stripped_log/${wood.name}`)
 	})
 
-	global.WAB_WOOD.forEach(wood => {
-		TFGWoodLeavesRegistry(event, wood)
-		TFGWoodSaplingRegistry(event, wood)
-		TFGWoodSupportRegistry(event, wood, `wan_ancient_beasts:block/stripped_${wood.name}_log`)
-	})
-
 	function TFGWoodLeavesRegistry(event, wood) {
 		event.create(`tfg:wood/leaves/${wood.name}`, 'tfc:leaves')
 			.soundType(`${wood.leafSound}`)

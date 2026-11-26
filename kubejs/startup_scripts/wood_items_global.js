@@ -4,7 +4,7 @@
  */
 function registerWoodStructItems(event)
 {
-    global.AD_ASTRA_WOOD_STRUCT.forEach(wood => 
+    global.getWoodStructArray().forEach(wood => 
 	{
 		if(wood.tfgCore === false)
 		{

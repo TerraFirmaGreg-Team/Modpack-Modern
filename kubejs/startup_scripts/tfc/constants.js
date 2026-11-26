@@ -101,7 +101,6 @@ global.TFC_STONE_TYPES = /** @type {const} */ ([
  * @property {WoodKindEnum} woodKind - The type of wood, wether its a Soft wood, a Hard wood, or none.
  */
 
-//We're omitting firmalife_data and tfc_data as both firmalife and tfc take care of tagging their shit properly.
 /**
  * @type {WoodStruct[]}
  * An array of WoodStruct that represents the base TFC Woods
@@ -115,7 +114,7 @@ global.TFC_WOOD_STRUCT = ([
 		tree_data: global.woodStructHelpers.treeData2(2,
 			["tfc", "afc", "afc"],
 			["acacia", "acacia_koa", "gum_arabic"],
-			[global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "acacia", 1), global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "acacia", 1), global.woodStructHelpers.logDataFormat("afc", global.woodStructHelpers.tfcUnstrippedWoodFormatArray(), "gum_arabic", 1)],
+			[global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "acacia", null, 1), global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "acacia", null, 1), global.woodStructHelpers.logDataFormat("afc", global.woodStructHelpers.tfcUnstrippedWoodFormatArray(), "gum_arabic", null, 1)],
 			[global.woodStructHelpers.tfcLeaves("tfc", "acacia"), global.woodStructHelpers.tfcLeaves("afc", "acacia_koa"), global.woodStructHelpers.tfcLeaves("afc", "gum_arabic")],
 			[global.woodStructHelpers.tfcFallenLeaves("tfc", "acacia"), global.woodStructHelpers.tfcFallenLeaves("afc", "acacia_koa"), global.woodStructHelpers.tfcFallenLeaves("afc", "gum_arabic")],
 			[global.woodStructHelpers.tfcSapling("tfc", "acacia"), global.woodStructHelpers.tfcSapling("afc", "acacia_koa"), global.woodStructHelpers.tfcSapling("afc", "gum_arabic")],
@@ -142,8 +141,7 @@ global.TFC_WOOD_STRUCT = ([
 		astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "acacia"),
 		railways_data: global.woodStructHelpers.railwaysData("railways", "tfc_acacia"),
 		macaw_data: global.woodStructHelpers.macawAIO("mcw_tfc_aio", "acacia"),
-		tfc_data: null,
-		firmalife_data: null,
+		tfg_data: null,
 		woodKind: global.WOOD_KIND.HARD,
 	},
 	{
@@ -154,7 +152,7 @@ global.TFC_WOOD_STRUCT = ([
 		tree_data: global.woodStructHelpers.treeData2(2,
 			["tfc", "afc"],
 			["ash", "mountain_ash"],
-			global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "ash", 2),
+			global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "ash", null, 2),
 			[global.woodStructHelpers.tfcLeaves("tfc", "ash"), global.woodStructHelpers.tfcLeaves("afc", "mountain_ash")],
 			[global.woodStructHelpers.tfcFallenLeaves("tfc", "ash"), global.woodStructHelpers.tfcFallenLeaves("afc", "mountain_ash")],
 			[global.woodStructHelpers.tfcSapling("tfc", "ash"), global.woodStructHelpers.tfcSapling("afc", "mountain_ash")],
@@ -181,8 +179,7 @@ global.TFC_WOOD_STRUCT = ([
 		astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "ash"),
 		railways_data: global.woodStructHelpers.railwaysData("railways", "tfc_ash"),
 		macaw_data: global.woodStructHelpers.macawAIO("mcw_tfc_aio", "ash"),
-		tfc_data: null,
-		firmalife_data: null,
+		tfg_data: null,
 		woodKind: global.WOOD_KIND.HARD,
 	},
 	{
@@ -193,7 +190,7 @@ global.TFC_WOOD_STRUCT = ([
 		tree_data: global.woodStructHelpers.treeData2(2,
 			["tfc", "afc"],
 			["aspen", "poplar"],
-			[global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "aspen", 1), global.woodStructHelpers.logDataFormat("afc", global.woodStructHelpers.tfcUnstrippedWoodFormatArray(), "poplar", 1)],
+			[global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "aspen", null, 1), global.woodStructHelpers.logDataFormat("afc", global.woodStructHelpers.tfcUnstrippedWoodFormatArray(), "poplar", null, 1)],
 			[global.woodStructHelpers.tfcLeaves("tfc", "aspen"), global.woodStructHelpers.tfcLeaves("afc", "poplar")],
 			[global.woodStructHelpers.tfcFallenLeaves("tfc", "aspen"), global.woodStructHelpers.tfcFallenLeaves("afc", "poplar")],
 			[global.woodStructHelpers.tfcSapling("tfc", "aspen"), global.woodStructHelpers.tfcSapling("afc", "poplar")],
@@ -220,8 +217,7 @@ global.TFC_WOOD_STRUCT = ([
 		astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "aspen"),
 		railways_data: global.woodStructHelpers.railwaysData("railways", "tfc_aspen"),
 		macaw_data: global.woodStructHelpers.macawAIO("mcw_tfc_aio", "aspen"),
-		tfc_data: null,
-		firmalife_data: null,
+		tfg_data: null,
 		woodKind: global.WOOD_KIND.HARD,
 	},
 	{
@@ -232,7 +228,7 @@ global.TFC_WOOD_STRUCT = ([
 		tree_data: global.woodStructHelpers.treeData2(1,
 			["tfc"],
 			["birch"],
-			[global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "birch", 1), 1],
+			[global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "birch", null, 1), 1],
 			[global.woodStructHelpers.tfcLeaves("tfc", "birch")],
 			[global.woodStructHelpers.tfcFallenLeaves("tfc", "birch")],
 			[global.woodStructHelpers.tfcSapling("tfc", "birch")],
@@ -259,8 +255,7 @@ global.TFC_WOOD_STRUCT = ([
 		astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "birch"),
 		railways_data: global.woodStructHelpers.railwaysData("railways", "tfc_birch"),
 		macaw_data: global.woodStructHelpers.macawAIO("mcw_tfc_aio", "birch"),
-		tfc_data: null,
-		firmalife_data: null,
+		tfg_data: null,
 		woodKind: global.WOOD_KIND.HARD,
 	},
 	{
@@ -271,7 +266,7 @@ global.TFC_WOOD_STRUCT = ([
 		tree_data: global.woodStructHelpers.treeData2(2,
 			["tfc", "afc"],
 			["blackwood", "mpingo_blackwood"],
-			global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "blackwood", 2),
+			global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "blackwood", null, 2),
 			[global.woodStructHelpers.tfcLeaves("tfc", "blackwood"), global.woodStructHelpers.tfcLeaves("afc", "mpingo_blackwood")],
 			[global.woodStructHelpers.tfcFallenLeaves("tfc", "blackwood"), global.woodStructHelpers.tfcFallenLeaves("afc", "mpingo_blackwood")],
 			[global.woodStructHelpers.tfcSapling("tfc", "blackwood"), global.woodStructHelpers.tfcSapling("afc", "mpingo_blackwood")],
@@ -298,8 +293,7 @@ global.TFC_WOOD_STRUCT = ([
 		astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "blackwood"),
 		railways_data: global.woodStructHelpers.railwaysData("railways", "tfc_blackwood"),
 		macaw_data: global.woodStructHelpers.macawAIO("mcw_tfc_aio", "blackwood"),
-		tfc_data: null,
-		firmalife_data: null,
+		tfg_data: null,
 		woodKind: global.WOOD_KIND.HARD,
 	},
 	{
@@ -310,7 +304,7 @@ global.TFC_WOOD_STRUCT = ([
 		tree_data: global.woodStructHelpers.treeData2(1,
 			["tfc"],
 			["chestnut"],
-			[global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "chestnut", 1)],
+			[global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "chestnut", null, 1)],
 			[global.woodStructHelpers.tfcLeaves("tfc", "chestnut")],
 			[global.woodStructHelpers.tfcFallenLeaves("tfc", "chestnut")],
 			[global.woodStructHelpers.tfcSapling("tfc", "chestnut")],
@@ -337,8 +331,7 @@ global.TFC_WOOD_STRUCT = ([
 		astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "chestnut"),
 		railways_data: global.woodStructHelpers.railwaysData("railways", "tfc_chestnut"),
 		macaw_data: global.woodStructHelpers.macawAIO("mcw_tfc_aio", "chestnut"),
-		tfc_data: null,
-		firmalife_data: null,
+		tfg_data: null,
 		woodKind: global.WOOD_KIND.HARD,
 	},
 	{
@@ -349,7 +342,7 @@ global.TFC_WOOD_STRUCT = ([
 		tree_data: global.woodStructHelpers.treeData2(3,
 			["tfc", "afc", "afc"],
 			["douglas_fir", "mountain_fir", "balsam_fir"],
-			global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "douglas_fir", 3),
+			global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "douglas_fir", null, 3),
 			[global.woodStructHelpers.tfcLeaves("tfc", "douglas_fir"), global.woodStructHelpers.tfcLeaves("afc", "mountain_fir"), global.woodStructHelpers.tfcLeaves("afc", "balsam_fir")],
 			[global.woodStructHelpers.tfcFallenLeaves("tfc", "douglas_fir"), global.woodStructHelpers.tfcFallenLeaves("afc", "mountain_fir"), global.woodStructHelpers.tfcFallenLeaves("afc", "balsam_fir")],
 			[global.woodStructHelpers.tfcSapling("tfc", "douglas_fir"), global.woodStructHelpers.tfcSapling("afc", "mountain_fir"), global.woodStructHelpers.tfcSapling("afc", "balsam_fir")],
@@ -376,8 +369,7 @@ global.TFC_WOOD_STRUCT = ([
 		astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "douglas_fir"),
 		railways_data: global.woodStructHelpers.railwaysData("railways", "tfc_douglas_fir"),
 		macaw_data: global.woodStructHelpers.macawAIO("mcw_tfc_aio", "douglas_fir"),
-		tfc_data: null,
-		firmalife_data: null,
+		tfg_data: null,
 		woodKind: global.WOOD_KIND.SOFT,
 	},
 	{
@@ -388,7 +380,7 @@ global.TFC_WOOD_STRUCT = ([
 		tree_data: global.woodStructHelpers.treeData2(2,
 			["tfc", "afc"],
 			["hickory", "scrub_hickory"],
-			global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "hickory", 2),
+			global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "hickory", null, 2),
 			[global.woodStructHelpers.tfcLeaves("tfc", "hickory"), global.woodStructHelpers.tfcLeaves("afc", "scrub_hickory")],
 			[global.woodStructHelpers.tfcFallenLeaves("tfc", "hickory"), global.woodStructHelpers.tfcFallenLeaves("afc", "scrub_hickory")],
 			[global.woodStructHelpers.tfcSapling("tfc", "hickory"), global.woodStructHelpers.tfcSapling("afc", "scrub_hickory")],
@@ -415,8 +407,7 @@ global.TFC_WOOD_STRUCT = ([
 		astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "hickory"),
 		railways_data: global.woodStructHelpers.railwaysData("railways", "tfc_hickory"),
 		macaw_data: global.woodStructHelpers.macawAIO("mcw_tfc_aio", "hickory"),
-		tfc_data: null,
-		firmalife_data: null,
+		tfg_data: null,
 		woodKind: global.WOOD_KIND.HARD,
 	},
 	{
@@ -427,7 +418,7 @@ global.TFC_WOOD_STRUCT = ([
 		tree_data: global.woodStructHelpers.treeData2(2,
 			["tfc", "afc"],
 			["kapok", "red_silk_cotton"],
-			global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "kapok", 2),
+			global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "kapok", null, 2),
 			[global.woodStructHelpers.tfcLeaves("tfc", "kapok"), global.woodStructHelpers.tfcLeaves("afc", "red_silk_cotton")],
 			[global.woodStructHelpers.tfcFallenLeaves("tfc", "kapok"), global.woodStructHelpers.tfcFallenLeaves("afc", "red_silk_cotton")],
 			[global.woodStructHelpers.tfcSapling("tfc", "kapok"), global.woodStructHelpers.tfcSapling("afc", "red_silk_cotton")],
@@ -454,8 +445,7 @@ global.TFC_WOOD_STRUCT = ([
 		astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "kapok"),
 		railways_data: global.woodStructHelpers.railwaysData("railways", "tfc_kapok"),
 		macaw_data: global.woodStructHelpers.macawAIO("mcw_tfc_aio", "kapok"),
-		tfc_data: null,
-		firmalife_data: null,
+		tfg_data: null,
 		woodKind: global.WOOD_KIND.SOFT,
 	},
 	{
@@ -466,7 +456,7 @@ global.TFC_WOOD_STRUCT = ([
 		tree_data: global.woodStructHelpers.treeData2(1,
 			["tfc"],
 			["mangrove"],
-			[global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "mangrove", 1)],
+			[global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "mangrove", null, 1)],
 			[global.woodStructHelpers.tfcLeaves("tfc", "mangrove")],
 			[global.woodStructHelpers.tfcFallenLeaves("tfc", "mangrove")],
 			[global.woodStructHelpers.tfcSapling("tfc", "mangrove")],
@@ -493,8 +483,7 @@ global.TFC_WOOD_STRUCT = ([
 		astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "mangrove"),
 		railways_data: global.woodStructHelpers.railwaysData("railways", "tfc_mangrove"),
 		macaw_data: global.woodStructHelpers.macawAIO("mcw_tfc_aio", "mangrove"),
-		tfc_data: null,
-		firmalife_data: null,
+		tfg_data: null,
 		woodKind: global.WOOD_KIND.SOFT,
 	},
 	{
@@ -505,7 +494,7 @@ global.TFC_WOOD_STRUCT = ([
 		tree_data: global.woodStructHelpers.treeData2(3,
 			["tfc", "afc", "afc"],
 			["maple", "bigleaf_maple", "weeping_maple"],
-			global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "maple", 3),
+			global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "maple", null, 3),
 			[global.woodStructHelpers.tfcLeaves("tfc", "maple"), global.woodStructHelpers.tfcLeaves("afc", "bigleaf_maple"), global.woodStructHelpers.tfcLeaves("afc", "weeping_maple")],
 			[global.woodStructHelpers.tfcFallenLeaves("tfc", "maple"), global.woodStructHelpers.tfcFallenLeaves("afc", "bigleaf_maple"), global.woodStructHelpers.tfcFallenLeaves("afc", "weeping_maple")],
 			[global.woodStructHelpers.tfcSapling("tfc", "maple"), global.woodStructHelpers.tfcSapling("afc", "bigleaf_maple"), global.woodStructHelpers.tfcSapling("afc", "weeping_maple")],
@@ -532,8 +521,7 @@ global.TFC_WOOD_STRUCT = ([
 		astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "maple"),
 		railways_data: global.woodStructHelpers.railwaysData("railways", "tfc_maple"),
 		macaw_data: global.woodStructHelpers.macawAIO("mcw_tfc_aio", "maple"),
-		tfc_data: null,
-		firmalife_data: null,
+		tfg_data: null,
 		woodKind: global.WOOD_KIND.HARD,
 	},
 	{
@@ -544,7 +532,7 @@ global.TFC_WOOD_STRUCT = ([
 		tree_data: global.woodStructHelpers.treeData2(3,
 			["tfc", "afc", "afc"],
 			["oak", "black_oak", "live_oak"],
-			[global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "oak", 1), global.woodStructHelpers.logDataFormat("afc", global.woodStructHelpers.tfcUnstrippedWoodFormatArray(), "black_oak", 1), global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "oak", 1)],
+			[global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "oak", null, 1), global.woodStructHelpers.logDataFormat("afc", global.woodStructHelpers.tfcUnstrippedWoodFormatArray(), "black_oak", null, 1), global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "oak", null, 1)],
 			[global.woodStructHelpers.tfcLeaves("tfc", "oak"), global.woodStructHelpers.tfcLeaves("afc", "black_oak"), global.woodStructHelpers.tfcLeaves("afc", "live_oak")],
 			[global.woodStructHelpers.tfcFallenLeaves("tfc", "oak"), global.woodStructHelpers.tfcFallenLeaves("afc", "black_oak"), global.woodStructHelpers.tfcFallenLeaves("afc", "live_oak")],
 			[global.woodStructHelpers.tfcSapling("tfc", "oak"), global.woodStructHelpers.tfcSapling("afc", "black_oak"), global.woodStructHelpers.tfcSapling("afc", "live_oak")],
@@ -571,8 +559,7 @@ global.TFC_WOOD_STRUCT = ([
 		astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "oak"),
 		railways_data: global.woodStructHelpers.railwaysData("railways", "tfc_oak"),
 		macaw_data: global.woodStructHelpers.macawAIO("mcw_tfc_aio", "oak"),
-		tfc_data: null,
-		firmalife_data: null,
+		tfg_data: null,
 		woodKind: global.WOOD_KIND.HARD,
 	},
 	{
@@ -583,7 +570,7 @@ global.TFC_WOOD_STRUCT = ([
 		tree_data: global.woodStructHelpers.treeData2(2,
 			["tfc", "afc"],
 			["palm", "jaggery_palm"],
-			global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "palm", 2),
+			global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "palm", null, 2),
 			[global.woodStructHelpers.tfcLeaves("tfc", "palm"), global.woodStructHelpers.tfcLeaves("afc", "jaggery_palm")],
 			[global.woodStructHelpers.tfcFallenLeaves("tfc", "palm"), global.woodStructHelpers.tfcFallenLeaves("afc", "jaggery_palm")],
 			[global.woodStructHelpers.tfcSapling("tfc", "palm"), global.woodStructHelpers.tfcSapling("afc", "jaggery_palm")],
@@ -610,8 +597,7 @@ global.TFC_WOOD_STRUCT = ([
 		astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "palm"),
 		railways_data: global.woodStructHelpers.railwaysData("railways", "tfc_palm"),
 		macaw_data: global.woodStructHelpers.macawAIO("mcw_tfc_aio", "palm"),
-		tfc_data: null,
-		firmalife_data: null,
+		tfg_data: null,
 		woodKind: global.WOOD_KIND.SOFT,
 	},
 	{
@@ -622,7 +608,7 @@ global.TFC_WOOD_STRUCT = ([
 		tree_data: global.woodStructHelpers.treeData2(4,
 			["tfc", "afc", "afc", "afc"],
 			["pine", "stone_pine", "red_pine", "tamarack"],
-			global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "pine", 4),
+			global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "pine", null, 4),
 			[global.woodStructHelpers.tfcLeaves("tfc", "pine"), global.woodStructHelpers.tfcLeaves("afc", "stone_pine"), global.woodStructHelpers.tfcLeaves("afc", "red_pine"), global.woodStructHelpers.tfcLeaves("afc", "tamarack")],
 			[global.woodStructHelpers.tfcFallenLeaves("tfc", "pine"), global.woodStructHelpers.tfcFallenLeaves("afc", "stone_pine"), global.woodStructHelpers.tfcFallenLeaves("afc", "red_pine"), global.woodStructHelpers.tfcFallenLeaves("afc", "tamarack")],
 			[global.woodStructHelpers.tfcSapling("tfc", "pine"), global.woodStructHelpers.tfcSapling("afc", "stone_pine"), global.woodStructHelpers.tfcSapling("afc", "red_pine"), global.woodStructHelpers.tfcSapling("afc", "tamarack")],
@@ -649,8 +635,7 @@ global.TFC_WOOD_STRUCT = ([
 		astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "pine"),
 		railways_data: global.woodStructHelpers.railwaysData("railways", "tfc_pine"),
 		macaw_data: global.woodStructHelpers.macawAIO("mcw_tfc_aio", "pine"),
-		tfc_data: null,
-		firmalife_data: null,
+		tfg_data: null,
 		woodKind: global.WOOD_KIND.SOFT,
 	},
 	{
@@ -661,7 +646,7 @@ global.TFC_WOOD_STRUCT = ([
 		tree_data: global.woodStructHelpers.treeData2(2,
 			["tfc", "afc"],
 			["rosewood", "giant_rosewood"],
-			global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "rosewood", 2),
+			global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "rosewood", null, 2),
 			[global.woodStructHelpers.tfcLeaves("tfc", "rosewood"), global.woodStructHelpers.tfcLeaves("afc", "giant_rosewood")],
 			[global.woodStructHelpers.tfcFallenLeaves("tfc", "rosewood"), global.woodStructHelpers.tfcFallenLeaves("afc", "giant_rosewood")],
 			[global.woodStructHelpers.tfcSapling("tfc", "rosewood"), global.woodStructHelpers.tfcSapling("afc", "giant_rosewood")],
@@ -688,8 +673,7 @@ global.TFC_WOOD_STRUCT = ([
 		astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "rosewood"),
 		railways_data: global.woodStructHelpers.railwaysData("railways", "tfc_rosewood"),
 		macaw_data: global.woodStructHelpers.macawAIO("mcw_tfc_aio", "rosewood"),
-		tfc_data: null,
-		firmalife_data: null,
+		tfg_data: null,
 		woodKind: global.WOOD_KIND.HARD,
 	},
 	{
@@ -700,7 +684,7 @@ global.TFC_WOOD_STRUCT = ([
 		tree_data: global.woodStructHelpers.treeData2(2,
 			["tfc", "afc"],
 			["sequoia", "coast_redwood"],
-			global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "sequoia", 2),
+			global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "sequoia", null, 2),
 			[global.woodStructHelpers.tfcLeaves("tfc", "sequoia"), global.woodStructHelpers.tfcLeaves("afc", "coast_redwood")],
 			[global.woodStructHelpers.tfcFallenLeaves("tfc", "sequoia"), global.woodStructHelpers.tfcFallenLeaves("afc", "coast_redwood")],
 			[global.woodStructHelpers.tfcSapling("tfc", "sequoia"), global.woodStructHelpers.tfcSapling("afc", "coast_redwood")],
@@ -727,8 +711,7 @@ global.TFC_WOOD_STRUCT = ([
 		astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "sequoia"),
 		railways_data: global.woodStructHelpers.railwaysData("railways", "tfc_sequoia"),
 		macaw_data: global.woodStructHelpers.macawAIO("mcw_tfc_aio", "sequoia"),
-		tfc_data: null,
-		firmalife_data: null,
+		tfg_data: null,
 		woodKind: global.WOOD_KIND.SOFT,
 	},
 	{
@@ -739,7 +722,7 @@ global.TFC_WOOD_STRUCT = ([
 		tree_data: global.woodStructHelpers.treeData2(4,
 			["tfc", "afc", "afc", "afc"],
 			["spruce", "coast_spruce", "sitka_spruce", "black_spruce"],
-			global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "spruce", 4),
+			global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "spruce", null, 4),
 			[global.woodStructHelpers.tfcLeaves("tfc", "spruce"), global.woodStructHelpers.tfcLeaves("afc", "coast_spruce"), global.woodStructHelpers.tfcLeaves("afc", "sitka_spruce"), global.woodStructHelpers.tfcLeaves("afc", "black_spruce")],
 			[global.woodStructHelpers.tfcFallenLeaves("tfc", "spruce"), global.woodStructHelpers.tfcFallenLeaves("afc", "coast_spruce"), global.woodStructHelpers.tfcFallenLeaves("afc", "sitka_spruce"), global.woodStructHelpers.tfcFallenLeaves("afc", "black_spruce")],
 			[global.woodStructHelpers.tfcSapling("tfc", "spruce"), global.woodStructHelpers.tfcSapling("afc", "coast_spruce"), global.woodStructHelpers.tfcSapling("afc", "sitka_spruce"), global.woodStructHelpers.tfcSapling("afc", "black_spruce")],
@@ -766,8 +749,7 @@ global.TFC_WOOD_STRUCT = ([
 		astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "spruce"),
 		railways_data: global.woodStructHelpers.railwaysData("railways", "tfc_spruce"),
 		macaw_data: global.woodStructHelpers.macawAIO("mcw_tfc_aio", "spruce"),
-		tfc_data: null,
-		firmalife_data: null,
+		tfg_data: null,
 		woodKind: global.WOOD_KIND.SOFT,
 	},
 	{
@@ -778,7 +760,7 @@ global.TFC_WOOD_STRUCT = ([
 		tree_data: global.woodStructHelpers.treeData2(1,
 			["tfc"],
 			["sycamore"],
-			[global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "sycamore", 1)],
+			[global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "sycamore", null, 1)],
 			[global.woodStructHelpers.tfcLeaves("tfc", "sycamore")],
 			[global.woodStructHelpers.tfcFallenLeaves("tfc", "sycamore")],
 			[global.woodStructHelpers.tfcSapling("tfc", "sycamore")],
@@ -805,8 +787,7 @@ global.TFC_WOOD_STRUCT = ([
 		astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "sycamore"),
 		railways_data: global.woodStructHelpers.railwaysData("railways", "tfc_sycamore"),
 		macaw_data: global.woodStructHelpers.macawAIO("mcw_tfc_aio", "sycamore"),
-		tfc_data: null,
-		firmalife_data: null,
+		tfg_data: null,
 		woodKind: global.WOOD_KIND.HARD,
 	},
 	{
@@ -817,7 +798,7 @@ global.TFC_WOOD_STRUCT = ([
 		tree_data: global.woodStructHelpers.treeData2(2,
 			["tfc", "afc"],
 			["white_cedar", "atlas_cedar"],
-			global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "white_cedar", 2),
+			global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "white_cedar", null, 2),
 			[global.woodStructHelpers.tfcLeaves("tfc", "white_cedar"), global.woodStructHelpers.tfcLeaves("afc", "atlas_cedar")],
 			[global.woodStructHelpers.tfcFallenLeaves("tfc", "white_cedar"), global.woodStructHelpers.tfcFallenLeaves("afc", "atlas_cedar")],
 			[global.woodStructHelpers.tfcSapling("tfc", "white_cedar"), global.woodStructHelpers.tfcSapling("afc", "atlas_cedar")],
@@ -844,8 +825,7 @@ global.TFC_WOOD_STRUCT = ([
 		astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "white_cedar"),
 		railways_data: global.woodStructHelpers.railwaysData("railways", "tfc_white_cedar"),
 		macaw_data: global.woodStructHelpers.macawAIO("mcw_tfc_aio", "white_cedar"),
-		tfc_data: null,
-		firmalife_data: null,
+		tfg_data: null,
 		woodKind: global.WOOD_KIND.SOFT,
 	},
 	{
@@ -856,7 +836,7 @@ global.TFC_WOOD_STRUCT = ([
 		tree_data: global.woodStructHelpers.treeData2(2,
 			["tfc", "afc"],
 			["willow", "weeping_willow"],
-			global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "willow", 2),
+			global.woodStructHelpers.logDataFormat("tfc", global.woodStructHelpers.tfcWoodFormatArray(), "willow", null, 2),
 			[global.woodStructHelpers.tfcLeaves("tfc", "willow"), global.woodStructHelpers.tfcLeaves("afc", "weeping_willow")],
 			[global.woodStructHelpers.tfcFallenLeaves("tfc", "willow"), global.woodStructHelpers.tfcFallenLeaves("afc", "weeping_willow")],
 			[global.woodStructHelpers.tfcSapling("tfc", "willow"), global.woodStructHelpers.tfcSapling("afc", "weeping_willow")],
@@ -883,8 +863,7 @@ global.TFC_WOOD_STRUCT = ([
 		astikor_data: global.woodStructHelpers.astikorData("tfcastikorcarts", "willow"),
 		railways_data: global.woodStructHelpers.railwaysData("railways", "tfc_willow"),
 		macaw_data: global.woodStructHelpers.macawAIO("mcw_tfc_aio", "willow"),
-		tfc_data: null,
-		firmalife_data: null,
+		tfg_data: null,
 		woodKind: global.WOOD_KIND.SOFT,
 	},
 ]);
@@ -1091,8 +1070,9 @@ global.calcAmountOfMetal = function (defaultAmount, percents) {
  * @param {Object} obj - A javascript object that may or may not be null 
  * @param {Action} action - A method that takes no parameters and returns no value, this will be invoked if obj is not null
  */
-global.invokeIfNotNull = function(obj, action){
-    if(obj)
+global.invokeIfValid = function(obj, action)
+{
+    if(obj !== null && obj !== undefined)
     {
         action();
     }

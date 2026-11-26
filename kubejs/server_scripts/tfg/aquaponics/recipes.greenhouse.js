@@ -534,9 +534,6 @@ const registerTFGGreenhouseRecipes = (event) => {
 	});
 
 	// Wood
-	global.WAB_WOOD.forEach(element => {
-		generateTreeGreenHouseRecipe(event, null, `tfg:wood/sapling/${element.name}`, `wan_ancient_beasts:${element.name}_log`, `tfg:wood/leaves/${element.name}`, 1);
-	});
 	global.TFG_NEW_WOOD_TYPES.forEach(element => {
 		generateTreeGreenHouseRecipe(event, null, `tfg:wood/sapling/${element.name}`, `tfg:wood/log/${element.name}`, `tfg:wood/leaves/${element.name}`, 1);
 	});
@@ -562,12 +559,6 @@ const registerTFGGreenhouseRecipes = (event) => {
 	generateGreenHouseRecipe(event, 'minecraft:the_nether', '4x minecraft:glow_berries', ['20x minecraft:glow_berries', '4x minecraft:glow_berries'], 1, 1);
 
 	// Mars Wood
-	generateTreeGreenHouseRecipe(event, 'ad_astra:mars', `tfg:saplings/strophar`, `ad_astra:strophar_stem`, `ad_astra:strophar_cap`, 1);
-
-	generateTreeGreenHouseRecipe(event, 'ad_astra:mars', `tfg:saplings/aeronos`, `ad_astra:aeronos_stem`, `ad_astra:aeronos_cap`, 1);
-
-	generateTreeGreenHouseRecipe(event, 'ad_astra:mars', `tfg:saplings/glacian`, `ad_astra:glacian_log`, `species:alphacene_moss_block`, 1);
-
 	generateTreeGreenHouseRecipe(event, 'ad_astra:mars', `tfg:saplings/alphacene`, `species:alphacene_mushroom_block`, `minecraft:mushroom_stem`, 1);
 	
 	// Mars Plants

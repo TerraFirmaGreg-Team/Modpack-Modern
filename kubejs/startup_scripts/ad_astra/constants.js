@@ -58,7 +58,7 @@ global.AD_ASTRA_WOOD_STRUCT = ([
 		tree_data: global.woodStructHelpers.treeData2(1,
 			["ad_astra"],
 			["aeronos"],
-			[global.woodStructHelpers.logDataFormat("ad_astra", ["{0}_stem", null, null, null], "aeronos", 1)], //Once the core mod adds the other blocks, this will need to be updated to include them
+			[global.woodStructHelpers.logDataFormat("ad_astra", ["{0}_stem", null, null, null], "aeronos", global.woodStructHelpers.tfcFuelData(800, 1500, null),  1)], //Once the core mod adds the other blocks, this will need to be updated to include them
 			[global.woodStructHelpers.resLocFormat("ad_astra", "{0}_cap", "aeronos")],
 			[null],
 			[global.woodStructHelpers.resLocFormat("tfg", "saplings/{0}", "aeronos")],
@@ -85,8 +85,6 @@ global.AD_ASTRA_WOOD_STRUCT = ([
         astikor_data: null,
         railways_data: null,
         macaw_data: null,
-		tfc_data: null,
-		firmalife_data: null,
         woodKind: global.WOOD_KIND.NONE,
 	},
 	{
@@ -97,7 +95,7 @@ global.AD_ASTRA_WOOD_STRUCT = ([
 		tree_data: global.woodStructHelpers.treeData2(1,
 			["ad_astra"],
 			["strophar"],
-			[global.woodStructHelpers.logDataFormat("ad_astra", ["{0}_stem", null, null, null], "strophar", 1)], //Once the core mod adds the other blocks, this will need to be updated to include them
+			[global.woodStructHelpers.logDataFormat("ad_astra", ["{0}_stem", null, null, null], "strophar", global.woodStructHelpers.tfcFuelData(800, 1500, null), 1)], //Once the core mod adds the other blocks, this will need to be updated to include them
 			[global.woodStructHelpers.resLocFormat("ad_astra", "{0}_cap", "strophar")],
 			[null],
 			[global.woodStructHelpers.resLocFormat("tfg", "saplings/{0}", "strophar")],
@@ -124,8 +122,7 @@ global.AD_ASTRA_WOOD_STRUCT = ([
 		astikor_data: null,
 		railways_data: null,
 		macaw_data: null,
-		tfc_data: null,
-		firmalife_data: null,
+		tfg_data: null,
 		woodKind: global.WOOD_KIND.NONE,
 	},
 	{
@@ -136,8 +133,8 @@ global.AD_ASTRA_WOOD_STRUCT = ([
 		tree_data: global.woodStructHelpers.treeData2(1,
 			["ad_astra"],
 			["glacian"],
-			[global.woodStructHelpers.logDataNamespaceFormat(["ad_astra:{0}_log", "ad_astra:stripped_{0}_log", "tfg:{0}_wood", "tfg:{0}_wood_stripped"], "glacian", 1)],
-			["species:alphacene_moss_block"],
+			[global.woodStructHelpers.logDataNamespaceFormat(["ad_astra:{0}_log", "ad_astra:stripped_{0}_log", "tfg:{0}_wood", "tfg:{0}_wood_stripped"], "glacian", global.woodStructHelpers.tfcFuelData(800, 1500, null), 1)],
+			['species:alphacene_moss_block'],
 			[null],
 			[global.woodStructHelpers.resLocFormat("tfg", "saplings/{0}", "glacian")],
 			global.woodStructHelpers.arrayAll(global.woodStructHelpers.resLocFormat("tfg", "twigs/{0}", "glacian"), 1),
@@ -163,47 +160,7 @@ global.AD_ASTRA_WOOD_STRUCT = ([
 		astikor_data: null,
 		railways_data: null,
 		macaw_data: null,
-		tfc_data: null,
-		firmalife_data: null,
+		tfg_data: null,
 		woodKind: global.WOOD_KIND.HARD,
 	},
 ]);
-
-global.AD_ASTRA_WOOD = [
-	{
-		name: 'aeronos',
-		logs: '#ad_astra:aeronos_caps', log: 'ad_astra:aeronos_stem', stripped_log: null,
-		log_wood: null, stripped_wood: null,
-		lumber: 'tfg:wood/lumber/aeronos', plank: 'ad_astra:aeronos_planks',
-		stair: 'ad_astra:aeronos_stairs', slab: 'ad_astra:aeronos_slab',
-		fence: 'ad_astra:aeronos_fence', fence_gate: 'ad_astra:aeronos_fence_gate',
-		door: 'ad_astra:aeronos_door', trapdoor: 'ad_astra:aeronos_trapdoor',
-		button: null, pressure_plate: null,
-		support: 'tfg:aeronos_support',
-		woodKind: "NONE"
-	},
-	{
-		name: 'strophar',
-		logs: '#ad_astra:strophar_caps', log: 'ad_astra:strophar_stem', stripped_log: null,
-		log_wood: null, stripped_wood: null,
-		lumber: 'tfg:wood/lumber/strophar', plank: 'ad_astra:strophar_planks',
-		stair: 'ad_astra:strophar_stairs', slab: 'ad_astra:strophar_slab',
-		fence:'ad_astra:strophar_fence', fence_gate: 'ad_astra:strophar_fence_gate',
-		door:'ad_astra:strophar_door', trapdoor: 'ad_astra:strophar_trapdoor',
-		button: null, pressure_plate: null,
-		support: 'tfg:strophar_support',
-		woodKind: "NONE"
-	},
-	{
-		name: 'glacian',
-		logs: '#ad_astra:glacian_logs', log: 'ad_astra:glacian_log', stripped_log: 'ad_astra:stripped_glacian_log',
-		log_wood: 'tfg:glacian_wood', stripped_wood: 'tfg:glacian_wood_stripped',
-		lumber: 'tfg:wood/lumber/glacian', plank: 'ad_astra:glacian_planks',
-		stair: 'ad_astra:glacian_stairs', slab: 'ad_astra:glacian_slab',
-		fence: 'ad_astra:glacian_fence', fence_gate: 'ad_astra:glacian_fence_gate',
-		door: 'ad_astra:glacian_door', trapdoor: 'ad_astra:glacian_trapdoor',
-		button: 'ad_astra:glacian_button', pressure_plate: 'ad_astra:glacian_pressure_plate',
-		support: 'tfg:glacian_support',
-		woodKind: "HARD"
-	}
-]

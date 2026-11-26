@@ -2,8 +2,6 @@
 
 const forEachTFGRopeLadderVariant = (callback) => {
 	global.TFG_NEW_WOOD_TYPES.forEach(wood => callback(`tfg:wood/rope_ladder/${wood.name}`))
-	global.WAB_WOOD.forEach(wood => callback(`tfg:wood/rope_ladder/${wood.name}`))
-	global.AD_ASTRA_WOOD.forEach(wood => callback(`tfg:wood/rope_ladder/${wood.name}`))
 }
 
 const registerTFGItemTags = (event) => {

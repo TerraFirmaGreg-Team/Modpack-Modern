@@ -5,7 +5,7 @@ const registerWoodStructItemTags = (event) =>{
     global.getWoodStructArray().forEach(woodType => {
         console.log("Generating Wood Struct Item Tags for " + woodType.modName + ":" + woodType.name);
         //Add track to track tag
-        global.invokeIfNotNull(woodType.railways_data, () =>
+        global.invokeIfValid(woodType.railways_data, () =>
         {        
             event.add('create:tracks', woodType.railways_data.track);
             event.add('create:tracks', woodType.railways_data.track_narrow);
@@ -13,11 +13,11 @@ const registerWoodStructItemTags = (event) =>{
         });
 
         //Add everycomp window tags
-        global.invokeIfNotNull(woodType.window, () => event.add('forge:glass', woodType.window));
-        global.invokeIfNotNull(woodType.window_pane, () => event.add('forge:glass_panes', woodType.window_pane));
+        global.invokeIfValid(woodType.window, () => event.add('forge:glass', woodType.window));
+        global.invokeIfValid(woodType.window_pane, () => event.add('forge:glass_panes', woodType.window_pane));
 
         //macaw
-        global.invokeIfNotNull(woodType.macaw_data, () =>
+        global.invokeIfValid(woodType.macaw_data, () =>
         {
 
             woodType.macaw_data.bridges.forEach(macawBridge =>
@@ -44,7 +44,7 @@ const registerWoodStructItemTags = (event) =>{
         
 
         //rnr
-        global.invokeIfNotNull(woodType.rnr_data, () =>
+        global.invokeIfValid(woodType.rnr_data, () =>
         {
             event.add('rnr:shingles', woodType.rnr_data.shingle);
             event.add('rnr:roof_blocks', woodType.rnr_data.shingle_block);
@@ -56,7 +56,7 @@ const registerWoodStructItemTags = (event) =>{
 
         //goog translated:
         // To roast TFC logs in pyrolysis. stove Why can't you just add a tag to a tag? (let's say minecraft:logs), because that breaks all minecraft:logs recipes, magic...
-        global.invokeIfNotNull(woodType.logsTag, () =>
+        global.invokeIfValid(woodType.logsTag, () =>
         {
             event.add("minecraft:logs_that_burn", woodType.logsTag);
             event.add("minecraft:logs", woodType.logsTag);
@@ -64,22 +64,21 @@ const registerWoodStructItemTags = (event) =>{
 
         //goog translated:
         //Chest tags to distinguish their types
-        global.invokeIfNotNull(woodType.chest, () => event.add("tfg:default_chests", woodType.chest));
-        global.invokeIfNotNull(woodType.trapped_chest, () => event.add("tfg:trapped_chests", woodType.trapped_chest));
+        global.invokeIfValid(woodType.chest, () => event.add("tfg:default_chests", woodType.chest));
+        global.invokeIfValid(woodType.trapped_chest, () => event.add("tfg:trapped_chests", woodType.trapped_chest));
 
-        global.invokeIfNotNull(woodType.rope_ladder, () => event.add("tfg:rope_ladders", woodType.rope_ladder));
+        global.invokeIfValid(woodType.rope_ladder, () => event.add("tfg:rope_ladders", woodType.rope_ladder));
 
-        global.invokeIfNotNull(woodType.sign, () => event.add("minecraft:signs", woodType.sign));
+        global.invokeIfValid(woodType.sign, () => event.add("minecraft:signs", woodType.sign));
 
-        console.log("railways");
-        global.invokeIfNotNull(woodType.railways_data, () =>
+        global.invokeIfValid(woodType.railways_data, () =>
         {
             event.add('c:hidden_from_recipe_viewers', woodType.railways_data.incomplete_track)
             event.add('c:hidden_from_recipe_viewers', woodType.railways_data.incomplete_track_narrow)
             event.add('c:hidden_from_recipe_viewers', woodType.railways_data.incomplete)	
         });
 
-        global.invokeIfNotNull(woodType.woodKind, () =>
+        global.invokeIfValid(woodType.woodKind, () =>
         {
             let tagSuffix = null;
             if(woodType.woodKind == global.WOOD_KIND.HARD)
@@ -101,7 +100,7 @@ const registerWoodStructItemTags = (event) =>{
             event.add(`tfg:${tagSuffix}_supports`, woodType.support);
 
             //If we have tree data
-            global.invokeIfNotNull(woodType.tree_data, () =>
+            global.invokeIfValid(woodType.tree_data, () =>
             {
                 woodType.tree_data.forEach(treeData =>
                 {
@@ -110,8 +109,8 @@ const registerWoodStructItemTags = (event) =>{
                     {
                         //Add to respective tags if entry exists
                         let logData = treeData.log_data;
-                        global.invokeIfNotNull(logData.stripped_log, () => event.add(`tfg:stripped_${tagSuffix}`, logData.stripped_log));
-                        global.invokeIfNotNull(logData.stripped_wood, () => event.add(`tfg:stripped_${tagSuffix}`, logData.stripped_wood));
+                        global.invokeIfValid(logData.stripped_log, () => event.add(`tfg:stripped_${tagSuffix}`, logData.stripped_log));
+                        global.invokeIfValid(logData.stripped_wood, () => event.add(`tfg:stripped_${tagSuffix}`, logData.stripped_wood));
                     }
                 })
             });
@@ -123,7 +122,7 @@ const registerWoodStructItemTags = (event) =>{
             })
         })
 
-        global.invokeIfNotNull(woodType.tree_data, () =>
+        global.invokeIfValid(woodType.tree_data, () =>
         {
             woodType.tree_data.forEach(treeData =>
             {
@@ -153,7 +152,7 @@ const registerWoodStructItemTags = (event) =>{
                     event.add(tagWithoutHashtag, strippedWood); 
 
                 //Dont do tapping related tags if the tree doesnt have any tappable liquids
-                global.invokeIfNotNull(treeData.tapper_output, () =>
+                global.invokeIfValid(treeData.tapper_output, () =>
                 {
                     if(log)
                         event.add(`tfg:${treeData.tapper_output}_logs`, log);
@@ -176,24 +175,18 @@ const registerWoodStructItemTags = (event) =>{
             });
         });
 
-        global.invokeIfNotNull(woodType.firmalife_data, () =>
-        {
-            event.add('firmalife:food_shelves', woodType.food_shelf)
-            event.add('firmalife:hangers', woodType.firmalife_data.hanger)
-            event.add('firmalife:jarbnets', woodType.firmalife_data.jarbnet)
-            event.add('firmalife:big_barrels', woodType.firmalife_data.big_barrel)
-            event.add('firmalife:wine_shelves', woodType.firmalife_data.wine_shelf)
-            event.add('firmalife:stomping_barrels', woodType.firmalife_data.stomping_barrel)
-            event.add('firmalife:barrel_presses', woodType.firmalife_data.barrel_press)
-        });
+        global.invokeIfValid(woodType.food_shelf, () => event.add('firmalife:food_shelves', woodType.food_shelf));
+        global.invokeIfValid(woodType.hanger, () => event.add('firmalife:hangers', woodType.hanger));
+        global.invokeIfValid(woodType.jarbnet, () => event.add('firmalife:jarbnets', woodType.jarbnet));
+        global.invokeIfValid(woodType.big_barrel, () => event.add('firmalife:big_barrels', woodType.big_barrel));
+        global.invokeIfValid(woodType.wine_shelf, () => event.add('firmalife:wine_shelves', woodType.wine_shelf));
+        global.invokeIfValid(woodType.stomping_barrel, () => event.add('firmalife:stomping_barrels', woodType.stomping_barrel));
+        global.invokeIfValid(woodType.barrel_press, () => event.add('firmalife:barrel_presses', woodType.barrel_press));
 
-        global.invokeIfNotNull(woodType.tfc_data, () =>
-        {
-            event.add('tfc:sewing_tables', woodType.tfc_data.sewing_table)
-            event.add('tfc:scribing_tables', woodType.tfc_data.scribing_table)
-            event.add('tfc:jar_shelves', woodType.tfc_data.jar_shelf)
-            event.add('tfc:minecarts', woodType.tfc_data.chest_minecart)
-        });
+        global.invokeIfValid(woodType.sewing_table, () => event.add('tfc:sewing_tables', woodType.sewing_table));
+        global.invokeIfValid(woodType.scribing_table, () => event.add('tfc:scribing_tables', woodType.scribing_table));
+        global.invokeIfValid(woodType.jar_shelf, () => event.add('tfc:jar_shelves', woodType.jar_shelf));
+        global.invokeIfValid(woodType.chest_minecart, () => event.add('tfc:minecarts', woodType.chest_minecart));
     });
 
 }
@@ -207,11 +200,11 @@ const registerWoodStructBlockTags = (event) =>
     {
         console.log("Generating Wood Struct Block Tags for " + woodType.modName + ":" + woodType.name);
         //everycompat
-        global.invokeIfNotNull(woodType.window, () => event.add('tfc:mineable_with_glass_saw', woodType.window));
-        global.invokeIfNotNull(woodType.window_pane, () => event.add('forge:glass_panes', woodType.window_pane));
+        global.invokeIfValid(woodType.window, () => event.add('tfc:mineable_with_glass_saw', woodType.window));
+        global.invokeIfValid(woodType.window_pane, () => event.add('forge:glass_panes', woodType.window_pane));
 
         //rnr
-        global.invokeIfNotNull(woodType.rnr_data, () =>
+        global.invokeIfValid(woodType.rnr_data, () =>
         {
             event.add('minecraft:mineable/axe', woodType.rnr_data.shingle_block);
             event.add('minecraft:mineable/axe', woodType.rnr_data.shingle_slab);
@@ -219,18 +212,15 @@ const registerWoodStructBlockTags = (event) =>
         });
 
         //Ensure the firmalife things can be broken with an axe
-        global.invokeIfNotNull(woodType.firmalife_data, () =>
-        {
-            event.add('minecraft:mineable/axe', woodType.food_shelf)
-            event.add('minecraft:mineable/axe', woodType.firmalife_data.hanger)
-            event.add('minecraft:mineable/axe', woodType.firmalife_data.jarbnet)
-            event.add('minecraft:mineable/axe', woodType.firmalife_data.big_barrel)
-            event.add('minecraft:mineable/axe', woodType.firmalife_data.wine_shelf)
-            event.add('minecraft:mineable/axe', woodType.firmalife_data.stomping_barrel)
-            event.add('minecraft:mineable/axe', woodType.firmalife_data.barrel_press)
-        });
+        global.invokeIfValid(woodType.food_shelf, () => event.add('minecraft:mineable/axe', woodType.food_shelf));
+        global.invokeIfValid(woodType.food_shelf, () => event.add('minecraft:mineable/axe', woodType.hanger));
+        global.invokeIfValid(woodType.food_shelf, () => event.add('minecraft:mineable/axe', woodType.jarbnet));
+        global.invokeIfValid(woodType.food_shelf, () => event.add('minecraft:mineable/axe', woodType.big_barrel));
+        global.invokeIfValid(woodType.food_shelf, () => event.add('minecraft:mineable/axe', woodType.wine_shelf));
+        global.invokeIfValid(woodType.food_shelf, () => event.add('minecraft:mineable/axe', woodType.stomping_barrel));
+        global.invokeIfValid(woodType.food_shelf, () => event.add('minecraft:mineable/axe', woodType.barrel_press));
 
-        global.invokeIfNotNull(woodType.tree_data, () =>
+        global.invokeIfValid(woodType.tree_data, () =>
         {
             woodType.tree_data.forEach(treeData =>
             {
@@ -239,7 +229,7 @@ const registerWoodStructBlockTags = (event) =>
                     event.add("tfc:can_be_snow_piled", treeData.twig);
                 }
 
-                global.invokeIfNotNull((treeData.tapper_output && treeData.log_data), () =>
+                global.invokeIfValid((treeData.tapper_output && treeData.log_data), () =>
                 {
                     //If it has a tapping output, mark it as tappable
                     let logData = treeData.log_data;
@@ -273,11 +263,11 @@ const registerWoodStructEntityTags = (event) =>
     global.getWoodStructArray().forEach(woodType =>
     {
         console.log("Generating Wood Struct Entity Tags for " + woodType.modName + ":" + woodType.name);
-        global.invokeIfNotNull(woodType.astikor_data, () =>
+        global.invokeIfValid(woodType.astikor_data, () =>
         {
-            global.invokeIfNotNull(woodType.astikor_data.animal_cart, () => event.add("tfg:ignores_cacti", woodType.astikor_data.animal_cart));
-            global.invokeIfNotNull(woodType.astikor_data.supply_cart, () => event.add("tfg:ignores_cacti", woodType.astikor_datasupply_cart));
-            global.invokeIfNotNull(woodType.astikor_data.plow, () => event.add("tfg:ignores_cacti", woodType.astikor_data.plow));
+            global.invokeIfValid(woodType.astikor_data.animal_cart, () => event.add("tfg:ignores_cacti", woodType.astikor_data.animal_cart));
+            global.invokeIfValid(woodType.astikor_data.supply_cart, () => event.add("tfg:ignores_cacti", woodType.astikor_datasupply_cart));
+            global.invokeIfValid(woodType.astikor_data.plow, () => event.add("tfg:ignores_cacti", woodType.astikor_data.plow));
         });
     })
 }

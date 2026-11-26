@@ -1,16 +1,43 @@
 // priority: -100
 "use strict";
 
-
-global.WAB_WOOD = [
+global.WAB_WOOD_STRUCT = ([
 	{
-		name: "ginkgo",
-		barkColor: "brown",
-		woodColor: "green",
-		leafColor: "orange",
-		woodSound: "wood",
-		leafSound: "azalea_leaves",
-		daysToGrow: 7,
-		location: "nether"
+        tfgCore: true,
+        modName: "wan_ancient_beasts",
+        name: "ginkgo",
+        logsTag: "#wan_ancient_beasts:ginkgo_logs",
+		tree_data: global.woodStructHelpers.treeData2(1,
+			["wan_ancient_beasts"],
+			["ginkgo"],
+			[global.woodStructHelpers.logDataNamespaceFormat(["wan_ancient_beasts:{0}_log", "wan_ancient_beasts:stripped_{0}_log", "wan_ancient_beasts:{0}_wood", "wan_ancient_beasts:stripped_{0}_wood"], "ginkgo", global.woodStructHelpers.tfcFuelData(690, 3000, 0.95), 1)],
+			['tfg:wood/leaves/ginkgo'],
+			['tfg:wood/leaves/ginkgo_fallen'],
+			[global.woodStructHelpers.resLocFormat("tfg", "wood/sapling/{0}", "ginkgo")],
+			global.woodStructHelpers.arrayAll(global.woodStructHelpers.resLocFormat("tfg", "twigs/{0}", "ginkgo"), 1),
+			global.woodStructHelpers.arrayAll(null, 1),
+			global.woodStructHelpers.arrayAll(null, 1)),
+		lumber: 'tfg:wood/lumber/ginkgo', plank: 'wan_ancient_beasts:ginkgo_planks',
+		stair: 'wan_ancient_beasts:ginkgo_stairs', slab: 'wan_ancient_beasts:ginkgo_slab',
+		fence: 'wan_ancient_beasts:ginkgo_fence', fence_gate: 'wan_ancient_beasts:ginkgo_fence_gate', log_fence: "tfg:wood/log_fence/ginkgo",
+		door: 'wan_ancient_beasts:ginkgo_door', trapdoor: 'wan_ancient_beasts:ginkgo_trapdoor',
+		button: 'wan_ancient_beasts:ginkgo_button', pressure_plate: 'wan_ancient_beasts:ginkgo_pressure_plate',
+		chest: 'tfg:wood/chest/ginkgo', trapped_chest: 'tfg:wood/trapped_chest/ginkgo', chest_minecart: null,
+		sign: 'wan_ancient_beasts:ginkgo_sign', hanging_sign: 'wan_ancient_beasts:ginkgo_hanging_sign',
+		workbench: 'tfg:wood/workbench/ginkgo', crafting_station: 'tfg:wood/crafting_station/ginkgo', crafting_station_slab: 'tfg:wood/crafting_station/ginkgo_slab', loom: 'tfg:wood/loom/ginkgo', sewing_table: 'tfg:wood/sewing_table/ginkgo', scribing_table: 'tfg:wood/scribing_table/ginkgo',
+		big_barrel: 'tfg:wood/big_barrel/ginkgo', stomping_barrel: 'tfg:wood/stomping_barrel/ginkgo', barrel: 'tfg:wood/barrel/ginkgo', barrel_press: 'tfg:wood/barrel_press/ginkgo',
+		sluice: 'tfg:wood/sluice/ginkgo', tool_rack: 'tfg:wood/tool_rack/ginkgo', lectern: 'tfg:wood/lectern/ginkgo',
+		jar_shelf: 'tfg:wood/jar_shelf/ginkgo', food_shelf: 'tfg:wood/food_shelf/ginkgo', bookshelf: 'tfg:wood/bookshelf/ginkgo', jarbnet: 'tfg:wood/jarbnet/ginkgo', wine_shelf: 'tfg:wood/wine_shelf/ginkgo',
+		support: 'tfg:wood/support/ginkgo',
+		window: 'everycomp:c/wan_ancient_beasts/ginkgo_window', window_pane: 'everycomp:c/wan_ancient_beasts/ginkgo_window_pane',
+		roof: 'tfg:wood/ginkgo_roofing',
+		hanger: 'tfg:wood/hanger/ginkgo',
+		rope_ladder: 'tfg:wood/rope_ladder/ginkgo',
+		rnr_data: null,
+		astikor_data: null,
+		railways_data: null,
+		macaw_data: null,
+		tfg_data: global.woodStructHelpers.tfgData("brown", "green", "orange", "wood", "azalea_leaves", 7, "nether"),
+		woodKind: global.WOOD_KIND.SOFT,
 	}
-]
+]);

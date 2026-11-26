@@ -2,6 +2,31 @@
 "use strict";
 
 /**
+ * @param {*} event
+ * @param {string} name - Name of the wood
+ * @param {string} log
+ * @param {string} stripped_log
+ * @param {string} wood
+ * @param {string} stripped_wood
+ */
+function TFGLogToWoodBuilder(event, name, log, stripped_log, wood, stripped_wood) {
+
+	event.shaped(Item.of(wood).withCount(3), [
+		'AA',
+		'AA'
+	], {
+		A: log
+	}).id(`tfg:shaped/${name}_log_to_wood`);
+
+	event.shaped(Item.of(stripped_wood).withCount(3), [
+		'AA',
+		'AA'
+	], {
+		A: stripped_log
+	}).id(`tfg:shaped/${name}_stripped_log_to_wood`);
+}
+
+/**
  * Generates most basic wooden recipes. 
  * 
  * All parameters are optional. Name is used for the ID.
@@ -738,31 +763,6 @@ function registerTFGWoodenRecipes(event) {
 
 	// #region TFG Logs to Wood
 
-	/**
-	 * @param {*} event
-	 * @param {string} name - Name of the wood
-	 * @param {string} log
-	 * @param {string} stripped_log
-	 * @param {string} wood
-	 * @param {string} stripped_wood
-	 */
-	function TFGLogToWoodBuilder(event, name, log, stripped_log, wood, stripped_wood) {
-
-		event.shaped(Item.of(wood).withCount(3), [
-			'AA',
-			'AA'
-		], {
-			A: log
-		}).id(`tfg:shaped/${name}_log_to_wood`);
-
-		event.shaped(Item.of(stripped_wood).withCount(3), [
-			'AA',
-			'AA'
-		], {
-			A: stripped_log
-		}).id(`tfg:shaped/${name}_stripped_log_to_wood`);
-	}
-
 	// #endregion
 
 	// #region TFG Wood Recycling
@@ -825,114 +825,6 @@ function registerTFGWoodenRecipes(event) {
 	})
 
 	// #endregion
-
-	// #region WAB
-
-	global.WAB_WOOD.forEach(wood => {
-		TFGWoodBuilder(
-			event,
-			wood.name,
-			`tfg:wood/lumber/${wood.name}`,
-			`#wan_ancient_beasts:${wood.name}_logs`,
-			`wan_ancient_beasts:${wood.name}_log`,
-			`wan_ancient_beasts:stripped_${wood.name}_log`,
-			`wan_ancient_beasts:${wood.name}_planks`,
-			`wan_ancient_beasts:${wood.name}_stairs`,
-			`wan_ancient_beasts:${wood.name}_slab`,
-			`wan_ancient_beasts:${wood.name}_door`,
-			`wan_ancient_beasts:${wood.name}_trapdoor`,
-			`wan_ancient_beasts:${wood.name}_fence`,
-			`tfg:wood/log_fence/${wood.name}`,
-			`wan_ancient_beasts:${wood.name}_fence_gate`,
-			`tfg:wood/support/${wood.name}`,
-			`wan_ancient_beasts:${wood.name}_pressure_plate`,
-			`wan_ancient_beasts:${wood.name}_button`,
-			`wan_ancient_beasts:${wood.name}_wood`,
-			`wan_ancient_beasts:stripped_${wood.name}_wood`,
-			`tfg:wood/tool_rack/${wood.name}`,
-			`tfg:wood/workbench/${wood.name}`,
-			`tfg:wood/bookshelf/${wood.name}`,
-			`tfg:wood/chest/${wood.name}`,
-			`tfg:wood/trapped_chest/${wood.name}`,
-			`tfg:wood/loom/${wood.name}`,
-			`tfg:wood/sluice/${wood.name}`,
-			`tfg:wood/barrel/${wood.name}`,
-			`tfg:wood/lectern/${wood.name}`,
-			`tfg:wood/scribing_table/${wood.name}`,
-			`tfg:wood/sewing_table/${wood.name}`,
-			`tfg:wood/jar_shelf/${wood.name}`,
-			`tfg:wood/food_shelf/${wood.name}`,
-			`tfg:wood/hanger/${wood.name}`,
-			`tfg:wood/jarbnet/${wood.name}`,
-			`tfg:wood/big_barrel/${wood.name}`,
-			`tfg:wood/stomping_barrel/${wood.name}`,
-			`tfg:wood/barrel_press/${wood.name}`,
-			`tfg:wood/wine_shelf/${wood.name}`,
-			`wan_ancient_beasts:${wood.name}_sign`,
-			`wan_ancient_beasts:${wood.name}_hanging_sign`,
-			`tfg:wood/crafting_station/${wood.name}`,
-			`tfg:wood/workbench/${wood.name}`,
-			`tfg:wood/rope_ladder/${wood.name}`,
-			`tfg:wood/${wood.name}_roofing`
-		)
-
-		TFGLogToWoodBuilder(event, wood.name, 
-			`wan_ancient_beasts:${wood.name}_log`, `wan_ancient_beasts:stripped_${wood.name}_log`,
-			`wan_ancient_beasts:${wood.name}_wood`, `wan_ancient_beasts:stripped_${wood.name}_wood`)
-	})
-
-	// #endregion
-
-	// #region Ad Astra
-
-	global.AD_ASTRA_WOOD_STRUCT.forEach(woodType => {
-		TFGWoodBuilder(
-			event,
-			woodType.name,
-			woodType.lumber,
-			woodType.logs,
-			woodType.log,
-			woodType.stripped_log,
-			woodType.plank,
-			woodType.stair,
-			woodType.slab,
-			woodType.door,
-			woodType.trapdoor,
-			woodType.fence,
-			woodType.log_fence,
-			woodType.fence_gate,
-			woodType.support,
-			woodType.pressure_plate,
-			woodType.button,
-			woodType.log_wood,
-			woodType.stripped_wood,
-			woodType.tool_rack,
-			woodType.workbench,
-			woodType.bookshelf,
-			woodType.chest,
-			woodType.trapped_chest,
-			woodType.loom,
-			woodType.sluice,
-			woodType.barrel,
-			woodType.lectern,
-			woodType.scribing_table,
-			woodType.sewing_table,
-			woodType.jar_shelf,
-			woodType.food_shelf,
-			woodType.hanger,
-			woodType.jarbnet,
-			woodType.big_barrel,
-			woodType.stomping_barrel,
-			woodType.barrel_press,
-			woodType.wine_shelf,
-			woodType.sign,
-			woodType.hanging_sign,
-			woodType.crafting_station,
-			woodType.workbench,
-			woodType.rope_ladder,
-			woodType.roof,
-		);
-	});
 
 	event.shaped('8x ad_astra:aeronos_ladder', [
 		'A A',

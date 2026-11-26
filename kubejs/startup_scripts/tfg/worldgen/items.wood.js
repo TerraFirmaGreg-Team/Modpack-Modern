@@ -8,19 +8,10 @@ function registerTFGWoodItems(event) {
 			.tag('tfc:lumber')
 	})
 
-	global.WAB_WOOD.forEach(wood => {
-		event.create(`tfg:wood/lumber/${wood.name}`)
-			.translationKey(`item.tfg.item.wood.lumber.${wood.name}`)
-			.tag('tfc:lumber')
-	})
-
 	
 	event.create('tfg:twigs/alphacene')
 		.tag('tfc:twigs')
 		.texture('tfg:item/wood/twig/alphacene')
-	event.create('tfg:twigs/ginkgo')
-		.tag('tfc:twigs')
-		.texture('tfg:item/wood/twig/ginkgo')
 
 	// Bamboo lumber
 	event.create('tfg:wood/lumber/bamboo')

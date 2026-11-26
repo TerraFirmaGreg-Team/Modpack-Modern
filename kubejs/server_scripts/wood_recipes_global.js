@@ -26,7 +26,7 @@ const registerWoodStructRecipes = (event) =>
         console.log("Generating wood struct recipes for " + woodType.modName + ":" + woodType.name);
 
         //window pane recipes
-        global.invokeIfNotNull(woodType.window_pane, () =>
+        global.invokeIfValid(woodType.window_pane, () =>
         {
             //These share the same id as the block/item
             event.remove({ id: woodType.window_pane });
@@ -46,7 +46,7 @@ const registerWoodStructRecipes = (event) =>
         });
 
         //wired macaw fence recipe
-        global.invokeIfNotNull((woodType.macaw_data && woodType.tree_data), () =>
+        global.invokeIfValid((woodType.macaw_data && woodType.tree_data), () =>
         {
             let treeData = woodType.tree_data[0];
             let logData = treeData.log_data;
@@ -62,7 +62,7 @@ const registerWoodStructRecipes = (event) =>
         });
 
         //train track recipes
-        global.invokeIfNotNull(woodType.railways_data, () =>
+        global.invokeIfValid(woodType.railways_data, () =>
         {
             //tracks
             event.recipes.createSequencedAssembly([
@@ -153,7 +153,7 @@ const registerWoodStructRecipes = (event) =>
         })
 
         //shingle assembling recipe
-        global.invokeIfNotNull(woodType.rnr_data, () =>
+        global.invokeIfValid(woodType.rnr_data, () =>
         {
             //Replace it so it accepts any log of the wood type
             event.replaceInput({ id: `rnr:crafting/shingle/${woodType.name}`}, `tfc:wood/log/${woodType.name}`, woodType.logsTag);
@@ -199,7 +199,7 @@ const registerWoodStructRecipes = (event) =>
         });
 
         //fallen leaves from block recipe
-        global.invokeIfNotNull(woodType.tree_data, () =>
+        global.invokeIfValid(woodType.tree_data, () =>
         {
             woodType.tree_data.forEach(tree =>
             {
@@ -219,7 +219,7 @@ const registerWoodStructRecipes = (event) =>
         
         if(woodType.modName == "tfc")
         {
-            handleTFCRecipeRefistration(woodType);
+            handleTFCRecipeRegistration(woodType);
         }
         else if(woodType.modName == "afc")
         {
@@ -229,8 +229,17 @@ const registerWoodStructRecipes = (event) =>
         {
             handleBeneathRecipeRegistration(woodType);
         }
+        else if(woodType.modName == "ad_astra")
+        {
+            fullRecipeRegistration(woodType);
+        }
+        else if(woodType.modName == "wan_ancient_beasts")
+        {
+            fullRecipeRegistration(woodType);
+            TFGLogToWoodBuilder(event, woodType.name, woodType.tree_data[0].log_data.log, woodType.tree_data[0].log_data.stripped_log, woodType.tree_data[0].log_data.wood, woodType.tree_data[0].log_data.stripped_wood);
+        }
 
-        global.invokeIfNotNull(woodType.tree_data, () =>
+        global.invokeIfValid(woodType.tree_data, () =>
         {
             woodType.tree_data.forEach(treeData =>
             {
@@ -249,7 +258,7 @@ const registerWoodStructRecipes = (event) =>
             });
         });
 
-        global.invokeIfNotNull(woodType.woodKind, () =>
+        global.invokeIfValid(woodType.woodKind, () =>
         {
             if(woodType.woodKind == global.WOOD_KIND.NONE)
             {
@@ -258,7 +267,7 @@ const registerWoodStructRecipes = (event) =>
 
             if(woodType.woodKind == global.WOOD_KIND.HARD)
             {
-                global.invokeIfNotNull(woodType.astikor_data, () =>
+                global.invokeIfValid(woodType.astikor_data, () =>
                 {
                     TFGHelpers.registerMaterialInfo(woodType.astikor_data.wheel, [GTMaterials.get('hardwood'), 2]);
                     TFGHelpers.registerMaterialInfo(woodType.astikor_data.supply_cart, [GTMaterials.Brass, 1, GTMaterials.get('hardwood'), 8, GTMaterials.Wood, 12]);
@@ -278,7 +287,7 @@ const registerWoodStructRecipes = (event) =>
             }
             else if(woodType.woodKind == global.WOOD_KIND.SOFT)
             {
-                global.invokeIfNotNull(woodType.astikor_data, () =>
+                global.invokeIfValid(woodType.astikor_data, () =>
                 {
                     TFGHelpers.registerMaterialInfo(woodType.astikor_data.wheel, [GTMaterials.Wood, 2]);
                     TFGHelpers.registerMaterialInfo(woodType.astikor_data.supply_cart, [GTMaterials.Brass, 1, GTMaterials.Wood, 20]);
@@ -299,7 +308,7 @@ const registerWoodStructRecipes = (event) =>
         });
     })
 
-    function handleTFCRecipeRefistration(woodType)
+    function handleTFCRecipeRegistration(woodType)
     {
         // Removed unused assets
         event.remove({ id: `tfc:crafting/wood/${woodType.name}_axle` });
@@ -425,7 +434,7 @@ const registerWoodStructRecipes = (event) =>
 			null,
 			null,
 			null,
-			woodType.firmalife_data.stomping_barrel,
+			woodType.stomping_barrel,
 			null,
 			null,
 			null,
@@ -503,7 +512,7 @@ const registerWoodStructRecipes = (event) =>
      * 
      * @param {WoodStruct} woodType 
      */
-    function handleAdAstraRecipeRegistration(woodType)
+    function fullRecipeRegistration(woodType)
     {
         TFGWoodBuilder(
                 event,
