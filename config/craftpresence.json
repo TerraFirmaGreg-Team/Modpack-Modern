@@ -39,10 +39,10 @@
         "textOverride": "Orbiting Earth"
       },
       "glacio": {
-        "textOverride": "Swimming across Glacio"
+        "textOverride": "Diving in Europa"
       },
       "glacio_orbit": {
-        "textOverride": "Orbiting Glacio"
+        "textOverride": "Orbiting Europa"
       },
       "mars": {
         "textOverride": "On Mars"
@@ -51,10 +51,10 @@
         "textOverride": "Orbiting Mars"
       },
       "mercury": {
-        "textOverride": "On Mercury"
+        "textOverride": "On Mercury?"
       },
       "mercury_orbit": {
-        "textOverride": "Orbiting Mercury"
+        "textOverride": "Orbiting Mercury?"
       },
       "moon": {
         "textOverride": "On the Moon"
@@ -63,7 +63,7 @@
         "textOverride": "Orbiting the Moon"
       },
       "spatial_storage": {
-        "textOverride": "In a high-tech box"
+        "textOverride": "In a High-Tech Box"
       },
       "the_end": {
         "textOverride": "In the {dimension.name}"
