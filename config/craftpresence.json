@@ -31,6 +31,51 @@
     "dimensionData": {
       "default": {
         "textOverride": "In the {dimension.name}"
+      },
+      "overworld": {
+        "textOverride": "In the {dimension.name}"
+      },
+      "earth_orbit": {
+        "textOverride": "Orbiting Earth"
+      },
+      "glacio": {
+        "textOverride": "Diving in Europa"
+      },
+      "glacio_orbit": {
+        "textOverride": "Orbiting Europa"
+      },
+      "mars": {
+        "textOverride": "On Mars"
+      },
+      "mars_orbit": {
+        "textOverride": "Orbiting Mars"
+      },
+      "mercury": {
+        "textOverride": "On Mercury?"
+      },
+      "mercury_orbit": {
+        "textOverride": "Orbiting Mercury?"
+      },
+      "moon": {
+        "textOverride": "On the Moon"
+      },
+      "moon_orbit": {
+        "textOverride": "Orbiting the Moon"
+      },
+      "spatial_storage": {
+        "textOverride": "In a High-Tech Box"
+      },
+      "the_end": {
+        "textOverride": "In the {dimension.name}"
+      },
+      "the_nether": {
+        "textOverride": "Exploring the Beneath"
+      },
+      "venus": {
+        "textOverride": "On Venus"
+      },
+      "venus_orbit": {
+        "textOverride": "Orbiting Venus"
       }
     }
   },
