@@ -5,7 +5,7 @@
 	"tooltip.gtcables.length": "%s / %s m",
 	"tooltip.gtcables.loss_per_block": "§cStrata centymetr/amper:§r §c%d§7 mEU-wolt",
 	"message.gtcables.selection_cleared": "Wyczyszczono złącze początkowe.",
-	"message.gtcables.missing_start": "Brakuje łącznika początkowego. Wybierz go ponownie.",
+	"message.gtcables.missing_start": "Brakuje złącza początkowego. Wybierz je ponownie.",
 	"message.gtcables.same_connector": "Wybierz inne złącze.",
 	"message.gtcables.too_long": "Przęsło przekracza maksymalną długość.",
 	"message.gtcables.insufficient_wire": "Na tej szpuli jest za mało drutu.",

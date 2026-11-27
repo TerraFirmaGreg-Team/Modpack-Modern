@@ -14,6 +14,10 @@
 	"euphoria_patcher.donation.line4.highlight": "wsparcie projektu",
 	"euphoria_patcher.donation.line5": "Dziękujemy za używanie Euphoria Patches <3",
 	"euphoria_patcher.donation.button": "Wesprzyj projekt",
+	"fml.menu.mods.info.description.euphoria_patcher": "Mod, który nakłada Euphoria Patches na Complementary Shaders.\nWłącz i zmień ustawienia Euphoria Patches w menu ustawień paczki shaderów.\nZgłaszaj problemy na Discordzie!",
+	"modmenu.descriptionTranslation.euphoria_patcher": "Mod, który nakłada Euphoria Patches na Complementary Shaders.\nWłącz i zmień ustawienia Euphoria Patches w menu ustawień paczki shaderów.\nZgłaszaj problemy na Discordzie!",
+	"euphoria_patcher.shader_error.failed": "Nie udało się skompilować shaderpaka! Proszę zgłosić błąd twórcy shadera. %s",
 	"euphoria_patcher.shader_error.copy": "Kopiuj informacje",
+	"euphoria_patcher.shader_error.report": "Zgłoś to do twórcy shadera: %s",
 	"euphoria_patcher.shader_error.report.link": "Zgłoś na Discordzie"
 }

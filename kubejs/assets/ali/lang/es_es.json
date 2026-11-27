@@ -1,5 +1,9 @@
 {
+	"ali.description.chance": "Probabilidad: %s",
 	"ali.description.count": "Cantidad: %s",
+	"ali.description.quality": "Calidad: %s",
+	"ali.description.random_trade_selection": "Selecciona al azar %s de estas operaciones",
+	"ali.description.rolls": "Tiradas: %s",
 	"ali.property.branch.biomes": "Biomas:",
 	"ali.property.value.block": "Bloque: %s",
 	"ali.property.value.count": "Cantidad: %s",

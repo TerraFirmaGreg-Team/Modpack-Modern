@@ -1,4 +1,8 @@
 {
 	"text.crafting_station.clear": "Limpia la cuadrícula de fabricación\n(Mantén pulsado shift para preferir inventarios\nlaterales)",
+	"text.crafting_station.connected_resources.false": "Usar Recursos Conectados: Falso",
+	"text.crafting_station.connected_resources.true": "Usar recursos conectados: Verdadero",
+	"text.crafting_station.error": "Receta incorrecta %s encontrada, vea el registro para más detalles",
+	"text.crafting_station.jei_nopull_output": "¡Espacios bloqueados en este contenedor!\nJEI ya no puede extraer recursos de ranuras de solo salida, ex. una ranura de resultado de un horno.\n\n¡Por favor mueve esos objetos a ranuras de almacenamiento normales para usar!",
 	"title.crafting_station": "Estación de trabajo"
 }

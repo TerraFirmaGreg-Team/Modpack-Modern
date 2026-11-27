@@ -86,7 +86,7 @@
   "sodium.extras.options.dynlights.tiles.title": "Użyj dla bytów bloków",
   "sodium.extras.options.fadein.desc": "Określa szybkość stopniowego pojawiania się chunków. Nie wpływa na wydajność. Tryb „Fancy” trwa po prostu dłużej, ale wygląda nieco efektowniej. Obecnie ta funkcja nie działa.",
   "sodium.extras.options.fadein.title": "Jakość stopniowego pojawiania się chunków",
-  "sodium.extras.options.fastbeds.desc": "Po włączeniu zastępuje dynamiczny model łóżek statycznym, jak w zwykłym bloku. Zwiększa wydajność i umożliwia korzystanie z niestandardowych modeli z paczek zasobów.",
+  "sodium.extras.options.fastbeds.desc": "Jeśli włączone, zastąpi dynamiczny model łóżka statycznym, jak normalny blok. Zwiększa wydajność i pozwala używać własnych modeli z paczkami zasobów",
   "sodium.extras.options.fastbeds.title": "Używaj szybkich łóżek",
   "sodium.extras.options.fastchest.desc": "Jeśli włączone, zastępuje model skrzyń statycznym modelem, jak normalny blok. Psuje animację, ale zmniejsza obciążenie gry w otoczeniu wielu skrzyń.\n\nOpcja nie zmienia nic, jeśli masz zainstalowany flywheel i uruchomiłeś porcjowanie lub instancjonowanie backendu",
   "sodium.extras.options.fastchest.title": "Użyj szybkich skrzyń",
