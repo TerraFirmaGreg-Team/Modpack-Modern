@@ -272,6 +272,12 @@ const registerWoodStructBlockTags = (event) =>
                     })
                 })
             });
+
+            //Ensure the hanging signs blocks are mineable 
+            global.TFC_EQUIPMENT_METALS.forEach(metal =>
+            {
+                event.add(`minecraft:mineable/axe`, `${woodType.modName}:wood/hanging_sign/${metal}/${woodType.name}`);
+            });
         }
         catch(ex)
         {
