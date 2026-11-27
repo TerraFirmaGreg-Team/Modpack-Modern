@@ -72,6 +72,22 @@ function registerTFGBasicProcessingFoodRecipes(event) {
 		itemOutputs: ['firmalife:food/soy_mixture'],
 		itemOutputProvider: TFC.isp.of('firmalife:food/soy_mixture').copyFood()
 	});
+	
+	event.recipes.tfg.copper_pot()
+		.itemInputs('tfc:food/soybean', 'gtceu:small_salt_dust')
+		.fluidInputs('#tfg:clean_water 50')
+		.itemOutputs(TFC.isp.of('firmalife:food/soy_mixture').copyFood())
+		.duration(100)
+		.temperature(100)
+		.id('tfg:copper_pot/soy_mixture_from_water');
+	
+	event.recipes.tfg.copper_pot()
+		.itemInputs('tfc:food/soybean')
+		.fluidInputs('tfc:salt_water 50')
+		.itemOutputs(TFC.isp.of('firmalife:food/soy_mixture').copyFood())
+		.duration(100)
+		.temperature(100)
+		.id('tfg:copper_pot/soy_mixture_from_sea_water');
 
 	//#endregion
 	//#region Olive Processing
@@ -88,6 +104,14 @@ function registerTFGBasicProcessingFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of('2x tfc:olive_paste'),
 		circuit: 3
 	});
+
+	event.recipes.tfg.copper_pot()
+		.itemInputs('tfc:olive_paste')
+		.fluidInputs('#tfg:clean_water 200')
+		.fluidOutputs('tfc:olive_oil_water 200')
+		.duration(200)
+		.temperature(100)
+		.id('tfg:copper_pot/olive_oil_water');
 
 	event.recipes.gtceu.mixer('tfg:tfc/olive_oil_water')
 		.inputFluids(Fluid.of('water', 200))
@@ -172,7 +196,7 @@ function registerTFGBasicProcessingFoodRecipes(event) {
 	});
 	
 	global.generateFoodCookingRecipes(event, '#forge:eggs', 'tfc:food/cooked_egg', true, true, false, 1);
-	global.generateWaterBoilingFoodRecipes(event, '#forge:eggs', 'tfc:food/boiled_egg', true, false, true, 2);
+	global.generateWaterBoilingFoodRecipes(event, '#forge:eggs', 'tfc:food/boiled_egg', true, true, true, 2);
 
 	//#endregion
 	//#region Fruit Processing
@@ -227,6 +251,132 @@ function registerTFGBasicProcessingFoodRecipes(event) {
 	});
 
 	//#endregion
+	//#region Sugar Refining
+	event.remove({id: 'firmalife:pot/beet_sugar'});
+	event.remove({id: 'firmalife:pot/beet_sugar_freshwater'});
+
+	// Sugar Water
+	event.recipes.tfg.copper_pot()
+		.itemInputs('#tfc:sweetener')
+		.fluidInputs('#tfg:clean_water 2000')
+		.fluidOutputs('firmalife:sugar_water 2000')
+		.tool('firmalife:spoon')
+		.duration(200)
+		.temperature(300)
+		.id('tfg:copper_pot/sugar_water');
+	
+	// Sugar Water From Sugarcane
+	event.recipes.tfg.copper_pot()
+		.itemInputs('tfc:food/sugarcane')
+		.fluidOutputs('firmalife:sugar_water 2000')
+		.attachment('press', x => x.circuit(1))
+		.duration(200)
+		.id('tfg:copper_pot/sugar_water_from_sugarcane');
+
+	// Sugar Water From Beets
+	event.recipes.tfg.copper_pot()
+		.itemInputs('tfc:food/beet')
+		.fluidInputs('tfc:salt_water 200')
+		.fluidOutputs('firmalife:sugar_water 1000')
+		.duration(300)
+		.temperature(200)
+		.id('tfg:copper_pot/sugar_water_from_beets');
+	
+	// Sugar From Sugar Water
+	event.recipes.tfg.copper_pot()
+		.fluidInputs('firmalife:sugar_water 2000')
+		.itemOutputs('minecraft:sugar')
+		.attachment('condenser', x => x
+            .fluidOutput('minecraft:water 1000')
+        )
+		.duration(400)
+		.temperature(100)
+		.id('tfg:copper_pot/sugar_from_sugar_water');
+
+	// Syrup Concentration
+	/**
+	 * Generates concentration recipes converting raw sap fluid into syrup fluid and crystallized sugar.
+	 *
+	 * @param {Fluid} sapFluidId Fluid ID of the raw sap fluid.
+	 * @param {Fluid} syrupFluidId Fluid ID of the syrup fluid.
+	 * @param {Item} sugarId Item ID of the sugar item.
+	 * @returns {void}
+	 */
+	function generateSyrupConcentrationRecipes(sapFluidId, syrupFluidId, sugarId) {
+
+		if (sapFluidId != null && syrupFluidId != null) {
+			let sapIdSuffix = global.linuxUnfucker(`${sapFluidId}_to_${syrupFluidId}`);
+
+			event.recipes.tfg.copper_pot()
+				.fluidInputs(`${sapFluidId} 200`)
+				.fluidOutputs(`${syrupFluidId} 50`)
+				.duration(100)
+				.temperature(200)
+				.id(`tfg:copper_pot/${sapIdSuffix}`);
+				
+			event.recipes.gtceu.fluid_heater(`tfg:${sapIdSuffix}`)
+				.inputFluids(Fluid.of(sapFluidId, 200))
+				.outputFluids(Fluid.of(syrupFluidId, 50))
+				.duration(100)
+				.EUt(GTValues.VA[GTValues.ULV]);
+		}
+
+		if (syrupFluidId != null && sugarId != null) {
+			let sugarIdSuffix = global.linuxUnfucker(`${syrupFluidId}_to_${sugarId}`);
+
+			event.recipes.tfg.copper_pot()
+				.fluidInputs(`${syrupFluidId} 100`)
+				.itemOutputs(sugarId)
+				.attachment('condenser', x => x
+					.fluidOutput('minecraft:water 50')
+				)
+				.duration(400)
+				.temperature(100)
+				.id(`tfg:copper_pot/${sugarIdSuffix}`);
+				
+			event.recipes.gtceu.fluid_solidifier(`tfg:${sugarIdSuffix}`)
+				.inputFluids(Fluid.of(syrupFluidId, 100))
+				.itemOutputs(sugarId)
+				.duration(400)
+				.EUt(GTValues.VHA[GTValues.ULV]);
+		}
+	};
+
+	/**
+	 * @typedef {Object} SapConcentrateEntry
+	 * @property {Fluid} sapFluid Raw sap fluid ID.
+	 * @property {Fluid} syrupFluid Syrup fluid ID.
+	 * @property {Item} sugar Sugar item ID.
+	 */
+
+	/**
+	 * Mapping of tree types to their sap, syrup, and sugar IDs.
+	 * @type {Record<string, SapConcentrateEntry>}
+	 */
+	const sapConcentrates = {
+		maple: {sapFluid: 'afc:maple_sap', syrupFluid: 'afc:maple_syrup', sugar: 'afc:maple_sugar'},
+		birch: {sapFluid: 'afc:birch_sap', syrupFluid: 'afc:birch_syrup', sugar: 'afc:birch_sugar'}
+	};
+	Object.values(sapConcentrates).forEach(saps => {
+		generateSyrupConcentrationRecipes(saps.sapFluid, saps.syrupFluid, saps.sugar);
+	});
+
+
+	//#endregion
+	//#region Salt Refining
+
+	// Sea Water Condensing
+	event.recipes.tfg.copper_pot()
+		.fluidInputs('tfc:salt_water 625')
+		.itemOutputs(ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.Salt, 1))
+		.attachment('condenser', x => x
+            .fluidOutput('minecraft:water 500')
+        )
+		.duration(200)
+		.temperature(100)
+		.id('tfg:copper_pot/salt_from_salt_water');
+
+	//#endregion
 	//#region Chemicals
 
 	// Crude Gelatin
@@ -239,13 +389,13 @@ function registerTFGBasicProcessingFoodRecipes(event) {
 		.itemOutput(TFC.isp.of('tfg:food/crude_gelatin').resetFood()
 	).id('tfg:pot/bone_meal_boiled_into_crude_gelatin');
 
-	event.recipes.firmalife.vat()
-		.inputFluid(TFC.fluidStackIngredient('#tfg:clean_water', 1000))
-		.inputItem('5x minecraft:bone_meal')
-		.outputItem(TFC.isp.of('tfg:food/crude_gelatin').resetFood())
-		.length(100)
+	event.recipes.tfg.copper_pot()
+		.itemInputs('5x minecraft:bone_meal')
+		.fluidInputs('#tfg:clean_water 1000')
+		.itemOutputs(TFC.isp.of('tfg:food/crude_gelatin').resetFood())
+		.duration(300)
 		.temperature(200)
-		.id('tfg:vat/bone_meal_boiled_into_crude_gelatin');
+		.id('tfg:copper_pot/bone_meal_boiled_into_crude_gelatin');
 
 	global.registerFoodRecipe(event, 'food_oven', 'bone_meal_boiled_into_crude_gelatin', 100, 8, '', {
 		circuit: 1,
@@ -293,8 +443,4 @@ function registerTFGBasicProcessingFoodRecipes(event) {
 	});
 
 	//#endregion
-		
-	event.recipes.firmalife.stomping('minecraft:sugar', 'firmalife:raw_honey',
-		'minecraft:block/honey_block_bottom', 'minecraft:block/snow', 'minecraft:entity.slime.squish')
-		.id('tfg:stomping/honey_to_sugar')
 };
