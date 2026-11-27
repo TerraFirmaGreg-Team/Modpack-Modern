@@ -213,7 +213,7 @@ function registerTFGAppliancesRecipes(event) {
 	}).id('tfg:shaped/fire_box_top_oven');
 
 	// Melting
-	addTFCMelting(event, 'tfg:fire_box', GTMaterials.Steel, 144 * 3.5, 'fire_box_top_oven');
+	addTFCMelting(event, 'tfg:fire_box_top_oven', GTMaterials.Steel, 144 * 3.5, 'fire_box_top_oven');
 	// Recycling
 	TFGHelpers.registerMaterialInfo('tfg:fire_box_top_oven', [GTMaterials.Steel, 5.5, GTMaterials.Iron, 2, GTMaterials.get('tfg:refractory_clay'), 2]);
 
