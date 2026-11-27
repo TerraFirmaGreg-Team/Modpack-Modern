@@ -74,7 +74,7 @@ const registerWoodStructRecipes = (event) =>
                         event.recipes.greate.pressing(woodType.railways_data.incomplete_track, woodType.railways_data.incomplete_track),
                     ]).transitionalItem(woodType.railways_data.incomplete_track).loops(2).id(`tfg:railways/sequenced_assembly/track_create_${woodType.name}`)
 
-                    event.recipes.gtceu.assembler(`tfg/railways/track_${woodType.name}`)
+                    event.recipes.gtceu.assembler(`tfg:railways/track_${woodType.name}`)
                         .itemInputs(`3x ${woodType.slab}`, '2x #tfg:track_rods')
                         .inputFluids(Fluid.of('gtceu:concrete', 144))
                         .itemOutputs(`32x ${woodType.railways_data.track}`)
@@ -102,7 +102,7 @@ const registerWoodStructRecipes = (event) =>
                         event.recipes.greate.pressing(woodType.railways_data.incomplete_track_narrow, woodType.railways_data.incomplete_track_narrow),
                     ]).transitionalItem(woodType.railways_data.incomplete_track_narrow).loops(2).id(`tfg:railways/sequenced_assembly/track_create_${woodType.name}_narrow`)
 
-                    event.recipes.gtceu.assembler(`tfg/railways/track_create_${woodType.name}_narrow`)
+                    event.recipes.gtceu.assembler(`tfg:railways/track_create_${woodType.name}_narrow`)
                         .itemInputs(woodType.slab, '2x #tfg:track_rods')
                         .inputFluids(Fluid.of('gtceu:concrete', 144))
                         .itemOutputs(`32x ${woodType.railways_data.track_narrow}`)
@@ -131,7 +131,7 @@ const registerWoodStructRecipes = (event) =>
                     event.recipes.greate.pressing(woodType.railways_data.incomplete_track_wide, woodType.railways_data.incomplete_track_wide)
                 ]).transitionalItem(woodType.railways_data.incomplete_track_wide).loops(2).id(`tfg:railways/sequenced_assembly/track_create_${woodType.name}_wide`)
 
-                event.recipes.gtceu.assembler(`tfg/railways/track_${woodType.name}_wide`)
+                event.recipes.gtceu.assembler(`tfg:railways/track_${woodType.name}_wide`)
                     .itemInputs(`5x ${woodType.slab}`, '2x #tfg:track_rods')
                     .inputFluids(Fluid.of('gtceu:concrete', 144))
                     .itemOutputs(`32x ${woodType.railways_data.track_wide}`)
