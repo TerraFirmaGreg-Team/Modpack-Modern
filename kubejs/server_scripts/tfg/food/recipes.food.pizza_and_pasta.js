@@ -7,7 +7,7 @@ function registerTFGPizzaAndPastaFoodRecipes(event) {
 
 	//#region Pizza
 
-	// Raw Pizza.
+	// Raw Pizza
 	for (let i = 0; i <= 2; i++) {
 		let itemInputs = [`firmalife:food/pizza_dough`, `firmalife:food/tomato_sauce`, `firmalife:food/shredded_cheese`];
 
@@ -24,15 +24,13 @@ function registerTFGPizzaAndPastaFoodRecipes(event) {
 		);
 	};
 
-	// Pizza Dough.
-	global.processorRecipe(event, "pizza_dough", 300, 16, {
-		itemInputs: ['firmalife:spice/basil_leaves', '#tfc:foods/dough', 'gtceu:small_salt_dust'],
-		fluidInputs: ['#firmalife:oils 100'],
-		itemOutputs: ['4x firmalife:food/pizza_dough'],
-		itemOutputProvider: TFC.isp.of("4x firmalife:food/pizza_dough").resetFood()
-	});
+	// Pizza Dough
+	global.generateMixingFoodRecipes(event, 
+		['firmalife:spice/basil_leaves', '#tfc:foods/dough', 'gtceu:small_salt_dust'], '#firmalife:oils 100', null, '4x firmalife:food/pizza_dough', 
+		false, true, true, null,
+	);
 
-	// Cooking Pizza.
+	// Cooking Pizza
 	global.generateFoodCookingRecipes(event, 'firmalife:food/raw_pizza', 'firmalife:food/cooked_pizza', true, false, true, null, true);
 
 	//#endregion
@@ -40,16 +38,40 @@ function registerTFGPizzaAndPastaFoodRecipes(event) {
 
 	event.remove({ id: 'firmalife:mixing_bowl/egg_noodles' });
 
-	global.generateMixingFoodRecipes(event, 
-		['#forge:eggs', 'gtceu:small_salt_dust', '#tfc:foods/flour'],
-		'#tfc:milks 1000', null, 'firmalife:food/raw_egg_noodles'
-	);
+	// Egg Noodles
+	event.recipes.tfg.copper_pot()
+		.itemInputs('firmalife:food/hardtack_dough', '#forge:eggs')
+		.fluidInputs('#tfc:milks 500')
+		.itemOutputs(TFC.isp.of('2x firmalife:food/raw_egg_noodles').copyOldestFood())
+		.catalyst('gtceu:wire_extruder_mold', 0)
+		.duration(400)
+		.attachment('press', x => x)
+		.id('tfg:copper_pot/raw_egg_noodles');
+
+	global.processorRecipe(event, 'egg_noodles', 50, 8, {
+		notConsumable: ['gtceu:wire_extruder_mold'],
+		itemInputs: ['firmalife:food/hardtack_dough', '#forge:eggs'],
+		fluidInputs: ['#tfc:milks 500'],
+		itemOutputs: ['2x firmalife:food/raw_egg_noodles'],
+		itemOutputProvider: TFC.isp.of('2x firmalife:food/raw_egg_noodles').copyOldestFood()
+	});
+
+	// Rice Noodles
+	event.recipes.tfg.copper_pot()
+		.itemInputs('gtceu:small_salt_dust', 'tfc:food/rice_dough', 'tfc:food/maize_flour')
+		.fluidInputs('#tfc:milks 500')
+		.itemOutputs(TFC.isp.of('2x firmalife:food/raw_rice_noodles').copyOldestFood())
+		.catalyst('gtceu:wire_extruder_mold', 0)
+		.duration(400)
+		.attachment('press', x => x)
+		.id('tfg:copper_pot/raw_rice_noodles');
 
 	global.processorRecipe(event, `rice_noodles`, 50, 8, {
-		itemInputs: ["tfc:food/rice_flour", 'tfc:food/maize_flour', 'gtceu:small_salt_dust'],
-		fluidInputs: ['#tfc:milks 1000'],
+		notConsumable: ['gtceu:wire_extruder_mold'],
+		itemInputs: ['tfc:food/rice_dough', 'tfc:food/maize_flour', 'gtceu:small_salt_dust'],
+		fluidInputs: ['#tfc:milks 500'],
 		itemOutputs: ['2x firmalife:food/raw_rice_noodles'],
-		itemOutputProvider: TFC.isp.of('2x firmalife:food/raw_rice_noodles').resetFood()
+		itemOutputProvider: TFC.isp.of('2x firmalife:food/raw_rice_noodles').copyOldestFood()
 	});
 	
 	global.generateWaterBoilingFoodRecipes(event, 'firmalife:food/raw_egg_noodles', 'firmalife:food/cooked_pasta', false, true, true)
@@ -88,6 +110,22 @@ function registerTFGPizzaAndPastaFoodRecipes(event) {
 		 	)
 	});
 	
+	event.recipes.tfg.copper_pot()
+		.itemInputs('tfc:food/tomato', 'gtceu:small_salt_dust', 'tfc:food/garlic')
+		.fluidInputs('#tfg:clean_water 200')
+		.itemOutputs(TFC.isp.of('5x firmalife:food/tomato_sauce').copyOldestFood())
+		.duration(300)
+		.temperature(100)
+		.id('tfg:copper_pot/tomato_sauce');
+	
+	event.recipes.tfg.copper_pot()
+		.itemInputs('firmalife:food/tomato_sauce_mix')
+		.fluidInputs('#tfg:clean_water 200')
+		.itemOutputs(TFC.isp.of('firmalife:food/tomato_sauce').copyFood())
+		.duration(100)
+		.temperature(100)
+		.id('tfg:copper_pot/tomato_sauce_from_mix');
+
 	global.processorRecipe(event, 'tomato_sauce', 300, 8, {
 		circuit: 1,
 		itemInputs: ['tfc:food/tomato', 'gtceu:small_salt_dust', 'tfc:food/garlic'],
