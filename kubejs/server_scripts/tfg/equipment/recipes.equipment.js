@@ -8,12 +8,13 @@ function registerTFGEquipmentRecipes(event) {
 		.inputs('tfchotornot:mittens', Fluid.of('tfc:vinegar', 1000))
 		.id('tfg:sealed_barrel/prepared_leather_gloves')
 
-	event.recipes.firmalife.vat()
-		.outputItem('tfg:latex_soaked_gloves')
-		.inputs('tfg:prepared_leather_gloves', Fluid.of('tfg:vulcanized_latex', 1000))
-		.length(300)
+	event.recipes.tfg.copper_pot()
+		.itemInputs('tfg:prepared_leather_gloves')
+		.fluidInputs('tfg:vulcanized_latex 1000')
+		.itemOutputs('tfg:latex_soaked_gloves')
+		.duration(300)
 		.temperature(200)
-		.id('tfg:vat/latex_soaked_gloves')
+		.id('tfg:copper_pot/latex_soaked_gloves');
 
 	event.recipes.firmalife.oven('tfg:latex_soaked_gloves', 120, 1200, 'gtceu:rubber_gloves')
 		.id('tfg:oven/rubber_gloves')

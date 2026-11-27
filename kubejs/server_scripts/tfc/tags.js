@@ -70,7 +70,6 @@ function registerTFCItemTags(event) {
 		"waterflasks:iron_flask",
 		"waterflasks:red_steel_flask",
 		"tfc:wool_cloth",
-		"firmalife:mixing_bowl",
 		"#gtceu:molds",
 		"#gtceu:molds",
 		"create:wrench",

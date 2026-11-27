@@ -118,23 +118,30 @@ function registerTFGPapermakingRecipes(event) {
 		.id('tfg:quern/soaked_hardwood_strip')
 
 	//Cook hardwood dust in lye
-	event.recipes.firmalife.vat()
-		.inputItem('gtceu:hardwood_dust')
-		.inputFluid(Fluid.of('tfc:lye', 300))
-		.outputItem('gtceu:thermochemically_treated_hardwood_dust')
-		.id('tfg:vat/thermochemically_treat_hardwood_dust')
+	
+	event.recipes.tfg.copper_pot()
+		.itemInputs('gtceu:hardwood_dust')
+		.fluidInputs('tfc:lye 300')
+		.itemOutputs('gtceu:thermochemically_treated_hardwood_dust')
+		.duration(300)
+		.temperature(100)
+		.id('tfg:copper_pot/thermochemically_treat_hardwood_dust');
 
-	event.recipes.firmalife.vat()
-		.inputItem('gtceu:small_hardwood_dust')
-		.inputFluid(Fluid.of('tfc:lye', 75))
-		.outputItem('gtceu:small_thermochemically_treated_hardwood_dust')
-		.id('tfg:vat/thermochemically_treat_small_hardwood_dust')
+	event.recipes.tfg.copper_pot()
+		.itemInputs('gtceu:small_hardwood_dust')
+		.fluidInputs('tfc:lye 75')
+		.itemOutputs('gtceu:small_thermochemically_treated_hardwood_dust')
+		.duration(300)
+		.temperature(100)
+		.id('tfg:copper_pot/thermochemically_treat_small_hardwood_dust');
 
-	event.recipes.firmalife.vat()
-		.inputItem('gtceu:tiny_hardwood_dust')
-		.inputFluid(Fluid.of('tfc:lye', 33))
-		.outputItem('gtceu:tiny_thermochemically_treated_hardwood_dust')
-		.id('tfg:vat/thermochemically_treat_tiny_hardwood_dust')
+	event.recipes.tfg.copper_pot()
+		.itemInputs('gtceu:tiny_hardwood_dust')
+		.fluidInputs('tfc:lye 33')
+		.itemOutputs('gtceu:tiny_thermochemically_treated_hardwood_dust')
+		.duration(300)
+		.temperature(100)
+		.id('tfg:copper_pot/thermochemically_treat_tiny_hardwood_dust');
 	
 	generatePotRecipe('thermochemically_treat_hardwood_dust', 3, 'gtceu:hardwood_dust', 'tfc:lye', 300, 'gtceu:thermochemically_treated_hardwood_dust', 600, 300)
 	generatePotRecipe('thermochemically_treat_small_hardwood_dust', 5, 'gtceu:small_hardwood_dust', 'tfc:lye', 75, 'gtceu:small_thermochemically_treated_hardwood_dust', 600, 300)
@@ -150,6 +157,13 @@ function registerTFGPapermakingRecipes(event) {
 	event.recipes.greate.pressing(Item.of('tfg:soaked_unrefined_paper'), 'gtceu:thermochemically_treated_hardwood_dust')
 		.recipeTier(0)
 		.id('greate:pressing/soaked_unrefined_paper')
+
+	event.recipes.tfg.copper_pot()
+		.itemInputs('gtceu:thermochemically_treated_hardwood_dust')
+		.itemOutputs('tfg:soaked_unrefined_paper')
+		.attachment('press', x => x)
+		.duration(200)
+		.id('tfg:copper_pot/soaked_unrefined_paper');
 
 	event.recipes.firmalife.stomping('tfg:soaked_unrefined_paper', "gtceu:thermochemically_treated_hardwood_dust",
 		'tfg:block/thermochemically_treated_hardwood_dust', 'tfg:block/soaked_unrefined_paper', 'minecraft:entity.slime.squish')

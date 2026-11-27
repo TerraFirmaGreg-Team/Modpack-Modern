@@ -40,12 +40,12 @@ function registerTFGMarsIodineRecipes(event) {
 		.duration(20 * 60)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	event.recipes.firmalife.vat()
-		.inputs('tfg:dry_ice', Fluid.of('tfg:crimsene', 200))
-		.outputItem('tfg:crimsene_gem')
-		.length(300)
-		.temperature(100)
-		.id('tfg:vat/crimsene')
+	event.recipes.tfg.copper_pot()
+		.itemInputs('tfg:dry_ice')
+		.fluidInputs('tfg:crimsene 200')
+		.itemOutputs('tfg:crimsene_gem')
+		.duration(300)
+		.id('tfg:copper_pot/crimsene');
 
 	event.recipes.gtceu.autoclave('tfg:warpane')
 		.inputFluids(Fluid.of('tfg:warpane', 144), Fluid.of('gtceu:liquid_carbon_dioxide', 1000))
@@ -54,12 +54,12 @@ function registerTFGMarsIodineRecipes(event) {
 		.duration(20 * 60)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	event.recipes.firmalife.vat()
-		.inputs('tfg:dry_ice', Fluid.of('tfg:warpane', 200))
-		.outputItem('tfg:warpane_gem')
-		.length(300)
-		.temperature(100)
-		.id('tfg:vat/warpane')
+	event.recipes.tfg.copper_pot()
+		.itemInputs('tfg:dry_ice')
+		.fluidInputs('tfg:warpane 200')
+		.itemOutputs('tfg:warpane_gem')
+		.duration(300)
+		.id('tfg:copper_pot/warpane');
 
 	event.recipes.gtceu.macerator('tfg:crimsene')
 		.itemInputs('#forge:gems/crimsene')

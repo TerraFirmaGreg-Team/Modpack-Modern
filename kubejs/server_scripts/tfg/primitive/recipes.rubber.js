@@ -87,16 +87,22 @@ function registerTFGRubberRecipes(event) {
 	event.recipes.tfc.pot('tfc:powder/wood_ash', Fluid.of('tfg:conifer_pitch', 1000), 1200, 300)
 		.itemOutput('gtceu:sticky_resin')
 		.id('tfg:pot/sticky_resin_from_conifer_pitch')
-
-	event.recipes.firmalife.vat()
-		.inputs('tfc:powder/wood_ash', Fluid.of('tfg:latex', 1000))
-		.outputItem('gtceu:sticky_resin')
-		.id('tfg:vat/latex_to_sticky_resin');
-
-	event.recipes.firmalife.vat()
-		.inputs('tfc:powder/wood_ash', Fluid.of('tfg:conifer_pitch', 1000))
-		.outputItem('gtceu:sticky_resin')
-		.id('tfg:vat/conifer_pitch_to_sticky_resin');
+		
+	event.recipes.tfg.copper_pot()
+		.itemInputs('tfc:powder/wood_ash')
+		.fluidInputs('tfg:latex 1000')
+		.itemOutputs('gtceu:sticky_resin')
+		.duration(200)
+		.temperature(100)
+		.id('tfg:copper_pot/latex_to_sticky_resin');
+		
+	event.recipes.tfg.copper_pot()
+		.itemInputs('tfc:powder/wood_ash')
+		.fluidInputs('tfg:conifer_pitch 1000')
+		.itemOutputs('gtceu:sticky_resin')
+		.duration(200)
+		.temperature(100)
+		.id('tfg:copper_pot/conifer_pitch_to_sticky_resin');
 	
 	event.recipes.greate.mixing('gtceu:sticky_resin', [Fluid.of('tfg:latex', 1000), 'tfc:powder/wood_ash'])
 		.recipeTier(1)
@@ -133,12 +139,13 @@ function registerTFGRubberRecipes(event) {
 		.fluidOutput(Fluid.of('tfg:vulcanized_latex', 1000))
 		.id('tfg:pot/vulcanized_latex')
 
-	event.recipes.firmalife.vat()
-		.inputs('gtceu:small_sulfur_dust', Fluid.of('tfg:latex', 1000))
-		.outputFluid(Fluid.of('tfg:vulcanized_latex', 1000))
-		.length(300)
+	event.recipes.tfg.copper_pot()
+		.itemInputs('gtceu:small_sulfur_dust')
+		.fluidInputs('tfg:latex 1000')
+		.fluidOutputs('tfg:vulcanized_latex 1000')
+		.duration(300)
 		.temperature(300)
-		.id('tfg:vat/vulcanized_latex')
+		.id('tfg:copper_pot/vulcanized_latex');
 
 	event.recipes.gtceu.chemical_reactor('tfg:latex_to_vulcanized_latex')
 		.duration(100)

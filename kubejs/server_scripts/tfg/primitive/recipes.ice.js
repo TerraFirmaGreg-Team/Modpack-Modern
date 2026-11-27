@@ -92,11 +92,12 @@ function registerTFGIceRecipes(event) {
 	event.recipes.tfc.pot([], Fluid.of('gtceu:ice', 144), 300, 100)
 		.fluidOutput(Fluid.of('minecraft:water', 144))
 
-	event.recipes.firmalife.vat()
-		.inputFluid(Fluid.of('gtceu:ice', 144))
-		.outputFluid(Fluid.of('minecraft:water', 144))
-		.length(300)
+	event.recipes.tfg.copper_pot()
+		.fluidInputs('gtceu:ice 144')
+		.fluidOutputs('minecraft:water 144')
+		.duration(300)
 		.temperature(100)
+		.id('tfg:copper_pot/ice_melting');
 
 	// Snow
 	event.recipes.firmalife.stomping('minecraft:snow', 'minecraft:snowball',
