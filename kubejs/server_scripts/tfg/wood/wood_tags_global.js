@@ -123,6 +123,12 @@ const registerWoodStructItemTags = (event) =>{
                     event.add(`tfg:hanging_sign/${metal}/${tagSuffix}`, `${woodType.modName}:wood/hanging_sign/${metal}/${woodType.name}`);
                 })
             })
+
+            //We're putting this tag assignment here instead of the foreach above, as we want this tag to be present regardless of wood kind.
+            global.TFC_EQUIPMENT_METALS.forEach(metal =>
+            {
+                event.add(`minecraft:hanging_signs`, `${woodType.modName}:wood/hanging_sign/${metal}/${woodType.name}`);
+            });
     
             global.invokeIfValid(woodType.tree_data, () =>
             {
