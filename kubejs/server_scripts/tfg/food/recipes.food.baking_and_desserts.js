@@ -218,9 +218,6 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 	//#endregion
 	//#region Ice Cream
 
-
-	event.remove({ id: 'firmalife:mixing_bowl/chocolate_ice_cream' });
-
 	// Vanilla Ice Cream
 	global.generateMixingFoodRecipes(event, 
 		['firmalife:ice_shavings', '#tfc:sweetener', 'firmalife:spice/vanilla'], 'firmalife:cream 1000', null, '2x firmalife:food/vanilla_ice_cream', 

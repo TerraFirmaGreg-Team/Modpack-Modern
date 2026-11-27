@@ -14,6 +14,11 @@
     "quests.metal_age.copper_construction_wand.subtitle": "Building made easy!",
     "quests.metal_age.copper_construction_wand.desc": "Construction Wands are an easy way to place many blocks at the same time. Simply right-click a block while holding the wand and it will place more of that block all at once, making it great for floors, walls, and so on.\n\nPress &aU&r on the construction wand to bring up a page detailing its instructions.",
 
+    "quests.metal_age.copper_pot.title": "Copper Pot",
+    "quests.metal_age.copper_pot.subtitle": "Just don't think about the melting temp too much...",
+    "quests.metal_age.copper_pot.desc1": "The &6Copper Pot&r is an appliance you will become very familiar with as you progress.\nIt is capable of cooking fluids and items with a number of optional attachments, including the condenser. Many recipes will require heating the copper pot. Heat can be supplied from devices like a bottom oven or fire box.\nCopper pots will be vital in &drefining extracted sap&r from trees and it is also capable of preparing hearty meals!",
+    "quests.metal_age.copper_pot.desc2": "&3Lore:&r &o&7In older versions of &dTF&8G&r&o&7 this appliances uses were done through the Firmalife vat. The copper pot was made as a replacement to enable proper automation, food data support, and the attachments system.&r",
+
     "quests.metal_age.anvil_recycling.title": "Anvil Recycling?",
     "quests.metal_age.anvil_recycling.subtitle": "Because 14 ingots is a lot now",
     "quests.metal_age.anvil_recycling.desc": "Once you craft the next tier of Anvil (such as going from Copper to Bronze, or Bronze to Wrought Iron), the previous tier basically becomes useless.\n\nHowever, since it's made out of metal, you &ocan and should&r melt the previous tier of Anvil back into its liquid metal form!\nGrab a Vessel and place it on the right hand side of the Charcoal Forge interface, then place the Anvil and slowly heat it until it reaches the melting temperature. The molten metal will be deposited inside the Vessel, then you can cast it back into ingots or whatever you like!",
@@ -156,6 +161,10 @@
     "quests.metal_age.steel_crate.subtitle": "That's a lot of space!",
     "quests.metal_age.steel_crate.desc": "Steel Crates are a big upgrade to Bronze Crates or walls of chests, boasting a whopping &672&r inventory slots. Put five of these next to your Crafting Station and you'll have more than enough space for everything!",
 
+    "quests.metal_age.fire_box.title": "Fire Box",
+    "quests.metal_age.fire_box.subtitle": "Shouldn't it be cast iron?",
+    "quests.metal_age.fire_box.desc": "The &6Fire Box&r exists as a direct upgrade to the charcoal forge, with many benefits. Fire boxes can burn any solid fuels such as charcoal or logs. Fuels can be added manually or automatically with things like hoppers. Fire boxes can be turned on/off with redstone, and can work indoors with no sky access requirement. They also do not have the habit of setting your building on fire...\n&6Fire Box Top Ovens&r on the other hand are an upgrade to top ovens. They can fit up to 9 items, are automatable, give better preservation bonuses, and can run exclusive recipes using &3Baking Dishes&r.",
+
     "quests.metal_age.weak_steel.title": "Weak Steel Ingredients",
     "quests.metal_age.weak_steel.subtitle": "Hope you like math",
     "quests.metal_age.weak_steel.desc": "Weak Steel is one part of the necessary metals to create Black Steel. You can alloy it with 2 parts Steel, 1 part Nickel and 1 part Black Bronze.\n\nYou can check the liquid weak steel's recipe for more precise alloying percentage rates.",
@@ -255,9 +264,9 @@
     "quests.tfg_tips.greenhouse_automation.subtitle": "By your powers combined...",
     "quests.tfg_tips.greenhouse_automation.desc": "With the combination of Firmalife's &2Picker&r and &2Sweeper&r, Create's Deployers, and GregTech's Item Collectors, it's possible to completely automate your greenhouse!\n\nPickers will pull mature crops from Hydroponic Planters and Quad Planters when they receive a redstone pulse, while Sweepers will harvest mature crops from the other types in a 3x3 area around it while connected to a redstone signal.\n\nThese machines will produce loose items, but an Item Collector will suck those up in a large area around it.\n\nFrom there, pipe the seeds back into Deployers to plant them in the Planters!",
 
-    "quests.tfg_tips.oven_appliances.title": "Oven Appliances",
-    "quests.tfg_tips.oven_appliances.subtitle": "Get more out of your Ovens",
-    "quests.tfg_tips.oven_appliances.desc": "&3Oven Appliances&r are optional components that must be placed on top of &aBottom Ovens&r to receive heat. Remember you can have &cmultiple&r &aBottom Ovens&r in a single multiblock.\n\n&dWrought Iron Grill&r: Allows you to cook food at a much faster rate and provides a &cbonus&r to shelf life.\n&dVat&r: can process pot recipes in bulk! Extremely useful for making &eLatex&r and &aJam.&r\n&dJarring Station&r: must be placed next to a &bVat&r, fills up jars with &aJam.&r",
+    "quests.tfg_tips.oven_appliances.title": "Grill",
+    "quests.tfg_tips.oven_appliances.subtitle": "If it ain't a gas burner with propane it ain't real grilling.",
+    "quests.tfg_tips.oven_appliances.desc": "&6Grills&r are cooking appliances which may be attached to fire-pits or on top of heating devices like bottom ovens. When food is cooked on them they gain a substantial buff to their preservation. Up to 5 items may be cooked at a time on one.",
 
     "quests.metal_age.schematicannon.subtitle": "Now made with real cannons!",
     "quests.metal_age.schematicannon.desc": "The &6Schematicannon&r is an automatic building machine that will place blocks according to a given schematic. You can use it to transfer buildings made in a creative world, or to copy and paste segments of your structures."

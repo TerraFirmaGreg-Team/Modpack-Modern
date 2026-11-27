@@ -163,8 +163,8 @@
 			id: "67B499A4DFF5F35A"
 			linked_quest: "2A57C41D681E4611"
 			shape: "heart"
-			x: -16.875d
-			y: -6.875d
+			x: -17.0d
+			y: -7.5d
 		}
 		{
 			id: "5789EDC5410D63AE"
@@ -188,8 +188,8 @@
 		{
 			id: "32A6A6BF942C4AB5"
 			linked_quest: "02854A3E8A5D5043"
-			x: 16.625d
-			y: -13.375d
+			x: 16.621598639455797d
+			y: -12.821768707482995d
 		}
 	]
 	quests: [
@@ -1524,7 +1524,11 @@
 			y: -12.375d
 		}
 		{
-			dependencies: ["3C48CA0DAB4EE71B"]
+			dependencies: [
+				"3C48CA0DAB4EE71B"
+				"449C0FF5F481798D"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.treetap.desc}"]
 			guide_page: "tfg:field_guide tfg:agriculture/tree_tapping"
 			id: "0CBA3C295E99D8EA"
@@ -3170,8 +3174,8 @@
 				item: "gtceu:steel_crate"
 				type: "item"
 			}]
-			x: 16.625d
-			y: -14.375d
+			x: 16.585884353741505d
+			y: -14.928911564625857d
 		}
 		{
 			dependencies: ["52DAF93E2F3D688A"]
@@ -3292,8 +3296,9 @@
 			id: "61A8220EA30E7649"
 			subtitle: "{quests.metal_age.wax_products.subtitle}"
 			tasks: [{
+				icon: "tfg:mixing_bowl"
 				id: "6E8FF139A4CEDC09"
-				item: "firmalife:mixing_bowl"
+				item: "tfg:mixing_bowl"
 				type: "item"
 			}]
 			title: "{quests.metal_age.wax_products.title}"
@@ -3374,37 +3379,24 @@
 		{
 			dependencies: ["76F88CCE8FEF27B4"]
 			description: ["{quests.tfg_tips.oven_appliances.desc}"]
-			guide_page: "tfg:field_guide tfg:cooking/cooking_methods 26"
+			guide_page: "tfg:field_guide tfg:cooking/cooking_methods 4"
 			id: "56BE73FC3D25BCCB"
 			subtitle: "{quests.tfg_tips.oven_appliances.subtitle}"
-			tasks: [
-				{
-					id: "0EA138E124A0354E"
-					item: "firmalife:vat"
-					type: "item"
-				}
-				{
-					id: "05D8CEDF02CFAF79"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
+			tasks: [{
+				id: "05D8CEDF02CFAF79"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
 						}
-						id: "tfc:wrought_iron_grill"
 					}
-					optional_task: true
-					type: "item"
+					id: "tfc:wrought_iron_grill"
 				}
-				{
-					id: "2C057752B7D4B405"
-					item: "firmalife:jarring_station"
-					optional_task: true
-					type: "item"
-				}
-			]
+				optional_task: true
+				type: "item"
+			}]
 			title: "{quests.tfg_tips.oven_appliances.title}"
 			x: 3.125d
 			y: -12.375d
@@ -3617,6 +3609,92 @@
 			title: "{quests.tfg_tips.kayak_materials.title}"
 			x: -18.875d
 			y: -0.875d
+		}
+		{
+			dependencies: ["3C48CA0DAB4EE71B"]
+			dependency_requirement: "one_completed"
+			description: [
+				"{quests.metal_age.copper_pot.desc1}"
+				"{@pagebreak}"
+				"{quests.metal_age.copper_pot.desc2}"
+			]
+			guide_page: "tfg:field_guide tfg:cooking/cooking_methods 34"
+			id: "449C0FF5F481798D"
+			subtitle: "{quests.metal_age.copper_pot.subtitle}"
+			tasks: [
+				{
+					id: "175407BD59C18B85"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfg:copper_pot"
+					}
+					type: "item"
+				}
+				{
+					id: "23F52D0BFFFAC051"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfg:condenser"
+					}
+					type: "item"
+				}
+			]
+			title: "{quests.metal_age.copper_pot.title}"
+			x: -16.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0C9B7745D812555A"]
+			dependency_requirement: "one_completed"
+			description: ["{quests.metal_age.fire_box.desc}"]
+			guide_page: "tfg:field_guide tfg:cooking/cooking_methods 15"
+			id: "33FCBACA866DEFBF"
+			subtitle: "{quests.metal_age.fire_box.subtitle}"
+			tasks: [
+				{
+					id: "6BEDE43D659C58B5"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfg:fire_box"
+					}
+					type: "item"
+				}
+				{
+					id: "0CFF9ED3F46345BC"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfg:fire_box_top_oven"
+					}
+					type: "item"
+				}
+			]
+			title: "{quests.metal_age.fire_box.title}"
+			x: 16.585884353741505d
+			y: -13.857482993197287d
 		}
 	]
 	subtitle: ["{quests.metal_age.subtitle}"]

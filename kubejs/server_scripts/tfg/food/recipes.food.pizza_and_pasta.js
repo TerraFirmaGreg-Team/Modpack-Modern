@@ -36,8 +36,6 @@ function registerTFGPizzaAndPastaFoodRecipes(event) {
 	//#endregion
 	//#region Noodles
 
-	event.remove({ id: 'firmalife:mixing_bowl/egg_noodles' });
-
 	// Egg Noodles
 	event.recipes.tfg.copper_pot()
 		.itemInputs('firmalife:food/hardtack_dough', '#forge:eggs')

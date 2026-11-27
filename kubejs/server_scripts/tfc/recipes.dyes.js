@@ -117,7 +117,6 @@ function registerTFCDyeRecipes(event) {
 		event.remove(`tfc:pot/${dye}_dye`);
 		event.remove({id: `gtceu:chemical_reactor/chemical_dye_${dye}`});
 		event.remove({id: `gtceu:large_chemical_reactor/chemical_dye_${dye}`});
-		event.remove({id: `firmalife:vat/${dye}_dye`});
 		event.remove({id: `tfc:crafting/ceramic/${dye}_unfired_vessel`});
 		event.remove({id: `tfc:crafting/ceramic/${dye}_unfired_large_vessel`});
 

@@ -28,9 +28,6 @@ const registerFirmaLifeRecipes = (event) => {
 	// Jar lid
 	event.remove({ id: 'firmalife:heating/stainless_steel_jar_lid' })
 
-	// Default Sugar Water
-	event.remove({ id: 'firmalife:vat/sugar_water' })
-
 	// Plated Blocks
 	event.remove({ id: 'firmalife:crafting/crafting/metal/block/stainless_steel' })
 	event.remove({ id: 'firmalife:crafting/metal/block/stainless_steel_slab' })
@@ -38,6 +35,10 @@ const registerFirmaLifeRecipes = (event) => {
 	event.remove({ id: 'firmalife:heating/metal/stainless_steel_block' })
 	event.remove({ id: 'firmalife:heating/metal/stainless_steel_block_slab' })
 	event.remove({ id: 'firmalife:heating/metal/stainless_steel_block_stairs' })
+
+	// Appliances
+	event.remove({ type: 'firmalife:mixing_bowl' });
+	event.remove({ type: 'firmalife:vat' });
 
 	global.TFC_DOUGHS.forEach(dough => {
 		event.remove({ id: `firmalife:crafting/${dough}_dough` })

@@ -514,15 +514,15 @@
 
     "quests.tfg_tips.create_conifer_rosin.title": "Conifer Rosin",
     "quests.tfg_tips.create_conifer_rosin.subtitle": "No, it's not Resin",
-    "quests.tfg_tips.create_conifer_rosin.desc": "&dConifer Rosin&r can be utilized as a &bWax&r, letting you create candles and other items.\n\nTo obtain conifer rosin, you need to boil &aConifer Pitch&r in a &3Vat&r mixed with &aCharcoal Powder.&r",
+    "quests.tfg_tips.create_conifer_rosin.desc": "&dConifer Rosin&r can be utilized as a &bWax&r, letting you create candles and other items.\n\nTo obtain conifer rosin, you need to boil &aConifer Pitch&r in a &3Copper Pot&r mixed with &aCharcoal Powder.&r",
 
     "quests.tfg_tips.create_sticky_resin.title": "Sticky Resin",
     "quests.tfg_tips.create_sticky_resin.subtitle": "No, it's not Rosin",
-    "quests.tfg_tips.create_sticky_resin.desc": "&dSticky Resin&r can be utilized as slime balls in some recipes. It is also key in the production of &aResin Circuits&r and &aResistors&r, which you'll need a fair bit of to advance into the &7Low Voltage&r age.\n\nTo make sticky resin, you need to boil either &aLatex&r or &aConifer Pitch&r in a &3Vat&r mixed with &aWood Ash.&r",
+    "quests.tfg_tips.create_sticky_resin.desc": "&dSticky Resin&r can be utilized as slime balls in some recipes. It is also key in the production of &aResin Circuits&r and &aResistors&r, which you'll need a fair bit of to advance into the &7Low Voltage&r age.\n\nTo make sticky resin, you need to boil either &aLatex&r or &aConifer Pitch&r in a &3Copper Pot&r mixed with &aWood Ash.&r",
 
     "quests.tfg_tips.create_tree_sugar.title": "Tree Sugar",
     "quests.tfg_tips.create_tree_sugar.subtitle": "Sweet!",
-    "quests.tfg_tips.create_tree_sugar.desc": "&dTree Sugar&r is a sugar substitute, mostly used as a food ingredient.\n\nTo make it, you'll need to boil &aTree Sap&r to get &bConcentrated Sap&r, then boil it again to get &dSyrup.&r Finally, use a workbench to turn a &bBucket of Syrup&r into &dTree sugar.&r\nKeep in mind that all these &cboiling processes require a stick&r in the &3Vat&r or &3pot.&r",
+    "quests.tfg_tips.create_tree_sugar.desc": "&dTree Sugar&r is a sugar substitute, mostly used as a food ingredient.\n\nTo make it, you'll need to boil &aTree Sap&r to get &dSyrup.&r Finally, boil the &bSyrup&r with a condenser attachment to get &dTree sugar.&r",
     "quests.tfg_tips.create_tree_sugar.task": "Maple or Birch Sugar",
 
     "quests.tfg_tips.create_rubber_ingot.title": "Rubber Ingot",
