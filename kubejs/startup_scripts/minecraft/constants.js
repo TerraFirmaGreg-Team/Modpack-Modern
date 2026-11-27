@@ -55,6 +55,51 @@ global.MINECRAFT_DYE_NAMES = [
     'black'
 ];
 
+global.DYE_MIXES = {
+    gray: ['black', 'white'],
+    light_gray: ['white', 'gray'],
+    lime: ['white', 'green'],
+    light_blue: ['white', 'blue'],
+    cyan: ['blue', 'green'],
+    purple: ['blue', 'red'],
+    magenta: ['purple', 'pink'],
+    pink: ['white', 'red'],
+    orange: ['red', 'yellow'],
+    brown: ['orange', 'black'],
+    green: ['yellow', 'blue']
+};
+
+/**
+ * Returns an Object set for input colors, input fluids, and output fluid for a dye.
+ * 
+ * For example: Supplying 'purple' will return ['blue', 'red', 'tfc:blue_dye', 'tfc:red_dye', 'tfc:purple_dye']
+ * 
+ * Use like so: `const mix = global.GetDyeMixResult(dyeName)` -> `mix.fluid1` + `mix.fluid2` = `mix.outFluid` where `outFluid` is the fluid for `dyeName`.
+ * @param {String} dye String name for a dye mix output color. (Ex. 'light_blue').
+ * @returns {Object{in1(dyeName), in2(dyeName), fluid1(in1 fluid), fluid2(in2 fluid), outFluid(dye fluid)}}
+ */
+global.getDyeMixObject = function(dye) {
+    const inputs = global.DYE_MIXES[dye];
+    if (!inputs) return null;
+
+    const [in1, in2] = inputs;
+    const fluid1 = `tfc:${in1}_dye`;
+    const fluid2 = `tfc:${in2}_dye`;
+    const outFluid = `tfc:${dye}_dye`;
+
+    if (!Fluid.exists(fluid1) || !Fluid.exists(fluid2) || !Fluid.exists(outFluid)) {
+        return null;
+    }
+
+    return {
+        in1: in1,
+        in2: in2,
+        fluid1: fluid1,
+        fluid2: fluid2,
+        outFluid: outFluid
+    };
+};
+
 global.MINECRAFT_COPPER_BLOCKS_RECIPE_COMPONENTS = [
     // Default
     {

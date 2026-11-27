@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:cooking/jam#jarring_station)Jarring Station$()$(li)$(bold)$(l:cooking/jam#shelves)Jar Shelves$()$(li)$(bold)$(l:cooking/jam#jarbnets)Jarbnets$()"
+            "text": "$(li)$(bold)$(l:cooking/jam#automating_jam)Automating Jam$()$(li)$(bold)$(l:cooking/jam#shelves)Jar Shelves$()$(li)$(bold)$(l:cooking/jam#jarbnets)Jarbnets$()"
         },
         {
             "type": "patchouli:spotlight",
@@ -17,10 +17,10 @@
         },
         {
             "type": "patchouli:spotlight",
-            "item": "firmalife:vat,firmalife:jarring_station",
-            "anchor": "jarring_station",
+            "item": "tfg:copper_pot",
+            "anchor": "automating_jam",
             "title": "Automating Jam",
-            "text": "Jam can also be mass-produced in a $(l:cooking/cooking_methods#vat)Vat$() using a $(l:cooking/cooking_methods#jarring_station)Jarring Station$(). Funnel ingredients into the vat, use redstone to close it and then extract the outputs from the jarring station."
+            "text": "Jam can also be mass-produced in a $(l:cooking/cooking_methods#copper_pot)Copper Pot$(). Add sugar water and fruit into the pot as well as a jar in the \"bowl\" slot and jam will automatically be produced."
         },
         {
             "type": "patchouli:crafting",

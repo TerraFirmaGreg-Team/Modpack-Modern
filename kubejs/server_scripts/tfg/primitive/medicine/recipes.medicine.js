@@ -17,81 +17,105 @@ function registerTFGMedicineRecipes(event) {
 		{ name: 'night_vision', extra: GTMaterials.TricalciumPhosphate, makeArrow: true },
 		{ name: 'regeneration', extra: GTMaterials.TricalciumPhosphate, makeArrow: true },
 		{ name: 'speed', extra: GTMaterials.TricalciumPhosphate, makeArrow: true }
-	]
+	];
+
+	function generatePillMixing(name, extra) {
+		let suffix, waterFluid, multiplier, typeInput;
+
+		for (let i = 0; i < 3; i++) {
+			switch (i) {
+				case 0:
+					suffix = 'spring';
+					waterFluid = Fluid.of('tfc:spring_water', 250);
+					multiplier = 1;
+					typeInput = ChemicalHelper.get(TagPrefix.dust, extra, 1);
+					break;
+				case 1:
+					suffix = 'distilled';
+					waterFluid = Fluid.of('gtceu:distilled_water', 50);
+					multiplier = 2;
+					typeInput = ChemicalHelper.get(TagPrefix.dust, extra, 1);
+					break;
+				case 2:
+					suffix = 'jellie';
+					waterFluid = null;
+					multiplier = 4;
+					typeInput = 'jellies:jellie/slime_ball/herbal';
+					break;
+			}
+
+			// Mixing Bowl Pills
+			for (const spoon of [true, false]) {
+				let spoonSuffix = spoon ? 'spoon' : 'mixer';
+
+				let a = event.recipes.tfg.mixing_bowl()
+					.id(`tfg:mixing_bowl/${name}_pill/${spoonSuffix}/${suffix}`)
+					.itemInputs(`#tfg:${name}_ingredients`, '#forge:wax', typeInput)
+					.itemOutputs(`${multiplier}x tfg:${name}_pill`)
+					.duration(200);
+
+				if (waterFluid != null) {
+					a.fluidInputs(waterFluid);
+				}
+
+				if (spoon) {
+					a.tool('firmalife:spoon');
+				} else {
+					a.attachment('mixer', x => x.circuit(4));
+				}
+			}
+			
+			// GT Mixer Pills
+			let b = event.recipes.gtceu.mixer(`tfg:${name}_pill/${suffix}`)
+				.circuit(4)
+				.itemOutputs(`${multiplier}x tfg:${name}_pill`)
+				.itemInputs(`#tfg:${name}_ingredients`, '#forge:wax', typeInput)
+				.duration(200)
+				.EUt(GTValues.VHA[GTValues.ULV])
+
+				if (waterFluid != null) {
+					b.inputFluids(waterFluid);
+				}
+
+			// Mixing Bowl Tablets
+			let c = event.recipes.tfg.mixing_bowl()
+				.id(`tfg:mixing_bowl/${name}_tablet/${suffix}`)
+				.itemInputs('gtceu:lactose_dust', `#tfg:${name}_ingredients`, typeInput)
+				.fluidInputs(Fluid.of('gtceu:wax', 144))
+        		.catalyst('gtceu:pill_casting_mold', 0)
+				.itemOutputs(`${multiplier}x tfg:${name}_tablet`)
+				.attachment('mixer', x => x
+					.rpm(32)
+					.circuit(4)
+				)
+				.duration(200);
+				
+			if (waterFluid != null) {
+				c.fluidInputs(waterFluid);
+			}
+
+			// GT Mixer Tablets
+			let d = event.recipes.gtceu.mixer(`tfg:${name}_tablet/${suffix}`)
+				.circuit(4)
+				.itemOutputs(`${multiplier}x tfg:${name}_tablet`)
+				.itemInputs('gtceu:lactose_dust', `#tfg:${name}_ingredients`, typeInput)
+				.inputFluids(Fluid.of('gtceu:wax', 144))
+				.notConsumable('gtceu:pill_casting_mold')
+				.duration(200)
+				.EUt(GTValues.VHA[GTValues.LV])
+
+				if (waterFluid != null) {
+					d.inputFluids(waterFluid);
+				}
+		};
+	};
 
 	pillTypes.forEach(type => {
-		// Regular
-		event.recipes.firmalife.mixing_bowl()
-			.ingredients(['#forge:wax', `#tfg:${type.name}_ingredients`, ChemicalHelper.get(TagPrefix.dust, type.extra, 1)], Fluid.of('tfc:spring_water', 250))
-			.outputItem(`1x tfg:${type.name}_pill`)
-			.id(`tfg:mixing_bowl/pill_${type.name}`)
 
-		event.recipes.gtceu.mixer(`tfg:gtceu/mixer/spring_water/pill_${type.name}`)
-			.circuit(4)
-			.inputFluids(Fluid.of('tfc:spring_water', 250))
-			.itemOutputs(`2x tfg:${type.name}_pill`)
-			.itemInputs('#forge:wax', `#tfg:${type.name}_ingredients`, ChemicalHelper.get(TagPrefix.dust, type.extra, 1))
-			.duration(200)
-			.EUt(GTValues.VHA[GTValues.LV])
-		event.recipes.gtceu.mixer(`tfg:gtceu/mixer/distilled_water/pill_${type.name}`)
-			.circuit(4)
-			.inputFluids(Fluid.of('gtceu:distilled_water', 50))
-			.itemOutputs(`2x tfg:${type.name}_pill`)
-			.itemInputs('#forge:wax', `#tfg:${type.name}_ingredients`, ChemicalHelper.get(TagPrefix.dust, type.extra, 1))
-			.duration(200)
-			.EUt(GTValues.VHA[GTValues.LV])
-		event.recipes.gtceu.mixer(`tfg:gtceu/mixer/spring_water/tablet_${type.name}`)
-			.circuit(4)
-			.inputFluids(Fluid.of('tfc:spring_water', 250))
-			.itemOutputs(`2x tfg:${type.name}_tablet`)
-			.notConsumable('gtceu:pill_casting_mold')
-			.itemInputs('gtceu:sodium_bicarbonate_dust', 'gtceu:lactose_dust', `#tfg:${type.name}_ingredients`, ChemicalHelper.get(TagPrefix.dust, type.extra, 1))
-			.duration(200)
-			.EUt(GTValues.VHA[GTValues.LV])
-		event.recipes.gtceu.mixer(`tfg:gtceu/mixer/distilled_water/tablet_${type.name}`)
-			.circuit(4)
-			.inputFluids(Fluid.of('gtceu:distilled_water', 50))
-			.itemOutputs(`2x tfg:${type.name}_tablet`)
-			.notConsumable('gtceu:pill_casting_mold')
-			.itemInputs('gtceu:sodium_bicarbonate_dust', 'gtceu:lactose_dust', `#tfg:${type.name}_ingredients`, ChemicalHelper.get(TagPrefix.dust, type.extra, 1))
-			.duration(200)
-			.EUt(GTValues.VHA[GTValues.LV])
-
-		// With Herbal Slime Ball
-		event.recipes.firmalife.mixing_bowl()
-			.itemIngredients(['#forge:wax', `#tfg:${type.name}_ingredients`, 'jellies:jellie/slime_ball/herbal'])
-			.outputItem(`2x tfg:${type.name}_pill`)
-			.id(`tfg:mixing_bowl/pill_${type.name}_with_herbal_slime_ball`)
-
-		event.recipes.gtceu.mixer(`tfg:gtceu/mixer/spring_water/pill_${type.name}_with_herbal_slime_ball`)
-			.circuit(4)
-			.itemOutputs(`4x tfg:${type.name}_pill`)
-			.itemInputs('#forge:wax', `#tfg:${type.name}_ingredients`, 'jellies:jellie/slime_ball/herbal')
-			.duration(200)
-			.EUt(GTValues.VHA[GTValues.LV])
-		event.recipes.gtceu.mixer(`tfg:gtceu/mixer/distilled_water/pill_${type.name}_with_herbal_slime_ball`)
-			.circuit(4)
-			.itemOutputs(`4x tfg:${type.name}_pill`)
-			.itemInputs('#forge:wax', `#tfg:${type.name}_ingredients`, 'jellies:jellie/slime_ball/herbal')
-			.duration(200)
-			.EUt(GTValues.VHA[GTValues.LV])
-		event.recipes.gtceu.mixer(`tfg:gtceu/mixer/spring_water/tablet_${type.name}_with_herbal_slime_ball`)
-			.circuit(4)
-			.itemOutputs(`4x tfg:${type.name}_tablet`)
-			.notConsumable('gtceu:pill_casting_mold')
-			.itemInputs('gtceu:sodium_bicarbonate_dust', 'gtceu:lactose_dust', `#tfg:${type.name}_ingredients`, 'jellies:jellie/slime_ball/herbal')
-			.duration(200)
-			.EUt(GTValues.VHA[GTValues.LV])
-		event.recipes.gtceu.mixer(`tfg:gtceu/mixer/distilled_water/tablet_${type.name}_with_herbal_slime_ball`)
-			.circuit(4)
-			.itemOutputs(`4x tfg:${type.name}_tablet`)
-			.notConsumable('gtceu:pill_casting_mold')
-			.itemInputs('gtceu:sodium_bicarbonate_dust', 'gtceu:lactose_dust', `#tfg:${type.name}_ingredients`, 'jellies:jellie/slime_ball/herbal')
-			.duration(200)
-			.EUt(GTValues.VHA[GTValues.LV])
+		generatePillMixing(type.name, type.extra);
 
 		// Arrow
-		if(type.makeArrow) {
+		if (type.makeArrow) {
 			event.shapeless(Item.of('8x minecraft:tipped_arrow', `{Potion:"minecraft:${type.name}"}`),
 				['4x minecraft:arrow', `tfg:${type.name}_pill`, '4x minecraft:arrow'])
 
@@ -101,7 +125,7 @@ function registerTFGMedicineRecipes(event) {
 				.itemOutputs(Item.of('16x minecraft:tipped_arrow', `{Potion:"minecraft:${type.name}"}`).strongNBT())
 				.itemInputs('16x minecraft:arrow', `tfg:${type.name}_pill`)
 				.duration(200)
-				.EUt(GTValues.VHA[GTValues.LV])
+				.EUt(GTValues.VHA[GTValues.LV]);
 
 			event.recipes.gtceu.mixer(`tfg:gtceu/mixer/arrow/${type.name}_2`)
 				.circuit(4)
@@ -109,9 +133,9 @@ function registerTFGMedicineRecipes(event) {
 				.itemOutputs(Item.of('16x minecraft:tipped_arrow', `{Potion:"minecraft:long_${type.name}"}`).strongNBT())
 				.itemInputs('16x minecraft:arrow', `tfg:${type.name}_tablet`)
 				.duration(200)
-				.EUt(GTValues.VHA[GTValues.LV])
+				.EUt(GTValues.VHA[GTValues.LV]);
 		}
-	})
+	});
 
 	//#region Salvos
 
@@ -125,33 +149,51 @@ function registerTFGMedicineRecipes(event) {
 	]
 
 	salvoTypes.forEach(type => {
-		// Regular
-		event.recipes.firmalife.mixing_bowl()
-			.ingredients(['gtceu:sticky_resin', `#tfg:${type}_ingredients`, ChemicalHelper.get(TagPrefix.dust, GTMaterials.TricalciumPhosphate, 1)], Fluid.of('gtceu:creosote', 500))
-			.outputItem(`1x tfg:${type}_salvo`)
-			.id(`tfg:mixing_bowl/${type}_salvo`)
+		
+		for (const spoon of [true, false]) {
+			let spoonSuffix = spoon ? 'spoon' : 'mixer';
 
+			// Regular
+			let a = event.recipes.tfg.mixing_bowl()
+				.itemInputs('gtceu:sticky_resin', `#tfg:${type}_ingredients`, ChemicalHelper.get(TagPrefix.dust, GTMaterials.TricalciumPhosphate, 1))
+				.fluidInputs(Fluid.of('gtceu:creosote', 500))
+				.itemOutputs(`1x tfg:${type}_salvo`)
+				.duration(200)
+				.id(`tfg:mixing_bowl/${type}_salvo/${spoonSuffix}`);
+			
+			// Jellie
+			let b = event.recipes.tfg.mixing_bowl()
+				.itemInputs('gtceu:sticky_resin', `#tfg:${type}_ingredients`, 'jellies:jellie/slime_ball/herbal')
+				.itemOutputs(`2x tfg:${type}_salvo`)
+				.duration(200)
+				.id(`tfg:mixing_bowl/${type}_salvo/jellie/${spoonSuffix}`);
+
+			if (spoon) {
+				a.tool('firmalife:spoon');
+				b.tool('firmalife:spoon');
+			} else {
+				a.attachment('mixer', x => x.circuit(4));
+				b.attachment('mixer', x => x.circuit(4));
+			}
+		};
+
+		// Regular
 		event.recipes.gtceu.mixer(`tfg:gtceu/mixer/${type}_salvo`)
 			.circuit(4)
 			.inputFluids(Fluid.of('gtceu:creosote', 500))
 			.itemOutputs(`1x tfg:${type}_salvo`)
 			.itemInputs('gtceu:sticky_resin', `#tfg:${type}_ingredients`, ChemicalHelper.get(TagPrefix.dust, GTMaterials.TricalciumPhosphate, 1))
 			.duration(200)
-			.EUt(GTValues.VHA[GTValues.LV])
+			.EUt(GTValues.VHA[GTValues.ULV])
 
-		// With Herbal Slime Ball
-		event.recipes.firmalife.mixing_bowl()
-			.itemIngredients(['gtceu:sticky_resin', `#tfg:${type}_ingredients`, 'jellies:jellie/slime_ball/herbal'])
-			.outputItem(`2x tfg:${type}_salvo`)
-			.id(`tfg:mixing_bowl/${type}_salvo_with_herbal_slime_ball`)
-
+		// Jellie
 		event.recipes.gtceu.mixer(`tfg:gtceu/mixer/${type}_salvo_with_herbal_slime_ball`)
 			.circuit(4)
 			.itemOutputs(`2x tfg:${type}_salvo`)
 			.itemInputs('gtceu:sticky_resin', `#tfg:${type}_ingredients`, 'jellies:jellie/slime_ball/herbal')
 			.duration(200)
-			.EUt(GTValues.VHA[GTValues.LV])
-	})
+			.EUt(GTValues.VHA[GTValues.ULV])
+	});
 
 	//#endregion
 
@@ -163,49 +205,70 @@ function registerTFGMedicineRecipes(event) {
 		['acrobat', 	'jump_boost', 		'slow_fall'],
 		['recovery',	'instant_health',	'regeneration'],
 		['combat',		'strength', 		'resistance']
-	]
+	];
 
 	powderTypes.forEach(type => {
-		// Rosin
-		event.recipes.firmalife.mixing_bowl()
-			.ingredients([`#tfg:${type[1]}_ingredients`, `#tfg:${type[2]}_ingredients`, 'minecraft:bone_meal'], Fluid.of('tfg:conifer_pitch', 100))
-			.outputItem(`1x tfg:${type[0]}_powder`)
-			.id(`tfg:mixing_bowl/${type[0]}_powder`)
+		for (const spoon of [true, false]) {
+			let spoonSuffix = spoon ? 'spoon' : 'mixer';
 
+			// Conifer
+			let a = event.recipes.tfg.mixing_bowl()
+				.itemInputs(`#tfg:${type[1]}_ingredients`, `#tfg:${type[2]}_ingredients`, 'minecraft:bone_meal')
+				.fluidInputs(Fluid.of('tfg:conifer_pitch', 250))
+				.itemOutputs(`1x tfg:${type[0]}_powder`)
+				.duration(200)
+				.id(`tfg:mixing_bowl/${type[0]}_powder_conifer/${spoonSuffix}`);
+
+			// Wax
+			let b = event.recipes.tfg.mixing_bowl()
+				.itemInputs(`#tfg:${type[1]}_ingredients`, `#tfg:${type[2]}_ingredients`, 'minecraft:bone_meal')
+				.fluidInputs(Fluid.of('gtceu:wax', 144))
+				.itemOutputs(`1x tfg:${type[0]}_powder`)
+				.duration(200)
+				.id(`tfg:mixing_bowl/${type[0]}_powder_wax/${spoonSuffix}`);
+
+			// Jellie
+			let c = event.recipes.tfg.mixing_bowl()
+				.itemInputs(`#tfg:${type[1]}_ingredients`, `#tfg:${type[2]}_ingredients`, 'jellies:jellie/slime_ball/herbal')
+				.itemOutputs(`2x tfg:${type[0]}_powder`)
+				.duration(200)
+				.id(`tfg:mixing_bowl/${type[0]}_powder_jellie/${spoonSuffix}`);
+
+			if (spoon) {
+				a.tool('firmalife:spoon');
+				b.tool('firmalife:spoon');
+				c.tool('firmalife:spoon');
+			} else {
+				a.attachment('mixer', x => x.circuit(4));
+				b.attachment('mixer', x => x.circuit(4));
+				c.attachment('mixer', x => x.circuit(4));
+			}
+		};
+		// Conifer
 		event.recipes.gtceu.mixer(`tfg:gtceu/mixer/${type[0]}_powder`)
 			.circuit(4)
 			.inputFluids(Fluid.of('tfg:conifer_pitch', 100))
 			.itemOutputs(`1x tfg:${type[0]}_powder`)
 			.itemInputs(`#tfg:${type[1]}_ingredients`, `#tfg:${type[2]}_ingredients`, 'minecraft:bone_meal')
 			.duration(200)
-			.EUt(GTValues.VHA[GTValues.ULV])
+			.EUt(GTValues.VHA[GTValues.ULV]);
 
 		// Wax
-		event.recipes.firmalife.mixing_bowl()
-			.itemIngredients([`#tfg:${type[1]}_ingredients`, `#tfg:${type[2]}_ingredients`, 'minecraft:bone_meal', 'gtceu:wax_nugget'])
-			.outputItem(`1x tfg:${type[0]}_powder`)
-			.id(`tfg:mixing_bowl/${type[0]}_powder_with_wax`)
-
 		event.recipes.gtceu.mixer(`tfg:gtceu/mixer/${type[0]}_powder_with_wax`)
 			.circuit(4)
 			.itemInputs(`#tfg:${type[1]}_ingredients`, `#tfg:${type[2]}_ingredients`, 'minecraft:bone_meal', 'gtceu:wax_nugget')
 			.itemOutputs(`1x tfg:${type[0]}_powder`)
 			.duration(200)
-			.EUt(GTValues.VHA[GTValues.ULV])
+			.EUt(GTValues.VHA[GTValues.ULV]);
 
-		// With Herbal Slime Ball
-		event.recipes.firmalife.mixing_bowl()
-			.itemIngredients([`#tfg:${type[1]}_ingredients`, `#tfg:${type[2]}_ingredients`, 'jellies:jellie/slime_ball/herbal'])
-			.outputItem(`2x tfg:${type[0]}_powder`)
-			.id(`tfg:mixing_bowl/${type[0]}_powder_with_herbal_slime_ball`)
-
+		// Jellie
 		event.recipes.gtceu.mixer(`tfg:gtceu/mixer/${type[0]}_powder_with_herbal_slime_ball`)
 			.circuit(4)
 			.itemOutputs(`2x tfg:${type[0]}_powder`)
 			.itemInputs(`#tfg:${type[1]}_ingredients`, `#tfg:${type[2]}_ingredients`, 'jellies:jellie/slime_ball/herbal')
 			.duration(200)
-			.EUt(GTValues.VHA[GTValues.ULV])
-	})
+			.EUt(GTValues.VHA[GTValues.ULV]);
+	});
 
 	//#endregion
 	//#region Capsules

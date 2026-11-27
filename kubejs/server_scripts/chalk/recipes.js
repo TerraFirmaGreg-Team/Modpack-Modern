@@ -58,10 +58,12 @@ const registerChalkRecipes = (event) => {
 
 
 	//Mix dusts for chalk sticks with clay to make an unfired chalk stick. Greggy or Create lets you use tiny dusts if needed
-	event.recipes.firmalife.mixing_bowl()
-		.itemIngredients(["minecraft:clay_ball", "tfg:sedimentary_carbonate_dust"])
-		.outputItem("tfg:unfired_chalk")
-		.id(`chalk:mixing_bowl/unfired_chalk_stick_from_dust`)
+	event.recipes.tfg.mixing_bowl()
+		.itemInputs('minecraft:clay_ball', 'tfg:sedimentary_carbonate_dust')
+		.itemOutputs('tfg:unfired_chalk')
+		.tool('firmalife:spoon')
+      	.duration(200)
+		.id('tfg:mixing_bowl/unfired_chalk_stick_from_dust');
 
 
 	event.recipes.tfc.heating(`tfg:unfired_chalk`, 700)

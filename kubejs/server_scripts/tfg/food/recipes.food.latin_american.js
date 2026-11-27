@@ -8,13 +8,7 @@ function registerTFGLatinAmericanFoodRecipes(event) {
 //#region Ingredients
 
 	// Nixtamal
-	global.processorRecipe(event, 'cured_maize', 300, 8, {
-		circuit: 1,
-		itemInputs: ['tfc:food/maize_grain'],
-		inputFluids: [Fluid.of('tfc:limewater', 100)],
-		itemOutputs: ['firmalife:food/cured_maize'],
-		itemOutputProvider: TFC.isp.of('firmalife:food/cured_maize').copyFood()
-	});
+	global.generateFluidBoilingFoodRecipes(event, 'tfc:limewater', 100, 'tfc:food/maize_grain', 'firmalife:food/cured_maize', false, true, true, 1);
 	
 	global.processorRecipe(event, 'nixtamal', 20*30, GTValues.VA[GTValues.ULV], {
 		itemInputs: ['firmalife:food/cured_maize'],

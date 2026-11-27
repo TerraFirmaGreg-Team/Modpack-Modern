@@ -112,19 +112,21 @@ const registerExposureRecipes = (event) => {
 		.itemOutput('tfg:pyrogallol_dust')
 		.id('tfg:pot/tannin_to_pyrogallol_soda_ash')
 
-	event.recipes.firmalife.vat()
-		.inputs('gtceu:small_saltpeter_dust', Fluid.of('tfc:tannin', 500))
-		.length(30 * 20)
+	event.recipes.tfg.copper_pot()
+		.itemInputs('gtceu:small_saltpeter_dust')
+		.fluidInputs('tfc:tannin 500')
+		.itemOutputs('tfg:pyrogallol_dust')
+		.duration(600)
 		.temperature(450)
-		.outputItem('tfg:pyrogallol_dust')
-		.id('tfg:vat/tannin_to_pyrogallol_saltpeter')
+		.id('tfg:copper_pot/tannin_to_pyrogallol_saltpeter');
 
-	event.recipes.firmalife.vat()
-		.inputs('gtceu:small_soda_ash_dust', Fluid.of('tfc:tannin', 500))
-		.length(30 * 20)
+	event.recipes.tfg.copper_pot()
+		.itemInputs('gtceu:small_soda_ash_dust')
+		.fluidInputs('tfc:tannin 500')
+		.itemOutputs('tfg:pyrogallol_dust')
+		.duration(600)
 		.temperature(450)
-		.outputItem('tfg:pyrogallol_dust')
-		.id('tfg:vat/tannin_to_soda_ash')
+		.id('tfg:copper_pot/tannin_to_pyrogallol_soda_ash');
 
 	event.recipes.gtceu.chemical_reactor('tfg:tannin_to_pyrogallol_saltpeter')
 		.itemInputs('gtceu:small_saltpeter_dust')

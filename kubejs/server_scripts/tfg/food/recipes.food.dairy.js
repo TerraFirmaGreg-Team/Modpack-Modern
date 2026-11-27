@@ -144,12 +144,11 @@ function registerTFGDairyFoodRecipes(event) {
 		.duration(1200)
 		.EUt(24);
 
-	global.processorRecipe(event, 'butter', 300, 16, {
-		itemInputs: ['gtceu:small_salt_dust'],
-		fluidInputs: [Fluid.of('firmalife:cream', 1000)],
-		itemOutputs: ['firmalife:food/butter'],
-		itemOutputProvider: TFC.isp.of('firmalife:food/butter').resetFood()
-	});
+	// Butter
+	global.generateMixingFoodRecipes(event, 
+		['gtceu:small_salt_dust'], 'firmalife:cream 1000', null, '5x firmalife:food/butter',
+		false, true, true, null,
+	);
 
 	//#endregion
 };

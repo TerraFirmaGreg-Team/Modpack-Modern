@@ -135,7 +135,7 @@
                     ],
                     "mapping": {
                         "X": "tfg:gas_burner[lit=true]",
-                        "Y": "firmalife:vat"
+                        "Y": "tfg:copper_pot"
                     }
                 }
             ],

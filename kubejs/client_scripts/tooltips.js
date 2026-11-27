@@ -445,14 +445,26 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['#tfc:fired_vessels'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "3,024"))
 	})
-	event.addAdvanced(['tfg:electric_flask'], (item, advanced, text) => {
+	event.addAdvanced(['tfg:electric_flask', 'tfg:gas_burner'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "4,000"))
 	})
 	event.addAdvanced(['waterflasks:iron_flask', 'waterflasks:red_steel_flask'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "2,000"))
 	})
-	event.addAdvanced(['tfc:wooden_bucket', 'firmalife:mixing_bowl'], (item, advanced, text) => {
+	event.addAdvanced(['tfc:wooden_bucket'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "1,000"))
+	})
+	event.addAdvanced(['tfg:mixing_bowl'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.item_storage_capacity", "3"))
+		text.add(2, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "8,000"))
+	})
+	event.addAdvanced(['tfg:copper_pot'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.item_storage_capacity", "6"))
+		text.add(2, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "12,000"))
+	})
+	event.addAdvanced(['#tfg:baking_dishes'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.item_storage_capacity", "6"))
+		text.add(2, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "1,000"))
 	})
 	event.addAdvanced(['waterflasks:leather_flask','tfc:silica_glass_bottle'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "500"))

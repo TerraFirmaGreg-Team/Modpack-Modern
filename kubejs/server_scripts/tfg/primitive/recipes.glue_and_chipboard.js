@@ -63,20 +63,46 @@ function registerTFGChipboardRecipes(event) {
 		.id('tfg:stomping/magma_cream')
 
 	// Chipboard
-	event.recipes.firmalife.mixing_bowl()
-		.itemIngredients(['#tfg:wood_dusts', '#tfg:wood_dusts', 'tfc:glue'])
-		.outputItem('2x tfg:chipboard_composite')
-		.id('tfg:mixing_bowl/chipboard_composite_glue')
+	for (const spoon of [true, false]) {
+		let spoonSuffix = spoon ? 'spoon' : 'mixer';
 
-	event.recipes.firmalife.mixing_bowl()
-		.itemIngredients(['#tfg:wood_dusts', '#tfg:wood_dusts', '#tfg:wood_dusts', '#tfg:wood_dusts', 'gtceu:sticky_resin'])
-		.outputItem('4x tfg:chipboard_composite')
-		.id('tfg:mixing_bowl/chipboard_composite_resin')
+		let a = event.recipes.tfg.mixing_bowl()
+			.itemInputs('2x #tfg:wood_dusts', 'tfc:glue')
+			.itemOutputs('2x tfg:chipboard_composite')
+			.duration(200)
+			.id(`tfg:mixing_bowl/chipboard_composite_glue/${spoonSuffix}`);
 
-	event.recipes.firmalife.mixing_bowl()
-		.itemIngredients(['#tfg:wood_dusts', '#tfg:wood_dusts', '#forge:wax'])
-		.outputItem('2x tfg:chipboard_composite')
-		.id('tfg:mixing_bowl/chipboard_composite_wax')
+		let b = event.recipes.tfg.mixing_bowl()
+			.itemInputs('4x #tfg:wood_dusts', 'gtceu:sticky_resin')
+			.itemOutputs('4x tfg:chipboard_composite')
+			.duration(400)
+			.id(`tfg:mixing_bowl/chipboard_composite_resin/${spoonSuffix}`);
+
+		let c = event.recipes.tfg.mixing_bowl()
+			.itemInputs('2x #tfg:wood_dusts', '#forge:wax')
+			.itemOutputs('2x tfg:chipboard_composite')
+			.duration(200)
+			.id(`tfg:mixing_bowl/chipboard_composite_wax/${spoonSuffix}`);
+
+		let d = event.recipes.tfg.mixing_bowl()
+			.itemInputs('#tfg:wood_dusts')
+			.itemOutputs('tfg:chipboard_composite')
+			.fluidInputs('gtceu:glue 25')
+			.duration(100)
+			.id(`tfg:mixing_bowl/chipboard_composite_liquid_glue/${spoonSuffix}`);
+			
+		if (spoon) {
+			a.tool('firmalife:spoon');
+			b.tool('firmalife:spoon');
+			c.tool('firmalife:spoon');
+			d.tool('firmalife:spoon');
+		} else {
+			a.attachment('mixer', x => x);
+			b.attachment('mixer', x => x);
+			c.attachment('mixer', x => x);
+			d.attachment('mixer', x => x);
+		}
+	}
 
 	event.recipes.gtceu.mixer('gtceu:chipboard_composite_wax')
 		.itemInputs('2x #tfg:wood_dusts',
@@ -107,20 +133,47 @@ function registerTFGChipboardRecipes(event) {
 		.EUt(GTValues.VHA[GTValues.LV])
 
 	// Pre-treated chipboard
-	event.recipes.firmalife.mixing_bowl()
-		.itemIngredients(['gtceu:treated_wood_dust', 'gtceu:treated_wood_dust', 'tfc:glue'])
-		.outputItem('2x tfg:treated_chipboard_composite')
-		.id('tfg:mixing_bowl/treated_chipboard_composite_glue')
+	
+	for (const spoon of [true, false]) {
+		let spoonSuffix = spoon ? 'spoon' : 'mixer';
 
-	event.recipes.firmalife.mixing_bowl()
-		.itemIngredients(['gtceu:treated_wood_dust', 'gtceu:treated_wood_dust', 'gtceu:treated_wood_dust', 'gtceu:treated_wood_dust', 'gtceu:sticky_resin'])
-		.outputItem('4x tfg:treated_chipboard_composite')
-		.id('tfg:mixing_bowl/treated_chipboard_composite_resin')
+		let a = event.recipes.tfg.mixing_bowl()
+			.itemInputs('2x gtceu:treated_wood_dust', 'tfc:glue')
+			.itemOutputs('2x tfg:treated_chipboard_composite')
+			.duration(200)
+			.id(`tfg:mixing_bowl/treated_chipboard_composite_glue/${spoonSuffix}`)
 
-	event.recipes.firmalife.mixing_bowl()
-		.itemIngredients(['gtceu:treated_wood_dust', 'gtceu:treated_wood_dust', '#forge:wax'])
-		.outputItem('2x tfg:treated_chipboard_composite')
-		.id('tfg:mixing_bowl/treated_chipboard_composite_wax')
+		let b = event.recipes.tfg.mixing_bowl()
+			.itemInputs('4x gtceu:treated_wood_dust', 'gtceu:sticky_resin')
+			.itemOutputs('4x tfg:treated_chipboard_composite')
+			.duration(400)
+			.id(`tfg:mixing_bowl/treated_chipboard_composite_resin/${spoonSuffix}`)
+
+		let c = event.recipes.tfg.mixing_bowl()
+			.itemInputs('2x gtceu:treated_wood_dust', '#forge:wax')
+			.itemOutputs('2x tfg:treated_chipboard_composite')
+			.duration(200)
+			.id(`tfg:mixing_bowl/treated_chipboard_composite_wax/${spoonSuffix}`)
+
+		let d = event.recipes.tfg.mixing_bowl()
+			.itemInputs('gtceu:treated_wood_dust')
+			.itemOutputs('tfg:treated_chipboard_composite')
+			.fluidInputs('gtceu:glue 25')
+			.duration(100)
+			.id(`tfg:mixing_bowl/treated_chipboard_composite_liquid_glue/${spoonSuffix}`);
+
+		if (spoon) {
+			a.tool('firmalife:spoon');
+			b.tool('firmalife:spoon');
+			c.tool('firmalife:spoon');
+			d.tool('firmalife:spoon');
+		} else {
+			a.attachment('mixer', x => x);
+			b.attachment('mixer', x => x);
+			c.attachment('mixer', x => x);
+			d.attachment('mixer', x => x);
+		}
+	};
 
 	event.recipes.gtceu.mixer('gtceu:treated_chipboard_composite_wax')
 		.itemInputs('2x gtceu:treated_wood_dust', '1x #forge:wax')

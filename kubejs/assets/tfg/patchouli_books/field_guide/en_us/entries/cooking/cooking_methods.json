@@ -7,7 +7,7 @@
             "type": "patchouli:text",
             "title": "Index",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:cooking/cooking_methods#firepit)Firepit$()$(li2)$(l:cooking/cooking_methods#grill)Grill$()$(li2)$(l:cooking/cooking_methods#pot)Pot$()$(li)$(bold)$(l:cooking/cooking_methods#oven)Ovens$()$(li2)$(l:cooking/cooking_methods#vat)Vat$()$(li2)$(l:cooking/cooking_methods#jarring_station)Jarring Station$()$(li)$(bold)$(l:cooking/cooking_methods#electric_oven)Electric Oven$()$(li)$(bold)$(l:cooking/cooking_methods#food_processor)Food Processor$()"
+            "text": "$(li)$(bold)$(l:cooking/cooking_methods#firepit)Firepit$()$(li2)$(l:cooking/cooking_methods#grill)Grill$()$(li2)$(l:cooking/cooking_methods#pot)Pot$()$(li)$(bold)$(l:cooking/cooking_methods#heat_sources)Heat Sources$()$(li2)$(l:cooking/cooking_methods#gas_burner)Gas Burner$()$(li2)$(l:cooking/cooking_methods#fire_box)Fire Box$()$(li2)$(l:cooking/cooking_methods#oven)Ovens$()$(li)$(bold)$(l:cooking/cooking_methods#appliances)Appliances$()$(li2)$(l:cooking/cooking_methods#fire_box_top_oven)Fire Box Top Oven$()$(li2)$(l:cooking/cooking_methods#copper_pot)Copper Pot$()$(li2)$(l:cooking/cooking_methods#skillet)Skillet$()$(li2)$(l:cooking/cooking_methods#baking_dish)Baking Dish$()$(li)$(bold)$(l:cooking/cooking_methods#electric_oven)Electric Oven$()$(li)$(bold)$(l:cooking/cooking_methods#food_processor)Food Processor$()"
         },
         {
             "type": "patchouli:text",
@@ -118,10 +118,32 @@
             "text": "Other pot recipes transform the items and fluid in the pot into something else. For example, boiling five $(thing)ash$() in $(thing)water$() makes $(thing)lye$()."
         },
         {
+            "title": "Heat Sources",
+            "anchor": "heat_sources",
+            "type": "patchouli:text",
+            "text": "Many cooking methods require a source of $(l:game_mechanics/heating#temps)Heat$() to run recipes. You can view the minimum temperature of a recipe in $(emi). Which heat source you use will depend on what's convenient or the recipe itself. Some cooking methods may even give better $(l:cooking/decay#table)Decay Modifiers$() than others."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "gas_burner",
+            "item": "tfg:gas_burner",
+            "title": "Gas Burner",
+            "link_recipes": false,
+            "text": "$(thing)Gas Burners$() are devices that burn liquid fuels to produce heat. They are highly adapatable, allowing you to set their maximum temperature, but only obtainable later on. Read more about them in their $(l:craftsmanship/gas_burner)Dedicated Entry$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "fire_box",
+            "item": "tfg:fire_box",
+            "title": "Fire Box",
+            "link_recipes": false,
+            "text": "A $(thing)Fire Box$() is a direct upgrade to a $(l:craftsmanship/charcoal_forge)Charcoal Forge$(). They can burn solid fuels such as logs or charcoal and support intaking air from $(l:craftsmanship/charcoal_forge#bellows)Bellows$(). They can be powered on/off with redstone and fuel can be inserted with hoppers or other item logistsic methods. Fire boxes cannot spread fire so they are safe to keep indoors."
+        },
+        {
             "title": "Ovens",
             "anchor": "oven",
             "type": "patchouli:text",
-            "text": "$(thing)Ovens$() are a great way of cooking lots of food in a way that improves their shelf life. Oven-baked food decays at 90% of the rate of regular food. Ovens are a multiblock structure consisting of a $(thing)Bottom Oven$(), $(thing)Top Oven$(), and $(thing)Chimneys$(). These blocks start off as clay, and must be $(thing)Cured$() by raising their temperature to a certain amount for long enough."
+            "text": "$(thing)Ovens$() are a great way of cooking lots of food in a way that improves their shelf life. Oven-baked food decays at ~90% of the rate of regular food. Ovens are a multiblock structure consisting of a $(thing)Bottom Oven$(), $(thing)Top Oven$(), and $(thing)Chimneys$(). These blocks start off as clay, and must be $(thing)Cured$() by raising their temperature to a certain amount for long enough."
         },
         {
             "type": "patchouli:text",
@@ -201,7 +223,7 @@
                     "0": "firmalife:stovetop_pot",
                     "1": "firmalife:oven_bottom[facing=south]",
                     "T": "firmalife:oven_top[facing=south]",
-                    "V": "firmalife:vat",
+                    "V": "tfg:copper_pot",
                     "G": "firmalife:stovetop_grill",
                     "E": "#forge:stone_bricks",
                     "C": "firmalife:oven_chimney"
@@ -260,7 +282,7 @@
                     "4": "firmalife:cured_oven_bottom[facing=south,logs=1,lit=true]",
                     "5": "firmalife:cured_oven_bottom[facing=south,lit=false]",
                     "T": "firmalife:cured_oven_top[facing=south]",
-                    "V": "firmalife:vat",
+                    "V": "tfg:copper_pot",
                     "G": "firmalife:stovetop_grill",
                     "E": "#forge:stone_bricks",
                     "C": "firmalife:cured_oven_chimney"
@@ -296,7 +318,7 @@
         {
             "type": "patchouli:multiblock",
             "name": "Insulated Oven",
-            "text": "Example of an insulated oven with appliances and a finish.$(br)Note: $(7)Vats, pots and grills count as insulating blocks.$()",
+            "text": "Example of an insulated oven with appliances and a finish.$(br)Note: $(7)Pots and grills count as insulating blocks.$()",
             "enable_visualize": false,
             "multiblock": {
                 "pattern": [
@@ -315,7 +337,7 @@
                         "   "
                     ],
                     [
-                        "JV ",
+                        " V ",
                         "FT ",
                         "H3 ",
                         "FT ",
@@ -344,8 +366,7 @@
                     "4": "firmalife:insulated_rustic_oven_bottom[facing=south,logs=1,lit=true]",
                     "5": "firmalife:insulated_rustic_oven_bottom[facing=south,lit=false]",
                     "T": "firmalife:cured_rustic_oven_top[facing=south]",
-                    "V": "firmalife:vat",
-                    "J": "firmalife:jarring_station[facing=south]",
+                    "V": "tfg:copper_pot",
                     "A": "firmalife:ashtray[stage=5]",
                     "B": "firmalife:ashtray[stage=4]",
                     "C": "firmalife:ashtray[stage=3]",
@@ -358,88 +379,558 @@
             }
         },
         {
-            "type": "patchouli:spotlight",
-            "title": "Vat",
-            "anchor": "vat",
-            "item": "firmalife:vat",
-            "text": "The $(thing)Vat$() produces boiling recipes in bulk. It has one slot for items, and 10,000mB of fluid space, similar to a barrel.$(br2)Vats can only hold one fluid type at a time. So, if you make a recipe that outputs fluids while still having leftover fluid inputs it will void those inputs!"
+            "title": "Appliances",
+            "anchor": "appliances",
+            "type": "patchouli:text",
+            "text": "$(thing)Appliances$() are devices that can be $(l:game_mechanics/heating#temps)Heated$() to run recipes. All appliances use the same system for heating which means you can mix and match which $(l:cooking/cooking_methods#heat_sources)Heat Source$() you want to use.$(li)$(bold)$(l:cooking/cooking_methods#fire_box_top_oven)Fire Box Top Oven$()$(li)$(bold)$(l:cooking/cooking_methods#copper_pot)Copper Pot$()$(li2)$(l:cooking/cooking_methods#condenser)Condenser$()$(li)$(bold)$(l:cooking/cooking_methods#skillet)Skillet$()$(bold)$(li)$(l:cooking/cooking_methods#baking_dish)Baking Dish$()"
         },
         {
-            "type": "patchouli:text",
-            "text": "To use a vat, $(item)$(k:key.use)$() it with fluids and items to add them to the inventory. With an empty hand and $(item)$(k:key.sneak)$() held, click to seal and unseal the vat. A vat will not boil until it is sealed.$(br)Vats should be placed above a $(thing)Bottom Oven$(). If the vat overflowed on completion of the recipe, it will not boil!$(br2)Vats can be automatically opened and closed with $(thing)Redstone$(), and interact with $(item)pipes$() or a $(item)Mechanical Arm$()."
+            "type": "patchouli:spotlight",
+            "anchor": "fire_box_top_oven",
+            "item": "tfg:fire_box_top_oven",
+            "title": "Fire Box Top Oven",
+            "link_recipes": false,
+            "text": "Despite its name, a $(thing)Fire Box Top Oven$() can be heated by more than just the $(l:cooking/cooking_methods#fire_box)Fire Box$().$(br)Consider this device as a mix between a $(l:cooking/cooking_methods#top_oven)Top Oven$() and a $(l:cooking/cooking_methods#grill)Grill$() while providing a better $(l:cooking/decay#table)Decay Modifier$() than either. Fire box top ovens have 9 slots instead of 4 and do not require insulation or chimneys."
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Example of an oven with a $(l:cooking/cooking_methods#vat)Vat$() and $(l:cooking/cooking_methods#jarring_station)Jarring Station$().",
+            "name": "",
+            "text": "The $(item)Fire Box Top Oven$() can spread heat to other appliances above itself and to other fire box top ovens next to itself at a loss of 300°C per transfer.",
+            "enable_visualize": false,
             "multiblocks": [
                 {
                     "pattern": [
                         [
-                            "H ",
-                            "  "
+                            "A"
                         ],
                         [
-                            "H ",
-                            "  "
+                            "B"
                         ],
                         [
-                            "HV",
-                            " J"
-                        ],
-                        [
-                            "H1",
-                            "  "
-                        ],
-                        [
-                            "  ",
-                            " 0"
+                            "0"
                         ]
                     ],
                     "mapping": {
-                        "1": "firmalife:insulated_rustic_oven_bottom[facing=south,logs=4,lit=true]",
-                        "V": "firmalife:vat[sealed=true]",
-                        "J": "firmalife:jarring_station[facing=west]",
-                        "H": "firmalife:cured_rustic_oven_chimney"
+                        "A": "tfg:fire_box_top_oven",
+                        "B": "tfg:fire_box"
                     }
                 },
                 {
                     "pattern": [
                         [
-                            "H ",
-                            "  "
+                            "A"
                         ],
                         [
-                            "H ",
-                            "  "
+                            "B"
                         ],
                         [
-                            "HV",
-                            " J"
-                        ],
-                        [
-                            "H1",
-                            "  "
-                        ],
-                        [
-                            "  ",
-                            " 0"
+                            "0"
                         ]
                     ],
                     "mapping": {
-                        "1": "firmalife:insulated_rustic_oven_bottom[facing=south,logs=4,lit=true]",
-                        "V": "firmalife:vat[sealed=false]",
-                        "J": "firmalife:jarring_station[facing=west]",
-                        "H": "firmalife:cured_rustic_oven_chimney"
+                        "A": "tfg:fire_box_top_oven",
+                        "B": "tfg:gas_burner"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "A"
+                        ],
+                        [
+                            "B"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "tfg:fire_box_top_oven",
+                        "B": "firmalife:cured_rustic_oven_bottom"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "name": "",
+            "text": "A $(item)Fire Box Top Oven$() spreading heat upward to other appliances, and sideways to more ovens.",
+            "enable_visualize": false,
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            " ",
+                            "A"
+                        ],
+                        [
+                            "A",
+                            "A"
+                        ],
+                        [
+                            " ",
+                            "B"
+                        ],
+                        [
+                            " ",
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "tfg:fire_box_top_oven",
+                        "B": "tfg:fire_box"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            " ",
+                            "C"
+                        ],
+                        [
+                            "A",
+                            "A"
+                        ],
+                        [
+                            " ",
+                            "B"
+                        ],
+                        [
+                            " ",
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "tfg:fire_box_top_oven",
+                        "B": "tfg:gas_burner",
+                        "C": "tfg:copper_pot"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            " ",
+                            "C"
+                        ],
+                        [
+                            "A",
+                            "A"
+                        ],
+                        [
+                            " ",
+                            "B"
+                        ],
+                        [
+                            " ",
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "tfg:fire_box_top_oven",
+                        "B": "firmalife:cured_rustic_oven_bottom",
+                        "C": "tfg:skillet"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "name": "",
+            "text": "Hoppers, chutes, and funnels make great early automation methods.",
+            "enable_visualize": false,
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "D",
+                            "A"
+                        ],
+                        [
+                            "A",
+                            "A"
+                        ],
+                        [
+                            "D",
+                            "B"
+                        ],
+                        [
+                            " ",
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "tfg:fire_box_top_oven",
+                        "B": "tfg:fire_box",
+                        "D": "minecraft:hopper"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "D",
+                            "C"
+                        ],
+                        [
+                            "A",
+                            "A"
+                        ],
+                        [
+                            "D",
+                            "B"
+                        ],
+                        [
+                            " ",
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "tfg:fire_box_top_oven",
+                        "B": "tfg:gas_burner",
+                        "C": "tfg:copper_pot",
+                        "D": "minecraft:hopper"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "D",
+                            "C"
+                        ],
+                        [
+                            "A",
+                            "A"
+                        ],
+                        [
+                            "D",
+                            "B"
+                        ],
+                        [
+                            " ",
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "tfg:fire_box_top_oven",
+                        "B": "firmalife:cured_rustic_oven_bottom",
+                        "C": "tfg:skillet",
+                        "D": "minecraft:hopper"
                     }
                 }
             ]
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Jarring Station",
-            "anchor": "jarring_station",
-            "item": "firmalife:jarring_station",
-            "text": "The $(thing)Jarring Station$() is used to automatically fill $(6)$(t:Empty Jar with Lid)Jars$() with the $(l:cooking/cooking_methods#vat)Vat$(). The jarring station has a spout on one side that should point to the vat.$(br)When the vat produces jam, it will automatically fill the jars with it and seal them."
+            "anchor": "copper_pot",
+            "item": "tfg:copper_pot",
+            "title": "Copper Pot",
+            "link_recipes": false,
+            "text": "The $(thing)Copper Pot$() is a versitile appliance which comes with a suite of optional attachments. Copper pots can hold multiple fluid and item inputs as well as special bowl and tool slots. When broken, the pot will retain these items for transport similar to a $(l:craftsmaship/barrels)Barrel$(). Hoppers, pipes, and other logistic methods can interact with copper pots."
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "name": "",
+            "text": "$(item)Copper Pot$() attachments are placed above the pot, usually with a 1-block gap.",
+            "enable_visualize": false,
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "C"
+                        ],
+                        [
+                            " "
+                        ],
+                        [
+                            "A"
+                        ],
+                        [
+                            "B"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "tfg:copper_pot",
+                        "B": "tfg:fire_box",
+                        "C": "greate:andesite_alloy_mechanical_mixer"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "C"
+                        ],
+                        [
+                            " "
+                        ],
+                        [
+                            "A"
+                        ],
+                        [
+                            "B"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "tfg:copper_pot",
+                        "B": "tfg:gas_burner",
+                        "C": "greate:andesite_alloy_mechanical_press"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "C"
+                        ],
+                        [
+                            " "
+                        ],
+                        [
+                            "A"
+                        ],
+                        [
+                            "B"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "tfg:copper_pot",
+                        "B": "firmalife:cured_rustic_oven_bottom",
+                        "C": "vintageimprovements:vacuum_chamber"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            " "
+                        ],
+                        [
+                            "C"
+                        ],
+                        [
+                            "A"
+                        ],
+                        [
+                            "B"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "tfg:copper_pot",
+                        "B": "firmalife:insulated_tile_oven_bottom",
+                        "C": "tfg:condenser[facing=east]"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "condenser",
+            "item": "tfg:condenser",
+            "title": "Condenser",
+            "link_recipes": false,
+            "text": "The $(thing)Condenser$() is an attachment for the $(l:cooking/cooking_methods#copper_pot)Copper Pot$() used for distilling liquids. When placed above the copper pot, running any condensing recipes will result in their vapors condensing in the top block and flowing out of the spigot face. Fluid containers, such as a $(l:craftsmanship/barrels)Barrel$() can be placed against the spigot or right below it to collect the fluid. Otherwise, it will be void."
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "name": "",
+            "text": "Some recipes will require coolants to be added to the condenser. Which can be specific fluids, or depend on their inherent temperature (K).",
+            "enable_visualize": false,
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "D",
+                            "C"
+                        ],
+                        [
+                            " ",
+                            "A"
+                        ],
+                        [
+                            " ",
+                            "B"
+                        ],
+                        [
+                            " ",
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "tfg:copper_pot",
+                        "B": "tfg:fire_box",
+                        "C": "tfg:condenser[facing=east]",
+                        "D": "gtceu:bronze_drum"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            " ",
+                            "C"
+                        ],
+                        [
+                            "D",
+                            "A"
+                        ],
+                        [
+                            " ",
+                            "B"
+                        ],
+                        [
+                            " ",
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "tfg:copper_pot",
+                        "B": "tfg:gas_burner",
+                        "C": "tfg:condenser[facing=east]",
+                        "D": "gtceu:bronze_drum"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            " ",
+                            "C"
+                        ],
+                        [
+                            " ",
+                            "A"
+                        ],
+                        [
+                            " ",
+                            "B"
+                        ],
+                        [
+                            " ",
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "tfg:copper_pot",
+                        "B": "firmalife:cured_rustic_oven_bottom",
+                        "C": "tfg:condenser[facing=east]"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "skillet",
+            "item": "tfg:skillet",
+            "title": "Skillet",
+            "link_recipes": false,
+            "text": "A $(thing)Skillet$() is a simple appliance, similar to the $(l:cooking/cooking_methods#copper_pot)Copper Pot$(), but lacking any fluid handling or attachments. Skillets support tool and bowl slots and perform simple meal assembly recipes. They do not \"cook\" items like a grill or top oven does."
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "name": "",
+            "text": "Skillets also support logistics automation like other appliances! Also, a remarkable thwacking instruments...",
+            "enable_visualize": false,
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "A"
+                        ],
+                        [
+                            "B"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "tfg:skillet",
+                        "B": "tfg:fire_box"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "A"
+                        ],
+                        [
+                            "B"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "tfg:skillet",
+                        "B": "tfg:gas_burner"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "A"
+                        ],
+                        [
+                            "B"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "tfg:skillet",
+                        "B": "firmalife:cured_rustic_oven_bottom"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "baking_dish",
+            "item": "tag:tfg:baking_dishes",
+            "title": "Baking Dishes",
+            "link_recipes": false,
+            "text": "$(thing)Baking Dishes$() are not appliances in the typical sense. You cook recipes using them by first filling them with ingredients, sealing, picking them up, and then placing them in $(l:cooking/cooking_methods#fire_box_top_oven)Fire Box Top Ovens$(). When finished cooking the output items will be found inside the dish. If the recipe produces an output fluid, any excess input fluids will be void."
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "name": "",
+            "text": "Baking dishes preserve and store items similar to a $(l:logistics/personal_storage#large_vessel)Large Vessel$().",
+            "enable_visualize": false,
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "A"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "tfg:baking_dish_red[sealed=false]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "A"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "tfg:baking_dish_red[sealed=true]"
+                    }
+                }
+            ]
         },
         {
             "type": "patchouli:multiblock",
@@ -488,6 +979,7 @@
             "entries": [
                 "tfg:cooking/food_and_water",
                 "tfg:cooking/decay",
+                "tfg:craftsmanship/gas_burner",
                 "tfg:the_world/wild_animals"
             ]
         }
@@ -499,29 +991,33 @@
         "tfc:pot": 6,
         "tfc:ceramic/unfired_pot": 6,
         "tfc:ceramic/pot": 6,
-        "firmalife:oven_insulation": 21,
-        "firmalife:rustic_finish": 22,
-        "firmalife:tile_finish": 22,
-        "firmalife:stone_finish": 22,
-        "firmalife:oven_hopper": 23,
-        "firmalife:ashtray": 24,
-        "firmalife:vat": 26,
-        "firmalife:jarring_station": 29,
-        "tfg:lv_food_oven": 30,
-        "tfg:mv_food_oven": 30,
-        "tfg:hv_food_oven": 30,
-        "tfg:ev_food_oven": 30,
-        "tfg:iv_food_oven": 30,
-        "tfg:luv_food_oven": 30,
-        "tfg:zpm_food_oven": 30,
-        "tfg:uv_food_oven": 30,
-        "tfg:lv_food_processor": 31,
-        "tfg:mv_food_processor": 31,
-        "tfg:hv_food_processor": 31,
-        "tfg:ev_food_processor": 31,
-        "tfg:iv_food_processor": 31,
-        "tfg:luv_food_processor": 31,
-        "tfg:zpm_food_processor": 31,
-        "tfg:uv_food_processor": 31
+        "tfg:fire_box": 15,
+        "firmalife:oven_insulation": 24,
+        "firmalife:rustic_finish": 25,
+        "firmalife:tile_finish": 25,
+        "firmalife:stone_finish": 25,
+        "firmalife:oven_hopper": 26,
+        "firmalife:ashtray": 27,
+        "tfg:fire_box_top_oven": 30,
+        "tfg:copper_pot": 34,
+        "tfg:condenser": 36,
+        "tfg:skillet": 38,
+        "tag:tfg:baking_dishes": 40,
+        "tfg:lv_food_oven": 42,
+        "tfg:mv_food_oven": 42,
+        "tfg:hv_food_oven": 42,
+        "tfg:ev_food_oven": 42,
+        "tfg:iv_food_oven": 42,
+        "tfg:luv_food_oven": 42,
+        "tfg:zpm_food_oven": 42,
+        "tfg:uv_food_oven": 42,
+        "tfg:lv_food_processor": 43,
+        "tfg:mv_food_processor": 43,
+        "tfg:hv_food_processor": 43,
+        "tfg:ev_food_processor": 43,
+        "tfg:iv_food_processor": 43,
+        "tfg:luv_food_processor": 43,
+        "tfg:zpm_food_processor": 43,
+        "tfg:uv_food_processor": 43
     }
 }

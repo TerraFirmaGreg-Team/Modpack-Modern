@@ -112,10 +112,12 @@ function registerSpeciesRecipes(event) {
 		.duration(200)
         .circuit(1)
 
-	event.recipes.firmalife.mixing_bowl()
-		.outputItem('2x species:wicked_treat')
-		.itemIngredients(['#tfg:medicine', 'minecraft:bone_meal', 'minecraft:bone_meal'])
-		.id('tfg:mixing_bowl/wicked_treat')
+	event.recipes.tfg.mixing_bowl()
+		.itemOutputs('2x species:wicked_treat')
+		.itemInputs(['#tfg:medicine', 'minecraft:bone_meal', 'minecraft:bone_meal'])
+		.tool('firmalife:spoon')
+		.duration(200)
+		.id('tfg:mixing_bowl/wicked_treat');
 
 	event.recipes.gtceu.mixer('tfg:wicked_treat')
 		.itemInputs('#tfg:medicine', '2x minecraft:bone_meal')

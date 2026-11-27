@@ -1,15 +1,62 @@
 {
     "name": "Mixing Bowl",
     "category": "tfg:cooking",
-    "icon": "firmalife:mixing_bowl",
+    "icon": "tfg:mixing_bowl",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "The mixing bowl is a way of mixing items and fluids together in a friendly way. In order to operate a mixing bowl $(item)$(k:key.use)$() on one with a $(thing)Spoon$() to add it to the bowl. The spoon will remain in the bowl and not degrade in durability."
+            "text": "The $(thing)Mixing Bowl$() is an appliance for mixing items and fluids together. It can accept 3 input items and 2 input fluids to run recipes. Some recipes require tools or bowls which will go in their respective slots in the GUI. If a tool is required, after inserting it, $(item)$(k:key.use)$() its hitbox to start a recipe."
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "name": "",
+            "text": "Mixing bowls support item and fluid logistics for input and output!",
+            "enable_visualize": false,
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            " "
+                        ],
+                        [
+                            " "
+                        ],
+                        [
+                            "A"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "tfg:mixing_bowl"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "B"
+                        ],
+                        [
+                            " "
+                        ],
+                        [
+                            "A"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "tfg:mixing_bowl",
+                        "B": "greate:andesite_alloy_mechanical_mixer"
+                    }
+                }
+            ]
         },
         {
             "type": "patchouli:text",
-            "text": "To use a mixing bowl add in your ingredients and $(item)$(k:key.use)$() it to begin mixing. Mixing bowls can take up to $(6)5 item inputs$() and $(3)1 fluid input$(). Recipes need $(n)exact quantities$() of items to be performed. If a recipe outputs a fluid any excess input fluids will be voided, so be careful!"
+            "text": "Often recipes requiring manual mixing will have an automatic counterpart using a $(item)Mixer$() attachment. Place the mixer above the mixing bowl with a 1 block gap and power it with $(thing)Rotational Force$() to begin recipes. Sometimes mixers require a minimum rpm, or a circuit number. Set the circuit number on the side of the mixer to use it."
         },
         {
             "type": "patchouli:relations",
@@ -24,5 +71,8 @@
         }
     ],
     "read_by_default": true,
-    "sortnum": 13
+    "sortnum": 5,
+    "extra_recipe_mappings": {
+        "tfg:mixing_bowl": 0
+    }
 }

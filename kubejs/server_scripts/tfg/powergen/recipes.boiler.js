@@ -262,6 +262,14 @@ function registerTFGBoilerRecipes(event) {
 		.duration(40)
 		.EUt(4)
 
+	event.recipes.tfg.copper_pot()
+		.itemInputs('tfc:blubber')
+		.fluidInputs('#tfg:clean_water 200')
+		.fluidOutputs('tfc:tallow 200')
+		.duration(200)
+		.temperature(100)
+		.id('tfg:copper_pot/tallow');
+
 	event.recipes.gtceu.extractor(`tfg:tallow`)
 		.itemInputs('tfc:blubber')
 		.outputFluids(Fluid.of('tfc:tallow', 400))

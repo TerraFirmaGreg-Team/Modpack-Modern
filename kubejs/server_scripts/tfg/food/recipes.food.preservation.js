@@ -29,12 +29,12 @@ function registerTFGPreservationFoodRecipes(event) {
 
 	global.TFC_JAMS.forEach(name => {
 		
-		global.generateJamProcessorRecipes(event, `tfc:food/${name}`, name, `tfc:jar/${name}`, `tfc:jar/${name}_unsealed`);
+		global.generateJamProcessorAndCopperPotRecipes(event, `tfc:food/${name}`, name, `tfc:jar/${name}`, `tfc:jar/${name}_unsealed`);
 	})
 
 	global.FIRMALIFE_JAMS.forEach(name => {
 
-		global.generateJamProcessorRecipes(event, `firmalife:food/${name}`, name, `firmalife:jar/${name}`, `firmalife:jar/${name}_unsealed`);
+		global.generateJamProcessorAndCopperPotRecipes(event, `firmalife:food/${name}`, name, `firmalife:jar/${name}`, `firmalife:jar/${name}_unsealed`);
 	})
 
 

@@ -106,7 +106,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Looking for something a little more impressive, or want to bring your forge indoors? Check out the $(l:beneath/beneath_mechanics#hellforge)Hellforge$()!"
+            "text": "Looking for something a little more impressive, or want to bring your forge indoors? Check out one of the upgrades for the forge:$(li)$(bold)$(l:beneath/beneath_mechanics#hellforge)Hellforge$()$(li)$(bold)$(l:craftsmanship/gas_burner)Gas Burner$()$(li)$(bold)$(l:cooking/cooking_methods#fire_box)Fire Box$()"
         },
         {
             "type": "patchouli:relations",
@@ -114,14 +114,14 @@
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/leather_making",
-                "tfg:craftsmanship/pit_kiln",
                 "tfg:craftsmanship/pottery",
                 "tfg:craftsmanship/crucible",
-                "tfg:craftsmanship/blast_furnace",
                 "tfg:craftsmanship/bloomery",
                 "tfg:craftsmanship/metallurgy",
                 "tfg:craftsmanship/glassworking",
                 "tfg:craftsmanship/charcoal_pit",
+                "tfg:craftsmanship/gas_burner",
+                "tfg:cooking/cooking_methods",
                 "tfg:game_mechanics/heating"
             ]
         }

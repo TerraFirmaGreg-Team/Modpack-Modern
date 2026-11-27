@@ -112,21 +112,31 @@ function registerTFGConcreteRecipes(event) {
 
 	// Handcrafted artisanal concrete
 
-	event.recipes.firmalife.mixing_bowl()
-		.ingredients(['#tfg:stone_dusts', '#tfg:stone_dusts', '#tfg:stone_dusts', '#forge:dusts/sedimentary_carbonate', '#forge:dusts/gypsum'], Fluid.of('minecraft:water', 1000))
-		.outputFluid(Fluid.of('gtceu:concrete', 1000))
+	for (const spoon of [true, false]) {
+		let spoonSuffix = spoon ? 'spoon' : 'mixer';
 
-	event.recipes.firmalife.mixing_bowl()
-		.ingredients(['#tfg:stone_dusts', '#tfg:stone_dusts', '#tfg:stone_dusts', '#forge:dusts/sedimentary_carbonate', '#forge:dusts/clay'], Fluid.of('minecraft:water', 500))
-		.outputFluid(Fluid.of('gtceu:concrete', 500))
+		let a = event.recipes.tfg.mixing_bowl()
+			.itemInputs('3x #tfg:stone_dusts', ['#forge:dusts/sedimentary_carbonate', '#forge:dusts/calcite'], '#forge:dusts/clay')
+			.fluidInputs('#tfg:clean_water 500')
+			.fluidOutputs('gtceu:concrete 500')
+			.duration(200)
+			.id(`tfg:mixing_bowl/concrete/clay/${spoonSuffix}`);
 
-	event.recipes.firmalife.mixing_bowl()
-		.ingredients(['#tfg:stone_dusts', '#tfg:stone_dusts', '#tfg:stone_dusts', '#forge:dusts/calcite', '#forge:dusts/gypsum'], Fluid.of('minecraft:water', 1000))
-		.outputFluid(Fluid.of('gtceu:concrete', 1000))
+		let b = event.recipes.tfg.mixing_bowl()
+			.itemInputs('3x #tfg:stone_dusts', ['#forge:dusts/sedimentary_carbonate', '#forge:dusts/calcite'], '#forge:dusts/gypsum')
+			.fluidInputs('#tfg:clean_water 1000')
+			.fluidOutputs('gtceu:concrete 1000')
+			.duration(200)
+			.id(`tfg:mixing_bowl/concrete/gypsum/${spoonSuffix}`);
 
-	event.recipes.firmalife.mixing_bowl()
-		.ingredients(['#tfg:stone_dusts', '#tfg:stone_dusts', '#tfg:stone_dusts', '#forge:dusts/calcite', '#forge:dusts/clay'], Fluid.of('minecraft:water', 500))
-		.outputFluid(Fluid.of('gtceu:concrete', 500))
+		if (spoon) {
+			a.tool('firmalife:spoon');
+			b.tool('firmalife:spoon');
+		} else {
+			a.attachment('mixer', x => x.circuit(1));
+			b.attachment('mixer', x => x.circuit(2));
+		}
+	};
 
 	event.recipes.tfc.barrel_sealed(1000)
 		.inputFluid(Fluid.of('gtceu:concrete', 144))

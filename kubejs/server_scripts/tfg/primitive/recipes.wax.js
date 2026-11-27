@@ -89,10 +89,13 @@ function registerTFGWaxRecipes(event) {
 		.EUt(GTValues.VA[GTValues.MV])
 
 	// Rosin
-	event.recipes.firmalife.vat()
-		.inputs('gtceu:small_charcoal_dust', Fluid.of('tfg:conifer_pitch', 1000))
-		.outputItem('tfg:conifer_rosin')
-		.id('tfg:vat/conifer_pitch_to_rosin');
+	event.recipes.tfg.copper_pot()
+		.itemInputs('gtceu:small_charcoal_dust')
+		.fluidInputs('tfg:conifer_pitch 1000')
+		.itemOutputs('tfg:conifer_rosin')
+		.duration(200)
+		.temperature(300)
+		.id('tfg:copper_pot/conifer_pitch_to_rosin');
 
 	event.recipes.tfc.pot('gtceu:small_charcoal_dust', Fluid.of('tfg:conifer_pitch', 1000), 1200, 300)
 		.itemOutput('tfg:conifer_rosin')

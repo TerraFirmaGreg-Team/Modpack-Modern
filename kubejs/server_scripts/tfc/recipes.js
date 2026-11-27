@@ -55,9 +55,6 @@ const registerTFCRecipes = (event) => {
 		.id('greate:pressing/flux')
 
 	// Salt Water
-	event.recipes.tfc.pot([], Fluid.of('tfc:salt_water', 625), 300, 100)
-		.itemOutput('gtceu:small_salt_dust')
-		.id('tfg:tfc/pot/salt')
 
 	generateMixerRecipe(event, ['#forge:dusts/salt'], "#tfg:clean_water 1000",
 		[], 2, Fluid.of('tfc:salt_water', 1000), 40, 7, 64, 'tfg:tfc/salt_water')
@@ -124,6 +121,22 @@ const registerTFCRecipes = (event) => {
 		[], null, Fluid.of('tfc:lye', 200), 100, 2, 64, 'lye_from_wood_ash')
 	generateMixerRecipe(event, '#forge:dusts/sodium_hydroxide', "#tfg:clean_water 1000",
 		[], null, Fluid.of('tfc:lye', 1000), 100, 2, 64, 'lye_from_sodium_hydroxide')
+
+	event.recipes.tfg.copper_pot()
+		.itemInputs('tfc:powder/wood_ash')
+		.fluidInputs('#tfg:clean_water 200')
+		.fluidOutputs('tfc:lye 200')
+		.duration(200)
+		.temperature(100)
+		.id('tfg:copper_pot/lye_from_wood_ash');
+
+	event.recipes.tfg.copper_pot()
+		.itemInputs('#forge:dusts/sodium_hydroxide')
+		.fluidInputs('#tfg:clean_water 1000')
+		.fluidOutputs('tfc:lye 1000')
+		.duration(200)
+		.temperature(100)
+		.id('tfg:copper_pot/lye_from_sodium_hydroxide');
 
 	event.recipes.gtceu.distillery('lye_to_sodium_hydroxide')
 		.inputFluids('tfc:lye 1000')
