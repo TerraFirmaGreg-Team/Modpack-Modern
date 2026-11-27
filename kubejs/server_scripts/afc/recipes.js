@@ -111,8 +111,7 @@ const registerAFCRecipes = (event) => {
 		.EUt(20)
 
 	//#endregion
-
-	// Из бревна капока / Logs Centrifuge
+	//#region Logs Centrifuge
 
 	event.recipes.gtceu.centrifuge('maple_syrup_log_separation')
 		.itemInputs('#tfc:maple_logs')
@@ -133,127 +132,6 @@ const registerAFCRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.MV])
 
 	//#endregion
-
-	// Maple, Birch concentrates
-
-	event.recipes.firmalife.vat()
-		.inputs('minecraft:stick', Fluid.of('afc:birch_sap', 1000))
-		.outputItem('minecraft:stick')
-		.outputFluid(Fluid.of('afc:birch_sap_concentrate', 500))
-		.length(600)
-		.id('tfg:vat/birch_sap_to_concentrate')
-
-	event.recipes.firmalife.vat()
-		.inputs('minecraft:stick', Fluid.of('afc:maple_sap', 1000))
-		.outputItem('minecraft:stick')
-		.outputFluid(Fluid.of('afc:maple_sap_concentrate', 500))
-		.length(600)
-		.id('tfg:vat/maple_sap_to_concentrate')
-
-	event.recipes.tfc.pot(['minecraft:stick'], Fluid.of('afc:birch_sap', 1000), 30 * 20, 650)
-		.itemOutput('minecraft:stick')
-		.fluidOutput(Fluid.of('afc:birch_sap_concentrate', 500))
-		.id('tfg:pot/birch_sap_to_concentrate')
-
-	event.recipes.tfc.pot(['minecraft:stick'], Fluid.of('afc:maple_sap', 1000), 30 * 20, 650)
-		.itemOutput('minecraft:stick')
-		.fluidOutput(Fluid.of('afc:maple_sap_concentrate', 500))
-		.id('tfg:pot/maple_sap_to_concentrate')
-
-	//#endregion
-
-	// Concentrate to Syrup
-
-	event.recipes.tfc.pot(['minecraft:stick'], Fluid.of('afc:birch_sap_concentrate', 1000), 30 * 20, 650)
-		.itemOutput('minecraft:stick')
-		.fluidOutput(Fluid.of('afc:birch_syrup', 500))
-		.id('tfg:pot/birch_concentrate_to_syrup')
-
-	event.recipes.tfc.pot(['minecraft:stick'], Fluid.of('afc:maple_sap_concentrate', 1000), 30 * 20, 650)
-		.itemOutput('minecraft:stick')
-		.fluidOutput(Fluid.of('afc:maple_syrup', 500))
-		.id('tfg:pot/maple_concentrate_to_syrup')
-
-	event.recipes.tfc.pot(['minecraft:stick'], Fluid.of('afc:birch_sap_concentrate', 500), 30 * 20, 650)
-		.itemOutput('minecraft:stick')
-		.fluidOutput(Fluid.of('afc:birch_syrup', 250))
-		.id('tfg:pot/birch_concentrate_to_syrup_half')
-
-	event.recipes.tfc.pot(['minecraft:stick'], Fluid.of('afc:maple_sap_concentrate', 500), 30 * 20, 650)
-		.itemOutput('minecraft:stick')
-		.fluidOutput(Fluid.of('afc:maple_syrup', 250))
-		.id('tfg:pot/maple_concentrate_to_syrup_half')
-
-	event.recipes.firmalife.vat()
-		.inputs('minecraft:stick', Fluid.of('afc:birch_sap_concentrate', 1000))
-		.outputItem('minecraft:stick')
-		.outputFluid(Fluid.of('afc:birch_syrup', 500))
-		.length(600)
-		.id('tfg:vat/birch_concentrate_to_syrup')
-
-	event.recipes.firmalife.vat()
-		.inputs('minecraft:stick', Fluid.of('afc:maple_sap_concentrate', 1000))
-		.outputItem('minecraft:stick')
-		.outputFluid(Fluid.of('afc:maple_syrup', 500))
-		.length(600)
-		.id('tfg:vat/maple_concentrate_to_syrup')
-
-	event.recipes.firmalife.vat()
-		.inputs('minecraft:stick', Fluid.of('afc:birch_sap_concentrate', 500))
-		.outputItem('minecraft:stick')
-		.outputFluid(Fluid.of('afc:birch_syrup', 250))
-		.length(600)
-		.id('tfg:vat/birch_concentrate_to_syrup_half')
-
-	event.recipes.firmalife.vat()
-		.inputs('minecraft:stick', Fluid.of('afc:maple_sap_concentrate', 500))
-		.outputItem('minecraft:stick')
-		.outputFluid(Fluid.of('afc:maple_syrup', 250))
-		.length(600)
-		.id('tfg:vat/maple_concentrate_to_syrup_half')
-
-	//#endregion
-
-	//#region GT sap processing
-
-	event.recipes.gtceu.fluid_heater('maple_sap_condense')
-		.inputFluids(Fluid.of('afc:maple_sap', 1000))
-		.outputFluids(Fluid.of('afc:maple_syrup', 250))
-		.duration(20 * 25)
-		.EUt(GTValues.VA[GTValues.ULV])
-
-	event.recipes.gtceu.fluid_heater('birch_sap_condense')
-		.inputFluids(Fluid.of('afc:birch_sap', 1000))
-		.outputFluids(Fluid.of('afc:birch_syrup', 250))
-		.duration(20 * 35)
-		.EUt(GTValues.VA[GTValues.ULV])
-
-	event.recipes.gtceu.fluid_solidifier('maple_syrup')
-		.inputFluids(Fluid.of('afc:maple_syrup', 100))
-		.itemOutputs('afc:maple_sugar')
-		.duration(20 * 12)
-		.EUt(GTValues.VHA[GTValues.ULV])
-
-	event.recipes.gtceu.fluid_solidifier('birch_syrup')
-		.inputFluids(Fluid.of('afc:birch_syrup', 100))
-		.itemOutputs('afc:birch_sugar')
-		.duration(20 * 12)
-		.EUt(GTValues.VHA[GTValues.ULV])
-
-	//#endregion
-
-
-	// Syrup into sugar
-
-	event.recipes.tfc.barrel_sealed(24000)
-		.inputFluid(Fluid.of('afc:maple_syrup', 100))
-		.outputItem('afc:maple_sugar')
-		.id('tfg:barrel/maple_syrup_to_sugar')
-
-	event.recipes.tfc.barrel_sealed(24000)
-		.inputFluid(Fluid.of('afc:birch_syrup', 100))
-		.outputItem('afc:birch_sugar')
-		.id('tfg:barrel/birch_syrup_to_sugar')
 
 	global.AFC_SAPLINGS.forEach(wood => {
 		event.shaped(`4x afc:wood/fallen_leaves/${wood.sapling}`,[

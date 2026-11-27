@@ -74,7 +74,6 @@ const registerFirmaLifeBlockTags = (event) => {
 
     event.add('firmalife:oven_insulation', 'firmalife:stovetop_pot');
     event.add('firmalife:oven_insulation', 'firmalife:stovetop_grill');
-    event.add('firmalife:oven_insulation', 'firmalife:vat');
 
     // tfg and a few missed(?) tfc flowers for bee restoration
     event.add('firmalife:bee_restoration_plants', 'tfg:plant/azalea')
