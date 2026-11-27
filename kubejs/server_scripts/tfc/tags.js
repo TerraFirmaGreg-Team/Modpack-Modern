@@ -445,12 +445,6 @@ function registerTFCItemTags(event) {
     event.add('forge:dyes/yellow', 'gtceu:small_limonite_dust')
     event.add('forge:dyes/yellow', 'gtceu:small_gold_dust')
 
-	//Hanging Signs Soft & Hard Wood
-	global.TFC_EQUIPMENT_METALS.forEach(metal => {
-		event.add(`tfg:hanging_sign/${metal}/hardwood`, `beneath:wood/hanging_sign/${metal}/warped`)
-		event.add(`tfg:hanging_sign/${metal}/softwood`, `beneath:wood/hanging_sign/${metal}/crimson`)
-	})
-
 	event.add('tfc:fluxstone', 'tfg:loose/dripstone')
 
     event.add('tfc:food/bell_peppers', 'tfc:food/green_bell_pepper');

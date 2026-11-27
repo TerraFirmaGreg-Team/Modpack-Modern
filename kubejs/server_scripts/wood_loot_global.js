@@ -3,11 +3,17 @@ const registerWoodStructLoot = (event) =>
 {
     global.getWoodStructArray().forEach(woodType =>
     {
-        console.log("Generating Wood Struct Loot for " + woodType.modName + ":" + woodType.name);
-        global.invokeIfValid(woodType.window_pane, () =>
+        try
         {
-            event.addBlockLootModifier(woodType.window_pane)
-                .addLoot(woodType.window_pane);
-        });
+            global.invokeIfValid(woodType.window_pane, () =>
+            {
+                event.addBlockLootModifier(woodType.window_pane)
+                    .addLoot(woodType.window_pane);
+            });
+        }
+        catch(ex)
+        {
+            console.error(`Exception during Wood Struct Loot generation for ${woodType.modName}:${woodType.name}: ` + ex);
+        }
     })
 }

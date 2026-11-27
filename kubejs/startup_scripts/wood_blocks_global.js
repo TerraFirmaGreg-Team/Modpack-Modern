@@ -53,7 +53,6 @@ function registerWoodStructBlocks(event)
 	}
 
 	function TFGWoodSupportRegistry(event, wood, stripped_log) {
-		console.log(`PENIS: ${stripped_log}`);
 		event.create(`tfg:wood/support/${wood.name}`, 'tfc:support')
 			.textureAll(`${stripped_log}`)
 			.horizontal(horizontal => {
