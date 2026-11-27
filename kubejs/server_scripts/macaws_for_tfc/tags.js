@@ -6,19 +6,6 @@ function registerMacawsForTFCItemTags(event) {
 		event.remove(`mcw_tfc_aio:${color}_roofs`, `mcw_tfc_aio:roofs/${color}_roofs/${color}_roof_slab`);
 	})
 
-	// Fence Gates
-	global.TFC_WOOD_TYPES.forEach(wood => {
-		event.add('minecraft:fence_gates', `mcw_tfc_aio:fences/${wood}_fences/${wood}_highley_gate`)
-		event.add('minecraft:fence_gates', `mcw_tfc_aio:fences/${wood}_fences/${wood}_pyramid_gate`)
-
-		event.add('mcw_tfc_aio:bridges', `mcw_tfc_aio:bridges/${wood}_bridges/${wood}_bridge_pier`)
-		event.add('mcw_tfc_aio:bridges', `mcw_tfc_aio:bridges/${wood}_bridges/${wood}_log_bridge_middle`)
-		event.add('mcw_tfc_aio:bridges', `mcw_tfc_aio:bridges/${wood}_bridges/${wood}_log_bridge_stair`)
-		event.add('mcw_tfc_aio:bridges', `mcw_tfc_aio:bridges/${wood}_bridges/${wood}_rail_bridge`)
-		event.add('mcw_tfc_aio:bridges', `mcw_tfc_aio:bridges/${wood}_bridges/rope_${wood}_bridge`)
-		event.add('mcw_tfc_aio:bridges', `mcw_tfc_aio:bridges/${wood}_bridges/${wood}_rope_bridge_stair`)
-	})
-
 	// Bridges
 	event.add('mcw_tfc_aio:bridges', `mcw_tfc_aio:bridges/brick_bridges/brick_bridge_pier`)
 	event.add('mcw_tfc_aio:bridges', `mcw_tfc_aio:bridges/brick_bridges/brick_bridge`)
@@ -43,13 +30,6 @@ function registerMacawsForTFCItemTags(event) {
 		'_upper_lower_roof',
 		'_upper_steep_roof'
 	]
-
-	global.TFC_WOOD_TYPES.forEach(wood => {
-		ROOF_TYPES.forEach(type => {
-			event.add('mcw_tfc_aio:roofs', `mcw_tfc_aio:roofs/${wood}_roofs/${wood}_planks${type}`)
-			event.add('mcw_tfc_aio:roofs', `mcw_tfc_aio:roofs/${wood}_roofs/${wood}${type}`)
-		})
-	})
 
 	global.MINECRAFT_DYE_NAMES.forEach(color => {
 		ROOF_TYPES.forEach(type => {
@@ -108,13 +88,6 @@ function registerMacawsForTFCItemTags(event) {
 		'_double_drawer_counter',
 		'_cupboard_counter'
 	]
-
-	global.TFC_WOOD_TYPES.forEach(wood => {
-		FURNITURE_TYPES.forEach(type => {
-			event.add('mcw_tfc_aio:furniture', `mcw_tfc_aio:furniture/${wood}_furniture/${wood}${type}`)
-			event.add('mcw_tfc_aio:stripped_furniture', `mcw_tfc_aio:furniture/${wood}_furniture/stripped_${wood}${type}`)
-		})
-	})
 }
 
 function registerMacawsBlockTags(event) {

@@ -72,18 +72,6 @@ function registerTFGPapermakingRecipes(event) {
 		.duration(70)
 		.EUt(2)
 
-	//Replace any recipe that outputs wood dust to use hardwood dust if it's ID string contains the name of one of the hardwood types.
-	//This absolutely fuckin sucks but it works
-	event.forEachRecipe({ output: 'gtceu:wood_dust' }, r => {
-		global.TFC_HARDWOOD_TYPES.forEach(hardwoodType => {
-			if (r.id.toString().includes(hardwoodType)) {
-				r.replaceOutput('gtceu:wood_dust', 'gtceu:hardwood_dust')
-				r.replaceOutput('gtceu:small_wood_dust', 'gtceu:small_hardwood_dust')
-				r.replaceOutput('gtceu:tiny_wood_dust', 'gtceu_tiny_hardwood_dust')
-			}
-		})
-	})
-
 	//Replace any input that uses softwood dust to use our custom tag (we cant add it to the forge tag because it will literally fuck everything up by making softwood pulp obtainable using hardwood pulp)
 	event.replaceInput([
 		{ not: { output: 'gtceu:small_wood_dust' } },

@@ -2,7 +2,7 @@
 "use strict";
 
 /**
- * Событие регистрации предмет-тэгов.
+ * @param {TagEvent.Item} item
  */
 ServerEvents.tags('item', event => {
 	registerAdAstraItemTags(event)
@@ -63,9 +63,9 @@ ServerEvents.tags('item', event => {
  * Событие регистрации блок-тэгов.
  */
 ServerEvents.tags('block', event => {
+	registerWoodStructBlockTags(event);
 	registerAdAstraBlockTags(event)
 	registerAE2BlockTags(event)
-	registerAFCBlockTags(event)
 	registerBeneathBlockTags(event)
 	registerBlockRunnerBlockTags(event)
 	registerComputerCraftBlockTags(event)
@@ -73,7 +73,6 @@ ServerEvents.tags('block', event => {
 	registerCreateDecoBlockTags(event)
 	registerDomumOrnamentumBlockTags(event)
 	registerEndermanOverhaulBlockTags(event)
-	registerEveryCompatBlockTags(event)
 	registerFirmaLifeBlockTags(event)
 	registerFowlPlayBlockTags(event)
 	registerGTCEUBlockTags(event)
@@ -137,6 +136,7 @@ ServerEvents.tags('worldgen/biome', event => {
 })
 
 ServerEvents.tags('entity_type', event => {
+	registerWoodStructEntityTags(event);
 	registerFowlPlayEntityTags(event)
 	registerJelliesEntityTags(event)
 	registerOpposingForceEntityTags(event);
@@ -207,6 +207,7 @@ LootJS.modifiers((event) => {
 	registerSpeciesLoots(event)
 	registerTFCLoots(event)
 	registerTFGLoots(event)
+	registerWoodStructLoot(event)
 	registerWansAncientBeastsLoots(event)
 });
 
@@ -235,7 +236,6 @@ ServerEvents.recipes(event => {
 	registerAE2Recipes(event)
 	registerAFCRecipes(event)
 	registerArthropocolypseRecipes(event)
-	registerAsticorCartsRecipes(event)
 	registerAE2InsertExportCardRecipes(event)
 	registerAE2NetworkAnalyzerRecipes(event)
 	registerAE2WTLibRecipes(event)

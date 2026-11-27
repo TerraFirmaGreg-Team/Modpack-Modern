@@ -14,6 +14,26 @@ global.linuxUnfucker = function(value) {
 	return str.toLocaleLowerCase('en-US').replace(/[^0-9_a-z]+/g, "_").replace(/^_+|_+$/g, "");
 };
 
+/**
+ * Implementation of a string.format method akin to C#'s string.format
+ * @param {String} format The string format, example: "string formatting is {0}",
+ * @param  {...any} args The arguments for the formatting
+ * @returns The formatted string.
+ */
+global.stringFormat = function(format, args) {
+    // If args is not an array, treat it as a single argument.
+    if (Object.prototype.toString.call(args) !== "[object Array]") {
+        args = Array.prototype.slice.call(arguments, 1);
+    }
+
+    return String(format).replace(/\{(\d+)\}/g, function(match, index) {
+        var i = Number(index);
+        return i < args.length && args[i] !== undefined
+            ? String(args[i])
+            : match;
+    });
+};
+
 StartupEvents.registry('item', event => {
     registerTFGItems(event)
 })

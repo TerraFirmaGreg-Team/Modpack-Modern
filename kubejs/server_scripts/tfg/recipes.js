@@ -5,7 +5,8 @@
  * @param {Internal.RecipesEventJS} event 
  */
 const registerTFGRecipes = (event) => {
-	
+	registerWoodStructRecipes(event)
+
 	registerTFGMaterialRecipes(event)
 	registerTFGMoldRecipes(event)
 	registerTFGMiscellaneousRecipes(event)

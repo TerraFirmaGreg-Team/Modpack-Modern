@@ -1594,10 +1594,10 @@
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:latex_logs)"
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:rubber_logs)"
 					}
 				}
-				title: "{quests.tasktype.item.any} #tfg:latex_logs"
+				title: "{quests.tasktype.item.any} #tfg:rubber_logs"
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.find_latex_tree.title}"

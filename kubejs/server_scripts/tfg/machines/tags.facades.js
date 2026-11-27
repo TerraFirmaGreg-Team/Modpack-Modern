@@ -275,11 +275,6 @@ function registerTFGFacadeWhitelistItemTags(event) {
 		event.add('tfg:whitelisted/facades', `create:${  facade_material  }_pillar`)
 	});
 	
-	//rnr shingles
-	global.TFC_WOOD_TYPES.concat(global.AFC_WOOD_TYPES).forEach(facade_material => {
-		event.add('tfg:whitelisted/facades', `rnr:wood/shingles/${  facade_material}`)
-	});
-	
 	//createdeco bricks
 	createdeco_bricks_fm.forEach(facade_material => {
 		if (facade_material !== 'red_bricks') {
@@ -297,12 +292,4 @@ function registerTFGFacadeWhitelistItemTags(event) {
 	global.CREATE_DECO_CATWALK_TYPES.forEach(facade_material => {
 		event.add('tfg:whitelisted/facades', `createdeco:${  facade_material  }_catwalk`)
 	})
-	
-	//everycomp windows
-	global.TFC_WOOD_TYPES.forEach(facade_material => {
-		event.add('tfg:whitelisted/facades', `everycomp:c/tfc/${  facade_material  }_window`)
-	});
-	global.AFC_WOOD_TYPES.forEach(facade_material => {
-		event.add('tfg:whitelisted/facades', `everycomp:c/afc/${  facade_material  }_window`)
-	});
 }

@@ -77,42 +77,6 @@ const registerAdAstraItemTags = (event) => {
 	event.add('ad_astra:held_over_head', 'tfg:tier_2_double_rocket')
 	event.add('ad_astra:held_over_head', 'tfg:tier_3_double_rocket')
 	event.add('ad_astra:held_over_head', 'tfg:tier_4_double_rocket')
-	
-	
-	global.AD_ASTRA_WOOD.forEach(wood => {
-
-		if (wood.log) {
-			event.add('minecraft:logs', wood.log)
-			event.add('minecraft:logs_that_burn', wood.log)
-		}
-
-		if (wood.stripped_log) {
-			event.add('minecraft:logs', wood.stripped_log)
-			event.add('minecraft:logs_that_burn', wood.stripped_log)
-		}
-
-		if(wood.woodKind != "NONE")
-		{
-			var woodTag = null;
-			var strippedLogTag = null;
-			if(wood.woodKind == "HARD")
-			{
-				woodTag = "tfg:hardwood";
-				strippedLogTag = "tfg:stripped_hardwood";
-			}
-			else if(wood.woodKind == "SOFT")
-			{
-				woodTag = "tfg:softwood";
-				strippedLogTag = "tfg:stripped_softwood";
-			}
-
-			event.add(woodTag, wood.logs);
-			if(wood.stripped_log)
-			{
-				event.add(strippedLogTag, wood.stripped_log);
-			}
-		}
-	})
 }
 
 const registerAdAstraBlockTags = (event) => {
@@ -122,18 +86,6 @@ const registerAdAstraBlockTags = (event) => {
 		event.add('c:hidden_from_recipe_viewers', item)
 	})
 
-	global.AD_ASTRA_WOOD.forEach(wood => {
-
-		if (wood.log) {
-			event.add('minecraft:logs', wood.log)
-			event.add('minecraft:logs_that_burn', wood.log)
-		}
-
-		if (wood.stripped_log) {
-			event.add('minecraft:logs', wood.stripped_log)
-			event.add('minecraft:logs_that_burn', wood.stripped_log)
-		}
-	})
 	const DECO_BLOCKS = [ 'iron', 'steel', 'desh', 'calorite', 'ostrum' ];
 	DECO_BLOCKS.forEach(block => {
 		event.add(`tfg:ad_astra_${block}_block`, `ad_astra:${block}_factory_block`)

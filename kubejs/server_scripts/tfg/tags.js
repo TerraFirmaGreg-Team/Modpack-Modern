@@ -1,16 +1,7 @@
 ﻿"use strict";
 
-const forEachTFGRopeLadderVariant = (callback) => {
-	global.TFG_NEW_WOOD_TYPES.forEach(wood => callback(`tfg:wood/rope_ladder/${wood.name}`))
-	global.WAB_WOOD.forEach(wood => callback(`tfg:wood/rope_ladder/${wood.name}`))
-	global.AD_ASTRA_WOOD.forEach(wood => callback(`tfg:wood/rope_ladder/${wood.name}`))
-	global.BENEATH_WOOD_TYPES.forEach(wood => callback(`tfg:wood/rope_ladder/${wood}`))
-	global.AFC_WOOD_TYPES.forEach(wood => callback(`tfg:wood/rope_ladder/${wood}`))
-	global.TFC_WOOD_TYPES.forEach(wood => callback(`tfg:wood/rope_ladder/${wood}`))
-}
-
 const registerTFGItemTags = (event) => {
-
+	registerWoodStructItemTags(event);
 	registerTFGTrimItemTags(event)
 	registerTFGFacadeWhitelistItemTags(event)
 	registerTFGStoneItemTags(event)
@@ -34,10 +25,6 @@ const registerTFGItemTags = (event) => {
 	event.add("curios:face", "tfg:snorkel")
 	event.add("curios:clothes_socks", "tfg:flippers")
 	event.add("curios:clothes_socks", "tfg:snowshoes")
-
-	forEachTFGRopeLadderVariant(ropeLadder => {
-		event.add('tfg:rope_ladders', ropeLadder)
-	})
 
 	// Disable auto generation for Vintage Recipes
 
@@ -167,12 +154,6 @@ const registerTFGItemTags = (event) => {
 
 	event.add('forge:torches', 'tfc:torch')
 	
-	global.TFC_WOOD_TYPES.forEach(wood => {
-		event.add('c:hidden_from_recipe_viewers', `railways:track_incomplete_tfc_${wood}`)
-		event.add('c:hidden_from_recipe_viewers', `railways:track_incomplete_tfc_${wood}_narrow`)
-		event.add('c:hidden_from_recipe_viewers', `railways:track_incomplete_tfc_${wood}_wide`)	
-	})
-	
 	const OTHER_TRACKS = [
 		"blackstone", "tieless", "acacia",
 		"birch",      "cherry",  "jungle",
@@ -296,13 +277,6 @@ const registerTFGBlockTags = (event) => {
 	event.add('gtceu:mineable/pickaxe_or_wrench', 'tfg:reflector')
 	event.add('gtceu:mineable/pickaxe_or_wrench', 'tfg:machine_casing_aluminium_plated_steel')
 	event.add('gtceu:mineable/pickaxe_or_wrench', 'tfg:machine_casing_power_casing')
-
-	forEachTFGRopeLadderVariant(ropeLadder => {
-		event.add('tfg:rope_ladders', ropeLadder)
-		event.add('create:copycat_deny', ropeLadder)
-		event.add('minecraft:fall_damage_resetting', ropeLadder)
-		event.add('minecraft:climbable', ropeLadder)
-	})
 
 	event.add('minecraft:mineable/pickaxe', 'tfg:mars_ice')
 	event.add('minecraft:ice', 'tfg:mars_ice')
