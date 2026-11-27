@@ -373,7 +373,7 @@
     "tfg.tooltip.fire_box_top_oven.flavor_text": "Fire Box Top Ovens accept heat from appliances like Fire Boxes and Gas Burners and will pass it on to neighboring blocks with a loss. Insert items manually or automatically for §3cooking§r or §emelting in vessels§r.",
     "tfg.tooltip.recipe.error.no_fluid_space": "⚠ Not enough fluid output space!",
     "tfg.tooltip.recipe.error.no_item_space": "⚠ Not enough item output space!",
-    "tfg.tooltip.recipe.error.rotten": "⚠ Cannot cook with rotten ingredients!",
+    "tfg.tooltip.recipe.error.rotten": "⚠ Cannot process with rotten ingredients!",
     "tfg.tooltip.recipe.error.no_coolant": "⚠ Missing condenser coolant!",
     "tfg.tooltip.recipe.error.no_condenser": "⚠ Missing condenser!",
     "tfg.tooltip.recipe.error.no_mixer": "⚠ Missing mixer requirements!",
