@@ -38,22 +38,18 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 		//#region Bread
 
 		// Flatbread dough
-		global.processorRecipe(event, `${grain.name}_flatbread_dough`, 300, 8, {
-			itemInputs: [`tfc:food/${grain.name}_flour`],
-			itemOutputs: [`4x tfc:food/${grain.name}_dough`],
-			circuit: 1,
-			fluidInputs: ['#tfg:clean_water 100'],
-			itemOutputProvider: TFC.isp.of(`4x tfc:food/${grain.name}_dough`).copyFood()
-		});
+		global.generateMixingFoodRecipes(event, 
+			[`tfc:food/${grain.name}_flour`],
+			'#tfg:clean_water 100', null, `4x tfc:food/${grain.name}_dough`,
+			false, true, true, 1
+		);
 
 		// Firmalife dough
-		global.processorRecipe(event, `${grain.name}_dough`, 300, 16, {
-			itemInputs: [`tfc:food/${grain.name}_flour`, `#tfc:sweetener`],
-			itemOutputs: [`4x firmalife:food/${grain.name}_dough`],
-			circuit: 1,
-			fluidInputs: [Fluid.of('firmalife:yeast_starter', 200)],
-			itemOutputProvider: TFC.isp.of(`4x firmalife:food/${grain.name}_dough`).copyFood()
-		});
+		global.generateMixingFoodRecipes(event, 
+			[`tfc:food/${grain.name}_flour`, `#tfc:sweetener`],
+			'firmalife:yeast_starter 200', null, `4x firmalife:food/${grain.name}_dough`,
+			false, true, true, 2
+		);
 
 		// Bread baking
 		global.cookingRecipe(event, `${grain.name}_flatbread`, `tfc:food/${grain.name}_dough`, `firmalife:food/${grain.name}_flatbread`)
@@ -67,19 +63,25 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 		});
 	});
 
+	// Hardtack Dough
+	global.generateMixingFoodRecipes(event, 
+		['#forge:small_dusts/salt', '#tfc:foods/flour'],
+		'#tfg:clean_water 1000', null, '4x firmalife:food/hardtack_dough',
+		false, true, true, 3
+	);
+
 	// Brioche Dough
 	global.generateMixingFoodRecipes(event, 
 		['#forge:eggs', '#tfc:foods/flour', 'firmalife:tirage_mixture'],
-		'#tfc:milks 500', null, '4x tfg:food/brioche_dough', true
+		'#tfc:milks 500', null, '4x tfg:food/brioche_dough',
+		false
 	);
 
-	global.processorRecipe(event, 'brioche_dough/yeast', 20*2, GTValues.VA[GTValues.ULV], {
-		itemInputs: ['#tfc:foods/flour', '#forge:eggs', '#tfc:sweetener'],
-		fluidInputs: ['#tfc:milks 500', 'firmalife:yeast_starter 100'],
-		itemOutputs: ['4x tfg:food/brioche_dough'],
-		circuit: 5,
-		itemOutputProvider: TFC.isp.of('4x tfg:food/brioche_dough').resetFood()
-	});
+	global.generateMixingFoodRecipes(event, 
+		['#forge:eggs', '#tfc:foods/flour', '#tfc:sweetener'],
+		['#tfc:milks 500', 'firmalife:yeast_starter 100'], null, '4x tfg:food/brioche_dough',
+		false, true, true, null, TFC.isp.of('4x tfg:food/brioche_dough').copyOldestFood(), `tfg_food_brioche_dough_yeast`
+	);
 
 	global.generateFoodCookingRecipes(event, 'tfg:food/brioche_dough', 'tfg:food/brioche_bun', true, false, true);
 
@@ -193,8 +195,7 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 			circuit: i + 1,
 			itemInputs: ['#tfc:sweetener'],
 			fluidInputs: ['#tfc:milks 1000'],
-			itemOutputs: [`2x firmalife:food/${chocolate}_blend`],
-			itemOutputProvider: TFC.isp.of(`2x firmalife:food/${chocolate}_blend`).resetFood()
+			itemOutputs: [`2x firmalife:food/${chocolate}_blend`]
 		};
 
 		switch (chocolate) {
@@ -208,35 +209,43 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 				blendConstants.itemInputs.push('2x firmalife:food/cocoa_butter');
 				break;
 		};
-		global.processorRecipe(event, `${chocolate}_blend`, 300, 16, blendConstants);
+		global.generateMixingFoodRecipes(event,
+			blendConstants.itemInputs, blendConstants.fluidInputs, null, blendConstants.itemOutputs,
+			false, true, true, blendConstants.circuit
+		);
 	});
 
 	//#endregion
-	//#region Ice cream
+	//#region Ice Cream
 
-	global.processorRecipe(event, 'vanilla_ice_cream', 300, 16, {
-		itemInputs: ['firmalife:ice_shavings', '#tfc:sweetener', 'firmalife:spice/vanilla'],
-		itemOutputs: ['2x firmalife:food/vanilla_ice_cream'],
-		fluidInputs: [Fluid.of('firmalife:cream', 1000)],
-		itemOutputProvider: TFC.isp.of('2x firmalife:food/vanilla_ice_cream').resetFood()
-	});
 
 	event.remove({ id: 'firmalife:mixing_bowl/chocolate_ice_cream' });
-	global.generateMixingFoodRecipes(event, 'firmalife:food/vanilla_ice_cream', 'tfcchannelcasting:milk_chocolate 100', null, 'firmalife:food/chocolate_ice_cream', 
-		false, true, true, null);
 
-	global.processorRecipe(event, 'strawberry_ice_cream', 300, 16, {
-		itemInputs: ['firmalife:food/vanilla_ice_cream', '2x tfc:food/strawberry'],
-		itemOutputs: ['firmalife:food/strawberry_ice_cream'],
-		itemOutputProvider: TFC.isp.of('firmalife:food/strawberry_ice_cream').resetFood()
-	});
+	// Vanilla Ice Cream
+	global.generateMixingFoodRecipes(event, 
+		['firmalife:ice_shavings', '#tfc:sweetener', 'firmalife:spice/vanilla'], 'firmalife:cream 1000', null, '2x firmalife:food/vanilla_ice_cream', 
+		false, true, true, null,
+	);
 
-	global.processorRecipe(event, 'cookie_dough_ice_cream', 300, 16, {
-		itemInputs: [`firmalife:food/vanilla_ice_cream`, `firmalife:food/chocolate_chip_cookie_dough`],
-		itemOutputs: [`2x firmalife:food/cookie_dough_ice_cream`],
-		itemOutputProvider: TFC.isp.of('firmalife:food/cookie_dough_ice_cream').resetFood()
-	});
+	// Chocolate Ice Cream
+	global.generateMixingFoodRecipes(event, 
+		['firmalife:food/vanilla_ice_cream'], 'tfcchannelcasting:milk_chocolate 100', null, 'firmalife:food/chocolate_ice_cream', 
+		false, true, true, null,
+	);
 
+	// Strawberry Ice Cream
+	global.generateMixingFoodRecipes(event, 
+		['firmalife:food/vanilla_ice_cream', '2x tfc:food/strawberry'], null, null, 'firmalife:food/strawberry_ice_cream', 
+		false, true, true, null
+	);
+
+	// Cookie Dough Ice Cream
+	global.generateMixingFoodRecipes(event, 
+		['firmalife:food/vanilla_ice_cream', 'firmalife:food/chocolate_chip_cookie_dough'], null, null, '2x firmalife:food/cookie_dough_ice_cream', 
+		false, true, true, null
+	);
+
+	// Banana Split
 	global.processorRecipe(event, 'banana_split', 500, 16, {
 		itemInputs: ['firmalife:food/vanilla_ice_cream', 'firmalife:food/strawberry_ice_cream', 'firmalife:food/chocolate_ice_cream', 'firmalife:food/pineapple', 'tfc:food/cherry', '2x tfc:food/banana'],
 		itemOutputs: ['2x firmalife:food/banana_split'],
@@ -246,13 +255,11 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 	//#endregion
 	//#region Pies
 
-	global.processorRecipe(event, 'pie_dough', 300, 16, {
-		circuit: 2,
-		itemInputs: ['#tfc:sweetener', 'firmalife:food/butter', '#tfc:foods/flour'],
-		fluidInputs: ['#tfg:clean_water 1000'],
-		itemOutputs: ['firmalife:food/pie_dough'],
-		itemOutputProvider: TFC.isp.of('firmalife:food/pie_dough').resetFood()
-	});
+	// Pie Dough
+	global.generateMixingFoodRecipes(event, 
+		['#tfc:sweetener', 'firmalife:food/butter', '#tfc:foods/flour'], '#tfg:clean_water 1000', null, 'firmalife:food/pie_dough', 
+		false, true, true, 2
+	);
 
 	// Jam Pie
 	event.remove({ id: 'firmalife:crafting/filled_pie' });
@@ -293,13 +300,10 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 	global.generateFoodCookingRecipes(event, 'firmalife:food/raw_pumpkin_pie', 'minecraft:pumpkin_pie', true, false, false, null, true);
 
 	// Pumpkin Pie
-	global.processorRecipe(event, 'pumpkin_pie_dough', 300, 16, {
-		circuit: 2,
-		itemInputs: ['#tfc:sweetener', '#forge:eggs', '2x tfc:food/pumpkin_chunks', '#tfc:foods/flour'],
-		fluidInputs: ['#tfg:clean_water 1000'],
-		itemOutputs: ['firmalife:food/pumpkin_pie_dough'],
-		itemOutputProvider: TFC.isp.of('firmalife:food/pumpkin_pie_dough').copyOldestFood()
-	});
+	global.generateMixingFoodRecipes(event, 
+		['#forge:eggs', '2x tfc:food/pumpkin_chunks', '#tfc:foods/flour'], 'firmalife:sugar_water 1000', null, 'firmalife:food/pumpkin_pie_dough', 
+		false, true, true, 2
+	);
 
 	global.processorRecipe(event, 'raw_pumpkin_pie', 20, 8, {
 		itemInputs: ['firmalife:food/pumpkin_pie_dough', '#firmalife:pie_pans'],
@@ -312,7 +316,7 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 	// Bulbkin Pie
 	global.generateMixingFoodRecipes(event, 
 		['#tfg:martian_eggs', '2x betterend:cave_pumpkin_chunks', 'betterend:amber_root_product', 'tfg:wraptor_sugar'],
-		'#tfg:clean_water 1000', null, 'betterend:cave_pumpkin_pie_dough'
+		'#tfg:clean_water 1000', null, 'betterend:cave_pumpkin_pie_dough', false, false
 	);
 
 	event.recipes.tfc.advanced_shapeless_crafting(
@@ -330,51 +334,90 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 	//#endregion
 	//#region Cakes
 
-	global.processorRecipe(event, "cake_base", 300, 8, {
-		circuit: 4,
-		itemInputs: ["#forge:eggs", "2x #tfg:sugars", "2x #tfc:foods/flour"],
-		fluidInputs: ['#tfc:milks 1000'],
-		itemOutputs: ["createaddition:cake_base"],
-		itemOutputProvider: TFC.isp.of("createaddition:cake_base").copyOldestFood()
-	});
+	// Cake Base
+	global.generateMixingFoodRecipes(event,
+		['#forge:eggs', '2x #tfg:sugars', '2x #tfc:foods/flour'],
+		'#tfc:milks 1000', null, 'createaddition:cake_base',
+		false, true, true, 6
+	);
 
-	global.cookingRecipe(event, "baked_cake_base", "createaddition:cake_base", "createaddition:cake_base_baked");
+	event.recipes.firmalife.oven('createaddition:cake_base', 300, 60 * 20, 'createaddition:cake_base_baked').id('tfg:oven/cake_base_baked');
+	global.cookingRecipe(event, 'baked_cake_base', 'createaddition:cake_base', 'createaddition:cake_base_baked');
 
+	// Vanilla Cake
 	global.processorRecipe(event, "vanilla_cake", 300, 8, {
 		itemInputs: ['createaddition:cake_base_baked', '3x tfc:food/strawberry', 'firmalife:spice/vanilla'],
-		fluidInputs: [Fluid.of("tfcchannelcasting:white_chocolate", 400)],
+		fluidInputs: [Fluid.of("tfcchannelcasting:white_chocolate", 200)],
 		itemOutputs: ["tfc:cake"],
 		itemOutputProvider: TFC.isp.of("tfc:cake").copyOldestFood()
 	});
 
+    event.recipes.tfg.baking_dish()
+        .itemInputs('createaddition:cake_base', '3x tfc:food/strawberry', 'firmalife:spice/vanilla')
+        .fluidInputs('tfcchannelcasting:white_chocolate 200')
+        .itemOutputs(TFC.isp.of('tfc:cake').copyOldestFood())
+        .temperature(300)
+        .id('tfg:baking_dish/cake');
+
+	// Chocolate Cake
 	global.processorRecipe(event, "milk_chocolate_cake", 300, 8, {
 		itemInputs: ['createaddition:cake_base_baked', '3x tfc:food/cherry', 'firmalife:food/cocoa_powder'],
-		fluidInputs: [Fluid.of("tfcchannelcasting:milk_chocolate", 400)],
+		fluidInputs: [Fluid.of("tfcchannelcasting:milk_chocolate", 200)],
 		itemOutputs: ["createaddition:chocolate_cake"],
 		itemOutputProvider: TFC.isp.of("createaddition:chocolate_cake").copyOldestFood()
 	});
+	
+    event.recipes.tfg.baking_dish()
+        .itemInputs('createaddition:cake_base', '3x tfc:food/cherry', 'firmalife:food/cocoa_powder')
+        .fluidInputs('tfcchannelcasting:milk_chocolate 200')
+        .itemOutputs(TFC.isp.of('createaddition:chocolate_cake').copyOldestFood())
+        .temperature(300)
+        .id('tfg:baking_dish/chocolate_cake/milk_chocolate');
 
 	global.processorRecipe(event, "dark_chocolate_cake", 300, 8, {
 		itemInputs: ['createaddition:cake_base_baked', '3x tfc:food/cherry', 'firmalife:food/cocoa_powder'],
-		fluidInputs: [Fluid.of("tfcchannelcasting:dark_chocolate", 400)],
+		fluidInputs: [Fluid.of("tfcchannelcasting:dark_chocolate", 200)],
 		itemOutputs: ["createaddition:chocolate_cake"],
 		itemOutputProvider: TFC.isp.of("createaddition:chocolate_cake").copyOldestFood()
 	});
+	
+    event.recipes.tfg.baking_dish()
+        .itemInputs('createaddition:cake_base', '3x tfc:food/cherry', 'firmalife:food/cocoa_powder')
+        .fluidInputs('tfcchannelcasting:dark_chocolate 200')
+        .itemOutputs(TFC.isp.of('createaddition:chocolate_cake').copyOldestFood())
+        .temperature(300)
+        .id('tfg:baking_dish/chocolate_cake/dark_chocolate');
 
+	// Honey Cake
 	global.processorRecipe(event, "maple_honey_cake", 300, 8, {
 		itemInputs: ['createaddition:cake_base_baked', '4x firmalife:raw_honey'],
-		fluidInputs: [Fluid.of("afc:maple_syrup", 1000)],
+		fluidInputs: [Fluid.of("afc:maple_syrup", 250)],
 		itemOutputs: ["createaddition:honey_cake"],
 		itemOutputProvider: TFC.isp.of("createaddition:honey_cake").copyOldestFood()
 	});
+	
+    event.recipes.tfg.baking_dish()
+        .itemInputs('createaddition:cake_base', '4x firmalife:raw_honey')
+        .fluidInputs('afc:maple_syrup 250')
+        .itemOutputs(TFC.isp.of('createaddition:honey_cake').copyOldestFood())
+        .temperature(300)
+        .id('tfg:baking_dish/honey_cake/maple_syrup');
 
 	global.processorRecipe(event, "birch_honey_cake", 300, 8, {
 		itemInputs: ['createaddition:cake_base_baked', '4x firmalife:raw_honey'],
-		fluidInputs: [Fluid.of("afc:birch_syrup", 1000)],
+		fluidInputs: [Fluid.of("afc:birch_syrup", 250)],
 		itemOutputs: ["createaddition:honey_cake"],
 		itemOutputProvider: TFC.isp.of("createaddition:honey_cake").copyOldestFood()
 	});
 
+    event.recipes.tfg.baking_dish()
+        .itemInputs('createaddition:cake_base', '4x firmalife:raw_honey')
+        .fluidInputs('afc:birch_syrup 250')
+        .itemOutputs(TFC.isp.of('createaddition:honey_cake').copyOldestFood())
+        .temperature(300)
+        .id('tfg:baking_dish/honey_cake/birch_syrup');
+
+	// Birtday Cake
 	global.processorRecipe(event, "birtday_cake", 300, GTValues.VA[GTValues.HV], {
 		itemInputs: ['createaddition:cake_base_baked', '4x species:birt_egg', '4x tfc:food/blueberry', '2x minecraft:chorus_fruit', 'gtceu:blue_alloy_single_wire'],
 		fluidInputs: [Fluid.of('gtceu:helium_3', 50)],
@@ -385,25 +428,17 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 	//#endregion
 	//#region Cookies
 
-	global.processorRecipe(event, "cookie_dough", 300, 16, {
-		itemInputs: ['#tfc:sweetener', '#forge:eggs', 'firmalife:food/butter', '#tfc:foods/flour', "firmalife:spice/vanilla"],
-		itemOutputs: ['4x firmalife:food/cookie_dough'],
-		itemOutputProvider: TFC.isp.of('4x firmalife:food/cookie_dough').copyOldestFood()
-	});
+	global.generateMixingFoodRecipes(event,
+		['firmalife:food/pie_dough', '#forge:eggs', 'firmalife:spice/vanilla'],
+		null, null, '6x firmalife:food/cookie_dough',
+		false, true, true,
+	);
 
-	global.processorRecipe(event, "chocolate_chip_cookie_dough", 300, 16, {
-		itemInputs: ['4x firmalife:food/cookie_dough', '#firmalife:foods/chocolate'],
-		itemOutputs: ['4x firmalife:food/chocolate_chip_cookie_dough'],
-		itemOutputProvider: TFC.isp.of('4x firmalife:food/chocolate_chip_cookie_dough').copyOldestFood()
-	});
-
-	global.processorRecipe(event, "hardtack_dough", 300, 16, {
-		itemInputs: ['gtceu:small_salt_dust', '#tfc:foods/flour'],
-		fluidInputs: ['#tfg:clean_water 1000'],
-		itemOutputs: ['4x firmalife:food/hardtack_dough'],
-		circuit: 3,
-		itemOutputProvider: TFC.isp.of('4x firmalife:food/hardtack_dough').copyFood()
-	});
+	global.generateMixingFoodRecipes(event,
+		['6x firmalife:food/cookie_dough', '#firmalife:foods/chocolate'],
+		null, null, '6x firmalife:food/chocolate_chip_cookie_dough',
+		false, true, true,
+	);
 
 	//#endregion
 	//#region Smoothies
