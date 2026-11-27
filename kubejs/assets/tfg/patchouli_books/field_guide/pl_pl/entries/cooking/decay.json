@@ -167,7 +167,7 @@
                 }
             },
             "name": "",
-            "text": "Zamknięta wielka waza.",
+            "text": "Zamknięta duża waza.",
             "enable_visualize": false
         },
         {
@@ -272,7 +272,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(br2)Piwnica działa lepiej w $(l:the_world/climate#temperature)zimniejszym klimacie$().$(li)$(2)Temp >= 0°C:$() półki 0.4, wieszaki 0.35$(li)$(2)Temp < 0°C:$() półki 0.35, wieszaki 0.3$(li)$(2)Temp < -12°C:$() półki 0.25, wieszaki 0.25$(br2)Beczki z octem mają stały modyfikator 0.35 bez względu na temperaturę."
+            "text": "$(br2)Piwnica działa lepiej w $(l:the_world/climate#temperature)zimniejszym klimacie$().$(li)$(2)Temp >= 0°C:$() półki 0,4, wieszaki 0,35$(li)$(2)Temp < 0°C:$() półki 0,35, wieszaki 0,3$(li)$(2)Temp < -12°C:$() półki 0,25, wieszaki 0,25$(br2)Beczki z octem mają stały modyfikator 0,35 bez względu na temperaturę."
         },
         {
             "type": "tfg:multimultiblock",

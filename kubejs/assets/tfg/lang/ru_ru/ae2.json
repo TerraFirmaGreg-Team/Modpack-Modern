@@ -15,5 +15,7 @@
 	"gui.tfg.order_terminal.set": "Задать",
 	"gui.tfg.order_terminal.stage": "Этап",
 	"gui.tfg.order_terminal.status.idle": "Простаивает",
-	"gui.tfg.order_terminal.status.offline": "Офлайн"
+	"gui.tfg.order_terminal.status.offline": "Офлайн",
+	"gui.tfg.order_terminal.status.waiting": "В очереди стаков: %s",
+	"gui.tfg.order_terminal.status.waiting_for_cpu": "Ожидание процессора"
 }

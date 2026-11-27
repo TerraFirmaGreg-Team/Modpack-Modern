@@ -15,6 +15,7 @@
 	"dungeonconfig.config.option.menuBackgroundFps": "Liczba klatek tła",
 	"dungeonconfig.config.option.menuMusic": "Muzyka w menu",
 	"dungeonconfig.config.option.menuMusicVolumePercent": "Głośność muzyki",
+	"dungeonconfig.config.option.menuMusicVolumePercent.desc": "Głośność muzyki w menu. Dodatkowo obowiązuje głośność ogólna gry.",
 	"dungeonconfig.screen.list_title": "Dungeon Configs",
 	"dungeonconfig.screen.mod_title": "Ustawienia %s",
 	"dungeonconfig.screen.mods": "Mody",
@@ -88,6 +89,7 @@
 	"dungeonconfig.oneconfig.open": "Otwórz w OneConfig",
 	"dungeonconfig.oneconfig.enabled": "Włączone",
 	"dungeonconfig.oneconfig.original": "Oryginalny ekran ustawień",
+	"dungeonconfig.oneconfig.original.desc": "Otwiera własny ekran ustawień moda.",
 	"dungeonconfig.oneconfig.original.open": "Otwórz",
 	"dungeonconfig.neoforge.notloaded": "Te ustawienia nie zostały jeszcze załadowane."
 }

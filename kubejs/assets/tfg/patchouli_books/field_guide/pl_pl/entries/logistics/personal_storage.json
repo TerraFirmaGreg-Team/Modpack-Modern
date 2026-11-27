@@ -29,7 +29,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "large_vessel",
-			"title": "Wielkie naczynia",
+			"title": "Duże naczynia",
 			"item": "tag:tfc:fired_large_vessels",
 			"text": "$(bold)Sloty$(): 9$(br)$(bold)Rozmiar stosu$(): 64$(br)$(bold)Największy rozmiar$(): Normalny$(br)$(bold)Podnoszenie przedmiotów$(): $(c)Nie$()$(br)$(bold)Usuwanie przedmiotów$(): $(c)Nie$()$(br)$(bold)Ograniczenia$(): Brak"
 		},

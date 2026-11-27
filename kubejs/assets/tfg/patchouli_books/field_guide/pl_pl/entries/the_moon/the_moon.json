@@ -79,7 +79,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:large_solar_panel,gtceu:large_solar_panel_tier2,gtceu:large_solar_panel_tier3",
-			"title": "Wielki zespół paneli słonecznych",
+			"title": "Duży zespół paneli słonecznych",
 			"anchor": "lsa",
 			"text": "Small solar panels not cutting it? The $(thing)Large Solar Array$() is your primary solution for power generation on the moon, as other Earth-based power generation methods do not work up here.$(br2)The $(item)LSA$() comes in three tiers, so you can upgrade it as you progress."
 		},

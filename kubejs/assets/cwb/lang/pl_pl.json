@@ -12,8 +12,9 @@
 	"cwb.options.windowedFullscreenType": "Rodzaj pełnego ekranu: w oknie",
 	"cwb.options.useDelayedFullscreen": "Opóźnij włączenie pełnego ekranu",
 	"cwb.options.useScaledFramebuffer": "Użyj skalowanego bufora ramek",
-	"cwb.options.autoHideDock": "Automatyczne ukrywanie",
+	"cwb.options.autoHideDock": "Automatycznie ukrywaj dok",
 	"cwb.options.autoHideMenuBar": "Automatycznie ukrywaj pasek menu",
 	"cwb.options.pauseOnLostFocus": "Pauza po opuszczeniu okna gry",
+	"cwb.options.pauseOnLostFocus.tooltip": "Określa, czy gra ma być automatycznie wstrzymywana, gdy jej okno przestanie być aktywne.",
 	"cwb.options.pauseOnLostFocusDuringMultiplayer": "Pauza po opuszczeniu okna gry (tryb wieloosobowy)"
 }
