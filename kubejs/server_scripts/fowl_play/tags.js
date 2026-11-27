@@ -104,6 +104,7 @@ function registerFowlPlayEntityTags(event) {
 }
 
 function registerFowlPlayBiomeTags(event) {
+	// TODO: change these tags so only geese are in lakes, and only gulls are in oceans/shores
 	event.add('fowlplay:spawns_blue_jays', '#tfg:overworld_biomes')
 	event.add('fowlplay:spawns_cardinals', '#tfg:overworld_biomes')
 	event.add('fowlplay:spawns_chickadees', '#tfg:overworld_biomes')
