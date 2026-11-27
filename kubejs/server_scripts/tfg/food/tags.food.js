@@ -363,6 +363,42 @@ function registerTFGFoodItemTags(event) {
 	drinkingVessels.forEach(item => {
 		event.add('tfg:drinking_vessels', item)
 	});
+
+	/**
+	 * List of items that can go in appliance catalyst slots.
+	 * @type {Item[]}
+	 */
+	const applianceCatalysts = [
+		'#tfc:glass_bottles',
+		'#firmalife:wine_bottles',
+		'#tfc:unsealed_jars',
+		'#tfc:bowls',
+		'#firmalife:pie_pans',
+		'tfg:foil_pack',
+		'#gtceu:molds',
+		'#tfc:molds'
+	];
+	applianceCatalysts.forEach(item => {
+		event.add('tfg:appliance_catalysts', item)
+	});
+
+	/**
+	 * List of items that can go in appliance tool slots.
+	 * @type {Item[]}
+	 */
+	const applianceTools = [
+		'firmalife:spoon',
+		'tfc:jacks',
+		'tfc:paddle',
+		'#forge:tools/knives',
+		'#forge:tools/butchery_knives',
+		'#tfc:maces',
+		'#forge:whisks',
+		'#forge:rods/wooden'
+	];
+	applianceTools.forEach(item => {
+		event.add('tfg:appliance_tools', item)
+	});
 }
 
 function registerTFGFoodBlockTags(event) {
