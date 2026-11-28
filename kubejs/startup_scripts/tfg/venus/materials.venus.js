@@ -17,6 +17,14 @@ function registerTFGVenusMaterials(event) {
 			GTMaterialFlags.GENERATE_FRAME
 		)
 
+	// Atmosphere
+
+	event.create('tfg:venus_air')
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(737))
+		.color('0xD9A441')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.components('96x carbon_dioxide', '3x nitrogen', '1x sulfur_dioxide')
+
 	//#region Bromine Line
 
     event.create('raw_brine')

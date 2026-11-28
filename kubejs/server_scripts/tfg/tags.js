@@ -442,8 +442,11 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfg:warming_drinks', 'tfc:spring_water')
 
 	global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
-		event.add('tfg:breathable_compressed_air', x)
+		event.add('tfg:compressed_air', x)
+		event.add('tfg:breathable_air', x)
 	})
+
+	event.add('tfg:breathable_air', 'gtceu:air')
 
 	// Platline tags
 	event.add('tfg:sulfuric_metal_solution', 'gtceu:sulfuric_copper_solution')
